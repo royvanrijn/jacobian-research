@@ -8,10 +8,10 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
-| Published GVC, GMC and Image results | Published preprints | open | [Source](../../results/README.md) |
-| Gaussian dimension-degree boundary | Unpublished; independent review pending | open | [Source](../../unpublished/gaussian-boundary/README.md) |
+| Published GVC, GMC and Image results | Published preprints | proved | [Source](../../results/README.md) |
+| Gaussian dimension-degree boundary | Unpublished; independent review pending | proved | [Source](../../unpublished/gaussian-boundary/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
-| All-degree Gaussian structure and safety gap | Internal result | open | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
+| All-degree Gaussian structure and safety gap | Internal result | proved | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
 | Exact multibase Gaussian generic marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md) |
 | Angular-core reduction and exact original marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md) |
 | Complete quadratic-W Gaussian finite-image classification | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_W_FINITE_IMAGE_CLASSIFICATION.md) |
@@ -32,7 +32,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Unrestricted quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md) |
 | Cubic radial Gaussian safety and the relative Airy source | Internal result | proved | [Source](vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md) |
 
-**Computed obligations:** 35 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 32 unresolved; 4 resolved within their exact scope.
 
 
 Scope limits:
@@ -47,6 +47,8 @@ Scope limits:
 - The pointwise safety decision has an exact-source Hom route and checked original integration-by-parts and Wick-jet certificates. The latter certify the actual decision without a completeness assumption for the relation matrix.
 - For ternary phases of degree at most three, the axial restrictions force a universal geometric pure-moment prefix of at least six and an ordinary ideal prefix of at least ten. The exact global thresholds remain open.
 - For rational polynomial phases and polynomial differential symbols, graph-elimination generation and checked nonnegative-power specialization support the actual-power selector. Its safe outputs have sufficient cutoffs, with a separate premise for pure-linear bounds.
+- In two real Gaussian variables, eventual pure vanishing, purity, one strict circular-weight sign and all-marker safety are equivalent. If the angular weights fail separation, one fixed prime dilation gives nonzero moments at every sufficiently large prime.
+- For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff.
 
 Tracked obligations (computed states):
 

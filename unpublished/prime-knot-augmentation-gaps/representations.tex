@@ -1,8 +1,9 @@
 \section{The rank-one obstruction}\label{sec:rank}
 
 We prove an upper bound for every knot obtained by following \(U\)
-with a braid in the subgroup acting on \eqref{eq:framed}. This
-allows the same local argument for every \(b\) and every exponent.
+with a braid in the subgroup acting on \eqref{eq:framed}. That
+subgroup fixes the first and fourth meridian words. These two fixed
+positions suffice for the rank-one argument.
 
 \begin{lemma}\label{lem:spans}
 Suppose that \(\tau\) belongs to
@@ -97,25 +98,21 @@ C&h_1v+(x_1/\mu)(1+h_1)p&h_1\nu-y_1(1+h_1)\pi.
 \]
 For example \(N=P^{-1}DP\); the next row uses \(Q=N^{-1}PN\).
 The last pair lies in \(H,F\), so \(h_1=0\) and
-\(x_1y_1=-\mu\). The pairs then give \(Q=D\) and \(P=C\).
+\(x_1y_1=-\mu\). Its remaining coefficients multiply to one,
+which gives \(P=C\).
 
-Thus at the end of \(U\) the middle two labels are \((D,Y)\)
-for \(Y=M_{16}\), and closure requires them to return to
-\((D,B)\) with the other framed entries also restored.
-The ordered product in \eqref{eq:framed} gives
-\(DY\prod_{j=5}^b (CE_jC^{-1})=DB\prod_{j=5}^b (CE_jC^{-1})\),
-where \(E_j\) is the matrix on top strand \(j\).
-Cancellation yields \(Y=B\).
-The eight relations left on \(H,F\) now contradict
-Lemma~\ref{lem:eight}, since the resulting matrices include
-\(A,B,C\). This proves the span bound.
+Of the eight rows supported in \(H,F\), rows \(1\)--\(7\)
+suffice for the contradiction. They now satisfy the hypotheses
+of Lemma~\ref{lem:seven} and contain the three independent pairs
+of \(A,B,C\). This proves the span bound.
 \end{proof}
 
-\begin{lemma}\label{lem:eight}
-Take the relations in rows \(1\)--\(7\) and \(13\) of
-\eqref{eq:prefix}, with \(M_{10}=M_2,\ M_5=M_{13}\) and
-\(M_{16}=M_8\). The root and covector spans of these meridian
-matrices cannot both have dimension three.
+\begin{lemma}\label{lem:seven}
+Suppose the rank-one meridian matrices of common nonzero
+determinant \(\mu\) satisfy the seven signed relations in
+rows \(1\)--\(7\) of \eqref{eq:prefix}, with
+\(M_{10}=M_2\) and \(M_5=M_{13}\). Their root and covector
+spans cannot both have dimension three.
 \end{lemma}
 
 \begin{proof}

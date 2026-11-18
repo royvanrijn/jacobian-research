@@ -10,7 +10,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 |---|---|---|---|
 | Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber | Unpublished; independent review pending | proved | [Source](../../unpublished/common-arithmetic-fibers/README.md) |
 | Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map | Unpublished; independent review pending | proved | [Source](../../unpublished/fixed-map-hasse-failures/README.md) |
-| The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps | Unpublished; independent review pending | open | [Source](../../unpublished/quadratic-gauge-nonproperness/README.md) |
+| The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/quadratic-gauge-nonproperness/README.md) |
 | Generic Discriminants of Polynomial Tangent Pencils | Unpublished; independent review pending | proved | [Source](../../unpublished/discriminant-pencils/README.md) |
 | Exact Real Chamber Spectra of Explicit Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/exact-real-chamber-spectra/README.md) |
 | Fixed-map local classification and stronger arithmetic counts | Internal result | proved | [Source](FIXED_MAP_AMBIENT_LOCAL_CLASSIFICATION.md) |
@@ -102,7 +102,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform two-leaf double-transposition absorption | Internal result | proved | [Source](UNIFORM_TWO_LEAF_DT_ABSORPTION.md) |
 | Effective reduction of the balanced Eisenstein exception list | Internal result | proved | [Source](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md) |
 
-**Computed obligations:** 66 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 65 unresolved; 5 resolved within their exact scope.
 
 
 Scope limits:
@@ -179,6 +179,7 @@ Scope limits:
 - The ordinary thirds-balanced exception list {8,44} is equivalent to coverage of all-inert n=2 modulo 6 in [100000000,2^60). Both 8p and 44p for split primes p are covered. A least additional counterexample lies in that residual set; its coverage remains open. The old centered target scan and new exact constant checks are distinct evidence.
 - Canonical two-leaf DT closure holds for r>=3, including the bounded buffered D5 families. The two distance classes at r=2 give a sharp degree-seven boundary. The residual pure-DT problem is equivalent to uniform removable-DT extraction, by induction starting with the complete degree-thirteen pure case.
 - The elementary residue sieve gives the Eisenstein interval upper bound at every length at least a fixed multiple of sqrt(n), uniformly in position and in either mixed orientation. The two-sided moving count has the stated stronger window condition.
+- For the quadratic gauge the full geometric fibre, nonzero universal discriminant and degree-N finite étale neighborhood are equivalent. On Π=0 the cubic fibre is full exactly when B(1−BC)≠0, while degrees N≥4 have no full target on that slice.
 
 Tracked obligations (computed states):
 

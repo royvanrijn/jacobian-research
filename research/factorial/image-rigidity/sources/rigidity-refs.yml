@@ -1,0 +1,117 @@
+BH93:
+  type: book
+  title: Cohen–Macaulay rings
+  author: ["Bruns, Winfried", "Herzog, Jürgen"]
+  date: 1993
+  publisher: Cambridge University Press
+  parent:
+    type: book
+    title: Cambridge Studies in Advanced Mathematics
+    volume: 39
+
+EF04:
+  type: article
+  title: Some families of polynomial automorphisms
+  author: ["Edo, Eric", "Furter, Jean-Philippe"]
+  date: 2004
+  page-range: 263-271
+  parent:
+    type: periodical
+    title: Journal of Pure and Applied Algebra
+    volume: 194
+
+EvdE14:
+  type: article
+  title: The Strong Factorial Conjecture
+  author: ["Edo, Eric", "van den Essen, Arno"]
+  date: 2014
+  page-range: 443-456
+  serial-number:
+    arxiv: "1304.3956"
+  parent:
+    type: periodical
+    title: Journal of Algebra
+    volume: 397
+
+Fur97:
+  type: article
+  title: On the variety of automorphisms of the affine plane
+  author: "Furter, Jean-Philippe"
+  date: 1997
+  page-range: 604-623
+  parent:
+    type: periodical
+    title: Journal of Algebra
+    volume: 195
+
+Fur15:
+  type: article
+  title: Polynomial composition rigidity and plane polynomial automorphisms
+  author: "Furter, Jean-Philippe"
+  date: 2015
+  page-range: 180-202
+  serial-number:
+    doi: "10.1112/jlms/jdu064"
+  parent:
+    type: periodical
+    title: Journal of the London Mathematical Society (2)
+    volume: 91
+
+Jun42:
+  type: article
+  title: Über ganze birationale Transformationen der Ebene
+  author: "Jung, Heinrich W. E."
+  date: 1942
+  page-range: 161-174
+  parent:
+    type: periodical
+    title: Journal für die reine und angewandte Mathematik
+    volume: 184
+
+LPS19:
+  type: article
+  title: An algorithmic approach to the Polydegree Conjecture for plane polynomial automorphisms
+  author: ["Lewis, Drew", "Perry, Kaitlyn", "Straub, Armin"]
+  date: 2019
+  page-range: 5346-5359
+  serial-number:
+    arxiv: "1809.09681"
+  parent:
+    type: periodical
+    title: Journal of Pure and Applied Algebra
+    volume: 223
+
+Mil06:
+  type: book
+  title: "Dynamics in One Complex Variable"
+  author: "Milnor, John"
+  date: 2006
+  edition: 3
+  publisher: Princeton University Press
+  parent:
+    type: book
+    title: Annals of Mathematics Studies
+    volume: 160
+
+Sta96:
+  type: book
+  title: Combinatorics and Commutative Algebra
+  author: "Stanley, Richard P."
+  date: 1996
+  edition: 2
+  publisher: Birkhäuser
+  parent:
+    type: book
+    title: Progress in Mathematics
+    volume: 41
+
+vdK53:
+  type: article
+  title: On polynomial rings in two variables
+  author: "van der Kulk, Wouter"
+  date: 1953
+  page-range: 33-41
+  parent:
+    type: periodical
+    title: Nieuw Archief voor Wiskunde (3)
+    volume: 1

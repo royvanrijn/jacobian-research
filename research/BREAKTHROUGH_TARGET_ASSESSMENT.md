@@ -2,7 +2,7 @@
 
 The objective remains a result with major external mathematical impact. None of
 the five unrestricted targets below is resolved by the current repository.
-Primary target: Meridional Rank Conjecture, three-meridian frontier. No secondary target this iteration.
+Primary target: unrestricted Strong Factorial Conjecture. No secondary target this iteration.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
 
@@ -273,7 +273,7 @@ retain medium bilinear boxes but lose the existing periodic fallback.
 stated binary frontier. More density-one estimates, local identities or
 large finite searches do not remove its obstruction.
 
-## Meridional rank: primary target
+## Meridional rank
 
 **Quantifiers.** For every classical knot K, is mr(K)=b(K)? The immediate
 universal frontier is mr(K)<=3 => b(K)<=3. A certified triple generating
@@ -477,7 +477,7 @@ relations or prove that the distinguished unit is primitive.
 **Impact test.** A general vacuum-rigidity principle could be substantial.
 More support or degree classifications alone fail the requested test.
 
-## Strong Factorial Conjecture
+## Strong Factorial Conjecture: primary target
 
 **Quantifiers.** For every d>=1, nonzero F in C[x1,...,xd] with s nonzero
 monomials, and every n>=1, at least one of
@@ -493,13 +493,27 @@ The audit found no general support-independent consecutive-moment theorem.
 
 **Repository evidence.** Ordinary binomials through degree six and selected
 higher support families have internal proofs. The remaining degree-seven
-residue families are narrower than the central objective.
+residue families are narrower than the central objective. Full Furter
+rigidity already has a credited internal reproduction of liqsweep's
+critical-value argument; its factorial transfer is a specific all-dimensional
+family, rather than arbitrary supports.
+
+The [unrestricted-mechanism audit](factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex)
+proves two route obstructions: even a two-term phase can require scalar
+homogeneous recurrence order three, and every polynomial automorphism
+preserving the entire factorial functional is a variable permutation.
+The sharp root-of-unity linear examples also defeat a universal
+unique-minimum valuation argument. These are method checks, not an SFC
+solution. Gamma-product Appell simplicity remains an unproved narrower
+possibility, and its transfer to arbitrary supports is also missing.
 
 **Single obstruction.** Exclude a common nonzero projective zero of s
 consecutive homogeneous moment forms uniformly over arbitrary exponent
 matrices and every starting n. Existing valuation arguments depend on
 support geometry.
 
-**Impact test.** General SFC would imply FC in every dimension and the stated
-rigidity consequences. Extending a few terminal-index families would not
-have that effect.
+**Impact test.** General SFC would imply FC in every dimension and supply
+a support-independent consecutive-window principle. The existing rigidity
+proof does not supply that principle. Further terminal-index families,
+bounded discriminant positivity or a reproof of rigidity would not achieve
+the requested breakthrough.

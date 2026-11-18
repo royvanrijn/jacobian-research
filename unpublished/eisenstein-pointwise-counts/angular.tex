@@ -76,28 +76,43 @@ per left coset. The all-ideal Hecke operator is
                  \rho_k(u_\alpha)^{-1} F(\alpha_{\rm fin} g),
 \end{equation}
 where \(\alpha_{\rm fin}\) is projective reduction in \(G\).
-For clarity, class number one identifies this finite model with
-the coefficient-valued automorphic space of \(PB^\times\) at the
-indicated level \cite[Section~2, especially (4)--(6) and Proposition~2.5]{GV}.
-At every finite place take the image of \(\Oq_p^\times\), replacing
-it by the kernel of the indicated reduction at level primes.
-Any finite adelic point can be moved into the product of the
-unit groups by principalizing its ideal. The rational stabilizer
-of that product is the image of \(U\). In fact a rational
-representative of a stabilizer element is locally a scalar times
-an order unit. One rational scalar cancels the valuations of all
-the local scalars, so the representative becomes a unit everywhere. The right cosets
-of the level subgroup then give the stated equivariance.
+Let \(\mathcal K\) be the product of the projective order-unit
+groups at the finite places, and \(\mathcal K_0\) the kernel of
+reduction to \(G\). At \(3\) we use order units, with reduction
+modulo \(3\Oq_3\). A residue unit lifts to an order unit since its
+reduced norm is a \(3\)-adic unit. At each \(p\ge5\) in the level,
+the corresponding reduction of \(\mathrm{GL}_2(\Z_p)\) is
+surjective modulo \(p^a\). Thus \(\mathcal K/\mathcal K_0=G\).
 
-For \eqref{eq:hecke}, use one generator per right ideal, which
-principalizes the finite component by \(\alpha^{-1}\) and gives the
-archimedean multiplier \(\rho_k(u_\alpha)\). Changing the generator
-by a right order unit cancels by left equivariance. Replacing each
-\(\alpha\) by \(\bar\alpha\) gives \eqref{eq:hecke}; its denominator
-is the number of generators per ideal. Conjugation also proves
-self-adjointness. Schur orthogonality at infinity multiplies the
-finite Hilbert norm by an overall constant in the automorphic
-model, which cancels in operator norms.
+Class number one gives
+\(PB^\times(\mathbb A_f)=PB^\times(\Q)\mathcal K\), where
+\(\mathbb A_f\) denotes the finite adeles. A rational element
+stabilizing \(\mathcal K\) has a representative locally equal to
+a scalar times an order unit. A single rational scalar cancels
+the valuations of the local scalars, giving an element of \(U\).
+Consequently the finite adelic quotient is \(\Gamma\backslash G\).
+The projective rational stabilizer at any level coset is trivial.
+Indeed, \(\mathcal K_0\) is normal in \(\mathcal K\) and only the
+units \(\pm1\) lie in the kernel of reduction. With coefficients,
+rational left equivariance gives the stated action of \(\Gamma\)
+\cite[Section~2, (4)--(6) and Proposition~2.5]{GV}.
+Each orbit has \(|\Gamma|\) elements and hence the same finite
+measure. At infinity Schur orthogonality for a unit test vector
+gives the factor \(1/(2k+1)\). The resulting automorphic norm
+differs from the counting norm by a common scalar.
+
+To see the direction and normalization in \eqref{eq:hecke},
+lift \(g\) to \(\tilde g\in\mathcal K\) supported at level primes.
+A right-ideal representative \(a\) in the correspondence of norm
+\(m\) can be chosen supported at primes of \(m\), so
+\(\tilde g a=a\tilde g\). If the ideal is \(\alpha\Oq\), write
+\(a=\alpha u\) with \(u\in\mathcal K\) projectively. At level primes
+\(u\) reduces to \(\alpha_{\rm fin}^{-1}\). Hence the summand is
+\(\rho_k(u_\alpha)F(\alpha_{\rm fin}^{-1}g)\).
+Changing \(\alpha\) by a right order unit cancels by equivariance.
+Averaging over all twelve generators implements the sum once per
+ideal. Replacing \(\alpha\) by \(\bar\alpha\) gives
+\eqref{eq:hecke}. Conjugation also proves self-adjointness.
 
 We use the bound
 \begin{equation}\label{eq:hecke-norm}
@@ -128,37 +143,57 @@ group. Rational left invariance then forces the coefficient at
 \(g\) to be fixed by that dense subgroup, which is impossible
 in the nontrivial irreducible representation.
 
-For \(k=0\), if the action at \(\ell\) is trivial on the norm-one
-group, strong approximation for \(B^1\) away from
-\(\{\infty,\ell\}\) makes it trivial on the whole finite adelic norm-one
-group \cite[Main Theorem~28.5.3]{Voight}. Indeed, at a finite adelic
-point \(g\), approximate \(ghg^{-1}\) off \(\ell\) for a norm-one
-element \(h\) by a rational norm-one element, then use rational left
-invariance and the local invariance at \(\ell\). Such functions
-depend on the local norm squareclasses in \(G\), since a unit with
-square norm can be rescaled to norm one. The joint sign characters
-diagonalize this exceptional part: their eigenvalues are
-\(\sigma(m)\) times the corresponding sign of \(m\), by
-\eqref{eq:hecke}.
+For \(k=0\), suppose the factor at \(\ell\) is finite-dimensional
+and let \(h\) be a finite adelic norm-one element.
+Strong approximation for \(B^1\) away from \(\{\infty,\ell\}\)
+lets us choose a rational norm-one element \(\gamma\) approximating
+\(ghg^{-1}\) outside \(\ell\)
+\cite[Main Theorem~28.5.3]{Voight}. In
+\(gh=\gamma g(g^{-1}\gamma^{-1}gh)\), the final factor can be
+taken in the right stabilizer of the vector away from \(\ell\).
+At \(\ell\) it has norm one and acts trivially. Thus the
+exceptional constituents are invariant under the entire finite
+adelic norm-one group. On \(\mathcal K\) they depend only on the
+joint norm squareclasses in \(G\). Indeed, at the odd level primes
+a square norm can be scaled to one, and outside the level the
+order units already act trivially. Conversely, each product of
+local signs comes from a quadratic Dirichlet character composed
+with reduced norm. This is projectively well-defined since
+scalar norms are squares, and it has trivial real type since
+real reduced norms are positive. By \eqref{eq:hecke} its
+eigenvalue is \(\sigma(m)\) times its value on the norm class of
+\(m\). These sign functions span the scalar exceptional space.
 
-All other constituents have infinite-dimensional split local
-factors. Jacquet--Langlands transfers them to cuspidal
-\(\mathrm{GL}_2\) representations, of holomorphic weight \(2k+2\)
-at infinity and unramified at primes of \(m\)
-\cite[Theorem~14.4 and Proposition~5.20]{JL}. The unitary factor
-in \eqref{eq:hecke} gives the classical Hecke eigenvalues divided
-by \(m^k\). Equivalently the degree-\((\ell+1)\) spherical
-operator at \(\ell\mid m\) has eigenvalue
-\(\sqrt\ell(\alpha_\ell+\beta_\ell)\) in unitary Satake parameters.
-Deligne gives \(|\alpha_\ell|=|\beta_\ell|=1\) and the trivial
-central character gives \(\alpha_\ell\beta_\ell=1\)
+The remaining constituents have infinite-dimensional factors
+at split places. Jacquet--Langlands gives cuspidal
+\(\mathrm{GL}_2\) representations of holomorphic weight \(2k+2\)
+and trivial central character, unramified at every \(\ell\mid m\)
+\cite[Theorem~14.4 and Proposition~5.20]{JL}.
+Let \(\alpha_\ell,\beta_\ell\) be their unitary Satake parameters.
+Their product is one. The classical Hecke roots are
+\(\ell^{k+1/2}\alpha_\ell,\ell^{k+1/2}\beta_\ell\), so Deligne's
+bound gives \(|\alpha_\ell|=|\beta_\ell|=1\)
 \cite[Theorems~4.9 and~5.1]{DeligneModular}
-\cite[Theorem~1.6]{DeligneWeil}. The all-ideal recurrence
-\(T_{\ell^a}=T_\ell T_{\ell^{a-1}}-\ell T_{\ell^{a-2}}\) for \(a\ge2\)
-then gives eigenvalue \(\ell^{a/2}\sum_{j=0}^a
-\alpha_\ell^j\beta_\ell^{a-j}\), bounded by \((a+1)\ell^{a/2}\).
-Multiplicativity proves \eqref{eq:hecke-norm} uniformly in the weight
-and level.
+\cite[Theorem~1.6]{DeligneWeil}.
+
+For the operator at \(\ell^a\) the all-ideal right cosets are
+represented by upper triangular matrices with diagonal
+\(\ell^i,\ell^{a-i}\) and upper right entry modulo \(\ell^i\),
+for \(0\le i\le a\). In normalized unramified induction
+\cite[Section~3]{JL}, the spherical vector has value
+\(\ell^{a/2-i}\alpha_\ell^i\beta_\ell^{a-i}\) there.
+Summing the \(\ell^i\) choices of the upper right entry gives the
+eigenvalue
+\[
+ \ell^{a/2}\sum_{i=0}^{a}\alpha_\ell^i\beta_\ell^{a-i}.
+\]
+This includes imprimitive ideals and equals the classical
+coefficient at \(\ell^a\) divided by \(\ell^{ak}\). In particular,
+the recurrence is
+\(T_{\ell^a}=T_\ell T_{\ell^{a-1}}-\ell T_{\ell^{a-2}}\) for
+\(a\ge2\). The eigenvalue has modulus at most
+\((a+1)\ell^{a/2}\). Multiplicativity now gives
+\eqref{eq:hecke-norm} with the same bound at every weight and level.
 
 \subsection{A finite test with a prescribed direction}
 For a test \(b:G\to\C\) and a unit vector \(v\) in degree \(k\), define

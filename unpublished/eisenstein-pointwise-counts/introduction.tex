@@ -68,6 +68,15 @@ explains \(H^3\ge n^{1+\varepsilon}M\). The proof below treats
 the finite level and the angular variable together, which lets
 us prescribe the mixed orientation at any center.
 
+\paragraph{Proof overview.}
+Section~\ref{sec:angular} estimates the angularly weighted shell
+with finite congruence tests. Section~\ref{sec:local} handles
+primes dividing the target, with a \hyperref[sec:split-example]{worked example at \(7^2\)}.
+Section~\ref{sec:sieve} sums over the small split factors to
+recover the logarithm. Section~\ref{sec:count} removes the
+remaining inert primes, bounds the weight of each distinct
+pair, and gives the matching integer-sieve upper bound.
+
 \paragraph{Relation to earlier work.}
 Dietmann and Elsholtz \cite{DietmannElsholtz} prove eventual
 binary existence for the Gaussian prime restriction \(p\equiv1\bmod4\)
@@ -85,6 +94,31 @@ integer-sieve scale. Ramar\'e and Viswanadham
 \cite[Introduction and Theorem~1.6]{RV} discuss the split-prime
 Eisenstein set in their sieve framework and prove a ternary
 additive theorem for primitive Gaussian values.
+
+The Frobenian correlation theorem of Loughran and Matthiesen
+\cite[Theorem~1.9]{LM} requires pairwise independent linear parts.
+Fixing the total gives the one-variable forms \(t,n-t\), with
+proportional linear parts. In the mixed case, restricting to the
+necessary residue class and dividing one form by \(3\) leaves
+the same dependence. Freeing the total gives a two-variable
+sum, which averages over the slices that our theorem estimates
+individually.
+
+Iwaniec's half-dimensional sieve \cite[Theorem~1]{IwaniecHalf}
+uses a half-dimensional local product and a remainder from
+counts in residue classes. Sieving both summands directly
+excludes two residues per inert prime away from the target
+divisors. As the inert primes have density \(1/2\), this gives
+sieve dimension one. A half-dimensional sieve on one summand
+with the other already restricted would require progression
+estimates for that restricted sequence in translated windows,
+uniformly in the target. Greaves \cite[main theorem]{Greaves}
+obtains a bound of order at least \(n/(\log n)^{5/2}\) for
+prime pairs whose complementary value is a sum of two squares.
+The cutoff \(p,q\le\sqrt n/2\) in that Gaussian input leaves the
+split of the complementary sum of two squares free. Here the
+angular Hecke estimate supplies the window-dependent distribution,
+and the split-factor sum reaches the scale of distinct values.
 
 \begin{corollary}\label{cor:ranges}
 The count in every fixed interval of positive length for \(s_1/n\)

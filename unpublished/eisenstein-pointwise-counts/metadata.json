@@ -14,11 +14,12 @@
   "abstract": "Let \\(A\\) consist of the positive integers supported on primes\n\\(1\\bmod 3\\), including \\(1\\). We count distinct ordered representations\n\\(n=a+b\\) for \\(n\\equiv2\\bmod6\\) and \\(n=a+3b\\) for \\(n\\equiv4\\bmod6\\),\nwith \\(a,b\\in A\\). In either family prescribe an interval of length\n\\(H\\) centered at \\(x\\) for one actual summand. Put \\(M=\\min(x,n-x)\\).\nFor every fixed \\(0<\\varepsilon<1\\), if \\(H\\le M\\) and\n\\(H^3\\ge n^{1+\\varepsilon}M\\), the count has order \\(HJ(n)/\\log n\\)\nfor every sufficiently large admissible \\(n\\). Here \\(J(n)\\) is the\nproduct of \\((p-1)/(p-2)\\) over the odd primes \\(p\\equiv2\\bmod3\\)\ndividing \\(n\\). In particular, central windows of width \\(n^\\theta\\)\nare allowed for \\(2/3<\\theta<1\\), and windows at a prescribed small\nsummand of size comparable to their width are allowed for\n\\(1/2<\\theta<1\\). The lower bound combines angular Hecke estimates\nwith a sieve that prescribes small split factors in both summands.",
   "abstract_source": "main.tex",
   "abstract_format": "latex",
-  "verification": "Standalone analytic proof. Exact finite controls of the singular recurrence and the prime-square density were replayed. The verification record describes the PDF-only internal reading and the reproducible build.",
+  "verification": "Standalone analytic proof, with a fresh internal audit of the Hecke normalization and exceptional spectrum. The verification record documents exact bounded controls, the revised PDF-only reading and the standalone build.",
   "verification_record": "verification.json",
   "next_steps": [
-    "Obtain specialist review of the coefficient-valued Hecke normalization, local elimination and lower sieve.",
-    "Complete a broader priority comparison for pointwise binary counts of restricted-prime sums."
+    "Obtain external specialist review of the Hecke normalization, cuspidal transfer and exceptional spectrum, with the calculations now displayed in Section 2.2.",
+    "Obtain external review of the singular local elimination and lower sieve.",
+    "Continue the historical priority review beyond the checked Gaussian, Frobenian-correlation and half-dimensional-sieve results."
   ],
   "catalogued_on": "2026-11-18"
 }

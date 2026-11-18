@@ -6,7 +6,8 @@ two arcs where the new clasps are inserted.
 
 \subsection{Port convention and initial cancellations}
 
-A crossing has cyclic ports \(0,1,2,3\). The even pair is the
+A crossing has ports \(0,1,2,3\) in counterclockwise order.
+The even pair is the
 understrand and the odd pair the overstrand. A positive letter uses
 inputs \((0,3)\) and outputs \((1,2)\) in left-to-right order.
 A negative letter uses inputs \((1,0)\) and outputs \((2,3)\).
@@ -133,8 +134,10 @@ external endpoints.
 For the same triangle at the cap (Figure~\ref{fig:cap}), use the extra edge
 \(\port u2\)--\(\port v3\) and the first row below. The boundary
 order is \((e_0,e_1,e_2,e_3)\), with inputs \(e_0,e_3\).
-The same first Reidemeister III move creates a monogon
-\(\port t2\)--\(\port t3\). Remove it by Reidemeister I.
+The first Reidemeister III move puts \(t\) on the edge from
+\(\port u2\) to \(\port v3\), with \(\port u2\)--\(\port t0\),
+\(\port t1\)--\(\port v3\) and a monogon
+\(\port t2\)--\(\port t3\). Remove the monogon by Reidemeister I.
 The two crossings left form a positive clasp with edges
 \(\port u1\)--\(\port v0,\ \port u2\)--\(\port v3\)
 and the external attachments in the second row:
@@ -153,42 +156,93 @@ boundary orders and orientations.
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    x=0.95cm,y=0.91cm,
-    vertex/.style={circle,fill=black,inner sep=1.5pt},
+    x=1.13cm,y=1.24cm,
+    strand/.style={line width=0.8pt,line cap=round},
+    a arc/.style={strand,draw=black},
+    b arc/.style={strand,draw=blue!60!black},
+    overpass/.style={preaction={draw=white,line width=3.4pt}},
     every node/.style={font=\small},
 ]
-\begin{scope}[local bounding box=before]
-  \coordinate (t) at (0,0.62);
-  \coordinate (u) at (0.86,-0.32);
-  \coordinate (v) at (-0.86,-0.32);
-  \draw[semithick] (-1.64,1.02) node[left] {$e_0$} -- (t)
-      -- (1.64,1.02) node[right] {$e_1$};
-  \draw[semithick] (t) -- (v) -- (u) -- cycle;
-  \draw[semithick] (v) to[bend right=33] (u);
-  \draw[semithick] (-1.64,-0.88) node[left] {$e_3$} -- (v)
-      (u) -- (1.64,-0.88) node[right] {$e_2$};
-  \node[vertex,label=above:$t$] at (t) {};
-  \node[vertex,label=right:$u$] at (u) {};
-  \node[vertex,label=left:$v$] at (v) {};
+% Give ports 0 and 1 in crossing coordinates. Their opposites are 2 and 3.
+\newcommand{\capports}[7]{%
+  \path[shift={(#2,#3)}] (#4,#5) coordinate (#1-0)
+    (#6,#7) coordinate (#1-1)
+    ({-(#4)},{-(#5)}) coordinate (#1-2)
+    ({-(#6)},{-(#7)}) coordinate (#1-3);
+}
+\newcommand{\capcrossing}[3]{%
+  \draw[#2] (#1-0) -- (#1-2);
+  \draw[#3,overpass] (#1-3) -- (#1-1);
+}
+\newcommand{\capboundary}{%
+  \draw[a arc,->] (-1.60,-.65) node[left] {$e_0$} -- (-1.37,-.65);
+  \draw[a arc,->] (1.37,-.65) -- (1.60,-.65) node[right] {$e_1$};
+  \draw[b arc,->] (-1.60,.65) node[left] {$e_3$} -- (-1.37,.65);
+  \draw[b arc,->] (1.37,.65) -- (1.60,.65) node[right] {$e_2$};
+}
+\newcommand{\capclaspends}{%
+  \capports{u}{-.65}{-.04}{-.125}{-.105}{.125}{-.105}
+  \capports{v}{.65}{-.04}{-.125}{-.105}{.125}{-.105}
+  \draw[a arc] (-1.37,-.65) .. controls (-1.14,-.65) and (-1.01,-.34) .. (u-0);
+  \draw[a arc] (v-1) .. controls (1.01,-.34) and (1.14,-.65) .. (1.37,-.65);
+  \draw[b arc] (-1.37,.65) .. controls (-1.14,.65) and (-1.01,.26) .. (u-3);
+  \draw[b arc] (v-2) .. controls (1.01,.26) and (1.14,.65) .. (1.37,.65);
+  \draw[b arc] (u-1) .. controls (-.34,-.30) and (.34,-.30) .. (v-0);
+}
+\begin{scope}
+  \capports{t}{0}{-.42}{-.125}{-.105}{.125}{-.105}
+  \capports{u}{.65}{.32}{-.064}{-.14}{.16}{.025}
+  \capports{v}{-.65}{.32}{-.16}{.025}{.064}{-.14}
+  \capboundary
+  \draw[a arc] (-1.37,-.65) .. controls (-1.03,-.65) and (-.37,-.68) .. (t-0);
+  \draw[a arc] (t-2) .. controls (.36,-.12) and (.55,.07) .. (u-0);
+  \draw[a arc] (u-2) .. controls (.86,.76) and (-.86,.76) .. (v-3);
+  \draw[a arc] (v-1) .. controls (-.55,.07) and (-.36,-.12) .. (t-3);
+  \draw[a arc] (t-1) .. controls (.37,-.68) and (1.03,-.65) .. (1.37,-.65);
+  \draw[b arc] (-1.37,.65) .. controls (-1.15,.65) and (-1.05,.38) .. (v-0);
+  \draw[b arc] (v-2) .. controls (-.20,.25) and (.20,.25) .. (u-3);
+  \draw[b arc] (u-1) .. controls (1.05,.38) and (1.15,.65) .. (1.37,.65);
+  \capcrossing{t}{a arc}{a arc}
+  \capcrossing{u}{a arc}{b arc}
+  \capcrossing{v}{b arc}{a arc}
+  \node at (0,-.70) {$t$};
+  \node at (.82,.12) {$u$};
+  \node at (-.82,.12) {$v$};
 \end{scope}
-\draw[->] (2.35,0.05) -- node[above] {III, I} (3.52,0.05);
-\begin{scope}[xshift=5.87cm]
-  \coordinate (u) at (-0.78,0);
-  \coordinate (v) at (0.78,0);
-  \draw[semithick] (-1.64,1.02) node[left] {$e_0$} -- (u)
-      -- (-1.64,-0.88) node[left] {$e_3$};
-  \draw[semithick] (u) to[bend left=40] (v)
-                   (u) to[bend right=40] (v);
-  \draw[semithick] (1.64,1.02) node[right] {$e_1$} -- (v)
-      -- (1.64,-0.88) node[right] {$e_2$};
-  \node[vertex,label=below:$u$] at (u) {};
-  \node[vertex,label=below:$v$] at (v) {};
+\draw[->] (2.10,.02) -- node[above] {$\mathrm{III}$} (2.51,.02);
+\begin{scope}[xshift=5.21cm]
+  \capboundary
+  \capclaspends
+  \capports{t}{0}{.31}{-.105}{-.105}{.105}{-.105}
+  \draw[a arc] (u-2) .. controls (-.37,.18) and (-.26,.10) .. (t-0);
+  \draw[a arc] (t-2) .. controls (.33,.64) and (.19,.78) .. (0,.78)
+                          .. controls (-.19,.78) and (-.33,.64) .. (t-3);
+  \draw[a arc] (t-1) .. controls (.26,.10) and (.37,.18) .. (v-3);
+  \capcrossing{u}{a arc}{b arc}
+  \capcrossing{v}{b arc}{a arc}
+  \capcrossing{t}{a arc}{a arc}
+  \node at (.25,.35) {$t$};
+  \node at (-.65,-.29) {$u$};
+  \node at (.65,-.29) {$v$};
+\end{scope}
+\begin{scope}[xshift=5.21cm]
+  \draw[->] (2.10,.02) -- node[above] {$\mathrm{I}$} (2.51,.02);
+\end{scope}
+\begin{scope}[xshift=10.42cm]
+  \capboundary
+  \capclaspends
+  \draw[a arc] (u-2) .. controls (-.34,.27) and (.34,.27) .. (v-3);
+  \capcrossing{u}{a arc}{b arc}
+  \capcrossing{v}{b arc}{a arc}
+  \node at (-.65,-.29) {$u$};
+  \node at (.65,-.29) {$v$};
 \end{scope}
 \end{tikzpicture}
-\caption{The cap move viewed as a graph of crossings. The triangle
-and cap on the left become a clasp on the right while the four
-endpoints remain fixed. The port conventions specify the
-overstrands and orientations.}
+\caption{The signed cap move. The black strand runs from \(e_0\) to
+\(e_1\), and the blue strand from \(e_3\) to \(e_2\). Gaps mark the
+underpasses. All crossings are positive. The type III move on
+\(u,t,v\) exposes the curl at \(t\), and the type I move removes it
+while fixing the four boundary endpoints.}
 \label{fig:cap}
 \end{figure}
 
@@ -228,7 +282,8 @@ The diagram consists of the \(d=3\) ladder with indices
 and \(q\) clasp pairs inserted between the two arcs
 \(\port{Y_1}2\)--\(\port{u_q}0\) and
 \(\port{v_q}2\)--\(\port{u_q}3\).
-The first endpoint of each arc now leads into the first clasp (or directly to \(u_q\) if \(q=0\)). The two edges
+The first endpoint of each arc now leads into the first clasp
+(or directly to \(u_q\) if \(q=0\)). The two edges
 from \(v_j\) to \(u_{j+1}\) then lead to the next clasp or
 to the base ladder. All other edges of the base ladder remain
 as specified in the table, and the crossings of \(U\) are fixed.

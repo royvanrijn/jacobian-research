@@ -24,7 +24,10 @@
     "Dietmann–Elsholtz": "Published unnumbered theorem on p. 177 and quantitative argument on p. 178. Eventual existence for Gaussian restricted sums, with a lower bound of order at least n^(1-delta) for each delta>0 over unrestricted summand sizes.",
     "Howe–Huffman–Kohlmeyer–Kruer": "Hexagon 2611.00370v1, Theorem 1.1. Gaussian restricted binary existence for all positive n=2 mod 4. The quaternionic norm-counting method is attributed.",
     "Ramaré–Viswanadham": "arXiv:2509.23260v1, introduction and Theorem 1.6. The introduction discusses the split-prime Eisenstein set. The additive theorem concerns three primitive Gaussian values.",
-    "comparison": "The Gaussian and Eisenstein allowed prime sets are incomparable. The paper gives a uniform two-sided count in translated windows, using a directional coefficient projection, exact local formulas, and a cofactor sum that recovers the sieve logarithm. A wider priority review remains open."
+    "comparison": "The checked results supply a Gaussian precedent, a multidimensional correlation, and a sieve conditional on progression remainders. The fixed-target Eisenstein lower bound with moving windows requires the directional shell estimate, all-valuation local reduction, and bounded-multiplicity cofactor argument. The comparison is scoped to these sources. Broader historical priority remains open.",
+    "Loughran–Matthiesen": "JEMS 26 (2024), Theorem 1.9. Its independent-linear-parts condition excludes the fixed-total forms t and n−t, also after the mixed residue-class parametrization. Using two independent variables frees the total and gives an average over targets.",
+    "Iwaniec": "Acta Arith. 29 (1976), Theorem 1, condition (Omega 2) and the remainder term. The direct exclusion of 0 and n at inert primes has sieve dimension one. Sifting a single form after restricting the other would need progression counts for that restricted sequence, uniform in the target and the translated interval, as well as control of the unsifted tail.",
+    "Greaves": "Acta Arith. 29 (1976), unnumbered main theorem in Section 1. For n outside 0, 1, 5 modulo 8 it gives a lower bound of order n/(log n)^(5/2) for prime pairs p,q at most sqrt(n)/2 for which n−p²−q² is a sum of two squares. This supplies the Gaussian argument of Dietmann–Elsholtz. The prime-variable cutoff leaves the division of the remaining two squares unrestricted."
   },
   "checks": {
     "analytic": "The principal theorem and corollaries were checked against the complete manuscript proof and the four research source notes. The proof uses classical automorphic inputs. The verification scope remains internal.",
@@ -35,23 +38,43 @@
       "scope": "Selected exact local identities. The pointwise theorem is analytic and has no finite coverage step."
     },
     "pdf_only_reading": {
-      "reviewer": "Fresh internal AI with no inherited research context",
-      "supplied_context": "Only the PDF and the five blind-reader questions.",
-      "initial_pdf_sha256": "9857e5bc18d08ec078d63888839931cdddb015b6d8055d5daed434109c5b04a1",
-      "reviewed_revision_sha256": "962ff2bc55f36b367091dfd4071d78dccc7565456a8430f853ff17a27567999d",
+      "reviewer": "Fresh internal AI with no inherited manuscript or research context",
+      "supplied_context": "PDF only, with the five reader questions and requests to locate the revised passages",
+      "reviewed_revision_sha256": "0616e4ccfd53e72187a54320f6caf5cf349ec1daef94f98b66165c04fef02005",
       "answers": {
-        "contribution": "Matching pointwise bounds for distinct ordered pairs in a moving window, including either mixed orientation.",
-        "mechanism": "Sieve the quaternion shell with a directional bump. Recover one logarithm by prescribing small split factors. Uniqueness of the prescription and bounded weighted norm multiplicity convert the shell count into a value count.",
-        "hardest_step": "Uniform Hecke bound in Section 2.2 and the split-prime recurrence in Section 3.2.",
-        "limitations": "Existential onset and constants, order of magnitude, strict endpoint exponents.",
-        "verification_barrier": "Full independent verification requires checking the cited transfer and eigenvalue inputs and their application at the stated levels."
+        "contribution": "Uniform two-sided counts of distinct ordered values in prescribed windows in each family and mixed orientation.",
+        "mechanism": "Angle and congruence estimates for quaternion shells, singular local elimination, a split-cofactor sum, and bounded multiplicity.",
+        "hardest_step": "Section 2.2, pp. 3–5. The transition from the coefficient model to the uniform all-ideal Satake bound is traceable from the displayed coset calculations.",
+        "limitations": "Order bounds with existential constants and onset. The central and small-summand endpoint exponents remain open.",
+        "verification_barrier": "Checking the imported strong approximation, Jacquet–Langlands and Deligne results requires the cited sources."
       },
-      "revisions": "Clarified baseline sieve scale, corrected the finite-test symbol, expanded the shell rescaling and stated the all-ideal recurrence. The isolated reader passed all four changes and the strengthened finite-congruence argument. The final PDF also writes the same squarefree weight as W(t)/tau(uv) to match Section 5.2."
+      "revisions": "The roadmap now links directly to the worked 7² example. The example computes the shell-normalized factor and both cofactor weights, and links to the sieve step using them."
     },
     "build": {
       "tools": "LaTeXmk 4.83, pdfTeX 1.40.25, Poppler",
-      "scope": "Repository and extracted archive builds passed without LaTeX warnings. The seven packed source files match the repository. All 11 pages were inspected, and the text and 100 dpi page renders from the two builds agree."
-    }
+      "scope": "Repository and extracted archive builds passed without LaTeX warnings. The seven packed source files match the repository. The text and 100 dpi renders of all 12 pages agree across the two builds, and the pages were visually inspected."
+    },
+    "hecke_normalization": {
+      "reviewer": "Fresh internal mathematical reviewer with no inherited discussion. Reconstructed the normalization from the manuscript and primary sources and rechecked the revised Section 2.2.",
+      "inputs": [
+        "Greenberg–Voight, Section 2, formulas (4)–(6) and Proposition 2.5",
+        "Voight, Main Theorem 28.5.3 and Propositions 41.3.1 and 41.3.6",
+        "Jacquet–Langlands, Section 3, Proposition 5.20 and Theorem 14.4",
+        "Deligne, Theorems 4.9 and 5.1, and Weil I, Theorem 1.6"
+      ],
+      "findings": [
+        "Class number one gives the projective finite quotient. The order-unit kernel is ±1 at level 3, and the projective stabilizers at the level cosets are trivial. The equal finite orbit measures and the constant from Schur orthogonality yield the same operator norm as coset counting.",
+        "Lifting g only at level primes makes it commute with the right-ideal representative supported at m. Principalizing gives the inverse finite argument before conjugation, and averaging over the twelve generators counts each ideal once.",
+        "The upper triangular cosets at ell^a have ell^i translates for each diagonal pair. The normalized spherical function cancels the ell^i factor and gives the all-ideal eigenvalue ell^(a/2) times the complete symmetric polynomial in the unitary Satake roots. Deligne bounds both roots by one, uniformly in the weight and level.",
+        "A finite-dimensional split local factor kills the norm-one group. Real density excludes it at positive weight. At weight zero strong approximation and quadratic Dirichlet characters composed with reduced norm give exactly the joint signs."
+      ],
+      "bounded_controls": [
+        "Independent scalar enumeration on the six fixed level-3 cosets checked degrees, both norm signs, matrix symmetry, prime-power recurrence through m=16 and coprime multiplicativity at m=10.",
+        "Separate exact rational arithmetic used the k=1 action on imaginary quaternions by conjugation and two equivariant tests on the 36 elements of the projective level-3 group. It checked equivariance, self-adjointness for m=2,4,5, T_4=T_2^2−2I and T_10=T_2 T_5."
+      ],
+      "scope": "No concrete normalization error was found. The bounded controls corroborate the formulas at small indices. This was an internal mathematical audit, and external specialist review remains pending."
+    },
+    "split_square_example": "Exact rational arithmetic reproduced G_2=63/2, the shell-normalized factor 9/14, and the ratio E_7=6/5. The retained joint-coset controls also replayed byte for byte."
   },
   "assurance": {
     "external_specialist_review": false,
@@ -61,14 +84,33 @@
     "priority_established": false
   },
   "artifacts": {
-    "angular.tex": "78cedea12b714c954035f83ac7f1da5b3d07c498c2c43d5c6fd4e3df1083aea0",
+    "angular.tex": "bc42facde86b5b1d53b5f233affb4498ca696857607abb141ad7e91a7c7c5e35",
     "count.tex": "62664255b3f99f54e778d4f4c8a1e4c5e767df0d3a5ee98450d02d820ad9f419",
-    "introduction.tex": "b15be6afbae930d418eab846c54471d8e8249faa23f1b3ed4a086942a7cde98d",
-    "local.tex": "e56c0e0551c86fa97f508fc0037841b022334a8b9d2b1566d91a7c0a4fa27fba",
+    "introduction.tex": "cfcee7bfb804528751b7be72c5e8e80dbf7e453dbe9388abe34455522383bd04",
+    "local.tex": "77b0e97b3be9450ccf606d565fb74d5cf5081fc86887a7bdfc0a50004c0ffd46",
     "main.tex": "8f2cbb4829a298c9bfab745350461c6295474a4ab7b3f290a51edf9eed311241",
-    "paper.pdf": "b22a3dadb94b530c7f141c3fe4a14af75779d68e5d88f8b79f486f90609a9f15",
-    "references.tex": "327a3574925d7a4bfa9b20cbff3f906dd213eb7e52c634e2676cbb1e9c35afc6",
-    "sieve.tex": "b0df80b544aa322a1a025c2458140f6707723d38bde00bd3dea4d83798410bf9",
-    "source.zip": "98bf88c7d0d7ce38615a7df14743707748e96d8e54bfd25913c2147a52480b2e"
-  }
+    "paper.pdf": "0616e4ccfd53e72187a54320f6caf5cf349ec1daef94f98b66165c04fef02005",
+    "references.tex": "83f29ea9ab33087d321dfb6a84303ae7c8ea5189b3e11104b6444c3f37361935",
+    "sieve.tex": "995b68b0a5315390b5da9a37d4716aa5cc86c902e428d6cd1974329fc0eef0b5",
+    "source.zip": "d88d24ea4e594a5213f95d84c04ff40888d71a8532b8049885ee8b1b97cd8c42"
+  },
+  "prior_editions": [
+    {
+      "pdf_sha256": "b22a3dadb94b530c7f141c3fe4a14af75779d68e5d88f8b79f486f90609a9f15",
+      "pdf_only_reading": {
+        "reviewer": "Fresh internal AI with no inherited research context",
+        "supplied_context": "Only the PDF and the five blind-reader questions.",
+        "initial_pdf_sha256": "9857e5bc18d08ec078d63888839931cdddb015b6d8055d5daed434109c5b04a1",
+        "reviewed_revision_sha256": "962ff2bc55f36b367091dfd4071d78dccc7565456a8430f853ff17a27567999d",
+        "answers": {
+          "contribution": "Matching pointwise bounds for distinct ordered pairs in a moving window, including either mixed orientation.",
+          "mechanism": "Sieve the quaternion shell with a directional bump. Recover one logarithm by prescribing small split factors. Uniqueness of the prescription and bounded weighted norm multiplicity convert the shell count into a value count.",
+          "hardest_step": "Uniform Hecke bound in Section 2.2 and the split-prime recurrence in Section 3.2.",
+          "limitations": "Existential onset and constants, order of magnitude, strict endpoint exponents.",
+          "verification_barrier": "Full independent verification requires checking the cited transfer and eigenvalue inputs and their application at the stated levels."
+        },
+        "revisions": "Clarified baseline sieve scale, corrected the finite-test symbol, expanded the shell rescaling and stated the all-ideal recurrence. The isolated reader passed all four changes and the strengthened finite-congruence argument. The final PDF also writes the same squarefree weight as W(t)/tau(uv) to match Section 5.2."
+      }
+    }
+  ]
 }

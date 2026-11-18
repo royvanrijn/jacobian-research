@@ -1,0 +1,239 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newcommand{\Lfac}{\mathcal L}
+\newcommand{\C}{\mathbb C}
+\newcommand{\A}{\mathcal A}
+\begin{document}
+\title{Unrestricted Strong Factorial: two mechanism obstructions}
+\author{Internal route audit; no priority or breakthrough claim}
+\date{18 November 2026}
+\maketitle
+
+\noindent\textbf{Target and significance.}
+For every $d\geq1$, every nonzero $F=\sum_{j=1}^s c_jx^{a_j}$
+with distinct $a_j\in\mathbb N^d$ and $c_j\ne0$, and every $n\geq1$,
+unrestricted SFC asks that
+\[
+  \bigl(\Lfac(F^n),\ldots,\Lfac(F^{n+s-1})\bigr)\ne0,
+  \qquad \Lfac(x^\alpha)=\alpha!.
+\]
+This finite-window assertion is stronger than FC or absence of an
+infinite zero tail. It remains open here. A general proof or an actual
+counterexample would meet the research objective; the route results
+below do not.
+
+The primary definition and rigidity bridge are Edo--van den Essen,
+\href{https://arxiv.org/abs/1304.3956v2}{Definitions 2.7--2.8 and
+Theorem 2.25}. Rocks, \emph{J. Algebra} 478 (2017), 341--352,
+\href{https://people.math.sc.edu/rocks/BradyRocksSFC2015.pdf}{author
+preprint, Theorems 3.3 and 3.10}, proves powers of linear forms and
+powers of sums of same-prime-power variable monomials; Section 3.4
+gives partial two-monomial results. These do not state an arbitrary
+support-size window theorem.
+
+The repository's degree-six and selected degree-seven binomial results
+retain their exact scopes. Full Furter rigidity is already available
+as a credited internal reproduction in
+\href{RIGIDITY_CRITICAL_VALUES.tex}{the critical-value audit}, using
+liqsweep's pinned September 2026 argument. Its factorial transfer concerns
+$(\prod_i y_i)\sum_i\mu_i y_i$. Reproving rigidity or extending one
+degree-seven terminal family would not resolve the present target.
+
+\section{Monomial count does not bound scalar recurrence order}
+A natural proposed proof would produce a homogeneous recurrence of
+order at most $s$, with a nonzero backward coefficient, and propagate
+an $s$-term zero block. Even the first requirement fails.
+
+\begin{proposition}\label{prop:recurrence}
+For the ordinary two-monomial phase $F=1+X^2$, put
+\[
+ M_n=\Lfac(F^n)=\sum_{k=0}^n\binom nk(2k)!.
+\]
+The minimal homogeneous recurrence order over $\C(n)$ is three,
+including recurrences required only for all sufficiently large integers.
+\end{proposition}
+\begin{proof}
+Integration by parts, with the boundary term retained, gives
+\[
+ M_n-2n(2n-1)M_{n-1}+4n(n-1)M_{n-2}=1,\qquad n\geq2.       \tag{1}
+\]
+Indeed $M_n=1+2nJ_n$, where
+$J_n=\int_0^\infty x(1+x^2)^{n-1}e^{-x}\,dx$, and a second integration
+by parts gives
+$J_n=(2n-1)M_{n-1}-2(n-1)M_{n-2}$.
+Subtracting (1) at $n-1$ gives the homogeneous order-three relation
+\[
+ M_n-(4n^2-2n+1)M_{n-1}
+ +(n-1)(8n-6)M_{n-2}
+ -4(n-1)(n-2)M_{n-3}=0.                                \tag{2}
+\]
+All following rational-function identities are understood away from
+their finitely many poles.
+
+The sequence cannot eventually be a rational function of $n$, since
+$M_n\geq(2n)!$. If a homogeneous order-two relation existed, eliminating
+one term against (1) would either contradict (1), make $M_n$ rational,
+or give
+\[
+ M_n=r(n)M_{n-1}+s(n),\qquad r,s\in\C(n).
+                                                               \tag{3}
+\]
+The same conclusion includes a homogeneous order-one relation.
+Here $r\ne0$, again by growth. Put
+$A(n)=2n(2n-1)$ and $B(n)=4n(n-1)$. Substitute (3) and its shift in (1).
+The coefficient of $M_{n-2}$ is
+\[
+ (r(n)-A(n))r(n-1)+B(n).
+\]
+It must vanish identically, since otherwise $M_{n-2}$ is rational.
+Thus $R(n)=r(n)/(2n)$ would satisfy
+\[
+ R(n)+\frac1{R(n-1)}=2n-1.                              \tag{4}
+\]
+Every finite zero of $R$ forces a pole of the same multiplicity one
+step later, and every finite pole forces a zero one step earlier:
+these poles must cancel in (4). Hence the reduced numerator and
+denominator have equal degree. The left side then has a finite limit
+at infinity, contradicting the linear right side.
+Order zero is excluded by positivity. Equation (2) therefore has
+minimal order three.
+\end{proof}
+
+This is not an SFC counterexample: every $M_n$ here is positive.
+The inhomogeneous order-two relation (1) remains valid. The result
+does not exclude coupled contiguity systems or nonlinear arguments;
+it excludes the proposed homogeneous scalar order bound.
+
+\section{All polynomial symmetries of the functional}
+A second counterexample strategy would transform a known periodic
+moment phase by a nonlinear polynomial symmetry of $\Lfac$, reducing
+its number of monomials. In fact no such symmetry exists.
+
+For $\A=\C[x_1,\ldots,x_d]$ let
+\[
+ \mathfrak g=\{D\in\operatorname{Der}_{\C}(\A):
+                 \Lfac(Df)=0\text{ for every }f\in\A\}.
+\]
+This is a Lie algebra. For $P=\sum_\alpha p_\alpha x^\alpha$ put
+$T(P)=\sum_\alpha p_\alpha\alpha!u^\alpha$.
+
+\begin{lemma}\label{lem:derivations}
+For $D=\sum_iP_i\partial_i$,
+\[
+ D\in\mathfrak g
+ \quad\Longleftrightarrow\quad
+ x_i\mid P_i\text{ for every }i,\qquad
+ \sum_i(P_i-\partial_iP_i)=0.                            \tag{5}
+\]
+\end{lemma}
+\begin{proof}
+Formally
+$Z(t)=\Lfac(e^{t\cdot x})=\prod_i(1-t_i)^{-1}$.
+Set $u_i=(1-t_i)^{-1}$. Coefficientwise differentiation gives
+$\Lfac(Pe^{t\cdot x})/Z(t)=T(P)(u)$.
+Consequently $D\in\mathfrak g$ is equivalent to the Laurent identity
+\[
+ \sum_i(1-u_i^{-1})T(P_i)(u)=0.                          \tag{6}
+\]
+A negative exponent of $u_i$ can arise only from
+$-u_i^{-1}T(P_i)|_{u_i=0}$. Its coefficient must be zero.
+Since $T$ rescales every coefficient by a nonzero factorial,
+this is exactly $x_i\mid P_i$. Under that divisibility,
+$u_i^{-1}T(P_i)=T(\partial_iP_i)$.
+The remaining identity is (5). These steps reverse, proving sufficiency.
+Only formal power series and Laurent polynomials are used.
+\end{proof}
+
+\begin{lemma}\label{lem:boundary}
+For $d\geq2$, define
+$V(p)=\operatorname{span}_{\C}\{D(p):D\in\mathfrak g\}$.
+Its rank-drop locus is precisely $\bigcup_i\{x_i=0\}$.
+\end{lemma}
+\begin{proof}
+On $p_i=0$, every $D$ has zero $i$th component by (5), so the rank
+drops. Conversely let every $p_i\ne0$. Given $i$, choose $j\ne i$ and put
+\[
+ h=\frac{x_j-p_j}{p_ip_j},\quad R=x_ix_jh,\quad
+ P_i=\partial_jR-R,\quad P_j=R-\partial_iR,
+\]
+with other components zero.
+Both divisibilities in (5) hold and
+$\sum_k\partial_kP_k=\partial_jR-\partial_iR=\sum_kP_k$.
+This gives $D\in\mathfrak g$. At $p$, $h=0$,
+$\partial_jh=1/(p_ip_j)$ and $\partial_ih=0$, so $D(p)=e_i$.
+Thus $V(p)=\C^d$ off the coordinate boundary.
+\end{proof}
+
+\begin{proposition}\label{prop:automorphisms}
+For every $d\geq1$, the $\C$-algebra automorphisms $\phi$ of $\A$
+satisfying $\Lfac(\phi(f))=\Lfac(f)$ for every polynomial $f$ are
+exactly coordinate permutations.
+\end{proposition}
+\begin{proof}
+Such an automorphism conjugates $\mathfrak g$ to itself:
+$\Lfac(\phi D\phi^{-1}f)=\Lfac(D\phi^{-1}f)=0$.
+Its Jacobian is invertible everywhere, so it preserves the rank-drop
+locus in Lemma~\ref{lem:boundary}. It permutes the irreducible coordinate
+hyperplanes. Therefore
+$\phi(x_i)=c_ix_{\sigma(i)}$, with $c_i\ne0$ and $\sigma$ a permutation.
+First moments give $c_i=1$. The converse is immediate.
+
+For $d=1$, extend $\phi$ by the identity on one extra variable.
+Product factorial moments make the extension preserve $\Lfac$ in two
+variables. The preceding case forces the extension to be a permutation;
+since it fixes the extra coordinate, $\phi$ is the identity.
+\end{proof}
+
+In particular, no nonzero locally nilpotent derivation preserves
+$\Lfac$: its finite exponential would give a nonconstant algebraic
+one-parameter subgroup of this finite permutation group.
+These results concern preservation on \emph{every polynomial}.
+Vanishing moments on $\C[F]$ or a finite zero block do not imply that
+hypothesis, so the rigidity proposition does not itself prove FC or SFC.
+
+\section{Equal valuations at the sharp window bound}
+For a primitive $s$th root $\zeta$, the actual ordinary phase
+\[
+ F=\sum_{j=0}^{s-1}\zeta^jx_j
+\]
+has
+\[
+ \sum_{m\geq0}\frac{\Lfac(F^m)}{m!}t^m
+ =\prod_{j=0}^{s-1}(1-\zeta^jt)^{-1}=(1-t^s)^{-1}.
+\]
+Hence its moments are $m!$ at multiples of $s$ and zero otherwise.
+In a multinomial expansion every individual term is
+$m!\zeta^{\sum_jjk_j}$, because the exponent factorials cancel the
+multinomial denominator. Thus all terms have the same valuation
+at every finite place of $\mathbb Q(\zeta)$, even in a nonzero moment.
+An argument requiring a uniquely minimal term cannot prove SFC
+universally. It must handle residual cancellation. This is the known
+sharp linear example, not a counterexample or a new support theorem.
+
+\section{What remains}
+Neither these obstructions nor the existing critical-value argument
+excludes a common nonzero projective zero of the actual $s$ moment
+forms for every exponent matrix and starting index.
+Strict Hankel or cumulant positivity is also insufficient, as shown in
+\href{GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex}{the retained
+Gamma-convolution obstruction}; that example is not an ordinary
+factorial phase with the required small support.
+
+A proposed transfer of polynomial-composition dynamics must produce
+an actual map with the required critical-value bound. A period rank
+or a parameter-discriminant count alone is not that realization.
+A possible Gamma-product Appell simplicity principle remains unproved,
+and would still need a separate bridge to arbitrary polynomial supports.
+
+The self-contained
+\href{verify_unrestricted_sfc_mechanisms.py}{recurrence checker}
+verifies 31 instances of (1), 30 of (2), growth controls and rejection
+of a corrupted coefficient using exact integers. The all-index
+identities, minimality and automorphism rigidity are the written proofs,
+not consequences of those finite tests. Independent specialist review,
+formal verification and a resolution of unrestricted SFC are not claimed.
+\end{document}

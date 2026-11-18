@@ -15,7 +15,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Cubic/quintic models and universal matrix admission obstructions | Internal result | proved | [Source](dixmier-formal-lifting/VALUED_MATRIX_LATTICE_AND_SHIFTED_ADMISSION.md) |
 | Global Laurent admission and closed quartic scalar faces | Internal result | proved | [Source](dixmier-formal-lifting/GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md) |
 
-**Computed obligations:** 25 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 22 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:
@@ -63,6 +63,8 @@ Scope limits:
 - The rank-two bounded lift question allows ramified parameters. In that scope it is equivalent to horizontal membership of a noninvertible classical point in some finite-degree relation scheme.
 - In the exact positional Long slice QEP1 makes both actual individual mates equivalent to a bounded full lift. The degree-nonincreasing normalized fourth image tests boundedness of a fixed completing triple. Arbitrary deformed first positions still require a bounded comparison.
 - DC2 implies bounded inversion of arbitrary finite-PBW identity assignments. On cotangent rescalings bounded inversion is equivalent to JC2, by differential-order detection and rescaling the polynomial inverse.
+- For bounded full Long lifts the two finite uncompleted Weyl division indices agree by index symmetry. Their common value is three exactly when either valuation-lattice module is finite, equivalently when both completion comparison maps are injective. Finite generation of the ambient Weyl algebra over its image is excluded.
+- For an irreducible affine-line connection with at most one finite singularity, finite-cover reducibility is equivalent to a nontrivial Kummer self-twist at that puncture. If the minimal-extension inverse-Fourier rank is exactly half the connection rank, an actual split must already occur on the quadratic power cover and imposes the indicated local type.
 
 Tracked obligations (computed states):
 

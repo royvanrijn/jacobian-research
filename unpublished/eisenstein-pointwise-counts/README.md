@@ -30,6 +30,10 @@ selected split-prime recurrences and the prime-square density underlying
 the cofactor sieve. The proof of the pointwise theorem uses the written
 estimates. The comparison constants and onset are existential.
 
-The manuscript awaits external specialist review of the uniform Hecke
-normalization and the lower sieve. The literature comparison identifies
-the closest checked Gaussian results. A broader priority review is open.
+A fresh internal mathematical audit reconstructed the Hecke operator,
+its stabilizers and measure, and the scalar exceptional spectrum. The
+paper includes the prime-power normalization and a worked split-prime
+recurrence at \(7^2\). The literature comparison checks the hypotheses
+of the Frobenian correlation theorem and the half-dimensional sieve
+against the fixed-target problem. External specialist review and broader
+historical priority assessment remain open.

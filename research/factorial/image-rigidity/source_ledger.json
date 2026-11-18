@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "cached_primary_sources": [
     {
       "file": "sources/long-fc2.tex",
@@ -174,6 +174,12 @@
       "url": "https://singer.math.ncsu.edu/papers/LMSlectures.pdf",
       "sha256": "c805d45ed54e0e6734b4d7f125c197364b9eccab2a7e09a8c26c3bf63cf5db96",
       "review": "Exact primary Theorem1.3.9 and Corollary1.3.10, printed/PDFpp13–14 read and matched to ordinary PV applications in the internal II–III reproduction. No general irregular specialization input."
+    },
+    {
+      "file": "sources/rigidity-refs.yml",
+      "url": "https://raw.githubusercontent.com/blueberryvertigo/polynomial-composition-rigidity/051c74aad9ef9bf8804c371964803aee099c5b63/refs.yml",
+      "sha256": "8d7ba42d801e9c5604ec2d65d08bfa2752535f9ff0e7e9ea7671faedcd6b0a12",
+      "review": "Ten bibliographic identities and their separate citation keys read from the pinned upstream bibliography. This corrects an accidental merged catalogue entry; it is not a proof/application audit of those ten works."
     }
   ],
   "additional_primary_references": [

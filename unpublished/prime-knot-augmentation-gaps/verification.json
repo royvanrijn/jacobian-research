@@ -2,18 +2,18 @@
   "date": "2026-11-18",
   "edition_sha256": {
     "coloring.tex": "57449e559beee61a1ae1ebe30cfbf6ad07f243f18cb452773b1ec81554f4924b",
-    "diagram-isotopy.tex": "25361194a1380129a5e080fbbc2a7d843e77f00514a2d1e5d21d546bbcd37c9c",
+    "diagram-isotopy.tex": "71ea23b3c5abc0d10edde401287c35fef07c99494c5be9d3fd1313033adbc1e9",
     "geometry.tex": "0aa4b103229847e8b0a836a9f46cce5bc498818030163d0449ddc2307945f3a5",
-    "main.tex": "db6f61b39d6f5444d1ef0f501307b9d4ff2cff7e2c76687501fbef25ef955af9",
-    "representations.tex": "9f019b3f3ad14620112030300c7abee4efca8d98f022d90a2f9b3a4c305f1431",
-    "prime_knot_augmentation_gaps.pdf": "70983d0d1a8cf4828c87b247153205b83ed6fa9f246210a5e556845bfd2c51d8",
+    "main.tex": "72eb4f282871159e8cff43e9986f1bc4f1edcf328583bb078b47ce7f88d56972",
+    "representations.tex": "bf778455b9bb487cdfa6be6f14422b9421389fcd8d8f074072bfaa8e2a52f499",
+    "prime_knot_augmentation_gaps.pdf": "2820b652dfa3832403087cfa16cab959752a4929e5bcb82f20e7c9dad035647f",
     "prime_knot_certificates.zip": "b459d355dc9e31e765a2aad271d33ee7d23c1032e2b62f2aafce6dde7f038d22"
   },
   "build": {
     "toolchain": "TeX Live 2023/Debian, pdfTeX 1.40.25, latexmk 4.83",
     "pdf_pages": 12,
-    "pdf_review": "Rendered every page with Poppler 24.02.0 and inspected layout, fonts, equations, tables, diagram, links and page breaks. Checked the final wording on the affected appendix pages.",
-    "clean_build": "Built from only the five LaTeX sources in a separate directory; PDF bytes matched and the log had no unresolved citations or warnings."
+    "pdf_review": "Rendered all twelve pages with Poppler 24.02.0. Inspected the updated pagination and signed diagram, including its underpass gaps, arrows, and endpoints.",
+    "clean_build": "Rebuilt this edition from the five LaTeX sources in an empty working directory. The PDF matched byte for byte and the log contained no warnings."
   },
   "theorem_and_dependencies": {
     "algebra": "The alternating coloring and span obstruction are proved for all integers b >= 5 and k >= 0. The span obstruction also holds for the stated subgroup of tails with a knot closure, over any field and for any nonzero determinant.",
@@ -68,5 +68,14 @@
     "limitations": "The reader identified the missing exact augmentation ranks and exceptional thresholds, the distinction between infinitely many distinct types and pairwise distinctness at every parameter, and the need for the supplement to check the three interval certificates.",
     "revisions": "Corrected the first target bigon edge to 6.0–25.2. Kept the original arc numbers in Lemma 3, removing the aliases. Added the comparison with the Whitehead-double preprint. The reread confirmed the endpoint binding and core crossing trace. Two remaining wording changes about the six endpoints and the first endpoint of each arc were incorporated and rechecked in the final PDF. Adjusted the crossing-label placement in Figure 1 and re-rendered the appendix.",
     "assurance": "Internal AI review. Independent specialist review remains outstanding."
+  },
+  "signed_diagram_revision": {
+    "pdf_sha256": "2820b652dfa3832403087cfa16cab959752a4929e5bcb82f20e7c9dad035647f",
+    "rank_one_proof": "Lemma 3 uses precisely rows 1–7 with M10=M2 and M5=M13. The argument fixes the first and fourth meridian words and reaches its contradiction before row 13 or any middle closure relation is used.",
+    "filling_markings": "The introduction identifies the first homeomorphism as unmarked and the second slope as measured in the original disk marking of the two-cusped parent.",
+    "signed_figure": "Matched the three rendered stages to the exact port graphs. The strand endpoints, crossing colors, positive signs, and intermediate t.2–t.3 monogon agree with the Reidemeister III/I instructions.",
+    "pdf_only_reread": "The same isolated ChatGPT reader received only this PDF and the focused review questions. It traced both strands through all three panels, checked agreement with the port rules and checked the indexed induction, marked band, algebraic identifications and filling slopes. It found no correction to the revised proof or figure.",
+    "replay": "The exact oriented diagram check passed again from the extracted supplement, with both disk cells and the marked band checked, literal comparisons for 5 through 64, and both deliberately corrupted controls rejected. The three rigorous interval checks also passed again.",
+    "assurance": "The written induction gives the unrestricted range. The finite replay and internal PDF reread complement it. Independent specialist review should focus on the uniform isotopy and marked band."
   }
 }
