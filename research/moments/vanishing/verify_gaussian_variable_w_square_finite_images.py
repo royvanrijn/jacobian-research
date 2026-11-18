@@ -173,8 +173,8 @@ def main():
              "GAUSSIAN_AFFINE_ISOTROPIC_CHART.md",
              "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md",
              "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md",
-             "../../../unpublished/gaussian-boundary/analytic_core.tex",
-             "../../../unpublished/gaussian-boundary/seed_period_comparison.tex"]
+             "../../../results/gaussian-boundary/analytic_core.tex",
+             "../../../results/gaussian-boundary/seed_period_comparison.tex"]
     result.update(python=platform.python_version(), sympy=sp.__version__,
                   sha256={name: hashlib.sha256((directory/name).read_bytes()).hexdigest()
                           for name in names},

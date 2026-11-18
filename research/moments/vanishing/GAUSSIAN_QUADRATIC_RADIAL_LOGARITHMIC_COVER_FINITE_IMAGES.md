@@ -178,7 +178,7 @@ takes w=v/p to one. Its restriction to the rational cyclic differential
 span C(t)<partial_t>w takes the successive covariant iterates to
 1,0,0,... and therefore has a rational horizontal unit quotient.
 Every rational relation is respected by the actual formal functional.
-The [seed-functional lemma](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+The [seed-functional lemma](../../../results/gaussian-boundary/seed_period_comparison.tex),
 Lemma lem:seedfunctional, now permits ordinary-point extension from
 that cyclic source, through (L11), and relative period representation.
 Its seed period would be identically one. Sections 4-8 exclude this.
@@ -233,7 +233,7 @@ Multiplication by a scalar of positive r-order makes them tend to zero.
 The same statement holds componentwise for a disconnected fixed curve.
 
 The three exact comparison inputs are those retained in the
-[primary manifest](../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json):
+[primary manifest](../../../results/gaussian-boundary/sources/laurent_primary_manifest.json):
 
 1. Roucairol, Section 1.2 and Lemma 1.4: the regular formal summand is
    recovered by nearby cycles with proper-image compatibility, and
@@ -283,7 +283,7 @@ power |r|^M contains the finitely many coefficient and Puiseux transition
 scales. In the annuli between |r|^M and a fixed radius, descending
 inverse-phase paths are real algebraic curves of fixed degree in
 fixed algebraic charts. The
-[curve-length estimate](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[curve-length estimate](../../../results/gaussian-boundary/analytic_core.tex),
 Lemma lem:curvelength, bounds each dyadic annulus by a constant in
 logarithmic measure; there are O(log(1/|r|)) such annuli. Finite
 algebraic covers give the same local bound. There are finitely many

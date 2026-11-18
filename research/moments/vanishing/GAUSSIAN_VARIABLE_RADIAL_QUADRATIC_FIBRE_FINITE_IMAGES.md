@@ -307,14 +307,14 @@ by the deep exponential cutoff. No endpoint, neck, crossover or
 puncture contribution is omitted.
 
 The precise quantitative path input is
-[analytic_core.tex](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[analytic_core.tex](../../../results/gaussian-boundary/analytic_core.tex),
 Lemma lem:curvelength. The full ordinary-point passage from a cyclic
 horizontal quotient to a period is
-[seed_period_comparison.tex](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+[seed_period_comparison.tex](../../../results/gaussian-boundary/seed_period_comparison.tex),
 Lemma lem:seedfunctional, with the endpoint cone/frame just described.
 The retained fixed-high-pole tail argument is also explicit in
 [the variable-W-square proof](GAUSSIAN_VARIABLE_W_SQUARE_FINITE_IMAGES.md#3-complete-neck-and-high-pole-tail-estimates).
-The [primary manifest](../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json)
+The [primary manifest](../../../results/gaussian-boundary/sources/laurent_primary_manifest.json)
 identifies the three formal-nearby-cycle, finite/pole-node and ordinary
 pairing inputs. These imports retain their existing review and
 primary-source scope.

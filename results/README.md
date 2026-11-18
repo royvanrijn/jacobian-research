@@ -1,15 +1,16 @@
 # Released papers
 
-Each of these five papers has a verified public deposit. The paper directory contains its best current repository edition and verification record. Its deeper `published/` directory preserves the exact deposited PDF, source, submission metadata and checksum manifest. A local revision can differ from Zenodo or Hexagon; the deposited version remains identifiable and unchanged.
+Current PDFs, sources and verification records. The `published/` archives preserve public deposits and their checksums.
 
-| Current paper | Result | Published edition |
+| Current paper | Result | Deposit or submission |
 |---|---|---|
+| [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | Sharp ternary-cubic cutoff and the universal dimension–degree boundary. | Under review at Hexagon · reserved `hexagon:2611.00596v1` |
+| [Prime Knots with Augmentation-Rank Gaps at Unbounded Bridge Number](prime-knot-augmentation-gaps/) | Hyperbolic prime knots with strict augmentation-rank gaps at bridge numbers five and six and every sufficiently large bridge number. | Under review at Hexagon · reserved `hexagon:2611.00595v1` |
+| [Pointwise representation counts for Eisenstein restricted sums](eisenstein-pointwise-counts/) | Two-sided pointwise counts in prescribed summand windows. | Under review at Hexagon · reserved `hexagon:2611.00593v1` |
 | [Counterexamples to the Mathieu Property](mathieu-reductive-homogeneous-spaces/) | General reductive homogeneous-space classification and fixed-multiplier counterexamples. | [Zenodo · 17 November 2026](mathieu-reductive-homogeneous-spaces/published/) · [Hexagon · 18 November 2026](https://hexagonmath.org/2611.00556v1) |
 | [Generalized Vanishing Conjecture](generalized-vanishing-two-variables/) | Binary theorem, support certificates and sharp cutoff; homogeneous failure in dimension three. | [5 August 2026; also Hexagon](generalized-vanishing-two-variables/published/) |
 | [Four-term Special Image counterexample](three-pair-image-counterexample/) | Four-term three-pair construction, plus the two-pair dimension boundary. | [28 July 2026](three-pair-image-counterexample/published/) |
 | [Sparse minimality in dimension three](sparse-minimality-gaussian-moments-dimension-three/) | No failure with both degree at most four and at most four Witt monomials. | [24 July 2026](sparse-minimality-gaussian-moments-dimension-three/published/) |
 | [Filtered Frobenius proof of the two-variable Gaussian Moments Conjecture](gaussian-moments-two-variables/) | Alternative proof of the known bivariate support classification and sharp cutoff. | [23 July 2026](gaussian-moments-two-variables/published/) |
 
-The two former bivariate revision bundles in `unpublished/` are merged into these current homes. Papers without a public deposit remain in [unpublished](../unpublished/). Current proofs and open questions are organized in [research](../research/).
-
-Public deposit, mathematical review, exact computation and formalization have separate scopes. Each paper's metadata distinguishes the current local revision from its archived public edition.
+[Manuscripts in preparation](../unpublished/) · [Research topics](../research/)

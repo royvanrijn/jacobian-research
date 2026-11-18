@@ -277,9 +277,9 @@ def main():
         "GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md",
         "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md",
         "GAUSSIAN_AFFINE_RADIAL_INVARIANT_CORE_FINITE_IMAGES.md",
-        "../../../unpublished/gaussian-boundary/analytic_core.tex",
-        "../../../unpublished/gaussian-boundary/seed_period_comparison.tex",
-        "../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json",
+        "../../../results/gaussian-boundary/analytic_core.tex",
+        "../../../results/gaussian-boundary/seed_period_comparison.tex",
+        "../../../results/gaussian-boundary/sources/laurent_primary_manifest.json",
     ]
     report.update(python=platform.python_version(), sympy=sp.__version__,
                   sha256={name:hashlib.sha256((directory/name).read_bytes()).hexdigest()

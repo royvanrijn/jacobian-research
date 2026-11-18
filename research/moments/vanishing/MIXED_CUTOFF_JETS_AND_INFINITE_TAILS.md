@@ -47,7 +47,7 @@ in the formal case. Extending the resulting identities proves the
 quotient, local and completed versions.
 
 In the ternary Gaussian and normalized two-sphere degree-at-most-three
-settings, the retained [Gaussian Theorem `thm:cubic`, equation `eq:cutoff`](../../../unpublished/gaussian-boundary/manuscript.tex)
+settings, the retained [Gaussian Theorem `thm:cubic`, equation `eq:cutoff`](../../../results/gaussian-boundary/manuscript.tex)
 and [sphere Theorem `thm:sphere`, equation `eq:cutoff`](../../../unpublished/cubic-sphere-image/main.tex)
 supply C=3. Degree-at-most-three
 perturbations therefore give

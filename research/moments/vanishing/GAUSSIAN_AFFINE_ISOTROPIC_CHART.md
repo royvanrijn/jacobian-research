@@ -1,7 +1,7 @@
 # Gaussian H(2,1): affine charts, radial phases and obstructions
 
 Internal written proof, 17 November 2026. This extends the algebraic cubic
-subcase in [the boundary manuscript](../../../unpublished/gaussian-boundary/manuscript.tex),
+subcase in [the boundary manuscript](../../../results/gaussian-boundary/manuscript.tex),
 subsection "A complete algebraic subcase", to arbitrary polynomial degrees.
 The mixed-source extension below also uses the one-base manuscript's formal
 leading-coefficient obstruction. Independent mathematical review,
@@ -450,7 +450,7 @@ it does not mean that the entire connection is regular. The estimate
 does not assert boundedness of arbitrary nonzero exponential factors.
 
 This extends **Logarithmic seed bound** (label thm:laurentlog) in
-[the boundary manuscript's Laurent proof](../../../unpublished/gaussian-boundary/laurent_logarithmic_bound.tex).
+[the boundary manuscript's Laurent proof](../../../results/gaussian-boundary/laurent_logarithmic_bound.tex).
 It uses the same three imported comparison facts:
 
 1. Moderate nearby cycles recover the formal regular summand, and
@@ -472,7 +472,7 @@ Theorems 2.7 and 3.5
 ([published primary text](https://www.numdam.org/item/10.24033/bsmf.2564.pdf)).
 These are comparison statements, not logarithmic growth bounds. Their
 retained source audit is the boundary manuscript's
-[primary-source manifest](../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json).
+[primary-source manifest](../../../results/gaussian-boundary/sources/laurent_primary_manifest.json).
 The proof below supplies the extra quantitative estimate. Independent
 review of the imported and extended arguments remains pending.
 
@@ -548,7 +548,7 @@ spatial denominator and finitely many rational parameter coefficients.
 On these annuli a descending inverse-phase path lies on Im(phi)=0,
 a real algebraic curve of uniformly bounded degree after clearing
 the rational denominator. The
-[curve-length estimate](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[curve-length estimate](../../../results/gaussian-boundary/analytic_core.tex),
 label lem:curvelength, bounds integral |dx|/|x| by O(1+|log r|)
 using dyadic annuli. There are only finitely many inverse branches;
 strict monotonicity of the real phase prevents retracing with unbounded
@@ -578,7 +578,7 @@ seed functional is a constant linear combination of this complete basis.
 After multiplication by H all those seed values tend to zero.
 
 To exclude a unit seed quotient, use the
-[seed-functional lemma](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+[seed-functional lemma](../../../results/gaussian-boundary/seed_period_comparison.tex),
 label lem:seedfunctional. A unit formal functional first restricts
 to a rational quotient on the differential span of the seed. At an
 ordinary point extend its fibre value to the full dual connection;
@@ -1282,7 +1282,7 @@ H=Delta^{-1/2}, where
 
 This is a generic quadratic elimination of the spatial twisted module
 and its constant volume seed, using
-[the determinant-factor lemma](../../../unpublished/gaussian-boundary/repeated_line_exclusion.tex),
+[the determinant-factor lemma](../../../results/gaussian-boundary/repeated_line_exclusion.tex),
 label lem:quadraticelimination. Its matrix is invertible over C(t).
 Its singularity at t=0 does not justify a conditional Wick integral;
 the original unit functional first supplies its rational seed quotient,

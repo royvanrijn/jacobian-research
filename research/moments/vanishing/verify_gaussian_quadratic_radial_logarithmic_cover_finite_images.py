@@ -263,7 +263,7 @@ def main():
       'MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md',
     ]
     files=[here]+[here.with_name(name) for name in names]
-    primary_base=repository/'unpublished/gaussian-boundary'
+    primary_base=repository/'results/gaussian-boundary'
     files += [primary_base/name for name in [
       'analytic_core.tex','seed_period_comparison.tex',
       'sources/laurent_primary_manifest.json']]

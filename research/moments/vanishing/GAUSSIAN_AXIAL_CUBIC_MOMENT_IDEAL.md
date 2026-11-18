@@ -193,7 +193,7 @@ so is finite only for d=0. The one-ordinary-variable result in
 [the arbitrary-fibre proof](GAUSSIAN_W_AFFINE_ARBITRARY_FIBRE_FINITE_IMAGES.md#one-ordinary-gaussian-variable-finite-image-means-affine-phase)
 excludes deg g>=2 and proves (A13). Its exact absolute comparison import
 is the Leading-coefficient obstruction, label `cor:leadingobstruction`,
-in [polynomial_stationary_balls.tex](../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex):
+in [polynomial_stationary_balls.tex](../../../results/gaussian-boundary/polynomial_stationary_balls.tex):
 for phase tg(Y)-Y^2/2-psi and scalar volume1/p, the spatial top has
 infinity order -1 and the volume has order deg p>=0. It is an absolute
 ordinary-Gaussian source, with no Gamma endpoint discarded.
@@ -210,7 +210,7 @@ for arbitrary phases.
 
 For comparison the older ternary-cubic purity-to-safety theorem is
 `thm:cubic` in the retained
-[Gaussian boundary manuscript](../../../unpublished/gaussian-boundary/manuscript.tex).
+[Gaussian boundary manuscript](../../../results/gaussian-boundary/manuscript.tex).
 It is consistent with these conclusions, but is not a dependency of
 the ideal certificate or its proof of the zero pure locus. No full
 finite-image classification for arbitrary mixed-parity invariant cores

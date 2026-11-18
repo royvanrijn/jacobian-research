@@ -327,11 +327,11 @@ perfect exponential period pairing. Roucairol Section 1.2 and Lemma
 1.4, and Sabbah Section 1.b, formula (1.4) and Proposition 1.5, supply
 the first two comparison facts, with monodromy. They do not supply
 the quantitative bounds proved above. The
-[primary manifest](../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json)
+[primary manifest](../../../results/gaussian-boundary/sources/laurent_primary_manifest.json)
 pins the exact inspected primary texts. The quantitative path input is
-[analytic_core.tex](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[analytic_core.tex](../../../results/gaussian-boundary/analytic_core.tex),
 Lemma lem:curvelength; ordinary seed-functional representation is
-[seed_period_comparison.tex](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+[seed_period_comparison.tex](../../../results/gaussian-boundary/seed_period_comparison.tex),
 Lemma lem:seedfunctional. Their existing review limits are unchanged.
 
 ## 6. Two Gaussian endpoint sectors with an exact jump
@@ -488,7 +488,7 @@ defined on the whole original source. Thus U has a horizontal rational
 unit quotient, without any rationality assertion for other markers.
 
 This is exactly the cyclic argument of Lemma lem:seedfunctional in
-[seed_period_comparison.tex](../../../unpublished/gaussian-boundary/seed_period_comparison.tex).
+[seed_period_comparison.tex](../../../results/gaussian-boundary/seed_period_comparison.tex).
 Choose a time point where the original source, U and its quotient are
 ordinary. Extend the quotient functional from that fibre of U to the
 original source fibre, then through the injection (Q13) to the localized

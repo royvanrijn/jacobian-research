@@ -147,7 +147,7 @@ def main():
         'MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md',
     ]
     canonical=[here]+[here.with_name(name) for name in names]
-    imports=[repository/'unpublished/gaussian-boundary'/name for name in [
+    imports=[repository/'results/gaussian-boundary'/name for name in [
         'polynomial_stationary_balls.tex','seed_period_comparison.tex','analytic_core.tex',
         'sources/laurent_primary_manifest.json',
     ]]

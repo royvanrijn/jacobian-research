@@ -221,11 +221,11 @@ class b itself can have a constant period; that does not give a unit
 period on the seed [1].
 
 The imports are precise: the absolute all-period bound is
-[Formal stationary balls](../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex),
+[Formal stationary balls](../../../results/gaussian-boundary/polynomial_stationary_balls.tex),
 Theorem `thm:stationaryballs`; ordinary seed extension is
-[seed-period comparison](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+[seed-period comparison](../../../results/gaussian-boundary/seed_period_comparison.tex),
 Lemma `lem:seedfunctional`; bounded-degree arc length is
-[the analytic core](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[the analytic core](../../../results/gaussian-boundary/analytic_core.tex),
 Lemma `lem:curvelength`. The three exponential comparison facts and their
 primary-source audit, the complete compact/neck/tail estimates, and the
 relative chain-cone formulation are retained in the canonical

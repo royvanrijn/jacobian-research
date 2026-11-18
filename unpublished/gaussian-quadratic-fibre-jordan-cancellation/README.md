@@ -6,7 +6,7 @@ Classifies Gaussian phases with one unrestricted ordinary base variable and a co
 
 [PDF](gaussian_moments_one_base_constant_quadratic_fibres.pdf) · [LaTeX](main.tex) · [Metadata](metadata.json) · [Verification](verification.json) · [Source bundle](gaussian_moments_one_base_source.zip)
 
-The [dimension-degree boundary paper](../gaussian-boundary/) now focuses on ternary cubics. Its former optional semisimple-fibre discussion is covered here by the stronger all-Jordan theorem and a short scalar pole-cancellation corollary. The [marker-reduction paper](../gaussian-constant-fibre-base-marker-certificates/) combines the complementary base-marker theorem and exact coefficient-ring obstruction.
+The [dimension-degree boundary](../../results/gaussian-boundary/) covers ternary cubics. The [marker-reduction paper](../gaussian-constant-fibre-base-marker-certificates/) gives the complementary base-marker theorem and coefficient-ring obstruction.
 
 Build from this directory:
 

@@ -58,10 +58,10 @@ together with the complete marked-model and
 [finite/pole node estimate](GAUSSIAN_AFFINE_ISOTROPIC_CHART.md#a-double-root-the-remaining-quadratic-mixed-coefficient)
 that integrates exp(-s) times any fixed algebraic power.
 The transition-annulus bound is
-[analytic_core.tex](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[analytic_core.tex](../../../results/gaussian-boundary/analytic_core.tex),
 Lemma `lem:curvelength`; the rational-unit restriction and ordinary-
 parameter analytic extension are
-[seed_period_comparison.tex](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+[seed_period_comparison.tex](../../../results/gaussian-boundary/seed_period_comparison.tex),
 Lemma `lem:seedfunctional`.
 The double pole below does NOT satisfy the simple-pole hypothesis of
 the fixed-logarithmic seed bound itself. We use its underlying complete

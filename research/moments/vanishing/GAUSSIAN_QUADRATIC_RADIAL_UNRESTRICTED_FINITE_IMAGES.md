@@ -97,7 +97,7 @@ frame. The length property used in the estimates is that a uniformly
 bounded number of arcs of fixed real algebraic degree has length
 \(O(\rho)\) inside a disc of radius \(\rho\). It applies also after
 a fixed algebraic coordinate change and bounded multiplicity pullback.
-This follows from the [curve-length lemma](../../../unpublished/gaussian-boundary/analytic_core.tex)
+This follows from the [curve-length lemma](../../../results/gaussian-boundary/analytic_core.tex)
 by the uniform algebraic degree bound on projections. Inverse images
 of straight or circular phase arcs have this property. For compact and
 neck chains in the marked model, use finitely many algebraic charts of

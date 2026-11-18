@@ -37,8 +37,8 @@
     "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
     "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
     "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
-    "../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
-    "../../../unpublished/gaussian-boundary/repeated_line_exclusion.tex": "933184e1a5b438699d3c1ffa13d871257200184fd0c0dc7b6f5c0f9baa8d0ff7",
+    "../../../results/gaussian-boundary/polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
+    "../../../results/gaussian-boundary/repeated_line_exclusion.tex": "933184e1a5b438699d3c1ffa13d871257200184fd0c0dc7b6f5c0f9baa8d0ff7",
     "verify_gaussian_extended_fibre_finite_images.py": "6b489215d1ba9e2ba2237cd305de52228a0854a026ab19adf64b2dd2909ade07"
   },
   "independent_replay": false,

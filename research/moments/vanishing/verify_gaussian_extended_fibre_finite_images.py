@@ -193,8 +193,8 @@ if __name__ == "__main__":
              "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md",
              "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md",
              "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md",
-             "../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex",
-             "../../../unpublished/gaussian-boundary/repeated_line_exclusion.tex",
+             "../../../results/gaussian-boundary/polynomial_stationary_balls.tex",
+             "../../../results/gaussian-boundary/repeated_line_exclusion.tex",
              Path(__file__).name]
     result.update(python=platform.python_version(), sympy=sp.__version__,
                   sha256={name: hashlib.sha256((directory/name).read_bytes()).hexdigest()

@@ -124,8 +124,8 @@
     "GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
     "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
     "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
-    "../../../unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
-    "../../../unpublished/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a"
+    "../../../results/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "../../../results/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a"
   },
   "independent_replay": false,
   "formal_verification": false,

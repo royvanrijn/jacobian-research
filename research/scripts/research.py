@@ -168,7 +168,7 @@ def render(data: dict) -> str:
              "This is a map of the principal results and current open questions. "
              "A result's state applies to its stated scope. Publication, internal checking, "
              "independent replay, formal verification and external review remain separate.", "",
-             "[Published papers](../README.md) · [Unpublished manuscripts](../unpublished/README.md) · "
+             "[Released and submitted papers](../results/README.md) · [Manuscripts in preparation](../unpublished/README.md) · "
              "[Research topics](README.md) · [Scope and gaps](SCOPES.md) · "
              "[Implications](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md) · [Cited sources](REFERENCES.md)", "",
              "The authored state describes the exact statement below. Graph status is computed "
@@ -215,8 +215,15 @@ def render_topic(topic: dict, evaluation: dict | None = None) -> str:
     for result in topic["results"]:
         source = result["canonical_source"]
         if source.startswith("../results/"):
-            state = "Published preprints"
-            source = "../results/README.md"
+            paper = Path(source).parent
+            metadata = ROOT / paper / "metadata.json"
+            paper_meta = json.loads(metadata.read_text()) if metadata.is_file() else {}
+            if paper_meta.get("status") == "submission-pending":
+                state = "Under review at " + paper_meta["submission"]["venue"]
+                source = str(paper / "README.md")
+            else:
+                state = "Published preprints"
+                source = "../results/README.md"
         elif source.startswith("../unpublished/"):
             state = "Unpublished; independent review pending"
             readme = str(Path(source).parent / "README.md")
@@ -256,8 +263,8 @@ def render_research_index(data: dict) -> str:
     lines = ["# Research", "",
              "<!-- Generated from MATH_STATUS.json; run make render-navigation. -->", "",
              "Current AI-assisted mathematics, organized by topic. "
-             "[Published papers](../results/README.md) and "
-             "[unpublished manuscripts](../unpublished/README.md) have separate catalogues.", "",
+             "[Released and submitted papers](../results/README.md) · "
+             "[Manuscripts in preparation](../unpublished/README.md)", "",
              "| Topic | Scope | Authored assessment | Computed obligations |", "|---|---|---|---|"]
     for topic in data["topics"]:
         gaps = [evaluation[node_id] for node_id in topic.get("gap_ids", []) if node_id in evaluation]
@@ -373,10 +380,22 @@ def check_portfolio() -> tuple[int, int]:
                 if meta.get(field):
                     reference(meta[field], path.parent)
             assert meta["published"] is False, f"current revision mislabeled as deposited: {path}"
-            assert meta["status"] in {"draft", "revision", "ready-for-review", "parked", "partial-draft"}
+            pending = meta["status"] == "submission-pending"
+            if pending:
+                assert collection == "results", f"submitted paper belongs in results: {path}"
+                submission = meta.get("submission")
+                assert (isinstance(submission, dict)
+                        and isinstance(submission.get("venue"), str)
+                        and submission["venue"].strip()), f"missing submission venue: {path}"
+            else:
+                assert meta["status"] in {"draft", "revision", "ready-for-review", "parked", "partial-draft"}
             assert meta["next_steps"] and all(isinstance(step, str) and step.strip() for step in meta["next_steps"])
             assert meta["verification"] and meta["build"]
             if collection == "results":
+                if pending and "published_edition" not in meta:
+                    assert not (path.parent / "published").exists(), (
+                        f"missing published archive declaration: {path.parent}")
+                    continue
                 assert meta.get("published_edition") == "published/", f"missing published archive: {path.parent}"
                 archive = reference("published/", path.parent, directory=True)
                 check_deposited_edition(reference("metadata.json", archive))
@@ -692,7 +711,7 @@ def main() -> None:
                                  + ". Use impact --source PATH and inspect the proof before accepting new pins.")
                 check_navigation(data)
                 pinned_inputs = check_current_inputs()
-                published, drafts = check_portfolio()
+                released, drafts = check_portfolio()
                 links, documents = check_links()
                 print(f"PASS current research: {topics} topics, {results} principal results; sources, evidence and checker hashes")
                 print(f"PASS dependency DAG: {len(graph.nodes)} nodes, {len(graph.rules)} implications; quotient acyclic, pinned and current")
@@ -703,7 +722,7 @@ def main() -> None:
                 if references:
                     print(f"PASS cited resources: {len(references['papers'])} entries; "
                           f"{references['bibliography_items']} bibliography items accounted for")
-                print(f"PASS portfolio: {published} released papers with sealed published archives, {drafts} unpublished manuscripts")
+                print(f"PASS portfolio: {released} released or submitted papers, {drafts} manuscripts in preparation")
                 print(f"PASS current input manifests: {pinned_inputs} pinned references; cached primary sources checked")
                 print(f"PASS local links: {links} references in {documents} maintained Markdown files; no proof replay")
         elif args.command == "list":

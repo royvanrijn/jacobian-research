@@ -95,7 +95,7 @@ These identifications are the retained algebraic source bridge in
 `GAUSSIAN_AFFINE_ISOTROPIC_CHART.md`, section
 "An arbitrary WY coefficient with constant nonzero W^2 coefficient".
 For scalar fibre matrix coefficients the precise determinant-factor
-import is `unpublished/gaussian-boundary/repeated_line_exclusion.tex`,
+import is `results/gaussian-boundary/repeated_line_exclusion.tex`,
 Lemma `lem:quadraticelimination`.
 
 ## 2. A polynomial-exponential vacuum gives a unit cyclic quotient
@@ -193,7 +193,7 @@ retained cover proof, not a new assertion of external review. Its proper
 semistable-model existence uses Stacks Tag 0CDN and Section 55.14.
 The three period-comparison facts and their primary-source audit are
 listed in the same note's "Fixed-puncture logarithmic seed bound" and
-`unpublished/gaussian-boundary/sources/laurent_primary_manifest.json`.
+`results/gaussian-boundary/sources/laurent_primary_manifest.json`.
 The estimate (8) is the required additional quantitative input.
 
 ## 4. Constant c: the full leading-coefficient obstruction
@@ -216,7 +216,7 @@ the constant t coefficient of N is only z^2. Therefore
 
 The full ordinary formal stationary-ball theorem rules out the unit
 cyclic quotient of Section 2. The exact import is
-`unpublished/gaussian-boundary/polynomial_stationary_balls.tex`,
+`results/gaussian-boundary/polynomial_stationary_balls.tex`,
 Theorem `thm:stationaryballs`, applied after a finite cover for the
 algebraic square root. Its use is also explicit in the determinant-factor
 lemma. A corollary restricted to rational normalization would not suffice.

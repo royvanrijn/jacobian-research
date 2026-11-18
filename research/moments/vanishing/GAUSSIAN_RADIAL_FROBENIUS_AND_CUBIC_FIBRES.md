@@ -332,7 +332,7 @@ and \(\Re(L-w_0)\le -j+O_d(1)\). For any fixed disc radius \(B\),
 factor \(L(U)-w\) at its centre \(w\). The inverse image of that disc
 lies in the union of the \(d\) discs of radius \(B^{1/d}\) about its roots.
 The inverse of each phase line or circle is a real algebraic curve
-of bounded degree. The [curve-length estimate](../../../unpublished/gaussian-boundary/analytic_core.tex)
+of bounded degree. The [curve-length estimate](../../../results/gaussian-boundary/analytic_core.tex)
 bounds the length in those discs, independently of the centres.
 The inverse lift has bounded multiplicity along each phase segment,
 including its integrable ramified start. Summing a constant times

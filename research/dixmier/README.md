@@ -15,7 +15,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Cubic/quintic models and universal matrix admission obstructions | Internal result | proved | [Source](dixmier-formal-lifting/VALUED_MATRIX_LATTICE_AND_SHIFTED_ADMISSION.md) |
 | Global Laurent admission and closed quartic scalar faces | Internal result | proved | [Source](dixmier-formal-lifting/GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md) |
 
-**Computed obligations:** 22 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 21 unresolved; 2 resolved within their exact scope.
 
 
 Scope limits:

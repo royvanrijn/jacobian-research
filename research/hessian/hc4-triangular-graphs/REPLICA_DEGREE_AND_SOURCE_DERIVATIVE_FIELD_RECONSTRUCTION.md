@@ -36,7 +36,10 @@ Fix an ACTUAL complex plane Keller inclusion
 Scale a target coordinate so Jac_(x,y)(P,Q)=1; B and F are unchanged.
 The source coordinates (x,y) are arbitrary. The already adopted plane
 Rentschler input, explicitly retained in KX0, puts EVERY nonzero source
-LND in this form after a polynomial source change. In adapted coordinates
+LND in this form after a polynomial source change. For an alternative proof, see
+[Crachiola--Makar-Limanov, Theorem 4.3](https://pure.mpg.de/pubman/item/item_3150853_3/component/file_3281256/Crachiola-Makar-Limanov_Exponential%2Bmaps%2Bof%2Ba%2Bpolynominal%2Bring%2Bin%2Btwo%2Bvariables_Preprint.pdf).
+Apply its characteristic-zero case to the exponential of the LND and
+take the coefficient of the group parameter. In adapted coordinates
 the degree k=deg p is intrinsic: a different generator of ker(delta)
 is affine in y and a complementary coordinate is a*x+b(y), a!=0.
 These changes preserve k.
@@ -132,8 +135,20 @@ gives L=F(y). Since h in E and deg h=m, the tower degrees show
 
     E=F(h(y)).                                                   (8)
 
-Indeed [L:F(h(y))]<=m, while it equals m*[E:F(h(y))]. This uses
-the general lemma, not PF53's later special ramification hypotheses.
+Indeed [L:F(h(y))]<=m, while it equals m*[E:F(h(y))]. This uses the general lemma on coordinate generators.
+
+In a fixed polynomial source frame, suppose E admits one nonzero
+polynomial replica p_0(y)*partial_x. Its invariant polynomial generator
+h in (3) then determines all descending replicas in that frame:
+
+    {p in C[y] : p(y)*partial_x preserves E}=h'(y)*C[h(y)].   (8a)
+
+Necessity is the volume and pole calculation (6) for each nonzero p.
+For sufficiency, write p=h'*r(h). Since p_0=h'*r_0(h), the new
+derivation is r(h)/r_0(h) times the given one, with multiplier in E.
+The smallest nonzero replica degree in that frame is deg h-1=m-1,
+attained by a nonzero scalar multiple of h'. Replacing h by another
+generator of the invariant ring rescales h' by a nonzero constant.
 
 For E=F the stronger retained KX0 already forces inversion for EVERY
 nonzero LND, including replicas. The present theorem instead controls
@@ -192,11 +207,13 @@ of order m dividing gcd(d,k+1), where d=[L:F]. The induced x action
 has multiplier zeta^(m-1)=zeta^-1 and a rational shift; it need not
 preserve the source plane.
 
-This is consistent with, and sharp at, MQ0: an actual cyclic subgroup
-of order g has source-image kernel C[y^g], and its invariant replica
-y^(g-1)*partial_x descends, with g=deg(p)+1. Thus one must NOT replace
-the bare-translation theorem by a false prohibition on every replica's
-intermediate-field descent.
+The converse for a fixed proper embedded E is supplied by
+[MQ0, Sections 1 and 4](CYCLIC_DECK_SOURCE_IMAGE_AND_THE_UNIQUE_MULTIPLE_FIBRE.md).
+If L/E is cyclic Galois of degree m, then its group is a subgroup of the
+actual rational deck group over F. In the centered common source frame,
+MQ0 gives an invariant replica y^(m-1)*partial_x. Thus a proper E admits
+a nonzero monomial replica in some polynomial source frame exactly when
+L/E is cyclic Galois. The replica from MQ0 attains the lower bound m-1.
 
 If the actual generic deck group is TRIVIAL, no monomial replica in
 ANY source-coordinate frame can preserve a proper intermediate field.
@@ -257,9 +274,10 @@ E_1=C(P,Q,a,b), then
 
 The trace proof is identical. After adjoining y to E_1, division by
 p(y) recovers P_x,Q_x, so (14a) gives E_1(y)=L. The polynomial
-H(T)-H(y) over E_1 gives the bound. This is an upper bound; the stronger
-divisibility statement (7) retains its differential-stability hypothesis.
-No such hypothesis is needed for (14a)--(14c).
+H(T)-H(y) over E_1 gives the upper bound directly. The
+[first-velocity stability criterion](DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md#4-first-velocities-characterize-replica-stability)
+shows that E_1 is already delta-stable. Thus (7) further gives
+[L:E_1] dividing gcd([L:F],deg p+1).
 
 More generally, for ANY dominant generically finite rational map
 G=(G_1,...,G_n) of C^n with nonzero Jacobian determinant, the field
@@ -275,7 +293,8 @@ For ANY p!=0 define the finite source-derivative algebra
     M=max(deg_x(P),deg_x(Q)), E_delta=Frac(J_delta).
 
 Higher derivatives vanish because delta=p(y)*partial_x. This algebra
-contains B and is delta-stable, so (7) applies:
+contains B and is delta-stable. The first-velocity criterion identifies
+its fraction field E_delta with E_1. Therefore (7) gives:
 
     [L:E_delta] divides gcd(d,deg p+1).                          (13)
 

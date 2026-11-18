@@ -1732,7 +1732,7 @@
       "passed": true
     }
   ],
-  "elapsed_seconds": 0.10797827102942392,
+  "elapsed_seconds": 0.10806962102651596,
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
@@ -1758,7 +1758,7 @@
     },
     {
       "path": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
-      "sha256": "57e96760cbb12f8fa6a7bb6e163260c7463c52ced35a174c93dc198db1e66c09"
+      "sha256": "449c8f8fc90874cc0a72bd3bde87c87462685bd14df2da8536352014cb42f069"
     },
     {
       "path": "sources/stacks-07S7-finite-free-quotient.html",

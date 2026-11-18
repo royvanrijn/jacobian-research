@@ -167,12 +167,12 @@ retained [all-centres and crossover proof](GAUSSIAN_AFFINE_ISOTROPIC_CHART.md#al
 and [complete period comparison](GAUSSIAN_AFFINE_ISOTROPIC_CHART.md#infinity-and-complete-period-comparison).
 The three underlying formal-nearby-cycle, finite/pole-node and ordinary
 period-pairing inputs are identified and scoped in the
-[primary manifest](../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json).
+[primary manifest](../../../results/gaussian-boundary/sources/laurent_primary_manifest.json).
 The quantitative bounded-degree path estimate is
-[analytic_core.tex](../../../unpublished/gaussian-boundary/analytic_core.tex),
+[analytic_core.tex](../../../results/gaussian-boundary/analytic_core.tex),
 Lemma `lem:curvelength`; the exact passage from a horizontal cyclic
 unit quotient to an analytic period is
-[seed_period_comparison.tex](../../../unpublished/gaussian-boundary/seed_period_comparison.tex),
+[seed_period_comparison.tex](../../../results/gaussian-boundary/seed_period_comparison.tex),
 Lemma `lem:seedfunctional`. These are the retained complete-comparison
 imports, with their existing review limitations.
 
@@ -200,7 +200,7 @@ D=max(2,deg G)>=2. Its top coefficient has order at most zero: it is
     D v_infinity(1/[p(1-th)])>v_infinity(top).        (A12)
 
 The retained absolute polynomial all-period leading theorem,
-[Formal stationary balls](../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex),
+[Formal stationary balls](../../../results/gaussian-boundary/polynomial_stationary_balls.tex),
 Theorem `thm:stationaryballs`, excludes its normalized unit quotient.
 This theorem retains the irregular infinity pole of dY: its scalar
 tail prefactor has order v(1/[p(1-th)])-v(top)/D>0. No logarithmic-only

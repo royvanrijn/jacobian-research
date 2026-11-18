@@ -245,7 +245,7 @@ def main():
         "GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md",
         "GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md",
         "sources/stacks-054K-radial-reductions.html",
-    )], root / "unpublished/gaussian-boundary/analytic_core.tex"]
+    )], root / "results/gaussian-boundary/analytic_core.tex"]
     report = dict(status="passed", sympy=sp.__version__, frobenius=frobenius_controls(),
                   cubic_radial_tails=cubic_radial_tail_controls(),
                   cubic=cubic_controls(), sha256={str(path.relative_to(root)):

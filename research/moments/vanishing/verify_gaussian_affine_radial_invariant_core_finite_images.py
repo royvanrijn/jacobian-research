@@ -137,7 +137,7 @@ def main():
         "GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md",
         "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md",
     ]]
-    base=repository/"unpublished/gaussian-boundary"
+    base=repository/"results/gaussian-boundary"
     imports=[base/name for name in ["seed_period_comparison.tex","analytic_core.tex",
                                    "polynomial_stationary_balls.tex","sources/laurent_primary_manifest.json"]]
     manifest=json.loads((base/"sources/laurent_primary_manifest.json").read_text(encoding="utf-8"))

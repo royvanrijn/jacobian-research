@@ -6,7 +6,7 @@ For a Gaussian phase P = aY^2 + B(U)Y + g(U) with constant a, every original mar
 
 [PDF](gaussian_marker_reduction_constant_quadratic_fibre.pdf) · [LaTeX](main.tex) · [Metadata](metadata.json) · [Verification](verification.json) · [Source bundle](gaussian_marker_reduction_source.zip)
 
-This paper combines the marker-reduction theorem and **A Specialization Obstruction in Gaussian Marker Generation** in one argument. The positive coefficient-content theorem is followed by the exact scalar obstruction, its Gaussian kernel and nilpotent operators. The [one-base constant-fibre paper](../gaussian-quadratic-fibre-jordan-cancellation/) gives the corresponding purity-to-safety classification with one ordinary base variable. The [boundary paper](../gaussian-boundary/) treats the unrestricted dimension-degree question.
+Related results cover [one-base constant fibres](../gaussian-quadratic-fibre-jordan-cancellation/) and the [Gaussian dimension-degree boundary](../../results/gaussian-boundary/).
 
 Build from this directory:
 

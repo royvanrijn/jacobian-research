@@ -6,14 +6,19 @@
   },
   "summary": "Determines the complex Gaussian dimension-degree boundary and proves the sharp ternary-cubic mixed-moment cutoff.",
   "published": false,
-  "status": "ready-for-review",
+  "status": "submission-pending",
+  "submission": {
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.00596v1",
+    "updated_on": "2026-11-18"
+  },
   "source": "manuscript.tex",
   "pdf": "manuscript.pdf",
   "build": "../../.venv/bin/python verify.py --build --refresh",
-  "verification": "Internally audited standalone manuscript with recorded proof, source and layout checks; publication and independent external review are still pending.",
+  "verification": "Internal proof, source and layout checks are recorded. Independent mathematical review remains pending.",
   "next_steps": [
     "Specialist review of the explicit degree-one nearby-cycle/chain comparison, finite-target infinity exclusion and regular-rank ledger, and relative-pair identification in the uniform-cut argument.",
-    "Independent review of the complete qualitative cubic classification and its cited analytic inputs before submission."
+    "Independent review of the full ternary-cubic classification and its cited analytic inputs."
   ],
   "catalogued_on": "2026-11-17",
   "abstract": "We classify complex polynomials of degree at most three in three\nindependent standard real Gaussian variables whose positive moments all\nvanish. Up to a complex orthogonal linear change of coordinates and a\nnonzero scalar, every such polynomial has one-sided circular support or\nbelongs to a single exceptional orbit. For every fixed polynomial $Q$,\nits mixed moments $\\E[QP^m]$ vanish whenever $m>3\\deg Q$, and the\ncoefficient three is optimal. The proof extracts a Gaussian coordinate\nin which the polynomial is affine linear, then classifies that family\nusing formal stationary frames and analytic period estimates.\n\nCombining this ternary-cubic result with Wilson's two-variable theorem,\nLiu's quadratic theorem and Long's counterexamples gives the exact\ndimension--degree boundary for the Gaussian Moments Conjecture: the\nimplication from pure-moment vanishing to eventual mixed-moment\nvanishing holds universally precisely when there are at most two\nvariables, the degree is at most two, or there are three variables and\nthe degree is at most three. We reproduce the all-order moment\nidentities for the two minimal failures.",

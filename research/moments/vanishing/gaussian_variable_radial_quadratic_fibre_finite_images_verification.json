@@ -150,8 +150,8 @@
     "GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
     "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
     "GAUSSIAN_AFFINE_RADIAL_INVARIANT_CORE_FINITE_IMAGES.md": "80f51332276c2361b224a501ec595e8a592b05bf460a1bd5b5667c575571654b",
-    "../../../unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
-    "../../../unpublished/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
-    "../../../unpublished/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d"
+    "../../../results/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "../../../results/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
+    "../../../results/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d"
   }
 }

@@ -135,7 +135,7 @@ def main():
             "sources/sabbah_stokes_0912.2762v5.pdf",
         )
     ]
-    primary = root / "unpublished/gaussian-boundary"
+    primary = root / "results/gaussian-boundary"
     manifest = primary / "sources/laurent_primary_manifest.json"
     files += [manifest, primary / "analytic_core.tex"]
     for source in json.loads(manifest.read_text(encoding="utf-8"))["sources"]:

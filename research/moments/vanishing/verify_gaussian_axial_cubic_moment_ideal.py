@@ -318,8 +318,8 @@ def main():
              'GAUSSIAN_PRIMITIVE_CLOSURE_UNDER_SUMS.md',
              'GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md',
              'MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md',
-             '../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex',
-             '../../../unpublished/gaussian-boundary/manuscript.tex']
+             '../../../results/gaussian-boundary/polynomial_stationary_balls.tex',
+             '../../../results/gaussian-boundary/manuscript.tex']
     for name in imports:pins[name]=sha256((directory/name).read_bytes()).hexdigest()
     pins[Path(__file__).name]=sha256(Path(__file__).read_bytes()).hexdigest()
     pins[args.certificate.name]=sha256(args.certificate.read_bytes()).hexdigest()

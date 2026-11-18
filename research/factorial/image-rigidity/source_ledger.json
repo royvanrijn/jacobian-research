@@ -518,7 +518,7 @@
     },
     "eit_compact_linear_and_polynomial_kz_reproduction": {
       "canonical_source": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-      "source_sha256": "5024d0eefeebddb95cb41d488030ee84ea121a9c434250d4bb671dd3cf514a98",
+      "source_sha256": "34fc801195937d80ff96338636e697d6974f8869ec845c3df37566059819fa2b",
       "main_claims": [
         "EXT-EIT-II-LINEAR-KZ",
         "EXT-EIT-III-POLYNOMIAL-KZ"
@@ -641,30 +641,40 @@
     },
     "eit_iv_gamma_kernel_and_scoped_interfaces": {
       "canonical_source": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-      "source_sha256": "5024d0eefeebddb95cb41d488030ee84ea121a9c434250d4bb671dd3cf514a98",
+      "source_sha256": "34fc801195937d80ff96338636e697d6974f8869ec845c3df37566059819fa2b",
       "primary_source": "factorial/image-rigidity/sources/long-eit-iv-92db79e.tex",
       "primary_sha256": "82bca80220ecf54a5f10f90951430cf6d14ae4df386a39a946985f719797ea55",
       "directly_proved_components": [
-        "FACT-EIT-IV-COMPLETE-GAMMA-FUNCTIONAL-KERNEL"
+        "FACT-EIT-IV-COMPLETE-GAMMA-FUNCTIONAL-KERNEL",
+        "FACT-EIT-IV-GAMMA-SUBPACKET-FUNCTIONAL-PRESENTATION",
+        "FACT-EIT-IV-GAMMA-ALGEBRAIC-FIBER-KERNEL",
+        "FACT-EIT-IV-NORMALIZED-MATRIX-CONSTANT-EXTENSION",
+        "FACT-EIT-IV-EXACT-COMMON-CONSTANTS-DESCENT"
       ],
       "unvalidated_general_IV_inputs": [
         "EXT-EIT-IV-ALGEBRAIC-REALIZATION",
         "EXT-EIT-IV-ALGEBRAIC-FIXED-PART",
         "EXT-EIT-IV-GLOBAL-RANK-ONE-SATURATION",
-        "EXT-EIT-IV-FUNCTIONAL-COMPARISON"
+        "EXT-EIT-IV-FUNCTIONAL-COMPARISON",
+        "EXT-EIT-IV-DIRECTIONAL-RELATIVE-RAPID-DECAY"
       ],
       "application_obligations": [
         "GAP-EIT-IV-ELEMENTARY-PRESENTATION-COMPARISON",
         "GAP-EIT-IV-APPLICATION-NUMERICAL-SPECIALIZATION"
       ],
-      "review": "Direct all-N Gamma kernel proof by cyclic basis and polynomial elimination; generic IV chain only conditionally traced. II–III scoped reproduction independently challenged by a contextual internal agent audit; no new issue found. Actual directional comparison, Picard-1-motive rank-one lifting and multiderivation integrable-PV hypotheses remain review obligations.",
+      "review": "Direct Gamma kernel and exact fiber calculation over actual constants. The integrable Picard–Vessiot input is checked separately through the categorical source. Arithmetic realization, directional relative comparison, Fourier and Picard-1-motive rank-one lifting remain open. The fixed-part step is checked conditional on the stated realization.",
       "ordinary_KZ_solved": false,
       "IV_complete_proof_audit": false,
       "Gamma_constant_independence": false,
       "unrestricted_FC": false,
       "unrestricted_SFC": false,
       "external_review": false,
-      "formal_verification": false
+      "formal_verification": false,
+      "scoped_primary_inputs": [
+        "EXT-EIT-INTEGRABLE-PICARD-VESSIOT",
+        "EXT-EIT-HIEN-ABSOLUTE-RAPID-DECAY",
+        "EXT-EIT-CHH-ABSOLUTE-EXPONENTIAL-PERIOD-COMPARISON"
+      ]
     },
     "binomial_residual_arithmetic": {
       "canonical_source": "factorial/image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex",

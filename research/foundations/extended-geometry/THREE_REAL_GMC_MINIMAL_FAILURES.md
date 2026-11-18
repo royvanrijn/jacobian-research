@@ -23,7 +23,7 @@ Long's witness is
 
 This note proves a rank-one classification and a bounded sparse exclusion in
 circular Gaussian coordinates. The current
-[dimension-degree manuscript](../../../unpublished/gaussian-boundary/manuscript.tex)
+[dimension-degree manuscript](../../../results/gaussian-boundary/manuscript.tex)
 separately proves that every pure ternary cubic is safe, giving global
 degree-four minimality for a failure. That manuscript is unpublished and
 awaits independent mathematical review. The classification here does not

@@ -144,7 +144,7 @@ functional is exp(-psi)Phi_g/p, with the connection term h'/h retained.
 The exact imported statement is Formal stationary balls, theorem
 thm:stationaryballs in
 
-    unpublished/gaussian-boundary/polynomial_stationary_balls.tex,
+    results/gaussian-boundary/polynomial_stationary_balls.tex,
 
 also retained as the Leading-coefficient obstruction in the
 constant-mixed-source section of GAUSSIAN_AFFINE_ISOTROPIC_CHART.md.

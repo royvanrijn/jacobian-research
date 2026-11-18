@@ -1,24 +1,20 @@
 #!/usr/bin/env python3
 """Replay the exact algebra in THREE_MERIDIAN_FRONTIER_AUDIT.md.
 
-Run with Python 3 and no third-party packages:
-    python3 research/meridional-rank/representations/verify_three_meridian_candidate.py
+Default replay uses only Python's standard library. A direct SL_2(F_13)
+braid colouring certifies meridional rank four for the closure of
+sigma1^4 (sigma1 sigma2 sigma3)^5, without importing a simplified knot
+presentation or peripheral word. The universal trace argument is written
+in the audit; this script checks its finite matrix certificate.
 
-Candidate: closure(sigma1^4 (sigma1 sigma2 sigma3)^5) = T(4,5;2,2).
-The default replay treats the presentation and meridian as software inputs.
-The optional --verify-exterior flag, run with Sage and SnapPy 3.3.2,
-reconstructs the literal braid exterior, compares its presentation/meridian
-and verifies hyperbolic gluing equations with interval arithmetic. The
-diagram/cell-group and peripheral identification remains a SOFTWARE IMPORT.
-Bridge number and the (1,1)-presentation are separate literature inputs.
+Older free-by-cyclic and subgroup controls remain exact checks for their
+literal inputs. They are not required by the direct lower bound.
 
-The checks prove exact identities for the displayed presentation and the
-trefoil permutations and the odd-cone-order countercheck. They exhibit no generating meridian triple, do not
-replay the monodromy/coset searches, and prove no meridional-rank bound.
-Five finite quotients replay the negative part of the bounded 595-triple
-screen. All words use signed generator indices; permutation products act
-rightmost first. No external inputs or files are read except this
-file itself for the reported SHA-256.
+The optional --verify-exterior and --verify-cover flags require Sage and
+SnapPy 3.3.2. They reconstruct the literal braid and verify interval
+hyperbolicity of its exterior and closed double branched cover. These
+geometry branches retain explicit software imports and are not premises
+of the meridional-rank certificate. No unrestricted MRC result is claimed.
 """
 
 from __future__ import annotations
@@ -381,8 +377,112 @@ def check_odd_cone_lifting_barrier():
     }
 
 
-def check_candidate_exterior():
-    """Optional software-import replay; requires Sage with SnapPy 3.3.2."""
+def check_direct_braid_trace_certificate():
+    """Check a direct Wirtinger representation and its deck trace change."""
+    prime = 13
+    eye2 = (1, 0, 0, 1)
+    colors = (
+        (12, 8, 7, 8),
+        (10, 0, 7, 4),
+        (1, 9, 4, 11),
+        eye2,
+    )
+
+    def multiply(left, right, dimension):
+        return tuple(
+            sum(left[dimension * i + k] * right[dimension * k + j]
+                for k in range(dimension)) % prime
+            for i in range(dimension) for j in range(dimension)
+        )
+
+    def determinant(matrix):
+        return (matrix[0] * matrix[3] - matrix[1] * matrix[2]) % prime
+
+    def inverse(matrix):
+        require(determinant(matrix) == 1, "SL2 colour determinant")
+        return (matrix[3], -matrix[1] % prime, -matrix[2] % prime, matrix[0])
+
+    def product(*matrices):
+        result = eye2
+        for matrix in matrices:
+            result = multiply(result, matrix, 2)
+        return result
+
+    def swap_matrix(matrix):
+        opposite = inverse(matrix)
+        return (
+            0, 0, matrix[0], matrix[1],
+            0, 0, matrix[2], matrix[3],
+            opposite[0], opposite[1], 0, 0,
+            opposite[2], opposite[3], 0, 0,
+        )
+
+    eye4 = tuple(int(i == j) for i in range(4) for j in range(4))
+
+    def verify_coloring(braid, original):
+        require(all(determinant(matrix) == 1 for matrix in original),
+                "all four colours lie in SL2(F13)")
+        current = list(original)
+        for crossing in braid:
+            require(crossing in (1, 2, 3), "positive four-braid crossing")
+            index = crossing - 1
+            left, right = current[index:index + 2]
+            new_left = product(left, inverse(right), left)
+            # Independently check the actual four-by-four Wirtinger conjugacy.
+            jleft, jright = swap_matrix(left), swap_matrix(right)
+            conjugate = multiply(multiply(jleft, jright, 4), jleft, 4)
+            require(conjugate == swap_matrix(new_left), "matrix Wirtinger crossing")
+            current[index:index + 2] = [new_left, left]
+        require(tuple(current) == tuple(original), "all braid closure relations")
+
+    verify_coloring(BETA, colors)
+    strand_permutation = list(range(4))
+    for crossing in BETA:
+        index = crossing - 1
+        strand_permutation[index:index + 2] = reversed(strand_permutation[index:index + 2])
+    require(strand_permutation == [1, 2, 3, 0], "one-component braid closure")
+    matrices = [swap_matrix(matrix) for matrix in colors]
+    require(all(multiply(matrix, matrix, 4) == eye4 for matrix in matrices),
+            "all meridian squares vanish")
+
+    # The even word w=x3*x0*x1*x2 is diagonal in two-by-two blocks.
+    witness = eye4
+    for index in (3, 0, 1, 2):
+        witness = multiply(witness, matrices[index], 4)
+    expected = (2, 12, 0, 0, 1, 0, 0, 0,
+                0, 0, 0, 2, 0, 0, 6, 4)
+    require(witness == expected, "literal even word block diagonal")
+    deck_image = multiply(multiply(matrices[3], witness, 4), matrices[3], 4)
+    trace = lambda matrix: (matrix[0] + matrix[5]) % prime
+    require([trace(witness), trace(deck_image)] == [2, 4],
+            "actual meridian conjugation changes first-block trace")
+
+    corrupted = list(colors)
+    corrupted[0] = (6, 3, 7, 8)  # Still determinant one; closure must reject it.
+    require(rejects(lambda: verify_coloring(BETA, corrupted)),
+            "corrupted direct braid colour rejected")
+    require(rejects(lambda: verify_coloring(BETA[:-1], colors)),
+            "wrong braid word rejected")
+    return {
+        "field_prime": prime,
+        "strand_colours": [list(matrix) for matrix in colors],
+        "verified_crossings": len(BETA),
+        "closure_relations": 4,
+        "strand_permutation": strand_permutation,
+        "witness_word_zero_based": [3, 0, 1, 2],
+        "first_block": [2, 12, 1, 0],
+        "second_block": [0, 2, 6, 4],
+        "trace_before_and_after_deck": [2, 4],
+        "corruption_rejections": 2,
+        "scope": (
+            "direct literal braid representation, no SnapPy presentation import; "
+            "written universal trace lemma excludes every three-meridian tuple"
+        ),
+    }
+
+
+def candidate_exterior():
+    """Reconstruct the literal diagram and its pinned peripheral software data."""
     import snappy
 
     require(snappy.__version__ == "3.3.2", "pinned SnapPy version")
@@ -392,6 +492,14 @@ def check_candidate_exterior():
     require(group.generators() == ["a", "b"], "original presentation generators")
     require(group.relators() == [RELATOR_AB], "original presentation relator")
     require(group.meridian() == "BA", "original peripheral meridian")
+    return exterior
+
+
+def check_candidate_exterior():
+    """Optional software-import replay; requires Sage with SnapPy 3.3.2."""
+    import snappy
+
+    exterior = candidate_exterior()
     verified, _shapes = exterior.verify_hyperbolicity()
     require(verified, "interval hyperbolicity of the literal exterior")
     return {
@@ -404,10 +512,52 @@ def check_candidate_exterior():
     }
 
 
+def check_candidate_closed_cover():
+    """Verify the closed double branched cover after permanent filling."""
+    import snappy
+
+    exterior = candidate_exterior()
+    exterior.dehn_fill((2, 0))
+    covers = exterior.covers(2, cover_type="cyclic")
+    require(len(covers) == 1, "unique cyclic double cover of the orbifold")
+    cover = covers[0]
+    require(cover.cover_info()["degree"] == 2, "double cover degree")
+    require(cover.cusp_info("filling") == [(1, 0)], "lifted primitive meridian filling")
+    require(str(cover.homology()) == "Z/17", "closed-cover homology")
+    finite = cover.filled_triangulation()
+    require(finite.num_cusps() == 0 and finite.has_finite_vertices(),
+            "permanently filled closed triangulation")
+    rebuilt = finite.with_hyperbolic_structure()
+    require(rebuilt.solution_type() == "all tetrahedra positively oriented",
+            "positive rebuilt closed-cover triangulation")
+    verified, shapes = rebuilt.verify_hyperbolicity(bits_prec=120)
+    require(verified, "interval hyperbolicity of the literal closed double cover")
+    return {
+        "snappy_version": snappy.__version__,
+        "random_seed": 0,
+        "cover_degree": 2,
+        "lifted_filling": [[1, 0]],
+        "homology": str(cover.homology()),
+        "permanent_fill_tetrahedra": finite.num_tetrahedra(),
+        "rebuilt_tetrahedra": rebuilt.num_tetrahedra(),
+        "rebuilt_triangulation_isosig": rebuilt.triangulation_isosig(),
+        "interval_precision_bits": 120,
+        "interval_shapes": [str(shape) for shape in shapes],
+        "interval_hyperbolicity": True,
+        "scope": (
+            "closed double branched cover; literal diagram, cyclic-cover and "
+            "filling/retriangulation software imports; no certified involution "
+            "marking or three-meridian generation"
+        ),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify-exterior", action="store_true",
                         help="also replay SnapPy 3.3.2 imports and interval hyperbolicity in Sage")
+    parser.add_argument("--verify-cover", action="store_true",
+                        help="also verify the closed double branched cover in Sage/SnapPy 3.3.2")
     args = parser.parse_args()
     counts = {}
     require(len(BETA) == 19 and set(BETA) == {1, 2, 3}, "literal braid input")
@@ -440,6 +590,31 @@ def main():
     require(indices.count(-9) == indices.count(7) == 1, "unique extreme letters")
     counts["magnus_reconstruction_and_expansion"] = 2
     counts["magnus_extrema"] = {"minimum": -9, "maximum": 7, "multiplicities": [1, 1]}
+
+
+    # In the order-two orbifold quotient m^2=1, the parity kernel has
+    # u=x and v=m*x*m. Its relators are R(u,v) and R(v,u), and the actual
+    # deck involution swaps u,v. This is the exact semidirect presentation.
+    cover_relator = reduce_word([sign * (1 if index % 2 == 0 else 2)
+                                for index, sign in MAGNUS])
+    expected_cover_relator = [1, -2, -2, 1, -2, -2, -2, 1, 1, 1,
+                              -2, 1, 1, 1, -2, -2, -2]
+    word_equal(cover_relator, expected_cover_relator, "closed-cover parity relator")
+    cover_swap = substitute(cover_relator, {1: [2], 2: [1]})
+    exponents = lambda word: [sum(1 if letter > 0 else -1
+                                  for letter in word if abs(letter) == index)
+                             for index in (1, 2)]
+    cover_h1 = [exponents(cover_relator), exponents(cover_swap)]
+    require(cover_h1 == [[8, -9], [-9, 8]], "closed-cover relation exponent matrix")
+    require(cover_h1[0][0] * cover_h1[1][1] - cover_h1[0][1] * cover_h1[1][0] == -17,
+            "closed-cover homology determinant")
+    counts["closed_cover_parity_presentation"] = {
+        "relator": cover_relator,
+        "second_relator": cover_swap,
+        "exponent_matrix": cover_h1,
+        "deck_action": "swaps u and v",
+        "scope": "exact orbifold-kernel presentation; no inverted generating pair supplied",
+    }
 
     check_inverse_maps(PHI, PHI_INVERSE)
     counts["automorphism_inverse_identities"] = 32
@@ -540,19 +715,23 @@ def main():
     counts["bounded_negative_generation_certificates"] = check_bounded_negative_certificates(relator)
     counts["fiber_nilpotent_density_barrier"] = check_fiber_nilpotent_barrier(relator)
     counts["odd_cone_order_lifting_barrier"] = check_odd_cone_lifting_barrier()
+    counts["direct_braid_deck_trace_obstruction"] = check_direct_braid_trace_certificate()
     if args.verify_exterior:
         counts["candidate_exterior"] = check_candidate_exterior()
+    if args.verify_cover:
+        counts["candidate_closed_cover"] = check_candidate_closed_cover()
 
     print(json.dumps({
-        "status": "pass_exact_algebra_only_no_MRC_resolution",
+        "status": "pass_exact_candidate_rank_four_no_unrestricted_MRC_resolution",
         "python": platform.python_version(),
         "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "literal_braid": list(BETA),
         "counts": counts,
         "assurance": (
-            "Exact standard-library replay for literal algebraic inputs. "
-            "Diagram/peripheral identification remains a SnapPy 3.3.2 software "
-            "import. No three-meridian generation or universal lower bound."
+            "Exact standard-library direct braid certificate for candidate "
+            "meridional rank and bridge number four. Older simplified-group "
+            "and optional geometry controls retain their separate software imports. "
+            "No unrestricted Meridional Rank Conjecture resolution."
         ),
     }, indent=2, sort_keys=True))
 

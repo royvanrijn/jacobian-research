@@ -274,8 +274,8 @@
     "GAUSSIAN_PRIMITIVE_CLOSURE_UNDER_SUMS.md": "67cea2aaa2eded8d98cd586f30b90fcf32a1c94a6bd8935eff304255e6926855",
     "GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
     "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
-    "../../../unpublished/gaussian-boundary/polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
-    "../../../unpublished/gaussian-boundary/manuscript.tex": "b636da0ced90547dc9b1c0dd5040413191c8c7522de22e3fd84aaae386ea5d25",
+    "../../../results/gaussian-boundary/polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
+    "../../../results/gaussian-boundary/manuscript.tex": "b636da0ced90547dc9b1c0dd5040413191c8c7522de22e3fd84aaae386ea5d25",
     "verify_gaussian_axial_cubic_moment_ideal.py": "878a2030a23476b26ecc77eb39cedaae333155c529ec37fdd38ee64ee6168d4d",
     "gaussian_axial_cubic_moment_ideal_certificate.json.gz": "c9084a72c499a79046fa01e6febe0085806ec80d2330693c0e62cb4778618bab",
     "gaussian_axial_cubic_macaulay_minors.json": "4191e01386cfb0074b7f80e7933506045fcfe061acac24b33f0ed57833258749"

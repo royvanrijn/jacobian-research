@@ -103,7 +103,7 @@
     "degree-three normalization has a critical point",
     "characteristic-three differential-constant shortcut rejected"
   ],
-  "proof_sha256": "0f50496f3cc09d92450b20df66d98f39ca01d28b5831557b0b4e0b1a00333113",
+  "proof_sha256": "ce3486239fbc010e057c2a5a66ea5501ba5b4d1ccfd4c949169e16aa6c2aa8aa",
   "checker_sha256": "c8d94ebf0081cb18bf77033ba21d1f4fe594a103d54c53f95661748bf913224d",
   "sympy_version": "1.14.0",
   "scope": "Exact coframe/recovery/pole/adjugate controls and non-Keller/3D boundary cases; all-degree field and integral-normalization proofs are written in Section 6.",

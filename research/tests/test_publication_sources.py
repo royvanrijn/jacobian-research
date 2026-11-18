@@ -157,6 +157,29 @@ class CurrentAndDepositedEditionTests(unittest.TestCase):
                     research.check_portfolio()
                 (self.deposited / name).write_bytes(contents)
 
+    def test_pending_submission_can_live_in_results_without_a_public_archive(self):
+        submitted = self.current.parent / "pending"
+        submitted.mkdir()
+        (submitted / "README.md").write_text("Pending submission\n")
+        meta = self.make_revision(submitted)
+        meta.update(status="submission-pending", submission={
+            "venue": "Hexagon", "reserved_identifier": "hexagon:2611.00001v1",
+        })
+        self.write_json(submitted / "metadata.json", meta)
+        self.assertEqual(research.check_portfolio(), (2, 1))
+
+        meta["submission"] = {}
+        self.write_json(submitted / "metadata.json", meta)
+        with self.assertRaisesRegex(AssertionError, "missing submission venue"):
+            research.check_portfolio()
+
+    def test_pending_submission_does_not_hide_an_existing_archive(self):
+        self.current_meta.pop("published_edition")
+        self.current_meta.update(status="submission-pending", submission={"venue": "Hexagon"})
+        self.write_json(self.current / "metadata.json", self.current_meta)
+        with self.assertRaisesRegex(AssertionError, "missing published archive declaration"):
+            research.check_portfolio()
+
     def test_missing_published_archive_declaration_is_rejected(self):
         self.current_meta.pop("published_edition")
         self.write_json(self.current / "metadata.json", self.current_meta)

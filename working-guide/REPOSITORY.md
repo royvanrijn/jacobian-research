@@ -12,8 +12,8 @@ Read [the root instructions](../AGENTS.md) before starting; use
 | `research/` | Current mathematics by topic | Canonical statements and proofs, open obligations, necessary checkers and exact inputs |
 | `research/MATH_STATUS.json` | Structured current mathematical status | Stated scope, proof dependencies, source pins, open gaps and separate assurance flags |
 | `research/STATUS.md`, `research/SCOPES.md`, `research/DEPENDENCIES.md` | Generated navigation | Status, scope audit and implication diagrams from `make render-navigation`; edit the structured source |
-| `unpublished/` | Papers without a public deposit | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
-| `results/<paper>/` | Current edition of a released paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
+| `unpublished/` | Manuscripts in preparation | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
+| `results/<paper>/` | Current edition of a released or submitted paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
 | `results/<paper>/published/` | Immutable deposited edition | Exact deposited files, checksums, identifiers and submission metadata |
 | `working-guide/` | Reusable working standards | Policies and reusable procedures, without per-result progress records |
 
@@ -167,13 +167,11 @@ they must not be hidden as internal housekeeping.
 
 A submission bundle must reproduce the reviewed PDF from its included sources,
 bibliography and figures. Freeze the reviewed bytes and record the edition before
-submission. A directory name or passing checker does not mean the paper has been
-reviewed, accepted or deposited. Create a new `results/` paper directory only after an actual public deposit is
-verified. Keep its best current edition at top level and the exact deposited
-files, metadata and checksums in `published/`. Revisions of a released paper
-stay in that existing result directory; they need no new deposit merely to
-become its current repository edition. Submit or
-publish only when the user has authorized that action.
+submission. Move the paper's current edition to `results/` after a confirmed
+submission or verified public deposit. Record pending submissions and any reserved
+identifier in the paper metadata. For a verified public deposit, retain its exact
+files, metadata and checksums in `published/`. Keep later revisions at the top
+level of the same paper directory. Submit or publish only with user authorization.
 
 ## Finish with an evidence based handoff
 

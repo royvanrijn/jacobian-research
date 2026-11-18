@@ -1,5 +1,5 @@
 {
-  "status": "internally complete; independent mathematical review and publication pending",
+  "status": "Internal proof, source and layout checks complete. Independent mathematical review pending.",
   "source": "manuscript.tex",
   "pdf": "manuscript.pdf",
   "pages": 57,
@@ -33,7 +33,7 @@
     "Specialist verification of the degree-one nearby-cycle/gluing comparison in Lemma 10.7 and Theorem 10.9.",
     "Specialist verification of the no-spatial-infinity and full regular-rank identifications used in Lemma 11.7 and Proposition 11.19.",
     "Specialist verification that the relative cut pairs in Theorem 11.11 give the entire flat rapid-decay basis and the required uniform boundary-mass bounds.",
-    "Independent review of the full ternary-cubic classification and adopted analytic inputs before submission."
+    "Independent review of the full ternary-cubic classification and adopted analytic inputs."
   ],
   "external_inputs": [
     {

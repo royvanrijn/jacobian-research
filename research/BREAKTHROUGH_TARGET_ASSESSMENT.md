@@ -2,7 +2,7 @@
 
 The objective remains a result with major external mathematical impact. None of
 the five unrestricted targets below is resolved by the current repository.
-Primary target: unrestricted Strong Factorial Conjecture. No secondary target this iteration.
+Primary target: the three-meridian Meridional Rank Conjecture frontier. No secondary target this iteration.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
 
@@ -273,7 +273,7 @@ retain medium bilinear boxes but lose the existing periodic fallback.
 stated binary frontier. More density-one estimates, local identities or
 large finite searches do not remove its obstruction.
 
-## Meridional rank
+## Meridional rank: primary target
 
 **Quantifiers.** For every classical knot K, is mr(K)=b(K)? The immediate
 universal frontier is mr(K)<=3 => b(K)<=3. A certified triple generating
@@ -302,16 +302,27 @@ step. Dropping the marking is false, as T(4,7) demonstrates.
 meridional-rank frontier; an actual knot counterexample disproves MRC.
 Additional augmentation-gap families do neither.
 
-The concrete current test is T(4,5;2,2), the closure of sigma1^4
-(sigma1 sigma2 sigma3)^5. Its (1,1)-presentation gives cover rank at most
-two, and Himeno's bridge-index PREPRINT gives bridge number four.
+The former test input T(4,5;2,2), the closure of sigma1^4
+(sigma1 sigma2 sigma3)^5, is now EXCLUDED as a counterexample:
+a direct F_13 braid-colouring certificate proves mr(K)=b(K)=4.
 The [frontier audit](meridional-rank/representations/THREE_MERIDIAN_FRONTIER_AUDIT.md)
-records exact source scopes, its free-by-cyclic model and bounded searches.
-Of 595 short-conjugator triples, 286 have finite-quotient nongeneration
-certificates and 309 remain unresolved. No three-meridian generation
-certificate or new meridional-rank bound has been found. The same audit
-gives a trefoil example showing why orbifold generation of a specified
-triple does not certify its original lifts.
+gives the complete trace argument and four small matrix colours.
+They satisfy all nineteen literal braid crossings. An even word has
+two determinant-one blocks with traces 2 and 4, exchanged by a meridian.
+Any deck-inverted generating pair would preserve every two-dimensional
+trace over every field, contradicting this witness. This excludes ALL
+meridian triples, including the 309 survivors of the earlier finite
+panel. The four-braid supplies the upper bound, so this particular
+equality needs neither Himeno's preprint nor a software-derived group.
+
+The closed double cover separately passes interval hyperbolicity after
+permanent filling and retriangulation. Its ordinary rank and Heegaard
+genus are exactly two. The trace witness excludes cyclicity, and the
+(1,1)-presentation supplies the upper bounds. The actual deck action
+admits no inverted generating pair, and the least genus of a splitting
+with trivial-tangle quotients is three. The same obstruction gives
+meridional generating number four in every even-order orbifold quotient.
+The universal three-meridian implication remains open.
 
 ## Gaussian safety-to-purity
 
@@ -474,10 +485,65 @@ covariance. The abstract Weyl relation alone also holds for the positive
 tilted model with nonpure vacuum. It does not replace these full spatial
 relations or prove that the distinguished unit is primitive.
 
+Two more shortcuts fail before the vacuum gap. With H=exp(Delta/2),
+safety is exactly ord_0 H(P^m)->infinity: Hermite markers recover every
+Taylor coefficient. The transported product
+A*B=H((H^-1 A)(H^-1 B)) is NOT continuous in this order topology:
+for a Wick pair Z,W, both Z^m and W^m tend to zero in order, whereas
+their transported product has constant coefficient m!.
+Consequently topological nilpotence does not justify treating evaluation
+at zero as a multiplicative residue map. Nor does H preserve safety.
+For the safe nonlinear phase P=W-qT-q^2 Z/2 above, exact contraction gives
+E[(HP)^2]=-30 and the squared gradient of HP at zero is -10.
+Its selected action begins -5t^2, so the retained critical-action theorem
+makes HP unsafe. Applying the known safe-phase origin condition to HP
+would therefore assume a false closure property.
+
+A nonconstant polynomial tilt also cannot be removed by any stable
+invertible polynomial coordinate change preserving the COMPLETE moment
+functional. Here is the intrinsic obstruction, valid after adjoining
+independent Gaussian variables. For D=sum_i A_i partial_i, preservation
+of E[rho Q] for every Q is equivalent, by Gaussian integration by parts
+and nondegeneracy, to
+
+```text
+D(rho)=rho (X.A-div A).
+```
+
+Every such D is tangent to each irreducible divisor of rho; hence their
+evaluation span drops rank at a smooth point of any nonconstant factor.
+For rho=1 in dimension at least two the span is full at EVERY point p:
+choose j!=i, R=X_j-p_j, A_i=partial_j R-X_j R and
+A_j=X_i R-partial_i R, with other components zero. Then div A=X.A
+and D(p)=e_i. A polynomial automorphism conjugating the complete
+functionals must identify these rank loci, which is impossible.
+Dimension one reduces to dimension two by adjoining a fixed Gaussian.
+A constant tilt must be one by evaluation on Q=1. This excludes
+coordinate untwisting of the positive tilted model, while leaving
+phase-specific suspensions and noninvertible maps outside the argument.
+
+Even the normalized vacuum 1-t does not permit an exact reduction of
+the FULL embedded marked image to cubic phases. Independently add its
+known polynomial seed to a pure power phase Q_(0,k) from the
+[seed construction](moments/vanishing/POLYNOMIAL_SEEDS_AND_PURE_MARKER_DELAY.md).
+The unit stays 1-t, while a fixed marker has period (1-t)h_k(t), where
+h_k=sum_m (km)!t^m/m!. For m>=1 its m-th raw moment is
+(km)!-m(k(m-1))!, asymptotic to (km)! for k>=2.
+For every cubic phase in any fixed finite Gaussian dimension and every
+fixed polynomial marker A, absolute moments are at most
+C^m Gamma((3m+deg A+dimension)/2), up to a fixed factor.
+Polynomial time coefficients and finitely many time derivatives preserve
+this growth order.
+The factorial growth orders differ when k>=2. Thus these normalized
+inputs cannot share a cubic phase's full embedded image, even after
+finite Gaussian stabilization. These witnesses are unsafe, so this
+does not exclude a reduction restricted to safe inputs, a time change,
+or an implication that retains only safety and purity.
+
 **Impact test.** A general vacuum-rigidity principle could be substantial.
 More support or degree classifications alone fail the requested test.
 
-## Strong Factorial Conjecture: primary target
+## Strong Factorial Conjecture
 
 **Quantifiers.** For every d>=1, nonzero F in C[x1,...,xd] with s nonzero
 monomials, and every n>=1, at least one of

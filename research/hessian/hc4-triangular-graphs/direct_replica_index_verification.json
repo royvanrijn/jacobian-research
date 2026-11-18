@@ -5,7 +5,7 @@
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
-  "source_sha256": "57e96760cbb12f8fa6a7bb6e163260c7463c52ced35a174c93dc198db1e66c09",
+  "source_sha256": "449c8f8fc90874cc0a72bd3bde87c87462685bd14df2da8536352014cb42f069",
   "checker": "verify_direct_replica_index.py",
   "checker_sha256": "3c5f3d22cea7795126163361e42e7e93eb57e9c5106d587570a6f98dd35af287",
   "scope": "Internal exact formula controls. The written proof gives the unrestricted theorem for a given delta=p(y)partial_x and a delta-stable intermediate field of an actual plane Keller map. Nontrivial rational field controls are outside the whole-plane polynomial target hypotheses. No LND classification, first-velocity integrality, external review or formal verification.",

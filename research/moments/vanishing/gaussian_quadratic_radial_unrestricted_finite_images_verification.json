@@ -47,11 +47,11 @@
     "research/moments/vanishing/GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
     "research/moments/vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md": "e9b41f12cc515cf16336a3b3d41b5d665337be38cc0cb549cf0986cedd400825",
     "research/moments/vanishing/sources/sabbah_stokes_0912.2762v5.pdf": "1bc0b14b82757bd41bc6342077b263c08be8a6d97f2697ba1483eea3d3b7e078",
-    "unpublished/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d",
-    "unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
-    "unpublished/gaussian-boundary/sources/roucairol_formal_math0604134v2.html": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
-    "unpublished/gaussian-boundary/sources/sabbah_0706_3570v2.html": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
-    "unpublished/gaussian-boundary/sources/hien_roucairol_2008_published.pdf": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1"
+    "results/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d",
+    "results/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "results/gaussian-boundary/sources/roucairol_formal_math0604134v2.html": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+    "results/gaussian-boundary/sources/sabbah_0706_3570v2.html": "6878d0845b69730e58c4cdc64ff32737f986c0173b4873974f650b4b9d55b71e",
+    "results/gaussian-boundary/sources/hien_roucairol_2008_published.pdf": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1"
   },
   "scope": "Exact finite controls of local identities. The proof supplies the uniform chain estimates and the Stokes filtration argument.",
   "independent_replay": false,

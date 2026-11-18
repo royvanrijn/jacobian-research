@@ -9,7 +9,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
 | Published GVC, GMC and Image results | Published preprints | proved | [Source](../../results/README.md) |
-| Gaussian dimension-degree boundary | Unpublished; independent review pending | proved | [Source](../../unpublished/gaussian-boundary/README.md) |
+| Gaussian dimension-degree boundary | Under review at Hexagon | proved | [Source](../../results/gaussian-boundary/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
 | All-degree Gaussian structure and safety gap | Internal result | proved | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
 | Exact multibase Gaussian generic marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md) |
@@ -54,7 +54,7 @@ Tracked obligations (computed states):
 
 - **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
 - **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
-- **mathematical / open:** [Determine the exact least pure-moment prefix for ternary cubics.](../../unpublished/gaussian-boundary/manuscript.tex) — GAP-TERNARY-PURE-PREFIX
+- **mathematical / open:** [Determine the exact least pure-moment prefix for ternary cubics.](../../results/gaussian-boundary/manuscript.tex) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [Decide whether a primitive two-pair Image witness exists in odd balanced degree five, requiring F mod R nonzero from the start.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE
 - **verification / open:** [Specify the group/nullcone and audit the nullcone-to-eventual-marker implication used in the Image moment-nullcone assertions.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — VERIFY-IMAGE2-NULLCONE-APPLICATION
 
