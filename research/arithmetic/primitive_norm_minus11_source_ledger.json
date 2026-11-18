@@ -1,0 +1,82 @@
+{
+  "title": "Exact primitive discriminant -11 norm self-sums: sources and complete proof scope",
+  "proof": "PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
+  "checker": "verify_primitive_norm_minus11.py",
+  "receipt": "primitive_norm_minus11_checks.json",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus11.py --output research/arithmetic/primitive_norm_minus11_checks.json",
+  "sources": [
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "version": "Author edition v1.0.7u, 5 August 2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "statements_used": [
+        "Theorem 15.5.5 and Example 15.5.7, printed p.241: the order Z[(1+i)/2] + Z[(1+i)/2]j is maximal for B=(-p,-1), prime p=3 modulo4.",
+        "Theorem 25.1.1, printed p.403: projective maximal-order unit mass is phi(D)/12. At D=11 this is5/6, and the principal projective unit stabilizer2 gives probability3/5.",
+        "Main Theorem28.5.3: strong approximation for the norm-one group with a split noncompact place, as used in the already pinned spectral proof.",
+        "Propositions41.3.1 and41.3.6: all-integral-ideal correspondence, degree and prime-power recurrence; forward functions use inverse-unit Haar weights.",
+        "Main Theorem14.7.4: Hasse-Schilling reduced norms of the rational definite algebra are exactly positive rational numbers; used to identify the global norm-character quotient."
+      ],
+      "inspection_scope": "Actual author PDF statements and the multi-class normalization inspected internally. Classical theorems are imported, without whole-source independent verification."
+    },
+    {
+      "author": "Yves Martin and Ken Ono",
+      "title": "Eta-quotients and elliptic curves",
+      "version": "Author PDF dated 6 May 1996",
+      "url": "https://uva.theopenscholar.com/files/ken-ono/files/026_8.pdf",
+      "local_path": "sources/martin-ono-eta-quotients-1996.pdf",
+      "sha256": "f240dc709d4b3e2a9a1a1cef1bb3beb35d0a62f6c26989beeb44f87deacbe425",
+      "statements_used": [
+        "Theorem1, printed p.2, level11 row: eta(tau)^2 eta(11tau)^2 is a normalized weight-two level11 newform with trivial character."
+      ],
+      "inspection_scope": "Actual primary theorem statements, normalization and prime formulas inspected internally."
+    },
+    {
+      "author": "Jacob Sturm",
+      "title": "On the Congruence of Modular Forms",
+      "version": "Lecture Notes in Mathematics 1240 (1987), 275–280; retained official two-page preview pp.275–276",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0072985",
+      "local_path": "sources/sturm-congruence-1987-theorem-preview.pdf",
+      "sha256": "3a10acc1d3d081072a1900b40cc0917ea223a6437b16f1ccfa0f6cb112edfe3d",
+      "statements_used": [
+        "Theorem 1, printed p.276: equality modulo a prime follows when the difference has order greater than k times the group index divided by 12.",
+        "Applied modulo every rational prime to integer coefficient forms, this proves equality from coefficients through floor(k times index divided by 12)."
+      ],
+      "inspection_scope": "Actual theorem statement and beginning of proof inspected in primary preview; the rest of the article is not retained or claimed inspected."
+    }
+  ],
+  "spectral_dependency": {
+    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "scope": "Reuse the proof argument, not its class-number-one theorem outside its scope: all-ideal normalization; strong approximation; Jacquet-Langlands Theorem14.4 and Section5 Proposition5.20; Deligne Formes modulaires et representations l-adiques Theorems4.9,5.1 and La conjecture de Weil.I Theorem1.6.",
+    "new_hypotheses_checked": "Discriminant11 maximal order; retain all ideal classes with Haar/inverse-unit mass; injectivity of every projective unit group at odd inert p>=7 and11; exactly two global norm characters; trivial infinite type; every Hecke index coprime to11 and its added level prime. Both finite-quotient correlations and the target-dividing inert-prime branch are proved in the new note."
+  },
+  "effective_scope": {
+    "global_onset": 2361183241434822606848,
+    "global_statement": "Every even N>=2^71 with121 not dividingN is a sum of two positive primitive -11 norm values.",
+    "distinct_value_lower_bound": "At least N^(2/3)/100000 ordered value pairs at the same onset.",
+    "inert_core_onset": 1152921504606846976,
+    "remaining_exact_classification": "The exact identity is proved. Sharp bounds and35complete dyadic intervals cover all inert cores>=2^25; exact finite C+C coverage handles every eligible target through2^25. Split-prime descent and scalingby11 give all eligible targets, with no exceptions."
+  },
+  "verification": "Root and separate internal agents reconstructed order/mass/finite quotient, local filters and exact arithmetic. No external review or formal verification.",
+  "limitations": [
+    "The finite checker does not prove the infinite spectral input; it is sourced and reconstructed in the written proof.",
+    "The exact -8 binary classification is now proved separately; C12+C12 remains open.",
+    "No unweighted logarithmic leading constant, external review, formal verification or priority claim."
+  ],
+  "exact_classification": {
+    "primitive_identity": "P_-11+P_-11={N>=2:N even,121 not dividingN}",
+    "strong_core_identity": "C+C={n>=2:n even,11 not dividingn}",
+    "finite_bound": 33554432,
+    "eligible_finite_targets": 15252015,
+    "short_summands": 774,
+    "analytic_bin_indices": [
+      25,
+      59
+    ],
+    "bin_uniform_margin": "1/1024",
+    "scope": "Complete finite/infinite proof through the sourced spectral theorem and explicit descent; no unexhausted -11 exception family."
+  }
+}

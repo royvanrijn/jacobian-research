@@ -10,9 +10,10 @@
     "statements_used": [
       "Equation (1), PDF page 5: genus coefficient as product of local densities.",
       "Theorem 3, PDF page 10: polynomial bound for Petersson norm of cuspidal part.",
-      "Start of Section 5, PDF page 15, combined PDF page 16: general all-n coefficient bound; no coprimality assumption on n."
+      "Start of Section 5, PDF page 15, combined PDF page 16: general all-n coefficient bound; no coprimality assumption on n.",
+      "Schulze-Pillot--Yenirce arXiv:1602.01803v6 Theorem 12, PDF p.12 directly confirms arbitrary level, character, oldforms and all positive indices; Petersson normalization differs by 3/pi only."
     ],
-    "inspection_scope": "Actual v1 PDF statements and their combination inspected internally; imported proofs have not been independently reconstructed.",
+    "inspection_scope": "Primary v1 theorem statements and application through content reduction reconstructed internally; SPY v6 Theorem12 checked directly. Proofs of Rouse Theorem3 and its deep inputs remain imported classical results, not independently reproved.",
     "normalization_note": "The real factor 4*pi^2*n/sqrt(det Gram) is derived independently from ellipsoid volume. The displayed pi^2 prefactor in Rouse Section 3 has an apparent factor-of-four discrepancy with its stated Gram convention; it is not copied."
   },
   "proof": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
@@ -21,7 +22,7 @@
   "limitations": [
     "Priority for the two-block deduction unaudited.",
     "Finite checker challenges normalizations and selected cases; it does not establish analytic uniformity.",
-    "No numerical cutoff is supplied for the general binary-pair theorem; the separate -8 sieve supplies 2^78 and complete prime coverage. Exact -8/-11 binary exception lists remain unresolved.",
+    "No numerical cutoff is supplied for the general binary-pair theorem; the separate -8 sieve supplies 2^78 and complete prime coverage. Both exact -8 and -11 binary classifications are now proved in separate canonical sources.",
     "Coordinate counts are not unweighted value-pair asymptotics."
   ],
   "angular_sources": [
@@ -106,8 +107,8 @@
   "minus8_spectral_dependency": {
     "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
     "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
-    "scope": "Proof of the finite quaternion quotient spectral lemma, including the exact all-ideal correspondence, norm characters, Jacquet-Langlands transfer and weight-two prime-power bounds.",
-    "specialization": "Analytic note (32)–(36) verifies the replacement order, class-number-one double coset, unit normalization 4, local level at 2 and the finite 2-power operators; the cited external theorem editions are those pinned by this existing proof."
+    "scope": "Comparison source locating classical imports; the specialization is now expanded directly next to (33) and in the audit report.",
+    "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption."
   },
   "minus8_effective_scope": {
     "global_onset": 302231454903657293676544,
@@ -115,9 +116,82 @@
     "reduced_odd_inert_core_onset": 1152921504606846976,
     "all_prime_statement": "Every prime N at least 2 belongs to P_-8+P_-8; analytic threshold 2^22 plus exhaustive retained finite certificate.",
     "prime_finite_bound": 4194304,
-    "remaining_exact_classification": "Equivalent to all N=2^e*m>=2, 0<=e<=3, odd m<2^60 with only primes 5 or 7 modulo 8; that finite family remains unchecked in full.",
+    "remaining_exact_classification": "Resolved by PRIMITIVE_NORM_MINUS8_EXACT.md: exact C+C and C+2C identities, 107 rational intervals, full finite coverage through2^27 and split-prime descent. No direct exhaustion of every core below2^60 is asserted.",
     "certificate": "primitive_norm_quaternary_checks.json",
     "priority": "The dyadic identities and finite-quotient method are classical; no priority claim for these explicit specializations.",
     "distinct_value_lower_bound": "At least N^(2/3)/4800 ordered value pairs for every N>=2^78 with16 not dividing N."
-  }
+  },
+  "analytic_audit": {
+    "reviewed_revision": "841f6e73699bee3d5fafe657b4ff0aec23a8bbf8",
+    "report": "PRIMITIVE_NORM_ANALYTIC_AUDIT.md",
+    "status": "Internal mathematical audit; no external human review or formal verification.",
+    "exponent": "Every fixed eta<1/18; eta=1/20 by alpha=15/16, D=N^(1/18), epsilon=1/1000 in the unified error budget.",
+    "completion": "Weighted absolute Euler product for every fixed alpha<1, uniformly in N and all valuations. Target factors have N^o(1) product, but need not be 1+O(1/p).",
+    "local_test": "Existing maximum-valuation modulus is valid; minimum determinant valuation also suffices because both blocks are primitive.",
+    "consequences": "Linear coordinate lower bound for same-field pairs; N/sqrt(loglog(3N)) for distinct fields. Distinct value count at least a constant times N S*(N)^3/(1+log N)^6.",
+    "replay": "Existing checker replayed at bound256, including all295947 primes through2^22, with matching hashes. Separate finite spectral matrices are exploratory normalization evidence.",
+    "exact_minus8_addendum": "Contemporaneous PRIMITIVE_NORM_MINUS8_EXACT.md proof independently inspected internally. All107 interval certificates and complete2^27 finite checker replay equal the retained JSON. Exact P_-8+P_-8 identity now supported; reviewed841f6e73699b itself only had the finite reduction."
+  },
+  "audit_primary_sources": [
+    {
+      "author": "Kenneth S. Williams",
+      "title": "Mertens' Theorem for Arithmetic Progressions",
+      "version": "Journal of Number Theory6 (1974),353-359",
+      "url": "https://people.math.carleton.ca/~williams/papers/pdf/057.pdf",
+      "local_path": "sources/williams-mertens-ap-1974.pdf",
+      "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+      "statements_used": [
+        "Theorem1, printed p356: fixed reduced residue-class Euler product; used for the negative-character half of the classes."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    },
+    {
+      "author": "Herve Jacquet and Robert P. Langlands",
+      "title": "Automorphic Forms on GL(2)",
+      "version": "IAS typesetting accessed18 November2026",
+      "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+      "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+      "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+      "statements_used": [
+        "Theorem14.4, printed p248/PDFp254: global transfer after excluding finite-dimensional factors at split places. Section5 printed pp89-90 and Proposition5.20 pp105-106, n=0 archimedean case: trivial definite infinite type gives weight2."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "Formes modulaires et representations l-adiques",
+      "version": "Seminaire Bourbaki1968-1969, expose355",
+      "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+      "local_path": "sources/deligne-modular-355.pdf",
+      "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+      "statements_used": [
+        "Theorems4.9 and5.1: Frobenius/Hecke realization for cuspidal modular forms."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "La conjecture de Weil. I",
+      "version": "Publications mathematiques de l IHES43 (1974),273-307",
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "local_path": "sources/deligne-weil-I.pdf",
+      "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+      "statements_used": [
+        "Theorem1.6: purity, giving unramified weight-two Ramanujan with the modular realization."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    },
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "version": "Author edition v1.0.7u, 5 August 2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "statements_used": [
+        "Main Theorem28.5.3: strong approximation for B^1 with a noncompact split place in S. Propositions41.3.1 and41.3.6: all-ideal Hecke multiplicativity and recurrence at split maximal places."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    }
+  ]
 }

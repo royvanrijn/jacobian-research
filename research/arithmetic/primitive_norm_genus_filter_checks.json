@@ -1,0 +1,3835 @@
+{
+  "scope": "Exact finite genus-filter, CRT and cofactor identities. No analytic estimate, unweighted sieve theorem, numerical cutoff or unrestricted exact exception claim is certified.",
+  "full_density_transport": {
+    "scope": "Finite symmetric FV1 density and genus/cofactor transport only.",
+    "checks": 20736,
+    "cofactors": [
+      1,
+      3,
+      7,
+      9,
+      21,
+      29
+    ],
+    "rows": [
+      {
+        "t": 1,
+        "alpha": 1,
+        "beta": 1,
+        "densities": {
+          "5/4": [
+            2,
+            18,
+            22,
+            38
+          ],
+          "5/2": [
+            10,
+            30
+          ]
+        }
+      },
+      {
+        "t": 5,
+        "alpha": 1,
+        "beta": 1,
+        "densities": {
+          "5/2": [
+            6,
+            14,
+            26,
+            34
+          ]
+        }
+      },
+      {
+        "t": 2,
+        "alpha": 1,
+        "beta": -1,
+        "densities": {
+          "5/4": [
+            3,
+            7,
+            23,
+            27
+          ],
+          "5/2": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "t": 10,
+        "alpha": 1,
+        "beta": -1,
+        "densities": {
+          "5/2": [
+            11,
+            19,
+            31,
+            39
+          ]
+        }
+      },
+      {
+        "t": 1,
+        "alpha": -1,
+        "beta": -1,
+        "densities": {
+          "5/4": [
+            6,
+            14,
+            26,
+            34
+          ],
+          "5/2": [
+            10,
+            30
+          ]
+        }
+      },
+      {
+        "t": 5,
+        "alpha": -1,
+        "beta": -1,
+        "densities": {
+          "5/2": [
+            2,
+            18,
+            22,
+            38
+          ]
+        }
+      }
+    ]
+  },
+  "local_CRT": {
+    "scope": "Finite CRT identities and genus transport, not an unrestricted analytic theorem.",
+    "base_period": 40,
+    "uniform_original_target_period": 400,
+    "H": [
+      1,
+      3,
+      7,
+      9,
+      21,
+      23,
+      27,
+      29
+    ],
+    "A_plus": [
+      1,
+      9,
+      21,
+      29
+    ],
+    "A_minus": [
+      3,
+      7,
+      23,
+      27
+    ],
+    "principal_norm_residue_count_mod400": 72,
+    "admissible_target_residue_count_mod400": 250,
+    "finite_Gamma_checks": 2880,
+    "cofactor_and_gcd_transport_checks": 46080,
+    "deep_five_challenges": 505,
+    "minimum_selected_Gamma": "5/4",
+    "maximum_selected_Gamma": "5/2",
+    "stratum_table": [
+      {
+        "first_coefficient": 1,
+        "second_coefficient": 1,
+        "first_genus": 1,
+        "second_genus": 1,
+        "common_coefficient": 1,
+        "reduced_t": 1,
+        "entries": [
+          {
+            "target_mod40": 2,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 10,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 18,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 22,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 30,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 38,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          }
+        ]
+      },
+      {
+        "first_coefficient": 1,
+        "second_coefficient": 5,
+        "first_genus": 1,
+        "second_genus": 1,
+        "common_coefficient": 1,
+        "reduced_t": 5,
+        "entries": [
+          {
+            "target_mod40": 6,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 14,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 26,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 34,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          }
+        ]
+      },
+      {
+        "first_coefficient": 1,
+        "second_coefficient": 2,
+        "first_genus": 1,
+        "second_genus": -1,
+        "common_coefficient": 1,
+        "reduced_t": 2,
+        "entries": [
+          {
+            "target_mod40": 3,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 7,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 15,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 23,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 27,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 35,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          }
+        ]
+      },
+      {
+        "first_coefficient": 1,
+        "second_coefficient": 10,
+        "first_genus": 1,
+        "second_genus": -1,
+        "common_coefficient": 1,
+        "reduced_t": 10,
+        "entries": [
+          {
+            "target_mod40": 11,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 19,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 31,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 39,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          }
+        ]
+      },
+      {
+        "first_coefficient": 2,
+        "second_coefficient": 2,
+        "first_genus": -1,
+        "second_genus": -1,
+        "common_coefficient": 2,
+        "reduced_t": 1,
+        "entries": [
+          {
+            "target_mod40": 12,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          },
+          {
+            "target_mod40": 20,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 28,
+            "pair_count": 2,
+            "Gamma": "5/4"
+          }
+        ]
+      },
+      {
+        "first_coefficient": 2,
+        "second_coefficient": 10,
+        "first_genus": -1,
+        "second_genus": -1,
+        "common_coefficient": 2,
+        "reduced_t": 5,
+        "entries": [
+          {
+            "target_mod40": 4,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          },
+          {
+            "target_mod40": 36,
+            "pair_count": 4,
+            "Gamma": "5/2"
+          }
+        ]
+      }
+    ],
+    "all_admissible_CRT_cases": [
+      {
+        "target_mod400": 2,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 3,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 3,
+        "core_residue_witness": [
+          29,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 4,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          67,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 6,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 7,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 7,
+        "core_residue_witness": [
+          1,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 10,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 11,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 11,
+        "core_residue_witness": [
+          141,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 12,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          3,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 14,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          9,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 15,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 15,
+        "core_residue_witness": [
+          1,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 18,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 19,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 19,
+        "core_residue_witness": [
+          149,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 20,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          3,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 22,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 23,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 23,
+        "core_residue_witness": [
+          9,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 26,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          21,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 27,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 27,
+        "core_residue_witness": [
+          21,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 28,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          7,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 30,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 31,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 31,
+        "core_residue_witness": [
+          1,
+          3
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 34,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          29,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 35,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 35,
+        "core_residue_witness": [
+          21,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 36,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          3,
+          3
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 38,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 39,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 39,
+        "core_residue_witness": [
+          9,
+          3
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 42,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 43,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 43,
+        "core_residue_witness": [
+          29,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 44,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          7,
+          3
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 46,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 46,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 47,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 47,
+        "core_residue_witness": [
+          1,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 50,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 51,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 51,
+        "core_residue_witness": [
+          21,
+          3
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 52,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          3,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 54,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 54,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 55,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 55,
+        "core_residue_witness": [
+          1,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 58,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 59,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 59,
+        "core_residue_witness": [
+          29,
+          3
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 60,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          3,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 62,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 63,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 63,
+        "core_residue_witness": [
+          9,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 66,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 66,
+        "core_residue_witness": [
+          21,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 67,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 67,
+        "core_residue_witness": [
+          21,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 68,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          7,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 70,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 71,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 71,
+        "core_residue_witness": [
+          1,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 74,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 74,
+        "core_residue_witness": [
+          29,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 75,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 75,
+        "core_residue_witness": [
+          21,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 76,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          3,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 78,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 79,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 79,
+        "core_residue_witness": [
+          9,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 82,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 83,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 3,
+        "core_residue_witness": [
+          29,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 84,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 42,
+        "core_residue_witness": [
+          7,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 86,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 86,
+        "core_residue_witness": [
+          41,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 87,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 7,
+        "core_residue_witness": [
+          1,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 90,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 91,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 91,
+        "core_residue_witness": [
+          21,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 92,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          3,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 94,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 94,
+        "core_residue_witness": [
+          49,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 95,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 15,
+        "core_residue_witness": [
+          1,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 98,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 99,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 99,
+        "core_residue_witness": [
+          29,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 100,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          3,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 102,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 103,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 23,
+        "core_residue_witness": [
+          9,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 106,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 106,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 107,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 27,
+        "core_residue_witness": [
+          21,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 108,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          7,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 110,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 111,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 111,
+        "core_residue_witness": [
+          41,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 114,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 114,
+        "core_residue_witness": [
+          9,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 115,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 35,
+        "core_residue_witness": [
+          21,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 116,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 58,
+        "core_residue_witness": [
+          23,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 118,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 119,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 119,
+        "core_residue_witness": [
+          49,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 122,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 123,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 43,
+        "core_residue_witness": [
+          29,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 124,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 62,
+        "core_residue_witness": [
+          27,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 126,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 126,
+        "core_residue_witness": [
+          21,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 127,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 47,
+        "core_residue_witness": [
+          1,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 130,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 131,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 131,
+        "core_residue_witness": [
+          61,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 132,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          3,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 134,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 134,
+        "core_residue_witness": [
+          29,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 135,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 55,
+        "core_residue_witness": [
+          1,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 138,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 139,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 139,
+        "core_residue_witness": [
+          69,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 140,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          3,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 142,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 143,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 63,
+        "core_residue_witness": [
+          9,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 146,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 146,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 147,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 67,
+        "core_residue_witness": [
+          21,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 148,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          7,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 150,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 151,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 151,
+        "core_residue_witness": [
+          81,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 154,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 154,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 155,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 75,
+        "core_residue_witness": [
+          21,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 156,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 78,
+        "core_residue_witness": [
+          43,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 158,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 159,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 159,
+        "core_residue_witness": [
+          89,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 162,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 163,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 3,
+        "core_residue_witness": [
+          29,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 164,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 82,
+        "core_residue_witness": [
+          47,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 166,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 166,
+        "core_residue_witness": [
+          21,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 167,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 7,
+        "core_residue_witness": [
+          1,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 170,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 171,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 171,
+        "core_residue_witness": [
+          101,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 172,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          3,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 174,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 174,
+        "core_residue_witness": [
+          29,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 175,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 15,
+        "core_residue_witness": [
+          1,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 178,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 179,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 179,
+        "core_residue_witness": [
+          109,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 180,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          3,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 182,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 183,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 23,
+        "core_residue_witness": [
+          9,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 186,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 186,
+        "core_residue_witness": [
+          41,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 187,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 27,
+        "core_residue_witness": [
+          21,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 188,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          7,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 190,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 191,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 191,
+        "core_residue_witness": [
+          121,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 194,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 194,
+        "core_residue_witness": [
+          49,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 195,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 35,
+        "core_residue_witness": [
+          21,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 196,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 98,
+        "core_residue_witness": [
+          63,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 198,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 199,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 199,
+        "core_residue_witness": [
+          129,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 202,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 203,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 43,
+        "core_residue_witness": [
+          29,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 204,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 102,
+        "core_residue_witness": [
+          67,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 206,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 207,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 47,
+        "core_residue_witness": [
+          1,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 210,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 211,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 211,
+        "core_residue_witness": [
+          141,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 212,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          3,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 214,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          9,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 215,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 55,
+        "core_residue_witness": [
+          1,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 218,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 219,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 219,
+        "core_residue_witness": [
+          149,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 220,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          3,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 222,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 223,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 63,
+        "core_residue_witness": [
+          9,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 226,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          21,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 227,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 67,
+        "core_residue_witness": [
+          21,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 228,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          7,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 230,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 231,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 231,
+        "core_residue_witness": [
+          1,
+          23
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 234,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          29,
+          1
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 235,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 75,
+        "core_residue_witness": [
+          21,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 236,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 118,
+        "core_residue_witness": [
+          3,
+          23
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 238,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 239,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 239,
+        "core_residue_witness": [
+          9,
+          23
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 242,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 243,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 3,
+        "core_residue_witness": [
+          29,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 244,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 122,
+        "core_residue_witness": [
+          7,
+          23
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 246,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 46,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 247,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 7,
+        "core_residue_witness": [
+          1,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 250,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 251,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 251,
+        "core_residue_witness": [
+          21,
+          23
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 252,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          3,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 254,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 54,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 255,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 15,
+        "core_residue_witness": [
+          1,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 258,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 259,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 259,
+        "core_residue_witness": [
+          29,
+          23
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 260,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          3,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 262,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 263,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 23,
+        "core_residue_witness": [
+          9,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 266,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 66,
+        "core_residue_witness": [
+          21,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 267,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 27,
+        "core_residue_witness": [
+          21,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 268,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          7,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 270,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 271,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 271,
+        "core_residue_witness": [
+          1,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 274,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 74,
+        "core_residue_witness": [
+          29,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 275,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 35,
+        "core_residue_witness": [
+          21,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 276,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 138,
+        "core_residue_witness": [
+          3,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 278,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 279,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 279,
+        "core_residue_witness": [
+          9,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 282,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 283,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 43,
+        "core_residue_witness": [
+          29,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 284,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 142,
+        "core_residue_witness": [
+          7,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 286,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 86,
+        "core_residue_witness": [
+          41,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 287,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 47,
+        "core_residue_witness": [
+          1,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 290,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 291,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 291,
+        "core_residue_witness": [
+          21,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 292,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          3,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 294,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 94,
+        "core_residue_witness": [
+          49,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 295,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 55,
+        "core_residue_witness": [
+          1,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 298,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 299,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 299,
+        "core_residue_witness": [
+          29,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 300,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          3,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 302,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 303,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 63,
+        "core_residue_witness": [
+          9,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 306,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 106,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 307,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 67,
+        "core_residue_witness": [
+          21,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 308,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          7,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 310,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 311,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 311,
+        "core_residue_witness": [
+          41,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 314,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 114,
+        "core_residue_witness": [
+          9,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 315,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 75,
+        "core_residue_witness": [
+          21,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 316,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 158,
+        "core_residue_witness": [
+          23,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 318,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 319,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 319,
+        "core_residue_witness": [
+          49,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 322,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 323,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 3,
+        "core_residue_witness": [
+          29,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 324,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 162,
+        "core_residue_witness": [
+          27,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 326,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 126,
+        "core_residue_witness": [
+          21,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 327,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 7,
+        "core_residue_witness": [
+          1,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 330,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 331,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 331,
+        "core_residue_witness": [
+          61,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 332,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 6,
+        "core_residue_witness": [
+          3,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 334,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 134,
+        "core_residue_witness": [
+          29,
+          21
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 335,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 15,
+        "core_residue_witness": [
+          1,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 338,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 339,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 339,
+        "core_residue_witness": [
+          69,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 340,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          3,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 342,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 343,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 23,
+        "core_residue_witness": [
+          9,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 346,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 146,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 347,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 27,
+        "core_residue_witness": [
+          21,
+          3
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 348,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 14,
+        "core_residue_witness": [
+          7,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 350,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 351,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 351,
+        "core_residue_witness": [
+          81,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 354,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 154,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 355,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 35,
+        "core_residue_witness": [
+          21,
+          7
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 356,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 178,
+        "core_residue_witness": [
+          43,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 358,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 359,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 359,
+        "core_residue_witness": [
+          89,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 362,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 2,
+        "core_residue_witness": [
+          1,
+          1
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 363,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 43,
+        "core_residue_witness": [
+          29,
+          7
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 364,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 182,
+        "core_residue_witness": [
+          47,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 366,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 166,
+        "core_residue_witness": [
+          21,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 367,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 47,
+        "core_residue_witness": [
+          1,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 370,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 10,
+        "core_residue_witness": [
+          1,
+          9
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 371,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 371,
+        "core_residue_witness": [
+          101,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 372,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 26,
+        "core_residue_witness": [
+          3,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 374,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 174,
+        "core_residue_witness": [
+          29,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 375,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 55,
+        "core_residue_witness": [
+          1,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 378,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 18,
+        "core_residue_witness": [
+          9,
+          9
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 379,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 379,
+        "core_residue_witness": [
+          109,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 380,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          3,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 382,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 22,
+        "core_residue_witness": [
+          1,
+          21
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 383,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 63,
+        "core_residue_witness": [
+          9,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 386,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 186,
+        "core_residue_witness": [
+          41,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 387,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 67,
+        "core_residue_witness": [
+          21,
+          23
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 388,
+        "coefficients": [
+          2,
+          2
+        ],
+        "reduced_target_mod_tL": 34,
+        "core_residue_witness": [
+          7,
+          27
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 390,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 30,
+        "core_residue_witness": [
+          1,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 391,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 391,
+        "core_residue_witness": [
+          121,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 394,
+        "coefficients": [
+          1,
+          5
+        ],
+        "reduced_target_mod_tL": 194,
+        "core_residue_witness": [
+          49,
+          29
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 395,
+        "coefficients": [
+          1,
+          2
+        ],
+        "reduced_target_mod_tL": 75,
+        "core_residue_witness": [
+          21,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 396,
+        "coefficients": [
+          2,
+          10
+        ],
+        "reduced_target_mod_tL": 198,
+        "core_residue_witness": [
+          63,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      },
+      {
+        "target_mod400": 398,
+        "coefficients": [
+          1,
+          1
+        ],
+        "reduced_target_mod_tL": 38,
+        "core_residue_witness": [
+          9,
+          29
+        ],
+        "pair_count": 2,
+        "Gamma": "5/4"
+      },
+      {
+        "target_mod400": 399,
+        "coefficients": [
+          1,
+          10
+        ],
+        "reduced_target_mod_tL": 399,
+        "core_residue_witness": [
+          129,
+          27
+        ],
+        "pair_count": 4,
+        "Gamma": "5/2"
+      }
+    ],
+    "negative_checks": {
+      "unchanged_genus_gcd_rule_rejected": true,
+      "wrong_genus_in_target_four_rejected": true
+    }
+  },
+  "checker_sha256": "d3f7f40533691583014b2c448807817989518cffcddc319cdd3fcca5cbdb3ae7"
+}

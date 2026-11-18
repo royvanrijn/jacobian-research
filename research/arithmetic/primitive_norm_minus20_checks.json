@@ -1,0 +1,32 @@
+{
+  "checker_sha256": "91975c63186d8d788568bf7d8b23a3599003257abf1381f56a42a56cb92a94c3",
+  "bound": 16777216,
+  "short_bound": 5000,
+  "short_count": 672,
+  "primitive_value_count": 1582707,
+  "coordinate_genus_flag_equality_bound": 16777216,
+  "independent_trial_factor_class_character_regression_bound": 10000,
+  "short_sweep_uncovered_local_targets": [
+    3,
+    4
+  ],
+  "exhaustive_residual_scan": true,
+  "locally_admissible_global_exceptions": [
+    3,
+    4
+  ],
+  "local_condition": "N mod 8 in {2,3,4,6,7}",
+  "locally_admissible_target_count": 10485760,
+  "represented_target_count": 10485758,
+  "forbidden_targets_covered": 0,
+  "exact_target_mask_equal": true,
+  "negative_checks": [
+    "missing represented target 2",
+    "injected exception 3",
+    "injected locally forbidden target 5",
+    "injected nonprincipal norm 3"
+  ],
+  "primitive_flags_sha256": "84dafacfc06695509fd5704b175a6db0c44fa7c5375a30cdc6d802e9349f8341",
+  "coverage_sha256": "a40de3923d8fa9be8d0ccafcafe5f967ea72350c47c9f9f5bbf70827828e9675",
+  "scope": "Exact only for 2<=N<=bound; does not assert an unrestricted sumset identity. The class-character norm criterion is the classical PL4 specialization."
+}

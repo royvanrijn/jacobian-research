@@ -9,22 +9,35 @@ below. The two summands are positive, so targets start at 2.
 
 ## What is established
 
-The proposed identities
+The discriminant \(-11\) identity is now proved exactly:
 \[
- P_{-8}+P_{-8}=\{N\ge2:16\nmid N\},\qquad
- P_{-11}+P_{-11}=\{N\ge2:2\mid N,\ 121\nmid N\}
+ P_{-11}+P_{-11}=\{N\ge2:2\mid N,\ 121\nmid N\}.
 \]
-remain unrestricted conjectures here. Their right sides give the exact
-pair-primitive local criteria; neither has a counterexample through
-\(10^6\) in the exact scan recorded below. The
-[quaternary analytic deduction](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) gives finitely many possible globally exceptional admissible targets.
-For discriminant `-8`, the separate explicit Hecke sieve now proves every
-eligible `N>=2^78` is represented and every prime target is represented.
-Its least-counterexample reduction makes the exact identity equivalent to
-checking all `N=2^e m>=2`, `0<=e<=3`, with odd `m<2^60` supported on
-primes `5,7 mod8`. That residual family has not been exhausted. For
-discriminant `-11`, no numerical cutoff is computed. The initial-range
-scan therefore still does not prove either unrestricted identity.
+The [complete quaternionic and finite proof](PRIMITIVE_NORM_MINUS11_EFFECTIVE.md)
+first proves the stronger core identity \(C+C=\{N\ge2:N\text{ even},11\nmid N\}\).
+It combines a fully explicit large-core sieve, 35 certified intervals
+from \(2^{25}\) to \(2^{60}\), and exhaustive coverage of all 15252015
+eligible targets through \(2^{25}\). The value-pair lower bound
+\(N^{2/3}/100000\) remains explicit for eligible \(N\ge2^{71}\).
+This is an internally reviewed deduction from classical inputs; priority
+and external review have not been established.
+
+The discriminant \(-8\) identity is also proved exactly:
+\[
+ P_{-8}+P_{-8}=\{N\ge2:16\nmid N\}.
+\]
+The [complete -8 proof](PRIMITIVE_NORM_MINUS8_EXACT.md) proves the two
+stronger core identities \(C+C=\{N\ge2:N\text{ even},8\nmid N\}\) and
+\(C+2C=\{N\ge3:N\text{ odd}\}\). It combines 107 complete rational
+interval certificates with finite coverage through \(2^{27}\), followed
+by split-prime descent including its separately proved prime boundary.
+Its explicit value-pair bound \(N^{2/3}/4800\) holds for eligible
+\(N\ge2^{78}\). Both exact binary identities have empty exceptional sets.
+
+The general [quaternary deduction](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md)
+also proves eventual local-global existence for arbitrary fixed binary
+form pairs. This broader eventual theorem and the two exact identities
+have different scopes.
 
 The analogous equality of local and global sets fails already for
 \(D=-7\) and \(D=-19\). For example, 7 is locally admissible for
@@ -124,15 +137,13 @@ The checker also verifies that the marked sums violate none of the
 stated local criteria, and checks the primitive norm value arrays
 through 16 against hand lists.
 
-## Next exact obligation
+## Remaining exact obligations
 
-For -8, exhaust the proved residual inert-core family in equation (40)
-of [the analytic deduction](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md), or replace
-it by a sharper finite reduction. The global onset `2^78` and the smaller
-least-counterexample core bound `2^60` have different scopes. For -11,
-extract a numerical cutoff from the effective coordinate-count estimates
-or find an exact descent. Increasing a scan bound without such a proved
-completion argument does not settle either identity.
+The -8 and -11 identities are proved in their linked canonical sources.
+For -7,-19,-43,-67,-163 the bounded exception lists below remain globally
+unclassified: an effective cutoff and complete finite coverage are still
+needed. Increasing a scan bound without a completion argument does not
+prove that those lists have no further members.
 
 
 ## An exact reduction with one coordinate equal to 1

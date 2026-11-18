@@ -1,0 +1,104 @@
+{
+  "title": "Exact primitive discriminant -8 norm self-sums: complete source and certificate scope",
+  "proof": "PRIMITIVE_NORM_MINUS8_EXACT.md",
+  "checker": "verify_primitive_norm_minus8.py",
+  "receipt": "primitive_norm_minus8_checks.json",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus8.py --output research/arithmetic/primitive_norm_minus8_checks.json",
+  "proof_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
+      "sha256": "459091eaa2e57cf42b5bda529b4e63caf98a01fe7dffa365776a5807a8f3637a",
+      "scope": "Use only the independent equations29-40a: theta/dyadic identities; class-one index-four Hurwitz order; all-ideal Hecke transfer with fixed2-adic operators; all-prime theorem with analytic2^22threshold; all inert cores m>=2^60; explicit N^(2/3)/4800count from N>=2^78. These do not use the exact identity now proved."
+    },
+    {
+      "path": "PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md",
+      "sha256": "1b5727c570050fbc247e21e7e19643cf59d2389737fa7a1809b3b055362e5921",
+      "scope": "E3 primitive value criterion P=C union2C, including full norm-Euclidean and oriented prime-factor proof. The current exact-result summary is a consumer, not a premise."
+    },
+    {
+      "path": "verify_primitive_norm_quaternary.py",
+      "sha256": "a8eb817139bce21fc44ff59afbf32000b2395e2008f0eeb02991bc2df9774325",
+      "scope": "Old complete finite Sturm, Euler and all-prime certificates; current root replay equals the retained old record."
+    },
+    {
+      "path": "primitive_norm_quaternary_checks.json",
+      "sha256": "f468db83ad53190f5cf1327f4ab142de8726a2701d98116a95ecfbe2b31f9737",
+      "scope": "Actual replay at integer_bound256, with every295947prime through4194304covered; no changed bytes needed."
+    },
+    {
+      "path": "primitive_norm_quaternary_source_ledger.json",
+      "sha256": "07b86437c09254766948339acb539b45084d47f0a977c3446f4024693456bf5e",
+      "scope": "Exact primary theta and spectral import editions and previously checked application boundaries."
+    }
+  ],
+  "spectral_dependency": {
+    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "scope": "Comparison source locating classical imports; the specialization is now expanded directly next to (33) and in the audit report.",
+    "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption."
+  },
+  "primary_theta_sources": [
+    {
+      "author": "Yves Martin and Ken Ono",
+      "title": "Eta-quotients and elliptic curves",
+      "version": "Author PDF dated 6 May 1996",
+      "url": "https://uva.theopenscholar.com/files/ken-ono/files/026_8.pdf",
+      "local_path": "sources/martin-ono-eta-quotients-1996.pdf",
+      "sha256": "f240dc709d4b3e2a9a1a1cef1bb3beb35d0a62f6c26989beeb44f87deacbe425",
+      "statements_used": [
+        "Theorem 1, level-32 row: eta(4tau)^2 eta(8tau)^2 is a normalized weight-two newform.",
+        "Theorems 2 and 3, level-32 row: Gaussian CM identification and explicit odd-prime coefficients."
+      ],
+      "inspection_scope": "Actual primary theorem statements, normalization and prime formulas inspected internally."
+    },
+    {
+      "author": "Jacob Sturm",
+      "title": "On the Congruence of Modular Forms",
+      "version": "Lecture Notes in Mathematics 1240 (1987), 275–280; retained official two-page preview pp.275–276",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0072985",
+      "local_path": "sources/sturm-congruence-1987-theorem-preview.pdf",
+      "sha256": "3a10acc1d3d081072a1900b40cc0917ea223a6437b16f1ccfa0f6cb112edfe3d",
+      "statements_used": [
+        "Theorem 1, printed p.276: equality modulo a prime follows when the difference has order greater than k times the group index divided by 12.",
+        "Applied modulo every rational prime to integer coefficient forms, this proves equality from coefficients through floor(k times index divided by 12)."
+      ],
+      "inspection_scope": "Actual theorem statement and beginning of proof inspected in primary preview; the rest of the article is not retained or claimed inspected."
+    }
+  ],
+  "complete_scope": {
+    "primitive_identity": "P_-8+P_-8={N>=2:16 not dividingN}",
+    "strong_even_identity": "C+C={N>=2:N even,8 not dividingN}",
+    "strong_odd_identity": "C+2C={N>=3:N odd}",
+    "finite_bound": 134217728,
+    "even_target_count": 50331648,
+    "odd_target_count": 67108863,
+    "short_C_count": 699,
+    "short_2C_count": 365,
+    "short_bound": 5000,
+    "analytic_intervals": {
+      "odd_m": [
+        27,
+        59
+      ],
+      "2m": [
+        26,
+        59
+      ],
+      "4m": [
+        20,
+        59
+      ]
+    },
+    "interval_count": 107,
+    "uniform_interval_margin": "1/256",
+    "old_large_core_onset": 1152921504606846976,
+    "prime_boundary": "The old all-prime theorem supplies the otherwise omitted single-split-prime boundary in odd-target descent.",
+    "distinct_value_count": "At least N^(2/3)/4800 ordered value pairs for every eligibleN>=2^78."
+  },
+  "verification": "Root replayed the full canonical checker and the old prime/quaternary record. Separate internal agents reconstructed dyadic/spectral, large-prime tail, finite-profile completeness and descent steps and independently replayed the certificate. Internal review only.",
+  "limitations": [
+    "The finite checker does not itself prove the sourced infinite Hecke/Ramanujan input.",
+    "No external review, formal verification or established historical priority.",
+    "The independent C12+C12 barrier, complete other-discriminant exception lists and general unweighted leading constants remain open."
+  ]
+}

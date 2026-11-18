@@ -8,7 +8,7 @@
 \newcommand{\C}{\mathbb C}
 \newcommand{\A}{\mathcal A}
 \begin{document}
-\title{Unrestricted Strong Factorial: two mechanism obstructions}
+\title{Unrestricted Strong Factorial: mechanism obstructions}
 \author{Internal route audit; no priority or breakthrough claim}
 \date{18 November 2026}
 \maketitle
@@ -36,7 +36,10 @@ gives partial two-monomial results. These do not state an arbitrary
 support-size window theorem.
 
 The repository's degree-six and selected degree-seven binomial results
-retain their exact scopes. Full Furter rigidity is already available
+retain their exact scopes.  The
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{ordinary constant-plus-power theorem}
+already covers $A+BX^d$ for every positive integer $d$ and every starting
+index; it does not cover arbitrary monomial products or supports. Full Furter rigidity is already available
 as a credited internal reproduction in
 \href{RIGIDITY_CRITICAL_VALUES.tex}{the critical-value audit}, using
 liqsweep's pinned September 2026 argument. Its factorial transfer concerns
@@ -214,6 +217,264 @@ An argument requiring a uniquely minimal term cannot prove SFC
 universally. It must handle residual cancellation. This is the known
 sharp linear example, not a counterexample or a new support theorem.
 
+
+\section{The Gamma factorization requires a locked-block argument}
+Write $A=(a_{ij})$, $\theta_j=c_j\partial_{c_j}$,
+$E_i=\sum_j a_{ij}\theta_j$, and
+$h_m(c)=\sum_{|k|=m}c^k$.  The exact diagonal operator
+\[
+ T_A(c^k)=\frac{\prod_i((Ak)_i!)}{\prod_j k_j!}\,c^k
+\]
+satisfies $T_Ah_m=\Lfac(F^m)/m!$.  This identity alone does not
+give a zero-gap theorem.  In particular, a proposed proof by closure
+under positive coordinate Euler factors and inverse weighted Euler
+factors fails already for coordinate factors.
+
+Indeed, put $f(k)=(k+1)^2(k+2)$ and
+\[
+ T=f(\theta_1)f(\theta_2)
+   =\prod_{j=1}^2(1+\theta_j)^2(2+\theta_j).
+\]
+Every factor has a positive integer constant term, but
+\[
+ Th_0=4,\qquad Th_1=24(c_1+c_2),\qquad
+ Th_2=72(c_1+c_2)^2.
+\]
+At $(c_1,c_2)=(-1,1)$ the values of $Th_m$, for $0\le m\le4$, are
+\[
+ 4,\quad0,\quad0,\quad0,\quad-24.
+\]
+Thus arbitrary compositions of those factors do not preserve the
+two-variable consecutive-window property.  They need not preserve a
+positive moment functional either: the putative normalized scalar
+moments $k!f(k)/f(0)$ begin $1,6,36,240$.  Variance zero would force
+the third moment to be $6^3=216$, not $240$.  This is an operator
+counterexample, not an ordinary factorial phase.
+
+The actual Gamma factorization is more restrictive.  On each fixed
+monomial, the operators
+\[
+ T_{A,N}
+ =N^{\sum_iE_i-\sum_j\theta_j}
+   \prod_{\ell=1}^N
+   \left\{\prod_j(1+\theta_j/\ell)
+                 \prod_i(1+E_i/\ell)^{-1}\right\}
+ \quad(N\ge1)
+\]
+converge to $T_A$.  All factors commute; the power of $N$ denotes its
+diagonal action.  The scalar formula
+\[
+ N^z\prod_{\ell=1}^N(1+z/\ell)^{-1}
+   =\frac{N^zN!\,z!}{(N+z)!}\longrightarrow z!
+ \quad(z\in\mathbb N)
+\]
+proves the convergence coefficientwise, with the corresponding
+inverse formula for each $k_j!$.  Each index $\ell$ occurs exactly once
+for each coordinate and row.  The preceding counterexample does not
+respect these locked blocks.
+
+There is an exact positive model for every finite block.  Let the
+$G_{N,j}\sim\operatorname{Gamma}(N+1,1)$ and
+$B_{N,i}\sim\operatorname{Beta}(1,N)$ be mutually independent, and put
+\[
+ Z_{N,j}=N^{|a_j|-1}G_{N,j}\prod_iB_{N,i}^{a_{ij}}.
+\]
+With $(q)_r=q(q+1)\cdots(q+r-1)$ and $(q)_0=1$, writing $b=Ak$ gives
+\[
+ \mathbb E Z_N^k
+ =N^{|b|-|k|}
+   \prod_j(N+1)_{k_j}
+   \prod_i\frac{b_i!}{(N+1)_{b_i}}
+ \longrightarrow\prod_i b_i!,
+ \qquad
+ T_{A,N}h_m=\frac1{m!}\mathbb E(c\cdot Z_N)^m.
+\]
+These are elementary Gamma and Beta moment formulas, and explain why
+the finite blocks retain positive-measure structure.  They do not
+establish separation of consecutive complex moments.
+
+Even full-support positivity cannot supply a uniform limiting
+argument.  For the distinct ordinary columns $A=\{0,1,2\}$, write
+$\alpha=N+1$ and use a common $B\sim\operatorname{Beta}(1,N)$:
+\[
+ Z_0=G_0/N,\qquad Z_1=G_1B,\qquad Z_2=NG_2B^2,
+ \qquad R(z)=z_0z_2-z_1^2.
+\]
+Then $R(Z)=B^2(G_0G_2-G_1^2)$.  Directly,
+\[
+ \begin{split}
+ \mathbb E(G_0G_2-G_1^2)^2
+ &=\alpha^2(\alpha+1)^2-2\alpha^3(\alpha+1)
+       +\alpha(\alpha+1)(\alpha+2)(\alpha+3)\\
+ &=6\alpha(\alpha+1)^2,
+ \end{split}
+\]
+so
+\[
+ \mathbb E R(Z)^2
+ =\frac{144(N+2)}{(N+3)(N+4)}>0,\qquad
+ \mathbb E R(Z)^2\longrightarrow0.
+\]
+At $N=1$ the value is independently $(36-48+120)/5=108/5$.
+The limiting vector is $(1,X,X^2)$, which satisfies $R=0$ identically.
+
+More generally the displayed mixed-moment convergence implies
+$\mathbb E|P(Z_N)|^2\to0$ for every polynomial relation
+$P(X^{a_1},\ldots,X^{a_s})=0$.  For nonzero $P$ each finite expectation
+is positive: conditioning on the Beta variables leaves independent
+scaled Gamma variables with positive density on the positive orthant.
+Thus finite-block moment Gram matrices can lose strict positivity
+in the actual ordinary limit.  This does not show that the consecutive
+moment resultant vanishes.  It shows that a proof still needs both
+finite-block separation and direct control of its limiting
+nonvanishing; neither follows from generic Gram positivity.
+
+
+\section{Diagonal arithmetic and saddle-count limits}
+\subsection{A regular pair without the proposed diagonal normal form}
+A possible arithmetic proof would degenerate each consecutive form,
+using a prime and diagonal coefficient valuations, to a monomial or a
+diagonally rescaled complete homogeneous polynomial, while keeping the
+whole system projectively regular.  This target is too restrictive even
+for an actual ordinary two-term phase.
+
+For $F=c_0+c_1X^2$, the primitive forms at orders two and three are
+\[
+ P_2=c_0^2+4c_0c_1+24c_1^2,\qquad
+ P_3=c_0^3+6c_0^2c_1+72c_0c_1^2+720c_1^3.
+\]
+They are regular over $\mathbb C$: at $c_0=1$,
+\[
+ P_3=(30c_1-2)P_2+(3-16c_1),\qquad
+ P_2(1,3/16)=83/32,
+\]
+and the $c_0=0$ endpoint is nonzero. Their resultant is $382464$.
+Nevertheless no prime and even rational diagonal valuations produce
+the stated regular target.
+
+Here is the exhaustive prime argument. For the coefficient list
+$a_0,\ldots,a_m$ of $P_m(1,c_1)$, let $v_k=v_p(a_k)$ and
+$\delta=w_1-w_0$. Full support in the initial form requires $v_k+k\delta$
+to be constant. A diagonal copy of $h_m$ further requires its residual
+coefficients to be geometric. For $P_2$ the latter condition would give
+$4^2=24$ modulo $p$ when these coefficients are units; its only possible
+exception is $p=2$. At $p=2,3$ the valuation arrays are
+$(0,2,3)$ and $(0,0,1)$, neither affine. At all other primes the
+geometric identity fails. For $P_3$, the necessary first-three-coefficient
+identity is $6^2=72$, with possible primes $2,3$.
+Their arrays $(0,1,3,4)$ and $(0,1,2,2)$ are nonaffine;
+at $p=5$ the array $(0,0,0,1)$ is nonaffine; at all other primes
+the residual identity fails. Thus neither full $h_m$ target is possible.
+
+It remains to test monomials. Put
+\[
+ L_m=\max_{1\le k\le m}(-v_k/k),\qquad
+ U_m=\min_{0\le k<m}\frac{v_k-v_m}{m-k}.
+\]
+A pure $c_0^m$ initial form requires $\delta>L_m$, and a pure $c_1^m$
+requires $\delta<U_m$. A regular pair of monomials must be opposite pure
+powers. The complete table is
+\[
+\begin{array}{c|rrrr}
+p&L_2&U_2&L_3&U_3\\ \hline
+2&-3/2&-3/2&-1&-3/2\\
+3&0&-1&-2/3&-2/3\\
+5&0&0&0&-1\\
+\text{all other primes}&0&0&0&0
+\end{array}
+\]
+Neither required interval $L_2<\delta<U_3$ or $L_3<\delta<U_2$ exists.
+This argument permits diagonal unit rescalings over residue-field
+extensions. It does not permit replacing the forms by new Groebner
+generators or making nondiagonal changes.
+
+The pair already has good ordinary reduction at $p=5$. Thus the
+calculation does not exclude arbitrary regular residual systems.
+Allowing any such system at weight zero makes the existence of a good
+prime equivalent to nonvanishing of the integer resultant, which is the
+original common-zero problem.
+
+\subsection{Four positive-cycle maxima from three monomials}
+The two-contribution contour proof for $A+BX^d$ also cannot be extended
+by simply bounding distinguished-cycle saddle neighborhoods by the
+number of monomials. Consider the actual three-term phase
+\[
+ F=(XYZ)^7(X^5+Y^5+Z^5).
+\]
+It has at least four nondegenerate strict local maxima on
+$\Delta_2=\{x,y,z>0:x+y+z=1\}$.
+
+At $(1/3,1/3,1/3)$ the Hessian of $\log F$ is
+$-3I-25\mathbf1\mathbf1^T$, hence is $-3I$ on the tangent plane.
+On a symmetry axis put
+\[
+ (x,y,z)=\frac{(r,1,1)}{r+2},\qquad
+ f(r)=\frac{r^7(r^5+2)}{(r+2)^{26}},\qquad
+ g(r)=-7r^6+12r^5-19r+14.
+\]
+Then $f'/f=2g/[r(r^5+2)(r+2)]$, and exactly
+\[
+ g(5/4)=689/4096>0,\quad g(4/3)=-70/729<0,\quad
+ g'(5/4)=-353/512<0.
+\]
+Since $g''(r)=30r^3(8-7r)<0$ for $r\ge5/4$, there is a unique simple
+root $r_*\in(5/4,4/3)$, with $g'(r_*)<0$. It gives a strict axial
+maximum. The transverse $y-z$ curvature of $\log F$ is a positive
+multiple of
+\[
+ -7+\frac{20}{r_*^5+2}<-\frac13.
+\]
+Reflection in $y,z$ makes the transverse first derivative and mixed
+Hessian term zero, so this is a critical point of the full restricted
+phase. The three coordinate permutations of this point are therefore
+nondegenerate strict maxima, distinct from the central maximum.
+
+All four persist for sufficiently small positive coefficient
+perturbations, by the implicit function theorem. Their log-height
+gradients at the symmetric coefficients are
+\[
+ (1/3,1/3,1/3),\qquad
+ \text{the three permutations of }(r_*^5,1,1)/(r_*^5+2).
+\]
+For the coefficient direction $(0,1,3)$, these four directional
+derivatives are distinct: the central one is $4/3$ and the outer ones
+are $4b+(a-b)d$, $d=0,1,3$, where $a+2b=1$ and $a>b$.
+Equality with the central value would require $d=4/3$.
+Thus sufficiently small positive rational perturbations can separate
+all four heights $\lambda_\ell$. Fix such a rational $\varepsilon>0$ and
+write
+\[
+ F_\varepsilon=(XYZ)^7
+       \bigl(X^5+(1+\varepsilon)Y^5+(1+3\varepsilon)Z^5\bigr)
+\]
+for the rest of this paragraph.
+
+These are neighborhoods on the actual integration cycle, not merely
+complex critical points. With ordinary coordinate area $du_1du_2$
+on the simplex, homogeneity gives the exact formula
+\[
+ \Lfac(F_\varepsilon^N)=\Gamma(26N+3)
+             \int_{\Delta_2}F_\varepsilon(u)^N\,du_1du_2.
+\]
+On disjoint small neighborhoods of the four maxima, the local
+contributions satisfy
+$I_\ell(N)=A_\ell\lambda_\ell^N/N\,(1+o(1))$, $A_\ell>0$.
+This is the elementary local Laplace estimate, obtained by the
+quadratic Taylor expansion of $\log F_\varepsilon$ and rescaling by
+$\sqrt N$.
+Consequently
+\[
+ [\,I_\ell(N+k)/I_\ell(N)\,]_{k=0,\ldots,3;\ \ell=1,\ldots,4}
+ \longrightarrow [\,\lambda_\ell^k\,]_{k,\ell},
+\]
+whose determinant is nonzero. Thus the four local-contribution
+sequences are linearly independent over constants. Counting independently
+tracked saddle neighborhoods therefore does not give the monomial-count
+bound. This does not exclude a grouping, a nonlinear argument, or an
+approximation with proved uniform
+remainder and conditioning bounds. Positive coefficients here make
+every moment nonzero, so this is not an SFC counterexample.
+
 \section{What remains}
 Neither these obstructions nor the existing critical-value argument
 excludes a common nonzero projective zero of the actual $s$ moment
@@ -229,11 +490,31 @@ or a parameter-discriminant count alone is not that realization.
 A possible Gamma-product Appell simplicity principle remains unproved,
 and would still need a separate bridge to arbitrary polynomial supports.
 
+A different all-support certificate can be formulated without selecting
+a prime or saddles. Replace each exponential row by a normalized
+Gamma variable of shape $1/x_i$, so the mixed-moment factors are
+\[
+ \mathbb E X_i^b=\prod_{h=0}^{b-1}(1+h x_i).
+\]
+The resultant $R_{A,n}(x)$ of the resulting $s$ consecutive moment forms
+is an integer polynomial in $x_1,\ldots,x_d$. At $x_i=1$ it is the
+ordinary factorial resultant. A nonzero, coefficientwise nonnegative
+expansion, up to a scalar sign independent of $x$, would therefore
+prove SFC for that $A,n$ and indeed for every positive Gamma shape.
+No such expansion or uniform strictness proof is established here.
+Ordinary moment-kernel total positivity cannot supply it: even for
+$(X_1,X_2,X_3)$ the Gram minor with rows $(1,2)$, columns $(2,3)$ is
+$-x_2$. Any successful cancellation argument must concern the full
+resultant rather than positivity of all moment minors.
+
 The self-contained
-\href{verify_unrestricted_sfc_mechanisms.py}{recurrence checker}
-verifies 31 instances of (1), 30 of (2), growth controls and rejection
-of a corrupted coefficient using exact integers. The all-index
-identities, minimality and automorphism rigidity are the written proofs,
-not consequences of those finite tests. Independent specialist review,
-formal verification and a resolution of unrestricted SFC are not claimed.
+\href{verify_unrestricted_sfc_mechanisms.py}{exact-control checker}
+verifies 31 instances of (1), 30 of (2), the Euler counterexample,
+finite-block coefficient identities and 32 instances of the toric
+degeneration formula, the complete exceptional-prime threshold table
+and rational controls for the four-maxima example, with
+corrupted-coefficient rejection. The all-index arguments, minimality and automorphism rigidity are the
+written proofs, not consequences of finite tests. Independent specialist
+review, formal verification and a resolution of unrestricted SFC are not
+claimed.
 \end{document}

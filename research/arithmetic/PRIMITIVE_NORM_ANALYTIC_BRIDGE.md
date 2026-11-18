@@ -32,10 +32,10 @@ Write
  J=\frac{4\pi^2}{\sqrt{\det A_1\det A_2}}.
 \]
 
-**Theorem.** There is an absolute positive \(\eta\) (for example the
-deliberately nonoptimized value \(1/1000\)) such that
+**Theorem.** For every fixed \(0<\eta<1/18\), in particular
+\(\eta=1/20\),
 \[
- R^*(N)=JN\prod_p\beta_p^*(N)+O_{Q_1,Q_2}(N^{1-\eta}).
+ R^*(N)=JN\prod_p\beta_p^*(N)+O_{Q_1,Q_2,\eta}(N^{1-\eta}).
  \tag{2}
 \]
 For every fixed \(\epsilon>0\), on the locally admissible targets,
@@ -188,9 +188,19 @@ requires \((n,L(T))=1\) is not used. The general estimate is effective.
 A copy of the exact v1 PDF and its SHA-256 are recorded in
 [the source ledger](primitive_norm_quaternary_source_ledger.json).
 Rouse derives the general coefficient estimate from
-Schulze-Pillot--Yenirce, Theorem 10; this deduction uses (8) as a single
-imported bound, rather than the existential conclusion of Rouse's
-Theorem 1.
+Schulze-Pillot--Yenirce, Theorem 10 in the edition he cites. In the retained
+[arXiv:1602.01803v6](https://arxiv.org/pdf/1602.01803v6), it is
+Theorem 12, PDF page 12. It covers every positive coefficient index,
+arbitrary level and arbitrary character, including oldforms. Its bound is
+\(\ll_\epsilon\langle C,C\rangle^{1/2}L^{1+\epsilon}
+\tau(n)\sqrt n\), using \(\dim S_2(\Gamma_0(L),\chi)\ll_\epsilon
+L^{1+\epsilon}\). Rouse's inner product is \(3/\pi\) times that
+source's normalized inner product, a fixed factor. Combining this bound
+with Rouse's Theorem 3 proves (8), with constants depending only on
+\(\epsilon\). Local solubility and coprimality of \(n\) with the level
+are not hypotheses of this coefficient estimate. This deduction uses
+the coefficient estimate, rather than the existential conclusion of
+Rouse's Theorem 1.
 
 ## Möbius truncation
 
@@ -245,10 +255,11 @@ Allowing the whole form to have content \(g^2\) thus causes no gap.
 
 The theta coefficient includes zero blocks. Their removal in the
 truncated sum costs \(O(D^2N^\epsilon)\), by (11). Combining (12),(13)
-and enlarging the harmless power \(3+\epsilon\) to 4 gives
+and retaining the power \(3+\epsilon\) gives
 \[
  R^*(N)=\sum_{d,e\le D}\mu(d)\mu(e)E_{d,e}(N)
- +O\left(N^{1+\epsilon}/D+D^{10}N^{1/2+\epsilon}
+ +O_{Q_1,Q_2,\epsilon}\left(
+ N^{1+\epsilon}/D+D^{8+2\epsilon}N^{1/2+\epsilon}
                                       +D^2N^\epsilon\right).
  \tag{14}
 \]
@@ -297,7 +308,7 @@ bounded unrestricted density in (7).
 
 For \(p\nmid N\) good, \(\lambda_p(0,0)=1+O(p^{-2})\);
 for \(p\mid N\) good, it is \(1+O(p^{-1})\), uniformly in the valuation.
-Taking \(0<\alpha<1/2\), (16)--(18) and multiplicativity imply
+Taking any fixed \(0<\alpha<1\), (16)--(18) and multiplicativity imply
 \[
  \sum_{d,e\ge1}\mu(d)^2\mu(e)^2(de)^\alpha E_{d,e}(N)
               \ll_{Q_1,Q_2,\alpha,\epsilon}N^{1+\epsilon}.
@@ -309,11 +320,25 @@ Indeed the good-prime Euler factor is
        (\lambda_p(1,0)+\lambda_p(0,1))
                  +p^{2\alpha}\lambda_p(1,1).
 \]
-Away from target primes this is \(1+O(p^{-2+2\alpha})\).
-At target primes the extra \(O(1/p)\) product is \(O_\epsilon(N^\epsilon)\).
-Bad primes are a fixed finite set. The argument still applies if some
-unrestricted bad density vanishes, since then every term vanishes;
-it does not divide by a zero density.
+If \(p\nmid N\), then \(\lambda_p(1,1;N)=0\) exactly, so this is
+\(1+O(p^{-2+\alpha})\). The product over these primes converges absolutely
+for every \(\alpha<1\). At target primes it is at most
+\[
+ 1+C_\alpha(p^{-1}+p^{-2+\alpha}+p^{-2+2\alpha})
+ \le 1+C'_\alpha p^{-\delta},
+ \qquad \delta=\min(1,2-2\alpha)>0.
+\]
+For any \(\epsilon>0\), choose a fixed prime threshold after which
+\(1+C'_\alpha p^{-\delta}\le p^\epsilon\). Their product over \(p\mid N\)
+is at most a fixed constant times \(\operatorname{rad}(N)^\epsilon\),
+hence \(O_{\alpha,\epsilon}(N^\epsilon)\). This proves uniformity even
+when \(v_p(N)\) is arbitrarily large. For \(\alpha>1/2\) the extra
+target-prime term need not be \(O(1/p)\); only its product needs to be
+\(N^{o(1)}\). Bad primes are a fixed finite set. The argument still
+applies if some unrestricted bad density vanishes, since then every
+term vanishes; it does not divide by a zero density. The endpoint
+\(\alpha=1\) is not claimed: the positive nontarget Euler factors
+can then have nonsummable \(1/p\) terms.
 
 It follows from (19) that the main term in (14) can be completed with
 error \(O(N^{1+\epsilon}D^{-\alpha})\). Local inclusion-exclusion gives
@@ -324,9 +349,120 @@ error \(O(N^{1+\epsilon}D^{-\alpha})\). Local inclusion-exclusion gives
  =JN\prod_p\beta_p^*(N).
  \tag{20}
 \]
-Choosing \(\alpha=1/4\), \(D=N^{1/100}\), and then sufficiently small
-\(\epsilon\), proves (2), with \(\eta=1/1000\).
+The resulting error budget is
+\[
+ O_{Q_1,Q_2,\alpha,\epsilon}\left(
+ N^{1+\epsilon}D^{-1}
+ +N^{1/2+\epsilon}D^{8+2\epsilon}
+ +D^2N^\epsilon+N^{1+\epsilon}D^{-\alpha}\right).
+ \tag{20a}
+\]
+For fixed \(\alpha<1\), take \(D=N^{1/(16+2\alpha)}\).
+Before the arbitrarily small \(\epsilon\) losses, the limiting saving
+is \(\alpha/(16+2\alpha)\). Letting \(\alpha\) approach 1 proves
+every fixed \(\eta<1/18\); the endpoint is not asserted.
+For the explicit choice \(\eta=1/20\), take
+\(\alpha=15/16\), \(D=N^{1/18}\), and \(\epsilon=1/1000\) in
+(20a). The largest exponent is
+\(1+1/1000-5/96<19/20\).
 Equations (3) and (2) prove eventual existence.
+
+## Stronger lower bounds and distinct value pairs
+
+Let \(b_p\) be the good-prime factor in (5) when \(p\nmid N\).
+Factoring the two lines of (5) gives the exact target ratio
+\[
+ T_p=\frac{\text{target-prime factor in (5)}}{b_p}
+ =\begin{cases}
+ (p+3)/(p+2),&\varepsilon_1=\varepsilon_2=1,\\
+ (p-1)/(p-2),&\varepsilon_1=\varepsilon_2=-1,\\
+ 1-1/p,&\varepsilon_1=-\varepsilon_2.
+ \end{cases}
+ \tag{20b}
+\]
+Thus, writing \(S^*(N)=\prod_p\beta_p^*(N)\),
+\[
+ S^*(N)=\left(\prod_{p\notin S}b_p\right)
+        \left(\prod_{p\in S}\beta_p^*(N)\right)
+        \prod_{\substack{p\mid N\\p\notin S}}T_p .
+\]
+The first product converges to a positive constant. If
+\(\det A_1\det A_2\) is a square, all the \(T_p\) exceed one, and
+\[
+ c_{\rm loc}:=\left(\prod_{p\notin S}b_p\right)
+                 \prod_{p\in S}p^{-5t_p-3}>0,\qquad
+ R^*(N)\ge \tfrac12Jc_{\rm loc}N
+ \tag{20c}
+\]
+for every sufficiently large admissible \(N\). In particular
+\(R_Q^*(N)\gg_Q N\) for self-sums. More generally this applies to
+two forms from the same imaginary quadratic field, even with different
+ideal classes or conductors. The displayed lower coefficient is
+explicit; a numerical onset still requires an explicit analytic error
+constant.
+
+If the determinant product is nonsquare, let \(\psi\) be its associated
+nonprincipal quadratic character. The exact ratios imply
+\[
+ S^*(N)\gg_{Q_1,Q_2}
+ \prod_{\substack{p\mid N\\p\notin S,\ \psi(p)=-1}}(1-1/p)
+ \gg_{Q_1,Q_2}(\log\log(3N))^{-1/2},
+ \qquad
+ R^*(N)\gg_{Q_1,Q_2}\frac{N}{\sqrt{\log\log(3N)}}.
+ \tag{20d}
+\]
+For the second inequality use the fixed-modulus Mertens theorem,
+[Williams, Theorem 1, printed p.356](https://people.math.carleton.ca/~williams/papers/pdf/057.pdf),
+on the \(\varphi(q)/2\) reduced classes where \(\psi=-1\). Its full
+product through \(x\) is comparable to \((\log x)^{-1/2}\).
+Split the target primes at \(x=\log N\); above \(x\),
+\(\sum_{p\mid N,p>x}1/p\le\log N/(x\log x)\), so their product is
+bounded below. All constants depend on the fixed forms, not on target
+valuations. A linear bound is in general false in this nonsquare case:
+multiply the product of the good negative-character primes through
+\(x\) by a bounded factor chosen to put it in any fixed admissible
+residue class modulo (4). The singular series tends to zero along
+these admissible targets. The error in (2) is negligible.
+
+There is also a logarithmic improvement on the distinct-value lower
+bound obtained from the pointwise estimate (11). Let \(f_K(n)\) count
+integral ideals of norm \(n\) in an imaginary quadratic field \(K\).
+The norm embedding used for (11) gives
+\(r_Q(n)\le w_Kf_K(4an)\) for \(Q=ax^2+bxy+cy^2\), where \(w_K\)
+is the number of units. At split primes
+\((j+1)^3\le\binom{j+7}{7}\); at inert and ramified primes the
+corresponding coefficient domination is immediate. Hence
+\(f_K(n)^3\le f_K^{*4}(n)\), where the right side is the fourfold
+Dirichlet convolution. The elementary ideal-count estimate
+\(\sum_{n\le X}f_K(n)\ll_K X\) follows from \(f_K=1*\chi_K\)
+by Dirichlet's hyperbola method. Partial summation and convolution give
+\[
+ \sum_{n\le X}f_K^{*4}(n)\ll_K X(1+\log X)^3,\qquad
+ \sum_{n\le X}r_Q(n)^3\ll_Q X(1+\log X)^3.
+ \tag{20e}
+\]
+The second inequality bounds the subsequence \(4an\) by the full
+sum through \(4aX\).
+
+Let \(r_Q^*(n)\) count primitive binary coordinate representations of
+\(n\), and let \(V(N)\) count distinct ordered pairs \((a,N-a)\)
+with both values primitively represented by their respective forms.
+Put \(w(a)=r_{Q_1}^*(a)r_{Q_2}^*(N-a)\). Hölder and Cauchy give
+\[
+ R^*(N)\le V(N)^{1/3}\left(\sum_a w(a)^{3/2}\right)^{2/3},
+ \qquad \sum_a w(a)^{3/2}\ll_{Q_1,Q_2}N(1+\log N)^3.
+\]
+Consequently, on sufficiently large admissible targets,
+\[
+ V(N)\gg_{Q_1,Q_2}
+ \frac{N S^*(N)^3}{(1+\log N)^6}.
+ \tag{20f}
+\]
+This yields \(V(N)\gg N/(\log N)^6\) for same-field pairs, and
+\(V(N)\gg N/((\log N)^6(\log\log(3N))^{3/2})\) for distinct-field
+pairs. The same bounds, with interval-dependent constants, hold in
+each fixed positive-length balance interval by (24).
+They are lower bounds, not unweighted value-pair asymptotics.
 
 ## Quadratic-kernel corollary of the existing splitting theorem
 
@@ -642,8 +778,9 @@ no priority claim is made for this explicit dyadic calculation.
 The dyadic formula can be combined with the finite Hecke-quotient
 argument from the Eisenstein proof. The order and the normalization
 must be changed explicitly. The result here is an effective cutoff
-and a finite reduction; it does not assert that the remaining finite
-exception set is empty.
+and an intermediate finite reduction. The
+[exact completion](PRIMITIVE_NORM_MINUS8_EXACT.md) proves that its remaining
+finite exception set is empty using sharper estimates and complete certificates.
 
 ### The quaternion order and the unramified operator
 
@@ -706,19 +843,51 @@ two characters,
  \|T_m\|\le\tau(m)\sqrt m .
  \tag{33}
 \]
-The proof of the
-[Eisenstein spectral lemma](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex)
-applies with the following checked replacements: the definite algebra
-is ramified at \(2,\infty\), the fixed local level is \(O_2^\times\),
-the unit count is 4, and the prime being reduced is any inert \(p\ge5\).
-Class number one gives the same finite adelic quotient \(Y_p\).
-The only character constituents on \(\mathrm{PGL}_2(\mathbb F_p)\)
-are the trivial and quadratic determinant characters. All other
-constituents transfer by the same Jacquet--Langlands theorem to
-weight-two cusp forms. Every prime dividing \(m\) is a split,
-maximal-level place, so its two Hecke roots have size \(\sqrt\ell\).
-The all-ideal prime-power recurrence then gives (33), uniformly in
-\(p,m\). No unramified estimate at 2 is being assumed.
+Here is the transfer argument directly for this order. Let \(V_\ell\)
+be the image of \(O_\ell^\times\) in \(PB^\times(\mathbb Q_\ell)\),
+and replace \(V_p\) by its reduction kernel to obtain \(U(p)\).
+Class number one identifies
+\(PB^\times(\mathbb Q)\backslash PB^\times(\mathbb A_f)/U(p)\)
+with \(Y_p\). Its stabilizer is exactly \(\Gamma_p\): local scalar
+corrections have even norm valuations and combine into one rational
+scalar, leaving an element of \(O^\times\). The transitive right
+\(G_p\)-action makes the adelic measure proportional to counting
+measure. Principalizing odd-norm ideals acts by \(\alpha^{-1}\)
+at \(p\); quaternion conjugation changes this to the shell sum in
+(32), including its factor \(1/4\).
+
+To apply Jacquet--Langlands one must exclude constituents with a
+finite-dimensional local factor at a split place. Such a smooth
+irreducible local factor is a determinant character: normality of its
+open kernel and conjugation by diagonal matrices kill both unipotent
+subgroups. Strong approximation for \(B^1\), away from infinity and
+that split place, then makes the automorphic constituent invariant
+under \(B^1(\mathbb A)\), so it is a global norm character.
+The hypothesis holds because \(B^1\) is noncompact at the chosen
+split place; see Voight, *Quaternion Algebras*, Main Theorem 28.5.3.
+On the transitive quotient \(Y_p\), norm characters restrict to
+characters of \(G_p\). These are exactly \(1\) and the quadratic
+determinant character, since the elementary unipotents generate
+\(\mathrm{SL}_2(\mathbb F_p)\). Merely counting finite-group characters
+without this strong-approximation step would not justify transfer.
+
+Thus the complement of those two characters satisfies the
+infinite-dimensional-at-split-places hypothesis of
+[Jacquet--Langlands, Theorem 14.4](https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf).
+It transfers to cuspidal \(\mathrm{GL}_2\) representations, and the
+trivial definite infinite type corresponds to weight two (Section 5,
+the \(n=0\) case on printed pp.89--90 and Proposition 5.20, pp.105--106). Every \(\ell\mid m\) is split and has maximal local
+level, so the transferred factor is unramified there. The weight-two
+Ramanujan theorem gives two Hecke roots of magnitude \(\sqrt\ell\).
+The all-integral-ideal recurrence
+\(T_{\ell^{a+2}}=T_\ell T_{\ell^{a+1}}-\ell T_{\ell^a}\)
+therefore bounds the \(\ell^a\) eigenvalue by
+\((a+1)\ell^{a/2}\). Multiplicativity proves (33) with constant 1,
+uniformly in \(p,m\). The level at 2 affects the conductor of the
+transfer; no unramified estimate at 2 is used. The exact primary source
+editions and theorem locators are pinned in the source ledger.
+The [earlier Eisenstein lemma](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex)
+is a comparison, rather than an additional unexpanded spectral input.
 
 For \(N=2^e m\), \(m\) odd, \(0\le e\le3\), let
 \(A_e=T_{2^e}\) as defined by (32). Its row sum is
@@ -932,18 +1101,44 @@ prime preserves membership in that norm set. A least counterexample
 to the proposed exact identity, if divisible by a split prime \(q\)
 with \(N/q\ge2\), would descend to a smaller counterexample.
 The boundary \(N=q\) is ruled out by (40a). Consequently the exact
-identity is equivalent to coverage of the **finite** residual family
+identity is equivalent to coverage of a **finite** residual family.
+One dyadic stratum can also be removed by leastness. Write
+\(C=\{n\text{ odd}:q\mid n\Rightarrow q\equiv1,3\bmod8\}\), so
+\(P_{-8}=C\cup2C\). If a least counterexample had \(N=4m\), \(m\)
+odd, its smaller admissible target \(2m\) would be represented.
+Both summands of \(2m\equiv2\bmod4\) must be odd, since every even
+primitive norm is \(2\bmod4\). Doubling those two odd values preserves
+primitive norm membership and represents \(N\), a contradiction.
+Thus the smaller residual family is
 \[
- N=2^e m\ge2,\quad 0\le e\le3,\quad m<2^{60},\qquad
+ N=2^e m\ge2,\quad e\in\{0,1,3\},\quad m<2^{60},\qquad
        q\mid m\Longrightarrow q\equiv5,7\bmod8 .
  \tag{40}
 \]
-This family has not been exhausted here. A least counterexample, if
-one exists, is therefore smaller than \(2^{63}\) and has no odd
+The argument through (40) is a finite reduction. For the stratum
+\(e=3\), both summands must be even: elements of \(C\) are
+\(1,3\bmod8\), so two cannot sum to zero modulo eight. Its existence
+problem is exactly \(4m\in C+C\). The separate
+[exact -8 proof](PRIMITIVE_NORM_MINUS8_EXACT.md) now covers this family:
+107 rational interval certificates, complete strong-core coverage
+through \(2^{27}\), and split-prime descent prove
+\(P_{-8}+P_{-8}=\{N\ge2:16\nmid N\}\). This does not rely on
+exhausting all inert cores below \(2^{60}\) directly.
+A least counterexample, if one exists, is therefore smaller than \(2^{63}\) and has no odd
 split prime factor. Equation (40) is a least-counterexample reduction;
 the reduced core cutoff \(2^{60}\) alone is **not** a global onset
 for arbitrary targets with split prime factors. The unconditional
 all-target onset proved above is \(2^{78}\).
+
+The [discriminant -11 specialization](PRIMITIVE_NORM_MINUS11_EFFECTIVE.md)
+now supplies the numerical global onset `2^71` for every even target
+not divisible by121, and at least `N^(2/3)/100000` distinct ordered value
+pairs. Its maximal order requires retaining all ideal classes: the
+principal mass is3/5, and the ramified reduction has ten equally weighted
+points. Sharper lattice/divisor estimates, 35 certified intervals and a
+complete finite core computation now prove the exact -11 identity:
+`P_-11+P_-11={N>=2:N even,121 not dividingN}`. These are additional
+explicit deductions, separate from the general nonnumerical cutoff above.
 
 ## Consequences and limits
 
@@ -955,14 +1150,14 @@ all-target onset proved above is \(2^{78}\).
 * The theorem permits every target valuation compatible with the
   primitive local conditions. It is stronger than applying a theorem
   about one primitive four-vector: both blocks are sieved separately.
-* Distinct value pairs have at least \(N^{1-\epsilon}\) representations
-  on every sufficiently large admissible target, using (11) to remove
-  coordinate multiplicities from (2). This does not identify their
-  logarithmic order or leading constant.
+* Equations (20c)--(20f) give a linear coordinate lower bound for
+  same-field pairs, a \(N/\sqrt{\log\log(3N)}\) lower bound for
+  distinct-field pairs, and logarithmic lower bounds for distinct
+  value pairs. These do not identify a value-pair leading asymptotic.
 * The exact \(-8\) identity is reduced to the explicit finite family
   (40), with an unconditional global onset \(2^{78}\). The residual
-  inert-core family has not been exhausted. No analogous numerical
-  cutoff for \(-11\) is computed here.
+  inert-core family is now covered by the separate exact -8 proof.
+  Both -8 and -11 binary classifications are proved, including ramification.
 * Simultaneous Gaussian--Eisenstein primitive norms in *each* summand
   impose two independent norm conditions on each value. Their
   \(C_{12}+C_{12}\) problem is not a single binary-form sum and does
@@ -994,3 +1189,10 @@ verifies the good-prime counts, bad-prime finite-lifting criterion on
 sample forms, and the exact Möbius identity on finite ranges. These
 checks challenge normalizations and examples; they do not prove the
 uniform analytic estimates or the unrestricted theorem.
+
+
+The [proof audit](PRIMITIVE_NORM_ANALYTIC_AUDIT.md) records the reviewed
+revision, the exact analytic hypotheses, source normalization issues,
+the independent spectral specialization, the exponent improvement and
+the exact-classification completion and remaining priority obligations. It is an
+internal mathematical audit, not external human review.

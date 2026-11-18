@@ -580,8 +580,12 @@ also distinguishes complete cases from partial binomial results.
 The audit found no general support-independent consecutive-moment theorem.
 
 **Repository evidence.** Ordinary binomials through degree six and selected
-higher support families have internal proofs. The remaining degree-seven
-residue families are narrower than the central objective. Full Furter
+higher support families have internal proofs. The
+[ordinary constant-plus-power theorem](factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex)
+already covers A+BX^d for every positive integer d and every starting index.
+Its uniform contour proof and finite certificates do not treat arbitrary
+monomial products or supports. The remaining degree-seven residue families
+are narrower than the central objective. Full Furter
 rigidity already has a credited internal reproduction of liqsweep's
 critical-value argument; its factorial transfer is a specific all-dimensional
 family, rather than arbitrary supports.
@@ -592,8 +596,32 @@ homogeneous recurrence order three, and every polynomial automorphism
 preserving the entire factorial functional is a variable permutation.
 The sharp root-of-unity linear examples also defeat a universal
 unique-minimum valuation argument. These are method checks, not an SFC
-solution. Gamma-product Appell simplicity remains an unproved narrower
-possibility, and its transfer to arbitrary supports is also missing.
+solution. The exact Gamma-factorization route has two further limits:
+arbitrary positive Euler factors can create forbidden zero blocks, while
+the actual finite Gamma/Beta blocks lose moment-Gram coercivity at toric
+relations in the ordinary limit. The audit gives the exact operator
+counterexample and the degeneration for support {1,X,X^2}. Neither is an
+SFC counterexample. Finite-block separation and direct control of its
+limiting nonvanishing are both missing. Gamma-product Appell simplicity
+remains an unproved narrower possibility, with no arbitrary-support
+transfer.
+
+Two further direct transfers now have exact counterexamples in the audit.
+For F=c0+c1X^2 at orders two and three, no prime and diagonal valuations
+produce a regular pair of monomials or rescaled complete homogeneous
+forms, despite the original pair being regular. Also
+(XYZ)^7(X^5+Y^5+Z^5) has four strict maxima on the positive simplex,
+exceeding its three monomials. Thus neither those diagonal targets nor
+an ungrouped saddle count supplies the general support-size window.
+
+The next proposed certificate concerns the resultant after replacing
+exponential rows by normalized Gamma variables. Its coefficients are
+integer polynomials in the inverse shapes. Uniform coefficient
+nonnegativity, up to a fixed scalar sign, together with at least one
+positive coefficient would prove unrestricted SFC. This is an unproved
+stronger assertion, not a completed reduction to a known theorem. The
+needed global positive expansion is missing; total positivity of the
+underlying moment kernel is false even for three linear monomials.
 
 **Single obstruction.** Exclude a common nonzero projective zero of s
 consecutive homogeneous moment forms uniformly over arbitrary exponent
