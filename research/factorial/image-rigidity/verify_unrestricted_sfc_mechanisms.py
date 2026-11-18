@@ -651,15 +651,104 @@ def check_row_coalescence_controls():
     for k in range(9):
         assert rising(1,2*k) == 4**k*rising(Fraction(1,2),k)*rising(1,k)
     assert rising(1,2) != rising(1,2)**2
+
+    # Actual nonconstant features (Y_rho, X Y_rho), first two forms.
+    disk_controls = 0
+    for rho in (Fraction(-1,4),Fraction(0),Fraction(1,2),Fraction(1)):
+        p1_c1 = 1+rho
+        p2_at_mean_zero = (2*p1_c1*p1_c1
+                          -4*(1+2*rho)*p1_c1
+                          +4*(1+4*rho+rho*rho))
+        assert p2_at_mean_zero == 2+8*rho-2*rho*rho
+        disk_controls += 1
+    # At rho=2-sqrt(5), rho^2=9-4sqrt(5); exact pair coefficients.
+    assert (2+8*2-2*9, -8+8) == (0,0)
+    assert 2**2 < 5 < 3**2  # -1 < 2-sqrt(5) < 0.
+    assert [2+8*r-2*r*r for r in (0,1)] == [2,8]
+    assert 2+8*Fraction(-1,4)-2*Fraction(-1,4)**2 != 0
+
     return {
         "row_grouping_normalization_controls":count,
+        "correlation_disk_resultant_controls":disk_controls,
+        "correlation_disk_resultant_coefficients":[2,8,-2],
+        "correlation_disk_exact_root":"2-sqrt(5)",
+        "correlation_disk_scope":(
+            "Holomorphic correlation disk certificate only; physical interval "
+            "preservation and ordinary SFC remain open."),
         "nonprimitive_factorization_controls":9,
         "corrupt_row_grouping_factor_rejected":True,
         "mixed_sign_specialization_can_vanish":True,
     }
 
 
+
+def check_fractional_mellin_controls():
+    """Exact finite identities/bounds; analytic interpolation is proved in TeX."""
+    assert Fraction(783,500)**4 > 6
+    assert Fraction(1189,1000)**4 < 2
+    assert Fraction(783,500)-3*Fraction(1189,1000)+2 == -Fraction(1,1000)
+    assert Fraction(1817,1000)**3 < 6
+    assert Fraction(63,50)**3 > 2
+    assert Fraction(1817,1000)-3*Fraction(63,50)+2 == Fraction(37,1000)
+
+    telescoping_controls = 0
+    for n in (1,2,7,23):
+        for k in range(6):
+            direct = n**k*prod(Fraction(m,m+k) for m in range(1,n+1))
+            closed = Fraction(factorial(k)*n**k*factorial(n),factorial(n+k))
+            assert direct == closed <= factorial(k)
+            if k:
+                assert direct != Fraction(
+                    factorial(k)*n**k*factorial(n),factorial(n+k+1))
+            telescoping_controls += 1
+
+    def mul(z,w):
+        return (z[0]*w[0]-z[1]*w[1], z[0]*w[1]+z[1]*w[0])
+
+    def power(z,n):
+        out = (1,0)
+        for _ in range(n):
+            out = mul(out,z)
+        return out
+
+    def raw_phase(order,u,v):
+        mu = (1,1,u,v)
+        out = [0,0]
+        for a in range(order+1):
+            for b in range(order-a+1):
+                c = order-a-b
+                co = mul(power((-1,-1),c),power((0,1),b))
+                weight = (factorial(order)
+                          // (factorial(a)*factorial(b)*factorial(c))
+                          * mu[a]*mu[b])
+                out[0] += weight*co[0]
+                out[1] += weight*co[1]
+        return tuple(out)
+
+    phase_controls = 0
+    for u in (Fraction(2),Fraction(7,3)):
+        for v in (Fraction(4),Fraction(11,2)):
+            assert raw_phase(1,u,v) == (0,0)
+            assert raw_phase(2,u,v) == (0,0)
+            f = v-3*u+2
+            assert raw_phase(3,u,v) == (f,-f)
+            assert raw_phase(3,u,3*u-2) == (0,0)
+            assert raw_phase(3,u,3*u-1) != (0,0)
+            phase_controls += 1
+    return {
+        "fractional_mellin_root_interval":["1/4","1/3"],
+        "fractional_mellin_endpoint_bounds":["<-1/1000",">37/1000"],
+        "fractional_mellin_telescoping_controls":telescoping_controls,
+        "fractional_mellin_phase_controls":phase_controls,
+        "fractional_mellin_corrupt_controls_rejected":True,
+        "fractional_mellin_scope":(
+            "Positive fractional multiplicities below one only; no ordinary "
+            "SFC or actual integer-row inflation counterexample."),
+    }
+
+
 def main():
+    fractional_controls = check_fractional_mellin_controls()
     row_controls = check_row_coalescence_controls()
     route_controls = check_diagonal_and_saddle_controls()
     gamma_controls = check_gamma_controls()
@@ -686,6 +775,7 @@ def main():
         **fock_controls,
         **route_controls,
         **row_controls,
+        **fractional_controls,
         "scope":("Exact finite recurrence, operator, arithmetic and saddle controls only; "
                  "all-index proofs are written. Neither finite-block nor "
                  "ordinary unrestricted SFC is established.")

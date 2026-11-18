@@ -1000,6 +1000,117 @@ Nor is a safe Gaussian phase constructed: no eventual marked vanishing
 is asserted. Such a transfer needs further structure; the individual occupation-number
 monomials supply the unresolved restriction here.
 
+\subsection{Fractional Mellin multiplicities create a forbidden block}
+The factorial kernel has a positive multiplicative convolution
+interpolation. That larger class does not satisfy the support-size window,
+even with independent nonconstant features and strict polynomial Gram
+positivity.
+
+For $\tau>0$, take independent rate-one Gamma variables
+$G_{m,\tau}$ of shape $\tau$, and put
+\[
+ Y_{\tau,N}=N^\tau\exp\left(-\sum_{m=1}^N G_{m,\tau}/m\right).
+\]
+Writing $H_N=\sum_{m=1}^N1/m$, its logarithm is
+\[
+ \tau(\log N-H_N)+\sum_{m=1}^N(\tau-G_{m,\tau})/m.
+\]
+The independent centered summands have summable variances
+$\tau\sum_m m^{-2}$. Their series converges almost surely and in
+$L^2$, and $H_N-\log N$ has a finite limit. Hence
+$Y_{\tau,N}\longrightarrow Y_\tau>0$ almost surely.
+For every integer $k\ge0$, the Gamma Laplace transform and finite
+telescoping give
+\[
+ \mathbb E Y_{\tau,N}^k
+ =\left(N^k\prod_{m=1}^N\frac{m}{m+k}\right)^\tau
+ =\left(\frac{k!\,N^kN!}{(N+k)!}\right)^\tau
+ \longrightarrow (k!)^\tau .
+\]
+Moreover $\sup_N\mathbb E Y_{\tau,N}^{2k}\le((2k)!)^\tau$.
+Uniform integrability therefore proves
+\[
+                    \mathbb E Y_\tau^k=(k!)^\tau.       \tag{15}
+\]
+The log distribution is absolutely continuous: separate the first
+Gamma summand from the independent remainder. Thus independent copies
+of $Y_\tau$ have a strictly positive Hermitian polynomial Gram form.
+Indeed their joint law is absolutely continuous, a nonzero polynomial
+has a Lebesgue-null zero set, and (15) supplies all required moments.
+
+Gamma addition, applied separately at each $m$, couples the construction
+so that independent $Y_\tau,Y_\delta$ have product distributed as
+$Y_{\tau+\delta}$. Set $Y_0=1$; the identity
+$\mathbb E|Y_\tau-1|^2=2^\tau-1$ gives continuity at zero.
+At $\tau=1$, monotone convergence gives
+$\mathbb E e^{tY_1}=\sum_{k\ge0}t^k=(1-t)^{-1}$ for $0\le t<1$,
+identifying the unit exponential law. For every positive integer $q$,
+$Y_q$ is consequently a product of $q$ independent exponentials.
+This uses the convolution coupling, not moment determinacy for
+products of three or more exponentials.
+
+The interpolation retains the canonical negative-jump log-Gamma kernel.
+For $t\ge0$, direct summation of the centered Gamma Laplace exponents
+gives, with $\gamma=\lim_N(H_N-\log N)$,
+\[
+ \log\mathbb E e^{t\log Y_\tau}
+ =-\tau\gamma t+
+   \tau\int_0^\infty
+       \frac{e^{-tx}-1+tx}{x(e^x-1)}\,dx.                \tag{16}
+\]
+For this identity one may first use the finite sums and then uniform
+integrability, as above; the product converges since its logarithmic
+summands are $O_t(m^{-2})$. The integral follows by expanding
+$(e^x-1)^{-1}=\sum_{m\ge1}e^{-mx}$. Thus the negative jump directions
+and positive log-Gamma Levy weights survive fractional multiplicity.
+
+Nevertheless put
+\[
+ f(\tau)=6^\tau-3\,2^\tau+2.
+\]
+Here $f(0)=0$, $f'(0)=\log(3/4)<0$ and $f(1)=2>0$.
+Also
+\[
+ f''(\tau)=2^\tau\bigl(3^\tau(\log6)^2-3(\log2)^2\bigr)>0
+ \quad(\tau\ge0),
+\]
+since $\log6>2\log2$. Hence there is a unique positive zero
+$\tau_*$. It lies in $(1/4,1/3)$: the rational inequalities
+\[
+ (783/500)^4>6,\quad(1189/1000)^4<2,\qquad
+ (1817/1000)^3<6,\quad(63/50)^3>2
+\]
+give $f(1/4)<-1/1000$ and $f(1/3)>37/1000$.
+For independent copies $U,V$ of $Y_{\tau_*}$, the nonzero phase
+\[
+                        F=U+iV-(1+i)
+\]
+has its first three moments zero. Its mean is zero; its second and
+third cumulants are respectively
+$(1+i^2)(2^{\tau_*}-1)=0$ and $(1+i^3)f(\tau_*)=0$.
+All three feature coefficients are nonzero, and the strict Gram
+property above still holds.
+
+Even preservation under increasing a \emph{single} fractional
+multiplicity fails. For the source frame
+$(1,Y_{\tau_*},Y_{1/4})$, eliminate the constant coefficient using the
+mean-zero equation. Its remaining second and third moment forms are
+\[
+ (2^{\tau_*}-1)c_1^2+(2^{1/4}-1)c_2^2,\qquad
+                         f(1/4)c_2^3.
+\]
+They have only the common zero $c_1=c_2=0$.
+Multiplying the second nonconstant feature by an independent
+$Y_{\tau_*-1/4}$ produces the nonregular frame just constructed.
+The exact coefficient multiplier is $(k_2!)^{\tau_*-1/4}$.
+
+This is a counterexample within positive real Mellin multiplicities,
+not ordinary SFC. The exceptional multiplicity is below one.
+It does not refute adjoining a whole unit row to an actual integer
+frame, or a preservation statement restricted to multiplicities
+already at least one. A replacement argument must distinguish that
+discrete structure from the continuous log-Gamma and Gram conditions.
+
 \subsection{A discrete transfer scheme, with both obligations open}
 Write $\mathcal R(A,n)$ for projective regularity of the actual $s$
 forms $\Lfac((\sum_jc_jx^{a_j})^m)$, $n\le m<n+s$.
@@ -1084,6 +1195,29 @@ with features $X,Y_\rho T$, where $T$ is an independent exponential,
 The merged features $X,XT$ remain distinct and the endpoint resultant
 is positive. Controlling strict nonvanishing for the full consecutive
 block along this special coupling is still an open obligation.
+
+Its holomorphic continuation in $\rho$ cannot be controlled by a
+universal complex-disk zero-free theorem, even with nonconstant
+features and nonparallel row profiles. For the actual source features
+$Y_\rho,XY_\rho$ the first two forms are
+\[
+ P_1=c_0+(1+\rho)c_1,\qquad
+ P_2=2c_0^2+4(1+2\rho)c_0c_1
+                  +4(1+4\rho+\rho^2)c_1^2.
+\]
+Consequently
+\[
+             \operatorname{Res}(P_1,P_2)=2(1+4\rho-\rho^2),
+\]
+which vanishes at $2-\sqrt5\in(-1,0)$.
+The source columns $(0,1),(1,1)$ merge to the distinct columns $1,2$.
+The endpoint resultants are $2$ and $8$; the resultant is positive
+throughout the physical interval $[0,1]$. Thus this is a counterexample
+to the proposed complex-parameter certificate, not to actual
+row-identification preservation or SFC. For a genuine Hermitian
+Gaussian covariance with off-diagonal entries $w,\overline w$, these
+occupation moments depend on $\rho=|w|^2$; analytic continuation in
+$\rho$ must not be confused with that physical covariance disk.
 
 
 \section{An all-degree limit on infinitesimal polygon symmetries}
@@ -1197,9 +1331,13 @@ verifies 31 instances of (1), 30 of (2), the Euler counterexample,
 finite-block coefficient identities and 32 instances of the toric
 degeneration formula, the complete exceptional-prime threshold table
 and rational controls for the four-maxima example and row-coalescence
-normalizations, the rational positive-measure Borel counterexample,
-and the six exact orthonormal-feature Gaussian moments,
-with corrupted-coefficient rejection. The all-index arguments, profile rigidity, minimality and automorphism
+normalizations, the complex-correlation resultant obstruction,
+the rational positive-measure Borel counterexample,
+the six exact orthonormal-feature Gaussian moments, and the rational
+fractional-multiplicity endpoint bounds, finite telescoping identities
+and centered three-moment expansion, with corrupted-coefficient rejection.
+The probabilistic convergence and fractional-multiplicity obstruction
+use the written argument above. The all-index arguments, profile rigidity, minimality and automorphism
 rigidity are the written proofs, not consequences of finite tests. Independent specialist
 review, formal verification and a resolution of unrestricted SFC are not
 claimed.

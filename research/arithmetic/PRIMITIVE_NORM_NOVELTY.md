@@ -1,10 +1,10 @@
 # Novelty comparison and applications of classical estimates
 
-Assessment date: 18 November 2026. Scope: the general pair-primitive
-binary-sum theorem, its quantitative consequences, and the exact
-discriminant -8 classification. The -11 specialization is supplementary
-context; its historical priority has not received the same depth of
-search here.
+Assessment date: 18 November 2026. The targeted review below concerns
+the exact separately primitive two-block theorem. The later sections
+retain the earlier comparison of quantitative corollaries and the exact
+discriminant -8 classification. This does not establish priority for
+the separate exact -7 or -11 classifications.
 
 The general proof is best presented as a structured deduction from
 classical quaternary estimates and a known coprimality sieve. No exact
@@ -12,9 +12,267 @@ published antecedent for its full arbitrary-binary-pair statement was
 located, but that does not make the method or analytic estimates new.
 All eventual -8 existence, including both strong cores, also follows
 from Plaksin by the parity transformation below. The exact all-target
-classification is the stronger candidate contribution.
+classification is a separate candidate contribution.
 It must be distinguished from Liouville's nineteenth-century
 whole-vector primitive theorem.
+
+## Targeted historical review of the two-block theorem
+
+### The statement being compared
+
+Fix arbitrary primitive positive-definite integral binary forms
+\(Q_1,Q_2\), allowing different discriminants, nonprincipal form
+classes and nonfundamental order discriminants. The comparison target is
+\[
+ R^*_{Q_1,Q_2}(N)=
+ \#\{(x,y,u,v)\in\mathbb Z^4:
+       Q_1(x,y)+Q_2(u,v)=N,\ (x,y)=(u,v)=1\},
+\]
+with the two gcds taken in their prescribed blocks. The central
+quantitative statement is a local-density main term plus
+\(O_{Q_1,Q_2}(N^{1-\delta})\), for some fixed \(\delta>0\),
+uniformly through the positive targets. The existence consequence
+must cover every sufficiently large separately primitive locally
+admissible target, including arbitrary permitted target valuations.
+
+The precise \(7/8+\epsilon\) exponent, the printed finite admissibility
+modulus and the genus-invariant corollary are assessed separately.
+An older theorem can precede the central result without printing
+those particular consequences. A general relative asymptotic, even
+without a power saving, could already precede the existence theorem.
+Conversely, a theorem concerning coefficient content, gcd of the
+whole four-vector, primitive lattice embeddings, target averages,
+or only one quadratic field does not automatically have the full
+comparison scope.
+
+The review checked both explicit statements and short deductions from
+published theorems. It did not require the older paper to use the
+phrase separately primitive.
+
+### Findings at theorem level
+
+| Inspected primary result | Exact location and permitted scope | Consequence for the comparison |
+|---|---|---|
+| Brüdern--Fouvry, 1994, Lagrange's four squares theorem with almost prime variables | Theorem 3, printed pp.61--62; proof closes p.74. Uniform absolute remainder sum for four-square solutions with arbitrary overlapping squarefree coordinate divisibilities. Includes divisors 2,3 and divisors of the target. | A short deduction already gives the complete Gaussian two-block coordinate asymptotic with a positive power saving; see below. Its stated quadratic family has square diagonal coefficients. |
+| Schinzel, 2013, On Sums of Four Coprime Squares | Final paragraph of printed p.111, rather than only Theorem 2. Both designated gcds are expressly imposed, with an odd prime in each Gaussian block. | Direct published eventual Gaussian existence on its full local range \(N\not\equiv0,1,5\pmod8\). |
+| Brüdern, 2014, Sums of Squares Coprime in Pairs | Theorem 2, p.219, and Lemmas 2,4,5: four squares with all six pairwise gcds, a large-common-factor tail, scaled-square estimates and completed singular series. | The coprimality-sieve architecture is classical. Its main theorem alone has a different local range; its lemmas provide the appropriate Gaussian comparison. |
+| Plaksin, 1984/1985, two binary forms with prime arguments | Main theorem, printed p.562, equations (17)--(18); the second form has fundamental discriminant. Only the first pair is constrained to positive primes; the free pair is unrestricted. | Genuine short primitive-existence deductions include the complete eventual discriminant -20 range. It does not state the arbitrary two-block coordinate asymptotic. |
+| Bredikhin, 1965; Bredikhin--Linnik, 1966; A.I.Vinogradov, 1967 | The actual formal results concern prime plus one quadratic form or ideal norm. The 1966 and 1967 papers advertise a broader well-distributed-sequence mechanism. | Important prior genus/class-mixing methods, including a primitive-ideal specialization of the 1966 good-trajectory lemma. They do not state the required two-block main term and error; see the precise interface below. |
+| Podsypanin, 1975 | Theorem 1, printed p.459, for arbitrary positive forms of rank at least four; rank-four error \(O(N^{19/20+\epsilon})\). Theorem 2, p.487, gives local positivity. | The restriction is squarefreeness of each scalar coordinate, not either designated block gcd. Its exact local range can omit infinitely many represented two-block targets. |
+| Baker, 2006, The values of a quadratic form at square-free points | Definition (1.2), pp.101--102; Theorem 1, p.104, arbitrary fixed nonsingular forms in at least four variables with nonzero varying target. | A close arbitrary-form convergent-sieve antecedent, but again each coordinate is squarefree. There is no stated arbitrary coprimality-graph interface. |
+| Pall, 1949, Representation by Quadratic Forms | Definition on p.346; Theorem 2 p.349; binary embedding discussion p.353. | Primitive means gcd of maximal minors. For a represented number this is whole-vector primitivity, not two prescribed block gcds. |
+| Alaca--Pehlivan--Williams, 2014, sum of two binary forms | Definition on p.1396; Theorem 1.1, pp.1397--1399. | It counts unrestricted four-tuples and gives reductions/evaluations for selected coefficient families. It has no designated gcd condition or arbitrary-pair primitive asymptotic. |
+| [Jancevskis, 2009](https://pcwww.liv.ac.uk/~karpenk/JournalUDT/vol04/no2/8Jancev09.pdf), Waring with convergent sieve sequences | Theorem 1, pp.133--134, under \(s>2^k\), with independent scalar sequence restrictions. | For squares this requires at least five variables and does not impose joint block gcds. |
+| [Kane--Xue, 2023/2024](https://arxiv.org/pdf/2303.18071v2), primitive even-rank theta series | Theorem 1.1 and Section 3, especially preprint PDF p.8. | The primitive condition is gcd of all coordinates; inversion is over square divisors of the target. |
+| [Wessel--zur Verth, 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13736505/), quadratic forms in restricted variables | Condition L1 and Remark 1.1 require an off-block rank at least five, hence at least ten variables; weights factor over scalar coordinates. | Neither the dimension nor the restriction matches the present four-variable problem. |
+
+Retained primary editions, online comparison URLs and inspection scopes
+are recorded in [the existing source ledger](primitive_norm_quaternary_source_ledger.json).
+The rows do not claim a complete independent verification of the
+deep analytic proofs.
+
+### The Gaussian asymptotic is already a short 1994 deduction
+
+Brüdern--Fouvry's Theorem 3 counts positive solutions of
+\[
+ x_1^2+x_2^2+x_3^2+x_4^2=N,\qquad d_i\mid x_i,
+\]
+and bounds the sum of absolute remainders over the entire squarefree
+divisor box \(d_i\le H=N^\theta\), for \(0<\theta<1/22\).
+Here squarefree means each \(d_i\) is squarefree; common primes
+between different entries are allowed. There is no inherited
+\(N\equiv4\pmod{24}\) restriction in this theorem: that hypothesis
+enters the later almost-prime application. The source proof already
+finishes before that specialization.
+
+Use the divisor vectors \((d,d,e,e)\) and signed weights
+\(\mu(d)\mu(e)\). Their absolute remainder sum is bounded by the
+published full-box remainder sum, since this is an injectively indexed
+subset of that box. The elementary positive-binary representation
+bound gives a large-gcd tail \(O_\epsilon(N^{1+\epsilon}/H)\).
+Completing the nonnegative genus coefficients with any moment
+\(0<\alpha<1\) gives \(O_\epsilon(N^{1+\epsilon}H^{-\alpha})\);
+the local Jacobians and inclusion-exclusion are exactly those
+in the canonical two-block proof. The source's power saving,
+together with sufficiently small epsilon losses, therefore gives
+\[
+ R^*_{x^2+y^2,x^2+y^2}(N)
+       =\pi^2N\prod_p\beta_p^*(N)+O(N^{1-\delta})
+       \quad\text{for some }\delta>0.
+\]
+The source uses positive coordinates and real factor \(\pi^2/16\).
+Multiplying by 16 recovers the nonzero signed coordinates. After
+block primitivity, a zero coordinate forces its mate to be \(1\)
+or \(-1\), so all zero-coordinate contributions are
+\(O_\epsilon(N^\epsilon)\). This proves the displayed full-coordinate
+deduction without a new Gaussian analytic estimate.
+
+Thus Gaussian two-block existence and its power-saving coordinate
+asymptotic are not candidate novelties of the present work.
+The deduction is recorded here; it is not represented as a theorem
+printed verbatim by Brüdern--Fouvry.
+
+This does not make the arbitrary-form theorem a variable-change
+corollary. The family \(\sum d_i^2x_i^2\) has square determinant
+squareclass over \(\mathbb Q\), whereas
+\(x^2+y^2+u^2+2v^2\) has nonsquare determinant squareclass.
+Even some self-sums differ locally: the self-sum of
+\(x^2+xy+y^2\) is anisotropic over \(\mathbb Q_3\), while four
+squares is isotropic there. Indeed its completed-square equation is
+\(a^2+c^2+3(b^2+d^2)=0\), forcing all four primitive-scaled
+coordinates divisible by three; four squares has the nonzero
+\(\mathbb Q_3\)-solution \((\sqrt{-2},1,1,0)\).
+Fixed congruence restrictions and finite-index sublattices do not
+change these rational invariants. Extending the source's analytic
+proof to other quadratic spaces is an additional argument.
+
+### What Plaksin does and does not already imply
+
+The primitive local count on Plaksin's p.555 is an auxiliary
+quantity. Identity (9) adds common-coordinate prime powers back
+to recover the unrestricted count used in his main theorem.
+His local condition at p.562 requires both prime-coordinate
+residues to be units and does not require the free pair primitive.
+
+A literal second-block Möbius inversion produces
+\(\phi(p,q)+d^2\psi(X,Y)=N\). For \(d>1\), the second form has
+content \(d^2\) and nonfundamental discriminant. This violates
+the stated hypothesis on \(\psi\). Passing to a nonmaximal-order
+sublattice also needs free-coordinate progression restrictions
+absent from that theorem. These are precise missing interfaces,
+not assertions that his proof cannot be extended. Forgetting the
+prime restriction gives a lower subset of scale \(N/\log^2N\);
+it cannot supply the full order-\(N\) coordinate main term.
+
+There is nevertheless a short classical deduction covering all
+eventual primitive \(x^2+5y^2\) self-sums. Set both forms to that
+fundamental-discriminant form and regroup as
+\[
+ p^2+5q^2+x^2+5y^2
+       =Q(p,y)+Q(x,q).
+\]
+The bad gcds require \(p\mid y\) or \(q\mid x\).
+For each fixed prime, the offending free coordinate has
+\(O(\sqrt N/p+1)\) choices; the remaining fixed binary equation
+has \(O_\epsilon(N^\epsilon)\) solutions. Summing gives
+\(O_\epsilon(N^{1/2+\epsilon})\) discarded witnesses.
+
+The prime-unit local range is precisely
+\(N\bmod8\in\{2,3,4,6,7\}\): at two the prime block is
+\(6\bmod8\), and the free form takes \(0,1,4,5,6\bmod8\).
+At five, a nonzero square plus a square covers every residue.
+At other odd primes fix the prime-coordinate residues to one and
+use the nondegenerate free binary form. The selected roots lift.
+The good local factors are \(1+O(p^{-2})\) away from target
+primes, and exceed one at target primes; the finitely many bad
+factors are uniformly positive. Consequently the
+\(\gg N/\log^2N\) main term survives the deletion. This proves
+every sufficiently large locally admissible discriminant -20
+target already by a short Plaksin deduction. It supplies neither
+a numerical onset nor the sharper unweighted \(NJ(N)/\log N\)
+count.
+
+### Earlier genus-to-class arguments are relevant, but not automatic
+
+The actual Bredikhin 1965 survey, all three pages of the 1966
+Doklady announcement, the 1966 Bredikhin--Linnik paper and all
+nine pages of Vinogradov 1967 were checked. Their formal
+equations are prime plus one norm; the survey also treats divisor
+convolutions. Their general comments about replacing the prime
+by a well-distributed sequence are method outlines with further
+estimates required, not a quantified theorem already covering
+two primitive-form sequences.
+
+Bredikhin--Linnik's Lemma 5, printed pp.157--160, is a genuine
+prior class-mixing mechanism: exact-exponent-one split primes
+are independently reoriented among ideal classes. Restricting
+its coprime residual ideals to primitive ideals preserves these
+flips, giving an immediate primitive-ideal proof specialization.
+But a primitive genus convolution main term and a bound for its
+bad-trajectory contribution with the second form still have to
+be proved. The paper's Theorem C concerns the prime sequence.
+The 1965 norm-inflation argument additionally clears rational
+denominators and does not preserve primitive coordinates.
+These sources must be credited for class mixing; neither
+their formal statements nor the inspected adaptations establish
+the full comparison target.
+
+### Squarefree-coordinate theorems have a different local range
+
+This distinction can be checked without trusting a title.
+Let \(Q=x^2+16y^2\). If all four coordinates are nonzero
+squarefree, an odd first coordinate gives norm \(1\bmod8\).
+An even first coordinate is \(2\bmod4\), giving norm
+\(4\) or \(20\bmod32\). Two such norms therefore never
+sum to a multiple of 32. Nevertheless
+\[
+ Q(8t,1)+Q(8,1)=64t^2+96\qquad(t\ge1)
+\]
+has both blocks primitive, all coordinates nonzero, and target
+divisible by 32. Thus the published Podsypanin/Baker restrictions
+do not even cover the full local target set for this allowed
+nonmaximal-order pair. A new sieve adaptation could work; an
+application of their stated theorems is insufficient.
+
+A more flexible deduction would first change each block basis by a
+fixed element of \(\mathrm{SL}_2(\mathbb Z)\), using CRT to arrange coordinate-unit local
+solutions at the finitely many bad primes, and then sieve out common
+block divisors. Such basis changes avoid the preceding example's
+particular squarefree-coordinate obstruction; that example does not
+exclude this strategy. The necessary uniform tail is still missing
+from this short deduction. The available elementary estimate is
+\(O_\epsilon(N^{1+\epsilon}/P)\), rather than \(O(N/P)\) uniformly in N.
+A fixed finite cutoff P therefore does not make the tail smaller
+than the fixed-form squarefree main term as N tends to infinity.
+A growing cutoff needs coefficient/progression uniformity beyond
+the cited fixed-form statements. Thus neither the basis change
+nor finite local filtering alone proves the general existence
+corollary. This records a gap in the proposed deduction, not an
+impossibility theorem for adapting those classical proofs.
+
+### Search coverage, access limitations and verdict
+
+The primary genealogy followed the cited theorem numbers and
+definitions of primitiveness, including prime/free variables,
+divisor overlaps, target valuations, order discriminants and
+whether a formal generic-sequence interface was supplied.
+English, French, German and Russian proper/primitive and
+coprimality terminology was searched. Public OpenAlex
+forward-citation queries were executed for Plaksin,
+Brüdern 2014, Schinzel, and Estermann 1951/1962. These indices have duplicate
+translated records and visibly sparse coverage; they are leads,
+not a proof of absence.
+
+No live MathSciNet or zbMATH search result set was obtained.
+MathSciNet returned the institutional authentication page;
+zbMATH web requests returned 403 and its API requests timed out.
+These are access failures, not negative database searches.
+The original Jones 1949, Pall/Ross 1946 and James 1938 papers remain
+uninspected. A later primary Dietmann--Elsholtz account credits James
+with exact three-summand Gaussian split support and a binary
+approximation allowing two bad prime factors in each summand.
+That confirms his relevance without excluding the uninspected original.
+
+Actual publisher first-page scans of Estermann were obtained. The
+1951 opening Theorems 1--2 require at least five individually
+squarefree squares (eight for all large targets). The 1962 opening
+problem is indefinite, with fixed nonzero target and growing boxes.
+Their complete papers, later statements and proofs remain unread.
+The precise first-page inspections and retained images are recorded
+in the ledger. None of these sources is excluded merely from a title
+or an inaccessible search result.
+
+**Targeted verdict.** No exact arbitrary-binary-pair theorem, or
+verified short published-theorem deduction with all its hypotheses,
+was identified in the primary corpus inspected here. The Gaussian
+asymptotic is already a short 1994 deduction; Gaussian existence is
+explicit in Schinzel, and the full eventual -20 existence follows
+from Plaksin. The remaining candidate contribution is the explicit
+arbitrary-form two-block asymptotic and its quantitative arithmetic
+consequences. This is a useful application of classical estimates,
+with historical priority still unresolved. The review supports that
+narrow scope; it does not certify a first-result claim or resolve
+the remaining bibliographic access limits.
 
 ## Assessment of each claim
 
@@ -22,7 +280,7 @@ whole-vector primitive theorem.
 |---|---|---|
 | Primitive norm prime-factor criterion | Classical quadratic ideal factorization; Euclidean argument in the class-one cases | Classical ingredient. |
 | Full -8 shell and whole-vector primitive counts | Liouville 1860; Deutsch 2004/2005 and 2008 | Explicitly classical, including the whole-vector dyadic obstruction 16. |
-| Möbius truncation, large-factor tail and singular-series completion | Brüdern 2014, Theorem 2, Lemmas 2,4,5 | Classical architecture; a new sieve method should not be claimed. |
+| Möbius truncation, large-factor tail and singular-series completion | Brüdern--Fouvry 1994 Theorem 3; Brüdern 2014 Theorem 2 and Lemmas 2,4,5 | Classical architecture; the full Gaussian two-block power-saving asymptotic is already a short deduction. |
 | Arbitrary fixed binary pair, each block primitive, every locally admissible target | Rouse/Waibel coefficient estimates plus the two-block sieve; no exact statement antecedent located | A useful application/deduction, with priority unresolved; no new theta theorem. |
 | All imaginary quadratic orders and invariance within fixed genera | The preceding arbitrary-binary-pair theorem and integral local isometries | Explicit class-group consequence, with no class-number restriction; an immediate corollary, not a new analytic input. |
 | Power saving | Waibel 2021 v2, published 2022, is stronger than the previously used Rouse bound | Now improved to \(O_\epsilon(N^{7/8+\epsilon})\), by specialization and target-gcd averaging. |
@@ -132,7 +390,7 @@ Theorem 2 proves a power-saving asymptotic for four positive squares with all si
 
 This establishes that the sieve architecture and even stronger coprimality graphs were already used in the four-square case. It does not state the arbitrary-binary-pair theorem. Four-square all-six-gcd conditions do not imply two-block asymptotics on every two-block-admissible target: the admissible sets differ. Deleting four gcd restrictions is a fresh counting deduction, even for that special quadratic form.
 
-Schinzel's On Sums of Four Coprime Squares (2013), cited by Brüdern, is a prior existence result in the same special setting; it is not an arbitrary-form representation theorem.
+Schinzel's On Sums of Four Coprime Squares (2013), cited by Brüdern, goes further than this comparison previously recorded: its final paragraph on printed p.111 explicitly imposes the two designated Gaussian block gcds on the entire eventual local range. It is a direct special-case antecedent, while remaining outside the arbitrary-form coordinate asymptotic. The targeted review above also records the complete Gaussian asymptotic deduction from Brüdern--Fouvry 1994.
 
 ### 2 Rouse and earlier quaternary theta theory
 
@@ -422,14 +680,21 @@ No general every-target distinct-value leading asymptotic was identified in the 
 
 ## Publication scope
 
-A defensible presentation should lead with the exact -8 theorem and
+For a paper centered on the arbitrary-binary-pair theorem, the
+candidate contribution is its precise general separately primitive
+statement, quantitative error and arithmetic consequences. The
+targeted comparison above controls that claim: Gaussian existence
+and the Gaussian asymptotic have classical antecedents. Present
+the theorem as a deduction from classical estimates, with historical
+priority unresolved; the absence of an identified exact match is
+not a first-result certificate.
+
+A separate paper centered on the exact -8 theorem could lead with
 its two strong-core identities if historical checking continues to
-support their originality. Present the broad pair-primitive asymptotic
-as a separately useful deduction from classical theta estimates,
-with the Waibel-based error and exact local factors. The effective
-sieve and complete interval/finite bridge are a separate part of the
-contribution; the numerical onset alone is no longer the main
-existence statement once every admissible target is classified.
+support their originality. The complete effective finite bridge is
+a distinct part of that candidate contribution. The numerical onset
+alone is not the main existence statement once every admissible
+target is classified.
 
 Attribute the unrestricted shell formula to Liouville and its
 quaternionic derivations to the inspected classical sources. Attribute

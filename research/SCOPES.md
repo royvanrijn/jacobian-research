@@ -5084,7 +5084,7 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums and primitive Eisenstein norm sumsets have a separate internally complete manuscript.
 
-**Computed obligation progress:** 68 open; 5 proved / discharged.
+**Computed obligation progress:** 69 open; 5 proved / discharged.
 
 **Authored scope assessment:** For every fixed imaginary quadratic order, with arbitrary class group, primitive principal norm self-sums contain every sufficiently large pair-primitive locally admissible target. The local set is periodic with an explicit conductor-sensitive modulus; PL3All gives a closed table for every maximal order. Within fixed genera, finer class data leave the full leading coordinate convolution unchanged, with O_epsilon(N^(7/8+epsilon)) difference. This is an explicit consequence of the existing quaternary theorem; numerical general cutoffs and unweighted leading constants remain open.
 
@@ -5253,6 +5253,8 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** For discriminant-56, individualclassfailures are a pointwise lower-order additive term: R_L-R_P<<N J_-56(N)/log^(5/4)N uniformlyallN>=3, henceR_P/R_L=1+O(log^(-1/4)N) on every sufficientlylarge49-admissibletarget. The proof usesathin-square envelope, exactuniformCRT, self-containedSelbergoptimization andfixedAPMertens. Thistransfersanyfuturegenusleadingasymptotic, butdoesnotcomputeone. The prime-discriminantcounttheorem also dropsitsredundantodd-class-numberhypothesis viaaclassicalfractionalideal proof.
 
 **Authored scope assessment:** Discriminant-7 now has the exact binary identity P+P={N>=2:49 not dividingN} minus{7,77,203}; its split core has exceptions11,29. Complete finite/infinite quaternionic sieve certificates and exceptional-quotient descent establish global completeness, with at leastN^(2/3)/20000 ordered value pairs on every eligibleN>=2^69. Internal proof review and byte-identical finite replay do not assert external review, formal verification or priority.
+
+**Authored scope assessment:** Targeted historical comparison credits the full Gaussian primitive-block asymptotic to a short Brudern-Fouvry1994 deduction, explicit Gaussian existence to Schinzel2013 and eventual discriminant -20 existence to Plaksin. No exact arbitrary-binary-pair antecedent was identified in the inspected primary corpus; historical priority remains open, with named unread leads and genuine database-access limits. This changes the novelty scope, not the mathematical theorem or its assurance.
 
 ### ARITHMETIC-COMMON-ARITHMETIC-FIBERS
 
@@ -7711,6 +7713,7 @@ Tracked obligations from the catalogue:
 - **GAP-PRIMITIVE-NORM-EXACT-20** (mathematical; open): Prove or disprove P_-20+P_-20={N>=2:Nmod8in{2,3,4,6,7}} minus{3,4}. Exceptions3,4 are actual; no further exceptions through2^24. Eventual existence and N J(N)/logN counts are proved, but no numerical global onset or all-range finite completion is supplied.
 - **GAP-PRIMITIVE-NORM-EXACT-23** (mathematical; open): Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen.
 - **GAP-PRIMITIVE-NORM-EXACT-56** (mathematical; open): Proveorrefute globalcompleteness ofthe118admissibleexceptionsinCN4Finite. Everytarget2..2^24 isclassified, largestexception8876, andeventualN J_-56(N)/logN countsareproved; nonumericalcutoff provesabsenceoffurtherexceptionsabove2^24. Individualmillion-indexaudits donotclose thisbinarygap.
+- **GAP-PAIR-PRIMITIVE-HISTORICAL-PRIORITY** (workflow; open): Determine whether the exact arbitrary positive binary-pair theorem, or a short deduction covering every primitive-local target with a coordinate asymptotic, already occurs in the remaining primary genealogy. The inspected corpus settles classical Gaussian and discriminant -20 overlaps but does not certify priority. This is a publication/history obligation, not a missing premise of the proved mathematical theorem.
 
 Tracked obligations from the catalogue:
 

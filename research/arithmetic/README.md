@@ -122,7 +122,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Exact bounded primitive discriminant -56 binary exceptions | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md) |
 | C4 class obstructions contribute a lower-order additive term | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md) |
 
-**Computed obligations:** 68 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 69 unresolved; 5 resolved within their exact scope.
 
 
 Scope limits:
@@ -211,6 +211,7 @@ Scope limits:
 - The primitive x^2+14y^2 binarysumset isexactlyclassifiedthrough2^24:118actualadmissibleexceptions,max8876, with2507shortanchors coveringallpositivecases and118exhaustivenegatives. Globalexceptioncompleteness remainsopen. Ramifiedcoordinateidentities switchprincipal/class-two forms withgcdguards; 7M liesinP0+P0 exactlywhenM liesinU2+U2.
 - For discriminant-56, individualclassfailures are a pointwise lower-order additive term: R_L-R_P<<N J_-56(N)/log^(5/4)N uniformlyallN>=3, henceR_P/R_L=1+O(log^(-1/4)N) on every sufficientlylarge49-admissibletarget. The proof usesathin-square envelope, exactuniformCRT, self-containedSelbergoptimization andfixedAPMertens. Thistransfersanyfuturegenusleadingasymptotic, butdoesnotcomputeone. The prime-discriminantcounttheorem also dropsitsredundantodd-class-numberhypothesis viaaclassicalfractionalideal proof.
 - Discriminant-7 now has the exact binary identity P+P={N>=2:49 not dividingN} minus{7,77,203}; its split core has exceptions11,29. Complete finite/infinite quaternionic sieve certificates and exceptional-quotient descent establish global completeness, with at leastN^(2/3)/20000 ordered value pairs on every eligibleN>=2^69. Internal proof review and byte-identical finite replay do not assert external review, formal verification or priority.
+- Targeted historical comparison credits the full Gaussian primitive-block asymptotic to a short Brudern-Fouvry1994 deduction, explicit Gaussian existence to Schinzel2013 and eventual discriminant -20 existence to Plaksin. No exact arbitrary-binary-pair antecedent was identified in the inspected primary corpus; historical priority remains open, with named unread leads and genuine database-access limits. This changes the novelty scope, not the mathematical theorem or its assurance.
 
 Tracked obligations (computed states):
 

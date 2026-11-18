@@ -198,14 +198,15 @@
     "date": "2026-11-18",
     "report": "PRIMITIVE_NORM_NOVELTY.md",
     "scope": "General pair-primitive theorem and exact -8 classification; -11 supplementary context only.",
-    "verdict": "Method and principal analytic inputs are classical. Full arbitrary-pair statement not located verbatim: useful deduction, priority unverified. Exact -8 classification is main candidate contribution; whole-vector primitive support and shell formulas are already Liouville1860. Both eventual -8 strong cores and all eventual P8+P8 existence already follow from the inspected classical Plaksin theorem via the Gaussian parity lift; exact all-target completion remains the candidate contribution.",
+    "verdict": "Method and principal analytic inputs are classical. Full arbitrary-pair statement not located verbatim: useful deduction, priority unverified. Exact -8 classification is main candidate contribution; whole-vector primitive support and shell formulas are already Liouville1860. Both eventual -8 strong cores and all eventual P8+P8 existence already follow from the inspected classical Plaksin theorem via the Gaussian parity lift; exact all-target completion remains the candidate contribution. The subsequent exact two-block historical review identifies a full Gaussian power-saving asymptotic as a short Brudern-Fouvry1994 deduction, direct Schinzel2013 Gaussian existence, full eventualD20 existence from Plaksin, and earlier class-mixing mechanisms. It found no exact arbitrary-pair antecedent in its inspected primary corpus, without a priority certificate.",
     "applications": [
       "WaibelLemma15 plus target-gcd averaging: O_epsilon(N^(7/8+epsilon)), every eta<1/8, explicit1/9.",
       "Corrected HenriotNewTheorem5 plus fractional Holder: V(N)>>N/(logN)^(log4+epsilon); upper V(N)<<NJ12(N)/logN, uniformly all valuations.",
       "Plaksin1984/1985 with Q8 and Gaussian forms, the integral parity map, prime-coordinate gcd deletion and doubling: ALL eventual strong-core and P8+P8 coverage, with coordinate counts >>N/log²N. No numerical onset here.",
       "Fixed-content binary forms also covered after dividing bounded h|lcm(c1,c2)."
     ],
-    "limits": "No exhaustive MathSciNet/zbMATH review, author consultation, external human review, or priority certification; no arbitrary-form unweighted leading asymptotic."
+    "limits": "No exhaustive MathSciNet/zbMATH review, author consultation, external human review, or priority certification; no arbitrary-form unweighted leading asymptotic.",
+    "targeted_review_status": "Completed for the explicitly recorded primary corpus; full arbitrary-pair priority unresolved."
   },
   "novelty_primary_sources": [
     {
@@ -288,7 +289,8 @@
       "sha256": "fd56b40f4d4ef328be213099521351d596bfa11fcaefd382b00ff445ee54926b",
       "role": "mathematical_input",
       "statements_used": [
-        "Introductionp551: phi primitive, psi fundamental discriminant; main theoremp562, finite prime-unit congruence18. Apply phi=psi=Q8 for odd core and phi=psi=Gaussian for even core; integral parity bijection and gcd deletion give both eventual cores and ALL eventual M8 existence. Main term >>N/log²N with uniform singular-product lower bound; no numerical onset asserted."
+        "Introductionp551: phi primitive, psi fundamental discriminant; main theoremp562, finite prime-unit congruence18. Apply phi=psi=Q8 for odd core and phi=psi=Gaussian for even core; integral parity bijection and gcd deletion give both eventual cores and ALL eventual M8 existence. Main term >>N/log²N with uniform singular-product lower bound; no numerical onset asserted.",
+        "Targeted two-block review: the same theorem also yields all eventual primitive Q=x^2+5y^2 targets Nmod8 in{2,3,4,6,7}, by regrouping and square-root gcd deletion; free second form fundamental, not assumed primitive in coordinates."
       ],
       "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
     },
@@ -431,6 +433,184 @@
         "Equation1.1 attributes full-shell formula to Liouville. Definition1 uses gcd over Z[sqrt(-2)] of the two components; it is incomparable with separate rational-coordinate primitivity, as verified by explicit examples."
       ],
       "inspection_scope": "Actual primary definition and introduction inspected internally; no transfer of its primitive condition to the two-block condition."
+    },
+    {
+      "key": "brudern_fouvry_1994",
+      "author": "Jorg Brudern and Etienne Fouvry",
+      "title": "Lagrange's four squares theorem with almost prime variables",
+      "version": "J.Reine Angew.Math.454(1994),59-96",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0454/LOG_0006.pdf",
+      "role": "classical_attribution",
+      "statements_used": [
+        "Theorem3 printedpp61-62; proof ends p74: absolute remainder sum for arbitrary overlapping squarefree coordinate divisibilities, all positive targets. Definitions pp61-63 and local factors pp74-79 include2,3,common divisors and target prime powers. The n4mod24 restriction belongs to the later application, not Theorem3."
+      ],
+      "inspection_scope": "Actual theorem images and definitions, printedpp59-65,74-75,78-80, inspected; full public GDZ OCR searched for broader interfaces. The Gaussian two-block deduction is written separately in the review. Deep circle-method proof imported, not independently reproved.",
+      "local_path": "sources/brudern-fouvry-almost-prime-squares-1994.pdf",
+      "sha256": "b3c9d03818a66c306ba4da321ed6044b19e8816356e28d292b3c2e2a239b1fb5",
+      "doi": "10.1515/crll.1994.454.59"
+    },
+    {
+      "key": "schinzel_2013",
+      "author": "Andrzej Schinzel",
+      "title": "On Sums of Four Coprime Squares",
+      "version": "Bull.Polish Acad.Sci.Math.61(2013),109-111",
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/85614",
+      "role": "classical_attribution",
+      "statements_used": [
+        "Final paragraph printedp111 explicitly gives eventual n not0,1,5mod8 with odd prime coordinates x1,x2 and gcd(x1,x3)=gcd(x2,x4)=1. This is direct designated-block Gaussian existence, beyond its all-six-gcd Theorem2."
+      ],
+      "inspection_scope": "Actual three-page article inspected, including definition, deletion proof and exact final paragraph; PDF has four pages.",
+      "local_path": "sources/schinzel-coprime-squares-2013.pdf",
+      "sha256": "7f9e511bc75a144026b94fd3b2d4055a71df99c70db20d9e31db1ba1e5b2b91e",
+      "doi": "10.4064/ba61-2-3"
+    },
+    {
+      "key": "podsypanin_1975",
+      "author": "E.V.Podsypanin",
+      "title": "On the representation of the integer by positive quadratic forms with square-free variables",
+      "version": "Acta Arith.27(1975),459-488",
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa27/aa27127.pdf",
+      "role": "comparison",
+      "statements_used": [
+        "Theorem1 printedp459: arbitrary fixed positive integral forms in k>=4 with individually squarefree coordinates; k4 error19/20+epsilon. Definitions and Mobius expansion pp460-463 use scalar square scalings f(t1^2 x1,...,tk^2 xk). Theorem2 p487 gives coordinate-squarefree local positivity."
+      ],
+      "inspection_scope": "Actual original scan pp459-463 and482-487 inspected; correct archive URL resolved earlier403. Not a joint block-gcd theorem.",
+      "local_path": "sources/podsypanin-squarefree-coordinates-1975.pdf",
+      "sha256": "60aa5f735e8432d12e89ecbb68c87cc4b85c7b69abf1ada0cf0a6596377bdce6",
+      "doi": "10.4064/aa-27-1-459-488"
+    },
+    {
+      "key": "baker_2006",
+      "author": "Roger C.Baker",
+      "title": "The values of a quadratic form at square-free points",
+      "version": "Acta Arith.124(2006),101-137",
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/83715",
+      "role": "comparison",
+      "statements_used": [
+        "Definition1.2 printedpp101-102: product of individual coordinate Mobius functions, vanishing on coordinate hyperplanes. Theorem1 p104: arbitrary fixed nonsingular quadratic forms in n>=4 and nonzero varying target; Theorem5 local positivity. No general graph/gcd interface."
+      ],
+      "inspection_scope": "Actual primary theorem, definitions and relevant sieve setup inspected. The explicit Q=x^2+16y^2 local-range counterexample in the review prevents a direct specialization claim.",
+      "local_path": "sources/baker-squarefree-points-2006.pdf",
+      "sha256": "7ce84242c84b800711ede223eaafab27668b93589f360347f2829671e5c98767",
+      "doi": "10.4064/aa124-2-1"
+    },
+    {
+      "key": "bredikhin_1965",
+      "author": "B.M.Bredikhin",
+      "title": "The dispersion method and definite binary additive problems",
+      "version": "Russian Math.Surveys20:2(1965),85-125; Russian original UMN20:2,89-130",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=rm&option_lang=eng&paperid=5998&what=fullteng",
+      "role": "comparison",
+      "statements_used": [
+        "Theorems3.1.1 p100,4.1.1 p110,5.1.1 p114 respectively concern prime-plus-product, divisor convolutions, and a prime-plus-form lower bound. Section1.3 pp89-92 and pp115-116 clear rational denominators and inflate norms without preserving primitive coordinates."
+      ],
+      "inspection_scope": "All main theorem statements and relevant definitions/interfaces inspected in actual English41-page source; p114 rendered to check OCR omissions. Not an arbitrary-sequence primitive two-form theorem.",
+      "local_path": "sources/bredikhin-dispersion-1965.pdf",
+      "sha256": "a9d52c53adab97d1d1583a71c10d988e7b3824c651409a23947544a2f3522eef",
+      "doi": "10.1070/RM1965v020n02ABEH001170"
+    },
+    {
+      "key": "bredikhin_linnik_1966",
+      "author": "B.M.Bredikhin and Yu.V.Linnik",
+      "title": "Asymptotic behavior and ergodic properties of solutions of the generalized Hardy-Littlewood equation",
+      "version": "Mat.Sb.(N.S.)71(113):2(1966),145-161",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=sm&option_lang=eng&paperid=4257&what=fullt",
+      "role": "comparison",
+      "statements_used": [
+        "Introduction pp145-147 lists the binary-sequence problem but explicitly specializes this paper to prime plus one norm. TheoremsA-C pp148-149 count unrestricted integral ideals. Lemma5,(3.31),pp157-160 supplies exact-v1 split-prime class mixing; primitive residual ideals preserve its flips, an immediate proof specialization."
+      ],
+      "inspection_scope": "Actual17-page Russian primary inspected, especially theorem hypotheses, ideal counts and good/bad trajectory proof. This anticipates class mixing but does not supply the missing primitive genus convolution or second-sequence bad-trajectory bound.",
+      "local_path": "sources/bredikhin-linnik-ergodic-1966.pdf",
+      "sha256": "e2702cd337af5fffefa22391102b50903c7d737191ac243fef9c5cbdb30899c0"
+    },
+    {
+      "key": "bredikhin_linnik_announcement_1966",
+      "author": "B.M.Bredikhin and Yu.V.Linnik",
+      "title": "Binary additive problems with ergodic properties of the solutions",
+      "version": "Dokl.Akad.Nauk SSSR166:6(1966),1267-1269",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=dan&option_lang=eng&paperid=32097&what=fullt",
+      "role": "comparison",
+      "statements_used": [
+        "Theorems1-2 pp1267-1268 count prime plus an unrestricted Gaussian norm with angular/region constraints. Section4 p1269 advertises well-distributed a_k generalizations without a quantified two-block theorem."
+      ],
+      "inspection_scope": "All three original Russian pages inspected. No arbitrary-sequence theorem or separate primitive coordinate filter is inferred from the final discussion.",
+      "local_path": "sources/bredikhin-linnik-binary-1966.pdf",
+      "sha256": "2dac2f46824518b7ffa39bfa39290fb9559aa69f442400db9c487199b1d8695e"
+    },
+    {
+      "key": "vinogradov_1967",
+      "author": "A.I.Vinogradov",
+      "title": "General Hardy-Littlewood equation",
+      "version": "Mat.Zametki1:2(1967),189-197; English Math.Notes1:2,127-132",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=mzm&option_lang=eng&paperid=5372&what=fullt",
+      "role": "comparison",
+      "statements_used": [
+        "Theorem printedp190 gives prime-plus-one-norm angular counts. P192 retains all split allocations and inert square factors. Finalp196 discusses arbitrary well-distributed sequences conditional on further main-term and sum(14) estimates."
+      ],
+      "inspection_scope": "All nine original Russian pages inspected from actual retained PDF. The initial HTML response is resolved; no unread-source exclusion is used.",
+      "local_path": "sources/vinogradov-hardy-littlewood-1967.pdf",
+      "sha256": "bc223b9e67fda252d253ce19be0cf6323bb7839a7adcbcc7cd64f277c5239caa",
+      "doi": "10.1007/BF01268062"
+    },
+    {
+      "key": "pall_1949",
+      "author": "Gordon Pall",
+      "title": "Representation by Quadratic Forms",
+      "version": "Canadian J.Math.1(1949),344-364",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A5A41E7F9EC727D7369FE3A15E9046E3/S0008414X00037147a.pdf/representation_by_quadratic_forms.pdf",
+      "role": "comparison",
+      "statements_used": [
+        "Definition p346: gcd of maximal minors. Theorem2 p349 and Section6 p353 concern primitive sublattice embeddings/complements, not two prescribed binary block gcds."
+      ],
+      "inspection_scope": "Actual definitions and relevant theorem statements inspected; no claim that every intermediate result was excluded. Unread related1946/1949 papers remain identified leads.",
+      "local_path": "sources/pall-representation-1949.pdf",
+      "sha256": "63d74cff02972150a0461897a8bba2f5433b32986dc897a4999d4b8ed11a4755",
+      "doi": "10.4153/CJM-1949-032-9"
+    },
+    {
+      "key": "alaca_binary_2014",
+      "author": "Saban Alaca, Lerna Pehlivan and Kenneth S.Williams",
+      "title": "On the number of representations of a positive integer as a sum of two binary quadratic forms",
+      "version": "International J.Number Theory10:6(2014),1395-1420",
+      "url": "https://people.math.carleton.ca/~williams/papers/pdf/351.pdf",
+      "role": "comparison",
+      "statements_used": [
+        "Definition printedp1396 counts all Z^4 coordinates without gcd conditions. Theorem1.1 pp1397-1399 reduces selected coefficient families to diagonal unrestricted counts. It does not give the arbitrary two-block primitive asymptotic."
+      ],
+      "inspection_scope": "Actual primary definition and theorem hypotheses inspected. This is a title near-match with a different counting function.",
+      "local_path": "sources/alaca-pehlivan-williams-binary-sums-2014.pdf",
+      "sha256": "566f218df12b6e06d472fc24874cd14d1977d299eb10292938afa05e6d122be9",
+      "doi": "10.1142/S1793042114500353"
+    },
+    {
+      "key": "estermann_1951_firstpage",
+      "author": "T.Estermann",
+      "title": "On Sums of Squares of Square-Free Numbers",
+      "version": "Proc.London Math.Soc.(2)53(1951),125-144; opening page received/read1948",
+      "doi": "10.1112/plms/s2-53.2.125",
+      "url": "https://londmathsoc.onlinelibrary.wiley.com/cms/asset/480fe45c-09af-4cf0-975d-752bd4bdcd13/plms_s2-53.2.125.fp.png",
+      "inspection_scope": "Actual publisher FIRST-PAGE image read. Full PDF, later numbered results, error estimates and proof remain uninspected.",
+      "local_path": "sources/estermann1951-firstpage.png",
+      "sha256": "88b070e39926eef81188437a12cefdf138a9d2df7aa7d69bf1e684d5348b41aa",
+      "role": "comparison",
+      "statements_used": [
+        "Printedp125 only: Theorems1-2, individually squarefree positive coordinates; s>=5 under modulo32 condition A, all large targets when s>=8."
+      ]
+    },
+    {
+      "key": "estermann_1962_firstpage",
+      "author": "T.Estermann",
+      "title": "A New Application of the Hardy-Littlewood-Kloosterman Method",
+      "version": "Proc.London Math.Soc.(3)12(1962),425-444",
+      "doi": "10.1112/plms/s3-12.1.425",
+      "url": "https://oup.silverchair-cdn.com/article-minimal/1437948",
+      "inspection_scope": "Actual publisher FIRST-PAGE image read. This distinguishes its stated main interface; full numbered theorem/error and any later extensions remain uninspected.",
+      "local_path": "sources/estermann1962-firstpage.gif",
+      "sha256": "3557b6aacfa264878eb66bb58298f66deb05c104c86f35c51dd4c18fe85ce328",
+      "role": "comparison",
+      "statements_used": [
+        "Printedp425 only: main problem(1.1)-(1.2), fixed nonzero coefficients and target, mixed-sign coefficients, growing positive boxes; no separate block gcd."
+      ]
     }
   ],
   "class_group_corollaries": {
@@ -451,5 +631,121 @@
       "proof_method": "Exact local value cosets, elementary nonzero-square pair count, square-root lifting, and exhaustive residue algebra for four dyadic parameter classes. The finite checker supplements, rather than replaces, the lifting proof.",
       "nonmaximal_orders": "Retain the full conductor-sensitive finite test; do not transfer the maximal-order valuation rules to conductor primes."
     }
+  },
+  "targeted_two_block_review": {
+    "date": "2026-11-18",
+    "report": "PRIMITIVE_NORM_NOVELTY.md",
+    "locator": "Targeted historical review of the two-block theorem",
+    "comparison_target": "Arbitrary fixed positive primitive binary pairs, prescribed gcd in each block, all locally admissible varying targets and allowed valuations, local main term with a positive power saving. Older relative asymptotics/existence are also material antecedents even without our exact exponent or printed local modulus.",
+    "verified_overlap": [
+      "Full Gaussian pair-primitive coordinate asymptotic with some positive power saving follows shortly from Brudern-Fouvry1994 Theorem3 by divisor vectors(d,d,e,e), elementary tails and local completion.",
+      "Schinzel2013 p111 directly states eventual Gaussian designated-pair existence on the full local range.",
+      "Plaksin1984/1985 implies the full eventual primitive x^2+5y^2 selfsum range by regrouping and a square-root gcd deletion.",
+      "Bredikhin-Linnik1966 supplies a prior exact-v1 prime-orientation class-mixing lemma with a direct primitive-residual specialization."
+    ],
+    "verdict": "No exact arbitrary-pair antecedent or verified short deduction was identified in the inspected primary corpus. This is a bounded targeted comparison, not a certificate that the full theorem was historically unknown. Its method and the listed special cases are classical; priority remains unresolved.",
+    "public_database_access": {
+      "MathSciNet": "No live result set: institutional-authentication page.",
+      "zbMATH": "No live result set: web403 and API timeouts.",
+      "OpenAlex": "Public forward-citation result sets obtained by Python HTTP for Plaksin, Brudern2014, Schinzel2013 and Estermann1951/1962. Sparse counts and duplicate translated records prevent an exhaustive-coverage claim.",
+      "OpenAlex_seed_dois": [
+        "10.1070/IM1985v025n03ABEH001306",
+        "10.4064/ba62-3-3",
+        "10.4064/ba61-2-3",
+        "10.1112/plms/s2-53.2.125",
+        "10.1112/plms/s3-12.1.425"
+      ],
+      "Crossref": "Public Plaksin record obtained; used for bibliographic identity only."
+    },
+    "remaining_uninspected_leads": [
+      "Jones1949 Representations by quadratic forms, DOI10.2307/1969585",
+      "Pall and Ross-Pall1946 papers identified from Pall1949 bibliography",
+      "Estermann1951: opening Theorems1-2 inspected; full article/later results and proof unavailable",
+      "Estermann1962: opening main problem inspected; later theorem/error/extensions unavailable",
+      "R.D.James1938 A Problem in Additive Number Theory, DOI10.1090/S0002-9947-1938-1501944-7; official AMS PDF403"
+    ],
+    "scope_limits": "No external human novelty review, exhaustive review-database search, author consultation, first-result certification or new theta/sieve-technique claim. No external messages sent.",
+    "new_primary_source_keys": [
+      "brudern_fouvry_1994",
+      "schinzel_2013",
+      "podsypanin_1975",
+      "baker_2006",
+      "bredikhin_1965",
+      "bredikhin_linnik_1966",
+      "bredikhin_linnik_announcement_1966",
+      "vinogradov_1967",
+      "pall_1949",
+      "alaca_binary_2014"
+    ],
+    "online_primary_comparisons": [
+      {
+        "key": "jancevskis_2009",
+        "author": "Martin Jancevskis",
+        "title": "A note on Waring's problem with convergent sieve sequences",
+        "version": "Uniform Distribution Theory4:2(2009),133-151",
+        "url": "https://pcwww.liv.ac.uk/~karpenk/JournalUDT/vol04/no2/8Jancev09.pdf",
+        "locator": "Standing hypothesis s>2^k before Theorem1,pp133-134; Theorem2pp134-135",
+        "inspection_scope": "Full indexed primary PDF text read after direct fetch timeouts. Independent scalar B-free weights; squares require at least5 variables. No joint gcd interface.",
+        "role": "comparison"
+      },
+      {
+        "key": "kane_xue_2024",
+        "author": "Ben Kane and Luhao Xue",
+        "title": "Eisenstein series part of the primitive representations for even rank quadratic forms",
+        "version": "arXiv:2303.18071v2,28August2023; Involve17:5(2024),771-794",
+        "doi": "10.2140/involve.2024.17.771",
+        "url": "https://arxiv.org/pdf/2303.18071v2",
+        "locator": "Theorem1.1 and Section3,especiallyPDFp8; rank4 examples Section5",
+        "inspection_scope": "Actual primary definitions and inversion read: whole-vector gcd, not separate binary block gcds.",
+        "role": "comparison"
+      },
+      {
+        "key": "wessel_zur_verth_2026",
+        "author": "Mieke Wessel and Svenja zur Verth",
+        "title": "Solving quadratic forms in restricted variables with the circle method",
+        "version": "Monatshefte fur Mathematik211(2026),519-550,published9September2026",
+        "doi": "10.1007/s00605-026-02189-z",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13736505/",
+        "locator": "ConditionL1,Remark1.1,Theorems1.8/1.10 and examples8.3/8.4",
+        "inspection_scope": "Full primary text read: off-blockrank>=5 forces at least10variables; scalar-product weights do not impose joint block gcds.",
+        "role": "comparison"
+      }
+    ],
+    "first_page_only_comparisons": [
+      {
+        "key": "estermann_1951_firstpage",
+        "author": "T.Estermann",
+        "title": "On Sums of Squares of Square-Free Numbers",
+        "version": "Proc.London Math.Soc.(2)53(1951),125-144; opening page received/read1948",
+        "doi": "10.1112/plms/s2-53.2.125",
+        "url": "https://londmathsoc.onlinelibrary.wiley.com/cms/asset/480fe45c-09af-4cf0-975d-752bd4bdcd13/plms_s2-53.2.125.fp.png",
+        "locator": "Printedp125 only: Theorems1-2, individually squarefree positive coordinates; s>=5 under modulo32 condition A, all large targets when s>=8.",
+        "inspection_scope": "Actual publisher FIRST-PAGE image read. Full PDF, later numbered results, error estimates and proof remain uninspected.",
+        "local_path": "sources/estermann1951-firstpage.png",
+        "sha256": "88b070e39926eef81188437a12cefdf138a9d2df7aa7d69bf1e684d5348b41aa",
+        "role": "comparison",
+        "statements_used": [
+          "Printedp125 only: Theorems1-2, individually squarefree positive coordinates; s>=5 under modulo32 condition A, all large targets when s>=8."
+        ]
+      },
+      {
+        "key": "estermann_1962_firstpage",
+        "author": "T.Estermann",
+        "title": "A New Application of the Hardy-Littlewood-Kloosterman Method",
+        "version": "Proc.London Math.Soc.(3)12(1962),425-444",
+        "doi": "10.1112/plms/s3-12.1.425",
+        "url": "https://oup.silverchair-cdn.com/article-minimal/1437948",
+        "locator": "Printedp425 only: main problem(1.1)-(1.2), fixed nonzero coefficients and target, mixed-sign coefficients, growing positive boxes; no separate block gcd.",
+        "inspection_scope": "Actual publisher FIRST-PAGE image read. This distinguishes its stated main interface; full numbered theorem/error and any later extensions remain uninspected.",
+        "local_path": "sources/estermann1962-firstpage.gif",
+        "sha256": "3557b6aacfa264878eb66bb58298f66deb05c104c86f35c51dd4c18fe85ce328",
+        "role": "comparison",
+        "statements_used": [
+          "Printedp425 only: main problem(1.1)-(1.2), fixed nonzero coefficients and target, mixed-sign coefficients, growing positive boxes; no separate block gcd."
+        ]
+      }
+    ],
+    "james_1938_scope": "Original article inaccessible. Later primary Dietmann-Elsholtz authorpp1-2 attributes exact three-summand Gaussian split support and a binary approximation allowing at most two bad prime factors per summand. This confirms relevance but neither excludes the full original nor supplies the arbitrary-form two-block asymptotic.",
+    "squarefree_finite_sieve_diagnostic": "Fixed SL2 block basis changes can arrange coordinate-unit solutions at finitely many bad primes, so the direct local-range counterexample alone does not exclude an indirect deduction. However the available elementary large-gcd tail is O_epsilon(N^(1+epsilon)/P), not uniform O(N/P); a fixed cutoff followed by N tending to infinity does not suffice. Growing cutoffs require coefficient/progression uniformity beyond the cited fixed-form statements. No impossibility of adapting their proofs is asserted."
   }
 }

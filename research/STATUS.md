@@ -343,7 +343,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 
 [Topic guide](arithmetic/README.md)
 
-**Computed obligations:** 68 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 69 unresolved; 5 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|

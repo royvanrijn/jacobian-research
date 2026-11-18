@@ -2,7 +2,7 @@
 
 The objective remains a result with major external mathematical impact. None of
 the five unrestricted targets below is resolved by the current repository.
-Primary target: the unrestricted Strong Factorial Conjecture. MRC is deferred after the current fixed-input checkpoint, at the user's request. No secondary target.
+Primary target: the unrestricted Strong Factorial Conjecture. MRC is deferred after the current fixed-input checkpoint, at the user's request. One secondary check: unrestricted Gaussian safety-to-purity through the canonical Wick-marker detection obligation described below.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
 
@@ -655,6 +655,20 @@ and have angular cross terms. This falsifies that broader transfer,
 while leaving ordinary SFC open.
 
 
+Positive real Mellin multiplicities do not provide a replacement transfer.
+The existing mechanism audit constructs positive variables with moments
+(k!)^tau, retaining the canonical log-Gamma negative-jump kernel. There is
+a unique tau* in (1/4,1/3) for which two independent copies, together with
+a constant feature, have their first three phase moments zero. Increasing
+only one fractional multiplicity from 1/4 to tau* changes a regular frame
+to that nonregular frame. Thus continuous Mellin positivity and strict
+polynomial Gram positivity do not preserve the required window.
+The exceptional multiplicity is below one; no actual integer-row inflation
+or interpolation already anchored at multiplicity at least one is refuted.
+The next transfer argument must retain a condition that excludes this
+fractional example.
+
+
 **Single obstruction.** Exclude a common nonzero projective zero of s
 consecutive homogeneous moment forms uniformly over arbitrary exponent
 matrices and every starting n. A concrete discrete transfer scheme would
@@ -673,6 +687,13 @@ moduli of two correlated complex Gaussians: its moments are
 p!q! sum_j binom(p,j)binom(q,j)rho^j, with independent and identified
 rows at rho=0 and rho=1. It retains the integer Wick couplings but
 does not yet supply strict nonvanishing of the consecutive resultant.
+
+The stronger complex-correlation-disk certificate is false on the actual
+integer source features (Y_rho,X Y_rho): their first two forms have
+resultant 2(1+4rho-rho^2), vanishing at 2-sqrt(5) in (-1,0).
+The merged features X,X^2 remain distinct, and the physical endpoints
+have resultants 2 and 8. Thus complex analytic zero-freeness cannot supply
+the missing physical row-merge theorem; real rho in [0,1] remains open.
 
 An all-moment alternative was tested through polynomial infinitesimal
 symmetries of a simplex. It is now excluded in every degree for planar
