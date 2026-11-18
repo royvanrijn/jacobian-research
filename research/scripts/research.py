@@ -495,7 +495,9 @@ def render_bounds(data: dict, graph: DependencyGraph) -> str:
              "<!-- Generated from MATH_STATUS.json; run make render-navigation. -->", "",
              "Bounds retain their exact domains and assumptions. Numeric comparisons use identical "
              "quantities, domains and parameter restrictions; conditional bounds stay separate. "
-             "Symbolic criteria are displayed without guessing implication or asymptotic order.", "",
+             "Symbolic criteria are displayed without guessing implication or asymptotic order. "
+             "Bounds on an explicitly excluded domain remain visible as intermediate proof steps. "
+             "A current proof of exclusion removes those rows from comparisons.", "",
              "[Dependency graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Exact scopes](SCOPES.md)", "",
              "| Claim | State | Quantity | Domain | Bound | Assumptions |", "|---|---|---|---|---|---|"]
     for row in rows:
@@ -503,6 +505,9 @@ def render_bounds(data: dict, graph: DependencyGraph) -> str:
         domain = row["domain"]
         if row.get("parameters"):
             domain += "; " + json.dumps(row["parameters"], ensure_ascii=False, sort_keys=True)
+        if row.get("domain_excluded_by"):
+            label = "domain excluded by " if row["domain_excluded"] else "domain exclusion unavailable: "
+            domain += " (" + label + row["domain_excluded_by"] + ")"
         lines.append("| " + markdown_cell(row["id"]) + " | " + row["state"] + " | "
                      + markdown_cell(row["quantity"]) + " | " + markdown_cell(domain) + " | "
                      + row["sense"] + ": " + markdown_cell(value) + " | "

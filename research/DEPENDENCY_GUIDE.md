@@ -86,7 +86,10 @@ appear in a bibliography.
 restrictions and units. Numeric comparisons require all these to agree, and
 different conditional assumptions are kept separate. Symbolic criteria and
 asymptotic comparisons require an explicit proved bridge; the tool does not
-guess their order.
+guess their order. For an intermediate bound on a domain later shown to be empty,
+set `domain_excluded_by` to the graph node proving exclusion for that entire domain.
+The bounds table retains the intermediate result. Comparisons omit it only while
+the referenced exclusion has an available unconditional proof.
 
 The phrase *complete scheme-theoretic fibre* denotes the entire fibre scheme.
 The common-arithmetic-fibres manuscript separately uses *full-degree finite-etale

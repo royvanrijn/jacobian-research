@@ -640,6 +640,27 @@ counts of order \(N J_E(N)/(\log N)^{5/4}\), through a separately proved
 small-coefficient family and a positive cofactor construction.
 The two-character second weight produces square-root progression moduli;
 replacing it by a second modulus-12 weight does not fit that proof.
+
+The [subgroup splitting theorem](ASYMMETRIC_SUBGROUP_SPLITTING.md) gives a
+separate mixed quadratic baseline. With \(C_r\) denoting the prime-factor
+semigroup for \(1\bmod r\), its R1 specialization is
+\[
+ \#\{a+b=N:a\in C_4,\ b\in C_3\}
+ \asymp \frac{N}{\log N}
+       \prod_{\substack{p\mid N\\p\equiv11\ (12)}}\frac{p-1}{p-2}
+\]
+for every sufficiently large \(N\equiv0,2,6,8\pmod{12}\). The finite
+residue density is 3 on these four classes and zero elsewhere. This does
+not force both summands into \(C_{12}\): even at \(N\equiv2\pmod{12}\),
+\(25+49=74\) has \(25\in C_4\) and \(49\in C_3\), with neither in
+\(C_{12}\). The extra prime exclusions are \(5\bmod12\) on the first
+side and \(7\bmod12\) on the second. In the R2 local model, either event
+has density \((2p-1)/(p^2-p+1)\) when \(p\nmid N\), and zero when
+\(p\mid N\). Each family has sieve dimension \(1/2\), so together they
+have dimension 1. Starting with \(C_{12}+C_3\) imposes the first
+restriction before the final sieve and leaves one half-dimensional family.
+This compares the two routes; it does not provide their missing joint
+large-coefficient distribution estimate.
 The [semilinear criterion](ASYMMETRIC_SEMILINEAR_SIEVE.md) instead isolates
 a sufficient signed sieve remainder with level \(N^{1/2+\sigma}\),
 \(\sigma>0\). Its local model, parity reduction and small-kernel tail are
@@ -655,7 +676,18 @@ weighted absolute correlation estimate through \(c\le N^\xi\), with
 \(\xi\) chosen before its smaller error saving. The exact kernel identity
 gives an \(L^1\) sieve level \(D=N^{\xi-\delta}\) for every fixed
 \(0<\delta<\xi\). This controls a larger part of the critical remainder;
-the square-root level is still open. The main target remains S12U:
+the square-root level is still open.
+The [sign-transfer analysis](ASYMMETRIC_SIGN_TRANSFER.md) keeps a further
+obligation explicit: transferring the quadratic sign to the second weight
+retains the signed target-dependent model term. Two nonprincipal factors
+and a prefix bound \(O_\nu(X^{1/2+\nu})\) for every \(\nu>0\) do not remove
+its additive main. The
+unrestricted coefficient convolution reconstructs the desired modulus-12
+second weight. Replacing the remaining prime-supported coefficient by any
+fixed-periodic function has full-order mean-square error, even before the
+Rosser selector becomes nontrivial. These are specific simplification
+obstructions, not a cancellation estimate or a counterexample to binary
+coverage. The main target remains S12U:
 every sufficiently large \(N\equiv2\pmod{12}\) is a sum of two members of
 \(C_{12}\), without a balance restriction. Seek a pointwise lower bound for
 \[

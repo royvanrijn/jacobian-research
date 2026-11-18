@@ -39,12 +39,88 @@ is uniform; finite exact replays only control its formulas.
 lift through a different deformation, or prove a universal obstruction to
 such algebraization. Higher congruence compatibility alone supplies neither.
 The radial construction is excluded by an exact function-field degree
-comparison, not merely by a failed coefficient search.
+comparison. The stronger [critical-genus obstruction](jacobian/mixed-characteristic-lifting/BGV_CRITICAL_GENUS_AND_RATIONAL_CORRECTIONS.md)
+now excludes EVERY dominant rational source correction of the fixed integer
+seed, even with an arbitrary dominant rational target correction. Its unique
+critical curve has positive genus and ramification index two. This is an
+all-degree field-geometric obstruction, not a bounded ansatz search.
+The next useful action must change the seed's finite extension or use an
+algebraic correction with a proved polynomial landing; another rational
+normalization of that seed cannot resolve JC2.
 
 **Impact test.** An actual plane pair or a universal impossibility theorem
 would settle the remaining characteristic-zero conjecture. The radial
 lifting theorem is useful route evidence, not achievement of that impact.
 Further digits or optimal finite-lift degrees are not the next objective.
+
+### Rejected transfer shortcuts: formal boundary data
+
+A different JC2 proposal asks for a global polynomial Darboux pair on
+`A_m=C[y,u,v]/(y^m v-u(u-1))`, for some `m>=2`. Its nowhere-vanishing
+form is `Omega=dy wedge du/y^m`; the corresponding brackets are
+`{y,u}=y^m`, `{y,v}=2u-1`, `{u,v}=m y^(m-1)v`.
+The issue is a SINGLE global pair with `{F,G}=1`. Exactness of the form,
+a sum of brackets equal to one, and solvability of all boundary jets
+do not supply that pair. Such a pair would disprove JC2: the chart
+`j(y,s)=(y,sy^m,s(sy^m-1))` pulls `Omega` back to `dy wedge ds`.
+If the restricted Keller map were an automorphism, `s` would belong to
+`j* A_m`. Its global extension would satisfy `y^m s=u`, impossible on
+the omitted line `y=0,u=1`.
+
+Here is an explicit internal countercheck against the boundary-jet
+shortcut, uniform in `m`. Work in the y-adic completion of `A_m` and set
+
+```text
+q=2u-1,  B=1+4y^m v=q^2,
+epsilon=q B^(-1/2),
+R=sum_(k>=0) binom(-1/2,k) 4^k v^k y^(mk+1)/(mk+1),
+r=epsilon R,
+h=(2/3)(sqrt(1+3r)-1),
+F=v^2-1-h,  G=v^3-v-(3/2)vh.
+```
+
+All square roots have constant term one. Since `epsilon^2=1`,
+`d epsilon=0`, and `R_y=B^(-1/2)`, one has
+`dr wedge dv=dy wedge dv/q=Omega`. Also
+`r=h+3h^2/4`, and direct differentiation gives
+`dF wedge dG=(1+3h/2)dh wedge dv=Omega`.
+Thus `{F,G}=1` as a formal identity.
+
+On BOTH boundary components `y=0,u=0` and `y=0,u=1`, the pair restricts
+to `gamma(v)=(v^2-1,v^3-v)`. This is an immersion because its derivatives
+`2v` and `3v^2-1` have no common zero, but
+`gamma(1)=gamma(-1)=(0,0)`. For every `N>=1`, choose compatible global
+representatives `F_N,G_N` modulo `y^(N+1)`. They exist by the definition
+of completion, and satisfy `{F_N,G_N}=1 mod y^N`: the bracket lowers
+y-adic order by at most one. Nevertheless this particular formal `F`
+is not in `A_m`. On the closed line `v=0,u=0` it becomes
+`-1-(2/3)(sqrt(1-3y)-1)`, which is not a polynomial, since a square
+polynomial cannot have the simple zero of `1-3y`.
+
+For `m=2` the same check also tests a proposed invariance shortcut.
+The conformally symplectic self-map
+`H(y,u,v)=(y(2u-1),(2u-1)^2,4v)` has `H*Omega=4Omega`.
+Its boundary action is `u -> 1, v -> 4v`. If `H*G` belonged to
+`C[F,G]`, evaluation at the boundary points `v=1,-1` would give
+the same value. Its actual values are `60,-60`. So even this exact
+formal Darboux pair need not generate an H-stable subalgebra.
+No assertion about automatic stability of GLOBAL polynomial pairs
+follows from this formal countercheck.
+
+The displayed all-order identities are a written argument; exact
+truncation checks at `(m,N)=(2,3),(2,5),(3,4),(5,4)` are finite controls
+only. They do not exclude another formal pair that terminates, another
+global polynomial pair, or JC2 counterexamples. The missing step remains
+a GLOBAL polynomial construction or obstruction. Further boundary jets,
+or a stability claim based only on these local data, do not remove it.
+No new full-conjecture result or independent review is claimed here.
+
+A separate source check also prevents importing a general
+rational-component inversion theorem from
+[Assi's arXiv:1807.03991](https://arxiv.org/abs/1807.03991):
+the author withdrew it in 2019 because the main argument was incomplete.
+Any use of a valid rational-fibration inversion theorem must retain its
+additional hypotheses.
 
 ## Restricted-prime sums: secondary alternative
 

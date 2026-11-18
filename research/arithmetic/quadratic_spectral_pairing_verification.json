@@ -1,0 +1,138 @@
+{
+  "assurance": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "independent_external_replay": false
+  },
+  "degree12_accessory": {
+    "constant": -22,
+    "degree": 5,
+    "leading": "2*t2^5"
+  },
+  "jets_and_norm": {
+    "D_double_zero_without_differentiating_a": true,
+    "critical_trace_jets": true,
+    "natural_norm_simple_q_zeros": true,
+    "nonconstant_norm_Pell_identity": true
+  },
+  "positive_degree8_control": {
+    "D_over_q_squared": "2*r**3 - 302*r**2/21 + 2843*r/98 - 14",
+    "N_coefficients_ascending": [
+      "-1/5488",
+      "233/5292",
+      "9/28",
+      "1",
+      "1"
+    ],
+    "all_critical_points_real": false,
+    "eta": "-268/2401",
+    "good_criterion_and_inverse": true,
+    "kappa": "-2/9261",
+    "natural_norm_has_simple_q_zeros": true,
+    "q": "r**2 - 4*r/21 + 1/196",
+    "scope": "Known degree8 boundary model; no degree12 existence claim.",
+    "smooth_quadratic_spectral_extension": true,
+    "theta": "r**2 - 46*r/21 - 95/588"
+  },
+  "python": "3.12.3",
+  "real_and_arithmetic_controls": {
+    "controls_are_not_degree12_pencils": true,
+    "no_real_point_control": [
+      -1,
+      1,
+      -1
+    ],
+    "nontorsion_mark_control": {
+      "B_mod5_order": 4,
+      "E_counts": {
+        "3": 6,
+        "5": 8
+      },
+      "good_discriminant": -256,
+      "parameters": [
+        1,
+        2,
+        2
+      ],
+      "prime_to3_reduction_contradiction": true
+    },
+    "singular_equality_threshold": true,
+    "strict_real_gate_controls": 4
+  },
+  "result": "PASS",
+  "schema_version": 1,
+  "scope_limits": [
+    "Implicit exact coefficient locus, not a rational parametrization.",
+    "No rational degree12 or degree26 existence theorem.",
+    "Elliptic divisor claims require t0*t2*(b^2-4*alpha)!=0.",
+    "The displayed divisor relations alone impose no torsion relation.",
+    "Possible additional torsion consequences of full equations remain unproved.",
+    "The square-root genus-one cover may have no rational point."
+  ],
+  "sha256": {
+    "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+    "research/arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md": "dc9c01e3796302d6d5477334aa22ee734e8115342e6c2336eff1e4fb0add7de2",
+    "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md": "50eb65960c03f54a8406620e11dbfefafdeed48c7b314d5ad13f6d82c81b7a8d",
+    "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+    "research/arithmetic/verify_quadratic_spectral_pairing.py": "03617af0db2ebcc3db83c470866d05f28ae6461316beb6b45fa0618c94aefeb4"
+  },
+  "spectral_transform": {
+    "discriminant": "16*alpha^2*(b^2-4*alpha)",
+    "marked_points_and_R_numerator_norm": true,
+    "weierstrass_identity": true
+  },
+  "sympy": "1.14.0",
+  "trace_degree_controls": [
+    {
+      "D_degree": 1,
+      "D_leading_coefficient": "2",
+      "numerator_degree": 1
+    },
+    {
+      "D_degree": 3,
+      "D_leading_coefficient": "2*t2",
+      "numerator_degree": 2
+    },
+    {
+      "D_degree": 5,
+      "D_leading_coefficient": "2*t2**2",
+      "numerator_degree": 3
+    },
+    {
+      "D_degree": 7,
+      "D_leading_coefficient": "2*t2**3",
+      "numerator_degree": 4
+    },
+    {
+      "D_degree": 9,
+      "D_leading_coefficient": "2*t2**4",
+      "numerator_degree": 5
+    },
+    {
+      "D_degree": 11,
+      "D_leading_coefficient": "2*t2**5",
+      "numerator_degree": 6
+    },
+    {
+      "D_degree": 13,
+      "D_leading_coefficient": "2*t2**6",
+      "numerator_degree": 7
+    },
+    {
+      "D_degree": 15,
+      "D_leading_coefficient": "2*t2**7",
+      "numerator_degree": 8
+    },
+    {
+      "D_degree": 17,
+      "D_leading_coefficient": "2*t2**8",
+      "numerator_degree": 9
+    },
+    {
+      "D_degree": 19,
+      "D_leading_coefficient": "2*t2**9",
+      "numerator_degree": 10
+    }
+  ],
+  "uniform_written_proof_required": true
+}

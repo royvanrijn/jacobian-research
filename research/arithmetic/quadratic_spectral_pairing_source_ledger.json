@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md",
+  "claims": {
+    "exact_pairing_criterion": "Theorem1 is a uniform implicit equivalence on the stated good open set: q|D and d*C^2=κ(R−eta) modulo q, with Euler reconstruction; q^2|D follows.",
+    "accessory_divisor": "For t2!=0, degD=4h−1 and D=q^2U with degU=2h−1; at h3 the accessory has degree5, constant−22 and leading2*t2^5.",
+    "elliptic_gate": "On the smooth t0*t2!=0 stratum, divu=2T2−2O and divR=T2+(B+T2)−O−B; the displayed forced divisor classes are identities and do not themselves give a torsion relation.",
+    "natural_norm": "The q zeros of J+κR(R−eta) are simple, so the natural identity is not a constant-norm polynomial Pell equation.",
+    "real_gate": "Exact real solubility criterion for the square-root genus-one cover, and exact all-critical-real criterion q split with theta(r)>2|r|.",
+    "scope_limits": [
+      "No rational degree12 point, rational parametrization or uniform existence theorem.",
+      "No claim that full coefficient equations cannot impose a further torsion relation.",
+      "Full alternating monodromy needs a separate group proof.",
+      "The t0=0 and spectral discriminant-zero strata remain separate.",
+      "Square-root genus-one cover may lack a rational point.",
+      "No novelty/priority determination."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md",
+      "sha256": "dc9c01e3796302d6d5477334aa22ee734e8115342e6c2336eff1e4fb0add7de2",
+      "locator": "Theorem1 and Sections2–4",
+      "role": "Complete implicit-equivalence, divisor, norm and real-solubility arguments."
+    },
+    {
+      "path": "research/arithmetic/verify_quadratic_spectral_pairing.py",
+      "sha256": "03617af0db2ebcc3db83c470866d05f28ae6461316beb6b45fa0618c94aefeb4",
+      "locator": "run and exact controls",
+      "role": "Bounded symbolic/algebraic controls; actual good degree8 boundary control."
+    },
+    {
+      "path": "research/arithmetic/quadratic_spectral_pairing_verification.json",
+      "sha256": "41872fba69ad4e245134efadf2b5aa9de9ca797a92ee4a9e087c283c4a993cac",
+      "locator": "Actual default execution",
+      "role": "Retained exact internal checker receipt."
+    },
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
+      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "locator": "Theorems1–2",
+      "role": "Canonical critical-algebra identities and meaning of the good paired locus."
+    },
+    {
+      "path": "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
+      "sha256": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+      "locator": "Main theorem",
+      "role": "Excludes the real affine-trace boundary t2=0 in degree4h>=12."
+    },
+    {
+      "path": "research/arithmetic/RATIONAL_ALTERNATING_PENCIL_REALIZATION.md",
+      "sha256": "50eb65960c03f54a8406620e11dbfefafdeed48c7b314d5ad13f6d82c81b7a8d",
+      "locator": "Proposition2",
+      "role": "Existing rational degree8 numerator used solely as a positive boundary control."
+    }
+  ],
+  "external_sources": [],
+  "external_import_limit": "Elementary polynomial, elliptic divisor and good-reduction facts are explained in the note. No rational torsion classification is imported.",
+  "finite_control_limit": "Symbolic trace degrees1,...,10, real threshold identities and a known degree8 positive control accompany the uniform written argument. Ambient spectral examples are not degree12 pencils.",
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false,
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        {
+          "reviewer": "/root/moonshot_hasse",
+          "result": "PASS",
+          "scope": "Independent full mathematical/code audit of exact criterion/converse and unit/separability descent, critical jets and q^2 divisibility, exact accessory degrees/constants, simple norm zeros, Weierstrass transformation and marked divisors including t1=0/alpha=1 cancellations, both involutions and divisor multiplicities/classes, connected unramified square-root cover, exact projective real gate and all-critical-real test, and nontorsion-control reduction. Final equation-count clarification checked. Actual .scratch/independent_quadratic_spectral_pairing_final_replay.json exactly equals canonical receipt."
+        },
+        {
+          "reviewer": "/root",
+          "result": "PASS",
+          "scope": "Completed final independent mathematical audit of the exact pairing converse and critical double-jet argument, accessory degree5 and simple norm zeros, Weierstrass transformation and divisor edge cases, unramified genus-one torsor distinction, exact real-solubility argument and nontorsion-control scope. Actual .scratch/root-quadratic-spectral-pairing-replay.json exactly equals the final canonical receipt."
+        }
+      ],
+      "limits": "Internal agent review only; no external/formal assurance upgrade.",
+      "reviewed_note_sha256": "dc9c01e3796302d6d5477334aa22ee734e8115342e6c2336eff1e4fb0add7de2",
+      "reviewed_checker_sha256": "03617af0db2ebcc3db83c470866d05f28ae6461316beb6b45fa0618c94aefeb4",
+      "reviewed_receipt_sha256": "41872fba69ad4e245134efadf2b5aa9de9ca797a92ee4a9e087c283c4a993cac"
+    },
+    "priority_assessment": "Not performed."
+  }
+}

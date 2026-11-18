@@ -25,8 +25,13 @@ def bounds_records(graph, evaluation=None):
                 assert isinstance(bound.get("expression"), str) and bound["expression"].strip(), (
                     "bound needs finite value or explicit expression: " + node_id)
             assert isinstance(bound.get("parameters", {}), dict), "invalid bound parameters: " + node_id
+            exclusion = bound.get("domain_excluded_by")
+            if exclusion is not None:
+                assert isinstance(exclusion, str) and exclusion in graph.nodes and exclusion != node_id, (
+                    "invalid bound domain exclusion: " + node_id)
+            domain_excluded = exclusion is not None and evaluated[exclusion]["state"] == "proved"
             rows.append({**bound, "id": node_id, "title": node.get("title", node.get("label", node_id)),
-                         "state": evaluated[node_id]["state"],
+                         "domain_excluded": domain_excluded, "state": evaluated[node_id]["state"],
                          "assumptions": evaluated[node_id]["assumptions"],
                          "dependency_coverage": evaluated[node_id]["dependency_coverage"]})
     return rows
@@ -40,7 +45,9 @@ def bound_comparisons(graph, evaluation=None):
     """
     groups = defaultdict(list)
     for row in bounds_records(graph, evaluation):
-        if row["state"] not in {"proved", "conditional"} or not isinstance(row.get("value"), (int, float)):
+        if row["domain_excluded"] or row["state"] not in {"proved", "conditional"}:
+            continue
+        if not isinstance(row.get("value"), (int, float)):
             continue
         if row["sense"] not in {"upper", "lower", "exact"}:
             continue

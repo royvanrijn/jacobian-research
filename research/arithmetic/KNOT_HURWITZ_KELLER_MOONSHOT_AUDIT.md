@@ -21,12 +21,12 @@ historical priority claim.
 | Target | Smallest new case tested | Result and next unresolved case |
 | --- | --- | --- |
 | Prime augmentation gaps | Unbounded bridge number | Proved for every sufficiently large bridge number, with explicit families and non-effective thresholds; direct prime-family certificates also hold at bridge five and six. |
-| Rational square pencils | Degree 26 | The entire good reciprocal odd-Laurent ansatz is excluded over Q, including nonsquare balanced parameters and arbitrary denominators. General nonreciprocal rational existence remains open. |
-| Hurwitz classification | Degree fourteen | One absolute full-A14 orbit, certified through two exact degree-thirteen censuses. The entire imprimitive chosen-leaf case has a uniform normal form; symmetric deletions, degree sixteen and uniform connectivity remain open. |
+| Rational square pencils | Degree 26 | The reciprocal ansatz is excluded over Q. The complete affine-trace slice lies on an explicit curve of genus at least 1051, so its normalized rational models form a finite set; their existence remains undecided. A good number-field point of degree at most twelve is certified. Normalized rational even-numerator degree-ten models also form a finite set. General rational degree-26 existence remains open. |
+| Hurwitz classification | Degree fourteen | One absolute full-A14 orbit. Imprimitive leaf deletion has a uniform normal form, and specified coalesced bases have full symmetric or alternating attachment holonomy with one Klein-four exception. Degree sixteen and arbitrary-tuple uniform connectivity remain open. |
 | One fixed Keller map | Every admissible degree | One fixed rational A3 map for each degree m^2+1, odd m>=3, has infinitely many complete A_n field fibres. The paired degree-ten pencil also has its own fixed map. |
 | Generic alternating Keller group | All even natural actions n>=6; the smallest plane case A4 | Polynomial A3 realizations in all even degrees; regular arithmetic A_(m^2+1) over Q(sqrt(-3)). Every plane A4 action is excluded. General plane realization or exclusion remains open. |
 | Hasse algebras | Uniform admissible degrees | A different concentrated-inertia cover gives minimum-rank-2^(n-2) Hasse families and one fixed A4 map per degree. Numerical optimality follows from Maroti's prior covering theorem; the optimal subgroup family is classified uniformly. The original double-transposition pencil retains its rank-256 density obstruction after every solvable rational base change. |
-| Extremal real nodes | All even degrees at least eight | Uniform real-algebraic existence, matching-walk chambers and complete spectra. A uniform real obstruction excludes affine canonical trace in every degree 4h>=12, including the scalar-secant/affine-scale slice. General rational models in degrees twelve and 26 remain open. |
+| Extremal real nodes | All even degrees at least eight | Uniform real-algebraic existence, matching-walk chambers and spectra. Affine trace is excluded in degree 4h>=12. The quadratic spectral slice has an exact pairing criterion, real-solubility gate and an unavoidable accessory divisor. General rational models in degrees twelve and 26 remain open. |
 
 ## Prime knots and augmentation rank
 
@@ -75,6 +75,21 @@ Nielsen points. Thus the explicit rational pencil and the original knot
 tuple lie in the same absolute Hurwitz component. Its rational point and
 unique geometric component establish the indicated Q-definition, without
 proving unirationality or classifying inner components.
+
+Arithmetic is more restrictive in the even-numerator degree-ten locus.
+The [degree-ten finiteness theorem](DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md)
+proves that its normalized rational models form a finite set. When the
+canonical scale is nonscalar, the rank-two value algebra makes its trace
+automatically affine in that scale. The resulting explicit quartic cover
+of the slope line has geometric S4 and at least thirty simple branch
+points, so its normalization has genus at least twelve. Faltings gives
+finitely many rational points; the scalar-scale boundary is covered by
+the earlier reciprocal classification. This gives neither an effective
+point list nor finiteness of unnormalized rational twists. It is a
+statement about this symmetric coefficient locus, not the dimension or
+unirationality of the full degree-ten Hurwitz component.
+For each model its pencil parameter remains free and can yield infinitely
+many Hilbert specializations.
 
 The known [Arala alternating lines](ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md)
 already give rational literal-square pencils with regular A_n in every
@@ -159,6 +174,17 @@ is closed. Reaching this locus from a tuple with only symmetric deletions
 is the remaining gate for the pure-DT polynomial problem. The separate
 mixed 3-cycle polynomial problem in the uniform reduction remains open.
 
+The [full coalesced holonomy theorem](FULL_COALESCED_ATTACHMENT_HOLONOMY.md)
+classifies the attachment action of the specified polynomial bases.
+On 2r+1 sheets its outside group is S_(2r-3) in the DT case, and
+A_(2r-2) in the mixed three-cycle case for r>=4. At r=3 the mixed
+group is exactly the regular Klein four group, certified on the complete
+196-state marked move graph. All these groups remain attainable by pure
+literal loops preserving each ordered splitting. Their ordered multiple-choice
+orbits are therefore explicit. These are actions at the same coalesced
+interface; they do not identify the separate leaf-extension interface or
+prove arbitrary-tuple connectivity.
+
 The [normalization-distance theorem](UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md)
 shows why a bounded local repair cannot close that gate. For every r>=4,
 explicit full-A_(2r+1) tuples have symmetric deletion at every initial leaf,
@@ -232,6 +258,43 @@ odd-Laurent model exists in degree 26. Rational normalization of its unique
 zero-level double root loses no model. This is an obstruction to extending
 the degree-ten construction through constant-product critical pairing;
 general nonreciprocal degree-26 existence remains open.
+
+The [odd-numerator affine-trace theorem](ODD_AFFINE_CRITICAL_TRACE_CURVES.md)
+provides a uniform replacement for reciprocal coefficient searches.
+For N of degree 2h+1 with its zero-level critical root normalized to one,
+theta=s+t*rho forces a trace polynomial to equal
+2(4h+1+k_h(t)R)q(R)^2. A universal Euler identity makes this equivalent
+to a linear polynomial operator on q. Its triangular monic kernel gives
+one accessory equation Phi_h(s,t)=N(1)=0, of degree at most 2h in s,
+with an exact converse on explicitly listed nonvanishing conditions.
+The secant may vary. No good model has slope minus two in characteristic
+zero; in degrees ten and twenty-six that is the only possible rational
+exception to the recurrence, including every rational denominator.
+
+In degree 26 the retained curve has degree twelve in s. A good simple
+point modulo 29 lifts to Q29 and to a number field of degree at most
+twelve, giving full regular A26 and nonconstant paired critical product.
+This proves the good open is nonempty. No rational Q-point has yet been
+found or excluded. The theorem classifies the affine-trace slice of the
+odd Laurent locus, rather than every degree-26 polynomial pencil.
+
+The [degree-26 arithmetic theorem](Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md)
+now proves finiteness in that whole normalized rational slice. Its primitive
+accessory equation has degree twelve in s and 144 in t, with no discarded
+vertical component. Exact Frobenius witnesses give arithmetic S12 over t.
+A modular discriminant identity, independently bound by 3,169 extension-field
+evaluations and a degree bound, certifies 2,124 simple characteristic-zero
+branch points. Geometric S12 and Riemann--Hurwitz give genus at least 1051.
+Faltings therefore gives a finite rational point set, without an effective
+list. It also excludes a nonconstant rationally parametrized family of
+normalized affine-trace models. Whether any of those rational points lies
+in the good open remains undecided.
+
+Here S12 acts on accessory roots over the slope t; reconstructed pencils
+have A26 monodromy over their independent parameter w. The finiteness
+theorem allows infinitely many w-specializations of any rational cover
+that is eventually found. Non-affine canonical trace remains outside
+this arithmetic restriction.
 
 The [balanced rational quotient](BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md)
 processes all quadratic descents in one scheme over Q. For every balanced
@@ -504,6 +567,26 @@ Scalar secant and affine scale imply affine trace, so that entire slice
 is excluded for real coefficients in these degrees. The earlier degree-twelve
 arithmetic certificates provide a separate exact check; unrestricted
 nonaffine-trace rational models remain open.
+
+The [quadratic spectral criterion](QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md)
+treats a next slice with nonconstant secant: theta=t0+t1*R+t2*R^2 and
+squared value M=kappa(R-eta). In degree twelve it gives five exact
+equations in the six q/theta coefficients when eta is fixed and kappa
+is recovered. The trace difference is q^2 times an accessory polynomial
+of exact degree five. On the smooth elliptic spectral curve the resulting
+divisor relation is 6B+5B-11B=0, an identity that gives no torsion order
+for B. The natural norm also has simple forced zeros and a nonconstant
+right side, so it supplies no constant-norm Pell shortcut.
+
+The same note gives the complete real-solubility test for the square-root
+spectral cover. With alpha=t0*t2 and b=t1^2/4-1-alpha, positive t0 or t2
+ensures real points. If both are negative, the smooth cover has real
+points exactly when b>0 and b^2>4alpha. This is necessary for an all-real
+critical pencil; rational solubility of the cover is not required merely
+for rational pencil coefficients. An exact stronger test for all critical
+points is that q splits over R and theta(r)>2|r| at every q root.
+The full rational degree-twelve existence question and singular spectral
+strata remain open.
 
 The [degree-twelve reciprocal obstruction](RECIPROCAL_DEGREE_TWELVE_OBSTRUCTION.md)
 now excludes that ansatz globally over Q, using a projective modulo-31

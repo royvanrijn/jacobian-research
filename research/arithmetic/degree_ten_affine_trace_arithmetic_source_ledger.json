@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md",
+  "claims": {
+    "curve": "Arithmetic and geometric S4; exactly30certifiedsimplebranchvalues imply normalization genus>=12.",
+    "normalized_Q_finiteness": "Faltings gives finiteF(Q); every nonscalar rank2 canonical scale lies on this curve with unique rational reconstruction. Scalar boundary is within previous reciprocal classification.",
+    "no_rational_parametrization": "No nonconstant rational parametrization of the normalized nonconstant-scale curve.",
+    "geometric_types": "Rational u0 coefficient normalization is a geometric source/target scaling; finite normalizedQmodels imply finite geometric cover types.",
+    "limits": [
+      "No exactgenus or effective rationalpoint list.",
+      "No finite raw coefficient set or finite unnormalizedQ-isomorphism classes; twists/scalings remain.",
+      "Larger-field all-model claims need exceptional slope analysis.",
+      "Even-numerator degree10 only; no rational degree26 construction or planeKeller statement.",
+      "No novelty or priority claim."
+    ]
+  },
+  "external_sources": [
+    {
+      "id": "faltings-fixed-curve-finiteness",
+      "authors": [
+        "Gerd Faltings"
+      ],
+      "title": "Endlichkeitssätze für abelsche Varietäten über Zahlkörpern",
+      "version": "Inventiones mathematicae73(1983),349-366",
+      "primary_url": "https://math.uchicago.edu/~drinfeld/Deligne%27s_conjecture_Manin_conf/Faltings_argument/Faltings.pdf",
+      "retained_pdf": "research/arithmetic/sources/faltings-1983-endlichkeitssaetze.pdf",
+      "sha256": "0b7fb3e505d5d63e3e6c5913daf15bd843488e59f80f8d5176b154ac8faa3fc2",
+      "locator": "Satz7,printedp365/PDFp17",
+      "direct_read": true,
+      "statement": "A smooth projective geometrically integral curve of genus at least2 over a fixed numberfield has finitely many rational points.",
+      "application": "Apply to the normalization C of the geometrically integral quartic curve, whose genus is at least12. Nonsingular affine points lift and singular points are finite.",
+      "limits": "Deep theorem imported, not reproved. No effective list, uniform bound, raw-twist finiteness or all-model finiteness over larger fields is inferred."
+    },
+    {
+      "id": "milne-dedekind-frobenius",
+      "authors": [
+        "James S. Milne"
+      ],
+      "title": "Algebraic Number Theory",
+      "version": "Version3.00",
+      "primary_url": "https://www.jmilne.org/math/CourseNotes/ANT300.pdf",
+      "retained_pdf": "research/arithmetic/sources/milne-ant300.pdf",
+      "sha256": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+      "locator": "Corollary8.22 and Theorem8.23,printedp138/PDFp146",
+      "direct_read": true,
+      "statement": "Squarefree finite-field factors of an integral monic polynomial give corresponding Frobenius cycle lengths in its numberfield Galoisgroup.",
+      "application": "Use integral monic9^3*f0(X/9);9isunit at11/13, so the checked normalizedf0 reductions have the same factor degrees.",
+      "limits": "Exact theorem/hypotheses read in primary notes. Irreducibility/factor product and all eight relative cycle cases are independently checked."
+    }
+  ],
+  "internal_proof_inputs": [
+    {
+      "path": "research/arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md",
+      "sha256": "04991e1f1c5a32a689740f0da4dbe0f97060a68522dc506d676f9d283e509399",
+      "locator": "Theorems1-3 and normalization caveats",
+      "role": "Complete written geometricS4/genus/finiteness argument"
+    },
+    {
+      "path": "research/arithmetic/verify_degree_ten_affine_trace_arithmetic.py",
+      "sha256": "4961bd32341f3fad1fb67dbf1a52ef871d88a1be5378bb5571d5641780c3466e",
+      "locator": "main;powmod;four_cycle_controls",
+      "role": "Independent norm/Euler/trace curve binding and exact finite certificates"
+    },
+    {
+      "path": "research/arithmetic/degree_ten_affine_trace_arithmetic_inputs.json",
+      "sha256": "f00da4cfce234f7fa1af607c1368782bd802b2396bed4260408bd29e56c4ac68",
+      "locator": "Complete q formulas,F,discriminant factor product and Frobenius controls",
+      "role": "Literal algebraic data; discovery factorization not trusted for replay"
+    },
+    {
+      "path": "research/arithmetic/degree_ten_affine_trace_arithmetic_verification.json",
+      "sha256": "bacb556e5bde67188c0a6e68d2d2c44b6347a7c3f6ce5e725149c4b5e968eddc",
+      "locator": "Actual final default execution",
+      "role": "Retained successful source-bound exact replay"
+    },
+    {
+      "path": "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md",
+      "sha256": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+      "locator": "Theorems2-3,Lemma4,Proposition5,degree10 rank2 scope",
+      "role": "Uniform reconstruction, complete rational slope handling and descent"
+    },
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "locator": "Theorem5",
+      "role": "Previously proved unique normalized rational reciprocal boundary; no fresh replay of unchanged older controls claimed"
+    }
+  ],
+  "computation": {
+    "arithmetic": "Python3.12.3/Sympy1.14.0 exact QQ/Fp arithmetic.",
+    "curve_binding": "Direct independent quadratic resultant, Euler inversion, fullD-square identity and primitivePhi numerator.",
+    "content": "gcd of all s-coefficients inQ[t] is1, excluding vertical components.",
+    "discriminant": "Full retained factor product verified; degree30 factor squarefree and coprime to all others andLC.",
+    "frobenius": "p11quarticRabin modularpower/gcd certificate;p13cubicall13evaluationcertificate;integralmonictransformexplicit.",
+    "group": "All8threecycles withfixedfourcycle generate24permutations.",
+    "slope": "Integer valuation/divisor certificate covers every rationalh2exception; only-2,excludedbyuniformwrittenproof.",
+    "exact_genus_algorithm_used": false
+  },
+  "assurance": {
+    "author_exact_replay": "PASS",
+    "separate_internal_audit": {
+      "result": "PASS",
+      "reviewer": "/root/moonshot_hurwitz",
+      "scope": "Complete final proof/code/source audit and fresh exact replay, including monic integral transform and actual primary Milne/Faltings statements. Checked norm/Euler/trace binding, absence of vertical components, Frobenius and all8cycleclosures, degree30simplebranch/geometricS4/genusbound, full rank2scalar/nonscalar split, and normalization/twist/exceptional-numberfield caveats.",
+      "replay_receipt": ".scratch/independent_degree10_affine_arithmetic_replay.json",
+      "receipt_sha256": "bacb556e5bde67188c0a6e68d2d2c44b6347a7c3f6ce5e725149c4b5e968eddc",
+      "receipt_comparison": "Every field exactly matches the retained canonical receipt."
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Not performed."
+  }
+}

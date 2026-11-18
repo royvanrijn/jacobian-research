@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "proof_note": "research/arithmetic/FULL_COALESCED_ATTACHMENT_HOLONOMY.md",
+  "claims": {
+    "action": "Literal marked polynomial stabilizer transports on the complement of the marked factor; compared with the subgroup of pure loops preserving each ordered splitting.",
+    "double_transposition": "For the specified full A_(2r+1) bases, both images equal S_(2r-3) for every r>=3.",
+    "mixed": "For the specified mixed bases, both images equal regular V4 for r=3 and A_(2r-2) for every r>=4; all lower-bound transports can fix the marked support pointwise.",
+    "multiple_choices": "Exact diagonal orbit counts on ordered distinct attachment choices in the same coalesced interface: symmetric one; alternating one through m-2 and two for m-1,m; V4 counts1,3,6,6.",
+    "limits": [
+      "No connectivity theorem for every tuple of a polynomial passport.",
+      "No absorption or arbitrary-tree leaf extraction theorem.",
+      "Multiple attachment choices are a diagonal permutation action, not a simultaneous multiple-cover construction.",
+      "The appended two-new-leaf DT is a constructor of base tuples, not a replacement for the one-new-sheet coalesced expansion interface.",
+      "No assertion about a larger absolute stabilizer action with final sheet conjugation."
+    ]
+  },
+  "proof_imports": [
+    {
+      "path": "research/arithmetic/FULL_COALESCED_ATTACHMENT_HOLONOMY.md",
+      "sha256": "9e86a3216a1a479c1a97d7f5a0965992b4c032be15cf352286d0dd18db6b2ec8",
+      "locator": "Theorem1; complete degree-seven Schreier upper bound; Corollary2",
+      "role": "Precise action, exact small seeds, uniform maximal-group induction and multiple-choice classification."
+    },
+    {
+      "path": "research/arithmetic/verify_full_coalesced_attachment_holonomy.py",
+      "sha256": "99c358692c53c16e374d59d7f445ba8711b2a8da9aa7d1057663bca21acddb60",
+      "locator": "checked_word; strong_cable; degree_seven_schreier; mixed_seed; dt_controls; mixed_controls",
+      "role": "Pure literal braid identities, full ordered-splitting cables, complete196-state upper bound and360-element seed closure."
+    },
+    {
+      "path": "research/arithmetic/full_coalesced_attachment_holonomy_verification.json",
+      "sha256": "dbf5b902867d8f1c1e5285b3dba45376da3bfae8fe09a9be8ce65b3467eaa529",
+      "locator": "Actual default execution",
+      "role": "Exact finite counts, transport words, control bounds and source hashes."
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
+      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "locator": "Corollaries5-6",
+      "role": "One-new-sheet expansion, cable and transport rule; full alternating group of all specified base tuples; literal loop and appended-DT construction."
+    },
+    {
+      "path": "research/arithmetic/verify_uniform_hurwitz_attachment.py",
+      "sha256": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+      "locator": "code_move; replay_codes; cable; base_tuple; extension_word",
+      "role": "Exact imported permutation/Hurwitz conventions and original explicit seed/base data."
+    }
+  ],
+  "external_sources": [],
+  "proof_outline": [
+    "All transport steps are even, and a closed mixed transport centralizes a3cycle; its outside restriction is therefore even.",
+    "The DT7 seed loops give two outside transpositions generating S3 while preserving both marked transpositions.",
+    "A complete marked T3-DT-DT degree7 move graph has196literal states and784signed edges; every Schreier edge-loop transport lies in regularV4.",
+    "Two pure degree7 loops, one cubed to remove its marked3cycle action, generateV4 with the marked support fixed.",
+    "Three explicit pure degree9 mixed loops generate360outside permutations, givingA6 and fixing the marked support pointwise.",
+    "The commuting appended-DT loop has transport exactlyeta; conjugating old transpositions or3cycles byeta attaches both new sheets and proves maximality uniformly.",
+    "The full same-interface groups give the ordered-choice orbit counts by unused-letter parity correction or regularity."
+  ],
+  "computation": {
+    "command": ".venv/bin/python research/arithmetic/verify_full_coalesced_attachment_holonomy.py",
+    "environment": "Python3.12.3; Python standard library; exact permutation arrays.",
+    "complete_exception": "Independently enumerate all70three-cycles and105DTs with the fixed product and forced last factor, producing196tuples; BFS independently reaches all196 and tests784signed edges with stored-transport Schreier telescoping.",
+    "mixed_seed": "Exact closure of the three displayed degree9 outside generators has order360; dropping the third generator leaves order8.",
+    "controls": "DT r=3,4,5,6,12,25; mixed r=4,5,6,12,25; literal cables for every outside sheet and ordered splitting at r<=6, plus24exceptional degree7 cables.",
+    "uniformity": "The finite controls supplement the written group induction; there is no unrestricted enumeration claim.",
+    "negative_controls": [
+      "The degree7 mixed group has order4, not12.",
+      "The uncubed degree7 mixed loop rotates the marked support, so cannot be used directly for the fixed-splitting lower bound.",
+      "Dropping the third degree9 mixed loop gives order8, not360.",
+      "The empty word cannot substitute for the appended-DT transport."
+    ]
+  },
+  "assurance": {
+    "exact_internal_replay": "PASS",
+    "internal_critical_audit": {
+      "result": "PASS",
+      "reviewers": [
+        "root agent",
+        "separate Hasse agent"
+      ],
+      "root": {
+        "result": "PASS",
+        "scope": "Complete final proof audit: exact one-new-sheet interface, transport and purity, seeds and every ordered split, degree7Schreier upper bound, mixed parity andV4/A6base, uniform cross-transposition/3cycle inductions, ordered-choice orbit counts and scope.",
+        "replay_path": ".scratch/root-full-coalesced-holonomy-replay.json",
+        "replay_sha256": "4e50406fe19d14f9815d9b9786d71481192437a7ec9ed4bb3e59341ac5a057dd",
+        "comparison": "Every canonical static and mathematical field matches; only elapsed_seconds differs.",
+        "corrections": "None requested."
+      },
+      "separate_agent": {
+        "result": "PASS",
+        "reviewer": "Separate Hasse agent",
+        "scope": "Full proof and code, exact marked/literal/pure/splitting transport and cabling definitions, both seeds, all196states/784Schreier edges,360-element mixed degree9 closure, uniform maximal-group inductions and ordered-choice orbit counts.",
+        "replay_path": ".scratch/independent_full_coalesced_attachment_holonomy_replay.json",
+        "replay_sha256": "c6bd43bb7a4efdbaff22a31151d40e39b37279c597cae156f0e8d50e3e84ac61",
+        "comparison": "Every canonical static and mathematical field matches; only elapsed_seconds differs.",
+        "source_pins": "All five ledger and four receipt source pins confirmed current.",
+        "corrections": "None requested.",
+        "limits": "Separate internal AI-assisted critical audit and replay, not external human review, independent external replay or formal verification."
+      },
+      "limits": "Separate internal AI-assisted proof/code audits and actual replays; no external human review, independent external replay or formal verification."
+    },
+    "formal_verification": false,
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "priority_assessment": "Not performed."
+  }
+}

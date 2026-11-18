@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "kind": "full_coalesced_attachment_holonomy_exact_certificate",
+  "python": "3.12.3",
+  "source_sha256": {
+    "verify_full_coalesced_attachment_holonomy.py": "99c358692c53c16e374d59d7f445ba8711b2a8da9aa7d1057663bca21acddb60",
+    "FULL_COALESCED_ATTACHMENT_HOLONOMY.md": "9e86a3216a1a479c1a97d7f5a0965992b4c032be15cf352286d0dd18db6b2ec8",
+    "verify_uniform_hurwitz_attachment.py": "00f250ed5d1c31ee38ba2279aec32dd877f6fff7e8907f94d87e5af255388bf2",
+    "ALTERNATING_HURWITZ_CYCLE_FOLDING.md": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278"
+  },
+  "degree_seven_mixed_complete_schreier": {
+    "literal_states": 196,
+    "signed_edges_checked": 784,
+    "independent_fixed_product_tuples": 196,
+    "complete_state_set_sha256": "4cd219ec59f3cb7c6af52e5ee09fd2c688ee146fa1cad30c38e8b763d382b16b",
+    "all_schreier_transports_in_V4": true,
+    "outside_group_order": 4,
+    "outside_generators": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        2,
+        1,
+        0
+      ]
+    ],
+    "pointwise_support_pure_words": [
+      [
+        2,
+        1,
+        -2
+      ],
+      [
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2,
+        1,
+        2
+      ]
+    ],
+    "ordered_split_cables_checked": 24
+  },
+  "degree_nine_mixed_seed": {
+    "degree": 9,
+    "loops": [
+      [
+        2,
+        -1,
+        -2
+      ],
+      [
+        -3,
+        2,
+        -1,
+        -2,
+        3
+      ],
+      [
+        -3,
+        -3,
+        -2,
+        -1,
+        2,
+        3,
+        3
+      ]
+    ],
+    "full_actions": [
+      [
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    ],
+    "outside_group_order": 360,
+    "ordered_split_cables_checked": 54,
+    "old_three_cycle_generator_words_zero_based": {
+      "3": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        0
+      ],
+      "4": [
+        2,
+        1,
+        0,
+        1
+      ]
+    },
+    "old_three_cycle_compressed_words": {
+      "3": [
+        2,
+        -1,
+        -2,
+        -3,
+        2,
+        -1,
+        -2,
+        3,
+        2,
+        -1,
+        -2,
+        -3,
+        2,
+        -1,
+        -2,
+        3,
+        -3,
+        -3,
+        -2,
+        -1,
+        2,
+        3,
+        3,
+        2,
+        -1,
+        -2
+      ],
+      "4": [
+        -3,
+        -3,
+        -2,
+        -1,
+        2,
+        3,
+        3,
+        -3,
+        2,
+        -1,
+        -2,
+        3,
+        2,
+        -1,
+        -2,
+        -3,
+        2,
+        -1,
+        -2,
+        3
+      ]
+    },
+    "mutation_drop_third_loop_order": 8
+  },
+  "uniform_word_controls": {
+    "double_transposition": [
+      {
+        "r": 3,
+        "degree": 7,
+        "outside_size": 3,
+        "pure_literal_loops_checked": 2,
+        "ordered_split_cables_checked": 12,
+        "explicit_new_star_transpositions": 0
+      },
+      {
+        "r": 4,
+        "degree": 9,
+        "outside_size": 5,
+        "pure_literal_loops_checked": 5,
+        "ordered_split_cables_checked": 50,
+        "explicit_new_star_transpositions": 2
+      },
+      {
+        "r": 5,
+        "degree": 11,
+        "outside_size": 7,
+        "pure_literal_loops_checked": 8,
+        "ordered_split_cables_checked": 112,
+        "explicit_new_star_transpositions": 4
+      },
+      {
+        "r": 6,
+        "degree": 13,
+        "outside_size": 9,
+        "pure_literal_loops_checked": 11,
+        "ordered_split_cables_checked": 198,
+        "explicit_new_star_transpositions": 6
+      },
+      {
+        "r": 12,
+        "degree": 25,
+        "outside_size": 21,
+        "pure_literal_loops_checked": 29,
+        "ordered_split_cables_checked": 0,
+        "explicit_new_star_transpositions": 18
+      },
+      {
+        "r": 25,
+        "degree": 51,
+        "outside_size": 47,
+        "pure_literal_loops_checked": 68,
+        "ordered_split_cables_checked": 0,
+        "explicit_new_star_transpositions": 44
+      }
+    ],
+    "three_cycle": [
+      {
+        "r": 4,
+        "degree": 9,
+        "outside_size": 6,
+        "pure_literal_loops_checked": 3,
+        "ordered_split_cables_checked": 54,
+        "explicit_new_three_cycles": 0
+      },
+      {
+        "r": 5,
+        "degree": 11,
+        "outside_size": 8,
+        "pure_literal_loops_checked": 6,
+        "ordered_split_cables_checked": 144,
+        "explicit_new_three_cycles": 2
+      },
+      {
+        "r": 6,
+        "degree": 13,
+        "outside_size": 10,
+        "pure_literal_loops_checked": 9,
+        "ordered_split_cables_checked": 270,
+        "explicit_new_three_cycles": 4
+      },
+      {
+        "r": 12,
+        "degree": 25,
+        "outside_size": 22,
+        "pure_literal_loops_checked": 27,
+        "ordered_split_cables_checked": 0,
+        "explicit_new_three_cycles": 16
+      },
+      {
+        "r": 25,
+        "degree": 51,
+        "outside_size": 48,
+        "pure_literal_loops_checked": 66,
+        "ordered_split_cables_checked": 0,
+        "explicit_new_three_cycles": 42
+      }
+    ]
+  },
+  "ordered_distinct_choice_orbit_counts": {
+    "S3": [
+      1,
+      1,
+      1
+    ],
+    "V4": [
+      1,
+      3,
+      6,
+      6
+    ],
+    "A6": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  "elapsed_seconds": 1.3140563099877909,
+  "scope": "Literal pure stabilizer transports of the explicitly chosen coalesced bases: S_(2r-3) for DT r>=3, V4 for mixed r=3, A_(2r-2) for mixed r>=4. Pointwise-splitting lower bounds, complete196-state V4 upper certificate, and bounded literal cabling controls. Uniform maximality uses the written induction; no arbitrary polynomial-orbit connectivity or leaf-pair absorption claim.",
+  "formal_verification": false,
+  "external_human_review": false,
+  "independent_external_replay": false
+}

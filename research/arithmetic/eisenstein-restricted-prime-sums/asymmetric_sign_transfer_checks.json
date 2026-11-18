@@ -1,0 +1,44 @@
+{
+  "result": "PASS",
+  "scope": "Finite exact identities and least-squares controls only; no asymptotic mean, dispersion, critical remainder, or binary coverage is verified.",
+  "provenance": {
+    "checker": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_sign_transfer.py",
+    "checker_sha256": "63951e9d663810e641eb35a50f20d5e8462a335296886c3655404f524d9f2e0b",
+    "source_sha256": {
+      "research/arithmetic/ASYMMETRIC_SIGN_TRANSFER.md": "c3f85d1ce426018ca1c17450e17d7d6a1992b5115790095cb48f15475c194967",
+      "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62",
+      "research/arithmetic/ASYMMETRIC_SEMILINEAR_SIEVE.md": "7c83a78e354727e9a8a16c3daf5443eacd49668778b9c0f9ba6a94e281084ce8",
+      "research/arithmetic/ASYMMETRIC_AUXILIARY_AVERAGE.md": "8cfafca142b954118e9c2a325ed2a54df5dc46739cd9813aba326c18cdc7ac94",
+      "research/arithmetic/sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+      "research/arithmetic/sources/iwaniec-half-dimensional-sieve-1976.pdf": "ca6e84aafb32ee62dcd5ce76679c65652bf677ccd4e36d200576024fac1eca67",
+      "research/arithmetic/sources/loughran-matthiesen-1904.12845v2.pdf": "ffbb0c2e6a6a39e090ebd6102f2a3b8936208df33c11bdf7c892744756c10203"
+    },
+    "python_version": "3.12.3"
+  },
+  "checks": {
+    "automatic_rosser_support": 37,
+    "binary_sign_transfer": 568,
+    "coefficient_resonance": 252,
+    "compressed_sign_coefficient": 1728,
+    "control_constant_replacement_not_exact": 1,
+    "control_equal_unselected_coefficients": 1,
+    "control_omitted_complementary_twist_fails": 1,
+    "control_omitted_signed_convolution_twist_fails": 1,
+    "control_selector_not_periodic": 1,
+    "control_valid_resonance_pair": 1,
+    "cubefree_unique_decomposition": 592,
+    "immutable_primary_pin": 3,
+    "least_squares_complex_pythagoras": 56,
+    "least_squares_projection_identity": 56,
+    "positive_projection_bound": 56,
+    "reverse_hyperbola_phase": 1789,
+    "signed_convolution": 3000,
+    "squarefree_convolution": 3000
+  },
+  "negative_controls": [
+    "same residue133/217 has different Rosser selection",
+    "omitting complementary chi4(r) changes the reverse phase",
+    "omitting the signed convolution twist fails at7",
+    "a constant periodic replacement has nonzero finite residual"
+  ]
+}

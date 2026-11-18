@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "4961bd32341f3fad1fb67dbf1a52ef871d88a1be5378bb5571d5641780c3466e",
+  "source_sha256": {
+    "research/arithmetic/degree_ten_affine_trace_arithmetic_inputs.json": "f00da4cfce234f7fa1af607c1368782bd802b2396bed4260408bd29e56c4ac68",
+    "research/arithmetic/verify_degree_ten_affine_trace_arithmetic.py": "4961bd32341f3fad1fb67dbf1a52ef871d88a1be5378bb5571d5641780c3466e",
+    "research/arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md": "04991e1f1c5a32a689740f0da4dbe0f97060a68522dc506d676f9d283e509399",
+    "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+    "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+    "research/arithmetic/sources/faltings-1983-endlichkeitssaetze.pdf": "0b7fb3e505d5d63e3e6c5913daf15bd843488e59f80f8d5176b154ac8faa3fc2",
+    "research/arithmetic/sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
+  },
+  "curve_degrees": {
+    "s": 4,
+    "t": 16,
+    "total": 16
+  },
+  "coefficient_content_in_Qt": 1,
+  "direct_norm_euler_trace_binding": true,
+  "discriminant_factors": [
+    {
+      "degree": 1,
+      "multiplicity": 12
+    },
+    {
+      "degree": 3,
+      "multiplicity": 2
+    },
+    {
+      "degree": 3,
+      "multiplicity": 4
+    },
+    {
+      "degree": 6,
+      "multiplicity": 4
+    },
+    {
+      "degree": 30,
+      "multiplicity": 1
+    }
+  ],
+  "simple_branch_points": 30,
+  "branch_leading_coefficient_coprime": true,
+  "arithmetic_frobenius_controls": [
+    {
+      "prime": 11,
+      "cycle_type": [
+        4
+      ],
+      "separable": true
+    },
+    {
+      "prime": 13,
+      "cycle_type": [
+        1,
+        3
+      ],
+      "separable": true
+    }
+  ],
+  "monic_integral_specialization": "s**4 - 516*s**3 + 118260*s**2 - 6111936*s + 167914944",
+  "four_cycle_three_cycle_closure_orders": [
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24
+  ],
+  "rational_diagonal_exceptions": [
+    {
+      "j": 0,
+      "constant": 8,
+      "candidate_values": [
+        [
+          -8,
+          -4392
+        ],
+        [
+          -4,
+          -256
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          11
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          4,
+          -144
+        ],
+        [
+          8,
+          -3400
+        ]
+      ],
+      "only_rational_zero": -2
+    },
+    {
+      "j": 1,
+      "constant": -14,
+      "candidate_values": [
+        [
+          -14,
+          -200844
+        ],
+        [
+          -7,
+          -12425
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          19
+        ],
+        [
+          1,
+          -9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          7,
+          -9261
+        ],
+        [
+          14,
+          -173936
+        ]
+      ],
+      "only_rational_zero": -2
+    }
+  ],
+  "genus_lower_bound": 12,
+  "exact_genus_claimed": false,
+  "finiteness_import": "Faltings1983,Satz7,p365; written application only, not reproved.",
+  "scope": "Normalized rational even-numerator degree10 models, with full nonscalar-scale curve and separate classified reciprocal boundary. No effective point list or finiteness of raw twists/Q-isomorphism classes.",
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}

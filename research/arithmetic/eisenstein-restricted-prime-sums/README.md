@@ -26,6 +26,8 @@ scope; it is not a new calculation or an assurance upgrade.
 - [Uniform small coefficients in the asymmetric convolution](../ASYMMETRIC_UNIFORM_COEFFICIENTS.md).
 - [Every-target unweighted asymmetric counts at the semigroup scale](../ASYMMETRIC_SEMIGROUP_SCALE.md).
 - [Asymmetric theory for every fixed modulus and quadratic character](../ASYMMETRIC_FIXED_MODULUS_THEORY.md).
+- [Abelian subgroup splitting with nonnested allowed sets](../ASYMMETRIC_SUBGROUP_SPLITTING.md).
+- [Exact sign transfer and its periodic-replacement obstruction](../ASYMMETRIC_SIGN_TRANSFER.md).
 - [Averaging auxiliary coefficients and a positive distribution level](../ASYMMETRIC_AUXILIARY_AVERAGE.md).
 - [Half-dimensional criterion for two modulus-12 summands](../ASYMMETRIC_SEMILINEAR_SIEVE.md).
 - [Critical-level switching and the two-large-prime bound](../ASYMMETRIC_CRITICAL_SWITCHING.md).
@@ -90,6 +92,13 @@ chosen quadratic splitting condition. A separate clause gives every-target
 counts at the full two-sided logarithmic scale while permitting boundedly
 many large excluded prime factors in the second summand; eliminating them
 remains open.
+
+The subgroup extension permits nonnested first-side and quadratic splitting
+sets. Its finite residue density determines admissibility, and its target
+product uses primes outside both allowed sets. The resulting C4+C3 count
+does not force two C12 summands. The sign-transfer note retains the signed
+main model and identifies the full-order cost of a fixed-periodic
+replacement of the remaining coefficient. The critical remainder stays open.
 
 For the simultaneous modulus-12 restriction, the new pointwise note proves
 upper bounds and a natural-scale large-prime tail. A separate elementary
@@ -198,6 +207,8 @@ python3 verify_asymmetric_cofactors.py
 python3 verify_asymmetric_switching.py
 python3 verify_asymmetric_auxiliary_average.py
 python3 verify_fixed_modulus_asymmetric.py
+python3 verify_subgroup_asymmetric.py
+python3 verify_asymmetric_sign_transfer.py
 ```
 
 The retained receipts are [joint coset controls](joint_coset_distribution_checks.json)
@@ -206,7 +217,9 @@ with [uniform-family controls](asymmetric_uniform_checks.json) and
 [cofactor controls](asymmetric_cofactor_checks.json), and
 [switching controls](asymmetric_switching_checks.json),
 [auxiliary-average controls](asymmetric_auxiliary_average_checks.json), and
-[fixed-modulus controls](fixed_modulus_asymmetric_checks.json). All commands reject
+[fixed-modulus controls](fixed_modulus_asymmetric_checks.json),
+[subgroup controls](subgroup_asymmetric_checks.json), and
+[sign-transfer controls](asymmetric_sign_transfer_checks.json). All commands reject
 Python `-O`, because their exact finite assertions must run.
 The first checks the asymmetric singular recurrences, 240 scalar identities,
 and every invertible matrix modulo 49, with wrong-coefficient controls. The
@@ -230,6 +243,12 @@ odd characters, prime 3, fixed-place densities, 21,500 shifted second-kernel
 cases, 8,028 strict divisor-pairing identities, 22,612 restricted-cofactor
 fibres and nine negative controls. Their receipts identify all finite ranges
 and current input bytes.
+The subgroup checker adds 13 nested and nonnested configurations, including
+odd index, 144 local integrals at 3, 5 and 7, and recoverable directives on
+the recorded finite ranges. The sign-transfer checker covers finite
+convolutions, exact signs, Rosser support and least-squares projection
+identities. These diagnostics do not establish asymptotic means or the
+critical remainder.
 
 ## Java and assurance limits
 

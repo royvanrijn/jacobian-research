@@ -14,7 +14,7 @@ import platform
 from math import isqrt
 import sympy as sp
 from sympy.polys.rings import ring
-from verify_paired_critical_trace_chart import Algebra,charpoly
+from verify_paired_critical_trace_chart import Algebra,charpoly,quadratic_evaluate
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent.parent
@@ -183,6 +183,10 @@ def diagonal_certificate(h):
 def good29_control():
     h=6;p=29;sv=22
     c,S0,N0=fixed_slope(h,2)
+    require(p>4*h+1,"Euler denominators at the control prime")
+    for expression in c+N0.all_coeffs()+[N0.eval(1)]:
+        require(all(sp.Rational(v).q%p for v in sp.Poly(expression,s).all_coeffs()),
+                "Nonintegral Hensel family coefficient at29")
     def red(x):
         x=sp.Rational(x)
         return int(x.p)*pow(int(x.q),-1,p)%p
@@ -198,6 +202,8 @@ def good29_control():
         C.append(B.add(B.mul(theta,C[-1]),B.mul(B.mul(rr,rr),C[-2]),-1))
     a=B.zero
     for j,nj in enumerate(N):a=B.add(a,B.scale(C[j],nj))
+    require(quadratic_evaluate(B,N,theta,B.mul(rr,rr))==
+            (B.scale(B.mul(a,rr),-1),a),"Direct critical value relation")
     M=B.mul(B.mul(a,a),d)
     cm=charpoly(B.columns(M),p)
     def disc(cs):
@@ -213,6 +219,11 @@ def good29_control():
     require(any(a[1:]),"Secant accidentally scalar")
     require(B.mul(rr,rr)!=B.scale(B.one,B.mul(rr,rr)[0]),"Pair product scalar")
     require(sum(N)%p==0,"Distinguished zero value")
+    require(sum(j*v for j,v in enumerate(N))%p==0,"Distinguished derivative")
+    critical=[(2*j-1)*v%p for j,v in enumerate(N)]
+    expected_RN=[25*((S[j-1] if j else 0)-(S[j] if j<len(S) else 0))%p
+                 for j in range(len(N))]
+    require(critical==expected_RN,"Direct Euler/critical norm binding")
     # Full discriminant in F29(w), with field subtraction normalizing units.
     z,w=sp.symbols("z w")
     field=sp.GF(p).frac_field(w)
@@ -239,6 +250,8 @@ def main():
     retained=json.loads((HERE/"odd_affine_critical_trace_curve_inputs.json").read_text())
     curves={str(h):build_curve(h) for h in (2,6)}
     require(curves==retained["curves"],"Explicit curve input mismatch")
+    require(all(max(map(int,curves[str(h)]["accessory_s_coefficients"]))==2*h
+                for h in (2,6)),"Exact accessory degree")
     positive=good29_control()
     require(positive==retained["good29_control"],"Good control input mismatch")
     # Uniform nonzero-accessory specialization, controlled in retained degrees.
@@ -258,6 +271,7 @@ def main():
         HERE/"UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
         HERE/"MIXED_RECIPROCAL_COUPLED_ODE.md",
         HERE/"sources/jones-beauville-1304.5444v1.pdf",
+        HERE/"sources/milne-ant300.pdf",
         HERE/"ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md"]
     result={"schema_version":1,"result":"PASS","python":platform.python_version(),
         "sympy":sp.__version__,"checker_sha256":digest(Path(__file__)),

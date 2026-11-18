@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md",
+  "assurance": "Internal written proof, exact symbolic replay, and completed separate root and Knots critical mathematical reviews. No formal verification, external human review or independent external replay is claimed.",
+  "claims": {
+    "uniform_operator": "For odd numerator degree m=2h+1, h>=2, normalized affine canonical trace theta=s+t*rho gives D=2(L+k_h*R)q^2. For t!=-2 this is equivalent to the explicit linear polynomial operator kernel.",
+    "generic_accessory_curve": "Away from the diagonal zeros, the unique monic kernel is obtained by triangular recurrence; its coefficients have the stated s-degree bounds, and N(1)=0 is one nonzero accessory equation of s-degree at most 2h.",
+    "complete_good_open": "The written converse and listed discriminant/norm conditions are equivalent to good normalized affine-trace paired pencils, including canonical sign and rational coefficient descent.",
+    "degree_ten_and_twenty_six": "Every rational good model in these affine-trace slices lies in the triangular chart: arbitrary rational denominator analysis and exhaustive signed-divisor evaluations leave only slope -2, which is excluded uniformly over characteristic zero.",
+    "degree_twenty_six_nonempty_good_open": "The exact good F29 point has a simple accessory root and all nondegeneracy units. Hensel lifting gives a Q29 point and an algebraic number-field point of degree at most twelve, with regular A26 monodromy. No Q-rational point is established."
+  },
+  "external_sources": [
+    {
+      "id": "jones-double-transposition",
+      "author": "Gareth A. Jones",
+      "title": "Characteristically simple Beauville groups, I: cartesian powers of alternating groups",
+      "version": "arXiv:1304.5444v1",
+      "primary_url": "https://arxiv.org/pdf/1304.5444v1",
+      "path": "research/arithmetic/sources/jones-beauville-1304.5444v1.pdf",
+      "direct_read": true,
+      "locator": "Proposition 6.1(3), printed page 9",
+      "statement": "A primitive permutation group of degree at least nine containing a double transposition contains the alternating group.",
+      "application": "The infinity cycle fixes one sheet and moves all others, forcing primitivity; finite paired simple critical points give double transpositions. All branch cycles are even, so the geometric group is the full alternating group.",
+      "limits": "Exact proposition and its degree hypothesis were inspected. This classification input is imported, not reproved by the finite checker.",
+      "sha256": "1cc4341c3c4285894a3aecc2a9c7156f9bc322cee58fc7a45f77f237142a20e3",
+      "bytes": 236422
+    },
+    {
+      "id": "milne-simple-root-hensel",
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "Version 3.00, 11 February 2008",
+      "primary_url": "https://www.jmilne.org/math/CourseNotes/ANT300.pdf",
+      "path": "research/arithmetic/sources/milne-ant300.pdf",
+      "direct_read": true,
+      "locator": "Proposition 7.31, printed page 113, PDF page 121",
+      "statement": "A simple residue root of an integral polynomial over a complete discretely valued field lifts uniquely to an integral root.",
+      "application": "At t=2, the accessory has a simple root s=22 modulo 29 and every good-open test is a unit. The lifted algebraic root yields a good Q29 point and a number-field point embedded in Q29.",
+      "limits": "The exact primary proposition was read. Hensel lifting gives a local or algebraic point, not a rational Q point.",
+      "sha256": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+      "bytes": 1328468
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path": "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md",
+      "role": "Complete uniform proof, exact reconstruction and converse, rational exception proof, and arithmetic scope.",
+      "sha256": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+      "bytes": 15101
+    },
+    {
+      "path": "research/arithmetic/verify_odd_affine_critical_trace_curves.py",
+      "role": "Rebuilds the full h2/h6 curve input over Q(t)[s]; verifies generic operator controls, exact arithmetic exception certificates and the full good F29/discriminant control.",
+      "sha256": "0718bc5a6ab816a100b838ba3245ed3420f259e68c95c892e93c05eaffe62a47",
+      "bytes": 12616
+    },
+    {
+      "path": "research/arithmetic/odd_affine_critical_trace_curve_inputs.json",
+      "role": "Complete exact coefficient data for both accessory curves, monic kernels and the good degree26 finite-field control.",
+      "sha256": "4c7e15fa8dc95993f47fb2eda257e6eab0321c4799e1a161a1f3594950f91cb7",
+      "bytes": 180922
+    },
+    {
+      "path": "research/arithmetic/odd_affine_critical_trace_curves_verification.json",
+      "role": "Actual successful final default checker replay and current dependency pins.",
+      "sha256": "5d615a5f06bc5f4cd5536d7d0f48bccd1243f7221307f8c47186d4cea5bd57bc",
+      "bytes": 11290
+    },
+    {
+      "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
+      "locator": "Theorems 1-2",
+      "role": "Canonical scale, secant and trace identities; rational basis reconstruction of the unlabelled paired algebra.",
+      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "bytes": 12178
+    },
+    {
+      "path": "research/arithmetic/verify_paired_critical_trace_chart.py",
+      "role": "Exact finite algebra arithmetic and characteristic-polynomial library used by the checker.",
+      "sha256": "8ff45b1e41ba1d65f504d5888c55b599671c62bb0a9ad02d317af5855ad44ffd",
+      "bytes": 11939
+    },
+    {
+      "path": "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
+      "role": "Earlier even-degree numerator context and provenance; the new odd-degree theorem has its own proof and does not extend the even-degree obstruction by assertion.",
+      "sha256": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+      "bytes": 9386
+    },
+    {
+      "path": "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md",
+      "role": "Known degree10 scalar-canonical-scale model used as a negative affine-trace chart control.",
+      "sha256": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+      "bytes": 16771
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md",
+      "role": "Leading discriminant coefficient and paired branch-value resultant formula.",
+      "sha256": "5faedbb98cdb1af05ad61799b43f5538a9f20dbfd15e8e7023399c653313b8d1",
+      "bytes": 17236
+    }
+  ],
+  "internal_critical_audit": {
+    "result": "PASS",
+    "reviewers": [
+      {
+        "reviewer": "/root",
+        "result": "PASS",
+        "scope": "Independently checked the full norm/Euler reconstruction, q-square critical jets, formal-conic universal forcing identity, leading-term converse, triangular homogeneity and final zero row, nonzero closure specialization, complete good-open descent, uniform slope-minus-two proof, arbitrary-denominator rational-slope certificate, and Q29/number-field inference.",
+        "replay_receipt": ".scratch/root-odd-affine-critical-trace-replay.json",
+        "receipt_comparison": "Root's actual full final checker replay exactly matches the canonical final receipt. Completed mathematical review independently derived the formal-conic coefficients, slope-minus-two subleading coefficient and rational-slope denominator/integer-divisor certificate, and checked all good-open, descent, alternating-monodromy and Q29/number-field conclusions."
+      },
+      {
+        "reviewer": "/root/moonshot_knots",
+        "result": "PASS",
+        "scope": "Independent full mathematical and checker review, including a separate derivation of H(D)=L*q*J, triangular recurrence and degree bounds, rational-denominator exception proof, slope-minus-two obstruction, complete converse/descent, alternating-group hypothesis and local arithmetic scope.",
+        "replay_receipt": ".scratch/independent_odd_affine_critical_trace_final_replay.json",
+        "receipt_comparison": "Actual full independent internal replay of the final clarified note and unchanged checker/input exactly matches the canonical receipt. No mathematical correction requested."
+      }
+    ],
+    "limits": "Internal agent review and exact replay only. All external and formal assurance flags remain false."
+  },
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "arithmetic": "Exact rational functions, polynomial coefficients, finite algebras and finite-field discriminants."
+  },
+  "scope_limits": [
+    "No rational Q point or global rational-point obstruction for the degree26 good accessory curve is established.",
+    "The degree26 positive result is a local Q29 family point and a number-field point of degree at most twelve; it is not rational descent to Q.",
+    "The unique monic-kernel construction is generic in the slope. Complete rational exceptional-slope analysis is proved only for h2 and h6, not every h.",
+    "The h2 affine-trace curve covers nonconstant canonical scale. Scalar canonical scale is a separate boundary; constant paired product is not synonymous with scalar signed scale.",
+    "The normalized u0=1 chart need not be reached from an arbitrary rational z-coordinate by a rational rescaling without a square-root twist.",
+    "Finite symbolic controls do not prove all-h claims by sampling; uniformity comes from the written polynomial identity and recurrence arguments.",
+    "The model is the even-in-z Laurent slice N(z^2)/z with odd-degree N, not every polynomial pencil of degree26.",
+    "Full geometric alternating monodromy imports Jones's stated primitive-group theorem. Arithmetic regularity requires the displayed leading square class to vanish over the base field.",
+    "No rational parametrization, global priority claim, polynomial Keller realization or Jacobian-conjecture consequence is asserted."
+  ],
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false,
+  "priority_assessment": "Not established; no novelty claim."
+}

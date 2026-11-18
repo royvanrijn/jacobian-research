@@ -23,10 +23,9 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Fixed rational A3 maps with infinitely many A_n whole field fibres in every admissible degree | Internal result | proved | [Source](../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md) |
 | One fixed A4 map for each uniform alternating Hasse product family | Internal result | proved | [Source](../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md) |
 | All-length odd-prime plane Keller lifts with a provably nonpolynomial radial limit | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) |
+| Positive-genus ramification excludes every rational source and target correction of BGV seeds | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_CRITICAL_GENUS_AND_RATIONAL_CORRECTIONS.md) |
 
-**Computed obligations:** 16 unresolved; 4 resolved within their exact scope.
-
-**Assessment update needed:** GAP-JAC-ALTERNATING-ABSTRACT-REALIZATION now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
+**Computed obligations:** 17 unresolved; 4 resolved within their exact scope.
 
 
 Scope limits:
@@ -57,6 +56,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Which actual plane Keller maps outside the now-closed retained marked quadratic ruling-six model satisfy its remaining structural/classification hypotheses? The common source pencil and whole boundary charts are now proved; higher rulings, other deck classes and ramified-prime integrality remain separate.](affine-complements/RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) — GAP-RULING-SIX
 - **mathematical / open:** [Can actual Keller/source constraints force one generic first velocity into the ordinary codifferent in a source-finite frame, eliminating the exact polar marked traces at original omitted ramified primes?](../hessian/hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md) — GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT
 - **mathematical / open:** [For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective.](../hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md) — GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION
-- **mathematical / proved (discharged):** Authored question: [Can the abstract natural alternating action occur for a polynomial Keller extension different from the excluded Laurent extensions?](monodromy-theory/ALTERNATING_LAURENT_FEASIBILITY.md) — GAP-JAC-ALTERNATING-ABSTRACT-REALIZATION
+- **mathematical / open:** [Realize or universally exclude alternating generic monodromy for polynomial plane Keller maps beyond the proved A4 exclusions. Known dimension-three alternating realizations settle the earlier abstract action question; the reported natural A5 result remains a primary-source verification obligation here.](../arithmetic/KNOT_HURWITZ_KELLER_MOONSHOT_AUDIT.md) — JAC-PLANE-ALTERNATING-POLYNOMIAL-REALIZATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

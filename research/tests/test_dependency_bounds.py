@@ -6,7 +6,7 @@ from types import SimpleNamespace
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from dependency_bounds import bound_comparisons
+from dependency_bounds import bound_comparisons, bounds_records
 
 
 class BoundsTests(unittest.TestCase):
@@ -37,6 +37,20 @@ class BoundsTests(unittest.TestCase):
         compared = bound_comparisons(graph)
         self.assertEqual(len(compared), 2)
         self.assertTrue(all(not row["opportunities"] for row in compared))
+
+    def test_proved_exclusion_retires_comparison_while_retaining_bound(self):
+        graph = self.graph([("old", "excluded class", "lower", 4, "proved", []),
+                            ("new", "excluded class", "lower", 6, "proved", []),
+                            ("other", "separate class", "lower", 2, "proved", [])])
+        graph.nodes["exclusion"] = {"title": "Exclusion theorem"}
+        for node_id in ("old", "new"):
+            graph.nodes[node_id]["bounds"][0]["domain_excluded_by"] = "exclusion"
+        for state in ("proved", "conditional", "stale"):
+            with self.subTest(state=state):
+                graph.evaluate()["exclusion"] = {
+                    "state": state, "assumptions": [], "dependency_coverage": "partial"}
+                self.assertEqual(len(bounds_records(graph)), 3)
+                self.assertEqual(len(bound_comparisons(graph)), 1 if state == "proved" else 2)
 
     def test_inconsistent_bounds_are_exposed(self):
         graph = self.graph([("upper", "same", "upper", 3, "proved", []),

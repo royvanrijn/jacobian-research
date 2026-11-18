@@ -1,0 +1,239 @@
+{
+  "arithmetic": "Python standard-library integers and Fraction",
+  "checker_sha256": "ae29bcbeeb9fc7b950176fceb30d94724961c7bba53d4c07e8d425415ee7b7ca",
+  "checks": {
+    "allowed_coefficient_invariance": 2008,
+    "class_changing_intersection": 1,
+    "common_directive_support": 10873,
+    "coset_order_divisibility": 80,
+    "directive_gcds": 10873,
+    "directive_recovery": 10873,
+    "filter_density": 220,
+    "finite_target_support": 13,
+    "first_coefficient_target_zero": 1,
+    "first_euler_identity": 1520,
+    "first_kernel_support": 51,
+    "inadmissible_exact_zero": 15877,
+    "intersection_scaling": 340,
+    "intersection_target_compensation": 35,
+    "mean_normalization": 220,
+    "mixed_quadratic_extra_sieve_density": 2,
+    "mixed_quadratic_extra_sieve_dimension": 1,
+    "mixed_quadratic_gamma": 1,
+    "mixed_quadratic_intersection_counterexample": 1,
+    "negative_controls": 4,
+    "normalized_directive_fibres": 10873,
+    "odd_index_gamma_table": 1,
+    "one_sided_and_neither_target": 72,
+    "one_sided_target_compensation": 5,
+    "p_adic_line_integrals": 144,
+    "parity": 220,
+    "restored_dimension": 13,
+    "rough_dimension": 13,
+    "rough_directive_residuals": 10873,
+    "rough_mass_positivity": 144,
+    "second_coefficient_target_zero": 1,
+    "second_kernel_support": 40,
+    "shifted_kernel_degree": 256,
+    "upper_dimension": 13
+  },
+  "configurations": [
+    {
+      "H": [
+        1
+      ],
+      "K": [
+        1
+      ],
+      "L": 6,
+      "index": 2
+    },
+    {
+      "H": [
+        1
+      ],
+      "K": [
+        1,
+        9
+      ],
+      "L": 10,
+      "index": 4
+    },
+    {
+      "H": [
+        1,
+        9
+      ],
+      "K": [
+        1,
+        9
+      ],
+      "L": 10,
+      "index": 2
+    },
+    {
+      "H": [
+        1,
+        5
+      ],
+      "K": [
+        1,
+        7
+      ],
+      "L": 12,
+      "index": 2
+    },
+    {
+      "H": [
+        1,
+        7
+      ],
+      "K": [
+        1,
+        5
+      ],
+      "L": 12,
+      "index": 2
+    },
+    {
+      "H": [
+        1,
+        13
+      ],
+      "K": [
+        1,
+        9,
+        11
+      ],
+      "L": 14,
+      "index": 3
+    },
+    {
+      "H": [
+        1,
+        9,
+        11
+      ],
+      "K": [
+        1,
+        9,
+        11
+      ],
+      "L": 14,
+      "index": 2
+    },
+    {
+      "H": [
+        1,
+        3,
+        9,
+        11
+      ],
+      "K": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "L": 16,
+      "index": 2
+    },
+    {
+      "H": [
+        1,
+        15
+      ],
+      "K": [
+        1,
+        7,
+        9,
+        15
+      ],
+      "L": 16,
+      "index": 4
+    },
+    {
+      "H": [
+        1,
+        17
+      ],
+      "K": [
+        1,
+        7,
+        13
+      ],
+      "L": 18,
+      "index": 3
+    },
+    {
+      "H": [
+        1,
+        9
+      ],
+      "K": [
+        1,
+        9,
+        13,
+        17
+      ],
+      "L": 20,
+      "index": 4
+    },
+    {
+      "H": [
+        1,
+        11,
+        19,
+        29
+      ],
+      "K": [
+        1,
+        7,
+        13,
+        19
+      ],
+      "L": 30,
+      "index": 2
+    },
+    {
+      "H": [
+        1,
+        41
+      ],
+      "K": [
+        1,
+        11,
+        23,
+        25,
+        29,
+        37
+      ],
+      "L": 42,
+      "index": 6
+    }
+  ],
+  "directive_component_limit": 300,
+  "finite_target_limit": 1800,
+  "local_primes": [
+    3,
+    5,
+    7
+  ],
+  "local_target_valuations": [
+    0,
+    1,
+    2
+  ],
+  "scope": "Exact finite arithmetic diagnostics only; not an analytic theorem verifier, independent whole-proof replay, formal verification or external review.",
+  "source_sha256": {
+    "research/arithmetic/ASYMMETRIC_FIXED_MODULUS_THEORY.md": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+    "research/arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md": "c7564c9069656eafcaf4ff417042dee3b3c354f76cca03e854afba1a5a085f62",
+    "research/arithmetic/ASYMMETRIC_SEMIGROUP_SCALE.md": "0543dba3878558cc47cae197a25d6371ba6b7d2110183b6f2de738d06b58cccb",
+    "research/arithmetic/ASYMMETRIC_SUBGROUP_SPLITTING.md": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+    "research/arithmetic/ASYMMETRIC_UNIFORM_COEFFICIENTS.md": "28fa55f597a0f485cdfe943c67a6910dc3b109daae9730ec7bd9e34f82a6f0f5",
+    "research/arithmetic/FIXED_PERIODIC_DIVISOR_BOXES.md": "8e955cbcb681f81ee8b4e3aedcd4ac40757cacad86bbbdd4799de3ef12824201",
+    "research/arithmetic/sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+    "research/arithmetic/sources/heath-brown-d3-progressions-1986.pdf": "7102515f18e1498eb69b5c8dcc0dc094c5c94d73b4a710ec84fefb94d91e9fd0"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,584 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "0718bc5a6ab816a100b838ba3245ed3420f259e68c95c892e93c05eaffe62a47",
+  "source_sha256": {
+    "research/arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md": "8d53cd8b940e25ee11d2cd817d9356e7f8ce79692c40d68af5d0d06b80a03978",
+    "research/arithmetic/odd_affine_critical_trace_curve_inputs.json": "4c7e15fa8dc95993f47fb2eda257e6eab0321c4799e1a161a1f3594950f91cb7",
+    "research/arithmetic/verify_paired_critical_trace_chart.py": "8ff45b1e41ba1d65f504d5888c55b599671c62bb0a9ad02d317af5855ad44ffd",
+    "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+    "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+    "research/arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md": "2e29fea37b08fd94ffdd497e5887e6a3b8b4620385684cfa29607bc8719ee430",
+    "research/arithmetic/sources/jones-beauville-1304.5444v1.pdf": "1cc4341c3c4285894a3aecc2a9c7156f9bc322cee58fc7a45f77f237142a20e3",
+    "research/arithmetic/sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+    "research/arithmetic/ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md": "5faedbb98cdb1af05ad61799b43f5538a9f20dbfd15e8e7023399c653313b8d1"
+  },
+  "symbolic_universal_controls": [
+    {
+      "h": 1,
+      "universal_identity": true,
+      "slope_minus_two_top_coefficient": "0"
+    },
+    {
+      "h": 2,
+      "universal_identity": true,
+      "slope_minus_two_top_coefficient": "-24*s"
+    },
+    {
+      "h": 3,
+      "universal_identity": true,
+      "slope_minus_two_top_coefficient": "-104*s"
+    }
+  ],
+  "curve_accessory_s_degrees": {
+    "2": 4,
+    "6": 12
+  },
+  "rational_slope_exception_certificates": {
+    "2": [
+      {
+        "j": 0,
+        "leading_coefficient": -1,
+        "constant": 8,
+        "denominator_prime_tests": [],
+        "integer_candidate_values": [
+          [
+            -8,
+            -4392
+          ],
+          [
+            -4,
+            -256
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            11
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            4,
+            -144
+          ],
+          [
+            8,
+            -3400
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      },
+      {
+        "j": 1,
+        "leading_coefficient": -5,
+        "constant": -14,
+        "denominator_prime_tests": [
+          {
+            "prime": 5,
+            "valuation_gap": 1,
+            "required_positive_multiple": 2
+          }
+        ],
+        "integer_candidate_values": [
+          [
+            -14,
+            -200844
+          ],
+          [
+            -7,
+            -12425
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            19
+          ],
+          [
+            1,
+            -9
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            7,
+            -9261
+          ],
+          [
+            14,
+            -173936
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      }
+    ],
+    "6": [
+      {
+        "j": 0,
+        "leading_coefficient": -1,
+        "constant": 24,
+        "denominator_prime_tests": [],
+        "integer_candidate_values": [
+          [
+            -24,
+            -37323275340452376
+          ],
+          [
+            -12,
+            -8946795882000
+          ],
+          [
+            -8,
+            -64962994296
+          ],
+          [
+            -6,
+            -1855077816
+          ],
+          [
+            -4,
+            -9973056
+          ],
+          [
+            -3,
+            -167736
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            24
+          ],
+          [
+            1,
+            24
+          ],
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            -75000
+          ],
+          [
+            4,
+            -5757936
+          ],
+          [
+            6,
+            -1311738096
+          ],
+          [
+            8,
+            -50320119000
+          ],
+          [
+            12,
+            -7561422605856
+          ],
+          [
+            24,
+            -34332419869822776
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      },
+      {
+        "j": 1,
+        "leading_coefficient": -5,
+        "constant": -30,
+        "denominator_prime_tests": [
+          {
+            "prime": 5,
+            "valuation_gap": -1,
+            "required_positive_multiple": 10
+          }
+        ],
+        "integer_candidate_values": [
+          [
+            -30,
+            -2712468646404106380
+          ],
+          [
+            -15,
+            -658944955966830
+          ],
+          [
+            -10,
+            -4923855661480
+          ],
+          [
+            -6,
+            -9275388180
+          ],
+          [
+            -5,
+            -924830880
+          ],
+          [
+            -3,
+            -838530
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            20
+          ],
+          [
+            1,
+            -30
+          ],
+          [
+            2,
+            20
+          ],
+          [
+            3,
+            -375000
+          ],
+          [
+            5,
+            -605443930
+          ],
+          [
+            6,
+            -6558689880
+          ],
+          [
+            10,
+            -4020311312580
+          ],
+          [
+            15,
+            -576230648005980
+          ],
+          [
+            30,
+            -2537282086802659680
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      },
+      {
+        "j": 2,
+        "leading_coefficient": -9,
+        "constant": 16,
+        "denominator_prime_tests": [
+          {
+            "prime": 3,
+            "valuation_gap": 2,
+            "required_positive_multiple": 8
+          }
+        ],
+        "integer_candidate_values": [
+          [
+            -16,
+            -2578381324332464
+          ],
+          [
+            -8,
+            -584666838864
+          ],
+          [
+            -4,
+            -89751104
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            -59
+          ],
+          [
+            1,
+            -9
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            4,
+            -51817824
+          ],
+          [
+            8,
+            -452880986000
+          ],
+          [
+            16,
+            -2273918589759024
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      },
+      {
+        "j": 3,
+        "leading_coefficient": -13,
+        "constant": -38,
+        "denominator_prime_tests": [
+          {
+            "prime": 13,
+            "valuation_gap": 1,
+            "required_positive_multiple": 6
+          }
+        ],
+        "integer_candidate_values": [
+          [
+            -38,
+            -120039360660116241228
+          ],
+          [
+            -19,
+            -29379074878094748
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            12
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            19,
+            -26433394005613308
+          ],
+          [
+            38,
+            -113879336566914177000
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      },
+      {
+        "j": 4,
+        "leading_coefficient": -17,
+        "constant": 8,
+        "denominator_prime_tests": [
+          {
+            "prime": 17,
+            "valuation_gap": 1,
+            "required_positive_multiple": 4
+          }
+        ],
+        "integer_candidate_values": [
+          [
+            -8,
+            -1103948187432
+          ],
+          [
+            -4,
+            -168257152
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            8
+          ],
+          [
+            1,
+            -42
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            4,
+            -97143312
+          ],
+          [
+            8,
+            -855114589000
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      },
+      {
+        "j": 5,
+        "leading_coefficient": -21,
+        "constant": -46,
+        "denominator_prime_tests": [
+          {
+            "prime": 3,
+            "valuation_gap": 1,
+            "required_positive_multiple": 2
+          },
+          {
+            "prime": 7,
+            "valuation_gap": 1,
+            "required_positive_multiple": 2
+          }
+        ],
+        "integer_candidate_values": [
+          [
+            -46,
+            -1914934199832803267756
+          ],
+          [
+            -23,
+            -469282164070553421
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            -71
+          ],
+          [
+            1,
+            -21
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            23,
+            -430104207829199375
+          ],
+          [
+            46,
+            -1833409912489618429776
+          ]
+        ],
+        "rational_roots": [
+          -2
+        ]
+      }
+    ]
+  },
+  "good29_control": {
+    "h": 6,
+    "prime": 29,
+    "s": 22,
+    "t": 2,
+    "q_coefficients_ascending": [
+      24,
+      18,
+      4,
+      22,
+      1,
+      11,
+      1
+    ],
+    "N_coefficients_ascending": [
+      16,
+      5,
+      15,
+      13,
+      18,
+      11,
+      10,
+      7,
+      11,
+      4,
+      22,
+      28,
+      13,
+      1
+    ],
+    "S_coefficients_ascending": [
+      25,
+      19,
+      23,
+      3,
+      20,
+      23,
+      7,
+      8,
+      13,
+      1,
+      4,
+      6,
+      1
+    ],
+    "secant_coefficients_ascending": [
+      27,
+      4,
+      23,
+      26,
+      26,
+      25
+    ],
+    "squared_value_polynomial_ascending": [
+      6,
+      20,
+      7,
+      17,
+      4,
+      15,
+      1
+    ],
+    "good_units": {
+      "q0": 24,
+      "Discq": 23,
+      "DiscS": 1,
+      "S1": 8,
+      "norm_secant": 19,
+      "norm_d": 25,
+      "norm_Delta": 9,
+      "norm_M": 6,
+      "disc_value_polynomial": 7,
+      "accessory_s_derivative": 13
+    },
+    "full_discriminant_identity": true,
+    "secant_nonconstant": true,
+    "paired_product_nonconstant": true
+  },
+  "scope": "Written uniform operator equivalence plus complete good-open conditions. Exact h2/h6 curve data rebuilt, rational slope -2 excluded, good h6 F29 point and simple accessory root establish a Q29/numberfield point. No rational Q point, global obstruction or exhaustive Q-point determination is asserted.",
+  "formal_verification": false,
+  "independent_external_replay": false,
+  "external_human_review": false
+}
