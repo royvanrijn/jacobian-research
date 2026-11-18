@@ -20,6 +20,20 @@ the affine dependence of M on R is the additional slice condition.
 The full nonreciprocal chart is larger. The singular spectral strata
 are separated below.
 
+The divisor-class bookkeeping in Section 3 is an application of classical
+elliptic-curve theory. In [Milne, *Elliptic Curves* (2006)](https://www.jmilne.org/math/Books/ectext6.pdf),
+Chapter I, Proposition 4.10 and the following group-law construction
+(printed pp.35--36) identify a smooth genus-one curve with its degree-zero
+Picard group once an origin is chosen. Here this applies over an algebraic
+closure to the smooth Weierstrass curve (11), with origin O, and justifies
+adding the points of the principal divisors (12)--(15). The resulting
+identity (14) gives no torsion condition on B. The finite-field nontorsion
+control in Section 4 uses the same book's Chapter II, Corollary 4.2
+(printed p.63): prime-to-p multiplication is bijective on the reduction
+kernel, hence prime-to-p torsion injects under good reduction. These
+general mechanisms are classical; the spectral transformation, accessory
+polynomial, and exact pairing criterion require their local derivations.
+
 ## 1. An exact trace criterion
 
 Work over a characteristic-zero field k. Fix h>=1, L=4h-1, and

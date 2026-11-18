@@ -7,6 +7,47 @@ from urllib.parse import urlsplit
 
 VERIFICATIONS = {"source_read", "citation_only", "application_pending"}
 USE_ROLES = {"context", "mathematical_input", "application_unverified"}
+ANTECEDENT_RELATIONS = {"known_result", "classical_corollary", "classical_method", "comparison_only"}
+
+
+def antecedent_issues(catalogue, graph):
+    """Check scoped novelty comparisons without adding mathematical proof routes."""
+    errors, identifiers = [], set()
+    papers = {paper["id"] for paper in catalogue.get("papers", [])}
+    for review in catalogue.get("antecedent_reviews", []):
+        review_id = review.get("id")
+        if not isinstance(review_id, str) or not review_id or review_id in identifiers:
+            errors.append("empty/duplicate antecedent review id: " + str(review_id))
+        identifiers.add(review_id)
+        for key in ("title", "application", "novelty_limit", "remaining_obligation", "inspection_scope"):
+            if not isinstance(review.get(key), str) or not review[key].strip():
+                errors.append("missing antecedent " + key + ": " + str(review_id))
+        if review.get("relation") not in ANTECEDENT_RELATIONS:
+            errors.append("invalid antecedent relation: " + str(review_id))
+        if not review.get("nodes"):
+            errors.append("antecedent review without claim nodes: " + str(review_id))
+        for node_id in review.get("nodes", []):
+            if node_id not in graph.nodes:
+                errors.append("unknown antecedent claim node: " + str(node_id))
+        if not review.get("references"):
+            errors.append("antecedent review without primary references: " + str(review_id))
+        for source in review.get("references", []):
+            if source.get("paper_id") not in papers:
+                errors.append("unknown antecedent cited resource: " + str(source.get("paper_id")))
+            for key in ("locator", "statement"):
+                if not isinstance(source.get(key), str) or not source[key].strip():
+                    errors.append("missing antecedent reference " + key + ": " + str(review_id))
+        if not review.get("proof_sources"):
+            errors.append("antecedent review without inspected proof: " + str(review_id))
+        for source in review.get("proof_sources", []):
+            try:
+                graph._source(source, review_id)
+                path = graph._path(source["path"])
+                if hashlib.sha256(path.read_bytes()).hexdigest() != source["sha256"]:
+                    errors.append("changed antecedent proof source: " + source["path"])
+            except (OSError, ValueError) as error:
+                errors.append(str(error))
+    return errors
 
 
 def bibliography_items(root, paths):
@@ -145,7 +186,9 @@ def reference_state(data, graph, paths=None):
                 if path not in retained:
                     errors.append("external theorem primary/source file lacks cited-resource mapping: "
                                   + node["id"] + " :: " + source["path"])
-    return {"papers": papers, "errors": errors, "complete": not errors,
+    errors.extend(antecedent_issues(catalogue, graph))
+    return {"papers": papers, "antecedent_reviews": catalogue.get("antecedent_reviews", []),
+            "errors": errors, "complete": not errors,
             "bibliography_items": len(wanted), "internal_citations": catalogue.get("internal_citations", [])}
 
 
@@ -166,6 +209,36 @@ def render_references(data, graph):
              f"**Catalogue:** {len(state['papers'])} cited resources; {state['bibliography_items']} current "
              "TeX bibliography entries accounted for, including own-paper citations tracked separately.", "",
              "[Graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Scope](SCOPES.md)", ""]
+    reviews = state["antecedent_reviews"]
+    if reviews:
+        mapped = {node_id for review in reviews for node_id in review["nodes"]}
+        principal = {result["id"] for topic in data.get("topics", []) for result in topic["results"]}
+        lines += ["## Classical background and novelty limits", "",
+                  f"{len(reviews)} scoped comparisons name {len(mapped)} DAG nodes, including "
+                  f"{len(mapped & principal)} of {len(principal)} principal results directly. "
+                  "This is a partial audit of identified proof components, not a count of fully reviewed theorems. "
+                  "A classical method does not establish the entire result or its priority. "
+                  "Comparisons add no proof routes and change no assurance flags. "
+                  "Inspected proof sources are hash-pinned; remaining obligations stay explicit.", "",
+                  "| Claim / inspected proof | Classical antecedent and application | Novelty limit / remaining comparison |",
+                  "|---|---|---|"]
+        papers_by_id = {paper["id"]: paper for paper in state["papers"]}
+        for review in reviews:
+            sources = "; ".join("[" + cell(source["path"]) + "](" + source["path"] + ") :: "
+                                + cell(source["locator"]) for source in review["proof_sources"])
+            references = []
+            for ref in review["references"]:
+                paper = papers_by_id.get(ref["paper_id"], {})
+                urls = paper.get("urls", [])
+                title = cell(paper.get("title", ref["paper_id"]))
+                linked = "[" + title + "](" + urls[0] + ")" if urls else title
+                references.append(linked + " :: " + cell(ref["locator"]) + ". " + cell(ref["statement"]))
+            lines.append("| **" + cell(review["title"]) + "** (" + review["id"] + "). "
+                         + cell(", ".join(review["nodes"])) + ". " + sources + " | "
+                         + review["relation"] + ". " + "; ".join(references) + " "
+                         + cell(review["application"]) + " Inspection: " + cell(review["inspection_scope"]) + " | "
+                         + cell(review["novelty_limit"]) + " Remaining: " + cell(review["remaining_obligation"]) + " |")
+        lines += [""]
     if state["errors"]:
         lines += ["## Reference issues", ""]
         lines += ["- " + error for error in state["errors"]]

@@ -136,12 +136,12 @@ Put
 \[
  S(n)=\sigma(n)-\sigma(n/4).
 \]
-For \(n=2^t m\), \(m\) odd, \(t\ge1\), define
+For an even \(n=2^t m\) with \(m\) odd and \(11\nmid n\), define
 \[
  \Delta(n)=\tau(m)\sqrt m\,2^{t/2}\frac{t+3}{2},\qquad
  E=\frac{2\Delta(n)}{3S(n)}.
 \]
-For every even \(n=2^t m\), \(m\) odd,
+For every such target,
 \[
  S(n)=3\cdot2^{t-1}\sigma(m)\ge\frac32 n,\qquad
  G(n)\ge\frac{12}{5}S(n)(1-E).                            \tag{M11.6}
@@ -160,6 +160,11 @@ sum is empty. For \(t\ge2\), the subtraction cancels half of every
 interior term because \(uv=1\). The triangle inequality gives the
 factor \((t+3)/2\); multiplicativity supplies \(\tau(m)\sqrt m\).
 This proves (M11.6) and handles arbitrarily deep two-adic valuations.
+The restriction \(11\nmid n\) is necessary: at \(n=22\), direct
+enumeration gives \(G(22)=4\), while the displayed lower bound would be
+\(432/5-(32/5)\sqrt{22}>56\). The single permitted ramified factor is
+removed before applying this estimate and restored only to the final
+value pair.
 The coarser bound \(E\le\tau(n)\sqrt n/S(n)\) also follows from
 \(\Delta(n)\le(3/2)\tau(n)\sqrt n\).
 
@@ -584,6 +589,26 @@ Run from the repository root:
 ```sh
 python3 research/arithmetic/verify_primitive_norm_minus11.py \
   --output research/arithmetic/primitive_norm_minus11_checks.json
+```
+
+Certificate verification requires active Python assertions. The checker rejects optimized execution (-O, -OO, or optimization enabled through PYTHONOPTIMIZE) before generating a receipt.
+
+The separate [coordinate membership verifier](verify_primitive_norm_coordinate_membership.py)
+authenticates every core flag through \(2^{25}\). Simultaneous sign change
+allows \(y\ge0\), and the reflection \(x\mapsto-x-y\) allows
+\(2x+y\ge0\), preserving the norm and gcd. The identity
+\(4Q=(2x+y)^2+11y^2\) gives exact enclosing integer limits.
+Keeping positive odd 11-unit norms with gcd one therefore enumerates
+the complete core independently of prime-support sieving. The two
+full bytearrays are compared directly before hashing; coverage-mask
+equality alone would not authenticate the summands. The shared
+[membership receipt](primitive_norm_coordinate_membership_checks.json)
+records this check and rejection of false high membership flags.
+Run from the repository root:
+
+```sh
+python3 research/arithmetic/verify_primitive_norm_coordinate_membership.py \
+  --output research/arithmetic/primitive_norm_coordinate_membership_checks.json
 ```
 
 The infinite spectral estimate is a written deduction from those imports,

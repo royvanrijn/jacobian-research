@@ -5,6 +5,13 @@ Standard library only. Every invocation runs the full fixed proof domains.
 The source-backed spectral and arithmetic proofs remain separate inputs;
 these computations do not establish those infinite theorems by themselves.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from array import array
 from bisect import bisect_right

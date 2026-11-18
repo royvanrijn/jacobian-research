@@ -89,6 +89,18 @@ The identity is formal in t,v,eta. Every fixed coefficient uses finitely
 many Gaussian contractions. Differentiating (3) in v and eta gives ALL
 original W,Y markers.
 
+The circular determinant identity is the multivariable Lagrange--Good
+inversion formula in Wick coordinates; see A. Abdesselam,
+[*A Physicist's Proof of the Lagrange--Good Multivariable Inversion Formula*](https://arxiv.org/pdf/math/0208174v1),
+Theorem1 and equations(34)-(40). That statement allows arbitrary component
+series, without requiring their constant terms to be nonzero. Introduce
+separate parameters t_i, apply the coefficient identity with G_i=H_i,
+and set every t_i=t; each resulting coefficient is a finite sum.
+The source v follows from the formal Wick translation Z to Z+v, applying
+the same identity to H(Z+v). Thus the determinant formula itself is
+classical; the finite-image and original-vacuum criteria below require
+the additional arguments given here.
+
 Here is a complete formal-residue proof, without invoking a multivariate
 Good theorem or a theorem stated only for one variable. For a numerator
 Q(t,Z) polynomial in Z at each t order, direct circular Wick contraction

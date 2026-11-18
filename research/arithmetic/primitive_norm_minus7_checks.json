@@ -1,5 +1,5 @@
 {
-  "checker_sha256": "1b94230b64e4ed9df2da3245226070fde39966a1e34284ed20a63953546c03f2",
+  "checker_sha256": "47bc97260e10f99f1b36243520e6f20690dcfc60569ab9f595448c727013eed9",
   "scope": "Complete fixed finite checks supporting the exact -7 classification and explicit count onset. The source-backed class arithmetic, joint spectral bounds and descent proof are separate inputs; this is not formal verification or external review.",
   "proof_domains_fixed": true,
   "identities": {

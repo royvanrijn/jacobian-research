@@ -246,6 +246,20 @@ Thus y-Tr(y)/n has zero differential in C(x,y). A rational function in
 x,y with both partial derivatives zero is constant in characteristic
 zero. Therefore y belongs to E_1.
 
+This descent of an algebraic primitive by normalized trace is classical.
+See Rosenlicht, [*On Liouville's theory of elementary functions* (1976),
+the separable-extension lemma and Proposition3, printed p486, and the
+algebraic case in the proof of Theorem3, p491](https://msp.org/pjm/1976/65-2/pjm-v65-n2-p19-s.pdf).
+The latter argument averages conjugates simultaneously for an indexed
+family of derivations; the proof above is its additive trace case.
+Here L/E_1 is finite separable and the common constants of the extended
+transcendence-basis derivations on C(x,y) are C. The same trace step
+underlies the replica primitive H(y) in(14c) and the all-first-partial
+rational-map statement below. The fixed-column Keller identity(14b)
+and the following recovery of x remain the specific application;
+Rosenlicht does not state those reconstruction conclusions or their
+integral refinements.
+
 Here is an elementary completion that needs no intermediate-surface
 classification or coordinate-primitive theorem. Take any E_1-embedding
 sigma of L into a finite normal closure. It fixes y and P_x,Q_x.

@@ -57,6 +57,17 @@ in M. Moreover B_f(t h)=h and ker B_f=Kf. Normalization gives
 
 ## 2. An intrinsic criterion for ACTUAL rank one
 
+The finite-orbit/rationality assertion below is the classical recurrence
+criterion of L. Kronecker, *Zur Theorie der Elimination einer Variabeln aus
+zwei algebraischen Gleichungen* (1881), Section IX, collected *Werke* II,
+pp.153-154 ([digitized original](https://www.e-rara.ch/download/pdf/5761162.pdf)).
+His Laurent-series convention at infinity becomes the present power-series
+convention by x=1/t; a finite relation among backward shifts is exactly a
+constant-coefficient recurrence. Its proof is finite linear algebra over the
+coefficient field and requires no analytic convergence. The Gaussian steps
+are the original-marker identity above and its descent to the actual quotient;
+the rationality criterion itself is not a new theorem.
+
 For a formal series q over a field,the backward-shift orbit
 span{B_1^j q:j>=0} is finite dimensional iff q is RATIONAL. This is the
 elementary linear-recurrence characterization of rational generating

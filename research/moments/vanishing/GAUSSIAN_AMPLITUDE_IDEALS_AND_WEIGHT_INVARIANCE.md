@@ -333,7 +333,11 @@ No generic-rank hypothesis is necessary. The exact Gaussian source H has
 H/tH=K by the [completion theorem](GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md),
 Section 1. The period surjection H->M gives a surjection K->M/tM.
 Since M is a nonzero torsion-free finite O-module, it is free over the PID O;
-its rank is dim_K(M/tM), hence is one. For general covariance the same
+its rank is dim_K(M/tM), hence is one. The freeness input is the classical
+PID theorem, [Stacks Project, Lemma15.22.11(3), tag0AUW](https://stacks.math.columbia.edu/tag/0AUW).
+Thus this rank-one conclusion is an elementary consequence of the separately
+proved Gaussian source fibre and finite torsion-free module structure.
+For general covariance the same
 completion proof uses the unperturbed operators partial_i-(C^-1 X)_i.
 
 Choose its generator g normalized by g(0)=1. This is possible because

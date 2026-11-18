@@ -668,6 +668,8 @@ def main() -> None:
     references = commands.add_parser("references", help="inspect cited papers and external input verification")
     references.add_argument("query", nargs="?")
     references.add_argument("--json", action="store_true")
+    references.add_argument("--antecedents", action="store_true",
+                            help="inspect scoped classical-background and novelty comparisons")
     source = commands.add_parser("source", help="inspect source declarations, mapping and downstream impact")
     source.add_argument("path", help="research-relative path")
     source.add_argument("--json", action="store_true")
@@ -734,6 +736,10 @@ def main() -> None:
             selected = next((record for record in records if record["id"] == args.id), None)
             if selected is None:
                 parser.error("unknown current topic or result: " + args.id)
+            reviews = [row for row in data.get("graph", {}).get("external_references", {}).get("antecedent_reviews", [])
+                       if args.id in row["nodes"]]
+            if reviews:
+                selected = {**selected, "antecedent_reviews": reviews}
             print(json.dumps(selected, indent=2, ensure_ascii=False))
         elif args.command == "search":
             words = args.query.lower().split()
@@ -860,16 +866,26 @@ def main() -> None:
         elif args.command == "references":
             assert graph is not None, "no dependency graph"
             state = reference_state(data, graph)
-            papers = state["papers"]
+            records = state["antecedent_reviews"] if args.antecedents else state["papers"]
             if args.query:
                 words = args.query.casefold().split()
-                papers = [paper for paper in papers
-                          if all(word in json.dumps(paper, ensure_ascii=False).casefold() for word in words)]
+                records = [record for record in records
+                           if all(word in json.dumps(record, ensure_ascii=False).casefold() for word in words)]
             if args.json:
-                print(json.dumps({"papers": papers, "issues": state["errors"]}, indent=2, ensure_ascii=False))
+                key = "antecedent_reviews" if args.antecedents else "papers"
+                print(json.dumps({key: records, "issues": state["errors"]}, indent=2, ensure_ascii=False))
             else:
-                for paper in papers:
-                    print(paper["id"] + " [" + paper["verification"] + "]: " + paper["citation"])
+                for record in records:
+                    if args.antecedents:
+                        print(record["id"] + " [" + record["relation"] + "]: " + record["title"])
+                        print("  Nodes: " + ", ".join(record["nodes"]))
+                        for source in record["references"]:
+                            print("  Source: " + source["paper_id"] + " :: " + source["locator"])
+                        print("  Application: " + record["application"])
+                        print("  Novelty limit: " + record["novelty_limit"])
+                        print("  Remaining: " + record["remaining_obligation"])
+                    else:
+                        print(record["id"] + " [" + record["verification"] + "]: " + record["citation"])
                 for error in state["errors"]:
                     print("ISSUE: " + error)
         elif args.command == "bounds":

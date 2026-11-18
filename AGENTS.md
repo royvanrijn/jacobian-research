@@ -7,6 +7,12 @@ Read [the research and paper working guide](working-guide/README.md) before
 developing results, changing their evidence, or preparing manuscripts. It covers
 repository hygiene, mathematical validity, paper writing and review requirements.
 
+Before starting a new mathematical approach, whenever possible check the primary
+literature for an exact solution or an argument that can be adapted. Inspect the
+actual theorem statements and hypotheses, identify the closest applicable result
+and remaining gap, and use that review to guide new proofs and computations.
+Do not infer novelty or an unsolved status merely from an unsuccessful search.
+
 - results/: current editions of released or submitted papers. Record pending submissions in paper metadata and preserve exact public deposits under published/.
 - unpublished/: manuscripts in preparation.
 - research/: current principal results, exact proof support and open questions by topic.

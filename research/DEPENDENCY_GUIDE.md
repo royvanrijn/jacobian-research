@@ -82,6 +82,23 @@ exact theorem scope and locator in the graph in addition to its bibliographic
 entry. Context references never become theorem premises merely because they
 appear in a bibliography.
 
+Classical-background comparisons live in
+`graph.external_references.antecedent_reviews` in the same catalogue.
+They name the affected DAG nodes, exact cited statements, inspected proof
+passages and hashes, hypothesis match, novelty limit and remaining obligation.
+They are displayed in [Cited resources](REFERENCES.md) and by
+`python3 research/scripts/research.py references --antecedents QUERY`;
+`show ID` includes the comparisons directly naming that node.
+Prioritize proof components without an existing checked classical application.
+Use `known_result` for an identified existing statement,
+`classical_corollary` for a checked deduction, `classical_method` for an
+established mechanism whose application still needs the local argument,
+and `comparison_only` when the source does not supply the required result.
+State the exact component in the application: naming a principal node does
+not label its entire theorem classical or reviewed. These records neither
+add implication arrows nor upgrade source, proof, formal or review assurances.
+The checker rejects unknown nodes/resources and changed inspected proof bytes.
+
 [Bounds](BOUNDS.md) retain the quantity, exact domain, direction, parameter
 restrictions and units. Numeric comparisons require all these to agree, and
 different conditional assumptions are kept separate. Symbolic criteria and

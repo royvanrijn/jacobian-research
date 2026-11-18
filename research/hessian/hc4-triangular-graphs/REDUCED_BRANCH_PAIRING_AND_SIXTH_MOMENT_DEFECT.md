@@ -95,6 +95,20 @@ REDUCED branch equation, despite its determinant having higher branch
 orders. This is a local assertion in any free chart of the projective
 B-module; no unproved global basis theorem is used.
 
+The matrix-factorization framework is classical: Eisenbud,
+[*Homological algebra on a complete intersection, with an application to
+group representations* (1980), Section5, Proposition5.1, printed p49;
+Theorem6.1, p52; Corollary6.3, p55](https://eisenbud.github.io/papers/pdfs/1980-002.pdf).
+His definition applies directly to the pair (G,N) in (4). At a closed
+point of H=0, the base B localized there is regular local and H is a
+nonzero nonunit, giving the classical two-periodic resolution over
+B/(H); after removing trivial summands, Corollary6.3 identifies the
+associated maximal Cohen--Macaulay module. These statements and the
+displayed Proposition5.1 proof were inspected in the original article.
+The specific input H*Lambda subset S, the trace description of N and
+its symmetry still come from the preceding argument. No new general
+matrix-factorization or hypersurface-module theorem is claimed here.
+
 ## 3. Every higher-even-moment residual module has the same refinement
 
 For every finite normal surface cover in Section 1 define the divisorial lattices

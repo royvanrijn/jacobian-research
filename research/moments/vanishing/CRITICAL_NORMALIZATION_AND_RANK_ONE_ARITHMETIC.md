@@ -60,6 +60,17 @@ too, for instance from its polynomial root equation and its invertible
 linearization 2I at the origin. No infinite Morse coordinate change is
 being assumed.
 
+The action/Hessian/residual factorization below uses established formal
+stationary-point Wick calculus. See T. Nguyen,
+[*The Perturbative Approach to Path Integrals: A Succinct Mathematical Treatment*](https://arxiv.org/html/1505.04809v5),
+J. Math. Phys.57 (2016),092301, Section1, Definition1.3, Lemma1.4,
+Theorem1.5 and Remark1.6: Wick expansion and coordinate invariance are
+formal identities independent of integral convergence. Here g=O(t) and
+L=I+O(t) make the parameter-dependent translations coefficientwise finite,
+including every original amplitude. The explicit common arithmetic ring
+and time-denominator bounds are separate assertions proved below; they do
+not follow merely from that classical normalization method.
+
 Write
 
     R_g(Y)=P(g+Y)-P(g)-grad P(g).Y-Y^T Hess P(g)Y/2.

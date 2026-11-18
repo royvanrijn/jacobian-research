@@ -58,7 +58,8 @@
     "global_statement": "Every even N>=2^71 with121 not dividingN is a sum of two positive primitive -11 norm values.",
     "distinct_value_lower_bound": "At least N^(2/3)/100000 ordered value pairs at the same onset.",
     "inert_core_onset": 1152921504606846976,
-    "remaining_exact_classification": "The exact identity is proved. Sharp bounds and35complete dyadic intervals cover all inert cores>=2^25; exact finite C+C coverage handles every eligible target through2^25. Split-prime descent and scalingby11 give all eligible targets, with no exceptions."
+    "remaining_exact_classification": "The exact identity is proved. Sharp bounds and35complete dyadic intervals cover all inert cores>=2^25; exact finite C+C coverage handles every eligible target through2^25. Split-prime descent and scalingby11 give all eligible targets, with no exceptions.",
+    "reduced_target_hypothesis": "The filtered estimates M11.6 and subsequent sieve use even n with11 not dividingn, after writing N=11^e*n with e=0 or1. The checker retains n22 as a negative scope regression; the main classification is unchanged."
   },
   "verification": "Root and separate internal agents reconstructed order/mass/finite quotient, local filters and exact arithmetic. No external review or formal verification.",
   "limitations": [
@@ -78,5 +79,22 @@
     ],
     "bin_uniform_margin": "1/1024",
     "scope": "Complete finite/infinite proof through the sourced spectral theorem and explicit descent; no unexhausted -11 exception family."
+  },
+  "coordinate_membership_authentication": {
+    "checker": "verify_primitive_norm_coordinate_membership.py",
+    "receipt": "primitive_norm_coordinate_membership_checks.json",
+    "reproduction": "python3 research/arithmetic/verify_primitive_norm_coordinate_membership.py --output research/arithmetic/primitive_norm_coordinate_membership_checks.json",
+    "scope": "Complete independent coordinate/gcd authentication of every core flag through2^25; compare entire bytearrays to the existing sieve before hashes. The target masks alone cannot authenticate summands.",
+    "assurance": "Internal exact replay using a different membership algorithm; no external review, formal verification or independent human replay."
+  },
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "negative_modes_checked": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "scope": "Execution contract for finite checks; no new mathematical theorem or review assurance."
   }
 }

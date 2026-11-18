@@ -3,6 +3,13 @@
 Standard library only. The written spectral argument and finite reductions
 supply the connection between these exact computations and the theorem.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 from bisect import bisect_right
 from fractions import Fraction as F
@@ -192,14 +199,8 @@ def interval_certificate():
 
 
 
-def minus8_finite_coverage(bound=1 << 27, short_bound=5000,
-                          regression_bound=10000):
-    from hashlib import sha256
-    from math import gcd, isqrt
-
-    assert bound >= regression_bound >= 121
-    assert 1 <= short_bound <= bound
-
+def core_membership_flags(bound):
+    """Exact C membership through bound, from complete forbidden-prime removal."""
     # Complete Eratosthenes sieve. Every forbidden prime at most bound
     # is removed; a larger prime cannot divide a positive value <=bound.
     prime = bytearray(b'\x01') * (bound + 1)
@@ -213,6 +214,18 @@ def minus8_finite_coverage(bound=1 << 27, short_bound=5000,
         if prime[p] and p % 8 in (5, 7):
             core[p::p] = b'\x00' * (bound//p)
     del prime
+    return core
+
+
+def minus8_finite_coverage(bound=1 << 27, short_bound=5000,
+                          regression_bound=10000):
+    from hashlib import sha256
+    from math import gcd, isqrt
+
+    assert bound >= regression_bound >= 121
+    assert 1 <= short_bound <= bound
+
+    core = core_membership_flags(bound)
     assert core[0] == 0 and core[1] == 1
     assert all(core[n] == 0 for n in (2,5,7,10,13,14,25,49))
     assert all(core[n] == 1 for n in (1,3,9,11,17,27,81,121))

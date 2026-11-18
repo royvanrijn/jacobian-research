@@ -243,6 +243,18 @@ All such transports centralize the initial marked 3-cycle, so their
 restrictions compose on the same outside set. The lower bound (7)
 then gives exact \(V_4\).
 
+The reduction from every closed word to these fundamental transports is
+the classical maximal-tree construction for a graph's fundamental group:
+see Hatcher, [*Algebraic Topology*, Proposition 1A.2, printed pp.84--85](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf).
+The breadth-first predecessor edges give the maximal tree; each remaining
+edge closes one tree-based loop, with permutation image (10). A reverse
+edge carries inverse transport, so these images generate the image of
+every closed path. This is a noncommutative fundamental-group argument,
+not merely a cycle-space computation. The specific 196-state exhaustion,
+correctness of the local transports, and exact resulting subgroup remain
+the required finite certificate; no new general stabilizer-generation
+principle is claimed.
+
 The [checker](verify_full_coalesced_attachment_holonomy.py) derives
 both the forced-last-factor domain and the entire closed move graph.
 No selected-loop list alone is used for this upper bound.

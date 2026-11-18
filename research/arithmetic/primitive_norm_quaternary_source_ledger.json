@@ -221,7 +221,8 @@
       "statements_used": [
         "Theorem1 and definition6 PDFp3; Lemma15 PDFp16; unnormalized Petersson norm PDFp2. All positive indices, arbitrary fixed primitive quaternary forms and quadratic theta characters. Applied with level≈t²,F(A,2)≈t⁴,det≈t⁴; target gcd averaged."
       ],
-      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
+      "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used.",
+      "dyadic_convention": "In v2 equation(5), scalar polynomial exponents must allow0: four squares contradicts the printed nu_i(2)>=1. This interpretation gives F(2I4,2)=4 and F(2I4,4)=16=det(2I4). The application uses only F(A,2) comparable to t^4; fixed dyadic factors are absorbed in fixed-form constants. The cached primary PDF is preserved unchanged."
     },
     {
       "key": "henriot_original",
@@ -624,7 +625,7 @@
     "scope": "Every fixed imaginary quadratic order, with arbitrary class group: primitive norm self-sum equals its finite-residue local admissible set apart from finitely many exceptions. Within fixed genera, replacing either binary form leaves the entire leading coordinate convolution unchanged, with difference O_epsilon(N^(7/8+epsilon)).",
     "local_modulus": "Product over p dividing 2D of p^(2 v_p(abs(D))+1); sufficient and enumerable, not necessarily minimal.",
     "proof_inputs": "The existing arbitrary-binary-pair theorem, integral-basis norm determinant abs(D), GL_2(Z_p) invariance of nonzero blocks, and positive same-field local factors. No additional class-group distribution theorem is imported.",
-    "replay": "Root replay of the unchanged canonical checker at default bound256 is byte-identical to retained primitive_norm_quaternary_checks.json, SHA256 f468db83ad53190f5cf1327f4ab142de8726a2701d98116a95ecfbe2b31f9737. This is finite normalization evidence only.",
+    "replay": "Fresh full replay at bound256 passes after adding the fail-closed assertion guard; mathematical certificate payload unchanged. Current receipt SHA256 eaefb4309aa0424480ba2b4cff10437477f814b22f6265e0b61b13c5bb4b238e. Finite normalization evidence only.",
     "limits": "No numerical general cutoff, computed complete general exception lists, unweighted leading asymptotic, matching arbitrary-class N/logN lower bound, historical priority, external review or formal verification.",
     "maximal_order_local_table": {
       "proof": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
@@ -632,7 +633,8 @@
       "scope": "Complete primitive self-sum local conditions for every negative fundamental discriminant. Odd ramified p>=7,p=3mod4 exclude p^2|N; ramified3 requires3 not dividingN or N=6*(-D/3)mod9; ramified p=1mod4 imposes no condition. The dyadic cases depend only on oddDmod8 or the squarefree parameter inD=-4m or-8k.",
       "proof_method": "Exact local value cosets, elementary nonzero-square pair count, square-root lifting, and exhaustive residue algebra for four dyadic parameter classes. The finite checker supplements, rather than replaces, the lifting proof.",
       "nonmaximal_orders": "Retain the full conductor-sensitive finite test; do not transfer the maximal-order valuation rules to conductor primes."
-    }
+    },
+    "prior_replay": "Root replay of the unchanged canonical checker at default bound256 is byte-identical to retained primitive_norm_quaternary_checks.json, SHA256 f468db83ad53190f5cf1327f4ab142de8726a2701d98116a95ecfbe2b31f9737. This is finite normalization evidence only."
   },
   "targeted_two_block_review": {
     "date": "2026-11-18",
@@ -661,7 +663,7 @@
       "Crossref": "Public Plaksin record obtained; used for bibliographic identity only."
     },
     "remaining_uninspected_leads": [
-      "Jones1949 Representations by quadratic forms, DOI10.2307/1969585",
+      "Jones1949 Representation by Quadratic Forms, DOI10.2307/1969585",
       "Pall and Ross-Pall1946 papers identified from Pall1949 bibliography",
       "Estermann1951: opening Theorems1-2 inspected; full article/later results and proof unavailable",
       "Estermann1962: opening main problem inspected; later theorem/error/extensions unavailable",
@@ -760,7 +762,70 @@
         "Explicit full-shell error budget with safe saving1/16384",
         "Jacobian B^-1 and primitive-block local factors including overlap and dyadic rescaling",
         "Scalar squarefree Euler completion not reused; canonical absolute local moment applied instead"
+      ],
+      "internal_review": "Complete B.1-B.12 reconstruction reread internally, including first-power gradient kernels, nonzero-target gcd average, real-frequency bounds, exact finite-level local Jacobian, overlap factor, explicit good-prime factors, full-shell radial weight, zero blocks and dyadic factor2. Two notation ambiguities corrected. This is internal source/mathematical review, not external or formal verification."
+    }
+  },
+  "publication_plan": {
+    "canonical_plan": "PRIMITIVE_NORM_NOVELTY.md",
+    "locator": "Publication scope: Paper1, Paper2, supporting theory and next all-order target",
+    "status": "Proposed paper scopes only; no new manuscript bundle, submission or review assurance",
+    "paper_1": {
+      "title": "Exact Sumsets of Primitive Quadratic Norms",
+      "main_scope": "Exact D=-7,-8,-11 primitive self-sumsets, explicit sieve certificates and complete admissible exception classification",
+      "proved_exception_sets": {
+        "-7": [
+          7,
+          77,
+          203
+        ],
+        "-8": [],
+        "-11": []
+      },
+      "canonical_sources": [
+        "PRIMITIVE_NORM_MINUS7_EXACT.md",
+        "PRIMITIVE_NORM_MINUS8_EXACT.md",
+        "PRIMITIVE_NORM_MINUS11_EFFECTIVE.md"
+      ]
+    },
+    "paper_2": {
+      "title": "Primitive Norm Sums Beyond Class Number One",
+      "main_scope": "Sharp unweighted NJ/logN ordered value counts for the proved nontrivial-class-group families, centered on OddClassCounts",
+      "odd_class_scope": "Maximal orders D=-p, p>=7 prime3mod4, arbitrary occurring odd abelian class group; not all nonmaximal odd ring class groups",
+      "examples": [
+        "D=-20",
+        "D=-23",
+        "D=-56"
+      ],
+      "canonical_sources": [
+        "PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
+        "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+        "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+        "PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md"
+      ]
+    },
+    "baker_waibel_role": "Supporting theory; optional separate concise methodological note, not the headline breakthrough",
+    "next_target": {
+      "node": "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
+      "status": "open",
+      "scope": "Every fixed imaginary quadratic order, arbitrary even class group and conductor; sharp unweighted ordered norm-value counts on every sufficiently large primitive-local target, uniform in target valuations",
+      "missing_estimate": "Matching NJ_D/logN lower bound; generic sharp upper bound and log^(log4+epsilon) lower bound already available",
+      "local_factor_obligation": "Derive actual conductor/bad-prime factors; identify any necessary additional target factor rather than assuming bounded ramified prefixes",
+      "stronger_separate_tasks": [
+        "Unweighted leading constants",
+        "Effective numerical cutoffs",
+        "Uniformity in varying orders"
       ]
     }
+  },
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "negative_modes_checked": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "scope": "Execution contract for finite checks; no new mathematical theorem or review assurance."
   }
 }

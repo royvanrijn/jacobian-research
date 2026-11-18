@@ -334,7 +334,28 @@ and finite-coverage data. The [source ledger](primitive_norm_minus8_source_ledge
 pins the prior shell/Hecke/prime-family proofs, their primary imports,
 and the old finite prime certificate; its current replay matches the
 retained record. The new checker certifies finite arithmetic, complete
-Euler/profile searches and the stated target masks. The infinite
+Euler/profile searches and the stated target masks.
+
+Certificate verification requires active Python assertions. The checker rejects optimized execution (-O, -OO, or optimization enabled through PYTHONOPTIMIZE) before generating a receipt.
+
+The separate [coordinate membership verifier](verify_primitive_norm_coordinate_membership.py)
+authenticates every membership flag through the actual bound, rather than
+only the coordinate regression prefix. Independent sign changes allow
+\(x\ge1\) odd and \(y\ge0\); the exact inequality
+\(x^2+2y^2\le2^{27}\), with \(\gcd(x,y)=1\), enumerates all of \(C\)
+in that range. Its complete bytearray must equal the original prime-support
+sieve's bytearray before either is hashed. The
+[membership receipt](primitive_norm_coordinate_membership_checks.json)
+also checks the companion \(-11\) ellipse and rejects inserted inert
+prime powers and a deleted unit. Run both domains with
+
+```sh
+python3 research/arithmetic/verify_primitive_norm_coordinate_membership.py \
+  --output research/arithmetic/primitive_norm_coordinate_membership_checks.json
+```
+
+Target-mask equality alone does not authenticate summand membership;
+the full coordinate comparison supplies this separate finite check. The infinite
 spectral theorem and the completion arguments remain written
 mathematics, rather than consequences of the checker merely passing.
 Several internal agents reconstructed the local, spectral, geometric

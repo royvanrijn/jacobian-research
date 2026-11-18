@@ -582,11 +582,14 @@ into \(P^2\), and using \(7^{2/3}<4\), proves (M7.3).
 
 ## Evidence and remaining scope
 
-The [checker](verify_primitive_norm_minus7.py) and
-[receipt](primitive_norm_minus7_checks.json) retain the finite
-value masks, ordinary point array, complete Euler/divisor frontiers,
-all interval cases and exact global constants. Their finite
-domains and rejection controls are explicit.
+The [checker](verify_primitive_norm_minus7.py) deterministically
+reconstructs the complete finite value masks and ordinary point array.
+The [receipt](primitive_norm_minus7_checks.json) retains their hashes
+and counts, the Euler/divisor frontiers, all interval cases and exact
+global constants; it does not retain the raw mask or point-array bytes.
+The generators, finite domains and rejection controls are explicit.
+In particular, membership is checked by exact equality of complete
+coordinate and prime-support bytearrays before their hashes are recorded.
 The [source ledger](primitive_norm_minus7_source_ledger.json) pins
 the classical book and spectral inputs and their application scope.
 
@@ -600,6 +603,8 @@ formal verification or independent external review.
 Run from the repository root:
 
     python3 research/arithmetic/verify_primitive_norm_minus7.py --output research/arithmetic/primitive_norm_minus7_checks.json
+
+Certificate verification requires active Python assertions. The checker rejects optimized execution (-O, -OO, or optimization enabled through PYTHONOPTIMIZE) before generating a receipt.
 
 The exact exception lists are proved globally. The explicit
 power lower bound has the stated onset; it is not an unweighted

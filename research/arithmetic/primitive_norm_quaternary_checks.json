@@ -1,6 +1,6 @@
 {
   "binary_mobius_cases": 1792,
-  "checker_sha256": "a8eb817139bce21fc44ff59afbf32000b2395e2008f0eeb02991bc2df9774325",
+  "checker_sha256": "3f7a6f3c4ce80df8adaee6332b7c742b107a01d1b2901dedb8cb7b1e429462bb",
   "double_mobius_targets": 1020,
   "dyadic_sturm_certificate": {
     "completeness": "modularity plus sourced Sturm bounds proves unrestricted theta identities from the listed coefficients",

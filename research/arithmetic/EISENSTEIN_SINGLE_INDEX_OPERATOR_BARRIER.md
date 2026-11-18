@@ -139,6 +139,21 @@ irreducible representations of \(\mathrm{SU}(2)\), torus averaging and
 Peter--Weyl decomposition are used explicitly in (B6); no new spectral
 estimate is imported.
 
+For exact classical locators, see Koornwinder,
+[*Representations of SU(2) and Jacobi polynomials*, arXiv:1606.08189v1](https://arxiv.org/pdf/1606.08189v1):
+Theorem 4.2 and exercise (7.9) give the zero-weight matrix coefficient
+`P_k(2|z|^2-1)`, equation (6.11) gives the torus weights, and Theorem 6.4
+states Peter--Weyl completeness. Averaging the torus on both sides is
+orthogonal projection; its zero-weight space in degree `2k` is one
+dimensional, while odd degree has none. Hence (B6) is the standard
+spherical Fourier reduction, and its bounds extend to the full
+`L^2` operator by orthogonal decomposition. These mechanisms are
+classical; the displaced measure, its uniform `5h^(3/2)` estimate and
+the failure of the additional Hecke relation still require the
+specific arguments above. The source's special-function formulas and
+torus calculation were read directly; its stated general Peter--Weyl
+theorem remains an imported classical theorem.
+
 The proof is analytic and exact. Internal derivation checks reconstructed
 the Legendre constants, the full Fourier operator, inversion, finite
 coset eigenvalues and normalization. They do not establish an arithmetic

@@ -118,6 +118,19 @@ entry of the relation matrix to vanish. In particular a generically
 zero finite module with these connections is zero. Integrability
 is not needed for this Fitting argument.
 
+The field-base local-freeness conclusion is classical: André,
+[*Différentielles non commutatives et théorie de Galois différentielle ou
+aux différences* (2001), Corollary 2.5.2.2, printed p713](https://www.numdam.org/item/ASENS_2001_4_34_5_685_0.pdf),
+proves that every coherent module with a connection on a smooth
+characteristic-zero variety is locally free, without assuming that the
+connection is integrable. Here the operators D_i assemble into such a
+connection on affine space over the coefficient field, so that particular
+conclusion is an instance of the established theorem. Its preceding
+Theorem 2.5.2.1 and proof were also inspected. This attribution does not
+cover the later argument over R0=K[[h]]: that mixed coefficient base is
+not the smooth variety over a field in the cited corollary, and the
+explicit Fitting-ideal and h-adic arguments below remain necessary.
+
 ## Integral module finiteness removes escaping support
 
 Assume first that B is finite over P. The finite P-module N=B/P inherits

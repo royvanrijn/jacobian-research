@@ -7,7 +7,7 @@
   "proof_dependencies": [
     {
       "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-      "sha256": "baf98a86465a5de6d9582538347f03256cf273c6f5f0b996621637abf8a98d02",
+      "sha256": "1fc20478b1874445b0e8879ff26a21aba1c39ba3a01689384ceb2d171300b7c4",
       "scope": "Use only the independent equations29-40a: theta/dyadic identities; class-one index-four Hurwitz order; all-ideal Hecke transfer with fixed2-adic operators; all-prime theorem with analytic2^22threshold; all inert cores m>=2^60; explicit N^(2/3)/4800count from N>=2^78. These do not use the exact identity now proved."
     },
     {
@@ -17,17 +17,17 @@
     },
     {
       "path": "verify_primitive_norm_quaternary.py",
-      "sha256": "a8eb817139bce21fc44ff59afbf32000b2395e2008f0eeb02991bc2df9774325",
-      "scope": "Old complete finite Sturm, Euler and all-prime certificates; current root replay equals the retained old record."
+      "sha256": "3f7a6f3c4ce80df8adaee6332b7c742b107a01d1b2901dedb8cb7b1e429462bb",
+      "scope": "Complete finite Sturm, Euler and all-prime certificate computation; optimized Python is rejected. Fresh replay preserves the mathematical payload, with updated checker/receipt identities."
     },
     {
       "path": "primitive_norm_quaternary_checks.json",
-      "sha256": "f468db83ad53190f5cf1327f4ab142de8726a2701d98116a95ecfbe2b31f9737",
-      "scope": "Actual replay at integer_bound256, with every295947prime through4194304covered; no changed bytes needed."
+      "sha256": "eaefb4309aa0424480ba2b4cff10437477f814b22f6265e0b61b13c5bb4b238e",
+      "scope": "Fresh replay at integer_bound256 covers all295947primes through4194304. Runtime guard changes only checker identity, not the finite mathematical certificate."
     },
     {
       "path": "primitive_norm_quaternary_source_ledger.json",
-      "sha256": "ba935f169a223e6b715a0a768b2592ff74421963137b80c2d5a374c70267d773",
+      "sha256": "a7223c086f112c64bad7a446358d9cbee195b82f3ff3c2abd6a2266ef6e56bc2",
       "scope": "Exact primary theta and spectral import editions and previously checked application boundaries."
     }
   ],
@@ -100,5 +100,22 @@
     "The finite checker does not itself prove the sourced infinite Hecke/Ramanujan input.",
     "No external review, formal verification or established historical priority.",
     "The independent C12+C12 barrier, complete other-discriminant exception lists and general unweighted leading constants remain open."
-  ]
+  ],
+  "coordinate_membership_authentication": {
+    "checker": "verify_primitive_norm_coordinate_membership.py",
+    "receipt": "primitive_norm_coordinate_membership_checks.json",
+    "reproduction": "python3 research/arithmetic/verify_primitive_norm_coordinate_membership.py --output research/arithmetic/primitive_norm_coordinate_membership_checks.json",
+    "scope": "Complete independent coordinate/gcd authentication of every core flag through2^27; compare entire bytearrays to the existing sieve before hashes. The target masks alone cannot authenticate summands.",
+    "assurance": "Internal exact replay using a different membership algorithm; no external review, formal verification or independent human replay."
+  },
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "negative_modes_checked": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "scope": "Execution contract for finite checks; no new mathematical theorem or review assurance."
+  }
 }

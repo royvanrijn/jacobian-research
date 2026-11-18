@@ -7,10 +7,11 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from dependency_graph import DependencyGraph
-from dependency_references import bibliography_items, check_references, reference_state
+from dependency_references import bibliography_items, check_references, reference_state, render_references
 
 
 class ReferenceTests(unittest.TestCase):
@@ -95,6 +96,58 @@ class ReferenceTests(unittest.TestCase):
         self.graph.data["graph"]["coverage"] = {"documents": [{"path": "proof.tex", "role": "proof"}]}
         state = reference_state(self.data, self.graph, ["proof.tex"])
         self.assertIn("unmapped external URL: proof.tex :: " + url, state["errors"])
+
+    def add_antecedent(self):
+        review = {"id": "CLASSICAL-A", "title": "A scoped antecedent", "nodes": ["A"],
+                  "relation": "classical_corollary",
+                  "references": [{"paper_id": "PAPER", "locator": "Theorem 2",
+                                  "statement": "The exact imported component."}],
+                  "proof_sources": [{"path": "proof.tex", "locator": "Proof of Claim A",
+                                     "sha256": hashlib.sha256(self.source.read_bytes()).hexdigest()}],
+                  "application": "The hypotheses match this component.",
+                  "novelty_limit": "Credit the imported component.",
+                  "remaining_obligation": "The rest of Claim A needs a proof.",
+                  "inspection_scope": "Theorem statement and local application only."}
+        self.data["graph"]["external_references"]["antecedent_reviews"] = [review]
+        return review
+
+    def test_antecedent_never_proves_a_claim_or_changes_the_catalogue(self):
+        self.add_antecedent()
+        before = deepcopy(self.data)
+        state = check_references(self.data, self.graph, ["proof.tex"])
+        self.assertEqual(len(state["antecedent_reviews"]), 1)
+        self.assertEqual(self.graph.evaluate()["A"]["state"], "open")
+        self.assertEqual(self.data, before)
+        with patch("dependency_coverage.inventory_paths", return_value=["proof.tex"]):
+            rendered = render_references(self.data, self.graph)
+        self.assertIn("partial audit", rendered)
+        self.assertIn("The rest of Claim A needs a proof.", rendered)
+
+    def test_antecedent_requires_real_claims_references_and_scoped_obligations(self):
+        review = self.add_antecedent()
+        review["nodes"] = ["MISSING"]
+        review["references"][0]["paper_id"] = "UNKNOWN"
+        review["remaining_obligation"] = ""
+        review["relation"] = "proved"
+        state = reference_state(self.data, self.graph, ["proof.tex"])
+        for diagnostic in ("unknown antecedent claim node", "unknown antecedent cited resource",
+                           "missing antecedent remaining_obligation", "invalid antecedent relation"):
+            self.assertTrue(any(diagnostic in error for error in state["errors"]), diagnostic)
+
+    def test_antecedent_proof_drift_and_missing_pin_are_rejected(self):
+        review = self.add_antecedent()
+        self.source.write_text(self.source.read_text() + "Changed proof.\n")
+        with self.assertRaisesRegex(AssertionError, "changed antecedent proof source"):
+            check_references(self.data, self.graph, ["proof.tex"])
+        review["proof_sources"][0]["sha256"] = ""
+        with self.assertRaisesRegex(AssertionError, "invalid source digest"):
+            check_references(self.data, self.graph, ["proof.tex"])
+
+    def test_antecedent_cannot_escape_repository(self):
+        review = self.add_antecedent()
+        review["proof_sources"][0]["path"] = "../../outside.tex"
+        with self.assertRaisesRegex(AssertionError, "escapes repository"):
+            check_references(self.data, self.graph, ["proof.tex"])
 
 
 if __name__ == "__main__":

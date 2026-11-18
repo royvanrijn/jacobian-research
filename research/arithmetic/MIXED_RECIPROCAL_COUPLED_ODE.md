@@ -17,6 +17,16 @@ The systems below have explicit nondegeneracy exclusions. Their description
 as finite polynomial systems does not assert that their rational-point sets
 or their complex solution sets are finite.
 
+The recurrence polynomials in Theorem 1 have classical Chebyshev background:
+`C_j(w)=V_j(w/2)` and `D_j(w)=W_j(w/2)`. The exact Laurent formulas
+are [NIST DLMF (18.5.3)--(18.5.4)](https://dlmf.nist.gov/18.5), with
+`w=v+v^-1`; their initial values and recurrence agree with those below.
+These are polynomial identities, so the apparent denominators at `v=+/-1`
+are removable. The reciprocal invariant-coordinate reduction and this
+polynomial basis should be credited as classical. The coupled differential
+equations, their critical-pair application and the rational classification
+still require the arguments and certificates in this note.
+
 ## Normalization
 
 Use the setting of the

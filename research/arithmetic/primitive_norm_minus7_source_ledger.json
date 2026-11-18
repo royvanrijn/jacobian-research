@@ -4,8 +4,8 @@
   "checker": "verify_primitive_norm_minus7.py",
   "receipt": "primitive_norm_minus7_checks.json",
   "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus7.py --output research/arithmetic/primitive_norm_minus7_checks.json",
-  "source_sha256": "1b94230b64e4ed9df2da3245226070fde39966a1e34284ed20a63953546c03f2",
-  "receipt_sha256": "d4ab9ba9a2989a3d991ac5a0899437bebd1b1373ac730a9b165d76a43c1eb476",
+  "source_sha256": "47bc97260e10f99f1b36243520e6f20690dcfc60569ab9f595448c727013eed9",
+  "receipt_sha256": "1610f000b841ac3aefbc692e110c9c811e05aa0232ead298994e66c1e9c35efd",
   "sources": [
     {
       "author": "James S. Milne",
@@ -94,10 +94,20 @@
     "statement": "For every N>=2^69 with49 not dividingN, at least N^(2/3)/20000 distinct ordered positive primitive value pairs.",
     "uniformity": "The all-target Euler bound E(n)<=15n^(-1/3) has no inert-support hypothesis; the effective count is independent of the least-exception descent."
   },
-  "finite_evidence": "The canonical checker retains complete ordinary/divisor-character point arrays through2^18, exact value flags and both sum masks through2^24, all Euler/divisor frontiers, 257 complete intervals and4883 cases,17 higher bins, all-tail constants, finite q3/q5 joint-group projections and deliberate rejection controls. Root and separate internal agents replayed the frozen checker with byte-identical receipt.",
+  "finite_evidence": "The canonical checker reconstructs complete ordinary/divisor-character point arrays through2^18 and exact value flags and both sum masks through2^24. Its receipt retains hashes/counts for those arrays, plus all Euler/divisor frontiers,257intervals and4883cases,17higherbins,all-tailconstants,finiteq3/q5joint-group projections and rejection controls; raw arrays are not retained. Complete coordinate-versus-prime-support bytearrays are compared exactly before hashing. Current full replay is byte-identical to the retained receipt.",
   "limitations": [
     "Internal mathematical review and exact internal replay only; no external review, formal verification or historical priority assurance.",
     "The finite checker certifies its stated finite inputs, not the infinite spectral theorem.",
     "No unweighted leading asymptotic, C12+C12 theorem or exact classification at other discriminants is inferred."
-  ]
+  ],
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "negative_modes_checked": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "scope": "Execution contract for finite checks; no new mathematical theorem or review assurance."
+  }
 }

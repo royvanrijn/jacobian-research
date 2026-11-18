@@ -1,0 +1,314 @@
+{
+  "Selberg_and_marking": {
+    "deficiency_thresholds": [
+      1,
+      2,
+      3
+    ],
+    "direct_interval_square_and_endpoint_cases": 400,
+    "exact_Selberg_cases": 400,
+    "exact_case_data_sha256": "e468acfcf42bb86b6206eccabb481255bd8a193182822c2f1fbeb260ad60a150",
+    "exact_inverse_Euler_expectation": "2668/3025",
+    "independent_positive_pivot_optimization_cases": 400,
+    "inert_prime_roles": [
+      3,
+      7
+    ],
+    "mark_probability": "1/2",
+    "mark_sets_per_target": 4,
+    "marked_class_prime_roles": [
+      5,
+      11
+    ],
+    "negative_controls": [
+      "omitted the bounded-deficiency probability factor",
+      "dropped the prime-square term in Euler expectation",
+      "corrupted feasible Selberg weights are still optimal"
+    ],
+    "probabilistic_majorant_cases": 300,
+    "squarefree_index_cutoff": 25,
+    "strict_feasible_weight_perturbations": 400,
+    "target_range": [
+      2,
+      101
+    ]
+  },
+  "checker_sha256": "738b83bc170a70999dee69fb3ecd38061a42e2270b97155f8552e8cf1faf205e",
+  "group_saturation": {
+    "cofactor_cases": 54,
+    "examples": [
+      {
+        "all_cofactor_classes_checked": 3,
+        "cyclic_factors": [
+          3
+        ],
+        "distinct_signed_classes": 3,
+        "group_order": 3,
+        "independent_sign_assignments": 4,
+        "nonambiguous_class_pairs": 1,
+        "reserved_prime_count": 2,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              1
+            ],
+            2
+          ]
+        ],
+        "twice_group_order": 3
+      },
+      {
+        "all_cofactor_classes_checked": 4,
+        "cyclic_factors": [
+          4
+        ],
+        "distinct_signed_classes": 2,
+        "group_order": 4,
+        "independent_sign_assignments": 2,
+        "nonambiguous_class_pairs": 1,
+        "reserved_prime_count": 1,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ],
+        "twice_group_order": 2
+      },
+      {
+        "all_cofactor_classes_checked": 8,
+        "cyclic_factors": [
+          8
+        ],
+        "distinct_signed_classes": 4,
+        "group_order": 8,
+        "independent_sign_assignments": 128,
+        "nonambiguous_class_pairs": 3,
+        "reserved_prime_count": 7,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              1
+            ],
+            3
+          ],
+          [
+            [
+              2
+            ],
+            1
+          ],
+          [
+            [
+              3
+            ],
+            3
+          ]
+        ],
+        "twice_group_order": 4
+      },
+      {
+        "all_cofactor_classes_checked": 6,
+        "cyclic_factors": [
+          6
+        ],
+        "distinct_signed_classes": 3,
+        "group_order": 6,
+        "independent_sign_assignments": 16,
+        "nonambiguous_class_pairs": 2,
+        "reserved_prime_count": 4,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2
+            ],
+            2
+          ]
+        ],
+        "twice_group_order": 3
+      },
+      {
+        "all_cofactor_classes_checked": 4,
+        "cyclic_factors": [
+          2,
+          2
+        ],
+        "distinct_signed_classes": 1,
+        "group_order": 4,
+        "independent_sign_assignments": 1,
+        "nonambiguous_class_pairs": 0,
+        "reserved_prime_count": 0,
+        "saturation": true,
+        "thresholds": [],
+        "twice_group_order": 1
+      },
+      {
+        "all_cofactor_classes_checked": 8,
+        "cyclic_factors": [
+          4,
+          2
+        ],
+        "distinct_signed_classes": 2,
+        "group_order": 8,
+        "independent_sign_assignments": 4,
+        "nonambiguous_class_pairs": 2,
+        "reserved_prime_count": 2,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            1
+          ]
+        ],
+        "twice_group_order": 2
+      },
+      {
+        "all_cofactor_classes_checked": 9,
+        "cyclic_factors": [
+          3,
+          3
+        ],
+        "distinct_signed_classes": 9,
+        "group_order": 9,
+        "independent_sign_assignments": 256,
+        "nonambiguous_class_pairs": 4,
+        "reserved_prime_count": 8,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              0,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            2
+          ]
+        ],
+        "twice_group_order": 9
+      },
+      {
+        "all_cofactor_classes_checked": 12,
+        "cyclic_factors": [
+          6,
+          2
+        ],
+        "distinct_signed_classes": 3,
+        "group_order": 12,
+        "independent_sign_assignments": 256,
+        "nonambiguous_class_pairs": 4,
+        "reserved_prime_count": 8,
+        "saturation": true,
+        "thresholds": [
+          [
+            [
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            2
+          ]
+        ],
+        "twice_group_order": 3
+      }
+    ],
+    "independent_sign_assignments": 667,
+    "negative_controls": [
+      "insufficient C8 single-block threshold",
+      "principal conclusion without principal-genus hypothesis"
+    ],
+    "scope": "Full elements and all reserved-prime signs in the eight stated finite groups."
+  },
+  "mixed_local_roots": {
+    "direct_CRT_residues_examined": 69600,
+    "inert_primes_in_mixed_cases": [
+      3,
+      5,
+      7
+    ],
+    "marked_density": "(q-1)/q^2; the q^2-divisible residue is allowed",
+    "marked_primes_in_mixed_cases": [
+      11,
+      13
+    ],
+    "mixed_CRT_cases": 96,
+    "negative_controls": [
+      "forgot inert target-root merger",
+      "replaced exact-one density by divisibility density",
+      "forbade a higher prime power at a marked prime",
+      "inverted the inert target correction J"
+    ],
+    "parameterization": "c=n+2k, v=-k; c+2v=n",
+    "scope": "Primes have formal disjoint sieve roles; no actual field prime classes are assigned here.",
+    "single_prime_cases": 20,
+    "target_valuations_checked": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "proof_domains_fixed": true,
+  "scope": "Finite independent audits of group saturation, exact prime-square CRT, rational Selberg optimization and finite random marking. The infinite arithmetic/genus identification, prime-class Mertens theorem and unweighted class-error bound are separate written/imported mathematics. No external review or formal verification is claimed."
+}

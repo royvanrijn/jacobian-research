@@ -189,6 +189,20 @@ finitely many denominators. The replica h(y)^N*delta then preserves S.
 This proves (a) implies (b), with no source-finiteness assumption
 on the original frame.
 
+This sufficiency step is the classical extension of a translation from
+a principal cylinder. In the proof of
+[Kishimoto--Prokhorov--Zaidenberg, *Group actions on affine cones*,
+arXiv:0905.4647v2, Proposition3.5, printed p16](https://arxiv.org/pdf/0905.4647v2),
+a translation on D(f)=Z times A1 is multiplied by f^N to preserve the
+finitely generated ambient coordinate ring. Here (9) and denominator
+clearing identify D(h) in Spec(S) with
+Spec(C[y,h^-1]) times A1_x, and h is invariant under partial_x, so the
+displayed construction is exactly that proof. Its statement and both
+directions of the proof were inspected. The converse pole obstruction
+and the equivalence with preservation of the ordinary codifferent in(7)
+remain separate parts of the present argument; the cylinder theorem
+supplies no automatic integrality of y.
+
 To relate the trace-dual, recall the exact multiplier algebra
 
     (Lambda:Lambda)=S.                                   (10)

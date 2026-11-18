@@ -12,6 +12,19 @@ This gives reachability for the whole stated family in every
 degree, with a coarse quartic ordinary-word bound. It does not
 classify arbitrary double-transposition trees.
 
+The full-twist conjugation used in Lemma 3 is a classical Hurwitz-action
+identity; compare Bessis, *The dual braid monoid*,
+[arXiv:math/0101158v2, Sections 1.5--1.6, printed pp.6--8](https://arxiv.org/pdf/math/0101158v2).
+Our generators are the inverses of Bessis's convention, giving conjugation
+by the inverse total product, as derived below. His Proposition 1.6.1
+also gives transitivity for reduced reflection factorizations of a
+parabolic Coxeter element. Expanding our double transpositions gives a
+reduced transposition factorization of a full cycle, but that theorem
+does not preserve the adjacent commuting pairs needed to return to
+double-transposition moves. It therefore credits the full-twist mechanism
+and the expanded-factorization background; it does not replace the
+pair-preserving absorption argument, finite controllers, or word bound.
+
 ## The ordered one-vertex class
 
 A **natural D5 pair** is an ordered pair \((a,b)\) of double

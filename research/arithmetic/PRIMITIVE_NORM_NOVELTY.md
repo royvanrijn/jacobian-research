@@ -310,7 +310,7 @@ classical deduction already found.
 | Distinct-value lower and upper bounds | Corrected Henriot 2014 plus Hölder | Now \(N/\log^{\log4+\epsilon}N\) below and \(N J_{12}(N)/\log N\) above; classical inputs, new application here. |
 | Fixed macroscopic balance | Harmonic theta theory plus the positive sieve tail | Classical equidistribution deduction; no shrinking-window theorem. |
 | All eventual -8 targets and both strong cores | Plaksin 1984/1985, including its Gaussian specialization, an integral parity transformation and gcd deletion | Proved classical deduction below, even with prime-coordinate counts; no explicit numerical onset here. |
-| Exact -8 identities, including strong cores | No matching primary antecedent identified in the searches below | Main candidate contribution, with historical priority unverified. |
+| Exact -8 identities, including strong cores | No matching primary antecedent identified in the searches below | An exact arithmetic candidate contribution, with historical priority unverified. |
 | Exact -11 identity | A few direct norm/quadratic-residue searches and known shell/Hecke antecedents | No priority assessment as strong as the -8 search; do not extend a negative search claim to it. |
 | Every-target unweighted leading asymptotic | Inspected general correlation theorems fail specific hypotheses | Still an independent obligation; no such asymptotic is established here. |
 | \(C_{12}+C_{12}\) | Two independent norm conditions per summand | Outside this quaternary theorem and unchanged by these applications. |
@@ -702,42 +702,202 @@ No general every-target distinct-value leading asymptotic was identified in the 
 
 ## Publication scope
 
-A paper cannot responsibly lead with the general separately primitive
-existence or unspecified-power-saving asymptotic as its central new
-analytic theorem: the checked Baker adaptation already supplies it.
-A self-contained contribution would have to identify and support
-the additional content, such as the sharper quantitative bound,
-a useful explicit local classification or an exact exception theorem.
-The genus-invariant conclusion is a corollary of the classical route.
+The primitive-norm publication plan consists of the following two
+papers. These are proposed article scopes; no new manuscript bundle,
+submission or external review is asserted by this plan.
 
-A separate paper centered on the exact -8 theorem could lead with
-its two strong-core identities if historical checking continues to
-support their originality. The complete effective finite bridge is
-a distinct part of that candidate contribution. The numerical onset
-alone is not the main existence statement once every admissible
-target is classified.
+### Paper 1: Exact Sumsets of Primitive Quadratic Norms
 
-Attribute the unrestricted shell formula to Liouville and its
-quaternionic derivations to the inspected classical sources. Attribute
-the coprimality-sieve architecture to Brüdern and distinguish the
-Plaksin eventual routes for every admissible -8 target, including the
-Gaussian parity transformation; Dietmann--Elsholtz supplies the close
-Gaussian regrouping/deletion precedent. The local densities,
-Mertens corollaries and corrected-Henriot applications should be
-described as deductions, not as independent new analytic methods.
+The main result is the three exact primitive self-sum identities.
+For \(P_D=\{Q_D(x,y)>0:\gcd(x,y)=1\}\), they are:
 
-A cautious contribution sentence is:
+| \(D\) and \(Q_D\) | Exact sumset | Admissible exceptions |
+|---|---|---|
+| \(-7,\ x^2+xy+2y^2\) | \(\{N\ge2:49\nmid N\}\setminus\{7,77,203\}\) | \(7,77,203\) |
+| \(-8,\ x^2+2y^2\) | \(\{N\ge2:16\nmid N\}\) | none |
+| \(-11,\ x^2+xy+3y^2\) | \(\{N\ge2:2\mid N,\ 121\nmid N\}\) | none |
 
-> Using classical convergent-sieve and theta estimates, we obtain an
-> explicit pair-primitive local criterion and quantitative refinements, and give
-> a complete effective proof of the exact primitive discriminant -8
-> norm sumset, including its two strong-core identities.
+The article should explain how the primitive local obstructions,
+stronger split-core identities and exceptional-quotient descent
+produce these complete sets. Its central contribution is the
+exact classification and the explicit proof joining finite
+certificates to an infinite sieve, including the exceptional
+targets in discriminant \(-7\).
 
-This wording does not assert priority. Before an explicit first-result
-claim, the remaining work is a bibliographic MathSciNet/zbMATH search
-under older proper-representation terminology and, ideally, a specialist
-comparison. Those steps were not performed here. No messages were sent
-to authors or other researchers.
+Use the three current proofs as the authoritative mathematical
+sources: [discriminant -7](PRIMITIVE_NORM_MINUS7_EXACT.md),
+[discriminant -8](PRIMITIVE_NORM_MINUS8_EXACT.md) and
+[discriminant -11](PRIMITIVE_NORM_MINUS11_EFFECTIVE.md).
+The [common classification record](PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md)
+distinguishes these global identities from the bounded lists for
+other discriminants.
+
+A coherent proof order is:
+
+1. State all three identities and prove the exact local exclusions.
+2. Give the primitive-norm and split-core reductions, including the
+   different roles of 2 and the ramified prime.
+3. Present the shared quaternionic/spectral sieve, preserving each
+   order's class-mass and local normalizations.
+4. Prove that the finite certificates, intermediate rational
+   intervals and infinite bounds cover every target with no gap.
+5. Complete the exceptional-quotient descent and verify the actual
+   exclusions \(7,77,203\).
+
+The certificate supplement should contain the existing exact inputs,
+verifiers and receipts: complete finite coverage through \(2^{24}\),
+\(2^{27}\) and \(2^{25}\), respectively; 257, 107 and 35 intermediate
+interval certificates; the additional 17 higher bins in the \(-7\)
+proof; and the precise handoffs to the proved infinite estimates.
+The mathematical proof must explain why those finite domains and
+intervals exhaust what remains. A passing finite verifier does not
+prove the imported spectral theorems.
+
+The explicit \(N^{2/3}\) value-count lower bounds can be secondary
+corollaries, with their recorded cutoffs and constants. They must
+remain distinct from Paper 2's sharp \(NJ_D(N)/\log N\) scale.
+The exact \(-19,-43,-67,-163\) exception lists remain bounded
+computations and are not added to the main theorem.
+
+### Paper 2: Primitive Norm Sums Beyond Class Number One
+
+This article centers on sharp unweighted counts of ordered
+**value pairs**, with nontrivial ideal-class constraints.
+Its organizing theorem is
+[OddClassCounts](PRIMITIVE_NORM_ODD_CLASS_GROUPS.md): for every
+fixed prime \(p\ge7\), \(p\equiv3\pmod4\), the maximal order
+of discriminant \(-p\) has
+\[
+ \#\{a+b=N:a,b\in P_{-p}\}
+             \asymp_{K}\frac{N J_K(N)}{\log N}
+\]
+for every sufficiently large primitive-locally admissible target.
+The class group may be any odd abelian group occurring in this
+family, including noncyclic groups. There is no class-number bound.
+The local condition is \(p^2\nmid N\), together with even \(N\)
+when \(p\equiv3\pmod8\).
+
+Keep the scope of the two ingredients explicit: the signed absorber
+lemma is proved for every finite abelian odd group; the complete
+additive counting theorem is stated for the maximal-order
+negative-prime-discriminant family. This is not a theorem about
+arbitrary odd ring class groups with conductors.
+
+Use [discriminant -23](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md) as the
+first class-obstruction example, then develop the general fixed
+class-prime pools, exact exponent profiles and the analytic
+unweighting argument. The class-number-two
+[discriminant -20](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) and cyclic
+class-number-four [discriminant -56](PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md)
+results show what genus constraints change beyond odd class groups.
+The \(-56\) relative class-error estimate supplies a quantitative
+comparison with locally allowed norm candidates.
+
+The proof should make visible how class information travels through
+cofactor removal, exact prime exponents and positive restoration.
+Prime ideals in fixed classes choose finitely many auxiliary primes;
+the current additive estimates use quadratic-character machinery.
+No new nonabelian additive-distribution theorem is asserted.
+
+Here sharp means two-sided order of magnitude \(NJ_K(N)/\log N\).
+The current results do not give an unweighted leading constant,
+a numerical field-uniform cutoff, or globally complete exception
+lists for \(-20,-23,-56\). Their bounded exception computations
+can be examples, clearly labeled with the actual range.
+
+### Supporting Baker/Waibel theory
+
+The separately primitive quaternary theorem belongs in supporting
+theory. Include the needed parts as an appendix or background
+section of the relevant paper. A separate concise methodological
+note is an option if its independent purpose is clear; it is not
+the headline breakthrough of either planned paper.
+
+Credit [Baker's convergent-sieve proof and its explicit first-power
+adaptation](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md#explicit-first-power-adaptation-of-baker),
+the older four-square coprimality work, and Waibel's theta estimate
+where used. Genus-invariant coordinate convolution is an immediate
+consequence of that theory. Neither a coordinate asymptotic nor
+qualitative existence establishes Paper 2's sharp value counts.
+
+### Next target: sharp unweighted counts for every quadratic order
+
+Fix any imaginary quadratic order \(\mathcal O_D\), of arbitrary
+conductor and ideal class group. Let \(P_D\) be its positive
+rational-coordinate primitive norm values, and define
+\[
+ V_D(N)=\#\{(a,b)\in P_D^2:a+b=N\},\qquad
+ J_D(N)=
+ \prod_{\substack{\ell\mid N\\\ell\nmid2D,\ (D/\ell)=-1}}
+                        \frac{\ell-1}{\ell-2}.
+\]
+Let \(\mathcal A_D\) denote the pair-primitive local admissible
+targets for the actual order, including its conductor primes.
+The first research target is
+\[
+             V_D(N)\asymp_D \frac{N J_D(N)}{\log N}
+ \qquad(N\in\mathcal A_D,\ N\ge N_D).
+\]
+Constants and \(N_D\) may depend on the fixed order. Uniformity is
+in the target and all permitted target valuations, not in varying
+discriminants or conductors. The exact bad-prime factors must be
+derived: do not assume that a maximal-order factor or a bounded
+ramified prefix applies at conductor primes. If an additional
+order-local factor cannot be absorbed into fixed-order constants,
+identify it explicitly and formulate the corrected sharp scale.
+
+The [general value-count bounds](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md#stronger-lower-bounds-and-distinct-value-pairs)
+already give
+\[
+ \frac{N}{(\log N)^{\log4+\epsilon}}
+       \ll_{D,\epsilon}V_D(N)
+       \ll_D\frac{N J_D(N)}{\log N}
+\]
+on sufficiently large admissible targets for the lower bound,
+and uniformly in the target for the upper bound.
+Thus the main missing estimate is the **matching lower bound**;
+a new upper sieve or another qualitative local-global theorem
+would not close it. Leading-constant asymptotics are a further,
+separate target.
+
+The next work should address these precise interfaces:
+
+1. Check the primary literature for this unweighted two-value
+   correlation, including genus and conductor restrictions.
+   The completed two-block coordinate review does not settle
+   historical priority of this different statement.
+2. Extend the finite genus-state/profile transfer beyond the
+   separate \(-20\) and \(-56\) cases. For arbitrary even class
+   groups, distinguish the quotient \(G/2G\), which records
+   genus constraints, from class corrections inside \(2G\).
+   The odd-group sign argument cannot simply be reused when
+   multiplication by 2 is not invertible.
+3. Treat nonmaximal orders at conductor primes. Separate the
+   invertible ideal-class data away from the conductor from
+   primitive local branches at the conductor. Primitive order
+   norms can have unbounded conductor-prime valuations, so the
+   maximal-order ramification bound cannot be imported.
+4. Prove that the selected local/genus profiles have positive
+   mass for every admissible target and retain their conditions
+   through every cofactor and restoration step. Then establish
+   the positive unweighted lower bound on those actual profiles.
+
+The genus conditions filter whole cofactor values, rather than
+requiring each prime factor to lie in a smaller splitting set.
+First test whether the existing fixed-period transfer already
+handles the full genus-character vector. Do not assume the
+\(C_{12}+C_{12}\) distribution barrier applies to this problem;
+identify any genuinely new analytic estimate as an explicit obligation.
+
+This is one all-order counting objective, with the existing odd,
+class-number-two and cyclic-four cases as proved starting points.
+It remains open in this research record; the plan does not promote
+it to a theorem.
+
+Historical priority, specialist mathematical review and complete
+manuscript preparation remain separate publication obligations for
+both papers. No first-result claim follows from the absence of a
+matching source in the current searches.
 
 ## Evidence and limits
 

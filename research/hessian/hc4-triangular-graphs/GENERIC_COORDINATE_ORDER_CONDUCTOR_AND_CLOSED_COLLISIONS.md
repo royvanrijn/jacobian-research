@@ -250,6 +250,26 @@ conductor degree, any odd special-fibre degree, or a degree drop to one.
 It does not require simple double collisions or a radical conductor;
 higher tangencies and multiple coincident sheets retain the square.
 
+The conductor duality and the factor two in(13) have classical
+antecedents. For the monogenic trace-dual formulas in(3), see
+[Stacks, Lemma49.8.2](https://stacks.math.columbia.edu/tag/0BW2) and
+[Lemma49.12.4](https://stacks.math.columbia.edu/tag/0BWH),
+which identify the complementary module with the dualizing module and
+the polynomial derivative with its trace element. The conductor
+calculation is Dedekind's formula; its trace-matrix realization is also
+given by Böhm--Decker--Laplagne--Pfister,
+[*Local to global algorithms for the Gorenstein adjoint ideal of a
+curve*, arXiv:1505.05040v1, Section4.1, equation(4.1) and Algorithm1,
+printed pp10--12](https://arxiv.org/pdf/1505.05040v1).
+Their Example3.18 and the preceding local Gorenstein characterization
+give length(A_c/conductor)=delta(c) for each plane curve A_c.
+The exact sequence through its normalization C[x] then gives
+length(C[x]/conductor)=2delta(c), recovering(13). This local use
+requires no assertion about singularities at projective infinity.
+The Keller-specific identity kappa=F_T and exact specialization for
+EVERY source line are established above; the general conductor
+duality and Gorenstein length identity are established background.
+
 ### The exact lowest positive-degree form
 
 Suppose K is noninvertible and deg_x kappa=2 globally. Write

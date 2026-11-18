@@ -517,6 +517,16 @@ coprimality nor local solubility of \(n\).
 Waibel uses the unnormalized Petersson norm; the displayed coefficient
 estimate already incorporates that convention.
 
+For the dyadic polynomial normal form in the cited v2 equation (5),
+allow a scalar coefficient exponent \(\nu_i(2)=0\). The printed
+condition \(\nu_i(2)\ge1\) cannot hold for four squares: its polar form
+is zero modulo two, forcing all binary cross-term blocks to have even
+scale, whereas the polynomial represents 1. With scalar exponents
+allowed to be zero, definition (6) gives
+\(\mathcal F(2I_4,2)=4\) and \(\mathcal F(2I_4,4)=16=\det(2I_4)\).
+Only comparison up to fixed-form constants is used below; this
+dyadic convention does not alter the claimed power saving.
+
 Only squarefree \(d,e\) occur. Put \(g=(d,e)\),
 \(u=d/g\), \(v=e/g\), \(t=uv\), and \(n=N/g^2\), discarding
 \(g^2\nmid N\). For \(A=u^2A_1\oplus v^2A_2\),
@@ -1555,6 +1565,7 @@ verifies the good-prime counts, bad-prime finite-lifting criterion on
 sample forms, and the exact Möbius identity on finite ranges. These
 checks challenge normalizations and examples; they do not prove the
 uniform analytic estimates or the unrestricted theorem.
+Certificate verification requires active Python assertions. The checker rejects optimized execution (-O, -OO, or optimization enabled through PYTHONOPTIMIZE) before generating a receipt.
 
 
 The [proof audit](PRIMITIVE_NORM_ANALYTIC_AUDIT.md) records the reviewed
@@ -1688,8 +1699,9 @@ The exact change of variables behind (4.7) now gives
        =B^{-1}I_q(c_1/s_1,\ldots,c_4/s_4).
  \tag{B.4}
 \]
-In particular the Jacobian is \(B^{-1}\), not the
-\(B^{-2}\) appearing for squared coordinate divisors.
+In particular the Jacobian is \(B^{-1}\). In Baker\'s
+parameterization \(s_i=d_i^2\), this same Jacobian is
+\((\prod_i d_i)^{-2}\).
 Let \(J_f=\pi^2/\sqrt{\det M}\).
 Baker's Lemmas 2--5 imply the following deliberately loose bounds:
 \[
@@ -1790,9 +1802,11 @@ the original shell with the prescribed coordinate divisibilities is
 Multiplying these identities over the primes recovers exactly
 the factor \(B^{-1}\) in (B.6).
 
-For squarefree \(d,e\), a prime occurs with exponents
-\(a,b\in\{0,1\}\) in the two blocks. Write \(\gamma_p^{ab}\)
-for the ambient surface mass with the first block divisible
+For (B.8)--(B.10) use the original \(F,N\) convention for both
+\(\gamma\) and \(\beta\); the conversion from \(f=2F,m=2N\)
+is accounted for explicitly below. For squarefree \(d,e\), a prime
+occurs with exponents \(a,b\in\{0,1\}\) in the two blocks.
+Write \(\gamma_p^{ab}\) for the ambient surface mass with the first block divisible
 by \(p^a\) and the second by \(p^b\). Signed local inversion gives
 \[
              \beta_p^*(N)=

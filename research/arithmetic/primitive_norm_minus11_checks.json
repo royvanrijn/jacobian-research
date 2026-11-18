@@ -1,5 +1,20 @@
 {
-  "checker_sha256": "2fda3f24e48f1bb7ddbc36d29f2bb18af73b2ed9182bea4017330f59890ac2a3",
+  "checker_sha256": "12c93dfc0335042f340189e9d6e1af526357ecbec80ec91479bed59af83f0629",
+  "unit_target_scope": {
+    "domain": "even n with11 not dividingn",
+    "checked_through": 256,
+    "unit_targets_checked": 117,
+    "excluded_ramified_target": {
+      "n": 22,
+      "G": 4,
+      "S": 36,
+      "Delta": "4*sqrt(22)",
+      "claimed_unrestricted_lower_bound": "432/5-(32/5)*sqrt(22)",
+      "deficit_squared": 169744,
+      "squared_permitted_deficit": 22528,
+      "unrestricted_reading_rejected": true
+    }
+  },
   "sharp_core_bounds": {
     "E_core_bound": "(11/4)*n^(-1/3)",
     "E_product_sixth_numerator": 184167468895316154074204818561020107,

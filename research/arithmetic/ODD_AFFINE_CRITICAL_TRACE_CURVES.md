@@ -14,6 +14,17 @@ nonempty: an exact point modulo29 lifts to Q29 and to a number field
 of degree at most twelve. No rational Q point or global obstruction
 to such points is established.
 
+The scalar trace recurrence has classical Chebyshev background. With
+`U_-1=0`, it is exactly `gamma_n(t)=U_(n-1)(t/2)` for `n>=0`, and
+`k_j(t)=V_(2j)(t/2)`. Compare the Laurent identities in
+[NIST DLMF (18.5.2)--(18.5.3)](https://dlmf.nist.gov/18.5) and
+[the U recurrence, Table 18.9.1](https://dlmf.nist.gov/18.9).
+For example `k_j(2 cos theta)=cos((2j+1/2)theta)/cos(theta/2)`,
+with removable endpoint values. This identifies the recurrence and its
+special values as classical; it does not identify the operator (12),
+its accessory curve, or the rational roots of the combined diagonals (15)
+with an existing classification theorem. Those remain separate arguments.
+
 ## 1. Normalization and the trace-square identity
 
 Work in characteristic zero. Let h>=2,m=2h+1,L=4h+1, and consider

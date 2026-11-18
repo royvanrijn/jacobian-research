@@ -3,6 +3,13 @@
 The checker proves finite integer/rational statements; the accompanying
 proof gives the Sturm and Euler completeness arguments. Standard library.
 """
+
+
+if not __debug__:
+    raise RuntimeError(
+        "This certificate checker requires active Python assertions; "
+        "run without -O, -OO, or PYTHONOPTIMIZE."
+    )
 import argparse
 import hashlib
 import json
@@ -223,15 +230,21 @@ def verify_coverage_mask(covered,expected):
         raise AssertionError('Coverage differs from the exact target mask.')
 
 
-def finite_core_coverage():
-    bound=1<<25
-    short_bound=5000
+def core_membership_flags(bound):
+    """Exact C membership through bound, from complete forbidden-prime removal."""
     flags=prime_flags(bound)
     core=bytearray(b"\x01")*(bound+1)
     core[0]=0
     for p in range(2,bound+1):
         if flags[p] and p%11 not in (1,3,4,5,9):
             core[p:bound+1:p]=b"\x00"*(bound//p)
+    return core
+
+
+def finite_core_coverage():
+    bound=1<<25
+    short_bound=5000
+    core=core_membership_flags(bound)
     assert core[0]==0 and core[1]==1 and core[2]==0 and core[11]==0
     # Independent direct primitive norm enumeration, then exclude 11 factors.
     regression_bound=10000
@@ -285,6 +298,43 @@ def finite_core_coverage():
                 core_flags_sha256=hashlib.sha256(core).hexdigest(),
                 coverage_sha256=hashlib.sha256(covered_bytes).hexdigest(),
                 target_mask_sha256=hashlib.sha256(target_bytes).hexdigest())
+
+
+
+def unit_target_scope_checks(theta):
+    """Challenge M11.6 on its stated 11-unit domain, with exact squares."""
+    checked=0
+    for n in range(2,len(theta),2):
+        if n%11==0:
+            continue
+        m=n
+        t=0
+        while m%2==0:
+            m//=2
+            t+=1
+        S=sigma(n)-(sigma(n//4) if n%4==0 else 0)
+        G=theta[n]-(theta[n//4] if n%4==0 else 0)
+        tau_m=sum(m%d==0 for d in range(1,m+1))
+        delta_square=tau_m**2*(t+3)**2*n//4
+        # G >= (12S-8Delta)/5; square only when its deficit is positive.
+        deficit=12*S-5*G
+        assert deficit<=0 or deficit**2<=64*delta_square, n
+        checked+=1
+    # This input is deliberately outside the stripped-target domain.
+    n=22
+    G=theta[n]
+    S=sigma(n)
+    delta_square=352  # Delta(22)=4*sqrt(22).
+    deficit=12*S-5*G
+    assert G==4 and S==36 and deficit==412
+    assert deficit**2>64*delta_square
+    return dict(domain='even n with11 not dividingn',
+                checked_through=len(theta)-1,unit_targets_checked=checked,
+                excluded_ramified_target=dict(n=n,G=G,S=S,Delta='4*sqrt(22)',
+                    claimed_unrestricted_lower_bound='432/5-(32/5)*sqrt(22)',
+                    deficit_squared=deficit**2,
+                    squared_permitted_deficit=64*delta_square,
+                    unrestricted_reading_rejected=True))
 
 
 def main():
@@ -383,6 +433,7 @@ def main():
     interval_certificate=core_interval_certificate()
     finite_coverage=finite_core_coverage()
     result=dict(checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                unit_target_scope=unit_target_scope_checks(theta),
                 sharp_core_bounds=sharp,
                 core_interval_certificate=interval_certificate,
                 finite_core_coverage=finite_coverage,

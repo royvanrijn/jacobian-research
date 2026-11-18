@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 4035 claim/source nodes, 3026 implication rules and 33 documented equivalence components. conditional: 17; falsified: 17; open: 291; proved: 3710.
+The graph contains 4036 claim/source nodes, 3026 implication rules and 33 documented equivalence components. conditional: 17; falsified: 17; open: 292; proved: 3710.
 
 Inspect the current graph from the repository root:
 
@@ -3487,9 +3487,11 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 ## Arithmetic fibres, discriminants and restricted-prime sums
 
-Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums and primitive Eisenstein norm sumsets have a separate internally complete manuscript.
+Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums have a separately scoped manuscript. Planned primitive-norm papers separate exact sumsets from sharp class-group value counts.
 
-**Computed obligation progress:** 69 open; 5 proved / discharged.
+**Computed obligation progress:** 70 open; 5 proved / discharged.
+
+**Authored scope assessment:** Publication plan: Paper1 Exact Sumsets of Primitive Quadratic Norms centers the three proved -7,-8,-11 identities, explicit sieve certificates and complete exceptions. Paper2 Primitive Norm Sums Beyond Class Number One centers sharp unweighted NJ/logN counts and the odd-class theorem in its proved maximal-order prime-discriminant family, with -20/-23/-56 examples. Baker/Waibel two-block theory is supporting material, optionally a concise note. The next research target is the matching lower bound for every fixed imaginary quadratic order, including arbitrary even class groups and conductors; no manuscript, new proof or assurance upgrade is implied.
 
 **Authored scope assessment:** For every fixed imaginary quadratic order, with arbitrary class group, primitive principal norm self-sums contain every sufficiently large pair-primitive locally admissible target. The local set is periodic with an explicit conductor-sensitive modulus; PL3All gives a closed table for every maximal order. Within fixed genera, finer class data leave the full leading coordinate convolution unchanged, with O_epsilon(N^(7/8+epsilon)) difference. This is an explicit consequence of the existing quaternary theorem; numerical general cutoffs and unweighted leading constants remain open.
 
@@ -3813,6 +3815,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-ARITHMETIC-7 | verification | open | partial | Reassess the scope and complete the proof review before restarting publication work. | GAP-ARITHMETIC-7 (open) |
 | GAP-ARITHMETIC-8 | verification | open | partial | Reassess the manuscript against the canonical fibre-spectrum proof and current literature. | GAP-ARITHMETIC-8 (open) |
 | GAP-PAIR-PRIMITIVE-HISTORICAL-PRIORITY | workflow | open | partial | The central arbitrary-pair separately primitive power-saving asymptotic is a checked short classical Baker deduction. Determine priority only for the remaining sharper7/8 bound, explicit conductor/ramification/local tables and exact exception classifications. Named primary-source and database-access limits remain. This historical workflow obligation is not a missing premise of any mathematical theorem. | GAP-PAIR-PRIMITIVE-HISTORICAL-PRIORITY (open) |
+| GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS | mathematical | open | partial | For every fixed imaginary quadratic order O_D, with arbitrary even or odd ideal class group and arbitrary conductor, prove the sharp unweighted ordered value-count scale V_D(N) comparable_D to N J_D(N)/logN for every sufficiently large pair-primitive locally admissible target, uniformly in all permitted target valuations. J_D is the good inert-target-prime product outside2D. Derive actual bad/conductor local factors and state an explicit correction if any cannot be absorbed into order-dependent constants. The general upper bound already has this scale; the missing estimate is a matching lower bound, improving the current N/log^(log4+epsilon) general lower bound. Constants/cutoffs may depend onD; no leading asymptotic, effective numerical cutoff or field-uniformity is assumed. | GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS (open) |
 | GAP-PRIMITIVE-NORM-EXACT-20 | mathematical | open | partial | Prove or disprove P_-20+P_-20={N>=2:Nmod8in{2,3,4,6,7}} minus{3,4}. Exceptions3,4 are actual; no further exceptions through2^24. Eventual existence and N J(N)/logN counts are proved, but no numerical global onset or all-range finite completion is supplied. | GAP-PRIMITIVE-NORM-EXACT-20 (open) |
 | GAP-PRIMITIVE-NORM-EXACT-23 | mathematical | open | partial | Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen. | GAP-PRIMITIVE-NORM-EXACT-23 (open) |
 | GAP-PRIMITIVE-NORM-EXACT-56 | mathematical | open | partial | Proveorrefute globalcompleteness ofthe118admissibleexceptionsinCN4Finite. Everytarget2..2^24 isclassified, largestexception8876, andeventualN J_-56(N)/logN countsareproved; nonumericalcutoff provesabsenceoffurtherexceptionsabove2^24. Individualmillion-indexaudits donotclose thisbinarygap. | GAP-PRIMITIVE-NORM-EXACT-56 (open) |
@@ -4287,7 +4290,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 80 routes (1135 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 80 routes (1136 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 

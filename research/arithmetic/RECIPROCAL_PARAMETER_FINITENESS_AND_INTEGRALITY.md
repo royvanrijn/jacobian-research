@@ -239,6 +239,23 @@ coefficient field was not assumed algebraic.
 
 ## Theorem 3. Uniform integrality and unit constraints
 
+The integrality mechanism here is classical valuative properness. To see
+the precise match, homogenize the raw equations with the displayed
+positive weights and an extra variable of weight one, over A. The
+weighted Proj has the valuative extension property by
+[Stacks tag 01MF](https://stacks.math.columbia.edu/tag/01MF); equivalently,
+one may use its ordinary Veronese model
+([tag 0B5J](https://stacks.math.columbia.edu/tag/0B5J)). If T is the
+homogenizing variable, D_+(T) is exactly the raw affine scheme. Theorem 1 excludes
+every point at infinity in each geometric fibre of Spec(A), so every
+extended valuation point lies in the original affine chart. This is
+exactly integrality of its affine coordinates. The familiar
+proper-and-affine finiteness principle is
+[tag 01WN](https://stacks.math.columbia.edu/tag/01WN).
+The new input specific to these equations is the absence of weighted
+infinity, proved in Theorem 1; neither properness nor finiteness alone
+establishes that input, the exact length (9), or good reduction.
+
 Let a solution of (4) lie in any finite extension \(K/\mathbb Q_\ell\),
 with \(\ell>L\). Then all \(a_i,b_j,r\) are integral, and \(r\)
 is a unit. This includes residue extensions and ramification

@@ -258,6 +258,16 @@ the remaining case has \(a\ne0\), affine boundary \(c+bY\) with
 
 ## 3. The full relative source of a cubic radial term
 
+The endpoint mechanism has the classical incomplete Airy/Scorer model.
+For a fixed endpoint x, integration by parts gives
+I_(xi,xi)+xi I=-exp(x^3/3+xi x) for
+I=integral_x^decay exp(U^3/3+xi U)dU. At x=0 along the negative real
+ray this is I=-pi Hi(-xi), with Hi the classical Scorer function; see
+[Gil--Segura--Temme, equations(1.3)-(1.4)](https://arxiv.org/pdf/math/0109187v1).
+The inhomogeneous Airy equation and the extra endpoint solution are
+therefore established background. The full connection below additionally
+tracks the moving endpoint, scalar gauge and original Gaussian seed.
+
 Let \(P=aS^3+A(Y)S^2+H(Y)S+G_0(Y)\), with \(a\ne0\) constant, and
 allow a scalar gauge \(-\psi(t)\). Set \(r=1/t\) and
 \(G=tG_0-Y^2/2-\psi\). The spatial exponential phase and original measure
@@ -320,6 +330,14 @@ Then the lifted chain \(\gamma\) can be chosen with
 uniformly in the other coefficients, the endpoint and critical point
 collisions. The estimate allows the usual polynomial weights with a
 polynomial loss in the coefficients and \(|x|\).
+
+The curve-length input is the classical Cauchy--Crofton/Bezout bound.
+Guth, [Section6, Example2, printed p.1974](https://doi.org/10.1007/s00039-009-0710-2),
+gives exactly length<=pi D in a unit disk for a real algebraic curve
+of degree D; translation and scaling give length<=pi D rho. The
+fixed-degree inverse-phase arcs below are an application of that bound,
+followed by exponential summation. This geometric estimate alone supplies
+neither a complete global relative frame nor control of moving Y-chains.
 
 To prove it, break the horizontal phase ray into pieces of unit length.
 Choose phase detours on the boundary of a union of tiny discs about
