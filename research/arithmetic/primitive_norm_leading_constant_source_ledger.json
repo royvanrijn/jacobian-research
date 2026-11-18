@@ -1,0 +1,97 @@
+{
+  "title": "Unweighted primitive norm leading constants: proved marginal/average and conditional pointwise reduction",
+  "date": "2026-11-19",
+  "proof": {
+    "path": "PRIMITIVE_NORM_LEADING_CONSTANT.md",
+    "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+    "locator": "OrderMarginalAndAverage; ConditionalOrderLeadingTerm; BinaryAuxiliaryRemoval"
+  },
+  "proved": [
+    "ExactEuler andGamma-normalizedcoreconstant",
+    "All-order shadow/principalmarginalconstant",
+    "Cumulative unweighted additiveleadingterm",
+    "Individualhiddenclassfailureslowerorder",
+    "Uniformconductor-prefixtailbound",
+    "FullbadHaar-value normalization underexplicitbinaryhypothesis",
+    "Unconditionaluniformauxiliaryweightremovalwith1/sqrt(loglogN)cost"
+  ],
+  "open": [
+    "BinaryCoreCorrelation LC.9, alreadyoddprimitiveGaussianC4+C4",
+    "Actualunweightedpointwiseleadingterm LC.10-LC.11"
+  ],
+  "primary_sources": [
+    {
+      "local_path": "sources/ramare-viswanadham-2509.23260v1.pdf",
+      "sha256": "28e106aaae8d2008b236917f5f60602cf1a337a89415ba0ac16a2e4a4f317551",
+      "url": "https://arxiv.org/pdf/2509.23260v1",
+      "bytes": 700665,
+      "role": "comparison_only",
+      "locator": "Definitionp2;Theorems1.5/1.6pp4-6;Section13pp29-31",
+      "inspection_scope": "ExactoddprimitiveGaussianindicator; Fourier/ternary scope. DisplayedEq6constantnotused; Euleridentitycalibrationdisagrees."
+    },
+    {
+      "local_path": "sources/freiberg-kurlberg-rosenzweig-1701.01157v1.pdf",
+      "sha256": "523a2921bca1f1a52ea9bef4e00a0a2bde61a26fa967c0ccb164761d05ae8c26",
+      "url": "https://arxiv.org/pdf/1701.01157v1",
+      "bytes": 375769,
+      "role": "comparison_only",
+      "locator": "Conjecture1.1pp2-3 andconditionalmainstatement",
+      "inspection_scope": "Ordinaryshiftedindicatorcorrelations; noformal equivalence orproof ofprimitivepositivebinarysum"
+    },
+    {
+      "local_path": "sources/smilansky-1208.2419v2.pdf",
+      "sha256": "d1788120225941bdc57b94a34d20f0c0fae4fe1ff505cb67d452b48e1447b86b",
+      "url": "https://arxiv.org/pdf/1208.2419v2",
+      "bytes": 373827,
+      "role": "comparison_only",
+      "locator": "Section1.3Eq1.6;Sections2-3",
+      "inspection_scope": "Paircorrelationconjectureversusmean-singular-seriestheorems"
+    },
+    {
+      "local_path": "sources/breteche-tenenbaum-selberg-delange.pdf",
+      "sha256": "cc20403e28ec1513664bc10c528473f8b20744135e3582580a769a588fee688f",
+      "url": "https://tenenb.perso.math.cnrs.fr/PPP/On-SD.pdf",
+      "bytes": 423456,
+      "role": "mathematical_input",
+      "locator": "Theorem1.2andEq1.9-1.12p3",
+      "inspection_scope": "Boundedfixed-charactertwistshaveprimeerrorO_A(x/log^Ax), anyA byfixedAP PNT; absoluteprimepowerconditionforanysigma>1/2; rho1/2 or0; leadingGammafactor"
+    },
+    {
+      "local_path": "sources/jiang-lau-lu-2611.12467v2.pdf",
+      "sha256": "5515ca2c63942ae699bcf89167fa2eef06de3b1a64070e9b6fbe92a676e731a7",
+      "url": "https://arxiv.org/pdf/2611.12467v2",
+      "bytes": 728553,
+      "role": "comparison_and_method_inspiration",
+      "locator": "Theorem1.1p2;Sections4-8actualbilinear/weightremovalproofinspected",
+      "inspection_scope": "Fixedshift1,primeplusordinarynorm; notimportedasourbinaryleadingtheorem; rootgivesownbinaryauxiliaryremovalproof. TargetT determinant/conductorobligation retained."
+    },
+    {
+      "local_path": "sources/iwaniec-half-dimensional-sieve-1976.pdf",
+      "sha256": "ca6e84aafb32ee62dcd5ce76679c65652bf677ccd4e36d200576024fac1eca67",
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa29/aa2914.pdf",
+      "bytes": 866895,
+      "role": "comparison_only",
+      "locator": "Printedpp69-73Theorem3/Corollary2, renderedandread",
+      "inspection_scope": "Progressionerrorremainder explicitlyretained; nocompletebinaryasymptoticimported"
+    }
+  ],
+  "canonical_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
+      "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+      "locator": "Exactshadowdecomposition, OrderClassError, primitive localvaluecosets"
+    },
+    {
+      "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
+      "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
+      "locator": "DirectinertSelbergboundanduniformendpointbudget, good-primeroots; noleadingconstantimported"
+    }
+  ],
+  "review_boundary": "One-variable theorem, source statement scope and new reductions internally reviewed. Recentpreprintdeepbilinearmachinerynotimported. No externalhumanreview, formalverification, effectiveonset orhistoricalexhaustiveness.",
+  "constants": "LocalVALUE densities, notcoordinateweights. Fullvaluationstratification required. NoadditionalarchimedeanBeta(1/2,1/2). Gaussianconditionalcoefficientcalibratedagainstprovenmean.",
+  "internal_review": {
+    "reviewers": "Root and separate internal arithmetic/analytic agents",
+    "scope": "Canonical marginal/average noncircularity, infinitebadprefix uniformSelbergtail, exactHaarfactor, signedCRTauxiliaryvarianceandCauchy; Gaussian constants; actualJLLtargetdenominatoraudit",
+    "recent_method_gap": "FullSections3-8chaininspected;targetTdeterminantidentityandh-averageconductorsTqoutsideLemma7.2, plusmu_C-vs-mucoefficientmodel. IndexTrepairplausiblebutunproved; no deeprecentinputimported."
+  }
+}

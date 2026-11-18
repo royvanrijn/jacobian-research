@@ -25,6 +25,7 @@ CHECKERS = (
     "verify_primitive_norm_minus7.py",
     "verify_primitive_norm_minus8.py",
     "verify_primitive_norm_odd_class_absorbers.py",
+    "verify_primitive_norm_order_profiles.py",
     "verify_primitive_norm_quaternary.py",
 )
 

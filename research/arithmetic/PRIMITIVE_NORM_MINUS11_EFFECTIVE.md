@@ -115,8 +115,21 @@ Here is the complete finite proof of (M11.4). The theta series of the
 rank-four even Gram lattice has level 11 and trivial character. The
 Eisenstein series
 \((11E_2(11\tau)-E_2(\tau))/10\) is holomorphic of weight two at that
-level. Subtract it and \(8f_{11}/5\) from the theta series and multiply
-by 5. The result has integer coefficients. The Sturm bound is
+level. Indeed it equals
+\[
+ \frac1{10}\frac1{2\pi i}\frac{d}{d\tau}
+                     \log\frac{\Delta(11\tau)}{\Delta(\tau)},
+ \qquad \Delta=\eta^{24}.
+\]
+The quotient is a modular function, nonvanishing in the upper
+half-plane and meromorphic at the cusps. In a cusp coordinate its
+expansion is \(q_c^\nu U(q_c)\), \(U(0)\ne0\); its logarithmic
+derivative is a constant plus \(q_c U'/U\), up to the fixed cusp-width
+factor, so it has no cusp pole. Subtract this Eisenstein series and
+\(8f_{11}/5\) from the theta series and multiply by 5. The result has
+integer coefficients: the Eisenstein series multiplied by 5 has
+constant 5 and positive coefficients
+\(12\{\sigma(n)-11\sigma(n/11)\}\). The Sturm bound is
 \((2/12)[\mathrm{SL}_2(\mathbb Z):\Gamma_0(11)]=2\).
 The theta coefficients through \(q^2\) are \((1,4,4)\), and the cusp
 coefficients are \((0,1,-2)\). The constant and the first two

@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "proof": {
     "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-    "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+    "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
     "statements": [
       "MaximalOrderValueCounts",
       "ClassErrorComparison",
@@ -58,7 +58,7 @@
       "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
       "role": "mathematical_input_and_historical_comparison",
       "statements_used": [
-        "Section5,Lemma2,displayed5.2,PDFp15: fixed form-class prime-count estimate; nonambiguous inverse class density1/h",
+        "Section2, numbered part(5), Lemma2, displayed(5.2), printed/PDFp15: fixed form-class prime-count estimate with exponential-logarithmic error; nonambiguous inverse-class density1/h",
         "Partial summation of the fixed-discriminant case gives sum_(q<=y,q inOmega)1/q=(1/h)loglogy+O_K(1)",
         "Theorems2-prime/3-prime in introduction concern squarefree within-genus failures and fixed translated primes; not the current unweighted two-norm convolution"
       ],
@@ -137,7 +137,7 @@
     },
     {
       "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-      "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+      "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
       "locator": "Coordinate/value distinction and existing generic sharp upper bound; not used to infer the new lower bound"
     }
   ],

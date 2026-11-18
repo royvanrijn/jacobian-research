@@ -1,0 +1,105 @@
+{
+  "title": "Primitive norm sums in every fixed imaginary quadratic order",
+  "date": "2026-11-19",
+  "proof": {
+    "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
+    "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+    "locator": "OrderValueCounts,OrderClassError; O.1-O.15 and complete proofs"
+  },
+  "scope": {
+    "orders": "All fixed imaginary quadratic orders, arbitrary conductors and ring class groups",
+    "count": "Ordered positive numerical norm-value pairs; primitive in the order basis",
+    "sharp_scale": "N J_order(N)/logN on every sufficiently large pair-primitive local target",
+    "class_error": "Any 0<delta<1/h_order, uniform allN>=3; exact equality of individual sets when2Pic=0",
+    "finite_criterion": "Bad primesS|2Delta; L=8rad_odd(S), Z=product p^(2v_pDelta+2); actual local value filters and target periodZL",
+    "not_claimed": [
+      "Pointwise unweighted leading asymptotic",
+      "Effective general cutoff",
+      "Uniformity in varying orders",
+      "Exact global exceptions",
+      "Historical priority"
+    ]
+  },
+  "primary_sources": [
+    {
+      "key": "khayutin2019",
+      "author": "Ilya Khayutin",
+      "title": "Joint equidistribution of CM points",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v189-n1-p04-s.pdf",
+      "path": "sources/khayutin-joint-cm-2019.pdf",
+      "sha256": "f22691429c27058fabd47fe12c6a901e7feffffad7a0c52e1a936da645166d6f",
+      "locator": "Definition2.8 printedp167/PDFp23; AppendixA printedpp256-258/PDFpp112-114, PropositionA.1 and CorollaryA.2",
+      "role": "Proper invertible ideal/local-principal gluing and general-order norm kernel2Pic; arithmetic appendix, not conditional equidistribution theorem",
+      "inspection": "Actual statements and proofs read internally; independent local-ideal normalization reconstructed inO.4-O.6",
+      "excluded_source_line": "Unused LemmaA.6 first dyadic case fails forK=Q(sqrt(-2)),f=2: maximalunitnorm3, orderunitnormsonly1mod8. Our full conductor unit table is proved directly; A.1 is independent of that later table."
+    },
+    {
+      "key": "conrad_conductor",
+      "author": "Keith Conrad",
+      "title": "The conductor ideal of an order",
+      "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/conductor.pdf",
+      "path": "sources/conrad-conductor.pdf",
+      "sha256": "4495fb5492f8316a2ef6a312fd84f7d0d23b6c97a136cab27e4ce83483d0bc41",
+      "locator": "Theorem5.2 printedpp14-15; exactsequence5.7 andTheorem5.3 printedp16",
+      "role": "Prime-to-conductor ideal class representatives and finiteness ofPic(O)",
+      "inspection": "Actual theorem statements and exactsequence inspected; not used for a numerical-norm uniquegenus claim"
+    },
+    {
+      "key": "bourgain_fuchs",
+      "author": "J.Bourgain andE.Fuchs",
+      "title": "On representation of integers by binary quadratic forms",
+      "url": "https://arxiv.org/pdf/1105.3698v2",
+      "path": "sources/bourgain-fuchs-1105.3698v2.pdf",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
+      "locator": "Section2, numbered part(5), Lemma2/(5.2), printed/PDFp15; introduction pp1,3-4 permits primitive nonfundamental discriminants, explicitly including -4a^2",
+      "role": "Fixed negative form-discriminant prime-class density1/h for nonambiguous inverse pairs, with x*exp(-c*sqrt(log x)) error; partial summation gives the bounded Mertens remainder",
+      "inspection": "Actual introduction, definitions and Lemma2 read. The auxiliary factorization D=D0*f^2 on p26 uses squarefree D0, not necessarily the field fundamental discriminant; its f is not used as the order conductor. No growing ring-class modulus assertion."
+    },
+    {
+      "key": "milne_cft403",
+      "author": "J.S.Milne",
+      "title": "Class Field Theory v4.03",
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "path": "sources/milne-cft403.pdf",
+      "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+      "locator": "IIITheorem4.4(d), VIIITheorem3.1 printedp234/PDFp243 and quadraticreciprocity discussion",
+      "role": "CyclicHasse norm, localHilbertnormcriterion andreciprocity; fixedquadraticextension",
+      "inspection": "Exact retained primary statements previously read and reused in the explicit ideal/gluing proof"
+    }
+  ],
+  "canonical_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
+      "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
+      "locator": "MixedPrimeSquareSieve M.11-M.17, directclasserrorproof; FiniteGenusFilter M.23-M.26 completeweighted/all-staterestorationproof"
+    },
+    {
+      "path": "ASYMMETRIC_SUBGROUP_SPLITTING.md",
+      "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db",
+      "locator": "Quadraticsplitting weightedfamily andpositiveunweighting inherited throughFiniteGenusFilter"
+    },
+    {
+      "path": "PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md",
+      "sha256": "370db27ce48a826c21ebef5509831c65a90f340fc29aa5e94e5ddc14723fb0e5",
+      "locator": "Complete direct odd/dyadic conductor images, correctorder-unitgroups, finitecaps and primitiveideal-localtype interface"
+    }
+  ],
+  "checker": {
+    "path": "verify_primitive_norm_order_profiles.py",
+    "sha256": "0eddb55eb062f6b8b139f0b4d243766df1e1ee12981b962121054ab2019828c2",
+    "locator": "Complete finite coordinate-vs-table and profile-vs-target masks; deliberate wrongconductor/genus/prefixrules",
+    "receipt": {
+      "path": "primitive_norm_order_profile_checks.json",
+      "sha256": "845084abbd196206f0b363f121e59d1e0f76f4663f3df5bc18fc0f3fa28901d0",
+      "locator": "26orders;52actualimages;1850profiles;4098200targetresidues;99genericconductorcases/282260residues"
+    },
+    "command": "python3 research/arithmetic/verify_primitive_norm_order_profiles.py --output research/arithmetic/primitive_norm_order_profile_checks.json",
+    "execution": "Root canonical replay byte-identical to stable scratch receipt. Default Python3.12.3, standardlibraryonly; optimizedexecutionrejectsbeforeoutput.",
+    "scope": "Exact fixed finite domains only; not a proof of infinite ideal/genus/primecount/dispersion inputs"
+  },
+  "internal_review": {
+    "arithmetic": "Root and separate internal agent read actual canonical proof: Theta kernel, primitiveideal existence, conductor type preservation, cap, H compatibility, allbadJ and finite-character lower",
+    "local_tables": "Direct all-depth odd/dyadic proof read, exact finite coordinate image algorithms and negativecontrols replayed",
+    "assurance": "Internal mathematical/source review and deterministic replay only; no externalhumanreview/formalverification/priorityclaim"
+  }
+}

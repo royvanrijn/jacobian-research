@@ -8862,15 +8862,59 @@
           "verification_note": "Complete written and source-level reconstruction internally reviewed by root and separate agents. Current finite checker internally replayed byte-identically. Finite tests support only their stated domains; imported infinite norm/prime/dispersion results remain explicit inputs. No external human review, formal verification, numerical general cutoff or priority certificate. Optimized execution is explicitly rejected before output; the targeted runtime regression covers -O, -OO and PYTHONOPTIMIZE.",
           "dependency_coverage": "partial",
           "graph_scope_note": "For every fixed imaginary quadratic field K of fundamental discriminantD<0, with arbitrary finite class group, ordered primitive principal norm VALUE sums R_P(N) are comparable_K toN J_K(N)/logN for every sufficiently large pair-primitive locally admissible target. Outside the local set the count is exactlyzero. The individual local/genus shadow Lambda has the same sharp scale and, for any0<delta<1/h_K, R_Lambda-R_P=O_K,delta(N J_K/log^(1+delta)N) uniformlyallN>=3; if2G=0 the individual sets coincide. Thus R_P/R_Lambda=1+O(log^-deltaN) onlarge admissibletargets. All targetvaluations areuniform; constants/cutoffs dependonK. No conductor/mixed-field extension, leadingconstant, numericalcutoff, field-uniformity or exactexceptionlist."
+        },
+        {
+          "id": "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS",
+          "title": "Sharp unweighted primitive norm sums in every imaginary quadratic order",
+          "state": "proved",
+          "scope": "For every fixed imaginary quadratic order O=Z+f O_K, arbitrary conductor and ring class group, ordered positive primitive principal norm VALUE sums have sharp order N J_O(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside the finite local set. J_O omits all primes dividing2Delta. Uniform all target valuations; constants depend onO. The individual local shadow has the same scale; hidden class failures contribute O_O,delta(N J_O/log^(1+delta)N), any0<delta<1/h(O), allN>=3; P=Lambda if2Pic(O)=0. No pointwise leading constant, varying-order uniformity, numerical cutoff or exact global exceptions.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "checker": "arithmetic/verify_primitive_norm_order_profiles.py",
+          "artifact_hash": "sha256:0eddb55eb062f6b8b139f0b4d243766df1e1ee12981b962121054ab2019828c2",
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "arithmetic/PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md",
+            "arithmetic/primitive_norm_all_order_source_ledger.json",
+            "arithmetic/verify_primitive_norm_order_profiles.py",
+            "arithmetic/primitive_norm_order_profile_checks.json",
+            "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
+            "arithmetic/sources/khayutin-joint-cm-2019.pdf",
+            "arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every fixed imaginary quadratic order O=Z+f O_K, arbitrary conductor and ring class group, ordered positive primitive principal norm VALUE sums have sharp order N J_O(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside the finite local set. J_O omits all primes dividing2Delta. Uniform all target valuations; constants depend onO. The individual local shadow has the same scale; hidden class failures contribute O_O,delta(N J_O/log^(1+delta)N), any0<delta<1/h(O), allN>=3; P=Lambda if2Pic(O)=0. No pointwise leading constant, varying-order uniformity, numerical cutoff or exact global exceptions."
+        },
+        {
+          "id": "ARITH-PRIMITIVE-NORM-LEADING-CALIBRATION",
+          "title": "Primitive norm leading constants: proved means and an explicit binary reduction",
+          "state": "proved",
+          "scope": "For every fixed imaginary quadratic order, exact Euler/Gamma-normalized core and primitive-value marginal constants and cumulative pair asymptotic c_O^2 X^2/(2logX) are proved. Hidden individual class failures are lower order. A uniform bad-prefix tail bound and Haar-value identity reduce the FULL pointwise leading constant to explicit BinaryCoreCorrelation LC.9. An unconditional small-split-prime auxiliary-weight removal has relative cost1/sqrt(loglogN). The pointwise binary correlation and actual pointwise unweighted leading term remain open, already forC4+C4. Candidate local constants are VALUE densities, not coordinate densities; no extra Beta factor.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "arithmetic/primitive_norm_leading_constant_source_ledger.json",
+            "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "arithmetic/sources/breteche-tenenbaum-selberg-delange.pdf"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every fixed imaginary quadratic order, exact Euler/Gamma-normalized core and primitive-value marginal constants and cumulative pair asymptotic c_O^2 X^2/(2logX) are proved. Hidden individual class failures are lower order. A uniform bad-prefix tail bound and Haar-value identity reduce the FULL pointwise leading constant to explicit BinaryCoreCorrelation LC.9. An unconditional small-split-prime auxiliary-weight removal has relative cost1/sqrt(loglogN). The pointwise binary correlation and actual pointwise unweighted leading term remain open, already forC4+C4. Candidate local constants are VALUE densities, not coordinate densities; no extra Beta factor."
         }
       ],
       "open_questions": [
-        {
-          "node": "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
-          "kind": "mathematical",
-          "question": "Complete the all-order sharp-value-count target at nonmaximal/conductor orders. Every maximal order and arbitrary class group now has sharp NJ_K/logN counts and a logarithmically smaller class error. The remaining lower bound needs actual conductor-primitive valuation strata and ring-class transport; generic upper bounds already exist.",
-          "source": "arithmetic/PRIMITIVE_NORM_NOVELTY.md"
-        },
         {
           "node": "GAP-ARITH-ELLIPTIC-HASSE-COUNT",
           "kind": "mathematical",
@@ -9176,6 +9220,12 @@
           "kind": "mathematical",
           "question": "Proveorrefute globalcompleteness ofthe118admissibleexceptionsinCN4Finite. Everytarget2..2^24 isclassified, largestexception8876, andeventualN J_-56(N)/logN countsareproved; nonumericalcutoff provesabsenceoffurtherexceptionsabove2^24. Individualmillion-indexaudits donotclose thisbinarygap.",
           "source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md"
+        },
+        {
+          "node": "GAP-PRIMITIVE-NORM-BINARY-CORRELATION",
+          "kind": "mathematical",
+          "question": "Prove the actual pointwise splitting-core indicator correlation LC.9, or its small auxiliary-weighted version. Conductors, arbitrary ringclassgroups, fullbadprefix tails and exact candidate Haar constants are now handled; marginal/averagedleadingterms do not close the binary gap.",
+          "source": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md"
         }
       ],
       "scope_notes": [
@@ -9265,7 +9315,9 @@
         "The primitive x^2+14y^2 binarysumset isexactlyclassifiedthrough2^24:118actualadmissibleexceptions,max8876, with2507shortanchors coveringallpositivecases and118exhaustivenegatives. Globalexceptioncompleteness remainsopen. Ramifiedcoordinateidentities switchprincipal/class-two forms withgcdguards; 7M liesinP0+P0 exactlywhenM liesinU2+U2.",
         "For discriminant-56, individualclassfailures are a pointwise lower-order additive term: R_L-R_P<<N J_-56(N)/log^(5/4)N uniformlyallN>=3, henceR_P/R_L=1+O(log^(-1/4)N) on every sufficientlylarge49-admissibletarget. The proof usesathin-square envelope, exactuniformCRT, self-containedSelbergoptimization andfixedAPMertens. Thistransfersanyfuturegenusleadingasymptotic, butdoesnotcomputeone. The prime-discriminantcounttheorem also dropsitsredundantodd-class-numberhypothesis viaaclassicalfractionalideal proof.",
         "Discriminant-7 now has the exact binary identity P+P={N>=2:49 not dividingN} minus{7,77,203}; its split core has exceptions11,29. Complete finite/infinite quaternionic sieve certificates and exceptional-quotient descent establish global completeness, with at leastN^(2/3)/20000 ordered value pairs on every eligibleN>=2^69. Internal proof review and byte-identical finite replay do not assert external review, formal verification or priority.",
-        "Targeted historical review verifies that the full arbitrary-binary-pair separately primitive power-saving coordinate asymptotic and eventual local-global theorem are short deductions from Baker2006 uniform analytic lemmas/proofs plus elementary tails/local completion. Gaussian cases have still earlier antecedents. No standalone novelty claim for central generality alone is warranted; sharper7/8, explicit local arithmetic and exact exceptions require separate priority checks. The mathematical theorem and assurance remain unchanged."
+        "Targeted historical review verifies that the full arbitrary-binary-pair separately primitive power-saving coordinate asymptotic and eventual local-global theorem are short deductions from Baker2006 uniform analytic lemmas/proofs plus elementary tails/local completion. Gaussian cases have still earlier antecedents. No standalone novelty claim for central generality alone is warranted; sharper7/8, explicit local arithmetic and exact exceptions require separate priority checks. The mathematical theorem and assurance remain unchanged.",
+        "For every fixed imaginary quadratic order O=Z+f O_K, arbitrary conductor and ring class group, ordered positive primitive principal norm VALUE sums have sharp order N J_O(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside the finite local set. J_O omits all primes dividing2Delta. Uniform all target valuations; constants depend onO. The individual local shadow has the same scale; hidden class failures contribute O_O,delta(N J_O/log^(1+delta)N), any0<delta<1/h(O), allN>=3; P=Lambda if2Pic(O)=0. No pointwise leading constant, varying-order uniformity, numerical cutoff or exact global exceptions.",
+        "For every fixed imaginary quadratic order, exact Euler/Gamma-normalized core and primitive-value marginal constants and cumulative pair asymptotic c_O^2 X^2/(2logX) are proved. Hidden individual class failures are lower order. A uniform bad-prefix tail bound and Haar-value identity reduce the FULL pointwise leading constant to explicit BinaryCoreCorrelation LC.9. An unconditional small-split-prime auxiliary-weight removal has relative cost1/sqrt(loglogN). The pointwise binary correlation and actual pointwise unweighted leading term remain open, already forC4+C4. Candidate local constants are VALUE densities, not coordinate densities; no extra Beta factor."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -9342,7 +9394,9 @@
         "GAP-PRIMITIVE-NORM-EXACT-23",
         "GAP-PRIMITIVE-NORM-EXACT-56",
         "GAP-PAIR-PRIMITIVE-HISTORICAL-PRIORITY",
-        "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS"
+        "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
+        "GAP-PRIMITIVE-NORM-BINARY-CORRELATION",
+        "GAP-PRIMITIVE-NORM-POINTWISE-LEADING"
       ]
     },
     {
@@ -88987,7 +89041,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+            "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
             "locator": "Mobius truncation equations10-14; Absolute completion equations15-20; real-volume normalization"
           },
           {
@@ -89057,7 +89111,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-            "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+            "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
             "locator": "TheoremM11 and complete proof throughM11.20"
           }
         ],
@@ -89159,7 +89213,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+            "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
             "locator": "Appended named declarations pending review; existing mapped claims do not acquire these conclusions"
           },
           {
@@ -89304,7 +89358,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+            "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
             "locator": "Exact dyadic shell formulas29-31 and modular/Sturm proof"
           }
         ],
@@ -89345,7 +89399,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+            "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
             "locator": "Equations32-36; class number one double coset, dyadic factorization and spectral hypothesis checks"
           },
           {
@@ -89429,7 +89483,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-            "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+            "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
             "locator": "M11.3 and ramified coordinate map"
           }
         ],
@@ -89480,7 +89534,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-            "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+            "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
             "locator": "M11.4 and complete modular/Sturm proof; M11.6 filter"
           }
         ],
@@ -89498,7 +89552,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-            "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+            "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
             "locator": "M11.7-M11.11: all-class measure, norm characters, Satake cancellation and correlations"
           },
           {
@@ -89521,7 +89575,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-            "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+            "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
             "locator": "M11.17-M11.19; lattice row integral, exact Euler completeness and divisor-frontier rearrangement"
           }
         ],
@@ -89592,7 +89646,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+            "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
             "locator": "Equations20b-20f: exact mixed target ratios, Mertens lower bound, ideal cubic moment and Holder conversion"
           },
           {
@@ -90010,7 +90064,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+            "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
             "locator": "Explicit first-power adaptation of Baker, B.1-B.12: lattice changes, overlap, target dependence, full error budget and recomputed Euler factors"
           }
         ],
@@ -91006,39 +91060,24 @@
       },
       {
         "id": "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
-        "title": "Sharp unweighted primitive norm sums for every imaginary quadratic order",
+        "title": "Sharp unweighted counts for all orders, including conductors",
         "kind": "gap",
         "status": "open",
-        "scope": "The original target is sharp unweighted primitive norm-value counts for every fixed imaginary quadratic order. The maximal-order subcase, including arbitrary even class groups, is now proved by ARITH-MAXIMAL-ORDER-PRIMITIVE-NORM-COUNTS with a lower-order genus/class comparison. The remaining task is the conductor/nonmaximal-order extension: derive actual primitive conductor valuation strata and ring-class interface, and prove the matching NJ_D/logN lower bound (or explicitly corrected local scale) for every sufficiently large local target, uniformly target valuations. Existing generic upper bound remains available. Leadingconstants/numericalcutoffs/field-uniformity remain separate.",
+        "scope": "For every fixed imaginary quadratic order O=Z+f O_K, arbitrary conductor and ring class group, ordered positive primitive principal norm VALUE sums have sharp order N J_O(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside the finite local set. J_O omits all primes dividing2Delta. Uniform all target valuations; constants depend onO. The individual local shadow has the same scale; hidden class failures contribute O_O,delta(N J_O/log^(1+delta)N), any0<delta<1/h(O), allN>=3; P=Lambda if2Pic(O)=0. No pointwise leading constant, varying-order uniformity, numerical cutoff or exact global exceptions.",
         "sources": [
           {
-            "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "27b0a45659b330e08e4dfc6f76dd059139211095657b1701e391eb93f5219c94",
-            "locator": "Next target: sharp unweighted counts for every quadratic order"
-          },
-          {
-            "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-            "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
-            "locator": "Equations20g-20h: generic lower and sharp upper value-count bounds; coordinate asymptotics do not supply the missing lower bound"
-          },
-          {
-            "path": "arithmetic/PRIMITIVE_NORM_ODD_CLASS_GROUPS.md",
-            "sha256": "b46c53f152a1c9238bea6a1aec693b9b735326d6706cdfafc691203a046be166",
-            "locator": "OddClassCounts and final stated limitations: prime-discriminant maximal orders, finite class profiles, no all-order result"
-          },
-          {
-            "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
-            "locator": "Maximal-order stage completed; final scope excludes conductors"
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderValueCounts,O.1-O.3;fullconductor/ring-classproof"
           }
         ],
         "dependency_coverage": "partial",
-        "assessment": "Maximal-order stage completed internally; conductor stage remains open. No all-order theorem or priority assurance.",
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim.",
         "topic": "arithmetic",
         "origin": "internal",
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
-        "next_action": "Inspect primary ring-class norm/conductor literature, then prove primitive conductor-local strata and their class/genus transport through the existing positive-restoration family; do not reuse the ramified exponent<=1 criterion at conductor primes."
+        "next_action": "The conductor/ring-class sharp-order theorem is proved. Actual pointwise leading constants remain the separate binary-correlation obligation."
       },
       {
         "id": "ARITH-MAXIMAL-ORDER-CLASS-ERROR",
@@ -91052,12 +91091,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "ClassErrorComparison,M.3; Sections2-3,M.8-M.17"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91075,12 +91114,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "HilbertGenusKernel,M.5-M.7 andproof; explicitcharactersM.18-M.22"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91098,12 +91137,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "ClassSaturation,M.8-M.9, signedflipproof"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91121,12 +91160,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "MixedPrimeSquareSieve,M.11-M.17, completeCRT/weights/finiteexpectationproof"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91144,12 +91183,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "FiniteGenusFilter,M.23-M.26 and fullweighted/positiveunweightingproof"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91167,12 +91206,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "ShadowProfileCoverage,M.27-M.28 andlocalCRTproof"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91190,12 +91229,12 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-            "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+            "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
             "locator": "GenusShadowCounts,M.29 andproof"
           },
           {
             "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-            "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+            "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
             "locator": "Exact primary editions, canonical proof inputs, finite evidence and limits"
           }
         ],
@@ -91280,6 +91319,357 @@
           }
         ],
         "assessment": "Internal exact computation and byte-identical rerun only; no external or formal verification."
+      },
+      {
+        "id": "EXT-ORDER-PROPER-IDEALS-GENUS",
+        "title": "Proper invertible order ideals and general-order principal genus",
+        "scope": "KhayutinDefinition2.8 identifiesproperinvertiblefractionalidealswithlocallyprincipalideles foranyorder; AppendixAPropositionA.1 hasnormkernel2Pic. Mainarticleequidistributionassumptionsnotused; erroneousunusedA.6dyadiclineexcluded.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/khayutin-joint-cm-2019.pdf",
+            "sha256": "f22691429c27058fabd47fe12c6a901e7feffffad7a0c52e1a936da645166d6f",
+            "locator": "Definition2.8p167;AppendixAPropositionA.1pp256-257"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "EXT-ORDER-PIC-FINITENESS",
+        "title": "Finite ring class group and prime-to-conductor representatives",
+        "scope": "FixedorderPic isfinite; invertibleclassesadmitprime-to-conductorrepresentatives.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/conrad-conductor.pdf",
+            "sha256": "4495fb5492f8316a2ef6a312fd84f7d0d23b6c97a136cab27e4ce83483d0bc41",
+            "locator": "Theorems5.2/5.3andexactsequence5.7pp14-16"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "EXT-ORDER-CLASS-PRIME-MERTENS",
+        "title": "Fixed ring-class nonambiguous prime Mertens law",
+        "scope": "ForanyfixednegativeformdiscriminantDelta, eachnonambiguousinverseproperclasspairhasrationalprimeharmonicsum(1/h_Delta)loglogy+O_Delta(1). Nonfundamentaldiscriminantsincluded; no growingconductordistribution.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf",
+            "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
+            "locator": "Section5Lemma2(5.2),PDFp15;Section6D=D0f^2"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-GENUS-KERNEL",
+        "title": "Conductor-safe norm invariant with kernel2Pic",
+        "scope": "Theta_p([I])=n(I)/N(i_p)modN(O_punits) iswell-definedandhasjointkernel2Pic forproperinvertibleidealsatallprimes.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderGenusKernel,O.4-O.5"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-PRIMITIVE-SHADOW",
+        "title": "Primitive local order norms as existence of square-class ideals",
+        "scope": "n is anindividualprimitive localprincipalnorm iffSOMEprimitiveintegralinvertibleidealnormn hasclassin2Pic. Numericalnormalone neednotdeterminegenusatconductor; Delta-100,n25explicitcounterexample.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderPrimitiveShadow,O.6andcounterexample"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-CLASS-SATURATION",
+        "title": "Good-prime saturation preserving conductor ideal types",
+        "scope": "Exact-exponent-onegoodringclassprimeorientations fill2Pic andprincipalizeeverylocallyprimitive normwithsufficientclassprimes; allbadlocalidealsunchanged.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderClassSaturation,O.7-O.8"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-CLASS-ERROR",
+        "title": "Uniform lower-order hidden ring-class failures",
+        "scope": "R_Lambda-R_P<<N J_O/log^(1+delta)N, any0<delta<1/h(O), allN>=3; zeroif2Pic=0. Sameprime-squareCRTandrandommarkbudget z=N^.1,endpointN^.45; allbadprimesdeleted.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderClassError,Section2explicitbudget"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-LOCAL-COSETS",
+        "title": "Complete primitive local value cosets and additive valuation cap",
+        "scope": "Atp|2Delta,primitivevalueimage isunionfullcosetsmodp^(2v_pDelta+1); everylocaladditivesumhasnonzerosummandsvaluation<=2v_pDelta+2, despiteunboundedindividualsplitconductortails.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderLocalCosets,O.9"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-LOCAL-PROFILES",
+        "title": "Explicit finite criterion for all order-local additive targets",
+        "scope": "ActuallocalfiltersA_r areunionsoffullunit-squarestatesandlieinquadraticsplittingkernelH. Prefixesr,s|Z, originalfiltersaftergcd, finiteGamma>0 equivalentalllocaltargets; periodZL.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "OrderLocalProfiles,O.10-O.14"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-SHADOW-COUNTS",
+        "title": "Sharp local-shadow convolution for all quadratic orders",
+        "scope": "Everylargepair-primitivelocaltargethasR_Lambda comparableN J_O/logN. Finitepositiveactualvalueprofilesapplyexistingarbitraryquadraticvectorpositiveunweighting; directinertupperavoidsinfiniteconductor-tailtruncation.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+            "locator": "Section4,O.15andcompletecombination"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-CONDUCTOR-TABLES",
+        "title": "Complete primitive local conductor norm images",
+        "scope": "Alloddconductoranddyadicconductorprimitivevalueimagesandorderunitnormgroupsderivedatall depths. Includes split3threshold nonsquare condition, unbounded split tails, and all ramifieddyadictypes.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md",
+            "sha256": "370db27ce48a826c21ebef5509831c65a90f340fc29aa5e94e5ddc14723fb0e5",
+            "locator": "Sections1-4completecaseproofs,C1-C5"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ALL-ORDER-FINITE-AUDIT",
+        "title": "Finite complete conductor/profile coordinate audit",
+        "scope": "26orders;52actualprimitivecoordinateimages;99genericconductorcases/282260residues;1850profiles/4098200targetresidues. Completeprofilemasks equalindependentcoordinate-localselfsum masks;52fullmaskcorruptionsand6substantiveguards. Fixedfinitecoverageonly.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_order_profiles.py",
+            "sha256": "0eddb55eb062f6b8b139f0b4d243766df1e1ee12981b962121054ab2019828c2",
+            "locator": "Exactfinitealgorithms;receiptpinsallmoduliandbounds"
+          },
+          {
+            "path": "arithmetic/primitive_norm_order_profile_checks.json",
+            "sha256": "845084abbd196206f0b363f121e59d1e0f76f4663f3df5bc18fc0f3fa28901d0",
+            "locator": "Deterministiccurrentcanonicalexecutionreceipt;rootbyte-identicalreplay"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "EXT-ORDER-CORE-SELBERG-DELANGE",
+        "title": "Fixed-character splitting-core means with exact Gamma normalization",
+        "scope": "Boundedmultiplicativecorecharactertwists satisfyTheorem1.2viafixedAP PNT anylogpower andabsoluteprimepowerconditionforsigma>1/2. rho1/2forprincipalandchi, rho0otherwise; lambda0=g(1)/Gamma(rho).",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/breteche-tenenbaum-selberg-delange.pdf",
+            "sha256": "cc20403e28ec1513664bc10c528473f8b20744135e3582580a769a588fee688f",
+            "locator": "Theorem1.2andEq1.9-1.12,p3"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ORDER-MARGINAL-AVERAGE",
+        "title": "All-order primitive marginal and averaged pair leading terms",
+        "scope": "c_O=(2c_C/alpha_L)productbadmu(V_p); #P(X)~#Lambda(X)~c_O X/sqrtlogX; sumN<=X R_P(N)~c_O²X²/(2logX). Individualhiddenclassfailures<<X/log^(.5+delta)X. No pointwise differentiation.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+            "locator": "OrderMarginalAndAverage,LC.1-LC.7"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ORDER-LEADING-REDUCTION",
+        "title": "Exact conditional pointwise constant and conductor tail control",
+        "scope": "IF BinaryCoreCorrelationLC.9then R_P(N)~(4c_C²/alpha²)productbad d_p(N)*C_in J(N)N/logN. UniformprefixlineSelbergupper andconvergentdoubleprefixsumjustifyfullinfinitevaluationstratification. Theimplication isproved; its binaryhypothesisremainsopen.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+            "locator": "ConditionalOrderLeadingTerm,LC.10-LC.15"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "ARITH-ORDER-AUXILIARY-WEIGHT-REMOVAL",
+        "title": "Uniform binary small-split-prime auxiliary weight removal",
+        "scope": "Averagemanydisjointsmallgoodsplitdivisorweights normalizedby1/q. Actualpairweightremovalerror<<N J(N)/(logN sqrtJaux) forJaux<=c_KloglogN. ProofexactCRT polynomialsecondmomentplusinertSelberg; no weightedleadingtermevaluationclaimed.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+            "locator": "BinaryAuxiliaryRemoval,LC.16-LC.20"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim."
+      },
+      {
+        "id": "GAP-PRIMITIVE-NORM-BINARY-CORRELATION",
+        "title": "Pointwise unweighted splitting-core binary correlation",
+        "scope": "Prove LC.9forfixedquadraticcoreswithperiodicunit-squarefiltersandfixedcoprimebadcoefficients, uniformlyalladmissibletargetvaluations. Existingweightedtaucorefamily, positiveunweightingandternaryFourierboundsdonotsupplyit. SmallauxiliaryweightversionwouldsufficebyLC.17. AlreadyopenininspectedinputsforoddprimitiveGaussianC4+C4.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "mathematical_obligation",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+            "locator": "BinaryCoreCorrelation,LC.9;Sections4and6"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim.",
+        "gap_kind": "mathematical",
+        "next_action": "Prove the auxiliary-weighted binary correlation; audit target-sized-conductor major-arc average arising from a variable-target adaptation of Jiang-Lau-Lu."
+      },
+      {
+        "id": "GAP-PRIMITIVE-NORM-POINTWISE-LEADING",
+        "title": "Actual pointwise unweighted leading term for all orders",
+        "scope": "EstablishunconditionalLC.10-LC.11forprimitiveprincipalnormselfsums. Allconductor/classnormalizationandtailsarereduced; actualbinarycorecorrelationremainsunproved. Provenmarginal/averagedconstantsarenotcompletion.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "mathematical_obligation",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+            "locator": "ConditionalOrderLeadingTermandexplicitopenBinaryCoreCorrelation"
+          }
+        ],
+        "assessment": "Internal written/source audit by root and separate agents; exact finite evidence internally replayed. No external human review, formal verification, general effective cutoff or priority claim.",
+        "gap_kind": "mathematical",
+        "next_action": "Discharge BinaryCoreCorrelation; exact bad Haar factors and lower-order class error then transfer the leading term."
       }
     ],
     "implications": [
@@ -139920,7 +140310,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "Theorem2; equations10-20a and Sharper power saving from Waibel: squarefree scaled-form invariant comparison and target-gcd averaging"
         },
         "dependency_coverage": "partial"
@@ -139934,7 +140324,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "Two quadratic splitting kernels: H=ker chi1, kappa=2"
         },
         "dependency_coverage": "partial"
@@ -140009,7 +140399,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "Formula29 modular identities from complete finite Sturm coefficient lists; formula30 inclusion-exclusion"
         },
         "dependency_coverage": "partial"
@@ -140025,7 +140415,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "CorollaryPairPrimitiveAngle23-28; uniform positive finite-sieve tail and fixed harmonic theta estimates"
         },
         "dependency_coverage": "partial"
@@ -140090,7 +140480,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-          "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+          "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
           "locator": "M11.4 modularity and full coefficient certificate"
         },
         "dependency_coverage": "partial"
@@ -140104,7 +140494,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-          "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+          "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
           "locator": "M11.7-M11.11; finite-quotient Haar normalization and checked adaptation of spectral imports"
         },
         "dependency_coverage": "partial"
@@ -140121,7 +140511,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-          "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+          "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
           "locator": "TheoremM11, M11.13-M11.20; exact2^25 finite coverage, all35bins, large-core completion, split-prime descent and ramified scaling"
         },
         "dependency_coverage": "partial"
@@ -140136,7 +140526,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-          "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+          "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
           "locator": "M11.17-M11.18 and the explicit finite/infinite completeness arguments"
         },
         "dependency_coverage": "partial"
@@ -140150,7 +140540,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-          "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+          "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
           "locator": "TheoremM11 exact identity and its necessity/sufficiency proof"
         },
         "dependency_coverage": "partial"
@@ -140166,7 +140556,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "Equations20b-20i: local ratios, Mertens, corrected-Henriot fractional moments/Holder and sharp upper-sieve scale"
         },
         "dependency_coverage": "partial"
@@ -140180,7 +140570,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "Order-specific class number one, adelic quotient, strong-approximation/JL bridge and equations32-36"
         },
         "dependency_coverage": "partial"
@@ -140854,7 +141244,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "locator": "AdditiveClassDisappearance CG.1-CG.3; GenusInvariantConvolution CG.4; determinant and primitive-block isometries; direct genus cancellation"
         }
       },
@@ -140868,7 +141258,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "HilbertGenusKernel,M.5-M.7"
         },
         "dependency_coverage": "partial"
@@ -140882,7 +141272,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "ClassSaturation,M.8-M.9"
         },
         "dependency_coverage": "partial"
@@ -140896,7 +141286,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "MixedPrimeSquareSieve,M.11-M.17, exactmixedmoduli"
         },
         "dependency_coverage": "partial"
@@ -140912,7 +141302,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "ClassErrorComparison,deficiencyunionandfiniteexpectationM.8-M.17"
         },
         "dependency_coverage": "partial"
@@ -140929,7 +141319,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "FiniteGenusFilter,M.23-M.26, actualbadcoefficientsandall-statetransport"
         },
         "dependency_coverage": "partial"
@@ -140945,7 +141335,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "ShadowProfileCoverage,M.18-M.22 andM.27-M.28"
         },
         "dependency_coverage": "partial"
@@ -140961,7 +141351,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "GenusShadowCounts,M.29 anddirectinertupper"
         },
         "dependency_coverage": "partial"
@@ -140976,8 +141366,219 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "locator": "FinalcombinationM.2-M.4, mainproofafterM.29"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-GENUS-KERNEL",
+        "premises": [
+          "EXT-ORDER-PROPER-IDEALS-GENUS",
+          "EXT-MAXIMAL-HASSE-HILBERT-NORMS"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-GENUS-KERNEL",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "OrderGenusKernel,O.4-O.5"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-PRIMITIVE-SHADOW",
+        "premises": [
+          "ARITH-ALL-ORDER-GENUS-KERNEL"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-PRIMITIVE-SHADOW",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "OrderPrimitiveShadow,O.6"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-CLASS-SATURATION",
+        "premises": [
+          "ARITH-ALL-ORDER-PRIMITIVE-SHADOW",
+          "EXT-ORDER-PIC-FINITENESS"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-CLASS-SATURATION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "OrderClassSaturation,O.7"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-CLASS-ERROR",
+        "premises": [
+          "ARITH-ALL-ORDER-CLASS-SATURATION",
+          "EXT-ORDER-CLASS-PRIME-MERTENS",
+          "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-CLASS-ERROR",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "OrderClassErrorandSection2explicitsievebudget"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-LOCAL-COSETS",
+        "premises": [
+          "EXT-PADIC-NEWTON-HENSEL-INTERFACE"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-LOCAL-COSETS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "OrderLocalCosets,O.9;directstrongHenselargument"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-LOCAL-PROFILES",
+        "premises": [
+          "ARITH-ALL-ORDER-LOCAL-COSETS",
+          "EXT-MAXIMAL-HASSE-HILBERT-NORMS"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-LOCAL-PROFILES",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "O.10-O.14,OrderLocalProfiles"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-SHADOW-COUNTS",
+        "premises": [
+          "ARITH-ALL-ORDER-LOCAL-PROFILES",
+          "ARITH-MAXIMAL-ORDER-GENUS-FILTER",
+          "EXT-MAXIMAL-INERT-PRIME-MERTENS"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-SHADOW-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "Section4,arbitraryquadraticvectorfilterandfiniteunionstates"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-PRIMITIVE-COUNTS",
+        "premises": [
+          "ARITH-ALL-ORDER-SHADOW-COUNTS",
+          "ARITH-ALL-ORDER-CLASS-ERROR"
+        ],
+        "conclusion": "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "FinalcombinationofO.2andO.3"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-CLOSE-SHARP-COUNT-GAP",
+        "premises": [
+          "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS"
+        ],
+        "conclusion": "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "locator": "OrderValueCounts,allfixedorders"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-MARGINAL-AVERAGE",
+        "premises": [
+          "ARITH-ALL-ORDER-CLASS-ERROR",
+          "ARITH-ALL-ORDER-LOCAL-COSETS",
+          "EXT-ORDER-CORE-SELBERG-DELANGE"
+        ],
+        "conclusion": "ARITH-ORDER-MARGINAL-AVERAGE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+          "locator": "OrderMarginalAndAverage,LC.1-LC.7"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-AUXILIARY-REMOVAL",
+        "premises": [
+          "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE"
+        ],
+        "conclusion": "ARITH-ORDER-AUXILIARY-WEIGHT-REMOVAL",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+          "locator": "BinaryAuxiliaryRemoval,LC.16-LC.20"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-CONDITIONAL-CONSTANT-REDUCTION",
+        "premises": [
+          "ARITH-ALL-ORDER-CLASS-ERROR",
+          "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE",
+          "EXT-ORDER-CORE-SELBERG-DELANGE"
+        ],
+        "conclusion": "ARITH-ORDER-LEADING-REDUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+          "locator": "ConditionalOrderLeadingTerm,LC.10-LC.15;proofisconditionalimplication"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-LEADING-CALIBRATION",
+        "premises": [
+          "ARITH-ORDER-MARGINAL-AVERAGE",
+          "ARITH-ORDER-LEADING-REDUCTION",
+          "ARITH-ORDER-AUXILIARY-WEIGHT-REMOVAL"
+        ],
+        "conclusion": "ARITH-PRIMITIVE-NORM-LEADING-CALIBRATION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+          "locator": "Provedcalibration/averages/reductions;pointwisegapretained"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ORDER-ACTUAL-LEADING-IF-CORRELATION",
+        "premises": [
+          "GAP-PRIMITIVE-NORM-BINARY-CORRELATION",
+          "ARITH-ORDER-LEADING-REDUCTION"
+        ],
+        "conclusion": "GAP-PRIMITIVE-NORM-POINTWISE-LEADING",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+          "locator": "ConditionalOrderLeadingTerm,LC.10-LC.15"
         },
         "dependency_coverage": "partial"
       }
@@ -150407,6 +151008,14 @@
               "role": "mathematical_input",
               "nodes": [
                 "ARITH-SQUAREFREE-ALGEBRA-COUNT"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "locator": "Theorem1.2,Eq1.9-1.12p3;boundedfixed-charactertwists;primepowerconditionandfixedAP PNTchecked",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ORDER-CORE-SELBERG-DELANGE"
               ]
             }
           ],
@@ -160466,6 +161075,14 @@
               "nodes": [
                 "EXT-MAXIMAL-HASSE-HILBERT-NORMS"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+              "locator": "III4.4(d),VIII3.1andquadraticreciprocity;O.4-O.6reconstruction",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-MAXIMAL-HASSE-HILBERT-NORMS"
+              ]
             }
           ],
           "verification": "source_read",
@@ -167212,6 +167829,14 @@
               "nodes": [
                 "EXT-MAXIMAL-CLASS-PRIME-MERTENS"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+              "locator": "Lemma2(5.2),Section6D=D0f²:fixednonfundamentaldiscriminantsincluded",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ORDER-CLASS-PRIME-MERTENS"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -167594,6 +168219,172 @@
               ]
             }
           ]
+        },
+        {
+          "id": "EXT-ORDER-KHAYUTIN-2019",
+          "title": "Joint equidistribution of CM points",
+          "citation": "I.Khayutin,Annals189(2019),145-276,DOI10.4007/annals.2019.189.1.4",
+          "identifiers": {},
+          "urls": [
+            "https://annals.math.princeton.edu/wp-content/uploads/annals-v189-n1-p04-s.pdf"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/khayutin-joint-cm-2019.pdf",
+              "sha256": "f22691429c27058fabd47fe12c6a901e7feffffad7a0c52e1a936da645166d6f",
+              "locator": "Definition2.8p167;AppendixAPropositionA.1pp256-257;unusedA.6dyadiclinediscrepancyexcluded"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+              "locator": "Definition2.8p167;AppendixAPropositionA.1pp256-257;unusedA.6dyadiclinediscrepancyexcluded",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ORDER-PROPER-IDEALS-GENUS"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
+        },
+        {
+          "id": "EXT-ORDER-CONRAD-CONDUCTOR",
+          "title": "The conductor ideal of an order",
+          "citation": "KeithConrad,The conductor ideal of an order,Theorems5.2/5.3",
+          "identifiers": {},
+          "urls": [
+            "https://kconrad.math.uconn.edu/blurbs/gradnumthy/conductor.pdf"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/conrad-conductor.pdf",
+              "sha256": "4495fb5492f8316a2ef6a312fd84f7d0d23b6c97a136cab27e4ce83483d0bc41",
+              "locator": "Theorems5.2/5.3andexactsequence5.7pp14-16"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+              "locator": "Theorems5.2/5.3andexactsequence5.7pp14-16",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ORDER-PIC-FINITENESS"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
+        },
+        {
+          "id": "EXT-PRIMITIVE-NORM-RAMARE-VISWANADHAM-2025",
+          "title": "The trigonometric polynomial on sums of two squares, an additive problem and generalisation",
+          "citation": "The trigonometric polynomial on sums of two squares, an additive problem and generalisation",
+          "identifiers": {},
+          "urls": [
+            "https://arxiv.org/abs/2509.23260v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/ramare-viswanadham-2509.23260v1.pdf",
+              "sha256": "28e106aaae8d2008b236917f5f60602cf1a337a89415ba0ac16a2e4a4f317551",
+              "locator": "Definitionp2;Theorems1.5/1.6pp4-6;Section13;noourbinaryleadingformula;Eq6normalizationnotused"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "locator": "Definitionp2;Theorems1.5/1.6pp4-6;Section13;noourbinaryleadingformula;Eq6normalizationnotused",
+              "role": "context",
+              "nodes": []
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
+        },
+        {
+          "id": "EXT-PRIMITIVE-NORM-FKR-2017",
+          "title": "Sums of two squares in short intervals",
+          "citation": "Sums of two squares in short intervals",
+          "identifiers": {},
+          "urls": [
+            "https://arxiv.org/abs/1701.01157v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/freiberg-kurlberg-rosenzweig-1701.01157v1.pdf",
+              "sha256": "523a2921bca1f1a52ea9bef4e00a0a2bde61a26fa967c0ccb164761d05ae8c26",
+              "locator": "Conjecture1.1pp2-3;ordinaryshiftedcorrelationsandconditionaltheorem"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "locator": "Conjecture1.1pp2-3;ordinaryshiftedcorrelationsandconditionaltheorem",
+              "role": "context",
+              "nodes": []
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
+        },
+        {
+          "id": "EXT-PRIMITIVE-NORM-SMILANSKY-2012",
+          "title": "Sums of two squares: pair correlation and distribution in short intervals",
+          "citation": "Sums of two squares: pair correlation and distribution in short intervals",
+          "identifiers": {},
+          "urls": [
+            "https://arxiv.org/abs/1208.2419v2"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/smilansky-1208.2419v2.pdf",
+              "sha256": "d1788120225941bdc57b94a34d20f0c0fae4fe1ff505cb67d452b48e1447b86b",
+              "locator": "Section1.3Eq1.6andSections2-3conjectureversusmeanseries"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "locator": "Section1.3Eq1.6andSections2-3conjectureversusmeanseries",
+              "role": "context",
+              "nodes": []
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
+        },
+        {
+          "id": "EXT-PRIMITIVE-NORM-JIANG-LAU-LU-2026",
+          "title": "An asymptotic formula for primes of the form u²+v²+1",
+          "citation": "An asymptotic formula for primes of the form u²+v²+1",
+          "identifiers": {},
+          "urls": [
+            "https://arxiv.org/abs/2611.12467v2"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/jiang-lau-lu-2611.12467v2.pdf",
+              "sha256": "5515ca2c63942ae699bcf89167fa2eef06de3b1a64070e9b6fbe92a676e731a7",
+              "locator": "Theorem1.1p2;Sections4-8fulltargettransferaudit;fixedshift1notouruniformbinarytarget"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "locator": "Theorem1.1p2;Sections4-8fulltargettransferaudit;fixedshift1notouruniformbinarytarget",
+              "role": "context",
+              "nodes": []
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
         }
       ],
       "internal_citations": [
@@ -245124,7 +245915,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-          "sha256": "268ba7da2e27f1e3c7a3e2afefa2761a4512ba2e712674b1d420e23c40113493",
+          "sha256": "5bcf5ecbe77faadb20498dde6094bd40048f9dde2fbc91e3c3bfc354e7fa2116",
           "claims": [
             "ARITH-PAIR-PRIMITIVE-QUATERNARY-LOCAL-GLOBAL",
             "ARITH-PAIR-PRIMITIVE-ANGULAR-BALANCE",
@@ -245430,7 +246221,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md",
-          "sha256": "2d9f02910983db8766f3a94c4aa95f3a78fe2ee6bc6fac6577b165d9cd782423",
+          "sha256": "f212b97a609d84c24b8308929e9666c8d4003c00bd29446fd2f29a7616373934",
           "claims": [
             "ARITH-D11-EXPLICIT-LOCAL-GLOBAL",
             "ARITH-D11-QUATERNIONIC-HECKE-TRANSFER",
@@ -245643,7 +246434,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_minus8_source_ledger.json",
-          "sha256": "90d8197070fd03f872a13dc4c29cf41b15eedef06604b1d467b29af6c4eebdd6",
+          "sha256": "276f13a0b540e689c0e461299d6d03d4f54bc18c7258c0f599e3d4945a60490d",
           "claims": [
             "ARITH-D8-EXPLICIT-LOCAL-GLOBAL"
           ],
@@ -246663,7 +247454,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-          "sha256": "b7ae2a5f1c320d6f8dcfb91e1e6c17e8f0f0d3d278760e766b4162e4b1f7ffcd",
+          "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
           "claims": [
             "ARITH-MAXIMAL-ORDER-PRIMITIVE-NORM-COUNTS",
             "ARITH-MAXIMAL-ORDER-CLASS-ERROR",
@@ -246772,7 +247563,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_maximal_order_source_ledger.json",
-          "sha256": "70ccc2c516a9ca645da67b3f2d7d033e908fe9e6f40183aaf7d4c02257753d03",
+          "sha256": "9b80fef0a44436bc11751d855df6c22350f8c5c33f72d18f7a9f2460ac1fdddf",
           "claims": [
             "ARITH-MAXIMAL-ORDER-PRIMITIVE-NORM-COUNTS"
           ],
@@ -246819,6 +247610,279 @@
           "statements": [],
           "role": "reference",
           "explanation": "Actual arXivv2 prime-class density statement and historical within-genus comparison; deep prime theorem imported."
+        },
+        {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+          "claims": [
+            "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS",
+            "ARITH-ALL-ORDER-GENUS-KERNEL",
+            "ARITH-ALL-ORDER-PRIMITIVE-SHADOW",
+            "ARITH-ALL-ORDER-CLASS-SATURATION",
+            "ARITH-ALL-ORDER-CLASS-ERROR",
+            "ARITH-ALL-ORDER-LOCAL-COSETS",
+            "ARITH-ALL-ORDER-LOCAL-PROFILES",
+            "ARITH-ALL-ORDER-SHADOW-COUNTS"
+          ],
+          "dependencies": [
+            "EXT-ORDER-PROPER-IDEALS-GENUS",
+            "EXT-ORDER-PIC-FINITENESS",
+            "EXT-ORDER-CLASS-PRIME-MERTENS",
+            "EXT-MAXIMAL-HASSE-HILBERT-NORMS",
+            "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE",
+            "ARITH-MAXIMAL-ORDER-GENUS-FILTER"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem OrderValueCounts.** For every fixed imaginary quadratic order,",
+              "kind": "theorem",
+              "line": 25,
+              "title": "Theorem OrderValueCounts.** For every fixed imaginary quadratic order,",
+              "nodes": [
+                "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem OrderClassError.** If \\(2G=0\\), then",
+              "kind": "theorem",
+              "line": 38,
+              "title": "Theorem OrderClassError.** If \\(2G=0\\), then",
+              "nodes": [
+                "ARITH-ALL-ORDER-CLASS-ERROR"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OrderGenusKernel.** The homomorphism",
+              "kind": "lemma",
+              "line": 97,
+              "title": "Lemma OrderGenusKernel.** The homomorphism",
+              "nodes": [
+                "ARITH-ALL-ORDER-GENUS-KERNEL"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OrderPrimitiveShadow.** For a positive integer \\(n\\),",
+              "kind": "lemma",
+              "line": 127,
+              "title": "Lemma OrderPrimitiveShadow.** For a positive integer \\(n\\),",
+              "nodes": [
+                "ARITH-ALL-ORDER-PRIMITIVE-SHADOW"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OrderClassSaturation.** If \\(n\\in\\Lambda_{\\mathcal O}\\) and",
+              "kind": "lemma",
+              "line": 167,
+              "title": "Lemma OrderClassSaturation.** If \\(n\\in\\Lambda_{\\mathcal O}\\) and",
+              "nodes": [
+                "ARITH-ALL-ORDER-CLASS-SATURATION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OrderLocalCosets.** The primitive local value image",
+              "kind": "lemma",
+              "line": 234,
+              "title": "Lemma OrderLocalCosets.** The primitive local value image",
+              "nodes": [
+                "ARITH-ALL-ORDER-LOCAL-COSETS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma OrderLocalProfiles.** A target is locally admissible exactly",
+              "kind": "lemma",
+              "line": 323,
+              "title": "Lemma OrderLocalProfiles.** A target is locally admissible exactly",
+              "nodes": [
+                "ARITH-ALL-ORDER-LOCAL-PROFILES"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "role": "proof",
+          "explanation": "Complete fixed-order conductor/class proof; inherited analytic estimates explicit."
+        },
+        {
+          "path": "arithmetic/PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md",
+          "sha256": "370db27ce48a826c21ebef5509831c65a90f340fc29aa5e94e5ddc14723fb0e5",
+          "claims": [
+            "ARITH-ALL-ORDER-CONDUCTOR-TABLES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "proof",
+          "explanation": "All-depth directlocalcaseproofs; finitechecksseparate."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_order_profiles.py",
+          "sha256": "0eddb55eb062f6b8b139f0b4d243766df1e1ee12981b962121054ab2019828c2",
+          "claims": [
+            "ARITH-ALL-ORDER-FINITE-AUDIT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Fixedfiniteindependentcoordinate/targetalgorithmsandnegativecontrols."
+        },
+        {
+          "path": "arithmetic/primitive_norm_order_profile_checks.json",
+          "sha256": "845084abbd196206f0b363f121e59d1e0f76f4663f3df5bc18fc0f3fa28901d0",
+          "claims": [
+            "ARITH-ALL-ORDER-FINITE-AUDIT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Currentdeterministiccanonicalexecutionreceipt;rootreplayedbyte-identically."
+        },
+        {
+          "path": "arithmetic/primitive_norm_all_order_source_ledger.json",
+          "sha256": "1417e898bf05d21416b8d7aa51a106fd9c407a629b7a203321cc5b6cff557dfa",
+          "claims": [
+            "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Inspectedprimaryeditions,conductorhypotheses,sourcecautionandfinite/infiniteboundaries."
+        },
+        {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+          "claims": [
+            "ARITH-PRIMITIVE-NORM-LEADING-CALIBRATION",
+            "ARITH-ORDER-MARGINAL-AVERAGE",
+            "ARITH-ORDER-LEADING-REDUCTION",
+            "ARITH-ORDER-AUXILIARY-WEIGHT-REMOVAL"
+          ],
+          "dependencies": [
+            "EXT-ORDER-CORE-SELBERG-DELANGE",
+            "ARITH-ALL-ORDER-CLASS-ERROR",
+            "ARITH-ALL-ORDER-LOCAL-COSETS",
+            "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-BINARY-CORRELATION",
+            "GAP-PRIMITIVE-NORM-POINTWISE-LEADING"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem OrderMarginalAndAverage.** For every fixed order,",
+              "kind": "theorem",
+              "line": 81,
+              "title": "Theorem OrderMarginalAndAverage.** For every fixed order,",
+              "nodes": [
+                "ARITH-ORDER-MARGINAL-AVERAGE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem ConditionalOrderLeadingTerm.** If BinaryCoreCorrelation holds",
+              "kind": "theorem",
+              "line": 225,
+              "title": "Theorem ConditionalOrderLeadingTerm.** If BinaryCoreCorrelation holds",
+              "nodes": [
+                "ARITH-ORDER-LEADING-REDUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma BinaryAuxiliaryRemoval.** For fixed \\(A,B,U,V\\) as in (LC.9),",
+              "kind": "lemma",
+              "line": 351,
+              "title": "Lemma BinaryAuxiliaryRemoval.** For fixed \\(A,B,U,V\\) as in (LC.9),",
+              "nodes": [
+                "ARITH-ORDER-AUXILIARY-WEIGHT-REMOVAL"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "role": "proof",
+          "explanation": "Provedmarginal/average,conditionalconstantimplicationandauxiliaryremoval;pointwiseasymptoticexplicitlyopen."
+        },
+        {
+          "path": "arithmetic/primitive_norm_leading_constant_source_ledger.json",
+          "sha256": "c5bc731ca5d8b0b6d716f436edbf69317d08e176419a4f87465d8d439ff5cecd",
+          "claims": [
+            "ARITH-PRIMITIVE-NORM-LEADING-CALIBRATION"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-BINARY-CORRELATION"
+          ],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Primarysourceversionsandprecisescope;nodeeprecentbinarytheoremimported."
+        },
+        {
+          "path": "arithmetic/sources/khayutin-joint-cm-2019.pdf",
+          "sha256": "f22691429c27058fabd47fe12c6a901e7feffffad7a0c52e1a936da645166d6f",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact primary edition; inspection/application limit in source ledger."
+        },
+        {
+          "path": "arithmetic/sources/conrad-conductor.pdf",
+          "sha256": "4495fb5492f8316a2ef6a312fd84f7d0d23b6c97a136cab27e4ce83483d0bc41",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact primary edition; inspection/application limit in source ledger."
+        },
+        {
+          "path": "arithmetic/sources/ramare-viswanadham-2509.23260v1.pdf",
+          "sha256": "28e106aaae8d2008b236917f5f60602cf1a337a89415ba0ac16a2e4a4f317551",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact primary edition; inspection/application limit in source ledger."
+        },
+        {
+          "path": "arithmetic/sources/freiberg-kurlberg-rosenzweig-1701.01157v1.pdf",
+          "sha256": "523a2921bca1f1a52ea9bef4e00a0a2bde61a26fa967c0ccb164761d05ae8c26",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact primary edition; inspection/application limit in source ledger."
+        },
+        {
+          "path": "arithmetic/sources/smilansky-1208.2419v2.pdf",
+          "sha256": "d1788120225941bdc57b94a34d20f0c0fae4fe1ff505cb67d452b48e1447b86b",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact primary edition; inspection/application limit in source ledger."
+        },
+        {
+          "path": "arithmetic/sources/jiang-lau-lu-2611.12467v2.pdf",
+          "sha256": "5515ca2c63942ae699bcf89167fa2eef06de3b1a64070e9b6fbe92a676e731a7",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact primary edition; inspection/application limit in source ledger."
         }
       ]
     },

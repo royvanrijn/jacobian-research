@@ -1126,12 +1126,33 @@ The proposed Eisenstein series are
  E_s=-\frac1{24}\{E_2(\tau)-E_2(2\tau)
                          +8E_2(16\tau)-32E_2(32\tau)\}.
 \]
-They are holomorphic modular forms at the stated levels. Indeed
-\(dE_2(d\tau)-E_2(\tau)\) is holomorphic of weight two on
-\(\Gamma_0(d)\), as follows directly from the transformation law of
-\(E_2\); each displayed combination is a linear combination of these
-forms, since its coefficients \(c_d\) satisfy \(\sum c_d/d=0\).
-Both displayed constant terms equal 1.
+They are holomorphic modular forms at the stated levels. To check
+every cusp explicitly, put
+\[
+ D_d(\tau)=dE_2(d\tau)-E_2(\tau)
+   =\frac1{2\pi i}\frac{d}{d\tau}
+                   \log\frac{\Delta(d\tau)}{\Delta(\tau)},
+ \qquad \Delta(\tau)=\eta(\tau)^{24}.
+\]
+The quotient is a modular function on \(\Gamma_0(d)\), with no
+zero or pole in the upper half-plane and meromorphic at each cusp.
+At a cusp of width \(h\), write its expansion as
+\(q_c^\nu U(q_c)\), where \(q_c=e^{2\pi i\tau/h}\) and
+\(U(0)\ne0\). The weight-two transform of its logarithmic derivative
+is
+\[
+                 \frac1h\left(\nu+q_c\frac{U'(q_c)}{U(q_c)}\right),
+\]
+which has no pole at that cusp. Thus \(D_d\) is holomorphic of
+weight two, with trivial character. Explicitly,
+\[
+ E_r=\frac{D_2}{12}-\frac{D_4}{12}+\frac{D_8}{6},
+ \qquad
+ E_s=\frac{D_2}{48}-\frac{D_{16}}{48}+\frac{D_{32}}{24}.
+\]
+These identities prove membership at levels 8 and 32, including all
+cusps. Both constant terms are 1, and their positive coefficients
+are integers by the displayed divisor-sum formulas.
 
 Martin--Ono, *Eta-quotients and elliptic curves*, Theorem 1,
 level-32 row, identifies \(f_{32}\) as a normalized weight-two newform

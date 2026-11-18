@@ -181,7 +181,7 @@ class and are corrected in the same argument. \(\square\)
 
 For each such inverse pair the rational-prime density is \(1/h\), not
 \(1/(2h)\). The fixed-class prime theorem in Bourgain--Fuchs,
-arXiv:1105.3698v2, Section 5 Lemma 2, (5.2), gives by partial summation
+arXiv:1105.3698v2, Section 2, part (5), Lemma 2, (5.2), gives by partial summation
 \[
  \sum_{\substack{q\le y\\q\in\Omega_g}}\frac1q
                   =\frac1h\log\log y+O_K(1).

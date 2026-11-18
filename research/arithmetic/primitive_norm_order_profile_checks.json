@@ -1,0 +1,2546 @@
+{
+  "checker_sha256": "0eddb55eb062f6b8b139f0b4d243766df1e1ee12981b962121054ab2019828c2",
+  "complete_period_target_residue_comparisons": 4098200,
+  "direct_image_residue_comparisons": 44784,
+  "full_mask_corruptions_rejected": 52,
+  "generic_conductor_tables": {
+    "cases": 99,
+    "complete_residue_comparisons": 282260,
+    "rows": [
+      [
+        -3,
+        2,
+        1,
+        6,
+        64,
+        40,
+        "03bb0de9e8648784c8e0b703f2578d05d32c3b676f5496960f4056eb246bd464"
+      ],
+      [
+        -3,
+        2,
+        2,
+        8,
+        256,
+        88,
+        "dbdea34ba67ebee0ab437e349d949bee06ee32e3dd320308aa9aeb778f88ded7"
+      ],
+      [
+        -3,
+        2,
+        3,
+        10,
+        1024,
+        184,
+        "71d50781c79a10c34dc2f0dc435b6f2f2eee27ff938253f48f4d37293e57598c"
+      ],
+      [
+        -3,
+        2,
+        4,
+        12,
+        4096,
+        696,
+        "22f58e0b8eb7b66c248d0ecac146cbfece0b70119b667bd79e01991c60e10d0d"
+      ],
+      [
+        -3,
+        2,
+        5,
+        14,
+        16384,
+        2744,
+        "f007015409f9b2320bb49ef6d886af0caa435841cdb1d59abea0eac55756c421"
+      ],
+      [
+        -3,
+        3,
+        1,
+        4,
+        81,
+        31,
+        "bf4327c51346611cbd0b2d949164693399fb9b82537dfa7f840025b35d629167"
+      ],
+      [
+        -3,
+        3,
+        2,
+        6,
+        729,
+        274,
+        "49f60903f91e13524aa06920448f329308e55f11ccb1aac542b59fff832fffed"
+      ],
+      [
+        -3,
+        5,
+        1,
+        4,
+        625,
+        270,
+        "0e5ee359858385ea021a9e99382d99c8c4d8efa7d356d773f69976eb16dc6e91"
+      ],
+      [
+        -3,
+        7,
+        1,
+        4,
+        2401,
+        1078,
+        "0b39bfa69b183cc526487459192264c5affb8920e90e48c8f5d46ec35a83adf7"
+      ],
+      [
+        -4,
+        2,
+        1,
+        6,
+        64,
+        22,
+        "b83d84eac9fa7bb238609af1845a6e16104b97ab386fa7fbc286278c7585de8c"
+      ],
+      [
+        -4,
+        2,
+        2,
+        8,
+        256,
+        46,
+        "b657c244758c7dc1831c753de7379742ecc53cccb9c5d73cf752f44c4bc721cf"
+      ],
+      [
+        -4,
+        2,
+        3,
+        10,
+        1024,
+        174,
+        "b187888e6e85df068082cd26acebec5684b7cd272c6b69b57aa44e889607352f"
+      ],
+      [
+        -4,
+        2,
+        4,
+        12,
+        4096,
+        686,
+        "7028e4cbf755614d0205754fdd3d577908c084c95ee3f90d107e276b07877736"
+      ],
+      [
+        -4,
+        2,
+        5,
+        14,
+        16384,
+        2734,
+        "454f4a0e1d4c6083bec1a98b8a3faa2b3f54ff4b4300934224597c5027d766bc"
+      ],
+      [
+        -4,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac"
+      ],
+      [
+        -4,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "919be900f2a49312efcf91e2cfacbdfc9cafda372cd33e336ea6de457b78d291"
+      ],
+      [
+        -4,
+        5,
+        1,
+        4,
+        625,
+        275,
+        "8c293a2990d139a904898198f0517010ce1c7b911badcdf41766c4d8b1407d4f"
+      ],
+      [
+        -4,
+        7,
+        1,
+        4,
+        2401,
+        1071,
+        "2993f6c46fcbf61275ee7ff8db0f64cbe0b2c34103f07f55e3dca40d1f17c06b"
+      ],
+      [
+        -7,
+        2,
+        1,
+        6,
+        64,
+        40,
+        "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a"
+      ],
+      [
+        -7,
+        2,
+        2,
+        8,
+        256,
+        88,
+        "40f263d966c6efe34b19767d81e1944de44b69d49f4c69bdc0376c365b467d57"
+      ],
+      [
+        -7,
+        2,
+        3,
+        10,
+        1024,
+        184,
+        "b5bde0c1c7a1e23357bc5334ce5a3db2504546e7c79b46995c0f18a69f643947"
+      ],
+      [
+        -7,
+        2,
+        4,
+        12,
+        4096,
+        696,
+        "2e338142c40e0dfc707f35ec5761669c66dad98c2f604f89159a5cbc74c9eef9"
+      ],
+      [
+        -7,
+        2,
+        5,
+        14,
+        16384,
+        2744,
+        "14792ecfd09ec3ed06f4298a53eb1125ec6f80aeafcdfc213b59e823989c03dc"
+      ],
+      [
+        -7,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac"
+      ],
+      [
+        -7,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "919be900f2a49312efcf91e2cfacbdfc9cafda372cd33e336ea6de457b78d291"
+      ],
+      [
+        -7,
+        5,
+        1,
+        4,
+        625,
+        270,
+        "0e5ee359858385ea021a9e99382d99c8c4d8efa7d356d773f69976eb16dc6e91"
+      ],
+      [
+        -7,
+        7,
+        1,
+        4,
+        2401,
+        1053,
+        "f9d0d227a31a2344c1dd6fbdc21294f27d8dbee8944ba22f41e42f85257a64a9"
+      ],
+      [
+        -8,
+        2,
+        1,
+        6,
+        64,
+        12,
+        "5f0e4ee1958c388f42b32925f882064ae3ecef85bae619939d2ee0ee78e1bf9f"
+      ],
+      [
+        -8,
+        2,
+        2,
+        8,
+        256,
+        44,
+        "8f3d2a55c6214c15fdf7eb86ce3897804b0c2f8b04ecfd0d4438e6a71d41a002"
+      ],
+      [
+        -8,
+        2,
+        3,
+        10,
+        1024,
+        172,
+        "7e6ef967d88343f91ea477b95da3dd65fa7fd244a3767a5c1978960c8577ed9c"
+      ],
+      [
+        -8,
+        2,
+        4,
+        12,
+        4096,
+        684,
+        "641a6de1f865b50e5b13b0ff414100795ada69d2bfae3ef1d645428fa099899c"
+      ],
+      [
+        -8,
+        2,
+        5,
+        14,
+        16384,
+        2732,
+        "ae031d980ef6c50961f47deb3d7c2fac0b463ce7321982027d9107bf48ecbf8a"
+      ],
+      [
+        -8,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "7b86706a32d3240e3553fba348fa721150f56840f14bff7c02ba5c464b054f3b"
+      ],
+      [
+        -8,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "40cf1058dbf0cdfaafb7b59117dbc261ed679c35f2de8d64b882de9261742715"
+      ],
+      [
+        -8,
+        5,
+        1,
+        4,
+        625,
+        270,
+        "0e5ee359858385ea021a9e99382d99c8c4d8efa7d356d773f69976eb16dc6e91"
+      ],
+      [
+        -8,
+        7,
+        1,
+        4,
+        2401,
+        1071,
+        "2993f6c46fcbf61275ee7ff8db0f64cbe0b2c34103f07f55e3dca40d1f17c06b"
+      ],
+      [
+        -11,
+        2,
+        1,
+        6,
+        64,
+        40,
+        "03bb0de9e8648784c8e0b703f2578d05d32c3b676f5496960f4056eb246bd464"
+      ],
+      [
+        -11,
+        2,
+        2,
+        8,
+        256,
+        88,
+        "dbdea34ba67ebee0ab437e349d949bee06ee32e3dd320308aa9aeb778f88ded7"
+      ],
+      [
+        -11,
+        2,
+        3,
+        10,
+        1024,
+        184,
+        "71d50781c79a10c34dc2f0dc435b6f2f2eee27ff938253f48f4d37293e57598c"
+      ],
+      [
+        -11,
+        2,
+        4,
+        12,
+        4096,
+        696,
+        "22f58e0b8eb7b66c248d0ecac146cbfece0b70119b667bd79e01991c60e10d0d"
+      ],
+      [
+        -11,
+        2,
+        5,
+        14,
+        16384,
+        2744,
+        "f007015409f9b2320bb49ef6d886af0caa435841cdb1d59abea0eac55756c421"
+      ],
+      [
+        -11,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "7b86706a32d3240e3553fba348fa721150f56840f14bff7c02ba5c464b054f3b"
+      ],
+      [
+        -11,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "40cf1058dbf0cdfaafb7b59117dbc261ed679c35f2de8d64b882de9261742715"
+      ],
+      [
+        -11,
+        5,
+        1,
+        4,
+        625,
+        275,
+        "8c293a2990d139a904898198f0517010ce1c7b911badcdf41766c4d8b1407d4f"
+      ],
+      [
+        -11,
+        7,
+        1,
+        4,
+        2401,
+        1071,
+        "2993f6c46fcbf61275ee7ff8db0f64cbe0b2c34103f07f55e3dca40d1f17c06b"
+      ],
+      [
+        -15,
+        2,
+        1,
+        6,
+        64,
+        40,
+        "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a"
+      ],
+      [
+        -15,
+        2,
+        2,
+        8,
+        256,
+        88,
+        "40f263d966c6efe34b19767d81e1944de44b69d49f4c69bdc0376c365b467d57"
+      ],
+      [
+        -15,
+        2,
+        3,
+        10,
+        1024,
+        184,
+        "b5bde0c1c7a1e23357bc5334ce5a3db2504546e7c79b46995c0f18a69f643947"
+      ],
+      [
+        -15,
+        2,
+        4,
+        12,
+        4096,
+        696,
+        "2e338142c40e0dfc707f35ec5761669c66dad98c2f604f89159a5cbc74c9eef9"
+      ],
+      [
+        -15,
+        2,
+        5,
+        14,
+        16384,
+        2744,
+        "14792ecfd09ec3ed06f4298a53eb1125ec6f80aeafcdfc213b59e823989c03dc"
+      ],
+      [
+        -15,
+        3,
+        1,
+        4,
+        81,
+        31,
+        "27cf4b426d2c8a2f05c34c79c96f3363a57680dee82d889dae4bdc0512263ffd"
+      ],
+      [
+        -15,
+        3,
+        2,
+        6,
+        729,
+        274,
+        "728f28661f21295e02ade50f5d3b2ed005cfb11ae7cc1d29e85f1f80109d7c26"
+      ],
+      [
+        -15,
+        5,
+        1,
+        4,
+        625,
+        262,
+        "30790ad178f0f88c4fa1f25064fc3971662dd788448eaef7bdb760b9d3f061a0"
+      ],
+      [
+        -15,
+        7,
+        1,
+        4,
+        2401,
+        1071,
+        "2993f6c46fcbf61275ee7ff8db0f64cbe0b2c34103f07f55e3dca40d1f17c06b"
+      ],
+      [
+        -20,
+        2,
+        1,
+        6,
+        64,
+        22,
+        "b136a834c07bca4146927f7d08426635a53e7617bb83aa92914956ce3f7c0f30"
+      ],
+      [
+        -20,
+        2,
+        2,
+        8,
+        256,
+        46,
+        "9527c71f88ac57aecafd8e67cea035390065d796e6053b0d33ff422deb091f4b"
+      ],
+      [
+        -20,
+        2,
+        3,
+        10,
+        1024,
+        174,
+        "9fb81ab10d03c54660ba08e9f812e05042cbc4daa8f4dd3051cfbffbfcbe8b0e"
+      ],
+      [
+        -20,
+        2,
+        4,
+        12,
+        4096,
+        686,
+        "78df48612f7782bd4bceae5b0f2b9629a4e4111cd7881c9217e947f4c27d0b4c"
+      ],
+      [
+        -20,
+        2,
+        5,
+        14,
+        16384,
+        2734,
+        "1ffb157f3a3c1deb2610846bdcb328b66a2c91478906edee574c8b9b3e8b1ded"
+      ],
+      [
+        -20,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "7b86706a32d3240e3553fba348fa721150f56840f14bff7c02ba5c464b054f3b"
+      ],
+      [
+        -20,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "40cf1058dbf0cdfaafb7b59117dbc261ed679c35f2de8d64b882de9261742715"
+      ],
+      [
+        -20,
+        5,
+        1,
+        4,
+        625,
+        262,
+        "2a7b9b6e284ba6c5c95083130e59af0eefa8ca140943b73868ed03597822bd9b"
+      ],
+      [
+        -20,
+        7,
+        1,
+        4,
+        2401,
+        1078,
+        "0b39bfa69b183cc526487459192264c5affb8920e90e48c8f5d46ec35a83adf7"
+      ],
+      [
+        -23,
+        2,
+        1,
+        6,
+        64,
+        40,
+        "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a"
+      ],
+      [
+        -23,
+        2,
+        2,
+        8,
+        256,
+        88,
+        "40f263d966c6efe34b19767d81e1944de44b69d49f4c69bdc0376c365b467d57"
+      ],
+      [
+        -23,
+        2,
+        3,
+        10,
+        1024,
+        184,
+        "b5bde0c1c7a1e23357bc5334ce5a3db2504546e7c79b46995c0f18a69f643947"
+      ],
+      [
+        -23,
+        2,
+        4,
+        12,
+        4096,
+        696,
+        "2e338142c40e0dfc707f35ec5761669c66dad98c2f604f89159a5cbc74c9eef9"
+      ],
+      [
+        -23,
+        2,
+        5,
+        14,
+        16384,
+        2744,
+        "14792ecfd09ec3ed06f4298a53eb1125ec6f80aeafcdfc213b59e823989c03dc"
+      ],
+      [
+        -23,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "7b86706a32d3240e3553fba348fa721150f56840f14bff7c02ba5c464b054f3b"
+      ],
+      [
+        -23,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "40cf1058dbf0cdfaafb7b59117dbc261ed679c35f2de8d64b882de9261742715"
+      ],
+      [
+        -23,
+        5,
+        1,
+        4,
+        625,
+        270,
+        "0e5ee359858385ea021a9e99382d99c8c4d8efa7d356d773f69976eb16dc6e91"
+      ],
+      [
+        -23,
+        7,
+        1,
+        4,
+        2401,
+        1071,
+        "2993f6c46fcbf61275ee7ff8db0f64cbe0b2c34103f07f55e3dca40d1f17c06b"
+      ],
+      [
+        -24,
+        2,
+        1,
+        6,
+        64,
+        12,
+        "f78dbc3652dd1b428cc6367dc158f11036e9133d9bdb848b1f7923d9653ecc84"
+      ],
+      [
+        -24,
+        2,
+        2,
+        8,
+        256,
+        44,
+        "d66cb77e779d8a59f1eeaf1b711459d1b641fb8cc83f9c471b3b2c30ab04404a"
+      ],
+      [
+        -24,
+        2,
+        3,
+        10,
+        1024,
+        172,
+        "a14fb55817bc6ce2c8cf5a0b6de0fb0d319c73569346f14e085e9c32f90a6632"
+      ],
+      [
+        -24,
+        2,
+        4,
+        12,
+        4096,
+        684,
+        "5086e6960699715549217c4a91f1bf5edc30f97e09ec58e14d9450598b6228a8"
+      ],
+      [
+        -24,
+        2,
+        5,
+        14,
+        16384,
+        2732,
+        "b2e277fbdea4e1f00e57385fb0430578ad52e406a092e9e6db0fe6a6bd147d99"
+      ],
+      [
+        -24,
+        3,
+        1,
+        4,
+        81,
+        31,
+        "27cf4b426d2c8a2f05c34c79c96f3363a57680dee82d889dae4bdc0512263ffd"
+      ],
+      [
+        -24,
+        3,
+        2,
+        6,
+        729,
+        274,
+        "728f28661f21295e02ade50f5d3b2ed005cfb11ae7cc1d29e85f1f80109d7c26"
+      ],
+      [
+        -24,
+        5,
+        1,
+        4,
+        625,
+        275,
+        "8c293a2990d139a904898198f0517010ce1c7b911badcdf41766c4d8b1407d4f"
+      ],
+      [
+        -24,
+        7,
+        1,
+        4,
+        2401,
+        1078,
+        "0b39bfa69b183cc526487459192264c5affb8920e90e48c8f5d46ec35a83adf7"
+      ],
+      [
+        -40,
+        2,
+        1,
+        6,
+        64,
+        12,
+        "e9c34077d7f7e4560d22296ee6e5dcf5366f01459961a22e496c938a8f407794"
+      ],
+      [
+        -40,
+        2,
+        2,
+        8,
+        256,
+        44,
+        "85e210262dbf8689ba4ca8aa85be4e5d3509e7334ab43e9e4ba5588e7c345712"
+      ],
+      [
+        -40,
+        2,
+        3,
+        10,
+        1024,
+        172,
+        "6774d2afe671c364286b8c48961a83a8bd386aa1e0ee8aed1f9dae330b86fc5f"
+      ],
+      [
+        -40,
+        2,
+        4,
+        12,
+        4096,
+        684,
+        "68c82529689b3364b22cbb96f3efa1358a134c6c5790135214879e774884ccf4"
+      ],
+      [
+        -40,
+        2,
+        5,
+        14,
+        16384,
+        2732,
+        "07e22ddc155eda250ff417fcc6f6c6f0aba84927240d550162e5e70c2151cfa4"
+      ],
+      [
+        -40,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac"
+      ],
+      [
+        -40,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "919be900f2a49312efcf91e2cfacbdfc9cafda372cd33e336ea6de457b78d291"
+      ],
+      [
+        -40,
+        5,
+        1,
+        4,
+        625,
+        262,
+        "30790ad178f0f88c4fa1f25064fc3971662dd788448eaef7bdb760b9d3f061a0"
+      ],
+      [
+        -40,
+        7,
+        1,
+        4,
+        2401,
+        1078,
+        "0b39bfa69b183cc526487459192264c5affb8920e90e48c8f5d46ec35a83adf7"
+      ],
+      [
+        -56,
+        2,
+        1,
+        6,
+        64,
+        12,
+        "3726a0949957830659a2df5be5d2701b080d587bf3a0bd4b33249d48e8a5599c"
+      ],
+      [
+        -56,
+        2,
+        2,
+        8,
+        256,
+        44,
+        "286d422838f2da71637c41c716445711cd7f56742a2ba640b028eb2b7d2f4da8"
+      ],
+      [
+        -56,
+        2,
+        3,
+        10,
+        1024,
+        172,
+        "6e2ca0726fa21fb2ca36c4a55703b712fcb3c02b1947feaf127c72712e4d6316"
+      ],
+      [
+        -56,
+        2,
+        4,
+        12,
+        4096,
+        684,
+        "ca7a1f9d9020b0abb5ef85ed7ca3b43431605db9ea220e379b90749edb13ea72"
+      ],
+      [
+        -56,
+        2,
+        5,
+        14,
+        16384,
+        2732,
+        "2120ed8bfce8cdecaaf89977ea6284c854614bdb15cee683a1c70cf4bdae3723"
+      ],
+      [
+        -56,
+        3,
+        1,
+        4,
+        81,
+        33,
+        "7b86706a32d3240e3553fba348fa721150f56840f14bff7c02ba5c464b054f3b"
+      ],
+      [
+        -56,
+        3,
+        2,
+        6,
+        729,
+        276,
+        "40cf1058dbf0cdfaafb7b59117dbc261ed679c35f2de8d64b882de9261742715"
+      ],
+      [
+        -56,
+        5,
+        1,
+        4,
+        625,
+        275,
+        "8c293a2990d139a904898198f0517010ce1c7b911badcdf41766c4d8b1407d4f"
+      ],
+      [
+        -56,
+        7,
+        1,
+        4,
+        2401,
+        1053,
+        "f9d0d227a31a2344c1dd6fbdc21294f27d8dbee8944ba22f41e42f85257a64a9"
+      ]
+    ]
+  },
+  "local_image_cases": 52,
+  "multiple_genus_conductor_example": {
+    "discriminant": -100,
+    "forms": [
+      [
+        1,
+        0,
+        25
+      ],
+      [
+        2,
+        2,
+        13
+      ]
+    ],
+    "meaning": "The two forms have different local unit-value images at5, but both primitively represent25.",
+    "primitive_witnesses": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "unit_images_mod5": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "value": 25
+  },
+  "negative_controls": [
+    "split3 threshold square-unit exception cannot be discarded",
+    "inert conductor prime factors cannot be excluded as if the order were maximal",
+    "maximal-order dyadic criterion cannot replace the conductor criterion",
+    "split conductor image has a high-valuation tail, not a universal valuation bound",
+    "cancelling a common prefix must not change the ORIGINAL local norm labels",
+    "the conductor norm value25 does not determine a unique genus at discriminant-100"
+  ],
+  "order_count": 26,
+  "orders": [
+    {
+      "all_profile_count": 9,
+      "bounded_global_primitive_flags_sha256": "3617bd15d25d75c6eb804fe917e4e3b875e2d435f9c7bdfffb129fa6a4229eb5",
+      "bounded_global_primitive_values_4096": 655,
+      "complete_target_period": 64,
+      "conductor": 2,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 3,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "b83d84eac9fa7bb238609af1845a6e16104b97ab386fa7fbc286278c7585de8c",
+          "image_count": 22,
+          "image_modulus": 64,
+          "local_pair_target_count": 42,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 42,
+      "order_discriminant": -16,
+      "positive_profile_count": 9,
+      "prefix_count": 3,
+      "principal_norm_form": [
+        1,
+        0,
+        4
+      ],
+      "profile_and_direct_target_sha256": "5e36256fd8d9cf2a3747ac7c70c3b2ffa56aa809c29624f4510672d522ff3f41",
+      "unit_state_period_L": 8
+    },
+    {
+      "all_profile_count": 16,
+      "bounded_global_primitive_flags_sha256": "3a86d978c839253f20cbee693fe7e8e6b9e64ea5db93ac90d672b0ce82a59ea0",
+      "bounded_global_primitive_values_4096": 443,
+      "complete_target_period": 432,
+      "conductor": 3,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 10,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac",
+          "image_count": 33,
+          "image_modulus": 81,
+          "local_pair_target_count": 21,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 27,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 210,
+      "order_discriminant": -36,
+      "positive_profile_count": 16,
+      "prefix_count": 4,
+      "principal_norm_form": [
+        1,
+        0,
+        9
+      ],
+      "profile_and_direct_target_sha256": "db3e01eb9d84cb1c05786ee769d4155bad45023752b82f4968501c60b758d176",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 16,
+      "bounded_global_primitive_flags_sha256": "9f01facfab5a1c17bb2338029f5da208e65d252f463c1798bef939520b80b746",
+      "bounded_global_primitive_values_4096": 346,
+      "complete_target_period": 256,
+      "conductor": 4,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 5,
+          "coarse_adjugate_Hensel_cap": 14,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "b657c244758c7dc1831c753de7379742ecc53cccb9c5d73cf752f44c4bc721cf",
+          "image_count": 46,
+          "image_modulus": 256,
+          "local_pair_target_count": 130,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "pair_target_coarse_modulus": 256,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 130,
+      "order_discriminant": -64,
+      "positive_profile_count": 16,
+      "prefix_count": 4,
+      "principal_norm_form": [
+        1,
+        0,
+        16
+      ],
+      "profile_and_direct_target_sha256": "2226b52c1a9c648dc912fdf4be9017d017fa38df2c861ab9ef0100c0ef64e638",
+      "unit_state_period_L": 8
+    },
+    {
+      "all_profile_count": 64,
+      "bounded_global_primitive_flags_sha256": "d74d21501a1afe708e608da9f9f8b68281613f6cb90eea9b05796d2345f90fdd",
+      "bounded_global_primitive_values_4096": 306,
+      "complete_target_period": 50000,
+      "conductor": 5,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 10,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "8c293a2990d139a904898198f0517010ce1c7b911badcdf41766c4d8b1407d4f",
+          "image_count": 275,
+          "image_modulus": 625,
+          "local_pair_target_count": 625,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 625,
+          "prime": 5,
+          "unit_square_class_representatives": [
+            1,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 31250,
+      "order_discriminant": -100,
+      "positive_profile_count": 64,
+      "prefix_count": 8,
+      "principal_norm_form": [
+        1,
+        0,
+        25
+      ],
+      "profile_and_direct_target_sha256": "7e4b7b524fcc8cdc91e6913ed9e46e57c6a53beddc1bc7e00e1f9ff5e413f2be",
+      "unit_state_period_L": 40
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "20e31ccc2f11a5341692983e108c97cda9d1d096ec2f7d4bcb469bf5f3a0a68d",
+      "bounded_global_primitive_values_4096": 284,
+      "complete_target_period": 1728,
+      "conductor": 6,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 3,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "b83d84eac9fa7bb238609af1845a6e16104b97ab386fa7fbc286278c7585de8c",
+          "image_count": 22,
+          "image_modulus": 64,
+          "local_pair_target_count": 42,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac",
+          "image_count": 33,
+          "image_modulus": 81,
+          "local_pair_target_count": 21,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 27,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 882,
+      "order_discriminant": -144,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        0,
+        36
+      ],
+      "profile_and_direct_target_sha256": "dabf2dcfebe743a179e6b612781c8d3d2a4a0adc4920e21ceeb7de415a70d669",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 256,
+      "bounded_global_primitive_flags_sha256": "a729369cf504827a404851339af0a7086b9483e2c04be8f933a68e1374d4b6f4",
+      "bounded_global_primitive_values_4096": 123,
+      "complete_target_period": 1350000,
+      "conductor": 15,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 10,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac",
+          "image_count": 33,
+          "image_modulus": 81,
+          "local_pair_target_count": 21,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 27,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "8c293a2990d139a904898198f0517010ce1c7b911badcdf41766c4d8b1407d4f",
+          "image_count": 275,
+          "image_modulus": 625,
+          "local_pair_target_count": 625,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 625,
+          "prime": 5,
+          "unit_square_class_representatives": [
+            1,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 656250,
+      "order_discriminant": -900,
+      "positive_profile_count": 256,
+      "prefix_count": 16,
+      "principal_norm_form": [
+        1,
+        0,
+        225
+      ],
+      "profile_and_direct_target_sha256": "252c8155510e31d96ba04aeee2e381fc0d45153451306d8e1f7d4660aaa29291",
+      "unit_state_period_L": 120
+    },
+    {
+      "all_profile_count": 100,
+      "bounded_global_primitive_flags_sha256": "7604ed21ed19de58776189d2e8364d682b8e846ea129bfef42f867300a091f2b",
+      "bounded_global_primitive_values_4096": 79,
+      "complete_target_period": 1250000,
+      "conductor": 25,
+      "fundamental_discriminant": -4,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "82d0ba10ac372be1b29d18512ff78837ab83938019e322c6e457d209c344867b",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 10,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 6,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "32037bf0ef560a3fdef263f09dbf3e4de9670dfc0433ac6f0a5e09cbb7bdb7b3",
+          "image_count": 6525,
+          "image_modulus": 15625,
+          "local_pair_target_count": 15625,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            5,
+            6
+          ],
+          "pair_target_coarse_modulus": 15625,
+          "prime": 5,
+          "unit_square_class_representatives": [
+            1,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 781250,
+      "order_discriminant": -2500,
+      "positive_profile_count": 100,
+      "prefix_count": 10,
+      "principal_norm_form": [
+        1,
+        0,
+        625
+      ],
+      "profile_and_direct_target_sha256": "c1e0d4050239f8c6c6d541b2a824902eec33619160b5855d753bd7dd3c109a35",
+      "unit_state_period_L": 40
+    },
+    {
+      "all_profile_count": 16,
+      "bounded_global_primitive_flags_sha256": "74581588ffeca1c02b3d0db51a0f32f31a1428d1df12749629dc9e15e3372ee0",
+      "bounded_global_primitive_values_4096": 728,
+      "complete_target_period": 288,
+      "conductor": 2,
+      "fundamental_discriminant": -3,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "03bb0de9e8648784c8e0b703f2578d05d32c3b676f5496960f4056eb246bd464",
+          "image_count": 40,
+          "image_modulus": 64,
+          "local_pair_target_count": 32,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 32,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "8f7f315ac2f70db8871d8cefcb1ba18bc5b296259eeeb689a70f9e5b58189b3e",
+          "image_count": 12,
+          "image_modulus": 27,
+          "local_pair_target_count": 7,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 9,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 224,
+      "order_discriminant": -12,
+      "positive_profile_count": 16,
+      "prefix_count": 4,
+      "principal_norm_form": [
+        1,
+        2,
+        4
+      ],
+      "profile_and_direct_target_sha256": "93dbb75ec02fff5a1df2e2f35f4f5e550dcac2290c1fa74e3c8a8a0746854404",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "5d3752cbcba06b635a4fabfb5046d2720de2d559c0753f1bf5b9623ac2c27ff2",
+      "bounded_global_primitive_values_4096": 408,
+      "complete_target_period": 1152,
+      "conductor": 4,
+      "fundamental_discriminant": -3,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "dbdea34ba67ebee0ab437e349d949bee06ee32e3dd320308aa9aeb778f88ded7",
+          "image_count": 88,
+          "image_modulus": 256,
+          "local_pair_target_count": 84,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4
+          ],
+          "pair_target_coarse_modulus": 128,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "8f7f315ac2f70db8871d8cefcb1ba18bc5b296259eeeb689a70f9e5b58189b3e",
+          "image_count": 12,
+          "image_modulus": 27,
+          "local_pair_target_count": 7,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 9,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 588,
+      "order_discriminant": -48,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        4,
+        16
+      ],
+      "profile_and_direct_target_sha256": "8a491a2cdc5e8fc3f4517ace85a80ccc6a8f6b43c08a30baca2a53f2d9bc529a",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 64,
+      "bounded_global_primitive_flags_sha256": "99771a010ad7509e73e59d009dd191b3e26affd66730565f818a6b241a0e2693",
+      "bounded_global_primitive_values_4096": 217,
+      "complete_target_period": 4608,
+      "conductor": 8,
+      "fundamental_discriminant": -3,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 6,
+          "coarse_adjugate_Hensel_cap": 14,
+          "conductor_exponent": 3,
+          "direct_primitive_image_sha256": "71d50781c79a10c34dc2f0dc435b6f2f2eee27ff938253f48f4d37293e57598c",
+          "image_count": 184,
+          "image_modulus": 1024,
+          "local_pair_target_count": 260,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "pair_target_coarse_modulus": 512,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "8f7f315ac2f70db8871d8cefcb1ba18bc5b296259eeeb689a70f9e5b58189b3e",
+          "image_count": 12,
+          "image_modulus": 27,
+          "local_pair_target_count": 7,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 9,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 1820,
+      "order_discriminant": -192,
+      "positive_profile_count": 64,
+      "prefix_count": 8,
+      "principal_norm_form": [
+        1,
+        8,
+        64
+      ],
+      "profile_and_direct_target_sha256": "f8d30538656bc7bcf16095f017a38ab51c7afef5b2158cc9a4629f002eb0a510",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "3d87f53ce5c2f8da39e88c3313746f58452331302df7f445a619e0caeaf08b4f",
+      "bounded_global_primitive_values_4096": 351,
+      "complete_target_period": 2592,
+      "conductor": 6,
+      "fundamental_discriminant": -3,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "03bb0de9e8648784c8e0b703f2578d05d32c3b676f5496960f4056eb246bd464",
+          "image_count": 40,
+          "image_modulus": 64,
+          "local_pair_target_count": 32,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 32,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 3,
+          "coarse_adjugate_Hensel_cap": 8,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "bf4327c51346611cbd0b2d949164693399fb9b82537dfa7f840025b35d629167",
+          "image_count": 31,
+          "image_modulus": 81,
+          "local_pair_target_count": 61,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3
+          ],
+          "pair_target_coarse_modulus": 81,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 1952,
+      "order_discriminant": -108,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        6,
+        36
+      ],
+      "profile_and_direct_target_sha256": "38692df7f453a74ded8c045af625a98bc12ef6eff1eb5c08855ae8bc7ee9cc9f",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 16,
+      "bounded_global_primitive_flags_sha256": "e7206deaef3e7e188c591f3d3a4dfa000d338fbbef7788b31ff694ee9b9f050e",
+      "bounded_global_primitive_values_4096": 241,
+      "complete_target_period": 5832,
+      "conductor": 9,
+      "fundamental_discriminant": -3,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 0,
+          "coarse_adjugate_Hensel_cap": 2,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "7a0c83a70e1611abd0c5b17500659e853639c868b3a58af139d88e65fef5202e",
+          "image_count": 64,
+          "image_modulus": 128,
+          "local_pair_target_count": 4,
+          "nonempty_valuation_layers": [
+            0
+          ],
+          "pair_target_coarse_modulus": 8,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 5,
+          "coarse_adjugate_Hensel_cap": 12,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "49f60903f91e13524aa06920448f329308e55f11ccb1aac542b59fff832fffed",
+          "image_count": 274,
+          "image_modulus": 729,
+          "local_pair_target_count": 547,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "pair_target_coarse_modulus": 729,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 2188,
+      "order_discriminant": -243,
+      "positive_profile_count": 16,
+      "prefix_count": 4,
+      "principal_norm_form": [
+        1,
+        9,
+        81
+      ],
+      "profile_and_direct_target_sha256": "8e1006c1b5e4934cf5dd8106006d6471cd2c05b81481e4058da82937cb3c851d",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "d9a502b736fb9da5be8bf86c474ee850d2d513eb4c57fa6e3033afe12f2faf20",
+      "bounded_global_primitive_values_4096": 542,
+      "complete_target_period": 6272,
+      "conductor": 2,
+      "fundamental_discriminant": -7,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a",
+          "image_count": 40,
+          "image_modulus": 64,
+          "local_pair_target_count": 64,
+          "nonempty_valuation_layers": [
+            0,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+          "image_count": 168,
+          "image_modulus": 343,
+          "local_pair_target_count": 48,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 49,
+          "prime": 7,
+          "unit_square_class_representatives": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 6144,
+      "order_discriminant": -28,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        2,
+        8
+      ],
+      "profile_and_direct_target_sha256": "db59016f0902d14de6856364ae876c35549cdb1acb874349b0b4695372f5878f",
+      "unit_state_period_L": 56
+    },
+    {
+      "all_profile_count": 64,
+      "bounded_global_primitive_flags_sha256": "edf151e9c559009105aaf32d5f4c296b4f58d340271a6ccae7fa673b5b8bc944",
+      "bounded_global_primitive_values_4096": 304,
+      "complete_target_period": 25088,
+      "conductor": 4,
+      "fundamental_discriminant": -7,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 6,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "40f263d966c6efe34b19767d81e1944de44b69d49f4c69bdc0376c365b467d57",
+          "image_count": 88,
+          "image_modulus": 256,
+          "local_pair_target_count": 168,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            5,
+            6
+          ],
+          "pair_target_coarse_modulus": 256,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+          "image_count": 168,
+          "image_modulus": 343,
+          "local_pair_target_count": 48,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 49,
+          "prime": 7,
+          "unit_square_class_representatives": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 16128,
+      "order_discriminant": -112,
+      "positive_profile_count": 64,
+      "prefix_count": 8,
+      "principal_norm_form": [
+        1,
+        4,
+        32
+      ],
+      "profile_and_direct_target_sha256": "7bde60e8785e99f6a88f65cbc76560918c25d188014b5b34c478e9e75b98995d",
+      "unit_state_period_L": 56
+    },
+    {
+      "all_profile_count": 100,
+      "bounded_global_primitive_flags_sha256": "3a78ed30ea5e1cde9171c33f688ee622fa0c6c497455b2a55f3178da302661e7",
+      "bounded_global_primitive_values_4096": 159,
+      "complete_target_period": 100352,
+      "conductor": 8,
+      "fundamental_discriminant": -7,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 8,
+          "coarse_adjugate_Hensel_cap": 14,
+          "conductor_exponent": 3,
+          "direct_primitive_image_sha256": "b5bde0c1c7a1e23357bc5334ce5a3db2504546e7c79b46995c0f18a69f643947",
+          "image_count": 184,
+          "image_modulus": 1024,
+          "local_pair_target_count": 520,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            7,
+            8
+          ],
+          "pair_target_coarse_modulus": 1024,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+          "image_count": 168,
+          "image_modulus": 343,
+          "local_pair_target_count": 48,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 49,
+          "prime": 7,
+          "unit_square_class_representatives": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 49920,
+      "order_discriminant": -448,
+      "positive_profile_count": 100,
+      "prefix_count": 10,
+      "principal_norm_form": [
+        1,
+        8,
+        128
+      ],
+      "profile_and_direct_target_sha256": "04724b4ff61e5fa4c11c6303c9ac49b8fa21447dc18cedc64a715b8b3ae11576",
+      "unit_state_period_L": 56
+    },
+    {
+      "all_profile_count": 144,
+      "bounded_global_primitive_flags_sha256": "460e9bfe8ddddf39525ad72c25a6ce94092043e07c6f005b8b4645dd94d83a1b",
+      "bounded_global_primitive_values_4096": 232,
+      "complete_target_period": 169344,
+      "conductor": 6,
+      "fundamental_discriminant": -7,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a",
+          "image_count": 40,
+          "image_modulus": 64,
+          "local_pair_target_count": 64,
+          "nonempty_valuation_layers": [
+            0,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac",
+          "image_count": 33,
+          "image_modulus": 81,
+          "local_pair_target_count": 21,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 27,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+          "image_count": 168,
+          "image_modulus": 343,
+          "local_pair_target_count": 48,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 49,
+          "prime": 7,
+          "unit_square_class_representatives": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 129024,
+      "order_discriminant": -252,
+      "positive_profile_count": 144,
+      "prefix_count": 12,
+      "principal_norm_form": [
+        1,
+        6,
+        72
+      ],
+      "profile_and_direct_target_sha256": "baddf21ced48a5aeecffd67c4776cc6ced1316c06188dc4d8ee85d518a62f137",
+      "unit_state_period_L": 168
+    },
+    {
+      "all_profile_count": 256,
+      "bounded_global_primitive_flags_sha256": "e40670763ab91a6319ee4bd9258fd0882d3068c98b172de66413f19b57c5e6a7",
+      "bounded_global_primitive_values_4096": 121,
+      "complete_target_period": 677376,
+      "conductor": 12,
+      "fundamental_discriminant": -7,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 6,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "40f263d966c6efe34b19767d81e1944de44b69d49f4c69bdc0376c365b467d57",
+          "image_count": 88,
+          "image_modulus": 256,
+          "local_pair_target_count": 168,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            5,
+            6
+          ],
+          "pair_target_coarse_modulus": 256,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 2,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "6d6cadd271a1114f15389edd93a5119a2edb6f81cebf8e45159bac4ab8498aac",
+          "image_count": 33,
+          "image_modulus": 81,
+          "local_pair_target_count": 21,
+          "nonempty_valuation_layers": [
+            0,
+            2
+          ],
+          "pair_target_coarse_modulus": 27,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "d597f7314d2a97fa1d97a41d33abdde58126cd5811400ca029e08a8a6efb5148",
+          "image_count": 168,
+          "image_modulus": 343,
+          "local_pair_target_count": 48,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 49,
+          "prime": 7,
+          "unit_square_class_representatives": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 338688,
+      "order_discriminant": -1008,
+      "positive_profile_count": 256,
+      "prefix_count": 16,
+      "principal_norm_form": [
+        1,
+        12,
+        288
+      ],
+      "profile_and_direct_target_sha256": "07c6f33374a2e947c40c70881d939e8f1ad415c13c6e9795720e36185f0856e4",
+      "unit_state_period_L": 168
+    },
+    {
+      "all_profile_count": 9,
+      "bounded_global_primitive_flags_sha256": "443795ab152b7774345010961a0d8770d13282040dbd96747cbe4ea3ce15b68f",
+      "bounded_global_primitive_values_4096": 452,
+      "complete_target_period": 64,
+      "conductor": 2,
+      "fundamental_discriminant": -8,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 3,
+          "coarse_adjugate_Hensel_cap": 12,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "5f0e4ee1958c388f42b32925f882064ae3ecef85bae619939d2ee0ee78e1bf9f",
+          "image_count": 12,
+          "image_modulus": 64,
+          "local_pair_target_count": 33,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 33,
+      "order_discriminant": -32,
+      "positive_profile_count": 9,
+      "prefix_count": 3,
+      "principal_norm_form": [
+        1,
+        0,
+        8
+      ],
+      "profile_and_direct_target_sha256": "fd00241d9396883121454ff69d2a3e5441f539c47bec15d4a43862c87311ad48",
+      "unit_state_period_L": 8
+    },
+    {
+      "all_profile_count": 16,
+      "bounded_global_primitive_flags_sha256": "65f08270b948a28327050a54286cba69e8564c33e89b10aaf0876ee2d2594550",
+      "bounded_global_primitive_values_4096": 299,
+      "complete_target_period": 256,
+      "conductor": 4,
+      "fundamental_discriminant": -8,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 5,
+          "coarse_adjugate_Hensel_cap": 16,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "8f3d2a55c6214c15fdf7eb86ce3897804b0c2f8b04ecfd0d4438e6a71d41a002",
+          "image_count": 44,
+          "image_modulus": 256,
+          "local_pair_target_count": 129,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "pair_target_coarse_modulus": 256,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 129,
+      "order_discriminant": -128,
+      "positive_profile_count": 16,
+      "prefix_count": 4,
+      "principal_norm_form": [
+        1,
+        0,
+        32
+      ],
+      "profile_and_direct_target_sha256": "bda5969fd4ee9725ec83b5680e8f91adeee378865e0d56cd8658eecbf8d12ceb",
+      "unit_state_period_L": 8
+    },
+    {
+      "all_profile_count": 64,
+      "bounded_global_primitive_flags_sha256": "93fec9f145ececea6c73c822386053db052b3c1379c369ec1aa7d6e2e794a366",
+      "bounded_global_primitive_values_4096": 361,
+      "complete_target_period": 3888,
+      "conductor": 3,
+      "fundamental_discriminant": -8,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 8,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "8a0d87c4c3f8318c95e79a4cb28f24692397573001bb8fa0e841609ea38c14f5",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 15,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "7b86706a32d3240e3553fba348fa721150f56840f14bff7c02ba5c464b054f3b",
+          "image_count": 33,
+          "image_modulus": 81,
+          "local_pair_target_count": 63,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 81,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 2835,
+      "order_discriminant": -72,
+      "positive_profile_count": 64,
+      "prefix_count": 8,
+      "principal_norm_form": [
+        1,
+        0,
+        18
+      ],
+      "profile_and_direct_target_sha256": "0d697c95f7f226e0aefdb3c17324adba6920e2d06814a8f81b4d67fc9fd67cd9",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 100,
+      "bounded_global_primitive_flags_sha256": "7cfa43b3002c6c84a9b0cf1a3e6485e708d9ce72912a15d142e0a938cb3ad49f",
+      "bounded_global_primitive_values_4096": 150,
+      "complete_target_period": 34992,
+      "conductor": 9,
+      "fundamental_discriminant": -8,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 8,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "8a0d87c4c3f8318c95e79a4cb28f24692397573001bb8fa0e841609ea38c14f5",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 15,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 6,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 2,
+          "direct_primitive_image_sha256": "40cf1058dbf0cdfaafb7b59117dbc261ed679c35f2de8d64b882de9261742715",
+          "image_count": 276,
+          "image_modulus": 729,
+          "local_pair_target_count": 549,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            5,
+            6
+          ],
+          "pair_target_coarse_modulus": 729,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 24705,
+      "order_discriminant": -648,
+      "positive_profile_count": 100,
+      "prefix_count": 10,
+      "principal_norm_form": [
+        1,
+        0,
+        162
+      ],
+      "profile_and_direct_target_sha256": "ec1fbe6b59cadc7891895cf25722c01ad016506945897cc3a40457693c0a2944",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 144,
+      "bounded_global_primitive_flags_sha256": "fd536015e63d3de9551f9ef41abb6e95eb92bd553e69dae0938fb1205496db94",
+      "bounded_global_primitive_values_4096": 53,
+      "complete_target_period": 314928,
+      "conductor": 27,
+      "fundamental_discriminant": -8,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 8,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "8a0d87c4c3f8318c95e79a4cb28f24692397573001bb8fa0e841609ea38c14f5",
+          "image_count": 48,
+          "image_modulus": 128,
+          "local_pair_target_count": 15,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 16,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 8,
+          "coarse_adjugate_Hensel_cap": 14,
+          "conductor_exponent": 3,
+          "direct_primitive_image_sha256": "9a76deeaad2eea5efb7547b626338cec7047216d8ff9bd80ede3d53dddda40b0",
+          "image_count": 2463,
+          "image_modulus": 6561,
+          "local_pair_target_count": 4923,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            4,
+            6,
+            7,
+            8
+          ],
+          "pair_target_coarse_modulus": 6561,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 221535,
+      "order_discriminant": -5832,
+      "positive_profile_count": 144,
+      "prefix_count": 12,
+      "principal_norm_form": [
+        1,
+        0,
+        1458
+      ],
+      "profile_and_direct_target_sha256": "26cd43e77a580d69a82729709640a405879a2cab73d0cfab3839ca631af6d188",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "5d9338f922d7d40ec46f6a255216f6e742214b0d9ab5db05a65d8242e6353adf",
+      "bounded_global_primitive_values_4096": 379,
+      "complete_target_period": 1600,
+      "conductor": 2,
+      "fundamental_discriminant": -20,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 3,
+          "coarse_adjugate_Hensel_cap": 10,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "b136a834c07bca4146927f7d08426635a53e7617bb83aa92914956ce3f7c0f30",
+          "image_count": 22,
+          "image_modulus": 64,
+          "local_pair_target_count": 42,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            5
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "6ab6ddc734f6becde15202623097d5fb129726680de567a94594732afe12b212",
+          "image_count": 60,
+          "image_modulus": 125,
+          "local_pair_target_count": 25,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 25,
+          "prime": 5,
+          "unit_square_class_representatives": [
+            1,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 1050,
+      "order_discriminant": -80,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        0,
+        20
+      ],
+      "profile_and_direct_target_sha256": "931c73d2a9144c9a3e435ee0acecfc994904d4ac948d54b9d854cc4231c8ee02",
+      "unit_state_period_L": 40
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "a32cf86b41dc92d5a8ba97969d67297039b97fd717ded3349a27a529f375058c",
+      "bounded_global_primitive_values_4096": 279,
+      "complete_target_period": 576,
+      "conductor": 2,
+      "fundamental_discriminant": -24,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 3,
+          "coarse_adjugate_Hensel_cap": 12,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "f78dbc3652dd1b428cc6367dc158f11036e9133d9bdb848b1f7923d9653ecc84",
+          "image_count": 12,
+          "image_modulus": 64,
+          "local_pair_target_count": 33,
+          "nonempty_valuation_layers": [
+            0,
+            2,
+            3
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "638eff4139af156a0604a96b4c5bff4181872620619a4d07f4032987995eca4c",
+          "image_count": 12,
+          "image_modulus": 27,
+          "local_pair_target_count": 7,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 9,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 231,
+      "order_discriminant": -96,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        0,
+        24
+      ],
+      "profile_and_direct_target_sha256": "bd03bb80986b0ea48d2b1e5199625192f3277328a76577319c1ee0a0815c3ab3",
+      "unit_state_period_L": 24
+    },
+    {
+      "all_profile_count": 144,
+      "bounded_global_primitive_flags_sha256": "d2d07a9351b4b72977e44858793996a0bdf62cba510748793665a3b4eec052ca",
+      "bounded_global_primitive_values_4096": 379,
+      "complete_target_period": 28800,
+      "conductor": 2,
+      "fundamental_discriminant": -15,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a",
+          "image_count": 40,
+          "image_modulus": 64,
+          "local_pair_target_count": 64,
+          "nonempty_valuation_layers": [
+            0,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "638eff4139af156a0604a96b4c5bff4181872620619a4d07f4032987995eca4c",
+          "image_count": 12,
+          "image_modulus": 27,
+          "local_pair_target_count": 7,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 9,
+          "prime": 3,
+          "unit_square_class_representatives": [
+            1
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "cff16b6a7b087c7abc50e41658ae0bb57e8427e1ebdd112797fe786a2b0e2341",
+          "image_count": 60,
+          "image_modulus": 125,
+          "local_pair_target_count": 25,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 25,
+          "prime": 5,
+          "unit_square_class_representatives": [
+            1,
+            4
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 22400,
+      "order_discriminant": -60,
+      "positive_profile_count": 144,
+      "prefix_count": 12,
+      "principal_norm_form": [
+        1,
+        2,
+        16
+      ],
+      "profile_and_direct_target_sha256": "cd65d4005179306ca043879e21638dd75de2f99d463ca05b0c428788d8046eee",
+      "unit_state_period_L": 120
+    },
+    {
+      "all_profile_count": 36,
+      "bounded_global_primitive_flags_sha256": "9f480233daa272234bc72d083c7b48faf3d1c95cc64e01fbdb17a162a3f11b48",
+      "bounded_global_primitive_values_4096": 397,
+      "complete_target_period": 67712,
+      "conductor": 2,
+      "fundamental_discriminant": -23,
+      "local_layers": [
+        {
+          "cap_for_additive_profiles": 4,
+          "coarse_adjugate_Hensel_cap": 6,
+          "conductor_exponent": 1,
+          "direct_primitive_image_sha256": "49e1832b0ad9ef3b0e135fdbc2a062ea46eebb5d325bae9d778a2c4843b47c2a",
+          "image_count": 40,
+          "image_modulus": 64,
+          "local_pair_target_count": 64,
+          "nonempty_valuation_layers": [
+            0,
+            3,
+            4
+          ],
+          "pair_target_coarse_modulus": 64,
+          "prime": 2,
+          "unit_square_class_representatives": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "cap_for_additive_profiles": 1,
+          "coarse_adjugate_Hensel_cap": 4,
+          "conductor_exponent": 0,
+          "direct_primitive_image_sha256": "7192a3a1801104b29a617845cff572fcb25e13a40fc6f5679564f7cda38589ff",
+          "image_count": 6072,
+          "image_modulus": 12167,
+          "local_pair_target_count": 528,
+          "nonempty_valuation_layers": [
+            0,
+            1
+          ],
+          "pair_target_coarse_modulus": 529,
+          "prime": 23,
+          "unit_square_class_representatives": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            9,
+            12,
+            13,
+            16,
+            18
+          ]
+        }
+      ],
+      "locally_admissible_target_residues": 67584,
+      "order_discriminant": -92,
+      "positive_profile_count": 36,
+      "prefix_count": 6,
+      "principal_norm_form": [
+        1,
+        2,
+        24
+      ],
+      "profile_and_direct_target_sha256": "6aaba55c7b6dc8fc3e58d796687d99e28577961d53dfb145cee912c9dc840cf7",
+      "unit_state_period_L": 184
+    }
+  ],
+  "profile_count": 1850,
+  "scope": "Finite exact conductor tables, complete profile/direct-local target masks, square-class-state checks, and bounded coordinate inclusion only. Infinite arithmetic and analytic proofs are separate.",
+  "wrong_prefix_label_witness": [
+    -4,
+    2,
+    4,
+    8,
+    4,
+    3,
+    2,
+    0
+  ]
+}
