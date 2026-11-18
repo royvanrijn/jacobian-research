@@ -1,0 +1,301 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{proposition}[lemma]{Proposition}
+\title{The primitive physical moment pair and periodic local expansions}
+\author{Internal research note}\date{18 November 2026}
+\begin{document}\maketitle
+For any prime $p$, put $q=p-1$ and, for $n\ge1$,
+\[
+ H_n(Y)=p\sum_{k=0}^n\binom nk(n)_{qk}(Y/p)^k,\quad
+ U_p(k)=\frac{(pk)!}{p^kk!}
+       =\prod_{\substack{1\le j\le pk\\p\nmid j}}j,\quad U_p(0)=1.
+\]
+The physical coefficient identity is
+\[
+ [Y^k]H_n=U_p(k)
+ \left[p\binom{n+qk-1}{pk}+\binom{n+qk-1}{pk-1}\right],
+ \quad k\ge1.
+ \tag{1}
+\]
+We use the formal convention $H_0=p$ only in generating series;
+no Gamma distribution at shape zero is asserted.
+The generating series below are formal in $z$, with polynomial
+coefficients in $Y$.
+
+\begin{lemma}[The primitive pair, valid at every prime]\label{lem:pair}
+For $n\ge1$,
+\[
+ W_n(Y)=\frac{nH_n-YH'_n}{pn}
+       =\sum_{k=0}^{n-1}U_p(k)
+                  \binom{n+qk-1}{pk}Y^k\in\mathbb Z[Y],
+ \quad W_n(0)=1,\quad [Y^{n-1}]W_n=U_p(n-1),
+ \tag{2}
+\]
+and
+\[
+                   H_n=W_{n+1}+qW_n.                    \tag{3}
+\]
+Put $Q=Yz/(1-z)^p$ and $M_p(Q)=\sum_{k\ge0}U_p(k)Q^k$.
+Then
+\[
+ G_p(Y,z):=\sum_{n\ge1}W_n(Y)z^{n-1}
+       =\frac{M_p(Q)}{1-z},\qquad
+ \sum_{n\ge0}H_n(Y)z^n=q+(1+qz)G_p(Y,z).
+ \tag{4}
+\]
+\end{lemma}
+\begin{proof}
+For $k<n$, direct cancellation in the factorial expression for
+$[Y^k]H_n$ gives
+\[
+ \frac{n-k}{pn}[Y^k]H_n
+ =U_p(k)\binom{n+qk-1}{pk}.
+\]
+The $k=n$ term vanishes, and $k=0$ gives one.
+Pascal's identity gives coefficientwise
+\[
+ U_p(k)\left[\binom{n+qk}{pk}
+          +q\binom{n+qk-1}{pk}\right]=[Y^k]H_n,
+\]
+including the endpoints. This proves (2)--(3).
+Writing $n=k+j$, $j\ge1$, the elementary binomial series gives
+\[
+ \sum_{j\ge1}\binom{pk+j-1}{pk}z^{j-1}
+                      =(1-z)^{-pk-1}.
+\]
+Sum over $k$. The second identity in (4) follows from (3)
+and $W_1=1$, including the constant convention $H_0=p$.
+The coefficient at degree $n-1$ is $U_p(n-1)$ because the
+binomial coefficient there equals one.
+\end{proof}
+
+
+\begin{corollary}[The actual consecutive moment pair]\label{cor:critical}
+For $n\ge2$ and $Y=pt$ with $t=B/A$, the ordinary factorial
+moments of $X(A+BX^{p-1})$ at $n-1,n$, divided respectively by
+$A^{n-1}(n-1)!$ and $A^n n!$, are $W_n(Y), W_{n+1}(Y)$.
+This formula uses $A\ne0$. Their common roots are the
+multiple roots of $H_n$ and have valuation zero over every
+extension of $\mathbb Q_p$.
+\end{corollary}
+\begin{proof}
+Write $T(t)=H_n(pt)/p$ and $\theta=tD_t$.
+In the lower moment each binomial coefficient is multiplied
+by $(n-k)/n$, so the normalized polynomial is $T-\theta T/n$.
+In the upper moment the rising factorial changes from
+$(n)_{qk}$ to $(n+1)_{qk}=(1+qk/n)(n)_{qk}$.
+The normalized polynomial is $T+q\theta T/n=H_n-qW_n=W_{n+1}$.
+Equation (2) gives the equivalence with multiplicity because
+$H_n(0)=p$. A root of $W_n$ of positive valuation would have a
+unique smallest term, its constant term. For a root of negative
+valuation the leading term would be uniquely smallest.
+Both valuations are impossible.
+\end{proof}
+
+\begin{lemma}[The unit-factorial period multiplier]\label{lem:antiperiod}
+For every prime $p$ and $K\ge1$, put $L=p^{K-1}$ and
+\[
+ \epsilon_{p,K}=\begin{cases}
+ 1,&p=2,\ K\ge3,\\
+ -1,&\text{otherwise}.
+ \end{cases}
+\]
+Then $U_p(k+L)\equiv\epsilon_{p,K}U_p(k)\pmod{p^K}$
+for all $k\ge0$. With $A_{p,K}(Q)=\sum_{j=0}^{L-1}U_p(j)Q^j$,
+\[
+ M_p(Q)\equiv\frac{A_{p,K}(Q)}{1-\epsilon_{p,K}Q^L}\pmod{p^K}.
+ \tag{5}
+\]
+\end{lemma}
+\begin{proof}
+The ratio is the product of every unit residue in an interval
+of length $p^K$. Pair each residue with its inverse. For odd
+$p$ only $1$ and $-1$ are self-inverse, since the factors of
+$(x-1)(x+1)$ cannot both be divisible by $p$.
+For $p=2$, the classes are $1$ at $K=1$ and $\{\pm1\}$ at $K=2$.
+For $K\ge3$, one of $x-1,x+1$ for odd $x$ has valuation exactly
+one, so the other must be divisible by $2^{K-1}$.
+The four solutions are $\pm1$ and $\pm1+2^{K-1}$, whose product
+is one modulo $2^K$. This proves the multiplier in every case.
+Summing by the remainder of $k$ modulo $L$ gives (5).
+\end{proof}
+
+\begin{proposition}[A compatible rational recurrence at every precision]
+\label{prop:rational}
+Under the hypotheses of Lemma~\ref{lem:antiperiod}, put
+\[
+ \begin{split}
+ D_{p,K}(Y,z)&=(1-z)^{pL}-\epsilon_{p,K}(Yz)^L,\\
+ R_{p,K}(Y,z)&=
+ \sum_{j=0}^{L-1}U_p(j)(Yz)^j(1-z)^{p(L-j)-1}.
+ \end{split}
+\]
+Coefficientwise modulo $p^K$,
+\[
+ G_p=\frac{R_{p,K}}{D_{p,K}},\qquad
+ \sum_{n\ge0}H_nz^n=q+(1+qz)\frac{R_{p,K}}{D_{p,K}}.
+ \tag{7}
+\]
+Here $\deg_zD_{p,K}=p^K$, its constant coefficient is one,
+its leading coefficient is $(-1)^{pL}$, and
+$\deg_zR_{p,K}\le p^K-1$.
+Both actual sequences therefore satisfy a reversible linear
+recurrence of order $p^K$ from index $n\ge p^K+1$.
+For a fixed specialization $Y$ in any finite unramified
+coefficient ring $\mathcal O_f/p^K$, the sequence $W_n(Y)$
+is purely periodic: its length-$p^K$ state is advanced by an
+invertible companion matrix in a finite ring.
+This is finite precision at a fixed coefficient ring, not a
+uniform finite state space for all precisions and residue degrees.
+\end{proposition}
+\begin{proof}
+Substitute (6) into (4) and clear $(1-z)^{pL}$.
+Every exponent in $R_{p,K}$ is nonnegative.
+The highest possible degree is $pL-1$.
+The leading coefficient of $(1-z)^{pL}$ is a unit. The additional term has smaller degree.
+These are precisely the asserted denominator and recurrence
+properties. Compatibility between precisions follows because
+each expression is congruent to the same exact series (4).
+\end{proof}
+
+\begin{lemma}[Uniform cubic precision for $p\ge5$]\label{lem:cubic}
+Let $p\ge5$ and $w=(p-1)!$. For every $k\ge0$,
+\[
+                        U_p(k)\equiv w^k\pmod{p^3}.       \tag{8}
+\]
+In particular the entire actual moment pair satisfies
+\[
+ G_p(Y,z)\equiv\frac{(1-z)^{p-1}}{(1-z)^p-wYz}\pmod{p^3},
+ \quad
+ H_n(Y)\equiv K_{n,p}(wY)\pmod{p^3},                     \tag{9}
+\]
+where $K_{n,p}(Z)$ is the power sum of the $p$ roots of
+$(X-1)^p-ZX^{p-1}$. These are all-index and
+coefficientwise congruences, with no restriction on $k$ or $n$
+relative to $p$.
+The cubic assertion fails at $p=3$:
+$U_3(2)=40\not\equiv 2^2\pmod {27}$.
+\end{lemma}
+\begin{proof}
+Set $S_1=\sum_{i=1}^{p-1}i^{-1}$ and
+$S_2=\sum_{i=1}^{p-1}i^{-2}$ in $\mathbb Z_p$.
+Multiplication by a residue $b$ with $b^2\ne1$ shows
+$S_2=0\bmod p$. Pairing $i$ and $p-i$ gives
+\[
+ S_1=\frac12\sum_i\left(\frac1i+\frac1{p-i}\right)
+           \equiv-\frac p2S_2\equiv0\pmod {p^2}.
+\]
+For any integer $\ell\ge0$,
+\[
+ \prod_{i=1}^{p-1}(p\ell+i)
+ \equiv w\left(1+p\ell S_1+
+          \frac{p^2\ell^2}{2}(S_1^2-S_2)\right)
+ \equiv w\pmod {p^3}.
+\]
+Multiplying the finitely many blocks proves (8), for every $k$.
+Thus $M_p(Q)\equiv(1-wQ)^{-1}\bmod p^3$, proving the
+first formula in (9) using (4).
+The second follows from the exact rational power-sum identity
+\[
+ \sum_{n\ge0}K_{n,p}(wY)z^n
+  =p-\frac{zD'(z)}{D(z)}
+  =q+(1+qz)\frac{(1-z)^{p-1}}{D(z)},\qquad
+ D(z)=(1-z)^p-wYz.
+\]
+The numerical $p=3$ control proves the stated scope limitation.
+\end{proof}
+
+\begin{theorem}[Explicit periods for truncated local expansions]\label{thm:jet-period}
+Fix a prime $p$, a precision $K\ge1$, and a Taylor order $e\ge0$.
+Let $y$ be a unit in the integers $\mathcal O_E$ of a finite
+unramified extension $E/\mathbb Q_p$. Choose $d$ such that
+$\mathbb F_{p^d}$ contains the residue of $y$ and all roots of
+\[
+ f_{\bar y}(X)=X^p+\bar y X^{p-1}-1 .
+\]
+Let $m=p^d-1$, and let $t_e$ be the least nonnegative integer
+with $p^{t_e}>e$. Modulo $(p^K,Z^{e+1})$ the two sequences
+$H_n(y+Z)$ and $W_n(y+Z)$, $n\ge1$, have common period
+\[
+ P=m p^{K-1+\max(K-1,t_e)} .
+ \tag{10}
+\]
+If $p\ge5$ and $K\le3$, the smaller bound $m p^{K-1+t_e}$
+also gives a period.
+\end{theorem}
+\begin{proof}
+Write $L=p^{K-1}$.
+The reciprocal of the denominator of (7) is monic of degree
+$pL$, with unit constant term. Modulo $p$ it equals
+$f_{\bar y+Z}(X)^L$. In characteristic $p$,
+$f_{\bar y}$ has simple nonzero roots because its derivative is
+$-\bar y X^{p-2}$ and its constant term is $-1$.
+Thus $f_{\bar y}$ divides $X^m-1$ in the residue field
+of $E$. In the reciprocal quotient modulo $p$ the element
+$X^m-1$ lies in the ideal $(f_{\bar y+Z},Z)$, since
+$f_{\bar y}=f_{\bar y+Z}-ZX^{p-1}$.
+With $h=\max(K-1,t_e)$, Frobenius to exponent $p^h$
+annihilates that element. Indeed it kills both summands, as
+$p^h\ge L$ and $p^h>e$. Hence $X^{mp^h}=1+pB$ in the quotient algebra.
+Taking the $p^{K-1}$st power gives $X^P=1$ modulo $p^K$.
+The reciprocal polynomial annihilates the companion shift of
+the recurrence for $W_n$, from the first full length-$pL$ state.
+Therefore the shift to the $P$th power is the identity, proving
+periodicity from $n=1$. Equation (3) gives the same period for $H_n$.
+
+For $p\ge5$ and $K\le3$, use the denominator of (9) instead.
+Its reciprocal reduces to $f_{\bar y+Z}$, since $w\equiv-1\bmod p$.
+Thus the same argument uses $L=1$ at the residue step and
+$h=t_e$. The numerator in (9) has degree below the denominator
+degree, so this recurrence also starts with the first full state.
+\end{proof}
+
+\begin{corollary}[A local exclusion in an arithmetic progression]\label{cor:145}
+For every positive integer $n\equiv145\pmod{16758}$, the polynomial
+$H_{n,7}(Y)$ has no multiple root in the full residue disk
+$v_7(Y-4)>0$. Its roots there have distances of valuations $1/5$
+and $1/9$ from $4$, in groups of five and nine. Both groups give
+Eisenstein factors over $\mathbb Q_7$ after translation by $4$.
+\end{corollary}
+\begin{proof}
+At $p=7$ and $\bar y=4$, an inverse root $\tau$ of the reciprocal
+equation satisfies $\tau^7=1+4\tau$.
+Three iterations give $\tau^{343}=\tau$ since
+$4^3=1$ and $1+4+4^2=0$ in $\mathbb F_7$.
+In Theorem~\ref{thm:jet-period} take $d=3$ and $m=342$.
+For the three pairs $(K,e)=(3,0),(2,5),(1,14)$, the stronger bound
+gives the same period $342\cdot7^2=16758$.
+
+Write $H_{145,7}(4+Z)=\sum a_j Z^j$.
+The coefficient formula (1) and the binomial expansion give
+\[
+ (a_j\bmod343)_{0\le j\le14}=
+ (98,147,245,98,196,336,175,252,252,238,245,315,49,294,250).
+\]
+In particular, the displayed precision levels certify $v_7(a_0)=2$,
+$v_7(a_j)\ge2$ for $1\le j\le4$, $v_7(a_5)=1$,
+$v_7(a_j)\ge1$ for $6\le j\le13$, and $v_7(a_{14})=0$.
+These inequalities and equalities therefore hold for the coefficients
+of $H_{n,7}(4+Z)$ at every index in the progression.
+All coefficients above degree $14$ are integral by (1).
+
+For a positive weight $s$, the minimum of $v_7(a_j)+js$ is therefore
+$\min(2,1+5s,14s)$.
+This weighted valuation is multiplicative on polynomials, since
+the weighted initial terms multiply in the graded domain of the
+valued ring. Factoring over an algebraic closure shows that each
+root $\alpha$ of the translated polynomial contributes
+$\min(s,v_7(\alpha))$ to the weighted valuation.
+Its slope drops by five at $s=1/5$ and by nine at $s=1/9$.
+Thus the two groups are exactly the roots of positive valuation.
+Each group is Galois invariant and its monic factor has constant
+valuation one, with all other nonleading coefficients of positive
+integer valuation. Each factor is Eisenstein over $\mathbb Q_7$,
+hence separable, and the two factors have disjoint roots.
+\end{proof}
+
+The progression concerns the residue disk at $4$.
+Excluding the remaining residue disks is required for an
+all-index squarefreeness proof.
+\end{document}

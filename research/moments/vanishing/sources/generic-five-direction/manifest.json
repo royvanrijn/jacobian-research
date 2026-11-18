@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-11-18T00:28:21.997875+00:00",
+  "sources": [
+    {
+      "tag": "00NQ",
+      "url": "https://stacks.math.columbia.edu/tag/00NQ",
+      "file": "00NQ.html",
+      "sha256": "28e8c01c12a52b05820c32d5a1dfc3f5f8d4e79776d2507b5588bcee0f4ffeac",
+      "locator": "Lemma10.106.3: regular local rings are Cohen-Macaulay",
+      "scope": "Exact commutative-algebra input to the generic centered moment proof; no analytic period comparison."
+    },
+    {
+      "tag": "02JN",
+      "url": "https://stacks.math.columbia.edu/tag/02JN",
+      "file": "02JN.html",
+      "sha256": "0488618047b529d02e314be2bb30efe0c0f33d714cc740109b0714f193410aaa",
+      "locator": "Lemma10.104.2: expected quotient dimension characterizes regular sequences in a Cohen-Macaulay local ring",
+      "scope": "Exact commutative-algebra input to the generic centered moment proof; no analytic period comparison."
+    }
+  ],
+  "application": "Localize K[u] at its graded maximal ideal; degree16 full Macaulay rank gives zero-dimensional quotient by five moment forms. Regular-local Cohen-Macaulayness and the dimension criterion give a regular sequence, then graded localization faithfulness gives the global sequence."
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "alternating-tuple-product-controls-v1",
+  "status": "pass",
+  "exact_arithmetic": "integer permutations; Python standard library",
+  "checked_range": {
+    "minimum_b": 4,
+    "maximum_b": 64
+  },
+  "checks": [
+    "retained tuple binding",
+    "base product",
+    "two A8 generation words",
+    "double-transposition cycle types",
+    "ordered-product formula",
+    "product-one completion",
+    "genus-zero ramification count",
+    "braid tuple stabilizer",
+    "two insertion arrows",
+    "corrupt tuple and braid rejection"
+  ],
+  "boundary_cases": [
+    {
+      "b": 4,
+      "degree": 8,
+      "ramification": 14
+    },
+    {
+      "b": 64,
+      "degree": 128,
+      "ramification": 254
+    }
+  ],
+  "sha256": {
+    "verify_alternating_tuple_product.py": "158fd78b87fcb71a5b8bff84a7220e6c194100306f1feaffbd1e4dd28619113c",
+    "alternating_target_prime_families_inputs.json": "26124b3261d4966e2d885d083272fbc39318dace82f1ddba29e29bf5beff4d0c",
+    "ALTERNATING_TARGET_PRIME_FAMILIES.tex": "76f6c14ef5decd9fdd799fa0dc7ce657412ae87dc17ba07d9e14685734c676e0"
+  },
+  "scope": "Exact bounded replay supplements the written all-b insertion proof; no cover coefficients, algebraic descent, or independent review are certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

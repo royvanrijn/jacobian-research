@@ -20,8 +20,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Positive-proportion Frobenian binary sums in fixed power windows | Internal result | proved | [Source](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md) |
 | Semigroup-scale binary density one above window exponent one third | Internal result | proved | [Source](PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md) |
 | Sifted Eisenstein angular distribution and eventual balanced sums | Internal result | proved | [Source](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md) |
+| Alternating Hurwitz pencils and maximal collinear nodes | Internal result | proved | [Source](ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md) |
 
-**Computed obligations:** 46 unresolved; 3 resolved within their exact scope.
+**Computed obligations:** 48 unresolved; 3 resolved within their exact scope.
 
 
 Scope limits:
@@ -54,6 +55,7 @@ Scope limits:
 - FBS-U is the stronger central open conjecture, with fixed q/theta and a target-independent positive lower constant. The written implication to FBS-G does not reverse. Campaign A now has a proved clean-congruence singular model and macro variance; full power-window variance remains open; Campaign B may establish a lower bound without a full pointwise asymptotic. Tq/Tq1 use only two applications of the existing Halupczok input, not an additional short-interval PNT. The unrestricted MMS exponent is context only and is not transferred to prescribed residue classes. No numerical experiment, effective cutoff or assurance upgrade is recorded.
 - The singular arithmetic model is proved for fixed-width full counts and identified in all-power mixed moments; it is not assumed for arbitrary Frobenian sets. Dq gives lower counts outside arbitrary logarithmic exceptional sets, with a constant independent of the exceptional exponent, and does not prove full-count power variance. Eq records a proved equivalence between two open obligations. No effective cutoff, independent replay, external review or formal assurance is upgraded.
 - EisAngle is a coordinate-witness angular law for fixed intervals along arbitrary admissible targets. It proves eventual pure/mixed balance and the q=3 macroscopic family case, while the full ordinary exception list8,44, numerical onset and shrinking-window claims remain open. The original manuscript/PDF was not rewritten. MathOverflow2013 answers are method precedents and supply no theorem premise.
+- Alternating tuple bridge proves existence and collinear-node saturation in every degree2b>=8; the exact degree8 model has noQ-form, and the literalQ[s]-square obstruction is distinct from the open existence of other rational geometricA8 models.
 
 Tracked obligations (computed states):
 
@@ -90,5 +92,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Prove a sufficient actual fixed-prefix relative covariance, uniform integrability or Fourier-tail estimate for weighted hazards or pole returns. EFC1-EFC4 control every fixed mode and give an equivalent-Haar weak limit only after projecting away exceptional primary coordinates. They do not control finite-time energy in growing character orders. EPS2 has Haar weak limit without recurrence. The arithmetic large common-quotient tail and its relation to actual hazard recurrence remain open.](ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md) — GAP-ARITH-ELLIPTIC-CONDITIONAL-HAZARD-VARIANCE
 - **mathematical / open:** [Prove full centered variance in each fixed power window; Eq identifies the exact remaining sharp upper energy.](PRESCRIBED_PRIME_BINARY_VARIANCE.md) — GOAL-ARITH-FBS-POWER-CENTERED-VARIANCE
 - **mathematical / open:** [Prove inequality E with the exact K_q constant; the matching lower bound, mixed moments and arithmetic tail are already proved.](PRESCRIBED_PRIME_BINARY_VARIANCE.md) — GAP-ARITH-FBS-SHARP-FOUR-FORM-ENERGY
+- **mathematical / open:** [Does another rational-coefficient degree-eight pencil realize the four-double-transposition passport with geometric A8? Literal rational square discriminants and descent of the displayed model are excluded separately.](ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md) — GAP-ARITH-ALTERNATING-RATIONAL-GEOMETRIC-DESCENT
+- **verification / open:** [Resolve exact priority for the DT^b,(2b-1,1) Laurent passport and maximal collinear-node bridge.](ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md) — WORK-ARITH-ALTERNATING-PASSPORT-PRIORITY
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -1,0 +1,38 @@
+{
+  "arithmetic": "Q[e]/(4148928e^2+791056e+145375) and F_11",
+  "checker_sha256": "9e94b788ed0a34984ac2da0d368159ed1089b00527e51bf47917c78af048a03f",
+  "checks": {
+    "a_nonzero": true,
+    "branch_discriminant_norm": "566186435419907927237567195870797149837017059326171875/23650571236644712486461005120243015212404042295797243177129764200505047443",
+    "branch_polynomial_degree": 4,
+    "coefficient_polynomial_irreducible": true,
+    "critical_discriminant": "-(32616905272*e + 10887485125)/784147392",
+    "critical_discriminant_norm": "1119061279296875/7809875684352",
+    "critical_polynomial_degree": 4,
+    "discriminant_equals_negative_7_power_7_times_Q_squared": true,
+    "mod_11_e_a_s": [
+      10,
+      5,
+      2
+    ],
+    "mod_11_factor_degrees": [
+      3,
+      5
+    ],
+    "mod_11_factors_irreducible_and_distinct": true,
+    "negative_controls": 3
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_degree_eight_alternating_pencil.py",
+  "input": {
+    "H": "z^8+z^6+e*z^2",
+    "Q": "-1399244375*e/1281307729464 + s**4 + s**2*(3246152*e - 22375)/19765032 - 619841171875/3515908409649216",
+    "a": "-625/21952",
+    "coefficient_relation": "4148928*e**2 + 791056*e + 145375"
+  },
+  "kind": "internal_exact_replay",
+  "python": "3.12.3",
+  "result": "PASS",
+  "schema_version": 1,
+  "scope": "Exact algebraic identities, critical and branch squarefreeness, and the Frobenius factor certificate. Monodromy uses Jordan's theorem, simplicity of A8, and the proof in the accompanying note. No independent human review or formal verification is claimed.",
+  "sympy": "1.14.0"
+}

@@ -742,6 +742,68 @@ class RetainedDependencyTests(unittest.TestCase):
                            "MRC-COFINITE-THM-ONEFILLING", "MRC-COFINITE-THM-COFINITE"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
+    def test_uniform_fox_literal_source_is_a_real_presentation_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-FOX-MODELS-LITERAL": "stale"})
+        for conclusion in ("MRC-FOX-MODELS-LEM-PRESENTATION", "MRC-FOX-MODELS-THM-SCALAR",
+                           "MRC-FOX-MODELS-THM-A8", "MRC-FOX-MODELS-COR-CHARACTERISTIC",
+                           "MRC-FOX-MODELS-COR-LIFTS", "MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-GAP-THM-MAIN", "MRC-PRIME-SCOPE-THM-HOMOLOGY",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_fox_a8_certificate_is_not_a_scalar_or_geometry_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-FOX-MODELS-A8-CERTIFICATE": "stale"})
+        for conclusion in ("MRC-FOX-MODELS-THM-A8", "MRC-FOX-MODELS-COR-CHARACTERISTIC",
+                           "MRC-FOX-MODELS-COR-LIFTS", "MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-FOX-MODELS-LEM-PRESENTATION", "MRC-FOX-MODELS-THM-SCALAR",
+                           "MRC-PRIME-SCOPE-THM-HOMOLOGY", "MRC-PRIME-SCOPE-THM-TORSION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_fox_scalar_identity_is_not_an_a8_or_lifting_premise(self):
+        scenario = self.graph.simulate({"MRC-FOX-MODELS-THM-SCALAR": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"]["state"], "stale")
+        for conclusion in ("MRC-FOX-MODELS-LEM-PRESENTATION", "MRC-FOX-MODELS-THM-A8",
+                           "MRC-FOX-MODELS-COR-CHARACTERISTIC", "MRC-FOX-MODELS-COR-LIFTS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_fox_full_algebra_unit_is_a_real_lift_and_determinant_premise(self):
+        scenario = self.graph.simulate({"MRC-FOX-MODELS-THM-A8": "stale"})
+        for conclusion in ("MRC-FOX-MODELS-COR-CHARACTERISTIC", "MRC-FOX-MODELS-COR-LIFTS",
+                           "MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-FOX-MODELS-LEM-PRESENTATION", "MRC-FOX-MODELS-THM-SCALAR",
+                           "MRC-PRIME-SCOPE-THM-TORSION", "MRC-PRIME-SCOPE-THM-EXTERIOR"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_fox_determinant_and_nilpotent_lifts_are_separate(self):
+        for premise, surviving in (("MRC-FOX-MODELS-COR-CHARACTERISTIC", "MRC-FOX-MODELS-COR-LIFTS"),
+                                   ("MRC-FOX-MODELS-COR-LIFTS", "MRC-FOX-MODELS-COR-CHARACTERISTIC")):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                self.assertEqual(scenario["nodes"]["MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"]["state"], "stale")
+                for conclusion in (surviving, "MRC-FOX-MODELS-THM-A8", "MRC-FOX-MODELS-THM-SCALAR"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_fox_identities_do_not_require_old_family_or_augmentation_imports(self):
+        for premise in ("MRC-PRIME-GAP-THM-MAIN", "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE",
+                        "MRC-PRIME-SCOPE-THM-HOMOLOGY", "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                for conclusion in ("MRC-FOX-MODELS-LEM-PRESENTATION", "MRC-FOX-MODELS-THM-SCALAR",
+                                   "MRC-FOX-MODELS-THM-A8", "MRC-FOX-MODELS-COR-CHARACTERISTIC",
+                                   "MRC-FOX-MODELS-COR-LIFTS", "MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_fox_source_context_is_not_an_algebra_identity_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-FOX-MODELS-SOURCE-AUDIT": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS"]["state"], "stale")
+        for conclusion in ("MRC-FOX-MODELS-LEM-PRESENTATION", "MRC-FOX-MODELS-THM-SCALAR",
+                           "MRC-FOX-MODELS-THM-A8", "MRC-FOX-MODELS-COR-CHARACTERISTIC",
+                           "MRC-FOX-MODELS-COR-LIFTS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
     def test_prime_scope_homology_source_is_not_a_geometry_or_old_family_premise(self):
         scenario = self.graph.simulate({"SRC-MRC-PRIME-SCOPE-HOMOLOGY": "stale"})
         for conclusion in ("MRC-PRIME-SCOPE-LEM-PARENT", "MRC-PRIME-SCOPE-THM-HOMOLOGY",

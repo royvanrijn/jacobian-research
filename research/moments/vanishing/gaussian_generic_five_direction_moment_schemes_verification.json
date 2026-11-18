@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "coefficient_field": "QQ",
+  "prime": 32003,
+  "checked_on": "2026-11-18",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "original_centering_controls": {
+    "directions": 5,
+    "spatial_degree_max": 3,
+    "all_original_Gaussian_means_zero": true
+  },
+  "original_moment_controls": {
+    "fixtures": 3,
+    "orders": [
+      1,
+      7
+    ],
+    "exact_comparisons": 21
+  },
+  "primitive_axial_minors": [
+    {
+      "degree": 2,
+      "minor_size": 1,
+      "determinant_mod_prime": 6,
+      "quotient_dimension_upper_bound": 14
+    },
+    {
+      "degree": 3,
+      "minor_size": 6,
+      "determinant_mod_prime": 11956,
+      "quotient_dimension_upper_bound": 29
+    },
+    {
+      "degree": 4,
+      "minor_size": 21,
+      "determinant_mod_prime": 23038,
+      "quotient_dimension_upper_bound": 49
+    },
+    {
+      "degree": 5,
+      "minor_size": 55,
+      "determinant_mod_prime": 30143,
+      "quotient_dimension_upper_bound": 71
+    },
+    {
+      "degree": 6,
+      "minor_size": 120,
+      "determinant_mod_prime": 20770,
+      "quotient_dimension_upper_bound": 90
+    },
+    {
+      "degree": 7,
+      "minor_size": 230,
+      "determinant_mod_prime": 3415,
+      "quotient_dimension_upper_bound": 100
+    },
+    {
+      "degree": 8,
+      "minor_size": 400,
+      "determinant_mod_prime": 8995,
+      "quotient_dimension_upper_bound": 95
+    },
+    {
+      "degree": 9,
+      "minor_size": 645,
+      "determinant_mod_prime": 3505,
+      "quotient_dimension_upper_bound": 70
+    },
+    {
+      "degree": 10,
+      "minor_size": 979,
+      "determinant_mod_prime": 1277,
+      "quotient_dimension_upper_bound": 22
+    },
+    {
+      "degree": 11,
+      "minor_size": 1365,
+      "determinant_mod_prime": 17570,
+      "quotient_dimension_upper_bound": 0
+    }
+  ],
+  "unscaled_universal_minors": [
+    {
+      "degree": 2,
+      "minor_size": 1,
+      "moment_row_counts": {
+        "2": 1
+      },
+      "universal_determinant_degree": 2,
+      "unscaled_determinant_mod_prime": 6
+    },
+    {
+      "degree": 3,
+      "minor_size": 6,
+      "moment_row_counts": {
+        "2": 5,
+        "3": 1
+      },
+      "universal_determinant_degree": 13,
+      "unscaled_determinant_mod_prime": 23912
+    },
+    {
+      "degree": 4,
+      "minor_size": 21,
+      "moment_row_counts": {
+        "2": 15,
+        "3": 5,
+        "4": 1
+      },
+      "universal_determinant_degree": 49,
+      "unscaled_determinant_mod_prime": 3441
+    },
+    {
+      "degree": 5,
+      "minor_size": 55,
+      "moment_row_counts": {
+        "2": 35,
+        "3": 14,
+        "4": 5,
+        "5": 1
+      },
+      "universal_determinant_degree": 137,
+      "unscaled_determinant_mod_prime": 23427
+    },
+    {
+      "degree": 6,
+      "minor_size": 120,
+      "moment_row_counts": {
+        "2": 70,
+        "3": 30,
+        "4": 14,
+        "5": 5,
+        "6": 1
+      },
+      "universal_determinant_degree": 317,
+      "unscaled_determinant_mod_prime": 25365
+    },
+    {
+      "degree": 7,
+      "minor_size": 230,
+      "moment_row_counts": {
+        "2": 126,
+        "3": 55,
+        "4": 29,
+        "5": 14,
+        "6": 5,
+        "7": 1
+      },
+      "universal_determinant_degree": 640,
+      "unscaled_determinant_mod_prime": 5658
+    },
+    {
+      "degree": 8,
+      "minor_size": 400,
+      "moment_row_counts": {
+        "2": 210,
+        "3": 91,
+        "4": 50,
+        "5": 29,
+        "6": 14,
+        "7": 5,
+        "8": 1
+      },
+      "universal_determinant_degree": 1165,
+      "unscaled_determinant_mod_prime": 29492
+    },
+    {
+      "degree": 9,
+      "minor_size": 645,
+      "moment_row_counts": {
+        "2": 330,
+        "3": 140,
+        "4": 77,
+        "5": 49,
+        "6": 29,
+        "7": 14,
+        "8": 5,
+        "9": 1
+      },
+      "universal_determinant_degree": 1954,
+      "unscaled_determinant_mod_prime": 16416
+    },
+    {
+      "degree": 10,
+      "minor_size": 979,
+      "moment_row_counts": {
+        "2": 495,
+        "3": 204,
+        "4": 110,
+        "5": 72,
+        "6": 49,
+        "7": 29,
+        "8": 14,
+        "9": 5,
+        "10": 1
+      },
+      "universal_determinant_degree": 3066,
+      "unscaled_determinant_mod_prime": 14615
+    },
+    {
+      "degree": 11,
+      "minor_size": 1365,
+      "moment_row_counts": {
+        "2": 715,
+        "3": 285,
+        "4": 149,
+        "5": 96,
+        "6": 71,
+        "7": 46,
+        "8": 3
+      },
+      "universal_determinant_degree": 4133,
+      "unscaled_determinant_mod_prime": 5815
+    }
+  ],
+  "complete_intersection_minor": {
+    "degree": 16,
+    "minor_size": 4845,
+    "moment_row_counts": {
+      "2": 3060,
+      "3": 1015,
+      "4": 434,
+      "5": 216,
+      "6": 120
+    },
+    "universal_determinant_degree": 12701,
+    "unscaled_determinant_mod_prime": 17248
+  },
+  "Hilbert_dimension_controls": {
+    "complete_intersection_degrees": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "CI_Hilbert": [
+      1,
+      5,
+      14,
+      29,
+      49,
+      71,
+      90,
+      101,
+      101,
+      90,
+      71,
+      49,
+      29,
+      14,
+      5,
+      1,
+      0
+    ],
+    "CI_length": 720,
+    "full_Hilbert": [
+      1,
+      5,
+      14,
+      29,
+      49,
+      71,
+      90,
+      100,
+      95,
+      70,
+      22,
+      0
+    ],
+    "full_length": 546,
+    "prefix9_degree10_lower_bound": 23,
+    "prefix10_degree10_dimension": 22
+  },
+  "universal_ideal_containments": [
+    "Delta11*m^11 subset I8",
+    "epsilon*m^16 subset I6"
+  ],
+  "generic_ordinary_prefix": 10,
+  "generic_geometric_prefix": 6,
+  "generic_sharp_coefficient_nilpotence": 11,
+  "generic_moment_length": 546,
+  "generic_original_marked_tail_under_first8": 11,
+  "rejection_controls": [
+    "duplicate_CI_minor_row",
+    "wrong_CI_prefix_metadata",
+    "duplicate_degree11_minor_row"
+  ],
+  "primary_manifest_consistency": {
+    "status": "passed",
+    "sources": 2
+  },
+  "sha256": {
+    "research/moments/vanishing/verify_gaussian_generic_five_direction_moment_schemes.py": "5ecb81f86490b2048146e30626d20d7467f1da66090749d8f7c2b3b65a452c7d",
+    "research/moments/vanishing/gaussian_axial_cubic_macaulay_minors.json": "4191e01386cfb0074b7f80e7933506045fcfe061acac24b33f0ed57833258749",
+    "research/moments/vanishing/gaussian_generic_five_direction_ci_minor.json": "f529a5547e237f226afaba3b8603e22598861a62619e3a2156fbf8d3865f567a",
+    "research/moments/vanishing/GAUSSIAN_GENERIC_FIVE_DIRECTION_MOMENT_SCHEMES.md": "e398fea4f42a955a185c9e4932c7add2076098c1e3ec18daa5591824398e12d5",
+    "research/moments/vanishing/sources/generic-five-direction/manifest.json": "9dc69a9cf0ef2a82992874808a17d1a5c08e20aaa918b17203e4030a59d493be",
+    "research/moments/vanishing/sources/generic-five-direction/00NQ.html": "28e8c01c12a52b05820c32d5a1dfc3f5f8d4e79776d2507b5588bcee0f4ffeac",
+    "research/moments/vanishing/sources/generic-five-direction/02JN.html": "0488618047b529d02e314be2bb30efe0c0f33d714cc740109b0714f193410aaa"
+  },
+  "elapsed_seconds": 5.641,
+  "scope": "Literal nonzero integer minors and finite Hilbert arithmetic; unrestricted generic/family/field claims use the pinned adjugate and complete-intersection proof. No analytic comparison, Groebner generation, RREF, reconstruction or runtime scratch dependency.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

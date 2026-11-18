@@ -4,7 +4,7 @@
 
 Knot-group representations, branched-cover bounds and explicit sharp families.
 
-**Authored assessment:** The prime four-bridge augmentation-gap family has ar_C3<mr=bridge4, actual closedhyperbolic doublecovers with cyclicH1 Z/(117+366n), hyperbolic knotexteriors and orbifoldtorsion-generatorrank4. Everyabstractorbifoldepi onto a familygroup forces sourcebridge>=4; nonzeroDetarborescentpi-domination and every nonunitplatgcdcriterion are excluded. All-Coxeter/finitecomplex rank-one bounds remain3. Remaining known-family/priority scopes, ordinaryknotgrouprank and fullMRC stayopen.
+**Authored assessment:** The prime four-bridge family has ar_C3<mr=bridge4, hyperbolic covers/exteriors, cycliccoverH1 and sharporbifoldtorsionrank4. Exact Fox identities exclude all scalar models and all models through the fixed A8 and A8 x C2 quotients, in every characteristic. Ordinary knot-group rank, other coefficientmodels, remaining known-family/priority boundaries and fullMRC stayopen.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -50,6 +50,8 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | Cofinitely many prime augmentation-gap knots have nongraph double covers | Internal result | proved | [Source](representations/COFINITE_PRIME_FAMILY_NONGRAPH.tex) |
 | Every double cover in the prime augmentation-gap family is closed hyperbolic | Internal result | proved | [Source](representations/ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS.tex) |
 | Cyclic cover homology, hyperbolic exteriors and sharp orbifold torsion bounds | Internal result | proved | [Source](representations/PRIME_FAMILY_GEOMETRY_AND_SCOPE.tex) |
+| Uniform scalar and fixed-A8 Fox-ideal model barriers | Internal result | proved | [Source](representations/UNIFORM_FOX_IDEAL_MODEL_BARRIERS.tex) |
+| Integral Fox-ideal units for the fixed alternating and parity quotients | Internal result | proved | [Source](representations/INTEGRAL_A8_FOX_IDEAL.tex) |
 
 **Computed obligations:** 4 unresolved; 1 resolved within their exact scope.
 
@@ -80,6 +82,8 @@ Scope limits:
 - The all-parameter cover theorem identifies actual Sigma2(K_n)=N(-1,2+6n) by crossing-circle and annulus/pants topology. A complete14tetrahedron parent and an embeddedarea11 cusp give ordinary lengths>10+19n>6, hence every cover is closed hyperbolic by the six-theorem and geometrization. This route is independent of old n0 representation volume and qualitative filling persistence; E is empty for this family. Exact topological/analytic software correctness and arithmetic are explicit imports.
 - The earlier cofinite proof remains retained as an independent qualitative route; it does not independently compute E. Historical frozen manuscripts state their original proof scopes. The all-parameter theorem does not establish worldwide novelty or exclude all known equality-family hypotheses.
 - For every n>=0, actual double-cover homology is cyclic Z/(117+366n), all exteriors/order-twoorbifolds arehyperbolic, and torsion-generator rank m2 is4. Anyabstractorbifoldepi ontoGammaKn needs sourcebridge>=4. CurrentBKNv3parity-compatible theorem excludes nonzeroDetarborescentpi-domination, whileU4shows det0is essential. Everyplat hasunit scalarBuraugcd. No ordinaryrank4, meridionaltameness or exhaustivepriority conclusion.
+- For alln, the literal four-meridian Foxideal has unit scalar image in Z[t,t^-1] and unit fixed-A8 image in F2[A8]. A canonicalintegerlift has nonzero odd regular determinant d, so every unital fixed-A8 model killingtheideal must have positiveodd characteristic dividingd; allchar0 andchar2 models fail, as do nilpotent2 lifts and localmodels with thatchar2 residuequotient. Numericald, otherkernels, ordinaryrank andtameness remainunresolved.
+- For every Kn, the literal first Fox row generates the whole integral group ring under the fixed quotients onto A8 and A8 x C2. Thus all coefficient models through either map fail, in every characteristic. The unit also lifts through finite normal p-group kernels over rings in which p is nilpotent. Other quotient kernels, unrestricted matrix models, and the ordinary rank remain open.
 
 **Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 

@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "claim": "Finite controls for the actual-global polynomial Ore-intertwiner Fredholm and subprincipal descent theorem",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Independent Fraction Ore products and finite exact Gaussian ranks"
+  },
+  "Fredholm_controls": [
+    {
+      "operator": "D",
+      "m": -1,
+      "cutoffs": [
+        6,
+        10
+      ],
+      "kernel_dimension": 1,
+      "cokernel_dimension": 0,
+      "index": 1
+    },
+    {
+      "operator": "x",
+      "m": 1,
+      "cutoffs": [
+        6,
+        10
+      ],
+      "kernel_dimension": 0,
+      "cokernel_dimension": 1,
+      "index": -1
+    },
+    {
+      "operator": "xD-2",
+      "m": 0,
+      "cutoffs": [
+        6,
+        10
+      ],
+      "kernel_dimension": 1,
+      "cokernel_dimension": 1,
+      "index": 0
+    },
+    {
+      "operator": "D2+xD+1",
+      "m": 0,
+      "cutoffs": [
+        6,
+        10
+      ],
+      "kernel_dimension": 0,
+      "cokernel_dimension": 0,
+      "index": 0
+    },
+    {
+      "operator": "xD+1",
+      "m": 0,
+      "cutoffs": [
+        6,
+        10
+      ],
+      "kernel_dimension": 0,
+      "cokernel_dimension": 0,
+      "index": 0
+    }
+  ],
+  "written_universal_index": "dimker-dimcoker=-max(i-j)",
+  "actual_pair_consequence": "kernel=cokernel=0,m=0,allnonnegativeintegerdiagonalvaluesnonzero",
+  "exact_leading_coefficient_relation": "pprime_(b-1)=p_(b-1)+b*x^a*s_rprime/s_r-a*r*x^(a-1)",
+  "leading_constraint": "s_r=lambda*x^c,c<=r",
+  "subprincipal_shift": "A_Wprime-A_W=b*c-a*r; negativeintegerfornonconstantSanda>b",
+  "Darboux_control": {
+    "first_intertwining": true,
+    "shift": -2,
+    "full_pair_admission": false,
+    "reason": "nonzerofinitekernel"
+  },
+  "same_zero_subprincipal_single_operator": {
+    "first_intertwining": true,
+    "m": 1,
+    "full_pair_admission": false,
+    "reason": "nonzerofinitecokernel"
+  },
+  "bijective_insufficient_control": "xD+1 bijectiveonpolynomialsbutxS!=Sx;no polynomialstandardPprime",
+  "forbidden_nonzero_root_control": "S=(x+1)D+1, P=x4D2: required(x+1)Z=-2x4-4x3 hasresidueobstruction2atx=-1",
+  "auxiliary_parameter_corollary": "Fixed[D,x]=1, finiteuniformPBWsupport, S=1modepsilon, unitfixedcenteredcorner implySscalar; normalizedcornerdifferenceisnonzerointegerbutmustvanishmodepsilon",
+  "unit_corner_control": "S=1+epsilon*xD,P=x4D2 hasPS-SP=-2epsilon*x4D2",
+  "vanishing_corner_single_operator_control": "P=epsilon*x3D+(1+2epsilon)x2,Pprime=epsilon*x3D+x2 satisfyPS=SPprime; corneralphaepsilonisnonunit; nofullpairclaim",
+  "auxiliary_parameter_limits": [
+    "physicalhbarWeylrelation",
+    "positive-parameter-ordercorner",
+    "unboundedPBWsupport",
+    "generalrationalOreintertwiner"
+  ],
+  "hashes": {
+    "POLYNOMIAL_ORE_INTERTWINER_AND_SUBPRINCIPAL_DESCENT.md": "5e2bdc1b5bb1fce715772e8352c3090370217f2eda28eeebff5eb72b740d0715",
+    "check_polynomial_ore_intertwiner.py": "9bf1ca35a8faff514f7043541ee2c31367e6f79d592a010344796e57c9d78f43"
+  },
+  "scope": "Scalar polynomial Ore intertwiners between two actual polynomial Weyl pairs. Finite examples are not extrapolated to universal Fredholm theorem. No general rational Weyl-division, matrix, multivariable or formal-gauge classification; noabsoluteA_Wzero theorem or DC1 resolution.",
+  "formal_verification": false,
+  "external_review": false
+}

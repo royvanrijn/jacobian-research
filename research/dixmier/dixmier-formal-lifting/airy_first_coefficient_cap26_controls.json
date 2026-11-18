@@ -1,0 +1,168 @@
+{
+  "claim": "No graded cap26 2x2 Long matrix jet through h5 with prescribed F1=M(XQ)Vf",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "python_flint": "0.9.0",
+    "arithmetic": "Fraction identities and exact FLINT modular determinants"
+  },
+  "cap": 26,
+  "F1_fixed": true,
+  "all_later_entries_images_and_parameters_retained": true,
+  "F2_ranks": {
+    "scalar": "431/437",
+    "sl2": "1308/1311",
+    "new_exact_traceless_kernels": 3
+  },
+  "scalar_compact_to_RREF": [
+    [
+      "-27",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "528",
+      "972",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-81/2",
+      "0",
+      "0",
+      "-54",
+      "0",
+      "0"
+    ],
+    [
+      "-108",
+      "1539/2",
+      "162",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-12",
+      "162",
+      "108",
+      "12",
+      "-36",
+      "0"
+    ],
+    [
+      "1860",
+      "295758",
+      "1186272",
+      "103680",
+      "-388800",
+      "-131220"
+    ]
+  ],
+  "scalar_parameter_order": [
+    "u_R3",
+    "v_R4S",
+    "gamma_X3",
+    "delta_R4a=e-2/27",
+    "eps_X4Q",
+    "zeta_R3J4"
+  ],
+  "F3_ranks": {
+    "scalar": "306/307",
+    "sl2": "921/921"
+  },
+  "minor_determinants": {
+    "scalar2": 181171,
+    "sl2_2": 310392,
+    "scalar3": 474270,
+    "sl2_3": 75001
+  },
+  "h4": {
+    "all9_first_parameters_kept": true,
+    "s3_functional_rows": 234,
+    "after_s3_zero_functional_rows": {
+      "e": 711,
+      "eps": 711,
+      "zeta": 670,
+      "s1_square": 714,
+      "s2_square": 714
+    },
+    "exact_field_conclusions": "s1=s2=s3=0;e=eps=zeta=0",
+    "scope": "Individual square identities over fields; no complex sum-of-squares inference"
+  },
+  "whole_h4_family": "F2=point2+uKR3I+vKR4SI+gammaKX3I;F3=point3+vMV(KR4S)+gammaMV(KX3)+wKR6I",
+  "h5": {
+    "columns": 824,
+    "scalar_functional_rows": 158,
+    "matrix_rows": 316,
+    "parameter_order": [
+      "u",
+      "v",
+      "gamma",
+      "w"
+    ],
+    "RHS_monomials": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "exact_values": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "conclusion": "0=1 for every remaining parameter point"
+  },
+  "invalid_control": {
+    "corrupted_final_functional_rejected": true
+  },
+  "hashes": {
+    "AIRY_FIRST_COEFFICIENT_CAP26_OBSTRUCTION.md": "49ceda35e7b8bcd023692fb6a22ca56d0554cbcf4286afe7821c0f1fcbfd9b91",
+    "check_airy_first_coefficient_cap26.py": "00085d30ff20a0214babb98bf44c60b51a0e1508938a451203da8f185036c26b",
+    "airy_first_coefficient_cap26_witness.json": "255cf5800540dd7b0131cf8f0a34cecc8ee0487ef2d72bb5bebb8d4292e0c88f",
+    "check_airy_first_coefficient_cap25.py": "504c2bd540c200792e59fa74c067043d66857a96cab3603a65177e6eb339a871",
+    "airy_long_cap25_matrix_jet_witness.json": "c935ddfee0df9c60b4873af8b09b1fb4b5cc7a217db82f2d1682df645d847ed6",
+    "graded_long_cap26_even_witness.json": "c72b14e49e6e512eefa22c3abf075ee636f3dc892d7df25ef4c41f9d004b5ba2",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "scope": "Complete graded cap26 family with fixed F1 only; no other connection, scaling, first coefficient, larger cap, nongraded, bounded gauge or DC1/DC2 conclusion",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

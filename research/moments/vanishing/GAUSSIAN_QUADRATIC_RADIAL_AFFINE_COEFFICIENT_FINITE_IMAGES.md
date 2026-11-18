@@ -633,10 +633,13 @@ spatial degree at most six has support
     delta S^3+S^2 A2(Y)+S H4(Y)+bY+c,
     deg A2<=2, deg H4<=4.
 
-Outside the retained quadratic-Y family and (Q1), the remaining support
-requires deg H4>=3 and (delta,[Y^2]A2)!=(0,0). This specifies the next
-finite-image frontier; it does not assert an extension to quadratic
-A2 or to a nonzero cubic radial term. Known parity subfamilies remain
+The [logarithmic-cover theorem](GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md)
+also classifies every quadratic A2 and arbitrary H. Thus outside the
+retained quadratic-Y family the remaining sextic support requires
+delta!=0 and deg H4>=3. The logarithmic-cover theorem additionally
+excludes every scalar p exp(psi), with arbitrary polynomial psi, when
+deg A>=2 and all roots of A have multiplicity at most two. It does not
+settle the nonzero cubic radial term. Known parity subfamilies remain
 available independently.
 
 ## Evidence and replay

@@ -1,0 +1,287 @@
+{
+  "status": "PASS integral fixed A8 and A8 x C2 first-row Fox ideal certificates",
+  "certificate_sha256": "a4ed6fdeed2fc9262addfa08730d0c4a59a9bcfd68f0f02b29da22cd0eac770c",
+  "checker_sha256": "ae2523047b62679647ad968771dde1a9d543ae9043588388d929e1a6ae642a5f",
+  "literal_source_sha256": {
+    "uniform_fox_ideal_inputs.json": "29464dbf71101d8373eecc89da9065261e4689580bd741313afa240e4c7fa25b",
+    "uniform_fox_a8_char2_certificate.json": "a070353a85519beb796cc24773f6ea06fadd760005352914a0f1fc0760a7f3da",
+    "verify_uniform_fox_ideal_models.py": "5e59cf9c6b3fdd827d2ac43b0f5b49860eb3d6cbb7e79aab09e34ec1fd8ed72d"
+  },
+  "parity_quotient_order": 40320,
+  "binary_supports": [
+    [
+      9792,
+      29
+    ],
+    [
+      369,
+      57
+    ]
+  ],
+  "orbit_sum_identities": [
+    {
+      "meridian_sign": 1,
+      "modulus": 0,
+      "subgroup_order": 20160,
+      "orbit_count": 14,
+      "translate_terms": 15,
+      "averaged_identity_coefficient": 20160
+    },
+    {
+      "meridian_sign": 1,
+      "modulus": 3,
+      "subgroup_order": 64,
+      "orbit_count": 389,
+      "translate_terms": 259,
+      "averaged_identity_coefficient": 1
+    },
+    {
+      "meridian_sign": 1,
+      "modulus": 5,
+      "subgroup_order": 1344,
+      "orbit_count": 35,
+      "translate_terms": 30,
+      "averaged_identity_coefficient": 4
+    },
+    {
+      "meridian_sign": 1,
+      "modulus": 7,
+      "subgroup_order": 720,
+      "orbit_count": 59,
+      "translate_terms": 49,
+      "averaged_identity_coefficient": 6
+    },
+    {
+      "meridian_sign": -1,
+      "modulus": 0,
+      "subgroup_order": 20160,
+      "orbit_count": 14,
+      "translate_terms": 16,
+      "averaged_identity_coefficient": 20160
+    },
+    {
+      "meridian_sign": -1,
+      "modulus": 3,
+      "subgroup_order": 64,
+      "orbit_count": 389,
+      "translate_terms": 263,
+      "averaged_identity_coefficient": 1
+    },
+    {
+      "meridian_sign": -1,
+      "modulus": 5,
+      "subgroup_order": 1344,
+      "orbit_count": 35,
+      "translate_terms": 26,
+      "averaged_identity_coefficient": 4
+    },
+    {
+      "meridian_sign": -1,
+      "modulus": 7,
+      "subgroup_order": 720,
+      "orbit_count": 59,
+      "translate_terms": 53,
+      "averaged_identity_coefficient": 6
+    }
+  ],
+  "rejected_controls": [
+    "changed_integral_coefficient",
+    "changed_modular_coefficient",
+    "wrong_meridian_sign"
+  ],
+  "integer_descent": "20160 annihilates each sign quotient. Multiplication by each of 2, 3, 5, 7 is surjective, so multiplication by 20160 is surjective and both quotients vanish.",
+  "parity_descent": "Lift 1 from each sign ideal; the product of the two complementary lifts lies in (z-1)(z+1)=0.",
+  "assurance": {
+    "whole_proof_independent_replay": false,
+    "formal_verification": false,
+    "external_specialist_review": false
+  },
+  "edition_sha256": {
+    "INTEGRAL_A8_FOX_IDEAL.tex": "6ca5137e1ca34343232195f8cc57146aece6d75e5e6c0d65c4eeb4c2dc18246c",
+    "INTEGRAL_A8_FOX_IDEAL.pdf": "b7bab1ec28bc0e21956b4ab9a2bf5d54861d29e26fba5f92831a24e65141efd2",
+    "integral_a8_fox_ideal_certificates.json": "a4ed6fdeed2fc9262addfa08730d0c4a59a9bcfd68f0f02b29da22cd0eac770c",
+    "verify_integral_a8_fox_ideal.py": "ae2523047b62679647ad968771dde1a9d543ae9043588388d929e1a6ae642a5f"
+  },
+  "separate_finite_replay": {
+    "status": "PASS separate internal replay of all eight orbit certificates",
+    "method": "Evaluate braid with Fox chain rule on permutation and sign jets, then enumerate each orbit by conjugating its representative by every subgroup element. Tuple composition independent of canonical byte translation.",
+    "classes": [
+      [
+        1,
+        0,
+        15
+      ],
+      [
+        1,
+        3,
+        259
+      ],
+      [
+        1,
+        5,
+        30
+      ],
+      [
+        1,
+        7,
+        49
+      ],
+      [
+        -1,
+        0,
+        16
+      ],
+      [
+        -1,
+        3,
+        263
+      ],
+      [
+        -1,
+        5,
+        26
+      ],
+      [
+        -1,
+        7,
+        53
+      ]
+    ],
+    "certificate_sha256": "a4ed6fdeed2fc9262addfa08730d0c4a59a9bcfd68f0f02b29da22cd0eac770c",
+    "elapsed_seconds": 0.471,
+    "scope": "Eight orbit identities only. The established characteristic-two identity and written descents are separate."
+  },
+  "initial_pdf_review": {
+    "review_type": "isolated PDF-only mathematical blind review",
+    "pdf_path": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/integral-build/INTEGRAL_A8_FOX_IDEAL.pdf",
+    "pdf_sha256": "8d0fb112734dae7b05e383a927fadb5b7202890d305e6a6d3acc2e32d8acecee",
+    "page_count": 3,
+    "pages_read_and_rendered": [
+      1,
+      2,
+      3
+    ],
+    "scope": "The frozen PDF supplied all mathematical inputs. The braid action and generated permutation groups were recomputed from its printed data. The companion proof, certificate, verifier and external reference were outside this review.",
+    "contribution": "For every n, the four images of the single fixed Fox row generate the integral group rings of A8 x C2 and A8 as two-sided ideals under the displayed maps. This rules out annihilating the row in every nonzero ring image through either map. The p-group lift corollary extends this conclusion to the indicated finite quotients over commutative coefficient rings in which p is nilpotent.",
+    "conceptual_argument": [
+      "The braid crossing rules conserve the ordered product, so three closure relators suffice. The terminal twists affect slots 1 and 2 only. This fixes R0 and its four evaluated Fox derivatives across the family.",
+      "At each sign of the central involution, sum conjugates of a two-sided-ideal element over a subgroup H. On an H-orbit O each output coefficient is its input orbit total times |H|/|O|. The full A8 average then produces 20160 times the identity from the claimed integral orbit totals. For p = 3, 5, 7, the relevant subgroup order is prime to p and the claimed modular orbit totals give an invertible scalar. The two signs coincide modulo 2 and use the cited convolution.",
+      "For a sign ideal J, the additive quotient B/J is killed by 20160. The reductions imply that multiplication by each prime divisor of 20160 is surjective on B/J. Multiplication by 20160 is therefore both zero and surjective, yielding B/J = 0.",
+      "Each sign evaluation lifts 1 to an element of the original ideal. The differences from 1 lie in (z - 1) and (z + 1), whose product is zero. This gives 1 in the original ideal over the integers, including the prime 2, by expanding the product of the differences.",
+      "For a finite normal p-group kernel, the augmentation ideal of its group algebra in characteristic p is nilpotent by central order-p induction. Normality extends nilpotence to the kernel of the quotient group algebra map. A lift of 1 from the row ideal is a unit. Lifting twice, first modulo pR and then across the nilpotent ideal pR[Q], handles nilpotent p in R."
+    ],
+    "hardest_step": "Lemma 2 is the substantive finite step. For each sign the claimed translates must have total 1 at the identity orbit and zero at every other orbit in the indicated ring. The largest reported check uses the order-64 subgroup and 389 orbits modulo 3. The table and orbit formula explain verification once the witnesses are available. Modulo 2 the argument depends on a separate imported convolution.",
+    "independent_checks_from_pdf": {
+      "n0BraidReturnsTuple": true,
+      "sixBlockReturnsTuple": true,
+      "numberOfSignedTupleProducts": 40320,
+      "parityCounts": {
+        "0": 20160,
+        "1": 20160
+      },
+      "closureSlotPermutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "firstRelatorLength": 156,
+      "firstRelatorExponentSums": [
+        -1,
+        1,
+        0,
+        0
+      ]
+    },
+    "limits": [
+      "The unit ideal concerns the displayed presentation, its first Fox row and the two named quotient maps.",
+      "The lift result requires a finite normal p-group kernel for the intermediate map Q to the displayed alternating quotient and a commutative coefficient ring in which p is nilpotent.",
+      "The paper leaves ordinary rank and models through other quotient kernels open. The rank criterion supplies context for the obstruction."
+    ],
+    "blocking_findings": [
+      {
+        "location": "Page 2, Lemma 2, integral and odd-prime orbit certificates",
+        "finding": "The PDF names integral_a8_fox_ideal_certificates.json and gives SHA-256 a4ed6fdeed2fc9262addfa08730d0c4a59a9bcfd68f0f02b29da22cd0eac770c. Checking its coefficients, translates and subgroup generators requires the companion certificate. A proof-package pass requires checking all eight certificates against the printed braid, Fox convention and permutation multiplication, including the specified digest and the subgroup orbit data."
+      },
+      {
+        "location": "Page 2, final paragraph of Lemma 2",
+        "finding": "The PDF cites [1, Theorem thm:a8] for X0 d0^1 + X1 d1^1 = 1 over F2[A8]. Checking the imported multipliers against this exact Fox row is essential because 2 divides 20160."
+      }
+    ],
+    "nonblocking_findings": [
+      {
+        "location": "Page 1, braid and fixed quotient",
+        "finding": "The printed data determine the action and the first row. Applying the printed rules reproduces the n = 0 tuple return and the six-crossing return. The four signed generators give 40320 elements, split equally between signs. The closure slot permutation is a four-cycle, which confirms one component. These checks leave the companion's primeness and signed-diagram claims conditional where used for geometric context."
+      },
+      {
+        "location": "Pages 1 and 2, references to [1]",
+        "finding": "The source-style locators lem:presentation and thm:a8 and the companion citation require a matching companion version. Stable numbered theorem and lemma references would help a reader find the imported claims. The rank-criterion attribution to [2, Theorem 3.5] is also an unchecked contextual import."
+      },
+      {
+        "location": "Page 2, Lemma 2 proof",
+        "finding": "The sentence describing the verifier gives a clear replay specification at the algorithm level. A reader needs the separately named data and the mod-2 witness to reproduce it. The split line of the certificate digest remains legible."
+      },
+      {
+        "location": "Pages 2 and 3, Theorem 1 proof",
+        "finding": "The sign-gluing paragraph breaks across pages. The continuation is legible, and the product identity is valid because z is central and z^2 = 1."
+      },
+      {
+        "location": "Page 3, Corollary 3 statement",
+        "finding": "The phrase 'its kernel' can refer grammatically to either r or the map from Q. The proof identifies the intended kernel as the one of Q onto A8 x C2 or A8."
+      }
+    ],
+    "conditional_verdict": {
+      "status": "conditional pass",
+      "algebraic_proof": "The visible algebra establishes the theorem and corollary conditional on the stated certificate premises.",
+      "article_alone": "A complete verification of Theorem 1 and Corollary 3 requires replaying the certificate premises.",
+      "conditions": "Verify the eight orbit certificates against the printed braid and both sign evaluations and replay the characteristic-two convolution on the same row. Check the companion's geometric claims and the rank citation for the paper's geometric and contextual framing."
+    }
+  },
+  "final_pdf_review": {
+    "review_type": "final isolated PDF-only mathematical follow-up",
+    "pdf_path": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-fox-frontier/integral-build/INTEGRAL_A8_FOX_IDEAL.pdf",
+    "pdf_sha256": "b7bab1ec28bc0e21956b4ab9a2bf5d54861d29e26fba5f92831a24e65141efd2",
+    "page_count": 3,
+    "pages_read_and_rendered": [
+      1,
+      2,
+      3
+    ],
+    "scope": "Reviewed the final PDF text and rendering. The companion proof, certificate, verifier and external reference were outside this review.",
+    "checks": {
+      "numbered_presentation_reference": true,
+      "numbered_quotient_reference": true,
+      "numbered_mod2_reference": true,
+      "explicit_corollary_map": true,
+      "digest_matches_requested_pdf": true,
+      "exactly_three_pages": true
+    },
+    "confirmed_fixes": [
+      {
+        "location": "Page 1, presentation and fixed quotient",
+        "finding": "The presentation and signed-diagram citation now reads [1, Lemma 1]. The permutation and full-image citation reads [1, Theorem 3]."
+      },
+      {
+        "location": "Page 2, Lemma 2",
+        "finding": "The characteristic-two convolution cites [1, Theorem 3]."
+      },
+      {
+        "location": "Page 3, Corollary 3",
+        "finding": "The statement explicitly places the p-group kernel on the map from Q onto A8 x C2 or A8. This agrees with the use of N in the proof."
+      }
+    ],
+    "contribution": "The fixed first Fox row generates the unit ideal in both integral group rings for every n. The corollary carries the result to finite quotients that map onto one of the two displayed alternating quotients with a p-group kernel, over commutative rings in which p is nilpotent.",
+    "mathematical_check": "The braid presentation fixes the first row across n. For each sign, the orbit average gives 20160 times the identity over the integers and a unit modulo 3, 5 and 7, conditional on the stated orbit totals. The cited convolution gives the mod-2 unit. The additive quotient argument and the product (z - 1)(z + 1) = 0 then prove the unit-ideal claim. Normality and central order-p induction yield nilpotence for the group-algebra kernel, and lifting a unit proves the corollary.",
+    "regressions_found": [],
+    "rendering": "All three pages are legible. The edits fit the layout. The line break in the certificate digest is readable, and the end of Theorem 1 proof continues clearly on page 3.",
+    "conditional_verdict": {
+      "status": "conditional pass",
+      "proof_dependencies": [
+        "Replay the eight integral and odd-prime certificates in integral_a8_fox_ideal_certificates.json with SHA-256 a4ed6fdeed2fc9262addfa08730d0c4a59a9bcfd68f0f02b29da22cd0eac770c against the printed Fox row and verify the orbit totals.",
+        "Replay the characteristic-two convolution from the cited companion theorem on the same row."
+      ],
+      "contextual_imports": "The displayed numbering is confirmed on the page. The companion locators, the primeness and signed-diagram claims, and the rank-criterion attribution require checking the cited works.",
+      "limits": "The claims apply to the displayed presentation and named maps and to the specified finite p-group lifts. The paper leaves ordinary rank and models through other quotient kernels open."
+    }
+  }
+}

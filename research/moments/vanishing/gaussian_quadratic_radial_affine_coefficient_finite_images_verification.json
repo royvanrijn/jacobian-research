@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_on": "2026-11-17",
+  "checked_on": "2026-11-18",
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
@@ -227,7 +227,7 @@
   },
   "sha256": {
     "research/moments/vanishing/verify_gaussian_quadratic_radial_affine_coefficient_finite_images.py": "d69d25f91ded16ec23750b5b5ff3eaa0187acf50346b77d4dcbea554c9769949",
-    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md": "6492beff95ab9082a49058b0805060179111a1162bf6d876de4d9a2b98baa85b",
+    "research/moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md": "363ecc1004d88431949f5956d00362102dd61075482affb482f9ec7e247d8ee1",
     "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
     "research/moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
     "research/moments/vanishing/GAUSSIAN_INVARIANT_CORE_BOUNDARY_REDUCTION.md": "af83621c99fec04b27c48ee1e76d184052ea01ba8b79fb160c2aa1996f68174a",

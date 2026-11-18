@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "controls": 10406,
+  "source_sha256": {
+    "physical_prime_moment_pair_recurrences.py": "3168d0bb29f2fff0f72088b87d79413fb827e8a3e06f98f0631bad6afaad4d94",
+    "PHYSICAL_PRIME_MOMENT_PAIR_RECURRENCES.tex": "d27b86e29a7dcf82654d8b4f84c799a6c4ba0c163d5010b07226138bf8008f9f"
+  },
+  "scope": "Exact coefficient and finite quotient controls. The written proof supplies the prime, index and progression quantifiers.",
+  "local_progression": {
+    "prime": 7,
+    "center": 4,
+    "offset": 145,
+    "period": 16758,
+    "negative_slope_widths": [
+      5,
+      9
+    ]
+  },
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

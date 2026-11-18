@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "controls": 44156,
+  "scope": "Only bounded coefficient/valuation controls, not a finite proof of the all-index theorem or any noncollision claim.",
+  "source_sha256": {
+    "gap_six_integer_valued_raising_calculus.py": "65fedfa1f4aa4d6745c718d9961458537f49fa2b4945e17f066d7aa68dcd6509",
+    "GAP_SIX_INTEGER_VALUED_RAISING_CALCULUS.tex": "c0ea5eb6d560fc9a1ee8f8b4cc635e6d2e925c9e23da03390ada7ba6c2f84e65",
+    "GAP_SIX_DIGIT_NORMALIZATION_AND_FINITE_GAUGE.tex": "c021d5b07aeda6e433cc00ac7172543792d088d920f7f744fdb911e0bfe47a47"
+  },
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

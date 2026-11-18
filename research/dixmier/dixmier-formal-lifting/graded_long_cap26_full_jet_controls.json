@@ -1,0 +1,291 @@
+{
+  "cap": 26,
+  "claim": "No arbitrary-parity graded canonical Long scalar full jet of spatial degree26 through h5",
+  "environment": {
+    "arithmetic": "Fraction only; exact coefficient equations, explicit field cover, bare modular minors, rational row functionals and one independent normal-PBW positive control",
+    "python": "3.12.3"
+  },
+  "first_kernel": {
+    "columns": 599,
+    "counts": [
+      114,
+      156,
+      188,
+      141
+    ],
+    "det_modp": 476290,
+    "independence_det_Q": "10888888320",
+    "kernels": 11,
+    "rank_Q": 588
+  },
+  "h3": {
+    "F2_columns": 437,
+    "all9raw_first_parameters_kept": true,
+    "det_modp": 181171,
+    "independence_det_Q": "2597584896",
+    "j_plus_k_over2_square_is_field_elimination_only": true,
+    "kernel_dimension": 6,
+    "necessity_supports": [
+      413,
+      329,
+      329,
+      329,
+      329,
+      81,
+      81
+    ],
+    "rank_Q": 431
+  },
+  "h4": {
+    "F3_columns": 307,
+    "basic_supports": [
+      244,
+      57,
+      244
+    ],
+    "both_complex_conic_signs_eliminated_by_equations": true,
+    "context_supports": {
+      "DF0": [
+        247,
+        51,
+        85
+      ],
+      "E": [
+        236,
+        236
+      ],
+      "HZ": [
+        236,
+        236,
+        236
+      ],
+      "Psi": [
+        236,
+        236
+      ],
+      "Psi_L0": [
+        235
+      ]
+    },
+    "det_modp": 525733,
+    "field_strata": 7,
+    "kernel_dimension": 1,
+    "rank_Q": 306
+  },
+  "h5": {
+    "F4_columns": 206,
+    "Pi3_F1_F1_included": true,
+    "all_seven_field_families": {
+      "A0": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 22,
+        "F3_coefficients": 1009,
+        "Laurent_domain_verified": true,
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          162
+        ],
+        "h5_monomials": 35,
+        "h5_rows": 1563,
+        "nonzero_parameters": [],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "a",
+          "b",
+          "c",
+          "h",
+          "u",
+          "v",
+          "gamma",
+          "w"
+        ]
+      },
+      "Bmain": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 33,
+        "F3_coefficients": 1674,
+        "Laurent_domain_verified": true,
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          161
+        ],
+        "h5_monomials": 68,
+        "h5_rows": 1571,
+        "nonzero_parameters": [
+          "t",
+          "K"
+        ],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "b",
+          "z",
+          "t",
+          "K",
+          "u",
+          "v",
+          "gamma",
+          "w"
+        ]
+      },
+      "Bzero": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 6,
+        "F3_coefficients": 131,
+        "Laurent_domain_verified": true,
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          167,
+          168
+        ],
+        "h5_monomials": 20,
+        "h5_rows": 1590,
+        "nonzero_parameters": [],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "b",
+          "u",
+          "v",
+          "gamma",
+          "delta",
+          "chi",
+          "psi",
+          "w"
+        ]
+      },
+      "Cspec": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 10,
+        "F3_coefficients": 368,
+        "Laurent_domain_verified": true,
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          163
+        ],
+        "h5_monomials": 18,
+        "h5_rows": 1569,
+        "nonzero_parameters": [],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "b",
+          "c",
+          "psi",
+          "u",
+          "v",
+          "gamma",
+          "w"
+        ]
+      },
+      "Efull": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 29,
+        "F3_coefficients": 1434,
+        "Laurent_domain_verified": true,
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          164
+        ],
+        "h5_monomials": 56,
+        "h5_rows": 1563,
+        "nonzero_parameters": [],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "a",
+          "b",
+          "c",
+          "e",
+          "u",
+          "v",
+          "gamma",
+          "w"
+        ]
+      },
+      "Ezero": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 11,
+        "F3_coefficients": 484,
+        "Laurent_domain_verified": true,
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          162
+        ],
+        "h5_monomials": 20,
+        "h5_rows": 1563,
+        "nonzero_parameters": [],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "e",
+          "b",
+          "u",
+          "v",
+          "gamma",
+          "delta",
+          "w"
+        ]
+      },
+      "HZres": {
+        "F1_F2_independent_of_w": true,
+        "F3_blocks": 32,
+        "F3_coefficients": 1831,
+        "Laurent_domain_verified": true,
+        "after_field_h_ell_zero_supports": [
+          158,
+          159,
+          160
+        ],
+        "all206columns_annihilated": true,
+        "functional_supports": [
+          160,
+          161
+        ],
+        "h5_monomials": 67,
+        "h5_rows": 1571,
+        "nonzero_parameters": [],
+        "only_w_dependent_F3_block_is_w_KR6": true,
+        "parameter_monomial_lengths_verified": true,
+        "parameters": [
+          "a",
+          "b",
+          "c",
+          "h",
+          "u",
+          "v",
+          "gamma",
+          "chi",
+          "w"
+        ],
+        "positive_h4_normal_PBW_control": [
+          2,
+          221,
+          518,
+          100
+        ]
+      }
+    }
+  },
+  "input_sha256": {
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed",
+    "GRADED_LONG_CAP26_FULL_JET_OBSTRUCTION.md": "74d1000ab1c8975d618384cba555caa52d680ad09326825adc2467585a62b2c3",
+    "MINIMAL_EVEN_LONG_JET_AND_FIXED_LOWER_OBSTRUCTION.md": "05e1b41ed4688ac639346a6ca811dadab973e594caee04f26d3ebf24716a3d3c",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_graded_long_cap23_full_jet.py": "0069e11af58e2b3a928ce1d77aaa0d7866e86cbcf028fdbbe63b884529d4d867",
+    "check_graded_long_cap26_full_jet.py": "43de140ae105849d6972fd6830f8b80e6c7b8ff63acb586800f2b5131587bad9",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "graded_long_cap26_full_jet_witness.json": "38a530b0b3f0eee57bdd79e36b5d1b7006c2ca44b9779fa44d3594f5bf5592f0"
+  },
+  "parity": "unrestricted",
+  "prime": 1000003,
+  "scope": {
+    "all_first_images_allowed": true,
+    "characteristic_zero_fields_only": true,
+    "no_evenization_assumed": true,
+    "no_ungraded_bound_claim": true,
+    "only_uniform_t_RS_gauges": true
+  },
+  "status": "PASS"
+}

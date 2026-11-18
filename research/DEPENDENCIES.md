@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 2959 claim/source nodes, 2161 implication rules and 3 documented equivalence components. conditional: 1; falsified: 13; open: 269; proved: 2676.
+The graph contains 3057 claim/source nodes, 2236 implication rules and 3 documented equivalence components. conditional: 1; falsified: 14; open: 273; proved: 2769.
 
 Inspect the current graph from the repository root:
 
@@ -73,6 +73,8 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | [GAUSSIAN-INVARIANT-QUARTIC-FINITE-IMAGES](moments/vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md) | proved | partial | none in declared routes |
 | [GAUSSIAN-INVARIANT-QUINTIC-FINITE-IMAGES](moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md) | proved | partial | none in declared routes |
 | [GAUSSIAN-ZERO-BOUNDARY-QUINTIC-MOMENT-SCHEME](moments/vanishing/GAUSSIAN_ZERO_BOUNDARY_QUINTIC_MOMENT_IDEAL.md) | proved | partial | none in declared routes |
+| [GAUSSIAN-GENERIC-FIVE-DIRECTION-MOMENT-SCHEMES](moments/vanishing/GAUSSIAN_GENERIC_FIVE_DIRECTION_MOMENT_SCHEMES.md) | proved | partial | none in declared routes |
+| [GAUSSIAN-QUADRATIC-RADIAL-LOGARITHMIC-FINITE-IMAGES](moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -94,7 +96,8 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | GAP-IMAGE2-PRIMITIVE-QUINTIC-COVERAGE | goal | open | partial | Classify primitive balanced two-pair quintic phases beyond the four-parameter affine-multiplier ansatz and the single real signed-height profile family. The former leaves only radial padding; the latter permits primitive failures only in even minimal degree. Neither covers arbitrary complex primitive quintics. | GAP-IMAGE2-PRIMITIVE-QUINTIC-COVERAGE (open) |
 | GAP-TERNARY-PURE-PREFIX | mathematical | open | partial | Determine the exact least pure-moment prefix sufficient for the ternary-cubic class; the sharp mixed cutoff m>3 deg Q is a separate theorem. | GAP-TERNARY-PURE-PREFIX (open) |
 | MOMENTS-INVARIANT-MIXED-PARITY-CORE | mathematical | open | partial | Classify scalar polynomial-exponential vacua, full finite images and original-vacuum primitivity for F(ZW,Y^2/2)+YB(ZW,Y^2/2), with F nonconstant and B nonzero, beyond the separately proved constant-quadratic-fibre subclasses. In particular decide safety-to-purity for the remaining arbitrary mixed-parity cores. Even cores and constant-plus-odd cores are now classified, and strict one-sided additions preserve the full actual module. This is a restricted frontier, not a replacement for the unrestricted universal Gaussian goal. | MOMENTS-INVARIANT-MIXED-PARITY-CORE (open) |
-| MOMENTS-INVARIANT-SEXTIC-FINITE-FRONTIER | mathematical | open | partial | After the proved affine boundary reduction, original-degree<=6 candidates have form delta S^3+S^2 A2(Y)+S H4(Y)+bY+c. Outside the proved quadratic-Y and affine-coefficient quadratic radial architectures, degree(H4)>=3 and (delta,[Y^2]A2)!=(0,0). Determine full finite images and primitive vacua in the remaining mixed-parity subfamilies; separately proved parity classes remain available. This support reduction is not a nonexistence theorem or a universal Gaussian reduction. | MOMENTS-INVARIANT-SEXTIC-FINITE-FRONTIER (open) |
+| MOMENTS-INVARIANT-SEXTIC-FINITE-FRONTIER | mathematical | open | partial | After the affine boundary reduction, an original-degree<=6 invariant finite-image candidate outside the now closed quadratic-radial and quadratic-Y families has form delta S^3+S^2 A2(Y)+S H4(Y)+bY+c, with delta!=0, degreeA2<=2 and degreeH4 in {3,4}. Classify the remaining mixed-parity full images and primitive vacua; separately proved parity families remain available. No cubic-radial exclusion or universal Gaussian conclusion is asserted by this support reduction. | MOMENTS-INVARIANT-SEXTIC-FINITE-FRONTIER (open) |
+| MOMENTS-QUADRATIC-RADIAL-HIGH-MULTIPLICITY-COEFFICIENT | mathematical | open | partial | Resolve the remaining original phase A(Y)(ZW)^2+H(Y)ZW+G0(Y), where A has a root of multiplicity>=3. Its normalized cover has a volume pole of order>1 and the fixed logarithmic-chain proof does not apply. Full finiteness still forces affine boundary and its quadratic scalar exponent; arbitrary scalar-only normalization is a separate stronger question. Decide full finite images, primitive vacua and safety-to-purity without dropping endpoint or high-pole tail data. | MOMENTS-QUADRATIC-RADIAL-HIGH-MULTIPLICITY-COEFFICIENT (open) |
 | MOMENTS-TWO-BASE-GATE | mathematical | open | partial | For pure P=aY^2+B(U1,U2)Y+g(U1,U2), show every base-marker period is polynomial. | MOMENTS-TWO-BASE-GATE (open) |
 | VERIFY-GAUSSIAN-H21-CURRENT-PROOF | verification | open | complete | Independent mathematical review of the enlarged H21 proof, including the full marked-curve comparison, sharp common-root strip, actual simple-origin kernel and full residual inverse-kernel contour proof. Internal source audits have checked the displayed universal arguments and reconciled the finite controls with their limited scopes; these are not independent or external mathematical review. | VERIFY-GAUSSIAN-H21-CURRENT-PROOF (open) |
 | VERIFY-IMAGE2-NULLCONE-APPLICATION | verification | open | partial | Define the group action and nullcone in the MN_d assertions of Sections 5-6, and source or prove the implication from that nullcone to eventual fixed-marker vanishing. Fixed-marker identities already prove failure of eventual Image membership; no full geometric moment-nullcone implication is registered until its definition/application is checked. The safe mixed cubic outside the orthogonal nullcone is a distinct scoped statement. | VERIFY-IMAGE2-NULLCONE-APPLICATION (open) |
@@ -122,12 +125,12 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 ```mermaid
 flowchart LR
   subgraph e1["EQUIV-GAUSSIAN-SAFETY-VACUUM<br/>independent grounding required"]
-  n54["MOMENTS-COORDINATE-SAFETY-<br/>PURITY<br/>open"]
+  n52["MOMENTS-COORDINATE-SAFETY-<br/>PURITY<br/>open"]
+  class n52 open
+  n53(["MOMENTS-SAFETY-PURITY<br/>open<br/>OR routes"])
+  class n53 open
+  n54["MOMENTS-VACUUM-PRIMITIVITY<br/>open"]
   class n54 open
-  n55(["MOMENTS-SAFETY-PURITY<br/>open<br/>OR routes"])
-  class n55 open
-  n56["MOMENTS-VACUUM-PRIMITIVITY<br/>open"]
-  class n56 open
   r0{"AND<br/>EQUIV-GAUSSIAN-SAFETY-TO-<br/>COORDINATE<br/>+1 omitted proof premise<br/>blocked"}
   class r0 open
   r1{"AND<br/>AUDIT-A-vacuum-primitivity-to-<br/>purity<br/>+3 omitted proof premises<br/>blocked"}
@@ -185,47 +188,47 @@ flowchart LR
   class n22 open
   n23["MOMENTS-INVARIANT-SEXTIC-<br/>FINITE-FRONTIER<br/>open"]
   class n23 open
-  n24["MOMENTS-TWO-BASE-GATE<br/>open"]
+  n24["MOMENTS-QUADRATIC-RADIAL-HIGH-<br/>MULTIPLICITY-COEFFICIENT<br/>open"]
   class n24 open
-  n25["VERIFY-GAUSSIAN-H21-CURRENT-<br/>PROOF<br/>open"]
+  n25["MOMENTS-TWO-BASE-GATE<br/>open"]
   class n25 open
-  n26["VERIFY-IMAGE2-NULLCONE-<br/>APPLICATION<br/>open"]
+  n26["VERIFY-GAUSSIAN-H21-CURRENT-<br/>PROOF<br/>open"]
   class n26 open
-  n27["WORK-GAUSSIAN-BOUNDARY-1<br/>open"]
+  n27["VERIFY-IMAGE2-NULLCONE-<br/>APPLICATION<br/>open"]
   class n27 open
-  n28["WORK-GAUSSIAN-BOUNDARY-2<br/>open"]
+  n28["WORK-GAUSSIAN-BOUNDARY-1<br/>open"]
   class n28 open
-  n29["WORK-GAUSSIAN-CONSTANT-FIBRE-<br/>BASE-MARKER-CERTIFICATES-1<br/>open"]
+  n29["WORK-GAUSSIAN-BOUNDARY-2<br/>open"]
   class n29 open
-  n30["WORK-GAUSSIAN-CONSTANT-FIBRE-<br/>BASE-MARKER-CERTIFICATES-2<br/>open"]
+  n30["WORK-GAUSSIAN-CONSTANT-FIBRE-<br/>BASE-MARKER-CERTIFICATES-1<br/>open"]
   class n30 open
-  n31["WORK-GAUSSIAN-MOMENTS-TWO-<br/>VARIABLES-1<br/>open"]
+  n31["WORK-GAUSSIAN-CONSTANT-FIBRE-<br/>BASE-MARKER-CERTIFICATES-2<br/>open"]
   class n31 open
-  n32["WORK-GAUSSIAN-MOMENTS-TWO-<br/>VARIABLES-2<br/>open"]
+  n32["WORK-GAUSSIAN-MOMENTS-TWO-<br/>VARIABLES-1<br/>open"]
   class n32 open
-  n33["WORK-GAUSSIAN-QUADRATIC-FIBRE-<br/>JORDAN-CANCELLATION-1<br/>open"]
+  n33["WORK-GAUSSIAN-MOMENTS-TWO-<br/>VARIABLES-2<br/>open"]
   class n33 open
-  n34["WORK-GAUSSIAN-QUADRATIC-FIBRE-<br/>JORDAN-CANCELLATION-2<br/>open"]
+  n34["WORK-GAUSSIAN-QUADRATIC-FIBRE-<br/>JORDAN-CANCELLATION-1<br/>open"]
   class n34 open
-  n35["WORK-GENERALIZED-VANISHING-<br/>TWO-VARIABLES-1<br/>open"]
+  n35["WORK-GAUSSIAN-QUADRATIC-FIBRE-<br/>JORDAN-CANCELLATION-2<br/>open"]
   class n35 open
-  n36["WORK-GENERALIZED-VANISHING-<br/>TWO-VARIABLES-2<br/>open"]
+  n36["WORK-GENERALIZED-VANISHING-<br/>TWO-VARIABLES-1<br/>open"]
   class n36 open
-  n37["WORK-MATHIEU-REDUCTIVE-<br/>HOMOGENEOUS-SPACES-1<br/>open"]
+  n37["WORK-GENERALIZED-VANISHING-<br/>TWO-VARIABLES-2<br/>open"]
   class n37 open
-  n38["WORK-MATHIEU-REDUCTIVE-<br/>HOMOGENEOUS-SPACES-2<br/>open"]
+  n38["WORK-MATHIEU-REDUCTIVE-<br/>HOMOGENEOUS-SPACES-1<br/>open"]
   class n38 open
-  n39["WORK-SPARSE-MINIMALITY-<br/>GAUSSIAN-MOMENTS-DIMENSION-<br/>THREE-1<br/>open"]
+  n39["WORK-MATHIEU-REDUCTIVE-<br/>HOMOGENEOUS-SPACES-2<br/>open"]
   class n39 open
-  n40["WORK-THREE-PAIR-IMAGE-<br/>COUNTEREXAMPLE-1<br/>open"]
+  n40["WORK-SPARSE-MINIMALITY-<br/>GAUSSIAN-MOMENTS-DIMENSION-<br/>THREE-1<br/>open"]
   class n40 open
-  n41["WORK-THREE-PAIR-IMAGE-<br/>COUNTEREXAMPLE-2<br/>open"]
+  n41["WORK-THREE-PAIR-IMAGE-<br/>COUNTEREXAMPLE-1<br/>open"]
   class n41 open
-  n42(["MOMENTS-TWO-BASE-SAFETY<br/>open"])
+  n42["WORK-THREE-PAIR-IMAGE-<br/>COUNTEREXAMPLE-2<br/>open"]
   class n42 open
-  n43["GAUSSIAN-ANGULAR-CORE-ACTUAL-<br/>MODULE-INVARIANCE<br/>proved"]
-  class n43 proved
-  n44["GAUSSIAN-ANGULAR-CORE-<br/>POLYNOMIAL-TIME-KERNEL-<br/>TRANSPORT<br/>proved"]
+  n43(["MOMENTS-TWO-BASE-SAFETY<br/>open"])
+  class n43 open
+  n44["GAUSSIAN-ANGULAR-CORE-ACTUAL-<br/>MODULE-INVARIANCE<br/>proved"]
   class n44 proved
   n45["GAMMA-THREE-HALVES-EXACT-<br/>KERNEL-CONTINUATION<br/>proved"]
   class n45 proved
@@ -233,55 +236,55 @@ flowchart LR
   class n46 proved
   n47["GAMMA-ONE-HALF-ALGEBRAIC-<br/>HOLOMORPHIC-TRANSFORM-<br/>EXCLUSION<br/>proved"]
   class n47 proved
-  n48["GAUSSIAN-ANGULAR-CORE-<br/>ORIGINAL-FILTERED-TRANSFER<br/>proved"]
+  n48["GAUSSIAN-MULTIBASE-GENERIC-<br/>IMAGES<br/>proved"]
   class n48 proved
-  n49["GAUSSIAN-ANGULAR-LITERAL-<br/>REGULAR-SECTOR-EXACT-<br/>FILTRATION<br/>proved"]
-  class n49 proved
-  n50["GAUSSIAN-MULTIBASE-GENERIC-<br/>IMAGES<br/>proved"]
+  n49["GVC-GMC-IMAGE<br/>open"]
+  class n49 open
+  n50["GAUSSIAN-AFFINE-RADIAL-SCALAR-<br/>FINITE-CLASSIFICATION<br/>proved"]
   class n50 proved
-  n51["GVC-GMC-IMAGE<br/>open"]
-  class n51 open
-  n52["GAUSSIAN-AFFINE-RADIAL-SCALAR-<br/>FINITE-CLASSIFICATION<br/>proved"]
-  class n52 proved
-  n53["GAUSSIAN-AFFINE-W-SQUARE-<br/>FINITE-CLASSIFICATION<br/>proved"]
-  class n53 proved
-  n57["GAMMA-ONE-HALF-STRONG-<br/>WEIGHTED-TAIL-RIGIDITY<br/>proved"]
+  n51["GAUSSIAN-AFFINE-W-SQUARE-<br/>FINITE-CLASSIFICATION<br/>proved"]
+  class n51 proved
+  n55["GAMMA-ONE-HALF-STRONG-<br/>WEIGHTED-TAIL-RIGIDITY<br/>proved"]
+  class n55 proved
+  n56["MATHIEU-REDUCTIVE<br/>proved"]
+  class n56 proved
+  n57["GAUSSIAN-AFFINE-W-SQUARE-<br/>ACTUAL-SCALAR-CRITERION<br/>proved"]
   class n57 proved
-  n58["MATHIEU-REDUCTIVE<br/>proved"]
+  n58["GAMMA-ONE-HALF-COEFFICIENT-<br/>NILPOTENCE<br/>proved"]
   class n58 proved
-  n59["GAUSSIAN-AFFINE-W-SQUARE-<br/>ACTUAL-SCALAR-CRITERION<br/>proved"]
+  n59["GAMMA-ONE-HALF-CORE-MOMENT-<br/>IDEAL-FINITE-COLENGTH<br/>proved"]
   class n59 proved
-  n60["GAUSSIAN-AXIAL-CUBIC-MOMENT-<br/>SCHEME<br/>proved"]
+  n60["GAUSSIAN-ZERO-BOUNDARY-<br/>QUINTIC-MOMENT-SCHEME<br/>proved"]
   class n60 proved
-  n61["GAMMA-ONE-HALF-COEFFICIENT-<br/>NILPOTENCE<br/>proved"]
+  n61["GAUSSIAN-ANGULAR-CORE-IMAGES<br/>proved"]
   class n61 proved
-  n62["GAMMA-ONE-HALF-CORE-MOMENT-<br/>IDEAL-FINITE-COLENGTH<br/>proved"]
+  n62["HOPF-REAL-HEIGHT-PROFILES<br/>proved"]
   class n62 proved
-  n63["GAUSSIAN-ZERO-BOUNDARY-<br/>QUINTIC-MOMENT-SCHEME<br/>proved"]
+  n63["GAUSSIAN-AXIAL-CUBIC-MOMENT-<br/>SCHEME<br/>proved<br/>OR routes"]
   class n63 proved
-  n64["GAUSSIAN-ANGULAR-CORE-IMAGES<br/>proved"]
+  n64["GAUSSIAN-GENERIC-FIVE-<br/>DIRECTION-MOMENT-SCHEMES<br/>proved"]
   class n64 proved
-  n65["HOPF-REAL-HEIGHT-PROFILES<br/>proved"]
+  n65["GAMMA-ONE-HALF-WEIGHTED-<br/>FACTORIAL-RIGIDITY<br/>proved"]
   class n65 proved
-  n66["GAMMA-ONE-HALF-WEIGHTED-<br/>FACTORIAL-RIGIDITY<br/>proved"]
+  n66["GAUSSIAN-PARITY-INVARIANT-<br/>FINITE-IMAGES<br/>proved"]
   class n66 proved
-  n67["GAUSSIAN-PARITY-INVARIANT-<br/>FINITE-IMAGES<br/>proved"]
+  n67["GAP-TWO-PAIR-33<br/>proved"]
   class n67 proved
-  n68["GAP-TWO-PAIR-33<br/>proved"]
+  n68["GAUSSIAN-H21-AFFINE-CHART<br/>proved"]
   class n68 proved
-  n69["GAUSSIAN-H21-AFFINE-CHART<br/>proved"]
+  n69["GAUSSIAN-INVARIANT-QUARTIC-<br/>FINITE-IMAGES<br/>proved"]
   class n69 proved
-  n70["GAUSSIAN-INVARIANT-QUARTIC-<br/>FINITE-IMAGES<br/>proved"]
+  n70["IMAGE2-EVEN-PRIMITIVE<br/>proved"]
   class n70 proved
-  n71["IMAGE2-EVEN-PRIMITIVE<br/>proved"]
+  n71["IMAGE2-QUINTIC-AFFINE-<br/>OBSTRUCTION<br/>proved"]
   class n71 proved
-  n72["IMAGE2-QUINTIC-AFFINE-<br/>OBSTRUCTION<br/>proved"]
-  class n72 proved
-  n73["GAUSSIAN-DIMENSION-DEGREE<br/>open<br/>OR routes"]
-  class n73 open
-  n74["GAUSSIAN-INVARIANT-QUINTIC-<br/>FINITE-IMAGES<br/>proved"]
+  n72["GAUSSIAN-DIMENSION-DEGREE<br/>open<br/>OR routes"]
+  class n72 open
+  n73["GAUSSIAN-INVARIANT-QUINTIC-<br/>FINITE-IMAGES<br/>proved"]
+  class n73 proved
+  n74["MOMENT-JETS-AND-CERTIFIED-<br/>TAILS<br/>proved"]
   class n74 proved
-  n75["MOMENT-JETS-AND-CERTIFIED-<br/>TAILS<br/>proved"]
+  n75["GAUSSIAN-QUADRATIC-RADIAL-<br/>LOGARITHMIC-FINITE-IMAGES<br/>proved"]
   class n75 proved
   n76["TWO-PAIR-IMAGE<br/>proved"]
   class n76 proved
@@ -291,158 +294,152 @@ flowchart LR
   class n78 open
   n79["TWO-PAIR-IMAGE-CUBIC<br/>proved"]
   class n79 proved
-  n55 --> r0
-  r0 --> n54
-  n56 --> r1
-  r1 --> n55
-  n54 --> r2
-  r2 --> n55
-  n55 --> r3
-  r3 --> n56
-  r4{"AND<br/>SOURCE-ROUTE-GAUSSIAN-ANGULAR-<br/>CORE-IMAGES<br/>+7 omitted proof premises<br/>proved"}
+  n53 --> r0
+  r0 --> n52
+  n54 --> r1
+  r1 --> n53
+  n52 --> r2
+  r2 --> n53
+  n53 --> r3
+  r3 --> n54
+  r4{"AND<br/>SOURCE-ROUTE-GAUSSIAN-ANGULAR-<br/>CORE-IMAGES<br/>+10 omitted proof premises<br/>proved"}
   class r4 proved
-  n43 --> r4
   n44 --> r4
-  n48 --> r4
-  n49 --> r4
-  r4 --> n64
-  r5{"AND<br/>SOURCE-ROUTE-GAUSSIAN-AXIAL-<br/>CUBIC-MOMENT-SCHEME<br/>+6 omitted proof premises<br/>proved"}
+  r4 --> n61
+  r5{"AND<br/>MINORS-ONLY-ROUTE-GAUSSIAN-<br/>AXIAL-CUBIC-MOMENT-SCHEME<br/>+1 omitted proof premise<br/>proved"}
   class r5 proved
-  r5 --> n60
-  r6{"AND<br/>AUDIT-A-boundary-from-cases<br/>+4 omitted proof premises<br/>blocked"}
-  class r6 open
-  r6 --> n73
-  r7{"AND<br/>AUDIT-A-boundary-from-owned-<br/>binary-alternative<br/>+4 omitted proof premises<br/>blocked"}
+  r5 --> n63
+  r6{"AND<br/>SOURCE-ROUTE-GAUSSIAN-AXIAL-<br/>CUBIC-MOMENT-SCHEME<br/>+7 omitted proof premises<br/>proved"}
+  class r6 proved
+  r6 --> n63
+  r7{"AND<br/>AUDIT-A-boundary-from-cases<br/>+4 omitted proof premises<br/>blocked"}
   class r7 open
-  r7 --> n73
-  r8{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>DIMENSION-DEGREE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>blocked"}
+  r7 --> n72
+  r8{"AND<br/>AUDIT-A-boundary-from-owned-<br/>binary-alternative<br/>+4 omitted proof premises<br/>blocked"}
   class r8 open
-  r8 --> n73
-  r9{"AND<br/>SOURCE-ROUTE-<br/>GAUSSIAN-H21-AFFINE-CHART<br/>+1 pinned source<br/>+24 omitted proof premises<br/>proved"}
-  class r9 proved
-  r9 --> n69
-  r10{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>INVARIANT-QUARTIC-FINITE-<br/>IMAGES<br/>+5 omitted proof premises<br/>proved"}
+  r8 --> n72
+  r9{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>DIMENSION-DEGREE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>blocked"}
+  class r9 open
+  r9 --> n72
+  r10{"AND<br/>SOURCE-ROUTE-GAUSSIAN-GENERIC-<br/>FIVE-DIRECTION-MOMENT-SCHEMES<br/>+8 omitted proof premises<br/>proved"}
   class r10 proved
-  r10 --> n70
-  r11{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>INVARIANT-QUINTIC-FINITE-<br/>IMAGES<br/>+11 omitted proof premises<br/>proved"}
+  r10 --> n64
+  r11{"AND<br/>SOURCE-ROUTE-<br/>GAUSSIAN-H21-AFFINE-CHART<br/>+1 pinned source<br/>+24 omitted proof premises<br/>proved"}
   class r11 proved
-  r11 --> n74
-  r12{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>MULTIBASE-GENERIC-IMAGES<br/>+4 omitted proof premises<br/>proved"}
+  r11 --> n68
+  r12{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>INVARIANT-QUARTIC-FINITE-<br/>IMAGES<br/>+5 omitted proof premises<br/>proved"}
   class r12 proved
-  r12 --> n50
-  r13{"AND<br/>SOURCE-ROUTE-GAUSSIAN-PARITY-<br/>INVARIANT-FINITE-IMAGES<br/>+6 omitted proof premises<br/>proved"}
+  r12 --> n69
+  r13{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>INVARIANT-QUINTIC-FINITE-<br/>IMAGES<br/>+11 omitted proof premises<br/>proved"}
   class r13 proved
-  r13 --> n67
-  r14{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>QUADRATIC-W-FINITE-IMAGES<br/>+7 omitted proof premises<br/>proved"}
+  r13 --> n73
+  r14{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>MULTIBASE-GENERIC-IMAGES<br/>+4 omitted proof premises<br/>proved"}
   class r14 proved
-  n53 --> r14
-  n59 --> r14
-  r14 --> n77
-  r15{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>STRUCTURE<br/>+1 pinned source<br/>+145 omitted proof premises<br/>blocked"}
-  class r15 open
-  n46 --> r15
-  n53 --> r15
-  n59 --> r15
-  n43 --> r15
-  n44 --> r15
-  n48 --> r15
-  n49 --> r15
-  n45 --> r15
-  n47 --> r15
-  n57 --> r15
-  n61 --> r15
-  n62 --> r15
-  n52 --> r15
-  r15 --> n78
-  r16{"AND<br/>SOURCE-ROUTE-GAUSSIAN-ZERO-<br/>BOUNDARY-QUINTIC-MOMENT-SCHEME<br/>+6 omitted proof premises<br/>proved"}
+  r14 --> n48
+  r15{"AND<br/>SOURCE-ROUTE-GAUSSIAN-PARITY-<br/>INVARIANT-FINITE-IMAGES<br/>+6 omitted proof premises<br/>proved"}
+  class r15 proved
+  r15 --> n66
+  r16{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>QUADRATIC-RADIAL-LOGARITHMIC-<br/>FINITE-IMAGES<br/>+11 omitted proof premises<br/>proved"}
   class r16 proved
-  r16 --> n63
-  r17{"AND<br/>SOURCE-ROUTE-GVC-GMC-IMAGE<br/>+1 pinned source<br/>+4 omitted proof premises<br/>blocked"}
-  class r17 open
-  r17 --> n51
-  r18{"AND<br/>DERIVE-HOPF-REAL-HEIGHT-<br/>PROFILES<br/>+8 omitted proof premises<br/>proved"}
-  class r18 proved
-  r18 --> n65
-  r19{"AND<br/>DERIVE-IMAGE2-EVEN-PRIMITIVE<br/>+3 omitted proof premises<br/>proved"}
+  r16 --> n75
+  r17{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>QUADRATIC-W-FINITE-IMAGES<br/>+7 omitted proof premises<br/>proved"}
+  class r17 proved
+  n51 --> r17
+  n57 --> r17
+  r17 --> n77
+  r18{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>STRUCTURE<br/>+1 pinned source<br/>+167 omitted proof premises<br/>blocked"}
+  class r18 open
+  n46 --> r18
+  n51 --> r18
+  n57 --> r18
+  n44 --> r18
+  n45 --> r18
+  n47 --> r18
+  n55 --> r18
+  n58 --> r18
+  n59 --> r18
+  n50 --> r18
+  r18 --> n78
+  r19{"AND<br/>SOURCE-ROUTE-GAUSSIAN-ZERO-<br/>BOUNDARY-QUINTIC-MOMENT-SCHEME<br/>+6 omitted proof premises<br/>proved"}
   class r19 proved
-  r19 --> n71
-  r20{"AND<br/>DERIVE-IMAGE2-QUINTIC-AFFINE-<br/>OBSTRUCTION<br/>+5 omitted proof premises<br/>proved"}
-  class r20 proved
-  r20 --> n72
-  r21{"AND<br/>SOURCE-ROUTE-MATHIEU-REDUCTIVE<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r19 --> n60
+  r20{"AND<br/>SOURCE-ROUTE-GVC-GMC-IMAGE<br/>+1 pinned source<br/>+4 omitted proof premises<br/>blocked"}
+  class r20 open
+  r20 --> n49
+  r21{"AND<br/>DERIVE-HOPF-REAL-HEIGHT-<br/>PROFILES<br/>+8 omitted proof premises<br/>proved"}
   class r21 proved
-  r21 --> n58
-  r22{"AND<br/>SOURCE-ROUTE-MOMENT-JETS-AND-<br/>CERTIFIED-TAILS<br/>+7 omitted proof premises<br/>proved"}
+  r21 --> n62
+  r22{"AND<br/>DERIVE-IMAGE2-EVEN-PRIMITIVE<br/>+3 omitted proof premises<br/>proved"}
   class r22 proved
-  r22 --> n75
-  r23{"AND<br/>SOURCE-ROUTE-TWO-PAIR-IMAGE<br/>+2 omitted proof premises<br/>proved"}
+  r22 --> n70
+  r23{"AND<br/>DERIVE-IMAGE2-QUINTIC-AFFINE-<br/>OBSTRUCTION<br/>+5 omitted proof premises<br/>proved"}
   class r23 proved
-  r23 --> n76
-  r24{"AND<br/>CUBIC-POSITIVITY-AND-QUARTIC-<br/>FAILURE-BOUNDARY<br/>+3 omitted proof premises<br/>proved"}
+  r23 --> n71
+  r24{"AND<br/>SOURCE-ROUTE-MATHIEU-REDUCTIVE<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r24 proved
-  n68 --> r24
-  r24 --> n79
-  r25{"AND<br/>COMPLETE-SPHERE-CUBIC-TO-OLD-<br/>GAP<br/>+1 omitted proof premise<br/>proved"}
+  r24 --> n56
+  r25{"AND<br/>SOURCE-ROUTE-MOMENT-JETS-AND-<br/>CERTIFIED-TAILS<br/>+7 omitted proof premises<br/>proved"}
   class r25 proved
-  r25 --> n68
-  r26{"AND<br/>AUDIT-A-two-base-marker-<br/>transfer<br/>blocked"}
-  class r26 open
-  n24 --> r26
-  r26 --> n42
-  r27{"AND<br/>DERIVE-GAMMA-ONE-HALF-<br/>ALGEBRAIC-HOLOMORPHIC-<br/>TRANSFORM-EXCLUSION<br/>+2 pinned sources<br/>proved"}
+  r25 --> n74
+  r26{"AND<br/>SOURCE-ROUTE-TWO-PAIR-IMAGE<br/>+2 omitted proof premises<br/>proved"}
+  class r26 proved
+  r26 --> n76
+  r27{"AND<br/>CUBIC-POSITIVITY-AND-QUARTIC-<br/>FAILURE-BOUNDARY<br/>+3 omitted proof premises<br/>proved"}
   class r27 proved
-  n45 --> r27
-  n4 --> r27
-  n2 --> r27
-  r27 --> n47
-  r28{"AND<br/>DERIVE-GAMMA-ONE-HALF-<br/>COEFFICIENT-NILPOTENCE<br/>+1 pinned source<br/>proved"}
+  n67 --> r27
+  r27 --> n79
+  r28{"AND<br/>COMPLETE-SPHERE-CUBIC-TO-OLD-<br/>GAP<br/>+1 omitted proof premise<br/>proved"}
   class r28 proved
-  n57 --> r28
-  r28 --> n61
-  r29{"AND<br/>DERIVE-GAMMA-ONE-HALF-CORE-<br/>MOMENT-IDEAL-FINITE-COLENGTH<br/>+1 pinned source<br/>proved"}
-  class r29 proved
-  n57 --> r29
-  r29 --> n62
-  r30{"AND<br/>DERIVE-GAMMA-ONE-HALF-STRONG-<br/>WEIGHTED-TAIL-RIGIDITY<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r28 --> n67
+  r29{"AND<br/>AUDIT-A-two-base-marker-<br/>transfer<br/>blocked"}
+  class r29 open
+  n25 --> r29
+  r29 --> n43
+  r30{"AND<br/>DERIVE-GAMMA-ONE-HALF-<br/>ALGEBRAIC-HOLOMORPHIC-<br/>TRANSFORM-EXCLUSION<br/>+2 pinned sources<br/>proved"}
   class r30 proved
-  r30 --> n57
-  r31{"AND<br/>SOURCE-ROUTE-GAMMA-ONE-HALF-<br/>WEIGHTED-FACTORIAL-RIGIDITY<br/>+1 omitted proof premise<br/>proved"}
+  n45 --> r30
+  n4 --> r30
+  n2 --> r30
+  r30 --> n47
+  r31{"AND<br/>DERIVE-GAMMA-ONE-HALF-<br/>COEFFICIENT-NILPOTENCE<br/>+1 pinned source<br/>proved"}
   class r31 proved
-  n45 --> r31
-  n47 --> r31
-  n57 --> r31
-  n61 --> r31
-  n62 --> r31
-  r31 --> n66
-  r32{"AND<br/>DERIVE-GAMMA-THREE-HALVES-<br/>EXACT-KERNEL-CONTINUATION<br/>+1 pinned source<br/>proved"}
+  n55 --> r31
+  r31 --> n58
+  r32{"AND<br/>DERIVE-GAMMA-ONE-HALF-CORE-<br/>MOMENT-IDEAL-FINITE-COLENGTH<br/>+1 pinned source<br/>proved"}
   class r32 proved
-  r32 --> n45
-  r33{"AND<br/>DERIVE-GAUSSIAN-AFFINE-RADIAL-<br/>SCALAR-FINITE-CLASSIFICATION<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
+  n55 --> r32
+  r32 --> n59
+  r33{"AND<br/>DERIVE-GAMMA-ONE-HALF-STRONG-<br/>WEIGHTED-TAIL-RIGIDITY<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r33 proved
-  n43 --> r33
-  r33 --> n52
-  r34{"AND<br/>DERIVE-GAUSSIAN-AFFINE-SHEAR-<br/>EXACT-ORIGINAL-FILTRATION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r33 --> n55
+  r34{"AND<br/>SOURCE-ROUTE-GAMMA-ONE-HALF-<br/>WEIGHTED-FACTORIAL-RIGIDITY<br/>+1 omitted proof premise<br/>proved"}
   class r34 proved
-  r34 --> n46
-  r35{"AND<br/>DERIVE-GAUSSIAN-AFFINE-W-<br/>SQUARE-ACTUAL-SCALAR-CRITERION<br/>+1 pinned source<br/>proved"}
+  n45 --> r34
+  n47 --> r34
+  n55 --> r34
+  n58 --> r34
+  n59 --> r34
+  r34 --> n65
+  r35{"AND<br/>DERIVE-GAMMA-THREE-HALVES-<br/>EXACT-KERNEL-CONTINUATION<br/>+1 pinned source<br/>proved"}
   class r35 proved
-  n53 --> r35
-  r35 --> n59
-  r36{"AND<br/>DERIVE-GAUSSIAN-AFFINE-W-<br/>SQUARE-FINITE-CLASSIFICATION<br/>+2 pinned sources<br/>+3 omitted proof premises<br/>proved"}
+  r35 --> n45
+  r36{"AND<br/>DERIVE-GAUSSIAN-AFFINE-RADIAL-<br/>SCALAR-FINITE-CLASSIFICATION<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r36 proved
-  r36 --> n53
-  r37{"AND<br/>DERIVE-GAUSSIAN-ANGULAR-CORE-<br/>ACTUAL-MODULE-INVARIANCE<br/>+1 pinned source<br/>proved"}
+  n44 --> r36
+  r36 --> n50
+  r37{"AND<br/>DERIVE-GAUSSIAN-AFFINE-SHEAR-<br/>EXACT-ORIGINAL-FILTRATION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r37 proved
-  r37 --> n43
-  r38{"AND<br/>DERIVE-GAUSSIAN-ANGULAR-CORE-<br/>ORIGINAL-FILTERED-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r37 --> n46
+  r38{"AND<br/>DERIVE-GAUSSIAN-AFFINE-W-<br/>SQUARE-ACTUAL-SCALAR-CRITERION<br/>+1 pinned source<br/>proved"}
   class r38 proved
-  r38 --> n48
-  r39{"AND<br/>DERIVE-GAUSSIAN-ANGULAR-CORE-<br/>POLYNOMIAL-TIME-KERNEL-<br/>TRANSPORT<br/>+1 pinned source<br/>proved"}
+  n51 --> r38
+  r38 --> n57
+  r39{"AND<br/>DERIVE-GAUSSIAN-AFFINE-W-<br/>SQUARE-FINITE-CLASSIFICATION<br/>+2 pinned sources<br/>+3 omitted proof premises<br/>proved"}
   class r39 proved
-  r39 --> n44
-  r40{"AND<br/>DERIVE-GAUSSIAN-ANGULAR-<br/>LITERAL-REGULAR-SECTOR-EXACT-<br/>FILTRATION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r39 --> n51
+  r40{"AND<br/>DERIVE-GAUSSIAN-ANGULAR-CORE-<br/>ACTUAL-MODULE-INVARIANCE<br/>+1 pinned source<br/>proved"}
   class r40 proved
-  r40 --> n49
+  r40 --> n44
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -451,7 +448,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 41 routes (512 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 41 routes (538 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -672,11 +669,11 @@ flowchart LR
   class n61 proved
   n62["DIX-RANK3-FINITE-<br/>COUNTEREXAMPLE<br/>proved"]
   class n62 proved
-  n63["FOUND-MENG-QUINTIC<br/>proved"]
+  n63["JACOBIAN-CUBIC-CONSTRUCTIONS<br/>proved"]
   class n63 proved
-  n64["JACOBIAN-CUBIC-CONSTRUCTIONS<br/>proved"]
+  n64["ARITH-FIXED-QUINTIC-FULL-<br/>HASSE-FIBRES<br/>proved"]
   class n64 proved
-  n65["ARITH-FIXED-QUINTIC-FULL-<br/>HASSE-FIBRES<br/>proved"]
+  n65["ARITH-ALTERNATING-TWO-POLE-<br/>COVERS<br/>proved"]
   class n65 proved
   n66["ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>proved"]
   class n66 proved
@@ -720,7 +717,7 @@ flowchart LR
   r9 --> n68
   r10{"AND<br/>SOURCE-ROUTE-JACOBIAN-CUBIC-<br/>CONSTRUCTIONS<br/>+2 omitted proof premises<br/>proved"}
   class r10 proved
-  r10 --> n64
+  r10 --> n63
   r11{"AND<br/>SOURCE-ROUTE-JACOBIAN-<br/>MONODROMY<br/>+1 omitted proof premise<br/>proved"}
   class r11 proved
   r11 --> n53
@@ -746,187 +743,187 @@ flowchart LR
   class r17 open
   n17 --> r17
   r17 --> n67
-  r18{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-FINITE-<br/>ETALE-REALIZATION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r18{"AND<br/>DERIVE-ARITH-ALTERNATING-TWO-<br/>POLE-COVERS<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r18 proved
-  r18 --> n75
-  r19{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-RANK-<br/>CLASSIFICATION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r18 --> n65
+  r19{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-FINITE-<br/>ETALE-REALIZATION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r19 proved
-  n75 --> r19
-  r19 --> n76
-  r20{"AND<br/>NARROW-QUADRATIC-ROUTE-TO-<br/>FULL-FIBRE-RANKS<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r19 --> n75
+  r20{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-RANK-<br/>CLASSIFICATION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r20 proved
   n75 --> r20
   r20 --> n76
-  r21{"AND<br/>DERIVE-ARITH-FIXED-QUINTIC-<br/>FULL-HASSE-FIBRES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r21{"AND<br/>NARROW-QUADRATIC-ROUTE-TO-<br/>FULL-FIBRE-RANKS<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r21 proved
-  r21 --> n65
-  r22{"AND<br/>DERIVE-ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n75 --> r21
+  r21 --> n76
+  r22{"AND<br/>DERIVE-ARITH-FIXED-QUINTIC-<br/>FULL-HASSE-FIBRES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r22 proved
-  n34 --> r22
-  n65 --> r22
-  r22 --> n66
-  r23{"AND<br/>DERIVE-ARITH-RANK-FIVE-HASSE-<br/>ALGEBRAS<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r22 --> n64
+  r23{"AND<br/>DERIVE-ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r23 proved
-  r23 --> n34
-  r24{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+3 omitted proof premises<br/>proved"}
+  n34 --> r23
+  n64 --> r23
+  r23 --> n66
+  r24{"AND<br/>DERIVE-ARITH-RANK-FIVE-HASSE-<br/>ALGEBRAS<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r24 proved
-  n75 --> r24
-  r24 --> n77
-  r25{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
+  r24 --> n34
+  r25{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+3 omitted proof premises<br/>proved"}
   class r25 proved
-  n77 --> r25
-  r25 --> n78
-  r26{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>proved"}
+  n75 --> r25
+  r25 --> n77
+  r26{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
   class r26 proved
-  n64 --> r26
+  n77 --> r26
   r26 --> n78
-  r27{"AND<br/>DERIVE-DIX-COTANGENT-TRANSFER<br/>+1 pinned source<br/>proved"}
+  r27{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>proved"}
   class r27 proved
-  r27 --> n30
-  r28{"AND<br/>DERIVE-DIX-QET1<br/>+1 pinned source<br/>proved"}
+  n63 --> r27
+  r27 --> n78
+  r28{"AND<br/>DERIVE-DIX-COTANGENT-TRANSFER<br/>+1 pinned source<br/>proved"}
   class r28 proved
-  n35 --> r28
-  n11 --> r28
-  n1 --> r28
-  r28 --> n54
-  r29{"AND<br/>DERIVE-DIX-QET1-S1<br/>+1 pinned source<br/>proved"}
+  r28 --> n30
+  r29{"AND<br/>DERIVE-DIX-QET1<br/>+1 pinned source<br/>proved"}
   class r29 proved
   n35 --> r29
   n11 --> r29
   n1 --> r29
-  r29 --> n55
-  r30{"AND<br/>DERIVE-DIX-QET1-S2<br/>+1 pinned source<br/>proved"}
+  r29 --> n54
+  r30{"AND<br/>DERIVE-DIX-QET1-S1<br/>+1 pinned source<br/>proved"}
   class r30 proved
   n35 --> r30
   n11 --> r30
   n1 --> r30
-  r30 --> n56
-  r31{"AND<br/>DERIVE-DIX-QET1-S3<br/>+1 pinned source<br/>proved"}
+  r30 --> n55
+  r31{"AND<br/>DERIVE-DIX-QET1-S2<br/>+1 pinned source<br/>proved"}
   class r31 proved
   n35 --> r31
   n11 --> r31
   n1 --> r31
-  r31 --> n57
-  r32{"AND<br/>DERIVE-DIX-QET1-S4<br/>+1 pinned source<br/>proved"}
+  r31 --> n56
+  r32{"AND<br/>DERIVE-DIX-QET1-S3<br/>+1 pinned source<br/>proved"}
   class r32 proved
   n35 --> r32
   n11 --> r32
   n1 --> r32
-  r32 --> n58
-  r33{"AND<br/>DERIVE-DIX-QET1-S5<br/>+1 pinned source<br/>proved"}
+  r32 --> n57
+  r33{"AND<br/>DERIVE-DIX-QET1-S4<br/>+1 pinned source<br/>proved"}
   class r33 proved
   n35 --> r33
   n11 --> r33
   n1 --> r33
-  r33 --> n59
-  r34{"AND<br/>DERIVE-DIX-QET1-S6<br/>+1 pinned source<br/>proved"}
+  r33 --> n58
+  r34{"AND<br/>DERIVE-DIX-QET1-S5<br/>+1 pinned source<br/>proved"}
   class r34 proved
   n35 --> r34
   n11 --> r34
   n1 --> r34
-  r34 --> n60
-  r35{"AND<br/>DERIVE-DIX-QET1-S8<br/>+1 pinned source<br/>proved"}
+  r34 --> n59
+  r35{"AND<br/>DERIVE-DIX-QET1-S6<br/>+1 pinned source<br/>proved"}
   class r35 proved
   n35 --> r35
   n11 --> r35
   n1 --> r35
-  r35 --> n61
-  r36{"AND<br/>DERIVE-DIX-QFC1<br/>+1 pinned source<br/>proved"}
+  r35 --> n60
+  r36{"AND<br/>DERIVE-DIX-QET1-S8<br/>+1 pinned source<br/>proved"}
   class r36 proved
-  n31 --> r36
+  n35 --> r36
+  n11 --> r36
   n1 --> r36
-  r36 --> n35
-  r37{"AND<br/>DERIVE-DIX-QFC1-S1<br/>+1 pinned source<br/>proved"}
+  r36 --> n61
+  r37{"AND<br/>DERIVE-DIX-QFC1<br/>+1 pinned source<br/>proved"}
   class r37 proved
   n31 --> r37
   n1 --> r37
-  r37 --> n36
-  r38{"AND<br/>DERIVE-DIX-QFC1-S2<br/>+1 pinned source<br/>proved"}
+  r37 --> n35
+  r38{"AND<br/>DERIVE-DIX-QFC1-S1<br/>+1 pinned source<br/>proved"}
   class r38 proved
   n31 --> r38
   n1 --> r38
-  r38 --> n37
-  r39{"AND<br/>DERIVE-DIX-QFC1-S3<br/>+1 pinned source<br/>proved"}
+  r38 --> n36
+  r39{"AND<br/>DERIVE-DIX-QFC1-S2<br/>+1 pinned source<br/>proved"}
   class r39 proved
   n31 --> r39
   n1 --> r39
-  r39 --> n38
-  r40{"AND<br/>DERIVE-DIX-QFC1-S4<br/>+1 pinned source<br/>proved"}
+  r39 --> n37
+  r40{"AND<br/>DERIVE-DIX-QFC1-S3<br/>+1 pinned source<br/>proved"}
   class r40 proved
   n31 --> r40
   n1 --> r40
-  r40 --> n39
-  r41{"AND<br/>DERIVE-DIX-QFC1-S5<br/>+1 pinned source<br/>proved"}
+  r40 --> n38
+  r41{"AND<br/>DERIVE-DIX-QFC1-S4<br/>+1 pinned source<br/>proved"}
   class r41 proved
   n31 --> r41
   n1 --> r41
-  r41 --> n40
-  r42{"AND<br/>DERIVE-DIX-QFC1-S6<br/>+1 pinned source<br/>proved"}
+  r41 --> n39
+  r42{"AND<br/>DERIVE-DIX-QFC1-S5<br/>+1 pinned source<br/>proved"}
   class r42 proved
   n31 --> r42
   n1 --> r42
-  r42 --> n41
-  r43{"AND<br/>DERIVE-DIX-QFC1-S7<br/>+1 pinned source<br/>proved"}
+  r42 --> n40
+  r43{"AND<br/>DERIVE-DIX-QFC1-S6<br/>+1 pinned source<br/>proved"}
   class r43 proved
   n31 --> r43
   n1 --> r43
-  r43 --> n42
-  r44{"AND<br/>DERIVE-DIX-QFC1-S9<br/>+1 pinned source<br/>proved"}
+  r43 --> n41
+  r44{"AND<br/>DERIVE-DIX-QFC1-S7<br/>+1 pinned source<br/>proved"}
   class r44 proved
   n31 --> r44
   n1 --> r44
-  r44 --> n43
-  r45{"AND<br/>DERIVE-DIX-QNI1<br/>+1 pinned source<br/>proved"}
+  r44 --> n42
+  r45{"AND<br/>DERIVE-DIX-QFC1-S9<br/>+1 pinned source<br/>proved"}
   class r45 proved
-  n32 --> r45
-  r45 --> n44
-  r46{"AND<br/>DERIVE-DIX-QNI1-S1<br/>+1 pinned source<br/>proved"}
+  n31 --> r45
+  n1 --> r45
+  r45 --> n43
+  r46{"AND<br/>DERIVE-DIX-QNI1<br/>+1 pinned source<br/>proved"}
   class r46 proved
   n32 --> r46
-  r46 --> n45
-  r47{"AND<br/>DERIVE-DIX-QNI1-S2<br/>+1 pinned source<br/>proved"}
+  r46 --> n44
+  r47{"AND<br/>DERIVE-DIX-QNI1-S1<br/>+1 pinned source<br/>proved"}
   class r47 proved
   n32 --> r47
-  r47 --> n46
-  r48{"AND<br/>DERIVE-DIX-QNI1-S3<br/>+1 pinned source<br/>proved"}
+  r47 --> n45
+  r48{"AND<br/>DERIVE-DIX-QNI1-S2<br/>+1 pinned source<br/>proved"}
   class r48 proved
   n32 --> r48
-  r48 --> n47
-  r49{"AND<br/>DERIVE-DIX-QNI1-S4<br/>+1 pinned source<br/>proved"}
+  r48 --> n46
+  r49{"AND<br/>DERIVE-DIX-QNI1-S3<br/>+1 pinned source<br/>proved"}
   class r49 proved
   n32 --> r49
-  r49 --> n48
-  r50{"AND<br/>DERIVE-DIX-QNI1-S5<br/>+1 pinned source<br/>proved"}
+  r49 --> n47
+  r50{"AND<br/>DERIVE-DIX-QNI1-S4<br/>+1 pinned source<br/>proved"}
   class r50 proved
   n32 --> r50
-  r50 --> n49
-  r51{"AND<br/>DERIVE-DIX-QNI1-S6<br/>+1 pinned source<br/>proved"}
+  r50 --> n48
+  r51{"AND<br/>DERIVE-DIX-QNI1-S5<br/>+1 pinned source<br/>proved"}
   class r51 proved
   n32 --> r51
-  r51 --> n50
-  r52{"AND<br/>DERIVE-DIX-QNI1-S7<br/>+1 pinned source<br/>proved"}
+  r51 --> n49
+  r52{"AND<br/>DERIVE-DIX-QNI1-S6<br/>+1 pinned source<br/>proved"}
   class r52 proved
   n32 --> r52
-  r52 --> n51
-  r53{"AND<br/>DERIVE-DIX-QSC1<br/>+1 pinned source<br/>proved"}
+  r52 --> n50
+  r53{"AND<br/>DERIVE-DIX-QNI1-S7<br/>+1 pinned source<br/>proved"}
   class r53 proved
-  r53 --> n31
-  r54{"AND<br/>DERIVE-DIX-RANK3-FINITE-<br/>COUNTEREXAMPLE<br/>proved"}
+  n32 --> r53
+  r53 --> n51
+  r54{"AND<br/>DERIVE-DIX-QSC1<br/>+1 pinned source<br/>proved"}
   class r54 proved
-  n32 --> r54
-  n30 --> r54
-  n52 --> r54
-  r54 --> n62
-  r55{"AND<br/>DERIVE-DIX-SEED-COFACTOR-BOUND<br/>+1 pinned source<br/>proved"}
+  r54 --> n31
+  r55{"AND<br/>DERIVE-DIX-RANK3-FINITE-<br/>COUNTEREXAMPLE<br/>proved"}
   class r55 proved
   n32 --> r55
-  r55 --> n52
-  r56{"AND<br/>DERIVE-FOUND-F1<br/>+1 pinned source<br/>proved"}
+  n30 --> r55
+  n52 --> r55
+  r55 --> n62
+  r56{"AND<br/>DERIVE-DIX-SEED-COFACTOR-BOUND<br/>+1 pinned source<br/>proved"}
   class r56 proved
-  r56 --> n32
-  r57{"AND<br/>DERIVE-FOUND-MENG-QUINTIC<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n32 --> r56
+  r56 --> n52
+  r57{"AND<br/>DERIVE-FOUND-F1<br/>+1 pinned source<br/>proved"}
   class r57 proved
-  r57 --> n63
+  r57 --> n32
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -935,7 +932,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 58 routes (293 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 58 routes (294 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -1547,9 +1544,9 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Factorial moment functionals, composition rigidity and Strong Factorial families.
 
-**Computed obligation progress:** 45 open; 5 proved / discharged.
+**Computed obligation progress:** 46 open; 5 proved / discharged.
 
-**Authored scope assessment:** Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is also proved at native and shifted-native terminals, at N=7^r+c for every r>=0 and c=2,3,4,5,6. The exact remaining degree-seven tests have N>=6 outside these proved families; every hypothetical common root has v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open.
+**Authored scope assessment:** Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is proved at native and shifted-native terminals, at N=7^r+c for r>=0,c2..6, and at N=2*7^r+c for r>=0,c0..6. The exact remaining degree-seven tests have N>=6 outside those families, with every hypothetical common root satisfying v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open.
 
 **Authored scope assessment:** Unrestricted FC and SFC remain open. Universal special-family theorems do not supply an arbitrary-support reduction.
 
@@ -1607,7 +1604,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 
 **Authored scope assessment:** For all d,n>=1 and every real gamma>0, every root t of T_(n,gamma,d)=sum binom(n,k)(gamma)_(dk)t^k satisfies |1/t|<=(gamma+d(n−1))_d. If gamma>d(n−1), also |1/t|>=(gamma−d(n−1))_d. Both bounds are strict for n>=2; n1 gives equality. The quadratic reciprocal u=−1/t lies inside |u|<M^2 and, when gamma>2n−2, in the stated two-sided annulus. The coherent-vector numerical-range proof and EXACT-DEGREE circular GWS theorem give the unrestricted quantifiers. For r<s, shape shift Delta>=d(r+s−2) gives consecutive-or-nonconsecutive pair coprimality at every gamma>0. For P_j=T_(j,aj+beta,d), every real beta>0 and integer a>=0, condition a(s−r)>=d(r+s−2) gives P_r/P_s coprimality; hence a>=d(2N−3) gives pairwise coprimality through orders1..N. The prefix threshold depends on N; no all-index fixed-a, all-binomial or unrestricted FC/SFC closure is inferred.
 
-**Authored scope assessment:** For every terminal N=7^r+1,r>=0, every nonzero complex ordinary phase X(A+B X^6) has a nonzero moment in the pair N−1,N. The all-r proof uses Lucas differences, a globally7-divisible row, an explicit affine minor and real-field conjugacy. For r>=1 it also proves that pair at every positive real algebraic Gamma shape beta admitting ONE embedding Q(beta)->C7 with v7(beta−1)>=r+2. This disk depends on r; no all-positive-real-shape or all-index fixed-beta assertion follows. Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is also proved at native and shifted-native terminals, at N=7^r+c for every r>=0 and c=2,3,4,5,6. The exact remaining degree-seven tests have N>=6 outside these proved families; every hypothetical common root has v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open.
+**Authored scope assessment:** For every terminal N=7^r+1,r>=0, every nonzero complex ordinary phase X(A+B X^6) has a nonzero moment in the pair N−1,N. The all-r proof uses Lucas differences, a globally7-divisible row, an explicit affine minor and real-field conjugacy. For r>=1 it also proves that pair at every positive real algebraic Gamma shape beta admitting ONE embedding Q(beta)->C7 with v7(beta−1)>=r+2. This disk depends on r; no all-positive-real-shape or all-index fixed-beta assertion follows. Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is proved at native and shifted-native terminals, at N=7^r+c for r>=0,c2..6, and at N=2*7^r+c for r>=0,c0..6. The exact remaining degree-seven tests have N>=6 outside those families, with every hypothetical common root satisfying v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open.
 
 **Authored scope assessment:** The coupled gap-six boundary stage retains all actual seeds, preserves the seven-adic radius and closes an eight-offset window. Its integral finite-difference lattice has a primitive first-layer countercontrol at n3. A conditional affine saturation criterion is proved, but a uniform certificate or actual coupled rank-exclusion invariant on the current residual terminal domain remains open.
 
@@ -1618,6 +1615,12 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 **Authored scope assessment:** For every integer r>=1, every nonzero ordinary X(A+B X^6) passes the consecutive-moment test at terminal N=7^r+2. The proof derives all-depth formal generating-series seeds, two globally divided rows, a fixed actual matrix and a complete six-state obstruction. Monomial degenerates are explicit. No Gamma-shape extension or all-index gap-six closure.
 
 **Authored scope assessment:** For every integer r>=0, ordinary gap-six SFC holds at N=7^r+c for c=2,3,4,5,6. The new c3,c4 cases have full residual rank; c5 permits one residue branch and its simple lifted minor forces a unique algebraic candidate, excluded by real positivity. The c6 first reduction excludes even depth; a uniform two-state trace and an Eisenstein local cluster exclude its remaining odd-depth point. The exact degree-seven frontier omits these families together with all native and shifted-native terminals. No all-index or Gamma-shape extension.
+
+**Authored scope assessment:** For every odd prime p and every fixed y in Z_p^times, the physical trace values H_(b*p^r+c,p)(y), b>=1,c>=0,r>=1, have depth period ord(ybar) if ybar!=1 and period p if ybar=1. For 1<=b<p, K_(p+b(p-1),p)(Z)=p*(-1)^(b-1)/b mod p^2 for every Z in1+pZ_p. For every r>=0, N=b*p^r+p-b has no repeated H_(N,p) root in the entire residue disk v_p(Y+1)>0, including ramified points. This is a local exclusion; no all-index SFC or Gamma-shape extension.
+
+**Authored scope assessment:** Every nonzero ordinary X(A+B X^6), with arbitrary complex A,B not both zero, passes the consecutive-moment test at terminal N=2*7^r+c for every r>=0 and c=0,1,2,3,4,5,6. The proof retains actual coupled formal-series seeds, exact divided matrices, the actual moment residue, necessary ideal witnesses, complete Frobenius orbits, and fixed-point local packet exclusions. The r0 N8 endpoint uses the existing scaled family. No Gamma-shape or all-index gap-six extension.
+
+**Authored scope assessment:** For every physical index N>=1, fixed Gamma shape gamma=N and every integral polynomial Q of arbitrary finite degree, the six normalized rows are guaranteed coefficientwise divisible by 7^e_a(N), e_a=ceil((s_7(N)-a-1)/6)>=0. Integral extension coefficients follow by finite scalar linearity. This is a guaranteed bound, without an optimal-content assertion. After this fixed normalization, the reduced formal raising rule has one cut and 42 patterns indexed by N mod7 and mod6. A unimodular polynomial gauge E conjugates it to the diagonal Euler operator, giving L^7=L before evaluation and an exact coupled six-by-seven actual eigensection factorization of the five-column matrix. The actual seed columns are not asserted finite or independent. Universal full residue rank is false at N=8,v=6, where rank is four; H_8(1) is 21 modulo 49 excludes an actual multiple root in that disk. No all-index critical exclusion or SFC follows.
 
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
@@ -1668,6 +1671,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | [GAP-SIX-SCALED-POWER-PLUS-ONE-SFC](factorial/image-rigidity/GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex) | proved | partial | none in declared routes |
 | [GAP-SIX-POWER-PLUS-TWO-SFC](factorial/image-rigidity/GAP_SIX_POWER_PLUS_TWO_SFC.tex) | proved | partial | none in declared routes |
 | [GAP-SIX-SMALL-OFFSET-FAMILIES](factorial/image-rigidity/GAP_SIX_SMALL_OFFSET_FAMILIES.tex) | proved | partial | none in declared routes |
+| [PHYSICAL-PRIME-TRACE-PACKETS](factorial/image-rigidity/PHYSICAL_PRIME_TRACE_PACKETS.tex) | proved | partial | none in declared routes |
+| [GAP-SIX-TWO-DIGIT-LEADING-TWO-SFC](factorial/image-rigidity/GAP_SIX_TWO_DIGIT_LEADING_TWO_SFC.tex) | proved | partial | none in declared routes |
+| [GAP-SIX-DIGIT-NORMALIZATION-AND-FINITE-GAUGE](factorial/image-rigidity/GAP_SIX_DIGIT_NORMALIZATION_AND_FINITE_GAUGE.tex) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -1700,12 +1706,13 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | GAP-QUINTIC-FIVE-ADIC-INDEX-DIOPHANTINE-SEPARATION | mathematical | open | partial | At valuation v5(u)=1, any actual common integer index m>=8 must satisfy v5(m-alpha_c)>=max(3,floor(m/4))-2 and the corresponding root proximity bounds. A sufficient Diophantine separation theorem for ordinary indices in the remaining progression is unproved; algebraicity or non-Liouville behavior of alpha_c is not assumed. Other inner valuations remain separate. | GAP-QUINTIC-FIVE-ADIC-INDEX-DIOPHANTINE-SEPARATION (open) |
 | GAP-QUINTIC-FROBENIUS-JOINT-RANK-DESCENT | mathematical | open | partial | The exact seven-offset scalar/seed transfer does not imply that an original rank drop of the ordinary mixed pair becomes a smaller physical rank drop. Five descendant seeds differ, while three cyclic evaluations do not isolate five residue blocks. Prove a sufficiently precise coupled invariant, or another valid inner-region exclusion. The seed-blind strengthening is explicitly falsified by prop:quintic-seed-blind-obstruction. | GAP-QUINTIC-FROBENIUS-JOINT-RANK-DESCENT (open) |
 | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE | mathematical | open | partial | For every terminal n still required by GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS, show that the actual normalized matrix M_n(v) has at most one distinct rank-drop point on O_C7^times, retaining the coupled actual seed data. A uniform saturation and affine Laurent minor certificate meeting prop:affine-saturation-criterion is a sufficient option; the proved stage and finite window do not provide it. This is an optional sufficient method obligation, not a redefinition of the all-binomial goal. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
+| GAP-SIX-ACTUAL-SPECTRAL-CRITICAL-EXCLUSION | mathematical | open | partial | For every terminal N still required by GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS, use the ACTUAL seed s_N and its seven coupled eigensections, together with the physical moment/critical constraints and coefficient lifts, to exclude any algebraic multiple root of T_(N,N,6) with u=-1/t=7v and v a unit. The 42 formal raising patterns do not give a finite actual-seed closure. The required target is actual critical-root exclusion; it does not require universal full rank of normalized residue matrices, which is false. This is an optional method obligation, not a new definition of the main SFC goal. | GAP-SIX-ACTUAL-SPECTRAL-CRITICAL-EXCLUSION (open) |
 | GOAL-UNSHIFTED-RESULTANT-COEFFICIENT-POSITIVITY | goal | open | partial | For every integers N>=2,d>=1,prove that all coefficients in a of R_(N,d)(a) are nonnegative. Together with its strictly positive leading coefficient this makes R_(N,d)(a)>0 for every real a>0. The fixed N=8,d=5 obstruction to Hurwitz stability has strictly positive coefficients and does not obstruct this weaker target. | GOAL-UNSHIFTED-RESULTANT-COEFFICIENT-POSITIVITY (open) |
 | FACTORIAL-GAP3-HURWITZ-TN | mathematical | open | partial | Prove that the whole infinite H3(W_(n,n+beta-1)) is totally nonnegative for every integer n>=2 and every beta>0; the n<=16 theorem and first nine pivots do not prove this. | FACTORIAL-GAP3-STAIRCASE-POSITIVITY (open) |
 | FACTORIAL-GAP3-TERMINAL-MINOR-STRICT | mathematical | open | partial | For every integer n>=2 and beta>0, prove Delta_(2n-2)(W_(n,n+beta-1))>0. This determinant and the next two special minors are already nonnegative uniformly. Strictness is equivalent to simplicity of the coupled moment polynomial and suffices for the gap-three lower-one Gamma family; it does not assert all H3 minors are nonnegative. | FACTORIAL-LOWER-ONE-TERMINAL-DETERMINANT (open) |
 | FACTORIAL-LOWER-ONE-HIGHER-GAP | goal | open | partial | Close the specified X(A+B X^d) families for all indices and positive Gamma shapes at d>=3. | FACTORIAL-GAP-FULL-RANK (open); FACTORIAL-LOWER-ONE-TERMINAL-DETERMINANT (open) |
 | FACTORIAL-GAP3-ALL-PAIRS | goal | open | partial | For every beta>0, nonzero X(A+B X^3), and terminal N>=2, the Gamma moments at N-1 and N cannot both vanish. The ordinary quartic-binomial case is beta=1. | FACTORIAL-GAP3-STAIRCASE-POSITIVITY (open); FACTORIAL-LOWER-ONE-TERMINAL-DETERMINANT (open) |
-| GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS | mathematical | open | partial | For every terminal N>=6 outside {b*7^s:1<=b<=6,s>=0} UNION {b*7^r+1:1<=b<=6,r>=0} UNION {7^r+c:r>=0,2<=c<=6}, prove gcd_Qt (source reference: `P_(N-1`),P_N)=1 for P_j=sum binom(j,k)(j+1)_(6k)t^k, the ordinary support{1,7},a1,d6. Every hypothetical common root has v7(-1/t)=1 at every algebraic embedding. The listed omitted families are proved; the residual exclusion remains OPEN. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
+| GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS | mathematical | open | partial | For every terminal N>=6 outside {b*7^s:1<=b<=6,s>=0} UNION {b*7^r+1:1<=b<=6,r>=0} UNION {7^r+c:r>=0,2<=c<=6} UNION {2*7^r+c:r>=0,0<=c<=6}, prove gcd_Qt (source reference: `P_(N-1`),P_N)=1 for P_j=sum binom(j,k)(j+1)_(6k)t^k, ordinary support{1,7},a1,d6. Every hypothetical common root has v7(-1/t)=1 at every algebraic embedding. The listed omitted families are proved; the residual exclusion remains OPEN. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
 | GOAL-ORDINARY-BINOMIAL-SFC | goal | open | partial | For every integer lower exponent a>=0 and gap d>=1, every nonzero complex phase X^a(A+B X^d) has no two consecutive zero ordinary factorial moments at any starting index; this does not assert arbitrary Gamma shape or arbitrary polynomial support. | GAP-BINOMIAL-FINITE-RECTANGLES (open); FACTORIAL-GENERAL-SFC (open); GOAL-UNSHIFTED-RESULTANT-COEFFICIENT-POSITIVITY (open) |
 | GAP-ORDINARY-SUPPORT-FIVE-SEVEN-QUADRATIC-FACTOR | mathematical | proved / discharged | partial | For ordinary P_n(t)=sum binom(n,k)(5n+1)_(2k)t^k, no monic irreducible rational quadratic t^2-alpha*t+delta with alpha,delta>0 and alpha^2<4delta divides both P_n and P_(n+1), including all lower n11,13mod16 (terminal N12,14mod16). The all-index sector theorem proves the stronger coprimality assertion. | none in declared routes |
 | GAP-ORDINARY-DEGREE-SIX-THREE-SUPPORT-FAMILIES | mathematical | proved / discharged | partial | For every terminalN>=6 and each(a,d) in{(2,4),(3,3),(4,2)}, gcd_Qt (source reference: `P_(N-1`)^(a,d),P_N^(a,d))=1, with P_j^(a,d)=sum binom(j,k)(aj+1)_(dk)t^k. All three families are now proved at every positive pair. | none in declared routes |
@@ -1713,8 +1720,8 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | FACTORIAL-ALL-UNIVARIATE-BINOMIAL-SFC | goal | open | partial | For every integers a>=0,d>=1,N>=2, the ordinary factorial moment polynomials M_(N-1,a,d) and M_(N,a,d) are coprime, equivalently every nonzero complex X^a(A+B X^d) has a nonzero moment in every consecutive positive pair. Lower-one prime-power gaps and the new no-carry index/factor-degree families are proved; the unrestricted all-index statement remains open. Generic/transcendental Gamma-shape irreducibility does not settle ordinary shape1. | FACTORIAL-BINOMIAL-RECTANGLE-PAIRS (open); FACTORIAL-BINOMIAL-DIAGONAL-PAIRS (open); GAP-BINOMIAL-IRREDUCIBLE-MEMBER-EACH-PAIR (open); GAP-BINOMIAL-SHAPE-REPEATED-PART-POSITIVE-ROOTS (open) |
 | FACTORIAL-ORDINARY-DEGREE-FIVE-SFC | goal | proved | partial | Every nonzero ordinary complex binomial A X^a+B X^b with 0<=a<b<=5 has a nonzero factorial moment in every consecutive positive pair. This is equivalent to support{2,5} at every N>=11,N11mod27 by the current exact reduction. | none in declared routes |
 | FACTORIAL-ORDINARY-DEGREE-SIX-SFC | goal | proved | partial | Every nonzero complex ordinary univariate binomial of degree<=6 has a nonzero factorial moment in every consecutive positive pair. This is proved by the exact support classification and the three all-order family theorems. | none in declared routes |
-| GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES | mathematical | open | partial | Ordinary degree-seven binomial SFC, equivalently the exact remaining support{1,7} tests. Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is also proved at native and shifted-native terminals, at N=7^r+c for every r>=0 and c=2,3,4,5,6. The exact remaining degree-seven tests have N>=6 outside these proved families; every hypothetical common root has v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
-| FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC | goal | open | partial | Ordinary degree-seven binomial SFC, equivalently the exact remaining support{1,7} tests. Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is also proved at native and shifted-native terminals, at N=7^r+c for every r>=0 and c=2,3,4,5,6. The exact remaining degree-seven tests have N>=6 outside these proved families; every hypothetical common root has v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
+| GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES | mathematical | open | partial | Ordinary degree-seven binomial SFC, equivalently the exact remaining support{1,7} tests. Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is proved at native and shifted-native terminals, at N=7^r+c for r>=0,c2..6, and at N=2*7^r+c for r>=0,c0..6. The exact remaining degree-seven tests have N>=6 outside those families, with every hypothetical common root satisfying v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
+| FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC | goal | open | partial | Ordinary degree-seven binomial SFC, equivalently the exact remaining support{1,7} tests. Ordinary binomial SFC through degree six and supports{3,7},{4,7},{5,7} are proved at every positive pair. Ordinary support{1,7} is proved at native and shifted-native terminals, at N=7^r+c for r>=0,c2..6, and at N=2*7^r+c for r>=0,c0..6. The exact remaining degree-seven tests have N>=6 outside those families, with every hypothetical common root satisfying v7(-1/t)=1. The remaining all-index gap-six exclusion, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open. | GAP-SIX-ACTUAL-COUPLED-RANK-CERTIFICATE (open) |
 
 ```mermaid
 flowchart LR
@@ -1754,59 +1761,59 @@ flowchart LR
   class n16 open
   n17["FACTORIAL-LOWER-ONE-TERMINAL-<br/>DETERMINANT<br/>open"]
   class n17 open
-  n18["GAP-ALL-EXPONENTS-SQUAREFREE<br/>open"]
+  n18["FACTORIAL-GAP3-HURWITZ-TN<br/>open"]
   class n18 open
-  n19["GAP-BINOMIAL-FINITE-RECTANGLES<br/>open"]
+  n19["EXT-EIT-IV-RELATIVE-<br/>FUNCTIONAL-KZ<br/>open"]
   class n19 open
-  n20["FACTORIAL-GAP3-HURWITZ-TN<br/>open"]
-  class n20 open
-  n21["EXT-EIT-IV-RELATIVE-<br/>FUNCTIONAL-KZ<br/>open"]
-  class n21 open
-  n22["UNIVARIATE-TWO-TERM-SFC<br/>proved<br/>OR routes"]
+  n20["UNIVARIATE-TWO-TERM-SFC<br/>proved<br/>OR routes"]
+  class n20 proved
+  n21["GAP-THREE-HURWITZ-CERTIFICATES<br/>proved"]
+  class n21 proved
+  n22["GENERAL-GAP-CRITERIA<br/>proved"]
   class n22 proved
-  n23["GAP-THREE-HURWITZ-CERTIFICATES<br/>proved"]
+  n23["AUXILIARY-RIORDAN-TRANSFER<br/>proved"]
   class n23 proved
-  n24["GENERAL-GAP-CRITERIA<br/>proved"]
+  n24["EXT-EIT-II-LINEAR-KZ<br/>proved"]
   class n24 proved
-  n25["AUXILIARY-RIORDAN-TRANSFER<br/>proved"]
+  n25["BINOMIAL-IRREDUCIBILITY-<br/>REDUCTIONS<br/>proved"]
   class n25 proved
-  n26["EXT-EIT-II-LINEAR-KZ<br/>proved"]
-  class n26 proved
-  n27["BINOMIAL-IRREDUCIBILITY-<br/>REDUCTIONS<br/>proved"]
-  class n27 proved
-  n28["FACTORIAL-GAP3-TERMINAL-MINOR-<br/>STRICT<br/>open"]
-  class n28 open
-  n29(["FACTORIAL-LOWER-ONE-HIGHER-GAP<br/>open<br/>OR routes"])
-  class n29 open
-  n30["LOWER-TWO-PRIME-GAP-SFC<br/>proved"]
+  n26["FACTORIAL-GAP3-TERMINAL-MINOR-<br/>STRICT<br/>open"]
+  class n26 open
+  n27(["FACTORIAL-LOWER-ONE-HIGHER-GAP<br/>open<br/>OR routes"])
+  class n27 open
+  n28["LOWER-TWO-PRIME-GAP-SFC<br/>proved"]
+  class n28 proved
+  n29["EXT-EIT-III-POLYNOMIAL-KZ<br/>proved"]
+  class n29 proved
+  n30["PHYSICAL-PRIME-TOTAL-DEGREE-<br/>REDUCTION<br/>proved"]
   class n30 proved
-  n31["EXT-EIT-III-POLYNOMIAL-KZ<br/>proved"]
+  n31["FACTORIAL-PENCIL-FAMILIES<br/>proved"]
   class n31 proved
-  n32["PHYSICAL-PRIME-TOTAL-DEGREE-<br/>REDUCTION<br/>proved"]
+  n32["OTHER-TWO-TERM-SFC<br/>proved"]
   class n32 proved
-  n33["FACTORIAL-PENCIL-FAMILIES<br/>proved"]
+  n33["BINOMIAL-RESIDUAL-ARITHMETIC<br/>proved"]
   class n33 proved
-  n34["OTHER-TWO-TERM-SFC<br/>proved"]
+  n34["BINOMIAL-SHAPE-RESULTANT<br/>proved"]
   class n34 proved
-  n35["BINOMIAL-RESIDUAL-ARITHMETIC<br/>proved"]
+  n35["GAP-TWO-LOWER-TWO-THREE-SFC<br/>proved"]
   class n35 proved
-  n36["BINOMIAL-SHAPE-RESULTANT<br/>proved"]
+  n36["GAP-SIX-DIGIT-NORMALIZATION-<br/>AND-FINITE-GAUGE<br/>proved"]
   class n36 proved
-  n37["GAP-TWO-LOWER-TWO-THREE-SFC<br/>proved"]
-  class n37 proved
-  n38(["FACTORIAL-GAP3-ALL-PAIRS<br/>open<br/>OR routes"])
-  class n38 open
-  n39["GAP-SIX-BOUNDARY-COUPLED-<br/>FROBENIUS<br/>proved"]
+  n37(["FACTORIAL-GAP3-ALL-PAIRS<br/>open<br/>OR routes"])
+  class n37 open
+  n38["GAP-SIX-BOUNDARY-COUPLED-<br/>FROBENIUS<br/>proved"]
+  class n38 proved
+  n39["GENERAL-QUADRATIC-SHIFT-<br/>STRUCTURE-AND-OBSTRUCTION<br/>proved"]
   class n39 proved
-  n40["GENERAL-QUADRATIC-SHIFT-<br/>STRUCTURE-AND-OBSTRUCTION<br/>proved"]
+  n40["LOWER-TWO-FOURTH-POWER-GAP-SFC<br/>proved"]
   class n40 proved
-  n41["LOWER-TWO-FOURTH-POWER-GAP-SFC<br/>proved"]
-  class n41 proved
-  n42["EIT-KONTSEVICH-ZAGIER-SCOPE-<br/>AUDIT<br/>open"]
+  n41["EIT-KONTSEVICH-ZAGIER-SCOPE-<br/>AUDIT<br/>open"]
+  class n41 open
+  n42["EXT-EIT-SIMPLEX-NONVANISHING-<br/>CONJECTURE<br/>open"]
   class n42 open
-  n43["EXT-EIT-SIMPLEX-NONVANISHING-<br/>CONJECTURE<br/>open"]
-  class n43 open
-  n44["GAMMA-CONVOLUTION-APPELL-<br/>OBSTRUCTION<br/>proved"]
+  n43["GAMMA-CONVOLUTION-APPELL-<br/>OBSTRUCTION<br/>proved"]
+  class n43 proved
+  n44["PHYSICAL-PRIME-TRACE-PACKETS<br/>proved"]
   class n44 proved
   n45["QUINTIC-FIVE-ADIC-DESCENT-<br/>REDUCTIONS<br/>proved"]
   class n45 proved
@@ -1844,46 +1851,46 @@ flowchart LR
   class n61 proved
   n62["QUINTIC-BINOMIAL-RESIDUE-<br/>REDUCTION<br/>proved"]
   class n62 proved
-  n63["FACTORIAL-QUINTIC-SUPPORT-TWO-<br/>FIVE-RESIDUE-RAY<br/>proved<br/>OR routes"]
-  class n63 proved
-  n64(["FACTORIAL-ALL-UNIVARIATE-<br/>BINOMIAL-SFC<br/>open<br/>OR routes"])
-  class n64 open
-  n65["QUINTIC-THREE-ADIC-PARITY-<br/>REDUCTION<br/>proved"]
+  n63(["FACTORIAL-ALL-UNIVARIATE-<br/>BINOMIAL-SFC<br/>open<br/>OR routes"])
+  class n63 open
+  n64["QUINTIC-THREE-ADIC-PARITY-<br/>REDUCTION<br/>proved"]
+  class n64 proved
+  n65["PRIME-POWER-SFC-TO-MARKED-<br/>RADIAL-FAMILIES<br/>proved"]
   class n65 proved
-  n66["PRIME-POWER-SFC-TO-MARKED-<br/>RADIAL-FAMILIES<br/>proved"]
+  n66(["FACTORIAL-ORDINARY-DEGREE-<br/>FIVE-SFC<br/>proved<br/>OR routes"])
   class n66 proved
-  n67(["FACTORIAL-ORDINARY-DEGREE-<br/>FIVE-SFC<br/>proved<br/>OR routes"])
+  n67["LOWER-THREE-FOURTH-POWER-<br/>FROBENIUS-SFC<br/>proved"]
   class n67 proved
-  n68["LOWER-THREE-FOURTH-POWER-<br/>FROBENIUS-SFC<br/>proved"]
+  n68["ALGEBRAIC-GAMMA-PRIME-POWER-<br/>DOMAINS<br/>proved"]
   class n68 proved
-  n69["ALGEBRAIC-GAMMA-PRIME-POWER-<br/>DOMAINS<br/>proved"]
+  n69["QUINTIC-SCALAR-MINOR-SFC<br/>proved"]
   class n69 proved
-  n70["QUINTIC-SCALAR-MINOR-SFC<br/>proved"]
+  n70(["FACTORIAL-ORDINARY-DEGREE-SIX-<br/>SFC<br/>proved<br/>OR routes"])
   class n70 proved
-  n71(["FACTORIAL-ORDINARY-DEGREE-SIX-<br/>SFC<br/>proved<br/>OR routes"])
+  n71["ORDINARY-DEGREE-SIX-BINOMIAL-<br/>SFC<br/>proved"]
   class n71 proved
-  n72["ORDINARY-DEGREE-SIX-BINOMIAL-<br/>SFC<br/>proved"]
+  n72["ORDINARY-DEGREE-SEVEN-RESIDUE-<br/>FRONTIER<br/>proved"]
   class n72 proved
-  n73["ORDINARY-DEGREE-SEVEN-RESIDUE-<br/>FRONTIER<br/>proved"]
+  n73["ORDINARY-DEGREE-SEVEN-TWO-<br/>FAMILY-FRONTIER<br/>proved"]
   class n73 proved
-  n74["ORDINARY-DEGREE-SEVEN-TWO-<br/>FAMILY-FRONTIER<br/>proved"]
+  n74["ORDINARY-DEGREE-SEVEN-GAP-SIX-<br/>FRONTIER<br/>proved"]
   class n74 proved
-  n75["ORDINARY-DEGREE-SEVEN-GAP-SIX-<br/>FRONTIER<br/>proved"]
+  n75["GAP-SIX-THIN-DIGIT-SFC<br/>proved"]
   class n75 proved
-  n76["GAP-SIX-THIN-DIGIT-SFC<br/>proved"]
+  n76["GAP-SIX-SCALED-POWER-PLUS-ONE-<br/>SFC<br/>proved"]
   class n76 proved
-  n77["GAP-SIX-SCALED-POWER-PLUS-ONE-<br/>SFC<br/>proved"]
+  n77["GAP-SIX-SMALL-OFFSET-FAMILIES<br/>proved"]
   class n77 proved
-  n78["GAP-SIX-SMALL-OFFSET-FAMILIES<br/>proved"]
+  n78["GAP-SIX-TWO-DIGIT-LEADING-TWO-<br/>SFC<br/>proved"]
   class n78 proved
   n79(["FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>open<br/>OR routes"])
   class n79 open
   r0{"AND<br/>SOURCE-ROUTE-ALGEBRAIC-GAMMA-<br/>PRIME-POWER-DOMAINS<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r0 proved
-  r0 --> n69
+  r0 --> n68
   r1{"AND<br/>SOURCE-ROUTE-AUXILIARY-<br/>RIORDAN-TRANSFER<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r1 proved
-  r1 --> n25
+  r1 --> n23
   r2{"AND<br/>SOURCE-ROUTE-BINARY-FACTORIAL-<br/>RIGIDITY<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r2 proved
   r2 --> n46
@@ -1895,28 +1902,28 @@ flowchart LR
   r4 --> n61
   r5{"AND<br/>SOURCE-ROUTE-BINOMIAL-<br/>IRREDUCIBILITY-REDUCTIONS<br/>+1 pinned source<br/>+9 omitted proof premises<br/>proved"}
   class r5 proved
-  r5 --> n27
+  r5 --> n25
   r6{"AND<br/>SOURCE-ROUTE-BINOMIAL-<br/>RESIDUAL-ARITHMETIC<br/>+2 pinned sources<br/>+10 omitted proof premises<br/>proved"}
   class r6 proved
-  r6 --> n35
+  r6 --> n33
   r7{"AND<br/>SOURCE-ROUTE-BINOMIAL-SHAPE-<br/>RESULTANT<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r7 proved
-  r7 --> n36
+  r7 --> n34
   r8{"AND<br/>SOURCE-ROUTE-DIAGONAL-PRIME-<br/>GAP-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r8 proved
   r8 --> n52
   r9{"AND<br/>SOURCE-ROUTE-EIT-KONTSEVICH-<br/>ZAGIER-SCOPE-AUDIT<br/>+1 pinned source<br/>unverified"}
   class r9 open
-  n26 --> r9
-  n31 --> r9
-  n21 --> r9
-  r9 --> n42
+  n24 --> r9
+  n29 --> r9
+  n19 --> r9
+  r9 --> n41
   r10{"AND<br/>SOURCE-ROUTE-FACTORIAL-PENCIL-<br/>FAMILIES<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r10 proved
-  r10 --> n33
+  r10 --> n31
   r11{"AND<br/>SOURCE-ROUTE-GAMMA-<br/>CONVOLUTION-APPELL-OBSTRUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r11 proved
-  r11 --> n44
+  r11 --> n43
   r12{"AND<br/>SOURCE-ROUTE-GAMMA-ONE-HALF-<br/>WEIGHTED-FACTORIAL-RIGIDITY<br/>+6 omitted proof premises<br/>proved"}
   class r12 proved
   r12 --> n50
@@ -1925,216 +1932,221 @@ flowchart LR
   r13 --> n47
   r14{"AND<br/>SOURCE-ROUTE-GAP-SIX-BOUNDARY-<br/>COUPLED-FROBENIUS<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r14 proved
-  r14 --> n39
-  r15{"AND<br/>SOURCE-ROUTE-GAP-SIX-POWER-<br/>PLUS-TWO-SFC<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r14 --> n38
+  r15{"AND<br/>SOURCE-ROUTE-GAP-SIX-DIGIT-<br/>NORMALIZATION-AND-FINITE-GAUGE<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r15 proved
-  r15 --> n48
-  r16{"AND<br/>SOURCE-ROUTE-GAP-SIX-SCALED-<br/>POWER-PLUS-ONE-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r15 --> n36
+  r16{"AND<br/>SOURCE-ROUTE-GAP-SIX-POWER-<br/>PLUS-TWO-SFC<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r16 proved
-  r16 --> n77
-  r17{"AND<br/>SOURCE-ROUTE-GAP-SIX-SMALL-<br/>OFFSET-FAMILIES<br/>+1 pinned source<br/>+8 omitted proof premises<br/>proved"}
+  r16 --> n48
+  r17{"AND<br/>SOURCE-ROUTE-GAP-SIX-SCALED-<br/>POWER-PLUS-ONE-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r17 proved
-  r17 --> n78
-  r18{"AND<br/>SOURCE-ROUTE-GAP-SIX-THIN-<br/>DIGIT-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r17 --> n76
+  r18{"AND<br/>SOURCE-ROUTE-GAP-SIX-SMALL-<br/>OFFSET-FAMILIES<br/>+1 pinned source<br/>+8 omitted proof premises<br/>proved"}
   class r18 proved
-  r18 --> n76
-  r19{"AND<br/>SOURCE-ROUTE-GAP-SIX-TWO-<br/>POWER-PLUS-ONE-SFC<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
+  r18 --> n77
+  r19{"AND<br/>SOURCE-ROUTE-GAP-SIX-THIN-<br/>DIGIT-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r19 proved
-  r19 --> n49
-  r20{"AND<br/>SOURCE-ROUTE-GAP-THREE-<br/>HURWITZ-CERTIFICATES<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r19 --> n75
+  r20{"AND<br/>SOURCE-ROUTE-GAP-SIX-TWO-<br/>DIGIT-LEADING-TWO-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r20 proved
-  r20 --> n23
-  r21{"AND<br/>SOURCE-ROUTE-GAP-TWO-LOWER-<br/>TWO-THREE-SFC<br/>+2 omitted proof premises<br/>proved"}
+  r20 --> n78
+  r21{"AND<br/>SOURCE-ROUTE-GAP-SIX-TWO-<br/>POWER-PLUS-ONE-SFC<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r21 proved
-  r21 --> n37
-  r22{"AND<br/>SOURCE-ROUTE-GENERAL-GAP-<br/>CRITERIA<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r21 --> n49
+  r22{"AND<br/>SOURCE-ROUTE-GAP-THREE-<br/>HURWITZ-CERTIFICATES<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r22 proved
-  r22 --> n24
-  r23{"AND<br/>SOURCE-ROUTE-GENERAL-<br/>QUADRATIC-SHIFT-STRUCTURE-AND-<br/>OBSTRUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r22 --> n21
+  r23{"AND<br/>SOURCE-ROUTE-GAP-TWO-LOWER-<br/>TWO-THREE-SFC<br/>+2 omitted proof premises<br/>proved"}
   class r23 proved
-  r23 --> n40
-  r24{"AND<br/>SOURCE-ROUTE-LOWER-FIVE-<br/>QUADRATIC-HALF-PLANE-REDUCTION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r23 --> n35
+  r24{"AND<br/>SOURCE-ROUTE-GENERAL-GAP-<br/>CRITERIA<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r24 proved
-  r24 --> n55
-  r25{"AND<br/>SOURCE-ROUTE-LOWER-FIVE-<br/>QUADRATIC-RESIDUE-REDUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r24 --> n22
+  r25{"AND<br/>SOURCE-ROUTE-GENERAL-<br/>QUADRATIC-SHIFT-STRUCTURE-AND-<br/>OBSTRUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r25 proved
-  r25 --> n51
-  r26{"AND<br/>SOURCE-ROUTE-LOWER-FIVE-<br/>QUADRATIC-SECTOR-SFC<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
+  r25 --> n39
+  r26{"AND<br/>SOURCE-ROUTE-LOWER-FIVE-<br/>QUADRATIC-HALF-PLANE-REDUCTION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r26 proved
-  r26 --> n56
-  r27{"AND<br/>SOURCE-ROUTE-LOWER-FOUR-<br/>QUADRATIC-GAP-SFC<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r26 --> n55
+  r27{"AND<br/>SOURCE-ROUTE-LOWER-FIVE-<br/>QUADRATIC-RESIDUE-REDUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r27 proved
-  r27 --> n54
-  r28{"AND<br/>SOURCE-ROUTE-LOWER-FOUR-<br/>QUADRATIC-SECTOR-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r27 --> n51
+  r28{"AND<br/>SOURCE-ROUTE-LOWER-FIVE-<br/>QUADRATIC-SECTOR-SFC<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r28 proved
-  r28 --> n53
-  r29{"AND<br/>SOURCE-ROUTE-LOWER-THREE-<br/>FOURTH-POWER-FROBENIUS-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r28 --> n56
+  r29{"AND<br/>SOURCE-ROUTE-LOWER-FOUR-<br/>QUADRATIC-GAP-SFC<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r29 proved
-  r29 --> n68
-  r30{"AND<br/>SOURCE-ROUTE-LOWER-THREE-<br/>FOURTH-POWER-RESIDUE-REDUCTION<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
+  r29 --> n54
+  r30{"AND<br/>SOURCE-ROUTE-LOWER-FOUR-<br/>QUADRATIC-SECTOR-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r30 proved
-  r30 --> n59
-  r31{"AND<br/>SOURCE-ROUTE-LOWER-TWO-FOURTH-<br/>POWER-GAP-SFC<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r30 --> n53
+  r31{"AND<br/>SOURCE-ROUTE-LOWER-THREE-<br/>FOURTH-POWER-FROBENIUS-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r31 proved
-  r31 --> n41
-  r32{"AND<br/>SOURCE-ROUTE-LOWER-TWO-PRIME-<br/>GAP-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r31 --> n67
+  r32{"AND<br/>SOURCE-ROUTE-LOWER-THREE-<br/>FOURTH-POWER-RESIDUE-REDUCTION<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r32 proved
-  r32 --> n30
-  r33{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SEVEN-GAP-SIX-FRONTIER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r32 --> n59
+  r33{"AND<br/>SOURCE-ROUTE-LOWER-TWO-FOURTH-<br/>POWER-GAP-SFC<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r33 proved
-  r33 --> n75
-  r34{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SEVEN-RESIDUE-FRONTIER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r33 --> n40
+  r34{"AND<br/>SOURCE-ROUTE-LOWER-TWO-PRIME-<br/>GAP-SFC<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r34 proved
-  r34 --> n73
-  r35{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SEVEN-TWO-FAMILY-FRONTIER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r34 --> n28
+  r35{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SEVEN-GAP-SIX-FRONTIER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r35 proved
   r35 --> n74
-  r36{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SIX-BINOMIAL-SFC<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r36{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SEVEN-RESIDUE-FRONTIER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r36 proved
   r36 --> n72
-  r37{"AND<br/>SOURCE-ROUTE-OTHER-TWO-TERM-<br/>SFC<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r37{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SEVEN-TWO-FAMILY-FRONTIER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r37 proved
-  r37 --> n34
-  r38{"AND<br/>SOURCE-ROUTE-PHYSICAL-PRIME-<br/>TOTAL-DEGREE-REDUCTION<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
+  r37 --> n73
+  r38{"AND<br/>SOURCE-ROUTE-ORDINARY-DEGREE-<br/>SIX-BINOMIAL-SFC<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r38 proved
-  r38 --> n32
-  r39{"AND<br/>SOURCE-ROUTE-PRIME-GAP-LOWER-<br/>ONE-SFC<br/>+5 omitted proof premises<br/>proved"}
+  r38 --> n71
+  r39{"AND<br/>SOURCE-ROUTE-OTHER-TWO-TERM-<br/>SFC<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r39 proved
-  r39 --> n58
-  r40{"AND<br/>SOURCE-ROUTE-PRIME-PLUS-ONE-<br/>EXPONENT-GAP-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r39 --> n32
+  r40{"AND<br/>SOURCE-ROUTE-PHYSICAL-PRIME-<br/>TOTAL-DEGREE-REDUCTION<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r40 proved
-  r40 --> n60
-  r41{"AND<br/>SOURCE-ROUTE-PRIME-POWER-SFC-<br/>TO-MARKED-RADIAL-FAMILIES<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r40 --> n30
+  r41{"AND<br/>SOURCE-ROUTE-PHYSICAL-PRIME-<br/>TRACE-PACKETS<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r41 proved
-  r41 --> n66
-  r42{"AND<br/>SOURCE-ROUTE-QUINTIC-BINOMIAL-<br/>RESIDUE-REDUCTION<br/>+4 omitted proof premises<br/>proved"}
+  r41 --> n44
+  r42{"AND<br/>SOURCE-ROUTE-PRIME-GAP-LOWER-<br/>ONE-SFC<br/>+5 omitted proof premises<br/>proved"}
   class r42 proved
-  r42 --> n62
-  r43{"AND<br/>SOURCE-ROUTE-QUINTIC-FIVE-<br/>ADIC-DESCENT-REDUCTIONS<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r42 --> n58
+  r43{"AND<br/>SOURCE-ROUTE-PRIME-PLUS-ONE-<br/>EXPONENT-GAP-SFC<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r43 proved
-  r43 --> n45
-  r44{"AND<br/>SOURCE-ROUTE-QUINTIC-SCALAR-<br/>MINOR-SFC<br/>+1 pinned source<br/>+9 omitted proof premises<br/>proved"}
+  r43 --> n60
+  r44{"AND<br/>SOURCE-ROUTE-PRIME-POWER-SFC-<br/>TO-MARKED-RADIAL-FAMILIES<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r44 proved
-  r44 --> n70
-  r45{"AND<br/>SOURCE-ROUTE-QUINTIC-THREE-<br/>ADIC-PARITY-REDUCTION<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r44 --> n65
+  r45{"AND<br/>SOURCE-ROUTE-QUINTIC-BINOMIAL-<br/>RESIDUE-REDUCTION<br/>+4 omitted proof premises<br/>proved"}
   class r45 proved
-  r45 --> n65
-  r46{"AND<br/>ALL-EXPONENTS-TO-PRINCIPAL<br/>+1 omitted proof premise<br/>proved"}
+  r45 --> n62
+  r46{"AND<br/>SOURCE-ROUTE-QUINTIC-FIVE-<br/>ADIC-DESCENT-REDUCTIONS<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r46 proved
-  r46 --> n22
-  r47{"AND<br/>SOURCE-ROUTE-UNIVARIATE-TWO-<br/>TERM-SFC<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r46 --> n45
+  r47{"AND<br/>SOURCE-ROUTE-QUINTIC-SCALAR-<br/>MINOR-SFC<br/>+1 pinned source<br/>+9 omitted proof premises<br/>proved"}
   class r47 proved
-  r47 --> n22
-  r48{"AND<br/>DERIVE-EIT-II-COMPACT-LINEAR-<br/>KZ<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r47 --> n69
+  r48{"AND<br/>SOURCE-ROUTE-QUINTIC-THREE-<br/>ADIC-PARITY-REDUCTION<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r48 proved
-  r48 --> n26
-  r49{"AND<br/>ROUTE-EIT-III-CLAIMED-PROOF-<br/>INTERFACES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r48 --> n64
+  r49{"AND<br/>ALL-EXPONENTS-TO-PRINCIPAL<br/>+1 omitted proof premise<br/>proved"}
   class r49 proved
-  n26 --> r49
-  r49 --> n31
-  r50{"AND<br/>DERIVE-EIT-IV-FINITE-PACKET-<br/>TO-FILTERED-ENVELOPE<br/>+1 pinned source<br/>blocked"}
-  class r50 open
-  n1 --> r50
-  n4 --> r50
-  n3 --> r50
-  r50 --> n21
-  r51{"AND<br/>ROUTE-KZ-TO-SIMPLEX-<br/>NONVANISHING<br/>+1 omitted proof premise<br/>blocked"}
-  class r51 open
-  n31 --> r51
-  n14 --> r51
-  n13 --> r51
-  r51 --> n43
-  r52{"AND<br/>FACTORIAL-DIAGONAL-PAIRS-TO-<br/>ALL-BINOMIALS<br/>blocked"}
-  class r52 open
-  n61 --> r52
-  n5 --> r52
-  n22 --> r52
-  r52 --> n64
-  r53{"AND<br/>FACTORIAL-SUPPORT-RECTANGLES-<br/>TO-ALL-BINOMIALS<br/>blocked"}
+  r49 --> n20
+  r50{"AND<br/>SOURCE-ROUTE-UNIVARIATE-TWO-<br/>TERM-SFC<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  class r50 proved
+  r50 --> n20
+  r51{"AND<br/>DERIVE-EIT-II-COMPACT-LINEAR-<br/>KZ<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  class r51 proved
+  r51 --> n24
+  r52{"AND<br/>ROUTE-EIT-III-CLAIMED-PROOF-<br/>INTERFACES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  class r52 proved
+  n24 --> r52
+  r52 --> n29
+  r53{"AND<br/>DERIVE-EIT-IV-FINITE-PACKET-<br/>TO-FILTERED-ENVELOPE<br/>+1 pinned source<br/>blocked"}
   class r53 open
-  n61 --> r53
-  n6 --> r53
-  n22 --> r53
-  n34 --> r53
-  r53 --> n64
-  r54{"AND<br/>ROUTE-ORDINARY-BINOMIAL-SFC-<br/>VIA-IRREDUCIBLE-PAIR-MEMBER<br/>+2 omitted proof premises<br/>blocked"}
+  n1 --> r53
+  n4 --> r53
+  n3 --> r53
+  r53 --> n19
+  r54{"AND<br/>ROUTE-KZ-TO-SIMPLEX-<br/>NONVANISHING<br/>+1 omitted proof premise<br/>blocked"}
   class r54 open
-  r54 --> n64
-  r55{"AND<br/>ROUTE-ORDINARY-BINOMIAL-SFC-<br/>VIA-SHAPE-REPEATED-PART<br/>+2 omitted proof premises<br/>blocked"}
+  n29 --> r54
+  n14 --> r54
+  n13 --> r54
+  r54 --> n42
+  r55{"AND<br/>FACTORIAL-DIAGONAL-PAIRS-TO-<br/>ALL-BINOMIALS<br/>blocked"}
   class r55 open
-  r55 --> n64
-  r56{"AND<br/>FACTORIAL-GAP3-OPEN-SECTOR-TO-<br/>SFC<br/>+1 pinned source<br/>+2 omitted proof premises<br/>blocked"}
+  n61 --> r55
+  n5 --> r55
+  n20 --> r55
+  r55 --> n63
+  r56{"AND<br/>FACTORIAL-SUPPORT-RECTANGLES-<br/>TO-ALL-BINOMIALS<br/>blocked"}
   class r56 open
+  n61 --> r56
+  n6 --> r56
   n20 --> r56
-  r56 --> n38
-  r57{"AND<br/>FACTORIAL-GAP3-TERMINAL-MINOR-<br/>TO-ALL-PAIRS<br/>blocked"}
+  n32 --> r56
+  r56 --> n63
+  r57{"AND<br/>ROUTE-ORDINARY-BINOMIAL-SFC-<br/>VIA-IRREDUCIBLE-PAIR-MEMBER<br/>+2 omitted proof premises<br/>blocked"}
   class r57 open
-  n25 --> r57
-  n24 --> r57
-  n28 --> r57
-  r57 --> n38
-  r58{"AND<br/>FACTORIAL-GAP3-STAIRCASE-TO-TN<br/>+1 pinned source<br/>blocked"}
+  r57 --> n63
+  r58{"AND<br/>ROUTE-ORDINARY-BINOMIAL-SFC-<br/>VIA-SHAPE-REPEATED-PART<br/>+2 omitted proof premises<br/>blocked"}
   class r58 open
-  n9 --> r58
-  r58 --> n20
-  r59{"AND<br/>FACTORIAL-ALL-GAP-TERMINAL-TO-<br/>GAP3<br/>blocked"}
+  r58 --> n63
+  r59{"AND<br/>FACTORIAL-GAP3-OPEN-SECTOR-TO-<br/>SFC<br/>+1 pinned source<br/>+2 omitted proof premises<br/>blocked"}
   class r59 open
-  n25 --> r59
-  n17 --> r59
-  r59 --> n28
-  r60{"AND<br/>AUDIT-A-rank-to-lower-one<br/>+1 omitted proof premise<br/>blocked"}
+  n18 --> r59
+  r59 --> n37
+  r60{"AND<br/>FACTORIAL-GAP3-TERMINAL-MINOR-<br/>TO-ALL-PAIRS<br/>blocked"}
   class r60 open
-  n7 --> r60
-  r60 --> n29
-  r61{"AND<br/>FACTORIAL-TERMINAL-<br/>DETERMINANTS-TO-LOWER-ONE<br/>blocked"}
+  n23 --> r60
+  n22 --> r60
+  n26 --> r60
+  r60 --> n37
+  r61{"AND<br/>FACTORIAL-GAP3-STAIRCASE-TO-TN<br/>+1 pinned source<br/>blocked"}
   class r61 open
-  n25 --> r61
-  n24 --> r61
-  n17 --> r61
-  r61 --> n29
-  r62{"AND<br/>FACTORIAL-DEGREE-FIVE-FROM-<br/>REMAINING-QUINTIC-RAY<br/>+2 omitted proof premises<br/>proved"}
-  class r62 proved
-  n63 --> r62
-  r62 --> n67
-  r63{"AND<br/>ORDINARY-DEGREE-FIVE-FROM-<br/>SCALAR-MINOR<br/>+1 omitted proof premise<br/>proved"}
-  class r63 proved
-  r63 --> n67
-  r64{"AND<br/>B2-REFINED-TESTS-TO-FACTORIAL-<br/>ORDINARY-DEGREE-SEVEN-SFC<br/>+5 omitted proof premises<br/>blocked"}
+  n9 --> r61
+  r61 --> n18
+  r62{"AND<br/>FACTORIAL-ALL-GAP-TERMINAL-TO-<br/>GAP3<br/>blocked"}
+  class r62 open
+  n23 --> r62
+  n17 --> r62
+  r62 --> n26
+  r63{"AND<br/>AUDIT-A-rank-to-lower-one<br/>+1 omitted proof premise<br/>blocked"}
+  class r63 open
+  n7 --> r63
+  r63 --> n27
+  r64{"AND<br/>FACTORIAL-TERMINAL-<br/>DETERMINANTS-TO-LOWER-ONE<br/>blocked"}
   class r64 open
-  r64 --> n79
-  r65{"AND<br/>DEGREE-SEVEN-GAP-SIX-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+6 omitted proof premises<br/>blocked"}
-  class r65 open
-  r65 --> n79
-  r66{"AND<br/>DEGREE-SEVEN-RESIDUAL-TESTS-<br/>TO-FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+8 omitted proof premises<br/>blocked"}
-  class r66 open
-  r66 --> n79
-  r67{"AND<br/>DEGREE-SEVEN-TWO-FAMILY-TESTS-<br/>TO-FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+7 omitted proof premises<br/>blocked"}
+  n23 --> r64
+  n22 --> r64
+  n17 --> r64
+  r64 --> n27
+  r65{"AND<br/>FACTORIAL-DEGREE-FIVE-FROM-<br/>REMAINING-QUINTIC-RAY<br/>+3 omitted proof premises<br/>proved"}
+  class r65 proved
+  r65 --> n66
+  r66{"AND<br/>ORDINARY-DEGREE-FIVE-FROM-<br/>SCALAR-MINOR<br/>+1 omitted proof premise<br/>proved"}
+  class r66 proved
+  r66 --> n66
+  r67{"AND<br/>B2-REFINED-TESTS-TO-FACTORIAL-<br/>ORDINARY-DEGREE-SEVEN-SFC<br/>+6 omitted proof premises<br/>blocked"}
   class r67 open
   r67 --> n79
-  r68{"AND<br/>ORDINARY-DEGREE-SEVEN-FROM-<br/>FOUR-SUPPORT-FAMILIES<br/>+2 omitted proof premises<br/>blocked"}
+  r68{"AND<br/>DEGREE-SEVEN-GAP-SIX-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+7 omitted proof premises<br/>blocked"}
   class r68 open
   r68 --> n79
-  r69{"AND<br/>SCALED-POWER-PLUS-ONE-REFINED-<br/>TESTS-TO-FACTORIAL-ORDINARY-<br/>DEGREE-SEVEN-SFC<br/>+3 omitted proof premises<br/>blocked"}
+  r69{"AND<br/>DEGREE-SEVEN-RESIDUAL-TESTS-<br/>TO-FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+9 omitted proof premises<br/>blocked"}
   class r69 open
   r69 --> n79
-  r70{"AND<br/>SMALL-OFFSET-REFINED-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+2 omitted proof premises<br/>blocked"}
+  r70{"AND<br/>DEGREE-SEVEN-TWO-FAMILY-TESTS-<br/>TO-FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+8 omitted proof premises<br/>blocked"}
   class r70 open
   r70 --> n79
-  r71{"AND<br/>THIN-DIGIT-REFINED-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+5 omitted proof premises<br/>blocked"}
+  r71{"AND<br/>LEADING-TWO-REFINED-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+2 omitted proof premises<br/>blocked"}
   class r71 open
   r71 --> n79
-  r72{"AND<br/>ORDINARY-DEGREE-SIX-FROM-<br/>COMPLETE-ASSEMBLY<br/>+1 omitted proof premise<br/>proved"}
-  class r72 proved
-  r72 --> n71
-  r73{"AND<br/>ORDINARY-DEGREE-SIX-FROM-<br/>THREE-SUPPORT-FAMILIES<br/>+2 omitted proof premises<br/>proved"}
-  class r73 proved
-  r73 --> n71
-  r74{"AND<br/>QUINTIC-REMAINING-RAY-FROM-<br/>SCALAR-MINOR<br/>+1 omitted proof premise<br/>proved"}
-  class r74 proved
-  r74 --> n63
-  r75{"AND<br/>ROUTE-QUINTIC-RAY-VIA-ALL-<br/>PRIME-DEGREE-EMPTINESS<br/>+2 omitted proof premises<br/>blocked"}
+  r72{"AND<br/>ORDINARY-DEGREE-SEVEN-FROM-<br/>FOUR-SUPPORT-FAMILIES<br/>+2 omitted proof premises<br/>blocked"}
+  class r72 open
+  r72 --> n79
+  r73{"AND<br/>SCALED-POWER-PLUS-ONE-REFINED-<br/>TESTS-TO-FACTORIAL-ORDINARY-<br/>DEGREE-SEVEN-SFC<br/>+4 omitted proof premises<br/>blocked"}
+  class r73 open
+  r73 --> n79
+  r74{"AND<br/>SMALL-OFFSET-REFINED-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+3 omitted proof premises<br/>blocked"}
+  class r74 open
+  r74 --> n79
+  r75{"AND<br/>THIN-DIGIT-REFINED-TESTS-TO-<br/>FACTORIAL-ORDINARY-DEGREE-<br/>SEVEN-SFC<br/>+6 omitted proof premises<br/>blocked"}
   class r75 open
-  r75 --> n63
+  r75 --> n79
+  r76{"AND<br/>ORDINARY-DEGREE-SIX-FROM-<br/>COMPLETE-ASSEMBLY<br/>+1 omitted proof premise<br/>proved"}
+  class r76 proved
+  r76 --> n70
+  r77{"AND<br/>ORDINARY-DEGREE-SIX-FROM-<br/>THREE-SUPPORT-FAMILIES<br/>+2 omitted proof premises<br/>proved"}
+  class r77 proved
+  r77 --> n70
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -2143,7 +2155,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 76 routes (530 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 78 routes (554 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -2223,13 +2235,15 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 
 **Authored scope assessment:** The global XQ Airy source datum is genuinely source-dependent over the position field, but every finite-support polynomial flat position connection reflects uniform spatial boundedness. Only noncompositional target actions could bypass this compositional no-go.
 
-**Authored scope assessment:** Current scalar bounds are 26 for arbitrary-parity canonical graded Long lifts and 28 for even graded Moyal lifts. Complete degree-25 field strata include eta!=0, every eta=0 locus and both complex conic branches until exact cube elimination.
-
 **Authored scope assessment:** The adjoint Airy operator is polynomially invertible in one variable, but its XQcrossing pullback has H2=sl2(k). Three explicit coordinates govern the polynomial covariant linear equation; no bounded formal-gauge theorem follows.
 
-**Authored scope assessment:** The admitted Airy matrix point has all six relations through h4atcap25. Full covariant kernels and compatibility then exclude every cap 25h5 jet with that prescribed first coefficient. A separate corollary excludes all scales of only the displayed lower family; exceptional-scale kernels and other first data remain unclassified.
-
 **Authored scope assessment:** The centered order4/6Newton-face gate is an independent necessary-condition control. It forces a square/cube face but leaves the next coefficient free; its low total degrees are not a new counterexample frontier under the selected published degree bound.
+
+**Authored scope assessment:** Actual polynomial Ore intertwiners are bijective on k[x] and obey a strict mixed-corner shift in the stated monomial rectangle. This constrains admitted polynomial normalizations; it neither fixes the corner of an unknown Weyl pair nor covers arbitrary division-ring or matrix gauges.
+
+**Authored scope assessment:** The admitted Airy matrix point satisfies the relations through h4 at degree 25. The entire prescribed-first-coefficient family fails at h5 through degree 26, including all three new traceless second-coefficient directions. A separate degree-25 corollary concerns all scales of only the displayed lower family; other first data remain unclassified.
+
+**Authored scope assessment:** Current scalar bounds are 27 for arbitrary-parity canonical graded Long lifts and 28 for even graded Moyal lifts. Degree 27 is the exact scalar minimum for compatibility through h5. Complete degree-26 field strata retain both complex conic signs until proved zero and every declared Laurent boundary; this gives no normalization of nongraded lifts.
 
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
@@ -2247,22 +2261,22 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | DIX-EXT-PICARD-VESSIOT | verification | open | partial | Picard-Vessiot correspondence and algebraic-cover/component-group consequences used to turn the rational-line Fourier module argument into all-finite-cover irreducibility. | DIX-EXT-PICARD-VESSIOT (open) |
 | DIX-EXT-RENTSCHLER | verification | open | partial | Every nonzero locally nilpotent derivation of C[x,y] is, after a polynomial coordinate change, p(y)partial_x; exact characteristic-zero plane theorem used in replica-degree argument. | DIX-EXT-RENTSCHLER (open) |
 | DIX-EXT-ZHEGLOV-DC1-CLAIM | verification | open | partial | The main DC1 claim in arXiv:2410.06959v5 remains unverified. All-stage head alignment, Newton shape, ordinary-operator reconstruction, body-tail and auxiliary averaging require full audit. Local scalar Laurent invariance is proved, including an unrestricted exceptional correction. Centroid mismatch is at head-minus-N; the stated gap gives the head-minus-one zero if constructed. Raw tame-shear PBW terms N*binom(a,2),N*binom(c,2) change the final comparison: conditional on later bridges it forces A=ab/2 rather than giving a contradiction. One-root curve/trace data and formal gauges do not settle actual global polynomial admission. No whole theorem refutation is asserted. | DIX-EXT-ZHEGLOV-DC1-CLAIM (open) |
-| DIX-GAP-ACTUAL-POLYNOMIAL-SUBPRINCIPAL-CONSTRAINT | mathematical | open | partial | For an actual simultaneous globally polynomial subrectangular Weyl pair, determine the centered mixed Weyl corner A_W=A-ab/2 and its compatibility with all audited transport/reconstruction hypotheses. The corrected conditional final comparison forces A_W=0, and supplies no contradiction when it vanishes. Formal-unit shifts and one-place algebraic curve/trace data do not settle this global source condition. The centered order4/6rectangle gives a square/cube necessary face but leaves the next coefficient free; its total-degree gcd6 is below the selected published bound, so it is not the generic frontier. | DIX-GAP-ACTUAL-POLYNOMIAL-SUBPRINCIPAL-CONSTRAINT (open) |
+| DIX-GAP-ACTUAL-POLYNOMIAL-SUBPRINCIPAL-CONSTRAINT | mathematical | open | partial | For an actual simultaneous globally polynomial subrectangular Weyl pair, determine the centered mixed Weyl corner A_W=A-ab/2 and its compatibility with all audited transport/reconstruction hypotheses. The corrected conditional final comparison forces A_W=0, and supplies no contradiction when it vanishes. Formal-unit shifts and one-place algebraic curve/trace data do not settle this global source condition. The centered order4/6rectangle gives a square/cube necessary face but leaves the next coefficient free; its total-degree gcd6 is below the selected published bound, so it is not the generic frontier. For actual polynomial Ore intertwiners the mixed corner obeys strict integer descent, but no absolute corner value or general rational/formal admission criterion follows. | DIX-GAP-ACTUAL-POLYNOMIAL-SUBPRINCIPAL-CONSTRAINT (open) |
 | DIX-GAP-CUBIC-ISOMONODROMY-RECONSTRUCTION | mathematical | open | partial | The broad analytic obligation to justify scalar meromorphic reconstruction at every finite time for arbitrary resonant or degenerate rank-three data and all lower flows remains open. QSO3A bypasses it for already-existing algebraic branches by forward direct Stokes injectivity. Its algebraic application proves no general inverse reconstruction. | DIX-GAP-CUBIC-ISOMONODROMY-RECONSTRUCTION (open) |
 | DIX-GAP-EXACT-R-INDIVIDUAL-MATES | mathematical | open | partial | Construct actual finite S and actual generic finite D,T for the same exact R=X(2-3XQ), with Long classical S, [R,S]=0,[S,T]=h,[R,T]=0,[D,R]=h,[D,S]=0. The mate curvature may be nonzero; QEP1 removes it finitely. | DIX-GAP-EXACT-R-INDIVIDUAL-MATES (open) |
-| DIX-GAP-FINITE-GRAPH-MODULE-REALIZATION | mathematical | open | partial | For the verified canonical full Long graph, formal graph modules are completed-source free, but no actual uncompleted stable finite source lattice is supplied. Find a finite bimodule presentation with a monic exact source-PBW-times-finite-tail normal basis, globally admitted target actions, correct scalar graph reduction and common finite bound; prove any scalar realization needed for DC1/DC2. Coherence+h-flatness alone can hide parameter-polar infinity branches. Unchanged graph constraints and flag-preserving triangular corrections do not bypass the scalar problem. A concrete polynomial rank-two XQ Airy source datum is admitted, but every compositional image under any finite-support polynomial position-flat connection reflects uniform boundedness. Thus source connection admission alone does not give finite target actions. The Airy datum now has an actual cap 25 positive matrix jet through h4, but no cap 25h5 jet with its prescribed first coefficient. This is not a classification of all matrix first data. | DIX-GAP-FINITE-GRAPH-MODULE-REALIZATION (open) |
+| DIX-GAP-FINITE-GRAPH-MODULE-REALIZATION | mathematical | open | partial | For the verified canonical full Long graph, formal graph modules are completed-source free, but no actual uncompleted stable finite source lattice is supplied. Find a finite bimodule presentation with a monic exact source-PBW-times-finite-tail normal basis, globally admitted target actions, correct scalar graph reduction and common finite bound; prove any scalar realization needed for DC1/DC2. Coherence+h-flatness alone can hide parameter-polar infinity branches. Unchanged graph constraints and flag-preserving triangular corrections do not bypass the scalar problem. A concrete polynomial rank-two XQ Airy source datum is admitted, but every compositional image under any finite-support polynomial position-flat connection reflects uniform boundedness. Thus source connection admission alone does not give finite target actions. The Airy datum now has an actual cap 25 positive matrix jet through h4, but no cap 25h5 jet with its prescribed first coefficient. This is not a classification of all matrix first data. The complete prescribed-Airy first-coefficient family is excluded through degree 26 at h5, after retaining all three new traceless second-coefficient directions. | DIX-GAP-FINITE-GRAPH-MODULE-REALIZATION (open) |
 | DIX-GAP-GENERAL-CARRIER | mathematical | open | partial | Construct or exclude all spatially bounded rank-two full Long lifts with genuinely mixed coefficients, deformed/nonpositional first images and general matrix/projective carriers; scalar ansatz obstructions and formal all-order existence do not settle this. | DIX-GAP-GENERAL-CARRIER (open) |
 | DIX-GAP-LONG-SPECTRAL-CERTIFICATE | mathematical | open | partial | Construct one actual finite commuting deformation of the Long positions together with actual generic individual mates and finitely many certified positive spectral ranks in exact finite Weyl polarizations whose gcd is one or two. All certificates must concern this same pair. | DIX-GAP-LONG-SPECTRAL-CERTIFICATE (open) |
-| DIX-GAP-NONCONSTANT-MATRIX-TRANSPORT | mathematical | open | partial | Construct a different generic matrix/source representation beyond all constant Euler corrections JI-etaB and beyond single-branch separable fixed scalar-polynomial constraints. Prove finite original global PBW admission of all four images, controlled Long classical data and a scalar realization mechanism. The fixed shifted generic fraction module has no admissible full coherent lattice; changing only its basis is closed. Genuinely source-dependent matrix coefficients, repeated classical spectral relations and other source architectures remain unclassified. A concrete polynomial rank-two XQ Airy source datum is admitted, but every compositional image under any finite-support polynomial position-flat connection reflects uniform boundedness. Thus source connection admission alone does not give finite target actions. The Airy datum now has an actual cap 25 positive matrix jet through h4, but no cap 25h5 jet with its prescribed first coefficient. This is not a classification of all matrix first data. | DIX-GAP-NONCONSTANT-MATRIX-TRANSPORT (open) |
+| DIX-GAP-NONCONSTANT-MATRIX-TRANSPORT | mathematical | open | partial | Construct a different generic matrix/source representation beyond all constant Euler corrections JI-etaB and beyond single-branch separable fixed scalar-polynomial constraints. Prove finite original global PBW admission of all four images, controlled Long classical data and a scalar realization mechanism. The fixed shifted generic fraction module has no admissible full coherent lattice; changing only its basis is closed. Genuinely source-dependent matrix coefficients, repeated classical spectral relations and other source architectures remain unclassified. A concrete polynomial rank-two XQ Airy source datum is admitted, but every compositional image under any finite-support polynomial position-flat connection reflects uniform boundedness. Thus source connection admission alone does not give finite target actions. The Airy datum now has an actual cap 25 positive matrix jet through h4, but no cap 25h5 jet with its prescribed first coefficient. This is not a classification of all matrix first data. The complete prescribed-Airy first-coefficient family is excluded through degree 26 at h5, after retaining all three new traceless second-coefficient directions. | DIX-GAP-NONCONSTANT-MATRIX-TRANSPORT (open) |
 | DIX-GAP-NONHOMOGENEOUS-COVER-ADMISSION | mathematical | open | partial | An actual scalar bounded globally admitted Long tuple remains to be constructed. The exact shifted rational matrix tuple has no globally admitted full coherent original lattice, and its invariant scalar extraction is excluded. A successor must change the generic representation, not merely basis, constant sector shifts, or a separable scalar root ordering. No universal theorem normalizes every bounded lift into these closed architectures. | DIX-GAP-NONHOMOGENEOUS-COVER-ADMISSION (open) |
 | DIX-GAP-RANK2-BOUNDED-GAUGE | mathematical | open | partial | Prove the proposed bounded canonical comparison for every rank-two cotangent formal identity class with bounded forward images; the retained source proves this assertion would imply JC2, so it cannot be assumed from formal equivalence. | DIX-GAP-RANK2-BOUNDED-GAUGE (open) |
 | DIX-GAP-SHIFTED-EULER-SCALAR-REALIZATION | mathematical | open | partial | A new matrix carrier still requires a proved scalar realization preserving the original source algebra, all Weyl relations, finite spatial support and Long classical data. The fixed shifted model has no invariant source-division sector and no full global coherent lattice. Separably retaining one scalar classical branch in a fixed scalar-coefficient polynomial equation forces an actual scalar solution. Other mechanisms and genuinely changed transports are unclassified. | DIX-GAP-SHIFTED-EULER-SCALAR-REALIZATION (open) |
 | DIX-GAP-SHIFTED-EULER-TRANSPORT-COMPATIBILITY | mathematical | open | partial | For a genuinely new generic matrix/source representation, prove the changed quantum transport and the required classical Long source matching. The old fixed scalar cubic pair is not retained by the shifted model, and all full globally admitted lattices of its generic representation are excluded; its rational matrix identities remain valid. | DIX-GAP-SHIFTED-EULER-TRANSPORT-COMPATIBILITY (open) |
 | GAP-ACTUAL-LONG-CENTRALIZER | mathematical | open | partial | Supply an actual Long pair with individual mates satisfying the stated polynomial classical centralizer and actual module-finite/birational hypotheses, or an actual radical/Galois relation meeting the unit/constants assumptions. Abstract finite field degree or formal completion is insufficient. | GAP-ACTUAL-LONG-CENTRALIZER (open) |
-| GAP-DIXMIER-2 | mathematical | open | partial | DC1/DC2 and a bounded full scalar Long lift remain open. Scoped obstructions close the scalar homogeneous Euler route, admission of the fixed shifted generic matrix representation, constant Euler sectors, the stated scalar regular/cubic/Laurent families, all graded integer-power Long jets through degree 25, even graded jets through cap 27 at h7, the nonzero small D0 first-image deformation, and nonlinear exact polynomial reparametrizations of R. None of these proves a nongraded nonlifting theorem, an arbitrary matrix classification or a DC1/DC2 resolution. The prescribed Airy first matrix coefficient and the displayed scaled lower family are now excluded at cap 25; other nonscalar constructions remain open. | GAP-DIXMIER-2 (open) |
+| GAP-DIXMIER-2 | mathematical | open | partial | DC1/DC2 and a bounded full Long lift remain open. The exact scalar spectrum excludes the proposed Euler factorization in the actual scalar division ring; admission of the fixed shifted generic matrix representation is separately closed. The stated regular, cubic and Laurent-face families, small D0 deformation and exact polynomial reparametrizations of R remain subject to their scoped obstructions. Canonical graded scalar jets of degree at most 26 fail at h5; even degree-at-most-27 jets fail at h7. The prescribed Airy first matrix datum also fails at h5 through degree 26, while the scaled displayed-family theorem remains at degree 25. These results do not classify nongraded scalar lifts or arbitrary nonscalar constructions. | GAP-DIXMIER-2 (open) |
 | GOAL-DC1 | goal | open | partial | Every endomorphism of the first Weyl algebra over C is an automorphism. | GOAL-DC1 (open) |
 | GOAL-DC2 | goal | open | partial | Every endomorphism of the second Weyl algebra over C is an automorphism. | GOAL-DC2 (open) |
-| GAP-BOUNDED-FULL-LIFT | mathematical | open | partial | Construct a full Weyl lift of a noninvertible polynomial symplectic map of affine four-space with one common finite ordinary spatial-degree bound. Canonical Long graded scalar lifts require degree at least26 with arbitrary parity, or at least28 for even Moyal symbols. The complete cap 25 matrix family with prescribed Airy first coefficient is excluded through h5, as is a displayed scaled lower family; other matrix first data remain open. Finite positive h4jets and one-order covariant solvers do not establish bounded realization. | DIX-GAP-LONG-SPECTRAL-CERTIFICATE (open); DIX-GAP-EXACT-R-INDIVIDUAL-MATES (open) |
+| GAP-BOUNDED-FULL-LIFT | mathematical | open | partial | Construct a full Weyl lift of a noninvertible polynomial symplectic map of affine four-space with one common finite ordinary spatial-degree bound. Canonical Long graded scalar lifts require degree at least 27 with arbitrary parity, or at least 28 for even Moyal symbols. Degree 27 is the sharp scalar minimum through h5 only. Matrix lifts with the prescribed Airy first coefficient require degree at least 27; the displayed scaled lower-family theorem remains at degree 25. Other matrix first data remain open. Finite positive jets and one-order covariant solvers do not establish bounded realization. | DIX-GAP-LONG-SPECTRAL-CERTIFICATE (open); DIX-GAP-EXACT-R-INDIVIDUAL-MATES (open) |
 | GOAL-DC2-FAILURE | goal | open | partial | There exists a nonsurjective endomorphism of the second Weyl algebra over C. | DIX-GAP-LONG-SPECTRAL-CERTIFICATE (open); DIX-GAP-EXACT-R-INDIVIDUAL-MATES (open) |
 
 ```mermaid
@@ -2345,99 +2359,99 @@ flowchart LR
   class n22 proved
   n23["DIX-AIRY-CAP25-COVARIANT-<br/>KERNEL-COMPLETENESS<br/>proved"]
   class n23 proved
-  n24["DIX-CONDITIONAL-LAURENT-<br/>COEFFICIENT-INVARIANCE<br/>proved"]
+  n24["DIX-COTANGENT-TRANSFER<br/>proved"]
   class n24 proved
-  n25["DIX-DEFORMED-FIRST-IMAGE-<br/>CENTRALIZER<br/>proved"]
+  n25["DIX-QSC1<br/>proved"]
   class n25 proved
-  n26["DIX-COHERENT-GRAPH-POLAR-<br/>BRANCH<br/>proved"]
+  n26["FOUND-F1<br/>proved"]
   class n26 proved
-  n27["DIX-COTANGENT-TRANSFER<br/>proved"]
-  class n27 proved
-  n28["DIX-QSC1<br/>proved"]
+  n27["HESS-MR-S7<br/>open"]
+  class n27 open
+  n28["DIX-ADJOINT-AIRY-XQ-CROSSING-<br/>COHOMOLOGY<br/>proved"]
   class n28 proved
-  n29["FOUND-F1<br/>proved"]
+  n29["DIX-AIRY-EMBEDDING-STRICT-PBW<br/>proved"]
   class n29 proved
-  n30["HESS-MR-S7<br/>open"]
-  class n30 open
-  n31["DIX-ADJOINT-AIRY-XQ-CROSSING-<br/>COHOMOLOGY<br/>proved"]
+  n30["DIX-AIRY-LONG-<br/>CAP25-POSITIVE-H4-MATRIX-JET<br/>proved"]
+  class n30 proved
+  n31["DIX-QFC1<br/>proved"]
   class n31 proved
-  n32["DIX-AIRY-EMBEDDING-STRICT-PBW<br/>proved"]
+  n32["DIX-QFC1-S1<br/>proved"]
   class n32 proved
-  n33["DIX-AIRY-LONG-<br/>CAP25-POSITIVE-H4-MATRIX-JET<br/>proved"]
+  n33["DIX-QFC1-S2<br/>proved"]
   class n33 proved
-  n34["DIX-QFC1<br/>proved"]
+  n34["DIX-QFC1-S3<br/>proved"]
   class n34 proved
-  n35["DIX-QFC1-S1<br/>proved"]
+  n35["DIX-QFC1-S4<br/>proved"]
   class n35 proved
-  n36["DIX-QFC1-S2<br/>proved"]
+  n36["DIX-QFC1-S5<br/>proved"]
   class n36 proved
-  n37["DIX-QFC1-S3<br/>proved"]
+  n37["DIX-QFC1-S6<br/>proved"]
   class n37 proved
-  n38["DIX-QFC1-S4<br/>proved"]
+  n38["DIX-QFC1-S7<br/>proved"]
   class n38 proved
-  n39["DIX-QFC1-S5<br/>proved"]
+  n39["DIX-QFC1-S9<br/>proved"]
   class n39 proved
-  n40["DIX-QFC1-S6<br/>proved"]
+  n40["DIX-CENTERED-46-RECTANGLE-<br/>NEWTON-FACE-GATE<br/>proved"]
   class n40 proved
-  n41["DIX-QFC1-S7<br/>proved"]
+  n41["DIX-QNI1<br/>proved"]
   class n41 proved
-  n42["DIX-QFC1-S9<br/>proved"]
+  n42["DIX-QNI1-S1<br/>proved"]
   class n42 proved
-  n43["DIX-CENTERED-46-RECTANGLE-<br/>NEWTON-FACE-GATE<br/>proved"]
+  n43["DIX-QNI1-S2<br/>proved"]
   class n43 proved
-  n44["DIX-QNI1<br/>proved"]
+  n44["DIX-QNI1-S3<br/>proved"]
   class n44 proved
-  n45["DIX-QNI1-S1<br/>proved"]
+  n45["DIX-QNI1-S4<br/>proved"]
   class n45 proved
-  n46["DIX-QNI1-S2<br/>proved"]
+  n46["DIX-QNI1-S5<br/>proved"]
   class n46 proved
-  n47["DIX-QNI1-S3<br/>proved"]
+  n47["DIX-QNI1-S6<br/>proved"]
   class n47 proved
-  n48["DIX-QNI1-S4<br/>proved"]
+  n48["DIX-QNI1-S7<br/>proved"]
   class n48 proved
-  n49["DIX-QNI1-S5<br/>proved"]
+  n49["DIX-SEED-COFACTOR-BOUND<br/>proved"]
   class n49 proved
-  n50["DIX-QNI1-S6<br/>proved"]
+  n50["DIX-AIRY-LONG-COVARIANT-<br/>CORRECTION-SOLVER<br/>proved"]
   class n50 proved
-  n51["DIX-QNI1-S7<br/>proved"]
+  n51["DIX-AIRY-CAP26-COVARIANT-<br/>KERNEL-COMPLETENESS<br/>proved"]
   class n51 proved
-  n52["DIX-SEED-COFACTOR-BOUND<br/>proved"]
+  n52["DIX-AIRY-<br/>CAP25-ENTIRE-H4-LOWER-FAMILY<br/>proved"]
   class n52 proved
-  n53["DIX-AIRY-LONG-COVARIANT-<br/>CORRECTION-SOLVER<br/>proved"]
+  n53["DIX-AIRY-LONG-CAP25-FIXED-<br/>LOWER-H5-OBSTRUCTION<br/>proved"]
   class n53 proved
-  n54["DIX-AIRY-<br/>CAP25-ENTIRE-H4-LOWER-FAMILY<br/>proved"]
+  n54["DIX-AUXILIARY-PARAMETER-<br/>POLYNOMIAL-ORE-RIGIDITY<br/>proved"]
   class n54 proved
-  n55["DIX-AIRY-LONG-CAP25-FIXED-<br/>LOWER-H5-OBSTRUCTION<br/>proved"]
+  n55["DIX-QET1<br/>proved"]
   class n55 proved
-  n56["DIX-DEFORMED-FIRST-IMAGE-<br/>FORMAL-UNBOUNDED<br/>proved"]
+  n56["DIX-QET1-S1<br/>proved"]
   class n56 proved
-  n57["DIX-QET1<br/>proved"]
+  n57["DIX-QET1-S2<br/>proved"]
   class n57 proved
-  n58["DIX-QET1-S1<br/>proved"]
+  n58["DIX-QET1-S3<br/>proved"]
   class n58 proved
-  n59["DIX-QET1-S2<br/>proved"]
+  n59["DIX-QET1-S4<br/>proved"]
   class n59 proved
-  n60["DIX-QET1-S3<br/>proved"]
+  n60["DIX-QET1-S5<br/>proved"]
   class n60 proved
-  n61["DIX-QET1-S4<br/>proved"]
+  n61["DIX-QET1-S6<br/>proved"]
   class n61 proved
-  n62["DIX-QET1-S5<br/>proved"]
+  n62["DIX-QET1-S8<br/>proved"]
   class n62 proved
-  n63["DIX-QET1-S6<br/>proved"]
+  n63["DIX-RANK3-FINITE-<br/>COUNTEREXAMPLE<br/>proved"]
   class n63 proved
-  n64["DIX-QET1-S8<br/>proved"]
+  n64["DIX-AIRY-<br/>CAP26-ENTIRE-H4-LOWER-FAMILY<br/>proved"]
   class n64 proved
-  n65["DIX-RANK3-FINITE-<br/>COUNTEREXAMPLE<br/>proved"]
+  n65["DIX-AIRY-FIRST-COEFFICIENT-<br/>CAP25-H5-OBSTRUCTION<br/>proved"]
   class n65 proved
-  n66["DIX-AIRY-FIRST-COEFFICIENT-<br/>CAP25-H5-OBSTRUCTION<br/>proved"]
+  n66["DIXMIER-EULER-REDUCTION<br/>proved"]
   class n66 proved
-  n67["DIXMIER-EULER-REDUCTION<br/>proved"]
+  n67["DIXMIER-CENTRALIZER-COMPLETION<br/>proved"]
   class n67 proved
-  n68["DIXMIER-CENTRALIZER-COMPLETION<br/>proved"]
-  class n68 proved
-  n69["GAP-BOUNDED-FULL-LIFT<br/>open<br/>OR routes"]
-  class n69 open
-  n70["DIXMIER-SCALAR-MATES<br/>proved"]
+  n68["GAP-BOUNDED-FULL-LIFT<br/>open<br/>OR routes"]
+  class n68 open
+  n69["DIXMIER-SCALAR-MATES<br/>proved"]
+  class n69 proved
+  n70["DIX-AIRY-FIRST-COEFFICIENT-<br/>CAP26-H5-OBSTRUCTION<br/>proved"]
   class n70 proved
   n71["DIXMIER-LAURENT-FACES-AND-<br/>ADMISSION<br/>proved"]
   class n71 proved
@@ -2466,52 +2480,52 @@ flowchart LR
   r7 --> n76
   n74 --> r8
   r8 --> n76
-  r9{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+9 omitted proof premises<br/>proved"}
+  r9{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+11 omitted proof premises<br/>proved"}
   class r9 proved
-  n34 --> r9
-  n57 --> r9
-  n25 --> r9
-  n56 --> r9
-  r9 --> n68
+  n31 --> r9
+  n55 --> r9
+  r9 --> n67
   r10{"AND<br/>SOURCE-ROUTE-DIXMIER-CUBIC-<br/>COVER-COMPATIBILITY<br/>+25 omitted proof premises<br/>proved"}
   class r10 proved
   r10 --> n78
   r11{"AND<br/>SOURCE-ROUTE-DIXMIER-EULER-<br/>REDUCTION<br/>+2 omitted proof premises<br/>proved"}
   class r11 proved
-  r11 --> n67
-  r12{"AND<br/>SOURCE-ROUTE-DIXMIER-FORMAL-<br/>LIFTING<br/>+42 omitted proof premises<br/>proved"}
+  r11 --> n66
+  r12{"AND<br/>SOURCE-ROUTE-DIXMIER-FORMAL-<br/>LIFTING<br/>+48 omitted proof premises<br/>proved"}
   class r12 proved
-  n32 --> r12
-  n26 --> r12
+  n29 --> r12
   n22 --> r12
-  n31 --> r12
+  n28 --> r12
+  n50 --> r12
+  n30 --> r12
   n53 --> r12
-  n33 --> r12
-  n55 --> r12
   n23 --> r12
-  n54 --> r12
-  n66 --> r12
+  n52 --> r12
+  n65 --> r12
+  n51 --> r12
+  n64 --> r12
+  n70 --> r12
   r12 --> n77
   r13{"AND<br/>SOURCE-ROUTE-DIXMIER-LAURENT-<br/>FACES-AND-ADMISSION<br/>+20 omitted proof premises<br/>proved"}
   class r13 proved
   r13 --> n71
-  r14{"AND<br/>SOURCE-ROUTE-DIXMIER-SCALAR-<br/>MATES<br/>+23 omitted proof premises<br/>proved"}
+  r14{"AND<br/>SOURCE-ROUTE-DIXMIER-SCALAR-<br/>MATES<br/>+26 omitted proof premises<br/>proved"}
   class r14 proved
-  n24 --> r14
-  n43 --> r14
-  r14 --> n70
+  n40 --> r14
+  n54 --> r14
+  r14 --> n69
   r15{"AND<br/>DIX-GAP-EXACT-R-INDIVIDUAL-<br/>MATES-TO-BOUNDED-LIFT<br/>+1 omitted proof premise<br/>blocked"}
   class r15 open
   n7 --> r15
-  r15 --> n69
+  r15 --> n68
   r16{"AND<br/>DIX-GAP-LONG-SPECTRAL-<br/>CERTIFICATE-TO-BOUNDED-LIFT<br/>+1 omitted proof premise<br/>blocked"}
   class r16 open
   n10 --> r16
-  r16 --> n69
+  r16 --> n68
   r17{"AND<br/>BOUNDED-LIFT-TO-DC2-FAILURE<br/>blocked"}
   class r17 open
   n77 --> r17
-  n69 --> r17
+  n68 --> r17
   r17 --> n79
   r18{"AND<br/>GENERIC-FIRST-VELOCITY-<br/>LANDING-TO-JC2<br/>+3 omitted proof premises<br/>blocked"}
   class r18 open
@@ -2523,201 +2537,204 @@ flowchart LR
   r19 --> n74
   r20{"AND<br/>DERIVE-DIX-COTANGENT-TRANSFER<br/>+1 pinned source<br/>proved"}
   class r20 proved
-  r20 --> n27
+  r20 --> n24
   r21{"AND<br/>DERIVE-DIX-QET1<br/>+1 pinned source<br/>proved"}
   class r21 proved
-  n34 --> r21
+  n31 --> r21
   n17 --> r21
   n16 --> r21
-  r21 --> n57
+  r21 --> n55
   r22{"AND<br/>DERIVE-DIX-QET1-S1<br/>+1 pinned source<br/>proved"}
   class r22 proved
-  n34 --> r22
+  n31 --> r22
   n17 --> r22
   n16 --> r22
-  r22 --> n58
+  r22 --> n56
   r23{"AND<br/>DERIVE-DIX-QET1-S2<br/>+1 pinned source<br/>proved"}
   class r23 proved
-  n34 --> r23
+  n31 --> r23
   n17 --> r23
   n16 --> r23
-  r23 --> n59
+  r23 --> n57
   r24{"AND<br/>DERIVE-DIX-QET1-S3<br/>+1 pinned source<br/>proved"}
   class r24 proved
-  n34 --> r24
+  n31 --> r24
   n17 --> r24
   n16 --> r24
-  r24 --> n60
+  r24 --> n58
   r25{"AND<br/>DERIVE-DIX-QET1-S4<br/>+1 pinned source<br/>proved"}
   class r25 proved
-  n34 --> r25
+  n31 --> r25
   n17 --> r25
   n16 --> r25
-  r25 --> n61
+  r25 --> n59
   r26{"AND<br/>DERIVE-DIX-QET1-S5<br/>+1 pinned source<br/>proved"}
   class r26 proved
-  n34 --> r26
+  n31 --> r26
   n17 --> r26
   n16 --> r26
-  r26 --> n62
+  r26 --> n60
   r27{"AND<br/>DERIVE-DIX-QET1-S6<br/>+1 pinned source<br/>proved"}
   class r27 proved
-  n34 --> r27
+  n31 --> r27
   n17 --> r27
   n16 --> r27
-  r27 --> n63
+  r27 --> n61
   r28{"AND<br/>DERIVE-DIX-QET1-S8<br/>+1 pinned source<br/>proved"}
   class r28 proved
-  n34 --> r28
+  n31 --> r28
   n17 --> r28
   n16 --> r28
-  r28 --> n64
+  r28 --> n62
   r29{"AND<br/>DERIVE-DIX-QFC1<br/>+1 pinned source<br/>proved"}
   class r29 proved
-  n28 --> r29
+  n25 --> r29
   n16 --> r29
-  r29 --> n34
+  r29 --> n31
   r30{"AND<br/>DERIVE-DIX-QFC1-S1<br/>+1 pinned source<br/>proved"}
   class r30 proved
-  n28 --> r30
+  n25 --> r30
   n16 --> r30
-  r30 --> n35
+  r30 --> n32
   r31{"AND<br/>DERIVE-DIX-QFC1-S2<br/>+1 pinned source<br/>proved"}
   class r31 proved
-  n28 --> r31
+  n25 --> r31
   n16 --> r31
-  r31 --> n36
+  r31 --> n33
   r32{"AND<br/>DERIVE-DIX-QFC1-S3<br/>+1 pinned source<br/>proved"}
   class r32 proved
-  n28 --> r32
+  n25 --> r32
   n16 --> r32
-  r32 --> n37
+  r32 --> n34
   r33{"AND<br/>DERIVE-DIX-QFC1-S4<br/>+1 pinned source<br/>proved"}
   class r33 proved
-  n28 --> r33
+  n25 --> r33
   n16 --> r33
-  r33 --> n38
+  r33 --> n35
   r34{"AND<br/>DERIVE-DIX-QFC1-S5<br/>+1 pinned source<br/>proved"}
   class r34 proved
-  n28 --> r34
+  n25 --> r34
   n16 --> r34
-  r34 --> n39
+  r34 --> n36
   r35{"AND<br/>DERIVE-DIX-QFC1-S6<br/>+1 pinned source<br/>proved"}
   class r35 proved
-  n28 --> r35
+  n25 --> r35
   n16 --> r35
-  r35 --> n40
+  r35 --> n37
   r36{"AND<br/>DERIVE-DIX-QFC1-S7<br/>+1 pinned source<br/>proved"}
   class r36 proved
-  n28 --> r36
+  n25 --> r36
   n16 --> r36
-  r36 --> n41
+  r36 --> n38
   r37{"AND<br/>DERIVE-DIX-QFC1-S9<br/>+1 pinned source<br/>proved"}
   class r37 proved
-  n28 --> r37
+  n25 --> r37
   n16 --> r37
-  r37 --> n42
+  r37 --> n39
   r38{"AND<br/>DERIVE-DIX-QNI1<br/>+1 pinned source<br/>proved"}
   class r38 proved
-  n29 --> r38
-  r38 --> n44
+  n26 --> r38
+  r38 --> n41
   r39{"AND<br/>DERIVE-DIX-QNI1-S1<br/>+1 pinned source<br/>proved"}
   class r39 proved
-  n29 --> r39
-  r39 --> n45
+  n26 --> r39
+  r39 --> n42
   r40{"AND<br/>DERIVE-DIX-QNI1-S2<br/>+1 pinned source<br/>proved"}
   class r40 proved
-  n29 --> r40
-  r40 --> n46
+  n26 --> r40
+  r40 --> n43
   r41{"AND<br/>DERIVE-DIX-QNI1-S3<br/>+1 pinned source<br/>proved"}
   class r41 proved
-  n29 --> r41
-  r41 --> n47
+  n26 --> r41
+  r41 --> n44
   r42{"AND<br/>DERIVE-DIX-QNI1-S4<br/>+1 pinned source<br/>proved"}
   class r42 proved
-  n29 --> r42
-  r42 --> n48
+  n26 --> r42
+  r42 --> n45
   r43{"AND<br/>DERIVE-DIX-QNI1-S5<br/>+1 pinned source<br/>proved"}
   class r43 proved
-  n29 --> r43
-  r43 --> n49
+  n26 --> r43
+  r43 --> n46
   r44{"AND<br/>DERIVE-DIX-QNI1-S6<br/>+1 pinned source<br/>proved"}
   class r44 proved
-  n29 --> r44
-  r44 --> n50
+  n26 --> r44
+  r44 --> n47
   r45{"AND<br/>DERIVE-DIX-QNI1-S7<br/>+1 pinned source<br/>proved"}
   class r45 proved
-  n29 --> r45
-  r45 --> n51
+  n26 --> r45
+  r45 --> n48
   r46{"AND<br/>DERIVE-DIX-QSC1<br/>+1 pinned source<br/>proved"}
   class r46 proved
-  r46 --> n28
+  r46 --> n25
   r47{"AND<br/>DERIVE-DIX-RANK3-FINITE-<br/>COUNTEREXAMPLE<br/>proved"}
   class r47 proved
-  n29 --> r47
-  n27 --> r47
-  n52 --> r47
-  r47 --> n65
+  n26 --> r47
+  n24 --> r47
+  n49 --> r47
+  r47 --> n63
   r48{"AND<br/>DERIVE-DIX-SEED-COFACTOR-BOUND<br/>+1 pinned source<br/>proved"}
   class r48 proved
-  n29 --> r48
-  r48 --> n52
+  n26 --> r48
+  r48 --> n49
   r49{"AND<br/>DERIVE-FOUND-F1<br/>+1 pinned source<br/>proved"}
   class r49 proved
-  r49 --> n29
+  r49 --> n26
   r50{"AND<br/>DERIVE-HESS-MR-S7<br/>+1 pinned source<br/>blocked"}
   class r50 open
   n3 --> r50
-  r50 --> n30
+  r50 --> n27
   r51{"AND<br/>DERIVE-DIX-ADJOINT-AIRY-<br/>POLYNOMIAL-INVERSE<br/>+1 omitted proof premise<br/>proved"}
   class r51 proved
   r51 --> n22
   r52{"AND<br/>DERIVE-DIX-ADJOINT-AIRY-XQ-<br/>CROSSING-COHOMOLOGY<br/>+1 omitted proof premise<br/>proved"}
   class r52 proved
   n22 --> r52
-  r52 --> n31
+  r52 --> n28
   r53{"AND<br/>DERIVE-DIX-AIRY-<br/>CAP25-COVARIANT-KERNEL-<br/>COMPLETENESS<br/>+1 omitted proof premise<br/>proved"}
   class r53 proved
   r53 --> n23
   r54{"AND<br/>DERIVE-DIX-AIRY-<br/>CAP25-ENTIRE-H4-LOWER-FAMILY<br/>+1 omitted proof premise<br/>proved"}
   class r54 proved
   n23 --> r54
-  n33 --> r54
-  r54 --> n54
-  r55{"AND<br/>DERIVE-DIX-AIRY-EMBEDDING-<br/>STRICT-PBW<br/>+2 omitted proof premises<br/>proved"}
+  n30 --> r54
+  r54 --> n52
+  r55{"AND<br/>DERIVE-DIX-AIRY-<br/>CAP26-COVARIANT-KERNEL-<br/>COMPLETENESS<br/>+2 omitted proof premises<br/>proved"}
   class r55 proved
-  r55 --> n32
-  r56{"AND<br/>DERIVE-DIX-AIRY-FIRST-<br/>COEFFICIENT-<br/>CAP25-H5-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
+  r55 --> n51
+  r56{"AND<br/>DERIVE-DIX-AIRY-<br/>CAP26-ENTIRE-H4-LOWER-FAMILY<br/>+1 omitted proof premise<br/>proved"}
   class r56 proved
-  n54 --> r56
-  n55 --> r56
-  r56 --> n66
-  r57{"AND<br/>DERIVE-DIX-AIRY-LONG-<br/>CAP25-FIXED-<br/>LOWER-H5-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
+  n51 --> r56
+  n30 --> r56
+  r56 --> n64
+  r57{"AND<br/>DERIVE-DIX-AIRY-EMBEDDING-<br/>STRICT-PBW<br/>+2 omitted proof premises<br/>proved"}
   class r57 proved
-  n33 --> r57
-  r57 --> n55
-  r58{"AND<br/>DERIVE-DIX-AIRY-LONG-<br/>CAP25-POSITIVE-H4-MATRIX-JET<br/>+2 omitted proof premises<br/>proved"}
+  r57 --> n29
+  r58{"AND<br/>DERIVE-DIX-AIRY-FIRST-<br/>COEFFICIENT-<br/>CAP25-H5-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
   class r58 proved
-  r58 --> n33
-  r59{"AND<br/>DERIVE-DIX-AIRY-LONG-<br/>COVARIANT-CORRECTION-SOLVER<br/>+2 omitted proof premises<br/>proved"}
+  n52 --> r58
+  n53 --> r58
+  r58 --> n65
+  r59{"AND<br/>DERIVE-DIX-AIRY-FIRST-<br/>COEFFICIENT-<br/>CAP26-H5-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
   class r59 proved
-  n31 --> r59
-  r59 --> n53
-  r60{"AND<br/>DERIVE-DIX-<br/>CENTERED-46-RECTANGLE-NEWTON-<br/>FACE-GATE<br/>+2 omitted proof premises<br/>proved"}
+  n64 --> r59
+  r59 --> n70
+  r60{"AND<br/>DERIVE-DIX-AIRY-LONG-<br/>CAP25-FIXED-<br/>LOWER-H5-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
   class r60 proved
-  r60 --> n43
-  r61{"AND<br/>DERIVE-DIX-COHERENT-GRAPH-<br/>POLAR-BRANCH<br/>+1 omitted proof premise<br/>proved"}
+  n30 --> r60
+  r60 --> n53
+  r61{"AND<br/>DERIVE-DIX-AIRY-LONG-<br/>CAP25-POSITIVE-H4-MATRIX-JET<br/>+2 omitted proof premises<br/>proved"}
   class r61 proved
-  r61 --> n26
-  r62{"AND<br/>DERIVE-DIX-CONDITIONAL-<br/>LAURENT-COEFFICIENT-INVARIANCE<br/>+1 omitted proof premise<br/>proved"}
+  r61 --> n30
+  r62{"AND<br/>DERIVE-DIX-AIRY-LONG-<br/>COVARIANT-CORRECTION-SOLVER<br/>+2 omitted proof premises<br/>proved"}
   class r62 proved
-  r62 --> n24
-  r63{"AND<br/>DERIVE-DIX-DEFORMED-FIRST-<br/>IMAGE-CENTRALIZER<br/>+1 omitted proof premise<br/>proved"}
+  n28 --> r62
+  r62 --> n50
+  r63{"AND<br/>DERIVE-DIX-AUXILIARY-<br/>PARAMETER-POLYNOMIAL-ORE-<br/>RIGIDITY<br/>+2 omitted proof premises<br/>proved"}
   class r63 proved
-  r63 --> n25
-  r64{"AND<br/>DERIVE-DIX-DEFORMED-FIRST-<br/>IMAGE-FORMAL-UNBOUNDED<br/>+2 omitted proof premises<br/>proved"}
+  r63 --> n54
+  r64{"AND<br/>DERIVE-DIX-<br/>CENTERED-46-RECTANGLE-NEWTON-<br/>FACE-GATE<br/>+2 omitted proof premises<br/>proved"}
   class r64 proved
-  r64 --> n56
+  r64 --> n40
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -2726,7 +2743,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 65 routes (386 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 65 routes (400 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -2784,6 +2801,10 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 
 **Authored scope assessment:** For every n>=0, actual double-cover homology is cyclic Z/(117+366n), all exteriors/order-twoorbifolds arehyperbolic, and torsion-generator rank m2 is4. Anyabstractorbifoldepi ontoGammaKn needs sourcebridge>=4. CurrentBKNv3parity-compatible theorem excludes nonzeroDetarborescentpi-domination, whileU4shows det0is essential. Everyplat hasunit scalarBuraugcd. No ordinaryrank4, meridionaltameness or exhaustivepriority conclusion.
 
+**Authored scope assessment:** For alln, the literal four-meridian Foxideal has unit scalar image in Z[t,t^-1] and unit fixed-A8 image in F2[A8]. A canonicalintegerlift has nonzero odd regular determinant d, so every unital fixed-A8 model killingtheideal must have positiveodd characteristic dividingd; allchar0 andchar2 models fail, as do nilpotent2 lifts and localmodels with thatchar2 residuequotient. Numericald, otherkernels, ordinaryrank andtameness remainunresolved.
+
+**Authored scope assessment:** For every Kn, the literal first Fox row generates the whole integral group ring under the fixed quotients onto A8 and A8 x C2. Thus all coefficient models through either map fail, in every characteristic. The unit also lifts through finite normal p-group kernels over rings in which p is nilpotent. Other quotient kernels, unrestricted matrix models, and the ordinary rank remain open.
+
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
 | [MRC-NAMED-EXAMPLES](meridional-rank/representations/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) | proved | partial | none in declared routes |
@@ -2828,6 +2849,8 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | [MRC-COFINITE-PRIME-FAMILY-NONGRAPH](meridional-rank/representations/COFINITE_PRIME_FAMILY_NONGRAPH.tex) | proved | partial | none in declared routes |
 | [MRC-ALL-PARAMETER-HYPERBOLIC-DOUBLE-COVERS](meridional-rank/representations/ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS.tex) | proved | partial | none in declared routes |
 | [MRC-PRIME-FAMILY-GEOMETRY-SCOPE](meridional-rank/representations/PRIME_FAMILY_GEOMETRY_AND_SCOPE.tex) | proved | partial | none in declared routes |
+| [MRC-UNIFORM-FOX-IDEAL-MODEL-BARRIERS](meridional-rank/representations/UNIFORM_FOX_IDEAL_MODEL_BARRIERS.tex) | proved | partial | none in declared routes |
+| [MRC-INTEGRAL-A8-FOX-IDEAL](meridional-rank/representations/INTEGRAL_A8_FOX_IDEAL.tex) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -2845,65 +2868,65 @@ flowchart LR
   class n1 proved
   n2["EXT-GRUSHKO<br/>proved"]
   class n2 proved
-  n3["EXT-WIRTINGER-BRIDGE<br/>proved"]
+  n3["EXT-RIEMANN-EXISTENCE-NUMBER-<br/>FIELD<br/>proved"]
   class n3 proved
-  n4["GAP-MERIDIONAL-RANK-3<br/>open"]
-  class n4 open
-  n5["GAP-MRC-STRONGER-LOWER-BOUNDS<br/>open"]
+  n4["EXT-WIRTINGER-BRIDGE<br/>proved"]
+  class n4 proved
+  n5["GAP-MERIDIONAL-RANK-3<br/>open"]
   class n5 open
-  n6(["GOAL-MRC<br/>open"])
+  n6["GAP-MRC-STRONGER-LOWER-BOUNDS<br/>open"]
   class n6 open
-  n7["VERIFY-MRC-UNDISTRIBUTED-<br/>COMPANIONS<br/>open"]
+  n7(["GOAL-MRC<br/>open"])
   class n7 open
-  n8["MRC-ALL-CHARACTERISTIC-LIFTS-<br/>THM-FIELD<br/>proved"]
-  class n8 proved
-  n9["MRC-A6-RANK-THREE-THM-<br/>ATTAINMENT<br/>proved"]
+  n8["VERIFY-MRC-UNDISTRIBUTED-<br/>COMPANIONS<br/>open"]
+  class n8 open
+  n9["MRC-ALL-CHARACTERISTIC-LIFTS-<br/>THM-FIELD<br/>proved"]
   class n9 proved
-  n10["MRC-A6-TOPOLOGY-THM-OUTSIDE<br/>proved"]
+  n10["MRC-ALT-TUPLE-LONG-PRODUCT<br/>proved"]
   class n10 proved
-  n11["MRC-A8-LEM-TRANSITIVE<br/>proved"]
+  n11["MRC-A6-RANK-THREE-THM-<br/>ATTAINMENT<br/>proved"]
   class n11 proved
-  n12["MRC-ALL-COVERS-COMPLETE-PARENT<br/>proved"]
+  n12["MRC-A6-TOPOLOGY-THM-OUTSIDE<br/>proved"]
   class n12 proved
-  n13["MRC-ALL-COVERS-FIXED-<br/>PERIPHERAL-MAP<br/>proved"]
+  n13["MRC-A8-LEM-TRANSITIVE<br/>proved"]
   class n13 proved
-  n14["MRC-ALL-COVERS-LEM-DOWNSTAIRS<br/>proved"]
+  n14["MRC-ALL-COVERS-COMPLETE-PARENT<br/>proved"]
   class n14 proved
-  n15["MRC-ALL-COVERS-LEM-PANTS<br/>proved"]
+  n15["MRC-ALL-COVERS-FIXED-<br/>PERIPHERAL-MAP<br/>proved"]
   class n15 proved
-  n16["MRC-ALL-CHARACTERISTIC-LIFTS-<br/>THM-PANEL<br/>proved"]
+  n16["MRC-ALL-COVERS-LEM-DOWNSTAIRS<br/>proved"]
   class n16 proved
-  n17["MRC-A6-AFFINE-THM-SHARP<br/>proved"]
+  n17["MRC-ALL-CHARACTERISTIC-LIFTS-<br/>THM-PANEL<br/>proved"]
   class n17 proved
-  n18["MRC-A6-TOPOLOGY-COR-BJW<br/>proved"]
+  n18["MRC-A6-AFFINE-THM-SHARP<br/>proved"]
   class n18 proved
-  n19["MRC-A7-BINARY-THM-GROUP<br/>proved"]
+  n19["MRC-A6-TOPOLOGY-COR-BJW<br/>proved"]
   class n19 proved
-  n20["MRC-A8-THM-GROUP<br/>proved"]
+  n20["MRC-A7-BINARY-THM-GROUP<br/>proved"]
   class n20 proved
-  n21["MRC-ALL-COVERS-EMBEDDED-CUSP-<br/>LENGTH<br/>proved"]
+  n21["MRC-A8-THM-GROUP<br/>proved"]
   class n21 proved
-  n22["MRC-ALL-COVERS-THM-BINDING<br/>proved"]
+  n22["MRC-ALL-COVERS-EMBEDDED-CUSP-<br/>LENGTH<br/>proved"]
   class n22 proved
-  n23["MRC-GENERAL-COVER-BOUNDS<br/>proved"]
+  n23["MRC-ALT-PRIME-THM-TARGETS<br/>proved"]
   class n23 proved
-  n24["MRC-SEED-COVER-TOPOLOGY<br/>proved"]
+  n24["MRC-GENERAL-COVER-BOUNDS<br/>proved"]
   class n24 proved
-  n25["MRC-PERIODIC-FAMILIES<br/>proved"]
+  n25["MRC-SEED-COVER-TOPOLOGY<br/>proved"]
   class n25 proved
-  n26["MRC-NAMED-EXAMPLES<br/>proved"]
+  n26["MRC-PERIODIC-FAMILIES<br/>proved"]
   class n26 proved
-  n27["MRC-A6-AFFINE-THM-GROUPS<br/>proved"]
+  n27["MRC-NAMED-EXAMPLES<br/>proved"]
   class n27 proved
-  n28["MRC-A7-BINARY-THM-SHARP<br/>proved"]
+  n28["MRC-A6-AFFINE-THM-GROUPS<br/>proved"]
   class n28 proved
-  n29["MRC-A8-THM-SHARP<br/>proved"]
+  n29["MRC-A7-BINARY-THM-SHARP<br/>proved"]
   class n29 proved
-  n30["MRC-ALL-COVERS-LEM-GEOMETRY<br/>proved"]
+  n30["MRC-A8-THM-SHARP<br/>proved"]
   class n30 proved
-  n31["MRC-ALT-PRIME-COR-FOUR<br/>proved"]
+  n31["MRC-ALL-COVERS-LEM-GEOMETRY<br/>proved"]
   class n31 proved
-  n32["MRC-ALT-PRIME-COR-SUMS<br/>proved"]
+  n32["ARITH-ALTERNATING-TWO-POLE-<br/>COVERS<br/>proved"]
   class n32 proved
   n33["MRC-A6-TOPOLOGY-COR-RATIONAL<br/>proved"]
   class n33 proved
@@ -2923,7 +2946,7 @@ flowchart LR
   class n40 proved
   n41["MRC-A8-SIMPLE-QUOTIENTS<br/>proved"]
   class n41 proved
-  n42["MRC-ALL-COVERS-THM-ALLCOVERS<br/>proved"]
+  n42["MRC-UNIFORM-FOX-IDEAL-MODEL-<br/>BARRIERS<br/>proved"]
   class n42 proved
   n43["MRC-A6-COVER-TOPOLOGY<br/>proved"]
   class n43 proved
@@ -2933,19 +2956,19 @@ flowchart LR
   class n45 proved
   n46["MRC-ALL-COVERS-ALL-NONGRAPH<br/>proved"]
   class n46 proved
-  n47["MRC-ALL-COVERS-TREFOIL-<br/>TOPOLOGY<br/>proved"]
+  n47["MRC-NEW17-UNIVERSAL-REFLECTION<br/>proved"]
   class n47 proved
-  n48["MRC-NEW17-UNIVERSAL-REFLECTION<br/>proved"]
+  n48["MRC-RANKONE-BINARY-BOUNDARY<br/>proved"]
   class n48 proved
-  n49["MRC-RANKONE-BINARY-BOUNDARY<br/>proved"]
+  n49["MRC-INVOLUTORY-KCH-OBSTRUCTION<br/>proved"]
   class n49 proved
-  n50["MRC-INVOLUTORY-KCH-OBSTRUCTION<br/>proved"]
+  n50["MRC-SEVEN-SHEET-EXAMPLES<br/>proved"]
   class n50 proved
-  n51["MRC-SEVEN-SHEET-EXAMPLES<br/>proved"]
+  n51["MRC-HIGHER-FACE-RATIONAL-<br/>ORIGINS<br/>proved"]
   class n51 proved
-  n52["MRC-HIGHER-FACE-RATIONAL-<br/>ORIGINS<br/>proved"]
+  n52["MRC-A6-RANK-THREE-COR-<br/>REFLECTIVE<br/>proved"]
   class n52 proved
-  n53["MRC-A6-RANK-THREE-COR-<br/>REFLECTIVE<br/>proved"]
+  n53["MRC-INTEGRAL-A8-FOX-IDEAL<br/>proved"]
   class n53 proved
   n54["MRC-ALL-COVERS-GAP-SUMS<br/>proved"]
   class n54 proved
@@ -3001,56 +3024,50 @@ flowchart LR
   class n79 proved
   r0{"AND<br/>SOURCE-ROUTE-MRC-A6-AFFINE-<br/>EXAMPLES<br/>proved"}
   class r0 proved
-  n17 --> r0
-  n27 --> r0
+  n18 --> r0
+  n28 --> r0
   r0 --> n39
   r1{"AND<br/>SOURCE-ROUTE-MRC-A6-COVER-<br/>TOPOLOGY<br/>proved"}
   class r1 proved
-  n10 --> r1
-  n18 --> r1
+  n12 --> r1
+  n19 --> r1
   n33 --> r1
   r1 --> n43
   r2{"AND<br/>SOURCE-ROUTE-MRC-A6-RANK-<br/>THREE-AUGMENTATIONS<br/>proved"}
   class r2 proved
-  n9 --> r2
-  n53 --> r2
+  n11 --> r2
+  n52 --> r2
   n55 --> r2
   r2 --> n59
   r3{"AND<br/>SOURCE-ROUTE-MRC-A7-BINARY-<br/>EXAMPLES<br/>proved"}
   class r3 proved
-  n28 --> r3
-  n19 --> r3
+  n29 --> r3
+  n20 --> r3
   r3 --> n40
   r4{"AND<br/>SOURCE-ROUTE-MRC-A8-SIMPLE-<br/>QUOTIENTS<br/>proved"}
   class r4 proved
-  n11 --> r4
-  n20 --> r4
-  n29 --> r4
+  n13 --> r4
+  n21 --> r4
+  n30 --> r4
   r4 --> n41
-  r5{"AND<br/>SOURCE-ROUTE-MRC-ALL-<br/>PARAMETER-HYPERBOLIC-DOUBLE-<br/>COVERS<br/>proved"}
+  r5{"AND<br/>SOURCE-ROUTE-MRC-ALL-<br/>PARAMETER-HYPERBOLIC-DOUBLE-<br/>COVERS<br/>+4 omitted proof premises<br/>proved"}
   class r5 proved
-  n42 --> r5
-  n22 --> r5
-  n14 --> r5
-  n15 --> r5
-  n30 --> r5
+  n16 --> r5
+  n31 --> r5
   n57 --> r5
-  n13 --> r5
-  n12 --> r5
-  n21 --> r5
+  n15 --> r5
+  n14 --> r5
+  n22 --> r5
   n46 --> r5
-  n47 --> r5
   n54 --> r5
   r5 --> n71
-  r6{"AND<br/>SOURCE-ROUTE-MRC-ALT-PRIME-<br/>FAMILIES<br/>+7 omitted proof premises<br/>proved"}
+  r6{"AND<br/>SOURCE-ROUTE-MRC-ALT-PRIME-<br/>FAMILIES<br/>+8 omitted proof premises<br/>proved"}
   class r6 proved
-  n31 --> r6
-  n32 --> r6
+  n23 --> r6
   r6 --> n56
-  r7{"AND<br/>ALL-COVERS-ALTERNATIVE-<br/>COFINITE-PRINCIPAL<br/>proved"}
+  r7{"AND<br/>ALL-COVERS-ALTERNATIVE-<br/>COFINITE-PRINCIPAL<br/>+1 omitted proof premise<br/>proved"}
   class r7 proved
   n57 --> r7
-  n47 --> r7
   n54 --> r7
   r7 --> n74
   r8{"AND<br/>SOURCE-ROUTE-MRC-COFINITE-<br/>PRIME-FAMILY-NONGRAPH<br/>+10 omitted proof premises<br/>proved"}
@@ -3058,8 +3075,8 @@ flowchart LR
   r8 --> n74
   r9{"AND<br/>SOURCE-ROUTE-MRC-COVER-BOUNDS<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r9 proved
-  n8 --> r9
-  n16 --> r9
+  n9 --> r9
+  n17 --> r9
   r9 --> n38
   r10{"AND<br/>SOURCE-ROUTE-MRC-FINITE-<br/>AFFINE-COVER-REALIZATION<br/>+1 omitted proof premise<br/>proved"}
   class r10 proved
@@ -3075,11 +3092,11 @@ flowchart LR
   r13 --> n60
   r14{"AND<br/>SOURCE-ROUTE-MRC-FISHNET-AND-<br/>PLAT-SCOPE<br/>+2 omitted proof premises<br/>proved"}
   class r14 proved
-  n17 --> r14
+  n18 --> r14
   r14 --> n65
   r15{"AND<br/>SOURCE-ROUTE-MRC-GENERAL-<br/>COVER-BOUNDS<br/>+1 omitted proof premise<br/>proved"}
   class r15 proved
-  r15 --> n23
+  r15 --> n24
   r16{"AND<br/>SOURCE-ROUTE-MRC-GENERIC-KCH-<br/>OBSTRUCTION<br/>+4 omitted proof premises<br/>proved"}
   class r16 proved
   r16 --> n77
@@ -3091,200 +3108,191 @@ flowchart LR
   r18 --> n34
   r19{"AND<br/>SOURCE-ROUTE-MRC-HIGHER-FACE-<br/>RATIONAL-ORIGINS<br/>+2 omitted proof premises<br/>proved"}
   class r19 proved
-  r19 --> n52
-  r20{"AND<br/>SOURCE-ROUTE-MRC-INVOLUTORY-<br/>KCH-OBSTRUCTION<br/>+3 omitted proof premises<br/>proved"}
+  r19 --> n51
+  r20{"AND<br/>SOURCE-ROUTE-MRC-<br/>INTEGRAL-A8-FOX-IDEAL<br/>+4 omitted proof premises<br/>proved"}
   class r20 proved
-  n17 --> r20
-  r20 --> n50
-  r21{"AND<br/>SOURCE-ROUTE-MRC-NAMED-<br/>EXAMPLES<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r20 --> n53
+  r21{"AND<br/>SOURCE-ROUTE-MRC-INVOLUTORY-<br/>KCH-OBSTRUCTION<br/>+3 omitted proof premises<br/>proved"}
   class r21 proved
-  n0 --> r21
-  n1 --> r21
-  r21 --> n26
-  r22{"AND<br/>SOURCE-ROUTE-MRC-NEW17-FAMILY-<br/>COMPARISON<br/>+8 omitted proof premises<br/>proved"}
+  n18 --> r21
+  r21 --> n49
+  r22{"AND<br/>SOURCE-ROUTE-MRC-NAMED-<br/>EXAMPLES<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r22 proved
-  r22 --> n73
-  r23{"AND<br/>SOURCE-ROUTE-MRC-<br/>NEW17-GENERIC-KCH<br/>+12 omitted proof premises<br/>proved"}
+  n0 --> r22
+  n1 --> r22
+  r22 --> n27
+  r23{"AND<br/>SOURCE-ROUTE-MRC-NEW17-FAMILY-<br/>COMPARISON<br/>+8 omitted proof premises<br/>proved"}
   class r23 proved
-  r23 --> n76
-  r24{"AND<br/>SOURCE-ROUTE-MRC-NEW17-SHARP-<br/>FOUR<br/>+6 omitted proof premises<br/>proved"}
+  r23 --> n73
+  r24{"AND<br/>SOURCE-ROUTE-MRC-<br/>NEW17-GENERIC-KCH<br/>+12 omitted proof premises<br/>proved"}
   class r24 proved
-  r24 --> n70
-  r25{"AND<br/>SOURCE-ROUTE-MRC-<br/>NEW17-UNIVERSAL-REFLECTION<br/>+5 omitted proof premises<br/>proved"}
+  r24 --> n76
+  r25{"AND<br/>SOURCE-ROUTE-MRC-NEW17-SHARP-<br/>FOUR<br/>+6 omitted proof premises<br/>proved"}
   class r25 proved
-  r25 --> n48
-  r26{"AND<br/>SOURCE-ROUTE-MRC-NO-SHARP-<br/>COXETER<br/>+2 omitted proof premises<br/>proved"}
+  r25 --> n70
+  r26{"AND<br/>SOURCE-ROUTE-MRC-<br/>NEW17-UNIVERSAL-REFLECTION<br/>+5 omitted proof premises<br/>proved"}
   class r26 proved
-  r26 --> n69
-  r27{"AND<br/>SOURCE-ROUTE-MRC-NO-SHARP-<br/>FINITE-COXETER<br/>+1 omitted proof premise<br/>proved"}
+  r26 --> n47
+  r27{"AND<br/>SOURCE-ROUTE-MRC-NO-SHARP-<br/>COXETER<br/>+2 omitted proof premises<br/>proved"}
   class r27 proved
-  n17 --> r27
-  r27 --> n62
-  r28{"AND<br/>SOURCE-ROUTE-MRC-NORMALIZED-<br/>COVER-ADDITIVITY<br/>+2 omitted proof premises<br/>proved"}
+  r27 --> n69
+  r28{"AND<br/>SOURCE-ROUTE-MRC-NO-SHARP-<br/>FINITE-COXETER<br/>+1 omitted proof premise<br/>proved"}
   class r28 proved
-  r28 --> n63
-  r29{"AND<br/>SOURCE-ROUTE-MRC-ORDINARY-<br/>RANK-THREE-UPPERS<br/>+2 omitted proof premises<br/>proved"}
+  n18 --> r28
+  r28 --> n62
+  r29{"AND<br/>SOURCE-ROUTE-MRC-NORMALIZED-<br/>COVER-ADDITIVITY<br/>+2 omitted proof premises<br/>proved"}
   class r29 proved
-  r29 --> n64
-  r30{"AND<br/>SOURCE-ROUTE-MRC-PERIODIC-<br/>FAMILIES<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r29 --> n63
+  r30{"AND<br/>SOURCE-ROUTE-MRC-ORDINARY-<br/>RANK-THREE-UPPERS<br/>+2 omitted proof premises<br/>proved"}
   class r30 proved
-  n3 --> r30
-  n2 --> r30
-  r30 --> n25
-  r31{"AND<br/>SOURCE-ROUTE-MRC-PRIME-FAMILY-<br/>GEOMETRY-SCOPE<br/>+16 omitted proof premises<br/>proved"}
+  r30 --> n64
+  r31{"AND<br/>SOURCE-ROUTE-MRC-PERIODIC-<br/>FAMILIES<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r31 proved
-  r31 --> n75
-  r32{"AND<br/>SOURCE-ROUTE-MRC-PRIME-GAP-<br/>FAMILY<br/>+11 omitted proof premises<br/>proved"}
+  n4 --> r31
+  n2 --> r31
+  r31 --> n26
+  r32{"AND<br/>SOURCE-ROUTE-MRC-PRIME-FAMILY-<br/>GEOMETRY-SCOPE<br/>+16 omitted proof premises<br/>proved"}
   class r32 proved
-  r32 --> n58
-  r33{"AND<br/>SOURCE-ROUTE-MRC-RANKONE-<br/>BINARY-BOUNDARY<br/>+2 omitted proof premises<br/>proved"}
+  r32 --> n75
+  r33{"AND<br/>SOURCE-ROUTE-MRC-PRIME-GAP-<br/>FAMILY<br/>+11 omitted proof premises<br/>proved"}
   class r33 proved
-  r33 --> n49
-  r34{"AND<br/>SOURCE-ROUTE-MRC-RATIONAL-<br/>REPLACEMENT-TOPOLOGY<br/>+2 omitted proof premises<br/>proved"}
+  r33 --> n58
+  r34{"AND<br/>SOURCE-ROUTE-MRC-RANKONE-<br/>BINARY-BOUNDARY<br/>+2 omitted proof premises<br/>proved"}
   class r34 proved
-  r34 --> n44
-  r35{"AND<br/>SOURCE-ROUTE-MRC-REFLECTIVE-<br/>AUGMENTATION-GAP<br/>+3 omitted proof premises<br/>proved"}
+  r34 --> n48
+  r35{"AND<br/>SOURCE-ROUTE-MRC-RATIONAL-<br/>REPLACEMENT-TOPOLOGY<br/>+2 omitted proof premises<br/>proved"}
   class r35 proved
-  r35 --> n72
-  r36{"AND<br/>SOURCE-ROUTE-MRC-RESTRICTED-<br/>QUOTIENT-CAPACITY<br/>+1 omitted proof premise<br/>proved"}
+  r35 --> n44
+  r36{"AND<br/>SOURCE-ROUTE-MRC-REFLECTIVE-<br/>AUGMENTATION-GAP<br/>+3 omitted proof premises<br/>proved"}
   class r36 proved
-  r36 --> n35
-  r37{"AND<br/>SOURCE-ROUTE-MRC-SEED-COVER-<br/>TOPOLOGY<br/>+1 omitted proof premise<br/>proved"}
+  r36 --> n72
+  r37{"AND<br/>SOURCE-ROUTE-MRC-RESTRICTED-<br/>QUOTIENT-CAPACITY<br/>+1 omitted proof premise<br/>proved"}
   class r37 proved
-  r37 --> n24
-  r38{"AND<br/>SOURCE-ROUTE-MRC-SEVEN-SHEET-<br/>EXAMPLES<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r37 --> n35
+  r38{"AND<br/>SOURCE-ROUTE-MRC-SEED-COVER-<br/>TOPOLOGY<br/>+1 omitted proof premise<br/>proved"}
   class r38 proved
-  r38 --> n51
-  r39{"AND<br/>SOURCE-ROUTE-MRC-<br/>SL3-PROJECTIVE-KNOWN-FAMILY<br/>+2 omitted proof premises<br/>proved"}
+  r38 --> n25
+  r39{"AND<br/>SOURCE-ROUTE-MRC-SEVEN-SHEET-<br/>EXAMPLES<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r39 proved
-  r39 --> n36
-  r40{"AND<br/>SOURCE-ROUTE-MRC-SYMMETRIC-<br/>AUGMENTATION-SCOPE<br/>+2 omitted proof premises<br/>proved"}
+  r39 --> n50
+  r40{"AND<br/>SOURCE-ROUTE-MRC-<br/>SL3-PROJECTIVE-KNOWN-FAMILY<br/>+2 omitted proof premises<br/>proved"}
   class r40 proved
-  r40 --> n67
-  r41{"AND<br/>SOURCE-ROUTE-MRC-TERNARY-<br/>AFFINE-QUOTIENTS<br/>+3 omitted proof premises<br/>proved"}
+  r40 --> n36
+  r41{"AND<br/>SOURCE-ROUTE-MRC-SYMMETRIC-<br/>AUGMENTATION-SCOPE<br/>+2 omitted proof premises<br/>proved"}
   class r41 proved
-  r41 --> n45
-  r42{"AND<br/>SOURCE-ROUTE-MRC-TWISTED-<br/>FAMILY-SCOPE<br/>+1 omitted proof premise<br/>proved"}
+  r41 --> n67
+  r42{"AND<br/>SOURCE-ROUTE-MRC-TERNARY-<br/>AFFINE-QUOTIENTS<br/>+3 omitted proof premises<br/>proved"}
   class r42 proved
-  r42 --> n66
-  r43{"AND<br/>CLOSE-MRC-RATIONAL-<br/>REPLACEMENTS<br/>+1 omitted proof premise<br/>proved"}
+  r42 --> n45
+  r43{"AND<br/>SOURCE-ROUTE-MRC-TWISTED-<br/>FAMILY-SCOPE<br/>+1 omitted proof premise<br/>proved"}
   class r43 proved
-  r43 --> n68
-  r44{"AND<br/>CLOSE-MRC-RATIONAL-<br/>REPLACEMENTS-TOPOLOGY<br/>+1 omitted proof premise<br/>proved"}
+  r43 --> n66
+  r44{"AND<br/>SOURCE-ROUTE-MRC-UNIFORM-FOX-<br/>IDEAL-MODEL-BARRIERS<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r44 proved
-  r44 --> n68
-  r45{"AND<br/>DERIVE-MRC-A6-AFFINE-THM-<br/>GROUPS<br/>+3 omitted proof premises<br/>proved"}
+  r44 --> n42
+  r45{"AND<br/>CLOSE-MRC-RATIONAL-<br/>REPLACEMENTS<br/>+1 omitted proof premise<br/>proved"}
   class r45 proved
-  r45 --> n27
-  r46{"AND<br/>DERIVE-MRC-A6-AFFINE-THM-SHARP<br/>+4 omitted proof premises<br/>proved"}
+  r45 --> n68
+  r46{"AND<br/>CLOSE-MRC-RATIONAL-<br/>REPLACEMENTS-TOPOLOGY<br/>+1 omitted proof premise<br/>proved"}
   class r46 proved
-  n3 --> r46
-  r46 --> n17
-  r47{"AND<br/>DERIVE-MRC-A6-RANK-THREE-COR-<br/>AUGMENTATION<br/>+3 omitted proof premises<br/>proved"}
+  r46 --> n68
+  r47{"AND<br/>DERIVE-ARITH-ALTERNATING-TWO-<br/>POLE-COVERS<br/>+1 pinned source<br/>proved"}
   class r47 proved
-  n9 --> r47
-  r47 --> n55
-  r48{"AND<br/>DERIVE-MRC-A6-RANK-THREE-COR-<br/>REFLECTIVE<br/>+3 omitted proof premises<br/>proved"}
+  n10 --> r47
+  n23 --> r47
+  n3 --> r47
+  r47 --> n32
+  r48{"AND<br/>DERIVE-MRC-ALT-PRIME-THM-<br/>TARGETS<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r48 proved
-  n9 --> r48
-  r48 --> n53
-  r49{"AND<br/>DERIVE-MRC-A6-RANK-THREE-THM-<br/>ATTAINMENT<br/>+3 omitted proof premises<br/>proved"}
+  r48 --> n23
+  r49{"AND<br/>DERIVE-MRC-ALT-TUPLE-LONG-<br/>PRODUCT<br/>+1 pinned source<br/>proved"}
   class r49 proved
-  r49 --> n9
-  r50{"AND<br/>DERIVE-MRC-A6-TOPOLOGY-COR-BJW<br/>+1 omitted proof premise<br/>proved"}
+  r49 --> n10
+  r50{"AND<br/>DERIVE-MRC-A6-AFFINE-THM-<br/>GROUPS<br/>+3 omitted proof premises<br/>proved"}
   class r50 proved
-  n10 --> r50
-  n1 --> r50
-  r50 --> n18
-  r51{"AND<br/>DERIVE-MRC-A6-TOPOLOGY-COR-<br/>RATIONAL<br/>+2 omitted proof premises<br/>proved"}
+  r50 --> n28
+  r51{"AND<br/>DERIVE-MRC-A6-AFFINE-THM-SHARP<br/>+4 omitted proof premises<br/>proved"}
   class r51 proved
-  n10 --> r51
-  r51 --> n33
-  r52{"AND<br/>DERIVE-MRC-A6-TOPOLOGY-THM-<br/>OUTSIDE<br/>+4 omitted proof premises<br/>proved"}
+  n4 --> r51
+  r51 --> n18
+  r52{"AND<br/>DERIVE-MRC-A6-RANK-THREE-COR-<br/>AUGMENTATION<br/>+3 omitted proof premises<br/>proved"}
   class r52 proved
-  r52 --> n10
-  r53{"AND<br/>DERIVE-MRC-A7-BINARY-THM-GROUP<br/>+3 omitted proof premises<br/>proved"}
+  n11 --> r52
+  r52 --> n55
+  r53{"AND<br/>DERIVE-MRC-A6-RANK-THREE-COR-<br/>REFLECTIVE<br/>+3 omitted proof premises<br/>proved"}
   class r53 proved
-  r53 --> n19
-  r54{"AND<br/>DERIVE-MRC-A7-BINARY-THM-SHARP<br/>+2 omitted proof premises<br/>proved"}
+  n11 --> r53
+  r53 --> n52
+  r54{"AND<br/>DERIVE-MRC-A6-RANK-THREE-THM-<br/>ATTAINMENT<br/>+3 omitted proof premises<br/>proved"}
   class r54 proved
-  n19 --> r54
-  n3 --> r54
-  r54 --> n28
-  r55{"AND<br/>DERIVE-MRC-A8-LEM-TRANSITIVE<br/>+1 omitted proof premise<br/>proved"}
+  r54 --> n11
+  r55{"AND<br/>DERIVE-MRC-A6-TOPOLOGY-COR-BJW<br/>+1 omitted proof premise<br/>proved"}
   class r55 proved
-  r55 --> n11
-  r56{"AND<br/>DERIVE-MRC-A8-THM-GROUP<br/>+2 omitted proof premises<br/>proved"}
+  n12 --> r55
+  n1 --> r55
+  r55 --> n19
+  r56{"AND<br/>DERIVE-MRC-A6-TOPOLOGY-COR-<br/>RATIONAL<br/>+2 omitted proof premises<br/>proved"}
   class r56 proved
-  n11 --> r56
-  r56 --> n20
-  r57{"AND<br/>DERIVE-MRC-A8-THM-SHARP<br/>+2 omitted proof premises<br/>proved"}
+  n12 --> r56
+  r56 --> n33
+  r57{"AND<br/>DERIVE-MRC-A6-TOPOLOGY-THM-<br/>OUTSIDE<br/>+4 omitted proof premises<br/>proved"}
   class r57 proved
-  n20 --> r57
-  n3 --> r57
-  r57 --> n29
-  r58{"AND<br/>DERIVE-MRC-ALL-CHARACTERISTIC-<br/>LIFTS-THM-FIELD<br/>+1 omitted proof premise<br/>proved"}
+  r57 --> n12
+  r58{"AND<br/>DERIVE-MRC-A7-BINARY-THM-GROUP<br/>+3 omitted proof premises<br/>proved"}
   class r58 proved
-  r58 --> n8
-  r59{"AND<br/>DERIVE-MRC-ALL-CHARACTERISTIC-<br/>LIFTS-THM-PANEL<br/>+1 omitted proof premise<br/>proved"}
+  r58 --> n20
+  r59{"AND<br/>DERIVE-MRC-A7-BINARY-THM-SHARP<br/>+2 omitted proof premises<br/>proved"}
   class r59 proved
-  n8 --> r59
-  n3 --> r59
-  r59 --> n16
-  r60{"AND<br/>DERIVE-MRC-ALL-COVERS-ALL-<br/>NONGRAPH<br/>+2 omitted proof premises<br/>proved"}
+  n20 --> r59
+  n4 --> r59
+  r59 --> n29
+  r60{"AND<br/>DERIVE-MRC-A8-LEM-TRANSITIVE<br/>+1 omitted proof premise<br/>proved"}
   class r60 proved
-  n42 --> r60
-  r60 --> n46
-  r61{"AND<br/>DERIVE-MRC-ALL-COVERS-<br/>COMPLETE-PARENT<br/>+4 omitted proof premises<br/>proved"}
+  r60 --> n13
+  r61{"AND<br/>DERIVE-MRC-A8-THM-GROUP<br/>+2 omitted proof premises<br/>proved"}
   class r61 proved
-  r61 --> n12
-  r62{"AND<br/>DERIVE-MRC-ALL-COVERS-COR-<br/>FAMILY<br/>+3 omitted proof premises<br/>proved"}
+  n13 --> r61
+  r61 --> n21
+  r62{"AND<br/>DERIVE-MRC-A8-THM-SHARP<br/>+2 omitted proof premises<br/>proved"}
   class r62 proved
-  n42 --> r62
-  r62 --> n57
-  r63{"AND<br/>DERIVE-MRC-ALL-COVERS-<br/>EMBEDDED-CUSP-LENGTH<br/>+3 omitted proof premises<br/>proved"}
+  n21 --> r62
+  n4 --> r62
+  r62 --> n30
+  r63{"AND<br/>DERIVE-MRC-ALL-CHARACTERISTIC-<br/>LIFTS-THM-FIELD<br/>+1 omitted proof premise<br/>proved"}
   class r63 proved
-  n12 --> r63
-  r63 --> n21
-  r64{"AND<br/>DERIVE-MRC-ALL-COVERS-FIXED-<br/>PERIPHERAL-MAP<br/>+4 omitted proof premises<br/>proved"}
+  r63 --> n9
+  r64{"AND<br/>DERIVE-MRC-ALL-CHARACTERISTIC-<br/>LIFTS-THM-PANEL<br/>+1 omitted proof premise<br/>proved"}
   class r64 proved
-  r64 --> n13
-  r65{"AND<br/>DERIVE-MRC-ALL-COVERS-GAP-SUMS<br/>+2 omitted proof premises<br/>proved"}
+  n9 --> r64
+  n4 --> r64
+  r64 --> n17
+  r65{"AND<br/>DERIVE-MRC-ALL-COVERS-ALL-<br/>NONGRAPH<br/>+3 omitted proof premises<br/>proved"}
   class r65 proved
-  n47 --> r65
-  r65 --> n54
-  r66{"AND<br/>DERIVE-MRC-ALL-COVERS-LEM-<br/>DOWNSTAIRS<br/>+2 omitted proof premises<br/>proved"}
+  r65 --> n46
+  r66{"AND<br/>DERIVE-MRC-ALL-COVERS-<br/>COMPLETE-PARENT<br/>+4 omitted proof premises<br/>proved"}
   class r66 proved
   r66 --> n14
-  r67{"AND<br/>DERIVE-MRC-ALL-COVERS-LEM-<br/>GEOMETRY<br/>+1 omitted proof premise<br/>proved"}
+  r67{"AND<br/>DERIVE-MRC-ALL-COVERS-COR-<br/>FAMILY<br/>+4 omitted proof premises<br/>proved"}
   class r67 proved
-  n12 --> r67
-  n21 --> r67
-  r67 --> n30
-  r68{"AND<br/>DERIVE-MRC-ALL-COVERS-LEM-<br/>PANTS<br/>+1 omitted proof premise<br/>proved"}
+  r67 --> n57
+  r68{"AND<br/>DERIVE-MRC-ALL-COVERS-<br/>EMBEDDED-CUSP-LENGTH<br/>+3 omitted proof premises<br/>proved"}
   class r68 proved
-  r68 --> n15
-  r69{"AND<br/>DERIVE-MRC-ALL-COVERS-THM-<br/>ALLCOVERS<br/>+3 omitted proof premises<br/>proved"}
+  n14 --> r68
+  r68 --> n22
+  r69{"AND<br/>DERIVE-MRC-ALL-COVERS-FIXED-<br/>PERIPHERAL-MAP<br/>+4 omitted proof premises<br/>proved"}
   class r69 proved
-  n22 --> r69
-  n30 --> r69
-  r69 --> n42
-  r70{"AND<br/>DERIVE-MRC-ALL-COVERS-THM-<br/>BINDING<br/>+5 omitted proof premises<br/>proved"}
+  r69 --> n15
+  r70{"AND<br/>DERIVE-MRC-ALL-COVERS-GAP-SUMS<br/>+3 omitted proof premises<br/>proved"}
   class r70 proved
-  n14 --> r70
-  n15 --> r70
-  n13 --> r70
-  r70 --> n22
-  r71{"AND<br/>DERIVE-MRC-ALL-COVERS-TREFOIL-<br/>TOPOLOGY<br/>+2 omitted proof premises<br/>proved"}
+  r70 --> n54
+  r71{"AND<br/>DERIVE-MRC-ALL-COVERS-LEM-<br/>DOWNSTAIRS<br/>+2 omitted proof premises<br/>proved"}
   class r71 proved
-  n42 --> r71
-  r71 --> n47
-  r72{"AND<br/>DERIVE-MRC-ALT-PRIME-COR-FOUR<br/>+7 omitted proof premises<br/>proved"}
+  r71 --> n16
+  r72{"AND<br/>DERIVE-MRC-ALL-COVERS-LEM-<br/>GEOMETRY<br/>+1 omitted proof premise<br/>proved"}
   class r72 proved
+  n14 --> r72
+  n22 --> r72
   r72 --> n31
-  r73{"AND<br/>DERIVE-MRC-ALT-PRIME-COR-SUMS<br/>+3 omitted proof premises<br/>proved"}
-  class r73 proved
-  r73 --> n32
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -3293,7 +3301,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 74 routes (495 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 73 routes (514 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -3301,7 +3309,7 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums and primitive Eisenstein norm sumsets have a separate internally complete manuscript.
 
-**Computed obligation progress:** 46 open; 3 proved / discharged.
+**Computed obligation progress:** 48 open; 3 proved / discharged.
 
 **Authored scope assessment:** Six-prime coefficient: tests at 2,3,5,11,17,53 have exact coefficient2081912199403/9893175318390 and certified-field coefficient13361/114520, with square-root logarithmic error. Earlier prefix coefficients retain their exact finite scopes.
 
@@ -3359,6 +3367,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 
 **Authored scope assessment:** EisAngle is a coordinate-witness angular law for fixed intervals along arbitrary admissible targets. It proves eventual pure/mixed balance and the q=3 macroscopic family case, while the full ordinary exception list8,44, numerical onset and shrinking-window claims remain open. The original manuscript/PDF was not rewritten. MathOverflow2013 answers are method precedents and supply no theorem premise.
 
+**Authored scope assessment:** Alternating tuple bridge proves existence and collinear-node saturation in every degree2b>=8; the exact degree8 model has noQ-form, and the literalQ[s]-square obstruction is distinct from the open existence of other rational geometricA8 models.
+
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
 | [ARITHMETIC-COMMON-ARITHMETIC-FIBERS](../unpublished/common-arithmetic-fibers/main.tex) | proved | partial | none in declared routes |
@@ -3373,12 +3383,14 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITHMETIC-FROBENIAN-BINARY-SUMS](arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md) | proved | partial | none in declared routes |
 | [ARITHMETIC-PRESCRIBED-PRIME-SEMIGROUP-DENSITY-ONE](arithmetic/PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md) | proved | partial | none in declared routes |
 | [ARITHMETIC-EISENSTEIN-ANGULAR-DISTRIBUTION](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md) | proved | partial | none in declared routes |
+| [ARITH-ALTERNATING-HURWITZ-PENCILS](arithmetic/ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
 | ARITH-EXT-JELONEK-CARDINALITY | verification | open | partial | For a dominant etale polynomial self-map of affine space over an algebraically closed characteristic-zero field, a target is outside the graph-boundary/nonproperness locus iff its fibre cardinality equals the geometric degree, with the exact theorem/field-extension hypotheses used by the manuscript. | ARITH-EXT-JELONEK-CARDINALITY (open) |
 | EXT-SELBERG-DELANGE | verification | proved / discharged | partial | De la Breteche-Tenenbaum Theorem 1.2 under class F(r,sigma) and fixed prime-mean error hypotheses; applied with r=1/2,sigma=3/4 and rho=1/2,0,0. | none in declared routes |
 | FORMAL-SUPPLIED-CHAR-NE2 | formalization | open | partial | Remove the blanket CharZero hypotheses and formalize the separate supplied-presentation proposition end to end in characteristic different from two under its exact nonzero Hasse-coefficient conditions. | FORMAL-SUPPLIED-CHAR-NE2 (open) |
+| GAP-ARITH-ALTERNATING-RATIONAL-GEOMETRIC-DESCENT | mathematical | open | partial | Determine whether some other rational-coefficient H,a has four double-transposition finite branch values and geometricA8. LiteralQ[s]-square is impossible and the explicit K-model does not descend, but neither excludes every rational geometric model. | GAP-ARITH-ALTERNATING-RATIONAL-GEOMETRIC-DESCENT (open) |
 | GAP-ARITH-AMBIENT-LOCAL-GLOBAL-CONSTANTS | mathematical | open | partial | Refine the sharp-order results G(B),L(B)=Theta(B^3) in actual rational target height to leading asymptotics; the boundary-plane contribution alone need not equal either full count. | GAP-ARITH-AMBIENT-LOCAL-GLOBAL-CONSTANTS (open) |
 | GAP-ARITH-AMBIENT-TARGET-COUNT | mathematical | open | partial | Determine the sharp order or leading asymptotic of the ambient rational Hasse-target count A(B). Current proven bounds are Cphi B^2/logB from below and O(B^3) from above; all-target local solubility has sharp order B^3. | GAP-ARITH-AMBIENT-TARGET-COUNT (open) |
 | GAP-ARITH-ELLIPTIC-BRANCH-RETURN-RECURRENCE | mathematical | open | partial | Prove that Haar-almost every profinite Mordell-Weil vector in certifiedclassK0 has infinitely many reductions at the pole or fixed branch residues along sufficientlylarge inert primes with e_p=1. The prime set itself is not known infinite here. This recurrence, stronger than divergent unconditioned return masses, would force intrinsic all-primes measurezero byETP3 and give A_K0=o(logB), while leaving Hasse infinitude open. | GAP-ARITH-ELLIPTIC-BRANCH-RETURN-RECURRENCE (open) |
@@ -3406,6 +3418,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-EISENSTEIN-BALANCED | mathematical | open | partial | Whether every positive n=2mod6 other than8,44 has a balanced A+A representation. Eventual balanced coverage is now proved by EisAngle; the finite search below1e8 has only8,44, but no numerical onset/overlap is known and further finite exceptions have not been excluded. | GAP-EISENSTEIN-BALANCED (open) |
 | GOAL-ARITH-FROBENIAN-UNIFORM-BINARY | goal | open | partial | OPEN FBS-U: for every fixed q>=3 and every fixed 0<theta<1, with L=lcm(2,q) and kappa_q=2-2/phi(q), there exist c_(q,theta)>0 and N0(q,theta) such that every N>=N0, N=2 mod L, satisfies r_(q,N^theta)(N)>=c_(q,theta) N^theta/(log N)^kappa_q. The count is of ordered positive C_q+C_q pairs with abs(a-b)<=N^theta. The constant is independent of the individual target; no uniformity in growing q or varying theta is asserted. At q=12 the logarithmic exponent is 3/2. This is stronger than macroscopic existence FBS-G/S12 and remains unproved. | GOAL-ARITH-FROBENIAN-UNIFORM-BINARY (open) |
 | VERIFY-RATIONAL-LINE-COUNT | verification | open | partial | Review the current rational local converse, exact target-height content/polygon calculation, coprime twisted convolution, uniform stratum tail control and Selberg-Delange hypotheses. Retained finite arithmetic audits and old Lean integer certificates do not certify the new asymptotic. | VERIFY-RATIONAL-LINE-COUNT (open) |
+| WORK-ARITH-ALTERNATING-PASSPORT-PRIORITY | verification | open | partial | Compare the exact DT^b,(2b-1,1) passport and collinear-node consequence with existing alternating/Laurent cover literature; broad alternating Laurent existence has prior precedent. | WORK-ARITH-ALTERNATING-PASSPORT-PRIORITY (open) |
 | WORK-COMMON-ARITHMETIC-FIBERS-1 | workflow | open | complete | Obtain external review of the written proof and source/formal correspondence. | WORK-COMMON-ARITHMETIC-FIBERS-1 (open) |
 | WORK-COMMON-ARITHMETIC-FIBERS-2 | workflow | open | complete | Complete specialist novelty review of the gauge and supplied-characteristic refinements; characteristic-zero existence is already a consequence of Ulam Theorem 5.2. | WORK-COMMON-ARITHMETIC-FIBERS-2 (open) |
 | WORK-DISCRIMINANT-PENCILS-1 | workflow | open | complete | Resolve the exact contribution relative to classical dual-curve specializations before considering standalone publication. | WORK-DISCRIMINANT-PENCILS-1 (open) |
@@ -3429,10 +3442,10 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 ```mermaid
 flowchart LR
   subgraph e2["FBS-POWER-VARIANCE-ENERGY-<br/>EQUIVALENCE<br/>independent grounding required"]
-  n65["GAP-ARITH-FBS-SHARP-FOUR-FORM-<br/>ENERGY<br/>open"]
+  n64["GAP-ARITH-FBS-SHARP-FOUR-FORM-<br/>ENERGY<br/>open"]
+  class n64 open
+  n65(["GOAL-ARITH-FBS-POWER-CENTERED-<br/>VARIANCE<br/>open"])
   class n65 open
-  n66(["GOAL-ARITH-FBS-POWER-CENTERED-<br/>VARIANCE<br/>open"])
-  class n66 open
   r0{"AND<br/>FBS-VARIANCE-TO-SHARP-ENERGY<br/>+1 omitted proof premise<br/>blocked"}
   class r0 open
   r1{"AND<br/>FBS-SHARP-ENERGY-TO-VARIANCE<br/>+1 omitted proof premise<br/>blocked"}
@@ -3440,136 +3453,136 @@ flowchart LR
   end
   n0["ARITH-EXT-JELONEK-CARDINALITY<br/>open"]
   class n0 open
-  n1["EXT-SELBERG-DELANGE<br/>proved"]
+  n1["EXT-RIEMANN-EXISTENCE-NUMBER-<br/>FIELD<br/>proved"]
   class n1 proved
-  n2["FORMAL-SUPPLIED-CHAR-NE2<br/>open"]
-  class n2 open
-  n3["GAP-ARITH-AMBIENT-LOCAL-<br/>GLOBAL-CONSTANTS<br/>open"]
+  n2["EXT-SELBERG-DELANGE<br/>proved"]
+  class n2 proved
+  n3["FORMAL-SUPPLIED-CHAR-NE2<br/>open"]
   class n3 open
-  n4["GAP-ARITH-AMBIENT-TARGET-COUNT<br/>open"]
+  n4["GAP-ARITH-ALTERNATING-<br/>RATIONAL-GEOMETRIC-DESCENT<br/>open"]
   class n4 open
-  n5["GAP-ARITH-ELLIPTIC-BRANCH-<br/>RETURN-RECURRENCE<br/>open"]
+  n5["GAP-ARITH-AMBIENT-LOCAL-<br/>GLOBAL-CONSTANTS<br/>open"]
   class n5 open
-  n6["GAP-ARITH-ELLIPTIC-CLASS-<br/>GROUP-EXTRA-COPY-DENSITY<br/>open"]
+  n6["GAP-ARITH-AMBIENT-TARGET-COUNT<br/>open"]
   class n6 open
-  n7["GAP-ARITH-ELLIPTIC-<br/>CONDITIONAL-HAZARD-VARIANCE<br/>open"]
+  n7["GAP-ARITH-ELLIPTIC-BRANCH-<br/>RETURN-RECURRENCE<br/>open"]
   class n7 open
-  n8["GAP-ARITH-ELLIPTIC-<br/>CONDITIONAL-RETURN-MOMENTS<br/>open"]
+  n8["GAP-ARITH-ELLIPTIC-CLASS-<br/>GROUP-EXTRA-COPY-DENSITY<br/>open"]
   class n8 open
-  n9["GAP-ARITH-ELLIPTIC-OTHER-<br/>CLASSES-FINITE-LOCAL-<br/>POSITIVITY<br/>open"]
+  n9["GAP-ARITH-ELLIPTIC-<br/>CONDITIONAL-HAZARD-VARIANCE<br/>open"]
   class n9 open
-  n10["GAP-ARITH-ELLIPTIC-POSITIVE-<br/>ADELIC-MEASURE<br/>open"]
+  n10["GAP-ARITH-ELLIPTIC-<br/>CONDITIONAL-RETURN-MOMENTS<br/>open"]
   class n10 open
-  n11["GAP-ARITH-ELLIPTIC-UNIFORM-<br/>LOCAL-TAIL<br/>open"]
+  n11["GAP-ARITH-ELLIPTIC-OTHER-<br/>CLASSES-FINITE-LOCAL-<br/>POSITIVITY<br/>open"]
   class n11 open
-  n12["GAP-ARITH-FROBENIAN-BINARY-<br/>EXCEPTION-REMOVAL<br/>open"]
+  n12["GAP-ARITH-ELLIPTIC-POSITIVE-<br/>ADELIC-MEASURE<br/>open"]
   class n12 open
-  n13["GAP-ARITH-FROBENIAN-BINARY-<br/>MAIN-TERM<br/>open"]
+  n13["GAP-ARITH-ELLIPTIC-UNIFORM-<br/>LOCAL-TAIL<br/>open"]
   class n13 open
-  n14["GAP-ARITH-FROBENIAN-BINARY-<br/>PRIORITY<br/>open"]
+  n14["GAP-ARITH-FROBENIAN-BINARY-<br/>EXCEPTION-REMOVAL<br/>open"]
   class n14 open
-  n15["GAP-ARITH-INTEGER-HASSE-<br/>EXISTENCE<br/>open"]
+  n15["GAP-ARITH-FROBENIAN-BINARY-<br/>MAIN-TERM<br/>open"]
   class n15 open
-  n16["GAP-ARITH-M12-GLOBAL-COUNTING<br/>open"]
+  n16["GAP-ARITH-FROBENIAN-BINARY-<br/>PRIORITY<br/>open"]
   class n16 open
-  n17["GAP-ARITH-M12-LITERATURE<br/>open"]
+  n17["GAP-ARITH-INTEGER-HASSE-<br/>EXISTENCE<br/>open"]
   class n17 open
-  n18["GAP-ARITH-RESOLVENT-<br/>EXCEPTIONAL-FAMILIES<br/>open"]
+  n18["GAP-ARITH-M12-GLOBAL-COUNTING<br/>open"]
   class n18 open
-  n19["GAP-ARITHMETIC-1<br/>open"]
+  n19["GAP-ARITH-M12-LITERATURE<br/>open"]
   class n19 open
-  n20["GAP-ARITHMETIC-2<br/>open"]
+  n20["GAP-ARITH-RESOLVENT-<br/>EXCEPTIONAL-FAMILIES<br/>open"]
   class n20 open
-  n21["GAP-ARITHMETIC-3<br/>open"]
+  n21["GAP-ARITHMETIC-1<br/>open"]
   class n21 open
-  n22["GAP-ARITHMETIC-4<br/>open"]
+  n22["GAP-ARITHMETIC-2<br/>open"]
   class n22 open
-  n23["GAP-ARITHMETIC-5<br/>open"]
+  n23["GAP-ARITHMETIC-3<br/>open"]
   class n23 open
-  n24["GAP-ARITHMETIC-6<br/>open"]
+  n24["GAP-ARITHMETIC-4<br/>open"]
   class n24 open
-  n25["GAP-ARITHMETIC-7<br/>open"]
+  n25["GAP-ARITHMETIC-5<br/>open"]
   class n25 open
-  n26["GAP-ARITHMETIC-8<br/>open"]
+  n26["GAP-ARITHMETIC-6<br/>open"]
   class n26 open
-  n27["GAP-EISENSTEIN-BALANCED<br/>open"]
+  n27["GAP-ARITHMETIC-7<br/>open"]
   class n27 open
-  n28(["GOAL-ARITH-FROBENIAN-UNIFORM-<br/>BINARY<br/>open"])
+  n28["GAP-ARITHMETIC-8<br/>open"]
   class n28 open
-  n29["VERIFY-RATIONAL-LINE-COUNT<br/>open"]
+  n29["GAP-EISENSTEIN-BALANCED<br/>open"]
   class n29 open
-  n30["WORK-COMMON-ARITHMETIC-<br/>FIBERS-1<br/>open"]
+  n30(["GOAL-ARITH-FROBENIAN-UNIFORM-<br/>BINARY<br/>open"])
   class n30 open
-  n31["WORK-COMMON-ARITHMETIC-<br/>FIBERS-2<br/>open"]
+  n31["VERIFY-RATIONAL-LINE-COUNT<br/>open"]
   class n31 open
-  n32["WORK-DISCRIMINANT-PENCILS-1<br/>open"]
+  n32["WORK-ARITH-ALTERNATING-<br/>PASSPORT-PRIORITY<br/>open"]
   class n32 open
-  n33["WORK-DISCRIMINANT-PENCILS-2<br/>open"]
+  n33["WORK-COMMON-ARITHMETIC-<br/>FIBERS-1<br/>open"]
   class n33 open
-  n34["WORK-DISCRIMINANT-PENCILS-3<br/>open"]
+  n34["WORK-COMMON-ARITHMETIC-<br/>FIBERS-2<br/>open"]
   class n34 open
-  n35["WORK-EXACT-REAL-CHAMBER-<br/>SPECTRA-1<br/>open"]
+  n35["WORK-DISCRIMINANT-PENCILS-1<br/>open"]
   class n35 open
-  n36["WORK-EXACT-REAL-CHAMBER-<br/>SPECTRA-2<br/>open"]
+  n36["WORK-DISCRIMINANT-PENCILS-2<br/>open"]
   class n36 open
-  n37["WORK-FIXED-MAP-HASSE-<br/>FAILURES-1<br/>open"]
+  n37["WORK-DISCRIMINANT-PENCILS-3<br/>open"]
   class n37 open
-  n38["WORK-FIXED-MAP-HASSE-<br/>FAILURES-2<br/>open"]
+  n38["WORK-EXACT-REAL-CHAMBER-<br/>SPECTRA-1<br/>open"]
   class n38 open
-  n39["WORK-QUADRATIC-GAUGE-<br/>NONPROPERNESS-1<br/>open"]
+  n39["WORK-EXACT-REAL-CHAMBER-<br/>SPECTRA-2<br/>open"]
   class n39 open
-  n40["WORK-QUADRATIC-GAUGE-<br/>NONPROPERNESS-2<br/>open"]
+  n40["WORK-FIXED-MAP-HASSE-<br/>FAILURES-1<br/>open"]
   class n40 open
-  n41["FOUND-RELATIVE-COMPILER<br/>proved"]
-  class n41 proved
-  n42["ARITHMETIC-PRESCRIBED-PRIME-<br/>SEMIGROUP-DENSITY-ONE<br/>proved"]
-  class n42 proved
-  n43["JAC-MONODROMY<br/>proved"]
-  class n43 proved
-  n44["ARITH-RANK-FIVE-HASSE-ALGEBRAS<br/>proved"]
+  n41["WORK-FIXED-MAP-HASSE-<br/>FAILURES-2<br/>open"]
+  class n41 open
+  n42["WORK-QUADRATIC-GAUGE-<br/>NONPROPERNESS-1<br/>open"]
+  class n42 open
+  n43["WORK-QUADRATIC-GAUGE-<br/>NONPROPERNESS-2<br/>open"]
+  class n43 open
+  n44["FOUND-RELATIVE-COMPILER<br/>proved"]
   class n44 proved
-  n45(["GOAL-ARITH-FIXED-MODULUS-<br/>BALANCED<br/>open"])
-  class n45 open
-  n46["JAC-PLANE-COMPLETION<br/>proved"]
+  n45["ARITHMETIC-PRESCRIBED-PRIME-<br/>SEMIGROUP-DENSITY-ONE<br/>proved"]
+  class n45 proved
+  n46["JAC-MONODROMY<br/>proved"]
   class n46 proved
-  n47["JAC-PLANE-COMPLETION-S1<br/>proved"]
+  n47["ARITH-RANK-FIVE-HASSE-ALGEBRAS<br/>proved"]
   class n47 proved
-  n48["JAC-PLANE-COMPLETION-S2<br/>proved"]
-  class n48 proved
-  n49["JAC-PLANE-COMPLETION-S3<br/>proved"]
+  n48(["GOAL-ARITH-FIXED-MODULUS-<br/>BALANCED<br/>open"])
+  class n48 open
+  n49["JAC-PLANE-COMPLETION<br/>proved"]
   class n49 proved
-  n50["JAC-PLANE-COMPLETION-S4<br/>proved"]
+  n50["JAC-PLANE-COMPLETION-S1<br/>proved"]
   class n50 proved
-  n51["JAC-PLANE-COMPLETION-S5<br/>proved"]
+  n51["JAC-PLANE-COMPLETION-S2<br/>proved"]
   class n51 proved
-  n52["JAC-RECEIVER<br/>proved"]
+  n52["JAC-PLANE-COMPLETION-S3<br/>proved"]
   class n52 proved
-  n53["JAC-RECEIVER-S1<br/>proved"]
+  n53["JAC-NO-QUADRATIC-KELLER-<br/>EXTENSION<br/>proved"]
   class n53 proved
-  n54["JAC-RECEIVER-S2<br/>proved"]
-  class n54 proved
-  n55["JAC-RECEIVER-S3<br/>proved"]
+  n54(["GOAL-ARITH-M12-BALANCED<br/>open<br/>OR routes"])
+  class n54 open
+  n55["ARITH-FIXED-QUINTIC-FULL-<br/>HASSE-FIBRES<br/>proved"]
   class n55 proved
-  n56["JAC-NO-QUADRATIC-KELLER-<br/>EXTENSION<br/>proved"]
+  n56["ARITHMETIC-EXACT-REAL-CHAMBER-<br/>SPECTRA<br/>proved"]
   class n56 proved
-  n57(["GOAL-ARITH-M12-BALANCED<br/>open<br/>OR routes"])
-  class n57 open
-  n58["ARITH-FIXED-QUINTIC-FULL-<br/>HASSE-FIBRES<br/>proved"]
+  n57["ARITH-ALTERNATING-TWO-POLE-<br/>COVERS<br/>proved"]
+  class n57 proved
+  n58["ARITHMETIC-EISENSTEIN-ANGULAR-<br/>DISTRIBUTION<br/>proved"]
   class n58 proved
-  n59["ARITHMETIC-EXACT-REAL-CHAMBER-<br/>SPECTRA<br/>proved"]
+  n59["ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>proved"]
   class n59 proved
-  n60["ARITHMETIC-EISENSTEIN-ANGULAR-<br/>DISTRIBUTION<br/>proved"]
+  n60["ARITHMETIC-DISCRIMINANT-<br/>PENCILS<br/>proved"]
   class n60 proved
-  n61["ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>proved"]
-  class n61 proved
-  n62["ARITHMETIC-DISCRIMINANT-<br/>PENCILS<br/>proved"]
+  n61["ARITHMETIC-SIMULTANEOUS-NORM-<br/>SUMS<br/>open"]
+  class n61 open
+  n62["ARITHMETIC-FROBENIAN-BINARY-<br/>SUMS<br/>proved"]
   class n62 proved
-  n63["ARITHMETIC-SIMULTANEOUS-NORM-<br/>SUMS<br/>open"]
-  class n63 open
-  n64["ARITHMETIC-FROBENIAN-BINARY-<br/>SUMS<br/>proved"]
-  class n64 proved
-  n67["ARITHMETIC-FROBENIAN-UNIFORM-<br/>BINARY-PROGRAM<br/>open"]
-  class n67 open
+  n63["JAC-ALTERNATING-COTANGENT-<br/>CHARTS<br/>proved"]
+  class n63 proved
+  n66["ARITHMETIC-FROBENIAN-UNIFORM-<br/>BINARY-PROGRAM<br/>open"]
+  class n66 open
+  n67["ARITH-ALTERNATING-HURWITZ-<br/>PENCILS<br/>proved"]
+  class n67 proved
   n68["ARITHMETIC-QUADRATIC-GAUGE-<br/>NONPROPERNESS<br/>open"]
   class n68 open
   n69["ARITHMETIC-FIXED-MAP-HASSE-<br/>FAILURES<br/>proved"]
@@ -3594,161 +3607,148 @@ flowchart LR
   class n78 open
   n79["ARITHMETIC-FIXED-MAP-LOCAL-<br/>EXTENSIONS<br/>proved"]
   class n79 proved
-  n66 --> r0
-  r0 --> n65
-  n65 --> r1
-  r1 --> n66
-  r2{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+3 omitted proof premises<br/>proved"}
+  n65 --> r0
+  r0 --> n64
+  n64 --> r1
+  r1 --> n65
+  r2{"AND<br/>DERIVE-ARITH-ALTERNATING-<br/>HURWITZ-PENCILS<br/>+5 omitted proof premises<br/>proved"}
   class r2 proved
-  n71 --> r2
-  r2 --> n74
-  r3{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>DISCRIMINANT-PENCILS<br/>+1 omitted proof premise<br/>proved"}
+  r2 --> n67
+  r3{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+3 omitted proof premises<br/>proved"}
   class r3 proved
-  r3 --> n62
-  r4{"AND<br/>EIS-ROUTE-ANGULAR<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n71 --> r3
+  r3 --> n74
+  r4{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>DISCRIMINANT-PENCILS<br/>+1 omitted proof premise<br/>proved"}
   class r4 proved
   r4 --> n60
-  r5{"AND<br/>EISENSTEIN-ROUTE-PRINCIPAL<br/>+5 omitted proof premises<br/>proved"}
+  r5{"AND<br/>EIS-ROUTE-ANGULAR<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r5 proved
-  r5 --> n70
-  r6{"AND<br/>SOURCE-ROUTE-ARITHMETIC-EXACT-<br/>REAL-CHAMBER-SPECTRA<br/>+1 omitted proof premise<br/>proved"}
+  r5 --> n58
+  r6{"AND<br/>EISENSTEIN-ROUTE-PRINCIPAL<br/>+5 omitted proof premises<br/>proved"}
   class r6 proved
-  r6 --> n59
-  r7{"AND<br/>SOURCE-ROUTE-ARITHMETIC-FIXED-<br/>MAP-HASSE-FAILURES<br/>+3 omitted proof premises<br/>proved"}
+  r6 --> n70
+  r7{"AND<br/>SOURCE-ROUTE-ARITHMETIC-EXACT-<br/>REAL-CHAMBER-SPECTRA<br/>+1 omitted proof premise<br/>proved"}
   class r7 proved
-  r7 --> n69
-  r8{"AND<br/>ARITH-EXTENSIONS-TO-PRINCIPAL<br/>+223 omitted proof premises<br/>proved"}
+  r7 --> n56
+  r8{"AND<br/>SOURCE-ROUTE-ARITHMETIC-FIXED-<br/>MAP-HASSE-FAILURES<br/>+3 omitted proof premises<br/>proved"}
   class r8 proved
-  n58 --> r8
-  n44 --> r8
-  n61 --> r8
-  r8 --> n79
-  r9{"AND<br/>FBS-ROUTE-PRINCIPAL<br/>+2 omitted proof premises<br/>proved"}
+  r8 --> n69
+  r9{"AND<br/>ARITH-EXTENSIONS-TO-PRINCIPAL<br/>+223 omitted proof premises<br/>proved"}
   class r9 proved
-  r9 --> n64
-  r10{"AND<br/>FBS-ROUTE-UNIFORM-PROGRAM<br/>+6 omitted proof premises<br/>blocked"}
-  class r10 open
-  n28 --> r10
-  n64 --> r10
-  n42 --> r10
-  r10 --> n67
-  r11{"AND<br/>FBS-ROUTE-SEMIGROUP-DENSITY-<br/>ONE<br/>+2 omitted proof premises<br/>proved"}
-  class r11 proved
-  r11 --> n42
-  r12{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>QUADRATIC-GAUGE-NONPROPERNESS<br/>+3 omitted proof premises<br/>blocked"}
-  class r12 open
-  r12 --> n68
-  r13{"AND<br/>M12-ROUTE-PRINCIPAL<br/>+9 omitted proof premises<br/>blocked"}
+  n55 --> r9
+  n47 --> r9
+  n59 --> r9
+  r9 --> n79
+  r10{"AND<br/>FBS-ROUTE-PRINCIPAL<br/>+2 omitted proof premises<br/>proved"}
+  class r10 proved
+  r10 --> n62
+  r11{"AND<br/>FBS-ROUTE-UNIFORM-PROGRAM<br/>+6 omitted proof premises<br/>blocked"}
+  class r11 open
+  n30 --> r11
+  n62 --> r11
+  n45 --> r11
+  r11 --> n66
+  r12{"AND<br/>FBS-ROUTE-SEMIGROUP-DENSITY-<br/>ONE<br/>+2 omitted proof premises<br/>proved"}
+  class r12 proved
+  r12 --> n45
+  r13{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>QUADRATIC-GAUGE-NONPROPERNESS<br/>+3 omitted proof premises<br/>blocked"}
   class r13 open
-  n57 --> r13
-  r13 --> n63
-  r14{"AND<br/>COUNTING-UPGRADE-TO-GAP-ARITH-<br/>DISTINCT-ALGEBRA-CONSTANT<br/>+1 omitted proof premise<br/>proved"}
-  class r14 proved
-  r14 --> n76
-  r15{"AND<br/>POSITIVE-ADELIC-MEASURE-AND-<br/>UNIFORM-TAIL-IMPLY-ELLIPTIC-<br/>HASSE-INFINITUDE<br/>+1 omitted proof premise<br/>blocked"}
-  class r15 open
-  n10 --> r15
-  n11 --> r15
-  r15 --> n78
-  r16{"AND<br/>DEPTH-ONE-RECURRENCE-IMPLIES-<br/>WEIGHTED-DIVERGENCE<br/>+1 omitted proof premise<br/>blocked"}
+  r13 --> n68
+  r14{"AND<br/>M12-ROUTE-PRINCIPAL<br/>+9 omitted proof premises<br/>blocked"}
+  class r14 open
+  n54 --> r14
+  r14 --> n61
+  r15{"AND<br/>COUNTING-UPGRADE-TO-GAP-ARITH-<br/>DISTINCT-ALGEBRA-CONSTANT<br/>+1 omitted proof premise<br/>proved"}
+  class r15 proved
+  r15 --> n76
+  r16{"AND<br/>POSITIVE-ADELIC-MEASURE-AND-<br/>UNIFORM-TAIL-IMPLY-ELLIPTIC-<br/>HASSE-INFINITUDE<br/>+1 omitted proof premise<br/>blocked"}
   class r16 open
-  n5 --> r16
-  r16 --> n77
-  r17{"AND<br/>COUNTING-UPGRADE-TO-GAP-ARITH-<br/>SECOND-LINE-CONSTANT<br/>+1 omitted proof premise<br/>proved"}
-  class r17 proved
-  r17 --> n72
-  r18{"AND<br/>FBS-ROUTE-UNIFORM-IMPLIES-<br/>MACRO<br/>blocked"}
-  class r18 open
-  n28 --> r18
-  r18 --> n45
-  r19{"AND<br/>FBS-ROUTE-Q12-SPECIALIZATION<br/>blocked"}
+  n12 --> r16
+  n13 --> r16
+  r16 --> n78
+  r17{"AND<br/>DEPTH-ONE-RECURRENCE-IMPLIES-<br/>WEIGHTED-DIVERGENCE<br/>+1 omitted proof premise<br/>blocked"}
+  class r17 open
+  n7 --> r17
+  r17 --> n77
+  r18{"AND<br/>COUNTING-UPGRADE-TO-GAP-ARITH-<br/>SECOND-LINE-CONSTANT<br/>+1 omitted proof premise<br/>proved"}
+  class r18 proved
+  r18 --> n72
+  r19{"AND<br/>FBS-ROUTE-UNIFORM-IMPLIES-<br/>MACRO<br/>blocked"}
   class r19 open
-  n45 --> r19
-  r19 --> n57
-  r20{"AND<br/>M12-ROUTE-TARGET<br/>+1 omitted proof premise<br/>blocked"}
+  n30 --> r19
+  r19 --> n48
+  r20{"AND<br/>FBS-ROUTE-Q12-SPECIALIZATION<br/>blocked"}
   class r20 open
-  n16 --> r20
-  r20 --> n57
-  r21{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-FINITE-<br/>ETALE-REALIZATION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
-  class r21 proved
-  r21 --> n71
-  r22{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-RANK-<br/>CLASSIFICATION<br/>+1 pinned source<br/>proved"}
+  n48 --> r20
+  r20 --> n54
+  r21{"AND<br/>M12-ROUTE-TARGET<br/>+1 omitted proof premise<br/>blocked"}
+  class r21 open
+  n18 --> r21
+  r21 --> n54
+  r22{"AND<br/>DERIVE-ARITH-ALTERNATING-TWO-<br/>POLE-COVERS<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r22 proved
-  n71 --> r22
-  n43 --> r22
-  r22 --> n73
-  r23{"AND<br/>NARROW-QUADRATIC-ROUTE-TO-<br/>FULL-FIBRE-RANKS<br/>+1 pinned source<br/>proved"}
+  n1 --> r22
+  r22 --> n57
+  r23{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-FINITE-<br/>ETALE-REALIZATION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r23 proved
-  n71 --> r23
-  n56 --> r23
-  r23 --> n73
-  r24{"AND<br/>DERIVE-ARITH-FIXED-QUINTIC-<br/>FULL-HASSE-FIBRES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r23 --> n71
+  r24{"AND<br/>DERIVE-ARITH-COMMON-<br/>ARITHMETIC-FIBERS-COR-RANK-<br/>CLASSIFICATION<br/>+1 pinned source<br/>proved"}
   class r24 proved
-  r24 --> n58
-  r25{"AND<br/>DERIVE-ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n71 --> r24
+  n46 --> r24
+  r24 --> n73
+  r25{"AND<br/>NARROW-QUADRATIC-ROUTE-TO-<br/>FULL-FIBRE-RANKS<br/>+1 pinned source<br/>proved"}
   class r25 proved
-  n44 --> r25
-  n58 --> r25
-  r25 --> n61
-  r26{"AND<br/>DERIVE-ARITH-RANK-FIVE-HASSE-<br/>ALGEBRAS<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n71 --> r25
+  n53 --> r25
+  r25 --> n73
+  r26{"AND<br/>DERIVE-ARITH-FIXED-QUINTIC-<br/>FULL-HASSE-FIBRES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r26 proved
-  r26 --> n44
-  r27{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
+  r26 --> n55
+  r27{"AND<br/>DERIVE-ARITH-GENERIC-S5-HASSE-<br/>SUBGROUP<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r27 proved
-  n74 --> r27
-  r27 --> n75
-  r28{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>+1 omitted proof premise<br/>proved"}
+  n47 --> r27
+  n55 --> r27
+  r27 --> n59
+  r28{"AND<br/>DERIVE-ARITH-RANK-FIVE-HASSE-<br/>ALGEBRAS<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r28 proved
-  r28 --> n75
-  r29{"AND<br/>DERIVE-FOUND-RELATIVE-COMPILER<br/>+1 pinned source<br/>proved"}
+  r28 --> n47
+  r29{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
   class r29 proved
-  r29 --> n41
-  r30{"AND<br/>DERIVE-JAC-MONODROMY<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n74 --> r29
+  r29 --> n75
+  r30{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>+1 omitted proof premise<br/>proved"}
   class r30 proved
-  r30 --> n43
-  r31{"AND<br/>POWER-SATURATION-TO-NO-<br/>QUADRATIC-DEGREE<br/>+1 omitted proof premise<br/>proved"}
+  r30 --> n75
+  r31{"AND<br/>DERIVE-FOUND-RELATIVE-COMPILER<br/>+1 pinned source<br/>proved"}
   class r31 proved
-  r31 --> n56
-  r32{"AND<br/>DERIVE-JAC-PLANE-COMPLETION<br/>+1 pinned source<br/>proved"}
+  r31 --> n44
+  r32{"AND<br/>DERIVE-JAC-ALTERNATING-<br/>COTANGENT-CHARTS<br/>+1 pinned source<br/>proved"}
   class r32 proved
-  n41 --> r32
-  r32 --> n46
-  r33{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S1<br/>+1 pinned source<br/>proved"}
+  n57 --> r32
+  r32 --> n63
+  r33{"AND<br/>DERIVE-JAC-MONODROMY<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r33 proved
-  n41 --> r33
-  r33 --> n47
-  r34{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S2<br/>+1 pinned source<br/>proved"}
+  r33 --> n46
+  r34{"AND<br/>POWER-SATURATION-TO-NO-<br/>QUADRATIC-DEGREE<br/>+1 omitted proof premise<br/>proved"}
   class r34 proved
-  n41 --> r34
-  r34 --> n48
-  r35{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S3<br/>+1 pinned source<br/>proved"}
+  r34 --> n53
+  r35{"AND<br/>DERIVE-JAC-PLANE-COMPLETION<br/>+1 pinned source<br/>proved"}
   class r35 proved
-  n41 --> r35
+  n44 --> r35
   r35 --> n49
-  r36{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S4<br/>+1 pinned source<br/>proved"}
+  r36{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S1<br/>+1 pinned source<br/>proved"}
   class r36 proved
-  n41 --> r36
+  n44 --> r36
   r36 --> n50
-  r37{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S5<br/>+1 pinned source<br/>proved"}
+  r37{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S2<br/>+1 pinned source<br/>proved"}
   class r37 proved
-  n41 --> r37
+  n44 --> r37
   r37 --> n51
-  r38{"AND<br/>DERIVE-JAC-RECEIVER<br/>+1 pinned source<br/>proved"}
+  r38{"AND<br/>DERIVE-JAC-PLANE-COMPLETION-S3<br/>+1 pinned source<br/>proved"}
   class r38 proved
-  n41 --> r38
+  n44 --> r38
   r38 --> n52
-  r39{"AND<br/>DERIVE-JAC-RECEIVER-S1<br/>+1 pinned source<br/>proved"}
-  class r39 proved
-  n41 --> r39
-  r39 --> n53
-  r40{"AND<br/>DERIVE-JAC-RECEIVER-S2<br/>+1 pinned source<br/>proved"}
-  class r40 proved
-  n41 --> r40
-  r40 --> n54
-  r41{"AND<br/>DERIVE-JAC-RECEIVER-S3<br/>+1 pinned source<br/>proved"}
-  class r41 proved
-  n41 --> r41
-  r41 --> n55
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -3757,7 +3757,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 42 routes (499 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 39 routes (513 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 

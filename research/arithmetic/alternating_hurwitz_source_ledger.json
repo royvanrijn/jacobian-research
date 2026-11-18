@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-18",
+  "result_document": "research/arithmetic/ALTERNATING_HURWITZ_DISCRIMINANT_BRIDGE.md",
+  "assurance": "Primary-source statements inspected internally; imported theorems are not independently reproved or formally verified. Context references do not establish novelty.",
+  "sources": [
+    {
+      "id": "bilu-strambi-ret",
+      "title": "Quantitative Riemann Existence Theorem over a Number Field",
+      "authors": [
+        "Yuri F. Bilu",
+        "Marco Strambi"
+      ],
+      "version": "arXiv:0809.0345v4, 2 August 2009; manuscript dated 29 July 2009",
+      "primary_url": "https://arxiv.org/pdf/0809.0345v4",
+      "retained_pdf": "research/arithmetic/sources/bilu-strambi-0809.0345v4.pdf",
+      "sha256": "fa12124533d1de775db435eb9112dc64698b4121186be88a64602c693fd96c5a",
+      "bytes": 285369,
+      "pdf_pages": 23,
+      "direct_read": true,
+      "extraction": "pdftotext -layout; statements on printed page 2 and proof setup in Section 5, printed pages 10-11 inspected",
+      "imported_statements": [
+        {
+          "locator": "Theorem 1.1",
+          "printed_pages": "2",
+          "pdf_pages": "2",
+          "statement": "A finite covering of the sphere by a closed oriented surface, unramified outside finite M, has an algebraic realization (C,x) over C, unique up to isomorphism.",
+          "application": "Apply to the connected topological cover specified by the transitive product-one branch-cycle tuple."
+        },
+        {
+          "locator": "Theorem 1.2(a)",
+          "printed_pages": "2-3",
+          "pdf_pages": "2-3",
+          "statement": "For degree n>=2 and M contained in P1(Qbar), the same cover is realized by a curve C/L and x in L(C), for some number field L containing Q(M).",
+          "application": "Choose algebraic branch points. Pass to the smooth projective model; genus zero over Qbar gives P1, permitting algebraic pole normalization."
+        }
+      ],
+      "justification_inspected": "Section 5, page 10, starts with Theorem 1.1 and algebraic definability; Sections 6-15 establish the stronger quantitative model theorem.",
+      "limits": "No descent to Q is asserted. RET, arithmetic realization, and genus-zero classification are imported results."
+    },
+    {
+      "id": "muller-laurent-context",
+      "title": "Permutation groups with a cyclic two-orbits subgroup and monodromy groups of Laurent polynomials",
+      "authors": [
+        "Peter Müller"
+      ],
+      "version": "Ann. Sc. Norm. Super. Pisa Cl. Sci. (5), 12 (2013), 369-438",
+      "primary_url": "https://www.numdam.org/item/ASNSP_2013_5_12_2_369_0.pdf",
+      "retained_pdf": "research/arithmetic/sources/muller-laurent-monodromy-2013.pdf",
+      "sha256": "fa17635dfb34b9e486a83ea1642357c922e89ce93fec897bc57a707ef91dc972",
+      "bytes": 1945573,
+      "pdf_pages": 70,
+      "direct_read": true,
+      "extraction": "pdftotext -layout; Section 4.6, Theorem 4.8 inspected",
+      "context_statement": {
+        "locator": "Theorem 4.8",
+        "printed_pages": "416-418",
+        "pdf_pages": "48-50",
+        "statement": "Classifies arithmetic and geometric monodromy possibilities for indecomposable rational functions over characteristic-zero fields having exactly two poles. The natural alternating/symmetric case is retained, with many ramification possibilities.",
+        "application": "Establishes the existing Laurent-monodromy context; does not certify priority for this exact double-transposition passport or its collinear-node consequence."
+      },
+      "role": "Context reference, not an indispensable proof dependency.",
+      "limits": "No exhaustive priority comparison or independent reproof of the classification is claimed."
+    },
+    {
+      "id": "jones-primitive-cycle",
+      "title": "Primitive permutation groups containing a cycle",
+      "authors": [
+        "Gareth A. Jones"
+      ],
+      "version": "arXiv:1209.5169v1 (header 24 September 2012; retained PDF has internal date 27 November 2024)",
+      "primary_url": "https://arxiv.org/pdf/1209.5169v1",
+      "retained_pdf": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "bytes": 106850,
+      "pdf_pages": 6,
+      "direct_read": true,
+      "extraction": "pdftotext -layout; statements on pages 1-2, Section 2 proof on pages 3-4, and historical justification in Section 3, page 5 inspected",
+      "imported_statements": [
+        {
+          "locator": "Theorem 1.1 (Jordan), and Corollary 1.3",
+          "printed_pages": "1-2",
+          "pdf_pages": "1-2",
+          "statement": "A primitive finite permutation group containing a prime cycle fixing at least three letters contains the alternating group. Corollary 1.3 gives the same conclusion without primality.",
+          "application": "A primitive degree-eight arithmetic monodromy group with a 5-cycle contains A8. Its nontrivial geometric normal subgroup, already contained in A8 by the square discriminant over algebraic constants, is therefore A8."
+        }
+      ],
+      "justification_inspected": "Section 2 proves the stronger classification. Section 3 derives the prime-cycle formulation from Jordan's 1871 and 1873 theorems. Those classical results are imported rather than independently reproved.",
+      "limits": "Requires primitivity. Finite factorization and specialization-to-generic group inclusion are separate arithmetic inputs, not consequences of this theorem."
+    }
+  ]
+}
