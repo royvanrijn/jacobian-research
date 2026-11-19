@@ -4,8 +4,8 @@
   "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
   "edition": {
     "pdf": "paper.pdf",
-    "sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
-    "pages": 71
+    "sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "pages": 69
   },
   "mathematical_scope": {
     "general": "Fixed even modulus; two arbitrary fixed subgroups, fixed residue subsets, fixed coprime bad-supported coefficients. Explicit positive logarithmic saving uniform in targets and valuations; uniform absolute interval discrepancy.",
@@ -176,120 +176,179 @@
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
     "result": "passed",
-    "pages": 71,
+    "pages": 69,
     "unresolved_references": false,
     "overfull_boxes": 0,
     "underfull_boxes": 1,
     "diagnostics_review": "No LaTeX warning, unresolved reference or overfull box. One harmless underfull bibliography paragraph inspected.",
     "citations_resolved": true,
-    "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+    "pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
     "warnings": []
   },
   "pdf_only_reader": {
-    "review_kind": "Focused isolated internal AI PDF-only packaging/notation check",
-    "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
-    "pages": 71,
-    "supplied_context": "Only the two compiled PDFs; no sources, repository history, web or supplementary data.",
+    "pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "pages": 69,
+    "review_kind": "Focused isolated PDF-only citation and layout check",
     "record": {
-      "review_kind": "Focused PDF-only packaging, notation and selected-page layout recheck; not a full proof review",
-      "research_inputs": [
-        "companion.pdf",
-        "flagship.pdf",
-        "companion-repaired.pdf (parent-supplied pagination repair)"
-      ],
-      "scope": {
-        "read": "Titles, abstracts and introductions of both original PDFs; companion Appendix A; flagship Section 8 reconstruction.",
-        "methods": "PDF-derived text, PDF URL annotations, SHA256 and selected-page PNG rendering only. Automated heading/keyword location was used to find relevant pages.",
+      "review_kind": "focused_pdf_only_reciprocal_citation_check",
+      "reviewed_at_utc": "2026-11-19T14:25:47.434217+00:00",
+      "status": "pass",
+      "required_repairs": [],
+      "scopes": {
+        "included": [
+          "Both PDF introductions and bibliographies",
+          "Reciprocal citation author, full titles, version 1, year 2026, and DOI directions",
+          "Embedded reciprocal DOI URI annotations",
+          "Internal citation reference destinations and absence of unresolved labels on inspected pages",
+          "Visual layout of the complete affected pages"
+        ],
         "excluded": [
-          "repository sources",
-          "other research notes",
-          "internet",
-          "opening external links",
-          "external-review validation",
-          "import validation",
-          "checker execution or checker validation",
-          "full proof review"
-        ],
-        "final_repair_recheck": "Only companion-repaired.pdf pages 33-34 were reread and visually rechecked; the earlier wider focused reading is recorded against its original PDF hash."
+          "Full mathematical proof review",
+          "Review of unchanged mathematics",
+          "Repository source, history, notes, or other research files",
+          "External DOI resolution or verification of live Zenodo records",
+          "External web or literature validation"
+        ]
       },
-      "companion": {
-        "file": "companion-repaired.pdf",
-        "title": "Exact Sumsets of Primitive Quadratic Norms",
-        "pdf_sha256": "c3823e04269102e248e5f28af8ae966b445644fc4bf951a8e101d5ed7d565a54",
-        "pages": 36,
-        "inspected_pages": [
-          33,
-          34
-        ],
-        "required_repairs": [],
-        "previous_focused_read": {
-          "file": "companion.pdf",
-          "pdf_sha256": "5922915493f37a1a4971ec3a43170901edff45a434de326eeaef917c40fa21da",
-          "pages": 36,
+      "method": "Only the two supplied PDF files were used as document evidence. Poppler pdfinfo, pdftotext and pdftohtml inspected text, URI annotations and internal link destinations; pdftoppm rendered the listed complete pages for visual inspection. SHA-256 hashes were rechecked after review.",
+      "full_proof_review_performed": false,
+      "external_validation_performed": false,
+      "external_validation_claimed": false,
+      "pdfs": [
+        {
+          "file": "flagship.pdf",
+          "path": "/home/royvanrijn/src/jacobian-research/.scratch/reciprocal-pdf-only/flagship.pdf",
+          "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+          "sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+          "pages": 69,
           "inspected_pages": [
             1,
             2,
-            32,
-            33,
+            3,
+            4,
+            58,
+            68,
+            69
+          ],
+          "visually_inspected_pages": [
+            1,
+            2,
+            3,
+            4,
+            58,
+            68,
+            69
+          ],
+          "introduction_pages": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "bibliography_pages": [
+            68,
+            69
+          ],
+          "all_pages_scanned_for_uri_annotations": true,
+          "reciprocal_citation": {
+            "label": "[15]",
+            "page": 69,
+            "cited_author": "R. van Rijn",
+            "cited_title": "Exact Sumsets of Primitive Quadratic Norms",
+            "version": 1,
+            "year": 2026,
+            "publisher": "Zenodo",
+            "doi": "10.5281/zenodo.24371462",
+            "uri": "https://doi.org/10.5281/zenodo.24371462",
+            "doi_direction_correct": true,
+            "uri_annotation_count": 2,
+            "clickable_uri_annotation_confirmed": true,
+            "externally_opened_or_resolved": false,
+            "in_text_citation_pages": [
+              3,
+              58
+            ],
+            "internal_reference_destination": "cite.exactcompanion",
+            "internal_reference_destination_page": 69,
+            "internal_reference_resolution_confirmed": true
+          },
+          "relationship_statement": {
+            "status": "pass",
+            "finding": "The introduction (page 3) says the companion gives exact classifications and finite certificates for four primitive quadratic norm sumsets; page 58 reiterates the companion scope."
+          },
+          "layout": {
+            "status": "pass",
+            "finding": "Complete rendered inspected pages are legible; reciprocal citation prose and bibliography entries have no clipping, overlap, unresolved labels, or missing glyphs. Normal DOI line wrapping preserves clickable URI annotations."
+          },
+          "required_repairs": [],
+          "pdf_modified": false
+        },
+        {
+          "file": "companion.pdf",
+          "path": "/home/royvanrijn/src/jacobian-research/.scratch/reciprocal-pdf-only/companion.pdf",
+          "title": "Exact Sumsets of Primitive Quadratic Norms",
+          "sha256": "2bd8db84d6c3125e8fd9232e020da74a908cfb959e553191b1ef744a0d5ce7c6",
+          "pages": 34,
+          "inspected_pages": [
+            1,
+            2,
             34
           ],
-          "required_repairs_at_that_stage": [
-            "Minor pagination: keep the p33 Mixed least-witness indices label with its hash, formerly alone at the top of p34."
-          ]
-        },
-        "certificate_pointer": {
-          "inspected_pdf": "companion.pdf",
-          "page": 32,
-          "clickable_text": "frozen certificate supplement",
-          "commit_displayed": "b854dddcda88",
-          "uri_in_link_annotation": "https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip",
-          "assessment": "A retrieval-addressed URI pinned to a full Git commit is present as a clickable PDF link. The full URI is in the annotation rather than printed literally. Network availability and archive contents were not tested."
-        },
-        "tex_vs_verification_files": "Original p33 explicitly says the linked archive retains the sources of its accompanying edition, its certificate files apply to this article, and compiling uses separate TeX sources without executing code. The same statement is visible on repaired p33.",
-        "layout": "Original selected pages had no observed clipping or overlap. The sole minor label/hash split is repaired: both now appear together at the top of repaired p34. Repaired pp33-34 show no remaining observed layout issue.",
-        "reader_answers": {
-          "exact_contribution": "Exact binary sumsets of primitive numerical quadratic norm values at discriminants -3, -7, -8 and -11; the additional -7 exceptions are {7,77,203}.",
-          "mechanism": "Quaternionic norm shells, normalized classical Hecke bounds, dyadic/ramified filters, exact finite scans, rational interval bridges and multiplicative descent.",
-          "hardest_step": "As an identified proof burden, showing the finite scans, interval inequalities and infinite estimates cover every reduced target and survive descent; this focused reading does not establish that burden independently.",
-          "limits": "Four stated discriminants; positive numerical values counted once rather than coordinate representations. Finite code is not the spectral proof.",
-          "verification_obstacles": "Replaying the external supplement and checking its exact coverage arguments and spectral imports remain necessary for full validation; neither archive retrieval nor checker execution was performed."
+          "visually_inspected_pages": [
+            1,
+            2,
+            34
+          ],
+          "introduction_pages": [
+            1,
+            2
+          ],
+          "bibliography_pages": [
+            34
+          ],
+          "all_pages_scanned_for_uri_annotations": true,
+          "reciprocal_citation": {
+            "label": "[9]",
+            "page": 34,
+            "cited_author": "R. van Rijn",
+            "cited_title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+            "version": 1,
+            "year": 2026,
+            "publisher": "Zenodo",
+            "doi": "10.5281/zenodo.24371355",
+            "uri": "https://doi.org/10.5281/zenodo.24371355",
+            "doi_direction_correct": true,
+            "uri_annotation_count": 1,
+            "clickable_uri_annotation_confirmed": true,
+            "externally_opened_or_resolved": false,
+            "in_text_citation_pages": [
+              1
+            ],
+            "internal_reference_destination": "cite.pointwisecompanion",
+            "internal_reference_destination_page": 34,
+            "internal_reference_resolution_confirmed": true
+          },
+          "relationship_statement": {
+            "status": "pass",
+            "finding": "Page 1 cites broader pointwise correlation asymptotics and explicitly says the exact classifications have their own classical proof route and do not depend on the pointwise paper."
+          },
+          "layout": {
+            "status": "pass",
+            "finding": "Complete rendered inspected pages are legible; reciprocal citation prose and bibliography entries have no clipping, overlap, unresolved labels, or missing glyphs. Normal DOI line wrapping preserves clickable URI annotations."
+          },
+          "required_repairs": [],
+          "pdf_modified": false
         }
-      },
-      "flagship": {
-        "file": "flagship.pdf",
-        "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
-        "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
-        "pages": 71,
-        "inspected_pages": [
-          1,
-          2,
-          3,
-          4,
-          28,
-          29,
-          30
-        ],
-        "required_repairs": [],
-        "model_notation": "The p30 correlation identity uses calligraphic D_1 and D_2 for the arithmetic models, consistently with the p2 model and p4 notation table. Ordinary D and D_i remain the auxiliary prime-product/dyadic symbols in that table.",
-        "layout": "No clipping, overlap or unreadable mathematical symbols observed on the selected rendered pages.",
-        "reader_answers": {
-          "exact_contribution": "Under stated analytic inputs, fixed-shift CK/Smilansky pair asymptotics and target-uniform subgroup/coset asymptotics, plus mixed primitive leading terms in one fixed quadratic field; genus replacement has a separate classical route.",
-          "mechanism": "Replace sparse indicators by arithmetic models retaining surviving congruence characters, using prime-bank graph comparisons and fixed-shift/reflected frequency estimates, then evaluate local arithmetic.",
-          "hardest_step": "As an identified proof burden, keeping reflected-target cancellation and normalization uniform and fixing comparison accuracies before choosing model depth; Section 8 explains the assembly but this pass does not validate all earlier inputs.",
-          "limits": "Fixed arithmetic data and fixed shifts; primitive mixed forms share one quadratic field. Main asymptotics retain recent imported inputs; no numerical onset or complete small-exception classification is claimed. Numerical values are counted once.",
-          "verification_obstacles": "External imports, comparison hypotheses and earlier graph/frequency estimates, and application local-factor calculations were outside this focused packaging/notation check."
-        }
-      },
-      "conclusion": "No remaining required repair identified within the stated focused scope. This is not certification of either article or its imports/code."
+      ]
     },
-    "scope": "Focused inspection of introductions and affected passages; no complete proof or external import validation."
+    "scope": "Introductions, reciprocal bibliography entries and DOI link annotations only; not a full proof review."
   },
   "layout_review": {
-    "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
-    "pages": 71,
-    "method": "Inspected rendered companion pages32-36 after the link and samepage adjustment, and flagship page30 after the model-notation correction. Earlier complete layout records retained.",
-    "result": "No clipping or overlapping text/equations; the final digest label stays with its hash.",
-    "scope": "Affected-page visual check only, not mathematical verification."
+    "pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "pages": 69,
+    "method": "Rendered and inspected the affected introductions and bibliography pages; prior complete layout checks retained.",
+    "result": "No clipped/overlapping content or unreadable citation. Existing harmless flagship underfull bibliography paragraph unchanged.",
+    "scope": "Affected-page layout only."
   },
   "assurance": {
     "external_human_review": false,
@@ -940,6 +999,494 @@
         "caution": "Absence of a found contradiction in this internal AI review is not a proof of correctness or an external human/import validation."
       },
       "disposition": "No further definite required repair identified after the focused recheck. Retain the independent-scrutiny items as review obligations, not as established errors."
+    },
+    {
+      "review_kind": "Focused isolated internal AI PDF-only packaging/notation check",
+      "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+      "pages": 71,
+      "supplied_context": "Only the two compiled PDFs; no sources, repository history, web or supplementary data.",
+      "record": {
+        "review_kind": "Focused PDF-only packaging, notation and selected-page layout recheck; not a full proof review",
+        "research_inputs": [
+          "companion.pdf",
+          "flagship.pdf",
+          "companion-repaired.pdf (parent-supplied pagination repair)"
+        ],
+        "scope": {
+          "read": "Titles, abstracts and introductions of both original PDFs; companion Appendix A; flagship Section 8 reconstruction.",
+          "methods": "PDF-derived text, PDF URL annotations, SHA256 and selected-page PNG rendering only. Automated heading/keyword location was used to find relevant pages.",
+          "excluded": [
+            "repository sources",
+            "other research notes",
+            "internet",
+            "opening external links",
+            "external-review validation",
+            "import validation",
+            "checker execution or checker validation",
+            "full proof review"
+          ],
+          "final_repair_recheck": "Only companion-repaired.pdf pages 33-34 were reread and visually rechecked; the earlier wider focused reading is recorded against its original PDF hash."
+        },
+        "companion": {
+          "file": "companion-repaired.pdf",
+          "title": "Exact Sumsets of Primitive Quadratic Norms",
+          "pdf_sha256": "c3823e04269102e248e5f28af8ae966b445644fc4bf951a8e101d5ed7d565a54",
+          "pages": 36,
+          "inspected_pages": [
+            33,
+            34
+          ],
+          "required_repairs": [],
+          "previous_focused_read": {
+            "file": "companion.pdf",
+            "pdf_sha256": "5922915493f37a1a4971ec3a43170901edff45a434de326eeaef917c40fa21da",
+            "pages": 36,
+            "inspected_pages": [
+              1,
+              2,
+              32,
+              33,
+              34
+            ],
+            "required_repairs_at_that_stage": [
+              "Minor pagination: keep the p33 Mixed least-witness indices label with its hash, formerly alone at the top of p34."
+            ]
+          },
+          "certificate_pointer": {
+            "inspected_pdf": "companion.pdf",
+            "page": 32,
+            "clickable_text": "frozen certificate supplement",
+            "commit_displayed": "b854dddcda88",
+            "uri_in_link_annotation": "https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip",
+            "assessment": "A retrieval-addressed URI pinned to a full Git commit is present as a clickable PDF link. The full URI is in the annotation rather than printed literally. Network availability and archive contents were not tested."
+          },
+          "tex_vs_verification_files": "Original p33 explicitly says the linked archive retains the sources of its accompanying edition, its certificate files apply to this article, and compiling uses separate TeX sources without executing code. The same statement is visible on repaired p33.",
+          "layout": "Original selected pages had no observed clipping or overlap. The sole minor label/hash split is repaired: both now appear together at the top of repaired p34. Repaired pp33-34 show no remaining observed layout issue.",
+          "reader_answers": {
+            "exact_contribution": "Exact binary sumsets of primitive numerical quadratic norm values at discriminants -3, -7, -8 and -11; the additional -7 exceptions are {7,77,203}.",
+            "mechanism": "Quaternionic norm shells, normalized classical Hecke bounds, dyadic/ramified filters, exact finite scans, rational interval bridges and multiplicative descent.",
+            "hardest_step": "As an identified proof burden, showing the finite scans, interval inequalities and infinite estimates cover every reduced target and survive descent; this focused reading does not establish that burden independently.",
+            "limits": "Four stated discriminants; positive numerical values counted once rather than coordinate representations. Finite code is not the spectral proof.",
+            "verification_obstacles": "Replaying the external supplement and checking its exact coverage arguments and spectral imports remain necessary for full validation; neither archive retrieval nor checker execution was performed."
+          }
+        },
+        "flagship": {
+          "file": "flagship.pdf",
+          "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+          "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+          "pages": 71,
+          "inspected_pages": [
+            1,
+            2,
+            3,
+            4,
+            28,
+            29,
+            30
+          ],
+          "required_repairs": [],
+          "model_notation": "The p30 correlation identity uses calligraphic D_1 and D_2 for the arithmetic models, consistently with the p2 model and p4 notation table. Ordinary D and D_i remain the auxiliary prime-product/dyadic symbols in that table.",
+          "layout": "No clipping, overlap or unreadable mathematical symbols observed on the selected rendered pages.",
+          "reader_answers": {
+            "exact_contribution": "Under stated analytic inputs, fixed-shift CK/Smilansky pair asymptotics and target-uniform subgroup/coset asymptotics, plus mixed primitive leading terms in one fixed quadratic field; genus replacement has a separate classical route.",
+            "mechanism": "Replace sparse indicators by arithmetic models retaining surviving congruence characters, using prime-bank graph comparisons and fixed-shift/reflected frequency estimates, then evaluate local arithmetic.",
+            "hardest_step": "As an identified proof burden, keeping reflected-target cancellation and normalization uniform and fixing comparison accuracies before choosing model depth; Section 8 explains the assembly but this pass does not validate all earlier inputs.",
+            "limits": "Fixed arithmetic data and fixed shifts; primitive mixed forms share one quadratic field. Main asymptotics retain recent imported inputs; no numerical onset or complete small-exception classification is claimed. Numerical values are counted once.",
+            "verification_obstacles": "External imports, comparison hypotheses and earlier graph/frequency estimates, and application local-factor calculations were outside this focused packaging/notation check."
+          }
+        },
+        "conclusion": "No remaining required repair identified within the stated focused scope. This is not certification of either article or its imports/code."
+      },
+      "scope": "Focused inspection of introductions and affected passages; no complete proof or external import validation."
+    },
+    {
+      "review_type": "isolated_full_pdf_read_with_focused_repaired_edition_check",
+      "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/shortened-pdf-only/flagship-repaired.pdf",
+      "source_pdf_host_path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\royvanrijn\\src\\jacobian-research\\.scratch\\shortened-pdf-only\\flagship-repaired.pdf",
+      "pdf_sha256": "8229107bc5852502777d9168f947d873e176b01440cebc3b7e71aa8b750ae953",
+      "pages": 69,
+      "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+      "supplied_context": {
+        "mathematical_context": "Only the supplied PDF. The task requested five reader answers and concrete hypothesis, scope, reference, and layout defects.",
+        "permitted_evidence": [
+          "PDF extracted text",
+          "PDF rendered pages",
+          "PDF link annotations"
+        ],
+        "excluded_and_not_read": [
+          "repository sources",
+          "repository history",
+          "other project notes",
+          "other reviews",
+          "web pages",
+          "external imported papers"
+        ],
+        "operational_instruction_read": "The PDF skill was read for rendering/extraction procedure; it supplied no mathematical evidence.",
+        "independence_limit": "This is a PDF-only reader review, not external validation of imports, formal verification, or replay of verification code.",
+        "followup_context": "The root supplied the repaired PDF path, expected hash and description of the three local repairs. Those repairs and the hash were independently checked against the repaired PDF; no repository source, history, other review, or external source was read."
+      },
+      "reading_scope": {
+        "text": "Focused repaired-edition check of pages 30, 33, 59, and 61, checking the existing eta_0 definition and the three requested repaired passages. No second full read.",
+        "pages_read_for_focused_check": [
+          30,
+          33,
+          59,
+          61
+        ],
+        "mechanical_comparison": "A complete PDF-derived pdftotext -layout diff against the original edition was inspected. It showed the three intended wording changes plus line, equation-placement and page-break reflow on pages 33-36, 59 and 61; no additional substantive text change was identified.",
+        "method": "Poppler text extraction, complete extracted-text diff, and focused rendered-page inspection.",
+        "full_read_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5"
+      },
+      "visual_scope": {
+        "all_pages_rendered": false,
+        "all_pages_visually_inspected": false,
+        "pages_rendered_and_inspected": [
+          33,
+          34,
+          35,
+          36,
+          59,
+          61
+        ],
+        "resolution": "Longest side 1400 pixels for pages 33, 34, 59, 61; 1200 pixels for pages 35-36.",
+        "reason_for_continuation_pages": "The shorter cutoff wording reflowed pages 33-36, so all affected continuation pages were checked.",
+        "observed_layout_defects": [],
+        "observed_layout_quality": "The three repaired passages and their affected continuation pages remain legible and unclipped. Stage 2 now begins at the bottom of p.33 and continues on p.34; the continuation is intact. The finite-density display on p.59 and positive-variable sum on p.61 fit cleanly.",
+        "limits": "This is a focused visual check of the repaired edition. The original edition received the all-page contact-sheet inspection recorded separately."
+      },
+      "link_annotation_scope": {
+        "current_edition_links_reextracted": false,
+        "original_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5",
+        "original_edition_links": {
+          "method": "PDF-derived pdftohtml link extraction; links were inspected as annotations only and were not opened.",
+          "external_link_annotation_count": 19,
+          "distinct_external_urls": 17,
+          "important_import_links_present": true,
+          "important_import_urls": [
+            "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
+            "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf"
+          ],
+          "reference_findings": "References [7] and [8] have the visible anchor 'Immutable primary PDF' and embed immutable commit URLs. They are not missing-source defects. Internal theorem, equation, and section links appeared coherent in the reviewed PDF.",
+          "unverified": "URL reachability and the accuracy or applicability of all cited external results were not tested."
+        },
+        "limitation": "The repaired-edition check did not repeat the link-annotation extraction. The original annotation review is preserved separately, and the complete extracted-text comparison did not identify a reference-text change."
+      },
+      "five_answers": {
+        "precise_contribution": {
+          "answer": "The analytic centerpiece is Theorem 2.1: under the stated all-conductor zero-free and weighted-dilation imports, exact common-prime invariance, recordwise periodic rough centering, bounded models, and a positive sparse record envelope imply an indicator-to-model comparison with a logarithmic saving for fixed nonzero shifts and reflected sums with fixed bad-supported coefficients. It is applied to the five ordinary x^2+d y^2 fixed-shift pair asymptotics, including X/(2 log X) at d=h=1; to target-uniform subgroup and self-coset semigroup sums with explicit local factors and logarithmic savings; and to common-field primitive form sums. For the latter, an independent classical route gives order bounds and invariance under genus replacement with relative log saving (1/5 is allowed), while the recent inputs give the mixed-conductor explicit leading term with relative o(1), without a class-number divisor.",
+          "locations": [
+            "Theorem 2.1, pp.4-6",
+            "Theorem 10.1 and Corollary 1.1, pp.32-36",
+            "Theorems 11.1 and 11.10, pp.36-49",
+            "Theorem 12.1, pp.49-50"
+          ]
+        },
+        "conceptual_reason": {
+          "answer": "Multiplication by a suitable prime preserves both a sparse indicator and its complete character model. Sparse bank reconstruction exposes many exact prime records; the shared graph comparison replaces a centered binary count by comparisons with two independent large prime products. Those products make the cofactor long enough to combine a small-prime saving with a mean-square bound. The full character projection is necessary because average density alone loses surviving residue bias. For reflected sums the target-sized rational grid is retained exactly and discrete Parseval absorbs its many grid points. For primitive forms, orientation changes at sufficiently many split primes fill the doubled class group, so most local-shadow values occur in every compatible ideal class rather than being partitioned among classes.",
+          "locations": [
+            "Introduction 1.2-1.3, pp.2-3",
+            "Sections 4-8, pp.9-29",
+            "Sections 12.2-12.4, pp.51-54"
+          ]
+        },
+        "hardest_step_and_location": {
+          "answer": "The most distinctive analytic bottleneck is Proposition 7.1 and its use in Section 7.2 (pp.24-26, equations (54)-(64)): retain every gcd profile and exceptional character when the denominator contains the target, extract a selected prime only before imposing the smooth-record cap, and prove an energy of size Y^2/q rather than losing a target factor. This rests on the signed progression-frame cancellation in Lemma 4.1 (pp.10-14, especially (27)-(29)) and the large-displacement endpoint pairing in Lemma 4.2 (pp.14-15). The independent classical claim has a separate hard step: Appendix A.2-A.3 (pp.61-68) must turn a uniformly shifted weighted family into an injective positive restoration of numerical pairs; it is not supplied by the conditional comparison theorem.",
+          "most_audit_intensive_compression": "The passage from the three-variable boxes and (121) to the aggregate reserve (124), and the uniform mean/boundary summations feeding (127), are the places where the reader is asked to reconstruct the most bookkeeping."
+        },
+        "limits": {
+          "answer": "All modulus, field, conductors, forms, coefficients, cosets, and shifts are fixed. The analytic asymptotics retain both recent imports; Section 6.4 explicitly does not replace the high-height zero-free use by Siegel-Walfisz. There is no growing-modulus or growing-sublinear-shift theorem, no arbitrary pair of disjoint cosets, no higher-indicator correlation theorem, and no power-short interval conclusion. Primitive representations mean coprime coordinates and differ from the ordinary CK value sets; they also differ from coprime summands. The primitive-form theorem keeps a single quadratic field, allows two fixed conductors, and gives only relative o(1) for the full explicit prefix-summed leading term. Numerical thresholds are not supplied. Separate p-adic tests may miss the joint finite residue-state obstruction.",
+          "locations": [
+            "Introduction 1.1 and 1.4, pp.2-3",
+            "Theorem 2.1, p.6",
+            "Section 6.4, p.23",
+            "Theorem 11.1, p.37",
+            "Remark 11.7, p.40",
+            "Theorem 11.10 and boundary paragraph, pp.43 and 49",
+            "Theorem 12.1 and Section 13, pp.50 and 58"
+          ]
+        },
+        "verification_obstacles": {
+          "answer": "The decisive imported operator and zero-free statements are restated and linked, but their truth and the match to the original sources cannot be validated from this PDF alone. The same restriction applies to the cited classical prime-class estimate, Hasse norm theorem, sieve theorems, and Weil-Estermann bound. Internal review is especially sensitive to unnormalized mark vectors, shared-label probability normalization, signed exceptional-component cancellation, phase identification on progression banks, and all-profile target-grid normalization. The appendix gives an extensive route but compresses some global error summations into generous exponent reserves. There is no formal proof or independent replay within this review; no conclusion of full mathematical certification follows from reading the paper.",
+          "actionable_presentation_obstacles": [
+            "The original F1 statement-domain and F2 cutoff-definition issues are resolved in the repaired edition.",
+            "The aggregate box and mean-error summation in (124)-(127) remains an audit-clarity recommendation for an independent mathematical review; it is not expanded or treated as an outstanding required editorial repair."
+          ]
+        }
+      },
+      "findings": [
+        {
+          "id": "F1",
+          "kind": "statement_and_definition_scope",
+          "severity": "minor_required_statement_repair",
+          "location": "p.61, Proposition A.2; preceding density definition on p.59",
+          "evidence": "Lemma A.1 defines Gamma_{A,B;U,V0} after requiring A,B coprime and L0-supported. Proposition A.2 uses Gamma_{Au,Bv;U,V0}, where u,v are arbitrary C-supported parameters and may have common factors. Its displayed sum writes Aux+Bvy=N and residue conditions, without x,y>0.",
+          "consequence": "The intended root count extends naturally, and positivity is inferable from the surrounding count, but the proposition as a standalone statement leaves the coefficient-domain extension and the finite summation domain implicit.",
+          "repair": "In Proposition A.2 explicitly say x,y are positive integers, and define Gamma_{a,b;U,V0}(N)=L0/|H|^2 times the number of roots in U x V0 for arbitrary coefficient pairs a,b used there.",
+          "requires_new_mathematics": false,
+          "demonstrated_false_mathematical_claim": false,
+          "evidence_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5",
+          "status": "resolved_in_repaired_edition",
+          "resolution": "The PDF now defines Gamma_{A',B';U,V0} for any positive A',B', with exactly the same L0/|H|^2 root-count normalization. This includes the Au,Bv coefficient pairs used in Proposition A.2. The summation conditions now explicitly include x,y>=1. The displayed formula and its conditions fit cleanly."
+        },
+        {
+          "id": "F2",
+          "kind": "model_definition_precision",
+          "severity": "minor_clarity_repair",
+          "location": "p.33, Stage 1, immediately before equation (82)",
+          "evidence": "The quadratic density is given for X^(1/4) <= t <= X^3 and then 'extend[ed] ... smoothly and nonnegatively below X^(1/4) with its leading upper bound'. By comparison, pp.30 and 45 specify a common cutoff eta_0 and exact zero and transition ranges.",
+          "consequence": "A suitable extension is routine, but a reader checking condition (C1) on every integer 1<=n<=X^3 has no single displayed quadratic-model prescription below the polynomial range.",
+          "repair": "Use the same explicitly defined cutoff from Section 9, or state an equally precise extension together with its uniform upper bound on the entire range.",
+          "requires_new_mathematics": false,
+          "demonstrated_false_mathematical_claim": false,
+          "evidence_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5",
+          "status": "resolved_in_repaired_edition",
+          "resolution": "The PDF now invokes eta_0(log t/L) from Section 9 and sets the model to zero for t<=X^(1/4). Page 30 defines eta_0 as zero through 1/4 and one from 1/3 onward. The stated C3 rough range Y/r>=X^(1/2)/E>X^(1/3) is therefore unchanged."
+        },
+        {
+          "id": "F3",
+          "kind": "proof_verifiability",
+          "severity": "moderate_audit_clarity",
+          "location": "pp.61-63, especially equations (124)-(127)",
+          "evidence": "The three-variable box contribution is summarized as O(N^(3/4+100 lambda+100 theta+epsilon)), with the statement that the loose reserve includes fine boxes, character expansions, kernel masses, and gcd strata; later mean errors and the sum over retained gcds are absorbed into the reserve.",
+          "consequence": "This is the most compressed part of the independent classical route. The generous reserve may suffice, but the PDF reader must supply the summation bookkeeping to check that the saving is uniform through the stated shifted family and divisibility predicates.",
+          "repair": "Add a short displayed summation bound listing the three box-variable ranges, the per-box (121) error, and the kernel/gcd totals that imply (124) and the summed reserve (127). Keep the existing argument and parameter hierarchy.",
+          "requires_new_mathematics": false,
+          "demonstrated_false_mathematical_claim": false,
+          "evidence_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5",
+          "status": "retained_for_independent_review",
+          "resolution": "The proof and error reserve remain unchanged. Recommendation retained for independent mathematical review, without requiring an aggregation-budget expansion in this editorial pass."
+        }
+      ],
+      "required_repairs": [],
+      "recommended_repairs": [
+        {
+          "finding": "F3",
+          "status": "retained_for_independent_review",
+          "scope": "Independently audit the aggregate box and mean-error summations supporting the appendix's power reserve. The present editorial task retains the existing proof and does not require extra budget discussion."
+        }
+      ],
+      "positive_checks": [
+        "Theorems are placed after their main arithmetic quantities are defined; no undefined headline leading constant was found without a forward location.",
+        "The ordinary/primitive/coprime-summand distinctions are made explicitly.",
+        "Conditional and independent classical routes are separated explicitly.",
+        "Fixed-shift high-height and reflected growing-conductor limitations are acknowledged explicitly.",
+        "The target-grid Parseval normalization includes all target grid points rather than charging their number separately.",
+        "Primitive-form prefix summation uses a summable tail instead of assuming growing-coefficient uniform asymptotics.",
+        "The imported PDFs have immutable embedded URLs.",
+        "No gross rendering or internal-reference defect was observed.",
+        "Focused repaired-edition check confirms all three local repairs and clean layout on all pages affected by their reflow."
+      ],
+      "overall_assessment": "The repaired edition resolves the original minor statement-domain repair and the quadratic-model definition recommendation. No further required editorial repair or new layout defect was found in the focused check. The original full PDF-only read and the repaired focused check are distinct editions with distinct scopes. The unchanged appendix error-bookkeeping recommendation remains for independent mathematical review; external imports and full proof correctness remain unvalidated by design.",
+      "source_modified": false,
+      "current_edition_full_read": false,
+      "full_read_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5",
+      "focused_repair_checks": [
+        {
+          "passage": "p.59, Lemma A.1 finite density",
+          "finding": "F1",
+          "result": "resolved",
+          "evidence": "The PDF now defines Gamma_{A',B';U,V0} for any positive A',B', with exactly the same L0/|H|^2 root-count normalization. This includes the Au,Bv coefficient pairs used in Proposition A.2."
+        },
+        {
+          "passage": "p.61, Proposition A.2 sum",
+          "finding": "F1",
+          "result": "resolved",
+          "evidence": "The summation conditions now explicitly include x,y>=1. The displayed formula and its conditions fit cleanly."
+        },
+        {
+          "passage": "p.33, quadratic arithmetic model",
+          "finding": "F2",
+          "result": "resolved",
+          "evidence": "The PDF now invokes eta_0(log t/L) from Section 9 and sets the model to zero for t<=X^(1/4). Page 30 defines eta_0 as zero through 1/4 and one from 1/3 onward. The stated C3 rough range Y/r>=X^(1/2)/E>X^(1/3) is therefore unchanged."
+        }
+      ],
+      "edition_reviews": [
+        {
+          "edition": "original_full_read",
+          "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/shortened-pdf-only/flagship.pdf",
+          "pdf_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5",
+          "pages": 69,
+          "reading_scope": {
+            "text": "All 69 printed pages read, including abstract, introduction, notation, all theorem statements and proofs, Appendix A, and references.",
+            "coverage": [
+              {
+                "pages": "1-3",
+                "sections": "Abstract and introduction"
+              },
+              {
+                "pages": "4-9",
+                "sections": "Comparison hypotheses, imported inputs, and framework"
+              },
+              {
+                "pages": "10-17",
+                "sections": "Shared graph comparison"
+              },
+              {
+                "pages": "18-23",
+                "sections": "Frequency tools and fixed shifts"
+              },
+              {
+                "pages": "24-29",
+                "sections": "Reflected target grid and reconstruction"
+              },
+              {
+                "pages": "30-35",
+                "sections": "Rough means and ordinary quadratic indicators"
+              },
+              {
+                "pages": "36-49",
+                "sections": "Subgroup and coset applications"
+              },
+              {
+                "pages": "49-58",
+                "sections": "Primitive forms, genus comparison, prefix normalization, boundaries"
+              },
+              {
+                "pages": "58-68",
+                "sections": "Classical quadratic core appendix"
+              },
+              {
+                "pages": "68-69",
+                "sections": "References"
+              }
+            ],
+            "method": "Poppler pdftotext -layout, read in bounded page chunks; mathematical notation checked against rendered pages where needed."
+          },
+          "visual_scope": {
+            "all_pages_rendered": true,
+            "all_pages_visually_inspected": true,
+            "all_page_inspection_resolution": "Every page rendered with longest side 1000 pixels, then inspected in eight contact sheets with approximately 500 x 707 pixels per page.",
+            "additional_full_page_inspection": [
+              62
+            ],
+            "limits": "All-page inspection establishes gross layout and equation placement, not a glyph-by-glyph proofread at print resolution.",
+            "observed_layout_defects": [],
+            "observed_layout_quality": "No clipping, overlap, absent equation numbers, missing-glyph boxes, or disrupted section/table layout observed. Page 69 is mostly blank because the bibliography continues there; this is harmless."
+          },
+          "link_annotation_scope": {
+            "method": "PDF-derived pdftohtml link extraction; links were inspected as annotations only and were not opened.",
+            "external_link_annotation_count": 19,
+            "distinct_external_urls": 17,
+            "important_import_links_present": true,
+            "important_import_urls": [
+              "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
+              "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf"
+            ],
+            "reference_findings": "References [7] and [8] have the visible anchor 'Immutable primary PDF' and embed immutable commit URLs. They are not missing-source defects. Internal theorem, equation, and section links appeared coherent in the reviewed PDF.",
+            "unverified": "URL reachability and the accuracy or applicability of all cited external results were not tested."
+          },
+          "findings_at_that_edition": [
+            {
+              "id": "F1",
+              "kind": "statement_and_definition_scope",
+              "severity": "minor_required_statement_repair",
+              "location": "p.61, Proposition A.2; preceding density definition on p.59",
+              "evidence": "Lemma A.1 defines Gamma_{A,B;U,V0} after requiring A,B coprime and L0-supported. Proposition A.2 uses Gamma_{Au,Bv;U,V0}, where u,v are arbitrary C-supported parameters and may have common factors. Its displayed sum writes Aux+Bvy=N and residue conditions, without x,y>0.",
+              "consequence": "The intended root count extends naturally, and positivity is inferable from the surrounding count, but the proposition as a standalone statement leaves the coefficient-domain extension and the finite summation domain implicit.",
+              "repair": "In Proposition A.2 explicitly say x,y are positive integers, and define Gamma_{a,b;U,V0}(N)=L0/|H|^2 times the number of roots in U x V0 for arbitrary coefficient pairs a,b used there.",
+              "requires_new_mathematics": false,
+              "demonstrated_false_mathematical_claim": false
+            },
+            {
+              "id": "F2",
+              "kind": "model_definition_precision",
+              "severity": "minor_clarity_repair",
+              "location": "p.33, Stage 1, immediately before equation (82)",
+              "evidence": "The quadratic density is given for X^(1/4) <= t <= X^3 and then 'extend[ed] ... smoothly and nonnegatively below X^(1/4) with its leading upper bound'. By comparison, pp.30 and 45 specify a common cutoff eta_0 and exact zero and transition ranges.",
+              "consequence": "A suitable extension is routine, but a reader checking condition (C1) on every integer 1<=n<=X^3 has no single displayed quadratic-model prescription below the polynomial range.",
+              "repair": "Use the same explicitly defined cutoff from Section 9, or state an equally precise extension together with its uniform upper bound on the entire range.",
+              "requires_new_mathematics": false,
+              "demonstrated_false_mathematical_claim": false
+            },
+            {
+              "id": "F3",
+              "kind": "proof_verifiability",
+              "severity": "moderate_audit_clarity",
+              "location": "pp.61-63, especially equations (124)-(127)",
+              "evidence": "The three-variable box contribution is summarized as O(N^(3/4+100 lambda+100 theta+epsilon)), with the statement that the loose reserve includes fine boxes, character expansions, kernel masses, and gcd strata; later mean errors and the sum over retained gcds are absorbed into the reserve.",
+              "consequence": "This is the most compressed part of the independent classical route. The generous reserve may suffice, but the PDF reader must supply the summation bookkeeping to check that the saving is uniform through the stated shifted family and divisibility predicates.",
+              "repair": "Add a short displayed summation bound listing the three box-variable ranges, the per-box (121) error, and the kernel/gcd totals that imply (124) and the summed reserve (127). Keep the existing argument and parameter hierarchy.",
+              "requires_new_mathematics": false,
+              "demonstrated_false_mathematical_claim": false
+            }
+          ],
+          "required_repairs_at_that_edition": [
+            {
+              "finding": "F1",
+              "scope": "Make Proposition A.2 self-contained about positive variables and the general finite-density notation."
+            }
+          ],
+          "recommended_repairs_at_that_edition": [
+            {
+              "finding": "F2",
+              "scope": "Give one exact bounded extension for the quadratic model."
+            },
+            {
+              "finding": "F3",
+              "scope": "Expose the aggregate box and mean-error summation that supports the classical appendix's power reserve."
+            }
+          ],
+          "assessment": "The PDF supplies a coherent, scoped contribution and substantially explicit hard arguments. The review identifies local statement precision and audit clarity repairs, not a demonstrated fatal mathematical error. External imports and full proof correctness remain unvalidated by design."
+        },
+        {
+          "edition": "repaired_focused_check",
+          "source_pdf": "/home/royvanrijn/src/jacobian-research/.scratch/shortened-pdf-only/flagship-repaired.pdf",
+          "pdf_sha256": "8229107bc5852502777d9168f947d873e176b01440cebc3b7e71aa8b750ae953",
+          "pages": 69,
+          "reading_scope": {
+            "text": "Focused repaired-edition check of pages 30, 33, 59, and 61, checking the existing eta_0 definition and the three requested repaired passages. No second full read.",
+            "pages_read_for_focused_check": [
+              30,
+              33,
+              59,
+              61
+            ],
+            "mechanical_comparison": "A complete PDF-derived pdftotext -layout diff against the original edition was inspected. It showed the three intended wording changes plus line, equation-placement and page-break reflow on pages 33-36, 59 and 61; no additional substantive text change was identified.",
+            "method": "Poppler text extraction, complete extracted-text diff, and focused rendered-page inspection.",
+            "full_read_edition_sha256": "69de94ef93f819145120ba9531793d6bcce44032b8382748db0e5727233064a5"
+          },
+          "visual_scope": {
+            "all_pages_rendered": false,
+            "all_pages_visually_inspected": false,
+            "pages_rendered_and_inspected": [
+              33,
+              34,
+              35,
+              36,
+              59,
+              61
+            ],
+            "resolution": "Longest side 1400 pixels for pages 33, 34, 59, 61; 1200 pixels for pages 35-36.",
+            "reason_for_continuation_pages": "The shorter cutoff wording reflowed pages 33-36, so all affected continuation pages were checked.",
+            "observed_layout_defects": [],
+            "observed_layout_quality": "The three repaired passages and their affected continuation pages remain legible and unclipped. Stage 2 now begins at the bottom of p.33 and continues on p.34; the continuation is intact. The finite-density display on p.59 and positive-variable sum on p.61 fit cleanly.",
+            "limits": "This is a focused visual check of the repaired edition. The original edition received the all-page contact-sheet inspection recorded separately."
+          },
+          "checks": [
+            {
+              "passage": "p.59, Lemma A.1 finite density",
+              "finding": "F1",
+              "result": "resolved",
+              "evidence": "The PDF now defines Gamma_{A',B';U,V0} for any positive A',B', with exactly the same L0/|H|^2 root-count normalization. This includes the Au,Bv coefficient pairs used in Proposition A.2."
+            },
+            {
+              "passage": "p.61, Proposition A.2 sum",
+              "finding": "F1",
+              "result": "resolved",
+              "evidence": "The summation conditions now explicitly include x,y>=1. The displayed formula and its conditions fit cleanly."
+            },
+            {
+              "passage": "p.33, quadratic arithmetic model",
+              "finding": "F2",
+              "result": "resolved",
+              "evidence": "The PDF now invokes eta_0(log t/L) from Section 9 and sets the model to zero for t<=X^(1/4). Page 30 defines eta_0 as zero through 1/4 and one from 1/3 onward. The stated C3 rough range Y/r>=X^(1/2)/E>X^(1/3) is therefore unchanged."
+            }
+          ],
+          "remaining_required_repairs": [],
+          "unchanged_proof_recommendation": "F3 is retained for independent review. No new full read, external validation, formal verification or replay was performed."
+        }
+      ],
+      "source_modified_by_reviewer": false
     }
   ],
   "prior_layout_reviews": [
@@ -1010,6 +1557,20 @@
       "result": "No clipping, overlapping equations, missing glyphs or unreadable tables. One harmless underfull bibliography paragraph in the flagship; no companion box diagnostics.",
       "reviewer": "Internal Codex visual layout check",
       "scope": "PDF layout only, not mathematical verification."
+    },
+    {
+      "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+      "pages": 71,
+      "method": "Inspected rendered companion pages32-36 after the link and samepage adjustment, and flagship page30 after the model-notation correction. Earlier complete layout records retained.",
+      "result": "No clipping or overlapping text/equations; the final digest label stays with its hash.",
+      "scope": "Affected-page visual check only, not mathematical verification."
+    },
+    {
+      "pdf_sha256": "8229107bc5852502777d9168f947d873e176b01440cebc3b7e71aa8b750ae953",
+      "pages": 69,
+      "method": "Rendered and inspected all contact sheets of the shortened editions; re-rendered affected final passages after the local reader repairs. Isolated readers also inspected the repaired pages and reflow continuations.",
+      "result": "No clipping, overlapping text/equations or unreadable tables. One harmless flagship bibliography underfull paragraph.",
+      "scope": "Internal visual layout check; not mathematical verification."
     }
   ],
   "class_error_strengthening": {
@@ -1201,6 +1762,64 @@
         "older-norm-route.tex": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
         "prime-estimates.tex": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03",
         "quadratic-pairs.tex": "2b939c452226130f50379aeb2052baa6116473185f155f0e08b6f91333a7fc10",
+        "references.tex": "7d42f9cf3342b14cdb8357d732ca110ce7ceb115d1c95d1bdeb04eb517c92ed5",
+        "reflected-comparison.tex": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969",
+        "theorems.tex": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779"
+      }
+    },
+    {
+      "result": "passed",
+      "method": "Fresh extraction of source.zip, verification of every source_manifest hash, then declared latexmk build using only extracted sources.",
+      "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+      "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+      "reproduces_identical_pdf_bytes": true,
+      "warnings": [],
+      "tex_sources": {
+        "assembly.tex": "fba5f77833925c786709dc53b9db40698910c66de2e328018d947d28fd0057ac",
+        "comparison.tex": "404cf76066cd80b1a032f902d0c3e5bf86941b5fa64b0deaae0e2c2116d4347b",
+        "consequences.tex": "d9877afa32556d540ffd1df001ad12e3464498b9a3c508948b50ac1ed7fdf118",
+        "cosets.tex": "51ce53cc3aef89fc17bd577cc339d2f3fbd20a13911f90592f15b4bcc95b1400",
+        "fixed-shift-comparison.tex": "12d62481f310ed4f519bbf2af524888719e3d8037b7efa72966476488f697ca2",
+        "forms.tex": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
+        "graph.tex": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
+        "inputs.tex": "94658a0e1e230d04bf52d2aded46991780f955da3baa79669c7375608ac6f784",
+        "introduction.tex": "a5b9cb0509d41ffd466cc7da87f0d6431cdf9b52e7fb04bc8b48747e542221b3",
+        "main.tex": "4d1f3cc530216db678839a22907d8159cc2d64997a4eac3b8603b4c89f6e1ad8",
+        "model-preparation.tex": "9220655bb04bfe72950f2bd49fa7321e0ccdc2444760b78b4a94a09e7d24a9d7",
+        "model.tex": "92770aee8b0741d9e1fb697ed0a129adbf734a1633aefb3cff81a751f4c82693",
+        "norms.tex": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
+        "older-norm-route.tex": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
+        "prime-estimates.tex": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03",
+        "quadratic-pairs.tex": "2b939c452226130f50379aeb2052baa6116473185f155f0e08b6f91333a7fc10",
+        "references.tex": "7d42f9cf3342b14cdb8357d732ca110ce7ceb115d1c95d1bdeb04eb517c92ed5",
+        "reflected-comparison.tex": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969",
+        "theorems.tex": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779"
+      }
+    },
+    {
+      "result": "passed",
+      "method": "Fresh extraction of source.zip, verification of every source_manifest hash, then declared latexmk build using only extracted sources.",
+      "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+      "pdf_sha256": "8229107bc5852502777d9168f947d873e176b01440cebc3b7e71aa8b750ae953",
+      "reproduces_identical_pdf_bytes": true,
+      "warnings": [],
+      "tex_sources": {
+        "assembly.tex": "345aa213be9230cb904ff0d50edd9dbea77d2a3c81f0668fdbcf024f4c6f8e71",
+        "comparison.tex": "1cb52e71b7c27a94fc8e8719002184b9fe275e8f0c26afa0b8cf57f7ea3bd8c5",
+        "consequences.tex": "934c6326054713893c479eaf86bad319e11644068a03fdfa5f02178cf17265eb",
+        "cosets.tex": "51ce53cc3aef89fc17bd577cc339d2f3fbd20a13911f90592f15b4bcc95b1400",
+        "fixed-shift-comparison.tex": "12d62481f310ed4f519bbf2af524888719e3d8037b7efa72966476488f697ca2",
+        "forms.tex": "251af9e1133cdb45f6299af320802c57a682411d1f16466598967977c3b4e651",
+        "graph.tex": "f92250eb7ab96a370044658e6a36fb203313f3a1c5328406ed41c55140ead6f5",
+        "inputs.tex": "3f1b078d1b5d64e2b5346799e92578f5efa99c05cc646a74cc58e234ae71cc73",
+        "introduction.tex": "764a4dd8ef017bb7892de5c5fc6207b30588c36cd842a0306890b7f8df150ec4",
+        "main.tex": "4d1f3cc530216db678839a22907d8159cc2d64997a4eac3b8603b4c89f6e1ad8",
+        "model-preparation.tex": "9220655bb04bfe72950f2bd49fa7321e0ccdc2444760b78b4a94a09e7d24a9d7",
+        "model.tex": "92770aee8b0741d9e1fb697ed0a129adbf734a1633aefb3cff81a751f4c82693",
+        "norms.tex": "98a520597d253caf1f1cade7864fbfd4ec9c43de4b7b773274d17cb1c11e2e23",
+        "older-norm-route.tex": "c2f879411bc0993ebb8281ca4b853d385bedae3ee83988ca00a0fdc9bbd7d0b0",
+        "prime-estimates.tex": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03",
+        "quadratic-pairs.tex": "ae55a70288399044212c24ed34cf0a0255d938f708620d2813059affceaa6eae",
         "references.tex": "7d42f9cf3342b14cdb8357d732ca110ce7ceb115d1c95d1bdeb04eb517c92ed5",
         "reflected-comparison.tex": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969",
         "theorems.tex": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779"
@@ -1429,33 +2048,390 @@
     "assurance_changes": false,
     "submission_or_upload_performed": false
   },
+  "shortening_revision": {
+    "date": "2026-11-19",
+    "edition_sha256": "8229107bc5852502777d9168f947d873e176b01440cebc3b7e71aa8b750ae953",
+    "baseline": {
+      "paper.pdf": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+      "source.zip": "1279ea99f87ec4a1211a78666284437cd0e5ab1bf8391a4c7fc46ee53af8b1bc"
+    },
+    "pages_before": 71,
+    "pages_after": 69,
+    "counts": {
+      "old_tex_whitespace_words": 29869,
+      "new_tex_whitespace_words": 28285,
+      "typography_source_unchanged": true
+    },
+    "scope": "Expository shortening with unchanged mathematical content, statement scope and analytic dependencies.",
+    "cuts": "Same-discriminant/principal restatements replaced by scoped specializations; repeated scope/dependency and proof-overview prose removed.",
+    "preservation_audits": [
+      {
+        "reviewer": "Codex shortening_source_audit",
+        "date": "2026-11-19",
+        "scope": "Read-only source preservation review of the six root-owned flagship files; comparison against the immediately preceding source archive. Not a full proof audit, PDF review, import validation, or external mathematical review.",
+        "baseline_archive_sha256": "1279ea99f87ec4a1211a78666284437cd0e5ab1bf8391a4c7fc46ee53af8b1bc",
+        "current_source_sha256": {
+          "introduction.tex": "764a4dd8ef017bb7892de5c5fc6207b30588c36cd842a0306890b7f8df150ec4",
+          "comparison.tex": "1cb52e71b7c27a94fc8e8719002184b9fe275e8f0c26afa0b8cf57f7ea3bd8c5",
+          "inputs.tex": "3f1b078d1b5d64e2b5346799e92578f5efa99c05cc646a74cc58e234ae71cc73",
+          "consequences.tex": "934c6326054713893c479eaf86bad319e11644068a03fdfa5f02178cf17265eb",
+          "assembly.tex": "345aa213be9230cb904ff0d50edd9dbea77d2a3c81f0668fdbcf024f4c6f8e71",
+          "graph.tex": "f92250eb7ab96a370044658e6a36fb203313f3a1c5328406ed41c55140ead6f5"
+        },
+        "exact_checks": {
+          "all_root_file_formal_statements_byte_identical": true,
+          "comparison_definitions_C1_C4_and_theorem_byte_identical": true,
+          "assembly_from_first_technical_subsection_byte_identical": true,
+          "graph_before_shared_label_subsection_byte_identical": true,
+          "graph_from_list_weight_definition_through_named_proposition_and_proof_byte_identical": true,
+          "both_frequency_files_byte_identical": true,
+          "no_new_open_problem_claim": true
+        },
+        "formal_statement_blocks_preserved": 11,
+        "removed_material_mapping": [
+          {
+            "removed": "Repeated ordinary-value counting convention after Smilansky statement",
+            "retained": "Introduction opening and counting-convention table/primitive-representation definitions."
+          },
+          {
+            "removed": "Repeated no-mixed-field and componentwise-genus warnings",
+            "retained": "Introduction explicitly fixes one D and Delta_i=f_i^2D and forms Q_i,Q_i-prime in the same genus for each slot; common-field theorem supplies precise scope."
+          },
+          {
+            "removed": "Repeated principal-specialization roadmap and no-class-number explanation",
+            "retained": "Introduction still explains numerical values can belong to all compatible classes; common-field theorem and principal subsection supply the mathematics."
+          },
+          {
+            "removed": "Repeated independently-checkable-assumptions/no-hidden-binary-cancellation overview",
+            "retained": "C1-C4 are unchanged and comparison.tex immediately before the theorem explicitly excludes assumed centered binary cancellation and major-arc energy."
+          },
+          {
+            "removed": "Repeated detailed branch roadmap after comparison theorem",
+            "retained": "Named graph reduction, fixed-shift conversion/low-high sections and reflected target-grid sections retain their complete proofs; brief roadmap remains."
+          },
+          {
+            "removed": "Self-coset slot-phase reminder",
+            "retained": "graph.tex character-frame construction proves common-coset unit phases; cosets.tex Common banks cites the frame with c=a_0."
+          },
+          {
+            "removed": "Repeated ideal accuracy/m,C1/J/threshold order at end of inputs",
+            "retained": "Imported local transference states order; graph ideal lemma/proof fixes m,C1 before J; reconstruction retains final model-depth and Mellin precision order."
+          },
+          {
+            "removed": "Unused stronger Hecke and Part-II/boundary-source discussion",
+            "retained": "Imported zero-free proposition is unchanged (open Re(s)>11/12, principal pole allowed, unrestricted conductor/height); intro explicitly says Part II unused, and functional equation/Euler product/log assumptions remain."
+          },
+          {
+            "removed": "Repeated fixed data, nonnumerical thresholds, power-short interval and intermediate-shift exclusions in conclusion",
+            "retained": "Comparison theorem keeps fixed shift and no growing-sublinear uniformity; subgroup theorem and following qualifications keep fixed arithmetic data, nonnumerical threshold and no power-short claim; introduction retains fixed-data/non-numerical scope."
+          },
+          {
+            "removed": "Repeated conclusion summary of CK/Smilansky checks",
+            "retained": "Introduction corollary and ordinary quadratic theorem/application are unchanged."
+          },
+          {
+            "removed": "Repeated comparison-scale display and outer-scale explanation at start of reconstruction",
+            "retained": "eq:comparison-scale and all quantifiers/outer-scale rules remain byte-identical in comparison.tex; assembly cites it and retains identical delta_0 inline."
+          },
+          {
+            "removed": "Repeated k=x / k=h and Walsh reflected-scope preface",
+            "retained": "graph.tex section opening and named reduction proposition both retain the two geometries; the entire named proposition and derivation are byte-identical."
+          }
+        ],
+        "finding_resolved": {
+          "issue": "The first shortened conclusion accidentally changed an outside-scope statement into an unverified claim that growing shifts/higher correlations remain open.",
+          "resolution": "Root changed it to are not covered by the statements here; confirmed current source."
+        },
+        "outstanding_required_repairs": [],
+        "result": "No mathematical statement, hypothesis, quantitative bound, hard normalization/frequency argument or proof dependency lost in the audited cuts."
+      },
+      {
+        "scope": "Editorial shortening only; source-level preservation checks, not a new mathematical verification or PDF review.",
+        "files": {
+          "forms.tex": {
+            "old_lines": 727,
+            "new_lines": 698,
+            "old_whitespace_words": 3672,
+            "new_whitespace_words": 3499,
+            "sha256": "251af9e1133cdb45f6299af320802c57a682411d1f16466598967977c3b4e651"
+          },
+          "norms.tex": {
+            "old_lines": 89,
+            "new_lines": 49,
+            "old_whitespace_words": 348,
+            "new_whitespace_words": 179,
+            "sha256": "7f566d772ae9dcfe7ba5a28cd199a599da797852a8881fceab790bd16298a14e"
+          },
+          "older-norm-route.tex": {
+            "old_lines": 858,
+            "new_lines": 825,
+            "old_whitespace_words": 4072,
+            "new_whitespace_words": 3808,
+            "sha256": "d0a13c2c942cfdbac31337d35492dc914aad85a7e93df71aa02314844440d49e"
+          }
+        },
+        "preservation": {
+          "common_field_theorem_statement": "byte-identical after removing navigation labels",
+          "forms_arithmetic_proof": "byte-identical from Proper ideals and genus map through the end of the leading-term proof",
+          "classical_appendix_technical_proof": "byte-identical from Two-factor boxes to the end of the core-bound proof",
+          "principal_expanded_coefficient": "byte-identical equation",
+          "principal_ideal_shadow": "byte-identical equation",
+          "gaussian_calibration": "byte-identical remark",
+          "all_old_labels_retained": true
+        },
+        "statement_mapping": {
+          "thm:genus-binary-invariance": "Navigation alias on part:form-classical of cor:common-field-form-pairs; f1=f2 explained once in text.",
+          "thm:form-binary-leading": "Navigation alias on part:form-leading of cor:common-field-form-pairs; f1=f2 explained once in text.",
+          "thm:norm-order": "Navigation alias on sec:norms; the specialization paragraph invokes the classical part of the common-field theorem for Q1=Q2=Q.",
+          "thm:norm-leading": "Navigation alias on sec:norms; the specialization paragraph invokes the input-dependent leading part and retains eq:norm-coefficient."
+        },
+        "removed_repetition": [
+          "Separate same-discriminant corollary and duplicate field-scope recap.",
+          "Two principal corollary restatements and their repeated dependency/domain text; conclusions remain explicit specializations of the general theorem.",
+          "Duplicated appendix parameter inequalities and trailing dependency recap; authoritative proof calculations unchanged."
+        ],
+        "mathematical_claims_removed": false,
+        "new_mathematics": false,
+        "build_or_replay_performed": false
+      }
+    ],
+    "preservation_audit_scope": "Version-comparison audits cover the shortening edits before the listed local reader clarifications; their original source hashes identify the inspected bytes. The clarifications do not change the protected technical proofs.",
+    "hard_steps": "Graph normalization, both frequency arguments, conductor-local arithmetic and the technical positive-restoration proofs preserved byte for byte.",
+    "reader_repairs": "Explicit positivity and coefficient range in the classical weighted-family notation; quadratic model reuses the existing cutoff; companion coverage wording retains the indicated reduced-family restriction. These replace existing wording without extending theorem scope.",
+    "mathematical_computations_rerun": false,
+    "external_review_performed": false,
+    "assurance_changes": false,
+    "submission_performed": false
+  },
+  "reciprocal_citation_revision": {
+    "date": "2026-11-19",
+    "edition_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "baseline": {
+      "paper.pdf": "8229107bc5852502777d9168f947d873e176b01440cebc3b7e71aa8b750ae953",
+      "source.zip": "7cf2426738b0b09ef1610f707e7e61d3453ffb5ef2a3cae4ab6c61c9808f02fc"
+    },
+    "own_reserved_doi": "10.5281/zenodo.24371355",
+    "companion_doi": "10.5281/zenodo.24371462",
+    "citation_year": 2026,
+    "citation_version": "1",
+    "doi_provenance": "User-provided reserved Zenodo drafts; public metadata not verified.",
+    "relationship": "Companion context citation; exact classifications have their own proof route and do not depend on the pointwise paper.",
+    "formal_statements_and_proof_blocks_byte_identical": true,
+    "certificate_files_byte_identical": true,
+    "mathematical_computations_rerun": false,
+    "proof_dependencies_changed": false,
+    "publication_status_changed": false,
+    "assurance_changes": false,
+    "focused_pdf_review": {
+      "pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+      "pages": 69,
+      "review_kind": "Focused isolated PDF-only citation and layout check",
+      "record": {
+        "review_kind": "focused_pdf_only_reciprocal_citation_check",
+        "reviewed_at_utc": "2026-11-19T14:25:47.434217+00:00",
+        "status": "pass",
+        "required_repairs": [],
+        "scopes": {
+          "included": [
+            "Both PDF introductions and bibliographies",
+            "Reciprocal citation author, full titles, version 1, year 2026, and DOI directions",
+            "Embedded reciprocal DOI URI annotations",
+            "Internal citation reference destinations and absence of unresolved labels on inspected pages",
+            "Visual layout of the complete affected pages"
+          ],
+          "excluded": [
+            "Full mathematical proof review",
+            "Review of unchanged mathematics",
+            "Repository source, history, notes, or other research files",
+            "External DOI resolution or verification of live Zenodo records",
+            "External web or literature validation"
+          ]
+        },
+        "method": "Only the two supplied PDF files were used as document evidence. Poppler pdfinfo, pdftotext and pdftohtml inspected text, URI annotations and internal link destinations; pdftoppm rendered the listed complete pages for visual inspection. SHA-256 hashes were rechecked after review.",
+        "full_proof_review_performed": false,
+        "external_validation_performed": false,
+        "external_validation_claimed": false,
+        "pdfs": [
+          {
+            "file": "flagship.pdf",
+            "path": "/home/royvanrijn/src/jacobian-research/.scratch/reciprocal-pdf-only/flagship.pdf",
+            "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+            "sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+            "pages": 69,
+            "inspected_pages": [
+              1,
+              2,
+              3,
+              4,
+              58,
+              68,
+              69
+            ],
+            "visually_inspected_pages": [
+              1,
+              2,
+              3,
+              4,
+              58,
+              68,
+              69
+            ],
+            "introduction_pages": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "bibliography_pages": [
+              68,
+              69
+            ],
+            "all_pages_scanned_for_uri_annotations": true,
+            "reciprocal_citation": {
+              "label": "[15]",
+              "page": 69,
+              "cited_author": "R. van Rijn",
+              "cited_title": "Exact Sumsets of Primitive Quadratic Norms",
+              "version": 1,
+              "year": 2026,
+              "publisher": "Zenodo",
+              "doi": "10.5281/zenodo.24371462",
+              "uri": "https://doi.org/10.5281/zenodo.24371462",
+              "doi_direction_correct": true,
+              "uri_annotation_count": 2,
+              "clickable_uri_annotation_confirmed": true,
+              "externally_opened_or_resolved": false,
+              "in_text_citation_pages": [
+                3,
+                58
+              ],
+              "internal_reference_destination": "cite.exactcompanion",
+              "internal_reference_destination_page": 69,
+              "internal_reference_resolution_confirmed": true
+            },
+            "relationship_statement": {
+              "status": "pass",
+              "finding": "The introduction (page 3) says the companion gives exact classifications and finite certificates for four primitive quadratic norm sumsets; page 58 reiterates the companion scope."
+            },
+            "layout": {
+              "status": "pass",
+              "finding": "Complete rendered inspected pages are legible; reciprocal citation prose and bibliography entries have no clipping, overlap, unresolved labels, or missing glyphs. Normal DOI line wrapping preserves clickable URI annotations."
+            },
+            "required_repairs": [],
+            "pdf_modified": false
+          },
+          {
+            "file": "companion.pdf",
+            "path": "/home/royvanrijn/src/jacobian-research/.scratch/reciprocal-pdf-only/companion.pdf",
+            "title": "Exact Sumsets of Primitive Quadratic Norms",
+            "sha256": "2bd8db84d6c3125e8fd9232e020da74a908cfb959e553191b1ef744a0d5ce7c6",
+            "pages": 34,
+            "inspected_pages": [
+              1,
+              2,
+              34
+            ],
+            "visually_inspected_pages": [
+              1,
+              2,
+              34
+            ],
+            "introduction_pages": [
+              1,
+              2
+            ],
+            "bibliography_pages": [
+              34
+            ],
+            "all_pages_scanned_for_uri_annotations": true,
+            "reciprocal_citation": {
+              "label": "[9]",
+              "page": 34,
+              "cited_author": "R. van Rijn",
+              "cited_title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+              "version": 1,
+              "year": 2026,
+              "publisher": "Zenodo",
+              "doi": "10.5281/zenodo.24371355",
+              "uri": "https://doi.org/10.5281/zenodo.24371355",
+              "doi_direction_correct": true,
+              "uri_annotation_count": 1,
+              "clickable_uri_annotation_confirmed": true,
+              "externally_opened_or_resolved": false,
+              "in_text_citation_pages": [
+                1
+              ],
+              "internal_reference_destination": "cite.pointwisecompanion",
+              "internal_reference_destination_page": 34,
+              "internal_reference_resolution_confirmed": true
+            },
+            "relationship_statement": {
+              "status": "pass",
+              "finding": "Page 1 cites broader pointwise correlation asymptotics and explicitly says the exact classifications have their own classical proof route and do not depend on the pointwise paper."
+            },
+            "layout": {
+              "status": "pass",
+              "finding": "Complete rendered inspected pages are legible; reciprocal citation prose and bibliography entries have no clipping, overlap, unresolved labels, or missing glyphs. Normal DOI line wrapping preserves clickable URI annotations."
+            },
+            "required_repairs": [],
+            "pdf_modified": false
+          }
+        ]
+      },
+      "scope": "Introductions, reciprocal bibliography entries and DOI link annotations only; not a full proof review."
+    }
+  },
   "standalone_build": {
     "result": "passed",
     "method": "Fresh extraction of source.zip, verification of every source_manifest hash, then declared latexmk build using only extracted sources.",
     "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-    "pdf_sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+    "pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
     "reproduces_identical_pdf_bytes": true,
     "warnings": [],
     "tex_sources": {
-      "assembly.tex": "fba5f77833925c786709dc53b9db40698910c66de2e328018d947d28fd0057ac",
-      "comparison.tex": "404cf76066cd80b1a032f902d0c3e5bf86941b5fa64b0deaae0e2c2116d4347b",
-      "consequences.tex": "d9877afa32556d540ffd1df001ad12e3464498b9a3c508948b50ac1ed7fdf118",
+      "assembly.tex": "345aa213be9230cb904ff0d50edd9dbea77d2a3c81f0668fdbcf024f4c6f8e71",
+      "comparison.tex": "1cb52e71b7c27a94fc8e8719002184b9fe275e8f0c26afa0b8cf57f7ea3bd8c5",
+      "consequences.tex": "a402623479d5568a8f194c64926ee3576c4eb80890783f75cd1cff1b0cf7854e",
       "cosets.tex": "51ce53cc3aef89fc17bd577cc339d2f3fbd20a13911f90592f15b4bcc95b1400",
       "fixed-shift-comparison.tex": "12d62481f310ed4f519bbf2af524888719e3d8037b7efa72966476488f697ca2",
-      "forms.tex": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
-      "graph.tex": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
-      "inputs.tex": "94658a0e1e230d04bf52d2aded46991780f955da3baa79669c7375608ac6f784",
-      "introduction.tex": "a5b9cb0509d41ffd466cc7da87f0d6431cdf9b52e7fb04bc8b48747e542221b3",
+      "forms.tex": "251af9e1133cdb45f6299af320802c57a682411d1f16466598967977c3b4e651",
+      "graph.tex": "f92250eb7ab96a370044658e6a36fb203313f3a1c5328406ed41c55140ead6f5",
+      "inputs.tex": "3f1b078d1b5d64e2b5346799e92578f5efa99c05cc646a74cc58e234ae71cc73",
+      "introduction.tex": "7ff82d1fc202a6bc59fc40ba1260ac873a836d61d1cda6e28448614f9e319322",
       "main.tex": "4d1f3cc530216db678839a22907d8159cc2d64997a4eac3b8603b4c89f6e1ad8",
       "model-preparation.tex": "9220655bb04bfe72950f2bd49fa7321e0ccdc2444760b78b4a94a09e7d24a9d7",
       "model.tex": "92770aee8b0741d9e1fb697ed0a129adbf734a1633aefb3cff81a751f4c82693",
-      "norms.tex": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
-      "older-norm-route.tex": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
+      "norms.tex": "98a520597d253caf1f1cade7864fbfd4ec9c43de4b7b773274d17cb1c11e2e23",
+      "older-norm-route.tex": "c2f879411bc0993ebb8281ca4b853d385bedae3ee83988ca00a0fdc9bbd7d0b0",
       "prime-estimates.tex": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03",
-      "quadratic-pairs.tex": "2b939c452226130f50379aeb2052baa6116473185f155f0e08b6f91333a7fc10",
-      "references.tex": "7d42f9cf3342b14cdb8357d732ca110ce7ceb115d1c95d1bdeb04eb517c92ed5",
+      "quadratic-pairs.tex": "ae55a70288399044212c24ed34cf0a0255d938f708620d2813059affceaa6eae",
+      "references.tex": "7caa823953058cdae5c257c7e775ae998222220bac1f85a3668cdb1190b70557",
       "reflected-comparison.tex": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969",
       "theorems.tex": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779"
     }
+  },
+  "submission_source_packaging": {
+    "date": "2026-11-19",
+    "edition_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "tex_only_source_build": {
+      "archive": "hexagon-source.zip",
+      "members": 19,
+      "archive_sha256": "1e30db10753005f780dd87d965c385c71c8eeafe383b07a3fbca2bfb84fbb9de",
+      "archive_bytes": 101229,
+      "contents": "TeX only; no metadata, verification records, code or build scripts",
+      "entry_point": "main.tex",
+      "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+      "clean_source_rebuild": "passed; byte-identical PDF",
+      "pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+      "warnings": [],
+      "source_date_epoch": 1795046400,
+      "source_pdf_bytes_unchanged": true
+    },
+    "mathematical_sources_and_pdf_unchanged": true,
+    "mathematical_computations_rerun": false,
+    "external_review_performed": false,
+    "submission_performed": false,
+    "assurance_changes": false,
+    "scope": "Added the standalone TeX-only submission archive and packaging metadata; no changes to the 19 TeX sources, PDF or mathematical content."
   }
 }

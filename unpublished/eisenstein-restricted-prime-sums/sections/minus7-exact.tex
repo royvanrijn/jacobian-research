@@ -446,16 +446,11 @@ spectral term with the decrease of the large-prime tail; those
 decreases are nonincreasing. Direct enumeration of every allowable
 cut gives the same finite test.
 
-The certificate verifies a margin greater than \(1/64\) in every
-case, every point-table query lies at most \(X_0\), and every
-required prime lies below \(R_0\). For example the worst case is
-\[
- L=17825792,\quad U=18874367,\quad \chi_{-7}=1,\quad a=b=0,
-\]
-where \(M(U)=112\), \(e=1907201/261000000\), and the last included
-prime is \(73\). The error is
-\(563281558829/2271744000000\), below its baseline by more than
-\(1/64\).
+Every case has margin greater than \(1/64\), with all point-table
+queries at most \(X_0\) and required primes below \(R_0\).
+The exact worst-case parameters and error are recorded under
+\texttt{fine\_interval\_certificates.worst\_case} in the supplement's
+\(-7\) receipt.
 
 For \(37\le k\le53\), put \(L=2^k\), \(U=2^{k+1}-1\),
 \(d_k=M(U)\), and let \(e_k\) come from the global \(E\)-frontier.

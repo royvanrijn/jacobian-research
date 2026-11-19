@@ -1,13 +1,6 @@
-\section{The part of the argument we can reuse}\label{sec:orbit-criterion}
-The local sieves above average a bad event over an orbit, apply a spectral
-bound, and add the local losses. This appendix isolates that argument,
-allowing the inverse-unit mass needed when several ideal classes occur.
-The arithmetic work identifies the orbit, counts the representations,
-and leaves a strict margin below one.
-
-The first statement isolates the averaging step. The second lists the
-uniform bounds that turn it into an eventual, and potentially effective,
-representation theorem.
+\section{Orbit averaging and a sieve criterion}\label{sec:orbit-criterion}
+The two elementary estimates below isolate the averaging and
+small/large-prime split used in the local sieves.
 
 \begin{proposition}\label{prop:orbit-averaging}
 Let a finite group $G$ act on the right on a finite set $Y$ equipped
@@ -28,28 +21,20 @@ where $\Lambda\ge0$. Then
 In particular, the same right side bounds the upper deviation.
 \end{proposition}
 \begin{proof}
-Both $f$ and $Tf$ are right-$K$ invariant, so $Tf$ is constant on
-$\Omega$ and
+Right-\(K\) invariance makes \(Tf\) constant on \(\Omega\).
+Writing \(f=\mu1+h\), one has \(h\perp1\),
+\(\|h\|_\pi^2=\mu(1-\mu)\), and
 \[
-(Tf)(y_0)=\frac{\langle f,Tf\rangle_\pi}{\mu}.
+ (Tf)(y_0)=\frac{\langle f,Tf\rangle_\pi}{\mu}
+          =d\mu+\frac{\langle h,Th\rangle_\pi}{\mu}.
 \]
-Write $f=\mu1+h$. Then $h\perp1$ and
-$\|h\|_\pi^2=\mu(1-\mu)$. Self-adjointness and $T1=d1$ remove the
-cross terms, giving
-\[
-\langle f,Tf\rangle_\pi=d\mu^2+\langle h,Th\rangle_\pi.
-\]
-The spectral hypothesis bounds the absolute value of the last term by
-$\Lambda\mu(1-\mu)$. Divide by $d\mu$.
+Self-adjointness and \(T1=d1\) remove the cross terms; the spectral
+hypothesis bounds the last numerator in absolute value by
+\(\Lambda\mu(1-\mu)\).
 \end{proof}
-
-Global transitivity is unnecessary: only constancy on the orbit
-$\Omega$ enters the averaging identity. In Section~\ref{sec:minus11},
-the principal ideal-class fiber has probability $w=3/5$, and the inert
-bad orbit has conditional density $\mu_p=2/(p(p-1))$ in that fiber.
-Thus its measure in the proposition is $\mu=w\mu_p$.
-The orthogonality to norm characters and the separate ramified
-calculation are checked there explicitly.
+Only transitivity on \(\Omega\) is used. At \(-11\), its measure is
+\(\mu=(3/5)\mu_p\); Section~\ref{sec:minus11} checks the norm-character
+orthogonality and the separate ramified contribution.
 
 \begin{proposition}\label{prop:arithmetic-criterion}
 For each admissible positive integer $n\ge n_0$, let $\mathcal R_n$ be a finite
@@ -96,29 +81,22 @@ $b=1/2-\delta$. An explicit sufficient cutoff is
 \]
 \end{proposition}
 \begin{proof}
-Use the first local bound for $p\le P=t n^{1/4}$ and the second for
-$p>P$. The union bound gives
-\begin{align*}
-\frac{|E_n|+\sum_{p\in\mathcal S}|B_{p,n}|}{R(n)}
-&\le\rho+M+\eta(n)+C_1n^{\delta-1/2}(\alpha P+\beta)
-+C_2n^\delta\left(\frac\gamma P+\frac\zeta{P^2}\right)\\
-&=\rho+M+\eta(n)+L_1n^{\delta-1/4}+L_2n^{\delta-1/2}.
-\end{align*}
-The tail bound makes the prime sum convergent. If the right side is
-less than one, the bad subsets cannot cover $\mathcal R_n$.
-Both powers tend to zero because $\delta<1/4$.
-At the displayed effective cutoff, the three error terms are each at
-most $\Delta/4$, giving a total at most $1-\Delta/4<1$.
+Split at \(P=t n^{1/4}\), using the first local bound below \(P\)
+and the second above it. The convergent union bound is
+\[
+ \frac{|E_n|+\sum_p|B_{p,n}|}{R(n)}
+ \le\rho+M+\eta(n)+L_1n^{\delta-1/4}+L_2n^{\delta-1/2}.
+\]
+A value below one gives a good representation. Both powers tend to
+zero, and at the effective cutoff each of the three error terms
+is at most \(\Delta/4\).
 \end{proof}
 The prime-count hypotheses always admit the crude choices
 $\alpha=\gamma=\zeta=1$, $\beta=0$, $P_0=1$, by comparison with integers
 and a decreasing integral. Arithmetic residue information improves these
-constants. When $\alpha C_1$ and $\gamma C_2$ are positive, the leading
-coefficient $L_1$ is minimized at
-\[
-t=\sqrt{\frac{\gamma C_2}{\alpha C_1}}.
-\]
-This minimizes that coefficient, not necessarily the complete cutoff.
+constants. When \(\alpha C_1,\gamma C_2>0\), the choice
+\(t=\sqrt{\gamma C_2/(\alpha C_1)}\) minimizes \(L_1\), though
+not necessarily the complete cutoff.
 The mixed Eisenstein application uses $\delta=1/5$, $\rho=1/3$,
 $\eta(n)=2/(3\sqrt n)$, $C_1=9/4$, $C_2=15/2$, $M=3/20$ and
 $(\alpha,\beta,\gamma,\zeta)=(2/15,17/15,2/15,8/5)$.

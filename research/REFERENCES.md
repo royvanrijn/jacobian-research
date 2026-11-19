@@ -4,7 +4,7 @@
 
 Citation identity, reading a source, verifying a particular application, and proving a dependent theorem are separate. Context citations supply no mathematical premise. A source_read entry retains the stated ledger scope; it does not certify every use.
 
-**Catalogue:** 612 cited resources; 498 current TeX bibliography entries accounted for, including own-paper citations tracked separately.
+**Catalogue:** 614 cited resources; 500 current TeX bibliography entries accounted for, including own-paper citations tracked separately.
 
 [Graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Scope](SCOPES.md)
 
@@ -257,6 +257,7 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [Euler and the Four-Squares Theorem: Dietmann-Elsholtz answer](https://mathoverflow.net/a/141306) | webpage | source_read | not retained; citation/application boundary recorded | 1 uses; ARITHMETIC-EISENSTEIN-ANGULAR-DISTRIBUTION |
 | [Euler and the Four-Squares Theorem: Lucia answer](https://mathoverflow.net/a/141096) | webpage | source_read | not retained; citation/application boundary recorded | 1 uses; ARITHMETIC-EISENSTEIN-ANGULAR-DISTRIBUTION |
 | [Euler's 1747 conjecture on sums of integers with restricted prime factors](https://hexagonmath.org/2611.00370v1) | paper | source_read | not retained; citation/application boundary recorded | 6 uses;  |
+| [Exact Sumsets of Primitive Quadratic Norms](https://doi.org/10.5281/zenodo.24371462) | preprint | citation_only | not retained; citation/application boundary recorded | 3 uses;  |
 | [exact-arithmetic verification repository](https://github.com/malyang/hc5-counterexample) | software | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [Examples around the exponential period conjecture](https://doi.org/10.24350/CIRM.V.20308403) | paper | citation_only | not retained; citation/application boundary recorded | 4 uses;  |
 | [Exceptional values of E-functions at algebraic points](https://doi.org/10.1112/blms.12168) | paper | citation_only | not retained; citation/application boundary recorded | 5 uses;  |
@@ -497,6 +498,7 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [Picard--Vessiot theory of partial differential fields](https://doi.org/10.1090/S0002-9939-1952-0049883-8) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [Pinned bibliography for Polynomial composition rigidity via critical values](https://raw.githubusercontent.com/blueberryvertigo/polynomial-composition-rigidity/051c74aad9ef9bf8804c371964803aee099c5b63/refs.yml) | bibliography | source_read | [factorial/image-rigidity/sources/rigidity-refs.yml](factorial/image-rigidity/sources/rigidity-refs.yml) :: Complete ten-entry pinned bibliography; bibliographic metadata only | 1 uses;  |
 | Plucker formulas for plane algebraic curves with a given Newton polygon | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
+| [Pointwise Correlations of Quadratic Form Values and Splitting Semigroups](https://doi.org/10.5281/zenodo.24371355) | preprint | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
 | Polarizable Twistor $D$-Modules | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [Polynomial and rational solutions of holonomic systems](https://www.lab.twcu.ac.jp/oaku/OakuTakayamaTsai2001.pdf) | paper | source_read | not retained; citation/application boundary recorded | 1 uses; GAUSSIAN-POLYNOMIAL-HOM-BOUNDS |
 | [Polynomial composition rigidity and plane polynomial automorphisms](https://doi.org/10.1112/jlms/jdu064) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |

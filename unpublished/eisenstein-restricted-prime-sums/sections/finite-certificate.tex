@@ -1,8 +1,6 @@
 \subsection{Finishing the finite ranges}\label{sec:finite}
-The estimates settle both reduced problems from $10^8$ onward. Below
-that threshold we can check every target directly. The sieve is small
-enough to reproduce, and its meaning is straightforward: each surviving
-index records a positive integer in $\AA$.
+The infinite estimates start at \(10^8\); below it we use the exact
+membership sieve and complete target scans.
 
 For $c\in\{2,4\}$ put
 \[
@@ -46,19 +44,16 @@ Neither scan has an uncovered target. The witnesses give, respectively,
 6k+4=(6(k-3j)+1)+3(6j+1).
 \]
 All terms are positive members of the required sets. Separate NumPy
-implementations regenerate the membership arrays and recheck every
-witness. Their normalized membership and witness digests agree with the
-standalone verifier. The byte conventions and expected digests are given
-in the appendix. The finite scans use integer arithmetic throughout.
+implementations reproduce every membership flag and witness; their
+normalized digests agree with the standalone verifier. The integer
+arithmetic and receipt conventions are specified in
+Appendix~\ref{app:verifier} and the supplement.
 \end{proof}
 Proposition~\ref{prop:finite-certificates}, the infinite-range argument in
 Section~\ref{sec:infinite}, and the initial multiplicative reduction prove
 Theorem~\ref{thm:main}.
 
-The scans find every witness using a small menu of summands. This raises
-a further possibility: perhaps the same menu could work for every target.
-The Chinese remainder theorem shows why these bounds have to remain
-finite-range statements.
+The finite witness menu cannot work for every target:
 
 \begin{proposition}\label{prop:no-finite-menu}
 For either $c=1$ or $c=3$, and every finite $F\subset\AA$, there are

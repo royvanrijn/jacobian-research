@@ -1,5 +1,9 @@
 # Exact Sumsets of Primitive Quadratic Norms
 
+Reserved Zenodo draft DOI: [doi:10.5281/zenodo.24371462](https://doi.org/10.5281/zenodo.24371462), version 1 (2026). This records the author-supplied reservation, not a verified public deposit.
+
+This edition is shortened from 36 to 34 pages with the same typography and mathematical content. Results are stated at their natural generality; technical proofs and the declared certificate support are retained.
+
 This companion manuscript treats the four discriminants **-3, -7, -8 and
 -11**. The current [PDF](paper.pdf), edition hashes and scoped review records
 are maintained with the manuscript artifacts below.
@@ -13,7 +17,7 @@ and retained receipts are unchanged by this reorganization.
 The final review edition uses generated equation numbers throughout, states
 orbit averaging for a finite invariant probability measure, and retains the
 explicit inverse-unit-mass calculation at -11. The three long -8 minimum
-fractions are in Appendix A; the body retains their rigorous lower margin
+fractions are in the immutable certificate supplement; the body retains their rigorous lower margin
 of 1/256. All 32 certificate files and the 16 other formal statements remain
 byte-identical; only the reusable averaging proposition has been generalized.
 
@@ -132,7 +136,7 @@ arguments or the imported theorems.
 The existing build record reports resolved references and citations, no
 overfull boxes, and a byte-identical PDF from a fresh source extraction. Its
 layout record specifies which page renders were inspected. An isolated
-AI reader reviewed the current 36-page PDF; its supplied context, findings and
+AI reader reviewed the current 34-page PDF; its supplied context, findings and
 rechecks are recorded separately. All of this is internal review. External
 specialist review, external human certificate replay, formal verification and
 historical priority are not established.

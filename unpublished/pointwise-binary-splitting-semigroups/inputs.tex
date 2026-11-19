@@ -1,20 +1,9 @@
 \section{Analytic inputs and the comparison framework}\label{sec:inputs}
 
-The analytic argument has three sources with different roles.
-Walsh's density-model and multiplicative-invariance framework
-\cite[Sections 2--7]{walsh} supplies the architecture of the comparison.
-He explicitly anticipates the sums-of-two-squares indicator application
-in Section 1.2.4 and states on p.~2 that classical estimates could
-replace the zero-free input in his fixed-shift divisor theorem.
-Our completed fixed-shift proof below retains that input at large
-Mellin heights; Section~\ref{sec:fixed-classical-boundary} separates
-the classical range from the remaining estimate.
-The zero-free theorem \cite[Theorem 3.1]{zerofree} supplies a fixed
-half-plane for Dirichlet \(L\)-functions. The weighted-dilation theorem
-\cite[Section 3]{weightedgraphs} transfers an independent-label operator
-estimate to a moment on integers. We state the latter input with its
-normalizations, since constancy on a mark fiber and the order of parameter
-choices matter in this application.
+We use Walsh's comparison architecture \cite[Sections 2--7]{walsh},
+the zero-free input \cite[Theorem 3.1]{zerofree}, and the
+weighted-dilation transfer \cite[Section 3]{weightedgraphs}.
+The operator normalizations and parameter order are stated explicitly.
 
 \subsection{The zero-free input}
 
@@ -27,16 +16,10 @@ The pole at \(s=1\) of a principal character is allowed. Both conductor
 and height are unrestricted.
 \end{proposition}
 
-This is the Dirichlet conclusion of
-\cite[Theorem 3.1, printed p.~10]{zerofree}. The same theorem treats
-finite-order Hecke characters over \(\Q(\sqrt{-3})\); that stronger
-form is not needed here. Neither the boundary line nor the sharper
-\(7/8\) assertion in Part II of that source is used. The input is
-nonvanishing on the open half-plane, not an asserted numerical
-threshold for the representation theorem. Estimates for individual
-\(L\)-functions used below require the usual functional equation,
-Euler product, and holomorphic logarithm on zero-free rectangles in
-addition to this proposition.
+This is \cite[Theorem 3.1, printed p.~10]{zerofree}, restricted to
+Dirichlet characters and the open half-plane. We also use the usual
+functional equation, Euler product and holomorphic logarithm on
+zero-free rectangles.
 
 \subsection{Prime groups and the two operators}
 
@@ -250,35 +233,12 @@ This is \cite[Corollary 3.11]{weightedgraphs}. Its proof partitions
 \((\langle u_n,(AA^*)^Ru_m\rangle)\) by its trace.
 It makes no equal-fiber-mass assumption.
 
-\subsection{What must be proved for the binary application}
+\subsection{The application interfaces}
 
-The propositions above do not state a binary correlation theorem.
-Walsh's theorem \cite[Theorem 1.1]{walsh} concerns
-\(d_k(n)d_l(n+h)\) for positive \emph{integer} divisor orders and a
-fixed nonzero shift \(h\). His Section 1.2.4 identifies other
-indicator correlations as possible extensions. The membership
-indicators and the reflected line in the present article require
-separate arguments.
-
-There are three interfaces. First, the one-variable Euler series
-has a fractional branch \((s-1)^{-\rho_i}\). Its density model must
-retain every character trivial on \(H_i\); an average scalar density
-would lose genuine main terms. Second, the independent-label
-comparison must be constructed for the fixed progression filters
-and for prime groups in an identity residue class. The coefficient
-bound \eqref{eq:inputmass} and the restriction to big labels must
-hold before the final \(J\) is chosen. In particular, the source's
-ideal-kernel construction for unrestricted interval prime sets is
-not silently imported for these progression filters. Third, the
-relation is \(n+(N-n)=N\), with the target growing on the summation
-scale. Its comparison terms, endpoint norms, and localization
-errors must be uniform in that target. We prove these interfaces
-in the following sections; none is a consequence of the root
-moment alone.
-
-The parameter order is consequently part of the proof: choose the
-required final accuracy, choose the ideal accuracy supplied by
-Proposition~\ref{prop:rootmoment}, construct the signed family and
-its fixed \(m,C_1\), and only then choose \(J\). The threshold in
-\(x\) is taken last. The modulus and subgroup data remain fixed
-throughout.
+Three steps remain: construct the fractional-density models retaining
+every surviving character; prove the progression-filter ideal comparison
+with its big-label coefficient bound \eqref{eq:inputmass} fixed before
+\(J\); and transfer to the growing reflected target with uniform endpoint
+and localization bounds. The root-moment theorem supplies none of these
+steps on its own. Sections~\ref{sec:graph}--\ref{sec:assembly} prove the
+comparison; the applications then check its arithmetic hypotheses.

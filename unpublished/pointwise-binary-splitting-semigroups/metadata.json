@@ -36,9 +36,36 @@
   "editorial_scope": "CK/Smilansky first; explicit common-field primitive-form scope; separate count conventions and remainder strengths; shared graph with two frequency branches; one mixed prefix/Haar calculation. No theorem-strength or recent-dependency change.",
   "review_edition": {
     "pdf": "paper.pdf",
-    "sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
-    "page_count": 71,
-    "scope": "Packaging and notation revision; mathematical statements and dependencies unchanged.",
+    "sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "page_count": 69,
+    "scope": "Reciprocal companion citations added; mathematical statements and proofs unchanged.",
     "external_review_performed": false
+  },
+  "shortening": {
+    "pages_before": 71,
+    "pages_after": 69,
+    "typography_unchanged": true,
+    "mathematical_content_unchanged": true
+  },
+  "zenodo_draft": {
+    "reserved_doi": "10.5281/zenodo.24371355",
+    "citation_version": "1",
+    "citation_year": 2026,
+    "doi_provenance": "Author supplied reserved draft DOI.",
+    "public_record_verified": false,
+    "public_deposit_asserted": false
+  },
+  "companion_doi": "10.5281/zenodo.24371462",
+  "submission_source_bundle": "hexagon-source.zip",
+  "submission_packaging": {
+    "target": "Hexagon",
+    "entry_point": "main.tex",
+    "source_archive": "hexagon-source.zip",
+    "archive_sha256": "1e30db10753005f780dd87d965c385c71c8eeafe383b07a3fbca2bfb84fbb9de",
+    "tex_files": 19,
+    "code_in_submission_archive": false,
+    "policy_url": "https://hexagonmath.org/about",
+    "policy_checked_on": "2026-11-19",
+    "submission_performed": false
   }
 }

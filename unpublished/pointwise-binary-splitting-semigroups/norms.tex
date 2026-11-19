@@ -1,44 +1,14 @@
-\subsection{Principal norm specialization}\label{sec:norms}
+\subsection{Principal norms}\label{sec:norms}
+\label{thm:norm-order}\label{thm:norm-leading}
 
-Take the norm form \(Q(x,y)=N_{K/\Q}(x+y\omega)\) in a basis
-\(1,\omega\) of one fixed order \(\mathcal O\) of discriminant
-\(\Delta=f^2D\). In the notation of Section~\ref{sec:forms}, put
-\[
- P=P_Q,\qquad \Lambda=\Lambda_Q,\qquad R_T=R_{T,T},\qquad
- S=\{p:p\mid2\Delta\},\quad \chi=\chi_D,\quad
- J_{\mathcal O}=J_S,
-\]
-and write \(\mathscr V_p=\mathscr V_{p,Q}\) and
-\(d_p=d_{p;1,2}\) with both slots equal to \(Q\).
-The norm form is primitive and has target ideal class zero.
-The two conclusions of the common-field theorem specialize as follows.
-
-\begin{corollary}[The quadratic order bounds]\label{thm:norm-order}
-For every fixed imaginary quadratic order there are constants
-$c_{\mathcal O},C_{\mathcal O}>0$ and $N_{\mathcal O}$ such that every
-locally admissible $N\ge N_{\mathcal O}$ satisfies
-\[
- c_{\mathcal O}\frac{NJ_{\mathcal O}(N)}{\log N}
-       \le R_P(N)\le R_\Lambda(N)
-       \le C_{\mathcal O}\frac{NJ_{\mathcal O}(N)}{\log N}.
-\]
-Every nonadmissible target has count zero.  These bounds use
-Lemma~\ref{lem:older-quadratic-filter} and
-Proposition~\ref{prop:norm-class-error}; they do not use
-Theorem~\ref{thm:general}.
-\end{corollary}
-
-The leading-term theorem gives the following explicit specialization.
-
-\begin{corollary}\label{thm:norm-leading}
-Under the analytic inputs of Section~\ref{sec:inputs}, for every fixed
-imaginary quadratic order, uniformly as $N$ tends to infinity through
-the locally admissible targets,
-\[
- R_P(N)\sim\mathfrak A_{\mathcal O}(N)
-                     J_{\mathcal O}(N)\frac N{\log N},
-\]
-where the explicit positive coefficient is
+Take \(Q(x,y)=N_{K/\Q}(x+y\omega)\) in a basis \(1,\omega\) of
+a fixed order \(\mathcal O\) of discriminant \(\Delta=f^2D\).
+Set \(P=P_Q\), \(\Lambda=\Lambda_Q\), \(R_T=R_{T,T}\),
+\(S=\{p:p\mid2\Delta\}\), \(\chi=\chi_D\), and \(J_{\mathcal O}=J_S\).
+Theorem~\ref{cor:common-field-form-pairs} with both slots equal to
+\(Q\) gives the principal order bounds through part~\ref{part:form-classical}
+and, under the analytic inputs, the leading asymptotic through
+part~\ref{part:form-leading}. Its coefficient is
 \begin{equation}\label{eq:norm-coefficient}
  \mathfrak A_{\mathcal O}(N)=
  \frac{4L(1,\chi)}{\pi}
@@ -47,28 +17,18 @@ where the explicit positive coefficient is
                   \left(1-\frac2{p(p-1)}\right)
  \prod_{p\in S}d_p(N).
 \end{equation}
-Every nonadmissible target has count zero.  Each $d_p(N)$ is a
-computable rational periodic function, and the infinite product
-converges absolutely.  No restriction on the conductor or the ring
-class group is required; the order remains fixed.
-\end{corollary}
-
-\begin{proof}[Specialization]
-The ideal \(A=\mathcal O\) has \(c_Q=0\), so
-Lemma~\ref{lem:form-ideal-shadow} reads
+Here \(d_p=d_{p;1,2}\) for \(Q_1=Q_2=Q\).
+The norm form has \(A=\mathcal O\), hence \(c_Q=0\), so
+Lemma~\ref{lem:form-ideal-shadow} becomes
 \begin{equation}\label{eq:norm-shadow-ideals}
  n\in\Lambda\quad\Longleftrightarrow\quad
  \text{some primitive integral invertible }I
        \text{ has }n(I)=n,\ [I]\in2\operatorname{Pic}(\mathcal O);
 \end{equation}
-replacing the doubled group by zero characterizes \(P\).
-Parts~\ref{part:form-classical} and~\ref{part:form-leading} of
-Theorem~\ref{cor:common-field-form-pairs} give the two assertions,
-with \(d_{p;1,2}=d_p\). Proposition~\ref{prop:norm-class-error}
-also gives \(R_\Lambda-R_P\ll_{\mathcal O}
-NJ_{\mathcal O}/(\log N)^{6/5}\), and \(P=\Lambda\) if the doubled
-class group vanishes.
-\end{proof}
+the condition \([I]=0\) characterizes \(P\). In particular,
+Proposition~\ref{prop:norm-class-error} gives
+\(R_\Lambda-R_P\ll_{\mathcal O}NJ_{\mathcal O}/(\log N)^{6/5}\),
+and \(P=\Lambda\) when the doubled class group vanishes.
 
 \begin{remark}[Gaussian normalization]
 For $\mathcal O=\Z[i]$ one has $P=C_4\sqcup2C_4$ and

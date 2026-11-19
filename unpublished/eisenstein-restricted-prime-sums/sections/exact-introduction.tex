@@ -1,13 +1,13 @@
 \section{Exact binary sumsets}
 
 Which integers are sums of two primitive values of a quadratic norm?
-For $x^2+2y^2$, divisibility by sixteen is the complete obstruction.
-For $x^2+xy+2y^2$, the local obstruction is divisibility by forty-nine,
-but three additional integers fail.  This paper determines the full
-sumsets in these examples and in two further class-number-one cases.
-The distinction between eventual existence and a complete classification
-is the point: every small exception must be proved, and every remaining
-finite range must meet an infinite argument.
+We determine the complete sumsets in four class-number-one cases,
+including every small exception and a proof covering every remaining
+target.
+
+The companion paper \cite{pointwisecompanion} develops broader pointwise
+correlation asymptotics. The exact classifications here have their own
+classical proof route and do not depend on that paper.
 
 For a negative discriminant $d$, put
 \[
@@ -41,24 +41,15 @@ For the Eisenstein row, let
 \[
  \AA=\{n\ge1:p\mid n\Longrightarrow p\equiv1\pmod3\}.
 \]
-Here $1\in\AA$.  The elementary identity
+Here \(1\in\AA\). Proposition~\ref{prop:primitive-classification} proves
 \[
-                   P_{-3}=\AA\sqcup(3\!\cdot\!\AA)
+                    P_{-3}=\AA\sqcup(3\!\cdot\!\AA).
 \]
-explains why two split-prime core identities suffice.  An inert prime
-cannot divide a primitive norm, while the ramified prime three occurs
-at most once; conversely every value in either displayed part has
-coprime coordinates.  Proposition~\ref{prop:primitive-classification}
-proves this in the arithmetic preliminaries.  Thus the three types of
-binary sums are $\AA+\AA$, $\AA+3\!\cdot\!\AA$ and
-$3\!\cdot\!(\AA+\AA)$.
-
-The proofs establish stronger identities for the semigroups generated
-by split primes.  In each ring, a primitive norm has no inert prime
-factor, and the ramified prime can appear only once.  Thus the norm
-value set is a split-prime semigroup together with one ramified
-dilation.  The residue restrictions are elementary; proving their
-sufficiency is a binary additive problem.
+An inert prime cannot divide a primitive norm, while the ramified
+prime occurs at most once; conversely the split-prime core and its
+ramified dilation have primitive witnesses. The same reduction in
+the other three rings explains why we prove stronger core sumset
+identities before restoring ramified factors.
 
 Our method adapts the quaternionic norm-shell and torus-normalizer
 argument used for the Gaussian restricted-prime theorem of Howe,
@@ -71,22 +62,14 @@ Ramanujan bound; Section~\ref{sec:exact-hecke} states its normalization.
 The applications require different local quotients, including all ideal
 classes and inverse-unit mass at discriminant eleven.
 
-Explicit estimates settle an infinite range.  Rational interval
-certificates bridge that range down to complete finite sumset scans;
-multiplicative descent then closes all remaining targets.  A finite
-scan by itself does not imply any of the unrestricted identities.
-The supplied programs reconstruct the membership arrays, verify the
-interval inequalities in exact arithmetic, and test every target in
-the stated finite domains.  Their mathematical roles and completeness
-arguments are included below and summarized in
-Appendix~\ref{app:verifier}.
-
-Table~\ref{tab:exact-coverage} shows how the finite and infinite parts
-meet.  In its last three rows, $C_d$ is the split-prime core defined in
-the corresponding section.  The variable $n$ is a reduced target; in
-the $-8$ row, $m$ is an odd inert-supported core.  Interval certificates
-certify the stated families throughout each interval, rather than
-scanning its individual targets.
+Explicit estimates settle an infinite range; rational interval
+certificates meet complete finite scans, and multiplicative descent
+exhausts the targets. Appendix~\ref{app:verifier} explains the exact
+programs and completeness arguments.
+Table~\ref{tab:exact-coverage} records these joins. Here \(C_d\) is
+the core defined in its section, \(n\) is a reduced target, and
+\(m\) at \(-8\) is an odd inert-supported core. Each interval
+certificate covers every target of the indicated reduced families in its interval.
 
 \begin{table}[ht]
 \centering\small
@@ -119,9 +102,5 @@ $-11$&$N\le2^{25}$: $C_{11}+C_{11}$.
 \end{tabular}
 \end{table}
 
-We first prove the Eisenstein identities, including the mixed family
-forced by the ramified prime three.  The following sections treat
-$-7,-8,-11$, and explain how their finite certificates meet their
-respective infinite estimates.  The exact exceptions at $-7$ are the
-only exceptions in Theorem~\ref{thm:exact-overview} beyond its displayed
-congruence conditions.
+Section~\ref{sec:eisenstein} proves the two Eisenstein core identities;
+Sections~\ref{sec:minus7}--\ref{sec:minus11} treat the other discriminants.

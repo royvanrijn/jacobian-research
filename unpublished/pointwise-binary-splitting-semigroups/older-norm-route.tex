@@ -1,12 +1,8 @@
 \section{An independent classical bound for quadratic cores}\label{sec:older-route}
 
-This appendix proves the order-of-magnitude input for the quadratic-order
-application without the zero-free half-plane or weighted-dilation
-theorem.  It is the quadratic specialization of the divisor-pairing
-and positive-restoration argument.  Here the first divisor product has
-only two factors.  Consequently ordinary completed Kloosterman sums
-supply the required progression estimate; no higher divisor
-correlation theorem is needed.
+The quadratic divisor pairing has two factors, so completed
+Kloosterman sums and positive restoration give the required classical
+order bounds.
 
 Fix an even modulus \(L_0\), a nonprincipal quadratic literal character
 \(\chi\bmod L_0\), and put
@@ -23,10 +19,10 @@ All arithmetic data in the following lemma are fixed.
 
 \begin{lemma}[Classical quadratic core bound]\label{lem:older-quadratic-filter}
 Let \(A,B\) be coprime positive \(L_0\)-supported integers and
-\(U,V_0\subset H\) fixed residue subsets.  Write
+\(U,V_0\subset H\) fixed residue subsets. For any positive \(A',B'\), define
 \[
- \Gamma_{A,B;U,V_0}(N)=\frac{L_0}{|H|^2}
-   \#\{(a,b)\in U\times V_0:Aa+Bb=N\bmod L_0\}.
+ \Gamma_{A',B';U,V_0}(N)=\frac{L_0}{|H|^2}
+   \#\{(a,b)\in U\times V_0:A'a+B'b=N\bmod L_0\}.
 \]
 Uniformly over all sufficiently large targets with \(\Gamma_{A,B;U,V_0}(N)>0\),
 \[
@@ -40,41 +36,21 @@ Its proof uses only fixed-character means, fixed-progression prime
 Mertens, the classical Weil--Estermann bound, and finite sieve inequalities.
 \end{lemma}
 
-\paragraph{Proof mechanism.}
-Completed two-factor boxes first give a progression estimate for a
-uniform family of shifted divisor weights. The shifts must remain
-available after small divisibility and exact-valuation conditions;
-a single weighted convolution would not suffice. A finite lower sieve
-then retains a fixed fraction of the rough weighted mass, with
-guaranteed lower-bound scale \(NJ(N)/(\log N)^2\). The missing logarithm is recovered by
-restoring small split primes: the two one-sided choices contribute
-the positive Euler factors \(1+2a_p\), with
-\(a_p=(p-1)/(p(p-2))\). Their product up to \(N^\omega\) has order
-\(\log N\), as shown in \eqref{eq:older-restoredmass}.
+\paragraph{Proof plan and parameter order.}
+Completed two-factor boxes give a shifted weighted family, uniform
+under the divisibility predicates needed by a finite lower sieve.
+The rough mass has lower-bound scale \(NJ(N)/(\log N)^2\).
+Restoration supplies the missing logarithm through the positive
+product in \eqref{eq:older-restoredmass}; the valuation patterns
+\((1,1),(1,0),(0,1)\) recover its labels \(d,u,v\), and the residual
+rough divisor weights are bounded. This makes restoration injective
+at the numerical-value level.
 
-Restoration also has to produce distinct numerical pairs. Its
-squarefree, pairwise coprime labels \(d,u,v\) are recovered from the
-small-prime valuation patterns \((1,1),(1,0),(0,1)\) of the final
-pair. Thus different labels cannot count the same pair. After the
-prescribed factors of two are removed from the divisor weights,
-the remaining factors are rough and their divisor weights are
-bounded by a fixed constant. Injectivity therefore converts the
-restored weighted mass into an unweighted lower bound at the required
-scale. The final subsection proves these assertions, including the
-size cap on \(duv\), in the positive cofactor model itself.
-
-\paragraph{Order of choices.}
-First choose the box truncation exponent \(\lambda\) small and the
-core family exponent still smaller; set \(\zeta=\lambda/100\).
-The reserve in \eqref{eq:older-uniform-reserve} then permits a positive
-saving \(\eta\), followed by a smaller external family exponent
-\(\theta\). Choose \(\alpha,\xi>0\) to satisfy
-\eqref{eq:older-smallbudgets}. Next fix the Bonferroni depth \(s\),
-then the roughness exponent \(\gamma<\xi/(4s+7)\), and finally
-\(\omega<\min(\gamma,\alpha/(4C_1))\), where \(C_1\) is the uniform
-cofactor-mass constant below. Only after these fixed choices does
-\(N\) tend to infinity. This order leaves room both for the summed
-sieve errors and for retaining the capped restoration mass.
+Choose the box exponent and core family first, then the saving \(\eta\)
+and external exponent \(\theta\) from \eqref{eq:older-uniform-reserve}.
+Next choose \(\alpha,\xi\) by \eqref{eq:older-smallbudgets}, the
+Bonferroni depth, the roughness exponent, and finally the restoration
+range, in that order. All remain fixed as \(N\to\infty\).
 
 \subsection{Two-factor boxes with a fixed period}
 
@@ -195,7 +171,7 @@ small after \(\eta\), such that the following holds.
 Let \(t_1,t_2,u,v\in\mathcal C\), each at most \(N^\theta\), with
 no restriction on their gcds.  For fixed residue subsets \(U,V_0\subset H\),
 \begin{align*}
- &\sum_{\substack{Au x+Bv y=N\\x\bmod L_0\in U,\ y\bmod L_0\in V_0}}
+ &\sum_{\substack{Au x+Bv y=N\\x,y\ge1,\ x\bmod L_0\in U,\ y\bmod L_0\in V_0}}
                       F_{t_1}(x)F_{t_2}(y)\\
  &\quad=\frac{N}{ABuv}\,
        \Gamma_{Au,Bv;U,V_0}(N)\rho_{t_1}\rho_{t_2}
@@ -847,12 +823,3 @@ the total endpoint error is
 \(O(N^{1/2}\log^C N)\).
 Discarding the residue filters only increases this upper bound.
 This completes the proof of Lemma~\ref{lem:older-quadratic-filter}.
-
-\paragraph{Independence of the two conclusions.}
-Lemma~\ref{lem:older-quadratic-filter} supplies uniform two-sided
-bounds, but no leading asymptotic.  Its positivity comes from the
-finite lower sieve and the recoverable positive cofactor model.
-The density-model comparison of the main binary theorem supplies
-the leading asymptotic by a separate argument.  In particular the
-classical bound proved here has no dependency on the recent
-zero-free or graph inputs.

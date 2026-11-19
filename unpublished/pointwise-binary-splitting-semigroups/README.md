@@ -1,5 +1,9 @@
 # Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 
+Reserved Zenodo draft DOI: [doi:10.5281/zenodo.24371355](https://doi.org/10.5281/zenodo.24371355), version 1 (2026). This records the author-supplied reservation, not a verified public deposit.
+
+This edition is shortened from 71 to 69 pages with the same typography and mathematical content. Results are stated at their natural generality; technical proofs and the declared certificate support are retained.
+
 The flagship opens with CK/Smilansky fixed-shift correlations of ordinary
 quadratic values, including consecutive sums of two squares with coefficient
 1/2. Its second headline is classical genus invariance for primitive values
@@ -78,7 +82,7 @@ uses the new general binary theorem. The all-order leading-term transfer gives
 uniform `o(1)`; an explicit logarithmic remainder for the full leading term is
 asserted for the fixed-data semigroup theorem. Its modulus is even and fixed, and all primes dividing
 it are excluded from the core.
-The independent order-bound theorem and dependency distinction stay prominent
+The independent order bounds and dependency distinction stay prominent
 in the primitive-form application; its full classical core proof is in Appendix A. Numerical
 saving exponents and localization budgets are collected in the technical
 reconstruction section, after the early statements with positive savings.
@@ -114,7 +118,13 @@ or forms over different quadratic fields. The exact companion retains its
 four-discriminant classification scope and certificate bytes.
 
 [PDF](paper.pdf) · [Source](main.tex) · [Metadata](metadata.json) ·
-[Verification record](verification.json) · [Standalone source archive](source.zip)
+[Verification record](verification.json) · [TeX-only submission archive](hexagon-source.zip) ·
+[Full source and documentation archive](source.zip)
+
+Use the TeX-only archive for repository submission; its 19 TeX files include
+`main.tex` and build independently. A fresh extraction reproduced the current
+69-page PDF byte for byte. The full archive also retains the README, metadata,
+verification record and source manifest. No submission or deposit has been made.
 
 The [exact companion](../eisenstein-restricted-prime-sums/) evolves the existing
 Eisenstein manuscript and retains its proofs and certificates while integrating

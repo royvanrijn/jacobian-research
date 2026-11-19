@@ -1,10 +1,7 @@
 \section{Replacing indicators by arithmetic models}\label{sec:comparison}
 
-The comparison argument depends on how an indicator interacts with
-selected primes and on one-variable distribution, rather than on a
-particular Euler product. We isolate these requirements. The arithmetic
-applications below construct the models and check the requirements;
-the signed graph comparison and its frequency estimates are proved once.
+We isolate the prime invariance, one-variable means and sparse sieve
+bounds needed to replace an indicator by its arithmetic model.
 
 Fix an even integer \(L_0\ge2\) and a reduced class
 \(c\in(\Z/L_0\Z)^\times\). At the outer scale \(X\), write
@@ -154,27 +151,10 @@ different major-arc geometries; no uniformity in the intervening
 range of growing sublinear shifts is asserted.
 \end{theorem}
 
-The shared reduction is proved in Section~\ref{sec:graph}.
-After the common frequency tools of Section~\ref{sec:prime-estimates},
-Sections~\ref{sec:fixed-shift-comparison} and
-\ref{sec:reflected-comparison} handle the two branches.
-Section~\ref{sec:assembly} gives the quantitative reconstruction. A fixed reduced prime
-class supplies the same number of banks in both cases. The graph
-comparison produces two independent large prime products. For a
-reflected target, its major arcs form target-sized rational grids;
-recordwise centering and a small-prime extraction control their
-residue energy. For a fixed shift the arcs are wider, and the existing
-additive-to-Dirichlet conversion instead gives low and high Mellin
-frequencies. Condition (C3) handles the low range; exact invariance,
-the same zero-free prime estimate, and the ordinary Dirichlet
-mean-value bound handle the high range. Both estimates are proved
-from the stated hypotheses below.
-
-Two scope distinctions are useful. A pair of subgroups always has
-the identity prime class available. A self-coset prescription has
-any one of its prime classes available, with a slot-dependent unit
-phase in the character frame. Arbitrary pairs of prime prescriptions
-can have no common invariant prime class, so they do not satisfy
-(C2). Also, the comparison saving does not bound the secondary
-terms of a particular Euler product: the final asymptotic rate must
-also pay for evaluating its complete arithmetic model.
+The proof consists of the shared graph reduction
+(Section~\ref{sec:graph}), the fixed-shift and reflected estimates
+(Sections~\ref{sec:fixed-shift-comparison}--\ref{sec:reflected-comparison}),
+and reconstruction (Section~\ref{sec:assembly}).
+Subgroup pairs satisfy (C2) in the identity class; a self-coset uses a
+class in that coset. Arbitrary prescriptions may have no common class.
+The final asymptotic saving must also pay for evaluating the model.

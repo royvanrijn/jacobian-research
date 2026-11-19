@@ -28,18 +28,15 @@ In particular,
 \end{equation}
 \end{corollary}
 
-The coefficients and their exceptional-prime conditions are evaluated
-in Section~\ref{sec:quadratic-pairs}. In particular these are ordinary
-value counts, with no weights for the number of coordinate representations.
+Section~\ref{sec:quadratic-pairs} evaluates the coefficients and exceptional-prime conditions.
 
 \subsection{A second headline: genus governs primitive value counts}
 
 Fix one negative fundamental discriminant \(D\) and two fixed
 discriminants \(\Delta_i=f_i^2D\). Let \(Q_i,Q'_i\) be primitive
 positive definite integral binary forms of discriminant \(\Delta_i\),
-in the same genus for each \(i=1,2\). Thus both slots belong to
-orders in the one quadratic field \(\Q(\sqrt D)\); no mixed-field
-assertion is made. If \(P_Q\) is the set of positive values of
+in the same genus for each \(i=1,2\), in the one field \(\Q(\sqrt D)\).
+If \(P_Q\) is the set of positive values of
 \(Q\) at coprime coordinates and
 \(R_{Q_1,Q_2}(N)=\#\{(a,b)\in P_{Q_1}\times P_{Q_2}:a+b=N\}\),
 then the classical route gives
@@ -48,14 +45,12 @@ then the classical route gives
                   \left(1+O((\log N)^{-1/5})\right)
 \end{equation}
 on sufficiently large common locally admissible targets.
-The two slots may have different genera and conductors; replacement
-is within each respective discriminant and genus. Under the recent
-analytic inputs we also obtain an explicit mixed leading term of
-order \(NJ_S(N)/\log N\), with relative error \(o(1)\).
-There is no class-number divisor: a numerical value can be represented
-by every class in its compatible genus. Section~\ref{sec:forms}
-states the general results before giving the ideal-class and local-filter
-proofs; Section~\ref{sec:norms} recovers the principal specialization.
+The slots may have different genera and conductors. Under the recent
+analytic inputs the same count has an explicit leading term of order
+\(NJ_S(N)/\log N\), with relative error \(o(1)\). No class-number divisor
+occurs: a value can belong to every class in its compatible genus.
+The common-field theorem and its principal specialization are in
+Section~\ref{sec:forms}.
 
 The counting conventions and strengths are different:
 \begin{center}\small
@@ -163,49 +158,35 @@ pointwise order bounds for coprime sums; hypothesis (P4) is uniform
 in growing shifts. Their Theorem~1 treats fixed differences
 unconditionally. They count numerical values once.
 Our unrestricted leading term gives a coprime asymptotic by M\"obius
-inversion, with the extra target factor in
-Corollary~\ref{cor:coprime-c12}. Historical priority beyond these
-precise comparisons remains separate from the proof.
+inversion, with the extra target factor in Corollary~\ref{cor:coprime-c12}.
 
-\subsection{Attribution, dependencies and scope}
+\subsection{Attribution and dependencies}
 
-Walsh's multiplicative-invariance framework treats positive integer
-divisor orders and a fixed nonzero shift \cite{walsh}.
-He explicitly proposes sums-of-two-squares indicator correlations
-in Section~1.2.4, pp.~5--6. The application idea is already present
-there; the work here supplies the complete indicator models,
-arithmetic hypothesis checks and local factors, together with the
-uniform reflected-target argument. Exact common-prime invariance,
-centered one-variable rough means and a positive sparse envelope are
-the independently checkable assumptions of the comparison theorem.
-No centered binary cancellation estimate is assumed.
+Walsh's multiplicative-invariance framework treats positive integer divisor
+orders and fixed nonzero shifts \cite{walsh}. His Section~1.2.4, pp.~5--6,
+proposes sums-of-two-squares indicator correlations. Here we supply their
+complete character models, arithmetic hypothesis checks and local factors,
+and the uniform reflected-target argument.
 
-The recent imports are the weighted-dilation root-moment theorem
-\cite[Section 3]{weightedgraphs} and the all-conductor Dirichlet
-zero-free half-plane \(\Re s>11/12\)
-\cite[Part I, Theorem 3.1]{zerofree}. The stronger Part II claim is
-not needed. Walsh states that classical estimates could recover his
-fixed-shift divisor theorem \cite[p.~2]{walsh}, while his printed
-Lemma~5.1 and Section~6.4 still use the recent zero-free input.
-Our fixed-shift moduli are polynomial-logarithmic, but their Mellin
-heights reach \(x(\log x)^C\). Section~\ref{sec:fixed-classical-boundary}
-proves a classical intermediate-height estimate and isolates the
-remaining high-frequency obligation. Both recent inputs remain in
-the fixed-shift theorem. A future replacement there would still leave
-the reflected proof's growing-conductor issue and the graph input.
+The recent inputs are the weighted-dilation root-moment theorem
+\cite[Section 3]{weightedgraphs} and the all-conductor zero-free half-plane
+\(\Re s>11/12\) \cite[Part I, Theorem 3.1]{zerofree}; Part II is not used.
+Walsh notes a possible classical recovery of his fixed-shift theorem
+\cite[p.~2]{walsh}, but his printed Lemma~5.1 and Section~6.4 retain that
+zero-free input. Our polynomial-logarithmic fixed-shift moduli still occur
+at Mellin heights up to \(x(\log x)^C\).
+Section~\ref{sec:fixed-classical-boundary} proves the classical
+intermediate-height estimate and states the remaining high-frequency
+obligation. Both recent inputs remain in our fixed-shift result; such a
+replacement would also leave the reflected growing-conductor problem.
 
-For primitive values in the fixed field \(\Q(\sqrt D)\), the classical
-Kloosterman, weighted-correlation and positive-restoration route gives
-pointwise order bounds. The class-error sieve then proves
-\eqref{eq:genus-headline} independently of the recent inputs.
-Its full classical core argument is Appendix~\ref{sec:older-route}.
-The common mixed local-filter calculation gives the explicit leading
-coefficient under the recent binary theorem; the principal norm case
-is a specialization. Constants and thresholds depend on the fixed
-forms and orders, and no numerical onset or complete small-exception
-classification is asserted here. The exact classifications and
-certificates belong to the companion article, and the deposited
-window paper addresses where summands may be placed.
+Appendix~\ref{sec:older-route} proves classical quadratic order bounds
+by Kloosterman completion and positive restoration. With the class-error
+sieve these give genus comparison independently of the recent inputs.
+All data are fixed; thresholds are not numerical. The companion paper
+\cite{exactcompanion} gives exact classifications and finite certificates
+for four primitive quadratic norm sumsets. The deposited window paper
+concerns the placement of summands.
 
 \subsection{Notation}
 

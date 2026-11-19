@@ -1,10 +1,5 @@
 \section{Primitive forms and invariance within a genus}\label{sec:forms}
 
-For primitive forms in one imaginary quadratic field, the local value
-sets determine the leading binary count. The ideal class of a form
-affects only a smaller error: sufficiently many split prime factors
-allow independent orientation choices to fill its compatible genus.
-
 Fix a negative fundamental discriminant \(D\), put \(K=\Q(\sqrt D)\),
 and let
 \[
@@ -65,7 +60,7 @@ Haar measure gives \(\Z_p\) mass one.
 \begin{theorem}[Common-field primitive form values]\label{cor:common-field-form-pairs}
 For the fixed data above, the following assertions hold.
 \begin{enumerate}
-\item\label{part:form-classical}
+\item\label{part:form-classical}\label{thm:genus-binary-invariance}
 \emph{Classical order bounds and genus comparison.}
 Uniformly on sufficiently large locally admissible targets,
 \[
@@ -83,7 +78,7 @@ If both doubled class groups vanish, the counts agree for every target.
 Otherwise \(\eta=1/5\) is always permissible. These assertions use
 Appendix~\ref{sec:older-route} and the class-error sieve, independently
 of the recent zero-free and weighted-dilation inputs.
-\item\label{part:form-leading}
+\item\label{part:form-leading}\label{thm:form-binary-leading}
 \emph{Explicit leading term.}
 Under the analytic inputs of Section~\ref{sec:inputs}, uniformly
 through sufficiently large locally admissible targets,
@@ -101,27 +96,10 @@ depend on the fixed forms and, in the comparison, on \(\eta\).
 The two conductors may differ; the quadratic field remains fixed.
 \end{theorem}
 
-The absence of a class-number divisor concerns numerical values,
-rather than weighted representations by ideals or coordinates.
-A saturated value can be represented by every class in its compatible
-genus, so selecting one class does not select a fixed fraction of
-a disjoint partition.
-
-\begin{corollary}[One discriminant]\label{thm:genus-binary-invariance}\label{thm:form-binary-leading}
-If \(f_1=f_2=f\), both conclusions of the theorem hold for forms
-of the one discriminant \(\Delta=f^2D\), with
-\[
- S=\{p:p\mid2\Delta\},\qquad J_\Delta=J_S,\qquad
- 0<\eta<\eta_*(\operatorname{Pic}(\Z+f\mathcal O_K)).
-\]
-In particular the classical genus comparison and the explicit leading
-term retain their separate dependencies.
-\end{corollary}
-
-We prove the common-field theorem directly. Write
-\(\mathcal F=(Q_1,Q_2)\) for the fixed pair.
-No ideals from different orders are multiplied, and no distribution
-theorem for joint classes in the two orders is used.
+A saturated numerical value can occur in every class of its compatible
+genus; the classes do not partition the values. Taking \(f_1=f_2=f\)
+gives the one-discriminant case, with \(\Delta=f^2D\) and \(J_\Delta=J_S\).
+Write \(\mathcal F=(Q_1,Q_2)\) for the fixed pair in the proof.
 
 \subsection{Proper ideals and the genus map}
 
@@ -718,10 +696,3 @@ The finite positive minimum of the local density product and
 \eqref{eq:form-class-error} transfer the asymptotic to the actual
 values. This proves part~\ref{part:form-leading} of
 Theorem~\ref{cor:common-field-form-pairs}.
-
-The proof has used a common field and two separate local filters.
-Genus replacement is made in each respective discriminant; it asserts
-neither an identification of genera across different orders nor a
-result for different quadratic fields. The class groups entered only
-the smaller error, without a class-number divisor in the leading
-value count.
