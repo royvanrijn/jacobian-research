@@ -40,9 +40,28 @@ Theorem~2 gives conditional order bounds for coprime sums at every
 sufficiently large admissible target; its hypothesis (P4) is a
 convolution estimate uniform in growing shifts. Their Theorem~1
 proves the corresponding fixed-difference result unconditionally.
-Their counts already count each numerical value once. Formula
-\eqref{eq:opening} concerns unrestricted pairs and supplies a leading
-constant and quantitative remainder through a different argument.
+Their counts already count each numerical value once.
+Corollary~\ref{cor:coprime-c12} applies M\"obius inversion to
+\eqref{eq:opening} and gives the same coprime scope, with leading term
+\[
+ A_{12}J_{12}(N)
+ \prod_{\substack{p\mid N\\p\equiv1\ (12)}}(1-p^{-1})
+ \frac{N}{(\log N)^{3/2}}
+\]
+and relative error \(O((\log N)^{-1/65536})\).
+Denote the displayed finite product by \(P_{12}(N)\).
+Their target weight is \(W_{12}(N)=\prod_{p\mid N}(1-\varepsilon_p/p)\),
+where \(\varepsilon_p=1\) on allowed primes and \(-1\) otherwise.
+On the admissible class, the ratio of our target factor to theirs is
+\[
+ \frac{J_{12}(N)P_{12}(N)}{W_{12}(N)}
+ =\frac23\prod_{\substack{p\mid N\\p\equiv5,7,11\ (12)}}
+                   \frac{p(p-1)}{(p-2)(p+1)}\asymp1,
+\]
+uniformly in \(N\), since the factors are \(1+O(p^{-2})\).
+Thus we recover their coprime sum conclusion, with a leading constant
+and quantitative remainder, through the analytic inputs used here
+instead of their hypothesis (P4).
 We make no claim here about historical priority beyond this comparison.
 
 The example belongs to a general theorem. Fix an even modulus \(L_0\)
@@ -96,13 +115,17 @@ on these specified recent preprints; it does not follow from classical
 independent-linear-form correlations alone.
 
 The principal arithmetic application is to primitive norm values in
-every fixed imaginary quadratic order. Local representability can
-leave a global class-group obstruction. We show that the obstructed
-values contribute a smaller logarithmic order to the binary count.
-A conductor-prefix decomposition and a summable tail bound then
-transfer the leading asymptotic to actual primitive norm values,
-including the local factors at conductor primes. No coordinate or
-ideal representation multiplicity enters that count.
+every fixed imaginary quadratic order. It has two independent analytic
+routes. Classical Kloosterman estimates, a weighted correlation and
+positive restoration give pointwise order-of-magnitude bounds on all sufficiently
+large locally admissible targets. We retain that proof: this arithmetic
+conclusion does not depend on the recent zero-free or graph theorems.
+The new correlation theorem upgrades it to an explicit leading
+asymptotic. In both routes, a class-group obstruction changes the
+binary count only by a smaller logarithmic order. A conductor-prefix
+decomposition and summable tail bound transfer the leading term to
+actual primitive norm values, including conductor-local factors.
+No coordinate or ideal representation multiplicity enters the count.
 
 The conclusion is that local arithmetic governs the pointwise binary
 count. Here ``local'' includes simultaneous residue conditions:

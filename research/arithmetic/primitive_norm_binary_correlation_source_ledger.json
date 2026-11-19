@@ -24,8 +24,8 @@
     },
     {
       "path": "SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-      "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
-      "locator": "Sections1-6 quantitativebinarytheory; Sections7-10 Goldbachexistence G.1-G.2, classicalhighercounts G.3-G.6, exactbasisorders G.7-G.9"
+      "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
+      "locator": "Sections1-6 quantitativebinarytheory; Sections7-10 Goldbachexistence G.1-G.2, classicalhighercounts G.3-G.6, exactbasisorders G.7-G.9; Coprime summands C12CoprimeCorrelation S.C1-S.C4"
     },
     {
       "path": "COUPLED_SPLITTING_LOCAL_GLOBAL.md",
@@ -406,7 +406,27 @@
     "profiles": "Finite exact bad-prime profiles transfer with same logarithmic exponent, rational-valued periodic coefficient and positive minimum on admissible classes. No unrestricted infinite-profile relative asymptotic is inferred.",
     "counterexample": "Cstar=<2,p1mod4> has R(2^t)=1; a fixed-logN relative main based on vanishing local density fails. Infinite profiles need additional nondegeneracy/tail analysis or residual-core scales.",
     "review": "Root and separate analytic/arithmetic agents read current main/support. Internal written/source checking only, no external human review or formal verification.",
-    "balanced_consequences": "For every fixedq>=3, L=lcm(2,q), H={1} givesexactCq andphiL=phiq. Interval[1/3,2/3] gives main (L/3)cq^2*C_E*J_E*N/log^(2-2/phiq), relativeerrorlog^-1/(8192phiq). Thus FBS-G, balancedS12 andS12U are proved; FBS-U power-shortwindows, rawweightedH1/H2, numericalonset and everypositivetargetclassification do notfollow. Root and separate arithmetic-agent review confirmed the implication."
+    "balanced_consequences": "For every fixedq>=3, L=lcm(2,q), H={1} givesexactCq andphiL=phiq. Interval[1/3,2/3] gives main (L/3)cq^2*C_E*J_E*N/log^(2-2/phiq), relativeerrorlog^-1/(8192phiq). Thus FBS-G, balancedS12 andS12U are proved; FBS-U power-shortwindows, rawweightedH1/H2, numericalonset and everypositivetargetclassification do notfollow. Root and separate arithmetic-agent review confirmed the implication.",
+    "coprime_c12": {
+      "date": "2026-11-19",
+      "statement": "Rcop(N)=A12 J12(N) P12(N) N/(log N)^(3/2) times (1+O((log N)^(-1/65536))) for all sufficiently large N=2 mod 12, with P12(N)=product_(p|N,p=1 mod 12)(1-1/p).",
+      "proof": "C12CoprimeCorrelation S.C1-S.C4: exact Mobius inversion; d<=sqrt(N) retains admissibility and J12; reciprocal divisor sums cost only loglog powers; d>sqrt(N) contributes O(sqrt(N) tau(N)); the product normalization is retained.",
+      "relative_error": "With L=log N and ell=loglog N, O(L^(-1/32768) ell^2 + L^(-1) ell^4 + N^(-1/2) tau(N) L^(3/2) ell), hence exponent 1/65536.",
+      "written_review": "Root and a separate internal arithmetic agent checked the deduction from the stated uniform theorem, including the shrinking coprimality factor and divisor tail.",
+      "manuscript_pdf": {
+        "repository_path": "unpublished/pointwise-binary-splitting-semigroups/paper.pdf",
+        "sha256": "00ee9f2aebf6a6b010a0d5a25f857bfb139c9a1ec5afbf5e41a044de352f3321",
+        "reviewed_pages": "1-5"
+      },
+      "build_and_layout": "Forced latexmk -g build succeeded. Root inspected rendered final pages 2 and 5-6; the full corollary is on page 5. No overfull boxes, undefined references or visual defects were found in the affected passages.",
+      "isolated_pdf_review": {
+        "reviewer": "Fresh isolated internal AI reader",
+        "supplied_context": "Only the current PDF pages 1-5; no repository, conversation or research-source context. The stated uniform theorem was accepted as a premise.",
+        "findings": "No defects found in the coprime proof, relative error, comparison product ratio or rendered first five pages.",
+        "scope": "Application-only reading. This does not revalidate the uniform theorem, imported analytic preprints or historical sources; it is not external human review or formal verification."
+      },
+      "navigation": "Generated navigation rendered successfully. Full check-navigation is blocked by unrelated existing manuscript inventory changes; this deduction and its canonical source/ledger pins have no coverage errors."
+    }
   },
   "scope_boundaries": [
     "Fixed even modulus and abelian SUBGROUP prime prescriptions, including finite conjunctions and nonnested pairs",
@@ -470,7 +490,7 @@
     },
     {
       "path": "SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-      "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+      "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
       "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning",
       "role": "historical_comparison"
     }
@@ -486,7 +506,7 @@
     "status": "Completed original-paper statement and hypothesis audit; later deconditioning and exhaustive priority remain separate.",
     "canonical": {
       "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-      "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+      "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
       "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
     },
     "exact_overlap": "For K=Q(zeta_12), conductor 12 and splitting subgroup {1}, the paper's numerical summands are exactly C12. Local sum targets are 2 mod 12 and difference targets 0 mod 12.",
@@ -494,8 +514,8 @@
     "theorem_2": "Printed p. 234: conditional eventual coprime sums, assuming P4 uniformly for every |a|<X, at the same logarithmic order. It gives no explicit leading asymptotic.",
     "hypothesis": "P1-P5 on p. 243: |beta_n|<=tau(n), rough support and uniform Siegel-Walfisz bounds for all moduli. The unconditional error constant depends on the shift. Page 244 obtains growing-shift uniformity under the stated Maass Hecke Ramanujan bound.",
     "range": "P5: X^epsilon(1+Q^2/X)R<Y<X^(5/6-epsilon)(Q^2R)^(-2/3). The successful quartic parameter is 1/10; the published Fouvry alternative yields 1/28, and p. 243 reports failure at 1/11 for that same positivity calculation.",
-    "coprimality": "epsilon_p=1 on allowed primes and -1 otherwise. The extra allowed-prime divisor product can tend to zero. The current unrestricted leading count is not automatically a proof of the older coprime count.",
-    "positioning": "Credit the existing quartic binary problem, admissibility, conditional every-target sum theorem and logarithmic order, plus the unconditional difference theorem. Compare the present unrestricted leading constant and analytic hypotheses explicitly. No first unconditional result or exhaustive historical priority is certified.",
+    "coprimality": "epsilon_p=1 on allowed primes and -1 otherwise. The extra allowed-prime divisor product can tend to zero. Mobius inversion of the current target-uniform theorem now proves the coprime count with leading factor A12 J12(N) product_(p|N,p=1 mod 12)(1-1/p) and relative error O((log N)^(-1/65536)); the small-divisor errors and large-divisor tail are explicitly bounded in C12CoprimeCorrelation.",
+    "positioning": "Credit the existing quartic binary problem, admissibility, conditional every-target sum theorem and logarithmic order, plus the unconditional difference theorem. The present theorem supplies unrestricted and coprime leading asymptotics with explicit constants and logarithmic remainders using its specified analytic imports. No first unconditional result or exhaustive historical priority is certified.",
     "followup": "The inspected Li v6 fixed-shift result, Wu logarithmic-shift result and Lichtman triply well-factorable uniform estimate do not directly establish the original full P4/P5 package. Any adaptation needs verified weights, ranges and positivity. This does not rule out another later refinement.",
     "review": "Original full 13-page paper read; theorem page visually checked; arithmetic and later-source implications reviewed separately by agents. No external human review, formal verification or replay of the reported 1993 numerical certificate."
   }

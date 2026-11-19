@@ -15,9 +15,11 @@ $\Delta=f^2D$.  Choose a basis $1,\omega$ of $\mathcal O$ and put
 \]
 Primitivity refers to this order basis.  Write
 \[
+ \begin{gathered}
  \mathscr V_p=Q(\Z_p^2\setminus p\Z_p^2),\qquad
- \Lambda=\{n\ge1:n\in\mathscr V_p\text{ for every }p\},\qquad
+ \Lambda=\{n\ge1:n\in\mathscr V_p\text{ for every }p\},\\
  R_T(N)=\#\{(a,b)\in T^2:a+b=N\}.
+ \end{gathered}
 \]
 Thus $P\subset\Lambda$, and $R_T$ counts numerical values without
 coordinate multiplicities.  A target is locally admissible if
@@ -34,6 +36,27 @@ Let $S=\{p:p\mid2\Delta\}$, let $\chi=\chi_D$, and define
 \]
 The Haar measure of $\Z_p$ is one.  The local densities concern the
 set of values, rather than the number of their preimages under $Q$.
+
+The earlier weighted quadratic correlation and positive restoration give
+an order-of-magnitude result independently of the new analytic inputs.
+
+\begin{theorem}[The quadratic order bounds]\label{thm:norm-order}
+For every fixed imaginary quadratic order there are constants
+$c_{\mathcal O},C_{\mathcal O}>0$ and $N_{\mathcal O}$ such that every
+locally admissible $N\ge N_{\mathcal O}$ satisfies
+\[
+ c_{\mathcal O}\frac{NJ_{\mathcal O}(N)}{\log N}
+       \le R_P(N)\le R_\Lambda(N)
+       \le C_{\mathcal O}\frac{NJ_{\mathcal O}(N)}{\log N}.
+\]
+Every nonadmissible target has count zero.  This theorem uses the
+older-input quadratic filter estimate proved in
+Lemma~\ref{lem:older-quadratic-filter} and the class-error argument
+below; it does not use Theorem~\ref{thm:general}.
+\end{theorem}
+
+The new binary correlation theorem upgrades these bounds to an explicit
+leading asymptotic.
 
 \begin{theorem}\label{thm:norm-leading}
 For every fixed imaginary quadratic order, uniformly as $N$ tends to
@@ -364,8 +387,52 @@ $A=r/g$, $B=s/g$, and, when $g\mid N$, $M=N/g$.  Define
  \Gamma_{r,s}(N)=\frac L{|H|^2}
       \#\{(u,v)\in A_r\times A_s:Au+Bv=M\bmod L\},
 \]
-and set it to zero when $g\nmid N$.  Theorem~\ref{thm:general}
-applies with the coprime fixed $L$-supported coefficients $A,B$.
+and set it to zero when $g\nmid N$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:norm-order}]
+A finite collection of these profiles covers every locally admissible
+target.  To see this, put
+$Z=\prod_{p\in S}p^{e_p+1}$, with $e_p=2v_p(\Delta)+1$ as above.
+For local summands $a+b=N$, replace them by
+$a+p^{e_p}u,b-p^{e_p}u$.  They remain in their full value cosets.
+A valuation below $e_p$ stays fixed; otherwise at most one residue of
+$u\bmod p^2$ would make that summand divisible by $p^{e_p+2}$.
+Avoiding at most two residues is possible since $p^2>2$.  Thus both
+summands can be chosen nonzero with valuations at most $e_p+1$.
+
+Their exact valuations choose $r,s\mid Z$.  Their unit quotients at
+all bad primes assemble by the Chinese remainder theorem into a pair
+counted by $\Gamma_{r,s}(N)$.  The reciprocal-symbol argument above
+puts these quotients in $H$ and hence in $A_r,A_s$.  Conversely, a
+positive finite root lifts to an exact linear solution over each bad
+$\Z_p$, preserving unit-square states, since at least one of $A,B$
+is a unit.  Outside $S$ every target is already a sum of two primitive
+local norm values.  We have proved
+\[
+ N\text{ locally admissible}\quad\Longleftrightarrow\quad
+       \Gamma_{r,s}(N)>0\text{ for some }r,s\mid Z.
+\]
+There are only finitely many such profiles.  The older-input estimate
+of Lemma~\ref{lem:older-quadratic-filter} supplies
+$\gg_{\mathcal O} MJ_{\mathcal O}(M)/\log M$ core value pairs in
+one positive profile.  Multiplying the values by $r,s$ is injective,
+and $J_{\mathcal O}(M)=J_{\mathcal O}(N)$ because $g$ is supported on
+$S$.  The finite minimum of the positive constants and maximum of their
+thresholds therefore give
+$R_\Lambda(N)\gg_{\mathcal O}NJ_{\mathcal O}(N)/\log N$ uniformly.
+
+For the matching upper bound, sieve the original line $a+b=N$ only
+at the good inert primes, discarding all bad local restrictions.
+The unmarked estimate \eqref{eq:norm-marked-sieve} gives
+$R_\Lambda(N)\ll_{\mathcal O}NJ_{\mathcal O}(N)/\log N$.
+Proposition~\ref{prop:norm-class-error} is smaller than the lower bound
+by a positive power of $\log N$; it transfers that lower bound to
+$R_P(N)$.  This proves the theorem entirely from the older route.
+\end{proof}
+
+We now use the new input to evaluate the leading coefficient.
+Theorem~\ref{thm:general} applies with the coprime fixed
+$L$-supported coefficients $A,B$.
 The contribution of this prefix pair, divided by
 $NJ_{\mathcal O}(N)/\log N$, is therefore
 \begin{equation}\label{eq:norm-prefix-main}

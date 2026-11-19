@@ -1,0 +1,114 @@
+{
+  "title": "Exact primitive discriminant -7 norm self-sums: classical inputs and finite/infinite proof scope",
+  "proof": "PRIMITIVE_NORM_MINUS7_EXACT.md",
+  "checker": "verify_primitive_norm_minus7.py",
+  "receipt": "primitive_norm_minus7_checks.json",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus7.py --output research/arithmetic/primitive_norm_minus7_checks.json",
+  "source_sha256": "47bc97260e10f99f1b36243520e6f20690dcfc60569ab9f595448c727013eed9",
+  "receipt_sha256": "1610f000b841ac3aefbc692e110c9c811e05aa0232ead298994e66c1e9c35efd",
+  "sources": [
+    {
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "v3.08, 19 July 2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "local_path": "sources/milne-ant308.pdf",
+      "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+      "statements_used": [
+        "Theorem4.3, printedp70/PDFp72: Minkowski ideal-class representative bound. At discriminant-7 the bound(2/pi)*sqrt(7)<2 proves ideal class number one."
+      ],
+      "inspection_scope": "The retained v3.08 statement was inspected internally. The explicit discriminant-7 specialization and primitive ideal orientations are proved in the note."
+    },
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "version": "Author edition v1.0.7u, 5 August 2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "statements_used": [
+        "Theorem15.5.5 and Example15.5.7, printedp241: B=(-7,-1) has discriminant7 and O=Z[(1+i)/2]+Z[(1+i)/2]j is maximal.",
+        "Theorem25.1.1, printedp403: total projective maximal-order ideal mass phi(7)/12=1/2. The principal projective unit group has order2, so its mass1/2 exhausts the classes.",
+        "MainTheorem14.7.4: rational reduced norms in the definite rational algebra are all positive rationals; identifies the global norm-character quotient.",
+        "MainTheorem28.5.3: strong approximation for the norm-one group at a split noncompact place; excludes additional character constituents.",
+        "Propositions41.3.1 and41.3.6: all-integral-ideal Hecke operators, degree sigma(n), multiplicativity and prime-power recurrence, including the unramified prime2."
+      ],
+      "inspection_scope": "Actual retained author edition and exact application hypotheses inspected internally. This pins v1.0.7u, not an assumed identity with the 2021 printed edition. The classical theorem proofs remain imported."
+    },
+    {
+      "author": "Herve Jacquet and Robert P. Langlands",
+      "title": "Automorphic Forms on GL(2)",
+      "version": "IAS typesetting accessed18 November2026",
+      "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+      "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+      "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+      "statements_used": [
+        "Theorem14.4, printed p248/PDFp254: global transfer after excluding finite-dimensional factors at split places. Section5 printed pp89-90 and Proposition5.20 pp105-106, n=0 archimedean case: trivial definite infinite type gives weight2."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "Formes modulaires et representations l-adiques",
+      "version": "Seminaire Bourbaki1968-1969, expose355",
+      "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+      "local_path": "sources/deligne-modular-355.pdf",
+      "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+      "statements_used": [
+        "Theorems4.9 and5.1: Frobenius/Hecke realization for cuspidal modular forms."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "La conjecture de Weil. I",
+      "version": "Publications mathematiques de l IHES43 (1974),273-307",
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "local_path": "sources/deligne-weil-I.pdf",
+      "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+      "statements_used": [
+        "Theorem1.6: purity, giving unramified weight-two Ramanujan with the modular realization."
+      ],
+      "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
+    }
+  ],
+  "spectral_dependency": {
+    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "scope": "Comparison proof mechanism, explicitly reconstructed for discriminant7 in M7.6-M7.15: all-ideal normalization; norm-one strong approximation; Jacquet-Langlands Theorem14.4 and Proposition5.20; Deligne modular realization and purity. The finite checker does not prove these imported infinite theorems.",
+    "application_hypotheses": "Maximal order of discriminant7 and projective unit mass1/2 give class number one. Reductions of the two global projective units inject at all odd inert q including3 and at7. At ramified level7 only two norm characters occur; at joint q,7 level all four occur. The Hecke norm bound applies at every index coprime to7 and the added level, including powers of2. Target-dividing inert primes are counted by anisotropic scaling instead of applying a level-prime Hecke estimate.",
+    "character_scope": "Only global one-dimensional automorphic constituents are removed. The direct strong-approximation argument concerns each full smooth local factor, not its level-fixed vector space. Finite right-action characters can remain in the cuspidal complement: at level7 the two quartic C4 characters have T2 eigenvalue1, whereas the two global norm characters have eigenvalue3. The exact norm-two shell and T2=2I+R_[1+j] calculation are written in the proof."
+  },
+  "exact_classification": {
+    "primitive_identity": "P_-7+P_-7={N>=2:49 not dividingN} minus{7,77,203}",
+    "strong_core_identity": "C+C={n>=2:7 not dividingn} minus{11,29}, C supported on primes1,2,4mod7",
+    "finite_bound": 16777216,
+    "fine_intervals": 257,
+    "fine_cases": 4883,
+    "fine_range": "[2^24,2^37)",
+    "higher_dyadic_bins": "k37..53",
+    "infinite_core_onset": 18014398509481984,
+    "range_completion": "All inert cores and the split-prime boundary are covered by the same certified high/infinite bounds. Least-exception descent leaves only121,319,841, with explicit witnesses. Ramified scaling and the two unit patches give the three exact primitive exceptions."
+  },
+  "quantitative_scope": {
+    "onset": 590295810358705651712,
+    "statement": "For every N>=2^69 with49 not dividingN, at least N^(2/3)/20000 distinct ordered positive primitive value pairs.",
+    "uniformity": "The all-target Euler bound E(n)<=15n^(-1/3) has no inert-support hypothesis; the effective count is independent of the least-exception descent."
+  },
+  "finite_evidence": "The canonical checker reconstructs complete ordinary/divisor-character point arrays through2^18 and exact value flags and both sum masks through2^24. Its receipt retains hashes/counts for those arrays, plus all Euler/divisor frontiers,257intervals and4883cases,17higherbins,all-tailconstants,finiteq3/q5joint-group projections and rejection controls; raw arrays are not retained. Complete coordinate-versus-prime-support bytearrays are compared exactly before hashing. Current full replay is byte-identical to the retained receipt.",
+  "limitations": [
+    "Internal mathematical review and exact internal replay only; no external review, formal verification or historical priority assurance.",
+    "The finite checker certifies its stated finite inputs, not the infinite spectral theorem.",
+    "No unweighted leading asymptotic, C12+C12 theorem or exact classification at other discriminants is inferred."
+  ],
+  "runtime_contract": {
+    "required": "Python assertions enabled (__debug__ is True).",
+    "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",
+    "negative_modes_checked": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "scope": "Execution contract for finite checks; no new mathematical theorem or review assurance."
+  }
+}

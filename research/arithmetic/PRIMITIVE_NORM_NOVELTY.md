@@ -868,11 +868,12 @@ Their Theorem 2 already treats coprime \(C_{12}+C_{12}\) representations
 on every large admissible target, conditionally on a growing-shift
 convolution estimate; it gives the expected logarithmic order.
 Theorem 1 is unconditional for differences. The present leading
-asymptotic concerns unrestricted pairs and an explicit constant.
-Those are substantive comparison distinctions, not a certification
-of first-result status. The older coprime assertion has an additional
-allowed-prime target factor and is not automatically recovered from
-the unrestricted count.
+asymptotic also gives a [coprime corollary by Möbius inversion](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md#coprime-summands),
+with the additional allowed-prime target factor and relative error
+\(O((\log N)^{-1/65536})\). Its target factor is uniformly comparable
+to the weight in their theorem. The comparison now concerns the same
+coprime count, its leading constant, quantitative remainder and analytic
+inputs; it does not certify first-result status.
 
 Historical priority, specialist mathematical review and complete
 manuscript preparation remain separate publication obligations for

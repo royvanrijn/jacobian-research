@@ -1,0 +1,333 @@
+\section{The exact sumset at discriminant -11}\label{sec:minus11}
+
+Put $Q(x,y)=x^2+xy+3y^2$, and let $C$ contain one and the positive
+integers supported on primes with $(p/11)=1$.  Write $P$ for the
+positive primitive values of $Q$.
+
+\begin{theorem}\label{thm:minus11}
+One has the exact identities
+\[
+ C+C=\{n\ge2:2\mid n,\ 11\nmid n\},\qquad
+ P+P=\{N\ge2:2\mid N,\ 121\nmid N\}.
+\]
+\end{theorem}
+
+The field ring $R=\Z[\omega]$, $\omega=(1+\sqrt{-11})/2$, has class
+number one.  Indeed the Minkowski bound
+$(2/\pi)\sqrt{11}<3$ leaves only norms one and two, while two is
+inert; see \cite[Theorem~4.3]{MilneANT}.  Primitive ideal factorization
+therefore gives
+\begin{equation}\label{eq:11-primitive}
+                             P=C\mathbin{\dot\cup}11C.
+\end{equation}
+An inert prime dividing a norm divides both coordinates; at the
+ramified prime a primitive norm has valuation at most one.  Conversely,
+orienting an entire split prime power to a single principal prime ideal,
+and optionally multiplying by $\sqrt{-11}$, produces every value in
+\eqref{eq:11-primitive}.  In particular all these values are odd.
+Modulo eleven, $4Q=(2x+y)^2$, and $-1$ is a nonsquare.  Thus a sum
+of two primitive values divisible by eleven uses two ramified values;
+it is not divisible by $121$.  Multiplication by $\sqrt{-11}$ has
+coordinate matrix
+\[
+ \begin{pmatrix}-1&-6\\2&1\end{pmatrix},\qquad M^2=-11I,
+ \qquad Q(Mv)=11Q(v).
+\]
+It carries primitive eleven-unit values to primitive values of eleven
+times their norm.  Consequently the first identity in the theorem
+implies the second, by writing $N=11^e n$, $e\in\{0,1\}$.
+
+\subsection{Shells and the filtered Hecke quotient}
+
+Take $B=(-11,-1)_\Q$ and $O=R\oplus Rj$, with $j^2=-1$ and
+$ja=\bar a j$.  The algebra has discriminant eleven, and this is a
+maximal order \cite[Theorem~15.5.5 and Example~15.5.7]{Voight}.
+Its norm is $F=Q\oplus Q$, and its units are $\{1,-1,j,-j\}$.
+Write $\sigma(t)=0$ and $T_t=0$ for nonintegral positive indices.
+The exact shell formula is
+\begin{equation}\label{eq:11-theta}
+ r_F(m)=\frac{12}{5}\{\sigma(m)-11\sigma(m/11)\}
+                         +\frac85 a_m,
+ \qquad
+ \sum_{m\ge1}a_mq^m=\eta(\tau)^2\eta(11\tau)^2.
+\end{equation}
+For completeness, the rank-four theta series has weight two, level
+eleven and trivial character.  The Eisenstein series
+$(11E_2(11\tau)-E_2(\tau))/10$ is holomorphic at every cusp: it is
+one tenth of the logarithmic derivative of the modular function
+$\Delta(11\tau)/\Delta(\tau)$, whose cusp expansion is $q_c^vU(q_c)$
+with $U(0)\ne0$.  The eta-product is the normalized weight-two newform
+of level eleven \cite[Theorem~1, level-eleven row]{MartinOno}.
+After multiplying the claimed identity by five, both sides have
+integral coefficients.  Their coefficients through degree two agree:
+the theta coefficients are $(1,4,4)$ and the cusp coefficients
+$(0,1,-2)$.  The Sturm bound is
+$2[\mathrm{SL}_2(\Z):\Gamma_0(11)]/12=2$.
+Sturm's theorem applied modulo every prime proves equality
+\cite[Theorem~1]{Sturm}.  Independent lattice enumeration and
+eta-product multiplication verify this complete coefficient list.
+
+For an even $n=2^t m$ with $m$ odd and $11\nmid n$, let $G(n)$
+count shell points with both field norms odd.  Since $R/2R=\F_4$,
+an even field norm has both coordinates even; hence
+\[
+ G(n)=r_F(n)-r_F(n/4),\qquad
+ S(n)=\sigma(n)-\sigma(n/4)=3\cdot2^{t-1}\sigma(m)\ge\tfrac32 n.
+\]
+Put
+\begin{equation}\label{eq:11-E}
+ \mathcal D(n)=\tau(m)\sqrt m\,2^{t/2}\frac{t+3}{2},\qquad
+ E=\frac{2\mathcal D(n)}{3S(n)}.
+\end{equation}
+The filtered cusp coefficient satisfies
+$|a_n-a_{n/4}|\le\mathcal D(n)$.  Indeed the normalized roots at two
+have product one, and
+\[
+ a_{2^t}-a_{2^{t-2}}=
+ 2^{t/2}\left(u^t+v^t+\frac12\sum_{j=1}^{t-1}u^jv^{t-j}\right),
+ \qquad |u|=|v|=1.
+\]
+For $t=1$ the interior sum is empty.  Multiplicativity proves
+\begin{equation}\label{eq:11-G}
+                       G(n)\ge\frac{12}{5}S(n)(1-E).
+\end{equation}
+Moreover $\sigma(m)\ge\tau(m)\sqrt m$ by the arithmetic--geometric
+mean inequality at each prime power.  Therefore
+$E\le2(t+3)/(9\,2^{t/2})\le4\sqrt2/9<1$.
+All estimates in this subsection require the reduced target
+$11\nmid n$; the ramified factor is restored only after obtaining
+value pairs.
+
+For clarity, we retain all quaternionic ideal classes.  Their
+projective unit mass is $(11-1)/12=5/6$
+\cite[Theorem~25.1.1]{Voight}.  The principal class has projective
+stabilizer size two, so its probability is
+\begin{equation}\label{eq:11-mass}
+                            w=\frac{1/2}{5/6}=\frac35.
+\end{equation}
+At an odd inert prime $p\ge7$, impose the projective reduction kernel
+with quotient $G_p=\mathrm{PGL}_2(\F_p)$.  At eleven use the radical
+quotient $G_{11}=\F_{121}^\times/\F_{11}^\times$, of order twelve.
+Every projective unit stabilizer injects into these groups: a
+noncentral norm-one unit has integral trace $-1,0,1$, whereas scalar
+reduction would force $p$ to divide its trace discriminant $-3$ or
+$-4$.  Thus the fine quotients have uniform point measure, principal
+fiber probability $w$, and, at eleven, ten points with six in the
+principal fiber.
+
+For a function $h$ supported on that fiber, the all-ideal correspondence
+at its base point $x_0$ has the normalization
+\begin{equation}\label{eq:11-return}
+ (T_mh)(x_0)=\frac14
+      \sum_{\substack{\alpha\in O\\\operatorname{nrd}\alpha=m}}
+                                  h(\rho_p(\alpha)).
+\end{equation}
+Each principal-return ideal has four generators.  Principalization
+initially uses $\alpha^{-1}$, but projectively this is $\bar\alpha$,
+and conjugation permutes the shell.
+
+There are exactly two global norm characters at these fine levels:
+$1$ and the quadratic residue character $\psi_p$.  Away from the
+auxiliary prime the maximal units have all unit norms; at that prime
+the kernel has square residue norms, central scalars have square norms,
+and rational reduced norms give all positive rationals
+\cite[Main Theorem~14.7.4]{Voight}.  The resulting norm quotient has
+order two.  Lemma~\ref{lem:hecke-transfer} therefore bounds the
+complementary spectrum.  For $D_n=T_n-T_{n/4}$, the constant and
+character eigenvalues are $S(n)$ and $(n/p)S(n)$, and its complementary
+norm is at most $\mathcal D(n)$, by the same cancellation of roots
+used above.  No operator is used at an auxiliary level prime dividing
+its index.
+
+\subsection{The local sieve and its positive margin}
+
+Let $\mathcal I=\{p\text{ odd prime}:(p/11)=-1\}$, and write
+$b_p(n)$ for the odd-shell points with at least one field component
+norm divisible by $p$.  If $p\nmid n$, the nonsplit torus normalizer
+$H_p\subset G_p$ has order $2(p+1)$, contains the principal projective
+unit group, and describes exactly the invertible quaternions having
+one zero field component.  Put $\mu_p=2/(p(p-1))$ and
+$h=\mathbf1_{\Gamma_0\backslash H_p}$.  Its mean is $\nu=w\mu_p$;
+its quadratic-character mean is zero because the torus norm is onto.
+Right-$H_p$ invariance gives
+$(D_nh)(x_0)=\langle h,D_nh\rangle/\nu$.
+Its nonconstant squared norm is $\nu(1-\nu)$, so
+\begin{equation}\label{eq:11-inert-small}
+ \frac{b_p(n)}{G(n)}\le\frac{\mu_p+(5/2)E}{1-E}.
+\end{equation}
+If $p\mid n$, anisotropy forces both components divisible by $p$
+as soon as one is.  The count is zero unless $p^2\mid n$, and
+otherwise is $G(n/p^2)$.  Since
+$S(n/p^2)\le S(n)/p^2$ and $\mathcal D(n/p^2)\le\mathcal D(n)/p$,
+its ratio is at most $(p^{-2}+E/p)/(1-E)$, which is bounded by
+\eqref{eq:11-inert-small}.  This covers arbitrary target valuations.
+
+At eleven the two field-component axes project to the single base
+point in the principal fiber.  Its indicator has mean $1/10$ and
+projection coefficient $1/10$ on both $1$ and $\psi_{11}$; the
+complementary squared norm is $2/25$.  Evaluation at a point of
+probability $1/10$ gives
+\begin{equation}\label{eq:11-ramified-small}
+ \frac{b_{11}(n)}{G(n)}\le\frac{1/3+2E}{1-E}.
+\end{equation}
+
+Set
+\[
+ \begin{gathered}
+ M(X)=\max_{1\le v\le X}
+       \prod_{\substack{q\mid v\\(q/11)=1}}(v_q(v)+1),\qquad
+ B_0=\sum_{p\in\mathcal I}\mu_p,\\
+ \Pi(P_0)=\#\{p\in\mathcal I:p\le P_0\},\qquad
+ T(P_0)=\sum_{\substack{p\in\mathcal I\\p>P_0}}p^{-2}.
+ \end{gathered}
+\]
+Ideal factorization gives $r_Q(v)\le2M(X)$ for $1\le v\le X$.
+We also need the lattice bound
+\begin{equation}\label{eq:11-lattice}
+ \#\{(x,y)\in\Z^2:0<Q(x,y)\le X\}\le\frac{12}{5}X.
+\end{equation}
+For $g(y)=\sqrt{\max(X-11y^2/4,0)}$, each integer row contains
+at most $2g(y)+1$ points.  Integrating the decreasing rows and
+removing the origin gives
+\[
+ S_Q(X)\le\frac{2\pi}{\sqrt{11}}X+
+                    (2+4/\sqrt{11})\sqrt X.
+\]
+For integers $X\ge49$, use $\pi<22/7$, $\sqrt{11}>33/10$ and
+$\sqrt X\ge7$; the resulting ratio is at most
+$440/231+106/231=26/11<12/5$.
+Exact lattice enumeration checks $5S_Q(j)\le12j$ for $1\le j\le48$;
+for real $X$ apply the integer bound at $\lfloor X\rfloor$.
+
+Both odd-shell components are nonzero.  Divisibility of one of their
+norms by an inert $p$ forces that component to be $p$ times a nonzero
+vector.  Bound its choices by \eqref{eq:11-lattice}, the other
+component's choices by $2M(n)$, and count both orientations.  This gives
+$b_p(n)\le(48/5)M(n)n/p^2$.
+Combining this large-prime estimate with
+\eqref{eq:11-G}, \eqref{eq:11-inert-small} and
+\eqref{eq:11-ramified-small}, a sufficient condition for a point
+whose two norms lie in $C$ is
+\begin{equation}\label{eq:11-positive}
+ B_0+\frac83 M(n)T(P_0)
+                   +E\left(3+\frac52\Pi(P_0)\right)<\frac23.
+\end{equation}
+Indeed the number remaining is at least $(12/5)S(n)$ times the
+positive difference.  This counts values in $C$; their initial
+coordinate witnesses need not be primitive at split primes, because
+\eqref{eq:11-primitive} supplies primitive witnesses of the same values.
+
+Odd inert primes occupy the five classes $7,13,17,19,21\pmod{22}$.
+Counting these progressions and integrating $x^{-2}$ gives
+\begin{equation}\label{eq:11-prime-tails}
+ \Pi(P_0)\le\frac5{22}P_0+\frac32,\qquad
+ T(P_0)\le\frac5{22P_0}+\frac5{P_0^2},\qquad B_0<\frac9{100}.
+\end{equation}
+For the last bound sum the actual inert primes through sixty-four,
+and majorize each remaining progression starting at
+$65,73,79,83,85$ by $a^{-2}+(22a)^{-1}$, using
+$\mu_p\le(7/3)p^{-2}$ for $p\ge7$.  These are rational inequalities.
+
+For every $X\ge1$ one has $M(X)\le7X^{1/6}$.
+To certify this unrestricted bound, maximize $(a+1)^6/p^a$ over the
+split primes $p<64$ and $0\le a\le10$.  Their rational product is
+less than $7^6$.  Larger exponents cannot improve it, since
+$12^6<2\cdot11^6$ and successive ratios decrease.  For $p\ge64$,
+$a+1\le2^a$ makes every factor at most one.
+
+For an even integer $n=2^t m$ supported on inert primes, the sharper
+bound
+\begin{equation}\label{eq:11-sharp-E}
+                         E<\frac{11}{4}n^{-1/3}
+\end{equation}
+is also an exact Euler certificate.  In fact
+\[
+ E n^{1/3}=\frac{2(t+3)}9\,2^{-t/6}
+   \prod_{p^a\parallel m}\frac{(a+1)p^{5a/6}}{\sigma(p^a)}.
+\]
+The dyadic factor is at most one, with maximum at $t=6$:
+$9^6>2\cdot8^6$ and $10^6<2\cdot9^6$ bracket the change of the
+successive ratios.  For odd inert $p\ge64$ the sixth power is at
+most $(a+1)^6/p^a\le1$.  For $p<64$ the successive sixth-power
+ratio for $a\ge2$ is less than $(4/3)^6/p<1$.  Thus only exponents
+zero, one and two at $7,13,17,19,29,41,43,61$ occur in the finite
+maximum.  The product is
+\[
+ \frac{184167468895316154074204818561020107}
+      {465817612584447478971000000000000}<(11/4)^6.
+\]
+Taking $P_0=n^{1/4}$ in \eqref{eq:11-positive} and using
+\eqref{eq:11-prime-tails}, the left side is bounded by
+\[
+ \frac9{100}+\frac{3065}{528}n^{-1/12}
+                         +\frac{5371}{48}n^{-1/3}.
+\]
+For $n\ge2^{60}$ this is less than
+$9/100+3065/(528\cdot32)+5371/(48\cdot2^{20})<2/3$.
+Thus every such inert core belongs to $C+C$.
+
+\subsection{Thirty-five intervals and the finite certificate}
+
+The remaining analytic range is covered without enumerating its
+individual targets.  The function $M(X)$ is exactly computable:
+remove nonsplit factors, then assign nonincreasing positive exponents
+to the smallest split primes.  Swapping exponents $a<b$ at $p<q$
+preserves the divisor product and reduces the integer by
+$(p/q)^{b-a}$.  Hence enumerating initial split-prime prefixes with
+nonincreasing exponents exhausts the maxima.  The first twelve split
+primes have product greater than $2^{61}$, and $3^{41}>2^{61}$;
+these inequalities certify the finite prime and exponent limits.
+
+For $k=25,\ldots,59$ put
+\[
+ L_k=2^k,\quad U_k=2^{k+1}-1,\quad d_k=M(U_k),\quad
+ e_k=\frac{11}{4\lfloor\sqrt[3]{L_k}\rfloor},\qquad
+ P_k=\left\lfloor\sqrt{\frac{16d_k}{15e_k}}\right\rfloor.
+\]
+For an inert core in this interval, $M(n)\le d_k$ and $E\le e_k$.
+Sieve the primes through $R_0=65536$ exactly and set $D_0=2^{64}$,
+\[
+ A_k=\#\{p\in\mathcal I:p\le P_k\},\quad
+ V_k=\frac1{D_0}\sum_{\substack{p\in\mathcal I\\P_k<p\le R_0}}
+                   \left\lceil\frac{D_0}{p^2}\right\rceil
+                  +\frac5{22R_0}+\frac5{R_0^2}.
+\]
+All $P_k<R_0$, so $A_k=\Pi(P_k)$ and $V_k\ge T(P_k)$.
+The supplied integer/rational certificate checks all thirty-five
+inequalities
+\begin{equation}\label{eq:11-bins}
+ \frac9{100}+\frac83d_kV_k+e_k\left(3+\frac52 A_k\right)
+                         <\frac23-\frac1{1024}.
+\end{equation}
+Thus \eqref{eq:11-positive} covers every inert core in
+$[2^{25},2^{60})$, and the infinite estimate covers the rest.
+
+Finally construct the exact flags of $C\cap[1,2^{25}]$ by removing
+multiples of every forbidden prime, including two and eleven.
+Let $B_C$ be the packed integer whose bit $j$ is this membership flag.
+The finite certificate computes
+\[
+             \bigvee_{\substack{a\le5000\\a\in C}}(B_C\ll a),
+\]
+using $774$ short summands, and verifies that after truncation through
+$2^{25}$ it contains every eligible even eleven-unit target bit.
+There are exactly
+$2^{24}-\lfloor2^{25}/22\rfloor=15252015$ such bits.
+Every set bit has genuine positive summands.  Complete independent
+coordinate/gcd enumeration authenticates all membership flags through
+$2^{25}$: simultaneous sign reversal permits $y\ge0$, reflection
+$x\mapsto-x-y$ permits $2x+y\ge0$, and
+$4Q=(2x+y)^2+11y^2$ gives exhaustive integer bounds.
+Only positive odd values with $11\nmid Q(x,y)$ are retained after
+the gcd test; this excludes the ramified part $11C$ of $P$.
+The full bytearrays are compared before hashing.
+
+A least even eleven-unit exception to $C+C$, if it existed, would
+exceed $2^{25}$.  A split prime factor $q$ would leave the smaller
+eligible even target $n/q\ge2$, whose representation lifts on
+multiplication by $q$.  The least exception is therefore supported
+on inert primes, a case excluded by \eqref{eq:11-bins} and the
+infinite bound.  Conversely $C+C$ has only even targets, and no
+multiple of eleven because $-1$ is nonsquare.  This proves the first
+identity in Theorem~\ref{thm:minus11}; the ramified reduction proves
+the second.

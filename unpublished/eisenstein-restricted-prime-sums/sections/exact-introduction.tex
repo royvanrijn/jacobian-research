@@ -1,0 +1,73 @@
+\section{Exact binary sumsets}
+
+Which integers are sums of two primitive values of a quadratic norm?
+For $x^2+2y^2$, divisibility by sixteen is the complete obstruction.
+For $x^2+xy+2y^2$, the local obstruction is divisibility by forty-nine,
+but three additional integers fail.  This paper determines the full
+sumsets in these examples and in two further class-number-one cases.
+The distinction between eventual existence and a complete classification
+is the point: every small exception must be proved, and every remaining
+finite range must meet an infinite argument.
+
+For a negative discriminant $d$, put
+\[
+ P_d=\{Q_d(x,y)>0:x,y\in\Z,\ \gcd(x,y)=1\},\qquad
+ \begin{array}{c|c}
+ d&Q_d(x,y)\\\hline
+ -3&x^2-xy+y^2\\
+ -7&x^2+xy+2y^2\\
+ -8&x^2+2y^2\\
+ -11&x^2+xy+3y^2.
+ \end{array}
+\]
+Zero coordinates and both signs are allowed.  Each summand is a positive
+numerical value; different coordinate representations do not create
+new summands.
+
+\begin{theorem}\label{thm:exact-overview}
+The exact binary sumsets are
+\[
+\begin{array}{c|l}
+ d&P_d+P_d\\\hline
+ -3&\{N\ge2:N\text{ even},\ N\not\equiv0,12\pmod{18}\},\\
+ -7&\{N\ge2:49\nmid N\}\setminus\{7,77,203\},\\
+ -8&\{N\ge2:16\nmid N\},\\
+ -11&\{N\ge2:N\text{ even},\ 121\nmid N\}.
+\end{array}
+\]
+\end{theorem}
+
+The proofs establish stronger identities for the semigroups generated
+by split primes.  In each ring, a primitive norm has no inert prime
+factor, and the ramified prime can appear only once.  Thus the norm
+value set is a split-prime semigroup together with one ramified
+dilation.  The residue restrictions are elementary; proving their
+sufficiency is a binary additive problem.
+
+Our method adapts the quaternionic norm-shell and torus-normalizer
+argument used for the Gaussian restricted-prime theorem of Howe,
+Huffman, Kohlmeyer and Kruer \cite[Theorem~1.1]{Euler}.  A quaternion
+shell produces many candidate pairs of binary norms.  The Hecke
+spectrum bounds the fraction spoiled by each forbidden prime.
+Exact dyadic and ramified filters keep the total fraction below one.
+The spectral input is classical Jacquet--Langlands and the weight-two
+Ramanujan bound; Section~\ref{sec:exact-hecke} states its normalization.
+The applications require different local quotients, including all ideal
+classes and inverse-unit mass at discriminant eleven.
+
+Explicit estimates settle an infinite range.  Rational interval
+certificates bridge that range down to complete finite sumset scans;
+multiplicative descent then closes all remaining targets.  A finite
+scan by itself does not imply any of the unrestricted identities.
+The supplied programs reconstruct the membership arrays, verify the
+interval inequalities in exact arithmetic, and test every target in
+the stated finite domains.  Their mathematical roles and completeness
+arguments are included below and summarized in
+Appendix~\ref{app:verifier}.
+
+We first prove the Eisenstein identities, including the mixed family
+forced by the ramified prime three.  The following sections treat
+$-7,-8,-11$, and explain how their finite certificates meet their
+respective infinite estimates.  The exact exceptions at $-7$ are the
+only exceptions in Theorem~\ref{thm:exact-overview} beyond its displayed
+congruence conditions.

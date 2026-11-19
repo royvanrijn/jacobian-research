@@ -1,45 +1,47 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=25mm]{geometry}
+\pdfinfoomitdate=1
+\pdftrailerid{}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm,mathtools,microtype,booktabs}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true,linkcolor=MidnightBlue,urlcolor=MidnightBlue,citecolor=MidnightBlue]{hyperref}
-\hypersetup{pdftitle={From Euler's restricted-prime sums to Eisenstein norms},pdfauthor={Roy van Rijn}}
+\hypersetup{pdftitle={Exact Sumsets of Primitive Quadratic Norms},pdfauthor={Roy van Rijn}}
 \usepackage{enumitem,verbatim}
 \setlist{nosep}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
 \theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
 \newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\F}{\mathbb F}\newcommand{\C}{\mathbb C}
 \newcommand{\OO}{\mathcal O}\renewcommand{\AA}{\mathcal A}\newcommand{\PP}{\mathcal P}
 \newcommand{\NN}{\mathcal N}
+\newcommand{\N}{\mathbb N}
 \newcommand{\nrd}{\operatorname{nrd}}\newcommand{\PGL}{\operatorname{PGL}}
-\title{From Euler's restricted-prime sums to Eisenstein norms}
+\title{Exact Sumsets of Primitive Quadratic Norms}
 \author{Roy van Rijn}
-\date{17 November 2026}
+\date{}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We start from the restricted-prime sum theorem of Howe, Huffman,
-Kohlmeyer and Kruer and follow its square-lattice argument into the
-Eisenstein lattice. Let $\AA$ contain $1$ and the positive integers whose
-prime factors are all $1$ modulo $3$. The first answer is that
-$\AA+\AA$ contains exactly the positive integers $2$ modulo $6$.
-The ramified prime $3$ then leads to a mixed problem: $\AA+3\!\cdot\!\AA$
-is exactly the positive class $4$ modulo $6$. Quaternionic norm counts,
-an odd-component filter and a six-point calculation at $3$ prove the
-large-target statements; exact finite certificates complete them.
-Together, the two identities give the binary and higher sumsets of
-primitive Eisenstein norm values. Four such values suffice for every
-positive integer, while seven summands from $\AA$ suffice; both bounds
-are sharp. We then extract a reusable counting criterion with explicit
-hypotheses for an effective cutoff, and end with the balanced-summand
-question that remains open.
+We determine the exact binary sumsets of primitive quadratic norm values
+at discriminants $-3,-7,-8,-11$.  The local congruence conditions are
+sufficient in three cases; at discriminant $-7$ the complete additional
+exception set is $\{7,77,203\}$.  Stronger split-prime core identities
+separate the ramified dilations.  The proofs combine quaternionic norm
+shells, precisely normalized classical Hecke bounds, and dyadic and
+ramified local filters.  Explicit infinite estimates, rational interval
+certificates, complete finite sumset scans and multiplicative descent
+cover every positive target.  We supply standalone verification code
+and explain the finite reductions that make the certificates complete.
+All sumsets concern numerical values, without coordinate multiplicities.
 \end{abstract}
 
+\input{sections/exact-introduction}
+\input{sections/hecke-transfer}
 \input{sections/introduction}
 \input{sections/norm-count}
 \input{sections/prime-bounds}
@@ -48,8 +50,9 @@ question that remains open.
 \input{sections/infinite-range}
 \input{sections/finite-certificate}
 \input{sections/primitive-sumsets}
-\input{sections/orbit-criterion}
-\input{sections/balanced-summands}
+\input{sections/minus7-exact}
+\input{sections/minus8-exact}
+\input{sections/minus11-exact}
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
@@ -57,6 +60,8 @@ exposition, proof review and verification code.
 
 \appendix
 \input{sections/standalone-verifier}
+\input{sections/orbit-criterion}
+\input{sections/balanced-summands}
 
 \input{references}
 \end{document}

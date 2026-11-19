@@ -1,81 +1,18 @@
-\section{Starting with Euler's problem}
-Our starting point is the theorem of Howe, Huffman, Kohlmeyer and Kruer
-\cite[Theorem~1.1]{Euler}: every positive integer congruent to $2$ modulo
-$4$ is a sum of two positive integers whose prime factors are all $1$
-modulo $4$, with $1$ allowed. These are the split primes for the Gaussian
-integers. Their proof uses the square-lattice norm $x^2+y^2$ to find
-many candidate pairs, then shows that the unwanted primes cannot spoil
-all of them.
+\section{The Eisenstein split-prime cores}
+Let $Q(x,y)=x^2-xy+y^2$, and put
+\[
+ \AA=\{n\ge1:p\mid n\Longrightarrow p\equiv1\pmod3\}.
+\]
+Every member of $\AA$ is $1\bmod6$.  The ramified dilation
+$3\!\cdot\!\AA=\{3a:a\in\AA\}$ has residue $3\bmod6$.
 
-This suggests a natural variation: replace the square lattice by the
-triangular lattice of the Eisenstein integers. Its norm is
-\[
-Q(x,y)=x^2-xy+y^2,
-\]
-and the split primes are now $1$ modulo $3$. Let
-\[
-\AA=\{a\in\Z_{>0}:p\mid a\Longrightarrow p\equiv1\pmod3\}.
-\]
-We include $1$, which has no prime factors. The first few values are
-$1,7,13,19,31,37,43,49$. Every member of $\AA$ is $1$ modulo $6$,
-so two of them can only add to an integer $2$ modulo $6$. The first
-extension of the Gaussian result is that this is the only restriction.
-For example, $8=1+7$ and $20=7+13$.
-
-The norm form already points toward another extension. We have
-$Q(1,-1)=3$, with coprime coordinates, although $3\notin\AA$. Allowing
-this ramified prime once gives the family
-\[
-3\!\cdot\!\AA=\{3a:a\in\AA\}.
-\]
-Its members are $3$ modulo $6$, so the mixed sums $a+3b$ belong to the
-class $4$ modulo $6$. That congruence also turns out to be sufficient.
-The two binary answers can be recorded together.
 \begin{theorem}\label{thm:main}
 One has
 \[
-\AA+\AA=\{n\in\Z_{>0}:n\equiv2\pmod6\},\qquad
-\AA+(3\!\cdot\!\AA)=\{n\in\Z_{>0}:n\equiv4\pmod6\}.
+ \AA+\AA=\{n>0:n\equiv2\pmod6\},\qquad
+ \AA+(3\!\cdot\!\AA)=\{n>0:n\equiv4\pmod6\}.
 \]
 \end{theorem}
-For the mixed identity, $16=13+3\cdot1$ is a small example. The factor
-$3$ is kept separate throughout: $3\!\cdot\!\AA$ is a dilation, whereas
-$3\AA$ will mean a sum of three members of $\AA$.
-
-\paragraph{Following the two extensions.}
-The main proof keeps the counting idea of the Gaussian paper. An
-Eisenstein norm is a useful candidate summand, but it may contain a prime
-$2$ modulo $3$ to even exponent. We must get rid of those primes
-altogether. First we build a family of decompositions that can be counted
-exactly. Then we estimate the fraction spoiled by each unwanted prime.
-If the sum of those fractions is below one, some decomposition survives.
-
-The mixed case explains why it pays to remove even norm components
-exactly before making estimates. It also leaves one extra condition:
-the component divisible by $3$ must not be divisible by $9$. A six-point
-quotient handles that condition. The same calculation completes the
-Eisenstein analogue and the mixed identity, with a finite computation
-covering the targets below the explicit threshold $10^8$.
-
-Once both identities are available, the remaining results unfold quite
-quickly. The two families $\AA$ and $3\!\cdot\!\AA$ together are exactly
-the positive Eisenstein norm values that have a representation with
-coprime coordinates. This gives their full binary sumset, and adjoining
-copies of $1$ gives the higher sumsets. Every positive integer needs at
-most four such primitive norm values, or at most seven summands from
-$\AA$; the examples $12$ and $25$ show why those bounds cannot be lowered.
-We develop these consequences in Section~\ref{sec:primitive-sumsets},
-after proving the binary identities that make them possible.
-
-The norm-counting and torus-normalizer averaging method is adapted from
-\cite{Euler}. Ramar\'e--Viswanadham also include primitive L\"oschian
-integers in their sieve framework \cite[Introduction]{RV}; their additive
-Theorem~1.6 concerns three summands in the primitive Gaussian setting.
-The classical spectral input used here is made explicit in
-Section~\ref{sec:spectral}. After working through this example, we extract
-the reusable counting criterion in Section~\ref{sec:orbit-criterion} and
-finish with the balanced-summand question that the present argument leaves
-open.
 
 \paragraph{A reduction that helps both problems.}
 Put $\PP=\{p\text{ prime}:p\equiv2\pmod3\}$. For either admissible residue

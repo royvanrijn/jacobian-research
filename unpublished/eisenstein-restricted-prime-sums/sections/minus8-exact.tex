@@ -1,0 +1,596 @@
+\section{Discriminant \texorpdfstring{\(-8\)}{-8}}\label{sec:minus8}
+
+Put
+\[
+ Q_8(x,y)=x^2+2y^2,\qquad
+ P_8=\{Q_8(x,y)>0:\gcd(x,y)=1\},
+\]
+and let \(C_8\) contain \(1\) and the positive integers whose prime
+factors are \(1\) or \(3\pmod8\).
+
+\begin{theorem}\label{thm:minus8-exact}
+There are no exceptional admissible targets:
+\[
+\begin{aligned}
+ C_8+C_8&=\{N\ge2:N\ {\rm even},\ 8\nmid N\},\\
+ C_8+2C_8&=\{N\ge3:N\ {\rm odd}\},\\
+ P_8+P_8&=\{N\ge2:16\nmid N\}.
+\end{aligned}
+\]
+For every \(N\ge2^{78}\) with \(16\nmid N\),
+\[
+              \#\{(a,b)\in P_8^2:a+b=N\}
+                       \ge N^{2/3}/4800 .
+\]
+\end{theorem}
+
+Write \(Q,P,C\) for these objects in this section.
+The exact dyadic shell formulas will supply both a large-core
+theorem and an analytic prime boundary. Sharper selected-shell
+bounds then reduce the remaining work to \(107\) rational interval
+tests and complete finite core coverage.
+
+\subsection{Primitive values and dyadic reduction}
+
+The ring \(R=\Z[\sqrt{-2}]\) is norm Euclidean:
+rounding both coordinates leaves error norm at most
+\(1/4+2/4=3/4<1\). Thus it is principal.
+An inert prime, congruent to \(5,7\pmod8\), dividing a norm
+divides both coordinates. Primitivity permits the ramified
+prime ideal of norm two to exponent at most one.
+For split primes, orient each full prime power to one of the two
+conjugate principal prime ideals. These observations prove
+\[
+                        P=C\mathbin{\dot\cup}2C.               \label{eq:m8-value}\tag{8.1}
+\]
+Every \(C\)-value is \(1\) or \(3\pmod8\). Consequently
+\[
+                   P+P=(C+C)\cup2(C+C)\cup(C+2C).              \label{eq:m8-union}\tag{8.2}
+\]
+The first two terms have residues respectively \(2,4,6\pmod8\)
+and \(4,8,12\pmod {16}\), whereas the last has odd targets
+at least three. This proves every local exclusion in the theorem;
+the two core identities imply the full identity.
+
+Multiplication by \(\varpi=\sqrt{-2}\) acts by
+\[
+                   (x,y)\longmapsto(-2y,x).
+\]
+It bijects primitive odd-norm vectors with primitive even-norm
+vectors; the latter have even first coordinate and odd second
+coordinate, and the inverse is \((X,Y)\mapsto(Y,-X/2)\).
+At odd primes the determinant is a unit. Thus every division or
+multiplication by two below is justified on the indicated parity
+class; no general closure of primitive vectors under doubling is
+being assumed.
+
+\subsection{Exact dyadic shell formulas}
+
+Let \(r(N)\) count the full signed ordered \(Q\oplus Q\) shell,
+let \(s(N)\) count \(Q\oplus4Q\), and let \(G_2(N)\) count shell
+points for which neither binary coordinate pair is divisible by
+two. Only dyadic primitivity is imposed in \(G_2\).
+With \(\sigma(t)=0\) for nonpositive or nonintegral \(t\), define
+\[
+ f_{32}(\tau)=\eta(4\tau)^2\eta(8\tau)^2
+     =\sum_{N\ge1}a_Nq^N
+     =q\prod_{j\ge1}(1-q^{4j})^2(1-q^{8j})^2 .
+\]
+Then
+\[
+\begin{aligned}
+ r(N)&=4\sigma(N)-4\sigma(N/2)+8\sigma(N/4)-32\sigma(N/8),\\
+ s(N)&=\sigma(N)-\sigma(N/2)+8\sigma(N/16)-32\sigma(N/32)+a_N,\\
+ G_2(N)&=r(N)-2s(N)+r(N/4).                                  \end{aligned}\label{eq:m8-theta}\tag{8.3}
+\]
+We include the modular verification, so these formulas do not
+depend on extrapolating a finite list of shell counts.
+
+The even Gram matrices of \(Q\oplus Q\) and \(Q\oplus4Q\)
+have levels \(8,32\) and square determinants \(64,1024\).
+Their theta series therefore belong respectively to
+\(M_2(\Gamma_0(8))\) and \(M_2(\Gamma_0(32))\), with trivial
+character. Put
+\(E_2(\tau)=1-24\sum_{n\ge1}\sigma(n)q^n\).
+The proposed Eisenstein series are
+\[
+\begin{aligned}
+ E_r&=-\tfrac1{24}
+       \{4E_2(\tau)-4E_2(2\tau)+8E_2(4\tau)-32E_2(8\tau)\},\\
+ E_s&=-\tfrac1{24}
+       \{E_2(\tau)-E_2(2\tau)+8E_2(16\tau)-32E_2(32\tau)\}.
+\end{aligned}
+\]
+To verify holomorphy at all cusps, write
+\[
+ D_d(\tau)=dE_2(d\tau)-E_2(\tau)
+    =\frac1{2\pi i}\frac d{d\tau}
+           \log\frac{\Delta(d\tau)}{\Delta(\tau)} .
+\]
+The quotient is a modular function, nonzero in the upper
+half-plane and meromorphic at cusps. If at a cusp of width \(h\)
+it is \(q_c^\nu U(q_c)\), \(U(0)\ne0\), its logarithmic derivative
+has expansion
+\[
+                    \frac1h\left(\nu+
+                              q_c\frac{U'(q_c)}{U(q_c)}\right).
+\]
+There is no cusp pole. Hence \(D_d\) is holomorphic of weight two,
+and
+\[
+ E_r=D_2/12-D_4/12+D_8/6,\qquad
+ E_s=D_2/48-D_{16}/48+D_{32}/24
+\]
+have the required levels. Both have constant term one.
+
+Martin--Ono \cite[Theorem 1, level-32 row]{MartinOno} identify
+\(f_{32}\) as a normalized weight-two newform.
+The Sturm bounds are \(2\) at level \(8\) and \(8\) at level
+\(32\) \cite[Theorem 1]{Sturm}. The necessary coefficient lists
+are
+\[
+\begin{array}{c|rrrrrrrrr}
+ N&0&1&2&3&4&5&6&7&8\\ \hline
+ {}[q^N]\Theta_{Q\oplus Q}&1&4&8&&&&&&\\
+ {}[q^N]E_r&1&4&8&&&&&&\\
+ {}[q^N]\Theta_{Q\oplus4Q}&1&2&2&4&4&4&8&8&8\\
+ {}[q^N](E_s+f_{32})&1&2&2&4&4&4&8&8&8
+\end{array}
+\]
+They follow by direct lattice enumeration, divisor sums, and
+truncated multiplication of the displayed eta product.
+All coefficients are integers. Apply Sturm's congruence theorem
+modulo every rational prime: each coefficient of the difference
+is divisible by every prime, so is zero.
+This proves the first two formulas in \eqref{eq:m8-theta};
+the last is inclusion-exclusion.
+
+The CM formula in \cite[Theorems 2 and 3]{MartinOno} gives
+\(|a_p|\le2\sqrt p\) at every odd prime, with \(a_p=0\) for
+\(p\equiv3\pmod4\). Its unramified Hecke roots have modulus
+\(\sqrt p\); the Euler recurrence and multiplicativity imply
+\(|a_N|\le\tau(N)\sqrt N\) for odd \(N\).
+The eta product is supported on \(N\equiv1\pmod4\), so its
+even coefficients vanish.
+
+Write \(N=2^em\), \(m\) odd. For \(0\le e\le3\),
+\[
+ r(N)=4c_e\sigma(m),\qquad (c_0,c_1,c_2,c_3)=(1,2,6,6),
+\]
+and
+\[
+ (G_2(m),G_2(2m),G_2(4m),G_2(8m))
+   =(2\sigma(m)-2a_m,\ 4\sigma(m),\
+                               20\sigma(m),\ 16\sigma(m)).     \label{eq:m8-dyadic}\tag{8.4}
+\]
+For \(e\ge4\), \(G_2(N)=0\).
+
+\subsection{The nonmaximal dyadic order and Hecke bound}
+
+Let \(H\) be the Hurwitz order in Hamilton's quaternion algebra,
+with generators \(I,J,K\). Put \(\iota=I+J\), \(j=K\), and
+\[
+ O=\Z[\iota]\oplus\Z[\iota]j
+   =\{a+bI+cJ+dK:a,b,c,d\in\Z,\ b\equiv c\pmod2\}.
+\]
+Here \(\iota^2=-2\), \(j^2=-1\), \(j\iota=-\iota j\),
+and the norm is \(Q\oplus Q\).
+This order has index four in \(H\); it is not maximal at two.
+
+We verify its locally principal right-ideal class number directly.
+The Hurwitz order is norm Euclidean. After rounding a real
+quaternion to an integer vector, let its coordinate errors be
+\(|r_i|\le1/2\), and put \(s=\sum r_i^2\).
+The squared distance to an appropriate half-integer vector is
+\(s-\sum|r_i|+1\). Since \(s\le\frac12\sum|r_i|\), one of the
+two distances is at most \(1/2\).
+Thus all Hurwitz right ideals are principal.
+
+Away from two, \(O_\ell=H_\ell\).
+Normalize the additive volume of \(H_2\) to one.
+Its half-integer coset consists of odd-norm elements, as does
+half its integer coset; hence
+\(\operatorname{vol}(H_2^\times)=3/4\).
+The additive volume of \(O_2\) is \(1/4\), and half its elements
+have odd norm, so
+\(\operatorname{vol}(O_2^\times)=1/8\).
+The unit index is six. The \(24\) Hurwitz units have stabilizer
+\[
+                    O^\times=\{\pm1,\pm K\}
+\]
+of size four on these cosets, so act transitively.
+Principalization in \(H\), followed by this unit transitivity
+at two, principalizes every locally principal \(O\)-ideal.
+
+The dyadic unit norm map is onto \(\Z_2^\times\).
+Indeed \(1\), \(1+\iota\), \(1+\iota+\iota j\),
+\(1+\iota+2j\) have norms \(1,3,5,7\).
+Their inverses belong to \(O_2\).
+Every \(2\)-adic unit is one of these four norms times a
+unit square, supplied by a rational \(2\)-adic scalar.
+
+For odd inert \(p\), reduction gives \(O/pO=M_2(\mathbb F_p)\).
+The projective unit image \(\Gamma_p\) has order two, and the
+fine quotient is \(Y_p=\Gamma_p\backslash\mathrm{PGL}_2(\mathbb F_p)\),
+with uniform measure. Class number one identifies this quotient
+with the adelic congruence quotient: its stabilizer is precisely
+the projective unit image. To check this, local scalar
+corrections have even norm valuations and combine into one
+rational scalar, leaving an \(O\)-unit.
+For \(p\nmid n\), define concretely
+\[
+ (T_nh)(\Gamma_pg)
+    =\frac14\sum_{\operatorname{nrd}\alpha=n}
+                             h(\Gamma_p\rho_p(\alpha)g).       \label{eq:m8-Hecke}\tag{8.5}
+\]
+For odd \(m\), this is the all-integral-ideal operator, of degree
+\(\sigma(m)\). Inverse principal generators give the displayed
+orientation by quaternion conjugation. The global norm characters
+on \(Y_p\) are exactly \(1\) and the determinant square character
+\(\chi_p\). The norm surjectivity just proved prevents an
+additional dyadic character. At \(p\), central scalars and the
+reduction kernel leave only determinant square classes.
+Lemma~\ref{lem:hecke-transfer}, including its strong-approximation
+exclusion of finite-dimensional split-place factors, therefore yields
+\[
+             \|T_m\|_{\{1,\chi_p\}^{\perp}}
+                                  \le\tau(m)\sqrt m
+                  \quad(m\ {\rm odd},\ p\nmid m).             \label{eq:m8-Ramanujan}\tag{8.6}
+\]
+All primes dividing \(m\) have maximal split local level.
+No unramified theorem at two has been used.
+
+For \(0\le e\le3\), let \(A_e=T_{2^e}\) be given by
+\eqref{eq:m8-Hecke}. It is self-adjoint with nonnegative entries,
+row sum \(c_e\), and norm at most \(c_e\).
+It has \(\chi_p\)-eigenvalue
+\((2/p)^ec_e\). Coprime local factorization gives
+\[
+                       T_{2^em}=A_eT_m=T_mA_e.                \label{eq:m8-factor}\tag{8.7}
+\]
+For example, for \(\alpha\in O\) of norm \(2^em\), the right
+superideal with localization \(O_2\) at two and
+\(\alpha O_\ell\) at odd primes is integral, locally principal,
+and of norm \(m\). Write it as \(\beta O\),
+\(\operatorname{nrd}\beta=m\); then
+\(\alpha=\beta\gamma\), \(\operatorname{nrd}\gamma=2^e\).
+Exactly four choices differ by an \(O\)-unit. Reversing the
+coprime local factors gives commutation. Thus the complementary
+norm of \(T_N\) is at most \(c_e\tau(m)\sqrt m\).
+
+\subsection{The uniform sieve and its infinite ranges}
+
+Put
+\[
+\begin{aligned}
+ \mathcal I&=\{p\ {\rm prime}:p\equiv5,7\pmod8\},\\
+ E(m)&=\frac{\tau(m)\sqrt m}{\sigma(m)},\\
+ M(X)&=\max_{1\le t\le X}
+          \prod_{\substack{\ell\mid t\\\ell\equiv1,3(8)}}
+                                      (v_\ell(t)+1).
+\end{aligned}
+\]
+Let \(b_p(N)\) count full-shell points with at least one binary
+coordinate pair divisible by \(p\).
+For \(p\nmid N\), that condition is the nonsplit-torus normalizer
+\(H_p\), of order \(2(p+1)\).
+Its fraction in \(\mathrm{PGL}_2(\mathbb F_p)\) is
+\(\mu_p=2/(p(p-1))\).
+Its indicator \(u\) has mean \(\mu_p\), zero coefficient on
+\(\chi_p\), and
+\(\|u-\mu_p\|^2=\mu_p(1-\mu_p)\), since the torus norm is onto.
+The operator commutes with the right action and is constant on
+the support of \(u\). Thus
+\(\langle u,T_Nu\rangle=\mu_pb_p(N)/4\).
+Equations \eqref{eq:m8-Ramanujan}--\eqref{eq:m8-factor} give
+\[
+                  \frac{b_p(N)}{r(N)}
+                      \le\mu_p+(1-\mu_p)E(m)
+                      \le\mu_p+E(m).                          \label{eq:m8-small}\tag{8.8}
+\]
+If \(p\mid N\), anisotropy forces both blocks divisible by \(p\).
+The spoiled count is zero at valuation one; otherwise its ratio
+is \(\sigma(m/p^2)/\sigma(m)<p^{-2}\le\mu_p\).
+This treats every target valuation without applying a
+level-\(p\) estimate to an index divisible by \(p\).
+
+For a first bound on large primes,
+\[
+  \#\{(x,y):0<x^2+2y^2\le X\}
+       \le\pi X/\sqrt2+(2+\sqrt2)\sqrt X\le4X .
+\]
+The last inequality holds for \(X\ge4\); the three smaller
+integer bounds give \(2,4,8\) points. Flooring gives real \(X\).
+In the \(G_2\)-shell both blocks are nonzero, and
+\(r_Q(t)\le2M(N)\). Choose the divisible block, count its
+quotient vector, and use this bound for the other block.
+The large-\(p\) spoiled proportion is at most
+\[
+                    L_eM(N)p^{-2},\qquad
+               L_e=\frac{4\cdot2^e}{c_e}\le\frac{16}{3}.       \label{eq:m8-coarsetail}\tag{8.9}
+\]
+Also
+\[
+\begin{aligned}
+ B:=\sum_{p\in\mathcal I}\mu_p&<3/16,\\
+ \Pi(P):=\#\{p\in\mathcal I:p\le P\}&\le P/4+1,\\
+ \sum_{\substack{p\in\mathcal I\\p>P}}p^{-2}
+                    &\le1/(4P)+2/P^2.                       \end{aligned}\label{eq:m8-progression}\tag{8.10}
+\]
+The last two statements follow from the progressions \(5,7\pmod8\).
+For the first, sum inert primes below \(64\) exactly and bound
+the rest by
+\[
+ \frac52\left(\frac1{69^2}+\frac1{8\cdot69}
+                  +\frac1{71^2}+\frac1{8\cdot71}\right).
+\]
+The resulting bound is
+\(49287299505759574293/269836951018231737140<3/16\).
+
+By \eqref{eq:m8-dyadic}, \(G_2(N)/r(N)\ge1/2-E(m)/2\).
+A sufficient condition for a positive surviving shell is
+\[
+ B+E(m)(P/4+3/2)
+      +L_eM(N)\{1/(4P)+2/P^2\}<1/2.                          \label{eq:m8-coarse}\tag{8.11}
+\]
+Surviving norms are positive, have no inert factor, and satisfy
+the dyadic condition in \eqref{eq:m8-value}; their values lie in \(P\).
+
+The complete finite Euler products give
+\[
+\begin{aligned}
+ M(X)&\le6X^{1/6},& M(X)&\le2X^{1/4},\\
+ \tau(m)&\le7m^{1/6}\quad(m\ {\rm inert\!-\!supported}),&
+ \tau(m)&\le42m^{1/6}\quad(m\ {\rm odd}).                       \end{aligned}\label{eq:m8-Euler}\tag{8.12}
+\]
+For the sixth-power bounds, maximize
+\((a+1)^6/p^a\) at each odd prime below \(64\), over \(0\le a\le6\).
+The factors decrease afterwards, and factors at primes at least
+\(64\) are at most one by \(a+1\le2^a\).
+The split and inert products are respectively below \(6^6,7^6\);
+their product gives \(42^6\).
+For the fourth-power split bound only primes \(3,11\) contribute,
+and their product is \(4096/297<2^4\).
+These calculations establish \eqref{eq:m8-Euler} for all \(X,m\).
+
+Since \(N\le8m\), \(M(N)\le9m^{1/6}\).
+For arbitrary odd \(m\), use \(P=m^{1/4}\) in
+\eqref{eq:m8-coarse}. The terms after \(B\) are at most
+\[
+                      \frac{45}{2}m^{-1/12}+159m^{-1/3}.
+\]
+If \(m\ge2^{75}\), use \(m^{1/12}>224/3\) to obtain
+\[
+                    \frac3{16}+\frac{135}{448}
+                                    +\frac{159}{2^{25}}<\frac12.
+                                                                    \label{eq:m8-globalnumeric}\tag{8.13}
+\]
+This proves the stated global onset \(N\ge2^{78}\).
+The margin is
+\(2620327/234881024>1/100\).
+In every eligible stratum \(r(N)\ge3N\), and each ordered value
+pair has at most \((2M(N))^2\le144N^{1/3}\) witnesses.
+The count is therefore at least \(N^{2/3}/4800\).
+
+Two additional uniform families follow from the same inequality.
+For inert-supported \(m\), use \(P=2m^{1/4}\) and
+\(\tau(m)\le7m^{1/6}\).
+The error after \(B\) is at most
+\[
+                    \frac{19}{2}m^{-1/12}
+                                 +\frac{69}{2}m^{-1/3}.
+\]
+For \(m\ge2^{60}\), its total with \(B\) is bounded by
+\[
+                  \frac3{16}+\frac{19}{64}
+                                      +\frac{69}{2^{21}}<\frac12.
+                                                                    \label{eq:m8-coretail}\tag{8.14}
+\]
+Thus all \(2^em\), \(0\le e\le3\), in this family lie in \(P+P\).
+At \(m\) the two values must be in different parity classes;
+at \(2m\) both are in \(C\); at \(8m\) both are in \(2C\),
+and division by two gives \(4m\in C+C\).
+This proves the three core conclusions above the onset.
+
+For an odd prime \(n\), use \(E(n)\le2n^{-1/2}\),
+\(M(n)\le2n^{1/4}\), \(L_0=4\), and \(P=2n^{3/8}\).
+The error after \(B\) is at most \(2n^{-1/8}+7n^{-1/2}\).
+For \(n\ge2^{22}\), it is dominated by
+\(3/10+7/2048\), and
+\[
+                         3/16+3/10+7/2048<1/2.               \label{eq:m8-prime}\tag{8.15}
+\]
+Every such prime lies in \(P+P\); since it is odd,
+it lies in \(C+2C\). The finite mixed-core coverage below will
+supply all smaller odd primes, so no separate prime-family
+search is required.
+
+\subsection{Sharper selected shells}
+
+The improved lattice bounds are
+\[
+\begin{aligned}
+ S_Q(X)&:=\#\{(x,y):0<Q(x,y)\le X\}\le\tfrac83 X,\\
+ S_o(X)&:=\#\{(x,y):Q(x,y)\le X,\ Q(x,y)\ {\rm odd}\}\le2X.
+                                                               \end{aligned}\label{eq:m8-pointsharp}\tag{8.16}
+\]
+For the first, use the preceding row bound and
+\(\pi<22/7\), \(7/5<\sqrt2<10/7\).
+At integer \(X\ge81\) the ratio is at most
+\(110/49+8/21=386/147<8/3\).
+The complete point table checks \(1\le X\le80\).
+For odd norm the first coordinate is odd; row integration gives
+\[
+ S_o(X)\le\frac{\pi X}{2\sqrt2}+(1+\sqrt2)\sqrt X+1 .
+\]
+At \(X\ge25\), divide by \(X\) and use
+\(55/49+17/35+1/25<2\).
+The point table checks \(1\le X\le24\).
+Both counts vanish below one, and flooring proves the real bounds.
+
+For odd \(m\), sieve the following selected subsets:
+\[
+\begin{array}{c|c|c|c|c}
+ N&\text{selected subset}&\text{proportion at least}
+                                      &\mathcal L&\delta\\ \hline
+ m&G_2(m)&1/2-E(m)/2&8/3&1/2\\
+ 2m&\text{both field norms odd}&1/2&2&0\\
+ 4m&\text{both field norms odd}&2/3&4/3&0
+\end{array}                                                    \label{eq:m8-selected}\tag{8.17}
+\]
+The even subset sizes are exact. Multiplication of both components
+by \(\varpi\) bijects the full shell of norm \(N/2\) with the part
+of the norm-\(N\) shell having both norms even.
+The odd-odd complement has size \(r(N)-r(N/2)\), namely
+\(4\sigma(m)\) at \(2m\) and \(16\sigma(m)\) at \(4m\).
+All selected components are nonzero.
+
+For the first row, \eqref{eq:m8-pointsharp} and
+\(r_Q(t)\le2M(N)\) bound the large-prime count by
+\((32/3)M(N)N/p^2\), giving normalized coefficient
+\(\mathcal L=8/3\).
+For the other rows use \(S_o(N/p^2)\le2N/p^2\).
+The numerator is \(8M(N)N/p^2\); division by the respective
+full shells \(8\sigma(m)\) and \(24\sigma(m)\) gives \(2\) and
+\(4/3\). The small-prime bound \eqref{eq:m8-small} is applied
+in the full shell, not in the selected subset.
+Consequently, with \(\lambda\) the third-column constant
+\(1/2,1/2,2/3\), a sufficient condition in each row is
+\[
+       B+E(m)(\Pi(P)+\delta)+\mathcal L M(N)T(P)<\lambda,
+       \quad T(P)=\sum_{\substack{p\in\mathcal I\\p>P}}p^{-2}.
+                                                               \label{eq:m8-selectedtest}\tag{8.18}
+\]
+This follows by subtracting the union of all bad events from the
+selected subset; no Hecke stability of that subset is needed.
+After sieving the rows give respectively \(C+2C,C+C,C+C\).
+
+\subsection{The complete interval and finite certificates}
+
+For inert-supported odd \(m\), a sharper bound is
+\[
+                         E(m)<\frac{18}{5}m^{-1/3}.            \label{eq:m8-Esharp}\tag{8.19}
+\]
+Raise the normalized prime-power factors to the sixth power:
+they are
+\((a+1)^6p^{5a}/\sigma(p^a)^6\).
+Primes at least \(64\) contribute at most one.
+For each smaller inert prime, exponents through three suffice:
+the subsequent ratio is strictly less than
+\((5/4)^6/p\le(5/4)^6/5<1\).
+The exact product of the finite maxima is below \((18/5)^6\).
+Thus \eqref{eq:m8-Esharp} is an unrestricted bound.
+
+For the bounded \(M\)-envelope, enumerate nonincreasing exponents
+on initial segments of the smallest split primes.
+Swapping exponents \(a<b\) at \(p<q\) lowers the integer cost
+by \((p/q)^{b-a}\), preserving the divisor product, so no
+maximizer is lost. The recursion through \(2^{63}\) has \(2970\)
+states. The product of the first thirteen split primes exceeds
+\(2^{63}\), and \(3^{40}>2^{63}\); these bound both its depth
+and exponent range.
+
+Set \(R_0=65536\), \(D_0=2^{64}\). For \(P<R_0\), define
+\[
+ V(P)=\frac1{D_0}
+       \sum_{\substack{p\in\mathcal I\\P<p\le R_0}}
+                    \left\lceil D_0/p^2\right\rceil
+                   +\frac1{4R_0}+\frac2{R_0^2}\ge T(P).       \label{eq:m8-V}\tag{8.20}
+\]
+The prime list is a complete Eratosthenes sieve; the final two
+terms majorize all larger primes by the two progressions.
+Thus \(\Pi(P)\) is exact and \(V(P)\) is an upward rational bound.
+
+For \(N=fm\), \(f=1,2,4\), and \(2^k\le m<2^{k+1}\), put
+\[
+ d_{f,k}=M(f(2^{k+1}-1)),\qquad
+ e_k=\frac{18}{5\lfloor(2^k)^{1/3}\rfloor},\qquad
+ P=\min\left(R_0-1,\
+          \left\lfloor\sqrt{\mathcal Ld_{f,k}/e_k}\right\rfloor\right).
+\]
+All of these quantities are obtained by integer and rational
+operations, using squared comparisons for square roots.
+The certificate verifies
+\[
+ \frac3{16}+e_k(\Pi(P)+\delta)
+                      +\mathcal Ld_{f,k}V(P)
+                            <\lambda-\frac1{256}              \label{eq:m8-intervalcert}\tag{8.21}
+\]
+on every interval in the following table:
+\[
+\begin{array}{c|c|c|c}
+ f&\text{core family}&k\text{-range}&\text{number}\\\hline
+ 1&C+2C&27\le k\le59&33\\
+ 2&C+C\text{ at }2m&26\le k\le59&34\\
+ 4&C+C\text{ at }4m&20\le k\le59&40
+\end{array}
+\]
+There are \(107\) tests, with all exact inputs and fractions in
+the submitted certificate. The minimum margins for these rows are
+respectively
+\[
+ \frac{2099881132899631}{270215977642229760},\quad
+ \frac{2121064135193247}{457115362178105344},\quad
+ \frac{2577393383109722873}{109167254967460823040},
+\]
+each greater than \(1/256\).
+Together with \eqref{eq:m8-coretail}, these tests cover all
+inert cores above the finite ranges below.
+
+It remains to describe that finite coverage independently of
+any asymptotic statement. Put \(B_0=2^{27}\).
+A complete prime sieve constructs the membership flags of
+\(C\cap[1,B_0]\) by removing multiples of \(2\) and every
+prime \(5,7\pmod8\). No larger prime can divide a value in this
+interval. These complete flags are also authenticated by
+primitive coordinate enumeration:
+\(x\ge1\) odd, \(y\ge0\),
+\(x^2+2y^2\le B_0\), \(\gcd(x,y)=1\).
+Independent sign changes justify those coordinate restrictions.
+The two full bytearrays are compared, rather than merely their
+hashes.
+
+Pack the flags as \(B_C=\sum_{n\in C,n\le B_0}2^n\), and form
+\(B_{2C}\) by doubling their positions. The exact truncated unions
+\[
+ U_e=\bigvee_{\substack{a\le5000\\a\in C}}(B_C\ll a),
+\]
+\[
+ U_o=\bigvee_{\substack{a\le5000\\a\in C}}(B_{2C}\ll a)
+         \ \vee\
+          \bigvee_{\substack{b\le5000\\b\in2C}}(B_C\ll b)
+\]
+have only genuine sums. There are \(699\) core anchors and
+\(365\) doubled anchors.
+After truncation at \(B_0\), \(U_e\) equals exactly the periodic
+mask \(2,4,6\pmod8\); \(U_o\) equals exactly the odd mask with
+position one removed. Thus every one of \(50331648\) even
+strong targets and \(67108863\) mixed odd targets is covered,
+with no locally forbidden position covered. A short anchor
+has not been postulated: the union actually covers every
+required bit. The certificate programs reconstruct these arrays
+and compare the complete target masks.
+
+\subsection{Completion by descent}
+
+Suppose that a least eligible exception to \(C+C\) exists.
+Its dyadic valuation is one or two. A split prime factor \(q\)
+can be removed: the quotient is a smaller eligible even target
+at least two, and multiplication by \(q\) lifts a representation.
+Thus the least exception is \(2m\) or \(4m\) with odd
+inert-supported \(m\). The finite coverage, the corresponding
+interval row in \eqref{eq:m8-intervalcert}, and
+\eqref{eq:m8-coretail} cover every such \(m\), a contradiction.
+
+For \(C+2C\), a least missing odd \(N\ge3\) with a split prime
+factor either is a single split prime, or descends to a smaller
+odd target at least three. The prime boundary is covered by
+\eqref{eq:m8-prime} above \(2^{22}\) and by the finite mixed
+coverage below that bound. With no split factor, \(N\) is
+inert-supported and is covered by the finite computation, its
+\(33\) interval tests, and the infinite tail.
+This proves both strong core identities. Their local exclusions
+and \eqref{eq:m8-union} prove the full primitive identity.
+The explicit count was already obtained from
+\eqref{eq:m8-globalnumeric}, completing
+Theorem~\ref{thm:minus8-exact}.

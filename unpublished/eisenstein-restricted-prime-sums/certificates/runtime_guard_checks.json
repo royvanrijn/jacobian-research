@@ -1,0 +1,62 @@
+[
+  {
+    "checker": "verify_primitive_norm_minus7.py",
+    "mode": "-O",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus7.py",
+    "mode": "-OO",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus7.py",
+    "mode": "env",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus8.py",
+    "mode": "-O",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus8.py",
+    "mode": "-OO",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus8.py",
+    "mode": "env",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus11.py",
+    "mode": "-O",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus11.py",
+    "mode": "-OO",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_minus11.py",
+    "mode": "env",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_quaternary.py",
+    "mode": "-O",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_quaternary.py",
+    "mode": "-OO",
+    "result": "rejected before output"
+  },
+  {
+    "checker": "verify_primitive_norm_quaternary.py",
+    "mode": "env",
+    "result": "rejected before output"
+  }
+]

@@ -1,0 +1,614 @@
+\section{An independent classical bound for quadratic cores}\label{sec:older-route}
+
+This section proves the order-of-magnitude input for the quadratic-order
+application without the zero-free half-plane or weighted-dilation
+theorem.  It is the quadratic specialization of the divisor-pairing
+and positive-restoration argument.  Here the first divisor product has
+only two factors.  Consequently ordinary completed Kloosterman sums
+supply the required progression estimate; no higher divisor
+correlation theorem is needed.
+
+Fix an even modulus \(L_0\), a nonprincipal quadratic literal character
+\(\chi\bmod L_0\), and put
+\[
+ \begin{gathered}
+ H=\ker\chi,\qquad
+ \mathcal C=\langle p:p\nmid L_0,\ \chi(p)=1\rangle,\\
+ V(n)=\tau(n)\1_{\mathcal C}(n),\qquad
+ J(N)=\prod_{\substack{p\mid N\\p\nmid L_0,\ \chi(p)=-1}}
+                          \frac{p-1}{p-2}.
+ \end{gathered}
+\]
+All arithmetic data in the following lemma are fixed.
+
+\begin{lemma}[Classical quadratic core bound]\label{lem:older-quadratic-filter}
+Let \(A,B\) be coprime positive \(L_0\)-supported integers and
+\(U,V_0\subset H\) fixed residue subsets.  Write
+\[
+ \Gamma_{A,B;U,V_0}(N)=\frac{L_0}{|H|^2}
+   \#\{(a,b)\in U\times V_0:Aa+Bb=N\bmod L_0\}.
+\]
+Uniformly over all sufficiently large targets with \(\Gamma_{A,B;U,V_0}(N)>0\),
+\[
+ \#\{Ax+By=N:x,y\in\mathcal C,\
+                  x\bmod L_0\in U,\ y\bmod L_0\in V_0\}
+                   \asymp\frac{NJ(N)}{\log N}.
+\]
+Zero finite density gives zero count identically.  In particular the
+lemma applies to unions of unit-square residue states.
+Its proof uses only fixed-character means, fixed-progression prime
+Mertens, the classical Weil--Estermann bound, and finite sieve inequalities.
+\end{lemma}
+
+We prove the full shifted weighted family first.  Its uniformity,
+rather than a single weighted convolution, is necessary for restoring
+small prime factors.
+
+\subsection{Two-factor boxes with a fixed period}
+
+For bounded functions \(\omega_1,\omega_2\) of fixed period \(c\),
+intervals \(I_1,I_2\), and \((a,m)=(c,m)=1\), let
+\[
+ S(a)=\sum_{\substack{r\in I_1,\ s\in I_2\\rs\equiv a\ (m)}}
+                        \omega_1(r)\omega_2(s).
+\]
+Then, for every \(\epsilon>0\),
+\begin{equation}\label{eq:older-box}
+ S(a)-\frac1{\varphi(m)}\sum_{b\bmod m}^{*}S(b)
+                         \ll_{c,\epsilon}m^{1/2+\epsilon}.
+\end{equation}
+The estimate is uniform in the intervals, including intervals longer
+than \(cm\), and permits subintervals of arbitrary lengths.
+
+Here is a direct completion proof.  Put \(Q=cm\),
+\[
+ W_i(h)=\sum_{n\in I_i}\ee{-hn/Q},\qquad
+ G_i(t)=\sum_{r\bmod c}\omega_i(r)\ee{tr/c}.
+\]
+CRT and finite Fourier inversion express \(S(a)\) as
+\[
+ Q^{-2}\sum_{h,k\bmod Q}
+ W_1(h)W_2(k)G_1(m^{-1}h)G_2(m^{-1}k)
+       K_1(c^{-1}h,ac^{-1}k;m),
+\]
+where \(K_1(u,v;m)=\sum_{z\bmod m}^{*}\ee{(uz+v\bar z)/m}\);
+inverses in \(G_i\) are taken modulo \(c\).
+The terms \(h=0\bmod m\) or \(k=0\bmod m\) are independent of
+the unit \(a\), since the resulting Ramanujan sum is unchanged by
+unit multiplication.  For all other frequencies use
+\[
+ |K_1(u,v;m)|\le\tau(m)m^{1/2}(u,v,m)^{1/2}.
+\]
+This is the ordinary Weil--Estermann bound stated and applied in
+\cite[printed p.~44]{heathbrown}.  The primary source's
+Lemma~6 is its singleton-padded divisor-box consequence.
+In centered frequency ranges,
+\(|W_i(h)|\ll\min(|I_i|,Q/|h|)\) and \(|G_i|\le c\).
+The remaining double sum is bounded using
+\[
+ \sum_{\substack{0<|h|,|k|\le Q/2\\m\nmid h,\ m\nmid k}}
+      \frac{(h,k,m)^{1/2}}{|hk|}
+ \le \sum_{d\mid m}d^{1/2}
+       \left(\sum_{\substack{0<|h|\le Q/2\\d\mid h}}\frac1{|h|}\right)^2
+ \ll_c \log^2(2m)\sum_{d\mid m}d^{-3/2}.
+\]
+The \(Q^2\) from the two geometric sums cancels the completion
+normalization.  This proves a bound
+\(O_c(m^{1/2}\tau(m)\log^2(2m))\) around an \(a\)-independent
+quantity.  Averaging that quantity over unit \(a\) changes the
+error by at most a factor two and proves \eqref{eq:older-box}.
+The case \(m=1\) has discrepancy zero.
+Tensor partial summation also allows bounded-variation interval weights.
+
+\subsection{Shifted kernels, means, and fixed filters}
+
+For \(t\in\mathcal C\) put \(F_t(n)=V(tn)/V(t)\).
+At a split prime with \(b=v_p(t)\),
+\[
+ F_t(p^e)=1+\frac{e}{b+1};
+\]
+at a nonsplit prime it is zero for \(e>0\).
+With literal characters, its Dirichlet series is
+\[
+ \sum_{n\ge1}\frac{F_t(n)}{n^s}
+   =L(s,\chi_0^{L_0})L(s,\chi)\sum_{j\ge1}\frac{e_t(j)}{j^s}.
+\]
+The correction factors are \(1-p^{-2s}\) at inert primes and
+\(1-\frac{b}{b+1}p^{-s}\) at split primes dividing \(t\).
+Deleting all Euler factors at primes dividing another integer \(D\)
+replaces its split local correction by \((1-p^{-s})^2\).
+Thus all these kernels satisfy, uniformly in valuations,
+\begin{equation}\label{eq:older-kernel}
+ |e(j)|\le\tau(j)^C,\qquad
+ \sum_j|e(j)|j^{-3/5}\ll_{\epsilon}(tD)^\epsilon.
+\end{equation}
+Every kernel index is an \(L_0\)-unit with \(\chi(j)=1\).
+
+We record explicitly the elementary mean used below.  If
+\(\xi\) is a character of a fixed modulus \(c\) with the same prime
+support as \(L_0\), then the twisted series has character factors
+\(\xi,\xi\chi\).
+It has a principal factor only when the restriction of \(\xi\)
+is \(1\) or \(\chi\); in those cases \(F_t\xi=F_t\).
+Otherwise both character sums have bounded partial sums, and
+Dirichlet hyperbola at \(\sqrt X\) gives \(O_c(\sqrt X)\) for
+their convolution.
+In the principal cases, split the principal factor from the
+nonprincipal one by the same hyperbola argument to obtain its residue
+times \(X\), with error \(O_c(\sqrt X)\).
+Summing kernels by \eqref{eq:older-kernel}, including their main tails,
+therefore gives
+\begin{equation}\label{eq:older-mean}
+ \sum_{n\le X}F_t(n)\1_{(n,D)=1}\xi(n)
+ =\delta_{\xi\in\{1,\chi\}}\rho_{t,D}X
+                         +O_\epsilon((tDX)^\epsilon X^{3/5}).
+\end{equation}
+Here the two displayed characters mean their inflations to \(c\).
+The error and main remain valid with any fixed periodic unit filter,
+after finite character expansion.
+For later normalization write
+\[
+ M_{t,p}=(1-p^{-1})\sum_{e\ge0}F_t(p^e)p^{-e},\qquad
+ \rho_t=\frac{\varphi(L_0)}{L_0}\prod_{p\nmid L_0}M_{t,p}.
+\]
+The product is taken in natural prime order; its convergence and
+positivity follow equally from the character factorization and
+\(L(1,\chi)>0\).  A deleted split prime divides this mean by its
+original local series.  The residue measure on the fixed unit
+group is uniform on \(H\).
+
+\begin{proposition}[Uniform shifted weighted family]\label{prop:older-weighted}
+There exist \(\eta,\theta>0\), with \(\theta\) chosen sufficiently
+small after \(\eta\), such that the following holds.
+Let \(t_1,t_2,u,v\in\mathcal C\), each at most \(N^\theta\), with
+no restriction on their gcds.  For fixed residue subsets \(U,V_0\subset H\),
+\begin{align*}
+ &\sum_{\substack{Au x+Bv y=N\\x\bmod L_0\in U,\ y\bmod L_0\in V_0}}
+                      F_{t_1}(x)F_{t_2}(y)\\
+ &\quad=\frac{N}{ABuv}\,
+       \Gamma_{Au,Bv;U,V_0}(N)\rho_{t_1}\rho_{t_2}
+       \prod_{p\nmid L_0}\frac{D_p}{M_{t_1,p}M_{t_2,p}}
+                         +O(N^{1-\eta}),
+\end{align*}
+uniformly in every target valuation.  Here
+\[
+ D_p=\lim_{h\to\infty}p^{-h}
+ \sum_{\substack{a,b\bmod p^h\\Au a+Bv b=N\ (p^h)}}
+       F_{t_1}(p^{\min(v_p(a),h)})
+       F_{t_2}(p^{\min(v_p(b),h)}).
+\]
+All factors, including zero factors, are retained.
+The same formula holds after imposing any fixed finite combination
+of small divisibility and exact-valuation tests whose resulting
+shifts and coefficients stay in this family.
+\end{proposition}
+
+\begin{proof}
+First suppose \((u,v)=(uv,N)=1\).
+For \(g=(x,N)\), write \(x=gx'\), \(y=gy'\), \(M=N/g\);
+a nonzero term has \(g\in\mathcal C\).
+Its exact prefactor is \(F_{t_1}(g)F_{t_2}(g)\), its new shifts
+are \(t_1g,t_2g\), and \((x',M)=1\).
+Transport the residue states to \(U/g,V_0/g\).
+Every such multiplication is a unit bijection, so the corresponding
+finite root count, with its transported target, is unchanged.
+
+Choose a small fixed \(\lambda>0\), put \(K=N^\lambda\), and truncate
+\(g\) and the two kernels at \(K\).
+Large gcds cost \(O(N^{1-\lambda+\epsilon})\).
+For either kernel, counting multiples and using
+\eqref{eq:older-kernel} gives
+\[
+ N^{1+\epsilon}\sum_{j>K}\frac{|e(j)|}{j}
+   +N^\epsilon\sum_{j\le N}|e(j)|
+       \ll N^{1-2\lambda/5+\epsilon}+N^{3/5+\epsilon}.
+\]
+Discard also \(Au x\le N^{1-\lambda}\), at
+\(O(N^{1-\lambda+\epsilon})\).
+All implicit valuation and shift factors here are divisor-bounded.
+
+We suppress primes on \(x',y'\) in the remainder of this core argument.
+The fixed filter on the original first unit variable is
+\[
+ w(x)=\1_{x\bmod L_0\in U/g}\,
+       \1_{B\mid M-Au x}\,
+       \1_{(z,L_0)=1,\ z\bmod L_0\in v(V_0/g)},\qquad
+                       z=(M-Au x)/B.
+\]
+It has fixed period \(c=BL_0\).  Expand it on unit classes by characters
+modulo \(c\), retaining every scalar phase of every kernel index.
+The filter ensures that
+\(t=(M-Au x)/(Bvk)\) is an \(L_0\)-unit with \(\chi(t)=1\).
+Consequently the exact symmetric divisor pairing is
+\[
+ (\chi_0^{L_0}*\chi)(t)
+  =2\sum_{\substack{a\mid t\\a<\sqrt t}}\chi(a)
+                         +\1_{t=\square}\chi(\sqrt t).
+\]
+The square endpoint costs \(O(N^{1/2+O(\lambda+\theta)+\epsilon})\).
+
+For a second kernel \(k\le K\), the remaining congruence is
+\[
+       Au x\equiv M\pmod{vka},\qquad
+       Au x+Bvka^2<M,\qquad (x,M)=1 .
+\]
+The entire bad-supported factor \(B\) has already been imposed in
+\(w\); all varying moduli are coprime to \(c\).
+Also \((k,uM)=(a,uM)=1\).
+Expand the first kernel \(j\) and its two character variables.
+A nonzero congruence requires \((uj,vka)=1\); otherwise it would
+force a prime divisor of \(uM\) into an excluded place, or make a
+unit equal to a nonunit.  The same zero test holds in the unit model.
+
+Partition the two character variables and \(a\) into relative-width
+\(\Delta=N^{-\zeta}\) boxes, with \(\zeta=\lambda/100\).
+There are \(O(N^{3\zeta+\epsilon})\) boxes.
+On a box with its endpoints fixed, apply \eqref{eq:older-box} to
+the first two factors, at the full modulus \(m=vka\).
+It is enough that \(m\le N^{1/2+O(\lambda+\theta)}\);
+summing its square-root error over \(a\le N^{1/2}\),
+then the two kernel masses, gives
+\begin{equation}\label{eq:older-box-budget}
+ O(N^{3/4+100\lambda+100\theta+\epsilon}).
+\end{equation}
+This deliberately loose bound includes the fine boxes, the fixed
+character expansions, and the \(g\)-strata.
+In particular, no medium-variable dispersion argument occurs
+in this quadratic specialization.
+
+We justify the curved boundary separately.  A crossing box satisfies
+\(|Au x+Bvka^2-M|\ll\Delta N\).
+On the actual congruence write \(M-Au x=Bvkat\).
+Then \(|Bvka(t-a)|\ll\Delta N\), which has
+\[
+ O\left(\frac{\Delta N\log N}{vk}+\sqrt{\frac N{vk}}\right)
+\]
+integer pairs \((a,t)\), after discarding only the divisibility
+which determines \(x\).
+The unique scalar decompositions and divisor-bounded first-kernel
+multiplicities cost \(N^\epsilon\).
+Summing the second kernel by \eqref{eq:older-kernel} leaves
+\begin{equation}\label{eq:older-boundary}
+ O_\epsilon\big(N^\epsilon(\Delta N\log N+\sqrt N K^{1/10})\big).
+\end{equation}
+For the principal model the interval length retains \(1/j\),
+and kernel reciprocal sums converge.
+After \eqref{eq:older-box}, evaluate its unit-population mean using
+\eqref{eq:older-mean}, with Euler deletions at \(M vka\).
+The \(1/\varphi(vka)\) normalization makes the sum of these mean
+errors \(O(N^{3/5+O(\lambda+\theta)+\epsilon})\).
+All fixed twists except \(1,\chi\) have zero mean.
+Thus the remaining model can be evaluated directly, with a power saving.
+
+For clarity, its finite coefficient can be checked before any Euler
+completion.  Let \(H_c\) be the lift of \(H\) to modulus \(c=BL_0\).
+It has \(B|H|\) elements.  Write \(\mu\) for the average of \(w\)
+over \(H_c\).  There are exactly \(B\) lifts modulo \(BL_0\) of
+each allowed pair modulo \(L_0\), since \(Au\) is a unit at primes
+of \(B\); each surviving first residue admits \(B\) second lifts.
+Therefore
+\[
+ \Gamma_{Au,Bv;U/g,V_0/g}(M)
+                  =\frac{2BL_0}{\varphi(L_0)}\mu.
+\]
+The surviving first character coefficients sum to \(\mu\), rather
+than to the constant coefficient alone.
+
+Here are the radial factors in the model calculation.
+For local coefficients \(A_i=F_{t_1g}(p^i)\),
+\(B_i=F_{t_2g}(p^i)\), put \(q_p=1-p^{-1}\).
+At a unit target, the local integral is
+\(I_{p,0}=M_{A,p}+M_{B,p}-1\).
+Writing \(W_p=M_{A,p}^{-1}\), the paired-divisor series contributes
+\(I_{p,0}/M_{A,p}\) outside \(uvM\), \(1\) at \(p\mid u\),
+and \(M_{B,p}/M_{A,p}\) at \(p\mid v\).
+At \(p\mid M\), the first mean deletes its local series.
+Hence the fixed-\(g\) radial product consists of
+\[
+ p\mid M:q_p,\qquad p\mid u:M_{A,p},\qquad
+ p\mid v:M_{B,p},\qquad p\nmid uvM:I_{p,0},
+\]
+with real scale \(M/(Auv)\) and finite coefficient
+\(2(\varphi(L_0)/L_0)\mu\).
+These identities follow also by expanding the two geometric
+series: the paired-divisor local sum off \(uvM\) is
+\[
+ 1+W_p\left[
+  \frac{\sum_i e_{t_2g}(p^i)p^{-i}}{1-\chi(p)/p}-1\right]
+                  =\frac{M_{A,p}+M_{B,p}-1}{M_{A,p}} .
+\]
+Completing that character series costs
+\(O(N^{1/2+O(\lambda+\theta)+\epsilon})\):
+it is \(L(s,\chi)\) times a correction absolutely convergent
+for \(\Re s>0\), so its coefficient partial sums are \(O(N^\epsilon)\).
+The kernel completions have the saved tail already displayed.
+
+Completing \(g\) gives, at \(n=v_p(N)\), exactly
+\begin{align*}
+ I_{p,n}={}&q_p\sum_{i<n}A_iB_ip^{-i}
+        +p^{-n}(1-2/p)A_nB_n\\
+ &+q_p\left(B_n\sum_{i>n}A_ip^{-i}
+                       +A_n\sum_{j>n}B_jp^{-j}\right).
+\end{align*}
+The terms \(i<n\) come from the smaller common valuations;
+the final common valuation \(i=n\) contributes its shifted
+unit-target integral.  Thus no target valuation is omitted.
+Since \(\rho_{t_1}\rho_{t_2}
+=(\varphi(L_0)/L_0)^2\prod M_{t_1,p}M_{t_2,p}\), the
+finite coefficient and real scale give precisely the formula
+in the proposition, including its factor \(1/B\).
+
+For general good coefficients, remove \(r=(u,v)\), requiring
+\(r\mid N\), and divide them and the target by \(r\).
+For coprime remaining coefficients put \(d=(u,N)\), \(e=(v,N)\).
+The equation forces \(e\mid x,d\mid y\).
+Substitute \(x=ex'\), \(y=dy'\), with exact prefactors
+\(F_{t_1}(e)F_{t_2}(d)\), shifts \(t_1e,t_2d\), coefficients
+\(u/d,v/e\), and target \(N/(de)\).
+All removed factors are in \(\mathcal C\).
+Transport each residue subset by the corresponding unit multiplier.
+The finite solution sets are bijected by these substitutions.
+At a common coefficient prime the local density gains \(p^{v_p(r)}\);
+at a one-sided coefficient prime, solving for the unit-coefficient
+variable gives the displayed \(D_p\).
+This proves the claimed integral for every gcd profile.
+
+Choose \(\lambda\) small, then \(\theta\) much smaller.
+Equations \eqref{eq:older-box-budget} and
+\eqref{eq:older-boundary}, the kernel saving \(2\lambda/5\),
+and the gcd and small-summand saving \(\lambda\), leave a fixed
+positive core saving.  Choose \(\eta\) below a hundredth of the
+boundary saving, and decrease the external family exponent again.
+The transformed targets are at least \(N^{1-3\theta}\) and all
+transformed parameters stay inside the core family.
+Divisor prefactors preserve a smaller saving.
+Finally \(b\mid x\) is the exact substitution \(x=bx'\), which
+changes the shift to \(t_1b\), coefficient to \(ub\), state to
+\(U/b\), and introduces \(F_{t_1}(b)\).
+The analogous substitution on the second side, and finite differences
+for exact valuations, prove the predicate assertion.
+\end{proof}
+
+\subsection{A finite lower sieve and positive restoration}
+
+We now prove Lemma~\ref{lem:older-quadratic-filter}.
+Fix an admissible target.  Its finite density \(\Gamma(N)\)
+belongs to a fixed finite positive set, and hence has a positive
+lower bound depending only on the fixed data.
+At good primes write \(x=p^{-1}\), \(q_p=1-x\), and use the
+unshifted coefficients \(A_i=B_i=V(p^i)\).
+Let \(I_{p,e}\) be the radial integral in the preceding proof,
+where \(e=v_p(N)\).
+The weighted mass with both variables units is
+\[
+ c_e(p)=
+ \begin{cases}1-2/p,&e=0,\\1-1/p,&e\ge1.\end{cases}
+\]
+At an inert prime \(I_{p,e}=c_e(p)\).
+At a split prime define the bad-event probability
+\(g_e(p)=1-c_e(p)/I_{p,e}\).
+The explicit geometric series gives, uniformly in \(e\),
+\[
+             0\le g_e(p)<1,\qquad
+             g_e(p)=4/p+O(p^{-2}).
+ \tag{A.1}\label{eq:older-roughprob}
+\]
+For example, at \(e=0\),
+\(I_{p,0}=2(1-p^{-1})^{-1}-1\).
+For \(e\ge1\), the \(i=0,1\) terms give
+\(I_{p,e}=1+3/p+O(p^{-2})\); the remaining polynomial-geometric
+tail is uniformly \(O(p^{-2})\).
+The formula at \(e=1\) has the same expansion directly.
+At every finite collection of primes \(I_{p,e}\) is uniformly bounded,
+whereas \(c_e(p)\ge1/3\), so the good-event probabilities have a
+uniform positive lower bound.
+
+Put \(M_p=(1-p^{-1})\sum_iV(p^i)p^{-i}\) and
+\[
+ \mathcal V(z)=\prod_{\substack{p\le z\\p\nmid L_0}}
+                  \frac{1-2/p}{M_p^2},\qquad
+ E_p=\frac{p-1}{p-2},\qquad
+ E_{p,e}=\begin{cases}1,&e=0,\\E_p,&e\ge1,\end{cases}
+ \qquad a_p=\frac{p-1}{p(p-2)}.
+\]
+At a split prime \(M_p=(1-p^{-1})^{-1}\), so the factor
+in \(\mathcal V\) is \(1-4/p+O(p^{-2})\).
+At an inert prime it is \(1+O(p^{-2})\).
+Fixed-character prime Mertens, and the split-prime density \(1/2\),
+therefore give
+\begin{equation}\label{eq:older-roughdimension}
+                         \mathcal V(z)\asymp(\log z)^{-2}.
+\end{equation}
+This is the dimension-two rough weighted count which must recover
+one power of \(\log N\).
+
+Choose small fixed \(\alpha,\xi>0\) after the weighted family.
+We use squarefree pairwise coprime triples \(d,u,v\) with
+\[
+ d,u,v\in\mathcal C,\quad d\mid N,\quad (uv,N)=1,\quad
+ duv\le N^\alpha,
+\]
+all primes at most \(w=N^\omega\).
+At target \(M=N/d\), prescribe \(v_p(x)=1\) for \(p\mid u\),
+\(v_p(y)=1\) for \(p\mid v\), and require that no other prime
+at most \(z=N^\gamma\) divide \(xy\).
+Count with weight \(V(x)V(y)/(2^{\omega(u)}2^{\omega(v)})\)
+and with residue states \(x\in U/d,\ y\in V_0/d\).
+Thus the lifted values \(dx,dy\) have the original states.
+
+All these predicates are covered by
+Proposition~\ref{prop:older-weighted}.
+Indeed exact valuation one is the difference of divisibility by
+\(p\) and by \(p^2\), and a roughness predicate expands using
+\[
+ \1_{p\mid xy}=\1_{p\mid x}+\1_{p\mid y}
+                              -\1_{p\mid x,\ p\mid y}.
+\]
+For a tested squarefree divisor \(\ell\le N^\xi\), each resulting
+shift and coefficient is at most \(N^{2\alpha+\xi}\).
+The expansion has \(N^{o(1)}\) terms.
+It suffices to choose
+\begin{equation}\label{eq:older-smallbudgets}
+ 2\alpha+\xi<(1-\alpha)\theta,\qquad
+                         \alpha+\xi<\eta/4 .
+\end{equation}
+Forbidden shifts give zero terms; common-divisibility terms use the
+noncoprime part of the weighted family.
+
+The finite density remains exactly \(\Gamma(N)\) in every lower term.
+After writing \(x=ux'\), \(y=vy'\), its states are
+\(U/(du),V_0/(dv)\) and its equation is
+\(Au x'+Bv y'=N/d\).
+The map
+\((x',y')\mapsto(du x',dv y')\) bijects its finite roots with the
+original roots modulo \(L_0\).
+This is why split primes with nontrivial residue states may be
+restored.  Restricting restoration to identity-state primes would
+lose the exponent needed below.
+
+Here is the exact positive local model after imposing all roughness
+conditions.  Its main mass for a triple is
+\begin{equation}\label{eq:older-triplemass}
+ \mathcal M_{d,u,v}
+ =C_N(z)\frac{N}{ABd}\mathcal V(z)
+       \prod_{\substack{p\mid N/d\\p\le z,\ p\nmid L_0}}E_p
+       \prod_{p\mid uv}a_p .
+\end{equation}
+The positive factor \(C_N(z)\) includes \(\Gamma(N)\rho_1^2\)
+and the Euler tail above \(z\).
+It is bounded above and below by fixed positive constants,
+uniformly in the target and the triples.
+To verify this, outside the target the tail factors are
+\(1+O(p^{-2})\); at target primes they are \(1+O(1/p)\) uniformly
+in valuation.  At most \(1/\gamma\) target primes exceed \(z\).
+All cofactor primes are below \(w<z\), so this tail is unchanged
+when dividing by \(d\).
+At a unit target prime, a valuation-one directive on either side
+has weighted mass \(2(1-p^{-1})/p\).
+Its normalization by two and division by \(1-2/p\) give exactly
+\(a_p\), proving \eqref{eq:older-triplemass}.
+
+We justify that a finite sieve recovers a fixed fraction of this
+fully rough main, rather than asserting an asymptotic sieve.
+Treat finitely many small primes exactly so that \(g_e(p)\le1/2\)
+at the others.  Split the remaining primes into blocks
+\((z^{2^{-j-1}},z^{2^{-j}}]\).
+Their sums of local bad probabilities are bounded by a fixed
+constant \(M_0\), uniformly in targets and directives.
+Let \(U_j\) be the even Bonferroni polynomial through degree
+\(2(s+j)\), and \(L_j\) the odd one through degree \(2(s+j)+1\).
+If \(I_j\) is the indicator of no bad event in block \(j\), then
+\(U_j\ge I_j\ge L_j\), \(U_j\ge0\), and telescoping gives
+\begin{equation}\label{eq:older-lowerpoly}
+ \prod_jU_j-\sum_j(U_j-L_j)\prod_{i\ne j}U_i
+                                      \le\prod_jI_j .
+\end{equation}
+This avoids multiplying lower polynomials which might be negative.
+In the independent prime model,
+\[
+ \E(U_j-L_j)\le\frac{M_0^{2(s+j)+1}}{(2(s+j)+1)!},
+ \qquad \E U_j\ge\prod_{p\text{ in block}}(1-g_e(p))
+                                             \ge e^{-2M_0}.
+\]
+Choose the fixed \(s\) so that the sum of these relative errors
+is at most \(1/4\).
+Factoring \(\prod_j\E U_j\) shows that
+\eqref{eq:older-lowerpoly} has mean at least half the fully rough
+probability.  Its squarefree divisor support is at most
+\[
+ C_0z^{\sum_{j\ge0}(2(s+j)+1)2^{-j}}
+                               =C_0z^{4s+6},
+\]
+with coefficients \(O(\log\log N)\).
+Choose \(\gamma<\xi/(4s+7)\).
+Then its support is at most \(N^\xi\), so
+Proposition~\ref{prop:older-weighted} applies term by term.
+There are at most \(N^{\alpha+o(1)}\) cofactor triples.
+The total error, including sieve predicates, is
+\[
+                  O(N^{1-\eta+\alpha+\xi+o(1)}),
+\]
+negligible by \eqref{eq:older-smallbudgets}.
+Thus the summed actual weighted count is at least a fixed fraction
+of the sum of \eqref{eq:older-triplemass}, apart from that error.
+
+Temporarily drop the size cap \(duv\le N^\alpha\).
+The positive cofactor sum is an Euler product.
+At a split prime not dividing \(N\), its options are
+\(1,a_p,a_p\).
+At a split prime with target valuation \(e\ge1\), the options
+omitting or including it in \(d\) give
+\[
+ E_p+p^{-1}E_{p,e-1}\ge E_p+1/p=1+2a_p.
+\]
+At inert target primes no restoration option is present; the
+factor left over is \(E_p\).
+Target factors above \(z\) contribute \(1+o(1)\), uniformly.
+Consequently \eqref{eq:older-roughdimension} and prime Mertens give
+\begin{equation}\label{eq:older-restoredmass}
+ \sum_{d,u,v}\mathcal M_{d,u,v}
+ \gg NJ(N)(\log N)^{-2}
+          \prod_{\substack{p\le w\\\chi(p)=1}}(1+2a_p)
+ \asymp \frac{NJ(N)}{\log N}.
+\end{equation}
+
+The cap must be restored in the actual positive model.
+After normalizing its Euler product, each prime is included in
+\(d,u\), or \(v\) with probability \(O(1/p)\), uniformly in target
+valuation.  Therefore
+\(\E\log(duv)\le C_1\log w\).
+Choose \(\omega<\min(\gamma,\alpha/(4C_1))\).
+Markov retains at least three quarters of the mass in
+\(duv\le N^\alpha\).  Applied to this model, rather than merely a
+comparison product, it proves that the finite sieve retains the
+order of magnitude in \eqref{eq:older-restoredmass}.
+
+Finally lift each residual pair to \((dx,dy)\).
+At every cofactor prime the numerical valuation patterns are,
+respectively,
+\((1,1)\) for \(d\), \((1,0)\) for \(u\), and \((0,1)\) for \(v\);
+all other small-prime valuations are zero.
+Thus the ordered numerical pair recovers the entire triple and
+residual pair uniquely.
+Writing \(x=ux'\), \(y=vy'\), exact valuation one gives
+\[
+       \frac{V(x)V(y)}{2^{\omega(u)}2^{\omega(v)}}
+                                      =V(x')V(y').
+\]
+All prime factors of \(x',y'\) exceed \(N^\gamma\), so
+\(V(x')V(y')\le4^{1/\gamma}\).
+No factor \(V(d)^2\) is inserted: \(d\) lifts values, not their
+divisor weights.
+Injectivity and this uniform bound turn
+\eqref{eq:older-restoredmass} into the required unweighted lower bound.
+
+For the upper bound, sieve the integer parameter of \(Ax+By=N\)
+using only good inert primes.  Both coefficients are units there.
+There are two forbidden roots, merging exactly when \(p\mid N\).
+A dimension-one upper Selberg sieve at fixed power level therefore
+gives
+\[
+ \ll N\prod_{\substack{p\le N^{\gamma_1}\\
+                       p\nmid L_0,\ \chi(p)=-1}}
+       \left(1-\frac{2-\1_{p\mid N}}p\right)
+            +O(N^{1/2}\log^C N)
+ \ll \frac{NJ(N)}{\log N}.
+\]
+For an explicit finite version, use the nonnegative even block
+polynomials above at divisor support at most \(N^{1/2}\).
+Their model is at most a fixed multiple of the true product,
+by the same summable factorial block errors.
+CRT gives \(N\nu(\ell)/\ell+O(\nu(\ell))\), \(\nu(p)\le2\);
+the total endpoint error is
+\(O(N^{1/2}\log^C N)\).
+Discarding the residue filters only increases this upper bound.
+This completes the proof of Lemma~\ref{lem:older-quadratic-filter}.
+
+\paragraph{Independence of the two conclusions.}
+Lemma~\ref{lem:older-quadratic-filter} supplies uniform two-sided
+bounds, but no leading asymptotic.  Its positivity comes from the
+finite lower sieve and the recoverable positive cofactor model.
+The density-model comparison of the main binary theorem supplies
+the leading asymptotic by a separate argument.  In particular the
+classical bound proved here has no dependency on the recent
+zero-free or graph inputs.

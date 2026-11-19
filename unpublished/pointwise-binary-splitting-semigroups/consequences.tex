@@ -1,0 +1,58 @@
+\section{Consequences and boundaries}
+\begin{corollary}\label{cor:basis13}
+The set \(C_{12}\cup\{0\}\) is an asymptotic basis of exact order
+thirteen: every sufficiently large integer is a sum of at most
+thirteen elements of \(C_{12}\), and twelve do not suffice.
+\end{corollary}
+\begin{proof}
+For a large target choose \(j\in\{0,\ldots,11\}\) with
+\(N-j\equiv2\pmod{12}\). Theorem~\ref{thm:c12} writes \(N-j\)
+as two core values; add \(j\) copies of one. This uses at most thirteen
+positive summands. Conversely, \(25+60r\), \(r\ge0\), is
+\(1\pmod{12}\) and divisible by the forbidden prime five.
+At most twelve positive core summands would force exactly one
+summand on that residue class, which is impossible. Padding with
+zeros gives the equivalent fixed-order assertion.
+\end{proof}
+
+The field formulation follows from classical abelian class field
+theory. A subgroup condition on Frobenius is complete splitting in
+its fixed field. Finite conjunctions become intersections of inverse
+image subgroups in the compositum. Kronecker--Weber places this
+compositum in a cyclotomic field
+\cite[Chapter I, Theorem 4.16]{milnecft}, giving precisely the
+fixed subgroups in Theorem~\ref{thm:general}, after discarding the
+fixed bad-prime set. The reduction is classical; the pointwise
+indicator correlation is the analytic assertion used here.
+
+These conclusions have several precise boundaries. The theorem is
+for subgroup prescriptions; arbitrary unions of residue classes
+can have additional fractional branches in fixed character twists,
+so they require another model verification. It treats a fixed
+modulus and fixed coefficients. Its interval discrepancy is absolute,
+and gives no relative asymptotic in intervals of power-short length
+\(N^\theta\), \(\theta<1\). The threshold is not numerical, so it
+does not classify small exceptions. The exact sumsets of primitive
+quadratic norms and their finite certificates form a separate
+arithmetic problem, treated in the companion article. The existing
+window-counting results address where summands may be placed and
+have a separate proof and parameter range.
+
+Higher-fold sums and independent coupled systems can use classical
+linear-form correlation theorems, but their proof structure differs
+from this binary reflected line. Another indicator problem is the
+Connors--Keating prediction
+\cite[Section 1.3, equation (1.6)]{smilansky}. Let \(b(n)\) indicate
+positive integers represented by a sum of two integer squares, and
+fix \(h\ne0\). The predicted formula is
+\[
+ \sum_{1\le n\le X}b(n)b(n+h)\sim C(h)\frac X{\log X},\qquad
+ C(h)=\frac{w_2(h)}2
+   \prod_{\substack{p\mid h\\p\equiv3\ (4)}}
+       \frac{1-p^{-v_p(h)-1}}{1-p^{-1}},
+\]
+where \(w_2(h)=1\) for odd \(h\), and
+\(w_2(h)=2-3\cdot2^{-v_2(h)}\) otherwise; put \(b(n)=0\) for
+\(n\le0\). The additional question is how the comparison handles
+arbitrary even inert valuations. Its treatment is outside this
+article, and the prime-support theorem alone does not assert this formula.

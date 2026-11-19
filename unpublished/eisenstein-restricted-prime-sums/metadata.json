@@ -1,26 +1,25 @@
 {
-  "title": "From Euler's restricted-prime sums to Eisenstein norms",
+  "title": "Exact Sumsets of Primitive Quadratic Norms",
   "author": {
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Extends the Gaussian restricted-prime sum theorem to Eisenstein norms, follows the ramified prime3 into the mixed identity, and derives exact primitive-norm sumsets, sharp four/seven bounds and an effective counting criterion.",
+  "summary": "Exact binary primitive norm-value sumsets at discriminants -3,-7,-8,-11, with complete finite certificates and classical quaternionic Hecke proofs.",
   "published": false,
   "status": "draft",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Written proof of both binary identities and exact sumset consequences; new local arguments and full NumPy/standard-library finite replays are recorded in verification.json, with canonical programs and receipts under research/arithmetic/eisenstein-restricted-prime-sums/. The subgroup-orbit and uniform arithmetic hypotheses are explicit. No external specialist review, formal verification or established novelty is claimed; the current PDF retains the balanced experiment; the linked canonical research proves eventual balanced coverage with no effective onset or complete finite exception classification.",
+  "verification": "Complete standalone written argument using classical Hecke/Jacquet-Langlands/Ramanujan inputs, exact finite certificate replay and full coordinate-membership authentication; current review record distinguishes each check from external mathematical review and formal verification.",
   "verification_record": "verification.json",
   "next_steps": [
-    "Obtain specialist review of the odd-component Hecke estimate, six-point quotient at3 and the existing Jacquet-Langlands/weight-two specialization.",
-    "Complete the literature audit for primitive Eisenstein norm sumsets and sharp additive-basis bounds; the orbit criterion abstracts an attributed method.",
-    "Obtain external replay and a persistent source-archive identifier before submission.",
-    "Incorporate the canonical qualitative angular/balanced extension into a later manuscript revision; an effective onset and completeness of the finite balanced exception list remain open."
+    "Obtain external specialist review of all local quotient and global spectral applications.",
+    "Obtain independent human replay of the complete certificates.",
+    "Complete targeted literature review for historical priority before any priority claim."
   ],
   "catalogued_on": "2026-11-17",
-  "abstract": "We start from the restricted-prime sum theorem of Howe, Huffman,\nKohlmeyer and Kruer and follow its square-lattice argument into the\nEisenstein lattice. Let $\\AA$ contain $1$ and the positive integers whose\nprime factors are all $1$ modulo $3$. The first answer is that\n$\\AA+\\AA$ contains exactly the positive integers $2$ modulo $6$.\nThe ramified prime $3$ then leads to a mixed problem: $\\AA+3\\!\\cdot\\!\\AA$\nis exactly the positive class $4$ modulo $6$. Quaternionic norm counts,\nan odd-component filter and a six-point calculation at $3$ prove the\nlarge-target statements; exact finite certificates complete them.\nTogether, the two identities give the binary and higher sumsets of\nprimitive Eisenstein norm values. Four such values suffice for every\npositive integer, while seven summands from $\\AA$ suffice; both bounds\nare sharp. We then extract a reusable counting criterion with explicit\nhypotheses for an effective cutoff, and end with the balanced-summand\nquestion that remains open.",
+  "abstract": "We determine the exact binary sumsets of primitive quadratic norm values\nat discriminants $-3,-7,-8,-11$.  The local congruence conditions are\nsufficient in three cases; at discriminant $-7$ the complete additional\nexception set is $\\{7,77,203\\}$.  Stronger split-prime core identities\nseparate the ramified dilations.  The proofs combine quaternionic norm\nshells, precisely normalized classical Hecke bounds, and dyadic and\nramified local filters.  Explicit infinite estimates, rational interval\ncertificates, complete finite sumset scans and multiplicative descent\ncover every positive target.  We supply standalone verification code\nand explain the finite reductions that make the certificates complete.\nAll sumsets concern numerical values, without coordinate multiplicities.",
   "abstract_source": "main.tex",
   "abstract_format": "latex",
   "resource_type": {
@@ -28,5 +27,5 @@
     "type": "publication",
     "subtype": "preprint"
   },
-  "revised_on": "2026-11-18"
+  "revised_on": "2026-11-19"
 }

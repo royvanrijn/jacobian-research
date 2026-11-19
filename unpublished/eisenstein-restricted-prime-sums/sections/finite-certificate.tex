@@ -27,7 +27,7 @@ $n=6k+4<10^8$, there is a $j\le33$ with $3j\le k$ and
 $\varepsilon_j\varepsilon_{k-3j}=1$.
 \end{proposition}
 \begin{proof}[Computer-assisted proof]
-The standard-library program printed in Appendix~\ref{app:verifier}
+The standard-library program described in Appendix~\ref{app:verifier}
 constructs the exact membership sieve, checks the small candidates by
 direct divisor tests, and requires a witness at every target index.
 Its two complete scans give the following results:
@@ -48,7 +48,7 @@ Neither scan has an uncovered target. The witnesses give, respectively,
 All terms are positive members of the required sets. Separate NumPy
 implementations regenerate the membership arrays and recheck every
 witness. Their normalized membership and witness digests agree with the
-printed verifier. The byte conventions and expected digests are given
+standalone verifier. The byte conventions and expected digests are given
 in the appendix. The finite scans use integer arithmetic throughout.
 \end{proof}
 Proposition~\ref{prop:finite-certificates}, the infinite-range argument in

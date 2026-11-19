@@ -1054,11 +1054,26 @@ also be credited.
 The present [quantitative correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
 asserts an unrestricted-pair leading asymptotic with an explicit
 constant and logarithmic remainder, using its separately recorded
-analytic inputs. Those quantitative and hypothesis differences are
-the comparison to make. It does not automatically recover the
-older coprime-pair count: the allowed-prime factor
-\(\prod_{p\mid N,\ p\equiv1(12)}(1-p^{-1})\) can tend to zero.
+analytic inputs. Its [coprime corollary](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md#coprime-summands)
+now recovers the older coprime-pair scope by Möbius inversion, with
+leading factor \(A_{12}J_{12}(N)P_{12}(N)\) and relative error
+\(O((\log N)^{-1/65536})\), where
+\(P_{12}(N)=\prod_{p\mid N,\ p\equiv1(12)}(1-p^{-1})\).
+The proof explicitly controls the loss from this factor tending to zero.
+For the 1993 target weight \(W_{12}(N)=\prod_{p\mid N}(1-\varepsilon_p/p)\),
+the factors agree at allowed primes. Since an admissible target is even
+and not divisible by three,
+\[
+ \frac{J_{12}(N)P_{12}(N)}{W_{12}(N)}
+ =\frac23\prod_{\substack{p\mid N\\p\equiv5,7,11\ (12)}}
+             \frac{p(p-1)}{(p-2)(p+1)}.
+\]
+Every factor in this product is \(1+O(p^{-2})\), so the ratio has
+positive uniform upper and lower bounds. The corollary therefore
+recovers their logarithmic order for the same coprime numerical count,
+adding a leading constant and remainder through the present analytic
+dependencies rather than their hypothesis (P4).
 This audit establishes neither a first unconditional result nor
 exhaustive historical priority. A later removal of the 1993
-uniformity hypothesis, an adapted balanced statement, and a new
-coprime-pair deduction require their own verified arguments.
+uniformity hypothesis within their method and an adapted balanced
+statement still require their own verified arguments.

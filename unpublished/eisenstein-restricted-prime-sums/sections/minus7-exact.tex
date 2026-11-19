@@ -1,0 +1,578 @@
+\section{Discriminant \texorpdfstring{\(-7\)}{-7}}\label{sec:minus7}
+
+Put
+\[
+ Q_7(x,y)=x^2+xy+2y^2,\qquad
+ P_7=\{Q_7(x,y)>0:\gcd(x,y)=1\},
+\]
+and let \(C_7\) contain \(1\) and the positive integers supported on
+primes congruent to \(1,2,4\pmod7\). In particular, \(2\) is allowed.
+
+\begin{theorem}\label{thm:minus7-exact}
+The exact sumsets are
+\[
+ C_7+C_7=\{n\ge2:7\nmid n\}\setminus\{11,29\},
+ \qquad
+ P_7+P_7=\{N\ge2:49\nmid N\}\setminus\{7,77,203\}.
+\]
+For every \(N\ge2^{69}\) with \(49\nmid N\),
+\[
+       \#\{(a,b)\in P_7^2:a+b=N\}\ge N^{2/3}/20000.
+\]
+Pairs are ordered and summands are numerical values.
+\end{theorem}
+
+We write \(Q,P,C\) for these objects within this section.
+The proof first produces a uniform sieve inequality on a quaternion
+norm shell. Exact interval certificates connect its infinite range
+to a complete finite sumset computation. A final descent removes
+split prime factors, including the exceptional quotients \(11,29\).
+
+\subsection{The value criterion and the ramified prime}
+
+Let \(R=\Z[\omega]\), where \(\omega=(1+\sqrt{-7})/2\).
+The Minkowski ideal-class bound is
+\((2/\pi)\sqrt7<2\), so every ideal class has a representative of
+norm one. Thus \(R\) has class number one. At an inert prime,
+divisibility of a norm forces divisibility of both coordinates.
+At a split prime, a primitive element can use only one of the two
+conjugate prime ideals. At the ramified prime, its exponent as an
+ideal divisor is at most one: the square of that prime ideal is
+\((7)\). Conversely, assigning each entire split prime power to
+one of its principal prime ideals, and choosing a ramified exponent
+zero or one, gives a primitive generator. Therefore
+\[
+                         P=C\mathbin{\dot\cup}7C.               \label{eq:m7-value}\tag{7.1}
+\]
+This is a statement about values; individual coordinate witnesses
+used for the shell sieve need not be primitive at split primes.
+
+Multiplication by \(\pi=\sqrt{-7}\) has matrix
+\[
+ M=\begin{pmatrix}-1&-4\\2&1\end{pmatrix},\qquad
+ M^2=-7I,\quad \det M=7,\quad Q(Mv)=7Q(v).
+\]
+For a primitive vector of norm coprime to \(7\), the image is still
+primitive. Indeed the determinant treats all other primes, while
+both output coordinates vanish modulo \(7\) precisely when
+\(2x+y\equiv0\pmod7\), which would imply \(7\mid Q(x,y)\).
+
+Modulo \(7\), \(Q(x,y)=(x+4y)^2\). Since \(-1\) is not a square,
+two nonzero squares cannot sum to zero. Every element of \(C\) is
+a nonzero square modulo \(7\), and \eqref{eq:m7-value} gives
+\[
+      7m\in P+P\quad\Longleftrightarrow\quad m\in C+C.           \label{eq:m7-scale}\tag{7.2}
+\]
+In particular \(49\mid N\) is impossible for \(N\in P+P\).
+Every split prime preserves \(C\) under multiplication.
+
+\subsection{The shell and its finite quotients}
+
+Consider
+\[
+ B=(-7,-1)_{\Q},\qquad
+ O=R\oplus Rj,\qquad j^2=-1,\quad ja=\bar a j .
+\]
+Its reduced norm is \(Q\oplus Q\).
+The algebra has discriminant \(7\), and this order is maximal
+\cite[Theorem 15.5.5 and Example 15.5.7]{Voight}.
+Its units are \(\{\pm1,\pm j\}\): the two nonnegative component
+norms sum to one, and the units of \(R\) are \(\pm1\).
+The projective unit group \(\Gamma\) consequently has order two.
+The projective mass formula gives total ideal-class mass
+\((7-1)/12=1/2\) \cite[Theorem 25.1.1]{Voight}.
+The principal class already contributes \(1/|\Gamma|=1/2\).
+There is therefore one right-ideal class.
+
+For \(7\nmid n\), every integral right ideal of norm \(n\) is
+principal and has four generators. The all-ideal degree formula
+\cite[Propositions 41.3.1 and 41.3.6]{Voight} gives
+\[
+ r_O(n):=\#\{\alpha\in O:\operatorname{nrd}(\alpha)=n\}
+                              =4\sigma(n).                    \label{eq:m7-shell}\tag{7.3}
+\]
+Likewise ideal factorization in \(R\) gives
+\[
+ r_Q(t)=2\sum_{d\mid t}\chi_{-7}(d)
+       \le2M(X)\quad(1\le t\le X),\qquad
+ M(X)=\max_{1\le t\le X}
+       \prod_{\substack{\ell\mid t\\\chi_{-7}(\ell)=1}}
+                       (v_\ell(t)+1).                         \label{eq:m7-divisor}\tag{7.4}
+\]
+
+For an odd inert prime \(q\), reduction gives
+\(G_q=\mathrm{PGL}_2(\mathbb F_q)\).
+At \(7\), reduction modulo the radical gives
+\[
+                 G_7=\mathbb F_{49}^{\,*}/\mathbb F_7^{\,*},
+\]
+a cyclic group of order eight. Use the quotient
+\(\Gamma\backslash\prod G_\ell\), for auxiliary levels \(7\),
+\(q\), or \(q,7\), with uniform probability measure.
+The image of \(\Gamma\) injects at every such level.
+At odd \(q\), \(j\) cannot be scalar: its trace is zero and its
+norm is one. At \(7\), \(j\notin\mathbb F_7\).
+This argument includes \(q=3\).
+
+For index \(n\) coprime to \(7\) and the added levels, the
+all-ideal Hecke operator has degree \(\sigma(n)\) and satisfies
+\[
+ (T_nh)(x_0)=\frac14
+          \sum_{\operatorname{nrd}\alpha=n}h(\rho(\alpha)).
+                                                                    \label{eq:m7-Hecke}\tag{7.5}
+\]
+Principalization initially gives inverse generators. Projectively
+\(\alpha^{-1}=\bar\alpha\), and conjugation permutes the shell,
+which proves the displayed orientation and normalization.
+The operator is self-adjoint and commutes with the right finite
+group action.
+
+The global norm characters at level \(7\) are \(1,\chi_7\), where
+\(\chi_7\) is the quadratic residue-field norm character.
+At joint level \(q,7\) they are precisely
+\[
+                        1,\ \chi_7,\ \chi_q,\ \chi_7\chi_q,     \label{eq:m7-chars}\tag{7.6}
+\]
+with \(\chi_q\) the determinant square character.
+To check completeness, the maximal local unit norm maps are onto
+away from the auxiliary levels. Reduction kernels and projective
+central scalars leave only the two square classes at each auxiliary
+prime. Globally, reduced norms are all positive rationals by
+the Hasse--Schilling norm theorem
+\cite[Main Theorem 14.7.4]{Voight}; rational square classes give
+exactly \eqref{eq:m7-chars}. The strong-approximation step in
+Lemma~\ref{lem:hecke-transfer} excludes other constituents having
+a finite-dimensional full smooth local factor at a split place.
+It is the full local factor, rather than a space of level-fixed
+vectors, to which that argument applies.
+
+Consequently Lemma~\ref{lem:hecke-transfer} gives, on the
+orthogonal complement of the characters \eqref{eq:m7-chars},
+\[
+                         \|T_n\|\le\tau(n)\sqrt n.             \label{eq:m7-Ramanujan}\tag{7.7}
+\]
+At every prime dividing \(n\), including \(2\), the quaternion
+algebra is split and the local order is maximal. The all-ideal
+prime-power eigenvalue is a sum of \(a+1\) monomials in two
+roots of absolute value \(\sqrt\ell\), so the constant in
+\eqref{eq:m7-Ramanujan} is one.
+
+One must not remove every character of a finite right action.
+For example \(\Gamma\backslash G_7\simeq C_4\) has two quartic
+characters. The norm-two shell has eight pure-component points
+reducing to \(\Gamma\) and four mixed points \(\pm1\pm j\)
+reducing to \(h=[1+j]\). Here \(h\ne1\) and \(h^2=1\), because
+\((1+j)^2=2j\). Thus
+\(T_2=2I+R_h\), with spectrum \(3,3,1,1\).
+The global norm characters have eigenvalue \(3\), whereas the
+quartic characters have eigenvalue \(1\) and remain in the
+complement in \eqref{eq:m7-Ramanujan}.
+
+\subsection{A simultaneous ramified and inert filter}
+
+For \(7\nmid n\), put
+\[
+ E(n)=\frac{\tau(n)\sqrt n}{\sigma(n)},\qquad
+                     \gamma(n)=\frac{3-\chi_{-7}(n)}4 .
+\]
+Let \(G(n)\) count shell points for which both field norms are
+\(7\)-units. These norms are necessarily positive. The two
+component axes reduce to the single base point of
+\(\Gamma\backslash G_7\). Its indicator \(\delta\) has mean
+\(1/4\), coefficient \(1/4\) on \(\chi_7\), and complementary
+squared norm \(1/8\). Apply \eqref{eq:m7-Hecke} to the correlation
+of \(\delta\) with itself, and use \eqref{eq:m7-Ramanujan}.
+The resulting lower bound is
+\[
+                 \frac{G(n)}{4\sigma(n)}
+                       \ge\gamma(n)-\tfrac12 E(n).             \label{eq:m7-good7}\tag{7.8}
+\]
+If \(\chi_{-7}(n)=-1\), an axis is impossible already modulo \(7\);
+then \(G(n)=4\sigma(n)\) exactly.
+
+For inert \(q\nmid n\), the invertible residues with one field
+component zero form the normalizer \(H_q\) of a nonsplit torus.
+It contains the unit image and has order \(2(q+1)\), hence fraction
+\[
+                            \mu_q=\frac{2}{q(q-1)}
+\]
+in \(G_q\). The determinant character has mean zero on \(H_q\),
+because the torus norm is onto \(\mathbb F_q^*\).
+
+Retain the ramified filter on the joint quotient. Let \(u\) require
+the \(q\)-coordinate in \(H_q\) and the \(7\)-coordinate in
+\(\Gamma_7=\{1,j\}\). Let \(v\) require the same \(q\)-condition and
+the complementary \(7\)-condition. Both are right-invariant under
+\(H_q\times\Gamma_7\), and the base orbit is the support of \(u\).
+Consequently
+\[
+                     (T_nv)(x_0)
+                       =\frac{\langle u,T_nv\rangle}{\mathbb E u}.
+\]
+This identity does not require \(v(x_0)=1\).
+Writing \(a=\mu_q/4\), the coefficients on the four characters
+in \eqref{eq:m7-chars} are respectively
+\[
+             (a,a,0,0)\quad\hbox{and}\quad(3a,-a,0,0).
+\]
+The complementary squared norms are \(a-2a^2\) and \(3a-10a^2\).
+If \(b_q(n)\) counts points bad at \(q\) inside the \(7\)-unit shell,
+Cauchy's inequality and \eqref{eq:m7-Ramanujan} therefore give
+\[
+\begin{aligned}
+ \frac{b_q(n)}{4\sigma(n)}
+ &\le \gamma(n)\mu_q+
+          \sqrt{(1-\mu_q/2)(3-5\mu_q/2)}\,E(n)\\
+ &\le \gamma(n)\mu_q+\tfrac74 E(n).                            \end{aligned}\label{eq:m7-smallq}\tag{7.9}
+\]
+For \(\chi_{-7}(n)=-1\), omit level \(7\). The ordinary \(H_q\)
+indicator has complementary squared norm \(\mu_q(1-\mu_q)\);
+the error in \eqref{eq:m7-smallq} improves to \(E(n)\).
+
+If \(q\mid n\), anisotropy forces both coordinate blocks to be
+divisible by \(q\) as soon as either is. The spoiled count is zero
+when \(v_q(n)=1\), and otherwise is exactly \(G(n/q^2)\).
+Thus
+\[
+ \frac{b_q(n)}{4\sigma(n)}
+       \le\frac{\sigma(n/q^2)}{\sigma(n)}
+           <q^{-2}\le\gamma(n)\mu_q.                           \label{eq:m7-targetprime}\tag{7.10}
+\]
+No level-\(q\) operator is applied to an index divisible by \(q\).
+
+For large primes use geometry instead. Row integration gives
+\[
+ S_Q(X):=\#\{(x,y):0<Q(x,y)\le X\}
+ \le \frac{2\pi}{\sqrt7}X+(2+4/\sqrt7)\sqrt X\le3X .
+\]
+For integers \(X\ge36\), the last inequality follows from
+\(\pi<22/7\), \(\sqrt7>66/25\), and
+\(50/21+58/99<3\). The finite certificate checks \(1\le X\le35\);
+flooring extends the result to real \(X\).
+A nonzero \(q\)-divisible block is \(q\) times a nonzero vector.
+Choose its orientation, count it by \(3n/q^2\), and use
+\eqref{eq:m7-divisor} for the other block. Hence
+\[
+                         b_q(n)\le12M(n)n/q^2.                \label{eq:m7-largeq}\tag{7.11}
+\]
+Only \(q\le\sqrt n\) can occur.
+
+Let \(\mathcal I\) be the inert primes and put
+\[
+ B=\sum_{q\in\mathcal I}\mu_q,\quad
+ \Pi(z)=\#\{q\in\mathcal I:q\le z\},\quad
+ T(z)=\sum_{\substack{q\in\mathcal I\\q>z}}q^{-2}.
+\]
+A union bound using \eqref{eq:m7-good7}--\eqref{eq:m7-largeq}
+leaves a shell proportion at least
+\[
+ \gamma(n)(1-B)
+       -E(n)\{\tfrac12+\tfrac74\Pi(z)\}-3M(n)T(z).              \label{eq:m7-sieve}\tag{7.12}
+\]
+In the negative-character case the sharper sufficient inequality is
+\[
+                  E(n)\Pi(z)+3M(n)T(z)<1-B.                  \label{eq:m7-negative}\tag{7.13}
+\]
+A surviving pair has positive norms in \(C\), so proves \(n\in C+C\).
+
+\subsection{Complete arithmetic envelopes}
+
+The inert primes belong to \(3,5,13\pmod {14}\). Counting those
+progressions, then bounding each decreasing tail by its first term
+and integral, gives
+\[
+ \Pi(z)\le3z/14+13/14,\qquad T(z)\le3/(14z)+3/z^2.              \label{eq:m7-progression}\tag{7.14}
+\]
+For the count, \(13/14\) is the largest discrepancy within one
+period; this is checked over the fourteen residue positions.
+
+Here and below, numerical certificate statements use exact integers
+or rational numbers. Set \(R_0=2^{19}\), \(D_0=2^{64}\).
+Let \(a_r\) be the least integer greater than \(R_0\) in residue
+\(r\pmod {14}\), for \(r=3,5,13\), and put
+\[
+ \overline B=
+ \frac1{D_0}\sum_{\substack{q\in\mathcal I\\q\le R_0}}
+            \left\lceil\frac{2D_0}{q(q-1)}\right\rceil
+ +\frac{2(R_0+1)}{R_0}
+       \sum_{r=3,5,13}\left(\frac1{a_r^2}+\frac1{14a_r}\right).
+\]
+Since \(\mu_q\le2(R_0+1)/(R_0q^2)\) above \(R_0\), this is an
+upper bound for \(B\). Exact evaluation gives
+\[
+                         B\le\overline B<47/100.               \label{eq:m7-B}\tag{7.15}
+\]
+
+The finite Euler calculations also give
+\[
+ M(X)\le8X^{1/6},\qquad
+ E(n)<\frac{91}{20}n^{-1/3}\quad(n\hbox{ inert-supported}),\qquad
+ E(n)\le15n^{-1/3}\quad(7\nmid n).                              \label{eq:m7-Euler}\tag{7.16}
+\]
+We give the completeness bounds for these computations.
+For \(M(X)^6/X\), each split prime contributes
+\((a+1)^6/\ell^a\). For \(\ell\ge64\) it is at most one,
+using \(a+1\le2^a\). Below \(64\), exponents through \(8\) suffice:
+the subsequent ratios are at most \((10/9)^6/2<1\).
+The exact product of the finite maxima is below \(8^6\).
+
+For \(E(n)^6n^2\), the prime-power factor is
+\[
+                  W_\ell(a)=
+               \frac{(a+1)^6\ell^{5a}}{\sigma(\ell^a)^6}.       \label{eq:m7-W}\tag{7.17}
+\]
+Its next/current ratio is strictly less than
+\(((a+2)/(a+1))^6/\ell\).
+At inert primes below \(64\), caps \(4\) at \(3\), \(3\) at \(5\),
+and \(1\) at \(13,17,19,31,41,47,59,61\) therefore suffice.
+All larger primes have factor at most one. Their exact product
+is less than \((91/20)^6\).
+For all primes other than \(7\), use caps \(8,4,3,2\) at
+\(2,3,5,11\), and \(1\) at the other primes below \(64\).
+Their product is less than \(15^6\). This proves every bound
+in \eqref{eq:m7-Euler} without an upper bound on \(n\).
+
+For smaller ranges we use exact envelopes. A maximizer defining
+\(M(U)\) uses nonincreasing exponents on an initial segment of the
+smallest split primes: interchanging out-of-order exponents lowers
+the integer cost and preserves the divisor product.
+A recursion through \(U=2^{54}\), recording every initial prefix
+and nonincreasing exponent profile of cost at most \(U\), has
+\(2556\) states. Its completeness follows because the next
+prime-prefix product exceeds \(U\), and no exponent exceeds
+\(\lfloor\log_2U\rfloor\).
+
+For \(E\), enumerate the \(5120\) tuples within the inert caps
+above, retaining integer cost and the product of
+\eqref{eq:m7-W}. Partition them by
+\[
+                 (v_3(n),v_5(n))\in\{0,1,\ge2\}^2.
+\]
+Deleting primes at least \(64\) and capping the other exponents
+increases the normalized factor and reduces the cost, preserving
+this category. Thus the cost-restricted maxima dominate all
+inert-supported \(n\le U\). Take their upward sixth roots with
+denominator \(10^6\), verified by sixth powers, and call the result
+\(c_{a,b}(U)\). On \(L\le n\le U\) in category \((a,b)\),
+\[
+                      E(n)\le
+                  \frac{c_{a,b}(U)}{\lfloor L^{1/3}\rfloor}.    \label{eq:m7-localE}\tag{7.18}
+\]
+The global frontier is defined in the same way without categories.
+
+\subsection{The finite interval certificate}
+
+A sharper large-prime count is used when \(\chi_{-7}(n)=1\).
+The ordered nonzero square residues summing to \(n\pmod7\)
+are uniquely \(n/2,n/2\). Define
+\[
+ S_r(X)=\#\{(x,y):0<Q(x,y)\le X,\ Q(x,y)\equiv r\pmod7\},
+ \quad F(X)=\max_{r=1,2,4}S_r(X).
+\]
+If one block is \(q\alpha\), then
+\(Q(\alpha)\equiv n/(2q^2)\pmod7\).
+The complete ordinary point table is computed through \(X_0=2^{18}\).
+For \(0\le y\le\lfloor\sqrt{4X_0/7}\rfloor\), set
+\(h=\lfloor\sqrt{4X_0-7y^2}\rfloor\) and enumerate
+\[
+          -\lfloor(h+y)/2\rfloor\le x\le\lfloor(h-y)/2\rfloor.
+\]
+Weight a row by two when \(y>0\) and by one at \(y=0\);
+simultaneous sign reversal supplies the omitted rows.
+This lists every signed vector. The individual coefficients are
+also checked against \(2\sum_{d\mid t}\chi_{-7}(d)\).
+The first seven positive \(F\)-values are \(2,4,4,6,6,6,6\).
+
+Fix an interval \([L,U]\) and include the first \(j\) inert primes
+as small primes, always including \(3,5\).
+Every omitted \(q\le\sqrt U\) is required to satisfy
+\(\lfloor U/q^2\rfloor\le X_0\).
+For category \((a,b)\in\{0,1,2\}^2\), where \(2\) denotes
+valuation at least two, put
+\[
+ D_{a,b}=\frac{3^a}{\sigma(3^a)}\frac{5^b}{\sigma(5^b)},\qquad
+ d=\#\{p\in\{3,5\}:p\mid n\}.
+\]
+Since \(p^a/\sigma(p^a)\) decreases with \(a\),
+\(n/\sigma(n)\le D_{a,b}\).
+For \(\chi_{-7}(n)=1\), the large-prime error is at most
+\[
+ \frac{M(U)D_{a,b}}L
+       \sum_{\substack{q\in\mathcal I\ {\rm omitted}\\q\le\sqrt U}}
+                              F(\lfloor U/q^2\rfloor).         \label{eq:m7-Ftail}\tag{7.19}
+\]
+The factor is \(M\), because the two orientations and the bound
+\(2M(U)\) for the other block are divided by \(4\sigma(n)\).
+
+A known divisor \(p=3\) or \(5\) needs no spectral error.
+In \eqref{eq:m7-targetprime} its cost is
+\(\delta_p=0\) at valuation one and \(p^{-2}\) above it.
+Its baseline refund is \(\gamma\mu_p-\delta_p\).
+For \(e\) given by \eqref{eq:m7-localE}, a sufficient
+positive-character test is consequently
+\[
+ e\{\tfrac12+\tfrac74(j-d)\}
+       +\hbox{the term in \eqref{eq:m7-Ftail}}
+ <
+ \tfrac12(1-\overline B)+
+           \sum_{\substack{p=3,5\\p\mid n}}(\mu_p/2-\delta_p).
+                                                                    \label{eq:m7-finetest}\tag{7.20}
+\]
+For the negative character use small error \(e(j-d)\),
+large error
+\(3M(U)D_{a,b}\sum_{q\ {\rm omitted},q\le\sqrt U}q^{-2}\),
+and baseline \(1-\overline B+\sum(\mu_p-\delta_p)\).
+Reciprocal squares are rounded upward with denominator \(D_0\).
+
+\begin{lemma}[Exact interval certificate]\label{lem:m7-intervals}
+Every inert-supported \(n\ge2^{24}\), and every split prime
+\(n\ge2^{24}\), belongs to \(C+C\).
+\end{lemma}
+
+\begin{proof}
+Here is the complete finite part of the certificate.
+Partition \([2^{24},2^{37})\) at all points
+\(2^k+j2^{k-4}\), \(24\le k\le36\), \(0\le j\le16\),
+and at every jump in the \(M\)- or category \(E\)-frontiers.
+The resulting \(257\) adjacent integer intervals are checked to
+have no gap. On each interval test both character signs and
+all nine valuation categories by \eqref{eq:m7-finetest} and its
+negative-character version. Also test the positive-character
+boundary \(\tau(n)\le4\), with \(e=4/\lfloor\sqrt L\rfloor\)
+and no category discounts. There are \(257\cdot19=4883\) cases.
+For each case choose the allowed prime cut minimizing its rational
+error. This can be found by comparing the cost of one more
+spectral term with the decrease of the large-prime tail; those
+decreases are nonincreasing. Direct enumeration of every allowable
+cut gives the same finite test.
+
+The certificate verifies a margin greater than \(1/64\) in every
+case, every point-table query lies at most \(X_0\), and every
+required prime lies below \(R_0\). For example the worst case is
+\[
+ L=17825792,\quad U=18874367,\quad \chi_{-7}=1,\quad a=b=0,
+\]
+where \(M(U)=112\), \(e=1907201/261000000\), and the last included
+prime is \(73\). The error is
+\(563281558829/2271744000000\), below its baseline by more than
+\(1/64\).
+
+For \(37\le k\le53\), put \(L=2^k\), \(U=2^{k+1}-1\),
+\(d_k=M(U)\), and let \(e_k\) come from the global \(E\)-frontier.
+The seventeen exact tests are
+\[
+ e_k\{\tfrac12+\tfrac74\Pi(z_k)\}+3d_kT(z_k)
+                      <(1-\overline B)/2-1/64.                \label{eq:m7-highbins}\tag{7.21}
+\]
+The prime sum through \(R_0\) and the three progression integrals
+define the rational tail. The cut again minimizes the displayed
+error. All seventeen cases pass. The certificate additionally
+checks \(4\lfloor L^{1/3}\rfloor\le\lfloor\sqrt L\rfloor\).
+Since its global normalized \(E\)-constant is at least one,
+\(4/\sqrt n\le e_k\); these tests cover split primes as well.
+
+For the infinite tail \(n\ge2^{54}\), take
+\(z=(7/4)n^{1/4}\) in \eqref{eq:m7-sieve}.
+For inert-supported \(n\), \eqref{eq:m7-Euler} bounds the error by
+\[
+ \frac{185799}{31360}n^{-1/12}
+      +\left(\frac{17}{8}\frac{91}{20}+\frac{1152}{49}\right)n^{-1/3}.
+\]
+Using \((45/2)^{12}<2^{54}\), \(n^{1/3}\ge2^{18}\), this is
+less than \(53/200\), with margin
+\(9574319/6165626880>1/1024\).
+The baseline is greater than \(53/200\) by \eqref{eq:m7-B}.
+For \(\tau(n)\le4\), \(E(n)\le4n^{-1/2}\le(91/20)n^{-1/3}\),
+so the same infinite tail applies. The three consecutive ranges
+cover the asserted families. All finite tables and integer
+roundings are reproduced by the submitted certificate program.
+\end{proof}
+
+\subsection{Finite coverage and exceptional descent}
+
+For \(B_0=2^{24}\), the submitted computation constructs every
+\(P\)-membership flag in two ways: complete primitive coordinate
+enumeration and the factorization criterion \eqref{eq:m7-value}.
+The full bytearrays agree. Deleting multiples of \(7\) gives the
+complete \(C\)-flags. There are respectively \(2490663\) and
+\(2161776\) flagged values.
+
+For completeness, the coordinate enumeration may restrict to
+\(y\ge0\) and \(x\ge-y/2\), since simultaneous negation and
+conjugation preserve norm and gcd. The inequality
+\((2x+y)^2+7y^2\le4B_0\) then gives finite exact bounds.
+For each value flag array \(A\), form its binary integer
+\(B_A=\sum_{j\le B_0}A(j)2^j\) and the truncated union
+\[
+       U_A=\bigvee_{\substack{1\le a\le5000\\A(a)=1}}(B_A\ll a).
+\]
+Here \(\vee\) is bitwise union and \(\ll\) is an exact integer
+shift. Every set bit has actual positive summands.
+The \(1050\) primitive anchors and \(903\) core anchors cover every
+locally eligible target through \(B_0\), except respectively
+\(\{7,77,203\}\) and \(\{11,29\}\).
+Every omitted bit is tested by a complete positive-pair search
+through half the target; none has a representation. The union
+also has no locally forbidden bit. No summand above \(B_0\)
+can contribute to a target in this range.
+Membership arrays are compared before hashing; the stored hashes
+are identifiers of these exact finite objects, not substitutes
+for reconstructing and comparing them.
+
+Suppose there were a least exception \(n\) to the asserted
+\(C+C\) identity outside \(11,29\). Finite coverage makes
+\(n>B_0\). If a split prime \(q\mid n\), multiplicative closure
+and leastness imply \(n/q\in\{1,11,29\}\).
+The first case makes \(n\) a split prime and is covered by
+Lemma~\ref{lem:m7-intervals}. In the other cases,
+\(n=11q\) or \(29q\). Division by \(11\) or \(29\), which are
+themselves split primes, shows that \(q\) must be \(11\) or \(29\);
+otherwise a smaller represented target lifts. The only products
+left are already represented:
+\[
+                 121=8+113,\qquad
+                 319=2+317,\qquad
+                 841=32+809.
+\]
+All summands lie in \(C\). With no split prime factor, \(n\) is
+inert-supported, again contradicting Lemma~\ref{lem:m7-intervals}.
+This proves the core identity. The exclusions modulo \(7\)
+were proved earlier, and
+\[
+                  C\cap[1,29]=
+                  \{1,2,4,8,11,16,22,23,29\}
+\]
+checks the two exceptional nonrepresentations directly.
+
+For \(7\nmid N\), the core identity supplies primitive values
+except at \(11,29\); the patches \(11=4+7\) and \(29=1+28\)
+use values in \(P\). If \(7\mid N\), \eqref{eq:m7-scale}
+shows that failure occurs exactly at quotient \(1,11,29\),
+hence at \(7,77,203\). Multiples of \(49\) are impossible.
+This proves the two exact identities in Theorem~\ref{thm:minus7-exact}.
+
+\subsection{The explicit lower bound}
+
+For arbitrary \(7\nmid n\), use the last bound in
+\eqref{eq:m7-Euler}, put \(z=n^{1/4}\), and use the weaker
+\(\Pi(z)\le3z/14+3/2\). The error in \eqref{eq:m7-sieve} is at most
+\[
+                         \frac{603}{56}n^{-1/12}
+                                  +\frac{951}{8}n^{-1/3}.
+\]
+For \(n\ge2^{66}\), \(n^{1/12}>45\), \(n^{1/3}\ge2^{22}\);
+the error is at most \(281051653/1174405120\).
+Its distance below \(53/200\) is
+\(150828519/5872025600>1/40\).
+Since \(4\sigma(n)\ge4n\), at least \(n/10\) coordinate points
+survive. Each ordered value pair has at most
+\((2M(n))^2\le256n^{1/3}\) coordinate witnesses by
+\eqref{eq:m7-divisor}. Thus it yields at least
+\(n^{2/3}/2560\) ordered \(C\)-pairs.
+
+For \(N\ge2^{69}\), \(49\nmid N\), write \(N=7^en\) with
+\(e=0\) or \(1\). Then \(n>2^{66}\).
+Multiply both core values by \(7^e\), using \eqref{eq:m7-value}.
+This injects the value pairs into \(P^2\).
+As \(7^{2/3}<4\), the resulting lower bound is stronger than
+\(N^{2/3}/20000\), as required.

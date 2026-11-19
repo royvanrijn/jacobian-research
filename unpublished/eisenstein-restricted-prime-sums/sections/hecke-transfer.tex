@@ -1,0 +1,107 @@
+\section{The quaternionic Hecke estimate}\label{sec:exact-hecke}
+
+The large-target arguments below use the same classical spectral input.
+We state it once, allowing the fixed dyadic level needed for discriminant
+$-8$.  The arithmetic sections identify their finite quotients, their
+character components and their shell normalizations separately.
+
+Let $B$ be a definite quaternion algebra over $\Q$, and write
+$H=PB^\times$.  Let $U\subset H(\mathbb A_f)$ be an open compact
+subgroup obtained from order units and congruence kernels.  Equip the
+finite space
+\[
+ X=H(\Q)\backslash H(\mathbb A_f)/U
+\]
+with its invariant probability measure.  Before imposing a fine level,
+the mass of a locally principal ideal class is proportional to the
+reciprocal of the size of its projective unit group.  If the fine
+stabilizers are trivial, this is uniform counting measure on fine
+points, whose pushforward is the stated class measure.  It is essential
+to retain every ideal class.
+
+For an integer $m$ prime to the discriminant of $B$ and to the
+nonmaximal or auxiliary level primes, let $T_m$ be the all-integral-ideal
+Hecke operator, with maximal local level at every prime dividing $m$.
+This includes imprimitive ideals.  Its constant eigenvalue is
+$\sigma(m)$, and its local recurrence is
+\[
+ T_{\ell^{a+2}}=T_\ell T_{\ell^{a+1}}-\ell T_{\ell^a}.
+\]
+These conventions are those of
+\cite[Propositions~41.3.1 and~41.3.6]{Voight}.
+
+\begin{lemma}\label{lem:hecke-transfer}
+The operators $T_m$ are commuting and self-adjoint for the invariant
+measure.  On the orthogonal complement of all global reduced-norm
+characters occurring in $L^2(X)$,
+\[
+                         \|T_m\|\le\tau(m)\sqrt m.
+\]
+More precisely, every simultaneous eigenvector in that complement has
+unramified roots $\sqrt\ell\,u_\ell,\sqrt\ell\,v_\ell$ with
+$|u_\ell|=|v_\ell|=1$ and $u_\ell v_\ell=1$.  Fixed operators at level
+primes are not covered by this unramified assertion.
+\end{lemma}
+
+\begin{proof}
+First, reversing an ideal flag gives the adjoint.  If $J\subset I$
+has relative reduced norm $m$, elementary divisors at its split index
+primes give $mI\subset J$.  The reversal
+\[
+                  (J\subset I)\longmapsto(mI\subset J)
+\]
+is an involution up to central scaling.  At auxiliary primes $m$ is a
+unit and the local ideals are equal, so their markings transfer through
+that equality; identifying $mI$ with $I$ changes the marking only by a
+projectively trivial scalar.  Thus the reverse marked correspondence
+has the same kernel.  On fine quotients it is symmetric, and on coarse
+quotients its pushforward is symmetric for inverse-unit mass.  The
+usual relatively prime ideal composition gives commutativity and the
+displayed recurrence.
+
+We specify the automorphic input and its hypotheses.  Decompose the
+automorphic functions on this definite quotient, with trivial infinite
+type, into irreducible constituents.  A finite-dimensional irreducible
+smooth representation of $\mathrm{GL}_2(\Q_\ell)$ is a determinant
+character.  Indeed its kernel is open, after intersecting the open
+stabilizers of a basis; conjugation of elementary unipotents by diagonal
+matrices and normality show that this kernel contains
+$\mathrm{SL}_2(\Q_\ell)$.
+
+If a constituent is a character at one split finite place $\ell$,
+strong approximation for $B^1$, away from $\{\infty,\ell\}$, shows
+that it is a global norm character.  To make the implication explicit,
+for an automorphic function $f$, a finite adele $x$ and
+$h\in B^1(\mathbb A_f)$, approximate $xhx^{-1}$ outside $\ell$ by
+$\gamma\in B^1(\Q)$, sufficiently closely for the right stabilizers
+of $f$.  Outside $\ell$, the points $xh$ and $\gamma x$ then have
+the same value; at $\ell$ the discrepancy lies in the local norm-one
+group, which acts trivially.  Left rational invariance gives
+$f(xh)=f(x)$.  Thus the constituent factors through reduced norm.
+The strong approximation hypothesis is satisfied because $B^1$ is
+split and noncompact at $\ell$
+\cite[Main Theorem~28.5.3]{Voight}.
+
+After removing the global norm characters, every split local factor is
+infinite dimensional.  Global Jacquet--Langlands therefore transfers
+each remaining constituent to a cuspidal representation of
+$\mathrm{GL}_2$ \cite[Theorem~14.4]{JL}.  Its trivial infinite type
+transfers to weight two \cite[Section~5, Proposition~5.20]{JL}.
+At each $\ell\mid m$ the quaternion algebra is split and the level
+is maximal, so transfer preserves the unramified eigenvalues.  Fixed
+levels elsewhere, including a nonmaximal dyadic level, do not change
+this assertion.
+
+The weight-two roots have absolute value $\sqrt\ell$: combine the
+Frobenius--Hecke relation and purity in
+\cite[Theorems~4.9 and~5.1]{DeligneModular} with
+\cite[Theorem~1.6]{DeligneWeil}.  The central character is trivial,
+so the normalized roots have product one.  The all-ideal eigenvalue
+at $\ell^a$ is
+\[
+ \ell^{a/2}\sum_{j=0}^a u_\ell^jv_\ell^{a-j},
+\]
+whose absolute value is at most $(a+1)\ell^{a/2}$.
+Multiplicativity and simultaneous self-adjointness give the claimed
+operator norm.
+\end{proof}

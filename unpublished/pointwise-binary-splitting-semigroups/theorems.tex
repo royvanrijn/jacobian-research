@@ -117,6 +117,83 @@ This is exactly \(A_{12}\). The real density integrates to one;
 there is no extra beta-integral factor.
 \end{proof}
 
+The uniformity in the target also permits a coprimality restriction.
+Only the primes allowed in the summands can divide their gcd.
+Removing them changes the leading term by the following finite product.
+\begin{corollary}\label{cor:coprime-c12}
+Put
+\[
+ R_{\mathrm{cop}}(N)=\#\{(a,b)\in C_{12}^2:a+b=N,\ (a,b)=1\},
+ \qquad
+ P_{12}(N)=\prod_{\substack{p\mid N\\p\equiv1\ (12)}}(1-p^{-1}).
+\]
+Uniformly over sufficiently large \(N\equiv2\pmod{12}\),
+\[
+ R_{\mathrm{cop}}(N)
+ =A_{12}J_{12}(N)P_{12}(N)\frac{N}{(\log N)^{3/2}}
+       \left(1+O((\log N)^{-1/65536})\right).
+\]
+Every other residue class has zero count. In particular, every
+sufficiently large admissible target has coprime summands.
+\end{corollary}
+\begin{proof}
+M\"obius inversion gives the exact identity
+\begin{equation}\label{eq:coprime-inversion}
+ R_{\mathrm{cop}}(N)
+ =\sum_{\substack{d\mid N\\d\in C_{12}}}\mu(d)R_{12}(N/d).
+\end{equation}
+Indeed, division by any common divisor preserves both prime supports,
+and every common divisor lies in \(C_{12}\). Moreover \(d\equiv1\pmod{12}\),
+so \(N/d\equiv2\pmod{12}\), and
+\(J_{12}(N/d)=J_{12}(N)\).
+
+Write \(L=\log N\), \(\ell=\log\log(3N)\),
+\(P=P_{12}(N)\), and \(\delta=1/32768\).
+We use the elementary divisor estimates
+\begin{align}
+ S_0&=\sum_{\substack{d\mid N\\d\in C_{12}}}\frac{|\mu(d)|}{d}
+       =\prod_{\substack{p\mid N\\p\equiv1\ (12)}}(1+p^{-1})
+       \ll\ell,\qquad P^{-1}\ll\ell,\label{eq:coprime-products}\\
+ S_1&=\sum_{\substack{d\mid N\\d\in C_{12}}}
+                          \frac{|\mu(d)|\log d}{d}
+       =S_0\sum_{\substack{p\mid N\\p\equiv1\ (12)}}
+                                     \frac{\log p}{p+1}
+       \ll\ell^3.\label{eq:coprime-logmoment}
+\end{align}
+For \eqref{eq:coprime-products}, split the prime products at \(L\).
+Mertens' product bound controls primes at most \(L\) by \(O(\log L)\);
+the remaining factors have bounded product, since
+\(\sum_{p\mid N,\ p>L}p^{-1}\le1/\log L\).
+For \eqref{eq:coprime-logmoment}, the primes at most \(L\) contribute
+at most \(\sum_{n\le L}(\log n)/n\ll(\log L)^2\), and the others
+contribute at most \(L^{-1}\sum_{p\mid N}\log p\le1\).
+
+Split \eqref{eq:coprime-inversion} at \(d=\sqrt N\).
+The bound \(R_{12}(M)\le M\) shows that its large-divisor part is
+\(O(\sqrt N\,\tau(N))\), where \(\tau\) is the divisor function.
+For \(d\le\sqrt N\), Theorem~\ref{thm:c12} applies uniformly, and
+\[
+ (L-\log d)^{-3/2}
+       =L^{-3/2}+O(L^{-5/2}\log d).
+\]
+Consequently, using \(\sum_{d\mid N,\ d\in C_{12}}\mu(d)/d=P\)
+and extending the main sum back to all divisors,
+\begin{align*}
+ R_{\mathrm{cop}}(N)
+ ={}&A_{12}J_{12}(N)\frac{N}{L^{3/2}}
+       \left(P+O(L^{-\delta}S_0+L^{-1}S_1
+                            +N^{-1/2}\tau(N))\right)\\
+ &\quad+O(\sqrt N\,\tau(N)).
+\end{align*}
+After division by the main term, the error is
+\[
+ O\!\left(L^{-\delta}\ell^2+L^{-1}\ell^4
+                  +N^{-1/2}\tau(N)L^{3/2}\ell\right).
+\]
+Here \(J_{12}(N)\ge1\) and \(\tau(N)=N^{o(1)}\).
+The displayed error is \(O(L^{-\delta/2})\), proving the claim.
+\end{proof}
+
 We next clarify the congruence criterion without analytic inputs.
 Write \(C_H(U)=\{n\in C_H:n\bmod L_0\in U\}\).
 \begin{lemma}\label{lem:finite-images}

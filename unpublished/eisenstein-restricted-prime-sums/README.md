@@ -1,79 +1,71 @@
-# From Euler's restricted-prime sums to Eisenstein norms
+# Exact Sumsets of Primitive Quadratic Norms
 
-**Unpublished · draft.**
-
-This directory contains the manuscript, its current PDF, paper metadata and
-review record, and the generated standalone source archive. The branch's
-[research notes, checkers, receipts and supplied inputs](../../research/arithmetic/eisenstein-restricted-prime-sums/README.md)
-live under `research/`.
-
-The paper begins with the Gaussian restricted-prime theorem, explores its
-Eisenstein variation and the mixed case forced by the prime 3, then derives
-primitive-norm sumsets and sharp additive-basis bounds. It proves the exact
-binary identities for `A+A` and `A+(3·A)`, with a written large-target proof
-and complete finite certificates. The current PDF retains the balanced finite
-experiment; the separate [angular and finite-polynomial proofs](../../research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md)
-now establish eventual balance without supplying an explicit onset.
+This is the current unpublished companion manuscript. It evolves the earlier
+Eisenstein manuscript in this directory and keeps its complete binary proof.
+The paper determines the exact numerical primitive norm-value self-sumsets at
+discriminants -3, -7, -8 and -11; the additional -7 exceptions are 7,77,203.
+It also proves the stronger split-prime core identities used in the descents.
 
 [PDF](paper.pdf) · [LaTeX](main.tex) · [Metadata](metadata.json) ·
-[Source archive](source.zip) · [Verification and review](verification.json)
+[Verification](verification.json) · [Source archive](source.zip)
 
-## Build the manuscript
+## Build
 
-From this directory, run:
+From this directory, or the root of the extracted source archive:
 
 ```sh
 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The verifier appendix reads its canonical source from the research directory.
-In the standalone source archive, the same unchanged verifier is included
-locally. Both layouts build the same paper. Numerical replay instructions,
-software requirements, output conventions and the archived Java-replay limits
-are in the research README linked above.
+All included TeX and verification sources are present locally. The standalone
+source archive needs no repository checkout. Its certificate files are
+snapshots of the canonical arithmetic checkers; canonical development stays
+under research/arithmetic in the repository. `build_bundle.py` creates the
+archive and checks included paths.
 
-## Build the standalone source archive
+## Replay the exact certificates
 
-Run the following from this directory. It includes the manuscript sources,
-paper records, verification programs and their finite evidence. Exploratory
-research notes and the original supplied input archive remain in `research/`.
-A generated archive is a paper distribution snapshot; the canonical research
-files have one current home.
+Use Python3 with assertions enabled, without -O, -OO or PYTHONOPTIMIZE. The
+main programs use only the standard library. From the source root:
 
 ```sh
-python3 - <<'PY'
-from pathlib import Path
-from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
-paper = Path.cwd()
-research = (paper / '../../research/arithmetic/eisenstein-restricted-prime-sums').resolve()
-code_home = research if research.is_dir() else paper
-members = {p.name: p for p in (paper / 'main.tex', paper / 'references.tex',
-           paper / 'README.md', paper / 'metadata.json', paper / 'verification.json')}
-for p in (paper / 'sections').glob('*.tex'):
-    members[p.relative_to(paper).as_posix()] = p
-for p in (*code_home.glob('*.py'), *code_home.glob('*.java')):
-    members[p.name] = p
-for p in (code_home / 'receipts').rglob('*.json'):
-    members[p.relative_to(code_home).as_posix()] = p
-with ZipFile(paper / 'source.zip', 'w') as archive:
-    for name, path in sorted(members.items()):
-        info = ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
-        info.compress_type = ZIP_DEFLATED
-        info.external_attr = 0o100644 << 16
-        archive.writestr(info, path.read_bytes())
-PY
+python3 certificates/verify_binary_certificates.py > certificates/binary_certificates_receipt.json
+python3 certificates/verify_primitive_norm_minus7.py --output certificates/primitive_norm_minus7_checks.json
+python3 certificates/verify_primitive_norm_minus8.py --output certificates/primitive_norm_minus8_checks.json
+python3 certificates/verify_primitive_norm_minus11.py --output certificates/primitive_norm_minus11_checks.json
+python3 certificates/verify_primitive_norm_coordinate_membership.py --output certificates/primitive_norm_coordinate_membership_checks.json
+python3 certificates/verify_primitive_norm_quaternary.py --output certificates/primitive_norm_quaternary_checks.json
+python3 certificates/compute_elementary_constants.py
+python3 certificates/verify_mixed_constants.py
+python3 certificates/check_ramified_counts.py --output certificates/ramified_counts_receipt.json
 ```
 
-## Review and remaining work
+The independent coordinate authenticator has a standalone path adapter; its
+membership and gcd algorithms are unchanged. It loads the -8/-11 support
+sieves solely for whole-array comparison. It authenticates every finite
+membership flag, rather than merely comparing target masks or hashes.
+The -7 checker independently authenticates its full membership arrays too.
+The larger arrays require a few hundred megabytes of memory. Retained NumPy
+and Java Eisenstein implementations provide additional replay options; their
+older execution scopes remain in the preserved review record.
 
-The review record distinguishes written arguments, bounded diagnostics, full
-finite replays and internal PDF-only reading. No external specialist review,
-external replay, formal verification, public deposit or established novelty is
-claimed. The research relocation changes file locations and packaging only.
+All recipes above were replayed in this preparation. The exact rational
+certificates, scans and negative controls passed. They certify their declared
+finite domains; the written spectral estimates, interval coverage and descent
+are what extend the result to all targets.
 
-Next: specialist review of the Hecke/Jacquet--Langlands normalization and the
-ramified calculation, a complete priority audit, external replay, and a
-persistent source-archive identifier before submission. The newer qualitative
-balanced result awaits integration into a later manuscript revision. Proving
-that `8,44` are the complete ordinary balanced exception list still requires
-an effective onset and finite verification covering the remaining range.
+## Review boundaries
+
+The current 36-page PDF compiles without unresolved references, citations or
+overfull boxes. All pages were rendered and visually inspected. The existing
+verification record preserves earlier Eisenstein reviews and records current
+source and finite replay checks separately. This is internal review; there is
+no claimed external specialist review, formal verification or established
+historical priority. The PDF-only blind-reader status is recorded explicitly. A fresh extraction of
+source.zip rebuilds a byte-identical PDF.
+
+Before submission, obtain external specialist review of the Hecke and local
+quotient arguments, independent human certificate replay and a targeted
+priority audit. No numerical leading asymptotic is claimed here. The separate
+flagship manuscript treats pointwise correlations; these exact identities use
+their own classical-input proofs and complete finite certificates.

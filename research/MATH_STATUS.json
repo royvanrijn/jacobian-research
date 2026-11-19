@@ -5810,7 +5810,7 @@
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
       "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums have a separately scoped manuscript. Planned primitive-norm papers separate exact sumsets from sharp class-group value counts.",
-      "status": "The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Primebasis13vs14pinpointstheunprovedrestrictedbinarygap. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. Paper2 has an all-order centerpiece; Paper1 retains the exact -7,-8,-11 classifications and certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, S12U is the first every-target goal; the new pointwise upper bounds and fixed-cutoff tail leave the natural lower count and fixed-prime marginals open. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while C12 pointwise inputs, every-target goals, effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. The exact all-target C12 assertions, norm pointwise inputs, full-count power-saving variance and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, all-target C12, unweighted residual/full power-saving variance and priority remain open. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full C12+C12 goal and its pointwise lower/marginal inputs remain open. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative, and full C12/H1/H2 remain open. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate.",
+      "status": "The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Primebasis13vs14pinpointstheunprovedrestrictedbinarygap. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. Paper2 has an all-order centerpiece; Paper1 retains the exact -7,-8,-11 classifications and certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, S12U is the first every-target goal; the new pointwise upper bounds and fixed-cutoff tail leave the natural lower count and fixed-prime marginals open. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while C12 pointwise inputs, every-target goals, effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. The exact all-target C12 assertions, norm pointwise inputs, full-count power-saving variance and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, all-target C12, unweighted residual/full power-saving variance and priority remain open. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full C12+C12 goal and its pointwise lower/marginal inputs remain open. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative, and full C12/H1/H2 remain open. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder.",
       "readme": "arithmetic/README.md",
       "results": [
         {
@@ -8993,7 +8993,7 @@
           "id": "ARITH-SPLITTING-QUANTITATIVE-LOCAL-GLOBAL",
           "title": "Goldbach theory for abelian prime-splitting semigroups: binary counts, higher laws and exact basis orders",
           "state": "proved",
-          "scope": "For fixed even L and subgroup prescriptions, binary core counts have explicit local main term and target-uniform logarithmic saving 1/(8192phi(L)); C12 has the full A12*J12*N/log^(3/2)N asymptotic with saving1/32768. Joint all-moduli admissibility is exactly the finite root criterion; finite bad profiles and additive-interval discrepancy are included. Every fixed k>=2 mixed sumset has eventual classes U1+...+Uk modL. For k>=3, a separate classical moving-target finite-complexity application gives the full ordered leading count with simplex factor1/(k-1)! and uniform o(1); it requires no binary G/ZF input. Exact relative and zero-augmented ordinary basis orders are finite cyclic sumset invariants. In particular {0}unionC_q has exact asymptotic basis orderlcm(2,q)+1 for q>=3, including C12order13. Scope remains fixed groups/moduli/k; binary arbitrary Frobenius unions, unrestricted bad valuations, power-short windows, numerical cutoffs and complete small exception lists are not asserted.",
+          "scope": "For fixed even L and subgroup prescriptions, binary core counts have explicit local main term and target-uniform logarithmic saving 1/(8192phi(L)); C12 has the full A12*J12*N/log^(3/2)N asymptotic with saving1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Joint all-moduli admissibility is exactly the finite root criterion; finite bad profiles and additive-interval discrepancy are included. Every fixed k>=2 mixed sumset has eventual classes U1+...+Uk modL. For k>=3, a separate classical moving-target finite-complexity application gives the full ordered leading count with simplex factor1/(k-1)! and uniform o(1); it requires no binary G/ZF input. Exact relative and zero-augmented ordinary basis orders are finite cyclic sumset invariants. In particular {0}unionC_q has exact asymptotic basis orderlcm(2,q)+1 for q>=3, including C12order13. Scope remains fixed groups/moduli/k; binary arbitrary Frobenius unions, unrestricted bad valuations, power-short windows, numerical cutoffs and complete small exception lists are not asserted.",
           "canonical_source": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
           "checker": null,
           "artifact_hash": null,
@@ -9013,7 +9013,7 @@
           "review_status": "internal_only",
           "verification_note": "Internal written proof and exact primary-source application review. Higher counts use classical Theorem2.1/LM inputs and do not require G/ZF; structural deductions inherit the stated binary theorem. No external human review, formal verification, numerical onset or priority certification.",
           "dependency_coverage": "partial",
-          "graph_scope_note": "For fixed even L and subgroup prescriptions, binary core counts have explicit local main term and target-uniform logarithmic saving 1/(8192phi(L)); C12 has the full A12*J12*N/log^(3/2)N asymptotic with saving1/32768. Joint all-moduli admissibility is exactly the finite root criterion; finite bad profiles and additive-interval discrepancy are included. Every fixed k>=2 mixed sumset has eventual classes U1+...+Uk modL. For k>=3, a separate classical moving-target finite-complexity application gives the full ordered leading count with simplex factor1/(k-1)! and uniform o(1); it requires no binary G/ZF input. Exact relative and zero-augmented ordinary basis orders are finite cyclic sumset invariants. In particular {0}unionC_q has exact asymptotic basis orderlcm(2,q)+1 for q>=3, including C12order13. Scope remains fixed groups/moduli/k; binary arbitrary Frobenius unions, unrestricted bad valuations, power-short windows, numerical cutoffs and complete small exception lists are not asserted."
+          "graph_scope_note": "For fixed even L and subgroup prescriptions, binary core counts have explicit local main term and target-uniform logarithmic saving 1/(8192phi(L)); C12 has the full A12*J12*N/log^(3/2)N asymptotic with saving1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Joint all-moduli admissibility is exactly the finite root criterion; finite bad profiles and additive-interval discrepancy are included. Every fixed k>=2 mixed sumset has eventual classes U1+...+Uk modL. For k>=3, a separate classical moving-target finite-complexity application gives the full ordered leading count with simplex factor1/(k-1)! and uniform o(1); it requires no binary G/ZF input. Exact relative and zero-augmented ordinary basis orders are finite cyclic sumset invariants. In particular {0}unionC_q has exact asymptotic basis orderlcm(2,q)+1 for q>=3, including C12order13. Scope remains fixed groups/moduli/k; binary arbitrary Frobenius unions, unrestricted bad valuations, power-short windows, numerical cutoffs and complete small exception lists are not asserted."
         },
         {
           "id": "ARITH-COUPLED-SPLITTING-LOCAL-GLOBAL",
@@ -9121,6 +9121,30 @@
           "verification_note": "Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim.",
           "dependency_coverage": "partial",
           "graph_scope_note": "For each fixed nonzero integer h, the unweighted sum of b(n)b(n+h) up to x is asymptotic to C(h)x/log x, C(h)=W2(h)/2 times product over p=3mod4 dividing h of (1-p^(-v_p(h)-1))/(1-p^-1). Includes smooth test functions with an additive o(x/log x) error. Uses the same explicitly imported ZF and G theorems as the pointwise binary theory. No growing-shift uniformity or higher correlation is asserted."
+        },
+        {
+          "id": "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
+          "title": "Sixth zeta moment reduction to an unshifted signed averaged divisor remainder",
+          "state": "proved",
+          "scope": "Ng v3 AFE and explicit-main calculation imply the sixth-zeta-moment leading term from one signed, exact-kernel, full-main averaged d3 remainder SM.15. New unknown arithmetic input uses d3 at zero complex shifts only, with cancellation over additive shifts and dyadic scales. This is a proved conditional implication/classical application; the residual and moment remain unproved. Exact total/diagonal/offdiagonal coefficients are42,19683/256,-8931/256 times a3/9!.",
+          "canonical_source": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+          "checker": "arithmetic/verify_sixth_zeta_moment_main.py",
+          "artifact_hash": "sha256:cd66bfe94513fa60a5c61af40f44c248ebd7b57c87cb53bebc931bf6a5d9b7ef",
+          "evidence": [
+            "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+            "arithmetic/verify_sixth_zeta_moment_main.py",
+            "arithmetic/sources/ng-sixth-moment-1610.04977v3.pdf",
+            "arithmetic/sources/de-faveri-pandey-sixth-moment-2610.01035v1.pdf",
+            "arithmetic/sources/weighted-dilation-graphs-sep24-2026.pdf"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal written reduction and separate source/application review only. The averaged remainder and the sixth-moment asymptotic remain OPEN. Exact polynomial and rational swap checks establish finite main-term identities, not an infinite error estimate. No external human review, formal verification or novel solution claim.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Ng v3 AFE and explicit-main calculation imply the sixth-zeta-moment leading term from one signed, exact-kernel, full-main averaged d3 remainder SM.15. New unknown arithmetic input uses d3 at zero complex shifts only, with cancellation over additive shifts and dyadic scales. This is a proved conditional implication/classical application; the residual and moment remain unproved. Exact total/diagonal/offdiagonal coefficients are42,19683/256,-8931/256 times a3/9!."
         }
       ],
       "open_questions": [
@@ -9429,6 +9453,12 @@
           "kind": "mathematical",
           "question": "A complete conditional pointwise proof now exists under uniformfixedzero-freeDirichlethalfplaneZF andweighted-dilationrootmomentG, includingexplicitGaussian/all-order/C12constants. Validate those deep inputs with complete applicable proofs, or replace the all-conductor prime estimate, to close the UNCONDITIONAL binary gap.",
           "source": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md"
+        },
+        {
+          "node": "GAP-ZETA-SIXTH-MOMENT-AVERAGED-REMAINDER",
+          "kind": "mathematical",
+          "question": "Prove the actual AFE-weighted signed averaged d3 remainder SM.15 with its full residue main, including all bank profiles and dyadic scales. Existing arbitrary fixed-log graph bounds, density-only rare-bank errors and a power-prime reparameterization do not establish it.",
+          "source": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md"
         }
       ],
       "scope_notes": [
@@ -9522,7 +9552,8 @@
         "For every fixed imaginary quadratic order O=Z+f O_K, arbitrary conductor and ring class group, ordered positive primitive principal norm VALUE sums have sharp order N J_O(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside the finite local set. J_O omits all primes dividing2Delta. Uniform all target valuations; constants depend onO. The individual local shadow has the same scale; hidden class failures contribute O_O,delta(N J_O/log^(1+delta)N), any0<delta<1/h(O), allN>=3; P=Lambda if2Pic(O)=0. No pointwise leading constant, varying-order uniformity, numerical cutoff or exact global exceptions.",
         "For every fixed imaginary quadratic order, exact Euler/Gamma-normalized core and primitive-value marginal constants and cumulative pair asymptotic c_O^2 X^2/(2logX) are proved. Hidden individual class failures are lower order. A uniform bad-prefix tail bound and Haar-value identity reduce the FULL pointwise leading constant to explicit BinaryCoreCorrelation LC.9. An unconditional small-split-prime auxiliary-weight removal has relative cost1/sqrt(loglogN). The current binary argument imports the primary 2026 ZF and graph theorems as proved results and therefore claims an unconditional pointwise leading term, including C4+C4. Full independent verification of those imports and their application remains separate. Internal validation records are review evidence, not primary proof. Candidate local constants are VALUE densities, not coordinate densities; no extra Beta factor.",
         "Conditional on uniformfixedDirichletzero-freehalfplaneZF and the specified k=1weighted-dilationgraphinputG, all fixed abelian splitting semigroups have pointwise unweighted binary leading constants, arbitrary nonnestedsubgroups, fixed residuefilters andcoprimebadcoefficients. Main c1*c2*Gamma*C_common-forbidden*J_common-forbidden(N)*N/[AB log^(2-rho1-rho2)N]. Includes primitiveGaussian explicitcoefficients on alladmissibleresidues, everyfixedimaginaryquadraticorder viaactualHaarvaluefactorsandlower-orderclasserror, andC12+C12 main12c12² C_E J_E N/log^(3/2)N onN2mod12. The modular conditional deduction records its logical premises. The current binary argument imports the primary 2026 ZF and graph G theorems as proved results and therefore claims unconditional completion. Full independent verification of those imports and their application remains separate; internal validation records are review evidence, not primary proof. No external review, formal verification or priority claim is asserted.",
-        "For each fixed nonzero integer h, the unweighted sum of b(n)b(n+h) up to x is asymptotic to C(h)x/log x, C(h)=W2(h)/2 times product over p=3mod4 dividing h of (1-p^(-v_p(h)-1))/(1-p^-1). Includes smooth test functions with an additive o(x/log x) error. Uses the same explicitly imported ZF and G theorems as the pointwise binary theory. No growing-shift uniformity or higher correlation is asserted. Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim."
+        "For each fixed nonzero integer h, the unweighted sum of b(n)b(n+h) up to x is asymptotic to C(h)x/log x, C(h)=W2(h)/2 times product over p=3mod4 dividing h of (1-p^(-v_p(h)-1))/(1-p^-1). Includes smooth test functions with an additive o(x/log x) error. Uses the same explicitly imported ZF and G theorems as the pointwise binary theory. No growing-shift uniformity or higher correlation is asserted. Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim.",
+        "Ng v3 AFE and explicit-main calculation imply the sixth-zeta-moment leading term from one signed, exact-kernel, full-main averaged d3 remainder SM.15. New unknown arithmetic input uses d3 at zero complex shifts only, with cancellation over additive shifts and dyadic scales. This is a proved conditional implication/classical application; the residual and moment remain unproved. Exact total/diagonal/offdiagonal coefficients are42,19683/256,-8931/256 times a3/9!. Internal written reduction and separate source/application review only. The averaged remainder and the sixth-moment asymptotic remain OPEN. Exact polynomial and rational swap checks establish finite main-term identities, not an infinite error estimate. No external human review, formal verification or novel solution claim."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -9603,7 +9634,8 @@
         "GAP-PRIMITIVE-NORM-BINARY-CORRELATION",
         "GAP-PRIMITIVE-NORM-POINTWISE-LEADING",
         "GAP-BINARY-GENERAL-SEMIGROUP-LEADING",
-        "GAP-C12-POINTWISE-LEADING"
+        "GAP-C12-POINTWISE-LEADING",
+        "GAP-ZETA-SIXTH-MOMENT-AVERAGED-REMAINDER"
       ]
     },
     {
@@ -57983,12 +58015,12 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Target S12; longer-term fixed-modulus question"
           },
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Corollary FixedModulusBalancedExistence, macroscopic interval factor1/3; q12 impliesS12 andS12U"
           }
         ]
@@ -58011,7 +58043,7 @@
           },
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Local theorem L12 and the sieve margin (2)-(4)"
           }
         ]
@@ -58029,7 +58061,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Tail lemma T12, sharp (5), global positive-multiple floor count and the p^2 divisibility proof"
           }
         ]
@@ -58047,7 +58079,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Conditional reduction C12, summed hypotheses H1-H2 and stronger pointwise corollary"
           }
         ]
@@ -58065,7 +58097,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Exact finite check"
           },
           {
@@ -58093,7 +58125,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Conditional reduction C12; averaged theorem A12 boundary; remaining pointwise obligation"
           },
           {
@@ -58107,7 +58139,7 @@
       {
         "id": "GAP-ARITH-M12-LITERATURE",
         "title": "Completed: original 1993 quartic-norm theorem comparison",
-        "scope": "Completed statement and hypothesis audit of the full Iwaniec-Pomykala 1993 paper. Theorem 1 is unconditional for each fixed admissible difference. Theorem 2 gives conditional eventual coprime sums, with logarithmic-order counts, assuming P4 uniformly for target-sized shifts. For Q(zeta_12), its splitting-prime semigroup is exactly C12, with sum targets 2 mod 12 and difference targets 0 mod 12. The count has product_(p|N)(1-epsilon_p/p), with epsilon_p=1 on allowed primes and -1 otherwise; no explicit leading asymptotic is printed. This is a completed source comparison, not an unconditional sum theorem or a certification of historical priority. Later deconditioning, balance adaptations and recovery of the coprime count remain separate.",
+        "scope": "Completed statement and hypothesis audit of the full Iwaniec-Pomykala 1993 paper. Theorem 1 is unconditional for each fixed admissible difference. Theorem 2 gives conditional eventual coprime sums, with logarithmic-order counts, assuming P4 uniformly for target-sized shifts. For Q(zeta_12), its splitting-prime semigroup is exactly C12, with sum targets 2 mod 12 and difference targets 0 mod 12. The count has product_(p|N)(1-epsilon_p/p), with epsilon_p=1 on allowed primes and -1 otherwise; no explicit leading asymptotic is printed. This is a completed source comparison, not an unconditional sum theorem or a certification of historical priority. The present target-uniform C12 theorem now supplies the older coprime scope with an explicit leading constant and logarithmic saving by Mobius inversion. Later deconditioning of the original P4/P5 route, balance adaptations and exhaustive historical priority remain separate.",
         "kind": "gap",
         "status": "proved",
         "topic": "arithmetic",
@@ -58117,7 +58149,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
           },
           {
@@ -59437,7 +59469,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "A12 proof: exact Debaene Corollary 2 statement and fixed degree-four application"
           }
         ]
@@ -59455,7 +59487,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Averaged theorem A12 and proof: quartic ideal coefficients, square inversion, H_6 mean and balanced dyadic area X^2/2"
           }
         ]
@@ -61653,7 +61685,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "P12 proof: Theorem 1.9, Definitions 2.6-2.7, xi, two moment systems and positivity witnesses; literature application of Lemma 2.8"
           },
           {
@@ -61707,7 +61739,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Positive-proportion corollary P12 and proof via the two frobenian moment asymptotics"
           }
         ],
@@ -61725,7 +61757,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Sieved averaged theorem A12G: inverse forbidden Euler factors, square convolution, mean and dyadic count"
           }
         ],
@@ -61743,7 +61775,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "A12G numerical enclosure and its precise averaged interpretation"
           },
           {
@@ -64579,7 +64611,7 @@
           },
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Corollary FixedModulusBalancedExistence, macroscopic interval factor1/3; q12 impliesS12 andS12U"
           }
         ]
@@ -75055,12 +75087,12 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Unbalanced target S12U and first pointwise priority"
           },
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Corollary FixedModulusBalancedExistence, macroscopic interval factor1/3; q12 impliesS12 andS12U"
           }
         ]
@@ -75121,7 +75153,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
             "locator": "Scaling lemma S12Scale; core14 and seven balanced cores; power-window factor"
           }
         ]
@@ -89270,7 +89302,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
+            "sha256": "c7a4a58bef74bc1cf2cd23fbf1d203ba9db284524889ebc34c859a55c41d74f2",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           }
         ],
@@ -90145,7 +90177,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
+            "sha256": "c7a4a58bef74bc1cf2cd23fbf1d203ba9db284524889ebc34c859a55c41d74f2",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -90168,7 +90200,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
+            "sha256": "c7a4a58bef74bc1cf2cd23fbf1d203ba9db284524889ebc34c859a55c41d74f2",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -91266,7 +91298,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
+            "sha256": "c7a4a58bef74bc1cf2cd23fbf1d203ba9db284524889ebc34c859a55c41d74f2",
             "locator": "Targeted historical review: exact comparison, verified overlaps, access limitations and qualified verdict"
           },
           {
@@ -92244,7 +92276,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "SplittingFiniteImages,Section3"
           }
         ]
@@ -92262,7 +92294,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "SplittingCongruenceLocalGlobal,Section3, finite congruence equivalence proof"
           }
         ]
@@ -92280,7 +92312,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "CoupledCongruenceObstruction,Section3"
           }
         ]
@@ -92298,7 +92330,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "FiniteBadProfileCorrelation S.8-S.9 and finite-modulus converse"
           }
         ]
@@ -92316,7 +92348,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Section5,Why unrestricted bad generators require a residual scale,S.10 and localdensity recursion"
           }
         ]
@@ -92334,8 +92366,26 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "C12QuantitativeCorrelation S.1-S.4 and exact specialization afterSection3"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-C12-COPRIME-LEADING",
+        "title": "Coprime C12+C12 leading asymptotic by Mobius inversion",
+        "scope": "For every sufficiently large N=2 mod 12, the ordered numerical-pair count with a,b in C12 and gcd(a,b)=1 equals A12 J12(N) P12(N) N/(log N)^(3/2) times (1+O((log N)^(-1/65536))), uniformly in all target valuations; P12(N)=product_(p|N,p=1 mod 12)(1-1/p). Other residue classes have zero count. This is a deduction from the target-uniform unrestricted C12 theorem, with the same analytic dependencies and no numerical onset.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "assessment": "Internal written elementary deduction and separate internal proof review. The unrestricted binary theorem retains its specified recent analytic imports. No external human review, formal verification, independent external replay or historical-priority claim.",
+        "sources": [
+          {
+            "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
+            "locator": "Coprime summands: C12CoprimeCorrelation S.C1-S.C4 and its Mobius divisor-tail proof"
           }
         ]
       },
@@ -92390,7 +92440,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Section4 Splitting fields and finite conjunctions"
           }
         ]
@@ -92408,7 +92458,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Theorem SplittingGoldbachExistence G.1-G.2 and fixed-anchor proof"
           }
         ]
@@ -92426,7 +92476,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Theorem SplittingHigherGoldbachCount G.3-G.6; full moving-target/F/W/prefix proof"
           }
         ]
@@ -92444,7 +92494,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Theorem SplittingRelativeBasisOrder G.7; increasing sumsets and sharp +/-1 family"
           }
         ]
@@ -92462,7 +92512,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+            "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
             "locator": "Theorem SplittingOrdinaryBasisOrder G.8-G.9, finite algorithm and exact examples"
           }
         ]
@@ -93191,6 +93241,104 @@
           }
         ],
         "assessment": "Written local/model calculation, internally reviewed. 640 finite residue-pair checks, 320 valuation-partition checks and 10 singleton checks passed; these check local factors only."
+      },
+      {
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "id": "ARITH-ZETA-SIXTH-INVARIANT-PRECISION-OBSTRUCTION",
+        "title": "Bank invariance and fixed-log smallness do not imply moment-scale energy",
+        "scope": "For X=T^(3/2), any bank prime set P up to exp(log(X)^(2/5)) admits a_X(n)=exp(-sqrt(logX))*n_(P-prime)^(3iT/2), exactly bank-invariant and smaller than every fixed log power, whose smooth Dirichlet polynomial has energy at least delta^2 X/(log y)^6, exceeding Tlog^9T. General coefficient information obstruction, not an arithmetic d3 counterexample.",
+        "kind": "claim",
+        "status": "proved",
+        "sources": [
+          {
+            "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+            "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+            "locator": "Section 9.2, Proposition InvariantMomentPrecisionObstruction and SM.22"
+          }
+        ],
+        "assessment": "Unconditional written finite-Euler/Mellin/resonance proof. Internal analytic review. No inference that the actual ternary-divisor remainder has this concentration."
+      },
+      {
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "id": "ARITH-ZETA-SIXTH-FIXED-PROBE-POWER-BARRIER",
+        "title": "Fixed-probe ideal kernels retain positive norm with finitely many power-size banks",
+        "scope": "For the exact-replacement symmetric-probe construction, fixed M=J+ell,m<=J and finite positive group counts s1,s2 give residual R=Q1+Q2-Q1Q2 with ideal norm at least binom(M,m)^(-s1-s2)>0 at zero frequency. Uniform replacement errors preserve half the bound. This excludes power decay from only enlarging primes in that construction; redesigned kernels remain outside scope.",
+        "kind": "claim",
+        "status": "proved",
+        "sources": [
+          {
+            "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+            "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+            "locator": "Section 9.3, Proposition FixedProbePowerBarrier and SM.23"
+          },
+          {
+            "path": "arithmetic/sources/weighted-dilation-graphs-sep24-2026.pdf",
+            "sha256": "351692885d112277e969901e75fe56eeee0d263d5d5847d0b980fe2c8c7744c0",
+            "locator": "Theorem 4.1 proof, equations 4.21-4.26 and exceptional-pair formula"
+          }
+        ],
+        "assessment": "Explicit symmetric Hoeffding tensor witness and internal separate reconstruction of the source operator formula. No impossibility claim for every graph approach."
+      },
+      {
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "id": "GAP-ZETA-SIXTH-MOMENT-AVERAGED-REMAINDER",
+        "title": "Actual moment-weighted signed averaged ternary-divisor remainder",
+        "scope": "For every fixed smooth positive-time test phi, prove SM.15: 2 sum_(M,N in B_T) T/sqrt(MN) sum_(r!=0)[A_r[F_MN]-M_r[F_MN]]=o(Tlog^9T), with exact gamma/time kernel SM.6, full unshifted double-residue main SM.13 and signed summation over all shifts/scales. No absolute values inside. This estimate is OPEN.",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+            "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+            "locator": "Sections 3-5, SM.6-SM.15; Section 10"
+          }
+        ],
+        "next_action": "Develop a d3-specific estimate retaining all bank profiles in the actual moment norm, or prove an adequate summed local Mellin-energy bound; current invariance/log-precision and fixed-probe parameter changes do not suffice."
+      },
+      {
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "id": "GOAL-ZETA-SIXTH-MOMENT-ASYMPTOTIC",
+        "title": "Sixth Riemann zeta moment leading asymptotic",
+        "scope": "Integral_0^T |zeta(1/2+it)|^6 dt ~42*a3*T*(logT)^9/9!, a3=product_p(1-1/p)^4(1+4/p+1/p^2). No proof is supplied; one sufficient exact averaged remainder is SM.15.",
+        "kind": "goal",
+        "status": "open",
+        "evidence_type": "mathematical_goal",
+        "sources": [
+          {
+            "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+            "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+            "locator": "Section 1, SM.1 and Theorem SixthMomentAveragedCriterion"
+          }
+        ]
+      },
+      {
+        "id": "EXT-NG-SIXTH-AFE-EXPLICIT-MAIN",
+        "title": "Ng unconditional AFE and post-substitution explicit sixth-moment main",
+        "scope": "Ng v3 Proposition 2.1 and Section4 diagonal, plus Sections5.3-6 explicit Ramanujan/residue main manipulations after the arithmetic replacement. Retaining the Section5.2 replacement difference exactly leaves an unconditional identity with that residual; zero-shift coalescence evaluates the explicit main with leading42a3/9!. No assumption that actual ternary-divisor sums equal that main.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "external_proof_module",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/ng-sixth-moment-1610.04977v3.pdf",
+            "sha256": "e4a6f43647dc0083de39654fe8684a4d603b0c2cffad42525a460e91acf09fbc",
+            "locator": "Proposition2.1; Sections4,5.3-5.5,6 including Proposition6.6; exact arithmetic replacement isolated atSection5.2"
+          }
+        ],
+        "assessment": "Actual primary proof interfaces inspected and extracted as a precisely scoped module. This is not the whole conditional Theorem1.1 with its hypothesis omitted."
       }
     ],
     "implications": [
@@ -120077,7 +120225,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "Conditional reduction C12 from L12 and sharp T12, assuming the open summed H1-H2"
         },
         "dependency_coverage": "partial"
@@ -120092,7 +120240,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "Target S12 via sufficient global counting hypotheses"
         },
         "dependency_coverage": "partial"
@@ -120125,7 +120273,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "Open first target S12U with separate unconditional progress and conditional H*; balanced S12 remains stronger and open"
         },
         "dependency_coverage": "partial"
@@ -120905,7 +121053,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "A12 proof from Debaene Corollary 2, square convolution, H_6 and Abel summation"
         },
         "dependency_coverage": "partial"
@@ -122344,7 +122492,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "P12 proof, independent moment systems and thresholded Cauchy-Schwarz"
         },
         "dependency_coverage": "partial"
@@ -122358,7 +122506,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "A12G from square-divisor convolution and the fixed balanced dyadic area"
         },
         "dependency_coverage": "partial"
@@ -122373,7 +122521,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "Exact checker enclosure of the limiting A12G/A12 weighted-average ratio"
         },
         "dependency_coverage": "partial"
@@ -132300,7 +132448,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "S12 implies S12U by dropping only the balance restriction"
         },
         "dependency_coverage": "partial"
@@ -132314,7 +132462,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "locator": "S12Scale algebraic proof and separately certified bounded balanced cores"
         },
         "dependency_coverage": "partial"
@@ -142202,7 +142350,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
+          "sha256": "c7a4a58bef74bc1cf2cd23fbf1d203ba9db284524889ebc34c859a55c41d74f2",
           "locator": "Plaksin specialization, finite local prime-unit test and elementary O(N^(1/2+epsilon)) gcd deletion"
         },
         "dependency_coverage": "partial"
@@ -143318,7 +143466,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "SplittingFiniteImages: valuationprefixD and reducedunitCRTprime"
         },
         "dependency_coverage": "partial"
@@ -143332,7 +143480,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "SplittingCongruenceLocalGlobal arithmeticdirection; local lifts andCRT"
         },
         "dependency_coverage": "partial"
@@ -143346,7 +143494,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "CoupledCongruenceObstruction H12={1,11}; fullclosure calculation"
         },
         "dependency_coverage": "partial"
@@ -143361,7 +143509,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "FiniteBadProfileCorrelation S.8-S.9, gcd reduction and finiteperiod"
         },
         "dependency_coverage": "partial"
@@ -143375,7 +143523,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Section4 compositum subgroup and Artin inverseimage; fixed badset"
         },
         "dependency_coverage": "partial"
@@ -143390,7 +143538,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "S.1-S.4 exact Euler/L-values and L0=12,H1=H2={1},Gamma12"
         },
         "dependency_coverage": "partial"
@@ -143413,7 +143561,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Sections1-10: quantitative binary laws, classical higher asymptotics, all fixed-order residue sumsets and exact basis orders"
         },
         "dependency_coverage": "partial"
@@ -143428,7 +143576,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Corollary FixedModulusBalancedExistence and proof; H={1}, L=lcm(2,q), I=[1/3,2/3]"
         },
         "dependency_coverage": "partial"
@@ -143444,7 +143592,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Section7 fixed actual anchors, all-moduli congruences and finite maximum threshold"
         },
         "dependency_coverage": "partial"
@@ -143459,7 +143607,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Section8 full verification of F-twists, moving O(N) intercept, fixed W characters, uniform Euler/prefix tails and constants"
         },
         "dependency_coverage": "partial"
@@ -143473,7 +143621,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Section9 increasing finite cyclic sumsets, stabilization and sharp +/-1 family"
         },
         "dependency_coverage": "partial"
@@ -143488,7 +143636,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "locator": "Section9 finite residue union, forbidden-prime lower obstruction, full-group edge cases and exact examples"
         },
         "dependency_coverage": "partial"
@@ -143875,6 +144023,51 @@
         },
         "dependency_coverage": "partial",
         "assessment": "Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim."
+      },
+      {
+        "id": "ZETA-SIXTH-AVERAGED-REMAINDER-IMPLIES-MOMENT",
+        "premises": [
+          "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
+          "GAP-ZETA-SIXTH-MOMENT-AVERAGED-REMAINDER"
+        ],
+        "conclusion": "GOAL-ZETA-SIXTH-MOMENT-ASYMPTOTIC",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+          "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+          "locator": "Section 5, Theorem SixthMomentAveragedCriterion, SM.14-SM.18"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Conditional implication only. The averaged-remainder premise is open, so the sixth moment remains open."
+      },
+      {
+        "id": "ZETA-SIXTH-SIGNED-CRITERION-FROM-NG-MAIN",
+        "premises": [
+          "EXT-NG-SIXTH-AFE-EXPLICIT-MAIN"
+        ],
+        "conclusion": "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+          "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+          "locator": "Sections1-6, Theorem SixthMomentAveragedCriterion, SM.3-SM.18"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Conditional sufficiency theorem. The actual signed remainder is an explicitly unproved premise when deducing the moment, not asserted in this implication."
+      },
+      {
+        "id": "SPLITTING-C12-COPRIME-MOBIUS",
+        "premises": [
+          "ARITH-C12-QUANTITATIVE-LEADING"
+        ],
+        "conclusion": "ARITH-C12-COPRIME-LEADING",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
+          "locator": "Coprime summands: C12CoprimeCorrelation S.C1-S.C4 and its Mobius divisor-tail proof"
+        },
+        "dependency_coverage": "complete"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -171029,6 +171222,14 @@
                 "ARITH-SPLITTING-LOGARITHMIC-CORRELATION",
                 "ARITH-C12-QUANTITATIVE-LEADING"
               ]
+            },
+            {
+              "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+              "locator": "Section 9.3, fixed-probe exact-replacement operator from source equations 4.21-4.26 and exceptional-pair formula",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-ZETA-SIXTH-FIXED-PROBE-POWER-BARRIER"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -171612,6 +171813,74 @@
           "verification": "source_read",
           "resource_type": "paper",
           "verification_basis": "Theorem 1.7, Theorem 1.8 and Proposition 3.1 were inspected. Growing-shift uniformity comes with triply well-factorable weights and its own factor ranges; no direct implication of the entire original P4/P5 package is asserted. Context only, not an essential input to the current correlation theorem."
+        },
+        {
+          "id": "EXT-NG-SIXTH-MOMENT-2021",
+          "title": "The sixth moment of the Riemann zeta function and ternary additive divisor sums",
+          "citation": "Nathan Ng, Discrete Analysis 2021:6, arXiv:1610.04977v3, 6 July 2021.",
+          "identifiers": {
+            "arxiv": "1610.04977v3",
+            "doi": "10.19086/da.22057"
+          },
+          "urls": [
+            "https://arxiv.org/html/1610.04977v3",
+            "https://arxiv.org/abs/1610.04977v3",
+            "https://arxiv.org/pdf/1610.04977v3"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/ng-sixth-moment-1610.04977v3.pdf",
+              "sha256": "e4a6f43647dc0083de39654fe8684a4d603b0c2cffad42525a460e91acf09fbc",
+              "locator": "Proposition 2.1; Definition 4 and Conjecture 2; Proposition 5.2, equations 5.10-5.19; Sections 4 and 5.3-6 explicit main and Proposition 6.6"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+              "locator": "Sections 1-6, inspected AFE, line-kernel and explicit-main coalescence; preserve actual arithmetic replacement as SM.14 instead of assuming Conjecture 2",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
+                "EXT-NG-SIXTH-AFE-EXPLICIT-MAIN"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Exact v3 primary statement and applicable main-calculation interfaces inspected; no invocation of the complete conditional moment theorem under a weaker unlisted hypothesis. The new signed remainder is open."
+        },
+        {
+          "id": "EXT-DE-FAVERI-PANDEY-SIXTH-MOMENT-2026",
+          "title": "The sixth moment of the Riemann zeta function",
+          "citation": "Alexandre de Faveri and Mayank Pandey, arXiv:2610.01035v1, 1 October 2026.",
+          "identifiers": {
+            "arxiv": "2610.01035v1"
+          },
+          "urls": [
+            "https://arxiv.org/html/2610.01035v1",
+            "https://arxiv.org/abs/2610.01035v1",
+            "https://arxiv.org/pdf/2610.01035v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/de-faveri-pandey-sixth-moment-2610.01035v1.pdf",
+              "sha256": "81bc9cab755a950df701e3f8697c31e7121f95721a9e14854cdef102de5fbcf5",
+              "locator": "Theorem 1.1 and Section 1.1, equation 3"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+              "locator": "Section 9: interpretation of X^(7/6) averaged divisor remainder and square-root shift cancellation; comparison only",
+              "role": "context",
+              "nodes": [
+                "GAP-ZETA-SIXTH-MOMENT-AVERAGED-REMAINDER"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actual Theorem 1.1 and Section 1.1 read. Global moment bound is not converted into a uniform per-block divisor remainder."
         }
       ],
       "internal_citations": [
@@ -173611,7 +173880,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+              "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
               "locator": "Section6 exact comparison and fixedtargetscope"
             }
           ],
@@ -173638,7 +173907,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+              "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
               "locator": "Section4 compositum subgroup/Artin inverseimage"
             }
           ],
@@ -173670,7 +173939,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+              "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
               "locator": "Section8 complete moving-target application, local evaluation and uniform W-prefix tails"
             }
           ],
@@ -173950,6 +174219,7 @@
           "title": "The quartic complete-splitting binary problem has a direct conditional 1993 antecedent",
           "nodes": [
             "ARITH-C12-QUANTITATIVE-LEADING",
+            "ARITH-C12-COPRIME-LEADING",
             "GAP-ARITH-M12-LITERATURE"
           ],
           "relation": "comparison_only",
@@ -173978,18 +174248,18 @@
           "proof_sources": [
             {
               "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-              "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+              "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
               "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
             },
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
-              "locator": "Historical antecedent before Section 1 and defining unrestricted C12 asymptotic"
+              "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
+              "locator": "Historical antecedent, defining C12 asymptotic and Coprime summands: C12CoprimeCorrelation with explicit relative error"
             }
           ],
           "application": "K=Q(zeta_12) has conductor 12 and trivial splitting subgroup, so the 1993 summands are exactly C12. Its sum condition is N=2 mod 12 and its difference condition is N=0 mod 12. The numerical pairs are counted once and are required to be coprime.",
-          "novelty_limit": "The quartic binary problem, local criterion, conditional eventual sum coverage and expected logarithmic order are direct antecedents. No first unconditional theorem or exhaustive priority claim is certified. The present leading asymptotic counts unrestricted pairs; it does not automatically establish the older coprime-pair formula.",
-          "remaining_obligation": "Check any proposed later removal of the growing-shift hypothesis, interval/balance adaptation, and coprime deduction with explicit weights, ranges and positivity before asserting a stronger historical conclusion.",
+          "novelty_limit": "The quartic binary problem, local criterion, conditional eventual sum coverage and expected logarithmic order are direct antecedents. The present unrestricted leading asymptotic also yields the older coprime scope by Mobius inversion, with explicit leading factor A12 J12(N) product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. No first unconditional theorem or exhaustive priority claim is certified.",
+          "remaining_obligation": "Check any proposed later removal of the original growing-shift hypothesis and interval/balance adaptation with explicit weights, ranges and positivity before asserting a stronger historical conclusion. The present coprime deduction is supplied separately by the target-uniform theorem.",
           "inspection_scope": "Full original 13-page publisher paper read, theorem page visually verified, arithmetic specialization and named later statements separately reviewed internally. No external human review, formal verification or replay of the 1993 reported numerical positivity calculation.",
           "missing_before": "The repository had only the publisher extract and later reproductions of an auxiliary proposition; the original main theorems were explicitly marked unaudited."
         }
@@ -227253,7 +227523,7 @@
         },
         {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+          "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
           "claims": [
             "ARITH-M12-LOCAL-DENSITIES",
             "ARITH-M12-LARGE-PRIME-TAIL",
@@ -250226,7 +250496,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
+          "sha256": "c7a4a58bef74bc1cf2cd23fbf1d203ba9db284524889ebc34c859a55c41d74f2",
           "claims": [
             "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON",
             "ARITH-D8-CLASSICAL-PRIME-COORDINATE-SUBCASES",
@@ -251724,7 +251994,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_binary_correlation_source_ledger.json",
-          "sha256": "d485d35e51bcc25e8312ccde923b05c33fe85e9d9eed80fc1ffcbc063600df3b",
+          "sha256": "0d5fb5bdef7b0355f8b793d57600bc165e05a28b4e0bed917ed8655448b1e909",
           "claims": [
             "ARITH-PRIMITIVE-NORM-CONDITIONAL-BINARY-COUNTS"
           ],
@@ -251832,7 +252102,7 @@
         },
         {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+          "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
           "claims": [
             "ARITH-SPLITTING-QUANTITATIVE-LOCAL-GLOBAL",
             "ARITH-SPLITTING-LOGARITHMIC-CORRELATION",
@@ -251847,7 +252117,8 @@
             "ARITH-SPLITTING-GOLDBACH-EXISTENCE",
             "ARITH-SPLITTING-HIGHER-GOLDBACH-COUNT",
             "ARITH-SPLITTING-RELATIVE-BASIS-ORDER",
-            "ARITH-SPLITTING-ORDINARY-BASIS-ORDER"
+            "ARITH-SPLITTING-ORDINARY-BASIS-ORDER",
+            "ARITH-C12-COPRIME-LEADING"
           ],
           "dependencies": [
             "HYP-BINARY-DIRICHLET-FIXED-ZEROFREE",
@@ -251955,6 +252226,15 @@
               "title": "Theorem SplittingOrdinaryBasisOrder.** If \\(H\\) is proper, the exact",
               "nodes": [
                 "ARITH-SPLITTING-ORDINARY-BASIS-ORDER"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary C12CoprimeCorrelation.** Let",
+              "kind": "corollary",
+              "title": "Corollary C12CoprimeCorrelation.** Let",
+              "nodes": [
+                "ARITH-C12-COPRIME-LEADING"
               ],
               "mapping_kind": "exact-statement"
             }
@@ -252403,6 +252683,90 @@
           "statements": [],
           "role": "reference",
           "explanation": "Retained primary source for the targeted 1993 quartic-semigroup historical and hypothesis comparison. Context only; no unconditional sum theorem is imported."
+        },
+        {
+          "path": "arithmetic/SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md",
+          "sha256": "5e322a27a8b269c5f33d390b82ead2a1321476d4f4b44f669072e0cbeb9270ca",
+          "claims": [
+            "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
+            "ARITH-ZETA-SIXTH-INVARIANT-PRECISION-OBSTRUCTION",
+            "ARITH-ZETA-SIXTH-FIXED-PROBE-POWER-BARRIER",
+            "GOAL-ZETA-SIXTH-MOMENT-ASYMPTOTIC"
+          ],
+          "dependencies": [
+            "EXT-NG-SIXTH-AFE-EXPLICIT-MAIN"
+          ],
+          "gaps": [
+            "GAP-ZETA-SIXTH-MOMENT-AVERAGED-REMAINDER"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem SixthMomentAveragedCriterion.** Assume (SM.15), with the",
+              "kind": "theorem",
+              "line": 272,
+              "title": "Theorem SixthMomentAveragedCriterion.",
+              "nodes": [
+                "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition InvariantMomentPrecisionObstruction.** Let",
+              "kind": "proposition",
+              "line": 486,
+              "title": "Proposition InvariantMomentPrecisionObstruction.",
+              "nodes": [
+                "ARITH-ZETA-SIXTH-INVARIANT-PRECISION-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition FixedProbePowerBarrier.** In the exact-replacement",
+              "kind": "proposition",
+              "line": 595,
+              "title": "Proposition FixedProbePowerBarrier.",
+              "nodes": [
+                "ARITH-ZETA-SIXTH-FIXED-PROBE-POWER-BARRIER"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact conditional sixth-moment reduction, specified open averaged remainder, main residue normalization and scoped information/parameter obstructions. No sixth-moment solution."
+        },
+        {
+          "path": "arithmetic/verify_sixth_zeta_moment_main.py",
+          "sha256": "cd66bfe94513fa60a5c61af40f44c248ebd7b57c87cb53bebc931bf6a5d9b7ef",
+          "claims": [
+            "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact polynomial generating-function identities and rational swap cancellations on four specified generic rays. Does not test or prove the infinite remainder."
+        },
+        {
+          "path": "arithmetic/sources/ng-sixth-moment-1610.04977v3.pdf",
+          "sha256": "e4a6f43647dc0083de39654fe8684a4d603b0c2cffad42525a460e91acf09fbc",
+          "claims": [
+            "EXT-NG-SIXTH-AFE-EXPLICIT-MAIN"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Exact primary Ng v3 AFE and post-substitution explicit-main calculation; no assertion of the unproved additive-divisor hypothesis."
+        },
+        {
+          "path": "arithmetic/sources/de-faveri-pandey-sixth-moment-2610.01035v1.pdf",
+          "sha256": "81bc9cab755a950df701e3f8697c31e7121f95721a9e14854cdef102de5fbcf5",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Primary comparison for averaged-shift scales and known moment upper bound; not an input proving the signed remainder."
         }
       ]
     },

@@ -1,0 +1,91 @@
+{
+  "tau_scope": "n has only prime factors congruent to 2 mod3",
+  "tau_bound": "tau(n)*n/sigma(n) < (5/2)*n^(1/5)",
+  "tau_constant": {
+    "local_maxima": [
+      {
+        "prime": 2,
+        "last_exponent_required": 6,
+        "maximizing_exponent": 6,
+        "maximum_fifth_power": "281974669312/33038369407"
+      },
+      {
+        "prime": 5,
+        "last_exponent_required": 2,
+        "maximizing_exponent": 2,
+        "maximum_fifth_power": "94921875/28629151"
+      },
+      {
+        "prime": 11,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 1,
+        "maximum_fifth_power": "14641/7776"
+      },
+      {
+        "prime": 17,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 1,
+        "maximum_fifth_power": "83521/59049"
+      },
+      {
+        "prime": 23,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 1,
+        "maximum_fifth_power": "279841/248832"
+      },
+      {
+        "prime": 29,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 0,
+        "maximum_fifth_power": "1"
+      }
+    ],
+    "product_fifth_power": "1150265160430735441400000000/13572063869456406973631499",
+    "upper_bound": "5/2",
+    "upper_bound_fifth_power": "3125/32",
+    "strict_inequality_verified": true
+  },
+  "M_scope": "M(n)=max_{1<=u<=n} product_{p^e||u,p=1mod3}(e+1)",
+  "M_bound": "M(n) < (15/8)*n^(1/5)",
+  "M_constant": {
+    "local_maxima": [
+      {
+        "prime": 7,
+        "last_exponent_required": 2,
+        "maximizing_exponent": 2,
+        "maximum_fifth_power": "243/49"
+      },
+      {
+        "prime": 13,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 1,
+        "maximum_fifth_power": "32/13"
+      },
+      {
+        "prime": 19,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 1,
+        "maximum_fifth_power": "32/19"
+      },
+      {
+        "prime": 31,
+        "last_exponent_required": 1,
+        "maximizing_exponent": 1,
+        "maximum_fifth_power": "32/31"
+      }
+    ],
+    "product_fifth_power": "7962624/375193",
+    "upper_bound": "15/8",
+    "upper_bound_fifth_power": "759375/32768",
+    "strict_inequality_verified": true
+  },
+  "large_prime_control": "For p>=32, (e+1)^5<=32^e<=p^e, by e+1<=2^e for e>=0",
+  "exponent_tail_control": "Next-term ratios for (e+1)/p^(e/5) decrease with e. The corrected tau ratio has the additional factor p*(p^(e+1)-1)/(p^(e+2)-1)<1.",
+  "threshold": 100000000,
+  "threshold_variable": "X=N^(1/4)>=100",
+  "fifth_root_control": "100>(5/2)^5 implies X^(-1/5)<2/5; X^(-6/5)<1/250",
+  "assumed_union_bound": "2/5+(17/12)X^(-1/5)+(22/3)X^(-6/5)",
+  "resulting_strict_upper_bound": "249/250",
+  "lattice_bound_proof": "Represent each six-unit orbit by x>=1,0<=y<x. Distinct labels L=x(x-1)/2+y+1 satisfy Q-L=(y-(x+1)/2)^2+(x^2-5)/4>=0 for x>=3, with x=1,2 checked. Therefore N_E^*(t)<=6floor(t)<=6t.",
+  "script_sha256": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039"
+}

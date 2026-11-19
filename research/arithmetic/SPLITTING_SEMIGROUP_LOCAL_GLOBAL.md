@@ -27,7 +27,10 @@ every sufficiently large \(N\equiv2\pmod{12}\) has coprime
 \(C_{12}\)-summands, with the expected logarithmic-order bounds.
 Their Theorem 1 proves the corresponding difference result unconditionally.
 The [full theorem and hypothesis comparison](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit)
-distinguishes this from the unrestricted-pair leading asymptotic here.
+compares this with the leading asymptotics here. The coprime corollary
+below recovers their logarithmic-order sum scope by Möbius inversion,
+with an explicit leading factor and remainder under the same analytic
+dependencies as the unrestricted theorem.
 It rules out positioning the quartic binary problem or conditional
 every-target existence as new. It does not certify priority for the
 present quantitative statement.
@@ -66,6 +69,71 @@ This is an unweighted count of numerical pairs. It is neither a
 coordinate representation count nor a weighted divisor convolution.
 The threshold and the implicit constant are not given numerically.
 The theorem gives no exact classification of the small targets.
+
+### Coprime summands
+
+**Corollary C12CoprimeCorrelation.** Let
+\[
+ R_{\mathrm{cop}}(N)=\#\{(a,b)\in C_{12}^2:a+b=N,\ \gcd(a,b)=1\},
+ \qquad P_{12}(N)=\prod_{\substack{p\mid N\\p\equiv1\ (12)}}(1-p^{-1}).
+\]
+Uniformly over sufficiently large \(N\equiv2\pmod{12}\),
+\[
+ R_{\mathrm{cop}}(N)=A_{12}J_{12}(N)P_{12}(N)
+ \frac{N}{(\log N)^{3/2}}
+ \left(1+O((\log N)^{-1/65536})\right).                         \tag{S.C1}
+\]
+All other residue classes have zero count. This is a deduction from
+C12QuantitativeCorrelation, with no additional analytic input.
+
+**Proof.** Common divisors of core values lie in \(C_{12}\), and division
+by them preserves the core. Möbius inversion therefore gives
+\[
+ R_{\mathrm{cop}}(N)=\sum_{\substack{d\mid N\\d\in C_{12}}}
+                         \mu(d)R_{12}(N/d).                  \tag{S.C2}
+\]
+Each reduced target remains \(2\pmod{12}\), and its forbidden-prime
+divisors are unchanged, so \(J_{12}(N/d)=J_{12}(N)\).
+Put \(L=\log N\), \(\ell=\log\log(3N)\), \(P=P_{12}(N)\),
+and \(\delta=1/32768\). The restricted squarefree divisor sums satisfy
+\[
+ S_0=\sum_{\substack{d\mid N\\d\in C_{12}}}\frac{|\mu(d)|}{d}
+ \ll\ell,\qquad P^{-1}\ll\ell,\qquad
+ S_1=\sum_{\substack{d\mid N\\d\in C_{12}}}
+                  \frac{|\mu(d)|\log d}{d}\ll\ell^3.           \tag{S.C3}
+\]
+Indeed, \(S_0=\prod_{p\mid N,\ p\equiv1(12)}(1+1/p)\).
+Split both prime products at \(L\): Mertens' product bound gives
+\(O(\log L)\) below \(L\), and the tail has bounded product because
+\(\sum_{p\mid N,\ p>L}1/p\le1/\log L\).
+Furthermore
+\(S_1=S_0\sum_{p\mid N,\ p\equiv1(12)}\log p/(p+1)\).
+The inner sum is at most
+\(\sum_{n\le L}(\log n)/n+L^{-1}\sum_{p\mid N}\log p
+\ll\ell^2\).
+
+In (S.C2), the terms \(d>\sqrt N\) contribute
+\(O(\sqrt N\,\tau(N))\), using \(R_{12}(M)\le M\).
+For \(d\le\sqrt N\), apply the uniform theorem and use
+\((L-\log d)^{-3/2}=L^{-3/2}+O(L^{-5/2}\log d)\).
+Extending the main divisor sum to all \(d\mid N\) costs at most
+\(N^{-1/2}\tau(N)\), while its full value is \(P\). Thus
+\[
+ R_{\mathrm{cop}}(N)=\frac{A_{12}J_{12}(N)N}{L^{3/2}}
+ \left(P+O(L^{-\delta}S_0+L^{-1}S_1+N^{-1/2}\tau(N))\right)
+ +O(\sqrt N\,\tau(N)).                                      \tag{S.C4}
+\]
+The relative error is
+\[
+ O\!\left(L^{-\delta}\ell^2+L^{-1}\ell^4
+               +N^{-1/2}\tau(N)L^{3/2}\ell\right)
+ =O(L^{-\delta/2}),
+\]
+since \(J_{12}(N)\ge1\) and \(\tau(N)=N^{o(1)}\).
+This proves (S.C1). The full manuscript proof is
+[Corollary `cor:coprime-c12`](../../unpublished/pointwise-binary-splitting-semigroups/theorems.tex).
+The separate derivation was checked by an internal mathematical agent;
+it inherits the uniform theorem's imported dependencies and review limits.
 
 ### Exact constant
 

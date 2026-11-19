@@ -1,45 +1,133 @@
-\section{A standalone verifier for both finite ranges}\label{app:verifier}
-The program below uses only the Python standard library. Its complete
-inputs are the two residue classes, the cutoff $10^8$ and the small
-summand bounds in Proposition~\ref{prop:finite-certificates}. It constructs
-the membership sieve itself. For every target it finds an allowed
-complementary index, or raises an exception. The direct test of all
-divisors of a small candidate is equivalent to requiring all its prime
-factors to be $1$ modulo $3$: products of such primes have every divisor
-$1$ modulo $3$.
+\section{Finite certificates and their verification}\label{app:verifier}
 
-Membership entries are ordered bytes $0$ or $1$. A witness index is
-encoded as a signed little-endian 32-bit integer in increasing target
-order. The witness is $i$ in the unrestricted identity and $j$, the index
-of $b$, in the mixed identity. The expected SHA256 digests are:
+The accompanying source archive contains the verification programs and
+machine-readable rational certificates.  This appendix specifies their
+proof role; the spectral statements remain mathematical imports.
+All finite sumset tests below use exact integer arithmetic.  The
+rational interval bounds use integer comparisons after clearing positive
+denominators.
 
-\noindent\textit{Unrestricted membership:}
+\begin{center}\small
+\begin{tabular}{llll}
+\toprule
+discriminant&complete finite domain&families&additional exceptions\\\midrule
+$-3$&$N<10^8$&$\AA+\AA$, $\AA+3\!\cdot\!\AA$&none\\
+$-7$&$N\le2^{24}$&$C+C$, $P+P$&$11,29$; $7,77,203$\\
+$-8$&$N\le2^{27}$&$C+C$, $C+2C$&none\\
+$-11$&$N\le2^{25}$&$C+C$&none\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Declared supplement.}
+The accompanying electronic supplement is \texttt{source.zip}; its
+\texttt{README.md} gives the exact build and replay commands and software
+requirements.  All the following files are in its
+\texttt{certificates/} directory:
+\begin{itemize}
+\item \path{verify_binary_certificates.py} checks both Eisenstein families
+and produces \path{binary_certificates_receipt.json}.
+\item The other exact checkers and their outputs are:
+\begin{flushleft}
+\path{verify_primitive_norm_minus7.py}\\
+\path{primitive_norm_minus7_checks.json}\\[2pt]
+\path{verify_primitive_norm_minus8.py}\\
+\path{primitive_norm_minus8_checks.json}\\[2pt]
+\path{verify_primitive_norm_minus11.py}\\
+\path{primitive_norm_minus11_checks.json}.
+\end{flushleft}
+\item \path{verify_primitive_norm_coordinate_membership.py} performs
+the independent full-array comparison and produces
+\path{primitive_norm_coordinate_membership_checks.json}.
+\end{itemize}
+No public deposit identifier is presumed: the supplement is distributed
+with the article.
+
+\paragraph{Membership and positive witnesses.}
+For each semigroup, prime support gives an exact membership sieve:
+initialize every positive integer as permitted and delete all multiples
+of each forbidden prime.  For the Eisenstein indexing $6j+1$, a
+forbidden factor must have another forbidden factor, counted with
+multiplicity; one lies below the square root.  It therefore suffices to
+sieve the forbidden primes below $10000$ in that indexed finite domain.
+For $-7,-8,-11$ the complete finite prime sieves are used as stated
+in the corresponding sections.
+
+A packed membership array $B_C$ encodes $C$.  Bitwise unions of shifts
+$B_C\ll a$ give exactly the targets reached using the tested first
+summands $a$.  Mixed families instead shift by the corresponding
+ramified dilation.  The certificate compares the complete result to
+the full predicted target mask, including locally forbidden targets.
+Every covered bit gives an actual positive value pair.  No assertion
+that a fixed short summand works for all integers is used.
+For the listed $-7$ exceptions, every possible summand at most half
+the target is tested against the complete membership array; hence their
+nonrepresentation is exhaustive.
+
+Independent coordinate enumeration authenticates the full membership
+arrays at the actual certificate bounds.  For $-7,-11$, use
+$4Q=(2x+y)^2+|d|y^2$, simultaneous sign reversal and
+$x\mapsto-x-y$ to restrict to $y\ge0$, $2x+y\ge0$ with exact integer
+square-root limits.  For $-8$, independent coordinate signs restrict
+to the first quadrant of $x^2+2y^2\le B$.
+The gcd test is applied to every enumerated vector.  The unramified
+core filter also excludes ramified values: at discriminant $-11$ we
+retain only odd norms with $11\nmid Q(x,y)$, so that the authenticated
+array is $C$, rather than $P=C\mathbin{\dot\cup}11C$.  Entire bytearrays
+are compared before their hashes are recorded.  Deliberate deletions
+of a unit, insertions of forbidden prime powers, and corruptions of
+target masks must be rejected.
+
+\paragraph{Byte and bit conventions.}
+Membership arrays contain ordered bytes zero or one, indexed by the
+represented integer, except in the Eisenstein scan where index $j$
+represents $6j+1$.  Bit $n$ of a packed integer is the coefficient of
+$2^n$, so left shift by $a$ adds $a$ to every represented index.
+For the Eisenstein witness digest, increasing target index $k$ contributes
+the least permitted short index $i$ in the ordinary family, or $j$
+in the mixed family.  Each index is encoded as a signed little-endian
+32-bit integer.  The two membership arrays have different lengths
+because their target domains have different last indices.
+The expected SHA256 digests are:
+
+\noindent Ordinary membership bytes:
 \begin{quote}\footnotesize\ttfamily
 010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575
 \end{quote}
-\noindent\textit{Unrestricted least-witness indices:}
+\noindent Ordinary least-witness indices:
 \begin{quote}\footnotesize\ttfamily
 fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0
 \end{quote}
-\noindent\textit{Mixed membership:}
+\noindent Mixed membership bytes:
 \begin{quote}\footnotesize\ttfamily
 aadd1a6ebe6f6450f4b7e270d308af6971f1b38d3b388b768c3d28c752518fc0
 \end{quote}
-\noindent\textit{Mixed least-$b$ indices:}
+\noindent Mixed least-witness indices:
 \begin{quote}\footnotesize\ttfamily
 91496589fd9b1be7e9aba7cd77d63cb2c0de4be710564172ded09198c638c49d
 \end{quote}
-The membership arrays have different lengths because the two target
-ranges have different final indices. The digests identify outputs;
-correctness rests on the exact sieve and exhaustive witness tests.
-The accompanying \href{source.zip}{\texttt{source.zip}} contains this
-program as \texttt{verify\_binary\_certificates.py}, the separate NumPy
-implementations, and the exact-constant and ramified-count checks.
+The other families' complete membership and coverage digests are fields
+of the named JSON certificates.  Their verifiers regenerate the actual
+arrays and target comparisons, then compute the digests.
 
-\begingroup\footnotesize
-\IfFileExists{verify_binary_certificates.py}{%
-\verbatiminput{verify_binary_certificates.py}%
-}{%
-\verbatiminput{../../research/arithmetic/eisenstein-restricted-prime-sums/verify_binary_certificates.py}%
-}
-\endgroup
+\paragraph{The interval certificates.}
+The divisor maxima are finite because exponents may be arranged in
+nonincreasing order on the smallest eligible primes.  The proofs give
+explicit prime and exponent limits for this enumeration; they also
+prove that all omitted Euler factors are at most one.
+The resulting maxima bound every target in each stated interval.
+Finite prime sums are bounded above by rational roundings and explicit
+arithmetic-progression tails.  Thus an interval inequality proves a
+statement for every integer in its interval.  The interval endpoints
+meet the finite scans below and the infinite estimates above, without
+gaps.  The multiplicative descents then exhaust the claimed domains.
+
+\paragraph{Reproducible data.}
+The archive provides the four exact sumset checkers, the independent
+coordinate authenticator, the theta/Euler checks, the rational interval
+records, and their replay instructions.  A hash identifies an edition
+of a program or an array; equality of hashes is not substituted for the
+membership and coverage arguments above.  The programs use the Python
+standard library.  Assertion-based verifiers explicitly reject optimized
+execution.  Reproduction instructions and the actual scope of replay
+and review are recorded with the archive.

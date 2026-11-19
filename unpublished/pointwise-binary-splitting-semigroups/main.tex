@@ -1,7 +1,8 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[hmargin=27mm,vmargin=25mm]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage{mathrsfs}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue,breaklinks=true]{hyperref}
 \usepackage{bookmark}
@@ -52,8 +53,11 @@ the recent zero-free and weighted-dilation theorems of OpenAI,
 a density model retaining the relevant congruence characters, and
 transference for reflected correlations with growing targets.
 We count numerical values without representation multiplicities.
-As an arithmetic application, we derive explicit leading asymptotics
-for sums of primitive norm values in every fixed imaginary quadratic order.
+For primitive norm values in every fixed imaginary quadratic order,
+we first prove pointwise order-of-magnitude bounds using classical
+Kloosterman estimates and positive restoration, independently of the
+recent analytic theorems. The new correlation
+theorem upgrades these bounds to explicit leading asymptotics.
 \end{abstract}
 \input{introduction}
 \input{theorems}
@@ -61,6 +65,7 @@ for sums of primitive norm values in every fixed imaginary quadratic order.
 \input{model}
 \input{graph}
 \input{assembly}
+\input{older-norm-route}
 \input{norms}
 \input{consequences}
 \paragraph{AI assistance and review.}

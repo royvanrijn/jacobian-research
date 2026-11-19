@@ -1,0 +1,23 @@
+{
+  "title": "Pointwise Binary Correlations in Abelian Splitting Semigroups",
+  "author": {"name": "Roy van Rijn", "orcid": "0009-0000-2808-0645"},
+  "summary": "Pointwise binary asymptotics for two fixed abelian subgroup prime prescriptions, an explicit C12 constant and congruence criterion, and primitive norm counts in every fixed imaginary quadratic order with independent older-input order bounds.",
+  "published": false,
+  "status": "draft",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "source_bundle": "source.zip",
+  "build": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "abstract_source": "main.tex",
+  "abstract_format": "latex",
+  "verification_record": "verification.json",
+  "verification": "Internal review of the application proof and exact imported theorem interfaces; the complete zero-free and weighted-dilation preprints are dependencies, not independently revalidated here. Separate checks and the independent older-input norm route are recorded in verification.json.",
+  "companion": "../eisenstein-restricted-prime-sums/metadata.json",
+  "related_window_paper": "../../results/eisenstein-pointwise-counts/metadata.json",
+  "catalogued_on": "2026-11-19",
+  "next_steps": [
+    "Obtain external specialist review of the reflected graph comparison and target-grid normalization, retaining the exact preprint dependencies.",
+    "Obtain specialist review of the independently proved older-input norm route, class error and conductor-tail transfer.",
+    "Continue historical-priority review beyond the precise primary-source comparisons already included."
+  ]
+}

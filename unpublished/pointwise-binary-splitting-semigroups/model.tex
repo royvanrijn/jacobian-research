@@ -82,9 +82,9 @@ The finite Euler product costs \(L^{O(1)}\); the displacement gives
 that height. Smooth tails are smaller than every fixed logarithmic
 power. The threshold can be ineffective.
 
-Hankel integration of a principal branch gives
-\eqref{eq:hankel-model}, with relative Taylor error
-\(O_K(L^{-3(K+1)/5})\) by \eqref{eq:rough-derivatives}.
+Hankel integration gives \eqref{eq:hankel-model} for each principal
+branch. Its relative Taylor error is \(O_K(L^{-3(K+1)/5})\),
+by \eqref{eq:rough-derivatives}.
 Choose \(K\) after the derivative and character-count costs.
 For the unweighted rough population the series
 \(\zeta(s)\prod_{p\le y}(1-p^{-s})\) has principal density \(V_S\),
@@ -93,6 +93,83 @@ and only the trivial character contributes. The projection
 branch of the first sum with its exact coefficient. The factor
 \(n^{iu}\) changes only the derivative budget and choice of \(K\).
 \end{proof}
+For \(U\subset H\), set
+\begin{equation}\label{eq:corrected-model}
+ D_U(n)=k_H\1_{n\bmod L_0\in U}f(n_S)
+                       \frac{M_{R,K}(n_{S'})}{V_S},\qquad
+ \xi_U(n)=f(n)\1_{n\bmod L_0\in U}-D_U(n).
+\end{equation}
+Then \(D_U\ge0\), \(D_U\ll L^{-3(1-\rho)/5}\) and
+\(|\xi_U|\ll1\). Conditioning on an exact record \(n_S=r\le E\)
+leaves residual state \(U/r\), so Lemma~\ref{lem:rough-means}
+centers its principal mean. Fixed divisor-growth record coefficients
+cost only powers of \(L\), since
+\(\sum_{r\ S\text{-supported}}d_j(r)/r\ll L^{O_j(1)}\).
+Rankin's bound with exponent \(c/\log y\) gives
+\begin{equation}\label{eq:record-tail}
+\#\{n\le T:n_S>E\}\ll TL^{O(1)}e^{-cL^{1/10}}
+ \quad(N^a\le T\le N^C).
+\end{equation}
+Indeed the Euler moment is \(L^{O(1)}\), whereas
+\(E^{-c/\log y}\) gives the exponential saving. The same argument
+permits fixed divisor weights. For \(H=G\), use the exact model
+\(D_U=\1_{n\bmod L_0\in U}\) and \(\xi_U=0\).
+
+\subsection{The model correlation}
+Use separate constructions for the two subgroups with common \(S\).
+\begin{proposition}\label{prop:model-correlation}
+For a smooth \(0\le\Phi\le1\) supported away from zero and one,
+\begin{align*}
+ &\sum_{Ax+By=N}\Phi(Ax/N)D_U(x)D_V(y)\\
+ &\quad=c_1c_2\Gamma_N C_{\mathcal E}J_{\mathcal E}(N)
+       \frac{N}{AB L^\kappa}
+       \left(\int_0^1\Phi(t)\,dt+O(L^{-1/2})\right)+O(N^{1/2}).
+\end{align*}
+The statement is uniform in target valuations. Endpoint strips of
+relative length \(\epsilon\) have upper bound
+\(O(\epsilon NJ_{\mathcal E}(N)L^{-\kappa}+N^{1/2})\).
+\end{proposition}
+\begin{proof}
+Discard records larger than \(E\) using \eqref{eq:record-tail}.
+The rough logarithms on the rest are \(L+O(\sqrt L)\), giving
+\[
+ \frac{M_{R,K}(n_{S'})}{V_S}
+ =\frac{c_H L^{\rho-1}}{\alpha_0E_-(y)}(1+O_K(L^{-1/2})).
+\]
+Count the remaining small-prime sieve set in the fixed residues.
+The fundamental lemma applies at level \(N^{\epsilon_0}\), for
+small fixed \(\epsilon_0>0\), with
+\(u=\log(N^{\epsilon_0})/\log y\asymp L^{3/5}\).
+Its relative error is \(e^{-cu\log u}\), and CRT gives endpoint
+error \(O(\nu(d))\) at each squarefree sieving modulus \(d\).
+Summing those errors costs \(N^{\epsilon_0}L^{O(1)}\).
+This is the standard fixed-dimensional fundamental-lemma application
+\cite[Theorem 11.7]{richert}; target-root mergers
+decrease its dimension and preserve uniformity.
+
+The positive integer line is \((x,y)=(x_0+Bt,y_0-At)\), with
+parameter length \(N/(AB)\). Modulo \(L_0\), this parameter bijects
+onto all roots: at each prime at least one coefficient is a unit.
+If \(R\) roots have the prescribed states, their raw probability is
+\(R/L_0\). Multiplying the normalized marginal projections gives
+\[
+ \frac{R}{L_0}\frac{L_0c_1}{|H_1|}\frac{L_0c_2}{|H_2|}
+       =c_1c_2\Gamma_N.
+\]
+A prime forbidden on only one side has relative factor one.
+A prime forbidden on both sides has two excluded roots, merging
+exactly when \(p\mid N\), and relative factor
+\[
+ \frac{1-(2-\1_{p\mid N})/p}{(1-1/p)^2}.
+\]
+Their product up to \(y\) is
+\(C_{\mathcal E}(y)J_{\mathcal E,y}(N)\). The ordinary tail is
+\(O(1/y)\), and the target-prime tail is \(O(L/(y\log y))\).
+Partial summation inserts \(\Phi\), costing its total variation.
+The same upper sieve on an endpoint strip gives its length times
+the sparse density, with a power-smaller endpoint error.
+\end{proof}
+
 \subsection{Prime banks and the sparse record envelope}
 Choose banks of primes \(p\equiv1\pmod{L_0}\), with small banks in
 \([\exp(L^{1/8}),\exp(L^{1/4})]\) and big banks in
@@ -194,78 +271,3 @@ Prime squares in active banks have exponentially small population,
 by \(\sum p^{-2}\). It remains to prove arbitrarily strong fixed
 logarithmic cancellation for these banked centered correlations.
 
-For \(U\subset H\), set
-\begin{equation}\label{eq:corrected-model}
- D_U(n)=k_H\1_{n\bmod L_0\in U}f(n_S)
-                       \frac{M_{R,K}(n_{S'})}{V_S},\qquad
- \xi_U(n)=f(n)\1_{n\bmod L_0\in U}-D_U(n).
-\end{equation}
-Then \(D_U\ge0\), \(D_U\ll L^{-3(1-\rho)/5}\) and
-\(|\xi_U|\ll1\). Conditioning on an exact record \(n_S=r\le E\)
-leaves residual state \(U/r\), so Lemma~\ref{lem:rough-means}
-centers its principal mean. Fixed divisor-growth record coefficients
-cost only powers of \(L\), since
-\(\sum_{r\ S\text{-supported}}d_j(r)/r\ll L^{O_j(1)}\).
-Rankin's bound with exponent \(c/\log y\) gives
-\begin{equation}\label{eq:record-tail}
- \#\{n\le N^C:n_S>E\}\ll N^CL^{O(1)}e^{-cL^{1/10}}.
-\end{equation}
-Indeed the Euler moment is \(L^{O(1)}\), whereas
-\(E^{-c/\log y}\) gives the exponential saving. The same argument
-permits fixed divisor weights. For \(H=G\), use the exact model
-\(D_U=\1_{n\bmod L_0\in U}\) and \(\xi_U=0\).
-
-\subsection{The model correlation}
-Use separate constructions for the two subgroups with common \(S\).
-\begin{proposition}\label{prop:model-correlation}
-For a smooth \(0\le\Phi\le1\) supported away from zero and one,
-\begin{align*}
- &\sum_{Ax+By=N}\Phi(Ax/N)D_U(x)D_V(y)\\
- &\quad=c_1c_2\Gamma_N C_{\mathcal E}J_{\mathcal E}(N)
-       \frac{N}{AB L^\kappa}
-       \left(\int_0^1\Phi(t)\,dt+O(L^{-1/2})\right)+O(N^{1/2}).
-\end{align*}
-The statement is uniform in target valuations. Endpoint strips of
-relative length \(\epsilon\) have upper bound
-\(O(\epsilon NJ_{\mathcal E}(N)L^{-\kappa}+N^{1/2})\).
-\end{proposition}
-\begin{proof}
-Discard records larger than \(E\) using \eqref{eq:record-tail}.
-The rough logarithms on the rest are \(L+O(\sqrt L)\), giving
-\[
- \frac{M_{R,K}(n_{S'})}{V_S}
- =\frac{c_H L^{\rho-1}}{\alpha_0E_-(y)}(1+O_K(L^{-1/2})).
-\]
-Count the remaining small-prime sieve set in the fixed residues.
-The fundamental lemma applies at level \(N^{\epsilon_0}\), for
-small fixed \(\epsilon_0>0\), with
-\(u=\log(N^{\epsilon_0})/\log y\asymp L^{3/5}\).
-Its relative error is \(e^{-cu\log u}\), and CRT gives endpoint
-error \(O(\nu(d))\) at each squarefree sieving modulus \(d\).
-Summing those errors costs \(N^{\epsilon_0}L^{O(1)}\).
-This is the standard fixed-dimensional fundamental-lemma application
-\cite[Chapters 2 and 6]{halberstamrichert}; target-root mergers
-decrease its dimension and preserve uniformity.
-
-The positive integer line is \((x,y)=(x_0+Bt,y_0-At)\), with
-parameter length \(N/(AB)\). Modulo \(L_0\), this parameter bijects
-onto all roots: at each prime at least one coefficient is a unit.
-If \(R\) roots have the prescribed states, their raw probability is
-\(R/L_0\). Multiplying the normalized marginal projections gives
-\[
- \frac{R}{L_0}\frac{L_0c_1}{|H_1|}\frac{L_0c_2}{|H_2|}
-       =c_1c_2\Gamma_N.
-\]
-A prime forbidden on only one side has relative factor one.
-A prime forbidden on both sides has two excluded roots, merging
-exactly when \(p\mid N\), and relative factor
-\[
- \frac{1-(2-\1_{p\mid N})/p}{(1-1/p)^2}.
-\]
-Their product up to \(y\) is
-\(C_{\mathcal E}(y)J_{\mathcal E,y}(N)\). The ordinary tail is
-\(O(1/y)\), and the target-prime tail is \(O(L/(y\log y))\).
-Partial summation inserts \(\Phi\), costing its total variation.
-The same upper sieve on an endpoint strip gives its length times
-the sparse density, with a power-smaller endpoint error.
-\end{proof}
