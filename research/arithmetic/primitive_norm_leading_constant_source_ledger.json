@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "proof": {
     "path": "PRIMITIVE_NORM_LEADING_CONSTANT.md",
-    "sha256": "8c63ccc882f5807e2b3b9548714298bb606d9a7d85234d6b95fc8c5c75c72267",
+    "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
     "locator": "OrderMarginalAndAverage; ConditionalOrderLeadingTerm; BinaryAuxiliaryRemoval"
   },
   "proved": [
@@ -77,12 +77,12 @@
   "canonical_dependencies": [
     {
       "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
-      "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+      "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
       "locator": "Exactshadowdecomposition, OrderClassError, primitive localvaluecosets"
     },
     {
       "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-      "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
+      "sha256": "fc2cb2d847ad64106d0ce8ed17a17be050173fcdd92916ad725522ba543dd989",
       "locator": "DirectinertSelbergboundanduniformendpointbudget, good-primeroots; noleadingconstantimported"
     }
   ],
@@ -91,11 +91,13 @@
   "internal_review": {
     "reviewers": "Root and separate internal arithmetic/analytic agents",
     "scope": "Canonical marginal/average noncircularity, infinitebadprefix uniformSelbergtail, exactHaarfactor, signedCRTauxiliaryvarianceandCauchy; Gaussian constants; actualJLLtargetdenominatoraudit",
-    "recent_method_gap": "FullSections3-8chaininspected;targetTdeterminantidentityandh-averageconductorsTqoutsideLemma7.2, plusmu_C-vs-mucoefficientmodel. IndexTrepairplausiblebutunproved; no deeprecentinputimported."
+    "recent_method_gap": "FullSections3-8chaininspected;targetTdeterminantidentityandh-averageconductorsTqoutsideLemma7.2, plusmu_C-vs-mucoefficientmodel. IndexTrepairplausiblebutunproved; no deeprecentinputimported.",
+    "class_error_propagation": "The inequality D(X)A_Lambda(X)<=sum_(N<=2X)(R_Lambda-R_P)(N), bounded mean ofJ, small-target split and independent shadow mean were checked explicitly for the strengthened exponent; the trivial even-class-group case is exact equality."
   },
   "pointwise_resolution": {
     "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
-    "sha256": "da44230f97dd251ddb745429857b4f0e47c5b04e2d3b51480e61c41c47396dc7",
+    "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
     "locator": "PointwiseBinaryCorrelations, Section 6; imported inputs checked in PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md"
-  }
+  },
+  "class_error_saving": "OrderClassError allows everydelta<delta_star(2Pic), including1/5 with fixed-order constants. Summing the all-N pair error and dividing D(X)*#Lambda[1,X] by the independently established shadow mean gives #((Lambda-P)cap[1,X])<<X/log^(1/2+delta)X with no additional loss or circular use of the principal mean. This does not assign a new quantitative remainder to the full pointwise leading-term transfer."
 }

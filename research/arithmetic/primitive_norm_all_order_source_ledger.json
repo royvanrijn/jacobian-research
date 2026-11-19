@@ -3,14 +3,14 @@
   "date": "2026-11-19",
   "proof": {
     "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
-    "sha256": "af0d9b710413646ebd84e8ee2921846536b729411a6a9f17e637c2081f4d5ab0",
+    "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
     "locator": "OrderValueCounts,OrderClassError; O.1-O.15 and complete proofs"
   },
   "scope": {
     "orders": "All fixed imaginary quadratic orders, arbitrary conductors and ring class groups",
     "count": "Ordered positive numerical norm-value pairs; primitive in the order basis",
     "sharp_scale": "N J_order(N)/logN on every sufficiently large pair-primitive local target",
-    "class_error": "Any 0<delta<1/h_order, uniform allN>=3; exact equality of individual sets when2Pic=0",
+    "class_error": "Every0<delta<delta_star(2Pic), delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4 for nonzeroB, uniform allN>=3 and target valuations; hence exponent1/5 in every fixed order, constants order-dependent. Individual sets are equal and pair error zero if2Pic=0. No endpoint or varying-order uniformity.",
     "finite_criterion": "Bad primesS|2Delta; L=8rad_odd(S), Z=product p^(2v_pDelta+2); actual local value filters and target periodZL",
     "not_claimed": [
       "Pointwise unweighted leading asymptotic",
@@ -53,7 +53,8 @@
       "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
       "locator": "Section2, numbered part(5), Lemma2/(5.2), printed/PDFp15; introduction pp1,3-4 permits primitive nonfundamental discriminants, explicitly including -4a^2",
       "role": "Fixed negative form-discriminant prime-class density1/h for nonambiguous inverse pairs, with x*exp(-c*sqrt(log x)) error; partial summation gives the bounded Mertens remainder",
-      "inspection": "Actual introduction, definitions and Lemma2 read. The auxiliary factorization D=D0*f^2 on p26 uses squarefree D0, not necessarily the field fundamental discriminant; its f is not used as the order conductor. No growing ring-class modulus assertion."
+      "inspection": "Actual introduction, definitions and Lemma2 read. The auxiliary factorization D=D0*f^2 on p26 uses squarefree D0, not necessarily the field fundamental discriminant; its f is not used as the order conductor. No growing ring-class modulus assertion.",
+      "context": "Theorem1 alternative(4.2), printedp14, and Section2 part(5), printedp15ff, supply classical proper-subgroup exceptional-value context. The present saturation/deficiency and binary line sieve are proved directly, not imported as their squarefree theorem."
     },
     {
       "key": "milne_cft403",
@@ -70,7 +71,7 @@
   "canonical_dependencies": [
     {
       "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-      "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
+      "sha256": "fc2cb2d847ad64106d0ce8ed17a17be050173fcdd92916ad725522ba543dd989",
       "locator": "MixedPrimeSquareSieve M.11-M.17, directclasserrorproof; FiniteGenusFilter M.23-M.26 completeweighted/all-staterestorationproof"
     },
     {
@@ -100,6 +101,22 @@
   "internal_review": {
     "arithmetic": "Root and separate internal agent read actual canonical proof: Theta kernel, primitiveideal existence, conductor type preservation, cap, H compatibility, allbadJ and finite-character lower",
     "local_tables": "Direct all-depth odd/dyadic proof read, exact finite coordinate image algorithms and negativecontrols replayed",
-    "assurance": "Internal mathematical/source review and deterministic replay only; no externalhumanreview/formalverification/priorityclaim"
+    "assurance": "Internal mathematical/source review and deterministic replay only; no externalhumanreview/formalverification/priorityclaim",
+    "class_error_strengthening": "The order-local primitive-ideal existence interface is unchanged. Saturated good-prime orientations generateB_n<=2Pic while preserving conductor-local ideals. A properB_n lies in a maximalM, giving k_M<=K_M; equal doubling fibres give uniondensity(ell-1)/(2ell). The unchanged exact-one mixed Selberg proof uses only fixed-order prime-class Mertens, CRT and positive weights; no ZF/G input is added. Separate finite evidence is not an analytic premise."
+  },
+  "maximal_subgroup_finite_checks": {
+    "checker": {
+      "path": "verify_class_group_error_cover.py",
+      "sha256": "4106505b2db378c54d4cac4043149cc0f15caea7e104c47fea84de1775c87ddf",
+      "locator": "Exact twelve fixed finite abelian groups; all199 rich subsets, independent subgroup enumeration and orientation products"
+    },
+    "receipt": {
+      "path": "class_group_error_cover_checks.json",
+      "sha256": "521aeeeae13a304fa384baadde2fe34e17546d5b38f20dd262d2ec248fd84a92",
+      "locator": "Current complete finite receipt, checker SHA256 and three rejected corruptions"
+    },
+    "command": "python3 research/arithmetic/verify_class_group_error_cover.py --output research/arithmetic/class_group_error_cover_checks.json",
+    "execution": "Internal fresh replay to a scratch output; byte-identical to the retained receipt.",
+    "scope": "Exact finite algebra only: doubling fibres, all maximal subgroups, outside-preimage inverse-pair densities, saturation and cover over199rich subsets in12listed groups. Three negative controls reject g-in-place-of-2g, one-family density and one-fixed-maximal-subgroup errors. This is not an analytic sieve proof, an infinite class-group assertion, a prime-distribution theorem or conductor-local verification. The existing maximal-order checker retains its original eight-group sufficient-saturation scope."
   }
 }

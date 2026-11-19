@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "proof": {
     "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
-    "sha256": "7f0054c67a4ab137c0f20efbda35b51d9314a92677ab2836f849e8171f5d5283",
+    "sha256": "fc2cb2d847ad64106d0ce8ed17a17be050173fcdd92916ad725522ba543dd989",
     "statements": [
       "MaximalOrderValueCounts",
       "ClassErrorComparison",
@@ -19,7 +19,7 @@
     "orders": "Every fixed maximal imaginary quadratic order, arbitrary finite ideal class group",
     "counts": "Ordered positive numerical value pairs, unweighted",
     "target_uniformity": "Every sufficiently large pair-primitive locally admissible target; all permitted target valuations",
-    "class_error": "Uniform everyN>=3, error O_K,delta(N J_K(N)/log^(1+delta)N) for any0<delta<1/h when2Gnontrivial; zeroerror if2G=0",
+    "class_error": "Uniform everyN>=3, error O_K,delta(N J_K(N)/log^(1+delta)N) for every0<delta<delta_star(2G), delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4 for nonzeroB. The exponent1/5 works in every fixed field, with field-dependent constants; no endpoint or varying-field uniformity. If2G=0, P=Lambda and the pair error is identically zero; no converse is asserted.",
     "genus_profiles": "Odd ramified productR, periodL=8R and local target modulus16R^2; originalprefixlabels retained aftercommon-prefix cancellation",
     "separate_open_scope": [
       "Conductors/nonmaximal orders",
@@ -60,7 +60,8 @@
       "statements_used": [
         "Section2, numbered part(5), Lemma2, displayed(5.2), printed/PDFp15: fixed form-class prime-count estimate with exponential-logarithmic error; nonambiguous inverse-class density1/h",
         "Partial summation of the fixed-discriminant case gives sum_(q<=y,q inOmega)1/q=(1/h)loglogy+O_K(1)",
-        "Theorems2-prime/3-prime in introduction concern squarefree within-genus failures and fixed translated primes; not the current unweighted two-norm convolution"
+        "Theorems2-prime/3-prime in introduction concern squarefree within-genus failures and fixed translated primes; not the current unweighted two-norm convolution",
+        "Context/method attribution only: Theorem1 alternative(4.2), printedp14, and Section2 part(5), printedp15ff, use a proper subgroup in the squarefree within-genus exceptional-value argument. The current fixed-group saturation is proved directly; no binary convolution theorem is imported from that source."
       ],
       "inspection_scope": "Actual PDF Lemma2/(5.2), definitions and introduction/theorem hypotheses read; retained exact v2. Deep Landau/Blomer prime theorem imported; no claim that the present comparison is printed verbatim."
     },
@@ -161,7 +162,8 @@
     "arithmetic": "Complete norm-one ideal/genus kernel, primitive local valuation argument, explicit Hilbert characters and finiteprefix CRT coverage read by root and separate internal reviewers. Actual final canonical sections1,2,4,6 andmain scope reread; direct interval upper enlargement also checked.",
     "class_error": "Complete exact-prime-square Selberg optimization, random-marking majorant, targetfactor and endpoint budget reconstructed internally; M.15 corrected to odd inert products. Complete direct-a version in actual canonical file reread independently; no coefficient/prefix summation is needed for this upper bound.",
     "genus_transfer": "Actual BGLM coefficient conditions, all-state weighted family, finite normalization, coefficient/gcd state maps and positive unweighting reread internally. Actual canonical section5 andits finalcombination reviewed against the primary BGLM statement and existing positive-restoration proof.",
-    "assurance": "Internal written/source audits and finite replay only; no external human review or formal verification."
+    "assurance": "Internal written/source audits and finite replay only; no external human review or formal verification.",
+    "class_error_strengthening": "The fixed-group saturated-subgroup proof B_n and maximal-subgroup deficiency union were checked against the adversarially reread manuscript construction. Omega_M is the full disjoint collection with2g outsideM, K_M=sum(m_g-1), and its Mertens coefficient is(ell-1)/(2ell), derived by summing the unchanged per-inverse-pair input1/h. The actual CRT/root/positive Selberg proof and N^(9/20) endpoint are unchanged. Finite checks remain restricted to their stated domains; no external/formal assurance is upgraded."
   },
   "historical_assessment": "Class mixing is classical in Bredikhin-Linnik and within-genus exceptional-integer sieving is closely related to Bourgain-Fuchs. This is an explicit all-target unweighted reconstruction/extension using existing analytic inputs. The exact theorem has not received a complete historical-priority audit; no originality certificate.",
   "completion_audit": [
@@ -171,7 +173,7 @@
     },
     {
       "requirement": "Generic deficiency contribution is lower order than the sharp count",
-      "evidence": "ClassSaturation M.8-M.9 and MixedPrimeSquareSieve M.11-M.17; every0<delta<1/h, allN>=3 andtargetvaluations; if2G=0 exactzeroerror"
+      "evidence": "ClassSaturation M.8-M.10a and MixedPrimeSquareSieve M.11-M.17; the full outside-maximal-subgroup union hasdensityd_M=(ell-1)/(2ell). Everydelta<delta_star(2G), including1/5, allN>=3 and targetvaluations; zeroerror if2G=0. Constants fixed-field dependent; no endpoint."
     },
     {
       "requirement": "Genus-shadow convolution has expected lower bound using existing fixed-period theorem",
@@ -179,7 +181,7 @@
     },
     {
       "requirement": "No bespoke finite absorber for each class group",
-      "evidence": "Generic use of every nonambiguous inverseclasspair withm_g=ord(2g)-1; saturation of actualprimefactorsofvalues, notreserved fixedpools"
+      "evidence": "Families withk_g>=ord(2g)-1 generateB_n. IfB_n=2G, reserved whole-prime orientations fill the genus; otherwise a maximalM containsB_n and every outside-M family is deficient. The union and K_M are intrinsic to the fixed finite class group, not fixed absorber pools."
     },
     {
       "requirement": "Actual finite verification with invalid variants rejected",
@@ -200,5 +202,20 @@
     ],
     "regression_test": "../tests/test_arithmetic_certificate_runtime.py",
     "assurance": "Runtime failure is explicit; this does not upgrade the finite mathematical scope, independent replay, external review or formal assurance."
+  },
+  "maximal_subgroup_finite_checks": {
+    "checker": {
+      "path": "verify_class_group_error_cover.py",
+      "sha256": "4106505b2db378c54d4cac4043149cc0f15caea7e104c47fea84de1775c87ddf",
+      "locator": "Exact twelve fixed finite abelian groups; all199 rich subsets, independent subgroup enumeration and orientation products"
+    },
+    "receipt": {
+      "path": "class_group_error_cover_checks.json",
+      "sha256": "521aeeeae13a304fa384baadde2fe34e17546d5b38f20dd262d2ec248fd84a92",
+      "locator": "Current complete finite receipt, checker SHA256 and three rejected corruptions"
+    },
+    "command": "python3 research/arithmetic/verify_class_group_error_cover.py --output research/arithmetic/class_group_error_cover_checks.json",
+    "execution": "Internal fresh replay to a scratch output; byte-identical to the retained receipt.",
+    "scope": "Exact finite algebra only: doubling fibres, all maximal subgroups, outside-preimage inverse-pair densities, saturation and cover over199rich subsets in12listed groups. Three negative controls reject g-in-place-of-2g, one-family density and one-fixed-maximal-subgroup errors. This is not an analytic sieve proof, an infinite class-group assertion, a prime-distribution theorem or conductor-local verification. The existing maximal-order checker retains its original eight-group sufficient-saturation scope."
   }
 }

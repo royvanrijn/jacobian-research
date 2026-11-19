@@ -1,0 +1,281 @@
+\documentclass[a4paper,11pt]{amsart}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator{\lcmop}{lcm}
+
+\newcommand{\PP}{\mathbb P}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\cM}{\mathcal M}
+
+\title{Prime Partitions with Translation}
+\author{GPT 5.6 Sol Pro}
+\date{}
+
+\subjclass[2020]{11N35, 11B05}
+\keywords{translation property, sieve methods, almost-primes, prime partitions}
+
+\begin{document}
+
+\begin{abstract}
+For a set \(P\) of primes, let \(\mathcal M(P)\) be the set of integers greater than one whose prime divisors all lie in \(P\).
+For every \(\alpha\in(0,1)\), we construct a partition \(\mathbb P=P\sqcup Q\) with
+\(\pi_P(x)\sim \alpha x/\log x\) and
+\(\pi_Q(x)\sim(1-\alpha)x/\log x\) such that \(\mathcal M(P)\) has the translation property.
+In particular, the two classes may be chosen to have equal relative density among the primes, which answers the prime-partition part of a problem of Erdős.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Write \(\NN=\{1,2,\ldots\}\).
+A set \(A\subseteq\NN\) has the \emph{translation property} if, for every \(n\geq 1\), there is an integer \(t_n\geq 1\) such that
+\[
+a\in A \quad\Longleftrightarrow\quad a+t_n\in A
+\qquad (1\leq a\leq n).
+\]
+For a set \(P\subseteq\PP\) of primes, put
+\[
+\cM(P)=\{m\geq 2:p\mid m\Longrightarrow p\in P\}.
+\]
+We write
+\(\pi(x)=\#\{p\leq x:p\in\PP\}\) and
+\(\pi_P(x)=\#\{p\leq x:p\in P\}\).
+
+Erdős asked whether the primes can be partitioned into two classes, each containing \(\gg x/\log x\) primes up to \(x\), so that the integers composed of the primes in one class have the translation property \cite{Erdos}.
+We prove the stronger statement that this class may have any prescribed relative density strictly between \(0\) and \(1\) among the primes.
+The assertion is existential: it does not claim that every positive-density partition has the translation property.
+The sums-of-two-squares and minimal-translation parts of Erdős's problem are not considered here.
+
+\begin{theorem}\label{thm:main}
+For every \(\alpha\in(0,1)\), there is a partition
+\(\PP=P\sqcup Q\) such that
+\[
+\pi_P(x)\sim \alpha\frac{x}{\log x},
+\qquad
+\pi_Q(x)\sim (1-\alpha)\frac{x}{\log x},
+\]
+and \(\cM(P)\) has the translation property.
+\end{theorem}
+
+\section{An almost-prime lemma}
+
+For a positive integer \(m\), let \(\omega(m)\) denote the number of its distinct prime divisors.
+A linear form \(ak+b\in\mathbb Z[k]\) is called \emph{primitive} if \(\gcd(a,b)=1\).
+A finite family of integer linear forms is called \emph{admissible} if, for every prime \(p\), there is an integer \(k\) at which none of the forms vanishes modulo \(p\).
+
+\begin{lemma}\label{lem:sieve}
+For every \(r\geq 1\), there is an integer \(R_r\), depending only on \(r\), with the following property.
+If \(L_1,\ldots,L_r\in\mathbb Z[k]\) are distinct primitive linear forms with positive leading coefficients and form an admissible family, then infinitely many positive integers \(k\) satisfy
+\[
+\omega\!\left(\prod_{i=1}^r L_i(k)\right)\leq R_r.
+\]
+\end{lemma}
+
+\begin{proof}
+This is the linear-factor case of the beta-sieve theorem for almost-prime values of reducible polynomials.
+More precisely, Theorem~10.11 of Halberstam and Richert \cite{HR} applies to a product of \(g\) distinct irreducible polynomials of total degree \(G\) having no local obstruction, and permits every integer exceeding
+\[
+G-1+g\sum_{j=1}^g\frac1j
+   +g\log\!\left(\frac{2G}{g}+\frac1{g+1}\right)
+\]
+as an upper bound for the number of prime factors, counted with
+multiplicity, at infinitely many positive arguments.  In the customary
+notation, the theorem asserts that the product is a \(P_r\); in
+particular, its number \(\omega\) of distinct prime divisors is at most
+\(r\).
+Taking \(G=g=r\), one may use
+\[
+R_r=
+\left\lfloor
+r-1+r\sum_{j=1}^r\frac1j
++r\log\!\left(2+\frac1{r+1}\right)
+\right\rfloor+1.
+\]
+Admissibility is exactly the absence of a local obstruction for the product.
+The displayed bound depends only on \(r\), not on the coefficients of the forms; constants in the associated counting estimate may depend on the forms, which is immaterial here.
+\end{proof}
+
+\section{Construction of the partition}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Fix \(\alpha\in(0,1)\), and let \(R_r\) be as in Lemma~\ref{lem:sieve}.
+Set
+\[
+\mathcal R_n=\max_{1\leq r\leq n}R_r.
+\]
+We color the primes recursively with the colors \(P\) and \(Q\).
+Set \(C_0=1\), and initially leave every prime uncolored.
+
+Whenever the next prime has no prescribed color, use the following balancing rule.
+If \(N\) primes have been processed and \(N_P\) of them have been put in \(P\), write \(d=N_P-\alpha N\).
+Put the next prime in \(P\) when \(d\leq0\), and in \(Q\) when \(d>0\).
+A free step sends \(d\) respectively to \(d+1-\alpha\) or \(d-\alpha\).
+It follows directly that such steps drive \(d\) into the interval
+\([-\alpha,1-\alpha]\), leave that interval invariant, and satisfy
+\[
+|d_{\mathrm{new}}|\leq\max(1,|d|).
+\]
+
+Suppose that stage \(n-1\) has been completed and every prime up to a cutoff \(C_{n-1}\) has been colored.
+Continue with the balancing rule until reaching an integer \(B_n>C_{n-1}\) for which
+\[
+B_n\geq n,\qquad
+|\pi_P(B_n)-\alpha\pi(B_n)|\leq1,
+\qquad
+\pi(B_n)>n(\mathcal R_n+1).
+\]
+Such a cutoff exists because, once the discrepancy has entered
+\([-\alpha,1-\alpha]\), all later free steps keep it there.
+Every prime divisor of every integer at most \(n\) has now received its final color.
+Let
+\[
+S_n=\{a\in\{2,\ldots,n\}:p\mid a\Longrightarrow p\in P\}.
+\]
+Thus \(S_n=\cM(P)\cap[2,n]\) for the eventual partition.
+
+Put
+\[
+\Lambda_n=\lcmop(1,\ldots,n),
+\qquad
+M_n=\Lambda_n\prod_{p\leq B_n}p.
+\]
+For every \(1\leq a\leq n\) and every prime \(p\leq B_n\), the \(p\)-adic valuation satisfies
+\[
+v_p(M_n/a)=1+v_p(\Lambda_n)-v_p(a)\geq1.
+\]
+Define the linear forms
+\[
+\ell_*(k)=1+M_nk,
+\qquad
+\ell_a(k)=1+\frac{M_n}{a}k
+\quad (a\in S_n).
+\]
+They are distinct and primitive, and their leading coefficients are positive.
+
+The family
+\(\{\ell_*\}\cup\{\ell_a:a\in S_n\}\) is admissible.
+Indeed, every one of these forms is congruent to \(1\) modulo every prime \(p\leq B_n\).
+If \(p>B_n\), then \(p\nmid M_n\), and also \(p\nmid a\) for every
+\(a\leq n\).  Thus the leading coefficients \(M_n\) and \(M_n/a\)
+are nonzero modulo \(p\), so each form has exactly one root modulo \(p\).
+There are \(1+|S_n|\leq n<p\) forms, and hence their roots cannot cover all residue classes modulo \(p\).
+
+Lemma~\ref{lem:sieve} therefore supplies a positive integer \(k_n\) such that
+\[
+\omega\!\left(
+\ell_*(k_n)\prod_{a\in S_n}\ell_a(k_n)
+\right)
+\leq R_{1+|S_n|}
+\leq\mathcal R_n.
+\]
+Let \(U_n\) be the set of prime divisors of \(\ell_*(k_n)\), and let \(V_n\) be the set of prime divisors of
+\(\prod_{a\in S_n}\ell_a(k_n)\).
+Every prime in \(U_n\cup V_n\) exceeds \(B_n\).
+
+Moreover, \(U_n\cap V_n=\varnothing\).
+Indeed, if a prime \(q\) divided both \(\ell_*(k_n)\) and some \(\ell_a(k_n)\), then
+\[
+q\mid a\ell_a(k_n)-\ell_*(k_n)=a-1,
+\]
+which is impossible because \(q>B_n\geq n\geq a\).
+Prescribe every prime in \(U_n\) to lie in \(Q\), and every prime in \(V_n\) to lie in \(P\).
+These prescriptions concern previously uncolored primes and involve at most \(\mathcal R_n\) primes in total.
+Finally, set
+\[
+t_n=M_nk_n.
+\]
+
+We now verify the required pattern on \([1,n]\).
+Since \(1\notin\cM(P)\) and
+\(t_n+1=\ell_*(k_n)\) has all its prime divisors in \(U_n\subseteq Q\), neither \(1\) nor \(t_n+1\) belongs to \(\cM(P)\).
+If \(a\in S_n\), then
+\[
+t_n+a=a\ell_a(k_n)\in\cM(P),
+\]
+because every prime divisor of \(a\) and of \(\ell_a(k_n)\) lies in \(P\).
+If \(2\leq a\leq n\) and \(a\notin S_n\), choose a prime \(q\in Q\) dividing \(a\).
+Since \(q\leq a\leq n\leq B_n\), one has \(q\mid M_n\), and therefore \(q\mid t_n+a\).
+Thus \(t_n+a\notin\cM(P)\).
+We have proved
+\[
+a\in\cM(P)
+\quad\Longleftrightarrow\quad
+a+t_n\in\cM(P)
+\qquad (1\leq a\leq n).
+\]
+All colors used in this verification are already fixed, so later stages cannot destroy the equivalence.
+
+Let \(C_n\) be the largest element of
+\(U_n\cup V_n\cup\{B_n\}\).
+Color every still uncolored prime at most \(C_n\) in increasing order, respecting the prescriptions on \(U_n\cup V_n\) and applying the balancing rule at every other prime.
+A prescribed step changes
+\(\pi_P(x)-\alpha\pi(x)\) by less than \(1\) in absolute value, while a free step cannot increase its absolute value beyond the larger of its current value and \(1\).
+Since at most \(\mathcal R_n\) steps are prescribed, it follows that
+\[
+|\pi_P(x)-\alpha\pi(x)|
+\leq\mathcal R_n+1
+\qquad (B_n\leq x<B_{n+1}).
+\]
+Consequently,
+\[
+\frac{|\pi_P(x)-\alpha\pi(x)|}{\pi(x)}
+\leq
+\frac{\mathcal R_n+1}{\pi(B_n)}
+<\frac1n
+\qquad (B_n\leq x<B_{n+1}).
+\]
+
+Since \(B_n\geq n\), every prime is eventually colored and \(B_n\to\infty\).
+The last estimate gives
+\[
+\pi_P(x)=\alpha\pi(x)+o(\pi(x)),
+\qquad
+\pi_Q(x)=(1-\alpha)\pi(x)+o(\pi(x)).
+\]
+The prime number theorem now yields the asserted asymptotics and completes the proof.
+\end{proof}
+
+\begin{remark}
+The restriction \(m>1\) is not essential; it only fixes the status of
+the empty product \(1\).  If instead one defines
+\[
+\cM^{+}(P)
+   =\{m\geq1:p\mid m\Longrightarrow p\in P\},
+\]
+then \(1\in\cM^{+}(P)\).  The same construction proves the translation
+property for \(\cM^{+}(P)\), with the single change that the primes in
+\(U_n\), which divide
+\[
+\ell_*(k_n)=t_n+1,
+\]
+are prescribed to lie in \(P\) rather than in \(Q\).  Consequently both
+\(1\) and \(t_n+1\) belong to \(\cM^{+}(P)\).  The verification for
+\(2\leq a\leq n\), as well as the sieve and density arguments, is
+unchanged.  We use the convention \(1\notin\cM(P)\) to agree with
+Erdős's original formulation as a sequence beginning above \(1\).
+\end{remark}
+
+\begin{thebibliography}{9}
+
+\bibitem{Erdos}
+P.~Erdős,
+\emph{Some unconventional problems in number theory},
+Math. Mag. \textbf{52} (1979), no.~2, 67--70.
+
+\bibitem{HR}
+H.~Halberstam and H.-E.~Richert,
+\emph{Sieve Methods},
+London Mathematical Society Monographs, No.~4,
+Academic Press, London--New York, 1974.
+
+\end{thebibliography}
+
+\end{document}

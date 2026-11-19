@@ -38,13 +38,21 @@ uniform in the permitted valuations of \(N\); the order is fixed.
 
 **Theorem OrderClassError.** If \(2G=0\), then
 \(P_{\mathcal O}=\Lambda_{\mathcal O}\). Otherwise, for each fixed
-\(0<\delta<1/h\), uniformly for all \(N\ge3\),
+\(0<\delta<\delta_*(2G)\), uniformly for all \(N\ge3\),
 \[
  0\le R_\Lambda(N)-R_P(N)
  \ll_{\mathcal O,\delta}
         \frac{N J_{\mathcal O}(N)}{(\log N)^{1+\delta}}.
  \tag{O.3}
 \]
+Here, for a nonzero finite abelian group \(B\),
+\[
+ \delta_*(B)=\min_{\substack{\ell\mid |B|\\\ell\ {\rm prime}}}
+                    \frac{\ell-1}{2\ell}\ge\frac14.
+\]
+In particular the exponent \(\delta=1/5\) works for every fixed order;
+the implied constants still depend on the order. No endpoint estimate
+at \(\delta_*(2G)\) is asserted.
 Thus on sufficiently large admissible targets the ratio \(R_P/R_\Lambda\)
 is \(1+O_{\mathcal O,\delta}((\log N)^{-\delta})\).
 
@@ -156,87 +164,133 @@ genus. The local generator in (O.5) retains the missing information.
 
 ## 2. Saturation by good ring-class primes
 
-For each inverse pair \(\{g,-g\}\subset G\) with \(2g\ne0\), let
-\(\Omega_g\) be the rational split primes outside \(S\) whose proper
-prime-ideal classes are \(g,-g\). Put
+Put \(B=2G\). For each inverse pair \(\{g,-g\}\subset G\) with
+\(2g\ne0\), let \(\Omega_g\) be the rational split primes outside
+\(S\) whose proper prime-ideal classes are \(g,-g\), and set
 \[
  m_g=\operatorname{ord}(2g)-1,\qquad
- k_g(n)=\#\{q\in\Omega_g:v_q(n)=1\}.
+ k_g(n)=\#\{q\in\Omega_g:v_q(n)=1\},\qquad
+ B_n=\langle2g:k_g(n)\ge m_g\rangle\le B.
 \]
-Prime ideals here are prime to the conductor and invertible.
+Prime ideals here are prime to the conductor and invertible. Each
+inverse pair is counted once. If \(B\ne0\), write \(\mathcal H_B\)
+for its maximal proper subgroups and define
+\[
+ \begin{split}
+ \ell_M&=[B:M],\qquad
+ \Omega_M=\bigcup_{\{g,-g\}:\,2g\notin M}\Omega_g,\\
+ K_M&=\sum_{\{g,-g\}:\,2g\notin M}(m_g-1),\qquad
+ k_M(n)=\#\{q\in\Omega_M:v_q(n)=1\}.
+ \end{split}
+\]
 
 **Lemma OrderClassSaturation.** If \(n\in\Lambda_{\mathcal O}\) and
-\(k_g(n)\ge m_g\) for every such inverse pair, then
-\(n\in P_{\mathcal O}\). In particular,
+\(B_n=B\), then \(n\in P_{\mathcal O}\). In particular, for
+\(B\ne0\),
 \[
  \Lambda_{\mathcal O}\setminus P_{\mathcal O}
- \subset\bigcup_g\{n:k_g(n)<m_g\}.
+ \subset\bigcup_{M\in\mathcal H_B}\{n:k_M(n)\le K_M\}.
  \tag{O.7}
 \]
-If \(2G=0\), the two individual sets coincide.
+If \(B=0\), the two individual sets coincide. The sufficient condition
+\(k_g(n)\ge m_g\) for every inverse pair also remains valid.
 
-**Proof.** Start with an ideal in (O.6). At a good split prime, primitivity
+**Proof.** Start with a primitive integral invertible ideal from (O.6),
+whose class belongs to \(B\). At every good split prime, primitivity
 places the entire prime power in exactly one conjugate prime ideal.
-Reserve \(m_g\) exponent-one primes from each family. Changing their
-orientations gives increments \(0,-2g,\ldots,-2m_gg\), which fill
-\(\langle2g\rangle\). Over all inverse pairs these subgroups generate
-\(2G\). Hence one can cancel the initial class in \(2G\).
-Every conductor-local ideal is unchanged, as are norm and primitivity.
-The resulting principal ideal has a primitive integral generator.
-\(\square\)
+From each saturated family reserve \(m_g\) exponent-one primes and
+initially orient all of them as \(g\). This changes the class only
+by an element of \(B\). Reversing \(j\) of these orientations gives
+the increments \(-2jg\), for \(0\le j\le m_g\), which fill
+\(\langle2g\rangle\). The families are disjoint, so their independent
+choices fill \(B_n\). If \(B_n=B\), they cancel the residual class.
+Every conductor-local ideal, numerical norm and primitivity condition
+is preserved. The resulting principal ideal has a primitive integral
+generator.
 
-The fixed-order class-prime Mertens input is
+For a hidden failure, \(B_n\) is therefore proper and is contained in
+some \(M\in\mathcal H_B\). Every family with \(2g\notin M\) must
+be unsaturated. Their disjoint union gives \(k_M(n)\le K_M\), proving
+(O.7). For \(B=0\), (O.6) gives equality directly. \(\square\)
+
+The fixed-order class-prime Mertens input remains
 \[
  \sum_{\substack{q\le y\\q\in\Omega_g}}\frac1q
        =\frac1h\log\log y+O_{\mathcal O}(1)
        \qquad(2g\ne0).
  \tag{O.8}
 \]
-Bourgain--Fuchs, Section 2, numbered part (5), Lemma 2, equation
-(5.2), printed p.15, applies to a fixed primitive form of negative
-discriminant. The introduction also expressly includes nonfundamental
-discriminants \(-4a^2\). Their \(P_C=P_{C^{-1}}\) and
+Bourgain--Fuchs, Section 2, part (5), Lemma 2, equation (5.2),
+printed p.15, applies to a fixed primitive form of negative discriminant.
+Their introduction expressly includes nonfundamental discriminants
+\(-4a^2\). The identities \(P_C=P_{C^{-1}}\) and
 \(\epsilon(C)=1\) for a nonambiguous class give the inverse-pair
-coefficient \(1/h\), with \(h=|\operatorname{Pic}(\mathcal O)|\).
-For each fixed discriminant the stated prime-counting error is
-\(O_{\mathcal O}(x e^{-c\sqrt{\log x}})\), once \(x\) is large enough.
-Partial summation proves (O.8), since
+coefficient \(1/h\), where \(h=|\operatorname{Pic}(\mathcal O)|\).
+For each fixed discriminant the prime-counting error is
+\(O_{\mathcal O}(x e^{-c\sqrt{\log x}})\), for all sufficiently
+large \(x\). Partial summation proves (O.8), since
 \[
  \int_{x_0}^{\infty}e^{-c\sqrt{\log t}}\frac{dt}{t}<\infty.
 \]
-The finite initial range and deletion of the primes in \(S\) change
-only the bounded constant. A qualitative Chebotarev density alone
-would not supply this bounded Mertens remainder. This prime input
-chooses/marks good primes only; no distribution theorem at growing
-nonabelian moduli is invoked.
+The finite initial range and deletion of \(S\) change only the bounded
+constant. A qualitative Chebotarev density alone would not supply
+this bounded remainder. No distribution result at growing nonabelian
+moduli is invoked.
 
-To prove OrderClassError, apply exactly the direct-integer random-mark
-proof of ClassErrorComparison in the maximal-order note, Sections 2--3.
-Delete the fixed primes \(S\). For \(a+b=N\) in the individual shadow,
-every remaining inert prime excludes \(a=0,N\), with one root when it
-divides \(N\). A marked prime in \(\Omega_g\) excludes exactly
-\(v_q(a)=1\), namely \(q-1\) classes modulo \(q^2\). Higher powers are
-permitted. Neither rule uses maximality at a deleted prime.
+For \(M\in\mathcal H_B\), the prime index \(\ell_M\) divides
+\(|B|\). The doubling map \(G\to B\) has equal fibres, so exactly
+\(h(\ell_M-1)/\ell_M\) classes have \(2g\notin M\). None is
+ambiguous. They form \(h(\ell_M-1)/(2\ell_M)\) inverse pairs, and
+summing the finitely many instances of (O.8) gives
+\[
+ \sum_{\substack{q\le y\\q\in\Omega_M}}\frac1q
+ =d_M\log\log y+O_{\mathcal O}(1),\qquad
+ d_M=\frac{\ell_M-1}{2\ell_M}\ge\delta_*(B)\ge\frac14.
+ \tag{O.8a}
+\]
+Every prime divisor of \(|B|\) occurs as a maximal-subgroup index,
+by reducing a cyclic primary factor modulo that prime. Thus
+\(\min_Md_M=\delta_*(B)\). The proper-subgroup mechanism in the
+exceptional-value problem is classical; see Bourgain--Fuchs, Theorem 1
+and Section 2, part (5). The elementary fixed-group proof above is
+used here on a binary line; their squarefree exceptional-value theorem
+is not imported as this class-error estimate.
 
-For clarity, the quantitative budget of the reused sieve is unchanged:
-the finite Selberg support has prime-index product \(d\le z\);
-the mixed CRT moduli are at most \(d^2\), with total endpoint
-\(O_\epsilon(z^{4+\epsilon})\).
-The Markov Euler truncation uses \(y=z^{1/16}\).
-Independently marking the \(\Omega_g\) primes with probability \(t<1\)
-bounds a deficiency by
-\((1-t)^{-(m_g-1)}(1-t)^{k_g(a)}\).
-Taking its finite expectation gives
+To prove OrderClassError, use the direct-integer random-mark proof of
+MixedPrimeSquareSieve in the maximal-order note, Section 3, with
+\(\Omega_g\) replaced by \(\Omega_M\) and the fixed primes \(S\)
+deleted. For \(a+b=N\) in the individual shadow, every remaining
+inert prime excludes \(a=0,N\), with one root when it divides \(N\).
+A marked prime \(q\in\Omega_M\) excludes exactly \(v_q(a)=1\),
+namely \(q-1\) classes modulo \(q^2\). Its density is
+\(f_*(q)=(q-1)/q^2=q^{-1}+O(q^{-2})\). Higher powers remain
+permitted, even when \(q\mid N\). Neither rule requires maximality
+at a deleted prime.
+
+The full sieve budget is unchanged. Its finite Selberg support has
+prime-index product \(d\le z\); the mixed CRT moduli are at most
+\(d^2\), with total endpoint \(O_\epsilon(z^{4+\epsilon})\).
+The positive Markov Euler truncation uses \(y=z^{1/16}\).
+Independently mark the primes in \(\Omega_M\cap[1,y]\) with probability
+\(t<1\). An integer with \(k_M(a)\le K_M\) survives with probability
+at least \((1-t)^{K_M}\), a fixed positive constant. The finite
+expectation, using (O.8a), bounds each deficiency by
 \[
  \ll_{\mathcal O,t}
- \frac{N J_{\mathcal O}(N)}{(\log y)^{1+t/h}}
+ \frac{N J_{\mathcal O}(N)}{(\log y)^{1+td_M}}
        +O_\epsilon(z^{4+\epsilon}).
 \]
-Choose \(z=N^{1/10}\), \(\epsilon<1/2\), and
-\(\delta<t/h<1/h\). The endpoint is \(O(N^{0.45})\), absorbed in
-(O.3); sum the finitely many deficient families and both orientations
-of the additive pair. All target valuations remain in the exact
-inert-root product (O.1). This proves OrderClassError.
+Choose \(z=N^{1/10}\), \(\epsilon=1/2\), and
+\(t\in(0,1)\) so that \(\delta<t\delta_*(B)\).
+The endpoint is \(O(N^{9/20})\), absorbed in (O.3) because
+\(J_{\mathcal O}(N)\ge1\). Sum the finitely many maximal subgroups
+and both orientations of the additive pair, then enlarge the constant
+to cover all \(N\ge3\). All target valuations remain in the exact
+inert-root product (O.1). This proves OrderClassError. In particular,
+\(t=9/10\) gives \(td_M\ge9/40>1/5\), so the exponent \(1/5\)
+is available for every fixed order, with order-dependent constants.
+No new zero-free or graph input is used, and no estimate at the
+endpoint \(\delta_*(B)\) is asserted.
 
 ## 3. A finite additive cover despite unbounded conductor valuations
 
@@ -454,6 +508,11 @@ The [finite checker](verify_primitive_norm_order_profiles.py) and its
 finite coordinate images, local tables, target profiles and deliberate
 corruptions on the specified orders and moduli. Those computations do
 not prove the unrestricted ideal, prime-counting or dispersion inputs.
+The separate [maximal-subgroup checker](verify_class_group_error_cover.py)
+and [receipt](class_group_error_cover_checks.json) check only the declared
+twelve finite groups, 199 saturated-family subsets, exact union densities
+and three rejected corruptions. They do not prove the infinite group,
+prime-distribution, conductor-local or analytic assertions.
 The theorem has internal written/source review and exact finite replay;
 no external human review, formal verification or historical-priority
 certificate is asserted.

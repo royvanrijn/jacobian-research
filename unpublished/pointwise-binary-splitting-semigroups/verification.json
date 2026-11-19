@@ -4,8 +4,8 @@
   "title": "Pointwise Binary Correlations in Abelian Splitting Semigroups",
   "edition": {
     "pdf": "paper.pdf",
-    "sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
-    "pages": 64
+    "sha256": "c343ed8f264f55f34963fba07c9d6475847a186e2c228aecdff25df3d36de08e",
+    "pages": 65
   },
   "mathematical_scope": {
     "general": "Fixed even modulus; two arbitrary fixed subgroups, fixed residue subsets, fixed coprime bad-supported coefficients. Explicit positive logarithmic saving uniform in targets and valuations; uniform absolute interval discrepancy.",
@@ -14,7 +14,7 @@
     "ordinary_quadratic_indicators": "Fixed-shift pairs for a primitive quadratic Euler indicator with finitely many fixed valuation masks and a coupled exceptional-prime Haar factor. Includes Connors-Keating and the five ordinary forms x^2+d y^2, d=1,2,3,4,7. Separate application checks are included in the article.",
     "quadratic_order_bounds": "Independent classical twofactor Kloosterman completion, shifted weighted family, finite lower sieve and recoverable positive cofactor restoration. No recent zero-free or graph input.",
     "quadratic_order_leading": "Explicit leading asymptotic for ordered numerical primitive norm-value pairs in every fixed imaginary quadratic order; uniform o(1), not a claimed all-order logarithmic saving.",
-    "class_error": "Independent lower-logarithmic-order class obstruction estimate, including conductor-local ideal types.",
+    "class_error": "For B=2Pic(O) nonzero, every eta<min_{ell prime dividing |B|}(ell-1)/(2ell); hence eta=1/5 works for every fixed imaginary quadratic order, with constants depending on that order. Uniform in targets and valuations, including conductor-local types. If B=0 the numerical value sets agree exactly. Classical inputs only.",
     "limits": "No growing modulus, numerical onset, complete small exceptions, or power-short relative asymptotic. No arbitrary disjoint prime prescriptions or uniformity for intermediate growing sublinear shifts. Even-modulus core convention excludes two."
   },
   "internal_application_review": [
@@ -47,6 +47,16 @@
       "reviewer": "Codex comparison_audit, separate readonly quadratic-indicator review",
       "scope": "Arbitrary fixed valuation masks, coupled exceptional-prime Haar state, C1-C4 under the shared fixed-shift comparison, model Euler cancellation, five norm-form criteria and Smilansky Theorem10 and Section6.3.",
       "result": "No concrete application gap or additional analytic input identified. The finite checker was separately replayed to a temporary receipt; its327680 classifications,3584 pair enclosures,28 singleton enclosures,121656 certified memberships and5 shift-one normalizations passed. Finite evidence only, not a proof of asymptotics."
+    },
+    {
+      "reviewer": "Codex comparison_pdf_reader, finite-group and primary-source audit",
+      "scope": "Orientation generation, maximal-subgroup cover, doubled preimage density, conductor preservation and actual Bourgain-Fuchs v2 statements.",
+      "result": "No concrete gap identified in the fixed-order strengthening; strict endpoint, order-dependent constants and source scope distinguished."
+    },
+    {
+      "reviewer": "Codex editorial_pdf_reader, adversarial source proof reread",
+      "scope": "Actual replacement in norms.tex: all quantifiers, finite union, CRT/Selberg normalization, random marking, target valuations, conductor-local ideals and independence from the new analytic inputs.",
+      "result": "No concrete repair required. General eta<eta_star and uniform1/5 reconstruct; full leading theorem remains only asymptotic."
     }
   ],
   "primary_editions": [
@@ -84,6 +94,11 @@
       "path": "../../research/arithmetic/sources/smilansky-1208.2419v2.pdf",
       "sha256": "d1788120225941bdc57b94a34d20f0c0fae4fe1ff505cb67d452b48e1447b86b",
       "scope": "Smilansky2013, arXiv1208.2419v2 Theorem10 andSection6.3; exact five-form indicator criteria and conjectured pair constants compared with the quadratic-indicator application."
+    },
+    {
+      "path": "../../research/arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
+      "scope": "Bourgain-Fuchs v2 Theorem1 alternative4.2, p14; Section2 part5, pp14-18, including5.1 squaring-preimage and excluded-prime sieve; Lemma2/5.2, p15, fixed-form prime distribution with ambiguous/nonambiguous density distinction. Proper-subgroup precedent; no direct import of its squarefree exception theorem as our conductor-local binary bound."
     }
   ],
   "import_review_limit": "The complete recent zero-free and graph preprints were not independently revalidated in this manuscript-preparation audit. They remain exact attributed mathematical dependencies. Existing canonical source-audit records have their own separate inspection scope.",
@@ -104,12 +119,20 @@
       "command": "python3 research/arithmetic/verify_quadratic_indicator_pairs.py",
       "result": "Separate internal readonly replay passed327680 integer classifications through65536,3584 pair enclosures,28 singleton enclosures,121656 certified memberships and5 shift-one normalizations.",
       "scope": "Finite exact classification/local-factor checks only; not an asymptotic proof."
+    },
+    "class_group_cover": {
+      "checker": "../../research/arithmetic/verify_class_group_error_cover.py",
+      "checker_sha256": "4106505b2db378c54d4cac4043149cc0f15caea7e104c47fea84de1775c87ddf",
+      "receipt": "../../research/arithmetic/class_group_error_cover_checks.json",
+      "receipt_sha256": "521aeeeae13a304fa384baadde2fe34e17546d5b38f20dd262d2ec248fd84a92",
+      "result": "Exact standard-library checks passed12 finite cyclic products,199 rich-family subsets, independent maximal-subgroup/orientation enumerations and3 negative controls. Root replay matched recorded receipt byte-for-byte; normal and optimized execution matched in author audit.",
+      "scope": "Finite group algebra only. Does not establish the analytic sieve, class-prime distribution, genus lemma, conductor-local ideal assertions or all finite abelian groups."
     }
   },
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
     "result": "passed",
-    "pages": 64,
+    "pages": 65,
     "unresolved_references": false,
     "overfull_boxes": 0,
     "underfull_boxes": 1,
@@ -119,46 +142,43 @@
   "pdf_only_reader": {
     "performed": true,
     "date": "2026-11-19",
-    "reviewer": "Codex editorial_pdf_reader, fresh isolated AI agent",
-    "review_kind": "Internal PDF-only editorial and statement-consistency review, followed by a focused navigation check",
-    "supplied_context": "Only frozen compiled PDFs, their derived text/images/URI annotations, the five reader questions and the requested editorial checks. No repository sources, supporting notes, research history, other chats or web accessed.",
+    "reviewer": "Codex class_error_pdf_reader, fresh isolated AI agent",
+    "review_kind": "Focused internal PDF-only mathematical reading of strengthened class error and its application, with final clarification check",
+    "supplied_context": "Frozen compiled PDFs, five reader questions and the new proposition's intended scope only. Derived text/images/URI annotations permitted. No repository sources, supporting notes, history, other chats or web accessed.",
     "editions": [
       {
-        "sha256": "35033deb704ffaaefc85aea4957ae27bf7917611993a85fddcad51f9d8f4ddf4",
-        "pages": 64,
-        "scope": "All64pages read; focused examination of opening consequences, statements/remainders, proof flow and AppendixA. Hash verified before and after."
+        "sha256": "b732ff5a1c296e52d50616cb52d74be693053d5ae1ca669c161bfd3f9df75b9a",
+        "pages": 65,
+        "scope": "Abstract, introduction, Section10 in detail (pp42-49), relevant AppendixA statements and Section12 boundaries. Hash checked before and after; not a fresh whole-paper proof certification."
       },
       {
-        "sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
-        "pages": 64,
-        "scope": "Focused final p54 naming/link and appendix-start check. Hash verified before and after."
+        "sha256": "c343ed8f264f55f34963fba07c9d6475847a186e2c228aecdff25df3d36de08e",
+        "pages": 65,
+        "scope": "Focused final pp46-47 check of explicit sieve-index support and strict exponent/endpoint clarification. Hash checked before and after."
       }
     ],
     "five_question_answers": {
-      "contribution": "Pointwise binary numerical-value counts for fixed subgroup restrictions and self-cosets, fixed-shift ordinary quadratic indicators including Smilansky's five forms, and primitive norm leading asymptotics. Values versus coordinate representation multiplicities is explicit.",
-      "concept": "Exactly prime-invariant arithmetic models retain all congruence characters, permit indicator replacement, then reduce main terms to local factors. This mechanism is motivated before machinery.",
-      "hardest": "Progression character frame and signed cancellation Section5.1; growing-target pairing Section5.2; target-grid normalization Sections5.5-5.6; fixed-shift wide arcs Section6. Classical weighted family and positive restoration remain fully developed in AppendixA.",
-      "limits": "Fixed moduli and coefficients, nonnumerical thresholds, no power-short relative interval count or growing-sublinear-shift uniformity, and common-prime-class restriction. Recent analytic imports explicit. Ordinary quadratic pairs retain only their stated little-o remainder.",
-      "verification_obstacles": "No concrete statement, notation or remainder contradiction identified in this editorial review. Imported analytic proofs were not independently verified. Initial bibliography-link objection withdrawn after URI annotation inspection. Companion/window works subsequently identified by title with an embedded window-paper link."
+      "contribution": "Pointwise comparison of primitive numerical norm-value pairs and locally represented value pairs on the actual binary line. Proposition10.3 allows every eta<eta_star, avoiding the previous inverse-class-number saving and giving a universal permissible exponent1/5 for each fixed order.",
+      "concept": "Rich exponent-one inverse-prime families whose doubles generate2G realize all orientation changes. Failure puts the rich subgroup inside a maximal proper subgroup; every outside family is deficient. Aggregate the whole deficient union rather than a single inverse pair.",
+      "hardest": "Equal-fibre doubling count and random marking sieve, pp45-47. Reader reconstructed the inverse-pair factor1/2, exact prime-square densities, Selberg1/G(z) normalization, Euler-mass truncation, finite expectation and N^(9/20) endpoint error. Choosing t=.9 yields td_M>=9/40>1/5.",
+      "limits": "Strict eta<eta_star, no endpoint/optimality claim. Exponent1/5 common across fixed orders; constants depend on the order. Target valuations retained through J_O. Conductor-local ideals unchanged by good-prime reorientation. Full leading asymptotic remains only sim, with no new quantitative conductor-tail remainder.",
+      "verification_obstacles": "No definite gap identified in the new class-error proof or its conductor-sensitive use. Classical prime-class and Hasse-norm inputs and AppendixA remain substantive sources; this reader did not independently validate those complete external proofs or the recent analytic imports."
     },
-    "editorial_checks": {
-      "consequences_before_machinery": "Confirmed: Smilansky five-form predictions lead abstract and occur p1; consecutive sums-of-two-squares coefficient1/2 and prime3mod4 eventual self-sums with constants occur p2.",
-      "technical_accounting": "Confirmed: numerical saving choices collected in Section7; early theorem statements retain positive explicit savings. No quantitative CK remainder implied.",
-      "independent_norm_route": "Confirmed: abstract/p3 and main Theorem10.1 foreground independent order bounds; complete classical core argument is AppendixA, with application proof in main Section10.",
-      "connors_keating": "Confirmed: deliberate compact five-page application in Section11; same fixed-shift comparison, separate arithmetic checks and little-o remainder.",
-      "proof_locators": "No stale locator caused by appendix relocation found; LemmaA.1, PropositionA.2 and SectionA.3 resolve to substantive proofs."
-    },
-    "final_result": "No remaining editorial objection after the focused final naming/link check. Limited internal AI editorial review; no external human review, formal verification or independent proof certification inferred."
+    "clarifications": [
+      "Explicit squarefree sieve-index support on chosen inert and marked primes at most y.",
+      "Explicit link from t<1 to the strict eta<eta_star range, with no endpoint or optimality assertion."
+    ],
+    "final_result": "Both final clarifications are correct and introduce no scope change; no new mathematical issue identified in the focused final passages. Internal AI review only."
   },
   "layout_review": {
     "performed": true,
     "date": "2026-11-19",
     "reviewer": "Codex root, rendered-page inspection",
-    "edition_sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
-    "pages": 64,
-    "method": "Rendered every final page with pdftoppm at65dpi and inspected all11 contact sheets. Inspected1500pixel renders of opening pp1-2, independent norm theorem p43 and appendix transition/lemma pp54-55 in the initial64page edition; rerendered and inspected finalp54 after naming/link change.",
-    "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken section transitions found. AppendixA and main norm-theorem cross references are readable. One harmless underfull bibliography paragraph inspected.",
-    "scope": "Layout review only; unchanged underlying mathematical proof files checked separately against the previously reviewed source archive."
+    "edition_sha256": "c343ed8f264f55f34963fba07c9d6475847a186e2c228aecdff25df3d36de08e",
+    "pages": 65,
+    "method": "Rendered all65 final pages with pdftoppm at65dpi and inspected all11 contact sheets. Additionally inspected1500pixel renders of pp43-47, covering the proposition, genus input, complete new subgroup argument and marking sieve.",
+    "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken section transitions found. One harmless underfull bibliography paragraph inspected.",
+    "scope": "Visual layout review, separate from the mathematical and finite-group checks."
   },
   "assurance": {
     "external_human_review": false,
@@ -169,7 +189,7 @@
   },
   "next_review": [
     "Obtain external specialist review of the shared comparison hypotheses, reflected and fixed-shift frequency estimates, complex-character coset models and quadratic-indicator application, retaining the exact preprint dependencies.",
-    "Obtain specialist review of the independently proved older-input norm route, class error and conductor-tail transfer.",
+    "Obtain specialist review of the independent classical norm route, strengthened maximal-subgroup class-error estimate and conductor-tail transfer.",
     "Continue historical-priority review beyond the precise primary-source comparisons already included."
   ],
   "prior_pdf_only_readers": [
@@ -264,13 +284,47 @@
         "Restricted Lemma8.1 to the required bulk range and checked Y/r>=N^(1/2)/exp(sqrt(logN))>N^(2/5)."
       ],
       "final_result": "The focused followups reconstructed the expanded deductions and confirmed the final bulk-range correction. No unresolved concrete implication/application gap identified in the reviewed passages. This remains limited internal AI review, not full proof certification or independent validation of imported analytic preprints."
+    },
+    {
+      "performed": true,
+      "date": "2026-11-19",
+      "reviewer": "Codex editorial_pdf_reader, fresh isolated AI agent",
+      "review_kind": "Internal PDF-only editorial and statement-consistency review, followed by a focused navigation check",
+      "supplied_context": "Only frozen compiled PDFs, their derived text/images/URI annotations, the five reader questions and the requested editorial checks. No repository sources, supporting notes, research history, other chats or web accessed.",
+      "editions": [
+        {
+          "sha256": "35033deb704ffaaefc85aea4957ae27bf7917611993a85fddcad51f9d8f4ddf4",
+          "pages": 64,
+          "scope": "All64pages read; focused examination of opening consequences, statements/remainders, proof flow and AppendixA. Hash verified before and after."
+        },
+        {
+          "sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
+          "pages": 64,
+          "scope": "Focused final p54 naming/link and appendix-start check. Hash verified before and after."
+        }
+      ],
+      "five_question_answers": {
+        "contribution": "Pointwise binary numerical-value counts for fixed subgroup restrictions and self-cosets, fixed-shift ordinary quadratic indicators including Smilansky's five forms, and primitive norm leading asymptotics. Values versus coordinate representation multiplicities is explicit.",
+        "concept": "Exactly prime-invariant arithmetic models retain all congruence characters, permit indicator replacement, then reduce main terms to local factors. This mechanism is motivated before machinery.",
+        "hardest": "Progression character frame and signed cancellation Section5.1; growing-target pairing Section5.2; target-grid normalization Sections5.5-5.6; fixed-shift wide arcs Section6. Classical weighted family and positive restoration remain fully developed in AppendixA.",
+        "limits": "Fixed moduli and coefficients, nonnumerical thresholds, no power-short relative interval count or growing-sublinear-shift uniformity, and common-prime-class restriction. Recent analytic imports explicit. Ordinary quadratic pairs retain only their stated little-o remainder.",
+        "verification_obstacles": "No concrete statement, notation or remainder contradiction identified in this editorial review. Imported analytic proofs were not independently verified. Initial bibliography-link objection withdrawn after URI annotation inspection. Companion/window works subsequently identified by title with an embedded window-paper link."
+      },
+      "editorial_checks": {
+        "consequences_before_machinery": "Confirmed: Smilansky five-form predictions lead abstract and occur p1; consecutive sums-of-two-squares coefficient1/2 and prime3mod4 eventual self-sums with constants occur p2.",
+        "technical_accounting": "Confirmed: numerical saving choices collected in Section7; early theorem statements retain positive explicit savings. No quantitative CK remainder implied.",
+        "independent_norm_route": "Confirmed: abstract/p3 and main Theorem10.1 foreground independent order bounds; complete classical core argument is AppendixA, with application proof in main Section10.",
+        "connors_keating": "Confirmed: deliberate compact five-page application in Section11; same fixed-shift comparison, separate arithmetic checks and little-o remainder.",
+        "proof_locators": "No stale locator caused by appendix relocation found; LemmaA.1, PropositionA.2 and SectionA.3 resolve to substantive proofs."
+      },
+      "final_result": "No remaining editorial objection after the focused final naming/link check. Limited internal AI editorial review; no external human review, formal verification or independent proof certification inferred."
     }
   ],
   "standalone_build": {
     "result": "passed",
     "method": "Fresh extraction of source.zip, verification of every source_manifest hash, then declared latexmk build using only extracted sources.",
     "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-    "pdf_sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
+    "pdf_sha256": "c343ed8f264f55f34963fba07c9d6475847a186e2c228aecdff25df3d36de08e",
     "reproduces_identical_pdf_bytes": true,
     "warnings": [],
     "tex_sources": {
@@ -281,10 +335,10 @@
       "fixed-shift-comparison.tex": "d8cb3b5a2596343aaa1e20e57e40f25f239fee0f72ac6837fdda71b63a9d4cae",
       "graph.tex": "0cd3eb5d409c4e7fe258eed3d68fdc11ee968a1b77079efec6090985b5f3285c",
       "inputs.tex": "4294614003c9c4e571538b8ea65e956c16d697a33843178561d1689aef3ec3b6",
-      "introduction.tex": "414dd73d46de3da0f7fa45ebf77fa92784a1b60daaf76e59cd763c320b6ebaa7",
-      "main.tex": "0e62eaa5a1ed82695befaade8dbb758c2ad5805803612f7402c9bd633e3cb3e8",
+      "introduction.tex": "954b79f797d03f7237aa14976ce9ab7e42c4cd9352790f168fc82f07cf22f7e2",
+      "main.tex": "11649b0ce35a4a6e0f44e6c7ab57f04ae317c6119fcfbe1c0ae49d0c1017ef67",
       "model.tex": "b82d8c14d44ba997b42f0018ddb738233edd74a15829a8cc67c1bc0bc8a05f49",
-      "norms.tex": "034f4409e577e927c23a0b7a69a809cabcdf763fb5679e3a12b1e76dd3329868",
+      "norms.tex": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
       "older-norm-route.tex": "4bda30e5a083454b212b441d92ccd6724901685a5427b2f220f7fa10a908d24c",
       "quadratic-pairs.tex": "c892e781fb6b9e0ddc7d0480d84d33edcb69ac147638227e8dca2d645375a0db",
       "references.tex": "a55c95c0fe51245fec1f816831042257eefe8f00bb2f606631bb09821526f930",
@@ -301,6 +355,16 @@
       "method": "Rendered every page of the63page edition17e7c6b2 with pdftoppm at65dpi; inspected all11 six-page contact sheets. Additionally inspected1500pixel renders of pp25,34,41,59 for the expanded Mellin calculation, record-stratum sieve bound, complex-coset example and quadratic indicator model. Final statement correction changed only p32, confirmed by per-page whitespace-normalized PDF text comparison; rerendered and inspected that page at1500pixels in final editioncb664f8e.",
       "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken section transitions identified. One harmless underfull bibliography paragraph inspected; references and embedded source links remain legible.",
       "scope": "Layout inspection only, separate from mathematical proof review."
+    },
+    {
+      "performed": true,
+      "date": "2026-11-19",
+      "reviewer": "Codex root, rendered-page inspection",
+      "edition_sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
+      "pages": 64,
+      "method": "Rendered every final page with pdftoppm at65dpi and inspected all11 contact sheets. Inspected1500pixel renders of opening pp1-2, independent norm theorem p43 and appendix transition/lemma pp54-55 in the initial64page edition; rerendered and inspected finalp54 after naming/link change.",
+      "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken section transitions found. AppendixA and main norm-theorem cross references are readable. One harmless underfull bibliography paragraph inspected.",
+      "scope": "Layout review only; unchanged underlying mathematical proof files checked separately against the previously reviewed source archive."
     }
   ],
   "editorial_revision": {
@@ -324,6 +388,16 @@
       "norm_application_proofs": "Source from Local ideals and the principal genus to EOF byte-identical; introductory dependency locators updated.",
       "new_mathematical_results": false
     },
+    "assurance_changes": false,
+    "edition_sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415"
+  },
+  "class_error_strengthening": {
+    "baseline_edition_sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
+    "statement": "Proposition10.3: replace eta<1/|Pic(O)| by eta<eta_star, the minimum over PRIME divisors ell of |2Pic(O)| of (ell-1)/(2ell). Universal fixed-order choice eta=1/5, yielding logarithmic denominator power6/5.",
+    "proof": "Saturated inverse-prime families generate B_n<=2G. If B_n is proper, put it inside a maximal subgroup M. Every family with2g outsideM is deficient, so their total exact-exponent-one prime count is bounded. Doubling-preimage counting gives density(ell-1)/(2ell). Apply the existing finite marking sieve to this entire union, then sum over maximal subgroups and both summand positions.",
+    "limits": "Strict eta<eta_star, with no endpoint or optimality assertion. Constants depend on the order and eta. No new quantitative remainder for the full conductor-prefix leading asymptotic.",
+    "dependencies": "Existing principal-genus lemma, fixed-order prime-class Mertens estimate, CRT and finite Selberg upper-sieve normalization. No recent zero-free/graph input needed for class error.",
+    "attribution": "Bourgain-Fuchs v2 Theorem1 alternative4.2 and Section2 part5 supply classical subgroup-concentration/sieving precedent. Their squarefree setup is not silently used as the unrestricted conductor-local binary result.",
     "assurance_changes": false
   }
 }

@@ -531,7 +531,7 @@ and the three stated corollaries.
 
 For (B.11), the class error is
 \(O(NJ_{\mathcal O}(N)/\log^{1+\delta}N)\), for any fixed
-\(0<\delta<1/h(\mathcal O)\). The bad densities range over a finite
+\(0<\delta<\delta_*(2\operatorname{Pic}(\mathcal O))\), when the doubled class group is nontrivial, as defined in the all-orders theorem. The error vanishes when that group is trivial, and the exponent \(\delta=1/5\) is available in every fixed order. The bad densities range over a finite
 periodic set and have a positive minimum on admissible targets.
 The error is therefore smaller than the displayed main term uniformly
 over those targets. The proved conductor-prefix tail and Haar

@@ -33,14 +33,21 @@ Every target outside \(\mathcal A_K\) has count zero. The constants and
 threshold are uniform in all permitted valuations of the target, but
 are not asserted uniform in varying \(K\).
 
+For a nonzero finite abelian group \(B\), put
+\[
+ \delta_*(B)=\min_{\substack{\ell\mid |B|\\\ell\ {\rm prime}}}
+                    \frac{\ell-1}{2\ell}\ge\frac14.
+\]
+This is an available saving threshold; no endpoint estimate or optimality claim is asserted.
+
 **Theorem ClassErrorComparison.** If \(2G=0\), then \(P=\Lambda\).
-Otherwise, for every fixed \(0<\delta<1/h\), uniformly for \(N\ge3\),
+Otherwise, for every fixed \(0<\delta<\delta_*(2G)\), uniformly for \(N\ge3\),
 \[
  0\le R_\Lambda(N)-R_P(N)
        \ll_{K,\delta}\frac{N J_K(N)}{(\log N)^{1+\delta}}.
  \tag{M.3}
 \]
-In particular \(\delta=1/(2h)\) is permissible. On sufficiently large
+In particular \(\delta=1/5\) is permissible for every fixed field; the implied constants still depend on that field. On sufficiently large
 admissible targets,
 \[
  R_P(N)=R_\Lambda(N)\left(1+O_{K,\delta}((\log N)^{-\delta})\right).
@@ -51,8 +58,8 @@ coordinate asymptotic using a maximum representation multiplicity.
 They do not evaluate an unweighted leading constant or numerical onset.
 
 The proof has two independent parts. Generic prime-factor saturation
-makes every hidden class failure deficient in one positive-density
-ideal-class prime family. An exact prime-square sieve bounds those
+makes every hidden class failure deficient in the full collection of
+class-prime families outside a maximal subgroup of the doubled class group \(2G\). An exact prime-square sieve bounds those
 failures on every additive line. Separately, the genus shadow is a
 finite collection of quadratic-splitting cores with periodic character
 conditions. The existing fixed-period theorem supplies a sharp
@@ -141,47 +148,69 @@ by a rational norm assertion: the latter identifies only the class
 modulo \(2G\), and the separate valuation argument proves local
 integrality and primitivity.
 
-## 2. A generic saturation criterion
+## 2. Saturated classes and maximal subgroups
 
 Choose one representative from every unordered class pair
 \(\{g,-g\}\) with \(2g\ne0\), and call the resulting finite set \(T_G\).
-Set
+Put \(B=2G\), and set
 \[
- \Omega_g=\{q\text{ odd unramified split}:
-             [\mathfrak q],[\overline{\mathfrak q}]=g,-g\},
- \quad m_g=\operatorname{ord}(2g)-1,\quad
- k_g(n)=\#\{q\in\Omega_g:v_q(n)=1\}.
+ \begin{split}
+ \Omega_g&=\{q\text{ odd unramified split}:
+             [\mathfrak q],[\overline{\mathfrak q}]=g,-g\},\\
+ m_g&=\operatorname{ord}(2g)-1,\qquad
+ k_g(n)=\#\{q\in\Omega_g:v_q(n)=1\},\\
+ B_n&=\langle2g:g\in T_G,\ k_g(n)\ge m_g\rangle\le B.
+ \end{split}
  \tag{M.8}
 \]
+A family is saturated for \(n\) when \(k_g(n)\ge m_g\). The prime
+families \(\Omega_g\) are disjoint. If \(B\ne0\), let
+\(\mathcal H_B\) be its finite set of maximal proper subgroups, and for
+\(M\in\mathcal H_B\) define
+\[
+ \begin{split}
+ \ell_M&=[B:M],\qquad
+ \Omega_M=\bigcup_{\substack{g\in T_G\\2g\notin M}}\Omega_g,\\
+ K_M&=\sum_{\substack{g\in T_G\\2g\notin M}}(m_g-1),\qquad
+ k_M(n)=\#\{q\in\Omega_M:v_q(n)=1\}.
+ \end{split}
+\]
+Each inverse pair occurs once in these expressions. The quotient
+\(B/M\) is cyclic of prime order \(\ell_M\).
 
-**Lemma ClassSaturation.** If \(n\in\mathcal I\) and
-\(k_g(n)\ge m_g\) for every \(g\in T_G\), then
-\(\mathcal S(n)\) is the entire coset of \(2G\) determined by \(n\).
-Consequently
+**Lemma ClassSaturation.** If \(n\in\mathcal I\) and \(B_n=B\),
+then \(\mathcal S(n)\) is the entire genus coset determined by \(n\).
+In particular, for \(B\ne0\),
 \[
  \Lambda\setminus P\subset
-       \bigcup_{g\in T_G}\{n\in\mathcal I:k_g(n)\le m_g-1\}.
+    \bigcup_{M\in\mathcal H_B}\{n\in\mathcal I:k_M(n)\le K_M\}.
  \tag{M.9}
 \]
-If \(2G=0\), the union is empty and \(\Lambda=P\).
+If \(B=0\), then \(\Lambda=P\). The stronger sufficient condition
+\(k_g(n)\ge m_g\) for every \(g\in T_G\) remains valid.
 
-**Proof.** Reserve \(m_g\) distinct exponent-one primes from each
-\(\Omega_g\) and orient all other entire powers arbitrarily.
-The \(\Omega_g\) are disjoint. For the reserved block the available sums
-\[
-              (m_g-2j)g,\qquad0\le j\le m_g,
-\]
-are precisely \(m_gg+\langle2g\rangle\).
-The subgroups \(\langle2g\rangle\), over all nonambiguous inverse pairs,
-generate \(2G\). Their independent sums therefore fill a translate of
-\(2G\), which is the already determined genus coset. In that coset the
-principal class is attainable exactly when \(n\in\Lambda\).
-Ramified classes and every power of split two are part of the residual
-class and are corrected in the same argument. \(\square\)
+**Proof.** From each saturated family reserve \(m_g\) distinct
+exponent-one primes, initially orienting them all as \(g\). Orient
+all remaining entire prime powers arbitrarily. For the reserved block,
+reversing \(j\) orientations changes the class by \(-2jg\), where
+\(0\le j\le m_g\). These changes fill \(\langle2g\rangle\), since
+\(m_g+1=\operatorname{ord}(2g)\). Different families have disjoint
+prime support, so their independent changes fill \(B_n\).
+Thus \(B_n=B\) fills the full genus coset, and for \(n\in\Lambda\)
+that coset contains the principal class by (M.7). Ramified classes and
+all powers of split two remain in the residual class and are corrected
+in this same way.
 
-For each such inverse pair the rational-prime density is \(1/h\), not
-\(1/(2h)\). The fixed-class prime theorem in Bourgain--Fuchs,
-arXiv:1105.3698v2, Section 2, part (5), Lemma 2, (5.2), gives by partial summation
+If \(n\in\Lambda\setminus P\), then \(B_n\) is proper. Choose a
+maximal subgroup \(M\) containing it. Every family with \(2g\notin M\)
+is unsaturated, so \(k_g(n)\le m_g-1\). Summing over those disjoint
+families gives \(k_M(n)\le K_M\), proving (M.9). For \(B=0\), (M.7)
+gives equality of the individual sets directly. \(\square\)
+
+For each nonambiguous inverse pair the rational-prime density is
+\(1/h\), not \(1/(2h)\). The fixed-class prime theorem in
+Bourgain--Fuchs, arXiv:1105.3698v2, Section 2, part (5), Lemma 2,
+equation (5.2), gives by partial summation
 \[
  \sum_{\substack{q\le y\\q\in\Omega_g}}\frac1q
                   =\frac1h\log\log y+O_K(1).
@@ -190,17 +219,38 @@ arXiv:1105.3698v2, Section 2, part (5), Lemma 2, (5.2), gives by partial summati
 The source counts primes represented by an unoriented form class;
 its ambiguous-class factor is two, and the classes used here are
 nonambiguous. Its fixed-discriminant specialization applies for all
-sufficiently large \(y\); smaller primes change only \(K\)-constants.
-This Mertens conclusion uses the actual prime-count estimate, not
-merely prime-class existence or Dirichlet density.
+sufficiently large \(y\); smaller primes change only field-dependent
+constants. This bounded Mertens remainder uses the actual prime-count
+estimate, not merely prime-class existence or Dirichlet density.
+
+The doubling map \(G\to B\) has equal fibres. Hence exactly
+\(h(\ell_M-1)/\ell_M\) classes satisfy \(2g\notin M\). None is
+ambiguous; they form \(h(\ell_M-1)/(2\ell_M)\) inverse pairs.
+Summing (M.10) over this fixed disjoint union proves
+\[
+ \sum_{\substack{q\le y\\q\in\Omega_M}}\frac1q
+        =d_M\log\log y+O_K(1),\qquad
+ d_M=\frac{\ell_M-1}{2\ell_M}\ge\delta_*(B)\ge\frac14.
+ \tag{M.10a}
+\]
+Every prime divisor of \(|B|\) occurs as such an index: reduce a cyclic
+factor of its corresponding primary component modulo that prime.
+Consequently \(\min_Md_M=\delta_*(B)\). Only the density of this union
+has changed; the fixed-class analytic input remains (M.10).
+
+The proper-subgroup mechanism already appears in Bourgain--Fuchs,
+Theorem 1 and Section 2, part (5), in their exceptional-value argument.
+Here a fixed finite group allows the elementary saturation proof above,
+and the resulting full outside-subgroup collection is sieved on each
+binary line. Their squarefree exceptional-value theorem is not being
+used as the present binary comparison theorem.
 
 ## 3. The class-error sieve uses exact valuations
 
-Fix \(g\in T_G\), put \(m=m_g,\Omega=\Omega_g\), and count integers
-\(1\le a<N\) for which neither \(a\) nor \(N-a\) has an odd inert
-prime factor and \(k_g(a)\le m-1\).
-Every pair in \(\Lambda^2\) with its first summand deficient in this
-class is included. All ramified, dyadic and genus restrictions may
+Fix \(M\in\mathcal H_B\), put \(\Omega=\Omega_M\), and count
+integers \(1\le a<N\) for which neither \(a\) nor \(N-a\) has an odd
+inert prime factor and \(k_M(a)\le K_M\). Every pair in \(\Lambda^2\) whose
+first summand has this maximal-subgroup deficiency is included. All ramified, dyadic and genus restrictions may
 be dropped for this upper bound; no variable ramified coefficient
 or squarefull decomposition is necessary.
 
@@ -214,7 +264,7 @@ For a marked prime \(q\in\Omega\), forbid \(v_q(a)=1\), exactly the
 \(q-1\) residues \(q,2q,\ldots,(q-1)q\bmod q^2\).
 Its forbidden density is
 \[
-                         f_\Omega(q)=\frac{q-1}{q^2}.
+                         f_*(q)=\frac{q-1}{q^2}.
  \tag{M.12}
 \]
 Thus \(q^2\mid a\) is allowed, including all higher powers.
@@ -228,7 +278,7 @@ with \(y=z^{1/16}\),
 \[
  S_{\mathcal M}(X;y)
  \ll_K \frac{XJ_K(N)}{\log y}
-            \prod_{q\in\mathcal M}(1-f_\Omega(q))
+            \prod_{q\in\mathcal M}(1-f_*(q))
                   +O_\epsilon(z^{4+\epsilon}).
  \tag{M.13}
 \]
@@ -249,7 +299,9 @@ At inert primes \(\nu(q)\le2\); at marked primes \(\nu(q)=q-1\).
 Thus \(\nu(d)\le d\). All these primes are odd and
 \(0<f(q)\le2/q<1\).
 
-For squarefree indices \(d\le z\), Selberg's quadratic majorant has
+All squarefree indices below are supported on the chosen inert or marked
+primes at most \(y\). For squarefree indices \(d\le z\), Selberg's
+quadratic majorant has
 \[
  S_{\mathcal M}\le XQ(\lambda)
  +O\!\left(\sum_{d,e\le z}|\lambda_d\lambda_e|\nu([d,e])\right),
@@ -283,7 +335,7 @@ Let
  E_{\mathcal M,N}(y)=
  \prod_{\substack{q\le y\\q\ {\rm odd\ inert}}}
                     (1-\nu_N(q)/q)^{-1}
- \prod_{q\in\mathcal M}(1-f_\Omega(q))^{-1}.
+ \prod_{q\in\mathcal M}(1-f_*(q))^{-1}.
 \]
 Normalize its positive expansion on squarefree prime indices.
 A prime is included with probability \(f(q)\), so
@@ -312,32 +364,38 @@ Combine this with (M.14) and the lower bound for \(G\) to prove
 (M.13). No arithmetic-progression distribution estimate for the
 moving mixed modulus is used. \(\square\)
 
-Independently mark each \(q\in\Omega\cap[1,y]\) with probability
+Independently mark each \(q\in\Omega_M\cap[1,y]\) with probability
 \(t\in(0,1)\). This is a finite probability space, not a hypothesis
-about random primes. A deficient integer has at most \(m-1\) exact-one
-\(\Omega\)-primes in total; it survives with probability at least
-\((1-t)^{m-1}\). Thus its count is at most
-\((1-t)^{-(m-1)}\mathbb E S_{\mathcal M}\).
-Independence and (M.10) give
+about random primes. An integer with \(k_M(a)\le K_M\) survives with
+probability at least \((1-t)^{K_M}\), because the number of its
+exponent-one factors below \(y\) is at most its total such number.
+Its count is therefore at most \((1-t)^{-K_M}\mathbb E S_{\mathcal M}\).
+Independence and (M.10a) give
 \[
- \mathbb E\prod_{q\in\mathcal M}(1-f_\Omega(q))
- =\prod_{\substack{q\le y\\q\in\Omega}}(1-tf_\Omega(q))
-                   \asymp_{K,t}(\log y)^{-t/h}.
+ \mathbb E\prod_{q\in\mathcal M}(1-f_*(q))
+ =\prod_{\substack{q\le y\\q\in\Omega_M}}(1-tf_*(q))
+                   \asymp_{K,t}(\log y)^{-td_M}.
  \tag{M.16}
 \]
-The correction \(f_\Omega(q)-1/q=-1/q^2\) is summable.
-Choose \(z=N^{1/10}\), \(y=N^{1/160}\), and endpoint
-\(\epsilon=1/2\). Every deficient family contributes
+The correction \(f_*(q)-1/q=-1/q^2\) is summable. The fixed subgroup
+and \(K_M\) affect only constants. Choose \(z=N^{1/10}\),
+\(y=N^{1/160}\), and endpoint \(\epsilon=1/2\). Each deficient
+maximal subgroup contributes
 \[
- \ll_{K,t}\frac{N J_K(N)}{(\log N)^{1+t/h}}+N^{9/20}.
+ \ll_{K,t}\frac{N J_K(N)}{(\log N)^{1+td_M}}+N^{9/20}.
  \tag{M.17}
 \]
-Charge a pair in \(\Lambda^2\setminus P^2\) to one of its bad
-summands and then to an inverse class in (M.9).
-There are finitely many such classes; \(J_K(N)\ge1\).
-The power error is absorbed for large \(N\), and increasing the
-constant covers all \(N\ge3\). Taking \(t=h\delta<1\)
-proves (M.3). When \(2G=0\), (M.7) proves the zero-error assertion.
+For any fixed \(0<\delta<\delta_*(B)\), choose \(t<1\) with
+\(\delta<t\delta_*(B)\). The choice works for every maximal subgroup.
+Charge a pair in \(\Lambda^2\setminus P^2\) to a bad summand and then
+to one of the finitely many subgroups in (M.9). Sum over these subgroups
+and both orientations. Since \(J_K(N)\ge1\), the power error is
+absorbed for large \(N\); increasing the constant covers all \(N\ge3\).
+This proves (M.3). For the uniform exponent \(\delta=1/5\), take
+\(t=9/10\): then \(td_M\ge9/40>1/5\). The constants remain
+field dependent. When \(B=0\), (M.7) gives the exact zero-error assertion.
+No endpoint estimate at \(\delta_*(B)\), varying-field uniformity, or
+new zero-free or weighted-dilation input is used.
 
 ## 4. Explicit finite characters and sufficient core strata
 
@@ -675,11 +733,26 @@ specifies the exact finite domains. These checks do not
 prove the imported prime-class, norm or infinite analytic
 theorems, and are not external or formal verification.
 
+The group part of that existing checker retains its original sufficient
+condition: every nonambiguous family has its prescribed number of
+reserved factors. It is not relabelled as testing the new subgroup cover.
+The separate [maximal-subgroup checker](verify_class_group_error_cover.py)
+and [receipt](class_group_error_cover_checks.json) enumerate twelve fixed
+finite groups and all 199 subsets of saturated families. They compare
+subgroup generation with explicit orientation products, check every
+maximal subgroup and doubling preimage, and reject three deliberately
+wrong variants. This is finite group algebra only, not an analytic sieve
+proof, an assertion for all class groups, or conductor-local validation.
+
 Certificate verification requires active Python assertions. The checker rejects optimized execution (-O, -OO, or optimization enabled through PYTHONOPTIMIZE) before generating a receipt.
 
 Run from the repository root:
 
     python3 research/arithmetic/verify_primitive_norm_maximal_orders.py --output research/arithmetic/primitive_norm_maximal_order_checks.json
+
+The new group-only check is reproduced separately by:
+
+    python3 research/arithmetic/verify_class_group_error_cover.py --output research/arithmetic/class_group_error_cover_checks.json
 
 This is an internally written and source-audited theorem for
 every fixed maximal order. No conductor extension, mixed-field

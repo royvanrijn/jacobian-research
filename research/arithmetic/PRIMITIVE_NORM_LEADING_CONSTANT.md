@@ -103,10 +103,10 @@ Moreover
                   \sim c_\Lambda^2\,\frac{X^2}{2\log X}.
  \tag{LC.6}
 \]
-For every \(0<\delta<1/h\), the individual hidden-class failures obey
+If \(2\operatorname{Pic}(\mathcal O)\ne0\), then for every fixed \(0<\delta<\delta_*(2\operatorname{Pic}(\mathcal O))\), with \(\delta_*\) defined in the all-orders theorem, the individual hidden-class failures obey
 \(\#((\Lambda\setminus P)\cap[1,X])
        \ll_{\mathcal O,\delta}X/(\log X)^{1/2+\delta}\);
-if \(2G=0\) that set is empty.
+if \(2\operatorname{Pic}(\mathcal O)=0\) that set is empty. In particular \(\delta=1/5\) is always available, with order-dependent implied constants.
 
 **Proof.** Factor \(n=r c\), where \(r\) is supported on \(S\) and
 \((c,L)=1\). The exact shadow decomposition from (O.11)--(O.13) is
@@ -162,8 +162,14 @@ Summing OrderClassError, splitting \(N\le\sqrt X\) off trivially, gives
 This transfers (LC.6). If \(D(X)=\#((\Lambda\setminus P)\cap[1,X])\),
 the same sum is at least \(D(X)\#(\Lambda\cap[1,X])\): every such
 ordered pair has at least one hidden failure and sum at most \(2X\).
-The shadow mean proves the stated bound for \(D(X)\) and the principal
-mean. This reasoning is independent of a pointwise leading asymptotic.
+The factor \(\#(\Lambda\cap[1,X])\asymp_{\mathcal O}X/\sqrt{\log X}\)
+is the shadow mean already proved above, without any principal-value
+count. Dividing by it gives \(D(X)\ll_{\mathcal O,\delta}
+X/(\log X)^{1/2+\delta}\), with the same \(\delta\) as in
+OrderClassError, and then the principal mean follows. Thus the improved
+range \(\delta<\delta_*(2\operatorname{Pic}(\mathcal O))\) incurs no
+additional loss. This reasoning is independent of a pointwise leading
+asymptotic and does not use the principal mean circularly.
 \(\square\)
 
 There is no extra \(\mathrm B(1/2,1/2)=\pi\) in (LC.6) or the pointwise

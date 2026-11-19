@@ -40,14 +40,25 @@ analytic dependencies.
 The arithmetic application retains two proof routes. Its order-of-magnitude
 theorem uses older weighted-correlation and positive-restoration inputs
 independently of the recent zero-free and graph theorems. The leading asymptotic
-uses the new general binary theorem. The all-order transfer gives uniform
-`o(1)`; the explicit logarithmic saving belongs to the fixed-data semigroup
-theorem. The modulus in that theorem is even and fixed, and all primes dividing
+uses the new general binary theorem. The all-order leading-term transfer gives
+uniform `o(1)`; an explicit logarithmic remainder for the full leading term is
+asserted for the fixed-data semigroup theorem. Its modulus is even and fixed, and all primes dividing
 it are excluded from the core.
 The independent order-bound theorem and dependency distinction stay prominent
 in the main text; its full classical core proof is in Appendix A. Numerical
 saving exponents and localization budgets are collected in the technical
 reconstruction section, after the early statements with positive savings.
+
+The class-group error now has a saving independent of the class number.
+For `G = Pic(O)` and `B = 2G != 0`, every exponent
+`eta < min_{ell prime, ell | |B|} (ell-1)/(2ell)` is allowed; this
+threshold is at least `1/4`. In particular every fixed order has
+`R_Lambda(N)-R_P(N) <<_O N J_O(N)/(log N)^(6/5)` for all `N >= 3`.
+When `2G = 0`, the value sets are exactly equal. The constants depend on
+the fixed order. The proof charges failure to an entire deficient collection
+outside a maximal subgroup and uses the existing marking sieve. It adds no
+analytic input. This estimate does not supply a quantitative remainder for
+the full conductor-prefix leading-term transfer, which still asserts `o(1)`.
 
 [PDF](paper.pdf) · [Source](main.tex) · [Metadata](metadata.json) ·
 [Verification record](verification.json) · [Standalone source archive](source.zip)
