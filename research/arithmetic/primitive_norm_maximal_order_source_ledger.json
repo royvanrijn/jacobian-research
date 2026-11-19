@@ -137,7 +137,7 @@
     },
     {
       "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-      "sha256": "032347d814338d4f3b886024a477c0a14ba8cefa43128f7b1dda53997c9b8353",
+      "sha256": "28f08aed51e73fc9c5423157ad2fdb0681ad2a44da81587d823a0369aa88ec83",
       "locator": "Coordinate/value distinction and existing generic sharp upper bound; not used to infer the new lower bound"
     }
   ],

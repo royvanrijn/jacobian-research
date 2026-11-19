@@ -181,6 +181,17 @@ value pair.
 The coarser bound \(E\le\tau(n)\sqrt n/S(n)\) also follows from
 \(\Delta(n)\le(3/2)\tau(n)\sqrt n\).
 
+On the same even, \(11\)-unit scope, \(1-E\) is uniformly positive.
+At each prime power \(p^a\Vert m\), the arithmetic--geometric mean
+inequality gives \(\sigma(p^a)\ge(a+1)p^{a/2}\). Hence
+\(\sigma(m)\ge\tau(m)\sqrt m\), and
+\[
+ E\le\frac{2(t+3)}{9\,2^{t/2}}\le\frac{4\sqrt2}{9}<1.
+\]
+The middle bound decreases for \(t\ge1\): its successive ratio is
+\((t+4)/((t+3)\sqrt2)\le5/(4\sqrt2)<1\). Thus every division by
+\(1-E\) below is valid independently of the numerical onset.
+
 ## Hecke operators with all ideal classes retained
 
 The finite quotient must retain every locally principal right-ideal
@@ -223,7 +234,23 @@ In particular \(X_{11}\) has ten points and its principal fiber has six.
 Let \(T_m\) be the all-integral-ideal Hecke operator for
 \((m,11p)=1\), or \((m,11)=1\) on \(X_{11}\).
 It is self-adjoint for this invariant probability and commutes with the
-right finite group action. If \(h\) is supported in the principal fiber,
+right finite group action. The adjoint statement also follows directly
+from the marked ideal correspondence. If \(J\subset I\) has relative
+reduced norm \(m\), the local elementary divisors at the split maximal
+index primes give \(mI\subset J\). Reverse the flag by
+\[
+                        (J\subset I)\longmapsto(mI\subset J).
+\]
+Applying this twice scales the original flag by the central scalar \(m\).
+At every auxiliary prime, \(m\) is a unit and \(J_p=I_p\), so the marking
+transfers through this equality. Identifying \(mI\) with \(I\) changes
+the marking by the scalar \(m^{-1}\), which is projectively trivial.
+Thus the reversal bijects marked edges in opposite directions.
+The fine point stabilizers are trivial, so the fine matrix is symmetric.
+Pushing its uniform measure to the class fibers gives precisely the
+inverse-unit weighted symmetry on the coarse quotient.
+
+If \(h\) is supported in the principal fiber,
 then at its base point \(x_0\),
 \[
  (T_mh)(x_0)=\frac14\sum_{\substack{\alpha\in O\\\operatorname{nrd}\alpha=m}}
@@ -256,7 +283,7 @@ uses the all-ideal correspondence, strong approximation, global
 Jacquet--Langlands, and the weight-two Ramanujan bound. The same proof
 applies on this multi-class quotient: retaining all fibers replaces
 class-one transitivity by Haar measure and (M11.7); the scalar kernel
-was just checked; the only character constituents were just identified;
+was just checked; the only global automorphic character constituents were just identified;
 the trivial infinite type transfers to weight two; every prime dividing
 \(m\) is split in \(B\) and has maximal local level. At each such prime
 \(\ell\), the all-ideal eigenvalue at \(\ell^a\) is the sum of \(a+1\)
@@ -280,6 +307,100 @@ Evaluating its \(D_n\) correlation at the principal class gives
 \(G(n)/4\ge wS(n)-(1-w)\Delta(n)\), exactly (M11.6).
 This derivation independently checks the theta-based normalization.
 
+
+### A two-class check of the measure and matrix convention
+
+The two coarse classes can be exhibited directly. In coordinates
+\(x+y\omega+(z+w\omega)j\), let
+\[
+ I=\{(x,y,z,w)\in O:x\equiv z,\quad x+y+w\equiv0\pmod2\}.
+\]
+A basis is
+\[
+ (2,0,0,0),\quad(1,1,1,0),\quad(0,0,2,0),\quad(1,0,1,1).
+\]
+Multiplication by \(1,\omega,j,\omega j\) on the right preserves these
+congruences. Thus \(I\) is a right ideal of index four and reduced
+norm two, containing \(2O\). The element
+\(\alpha=1+\omega+j\in I\) has norm six; multiplication by \(\alpha\)
+has determinant \(36\). Consequently \(\alpha O_2=I_2\), since
+both have index four in \(O_2\); at odd primes \(I_p=O_p\).
+This proves local principality.
+
+The complete norm-two shell has four elements, the unit multiples
+of \(1+j\). Hence \((1+j)O\) is the only principal integral ideal
+of norm two. It differs from \(I\), since \(1+j\notin I\), so \(I\)
+is nonprincipal. Every unit \(u\) of \(O_L(I)\) has \(2u\in O\)
+of norm four. The binary norm has respectively \(1,2,0,4,2\)
+representations of \(0,1,2,3,4\); the norm-four shell of \(O\)
+therefore has twenty elements. Testing their halves on the displayed
+basis leaves precisely
+\[
+       O_L(I)^\times
+        =\{\pm1\}\ \cup\
+          \{(\pm1\pm(\omega-1)j)/2\},
+\]
+where the two signs in the second set are independent.
+Containment \(uI\subseteq I\) suffices, since norm one makes the
+covolumes equal. The two projective unit orders are therefore two
+and three. Their masses \(1/2+1/3=5/6\) exhaust the mass formula;
+there are exactly these two classes.
+
+Use columns of function values, in the order \([O],[I]\).
+The norm-\(2,3,4\) shells have \(4,8,20\) elements, so their principal
+return counts are \(1,2,5\). Their Hecke degrees are \(3,4,7\).
+Together with the inverse-unit class probabilities, these give
+\[
+ A_2=\begin{pmatrix}1&2\\3&0\end{pmatrix},\qquad
+ A_3=\begin{pmatrix}2&2\\3&1\end{pmatrix},\qquad
+ A_4=\begin{pmatrix}5&2\\3&4\end{pmatrix}.
+\]
+For \(D=\operatorname{diag}(3/5,2/5)\), each \(DA_m\) is symmetric.
+Also \(A_4=A_2^2-2I\), and the common weighted-mean-zero vector
+\((2,-3)^{\mathsf T}\) has eigenvalues \(-2,-1,2\).
+Equal weights on the two coarse classes would fail self-adjointness;
+their uniform-mean-zero vector \((1,-1)^{\mathsf T}\) is not even
+preserved by \(A_2\). The fine ten-point counting measure pushes
+forward to probabilities \(6/10,4/10\), exactly (M11.7).
+
+This fixes the source convention explicitly. Voight's column-counting
+Brandt matrix \(V_m\), defined in (41.1.1), is \(A_m^{\mathsf T}\).
+Chapter 41, Exercise 7(c), printed p.766, gives
+\(V_2=\left(\begin{smallmatrix}1&3\\2&0\end{smallmatrix}\right)\),
+in agreement with this calculation. Section 41.1.9 uses row action
+with inverse-unit weights, which is consistent. The proof on printed
+p.760 instead describes row action with \(W=\operatorname{diag}(2,3)\)
+while displaying the column adjoint \(W^{-1}V^{\mathsf T}W\).
+For literal row action with pairing \(xWy^{\mathsf T}\), the adjoint
+is \(WV^{\mathsf T}W^{-1}\): with \(V=V_2\),
+\(\langle e_1V,e_2\rangle=9\) and
+\(\langle e_1,e_2V\rangle=4\).
+We use the inverse-unit Haar pairing established above; this
+row/column mismatch in the source is not imported.
+
+There is a further finite check on \(X_{11}\). Its two fibers can be
+labelled \(P_k\), \(k\bmod6\), and \(Q_l\), \(l\bmod4\), with the
+cyclic group \(G_{11}\) shifting both labels by one. The principal
+return of \(T_2\) is the shift \(k\mapsto k+3\), since
+\((1+j)^2=2j\); the other coarse diagonal entry is zero.
+The principal stabilizer acts on the four-point fiber by shift two.
+Its orbit sizes, the cross-degrees two and three, and equivariance
+therefore determine the remaining edges, after a choice of the
+\(Q\)-origin:
+\[
+ A(P_k,P_{k+3})=1,\qquad
+ A(P_k,Q_l)=A(Q_l,P_k)=\mathbf1_{\,k\equiv l\pmod2},
+\]
+with all other entries zero. This symmetric degree-three matrix has
+spectrum
+\[
+                    -3,-2,-1,-1,0,0,1,1,2,3.
+\]
+The two global norm characters have eigenvalues \(3,-3\);
+the other eight eigenvalues have absolute value at most two.
+This checks the finite normalization at index two. The all-index
+bound (M11.9) continues to use its stated classical transfer and
+Ramanujan inputs.
 
 ## Small bad-prime counts and the ramified filter
 
@@ -370,8 +491,9 @@ The union bound, using (M11.6), (M11.10)--(M11.12), leaves at least
                          -E\left(3+\frac52\Pi(P)\right)\right\}
                                                                \tag{M11.13}
 \]
-points. In deriving this, the denominators \(1-E\) cancel. The final
-bounds below ensure \(E<1\). Positive surviving norms belong to \(C\).
+points. The divisions by \(1-E\) are valid by the bound after (M11.6),
+and these denominators cancel in (M11.13). Positive surviving norms
+belong to \(C\).
 Split common factors in these coordinate witnesses cause no problem:
 (M11.3) supplies primitive representations of their values separately.
 

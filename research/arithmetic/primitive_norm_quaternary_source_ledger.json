@@ -108,7 +108,8 @@
     "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
     "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
     "scope": "Comparison source locating classical imports; the specialization is now expanded directly next to (33) and in the audit report.",
-    "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption."
+    "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption.",
+    "finite_normalizer_correlation": "The bridge directly computes the normalizer indicator mean mu, zero determinant projection, and complementary squared norm mu(1-mu) with uniform finite probability. Base-orbit averaging gives <u,T_Nu>=mu*b_p(N)/4; constant degree c_e*sigma(m) and complementary bound c_e*tau(m)*sqrt(m) yield (35) with no dyadic character term. A_e acts on the determinant character by (2/p)^e*c_e; that projection is zero for the indicator."
   },
   "minus8_effective_scope": {
     "global_onset": 302231454903657293676544,
@@ -165,7 +166,8 @@
       "local_path": "sources/deligne-modular-355.pdf",
       "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
       "statements_used": [
-        "Theorems4.9 and5.1: Frobenius/Hecke realization for cuspidal modular forms."
+        "Theorems4.9 and5.1: Frobenius/Hecke realization for cuspidal modular forms.",
+        "Section3 immediately before(3.12),printedp155: adelic realization includes cusp forms for arbitrary congruence subgroups; no newvector restriction."
       ],
       "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
     },
@@ -189,7 +191,8 @@
       "local_path": "sources/voight-quaternion-algebras-author.pdf",
       "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
       "statements_used": [
-        "Main Theorem28.5.3: strong approximation for B^1 with a noncompact split place in S. Propositions41.3.1 and41.3.6: all-ideal Hecke multiplicativity and recurrence at split maximal places."
+        "Main Theorem28.5.3: strong approximation for B^1 with a noncompact split place in S. Propositions41.3.1 and41.3.6: all-ideal Hecke multiplicativity and recurrence at split maximal places.",
+        "Definition41.3.4 and Proposition41.3.6: central permutation for a principal rational ideal is identity, giving the stated all-prime-power recurrence on the projective quotient."
       ],
       "inspection_scope": "Primary statement and application hypotheses checked internally; deep theorem proof remains an import."
     }
@@ -219,10 +222,67 @@
       "sha256": "fdd1589a52732196027476bf5f8962729dfdadf87bf7d57a83b516e03f43986d",
       "role": "mathematical_input",
       "statements_used": [
-        "Theorem1 and definition6 PDFp3; Lemma15 PDFp16; unnormalized Petersson norm PDFp2. All positive indices, arbitrary fixed primitive quaternary forms and quadratic theta characters. Applied with level≈t²,F(A,2)≈t⁴,det≈t⁴; target gcd averaged."
+        "Theorem1 and definition6 PDFp3; Lemma15 PDFp16; unnormalized Petersson norm PDFp2. All positive indices, arbitrary fixed primitive quaternary forms and quadratic theta characters. Applied with level≈t²,F(A,2)≈t⁴,det≈t⁴; target gcd averaged.",
+        "Only the upper-coefficient portion of Lemma15 is imported. Lemma8 lower-density assertions and the density-dependent existence clauses are excluded; the bridge proves its needed local lower bounds directly."
       ],
       "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used.",
-      "dyadic_convention": "In v2 equation(5), scalar polynomial exponents must allow0: four squares contradicts the printed nu_i(2)>=1. This interpretation gives F(2I4,2)=4 and F(2I4,4)=16=det(2I4). The application uses only F(A,2) comparable to t^4; fixed dyadic factors are absorbed in fixed-form constants. The cached primary PDF is preserved unchanged."
+      "dyadic_convention": "In v2 equation(5), scalar polynomial exponents must allow0: four squares contradicts the printed nu_i(2)>=1. This interpretation gives F(2I4,2)=4 and F(2I4,4)=16=det(2I4). The application uses only F(A,2) comparable to t^4; fixed dyadic factors are absorbed in fixed-form constants. The cached primary PDF is preserved unchanged.",
+      "equation24_correction": {
+        "scope": "Rank-four proof of Theorem1, source equation24; primary PDF preserved unchanged",
+        "counterexample": "A=8*[[2,1],[1,2]] direct_sum 2I2 is primitive, level24, detA=F(A,2)=768. At c=d4 the auxiliary D=diag(4,4,2,2), giving detD/detA=1/12>d^2/F(A,2)=1/48.",
+        "repair": "Define the exact genus invariant G=s3*s4 from the Gram Smith factors. Every auxiliary exponent tau_i<=min(lambda_i,v_p(d)), so detD/detA<=d^2/G<=4*d^2/F. This is uniform over all genus classes and true local Jordan choices retained to sufficient precision; the displayed example has Smith factors(2,2,8,24) and attains the factor4.",
+        "effect": "Theorem1 and Lemma15 big-O estimates retain their stated exponents. This is a repaired arithmetic inequality in the primary proof, not a counterexample to the norm or coefficient estimate.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Sharper power saving from Waibel, direct dyadic equation24 repair"
+      },
+      "equation18_phase_correction": {
+        "scope": "Rank-four Poisson transformation in Lemma12, v2 equation18; cached primary PDF preserved unchanged.",
+        "counterexample": "A=2I4, level4, rho=[[1,0],[1,1]]. The exact slash transform is -theta_A((z+1)/4)/4. Its e(nz/4) coefficient is -r4(n)*i^n/4; printed18 gives -r4(n)*(-i)^n/4. At n1 these are -2i and+2i.",
+        "repair": "For c>0 the external phase is e(+d*x^T*A^(-1)*x/(2c)). Residue-class Poisson with w=z+d/c gives e((x^T*A^(-1)*x/2)*w) and prefactor -1/(c^2*sqrt(detA)).",
+        "effect": "Gauss-sum magnitudes and support are unchanged; the x0 phase is unchanged, so genus-difference constant terms still cancel. Lemma12 coefficient majorants and equations22-23 upper-norm estimates retain their exponents. This does not disprove Theorem1 or Lemma15.",
+        "interpretation": "Unit phases in Lemma12 may depend on the dual vector. The separate coprime-cusp equality requires shell constancy; it survives this sign correction but is not used by the upper-norm application.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Sharper power saving from Waibel, equation18 phase correction."
+      },
+      "dyadic_normal_form_ambiguity": {
+        "scope": "Definition6 after the scalar-exponent-zero convention required by four squares.",
+        "counterexample": "P3=[[1,1,0],[1,-1,-1],[1,0,1]],det=-3, acts on the last3variables of2I4 overZ2. The resulting polynomial is x1^2+3*x2^2+2*(x3^2+x3*x4+x4^2). The4scalar decomposition hasF2=4; the2scalar/1binary decomposition hasF2=16.",
+        "repair": "Use G=s3*s4 as the exact genus invariant. The polynomial-to-Gram scalar shift is1, so the top2sum increases by between0 andmin(k,2). Therefore G<=F<=4G and the norm/cusp upper bounds remain valid up to absolute constants.",
+        "effect": "Exact F-invariance is not inferred without a canonical normal-form convention. No error exponent, theorem scope, or assurance flag is changed.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Sharper power saving from Waibel, Gram Smith comparison and genus-uniform equation24 repair."
+      },
+      "lemma8_not_imported": {
+        "scope": "The local lower-density assertion in v2 Lemma8, PDFp7, is not imported.",
+        "first_branch_counterexample": "q=x^2+2y^2+5z^2+10w^2,n5 has the primitive integral vector(0,0,1,0), but beta5=6/25<4/5.",
+        "second_branch_counterexample": "q=x^2+y^2+7z^2+7w^2,n7 has nu1 and beta7=8/49<6/(7*sqrt7). Squaring compares64/2401<36/343.",
+        "all_depth_proof": "For an anisotropic unit binary block B, q=B(x,y)+pB(z,w),n=p forcesx,y divisiblebyp. For everyh>=2 exact roots=(p+1)*p^(3h-2), all whole-vector primitive, giving beta_p=(p+1)/p^2. This is not an empirical stabilization claim.",
+        "correct_primary_comparison": "Rouse1802.03437v1 Lemma2,PDFp6 distinguishes strong local solubility from primitive solubility and gives weaker primitive-density bounds; its sharpness remark includes this type of anisotropic block.",
+        "effect": "No counterexample to the imported upper norm/coefficient bounds or the fixed-pair arithmetic theorem. The bridge proves pair-primitive density bounds directly and does not use WaibelLemma8 or the ensuing density-dependent existence clauses.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Bad primes: finite testing and uniform density, source-density nondependency."
+      },
+      "lemma11_auxiliary_level_and_choice_correction": {
+        "scope": "Rank-four auxiliary lattice for Lemmas11-12 and Theorem1 in the intended primitive-form scope, with the necessary scalar exponent0 convention. Original primary PDF is preserved unchanged.",
+        "level_counterexample": "A=2*[[2,1],[1,2]] plus diag(2,6), primitive and positive, has L12. Atc=d2,D=diag(2,2,1,1),dhat1, S=8*[[2,-1],[-1,2]] plus diag(6,2) has level24=2L.",
+        "choice_counterexample": "q=x^2+2xy+3y^2+z^2+w^2 has L8. Atc2,U=I is a polynomial diagonalization mod2 with allscalar exponents0, but D=I gives S=4A^-1 with odd diagonal entries3,1. The true Jordan substitutionx=X-Y gives X^2+2Y^2, D=diag(1,2,1,1),S=diag(2,4,2,2),level8.",
+        "repair": "Choose determinant-one true local Jordan bases and approximate them globally to M_p>=max(v_p(c),v_p(L)+2). The local block exponents prove S even integral and level(S) divides2L. These matrix tests are stable under that precision. Only the dyadic dhat exception can require the extra2.",
+        "effect": "Uniform absolute factors only in the rank-four upper-norm estimate, all genus representatives, and the fixed-form7/8+epsilon deduction.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Sharper power saving from Waibel, true-Jordan choice and auxiliary-level repair."
+      },
+      "phase_free_gauss_support_and_genus_uniformity": {
+        "identity": "For gcd(a,c)=1, |G_c(a,x)|^2=c^4*sum_(h in ker(A modc))e((a*q(h)+x.h)/c), hence zero or c^4*Khat, with Khat=product_i gcd(s_i,c)=product_i gcd(s_i,d).",
+        "support": "True local Jordan blocks give frequency support in D Z^4, with resonant dyadic scalar coordinates odd. Khat=2^r*detD<=16*detD, so the needed coefficient majorant uses4*sqrt(detD/detA) times ordinary representation numbers of S.",
+        "genus_uniformity": "Cusp constants are identical finite Gauss sums under local integral equivalence and CRT. Subtract their common constant first, apply Parseval separately with each representative ownD/dhat, then use commonSmithG/determinant/level bounds. Convexity under positive normalized genus weights introduces no class-number factor.",
+        "scope": "Written all-modulus proof; finite exact cyclotomic checks are supplementary, not mathematical premises.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Sharper power saving from Waibel, phase-free finite Gauss identity and genus averaging."
+      },
+      "lemma9_uniform_lattice_counting": {
+        "primary": "Waibel v2, Lemma9 and proof, PDFpp8-10; weighted use and equation23 PDFp14.",
+        "reduction_correction": "Use size-reduced Gram-Schmidt data b_i<=(4/3)b_(i+1). The earlier S(3/4,1/2) existence sentence has reciprocal parameter; fourSquares contradict that sentence. Successive shortest projected primitive vectors give the needed4/3 ratio directly.",
+        "uniform_slice_proof": "A nonzero tail coordinate forces every active coefficientO(n); unused long tails vanish. Completing the integer affine binary polynomial yields an injective norm equation Y²+deltaX²=M with |M|=O(n^5). At most6tau(M) solutions give O_epsilon(n^epsilon), uniformly in level, discriminant, content and shape.",
+        "mean_square": "Sequential counting times the slice bound gives the exact multiset(b1,b2,b3,b3,b4,b4); partial summation reproduces all degree3..6 determinant/minima terms in rank4.",
+        "norm_closure": "Rank4 equation23 has numerator d^floor((m-3)/2)=1. The final divisor sum is at mosttau(L), the first at most4Delta*tau(L)/F. Delta<=L^4 absorbs the standalone error. The bound L^(2+epsilon)/F+L^(1+epsilon)/Delta^(1/4) follows with absolute auxiliary-level factors.",
+        "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Uniformity of the lattice-counting input.",
+        "scope": "Direct written deduction from the primary lattice-counting argument; no internal audit is a mathematical premise and no assurance flag changes.",
+        "cusp_summation": "Direct reconstruction W.1-W.2 in the bridge: exact primitive-column count M_d=phi(L/d)*L*phi(d)/d<=L^2/d; full-period orthogonality and exponential integration; the complete exponentially weighted moment; b4<=2L from the inverse Gram entry; and explicit degree3..6 determinant elimination. This gives the rank-four equation23 shape with absolute factors and no omitted cusp multiplicity."
+      }
     },
     {
       "key": "henriot_original",
@@ -828,5 +888,45 @@
       "PYTHONOPTIMIZE=1"
     ],
     "scope": "Execution contract for finite checks; no new mathematical theorem or review assurance."
-  }
+  },
+  "fixed_character_petersson_inputs": {
+    "scope": "A fixed primitive even theta character, all positive coefficient indices, arbitrary multiples of its conductor as levels, full weight-two cusp spaces including oldforms.",
+    "sources": [
+      {
+        "author": "Philippe Michel",
+        "title": "Analytic Number Theory and Families of Automorphic L-functions",
+        "version": "Author edition,24May2006",
+        "url": "https://www.epfl.ch/labs/tan/wp-content/uploads/2018/10/Parkcitylectures.pdf",
+        "local_path": "sources/michel-park-city-2006.pdf",
+        "sha256": "b662928bc69c8ed9f81c16ec6cf5fd5116fc419dacf95e714ebd363f69a9e7d2",
+        "statements_used": [
+          "Theorem2.1,p43: full-space Petersson trace for k>=2, all positive m,n, arbitrary nebentypus.",
+          "Section2.1.1,p36: unnormalized Petersson norm and Fourier convention."
+        ]
+      },
+      {
+        "author": "Henryk Iwaniec and Emmanuel Kowalski",
+        "title": "Analytic Number Theory, author extract: exponential sums",
+        "version": "Official author-hosted chapters11-12",
+        "url": "https://people.math.ethz.ch/~kowalski/ik-ant-exp-sums.pdf",
+        "local_path": "sources/iwaniec-kowalski-exponential-sums-author.pdf",
+        "sha256": "b4c346a8459e9a0450a16a22438220cf7f40926d875beacbcdeccdfc75c5eee5",
+        "statements_used": [
+          "Corollary11.12,printedp280/PDFp14,equation11.16: ordinary Weil bound for every c>0 and arbitrary integer a,b, including shared factors and prime powers."
+        ]
+      }
+    ],
+    "application_proof": "The bridge gives finite Gauss inversion, diagonal gcd control, complete modulus sums for n>=L and n<L, and full-space Cauchy. No general-character Weil bound or uninspected IKCor14.24 scope is used.",
+    "fixed_conductor_reason": "Square dilations multiply the Gram determinant by fourth powers. The primitive theta character is fixed by Delta0; content removal also changes it only by fourth powers.",
+    "proof": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Fixed-character justification of the Fourier bound",
+    "limitations": "The argument has a fixed-character constant and does not claim uniformity over varying primitive conductors. This suffices for the stated fixed-form theorem; no error exponent or assurance status changes.",
+    "endpoint_construction": {
+      "proof": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Fixed-character justification of the Fourier bound",
+      "scope": "All even characters modulo every positive level, all positive Poincare indices, and the full weight-two cusp space including oldforms.",
+      "argument": "Automorphic Hecke regularization with the y^u factor; period-L Fourier expansion at every integral cusp; finite Fourier reduction to ordinary Kloosterman sums with gcd bounded by the fixed index; uniform derivative bounds and an integrable cusp majorant; strong Petersson L2 convergence; unfolding and the exact Bessel coefficient.",
+      "uniformity": "Construction constants may depend on level and index, because this step establishes an exact identity. The later fixed-primitive-character Gauss expansion and modulus estimate establish the claimed level uniformity.",
+      "assurance": "Direct written argument using the pinned ordinary Weil theorem. Finite cyclotomic checks are supplementary; no internal audit is a mathematical premise, and no external-review or formal-verification assurance is asserted."
+    }
+  },
+  "angular_relative_tail": "At every good odd prime, direct rank4 root counting gives beta_0=1-c/p^2 and beta_a=1+c/p-c/p^2-p^-3+1_(a>=2)p^-2 beta_(a-2). Hence beta_a<=4/3, beta_pair>=16/27 and1<=beta_a/beta_pair<=1+9/p^2 for every target valuation. All bad primes are included before the finite-prime cutoff, so their factors cancel; the relative tail is bounded byexp(9/(Y-1)). This is a direct local derivation, not an internal-audit premise."
 }

@@ -7,20 +7,16 @@ Fix an imaginary quadratic order \(\mathcal O\), of discriminant
 only inert primes outside \(S\). All counts are ordered numerical
 value counts. The order and every coefficient/modulus below are fixed.
 
-There are three different conclusions here. The one-variable constants,
-averaged additive leading term, and auxiliary-weight removal are proved.
-An explicit pointwise leading term follows under the binary correlation
-hypothesis stated in Section 2. That hypothesis remains unproved by the
-currently retained inputs, already for the odd primitive Gaussian core.
+This note proves the one-variable constants, averaged additive leading
+term, auxiliary-weight removal and conductor-prefix normalization.
+Its pointwise implication uses BinaryCoreCorrelation from Section 2.
+That correlation is now supplied by
+[the pointwise binary theorem](PRIMITIVE_NORM_BINARY_CORRELATION.md),
+whose Section 6 discharges its two imported analytic inputs.
+Consequently the explicit all-order pointwise formula below holds.
 The class group and conductor bookkeeping introduce no further unknown
-constant once that correlation is supplied.
-
-A [conditional dilation-graph proof](PRIMITIVE_NORM_BINARY_CORRELATION.md)
-now supplies that correlation under a uniform fixed zero-free
-Dirichlet half-plane and the specified graph input. Its assumptions,
-expanded proof and source-validation limits are explicit. This does
-not discharge the unconditional binary-correlation obligation.
-
+constant. The earlier positive-restoration argument alone does not
+supply this leading term.
 
 ## 1. Unconditional one-variable and averaged constants
 
@@ -176,7 +172,7 @@ The numerical counting functions have power \(X^1\); the additive
 archimedean integral for a fixed target is \(\int_0^1dt=1\).
 The two Gamma factors are already in \(c_{\mathcal C}^2\).
 
-## 2. The precise remaining binary correlation
+## 2. The precise binary correlation
 
 Set
 \[
@@ -203,8 +199,10 @@ through the positive-density targets, for each such fixed data,
 \]
 A zero finite density has count identically zero.
 
-This is a pointwise additive correlation hypothesis. Existing
-FiniteGenusFilter proves only comparability on these same targets.
+This is the exact pointwise correlation input to the normalization
+argument below. It is supplied by PointwiseBinaryCorrelations in
+PRIMITIVE_NORM_BINARY_CORRELATION.md. The older FiniteGenusFilter
+theorem supplies comparability on the same targets.
 
 At a good inert prime the two values forbid
 \(\nu_q(M)=2-\mathbf1_{q\mid M}\) residues. Relative to the two single
@@ -258,7 +256,9 @@ Equivalently the coefficient of \(J(N)N/\log N\) is
  \tag{LC.11}
 \]
 All infinite products in this expression converge absolutely.
-This is a conditional theorem, not a proof of its hypothesis.
+This theorem proves the transfer from the stated correlation.
+Its premise is supplied by PointwiseBinaryCorrelations in the separate
+binary-correlation note.
 
 **Proof.** For exact bad prefixes \(r,s\in\langle S\rangle\), put
 \(g=(r,s)\), \(A=r/g\), \(B=s/g\), \(M=N/g\).
@@ -466,7 +466,7 @@ Its marginal density is \(3/8\), and
  0,&N\bmod8\in\{0,1,5\}.
  \end{cases}
 \]
-Thus the conditional leading coefficient of \(J(N)N/\log N\) is
+Thus the leading coefficient of \(J(N)N/\log N\) is
 \[
  A_G=\frac12\prod_{q=3\bmod4}
                  \left(1-\frac2{q(q-1)}\right)
@@ -475,10 +475,10 @@ on \(\{2,3,6,7\}\bmod8\), and \(A_G/2\) on \(4\bmod8\).
 For the odd core alone it is \(A_G\) on \(N=2\bmod4\).
 The full coefficient, including \(J(N)\), has Cesàro mean \(c_P^2\),
 in agreement with (LC.6).
-These explicit Gaussian pointwise formulas remain conditional on
-BinaryCoreCorrelation.
+These explicit pointwise formulas follow from the now proved
+BinaryCoreCorrelation input, as stated in Section 6 of the binary note.
 
-## 6. What the inspected analytic inputs do and do not provide
+## 6. Comparison with the older analytic inputs
 
 The exact deweighting identity for the coordinate weight
 \(V=\tau\mathbf1_{\mathcal C}\) is
@@ -525,12 +525,18 @@ The targeted primary review distinguishes the following statements.
   argument must be resolved before that method is imported.
 
 The [source ledger](primitive_norm_leading_constant_source_ledger.json)
-records exact inspected versions and scope. No historical-exhaustiveness,
-novelty, effective cutoff, or completed pointwise leading-asymptotic
-claim is made.
+records exact inspected versions and scope. This comparison does not
+claim historical exhaustiveness, priority or a numerical effective
+cutoff. The actual pointwise theorem is proved in the separate binary
+note using its two precisely identified recent analytic inputs.
 
 
-## 7. The variable-target issue in the recent bilinear method
+## 7. The variable-target issue in the prime-plus-norm method
+
+This section explains a limitation of directly adapting that particular
+proof. The separate dilation-graph argument resolves the binary theorem
+through a different target-grid estimate; it does not assert that the
+source theorem already covers the enlarged determinant.
 
 The full parameter chain in Jiang--Lau--Lü Sections 3--8 was inspected
 for this adaptation, not just its introductory theorem.

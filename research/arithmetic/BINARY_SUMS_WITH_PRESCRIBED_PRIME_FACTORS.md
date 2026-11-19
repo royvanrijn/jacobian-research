@@ -10,9 +10,11 @@ separate.
 
 The [simultaneous Gaussian--Eisenstein case study](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md)
 keeps the exact norm identities, lifted local densities, conditional pointwise
-criterion and finite certificates for the class \(1\pmod {12}\). The immediate
-arithmetic target is every-target existence for \(C_{12}+C_{12}\), initially
-without balance. In parallel, the
+criterion and finite certificates for the class \(1\pmod {12}\).
+The [quantitative subgroup correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+now proves the full \(C_{12}+C_{12}\) asymptotic and macroscopic balanced
+existence for every fixed modulus (FBS-G). Power-short FBS-U remains open.
+In parallel, the
 [Eisenstein power-window theorem](EISENSTEIN_POWER_SHRINKING_WINDOWS.md)
 now covers every fixed \(2/3<\theta<1\) for \(q=3\), with explicit
 cutoffs and both ordinary and mixed families.
@@ -22,7 +24,7 @@ now gives a power-error weighted asymptotic for every sufficiently large
 in \(A_3\). Its target-dependent main term is explicit and positive.
 Its [uniform coefficient extension and cofactor argument](ASYMMETRIC_SEMIGROUP_SCALE.md)
 now prove the unweighted order \(N J_E(N)/(\log N)^{5/4}\) on every
-sufficiently large compatible target. It proves no every-target
+sufficiently large compatible target. That asymmetric result alone proves no every-target
 \(C_{12}+C_{12}\) statement.
 
 The [fixed-modulus theory](ASYMMETRIC_FIXED_MODULUS_THEORY.md) now gives an
@@ -35,8 +37,10 @@ prime factors satisfy \(\chi(p)=1\). On every sufficiently large
 target factor in that proof. A separate clause reaches the full
 \(C_q+C_q\) logarithmic scale while allowing only boundedly many excluded
 prime factors in the second summand, all above some fixed power of \(N\).
-Removing those remaining factors is still necessary for full two-sided
-coverage when \(\varphi(q)>2\).
+Removing those remaining factors is still necessary to obtain full
+two-sided coverage by that sieve route when \(\varphi(q)>2\).
+The separate subgroup-correlation theorem supplies two-sided coverage
+and the exact leading asymptotic for every fixed \(q\).
 
 ## The central binary conjecture
 
@@ -363,6 +367,10 @@ N=p_1+p_2+p_3,\qquad p_i\equiv1\pmod L,\qquad
 \]
 In particular, the three primes belong to \(C_q\). This is every-target
 coverage in the stated progression, derived from established results.
+The [quantitative prime-star theorem](PRIME_SPLITTING_DECOMPOSITIONS.md)
+now strengthens this to \(\asymp N^{2\theta}/(\log N)^3\) ordered
+prime triples in that window, even with the three primes distinct.
+It also treats any fixed number of triple equations sharing one prime.
 
 We can use Halupczok's Theorem 3.1 twice. The first application supplies enough
 prime candidates; the second finds a binary remainder outside its exceptional
@@ -372,7 +380,7 @@ set. This gives a complete proof from the same input already used for Hq.
 \(c>0\), write \(Y=cT^\theta\). For every sufficiently large real \(T\),
 \[
 \#\{p\in(T,T+Y]:p\text{ prime},\ p\equiv1\pmod L\}
-\gg_{q,\theta,c}\frac{Y}{(\log T)^2}. \tag{T1}
+\gg_{q,\theta,c}\frac{Y}{\log T}. \tag{T1}
 \]
 
 To prove this, apply Theorem 3.1 with \(X_1=X_2=T\), length \(Y\),
@@ -390,14 +398,18 @@ There are \(2Y/L+O(1)\) targets \(m\equiv2\pmod L\) with
 \sum_{\substack{2T<m\leq2T+2Y\\m\equiv2\ (L)}}W_{T,Y}(m)
 \gg_{q,\theta,c}Y^2.
 \]
-For a fixed prime \(u\in(T,T+Y]\), at most \(2Y+1\) target values occur;
-each determines \(v=m-u\), with both primes of size \(\asymp T\).
-Its contribution is at most \(O(Y(\log T)^2)\). Dividing the last display by
-this upper bound proves (T1). This weaker-than-PNT candidate count suffices.
+For a fixed prime \(u\in(T,T+Y]\), the partner \(v=m-u\) lies in an
+interval of length \(2Y\), with both primes of size \(\asymp T\).
+Montgomery–Vaughan's interval Brun–Titchmarsh bound, *The large sieve*,
+Theorem 2, p. 121, equation (1.12), gives \(O(Y/\log Y)\) partner
+primes. Its total weighted contribution is \(O(Y\log T)\), since
+\(\log Y\asymp\log T\). Dividing the aggregate mass by this bound
+proves (T1). The [prime-star proof](PRIME_SPLITTING_DECOMPOSITIONS.md#2-every-target-natural-order-prime-counts-in-short-windows)
+also sums all good remainders to obtain the natural triple-count scale.
 
 Now fix an original target \(N\equiv3\pmod L\), and put
 \(T=N/3\), \(Y=N^\theta/10\). Take \(N\) large enough that \(T\geq3Y\).
-The candidate lemma supplies \(\gg_{q,\theta}Y/(\log N)^2\) primes
+The candidate lemma supplies \(\gg_{q,\theta}Y/\log N\) primes
 \(p_1\in(T,T+Y]\), \(p_1\equiv1\pmod L\). Discard the possible endpoint
 \(p_1=T+Y\), which removes at most one candidate. Their distinct remainders
 \[
@@ -415,7 +427,7 @@ conditions follow as in Hq from \(\theta>2/3\).
 The absolute-error bound and \(S(m,L,1)\geq c_q>0\) leave only
 \(O_{q,\theta}(Y/(\log N)^4)\) targets in this block with
 \(W_{T,Y}(m)<c_qY/2\). Since the candidate-to-remainder map is injective,
-these exceptions cannot exhaust \(\gg Y/(\log N)^2\) candidates. Choose one
+these exceptions cannot exhaust \(\gg Y/\log N\) candidates. Choose one
 with a prime representation \(m=p_2+p_3\). Then
 \[
 T<p_2\leq T+Y,\qquad T-2Y<p_3<T,
@@ -534,7 +546,7 @@ factorization covering the entire semigroup. It supplies a full-count
 asymptotic outside \(O(X/(\log X)^{1/8})\) targets with relative error
 \(O((\log X)^{-1/16})\). Its constants are ineffective. The sharp energy
 for \(0<\theta\le5/6\), a power-saving full-count variance and every-target
-binary counts remain open. D12Power separately gives power-saving exceptions
+power-short binary counts remain open. D12Power separately gives power-saving exceptions
 for the lower count at \(q=12,\theta=99/100\). Dq still gives a lower bound in its wider range
 \(\theta>1/3\), with stronger logarithmic exception estimates; these are
 different conclusions. Any proposed power-rate full-count variance needs
@@ -614,19 +626,22 @@ lower sieve does not claim prime or two-prime-factor summands.
 ## Five complementary research campaigns
 
 Retain the definitions of \(C_q,L,\kappa_q,r_{q,H}\) from FBS-U. A weaker
-existence goal remains useful for tracking implications:
+existence statement remains useful for tracking implications:
 
-**Open family goal FBS-G.** For every fixed \(q\geq3\), every sufficiently
+**Balanced family theorem FBS-G.** For every fixed \(q\geq3\), every sufficiently
 large \(N\equiv2\pmod {\ell_q}\) has
 \[
 N=a+b,\quad a,b\in C_q,\qquad N/3\leq a,b\leq2N/3.
 \]
 The threshold may depend on \(q\). The congruence is necessary because every
-member of \(C_q\) is odd and \(1\pmod q\); sufficiency for the whole family
-is conjectural. The \(q=3\) instance is proved. The \(q=12\) instance is
-the open target S12 in the case study. FBS-U implies FBS-G, since its lower
-bound tends to infinity and eventually \(N^\theta\le N/3\). FBS-G supplies
-neither the shrinking window nor the count in FBS-U.
+member of \(C_q\) is odd and \(1\pmod q\). Sufficiency for the whole family
+is now proved by Corollary FixedModulusBalancedExistence in the
+[quantitative subgroup theory](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md#balanced-fixed-modulus-families),
+with a positive explicit leading constant and relative logarithmic error.
+The \(q=12\) instance is balanced S12 in the case study.
+FBS-U also implies FBS-G, since its lower bound tends to infinity and
+eventually \(N^\theta\le N/3\). FBS-G supplies neither the shrinking
+window nor the count in FBS-U.
 
 **Campaign A: pointwise quartic correlation.** A proved intermediate is
 [AsymPointwise](ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md): with
@@ -704,9 +719,9 @@ It also switches the branch above \(\sqrt D\) exactly to upper Rosser
 weights at level \(D/p\), without asserting those upper weights are well
 factorable. Fouvry's large-residue theorem controls some boxes satisfying
 its precise Siegel--Walfisz hypothesis; neither it nor the switch estimates
-the full critical remainder. The main target remains S12U:
-every sufficiently large \(N\equiv2\pmod{12}\) is a sum of two members of
-\(C_{12}\), without a balance restriction. Seek a pointwise lower bound for
+the full critical remainder. The resulting S12U existence assertion is now
+proved by the separate subgroup theorem. A stronger coordinate-weight
+method question remains: seek a pointwise lower bound for
 \[
 R(N)=576\sum_{a+b=N}h(a)h(b),\qquad
 h(n)=r_G(n)r_E(n)/24.
@@ -854,7 +869,7 @@ here concern the stated clean congruence family.
 | General asymmetric counts | Every fixed \(q\) and chosen quadratic \(\chi\) have the pointwise \(C_q+A_\chi\) order \(N J_\chi/(\log N)^{3/2-1/\varphi(q)}\) on \(N\equiv2\pmod L\) |
 | Bounded excluded prime factors | Every-target counts at \(N J_q/(\log N)^{2-2/\varphi(q)}\), with the first summand in \(C_q\) and only boundedly many large excluded prime factors in the second |
 | Asymmetric distribution level | A full auxiliary-modulus average proves an \(L^1\) level at every fixed exponent below \(\xi\); the critical square-root level remains open |
-| Highest-priority arithmetic target | Prove S12U through the critical sieve remainder or the global norm lower bound and fixed-prime marginals |
+| Quantitative subgroup correlation | Full \(C_{12}+C_{12}\) leading asymptotic with relative error \(O((\log N)^{-1/32768})\), and macroscopic balanced FBS-G for every fixed \(q\); the original weighted sieve inputs remain open |
 | Power-window full-count variance | VqPower proves (E) and quantitative centered variance for every fixed \(q\), \(5/6<\theta<1\); lower exponents and power-saving full variance remain open |
 | Power-saving lower-count exceptions | D12Power gives \(H/(\log X)^{3/2}\) pairs outside \(O(X^{1-10^{-6}})\) targets for \(q=12,H=X^{99/100}\) |
 | Weighted simultaneous-norm correlations | SimNormPower gives exact raw and fully sifted main terms and actual bad-prime marginals outside a power exceptional set, including fixed balance intervals and all target valuations |

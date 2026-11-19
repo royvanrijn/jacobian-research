@@ -6,7 +6,9 @@ Haar density does not, however, give a valid main term for coefficients
 of power size. The omitted cofactor-size correction accumulates to a
 positive proportion of the candidate mass. This note proves that
 obstruction, together with an unconditional bound for the two-large-prime
-pairs left after sieving. The full binary C12+C12 problem remains open.
+pairs left after sieving. The full binary \(C_{12}+C_{12}\) count is now given by the separate
+[Goldbach correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md).
+The cofactor-drift obstruction proved here still applies to this sieve method.
 
 ## 1. Exact mixed identities and the local model
 

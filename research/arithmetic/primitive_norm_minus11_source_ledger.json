@@ -17,9 +17,16 @@
         "Theorem 25.1.1, printed p.403: projective maximal-order unit mass is phi(D)/12. At D=11 this is5/6, and the principal projective unit stabilizer2 gives probability3/5.",
         "Main Theorem28.5.3: strong approximation for the norm-one group with a split noncompact place, as used in the already pinned spectral proof.",
         "Propositions41.3.1 and41.3.6: all-integral-ideal correspondence, degree and prime-power recurrence; forward functions use inverse-unit Haar weights.",
-        "Main Theorem14.7.4: Hasse-Schilling reduced norms of the rational definite algebra are exactly positive rational numbers; used to identify the global norm-character quotient."
+        "Main Theorem14.7.4: Hasse-Schilling reduced norms of the rational definite algebra are exactly positive rational numbers; used to identify the global norm-character quotient.",
+        "Chapter41 Exercise7(c)-(e), printedp766/PDFp786: two classes, projective unit sizes2,3, column-counting V2=[[1,3],[2,0]] and cusp eigenvalue-2. Canonical proof independently exhibits a nonprincipal ideal and exhausts the mass; this exercise corroborates the transpose convention."
       ],
-      "inspection_scope": "Actual author PDF statements and the multi-class normalization inspected internally. Classical theorems are imported, without whole-source independent verification."
+      "inspection_scope": "Actual author PDF statements and the multi-class normalization inspected internally. Classical theorems are imported, without whole-source independent verification.",
+      "matrix_convention_correction": {
+        "scope": "Pinned v1.0.7u, Section41.1.9 printedp751; Section41.4.1 and proof41.4.3 printedpp759-760; primary PDF preserved unchanged.",
+        "literal_mismatch": "With column-counting V2=[[1,3],[2,0]], the p760 row action and row pairing W=diag(2,3) give <e1V2,e2>=9 but<e1,e2V2>=4. The displayed W^-1 V^t W is a column-adjoint formula.",
+        "consistent_conventions": "Row values x->xV use inverse-unit metric W^-1 and adjoint W^-1 V^t W. Function-value columns use A=V^t with inverse-unit metric W^-1 and adjoint W A^t W^-1. Literal row metric W instead has adjoint W V^t W^-1.",
+        "application": "The canonical function-column operator uses inverse-unit Haar probabilities3/5,2/5 and is self-adjoint. No Ramanujan estimate or theorem scope is changed."
+      }
     },
     {
       "author": "Yves Martin and Ken Ono",
@@ -51,7 +58,9 @@
     "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
     "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
     "scope": "Reuse the proof argument, not its class-number-one theorem outside its scope: all-ideal normalization; strong approximation; Jacquet-Langlands Theorem14.4 and Section5 Proposition5.20; Deligne Formes modulaires et representations l-adiques Theorems4.9,5.1 and La conjecture de Weil.I Theorem1.6.",
-    "new_hypotheses_checked": "Discriminant11 maximal order; retain all ideal classes with Haar/inverse-unit mass; injectivity of every projective unit group at odd inert p>=7 and11; exactly two global norm characters; trivial infinite type; every Hecke index coprime to11 and its added level prime. Both finite-quotient correlations and the target-dividing inert-prime branch are proved in the new note."
+    "new_hypotheses_checked": "Discriminant11 maximal order; retain all ideal classes with Haar/inverse-unit mass; injectivity of every projective unit group at odd inert p>=7 and11; exactly two global norm characters; trivial infinite type; every Hecke index coprime to11 and its added level prime. Both finite-quotient correlations and the target-dividing inert-prime branch are proved in the new note.",
+    "explicit_two_class_check": "Direct right-ideal and complete norm4 unit calculation gives the two coarse classes, projective stabilizers2,3, and probabilities3/5,2/5. Exact A2,A3,A4 and ten-point radical T2 kernel are derived in the proof. The source row/column convention mismatch is explicitly excluded; the full all-index spectral estimate remains imported.",
+    "direct_self_adjoint_correspondence": "For split maximal index primes, elementary divisors give mI subset J for each index-m ideal flag J subset I. Flag reversal to mI subset J is involutive modulo central scaling. At auxiliary primes J_p=I_p and identification mI~I changes markings only by the projectively trivial scalar m^-1. This proves fine kernel symmetry and its inverse-unit coarse pushforward directly."
   },
   "effective_scope": {
     "global_onset": 2361183241434822606848,

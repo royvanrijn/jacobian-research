@@ -3,12 +3,14 @@
 The general framework is developed in
 [Binary sums with prescribed prime factors](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md).
 This case study retains the norm-specific proofs and certificates for modulus 12.
-The immediate arithmetic target is the unbalanced every-target statement S12U
-below. The longer-term quantitative target is the
-[uniform binary lower bound FBS-U](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-central-binary-conjecture);
-S12 below is its weaker macroscopic existence consequence.
+The [quantitative subgroup correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+now proves both the unbalanced every-target statement S12U and balanced S12
+below, with the full \(C_{12}+C_{12}\) leading asymptotic and logarithmic
+remainder. Its fixed-modulus balanced corollary covers every fixed \(q\ge3\).
+The [uniform power-short binary lower bound FBS-U](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-central-binary-conjecture)
+remains a stronger open target.
 
-The every-target assertion S12 is **open in this work**. Unconditional results
+The separate results retained here
 include semigroup-scale density-one coverage for fixed power exponents above
 \(1/3\), full unweighted variance in fixed-width balanced windows and in
 power windows with \(\theta>5/6\),
@@ -19,7 +21,7 @@ sieve, and an exact finite search. The fixed-fraction positive-proportion
 statement is a corollary of Loughran--Matthiesen's correlation theorem; the averaged statements
 are consequences of established ideal-counting estimates.
 The local calculation includes singular lifts and primes dividing the target.
-None of these statements supplies the missing pointwise global input for S12.
+These earlier statements alone do not supply an every-target theorem; the linked subgroup correlation supplies it by a separate argument.
 
 A separate [one-sided pointwise theorem](ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md)
 now proves a power-error asymptotic for
@@ -40,7 +42,7 @@ Here \(J_{12}(N)\) is the product of \((p-1)/(p-2)\) over target
 primes \(p\ge5\) outside \(1\bmod12\). There are fewer than
 \(1/\gamma\) such excluded factors, with multiplicity.
 This does not remove them or provide the raw simultaneous-norm lower bound.
-The two-sided targets S12U and S12, and their priority audit, remain open.
+The two-sided targets S12U and S12 now follow from the linked subgroup correlation. Their historical priority audit and the raw coordinate-weight lower bound remain separate obligations.
 
 The general theorem FBS1 gives, for every fixed \(0<\theta<1\), at least
 \(c_2X\) targets \(X<N\leq2X\), \(N\equiv2\pmod {12}\), with
@@ -74,7 +76,7 @@ Outside one \(O(X^{1-7\cdot10^{-6}})\) exceptional set,
 sifted weighted proportion is
 \(\Gamma(N)=\prod_p(1-\beta_p(N))\ge10-\pi^2\), up to the same error.
 Fixed moving balance intervals have the analogous conclusions with a smaller
-power error. These weighted statements leave every-target coverage open.
+power error. These weighted statements do not on their own prove every-target coverage.
 The older H12 prime-pair baseline has a smaller count scale and the range
 \(\theta>2/3\).
 For \(2/3<\theta<1\), the linked
@@ -101,6 +103,13 @@ there are \(a,b\in C\) with
 N=a+b,\qquad N/3\leq a,b\leq2N/3.
 \]
 
+This is now proved by Corollary FixedModulusBalancedExistence at \(q=12\)
+in the [subgroup theory](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md#balanced-fixed-modulus-families).
+The balanced count has leading constant \(A_{12}/3\), target factor
+\(J_{12}(N)\), and relative error \(O((\log N)^{-1/32768})\).
+The analytic inputs and written proof have internal source/application
+review; no external human review or formal verification is asserted.
+
 The conjectured unbalanced version for every positive admissible target agrees
 with the finite search below. An effective eventual theorem would need a cutoff
 overlapping the verified range, or the intervening range would also have to be
@@ -115,9 +124,10 @@ Requiring both quadratic splitting conditions selects the single class
 
 **Unbalanced target S12U.** Every sufficiently large \(N\equiv2\pmod{12}\)
 has \(N=a+b\) with positive \(a,b\in C_{12}\), without a balance restriction.
-This remains open here. S12 implies S12U; the converse has not been proved.
-The first global counting target is the unrestricted positive correlation
-\(R_{\mathrm{tot}}(N)\), followed by its versions with fixed local conditions.
+This follows from the proved balanced S12. The unrestricted positive
+unweighted correlation and its fixed local-state versions are also given
+directly by the [quantitative subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md).
+No converse from the bare S12U existence assertion is used.
 
 **Scaling lemma S12Scale.** Factor uniquely
 \[
@@ -146,7 +156,7 @@ all have no prime factor \(1\pmod{12}\), and none has a thirds-balanced
 representation. Scaling their existing witnesses cannot prove balance for
 the infinitely many targets with one of those cores. Those multiplier
 families require separate treatment even if every larger reduced core is
-settled. This is one reason to pursue S12U first.
+settled. The new subgroup theorem treats the full target directly and therefore covers these multiplier families without this scaling reduction.
 
 Scaling also changes a power-window estimate. If
 \(|a-b|\le N_0^\theta\), its scaled difference is at most
@@ -684,8 +694,7 @@ L(2,\chi_{12})=\frac{\pi^2}{144}
 These values give \(\kappa_K=\pi^2\log(2+\sqrt3)/36\) and the stated \(\rho\).
 
 The averaged main term is positive. It establishes neither the pointwise lower
-bound (H1) nor the bad-prime estimate (H2). In particular, the binary coverage
-target remains open here.
+bound (H1) nor the bad-prime estimate (H2). Those coordinate-weight inputs remain open even though binary coverage now follows by the separate subgroup theorem.
 
 ## The averaged coordinate count after the full sieve
 
@@ -883,7 +892,7 @@ shrinking-window quantitative estimates or the inputs for arbitrary moduli.
   The new Gaussian paper's explicit all-positive result should be distinguished
   from this earlier asymptotic theorem.
 
-The immediate mathematical task is unrestricted pointwise counting for S12U.
+Unrestricted unweighted pointwise counting for S12U and macroscopic balanced S12 is now proved by the [quantitative subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md). The following sieve routes retain their own unresolved inputs.
 The separate [half-dimensional criterion](ASYMMETRIC_SEMILINEAR_SIEVE.md)
 gives another sufficient route: control one signed remainder beyond level
 \(N^{1/2}\) for the positive asymmetric sequence. Its local density,
@@ -894,8 +903,7 @@ A further [critical switching bound](ASYMMETRIC_CRITICAL_SWITCHING.md)
 now reduces the sufficient distribution obligation to square-root level
 up to logarithms. Its upper bound for the remaining two-large-prime mass
 holds on every admissible target, including arbitrary good target factors.
-The critical distribution estimate, and hence the two-sided conclusion,
-remain open.
+The critical distribution estimate remains open; the two-sided conclusion is now supplied by the separate subgroup-correlation argument.
 The balanced inputs (H1)--(H2), or the naturally normalized fixed-prime
 interface (H*), remain sufficient routes to S12. None has been established
 on every target. SimNormPower establishes both global inputs outside a
@@ -908,7 +916,7 @@ semigroup-scale density one for \(\theta>1/3\), fixed-width variance,
 quantitative full-count variance for \(5/6<\theta<1\), and exact first
 moments in every fixed power window. The sharp four-form energy is proved in
 that upper range; it remains an obligation for \(0<\theta\le5/6\). The required
-every-target binary estimates, an effective cutoff, and the uniform
+every-target power-short binary estimates, an effective cutoff, and the uniform
 semigroup-scale family conjecture remain open here. D12Power supplies
 power-saving exceptions for the lower count at \(H=X^{99/100}\); a
 power-saving full-count asymptotic and elimination of every exception require

@@ -1,15 +1,17 @@
-# Proof support for the conditional pointwise binary theorem
+# Proof support for pointwise binary correlations
 
 This file contains the expanded arguments for
 [ConditionalBinarySemigroups](PRIMITIVE_NORM_BINARY_CORRELATION.md).
-Its full conclusion is conditional on the explicitly identified ZF and
-graph inputs. Individual modules state which inputs they use.
-The density, finite-AP and arithmetic arguments do not independently
-prove the external graph moment or the zero-free theorem.
+The modules expose their ZF and graph inputs separately.
+Those inputs are supplied by the precisely scoped theorems checked in
+[the input audit](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md).
+The final assembly, including their discharge, is in Section 6 of the
+main theorem. A module's conditional formulation records its logical
+dependence rather than an unresolved assumption in the assembled result.
 
-The source ledger records exact primary editions and internal review
-limits. This is written proof support, without an unrestricted
-computational or formal-verification claim.
+The source ledger pins exact primary editions and internal review
+scope. No unrestricted computational or formal-verification claim
+is made.
 
 ## D. Density models, principal means, bank envelopes and reconstruction
 
@@ -681,14 +683,38 @@ uniformly in all alpha and |zeta|<=L^{C4}. Here are all steps, so that
 no additional prime-interval hypothesis is concealed.
 
 1. **Product masses and arbitrary tuple tests.**
-   Pairwise-disjoint banks and unique factorization, not a prime
-   interval theorem, give source (4.3):
-   rho_Lambda(n)<=L^kappa/n, with
-   kappa=C0 log(m!)+m log max(1,v_-^{-1}).
-   Restricting to AP primes or deleting primes changes none of this.
-   Cauchy–Schwarz on each product fiber gives source (4.4) for arbitrary
-   tuple tests: the associated integer coefficient sequence has
-   squared norm <=L^kappa/U times the tuple squared norm on a dyad.
+   Pairwise-disjoint banks and unique factorization give the exact law
+   \[
+    n\rho_\Lambda(n)=
+       \prod_g\frac{k_g!}{V_g^{k_g}\prod_{p\in{\cal P}_g}a_p!},
+   \]
+   where \(a_p\) is the multiplicity of \(p\) in \(n\).
+   Since \(k_g\le m\) and at most \(C_0T\) big groups occur,
+   \[
+    \rho_\Lambda(n)\le\frac{L^\kappa}{n},\qquad
+    \kappa=C_0\{\log(m!)+m\log\max(1,v_-^{-1})\}.
+   \]
+   Source (4.3) omits \(C_0\) on the second term of this exponent.
+   It cannot be omitted for general group data. For example, with
+   \(C_0=2,\ m=1,\ v_-=1/10\), take \(2T\) big groups with
+   \(V_g\in[1/10,11/100]\). Then
+   \[
+    n\rho_\Lambda(n)\ge(100/11)^{2T}
+       >10^T=L^{\log10},
+   \]
+   contradicting the printed exponent. These group counts and masses
+   are permitted asymptotically: the range with \(c=1/10,d=2/5\)
+   has reciprocal-prime mass \((3/10)T+O(1)\), sufficient to form
+   these disjoint banks greedily. Separate small banks can be formed
+   with \(a=1/50,b=1/25\) and a smaller positive group-count constant.
+   Taking \(L_0=2\) imposes no further restriction on these large primes.
+   The corrected exponent is still fixed independently of \(J\);
+   it is the exponent used in the parameter choices below.
+   Restricting to AP primes or deleting primes changes none of the
+   exact product-law argument. Cauchy–Schwarz on each product fiber
+   gives source (4.4) for arbitrary tuple tests: the associated
+   integer coefficient sequence has squared norm at most
+   \(L^\kappa/U\) times the tuple squared norm on a dyad.
 
 2. **Integer bilinear estimate.**
    Source Lemma 4.2 explicitly permits coefficients on arbitrary
@@ -928,13 +954,13 @@ Consequently choose the reconstruction saving first, then the graph accuracy and
 
 ## P. The all-conductor prime-factor estimate under ZF
 
-Conditional analytic module, 19November2026. This proves the nonexceptional-character estimate needed by the proposed Walsh reflection argument. The external fixed zero-free-half-plane theorem is an EXPLICIT HYPOTHESIS, not independently verified here. The principal/gcd-record completion is proved in Module E, the centered low-frequency budget in Module C, and the large-shift transfer in Module G. The latter imports the specified k=1 graph theorem.
+Conditional analytic module, 19November2026. This proves the nonexceptional-character estimate needed by the proposed Walsh reflection argument. The fixed zero-free-half-plane input is kept explicit in this module and supplied by Part I of the source checked in the input audit. The principal/gcd-record completion is proved in Module E, the centered low-frequency budget in Module C, and the large-shift transfer in Module G. The latter imports the specified k=1 graph theorem.
 
 ### Imported hypothesis ZF and exact source
 
 (ZF) There is a fixed sigma_0<1 such that every primitive Dirichlet L-function has no nontrivial zero with real part>sigma_0, allowing the principal pole at1.
 
-The recent source used by Walsh asserts sigma_0=7/8: OpenAI,*The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8*,30September2026, Theorem1.1 printedp4. I read its actual theorem and scope, not the full194-page proof. Exact primary PDF retained sources/openai-quasi-rh-sep30-2026.pdf SHA2568fe93046f8cf5ef1ba5969c89addc02d76311adc4ee907509ff9cd96f7ec99e7, URL https://raw.githubusercontent.com/openai/math/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf . The following deductions remain conditional onZF unless that imported result's proof is accepted after its separate audit.
+For this application use sigma_0=11/12 from OpenAI, *The Quasi-Riemann Hypothesis*, 30 September2026, Theorem3.1 printedp10. The applicable PartI proof is inspected in PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md; its stronger PartII is unnecessary. Exact primary PDF: sources/qrh-sep30-2026.pdf, SHA256 8fe93046f8cf5ef1ba5969c89addc02d76311adc4ee907509ff9cd96f7ec99e7, URL https://raw.githubusercontent.com/openai/math/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf . This module proves the implication from that stated input.
 
 Walsh Lemma5.1 printedp20 (both retained v1 and v2 editions; v2 PDF sources/walsh-2610.40439v2.pdf, SHA2565fb593fdd03c79d90e5895177b895c1ce6afcfae660f2bf2f10312f0ff23bad1) derives the needed smooth prime estimate from this exact input. Its statement restricts the modulus tolog^B x, but its contour proof(5.2) uses only log q. Therefore the same proof permits q<=x^B. This extension is proved below with its uniform parameters; it is not obtained merely by changing the statement.
 
@@ -1255,17 +1281,52 @@ on this profile. The phase eta0(A/d) has modulus1. Every other record weight has
 
 of FIXED period L0. The bracket is exactly the centered two-branch expression from(G1).
 
-Apply the recordwise proof of PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md, equations(W6)--(W8), at length Y/A. Its normalized error can be smaller than every desired fixed logarithmic power by choosing J. Uniformly in d, the remaining record sum gains precisely1/d:
+There is one further condition on the rough variable:
+\(F_{\rm good}\) retains \((v,Q_{>y})=1\), where
+\(Q_{>y}=\prod_{p\mid Q,\ p>y}p\). It must be removed before using
+the fixed-period centering statement. For each retained record \(A\),
+extend the periodic test by \(\eta_0(v)\) to all \((v,S)=1\), including
+the newly added nonunits of \(Q/d\). Keep its same centered bracket
+and smooth and record weights, of absolute value at most \(L^C\).
+The resulting sum differs from the actual profile only on the
+large-prime avoidance set. Since the support has \(0<v\le C_\psi Y/A\),
+\[
+ \#\{v\le C_\psi Y/A:p\mid v\}
+ \le \frac{C_\psi Y}{Ap}.
+\]
+Thus no interval-rounding or divisor-count error is needed. Summing
+the absolute differences over the retained records gives
+\[
+ \begin{split}
+ |\Delta S_d|
+ &\ll L^C Y
+   \sum_{\substack{A\ {\rm S\text{-}smooth}\\d\mid A}}\frac1A
+   \sum_{\substack{p\mid Q\\p>y}}\frac1p\\
+ &\le \frac{Y}{d}L^C V^{-1}
+                 \frac{\log Q}{y\log y}
+ \ll_{B}\frac{Y}{d}L^{-B}
+ \qquad(B>0).
+ \end{split}
+\]
+Here the record sum is \(1/(dV)\) when \(d\) is \(S\)-smooth.
+If \(d\) has a prime above \(y\), the good profile is empty.
+The last bound uses \(V^{-1}\ll\log y\), \(\log Q=O(L)\), and
+\(y=\exp(L^{2/5})\). These estimates are uniform in every target
+valuation. After this extension, the residual rough test really
+has fixed period \(L_0\); the additional gcd restriction is not
+silently included in \(b_A\).
+
+Apply the recordwise proof of PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md, equations(W6)--(W8), to the extended sum at length Y/A. Its normalized error can be smaller than every desired fixed logarithmic power by choosing J. Uniformly in d, the remaining record sum gains precisely1/d:
 
     sum_(A S-smooth, d|A)1/A
       = (1/d)*sum_(B S-smooth)1/B
       = 1/(d V) << L^(2/5)/d.                         (G14)
 
-No d_K(d) loss appears: for NORM INDICATORS the actual record/list weight is bounded by L^C independently of A,d. Consequently, for every A0>0, a fixed sufficiently deep model gives
+No d_K(d) loss appears: for NORM INDICATORS the actual record/list weight is bounded by L^C independently of A,d. Restoring the rough avoidance condition with the preceding per-profile error, for every A0>0 a fixed sufficiently deep model gives
 
     |sum_m F_good(d*m)eta(m)| <<_(A0) (Y/d)*L^-A0.      (G15)
 
-Restrictions gcd(A,Q)=d, A<=E only delete records from an already ABSOLUTE recordwise bound. The deleted large-Q primes and large records were already paid in(G9); their omission does not alter the principal model.
+Restrictions gcd(A,Q)=d, A<=E only delete records from an already ABSOLUTE recordwise bound. The rough large-Q-prime avoidance has just been restored with its explicit1/d error. Equation(G9) pays the globally discarded points and large records when passing back from F_good to F.
 
 After dividing by phi(Q_d), summing the O_(L0)(1) exceptional characters and d, the energy is
 
@@ -1490,7 +1551,893 @@ away from the fixed bad primes. There are two possible principal twists, each wi
 
 Closed here: the fractional pole and the second principal branch are NOT an obstruction to the low-frequency centering. A finite, sufficiently deep Hankel model produces arbitrary fixed logarithmic savings with the full smooth-record and periodic-test budget(W10).
 
-Not closed here: norm-indicator envelope/bank reconstruction at the required N/log N scale; the graph comparison and its uniformity for a reflected large target; every comparison's multiplier/major-denominator range; the density-model binary main term with its full local constant; and independent verification of imported 2026 graph/zero-free results. Walsh's source only states fixed-shift integer divisor correlations, and explicitly leaves norm indicators and large-shift uniformity as further work.
+Closed in the other modules and final assembly, rather than in this low-frequency module alone: norm-indicator envelope/bank reconstruction at the required N/log N scale; the graph comparison and its uniformity for a reflected large target; every comparison's multiplier/major-denominator range; the density-model binary main term with its full local constant; and independent verification of imported 2026 graph/zero-free results. Walsh's source only states fixed-shift integer divisor correlations, and explicitly leaves norm indicators and large-shift uniformity as further work.
 
 This module therefore cannot by itself promote the desired every-target unweighted primitive norm leading asymptotic.
 
+
+
+## F. Final assembly and relative error budget
+
+The following calculation spells out the normalization and error order
+in the final assembly. The primary ZF input is Theorem 3.1 of
+[the zero-free preprint](sources/qrh-sep30-2026.pdf); G is Theorem 3.5
+with Lemmas 3.4/3.6 of
+[the weighted-dilation preprint](sources/weighted-dilation-graphs-sep24-2026.pdf).
+Their exact scopes appear in Section 1 of the main note. The internal
+input-validation record documents review and is not an additional
+mathematical premise. All other inputs listed here are the preceding
+proved modules and the linked arithmetic results.
+
+### F.1. Exact main coefficient for unequal H and fixed bad coefficients
+
+Let L=logN, kappa=2-rho1-rho2, J=J_E(N). Fix the bulk cutoff first. For Gamma(N)>0, Gamma is bounded below by a positive fixed number, andJ>=1. Thus the natural comparison scale is
+
+    S(N)=N*J*L^(-kappa), 0<=kappa<2.
+
+For gcd(A,B)=1, every integer point onAx+By=N is
+
+    (x,y)=(x0+B*t,y0-A*t).
+
+Its positive range has t-lengthN/(AB). ModuloL0 this map is a bijection onto the entire root set: at each prime power at least one ofA,B is a unit, so the kernel is generated by(B,-A) and has cardinalityL0. LetR be the number of roots with statesu inU,v inV.
+
+The raw finite-place probability isR/L0. The two projected marginal weights areL0*c1/|H1| andL0*c2/|H2|. Their product withR/L0 is
+
+    c1*c2*L0*R/(|H1||H2|)=c1*c2*Gamma(N).
+
+At a good prime where only one side is forbidden, the actual linear sieve probability1-1/p cancels that marginal probability exactly, includingp|N. When both sides are forbidden, the probability is1-(2-1[p|N])/p; dividing by the two marginal probabilities gives
+
+    [1-(2-1[p|N])/p]/(1-1/p)^2.
+
+Its product isC_E*J_E(N). The target-prime tail abovey has sumO(logN/(y logy)), uniformly in all valuations. This proves the exact constant inB.4. There is no additionalphi(A),phi(B) or beta-integral factor. Only the logarithmic singularity parametersrho_i enter the Gamma-normalized marginal constants.
+
+As independent calibrations:
+- Full unit-group cases reduce to the elementary finite-residue line count.
+- IfH1={1}mod4 andH2 is the full unit group, the formula reduces to the one-variable odd split-core mean on even targets.
+- GaussianA_G, its odd/mixed/both-even factors, andC12's finite density12 all match.
+- Converting the four literal charactersmod12 to primitive ones gives(1/3)*(4/3)*(3/2)=2/3, so the explicitC12Euler factor is correct.
+
+### F.2. Bank weights are exact; no tau-deweighting input remains
+
+Identity-class bank primes preserve BOTH fixed state filters, original indicators and density models exactly. Their omission from the smooth record does not change the rough part. For physical embeddings byA,B, bank primes are units atA,B; hence their counts and dilation invariance are unchanged.
+
+The actual joint bank record law is
+
+    mu_p(0,0)=1-2/p,
+    mu_p(e,0)=mu_p(0,e)=(1-1/p)p^(-e), e>=1.
+
+Deletingp|N makes the two positive valuations mutually exclusive. CRT gives these factors, including EXACT valuations, on the reflected line. Records exceedingexp(sqrtL) have exponentially small population. For retained recordsr,s, the endpoint-sieve budget is uniform; summing at mostexp(2sqrtL) of them timesN^(.45) and a fixed log power isO(N^(.5)).
+
+The envelope therefore controls bad bank sets at the FULL sparse scaleS(N). Chernoff gives a relativeL^(-eta) error for a fixedeta>0, sufficient for an asymptotic. Inclusion-exclusion on good banks has total coefficient costL^(C_rec), fixed before graph complexity. The normalization is exactly
+
+    xi(x)*w(y)*product I_g
+      =product V_g^2 * xi(x)*w(y)*Omega_P(x)*Omega_P(y).
+
+No divisor weight or coordinate multiplicity is introduced. The productV_g^2 costs another fixed log power, already included inC_rec.
+
+### F.3. Explicit target-grid normalization and error
+
+At a gcd profile d|q setr=q/d. The selected small-bank prime has sizeP and is removed to the FIRST power; its squares have exponentially small residue energy. The cofactor has length
+
+    M~Y/(dP), M/r=Y/(qP)>>L^T
+
+for every fixedT, because the comparison has two free big-bank products whileP is a small-bank prime. This ratio is independent ofd.
+
+After Mellin separation, standard character orthogonality gives
+
+    sum_(eta modr)|B_eta(t)|²
+        <=phi(r)(1+O(M/r))*sum_m|gamma_d(m)|²
+        <<M²*L^C.
+
+ZF gives the sharp prime factor bound
+
+    |A_eta(t)|<<(1+|t|)*P^sigma1*L^C
+
+for every nonexceptional eta, sigma1>max(sigma0,1/2). The product cutoff has integrable(1+|t|)-weighted Mellin transform of polylogarithmic norm. Thus the nonexceptional contribution AFTER the actual1/phi(r) character normalization is
+
+    <=Y²/(q*d) * [r/phi(r)] * exp(-cL^(1/8))*L^C.
+
+Summingd costs onlysum_(d|q)1/d times a bound forr/phi(r), both logarithmic. There is no unweightedtau(q) or number-of-characters loss. Arbitrary target prime powers are retained.
+
+Exceptional characters are precisely those induced from the fixed modulus after refiningQ=lcm(q,L0). For their retained S-smooth gcd layer, absolute recordwise centering gives
+
+    |S_(d,eta)|<=(Y/d)*L^(-B_pr).
+
+The exact harmonic record bound is
+
+    sum_(A Ssmooth,d|A)1/A=(1/d)*V_S^(-1).
+
+There is no hidden large-conductor Selberg--Delange claim and no divisor-weight factor depending ond. Large-S-record and large-target-prime layers are removed in RESIDUE ENERGY, usingmax-class-count times global squared population, before applying this principal-branch calculation. Each removed population isY times an exponential saving.
+
+For the fixed-period refinement,E_q<=L0 E_Q is used only for a negligible upper error. It never enters the main coefficient. For a fixed physical embeddingFtilde(n)=1[A|n]F(n/A), lettingg=gcd(A,q), the direct residue identity is
+
+    E_q(Ftilde)=E_(q/g)(F).
+
+Its core length isY/A, and the ratio of core length to the new modulus loses only a fixedA-factor. Equivalently its Fourier grid has multiplicityg. No unit-modL0 assertion is made for the embedded physical values.
+
+At each gridq=Nr, additive Parseval is EXACT:
+
+    sum_(j modq)|Fhat(j/q+beta)|²=q*E_q(F_beta).
+
+The physical width isL^C/Y. Integration and summation over the polylogarithmically manyr produceY*L^(-T) for every requestedT. TheN grid points have canceled in the exact normalization; they were not bounded by a supremum. The density projection cancels every fixed-conductor branch, including allHperp branches for arbitraryH.
+
+### F.4. Large shift and harmonic normalization
+
+Root-moment transference is used with arbitrary permitted finite prime sets, uniformly in their bounds. Comparingk=N withk1 after Haar residue replacement is exact because all bank primes are coprime toN. Closed-walk closure is unchanged, and the row/column bounds pay the replacement error before any absolute high-moment summation. Endpoint pairing is block diagonal in positionsmodN, so its Gram block containsO(Dmax) positions, notO(NDmax).
+
+For a source dyadic|n|~X and the ORIGINAL supportPsi(|n|/(ND)), one hasD<=C_epsilon X/N. Insert the target cutoff|n'|<=C_epsilon X BEFORE Mellin inversion. It equals1 on every originally contributing edge; other edges have zero full Mellin integral. Thus there is no x^o norm loss and no extra D-localization. All constants may depend on the fixed bulk epsilon, which is sent tozero only afterN tends toinfinity.
+
+For the usual ordinary bulk weightPhi, takePsi(t)=t*Phi(t). Then
+
+    Psi(|n|/N)/|n|=Phi(|n|/N)/N.
+
+Consequently the graph's harmonic raw correlation is exactly1/N times the desired ordinary banked correlation. After shared-label removal, its comparison atY=N*D1*D2 is similarly1/Y times an ordinary sum. Shared-label probabilities and the separated kernels remain unchanged.
+
+### F.5. Noncircular parameter and sparse-error ledger
+
+All exponents below are FIXED, not functions ofN.
+
+1. Fix bulk epsilon and the finite data. Choose the reconstruction error target so that each banked raw correlation should beO(N L^(-B)), withB>C_rec+kappa+10.
+2. Choose the graph root/pairing target to give that raw harmonic error. The graph then chooses its ideal accuracy, probes and finite comparison family. LetC_cmp include the fixed separated-comparison coefficients and their dyadic/Mellin expansion costs, andC_w bound the structured endpoint weights. The later resonance-grid count and arc-window powers are paid separately in step4 and are not part ofC_cmp.
+3. Choose the major energy exponentT>2(B+C_cmp+C_w+10). The comparison's normalized major contribution is at most
+
+       (1/Y)*(Y L^(-T))^(1/2)*(Y L^(2C_w))^(1/2)
+            =L^(-T/2+C_w),
+
+   before theC_cmp coefficient cost.
+
+   For the minor term, the two endpoint norms give the explicit bound
+   L^(-A_min+2C_w), before that coefficient cost. Choose
+   A_min>B+C_cmp+2C_w+10. The OUTER integer-bilinear estimate in
+   Walshv2, Lemma6.2, printedpp25--26, applies to the already fixed
+   independent free products and arbitrary separated factors bounded
+   by1. Its product-law exponentC_prod depends only on the fixed
+   family. Choose B_out>2A_min+C_prod+4. Dirichlet approximation with
+   denominator capfloor(H'/L^(B_out-1)) gives the squared minor bound
+   L^C_prod*(L^(-B_out)+H1^(-1)+L/H2+L^(2-B_out)),
+   hence multiplierL^(-A_min); the two middle terms beat every fixed
+   inverse log power. HereH'=H1*H2. The resulting outer rational
+   cutoffL^B_out is independent of the AP ideal-kernel's earlier
+   reproduction cutoff. IncreasingB_out changes neither the family
+   norC_cmp. It only enlarges the major grids and windows.
+4. AfterB_out is fixed, choose the variance saving before integration to absorb its polylogarithmic number of rational denominators and arc-width powers. Choose the exceptional-branch savingB_pr and then a FIXED Hankel depth large enough to deliver it. All other contour errors can have a separately prescribed arbitrary logarithmic saving. The later additive phasee(beta*n) changes only these energy-cutoff derivative bounds; it does not change the graph's earlier Mellin-phase range.
+5. Increasing the fixed Hankel depth changes thresholds/constants but not the bounded-model endpoint moment exponent. For a fixed exact list productP=x^o, summing over multiples ofP costsO(X/P); summing list mass/P is<=1. Thus exact-list endpoint moments remainO(X), independently of the eventual fixed mark length and model depth. There is no feedback from the final energy precision into the earlier graph budget.
+
+The final errors are:
+- bad bank sets:S(N)*O(L^(-eta));
+- reconstructed graph/major/minor terms:O(N L^(-B+C_rec))=o(S(N)), sinceJ>=1;
+- record, prime-square and target-prime energy tails: exponential savings times a fixed log power;
+- finite-record CRT errors:O(N^(.5))=o(S(N));
+- model replacement on retained records:relativeO(L^(-1/2));
+- model main-term sieve and omitted Euler factors:relativeo(1), uniformly in the target;
+- endpoint strips:O(epsilon*S(N)), after whichN tends toinfinity and thenepsilon tends tozero.
+
+Thus every error is relative to the correct sparse scale, includingrho1+rho2<1 such asC12+C12. No claim of a numerical effective onset follows from this asymptotic bookkeeping.
+
+### F.6. Every-order corollary: scope of the previous arithmetic input
+
+The semigroup theorem itself fixesA,B. The order corollary does NOT require its error uniform forA,B growing withN. Fix a bad-prefix truncation first, apply finitely many fixed-data asymptotics (after dividing common bad gcds), and only afterward remove the truncation using the previous UNIFORM prefix-tail bound. Bad common gcds leaveJ_E unchanged. This legitimate finite-first/tail-second order is already explicit in the leading-constant note.
+
+The finite bad-place local convolution densities are rational periodic functions and have a positive fixed lower bound on the locally admissible target classes. The earlier ring-class comparison is a lower logarithmic order uniformly at those targets. It therefore transfers the same leading constant from the local shadow to principal primitive norm VALUES. No separate theta-weight-to-value conversion is used.
+
+The resulting every-order constant4*c_C²/alpha² times the product of bad Haar convolution densities is exactly the earlier Haar-stratum identity. Its positivity, paired with the semigroup constant above, gives the asserted eventual existence. This audit identifies no additional conductor or class-group analytic premise beyond the explicitly linked earlier arithmetic theorems.
+
+## H. The odd Gaussian core: classical comparison and exact remaining estimates
+
+This module fixes
+\[
+ C_4=\langle p:p\equiv1\pmod4\rangle,\quad f=\mathbf1_{C_4},
+ \quad R_4(N)=\sum_{a+b=N}f(a)f(b).
+\]
+Counts are ordered numerical-value pairs. Write
+\[
+ c=\frac1{4K_{\rm LR}},\quad
+ C_-=\prod_{p\equiv3(4)}\left(1-\frac1{(p-1)^2}\right),\quad
+ J(N)=\prod_{\substack{p\mid N\\p\equiv3(4)}}\frac{p-1}{p-2}.
+\]
+The imported-theorem route in the main note gives the uniform leading
+term. Sections H.1--H.3 below give a separate almost-all result without
+the graph or fixed zero-free-half-plane imports. Sections H.4--H.6
+isolate the exact scope of a possible replacement for the latter input.
+
+### H.1. Uniform relative Ramanujan tails
+
+For squarefree \(d\) supported on primes \(3\bmod4\), let \(c_d(N)\)
+be the Ramanujan sum and put
+\[
+ \Sigma(N)=\sum_d\frac{c_d(N)}{\varphi(d)^2},\qquad
+ T_Q(N)=\sum_{d>Q}\frac{|c_d(N)|}{\varphi(d)^2}.
+\]
+Both series converge absolutely for each target. The prime factors give
+\[
+ \Sigma(N)=C_-J(N),\qquad
+ \frac{|c_p(N)|}{(p-1)^2}=
+ \begin{cases}(p-1)^{-1},&p\mid N,\\
+               (p-1)^{-2},&p\nmid N.
+ \end{cases}                                                    \tag{H.1}
+\]
+
+**Lemma GaussianRamanujanTail.** There is an absolute \(C\) such that,
+for all sufficiently large \(X\), every \(B>0\), and every \(1\le N\le2X\),
+\[
+                 T_{(\log X)^B}(N)\le Ce^{-B}J(N).                \tag{H.2}
+\]
+A fixed \(B\) does not in general make the relative absolute tail tend
+to zero. The valid uniform removal is the iterated limit
+\(X\longrightarrow\infty\), then \(B\longrightarrow\infty\).
+
+**Proof.** Put \(L=\log X\), \(\eta=1/\log L\le1/4\). Rankin's inequality
+bounds \(T_{L^B}(N)/J(N)\) by
+\[
+ e^{-B}
+ \prod_{p\nmid N}\left(1+\frac{p^\eta}{(p-1)^2}\right)
+ \prod_{p\mid N}
+ \left[\frac{p-2}{p-1}\left(1+\frac{p^\eta}{p-1}\right)\right].
+\]
+All products here and below are over inert primes. The first product
+is bounded by the convergent product obtained by putting \(\eta=1/4\).
+Each target factor is at most
+\(\exp((p^\eta-1)/(p-1))\). For \(p\le L\),
+\[
+ p^\eta-1\le e\eta\log p,\qquad
+ \sum_{p\le L}\frac{\log p}{p}\ll\log L,
+\]
+by Chebyshev and partial summation. This part of the exponent is \(O(1)\).
+There are at most \(\log(2X)/\log L\) target primes exceeding \(L\);
+each contributes at most \(2e/L\). Their total is \(O(1/\log L)\).
+This proves (H.2), with its constant and threshold independent of \(B\).
+
+For the assertion about a fixed cutoff, put
+\[
+ N_y=2\prod_{\substack{p\le y\\p\equiv3(4)}}p,\qquad X_y=N_y.
+\]
+Normalize the nonnegative weights
+\(w_y(d)=|c_d(N_y)|/\varphi(d)^2\) to a probability measure.
+The inclusion probabilities of primes \(p\le y\) are independently
+\(1/p\). Fix \(0<\alpha<1\) and an integer \(m\) with \(m\alpha>B\).
+AP Mertens gives
+\[
+ \sum_{\substack{y^\alpha<p\le y\\p\equiv3(4)}}\frac1p
+       \longrightarrow\lambda=\tfrac12\log(1/\alpha)>0,
+ \qquad \sum_{p>y^\alpha}p^{-2}\longrightarrow0.
+\]
+Consequently the probability of selecting exactly \(m\) primes in this
+band tends to \(e^{-\lambda}\lambda^m/m!>0\), by expanding
+\(\prod(1-1/p+z/p)\). Those terms have \(d>y^{m\alpha}\),
+whereas \((\log X_y)^B\ll y^B\) by Chebyshev.
+Finally the exact absolute Euler product \(W(N)=\sum_d w_N(d)\) obeys
+\[
+ \frac{W(N)}{J(N)}
+ =\prod_{p\nmid N}\left(1+(p-1)^{-2}\right)
+  \prod_{p\mid N}\left(1-(p-1)^{-2}\right),
+\]
+and \(W(N_y)/J(N_y)\to C_->0\). Thus a positive relative tail
+remains along these targets for every fixed \(B\). \(\square\)
+
+The AP Mertens assertion here is the fixed \(4,3\) specialization of
+the retained Williams theorem. The upper bound (H.2) needs only Chebyshev.
+No conclusion is asserted for \(B\) growing with \(X\).
+
+### H.2. Classical major arcs with the correct indicator density
+
+The classical input for minor arcs is Ramaré--Viswanadham,
+arXiv:2509.23260v1, Theorem 1.5, printed pp. 4--5. Their set \(B\)
+on p. 2 is exactly \(C_4\). Only their upper Fourier bound is imported;
+the displayed marginal constant in their equation (6) is not used.
+
+Fix a requested exceptional exponent \(A>0\) and tolerance
+\(\varepsilon>0\). Choose \(T>A+10\), then \(B>T+10\) sufficiently
+large in terms of \(\varepsilon\) for (H.2). Put
+\[
+ L=\log X,\quad Q=L^B,\quad W=L^K/X,\quad
+ K=2T+20,\quad \delta=L^{-D},\quad D>T+10.
+\]
+Let \(0\le w\le1\) be smooth, supported in
+\([\delta X,2X]\), and equal to one on
+\([2\delta X,2X-\delta X]\).
+The weighted convolution \(R_w(N)\) differs from \(R_4(N)\) by
+\(O(\delta X)\) uniformly for \(X\le N\le2X\): only the endpoint strips
+can change a pair. Its Fourier sum differs from \(S(\alpha;2X)\)
+by \(O(\delta X)\), which will be used only for the minor supremum.
+Major arcs are the disjoint intervals
+\[
+       |\alpha-a/q|\le W,\qquad q\le Q,\quad (a,q)=1.
+\]
+
+For odd \(q\), the singular branch of the additive Dirichlet series is
+\(F(s)G_q(s)\), where \(F(s)=\sum f(n)n^{-s}\) and
+\[
+ G_q(s)=\prod_{p^k\Vert q}G_{p^k}(s),\quad
+ G_{p^k}(s)=
+ \begin{cases}
+ -1/(p-1),&p\equiv3(4),\ k=1,\\
+ 0,&p\equiv3(4),\ k\ge2,\\
+ p^{-(k-1)s}(p^{1-s}-1)/(p-1),&p\equiv1(4).
+ \end{cases}                                                    \tag{H.3}
+\]
+Indeed an inert prime cannot divide a value. At a split prime, the
+principal unit average of the additive phase is zero below valuation
+\(k-1\), is \(-1/(p-1)\) at \(k-1\), and is one at valuation at least
+\(k\). Summing its geometric Euler series gives (H.3).
+
+For \(q=2^\nu d\), \(d\) odd, write the additive phase in CRT coordinates.
+The local numerator at \(2^\nu\) is \(u\equiv a d^{-1}\pmod{2^\nu}\).
+Its singular factors are respectively \(1,-1,i^u\) for
+\(\nu=0,1,2\), and zero for \(\nu\ge3\).
+The phase for \(\nu=2\) must use this local numerator, rather than \(a\)
+without the CRT inverse. After refining the modulus by four, the two principal branches are exactly the
+characters induced from \(1,\chi_{-4}\); every other branch has no
+half-order singularity at one.
+
+Write \(F(s)=(s-1)^{-1/2}H(s)\), with \(H\) analytic near one.
+Ordinary zero-free regions and Siegel's bound at conductors
+\(\le4Q\) permit a contour at \(1-L^{-1/2}\) and any required fixed
+polynomial logarithmic height. For a possible exceptional zero choose
+Siegel's fixed exponent small enough that its conductor power exceeds
+\(L^{-1/2}\). No target-sized conductor occurs here.
+Character orthogonality, followed by this contour and a fixed-depth
+Hankel expansion, gives, for any prescribed fixed \(T_0\),
+\[
+ S_w(a/q+\beta)=\sum_{j=0}^{J-1}a_{q,a,j}V_j(\beta)
+                                      +O(XL^{-T_0}),             \tag{H.4}
+\]
+uniformly on the arcs, where
+\[
+ a_{q,a,j}=[(s-1)^j]\big(H(s)G_{q,a}(s)\big),\quad
+ V_j(\beta)=\int w(t)e(\beta t)
+       \frac{(\log t)^{-j-1/2}}{\Gamma(1/2-j)}\,dt .
+\]
+Here \(J\) is fixed after \(T_0,B,K,D\). To justify the uniform remainder,
+the nonprincipal factors are analytic on the shifted rectangle; their
+bounds and the finite character sums cost fixed logarithmic powers,
+whereas the shift saves \(\exp(-c\sqrt L)\). Mellin integration by parts
+pays for the smooth cutoff derivatives and \(|\beta|X\le L^K\).
+For principal branches Taylor's remainder on the Hankel contour costs
+\(O_J((C\log(2q)/L)^J)\). Increasing fixed \(J\) therefore gives the
+stated error. This is the same classical small-conductor contour
+argument as Modules D/C, now without a rough-prime deletion.
+
+The summed coefficient budget matters. On
+\(|s-1|\le[10\log(2q)]^{-1}\), every split defect in (H.3) is at most
+\(|s-1|\log p\) times its exponential factor. Multiplying those factors
+costs at most \(\exp(|s-1|\log q)\).
+Shrink the radius by a fixed factor if needed for the analytic disk
+of the fixed function \(H\). Thus \(|G_{q,a}(s)|\ll1/\varphi(q)\) and Cauchy's estimate gives
+\[
+ |a_{q,a,j}|\ll_j\frac{(\log(2q))^j}{\varphi(q)},\qquad
+ \sum_{q\le Q}\sum_{a\bmod q}^{*}|a_{q,a,j}|^2
+                                      \ll_j(\log Q)^{2j+1}.      \tag{H.5}
+\]
+The dyadic phase has modulus one, so it changes only a constant.
+Integration by parts, using the bounded total variation of \(w\), gives
+\[
+ |V_j(\beta)|\ll_j L^{-j-1/2}\min(X,|\beta|^{-1}).
+\]
+The full-line convolution of \(V_j,V_k\) is \(O(X/L^{1+j+k})\);
+extending the arc integral to the full line costs
+\(O(XL^{-K-1-j-k})\). Cauchy in \((q,a)\), with (H.5), now makes
+every term with \(j+k\ge1\) at most
+\[
+                 O_J\!\left(\frac{X(\log Q)^{2J+1}}{L^2}\right)
+                                      =o(X/L).                  \tag{H.6}
+\]
+In particular split-prime moduli have a zero leading coefficient,
+but their nonzero derivatives have been retained.
+
+For the residual term in (H.4), the full retained expansion is
+\(O(X/(\varphi(q)\sqrt L))\). Its integrated cross term and square
+are bounded respectively by
+\[
+ O(XL^{-T_0+K+B-1/2}),\qquad
+ O(XL^{-2T_0+K+2B}).
+\]
+Choose \(T_0>K+2B+100\), then \(J\).
+The full-line extension errors in (H.6), summed using (H.5), are
+\(o(X/L)\) since \(K\) is fixed and positive.
+
+Only the two leading densities remain. Since \(H(1)=\sqrt\pi c\),
+their real convolution is
+\(c^2 N/\log N+O(X\log L/L^2+\delta X)\).
+For \(N\equiv2(4)\) their finite rational multiplier is
+\[
+ B_Q(N)=\Sigma_Q(N)+\Sigma_{Q/2}(N)+2\Sigma_{Q/4}(N),\quad
+ \Sigma_z(N)=\sum_{d\le z}\frac{c_d(N)}{\varphi(d)^2}.              \tag{H.7}
+\]
+The dyadic signs follow from \(c_2(N)=1,c_4(N)=-2\) and
+\((i^u)^2=-1\). Also \(|B_Q(N)|\ll\log Q\) by (H.5) at \(j=0\),
+so the real-density replacement error, even after this multiplier,
+is \(o(X/L)\).
+
+Consequently, with \(\mathfrak m\) the complementary minor arcs,
+\[
+ R_4(N)=c^2\frac N{\log N}B_Q(N)+o(X/L)
+       +\int_{\mathfrak m}S_w(\alpha)^2e(-N\alpha)\,d\alpha       \tag{H.8}
+\]
+uniformly for \(N\in[X,2X]\), \(N\equiv2(4)\).
+Lemma (H.2) supplies, uniformly on these targets,
+\[
+              B_Q(N)=4C_-J(N)+O(e^{-B}J(N)).                    \tag{H.9}
+\]
+Here \(B\) is chosen by accuracy first and is then fixed as \(X\) grows.
+There is no assertion that the absolute tail vanishes for one fixed \(B\).
+
+### H.3. The classical almost-all theorem
+
+**Theorem ClassicalGaussianAlmostAll.** For every fixed \(A>0\) and
+\(\varepsilon>0\), all but \(O_{A,\varepsilon}(X/(\log X)^A)\) targets
+\(N\in[X,2X]\), \(N\equiv2\pmod4\), satisfy
+\[
+ \left|R_4(N)-A_4J(N)\frac N{\log N}\right|
+       \le\varepsilon A_4J(N)\frac N{\log N},\quad
+ A_4=\frac12\prod_{p\equiv3(4)}
+                           \left(1-\frac2{p(p-1)}\right).        \tag{H.10}
+\]
+This deduction uses no graph theorem or fixed zero-free half-plane.
+
+**Proof.** Dirichlet approximation at scale \(2X\) and
+Ramaré--Viswanadham Theorem 1.5 give
+\(\sup_{\mathfrak m}|S(\alpha;2X)|\ll_T XL^{-T}\).
+Indeed their approximants have denominator
+\(q\le2X/(\log(2X))^{2T+14}\). If \(q\le Q\), their permitted width
+lies inside our flat major arc for large \(X\). Otherwise the
+\(1/\varphi(q)\) term is \(\ll L^{-B}\log L\), while the other
+two terms give the requested logarithmic saving.
+The endpoint removal \(O(\delta X)\) preserves this supremum for \(S_w\).
+Parseval and the single-variable mean yield
+\[
+ \sum_N\left|\int_{\mathfrak m}S_w(\alpha)^2e(-N\alpha)d\alpha\right|^2
+ \le\sup_{\mathfrak m}|S_w|^2\int_0^1|S_w|^2
+                                      \ll_T X^3L^{-2T-1/2}.      \tag{H.11}
+\]
+Choose \(B\) so that the relative error in (H.9) is below the requested
+tolerance, and then let \(X\) grow so that the deterministic error in
+(H.8) is small enough. Since \(J(N)\ge1\) and \(N\asymp X\),
+Chebyshev at threshold a constant times \(\varepsilon X/L\) bounds
+the remaining exceptions by
+\(O_\varepsilon(XL^{3/2-2T})\), which has the stated strength.
+The exact Euler identity
+\[
+ F(s)^2=\zeta(s)L(s,\chi_{-4})(1-2^{-s})
+                  \prod_{p\equiv3(4)}(1-p^{-2s})
+\]
+gives \(c^2=\frac18\prod_{p\equiv3(4)}(1-p^{-2})\).
+Hence \(4c^2C_-=A_4\), fixing the constant in (H.10). \(\square\)
+
+This is a classical corollary, without a historical-priority claim.
+The conclusion is ineffective in its onset because arbitrary-logarithmic
+major estimates use Siegel's bound.
+An exceptional-set estimate cannot remove every exceptional target:
+the direct absolute minor bound is \(O(X/\sqrt{\log X})\),
+larger than the required \(X/\log X\).
+
+### H.4. A precise replacement for the all-conductor prime supremum
+
+Retain G and the other proved comparison modules. The zero-free import
+is only used to control small-bank characters in the actual target
+gcd profiles. Write \(q\mid4Nr_0\), \(r_0\le(\log N)^C\);
+in a profile \(d\mid q\), put \(r=q/d\), \(M\asymp Y/(dP)\), and
+\[
+ A_\eta(t)=\sum_{p\in\mathcal P}w(p/P)\eta(p)p^{it},\qquad
+ B_{d,\eta}(t)=\sum_{m\asymp M}\gamma_d(m)\eta(m)m^{it}.
+\]
+The coefficient \(\gamma_d\) must be the actual Gaussian centered/list
+coefficient of Module E, retaining its other banks, fixed filter and
+gcd conditions. Exceptional characters are those induced modulo four.
+
+**Proposition GaussianWeightedReplacement.** It suffices, in place of
+ZF, to prove for those actual coefficients and every requested fixed
+logarithmic precision
+\[
+ \frac1{\varphi(r)}
+ \sum_{\eta\bmod r,\ \mathrm{nonexceptional}}
+ \int |\widehat\psi(t)|\,|A_\eta(t)|^2|B_{d,\eta}(t)|^2\,dt
+       \ll_A \frac{Y^2}{qd}(\log N)^{-A}.                        \tag{H.12}
+\]
+The cutoff transform has its stated fixed polynomial-logarithmic norms;
+all finite comparison and dyadic costs are paid by requesting a stronger
+precision first.
+
+**Proof.** Minkowski followed by Cauchy in the Mellin variable bounds
+the character energy of each separated product by the left side of
+(H.12) times \(\|\widehat\psi\|_1\). Module E's exceptional-character
+centering, discarded-set energy and exact profile sum are unchanged.
+Since \(\sum_{d\mid q}1/d\ll\log\log q\), arbitrary fixed logarithmic
+precision in (H.12) gives (G.5)--(G.17). The graph comparison and
+reconstruction then give the pointwise theorem. \(\square\)
+
+This is a sufficient replacement with a narrower coefficient scope.
+No proof of (H.12) from classical estimates is asserted here. Counting
+bad characters without their actual cofactor weights does not establish it.
+
+### H.5. Why bounded-coefficient averaging alone cannot suffice
+
+**Proposition GaussianCharacterConcentration.** A generic version of
+(H.12), uniform over arbitrary bounded cofactor coefficients, would
+itself force pointwise cancellation in every short prime-character sum.
+
+**Proof.** Let \(q\) be an odd prime, \(q>3P\), and let \(\eta_0\) be
+nonprincipal modulo \(q\). Take
+\(\mathcal P=\{p\in[P,2P]:p\equiv1(4)\}\), \(M/q\to\infty\), \(Y=PM\),
+and
+\[
+ \gamma(v)=\overline{\eta_0(v)}
+       \mathbf1_{M\le v\le2M}\mathbf1_{v\equiv1\ (4)}\mathbf1_{v\ \mathcal P\text{-free}},
+ \qquad F(n)=\sum_{\substack{p\in\mathcal P\\n=pv}}\gamma(v).
+\]
+Every surviving \(n\) has exactly one selected prime, to its first
+power, so \(|F(n)|\le1\). The cofactor is independent of that prime, and the fixed Gaussian unit
+filter is retained. A union bound removes at most \(O(M/\log P+P/\log P+M/q+1)=o(M)\)
+values in the cofactor interval. Thus
+\[
+ \left|\sum_n F(n)\eta_0(n)\right|
+       \ge cM\left|\sum_{p\in\mathcal P}\eta_0(p)\right|.
+\]
+The nonprincipal residue energy is therefore at least
+\[
+ \frac{cM^2}{q}\left|\sum_{p\in\mathcal P}\eta_0(p)\right|^2.
+\]
+If it were always \(O_A(Y^2q^{-1}(\log N)^{-A})\), then every such
+\(\eta_0\) would satisfy
+\[
+       \left|\sum_{p\in\mathcal P}\eta_0(p)\right|
+                        \ll_A P(\log N)^{-A/2}.
+\]
+That is the pointwise estimate the generic averaging argument was
+intended to avoid. \(\square\)
+
+The construction concerns arbitrary cofactor data. It is not a
+counterexample to (H.12) for the actual Gaussian coefficients, nor to
+the desired additive theorem.
+
+### H.6. Classical range mismatch and a nonresidue consequence
+
+At \(P=\exp((\log N)^a)\), \(a<1\), and conductor \(q\asymp N\),
+the classical zero-free width gives normalized prime decay only
+\[
+ \exp\!\left(-c\frac{\log P}{\log(qT)}\right)
+                    =\exp(-c(\log N)^{a-1})\longrightarrow1 .
+\]
+Bombieri--Vinogradov at prime length \(P\) averages moduli up to
+\(P^{1/2}\) times logarithmic factors, far below the required \(q\).
+A fixed target's polylogarithmic family \(Nr_0\) is not that average.
+
+There is also an elementary consequence of retaining the same uniform
+prime input (P). Let a nonexceptional quadratic character have odd
+conductor \(q\), and apply the input at target \(N=2q\). If it were one
+on every split prime in the selected small banks, a dyadic piece with
+harmonic mass at least a fixed inverse logarithmic power would have
+prime count at least \(P\) times that power. This contradicts the
+arbitrary-logarithmic cancellation in (P). Consequently (P) forces a
+split-prime quadratic nonresidue below
+\(\exp(C(\log q)^{1/4})\) for each such character.
+This is much stronger than a direct classical Burgess range.
+It diagnoses this prime-supremum proof method; it is not a consequence
+claimed from the additive asymptotic alone.
+
+The precise pointwise theorem remains available through the cited
+ZF/G theorems. An argument avoiding that zero-free import must use the
+actual cofactor structure in (H.12), obtain suitable signed correlations,
+or change the target-frequency comparison. None of the inspected
+classical statements supplies that missing step.
+
+
+## J. A positive logarithmic remainder and moving additive windows
+
+This module upgrades the fixed-data subgroup correlation from a uniform
+\(o(1)\) to an explicit positive logarithmic rate. It uses the same
+precisely imported G/ZF theorems as the main proof. The additional argument
+is the quantitative transport of a shrinking endpoint cutoff. Put
+\[
+ L=\log N,\quad \phi=\varphi(L_0),\quad
+ \kappa=2-\rho_1-\rho_2,\quad
+ \delta=\frac1{8192\phi},\quad
+ {\cal S}_N=\frac{N J_{\mathcal E}(N)}{AB L^\kappa}.
+\]
+All arithmetic data, including \(A,B,L_0,U,V\), are fixed.
+Implicit constants may depend on them. The argument gives no numerical
+onset.
+
+### J.1. An explicit rare-bank exponent
+
+Use identity-class primes \(p=1\bmod L_0\). Fixed-AP Mertens gives
+total harmonic masses
+\[
+ \left(\frac1{8\phi}+o(1)\right)\log L,\qquad
+ \left(\frac1{15\phi}+o(1)\right)\log L
+\]
+in the small and big location ranges of Module D.
+Choose exactly
+\[
+                  b_N=\left\lfloor\frac{\log L}{32\phi}\right\rfloor
+                                                                  \tag{J.1}
+\]
+disjoint groups of each type, greedily giving every group reciprocal
+mass \(1+o(1)\). There is ample mass in both ranges. The overshoot
+per group is at most its largest reciprocal prime. Deleting primes
+dividing \(N\) changes the total mass by at most
+\(O(L/(P_{\min}\log P_{\min}))\), so all actual group masses
+\(V_g=1+o(1)\), uniformly in the target, with an error smaller than every
+negative power of \(L\).
+
+For one bank the joint record law in (W.13) gives
+\[
+ {\mathbb P}(I_g=1)
+ =\prod_{p\in{\cal P}_g}(1-2/p)
+       \sum_{\substack{p,q\in{\cal P}_g\\p\ne q}}
+                        \frac1{(p-2)(q-2)}
+ =V_g^2e^{-2V_g}+o(1)\longrightarrow e^{-2}>1/8.
+\]
+Groups are independent in the envelope measure. Thus Chernoff bounds
+the probability of fewer than \(b_N/16\) successful groups of either
+type by
+\[
+ 2e^{-b_N/64}\le 2L^{-1/(4096\phi)}=2L^{-2\delta}.                 \tag{J.2}
+\]
+The bound \(b_N\ge\log L/(64\phi)\) holds for large \(N\).
+This uses \(b_N\) for the number of banks; it is distinct from the
+fixed probe-complexity parameter in the graph source.
+
+The envelope of Module D therefore bounds the discarded correlation
+by \(O({\cal S}_N L^{-2\delta})\), plus its exponentially small record
+tails and power-size CRT endpoints. It applies also with either
+density model in place of an indicator. No endpoint smoothness is used:
+drop any cutoff bounded by one.
+
+The exact reconstruction has total coefficient mass at most
+\(3^{2b_N}\prod_g\max(1,V_g^2)\). The second product is \(1+o(1)\),
+because the sum of all mass errors is superlogarithmically small.
+Since
+\(2b_N\log3\le(\log3)\log L/(16\phi)\), the whole cost is at most
+\(L\) for all sufficiently large \(N\). This is the reconstruction
+bound (J.3).
+
+### J.2. Shrinking cutoffs and their exact Mellin costs
+
+Set \(\epsilon=L^{-\delta}\).
+Take \(0\le\Phi_\epsilon\le1\), equal to one on
+\([2\epsilon,1-2\epsilon]\), supported in
+\([\epsilon,1-\epsilon]\), with standard scaled transitions.
+Let
+\[
+ \Psi_\epsilon(t)=t\Phi_\epsilon(t),\qquad
+ F_\epsilon(u)=\Psi_\epsilon(e^u).
+\]
+Direct differentiation gives
+\[
+ \|F_\epsilon\|_1\ll1,\qquad
+ \|F_\epsilon^{(j)}\|_1\ll_j\epsilon^{1-j}\quad(j\ge1).
+\]
+At the lower transition \(t\asymp\epsilon\), logarithmic
+differentiation cancels the small transition scale; the upper transition
+has width \(\epsilon\) at \(t\asymp1\).
+Consequently, with the usual harmless Fourier normalizations,
+\[
+ \int|\widehat F_\epsilon(\zeta)|(1+|\zeta|)^r\,d\zeta
+                         \ll_r\epsilon^{-r-1},                  \tag{J.4}
+\]
+and in particular its unweighted \(L^1\) norm costs at most
+\(\epsilon^{-1}\).
+Truncating at the FIXED logarithmic phase range
+\(|\zeta|\le L^3\) leaves a tail
+\[
+ \ll_j\epsilon^{1-j}L^{-3(j-1)}
+                       =L^{-(3-\delta)(j-1)}.                   \tag{J.5}
+\]
+Thus arbitrarily strong fixed logarithmic tails are obtained by choosing
+a fixed derivative order last. This does not enlarge the phase range
+or feed back into the graph ideal construction.
+
+### J.3. Two-sided target localization before Mellin inversion
+
+This is the part not supplied by a mere assertion of polynomial
+cutoff dependence. On a contributing reflected edge write
+\[
+ n<0,\quad n'=n+ND>0,\qquad
+ t=\frac{|n|}{ND}\in[\epsilon,1-\epsilon].
+\]
+Then exactly
+\[
+ \frac{n'}{|n|}=\frac{1-t}{t}
+        \in\left[\frac{\epsilon}{1-\epsilon},
+                 \frac{1-\epsilon}{\epsilon}\right].             \tag{J.6}
+\]
+For a source dyad \(|n|\asymp X\), insert, BEFORE Mellin inversion,
+a smooth target cutoff supported in
+\([c\epsilon X,C\epsilon^{-1}X]\), equal to one throughout the
+range in (J.6). It changes no contributing edge. Keep it after
+Mellin inversion: edges on which the original \(\Psi_\epsilon\) vanished
+still have zero full Mellin integral.
+
+This is a TWO-SIDED cutoff. Decompose it into \(O(\log(1/\epsilon))=
+O(\log L)\) target dyads \(X'\). Each rescaled dyadic cutoff has
+uniform logarithmic derivative bounds, and
+\(X'/X\in[c\epsilon,C\epsilon^{-1}]\).
+The exact-list endpoint moments remain \(O(X)\) and \(O(X')\) for
+bounded indicators/models: fix a label product, count its multiples,
+and sum reciprocal list mass as in Module G. Their exponents do not
+depend on the eventual fixed mark length or density depth.
+The pairing norm can therefore lose at most
+\(\sqrt{X'/X}\ll\epsilon^{-1/2}\).
+
+Common shared-label division preserves the ratio (J.6).
+The independent-residue root-moment comparison and the residue-modulo-\(N\)
+Gram blocks are unchanged. All intervals lie within \(N^{1+o(1)}\),
+which is inside the fixed range of the graph theorem.
+The external Mellin norm, this pairing norm, and the dyadic count cost
+at most \(L^{(5/2)\delta}\), using \(\log L\ll L^\delta\).
+We will reserve \(L^{8\delta}\) for ALL localization costs below.
+
+### J.4. Target-grid energy at the actual target dyad
+
+Let \(Y\asymp N D_1D_2\) be the source comparison scale and \(Y'\)
+the target dyad after (J.6). One must NOT replace \(Y'\) by \(Y\):
+\[
+                       c\epsilon Y\le Y'\le C\epsilon^{-1}Y .
+\]
+The physical major-arc window remains \(L^{B_{\rm out}}/Y\).
+At target length \(Y'\) it satisfies
+\(|\beta|Y'\ll L^{B_{\rm out}+\delta}\), so apply Module E with
+that enlarged window exponent. A crude integrated-energy comparison
+loses at most \(\epsilon^{-2}\), still covered by the \(L^{8\delta}\)
+reserve together with (J.4) and the dyadic count.
+
+At the smallest target dyad and for the selected small-bank prime
+\(P\le\exp(C L^{1/4})\),
+\[
+ \frac{Y'}{qP}\gg
+ \exp(cL^{1/3}-CL^{1/4})L^{-B_{\rm out}-\delta}
+                                      \gg_A L^A                 \tag{J.7}
+\]
+for every fixed \(A\).
+This is uniform in every target gcd profile: removing \(d\) gives
+cofactor length \(Y'/(dP)\), modulus \(q/d\), with the same ratio.
+Exceptional characters are centered by the full fixed-depth Hankel
+model; all other characters use the imported zero-free estimate.
+With \(\sigma_0=11/12,\sigma_1=23/24\), the prime factor saves
+\(P^{-1/24}\) times fixed logarithmic losses. It dominates every
+requested fixed power of \(1/L\). All divisor-profile sums retain their
+\(1/d\) weight and cost only fixed logarithmic factors.
+
+### J.5. A noncircular error budget
+
+Here is a complete precision order. Symbols \(C_{\rm cmp},C_w,C_{\rm prod}\)
+below are the fixed logarithmic exponents of the finite comparison
+family furnished by the already proved construction; none depends
+on the final density depth.
+
+1. Fix \(\delta\) as above and request normalized graph-pairing error
+   \(L^{-22}\) per source dyadic block. There are at most \(L^2\)
+   such blocks for large \(N\), so this retains \(L^{-20}\) after
+   their sum. Choose the root/ideal accuracies for that request before
+   the fixed probe complexity and the eventual mark length.
+   The bounded exact-list moments introduce no mark-dependent exponent.
+   The external phase range remains \(L^3\).
+
+2. Fix the eventual mark length after the ideal/probe construction.
+   Its pointwise comparison exponents may depend on that fixed length;
+   this causes no circularity because the energy precision is chosen
+   afterwards. After the comparison family is fixed, let \(L^{C_{\rm cmp}}\)
+   dominate its total coefficient/dyadic costs, \(L^{C_w}\) its
+   endpoint pointwise bounds, and \(L^{C_{\rm prod}}\) the squared
+   multiplier loss in the elementary two-free-product bound.
+   The latter can be made explicit. Normalize the two free-product
+   coefficients to modulus at most one, putting their fixed logarithmic
+   suprema into \(C_{\rm cmp}\). If \(m_*\) bounds the number of free draws
+   per group, unique factorization gives each dyadic product law
+   \[
+    \nu_i(n)\le \frac{L^{K_*}}n,\qquad
+    K_*=\frac{\log(m_* !)+m_*\log2}{16\phi}.
+   \]
+   Its mass is at most one, hence its squared norm is at most
+   \(L^{K_*}/T_i\) on a dyad of length \(T_i\).
+   Walsh v2, Lemma 6.2, equations (6.9)--(6.11), is the elementary
+   integer bilinear estimate
+   \[
+    |m(\theta)|^2\ll L^{C_{\rm prod}}
+     \left(\frac1r+\frac1{T_1}
+       +\frac{\log(2r)}{T_2}
+       +\frac{r\log(2r)}{T_1T_2}\right),
+    \qquad C_{\rm prod}=2K_*+2,
+   \]
+   when \(|\theta-a/r|\le r^{-2}\).
+   Use Dirichlet approximation with denominator ceiling
+   \(T_1T_2/L^{B_{\rm out}-1}\).
+   If \(r>L^{B_{\rm out}}\), the first and last terms cost at most
+   \(O(L^{2-B_{\rm out}})\); the middle terms are
+   superlogarithmically small. If \(r\le L^{B_{\rm out}}\),
+   the approximation puts \(N\alpha\) within \(L^{B_{\rm out}}/(T_1T_2)\)
+   of that rational, hence \(\alpha\) on a grid of denominator \(Nr\)
+   and width \(L^{B_{\rm out}}/(N T_1T_2)\).
+   This proves both the target-grid range and the sufficient choice
+   \[
+    A_{\min}>C_{\rm cmp}+2C_w+40+8\delta,\qquad
+    B_{\rm out}>2A_{\min}+C_{\rm prod}+4.                         \tag{J.8}
+   \]
+   The multiplier estimate then gives a minor comparison
+   \(O(L^{-A_{\min}})\) before those costs.
+   This is the same finite-family Fourier estimate used in Module F;
+   its rational major denominators are \(Nr\), \(r\le L^{B_{\rm out}}\).
+
+3. Request target-grid integrated energy saving
+   \[
+                 T_E>2(C_{\rm cmp}+C_w+40+8\delta).              \tag{J.9}
+   \]
+   Use window exponent \(B_{\rm out}+\delta\), pay (J.7) and the
+   profile sums, and choose the exceptional-character centering
+   precision after these exponents. With Parseval on the other endpoint,
+   the normalized major contribution is at most
+   \(L^{-T_E/2+C_w+C_{\rm cmp}+8\delta}\le L^{-40}\).
+   Formula (J.8) similarly pays the minor contribution.
+   There is no leftover factor \(N\) from the target grid.
+
+4. Choose the fixed Hankel depth last to provide that centering
+   precision. In the generic density proof its relative Taylor error
+   is \(O(L^{-3(K+1)/5})\); include all stated record, cutoff and
+   character-count powers \(L^{C_{\rm low}}\) and take
+   \(3(K+1)/5>T_E+C_{\rm low}+40\).
+   Choose any external Mellin tail order \(j\) with
+   \((3-\delta)(j-1)>C_{\rm tail}+40\).
+   These choices change thresholds and seminorm constants, not the
+   earlier ideal complexity or the fixed phase range.
+
+The graph and comparison errors after localization are
+\(O(NL^{-20+8\delta})\). Reconstruction (J.3) gives
+\(O(NL^{-19+8\delta})=o({\cal S}_N L^{-\delta})\), since
+\(\kappa<2\), \(J_{\mathcal E}\ge1\), and \(A,B\) are fixed.
+The positive rare-bank error is \(O({\cal S}_N L^{-2\delta})\).
+
+For model times model, the rough logarithm on the bulk is
+\(L+O(\sqrt L+\delta\log L)\). Leading-density replacement therefore
+has relative error \(O(L^{-1/2})\).
+The fundamental sieve lemma is applied with the same fixed power
+level in \(N\). Its CRT errors, after partial summation, cost total
+variation \({\rm TV}(\Phi_\epsilon)=O(1)\), not
+\(\sup|\Phi'_\epsilon|\). Smooth-record sums and the squared-modulus
+endpoint budget remain \(N^{0.45+o(1)}\).
+The omitted Euler tails are superlogarithmically small.
+Finally direct upper Selberg sieves on the endpoint strips give
+\[
+                   O(\epsilon{\cal S}_N+N^{0.45+o(1)}).         \tag{J.10}
+\]
+Their short length \(N/L^\delta\) is still much larger than the sieve
+level and endpoint error.
+Since \(\int\Phi_\epsilon=1+O(\epsilon)\), every retained error is
+\(O({\cal S}_N L^{-\delta})\).
+
+**Theorem QuantitativeSubgroupCorrelation.** With the fixed subgroup
+data of (B.4),
+\[
+ R(N)=c_1c_2\Gamma(N)C_{\mathcal E}
+       \frac{NJ_{\mathcal E}(N)}{AB(\log N)^\kappa}
+       +O\!\left(\frac{NJ_{\mathcal E}(N)}
+                        {AB(\log N)^{\kappa+\delta}}\right),
+ \qquad \delta=\frac1{8192\varphi(L_0)}.                          \tag{J.11}
+\]
+The error is uniform over all target valuations. A zero finite density
+gives zero count identically; the positive finite densities have a fixed
+positive minimum.
+
+This is an upgrade of the old fixed-cutoff \(o(1)\) proof. The shrinking
+cutoff, two-sided localization, unequal target scale, and precision
+order above are indispensable to the stated logarithmic rate.
+
+### J.6. Uniform moving intervals
+
+**Corollary QuantitativeAdditiveWindows.** For any interval
+\(I\subset[0,1]\), uniformly in its location and length, the restriction
+\(Ax/N\in I\) changes the main term in (J.11) by the factor \(|I|\),
+with the SAME absolute error in (J.11).
+
+For \(|I|\ll\epsilon\) this follows from the direct interval upper
+sieve. Otherwise clip to \([\epsilon,1-\epsilon]\) and smooth its
+two endpoints at width \(\epsilon\). At most four transition strips,
+of total length \(O(\epsilon N)\), are lost.
+Total variation stays \(O(1)\). A transition at \(t_0\) contributes
+\(O_j(t_0^j\epsilon^{1-j})\le O_j(\epsilon^{1-j})\)
+to the logarithmic derivative norm in (J.4), so the Mellin and graph
+budgets are uniform in \(I\). The cutoff integral is \(|I|+O(\epsilon)\).
+Endpoint conventions change at most two pairs.
+This proves the corollary. It is an absolute discrepancy estimate;
+a relative asymptotic follows when
+\(|I|(\log N)^\delta\longrightarrow\infty\).
+It does not give intervals of power-short length \(N^\theta\), \(\theta<1\).

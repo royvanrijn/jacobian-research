@@ -1,21 +1,46 @@
 {
-  "title": "Conditional pointwise primitive-norm and splitting-semigroup correlations",
+  "title": "Actual-prime, Euler-set and primitive-norm arithmetic correlations",
   "date": "2026-11-19",
-  "status": "Complete internally reviewed conditional deduction; unconditional objectives remain open",
+  "status": "Internally reviewed written binary proof using the scoped graph/ZF imports, classical fixed-k higher-count application, and exact finite-group basis deductions",
   "logical_inputs": {
-    "ZF": "A uniform fixed zero-free half-plane Re(s)>sigma0<1 for ALL DirichletL-functions. GRH suffices. The cited2026QRHmanuscript CLAIMS it, but its deep proof is not silently treated as independently verified.",
-    "G": "Exact k=1 root-moment theorem3.5 plus absolute/path and uniformresidue-replacementlemmas3.4/3.6 from the pinned24September2026 weighted-dilation manuscript. Imported deep source theorem; own AP and large-shift transfers are expanded."
+    "ZF": "Imported Theorem3.1, printedp10, of the pinned30September2026 preprint: all DirichletL-functions nonzero on Re(s)>11/12, principalpoleallowed. Applicable PartI proof reconstructed; PartII7/8 is not needed.",
+    "G": "Imported exact k=1 root-moment Theorem3.5 and Lemmas3.4/3.6 of the pinned24September2026 weighted-dilation preprint; full Section3 applicable proof reconstructed. Own AP/growing-shift modifications supplied."
   },
   "canonical_proofs": [
     {
       "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
-      "sha256": "c593dbbe79fffc63f91223963031a285e1851647c5fbe0072516a0d3b425b6aa",
-      "locator": "ConditionalBinarySemigroups B.1-B.9; ConditionalGaussianLeading B.10; ConditionalAllOrderLeading B.11; ConditionalC12Leading B.12"
+      "sha256": "da44230f97dd251ddb745429857b4f0e47c5b04e2d3b51480e61c41c47396dc7",
+      "locator": "B.4-B.14; PointwiseBinaryCorrelations Section6; OddGaussianPointwise and OddGaussianAlmostAll; exact alternative-input scope Section7"
     },
     {
       "path": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-      "sha256": "6beba252ac3883a20c0ae531773f89028ff2a669fd962ba32a18f232d04cc878",
-      "locator": "ModulesD,I,G,P,E,C: full expanded arithmetic, model, graph-transfer and target-energy proofs"
+      "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+      "locator": "ModulesD/I/G/P/E/C/F/H and J; explicit shrinking-cutoff, target-dyad and logarithmic-error budget J.1-J.11"
+    },
+    {
+      "path": "PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md",
+      "sha256": "74c5eaa9fedbf83e4741e2eac062f59838ad537dfecdc21c9a69fb16c533cced",
+      "locator": "Exact imported statements; PartI reflection/scalar/sieve and common-epsilon closure; G signed memory/root-moment closure"
+    },
+    {
+      "path": "SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
+      "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+      "locator": "Sections1-6 quantitativebinarytheory; Sections7-10 Goldbachexistence G.1-G.2, classicalhighercounts G.3-G.6, exactbasisorders G.7-G.9"
+    },
+    {
+      "path": "COUPLED_SPLITTING_LOCAL_GLOBAL.md",
+      "sha256": "b4995d848826b8c934df6b6dcdceb72ec4566414573409b9ceb444b68131d0f0",
+      "locator": "C.1-C.5 general coupled finite tests/counts; finite profiles/Smith normalization; C.6-C.10 primitiveGaussian45classes and counts; coefficient and dependent-form boundaries"
+    },
+    {
+      "path": "MULTIPLICATIVE_HARDY_LITTLEWOOD.md",
+      "sha256": "fed5b8677a3ddd423162d278e1e09b8b2f2c24ff0b6e95850b7c2758d28e0fea",
+      "locator": "H.1-H.13: Gamma/phase corrections, uniformAP repair, finite-character EulerHL, arbitrary prime-residue semigroups, dense Euler law and zero-density closure counterexample"
+    },
+    {
+      "path": "PRIME_SPLITTING_DECOMPOSITIONS.md",
+      "sha256": "4685c3795d5be77d7d82357a3719df4780ad6a0a59c56067cc5cebed7ef1b2c1",
+      "locator": "P.1-P.10: actualprime-star fullcounts andshortwindows, principalD23primevalues, exactbasisdichotomy andbinary/extractionboundary"
     }
   ],
   "primary_sources": [
@@ -43,6 +68,101 @@
       "path": "sources/kmt-short-ap-2023.pdf",
       "sha256": "0e12d2185df3b67eeebe7d29173fe2ae9fa02fb4702a628f8b6b10814356709d",
       "bytes": 728264
+    },
+    {
+      "path": "sources/dunn-radziwill-2109.07463.pdf",
+      "sha256": "df888f8527b3647a3428d6677a3e3070aab7439f79f737f3e894218fb64cfef0",
+      "bytes": 842156
+    },
+    {
+      "path": "sources/blomer-goldmakher-louvel-1112.1650.pdf",
+      "sha256": "1ab29e362c592b9f4078eb85e495ecce6a4665972e6427e7cc2ab0fb214e303b",
+      "bytes": 533218
+    },
+    {
+      "path": "sources/goldmakher-louvel-1112.1642.pdf",
+      "sha256": "5cc5f03388d3996b4333f07be51f989f60779fe172f8bd24c7aa6ddad64dd304",
+      "bytes": 266049
+    },
+    {
+      "path": "sources/ramare-viswanadham-2509.23260v1.pdf",
+      "sha256": "28e106aaae8d2008b236917f5f60602cf1a337a89415ba0ac16a2e4a4f317551",
+      "bytes": 700665
+    },
+    {
+      "path": "sources/loughran-matthiesen-frobenian-2024.pdf",
+      "sha256": "3f0965808c7cdc976f86f2a87bddba0aea9b1461537d93ac026291fa4c788d3f",
+      "bytes": 658827
+    },
+    {
+      "path": "sources/matthiesen-1606.04482v4.pdf",
+      "sha256": "557593f74e82cb7a18aada3a2a5129ccc132d2d1ae017a404caf250b06c42dfa",
+      "bytes": 697505
+    },
+    {
+      "path": "sources/browning-matthiesen-norm-forms-2017.pdf",
+      "sha256": "b4f148c9cce5d609686eb5e017fb2e38a20558f168312038466b94a89a1d21a3",
+      "bytes": 960552
+    },
+    {
+      "path": "sources/matthiesen-1106.4690v3.pdf",
+      "sha256": "d9bae466295640225847afa3db834c79d1183777be438b09817b350bed756ddc",
+      "bytes": 824298
+    },
+    {
+      "path": "sources/breteche-tenenbaum-selberg-delange.pdf",
+      "sha256": "cc20403e28ec1513664bc10c528473f8b20744135e3582580a769a588fee688f",
+      "bytes": 423456
+    },
+    {
+      "path": "sources/matthiesen-generalized-fourier-2018.pdf",
+      "sha256": "4f774ebf034137b03eb2ff1776f30677cd9ce5ff2a110ca13d44b0c1ea0715d9",
+      "bytes": 1868188
+    },
+    {
+      "path": "sources/granville-soundararajan-decay-2003.pdf",
+      "sha256": "0b230203820ff48f4eba71c5e19e516f149f08403490f10dc41f43c78cd89693",
+      "bytes": 395764
+    },
+    {
+      "path": "sources/green-roth-primes-2005.pdf",
+      "sha256": "31532d0043acf48cb634d411b6be77ab153d749c5209dda0656de25a0439fe7d",
+      "bytes": 315537
+    },
+    {
+      "path": "sources/cellarosi-sinai-squarefree-2013.pdf",
+      "sha256": "dba4d5e2de8de8d88fe15ffd58452fd49eb79cf752bbfc67448362f0a05158f3",
+      "bytes": 527326
+    },
+    {
+      "path": "sources/green-tao-linear-primes-2010.pdf",
+      "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "bytes": 1213124
+    },
+    {
+      "path": "sources/frei-tinkova-prime-constellations-2408.17441v3.pdf",
+      "sha256": "afde08dfdba4d41bdb0f344a47f01009159cb64a61ccb2777f95b05a3e9e1561",
+      "bytes": 942019
+    },
+    {
+      "path": "sources/montgomery-vaughan-large-sieve-1973.pdf",
+      "sha256": "720058876b871e8d1fef22acb285550a227ae9e3b1bedaa042f6d62f3299e8b9",
+      "bytes": 577966
+    },
+    {
+      "path": "sources/halupczok-goldbach-short-intervals-2013.pdf",
+      "sha256": "40656400c129509ff3155c8b589f90e150c19a8dcacc9fd4176a767fe3b1975b",
+      "bytes": 811352
+    },
+    {
+      "path": "sources/kane-chebotarev-goldbach-1009.1368v5.pdf",
+      "sha256": "e12a76769ca7dc1d91bdd37a335a9cb21a85d678b48dc1cf938565147df8bc51",
+      "bytes": 384308
+    },
+    {
+      "path": "sources/milne-cft403.pdf",
+      "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+      "bytes": 2072714
     }
   ],
   "source_roles": {
@@ -50,13 +170,22 @@
       "url": "https://github.com/openai/math/blob/main/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
       "role": "explicit graph input G",
       "locator": "Section3, Definition3.3, Lemmas3.4/3.6, Theorem3.5, Corollary3.11; Section4actual ideal-kernel proof and parameter order",
-      "inspection": "Actual arithmetic transference scope and source proofs traced internally. New AP quotient frame and growing-shift transfer are reconstructed in support, not asserted printed."
+      "inspection": "Full applicable Section3 proof reconstructed, including residue replacement, factorial memory, clean signed contraction, rare transfers and equality-rank restoration; own AP/growing-shift hypotheses checked in support.",
+      "product_mass_exponent_correction": {
+        "primary": "Section4.1, printedp28, equation4.3; original retained primary PDF unchanged.",
+        "printed": "kappa=C0*log(m!)+m*log(max(1,v_-^-1)).",
+        "corrected": "kappa=C0*(log(m!)+m*log(max(1,v_-^-1))).",
+        "derivation": "Each of at mostC0*T groups costs at mostm!*max(1,v_-^-1)^m. Taking logarithms withT=logL gives the corrected exponent.",
+        "counterexample": "C0=2,m1,v_-=1/10,2T groups with massesin[1/10,11/100] give n*rho(n)>L^log10; Mertens massin range exp(L^.1)..exp(L^.4) permits this group family for arbitrarilylargeL.",
+        "scope": "General product-law explicit exponent only. Enlarging this fixed log exponent does not change Section3 graphtransference or the APcomparison parameter hierarchy; kappa remains independentJ.",
+        "proof_location": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md, ModuleI step1 of the full comparison lemma."
+      }
     },
     "qrh-sep30-2026.pdf": {
       "url": "https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
-      "role": "claimed route to discharging ZF; not an assurance upgrade",
-      "locator": "Theorem1.1 printedp4, Theorem3.1 and PartI; actual common continuation criterion Section2 read",
-      "inspection": "Actual uniform all-conductor/height statement independently read. Full194-plus-page theorem proof is a separate source-validation obligation; hypothesis remains explicit."
+      "role": "mathematical input ZF, discharged by Theorem3.1/PartI",
+      "locator": "Theorem3.1 printedp10; applicable proof Sections2-11",
+      "inspection": "Applicable PartI chain reconstructed: known-zero-free-disk controls, all reflection/local branches, scalar calibration with explicit nonzero correction, sextic sieve/row envelope and uniform-epsilon closure. PartII not used."
     },
     "walsh-2610.40439v1.pdf": {
       "url": "https://arxiv.org/pdf/2610.40439v1",
@@ -67,7 +196,7 @@
     "walsh-2610.40439v2.pdf": {
       "url": "https://arxiv.org/pdf/2610.40439v2",
       "role": "latest inspected method version",
-      "locator": "Sections5-7 actual mathematical text compared againstv1",
+      "locator": "Theorem1.1fixedh/integerorders;Section1.2.4futureextensions;Sections5-7, especiallyLemma6.2pp25-26 Eq6.9-6.11",
       "inspection": "Same rawpdftotext convention,NFKC andpage-number/whitespace normalization: differences onlyreference renumbering and introductorywords; relevant lemmas/shared-label identities mathematicallyunchanged."
     },
     "kmt-short-ap-2023.pdf": {
@@ -75,6 +204,120 @@
       "role": "comparison only, not a proof input",
       "locator": "PublishedTheorems1.4/1.5pp370-372 andPropositions9.2/9.4pp404-405",
       "inspection": "Every-modulus and sparse-relative conclusions do not follow from the printed absolutevariancebound, even under itsGRHqualification."
+    },
+    "dunn-radziwill-2109.07463.pdf": {
+      "url": "https://arxiv.org/abs/2109.07463v3",
+      "role": "antecedent of the imported PartI theorem",
+      "locator": "Unconditional theta/cusp formulas and AppendixA only; GRH-conditional prime theorem is not used.",
+      "inspection": "Actual primary theorem and applicable proof interfaces read; scope recorded in the input audit."
+    },
+    "blomer-goldmakher-louvel-1112.1650.pdf": {
+      "url": "https://arxiv.org/abs/1112.1650v1",
+      "role": "antecedent of the imported PartI theorem",
+      "locator": "Theorem1.3 andSections2-3 higher-order sieve/recursion in the Eisenstein sextic case.",
+      "inspection": "Actual primary theorem and applicable proof interfaces read; scope recorded in the input audit."
+    },
+    "goldmakher-louvel-1112.1642.pdf": {
+      "url": "https://arxiv.org/abs/1112.1642v2",
+      "role": "antecedent of the imported PartI theorem",
+      "locator": "Definition1 andTheorem1.1/Corollary1.2 fixed-family conditions and quadratic large sieve.",
+      "inspection": "Actual primary theorem and applicable proof interfaces read; scope recorded in the input audit."
+    },
+    "ramare-viswanadham-2509.23260v1.pdf": {
+      "url": "https://arxiv.org/abs/2509.23260v1",
+      "role": "mathematical input to the classical almost-all corollary only",
+      "locator": "Theorem1.5 printedpp4-5; actual setB=C4 onp2",
+      "inspection": "Actual theorem and Sections10-12 Fourier-bound argument inspected. Theorem1.6 is ternary. Displayed Eq6 marginal constant not used; the exact Euler identity calibrates c4 independently."
+    },
+    "loughran-matthiesen-frobenian-2024.pdf": {
+      "url": "https://ems.press/content/serial-article-files/48228",
+      "role": "classical fixed-k>=3 Frobenian membership/AP/fixed-character refinement; comparison only for binary",
+      "locator": "Theorem1.9p4783;Definition3.9/Theorem3.10pp4797-4798;proofpp4798-4807;Remarks1.11/4.7; Proposition3.3p4793; Lemmas3.4-3.5pp4793-4796; fixed-character proofpp4799-4800 applying MatThm2.1",
+      "inspection": "Actual published statements require pairwise independent nonconstant linear parts. The fixed-target pair n,N-n fails; a two-variable averaged application does not isolate each target. No novelty inference from a failed search."
+    },
+    "matthiesen-1606.04482v4.pdf": {
+      "url": "https://arxiv.org/pdf/1606.04482v4",
+      "role": "classical fixed-k>=3 moving-target finite-complexity theorem; not a binary input",
+      "locator": "Definition1.1p4; Theorem2.1pp6-7 atB0=0 permitsO(N)intercepts uniformly; Remark2.2epsilonremovalp7",
+      "inspection": "Read actual statement and interface with LMfixed-character proof. Do not substitute Theorems2.4/3.5, whose sublinearintercepts fail for N-sumx. No numeric logarithmicrate claimed."
+    },
+    "browning-matthiesen-norm-forms-2017.pdf": {
+      "url": "https://numdam.org/item/10.24033/asens.2348.pdf",
+      "role": "classical coupled-norm antecedent comparison, not an indispensable input to this proof",
+      "locator": "Thm1.3p1385;Thm5.2/Remark5.3p1401;Prop5.5p1402",
+      "inspection": "Rational Hasse/weak approximation and coordinateweighted norm counts; movingO(T)affineconstants explicit. No separateprimitive-block or unweightedvalue theorem is attributed."
+    },
+    "matthiesen-1106.4690v3.pdf": {
+      "url": "https://arxiv.org/pdf/1106.4690v3",
+      "role": "classical coupled quadratic-coordinate antecedent comparison",
+      "locator": "Thm1.1pp4-5;Thm1.3pp6-7 of retainedarXivv3; kernelparametrization/rowspacesupportcondition",
+      "inspection": "PrimitiveFORM means coprimecoefficients, not coprimecoordinatepairs; weightedcoordinatecount not the unweightedprimitivevaluecount."
+    },
+    "breteche-tenenbaum-selberg-delange.pdf": {
+      "url": "https://tenenb.perso.math.cnrs.fr/PPP/On-SD.pdf",
+      "locator": "Thm1.2p3,eq1.10;Thm2.1p4",
+      "role": "independent Gamma-normalized Selberg-Delange coefficients, includingcomplexprimeexponents",
+      "inspection": "Actual retainedprimaryedition and applicable statement/hypotheses read internally; no external human review or whole-source formal validation."
+    },
+    "matthiesen-generalized-fourier-2018.pdf": {
+      "url": "https://msp.org/ant/2018/12-6/ant-v12-n6-p01-s.pdf",
+      "locator": "Cor4.2p1322,proofpp1323-1324;Prop5.1proofpp1354-1355",
+      "role": "boundedexceptional-character reduction beforeFmembership andfixed-conductor Wrefinement",
+      "inspection": "Actual retainedprimaryedition and applicable statement/hypotheses read internally; no external human review or whole-source formal validation."
+    },
+    "granville-soundararajan-decay-2003.pdf": {
+      "url": "https://doi.org/10.4153/CJM-2003-047-0",
+      "locator": "Halasz-Montgomery-Tenenbaumtheoremp1192",
+      "role": "uniformboundedmultiplicativemean andfrequencyrange",
+      "inspection": "Actual retainedprimaryedition and applicable statement/hypotheses read internally; no external human review or whole-source formal validation."
+    },
+    "green-roth-primes-2005.pdf": {
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v161-n3-p11.pdf",
+      "locator": "Prop4.2p1617,eq4.4",
+      "role": "exactSiegel-Walfisz interval prime estimate with ineffectiveconstants",
+      "inspection": "Actual retainedprimaryedition and applicable statement/hypotheses read internally; no external human review or whole-source formal validation."
+    },
+    "cellarosi-sinai-squarefree-2013.pdf": {
+      "url": "https://ems.press/content/serial-article-files/31903",
+      "locator": "Section3p1349,eq15;setupSection1.1pp1344-1345",
+      "role": "inspectedclassicalMirskyfixed-shift squarefreeformula, comparisononly",
+      "inspection": "Actual retainedprimaryedition and applicable statement/hypotheses read internally; no external human review or whole-source formal validation."
+    },
+    "green-tao-linear-primes-2010.pdf": {
+      "url": "https://annals.math.princeton.edu/2010/171-3/p08",
+      "locator": "Corollary 1.7, p. 1763; equations (1.7)-(1.8), pp. 1757-1759; Theorem 1.8, pp. 1765-1766",
+      "role": "Unconditional actual-prime tuples of complexity at most two, including complexity-one stars, moving targets and unweighted convex-body counts",
+      "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
+    },
+    "frei-tinkova-prime-constellations-2408.17441v3.pdf": {
+      "url": "https://arxiv.org/pdf/2408.17441v3",
+      "locator": "Theorem 1.4, pp. 4-5, equation (1.15); Remark 1.5, p. 5; Example 1.7 and Section 11.1",
+      "role": "Unconditional finite-complexity Chebotarev-prime theorem; the conditional primitive-root part is not used",
+      "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
+    },
+    "montgomery-vaughan-large-sieve-1973.pdf": {
+      "url": "https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf",
+      "locator": "Theorem 2, p. 121, equation (1.10), especially its q=1 case (1.12)",
+      "role": "Uniform Brun-Titchmarsh bound on interval partner counts",
+      "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
+    },
+    "halupczok-goldbach-short-intervals-2013.pdf": {
+      "url": "https://www.numdam.org/item/10.5802/jtnb.839.pdf",
+      "locator": "Theorem 3.1, pp. 339-340; singular series (1.1)-(1.2), p. 335",
+      "role": "Weighted binary L1 mean and uniform exceptional sets; modulus sums outside the absolute value were verified",
+      "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
+    },
+    "kane-chebotarev-goldbach-1009.1368v5.pdf": {
+      "url": "https://arxiv.org/pdf/1009.1368v5",
+      "locator": "Theorem 2, pp. 2-3, equation (2), in the latest retained v5 edition",
+      "role": "Closer classical single-equation Chebotarev antecedent; not needed for the coupled proof",
+      "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
+    },
+    "milne-cft403.pdf": {
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "locator": "Theorem 0.4, p. 4; Chapter V, Theorems 3.5-3.6, p. 158; Example 3.9, p. 159; Frobenius, p. 160",
+      "role": "Hilbert-class-field Artin isomorphism and principal-prime criterion",
+      "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
     }
   },
   "version_audit": {
@@ -90,15 +333,103 @@
     "AP": "Full sourceSection4read and APquotient-character frame/reproduction/PSDoperator/parameter proof reviewed independently byroot andseparateagents.",
     "graph": "LG1uniform-offsetresidueisomorphism, LG2modkblocks, LG3contributingedgecutoffandsignedendpoint/shared-labeltransport reviewed.",
     "target_energy": "Sharp all-conductorPerron primeinput underZF; exactgcd-profileorthogonality and principalcentering; targetarcwidth and allsmallbankweights reviewed.",
-    "assurance": "Internal written/source checking only. No externalhumanreview, formal verification, unconditional fullgoal completion or historicalpriority certificate."
+    "assurance": "Internal written/source checking only. No external human review or local formal-verification run of this application. Imported recent preprints remain explicit; no historical-priority claim."
   },
-  "unconditional_open_work": [
-    "Validate the deep external graph and uniform zero-free claims with complete applicable proofs, or replace the all-conductor prime input by a proved sufficient averaged estimate.",
-    "The actual Gaussian/all-order/C12 pointwise claims are not marked proved unconditionally from this conditional argument."
+  "source_validation": {
+    "path": "PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md",
+    "sha256": "74c5eaa9fedbf83e4741e2eac062f59838ad537dfecdc21c9a69fb16c533cced",
+    "scope": "Applicable PartI11/12 and G only; exact proof reconstruction and application checks, not citation-based or finite-test-based acceptance."
+  },
+  "remaining_work": [
+    "Targeted historical comparison and external specialist review of the exact theorem",
+    "Numerical effective cutoffs and power-saving-inN refinements",
+    "Extensions to nongroup/nonabelian prime conditions and unrestricted bad-prime profiles require new arguments"
   ],
-  "zero_free_targeted_review": {
-    "scope": "PartI11/12only: actual common continuation criterion, zero-free-disk/detector quantifiers, row ordering/optimization, contour/margin algebra andlate-height choices inspected internally. No concretegap located inthat limited pass.",
-    "not_validated": "Complete completed-theta reflection/localcuspGauss branches and full primary sextic-recursion proof remain under separate detailed audit; PartII7/8 proof not independently validated.",
-    "logical_status": "ZF remains an explicit hypothesis; a targeted audit does not silently discharge it."
+  "gaussian_focused_audit": {
+    "scope": "Odd core C4, ordered pairs, all targetsN2mod4, exact local constant and target valuations",
+    "pointwise": "B.13 follows from the source-backed generic theorem with L0=4,H={1},Gamma=4. Fresh own-application audit found no additional gap; it is not a new independent proof of the imported long theorems.",
+    "classical_fallback": "B.14/H.10: for every fixedA,epsilon, O_A,epsilon(X/log^A X) exceptional targets; uses RVTheorem1.5, full polylog-conductor Hankel major expansion, uniform relative Ramanujan-tail control and Parseval. No ZF/G.",
+    "uniformity_caution": "FixedB Ramanujan absolute tails need not vanish on inert-primorial targets. H.2 supplies Ce^-B J uniformly, with B chosen by accuracy before X tends to infinity.",
+    "alternative_input": "H.12 weighted prime/actual-Gaussian-cofactor character energy is sufficient with G retained. No classical proof of that estimate is claimed.",
+    "method_barriers": "Conjugate-character cofactor construction defeats generic bounded-coefficient averaging. Retaining the pointwise prime input entails subpower split-prime quadratic nonresidues. Neither is an impossibility theorem for the desired additive count.",
+    "assurance": "Internal written proofs and actual-primary-source application checks; no external human review, local Lean replay or historical-priority claim."
+  },
+  "quantitative_subgroup_upgrade": {
+    "statement": "Uniform main term c1*c2*Gamma*C_E*J_E*N/[AB log^kappa N] with remainder O(N*J_E/[AB log^(kappa+delta)N]), delta=1/(8192phi(L0)); C12delta=1/32768.",
+    "additional_proof": "ModuleJ chooses mass-one bank counts, explicit Chernoff exponent2delta, movingendpointepsilon=log^-delta, TWO-SIDED target cutoff before Mellin, actual targetdyadsYprime differing fromY, enlarged energywindow, precise minor/major budgets and late density depth.",
+    "parameters": "Normalized graphprecisionL^-22 perSOURCEdyad andL^-20 aftertheirL^2reserve; localizationL^8delta; reconstruction≤L; A_min>Ccmp+2Cw+40+8delta, Bout>2A_min+Cprod+4, TE>2(Ccmp+Cw+40+8delta).",
+    "local_criterion": "Gamma>0 iff soluble in every finite quotient, retaining coupled subgroup states. Separate p-adic closures are insufficient; H={1,11}mod12 gives an exact counterexample.",
+    "profiles": "Finite exact bad-prime profiles transfer with same logarithmic exponent, rational-valued periodic coefficient and positive minimum on admissible classes. No unrestricted infinite-profile relative asymptotic is inferred.",
+    "counterexample": "Cstar=<2,p1mod4> has R(2^t)=1; a fixed-logN relative main based on vanishing local density fails. Infinite profiles need additional nondegeneracy/tail analysis or residual-core scales.",
+    "review": "Root and separate analytic/arithmetic agents read current main/support. Internal written/source checking only, no external human review or formal verification.",
+    "balanced_consequences": "For every fixedq>=3, L=lcm(2,q), H={1} givesexactCq andphiL=phiq. Interval[1/3,2/3] gives main (L/3)cq^2*C_E*J_E*N/log^(2-2/phiq), relativeerrorlog^-1/(8192phiq). Thus FBS-G, balancedS12 andS12U are proved; FBS-U power-shortwindows, rawweightedH1/H2, numericalonset and everypositivetargetclassification do notfollow. Root and separate arithmetic-agent review confirmed the implication."
+  },
+  "scope_boundaries": [
+    "Fixed even modulus and abelian SUBGROUP prime prescriptions, including finite conjunctions and nonnested pairs",
+    "All-moduli joint congruence admissibility, not independent primewise tests",
+    "Finite bad-prime profiles; no automatic unrestricted-generator or arbitrary infinite-profile extension",
+    "No arbitrary Frobenius unions/nonabelian theorem asserted",
+    "Logarithmic remainder only; no power saving inN, numerical onset or exact small-target exception list",
+    "Fixed-k>=3 higher counts are classical finite-complexity consequences witho(1); exact basis orders concern fixed subgroup cores, with zero explicitly adjoined for ordinary bases.",
+    "Coupled systems: pairwise-independent kernel coordinates, fixed positive bulk, finite profiles; Gaussian full counts along fixed target rays only. General nonlinear or dependent-coordinate systems remain outside scope.",
+    "HL sparse theorem is absolute and fixed finite-complexity; relative existence needs a uniform positive arithmetic factor. Dense summable-defect theorem permits dependent forms. All-moduli closure solubility alone fails for arbitrary infinite valuation profiles."
+  ],
+  "goldbach_theory": {
+    "existence": "For every fixed mixed list and k>=2, eventual positive representations are exactly U1+...+Uk moduloL. Fix k-2 actual representatives and apply binary; joint all-moduli criterion also holds for all integer targets.",
+    "higher_counts": "For fixedk>=3, R_k=(prod c_i)*Gamma_k*S_k*N^(k-1)/[(k-1)! log^(k-sumrho_i)N]+o(natural scale), uniformly target valuations. Classical moving-target M2.1 + LMfixed-character refinement; independent of G/ZF.",
+    "singular_series": "Only good primes forbidden on every side contribute sigma=1+(-1)^k*c_p(N)/(p-1)^k; c_p=p-1 whenp|N, else-1. For k>=3 product and inverse are uniformly bounded.",
+    "prefix_completion": "Explicit w(N)=loglogN meets LM3.4. Arbitrary polylogW exact-prefix tails controlled by E logprefix=O(logloglogN), so Markov gives o(1), uniformly target valuations.",
+    "relative_basis": "d=gcd(L,{h-1}),m=L/d,S=(H-1)/d. Exact relative order among k>=2 is min{k:kS=Z/m}<=max(2,m-|H|+1). H={+/-1} gives sharp unbounded orders.",
+    "ordinary_basis": "For properH, exact order of C_H union{0} is min{s:union_(j=2..s)jH=Z/L}, between d+1 andL+1. FullH hasorder2 forLpower2,else3. Thus everyq>=3 gives exactorderlcm(2,q)+1, includingC12order13.",
+    "scope": "Fixed cores andk; higher counts have onlyo(1), no growing-modulus or power-short-window claim. Finite group orders are exact, numerical onsets and small exception lists are not supplied.",
+    "review": "Root source/application read and separate analytic/arithmetic agent audits of current canonical sections7-10. Internal written evidence only; no external human review, formal verification, exhaustive historical novelty claim or new numerical search of integer representations."
+  },
+  "coupled_local_global": {
+    "analytic_route": "Classical Mat1606.04482v4Thm2.1 atB0=0 plusLMF/fixed-character refinement; independent of the 2026 binaryG/ZF inputs.",
+    "geometry": "Surjective fixedA:Z^s->Z^r, d=s-r>=2; integerkernelrows nonzero/pairwiseQ-independent, equivalently no nonzerorowspacevector has support<3.",
+    "finite_criterion": "Joint state rootmodL plus forbiddenunitroots at finitelymany goodp<=s ordividing pairwedgecontents. Equivalent to all finitequotients and one explicitly computable finite modulus.",
+    "count": "In fixedpositiveparameterregions: volK*(prodci)*gamma_L(n)*prod sigma_p(n)*T^d/log^(s-sumrho)T plus uniformo(natural scale). gamma=L^r/prod|Hi| timesjointfiberrootcount; sigma is normalizedHaarparameterunitrootdensity.",
+    "tails": "Pairwiseindependence yields sigma=1+O(p^-2) uniformlytarget. Nonprimitivecoefficientrows handled by e_i(p)=contentvaluation and conditionalvaluationmoments; exactW-prefix Markovtailo(1).",
+    "profiles": "Normalize finite-index image usingSmith/imagebasis before applying theorem to A diag(prefix). A commonfinite obstruction modulus resolves finiteprofiledisjunction; compactpositivecones give uniformexistence.",
+    "primitive_gaussian": "Shared triples a+b+c=N,c+d+e=M with P_G=C4 disjointunion2C4: exactly45admissiblemod8pairs, r,s!=2 excluding(6,3),(6,7),(3,6),(7,6). Everylargecomparableadmissibletarget represented with valuecountlowerT^3/log^(5/2). Fixedrayfullmain2R8*c4^5*V(N,M)*prod_inert sigma/log^(5/2).",
+    "counterexample": "N=2*17^t+4,M=17^t+2: bothmarginalprimitiveGaussiantriples represented, but sharedvalueconstraintsdisjointmod8.",
+    "coefficient_example": "C12matrixx1+5x2-5x3=N,2x2-x3+x4=2N has eventualbulkcriterionN1mod12,5notdividesN. Goodprime5rootdensity13/25 andsigma325/256; originalmodulus aloneinsufficient.",
+    "boundary": "Oneparametersharedb,N-b,M-b remains outsideclassicalindependence. Binaryendpointcomparisondoesnotautomaticallyadmitthirdedge-label-dependentfactor. Diagonalexactlybinary; no generalnonlinear/dependent-formlocalglobal asserted.",
+    "review": "Currentcanonicalproof read byroot and separatearithmetic/analytic/literatureagents. Exactfinitecontrols:1344mod8/16/32cases and373oddprimerootcases. These areauxiliarychecks, not proofs of eventualexistence. No externalhumanreview/formalverification/numericalonset/priorityclaim."
+  },
+  "hardy_littlewood_theory": {
+    "regime": "SparseEulerindicators: fixedevenL, coprimetoL, nonemptyperiodicprime-supportS_i, arbitrary0/1higherexponents; fixedpairwise-independentaffineforms andpositivebulk, movingO(T)intercepts.",
+    "constant": "Gamma-normalized ci and explicitfinitecharacter sum(H7) of absolutelyconvergentEulerproducts, retaining jointprimepowercosets. Principal nu denominators only; maximalcoefficientratios are not multipliedtwice.",
+    "source_corrections": "PublishedLM2.5(3a)absolute-equality criterion fails for S={3}mod4 andchi4, whosemean=-1/2. UseRe mu=rho. PublishedLM2.8 displayedconstant omitsGamma; useBT1.10. Earlierownsubgroupci alreadyGamma-normalized andsubgrouptwistmeans0/rho, so theirconstantsareunchanged.",
+    "ap_repair": "Noncircular SW/Halaszuniformallnonmaxinducedchars; 2018Cor4.2 bounded3kexceptionalcharacters beforeFmembership; uniformpartialEulerHankelmaxmeans; thenAPstability,FandfixedW.",
+    "cosets": "H=<S> controlsmaximalcharacters, but allowedhigherpowers canleaveH. Theiralmostsurelyfiniteprime-squaredefects yield nonuniformcosetdistributionπ, with anexplicitL10counterexampletouniformHmask.",
+    "semigroups": "Forpureprime-factor sets S maybearbitrary, H=<S>states andrho=|S|/phiL aredifferentroles. Finiteimages andcoupledlocalglobal extendclassically; no newnonsubgroupbinaryasymptoticclaimed.",
+    "dense": "If f_i(p)=1 outsidefiniteB, elementaryCRTplusp²tailproves uniformabsoluteHL forarbitrarynonzeroaffineforms, evenoneparameter/dependent, witharbitraryhigherexponentrules. Allsmallprimevaluationsaretruncated beforelimit.",
+    "counterexample": "Fivepositive-densityEuler sets at2 andforms x,y,x+y,x+2y-1,2x+y-1 admitactualsetwitnessesineveryfinitequotient butno globalpoint; beta2=0 andonlyclosureparameterx=y0. Thusclosureadmissibility≠positivedensity.",
+    "review": "Root and separateanalytic/arithmetic/literatureagents checked currentcanonicalsource. FiveexactfiniteFourier-vs-jointcosetidentities werechecked asauxiliarycontrols. Internalwrittenevidenceonly; noexternalhumanreview/formalverification/numericalonset/priorityclaim."
+  },
+  "actual_prime_decompositions": {
+    "routes": "Actual primes use Green-Tao 2010 at low complexity, Halupczok 2013 and Montgomery-Vaughan 1973 for windows, and Frei-Tinkova 2025 for coupled principal prime values. These routes do not depend on the 2026 semigroup G/ZF inputs.",
+    "full_star": "For fixed r, even L>=4 and N_j in [T,CT] with N_j=3 mod L, actual-prime stars have count asymptotic to L^r/phi(L)^(2r+1) times V_r, the product of all good-prime beta factors, and log^(-(2r+1)) T. Complexity-one partitions are verified for every star form. Distinctness does not change the main term.",
+    "windows": "For 2/3<theta<1 and H=T^theta, the centered star count has order H^(r+1)/log^(2r+1) T. Brun-Titchmarsh gives H/log T candidates instead of the old H/log^2 T bound. A union of fixed r binary exceptional sets and independent private choices gives the lower bound; explicit Selberg diagonalization, Mertens-Markov estimates and the CRT remainder give the upper bound. Requiring all primes to be distinct preserves the order.",
+    "D23": "The Hilbert class field of Q(sqrt(-23)) has group S3 and maximal abelian subfield K. Principal-form prime values are the identity Frobenius class, of density 1/6. Compatible progressions modulo 23 have density 1/66. Every sufficiently large odd N has three distinct principal-form prime values, with coefficient 23 B_23/66^3, B_23=66,55,60, and the ordinary good-prime product. The coupled five-prime version holds for all sufficiently large comparable odd N,M.",
+    "basis": "For P_L consisting of primes 1 mod L, the basis order with zero padding is L+1 or L+2. It is L+1 if and only if all sufficiently large N=2 mod L are actual binary prime sums. Thus the P_12 order is 13 or 14, whereas order 13 for the C_12 core is already proved.",
+    "barrier": "The current graph reconstruction puts primes and endpoints with a fixed bound on Omega entirely in the rare-bank remainder, and uses multiplication invariance that prime indicators lack. No all-target binary-prime or prime-plus-semigroup corollary is claimed.",
+    "scope": "Parameters are fixed. Window bounds give the order only. Full-star counts use ordinary prime local factors at all good primes. A regular local obstruction can still allow thin solutions with a variable equal to the same small prime in general patterns.",
+    "review": "The current proof was read by the root agent and separate analytic, arithmetic and literature agents. Auxiliary exact controls cover 593 unit-star root cases, 23 quadratic-residue triples and 529 coupled states modulo 23. No effective onset, external specialist review, formal verification or historical novelty claim."
+  },
+  "application_support": [
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
+      "locator": "Arithmetic class-group calculation only: Minkowski norms 1, 2 and 3 and ideal relations; not the binary analytic lower bound"
+    }
+  ],
+  "gcd_profile_rough_avoidance": {
+    "proof_location": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md, ModuleE.6 beforeG14-G15.",
+    "issue": "F_good retains(v,Q_(>y))=1. The remaining test cannot be treated as fixed-periodmodL0 until this restriction is removed and restored.",
+    "repair": "For eachretainedA, use the fixed-periodeta0 extension on allS-roughv. The added population forp|Q,p>y is at mostCpsi*Y/(A*p), since support has0<v<=Cpsi*Y/A. Absolute summation overA multiplesd gives DeltaS_d<<(Y/d)*L^C*V^-1*sum_(p|Q,p>y)1/p.",
+    "uniformity": "sum1/p<=logQ/(ylogy), V^-1<<logy, logQ=O(L), so the error is(Y/d)L^-B for everyfixedB. Ifdhasaprime>y thegoodprofileisempty. Arbitrary target valuations are retained.",
+    "scope": "Written elementary comparison before recordwise exceptional-character centering; no new analytic hypothesis, no claimed counterexample toG15, no internal audit as a mathematical premise."
   }
 }

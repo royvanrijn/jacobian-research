@@ -1,11 +1,12 @@
-# Pointwise primitive-norm correlations: a conditional dilation-graph proof
+# Pointwise primitive-norm correlations and splitting-semigroup asymptotics
 
-**Status.** The theorem below assumes a uniform fixed zero-free half-plane
-for Dirichlet \(L\)-functions and imports the precise weighted-dilation
-root-moment theorem identified below. It is a conditional proof of the
-pointwise correlations, with those inputs exposed. It does not establish
-the unconditional research objective or independently certify the recent
-manuscripts supplying the inputs.
+**Status.** Written proof using the two precisely identified imported
+theorems below. Their applicable proof chains have now been inspected and
+reconstructed in [the input audit](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md).
+The fixed zero-free half-plane needed here follows already from Part I
+of the cited preprint; its stronger Part II is not used. The theorem has
+internal written review. External human review and formal verification
+of this application remain separate.
 
 The proof handles the Gaussian case, every fixed imaginary quadratic
 order via its local shadow, and arbitrary fixed abelian splitting
@@ -15,19 +16,28 @@ a projected rough density, a sparse bank envelope, fixed-progression
 ideal kernels, a large-shift graph transfer, and a relative target-grid
 energy estimate. No binary correlation theorem is assumed as an input.
 
+The stronger quantitative subgroup theory is stated in
+[Additive local-global laws for abelian splitting semigroups](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md).
+It supplies an explicit logarithmic remainder, the full coupled
+congruence criterion, finite bad profiles and the closed \(C_{12}\)
+constant. The present note retains the binary derivation and primitive-norm
+corollaries.
+
 ## 1. Inputs and the pointwise semigroup theorem
 
-We use two explicit inputs.
+We use two explicit imported theorems. The modular implication below
+keeps them visible; Section 6 discharges both inputs.
 
 **ZF.** There is a fixed \(\sigma_0<1\) such that every Dirichlet
 \(L\)-function is nonzero in \(\Re s>\sigma_0\), apart from its
-possible principal pole at one. The bound is uniform in conductor and
-height. GRH implies this hypothesis. The recent OpenAI manuscript
-*The Quasi-Riemann Hypothesis* claims it in Theorem 1.1, with
-\(\sigma_0=7/8\); its earlier Theorem 3.1 claims \(11/12\), which would
-also suffice. Actual statements and the scope of the proof inspected
-are recorded in the source ledger. That claim is not silently promoted
-to an independently verified theorem here.
+possible principal pole at one. The half-plane is common to all conductors and heights.
+This is supplied with \(\sigma_0=11/12\) by Theorem 3.1, printed p. 10,
+of OpenAI, *The Quasi-Riemann Hypothesis*, 30 September 2026.
+The Part I proof and its classical antecedents were inspected, including
+the reflection, sextic sieve, principal Euler calibration and common
+continuation criterion. The exact source and checked parameter scope are
+in [the input audit](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md).
+No GRH assumption or Part II estimate is needed.
 
 **Graph input G.** Import Theorem 3.5, the absolute row/column bound of
 Lemma 3.4, and the uniform residue-replacement Lemma 3.6 in
@@ -349,6 +359,73 @@ The odd-plus-even contribution uses the two fixed coefficients \(1,2\);
 the both-even contribution is the odd-core sum at \(N/2\).
 These three disjoint cases give (B.10).
 
+### 3.1. The odd primitive Gaussian core
+
+For the specific target of the investigation, define
+\[
+ R_4(N)=\#\{(a,b)\in C_4^2:a+b=N\}.
+\]
+
+**Theorem OddGaussianPointwise.** Using the imported theorems identified
+in Section 1 and discharged in Section 6,
+\[
+ \lim_{X\to\infty}
+ \sup_{\substack{X\le N\le2X\\N\equiv2\ (4)}}
+ \left|
+ \frac{R_4(N)\log N}{A_GJ_G(N)N}-1
+ \right|=0.                                                     \tag{B.13}
+\]
+The count is zero for every other residue class modulo four.
+In particular the uniformity includes targets with arbitrarily many
+inert prime divisors and arbitrary valuations.
+
+**Proof.** Take \(L_0=4\), \(H_1=H_2=\{1\}\),
+\(U=V=\{1\}\), \(A=B=1\) in (B.4).
+Then \(\rho_1=\rho_2=1/2\) and \(\Gamma(N)=4\) on the indicated targets.
+The exact Euler identity
+\[
+ \left(\sum_{n\in C_4}n^{-s}\right)^2
+ =\zeta(s)L(s,\chi_{-4})(1-2^{-s})
+                      \prod_{p\equiv3(4)}(1-p^{-2s})
+\]
+gives \(c_{C_4}^2=\frac18\prod_{p\equiv3(4)}(1-p^{-2})\).
+Consequently
+\[
+ 4c_{C_4}^2C_{\rm in}
+ =\frac12\prod_{p\equiv3(4)}
+                         \left(1-\frac2{p(p-1)}\right)=A_G.
+\]
+Every element of \(C_4\), including one, is \(1\bmod4\).
+The target-uniform error in (B.4) proves (B.13).
+No class-group or conductor argument is needed. \(\square\)
+
+This is a specialization of the proved binary application, not a literal
+corollary of the older asymmetric subgroup theorem. Its source-based
+unconditional status uses the precise recent zero-free and graph
+theorems. An argument avoiding those imports is a separate method question.
+
+### 3.2. What classical inputs alone supply
+
+**Theorem OddGaussianAlmostAll.** For every fixed \(A,\varepsilon>0\),
+at most \(O_{A,\varepsilon}(X/(\log X)^A)\) targets in
+\([X,2X]\cap(2+4\mathbb Z)\) violate
+\[
+ \left|R_4(N)-A_GJ_G(N)\frac N{\log N}\right|
+       \le\varepsilon A_GJ_G(N)\frac N{\log N}.                  \tag{B.14}
+\]
+This conclusion uses neither of the recent imports.
+
+**Proof.** Module H of the support proves the classical major-arc
+expansion, a uniform relative Ramanujan-tail bound, and the minor-arc
+mean-square estimate from Ramaré--Viswanadham Theorem 1.5.
+Its complete parameter and normalization budget gives (B.14).
+The marginal constant is calibrated by the preceding Euler identity,
+rather than borrowed from a displayed formula in that source. \(\square\)
+
+The exceptional-set conclusion is a classical circle-method corollary.
+It does not remove every exceptional target, and no historical-priority
+claim is attached to this extraction.
+
 ## 4. Every imaginary quadratic order
 
 For a fixed order \(\mathcal O\) use the notation of
@@ -414,24 +491,103 @@ For a more explicit Euler normalization,
 The characters in this last formula are primitive. The factor \(2/3\)
 comes from converting the four literal characters modulo 12 to them.
 
-This conditional route uses new graph and all-conductor information.
+The [quantitative splitting theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+strengthens (B.12) to relative error
+\(O((\log N)^{-1/32768})\) and evaluates its fixed coefficient as
+\[
+ \frac{4\pi}{\Gamma(1/4)^2}
+ \sqrt{\frac{\log(2+\sqrt3)}6}
+ \prod_{p\in\mathcal E_{12}}
+              \left(1-\frac2{p(p-1)}\right).
+\]
+Module J supplies the additional shrinking-cutoff argument needed for
+that rate; it is not inferred from the fixed-cutoff \(o(1)\) proof.
+
+This route uses the imported graph and all-conductor theorems.
 It does not claim that the older square-root sieve barrier was removed
 by its existing positive-restoration argument.
 
-## 6. Assurance and remaining unconditional work
+## 6. Discharging the imported inputs
 
-The source-level derivations, arithmetic normalization and parameter
-interfaces above have internal written review. The infinite graph
-input and the all-conductor zero-free input are distinct external
-dependencies. The source ledger pins their precise editions and the
-limits of inspection. Neither finite computation nor agreement among
-agents independently proves those imported results.
+**Theorem PointwiseBinaryCorrelations.** Formulas (B.4), (B.10),
+(B.11) and (B.12) hold without additional conjectural hypotheses.
+Thus every fixed imaginary quadratic order has the explicit pointwise
+primitive norm leading term (B.11), and arbitrary fixed abelian
+splitting subgroups have the pointwise correlation (B.4).
 
-In particular the unconditional binary-correlation gap remains open in
-the repository. To discharge it by this route, the two imported deep
-claims must be accepted with a complete applicable proof, or the
-all-conductor prime estimate must be replaced by a proved sufficient
-averaged estimate. The current classical short-progression theorem
-alone gives too large an absolute variance error for this sparse scale.
-No unconditional completion, historical priority or external review
-is asserted.
+**Proof.** Theorem 3.1 of the pinned zero-free preprint supplies ZF
+with \(\sigma_0=11/12\). For example \(\sigma_1=23/24\) in (B.8)
+gives a positive saving \(P^{-1/24}\) relative to the prime length.
+Its logarithmic losses are dominated by this saving throughout every
+small bank. The inspected Theorem 3.5 and Lemmas 3.4/3.6 of the pinned
+weighted-dilation preprint supply G. Their precise hypotheses,
+signed-root proof and parameter order are recorded in
+[the input audit](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md).
+Modules I and G verify the altered bank, fixed-progression and
+target-sized-shift application; Modules P and E prove the relative
+target-grid bound. Thus both premises of ConditionalBinarySemigroups
+are established by the cited theorems. Applying its proof gives (B.4)
+and the three stated corollaries.
+
+For (B.11), the class error is
+\(O(NJ_{\mathcal O}(N)/\log^{1+\delta}N)\), for any fixed
+\(0<\delta<1/h(\mathcal O)\). The bad densities range over a finite
+periodic set and have a positive minimum on admissible targets.
+The error is therefore smaller than the displayed main term uniformly
+over those targets. The proved conductor-prefix tail and Haar
+normalization justify summing all local profiles. \(\square\)
+
+This proof uses the specified recent preprints as mathematical inputs.
+It does not follow from the earlier positive-restoration argument or
+from its square-root distribution estimates. The new application
+consists of the projected indicator density, quotient character frame,
+growing-shift transfer and sparse-relative target-grid estimate.
+No historical-priority claim follows without a targeted comparison
+of this exact theorem with the literature.
+
+All counts here are ordered pairs of numerical values. No numerical
+onset or power-saving error in \(N\) is asserted. The written argument
+and its source applications have internal review; this application
+has no claimed external human review or formal verification.
+
+
+## 7. The narrower estimate needed to avoid the zero-free import
+
+For \(C_4\), the proof does not need the entire all-conductor,
+all-height statement of ZF. It needs small-bank prime cancellation
+for nonexceptional characters in the target profiles:
+\[
+ P\in[\exp(c(\log N)^{1/8}),\exp(C(\log N)^{1/4})],\qquad
+ q\mid4Nr,\quad r\le(\log N)^C,\quad |t|\le(\log N)^C.
+\]
+Characters induced modulo four are centered explicitly.
+A sufficient replacement is the weighted prime/cofactor estimate
+(H.12), for the actual Gaussian coefficients. The graph input is still
+retained in that alternative.
+
+The elementary obstacle to a generic averaging shortcut is precise.
+A bounded cofactor can be chosen proportional to the conjugate of any
+selected character, concentrating its energy on that character.
+After the actual \(1/\varphi(q)\) normalization its contribution can
+still have size \(Y^2/q\), the full variance scale.
+Thus a theorem uniform over arbitrary bounded cofactors would force
+essentially the same short-prime supremum it purported to replace.
+Module H proves this implication; it is not a counterexample to the
+desired count.
+
+At prime length \(P\) and conductor \(q\asymp N\), the classical
+zero-free region gives relative decay only
+\(\exp(-c\log P/\log q)\to1\). Bombieri--Vinogradov averages a much
+shorter modulus range, and a count of exceptional characters alone
+does not control their actual cofactor weights.
+The existing pointwise prime input would, in particular, force
+split-prime quadratic nonresidues below
+\(\exp(C(\log q)^{1/4})\). This explains why retaining that input while
+removing ZF is a substantial further problem.
+
+The classical almost-all theorem isolates the unresolved step in that
+alternative route: a uniform estimate for the signed binary minor-arc
+coefficient, or a structured replacement such as (H.12).
+The major constant, target singular factor and its uniform truncation
+are explicitly controlled. The pointwise conclusion (B.13) is supplied
+by the separately stated route using the inspected recent theorems.

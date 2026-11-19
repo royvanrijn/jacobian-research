@@ -803,10 +803,12 @@ distribution enters only for a fixed order. The additive analytic
 input remains the existing quadratic-character theorem, without
 a new nonabelian distribution estimate.
 
-Here sharp means two-sided order \(NJ_{\mathcal O}(N)/\log N\).
-The separately proved marginal constant and averaged pair asymptotic
-can be corollaries. The pointwise leading asymptotic is still a
-research objective; it must not be announced as part of this theorem.
+The [pointwise correlation theorem](PRIMITIVE_NORM_BINARY_CORRELATION.md)
+now strengthens this to an explicit leading asymptotic, using the
+specified recent graph and fixed zero-free-half-plane theorems.
+Keep those analytic inputs visible in any manuscript statement of its
+proof method. The unconditional order-of-magnitude argument remains
+an independently useful, older-input result.
 Numerical general cutoffs and complete global exception lists for
 \(-20,-23,-56\) also remain open. Historical priority and specialist
 review of the exact value-count theorem are separate publication tasks.
@@ -826,45 +828,38 @@ where used. Genus-invariant coordinate convolution is an immediate
 consequence of that theory. Neither a coordinate asymptotic nor
 qualitative existence establishes Paper 2's sharp value counts.
 
-### Next target: the actual pointwise unweighted leading term
-
-The fixed-order sharp-count objective, including conductors and
-arbitrary even ring class groups, is proved internally in the
-[all-order theorem](PRIMITIVE_NORM_ALL_ORDERS.md).
-The next mathematical objective is the pointwise leading constant.
+### Pointwise leading terms and the scope of the new application
 
 The [leading-constant note](PRIMITIVE_NORM_LEADING_CONSTANT.md)
-proves the exact one-variable constant and cumulative pair asymptotic
-for every fixed order. It also proves a uniform conductor-prefix
-tail bound and the conditional formula
+proves the conductor-prefix tail, Haar normalization and class-error
+transfer. The [pointwise binary theorem](PRIMITIVE_NORM_BINARY_CORRELATION.md)
+now supplies its binary correlation input, giving
 \[
  R_P(N)\sim
  \frac{4c_{\mathcal C}^2}{(\varphi(L)/L)^2}
  \left(\prod_{p\mid2\Delta}d_p(N)\right)
- C_{\rm in}J_{\mathcal O}(N)\frac N{\log N},
+ C_{\rm in}J_{\mathcal O}(N)\frac N{\log N}.
 \]
-where \(d_p(N)\) is a primitive local VALUE convolution density.
-The formula is conditional on the explicit binary splitting-core
-correlation LC.9. The class contribution is already lower order;
-the conductor and singular-series normalizations introduce no
-further unresolved arithmetic input.
+The \(d_p(N)\) are primitive local VALUE convolution densities.
+This is an asymptotic for numerical value pairs.
 
-An unconditional auxiliary-weight removal reduces that correlation
-to its version weighted by many small good split-prime divisor bands.
-The unresolved part is evaluating the weighted unweighted-indicator
-correlation with an asymptotically exact constant. The existing
-coordinate-weight theorem and fixed-fraction positive restoration
-do not provide it.
+The same theorem treats arbitrary fixed abelian splitting subgroups
+on both sides, including \(C_{12}+C_{12}\), with its explicit
+\(N/(\log N)^{3/2}\) main term. It uses the weighted-dilation
+root-moment theorem and the fixed Dirichlet zero-free half-plane from
+Part I of the cited preprint. Their applicable written proofs and
+hypotheses were inspected in
+[the input audit](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md).
+Part II's stronger zero-free boundary is not needed.
 
-The targeted full-proof comparison with Jiang--Lau--Lü's recent
-prime-plus-norm preprint exposes a more specific possible route:
-a variable-target determinant normalization introduces an average
-over Fourier frequencies of denominator \(Nq\). Its small-conductor
-Möbius estimate does not cover this range, and a correct coefficient
-decomposition must also retain its principal model.
-These are explicit further analytic obligations, not an assertion
-that every possible binary method meets a universal barrier.
-No \(C_{12}+C_{12}\) theorem is inferred.
+The new application requires a projected indicator model, a quotient
+character frame for fixed progression banks, a target-sized-shift
+transfer, and a sparse-relative target-grid estimate. These steps
+are supplied explicitly. The older positive-restoration sieve and
+Jiang--Lau--Lü's fixed-shift prime-plus-norm theorem do not by themselves
+yield the result. A targeted historical comparison of this exact
+pointwise statement remains necessary; neither the underlying graph
+method nor the zero-free theorem is claimed as a new contribution here.
 
 Historical priority, specialist mathematical review and complete
 manuscript preparation remain separate publication obligations for

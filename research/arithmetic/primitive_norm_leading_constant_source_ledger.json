@@ -1,9 +1,9 @@
 {
-  "title": "Unweighted primitive norm leading constants: proved marginal/average and conditional pointwise reduction",
+  "title": "Primitive norm leading constants and the proved pointwise transfer",
   "date": "2026-11-19",
   "proof": {
     "path": "PRIMITIVE_NORM_LEADING_CONSTANT.md",
-    "sha256": "2c2650e5713cf7404e1498b42829453d620a5895773f5f895a3709efc9bc7f8d",
+    "sha256": "8c63ccc882f5807e2b3b9548714298bb606d9a7d85234d6b95fc8c5c75c72267",
     "locator": "OrderMarginalAndAverage; ConditionalOrderLeadingTerm; BinaryAuxiliaryRemoval"
   },
   "proved": [
@@ -16,8 +16,7 @@
     "Unconditionaluniformauxiliaryweightremovalwith1/sqrt(loglogN)cost"
   ],
   "open": [
-    "BinaryCoreCorrelation LC.9, alreadyoddprimitiveGaussianC4+C4",
-    "Actualunweightedpointwiseleadingterm LC.10-LC.11"
+    "Numerical onset and explicit pointwise error rates are not established here."
   ],
   "primary_sources": [
     {
@@ -87,11 +86,16 @@
       "locator": "DirectinertSelbergboundanduniformendpointbudget, good-primeroots; noleadingconstantimported"
     }
   ],
-  "review_boundary": "One-variable theorem, source statement scope and new reductions internally reviewed. Recentpreprintdeepbilinearmachinerynotimported. No externalhumanreview, formalverification, effectiveonset orhistoricalexhaustiveness.",
+  "review_boundary": "Internal written analytic and source-application review. The pointwise transfer uses the explicitly identified recent graph and Part I zero-free theorems; no external human review or formal verification of this application is claimed.",
   "constants": "LocalVALUE densities, notcoordinateweights. Fullvaluationstratification required. NoadditionalarchimedeanBeta(1/2,1/2). Gaussianconditionalcoefficientcalibratedagainstprovenmean.",
   "internal_review": {
     "reviewers": "Root and separate internal arithmetic/analytic agents",
     "scope": "Canonical marginal/average noncircularity, infinitebadprefix uniformSelbergtail, exactHaarfactor, signedCRTauxiliaryvarianceandCauchy; Gaussian constants; actualJLLtargetdenominatoraudit",
     "recent_method_gap": "FullSections3-8chaininspected;targetTdeterminantidentityandh-averageconductorsTqoutsideLemma7.2, plusmu_C-vs-mucoefficientmodel. IndexTrepairplausiblebutunproved; no deeprecentinputimported."
+  },
+  "pointwise_resolution": {
+    "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
+    "sha256": "da44230f97dd251ddb745429857b4f0e47c5b04e2d3b51480e61c41c47396dc7",
+    "locator": "PointwiseBinaryCorrelations, Section 6; imported inputs checked in PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md"
   }
 }

@@ -285,9 +285,42 @@ nonzero blocks. Hence
  \beta_p^*(N)\ge p^{-5s-3}\ge p^{-5t_p-3}.
  \tag{6}
 \]
-The limit exists: partition the primitive vectors into the finitely many
-residue neighborhoods on which the valuation of a selected derivative
-is fixed and apply the same Hensel parameterization.
+There is an exact finite formula for this density. Put \(k=t_p+1\),
+and let \(\mathcal P_k\) be the four-vector residue classes modulo
+\(p^k\) with both blocks nonzero modulo \(p\). For an integral
+representative \(z\) of such a class, put
+\[
+ s(z)=\min_j v_p((\nabla F(z))_j)\le t_p.
+\]
+This valuation is independent of the representative, since \(k>t_p\).
+Then
+\[
+ \beta_p^*(N)=
+ \sum_{z\in\mathcal P_k}
+ p^{-3k+s(z)}
+ \mathbf1_{\,N\equiv F(z)\ (p^{k+s(z)})}.
+ \tag{6a}
+\]
+Indeed
+\[
+ F(z+p^ky)=F(z)+p^k\nabla F(z)\cdot y+p^{2k}F(y).
+\]
+After division by \(p^{k+s(z)}\), the change in \(F\) is an integral
+linear polynomial with a unit coefficient, plus
+\(p^{k-s(z)}F(y)\). Fix the other three coordinates of \(y\).
+The resulting map in the selected coordinate is a bijection of
+\(\mathbb Z_p\): its reduction is affine with nonzero slope, and its
+derivative remains a unit, so every residue lifts uniquely by Hensel.
+This applies also at two. Thus the ball \(z+p^k\mathbb Z_p^4\), of
+measure \(p^{-4k}\), pushes forward uniformly onto
+\(F(z)+p^{k+s(z)}\mathbb Z_p\), giving its contribution in (6a).
+Changing the representative does not change this output coset.
+
+The same count is exact at every finite depth \(h\ge k+s(z)\).
+Since \(k+s(z)\le2t_p+1\), the normalized pair-primitive root counts
+already equal (6a) for every \(h\ge2t_p+1\). This proves the limit and
+its periodicity in \(N\) modulo \(p^{2t_p+1}\) without inferring
+stabilization from sampled depths.
 
 The same argument gives a uniform upper bound for the density with only
 the *whole* four-vector required primitive. Its derivative has valuation
@@ -324,6 +357,38 @@ These identities give the displayed formula. Its values at \(5^a\)
 and \(5^{a+1}\) differ for every \(a\ge2\), while all are bounded by
 \(14/5\). Thus the ordinary genus-density bound used here controls
 arbitrarily deep target valuations without a finite-period assertion.
+
+The density lower bound here is independent of Waibel's Lemma 8.
+That source's intended local-density assertion is false under its
+stated whole-vector primitive-solubility hypothesis. For
+\(p\equiv5\pmod8\), take
+\[
+ q_p=x^2+2y^2+pz^2+2pw^2,\qquad n=p.
+\]
+The vector \((0,0,1,0)\) is a primitive integral solution.
+Anisotropy of \(x^2+2y^2\) modulo \(p\) forces \(x,y\in p\mathbb Z_p\).
+After substituting \(x=pX,y=pY\) and dividing the equation by \(p\),
+the remaining binary target is a unit. Its density is \(1+1/p\);
+the input measure \(p^{-2}\) and output factor \(p\) therefore give
+\[
+                  \beta_p(q_p;p)=\frac{p+1}{p^2}.
+\]
+Equivalently, for every depth \(h\ge2\), the exact number of roots
+is \((p+1)p^{3h-2}\). All these roots are whole-vector primitive.
+At \(p=5\) the density \(6/25\) is below the source's claimed \(4/5\).
+Its other odd-prime branch also fails: for
+\(x^2+y^2+7z^2+7w^2=7\), the same calculation gives \(8/49\),
+below the claimed \(6/(7\sqrt7)\), with source parameter \(\nu=1\).
+
+Rouse's Lemma 2, PDF p.6 of the cited v1, distinguishes strong local
+solubility from primitive local solubility and gives weaker bounds
+in the latter case. We import neither Waibel's Lemma 8 nor the
+density-dependent existence clauses following its coefficient estimate.
+The upper-norm and upper-coefficient estimates used below do not
+require that lower-density assertion. The examples above are not
+pair-primitive local targets: their first binary block cannot be
+primitive at the indicated prime. The pair-primitive lower bound
+used in this proof is (6), derived directly by Hensel.
 
 Equations (5)--(7) imply (3): the nontarget factors converge absolutely,
 the finitely many bad factors are bounded above and below on admissible
@@ -555,30 +620,627 @@ applications*, [arXiv:2012.04311v2](https://arxiv.org/pdf/2012.04311v2),
 Theorem 1 and definition (6), PDF p.3, and Lemma 15, PDF p.16.
 The paper was subsequently published in 2022. The imported edition
 here is the inspected v2. For a primitive positive quaternary form of
-Gram matrix \(A\), level \(L\), and determinant \(\Delta\), its
-all-index estimate is
+Gram matrix \(A\), level \(L\), and determinant \(\Delta\), with a
+fixed primitive part \(\chi^*\) of its theta character, the
+all-index estimate needed here is
 \[
- |c_A(n)|\ll_\epsilon n^{1/2}
+ |c_A(n)|\ll_{\chi^*,\epsilon} n^{1/2}
  \left(\frac{L}{\sqrt{\mathcal F(A,2)}}+
                 \frac{\sqrt L}{\Delta^{1/8}}\right)
  \min\left(\sqrt L,\
        1+\frac{n^{1/4}(n,L)^{1/4}}{\sqrt L}\right)(nL)^\epsilon.
 \]
-Here \(\mathcal F\) is Waibel's local Jordan invariant, not the
+Here \(\mathcal F\) is Waibel's local Jordan quantity, not the
 quadratic form \(F\) of this note. This estimate requires neither
 coprimality nor local solubility of \(n\).
 Waibel uses the unnormalized Petersson norm; the displayed coefficient
 estimate already incorporates that convention.
+The primitive character stays fixed under every square dilation used
+in the Möbius inversion. The level-saving coefficient factor is justified
+independently below in precisely that fixed-character scope.
 
 For the dyadic polynomial normal form in the cited v2 equation (5),
 allow a scalar coefficient exponent \(\nu_i(2)=0\). The printed
 condition \(\nu_i(2)\ge1\) cannot hold for four squares: its polar form
 is zero modulo two, forcing all binary cross-term blocks to have even
-scale, whereas the polynomial represents 1. With scalar exponents
-allowed to be zero, definition (6) gives
+scale, whereas the polynomial represents 1. For the diagonal decomposition with scalar exponents
+zero, definition (6) gives
 \(\mathcal F(2I_4,2)=4\) and \(\mathcal F(2I_4,4)=16=\det(2I_4)\).
 Only comparison up to fixed-form constants is used below; this
 dyadic convention does not alter the claimed power saving.
+
+Allowing exponent zero also exposes a normal-form ambiguity in this
+quantity. The change of the last three variables with matrix
+\[
+ P=\begin{pmatrix}1&1&0\\1&-1&-1\\1&0&1\end{pmatrix},
+ \qquad \det P=-3\in\mathbb Z_2^\times,
+\]
+takes four squares to
+\[
+ x_1^2+3x_2^2+2(x_3^2+x_3x_4+x_4^2).
+\]
+The diagonal normal form gives \(\mathcal F_2(A,2)=4\); the second
+normal form has two scalar exponents zero and one binary exponent
+one, giving \(\mathcal F_2(A,2)=16\). Thus exact invariance cannot
+be inferred from an unspecified choice of the normal form (5).
+
+For an exact genus invariant, let
+\(s_1\mid s_2\mid s_3\mid s_4\) be the positive Smith factors of the
+Gram matrix and put
+\[
+                 \mathcal G(A,2)=s_3s_4.
+\]
+At odd primes its exponent is the sum of the two largest polynomial
+Jordan exponents. At two the Gram exponents are the polynomial
+exponents plus one on each scalar coordinate, and unchanged on
+binary blocks. Increasing these scalar exponents changes their
+largest-two sum by a number between zero and \(\min(k,2)\), where
+\(k\) is the number of scalar coordinates. Definition (6) therefore gives
+\[
+                  \mathcal G(A,2)\le\mathcal F(A,2)
+                                  \le4\mathcal G(A,2).
+\]
+The Smith factors are unchanged by local integral equivalence, so
+\(\mathcal G\) is exactly the same for all genus representatives.
+These comparisons make every upper bound used here independent of
+the normal-form choice, up to one absolute constant.
+
+The auxiliary matrix \(D\) must be constructed from true local
+Jordan blocks, retained to sufficient precision. An arbitrary
+diagonalization of the polynomial only modulo \(c\) does not suffice.
+For example,
+\[
+ A=\begin{pmatrix}2&2\\2&6\end{pmatrix}\oplus2I_2,\qquad L=8,
+ \qquad q=x^2+2xy+3y^2+z^2+w^2.
+\]
+At \(c=2\), the choice \(U=I\) satisfies the displayed polynomial
+congruence with four scalar exponents zero. It gives \(D=I\) and
+\((L/\widehat d)DA^{-1}D=4A^{-1}\), whose first two diagonal entries
+are 3 and 1. The true Jordan substitution \(x=X-Y,\ y=Y\) instead
+gives \(X^2+2Y^2\); with \(D=\operatorname{diag}(1,2,1,1)\) the
+auxiliary Gram matrix is \(\operatorname{diag}(2,4,2,2)\).
+
+Here is a uniform choice. At each prime dividing \(2cL\), take a true
+local Jordan basis, and rescale one column by its inverse determinant.
+This makes the basis determinant one while preserving scalar units
+and even unimodularity of each binary block. Approximate these bases
+by one \(U\in\mathrm{SL}_4(\mathbb Z)\), using CRT and surjectivity
+of reduction for \(\mathrm{SL}_4(\mathbb Z)\), to precisions
+\[
+ M_p\ge\max\{v_p(c),\,v_p(L)+2\}.
+\]
+The integral-matrix tests below are stable at this precision.
+Indeed \(A^{-1}\) has entries of valuation at least \(-v_p(L)\);
+varying the local basis by \(p^{M_p}\) changes the auxiliary matrix
+by entries of valuation at least \(M_p-v_p(\widehat d)\), and
+changes \(2L\) times its inverse by entries of valuation at least
+\(M_p-v_p(L)\). Both are at least two. No bound on the entries of
+\(U\) is needed: the later integral reduction uses the auxiliary
+level. Thus the \(\nu_i\) and \(\tau_i\) below mean true Jordan data,
+rather than exponents inferred from a weaker congruence.
+
+With this convention, the final literal inequality in the source's
+equation (24) needs an absolute dyadic factor at rank four. For example,
+take
+\[
+ A=8\begin{pmatrix}2&1\\1&2\end{pmatrix}\oplus2I_2,
+ \qquad q=8(x_1^2+x_1x_2+x_2^2)+x_3^2+x_4^2.
+\]
+This primitive form has level \(L=24\),
+\(\det A=\mathcal F(A,2)=768\). At \(c=d=(c,L)=4\), the auxiliary
+matrix constructed before Lemma 11 is \(D=\operatorname{diag}(4,4,2,2)\).
+Thus
+\[
+ \frac{\det D}{\det A}=\frac1{12}>
+ \frac{d^2}{\mathcal F(A,2)}=\frac1{48}.
+\]
+The rank-four replacement sufficient for Theorem 1 is
+\[
+ \frac{\det D}{\det A}\le
+              \frac{4d^2}{\mathcal F(A,2)}.
+\]
+Here is a direct repair uniform over the entire genus. At a prime
+\(p\), let \(\lambda_1\le\cdots\le\lambda_4\) be the Gram Smith
+exponents and put \(a=v_p(d)\). Every auxiliary exponent \(\tau_i\)
+in \(D\) is at most \(\min(\lambda_i,a)\). At odd primes this is the
+source's construction directly. At two a binary block has
+\(\lambda=\nu\) and \(\tau=\min(\nu,a)\); a scalar has
+\(\lambda=\nu+1\), with \(\tau=a\) if \(\nu\ge a\),
+\(\tau=a-1\) if \(\nu=a-1\), and \(\tau=\nu+1\) otherwise.
+All these cases satisfy the same inequality. Hence
+\[
+ \frac{\det D}{\det A}
+ \le\prod_p p^{-\sum_i(\lambda_i-a)_+}
+ \le\frac{d^2}{\mathcal G(A,2)}
+ \le\frac{4d^2}{\mathcal F(A,2)}.
+\]
+The middle inequality follows from
+\(\lambda_3+\lambda_4\le2a+\sum_i(\lambda_i-a)_+\).
+It also holds when \(D\) is constructed from any other form in the
+genus, because its Gram Smith exponents agree. This proves the
+needed estimate without a basis-dependent or genus-size constant.
+The preceding example has Smith factors \((2,2,8,24)\),
+\(\mathcal G(A,2)=192\), and \(\mathcal F(A,2)=768\), so the
+factor four is attained. It is absorbed by the rank-four big-O
+constant in Theorem 1, leaving the coefficient estimate and all
+level exponents used here unchanged.
+
+There is a second absolute-factor correction in the auxiliary
+lattice. In the intended primitive-form scope, allowing scalar
+exponent zero as above, Lemma 11's assertion that its level is at
+most \(L\) is false. For
+\[
+ A=2\begin{pmatrix}2&1\\1&2\end{pmatrix}
+       \oplus\operatorname{diag}(2,6),\qquad L=12,
+\]
+the source construction at \(c=d=2\) has \(\widehat d=1\) and
+\(D=\operatorname{diag}(2,2,1,1)\). The resulting matrix is
+\[
+ S=\frac L{\widehat d}DA^{-1}D
+   =8\begin{pmatrix}2&-1\\-1&2\end{pmatrix}
+       \oplus\operatorname{diag}(6,2).
+\]
+It is even integral but has level \(24=2L\): its first inverse block
+is \(\frac1{24}\left(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\right)\).
+
+The uniform replacement is that \(S\) is even integral and its level
+divides \(2L\). Put \(\ell=v_2(L)\), \(a=v_2(d)\), and
+\(\widehat a=v_2(\widehat d)\). A binary Gram block \(2^\nu E\),
+with \(E\) even unimodular, contributes to \(S\) the Gram exponent
+\[
+ s=\ell-\widehat a+2\min(\nu,a)-\nu.
+\]
+A scalar polynomial \(2^\nu u x^2\), \(u\) odd, contributes
+\(s=\ell-\widehat a+2\tau-\nu-1\), with \(\tau\) as above.
+Outside the exceptional case \(\widehat d=d/2\), binary blocks have
+\(0\le s\le\ell\), and scalars have \(1\le s,\ s+1\le\ell\).
+In the exception \(\ell=2,\ a=1,\ \widehat a=0\), every scalar has
+\(\nu=0\) and \(s=1\). Binary exponents \(\nu=0,1,2\) give
+\(s=2,3,2\), respectively. Thus the extra level factor is at most
+two, and it is attained. At odd primes the corresponding exponent
+is \(\ell-a+2\min(\lambda,a)-\lambda\), between zero and \(\ell\).
+These computations also prove even integrality. By the precision
+argument above they apply to the global matrix
+\(S=(L/\widehat d)D(U^{\mathsf T}AU)^{-1}D\).
+Replacing the auxiliary level by \(2L\), and using
+\(L/\widehat d\le2L/d\), changes only absolute constants in the
+rank-four lattice counts and in equations (22)--(23).
+
+The source's equation (18), in Lemma 12, also has a phase-sign
+error. In rank four, with the usual weight-two slash operator and
+\(c>0\), its external factor must be
+\[
+ e\!\left(+\frac d{2c}x^{\mathsf T}A^{-1}x\right)
+\]
+rather than the printed negative sign. To obtain the sign directly,
+put \(w=z+d/c\) and write
+\(\rho z=a/c-1/(c^2w)\). Poisson summation on each residue class
+modulo \(c\) gives the dual factor
+\(e(\tfrac12x^{\mathsf T}A^{-1}x\,w)\); the weight-two prefactor is
+\(-1/(c^2\sqrt{\det A})\). The part involving \(d/c\) therefore has
+the displayed positive sign.
+
+For example, let \(A=2I_4\), \(f(z)=\theta_A(z)\), and
+\(\rho=\left(\begin{smallmatrix}1&0\\1&1\end{smallmatrix}\right)\).
+Periodicity and Poisson summation give exactly
+\[
+ (f|_2\rho)(z)=-\tfrac14 f((z+1)/4).
+\]
+The coefficient of \(e(nz/4)\) is
+\(-r_4(n)i^n/4\), whereas the literal equation (18) gives
+\(-r_4(n)(-i)^n/4\). At \(n=1\) these are \(-2i\) and \(2i\).
+The corrected phase has modulus one, preserves the Gauss-sum support,
+and equals one at the zero dual vector. Consequently the coefficient
+majorants in Lemma 12 and the upper-norm argument in (22)--(23) are
+unchanged, including the cancellation of genus-difference constant
+terms. The phases in Lemma 12 must be allowed to depend on the dual
+vector; no constant-phase identity is needed in this application.
+
+The magnitude and support can also be obtained without a phase
+formula. For \((a,c)=1\), define
+\[
+ G_c(a,x)=\sum_{v\bmod c}
+       e\!\left(\frac{a q(v)+x\cdot v}{c}\right),\qquad
+ K_c=\ker(A\bmod c).
+\]
+Squaring and shifting the two summation variables gives exactly
+\[
+ |G_c(a,x)|^2
+   =c^4\sum_{h\in K_c}
+       e\!\left(\frac{a q(h)+x\cdot h}{c}\right).
+\]
+The last phase is a character of \(K_c\), since its polar form
+vanishes there. The sum is therefore either zero or \(|K_c|\).
+The Smith factors give
+\[
+ |K_c|=\prod_{i=1}^4(s_i,c)=\prod_{i=1}^4(s_i,d).
+\]
+Consequently the Poisson coefficient has squared magnitude either
+zero or \(|K_c|/\Delta\), uniformly over the genus.
+
+In true Jordan coordinates, the odd-prime support is divisibility
+by \(p^{\min(\lambda,v_p(c))}\). At two, writing \(t=v_2(c)\),
+a binary block requires both frequency coordinates divisible by
+\(2^{\min(\nu,t)}\). A scalar polynomial \(2^\nu u y^2\) has exact
+frequency support
+\[
+ b\equiv
+ \begin{cases}
+  0\pmod{2^t},&\nu\ge t,\\
+  2^{t-1}\pmod{2^t},&\nu=t-1,\\
+  0\pmod{2^{\nu+1}},&\nu\le t-2.
+ \end{cases}
+\]
+These conditions follow directly by testing the kernel character.
+Thus the support is contained in \(D\mathbb Z^4\); resonant scalar
+coordinates of the resulting vector must be odd. If there are \(r\)
+such coordinates, then \(|K_c|=2^r\det D\le16\det D\).
+Dropping the parity restrictions therefore gives the Lemma 12 upper
+coefficient bound with factor \(4\sqrt{\det D/\Delta}\) and the
+ordinary representation numbers of the even integral matrix \(S\).
+No constancy of the phase across a positive-norm shell is needed.
+
+For genus differences, the cusp constant at \(c>0\) is
+\(-G_c(a,0)/(c^2\sqrt\Delta)\). Local integral equivalence gives
+identical finite Gauss sums by CRT, so this constant agrees for all
+genus representatives; at \(c=0\) it is one. Subtract this common
+constant before applying the triangle inequality, and use Parseval
+over a full period \(L\) on each remaining theta series. Each
+representative may use its own \(D\) and \(\widehat d\); their
+frequency scales differ by at most two. Their levels, determinants,
+and Smith factors agree, so the preceding coefficient and
+determinant bounds are uniform. Finally the genus theta series is a
+positive weighted average with total weight one. Convexity of the
+squared cusp norm gives the same bound for
+\(\theta_A-\theta_{\mathrm{gen}A}\), with no class-number factor.
+
+### Uniformity of the lattice-counting input
+
+The rank-four use of Waibel's Lemma 9, PDF pp.8--10, does not hide
+a constant depending on the auxiliary level or lattice shape.
+For an even integral positive Gram matrix \(T\), choose a basis
+with \(V\) unit upper triangular and
+\[
+ T=V^{\mathsf T}\operatorname{diag}(b_1,b_2,b_3,b_4)V,\qquad
+ |v_{ij}|\le\tfrac12\ (i<j),\qquad b_i\le\tfrac43b_{i+1}.
+\]
+Such a basis can be obtained by successively choosing a shortest
+primitive vector in each projected lattice and then size-reducing.
+The projected next basis vector has squared length
+\(b_{i+1}+v_{i,i+1}^2b_i\), at least \(b_i\), proving the ratio.
+Also \(b_1\ge1\), so every \(b_i\) has an absolute positive lower
+bound and the entries of \(V^{-1}\) are bounded. The source's earlier
+existence sentence with ratio \(3/4\) is a reciprocal typo; its proof
+uses \(4/3\). Indeed four squares have determinant 16 and \(b_1\ge2\),
+incompatible with \(b_i\le(3/4)b_{i+1}\).
+
+After fixing \(x_3,x_4\), write the remaining equation as
+\[
+ ax^2+bxy+cy^2+dx+ey+f=n.
+\]
+If a fixed tail coordinate is nonzero, let \(j\ge3\) be the last one.
+Its Gram--Schmidt square forces \(b_j\le2n\), hence
+\(b_1,\ldots,b_j=O(n)\). Every active coordinate is \(O(\sqrt n)\).
+Consequently \(a,b,c=O(n)\), \(d,e=O(n^{3/2})\), and \(f=O(n^2)\),
+with absolute constants. If the tail is zero and \(b_2>2n\), then
+\(y=0\) and there are at most two solutions. Otherwise the same
+coefficient bounds hold.
+
+Put \(\delta=4ac-b^2>0\) and \(h=2ae-bd\). Completing squares gives
+the injective integer map
+\[
+ X=2ax+by+d,\qquad Y=\delta y+h,\qquad
+ Y^2+\delta X^2=M:=h^2+\delta\{d^2+4a(n-f)\}=O(n^5).
+\]
+For \(M>0\), the algebraic integer \(Y+X\sqrt{-\delta}\) has norm
+\(M\) in an imaginary quadratic maximal order. There are at most
+\(\tau(M)\) ideals of that norm and at most six generators of each
+principal ideal. For \(M=0\) there is at most one solution; for
+\(M<0\) there are none. Choosing the divisor-bound exponent small
+enough proves \(O_\epsilon(n^\epsilon)\) solutions per binary slice,
+uniformly in \(T\). A large unused tail therefore causes no level loss.
+
+Sequential interval counting now gives, for \(l\ge1\),
+\[
+ \max_{1\le n\le l}r_T(n)
+ \ll_\epsilon l^\epsilon\prod_{i=3}^4(1+\sqrt{l/b_i}),\qquad
+ \sum_{1\le n\le l}r_T(n)\ll\prod_{i=1}^4(1+\sqrt{l/b_i}).
+\]
+Multiplying these bounds gives the Lemma 9 second moment with the
+multiset \((b_1,b_2,b_3,b_3,b_4,b_4)\). The degree \(3,4,5,6\)
+denominators are respectively
+\[
+ \sqrt{b_1b_2b_3},\quad
+ \sqrt{b_1b_2}\,b_3,\quad
+ \sqrt{b_1b_2}\,b_3\sqrt{b_4},\quad
+ \sqrt{b_1b_2}\,b_3b_4.
+\]
+The bounded neighboring ratios justify these comparisons even if
+the \(b_i\) are not ordered exactly. Partial summation against \(1/n\)
+absorbs degrees at most two into an arbitrarily small epsilon loss;
+the higher degrees have powers \(l^{j/2-1}\), as used in (23).
+
+For completeness, the cusp summation leading to the rank-four
+equation (23) can be performed with these uniform estimates. Put
+\(\mu=[\mathrm{SL}_2(\mathbb Z):\Gamma_0(L)]\) and
+\(\widetilde\mu=[\mathrm{SL}_2(\mathbb Z):\Gamma(L)]\).
+After averaging over principal-level cosets and grouping translations,
+the full-period Parseval estimate has prefactor
+\(L\mu/\widetilde\mu\ll_\epsilon L^{-1+\epsilon}\).
+For each \(d\mid L\), the number of primitive columns
+\((a,c)\bmod L\) with \((c,L)=d\) is
+\[
+             M_d=\varphi(L/d)\,\frac{L\varphi(d)}d
+                         \le\frac{L^2}d.
+\]
+Absolute constants accommodate the center when \(L\le2\).
+
+For each nonzero \(c\bmod L\), subtract the common constant term
+first, bound the two remaining theta series separately, and integrate
+over a full period \(L\) and \(y\ge1/2\). Orthogonality applies since
+their frequencies are integral multiples of \(1/L\).
+The coefficient bound above and
+\(\int_{1/2}^{\infty}e^{-4\pi ny/X}\,dy
+ \ll(X/n)e^{-2\pi n/X}\), with
+\(X=L/\widehat d\asymp L/d\), give, after summing the \(M_d\) columns,
+the upper contribution
+\[
+ \ll_\epsilon L^\epsilon\frac{L^2}{d^2}
+   \max_{(D,S)}
+       \left\{\frac{\det D}{\Delta}
+       \sum_{n\ge1}\frac{r_S(n)^2}{n}e^{-c_0nd/L}\right\}
+                                                        \tag{W.1}
+\]
+for an absolute \(c_0>0\). The maximum runs over the actual auxiliary
+pairs for these columns and the two theta series. The following
+estimates hold uniformly for each pair; their local factors are
+uniformly comparable as below.
+For \(c=0\bmod L\), use the original integral theta series in this
+same calculation with \(X=1\). The absolute lower bounds on its
+\(b_i\) show that its exponentially weighted moment is \(O_\epsilon(1)\);
+the resulting contribution is \(O_\epsilon(L^\epsilon)\).
+
+Write \(H=\det S\) and let \(B_3,B_4,B_5,B_6\) be the four
+denominators displayed above. Partial summation of the second-moment
+bound, including its exponentially decreasing tail, gives
+\[
+ \sum_{n\ge1}\frac{r_S(n)^2}{n}e^{-c_0n/X}
+       \ll_\epsilon X^\epsilon
+          \left(1+\sum_{j=3}^6\frac{X^{j/2-1}}{B_j}\right),
+       \qquad X\ge1.                                  \tag{W.2}
+\]
+All auxiliary forms have level dividing \(2L\). In a reduced basis
+the bottom-right entry of \(S^{-1}\) is \(1/b_4\), so
+\(2L/b_4\) is a positive integer. Hence \(b_4\le2L\), and the
+neighboring ratios imply \(b_i\ll L\). They also give
+\(b_1b_2\ll H^{1/2}\). Since
+\[
+                  H\asymp (L/d)^4(\det D)^2/\Delta,
+\]
+the respective degree-three through degree-six terms of (W.1) are
+bounded, up to \(L^\epsilon\), by
+\[
+ \frac{L}{\sqrt d\sqrt\Delta},\qquad
+ \frac{L}{\Delta^{1/4}\sqrt{\det D}},\qquad
+ \frac{L}{\sqrt d\,\Delta^{1/4}\sqrt{\det D}},\qquad
+ \frac{L}{d\,\Delta^{1/4}\sqrt{\det D}}.
+\]
+The constant term of (W.2) contributes
+\(L^2\det D/(d^2\Delta)\).
+Summing over \(d\mid L\), using the divisor bound, and allowing the
+uniform factor-two frequency change therefore proves
+\[
+ \|\theta_A-\theta_{\mathrm{gen}A}\|^2
+ \ll_\epsilon L^\epsilon\left\{
+ 1+\frac{L^2}{\Delta}\sum_{d\mid L}\frac{\det D_d}{d^2}
+ +\frac L{\sqrt\Delta}
+ +\frac L{\Delta^{1/4}}\sum_{d\mid L}\frac1{\sqrt{\det D_d}}
+ \right\}.
+\]
+The choices \(D_d\) need not be identical across cusps or genus
+representatives: \(|K_d|/16\le\det D_d\le|K_d|\) makes them comparable
+uniformly. The first divisor sum is at most
+\(4\Delta\tau(L)/\mathcal F(A,2)\), and the last at most \(\tau(L)\).
+Finally \(\Delta\le L^4\), since \(LA^{-1}\) is nonsingular integral,
+so \(1\) and \(L/\sqrt\Delta\) are absorbed. Thus
+\[
+ \|\theta_A-\theta_{\mathrm{gen}A}\|^2
+ \ll_\epsilon
+ \frac{L^{2+\epsilon}}{\mathcal F(A,2)}
+ +\frac{L^{1+\epsilon}}{\Delta^{1/4}}.
+\]
+This proves the needed shape and level uniformity using the corrected
+auxiliary lattice, without a primitive-content or target-coprimality
+restriction in the lattice-counting step.
+
+### Fixed-character justification of the Fourier bound
+
+Let \(\chi\) modulo \(L\) be induced by a fixed primitive even
+character \(\chi^*\) of conductor \(q_\chi\mid L\), and let
+\(f\in S_2(\Gamma_0(L),\chi)\). Write \(a_f(n)\) for its ordinary
+Fourier coefficients and use the unnormalized Petersson norm.
+Michel's [Theorem 2.1, p.43](sources/michel-park-city-2006.pdf),
+with the norm on p.36, applies to the full cusp space, including
+oldforms, at weight two and every positive index. For an orthonormal
+basis \(\mathcal B\), its diagonal formula gives
+\[
+ \frac1{4\pi n}\sum_{g\in\mathcal B}|a_g(n)|^2
+ =1+2\pi i^{-2}\sum_{\substack{c\ge1\\L\mid c}}
+     \frac{S_\chi(n,n;c)}c J_1(4\pi n/c).
+\]
+
+The weight-two endpoint in this formula can also be justified directly,
+including at cusps whose character is not trivial on their primitive
+translation. Fix \(m\ge1\). For \(u>0\), let
+\[
+ P_{m,u}(z)=y^u
+  \sum_{\gamma\in\Gamma_\infty\backslash\Gamma_0(L)}
+   \overline{\chi(d_\gamma)}
+   (c_\gamma z+d_\gamma)^{-2}
+   |c_\gamma z+d_\gamma|^{-2u}e(m\gamma z),
+ \qquad e(t)=\exp(2\pi it).
+\]
+Here \(\Gamma_\infty=\{\pm T^a:a\in\mathbb Z\}\).
+The factor \(y^u\) makes this an automorphic function of weight two
+and character \(\chi\); the sum converges absolutely for \(u>0\).
+We prove convergence to a cusp form as \(u\downarrow0\), rather than
+infer convergence of the functions from convergence of their norms.
+
+Take an integral cusp matrix
+\(\sigma=\left(\begin{smallmatrix}r&b\\t&d\end{smallmatrix}\right)
+\in\mathrm{SL}_2(\mathbb Z)\).
+The slashed function \(P_{m,u}|_2\sigma\) has period \(L\), since
+\(\sigma T^L\sigma^{-1}\in\Gamma(L)\). If the bottom row of
+\(\gamma\sigma\) is \((C,D)\), its congruence and character weight are
+\[
+ W_C(D)=\mathbf1_{\,L\mid Cd-Dt}\,
+             \overline{\chi(Dr-Cb)}.
+\]
+This is periodic modulo \(L\), with Fourier coefficients
+\(\widehat W_C(h)=L^{-1}\sum_{D\bmod L}W_C(D)e(-hD/L)\)
+of absolute value at most one. For \(C>0\), the frequency \(n/L\),
+\(n\in\mathbb Z\), has coefficient
+\[
+ \frac{y^u}{L}\sum_{C\ge1}C^{-2-2u}K_C(n)
+              I_{C,u}(n/L,y),
+\]
+where
+\[
+\begin{split}
+ K_C(n)&=\sum_{\substack{D\bmod CL\\(C,D)=1}}
+       W_C(D)e\left(\frac{m\overline D}{C}+\frac{nD}{CL}\right),\\
+ I_{C,u}(v,y)&=\int_{\mathbb R}(x+iy)^{-2}|x+iy|^{-2u}
+       e\left(-\frac{m}{C^2(x+iy)}-vx\right)\,dx .
+\end{split}
+\]
+Splitting \(D=D_0+Cj\) gives the exact reduction
+\[
+ K_C(n)=L\sum_{\substack{h\bmod L\\L\mid n+hC}}
+       \widehat W_C(h)\,
+          S((n+hC)/L,m;C).
+\]
+The ordinary all-modulus Weil bound cited below therefore gives
+\[
+              |K_C(n)|\le L^2\tau(C)\sqrt{Cm}
+\]
+for every integer \(n\), including zero and negative indices.
+
+Here is the uniform estimate needed to take the limit. For fixed
+\(u_0>0\), every integer \(a\ge0\), \(0\le u\le u_0\), \(C\ge1\),
+and \(y\ge1\), scaling \(x=yv\) gives
+\[
+ \int_{\mathbb R}\left|
+  \partial_x^a\left\{(x+iy)^{-2}|x+iy|^{-2u}
+                 e\left(-\frac m{C^2(x+iy)}\right)\right\}\right|dx
+       \ll_{a,m,u_0}y^{-1-2u-a}.
+\]
+The exponential has modulus at most one, and its rescaled parameter
+\(m/(C^2y)\) is bounded by \(m\). Integration by parts consequently gives,
+for any \(A\ge2\),
+\[
+ |I_{C,u}(n/L,y)|
+       \ll_{A,L,m,u_0}y^{-1-2u}(1+|n|)^{-A}.
+\]
+The same derivative argument works on every compact positive
+\(y\)-interval. Since \(\sum_C\tau(C)C^{-3/2}<\infty\), the complete
+cusp Fourier series converges locally uniformly as \(u\downarrow0\).
+
+At \(u=0\), closing the integral upward gives
+\(I_{C,0}(n/L,y)=0\) for \(n\le0\): the singularity \(x=-iy\)
+is in the lower half-plane. For \(v>0\), expansion of the residue
+in the lower half-plane gives
+\[
+ I_{C,0}(v,y)=-2\pi C\sqrt{v/m}\,e^{-2\pi vy}
+                       J_1(4\pi\sqrt{mv}/C).
+\]
+The possible \(C=0\) term occurs only if \(L\mid t\), and is
+\(\overline{\chi(r)}y^ue(mz)\). It too has positive frequency.
+Thus the limit \(P_m\) is holomorphic and cuspidal at every cusp.
+The preceding bounds give
+\[
+ |(P_{m,u}|_2\sigma)(z)|
+       \ll_{L,m,u_0}y^{-1-u}+y^{u_0}e^{-2\pi my}
+       \qquad(y\ge1).
+\]
+Replacing \(y^{-1-u}\) by \(y^{-1}\) gives a common
+square-integrable majorant for the weight-two Petersson measure \(dx\,dy\), on the finitely many cusp strips.
+Together with compact convergence, it proves strong Petersson
+\(L^2\) convergence. For \(u>0\), unfolding against a cusp form is absolutely justified:
+the global bound \(y|f(z)|\ll_f1\) bounds the strip integrand near
+\(y=0\) by \(O_f(y^{u-1})\). Strong convergence therefore gives,
+for any \(f\in S_2(\Gamma_0(L),\chi)\),
+\[
+ \langle f,P_m\rangle
+   =\lim_{u\downarrow0}
+      a_f(m)\frac{\Gamma(1+u)}{(4\pi m)^{1+u}}
+   =\frac{a_f(m)}{4\pi m}.
+\]
+The Fourier calculation at infinity and expansion in the full
+orthonormal cusp basis yield the displayed diagonal formula.
+The summand initially has \(S_{\bar\chi}\); inversion of the unit
+variable gives
+\(S_{\bar\chi}(m,m;C)=S_\chi(m,m;C)\).
+There is no Eisenstein or boundary correction. The construction
+constants here may depend on \(L,m\); they establish an exact
+identity only. The following estimates, rather than those
+construction constants, control the varying-level application.
+
+Gauss inversion reduces the character twist to ordinary sums:
+\[
+ S_\chi(n,n;c)=\frac1{\tau(\overline{\chi^*})}
+   \sum_{r\bmod q_\chi}\overline{\chi^*}(r)
+      S(n+rc/q_\chi,n;c).
+\]
+For \(q_\chi=1\) this is the ordinary sum directly.
+The ordinary all-modulus Weil bound in
+[Iwaniec--Kowalski, Corollary 11.12, printed p.280,
+equation (11.16)](sources/iwaniec-kowalski-exponential-sums-author.pdf)
+and
+\((n+rc/q_\chi,n,c)\le(n,c)\) imply
+\[
+ |S_\chi(n,n;c)|\le
+ C_{\chi^*}\,\tau(c)c^{1/2}(n,c)^{1/2},\qquad
+ C_{\chi^*}=\frac{\varphi(q_\chi)}{\sqrt{q_\chi}}.
+\]
+Thus the conductor contributes a fixed constant for every modulus
+\(c\), including arbitrary powers of conductor primes.
+
+Put \(g_0=(n,L)\), \(X=n/L\), and choose \(0<\delta<1/4\).
+The bound \(|J_1(x)|\ll\min(x,x^{-1/2})\), together with
+\((n,Lr)\le g_0(n,r)\) and \(\tau(c)\ll_\delta c^\delta\),
+bounds the modulus sum by a constant times
+\[
+ L^\delta g_0^{1/2}
+ \left\{n^{-1/2}\sum_{r\le X}r^\delta(n,r)^{1/2}
+   +nL^{-3/2}\sum_{r>X}r^{-3/2+\delta}(n,r)^{1/2}\right\}.
+\]
+For \(X\ge1\), expanding
+\((n,r)^{1/2}\le\sum_{d\mid(n,r)}d^{1/2}\) gives the respective
+bounds
+\[
+ X^{1+\delta}\sum_{d\mid n}d^{-1/2},\qquad
+ O_\delta\!\left(X^{-1/2+\delta}
+                    \sum_{d\mid n}d^{-1/2}\right).
+\]
+For \(X<1\) the first sum is empty, and the second is
+\(O_\delta(\tau(n))\). Its contribution is at most
+\(O_{\chi^*,\epsilon}(nL)^\epsilon\sqrt{ng_0}/L\), since \(n<L\).
+The same bound follows in the first case after choosing \(\delta\)
+sufficiently small. Cauchy's inequality on the complete cusp basis
+therefore proves
+\[
+ |a_f(n)|\ll_{\chi^*,\epsilon}\|f\|\,n^{1/2}
+ \left(1+\frac{n^{1/4}(n,L)^{1/4}}{\sqrt L}\right)
+ (nL)^\epsilon .
+\]
+No coprimality condition on \(n\) is imposed. This proof uses the
+ordinary Weil bound and a fixed finite Gauss expansion; a bound
+uniform over varying character conductors is not needed here.
+The alternative \(\sqrt L\) factor follows from the separately
+cited Schulze-Pillot--Yenirce all-index estimate, with its norm
+converted to this unnormalized convention.
+
+### Applying the bound to the Möbius family
 
 Only squarefree \(d,e\) occur. Put \(g=(d,e)\),
 \(u=d/g\), \(v=e/g\), \(t=uv\), and \(n=N/g^2\), discarding
@@ -593,6 +1255,10 @@ exponents \(0,0,2,2\), giving level \(p^2\) and
 pair \((u,v)\) has just three scaling patterns; their factors differ
 from these expressions by fixed constants. This proves both the
 upper and lower level comparisons needed in the minimum above.
+Since \(\Delta=\Delta_0t^4\), the associated primitive quadratic
+character is the one determined by \(\Delta_0\), independent of
+\(d,e\). Hence the character-dependent constant above depends only
+on the original fixed binary pair.
 
 Waibel's estimate, using the second entry of that minimum, therefore
 gives
@@ -983,12 +1649,42 @@ Finite inclusion-exclusion over the full rank sublattices
 The fixed prime set is chosen before \(N\) grows. The finite sieve
 excludes zero blocks automatically.
 
-For every good prime, (17)--(18) give
+The local estimate needed here is relative and uniform in the target
+valuation. At a good prime \(p\ge3\), put
+\(a=v_p(N)\), \(c=\varepsilon_1\varepsilon_2\),
+\(s=\varepsilon_1+\varepsilon_2\), and
+\(\beta_a=\beta_p(F;N)\). Counting nonsingular roots modulo \(p\)
+and separating the all-zero vector gives
 \[
- 0\le\beta_p(F;N)-\beta_p^*(N)\ll p^{-2}.
+ \beta_0=1-\frac c{p^2},\qquad
+ \beta_a=1+\frac c p-\frac c{p^2}-\frac1{p^3}
+          +\mathbf1_{a\ge2}p^{-2}\beta_{a-2}\quad(a\ge1).
 \]
-The factors (5) are bounded below by an absolute positive constant
-for \(p\ge3\). Thus, uniformly in \(N\) and its valuations,
+The last term comes from dividing all four coordinates by \(p\).
+Induction gives \(\beta_a\le1+1/p\le4/3\) for every \(a\ge0\).
+Formula (5) gives \(\beta_p^*(N)\ge16/27\): the minima at \(p=3\)
+occur for two inert blocks when \(p\nmid N\), or one split and one
+inert block when \(p\mid N\). The corresponding expressions are
+\((1-2/p)(1+1/p)^2\) and \((1-1/p)^2(1+1/p)\), respectively,
+and both increase for \(p\ge3\). The other sign choices are larger.
+Subtracting (5) from the recurrence gives exactly
+\[
+ \beta_a-\beta_p^*(N)=
+ \begin{cases}
+  2p^{-2}-s p^{-3},&a=0,\\
+  (2+s)(p^{-2}-p^{-3})
+       +\mathbf1_{a\ge2}p^{-2}\beta_{a-2},&a\ge1.
+ \end{cases}
+\]
+These differences are nonnegative and at most \(16/(3p^2)\).
+Consequently
+\[
+             1\le\frac{\beta_p(F;N)}{\beta_p^*(N)}
+                         \le1+\frac9{p^2}
+\]
+for every target valuation. The product over \(p>Y\) is at most
+\(\exp(9/(Y-1))\), using the larger sum over all integers, for \(Y\ge2\).
+Thus, uniformly in \(N\) and its valuations,
 \[
  1\le\frac{S_Y(N)}{S^*(N)}
       =\prod_{p>Y}\frac{\beta_p(F;N)}{\beta_p^*(N)}
@@ -1341,10 +2037,18 @@ trivial definite infinite type corresponds to weight two (Section 5,
 the \(n=0\) case on printed pp.89--90 and Proposition 5.20, pp.105--106). Every \(\ell\mid m\) is split and has maximal local
 level, so the transferred factor is unramified there. The weight-two
 Ramanujan theorem gives two Hecke roots of magnitude \(\sqrt\ell\).
-The all-integral-ideal recurrence
-\(T_{\ell^{a+2}}=T_\ell T_{\ell^{a+1}}-\ell T_{\ell^a}\)
-therefore bounds the \(\ell^a\) eigenvalue by
-\((a+1)\ell^{a/2}\). Multiplicativity proves (33) with constant 1,
+In Voight's Proposition 41.3.6, the central permutation
+\(P((\ell))\) is the identity: rational scalar multiplication acts
+trivially on these projective quotients. Hence the all-integral-ideal
+recurrence is
+\(T_{\ell^{a+2}}=T_\ell T_{\ell^{a+1}}-\ell T_{\ell^a}\).
+With trivial central character, the two roots satisfy
+\(\alpha_\ell\beta_\ell=\ell\), so the \(\ell^a\) eigenvalue is
+\(\sum_{r=0}^a\alpha_\ell^r\beta_\ell^{a-r}\) and has magnitude at most
+\((a+1)\ell^{a/2}\) for every \(a\ge0\). Deligne's construction
+in Section 3, immediately before (3.12), covers cusp forms for
+arbitrary congruence subgroups; it imposes no newvector restriction
+on this application. Multiplicativity proves (33) with constant 1,
 uniformly in \(p,m\). The level at 2 affects the conductor of the
 transfer; no unramified estimate at 2 is used. The exact primary source
 editions and theorem locators are pinned in the source ledger.
@@ -1357,8 +2061,10 @@ For \(N=2^e m\), \(m\) odd, \(0\le e\le3\), let
  c_e=r(2^e)/4\in\{1,2,6,6\}.
 \]
 It has nonnegative entries, is self-adjoint by quaternion conjugation,
-and has norm at most \(c_e\) by the row-sum bound. Coprime ideal
-factorization gives
+and has norm at most \(c_e\) by the row-sum bound. It acts on the
+quadratic determinant character \(\chi_p\) by
+\(A_e\chi_p=(2/p)^e c_e\chi_p\), since every summand has norm \(2^e\).
+Coprime ideal factorization gives
 \[
  T_N=A_eT_m=T_mA_e .
  \tag{34}
@@ -1391,9 +2097,34 @@ The image of \((\mathbb Z[\iota]/p)^\times/\mathbb F_p^\times\) is a
 nonsplit torus, with normalizer of order \(2(p+1)\). It contains
 \(\Gamma_p\), and an invertible quaternion has a zero binary component
 precisely when its projective image lies in this normalizer.
-Its orbit fraction is
-\(\mu_p=2/(p(p-1))\). Averaging over this orbit exactly as in the cited
-spectral proof, and using (33)--(34), shows that, for \(p\nmid N\),
+Its orbit fraction is \(\mu_p=2/(p(p-1))\).
+Give \(Y_p\) uniform probability, and use its finite inner product
+in this paragraph. Let \(u\) be the indicator of
+\(\Gamma_p\backslash H_p\), where \(H_p\) is the normalizer.
+The torus norm is onto \(\mathbb F_p^\times\), so
+\[
+ \mathbb E u=\mu_p,\qquad \langle u,\chi_p\rangle=0,\qquad
+ u_0=u-\mu_p1,\qquad \|u_0\|^2=\mu_p(1-\mu_p).
+\]
+In particular \(u_0\) lies in the complement used in (33).
+The operator \(T_N\) commutes with the right finite group action,
+so \(T_Nu\) is constant on the support of \(u\). At its base point
+the shell formula gives
+\[
+ \langle u,T_Nu\rangle
+    =\mu_p(T_Nu)(\Gamma_p)=\mu_p\,b_p(N)/4.
+\]
+Put \(D=c_e\sigma(m)=r(N)/4\). Splitting off the constant component
+and using (33)--(34) gives
+\[
+ \frac{b_p(N)}{r(N)}
+    =\mu_p+\frac{\langle u_0,T_Nu_0\rangle}{\mu_pD}
+    \le\mu_p+
+       \frac{c_e\tau(m)\sqrt m\,\mu_p(1-\mu_p)}
+            {\mu_pc_e\sigma(m)} .
+\]
+Thus the dyadic determinant eigenvalue contributes no term, and,
+for \(p\nmid N\),
 \[
  \frac{b_p(N)}{r(N)}
        \le\mu_p+E(m)(1-\mu_p),

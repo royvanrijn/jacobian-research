@@ -140,7 +140,7 @@ level \(q,7\) they are
 \]
 Here \(\chi_q\) is the determinant square character and \(\chi_7\)
 the residue-field norm square character. These are the complete
-character constituents. Reduced norms of maximal units give all
+one-dimensional **global automorphic** constituents. Reduced norms of maximal units give all
 units away from the auxiliary levels, while the reduction kernels
 and central scalars leave only the two local square-class choices.
 Rational reduced norms are all positive rationals by the
@@ -149,6 +149,37 @@ group at a split place excludes additional constituents that are
 characters at such a place. This is the explicit single- and
 two-level extension of the argument in the
 [retained spectral proof](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex).
+
+For precision, this exclusion concerns the full smooth local factor
+\(\pi_\ell\) at a split finite place, rather than its finite-dimensional
+space of level-fixed vectors. If \(\pi_\ell\) is finite-dimensional,
+the intersection of the stabilizers of a basis is an open normal
+kernel. Conjugating small upper and lower unipotents by diagonal
+matrices then puts all of \(\mathrm{SL}_2(\mathbb Q_\ell)\) in the
+kernel. Given a vector \(f\), \(x\in B^\times(\mathbb A_f)\), and
+\(h\in B^1(\mathbb A_f)\), norm-one strong approximation with
+\(S=\{\infty,\ell\}\) supplies \(\gamma\in B^1(\mathbb Q)\) such that
+\(k=x^{-1}\gamma^{-1}xh\) lies in the right stabilizer of \(f\) away
+from \(\ell\). At \(\ell\), \(k\) has norm one and acts trivially.
+Thus \(f(xh)=f(\gamma xk)=f(x)\). The trivial infinite type supplies
+archimedean invariance, so the constituent factors through reduced
+norm and is one of the global characters just listed. This verifies
+the split-place hypothesis of Jacquet--Langlands Theorem 14.4 for
+every remaining constituent.
+
+Characters of the finite right action need not be global norm
+characters. Already \(\Gamma\backslash G_7\simeq C_4\) has two
+quartic characters. The norm-two shell has eight pure-component
+points, all reducing to \(\Gamma\), and four mixed points
+\(\pm1\pm j\), all reducing to \(h=[1+j]\). Since
+\((1+j)^2=2j\) and \(h\ne1\), \(h\) has order two, and (M7.8) gives
+\[
+                   T_2=2I+R_h,\qquad
+                   \operatorname{Spec}(T_2)=\{3,3,1,1\}.
+\]
+Both global norm characters take \(h\) to \(1\), since
+\((2/7)=1\). The quartic finite characters take \(h\) to \(-1\)
+and have eigenvalue \(1\); they remain in the Ramanujan complement.
 
 On the complement of those norm characters,
 \[
