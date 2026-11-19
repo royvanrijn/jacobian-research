@@ -1,5 +1,7 @@
 # Prime Knots with Augmentation-Rank Gaps at Unbounded Bridge Number
 
+**Published preprint · [Hexagon v1](https://hexagonmath.org/2611.00595v1) · 19 November 2026 · [Deposited files](published/)**
+
 Explicit braid families have complex augmentation rank at most \(b-1\) and
 meridional rank and bridge number equal to \(b\) for every \(b\ge5\).
 Each family contains infinitely many hyperbolic prime knot types for

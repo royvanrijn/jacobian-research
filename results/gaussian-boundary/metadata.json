@@ -6,12 +6,7 @@
   },
   "summary": "Determines the complex Gaussian dimension-degree boundary and proves the sharp ternary-cubic mixed-moment cutoff.",
   "published": false,
-  "status": "submission-pending",
-  "submission": {
-    "venue": "Hexagon",
-    "reserved_identifier": "hexagon:2611.00596v1",
-    "updated_on": "2026-11-18"
-  },
+  "status": "ready-for-review",
   "source": "manuscript.tex",
   "pdf": "manuscript.pdf",
   "build": "../../.venv/bin/python verify.py --build --refresh",
@@ -29,5 +24,7 @@
     "type": "publication",
     "subtype": "preprint"
   },
-  "source_bundle": "source.zip"
+  "source_bundle": "source.zip",
+  "published_edition": "published/",
+  "hexagon": "https://hexagonmath.org/2611.00596v1"
 }

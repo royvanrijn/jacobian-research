@@ -234,6 +234,52 @@ class CurrentAndDepositedEditionTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "deposit record mismatch"):
             research.check_portfolio()
 
+    def make_hexagon_deposit(self):
+        self.deposited_meta.pop("doi")
+        self.deposited_meta.pop("zenodo")
+        self.deposited_meta["hexagon"] = "https://hexagonmath.org/2611.00596v1"
+        self.seal["record"] = self.deposited_meta["hexagon"]
+        self.write_json(self.deposited / "metadata.json", self.deposited_meta)
+        self.write_json(self.deposited / "deposited-files.json", self.seal)
+
+    def test_hexagon_deposit_without_a_zenodo_doi_is_accepted(self):
+        self.make_hexagon_deposit()
+        self.assertEqual(research.check_portfolio(), (1, 1))
+
+    def test_hexagon_deposit_requires_an_exact_versioned_record(self):
+        self.make_hexagon_deposit()
+        for record in (
+            "https://hexagonmath.org/2611.00596",
+            "https://hexagonmath.org/2611.00596v0",
+            "https://example.com/2611.00596v1",
+            "https://hexagonmath.org/2611.00596v1/other",
+        ):
+            with self.subTest(record=record):
+                self.deposited_meta["hexagon"] = record
+                self.write_json(self.deposited / "metadata.json", self.deposited_meta)
+                with self.assertRaisesRegex(AssertionError, "invalid versioned Hexagon"):
+                    research.check_portfolio()
+
+    def test_hexagon_seal_must_identify_the_same_version(self):
+        self.make_hexagon_deposit()
+        self.seal["record"] = "https://hexagonmath.org/2611.00596v2"
+        self.write_json(self.deposited / "deposited-files.json", self.seal)
+        with self.assertRaisesRegex(AssertionError, "deposit record mismatch"):
+            research.check_portfolio()
+
+    def test_hexagon_deposited_files_remain_sealed(self):
+        self.make_hexagon_deposit()
+        (self.deposited / "paper.pdf").write_bytes(b"%PDF-changed")
+        with self.assertRaisesRegex(AssertionError, "deposit SHA mismatch"):
+            research.check_portfolio()
+
+    def test_hexagon_link_does_not_bypass_zenodo_doi_validation(self):
+        self.deposited_meta.update(
+            doi="invalid-doi", hexagon="https://hexagonmath.org/2611.00596v1")
+        self.write_json(self.deposited / "metadata.json", self.deposited_meta)
+        with self.assertRaises(AssertionError):
+            research.check_portfolio()
+
     def test_deposited_pdf_must_be_sealed(self):
         self.seal["files"] = [item for item in self.seal["files"] if item["file"] != "paper.pdf"]
         self.write_json(self.deposited / "deposited-files.json", self.seal)

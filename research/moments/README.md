@@ -9,7 +9,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
 | Published GVC, GMC and Image results | Published preprints | proved | [Source](../../results/README.md) |
-| Gaussian dimension-degree boundary | Under review at Hexagon | proved | [Source](../../results/gaussian-boundary/README.md) |
+| Gaussian dimension-degree boundary | Published preprints | proved | [Source](../../results/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
 | All-degree Gaussian structure and safety gap | Internal result | proved | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
 | Exact multibase Gaussian generic marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md) |

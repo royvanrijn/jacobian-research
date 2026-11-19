@@ -6,12 +6,7 @@
   },
   "summary": "Two-sided bounds of order H J(n)/log n for distinct Eisenstein restricted-prime sums in prescribed windows, uniformly at each sufficiently large admissible target and in either mixed orientation.",
   "published": false,
-  "status": "submission-pending",
-  "submission": {
-    "venue": "Hexagon",
-    "reserved_identifier": "hexagon:2611.00593v1",
-    "updated_on": "2026-11-18"
-  },
+  "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
@@ -26,5 +21,7 @@
     "Obtain external review of the singular local elimination and lower sieve.",
     "Continue the historical priority review beyond the checked Gaussian, Frobenian-correlation and half-dimensional-sieve results."
   ],
-  "catalogued_on": "2026-11-18"
+  "catalogued_on": "2026-11-18",
+  "published_edition": "published/",
+  "hexagon": "https://hexagonmath.org/2611.00593v1"
 }

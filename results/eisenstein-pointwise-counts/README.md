@@ -1,5 +1,7 @@
 # Pointwise representation counts for Eisenstein restricted sums
 
+**Published preprint · [Hexagon v1](https://hexagonmath.org/2611.00593v1) · 19 November 2026 · [Deposited files](published/)**
+
 For every sufficiently large admissible \(n\), the number of distinct ordered
 Eisenstein restricted-prime decompositions in a prescribed summand interval
 has order \(HJ(n)/\log n\) under the stated window condition. The bounds cover

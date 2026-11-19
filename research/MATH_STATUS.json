@@ -34856,7 +34856,7 @@
         "sources": [
           {
             "path": "../results/gaussian-boundary/metadata.json",
-            "sha256": "fde5a8f09e640fc355cd28f7c2eda07dedcc858441ec38d47fbee1d32fddac17",
+            "sha256": "9176cd4b8fa5966f3c646ce3b31d2677511a32718846a70122f9d7aa9f940f39",
             "locator": "next_steps[0]"
           }
         ],
@@ -34877,7 +34877,7 @@
         "sources": [
           {
             "path": "../results/gaussian-boundary/metadata.json",
-            "sha256": "fde5a8f09e640fc355cd28f7c2eda07dedcc858441ec38d47fbee1d32fddac17",
+            "sha256": "9176cd4b8fa5966f3c646ce3b31d2677511a32718846a70122f9d7aa9f940f39",
             "locator": "next_steps[1]"
           }
         ],
@@ -173830,7 +173830,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Retained collection/tooling information; it asserts no independent mathematical result.",
-          "sha256": "0f508d98b189ee5e799b5674b29db7bb147fea56c6e49e304b485fdcc9466da9"
+          "sha256": "82ead9b4900dcb27449d4dafe2a2a839b959e18261b837bcce2d6d7b8ddf807d"
         },
         {
           "path": "../results/gaussian-moments-two-variables/README.md",
@@ -176846,7 +176846,7 @@
           "statements": [],
           "role": "scope",
           "explanation": "Current scope, literature or verification description associated with the named results and obligations.",
-          "sha256": "46400a43082526781e97d0a9c0571d1a1bc651e5fed78c35328c8439c34ff2d2"
+          "sha256": "2d329beb76368704a35fd27b90edd23e9b0926408cc4b071942dc1c25bb8b859"
         },
         {
           "path": "../results/gaussian-boundary/affine_classification_proof.tex",
@@ -177575,7 +177575,7 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Retained input, checker, certificate, metadata or build artifact associated with these claims; this mapping does not upgrade its verification scope.",
-          "sha256": "fde5a8f09e640fc355cd28f7c2eda07dedcc858441ec38d47fbee1d32fddac17"
+          "sha256": "9176cd4b8fa5966f3c646ce3b31d2677511a32718846a70122f9d7aa9f940f39"
         },
         {
           "path": "../results/gaussian-boundary/mixed_formal_exclusion.tex",
@@ -248568,7 +248568,7 @@
         },
         {
           "path": "../results/prime-knot-augmentation-gaps/README.md",
-          "sha256": "da6e2b36ac3b6a5d0a494311d1c9fb1de05b138847176a7b5579d57119429569",
+          "sha256": "551a2d1f8a9643f2754fe3f4d1d695803013ac25d3f5fd1c922df44cf2663f45",
           "role": "scope",
           "claims": [
             "MRC-UNBOUNDED-PRIME-AUGMENTATION-GAP-FAMILIES",
@@ -248720,7 +248720,7 @@
         },
         {
           "path": "../results/prime-knot-augmentation-gaps/metadata.json",
-          "sha256": "cd233e2eb83b438156a807db83e93c8b4acfb4ef49efe48418b3d50b06c8ff16",
+          "sha256": "43af064eaab1aa60c8b474d6b9ee0e3db57a0574c76bcd23888b3d57ff883d44",
           "role": "scope",
           "claims": [
             "MRC-UNBOUNDED-PRIME-AUGMENTATION-GAP-FAMILIES",
@@ -248864,7 +248864,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Manuscript scope and build instructions.",
-          "sha256": "bfcf5ab8860c7602f3b4bbecb9398a30334a85ba97d18b639d2346c83b00b096"
+          "sha256": "1e5db32e7d86bd8ecfb5f59fbe27702cdecf9a4d082698022a85e1afa043d633"
         },
         {
           "path": "../results/eisenstein-pointwise-counts/metadata.json",
@@ -248878,7 +248878,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Current title, abstract and review status.",
-          "sha256": "4c7bde30899318065f6704c4c9b41da52847e5f50ae254e6c999b3b243d19f58"
+          "sha256": "1bab60ce916d9d32662816a051087a3834bdf551c5abaf8443c3cadc1a737ecd"
         },
         {
           "path": "../results/eisenstein-pointwise-counts/main.tex",

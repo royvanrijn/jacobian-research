@@ -1,5 +1,7 @@
 # The Dimension-Degree Boundary for Gaussian Moment Vanishing
 
+**Published preprint · [Hexagon v1](https://hexagonmath.org/2611.00596v1) · 19 November 2026 · [Deposited files](published/)**
+
 Classifies pure complex ternary cubics and gives the sharp mixed-moment cutoff
 \(m>3\deg Q\). Together with Wilson's binary theorem, Liu's quadratic theorem
 and Long's two minimal counterexamples, this gives the exact universal

@@ -335,8 +335,15 @@ def check_deposited_edition(path: Path) -> None:
     assert meta["author"]["name"]
     assert re.fullmatch(r"\d{4}-\d{4}-\d{4}-[\dX]{4}", meta["author"]["orcid"])
     assert meta["status"] == "published-preprint", f"archive is not a deposited edition: {path}"
-    assert re.fullmatch(r"10\.5281/zenodo\.\d+", meta["doi"])
-    assert meta["zenodo"].startswith("https://zenodo.org/records/")
+    if "zenodo" in meta:
+        assert re.fullmatch(r"10\.5281/zenodo\.\d+", meta["doi"])
+        assert meta["zenodo"].startswith("https://zenodo.org/records/")
+        record = meta["zenodo"]
+    else:
+        record = meta.get("hexagon")
+        assert isinstance(record, str) and re.fullmatch(
+            r"https://hexagonmath\.org/(?:abs/)?\d{4}\.\d{5}v[1-9]\d*", record), (
+                f"invalid versioned Hexagon publication record: {path}")
     assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", meta["publication_date"])
     reference("README.md", path.parent)
     reference(meta["source"], path.parent)
@@ -347,7 +354,7 @@ def check_deposited_edition(path: Path) -> None:
         if meta.get(field):
             reference(meta[field], path.parent, directory=True)
     seal = json.loads(reference("deposited-files.json", path.parent).read_text())
-    assert seal["record"] == meta["zenodo"], f"deposit record mismatch: {path.parent}"
+    assert seal["record"] == record, f"deposit record mismatch: {path.parent}"
     sealed_names = set()
     for item in seal["files"]:
         contents = reference(item["file"], path.parent).read_bytes()

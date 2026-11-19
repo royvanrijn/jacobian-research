@@ -1,0 +1,31 @@
+{
+  "title": "The Dimension-Degree Boundary for Gaussian Moment Vanishing",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Determines the complex Gaussian dimension-degree boundary and proves the sharp ternary-cubic mixed-moment cutoff.",
+  "status": "published-preprint",
+  "publication_date": "2026-11-19",
+  "hexagon": "https://hexagonmath.org/2611.00596v1",
+  "license": "CC-BY-4.0",
+  "pdf": "paper.pdf",
+  "source": "source.zip",
+  "source_bundle": "source.zip",
+  "verification": {
+    "scope": "Internal proof, source and layout checks are recorded. Independent mathematical review remains pending.",
+    "limits": "Publication does not establish independent replay, formal verification or external mathematical review. The verification record retains its stated scopes and open obligations.",
+    "evidence": [
+      "../verification.json"
+    ]
+  },
+  "publication_record_checked": "2026-11-19",
+  "current_edition": "../",
+  "abstract": "We classify complex polynomials of degree at most three in three independent standard real Gaussian variables whose positive moments all vanish. Up to a complex orthogonal linear change of coordinates and a nonzero scalar, every such polynomial has one-sided circular support or belongs to a single exceptional orbit. For every fixed polynomial $Q$, its mixed moments $\\mathbb E[QP^m]$ vanish whenever $m>3\\deg Q$, and the coefficient three is optimal. The proof extracts a Gaussian coordinate in which the polynomial is affine linear, then classifies that family using formal stationary frames and analytic period estimates.\n\nCombining this ternary-cubic result with Wilson's two-variable theorem, Liu's quadratic theorem and Long's counterexamples gives the exact dimension-degree boundary for the Gaussian Moments Conjecture: the implication from pure-moment vanishing to eventual mixed-moment vanishing holds universally precisely when there are at most two variables, the degree is at most two, or there are three variables and the degree is at most three. We reproduce the all-order moment identities for the two minimal failures.",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}
