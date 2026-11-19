@@ -485,7 +485,7 @@
         "FACT-ORDINARY-QUINTIC-COMMON-ROOT-FIVE-ADIC-RADIUS"
       ],
       "scope": "For every integer m>=1, set B=B_(m,2m+1,3), C=B_(m+1,2m+1,3), D=B_(m+2,2m+1,3), and H=5(5m+4)D+3z^3B. A rank drop of the two three-section rows (C,H) at a nonzero cyclic argument u=z^3 over the algebraic closure of Q5 necessarily satisfies v5(u)>3/5. The valuation is normalized by v5(5)=1. The unit region, negative valuations, the entire open annulus 0<v5(u)<3/5, and its boundary v5(u)=3/5 are excluded uniformly in m.",
-      "ordinary_rank_bridge": "For every integer N>=2, any common root t of T_(N-1,2N-1,3) and T_(N,2N+1,3) must satisfy v5(1/t)>3/5 under every five-adic embedding of its algebraic number field. Here t!=0 because both moments have constant term1. This is a necessary condition, not a proof of noncollision inside that region. In particular it narrows the still-open ordinary support{2,5} ray N>=11,N2mod9.",
+      "ordinary_rank_bridge": "For every integer N>=2, any common root t of T_(N-1,2N-1,3) and T_(N,2N+1,3) must satisfy v5(1/t)>3/5 under every five-adic embedding of its algebraic number field. Here t!=0 because both moments have constant term1. This is a necessary condition, not a proof of noncollision inside that region. It narrowed the former ordinary support{2,5} ray N>=11,N2mod9, which QUINTIC_SCALAR_MINOR_SFC now closes.",
       "mechanism": "Exact physical auxiliary generating functions and all15 residue flags; two additional cancellation flags; all-index associated Bessel reduction and period5; strict weighted wedge comparison; factorial-block boundary reduction to exactly25 profiles and literal polynomial Bezout identities overF5.",
       "retained_evidence": [
         "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
@@ -500,7 +500,7 @@
         "factorial/image-rigidity/arithmetic_frontier_quintic_boundary_profiles.json": "6b30c55de2c9df70885e77a8137e33b35b173c30b226f7b6f3233c8d8f93b838"
       },
       "all_terminal_quintic_SFC": false,
-      "open_region": "v5(u)>3/5, u=1/t; support{2,5}, N>=11,N11mod27 remains open",
+      "open_region": "The stronger five-adic noncollision question at v5(u)>3/5, u=1/t, remains open. QUINTIC_SCALAR_MINOR_SFC closes the ordinary support{2,5} ray N>=11,N11mod27.",
       "finite_prefix_extrapolation": false,
       "boundary_profiles_exhaust_all_integer_indices": true,
       "verification": "The quintic five-adic radius proof was audited internally: all fifteen generating-function flags, the two further flags, the all-index Bessel-period/unit-argument argument, strict annular wedge dominance, and the complete boundary reduction were checked. Boundary coverage is a proved reduction to the 25 states (m mod5, floor(m/5) mod5), using the factorial-block congruence, vanishing for k>=5, and only four series coefficients. The current matching receipt checks all 25 literal Bezout identities, 25 separately reconstructed actual auxiliary profiles, 1165 factorial-block controls and corruption rejection. These finite identities exhaust the boundary cases by the written reduction; no finite-prefix extrapolation is used. The default replay, all input pins and two-pass 21-page LaTeX build passed internally. No independent replay, external review, formal verification, novelty or all-terminal quintic SFC is claimed.",
@@ -511,7 +511,7 @@
       "current_quintic_terminal_domain": "N>=11,N11mod27",
       "current_refinement_source": {
         "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
-        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "sha256": "ddce53a180592593ce4b1dce710a8a601efcac6d926869f90bfda73ce1ecd139",
         "locator": "cor:degree-five-ray",
         "role": "context"
       }
@@ -570,7 +570,7 @@
       "current_quintic_terminal_domain": "N>=11,N11mod27",
       "current_refinement_source": {
         "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
-        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "sha256": "ddce53a180592593ce4b1dce710a8a601efcac6d926869f90bfda73ce1ecd139",
         "locator": "cor:degree-five-ray",
         "role": "context"
       }
@@ -606,7 +606,7 @@
       "current_quintic_terminal_domain": "N>=11,N11mod27",
       "current_refinement_source": {
         "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
-        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "sha256": "ddce53a180592593ce4b1dce710a8a601efcac6d926869f90bfda73ce1ecd139",
         "locator": "cor:degree-five-ray",
         "role": "context"
       }
@@ -679,7 +679,7 @@
     "binomial_residual_arithmetic": {
       "canonical_source": "factorial/image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex",
       "source_sha256": {
-        "factorial/image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex": "514a0c25706d3167a4c2fc2aefc61b14a173de5246b5d7a098fdfed49b319e4c",
+        "factorial/image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex": "bcebf733bc9bda2afd13ccd2f6ac93f5269d870317bbcebbe395b770a96e642a",
         "factorial/image-rigidity/binomial_residual_lifting.py": "4a3fe2ee754744c981f0a969d82592ea037a5cc8af92a6e912fc1b58e8d36ac6",
         "factorial/image-rigidity/binomial_residual_lifting_n64_certificate.json": "39ac10bb7e71b8874dfcdd3db60fd84beafe9cbf96eccebad4a943fda8bf57b3",
         "factorial/image-rigidity/binomial_residual_lifting_verification.json": "93a4a30196bdc9551c001a034ff126de25a93526c8102214cbbb96d42769f5b6"
@@ -716,7 +716,7 @@
       "current_quintic_terminal_domain": "N>=11,N11mod27",
       "current_refinement_source": {
         "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
-        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "sha256": "ddce53a180592593ce4b1dce710a8a601efcac6d926869f90bfda73ce1ecd139",
         "locator": "cor:degree-five-ray",
         "role": "context"
       }
@@ -813,12 +813,12 @@
       "checker": "factorial/image-rigidity/quintic_three_adic_parity_reduction.py",
       "receipt": "factorial/image-rigidity/quintic_three_adic_parity_reduction_verification.json",
       "source_sha256": {
-        "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex": "ddce53a180592593ce4b1dce710a8a601efcac6d926869f90bfda73ce1ecd139",
         "factorial/image-rigidity/quintic_three_adic_parity_reduction.py": "49efd55890be657006f13458ff1af1ce6e2c6620331df2960fc19e2afb1dda7f",
         "factorial/image-rigidity/quintic_three_adic_parity_reduction_verification.json": "7be10448f1e0d96bfca6629679f1cf1ee647bff8dab041b993b9c5e457c1f9a0",
         "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
       },
-      "scope": "For ordinary support{2,5}, P_n(t)=sum binom(n,k)(2n+1)_(3k)t^k, the consecutive pair is coprime for every integer n>=1,n not10mod27, equivalently terminal N>=2,N not11mod27. Exact mixed-adjoint balance forces common roots to have v3(t)=1-v3(5n+4), with a specified maximal-ideal residue. When v3(5n+4)=2 the lower Newton cluster has one root and real parity forbids a rational common factor. All ordinary degree<=5 binomial SFC reduces exactly to N>=11,N11mod27, still open. For n=2^(12s+6) the pair is excluded for s1,2mod3. The retained physical three-adic common indices tau_star,m_star=1+27tau_star are not nonnegative ordinary integers. No irrationality, transcendence or negative-integer exclusion is asserted. Five-adic index questions and unrestricted FC/SFC remain open.",
+      "scope": "For ordinary support{2,5}, P_n(t)=sum binom(n,k)(2n+1)_(3k)t^k, the consecutive pair is coprime for every integer n>=1,n not10mod27, equivalently terminal N>=2,N not11mod27. Exact mixed-adjoint balance forces common roots to have v3(t)=1-v3(5n+4), with a specified maximal-ideal residue. When v3(5n+4)=2 the lower Newton cluster has one root and real parity forbids a rational common factor. This result reduces ordinary degree<=5 binomial SFC to N>=11,N11mod27. QUINTIC_SCALAR_MINOR_SFC closes that progression and proves ordinary support{2,5} at all indices. For n=2^(12s+6) the pair is excluded for s1,2mod3. The retained physical three-adic common indices tau_star,m_star=1+27tau_star are not nonnegative ordinary integers. No irrationality, transcendence or negative-integer exclusion is asserted. Five-adic index questions and unrestricted FC/SFC remain open.",
       "exact_claims": {
         "lem:mixed-input": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-LEM-MIXED-INPUT",
         "lem:balance": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-LEM-BALANCE",
@@ -854,7 +854,7 @@
       "interpolation_consequence": "The new cor:interpolated-index proves neither tau_star nor m_star=1+27tau_star of the physical three-adic interpolation is a NONNEGATIVE ordinary integer, using exact finite-series termination and the ordinary parity theorem. No irrationality, transcendence or negative-integer exclusion is claimed. The separate five-adic analytic-index questions remain open.",
       "old_eight_ninths_claims_preserved": true,
       "broad_no_carry_counterfamily_preserved": true,
-      "verification": "Complete written balance, width-one Newton and real-parity proof audited internally; exact mixed-adjoint equivalence and three-adic transfer use the pinned lower-exponent source. Replay checks4 symbolic Ore coefficients,2 gauge-stripped identities,6 reduced gamma/parity states,18 eta-rank states,107 literal coefficient/block identities,4 bounded gcd controls,3 exponent-period states and1 outside-hypothesis control. These145 controls support formulas; all-index quantifiers have written proofs. Seven exact declarations mapped. No independent whole-proof replay, formal verification, external review, novelty or priority. Full quintic and unrestricted FC/SFC remain open.",
+      "verification": "Complete written balance, width-one Newton and real-parity proof audited internally; exact mixed-adjoint equivalence and three-adic transfer use the pinned lower-exponent source. Replay checks4 symbolic Ore coefficients,2 gauge-stripped identities,6 reduced gamma/parity states,18 eta-rank states,107 literal coefficient/block identities,4 bounded gcd controls,3 exponent-period states and1 outside-hypothesis control. These145 controls support formulas; all-index quantifiers have written proofs. Seven exact declarations mapped. No independent whole-proof replay, formal verification, external review, novelty or priority. QUINTIC_SCALAR_MINOR_SFC completes ordinary quintic binomial SFC. Unrestricted FC/SFC remains open.",
       "all_terminal_quintic_SFC": false,
       "independent_replay": false,
       "formal_verification": false,
@@ -1220,13 +1220,13 @@
       "assessment": "Written proofs and exact applications were audited internally within their stated domains. Current internal receipts and clean two-pass builds were inspected. Universal claims rely on written algebraic, valuation and descent proofs, not finite controls. No independent whole-proof replay, formal verification, external review, priority or novelty claim. Dependency coverage remains partial."
     },
     "ordinary_degree_seven_residue_frontier": {
-      "scope": "Ordinary binomial SFC through degree six is complete. Support {4,7} is proved at every positive pair. The exact degree-seven residual tests, all with terminal N>=6, are support {1,7} at all N; support {3,7} only N14,46,55 mod64; support {5,7} only N12,14 mod16. For {5,7}, every nonconstant rational gcd is an irreducible quadratic of negative discriminant. These residual tests, all-degree binomial SFC, unrestricted FC/SFC, full H3 positivity and stronger optional method gaps remain open.",
+      "scope": "Ordinary binomial SFC through degree six is complete. Support {4,7} is proved at every positive pair. The exact degree-seven residual tests, all with terminal N>=6, are support {1,7} at all N; support {3,7} only N14,46,55 mod64; support {5,7} only N12,14 mod16. For {5,7}, every nonconstant rational gcd is an irreducible quadratic of negative discriminant. This is the historical reduction. The Frobenius and sector arguments close {3,7} and {5,7}. PHYSICAL_PRIME_ANALYTIC_INTERPOLATION leaves only {1,7} at N>=530 outside the proved native, shifted-native and digit families. That residual, all-degree binomial SFC, unrestricted FC/SFC, full H3 positivity and stronger optional method gaps remain open.",
       "packages": {
         "LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION": {
           "canonical_source": "factorial/image-rigidity/LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex",
           "checker": "factorial/image-rigidity/lower_three_fourth_power_residue_reduction.py",
           "receipt": "factorial/image-rigidity/lower_three_fourth_power_residue_reduction_verification.json",
-          "scope": "Exact actual offset-three, gap-four mixed matrix. In the stated second-stage class, a boundary-degree collision requires v(Q0)=1 and rigid reduction; quantitative unit-basis estimates force the actual relation coefficient a2 into2O. Ordinary support {3,7} is coprime at every terminal outside N14,46,55 mod64. All three residual progressions and arbitrary positive Gamma shapes are not closed.",
+          "scope": "Exact actual offset-three, gap-four mixed matrix. In the stated second-stage class, a boundary-degree collision requires v(Q0)=1 and rigid reduction; quantitative unit-basis estimates force the actual relation coefficient a2 into2O. Ordinary support {3,7} is coprime at every terminal outside N14,46,55 mod64. LOWER_THREE_FOURTH_POWER_FROBENIUS_SFC closes the three ordinary residual progressions. Arbitrary positive Gamma shapes remain a separate open problem.",
           "declarations": {
             "lem:mixed-matrix": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-MIXED-MATRIX",
             "thm:fourteen-sixteenths": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-THM-FOURTEEN-SIXTEENTHS",

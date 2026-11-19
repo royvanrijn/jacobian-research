@@ -17,8 +17,8 @@ A*gamma+B=0. In particular the ENTIRE degree-D=24 class, whose
 ledger has one support of slope five, admits only that critical
 leading alternative. The companion-dependent noncritical ratio
 of PF178 is excluded there. The subsequent [quartic pole-budget theorem](RULING_SIX_DEGREE24_CRITICAL_QUARTIC_POLE_BUDGET_EXCLUSION.md)
-excludes the entire degree-24 class. Larger-degree critical balanced
-cases and full ruling six remain open.
+excludes the entire degree-24 class. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the larger-degree
+critical balanced cases as part of the retained marked quadratic class.
 
 ## 1. Exact source hypotheses and scaling
 
@@ -247,8 +247,8 @@ The allowed local orders remain
 but all now satisfy the critical alternative (18). The deeper
 quadratic cluster can have cancellations and nonconstant first
 responses. Its complete degree-24 exclusion uses the additional
-pole-budget argument of PF180. The larger-slope balanced branch
-and full ruling six remain open.
+pole-budget argument of PF180. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) also excludes the larger-slope
+balanced branch in the retained marked quadratic model.
 
 ## 6. Exact controls and assurance
 

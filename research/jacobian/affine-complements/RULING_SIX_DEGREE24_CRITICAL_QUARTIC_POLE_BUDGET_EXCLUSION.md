@@ -14,9 +14,9 @@ this gives the new necessary bounds
     D>=30, [C(u,w):C(P,Q)]>=6,
     [C(x,t):C(P,Q)]>=12.                                 (1)
 
-These are necessary bounds, not a closure of ruling six. The
-remaining balanced quadratic branch at larger D and HC4/JC2
-remain open.
+The larger-D bounds are necessary conditions. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the balanced
+quadratic branch at larger D in the retained marked quadratic model.
+HC4/JC2 remain open.
 
 ## 1. The complete degree-24 ledger
 

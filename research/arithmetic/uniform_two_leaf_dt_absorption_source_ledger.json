@@ -72,7 +72,7 @@
     },
     {
       "path": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
-      "sha256": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+      "sha256": "5e86485feb82ba8baa2b8a9fd3e1fa51b9f68c24190e27a643c18a050accf703",
       "locator": "Leaf deletion and product identity",
       "role": "Deleting any chosen leaf omits that sheet from the full cycle."
     },

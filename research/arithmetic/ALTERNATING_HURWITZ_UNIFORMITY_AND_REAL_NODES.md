@@ -8,11 +8,12 @@ finite algebraic description, together with a composition obstruction and
 uniform restrictions on real fibres. In degree eight it contains an infinite
 rational family with the maximum four real collinear ordinary nodes.
 
-Uniform rational existence in the admissible degrees 26, 50, 82, ... remains
-open here, as do complex braid connectivity starting in degree fourteen and
-unirationality of the Hurwitz spaces. The separate
-[degree-twelve theorem](DEGREE_TWELVE_HURWITZ_ORBIT.md) now proves one
-absolute full-A12 orbit. The [matching-walk theorem](REAL_PAIRED_LAURENT_MATCHING_WALKS.md)
+Uniform rational existence in the admissible degrees 26, 50, 82, ... and
+unirationality of the Hurwitz spaces remain open. The separate
+[degree-twelve](DEGREE_TWELVE_HURWITZ_ORBIT.md) and
+[degree-fourteen](DEGREE_FOURTEEN_HURWITZ_ORBIT.md) theorems each prove
+one absolute full-alternating orbit. Degree sixteen and uniform complex
+braid connectivity remain open. The [matching-walk theorem](REAL_PAIRED_LAURENT_MATCHING_WALKS.md)
 now gives uniform real-algebraic existence, classifies the all-real chambers
 and determines their complete real-root spectra. Rational points in those
 chambers remain a separate arithmetic problem.
@@ -492,7 +493,7 @@ primitive double-transposition theorem. All verification and checking
 reported here are internal; no formal verification, external human
 review or independent external replay is claimed.
 
-The smallest unresolved complex Hurwitz case is n=14,b=7. The next
+The smallest unresolved absolute full-alternating braid case is n=16,b=8. The next
 admissible rational literal-square degree is n=26,b=13. Degree twelve
 is the first remaining rational real-node construction after degrees
 eight and ten if a constant nonsquare discriminant factor is allowed;

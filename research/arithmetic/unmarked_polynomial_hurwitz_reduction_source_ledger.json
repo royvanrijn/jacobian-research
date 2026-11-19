@@ -28,7 +28,7 @@
   "imported_inputs": [
     {
       "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
-      "sha256": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa",
+      "sha256": "3479790b2a1c3967e41c5baa9ad49e0893d9393a8f67e933c31a6e70e4f49dfe",
       "locator": "jones-primitive-cycle; Theorem1.1 (Jordan)",
       "primary_url": "https://arxiv.org/pdf/1209.5169v1",
       "retained_pdf": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
@@ -36,7 +36,7 @@
     },
     {
       "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
-      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "sha256": "4db218ebd4490912fd41237a735fb92dff0d970015283aa0dddfc69a9ebf9033",
       "locator": "Corollaries4-6",
       "role": "Uniform coalescence-type link, marked connectivity criterion and attachment transitivity."
     }

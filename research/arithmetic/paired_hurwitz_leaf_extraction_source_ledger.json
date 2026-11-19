@@ -42,13 +42,13 @@
     },
     {
       "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
-      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "sha256": "4db218ebd4490912fd41237a735fb92dff0d970015283aa0dddfc69a9ebf9033",
       "locator": "Corollary4 tree-product fact",
       "role": "Deleting exclusive leaves leaves a tree whose edge product is a full cycle."
     },
     {
       "path": "research/arithmetic/verify_unmarked_polynomial_hurwitz_reduction.py",
-      "sha256": "c2a1ff752f6dee310c337625a4be8caf592e09db1f5a2116517bd79f2170e7a6",
+      "sha256": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
       "locator": "permutation primitives",
       "role": "Exact composition, Hurwitz moves and strand-permutation helpers; hash bound by the new checker."
     }

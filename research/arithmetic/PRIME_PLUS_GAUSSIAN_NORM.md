@@ -6,7 +6,9 @@ is the count \(R(N)=\sum_{p<N}b(N-p)\). Here we evaluate the arithmetic
 model for every target, prove the asymptotic outside a set of at most \(O_A(X(\log X)^{-A})\)
 exceptions per dyadic block, and estimate the target-grid major arcs of the
 Jiang–Lau–Lü mean square under ZF. The all-target minor-arc problem
-is stated in Section 3.
+is formulated in Section 3. The two estimates there are proved in the
+[pointwise continuation](REFLECTED_PRIME_NORM_POINTWISE.md), giving
+the every-target asymptotic under ZF.
 
 Jiang–Lau–Lü, Theorem 1.1, evaluates \(\sum_{p\le x}b(p-1)\)
 with constant \(K\prod_{q\equiv3\ (4)}(1-1/[q(q-1)])\).
@@ -406,7 +408,7 @@ multiplied by \(\mathbb E Z_W\). This bounds the weighted
 variance by \(O_{k_0}(C(T)T/(J L^{3/2}))\). Cauchy–Schwarz and
 (PN.2) give (PN.7).
 
-## 3. Primitivity and the open minor-arc transfer
+## 3. Primitivity and the minor-arc comparison
 
 On the unit-supported comparison, write \(t=cmn-ars\).
 In the determinant kernel the only terms have \(T\mid t\)
@@ -453,7 +455,7 @@ preserves primitivity here, because \((u,T)=1\), and divides
 the determinant by \(T\). It also leaves the first coordinate
 divisibility by bank primes intact.
 
-The remaining mean-square target is
+The mean-square comparison is
 \[
  |Q_Y(T)-Q_Y^{\mathfrak M}(T)|\ll_D XY L^{-D}.
                                                                \tag{PN.8}
@@ -467,12 +469,14 @@ conditions along paths. Rescaling the determinant leaves
 that averaging step to be proved across the projective
 lattices. The proof of (PN.5) estimates the unprojected
 major expression and does not supply (PN.8).
-A full adaptation also needs to complete the reflected
-Type I reduction. The fixed-shift argument in their Section 3
-uses the reduced class \(-1\bmod d\). The class \(T\bmod d\)
-can be nonreduced when \((d,T)>1\).
-The model evaluation in Section 1 determines the candidate
-uniform main term independently of that reduction.
+The reflected Type I reduction also has to handle a moving class.
+The fixed-shift argument in their Section 3 uses the reduced class
+\(-1\bmod d\), whereas \(T\bmod d\) can be nonreduced.
+The model evaluation in Section 1 determines the same constant
+independently. The [pointwise continuation](REFLECTED_PRIME_NORM_POINTWISE.md)
+counts canonical determinant-\(T\) frames in the physical box,
+proves (PN.8) by the rooted moment transfer, and gives the exact
+gcd reduction for Type I.
 
 ## 4. The coefficient detector and the progression benchmark
 

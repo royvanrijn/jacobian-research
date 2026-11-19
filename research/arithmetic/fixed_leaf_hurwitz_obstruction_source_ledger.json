@@ -24,7 +24,7 @@
   "inputs": [
     {
       "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
-      "sha256": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa",
+      "sha256": "3479790b2a1c3967e41c5baa9ad49e0893d9393a8f67e933c31a6e70e4f49dfe",
       "locator": "jones-primitive-cycle; Theorem1.1 (Jordan)",
       "role": "A primitive group containing the displayed3-cycle with at least3 fixed points contains A_n."
     },
@@ -42,7 +42,7 @@
     },
     {
       "path": "research/arithmetic/verify_unmarked_polynomial_hurwitz_reduction.py",
-      "sha256": "c2a1ff752f6dee310c337625a4be8caf592e09db1f5a2116517bd79f2170e7a6",
+      "sha256": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
       "locator": "permutation and Hurwitz primitives",
       "role": "Composition, inversion, products and elementary moves used by the exact checker."
     }

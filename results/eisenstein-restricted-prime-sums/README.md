@@ -59,10 +59,11 @@ programs, receipts, metadata or build scripts.
 The frozen certificate supplement is hosted externally at
 [commit b854dddcda88](https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip).
 Its SHA256 is 543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332.
-All 32 current certificate files match that archive byte for byte. The
-archive also contains historical TeX and documentation; Appendix A links
-to it for the certificate subtree. The current full research archive
-source.zip remains available for offline inspection. Compiling the article
+The frozen archive also contains the TeX and documentation of that edition.
+Appendix A links to its certificate subtree. The current full research
+archive source.zip contains two source-ledger status updates for
+discriminants -8 and -11. The other 30 certificate files match the frozen
+archive byte for byte. Compiling the article
 does not execute the certificate programs.
 
 Build and check the upload package with:

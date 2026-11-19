@@ -19,7 +19,8 @@ In fact every survivor has the global polynomial normal form
 b3=M*h(u)^2. Its reduced companion s=3k, k odd, has top odd
 coefficient proportional to M^((k-1)/2)*h^k.
 
-The entire remaining A class, trace-integrality and JC2 remain open.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the remaining A class within the retained marked quadratic
+model. Trace integrality and JC2 remain open.
 
 ## 1. Actual setup and imported component theorem
 
@@ -449,4 +450,5 @@ Replay with
 
 No new external classification is imported. Independent whole-proof
 review, formal verification and external human review remain unclaimed.
-Entire ruling-six closure, HC4/JC2 and derivative integrality remain open.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+HC4/JC2 and derivative integrality remain open.

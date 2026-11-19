@@ -293,8 +293,9 @@ with c!=0, proving (1). The leading primitive equation
 has a positive control for these coefficients, so no
 leading-equation contradiction is asserted here.
 
-The remaining slope-seven critical quartics, their pole
-mass and later companion-resonance constraints remain open.
+The slope-seven pole mass and companion-resonance constraints require
+further arguments beyond the ones used here. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) closes the slope-seven
+critical quartics in the retained marked quadratic class.
 No derivative integrality, target landing, trace perfection,
 normal-tail termination, HC4 or JC2 closure is inferred.
 

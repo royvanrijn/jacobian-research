@@ -18,13 +18,13 @@
   "proof_imports": [
     {
       "path": "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
-      "sha256": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+      "sha256": "cde01b4f425c1047221af21f10a188a9250402cbc7a12a37a4e35c7fadcdd55a",
       "locator": "Complete theorem and corollary",
       "role": "Self-contained uniform proof using canonical pair identities, trace square, positivity witness and reflection operator."
     },
     {
       "path": "research/arithmetic/verify_uniform_real_affine_trace_obstruction.py",
-      "sha256": "75dedc95382ce962e80f4b9d2216bfb0f9a84285b4a55fab535f20a89d5f1131",
+      "sha256": "69001ec84b6495887a5a24ea3c3a8483d491b617b5294f08260e199d483580ce",
       "locator": "run and degree_eight_control",
       "role": "Exact finite controls and standalone sharp degree8 boundary verification."
     },
@@ -36,7 +36,7 @@
     },
     {
       "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
-      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "sha256": "28312353157c2354de793ce77d7f3633ab41e954bd36204ebce145e17dfea0b0",
       "locator": "Canonical theta,rho,a and norm identities",
       "role": "Prior critical-algebra notation and provenance; the required identities are rederived in the new proof."
     },

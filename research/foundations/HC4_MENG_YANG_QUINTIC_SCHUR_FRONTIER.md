@@ -324,8 +324,11 @@ The resultant of the quadratic and quartic factors in (4.12) is
 
 Thus the nonzero-\(b\) branch is empty over every characteristic-zero field
 as well. This proves `HC4MYG5K` for the complete
-\(T_{\le2}(y,p,q)\). Broader cubic and quartic trace terms on this chart and
-the other constant-kernel charts remain open.
+\(T_{\le2}(y,p,q)\). The [full quintic exclusion](../jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md)
+(PF156, using the coverage of PF155) also covers the cubic and quartic
+trace terms and the other constant-kernel charts for all graphs of total
+degree at most five over the fixed v2 Meng--Yang parent. Higher graph
+degrees, other parent embeddings and global coverage remain open.
 
 ## References
 

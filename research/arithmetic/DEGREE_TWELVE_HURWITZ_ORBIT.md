@@ -230,8 +230,9 @@ degree-twelve coefficient model.
 The elementary polynomial and tree reductions are uniform, but their
 remaining connectivity step was exhaustively checked here only in
 degree eleven. There is no all-degree transitivity theorem in this note.
-After this result, degree fourteen is the first unresolved even-degree
-full-alternating case in the current sequence.
+The [degree-fourteen theorem](DEGREE_FOURTEEN_HURWITZ_ORBIT.md)
+establishes one absolute full-alternating orbit in degree fourteen.
+Degree sixteen and uniform connectivity remain open.
 
 A local three-block normalization cannot be assumed without proof:
 degree six has distinct full-A6 braid orbits. The proof above instead

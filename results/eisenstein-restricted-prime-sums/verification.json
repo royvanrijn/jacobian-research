@@ -3333,5 +3333,18 @@
       "mathematical_computations_rerun": false,
       "review_assurances_changed": false
     }
+  },
+  "certificate_status_repair": {
+    "scope": "Updated related-result status in the current -8 and -11 source ledgers.",
+    "changed_members": [
+      "README.md",
+      "metadata.json",
+      "verification.json",
+      "certificates/primitive_norm_minus8_source_ledger.json",
+      "certificates/primitive_norm_minus11_source_ledger.json"
+    ],
+    "unchanged_certificate_members": 30,
+    "full_source_bundle": "source.zip",
+    "date": "2026-11-20"
   }
 }

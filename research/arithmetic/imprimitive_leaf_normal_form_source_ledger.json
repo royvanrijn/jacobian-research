@@ -24,7 +24,7 @@
   "inputs": [
     {
       "path": "research/arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md",
-      "sha256": "11419d0d54b5ff6b56019999b4c859bb7e41bfbe974293364fb17d2c64469298",
+      "sha256": "5e86485feb82ba8baa2b8a9fd3e1fa51b9f68c24190e27a643c18a050accf703",
       "locator": "Chosen-leaf deletion; Lemma1",
       "role": "Lower full-cycle tuple and leaf-preserving equivariance."
     },
@@ -36,13 +36,13 @@
     },
     {
       "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
-      "sha256": "cf4fb4825427f73bc32f92d4b5989421a44737bde24ecbf055a7f922476f88fa",
+      "sha256": "3479790b2a1c3967e41c5baa9ad49e0893d9393a8f67e933c31a6e70e4f49dfe",
       "locator": "jones-primitive-cycle; Theorem1.1 (Jordan)",
       "role": "A primitive group containing the explicit3-cycle has full alternating group."
     },
     {
       "path": "research/arithmetic/verify_fixed_leaf_hurwitz_obstruction.py",
-      "sha256": "a904a7f7c9a5e65b6f29178dd50e4d69379aa1e9dbc8cb54a3e1433199762b83",
+      "sha256": "d55180cc988a61cc642cf1f54ed75d513e04b834eb13a93a34b596353a19de56",
       "locator": "Complete degree7 input and deletion helpers",
       "role": "Exact finite domain and sheet-deletion controls."
     },

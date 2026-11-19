@@ -352,8 +352,10 @@ python3 research/arithmetic/verify_primitive_norm_class3_profiles.py \
 
 Internal agents audited the arithmetic, finite profiles and analytic
 transfer separately, and independent internal replays matched the retained
-outputs. For the sharp logarithmic comparison above, a numerical cutoff,
-an unweighted leading constant and historical priority remain unestablished.
+outputs. This sharp logarithmic comparison leaves its numerical onset
+open. The separate [fixed-order pointwise theorem](PRIMITIVE_NORM_BINARY_CORRELATION.md)
+gives an unweighted leading constant under ZF and G. Historical priority
+remains unsettled.
 The [effective all-large companion](PRIMITIVE_NORM_MINUS23_EFFECTIVE.md)
 separately proves existence for every admissible target at least 2^249,
 with an explicit weaker power lower bound for the number of value pairs.

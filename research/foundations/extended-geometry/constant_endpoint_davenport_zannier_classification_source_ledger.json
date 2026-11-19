@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "proof": "CONSTANT_ENDPOINT_DAVENPORT_ZANNIER_CLASSIFICATION.md",
+  "proof_sha256": "025216db689f3318dea140cafe3818eb8de592371d4d31c79ab47a4652f22aa5",
+  "proof_labels": [
+    "CE-DZ",
+    "CE-UnsafeSpectrum",
+    "CE-TreeCount"
+  ],
+  "domain": "Normalized unit-center exact two-height profiles over every characteristic-zero field, every integer a>=0, under the formal constant-endpoint condition Phi=1. This condition is equivalent to purity for even a and only sufficient for odd a. Complete marked DZ-pair iff over the original field; finite weighted-tree and Fuss-Catalan classification over algebraically closed fields, with explicit fixed-field descent obligations.",
+  "retained_resources": [
+    {
+      "retained_path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "graph_source_id": "SRC-HOPF-ALL-START-HEIGHT-SHARP-UNSAFE-DEGREE",
+      "exact_use": "Exact least sphere/radial-primitive balanced degree max(degC+a-1,degD+a+1). General pure-phase rationality is comparison context only; the new Phi1 rationality argument is self-contained."
+    },
+    {
+      "retained_path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "graph_source_id": "SRC-HOPF-ALL-START-HEIGHT-TWO-MARKER-SAFETY",
+      "exact_use": "Exact marked endpoint identity (S2), nonzero kappa at every even m, original radial normalization (S10), and all-height zero-center purity/safety. The new same-Z assertion is proved directly by DVR integrality rather than inferred from the two-marker classification."
+    },
+    {
+      "retained_path": "research/foundations/extended-geometry/sources/stacks_0ALW_finite_type_finite_points.html",
+      "sha256": "c08eaaf13009e0c967d251e2af1a08269c20a5eb90fbdba604dc4d215a707272",
+      "exact_use": "Actual Stacks Lemma10.61.3 Tag0ALW: finite-type field algebra with finite maximal ideals iff finite vector-space dimension. Used only in geometric base-change transfer, not elementary fixed-K DZ iff."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "Fedor Pakovich and Alexander K. Zvonkin",
+      "title": "Minimum Degree of the Difference of Two Polynomials over Q, and Weighted Plane Trees",
+      "identity": "arXiv:1306.4141v1; cover stamp18 June2013; downloaded PDF internal date21 June2018",
+      "url": "https://arxiv.org/pdf/1306.4141v1",
+      "sha256": "123180f13b015d4aaf708375f724e9990cec5161f2c6b1a55167d2a976989e04",
+      "actual_statement_locators": [
+        "Theorem2.24, PDFpage10",
+        "Theorem3.1, PDFpage11",
+        "Proposition2.18, PDFpage9"
+      ],
+      "exact_use": "Extremal degree-difference iff weighted tree; passport existence iff p+q<=N/gcd(parts)+1. The marked simple numerator root makes gcd(parts)=1. Unmarked unitree definability is only sufficient for an unmarked rational model and is not promoted to rational marked-root descent.",
+      "inspected": "Actual downloaded PDF and extracted text; root, arithmetic and moments independently read the stated locators.",
+      "retained_path": "research/foundations/extended-geometry/sources/pakovich-zvonkin-1306.4141v1.pdf"
+    },
+    {
+      "authors": "Fedor Pakovich and Alexander K. Zvonkin",
+      "title": "Minimum Degree of the Difference of Two Polynomials over Q. Part II: Davenport-Zannier pairs",
+      "identity": "arXiv:1509.07973v2; cover stamp24 October2015; downloaded PDF internal date26 October2018",
+      "url": "https://arxiv.org/pdf/1509.07973v2",
+      "sha256": "a5823f65dbc1e6c75b92ad997e934f113632838da3b33d9d10d403b53c50b756",
+      "actual_statement_locators": [
+        "Assumption1.1 and Definition1.2, PDFpage2",
+        "Proposition1.4, PDFpage3"
+      ],
+      "exact_use": "Exact DZ-pair definition, affine/common-scaling equivalence, and bijection with weighted bicolored plane trees. Marking the simple numerator root refines both sides; remaining normalized profile equivalence is x->s*x.",
+      "inspected": "Actual downloaded PDF and extracted text; root, arithmetic and moments independently read the stated locators.",
+      "retained_path": "research/foundations/extended-geometry/sources/pakovich-zvonkin-1509.07973v2.pdf"
+    }
+  ],
+  "classical_context_not_retained_as_proof_input": [
+    {
+      "reference": "Lando-Zvonkin, Graphs on Surfaces and Their Applications (2004), Section2.6.2, equations(2.16)-(2.17), Example2.6.5, printedpp149-150",
+      "url": "https://www-users.cse.umn.edu/~reiner/Classes/Math8680Fall2014Papers/LandoZvonkin.pdf",
+      "exact_use": "Classical antecedent for constructing rational Belyi products with integral residues and constant-numerator logarithmic derivative. Read actual pages; not an imported theorem or a claimed novel construction. Full context-only book need not be copied into retained packet."
+    }
+  ],
+  "self_contained_arguments": [
+    "Phi1 directly forces rational X,u: even a has rational u; odd a uses invariance of uderivative/u against the quadratic sign involution. The general pure-phase rationality theorem is unnecessary for the fixed-field DZ iff.",
+    "Phi=1 forces J=1; nontrivial u has finite nonzero infinity value and u'/u=1/(xP).",
+    "Squarefree P and exact integral residues determine H, zeros/poles and the full marked DZ-pair inverse over K.",
+    "Exact degree (a+2)(r+1), height-zero rigidity, every-r classical star realization and full unsafe spectra.",
+    "A monic equation over the infinity DVR proves every nontrivial Phi=1 phase has the SAME x/Z marker surviving infinitely many even orders.",
+    "Finite passport range r<=N<=1+a(r-1); finite saturated equations over Q transfer the complex classification to every algebraically closed characteristic-zero field.",
+    "Ordered weighted-tree decomposition T=(1+zT)^a and a formal-residue proof give the exact Fuss-Catalan count (1/r)binom(ar,r-1).",
+    "Explicit eta^2=-2 marked-unitree example proves the geometric count cannot be read as a count over Q or R."
+  ],
+  "verification": {
+    "checker": "verify_constant_endpoint_davenport_zannier_classification.py",
+    "checker_sha256": "fa9e72c6c0cad536cbc9c21a1045c7bcbbbe1a5015b83667def5dafbf0fe3f3e",
+    "receipt": "constant_endpoint_davenport_zannier_classification_verification.json",
+    "method": "Stdlib Fraction polynomial/rational arithmetic;75star and6nonstar normalized round trips,186direct angular moments,114fixed-x controls,30explicit weighted-tree counts totaling10195objects, malformed near-DZ and multiplicity guards, exact Q[eta]/(eta^2+2) nonreal-descent identity. Refuses -O. Finite controls do not prove the unrestricted classification. Canonical rebasing also checks75exact source-scale normalizations q=1 and validates all retained proof and primary-source hashes.",
+    "review_status": "Root and two internal agents independently audited the frozen full theorem and primary statements; all three audited the canonical q-normalization addendum. Root checked the Stacks0ALW replacement for the algebraically-closed transfer. All review is internal; no external human review or formal verification claimed.",
+    "independent_tree_census": {
+      "checker": "verify_constant_endpoint_weighted_tree_census.py",
+      "checker_sha256": "fd638bafab21c3b8a37b5d03bb9995dc16f4d10fd067ff5b9d8ad98e7a7743dd",
+      "receipt": "constant_endpoint_weighted_tree_census_verification.json",
+      "method": "Distinct implementation enumerates labelled topological trees through all Prufer words, every rotation system and positive integer edge assignment with the black weighted-degree cap, and quotients labelled outputs by rooted ordered encodings. All20cases a1..4,r1..5 match the exact Fuss-Catalan counts. Does not use the main checker tree recursion. Arithmetic independently read the algorithm and replayed to /tmp/constant_endpoint_weighted_tree_census_arithmetic_review.json; proof and input pins agree."
+    }
+  },
+  "not_claimed": [
+    "No classification of all odd-start pure profiles; Phi=1 is not necessary there.",
+    "No assertion that all geometric trees or all unmarked rational models admit a marked K-rational root.",
+    "No prime-degree exclusion for arbitrary height profiles or arbitrary Image phases.",
+    "No novel star/DZ construction or historical-priority claim.",
+    "No all-order claim inferred from finite moment or tree enumeration controls."
+  ],
+  "web_primary_sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0ALW",
+      "exact_use": "Lemma10.61.3: a nonzero finite-type algebra over a field has finitely many maximal ideals iff its dimension as vector space is finite. Applied to the complex base change of the guarded normalized-pair algebra; basis preservation descends finiteness toQ.",
+      "inspection": "Actual statement and proof read by root; replaces the equivalent Noether-normalization argument in the frozen draft."
+    }
+  ]
+}

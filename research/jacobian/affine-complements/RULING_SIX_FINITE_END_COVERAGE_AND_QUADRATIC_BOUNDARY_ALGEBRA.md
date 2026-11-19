@@ -15,8 +15,8 @@ The subsequent [simple-escape theorem](RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUART
 excludes B, C and the central degree-three alternative; only A and the
 central degree-two residue case remain. The
 [retained-source ledger](RULING_SIX_RETAINED_SOURCE_PACKETS_AND_STRICT_INFINITY_BOUNDS.md)
-supplies the current degree and infinity restrictions.
-The ruling-six class remains open. All primes of the original full
+supplies the degree and infinity restrictions used here.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class. All primes of the original full
 normalization, including P-vertical primes invisible to the generic
 P fibre, remain in scope. Neither generic derivative integrality nor
 normal-tail termination is proved.

@@ -7,7 +7,7 @@
     "jacobian/affine-complements/FIRST_JET_ADMISSIBLE_NONTERMINATION_AND_SECOND_JET_QUOTIENT.md": "2aeab0c34ab6ed48a6b1b2d72e83f7ab5dd03defc4da15448311578ed53ecfa3",
     "jacobian/affine-complements/NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md": "22af4879de40f63f45e5ae609a466493033d1315adeb12fc4454000a46e1bf17",
     "foundations/HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md": "dee6de386fe80628a7a8834ffd9f92512f1b398f633594e27a0c665b80f7a4d7",
-    "foundations/HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md": "5ad429bea081edf5c4a244f7749c6c115f4033761b554091749bfb5fdefd8054"
+    "foundations/HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md": "af39770e40efa6b045eb53f15ea1b0c816e2a611ff44d94024058207d0c0a2b9"
   },
   "certificate_sha256": {
     "derive_residual_witnesses.py": "116d4117ef944effa829f7bf58b9c41df4d3d4cc48ed4eacb679ca998198c102",

@@ -209,7 +209,7 @@ Replay:
 
 The arbitrary-degree result depends on the actual companion resonance,
 PF171 regular square form, PF173 rational character, PF174 half-order
-bound and PF175 pole-support theorem. Full ruling-six closure, target
-integrality, normal-tail termination and HC4/JC2 remain open.
+bound and PF175 pole-support theorem. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Target integrality, normal-tail termination and HC4/JC2 remain open.
 Independent whole-proof replay, formal verification and external human
 review remain unclaimed.

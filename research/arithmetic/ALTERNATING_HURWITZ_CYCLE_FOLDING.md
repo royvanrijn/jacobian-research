@@ -433,8 +433,10 @@ does not apply, and does not supply a cabled attachment calculation.
 The marked polynomial conditions are verified in
 [degree twelve](DEGREE_TWELVE_HURWITZ_ORBIT.md).
 Corollary 6 makes the attachment condition uniform.
-Degree fourteen is the first unresolved full complex case in this
-sequence. The uniform normal form and criterion do not classify it.
+The [degree-fourteen theorem](DEGREE_FOURTEEN_HURWITZ_ORBIT.md)
+uses the uniform reduction and complete finite censuses to prove one
+absolute full-alternating orbit. Degree sixteen and uniform connectivity
+remain open.
 
 ## Exact verification
 

@@ -786,9 +786,11 @@ The argument works because the second weight has a two-character
 expansion. Its divisor pairing produces one family of square-root
 moduli to which BGLM and FixedPeriodicBoxes apply. Replacing \(V\)
 by a weight supported on \(C\) introduces four character factors on
-both sides. No such pointwise estimate is proved here. The every-target
-\(C+C\) theorem, its raw simultaneous-norm lower bound, and its
-pointwise bad-prime marginal estimates remain open.
+both sides. No such pointwise estimate is proved here. The raw simultaneous-norm lower bound, pointwise bad-prime marginals
+and the corresponding signed remainder estimates remain open for this
+weighted method. The separate [subgroup correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+proves unweighted every-target and fixed macroscopic \(C+C\) counts
+under the retained ZF and G imports.
 
 There is no balance restriction in (1). The separate
 [uniform small-coefficient theorem](ASYMMETRIC_UNIFORM_COEFFICIENTS.md)

@@ -23,13 +23,13 @@
     },
     {
       "path": "research/jacobian/monodromy-theory/PLANE_A4_MONODROMY_EXCLUSION.md",
-      "sha256": "cdca171f4a559cc795b9323f198b2a926197e9d8537a4e892f8f1cf11fcc0091",
+      "sha256": "6ace5d0dd1061d842d4449290c5e8b790a5d63f557a3b75fb2abd29bef3a06d1",
       "locator": "Group-theoretic reduction and characteristic-zero field reduction",
       "supports": "Written elementary classification of all faithful transitive A4 actions, normal closures, and finite coefficient field embedding with generic-rank invariance."
     },
     {
       "path": "research/jacobian/monodromy-theory/verify_plane_a4_exclusion.py",
-      "sha256": "6d466354287caab11e0bcd53f47af7a29ecfa367e2061abd78a8047e145ccb07",
+      "sha256": "19dd27a547e55dd7536556225f2ee9261272ee34bb082644bd9249542825b58e",
       "locator": "all_subgroups, subgroup_core, normal_closure and main",
       "supports": "Exact complete finite A4 subgroup/action enumeration and natural A4/A5 necessary-condition controls; primary PDF identity pin."
     },

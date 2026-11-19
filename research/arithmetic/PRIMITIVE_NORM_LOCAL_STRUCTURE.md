@@ -353,7 +353,7 @@ five is one. These facts follow by completing the square and checking
 the resulting bounded `y` range. They do not assert infinitely many
 exceptions or disprove eventual local-global statements.
 
-### Explicit ramified factors and the two conjectural examples
+### Explicit ramified factors and the discriminants -8 and -11
 
 **Corollary PL3D (explicit local densities).** For the self-sum of
 `Q=x^2+xy+((p+1)/4)y^2`, where `p=3 mod 4` is an odd prime,
@@ -584,8 +584,9 @@ kP_D = {N>=k : N=k mod 2, N not in E_D+(k-3)}.
 | `-163` | 41 | `{5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,47,51,53,57,59,61,65,67,69,71,75,77,79,81,93,111,117,121}` |
 
 In particular the four-summand exception set in each odd-norm row is
-exactly `E_D+1`, among even targets `N>=4`. These are complete finite
-exception lists, unlike the still-unresolved exact binary classifications.
+exactly `E_D+1`, among even targets `N>=4`. The binary classifications
+for -3, -7, -8 and -11 are also [complete](PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md).
+The binary cases -19, -43, -67 and -163 remain open.
 
 **Proof for `D=-7`.** The three-triangular construction with `c=2`
 covers even `N>=6`. Every nonnegative `m` is `T_a+T_b+2z^2`:

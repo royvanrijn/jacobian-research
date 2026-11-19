@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "prime": 2731,
+  "isolating_orders": [
+    546,
+    630,
+    650
+  ],
+  "charts": [
+    {
+      "chart": "zero-c",
+      "orders": [
+        2,
+        4,
+        6
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "f7d5cd49dab4d969c351acb6683c0b9e6b48203a1a87f3db8566effe98f9d27e"
+    },
+    {
+      "chart": "zero-d",
+      "orders": [
+        2,
+        4
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "240abcf615da84b6580839534ea901bae167b58d90b880f5f72eba2e92c03bfa"
+    },
+    {
+      "chart": "zero-e",
+      "orders": [
+        2
+      ],
+      "unit": "nonzero constant"
+    },
+    {
+      "chart": "a-c",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "64a647384acdef6395056192e872e9f30381dfabfc458fa6ed7469ded07f8ff1"
+    },
+    {
+      "chart": "a-d",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "1f6ccdec26c70f006cbc7144ea5ddbc13ec34dca7466d5ed3e0d4919ea7100c0"
+    },
+    {
+      "chart": "a-f",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "f381e58e265306f18f28fea63efbbe144882e5d484956b46a788458732aa60f9"
+    },
+    {
+      "chart": "a-g",
+      "orders": [
+        2
+      ],
+      "unit": "nonzero constant"
+    },
+    {
+      "chart": "a-h",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "135833f39c6ad374bbf567c0ec69598e7c938dff52de0e5e566cb4d0c4026004"
+    },
+    {
+      "chart": "a-i",
+      "orders": [
+        2,
+        4,
+        6
+      ],
+      "unit": "nonzero constant"
+    },
+    {
+      "chart": "a-j",
+      "orders": [
+        2,
+        4
+      ],
+      "unit": "nonzero constant"
+    },
+    {
+      "chart": "a-k",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "unit": "nonzero constant"
+    },
+    {
+      "chart": "b-c",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "05ac1ba9212873f351a618319ebf32c760b155ee3d3d2c6d1be70dbf68b9675c"
+    },
+    {
+      "chart": "b-d",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "cca530930d8c12032a5c7a8cbce0e8537dd981f08ffe91dfdf18e27e8a6c1e19"
+    },
+    {
+      "chart": "b-f",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "0198a0e0b394c81e1b42800794aaef934305d36f966837f01bd6ccd1eeb57220"
+    },
+    {
+      "chart": "b-g",
+      "orders": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "df14d88f1271ce0e5366751788a44173edf07e4d87bb67035039c36ebf8a9738"
+    },
+    {
+      "chart": "b-h",
+      "orders": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "cd92f155833e4ef7c003843f0c46ec8e4f97f0cf842da6f0d85549c424da69cb"
+    },
+    {
+      "chart": "b-j",
+      "orders": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "unit": "exact Groebner basis [1]",
+      "input_sha256": "e2c7cb801634e459b20a72668c20cef08a25766efb9e4179f1f94dfd9cba1a47"
+    }
+  ],
+  "first_nineteen_example": "orders 10 and 20 have coprime defining factors",
+  "proof_sha256": "ee811ec80c6d253e2fc3130fb3b74526f4b5d3bf7b7c99068dc3abcce962d3cb",
+  "checker_sha256": "6ead5c296dacff87653e2974d37585dc9e7df67424aa42651b0ec873991f0f40",
+  "exact_linear_algebra": "msolve -g 2 -l 2; internal replay"
+}

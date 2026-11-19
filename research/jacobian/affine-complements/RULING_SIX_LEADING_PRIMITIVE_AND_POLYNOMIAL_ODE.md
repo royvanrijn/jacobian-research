@@ -371,6 +371,7 @@ Replay:
     .venv/bin/python research/jacobian/affine-complements/verify_ruling_six_leading_primitive.py
 
 No target membership or target integrality is inferred from (1).
-The full ruling-six class, JC2, all-prime derivative integrality and
-normal-tail termination remain open. Independent whole-proof replay,
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+JC2, all-prime derivative integrality and normal-tail termination remain
+open. Independent whole-proof replay,
 formal verification and external human review are not claimed.

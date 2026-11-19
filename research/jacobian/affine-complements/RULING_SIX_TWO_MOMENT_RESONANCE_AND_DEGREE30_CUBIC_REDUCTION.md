@@ -17,7 +17,7 @@ The subsequent
 [companion-prefix theorem](RULING_SIX_CUBIC_BALANCE_COMPANION_DEGREE_TWENTY_SEVEN.md)
 forces its reduced actual companion to have ruling degree twenty-seven;
 the [adapted cubic moment theorem](RULING_SIX_ADAPTED_CUBIC_MOMENT_AND_DEGREE30_EXCLUSION.md)
-then excludes the entire D=30 class. Full ruling six remains open.
+then excludes the entire D=30 class. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
 
 The new ingredient is the FULL constant companion resonance in two
 coefficient residues. Triple/simple, two-double, and even-quartic

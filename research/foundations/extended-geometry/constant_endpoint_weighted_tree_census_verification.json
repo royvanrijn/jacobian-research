@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "method": "Independent small census of ALL labelled trees by Prufer words, marked leaf0/neighbor1, every cyclic rotation system and positive edge assignment satisfying black weighted-degree cap; canonical rooted ordered encodings quotient labels. Finite controls only.",
+  "results": [
+    {
+      "a": 1,
+      "r": 1,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 1,
+      "r": 2,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 1,
+      "r": 3,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 1,
+      "r": 4,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 1,
+      "r": 5,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 2,
+      "r": 1,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 2,
+      "r": 2,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 2,
+      "expected": 2
+    },
+    {
+      "a": 2,
+      "r": 3,
+      "labelled_topological_trees": 3,
+      "marked_oriented_weighted_classes": 5,
+      "expected": 5
+    },
+    {
+      "a": 2,
+      "r": 4,
+      "labelled_topological_trees": 13,
+      "marked_oriented_weighted_classes": 14,
+      "expected": 14
+    },
+    {
+      "a": 2,
+      "r": 5,
+      "labelled_topological_trees": 85,
+      "marked_oriented_weighted_classes": 42,
+      "expected": 42
+    },
+    {
+      "a": 3,
+      "r": 1,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 3,
+      "r": 2,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 3,
+      "expected": 3
+    },
+    {
+      "a": 3,
+      "r": 3,
+      "labelled_topological_trees": 3,
+      "marked_oriented_weighted_classes": 12,
+      "expected": 12
+    },
+    {
+      "a": 3,
+      "r": 4,
+      "labelled_topological_trees": 16,
+      "marked_oriented_weighted_classes": 55,
+      "expected": 55
+    },
+    {
+      "a": 3,
+      "r": 5,
+      "labelled_topological_trees": 121,
+      "marked_oriented_weighted_classes": 273,
+      "expected": 273
+    },
+    {
+      "a": 4,
+      "r": 1,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 1,
+      "expected": 1
+    },
+    {
+      "a": 4,
+      "r": 2,
+      "labelled_topological_trees": 1,
+      "marked_oriented_weighted_classes": 4,
+      "expected": 4
+    },
+    {
+      "a": 4,
+      "r": 3,
+      "labelled_topological_trees": 3,
+      "marked_oriented_weighted_classes": 22,
+      "expected": 22
+    },
+    {
+      "a": 4,
+      "r": 4,
+      "labelled_topological_trees": 16,
+      "marked_oriented_weighted_classes": 140,
+      "expected": 140
+    },
+    {
+      "a": 4,
+      "r": 5,
+      "labelled_topological_trees": 125,
+      "marked_oriented_weighted_classes": 969,
+      "expected": 969
+    }
+  ],
+  "checker_sha256": "fd638bafab21c3b8a37b5d03bb9995dc16f4d10fd067ff5b9d8ad98e7a7743dd",
+  "proof_sha256": "025216db689f3318dea140cafe3818eb8de592371d4d31c79ab47a4652f22aa5"
+}

@@ -569,6 +569,9 @@ The proof does not sum a previously known pointwise error over all
 coefficients, and it introduces no arbitrary phase into BGLM's inner
 modulus sum. Its range is limited by the auxiliary-modulus cap and
 the full-modulus condition for the three-factor boxes.
-The square-root remainder in AsymCriticalCriterion and every-target
-\(C+C\) coverage remain open. No balance theorem, numerical onset,
-finite coverage completion, or publication-priority claim is made.
+The square-root remainder in AsymCriticalCriterion remains open.
+The separate [subgroup correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+proves unweighted \(C+C\) counts for every sufficiently large admissible
+target, including fixed macroscopic balance, under the retained ZF and G
+imports. A numerical onset, exact finite coverage and historical priority
+remain separate questions.

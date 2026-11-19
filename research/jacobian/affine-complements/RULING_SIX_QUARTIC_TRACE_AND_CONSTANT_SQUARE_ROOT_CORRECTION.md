@@ -299,7 +299,7 @@ Replay with
     .venv/bin/python research/jacobian/affine-complements/verify_ruling_six_quartic_trace_correction.py
 
 No new external classification is imported. The full original
-normalizations and all their primes remain unchanged. Entire
-ruling-six closure, full derivative integrality, normal-tail
-termination and HC4/JC2 remain open. Independent whole-proof
+normalizations and all their primes remain in scope. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Full derivative integrality, normal-tail termination and HC4/JC2 remain
+open. Independent whole-proof
 review, formal verification and external human review remain unclaimed.

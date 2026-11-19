@@ -113,7 +113,7 @@
   "limitations": [
     "The finite checker does not itself prove the sourced infinite Hecke/Ramanujan input.",
     "No external review, formal verification or established historical priority.",
-    "The independent C12+C12 barrier, complete other-discriminant exception lists and general unweighted leading constants remain open."
+    "The separate subgroup and fixed-order pointwise theorems give C12+C12 and the unweighted leading constants under the retained ZF and G imports. Complete exception lists for the remaining discriminants are separate open problems."
   ],
   "coordinate_membership_authentication": {
     "checker": "verify_primitive_norm_coordinate_membership.py",

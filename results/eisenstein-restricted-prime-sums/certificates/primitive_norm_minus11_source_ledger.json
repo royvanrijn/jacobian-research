@@ -73,7 +73,7 @@
   "verification": "Root and separate internal agents reconstructed order/mass/finite quotient, local filters and exact arithmetic. No external review or formal verification.",
   "limitations": [
     "The finite checker does not prove the infinite spectral input; it is sourced and reconstructed in the written proof.",
-    "The exact -8 binary classification is now proved separately; C12+C12 remains open.",
+    "The exact -8 binary classification is proved separately. The subgroup theorem supplies C12+C12 and the fixed-order pointwise theorem supplies the unweighted leading constants under the retained ZF and G imports.",
     "No unweighted logarithmic leading constant, external review, formal verification or priority claim."
   ],
   "exact_classification": {

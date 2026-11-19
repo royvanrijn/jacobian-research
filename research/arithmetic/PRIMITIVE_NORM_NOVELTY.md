@@ -841,8 +841,12 @@ specified recent graph and fixed zero-free-half-plane theorems.
 Those recent analytic inputs remain dependencies of the leading asymptotic.
 The unconditional order-of-magnitude argument remains an independently useful,
 older-input result.
-Numerical general cutoffs and complete global exception lists for
-\(-20,-23,-56\) also remain open. Historical priority and specialist
+The [-20 classification](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md)
+has exactly the admissible exceptions \(\{3,4\}\). Complete exception
+lists for \(-23\) and \(-56\) remain open. The
+[-23 effective theorem](PRIMITIVE_NORM_MINUS23_EFFECTIVE.md) gives
+existence from \(2^{249}\), while a numerical onset for the sharp
+logarithmic comparison remains open. Historical priority and specialist
 review of the exact value-count theorem are separate publication tasks.
 
 ### Supporting Baker/Waibel theory

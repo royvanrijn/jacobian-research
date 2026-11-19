@@ -211,8 +211,9 @@ Both functions remain outside the actual target field.
 
 There is no claimed integral equation over B for H3: (12) has R2
 in the SOURCE algebra. Nor is (12) a legitimate target reduction.
-The remaining A faces, central quadratic residue, automatic
-derivative/trace integrality and JC2 remain open.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the remaining A faces and central quadratic residue in the
+retained marked quadratic model. Automatic derivative and trace
+integrality and JC2 remain open.
 
 ## 6. Proof and verification boundary
 

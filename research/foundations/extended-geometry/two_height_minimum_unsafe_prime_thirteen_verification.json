@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "scope": "Exhaustive arithmetic of primesbelow13, necessary odd-start candidates, the a3compensating-root degree box and exact auxiliary/equal-degree cases. All-order source theorems, even-start infinity argument and marker safety remain the separate written proof.",
+  "primes_below13": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "odd_start_candidates": [
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      3,
+      11
+    ]
+  ],
+  "a3_degree_boxes": [
+    [
+      5,
+      1,
+      0
+    ],
+    [
+      5,
+      1,
+      1
+    ],
+    [
+      5,
+      1,
+      2
+    ]
+  ],
+  "a1_auxiliary_degrees": [
+    [
+      3,
+      5,
+      7
+    ],
+    [
+      7,
+      7,
+      9
+    ],
+    [
+      11,
+      9,
+      11
+    ]
+  ],
+  "equal_degree7_quotients": [
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6,
+      2
+    ]
+  ],
+  "reflection_residuals": [],
+  "even_degree_polynomial_coefficients": [
+    2,
+    1,
+    2,
+    1
+  ],
+  "existing_F13_parameters": {
+    "a": 1,
+    "n": 2,
+    "degree": 13
+  },
+  "proof_sha256": "3d3f4c28e64402a8d5bf24dbcc8bbb65c85c0c21696b6a2f85cbc89335aea656",
+  "schema_version": 1,
+  "status": "passed",
+  "retained_inputs": [
+    {
+      "path": "ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "exact_use": "Every integer height: rational coordinates, common-root multiplicity, exact least degree and zero/constant safety."
+    },
+    {
+      "path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "All unit phases of a1 degree<=5 have constant pair; includes quotient coefficient-degree2."
+    },
+    {
+      "path": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
+      "exact_use": "Full a1 septic unit exclusion, two-root exclusion and local reflection pole capacities."
+    },
+    {
+      "path": "ODD_CUBIC_DEGREE_ELEVEN_SAFETY.md",
+      "sha256": "6dcc12130941a2d721cd96c0bf97e47964cda106fffe8ae5c8ae7f7da85025b9",
+      "exact_use": "Full a1 exact degree11 unit exclusion."
+    },
+    {
+      "path": "ODD_CUBIC_CANONICAL_POLYNOMIAL_DESCENT.md",
+      "sha256": "d26d8ea2b42c0e1a6a407fb37ecf475f2a2c1046ca326eb348d39aaf2d7204de",
+      "exact_use": "Canonical normalized polynomial quotient with genuine rational return and exact degree identities."
+    },
+    {
+      "path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "exact_use": "Existing a1,n2 original F13 radial-primitive nonpower witness with all-order fixed marker."
+    }
+  ],
+  "packet_sha256": {
+    "TWO_HEIGHT_MINIMUM_UNSAFE_PRIME_THIRTEEN.md": "3d3f4c28e64402a8d5bf24dbcc8bbb65c85c0c21696b6a2f85cbc89335aea656",
+    "verify_two_height_minimum_unsafe_prime_thirteen.py": "91500c36eccebb4631b52c9d7bf0d981f4ecc8880ce331ede8b9865c494b1506",
+    "two_height_minimum_unsafe_prime_thirteen_source_ledger.json": "81264a50a294b3d143f3fb4729bb7150a02669d71374703aef7c240328ce0a48"
+  },
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

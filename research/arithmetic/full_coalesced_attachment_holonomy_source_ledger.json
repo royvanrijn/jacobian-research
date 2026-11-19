@@ -36,7 +36,7 @@
     },
     {
       "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
-      "sha256": "e42260ff0ee00778b19e611444f4bc1d751cca67bcb2669eecddefedba9a9278",
+      "sha256": "4db218ebd4490912fd41237a735fb92dff0d970015283aa0dddfc69a9ebf9033",
       "locator": "Corollaries5-6",
       "role": "One-new-sheet expansion, cable and transport rule; full alternating group of all specified base tuples; literal loop and appended-DT construction."
     },

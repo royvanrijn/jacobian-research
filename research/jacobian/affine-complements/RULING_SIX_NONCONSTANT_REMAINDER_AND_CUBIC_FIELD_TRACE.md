@@ -8,8 +8,9 @@ one or two. A field trace through the cubic H3 gives the
 obstruction uniformly for every odd companion degree.
 
 This is an exclusion of the entire ruling-zero remainder class,
-with arbitrary coefficient degrees. The remaining linear and
-quadratic remainders, full ruling-six closure and JC2 remain open.
+with arbitrary coefficient degrees. The proof leaves linear and quadratic
+remainders to subsequent arguments. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+JC2 remains open.
 
 ## 1. Actual setup and exact trace domain
 
@@ -166,8 +167,8 @@ Replay with
     .venv/bin/python research/jacobian/affine-complements/verify_ruling_six_cubic_trace_remainder.py
 
 No new external classification is imported. All original primes
-and source/image distinctions remain retained. Entire ruling-six
-closure, derivative integrality, automatic trace perfection,
-normal-tail termination and HC4/JC2 remain open. Independent
+and source/image distinctions remain retained. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Derivative integrality, automatic trace perfection, normal-tail termination
+and HC4/JC2 remain open. Independent
 whole-proof review, formal verification and external human
 review remain unclaimed.

@@ -342,12 +342,12 @@ in Section6 explains precisely the distinction. These are controls
 of the conditional geometry, not actual Keller target pairs or
 counterexamples to JC2.
 
-For the actual completion, the remaining input is still existence of
-a suitable regular **source coordinate** on each component open, or
-a single common coordinate on all of U. This theorem proves smooth
-algebraic boundary and whole root charts once that input is given.
-It neither produces the coordinate from valuation negativity nor
-establishes compatibility of independently obtained coordinates.
+This theorem proves smooth algebraic boundary and whole root charts
+given a regular source coordinate on the component open. The later
+[exact-volume and pencil-alignment theorem](EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md)
+supplies one common regular source coordinate on the actual full canonical
+Keller completion. Target integrality, preservation of B/F, omitted
+ramified primes and HC4/JC2 remain separate obligations.
 
 The checker supplies exact local-normalization, LND/slice, torsor,
 Laurent/shear/residue and whole affine-control calculations.

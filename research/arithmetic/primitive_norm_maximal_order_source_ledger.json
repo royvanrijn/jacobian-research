@@ -113,7 +113,7 @@
   "canonical_dependencies": [
     {
       "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
-      "sha256": "b86c23b42944cd5831cc24cab9cd60c45525dd8a8172209f20088c2a48165888",
+      "sha256": "9d1c01a599f37ca1a174ef986a5cefaf35d15e94ce401d2ec314d34a9b3234dc",
       "locator": "Maximal-order primitive norm/ideal factorization and local image/lifting proofs"
     },
     {

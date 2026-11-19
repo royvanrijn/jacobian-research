@@ -185,7 +185,8 @@ The stronger [ruling-five theorem](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATI
 also excludes actual r=5 quadratic coordinates. Thus actual quadratic
 targets satisfy max(6,2g)<=r<s; the weaker bound(12) remains the direct
 consequence of the half-specialization argument. Higher-degree common
-leading divisors and the full ruling-six class remain open.
+leading divisors outside the retained model remain open.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
 
 ## 5. Sharp local boundaries and a genuine new surface test family
 

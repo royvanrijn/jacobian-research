@@ -1,0 +1,47 @@
+{
+  "schema": "cohomology_composition_factor_inputs_v1",
+  "primes": [
+    2,
+    3,
+    5
+  ],
+  "finite_group_presentation": {
+    "generators": [
+      "a",
+      "b"
+    ],
+    "relation": "aba=bab",
+    "normal_generator": "a",
+    "abelianization": "Z"
+  },
+  "fixture_families": [
+    "all valid upper-triangular two-character extensions over F2,F3,F5",
+    "all cocycle extensions of natural SL2(Fp) braid modules by a trivial line for p2,3,5",
+    "all valid two-by-two off-diagonal extensions of the natural binary two-dimensional module by itself"
+  ],
+  "negative_numeric_case": {
+    "label": "algebraic division guard, not a realized knot module",
+    "factor_defects": [
+      -1,
+      -1
+    ],
+    "factor_ranks": [
+      1,
+      1
+    ],
+    "extension_defect": -2,
+    "extension_rank": 3
+  },
+  "scope": "Bounded exact fixture controls, not a finite-dimensional or field cutoff for the written theorem.",
+  "uniform_cap_values": [
+    "-1",
+    "0",
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "5/2",
+    "3"
+  ],
+  "real_cap_guard": "At B=3/2, delta1 andq2 give integer certificate2; use floor(B)-1, not B-1."
+}

@@ -42,7 +42,8 @@
       -8,
       -11
     ],
-    "certificate_files_byte_identical": true,
+    "certificate_files_byte_identical": false,
+    "certificate_metadata_revision": "The current -8 and -11 source ledgers update related-result status prose. The proof, checker code and finite certificates are byte-identical to the frozen supplement.",
     "unchanged_classification_statements": true,
     "reusable_averaging_lemma_generalized": true
   },
@@ -52,7 +53,7 @@
     "commit": "b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8",
     "sha256": "543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332",
     "certificate_files": 32,
-    "scope": "Frozen certificate subtree of the externally hosted historical source archive; all current certificate bytes match."
+    "scope": "Frozen certificate subtree of the externally hosted historical source archive. The current -8 and -11 source ledgers have status-only updates; the other 30 files match."
   },
   "submission_packaging": {
     "target": "Hexagon",

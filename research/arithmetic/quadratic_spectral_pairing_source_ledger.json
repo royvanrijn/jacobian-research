@@ -26,7 +26,7 @@
     },
     {
       "path": "research/arithmetic/verify_quadratic_spectral_pairing.py",
-      "sha256": "03617af0db2ebcc3db83c470866d05f28ae6461316beb6b45fa0618c94aefeb4",
+      "sha256": "d0c5964bbf05953e70a2529031560c7a6a65dcba251c2ab09ebfe9fae84bb320",
       "locator": "run and exact controls",
       "role": "Bounded symbolic/algebraic controls; actual good degree8 boundary control."
     },
@@ -38,13 +38,13 @@
     },
     {
       "path": "research/arithmetic/PAIRED_CRITICAL_TRACE_CHART.md",
-      "sha256": "77de4329e3c3d2070b7f0271d77d325de0be4bdf78a56b5063678a0e7141f3e4",
+      "sha256": "28312353157c2354de793ce77d7f3633ab41e954bd36204ebce145e17dfea0b0",
       "locator": "Theorems1–2",
       "role": "Canonical critical-algebra identities and meaning of the good paired locus."
     },
     {
       "path": "research/arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md",
-      "sha256": "d6b59756f654833c3c33014668c1a0c8b3c6fd0238e4d2491a3d8a23d28ee07b",
+      "sha256": "cde01b4f425c1047221af21f10a188a9250402cbc7a12a37a4e35c7fadcdd55a",
       "locator": "Main theorem",
       "role": "Excludes the real affine-trace boundary t2=0 in degree4h>=12."
     },

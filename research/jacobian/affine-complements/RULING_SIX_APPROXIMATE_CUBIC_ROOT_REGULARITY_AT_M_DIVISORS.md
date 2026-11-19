@@ -207,4 +207,5 @@ lines, central source line and all original primes remain in scope.
 The imported Chau/one-line assertions retain their existing assurance
 limits. No new external theorem is imported and no independent whole-
 proof review, formal verification or external human review is claimed.
-The entire ruling-six class, derivative integrality and JC2 remain open.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Derivative integrality and JC2 remain open.

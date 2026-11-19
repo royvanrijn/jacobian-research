@@ -360,6 +360,9 @@ spectral theorem and the completion arguments remain written
 mathematics, rather than consequences of the checker merely passing.
 Several internal agents reconstructed the local, spectral, geometric
 and descent steps separately. External review, formal verification
-and historical priority have not been established. The independent
-\(C_{12}+C_{12}\) barrier and general unweighted leading constants
-remain open.
+and historical priority have not been established. The separate
+[subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md) supplies
+\(C_{12}+C_{12}\) under the retained ZF and G imports. The
+[fixed-order pointwise theorem](PRIMITIVE_NORM_BINARY_CORRELATION.md)
+gives the corresponding primitive norm leading constants under those
+imports. Complete exception lists for other discriminants are separate.

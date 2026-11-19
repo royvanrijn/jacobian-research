@@ -20,8 +20,8 @@ excludes both slope-six families, and [the nonpole-packet theorem](RULING_SIX_NO
 excludes intermediate degree nine. The subsequent [two-moment theorem](RULING_SIX_TWO_MOMENT_RESONANCE_AND_DEGREE30_CUBIC_REDUCTION.md)
 leaves only intermediate degree eight, and the
 [companion-prefix theorem](RULING_SIX_CUBIC_BALANCE_COMPANION_DEGREE_TWENTY_SEVEN.md)
-forces reduced companion ruling degree twenty-seven. Full ruling-six,
-trace integrality and HC4/JC2 remain open.
+forces reduced companion ruling degree twenty-seven.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class. Trace integrality and HC4/JC2 remain open.
 
 ## 1. Actual source inputs and a complete noncritical quartic
 
@@ -314,8 +314,8 @@ Essential written inputs are
 [PF179](RULING_SIX_NONCRITICAL_QUARTIC_SPLITTING_AND_SMALL_SLOPE_EXCLUSION.md),
 and the original complete source model retained there.
 Finite controls do not replace those arbitrary-degree proofs.
-The remaining degree-30 cubic-balance class described by PF184--185,
-larger-degree mixed/critical classes,
-target trace perfection and HC4/JC2 remain open. Independent
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the degree-30 cubic-balance class described by PF184--185
+and the larger-degree mixed and critical classes in the retained marked
+quadratic model. Target trace perfection and HC4/JC2 remain open. Independent
 whole-proof replay, formal verification and external human
 review are unclaimed.

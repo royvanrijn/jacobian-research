@@ -22,13 +22,13 @@
     },
     {
       "path": "research/arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md",
-      "sha256": "3eb0977fe5aba64a116b2a4aff6728ff17b32934174eb93472ae79a6c084679b",
+      "sha256": "66be55c20424390ec3af8894890e0f08e1844a172ff5f0f726fde0db3b2ba7ef",
       "locator": "Equations1-8 and their proofs",
       "role": "Complete uniform positivity, sign-order and last-gap contradiction argument."
     },
     {
       "path": "research/arithmetic/verify_odd_k_real_reciprocal_obstruction.py",
-      "sha256": "977ecd71ccf92238f525298c38afa96abbffe6ead0d2ec39370620b0d49e47b9",
+      "sha256": "64abe8d206ce7f667b439bccff45246b3953fdc962e6b7a3f7889897e238e063",
       "locator": "symbolic_control, endpoint_control, order_controls",
       "role": "Exact bounded controls for the algebraic identities, negative endpoint sign and Rolle-compatible sign order."
     },

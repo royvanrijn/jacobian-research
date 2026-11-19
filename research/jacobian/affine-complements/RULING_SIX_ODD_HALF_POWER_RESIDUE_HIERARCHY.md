@@ -23,9 +23,9 @@ It gives ord d<2L or ord e<L at each such supporting base value.
 In the linear branch, a unit-K h-root forces ord e>=ord h;
 the central Keller condition then forces h(0)!=0.
 
-Neither these equations nor the coefficient controls below construct
-a mate or close the remaining A class. Full ruling-six closure and
-JC2 remain open.
+The equations and coefficient controls below are necessary conditions
+on the A class. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes that class in the retained marked quadratic
+model. JC2 remains open.
 
 ## 1. Actual inputs and a formal coefficient residue
 
@@ -364,6 +364,7 @@ Replay with
 No new external classification is imported. Source functions
 remain separate from target functions; no all-prime integrality,
 codifferent multiplication or polynomial termination is inferred.
-Full ruling-six closure, automatic trace perfection, normal-tail
-termination and HC4/JC2 remain open. Independent whole-proof
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Automatic trace perfection, normal-tail termination and HC4/JC2 remain
+open. Independent whole-proof
 review, formal verification and external human review remain unclaimed.

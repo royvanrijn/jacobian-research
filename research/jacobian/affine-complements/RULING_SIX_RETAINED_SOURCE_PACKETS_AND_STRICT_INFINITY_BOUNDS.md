@@ -13,8 +13,9 @@ where D=deg b3 and b=[E:F]. The original generic map degree is
 the residue degree over its image to be at most two. If that
 product is ever two, then D>=42 and b>=15.
 
-These are necessary conditions on the entire remaining class.
-The quartic A faces, derivative integrality and JC2 remain open.
+These are necessary conditions on the class retained in this argument.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes that marked quadratic class, including the quartic A faces.
+Derivative integrality and JC2 remain open.
 
 ## 1. Actual complete normalization and notation
 
@@ -294,5 +295,5 @@ Replay with
 
 All original primes remain in scope. No new external classification
 is imported; independent whole-proof review, formal verification
-and external human review remain unclaimed. Full ruling-six closure,
-automatic trace perfection, normal-tail termination and JC2 remain open.
+and external human review remain unclaimed. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Automatic trace perfection, normal-tail termination and JC2 remain open.

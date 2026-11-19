@@ -1,7 +1,9 @@
 # Breakthrough target assessment
 
-The objective remains a result with major external mathematical impact. None of
-the five unrestricted targets below is resolved by the current repository.
+The objective remains a result with major external mathematical impact.
+The restricted-prime binary theorem is established internally under its
+stated analytic imports. The assessment below identifies the remaining
+targets, including shorter windows and dependent correlations.
 Primary target: the unrestricted Strong Factorial Conjecture. MRC is deferred after the current fixed-input checkpoint, at the user's request. One secondary check: unrestricted Gaussian safety-to-purity through the canonical Wick-marker detection obligation described below.
 The other candidates are audited here, not pursued as parallel family-expansion
 programmes. Assessment date: 18 November 2026.
@@ -239,8 +241,11 @@ additional hypotheses.
 ## Restricted-prime sums
 
 **Quantifiers.** Let C={n>=1: every prime divisor of n is 1 mod 12}, including 1.
-Does there exist N0 such that every integer N>=N0 with N=2 mod 12 has
-N=a+b with a,b in C? Requiring N/3<=a,b<=2N/3 is a stronger separate target.
+For every sufficiently large N=2 mod 12 the repository proves N=a+b with
+a,b in C, including the fixed interval N/3<=a,b<=2N/3. The short-window
+target asks for every sufficiently large admissible N to have such a pair with
+|a-N/2|<=N^(1-epsilon) for some fixed epsilon>0. A separate target asks
+for pointwise correlations with three dependent factors.
 
 **External frontier.** The directly inspected published inputs include
 Loughran--Matthiesen's JEMS 2024 Frobenian correlation theorem, BGLM's GAFA
@@ -255,26 +260,25 @@ The present unrestricted leading asymptotic must be compared against
 that direct antecedent; later deconditioning, balanced adaptations
 and historical priority have not been exhausted.
 
-**Repository evidence.** Density-one coverage, quantitative exceptional-set
-bounds, local positivity and one-sided C+A3 pointwise results are retained.
-The [critical switching criterion](arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md)
-bounds bad survivors but still assumes an unproved signed or absolute
-distribution estimate. Current local verifiers passed separately performed
-internal replay; they do not verify that analytic estimate.
+**Repository evidence.** The [subgroup correlation theorem](arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+gives the unweighted pointwise leading asymptotic for every sufficiently
+large admissible target, including fixed macroscopic intervals. The proof
+uses the retained ZF and G imports applied in
+[PointwiseBinaryCorrelations](arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md#6-discharging-the-imported-inputs).
+The internal proof status carries the review limits stated in those sources.
 
-**Single obstruction.** Prove the signed remainder bound in that criterion
-for every admissible target, preserving arbitrary target valuations.
-Expanding its companion divisor sum produces weighted combined moduli near
-N^(3/4). BGLM's unweighted large-modulus average and small auxiliary modulus
-do not cover these terms. Fouvry--Tenenbaum's alternative weighted interface
-also misses the needed parameter ranges. Merely absorbing the sieve into
-a finite integer-character convolution fails: tau*1_C has half-integer,
-rather than integer, Dirichlet-character exponents. Fractional coefficients
-retain medium bilinear boxes but lose the existing periodic fallback.
+**Alternative switching route.** The [critical switching criterion](arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md)
+still needs its signed or absolute remainder estimate. Its companion
+divisor sum produces weighted combined moduli near N^(3/4), outside the
+applicable BGLM and Fouvry--Tenenbaum estimates. A finite integer-character
+convolution misses the half-integer exponents of tau*1_C. Fractional
+coefficients retain medium bilinear boxes and lose the existing periodic
+fallback. The retained local checks cover the finite identities used by
+this route.
 
-**Impact test.** An unconditional every-target theorem would resolve the
-stated binary frontier. More density-one estimates, local identities or
-large finite searches do not remove its obstruction.
+**Impact test.** A pointwise lower bound in a power-short window would
+extend the established binary theorem. A pointwise dependent three-factor
+asymptotic would extend the correlation theory to a different configuration.
 
 ## Meridional rank: deferred after the current checkpoint
 

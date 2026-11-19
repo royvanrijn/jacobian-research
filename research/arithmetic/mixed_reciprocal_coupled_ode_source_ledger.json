@@ -20,7 +20,7 @@
   "internal_proof_inputs": [
     {
       "path": "research/arithmetic/PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md",
-      "sha256": "a6c82e1e00c178afc9981434c15e20c9b766930b89241052e08e9622459afa1e",
+      "sha256": "ce9c3728365fe2c7168ecc69627628db3fdb347c5a35458809df5b51c26292e4",
       "locator": "Normalization, rationality of rho in the uniform-sign case, its coefficient classification, exact h2 formula and degree26 uniform-sign obstruction."
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "path": "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md",
-      "sha256": "fe8b0904619d5dbf13de9268fe20936bdd9bfa8e809f2bcca7a4c09638db5679",
+      "sha256": "71fafa28475593b8993271247266d70274460e583b4b128735949d519f1fdce0",
       "locator": "Normalized paired-critical criterion and passport/monodromy consequence for future rational degree26 solutions."
     },
     {

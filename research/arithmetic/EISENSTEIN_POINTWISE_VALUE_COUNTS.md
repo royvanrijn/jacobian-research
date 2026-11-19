@@ -247,8 +247,9 @@ The independent-form correlation theorem is not applied to the proportional
 linear parts of \(t\) and \(n-t\). The moment transfer itself gives the
 weaker logarithmic exponent shown here; the cofactor theorem attains the
 expected Eisenstein scale in the central and translated windows proved in
-EisSemigroupScale and EisLocationWindows. The simultaneous modulus-12
-every-target lower bound remains open.
+EisSemigroupScale and EisLocationWindows. The simultaneous modulus-12 every-target lower bound in power-short
+windows remains open. The separate [subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+covers unrestricted counts and fixed macroscopic intervals under ZF and G.
 
 The corrected local factors, target-valuation uniformity, finite factors at
 2 and 3, interval parameters, coordinate fibers and Hölder conversion received

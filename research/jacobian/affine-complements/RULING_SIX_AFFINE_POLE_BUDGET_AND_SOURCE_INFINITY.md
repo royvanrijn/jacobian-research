@@ -14,7 +14,8 @@ The theorem supplies necessary constraints on arbitrary coefficients.
 The later [simple-escape theorem](RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUARTIC_FACE_REDUCTION.md)
 excludes B and C. The [strict infinity ledger](RULING_SIX_RETAINED_SOURCE_PACKETS_AND_STRICT_INFINITY_BOUNDS.md)
 strengthens the bounds using a retained source prime over each finite
-image. Face A and JC2 remain open; the inequalities below remain valid.
+image. The inequalities below apply to face A, which [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes within
+the retained marked quadratic model. JC2 remains open.
 
 ## 1. Actual setup and complete-end inputs
 
@@ -271,9 +272,9 @@ necessary ledger rather than treating another selected family.
 
 Equations (11),(18) alone do not contradict every large-D numerical
 ledger. PF165 separately closes the B/C alternatives, and PF166 sharpens
-the remaining A ledger. A pole faces with intermediate infinity indices
-one or two remain unresolved. No polynomial Keller mate in that class
-is constructed here.
+the remaining A ledger. The bounds allow A pole faces with intermediate
+infinity indices one or two. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes these within the retained marked
+quadratic model.
 
 The checker verifies the strict multiplicity calculation,
 all finite ramification-index partitions allowed by ell=3,4
@@ -284,7 +285,7 @@ infinity lifting table. The checker passes 230 exact controls. The unbounded pro
 
     .venv/bin/python research/jacobian/affine-complements/verify_ruling_six_pole_budget.py
 
-No new external classification is imported. HC4/JC2, entire
-ruling-six closure, derivative integrality and normal-tail
-termination remain open. Independent whole-proof review,
+No new external classification is imported. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+HC4/JC2, derivative integrality and normal-tail termination remain open.
+Independent whole-proof review,
 formal verification and external human review remain unclaimed.

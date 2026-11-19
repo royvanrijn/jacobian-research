@@ -19,7 +19,7 @@
   "proof_dependencies": [
     {
       "path": "PRIMITIVE_NORM_LOCAL_STRUCTURE.md",
-      "sha256": "b86c23b42944cd5831cc24cab9cd60c45525dd8a8172209f20088c2a48165888",
+      "sha256": "9d1c01a599f37ca1a174ef986a5cefaf35d15e94ce401d2ec314d34a9b3234dc",
       "scope": "Whole-prime-power orientation criterion for primitive principal norms; primitive local tests."
     },
     {
@@ -109,7 +109,7 @@
   "verification": "Root replayed both canonical checkers; separate internal agents reconstructed the C3 criterion/count, explicit prime certificates, all target profiles, uniform fixed-period analytic transfer, finite-block unweighting, ramification and direct upper bound. Independent internal replays matched receipts. Root read and replayed the bounded2^24 sumset checker; its receipt is byte-identical, all643residualwitnesses are retained and all40nonrepresentations are exhaustive. Bounded evidence doesnot prove the full exception list.",
   "limitations": [
     "The finite checkers do not prove the imported analytic estimates; their application and all completion steps are written explicitly.",
-    "No numerical eventual cutoff, unweighted leading constant or proof of completeness of the40-element exception list beyond2^24.",
+    "This logarithmic comparison gives neither a numerical onset nor a leading constant. CN3EffectiveAll supplies existence from 2^249 and the separate fixed-order pointwise theorem gives a leading asymptotic under ZF and G. Exact40 completeness still requires the finite middle bridge.",
     "No theorem for arbitrary class groups, nonmaximal orders or simultaneous norms is asserted here.",
     "No external review, formal verification or established historical priority."
   ],

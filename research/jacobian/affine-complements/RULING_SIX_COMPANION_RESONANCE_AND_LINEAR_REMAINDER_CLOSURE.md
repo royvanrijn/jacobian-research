@@ -7,8 +7,8 @@ In the regular normal form P=H3^2+d*z+e*w+f, the coefficient d
 cannot vanish. This excludes the ENTIRE linear-remainder branch,
 with unrestricted coefficient degrees and unrestricted actual companion
 degree. The ruling-six problem is reduced to a genuinely quadratic
-remainder d*z+e*w+f with d nonzero. The full quadratic class, automatic
-trace perfection, and HC4/JC2 remain open.
+remainder d*z+e*w+f with d nonzero. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the full retained marked
+quadratic class. Automatic trace perfection and HC4/JC2 remain open.
 
 The proof uses a stronger consequence of the actual companion than
 the rational-exactness hierarchy alone: a nontrivial CONSTANT linear
@@ -223,9 +223,8 @@ This excludes BOTH possible remainders of w degree zero or one.
 A cubic function H3 and the quadratic remainder remain source
 functions; neither is promoted to the actual target field or
 assumed integral over it. Equation (21) does not exclude the
-remaining case d!=0, even if its local order is large. A global
-solution of all coefficient-resonance constraints in that quadratic
-case remains an open obligation. No bounded companion degree,
+remaining case d!=0, even if its local order is large. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) gives the
+global exclusion of that retained marked quadratic case. No bounded companion degree,
 bounded coefficient degree, finite experimental prefix, or
 trace/perfection assumption is used to prove (21).
 

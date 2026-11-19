@@ -1,0 +1,53 @@
+{
+  "schema": "higher_start_cubic_reduction_counterexamples_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "role": "proof dependency",
+      "exact_use": "Exact all-height endpoint criterion, rational X/u scope, original Z/Z^2 eventual-unsafety criterion. No finite prefix is used."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "role": "comparison and local-order dependency",
+      "exact_use": "Existential compensating P-root law h>=a*p+1 at SOME root, never an all-P-root divisibility statement. Local u/omega orders and exact least degree."
+    },
+    {
+      "path": "research/foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "role": "nonconstant-Phi source family",
+      "exact_use": "Section6 normalized all-odd-a hyperbolic target C,D,X,u,Phi and nonzero marked coefficient mu; actual clearing scalar omitted by constructing normalized polynomial pair explicitly."
+    },
+    {
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "role": "original normalization",
+      "exact_use": "Standard bilinears R,Z,W,T, quadratic identity and all-degree factorial/angular normalization."
+    },
+    {
+      "path": "research/foundations/extended-geometry/MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "role": "classical differential context only",
+      "exact_use": "Self-contained exact/log separation and its inspected Rosenlicht antecedent; not imported to prove the explicit counterexamples or pullback identity."
+    }
+  ],
+  "inspected_primary_context": [
+    {
+      "author": "Maxwell Rosenlicht",
+      "title": "Liouville's theorem on functions with elementary integrals",
+      "journal": "Pacific J. Math.24(1968),153-161",
+      "url": "https://msp.org/pjm/1968/24-1/pjm-v24-n1-p16-p.pdf",
+      "actual_locators_read": "Proposition printedpp154-155 and ensuing derivation/logarithmic-derivative discussion.",
+      "role": "Classical rational differential context only; not a logical proof premise or a newly claimed integration theorem."
+    }
+  ],
+  "new_self_contained_steps": [
+    "Explicit two-root Phi1 family violating all-root divisibility",
+    "No rational original return or polynomial stable-field generator for that family",
+    "Same-height admissible polynomial pullback with all polynomial-marker moments preserved",
+    "Nonconstant-Phi prime59 pullback with exact valuations",
+    "General homogeneous lift divisor-order proof of radial primitivity/nonpower"
+  ],
+  "assurance": "Written all-order identities plus bounded exact controls; no historical priority, formal verification or external human review asserted."
+}

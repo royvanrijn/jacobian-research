@@ -15,7 +15,8 @@ The linear-remainder branch d=0 remains allowed by this theorem.
 
 The argument keeps the entire cubic square and the full quartic
 factor; no lower-ruling function is declared a target coordinate.
-The remaining ruling-six class and JC2 are open.
+[PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+JC2 remains open.
 
 ## 1. Whole scaled polynomial and actual input
 
@@ -212,8 +213,8 @@ Replay with
     .venv/bin/python research/jacobian/affine-complements/verify_ruling_six_quadratic_remainder_orders.py
 
 No new external classification is imported. All original primes
-and source/target distinctions remain retained. Full ruling-six
-closure, derivative integrality, automatic trace perfection,
-normal-tail termination and HC4/JC2 remain open. Independent
+and source/target distinctions remain retained. [PF188](RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) excludes the retained marked quadratic ruling-six class.
+Derivative integrality, automatic trace perfection, normal-tail termination
+and HC4/JC2 remain open. Independent
 whole-proof review, formal verification and external human
 review remain unclaimed.

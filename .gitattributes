@@ -2,3 +2,6 @@
 
 # Deposited editions must preserve their exact published bytes.
 /results/** -text -eol
+
+# Preserve the exact upstream wheel RECORD bytes, including CRLF.
+/research/meridional-rank/representations/sources/allcover-snappy332-wheel-RECORD.csv -text -eol whitespace=cr-at-eol
