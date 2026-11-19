@@ -1,0 +1,105 @@
+{
+  "assurance": "Exact polynomial identities and bounded rational controls supplement the written unrestricted proof; not formal verification or external human review.",
+  "checks": {
+    "all_height_sylvester": {
+      "corrupted_constant_rejected": true,
+      "determinant_coefficients_ascending": [
+        41472000,
+        471859200,
+        2121990144,
+        4895932416,
+        6413615104,
+        4954521600,
+        2231369728,
+        541065216,
+        54525952
+      ],
+      "nonzero_permutation_terms": 33,
+      "polynomial_degree": 8,
+      "positive_for_every_integer_a_ge_0": true
+    },
+    "mixed_moment_controls": {
+      "even_start_impurity_negative_controls": 12,
+      "finite_controls_do_not_test_all_order_purity": true,
+      "nonzero_before_safe_threshold_controls": 120,
+      "raw_interval_vs_endpoint_identities": 1536,
+      "safe_weight_interval_controls": 2592,
+      "sharp_x_squared_nonzero_controls": 48
+    },
+    "original_contraction_controls": {
+      "E2_z1_equals_z1_negative_weight_control": true,
+      "arbitrary_marker_output_interval_controls": 240,
+      "exact_U_residue_identity": true,
+      "fixtures": [
+        {
+          "F_monomials": 50,
+          "F_squared_monomials": 200,
+          "Z_squared_F_squared_contraction": "3892643213082624000",
+          "a": 1,
+          "balanced_degree": 9,
+          "normalized_value": "8/105",
+          "ordinary_total_degree": 18
+        },
+        {
+          "F_monomials": 130,
+          "F_squared_monomials": 500,
+          "Z_squared_F_squared_contraction": "100240318831883249587511623680000000",
+          "a": 3,
+          "balanced_degree": 15,
+          "normalized_value": "8/693",
+          "ordinary_total_degree": 30
+        }
+      ],
+      "literal_divisibility_by_Z": true,
+      "nonzero_inside_output_interval_controls": 32,
+      "quadratic_invariant_identity": true,
+      "wrong_radial_factorial_rejected": true
+    },
+    "two_marker_rational_return": {
+      "mass_one_corruption_rejected": true,
+      "quadratic_field_reduction_identity": true,
+      "rational_return_cleared_denominator_identity": true,
+      "weighted_recurrence_polynomial_identity": true
+    }
+  },
+  "packet_sha256": {
+    "ALL_START_HEIGHT_MARKER_SAFETY.md": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+    "all_start_height_marker_safety_inputs.json": "6f57988b643e3e2605f08e555743cbd8d35162ad188dfd86f34bf4a485e9ef2b",
+    "all_start_height_marker_safety_source_ledger.json": "be2f290d28dac19c675f9a28f79c3bd431ba15653848a842151895e6056fa0ea",
+    "verify_all_start_height_marker_safety.py": "0edd02899638ec6001c22b9f910cc15a3aefea054f361699a86f63d36d5b97b4"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "standard_library_only": true
+  },
+  "scope": "Conditional on all-order purity; every integer a>=0 and every characteristic-zero field. Two original monomial markers Z,Z^2 suffice; even a needs Z only.",
+  "source_checks": [
+    {
+      "id": "odd-start-rationality-and-repaired-safety",
+      "role": "proof dependency",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851"
+    },
+    {
+      "id": "formal-mixed-endpoint",
+      "role": "proof dependency",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826"
+    },
+    {
+      "id": "two-pair-radial-normalization",
+      "role": "proof dependency",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "id": "odd-primitive-antecedent",
+      "role": "family antecedent only",
+      "sha256": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203"
+    },
+    {
+      "id": "pakovich-2009-rational-double-moments",
+      "role": "classical method antecedent only",
+      "sha256": "023c87623249d11cc15ac1aeb4e486f84a30df674477e91e3cf068910c7181c4"
+    }
+  ],
+  "status": "PASS",
+  "theorem": "AllStartHeightMarkerSafety"
+}

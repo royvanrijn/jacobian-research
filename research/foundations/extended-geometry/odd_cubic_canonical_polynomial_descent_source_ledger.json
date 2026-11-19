@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ODD_CUBIC_CANONICAL_POLYNOMIAL_DESCENT.md",
+  "proof_labels": [
+    "OddCubicCanonicalPolynomialDescent",
+    "AdmissibleOddCubicPolynomialPullback"
+  ],
+  "domain": "Every characteristic-zero field; regular unit-center winding-one odd-cubic-height phases. Canonical polynomial quotient and admissible converse, with rational selected quotient coordinate and both pulled-back coefficients polynomial.",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "All-characteristic-zero rational-u descent and selected branch normalization for unit odd-cubic phases."
+    },
+    {
+      "retained_path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "exact_use": "Exact/log splitting, genuine sigma action on rational primitive part, and uniqueness used to identify R=Rbar(w)."
+    },
+    {
+      "retained_path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+      "exact_use": "Existing fixed-root examples and their stable-field degree; example/control antecedent, not an indispensable hypothesis of universal descent."
+    },
+    {
+      "retained_path": "HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md",
+      "sha256": "94be4b772da0dfb9ba1f4155a53c68990c51b931a1685b61c518aec28882a4d2",
+      "exact_use": "Existing all-order Q-deformed pure phases and marked witnesses used to test the pullback and marker identities."
+    },
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "exact_use": "Existing hyperbolic inverse coordinate and old ell1 examples; exact example/control antecedent."
+    },
+    {
+      "retained_path": "sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "exact_use": "Theorem9.19 printedp117, Luroth over the original arbitrary coefficient field K."
+    }
+  ],
+  "self_contained_arguments": [
+    "Canonical rational primitive part overK, full stable fieldK(u,R,T), and omega=Tdu descent.",
+    "The only zero of dx/C forces total ramification at infinity b=g, without a Galois cover assumption.",
+    "Unique polynomial generator w0=0,wprime0=1, polynomial quotient Cbar and Dbar, and exact quotient purity.",
+    "Admissible converse and exact ALL-m angular moment equality for every polynomial marker Gbar(z); no arbitrary-marker safety iff.",
+    "Rational primitive parts commute with polynomial pullback by exact/log uniqueness, proving full stable field downstairs and genuine rational return there.",
+    "Exact coefficient-degree, root-count and filtered-degree transformations."
+  ],
+  "converse_conditions": [
+    "w inK[x],w0=0,wprime0=1",
+    "Normalized polynomial Cbar,Dbar with rational selected inverse coordinate",
+    "BOTH expressions in(P1) are polynomials; Cpolynomialalone is insufficient"
+  ],
+  "verification": {
+    "checker": "verify_odd_cubic_canonical_polynomial_descent.py",
+    "receipt": "odd_cubic_canonical_polynomial_descent_verification.json",
+    "method": "54hyperbolic and42fixed-root exact polynomial pullbacks,3544DIRECT RAW marked-moment equalities, an admissible NONPURE reverse-criterion control, and guards rejecting nonpolynomial C or D. Finite examples do not establish the universal theorem.",
+    "review_status": "Root and arithmetic independently audited the universal descent over K, normalized uniqueness, exact full field identity and degree/root counts. Root checked both admissible purity directions and all-m composed-marker identity, then made the checker portable and replayed its exact canonical source. Review remains internal."
+  },
+  "not_claimed": [
+    "No arbitrary polynomial w preserves polynomial coefficients or purity without admissibility.",
+    "No assertion original rational return exists when g>1; it may be algebraic or rational.",
+    "No safety equivalence for arbitrary original or sphere markers; only the displayed polynomial-composed marker equality.",
+    "No all-order assertion from finite-prefix controls; no external human review, formal proof-assistant or historical-priority claim."
+  ],
+  "inspected_classical_context": [
+    {
+      "source": "Stacks Project Section53.12, tag0C1B",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "locator": "Local parameter calculation preceding Lemma53.12.4",
+      "actual_statement_inspected": true,
+      "role": "Characteristic-zero ramification differential formula; proved directly here."
+    },
+    {
+      "source": "F. Pakovich, Generalized second Ritt theorem and explicit solution of the polynomial moment problem",
+      "url": "https://www.cs.bgu.ac.il/~pakovich/Publications/tri.pdf",
+      "locator": "Theorem1.2 printedp709/PDFp6 and polynomial hypotheses",
+      "actual_statement_inspected": true,
+      "role": "Composition antecedent only. Its polynomial segment-moment hypotheses do not directly supply the present rational-differential quotient theorem."
+    }
+  ]
+}

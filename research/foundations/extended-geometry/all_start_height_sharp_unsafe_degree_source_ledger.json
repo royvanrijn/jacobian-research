@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+  "proof_labels": [
+    "AllStartSharpMinimumUnsafeDegree",
+    "AllStartMinimumDegreeClassification"
+  ],
+  "domain": "Every characteristic-zero field, every integer starting height a>=0, entire regular winding-one two-term class t^a(C+t\u00b2D)/x. Sharp minimum unsafe degree2a+4 and unique normalized unit-center equality family.",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "exact_use": "Retained repaired all-odd-start rationality, endpoint criterion, exact least-degree formula and zero-center safety; bounded-output-weight proof used for the exceptional safe phase."
+    },
+    {
+      "retained_path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "exact_use": "FunctionFieldExactLogSeparation applies to any rational differential, yielding the exact rational-primitive inverse-branch difference; no odd-cubic center classification imported."
+    },
+    {
+      "retained_path": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "exact_use": "Existing all-integer-height F_k family Theorem5.5/(5.11), all-order pure and fixed-Z marked moment identities, primitive radial lift and no proper powers. Existing witness antecedent; not a new construction."
+    }
+  ],
+  "self_contained_arguments": [
+    "Even-a endpoint purity forces Phi1, hence rational selected X,u, includinga0.",
+    "Even zero-center first two moments give a strictly positive rational determinant; odd zero-center imported.",
+    "Exact/log split gives genuine E=K(u,R) involution and map-degree equality without Luroth or return extension.",
+    "Finite/infinite pole comparison forces one local D multiplicity>=a+3.",
+    "Equality degD=a+3 leaves one possible P/H root; J-root pole-gain budget excludes every nonconstant J.",
+    "All directions of minimal Ddegree/minimal phasedegree/explicit normalized family equivalence; existing F_k witnesses attain it.",
+    "Unique t-degree-at-most-one normal form proves exact least-degree formula for both height parities."
+  ],
+  "verification": {
+    "checker": "verify_all_start_height_sharp_unsafe_degree.py",
+    "receipt": "all_start_height_sharp_unsafe_degree_verification.json",
+    "method": "Exact rational partial fractions, map-degree/pole-order controls, direct raw sphere moments and literal original four-variable contractions. Bounded controls are separate from the universal proof.",
+    "review_status": "Root and arithmetic independently audited all finite/infinite pole orders, a0 simple-log boundary, exact/log stable-field degree equality, universal least-degree normal form and equality-case pole-gain budget. Focused exact replay was independently repeated internally. Canonical portable replay does not imply external or formal assurance."
+  },
+  "not_claimed": [
+    "No minimum degree for arbitrary height profiles or arbitrary Image phases.",
+    "No rational return on original K(x), and no general classification of which coefficients are pure.",
+    "No new construction or historical-priority claim; sharp witness family already retained.",
+    "No all-order inference from finite moment prefixes."
+  ]
+}

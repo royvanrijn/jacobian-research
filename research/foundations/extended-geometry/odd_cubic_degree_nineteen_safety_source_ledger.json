@@ -1,0 +1,58 @@
+{
+  "title": "Degree19 safety in the full odd-cubic class",
+  "theorem": "OddCubicDegreeNineteenSafety",
+  "proof": "ODD_CUBIC_DEGREE_NINETEEN_SAFETY.md",
+  "checker": "verify_odd_cubic_degree_nineteen_safety.py",
+  "input": "odd_cubic_degree_nineteen_safety_certificates.json",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_CANONICAL_POLYNOMIAL_DESCENT.md",
+      "location": "canonical",
+      "sha256": "d26d8ea2b42c0e1a6a407fb37ecf475f2a2c1046ca326eb348d39aaf2d7204de",
+      "scope": "Canonical polynomial quotient, normalized full stable field, degrees and exact marked transfer."
+    },
+    {
+      "retained_path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "location": "canonical",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+      "scope": "One-root pure degree alternatives, rational primitive and two-root related exclusions."
+    },
+    {
+      "retained_path": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "location": "canonical",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
+      "scope": "No pure unit-center exact degree7 quotient and two-root exclusion."
+    },
+    {
+      "retained_path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "location": "canonical",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "scope": "All-degree zero-center safety and finite-nonzero-infinity composite-degree obstruction."
+    },
+    {
+      "retained_path": "ODD_CUBIC_DEGREE_NINETEEN_SAFETY.md",
+      "location": "package",
+      "sha256": "01adc8c6a756583d5826d9cdc6ba797d5424aae21b7f2eec3b0630b9169ab3b4",
+      "scope": "Complete written degree19 proof."
+    },
+    {
+      "retained_path": "odd_cubic_degree_nineteen_safety_certificates.json",
+      "location": "package",
+      "sha256": "4c86724709e7f52463bf9aee6640b564cd515c29fb98a4fe2dd4318e6c1f179b",
+      "scope": "Full ten normal-form records,106 literal moving multipliers,three reflection certificates."
+    }
+  ],
+  "primary_interface": "Classical Luroth and exact/log inputs are pinned through the canonical polynomial-descent source; no new external analytic theorem is imported.",
+  "verification_scope": "Root checked the complete hand degree cases, all ten moving normal forms and three reflection coefficient contradictions. Arithmetic supplied exact literal certificates; moments and geometry separately read the final standalone text and independently replayed the complete rational identities, including a separate rational-differentiation reconstruction. All review is internal; no external or formal assurance.",
+  "limitations": [
+    "No arbitrary degree19 Image or wider-profile theorem.",
+    "No finite-prefix purity inference.",
+    "No formal verification, external human review or established historical priority."
+  ],
+  "runtime_contract": {
+    "assertions_required": true,
+    "optimized_python": "Explicit RuntimeError before computation."
+  },
+  "schema_version": 1,
+  "date": "2026-11-19"
+}

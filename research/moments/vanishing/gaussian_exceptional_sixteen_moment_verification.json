@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "sources": {
+    "verify_gaussian_exceptional_sixteen_moments.py": "558e40a86c29f7d338da76b137b321ba1a879bea8d552f2f61a655cba0ff173b",
+    "GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md": "de63af741af855ef9b559862335414d533e72130fad231c34193f58d4c9a92c4",
+    "gaussian_exceptional_sixteen_moment_certificate.json.gz": "a1f696d71cf2336eb85ce72cb25c1f14f967b9413cd2038594907f60a4013091"
+  },
+  "weights": {
+    "a": 3,
+    "b": 2,
+    "c": 1,
+    "d": 3,
+    "e": 2,
+    "f": 4
+  },
+  "first_ten_moment_pivot_determinant": "117045818861216071680000000",
+  "initial_weights": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "initial_term_counts": {
+    "11": 111,
+    "12": 150,
+    "13": 190,
+    "14": 247,
+    "15": 309,
+    "16": 390
+  },
+  "prime": 32003,
+  "modular_chart_checks": {
+    "c_zero_powers": {
+      "a": 12,
+      "b": 18,
+      "d": 12,
+      "e": 18,
+      "f": 9
+    },
+    "c_one_reduced_groebner_basis": [
+      "1"
+    ],
+    "c_one_msolve_input_sha256": "18afaa63894385e5bac8764d6c7b8967442cee9ec79259745ba8bb68e56445dc",
+    "c_one_msolve_options": [
+      "-g",
+      "2",
+      "-l",
+      "2"
+    ],
+    "c_one_singular_cross_check": true
+  },
+  "weighted_complete_intersection_length": 40040,
+  "scope": "Local transverse slice at the exceptional orbit only."
+}

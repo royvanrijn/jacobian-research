@@ -62,6 +62,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | Two-sided protected defects give augmentation rank at most b-k | Internal result | proved | [Source](representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md) |
 | Exact free-meridian stabilizers are precisely mobile braid groups | Internal result | proved | [Source](representations/FREE_MERIDIAN_STABILIZERS.md) |
 | All protected U DT colorings obey the closing support bound | Internal result | proved | [Source](representations/PROTECTED_U_DOUBLE_TRANSPOSITION_CLASSIFICATION.md) |
+| Alexander-module generator bounds for protected braid closures | Internal result | proved | [Source](representations/PROTECTED_ALEXANDER_MODULE.md) |
 | Every two-cable of the explicit gap families has actual augmentation gap at most one | Internal result | proved | [Source](representations/TWO_CABLE_AUGMENTATION_RANK_BARRIER.md) |
 | Universal covector/root-cohomology equivalence and protected rank-one ceiling | Internal result | proved | [Source](representations/RANK_ONE_COHOMOLOGY_COVECTOR_BARRIER.md) |
 

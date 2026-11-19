@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "scope": "Arithmetic controls for the separate universal proof. Exhaustive degree17 quotient integer branches and the entire forced residual rational derivative identity. No finite moment-prefix assertion, no classification beyond the stated odd-cubic class.",
+  "integer_branches": {
+    "D_dominant_poles": [
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        5,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "D_dominant_moving_zeros": [
+      [
+        2,
+        4,
+        8
+      ],
+      [
+        14,
+        2,
+        2
+      ]
+    ],
+    "D_dominant_fixed_zeros": [
+      [
+        1,
+        15
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        14,
+        2
+      ]
+    ],
+    "C_dominant_residual": [
+      [
+        1,
+        17,
+        15,
+        4,
+        17,
+        18
+      ]
+    ],
+    "reflection_pairs": [
+      [
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          4,
+          7,
+          6
+        ]
+      ]
+    ]
+  },
+  "exact_reflection": {
+    "product_rule_derivative_terms": 4,
+    "even_reciprocal_terms": 6,
+    "literal_nonzero_constant": 432,
+    "corrupt_coefficient_rejected": true
+  },
+  "schema_version": 1,
+  "status": "passed",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "pins": [
+    {
+      "path": "ODD_CUBIC_DEGREE_SEVENTEEN_SAFETY.md",
+      "sha256": "e6af28e5d8fe9a9615dd4fe0f6d1ed04f9cc1079b8c3e84d935c14fd61cece9f"
+    },
+    {
+      "path": "verify_odd_cubic_degree_seventeen_safety.py",
+      "sha256": "a95b667ceaf0f04aa4506a660ce9166580e69b7fea28f5dab0a26e3beb74dba1"
+    },
+    {
+      "path": "odd_cubic_degree_seventeen_safety_source_ledger.json",
+      "sha256": "b17f8fdb745a50f35693765d6da536ba2347e4ac7ef35c0f3896a89787385fa8"
+    },
+    {
+      "path": "ODD_CUBIC_CANONICAL_POLYNOMIAL_DESCENT.md",
+      "sha256": "d26d8ea2b42c0e1a6a407fb37ecf475f2a2c1046ca326eb348d39aaf2d7204de"
+    },
+    {
+      "path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826"
+    },
+    {
+      "path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6"
+    },
+    {
+      "path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542"
+    },
+    {
+      "path": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958"
+    },
+    {
+      "path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851"
+    }
+  ]
+}

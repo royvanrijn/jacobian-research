@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ODD_CUBIC_DEGREE_SEVENTEEN_SAFETY.md",
+  "proof_labels": [
+    "OddCubicDegreeSeventeenSafety"
+  ],
+  "domain": "Every characteristic-zero field; full regular winding-one odd-cubic-height class t(C+t\u00b2D)/x, exact least polynomial degree17. Unit-center pure phases excluded; zero-center pure phases safe.",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_CANONICAL_POLYNOMIAL_DESCENT.md",
+      "location": "retained",
+      "sha256": "d26d8ea2b42c0e1a6a407fb37ecf475f2a2c1046ca326eb348d39aaf2d7204de",
+      "exact_use": "Canonical normalized polynomial quotient with full stable field, genuine rational Mobius return, and exact coefficient/phase degree identities."
+    },
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "location": "retained",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "Unit-center degree<=5 safety, including degree4 quotient obstruction; rationality of selected coordinate and endpoint identities."
+    },
+    {
+      "retained_path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "location": "retained",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+      "exact_use": "One-root exact degree alternatives, rational primitive and squarefree-center exclusions."
+    },
+    {
+      "retained_path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "location": "retained",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "exact_use": "Exact/log separation; actual one-double-root degree alternatives needed for quotient c4/e8, and exact-prime17 exclusion in the c5 pole case."
+    },
+    {
+      "retained_path": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "location": "retained",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
+      "exact_use": "Two-root injective logarithm obstruction and exact rational primitive map degree. The reflection capacity inequality is explicitly rederived in the present proof Section1."
+    },
+    {
+      "retained_path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "location": "retained",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "exact_use": "Repaired all-degree zero-center safety and finite nonzero inverse-limit composite-degree corollary."
+    }
+  ],
+  "self_contained_arguments": [
+    "Rational-return pole/zero infinity lemmas on the genuine quotient only.",
+    "Exhaustive D-dominant pole, moving-zero and fixed-zero cases, including equal-degree quotient corner.",
+    "C-dominant capacity forces one exact two-pair reflection normal form.",
+    "Full rational derivative identity is impossible by literal integer Bezout432."
+  ],
+  "verification": {
+    "checker": "verify_odd_cubic_degree_seventeen_safety.py",
+    "receipt": "odd_cubic_degree_seventeen_safety_verification.json",
+    "method": "Integer quotient-degree possibilities and exact forced rational numerator reconstruction; these finite controls do not prove the imported structural arguments.",
+    "review_status": "Root and arithmetic independently read and audited the complete quotient case split, equal-degree branch and exact residual coefficient contradiction. Moments and arithmetic independently replayed the focused checker. Canonical portable replay remains internal, with no external or formal assurance."
+  },
+  "not_claimed": [
+    "No obstruction to arbitrary degree17 Image polynomials or to wider height profiles.",
+    "No moment-prefix computation implies all-order purity or safety.",
+    "No involution extension to the original x-line without first taking the canonical polynomial quotient."
+  ]
+}

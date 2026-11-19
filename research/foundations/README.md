@@ -2,7 +2,7 @@
 
 <!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->
 
-Precisely scoped Lean developments supporting published papers and current manuscripts.
+Formal developments and characteristic-zero Hopf/Image phase classifications, including the sharp prime threshold thirteen in the full winding-one odd-cubic class.
 
 **Authored assessment:** Formal scope varies by project. GMC2 is conditional on two named axiom interfaces; binary GVC and full generic discriminant geometry remain partial.
 
@@ -19,6 +19,10 @@ Precisely scoped Lean developments supporting published papers and current manus
 | Exact/logarithmic purity reduction and one-double-root prime obstruction | Internal result | proved | [Source](extended-geometry/MIXED_CENTER_LOGARITHMIC_SEPARATION.md) |
 | Odd-start rationality, full zero-center safety and a quintic exclusion | Internal result | proved | [Source](extended-geometry/ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md) |
 | Odd-cubic septic safety and the sharp odd unsafe threshold nine | Internal result | proved | [Source](extended-geometry/ODD_CUBIC_DEGREE_SEVEN_SAFETY.md) |
+| Odd-cubic degree11 safety and the sharp prime threshold thirteen | Internal result | proved | [Source](extended-geometry/ODD_CUBIC_DEGREE_ELEVEN_SAFETY.md) |
+| Canonical polynomial descent and reversible purity transport for odd-cubic phases | Internal result | proved | [Source](extended-geometry/ODD_CUBIC_CANONICAL_POLYNOMIAL_DESCENT.md) |
+| All-height safety classification by the two fixed original markers Z and Z squared | Internal result | proved | [Source](extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md) |
+| Full odd-cubic degree17 safety by canonical quotient and literal pole obstruction | Internal result | proved | [Source](extended-geometry/ODD_CUBIC_DEGREE_SEVENTEEN_SAFETY.md) |
 
 **Computed obligations:** 11 unresolved; 1 resolved within their exact scope.
 
@@ -35,14 +39,18 @@ Scope limits:
 - The full unit-center one-pole odd-cubic class is now classified, including constant and linear boundaries, two explicit nonconstant unsafe branches and fixed original markers. It is exactly the rational-primitive dx/C pure class. All nonconstant squarefree centers are excluded in every degree; the remaining multi-root repeated-center class has an explicit open obligation. Restricted odd prime degrees are exactly3mod10 greater than3, without a global prime-degree conclusion.
 - All unit-center odd-cubic purity now separates into rational and logarithmic inverse-branch conditions; the logarithmic component cannot be silently discarded. A center with exactly one double root and otherwise simple roots has no odd prime unsafe degree. General triple/multiple repeated-center classification remains open.
 - Rational inverse coordinate, height scale and amplitude are forced for every pure odd-start t^a(C+t^2D)/x. The full zero-center branch is safe and determined by just its second and fourth moments via a symbolic Z[a] determinant. Starting height3 is safe through degree5, and any pure unit-center phase with finite nonzero u at infinity has composite degree. These restrictions preserve the broader quintic/septic gaps.
-- The entire odd-cubic winding-one class is safe at every odd least degree<=7; the retained F9 makes9 the exact least odd unsafe degree in this class. Every two-root unit center is excluded in all degrees. Prime11 and higher-degree multi-root centers remain research targets; this does not settle arbitrary quintics or septics.
+- The entire odd-cubic winding-one class is safe at every odd least degree<=7; the retained F9 makes9 the exact least odd unsafe degree in this class. Every two-root unit center is excluded in all degrees. Prime17,19 and higher-degree multi-root centers remain research targets; this does not settle arbitrary quintics or septics.
+- Every pure odd-cubic phase of exact least degree11 is safe; there is no unit-center phase at that degree. The retained F13 and all lower prime exclusions give exact least PRIME unsafe degree13 in this full coordinate class, while arbitrary Image phases remain outside scope.
+- Every nonconstant pure unit-center odd-cubic phase has a unique normalized polynomial descent over its original coefficient field to a genuine rational-return quotient. Admissible polynomial covers preserve purity both ways and every composed x-only marker moment. Polynomiality of BOTH coefficients remains essential; the remaining quotient classification is open.
+- Across every integer starting height a>=0 in the exact two-term profile, ALL-ORDER PURITY plus eventual vanishing for the two fixed original markers Z,Z^2 is equivalent to safety for every fixed original marker and to the explicit normal forms. Even a needs onlyZ. This is a safety theorem under purity, not a finite-prefix test or a full pure-unit classification.
+- There is no unit-center pure odd-cubic phase of exact least degree17; all zero-center pure phases at that degree are safe. The claim uses the full canonical polynomial quotient and an exact rational-identity obstruction, not a moment prefix or a global degree17 Image classification.
 
 Tracked obligations (computed states):
 
 - **formalization / open:** [Formalize the complete binary GVC proof, including the moving-envelope argument.](formal/gvc/README.md) — FORMAL-BINARY-GVC-COMPLETE
 - **formalization / open:** [Formalize the full generic tangent-pencil geometric theorem beyond the checked tangent, contact and collision algebra.](formal/discriminant-pencils/README.md) — FORMAL-DISCRIMINANT-COMPLETE
 - **verification / open:** [Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.](README.md) — GAP-FOUNDATIONS-2
-- **mathematical / open:** [Classify the remaining odd-cubic centers with at least three geometric roots and repeated factors; determine the residual prime11 case beyond the new sharp odd threshold9.](extended-geometry/ODD_CUBIC_DEGREE_SEVEN_SAFETY.md) — GAP-HOPF-ODD-CUBIC-MULTIROOT-CENTERS
-- **mathematical / open:** [Classify pure unit-center odd-start phases beyond the exact known inverse-coordinate fibers, especially zero/pole behavior at infinity and the remaining low-prime cases.](extended-geometry/ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md) — GAP-HOPF-ODD-START-UNIT-CENTER-CLASSIFICATION
+- **mathematical / open:** [Classify remaining pure rational-return odd-cubic quotients and admissible polynomial covers. Prime17 is excluded; the distinct prime19 moving-infinity analysis and higher individual degrees are separate obligations.](extended-geometry/ODD_CUBIC_DEGREE_SEVENTEEN_SAFETY.md) — GAP-HOPF-ODD-CUBIC-MULTIROOT-CENTERS
+- **mathematical / open:** [Classify which nontrivial unit-center two-term starting-height phases are pure. Safety under all-order purity is already completely classified at every integer height by the two fixed original markers Z,Z^2; broader height profiles remain open.](extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md) — GAP-HOPF-ODD-START-UNIT-CENTER-CLASSIFICATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

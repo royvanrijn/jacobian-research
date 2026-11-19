@@ -1,0 +1,8348 @@
+{
+  "passed": true,
+  "scope": "Exact bounded integer/root-pattern and rational partial-fraction controls; original RETAINED F13 contractions support the existing upper bound. Stable-field, pullback-differential, zero-count, and fixed-infinity T-value arguments in the separate proof establish universal degree11 safety.",
+  "degree_eleven_patterns": [
+    {
+      "c": 1,
+      "e": 9,
+      "multiplicities": [
+        1
+      ],
+      "h": 1,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 3,
+      "e": 9,
+      "multiplicities": [
+        3
+      ],
+      "h": 1,
+      "R_degree": 2,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 3,
+      "e": 9,
+      "multiplicities": [
+        2,
+        1
+      ],
+      "h": 2,
+      "R_degree": 1,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 3,
+      "e": 9,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        5
+      ],
+      "h": 1,
+      "R_degree": 4,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        4,
+        1
+      ],
+      "h": 2,
+      "R_degree": 3,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2
+      ],
+      "h": 2,
+      "R_degree": 3,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        3,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 2,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 1,
+          "degree_u": 4,
+          "last_exclusion": "fixed infinity forces T=1 but its value is zero"
+        }
+      ]
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 2,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 1,
+          "degree_u": 4,
+          "last_exclusion": "fixed infinity forces T=1 but its value is zero"
+        }
+      ]
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 5,
+      "e": 9,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        7
+      ],
+      "h": 1,
+      "R_degree": 6,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        6,
+        1
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        5,
+        2
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        5,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        4,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 5,
+          "degree_u": 6,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 5,
+          "degree_u": 6,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 5,
+          "degree_u": 6,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 7,
+      "e": 9,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        9
+      ],
+      "h": 1,
+      "R_degree": 8,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        8,
+        1
+      ],
+      "h": 2,
+      "R_degree": 7,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        7,
+        2
+      ],
+      "h": 2,
+      "R_degree": 7,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        7,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        6,
+        3
+      ],
+      "h": 2,
+      "R_degree": 7,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        6,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        6,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        5,
+        4
+      ],
+      "h": 2,
+      "R_degree": 7,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        5,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        5,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        5,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        5,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        4,
+        4,
+        1
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3,
+        2
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        4,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        3
+      ],
+      "h": 3,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 9,
+      "e": 9,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        11
+      ],
+      "h": 1,
+      "R_degree": 10,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        11
+      ],
+      "h": 1,
+      "R_degree": 10,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        11
+      ],
+      "h": 1,
+      "R_degree": 10,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        11
+      ],
+      "h": 1,
+      "R_degree": 10,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        11
+      ],
+      "h": 1,
+      "R_degree": 10,
+      "exclusion": "one-pole degree classification",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        10,
+        1
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        10,
+        1
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        10,
+        1
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        10,
+        1
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        10,
+        1
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        9,
+        2
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        9,
+        2
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        9,
+        2
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        9,
+        2
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        9,
+        2
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        9,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        9,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        9,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        9,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        9,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        8,
+        3
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        8,
+        3
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        8,
+        3
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        8,
+        3
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        8,
+        3
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        8,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        8,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        8,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        8,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        8,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        7,
+        4
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        7,
+        4
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        7,
+        4
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        7,
+        4
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        7,
+        4
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        7,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        7,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        7,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        7,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        7,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        7,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        7,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        7,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        7,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        7,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        5
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        5
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        5
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        5
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        5
+      ],
+      "h": 2,
+      "R_degree": 9,
+      "exclusion": "two-root logarithmic exclusion",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        4,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        4,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        4,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        4,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        4,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        3,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        3,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        3,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        3,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        3,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        5,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        5,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        5,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        5,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        5,
+        1
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        4,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        4,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        4,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        4,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        4,
+        2
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        3,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        3,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        3,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        3,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        3,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        3,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        3,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        3,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        3,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        3,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        4,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        4,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 2,
+          "b": 2,
+          "k": 7,
+          "degree_u": 16,
+          "last_exclusion": "disjoint simple-root pole capacity"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        4,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        4,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        4,
+        3
+      ],
+      "h": 3,
+      "R_degree": 8,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 13,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "h": 4,
+      "R_degree": 7,
+      "exclusion": "final pole or fixed-infinity T-value exclusion",
+      "surviving_filter_cells": [
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 12,
+          "last_exclusion": "rational-reflection pair capacity"
+        },
+        {
+          "g": 1,
+          "b": 1,
+          "k": 11,
+          "degree_u": 14,
+          "last_exclusion": "rational-reflection maximal pole bound"
+        }
+      ]
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "h": 5,
+      "R_degree": 6,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 6,
+      "R_degree": 5,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 4,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 8,
+      "R_degree": 3,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 9,
+      "R_degree": 2,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 10,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 10,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 10,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 10,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 10,
+      "R_degree": 1,
+      "exclusion": "local ramification/parity/degree filters",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 1,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 11,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 3,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 11,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 5,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 11,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 7,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 11,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    },
+    {
+      "c": 11,
+      "e": 9,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 11,
+      "R_degree": 0,
+      "exclusion": "squarefree excluded",
+      "surviving_filter_cells": []
+    }
+  ],
+  "six_filter_cells": [
+    [
+      5,
+      9,
+      3,
+      2,
+      2,
+      2,
+      2,
+      1,
+      4
+    ],
+    [
+      7,
+      9,
+      4,
+      3,
+      5,
+      1,
+      1,
+      5,
+      6
+    ],
+    [
+      11,
+      3,
+      3,
+      8,
+      14,
+      2,
+      2,
+      7,
+      16
+    ],
+    [
+      11,
+      5,
+      4,
+      7,
+      13,
+      1,
+      1,
+      13,
+      14
+    ],
+    [
+      11,
+      9,
+      4,
+      7,
+      11,
+      1,
+      1,
+      11,
+      12
+    ],
+    [
+      11,
+      9,
+      4,
+      7,
+      11,
+      1,
+      1,
+      11,
+      14
+    ]
+  ],
+  "partial_fraction_controls": [
+    {
+      "partition": [
+        5
+      ],
+      "C_coefficients": [
+        "1",
+        "-5",
+        "10",
+        "-10",
+        "5",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-3/2",
+        "1",
+        "-1/4"
+      ],
+      "R_denominator": [
+        "1",
+        "-4",
+        "6",
+        "-4",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-9/2",
+        "8",
+        "-7",
+        "3",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2",
+        "3",
+        "-5/3"
+      ],
+      "R_denominator": [
+        "-1",
+        "3",
+        "-3",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-4",
+        "25/4",
+        "-19/4",
+        "7/4",
+        "-1/4"
+      ],
+      "R_numerator": [
+        "0",
+        "10",
+        "-20",
+        "8"
+      ],
+      "R_denominator": [
+        "-2",
+        "5",
+        "-4",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "-12",
+        "12"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-23/6",
+        "17/3",
+        "-4",
+        "4/3",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0",
+        "-3/2",
+        "3"
+      ],
+      "R_denominator": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "-21/4",
+        "6",
+        "-3/4"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-10/3",
+        "17/4",
+        "-31/12",
+        "3/4",
+        "-1/12"
+      ],
+      "R_numerator": [
+        "0",
+        "18",
+        "-12"
+      ],
+      "R_denominator": [
+        "2",
+        "-3",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "15",
+        "-12",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-37/12",
+        "85/24",
+        "-15/8",
+        "11/24",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-4"
+      ],
+      "R_denominator": [
+        "-1",
+        "1"
+      ],
+      "R_degree": 1,
+      "residues": [
+        "22/3",
+        "-12",
+        "6",
+        "-4/3"
+      ]
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-137/60",
+        "15/8",
+        "-17/24",
+        "1/8",
+        "-1/120"
+      ],
+      "R_numerator": [
+        "0"
+      ],
+      "R_denominator": [
+        "1"
+      ],
+      "R_degree": 0,
+      "residues": [
+        "-5",
+        "20",
+        "-30",
+        "20",
+        "-5"
+      ]
+    },
+    {
+      "partition": [
+        7
+      ],
+      "C_coefficients": [
+        "1",
+        "-7",
+        "21",
+        "-35",
+        "35",
+        "-21",
+        "7",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-5/2",
+        "10/3",
+        "-5/2",
+        "1",
+        "-1/6"
+      ],
+      "R_denominator": [
+        "1",
+        "-6",
+        "15",
+        "-20",
+        "15",
+        "-6",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-13/2",
+        "18",
+        "-55/2",
+        "25",
+        "-27/2",
+        "4",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2",
+        "6",
+        "-26/3",
+        "35/6",
+        "-47/30"
+      ],
+      "R_denominator": [
+        "-1",
+        "5",
+        "-10",
+        "10",
+        "-5",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-6",
+        "61/4",
+        "-85/4",
+        "35/2",
+        "-17/2",
+        "9/4",
+        "-1/4"
+      ],
+      "R_numerator": [
+        "0",
+        "18",
+        "-72",
+        "304/3",
+        "-62",
+        "41/3"
+      ],
+      "R_denominator": [
+        "-2",
+        "9",
+        "-16",
+        "14",
+        "-6",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "-20",
+        "20"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-35/6",
+        "43/3",
+        "-115/6",
+        "15",
+        "-41/6",
+        "5/3",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0",
+        "-15/8",
+        "33/4",
+        "-75/8",
+        "15/4"
+      ],
+      "R_denominator": [
+        "1",
+        "-4",
+        "6",
+        "-4",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "-93/16",
+        "6",
+        "-3/16"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-11/2",
+        "51/4",
+        "-129/8",
+        "12",
+        "-21/4",
+        "5/4",
+        "-1/8"
+      ],
+      "R_numerator": [
+        "0",
+        "-164",
+        "525",
+        "-1853/3",
+        "929/3",
+        "-167/3"
+      ],
+      "R_denominator": [
+        "-4",
+        "16",
+        "-25",
+        "19",
+        "-7",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "80",
+        "-80"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-16/3",
+        "143/12",
+        "-173/12",
+        "61/6",
+        "-25/6",
+        "11/12",
+        "-1/12"
+      ],
+      "R_numerator": [
+        "0",
+        "39",
+        "-207/2",
+        "185/2",
+        "-26"
+      ],
+      "R_denominator": [
+        "2",
+        "-7",
+        "9",
+        "-5",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "147/4",
+        "-36",
+        "-3/4"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-61/12",
+        "257/24",
+        "-289/24",
+        "31/4",
+        "-17/6",
+        "13/24",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-55/9",
+        "107/9",
+        "-64/9"
+      ],
+      "R_denominator": [
+        "-1",
+        "3",
+        "-3",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "575/54",
+        "-12",
+        "3/2",
+        "-4/27"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        3,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-29/6",
+        "39/4",
+        "-85/8",
+        "27/4",
+        "-5/2",
+        "1/2",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-180",
+        "411",
+        "-288",
+        "63"
+      ],
+      "R_denominator": [
+        "4",
+        "-12",
+        "13",
+        "-6",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "-93",
+        "96",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-14/3",
+        "325/36",
+        "-337/36",
+        "101/18",
+        "-35/18",
+        "13/36",
+        "-1/36"
+      ],
+      "R_numerator": [
+        "0",
+        "-165",
+        "717/2",
+        "-453/2",
+        "42"
+      ],
+      "R_denominator": [
+        "6",
+        "-17",
+        "17",
+        "-7",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "-207/4",
+        "36",
+        "63/4"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-55/12",
+        "26/3",
+        "-419/48",
+        "121/24",
+        "-5/3",
+        "7/24",
+        "-1/48"
+      ],
+      "R_numerator": [
+        "0",
+        "124/3",
+        "-76",
+        "92/3"
+      ],
+      "R_denominator": [
+        "-2",
+        "5",
+        "-4",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "-374/9",
+        "36",
+        "6",
+        "-4/9"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-257/60",
+        "893/120",
+        "-809/120",
+        "41/12",
+        "-29/30",
+        "17/120",
+        "-1/120"
+      ],
+      "R_numerator": [
+        "0",
+        "-65/12",
+        "95/12"
+      ],
+      "R_denominator": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "-2075/144",
+        "20",
+        "-15/2",
+        "20/9",
+        "-5/16"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-47/12",
+        "113/18",
+        "-769/144",
+        "47/18",
+        "-53/72",
+        "1/9",
+        "-1/144"
+      ],
+      "R_numerator": [
+        "0",
+        "-204",
+        "240",
+        "-60"
+      ],
+      "R_denominator": [
+        "-6",
+        "11",
+        "-6",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "40",
+        "36",
+        "-72",
+        "-4"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-227/60",
+        "29/5",
+        "-373/80",
+        "17/8",
+        "-11/20",
+        "3/40",
+        "-1/240"
+      ],
+      "R_numerator": [
+        "0",
+        "40",
+        "-30"
+      ],
+      "R_denominator": [
+        "2",
+        "-3",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "185/6",
+        "-20/3",
+        "-30",
+        "20/3",
+        "-5/6"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-69/20",
+        "847/180",
+        "-2359/720",
+        "91/72",
+        "-49/180",
+        "11/360",
+        "-1/720"
+      ],
+      "R_numerator": [
+        "0",
+        "-6"
+      ],
+      "R_denominator": [
+        "-1",
+        "1"
+      ],
+      "R_degree": 1,
+      "residues": [
+        "137/10",
+        "-30",
+        "30",
+        "-20",
+        "15/2",
+        "-6/5"
+      ]
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-363/140",
+        "469/180",
+        "-967/720",
+        "7/18",
+        "-23/360",
+        "1/180",
+        "-1/5040"
+      ],
+      "R_numerator": [
+        "0"
+      ],
+      "R_denominator": [
+        "1"
+      ],
+      "R_degree": 0,
+      "residues": [
+        "-7",
+        "42",
+        "-105",
+        "140",
+        "-105",
+        "42",
+        "-7"
+      ]
+    },
+    {
+      "partition": [
+        9
+      ],
+      "C_coefficients": [
+        "1",
+        "-9",
+        "36",
+        "-84",
+        "126",
+        "-126",
+        "84",
+        "-36",
+        "9",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-7/2",
+        "7",
+        "-35/4",
+        "7",
+        "-7/2",
+        "1",
+        "-1/8"
+      ],
+      "R_denominator": [
+        "1",
+        "-8",
+        "28",
+        "-56",
+        "70",
+        "-56",
+        "28",
+        "-8",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        8,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-17/2",
+        "32",
+        "-70",
+        "98",
+        "-91",
+        "56",
+        "-22",
+        "5",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2",
+        "9",
+        "-21",
+        "55/2",
+        "-209/10",
+        "259/30",
+        "-319/210"
+      ],
+      "R_denominator": [
+        "-1",
+        "7",
+        "-21",
+        "35",
+        "-35",
+        "21",
+        "-7",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        7,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-8",
+        "113/4",
+        "-231/4",
+        "301/4",
+        "-259/4",
+        "147/4",
+        "-53/4",
+        "11/4",
+        "-1/4"
+      ],
+      "R_numerator": [
+        "0",
+        "26",
+        "-156",
+        "376",
+        "-478",
+        "1691/5",
+        "-1892/15",
+        "289/15"
+      ],
+      "R_denominator": [
+        "-2",
+        "13",
+        "-36",
+        "55",
+        "-50",
+        "27",
+        "-8",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-28",
+        "28"
+      ]
+    },
+    {
+      "partition": [
+        7,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-47/6",
+        "27",
+        "-161/3",
+        "203/3",
+        "-56",
+        "91/3",
+        "-31/3",
+        "2",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0",
+        "-63/32",
+        "27/2",
+        "-479/16",
+        "525/16",
+        "-2859/160",
+        "317/80"
+      ],
+      "R_denominator": [
+        "1",
+        "-6",
+        "15",
+        "-20",
+        "15",
+        "-6",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "-381/64",
+        "6",
+        "-3/64"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-15/2",
+        "99/4",
+        "-377/8",
+        "57",
+        "-363/8",
+        "95/4",
+        "-63/8",
+        "3/2",
+        "-1/8"
+      ],
+      "R_numerator": [
+        "0",
+        "-340",
+        "1773",
+        "-3821",
+        "4326",
+        "-13522/5",
+        "4407/5",
+        "-583/5"
+      ],
+      "R_denominator": [
+        "-4",
+        "24",
+        "-61",
+        "85",
+        "-70",
+        "34",
+        "-9",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "168",
+        "-168"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-22/3",
+        "283/12",
+        "-523/12",
+        "611/12",
+        "-467/12",
+        "233/12",
+        "-73/12",
+        "13/12",
+        "-1/12"
+      ],
+      "R_numerator": [
+        "0",
+        "249/4",
+        "-2319/8",
+        "4357/8",
+        "-4057/8",
+        "9331/40",
+        "-839/20"
+      ],
+      "R_denominator": [
+        "2",
+        "-11",
+        "25",
+        "-30",
+        "20",
+        "-7",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "963/16",
+        "-60",
+        "-3/16"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-85/12",
+        "175/8",
+        "-925/24",
+        "1021/24",
+        "-243/8",
+        "335/24",
+        "-95/24",
+        "5/8",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-2191/324",
+        "8401/324",
+        "-1477/36",
+        "9445/324",
+        "-6553/810"
+      ],
+      "R_denominator": [
+        "-1",
+        "5",
+        "-10",
+        "10",
+        "-5",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "22631/1944",
+        "-12",
+        "3/8",
+        "-4/243"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        4
+      ],
+      "C_coefficients": [
+        "1",
+        "-7",
+        "43/2",
+        "-38",
+        "681/16",
+        "-501/16",
+        "121/8",
+        "-37/8",
+        "13/16",
+        "-1/16"
+      ],
+      "R_numerator": [
+        "0",
+        "2232",
+        "-10624",
+        "61816/3",
+        "-62464/3",
+        "11536",
+        "-3320",
+        "388"
+      ],
+      "R_denominator": [
+        "-8",
+        "44",
+        "-102",
+        "129",
+        "-96",
+        "42",
+        "-10",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-560",
+        "560"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        3,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-41/6",
+        "245/12",
+        "-839/24",
+        "151/4",
+        "-213/8",
+        "49/4",
+        "-85/24",
+        "7/12",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-522",
+        "2229",
+        "-7435/2",
+        "3025",
+        "-2387/2",
+        "182"
+      ],
+      "R_denominator": [
+        "4",
+        "-20",
+        "41",
+        "-44",
+        "26",
+        "-8",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "-1053/4",
+        "264",
+        "-3/4"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-20/3",
+        "697/36",
+        "-385/12",
+        "1201/36",
+        "-811/36",
+        "355/36",
+        "-97/36",
+        "5/12",
+        "-1/36"
+      ],
+      "R_numerator": [
+        "0",
+        "-1353/4",
+        "11187/8",
+        "-17751/8",
+        "13497/8",
+        "-4833/8",
+        "321/4"
+      ],
+      "R_denominator": [
+        "6",
+        "-29",
+        "57",
+        "-58",
+        "32",
+        "-9",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "-1809/16",
+        "108",
+        "81/16"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        2,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-79/12",
+        "113/6",
+        "-1471/48",
+        "187/6",
+        "-983/48",
+        "26/3",
+        "-109/48",
+        "1/3",
+        "-1/48"
+      ],
+      "R_numerator": [
+        "0",
+        "2266/27",
+        "-8639/27",
+        "1336/3",
+        "-7315/27",
+        "1610/27"
+      ],
+      "R_denominator": [
+        "-2",
+        "9",
+        "-16",
+        "14",
+        "-6",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "-13843/162",
+        "84",
+        "3/2",
+        "-4/81"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-19/3",
+        "35/2",
+        "-83/3",
+        "441/16",
+        "-287/16",
+        "61/8",
+        "-49/24",
+        "5/16",
+        "-1/48"
+      ],
+      "R_numerator": [
+        "0",
+        "2520",
+        "-9432",
+        "13728",
+        "-9666",
+        "3294",
+        "-436"
+      ],
+      "R_denominator": [
+        "8",
+        "-36",
+        "66",
+        "-63",
+        "33",
+        "-9",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "627",
+        "-624",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        3,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-37/6",
+        "595/36",
+        "-1817/72",
+        "145/6",
+        "-361/24",
+        "73/12",
+        "-37/24",
+        "2/9",
+        "-1/72"
+      ],
+      "R_numerator": [
+        "0",
+        "1992",
+        "-7095",
+        "9705",
+        "-6300",
+        "1935",
+        "-225"
+      ],
+      "R_denominator": [
+        "12",
+        "-52",
+        "91",
+        "-82",
+        "40",
+        "-10",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "675/2",
+        "-360",
+        "45/2"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-73/12",
+        "385/24",
+        "-1153/48",
+        "719/32",
+        "-435/32",
+        "85/16",
+        "-31/24",
+        "17/96",
+        "-1/96"
+      ],
+      "R_numerator": [
+        "0",
+        "-4864/9",
+        "1746",
+        "-18514/9",
+        "3094/3",
+        "-1666/9"
+      ],
+      "R_denominator": [
+        "-4",
+        "16",
+        "-25",
+        "19",
+        "-7",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "7294/27",
+        "-276",
+        "6",
+        "-4/27"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        2,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-71/12",
+        "136/9",
+        "-349/16",
+        "1409/72",
+        "-1627/144",
+        "151/36",
+        "-139/144",
+        "1/8",
+        "-1/144"
+      ],
+      "R_numerator": [
+        "0",
+        "-440",
+        "4058/3",
+        "-4484/3",
+        "2038/3",
+        "-316/3"
+      ],
+      "R_denominator": [
+        "-6",
+        "23",
+        "-34",
+        "24",
+        "-8",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "1219/9",
+        "-108",
+        "-27",
+        "-4/9"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        3,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-11/2",
+        "157/12",
+        "-3815/216",
+        "179/12",
+        "-589/72",
+        "35/12",
+        "-47/72",
+        "1/12",
+        "-1/216"
+      ],
+      "R_numerator": [
+        "0",
+        "-3852",
+        "10659",
+        "-10800",
+        "5070",
+        "-1116",
+        "93"
+      ],
+      "R_denominator": [
+        "36",
+        "-132",
+        "193",
+        "-144",
+        "58",
+        "-12",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "-324",
+        "648",
+        "-324"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-65/12",
+        "911/72",
+        "-2407/144",
+        "1321/96",
+        "-703/96",
+        "121/48",
+        "-13/24",
+        "19/288",
+        "-1/288"
+      ],
+      "R_numerator": [
+        "0",
+        "1344",
+        "-3410",
+        "2974",
+        "-1066",
+        "134"
+      ],
+      "R_denominator": [
+        "-12",
+        "40",
+        "-51",
+        "31",
+        "-9",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "-806/3",
+        "396",
+        "-126",
+        "-4/3"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-31/6",
+        "1645/144",
+        "-85/6",
+        "6253/576",
+        "-3073/576",
+        "485/288",
+        "-95/288",
+        "7/192",
+        "-1/576"
+      ],
+      "R_numerator": [
+        "0",
+        "2088",
+        "-5108",
+        "4172",
+        "-1348",
+        "148"
+      ],
+      "R_denominator": [
+        "-24",
+        "74",
+        "-85",
+        "45",
+        "-11",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "-388/3",
+        "0",
+        "108",
+        "64/3"
+      ]
+    },
+    {
+      "partition": [
+        11
+      ],
+      "C_coefficients": [
+        "1",
+        "-11",
+        "55",
+        "-165",
+        "330",
+        "-462",
+        "462",
+        "-330",
+        "165",
+        "-55",
+        "11",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-9/2",
+        "12",
+        "-21",
+        "126/5",
+        "-21",
+        "12",
+        "-9/2",
+        "1",
+        "-1/10"
+      ],
+      "R_denominator": [
+        "1",
+        "-10",
+        "45",
+        "-120",
+        "210",
+        "-252",
+        "210",
+        "-120",
+        "45",
+        "-10",
+        "1"
+      ],
+      "R_degree": 10,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        10,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-21/2",
+        "50",
+        "-285/2",
+        "270",
+        "-357",
+        "336",
+        "-225",
+        "105",
+        "-65/2",
+        "6",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2",
+        "12",
+        "-116/3",
+        "75",
+        "-467/5",
+        "378/5",
+        "-1354/35",
+        "1599/140",
+        "-1879/1260"
+      ],
+      "R_denominator": [
+        "-1",
+        "9",
+        "-36",
+        "84",
+        "-126",
+        "126",
+        "-84",
+        "36",
+        "-9",
+        "1"
+      ],
+      "R_degree": 9,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        9,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-10",
+        "181/4",
+        "-489/4",
+        "219",
+        "-273",
+        "483/2",
+        "-303/2",
+        "66",
+        "-19",
+        "13/4",
+        "-1/4"
+      ],
+      "R_numerator": [
+        "0",
+        "34",
+        "-272",
+        "928",
+        "-1796",
+        "10802/5",
+        "-8272/5",
+        "27548/35",
+        "-1487/7",
+        "1739/70"
+      ],
+      "R_denominator": [
+        "-2",
+        "17",
+        "-64",
+        "140",
+        "-196",
+        "182",
+        "-112",
+        "44",
+        "-10",
+        "1"
+      ],
+      "R_degree": 9,
+      "residues": [
+        "-36",
+        "36"
+      ]
+    },
+    {
+      "partition": [
+        9,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-59/6",
+        "131/3",
+        "-231/2",
+        "202",
+        "-245",
+        "210",
+        "-127",
+        "53",
+        "-29/2",
+        "7/3",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0",
+        "-255/128",
+        "1191/64",
+        "-7837/128",
+        "7003/64",
+        "-14881/128",
+        "4741/64",
+        "-23557/896",
+        "1807/448"
+      ],
+      "R_denominator": [
+        "1",
+        "-8",
+        "28",
+        "-56",
+        "70",
+        "-56",
+        "28",
+        "-8",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "-1533/256",
+        "6",
+        "-3/256"
+      ]
+    },
+    {
+      "partition": [
+        8,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-19/2",
+        "163/4",
+        "-833/8",
+        "176",
+        "-413/2",
+        "343/2",
+        "-403/4",
+        "41",
+        "-11",
+        "7/4",
+        "-1/8"
+      ],
+      "R_numerator": [
+        "0",
+        "-580",
+        "4189",
+        "-13179",
+        "23513",
+        "-129907/5",
+        "90891/5",
+        "-274763/35",
+        "66821/35",
+        "-6991/35"
+      ],
+      "R_denominator": [
+        "-4",
+        "32",
+        "-113",
+        "231",
+        "-301",
+        "259",
+        "-147",
+        "53",
+        "-11",
+        "1"
+      ],
+      "R_degree": 9,
+      "residues": [
+        "288",
+        "-288"
+      ]
+    },
+    {
+      "partition": [
+        8,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-28/3",
+        "157/4",
+        "-1177/12",
+        "485/3",
+        "-553/3",
+        "889/6",
+        "-503/6",
+        "98/3",
+        "-25/3",
+        "5/4",
+        "-1/12"
+      ],
+      "R_numerator": [
+        "0",
+        "1377/16",
+        "-18339/32",
+        "52693/32",
+        "-41937/16",
+        "199391/80",
+        "-45221/32",
+        "494433/1120",
+        "-32701/560"
+      ],
+      "R_denominator": [
+        "2",
+        "-15",
+        "49",
+        "-91",
+        "105",
+        "-77",
+        "35",
+        "-9",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "5379/64",
+        "-84",
+        "-3/64"
+      ]
+    },
+    {
+      "partition": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-109/12",
+        "889/24",
+        "-715/8",
+        "283/2",
+        "-154",
+        "469/4",
+        "-249/4",
+        "45/2",
+        "-21/4",
+        "17/24",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-80935/11664",
+        "153853/3888",
+        "-196997/1944",
+        "204061/1458",
+        "-427867/3888",
+        "181027/3888",
+        "-340463/40824"
+      ],
+      "R_denominator": [
+        "-1",
+        "7",
+        "-21",
+        "35",
+        "-35",
+        "21",
+        "-7",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "833375/69984",
+        "-12",
+        "3/32",
+        "-4/2187"
+      ]
+    },
+    {
+      "partition": [
+        7,
+        4
+      ],
+      "C_coefficients": [
+        "1",
+        "-9",
+        "73/2",
+        "-88",
+        "2241/16",
+        "-2471/16",
+        "1925/16",
+        "-1059/16",
+        "403/16",
+        "-101/16",
+        "15/16",
+        "-1/16"
+      ],
+      "R_numerator": [
+        "0",
+        "5368",
+        "-36264",
+        "317716/3",
+        "-174496",
+        "885892/5",
+        "-340088/3",
+        "222852/5",
+        "-49168/5",
+        "13972/15"
+      ],
+      "R_denominator": [
+        "-8",
+        "60",
+        "-198",
+        "377",
+        "-456",
+        "363",
+        "-190",
+        "63",
+        "-12",
+        "1"
+      ],
+      "R_degree": 9,
+      "residues": [
+        "-1344",
+        "1344"
+      ]
+    },
+    {
+      "partition": [
+        7,
+        3,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-53/6",
+        "421/12",
+        "-661/8",
+        "1537/12",
+        "-1645/12",
+        "413/4",
+        "-164/3",
+        "239/12",
+        "-19/4",
+        "2/3",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-2103/2",
+        "13173/2",
+        "-139879/8",
+        "25499",
+        "-440437/20",
+        "224759/20",
+        "-25031/8",
+        "7313/20"
+      ],
+      "R_denominator": [
+        "4",
+        "-28",
+        "85",
+        "-146",
+        "155",
+        "-104",
+        "43",
+        "-10",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "-8445/16",
+        "528",
+        "-3/16"
+      ]
+    },
+    {
+      "partition": [
+        7,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-26/3",
+        "1213/36",
+        "-2789/36",
+        "1052/9",
+        "-364/3",
+        "1589/18",
+        "-809/18",
+        "47/3",
+        "-32/9",
+        "17/36",
+        "-1/36"
+      ],
+      "R_numerator": [
+        "0",
+        "-8643/16",
+        "105861/32",
+        "-272349/32",
+        "191007/16",
+        "-785367/80",
+        "752859/160",
+        "-193059/160",
+        "10107/80"
+      ],
+      "R_denominator": [
+        "6",
+        "-41",
+        "121",
+        "-201",
+        "205",
+        "-131",
+        "51",
+        "-11",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "-11619/64",
+        "180",
+        "99/64"
+      ]
+    },
+    {
+      "partition": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-103/12",
+        "33",
+        "-3595/48",
+        "2671/24",
+        "-2723/24",
+        "1939/24",
+        "-481/12",
+        "325/24",
+        "-71/24",
+        "3/8",
+        "-1/48"
+      ],
+      "R_numerator": [
+        "0",
+        "63419/486",
+        "-736243/972",
+        "439619/243",
+        "-370855/162",
+        "1962686/1215",
+        "-2922931/4860",
+        "223001/2430"
+      ],
+      "R_denominator": [
+        "-2",
+        "13",
+        "-36",
+        "55",
+        "-50",
+        "27",
+        "-8",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-771979/5832",
+        "132",
+        "3/8",
+        "-4/729"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        5
+      ],
+      "C_coefficients": [
+        "1",
+        "-17/2",
+        "65/2",
+        "-295/4",
+        "1765/16",
+        "-3653/32",
+        "667/8",
+        "-1375/32",
+        "245/16",
+        "-115/32",
+        "1/2",
+        "-1/32"
+      ],
+      "R_numerator": [
+        "0",
+        "-32272",
+        "201644",
+        "-543056",
+        "1644561/2",
+        "-7648689/10",
+        "2236069/5",
+        "-802273/5",
+        "323017/10",
+        "-27949/10"
+      ],
+      "R_denominator": [
+        "-16",
+        "112",
+        "-344",
+        "608",
+        "-681",
+        "501",
+        "-242",
+        "74",
+        "-13",
+        "1"
+      ],
+      "R_degree": 9,
+      "residues": [
+        "4032",
+        "-4032"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        4,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-25/3",
+        "187/6",
+        "-69",
+        "4819/48",
+        "-4835/48",
+        "1137/16",
+        "-1691/48",
+        "577/48",
+        "-43/16",
+        "17/48",
+        "-1/48"
+      ],
+      "R_numerator": [
+        "0",
+        "7692",
+        "-44202",
+        "107289",
+        "-284535/2",
+        "1110969/10",
+        "-510001/10",
+        "127283/10",
+        "-6659/5"
+      ],
+      "R_denominator": [
+        "8",
+        "-52",
+        "146",
+        "-231",
+        "225",
+        "-138",
+        "52",
+        "-11",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "7683/4",
+        "-1920",
+        "-3/4"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        3,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-49/6",
+        "1075/36",
+        "-1547/24",
+        "547/6",
+        "-1595/18",
+        "181/3",
+        "-115/4",
+        "169/18",
+        "-2",
+        "1/4",
+        "-1/72"
+      ],
+      "R_numerator": [
+        "0",
+        "5142",
+        "-28665",
+        "134277/2",
+        "-85260",
+        "315726/5",
+        "-135753/5",
+        "62487/10",
+        "-2958/5"
+      ],
+      "R_denominator": [
+        "12",
+        "-76",
+        "207",
+        "-316",
+        "295",
+        "-172",
+        "61",
+        "-12",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "3429/4",
+        "-864",
+        "27/4"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        3,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-97/12",
+        "701/24",
+        "-995/16",
+        "8309/96",
+        "-7925/96",
+        "1759/32",
+        "-2449/96",
+        "775/96",
+        "-53/32",
+        "19/96",
+        "-1/96"
+      ],
+      "R_numerator": [
+        "0",
+        "-106924/81",
+        "560258/81",
+        "-1208993/81",
+        "1369661/81",
+        "-4282609/405",
+        "1395979/405",
+        "-184676/405"
+      ],
+      "R_denominator": [
+        "-4",
+        "24",
+        "-61",
+        "85",
+        "-70",
+        "34",
+        "-9",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "320039/486",
+        "-660",
+        "3/2",
+        "-4/243"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-95/12",
+        "503/18",
+        "-8345/144",
+        "2819/36",
+        "-289/4",
+        "1669/36",
+        "-1487/72",
+        "25/4",
+        "-11/9",
+        "5/36",
+        "-1/144"
+      ],
+      "R_numerator": [
+        "0",
+        "-7184/9",
+        "109118/27",
+        "-75440/9",
+        "243808/27",
+        "-713944/135",
+        "14198/9",
+        "-24944/135"
+      ],
+      "R_denominator": [
+        "-6",
+        "35",
+        "-86",
+        "115",
+        "-90",
+        "41",
+        "-10",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "21145/81",
+        "-252",
+        "-9",
+        "-4/81"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        5,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-47/6",
+        "55/2",
+        "-685/12",
+        "1245/16",
+        "-7019/96",
+        "773/16",
+        "-2155/96",
+        "115/16",
+        "-145/96",
+        "3/16",
+        "-1/96"
+      ],
+      "R_numerator": [
+        "0",
+        "-35280",
+        "185268",
+        "-408780",
+        "981531/2",
+        "-345996",
+        "143257",
+        "-32280",
+        "6115/2"
+      ],
+      "R_denominator": [
+        "16",
+        "-96",
+        "248",
+        "-360",
+        "321",
+        "-180",
+        "62",
+        "-12",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "-4413",
+        "4416",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        4,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-23/3",
+        "473/18",
+        "-478/9",
+        "10121/144",
+        "-9203/144",
+        "1955/48",
+        "-291/16",
+        "803/144",
+        "-161/144",
+        "19/144",
+        "-1/144"
+      ],
+      "R_numerator": [
+        "0",
+        "-28092",
+        "142914",
+        "-303525",
+        "696231/2",
+        "-464715/2",
+        "180297/2",
+        "-37629/2",
+        "1629"
+      ],
+      "R_denominator": [
+        "24",
+        "-140",
+        "350",
+        "-489",
+        "417",
+        "-222",
+        "72",
+        "-13",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "-9333/4",
+        "2304",
+        "117/4"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        4,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-91/12",
+        "77/3",
+        "-409/8",
+        "3193/48",
+        "-11387/192",
+        "591/16",
+        "-3083/192",
+        "229/48",
+        "-59/64",
+        "5/48",
+        "-1/192"
+      ],
+      "R_numerator": [
+        "0",
+        "201520/27",
+        "-319316/9",
+        "619138/9",
+        "-69508",
+        "346604/9",
+        "-99760/9",
+        "34982/27"
+      ],
+      "R_denominator": [
+        "-8",
+        "44",
+        "-102",
+        "129",
+        "-96",
+        "42",
+        "-10",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-151142/81",
+        "1860",
+        "6",
+        "-4/81"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        3,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-15/2",
+        "301/12",
+        "-10655/216",
+        "6839/108",
+        "-6013/108",
+        "1231/36",
+        "-44/3",
+        "155/36",
+        "-89/108",
+        "5/54",
+        "-1/216"
+      ],
+      "R_numerator": [
+        "0",
+        "-40995/2",
+        "201309/2",
+        "-1638147/8",
+        "446025/2",
+        "-559797/4",
+        "202101/4",
+        "-77763/8",
+        "3081/4"
+      ],
+      "R_denominator": [
+        "36",
+        "-204",
+        "493",
+        "-662",
+        "539",
+        "-272",
+        "83",
+        "-14",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "-18873/16",
+        "1296",
+        "-1863/16"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-89/12",
+        "1763/72",
+        "-759/16",
+        "1915/32",
+        "-14849/288",
+        "2969/96",
+        "-413/32",
+        "1057/288",
+        "-65/96",
+        "7/96",
+        "-1/288"
+      ],
+      "R_numerator": [
+        "0",
+        "16484/3",
+        "-226730/9",
+        "420005/9",
+        "-400739/9",
+        "206489/9",
+        "-54245/9",
+        "5660/9"
+      ],
+      "R_denominator": [
+        "-12",
+        "64",
+        "-143",
+        "173",
+        "-122",
+        "50",
+        "-11",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-50293/54",
+        "972",
+        "-81/2",
+        "-4/27"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-43/6",
+        "3277/144",
+        "-3037/72",
+        "29153/576",
+        "-7913/192",
+        "13369/576",
+        "-5203/576",
+        "457/192",
+        "-233/576",
+        "23/576",
+        "-1/576"
+      ],
+      "R_numerator": [
+        "0",
+        "37816/9",
+        "-495232/27",
+        "95438/3",
+        "-751874/27",
+        "345526/27",
+        "-8698/3",
+        "6824/27"
+      ],
+      "R_denominator": [
+        "-24",
+        "122",
+        "-257",
+        "289",
+        "-186",
+        "68",
+        "-13",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-27197/81",
+        "288",
+        "45",
+        "224/81"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-7",
+        "131/6",
+        "-1081/27",
+        "6905/144",
+        "-17015/432",
+        "1087/48",
+        "-1313/144",
+        "121/48",
+        "-197/432",
+        "7/144",
+        "-1/432"
+      ],
+      "R_numerator": [
+        "0",
+        "88848",
+        "-394428",
+        "725274",
+        "-715167",
+        "408753",
+        "-135657",
+        "24255",
+        "-1806"
+      ],
+      "R_denominator": [
+        "72",
+        "-372",
+        "818",
+        "-999",
+        "741",
+        "-342",
+        "96",
+        "-15",
+        "1"
+      ],
+      "R_degree": 8,
+      "residues": [
+        "4563/2",
+        "-1728",
+        "-1107/2"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-83/12",
+        "383/18",
+        "-2765/72",
+        "6503/144",
+        "-20921/576",
+        "1957/96",
+        "-511/64",
+        "77/36",
+        "-215/576",
+        "11/288",
+        "-1/576"
+      ],
+      "R_numerator": [
+        "0",
+        "-23216",
+        "284924/3",
+        "-469486/3",
+        "397724/3",
+        "-182704/3",
+        "43208/3",
+        "-4114/3"
+      ],
+      "R_denominator": [
+        "-24",
+        "116",
+        "-234",
+        "255",
+        "-162",
+        "60",
+        "-12",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "16852/9",
+        "-1692",
+        "-180",
+        "-4/9"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-27/4",
+        "485/24",
+        "-15289/432",
+        "34789/864",
+        "-26993/864",
+        "4859/288",
+        "-203/32",
+        "469/288",
+        "-235/864",
+        "23/864",
+        "-1/864"
+      ],
+      "R_numerator": [
+        "0",
+        "-15624",
+        "59970",
+        "-91432",
+        "70446",
+        "-28942",
+        "6036",
+        "-502"
+      ],
+      "R_denominator": [
+        "-36",
+        "168",
+        "-325",
+        "337",
+        "-202",
+        "70",
+        "-13",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "3163/3",
+        "-1620",
+        "567",
+        "-4/3"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-20/3",
+        "2833/144",
+        "-3253/96",
+        "7261/192",
+        "-33065/1152",
+        "1451/96",
+        "-707/128",
+        "791/576",
+        "-85/384",
+        "1/48",
+        "-1/1152"
+      ],
+      "R_numerator": [
+        "0",
+        "-56240/3",
+        "640112/9",
+        "-960272/9",
+        "722960/9",
+        "-287504/9",
+        "57344/9",
+        "-4496/9"
+      ],
+      "R_denominator": [
+        "-48",
+        "220",
+        "-416",
+        "419",
+        "-242",
+        "80",
+        "-14",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "23096/27",
+        "-1080",
+        "216",
+        "232/27"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-6",
+        "763/48",
+        "-21209/864",
+        "42449/1728",
+        "-57863/3456",
+        "4573/576",
+        "-1007/384",
+        "341/576",
+        "-301/3456",
+        "13/1728",
+        "-1/3456"
+      ],
+      "R_numerator": [
+        "0",
+        "-6192",
+        "38832",
+        "-76512",
+        "66912",
+        "-28848",
+        "6000",
+        "-480"
+      ],
+      "R_denominator": [
+        "-144",
+        "564",
+        "-904",
+        "769",
+        "-376",
+        "106",
+        "-16",
+        "1"
+      ],
+      "R_degree": 7,
+      "residues": [
+        "-736",
+        "3240",
+        "-2592",
+        "88"
+      ]
+    }
+  ],
+  "reflection_capacity_controls": 395,
+  "fixed_infinity_T_value_controls": {
+    "c": 5,
+    "e": 9,
+    "T_growth": -2,
+    "actual_value": 0,
+    "required_fixed_value": 1
+  },
+  "retained_F13_original_controls": [
+    {
+      "m": 1,
+      "support": 102,
+      "pure": 0,
+      "normalized_Z_marker": "0"
+    },
+    {
+      "m": 2,
+      "support": 400,
+      "pure": 0,
+      "normalized_Z_marker": "-1024/35"
+    },
+    {
+      "m": 3,
+      "support": 872,
+      "pure": 0,
+      "normalized_Z_marker": "0"
+    },
+    {
+      "m": 4,
+      "support": 1553,
+      "pure": 0,
+      "normalized_Z_marker": "1048576/429"
+    }
+  ],
+  "negative_controls": {
+    "does_not_assume_b_divides_g": true,
+    "altered_F13_rejected": true
+  },
+  "schema_version": 1,
+  "status": "passed",
+  "python": "3.12.3",
+  "sources": {
+    "ODD_CUBIC_DEGREE_ELEVEN_SAFETY.md": "6dcc12130941a2d721cd96c0bf97e47964cda106fffe8ae5c8ae7f7da85025b9",
+    "verify_odd_cubic_degree_eleven_safety.py": "29365bca59bffeecff12ae9d4fff25a9f2ebcff3dd0d8b4d5f3f8262fcd8c0cb",
+    "odd_cubic_degree_eleven_safety_source_ledger.json": "abebffb550db423df777b71b6004a0ba0b5053c381999cf46186e4f8195483a8"
+  },
+  "retained_inputs": [
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "Arbitrary-characteristic-zero rational-u descent and all odd-cubic phases of least degree<=5 are safe."
+    },
+    {
+      "retained_path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "exact_use": "All-degree zero-center safety with repaired arbitrary-original-marker weight transfer, at starting height1."
+    },
+    {
+      "retained_path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+      "exact_use": "One-root exact degree alternatives3c,5c-2; rational-primitive root criterion; rational-map degree/automorphism preliminaries."
+    },
+    {
+      "retained_path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "exact_use": "Exact/log separation and induced rational primitive identity over arbitrary characteristic-zero fields."
+    },
+    {
+      "retained_path": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
+      "exact_use": "Retained degree7 safety and inline two-root logarithmic exclusion; no new degree9 witness premise."
+    },
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "exact_use": "ALREADY RETAINED all-order primitive F13 witness and marked nonvanishing formula supply the sharp prime upper bound."
+    },
+    {
+      "retained_path": "sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "exact_use": "Theorem9.19 printedp117: Luroth for the full stable intermediate fieldE=k(u,R,T). Local differential ramification order is proved directly, not imported."
+    }
+  ],
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

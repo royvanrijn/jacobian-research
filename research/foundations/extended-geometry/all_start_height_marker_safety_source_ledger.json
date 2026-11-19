@@ -1,0 +1,55 @@
+{
+  "schema": "all_start_height_marker_safety_source_ledger_v1",
+  "sources": [
+    {
+      "id": "odd-start-rationality-and-repaired-safety",
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "role": "proof dependency",
+      "exact_scope_used": "OddStartRationalCenter: every odd integer a>=1, arbitrary characteristic-zero K, pure unit center implies X,u rational over original K. Equations A1--A2 endpoint criterion; A6 exact Sylvester polynomial; section3 original fixed-marker negative-weight interval. No all-negative-weight annihilation is imported."
+    },
+    {
+      "id": "formal-mixed-endpoint",
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "role": "proof dependency",
+      "exact_scope_used": "Section1 OC2--OC4: formal endpoint contact and residue substitution for polynomial markers. The all-a endpoint formula is explicitly rederived in the new proof."
+    },
+    {
+      "id": "two-pair-radial-normalization",
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "role": "proof dependency",
+      "exact_scope_used": "All-degree balanced Gaussian/radial formula, equations2.3--2.6: balanced degree b scalar contraction equals (b+1)! times sphere average; R,Z,W,T conventions and T^2+2ZW=R^2."
+    },
+    {
+      "id": "odd-primitive-antecedent",
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+      "sha256": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203",
+      "role": "family antecedent only",
+      "exact_scope_used": "Earlier a=1 degree9 primitive/nonpower witness. The all-odd-a sharp family is proved explicitly here; no minimum-degree or priority claim is imported."
+    },
+    {
+      "id": "pakovich-2009-rational-double-moments",
+      "location": "packet",
+      "path": "sources/pakovich_rational_moments_0910_2105v1.pdf",
+      "sha256": "023c87623249d11cc15ac1aeb4e486f84a30df674477e91e3cf068910c7181c4",
+      "role": "classical method antecedent only",
+      "exact_scope_used": "Actual v1 section5, Theorem5.1 printedp21: deg(P) consecutive marker rationality of complex curve-integral generating functions yields common right factor/closed image/pole-side criterion. Theorem5.2 printedp22: eventual double moments for all large i and j. Inverse-branch Vandermonde method; not a dependency or direct instance of the two-marker theorem.",
+      "url": "https://arxiv.org/pdf/0910.2105v1"
+    }
+  ],
+  "source_inspection": "Actual retained mathematical statements and the primary Pakovich v1 section5 text were inspected; classical antecedent distinguished from imported premises.",
+  "new_steps": [
+    "TwoMarkerRationalReturnRigidity from weighted two-point recurrence and Mobius field degree",
+    "Even starts including zero use inverse rational-map degree",
+    "Exact Sylvester polynomial extends zero-center argument to every integer a>=0",
+    "Sharp original two-marker witnesses at every odd height"
+  ],
+  "assurance": "Internal exact replay and written proof; not formal verification or external human review.",
+  "internal_review": "Root, arithmetic and moments independently checked the all-height two-marker recurrence, construction of rational return only under the eventual marker assumptions, field-degree collapse, degree-one pole/unit cases, zero-center all-a determinant, corrected original output-weight transfer, and sharpness family. Canonical replay is internal, not external or formal assurance."
+}

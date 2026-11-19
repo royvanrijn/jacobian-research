@@ -345,6 +345,8 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HOPF-ONE-POLE-EXACT-DEGREES-AND-PRIME-SPECTRUM | proved | least-prime-unsafe-sphere-degree | Regular pure unit-center sphere phases t*x^-1(C+t^2D) over characteristic-zero fields with polynomial C,D and C having at most one geometric zero, measured in least sphere/balanced degree | upper: 13 |  |
 | HOPF-ODD-CUBIC-ODD-UNSAFE-THRESHOLD-NINE | proved | least-odd-unsafe-sphere-degree | All regular pure winding-one odd-cubic sphere phases t*x^-1(C(x)+t^2D(x)) over characteristic-zero fields, least ODD sphere/balanced degree at which eventual all-marker vanishing can fail | lower: 9 |  |
 | HOPF-ODD-CUBIC-ODD-UNSAFE-THRESHOLD-NINE | proved | least-odd-unsafe-sphere-degree | All regular pure winding-one odd-cubic sphere phases t*x^-1(C(x)+t^2D(x)) over characteristic-zero fields, least ODD sphere/balanced degree at which eventual all-marker vanishing can fail | upper: 9 |  |
+| HOPF-ODD-CUBIC-SHARP-PRIME-THRESHOLD-THIRTEEN | proved | least-prime-unsafe-sphere-degree | All regular pure winding-one odd-cubic sphere phases t*x^-1(C(x)+t^2D(x)) over characteristic-zero fields; least PRIME sphere/balanced degree at which eventual all-marker vanishing can fail | lower: 13 |  |
+| HOPF-ODD-CUBIC-SHARP-PRIME-THRESHOLD-THIRTEEN | proved | least-prime-unsafe-sphere-degree | All regular pure winding-one odd-cubic sphere phases t*x^-1(C(x)+t^2D(x)) over characteristic-zero fields; least PRIME sphere/balanced degree at which eventual all-marker vanishing can fail | upper: 13 |  |
 
 ## Comparable improvements
 

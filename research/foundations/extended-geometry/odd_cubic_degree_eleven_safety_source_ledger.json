@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ODD_CUBIC_DEGREE_ELEVEN_SAFETY.md",
+  "proof_labels": [
+    "OddCubicDegreeElevenSafety",
+    "SharpOddCubicPrimeThresholdThirteen"
+  ],
+  "domain": "Every characteristic-zero field; all regular winding-one odd-cubic-height phases p=t(C+t\u00b2D)/x. Exactdegree11 safety; least PRIME unsafe degree13 within this class only.",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "Arbitrary-characteristic-zero rational-u descent and all odd-cubic phases of least degree<=5 are safe."
+    },
+    {
+      "retained_path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "exact_use": "All-degree zero-center safety with repaired arbitrary-original-marker weight transfer, at starting height1."
+    },
+    {
+      "retained_path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+      "exact_use": "One-root exact degree alternatives3c,5c-2; rational-primitive root criterion; rational-map degree/automorphism preliminaries."
+    },
+    {
+      "retained_path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "exact_use": "Exact/log separation and induced rational primitive identity over arbitrary characteristic-zero fields."
+    },
+    {
+      "retained_path": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
+      "exact_use": "Retained degree7 safety and inline two-root logarithmic exclusion; no new degree9 witness premise."
+    },
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "exact_use": "ALREADY RETAINED all-order primitive F13 witness and marked nonvanishing formula supply the sharp prime upper bound."
+    },
+    {
+      "retained_path": "sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "exact_use": "Theorem9.19 printedp117: Luroth for the full stable intermediate fieldE=k(u,R,T). Local differential ramification order is proved directly, not imported."
+    }
+  ],
+  "self_contained_arguments": [
+    "Full stable field E=k(u,R,T), T=1/(C*u'), with sigma(T)=2-T and actual descent of dx/C and its logarithmic part.",
+    "Local pullback differential order givesb|s,c-1; simple base zero and global zero-count force imageinfinity fixed and odd residual zero order.",
+    "All c/e/h/g/b cases, never assumingb|g and never extending sigma toK(x) unlessg1.",
+    "Fixed-infinity value of T excludes the degree5 center; rational-reflection root pairing, maximal pole bound and general pair-capacity inequality handle the remaining cases.",
+    "OldF13 is imported as an existing all-order witness, not reconstructed as a new theorem."
+  ],
+  "verification": {
+    "checker": "verify_odd_cubic_degree_eleven_safety.py",
+    "receipt": "odd_cubic_degree_eleven_safety_verification.json",
+    "method": "Stdlib336integer root-pattern/c/e cases, six exact filter survivors,67rational partial-fraction controls,395pair-capacity controls,4direct ORIGINAL oldF13 contractions. Includes guards against assumingb|g and alteredF13negativecontrol.",
+    "internal_review": "Root and arithmetic agent independently audited the full proof and original checker; both independently checked the shortened c5 fixed-infinity T-value delta. Root made the canonical replay portable, validated all retained-input hashes and replayed the exact canonical source. All review remains internal."
+  },
+  "not_claimed": [
+    "No global minimum prime degree for arbitrary Image/sphere polynomials or wider height-five profiles.",
+    "No exclusion of the retained degree9 unsafe class example.",
+    "No assumption the field involution extends toK(x) outside explicitly provedg1 cases, and no assumption ramificationb dividescoverdegreeg.",
+    "No all-order inference from bounded prefix controls, external human review, proof-assistant verification or historical-priority assertion."
+  ]
+}

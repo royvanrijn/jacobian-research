@@ -1,0 +1,317 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sources": {
+    "research/meridional-rank/representations/verify_protected_alexander.py": "b4f459561c6c3548169d5f6437b9540201ba505b9b7709e13fe10c4a11a4cefa",
+    "research/meridional-rank/representations/verify_multiple_protected_obstructions.py": "be5d2c2ebae8f7ce562d077b5e1b494ec94232c5a1526d3ea661c8cda0158a94"
+  },
+  "integral_controls": {
+    "first_protected_row_entries_1_and_4": [
+      "t**2 - 3*t + 4 - 7/t + 7/t**2 - 4/t**3 + t**(-4)",
+      "-t**4 + 3*t**3 - 5*t**2 + 6*t - 4 + 1/t"
+    ],
+    "integral_unit_ideal_checked": true,
+    "minor_numerator_resultant_columns_13_and_23": -83,
+    "all_minor_numerator_gcd_mod_83": "t + 24",
+    "exceptional_local_rank_one": {
+      "prime": 83,
+      "alpha": 59
+    },
+    "independent_free_word_controls": [
+      "U",
+      "K_(2,8,0)"
+    ],
+    "trefoil_t_equals_1_and_t_equals_minus_1_controls": "passed"
+  },
+  "prime_field_search": {
+    "strands": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "ell": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101
+    ],
+    "nonzero_parameters_tested_per_closure_word": 1135,
+    "closure_words_checked": 80,
+    "specializations_checked": 90800,
+    "summaries": [
+      {
+        "strands": 8,
+        "maximum": {
+          "ell": 0,
+          "prime": 5,
+          "alpha": 2,
+          "dimension": 2
+        },
+        "maximum_dimension_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "dimensions_at_exceptional_pair_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_meridional_lower_bound": 3
+      },
+      {
+        "strands": 9,
+        "maximum": {
+          "ell": 0,
+          "prime": 5,
+          "alpha": 2,
+          "dimension": 2
+        },
+        "maximum_dimension_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "dimensions_at_exceptional_pair_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_meridional_lower_bound": 3
+      },
+      {
+        "strands": 10,
+        "maximum": {
+          "ell": 0,
+          "prime": 5,
+          "alpha": 2,
+          "dimension": 2
+        },
+        "maximum_dimension_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "dimensions_at_exceptional_pair_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_meridional_lower_bound": 3
+      },
+      {
+        "strands": 11,
+        "maximum": {
+          "ell": 0,
+          "prime": 5,
+          "alpha": 2,
+          "dimension": 2
+        },
+        "maximum_dimension_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "dimensions_at_exceptional_pair_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_meridional_lower_bound": 3
+      },
+      {
+        "strands": 12,
+        "maximum": {
+          "ell": 0,
+          "prime": 5,
+          "alpha": 2,
+          "dimension": 2
+        },
+        "maximum_dimension_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "dimensions_at_exceptional_pair_for_each_ell": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_meridional_lower_bound": 3
+      }
+    ]
+  }
+}
