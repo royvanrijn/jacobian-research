@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "files": {
+    "README.md": {
+      "sha256": "406a0736cde695f65a16c3f0ba18c967601cad6c40336e8ba7983679f69f1d7a",
+      "bytes": 3301
+    },
+    "assembly.tex": {
+      "sha256": "dcd9f8bc793485fbed49e947474446076f24e4b793d84e4f4ddf3e02d1db157e",
+      "bytes": 9097
+    },
+    "consequences.tex": {
+      "sha256": "e0a6b0c21e400015298c9c716c166ae47e6b9f77c548db5e063dd70961478770",
+      "bytes": 2988
+    },
+    "graph.tex": {
+      "sha256": "690a8008b9c95701b1c97f9421500a0f989b8589a915553b28bcde95df68b6ed",
+      "bytes": 41218
+    },
+    "inputs.tex": {
+      "sha256": "4294614003c9c4e571538b8ea65e956c16d697a33843178561d1689aef3ec3b6",
+      "bytes": 12481
+    },
+    "introduction.tex": {
+      "sha256": "eb46442e6bcae8bb1df07b8a122c5b761e4faa4e09aac64dcdba3a32be1bbd36",
+      "bytes": 6694
+    },
+    "main.tex": {
+      "sha256": "3e5dab8755a948f22a8e9b92636ebb580629c273e2ae68f0b7c373c14ef77ebd",
+      "bytes": 3079
+    },
+    "metadata.json": {
+      "sha256": "d7845a862ff44dad44c8752500679def3309f1392afdc572fba3a89c89f8d413",
+      "bytes": 3003
+    },
+    "model.tex": {
+      "sha256": "c4199ea259d113e3129dd9628e352bbb9b91f5e10e644f16c4ec9071d701a678",
+      "bytes": 12332
+    },
+    "norms.tex": {
+      "sha256": "4b7bb607ef9545eebaf5d2d53c6abd5379d7ae8703d907c951bcfef3d12d7da5",
+      "bytes": 22095
+    },
+    "older-norm-route.tex": {
+      "sha256": "3ee1ac45898b5b24447745e8b6c07154d762593745870596f2834c8ce3a0f8d9",
+      "bytes": 33511
+    },
+    "references.tex": {
+      "sha256": "b08321fa2ded03c39fa3ad301a00d8635eb8aa4a21e9e26ac7a4122f7da02ac3",
+      "bytes": 2578
+    },
+    "theorems.tex": {
+      "sha256": "d1462f29e891ff5689af91f74530da8c2da20bc4b37970467d894fa90f713b76",
+      "bytes": 11329
+    },
+    "verification.json": {
+      "sha256": "f67a939cabb4f86543fa448303dbe520adf35168a9485474b8bd3e95dd5cf155",
+      "bytes": 12205
+    }
+  },
+  "pdf": {
+    "sha256": "5086aedbd0f70f70627d488bf76f993b3b6024382beca5965691ed231b9041ca",
+    "bytes": 763124
+  }
+}

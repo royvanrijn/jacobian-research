@@ -1,11 +1,14 @@
-\section{Dilation comparison and cancellation on a target fibre}\label{sec:graph}
+\section{The shared graph comparison and reflected target grids}\label{sec:graph}
 
-This section proves the application steps between the imported graph
-moment and the reflected binary correlation.  Two changes matter.
-The prime labels lie in a fixed progression, so the ideal character
-frame must identify characters which agree on that progression.
-The displacement is the target itself, so the endpoint pairing and
-the major-arc energy must retain that large displacement.
+This section proves the common graph argument for
+Theorem~\ref{thm:model-comparison}, then the residue-energy estimate
+needed for its reflected family. The fixed-shift major arcs are treated
+separately in Section~\ref{sec:fixed-shift-comparison}. No arithmetic
+form of the indicators is used here beyond \textup{(C1)--(C3)}.
+Two structural points matter. The labels lie in a fixed reduced class,
+so the character frame must identify restrictions differing by a known
+unit phase. A target-sized displacement requires retaining its exact
+rational grids in the energy estimate.
 
 Write \(L=\log x\).  There are \(\asymp\log L\) small banks and big
 banks, with primes respectively in
@@ -13,12 +16,13 @@ banks, with primes respectively in
  [\exp(L^{1/8}),\exp(L^{1/4})],\qquad
  [\exp(L^{1/3}),\exp(L^{2/5})].
 \]
-Every label is \(1\bmod L_0\); primes dividing the target \(T\asymp x\)
-are removed.  All banks are disjoint.  Their laws are
+Every label is \(c\bmod L_0\); primes dividing the nonzero displacement
+\(k\) are removed. We use \(k=T=x\) for sums and fixed \(k=h\)
+for shifts. All banks are disjoint. Their laws are
 \(\mu_g(p)=(V_gp)^{-1}\), where \(V_g=\sum_{p\in\mathcal P_g}p^{-1}\)
 is bounded above and below by positive fixed constants.
 Banks in this section may be any active subfamilies of the banks
-constructed in Section~\ref{sec:model}, provided that each size has
+constructed from the class in \textup{(C2)}, provided that each size has
 at least a fixed positive multiple of \(\log L\) banks.
 All constants may depend on these fixed bounds and on \(L_0\).
 
@@ -26,10 +30,10 @@ All constants may depend on these fixed bounds and on \(L_0\).
 
 The ideal-kernel construction in \cite[Section~4]{weightedgraphs}
 uses primitive characters of conductor at most \(Q=L^{q_*}\).
-On labels \(1\bmod L_0\), this list is redundant.  For example, the
-principal character and \(\chi_{-4}\) are the same function on
-Gaussian identity-class labels.  The following quotient removes
-precisely that redundancy.
+On labels \(c\bmod L_0\), this list is redundant up to phases.
+For example, the principal character and \(\chi_{-4}\) agree on
+primes \(1\bmod4\) and are opposite on primes \(3\bmod4\).
+The quotient below removes this redundancy while retaining its phase.
 
 Let \(\mathcal X_Q\) be the primitive characters of conductor at most
 \(Q\), and define
@@ -50,9 +54,15 @@ Reduction from \((\Z/M_0\Z)^\times\) onto
 \((\Z/L_0\Z)^\times\) is surjective.  Its kernel consists of the
 units \(1\bmod L_0\).  A character is trivial on that kernel exactly
 when it factors through the latter group.  This is equivalent to
-its primitive conductor dividing \(L_0\).  Consequently equivalent
-characters agree on every bank label and on every bank-label product,
-whereas inequivalent characters have zero average on that kernel.
+its primitive conductor dividing \(L_0\). Consequently, if
+\(\eta\sim\eta'\) and their quotient is induced by
+\(\vartheta\bmod L_0\), then on a product of \(r\) labels,
+\[
+                 \eta(D)=\vartheta(c)^r\eta'(D).
+\]
+Both comparison products have the same slot type and the same phase.
+Inequivalent characters have zero average on the kernel, and also
+on any fixed coset of it: translation multiplies their sum by a unit phase.
 
 Fix a nonempty set \(\Lambda\) of at most \(m\) slots per big bank,
 where \(m\) is fixed before the eventual graph mark length.
@@ -73,11 +83,11 @@ fixed logarithmic exponents.
 
 Indeed, freeze all but one label.  Its allowable values form an
 interval inside its original bank interval, still restricted to
-\(1\bmod L_0\).  On a common modulus at most \(L_0Q^2\), the sum of
+\(c\bmod L_0\). On a common modulus at most \(L_0Q^2\), the sum of
 \(\eta\overline{\eta'}\) over the appropriate reduced residue classes
 is zero.  Siegel--Walfisz, summed over these classes, therefore gives
 \[
- \sum_{\substack{p\le z\\p\equiv1\ (L_0)}}
+ \sum_{\substack{p\le z\\p\equiv c\ (L_0)}}
        \eta(p)\overline{\eta'(p)}
        \ll_K L_0Q^2z(\log z)^{-K}.
 \]
@@ -88,8 +98,8 @@ This is an absolute bound; no lower bound for the subinterval's
 length or harmonic mass is needed.  Divide by \(V_g\), then average
 the frozen labels.  Deleting target divisors changes the answer by at most
 \[
- \sum_{\substack{p\mid T\\p\ge\exp(L^{1/3})}}\frac1p
- \le \frac{\log T}{L^{1/3}}\exp(-L^{1/3}),               \tag{5.3}\label{eq:gr-deletion}
+ \sum_{\substack{p\mid k\\p\ge\exp(L^{1/3})}}\frac1p
+ \le \frac{\log(2|k|)}{L^{1/3}}\exp(-L^{1/3}),               \tag{5.3}\label{eq:gr-deletion}
 \]
 which is smaller than every fixed inverse power of \(L\).
 This proves \eqref{eq:gr-cell} uniformly for the actual banks.
@@ -129,8 +139,9 @@ This also holds for tuple tests: conditional expectation from tuples
 to their product is a contraction.
 If \(\psi\) is a character of modulus \(r\le Q\), its primitive
 inducing character is equivalent to one member of \(\mathcal R_Q\).
-The corresponding frame summand reproduces it exactly, and the other
-summands give
+For \(r_\Lambda\) selected slots and \(\psi=\vartheta\eta\) on
+these units, that summand gives
+\(\vartheta(c)^{r_\Lambda}\eta(X)=\psi(X)\). The other summands give
 \[
  \E_D K_\Lambda(D,X)\psi(D)
        =\psi(X)+O_A(Q^2\xi^{-1}L^{-A})                 \tag{5.7}\label{eq:gr-reproduce}
@@ -209,8 +220,8 @@ The multiplicative-character expansion of the rational phase has
 total absolute coefficient at most \(\sqrt{\varphi(r)}\).
 Replace each primitive character by its representative in
 \(\mathcal R_Q\) and apply \eqref{eq:gr-reproduce}.
-Grouping equal restricted characters cannot increase coefficient
-mass, so the reproduction error is
+Grouping characters after inserting their unit phases cannot increase
+coefficient mass, so the reproduction error is
 \(O_A(Q^{5/2}\xi^{-1}L^{-A})\).
 Write the remaining phase as
 \(M(v)=\exp(i\zeta v)\ee{\beta\exp v}\).
@@ -259,32 +270,145 @@ of products of four bounded factors: one on each auxiliary product
 and one on each unshared endpoint list.  The number of terms and
 total scalar coefficient mass are fixed powers of \(L\).
 
-For clarity, the symmetrization argument is the one in
-\cite[Section~4.4]{weightedgraphs}; it uses only independent equal-law
-coordinates within each group.  In the orthogonal product-coordinate
-decomposition, a cardinality-\(j\) component on \(M\) coordinates
-contains all \(m\) probe slots and omits the last \(\ell\) slots in
-the proportion
+We now make the exceptional projection and the cancellation explicit.
+Write the two big-bank blocks as \(\mathcal B_1,\mathcal B_2\), of
+sizes \(s_1,s_2\), and their designated probe coordinates as
+\(\mathcal I_1,\mathcal I_2\).  For a coordinate \(i\), let \(E_i\)
+average its independent label.  These commuting operators are
+orthogonal projections.  Let \(Q_{\rm tail}\) average the last
+\(\ell\) input or target coordinates in every group, and let
+\(\Pi\) be within-group symmetrization on all \(M=J+\ell\) coordinates.
+The ideal multipliers do not use those last coordinates.
+For symmetric endpoint tests \(F,H\), put
+\(F'=Q_{\rm tail}F,\ H'=Q_{\rm tail}H\).
+Both averaging operations are contractions.
+
+Let \(D_{\rm sh}\) be the product of the first \(J\) coordinates,
+and write
 \[
-       \frac{(j)_m(M-j)_\ell}{(M)_{m+\ell}}
-                    \le 2\ell^\ell m^{-\ell}=:\theta_m
+ \Phi_{\Theta,\zeta}
+       =D_{\rm sh}^{i\zeta}\ee{\Theta D_{\rm sh}},\qquad
+ R(F',H')=\E\big[F'\overline{H'}\Phi_{\Theta,\zeta}\big].
 \]
-once \(M\ge(m+\ell)(m+\ell-1)\).
-We use \(\ell=1\).
-Tensorization over the \(\asymp\log L\) groups makes the total norm
-of these full-probe components \(L^{-E_{\rm id}-3}\) by choosing
-\(m\) large enough.  Every other component misses a probe in each
-block.  On its two missing-probe sets, the subset signs in
-\eqref{eq:gr-signed} sum to one and cancel the raw phase.
-The two-product comparison just proved replaces the phase with its
-kernel expression; conditioning on shared labels changes the
-additive frequency but does not affect its uniform estimate.
-There are at most \(3^{mC_0\log L}\) error triples, paid by taking
+Thus \(R\) is a bilinear pairing of norm at most one.
+Resolve the probes in the first block of \(F'\) and the second
+block of \(H'\):
+\[
+ \begin{split}
+ F'&=\sum_{S\subset\mathcal I_1}F_S,\qquad
+ F_S=\prod_{i\in S}(I-E_i)
+             \prod_{i\in\mathcal I_1\setminus S}E_iF',\\
+ H'&=\sum_{T\subset\mathcal I_2}H_T,\qquad
+ H_T=\prod_{i\in T}(I-E_i)
+             \prod_{i\in\mathcal I_2\setminus T}E_iH'.
+ \end{split}
+\]
+These are orthogonal decompositions.  Define
+\(P_1=\prod_{i\in\mathcal I_1}(I-E_i)\),
+\(P_2=\prod_{i\in\mathcal I_2}(I-E_i)\), so that
+\(F_{\rm full}=P_1F'\), \(H_{\rm full}=P_2H'\).
+
+In one group the original symmetric vector decomposes orthogonally
+over subsets of its \(M\) coordinates.  Symmetry makes the squared
+norms equal among subsets of cardinality \(j\).
+Requiring all \(m\) probes to occur and all last \(\ell\) slots
+to be absent therefore retains exactly the fraction
+\[
+ \frac{\binom{M-m-\ell}{j-m}}{\binom Mj}
+     =\frac{(j)_m(M-j)_\ell}{(M)_{m+\ell}}
+     \le 2(j/M)^m(1-j/M)^\ell
+     \le2\ell^\ell m^{-\ell}=:\theta_m
+\]
+when \(M\ge(m+\ell)(m+\ell-1)\); impossible cardinalities give zero.
+For a vector which is not a tensor product across groups, first
+resolve by the tuple of cardinalities in the groups of a block.
+Independent within-group permutations make all subset tuples of
+those cardinalities have equal squared norms.  The retained fraction
+is consequently the product of the displayed fractions.
+Summing over the cardinality tuples proves the operator estimates
+\begin{equation}\label{eq:gr-blockprojection}
+ \|P_1Q_{\rm tail}\Pi\|\le\theta_m^{s_1/2},\qquad
+ \|P_2Q_{\rm tail}\Pi\|\le\theta_m^{s_2/2}.
+\end{equation}
+Averaging tails outside the block is a further contraction.
+We use \(\ell=1\), and each \(s_i\ge c_0\log L/3\).
+
+For a component pair \(F_S,H_T\), put
+\(U=\mathcal I_1\setminus S\), \(V=\mathcal I_2\setminus T\).
+A comparison freeing \(A\subset\mathcal I_1\),
+\(B\subset\mathcal I_2\) vanishes unless \(A\subset U,B\subset V\).
+Indeed, if a freed input coordinate belongs to \(S\), it is
+mean zero, absent from the target, and absent from the comparison
+multiplier: integrating it gives zero.  The corresponding statement
+holds for a freed target coordinate belonging to \(T\).
+This uses the orientation in \eqref{eq:gr-signed}: the \(A\)
+endpoint labels are from the target and the \(B\) endpoint labels
+are from the input.
+
+If \(A\subset U,B\subset V\), condition on all shared coordinates
+outside \(A\cup B\), with product \(C\).
+The input test is independent of the freed \(A\) labels and the
+target test is independent of the freed \(B\) labels.
+The two-product kernel comparison established above therefore
+replaces the unsigned comparison by \(R(F_S,H_T)\), with error
+\[
+                    L^{-A_0}\|F_S\|_2\|H_T\|_2.
+\]
+Its frequency is \(\Theta C\); uniformity for every real frequency
+is essential.  Cauchy--Schwarz over the conditioned coordinates
+gives exactly the displayed unconditional norms.
+
+For nonempty \(U,V\), the total unsigned subset sign is
+\[
+ \sum_{\substack{\varnothing\ne A\subset U\\
+                 \varnothing\ne B\subset V}}
+       (-1)^{|A|+|B|}
+ =\left(\sum_{\varnothing\ne A\subset U}(-1)^{|A|}\right)
+  \left(\sum_{\varnothing\ne B\subset V}(-1)^{|B|}\right)=1.
+\]
+The initial minus sign in \eqref{eq:gr-signed} cancels the raw
+pairing.  If either missing set is empty, no comparison survives.
+All exceptional raw component pairs together have the exact identity
+\[
+ R_{\rm exc}(F,H)=
+ R(P_1F',H')+R((I-P_1)F',P_2H').
+\]
+In operator notation, if \(M_\Phi\) multiplies by
+\(\Phi_{\Theta,\zeta}\), their operator on the symmetric space is
+\[
+ T_{\rm exc}=
+ \Pi Q_{\rm tail}
+   \big[M_\Phi P_1+P_2M_\Phi(I-P_1)\big]
+                 Q_{\rm tail}\Pi .
+\]
+Consequently
+\[
+ \|T_{\rm exc}\|
+       \le\theta_m^{s_1/2}+\theta_m^{s_2/2}.
+\]
+This identity sums the exceptional components before taking an
+absolute value.  It is the reason their bound has no subset-count
+or comparison-coefficient factor.
+
+There are at most \(3^{P}\) admissible component/free-subset triples,
+where \(P=m(s_1+s_2)\le mC_0\log L\): each probe is indicated,
+missing but not freed, or freed.  Thus the full signed ideal
+operator satisfies
+\[
+ \|T_{\rm signed}-T_{\rm exc}\|
+           \le3^{P}L^{-A_0}.
+\]
+Choose \(m\) so that \(\theta_m<1\) and
+\(-c_0\log\theta_m/6>E_{\rm id}+3\), and then choose
 \(A_0>E_{\rm id}+mC_0\log3+10\).
-The exceptional full-probe components are summed before taking
-absolute values, and so do not incur this subset count.
-Choose \(M\) only after these choices.
-This proves the asserted ideal norm and the coefficient conditions.
+The kernel precisions above and the exponent \(C_1\) in
+\eqref{eq:gr-coeffcost} are chosen after these choices.
+Only afterwards require \(J\ge m\) and
+\(J+\ell\ge(m+\ell)(m+\ell-1)\); increasing this fixed \(J\)
+to meet the physical root-moment theorem changes no kernel
+parameter or coefficient exponent.
+The resulting ideal norm is at most \(L^{-E_{\rm id}}\).
+This proves the asserted ideal norm and coefficient conditions.
 \end{proof}
 
 \subsection{A large displacement in the physical graph}
@@ -371,12 +495,14 @@ After summing the list weights,
  \tag{5.14}\label{eq:gr-list-moments}
 \]
 Thus the endpoint \(r\)-moments are \(O_r(X)\).
-The model is bounded for sufficiently large \(x\) at every fixed
-Hankel depth, so this observation is valid before that depth is chosen.
+Condition \textup{(C1)} bounds every fixed-depth model without a
+depth-dependent logarithmic exponent. Thus this observation is valid
+before the final depth is chosen.
 
-\subsection{Reflection and removal of shared labels}
+\subsection{Shared labels and the two comparison geometries}
 
-For the binary application we now take \(x=T\).
+For sums take \(k=x\); for shifts take fixed \(k=h\ne0\).
+We first obtain the same comparison identity in both cases.
 
 We spell out the arithmetic consequence of the pairing, since
 the large reflected target is not covered by the fixed-shift theorem
@@ -395,9 +521,11 @@ For fixed \(t_g\le m+1\), these weights are bounded by a fixed
 power of \(L\).  In particular \(W_{\mathbf1}^1=\Omega_{\mathcal P}\).
 
 Let \(\alpha,\beta\) be bounded functions invariant under multiplying
-by every bank prime, with \(\alpha\) supported at the negative endpoint
-and \(\beta\) at the positive endpoint.
-Take a smooth \(\Psi\) supported in a compact subset of \((0,1)\).
+by every bank prime. For sums extend the first centered function to
+the negative half-line by absolute value and the second function to
+the positive half-line. For shifts use positive endpoints on both
+sides. These sign restrictions preserve prime-multiplication invariance.
+Take a smooth \(\Psi\) supported in a compact subset of \((0,\infty)\).
 The pairing and Lemma~\ref{lem:gr-ideal} imply
 \[
  C_0+\sum_\nu c_\nu C_\nu=O_A(L^{-A}),\qquad
@@ -405,18 +533,18 @@ The pairing and Lemma~\ref{lem:gr-ideal} imply
 \]
 where
 \[
- C_0=\sum_{w<0}\frac{\Psi(|w|/x)}{|w|}
-       \alpha(w)\beta(w+T)
-       W_{\mathbf1}^1(w)W_{\mathbf1}^1(w+T)
+ C_0=\sum_{w\ne0}\frac{\Psi(|w|/x)}{|w|}
+       \alpha(w)\beta(w+k)
+       W_{\mathbf1}^1(w)W_{\mathbf1}^1(w+k)
 \]
 and each comparison has the form
 \[
  \begin{split}
  C_\nu=\E_{D_1,D_2}a_\nu(D_1)b_\nu(D_2)
- \sum_{w<0}\frac{\Psi(|w|/(xD_1D_2))}{|w|}
-  \alpha(w)\beta(w+TD_1D_2)\\
+ \sum_{w\ne0}\frac{\Psi(|w|/(xD_1D_2))}{|w|}
+  \alpha(w)\beta(w+kD_1D_2)\\
  {}\times W_{\mathbf t}^{u_\nu}(w)
-                  W_{\mathbf t}^{v_\nu}(w+TD_1D_2).
+                  W_{\mathbf t}^{v_\nu}(w+kD_1D_2).
  \end{split}                                                     \tag{5.17}\label{eq:gr-comparison-term}
 \]
 The two auxiliary products are independent, use at most \(m\) draws
@@ -430,11 +558,11 @@ graph.  A pattern has \(M-1\) dilation slots per bank, some shared
 and some freed, and one distinguished unshared endpoint slot.
 Write its edge product as \(D=D_RD_C\), with shared product \(D_R\)
 and auxiliary product \(D_C\).
-For a source \(n<0\) in \(|n|\in[X,2X)\), an originally nonzero edge
+For a source of either sign in \(|n|\in[Z,2Z)\), an originally nonzero edge
 weight satisfies
-\(\Psi(|n|/(xD))\ne0\), hence \(D\ll X/x\).
-Since \(T\asymp x\), this implies \(|n+TD|\ll X\).
-Insert a second-endpoint cutoff on \([-C_\Psi X,C_\Psi X]\)
+\(\Psi(|n|/(xD))\ne0\), hence \(D\ll Z/x\).
+Since \(|k|\ll x\), this implies \(|n+kD|\ll Z\).
+Insert a second-endpoint cutoff on \([-C_\Psi Z,C_\Psi Z]\)
 before Mellin inversion.  It equals one on every contributing edge.
 After inversion retain this same cutoff.  An edge originally having
 zero \(\Psi\) still has zero full Mellin integral, so the insertion
@@ -452,7 +580,7 @@ the corresponding projection depends only on the integer, preserves
 mark independence, and sets both damping factors equal to one.
 
 For completeness, put \(n=D_Rw\), \(n'=D_Rw'\), so
-\(w'=w+TD_C\), and put \(t_g=1+\#\{\text{freed slots in }g\}\).
+\(w'=w+kD_C\), and put \(t_g=1+\#\{\text{freed slots in }g\}\).
 Invariance and harmonic scaling give
 \[
  \alpha(D_Rw)=\alpha(w),\quad \beta(D_Rw')=\beta(w'),\quad
@@ -485,10 +613,10 @@ Summing its absolute error costs only fixed logarithmic powers,
 by bounded endpoints and the harmonic weight.
 The restrictions excluding auxiliary labels from endpoint lists
 can then be removed: for an auxiliary prime \(p\mid D_C\),
-\(p\mid w\) if and only if \(p\mid w+TD_C\); these positions have
+\(p\mid w\) if and only if \(p\mid w+kD_C\); these positions have
 density \(O(1/p)\) in the containing interval.
 Every auxiliary prime is at least \(\exp(L^{1/3})\).
-An unshared prime common to the two endpoints divides \(TD_C\);
+An unshared prime common to the two endpoints divides \(kD_C\);
 bank-prime deletion implies it divides \(D_C\), so the same estimate
 covers it.  Thus these errors remain smaller than every logarithmic
 power.  Finally expand the separated coefficients from
@@ -507,7 +635,7 @@ rather than a power of \(\log x\).
 \begin{lemma}[Prime factor estimate]\label{lem:gr-primes}
 Assume the fixed all-conductor zero-free half-plane stated in
 Section~\ref{sec:inputs}.
-Fix \(\sigma_1\in(\max(\sigma_0,1/2),1)\).
+Fix \(\sigma_1\in(11/12,1)\).
 For \(q\le x^B\), every character \(\chi\bmod q\), and
 \(P\ge\exp(L^a)\), uniformly on subintervals \(I\subset[P,2P]\),
 \[
@@ -555,7 +683,7 @@ Partial summation against \(u^{it}/\log u\) proves
 Expand the progression condition into the finitely many characters
 modulo \(L_0\).  A constituent is principal exactly when the original
 character is induced from \(L_0\).
-There are at most \(O(\log(qT))=O(L)\) deleted prime divisors;
+There are at most \(O(\log(q(2+|k|)))=O(L)\) deleted prime divisors;
 their absolute unweighted contribution is absorbed by the error.
 \end{proof}
 
@@ -568,12 +696,12 @@ power of \(L\), so there is no boundary-smoothing loss from a sharp bank.
 \subsection{The exact target-grid energy}
 
 Let \(S=\{p:p\le y\}\), \(y=\exp(L^{2/5})\), and
-\(E_0=\exp(\sqrt L)\), as in the density construction.
-Let \(\alpha_U\) be one of its centered invariant functions, including
-the full fixed residue filter \(U\subset H\).
+\(E_0=\exp(\sqrt L)\), as in Section~\ref{sec:comparison}.
+Let \(\xi\) be either centered function in \textup{(C3)}, at a
+fixed depth which will be chosen after the required precision.
 For a comparison term, define
 \[
- F(n)=\psi(n/Y)n^{i\sigma}\alpha_U(n)W_{\mathbf t}^b(n),
+ F(n)=\psi(n/Y)n^{i\sigma}\xi(n)W_{\mathbf t}^b(n),
  \quad Y=x^{1+o(1)},\quad |\sigma|\le L^C,             \tag{5.22}\label{eq:gr-energy-F}
 \]
 where the support of \(\psi\) is a fixed compact positive interval.
@@ -616,9 +744,11 @@ Multiplicative orthogonality gives the exact identity
  \tag{5.25}\label{eq:gr-gcdidentity}
 \]
 The character zeros impose \((m,r)=1\), so this identity retains
-prime powers.  The support is prime to \(L_0\); consequently each
-nonempty profile has \((d,L_0)=1\) and \(L_0\mid r\).
-Call the finitely many characters induced from \(L_0\) exceptional.
+prime powers, including primes dividing \(L_0\). We do not assume
+that the endpoint is prime to \(L_0\). Call a character exceptional
+when its primitive inducing character has conductor dividing \(L_0\).
+There are only a fixed number of such characters for each \(r\).
+In particular \(L_0\mid r\) is not required.
 
 We first identify the negligible sets in the norm actually needed.
 For a set \(\mathcal B\) and \(|G|\le L^C\), Cauchy--Schwarz in each
@@ -641,8 +771,15 @@ up to fixed logarithmic factors:
                   O(Y/P_{\min}).
  \end{array}                                                       \tag{5.27}\label{eq:gr-tailsets}
 \]
-The first is the smooth-record Rankin estimate of
-Section~\ref{sec:model}; the others follow by counting multiples,
+For the first bound, take \(a=c/\log y\). Counting multiples of
+each possible smooth record gives
+\[
+ \#\{n\le CY:n_S>E_0\}
+ \le CY E_0^{-a}\prod_{p\le y}(1-p^{a-1})^{-1}
+                 \ll YL^C e^{-cL^{1/10}}.
+\]
+This estimate uses no property of the indicators. The other bounds
+follow by counting multiples,
 using \(P_{\min}\ge\exp(cL^{1/8})\).
 Thus all these sets are negligible in \eqref{eq:gr-tail-energy}.
 
@@ -696,11 +833,18 @@ For exceptional characters use the further restriction
 The errors were already controlled in energy.
 Now the gcd profile is determined by the smooth record:
 \(\gcd(A,Q)=d\), \(n=Av\), \((v,S)=1\).
-If \(\chi\) is induced by \(\chi_0\bmod L_0\), then
-\(\chi(n/d)=\chi_0(A/d)\chi_0(v)\).
+If \(\chi^*\) is the primitive character inducing an exceptional
+\(\chi\bmod r\), then on the retained profile
+\[
+             \chi(n/d)=\chi^*(A/d)\chi^*(v).
+\]
+Indeed \(\operatorname{cond}\chi^*\mid r\) and
+\((A/d,r)=1\). One must use \(\chi^*\) here: a literal character
+modulo \(L_0\) could vanish on a retained bad-prime prefix.
 Every other list weight depends only on \(A\), is bounded by \(L^C\),
 and the remaining periodic test in \(v\) has fixed period \(L_0\).
-The full character projection in the density model is essential here.
+The one-variable hypothesis must center this full periodic test;
+matching only a scalar principal mean would not suffice.
 
 There is still the condition that \(v\) avoid primes \(p\mid Q\)
 above \(y\).  Remove it before applying the fixed-period centering
@@ -721,8 +865,8 @@ We used the exact harmonic identity
 \]
 when \(d\) is \(S\)-smooth; otherwise this restricted profile is empty.
 
-After this extension, the principal-mean lemma in
-Section~\ref{sec:model} applies record by record at length \(Y/A\).
+After this extension, hypothesis \textup{(C3)} applies record by
+record at length \(Y/A\).
 It permits arbitrary bounded fixed-period tests, arbitrary choices
 of retained records, and the stated smooth phases.
 Choose its logarithmic accuracy after the list and cutoff costs.
@@ -745,18 +889,17 @@ logarithmic derivative bounds when \(|\beta|Y\le L^B\), proving the
 last assertion.
 \end{proof}
 
-The argument applies to any fixed subgroup \(H\).
-At a rough argument \(v\), its projection is
-\(\sum_{\eta\in H^\perp}\eta(v)\).
-For a supported smooth record and a filter \(U\subset H\), this is
-the constant \([(\Z/L_0\Z)^\times:H]\) on the relevant residue classes.
-Every exceptional target character is absorbed in the fixed-period
-record test.  Thus no extra assumption of quadratic index enters
-Proposition~\ref{prop:gr-energy}.
+This proof uses only boundedness, exact prime invariance, and the
+recordwise periodic means in \textup{(C1)--(C3)}. In particular no
+subgroup support, pole order, positivity of an individual character
+branch, or unit-support condition at the fixed modulus enters the
+energy estimate.
 
 \subsection{From target-grid energy to comparison cancellation}
 
-We complete the comparison estimate with all normalizations visible.
+We now specialize to the reflected family \(k=T=x\) and complete
+its comparison estimate with all normalizations visible. The next
+section gives the different frequency argument for fixed \(k=h\).
 Dyadically localize the two auxiliary products in
 \eqref{eq:gr-comparison-term} to \(D_i\asymp H_i\).
 Then

@@ -24,7 +24,7 @@
     },
     {
       "path": "SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-      "sha256": "bc18bfa6be8e26c78111173fdf40468d3b110885bdd100990c77f3fbdeae786f",
+      "sha256": "d84d56a0d82654f020c757c97ad524328b28d2ec2a4e9f59b750e93bfd5c9ea3",
       "locator": "Sections1-6 quantitativebinarytheory; Sections7-10 Goldbachexistence G.1-G.2, classicalhighercounts G.3-G.6, exactbasisorders G.7-G.9; Coprime summands C12CoprimeCorrelation S.C1-S.C4"
     },
     {
@@ -34,13 +34,23 @@
     },
     {
       "path": "MULTIPLICATIVE_HARDY_LITTLEWOOD.md",
-      "sha256": "fed5b8677a3ddd423162d278e1e09b8b2f2c24ff0b6e95850b7c2758d28e0fea",
+      "sha256": "62f14a06635204a7af0fc3bfc9d364d1ae8eb89ae39972ee6c375929ade746c4",
       "locator": "H.1-H.13: Gamma/phase corrections, uniformAP repair, finite-character EulerHL, arbitrary prime-residue semigroups, dense Euler law and zero-density closure counterexample"
     },
     {
       "path": "PRIME_SPLITTING_DECOMPOSITIONS.md",
       "sha256": "4685c3795d5be77d7d82357a3719df4780ad6a0a59c56067cc5cebed7ef1b2c1",
       "locator": "P.1-P.10: actualprime-star fullcounts andshortwindows, principalD23primevalues, exactbasisdichotomy andbinary/extractionboundary"
+    },
+    {
+      "path": "PRIME_THREE_MOD_FOUR_SUMS.md",
+      "sha256": "ab320cb66446efa1cd17332edb304a15b443b58c3198a1fc7b75c12e293fb5fc",
+      "locator": "M.1-M.17: exact minus-class constant, two rough branches, fixed-coset frame, target comparison, local criterion and logarithmic error"
+    },
+    {
+      "path": "PRIME_THREE_MOD_TEN_SUMS.md",
+      "sha256": "b0799ee43ce230b5851a7124dfd307e614b1e98c5ce96cf44b5693307f872b6c",
+      "locator": "PrimeThreeModuloTenCorrelation, FourBranchInvariantModel and FourthRootCosetFrame; four-branch density, exact arithmetic and positive error budget"
     }
   ],
   "primary_sources": [
@@ -183,6 +193,11 @@
       "path": "sources/wu-chens-double-sieve-2004.pdf",
       "sha256": "ebe75ef36478213bde937dce7d163bdd14b5b0352be54e085c9f696afc6e8a30",
       "bytes": 337751
+    },
+    {
+      "path": "sources/dietmann-elsholtz-prime-factors-2019-published.pdf",
+      "sha256": "e7fddfdb529705d1c892c28c887eca86754a1616173ac78291cd985742de9578",
+      "bytes": 260562
     }
   ],
   "source_roles": {
@@ -362,6 +377,12 @@
       "locator": "Lemma 2.5, printed p. 222",
       "role": "Comparison only: the reproduced auxiliary estimate allows shifts at most a fixed logarithmic power, not a target-sized shift.",
       "inspection": "Retained primary statements, hypotheses and comparison were read internally. This is a targeted source audit, not external review, proof replay of the 1993 numerical positivity calculation, or exhaustive historical priority certification."
+    },
+    "dietmann-elsholtz-prime-factors-2019-published.pdf": {
+      "url": "https://www.impan.pl/shop/publication/transaction/download/product/113105",
+      "locator": "Published pp.177-179, especially final p.179 remark",
+      "role": "Contextual antecedent: the minus-class binary problem is explicitly posed; the plus-class existence theorem is different.",
+      "inspection": "Published and author editions read internally. No imported minus-class asymptotic, exhaustive later-literature review or historical priority certification."
     }
   },
   "version_audit": {
@@ -436,7 +457,8 @@
     "Logarithmic remainder only; no power saving inN, numerical onset or exact small-target exception list",
     "Fixed-k>=3 higher counts are classical finite-complexity consequences witho(1); exact basis orders concern fixed subgroup cores, with zero explicitly adjoined for ordinary bases.",
     "Coupled systems: pairwise-independent kernel coordinates, fixed positive bulk, finite profiles; Gaussian full counts along fixed target rays only. General nonlinear or dependent-coordinate systems remain outside scope.",
-    "HL sparse theorem is absolute and fixed finite-complexity; relative existence needs a uniform positive arithmetic factor. Dense summable-defect theorem permits dependent forms. All-moduli closure solubility alone fails for arbitrary infinite valuation profiles."
+    "HL sparse theorem is absolute and fixed finite-complexity; relative existence needs a uniform positive arithmetic factor. Dense summable-defect theorem permits dependent forms. All-moduli closure solubility alone fails for arbitrary infinite valuation profiles.",
+    "Specific unfiltered prime classes 3 mod 4 and 3 mod 10 have separate binary extensions under the same ZF/G inputs; no blanket prime-coset or dependent three-factor theorem is inferred."
   ],
   "goldbach_theory": {
     "existence": "For every fixed mixed list and k>=2, eventual positive representations are exactly U1+...+Uk moduloL. Fix k-2 actual representatives and apply binary; joint all-moduli criterion also holds for all integer targets.",
@@ -467,7 +489,7 @@
     "source_corrections": "PublishedLM2.5(3a)absolute-equality criterion fails for S={3}mod4 andchi4, whosemean=-1/2. UseRe mu=rho. PublishedLM2.8 displayedconstant omitsGamma; useBT1.10. Earlierownsubgroupci alreadyGamma-normalized andsubgrouptwistmeans0/rho, so theirconstantsareunchanged.",
     "ap_repair": "Noncircular SW/Halaszuniformallnonmaxinducedchars; 2018Cor4.2 bounded3kexceptionalcharacters beforeFmembership; uniformpartialEulerHankelmaxmeans; thenAPstability,FandfixedW.",
     "cosets": "H=<S> controlsmaximalcharacters, but allowedhigherpowers canleaveH. Theiralmostsurelyfiniteprime-squaredefects yield nonuniformcosetdistributionπ, with anexplicitL10counterexampletouniformHmask.",
-    "semigroups": "Forpureprime-factor sets S maybearbitrary, H=<S>states andrho=|S|/phiL aredifferentroles. Finiteimages andcoupledlocalglobal extendclassically; no newnonsubgroupbinaryasymptoticclaimed.",
+    "semigroups": "Forpureprime-factor sets S maybearbitrary, H=<S>states andrho=|S|/phiL aredifferentroles. Finiteimages andcoupledlocalglobal extendclassically; the separate unfiltered S={3} mod4 binary extension is now proved under the existing ZF/G inputs, while general arbitrary-S binary counts are not inferred. The additional unfiltered S={3} mod10 case is proved under the same ZF/G inputs; no general prime-coset theorem is inferred.",
     "dense": "If f_i(p)=1 outsidefiniteB, elementaryCRTplusp²tailproves uniformabsoluteHL forarbitrarynonzeroaffineforms, evenoneparameter/dependent, witharbitraryhigherexponentrules. Allsmallprimevaluationsaretruncated beforelimit.",
     "counterexample": "Fivepositive-densityEuler sets at2 andforms x,y,x+y,x+2y-1,2x+y-1 admitactualsetwitnessesineveryfinitequotient butno globalpoint; beta2=0 andonlyclosureparameterx=y0. Thusclosureadmissibility≠positivedensity.",
     "review": "Root and separateanalytic/arithmetic/literatureagents checked currentcanonicalsource. FiveexactfiniteFourier-vs-jointcosetidentities werechecked asauxiliarycontrols. Internalwrittenevidenceonly; noexternalhumanreview/formalverification/numericalonset/priorityclaim."
@@ -518,5 +540,27 @@
     "positioning": "Credit the existing quartic binary problem, admissibility, conditional every-target sum theorem and logarithmic order, plus the unconditional difference theorem. The present theorem supplies unrestricted and coprime leading asymptotics with explicit constants and logarithmic remainders using its specified analytic imports. No first unconditional result or exhaustive historical priority is certified.",
     "followup": "The inspected Li v6 fixed-shift result, Wu logarithmic-shift result and Lichtman triply well-factorable uniform estimate do not directly establish the original full P4/P5 package. Any adaptation needs verified weights, ranges and positivity. This does not rule out another later refinement.",
     "review": "Original full 13-page paper read; theorem page visually checked; arithmetic and later-source implications reviewed separately by agents. No external human review, formal verification or replay of the reported 1993 numerical certificate."
+  },
+  "prime_three_mod_four_extension": {
+    "scope": "For C4-minus consisting of 1 and integers whose prime factors are all 3 mod 4, under the same fixed Dirichlet zero-free half-plane ZF and physical weighted-dilation root-moment input G as the subgroup theorem, the ordered unweighted binary count on every sufficiently large even N is A_minus J_minus(N) N/log N times (1+O((log N)^(-1/16384))), uniformly in target prime valuations. A_minus=(1/2) product_(p=1 mod 4)(1-2/[p(p-1)]) and J_minus(N)=product_(p|N,p=1 mod 4)(p-1)/(p-2). Odd targets have zero count; evenness is exactly all-finite-quotient admissibility. The proof retains two rough Hankel branches and length-dependent prime-coset phases. There is no new analytic hypothesis, general arbitrary-residue-set theorem, prescribed individual summand-state result, numerical cutoff or exact exception list.",
+    "inputs": "The same ZF and physical graph input G as the subgroup theorem remain explicit; Siegel-Walfisz and fixed complex-parameter Selberg-Delange are the existing classical sources. No new analytic hypothesis or compound-prime bank has been introduced.",
+    "marginal": "F_minus^2=(1-2^-s) zeta P3/Lchi, Fchi=F_minus(2s)/F_minus(s), c_minus=sqrt(2 P3)/pi. The negative secondary mean is -(pi c_minus/4) X/log^(3/2)X, so both odd states have equal leading mass but a scalar rough branch alone is not accurate enough.",
+    "rough_model": "D=f(n_S)[M0(n_R)+chi(n_R)Mchi(n_R)]/V is positive and exactly invariant under each allowed small prime. Direct same-ZF reciprocal-L bounds and both Hankel branches give arbitrary logarithmic centering. The negative branch is relatively O(log^(-3/5)X) in model evaluation.",
+    "coset_frame": "For each fixed slot set, equivalent characters differ by a known phase (-1)^|Lambda| on both prime products. The conjugated quotient frame preserves positivity, reproduction, norm and absolute coefficient bounds.",
+    "count_and_local": "For every sufficiently large even N, R_minus=A_minus J_minus N/log N times (1+O(log^(-1/16384)N)), uniformly in valuations. Odd targets have no pair; evenness is exactly finite-quotient admissibility. The generated group has size two although prime density remains one half.",
+    "boundary": "Only this unfiltered non-subgroup prime prescription is covered. General arbitrary residue sets, prescribed individual summand states, numerical onsets, exact small exceptions and historical priority remain separate.",
+    "historical_source": "Dietmann--Elsholtz, published 2019, p.179 explicitly poses the prime-3-mod-4 problem. The actual published PDF is retained alongside the preserved author PDF.",
+    "review": "Internally reviewed written application under the same explicitly retained ZF and G inputs as the subgroup theorem. Exact Euler and local factors, the negative rough branch and the fixed-coset character correction have separate written arguments. No external human review, formal verification, numerical cutoff, exhaustive literature frontier or historical priority is asserted."
+  },
+  "prime_three_mod_ten_extension": {
+    "scope": "Let C consist of 1 and positive integers all of whose prime factors are 3 mod 10. Under the same fixed Dirichlet zero-free half-plane ZF and physical weighted-dilation root-moment input G, the ordered unweighted count R(N) on every sufficiently large even N is A J(N) N/log^(3/2)N times (1+O((log N)^(-1/32768))), uniformly in all target prime valuations. With F the set of odd primes not 3 mod 10, including 5, A=2c^2 product_(p in F)(1-(p-1)^(-2)), J(N)=product_(p|N,p in F)(p-1)/(p-2), and c=Gamma(1/4)^(-1) lim_(s->1+) (s-1)^(1/4) F_C(s). Equivalently the finite factor modulo 10 is 15/8 when 5 does not divide N and 5/2 when it does. Odd targets have zero count and evenness is exactly finite-quotient admissibility. The prime density is 1/4 even though 3 generates the whole unit group. Four branch parameters 1/4,i/4,-1/4,-i/4, conjugated rough characters and fourth-root slot phases are retained. No general coset theorem, prescribed individual summand-state result or three-factor dependent correlation is inferred.",
+    "inputs": "Exactly the existing ZF and physical G inputs, with the existing Siegel--Walfisz and complex-parameter Selberg--Delange normalizations. The new application introduces no additional analytic hypothesis.",
+    "branches": "The four parameters are 1/4,i/4,-1/4,-i/4. The model sums conjugate(chi(n_R))^j M_j(n_R), so testing by chi^k selects M_k. Complex conjugacy gives a real model; secondary relative errors are O(log^(-3/20)X) for the nonreal pair and O(log^(-3/10)X) for the real negative branch.",
+    "analytic_log": "A coherently Euler-normalized analytic logarithm is bounded by O(log(q(2+|t|))) on the needed strip using the same ZF and Borel--Caratheodory. This controls imaginary L-powers, which direct absolute-value and reciprocal bounds alone would not.",
+    "invariance_and_frame": "The rough cofactor is unchanged under allowed small-prime dilation. For every matching slot type, the fourth-root phase i^(e|Lambda|) is the same on input and comparison products. The positive quotient frame retains reproduction, norm and coefficient bounds.",
+    "arithmetic": "The generated group is all units modulo ten but the prime density is one quarter. Even targets have finite factor 15/8 when five does not divide N and 5/2 when it does. The target correction at five is 4/3. Odd targets are excluded, and no other finite obstruction occurs.",
+    "budget": "The bank density is 1/phi(10)=1/4, the pair sieve dimension is 3/2 and the signal is N J/log^(3/2)N. The explicit inherited precision order gives delta=1/32768; complex secondary branches cost O(log^(-3/20)N), and graph reconstruction is relatively O(log^(-35/2+8delta)N)/J.",
+    "boundary": "Only this particular unfiltered class is proved here. General cosets, arbitrary residue sets, individual summand-state filters, the shared three-factor problem, numerical cutoffs, exact small exceptions and historical priority remain separate.",
+    "review": "Internally reviewed written application under exactly the same explicit ZF and G inputs as the subgroup and prime-3-mod-4 proofs. Exact marginal and local factors, complex branches, normalized analytic logarithms, fourth-root slot phases and the quantitative assembly have separate written arguments. No external human review, formal verification, numerical cutoff, exhaustive later-literature review or historical priority is asserted."
   }
 }

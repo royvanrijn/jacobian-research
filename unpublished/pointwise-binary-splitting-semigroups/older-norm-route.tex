@@ -271,88 +271,301 @@ Summing the second kernel by \eqref{eq:older-kernel} leaves
 \begin{equation}\label{eq:older-boundary}
  O_\epsilon\big(N^\epsilon(\Delta N\log N+\sqrt N K^{1/10})\big).
 \end{equation}
-For the principal model the interval length retains \(1/j\),
-and kernel reciprocal sums converge.
-After \eqref{eq:older-box}, evaluate its unit-population mean using
-\eqref{eq:older-mean}, with Euler deletions at \(M vka\).
-The \(1/\varphi(vka)\) normalization makes the sum of these mean
-errors \(O(N^{3/5+O(\lambda+\theta)+\epsilon})\).
-All fixed twists except \(1,\chi\) have zero mean.
-Thus the remaining model can be evaluated directly, with a power saving.
-
-For clarity, its finite coefficient can be checked before any Euler
-completion.  Let \(H_c\) be the lift of \(H\) to modulus \(c=BL_0\).
-It has \(B|H|\) elements.  Write \(\mu\) for the average of \(w\)
-over \(H_c\).  There are exactly \(B\) lifts modulo \(BL_0\) of
-each allowed pair modulo \(L_0\), since \(Au\) is a unit at primes
-of \(B\); each surviving first residue admits \(B\) second lifts.
-Therefore
+We next display the finite main sum produced by this replacement,
+before completing either the paired-divisor series or the target gcd
+sum.  This also fixes the normalization of every local factor.
+For a retained \(g\), put
 \[
+ C_g=F_{t_1}(g)F_{t_2}(g),\qquad
+ \mathcal A=F_{t_1g},\quad \mathcal B=F_{t_2g},\quad
+ H_{\mathcal A,p}=\sum_{i\ge0}\mathcal A(p^i)p^{-i},
+\]
+and define
+\[
+ \rho_{\mathcal A,M}
+   =\rho_{\mathcal A}
+       \prod_{\substack{p\mid M\\p\nmid L_0}}H_{\mathcal A,p}^{-1},
+ \qquad
+ E_{\mathcal A}(q)=\prod_{p\mid q}H_{\mathcal A,p}^{-1}.
+\]
+Let \(\mu_g\) be the average of the displayed filter \(w\) over
+\(H_c\), the lift of \(H\) to \(c=BL_0\).
+The contribution \(T_g\) of this stratum is \(C_g\mathcal P_g\),
+up to the errors estimated above, where the \emph{finite} sum is
+\begin{equation}\label{eq:older-finite-main}
+ \begin{aligned}
+ \mathcal P_g={}&
+ \frac{2\mu_g\rho_{\mathcal A,M}}{Au}
+ \sum_{\substack{k\le K\\(k,uM)=1}}e_{\mathcal B}(k)\\
+ &{}\times
+ \sum_{\substack{a<\sqrt{M/(Bvk)}\\(a,L_0uM)=1}}
+ \frac{\chi(a)E_{\mathcal A}(vka)}{\varphi(vka)}
+                         (M-Bvka^2).
+ \end{aligned}
+\end{equation}
+At a zero-length endpoint the summand is zero, so the strict
+endpoint convention has no effect.
+
+To check the step producing \eqref{eq:older-finite-main}, the box
+replacement contributes \(1/\varphi(q)\), \(q=vka\), times the
+unit population of the original first sequence, with its fixed
+filter \(w\).  The fixed-character mean gives, uniformly in \(q\),
+\[
+ \sum_{\substack{n\le X\\(n,Mq)=1}}\mathcal A(n)w(n)
+  =\mu_g\rho_{\mathcal A,M}E_{\mathcal A}(q)X
+       +O_\epsilon((t_1gMqX)^\epsilon X^{3/5}).
+\]
+Indeed the character expansion of \(w\) has principal contributions
+only at \(1,\chi\), whose coefficients sum to \(\mu_g\).
+The first-kernel indices retain their scalar character phases;
+recombining them yields exactly this original-sequence mean.
+Their main terms retain \(1/j\), while the errors retain \(j^{-3/5}\).
+The interval length is \(X=(M-Bvka^2)/(Au)\), and divisor pairing
+supplies the factor two.  This proves the finite formula.
+Its mean errors sum to
+\(O(N^{3/5+100\lambda+100\theta+\epsilon})\): use
+\(1/\varphi(vka)\ll_\epsilon(vka)^{-1+\epsilon}\) and
+\eqref{eq:older-kernel}.
+The main boundary intervals keep the same reciprocal kernel sums.
+Combining these errors with \eqref{eq:older-box-budget},
+\eqref{eq:older-boundary}, the truncations, and the square endpoints
+leaves the following uniform total reserve:
+\begin{align}
+ \mathcal R_N\ll_\epsilon{}&
+ N^{1-2\lambda/5+\epsilon}+N^{1-\lambda+\epsilon}
+       +N^{1-\zeta+\epsilon}\notag\\
+ &+N^{3/4+100\lambda+100\theta+\epsilon}
+       +N^{3/5+100\lambda+100\theta+\epsilon}
+       +N^{1/2+100\lambda+100\theta+\epsilon}.
+ \label{eq:older-uniform-reserve}
+\end{align}
+The sum of the errors over retained \(g\), including their
+divisor-bounded \(C_g\), obeys this reserve, after decreasing
+\(\epsilon\) in the preceding estimates.
+
+The finite-place coefficient can now be checked independently.
+The group \(H_c\) has \(B|H|\) elements.
+Each allowed pair modulo \(L_0\) has \(B\) pair lifts modulo \(BL_0\),
+since \(Au\) is a unit at primes dividing \(B\).
+Each surviving first residue in the definition of \(w\) admits
+exactly \(B\) second-residue lifts.
+Thus the number of such first residues is the original number of
+pairs modulo \(L_0\), and
+\begin{equation}\label{eq:older-filter-normalization}
+ \Gamma_g:=
  \Gamma_{Au,Bv;U/g,V_0/g}(M)
-                  =\frac{2BL_0}{\varphi(L_0)}\mu.
-\]
-The surviving first character coefficients sum to \(\mu\), rather
-than to the constant coefficient alone.
+       =\frac{2BL_0}{\varphi(L_0)}\mu_g
+       =\frac{2B}{\alpha_0}\mu_g,\qquad
+                  \alpha_0=\varphi(L_0)/L_0 .
+\end{equation}
+The map \((x',y')\mapsto(gx',gy')\) bijects these root pairs with
+the original ones.  Hence \(\Gamma_g\), and therefore \(\mu_g\),
+is constant through the \(g\)-sum.  Denote this common mean by \(\mu\).
 
-Here are the radial factors in the model calculation.
-For local coefficients \(A_i=F_{t_1g}(p^i)\),
-\(B_i=F_{t_2g}(p^i)\), put \(q_p=1-p^{-1}\).
-At a unit target, the local integral is
-\(I_{p,0}=M_{A,p}+M_{B,p}-1\).
-Writing \(W_p=M_{A,p}^{-1}\), the paired-divisor series contributes
-\(I_{p,0}/M_{A,p}\) outside \(uvM\), \(1\) at \(p\mid u\),
-and \(M_{B,p}/M_{A,p}\) at \(p\mid v\).
-At \(p\mid M\), the first mean deletes its local series.
-Hence the fixed-\(g\) radial product consists of
+We complete the two finite sums in
+\eqref{eq:older-finite-main} with explicit error bounds.
+Set \(M_{\mathcal A,p}=(1-p^{-1})H_{\mathcal A,p}\) and
+\(W_p=M_{\mathcal A,p}^{-1}\).
+Then
 \[
- p\mid M:q_p,\qquad p\mid u:M_{A,p},\qquad
- p\mid v:M_{B,p},\qquad p\nmid uvM:I_{p,0},
+ \frac{E_{\mathcal A}(vka)}{\varphi(vka)}
+   =\frac1{vka}\prod_{p\mid vk}W_p
+                    \prod_{\substack{p\mid a\\p\nmid vk}}W_p.
 \]
-with real scale \(M/(Auv)\) and finite coefficient
-\(2(\varphi(L_0)/L_0)\mu\).
-These identities follow also by expanding the two geometric
-series: the paired-divisor local sum off \(uvM\) is
+For fixed \(k\) put
 \[
- 1+W_p\left[
-  \frac{\sum_i e_{t_2g}(p^i)p^{-i}}{1-\chi(p)/p}-1\right]
-                  =\frac{M_{A,p}+M_{B,p}-1}{M_{A,p}} .
+ b_k(a)=\chi(a)\1_{(a,L_0uM)=1}
+                       \prod_{\substack{p\mid a\\p\nmid vk}}W_p,
+ \qquad Y_k=\sqrt{M/(Bvk)}.
 \]
-Completing that character series costs
-\(O(N^{1/2+O(\lambda+\theta)+\epsilon})\):
-it is \(L(s,\chi)\) times a correction absolutely convergent
-for \(\Re s>0\), so its coefficient partial sums are \(O(N^\epsilon)\).
-The kernel completions have the saved tail already displayed.
+For every allowed shift,
+\(1-p^{-1}\le M_{\mathcal A,p}\le(1-p^{-1})^{-1}\).
+Thus \(W_p=1+O(1/p)\), uniformly in all its valuations.
+The Dirichlet series of \(b_k\) is \(L(s,\chi)\) times a correction
+absolutely convergent for \(\Re s>0\).
+At a prime outside \(uMvkL_0\), its correction is explicitly
+\(1+(W_p-1)\chi(p)p^{-s}\); at primes of \(uM\) it has the finite
+deletion \(1-\chi(p)p^{-s}\), and at primes of \(vk\) no new
+correction is required.
+Since the partial sums of the fixed nonprincipal \(\chi\) are
+bounded, convolution with this correction gives
+\[
+ \sum_{a\le Y}b_k(a)\ll_\epsilon
+                 (t_1g\,uMvkY)^\epsilon .
+\]
+In particular \(\sum b_k(a)/a\) converges, its tail after \(Y\)
+is \(O(N^\epsilon/Y)\), and
+\(\sum_{a\le Y}a\,b_k(a)=O(N^\epsilon Y)\).
+Consequently
+\[
+ \begin{split}
+ &\sum_{a<Y_k}
+ \frac{\chi(a)E_{\mathcal A}(vka)}{\varphi(vka)}
+                                      (M-Bvka^2)\\
+ &\qquad=
+ \frac{M}{vk}\prod_{p\mid vk}W_p
+                       \sum_{a\ge1}\frac{b_k(a)}a
+        +O_\epsilon\!\left(N^\epsilon\sqrt{\frac{M}{vk}}\right).
+ \end{split}
+\]
+The fixed \(B\) is absorbed in the error constant.
+Summing against \(e_{\mathcal B}(k)\) costs at most \(K^{1/10}\)
+in the square-root error, by \eqref{eq:older-kernel}.
+The completed main has an absolutely bounded correction times
+\(e_{\mathcal B}(k)/k\), up to \(N^\epsilon\).
+Its \(k>K\) tail is therefore
+\(O(N^{1-2\lambda/5+\epsilon})\).
+Both errors are included in \eqref{eq:older-uniform-reserve}.
 
-Completing \(g\) gives, at \(n=v_p(N)\), exactly
+Here is the Euler calculation of the completed sum, without an
+implicit normalization.  Write \(z=p^{-1}\), \(q_p=1-z\),
+\[
+ A_i=\mathcal A(p^i),\qquad B_i=\mathcal B(p^i),\qquad
+ P_{\mathcal B,p}(z)=\sum_{i\ge0}e_{\mathcal B}(p^i)z^i.
+\]
+The kernel identity says
+\[
+ \frac{P_{\mathcal B,p}(z)}{1-\chi(p)z}
+                    =(1-z)\sum_{i\ge0}B_i z^i
+                    =M_{\mathcal B,p}.
+\]
+The double sum over \(k,a\), after extracting its real factor
+\(M/(uv)\), has the following local factors:
 \begin{align*}
- I_{p,n}={}&q_p\sum_{i<n}A_iB_ip^{-i}
-        +p^{-n}(1-2/p)A_nB_n\\
- &+q_p\left(B_n\sum_{i>n}A_ip^{-i}
-                       +A_n\sum_{j>n}B_jp^{-j}\right).
+ \mathcal L_p
+ &=1+W_p\left(\frac{P_{\mathcal B,p}(z)}{1-\chi(p)z}-1\right)
+       &&(p\nmid uvM)\\
+ &=\frac{M_{\mathcal A,p}+M_{\mathcal B,p}-1}
+                      {M_{\mathcal A,p}}
+       &&(p\nmid uvM),\\
+ \mathcal L_p&=1 &&(p\mid uM),\\
+ \mathcal L_p
+ &=\frac{W_pP_{\mathcal B,p}(z)}{1-\chi(p)z}
+       =\frac{M_{\mathcal B,p}}{M_{\mathcal A,p}}
+       &&(p\mid v).
 \end{align*}
-The terms \(i<n\) come from the smaller common valuations;
-the final common valuation \(i=n\) contributes its shifted
-unit-target integral.  Thus no target valuation is omitted.
-Since \(\rho_{t_1}\rho_{t_2}
-=(\varphi(L_0)/L_0)^2\prod M_{t_1,p}M_{t_2,p}\), the
-finite coefficient and real scale give precisely the formula
-in the proposition, including its factor \(1/B\).
+For \(p\mid uM\), both local indices \(k,a\) are excluded.
+For \(p\mid v\), the factor \(W_p\) is already present even at
+\(v_p(k)=v_p(a)=0\); this explains that row of the table.
+The first mean is
+\[
+ \rho_{\mathcal A,M}
+ =\alpha_0\prod_{p\nmid L_0}M_{\mathcal A,p}
+          \prod_{\substack{p\mid M\\p\nmid L_0}}H_{\mathcal A,p}^{-1}.
+\]
+At \(p\mid M\) its combined factor is therefore
+\(M_{\mathcal A,p}/H_{\mathcal A,p}=q_p\).
+Multiplying the other rows by this first mean gives the completed
+fixed-\(g\) expression
+\begin{equation}\label{eq:older-completed-g}
+ \begin{aligned}
+ &C_g\,\frac{M}{Auv}\,2\alpha_0\mu
+ \prod_{\substack{p\mid M\\p\nmid L_0}}q_p
+ \prod_{p\mid u}M_{\mathcal A,p}\\
+ &\qquad{}\times
+ \prod_{p\mid v}M_{\mathcal B,p}
+ \prod_{\substack{p\nmid L_0uvM}}
+                (M_{\mathcal A,p}+M_{\mathcal B,p}-1).
+ \end{aligned}
+\end{equation}
+Intermediate products are taken in natural prime order.
+Their factorization into the fixed \(L(1,\chi)\) and absolutely
+convergent corrections justifies every completion; the final
+normalized product in the proposition is absolutely convergent.
 
-For general good coefficients, remove \(r=(u,v)\), requiring
-\(r\mid N\), and divide them and the target by \(r\).
-For coprime remaining coefficients put \(d=(u,N)\), \(e=(v,N)\).
-The equation forces \(e\mid x,d\mid y\).
-Substitute \(x=ex'\), \(y=dy'\), with exact prefactors
-\(F_{t_1}(e)F_{t_2}(d)\), shifts \(t_1e,t_2d\), coefficients
-\(u/d,v/e\), and target \(N/(de)\).
-All removed factors are in \(\mathcal C\).
-Transport each residue subset by the corresponding unit multiplier.
-The finite solution sets are bijected by these substitutions.
-At a common coefficient prime the local density gains \(p^{v_p(r)}\);
-at a one-sided coefficient prime, solving for the unit-coefficient
-variable gives the displayed \(D_p\).
-This proves the claimed integral for every gcd profile.
+We may extend the divisor sum from \(g\le K\) to all \(g\mid N\).
+The means and local factors in \eqref{eq:older-completed-g},
+with their normalized shifts, are \(N^{O(\epsilon)}\) uniformly,
+whereas \(C_gM\ll_\epsilon N^{1+\epsilon}/g\).
+The added main is \(O(N^{1-\lambda+O(\epsilon)})\).
+At \(p^n\Vert N\), use now the original local coefficients
+\(A_i=F_{t_1}(p^i)\), \(B_i=F_{t_2}(p^i)\).
+The choices \(v_p(g)=i<n\) in \eqref{eq:older-completed-g}
+give \(q_p A_iB_i z^i\).
+The choice \(i=n\) gives
+\[
+ z^nA_nB_n
+    \big(M_{A^{[n]},p}+M_{B^{[n]},p}-1\big),\qquad
+          A^{[n]}_j=A_{n+j}/A_n,\quad B^{[n]}_j=B_{n+j}/B_n.
+\]
+A zero \(A_nB_n\) means this choice is absent and no division
+by that coefficient is made.
+Expanding the two shifted means produces exactly
+\[
+ \begin{split}
+ D_p=I_{p,n}={}&q_p\sum_{i<n}A_iB_i z^i
+       +z^n(1-2z)A_nB_n\\
+ &+q_p\left(B_n\sum_{i>n}A_i z^i
+                         +A_n\sum_{j>n}B_j z^j\right).
+ \end{split}
+\]
+At \(p\mid u\) or \(p\mid v\), the target is a unit and the
+respective factors remain \(M_{A,p}\) or \(M_{B,p}\), exactly
+the original local line integral.
+Finally \eqref{eq:older-filter-normalization} implies
+\[
+ \frac{2\alpha_0\mu}{Auv}
+       =\frac{\Gamma_{Au,Bv;U,V_0}(N)\alpha_0^2}{ABuv},
+ \qquad
+ \rho_{t_1}\rho_{t_2}=\alpha_0^2
+                      \prod_{p\nmid L_0}M_{t_1,p}M_{t_2,p}.
+\]
+Together with \eqref{eq:older-completed-g}, these identities
+give precisely the proposition's main term in the unit-coefficient
+target core, including the bad coefficient \(B\).
 
+For completeness, the general coefficient reductions also have an
+explicit local check.  At a good prime write
+\(a=v_p(u),b=v_p(v),n=v_p(N)\), and \(t=\min(a,b)\).
+If \(n<t\), the density is zero.
+Otherwise dividing the congruence by \(p^t\) gives
+\[
+ D_p=p^tD_p^{\rm red}(a-t,b-t,n-t).
+\]
+The factor \(p^t\) follows from counting the two sets of lifts
+and the one-dimensional line normalization \(p^{-h}\).
+If the remaining valuations are \(a>0,b=0\), solving for the
+unit-coefficient variable gives
+\[
+ D_p^{\rm red}=
+ \begin{cases}
+    B_nM_{A,p},&n<a,\\
+    B_a I_{p,n-a}(A,B^{[a]}),&n\ge a,
+ \end{cases}
+ \qquad B^{[a]}_j=B_{a+j}/B_a .
+\]
+There is the symmetric formula when \(b>0,a=0\).
+A zero normalizing coefficient makes the relevant density zero.
+These formulas retain arbitrarily large coefficient and target
+valuations.
+
+Globally remove \(r=(u,v)\), requiring \(r\mid N\), and divide
+the coefficients and target by \(r\).
+For the coprime remaining coefficients put \(d=(u,N)\), \(e=(v,N)\).
+Then \(e\mid x,d\mid y\); the exact substitutions are
+\[
+ x=ex',\quad y=dy',\quad
+ (t_1,t_2)\mapsto(t_1e,t_2d),\quad
+ (u,v,N)\mapsto(u/d,v/e,N/(de)),
+\]
+with prefactor \(F_{t_1}(e)F_{t_2}(d)\) and states
+\(U/e,V_0/d\).  The new coefficients are prime to the new target.
+All removed factors belong to \(\mathcal C\).
+Their unit multipliers biject the finite root sets, with the
+transported target and states.  The displayed local formulas show
+that the radial integrals transform with exactly the same
+prefactors and common-coefficient gains.
+Thus reexpressing the transformed main in the original variables
+gives the stated \(D_p\)-product, for every gcd profile.
+
+All estimates in \eqref{eq:older-uniform-reserve} are uniform in
+these profiles and in the shift valuations.  They depend on
+divisor bounds and \eqref{eq:older-kernel}, not on an unbounded
+number of local cases.  When the external family exponent is
+decreased as below, transformed targets are at least
+\(N^{1-3\theta}\), transformed parameters lie in the proved core
+range, and the divisor-bounded prefactors preserve a smaller
+positive saving.
 Choose \(\lambda\) small, then \(\theta\) much smaller.
 Equations \eqref{eq:older-box-budget} and
 \eqref{eq:older-boundary}, the kernel saving \(2\lambda/5\),
@@ -388,11 +601,10 @@ At an inert prime \(I_{p,e}=c_e(p)\).
 At a split prime define the bad-event probability
 \(g_e(p)=1-c_e(p)/I_{p,e}\).
 The explicit geometric series gives, uniformly in \(e\),
-\[
+\begin{equation}\label{eq:older-roughprob}
              0\le g_e(p)<1,\qquad
              g_e(p)=4/p+O(p^{-2}).
- \tag{A.1}\label{eq:older-roughprob}
-\]
+\end{equation}
 For example, at \(e=0\),
 \(I_{p,0}=2(1-p^{-1})^{-1}-1\).
 For \(e\ge1\), the \(i=0,1\) terms give

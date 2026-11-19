@@ -1,0 +1,178 @@
+\section{Replacing indicators by arithmetic models}\label{sec:comparison}
+
+The comparison argument depends on how an indicator interacts with
+selected primes and on one-variable distribution, rather than on a
+particular Euler product. We isolate these requirements. The arithmetic
+applications below construct the models and check the requirements;
+the signed graph comparison and its frequency estimates are proved once.
+
+Fix an even integer \(L_0\ge2\) and a reduced class
+\(c\in(\Z/L_0\Z)^\times\). At the outer scale \(X\), write
+\[
+ L=\log X,\qquad y=\exp(L^{2/5}),\qquad
+ S=\{p:p\le y\},\qquad E=\exp(\sqrt L).
+\]
+For a set of primes \(\mathcal P\), let \(n_{\mathcal P}\) be the
+part of \(n\) supported on \(\mathcal P\), including its full
+valuations. A rough integer has no prime factor in \(S\).
+There are two families of lines in the theorem:
+\begin{align*}
+ \mathcal L_X^{\rm sum}&=\{(u,v)\in\Z_{>0}^2:Au+Bv=X\},
+       &t(u,v)&=Au, &J_X&=[0,X],\\
+ \mathcal L_X^{\rm shift}&=\{(u,u+h):u\in\Z,\ X\le u\le2X\},
+       &t(u,v)&=u, &J_X&=[X,2X].
+\end{align*}
+In the first family \(X\) is an integer target and \(A,B\) are
+fixed coprime positive integers supported on primes dividing \(L_0\).
+In the second, \(h\ne0\) is a fixed integer and \(X\) tends to
+infinity; both coordinates are then positive. Set \(k=X\) in the
+sum family and \(k=h\) in the shift family. Dependence on the
+fixed data, including \(h\) in the second family, is permitted.
+
+Let \(0\le f_i\le1\), \(i=1,2\), be fixed functions on the
+positive integers. For every sufficiently large fixed integer \(K\),
+let \(D_{i,X,K}\) be an arithmetic model, and write
+\(\xi_{i,X,K}=f_i-D_{i,X,K}\). We often suppress \(X,K\).
+The entire model, its cutoff \(y\), and its small-prime records stay
+tied to this outer scale during all subsequent dilations.
+
+Choose a positive comparison scale \(\mathcal S_X\) satisfying
+\begin{equation}\label{eq:comparison-scale}
+        XL^{-\kappa_0}\le\mathcal S_X\le XL^{\kappa_0}
+\end{equation}
+for a fixed \(\kappa_0\ge0\). Arithmetic factors may be included
+in this scale. The hypotheses are as follows.
+
+\begin{description}
+\item[\textup{(C1)} Bounded models.]
+For every fixed \(K\), sufficiently large \(X\) gives
+\(0\le D_{i,X,K}(n)\le1\) on \(1\le n\le X^3\).
+The bound one is independent of the model depth; its threshold
+may depend on \(K\).
+
+\item[\textup{(C2)} A common prime class.]
+For every prime \(p\le y\) with \(p\equiv c\pmod{L_0}\),
+\[
+ f_i(pn)=f_i(n),\qquad D_{i,X,K}(pn)=D_{i,X,K}(n)
+\]
+whenever the arguments are in the range under consideration.
+This includes repeated multiplication by \(p\). A residue filter
+is part of \(f_i\) and must satisfy the same equality.
+
+\item[\textup{(C3)} Centered one-variable rough means.]
+For every fixed \(B_0,D_0>0\), there is a depth \(K_0\) such that
+every fixed \(K\ge K_0\) has the following property. Uniformly for
+\(S\)-supported integers \(r\le E\),
+\(X^{1/2}\le Y\le X^2\), bounded periodic functions \(a(v)\)
+of period at most \(L^{B_0}\), and smooth functions \(W\) supported
+in a fixed compact subinterval of \((0,\infty)\),
+\begin{equation}\label{eq:comparison-rough-means}
+ \left|\sum_{v\ {\mathrm{rough}}}
+       \xi_{i,X,K}(rv)a(v)W(rv/Y)\right|
+                       \ll_{B_0,D_0,K}\frac Yr L^{-D_0}.
+\end{equation}
+Here \(|a|\le1\), and every fixed logarithmic derivative of \(W\)
+used in the estimate is at most a fixed power of \(L^{B_0}\).
+The hypothesis permits Mellin factors with polynomial-logarithmic
+frequency, by including them in \(W\). Its constants may depend on
+the chosen derivative orders. Every surviving character branch,
+including a negative or complex pole parameter, must be retained
+when verifying this estimate.
+
+\item[\textup{(C4)} A positive sparse record envelope.]
+Take disjoint prime banks in the two ranges
+\[
+ [e^{L^{1/8}},e^{L^{1/4}}],\qquad
+ [e^{L^{1/3}},e^{L^{2/5}}],
+\]
+each bank consisting of the primes in an interval which are
+\(c\pmod{L_0}\), after deleting primes dividing \(k\). Assume each
+bank has reciprocal mass between \(1/2\) and \(2\), and that the
+number in either range is at most \((\log L)/(16\varphi(L_0))\).
+Write \(V_g=\sum_{p\in\mathcal P_g}p^{-1}\) for its reciprocal mass.
+Let \(\mathcal B\) be their union. Define the independent joint
+record law \(\mu_{\mathcal B}=\prod_{p\in\mathcal B}\mu_p\) by
+\begin{equation}\label{eq:bank-law}
+ \mu_p(0,0)=1-2/p,\qquad
+ \mu_p(e,0)=\mu_p(0,e)=(1-1/p)p^{-e}\quad(e\ge1),
+\end{equation}
+and zero mass on two positive valuations.
+For every fixed \(B_0>0\), nonnegative record function
+\(F(r,s)\le L^{B_0}\), interval \(J\subset J_X\), and
+\(w_i\in\{f_i,D_{i,X,K}\}\), require
+\begin{align}
+ &\sum_{\substack{(u,v)\in\mathcal L_X\\t(u,v)\in J}}
+     F(u_{\mathcal B},v_{\mathcal B})w_1(u)w_2(v)
+       \ll_{B_0,K}\frac{|J|}{X}\mathcal S_X
+                              \E_{\mu_{\mathcal B}}F\notag\\
+ &\hspace{34mm}
+       +X^{1/2}L^{C_{B_0}}
+       +XL^{C_{B_0}}\exp(-c_0L^{1/10}).
+                                                        \label{eq:comparison-envelope}
+\end{align}
+The positive constant \(c_0\) and exponent \(C_{B_0}\) are
+independent of the final fixed model depth. Constants and thresholds
+may depend on that depth. Uniformity includes the bank intervals,
+the exact valuations in the record, and the interval endpoints.
+\end{description}
+
+For a bank \(g\), let \(\omega_g(n)\) count its distinct prime
+divisors, and define
+\[
+ I_g(u,v)=\1_{\omega_g(u)=\omega_g(v)=1},\qquad
+ \Omega_T(n)=\prod_{g\in T}V_g^{-1}\1_{\omega_g(n)=1}.
+\]
+Here \(T\) is a set of bank indices. We also write
+\(\Omega_{\mathcal P}\) when \(\mathcal P\) denotes the union of
+the active banks. The joint valuation law above
+is the ordinary CRT law on either line: every bank prime avoids
+\(k\) and is a unit at the fixed coefficients.
+
+Condition (C3) is a statement about one variable on a progression;
+it allows arbitrary retained small-prime records, but no arbitrary
+weight in the rough variable. Condition (C4) is only an upper bound
+with nonnegative weights. In the applications it follows from CRT
+root counts and an upper sieve, with a power-smaller endpoint error.
+Neither condition assumes centered binary cancellation or a major-arc
+energy estimate. In particular, choosing a model with the right
+average density alone does not verify (C3).
+
+\begin{theorem}[Arithmetic model comparison]\label{thm:model-comparison}
+Assume the zero-free and weighted-dilation inputs of
+Section~\ref{sec:inputs}, and conditions \textup{(C1)--(C4)}.
+Put \(\delta=1/(8192\varphi(L_0))\). For every sufficiently deep
+fixed \(K\), uniformly for intervals \(J\subset J_X\),
+\begin{equation}\label{eq:model-comparison-conclusion}
+ \sum_{\substack{(u,v)\in\mathcal L_X\\t(u,v)\in J}}
+     \bigl(f_1(u)f_2(v)-D_{1,X,K}(u)D_{2,X,K}(v)\bigr)
+                       \ll_K\mathcal S_XL^{-\delta}.
+\end{equation}
+For the sum family the estimate is uniform in the integer target
+and its prime valuations. For the shift family the integer \(h\)
+is fixed, and the constant may depend on it. The two families have
+different major-arc geometries; no uniformity in the intervening
+range of growing sublinear shifts is asserted.
+\end{theorem}
+
+The proof occupies Sections~\ref{sec:graph} and
+\ref{sec:fixed-shift-comparison}, followed by the quantitative
+reconstruction in Section~\ref{sec:assembly}. A fixed reduced prime
+class supplies the same number of banks in both cases. The graph
+comparison produces two independent large prime products. For a
+reflected target, its major arcs form target-sized rational grids;
+recordwise centering and a small-prime extraction control their
+residue energy. For a fixed shift the arcs are wider, and the existing
+additive-to-Dirichlet conversion instead gives low and high Mellin
+frequencies. Condition (C3) handles the low range; exact invariance,
+the same zero-free prime estimate, and the ordinary Dirichlet
+mean-value bound handle the high range. Both estimates are proved
+from the stated hypotheses below.
+
+Two scope distinctions are useful. A pair of subgroups always has
+the identity prime class available. A self-coset prescription has
+any one of its prime classes available, with a slot-dependent unit
+phase in the character frame. Arbitrary pairs of prime prescriptions
+can have no common invariant prime class, so they do not satisfy
+(C2). Also, the comparison saving does not bound the secondary
+terms of a particular Euler product: the final asymptotic rate must
+also pay for evaluating its complete arithmetic model.

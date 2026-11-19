@@ -1,4 +1,6 @@
-\section{A density model preserving congruence characters}\label{sec:model}
+\section{Subgroup models and application checks}\label{sec:model}
+We verify the arithmetic hypotheses of Theorem~\ref{thm:model-comparison}
+for the subgroup restrictions, then evaluate their model correlation.
 We first work with a single proper subgroup \(H\le G\), of density
 \(\rho\), and write \(f=\1_{C_H}\), \(k_H=[G:H]=1/\rho\).
 The construction for the two sides is separate. Put
@@ -128,6 +130,10 @@ For a smooth \(0\le\Phi\le1\) supported away from zero and one,
 The statement is uniform in target valuations. Endpoint strips of
 relative length \(\epsilon\) have upper bound
 \(O(\epsilon NJ_{\mathcal E}(N)L^{-\kappa}+N^{1/2})\).
+For every interval \(I\subset[0,1]\), the unsmoothed model correlation
+has the same leading coefficient multiplied by \(|I|\), with absolute
+error \(O(NJ_{\mathcal E}(N)L^{-\kappa-\delta_0})\), where
+\(\delta_0=1/(8192\varphi(L_0))\).
 \end{proposition}
 \begin{proof}
 Discard records larger than \(E\) using \eqref{eq:record-tail}.
@@ -168,9 +174,24 @@ Their product up to \(y\) is
 Partial summation inserts \(\Phi\), costing its total variation.
 The same upper sieve on an endpoint strip gives its length times
 the sparse density, with a power-smaller endpoint error.
+To obtain the uniform interval assertion, put
+\(\epsilon=L^{-\delta_0}\) and remove strips of this width near
+zero and one. On the rest the rough logarithms are
+\(L+O(\sqrt L+\delta_0\log L)\), giving the same relative
+\(O(L^{-1/2})\) replacement. The fundamental-lemma count in any
+remaining interval has the same CRT endpoint error; partial summation
+costs the total variation, bounded independently of the interval.
+Restoring the strips costs \(O(\epsilon)\) of the sparse scale.
+All other tails are superlogarithmic or power-smaller, proving the claim.
 \end{proof}
 
-\subsection{Prime banks and the sparse record envelope}
+\subsection{Verification of the comparison hypotheses}
+The indicators lie between zero and one, and the model bound after
+\eqref{eq:corrected-model} gives \(D_U\le1\) eventually for each
+fixed depth. Thus (C1) holds, with a threshold allowed to depend on
+that depth. The full-unit-group exact model also lies between zero
+and one.
+
 Choose banks of primes \(p\equiv1\pmod{L_0}\), with small banks in
 \([\exp(L^{1/8}),\exp(L^{1/4})]\) and big banks in
 \([\exp(L^{1/3}),\exp(L^{2/5})]\). Delete primes dividing \(N\).
@@ -181,23 +202,29 @@ sets, and preserves the fixed states. Hence
 \end{equation}
 exactly, including higher powers. The deletion changes reciprocal
 mass by at most \(O(L/(P_{\min}\log P_{\min}))\), which is smaller
-than every fixed inverse logarithmic power.
+than every fixed inverse logarithmic power. This verifies (C2).
 
-For the union \(\mathcal B\) of the selected banks, define at each
-\(p\in\mathcal B\) a joint valuation law
-\begin{equation}\label{eq:bank-law}
- \mu_p(0,0)=1-2/p,\qquad
- \mu_p(e,0)=\mu_p(0,e)=(1-1/p)p^{-e}\quad(e\ge1),
-\end{equation}
-with zero mass on two positive valuations, and put
-\(\mu_{\mathcal B}=\prod\mu_p\). These are probability measures.
+For (C3), fix an \(S\)-smooth record \(r\le E\). If \(f(r)=0\),
+both the indicator and model on that record vanish. Otherwise
+\(r\bmod L_0\in H\), and insert the residual state \(U/r\)
+into the periodic test of Lemma~\ref{lem:rough-means}. Its smooth
+scale is \(Y/r\), so the error is \((Y/r)L^{-D}\), as required.
+An additional periodic test of period at most \(L^B\) increases the
+period by only a fixed factor. For every required accuracy, the
+Hankel remainder works for every sufficiently large fixed depth;
+constants and thresholds, rather than earlier graph exponents, may
+depend on that depth. This proves (C3) with all surviving character
+branches retained.
+
+It remains to check the positive envelope (C4). Write
+\(\mu_{\mathcal B}\) for the law \eqref{eq:bank-law}.
 
 \begin{lemma}\label{lem:envelope}
 For a nonnegative record function \(F(r,s)\le L^B\), and either
 indicator or model on each side, its weighted correlation on the
-positive line is at most
+positive line restricted by \(Ax\in J\subset[0,N]\) is at most
 \[
- C NJ_{\mathcal E}(N)L^{-\kappa}\E_{\mu_{\mathcal B}}F
+ C\frac{|J|J_{\mathcal E}(N)}{AB L^\kappa}\E_{\mu_{\mathcal B}}F
        +NL^{O(1)}e^{-cL^{1/10}}+O(N^{1/2}).
 \]
 The constant may depend on the fixed coefficients.
@@ -207,7 +234,7 @@ Discard records \(r,s>E\) using \eqref{eq:record-tail} and bounded
 weights. There are at most \(E^2\) retained record pairs. A shared
 bank prime makes the stratum empty, because no bank prime divides
 \(N\). For coprime records, \(r\mid x,s\mid y\) select one
-progression of length \(N/(ABrs)\). Exactness excludes two roots
+progression of length \(|J|/(ABrs)\). Exactness excludes two roots
 at an unselected bank prime and the remaining variable's root at
 a prime dividing \(rs\). Thus the bank probability is exactly
 \[
@@ -234,40 +261,17 @@ factor \(J_{\mathcal E}(N)\). Sum the retained main bounds against
 \(F\) to obtain the expectation.
 \end{proof}
 
-For a bank \(g\), let \(I_g(x,y)\) assert that each coordinate
-contains exactly one distinct prime from that bank. The joint law gives
-\begin{equation}\label{eq:success}
- \E I_g=\prod_{p\in\mathcal P_g}(1-2/p)
-      \sum_{\substack{p,q\in\mathcal P_g\\p\ne q}}
-                      \frac1{(p-2)(q-2)}
-   =V_g^2e^{-2V_g}+O\left(\sum_{p\in\mathcal P_g}p^{-2}\right),
- \quad V_g=\sum_{p\in\mathcal P_g}p^{-1}.
-\end{equation}
-Disjoint banks are independent. Having a fixed positive proportion
-of successful banks on both size ranges fails with probability
-\(O(L^{-\eta})\), for some \(\eta>0\). Lemma~\ref{lem:envelope}
-turns this into an error at the full sparse scale; it also applies
-to \(|\xi_U|\), since \(|\xi_U|\le f_U+D_U\).
-Section~\ref{sec:assembly} fixes the explicit exponent.
-
-This yields an exact reconstruction, without divisor-weight removal.
-For \(b\) banks the Boolean function asserting at least \(k\)
-successes expands as \(\sum_Tc_T\prod_{g\in T}I_g\), with
-\(c_T=0\) for \(|T|<k\) and
-\(|c_T|=\binom{|T|-1}{k-1}\) otherwise. Binomial inversion in the
-number of successes proves this identity, and its coefficient mass
-is at most \(3^b\). Multiply the two size-range expansions.
-For an active set \(T\), put
-\[
- \Omega_T(n)=\prod_{g\in T}V_g^{-1}\1_{\omega_g(n)=1}.
-\]
-The exact pointwise identity is
-\begin{equation}\label{eq:reconstruction}
- \xi_U(x)w_V(y)\prod_{g\in T}I_g(x,y)
- =\left(\prod_{g\in T}V_g^2\right)
-                   \xi_U(x)w_V(y)\Omega_T(x)\Omega_T(y).
-\end{equation}
-Prime squares in active banks have exponentially small population,
-by \(\sum p^{-2}\). It remains to prove arbitrarily strong fixed
-logarithmic cancellation for these banked centered correlations.
+\begin{proof}[Proof of Theorem~\ref{thm:general}]
+The preceding checks verify (C1)--(C4), with
+\(\mathcal S_N=NJ_{\mathcal E}(N)/(AB L^\kappa)\).
+This scale is between \(NL^{-C}\) and \(NL^C\) for a fixed \(C\),
+by \(J_{\mathcal E}\ge1\) and Mertens' upper product bound.
+Theorem~\ref{thm:model-comparison} replaces both indicators by their
+models with error \(O(\mathcal S_NL^{-\delta_0})\), uniformly in
+the interval. Proposition~\ref{prop:model-correlation} evaluates that
+model count with exactly the coefficient in the theorem.
+If \(\Gamma_N=0\), the residue restrictions give zero identically.
+Otherwise its finitely many positive values have a fixed positive
+minimum, yielding the relative assertion.
+\end{proof}
 

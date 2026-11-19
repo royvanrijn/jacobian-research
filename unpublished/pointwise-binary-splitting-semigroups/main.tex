@@ -41,7 +41,8 @@
 \begin{abstract}
 We study representations of an integer as a sum of two positive integers
 whose prime factors satisfy fixed abelian splitting restrictions.
-For semigroups defined by subgroups of a fixed reduced residue group,
+For semigroups defined by subgroups modulo a fixed even integer,
+and for unfiltered self-sums defined by a fixed prime coset,
 we establish pointwise asymptotics with explicit arithmetic factors and
 a positive logarithmic saving, uniformly in the target. The resulting
 congruence criterion characterizes eventual representability.
@@ -49,10 +50,17 @@ In particular, integers supported on primes congruent to one modulo
 twelve have an explicit binary representation asymptotic of order
 \(N/(\log N)^{3/2}\) on every sufficiently large admissible target.
 The proof adapts Walsh's multiplicative-invariance framework, using
-the recent zero-free and weighted-dilation theorems of OpenAI,
-a density model retaining the relevant congruence characters, and
-transference for reflected correlations with growing targets.
+the recent zero-free and weighted-dilation theorems of OpenAI.
+We prove an indicator-to-model comparison theorem whose hypotheses are
+one-variable distribution, exact prime invariance, and positive sieve bounds.
+The comparison treats reflected targets and fixed shifts with their
+respective frequency estimates. Complex character branches are retained
+for prime cosets, including the class three modulo ten.
 We count numerical values without representation multiplicities.
+For ordinary values of \(x^2+dy^2\), \(d=1,2,3,4,7\), the same
+comparison gives fixed-shift pair asymptotics with explicit exceptional-prime
+factors. A single quadratic-character theorem includes these five cases;
+for \(x^2+2y^2\) and shift one its coefficient is \(1/\sqrt2\).
 For primitive norm values in every fixed imaginary quadratic order,
 we first prove pointwise order-of-magnitude bounds using classical
 Kloosterman estimates and positive restoration, independently of the
@@ -62,11 +70,15 @@ theorem upgrades these bounds to explicit leading asymptotics.
 \input{introduction}
 \input{theorems}
 \input{inputs}
-\input{model}
+\input{comparison}
 \input{graph}
+\input{fixed-shift-comparison}
 \input{assembly}
+\input{model}
+\input{cosets}
 \input{older-norm-route}
 \input{norms}
+\input{quadratic-pairs}
 \input{consequences}
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,

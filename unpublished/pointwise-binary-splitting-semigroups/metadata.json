@@ -1,6 +1,9 @@
 {
   "title": "Pointwise Binary Correlations in Abelian Splitting Semigroups",
-  "author": {"name": "Roy van Rijn", "orcid": "0009-0000-2808-0645"},
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
   "summary": "Pointwise binary asymptotics for two fixed abelian subgroup prime prescriptions, an explicit C12 constant and congruence criterion, and primitive norm counts in every fixed imaginary quadratic order with independent older-input order bounds.",
   "published": false,
   "status": "draft",
@@ -19,5 +22,7 @@
     "Obtain external specialist review of the reflected graph comparison and target-grid normalization, retaining the exact preprint dependencies.",
     "Obtain specialist review of the independently proved older-input norm route, class error and conductor-tail transfer.",
     "Continue historical-priority review beyond the precise primary-source comparisons already included."
-  ]
+  ],
+  "abstract": "We study representations of an integer as a sum of two positive integers\nwhose prime factors satisfy fixed abelian splitting restrictions.\nFor semigroups defined by subgroups of a fixed reduced residue group,\nwe establish pointwise asymptotics with explicit arithmetic factors and\na positive logarithmic saving, uniformly in the target. The resulting\ncongruence criterion characterizes eventual representability.\nIn particular, integers supported on primes congruent to one modulo\ntwelve have an explicit binary representation asymptotic of order\n\\(N/(\\log N)^{3/2}\\) on every sufficiently large admissible target.\nThe proof adapts Walsh's multiplicative-invariance framework, using\nthe recent zero-free and weighted-dilation theorems of OpenAI,\na density model retaining the relevant congruence characters, and\ntransference for reflected correlations with growing targets.\nWe count numerical values without representation multiplicities.\nFor primitive norm values in every fixed imaginary quadratic order,\nwe first prove pointwise order-of-magnitude bounds using classical\nKloosterman estimates and positive restoration, independently of the\nrecent analytic theorems. The new correlation\ntheorem upgrades these bounds to explicit leading asymptotics.",
+  "revised_on": "2026-11-19"
 }

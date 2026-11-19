@@ -1,0 +1,379 @@
+\section{Ordinary quadratic indicators and fixed-shift pairs}
+\label{sec:quadratic-pairs}
+
+The same comparison also treats ordinary quadratic norm indicators.
+In this application inert primes may occur to an even exponent; they
+are not excluded altogether. The rough Dirichlet series still has
+two principal character branches, and their projection retains the
+conditions at ramified primes. This gives a common statement for
+the five pair conjectures considered by Smilansky
+\cite[Sections 6.1 and 6.3]{smilansky}.
+
+\subsection{A quadratic character and finitely many valuation rules}
+
+Let \(\chi\) be a primitive nonprincipal quadratic Dirichlet
+character of conductor \(q\). Fix a finite set of primes
+\(B_0\) containing every prime divisor of \(q\), and masks
+\(\alpha_p:\Z_{\ge0}\to\{0,1\}\), \(p\in B_0\), with
+\(\alpha_p(0)=1\). Define the multiplicative indicator
+\[
+ f(n)=\prod_{p\in B_0}\alpha_p(v_p(n))
+       \prod_{\substack{p\notin B_0\\\chi(p)=-1}}
+                                      \1_{2\mid v_p(n)}
+ \quad(n\ge1),\qquad f(n)=0\quad(n\le0).
+\]
+Thus split primes outside \(B_0\) have no valuation restriction.
+The finite masks are fixed; no periodicity in their exponent is
+required. Write \(F_p(s)=\sum_{e\ge0}\alpha_p(e)p^{-es}\)
+for \(p\in B_0\).
+
+The bad-prime factor must retain a joint residue condition. Let
+\(x=(x_p)_{p\in B_0}\in\prod_{p\in B_0}\Z_p\), and put
+\(e_p=v_p(x_p)\) when all these valuations are finite. For each
+\(\ell\mid q\), define a unit modulo \(\ell^{v_\ell(q)}\) by
+\[
+ u_\ell(x)=\ell^{-e_\ell}x_\ell
+            \prod_{\substack{p\in B_0\\p\ne\ell}}p^{-e_p}
+                                  \pmod{\ell^{v_\ell(q)}}.
+\]
+These residues define \(u_{B_0}(x)\in(\Z/q\Z)^\times\) by CRT.
+At an ordinary positive integer this is exactly
+\(n/n_{B_0}\pmod q\). Set
+\begin{align}
+ \vartheta_{B_0}(x)
+   &=\prod_{p\in B_0}\alpha_p(e_p)
+                    \1_{\chi(u_{B_0}(x))=1},\notag\\
+ W_{B_0}(h)
+   &=\int_{\prod_{p\in B_0}\Z_p}
+             \vartheta_{B_0}(x)\vartheta_{B_0}(x+h)\,dx.
+                                                        \label{eq:quadratic-bad-mass}
+\end{align}
+Normalized product Haar measure is used. Define the integrand to
+be zero on the null sets with an infinite valuation. In general
+\(W_{B_0}\) is coupled: it is not a product of separate
+primewise tests.
+
+\begin{theorem}\label{thm:quadratic-indicator-pairs}
+Assume the analytic inputs of Section~\ref{sec:inputs}. For the
+fixed data above and every fixed \(h\ne0\),
+\begin{equation}\label{eq:quadratic-pair-asymptotic}
+ \sum_{1\le n\le X}f(n)f(n+h)
+       =C_{\chi,\boldsymbol\alpha}(h)\frac X{\log X}
+                            +o_{\chi,\boldsymbol\alpha,h}
+                                      \left(\frac X{\log X}\right),
+\end{equation}
+where
+\begin{align}
+ C_{\chi,\boldsymbol\alpha}(h)
+ &=\frac{4L(1,\chi)}\pi\,W_{B_0}(h)
+       \prod_{p\in B_0}\frac{1-\chi(p)/p}{1-1/p}\notag\\
+ &\quad\cdot
+       \prod_{\substack{p\notin B_0,\ \chi(p)=-1\\p\mid h}}
+                     \frac{1-p^{-v_p(h)-1}}{1-p^{-1}}.
+                                                        \label{eq:quadratic-pair-constant}
+\end{align}
+If \(W_{B_0}(h)=0\), the pair count is identically zero.
+Otherwise the constant is positive. The theorem concerns the
+specified Euler indicator; it does not identify that indicator
+with the values of an arbitrary principal quadratic form.
+\end{theorem}
+
+\begin{proof}
+We verify the four hypotheses of
+Theorem~\ref{thm:model-comparison}, then evaluate the model product.
+Choose a fixed even \(L_0\) divisible by \(q\) and all primes
+in \(B_0\), and use the prime class one modulo \(L_0\).
+Put \(L=\log X\), \(y=e^{L^{2/5}}\), \(S=\{p:p\le y\}\),
+\(E=e^{\sqrt L}\), and \(V_S=\prod_{p\le y}(1-1/p)\).
+
+The exact Euler identity for \(F(s)=\sum f(n)n^{-s}\) is
+\begin{equation}\label{eq:quadratic-euler-square}
+ F(s)^2=\zeta(s)L(s,\chi)
+ \prod_{\substack{p\notin B_0\\\chi(p)=-1}}(1-p^{-2s})^{-1}
+ \prod_{p\in B_0}F_p(s)^2(1-p^{-s})(1-\chi(p)p^{-s}).
+\end{equation}
+The first correction converges absolutely for \(\Re s>1/2\).
+Every finite factor is analytic near one and positive there on
+the real axis. With this branch convention, the one-variable
+constant \(c_f\) satisfies
+\begin{equation}\label{eq:quadratic-marginal}
+ c_f^2=\frac{L(1,\chi)}\pi
+ \prod_{\substack{p\notin B_0\\\chi(p)=-1}}(1-p^{-2})^{-1}
+ \prod_{p\in B_0}F_p(1)^2(1-p^{-1})(1-\chi(p)p^{-1}).
+\end{equation}
+Here \(F_p(1)\) denotes the local factor evaluated at \(s=1\),
+not at its series variable. The factor \(\pi=\Gamma(1/2)^2\)
+is the Selberg--Delange normalization.
+
+Remove all factors at primes in \(S\), and write the resulting
+rough series as \(F_R(s)=(s-1)^{-1/2}H_R(s)\). Its leading
+coefficient is
+\[
+ H_R(1)/\Gamma(1/2)
+          =c_f\prod_{p\le y}F_{f,p}(1)^{-1},
+\]
+where \(F_{f,p}\) is the actual local factor of \(f\).
+The Cauchy bound
+\(H_R^{(j)}(1)/j!\ll_j H_R(1)(C\log y)^j\) permits the
+fixed-depth density
+\[
+ M_K(t)=\sum_{j=0}^K\frac{H_R^{(j)}(1)}{j!}
+              \frac{(\log t)^{-1/2-j}}{\Gamma(1/2-j)}.
+\]
+Use this formula throughout \(X^{1/4}\le t\le X^3\), and
+extend it smoothly and nonnegatively below \(X^{1/4}\) with its
+leading upper bound. This contains the rough range in (C3), since
+\(Y/r\ge X^{1/2}/E>X^{1/4}\) for large \(X\).
+For \(n=av\), \(a=n_S\), define
+\begin{equation}\label{eq:quadratic-model}
+ D(n)=f(a)(1+\chi(v))M_K(v)/V_S.
+\end{equation}
+For every fixed depth, \(D\ll L^{-3/10}\) on the relevant
+polynomial ranges, so (C1) holds eventually with a depth-independent
+bound one. Multiplication by a split bank prime changes only
+\(a\), preserving \(f(a)\) and \(v\) exactly. This proves (C2),
+including repeated prime factors.
+
+For (C3), inflate a test character \(\eta\) to a modulus
+containing \(q\). The square of its rough Dirichlet series has
+factors \(L(s,\eta)L(s,\eta\chi)\), an absolutely convergent
+prime-square correction, and the removed small-prime factors.
+All primes dividing the polylogarithmic test modulus lie in \(S\).
+Only \(\eta=1\) and \(\eta=\chi\) give a principal branch,
+and their rough coefficients agree pointwise. The factor
+\(1+\chi(v)\) in \eqref{eq:quadratic-model} reproduces both.
+The proof of Lemma~\ref{lem:rough-means} now applies with exponent
+\(1/2\): the contour is \(1-c/\log y\), its height is
+\(e^{L^{1/10}}\), and the Taylor remainder has relative size
+\(O_K(L^{-3(K+1)/5})\). The inverted inert-prime correction
+in \eqref{eq:quadratic-euler-square} has the same absolute
+convergence and derivative bounds as the correction in that lemma.
+The finite masked factors have been removed completely from the
+rough variable. Thus they introduce no further rough branches.
+Conditioning on \(a\le E\) leaves only its fixed multiplier
+\(f(a)\), outside the periodic rough sum. Choosing \(K\)
+after the desired logarithmic accuracy proves (C3).
+
+For (C4), keep exact bank records \(r,s\le E\); larger ones
+have contribution \(XL^{O(1)}e^{-cL^{1/10}}\) by
+\eqref{eq:record-tail}. The retained records are coprime because
+bank primes dividing \(h\) have been deleted. Their divisibilities
+give one progression of length \(O(|J|/(rs))\).
+Exactness contributes two excluded bank roots outside \(rs\),
+and one at a prime of \(rs\). Together with \(1/(rs)\), these
+are exactly the record masses \eqref{eq:bank-law}.
+
+At an inert prime outside \(B_0\), a necessary condition is
+\(v_p(n)\ne1\). It excludes \(p-1\) classes modulo \(p^2\).
+For \(p\nmid h\), the two endpoints exclude \(2(p-1)\)
+classes; bank-record slopes are units at these primes. Drop the
+finitely many primes dividing \(2h\prod_{p\in B_0}p\) for
+an upper bound. The nonbank sieve dimension is one, with a
+convergent \(1+O(p^{-2})\) correction to the ordinary two-root
+product. A Selberg upper sieve with prime-square atoms, level
+\(z=X^{1/100}\), and \(w=z^{1/16}\), has endpoint error
+\(O(z^{4+o(1)})\) per retained record. This follows by summing
+the CRT root errors: a least-common-multiple atom has at most
+\(2^{\omega(d)}d\) roots and modulus \(d^2\).
+Summing the \(E^2=X^{o(1)}\) records remains power smaller
+than \(X^{1/2}\).
+
+For \(ff\), \(Df\), and \(DD\), the nonbank sieve
+denominators have orders respectively
+\(\log w\), \((\log y\log w)^{1/2}\), and \(\log y\).
+The bound \(D\ll L^{-3/10}\) supplies the missing factor
+on each model side. All three cases therefore give the common
+scale \(\mathcal S_X=X/L\), with the exact bank masses.
+This proves (C4), uniformly in the interval \(J\). The exponents
+in the exceptional-record errors do not depend on the final
+fixed depth. The comparison theorem now gives
+\begin{equation}\label{eq:quadratic-model-comparison}
+ \sum_{X\le n\le2X}\{f(n)f(n+h)-D(n)D(n+h)\}
+                                      =o_h(X/L).
+\end{equation}
+
+It remains to calculate the model main. Let
+\(I_y=\{p\le y:p\notin B_0,\ \chi(p)=-1\}\) and put
+\[
+ \Lambda_y=\frac{2c_f}{\sqrt L}
+      \prod_{p\in B_0}\frac{F_p(1)^{-1}}{1-p^{-1}}
+      \prod_{p\in I_y}(1+p^{-1}).
+\]
+Outside the negligible records \(n_S>E\), the rough cofactor
+has \(\log v=L+O(\sqrt L)\). If the small inert exponents
+are even, its character is \(\chi(n/n_{B_0})\). Hence
+\begin{equation}\label{eq:quadratic-model-leading}
+ D(n)=\Lambda_y\vartheta_{B_0}(n)
+            \prod_{p\in I_y}\1_{2\mid v_p(n)}
+                                      (1+O_K(L^{-1/2})).
+\end{equation}
+At an inert prime the local pair density is
+\begin{equation}\label{eq:quadratic-inert-pair}
+ \delta_p(h)=\frac p{p+1}(1-p^{-v_p(h)-1}).
+\end{equation}
+To see this, partition \(v_p(n)\) below, equal to, and above
+\(v_p(h)\). Below that valuation both endpoints have the same
+valuation; the permitted even terms form a geometric sum. At
+equality the two possible higher even tails have total mass
+\(2/(p(p+1))\), in addition to the \((p-2)/p\) unit mass.
+These sums give \eqref{eq:quadratic-inert-pair}, also for \(p=2\).
+
+We justify the product of these densities at the growing cutoff.
+Extract the inert square parts \(d^2,e^2\), with \(d,e\)
+supported on \(I_y\), and retain \(d,e\le E\). Truncate
+each bad-prime power at \(E\). The omitted integer count is
+\(O_{B_0,h}(X/E+\sqrt X)\), and the omitted Haar mass is
+\(O_{B_0,h}(E^{-1})\). Each retained joint record and residual
+unit state gives an empty stratum or finitely many progressions
+modulo \(X^{o(1)}\). On them the two residual forms must be
+units at the primes in \(I_y\). Empty root cells are discarded;
+the remaining sieve dimension is at most one. Upper and lower
+fundamental-lemma weights at a small fixed power level have
+parameter \(\log(X^\epsilon)/\log y\asymp L^{3/5}\), so
+their relative error is smaller than every log power. The total
+CRT error over the \(X^{o(1)}\) prefixes is power smaller than
+\(X\). Their main masses are summable: compatibility requires
+\((d,e)^2\mid h\), and their progression densities are
+\(\ll_h1/\operatorname{lcm}(d^2,e^2)\), with geometric
+bad-prime tails. Summing the disjoint valuation cells proves
+\[
+ \sum_{X\le n\le2X}D(n)D(n+h)
+   =\Lambda_y^2XW_{B_0}(h)\prod_{p\in I_y}\delta_p(h)
+                                                 +o_h(X/L).
+\]
+For \(p\nmid h\),
+\((1+p^{-1})^2\delta_p(h)=1-p^{-2}\); for \(p\mid h\)
+the additional ratio is
+\((1-p^{-v_p(h)-1})/(1-p^{-1})\). Substitution of
+\eqref{eq:quadratic-marginal} cancels every \(F_p(1)\)
+and the inert Euler product, leaving
+\eqref{eq:quadratic-pair-constant}. This proves the dyadic
+asymptotic. Summing dyadically gives
+\eqref{eq:quadratic-pair-asymptotic}; the upper bound from (C4)
+controls the part below \(\varepsilon X\), after which
+\(\varepsilon\) tends to zero.
+
+Finally, if an actual positive pair has \(f(n)f(n+h)=1\),
+then both residual characters equal one. Its valuations and
+residual units are preserved on a sufficiently deep joint
+\(B_0\)-adic cylinder. That cylinder has positive Haar measure,
+so \(W_{B_0}(h)>0\). This proves the exact zero assertion.
+\end{proof}
+
+\subsection{The five quadratic forms}
+
+Let \(b_d(n)\) indicate the positive integers of the form
+\(x^2+dy^2\), with \(x,y\in\Z\). Coordinates may vanish,
+and no coprimality condition is imposed. Smilansky's
+prime-factor criterion \cite[Theorem 10]{smilansky} identifies
+these ordinary indicators with the preceding Euler indicators:
+\[
+\begin{array}{c|c|c|c}
+d&\chi&B_0&\text{nontrivial mask in }B_0\\\hline
+1&\chi_{-4}&\{2\}&\text{none}\\
+2&\chi_{-8}&\{2\}&\text{none}\\
+3&\chi_{-3}&\{3\}&\text{none}\\
+4&\chi_{-4}&\{2\}&\alpha_2(e)=\1_{e\ne1}\\
+7&\chi_{-7}&\{2,7\}&\alpha_2(e)=\1_{e\ne1}
+\end{array}
+\]
+The corresponding order discriminants are \(-4,-8,-12,-16,-28\).
+In particular the third, fourth and fifth forms are conductor-two
+orders. For \(d=3\), the ordinary value set nevertheless has
+exactly the inert-even rule for \(\chi_{-3}\), including the
+prime two; no extra dyadic mask is imposed.
+
+\begin{corollary}\label{cor:smilansky-five-pairs}
+Under the inputs of Section~\ref{sec:inputs}, for
+\(d\in\{1,2,3,4,7\}\) and fixed \(h\ne0\),
+\[
+ \sum_{1\le n\le X}b_d(n)b_d(n+h)
+       =\mathscr T_{d,h}\frac X{\log X}+o_{d,h}(X/\log X),
+\]
+with precisely the coefficients predicted in
+\cite[Section 6.3, equations (6.2)--(6.4)]{smilansky}.
+In particular,
+\begin{equation}\label{eq:minus-eight-shift-one}
+ \sum_{n\le X}b_2(n)b_2(n+1)
+                       \sim\frac1{\sqrt2}\frac X{\log X}.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Write \(Q_d=\{p:\chi(p)=-1\}\), except that no prime in
+\(B_0\) is included; for the displayed five forms this exception
+changes none of the inert sets. These are respectively
+\[
+ \{p\equiv3\ (4)\},\quad \{p\equiv5,7\ (8)\},\quad
+ \{p\equiv2\ (3)\},\quad \{p\equiv3\ (4)\},\quad
+ \{p\equiv3,5,6\ (7)\}.
+\]
+Let \(R_1=R_2=R_4=\{2\}\), \(R_3=\{3\}\), and
+\(R_7=\{2,7\}\). The bad-prime integrand factors in these
+cases. For \(d=7\), this uses \(\chi_{-7}(2)=1\), which
+removes the cross-valuation phase from its ramified unit test.
+Put \(a_p=v_p(|h|)\). The local densities are
+\begin{align*}
+ W_{1,2}(h)&=\begin{cases}
+  1/4,&a_2=0,\\ 1/2-3/2^{a_2+2},&a_2\ge1,
+ \end{cases}
+ &W_{2,2}(h)&=\begin{cases}
+  1/4,&a_2=0,1,\\ 1/2-3/2^{a_2+1},&a_2\ge2,
+ \end{cases}\\[2mm]
+ W_{3,3}(h)&=\tfrac12(1-2/3^{a_3+1}),
+ &W_{7,7}(h)&=\tfrac12(1-4/7^{a_7+1}),\\[2mm]
+ W_{4,2}(h)&=\begin{cases}
+  1/8,&a_2=0,\\0,&a_2=1,\\5/16,&a_2=2,\\
+  3/8-3/2^{a_2+2},&a_2\ge3,
+ \end{cases}
+ &W_{7,2}(h)&=\begin{cases}
+  1/2,&a_2=0,1,\\3/4,&a_2\ge2.
+ \end{cases}
+\end{align*}
+For completeness, the odd ramified unit predicate is a square
+modulo \(p=3\) or \(7\). At \(a_p=0\), there are
+\((p-3)/4\) nonzero square pairs modulo \(p\), and exactly
+one zero neighborhood contributes \(1/(2p)\). The result is
+\((p-1)/(4p)\). For \(a_p\ge1\), the recurrence
+\(W(a_p)=(p-1)/(2p)+W(a_p-1)/p\) gives the displayed formulas.
+At two the ramified unit predicates are respectively one modulo
+four and one or three modulo eight. Their initial pair masses
+are \(1/4\), and, for the latter, \(1/4\) also when \(a_2=1\).
+The former has mass \(1/8\) at \(a_2=1\); thereafter its
+recurrence is \(W(a)=1/4+W(a-1)/2\). The latter has mass
+\(1/8\) at \(a_2=2\) and obeys that recurrence for \(a\ge3\).
+Removing valuation one gives the \(d=4\) row: for \(a\ge2\)
+its mass is \(1/4+W_{1,2}(h/4)/4\). The \(d=7\) dyadic
+row counts only the two valuation masks, giving its stated masses.
+
+Using primitive characters, the prefactors are
+\[
+ c_d=\frac{4L(1,\chi)}\pi
+                 \prod_{p\mid\operatorname{cond}(\chi)}(1-p^{-1})^{-1},
+ \qquad
+ (c_1,c_2,c_3,c_4,c_7)
+       =(2,2\sqrt2,2/\sqrt3,2,2\sqrt7/3).
+\]
+For \(d=7\) the extra bad prime two contributes ratio one
+in \eqref{eq:quadratic-pair-constant}. Consequently
+\[
+ \mathscr T_{d,h}=c_d\prod_{p\in R_d}W_{d,p}(h)
+        \prod_{\substack{p\in Q_d\\p\mid h}}
+                    \frac{1-p^{-a_p-1}}{1-p^{-1}},
+\]
+as required. The primitive values are
+\(L(1,\chi_{-3})=\pi/(3\sqrt3)\) and
+\(L(1,\chi_{-7})=\pi/\sqrt7\); Smilansky's series in
+his equation (6.3) omits the Euler factor at two.
+At \(h=1\) the five constants are
+\[
+ (\mathscr T_{1,1},\mathscr T_{2,1},\mathscr T_{3,1},
+      \mathscr T_{4,1},\mathscr T_{7,1})
+   =\left(\frac12,\frac1{\sqrt2},\frac1{3\sqrt3},
+                        \frac14,\frac1{2\sqrt7}\right).
+\]
+Only \(d=4\) has a zero coefficient for nonzero shifts:
+\(v_2(h)=1\). Its pair count is exactly zero because its
+values are zero or one modulo four. All other displayed
+coefficients are positive.
+\end{proof}

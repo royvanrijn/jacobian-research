@@ -1,200 +1,215 @@
-\section{Quantitative replacement and completion of the proof}\label{sec:assembly}
-We now choose all accuracies in a fixed order. This is necessary
-both for a positive logarithmic saving and to avoid feeding a later
-density depth into the complexity of the earlier ideal construction.
-Write
+\section{Reconstruction and quantitative comparison}\label{sec:assembly}
+We complete Theorem~\ref{thm:model-comparison}. The two frequency
+arguments above have supplied arbitrary fixed logarithmic cancellation
+for each banked centered comparison. This section turns those bounds
+into a replacement at the sparse scale in (C4), with a positive rate.
+There is no evaluation of an arithmetic main term in this step.
+
+Write \(\phi=\varphi(L_0)\), \(L=\log X\), and
 \[
- \phi=\varphi(L_0),\quad \delta=\frac1{8192\phi},\quad
- \mathcal S_N=\frac{NJ_{\mathcal E}(N)}{AB L^\kappa},\quad L=\log N.
+ \delta_0=\frac1{8192\phi},\qquad
+ XL^{-\kappa_0}\le\mathcal S_X\le XL^{\kappa_0}.
 \]
-If \(\Gamma_N=0\), the count is zero by its fixed residue condition.
-Hence assume \(\Gamma_N>0\); its finitely many possible positive
-values have a fixed positive minimum.
+The exponent \(\kappa_0\) is fixed. For the reflected case \(X\)
+is the target; for the fixed-shift case it is the interval scale.
+The model and the prime banks stay tied to this outer scale throughout.
 
 \subsection{An explicit discarded-bank exponent}
-The identity-class primes have reciprocal mass
-\((1/(8\phi)+o(1))\log L\) in the small range and
-\((1/(15\phi)+o(1))\log L\) in the big range. Greedily choose
+Primes in the reduced bank class \(c\bmod L_0\) have reciprocal
+mass \((1/(8\phi)+o(1))\log L\) in the small range and
+\((1/(15\phi)+o(1))\log L\) in the big range. Choose
 \[
- b_N=\left\lfloor\frac{\log L}{32\phi}\right\rfloor
+ b_X=\left\lfloor\frac{\log L}{32\phi}\right\rfloor
 \]
-disjoint banks of each size, each with reciprocal mass \(1+o(1)\).
-There is ample mass in both ranges. The overshoot per bank is at
-most the largest reciprocal prime, and target-prime deletion is
-superlogarithmically small. Thus all masses are \(1+o(1)\), with
-total error smaller than every inverse logarithmic power.
-By \eqref{eq:success}, each success probability tends to
-\(e^{-2}>1/8\). Chernoff's inequality and independence give
-\begin{equation}\label{eq:rare-budget}
- \Prob\{\text{fewer than }b_N/16\text{ successes in either range}\}
- \le2e^{-b_N/64}\ll L^{-1/(4096\phi)}=L^{-2\delta}.
-\end{equation}
-Here \(b_N\ge\log L/(64\phi)\) eventually.
-Lemma~\ref{lem:envelope} bounds the discarded correlation by
-\(O(\mathcal S_NL^{-2\delta})\), plus exponential and power-smaller
-errors. This applies with an indicator or model on either side.
-The exact reconstruction \eqref{eq:reconstruction} has total
-coefficient mass at most
-\[
- 3^{2b_N}\prod_g\max(1,V_g^2)\le L
-\]
-for large \(N\), since the second product is \(1+o(1)\) and
-\(2b_N\log3\le(\log3)\log L/(16\phi)\).
+disjoint banks of each size, greedily giving each reciprocal mass
+\(V_g=1+o(1)\). The overshoot per bank is at most the largest
+reciprocal prime. Delete bank primes dividing the displacement.
+For a reflected target their total reciprocal mass is
+\(O(L/(P_{\min}\log P_{\min}))\); for a fixed shift the deletion
+is eventually empty. Thus the total mass error is smaller than every
+fixed inverse logarithmic power, uniformly in the reflected target.
 
-\subsection{Moving cutoffs and the reflected target scale}
-Set \(\epsilon=L^{-\delta}\). Choose \(0\le\Phi_\epsilon\le1\),
-equal to one on \([2\epsilon,1-2\epsilon]\), supported in
+The independent law \eqref{eq:bank-law} gives
+\begin{equation}\label{eq:success}
+ \E I_g=\prod_{p\in\mathcal P_g}(1-2/p)
+ \sum_{\substack{p,q\in\mathcal P_g\\p\ne q}}
+                  \frac1{(p-2)(q-2)}
+ =V_g^2e^{-2V_g}+O\left(\sum_{p\in\mathcal P_g}p^{-2}\right)
+ \longrightarrow e^{-2}>1/8.
+\end{equation}
+Banks are independent in this law. Chernoff's inequality bounds the
+probability of fewer than \(b_X/16\) successful banks in either range by
+\begin{equation}\label{eq:rare-budget}
+ 2e^{-b_X/64}\ll L^{-1/(4096\phi)}=L^{-2\delta_0},
+\end{equation}
+since \(b_X\ge\log L/(64\phi)\) eventually. Apply (C4) to this
+bad-bank indicator and use \(|f_i-D_i|\le f_i+D_i\).
+The discarded centered correlation is
+\(O(\mathcal S_XL^{-2\delta_0})\), plus its power-smaller
+and exponential endpoint errors.
+
+The reconstruction is exact. For \(b\) banks, the Boolean function
+asserting at least \(k\) successes has expansion
+\(\sum_Tc_T\prod_{g\in T}I_g\), where \(c_T=0\) for \(|T|<k\)
+and \(|c_T|=\binom{|T|-1}{k-1}\) otherwise. Binomial inversion in
+the number of successful banks proves this identity, and its total
+coefficient mass is at most \(3^b\). Multiply the two size-range
+identities. For every active set \(T\), exact prime invariance gives
+\begin{equation}\label{eq:reconstruction}
+ \xi_i(x)w_j(y)\prod_{g\in T}I_g(x,y)
+ =\left(\prod_{g\in T}V_g^2\right)
+                  \xi_i(x)w_j(y)\Omega_T(x)\Omega_T(y),
+ \qquad w_j\in\{f_j,D_j\}.
+\end{equation}
+These weights introduce no representation multiplicity.
+The full reconstruction coefficient mass is at most
+\[
+ 3^{2b_X}\prod_g\max(1,V_g^2)\le L
+\]
+for large \(X\). Indeed the second product is \(1+o(1)\), and
+\(2b_X\log3\le(\log3)\log L/(16\phi)\).
+Prime squares in active banks have population at most a fixed
+logarithmic factor times \(X\sum_{p\in\mathcal B}p^{-2}\),
+which is exponentially small. This estimate follows from bounded
+endpoints and counting multiples, independently of a pair asymptotic.
+
+\subsection{Moving cutoffs and reflected target localization}
+Put \(\epsilon=L^{-\delta_0}\). In the reflected case choose
+\(0\le\Phi_\epsilon\le1\), equal to one on
+\([2\epsilon,1-2\epsilon]\), supported in
 \([\epsilon,1-\epsilon]\), with transitions of width \(\epsilon\).
-For the harmonic graph comparison put
+The same derivative estimates apply when additional interval endpoints
+are smoothed at that width. Set
 \(\Psi_\epsilon(t)=t\Phi_\epsilon(t)\) and
-\(F_\epsilon(u)=\Psi_\epsilon(e^u)\). Direct differentiation gives
+\(F_\epsilon(u)=\Psi_\epsilon(e^u)\). Differentiation gives
 \[
  \|F_\epsilon\|_1\ll1,\qquad
  \|F_\epsilon^{(j)}\|_1\ll_j\epsilon^{1-j}\quad(j\ge1).
 \]
-At the lower transition the logarithmic derivative cancels the
-small transition scale. Fourier integration by parts therefore gives
+At the lower transition logarithmic differentiation cancels its small
+scale. Fourier integration by parts yields
 \begin{equation}\label{eq:mellin-budget}
  \int|\widehat F_\epsilon(\zeta)|(1+|\zeta|)^r\,d\zeta
-       \ll_r\epsilon^{-r-1},\qquad
+ \ll_r\epsilon^{-r-1},\qquad
  \int_{|\zeta|>L^3}|\widehat F_\epsilon(\zeta)|\,d\zeta
-       \ll_j L^{-(3-\delta)(j-1)}.
+ \ll_j L^{-(3-\delta_0)(j-1)}.
 \end{equation}
-Thus the external phase range stays fixed at \(L^3\); choose the
-tail derivative order last.
+The external phase range stays at \(L^3\); its tail derivative order
+is chosen last.
 
-On a contributing edge of the reflected graph,
-\(n<0\), \(n'=n+ND>0\), and
-\(t=|n|/(ND)\in[\epsilon,1-\epsilon]\). Exactly
+On a contributing reflected edge \(n<0\), \(n'=n+XD>0\),
+put \(t=|n|/(XD)\). Then
 \begin{equation}\label{eq:two-sided-localization}
  \frac{n'}{|n|}=\frac{1-t}{t}
-       \in\left[\frac\epsilon{1-\epsilon},
-                  \frac{1-\epsilon}{\epsilon}\right].
+ \in\left[\frac\epsilon{1-\epsilon},
+                \frac{1-\epsilon}{\epsilon}\right].
 \end{equation}
-For a source dyad \(|n|\asymp X\), insert a smooth target cutoff
-supported on \([c\epsilon X,C\epsilon^{-1}X]\) and equal to one
-on the contributing range \emph{before} Mellin inversion. Keep it
-in every resulting pairing. Removed edges had zero full Mellin
-integral originally. Dividing shared labels preserves the ratio
-\eqref{eq:two-sided-localization}.
+For a source dyad \(|n|\asymp Y\), insert a target cutoff on
+\([c\epsilon Y,C\epsilon^{-1}Y]\), equal to one on that range,
+\emph{before} Mellin inversion, and retain it in each pairing.
+Removed edges originally had zero full Mellin integral.
+Shared-label division preserves the ratio. There are \(O(\log L)\)
+target dyads \(Y'\), each with uniform rescaled logarithmic derivatives.
+Their exact-list endpoint moments are \(O(Y)\), \(O(Y')\), by
+counting multiples of a fixed list product. This introduces no
+exponent depending on the eventual mark length or density depth.
+Pairing costs at most \(\sqrt{Y'/Y}\ll\epsilon^{-1/2}\).
+The Mellin norm and dyadic count together cost at most
+\(L^{5\delta_0/2}\); reserve \(L^{8\delta_0}\) for all localization.
 
-There are \(O(\log L)\) target dyads \(X'\), each with uniformly
-bounded rescaled logarithmic derivatives. Their endpoint moments are
-\(O(X)\), \(O(X')\): fixing an exact label product and counting its
-multiples proves this directly, and summing reciprocal list mass
-introduces no exponent depending on the final fixed mark length.
-The pairing can therefore cost at most
-\(\sqrt{X'/X}\ll\epsilon^{-1/2}\). Together with the unweighted
-Mellin norm and dyadic count these costs are at most \(L^{5\delta/2}\).
-We reserve \(L^{8\delta}\) for all localization losses.
-
-For the comparison source scale \(Y\asymp ND_1D_2\), use its
-actual target dyad \(Y'\), where
-\(c\epsilon Y\le Y'\le C\epsilon^{-1}Y\). The physical major
-window is \(L^{B_{\rm out}}/Y\), so
-\(|\beta|Y'\ll L^{B_{\rm out}+\delta}\). Apply
-Proposition~\ref{prop:gr-energy} with that enlarged exponent.
-A crude integrated-energy rescaling costs \(\epsilon^{-2}\), still
-inside the reserve. At the smallest dyad and selected small prime
-\(P\le\exp(CL^{1/4})\),
+For comparison scale \(Y\asymp XD_1D_2\), use the actual target
+dyad \(c\epsilon Y\le Y'\le C\epsilon^{-1}Y\).
+The reflected major window has width \(L^{B_{\rm out}}/Y\), so
+\(|\beta|Y'\ll L^{B_{\rm out}+\delta_0}\).
+Proposition~\ref{prop:gr-energy} applies at this enlarged logarithmic
+window exponent. Its integrated rescaling costs at most
+\(\epsilon^{-2}\), within the reserve. At the smallest dyad,
 \begin{equation}\label{eq:smallest-dyad}
  \frac{Y'}{qP}\gg
- e^{cL^{1/3}-CL^{1/4}}L^{-B_{\rm out}-\delta}\gg_A L^A.
+ e^{cL^{1/3}-CL^{1/4}}L^{-B_{\rm out}-\delta_0}\gg_A L^A.
 \end{equation}
-This remains true after every gcd split, since both length and
-modulus are divided by the same divisor. Thus neither target
-localization nor target valuations spoil the cofactor-energy estimate.
+Removing a gcd divisor scales length and modulus equally, so this
+bound holds in every target profile.
+For a fixed shift the two endpoints are comparable on the original
+support; the cutoff and pairing cost is no larger. Its wider major
+windows are handled by Proposition~\ref{prop:fixed-comparison-energy},
+not by extending \eqref{eq:gr-energy} beyond its proved range.
 
-\subsection{The precision order}
-Here are sufficient numerical margins. All exponents are fixed
-before \(N\to\infty\).
-First request normalized graph-pairing error \(L^{-22}\) per source
-dyad. At most \(L^2\) source dyads occur, leaving \(L^{-20}\).
-Fix the root and ideal accuracies for this request, then the probe
-complexity and eventual mark length. The phase range is \(L^3\).
-
-After that finite comparison family is fixed, let \(C_{\rm cmp}\)
-dominate its coefficient and dyadic costs, and \(C_w\) its endpoint
-pointwise exponent. These constants do not depend on the density
-depth. Let \(m_*\) bound free draws per group. Unique factorization
-gives a dyadic free-product law
+\subsection{Precision order and completion}
+Let \(Q_0=\lceil\kappa_0\rceil+30\).
+Request normalized graph-pairing error \(L^{-(Q_0+3)}\) per source
+dyad. There are at most \(L^2\) such dyads. Fix root and ideal
+accuracies for this request, then the probe complexity and eventual
+mark length, keeping the phase range \(L^3\).
+Only after this family is fixed let \(C_{\rm cmp}\) dominate its
+coefficient and dyadic costs, and \(C_w\) its endpoint pointwise
+exponent. These exponents do not depend on the density depth.
+If \(m_*\) bounds free draws per group, the dyadic product laws obey
 \[
  \nu_i(n)\le L^{K_*}/n,\qquad
  K_*=\frac{\log(m_* !)+m_*\log2}{16\phi}.
 \]
-Since the law has mass at most one, its squared norm on a dyad of
-length \(T_i\) is at most \(L^{K_*}/T_i\). The integer bilinear
-bound \eqref{eq:gr-multiplier} consequently permits
-\(C_{\rm prod}=2K_*+2\). Choose
+Their mass is at most one, so their squared norm at length \(T_i\)
+is at most \(L^{K_*}/T_i\). In \eqref{eq:gr-multiplier} take
+\(C_{\rm prod}=2K_*+2\), and choose
 \begin{align}
- A_{\min}&>C_{\rm cmp}+2C_w+40+8\delta,\notag\\
+ A_{\min}&>C_{\rm cmp}+2C_w+\kappa_0+50+8\delta_0,\notag\\
  B_{\rm out}&>2A_{\min}+C_{\rm prod}+4.\label{eq:outer-budget}
 \end{align}
 Dirichlet approximation with denominator ceiling
-\(T_1T_2/L^{B_{\rm out}-1}\) yields a multiplier
-\(O(L^{-A_{\min}})\) off the grids of denominators \(Nr\),
-\(r\le L^{B_{\rm out}}\). The middle terms in
-\eqref{eq:gr-multiplier} are superlogarithmically small because
-\(T_i\ge\exp(L^{1/3})\).
+\(T_1T_2/L^{B_{\rm out}-1}\) gives multiplier \(O(L^{-A_{\min}})\)
+off the outer grids. Their denominators are \(Xr\) in the reflected
+case and \(|h|r\) for a fixed shift, with \(r\le L^{B_{\rm out}}\).
+The middle terms in the multiplier bound are superlogarithmically
+small because \(T_i\ge\exp(L^{1/3})\).
 
-Next request integrated target-grid energy saving
-\[
- T_E>2(C_{\rm cmp}+C_w+40+8\delta).
-\]
-Use window exponent \(B_{\rm out}+\delta\), and choose its
-residue-energy accuracy to pay both the window and the number of
-\(r\)'s. Parseval on the other endpoint then gives major contribution
-at most \(L^{-T_E/2+C_w+C_{\rm cmp}+8\delta}\le L^{-40}\).
-The minor contribution has the same margin by
-\eqref{eq:outer-budget}. Exact discrete Parseval, not a supremum
-bound, cancels the target-grid factor \(N\).
+Request integrated major-energy saving
+\(T_E>2(C_{\rm cmp}+C_w+\kappa_0+50+8\delta_0)\).
+In the reflected case enlarge the residue-energy accuracy to pay
+both arc widths and the number of outer denominators. Exact discrete
+Parseval accounts for all target-grid points. In the fixed-shift case
+use the low/high Dirichlet-frequency proof at that accuracy, choosing
+its smoothing and low-frequency threshold after the fixed comparison
+costs. The cofactor-length margin pays its mean-value bound.
+Both major contributions are then at most
+\(L^{-T_E/2+C_w+C_{\rm cmp}+8\delta_0}\).
+The minor bound has the same ample margin.
 
-Finally choose the Hankel depth for the required exceptional-character
-centering. If \(C_{\rm low}\) pays record, character and cutoff costs,
-take \(3(K+1)/5>T_E+C_{\rm low}+40\).
-Choose the derivative order in \eqref{eq:mellin-budget} after its
-tail costs. These choices change constants and thresholds, not the
-earlier ideal complexity, bounded endpoint moment exponent or phase
-range. In particular the precision choices are noncircular.
+Choose the model depth last, using (C3) at the largest period,
+smoothness and precision exponents now required. Its uniform-in-depth
+pointwise and sieve exponents in (C1) and (C4) make this order
+noncircular. Choose the external Mellin tail derivative order last
+as well. Nothing changes the earlier ideal family or phase range.
 
-\begin{proof}[Completion of Theorem~\ref{thm:general}]
-After localization, the graph and comparison errors are bounded by
-\(O(NL^{-20+8\delta})\). Reconstruction costs at most \(L\), so
-the resulting error is
+\begin{proof}[Completion of Theorem~\ref{thm:model-comparison}]
+After localization, source-dyad summation and reconstruction, the graph
+and comparison errors are
 \[
- O(NL^{-19+8\delta})=o(\mathcal S_NL^{-\delta}),
+ O(XL^{-Q_0+8\delta_0})=o(\mathcal S_XL^{-\delta_0}).
 \]
-using \(\kappa<2\), \(J_{\mathcal E}\ge1\), and fixed \(A,B\).
-The discarded-bank error is \(O(\mathcal S_NL^{-2\delta})\).
-Apply the resulting replacement on each side to the identity
+The rare-bank term is \(O(\mathcal S_XL^{-2\delta_0})\).
+All record, square and CRT tails are exponential or power-smaller
+than \(\mathcal S_XL^{-\delta_0}\).
+For each ordered endpoint pair use
 \[
- f_U(x)f_V(y)-D_U(x)D_V(y)
-   =\xi_U(x)f_V(y)+D_U(x)\xi_V(y).
+ f_1(x)f_2(y)-D_1(x)D_2(y)
+ =(f_1(x)-D_1(x))f_2(y)+D_1(x)(f_2(y)-D_2(y)).
 \]
-Proposition~\ref{prop:model-correlation} evaluates the remaining
-model correlation. On retained bulk records its logarithm is
-\(L+O(\sqrt L+\delta\log L)\), giving relative
-\(O(L^{-1/2})\) in leading-density replacement. The sieve uses a
-fixed power level; partial summation costs
-\(\TV(\Phi_\epsilon)=O(1)\), rather than its largest derivative.
-The record and squared-modulus CRT endpoints cost
-\(N^{0.45+o(1)}\). The upper endpoint sieve gives
-\[
- O(\epsilon\mathcal S_N+N^{0.45+o(1)}).
-\]
-Its strip length \(N/L^\delta\) exceeds the sieve level. Euler tails
-are superlogarithmically small, and
-\(\int\Phi_\epsilon=1+O(\epsilon)\). Every error is therefore
-\(O(\mathcal S_NL^{-\delta})\), as asserted.
+The banked comparison bounds each centered term to the required
+precision. The argument is symmetric in the endpoints; for a fixed
+shift, interchange them and replace \(h\) by \(-h\).
 
-For an interval \(I\), if \(|I|\ll\epsilon\) use the direct upper
-sieve. Otherwise clip it to \([\epsilon,1-\epsilon]\) and smooth
-its endpoints at width \(\epsilon\). At most four transition strips
-of total length \(O(\epsilon N)\) are lost. Total variation remains
-\(O(1)\), and the logarithmic derivative norm of a transition at
-\(t_0\) is at most \(O_j(t_0^j\epsilon^{1-j})\).
-Thus the same budgets apply uniformly in both endpoints of \(I\),
-and the cutoff integral is \(|I|+O(\epsilon)\).
-Endpoint conventions alter at most two pairs. This proves the
-uniform interval assertion and completes the theorem.
+To restrict to an arbitrary interval, smooth its endpoints at width
+\(\epsilon X\); in the reflected case first remove the two extreme
+strips. At most four strips of total length \(O(\epsilon X)\)
+are lost. Condition (C4), applied to each nonnegative pair weight,
+bounds their total contribution by
+\(O(\epsilon\mathcal S_X+X^{1/2}L^C+XL^Ce^{-cL^{1/10}})\).
+For an interval shorter than this width use that upper bound directly.
+Otherwise total variation remains \(O(1)\), and a transition at
+\(t_0\) has logarithmic derivative norm at most
+\(O_j(t_0^j\epsilon^{1-j})\). The Mellin and localization budgets
+are therefore uniform in both endpoints. Since
+\(\epsilon=L^{-\delta_0}\), every error has the asserted size.
+This proves the comparison theorem in both regimes.
 \end{proof}

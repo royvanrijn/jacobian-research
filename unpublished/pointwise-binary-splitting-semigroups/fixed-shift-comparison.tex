@@ -1,0 +1,299 @@
+\section{Fixed shifts and wide major arcs}\label{sec:fixed-shift-comparison}
+
+For fixed \(k=h\ne0\), the shared-label comparison
+\eqref{eq:gr-comparison}--\eqref{eq:gr-comparison-term} remains valid.
+The frequency estimate has a different scale. After localizing
+\(D_i\asymp H_i\), put
+\[
+ H'=H_1H_2,\qquad Y=xH',\qquad H=H'L^{-B_0}.
+\]
+The multiplier is now \(m(h\theta)\). The integer bilinear bound
+\eqref{eq:gr-multiplier} confines its significant part to
+\(O_h(L^{2B_0})\) arcs about rationals \(a/q\), with
+\[
+ q\le |h|L^{B_0},\qquad
+       |\theta-a/q|\le C_h/H.
+\]
+In particular, their physical width is \(L^{B_0}/H'\), rather than
+\(L^{B_0}/Y\). The target-grid proposition does not estimate these
+arcs: on them \(|\beta|Y\) can be of order \(xL^{B_0}\).
+We extract the already established Dirichlet-frequency argument of
+\cite[Sections 6.2--6.4]{walsh}, with the arithmetic hypotheses
+\textup{(C1)--(C3)} in place of its particular divisor model.
+
+\begin{proposition}[Fixed-shift comparison energy]
+\label{prop:fixed-comparison-energy}
+Let \(F\) have the form \eqref{eq:gr-energy-F}, with a selected
+small bank whose label does not enter \(b\), and with its exact
+prime count equal to one. Suppose
+\[
+ H_i\ge\exp(L^{1/3}),\qquad
+ H_i\le\exp(O((\log L)L^{2/5})),\qquad Y=xH_1H_2.
+\]
+For every fixed \(B_0,D>0\), conditions \textup{(C1)--(C3)} and
+the zero-free input imply, at sufficiently deep fixed model depth,
+\begin{equation}\label{eq:fixed-wide-energy}
+ \int_{|\beta|\le C_h/H}
+      |\widehat F(a/q+\beta)|^2\,d\beta
+                            \ll_{D,h}YL^{-D}
+\end{equation}
+uniformly for \(q\le |h|L^{B_0}\), where
+\(\widehat F(\theta)=\sum_nF(n)\ee{\theta n}\).
+Consequently every fixed-shift comparison in
+\eqref{eq:gr-comparison-term} has an arbitrary prescribed
+logarithmic saving. No binary cancellation estimate is assumed.
+\end{proposition}
+
+\subsection{Conversion to Dirichlet frequencies}
+
+We use the following existing two mean-square inequalities, in their
+normalizations from \cite[Lemma 6.3 and (6.14)]{walsh}. If \(a_n\)
+is supported on \(n\asymp Y\), then
+\begin{equation}\label{eq:fixed-additive-mellin}
+ \int_{|\beta|\le C/H}\left|\sum_na_n\ee{\beta n}\right|^2d\beta
+ \ll_C\frac1Y\int_{\mathbb R}(1+H|t|/Y)^{-2}
+                         \left|\sum_na_nn^{it}\right|^2dt.
+\end{equation}
+For completeness, the interval kernel of length \(H/(4C)\) and
+Plancherel bound the left side by
+\(O(H^{-2})\int|\sum_{v<n\le v+H/(4C)}a_n|^2dv\).
+The short-interval Mellin mean-square identity bounds this by
+\[
+ O(YH^{-2})\int_{\mathbb R}
+       \min\{H^2/Y^2,|t|^{-2}\}
+                    \left|\sum_na_nn^{it}\right|^2dt,
+\]
+which is \eqref{eq:fixed-additive-mellin}. The other inequality,
+the ordinary Dirichlet-polynomial mean-value theorem, is
+\begin{equation}\label{eq:fixed-dirichlet-mean}
+ \int_I\left|\sum_{n\le CR}a_nn^{it}\right|^2dt
+              \ll_C (|I|+R)\sum_n|a_n|^2,
+\end{equation}
+uniformly in the location of the interval \(I\). Neither inequality
+is a new distributional input.
+
+Apply \eqref{eq:fixed-additive-mellin} to
+\(a_n=F(n)\ee{an/q}\) and set
+\[
+ \mathcal T(t)=Y^{-1}\sum_nF(n)\ee{an/q}n^{it},\qquad
+ T_0=(Y/H)L^{B_1}=xL^{B_0+B_1}.
+\]
+The pointwise list bound and \textup{(C1)} give
+\(\sum_n|F(n)|^2\ll YL^C\). Thus on a dyadic interval
+\(T\le |t|\le2T\), \eqref{eq:fixed-dirichlet-mean} gives
+\[
+ \int_{T\le|t|\le2T}|\mathcal T(t)|^2dt
+                                  \ll L^C(1+T/Y).
+\]
+Summing this with the weight in
+\eqref{eq:fixed-additive-mellin}, for \(|t|>T_0\), gives
+\begin{equation}\label{eq:fixed-frequency-tail}
+ \int_{|t|>T_0}(1+H|t|/Y)^{-2}|\mathcal T(t)|^2dt
+       \ll L^C\bigl(L^{-2B_1}+H^{-1}L^{-B_1}\bigr).
+\end{equation}
+The exponent \(B_1\) is chosen after the required saving, so this
+tail is arbitrarily small. It remains to prove
+\begin{equation}\label{eq:fixed-dirichlet-energy}
+                \int_{|t|\le T_0}|\mathcal T(t)|^2dt\ll_D L^{-D}.
+\end{equation}
+
+\subsection{Low frequencies and recordwise centering}
+
+Choose a fixed exponent \(B_2\), to be specified after the smooth
+prime estimates, and put \(T_c=L^{B_2}\). In the low range write
+\(n=rv\), where \(r=n_S\) is the complete smooth record and
+\(v\) is rough. Every list weight is a function of \(r\) alone
+and is bounded by \(L^C\). The terms with \(r>E\) have population
+\(O(YL^C\exp(-cL^{1/10}))\), by the Rankin estimate in
+\eqref{eq:gr-tailsets}; their contribution to \(\mathcal T(t)\)
+is negligible uniformly in \(t\). For each remaining record,
+\(\ee{arv/q}\) is a bounded periodic test of period at most \(q\).
+The phase \((rv)^{i(t+\sigma)}\psi(rv/Y)\) has fixed logarithmic
+derivatives bounded by fixed powers of \(L\), throughout
+\(|t|\le T_c\). Condition \textup{(C3)} therefore gives any
+prescribed saving for that record. Summing uses only
+\[
+          \sum_{r\ S\text{-smooth}}\frac1r
+             =\prod_{p\le y}(1-1/p)^{-1}\ll L^C.
+\]
+Choose the precision in \textup{(C3)} after \(B_2\) and all list
+costs. This gives
+\begin{equation}\label{eq:fixed-low}
+             \int_{|t|\le T_c}|\mathcal T(t)|^2dt\ll_D L^{-D}.
+\end{equation}
+The arithmetic progression test is on \(v\), so this argument
+does not require \(r\) or the endpoint to be a unit at \(L_0\).
+
+\subsection{The smooth prime estimate at polynomial height}
+
+The high-frequency argument uses a smooth version of
+Lemma~\ref{lem:gr-primes}. Its height dependence is essential:
+the linear \(1+|t|\) loss in the sharp-interval estimate is not
+adequate when \(|t|\) can be of order \(x\).
+Fix \(\sigma_1\in(11/12,1)\). For \(w\) smooth and supported on
+\([1/2,2]\), with each required derivative bounded by a fixed
+power of \(L\), the same zero-free input gives
+\begin{equation}\label{eq:fixed-smooth-primes}
+ \sum_p\chi(p)w(p/P)p^{it}
+  =\delta_\chi\int_0^\infty\frac{w(u/P)u^{it}}{\log u}\,du
+                       +O(P^{\sigma_1}L^{C_w})
+\end{equation}
+uniformly for \(q\le L^B\), characters \(\chi\bmod q\),
+\(|t|\le x^C\), and \(P\ge\exp(cL^{1/8})\).
+Here \(C_w\) depends on the fixed derivative bounds and on \(B,C\).
+This is the smooth prime estimate used in
+\cite[Lemma 5.1 and Section 6.4]{walsh}.
+
+To obtain it directly from the present input, insert the von
+Mangoldt weight and the smooth factor \(w(u/P)/\log u\), apply
+Mellin inversion, and move the line from \(\Re s>1\) to
+\(\Re s=\sigma_1\). Formula \eqref{eq:gr-logderivative} bounds
+the regularized logarithmic derivative on this line by
+\(O(\log(q(|\Im s|+3)))\). The Mellin transform is translated
+in height by \(t\); its decay depends on the derivatives of
+\(w\), rather than on \(|t|\). Its weighted integral is consequently
+\(O(L^{C_w})\) even for \(|t|\le x^C\). The principal pole
+gives the integral in \eqref{eq:fixed-smooth-primes}; prime powers
+cost \(O(P^{1/2}L^{C_w})\), absorbed by the displayed error.
+Truncation followed by dominated convergence justifies the contour
+move. This uses the same fixed zero-free half-plane, without a
+second prime-distribution theorem.
+
+Impose simultaneously the bank class \(c\pmod{L_0}\) and a
+prime class modulo \(q\). Incompatible classes contribute zero;
+otherwise character orthogonality at \(\lcm(q,L_0)\) applies.
+For large \(x\), every prime in the small bank exceeds
+\(qL_0|h|\), so nonreduced prime classes and primes dividing
+\(h\) do not occur. Integration by parts in the principal
+integral, for every fixed \(j\), shows that the normalized
+prime sum \(P^{-1}\sum_p\cdots\) is bounded by
+\begin{equation}\label{eq:fixed-high-prime}
+        L^{C_{w,j}}(1+|t|)^{-j}
+                       +L^{C_w}\exp(-cL^{1/8}).
+\end{equation}
+All character and congruence costs here are polynomial logarithmic.
+
+\subsection{High frequencies and a long cofactor}
+
+For this part remove selected-bank prime squares, whose population
+is \(O(Y/P_{\min})\). Applied to their bounded coefficients,
+\eqref{eq:fixed-dirichlet-mean} bounds their normalized integrated
+energy on \([-T_0,T_0]\) by
+\(L^C(1+T_0/Y)/P_{\min}\), hence by less than every logarithmic
+power. Do not impose the cutoff \(n_S\le E\) here: it would
+couple the selected prime to its cofactor.
+
+The remaining terms have a unique selected-bank prime and can be
+written \(n=pm\). Exact invariance \textup{(C2)} gives
+\(\xi(pm)=\xi(m)\). The distinguished list coefficient ignores
+this prime, so after removing its factor \(V_g^{-1}\) the
+remaining coefficient \(\gamma(m)\) is independent of \(p\) and
+bounded by \(L^C\). It contains the condition that \(m\) has no
+selected-bank prime, together with the other list weights.
+
+Partition the selected bank into smooth dyadic pieces
+\(p\asymp P\), including its two sharp outer endpoints. Replace
+each sharp endpoint by a smooth cutoff across a strip of length
+\(\varepsilon P\), where \(\varepsilon=L^{-A_{\rm sm}}\).
+The normalized sum of prime labels in such a strip is at most
+\(O(\varepsilon+P^{-1})\), simply by counting integers. The
+Dirichlet mean-value bound for the cofactor below and Minkowski
+show that this replacement changes the normalized integrated
+energy by at most
+\[
+                  L^C(\varepsilon+P_{\min}^{-1})^2.
+\]
+There are only polynomially many dyadic pieces in \(L\).
+Choose \(A_{\rm sm}\) large after the desired saving and these
+costs. The resulting smooth prime cutoffs have derivative bounds
+which are fixed powers of \(L\).
+
+Put \(R=Y/P\), and insert a smooth cofactor cutoff
+\(g(m/R)\) equal to one wherever the product cutoff can contribute.
+Separate the additive phase by the residue classes of \(p,m\)
+modulo \(q\), and Mellin-invert the product cutoff. Apart from
+the errors just bounded, \(\mathcal T(t)\) is a sum of at most
+polynomially many terms of the form
+\begin{equation}\label{eq:fixed-prime-cofactor}
+ \frac{1}{2\pi V_g}\sum_{r,r'\bmod q}\ee{arr'/q}
+       \int_{\mathbb R}\widetilde\psi(\nu)Y^{-i\nu}
+          P_r(t+\sigma+\nu)R_{r'}(t+\sigma+\nu)\,d\nu,
+\end{equation}
+where harmless Mellin sign choices are fixed by this formula and
+\[
+ \begin{split}
+ P_r(s)&=P^{-1}\sum_{\substack{p\equiv r\ (q)\\p\equiv c\ (L_0)}}
+                    w(p/P)p^{is},\\
+ R_{r'}(s)&=R^{-1}\sum_{m\equiv r'\ (q)}
+                      g(m/R)\gamma(m)m^{is}.
+ \end{split}
+\]
+There is no unit restriction on \(r'\). For any interval of
+length at most \(4T_0\), \eqref{eq:fixed-dirichlet-mean} gives,
+uniformly in its location,
+\begin{equation}\label{eq:fixed-long-cofactor}
+       \int_I|R_{r'}(t)|^2dt\ll L^C(1+T_0/R)\ll L^C.
+\end{equation}
+The final inequality uses the decisive scale separation
+\[
+ \frac{T_0}{R}\ll\frac{P L^{B_0+B_1}}{H_1H_2}
+   \le\exp\bigl(CL^{1/4}-2L^{1/3}\bigr)L^{B_0+B_1}=o(1).
+\]
+It comes from the two independent big-prime products already
+present in the graph comparison, rather than a new energy bound.
+
+The Mellin transform in \eqref{eq:fixed-prime-cofactor} has
+Schwartz decay with polynomial-logarithmic seminorms. Choose a
+fixed exponent \(C_\nu\) large enough that its tail
+\(|\nu|>L^{C_\nu}\), in weighted \(L^1\), is smaller than the
+required logarithmic power. Uniformity in the location of \(I\)
+in \eqref{eq:fixed-long-cofactor}, and the trivial bound
+\(|P_r|\ll1\), justify removing this tail. Now choose \(B_2\)
+larger than \(C_\nu\), the bound for \(|\sigma|\), and the
+smooth-cutoff derivative costs. Throughout
+\(T_c<|t|\le T_0\), the argument
+\(s=t+\sigma+\nu\) then has \(|s|\gg L^{B_2}\).
+In \eqref{eq:fixed-high-prime} fix, for example, the
+integration-by-parts order \(j=2\) first. After choosing the
+requested exponent \(A\), enlarge \(B_2\) beyond the resulting
+fixed derivative costs. This gives
+\[
+           \sup_{T_c<|t|\le T_0,\ |\nu|\le L^{C_\nu}}
+                    |P_r(t+\sigma+\nu)|\ll_A L^{-A}
+\]
+for any requested \(A\). The smooth prime estimate applies
+because \(T_0=xL^{B_0+B_1}\le x^2\) for large \(x\).
+Choose this \(A\) after the fixed partition and Mellin costs.
+Combine the estimate with \eqref{eq:fixed-long-cofactor}, then apply
+Minkowski to the Mellin integral and sum the dyadic and residue
+pieces. This proves
+\[
+              \int_{T_c<|t|\le T_0}|\mathcal T(t)|^2dt\ll_D L^{-D}.
+\]
+Together with \eqref{eq:fixed-low} this is
+\eqref{eq:fixed-dirichlet-energy}; together with
+\eqref{eq:fixed-frequency-tail} and
+\eqref{eq:fixed-additive-mellin} it proves
+\eqref{eq:fixed-wide-energy}.
+
+The parameter order is explicit. First fix the graph comparison,
+its list bounds, and its external cutoff costs. Then fix the major
+arcs and the required energy saving, the tail cutoff \(B_1\),
+the bank smoothing precision, and the Mellin truncation. Choose
+the high-frequency boundary \(B_2\) after those choices. Finally
+choose the model depth through \textup{(C3)} at the required
+low-frequency precision. No exponent in the graph or the endpoint
+moment bound depends on that final depth.
+
+On the arcs, Cauchy--Schwarz, \eqref{eq:fixed-wide-energy}, and
+Parseval for the other endpoint bound the normalized Fourier
+comparison by every requested inverse power of \(L\), after
+paying the polynomially many arcs. Off the arcs,
+\eqref{eq:gr-multiplier} and the two endpoint norms do so.
+The normalization is \(1/Y\), exactly as in
+\eqref{eq:gr-fouriercomparison}, with \(T\) replaced by \(h\).
+The harmonic conversion \(\Psi(t)=t\Phi(t)\) therefore gives
+the same centered banked replacement as for reflected sums.
+This completes the proof of
+Proposition~\ref{prop:fixed-comparison-energy} and supplies the
+fixed-shift branch used in Section~\ref{sec:assembly}.

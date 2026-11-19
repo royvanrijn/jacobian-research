@@ -451,10 +451,25 @@ correlation theorem.
 For \(S=\{3\}\bmod4\), \(H=G\), so both odd states have equal leading
 weight, with exponent \(\rho=1/2\).
 Its two-summand finite-congruence criterion is simply that the target
-be even. The existing subgroup binary proof is not a literal
-specialization: secondary fixed-character branches and the
-nonneutral progression frame require additional verification.
-No binary asymptotic for this set is inferred here.
+be even. This binary case now has a separate
+[pointwise proof](PRIME_THREE_MOD_FOUR_SUMS.md), under exactly the
+same ZF/G inputs as the subgroup theorem. It retains the negative
+rough branch and uses a phase-correct character frame on primes
+\(3\bmod4\), giving an explicit leading constant and relative
+error \(O((\log N)^{-1/16384})\) on every even target.
+This is an additional binary comparison proof, not a specialization
+of (H.8).
+
+The [prime-\(3\bmod10\) extension](PRIME_THREE_MOD_TEN_SUMS.md)
+now treats the order-four singleton as well, under those same inputs.
+It retains the four parameters \(1/4,i/4,-1/4,-i/4\), uses conjugated
+rough-character coefficients, and verifies positivity and the
+fourth-root coset frame. Its unweighted binary count has the
+\(N/(\log N)^{3/2}\) leading scale on every even target, with relative
+error \(O((\log N)^{-1/32768})\) and the explicit factor at five.
+These two specific cases do not assert a general theorem for all
+prime cosets or residue sets. Prescribed summand-state filters still
+require their own arguments.
 
 ## 6. Summable defects: an elementary dense Hardy–Littlewood theorem
 
@@ -584,6 +599,8 @@ All-moduli closure solubility and positive local density are distinct.
 | Pure prime-factor semigroups for arbitrary residue sets \(S_i\) | Uniform \(H_i=\langle S_i\rangle\) state masks, exponent \(|S_i|/\varphi(L)\), finite coupled congruence criterion |
 | Exclusions starting at prime squares outside finitely many primes | Elementary law (H.11), even for one-parameter and dependent patterns |
 | Binary subgroup splitting sums, including \(C_{12}+C_{12}\) | Existing proved pointwise theorem with explicit logarithmic remainder and its stated imported inputs |
+| Unfiltered binary support on primes \(3\bmod4\) | Separate two-branch/coset-frame extension under the same ZF/G inputs; all even targets, explicit constant and logarithmic remainder |
+| Unfiltered binary support on primes \(3\bmod10\) | Four-branch extension under the same ZF/G inputs; all even targets, factor at five and explicit logarithmic remainder |
 | General dependent sparse patterns | The formula is a candidate model when its products and scaling are meaningful; a further correlation proof is required |
 | Arbitrary infinite bad-prime profiles | Density, tail and scale control are essential; (H.13) refutes all-moduli solubility as a universal positivity test |
 

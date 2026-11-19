@@ -1,10 +1,22 @@
 # Pointwise Binary Correlations in Abelian Splitting Semigroups
 
 The flagship article develops pointwise binary counting for two fixed abelian
-subgroup prime prescriptions. It opens with the explicit `C_12 + C_12`
+subgroup prime prescriptions and unfiltered self-sums for a fixed prime coset.
+It opens with the explicit `C_12 + C_12`
 asymptotic, proves the general correlation and joint congruence criterion, and
 applies them to primitive norm values in every fixed imaginary quadratic order.
 The short basis-order corollary gives thirteen for `C_12` with zero adjoined.
+
+The shared arithmetic-model comparison theorem isolates exact invariance under
+a common prime class, centered one-variable rough means and positive sparse
+sieve bounds. Its assumptions contain no centered binary cancellation or
+major-arc energy estimate. The reflected-target and fixed-shift frequency
+estimates are proved separately from the same imported analytic inputs.
+Subgroups and prime cosets then require explicit arithmetic application checks.
+The `3 mod 10` example retains all four quartic-character branches, including
+the complex pair. The Connors–Keating supporting note also uses the fixed-shift
+comparison; its inert-valuation and dyadic model calculations are separate
+arithmetic work and are not included as an application theorem in this article.
 
 The coprime `C_12` corollary follows by Möbius inversion from the uniform
 count. It multiplies the leading term by
@@ -56,7 +68,10 @@ builds. None implies external human review, independent external replay,
 formal verification or established historical priority. There is no numerical
 onset or complete small-exception assertion in this paper.
 
-Before submission, obtain specialist review of the reflected graph comparison,
-the target-grid normalization, the older positive-restoration route and the
-conductor/class-group transfer. Broader historical-priority checking remains
+Before submission, obtain specialist review of the shared comparison hypotheses,
+both frequency regimes, the complex-character coset model, the older
+positive-restoration route and the conductor/class-group transfer.
+The common invariant prime class is essential: arbitrary disjoint prime
+prescriptions and growing sublinear shifts are outside the comparison theorem.
+Broader historical-priority checking remains
 separate from the exact comparisons in the introduction.

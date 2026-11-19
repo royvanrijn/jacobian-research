@@ -1,0 +1,412 @@
+{
+  "arithmetic": "Gaussian rational pairs using fractions.Fraction; no floating-point operations.",
+  "centering_coefficients_checked": 16,
+  "centering_matrix": [
+    [
+      {
+        "imaginary": "0",
+        "real": "1"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      }
+    ],
+    [
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "1"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      }
+    ],
+    [
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "1"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      }
+    ],
+    [
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "0"
+      },
+      {
+        "imaginary": "0",
+        "real": "1"
+      }
+    ]
+  ],
+  "character_generator": {
+    "residue": 3,
+    "value": {
+      "imaginary": "1",
+      "real": "0"
+    }
+  },
+  "fixed_residue_cases": [
+    {
+      "Gamma": "5/2",
+      "ordered_roots": [
+        [
+          1,
+          9
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          9,
+          1
+        ]
+      ],
+      "root_count": 4,
+      "target_mod_10": 0
+    },
+    {
+      "Gamma": "0",
+      "ordered_roots": [],
+      "root_count": 0,
+      "target_mod_10": 1
+    },
+    {
+      "Gamma": "15/8",
+      "ordered_roots": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "root_count": 3,
+      "target_mod_10": 2
+    },
+    {
+      "Gamma": "0",
+      "ordered_roots": [],
+      "root_count": 0,
+      "target_mod_10": 3
+    },
+    {
+      "Gamma": "15/8",
+      "ordered_roots": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "root_count": 3,
+      "target_mod_10": 4
+    },
+    {
+      "Gamma": "0",
+      "ordered_roots": [],
+      "root_count": 0,
+      "target_mod_10": 5
+    },
+    {
+      "Gamma": "15/8",
+      "ordered_roots": [
+        [
+          3,
+          3
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          7
+        ]
+      ],
+      "root_count": 3,
+      "target_mod_10": 6
+    },
+    {
+      "Gamma": "0",
+      "ordered_roots": [],
+      "root_count": 0,
+      "target_mod_10": 7
+    },
+    {
+      "Gamma": "15/8",
+      "ordered_roots": [
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      "root_count": 3,
+      "target_mod_10": 8
+    },
+    {
+      "Gamma": "0",
+      "ordered_roots": [],
+      "root_count": 0,
+      "target_mod_10": 9
+    }
+  ],
+  "fixed_residue_cases_checked": 10,
+  "fourier_L_exponents": [
+    {
+      "imaginary": "0",
+      "real": "1/4"
+    },
+    {
+      "imaginary": "-1/4",
+      "real": "0"
+    },
+    {
+      "imaginary": "0",
+      "real": "-1/4"
+    },
+    {
+      "imaginary": "1/4",
+      "real": "0"
+    }
+  ],
+  "generated_residue_group": [
+    1,
+    3,
+    7,
+    9
+  ],
+  "logarithmic_saving": "1/32768",
+  "modulus": 10,
+  "negative_controls_rejected": [
+    "Fourier L exponents without conjugation (coefficient at prime residue 3 becomes zero)",
+    "Omitting both complex branches (coefficient at prime residue 3 becomes 1/2 instead of 1)"
+  ],
+  "prime_coset": [
+    3
+  ],
+  "real_part_gaps": [
+    "1/4",
+    "1/2",
+    "1/4"
+  ],
+  "relative_rough_model_exponents": [
+    "3/20",
+    "3/10",
+    "3/20"
+  ],
+  "scope": "Exact finite character and residue algebra only; no analytic proof or onset bound.",
+  "source_sha256": "9e70096f18ad8b67d31946a76301c0a1bc8237ca27188e88f3f81a1c2d954c94",
+  "status": "passed",
+  "twisted_first_Euler_coefficient_cases": [
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 1,
+      "twist_power": 0
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "1"
+      },
+      "prime_residue": 3,
+      "twist_power": 0
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 7,
+      "twist_power": 0
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 9,
+      "twist_power": 0
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 1,
+      "twist_power": 1
+    },
+    {
+      "coefficient": {
+        "imaginary": "1",
+        "real": "0"
+      },
+      "prime_residue": 3,
+      "twist_power": 1
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 7,
+      "twist_power": 1
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 9,
+      "twist_power": 1
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 1,
+      "twist_power": 2
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "-1"
+      },
+      "prime_residue": 3,
+      "twist_power": 2
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 7,
+      "twist_power": 2
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 9,
+      "twist_power": 2
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 1,
+      "twist_power": 3
+    },
+    {
+      "coefficient": {
+        "imaginary": "-1",
+        "real": "0"
+      },
+      "prime_residue": 3,
+      "twist_power": 3
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 7,
+      "twist_power": 3
+    },
+    {
+      "coefficient": {
+        "imaginary": "0",
+        "real": "0"
+      },
+      "prime_residue": 9,
+      "twist_power": 3
+    }
+  ],
+  "twisted_first_Euler_coefficients_checked": 16,
+  "twisted_singular_exponents": [
+    {
+      "imaginary": "0",
+      "real": "1/4"
+    },
+    {
+      "imaginary": "1/4",
+      "real": "0"
+    },
+    {
+      "imaginary": "0",
+      "real": "-1/4"
+    },
+    {
+      "imaginary": "-1/4",
+      "real": "0"
+    }
+  ]
+}

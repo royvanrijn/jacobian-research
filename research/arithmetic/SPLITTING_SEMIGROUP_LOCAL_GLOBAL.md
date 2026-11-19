@@ -975,3 +975,18 @@ Euler exponent rules, with a separate elementary theorem for dense sets.
 The [actual-prime decompositions](PRIME_SPLITTING_DECOMPOSITIONS.md)
 use separate prime-distribution inputs: full prime-star constants,
 natural-order short-window counts, and a class-number-three application.
+
+The [prime-\(3\bmod4\) extension](PRIME_THREE_MOD_FOUR_SUMS.md)
+now gives an unfiltered binary example outside the subgroup
+hypothesis: every even target has the explicit leading count
+and relative logarithmic remainder, under the same ZF/G inputs.
+Its negative rough branch and prime-coset frame are proved
+separately. The subgroup theorem itself retains its stated scope.
+
+The [prime-\(3\bmod10\) extension](PRIME_THREE_MOD_TEN_SUMS.md)
+adds an order-four test under the same inputs. Four conjugate
+Hankel branches and fourth-root slot phases give the explicit
+\(N/(\log N)^{3/2}\) count on all even targets, including the
+target-dependent factor at five. This specific complex-branch
+extension does not change the subgroup hypotheses above or assert
+a theorem for every prime coset.

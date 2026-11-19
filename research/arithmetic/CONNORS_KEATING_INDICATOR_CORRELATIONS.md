@@ -198,17 +198,20 @@ For a bank prime, the law of the exact valuation record of
  \mu_p(e,f)=0\ (e,f\ge1).                                \tag{CK.9}
 \]
 Let \(\mu\) be the product over the banks. For every nonnegative
-record function \(F_0\le L^B\) and \(w_1,w_2\in\{b,D\}\),
+record function \(F_0\le L^B\), any interval \(I\subset[x,2x]\),
+and \(w_1,w_2\in\{b,D\}\),
 \[
- \sum_{n\asymp x} F_0(n_{\mathcal P},(n+h)_{\mathcal P})
+ \sum_{n\in I} F_0(n_{\mathcal P},(n+h)_{\mathcal P})
                      w_1(n)w_2(n+h)
- \ll_h \frac{x}{L}\mathbb E_\mu F_0
+ \ll_h \frac{|I|}{L}\mathbb E_\mu F_0
        +xL^{O(1)}e^{-cL^{1/10}}+O(x^{1/2}).              \tag{CK.10}
 \]
 
 To prove this, first discard records larger than \(E\) by the
 preceding tilted moment. Retained records \(r,s\) are coprime;
-their divisibilities define one progression of length \(O(x/(rs))\).
+their divisibilities define one progression with \(|I|/(rs)+O(1)\)
+terms in the chosen interval. The CRT endpoint bound is independent
+of both interval endpoints.
 Exactness at bank primes contributes precisely (CK.9): two roots
 outside \(rs\), one remaining root at a prime of \(rs\).
 
@@ -246,126 +249,70 @@ restores the factor \(L^{-1}\). For \(D D\), it has order
 \(\log y\), and \(D^2\ll L^{-3/5}\) again restores
 \(L^{-1}\). This proves (CK.10) for all four pairs.
 
-In the product law, a bank has exactly one distinct prime at each
-endpoint with probability
-\(V_g^2e^{-2V_g}+o(1)\), bounded below by a positive constant.
-Chernoff and (CK.10) make the contribution with too few successful
-small or big banks \(O_h(xL^{-1-\eta})\), for some \(\eta>0\).
-Selected bank prime squares cost less than every log power.
-The exact inclusion-exclusion and normalization in Module D,
-Section 6, then reduce centered correlations to banked correlations,
-with a total coefficient cost \(L^{C_0}\). There is no divisor
-deweighting: (CK.8) already gives exact invariance.
+This is the positive record envelope used by the shared comparison
+theorem below. Its bank selection and reconstruction are part of
+that theorem, rather than additional arithmetic estimates here.
 
-## 4. The fixed-shift graph comparison
+## 4. Applying the fixed-shift comparison theorem
 
-For clarity, the comparison needed after reconstruction is
+Use the fixed-shift case of the
+[arithmetic-model comparison theorem](SPARSE_ARITHMETIC_MODEL_COMPARISON.md),
+with \(m=4\), common prime class \(c=1\), \(f_1=f_2=b\), and
+\(\mathcal S_x=x/L\). We verify its independent hypotheses.
+
+* **(C1), bounded models.** The positive extension after (CK.6)
+  gives \(0\le D\ll L^{-3/10}\), hence \(D\le1\) eventually
+  for every fixed depth. The bound and the earlier endpoint moment
+  exponents do not increase with the final depth.
+* **(C2), a common invariant prime class.** Equation (CK.8) proves
+  exact invariance at every selected split prime, including powers.
+  Bank primes dividing \(h\) are deleted; for a fixed shift they
+  are eventually below the bank ranges in any event.
+* **(C3), all recordwise rough means.** Section 2 proves these
+  against arbitrary permitted periodic tests, with both principal
+  branches retained and the density depth chosen after the required
+  accuracy. Every structured bank coefficient is a function of the
+  small-prime record and is outside the inner rough-variable sum.
+  No arbitrary bounded rough-variable test is being assumed.
+* **(C4), a positive sparse record envelope.** The interval version
+  (CK.10) proves this for every pair in \(\{b,D\}^2\), by explicit
+  prime-square forbidden atoms and the uniform CRT endpoint bound.
+  It uses only an upper sieve and does not assume cancellation.
+
+There is no unit-support hypothesis at two. In a gcd profile for
+\(Q=\operatorname{lcm}(q,4)\), the residual modulus \(Q/d\) may
+lose factors of four. The shared proof therefore uses a primitive
+character \(\eta\) with conductor dividing both four and \(Q/d\),
+and the record phase \(\eta(r/d)\). It does not evaluate a literal
+modulo-four character on a possibly even record after the gcd split.
+The periodic rough means above cover every character that remains.
+
+The fixed-shift clause is essential. Its major windows satisfy
+\(|\beta|Y\asymp xL^B/|h|\), rather than a polynomial-logarithmic
+bound. The shared proof treats these windows by the existing
+additive-to-Dirichlet conversion and low/high Mellin-frequency
+argument: (C3) supplies the low range, and the unique small-bank
+prime, the same zero-free prime estimate and the ordinary Dirichlet
+mean-value theorem supply the high range. The two free big products
+make the cofactor length exceed the relevant height. Thus this
+application does not invoke the reflected target-grid estimate at
+a frequency range outside its statement.
+
+The comparison theorem gives, for the centered term and either
+\(w\in\{b,D\}\),
 \[
- \sum_n\Phi(n/x)\xi(n)w(n+h)=o_h(x/L),
-                         \qquad w\in\{b,D\}.             \tag{CK.11}
+ \sum_n\Phi(n/x)\xi(n)w(n+h)=o_h(x/L).                 \tag{CK.11}
 \]
-Its reflected counterpart follows by interchanging the endpoints
-and replacing \(h\) by \(-h\).
-
-Here are the graph and frequency interfaces. Apply the construction
-of Walsh, Proposition 6.1 and Section 7, to the exactly banked
-bounded invariant coefficients in (CK.8). The replacement for the
-unrestricted-prime ideal kernel is Module I of the binary support,
-with fixed modulus four. Characters differing by \(\chi_4\) have
-the same restriction to these banks. Keep one representative per
-restriction class, rather than counting the two constants twice.
-The conditional Gram frame is positive with norm at most two;
-the signed probe construction has polynomial-logarithmic mass
-independent of the eventual fixed mark length.
-
-The imported root moment G applies to this ideal kernel. Every
-bank prime avoids \(h\), so the uniform residue replacement and
-the unit change of variable by \(h^{-1}\) identify its physical
-root moments with the \(k=1\) input. Here \(h\) is fixed; no
-growing-shift theorem, reflection of a positive-sum line, or
-target-sized denominator assertion is being used. On each physical
-dyadic interval of length \(O(X)\), the absolute endpoint moments
-of fixed order are \(O_r(X)\), with log exponent independent of the
-eventual fixed mark length. For a fixed ordered prime list of
-product \(P=x^{o(1)}\), counting its multiples gives \(O(X/P)\);
-summing the normalized reciprocal list masses gives this bound.
-The numerical first-endpoint factor is a function of the integer
-position alone, constant on the mark fiber, as required by the
-root-moment endpoint consequence. Indicator and model factors are
-bounded and do not enlarge these moments.
-The coefficients retain the big-label restriction of G: dependence
-on freed small labels is excluded before forming comparisons.
-The permutation averages, shared-label deletion, collision budget
-and endpoint pairing are those of Module I and Walsh Section 7.5.
-They depend on the record and graph structure and on the endpoint
-moment bound, not on integer divisor orders.
-
-Consequently, the banked fixed correlation is a signed polynomial
-family of comparisons with two independent free big-prime products,
-up to \(O_A(xL^{-A})\). The elementary bilinear multiplier estimate
-in Walsh Section 6.1 is uniform in their bounded big-label weights;
-it gives arbitrary logarithmic saving away from small-denominator
-arcs. For fixed \(h\), the resulting major denominators are
-\(O_h(L^C)\). Walsh Sections 6.2--6.4 reduce their contribution
-to low-frequency centered rough means and high-frequency prime
-sums, with only polynomial-logarithmic coefficient losses.
-
-The low-frequency means are supplied by Section 2, including both
-principal branches. For the high-frequency part extract the unique
-small-bank prime. Exact invariance makes its cofactor coefficient
-independent of that prime; its other record restrictions remain in
-the bounded cofactor sequence. On a smooth dyadic interval, ZF
-gives the estimate (P1), Module P of the binary support:
-\[
- \sum_p\eta(p)w_0(p/P)p^{it}
- =\mathbf1_{\eta\text{ principal}}
-          \int_0^\infty w_0(u/P)u^{it}\frac{du}{\log u}
-       +O(P^{\sigma_1}L^{C_1}),                          \tag{CK.12}
-\]
-uniformly for \(q\le L^C\), \(|t|\le x^C\), and fixed
-\(\sigma_0<\sigma_1<1\). The proof shifts the smooth
-von-Mangoldt Mellin integral; the logarithmic derivative costs
-\(O(\log(q(|t|+3)))\), so high height costs only powers of \(L\).
-
-Expand the split restriction using \((1+\chi_4(p))/2\).
-Both possible principal integrals in (CK.12) decay faster than any
-fixed power of \(|t|\) after integration by parts. Above a large
-polylogarithmic threshold they are negligible. The error, divided
-by the prime mass, is
-\(P^{\sigma_1-1}L^{O(1)}\), smaller than every negative log
-power because \(P\ge\exp(L^{1/8})\).
-As in Walsh Section 6.4, first smooth sharp bank endpoints at
-width \(P L^{-K_0}\). Their normalized boundary mass is
-\(O(L^{-K_0}+P^{-1})\), uniformly in \(t\), and the cofactor
-mean square pays only a fixed log power. Choose \(K_0\) after
-that loss. The sharp partial-summation estimate (PS2), whose error
-grows linearly in \(|t|\), is not used at these heights.
-
-The cofactor mean square has the required length budget. With
-free big products \(H_1,H_2\), physical length
-\(Y\asymp xH_1H_2\), small-prime size \(P\), and height
-\(T_0=xL^C\), the cofactor length is \(R\asymp Y/P\).
-Then
-\(T_0/R\ll P L^C/(H_1H_2)=o(1)\), because the small-prime
-logarithmic size is at most \(L^{1/4}\), whereas each big
-product has logarithmic size at least \(L^{1/3}\).
-The Dirichlet mean-value theorem therefore bounds its normalized
-energy by a fixed power of \(L\). This pays the character,
-tuple and smoothing losses before the prime saving is applied.
-
-Choose the requested saving after the reconstruction and comparison
-coefficient exponents, the density depth after the low-frequency
-budget, and the fixed graph mark length after the ideal precision.
-The bounded endpoint-moment exponent does not increase with that
-mark length. Each comparison now has enough saving to pay every
-coefficient. Adding the rare-bank error proves (CK.11).
-
-The exact identity
+For a general fixed smooth bulk cutoff use partial summation and
+a finite dyadic partition; the theorem's uniform interval error
+has the same saving. Interchanging endpoints and replacing \(h\)
+by \(-h\) gives the other orientation. The exact identity
 \[
  b(n)b(n+h)-D(n)D(n+h)
-       =\xi(n)b(n+h)+D(n)\xi(n+h)                        \tag{CK.13}
+       =\xi(n)b(n+h)+D(n)\xi(n+h)                      \tag{CK.13}
 \]
-therefore reduces (CK.3) to evaluation of the model product.
+reduces the smooth asymptotic to the arithmetic model product below.
+There is no separate graph or energy hypothesis in these checks.
 
 ## 5. Evaluation of the model product
 
@@ -468,9 +415,10 @@ This proves (CK.2).
 
 ## 6. Verification scope
 
-The new application uses the previously proved projected-density,
-fixed-progression ideal-kernel and smooth-prime modules with the
-specific changes stated in Sections 2--4. Its source dependence on
+The application uses the shared arithmetic-model comparison
+theorem through the independent checks in Sections 2--4. The
+rough model, prime-square upper sieve and local-factor evaluation
+are the arithmetic arguments retained here. Its source dependence on
 ZF and G remains explicit. In particular neither the existing
 positive-sum theorem nor Walsh's integer-divisor theorem is used
 as if it already asserted (CK.2).

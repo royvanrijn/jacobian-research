@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "title": "Pointwise Binary Correlations in Abelian Splitting Semigroups",
+  "edition": {
+    "pdf": "paper.pdf",
+    "sha256": "5086aedbd0f70f70627d488bf76f993b3b6024382beca5965691ed231b9041ca",
+    "pages": 44
+  },
+  "mathematical_scope": {
+    "general": "Fixed even modulus; two arbitrary fixed subgroups, fixed residue subsets, fixed coprime bad-supported coefficients. Explicit positive logarithmic saving uniform in targets and valuations; uniform absolute interval discrepancy.",
+    "quadratic_order_bounds": "Independent classical twofactor Kloosterman completion, shifted weighted family, finite lower sieve and recoverable positive cofactor restoration. No recent zero-free or graph input.",
+    "quadratic_order_leading": "Explicit leading asymptotic for ordered numerical primitive norm-value pairs in every fixed imaginary quadratic order; uniform o(1), not a claimed all-order logarithmic saving.",
+    "class_error": "Independent lower-logarithmic-order class obstruction estimate, including conductor-local ideal types.",
+    "limits": "No growing modulus, numerical onset, complete small exceptions, or power-short relative asymptotic. Even-modulus core convention excludes two."
+  },
+  "internal_application_review": [
+    {
+      "reviewer": "Codex central_proof_audit",
+      "scope": "D/I/G/P/E/F/J application interfaces; actual graph statements and Walsh comparison; final graph and quadratic older-route derivation",
+      "result": "No concrete application-interface gap found; this is an internal AI mathematical review."
+    },
+    {
+      "reviewer": "Codex norm_application_audit",
+      "scope": "All-order principal genus, local values, saturation, class-error sieve, conductor summability and Haar normalization",
+      "result": "No independent gap found; leading term explicitly depends on the general correlation."
+    },
+    {
+      "reviewer": "Codex prior_work_audit",
+      "scope": "Inspected Iwaniec-Pomykala Theorems1-2; Walsh v2 theorem scope; exact imported statement identities and roles",
+      "result": "Unrestricted leading asymptotic and coprime corollary distinguished from conditional coprime order bounds; method attributed; no priority claim."
+    },
+    {
+      "reviewer": "Codex norm_application_audit, separate adversarial classical-route review",
+      "scope": "Full shifted weighted family, fixed-period completion, bad-coefficient normalization, arbitrary residue filters, gcd reductions, target valuations, finite lower sieve, actual cofactor model/cap and injective positive restoration",
+      "result": "No concrete proof gap or dependence on recent zero-free/graph inputs found. The exposed lemma supplies the all-order norm theorem scope. Internal mathematical review only."
+    }
+  ],
+  "primary_editions": [
+    {
+      "path": "../../research/arithmetic/sources/weighted-dilation-graphs-sep24-2026.pdf",
+      "sha256": "351692885d112277e969901e75fe56eeee0d263d5d5847d0b980fe2c8c7744c0",
+      "scope": "OpenAI 24September2026, Theorem3.5, Lemmas3.4/3.6 and Corollary3.11, retained hypotheses and normalization."
+    },
+    {
+      "path": "../../research/arithmetic/sources/qrh-sep30-2026.pdf",
+      "sha256": "8fe93046f8cf5ef1ba5969c89addc02d76311adc4ee907509ff9cd96f7ec99e7",
+      "scope": "OpenAI 30September2026, PartI Theorem3.1, Dirichlet open halfplane Re(s)>11/12. PartII not used."
+    },
+    {
+      "path": "../../research/arithmetic/sources/walsh-2610.40439v2.pdf",
+      "sha256": "5fb593fdd03c79d90e5895177b895c1ce6afcfae660f2bf2f10312f0ff23bad1",
+      "scope": "Walsh v2,12November2026, integer-order fixed-shift theorem used as framework/comparison; additional application arguments written in article."
+    },
+    {
+      "path": "../../research/arithmetic/sources/richert-sieve-methods-1976.pdf",
+      "sha256": "9fe0998535480c741a7a23a9a8dfa944ec2fe5ed3304c779f3dd218e23c774e2",
+      "scope": "Richert,1976, exact general Selberg/fundamental-lemma Theorems11.5-11.8, printed138-142; statement and displayed sieve justification inspected."
+    },
+    {
+      "path": "../../research/arithmetic/sources/heath-brown-d3-progressions-1986.pdf",
+      "sha256": "7102515f18e1498eb69b5c8dcc0dc094c5c94d73b4a710ec84fefb94d91e9fd0",
+      "scope": "Heath-Brown1986, printedp44 ordinary Weil-Estermann Kloosterman bound; used in the direct twofactor completion, rather than importing a higher divisor assertion."
+    }
+  ],
+  "import_review_limit": "The complete recent zero-free and graph preprints were not independently revalidated in this manuscript-preparation audit. They remain exact attributed mathematical dependencies. Existing canonical source-audit records have their own separate inspection scope.",
+  "computation": {
+    "essential_infinite_estimates_certified_by_computation": false,
+    "description": "Analytic and algebraic proofs. PDF builds, hashing and source consistency checks do not prove the asymptotics."
+  },
+  "build": {
+    "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "result": "passed",
+    "pages": 44,
+    "unresolved_references": false,
+    "overfull_boxes": 0,
+    "citations_resolved": true
+  },
+  "pdf_only_reader": {
+    "performed": true,
+    "reviewer": "Codex flagship_pdf_reader, fresh isolated AI agent",
+    "review_kind": "Internal PDF-only reader review, followed by a focused PDF-only rereading of the expanded proof passages",
+    "date": "2026-11-19",
+    "supplied_context": "Only compiled PDFs, their derived text/images, and the five reader questions. No repository sources, research history, other chats, supporting notes or web were accessed. Follow-up identified the earlier reader findings and the revised PDF path.",
+    "editions": [
+      {
+        "sha256": "3fdf9e79cca697587b8b98805a2b95222f009fe8a3ea01e38d438f47bb6dcd32",
+        "pages": 41,
+        "scope": "Initial full text read. Mutable current PDF changed during reading; initial extracted text was retained."
+      },
+      {
+        "sha256": "ebded9cd51c9bd4ce55fee800fc97d4bee4d56980be9dc4a6be6b26f4a5ce1ac",
+        "pages": 41,
+        "scope": "Frozen full-reading edition; comparison with initial PDF-derived text confirmed core proof stability. Full reader report attributed to this frozen edition."
+      },
+      {
+        "sha256": "5086aedbd0f70f70627d488bf76f993b3b6024382beca5965691ed231b9041ca",
+        "pages": 44,
+        "scope": "Hash verified before and after focused follow-up of expanded Lemma5.1 and Proposition7.2. This is not a fresh whole-paper certification."
+      }
+    ],
+    "five_question_answers": {
+      "contribution": "Theorem2.1 pointwise binary value correlations for two fixed subgroup prescriptions, residue filters, fixed bad-supported coefficients and absolute interval discrepancy. Application arguments are projected fractional density, progression ideal comparison, large displacement, target-grid energy and quantitative assembly. C12 and coprime corollaries, and distinct classical order-bounds/new-input leading-term routes for all quadratic orders.",
+      "concept": "Allowed-prime invariance permits replacement by a smooth model retaining every principal congruence branch. Local root merging gives the arithmetic factor. Exact discrete Parseval accounts for all target-grid points. Class-prime orientation saturation and conductor summability transfer the arithmetic application.",
+      "hardest": "Ideal operator construction through target-grid cancellation in Section5, plus independent classical shifted weighted family and positive restoration in Section7.",
+      "limits": "All moduli/groups/coefficients/orders fixed; subgroup prescriptions only; absolute interval error, nonnumerical onsets, value rather than coordinate counts. General sums-of-two-squares indicator correlations are outside scope.",
+      "verification_boundaries": "Imported zero-free and weighted-dilation proofs and their original source hypotheses are outside PDF-only scope. No historical-priority conclusion or external human proof certification follows from this review."
+    },
+    "first_pass_findings": [
+      "Exceptional projection and tensorized signed cancellation in Lemma5.1 were too compressed to reconstruct.",
+      "Finite-main-sum normalization before Euler completion in Proposition7.2 was too compressed to reconstruct."
+    ],
+    "revisions_and_followup": [
+      "Lemma5.1 now supplies explicit projections, product norm bound for nontensor vectors, exceptional operator identity summing components before absolute values, subset cancellation, accumulated3^P error and parameter order. The reader reconstructed the claimed ideal norm.",
+      "Proposition7.2 now supplies finite main sum(29), its unit/filter normalization, completion and tail estimates, explicit local-factor table, target-gcd reassembly and bad/common coefficient formulas. The reader reconstructed the D_p product and1/(ABuv) normalization."
+    ],
+    "final_result": "Both reconstruction bottlenecks resolved in the focused follow-up. No definite counterexample, established quantifier/norm contradiction, or newly identifiable missing step in those deductions was found. This remains limited internal AI review, not full proof certification."
+  },
+  "layout_review": {
+    "performed": true,
+    "reviewer": "Codex root, internal visual inspection",
+    "date": "2026-11-19",
+    "pdf_sha256": "5086aedbd0f70f70627d488bf76f993b3b6024382beca5965691ed231b9041ca",
+    "pages": 44,
+    "method": "Rendered every page with Poppler at65dpi and inspected all8 contact sheets; inspected expanded projection proofp17 and finite-main/Euler calculationspp31-33 separately at1400px. Earlier opening and target-grid pages were also inspected at1400px.",
+    "result": "No clipping, overlapping equations, unreadable glyphs or defective page transitions found. Final TeX build has no warnings or overfull boxes.",
+    "scope": "Visual and compilation review only, not proof certification."
+  },
+  "assurance": {
+    "external_human_review": false,
+    "external_independent_replay": false,
+    "formal_verification": false,
+    "historical_priority_established": false,
+    "public_deposit": false
+  },
+  "next_review": [
+    "Obtain external specialist review of the reflected graph comparison and target-grid normalization, retaining the exact preprint dependencies.",
+    "Obtain specialist review of the independently proved older-input norm route, class error and conductor-tail transfer.",
+    "Continue historical-priority review beyond the precise primary-source comparisons already included."
+  ],
+  "standalone_build": {
+    "result": "passed",
+    "method": "Fresh extraction of source.zip, verification of every source_manifest hash, then declared latexmk build using only extracted sources.",
+    "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "pdf_sha256": "5086aedbd0f70f70627d488bf76f993b3b6024382beca5965691ed231b9041ca",
+    "reproduces_identical_pdf_bytes": true,
+    "warnings": [],
+    "tex_sources": {
+      "assembly.tex": "dcd9f8bc793485fbed49e947474446076f24e4b793d84e4f4ddf3e02d1db157e",
+      "consequences.tex": "e0a6b0c21e400015298c9c716c166ae47e6b9f77c548db5e063dd70961478770",
+      "graph.tex": "690a8008b9c95701b1c97f9421500a0f989b8589a915553b28bcde95df68b6ed",
+      "inputs.tex": "4294614003c9c4e571538b8ea65e956c16d697a33843178561d1689aef3ec3b6",
+      "introduction.tex": "eb46442e6bcae8bb1df07b8a122c5b761e4faa4e09aac64dcdba3a32be1bbd36",
+      "main.tex": "3e5dab8755a948f22a8e9b92636ebb580629c273e2ae68f0b7c373c14ef77ebd",
+      "model.tex": "c4199ea259d113e3129dd9628e352bbb9b91f5e10e644f16c4ec9071d701a678",
+      "norms.tex": "4b7bb607ef9545eebaf5d2d53c6abd5379d7ae8703d907c951bcfef3d12d7da5",
+      "older-norm-route.tex": "3ee1ac45898b5b24447745e8b6c07154d762593745870596f2834c8ce3a0f8d9",
+      "references.tex": "b08321fa2ded03c39fa3ad301a00d8635eb8aa4a21e9e26ac7a4122f7da02ac3",
+      "theorems.tex": "d1462f29e891ff5689af91f74530da8c2da20bc4b37970467d894fa90f713b76"
+    }
+  }
+}
