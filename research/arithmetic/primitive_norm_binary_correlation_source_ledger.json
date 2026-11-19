@@ -203,6 +203,11 @@
       "path": "sources/dietmann-elsholtz-prime-factors-2019-published.pdf",
       "sha256": "e7fddfdb529705d1c892c28c887eca86754a1616173ac78291cd985742de9578",
       "bytes": 260562
+    },
+    {
+      "path": "sources/tao-254a-notes2-2014.html",
+      "sha256": "d7bbbd6a2f8c6953d8a5d6905ba661c611bc476462b1b483d2ab4fcc183e0928",
+      "bytes": 1234082
     }
   ],
   "source_roles": {
@@ -235,9 +240,10 @@
     },
     "walsh-2610.40439v2.pdf": {
       "url": "https://arxiv.org/pdf/2610.40439v2",
-      "role": "latest inspected method version",
-      "locator": "Theorem1.1fixedh/integerorders;Section1.2.4futureextensions;Sections5-7, especiallyLemma6.2pp25-26 Eq6.9-6.11",
-      "inspection": "Same rawpdftotext convention,NFKC andpage-number/whitespace normalization: differences onlyreference renumbering and introductorywords; relevant lemmas/shared-label identities mathematicallyunchanged."
+      "role": "Latest inspected multiplicative-invariance framework; explicit prior proposal of the indicator direction, not an imported indicator theorem or completed classical replacement",
+      "locator": "Theorem1.1 printedp2 fixed integerdivisor orders/fixedh; Section1.2.4 printedpp5-6 explicitly proposes sums-of-two-squares indicators; p2 remarks classical recovery of the divisor theorem; Lemma5.1p20 and Section6.4pp28-30 retain the recent zero-free proof",
+      "inspection": "Same rawpdftotext convention,NFKC andpage-number/whitespace normalization: differences onlyreference renumbering and introductorywords; relevant lemmas/shared-label identities mathematicallyunchanged.",
+      "attribution_scope": "Credit Walsh with the framework and announced indicator direction. This application supplies complete indicator models, local factors, sparse envelopes and reflected target-uniform transfer. The author remark does not close the actual full-height indicator/cofactor estimate; no ZF dependence is removed."
     },
     "kmt-short-ap-2023.pdf": {
       "url": "https://pure.mpg.de/rest/items/item_3521580_2/component/file_3524771/content",
@@ -388,6 +394,12 @@
       "locator": "Published pp.177-179, especially final p.179 remark",
       "role": "Contextual antecedent: the minus-class binary problem is explicitly posed; the plus-class existence theorem is different.",
       "inspection": "Published and author editions read internally. No imported minus-class asymptotic, exhaustive later-literature review or historical priority certification."
+    },
+    "tao-254a-notes2-2014.html": {
+      "url": "https://terrytao.wordpress.com/2014/12/09/254a-notes-2-complex-analytic-multiplicative-number-theory/",
+      "role": "Classical input for the moderate-height partial lemma only; no full replacement for ZF",
+      "locator": "Proposition51 classical region with possible exceptional zero; Theorem62(ii) final all-character ineffective clause; Exercise45(i)-(ii), with the principal zeta counterpart",
+      "inspection": "Actual primary statements and the applicable contour reconstruction inspected internally by root and two auditors; the cached HTML is pinned. This does not certify the full classical high-frequency replacement."
     }
   },
   "version_audit": {
@@ -405,7 +417,8 @@
     "target_energy": "Sharp all-conductorPerron primeinput underZF; exactgcd-profileorthogonality and principalcentering; targetarcwidth and allsmallbankweights reviewed.",
     "assurance": "Internal written/source checking only. No external human review or local formal-verification run of this application. Imported recent preprints remain explicit; no historical-priority claim.",
     "class_error_propagation": "The all-order arithmetic transfer now uses everydelta<delta_star(2Pic), with1/5 available in every fixed order and exact zero error if2Pic=0. Constants remain order dependent. This replaces only the lower-order class-error estimate and adds no zero-free/weighted-dilation input or new quantitative rate for the full leading-term transfer.",
-    "form_extension": "SameFieldPrimitiveForms B.11a uses the already proved binary core input plus conductor-safe translated form-class shadows, separate genus masks and the mixed Haar transfer. The componentwise genus ratio and sharp order bounds have an independent classical route; the explicit leading constant retains the existing ZF/G inputs. No1/h divisor or new quantitative leading remainder is introduced."
+    "form_extension": "SameFieldPrimitiveForms B.11a uses the already proved binary core input plus conductor-safe translated form-class shadows, separate genus masks and the mixed Haar transfer. The componentwise genus ratio and sharp order bounds have an independent classical route; the explicit leading constant retains the existing ZF/G inputs. No1/h divisor or new quantitative leading remainder is introduced.",
+    "walsh_attribution": "The indicator direction is expressly announced in Walshv2Section1.2.4pp5-6; his Theorem1.1 is fixed-shift integer-divisor. The p2 classical-recovery remark is distinguished from the written zero-free high-frequency proof. Main ZF/G dependencies remain unchanged."
   },
   "source_validation": {
     "path": "PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md",
@@ -581,5 +594,47 @@
     "vector_tool": "The one-sided vector Fourier lemma assumes reduced rational approximation and no dependence on the other free product or selected small prime. It removes an unnecessary sqrt(Y) loss, but the actual graph lift has not been put in its required form.",
     "open_frontier": "A joint comparison must preserve the raw third factor after both permutation projections and retain shared-label normalization with noncircular parameter order. The displayed raw edge changes weight under projection. The coloring attempt has no completed normalization/error budget. No universal no-go claim is made.",
     "review": "Internally reviewed written partial results. Exact finite roots, target moments, the two-scale Selberg envelope and one-sided Fourier bound were separately checked. The positive-proportion count is a classical consequence of the published Iwaniec-Pomykala Theorem 1 at fixed difference 12 and ordinary marginal estimates; it does not depend on ZF or G. No pointwise triple asymptotic, all-target lower bound, external human review, formal verification, effective onset or priority is asserted."
-  }
+  },
+  "classical_replacement_boundary": {
+    "proved_partial": {
+      "path": "SPARSE_ARITHMETIC_MODEL_COMPARISON.md",
+      "sha256": "9e3d286c17a226ab468277117076a4b4b17dba61488f93c02c553abd3482245a",
+      "locator": "Section5.2 ClassicalModerateHeightPrimeEstimate C.1; allcharacters q<=L^B, |primeargument|<=2exp(L^1/16), small-bank scales exp(cL^1/8)<=P<=exp(CL^1/4), smooth fixed-derivative weights; ineffective constants"
+    },
+    "open_high_range": {
+      "path": "SPARSE_ARITHMETIC_MODEL_COMPARISON.md",
+      "sha256": "9e3d286c17a226ab468277117076a4b4b17dba61488f93c02c553abd3482245a",
+      "locator": "Section5.3 C.2: actual weighted prime/cofactor energy onZ<|t|<=T0=x*polylog(x), with all retained translations and logarithmic partition costs"
+    },
+    "classical_source": {
+      "path": "sources/tao-254a-notes2-2014.html",
+      "sha256": "d7bbbd6a2f8c6953d8a5d6905ba661c611bc476462b1b483d2ab4fcc183e0928",
+      "locator": "Tao Notes2,9December2014; Prop51, Theorem62(ii) all-character ineffective version, Ex45(i)-(ii)"
+    },
+    "buffer": "The outer range|t|<=Z retains polynomial-logarithmic sigma+nu, so the prime lemma is proved through2Z. This is a partial intermediate-height replacement only.",
+    "remaining": "Small modulus does not control polynomial Mellin height. No proof of C.2 or equivalent aggregate replacement is supplied; it is not an admissibility premise of any currently proved theorem.",
+    "candidate": "Soundararajan1606.08021v1 Section4pp13-15/Lemmas2.5-2.6 is context for a possible large-values/second-pool argument. Its second poolQ>y does not preserve the present centered density model; the necessary decomposition/error budget is unproved.",
+    "unchanged_main_dependencies": [
+      "HYP-BINARY-DIRICHLET-FIXED-ZEROFREE",
+      "HYP-BINARY-WEIGHTED-DILATION-ROOT-MOMENT"
+    ],
+    "assurance": "Internal primary-source and partial-proof audit only; no full ZF removal, external review, formal verification or priority claim."
+  },
+  "attribution_notes": [
+    {
+      "path": "CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+      "sha256": "ce7025e9b56342a9c9238a24bedb32857915eba682edcc90e8e3f8467dd273b9",
+      "locator": "Walsh v2 indicator proposal and present completed application scope"
+    },
+    {
+      "path": "QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
+      "sha256": "41b5655416a34f821886b7e6bde9ce53d88b7488b22d1ccae805d9c4e83ffc81",
+      "locator": "Walsh v2 indicator proposal and present completed application scope"
+    },
+    {
+      "path": "PRIMITIVE_NORM_NOVELTY.md",
+      "sha256": "7cea3436eb478af79ac0b8247870bc416d681c6f284e5b435a2e0ad08497af27",
+      "locator": "Walsh v2 indicator proposal and present completed application scope"
+    }
+  ]
 }

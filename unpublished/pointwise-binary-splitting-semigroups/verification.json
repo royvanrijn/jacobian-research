@@ -4,8 +4,8 @@
   "title": "Pointwise Binary Correlations in Abelian Splitting Semigroups",
   "edition": {
     "pdf": "paper.pdf",
-    "sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
-    "pages": 70
+    "sha256": "0bac2ecb80136e998d47ebbf6463b0a9b5b617e8d136d670a44b8812b8f02a14",
+    "pages": 71
   },
   "mathematical_scope": {
     "general": "Fixed even modulus; two arbitrary fixed subgroups, fixed residue subsets, fixed coprime bad-supported coefficients. Explicit positive logarithmic saving uniform in targets and valuations; uniform absolute interval discrepancy.",
@@ -18,7 +18,8 @@
     "limits": "No growing modulus, numerical onset, complete small exceptions, or power-short relative asymptotic. No arbitrary disjoint prime prescriptions or uniformity for intermediate growing sublinear shifts. Even-modulus core convention excludes two.",
     "primitive_form_genus_invariance": "Ordered numerical primitive-value pairs for arbitrary fixed primitive positive definite integral binary forms. Replacing each slot within its own genus gives relative error O(log(N)^(-eta)), every eta below the doubled-class-group threshold; eta=1/5 is common to all fixed orders. Mixed classical order bounds and this comparison do not use the recent zero-free or graph inputs. Componentwise genera may differ between slots; if both doubled class groups vanish, equality is exact for every target.",
     "primitive_form_mixed_leading": "Under the existing recent analytic inputs, explicit mixed local VALUE densities times the common quadratic Euler factor and N*J_S(N)/log(N). No 1/h divisor, because values can occur in all classes of a compatible genus. Uniform relative o(1), with no new logarithmic remainder for conductor tails.",
-    "common_field_conductors": "Two arbitrary fixed conductors in one fixed imaginary quadratic field. Separate target classes, genus masks and one-sided marking in the respective Picard groups; no joint ring-class distribution input. Genus replacements are within each respective discriminant, not an identification across conductors. No different-field theorem."
+    "common_field_conductors": "Two arbitrary fixed conductors in one fixed imaginary quadratic field. Separate target classes, genus masks and one-sided marking in the respective Picard groups; no joint ring-class distribution input. Genus replacements are within each respective discriminant, not an identification across conductors. No different-field theorem.",
+    "classical_fixed_shift_partial": "Classical smooth prime estimate for q<=L^B, exp(c L^(1/8))<=P<=exp(C L^(1/4)), |s|<=2exp(L^(1/16)), normalized error O(L^C exp(-c1 L^(1/16))). This only handles the outer intermediate-height energy through exp(L^(1/16)); no full zero-free dependency has been removed from fixed shifts or reflected sums."
   },
   "internal_application_review": [
     {
@@ -70,6 +71,16 @@
       "reviewer": "Codex class_error_pdf_reader, analytic actual-source audit",
       "scope": "Actual forms.tex: separate H-filters, local finite periods and profiles, classical independence, mixed coefficient/Haar normalization, uniform summable prefix tail and two fixed conductors.",
       "result": "No concrete gap identified. Two clarity suggestions implemented: define the mixed profile count and explicitly distinguish the fixed-profile asymptotic input from the classical lower-bound input."
+    },
+    {
+      "reviewer": "Codex comparison_pdf_reader, source and classical-alternative audit",
+      "scope": "Actual fixed-shift and shared graph proof, Walshv2, Tao classical source, and Soundararajan second-pool alternative.",
+      "result": "Moderate-height contour proof checks. No complete high-frequency replacement established. Identified actual centered-model/second-pool obligation; no dependency upgrade."
+    },
+    {
+      "reviewer": "Codex class_error_pdf_reader, independent source audit",
+      "scope": "Every fixed-shift zero-free use; actual new Section6.5 and canonical Section5, exceptional zeros, translated Mellin contours and claimed dependency boundary.",
+      "result": "Proof sound after enlarging the prime-argument range to2Z so retained logarithmic translations are covered for outer heightZ. Repair applied in both sources. Full high-frequency estimate remains explicitly open."
     }
   ],
   "primary_editions": [
@@ -117,6 +128,21 @@
       "path": "../../research/arithmetic/sources/khayutin-joint-cm-2019.pdf",
       "sha256": "f22691429c27058fabd47fe12c6a901e7feffffad7a0c52e1a936da645166d6f",
       "scope": "Arithmetic statements for arbitrary imaginary quadratic orders: Definition2.8 printedp167/PDF23, Lemma10.2 printedp240/PDF96 normalized ideal norm forms, AppendixA openingp256/PDF112 and PropositionA.1 p257/PDF113 norm-map kernel Pic(O)^2. No conductor-coprimality silently imposed. These arithmetic statements do not import the conditional analytic main theorem. Flagged dyadic tables A.6/A.10 are unused; the manuscript gives a direct local multiplier/genus proof."
+    },
+    {
+      "path": "../../research/arithmetic/sources/walsh-2610.40439v2.pdf",
+      "sha256": "5fb593fdd03c79d90e5895177b895c1ce6afcfae660f2bf2f10312f0ff23bad1",
+      "scope": "Printedp2 Theorem1.1 integer divisor orders and classical-recovery remark; Section1.2.4 pp5-6 prospective sums-of-two-squares indicator application; Lemma5.1 p20 and Section6.4 pp28-31 actual proof still invokes recent zero-free input. No supplied classical substitute or already-proved indicator theorem inferred."
+    },
+    {
+      "path": "../../research/arithmetic/sources/tao-254a-notes2-2014.html",
+      "sha256": "d7bbbd6a2f8c6953d8a5d6905ba661c611bc476462b1b483d2ab4fcc183e0928",
+      "scope": "Author lecture notes,9December2014, exact HTML retained19November2026. Proposition51 classical Dirichlet zero-free region; Theorem62(ii) including ALL-character INEFFECTIVE qualification; Exercise45(i)-(ii) local zero count/log derivative. Used for new moderate-height estimate only, not full fixed-shift dependency removal."
+    },
+    {
+      "path": "../../research/arithmetic/sources/soundararajan-1606.08021v1.pdf",
+      "sha256": "a0816f66e816cda53afd12f6673209860c2a2bbaa7ad32d06e2e83ca772f79c5",
+      "scope": "Section4 printedpp13-15 and Lemmas2.5-2.6: inspected second-pool/large-values candidate for the remaining high-frequency obligation. No automatic theorem application to the present centered indicator model claimed."
     }
   ],
   "import_review_limit": "The complete recent zero-free and graph preprints were not independently revalidated in this manuscript-preparation audit. They remain exact attributed mathematical dependencies. Existing canonical source-audit records have their own separate inspection scope.",
@@ -150,7 +176,7 @@
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
     "result": "passed",
-    "pages": 70,
+    "pages": 71,
     "unresolved_references": false,
     "overfull_boxes": 0,
     "underfull_boxes": 1,
@@ -158,89 +184,134 @@
     "citations_resolved": true
   },
   "pdf_only_reader": {
-    "review_type": "focused_internal_ai_pdf_only_reading",
-    "reviewer_role": "fresh independent PDF reader",
-    "completed_utc": "2026-11-19T11:25:33Z",
-    "source": {
-      "path": "/home/royvanrijn/src/jacobian-research/.scratch/form-genus-reader.pdf",
-      "pages": 70,
-      "expected_sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
-      "sha256_before": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
-      "sha256_after": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
-      "hash_match": true
-    },
-    "scope": {
-      "primary": "Section 11, printed/PDF pages 50-54, primitive forms, genus invariance and two fixed conductors in one imaginary quadratic field.",
-      "supporting_reading": "Abstract and introduction, Theorem 2.1, Section 3 input statements, Section 10 local ideals/saturation/class-error/normalization, Appendix A classical core proof (pages 60-69), and boundary statements. Section 11 pages 50-54 were also rendered and visually inspected.",
-      "independence": "Only the frozen PDF and text/images extracted from that PDF were used as manuscript evidence. No repository source, notes, histories, other review records, other chats, or web sources were opened. Another audit's reported result was not treated as evidence.",
-      "exclusions": "No whole-paper external certification, no external-source validation, and no complete re-audit of the frequency/model-comparison proof of Theorem 2.1. Supporting Appendix A was read and its mechanism checked, but every quantitative error estimate has not received a separate independent proof.",
+    "performed": true,
+    "date": "2026-11-19",
+    "reviewer": "Codex internal AI reader /root/classical_boundary_pdf_reader",
+    "review_kind": "fresh isolated PDF-only scoped mathematical and dependency reading; internal AI review, not external review",
+    "supplied_context": {
+      "instructions": "Read only the supplied PDF and derived text/images/URI annotations; focus abstract/introduction, Section 3 opening and input scope, Section 6.5 and supporting Sections 6.2-6.4; do not infer global certification.",
+      "pdf": "/home/royvanrijn/src/jacobian-research/.scratch/classical-boundary-reader.pdf",
+      "expected_sha256": "0bac2ecb80136e998d47ebbf6463b0a9b5b617e8d136d670a44b8812b8f02a14",
+      "sha256_before": "0bac2ecb80136e998d47ebbf6463b0a9b5b617e8d136d670a44b8812b8f02a14",
+      "sha256_after": "0bac2ecb80136e998d47ebbf6463b0a9b5b617e8d136d670a44b8812b8f02a14",
+      "hash_unchanged": true,
+      "page_count": 71,
+      "accessed": [
+        "supplied PDF",
+        "text extracted from supplied PDF",
+        "rendered printed page 29",
+        "URI annotations extracted from supplied PDF"
+      ],
+      "not_accessed": [
+        "repository source",
+        "repository notes/status/history",
+        "other chats",
+        "web pages",
+        "external source papers"
+      ],
       "manuscript_edits": false
     },
-    "five_answers": [
-      {
-        "question": "1. What is the precise contribution?",
-        "answer": "For ordered pairs from the numerical value sets of fixed primitive positive definite binary quadratic forms (each numerical value counted once, with equal sets and diagonal pairs allowed), Section 11 proves a classical relative genus comparison R_Q1,Q2(N) = R_Q1prime,Q2prime(N)(1 + O((log N)^(-eta))) on sufficiently large locally admissible targets when the forms are replaced componentwise within their genera. The counts have order N J(N)/log N. Under the recent analytic inputs, it also evaluates the mixed leading coefficient as b_D,S times the product of the two-form local value densities, with no class-number divisor. Corollary 11.4 extends these statements to two fixed conductors in one fixed imaginary quadratic field."
+    "editions": {
+      "manuscript": "Pointwise Binary Correlations in Abelian Splitting Semigroups, Roy van Rijn; single supplied 71-page PDF; PDF creation/modification 2026-11-19 01:00:00 CET; no earlier manuscript edition compared",
+      "walsh_as_cited": "[9] M. N. Walsh, Shifted convolutions of divisor functions, arXiv:2610.40439v2, 12 November 2026",
+      "classical_source_as_cited": "[14] T. Tao, 254A, Notes 2: Complex-analytic multiplicative number theory, 9 December 2014; Proposition 51, Theorem 62(ii), Exercise 45(i)-(ii)",
+      "weighted_dilation_as_cited": "[7] OpenAI, Weighted dilation graphs, smooth shifted primes and totient fibers, 24 September 2026, Section 3",
+      "zero_free_as_cited": "[8] OpenAI, The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8, 30 September 2026, Part I, Theorem 3.1; manuscript imports only the Dirichlet Re(s)>11/12 conclusion",
+      "citation_authentication": "Bibliographic statements and URI annotations inspected within supplied PDF only; source contents and editions not independently authenticated"
+    },
+    "five_question_answers": {
+      "precise_contribution_or_change": {
+        "answer": "The manuscript presents explicit sparse-indicator arithmetic models and local factors, an indicator-to-model comparison, and a uniform reflected-target argument. It credits Walsh with the multiplicative-invariance architecture and the proposed sums-of-two-squares indicator extension. Section 6.5 adds a precise classical moderate-height replacement for the smooth prime estimate and identifies the remaining fixed-shift high-frequency obstruction. It does not claim to complete a classical replacement of the fixed-shift proof. A change relative to an earlier manuscript cannot be established from this one PDF.",
+        "locations": [
+          "abstract, printed p. 1",
+          "introduction, printed pp. 2-4",
+          "Section 3 opening, printed pp. 7-8",
+          "Section 6.5, printed p. 29"
+        ]
       },
-      {
-        "question": "2. What is the central concept?",
-        "answer": "A primitive value has an ideal-class realization, and its primitive local shadow is an existential compatible coset c_Q + 2 Pic(O), where c_Q = -[A] for A = Za + Z(b + sqrt(Delta))/2. Good exponent-one split-prime orientations typically saturate 2 Pic(O), allowing the target class c_Q to be reached without changing the norm or conductor-local ideal type. Thus the class restriction costs a smaller exceptional set, while separate local genus filters determine the main binary count. Compatible classes do not partition numerical values, explaining the absence of 1/h."
+      "central_conceptual_distinction": {
+        "answer": "Small conductor and manageable height are separate requirements. Fixed-shift rational denominators are polynomial-logarithmic, but their additive-to-Dirichlet conversion reaches T0=x L^(B0+B1). Reflected targets have a distinct target-sized conductor problem. Classical zero-free information supplies useful pointwise short-prime cancellation at the moderate translated heights of Section 6.5, but not at the full fixed-shift height by the displayed contour argument. Separately, the proof distinguishes one-variable recordwise centering and positive bounds from the binary frequency cancellation it must prove.",
+        "scales": {
+          "L": "log x",
+          "selected_small_primes": "exp(L^(1/8)) <= p <= exp(L^(1/4))",
+          "fixed_shift_modulus": "q <= |h| L^B0, or q <= L^B after absorbing fixed constants and L0",
+          "classical_height": "Z=exp(L^(1/16)); smooth-prime estimate through |t|<=2Z",
+          "required_fixed_shift_height": "T0=x L^(B0+B1)",
+          "reflected_modulus": "q can be target-sized, up to x times a fixed logarithmic power"
+        },
+        "locations": [
+          "Section 3.4, printed p. 11",
+          "Section 5 opening, printed p. 13",
+          "Section 5.4, printed pp. 20-21",
+          "Section 6 opening, printed p. 25",
+          "Sections 6.1 and 6.5, printed pp. 26 and 29"
+        ]
       },
-      {
-        "question": "3. What is the hardest step reconstructable from the PDF?",
-        "answer": "For the classical conclusion, the key technical burden is obtaining a genuinely positive pointwise lower bound before dividing the absolute class error. Appendix A supplies a shifted weighted quadratic family using two-factor completion and the classical Weil-Estermann Kloosterman bound, then a finite Bonferroni lower sieve and positive restoration over split-prime cofactor triples. Transporting both finite residue filters preserves the original finite density; injectivity of the restored valuation patterns and bounded residual divisor weights yield the unweighted N J(N)/log N lower bound. The class-error step is also reconstructable: maximal subgroups give deficient split-prime families of density (ell-1)/(2 ell) >= 1/4, and randomized marking of exactly valuation-one residues gives every strict eta below that threshold."
+      "hardest_new_argument_reconstructable": {
+        "answer": "Yes, the Section 6.5 moderate-height contour argument can be reconstructed from the PDF at the level of a standard analytic-number-theory proof, subject to the cited classical inputs. The surrounding fixed-shift mechanism is also explicit enough to explain why the argument stops at moderate height.",
+        "reconstruction": [
+          "For q<=L^B and heights bounded by 3Z^2, the classical region gives a zero-free strip of width 2 delta with delta=c L^(-1/16), after treating the possible exceptional real zero.",
+          "Siegel's theorem with epsilon<1/(32(B+1)) puts a possible exceptional zero at distance much greater than L^(-1/32) from 1 for sufficiently large x. Since L^(-1/32) is larger than L^(-1/16), it lies outside this strip. Fixed conductor multipliers from L0 do not alter this scale comparison. The needed threshold can be ineffective, as stated.",
+          "Apply Mellin inversion to the von Mangoldt sum with weight w(u/P)/log u. Translating the smooth transform by t preserves decay controlled by derivatives of w. Shift to Re(s)=1-delta, using a polynomial-logarithmic bound for the regularized logarithmic derivative. The principal pole supplies exactly the integral in (22); the regularized derivative must not discard this residue.",
+          "The minimum prime scale log P>=c L^(1/8) implies P^(-delta)<=exp(-c' L^(1/16)). Truncate Mellin frequency at Z^2. Since |t|<=2Z, the translated contour stays below 3Z^2 for large x. Fixed sufficiently high derivatives make horizontal and truncation errors smaller than the claimed error. Prime powers are smaller as well.",
+          "In Section 6.4, extract n=pm using exact invariance and the ignored selected-bank label, then Mellin-separate the product cutoff. The cofactor length R=Y/P is much larger than T0 because T0/R=P L^(B0+B1)/(H1 H2)=o(1). The ordinary Dirichlet mean-value theorem controls its integrated energy uniformly in the location of the frequency interval.",
+          "The Mellin tail is removed at |nu|>L^Cnu; sigma and the retained nu are polynomial-logarithmic. Thus outer |t|<=Z implies |t+sigma+nu|<=2Z for large x. This is the explicit buffer supplied by the factor two. The corresponding global proof has polynomial-height headroom because x L^C plus these shifts is below x^2 for large x.",
+          "Below Tc=L^B2, use recordwise centering (C3); above Tc, integration by parts in the principal smooth-prime integral plus the prime error gives arbitrary logarithmic saving. Choosing B2 after fixed smoothing/Mellin costs and the model depth last avoids a circular dependence. This only gives a classical version of that high-prime step up to outer height Z."
+        ],
+        "locations": [
+          "Section 6.2, printed pp. 26-27",
+          "Section 6.3, printed p. 27",
+          "Section 6.4, printed pp. 27-29",
+          "Section 6.5, printed p. 29"
+        ]
       },
-      {
-        "question": "4. What are the scope and dependency limitations?",
-        "answer": "Forms and orders are fixed; coordinates are coprime, may vanish, and only positive numerical values are counted. Genus replacement occurs within each discriminant. The two-conductor result requires the same imaginary quadratic field. The two forms in a mixed pair may belong to different genera; replacement invariance is asserted only componentwise within the respective genera, not across different genera. No assertion is made for different fields, varying orders, numerical thresholds, small-target classifications, or weighted coordinate/ideal representation counts. Theorem 11.1, the order bounds and the genus comparison in Corollary 11.4 use the classical Appendix A route and fixed-order prime-class estimates, not the recent inputs. Theorem 11.2 and the explicit mixed asymptotic in Corollary 11.4 invoke Theorem 2.1 and the Section 3 imports: all-conductor Dirichlet nonvanishing on Re(s) > 11/12 and the weighted-dilation transference/root-moment results. The source's stronger 7/8 claim is unnecessary. Constants and thresholds remain order dependent even though eta = 1/5 is uniformly permissible for fixed orders."
+      "scope_and_dependency_limits": {
+        "answer": "The justified dependency conclusion is narrow and correctly stated. The displayed fixed-shift asymptotics still depend on both the imported fixed Dirichlet zero-free half-plane and the imported weighted-dilation/root-moment input. Section 6.5 replaces only the smooth-prime estimate at moderate height with classical inputs. It leaves Z<|t|<=T0 unresolved by classical methods in this proof. Even a future classical resolution of that range would leave the weighted-dilation input, and would not address the reflected proof's target-sized conductors.",
+        "endpoint_check": "At T0=x L^C, the classical strip has width comparable to 1/L. Since log P<=C L^(1/4), the contour factor exp(-c log P/L)=exp(-O(L^(-3/4))) tends to 1, not to 0. The manuscript correctly treats this as a failure of the direct substitution, not as proof that every possible classical argument is impossible.",
+        "import_scope": "Proposition 3.1 explicitly imports nonvanishing for all Dirichlet conductors and heights on the open half-plane Re(s)>11/12, with the principal pole allowed. It does not use the stronger Part II claim or the boundary line. Section 3 separately specifies the weighted-dilation imports and does not present root moments as a binary correlation theorem.",
+        "walsh_attribution": "Attribution is appropriately limited within the text: Walsh supplies the architecture, explicitly proposed the fixed-shift indicator extension, and is cited for the fixed-shift Dirichlet-frequency argument and smooth-prime input. His classical-recovery remark is distinguished from his displayed use of the zero-free input; it is not treated as an already supplied classical high-frequency proof for these indicators. Accuracy of those descriptions remains an external-source verification task.",
+        "not_certified": [
+          "validity of either recent imported theorem",
+          "correctness of Walsh or Tao citations against the source texts",
+          "all arithmetic applications and local constants",
+          "the entire 71-page proof",
+          "a classical fixed-shift theorem",
+          "a classical reflected-target theorem"
+        ]
       },
-      {
-        "question": "5. What verification obstacles or concrete proof gaps remain?",
-        "answer": "No concrete proof gap was found in the focused Section 11 argument and its inspected supporting chain. The ideal-class sign is consistent with I = (alpha)A^(-1); conductor-local genus membership is explicitly existential; separate masks survive the gcd reduction; the relative comparison uses a classical positive lower bound; the mixed Haar identity and Euler cancellation produce b_D,S without a class-number or extra beta-integral factor; and different-conductor saturation is applied to one order at a time, so no simultaneous ring-class prime-distribution theorem is needed. Verification remains limited by the PDF-only protocol: external classical citations and recent imported theorems were not checked, and the complete proof of Theorem 2.1 was not independently audited. This is a focused internal AI reading, not whole-paper external certification."
+      "concrete_gaps_or_verification_obstacles": {
+        "answer": "No substantive correction is required by this scoped PDF-only reading. The new classical moderate-height statement, its contour scales, exceptional-zero treatment, principal-pole handling, translated-height buffer, and stated dependency boundary are internally consistent. The remaining obstacles are explicitly bounded below.",
+        "required_corrections": [],
+        "verification_obstacles": [
+          "The external classical statements in [14] were not opened. A source audit should confirm their exact versions imply the all-character exceptional-zero exclusion and regularized logarithmic-derivative estimates used here.",
+          "The source text of Walsh [9] was not opened. Its p. 2 remark, Lemma 5.1, Lemma 6.3, and Sections 6.2-6.4 are only assessed as attributed in this PDF.",
+          "The recent inputs [7] and [8] were not opened or certified. The manuscript's stated dependency remains a genuine import.",
+          "Section 6.5 is a compressed standard contour argument, rather than a fully quantified contour calculation. Its claimed bounds can be reconstructed from the displayed scales, but source constants, horizontal bounds, and derivative-order bookkeeping were not independently formalized.",
+          "The high-frequency weighted prime-cofactor energy on Z<|t|<=T0 has no classical substitute supplied here. This is an acknowledged limitation, not an unnoticed proof gap in the result conditional on the stated zero-free input."
+        ],
+        "optional_clarifications": [
+          "For easier independent verification, Section 6.5 could explicitly write log P>=c L^(1/8) next to P^(-delta)<=exp(-c L^(1/16)), and spell out the shifted principal-pole residue. Neither clarification changes the scoped conclusion."
+        ]
       }
-    ],
-    "adversarial_checks": [
-      {
-        "topic": "ideal-class sign and conductor-divisible leading coefficient",
-        "result": "checked; no issue found",
-        "detail": "AAbar = aO establishes invertibility even when a meets the conductor. I = (alpha)A^(-1) has class -[A], norm N(alpha)/a, and coordinate primitivity matches I not contained in pO."
-      },
-      {
-        "topic": "existential local genus at conductor primes",
-        "result": "checked; no issue found",
-        "detail": "Lemma 11.3 glues primitive local ideals and uses ker(Theta) = 2G. Its converse retains the local ideal type via unit norm adjustment. The discriminant -32 example correctly warns that one conductor-divisible value can have realizations in different genera."
-      },
-      {
-        "topic": "separate genus masks and finite positive profiles",
-        "result": "checked; no issue found",
-        "detail": "Hilbert reciprocity puts each separate A_r,i inside H without identifying it with the principal mask. The strong-Hensel modulus gives full local cosets; perturbations avoid at most two residues modulo p^2 and give bounded-valuation profiles. The distinct masks remain after dividing by gcd(r,s)."
-      },
-      {
-        "topic": "absolute class-error and relative positive comparison",
-        "result": "checked; no issue found",
-        "detail": "Only the exceptional summand is marked, at split primes disjoint from the common inert sieve. Equation (66) is absolute; Appendix A and a finite positive profile provide the required positive denominator before Theorem 11.1 is deduced."
-      },
-      {
-        "topic": "mixed constant, Haar normalization and no 1/h",
-        "result": "checked; no issue found",
-        "detail": "A compatible root has line measure g/(Lrs), giving sum Gamma_r,s g/(rs) = 4 product(d_p)/alpha^2. Combining (60) and the inert sieve gives (64): (1-p^(-2))(1-(p-1)^(-2)) = 1-2/(p(p-1)) at good inert primes. The marginal constants already contain both Gamma factors. Saturation makes compatible class value sets overlap rather than form an h-part partition."
-      },
-      {
-        "topic": "different fixed conductors in one field",
-        "result": "checked; no issue found",
-        "detail": "Enlarging S produces a common split-prime core and separate filters. Deleting finitely many primes preserves each order's deficient-family density. The union bound marks only one order's exceptional summand at a time, so overlapping families need no joint distribution input. The minimum class-error threshold and the same Haar/Euler normalization follow."
-      }
-    ],
-    "verdict": "No required correction identified in this focused PDF-only reading; accept only as an internal scoped review, not independent whole-paper certification."
+    },
+    "final_result": {
+      "status": "scoped_pass_no_required_corrections",
+      "summary": "Section 6.5 provides a coherent classical moderate-height boundary statement and does not overstate dependency removal. The fixed-shift theorem retains both recent inputs; target-sized conductor issues for reflected sums remain separate.",
+      "required_corrections": [],
+      "global_certification": false,
+      "external_review": false,
+      "pdf_unchanged": true
+    }
   },
   "layout_review": {
     "performed": true,
     "date": "2026-11-19",
     "reviewer": "Codex root, rendered-page inspection",
-    "edition_sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
-    "pages": 70,
-    "method": "Rendered all70 pages at65dpi and inspected all12 six-page contact sheets. Rerendered the final edition after two clarity sentences; separately inspected120dpi pp50-55 including every new form/genus statement, complete proof, different-conductor corollary and transition.",
-    "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken transitions found. One harmless underfull bibliography paragraph inspected.",
-    "scope": "Visual layout review only, separate from mathematical source review and the fresh PDF-only reader."
+    "edition_sha256": "0bac2ecb80136e998d47ebbf6463b0a9b5b617e8d136d670a44b8812b8f02a14",
+    "pages": 71,
+    "method": "Rendered all71 frozen pages with pdftoppm at65dpi and inspected all12 contact sheets. Additionally inspected120dpi pp3-4 and28-30, covering attribution/dependency paragraphs, high-frequency context and complete new Section6.5.",
+    "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken section transitions found. One harmless underfull bibliography paragraph inspected.",
+    "scope": "Visual layout only; separate from actual-source mathematical audit and fresh PDF-only reading."
   },
   "assurance": {
     "external_human_review": false,
@@ -252,7 +323,8 @@
   "next_review": [
     "Obtain external specialist review of the shared comparison hypotheses, reflected and fixed-shift frequency estimates, complex-character coset models and quadratic-indicator application, retaining the exact preprint dependencies.",
     "Obtain specialist review of the independent classical norm route, strengthened maximal-subgroup class error, conductor-local form/ideal dictionary, separate genus filters and mixed leading-term transfer, including two fixed conductors in one field.",
-    "Continue historical-priority review beyond the precise primary-source comparisons already included."
+    "Continue historical-priority review beyond the precise primary-source comparisons already included.",
+    "Before removing the zero-free dependency from the fixed-shift branch, prove the remaining high-Mellin-frequency weighted prime/cofactor estimate; the classical second-pool route needs a decomposition for the actual centered model and control of omitted values and logarithmic losses."
   ],
   "prior_pdf_only_readers": [
     {
@@ -411,13 +483,88 @@
         "Explicit link from t<1 to the strict eta<eta_star range, with no endpoint or optimality assertion."
       ],
       "final_result": "Both final clarifications are correct and introduce no scope change; no new mathematical issue identified in the focused final passages. Internal AI review only."
+    },
+    {
+      "review_type": "focused_internal_ai_pdf_only_reading",
+      "reviewer_role": "fresh independent PDF reader",
+      "completed_utc": "2026-11-19T11:25:33Z",
+      "source": {
+        "path": "/home/royvanrijn/src/jacobian-research/.scratch/form-genus-reader.pdf",
+        "pages": 70,
+        "expected_sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
+        "sha256_before": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
+        "sha256_after": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
+        "hash_match": true
+      },
+      "scope": {
+        "primary": "Section 11, printed/PDF pages 50-54, primitive forms, genus invariance and two fixed conductors in one imaginary quadratic field.",
+        "supporting_reading": "Abstract and introduction, Theorem 2.1, Section 3 input statements, Section 10 local ideals/saturation/class-error/normalization, Appendix A classical core proof (pages 60-69), and boundary statements. Section 11 pages 50-54 were also rendered and visually inspected.",
+        "independence": "Only the frozen PDF and text/images extracted from that PDF were used as manuscript evidence. No repository source, notes, histories, other review records, other chats, or web sources were opened. Another audit's reported result was not treated as evidence.",
+        "exclusions": "No whole-paper external certification, no external-source validation, and no complete re-audit of the frequency/model-comparison proof of Theorem 2.1. Supporting Appendix A was read and its mechanism checked, but every quantitative error estimate has not received a separate independent proof.",
+        "manuscript_edits": false
+      },
+      "five_answers": [
+        {
+          "question": "1. What is the precise contribution?",
+          "answer": "For ordered pairs from the numerical value sets of fixed primitive positive definite binary quadratic forms (each numerical value counted once, with equal sets and diagonal pairs allowed), Section 11 proves a classical relative genus comparison R_Q1,Q2(N) = R_Q1prime,Q2prime(N)(1 + O((log N)^(-eta))) on sufficiently large locally admissible targets when the forms are replaced componentwise within their genera. The counts have order N J(N)/log N. Under the recent analytic inputs, it also evaluates the mixed leading coefficient as b_D,S times the product of the two-form local value densities, with no class-number divisor. Corollary 11.4 extends these statements to two fixed conductors in one fixed imaginary quadratic field."
+        },
+        {
+          "question": "2. What is the central concept?",
+          "answer": "A primitive value has an ideal-class realization, and its primitive local shadow is an existential compatible coset c_Q + 2 Pic(O), where c_Q = -[A] for A = Za + Z(b + sqrt(Delta))/2. Good exponent-one split-prime orientations typically saturate 2 Pic(O), allowing the target class c_Q to be reached without changing the norm or conductor-local ideal type. Thus the class restriction costs a smaller exceptional set, while separate local genus filters determine the main binary count. Compatible classes do not partition numerical values, explaining the absence of 1/h."
+        },
+        {
+          "question": "3. What is the hardest step reconstructable from the PDF?",
+          "answer": "For the classical conclusion, the key technical burden is obtaining a genuinely positive pointwise lower bound before dividing the absolute class error. Appendix A supplies a shifted weighted quadratic family using two-factor completion and the classical Weil-Estermann Kloosterman bound, then a finite Bonferroni lower sieve and positive restoration over split-prime cofactor triples. Transporting both finite residue filters preserves the original finite density; injectivity of the restored valuation patterns and bounded residual divisor weights yield the unweighted N J(N)/log N lower bound. The class-error step is also reconstructable: maximal subgroups give deficient split-prime families of density (ell-1)/(2 ell) >= 1/4, and randomized marking of exactly valuation-one residues gives every strict eta below that threshold."
+        },
+        {
+          "question": "4. What are the scope and dependency limitations?",
+          "answer": "Forms and orders are fixed; coordinates are coprime, may vanish, and only positive numerical values are counted. Genus replacement occurs within each discriminant. The two-conductor result requires the same imaginary quadratic field. The two forms in a mixed pair may belong to different genera; replacement invariance is asserted only componentwise within the respective genera, not across different genera. No assertion is made for different fields, varying orders, numerical thresholds, small-target classifications, or weighted coordinate/ideal representation counts. Theorem 11.1, the order bounds and the genus comparison in Corollary 11.4 use the classical Appendix A route and fixed-order prime-class estimates, not the recent inputs. Theorem 11.2 and the explicit mixed asymptotic in Corollary 11.4 invoke Theorem 2.1 and the Section 3 imports: all-conductor Dirichlet nonvanishing on Re(s) > 11/12 and the weighted-dilation transference/root-moment results. The source's stronger 7/8 claim is unnecessary. Constants and thresholds remain order dependent even though eta = 1/5 is uniformly permissible for fixed orders."
+        },
+        {
+          "question": "5. What verification obstacles or concrete proof gaps remain?",
+          "answer": "No concrete proof gap was found in the focused Section 11 argument and its inspected supporting chain. The ideal-class sign is consistent with I = (alpha)A^(-1); conductor-local genus membership is explicitly existential; separate masks survive the gcd reduction; the relative comparison uses a classical positive lower bound; the mixed Haar identity and Euler cancellation produce b_D,S without a class-number or extra beta-integral factor; and different-conductor saturation is applied to one order at a time, so no simultaneous ring-class prime-distribution theorem is needed. Verification remains limited by the PDF-only protocol: external classical citations and recent imported theorems were not checked, and the complete proof of Theorem 2.1 was not independently audited. This is a focused internal AI reading, not whole-paper external certification."
+        }
+      ],
+      "adversarial_checks": [
+        {
+          "topic": "ideal-class sign and conductor-divisible leading coefficient",
+          "result": "checked; no issue found",
+          "detail": "AAbar = aO establishes invertibility even when a meets the conductor. I = (alpha)A^(-1) has class -[A], norm N(alpha)/a, and coordinate primitivity matches I not contained in pO."
+        },
+        {
+          "topic": "existential local genus at conductor primes",
+          "result": "checked; no issue found",
+          "detail": "Lemma 11.3 glues primitive local ideals and uses ker(Theta) = 2G. Its converse retains the local ideal type via unit norm adjustment. The discriminant -32 example correctly warns that one conductor-divisible value can have realizations in different genera."
+        },
+        {
+          "topic": "separate genus masks and finite positive profiles",
+          "result": "checked; no issue found",
+          "detail": "Hilbert reciprocity puts each separate A_r,i inside H without identifying it with the principal mask. The strong-Hensel modulus gives full local cosets; perturbations avoid at most two residues modulo p^2 and give bounded-valuation profiles. The distinct masks remain after dividing by gcd(r,s)."
+        },
+        {
+          "topic": "absolute class-error and relative positive comparison",
+          "result": "checked; no issue found",
+          "detail": "Only the exceptional summand is marked, at split primes disjoint from the common inert sieve. Equation (66) is absolute; Appendix A and a finite positive profile provide the required positive denominator before Theorem 11.1 is deduced."
+        },
+        {
+          "topic": "mixed constant, Haar normalization and no 1/h",
+          "result": "checked; no issue found",
+          "detail": "A compatible root has line measure g/(Lrs), giving sum Gamma_r,s g/(rs) = 4 product(d_p)/alpha^2. Combining (60) and the inert sieve gives (64): (1-p^(-2))(1-(p-1)^(-2)) = 1-2/(p(p-1)) at good inert primes. The marginal constants already contain both Gamma factors. Saturation makes compatible class value sets overlap rather than form an h-part partition."
+        },
+        {
+          "topic": "different fixed conductors in one field",
+          "result": "checked; no issue found",
+          "detail": "Enlarging S produces a common split-prime core and separate filters. Deleting finitely many primes preserves each order's deficient-family density. The union bound marks only one order's exceptional summand at a time, so overlapping families need no joint distribution input. The minimum class-error threshold and the same Haar/Euler normalization follow."
+        }
+      ],
+      "verdict": "No required correction identified in this focused PDF-only reading; accept only as an internal scoped review, not independent whole-paper certification."
     }
   ],
   "standalone_build": {
     "result": "passed",
     "method": "Fresh extraction of source.zip, verification of every source_manifest hash, then declared latexmk build using only extracted sources.",
     "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-    "pdf_sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
+    "pdf_sha256": "0bac2ecb80136e998d47ebbf6463b0a9b5b617e8d136d670a44b8812b8f02a14",
     "reproduces_identical_pdf_bytes": true,
     "warnings": [],
     "tex_sources": {
@@ -425,17 +572,17 @@
       "comparison.tex": "850bfe20188b902ee61800ece1235956d5b9d92f7246dc15d24c352fb70b5b36",
       "consequences.tex": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
       "cosets.tex": "d1573997c6f049176abb0edfd3c44e0b39914391d4e64c0c78845faabe393873",
-      "fixed-shift-comparison.tex": "d8cb3b5a2596343aaa1e20e57e40f25f239fee0f72ac6837fdda71b63a9d4cae",
+      "fixed-shift-comparison.tex": "f6c832037fd1b21078334b0f7e19e077b22326b3e70b77366e9b52456f36d126",
       "forms.tex": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
       "graph.tex": "0cd3eb5d409c4e7fe258eed3d68fdc11ee968a1b77079efec6090985b5f3285c",
-      "inputs.tex": "4294614003c9c4e571538b8ea65e956c16d697a33843178561d1689aef3ec3b6",
-      "introduction.tex": "62f78462610801a74d0f6709106327315c571afabdffcea9c744d174f85e2256",
-      "main.tex": "2a73356d2eb2edb5fa787310f116c1955640f26caefc74af80cb194836304669",
+      "inputs.tex": "d468845ea05df198a632f524e38bd9f34d4d414349499dba3e65d7c7e6c4e468",
+      "introduction.tex": "c5107edd1d16133e39cdb5d3ad5416193f2dca11f1a5b51e823ee94977f27a8e",
+      "main.tex": "50884e1e6a4a947ff58945406c2c79a123075eccab764e850c6feec78b03299e",
       "model.tex": "b82d8c14d44ba997b42f0018ddb738233edd74a15829a8cc67c1bc0bc8a05f49",
       "norms.tex": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
       "older-norm-route.tex": "4bda30e5a083454b212b441d92ccd6724901685a5427b2f220f7fa10a908d24c",
       "quadratic-pairs.tex": "c892e781fb6b9e0ddc7d0480d84d33edcb69ac147638227e8dca2d645375a0db",
-      "references.tex": "a55c95c0fe51245fec1f816831042257eefe8f00bb2f606631bb09821526f930",
+      "references.tex": "12180dc8becece7fd0437ee00a123ae2bbc917861af94b671344c8642b526bf2",
       "theorems.tex": "88f4f02b970d06992f0b68257d0f2bb47a2e8d1181af0333901b1fb9ed5e0adf"
     }
   },
@@ -469,6 +616,16 @@
       "method": "Rendered all65 final pages with pdftoppm at65dpi and inspected all11 contact sheets. Additionally inspected1500pixel renders of pp43-47, covering the proposition, genus input, complete new subgroup argument and marking sieve.",
       "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken section transitions found. One harmless underfull bibliography paragraph inspected.",
       "scope": "Visual layout review, separate from the mathematical and finite-group checks."
+    },
+    {
+      "performed": true,
+      "date": "2026-11-19",
+      "reviewer": "Codex root, rendered-page inspection",
+      "edition_sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
+      "pages": 70,
+      "method": "Rendered all70 pages at65dpi and inspected all12 six-page contact sheets. Rerendered the final edition after two clarity sentences; separately inspected120dpi pp50-55 including every new form/genus statement, complete proof, different-conductor corollary and transition.",
+      "result": "No clipped or overlapping equations, missing glyphs, overfull boxes or broken transitions found. One harmless underfull bibliography paragraph inspected.",
+      "scope": "Visual layout review only, separate from mathematical source review and the fresh PDF-only reader."
     }
   ],
   "editorial_revision": {
@@ -511,6 +668,22 @@
     "proof": "Translate saturation to the target class. Apply the same maximal-subgroup deficiency cover and mark one exceptional summand at a time. Keep the two local genus filters, prove each lies in the common quadratic-character kernel by Hilbert reciprocity, and apply the classical mixed-filter lower bound. Fixed-profile leading terms use the existing general theorem; uniform prefix majorant and the mixed Haar root measure g/(L*r*s) justify summation and give the explicit normalization.",
     "dependency_separation": "Classical class error plus classical positive lower bound already prove quantitative genus invariance. Recent analytic inputs are needed here for the explicit leading coefficient. No new graph, energy or prime-distribution theorem.",
     "scope": "Numerical values at coprime coordinates; mixed ordered value pairs. Same discriminant first, then two fixed conductors in the same field. No class-number divisor, endpoint or growing-data assertion. Exact companion mathematics and deposited window paper unchanged.",
+    "assurance_changes": false
+  },
+  "fixed_shift_classical_replacement_audit": {
+    "baseline_edition_sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
+    "outcome": "Partial classical estimate proved; full dependency removal remains open. Existing theorem conclusions and ZF/G dependency labels retained.",
+    "proof_location": "Section6.5 sec:fixed-classical-boundary; canonical detailed statement and open weighted-energy obligation in SPARSE_ARITHMETIC_MODEL_COMPARISON.md Section5.",
+    "classical_inputs": "Classical Dirichlet zero-free region; Siegel exceptional-zero theorem in its all-character INEFFECTIVE form; local zero count/logarithmic derivative formula; smooth Mellin inversion and prime-power bound.",
+    "proof": "A zero-free rectangle of height3Z^2 and width2delta, delta=cL^(-1/16), is available after choosing a sufficiently small fixed Siegel epsilon for polylogarithmic q. Its local log derivative costs only polynomial logarithms. Smooth translated Mellin inversion at |s|<=2Z, truncated atZ^2, saves P^(-delta)<=exp(-c1L^(1/16)). The factor-two buffer covers the retained logarithmic translations for outer |t|<=Z.",
+    "remaining_estimate": "At Z<|t|<=T0=xL^(B0+B1), obtain arbitrary logarithmic savings in the ACTUAL weighted prime/cofactor energy. Classical small-modulus Siegel-Walfisz and ordinary cofactor mean value alone do not supply this. Direct contour failure is not a classical impossibility assertion.",
+    "candidate_route": "Soundararajan arXiv1606.08021v1 Section4 pp13-15, Lemmas2.5-2.6: small-prime large values plus a second longer prime pool. The current model is not exactly invariant under that pool above y; its centered decomposition, omitted-integer error, precision and low-frequency centering are unproved here.",
+    "attribution": "Abstract, introduction and inputs explicitly credit Walsh v2 Section1.2.4 pp5-6 for anticipating indicator correlations. The new contribution is the completed arithmetic model/local factors and uniform reflected-target argument. Walshp2 classical-recovery remark is distinguished from the printed proof that still invokes Lemma5.1 and the recent zero-free input.",
+    "dependency_changes": {
+      "zero_free_removed": false,
+      "graph_removed": false,
+      "reflected_dependency_removed": false
+    },
     "assurance_changes": false
   }
 }

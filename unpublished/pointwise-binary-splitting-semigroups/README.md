@@ -22,6 +22,11 @@ fixed-shift comparison after checking the inert valuations and exceptional-prime
 conditions. It includes Connors–Keating and the five forms treated by Smilansky.
 
 The editorial decision is to include Connors–Keating in this article.
+Walsh v2 explicitly proposes sums-of-two-squares indicator correlations
+in Section1.2.4; the fixed-shift application idea is attributed to that
+discussion. The contribution here is the completed indicator models,
+arithmetic hypothesis checks and coupled local factors, together with
+the uniform reflected-target argument.
 Its five-page quadratic-character application uses the shared fixed-shift
 theorem and introduces no new graph, energy or prime-distribution input.
 It proves Smilansky's five ordinary value-pair predictions for `x^2+d*y^2`,
@@ -30,6 +35,18 @@ exceptional-prime factor. The consecutive-value coefficients for `d=1,2`
 are `1/2` and `1/sqrt(2)`. This application claims the stated little-o
 remainder, with no growing-shift uniformity or arbitrary principal-form
 identification.
+
+Walsh also states that classical estimates could replace the recent
+zero-free input in his fixed-shift divisor theorem. His supplied
+high-frequency proof still uses that input. Here the fixed-shift moduli
+are polynomial logarithmic, but Mellin heights reach `x*(log x)^C`.
+Section6.5 proves a classical smooth-prime replacement through
+`|t| <= exp((log x)^(1/16))` and identifies the remaining weighted
+prime/cofactor energy above that height. The complete replacement is
+open in this argument; Connors–Keating and Smilansky retain both ZF and
+the graph input. No reflected dependency has been removed. Classical
+constants and thresholds in the intermediate-height result may be
+ineffective because it uses the all-character form of Siegel's theorem.
 
 The coprime `C_12` corollary follows by Möbius inversion from the uniform
 count. It multiplies the leading term by

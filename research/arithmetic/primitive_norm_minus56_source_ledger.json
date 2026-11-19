@@ -32,7 +32,7 @@
     },
     {
       "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
-      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "sha256": "cf1847fb1638460958feb8397f6740eb687d8119a28a9dafe1038e279e963a2e",
       "scope": "FixedPeriodBoxesGeneral at fixedperiod56/112 with all varyingmoduli coprime to112."
     },
     {
@@ -137,9 +137,9 @@
   "verification": "Root read and replayed both canonicalcheckers, matching retainedreceipts. Separate internalagents reconstructed theC4arithmetic, all-depth localconditions, exact coordinatecounts, period112 weightedfilter, coefficient/genera normalization, allsign restoration and nonprincipalram2/7prefix reorientation. Independent internalreplay ofindividualcounts matched aswell. Root read and replayed the bounded2^24 checker; its retained receipt is byte-identical.2507anchors covereverypositive case,118residuals areexhaustive nonrepresentations. Completeness above2^24 remainsopen. Root read and replayed the newclass-sievechecker byte-identically. Two internal reviewers reconstructed the actual canonicalCN4.17-CN4.29 and Williamsinput, including coefficientdivisors and alltargetvaluations. InfiniteMertens and the writtenuniformproof are not established by finitechecks.",
   "limitations": [
     "Finite checker evidence covers the recorded integers/residuegroups only; unrestricted arithmetic, lifting and imported infinite analytic inputs are separate written proofs.",
-    "No numerical eventualcutoff, proof of118-exception completeness above2^24 or unweightedleadingconstant.",
+    "No numerical eventualcutoff or proof of118-exception completeness above2^24. The separate fixed-order pointwise theorem now supplies the unweighted leading constant.",
     "No formalverification, externalreview, establishedpriority or field-uniform theorem.",
-    "No extensionto all evenclassgroups, arbitraryorders, mixedfields, simultaneousnorms or C12+C12 is asserted."
+    "This concrete C4 argument does not itself prove general extensions. Separate all-order/common-field value-count and C12 subgroup theorems are recorded in their canonical sources; different-field leading terms remain separate."
   ],
   "bounded_additive_evidence": {
     "bound": 16777216,
@@ -287,7 +287,7 @@
     "upper_method": "ExactCRT, explicitSelbergquadraticoptimization, factoriallogsizeMarkov, fixedAPMertens; no weightedH5coefficientspecialization",
     "budgets": "D=z=N^(1/10), epsilon1/2; summedCRTerrorN^(7/20), largesquaretailN^(9/10)",
     "use_of_prior_count": "Absolute comparison doesnot useCN4logarithmic lowerbound; the relativecorollary uses its independentabsorber proof.",
-    "limitation": "No explicit leadingconstant forR_L orR_P and no numerical cutoff/exactglobalexceptioncompleteness."
+    "limitation": "This class-comparison argument does not itself evaluate a leading constant. The separate fixed-order binary theorem supplies that constant; a numerical cutoff and exact global exception completeness remain open."
   },
   "finite_class_error_evidence": {
     "arithmetic": {

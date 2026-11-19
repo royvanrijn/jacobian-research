@@ -10,6 +10,13 @@ The theorem is about the stated Euler indicator. Identifying it with
 values of a particular quadratic form is a separate arithmetic step;
 no arbitrary principal-form or class-number assertion is implicit.
 
+The sums-of-two-squares indicator direction was explicitly proposed
+by Walsh, Section 1.2.4; see the exact
+[source comparison](CONNORS_KEATING_INDICATOR_CORRELATIONS.md#1-statement-and-imported-inputs).
+This note completes the arithmetic model checks and local constants
+for the stated quadratic-indicator family within that framework.
+The existing ZF/G inputs remain part of its proof.
+
 ## 1. The indicator and its coupled bad-prime factor
 
 Fix a nonprincipal primitive real quadratic Dirichlet character

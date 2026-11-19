@@ -251,7 +251,10 @@ The new reductions use positivity, multiplicativity and convergent
 power-series recurrences. No external analytic theorem is imported here.
 They do not prove positivity, either asymptotic, the valuation-zero
 marginal, bounded positive even valuation marginals, a varying-ratio
-power window, or every-target \(C_{12}+C_{12}\) coverage.
+power window, or the original weighted C12 hypotheses. Every-target
+\(C_{12}+C_{12}\) coverage is now proved by the separate
+[quantitative subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md);
+these exact dilation reductions retain their original scope.
 At \(p\equiv11\pmod{12}\), the previously known exact identity
 \(B_{p,I}(N)=R_I(N/p^2)\) for \(p^2\mid N\) already supplies the
 corresponding reduction; it is not a new theorem of this note.

@@ -2355,11 +2355,17 @@ explicit deductions, separate from the general nonnumerical cutoff above.
 * Simultaneous Gaussian--Eisenstein primitive norms in *each* summand
   impose two independent norm conditions on each value. Their
   \(C_{12}+C_{12}\) problem is not a single binary-form sum and does
-  not follow from this theorem.
+  not follow from this coordinate theorem. Its pointwise leading value
+  count is now proved by the separate
+  [subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md) under its
+  stated analytic inputs.
 * Fixed macroscopic balance and qualitative angular equidistribution
   follow from (23)--(28). No power-saving angular discrepancy, moving
   intervals or shrinking-window result is proved here. Unweighted
-  value-pair leading constants remain a separate obligation.
+  value-pair leading constants for fixed forms in one quadratic field
+  are supplied by the separate
+  [leading-term transfer](PRIMITIVE_NORM_LEADING_CONSTANT.md). For
+  forms in different quadratic fields they remain a separate obligation.
 * The imported general coefficient bounds are effective, and the
   other estimates above admit effective constants for fixed forms.
   For general forms this gives an effective route in principle.

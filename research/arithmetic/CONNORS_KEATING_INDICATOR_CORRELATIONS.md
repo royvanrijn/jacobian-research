@@ -67,12 +67,21 @@ The conditional formulation displays the dependence even when those
 sources are accepted as proved inputs. This note does not replace
 their proofs or supply external human review of them.
 
-Walsh's [12 November revision](https://arxiv.org/html/2610.40439v2),
-Theorem 1.1, proves integer-order divisor correlations. Its Section
-1.2.4 identifies the indicator problem as further work. The proof
-below supplies an indicator density, an envelope at scale
-\(x/\log x\), and the fixed-shift application of the graph comparison.
-It does not substitute a fractional order into that theorem.
+Walsh's [v2 revision, 12 November 2026](https://arxiv.org/abs/2610.40439v2),
+Theorem 1.1, printed p.2, proves fixed-shift integer-order divisor
+correlations. Section 1.2.4, pp.5--6, explicitly proposes the
+sums-of-two-squares indicator application. That direction is credited
+to Walsh. The argument here supplies its indicator model, sparse
+envelope, local constants and completed fixed-shift application.
+It does not substitute a fractional order into his theorem.
+
+Walsh also remarks on p.2 that his divisor theorem can be recovered
+using classical estimates. His written prime-sum/high-frequency proof,
+Lemma 5.1 and Section 6.4, uses the recent zero-free input. That remark
+is not a completed classical replacement for the indicator proof here.
+Its ZF dependence is retained; the remaining full-height estimate is
+separate from the moderate-height classical range recorded in the
+[shared comparison note](SPARSE_ARITHMETIC_MODEL_COMPARISON.md).
 
 ## 2. The indicator density and both principal branches
 

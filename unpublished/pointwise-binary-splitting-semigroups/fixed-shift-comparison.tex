@@ -320,3 +320,44 @@ the same centered banked replacement as for reflected sums.
 This completes the proof of
 Proposition~\ref{prop:fixed-comparison-energy} and supplies the
 fixed-shift branch used in Section~\ref{sec:assembly}.
+
+\subsection{Classical estimates and the height range}\label{sec:fixed-classical-boundary}
+
+The polynomial-logarithmic modulus here is an advantage over the
+reflected target grid, but the height is a separate constraint.
+Write \(Z=\exp(L^{1/16})\). The classical Dirichlet zero-free
+region, together with Siegel's theorem in its ineffective all-character
+form, gives \eqref{eq:fixed-smooth-primes} with error
+\[
+          O\!\left(P L^{C_w}e^{-cL^{1/16}}\right)
+                      \qquad(|t|\le 2Z, q\le L^B).
+\]
+For exact classical statements see \cite[Proposition 51,
+Theorem 62(ii) and Exercise 45(i)--(ii)]{taonotes}.
+Indeed, a rectangle of height \(3Z^2\) has a zero-free strip of
+width \(2\delta\), with \(\delta=cL^{-1/16}\).
+For a possible exceptional character, choose
+\(\varepsilon<1/(32(B+1))\) in Siegel's theorem; its zero then
+has distance \(\gg L^{-1/32}\) from one, larger than the strip
+width for sufficiently large \(x\). On the line
+\(\Re s=1-\delta\), the regularized logarithmic derivative
+has polynomial-logarithmic size. The same translated smooth Mellin
+contour as above, truncated at imaginary part \(Z^2\), therefore
+saves \(P^{-\delta}\le e^{-cL^{1/16}}\); fixed sufficiently high
+derivatives control the horizontal and truncation terms. Prime powers
+are smaller. Constants and the threshold in this classical estimate
+may be ineffective.
+
+The factor two absorbs the retained polynomial-logarithmic Mellin
+translations when the outer frequency has absolute value at most \(Z\).
+This covers the high-prime argument only up to \(Z\). Its required
+upper height is \(T_0=xL^{B_0+B_1}\). At that endpoint the
+classical strip has width of order \(L^{-1}\), whereas
+\(\log P\le CL^{1/4}\); the contour saving
+\(\exp(-c\log P/L)\) does not tend to zero. Thus a direct
+Siegel--Walfisz substitution does not prove the remaining weighted
+prime--cofactor energy on \(Z<|t|\le T_0\).
+Walsh's classical-recovery remark \cite[p.~2]{walsh} motivates a
+different high-frequency argument, but the proof here retains the
+zero-free input on that range. Such a replacement for fixed shifts
+would not remove the target-sized conductor issue for reflected sums.

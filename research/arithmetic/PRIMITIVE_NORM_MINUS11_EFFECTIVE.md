@@ -752,4 +752,9 @@ the local and global normalizations, exact interval coverage and descent
 separately, and replayed the small-core computation. This is internal
 review, without formal verification, external review or an established
 priority claim. The separate [exact -8 proof](PRIMITIVE_NORM_MINUS8_EXACT.md) now settles
-that binary identity too. The independent \(C_{12}+C_{12}\) problem remains open.
+that binary identity too. The separate
+[pointwise subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md) now
+proves eventual \(C_{12}+C_{12}\) representability and an explicit
+leading value-count asymptotic under its stated analytic inputs. An
+effective C12 onset and a complete small-exception classification are
+not supplied by that theorem or by the certificates here.

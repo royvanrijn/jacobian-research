@@ -7,7 +7,7 @@
   "proof_dependencies": [
     {
       "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-      "sha256": "28f08aed51e73fc9c5423157ad2fdb0681ad2a44da81587d823a0369aa88ec83",
+      "sha256": "04d6176923b4975eaa9563fe1264561f0eb11b548eac33f879eca504a6a2f264",
       "scope": "Use only the independent equations29-40a: theta/dyadic identities; class-one index-four Hurwitz order; all-ideal Hecke transfer with fixed2-adic operators; all-prime theorem with analytic2^22threshold; all inert cores m>=2^60; explicit N^(2/3)/4800count from N>=2^78. These do not use the exact identity now proved."
     },
     {
@@ -54,7 +54,7 @@
     {
       "author": "Jacob Sturm",
       "title": "On the Congruence of Modular Forms",
-      "version": "Lecture Notes in Mathematics 1240 (1987), 275–280; retained official two-page preview pp.275–276",
+      "version": "Lecture Notes in Mathematics 1240 (1987), 275\u2013280; retained official two-page preview pp.275\u2013276",
       "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0072985",
       "local_path": "sources/sturm-congruence-1987-theorem-preview.pdf",
       "sha256": "3a10acc1d3d081072a1900b40cc0917ea223a6437b16f1ccfa0f6cb112edfe3d",

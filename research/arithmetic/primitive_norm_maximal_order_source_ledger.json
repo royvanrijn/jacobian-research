@@ -123,7 +123,7 @@
     },
     {
       "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
-      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "sha256": "cf1847fb1638460958feb8397f6740eb687d8119a28a9dafe1038e279e963a2e",
       "locator": "FixedPeriodBoxesGeneral: fixed-period complete-correlation transfer"
     },
     {
@@ -133,12 +133,12 @@
     },
     {
       "path": "PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
-      "sha256": "63c8d5c574fd543ad2fc6e343460b34fb3cda6b92ca01a18af20b9d5f63dfd83",
+      "sha256": "967eef97bc00525d1cd76a0c052c0cfb182c786a2d872240bc4ecf7e8ac1384c",
       "locator": "CN4.9-CN4.13 finite-state genus transfer and CN4ClassError as the model; present proof extends it beyond C4"
     },
     {
       "path": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md",
-      "sha256": "28f08aed51e73fc9c5423157ad2fdb0681ad2a44da81587d823a0369aa88ec83",
+      "sha256": "04d6176923b4975eaa9563fe1264561f0eb11b548eac33f879eca504a6a2f264",
       "locator": "Coordinate/value distinction and existing generic sharp upper bound; not used to infer the new lower bound"
     }
   ],

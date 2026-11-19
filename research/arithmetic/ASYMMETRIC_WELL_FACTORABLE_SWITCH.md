@@ -3,8 +3,11 @@
 This note proves a support obstruction for pure well-factorable lower
 weights, gives the exact large-prime branch of the half-dimensional
 Rosser remainder, and records the applicable range of the primary
-Fouvry theorem. It does not prove the critical signed remainder or the
-every-target \(C_{12}+C_{12}\) assertion.
+Fouvry theorem. The critical signed remainder remains an open
+method-specific obligation. Every-target \(C_{12}+C_{12}\)
+representability and its leading value count are now supplied by the
+separate [quantitative subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md),
+using its stated analytic inputs.
 
 ## 1. Sequence and the unresolved estimate
 

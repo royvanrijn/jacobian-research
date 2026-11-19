@@ -177,6 +177,166 @@ the common invariant bank class in (C2) can disappear. A replacement
 requiring a different graph, a new energy estimate, or another prime
 distribution theorem is outside this theorem.
 
+## 5. Classical replacement: a proved range and an open obligation
+
+Walsh v2 explicitly anticipates sums-of-two-squares indicator correlations
+in Section 1.2.4 (printed pp.5–6), citing Connors–Keating and Smilansky.
+The general fixed-shift application idea is his announced direction.
+The completed arithmetic models, retained character and valuation biases,
+local factors, application checks and uniform reflected-target argument
+are the contributions supplied here. Walsh also states on printed p.2
+that his fixed-shift divisor theorem could use classical estimates in
+place of the recent zero-free input. His written Lemma5.1 and
+Section6.4 still use that input; the statement is not a supplied classical
+replacement proof for this indicator comparison.
+
+### 5.1. Trace the conductor and height separately
+
+For fixed `h`, the shared graph comparison uses only classical
+Siegel–Walfisz in its character frame, the combinatorial comparison and
+the retained graph import. Its Fourier major arcs have
+`q <= |h| L^B0`. Imposing the bank class changes the character modulus
+only to `lcm(q,L0)`, still polynomial logarithmic. The fixed-shift proof
+does not use the reflected target-grid energy estimate or its
+target-sized conductors.
+
+The arithmetic subgroup and quadratic-indicator checks of (C3) already
+use a classical near-one contour. Positive envelopes, local model
+correlations and fixed-class bank Mertens estimates are classical too.
+The current complex prime-coset (C3) proof has a separate explicit ZF use;
+that reflected application has not had its dependencies removed by this
+fixed-shift audit.
+
+The decisive remaining use is the smooth prime polynomial at Mellin
+heights
+\[
+ T_0=xL^{B_0+B_1},\qquad
+ e^{cL^{1/8}}\le P\le e^{CL^{1/4}},\qquad L=\log x.
+\]
+Small `q` does not make this a small-height estimate.
+
+### 5.2. ClassicalModerateHeightPrimeEstimate
+
+**Proved partial statement.** Fix `B,c,C>0`, set
+`Z=exp(L^(1/16))`, and let `w` be smooth supported on `[1/2,2]`,
+with every required fixed derivative bounded by a fixed power of `L`.
+Uniformly for `q<=L^B`, characters `theta mod q`, `|t|<=2Z` and the
+prime scales above,
+\[
+ \sum_p\theta(p)w(p/P)p^{it}
+ =\delta_\theta\int_0^\infty
+       \frac{w(u/P)u^{it}}{\log u}\,du
+       +O\big(P L^{C_w}e^{-c_1L^{1/16}}\big).
+ \tag{C.1}
+\]
+Constants and thresholds may be ineffective. This statement uses
+classical estimates only, with no graph or recent zero-free input.
+
+**Proof.** Use the classical Dirichlet zero-free region and Siegel's
+theorem in its **all-character, ineffective** form. Exact statements and
+their proofs are in Tao's
+[254A Notes2](https://terrytao.wordpress.com/2014/12/09/254a-notes-2-complex-analytic-multiplicative-number-theory/),
+Proposition51 and Theorem62(ii); Exercise45(i)–(ii) gives the local
+zero-count/logarithmic-derivative formulas. These are classical inputs,
+not consequences of Walsh's unsupplied alternative.
+
+Put `delta=c2 L^(-1/16)`, with `c2` sufficiently small. For all the
+characters in question, the rectangle
+`Re s >= 1-2delta`, `|Im s| <= 3Z^2` is zero-free apart from the
+allowed principal pole. Indeed `log(q(3Z^2+2))=O(L^(1/16))`.
+A possible real exceptional zero is outside this rectangle too:
+choose `epsilon<1/(32(B+1))`; Siegel gives
+`1-beta >> q^(-epsilon) >> L^(-1/32)`, greater than `2delta` for
+sufficiently large `x`. The latter threshold is ineffective.
+
+On `Re s=1-delta`, regularize the principal logarithmic derivative by
+subtracting its pole. There are `O(log(q(|Im s|+3)))` zeros in a fixed
+local box, and every zero is at distance at least `delta` in the
+relevant smaller rectangle. The local formula therefore bounds the
+regularized logarithmic derivative by a fixed power of `L`.
+The same holds on the horizontal edges used below.
+
+Insert the von Mangoldt weight and the smooth test `w(u/P)/log u`.
+Mellin inversion has weight translated in height by `t`; the Mellin
+seminorms are polynomial logarithmic after this translation, independent
+of the size of `t`. Truncate at imaginary part `Z^2` and move the
+vertical line to `1-delta`. The pole produces the displayed principal
+integral. The new vertical integral costs at most
+`P^(1-delta) L^C`, and
+`delta log P >= c3 L^(1/16)`. Fixed sufficiently many integrations by
+parts in the smooth Mellin transform control both horizontal segments
+and the discarded initial-line tail, because `|t|<=2Z` and the edge
+height is `Z^2`. Their contribution is
+`O(P L^C exp(-c4 L^(1/16)))`. Prime powers cost
+`O(P^(1/2) L^C)` and are smaller. This proves (C.1).
+
+Finite residue-class and fixed-bank restrictions are imposed by
+orthogonality at the polynomial-logarithmic effective modulus.
+Choosing `B` to cover that modulus only changes the fixed constants.
+Integration by parts in the principal integral then supplies every
+requested inverse power of `L` once `|t|` exceeds a sufficiently large
+fixed power of `L`, throughout this moderate-height range. ∎
+
+The factor two is a buffer: for outer `|t|<=Z`, every retained shift
+`sigma+nu` is polynomial logarithmic, hence `|t+sigma+nu|<=2Z` for
+sufficiently large `x`. Thus the partial lemma actually covers all the
+prime arguments in this intermediate portion of the energy integral.
+
+This proves a classical replacement for the **intermediate-height
+piece**, not the fixed-shift correlation theorem without ZF. It does
+not assert the strong error `P^sigma1` of the recent half-plane.
+
+### 5.3. Open high-frequency obligation
+
+The unsupplied classical step is on `Z<|t|<=T0`. With the actual
+prime/cofactor polynomials from the manuscript, a sufficient target is
+\[
+ \int_{Z<|t|\le T_0}
+   |P_r(t+\sigma+\nu)R_{r'}(t+\sigma+\nu)|^2\,dt
+       \ll_D L^{-D},
+ \tag{C.2}
+\]
+uniformly over the smooth dyadic pieces, residue classes, retained
+Mellin parameters and **actual** cofactor coefficients, after paying
+the fixed logarithmic partition costs. This is an explicitly open
+weighted-energy estimate. It is not an admissibility hypothesis smuggled
+into a new proved comparison theorem. A proof could also work directly
+with the aggregate comparison rather than each individual factor.
+
+At `t` of order `x`, the elementary classical zero-free width is of
+order `L^(-1)`. With `log P<=CL^(1/4)`, its contour saving is only
+`exp(-c log(P)/L)`, which does not tend to zero. Even a
+Vinogradov–Korobov-width contour at the top height would not make
+`(1-sigma)log P` grow at these bank scales. This disproves the proposed
+**direct substitution**, not the possibility of a different classical
+argument. The long-cofactor mean-value estimate bounds its total energy
+by a polynomial logarithm; it does not show that this energy avoids
+large values of the prime polynomial. Applying ordinary mean value
+alone therefore does not prove (C.2).
+
+An inspected alternative is Soundararajan,
+[arXiv:1606.08021v1](https://arxiv.org/abs/1606.08021v1), Section4,
+printed pp.13–15, using Lemmas2.5–2.6. His large-values bound gives a
+small-prime exceptional set of size `x^o(1)` at these scales, but the
+restricted mean-value bound for a general cofactor still has a constant
+diagonal term. His next step extracts a second prime pool with
+`exp(L^(4/5)) <= Q <= exp(L^(9/10))`, where classical prime cancellation
+is available, and reuses restricted-set mean value. That pool lies
+above our `y=exp(L^(2/5))`. Even when an actual indicator has invariance
+under those split primes, its present density model does not satisfy
+the same exact invariance there. A suitable second-pool decomposition
+for the actual centered model, the omitted-integer error, the required
+logarithmic precision and the preservation of low-frequency centering
+have not been proved here. This is a concrete candidate route, not a
+completed application of his theorem or a new imported hypothesis.
+
+A new classical large-values/weighted-energy argument would need to
+establish this missing step and preserve the actual record coefficients
+and parameter order. The existing fixed-shift, Connors–Keating and
+Smilansky entries consequently retain ZF and G. No reflected dependency
+has been removed, and a fixed-shift success would still leave the
+growing-target conductor issue there.
+
 The written theorem and application checks have internal mathematical
 review. This does not assert external human review, formal verification,
 historical priority, or independent revalidation of the complete imported

@@ -26,7 +26,7 @@
     },
     {
       "path": "ASYMMETRIC_FIXED_MODULUS_THEORY.md",
-      "sha256": "837913481f7b42ed11f95fa68d9cfa9b8051504e43ee68e651044aad7c0fd50d",
+      "sha256": "cf1847fb1638460958feb8397f6740eb687d8119a28a9dafe1038e279e963a2e",
       "scope": "Lemma FixedPeriodBoxesGeneral, section5: arbitrary fixed period with all varying moduli coprime to that period."
     },
     {

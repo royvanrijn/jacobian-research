@@ -29,7 +29,7 @@
     {
       "author": "Lynne H. Walling",
       "title": "The Eichler Commutation Relation for theta series with spherical harmonics",
-      "version": "Acta Arithmetica 63 (1993), 233–254",
+      "version": "Acta Arithmetica 63 (1993), 233\u2013254",
       "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa63/aa6335.pdf",
       "local_path": "sources/walling-eichler-harmonics-1993.pdf",
       "sha256": "adf7177cc791d822874c474a959671cb899fd2e23f01a589289b7561f9541dc3",
@@ -66,12 +66,12 @@
   ],
   "angular_scope": "Qualitative angular equidistribution and fixed positive-length balance intervals through all locally admissible targets; no angular power-saving error or shrinking-window claim.",
   "method_antecedent": {
-    "author": "Jörg Brüdern",
+    "author": "J\u00f6rg Br\u00fcdern",
     "title": "Sums of Squares Coprime in Pairs",
-    "version": "Bull. Polish Acad. Sci. Math. 62 (2014), 215–231",
+    "version": "Bull. Polish Acad. Sci. Math. 62 (2014), 215\u2013231",
     "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/85773",
     "local_path": "sources/brudern-coprime-squares-2014.pdf",
-    "statements_inspected": "Theorem 2; Lemmas 2, 4, 5 and Sections 2–4: four-square pairwise-coprimality asymptotic, truncation and singular-series completion.",
+    "statements_inspected": "Theorem 2; Lemmas 2, 4, 5 and Sections 2\u20134: four-square pairwise-coprimality asymptotic, truncation and singular-series completion.",
     "comparison": "Same proof architecture, stronger coprimality pattern for four squares; not a stated arbitrary-binary-pair theorem.",
     "sha256": "9c8744c44fb31814ccfe62a81ce2e55f8b300b1421d4c96991449ae0b37b12f5"
   },
@@ -92,7 +92,7 @@
     {
       "author": "Jacob Sturm",
       "title": "On the Congruence of Modular Forms",
-      "version": "Lecture Notes in Mathematics 1240 (1987), 275–280; retained official two-page preview pp.275–276",
+      "version": "Lecture Notes in Mathematics 1240 (1987), 275\u2013280; retained official two-page preview pp.275\u2013276",
       "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0072985",
       "local_path": "sources/sturm-congruence-1987-theorem-preview.pdf",
       "sha256": "3a10acc1d3d081072a1900b40cc0917ea223a6437b16f1ccfa0f6cb112edfe3d",
@@ -103,7 +103,7 @@
       "inspection_scope": "Actual theorem statement and beginning of proof inspected in primary preview; the rest of the article is not retained or claimed inspected."
     }
   ],
-  "dyadic_scope": "Exact unrestricted formulas (29)–(30) count only coordinate primitivity at 2 for Q=x^2+2y^2; odd inert prime obstructions are not removed. The q^0 through q^2 and q^0 through q^8 Sturm certificates establish their completeness under the sourced modularity statements.",
+  "dyadic_scope": "Exact unrestricted formulas (29)\u2013(30) count only coordinate primitivity at 2 for Q=x^2+2y^2; odd inert prime obstructions are not removed. The q^0 through q^2 and q^0 through q^8 Sturm certificates establish their completeness under the sourced modularity statements.",
   "minus8_spectral_dependency": {
     "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
     "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
@@ -205,7 +205,7 @@
     "applications": [
       "WaibelLemma15 plus target-gcd averaging: O_epsilon(N^(7/8+epsilon)), every eta<1/8, explicit1/9.",
       "Corrected HenriotNewTheorem5 plus fractional Holder: V(N)>>N/(logN)^(log4+epsilon); upper V(N)<<NJ12(N)/logN, uniformly all valuations.",
-      "Plaksin1984/1985 with Q8 and Gaussian forms, the integral parity map, prime-coordinate gcd deletion and doubling: ALL eventual strong-core and P8+P8 coverage, with coordinate counts >>N/log²N. No numerical onset here.",
+      "Plaksin1984/1985 with Q8 and Gaussian forms, the integral parity map, prime-coordinate gcd deletion and doubling: ALL eventual strong-core and P8+P8 coverage, with coordinate counts >>N/log\u00b2N. No numerical onset here.",
       "Fixed-content binary forms also covered after dividing bounded h|lcm(c1,c2)."
     ],
     "limits": "No exhaustive MathSciNet/zbMATH review, author consultation, external human review, or priority certification; no arbitrary-form unweighted leading asymptotic.",
@@ -222,7 +222,7 @@
       "sha256": "fdd1589a52732196027476bf5f8962729dfdadf87bf7d57a83b516e03f43986d",
       "role": "mathematical_input",
       "statements_used": [
-        "Theorem1 and definition6 PDFp3; Lemma15 PDFp16; unnormalized Petersson norm PDFp2. All positive indices, arbitrary fixed primitive quaternary forms and quadratic theta characters. Applied with level≈t²,F(A,2)≈t⁴,det≈t⁴; target gcd averaged.",
+        "Theorem1 and definition6 PDFp3; Lemma15 PDFp16; unnormalized Petersson norm PDFp2. All positive indices, arbitrary fixed primitive quaternary forms and quadratic theta characters. Applied with level\u2248t\u00b2,F(A,2)\u2248t\u2074,det\u2248t\u2074; target gcd averaged.",
         "Only the upper-coefficient portion of Lemma15 is imported. Lemma8 lower-density assertions and the density-dependent existence clauses are excluded; the bridge proves its needed local lower bounds directly."
       ],
       "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used.",
@@ -276,7 +276,7 @@
       "lemma9_uniform_lattice_counting": {
         "primary": "Waibel v2, Lemma9 and proof, PDFpp8-10; weighted use and equation23 PDFp14.",
         "reduction_correction": "Use size-reduced Gram-Schmidt data b_i<=(4/3)b_(i+1). The earlier S(3/4,1/2) existence sentence has reciprocal parameter; fourSquares contradict that sentence. Successive shortest projected primitive vectors give the needed4/3 ratio directly.",
-        "uniform_slice_proof": "A nonzero tail coordinate forces every active coefficientO(n); unused long tails vanish. Completing the integer affine binary polynomial yields an injective norm equation Y²+deltaX²=M with |M|=O(n^5). At most6tau(M) solutions give O_epsilon(n^epsilon), uniformly in level, discriminant, content and shape.",
+        "uniform_slice_proof": "A nonzero tail coordinate forces every active coefficientO(n); unused long tails vanish. Completing the integer affine binary polynomial yields an injective norm equation Y\u00b2+deltaX\u00b2=M with |M|=O(n^5). At most6tau(M) solutions give O_epsilon(n^epsilon), uniformly in level, discriminant, content and shape.",
         "mean_square": "Sequential counting times the slice bound gives the exact multiset(b1,b2,b3,b3,b4,b4); partial summation reproduces all degree3..6 determinant/minima terms in rank4.",
         "norm_closure": "Rank4 equation23 has numerator d^floor((m-3)/2)=1. The final divisor sum is at mosttau(L), the first at most4Delta*tau(L)/F. Delta<=L^4 absorbs the standalone error. The bound L^(2+epsilon)/F+L^(1+epsilon)/Delta^(1/4) follows with absolute auxiliary-level factors.",
         "proof_location": "PRIMITIVE_NORM_ANALYTIC_BRIDGE.md, Uniformity of the lattice-counting input.",
@@ -315,7 +315,7 @@
     {
       "key": "liouville",
       "author": "Joseph Liouville",
-      "title": "Sur la forme x²+y²+2(z²+t²)",
+      "title": "Sur la forme x\u00b2+y\u00b2+2(z\u00b2+t\u00b2)",
       "version": "JMPA series2 volume5(1860),269-272",
       "url": "https://www.numdam.org/item/JMPA_1860_2_5__269_0.pdf",
       "local_path": "sources/liouville-1860-1122.pdf",
@@ -350,7 +350,7 @@
       "sha256": "fd56b40f4d4ef328be213099521351d596bfa11fcaefd382b00ff445ee54926b",
       "role": "mathematical_input",
       "statements_used": [
-        "Introductionp551: phi primitive, psi fundamental discriminant; main theoremp562, finite prime-unit congruence18. Apply phi=psi=Q8 for odd core and phi=psi=Gaussian for even core; integral parity bijection and gcd deletion give both eventual cores and ALL eventual M8 existence. Main term >>N/log²N with uniform singular-product lower bound; no numerical onset asserted.",
+        "Introductionp551: phi primitive, psi fundamental discriminant; main theoremp562, finite prime-unit congruence18. Apply phi=psi=Q8 for odd core and phi=psi=Gaussian for even core; integral parity bijection and gcd deletion give both eventual cores and ALL eventual M8 existence. Main term >>N/log\u00b2N with uniform singular-product lower bound; no numerical onset asserted.",
         "Targeted two-block review: the same theorem also yields all eventual primitive Q=x^2+5y^2 targets Nmod8 in{2,3,4,6,7}, by regrouping and square-root gcd deletion; free second form fundamental, not assumed primitive in coordinates."
       ],
       "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
@@ -393,7 +393,7 @@
       "sha256": "dcd19514db7d4f4382d38814d4a3e4dd1be7ed8e457ad127b0c4380b48874156",
       "role": "comparison",
       "statements_used": [
-        "Theorems1.1-1.2: fixed homogeneous rank≥5 quadratic zeros. Homogenization F-Nt² varies with target and all-t counts do not restrict to t=1 with the required uniformity."
+        "Theorems1.1-1.2: fixed homogeneous rank\u22655 quadratic zeros. Homogenization F-Nt\u00b2 varies with target and all-t counts do not restrict to t=1 with the required uniformity."
       ],
       "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
     },
@@ -463,7 +463,7 @@
       "sha256": "557593f74e82cb7a18aada3a2a5129ccc132d2d1ae017a404caf250b06c42dfa",
       "role": "comparison",
       "statements_used": [
-        "Example3 includes sums-of-two-squares SUPPORT indicator. Theorems2.1,2.4 require pairwise linearly independent nonconstant parts in≥2 variables and positive-volume regions; fixed-target dependent pair fails."
+        "Example3 includes sums-of-two-squares SUPPORT indicator. Theorems2.1,2.4 require pairwise linearly independent nonconstant parts in\u22652 variables and positive-volume regions; fixed-target dependent pair fails."
       ],
       "inspection_scope": "Actual primary statement and application/failed hypotheses inspected internally; deep proofs remain imports where used."
     },
@@ -868,12 +868,12 @@
     "baker_waibel_role": "Supporting theory; optional separate concise methodological note, not the headline breakthrough",
     "next_target": {
       "node": "GAP-PRIMITIVE-NORM-ALL-ORDERS-SHARP-COUNTS",
-      "status": "open",
-      "scope": "Complete the all-order sharp unweighted theorem at conductor primes/nonmaximal orders. Maximal orders and arbitrary even class groups are now proved by MaximalOrderValueCounts.",
-      "missing_estimate": "Matching NJ_D/logN lower bound; generic sharp upper bound and log^(log4+epsilon) lower bound already available",
-      "local_factor_obligation": "Derive actual conductor/bad-prime factors; identify any necessary additional target factor rather than assuming bounded ramified prefixes",
+      "status": "proved",
+      "scope": "Completed by OrderValueCounts in PRIMITIVE_NORM_ALL_ORDERS.md for every fixed order, arbitrary conductor and Picard group.",
+      "missing_estimate": "The matchingNJ/logN lower bound and sharp upper bound are proved in the all-order source; this is no longer an open target.",
+      "local_factor_obligation": "Actual conductor local images, finite profiles and common-field mixed Haar factors are proved in the all-order and leading-constant notes.",
       "stronger_separate_tasks": [
-        "Unweighted leading constants",
+        "Leading constants for forms in different quadratic fields",
         "Effective numerical cutoffs",
         "Uniformity in varying orders"
       ]

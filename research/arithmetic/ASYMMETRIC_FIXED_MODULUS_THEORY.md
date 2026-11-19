@@ -930,6 +930,10 @@ exponents have been derived above.
 All statements concern each fixed \(q,\chi\). They give no uniformity
 for moduli growing with the target, effective cutoff, identified
 unweighted leading constant, or fixed-ratio interval theorem.
-The unrestricted full \(\mathcal C_{12}+\mathcal C_{12}\) distribution
-obligation remains unresolved.
+The critical and beyond-half weighted/signed remainder obligations of
+this sieve route remain unresolved. The full unrestricted
+\(\mathcal C_{12}+\mathcal C_{12}\) value-count asymptotic is now
+proved by the separate [quantitative subgroup theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md),
+under its stated analytic inputs. That result does not settle these
+weighted remainder questions or power-short windows.
 

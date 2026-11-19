@@ -759,10 +759,11 @@ remain distinct from Paper 2's sharp \(NJ_D(N)/\log N\) scale.
 The exact \(-19,-43,-67,-163\) exception lists remain bounded
 computations and are not added to the main theorem.
 
-### Paper 2: Primitive Norm Sums Beyond Class Number One
+### Flagship: Pointwise Binary Correlations in Abelian Splitting Semigroups
 
-The centerpiece is now the
-[all-order sharp value-count theorem](PRIMITIVE_NORM_ALL_ORDERS.md).
+The flagship centers on the pointwise binary splitting theorem. Its
+[all-order sharp value-count theorem](PRIMITIVE_NORM_ALL_ORDERS.md)
+and the form-genus extension are substantial arithmetic applications.
 For every fixed imaginary quadratic order, with arbitrary ring class
 group and conductor, every sufficiently large pair-primitive locally
 admissible target has
@@ -870,6 +871,17 @@ hypotheses were inspected in
 [the input audit](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md).
 Part II's stronger zero-free boundary is not needed.
 
+Walsh's [v2 paper](https://arxiv.org/abs/2610.40439v2), Theorem 1.1
+(p.2), treats integer-order divisor correlations at fixed shifts.
+Section 1.2.4 (pp.5--6) expressly proposes the sums-of-two-squares
+indicator direction. The application concept is therefore already
+announced there. The completed indicator models, local arithmetic
+factors and reflected target-uniform transfer must be identified as
+the contributions supplied here. His p.2 remark about classical
+recovery of the divisor theorem does not supply a full-height
+replacement proof for these indicator applications; their stated
+ZF/G dependencies are retained.
+
 The new application requires a projected indicator model, a quotient
 character frame for fixed progression banks, a target-sized-shift
 transfer, and a sparse-relative target-grid estimate. These steps
@@ -893,9 +905,9 @@ to the weight in their theorem. The comparison now concerns the same
 coprime count, its leading constant, quantitative remainder and analytic
 inputs; it does not certify first-result status.
 
-Historical priority, specialist mathematical review and complete
-manuscript preparation remain separate publication obligations for
-both planned papers. No first-result claim follows from the absence
+Historical priority, specialist mathematical review and publication
+remain separate from the completed internal manuscript preparation for
+the flagship and exact companion. No first-result claim follows from the absence
 of a matching source in the current searches.
 
 ## Evidence and limits

@@ -43,7 +43,7 @@
     {
       "author": "Jacob Sturm",
       "title": "On the Congruence of Modular Forms",
-      "version": "Lecture Notes in Mathematics 1240 (1987), 275–280; retained official two-page preview pp.275–276",
+      "version": "Lecture Notes in Mathematics 1240 (1987), 275\u2013280; retained official two-page preview pp.275\u2013276",
       "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0072985",
       "local_path": "sources/sturm-congruence-1987-theorem-preview.pdf",
       "sha256": "3a10acc1d3d081072a1900b40cc0917ea223a6437b16f1ccfa0f6cb112edfe3d",
@@ -73,7 +73,7 @@
   "verification": "Root and separate internal agents reconstructed order/mass/finite quotient, local filters and exact arithmetic. No external review or formal verification.",
   "limitations": [
     "The finite checker does not prove the infinite spectral input; it is sourced and reconstructed in the written proof.",
-    "The exact -8 binary classification is now proved separately; C12+C12 remains open.",
+    "The exact -8 binary classification is proved separately. Unrestricted C12+C12 representability and its leading value count are proved by the quantitative subgroup theorem under its stated inputs; a numerical C12 onset and complete small exceptions are not supplied here.",
     "No unweighted logarithmic leading constant, external review, formal verification or priority claim."
   ],
   "exact_classification": {

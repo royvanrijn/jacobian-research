@@ -474,9 +474,13 @@ Jacquet--Langlands and Ramanujan remain classical imports.
 
 The exact -8 classification was open in the reviewed revision and is
 resolved by the addendum below. A representation-preserving inert-prime
-descent, unweighted distinct-value leading asymptotics and a complete
-priority determination remain open. The \(C_{12}+C_{12}\) problem
-requires two norm conditions per summand and is outside the theorem.
+descent and complete priority determination remain separate obligations
+for this audited route. The later [pointwise binary theory](PRIMITIVE_NORM_BINARY_CORRELATION.md)
+now gives leading distinct-value asymptotics for fixed primitive forms
+in one quadratic field and for \(C_{12}+C_{12}\), under its stated
+analytic inputs. The latter imposes two norm conditions per summand and
+is outside the coordinate theorem audited here. Different-field
+unweighted leading asymptotics remain a separate question.
 No external-review, formal-verification, or independent-replay flag
 is upgraded by this internal audit.
 

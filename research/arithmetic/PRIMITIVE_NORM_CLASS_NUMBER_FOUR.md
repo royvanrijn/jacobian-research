@@ -635,11 +635,16 @@ reviews separately reconstructed the C4 arithmetic, all local
 valuations, fixed-period normalization and finite-block restoration.
 There is no external review or formal verification.
 
-A numerical cutoff, completeness of the bounded exception list below,
-and an unweighted leading constant remain open. This concrete C4 case does
-not assert a theorem for every even class group, arbitrary quadratic
-orders, mixed fields or simultaneous norm constraints, and it does not
-address the \(C_{12}+C_{12}\) convolution barrier.
+A numerical cutoff and completeness of the bounded exception list below
+remain open. This concrete C4 proof supplies order bounds. Its leading
+value-count asymptotic and the extensions to arbitrary fixed quadratic
+orders are now supplied by the separate
+[pointwise binary theory](PRIMITIVE_NORM_BINARY_CORRELATION.md), under
+its stated analytic inputs. The simultaneous \(C_{12}+C_{12}\)
+value-count theorem is the separate
+[subgroup application](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md). These
+results do not give a different-field leading theorem or settle the
+remaining effective and finite-exception questions.
 
 
 Reproduce the finite receipts with:
