@@ -522,13 +522,24 @@ Here \(\omega_g(n)\) counts distinct bank-prime divisors of \(|n|\).
 For fixed \(t_g\le m+1\), these weights are bounded by a fixed
 power of \(L\).  In particular \(W_{\mathbf1}^1=\Omega_{\mathcal P}\).
 
-Let \(\alpha,\beta\) be bounded functions invariant under multiplying
-by every bank prime. For sums extend the first centered function to
-the negative half-line by absolute value and the second function to
-the positive half-line. For shifts use positive endpoints on both
-sides. These sign restrictions preserve prime-multiplication invariance.
-Take a smooth \(\Psi\) supported in a compact subset of \((0,\infty)\).
-The pairing and Lemma~\ref{lem:gr-ideal} imply
+\begin{proposition}[Graph-to-arithmetic reduction]
+\label{prop:gr-arithmetic-reduction}
+Assume the imported graph inputs of Section~\ref{sec:inputs}.
+Use the progression banks of this section, with primes dividing
+\(k\) deleted, and take \(k=x\) for reflected sums or fixed
+\(k=h\ne0\) for shifts. Let \(\alpha,\beta\) be functions of the
+integer endpoint, of modulus at most one, invariant under repeated
+multiplication by every bank prime whenever both arguments are in
+the endpoint ranges. For sums use the negative first half-line and
+positive second half-line, extending the first function by absolute
+value; for shifts use positive endpoints. The pullback of the first
+endpoint to physical states must be constant on its mark lists.
+
+Take \(\ell=1\), \(M=J+1\), and a smooth \(\Psi\) supported
+in a fixed compact subset of \((0,\infty)\). For every fixed
+accuracy \(A>0\), Lemmas~\ref{lem:gr-ideal} and
+\ref{lem:gr-large} give fixed \(m,C\) and a sufficiently large
+fixed \(J\) for which
 \begin{equation}
  C_0+\sum_\nu c_\nu C_\nu=O_A(L^{-A}),\qquad
  \#\{\nu\}+\sum_\nu|c_\nu|\le L^{C},                  \label{eq:gr-comparison}
@@ -549,14 +560,53 @@ and each comparison has the form
                   W_{\mathbf t}^{v_\nu}(w+kD_1D_2).
  \end{split}                                                     \label{eq:gr-comparison-term}
 \end{equation}
-The two auxiliary products are independent, use at most \(m\) draws
-per big bank, and each contains at least one big-bank prime.
-The four separated coefficient functions have modulus at most one.
-The list coefficients \(u_\nu,v_\nu\) ignore all small-bank labels;
-in every small bank \(t_g=1\).
+The following restrictions and normalizations are part of the conclusion.
+\begin{enumerate}
+\item The physical pairing is restricted to
+\(\omega_g(n)=\omega_g(n')=M\) in every bank. Its state mass is
+\(\prod_gV_g^{-M}\), its transition row normalization is
+\(\prod_gV_g^{-t_g}\), and hence its joint endpoint normalization
+in bank \(g\) is \(V_g^{-M-t_g}\). After shared labels are removed,
+the exact counts are \(\omega_g(w)=\omega_g(w+kD_1D_2)=t_g\),
+as imposed by \eqref{eq:gr-listweight}, where
+\(t_g=1+\#\{\text{freed slots in }g\}\le m+1\).
+In every small bank \(t_g=1\).
+\item Each comparison frees nonempty probe sets in two disjoint
+blocks of big banks. The products \(D_1,D_2\) use these respective
+sets, with at most \(m\) draws per bank. All auxiliary draws are
+independent with laws \(\mu_g\), including between the two products;
+repetitions among auxiliary draws are allowed. No auxiliary-label
+exclusion from endpoint lists remains in the displayed comparison.
+\item Before separation, a signed pattern coefficient may depend
+on the freed big-bank auxiliary labels and the unshared big-bank
+endpoint labels specified in \eqref{eq:gr-signed}. It uses no small-bank
+labels, shared labels, or distinguished last endpoint slots.
+After separation, \(a_\nu\) depends only on \(D_1\),
+\(b_\nu\) only on \(D_2\), and \(u_\nu,v_\nu\) only on
+the ordered unshared big-bank labels at their respective endpoints.
+Each of these four factors has modulus at most one. In particular,
+both list coefficients ignore every small-bank label.
+\item The parameters \(m,C\), the comparison family and its scalar
+coefficient bounds are fixed before the final mark length \(J\)
+and the final model depth. Increasing \(J\) supplies shared slots
+without changing them. For endpoints satisfying \textup{(C1)},
+no logarithmic loss exponent depends on the model depth; the
+threshold in \(x\) may depend on that depth and on \(J\).
+\end{enumerate}
+\end{proposition}
 
-Here is the derivation of these precise assertions from the physical
-graph.  A pattern has \(M-1\) dilation slots per bank, some shared
+\begin{proof}
+The signed coefficients are those of Lemma~\ref{lem:gr-ideal};
+their allowed label dependence and four-factor expansion were proved
+in \eqref{eq:gr-signed}--\eqref{eq:gr-coeffcost}.
+Each auxiliary factor depends only on its numerical product:
+\eqref{eq:gr-kernel} uses only that product's log cell and character.
+Thus the expectation over ordered draws pushes forward to the product
+law \eqref{eq:gr-productlaw}, including its repetition multiplicities.
+The first endpoint
+is mark independent, as required by the imported pairing, while
+all pattern-dependent mark factors remain in the operator.
+A pattern has \(M-1\) dilation slots per bank, some shared
 and some freed, and one distinguished unshared endpoint slot.
 Write its edge product as \(D=D_RD_C\), with shared product \(D_R\)
 and auxiliary product \(D_C\).
@@ -627,3 +677,10 @@ exactly \eqref{eq:gr-listweight}, while \(D_C=D_1D_2\).
 The raw pattern has \(D_C=1,\mathbf t=\mathbf1\).
 This proves \eqref{eq:gr-comparison}--\eqref{eq:gr-comparison-term}
 with their stated independence properties.
+The kernel parameters and coefficient exponents were fixed before
+\(J\) in Lemma~\ref{lem:gr-ideal}. Endpoint boundedness and
+\eqref{eq:gr-list-moments} pay the list norms without a
+depth-dependent logarithmic power. Thus the final model depth can
+be chosen later to meet the one-variable accuracy, changing only
+the threshold for boundedness in \textup{(C1)}.
+\end{proof}

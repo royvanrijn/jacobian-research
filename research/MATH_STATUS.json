@@ -9410,6 +9410,11 @@
               "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
               "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
               "locator": "Theorem CommonFieldGenusInvariance; FM.6-FM.9 and its classical proof"
+            },
+            {
+              "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+              "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
+              "locator": "part:form-classical"
             }
           ]
         },
@@ -9443,6 +9448,11 @@
               "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
               "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
               "locator": "Corollary CommonFieldFormPairs explicit leading assertion; FM.1-FM.7; mixed Haar reduction and one-sided class errors"
+            },
+            {
+              "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+              "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
+              "locator": "part:form-leading"
             }
           ]
         }
@@ -53712,14 +53722,14 @@
       },
       {
         "id": "ARITH-EISENSTEIN-ORBIT",
-        "title": "Subgroup orbit-averaging inequality",
+        "title": "Invariant-measure subgroup orbit-averaging inequality",
         "kind": "claim",
         "status": "proved",
-        "scope": "For a finite transitive right G-set, subgroup orbit Omega=y0K, counting measure, self-adjoint G-commuting T with T1=d1,d>0, and h=1_Omega-mu1 in an exceptional-space orthogonal complement with norm boundLambda: |(Tf)(y0)/d-mu|<=Lambda/d(1-mu).",
+        "scope": "For a finite rightG-set with G-invariant probabilitypi, a positive-mass K-orbitOmega=y0K, self-adjoint G-commutingT with T1=d1,d>0, and h=1_Omega-mu1 in the stated exceptional-space orthogonal complement with norm boundLambda: |(Tf)(y0)/d-mu|<=Lambda/d(1-mu), mu=pi(Omega). Global transitivity is unnecessary; conditional fiber density must be multiplied by its fiber mass (w=3/5 in the stated -11 application).",
         "sources": [
           {
             "path": "../unpublished/eisenstein-restricted-prime-sums/sections/orbit-criterion.tex",
-            "sha256": "0cfa5f5357aa970c0d78d6ae902e95a97d31b63c2af5ec0deea8425efd820b7e",
+            "sha256": "f5044e1d02ace08fac515d43c640c118d2a1881bd552f7672a81cf25622ba927",
             "locator": "prop:orbit-averaging"
           }
         ],
@@ -53739,7 +53749,7 @@
         "sources": [
           {
             "path": "../unpublished/eisenstein-restricted-prime-sums/sections/orbit-criterion.tex",
-            "sha256": "0cfa5f5357aa970c0d78d6ae902e95a97d31b63c2af5ec0deea8425efd820b7e",
+            "sha256": "f5044e1d02ace08fac515d43c640c118d2a1881bd552f7672a81cf25622ba927",
             "locator": "prop:arithmetic-criterion"
           }
         ],
@@ -92287,7 +92297,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleD andModuleC"
           }
         ],
@@ -92305,7 +92315,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleI,AP1-AP14"
           }
         ],
@@ -92323,7 +92333,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleG,LG1-LG3andparameterorder"
           }
         ],
@@ -92341,7 +92351,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModulesP/E,PS1-PS2,G1-G17"
           }
         ],
@@ -92454,7 +92464,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleH.1 GaussianRamanujanTail, H.1-H.2 and inert-primorial counterexample"
           }
         ]
@@ -92496,7 +92506,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleH.2-H.3 ClassicalGaussianAlmostAll, full major/minor error budget"
           }
         ]
@@ -92514,7 +92524,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleH.4 GaussianWeightedReplacement H.12 and its proof"
           }
         ]
@@ -92532,7 +92542,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleH.5 GaussianCharacterConcentration and H.6 nonresidue implication"
           }
         ]
@@ -92550,7 +92560,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleJ.1-J.5 QuantitativeSubgroupCorrelation, full error inequalities"
           }
         ]
@@ -92568,7 +92578,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "ModuleJ.6 QuantitativeAdditiveWindows"
           }
         ]
@@ -93515,7 +93525,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "Module D: rare-bank joint records; Module J: explicit bank count"
           }
         ]
@@ -93849,7 +93859,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-            "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+            "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
             "locator": "lem:gr-ideal"
           }
         ],
@@ -93867,7 +93877,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-            "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+            "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
             "locator": "lem:gr-large"
           }
         ],
@@ -93876,7 +93886,7 @@
       {
         "id": "ARITH-MS-FLAGSHIP-LEM-GR-PRIMES",
         "title": "lem:gr-primes in Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
-        "scope": "Under the same fixed Dirichlet zero-free input, the selected prime factor has the stated high-frequency saving and principal/nonprincipal estimates; this does not assume pair cancellation or target-grid energy.",
+        "scope": "Under the same fixed all-conductor Dirichlet zero-free half-plane, fixed a,B,B1>0 and sigma1>11/12, q<=x^B and exp((log x)^a)<=P<=x^B1 give the sharp subinterval prime estimate O((1+|t|)P^sigma1(log x)^C) for every realt. Principal and fixed-progression exceptional branches are retained. Removing divisors of a nonzero target |k|<=x^B preserves the bound. All applications haveB1=1. No pair cancellation or target-grid energy is assumed.",
         "kind": "claim",
         "status": "open",
         "topic": "arithmetic",
@@ -93885,7 +93895,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/prime-estimates.tex",
-            "sha256": "551beccd1ff88a2623bd80532a65cf11b272534bce4ac17cd52ff5ca6f6296f1",
+            "sha256": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03",
             "locator": "lem:gr-primes"
           }
         ],
@@ -93903,7 +93913,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/reflected-comparison.tex",
-            "sha256": "15ae686049cd39dbd09f02862903c179cccaeb3162c5d5c57366b717b53ee1e4",
+            "sha256": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969",
             "locator": "prop:gr-energy"
           }
         ],
@@ -93921,7 +93931,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-            "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+            "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
             "locator": "thm:general"
           }
         ],
@@ -93939,7 +93949,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-            "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+            "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
             "locator": "thm:c12"
           }
         ],
@@ -93957,7 +93967,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-            "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+            "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
             "locator": "cor:coprime-c12"
           }
         ],
@@ -93975,7 +93985,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-            "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+            "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
             "locator": "lem:finite-images"
           }
         ],
@@ -93993,7 +94003,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-            "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+            "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
             "locator": "thm:local"
           }
         ],
@@ -94011,7 +94021,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-            "sha256": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
+            "sha256": "d9877afa32556d540ffd1df001ad12e3464498b9a3c508948b50ac1ed7fdf118",
             "locator": "cor:basis13"
           }
         ],
@@ -94029,7 +94039,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-            "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+            "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
             "locator": "lem:norm-genus"
           }
         ],
@@ -94047,7 +94057,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-            "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+            "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
             "locator": "prop:norm-class-error; saturated subgroup B_n, full Omega_M union and exact-one marked sieve"
           }
         ],
@@ -94065,7 +94075,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-            "sha256": "00148199d415db045b875380dcb0c16e968c290f15b2c76360103b4f5ae7051b",
+            "sha256": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
             "locator": "thm:norm-order"
           }
         ],
@@ -94083,7 +94093,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-            "sha256": "00148199d415db045b875380dcb0c16e968c290f15b2c76360103b4f5ae7051b",
+            "sha256": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
             "locator": "thm:norm-leading"
           }
         ],
@@ -94101,7 +94111,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
-            "sha256": "838349f4a730813b154853e11d65bdcab9c96758ea9a8afb6f220d15e5d80210",
+            "sha256": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
             "locator": "prop:older-weighted"
           }
         ],
@@ -94119,7 +94129,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
-            "sha256": "838349f4a730813b154853e11d65bdcab9c96758ea9a8afb6f220d15e5d80210",
+            "sha256": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
             "locator": "lem:older-quadratic-filter"
           }
         ],
@@ -94155,7 +94165,7 @@
         "sources": [
           {
             "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus7-exact.tex",
-            "sha256": "841a205a03f4e87607e443c5712e1077caeba27a23330e01b96ef2c76ba3c976",
+            "sha256": "a628f32a86fb0c24247a5e7b5c5f1cc2a1c3aa5a73503a454030a2242d2c06aa",
             "locator": "lem:m7-intervals"
           }
         ],
@@ -94173,7 +94183,7 @@
         "sources": [
           {
             "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus7-exact.tex",
-            "sha256": "841a205a03f4e87607e443c5712e1077caeba27a23330e01b96ef2c76ba3c976",
+            "sha256": "a628f32a86fb0c24247a5e7b5c5f1cc2a1c3aa5a73503a454030a2242d2c06aa",
             "locator": "thm:minus7-exact"
           }
         ],
@@ -94191,7 +94201,7 @@
         "sources": [
           {
             "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus8-exact.tex",
-            "sha256": "4f474af46f3f1e3f1e79d968d6241869050cb6d68a46ef32378779844bf25929",
+            "sha256": "cb4b9b131f5662fad9aabade36cbea573167a2c9cdae5b72cc0a48aa88ddb2b9",
             "locator": "thm:minus8-exact"
           }
         ],
@@ -94209,7 +94219,7 @@
         "sources": [
           {
             "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus11-exact.tex",
-            "sha256": "47f96dd385508ced48c7bb251b6f271fb3e5b9ee8653e30a7c79953721b1c7f0",
+            "sha256": "6335dd930c18091d526bd87869cb04add5153f4d4b92c3c66de7dde6fcad5be7",
             "locator": "thm:minus11"
           }
         ],
@@ -94377,7 +94387,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "Module I: character comparison construction whose coset hypotheses are checked in the new proof"
           }
         ]
@@ -94400,7 +94410,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-            "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+            "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
             "locator": "Modules G, E and J: transferred comparison hypotheses and precision order"
           }
         ]
@@ -94454,7 +94464,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-            "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+            "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
             "locator": "Fixed common prime class c, equations eq:gr-cell through eq:gr-reproduce; equal slot phases"
           }
         ],
@@ -95861,7 +95871,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-            "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+            "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
             "locator": "thm:genus-binary-invariance"
           }
         ],
@@ -95880,7 +95890,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-            "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+            "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
             "locator": "thm:form-binary-leading"
           }
         ],
@@ -95899,7 +95909,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-            "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+            "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
             "locator": "lem:form-ideal-shadow"
           }
         ],
@@ -95907,7 +95917,7 @@
       },
       {
         "id": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
-        "title": "cor:common-field-form-pairs in Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+        "title": "Common-field primitive form theorem with separate classical and analytic parts",
         "scope": "Two fixed conductors in one field; independent classical genus comparison and explicit mixed leading asymptotic with existing binary inputs.",
         "kind": "claim",
         "status": "open",
@@ -95918,7 +95928,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-            "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+            "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
             "locator": "cor:common-field-form-pairs"
           }
         ],
@@ -95990,6 +96000,24 @@
           }
         ],
         "assessment": "Explicit unproved optional-route obligation. Existing fixed-shift, Connors-Keating, Smilansky, reflected and general comparison claims retain their existing ZF/G routes and assurance levels."
+      },
+      {
+        "id": "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION",
+        "title": "Graph-to-arithmetic reduction with exact list normalization",
+        "scope": "For fixed common-class progression banks, nonzero k=x in reflected sums or fixed k=h in shifts, primes dividingk deleted, bounded repeatedly bank-prime-invariant integer endpoints and a mark-independent first pullback: the imported graph inputs yield arbitrary logarithmic accuracy for C0+sum c_nu C_nu. Reduced endpoint counts t_g=1+freed slots, small banks exactlyone, V_g^(-M-t_g) shared-label/harmonic normalization, independent product laws in two disjoint nonempty big-bank blocks and four separated bounded coefficient factors are retained. Kernel/complexity exponents are fixed beforeJ and final model depth. No ZF or model-correlation conclusion is an input.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+            "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
+            "locator": "prop:gr-arithmetic-reduction"
+          }
+        ],
+        "assessment": "A named statement of the existing internally inspected derivation; no independent import-proof validation, mathematical replay, external review or formal verification is inferred."
       }
     ],
     "implications": [
@@ -146054,7 +146082,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-          "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+          "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
           "locator": "ModuleH.1 exact Euler products, Chebyshev/Rankin bound and fixedB counterexample"
         },
         "dependency_coverage": "partial"
@@ -146070,7 +146098,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-          "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+          "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
           "locator": "ModuleH.2-H.3 full classical major expansion and H.11 Parseval; no ZF/G"
         },
         "dependency_coverage": "partial"
@@ -146089,7 +146117,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-          "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+          "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
           "locator": "ModuleJ.1-J.5: rare-bank2delta, two-sided shrinkingcutoff, exactmultiplier and target-grid budget, allremainingerrors"
         },
         "dependency_coverage": "partial"
@@ -146103,7 +146131,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-          "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+          "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
           "locator": "ModuleJ.6 boundedtransitionnumber,TV,uniformMellin and intervalupper sieve"
         },
         "dependency_coverage": "partial"
@@ -146851,7 +146879,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-          "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+          "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
           "locator": "lem:gr-ideal and its generalized C1-C3 proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146870,7 +146898,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-          "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+          "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
           "locator": "lem:gr-large and its generalized C1-C3 proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146885,7 +146913,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/prime-estimates.tex",
-          "sha256": "551beccd1ff88a2623bd80532a65cf11b272534bce4ac17cd52ff5ca6f6296f1",
+          "sha256": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03",
           "locator": "lem:gr-primes and its generalized C1-C3 proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146902,7 +146930,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/reflected-comparison.tex",
-          "sha256": "15ae686049cd39dbd09f02862903c179cccaeb3162c5d5c57366b717b53ee1e4",
+          "sha256": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969",
           "locator": "prop:gr-energy and its generalized C1-C3 proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146936,7 +146964,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+          "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
           "locator": "thm:c12 and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146953,7 +146981,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+          "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
           "locator": "cor:coprime-c12 and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146968,7 +146996,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+          "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
           "locator": "lem:finite-images and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146985,7 +147013,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+          "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
           "locator": "thm:local and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147001,7 +147029,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-          "sha256": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
+          "sha256": "d9877afa32556d540ffd1df001ad12e3464498b9a3c508948b50ac1ed7fdf118",
           "locator": "cor:basis13 and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147017,7 +147045,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
           "locator": "lem:norm-genus and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147025,18 +147053,14 @@
       {
         "id": "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
         "premises": [
-          "ARITH-COMMON-FIELD-FORM-CLASS-ERROR",
-          "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
-          "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
-          "ARITH-MS-FLAGSHIP-THM-GENERAL",
-          "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE"
+          "ARITH-COMMON-FIELD-FORM-CLASS-ERROR"
         ],
         "conclusion": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
           "locator": "prop:norm-class-error and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147053,7 +147077,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "00148199d415db045b875380dcb0c16e968c290f15b2c76360103b4f5ae7051b",
+          "sha256": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
           "locator": "thm:norm-order and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147067,14 +147091,15 @@
           "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS",
           "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
           "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING",
-          "ARITH-MS-FLAGSHIP-THM-NORM-ORDER"
+          "ARITH-MS-FLAGSHIP-THM-NORM-ORDER",
+          "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
         ],
         "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-LEADING",
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "00148199d415db045b875380dcb0c16e968c290f15b2c76360103b4f5ae7051b",
+          "sha256": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
           "locator": "thm:norm-leading and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147091,7 +147116,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
-          "sha256": "838349f4a730813b154853e11d65bdcab9c96758ea9a8afb6f220d15e5d80210",
+          "sha256": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
           "locator": "prop:older-weighted and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147106,7 +147131,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
-          "sha256": "838349f4a730813b154853e11d65bdcab9c96758ea9a8afb6f220d15e5d80210",
+          "sha256": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
           "locator": "lem:older-quadratic-filter and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147137,7 +147162,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus7-exact.tex",
-          "sha256": "841a205a03f4e87607e443c5712e1077caeba27a23330e01b96ef2c76ba3c976",
+          "sha256": "a628f32a86fb0c24247a5e7b5c5f1cc2a1c3aa5a73503a454030a2242d2c06aa",
           "locator": "lem:m7-intervals and complete proof"
         },
         "description": "Exact current manuscript proof using the stated canonical results and classical imports."
@@ -147155,7 +147180,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus7-exact.tex",
-          "sha256": "841a205a03f4e87607e443c5712e1077caeba27a23330e01b96ef2c76ba3c976",
+          "sha256": "a628f32a86fb0c24247a5e7b5c5f1cc2a1c3aa5a73503a454030a2242d2c06aa",
           "locator": "thm:minus7-exact and complete proof"
         },
         "description": "Exact current manuscript proof using the stated canonical results and classical imports."
@@ -147175,7 +147200,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus8-exact.tex",
-          "sha256": "4f474af46f3f1e3f1e79d968d6241869050cb6d68a46ef32378779844bf25929",
+          "sha256": "cb4b9b131f5662fad9aabade36cbea573167a2c9cdae5b72cc0a48aa88ddb2b9",
           "locator": "thm:minus8-exact and complete proof"
         },
         "description": "Exact current manuscript proof using the stated canonical results and classical imports."
@@ -147195,7 +147220,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus11-exact.tex",
-          "sha256": "47f96dd385508ced48c7bb251b6f271fb3e5b9ee8653e30a7c79953721b1c7f0",
+          "sha256": "6335dd930c18091d526bd87869cb04add5153f4d4b92c3c66de7dde6fcad5be7",
           "locator": "thm:minus11 and complete proof"
         },
         "description": "Exact current manuscript proof using the stated canonical results and classical imports."
@@ -147466,7 +147491,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-          "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+          "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
           "locator": "Common-class quotient frame and equal slot phases; fixed-progression kernel proof"
         }
       },
@@ -147497,7 +147522,8 @@
           "ARITH-MS-FLAGSHIP-LEM-GR-IDEAL",
           "ARITH-MS-FLAGSHIP-LEM-GR-LARGE",
           "ARITH-MS-FLAGSHIP-PROP-GR-ENERGY",
-          "ARITH-SPARSE-FIXED-SHIFT-COMPARISON-ENERGY"
+          "ARITH-SPARSE-FIXED-SHIFT-COMPARISON-ENERGY",
+          "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION"
         ],
         "conclusion": "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
         "status": "proved",
@@ -148243,8 +148269,8 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
-          "locator": "thm:genus-binary-invariance and its complete scoped arithmetic/analytic proof"
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
+          "locator": "thm:genus-binary-invariance; corresponding assertion of the one-discriminant corollary, with its separate classical or analytic route"
         }
       },
       {
@@ -148257,8 +148283,8 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
-          "locator": "thm:form-binary-leading and its complete scoped arithmetic/analytic proof"
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
+          "locator": "thm:form-binary-leading; corresponding assertion of the one-discriminant corollary, with its separate classical or analytic route"
         }
       },
       {
@@ -148272,7 +148298,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
           "locator": "lem:form-ideal-shadow and its complete scoped arithmetic/analytic proof"
         }
       },
@@ -148281,14 +148307,15 @@
         "premises": [
           "ARITH-COMMON-FIELD-FORM-PAIRS",
           "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
-          "ARITH-MS-FLAGSHIP-THM-GENERAL"
+          "ARITH-MS-FLAGSHIP-THM-GENERAL",
+          "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
         ],
         "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
           "locator": "cor:common-field-form-pairs and its complete scoped arithmetic/analytic proof"
         }
       },
@@ -148305,6 +148332,23 @@
           "sha256": "9e3d286c17a226ab468277117076a4b4b17dba61488f93c02c553abd3482245a",
           "locator": "ClassicalModerateHeightPrimeEstimate C.1; all-character ineffective separation, buffered smooth Mellin contour, prime-power removal"
         }
+      },
+      {
+        "id": "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION",
+        "premises": [
+          "ARITH-MS-FLAGSHIP-LEM-GR-IDEAL",
+          "ARITH-MS-FLAGSHIP-LEM-GR-LARGE",
+          "ARITH-SPARSE-COMMON-PRIME-CLASS-FRAME"
+        ],
+        "conclusion": "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
+          "locator": "prop:gr-arithmetic-reduction and its proof; eq:gr-comparison, eq:gr-comparison-term, eq:gr-sharednormal, eq:gr-sharedprob"
+        },
+        "description": "Existing signed comparison, endpoint pairing and shared-label derivation with explicit physical/list coefficient normalization; no added analytic hypothesis."
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -177062,6 +177106,234 @@
           "verification": "source_read",
           "resource_type": "lecture_notes",
           "verification_basis": "Exact named primary statements and applicable contour/local-formula arguments inspected internally. The all-character constant is ineffective. This resource supports only the partial classical estimate and does not validate full-height energy or the entire notes."
+        },
+        {
+          "id": "EXT-EXACT-PRIMITIVE-NORM-CERTIFICATE-SUPPLEMENT-B854DDDC",
+          "title": "Frozen certificate supplement for Exact Sumsets of Primitive Quadratic Norms",
+          "citation": "Roy van Rijn, exact primitive-norm sumset verification programs and rational certificates, frozen certificate subtree of source.zip at GitHub commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8",
+          "identifiers": {
+            "git_commit": "b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8",
+            "sha256": "543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332"
+          },
+          "urls": [
+            "https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip",
+            "https://github.com/royvanrijn/jacobian-research/blob/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip",
+            "https://github.com/royvanrijn/jacobian-research/blob/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/README.md"
+          ],
+          "local_sources": [
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/VerifyEisenstein.java",
+              "sha256": "15ae478d4692ab4c8954163c15546b012354bae4d05927fb35ecd0fe3a446467",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/VerifyMixedEisenstein.java",
+              "sha256": "2192160a950ef9d44f23877b4a403c50314d90db5c4ecbedbb7d7c91e4adf47b",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/binary_certificates_receipt.json",
+              "sha256": "265e026d728c8d1cfe5862cd8eba42d1df44ce0ac7e22175eb65df3b7f9f950d",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/check_ramified_counts.py",
+              "sha256": "8841d1b8c071b453bc288a72fc377a9456ca1eff9f450f03441c02e1ad28ac83",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_elementary_constants.py",
+              "sha256": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_finite_certificate.py",
+              "sha256": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_mixed_certificate.py",
+              "sha256": "462f12d15b226e621a4a2e8dee50c045e1aeefab590d2477ee82c3b86176786d",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_mixed_odd_checks.py",
+              "sha256": "a930b881955ef9e1062b6bb7e4e80ae748ae9ef9bf62ab5d4bc6e558fbefde3f",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_mixed_ramified_checks.py",
+              "sha256": "3c98238204d3da35cc1a7ce515cf07a82fb7487e9eaca2559de29f37e4bf1fc8",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_mixed_wheel_checks.py",
+              "sha256": "20fbc9faa218db5aed38ae3aa2a99e4a307ff7ec81d10cba4c711c3d4d83b746",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/compute_theta_checks.py",
+              "sha256": "685666823dcc9271dfa7c41b22b3bc9a7eae89f7a45bddd485f40f85891cc487",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/elementary_constants_receipt.json",
+              "sha256": "db4331593f09f3a42dd761d97e7145827a7a51cc9956b94cfb8d3d94e4bdc1f9",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/mixed_spectral_check.py",
+              "sha256": "cb9ad9a725bb8dd9457ce2add8433e34885bdfdb329402adb72a6663bb94c0d0",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_coordinate_membership_checks.json",
+              "sha256": "e80eaf119cf881a9897a066ac29405e231643162595e35db30613e469c6c912c",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_minus11_checks.json",
+              "sha256": "0cea475fbc408c32d6e7bb0d9b9009c1c0164509e2cf5a0bba5951f255c41a00",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_minus11_source_ledger.json",
+              "sha256": "696387d3bac0491e077d92d659cb51bd14c43eedc730a495e1b5f1890f697405",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_minus7_checks.json",
+              "sha256": "1610f000b841ac3aefbc692e110c9c811e05aa0232ead298994e66c1e9c35efd",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_minus7_source_ledger.json",
+              "sha256": "c5921eaef24c1c9337a6ec90980d34bd6eed6c4fa613188f8be0587f4a431a09",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_minus8_checks.json",
+              "sha256": "abd58e625d198092d7c468192c145c5ec06a71504cadbe822d90f922eda9852a",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_minus8_source_ledger.json",
+              "sha256": "84c961be1056b71a5fdb579a5d500c1117a2a3eee2a308e6591617ff4bcb89e0",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/primitive_norm_quaternary_checks.json",
+              "sha256": "eaefb4309aa0424480ba2b4cff10437477f814b22f6265e0b61b13c5bb4b238e",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/ramified_counts_receipt.json",
+              "sha256": "0b815ca5af0c96387676031ae86c6ab3948953fe49e6c40587abf3170e243dff",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/runtime_guard_checks.json",
+              "sha256": "d3b133811aa3f927e05bb270b77501d41d1a8ce2411f0746fa53d6cfd2b4f49b",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/sources/rouse-1802.03437v1.pdf",
+              "sha256": "db9e5b5dd29579892b2a3d332c84a706a359a7c405291d9c8fe042cb68de879a",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/spectral_check.py",
+              "sha256": "6deeda1bb4a9f3dec26206bdf8fe295743a349c325d80de36f2b5fc14ab7478a",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_binary_certificates.py",
+              "sha256": "afceb0850582fc0f84c7643df4aded801c7e3516289e15f74d1e645d862ba2d2",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_mixed_constants.py",
+              "sha256": "bed5032ca23f842389391e6893a64695570ee8b3a4fae79f7b2ea0f62ef07ef2",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_primitive_norm_coordinate_membership.py",
+              "sha256": "0d386dcbd16b1230b7efce653cf683c6080a6873876ba2885ac57be53250068d",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_primitive_norm_minus11.py",
+              "sha256": "12c93dfc0335042f340189e9d6e1af526357ecbec80ec91479bed59af83f0629",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_primitive_norm_minus7.py",
+              "sha256": "47bc97260e10f99f1b36243520e6f20690dcfc60569ab9f595448c727013eed9",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_primitive_norm_minus8.py",
+              "sha256": "26bdf095de1fb83d4ef66fef293f038be9d2f45677d53b992245914aadfe73c7",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/verify_primitive_norm_quaternary.py",
+              "sha256": "3f7a6f3c4ce80df8adaee6332b7c742b107a01d1b2901dedb8cb7b1e429462bb",
+              "locator": "Byte-identical certificate subtree of immutable commit b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8; finite proof/replay scope remains in the existing checker records."
+            }
+          ],
+          "uses": [
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/sections/standalone-verifier.tex",
+              "locator": "AppendixA, Declared supplement; immutable external certificate archive,32 unchanged certificate files",
+              "role": "context",
+              "nodes": []
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/README.md",
+              "locator": "External certificate supplement and replay instructions",
+              "role": "context",
+              "nodes": []
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/metadata.json",
+              "locator": "external_certificate_bundle",
+              "role": "context",
+              "nodes": []
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "software",
+          "title_status": "source_title",
+          "verification_basis": "Internal direct archive retrieval and byte comparison: SHA256 543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332,54 members,32 certificate files match current snapshots. The remaining historical TeX/docs are not the current manuscript edition. No new mathematical replay, external human review, import validation or formal assurance."
+        },
+        {
+          "id": "EXT-HEXAGON-SOURCE-SUBMISSION-POLICY",
+          "title": "Hexagon submission information",
+          "citation": "Hexagon, About and submission information, policy link recorded for the TeX-only source-archive preparation on19November2026.",
+          "identifiers": {},
+          "urls": [
+            "https://hexagonmath.org/about"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/metadata.json",
+              "locator": "submission_packaging.policy_url",
+              "role": "context",
+              "nodes": []
+            },
+            {
+              "path": "../unpublished/eisenstein-restricted-prime-sums/README.md",
+              "locator": "Hexagon-specific TeX-only submission archive",
+              "role": "context",
+              "nodes": []
+            }
+          ],
+          "verification": "citation_only",
+          "resource_type": "webpage",
+          "title_status": "source_title",
+          "verification_basis": "Submission-policy context recorded in the paper metadata; no mathematical input or submission action is inferred."
         }
       ],
       "internal_citations": [
@@ -179038,7 +179310,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-              "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+              "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
               "locator": "ModuleH.1-H.3: normalized local multipliers, finiteHankel expansion, relative Ramanujan tails and Parseval"
             }
           ],
@@ -181198,7 +181470,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Current four-discriminant scope, elementary Eisenstein value dictionary, proof coverage, build/replay commands and scoped review obligations. Editorial reorganization changes no theorem or certificate assurance.",
-          "sha256": "ce6799752f3f8af874dcb238a1a84370c30695b2ff5d57e023cc03daf4bd43e9"
+          "sha256": "996c4af0dc4afe68a307041eed279c7310da67924efdc5f83df03525589c1d88"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/check_ramified_counts.py",
@@ -181324,7 +181596,7 @@
           "statements": [],
           "role": "scope",
           "explanation": "Current manuscript result, limits, review obligations and separate publication status. Artifact paths distinguish paper sources from the relocated canonical research and evidence; the organization changes no mathematical scope or assurance.",
-          "sha256": "681ee768cc57a94ca96c126b1631789c749ebc2dac2b67115bb9993ca12a8399"
+          "sha256": "e056bd2742bbf21c9c9a3a9f816ad3fc9ac9f12d3846562db9c71523b0465d69"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/mixed_spectral_check.py",
@@ -181349,7 +181621,7 @@
           "statements": [],
           "role": "manuscript",
           "explanation": "Current unpublished rendered/source bundle; artifact identity does not imply external review or mathematical validity.",
-          "sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac"
+          "sha256": "c3823e04269102e248e5f28af8ae966b445644fc4bf951a8e101d5ed7d565a54"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/receipts/cross_language_verification_receipt.json",
@@ -181859,7 +182131,7 @@
             {
               "locator": "prop:arithmetic-criterion",
               "kind": "proposition",
-              "line": 46,
+              "line": 54,
               "title": "prop:arithmetic-criterion",
               "nodes": [
                 "ARITH-EISENSTEIN-CRITERION"
@@ -181869,7 +182141,7 @@
           ],
           "role": "proof",
           "explanation": "Current written manuscript source, with exact named statements mapped. Graph coverage remains partial for imported proof dependencies.",
-          "sha256": "0cfa5f5357aa970c0d78d6ae902e95a97d31b63c2af5ec0deea8425efd820b7e"
+          "sha256": "f5044e1d02ace08fac515d43c640c118d2a1881bd552f7672a81cf25622ba927"
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
@@ -181937,8 +182209,8 @@
           "gaps": [],
           "statements": [],
           "role": "manuscript",
-          "explanation": "Current manuscript appendix printing the canonical research verifier, with a local distribution fallback. The organization preserves the listed program bytes and mathematical scope; imported proof dependency coverage remains partial.",
-          "sha256": "47f4ff17deaa286b3d100c4c69ea0ac5637ea35d39aea969ec7531a2eab1bd18"
+          "explanation": "Current certificate-completeness appendix with an immutable external supplement link and the exact finite proof roles. Programs and records are external to the TeX-only submission archive and retained in the full research bundle.",
+          "sha256": "ac256793e9fe7f13161bf04cf0abda99a5904f1fb4ac7d176675d94fe82c03ee"
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/source.zip",
@@ -181950,8 +182222,8 @@
           "gaps": [],
           "statements": [],
           "role": "manuscript",
-          "explanation": "Current standalone 36-page exact-classification source bundle for discriminants -3,-7,-8,-11, including the declared certificate snapshots. Artifact identity and the recorded clean rebuild imply no additional mathematical assurance.",
-          "sha256": "543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332"
+          "explanation": "Full research source bundle for the current36-page exact-classification manuscript, including its32 unchanged certificate snapshots, replay instructions and review records. The separate hexagon-source.zip contains only TeX files; neither distribution adds mathematical assurance.",
+          "sha256": "bc14e5f215b0de3100cef7b0705ca258191c5f9ac8ad1ed8c489826c52fbd7da"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/spectral_check.py",
@@ -181999,7 +182271,7 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Retained finite replay and scoped internal manuscript review history, with the current editorial edition/build/layout checks. No external human review, formal verification or independent import-proof certification is inferred.",
-          "sha256": "b3e98ce0c063258fc5abc333e088fc4cfd09e6e7e7b59adef9f78d1c7efcd031"
+          "sha256": "0b9b29f1c5c0e57c785e78107eb70387fd8062151732f19362db62925744be9c"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/verify_binary_certificates.py",
@@ -257233,7 +257505,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-          "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+          "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
           "claims": [
             "ARITH-BINARY-PROJECTED-DENSITY-BANKS",
             "ARITH-BINARY-FIXED-AP-IDEAL-KERNELS",
@@ -257315,7 +257587,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_binary_correlation_source_ledger.json",
-          "sha256": "d412f52375beb6fe92fea4a3a15405c89570e03e70dfd4748c0cd30d6539789e",
+          "sha256": "1e7b3b7bd78016c6ce0790a136502db6b07cfb098bba1513e2975933a4f6d466",
           "claims": [
             "ARITH-PRIMITIVE-NORM-CONDITIONAL-BINARY-COUNTS"
           ],
@@ -258093,7 +258365,7 @@
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/build_bundle.py",
-          "sha256": "638bcc74c64c7937a520b6ada3ddf0caf80eb8f51c72616ce01ec0e388461f9d",
+          "sha256": "2b9781c8ded7cbd8eb041f31ec3b7d4fcb77e89a8ae11b8777dd6fd9d0cd3c9f",
           "role": "documentation",
           "claims": [
             "ARITH-MS-EXACT-THM-EXACT-OVERVIEW"
@@ -258101,7 +258373,7 @@
           "dependencies": [],
           "gaps": [],
           "statements": [],
-          "explanation": "Current standalone manuscript or frozen submitted supplement for the exact stated claims. Canonical research evidence remains in research; this copy is not additional independent assurance."
+          "explanation": "Distribution helper with full research-bundle and Hexagon TeX-only modes, fixed build environment and clean extracted-build verification. Packaging/rebuild scope only."
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/certificates/binary_certificates_receipt.json",
@@ -258538,7 +258810,7 @@
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus11-exact.tex",
-          "sha256": "47f96dd385508ced48c7bb251b6f271fb3e5b9ee8653e30a7c79953721b1c7f0",
+          "sha256": "6335dd930c18091d526bd87869cb04add5153f4d4b92c3c66de7dde6fcad5be7",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-EXACT-THM-MINUS11"
@@ -258561,7 +258833,7 @@
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus7-exact.tex",
-          "sha256": "841a205a03f4e87607e443c5712e1077caeba27a23330e01b96ef2c76ba3c976",
+          "sha256": "a628f32a86fb0c24247a5e7b5c5f1cc2a1c3aa5a73503a454030a2242d2c06aa",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-EXACT-THM-MINUS7-EXACT",
@@ -258595,7 +258867,7 @@
         },
         {
           "path": "../unpublished/eisenstein-restricted-prime-sums/sections/minus8-exact.tex",
-          "sha256": "4f474af46f3f1e3f1e79d968d6241869050cb6d68a46ef32378779844bf25929",
+          "sha256": "cb4b9b131f5662fad9aabade36cbea573167a2c9cdae5b72cc0a48aa88ddb2b9",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-EXACT-THM-MINUS8-EXACT"
@@ -258618,7 +258890,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/README.md",
-          "sha256": "c88ed633eb3b9989ef0142b889957783d0a8a13af4d90a59a97fa689e3e37cf8",
+          "sha256": "23a5387db4803d1e32c4f0b0df2ffcfc6b7e11da9d08e2e53a228f7f77cc9c2d",
           "role": "documentation",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -258635,7 +258907,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/assembly.tex",
-          "sha256": "db2a1b01e700d9a27747ae4ef3cfe806ee26a1e822aa99d1843836ba0f8f8d0a",
+          "sha256": "fba5f77833925c786709dc53b9db40698910c66de2e328018d947d28fd0057ac",
           "role": "manuscript",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON"
@@ -258647,7 +258919,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-          "sha256": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
+          "sha256": "d9877afa32556d540ffd1df001ad12e3464498b9a3c508948b50ac1ed7fdf118",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-COR-BASIS13"
@@ -258670,11 +258942,12 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
-          "sha256": "8c7ac4f9b3f2afa285492276e025d410d24b32729b7d9adc806ef74b0f6d6e90",
+          "sha256": "49264ccce57edd197d13cd2eb4dba206bd9ef00d79d861cb0e3140098a82aa57",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-LEM-GR-IDEAL",
-            "ARITH-MS-FLAGSHIP-LEM-GR-LARGE"
+            "ARITH-MS-FLAGSHIP-LEM-GR-LARGE",
+            "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION"
           ],
           "dependencies": [],
           "gaps": [],
@@ -258698,6 +258971,16 @@
               "kind": "lemma",
               "line": 418,
               "title": "Large-target root moment and pairing"
+            },
+            {
+              "locator": "prop:gr-arithmetic-reduction",
+              "kind": "proposition",
+              "line": 525,
+              "title": "Graph-to-arithmetic reduction",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
@@ -258809,7 +259092,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/metadata.json",
-          "sha256": "1e6498ed6b45a73bf3cf731f71419d83cb035c5dff64ad08b5ef396ef708b12d",
+          "sha256": "1ff1d2c98f7e7a38ab55d0952ac4f2053141b9f8ccd68ef1261d5e56b695a537",
           "role": "documentation",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -258860,7 +259143,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "00148199d415db045b875380dcb0c16e968c290f15b2c76360103b4f5ae7051b",
+          "sha256": "f5073cbf2141f3d167d00f8adb6963991dfe23b66b749a4f500bdc5fe60d5ec5",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-NORM-ORDER",
@@ -258876,7 +259159,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "corollary",
-              "line": 44,
+              "line": 16,
               "title": "The quadratic order bounds"
             },
             {
@@ -258886,7 +259169,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "corollary",
-              "line": 61,
+              "line": 33,
               "title": "thm:norm-leading"
             }
           ],
@@ -258894,7 +259177,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
-          "sha256": "838349f4a730813b154853e11d65bdcab9c96758ea9a8afb6f220d15e5d80210",
+          "sha256": "a7960c9f5dde919f67e8cc3aebf41309d99baf2a36bd081cc207ef3c49ce713f",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
@@ -258920,7 +259203,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "proposition",
-              "line": 160,
+              "line": 192,
               "title": "Uniform shifted weighted family"
             }
           ],
@@ -258928,7 +259211,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/paper.pdf",
-          "sha256": "7444b1d236c90b5451b0fcabbc745948abe1f72cdf79524a276a7fa479d20bba",
+          "sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
           "role": "manuscript",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -258955,7 +259238,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "sha256": "4a64ff3185f677d1bbf5a8ab3855216d104b4fb153dd85575637df036290486c",
+          "sha256": "a9ca80a5aaa0128ed34c812c5652d568a177b3105110f25d41bd98a0f92c5779",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -258984,7 +259267,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "theorem",
-              "line": 75,
+              "line": 76,
               "title": "thm:c12"
             },
             {
@@ -258994,7 +259277,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "corollary",
-              "line": 126,
+              "line": 128,
               "title": "cor:coprime-c12"
             },
             {
@@ -259004,7 +259287,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "lemma",
-              "line": 218,
+              "line": 221,
               "title": "lem:finite-images"
             },
             {
@@ -259014,7 +259297,7 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "theorem",
-              "line": 242,
+              "line": 245,
               "title": "thm:local"
             }
           ],
@@ -259098,7 +259381,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/source.zip",
-          "sha256": "ed34455615bc71f18560ecbf33a2e096bc2c543bda23eb79198d705a36d6ee25",
+          "sha256": "1279ea99f87ec4a1211a78666284437cd0e5ab1bf8391a4c7fc46ee53af8b1bc",
           "role": "evidence",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -259115,7 +259398,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/source_manifest.json",
-          "sha256": "5efc2c72764574cfed947430e0d7c70769364f606d43b92d61f6495197eb427c",
+          "sha256": "0ec08020436e4274c5cd1d3a953bba3bb72f0424edccf279741ed3302bca1f87",
           "role": "documentation",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -259132,7 +259415,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/verification.json",
-          "sha256": "3a85e10c7e37333fe99d5cf55bca3f6f0711419d02817bd6e2e0bf07528e6e7d",
+          "sha256": "d53536e09fa9e36a37da849411a42999e1cdb9fb3dd0b420078565f051c8f6b5",
           "role": "evidence",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -260018,7 +260301,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "sha256": "270b115e24ad8d4ba4f00e88a07241b6c89046c61ec32cb5d4d4173c91c2e1d7",
+          "sha256": "6c6f1397384e4e77cc519fccf2c041e2c89178eb9788fe660a288ffe0d713394",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
@@ -260026,40 +260309,33 @@
             "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
             "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS",
             "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
-            "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
+            "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
+            "ARITH-PRIMITIVE-FORM-GENUS-BINARY-INVARIANCE",
+            "ARITH-COMMON-FIELD-PRIMITIVE-FORM-LEADING"
           ],
           "dependencies": [],
           "gaps": [],
           "statements": [
             {
-              "locator": "thm:genus-binary-invariance",
-              "kind": "theorem",
-              "line": 51,
-              "title": "Classical genus invariance",
-              "nodes": [
-                "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE"
-              ],
-              "mapping_kind": "exact-statement"
-            },
-            {
-              "locator": "thm:form-binary-leading",
-              "kind": "theorem",
-              "line": 81,
-              "title": "Mixed primitive form values",
-              "nodes": [
-                "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING"
-              ],
-              "mapping_kind": "exact-statement"
-            },
-            {
               "locator": "cor:common-field-form-pairs",
-              "kind": "corollary",
-              "line": 100,
-              "title": "cor:common-field-form-pairs",
+              "kind": "theorem",
+              "line": 65,
+              "title": "Common-field primitive form values",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "thm:genus-binary-invariance",
+              "kind": "corollary",
+              "line": 110,
+              "title": "One discriminant",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
+                "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING"
+              ],
+              "mapping_kind": "separate-classical-and-analytic-corollary-parts"
             },
             {
               "locator": "lem:norm-genus",
@@ -260068,13 +260344,13 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "lemma",
-              "line": 169,
+              "line": 151,
               "title": "lem:norm-genus"
             },
             {
               "locator": "lem:form-ideal-shadow",
               "kind": "lemma",
-              "line": 223,
+              "line": 205,
               "title": "lem:form-ideal-shadow",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
@@ -260088,8 +260364,26 @@
               ],
               "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
               "kind": "proposition",
-              "line": 368,
+              "line": 350,
               "title": "The class error"
+            },
+            {
+              "locator": "part:form-classical",
+              "kind": "theorem-part",
+              "nodes": [
+                "ARITH-PRIMITIVE-FORM-GENUS-BINARY-INVARIANCE"
+              ],
+              "mapping_kind": "separately-scoped-theorem-part",
+              "reason": "The classical comparison and explicit leading term retain their separate dependency routes."
+            },
+            {
+              "locator": "part:form-leading",
+              "kind": "theorem-part",
+              "nodes": [
+                "ARITH-COMMON-FIELD-PRIMITIVE-FORM-LEADING"
+              ],
+              "mapping_kind": "separately-scoped-theorem-part",
+              "reason": "The classical comparison and explicit leading term retain their separate dependency routes."
             }
           ],
           "explanation": "Primitive form-class dictionary, separate classical componentwise genus invariance and analytic mixed Haar leading theorem; different fixed conductors share one field. Counts numerical primitive values; no assurance upgrade."
@@ -260127,7 +260421,7 @@
             }
           ],
           "explanation": "Relocated existing flagship proof stages; source reorganization does not add mathematical scope or assurance.",
-          "sha256": "15ae686049cd39dbd09f02862903c179cccaeb3162c5d5c57366b717b53ee1e4"
+          "sha256": "713318bfc7cd6f2022fdca97e7c1a433662c1435aa639c5e85863b992e38b969"
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/prime-estimates.tex",
@@ -260150,7 +260444,7 @@
             }
           ],
           "explanation": "Relocated existing flagship proof stages; source reorganization does not add mathematical scope or assurance.",
-          "sha256": "551beccd1ff88a2623bd80532a65cf11b272534bce4ac17cd52ff5ca6f6296f1"
+          "sha256": "dcd3169ea0a0072f1354abd96980156f1ef29f144125284960bbce2c027f5a03"
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/model-preparation.tex",
@@ -260174,6 +260468,18 @@
           ],
           "explanation": "Relocated existing flagship proof stages; source reorganization does not add mathematical scope or assurance.",
           "sha256": "9220655bb04bfe72950f2bd49fa7321e0ccdc2444760b78b4a94a09e7d24a9d7"
+        },
+        {
+          "path": "../unpublished/eisenstein-restricted-prime-sums/hexagon-source.zip",
+          "sha256": "1073316f5683583559005ac2dca15da030b392b8d33cbb4c1cbdb5674dfb9f4a",
+          "role": "manuscript",
+          "claims": [
+            "ARITH-MS-EXACT-THM-EXACT-OVERVIEW"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Hexagon-specific compile-only archive containing exactly18 TeX files and main.tex; certificate programs/data are supplied by the separately registered immutable external supplement. The clean extracted build is a packaging check, not new mathematical assurance."
         }
       ]
     },
@@ -269039,27 +269345,69 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-          "locator": "proof of cor:basis13; reference thm:c12 at line 9",
+          "locator": "proof of cor:basis13; reference thm:c12 at line 10",
           "conclusion": "ARITH-MS-FLAGSHIP-COR-BASIS13",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
           "dependency": "ARITH-MS-FLAGSHIP-THM-C12",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "reference": "thm:c12",
-          "proof_locator": "proof of cor:basis13 beginning at ../unpublished/pointwise-binary-splitting-semigroups/consequences.tex:7",
+          "proof_locator": "proof of cor:basis13 beginning at ../unpublished/pointwise-binary-splitting-semigroups/consequences.tex:8",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-BASIS13"
           ]
         },
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of cor:common-field-form-pairs; reference lem:older-quadratic-filter at line 617",
+          "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
+          "reference": "lem:older-quadratic-filter",
+          "proof_locator": "proof of cor:common-field-form-pairs beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:616",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of cor:common-field-form-pairs; reference prop:norm-class-error at line 631",
+          "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "reference": "prop:norm-class-error",
+          "proof_locator": "proof of cor:common-field-form-pairs beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:616",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of cor:common-field-form-pairs; reference thm:general at line 642",
+          "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-THM-GENERAL",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
+          "reference": "thm:general",
+          "proof_locator": "proof of cor:common-field-form-pairs beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:616",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "locator": "proof of cor:coprime-c12; reference thm:c12 at line 177",
+          "locator": "proof of cor:coprime-c12; reference thm:c12 at line 180",
           "conclusion": "ARITH-MS-FLAGSHIP-COR-COPRIME-C12",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "dependency": "ARITH-MS-FLAGSHIP-THM-C12",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "reference": "thm:c12",
-          "proof_locator": "proof of cor:coprime-c12 beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:142",
+          "proof_locator": "proof of cor:coprime-c12 beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:145",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COPRIME-C12"
           ]
@@ -269067,13 +269415,13 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "locator": "proof of lem:form-ideal-shadow; reference lem:norm-genus at line 256",
+          "locator": "proof of lem:form-ideal-shadow; reference lem:norm-genus at line 238",
           "conclusion": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
           "dependency": "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
           "reference": "lem:norm-genus",
-          "proof_locator": "proof of lem:form-ideal-shadow beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:236",
+          "proof_locator": "proof of lem:form-ideal-shadow beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:218",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
           ]
@@ -269081,15 +269429,57 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "locator": "proof of lem:form-ideal-shadow; reference lem:norm-genus at line 262",
+          "locator": "proof of lem:form-ideal-shadow; reference lem:norm-genus at line 244",
           "conclusion": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
           "dependency": "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
           "reference": "lem:norm-genus",
-          "proof_locator": "proof of lem:form-ideal-shadow beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:236",
+          "proof_locator": "proof of lem:form-ideal-shadow beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:218",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "locator": "proof of prop:gr-arithmetic-reduction; reference lem:gr-ideal at line 599",
+          "conclusion": "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-GR-IDEAL",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "reference": "lem:gr-ideal",
+          "proof_locator": "proof of prop:gr-arithmetic-reduction beginning at ../unpublished/pointwise-binary-splitting-semigroups/graph.tex:598",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "locator": "proof of prop:gr-arithmetic-reduction; reference lem:gr-ideal at line 681",
+          "conclusion": "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-GR-IDEAL",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "reference": "lem:gr-ideal",
+          "proof_locator": "proof of prop:gr-arithmetic-reduction beginning at ../unpublished/pointwise-binary-splitting-semigroups/graph.tex:598",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "locator": "proof of prop:gr-arithmetic-reduction; reference lem:gr-large at line 625",
+          "conclusion": "ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-GR-LARGE",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/graph.tex",
+          "reference": "lem:gr-large",
+          "proof_locator": "proof of prop:gr-arithmetic-reduction beginning at ../unpublished/pointwise-binary-splitting-semigroups/graph.tex:598",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-GR-ARITHMETIC-REDUCTION"
           ]
         },
         {
@@ -269104,62 +269494,6 @@
           "proof_locator": "proof of prop:gr-energy beginning at ../unpublished/pointwise-binary-splitting-semigroups/reflected-comparison.tex:36",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-GR-ENERGY"
-          ]
-        },
-        {
-          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "locator": "proof of prop:norm-class-error; reference cor:common-field-form-pairs at line 657",
-          "conclusion": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
-          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "dependency": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
-          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "reference": "cor:common-field-form-pairs",
-          "proof_locator": "proof of prop:norm-class-error beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:634",
-          "routes": [
-            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
-          ]
-        },
-        {
-          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "locator": "proof of prop:norm-class-error; reference lem:older-quadratic-filter at line 635",
-          "conclusion": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
-          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "dependency": "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
-          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
-          "reference": "lem:older-quadratic-filter",
-          "proof_locator": "proof of prop:norm-class-error beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:634",
-          "routes": [
-            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
-          ]
-        },
-        {
-          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "locator": "proof of prop:norm-class-error; reference thm:general at line 661",
-          "conclusion": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
-          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "dependency": "ARITH-MS-FLAGSHIP-THM-GENERAL",
-          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "reference": "thm:general",
-          "proof_locator": "proof of prop:norm-class-error beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:634",
-          "routes": [
-            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
-          ]
-        },
-        {
-          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "locator": "proof of prop:norm-class-error; reference thm:genus-binary-invariance at line 656",
-          "conclusion": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
-          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "dependency": "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
-          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "reference": "thm:genus-binary-invariance",
-          "proof_locator": "proof of prop:norm-class-error beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:634",
-          "routes": [
-            "MS-ROUTE-ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
           ]
         },
         {
@@ -269193,13 +269527,13 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "locator": "proof of thm:local; reference lem:finite-images at line 257",
+          "locator": "proof of thm:local; reference lem:finite-images at line 261",
           "conclusion": "ARITH-MS-FLAGSHIP-THM-LOCAL",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "dependency": "ARITH-MS-FLAGSHIP-LEM-FINITE-IMAGES",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "reference": "lem:finite-images",
-          "proof_locator": "proof of thm:local beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:249",
+          "proof_locator": "proof of thm:local beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:253",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-LOCAL"
           ]
@@ -269207,13 +269541,13 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
-          "locator": "proof of thm:local; reference thm:general at line 259",
+          "locator": "proof of thm:local; reference thm:general at line 263",
           "conclusion": "ARITH-MS-FLAGSHIP-THM-LOCAL",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "dependency": "ARITH-MS-FLAGSHIP-THM-GENERAL",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "reference": "thm:general",
-          "proof_locator": "proof of thm:local beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:249",
+          "proof_locator": "proof of thm:local beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:253",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-LOCAL"
           ]
@@ -269221,13 +269555,27 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "locator": "proof of thm:norm-leading; reference lem:form-ideal-shadow at line 86",
+          "locator": "proof of thm:norm-leading; reference cor:common-field-form-pairs at line 66",
+          "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-LEADING",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "reference": "cor:common-field-form-pairs",
+          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:56",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-LEADING"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
+          "locator": "proof of thm:norm-leading; reference lem:form-ideal-shadow at line 58",
           "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-LEADING",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
           "dependency": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
           "reference": "lem:form-ideal-shadow",
-          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:84",
+          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:56",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-LEADING"
           ]
@@ -269235,41 +269583,13 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "locator": "proof of thm:norm-leading; reference prop:norm-class-error at line 99",
+          "locator": "proof of thm:norm-leading; reference prop:norm-class-error at line 67",
           "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-LEADING",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
           "dependency": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
           "reference": "prop:norm-class-error",
-          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:84",
-          "routes": [
-            "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-LEADING"
-          ]
-        },
-        {
-          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "locator": "proof of thm:norm-leading; reference thm:form-binary-leading at line 97",
-          "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-LEADING",
-          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "dependency": "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING",
-          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
-          "reference": "thm:form-binary-leading",
-          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:84",
-          "routes": [
-            "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-LEADING"
-          ]
-        },
-        {
-          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "locator": "proof of thm:norm-leading; reference thm:norm-order at line 95",
-          "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-LEADING",
-          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "dependency": "ARITH-MS-FLAGSHIP-THM-NORM-ORDER",
-          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "reference": "thm:norm-order",
-          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:84",
+          "proof_locator": "proof of thm:norm-leading beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:56",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-LEADING"
           ]

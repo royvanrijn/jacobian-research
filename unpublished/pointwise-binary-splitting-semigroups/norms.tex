@@ -1,45 +1,17 @@
 \subsection{Principal norm specialization}\label{sec:norms}
 
-We recover primitive principal norm values by taking both forms in
-the preceding results to be the norm form of one order. Thus the
-ideal-class comparison and the local-density normalization require no
-separate argument.
-
-Fix an imaginary quadratic field $K$ of fundamental discriminant
-$D<0$, and an order $\mathcal O=\Z+f\mathcal O_K$ of discriminant
-$\Delta=f^2D$.  Choose a basis $1,\omega$ of $\mathcal O$ and put
+Take the norm form \(Q(x,y)=N_{K/\Q}(x+y\omega)\) in a basis
+\(1,\omega\) of one fixed order \(\mathcal O\) of discriminant
+\(\Delta=f^2D\). In the notation of Section~\ref{sec:forms}, put
 \[
- Q(x,y)=\operatorname N_{K/\Q}(x+y\omega),\qquad
- P=\{Q(x,y)>0:x,y\in\Z,\ \gcd(x,y)=1\}.
+ P=P_Q,\qquad \Lambda=\Lambda_Q,\qquad R_T=R_{T,T},\qquad
+ S=\{p:p\mid2\Delta\},\quad \chi=\chi_D,\quad
+ J_{\mathcal O}=J_S,
 \]
-Primitivity refers to this order basis.  Write
-\[
- \begin{gathered}
- \mathscr V_p=Q(\Z_p^2\setminus p\Z_p^2),\qquad
- \Lambda=\{n\ge1:n\in\mathscr V_p\text{ for every }p\},\\
- R_T(N)=\#\{(a,b)\in T^2:a+b=N\}.
- \end{gathered}
-\]
-Thus $P\subset\Lambda$, and $R_T$ counts numerical values without
-coordinate multiplicities.  A target is locally admissible if
-$N\in\mathscr V_p+\mathscr V_p$ for every prime $p$.
-
-Let $S=\{p:p\mid2\Delta\}$, let $\chi=\chi_D$, and define
-\[
- d_p(N)=\int_{\Z_p}\mathbf1_{\mathscr V_p}(a)
-                    \mathbf1_{\mathscr V_p}(N-a)\,da\quad(p\in S),
- \qquad
- J_{\mathcal O}(N)=
- \prod_{\substack{p\mid N\\p\notin S,\ \chi(p)=-1}}
-                         \frac{p-1}{p-2}.
-\]
-The Haar measure of $\Z_p$ is one.  The local densities concern the
-set of values, rather than the number of their preimages under $Q$.
-
-An independent weighted quadratic correlation and positive restoration
-give an order-of-magnitude result. Its classical core estimate is proved
-in full in Appendix~\ref{sec:older-route}, using no new zero-free or
-weighted-dilation input.
+and write \(\mathscr V_p=\mathscr V_{p,Q}\) and
+\(d_p=d_{p;1,2}\) with both slots equal to \(Q\).
+The norm form is primitive and has target ideal class zero.
+The two conclusions of the common-field theorem specialize as follows.
 
 \begin{corollary}[The quadratic order bounds]\label{thm:norm-order}
 For every fixed imaginary quadratic order there are constants
@@ -82,28 +54,20 @@ class group is required; the order remains fixed.
 \end{corollary}
 
 \begin{proof}[Specialization]
-The norm form is primitive of discriminant \(\Delta\) and corresponds
-to \(A=\mathcal O\), hence \(c_Q=0\). Lemma~\ref{lem:form-ideal-shadow}
-therefore reads
+The ideal \(A=\mathcal O\) has \(c_Q=0\), so
+Lemma~\ref{lem:form-ideal-shadow} reads
 \begin{equation}\label{eq:norm-shadow-ideals}
  n\in\Lambda\quad\Longleftrightarrow\quad
  \text{some primitive integral invertible }I
-       \text{ has }n(I)=n,\ [I]\in2G,
+       \text{ has }n(I)=n,\ [I]\in2\operatorname{Pic}(\mathcal O);
 \end{equation}
-and replacing \(2G\) by zero characterizes \(P\).
-The classical bounds just proved for mixed forms give
-Corollary~\ref{thm:norm-order}. The two local filters now coincide,
-\(d_{p;1,2}=d_p\), and \(J_\Delta=J_{\mathcal O}\), so
-Theorem~\ref{thm:form-binary-leading} gives
-\eqref{eq:norm-coefficient} and Corollary~\ref{thm:norm-leading}.
-In particular, Proposition~\ref{prop:norm-class-error} gives
-\(R_\Lambda-R_P\ll_{\mathcal O}NJ_{\mathcal O}/(\log N)^{6/5}\);
-if \(2G=0\), it gives \(P=\Lambda\) exactly.
-The finite local computation, prefix upper bound, summability and
-Haar normalization are given by
-\eqref{eq:norm-local-density-finite},
-\eqref{eq:norm-prefix-tail} and \eqref{eq:form-haar-strata}.
-They include all conductor-local factors in the principal case.
+replacing the doubled group by zero characterizes \(P\).
+Parts~\ref{part:form-classical} and~\ref{part:form-leading} of
+Theorem~\ref{cor:common-field-form-pairs} give the two assertions,
+with \(d_{p;1,2}=d_p\). Proposition~\ref{prop:norm-class-error}
+also gives \(R_\Lambda-R_P\ll_{\mathcal O}
+NJ_{\mathcal O}/(\log N)^{6/5}\), and \(P=\Lambda\) if the doubled
+class group vanishes.
 \end{proof}
 
 \begin{remark}[Gaussian normalization]

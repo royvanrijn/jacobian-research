@@ -990,12 +990,12 @@ The weakest useful substitute forZF is the conclusion of(P1) without its princip
 
 ### PP-sharp: actual interval banks, with all-height Mellin control
 
-The exponential bank error can be proved directly under ZF, without a smoothing-boundary error. Choose sigma_1>max(sigma_0,1/2). Uniformly for q<=x^B and X in[P/2,4P],
+The exponential bank error can be proved directly under ZF, without a smoothing-boundary error. Choose sigma_1>max(sigma_0,1/2), with fixed a,B,B_1>0. Uniformly for q<=x^B, exp(L^a)<=P<=x^B_1 and X in[P/2,4P],
 
     theta_chi(X)=sum_(p<=X)chi(p)logp
        =delta_chi X+O(X^sigma_1 L^C).                  (PS1)
 
-Here is the truncated-Perron detail. Replace X by the half-integer immediately after floor(X), changing a prime-weighted sum by at mostO(logX). Use c=1+1/logX and heightT=X² for the von-Mangoldt Perron integral. The elementary truncation error isO(log²X): in the range n~X use distance at least1/2 and sum(X/(T|n-X|))*logX; outside that range use absolute convergence on c. Shift the finite rectangle to sigma_1. ZF and the fixed strip gap give |-L'/L(s,chi)-delta_chi/(s-1)|<=C log(q(|Ims|+3)) throughout the rectangle. Thus the new vertical integral is O(X^sigma_1 log²(qX)), and each horizontal integral isO(X^c log(qX)/(T logX)). The only crossed singularity is the principal pole, with residueX. Imprimitive Euler terms areO(logq) on this fixed right half-plane. Prime powers costO(X^(1/2)log²X), absorbed in(PS1). The half-integer replacement changes delta_chi X byO(1), also absorbed. This proves(PS1) at every real endpoint, not just generic endpoints.
+Here is the truncated-Perron detail. Replace X by the half-integer immediately after floor(X), changing a prime-weighted sum by at mostO(logX). Use c=1+1/logX and heightT=X² for the von-Mangoldt Perron integral. The elementary truncation error isO(log²X): in the range n~X use distance at least1/2 and sum(X/(T|n-X|))*logX; outside that range use absolute convergence on c. Shift the finite rectangle to sigma_1. ZF and the fixed strip gap give |-L'/L(s,chi)-delta_chi/(s-1)|<=C log(q(|Ims|+3)) throughout the rectangle. Thus the new vertical integral is O(X^sigma_1 log²(qX)), and each horizontal integral isO(X^c log(qX)/(T logX)). The only crossed singularity is the principal pole, with residueX. Imprimitive Euler terms areO(logq) on this fixed right half-plane. Prime powers costO(X^(1/2)log²X), absorbed in(PS1). The half-integer replacement changes delta_chi X byO(1), also absorbed. Here X is comparable to P<=x^B_1 and q<=x^B, so log(qX)=O_(B,B_1)(L); this is the polynomial prime-scale restriction used to absorb the Perron logarithms into L^C. Every application has P<=exp(L^(2/5))<x for sufficiently large x, so B_1=1 suffices. This proves(PS1) at every real endpoint, not just generic endpoints.
 
 Partial summation against u^(it)/logu on ANY subintervalI of[P,2P] now gives
 

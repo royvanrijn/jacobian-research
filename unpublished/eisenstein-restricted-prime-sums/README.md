@@ -10,8 +10,15 @@ and summarizes the finite scans, interval certificates, infinite estimates and
 descent in an opening coverage table. The theorem scopes, certificate programs
 and retained receipts are unchanged by this reorganization.
 
+The final review edition uses generated equation numbers throughout, states
+orbit averaging for a finite invariant probability measure, and retains the
+explicit inverse-unit-mass calculation at -11. The three long -8 minimum
+fractions are in Appendix A; the body retains their rigorous lower margin
+of 1/256. All 32 certificate files and the 16 other formal statements remain
+byte-identical; only the reusable averaging proposition has been generalized.
+
 [LaTeX](main.tex) · [Metadata](metadata.json) ·
-[Verification record](verification.json) · [Source archive](source.zip)
+[Verification record](verification.json) · [Hexagon TeX archive](hexagon-source.zip) · [Full research archive](source.zip)
 
 ## Mathematical scope
 
@@ -36,6 +43,29 @@ No numerical leading correlation asymptotic is claimed here. The separate
 pointwise-correlation manuscript is not a proof dependency of these exact
 classifications: this paper uses its own classical-input arguments and finite
 certificates.
+
+## Hexagon source package
+
+Upload hexagon-source.zip as the TeX source package. It contains only the
+article TeX files; main.tex is the entry point. It includes no verification
+programs, receipts, metadata or build scripts.
+
+The frozen certificate supplement is hosted externally at
+[commit b854dddcda88](https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip).
+Its SHA256 is 543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332.
+All 32 current certificate files match that archive byte for byte. The
+archive also contains historical TeX and documentation; Appendix A links
+to it for the certificate subtree. The current full research archive
+source.zip remains available for offline inspection. Compiling the article
+does not execute the certificate programs.
+
+Build and check the upload package with:
+
+    python3 build_bundle.py --hexagon --verify-rebuild
+
+The helper uses the recorded reproducible-build environment. The submission
+archive was prepared against [Hexagon author information](https://hexagonmath.org/about);
+preparing it does not upload or submit the paper.
 
 ## Build
 
@@ -102,15 +132,13 @@ arguments or the imported theorems.
 The existing build record reports resolved references and citations, no
 overfull boxes, and a byte-identical PDF from a fresh source extraction. Its
 layout record specifies which page renders were inspected. An isolated
-AI reader reviewed the preceding 36-page PDF; its supplied context, findings and
+AI reader reviewed the current 36-page PDF; its supplied context, findings and
 rechecks are recorded separately. All of this is internal review. External
 specialist review, external human certificate replay, formal verification and
 historical priority are not established.
 
-The earlier scope-freeze pass checked receipt hashes and preservation of the
-mathematical files, and validated its standalone source archive. Its outcome
-is recorded under `review_preparation` in `verification.json`. The current
-editorial edition requires its own build and layout record.
+The earlier preservation and review records remain in the verification history.
+The current edition has its own build, layout and isolated-reader records.
 
 ## Questions for outside review
 

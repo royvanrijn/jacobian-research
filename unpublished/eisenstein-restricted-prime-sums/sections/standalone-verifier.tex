@@ -1,7 +1,7 @@
 \section{Finite certificates and their verification}\label{app:verifier}
 
-The accompanying source archive contains the verification programs and
-machine-readable rational certificates.  This appendix specifies their
+The external certificate supplement contains the verification programs
+and machine-readable rational certificates. This appendix specifies their
 proof role; the spectral statements remain mathematical imports.
 All finite sumset tests below use exact integer arithmetic.  The
 rational interval bounds use integer comparisons after clearing positive
@@ -20,9 +20,11 @@ $-11$&$N\le2^{25}$&$C+C$&none\\
 \end{center}
 
 \paragraph{Declared supplement.}
-The accompanying electronic supplement is \texttt{source.zip}; its
-\texttt{README.md} gives the exact build and replay commands and software
-requirements.  All the following files are in its
+The verification code and certificates are available in the
+\href{https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip}{frozen certificate supplement}
+(GitHub commit \texttt{b854dddcda88}). Its \texttt{README.md}
+gives the replay commands and software requirements. All the following files
+are in its
 \texttt{certificates/} directory:
 \begin{itemize}
 \item \path{verify_binary_certificates.py} checks both Eisenstein families
@@ -40,8 +42,9 @@ and produces \path{binary_certificates_receipt.json}.
 the independent full-array comparison and produces
 \path{primitive_norm_coordinate_membership_checks.json}.
 \end{itemize}
-No public deposit identifier is presumed: the supplement is distributed
-with the article.
+The linked archive also retains the sources of its accompanying edition;
+its certificate files apply to the present article. Compiling the article
+requires only the separate TeX sources and does not execute the code.
 
 \paragraph{Membership and positive witnesses.}
 For each semigroup, prime support gives an exact membership sieve:
@@ -102,10 +105,12 @@ fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0
 \begin{quote}\footnotesize\ttfamily
 aadd1a6ebe6f6450f4b7e270d308af6971f1b38d3b388b768c3d28c752518fc0
 \end{quote}
+\begin{samepage}
 \noindent Mixed least-witness indices:
 \begin{quote}\footnotesize\ttfamily
 91496589fd9b1be7e9aba7cd77d63cb2c0de4be710564172ded09198c638c49d
 \end{quote}
+\end{samepage}
 The other families' complete membership and coverage digests are fields
 of the named JSON certificates.  Their verifiers regenerate the actual
 arrays and target comparisons, then compute the digests.
@@ -121,6 +126,18 @@ arithmetic-progression tails.  Thus an interval inequality proves a
 statement for every integer in its interval.  The interval endpoints
 meet the finite scans below and the infinite estimates above, without
 gaps.  The multiplicative descents then exhaust the claimed domains.
+
+For the three discriminant-$-8$ rows of
+\eqref{eq:m8-intervalcert}, the exact minimum differences between
+$\lambda$ and the certified left side, in the order $f=1,2,4$, are
+\[
+ \frac{2099881132899631}{270215977642229760},\qquad
+ \frac{2121064135193247}{457115362178105344},\qquad
+ \frac{2577393383109722873}{109167254967460823040}.
+\]
+Each is greater than $1/256$, by cross multiplication of positive
+integers. The interval table in Section~\ref{sec:minus8} gives their
+complete ranges and number of tests.
 
 \paragraph{Reproducible data.}
 The archive provides the four exact sumset checkers, the independent

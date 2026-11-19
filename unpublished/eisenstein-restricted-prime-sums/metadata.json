@@ -32,17 +32,37 @@
   "review_status": "Four-discriminant mathematical scope frozen; presentation reorganized and prepared for external mathematical review, which has not occurred.",
   "review_edition": {
     "pdf": "paper.pdf",
-    "sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
+    "sha256": "c3823e04269102e248e5f28af8ae966b445644fc4bf951a8e101d5ed7d565a54",
     "page_count": 36,
+    "scope": "Packaging and notation revision; mathematical statements and dependencies unchanged.",
+    "external_review_performed": false,
     "discriminants": [
       -3,
       -7,
       -8,
       -11
     ],
-    "mathematical_statements_byte_identical": true,
     "certificate_files_byte_identical": true,
-    "presentation_reorganized": true,
-    "scope_limits": "No new discriminants, classifications, numerical correlation asymptotics or assurance. Existing balanced-exception limitation retained."
+    "unchanged_classification_statements": true,
+    "reusable_averaging_lemma_generalized": true
+  },
+  "submission_source_bundle": "hexagon-source.zip",
+  "external_certificate_bundle": {
+    "url": "https://raw.githubusercontent.com/royvanrijn/jacobian-research/b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8/unpublished/eisenstein-restricted-prime-sums/source.zip",
+    "commit": "b854dddcda88fd9c733d18e14a8ff5ae4a0b25b8",
+    "sha256": "543b87126ffe15c4f09f553545bbe9170cfbba0b98d876854eb4c3a797190332",
+    "certificate_files": 32,
+    "scope": "Frozen certificate subtree of the externally hosted historical source archive; all current certificate bytes match."
+  },
+  "submission_packaging": {
+    "target": "Hexagon",
+    "entry_point": "main.tex",
+    "source_archive": "hexagon-source.zip",
+    "archive_sha256": "1073316f5683583559005ac2dca15da030b392b8d33cbb4c1cbdb5674dfb9f4a",
+    "tex_files": 18,
+    "code_in_submission_archive": false,
+    "policy_url": "https://hexagonmath.org/about",
+    "policy_checked_on": "2026-11-19",
+    "submission_performed": false
   }
 }

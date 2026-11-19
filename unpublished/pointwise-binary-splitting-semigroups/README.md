@@ -17,6 +17,14 @@ One complete mixed local-filter argument supplies the conductor-prefix bounds,
 summable tail, Haar strata and Euler normalization. The exact basis-order-thirteen
 corollary remains in the main text.
 
+The final review edition states the graph-to-arithmetic reduction as a
+proposition, with exact-count normalization, label dependence and independent
+auxiliary products explicit. The sharp prime estimate is restricted to
+exp((log x)^a) <= P <= x^B1; all applications permit B1=1.
+Appendix A opens with the restoration mechanism and order of parameter choices.
+The common-field form theorem has separately labelled classical and
+recent-input parts, followed by the same-discriminant and principal cases.
+
 The shared arithmetic-model comparison theorem isolates exact invariance under
 a common prime class, centered one-variable rough means and positive sparse
 sieve bounds. Its assumptions contain no centered binary cancellation or
@@ -98,11 +106,12 @@ The form/ideal dictionary targets `-[A]`, and its local shadow means that
 some primitive invertible ideal of norm `n` lies in `-[A]+2Pic(O)`.
 This remains existential at conductor primes: a number can occur in more
 than one genus. Separate local genus biases are retained in the two prefix
-filters. A common-field corollary then allows two different fixed conductors,
+filters. The common-field theorem allows two different fixed conductors,
 marking one order's deficient prime families at a time. It needs no joint
 ring-class prime-distribution input. These statements concern numerical
 values at coprime coordinates, not ordinary unrestricted coordinate values
-or forms over different quadratic fields. The exact companion remains frozen.
+or forms over different quadratic fields. The exact companion retains its
+four-discriminant classification scope and certificate bytes.
 
 [PDF](paper.pdf) · [Source](main.tex) · [Metadata](metadata.json) ·
 [Verification record](verification.json) · [Standalone source archive](source.zip)

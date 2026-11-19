@@ -4,14 +4,16 @@ For primitive forms in one imaginary quadratic field, the local value
 sets determine the leading binary count. The ideal class of a form
 affects only a smaller error: sufficiently many split prime factors
 allow independent orientation choices to fill its compatible genus.
-We state the general form results before treating the principal norm
-form as a specialization in Section~\ref{sec:norms}.
 
-Let \(\Delta=f^2D<0\), with \(D\) fundamental, and put
-\(\mathcal O=\Z+f\mathcal O_K\), \(K=\Q(\sqrt D)\),
-\(G=\operatorname{Pic}(\mathcal O)\). All forms in the first two
-theorems are primitive positive definite integral binary quadratic
-forms of discriminant \(\Delta\). For such a form \(Q\), define
+Fix a negative fundamental discriminant \(D\), put \(K=\Q(\sqrt D)\),
+and let
+\[
+ \mathcal O_i=\Z+f_i\mathcal O_K,\qquad
+ \Delta_i=f_i^2D,\qquad G_i=\operatorname{Pic}(\mathcal O_i)
+ \quad(i=1,2).
+\]
+Let \(Q_i\) be a primitive positive definite integral binary form of
+discriminant \(\Delta_i\). For any such form \(Q\), define
 \[
  \begin{aligned}
  P_Q&=\{Q(x,y):x,y\in\Z,\ \gcd(x,y)=1\},\\
@@ -19,127 +21,107 @@ forms of discriminant \(\Delta\). For such a form \(Q\), define
  \Lambda_Q=\{n\ge1:n\in\mathscr V_{p,Q}\text{ for every }p\}.
  \end{aligned}
 \]
-Only positive values are included. Coordinates may vanish, and
-each numerical value is counted once. Write
+Only positive values are included. Coordinates may vanish, and each
+numerical value is counted once. Write
 \[
  R_{T_1,T_2}(N)=\#\{(a,b)\in T_1\times T_2:a+b=N\},\qquad
  R_{Q_1,Q_2}=R_{P_{Q_1},P_{Q_2}}.
 \]
 Two forms are in the same genus when they are equivalent over every
-\(\Z_p\) (and over \(\mathbb R\)). Such equivalences preserve primitive
-vectors, hence their primitive local value sets.
+\(\Z_p\) and over \(\mathbb R\). These equivalences preserve primitive
+vectors and therefore the primitive local value sets.
 
-Put \(S=\{p:p\mid2\Delta\}\), \(\chi=\chi_D\), and
+Put \(\chi=\chi_D\) and
 \[
- J_\Delta(N)=\prod_{\substack{p\mid N\\p\notin S,\ \chi(p)=-1}}
-                            \frac{p-1}{p-2}.
+ S=\{p:p\mid2\Delta_1\Delta_2\},\qquad
+ J_S(N)=\prod_{\substack{p\mid N\\p\notin S,\ \chi(p)=-1}}
+                              \frac{p-1}{p-2}.
 \]
-For a pair \(Q_1,Q_2\), a target is locally admissible if
-\(N\in\mathscr V_{p,Q_1}+\mathscr V_{p,Q_2}\) for every \(p\).
-For any finite abelian class group \(G\), put
+A target is locally admissible for \(Q_1,Q_2\) if
+\(N\in\mathscr V_{p,Q_1}+\mathscr V_{p,Q_2}\) for every prime \(p\).
+For a finite abelian group \(G\), put
 \[
  \eta_*(G)=
  \begin{cases}
  +\infty,&2G=0,\\
  \displaystyle\min_{\substack{\ell\mid |2G|\\\ell\ {\rm prime}}}
-                  \frac{\ell-1}{2\ell},&2G\ne0.
+                   \frac{\ell-1}{2\ell},&2G\ne0.
  \end{cases}
 \]
-The strict saving range \(0<\eta<\eta_*(G)\) will follow from
-the maximal-subgroup cover below.
-
-\begin{theorem}[Classical genus invariance]\label{thm:genus-binary-invariance}
-Suppose \(Q_i,Q'_i\) are in the same genus for each \(i=1,2\).
-For every fixed \(0<\eta<\eta_*(G)\), uniformly on their common
-sufficiently large locally admissible targets,
-\[
- R_{Q_1,Q_2}(N)
-   =R_{Q'_1,Q'_2}(N)\left(1+O((\log N)^{-\eta})\right).
-\]
-Both counts have order \(NJ_\Delta(N)/\log N\). Nonadmissible
-targets have zero count. If \(2G=0\), the two counts are equal
-for every target. The constants and threshold depend on the fixed
-forms and on \(\eta\). This theorem uses the classical route of
-Appendix~\ref{sec:older-route} and the class-error sieve; it does not
-use the recent zero-free or weighted-dilation inputs.
-\end{theorem}
-
-To state the explicit leading term, define the mixed local value density
+The mixed local value densities and universal factor are
 \[
  d_{p;1,2}(N)=\int_{\Z_p}
-    \1_{\mathscr V_{p,Q_1}}(a)\1_{\mathscr V_{p,Q_2}}(N-a)\,da
+       \1_{\mathscr V_{p,Q_1}}(a)\1_{\mathscr V_{p,Q_2}}(N-a)\,da
        \quad(p\in S),
 \]
-and the positive constant
 \begin{equation}\label{eq:form-universal-factor}
  \mathfrak b_{D,S}=\frac{4L(1,\chi)}\pi
   \prod_{p\in S}\frac{1-\chi(p)/p}{1-1/p}
   \prod_{\substack{p\notin S\\\chi(p)=-1}}
                       \left(1-\frac2{p(p-1)}\right).
 \end{equation}
+Haar measure gives \(\Z_p\) mass one.
 
-\begin{theorem}[Mixed primitive form values]\label{thm:form-binary-leading}
-Under the analytic inputs of Section~\ref{sec:inputs}, for fixed
-\(Q_1,Q_2\) as above, uniformly through sufficiently large locally
-admissible targets,
-\begin{equation}\label{eq:form-binary-leading}
- R_{Q_1,Q_2}(N)\sim
-   \mathfrak b_{D,S}\left(\prod_{p\in S}d_{p;1,2}(N)\right)
-                  J_\Delta(N)\frac N{\log N}.
-\end{equation}
-Each bad-prime factor is a computable rational periodic function of
-the target. The leading coefficient depends only on the two genera.
-There is no class-number divisor in this formula.
-\end{theorem}
-
-The absence of such a divisor concerns numerical values, not weighted
-representations by ideals or coordinates. A saturated value can be
-represented by every class in each compatible genus. Selecting one
-class therefore does not take a fixed fraction of a disjoint partition.
-
-\begin{corollary}\label{cor:common-field-form-pairs}
-Fix an imaginary quadratic field of fundamental discriminant \(D\),
-two orders \(\mathcal O_i=\Z+f_i\mathcal O_K\) of discriminants
-\(\Delta_i=f_i^2D\), and primitive positive definite forms \(Q_i\) of discriminants \(\Delta_i\). Put
+\begin{theorem}[Common-field primitive form values]\label{cor:common-field-form-pairs}
+For the fixed data above, the following assertions hold.
+\begin{enumerate}
+\item\label{part:form-classical}
+\emph{Classical order bounds and genus comparison.}
+Uniformly on sufficiently large locally admissible targets,
 \[
- S=\{p:p\mid2\Delta_1\Delta_2\},\qquad
- J_S(N)=\prod_{\substack{p\mid N\\p\notin S,\ \chi_D(p)=-1}}
-                       \frac{p-1}{p-2}.
+ R_{Q_1,Q_2}(N)\asymp R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)
+                              \asymp\frac{NJ_S(N)}{\log N}.
 \]
-The mixed classical order bounds hold on sufficiently large locally
-admissible targets. Under the inputs of Section~\ref{sec:inputs},
-\[
- R_{Q_1,Q_2}(N)\sim
- \mathfrak b_{D,S}\left(\prod_{p\in S}d_{p;1,2}(N)\right)
-                         J_S(N)\frac N{\log N}.
-\]
-If each \(Q'_i\) is in the genus of \(Q_i\), then, independently
-of those recent inputs, the classical comparison is
+If \(Q'_i\) belongs to the genus of \(Q_i\), then, for every fixed
+\(0<\eta<\min_i\eta_*(G_i)\), uniformly on their common sufficiently
+large locally admissible targets,
 \[
  R_{Q_1,Q_2}(N)=R_{Q'_1,Q'_2}(N)
-                         \left(1+O((\log N)^{-\eta})\right)
+                         \left(1+O((\log N)^{-\eta})\right).
 \]
-for every
-\(0<\eta<\min_i\eta_*(\operatorname{Pic}(\mathcal O_i))\), on
-sufficiently large common locally admissible targets. If both doubled
-class groups vanish the counts agree exactly; \(\eta=1/5\) is
-otherwise a common permissible exponent. All data remain fixed.
+If both doubled class groups vanish, the counts agree for every target.
+Otherwise \(\eta=1/5\) is always permissible. These assertions use
+Appendix~\ref{sec:older-route} and the class-error sieve, independently
+of the recent zero-free and weighted-dilation inputs.
+\item\label{part:form-leading}
+\emph{Explicit leading term.}
+Under the analytic inputs of Section~\ref{sec:inputs}, uniformly
+through sufficiently large locally admissible targets,
+\begin{equation}\label{eq:form-binary-leading}
+ R_{Q_1,Q_2}(N)\sim
+ \mathfrak b_{D,S}\left(\prod_{p\in S}d_{p;1,2}(N)\right)
+                              J_S(N)\frac N{\log N}.
+\end{equation}
+Each bad-prime density is a computable rational periodic function.
+The leading coefficient depends only on the respective genera,
+with no class-number divisor.
+\end{enumerate}
+Nonadmissible targets have zero count. Constants and thresholds may
+depend on the fixed forms and, in the comparison, on \(\eta\).
+The two conductors may differ; the quadratic field remains fixed.
+\end{theorem}
+
+The absence of a class-number divisor concerns numerical values,
+rather than weighted representations by ideals or coordinates.
+A saturated value can be represented by every class in its compatible
+genus, so selecting one class does not select a fixed fraction of
+a disjoint partition.
+
+\begin{corollary}[One discriminant]\label{thm:genus-binary-invariance}\label{thm:form-binary-leading}
+If \(f_1=f_2=f\), both conclusions of the theorem hold for forms
+of the one discriminant \(\Delta=f^2D\), with
+\[
+ S=\{p:p\mid2\Delta\},\qquad J_\Delta=J_S,\qquad
+ 0<\eta<\eta_*(\operatorname{Pic}(\Z+f\mathcal O_K)).
+\]
+In particular the classical genus comparison and the explicit leading
+term retain their separate dependencies.
 \end{corollary}
 
-The same-discriminant theorems are special cases of a common proof for
-the two orders in Corollary~\ref{cor:common-field-form-pairs}. Throughout
-the proof, let \(\mathcal O_i=\Z+f_i\mathcal O_K\),
-\(G_i=\operatorname{Pic}(\mathcal O_i)\), and use its common set \(S\)
-and factor \(J_S(N)\). The local densities are always the two separate
-value densities
-\[
- d_{p;1,2}(N)=\int_{\Z_p}
-       \1_{\mathscr V_{p,Q_1}}(a)\1_{\mathscr V_{p,Q_2}}(N-a)\,da.
-\]
-All constants may depend on the fixed pair of forms, denoted
-\(\mathcal F=(Q_1,Q_2)\). No ideals from different orders will be
-multiplied, and no distribution theorem for joint classes in the two
-orders is used.
+We prove the common-field theorem directly. Write
+\(\mathcal F=(Q_1,Q_2)\) for the fixed pair.
+No ideals from different orders are multiplied, and no distribution
+theorem for joint classes in the two orders is used.
 
 \subsection{Proper ideals and the genus map}
 
@@ -631,7 +613,7 @@ Outside \(S\) there is already no additive obstruction. Hence
  \Gamma_{r,s;1,2}(N)>0\text{ for some }r,s\mid Z.
 \]
 
-\begin{proof}[Classical bounds and genus comparison]
+\begin{proof}[Proof of Theorem~\ref{cor:common-field-form-pairs}, part~\ref{part:form-classical}]
 Lemma~\ref{lem:older-quadratic-filter} allows two distinct filters
 \(U,V_0\subset H\). In a positive fixed profile it supplies
 \(\gg_{\mathcal F}MJ_S(M)/\log M\) core pairs on \(Ax+By=M\).
@@ -653,8 +635,7 @@ If \(Q'_i\) is in the genus of \(Q_i\) for each \(i\), their local
 value sets coincide exactly, as do the two mixed local shadows.
 Subtract their two class-error estimates and divide by the classical
 positive lower bound. This proves
-Theorem~\ref{thm:genus-binary-invariance} and the classical assertions
-of Corollary~\ref{cor:common-field-form-pairs}. If both doubled groups
+part~\ref{part:form-classical} of Theorem~\ref{cor:common-field-form-pairs}. If both doubled groups
 vanish the individual global and local value sets are equal, proving
 the exact assertion for every target. Nonadmissible targets have zero
 count. This argument uses the older quadratic filter estimate, not
@@ -735,8 +716,8 @@ at every good inert prime. The result is precisely
 \(\mathfrak b_{D,S}\) in \eqref{eq:form-universal-factor}.
 The finite positive minimum of the local density product and
 \eqref{eq:form-class-error} transfer the asymptotic to the actual
-values. This proves Theorem~\ref{thm:form-binary-leading} and the
-leading-term assertion of Corollary~\ref{cor:common-field-form-pairs}.
+values. This proves part~\ref{part:form-leading} of
+Theorem~\ref{cor:common-field-form-pairs}.
 
 The proof has used a common field and two separate local filters.
 Genus replacement is made in each respective discriminant; it asserts

@@ -1,21 +1,21 @@
 \section{The part of the argument we can reuse}\label{sec:orbit-criterion}
-The same pattern has now served two binary problems. It is worth pulling
-out the part that can travel to another setting: average a bad event over
-an orbit, use a spectral bound, then add the local losses. The arithmetic
-work is still needed to identify the orbit, count the representations and
-leave a strict margin below one.
+The local sieves above average a bad event over an orbit, apply a spectral
+bound, and add the local losses. This appendix isolates that argument,
+allowing the inverse-unit mass needed when several ideal classes occur.
+The arithmetic work identifies the orbit, counts the representations,
+and leaves a strict margin below one.
 
 The first statement isolates the averaging step. The second lists the
 uniform bounds that turn it into an eventual, and potentially effective,
 representation theorem.
 
 \begin{proposition}\label{prop:orbit-averaging}
-Let a finite group $G$ act transitively on the right on a finite nonempty
-set $Y$, let $K\le G$, and let $\Omega=y_0K$ be a nonempty $K$-orbit.
-On $\C[Y]$ use counting measure. Put $f=1_\Omega$ and
-$\mu=|\Omega|/|Y|$. Suppose $T$ is self-adjoint, commutes with the
-$G$-action, and satisfies $T1=d1$ with $d>0$.
-Let $E\subset\C[Y]$ be a subspace such that
+Let a finite group $G$ act on the right on a finite set $Y$ equipped
+with a $G$-invariant probability measure $\pi$. Let $K\le G$, and let
+$\Omega=y_0K$ be a $K$-orbit of positive measure. On $L^2(Y,\pi)$ put
+$f=1_\Omega$ and $\mu=\pi(\Omega)$. Suppose $T$ is self-adjoint,
+commutes with the $G$-action, and satisfies $T1=d1$ with $d>0$.
+Let $E\subset L^2(Y,\pi)$ be a subspace such that
 \[
 \|Tv\|\le\Lambda\|v\|\quad(v\in E^\perp),\qquad
 f-\mu1\in E^\perp,
@@ -31,17 +31,25 @@ In particular, the same right side bounds the upper deviation.
 Both $f$ and $Tf$ are right-$K$ invariant, so $Tf$ is constant on
 $\Omega$ and
 \[
-(Tf)(y_0)=\frac{\langle f,Tf\rangle}{|\Omega|}.
+(Tf)(y_0)=\frac{\langle f,Tf\rangle_\pi}{\mu}.
 \]
 Write $f=\mu1+h$. Then $h\perp1$ and
-$\|h\|^2=|\Omega|(1-\mu)$. Self-adjointness and $T1=d1$ remove the
+$\|h\|_\pi^2=\mu(1-\mu)$. Self-adjointness and $T1=d1$ remove the
 cross terms, giving
 \[
-\langle f,Tf\rangle=d\mu^2|Y|+\langle h,Th\rangle.
+\langle f,Tf\rangle_\pi=d\mu^2+\langle h,Th\rangle_\pi.
 \]
 The spectral hypothesis bounds the absolute value of the last term by
-$\Lambda|\Omega|(1-\mu)$. Divide by $d|\Omega|$.
+$\Lambda\mu(1-\mu)$. Divide by $d\mu$.
 \end{proof}
+
+Global transitivity is unnecessary: only constancy on the orbit
+$\Omega$ enters the averaging identity. In Section~\ref{sec:minus11},
+the principal ideal-class fiber has probability $w=3/5$, and the inert
+bad orbit has conditional density $\mu_p=2/(p(p-1))$ in that fiber.
+Thus its measure in the proposition is $\mu=w\mu_p$.
+The orthogonality to norm characters and the separate ramified
+calculation are checked there explicitly.
 
 \begin{proposition}\label{prop:arithmetic-criterion}
 For each admissible positive integer $n\ge n_0$, let $\mathcal R_n$ be a finite

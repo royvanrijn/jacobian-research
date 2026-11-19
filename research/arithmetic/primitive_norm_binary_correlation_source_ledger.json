@@ -14,7 +14,7 @@
     },
     {
       "path": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
-      "sha256": "9c041ba7bca7c88f9a7d6f227c358cf9d1687cd22b19e4bab5d3cd52b44bce0a",
+      "sha256": "9e8a3519c466f0f5317ee4860f2133774fb642e9b9cf309b6d805cde6f8e199f",
       "locator": "ModulesD/I/G/P/E/C/F/H and J; explicit shrinking-cutoff, target-dyad and logarithmic-error budget J.1-J.11"
     },
     {
@@ -638,5 +638,11 @@
       "sha256": "7cea3436eb478af79ac0b8247870bc416d681c6f284e5b435a2e0ad08497af27",
       "locator": "Walsh v2 indicator proposal and present completed application scope"
     }
-  ]
+  ],
+  "sharp_prime_range": {
+    "source": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md, PP-sharp PS1-PS2; manuscript lem:gr-primes",
+    "domain": "Fixed a,B,B1>0; q<=x^B and exp((log x)^a)<=P<=x^B1; every real t; nonzero target divisors removed only for |k|<=x^B. Perron endpoint X is comparable toP, so log(qX)=O_(B,B1)(log x).",
+    "application": "All selected banks satisfy P<=exp((log x)^(2/5))<x for sufficiently large x, soB1=1. The existing smooth high-frequency estimate is unchanged.",
+    "assurance": "Range alignment and application-scope clarification only; no new analytic input, import-proof validation or assurance."
+  }
 }

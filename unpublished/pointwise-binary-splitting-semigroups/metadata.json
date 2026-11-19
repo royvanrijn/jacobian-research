@@ -33,5 +33,12 @@
     "remaining_obligation": "Weighted prime/cofactor energy from that height through x*(log x)^C. Small character modulus alone does not control this height range.",
     "walsh_attribution": "Walsh v2 Section1.2.4 explicitly anticipates sums-of-two-squares indicator correlations; p2 says classical recovery is possible for his fixed-shift divisor theorem. His printed Lemma5.1 and Section6.4 still use the recent zero-free input. The supplied proof here retains it too."
   },
-  "editorial_scope": "CK/Smilansky first; explicit common-field primitive-form scope; separate count conventions and remainder strengths; shared graph with two frequency branches; one mixed prefix/Haar calculation. No theorem-strength or recent-dependency change."
+  "editorial_scope": "CK/Smilansky first; explicit common-field primitive-form scope; separate count conventions and remainder strengths; shared graph with two frequency branches; one mixed prefix/Haar calculation. No theorem-strength or recent-dependency change.",
+  "review_edition": {
+    "pdf": "paper.pdf",
+    "sha256": "70c21e1f5abe2a6006b1aa31d3763685baa99cf84bc90662fc27f232414305a3",
+    "page_count": 71,
+    "scope": "Packaging and notation revision; mathematical statements and dependencies unchanged.",
+    "external_review_performed": false
+  }
 }

@@ -40,9 +40,41 @@ Its proof uses only fixed-character means, fixed-progression prime
 Mertens, the classical Weil--Estermann bound, and finite sieve inequalities.
 \end{lemma}
 
-We prove the full shifted weighted family first.  Its uniformity,
-rather than a single weighted convolution, is necessary for restoring
-small prime factors.
+\paragraph{Proof mechanism.}
+Completed two-factor boxes first give a progression estimate for a
+uniform family of shifted divisor weights. The shifts must remain
+available after small divisibility and exact-valuation conditions;
+a single weighted convolution would not suffice. A finite lower sieve
+then retains a fixed fraction of the rough weighted mass, with
+guaranteed lower-bound scale \(NJ(N)/(\log N)^2\). The missing logarithm is recovered by
+restoring small split primes: the two one-sided choices contribute
+the positive Euler factors \(1+2a_p\), with
+\(a_p=(p-1)/(p(p-2))\). Their product up to \(N^\omega\) has order
+\(\log N\), as shown in \eqref{eq:older-restoredmass}.
+
+Restoration also has to produce distinct numerical pairs. Its
+squarefree, pairwise coprime labels \(d,u,v\) are recovered from the
+small-prime valuation patterns \((1,1),(1,0),(0,1)\) of the final
+pair. Thus different labels cannot count the same pair. After the
+prescribed factors of two are removed from the divisor weights,
+the remaining factors are rough and their divisor weights are
+bounded by a fixed constant. Injectivity therefore converts the
+restored weighted mass into an unweighted lower bound at the required
+scale. The final subsection proves these assertions, including the
+size cap on \(duv\), in the positive cofactor model itself.
+
+\paragraph{Order of choices.}
+First choose the box truncation exponent \(\lambda\) small and the
+core family exponent still smaller; set \(\zeta=\lambda/100\).
+The reserve in \eqref{eq:older-uniform-reserve} then permits a positive
+saving \(\eta\), followed by a smaller external family exponent
+\(\theta\). Choose \(\alpha,\xi>0\) to satisfy
+\eqref{eq:older-smallbudgets}. Next fix the Bonferroni depth \(s\),
+then the roughness exponent \(\gamma<\xi/(4s+7)\), and finally
+\(\omega<\min(\gamma,\alpha/(4C_1))\), where \(C_1\) is the uniform
+cofactor-mass constant below. Only after these fixed choices does
+\(N\) tend to infinity. This order leaves room both for the summed
+sieve errors and for retaining the capped restoration mass.
 
 \subsection{Two-factor boxes with a fixed period}
 

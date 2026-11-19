@@ -40,13 +40,13 @@ divides both coordinates. Primitivity permits the ramified
 prime ideal of norm two to exponent at most one.
 For split primes, orient each full prime power to one of the two
 conjugate principal prime ideals. These observations prove
-\[
-                        P=C\mathbin{\dot\cup}2C.               \label{eq:m8-value}\tag{8.1}
-\]
+\begin{equation}
+                        P=C\mathbin{\dot\cup}2C.               \label{eq:m8-value}
+\end{equation}
 Every \(C\)-value is \(1\) or \(3\pmod8\). Consequently
-\[
-                   P+P=(C+C)\cup2(C+C)\cup(C+2C).              \label{eq:m8-union}\tag{8.2}
-\]
+\begin{equation}
+                   P+P=(C+C)\cup2(C+C)\cup(C+2C).              \label{eq:m8-union}
+\end{equation}
 The first two terms have residues respectively \(2,4,6\pmod8\)
 and \(4,8,12\pmod {16}\), whereas the last has odd targets
 at least three. This proves every local exclusion in the theorem;
@@ -77,12 +77,12 @@ With \(\sigma(t)=0\) for nonpositive or nonintegral \(t\), define
      =q\prod_{j\ge1}(1-q^{4j})^2(1-q^{8j})^2 .
 \]
 Then
-\[
+\begin{equation}
 \begin{aligned}
  r(N)&=4\sigma(N)-4\sigma(N/2)+8\sigma(N/4)-32\sigma(N/8),\\
  s(N)&=\sigma(N)-\sigma(N/2)+8\sigma(N/16)-32\sigma(N/32)+a_N,\\
- G_2(N)&=r(N)-2s(N)+r(N/4).                                  \end{aligned}\label{eq:m8-theta}\tag{8.3}
-\]
+ G_2(N)&=r(N)-2s(N)+r(N/4).                                  \end{aligned}\label{eq:m8-theta}
+\end{equation}
 We include the modular verification, so these formulas do not
 depend on extrapolating a finite list of shell counts.
 
@@ -158,11 +158,11 @@ Write \(N=2^em\), \(m\) odd. For \(0\le e\le3\),
  r(N)=4c_e\sigma(m),\qquad (c_0,c_1,c_2,c_3)=(1,2,6,6),
 \]
 and
-\[
+\begin{equation}
  (G_2(m),G_2(2m),G_2(4m),G_2(8m))
    =(2\sigma(m)-2a_m,\ 4\sigma(m),\
-                               20\sigma(m),\ 16\sigma(m)).     \label{eq:m8-dyadic}\tag{8.4}
-\]
+                               20\sigma(m),\ 16\sigma(m)).     \label{eq:m8-dyadic}
+\end{equation}
 For \(e\ge4\), \(G_2(N)=0\).
 
 \subsection{The nonmaximal dyadic order and Hecke bound}
@@ -218,11 +218,11 @@ the projective unit image. To check this, local scalar
 corrections have even norm valuations and combine into one
 rational scalar, leaving an \(O\)-unit.
 For \(p\nmid n\), define concretely
-\[
+\begin{equation}
  (T_nh)(\Gamma_pg)
     =\frac14\sum_{\operatorname{nrd}\alpha=n}
-                             h(\Gamma_p\rho_p(\alpha)g).       \label{eq:m8-Hecke}\tag{8.5}
-\]
+                             h(\Gamma_p\rho_p(\alpha)g).       \label{eq:m8-Hecke}
+\end{equation}
 For odd \(m\), this is the all-integral-ideal operator, of degree
 \(\sigma(m)\). Inverse principal generators give the displayed
 orientation by quaternion conjugation. The global norm characters
@@ -232,11 +232,11 @@ additional dyadic character. At \(p\), central scalars and the
 reduction kernel leave only determinant square classes.
 Lemma~\ref{lem:hecke-transfer}, including its strong-approximation
 exclusion of finite-dimensional split-place factors, therefore yields
-\[
+\begin{equation}
              \|T_m\|_{\{1,\chi_p\}^{\perp}}
                                   \le\tau(m)\sqrt m
-                  \quad(m\ {\rm odd},\ p\nmid m).             \label{eq:m8-Ramanujan}\tag{8.6}
-\]
+                  \quad(m\ {\rm odd},\ p\nmid m).             \label{eq:m8-Ramanujan}
+\end{equation}
 All primes dividing \(m\) have maximal split local level.
 No unramified theorem at two has been used.
 
@@ -245,9 +245,9 @@ For \(0\le e\le3\), let \(A_e=T_{2^e}\) be given by
 row sum \(c_e\), and norm at most \(c_e\).
 It has \(\chi_p\)-eigenvalue
 \((2/p)^ec_e\). Coprime local factorization gives
-\[
-                       T_{2^em}=A_eT_m=T_mA_e.                \label{eq:m8-factor}\tag{8.7}
-\]
+\begin{equation}
+                       T_{2^em}=A_eT_m=T_mA_e.                \label{eq:m8-factor}
+\end{equation}
 For example, for \(\alpha\in O\) of norm \(2^em\), the right
 superideal with localization \(O_2\) at two and
 \(\alpha O_\ell\) at odd primes is integral, locally principal,
@@ -283,11 +283,11 @@ The operator commutes with the right action and is constant on
 the support of \(u\). Thus
 \(\langle u,T_Nu\rangle=\mu_pb_p(N)/4\).
 Equations \eqref{eq:m8-Ramanujan}--\eqref{eq:m8-factor} give
-\[
+\begin{equation}
                   \frac{b_p(N)}{r(N)}
                       \le\mu_p+(1-\mu_p)E(m)
-                      \le\mu_p+E(m).                          \label{eq:m8-small}\tag{8.8}
-\]
+                      \le\mu_p+E(m).                          \label{eq:m8-small}
+\end{equation}
 If \(p\mid N\), anisotropy forces both blocks divisible by \(p\).
 The spoiled count is zero at valuation one; otherwise its ratio
 is \(\sigma(m/p^2)/\sigma(m)<p^{-2}\le\mu_p\).
@@ -305,18 +305,18 @@ In the \(G_2\)-shell both blocks are nonzero, and
 \(r_Q(t)\le2M(N)\). Choose the divisible block, count its
 quotient vector, and use this bound for the other block.
 The large-\(p\) spoiled proportion is at most
-\[
+\begin{equation}
                     L_eM(N)p^{-2},\qquad
-               L_e=\frac{4\cdot2^e}{c_e}\le\frac{16}{3}.       \label{eq:m8-coarsetail}\tag{8.9}
-\]
+               L_e=\frac{4\cdot2^e}{c_e}\le\frac{16}{3}.       \label{eq:m8-coarsetail}
+\end{equation}
 Also
-\[
+\begin{equation}
 \begin{aligned}
  B:=\sum_{p\in\mathcal I}\mu_p&<3/16,\\
  \Pi(P):=\#\{p\in\mathcal I:p\le P\}&\le P/4+1,\\
  \sum_{\substack{p\in\mathcal I\\p>P}}p^{-2}
-                    &\le1/(4P)+2/P^2.                       \end{aligned}\label{eq:m8-progression}\tag{8.10}
-\]
+                    &\le1/(4P)+2/P^2.                       \end{aligned}\label{eq:m8-progression}
+\end{equation}
 The last two statements follow from the progressions \(5,7\pmod8\).
 For the first, sum inert primes below \(64\) exactly and bound
 the rest by
@@ -329,20 +329,20 @@ The resulting bound is
 
 By \eqref{eq:m8-dyadic}, \(G_2(N)/r(N)\ge1/2-E(m)/2\).
 A sufficient condition for a positive surviving shell is
-\[
+\begin{equation}
  B+E(m)(P/4+3/2)
-      +L_eM(N)\{1/(4P)+2/P^2\}<1/2.                          \label{eq:m8-coarse}\tag{8.11}
-\]
+      +L_eM(N)\{1/(4P)+2/P^2\}<1/2.                          \label{eq:m8-coarse}
+\end{equation}
 Surviving norms are positive, have no inert factor, and satisfy
 the dyadic condition in \eqref{eq:m8-value}; their values lie in \(P\).
 
 The complete finite Euler products give
-\[
+\begin{equation}
 \begin{aligned}
  M(X)&\le6X^{1/6},& M(X)&\le2X^{1/4},\\
  \tau(m)&\le7m^{1/6}\quad(m\ {\rm inert\!-\!supported}),&
- \tau(m)&\le42m^{1/6}\quad(m\ {\rm odd}).                       \end{aligned}\label{eq:m8-Euler}\tag{8.12}
-\]
+ \tau(m)&\le42m^{1/6}\quad(m\ {\rm odd}).                       \end{aligned}\label{eq:m8-Euler}
+\end{equation}
 For the sixth-power bounds, maximize
 \((a+1)^6/p^a\) at each odd prime below \(64\), over \(0\le a\le6\).
 The factors decrease afterwards, and factors at primes at least
@@ -360,11 +360,11 @@ For arbitrary odd \(m\), use \(P=m^{1/4}\) in
                       \frac{45}{2}m^{-1/12}+159m^{-1/3}.
 \]
 If \(m\ge2^{75}\), use \(m^{1/12}>224/3\) to obtain
-\[
+\begin{equation}
                     \frac3{16}+\frac{135}{448}
                                     +\frac{159}{2^{25}}<\frac12.
-                                                                    \label{eq:m8-globalnumeric}\tag{8.13}
-\]
+                                                                    \label{eq:m8-globalnumeric}
+\end{equation}
 This proves the stated global onset \(N\ge2^{78}\).
 The margin is
 \(2620327/234881024>1/100\).
@@ -381,11 +381,11 @@ The error after \(B\) is at most
                                  +\frac{69}{2}m^{-1/3}.
 \]
 For \(m\ge2^{60}\), its total with \(B\) is bounded by
-\[
+\begin{equation}
                   \frac3{16}+\frac{19}{64}
                                       +\frac{69}{2^{21}}<\frac12.
-                                                                    \label{eq:m8-coretail}\tag{8.14}
-\]
+                                                                    \label{eq:m8-coretail}
+\end{equation}
 Thus all \(2^em\), \(0\le e\le3\), in this family lie in \(P+P\).
 At \(m\) the two values must be in different parity classes;
 at \(2m\) both are in \(C\); at \(8m\) both are in \(2C\),
@@ -397,9 +397,9 @@ For an odd prime \(n\), use \(E(n)\le2n^{-1/2}\),
 The error after \(B\) is at most \(2n^{-1/8}+7n^{-1/2}\).
 For \(n\ge2^{22}\), it is dominated by
 \(3/10+7/2048\), and
-\[
-                         3/16+3/10+7/2048<1/2.               \label{eq:m8-prime}\tag{8.15}
-\]
+\begin{equation}
+                         3/16+3/10+7/2048<1/2.               \label{eq:m8-prime}
+\end{equation}
 Every such prime lies in \(P+P\); since it is odd,
 it lies in \(C+2C\). The finite mixed-core coverage below will
 supply all smaller odd primes, so no separate prime-family
@@ -408,12 +408,12 @@ search is required.
 \subsection{Sharper selected shells}
 
 The improved lattice bounds are
-\[
+\begin{equation}
 \begin{aligned}
  S_Q(X)&:=\#\{(x,y):0<Q(x,y)\le X\}\le\tfrac83 X,\\
  S_o(X)&:=\#\{(x,y):Q(x,y)\le X,\ Q(x,y)\ {\rm odd}\}\le2X.
-                                                               \end{aligned}\label{eq:m8-pointsharp}\tag{8.16}
-\]
+                                                               \end{aligned}\label{eq:m8-pointsharp}
+\end{equation}
 For the first, use the preceding row bound and
 \(\pi<22/7\), \(7/5<\sqrt2<10/7\).
 At integer \(X\ge81\) the ratio is at most
@@ -429,15 +429,15 @@ The point table checks \(1\le X\le24\).
 Both counts vanish below one, and flooring proves the real bounds.
 
 For odd \(m\), sieve the following selected subsets:
-\[
+\begin{equation}
 \begin{array}{c|c|c|c|c}
  N&\text{selected subset}&\text{proportion at least}
                                       &\mathcal L&\delta\\ \hline
  m&G_2(m)&1/2-E(m)/2&8/3&1/2\\
  2m&\text{both field norms odd}&1/2&2&0\\
  4m&\text{both field norms odd}&2/3&4/3&0
-\end{array}                                                    \label{eq:m8-selected}\tag{8.17}
-\]
+\end{array}                                                    \label{eq:m8-selected}
+\end{equation}
 The even subset sizes are exact. Multiplication of both components
 by \(\varpi\) bijects the full shell of norm \(N/2\) with the part
 of the norm-\(N\) shell having both norms even.
@@ -456,11 +456,11 @@ full shells \(8\sigma(m)\) and \(24\sigma(m)\) gives \(2\) and
 in the full shell, not in the selected subset.
 Consequently, with \(\lambda\) the third-column constant
 \(1/2,1/2,2/3\), a sufficient condition in each row is
-\[
+\begin{equation}
        B+E(m)(\Pi(P)+\delta)+\mathcal L M(N)T(P)<\lambda,
        \quad T(P)=\sum_{\substack{p\in\mathcal I\\p>P}}p^{-2}.
-                                                               \label{eq:m8-selectedtest}\tag{8.18}
-\]
+                                                               \label{eq:m8-selectedtest}
+\end{equation}
 This follows by subtracting the union of all bad events from the
 selected subset; no Hecke stability of that subset is needed.
 After sieving the rows give respectively \(C+2C,C+C,C+C\).
@@ -468,9 +468,9 @@ After sieving the rows give respectively \(C+2C,C+C,C+C\).
 \subsection{The complete interval and finite certificates}
 
 For inert-supported odd \(m\), a sharper bound is
-\[
-                         E(m)<\frac{18}{5}m^{-1/3}.            \label{eq:m8-Esharp}\tag{8.19}
-\]
+\begin{equation}
+                         E(m)<\frac{18}{5}m^{-1/3}.            \label{eq:m8-Esharp}
+\end{equation}
 Raise the normalized prime-power factors to the sixth power:
 they are
 \((a+1)^6p^{5a}/\sigma(p^a)^6\).
@@ -491,12 +491,12 @@ states. The product of the first thirteen split primes exceeds
 and exponent range.
 
 Set \(R_0=65536\), \(D_0=2^{64}\). For \(P<R_0\), define
-\[
+\begin{equation}
  V(P)=\frac1{D_0}
        \sum_{\substack{p\in\mathcal I\\P<p\le R_0}}
                     \left\lceil D_0/p^2\right\rceil
-                   +\frac1{4R_0}+\frac2{R_0^2}\ge T(P).       \label{eq:m8-V}\tag{8.20}
-\]
+                   +\frac1{4R_0}+\frac2{R_0^2}\ge T(P).       \label{eq:m8-V}
+\end{equation}
 The prime list is a complete Eratosthenes sieve; the final two
 terms majorize all larger primes by the two progressions.
 Thus \(\Pi(P)\) is exact and \(V(P)\) is an upward rational bound.
@@ -511,11 +511,11 @@ For \(N=fm\), \(f=1,2,4\), and \(2^k\le m<2^{k+1}\), put
 All of these quantities are obtained by integer and rational
 operations, using squared comparisons for square roots.
 The certificate verifies
-\[
+\begin{equation}
  \frac3{16}+e_k(\Pi(P)+\delta)
                       +\mathcal Ld_{f,k}V(P)
-                            <\lambda-\frac1{256}              \label{eq:m8-intervalcert}\tag{8.21}
-\]
+                            <\lambda-\frac1{256}              \label{eq:m8-intervalcert}
+\end{equation}
 on every interval in the following table:
 \[
 \begin{array}{c|c|c|c}
@@ -526,14 +526,8 @@ on every interval in the following table:
 \end{array}
 \]
 There are \(107\) tests, with all exact inputs and fractions in
-the submitted certificate. The minimum margins for these rows are
-respectively
-\[
- \frac{2099881132899631}{270215977642229760},\quad
- \frac{2121064135193247}{457115362178105344},\quad
- \frac{2577393383109722873}{109167254967460823040},
-\]
-each greater than \(1/256\).
+the submitted certificate. Each row has minimum margin greater than
+\(1/256\); Appendix~\ref{app:verifier} records the three exact minima.
 Together with \eqref{eq:m8-coretail}, these tests cover all
 inert cores above the finite ranges below.
 

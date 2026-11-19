@@ -63,19 +63,23 @@ conductors and polynomial height.
 \begin{lemma}[Prime factor estimate]\label{lem:gr-primes}
 Assume the fixed all-conductor zero-free half-plane stated in
 Section~\ref{sec:inputs}.
-Fix \(\sigma_1\in(11/12,1)\).
+Fix \(\sigma_1\in(11/12,1)\) and \(a,B,B_1>0\).
 For \(q\le x^B\), every character \(\chi\bmod q\), and
-\(P\ge\exp(L^a)\), uniformly on subintervals \(I\subset[P,2P]\),
+\(\exp(L^a)\le P\le x^{B_1}\), uniformly on subintervals
+\(I\subset[P,2P]\),
 \begin{equation}
  \sum_{p\in I}\chi(p)p^{it}
  =\delta_\chi\int_I\frac{u^{it}}{\log u}\,du
        +O((1+|t|)P^{\sigma_1}L^C).                  \label{eq:gr-primes}
 \end{equation}
 Here \(\delta_\chi=1\) for a principal character and zero otherwise,
-and the estimate holds for every real \(t\).
+and the estimate holds for every real \(t\). The exponent \(C\)
+and implied constant may depend on \(a,B,B_1,\sigma_1\) and the
+fixed bank modulus \(L_0\).
 For progression banks the main vanishes unless \(\chi\) is induced
 from a character modulo \(L_0\).
-Removing target or modulus divisors preserves the error bound.
+Removing modulus divisors or prime divisors of a nonzero target
+\(|k|\le x^B\) preserves the error bound.
 \end{lemma}
 
 \begin{proof}
@@ -105,6 +109,8 @@ prime-weighted count by \(O(\log Z)\).  Therefore
        \sum_{p\le Z}\chi(p)\log p
           =\delta_\chi Z+O(Z^{\sigma_1}L^C).
 \]
+Here \(Z\asymp P\le x^{B_1}\) and \(q\le x^B\) give
+\(\log(qZ)\ll_{B,B_1}L\), justifying the displayed logarithmic cost.
 Partial summation against \(u^{it}/\log u\) proves
 \eqref{eq:gr-primes} with its linear \(1+|t|\) growth.
 
@@ -114,6 +120,12 @@ character is induced from \(L_0\).
 There are at most \(O(\log(q(2+|k|)))=O(L)\) deleted prime divisors;
 their absolute unweighted contribution is absorbed by the error.
 \end{proof}
+
+Every prime scale used below lies in one of the two bank ranges,
+so \(P\le\exp(L^{2/5})\le x\) for large \(x\). Thus \(B_1=1\)
+suffices for both comparison geometries; in the reflected application
+the conductors are at most \(xL^{O(1)}\), and in the fixed-shift
+application they are polynomial logarithmic.
 
 In particular, for a nonexceptional character the prime factor saves
 \(P^{\sigma_1-1}\) against its trivial length.  The all-height form
