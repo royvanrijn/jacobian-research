@@ -1,6 +1,6 @@
 # Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 
-Hexagon submission: [hexagon:2611.00672](https://hexagonmath.org/2611.00672), pending moderation. The author reported this submission on 19 November 2026; the public record and uploaded files have not been independently verified.
+**Published preprint · [Hexagon v1](https://hexagonmath.org/2611.00672v1) · 19 November 2026 · [Deposited files](published/)**
 
 Reserved Zenodo draft DOI: [doi:10.5281/zenodo.24371355](https://doi.org/10.5281/zenodo.24371355), version 1 (2026). This records the author-supplied reservation, not a verified public deposit.
 
@@ -126,8 +126,8 @@ four-discriminant classification scope and certificate bytes.
 Use the TeX-only archive for repository submission; its 19 TeX files include
 `main.tex` and build independently. A fresh extraction reproduced the current
 69-page PDF byte for byte. The full archive also retains the README, metadata,
-verification record and source manifest. The Hexagon submission is pending;
-no verified public deposit is recorded.
+verification record and source manifest. The exact public Hexagon v1 files and
+checksums are preserved in the [deposited edition](published/).
 
 The [exact companion](../eisenstein-restricted-prime-sums/) evolves the existing
 Eisenstein manuscript and retains its proofs and certificates while integrating

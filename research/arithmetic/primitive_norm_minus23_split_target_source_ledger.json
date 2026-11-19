@@ -1,0 +1,122 @@
+{
+  "title": "Discriminant -23 split target coordinate-gcd operator estimate",
+  "proof": "PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+  "checkers": [
+    "verify_primitive_norm_minus23_split_targets.py"
+  ],
+  "receipts": [
+    "primitive_norm_minus23_split_target_checks.json"
+  ],
+  "reproduction": [
+    "python3 research/arithmetic/verify_primitive_norm_minus23_split_targets.py"
+  ],
+  "artifact_sha256": {
+    "PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+    "verify_primitive_norm_minus23_split_targets.py": "fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+    "primitive_norm_minus23_split_target_checks.json": "70aead73910732a9d74593456e5d04b160362b084149e9d52e5c4d8853adda88"
+  },
+  "result": {
+    "name": "CN3SplitTargetGcd",
+    "scope": "Let Q=x^2+xy+6y^2, O=Z[(1+sqrt(-23))/2] plus its j-copy, j^2=-1. For a split prime p!=23, N=p^t m with t>=1 and gcd(m,23p)=1, b counts signed ordered norm-N elements outside pO whose first or second binary block is divisible by p; zero blocks are included.",
+    "bound": "With w=3/11, abs(b - 16w*p^(t-1)*sigma(m)/(p+1)) <= 16t*p^(t/2)*tau(m)*sqrt(m). At t=1 the error improves to 8*tau(m)*sqrt(m).",
+    "normalization": "Principal maximal mass w=3/11; principal Iwahori axis-orbit mass 2w/(p+1); b=8(V_t T_m f)(x_A), V_t=B^(t-1)F degree p^(t-1). Rank-one bad density 4/(p+1)^2 against the p-primitive baseline.",
+    "limits": [
+      "Not a numerical value-pair count.",
+      "Not the complete separately primitive -23 sumset or an all-prime lower sieve.",
+      "The pO branch for target valuations at least two is not included in b.",
+      "No historical priority or external-review assertion."
+    ]
+  },
+  "proof_dependencies": [
+    {
+      "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+      "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+      "scope": "Commuting self-adjoint all-integral-ideal T_m of degree sigma(m), complementary norm tau(m)sqrt(m) after removing all global reduced-norm characters; unramified local roots of magnitude sqrt(p).",
+      "hypotheses_checked": "At fine Iwahori-p level this is applied only to m prime23p. For the compression P0FP0=T_p/(p+1) it is applied at coarser maximal-p level. The Iwahori nonspherical joint-projection kernel and two-frame bound are proved separately in S3-S5. All compact unit norm images are full local units, so over Q the only global norm character is constant."
+    }
+  ],
+  "primary_source_audit": [
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "edition": "Author edition1.0.7u, 5August2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "inspected_statements": [
+        "Theorem25.1.1: maximal definite inverse-projective-unit mass; here discriminant23 gives11/6.",
+        "Proposition23.5.8 and23.5.12: regular tree and lattice/coset model.",
+        "Lemma23.5.15 and23.5.16: lattice distance, Eichler edge paths and endpoint-reversing normalizer.",
+        "Propositions41.3.1 and41.3.6: all-integral-ideal degrees, coprime composition and local recurrence."
+      ],
+      "inspection_scope": "Actual retained primary statements and the elementary tree arguments inspected; the split endpoint selection, full-space bound and signed-return normalization are proved in this note."
+    },
+    {
+      "authors": "H. Jacquet and R. P. Langlands",
+      "title": "Automorphic Forms on GL(2)",
+      "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+      "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+      "role": "Existing import through the shared proof: Theorem14.4 and Section5 Proposition5.20, cuspidal transfer, exclusion of finite-dimensional split-place factors, and weight-two infinite type.",
+      "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+      "inspection_limit": "Inherited pinned import; no fresh complete primary-proof revalidation is claimed in this application."
+    },
+    {
+      "author": "P. Deligne",
+      "title": "Formes modulaires et representations l-adiques",
+      "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+      "local_path": "sources/deligne-modular-355.pdf",
+      "role": "Existing import through the shared proof: Theorems4.9 and5.1, modular Frobenius-Hecke relation and purity interface.",
+      "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+      "inspection_limit": "Inherited pinned import; no fresh complete primary-proof revalidation is claimed in this application."
+    },
+    {
+      "author": "P. Deligne",
+      "title": "La conjecture de Weil.I",
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "local_path": "sources/deligne-weil-I.pdf",
+      "role": "Existing import through the shared proof: Theorem1.6 supplies the weight-two unramified root bound.",
+      "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+      "inspection_limit": "Inherited pinned import; no fresh complete primary-proof revalidation is claimed in this application."
+    }
+  ],
+  "closest_classical_comparisons": [
+    {
+      "author": "Jorg Brudern",
+      "title": "Sums of squares coprime in pairs",
+      "year": 2014,
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/85773",
+      "local_path": "sources/brudern-coprime-squares-2014.pdf",
+      "sha256": "9c8744c44fb31814ccfe62a81ce2e55f8b300b1421d4c96991449ae0b37b12f5",
+      "statement_inspected": "Theorem2, printedp219: power-saving four-square asymptotic with coordinate pairs coprime.",
+      "comparison": "A closely related analytic primitivity problem; its sum-of-squares form is different from Q23 plus Q23, so it does not directly settle the present target-dividing split-prime endpoint estimate."
+    },
+    {
+      "authors": "Zhi-Hong Sun and Kenneth S. Williams",
+      "title": "Ramanujan identities and Euler products for a type of Dirichlet series",
+      "year": 2006,
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/82058",
+      "statement_inspected": "Theorems7.1(i) and7.2, printedpp385-386: class-number-three ordinary representation Euler products.",
+      "comparison": "Classical ordinary form representation formulas do not enforce the whole-prime-power orientation needed for primitive binary coordinates. They are contextual, not an imported proof of the new endpoint estimate."
+    }
+  ],
+  "finite_verification": {
+    "checker_sha256": "fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+    "receipt_sha256": "70aead73910732a9d74593456e5d04b160362b084149e9d52e5c4d8853adda88",
+    "domains": [
+      "All rank-one and fixed unit-determinant matrix counts over F_p for p=2,3,13.",
+      "Higher-digit primitive target lifts at p=2 modulo8 and p=3 modulo9.",
+      "Primitive HNF endpoint degrees at p=2 through t=6, p=3 through t=5, p=13 through t=3.",
+      "Complete signed norm shells through256 at split primes2,3,13,59: axis symmetry, stabilizer factor and content branch.",
+      "Exact left-order unit and norm-two enumerations for O, I_(3,1), I_(2,0); total mass exhausts all three maximal ideal classes.",
+      "Unique weighted self-adjoint T2, six-state Iwahori F and B, and independent coordinate equality 8(B^(t-1)F)_(x_A,x_A)=b_2(2^t) for1<=t<=12."
+    ],
+    "negative_control": "The checker refuses Python optimization mode because its exact checks use assertions.",
+    "limit": "Finite calculations support the written infinite correspondence and normalization; they do not prove the unrestricted spectral bound or establish formal/external verification."
+  },
+  "internal_review": {
+    "root_scope": "Independent internal audit of S1-S6, including local rank-one mass, endpoint predecessor, operator frames and complement, mass and factor-eight normalization; passed before the explicit Brandt computation was added.",
+    "author_replay": "Portable combined exact checker passed on19November2026; source and receipt are pinned above.",
+    "independent_internal_review": "Separate internal reviewer passed the complete S1-S6 proof and three-class Brandt/Iwahori reconstruction after requesting explicit complementary-space notation in S5. The reviewer inspected the cited retained Voight statements and independently replayed the portable checker; its receipt matched byte for byte. Review receipt was /tmp/minus23_split_target_independent_review_checks.json; the retained author receipt is identical. The review applies only to CN3SplitTargetGcd, not a global -23 sieve completion."
+  },
+  "assurance": "Written proof with pinned classical deep imports and finite exact computational support. Internal AI review only; no external human review, formal verification or historical priority is claimed."
+}

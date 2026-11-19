@@ -1,13 +1,12 @@
 # Released and submitted papers
 
-Current PDFs, sources and verification records. Pending submissions are labelled
-explicitly; the `published/` archives preserve verified public deposits and their
-checksums.
+Current PDFs, sources and verification records. The `published/` archives preserve
+verified public deposits and their checksums.
 
 | Current paper | Result | Deposit or submission |
 |---|---|---|
-| [Pointwise Correlations of Quadratic Form Values and Splitting Semigroups](pointwise-binary-splitting-semigroups/) | CK/Smilansky asymptotics, common-field primitive-form genus comparison and explicit binary splitting counts. | [Hexagon 2611.00672 · pending](https://hexagonmath.org/2611.00672) |
-| [Exact Sumsets of Primitive Quadratic Norms](eisenstein-restricted-prime-sums/) | Complete four-discriminant primitive norm sumsets, independent classical proofs and finite certificates. | [Hexagon 2611.00673 · pending](https://hexagonmath.org/2611.00673) |
+| [Pointwise Correlations of Quadratic Form Values and Splitting Semigroups](pointwise-binary-splitting-semigroups/) | CK/Smilansky asymptotics, common-field primitive-form genus comparison and explicit binary splitting counts. | [Hexagon · 19 November 2026](https://hexagonmath.org/2611.00672v1) · [Deposited files](pointwise-binary-splitting-semigroups/published/) |
+| [Exact Sumsets of Primitive Quadratic Norms](eisenstein-restricted-prime-sums/) | Complete four-discriminant primitive norm sumsets, independent classical proofs and finite certificates. | [Hexagon · 19 November 2026](https://hexagonmath.org/2611.00673v1) · [Deposited files](eisenstein-restricted-prime-sums/published/) |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | Sharp ternary-cubic cutoff and the universal dimension–degree boundary. | [Hexagon · 19 November 2026](https://hexagonmath.org/2611.00596v1) |
 | [Prime Knots with Augmentation-Rank Gaps at Unbounded Bridge Number](prime-knot-augmentation-gaps/) | Hyperbolic prime knots with strict augmentation-rank gaps at bridge numbers five and six and every sufficiently large bridge number. | [Hexagon · 19 November 2026](https://hexagonmath.org/2611.00595v1) |
 | [Pointwise representation counts for Eisenstein restricted sums](eisenstein-pointwise-counts/) | Two-sided pointwise counts in prescribed summand windows. | [Hexagon · 19 November 2026](https://hexagonmath.org/2611.00593v1) |

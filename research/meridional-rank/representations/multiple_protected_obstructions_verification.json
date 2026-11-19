@@ -2,7 +2,7 @@
   "status": "passed",
   "python": "3.12.3",
   "sources": {
-    "research/meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+    "research/meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
     "research/meridional-rank/representations/verify_multiple_protected_obstructions.py": "be5d2c2ebae8f7ce562d077b5e1b494ec94232c5a1526d3ea661c8cda0158a94",
     "results/prime-knot-augmentation-gaps/representations.tex": "bf778455b9bb487cdfa6be6f14422b9421389fcd8d8f074072bfaa8e2a52f499"
   },

@@ -870,10 +870,12 @@ projections, plethysms other than ordinary powers, polarizations, block
 embeddings, and differential intertwiners have no automatic scalar
 radial-shift identity, so no moment-preservation claim is made for them.
 Theorem 5.5 supplies primitive witnesses in every even degree \(d\geq4\).
-The remaining primitive degree frontier is odd \(d\geq5\), beginning
-with degree five. Require \(F\bmod R\ne0\) from the start when seeking
-such a witness. Mixed-height or multiple-profile constructions are
-possible research directions; no cancellation theorem for them is claimed.
+The [nonlinear height-dilation construction](ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md)
+additionally supplies primitive, non-proper-power witnesses in every odd
+composite balanced degree, beginning with nine. Combined with Theorem 5.5,
+this supplies every composite balanced degree at least four. The remaining
+primitive degree frontier is odd prime degree, beginning with five and
+seven. Require \(F\bmod R\ne0\) when seeking such a witness.
 Invariant padding cannot solve this primitive question. A Cartan or
 trace-free projection would have to solve new moment identities rather
 than inherit them from the radial-shift lemma.

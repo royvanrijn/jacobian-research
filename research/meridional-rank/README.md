@@ -57,7 +57,9 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | A prime bridge-five knot with complex augmentation gap | Internal result | proved | [Source](representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md) |
 | Uniform augmentation-gap formulas and infinite prime families at bridge five and six | Internal result | proved | [Source](representations/UNIFORM_PROTECTED_AUGMENTATION_GAPS.md) |
 | Prime augmentation gaps at every sufficiently large bridge number | Internal result | proved | [Source](representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_FAMILIES.md) |
-| Multiple protected augmentation defects and a literal-coloring barrier | Internal result | proved | [Source](representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md) |
+| Multiple protected augmentation defects and explicit knot closures | Internal result | proved | [Source](representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md) |
+| A universal coloring obstruction for disjoint protected blocks | Internal result | proved | [Source](representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md) |
+| Two-sided protected defects give augmentation rank at most b-k | Internal result | proved | [Source](representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md) |
 
 **Computed obligations:** 7 unresolved; 3 resolved within their exact scope.
 
@@ -96,7 +98,8 @@ Scope limits:
 - Protected-tail rank-one obstructions give explicit knots with ar_C<=b-1<mr=br=b for every b>=5. Certified hyperbolic parents give infinite prime tails at bridges five and six and every sufficiently large bridge number through one fixed three-cusped parent. Uniform bridge/filling thresholds remain non-effective. The old five-strand S6 quotient obstruction does not affect the new protected families.
 - A three-meridian generating tuple gives the actual deck inversion on a two-generator branched-cover group. The geometric frontier is the existence of a compatible splitting into trivial three-string quotients. The trefoil test shows that orbifold generation of a specified triple can coexist with proper original lifts, and finite relative nilpotent stages do not detect that example.
 - The direct F13 braid trace certificate proves mr=b=4 for T(4,5;2,2), excluding EVERY meridian triple, including all309 survivors of the earlier bounded panel. No simplified-presentation, peripheral-software, hyperbolicity or preprint input is needed for this rank bound. The previous nilpotent-fibre and lifting counterchecks remain method barriers; the universal three-meridian frontier remains open.
-- Multiple disjoint protected U blocks supply an arbitrary-field sum-of-defects theorem and explicit band-tail knots. The augmentation upper bound does not supply a meridional lower bound or primeness. The literal old A8 seed has a seven-edge deficit that prevents its support-graph argument from certifying gap greater than one.
+- Multiple disjoint protected U blocks supply an arbitrary-field sum-of-defects theorem and explicit band-tail knots. The augmentation upper bound does not supply meridional rank or primeness. A complete tree-component census now proves v<=2b-k+1 for EVERY transitive double-transposition coloring of k disjoint protected blocks; changing the old local colors cannot overcome this support-graph barrier.
+- The signed seven-relation core now bounds each span separately, giving r,q<=b-k and ar_C<=b-k for the explicit protected knot family without a preserved form. Three blocks permit the conditional12-strand/22-symbol gap-two target. The universal coloring budget remains valid; no compatible global coloring or prime gap-two example is asserted.
 
 **Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 

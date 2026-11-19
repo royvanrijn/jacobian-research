@@ -2436,13 +2436,12 @@
   },
   "submission": {
     "venue": "Hexagon",
-    "identifier": "hexagon:2611.00672",
-    "url": "https://hexagonmath.org/2611.00672",
-    "status": "pending",
+    "identifier": "hexagon:2611.00672v1",
+    "url": "https://hexagonmath.org/2611.00672v1",
+    "status": "published",
     "reported_on": "2026-11-19",
-    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
-    "public_record_verified": false,
-    "uploaded_files_verified": false,
+    "provenance": "Published status, version and date verified against the public Hexagon API. The public PDF and every deposited LaTeX member match their recorded SHA-256; all LaTeX members match the current repository sources.",
+    "public_record_verified": true,
     "candidate_local_files": {
       "pdf": {
         "path": "paper.pdf",
@@ -2452,8 +2451,13 @@
         "path": "hexagon-source.zip",
         "sha256": "1e30db10753005f780dd87d965c385c71c8eeafe383b07a3fbca2bfb84fbb9de"
       },
-      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
-    }
+      "scope": "Current local review PDF and TeX-only archive. The uploaded source-archive SHA-256 matches Hexagon; Hexagon supplies its own compiled PDF, preserved under published/."
+    },
+    "publication_date": "2026-11-19",
+    "verified_on": "2026-11-19",
+    "public_files_verified": true,
+    "uploaded_source_archive_verified": true,
+    "deposited_files": "published/deposited-files.json"
   },
   "repository_relocation": {
     "date": "2026-11-19",
@@ -2466,5 +2470,24 @@
     "mathematical_computations_rerun": false,
     "review_assurances_changed": false,
     "public_deposit_asserted": false
+  },
+  "publication_verification": {
+    "date": "2026-11-19",
+    "record": "https://hexagonmath.org/2611.00672v1",
+    "api": "https://hexagonmath.org/api/v1/works/2611.00672v1",
+    "publication_date": "2026-11-19",
+    "published_status_and_version_verified": true,
+    "public_pdf_sha256_matches_api": true,
+    "public_source_members_sha256_match_api": true,
+    "public_source_members_match_current_repository": true,
+    "source_members_checked": 19,
+    "uploaded_source_archive_sha256_matches_local": true,
+    "public_pdf_sha256": "c90bc27ee0c18f95ef6b0450859573945896d183c18d3768e2455cf42ccdb401",
+    "local_review_pdf_sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c",
+    "deposited_files": "published/deposited-files.json",
+    "scope": "Public-record and byte-identity verification only. Hexagon supplies its own compiled PDF and regenerates the source-download ZIP. Historical submission and relocation receipts retain the status at the time they were recorded.",
+    "mathematical_content_changed": false,
+    "mathematical_computations_rerun": false,
+    "review_assurances_changed": false
   }
 }

@@ -23,4 +23,4 @@ local density recurrences and a cofactor sieve. The
 [exact companion](../eisenstein-restricted-prime-sums/) gives complete primitive
 norm sumsets at four discriminants. The [pointwise companion](../pointwise-binary-splitting-semigroups/)
 develops broader correlation asymptotics and common-field genus comparison.
-Both companion submissions are pending at Hexagon.
+Both companions are published preprints on Hexagon; their [pointwise](../pointwise-binary-splitting-semigroups/published/) and [exact-sumset](../eisenstein-restricted-prime-sums/published/) deposited editions preserve the public files.

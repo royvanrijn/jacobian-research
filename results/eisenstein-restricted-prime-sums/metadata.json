@@ -6,7 +6,7 @@
   },
   "summary": "Exact binary primitive norm-value sumsets at discriminants -3,-7,-8,-11, with complete finite certificates and classical quaternionic Hecke proofs.",
   "published": false,
-  "status": "submission-pending",
+  "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
@@ -64,7 +64,7 @@
     "policy_url": "https://hexagonmath.org/about",
     "policy_checked_on": "2026-11-19",
     "submission_performed": true,
-    "submission_provenance": "Author-reported Hexagon submission; public record and uploaded bytes not verified."
+    "submission_provenance": "Published Hexagon v1 record verified. The recorded original uploaded source-archive SHA-256 matches the local TeX-only archive; public deposited files are sealed under published/."
   },
   "shortening": {
     "pages_before": 36,
@@ -82,16 +82,15 @@
   },
   "companion": "../pointwise-binary-splitting-semigroups/metadata.json",
   "companion_doi": "10.5281/zenodo.24371355",
-  "hexagon": "https://hexagonmath.org/2611.00673",
+  "hexagon": "https://hexagonmath.org/2611.00673v1",
   "submission": {
     "venue": "Hexagon",
-    "identifier": "hexagon:2611.00673",
-    "url": "https://hexagonmath.org/2611.00673",
-    "status": "pending",
+    "identifier": "hexagon:2611.00673v1",
+    "url": "https://hexagonmath.org/2611.00673v1",
+    "status": "published",
     "reported_on": "2026-11-19",
-    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
-    "public_record_verified": false,
-    "uploaded_files_verified": false,
+    "provenance": "Published status, version and date verified against the public Hexagon API. The public PDF and every deposited LaTeX member match their recorded SHA-256; all LaTeX members match the current repository sources.",
+    "public_record_verified": true,
     "candidate_local_files": {
       "pdf": {
         "path": "paper.pdf",
@@ -101,7 +100,13 @@
         "path": "hexagon-source.zip",
         "sha256": "367d5e02f1a41b1700d3d585c82d16f28488c91de64bb7fc9cfc18be3cbd0ff5"
       },
-      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
-    }
-  }
+      "scope": "Current local review PDF and TeX-only archive. The uploaded source-archive SHA-256 matches Hexagon; Hexagon supplies its own compiled PDF, preserved under published/."
+    },
+    "publication_date": "2026-11-19",
+    "verified_on": "2026-11-19",
+    "public_files_verified": true,
+    "uploaded_source_archive_verified": true,
+    "deposited_files": "published/deposited-files.json"
+  },
+  "published_edition": "published/"
 }

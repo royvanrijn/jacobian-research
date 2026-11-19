@@ -1,0 +1,486 @@
+{
+  "checker_sha256": "fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+  "independent_brandt_two": {
+    "I2_unit_numerators_over2": [
+      [
+        -2,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0
+      ]
+    ],
+    "I2_norm2_numerators_over2": [
+      [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "I3_unit_numerators_over3": [
+      [
+        -1,
+        -1,
+        1,
+        0
+      ],
+      [
+        2,
+        -1,
+        1,
+        0
+      ],
+      [
+        -2,
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        -1,
+        0
+      ],
+      [
+        -3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "I3_norm2_numerators_over3": [],
+    "projective_mass": "11/6",
+    "complete_class_unit_counts": [
+      4,
+      6,
+      2
+    ],
+    "coarse_brandt_T2": [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "oriented_edge_classes": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "edge_weights": [
+      "1/11",
+      "2/11",
+      "2/11",
+      "2/11",
+      "2/11",
+      "2/11"
+    ],
+    "flip_matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "nonbacktracking_matrix": [
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "rank1_bad_return_controls": [
+      {
+        "t": 1,
+        "N": 2,
+        "brandt_return": 0,
+        "predicted_bad_count": 0,
+        "coordinate_bad_count": 0
+      },
+      {
+        "t": 2,
+        "N": 4,
+        "brandt_return": 0,
+        "predicted_bad_count": 0,
+        "coordinate_bad_count": 0
+      },
+      {
+        "t": 3,
+        "N": 8,
+        "brandt_return": 1,
+        "predicted_bad_count": 8,
+        "coordinate_bad_count": 8
+      },
+      {
+        "t": 4,
+        "N": 16,
+        "brandt_return": 2,
+        "predicted_bad_count": 16,
+        "coordinate_bad_count": 16
+      },
+      {
+        "t": 5,
+        "N": 32,
+        "brandt_return": 4,
+        "predicted_bad_count": 32,
+        "coordinate_bad_count": 32
+      },
+      {
+        "t": 6,
+        "N": 64,
+        "brandt_return": 3,
+        "predicted_bad_count": 24,
+        "coordinate_bad_count": 24
+      },
+      {
+        "t": 7,
+        "N": 128,
+        "brandt_return": 10,
+        "predicted_bad_count": 80,
+        "coordinate_bad_count": 80
+      },
+      {
+        "t": 8,
+        "N": 256,
+        "brandt_return": 28,
+        "predicted_bad_count": 224,
+        "coordinate_bad_count": 224
+      },
+      {
+        "t": 9,
+        "N": 512,
+        "brandt_return": 49,
+        "predicted_bad_count": 392,
+        "coordinate_bad_count": 392
+      },
+      {
+        "t": 10,
+        "N": 1024,
+        "brandt_return": 90,
+        "predicted_bad_count": 720,
+        "coordinate_bad_count": 720
+      },
+      {
+        "t": 11,
+        "N": 2048,
+        "brandt_return": 180,
+        "predicted_bad_count": 1440,
+        "coordinate_bad_count": 1440
+      },
+      {
+        "t": 12,
+        "N": 4096,
+        "brandt_return": 363,
+        "predicted_bad_count": 2904,
+        "coordinate_bad_count": 2904
+      }
+    ],
+    "scope": "Exact left-order units and norm2 elements, mass-complete maximal class list, unique coarse T2, induced six-state Iwahori flip/nonbacktracking matrices and actual rank1 coordinate count comparison at N=2^t through4096."
+  },
+  "local_rank_counts": [
+    {
+      "p": 2,
+      "rank1": 9,
+      "rank1_bad": 4,
+      "rank1_bad_density": "4/9",
+      "unit_bad_density": "1/3"
+    },
+    {
+      "p": 3,
+      "rank1": 32,
+      "rank1_bad": 8,
+      "rank1_bad_density": "1/4",
+      "unit_bad_density": "1/6"
+    },
+    {
+      "p": 13,
+      "rank1": 2352,
+      "rank1_bad": 48,
+      "rank1_bad_density": "1/49",
+      "unit_bad_density": "1/91"
+    }
+  ],
+  "path_cosets": [
+    {
+      "p": 2,
+      "t": 1,
+      "full_primitive_degree": 3,
+      "chosen_endpoint_degree": 1
+    },
+    {
+      "p": 2,
+      "t": 2,
+      "full_primitive_degree": 6,
+      "chosen_endpoint_degree": 2
+    },
+    {
+      "p": 2,
+      "t": 3,
+      "full_primitive_degree": 12,
+      "chosen_endpoint_degree": 4
+    },
+    {
+      "p": 2,
+      "t": 4,
+      "full_primitive_degree": 24,
+      "chosen_endpoint_degree": 8
+    },
+    {
+      "p": 2,
+      "t": 5,
+      "full_primitive_degree": 48,
+      "chosen_endpoint_degree": 16
+    },
+    {
+      "p": 2,
+      "t": 6,
+      "full_primitive_degree": 96,
+      "chosen_endpoint_degree": 32
+    },
+    {
+      "p": 3,
+      "t": 1,
+      "full_primitive_degree": 4,
+      "chosen_endpoint_degree": 1
+    },
+    {
+      "p": 3,
+      "t": 2,
+      "full_primitive_degree": 12,
+      "chosen_endpoint_degree": 3
+    },
+    {
+      "p": 3,
+      "t": 3,
+      "full_primitive_degree": 36,
+      "chosen_endpoint_degree": 9
+    },
+    {
+      "p": 3,
+      "t": 4,
+      "full_primitive_degree": 108,
+      "chosen_endpoint_degree": 27
+    },
+    {
+      "p": 3,
+      "t": 5,
+      "full_primitive_degree": 324,
+      "chosen_endpoint_degree": 81
+    },
+    {
+      "p": 13,
+      "t": 1,
+      "full_primitive_degree": 14,
+      "chosen_endpoint_degree": 1
+    },
+    {
+      "p": 13,
+      "t": 2,
+      "full_primitive_degree": 182,
+      "chosen_endpoint_degree": 13
+    },
+    {
+      "p": 13,
+      "t": 3,
+      "full_primitive_degree": 2366,
+      "chosen_endpoint_degree": 169
+    }
+  ],
+  "higher_lifts": [
+    {
+      "p": 2,
+      "h": 3,
+      "targets": {
+        "2": [
+          576,
+          256
+        ],
+        "4": [
+          576,
+          256
+        ]
+      }
+    },
+    {
+      "p": 3,
+      "h": 2,
+      "targets": {
+        "3": [
+          864,
+          216
+        ]
+      }
+    }
+  ],
+  "signed_global_controls": [
+    {
+      "p": 2,
+      "target_cases": 128,
+      "positive_rank1_bad_cases": 122,
+      "axis_case_factor": 4,
+      "edge_stabilizer_units": 2,
+      "total_return_factor": 8
+    },
+    {
+      "p": 3,
+      "target_cases": 85,
+      "positive_rank1_bad_cases": 79,
+      "axis_case_factor": 4,
+      "edge_stabilizer_units": 2,
+      "total_return_factor": 8
+    },
+    {
+      "p": 13,
+      "target_cases": 19,
+      "positive_rank1_bad_cases": 12,
+      "axis_case_factor": 4,
+      "edge_stabilizer_units": 2,
+      "total_return_factor": 8
+    },
+    {
+      "p": 59,
+      "target_cases": 4,
+      "positive_rank1_bad_cases": 2,
+      "axis_case_factor": 4,
+      "edge_stabilizer_units": 2,
+      "total_return_factor": 8
+    }
+  ],
+  "scope": "Exact finite local densities and lifts, primitive HNF path degrees, signed shell controls, and a mass-complete three-class Brandt computation with actual Iwahori returns at p=2 through N=4096. These computations do not prove the spectral norm bound or unrestricted global correspondence."
+}

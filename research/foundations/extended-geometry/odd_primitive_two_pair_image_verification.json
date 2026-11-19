@@ -1,0 +1,238 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "arithmetic": "integers in original four-variable balanced monomials; Fraction over Q",
+  "finite_angular_parameter_cases": 200,
+  "literal_endpoint_taylor_coefficients_checked": 1500,
+  "original_contraction_records": [
+    {
+      "r": 1,
+      "s": 0,
+      "balanced_degree": 9,
+      "marker_balanced_degree": 2,
+      "F_expanded_support": 50,
+      "F_matrix_sha256": "a925dda8761958c033770dfca8a6274684654430233b15095156c60eb658c70d",
+      "R_zero_value": "-8",
+      "F_over_T_at_T_zero": "1728",
+      "moments": [
+        {
+          "m": 1,
+          "expanded_support": 50,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 2,
+          "expanded_support": 200,
+          "pure": "0",
+          "marked": "3892643213082624000",
+          "marked_angular_value": "8/105"
+        },
+        {
+          "m": 3,
+          "expanded_support": 428,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 4,
+          "expanded_support": 763,
+          "pure": "0",
+          "marked": "173888039053831018974755648531972751360000000",
+          "marked_angular_value": "128/15015"
+        },
+        {
+          "m": 5,
+          "expanded_support": 1158,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 6,
+          "expanded_support": 1678,
+          "pure": "0",
+          "marked": "42784424629028628706501894752474252131995882374937797596282880000000000000",
+          "marked_angular_value": "1024/969969"
+        }
+      ]
+    },
+    {
+      "r": 1,
+      "s": 1,
+      "balanced_degree": 15,
+      "marker_balanced_degree": 2,
+      "F_expanded_support": 126,
+      "F_matrix_sha256": "58ba70706fa6662105d554f13cd123f3fc394f0a1d80573566c5fc78428a8fba",
+      "R_zero_value": "-32",
+      "F_over_T_at_T_zero": "110592",
+      "moments": [
+        {
+          "m": 1,
+          "expanded_support": 126,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 2,
+          "expanded_support": 496,
+          "pure": "0",
+          "marked": "1202883825982598995050139484160000000",
+          "marked_angular_value": "32/231"
+        },
+        {
+          "m": 3,
+          "expanded_support": 1074,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 4,
+          "expanded_support": 1915,
+          "pure": "0",
+          "marked": "58326249083506331269264791477772999866288824500257791429457166128088350720000000000000",
+          "marked_angular_value": "2048/69615"
+        }
+      ]
+    },
+    {
+      "r": 1,
+      "s": 2,
+      "balanced_degree": 21,
+      "marker_balanced_degree": 2,
+      "F_expanded_support": 236,
+      "F_matrix_sha256": "06f3bad38363b626957a76fe6ce61b3033de925ff007454d896ad37adc46651d",
+      "R_zero_value": "-128",
+      "F_over_T_at_T_zero": "7077888",
+      "moments": [
+        {
+          "m": 1,
+          "expanded_support": 236,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 2,
+          "expanded_support": 920,
+          "pure": "0",
+          "marked": "12322058048969432850871552210896920810272849920000000000",
+          "marked_angular_value": "928/9009"
+        },
+        {
+          "m": 3,
+          "expanded_support": 2012,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        }
+      ]
+    },
+    {
+      "r": 2,
+      "s": 0,
+      "balanced_degree": 25,
+      "marker_balanced_degree": 4,
+      "F_expanded_support": 370,
+      "F_matrix_sha256": "acc71a8952d7311df63f738aa3428880237b29e0e41fe028576f2cd93287506a",
+      "R_zero_value": "32",
+      "F_over_T_at_T_zero": "764411904",
+      "moments": [
+        {
+          "m": 1,
+          "expanded_support": 370,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 2,
+          "expanded_support": 1461,
+          "pure": "0",
+          "marked": "469015766022585661911553508943294132994597718495101848649728000000000000",
+          "marked_angular_value": "128/3465"
+        },
+        {
+          "m": 3,
+          "expanded_support": 3206,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        }
+      ]
+    },
+    {
+      "r": 2,
+      "s": 1,
+      "balanced_degree": 35,
+      "marker_balanced_degree": 4,
+      "F_expanded_support": 684,
+      "F_matrix_sha256": "860033fcdbeb2de69a97cc65db944b7804f4ac5e6f927cc4f38013f4cbf2a370",
+      "R_zero_value": "128",
+      "F_over_T_at_T_zero": "782757789696",
+      "moments": [
+        {
+          "m": 1,
+          "expanded_support": 684,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 2,
+          "expanded_support": 2721,
+          "pure": "0",
+          "marked": "1409954500547723812085314272804544925562685855247408468526084803028059879111700312313823232000000000000000000",
+          "marked_angular_value": "512/9009"
+        }
+      ]
+    },
+    {
+      "r": 3,
+      "s": 0,
+      "balanced_degree": 49,
+      "marker_balanced_degree": 6,
+      "F_expanded_support": 1358,
+      "F_matrix_sha256": "fca0be37488dd2ee75b7a3ff1469d0cc32d43db2a0c84a6c6fc6a7cde0e2f1a9",
+      "R_zero_value": "-128",
+      "F_over_T_at_T_zero": "86566749478060032",
+      "moments": [
+        {
+          "m": 1,
+          "expanded_support": 1358,
+          "pure": "0",
+          "marked": "0",
+          "marked_angular_value": "0"
+        },
+        {
+          "m": 2,
+          "expanded_support": 5412,
+          "pure": "0",
+          "marked": "24583200808925693908673542838040571901741405580230885582054320698212542317143809013360687432644059010055078976785635661444904558943300239753216000000000000000000000000",
+          "marked_angular_value": "1024/45045"
+        }
+      ]
+    }
+  ],
+  "negative_controls": {
+    "altered_original_coefficient_rejected": true,
+    "incorrect_radial_factor_rejected": true,
+    "quartic_marker_does_not_claim_new_survival": true,
+    "new_marker_does_survive": true
+  },
+  "scope": "Original contractions in the six listed finite parameter/order ranges; angular identities at r=1..4,s=0..4,m=1..10. The all-r,s,m theorem uses the written endpoint, radial, primitivity and multiplicity proofs.",
+  "independent_external_review": false,
+  "formal_verification": false,
+  "worldwide_priority_established": false,
+  "odd_prime_degree_result": false,
+  "source_sha256": {
+    "research/foundations/extended-geometry/verify_odd_primitive_two_pair_image.py": "506203187ec8e26e77bce8cfe5284f1e8f55c00f1af6dacfca80025a11924b09",
+    "research/foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+    "research/foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json": "d9832f95cd88a037cae6b18d5a16d9108018029ad9b4d981ae7506caf171851b",
+    "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+  }
+}

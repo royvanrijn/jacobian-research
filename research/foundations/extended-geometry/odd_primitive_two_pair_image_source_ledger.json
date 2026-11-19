@@ -1,0 +1,60 @@
+{
+  "statement": "Every odd composite balanced degree d admits an explicit rational two-pair Image witness F_d with R not dividing F_d, no proper-power representation even up to scalar over field extensions, all pure contractions zero and one fixed marker surviving at every even positive moment order.",
+  "proof": "ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+  "proof_labels": ["OddCompositeImage", "NonlinearHeightMoments", "O1-O17"],
+  "domain": "Every characteristic-zero field; two contraction pairs; balanced degree d means bidegree(d,d), ordinary degree2d.",
+  "logical_inputs": [
+    {
+      "source": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "location": "Sections2 and4, original contraction, Hopf angular functional and Gamma(shape2) radial identity",
+      "exact_application": "For a homogeneous bilinear polynomial H of balanced degreeD, E2(H)=(D+1)! Lambda(H(1,x,y,t)); t^2+2xy=1 and Lambda is phase constant term followed by dt/2 on[-1,1].",
+      "qualification": "This is the two-complex-Gaussian radial decomposition, not the ternary real Gaussian moment functional."
+    },
+    {
+      "source": "The new proof, Sections2-4",
+      "exact_application": "Elementary image-kernel reduction, polynomial endpoint Taylor divisibility, parity, explicit homogeneous lift, evaluation at R=0 and exact irreducible T multiplicityone.",
+      "qualification": "The proof works for every parameter and every moment order; finite checker cases do not supply those quantifiers."
+    }
+  ],
+  "inspected_primary_sources": [
+    {
+      "authors": "Arno van den Essen, David Wright, Wenhua Zhao",
+      "title": "On the Image Conjecture",
+      "version": "arXiv1008.3962v2, 19September2010",
+      "url": "https://arxiv.org/html/1008.3962v2",
+      "statement": "Theorem3.3, attributed there to Zhao Theorem3.1: the image of the commuting operators xi_i-partial_zi equals the kernel of monomial contraction E.",
+      "inspection": "Actual Section3 statement inspected. Opposite signs give the same image subspace. The characteristic-zero field argument needed here is also proved directly in the new note."
+    },
+    {
+      "authors": "NIST Digital Library of Mathematical Functions",
+      "title": "Euler beta integral",
+      "url": "https://dlmf.nist.gov/5.12.E1",
+      "statement": "Equation5.12.1: B(a,b)=integral_0^1 t^(a-1)(1-t)^(b-1)dt=Gamma(a)Gamma(b)/Gamma(a+b), under Re(a),Re(b)>0.",
+      "inspection": "Actual formula and parameter hypotheses inspected; the degree-nine even-m specialization has a=(m+1)/2,b=m+1. The rational product also follows by finite polynomial integration."
+    },
+    {
+      "authors": "Christopher D. Long",
+      "title": "Counterexamples to the xz-Conjecture and the Mathieu Conjecture for SU(2)",
+      "version": "arXiv2607.19012v1, 21July2026",
+      "url": "https://arxiv.org/html/2607.19012v1",
+      "statement": "Theorem2.1 gives a mixed interval/torus counterexample with a fixed multiplier surviving at every positive power; Theorem4.2 gives its regular SU(2) lift.",
+      "inspection": "Actual displayed formulas, beta-binomial proof and SU(2) integration formula inspected.",
+      "role": "Antecedent and priority boundary, not an indispensable proof input to the new odd-composite construction. No claim that unrestricted Mathieu/Image failure or beta cancellation is new."
+    }
+  ],
+  "closest_retained_results": [
+    "HOPF_LIFT_CLASSIFICATION.md Section7 classifies real signed-height profiles with one affine dilation t(1+x); the new dilation is t(1+x)^(2r), outside that stated class.",
+    "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md Theorem5.5 supplies every even primitive balanced degree>=4; Theorem5.6 excludes complex bilinear multiples of the retained quartic as primitive degree-five witnesses. Those scopes are unchanged."
+  ],
+  "verification": {
+    "checker": "verify_odd_primitive_two_pair_image.py",
+    "receipt": "odd_primitive_two_pair_image_verification.json",
+    "method": "Standard-library original four-variable balanced monomial convolution and factorial contraction, separately compared with exact univariate angular/endpoint identities. No inverse-shear code or assumed universal cutoff is used.",
+    "internal_review": "Parent independently reconstructed the nonlinear-height all-order proof, degree/marker exponents, R=0 reduction and exact T multiplicity; separately expanded the original four-variable F9 and checked pure/marked contractions through m4. This is internal mathematical review, not external human review."
+  },
+  "remaining_scope": [
+    "Primitive odd prime balanced degrees, including5 and7, remain open; nine is only the first odd degree in this family, not a minimum theorem.",
+    "The least degree of a bad original marker for arbitrary phases is not classified.",
+    "No complete classification of pure two-pair phases, formal verification, external human review or worldwide historical priority is asserted."
+  ]
+}

@@ -261,7 +261,7 @@
   "previous_eisenstein_review_record": {
     "schema_version": 1,
     "date": "2026-11-18",
-    "scope": "Both binary identities A+A and A+(3\u00b7A), exact primitive Eisenstein norm sumsets, sharp four- and seven-summand bounds, and the subgroup-orbit arithmetic criterion. The current17-page PDF contains the balanced finite experiment. Separate canonical research now proves qualitative eventual balance and angular distribution for both families, without an effective onset or complete exception classification.",
+    "scope": "Both binary identities A+A and A+(3·A), exact primitive Eisenstein norm sumsets, sharp four- and seven-summand bounds, and the subgroup-orbit arithmetic criterion. The current17-page PDF contains the balanced finite experiment. Separate canonical research now proves qualitative eventual balance and angular distribution for both families, without an effective onset or complete exception classification.",
     "import": {
       "archive": "eisenstein_research_sources.zip",
       "archive_sha256": "ee4f4ed3ba5983c91a0d0a2c83a0acf464934b662288b7a5f04acf9aa3314103",
@@ -1410,7 +1410,7 @@
           "Its unfiltered form is stated also for odd targets, so it may be applied to n/4 when v2(n)=2.",
           "Primitive norm values are distinguished from the actual coordinate pairs of the surviving quaternion representation.",
           "The subgroup K is specified in the orbit lemma; d>0, uniform local constants and a strict exceptional-prime margin are explicit.",
-          "Dilation3\u00b7A is distinguished from the threefold sumset3A; primitive values use N rather than the inert-prime set P.",
+          "Dilation3·A is distinguished from the threefold sumset3A; primitive values use N rather than the inert-prime set P.",
           "Undefined and conflicting optional Chebyshev notation was removed; the explicit Satake coefficient proof remains."
         ],
         "assurance": "Internal source and exact computations only; no external specialist review or formal verification.",
@@ -1601,7 +1601,7 @@
       "angular_research_extension": {
         "date": "2026-11-18",
         "canonical_proof": "../../research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md",
-        "scope": "All sufficiently large n=2mod6 have A+A representations, and n=4mod6 have oriented A+(3\u00b7A) representations, with actual first summand in any fixed positive-length share interval. Equidistribution is of signed ordered coordinate witnesses, with at least n^(1-epsilon) distinct value pairs up to interval/epsilon-dependent constants.",
+        "scope": "All sufficiently large n=2mod6 have A+A representations, and n=4mod6 have oriented A+(3·A) representations, with actual first summand in any fixed positive-length share interval. Equidistribution is of signed ordered coordinate witnesses, with at least n^(1-epsilon) distinct value pairs up to interval/epsilon-dependent constants.",
         "dependencies": "Existing manuscript all-ideal Hecke bound plus a new cubic theta derivation of the all-n ramified count, fixed-lattice harmonic theta cuspidality and fixed-level coefficient estimates.",
         "internal_review": "Written derivation reconstructed by a separate analytic agent and inspected by the root agent with primary-source checks. This is internal AI review, not external specialist review.",
         "limitations": "No effective onset, shrinking interval, unweighted angular equidistribution, full finite exception classification, or established novelty. No manuscript PDF revision or numerical certificate replay performed for this extension."
@@ -1815,7 +1815,7 @@
       {
         "claim": "Infinite coverage at n>=1e8",
         "source": "sections/elementary-estimates.tex; sections/infinite-range.tex",
-        "method": "4M/p\u00b2 tail, exact prime bounds and591/625 union estimate."
+        "method": "4M/p² tail, exact prime bounds and591/625 union estimate."
       },
       {
         "claim": "Finite coverage for both classes below1e8",
@@ -2438,7 +2438,7 @@
   ],
   "prior_layout_reviews": [
     {
-      "method": "Rendered all35pages before appendix expansion; inspected all contact sheets and fullpages1,22,26,30. Re-rendered finalpages31\u201336 at80dpi and inspected31,32,33,36 after the supplement/byte-convention fixes.",
+      "method": "Rendered all35pages before appendix expansion; inspected all contact sheets and fullpages1,22,26,30. Re-rendered finalpages31–36 at80dpi and inspected31,32,33,36 after the supplement/byte-convention fixes.",
       "result": "No clipping, overlapping equations or unreadable tables found.",
       "reviewer": "Internal Codex agent",
       "scope": "Visual layout, not mathematical verification."
@@ -3263,13 +3263,12 @@
   },
   "submission": {
     "venue": "Hexagon",
-    "identifier": "hexagon:2611.00673",
-    "url": "https://hexagonmath.org/2611.00673",
-    "status": "pending",
+    "identifier": "hexagon:2611.00673v1",
+    "url": "https://hexagonmath.org/2611.00673v1",
+    "status": "published",
     "reported_on": "2026-11-19",
-    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
-    "public_record_verified": false,
-    "uploaded_files_verified": false,
+    "provenance": "Published status, version and date verified against the public Hexagon API. The public PDF and every deposited LaTeX member match their recorded SHA-256; all LaTeX members match the current repository sources.",
+    "public_record_verified": true,
     "candidate_local_files": {
       "pdf": {
         "path": "paper.pdf",
@@ -3279,8 +3278,13 @@
         "path": "hexagon-source.zip",
         "sha256": "367d5e02f1a41b1700d3d585c82d16f28488c91de64bb7fc9cfc18be3cbd0ff5"
       },
-      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
-    }
+      "scope": "Current local review PDF and TeX-only archive. The uploaded source-archive SHA-256 matches Hexagon; Hexagon supplies its own compiled PDF, preserved under published/."
+    },
+    "publication_date": "2026-11-19",
+    "verified_on": "2026-11-19",
+    "public_files_verified": true,
+    "uploaded_source_archive_verified": true,
+    "deposited_files": "published/deposited-files.json"
   },
   "repository_relocation": {
     "date": "2026-11-19",
@@ -3293,5 +3297,24 @@
     "mathematical_computations_rerun": false,
     "review_assurances_changed": false,
     "public_deposit_asserted": false
+  },
+  "publication_verification": {
+    "date": "2026-11-19",
+    "record": "https://hexagonmath.org/2611.00673v1",
+    "api": "https://hexagonmath.org/api/v1/works/2611.00673v1",
+    "publication_date": "2026-11-19",
+    "published_status_and_version_verified": true,
+    "public_pdf_sha256_matches_api": true,
+    "public_source_members_sha256_match_api": true,
+    "public_source_members_match_current_repository": true,
+    "source_members_checked": 18,
+    "uploaded_source_archive_sha256_matches_local": true,
+    "public_pdf_sha256": "ade80a47df2695100f2dceca77aab8a5781c9eb4b9cac102667fff7295031a91",
+    "local_review_pdf_sha256": "2bd8db84d6c3125e8fd9232e020da74a908cfb959e553191b1ef744a0d5ce7c6",
+    "deposited_files": "published/deposited-files.json",
+    "scope": "Public-record and byte-identity verification only. Hexagon supplies its own compiled PDF and regenerates the source-download ZIP. Historical submission and relocation receipts retain the status at the time they were recorded.",
+    "mathematical_content_changed": false,
+    "mathematical_computations_rerun": false,
+    "review_assurances_changed": false
   }
 }

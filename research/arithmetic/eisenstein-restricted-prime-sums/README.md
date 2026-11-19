@@ -3,11 +3,13 @@
 This is the canonical home for the branch's supporting research notes,
 verification programs, receipts and supplied inputs. The
 [exact primitive-norm companion](../../../results/eisenstein-restricted-prime-sums/README.md)
-contains the four-discriminant article, PDF, review records and submission
-packages. Its Hexagon submission 2611.00673 is pending. The
-[pointwise companion](../../../results/pointwise-binary-splitting-semigroups/README.md),
-Hexagon submission 2611.00672, is also pending. The companion citations do not
-make the exact classifications depend on the pointwise argument.
+contains the four-discriminant article, PDF, review records and source
+packages. It is a published preprint on [Hexagon v1](https://hexagonmath.org/2611.00673v1),
+with exact public files in its [deposited edition](../../../results/eisenstein-restricted-prime-sums/published/).
+The [pointwise companion](../../../results/pointwise-binary-splitting-semigroups/README.md)
+is also published on [Hexagon v1](https://hexagonmath.org/2611.00672v1), with its own
+[deposited edition](../../../results/pointwise-binary-splitting-semigroups/published/).
+The companion citations do not make the exact classifications depend on the pointwise argument.
 
 ## Research focus
 

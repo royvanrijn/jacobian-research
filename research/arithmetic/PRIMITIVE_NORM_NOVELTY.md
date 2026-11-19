@@ -702,13 +702,14 @@ No general every-target distinct-value leading asymptotic was identified in the 
 
 ## Publication scope
 
-The two companion papers have been submitted to Hexagon and are pending
-moderation: [pointwise correlations](../../results/pointwise-binary-splitting-semigroups/)
-(`2611.00672`) and [exact sumsets](../../results/eisenstein-restricted-prime-sums/)
-(`2611.00673`). Their respective reserved Zenodo DOIs are
-`10.5281/zenodo.24371355` and `10.5281/zenodo.24371462`; this reservation does
-not establish public deposit. Submission does not change their mathematical
-dependencies or establish external review.
+The two companion papers are published preprints on Hexagon as of 19 November 2026:
+[pointwise correlations v1](https://hexagonmath.org/2611.00672v1) and
+[exact sumsets v1](https://hexagonmath.org/2611.00673v1). Their exact public files and
+checksums are preserved in the [pointwise](../../results/pointwise-binary-splitting-semigroups/published/)
+and [exact-sumset](../../results/eisenstein-restricted-prime-sums/published/) deposited editions.
+Their respective reserved Zenodo DOIs are `10.5281/zenodo.24371355` and
+`10.5281/zenodo.24371462`; this reservation does not establish a public Zenodo deposit.
+Publication does not change their mathematical dependencies or establish external review.
 
 ### Exact companion: Exact Sumsets of Primitive Quadratic Norms
 
@@ -917,9 +918,8 @@ to the weight in their theorem. The comparison now concerns the same
 coprime count, its leading constant, quantitative remainder and analytic
 inputs; it does not certify first-result status.
 
-Historical priority, specialist mathematical review and public release
-remain separate from the pending Hexagon submissions of the flagship and
-exact companion. No first-result claim follows from the absence
+Historical priority and specialist mathematical review remain separate from the
+Hexagon publication of the flagship and exact companion. No first-result claim follows from the absence
 of a matching source in the current searches.
 
 ## Evidence and limits

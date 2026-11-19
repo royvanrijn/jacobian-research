@@ -1,0 +1,31 @@
+{
+  "title": "Exact Sumsets of Primitive Quadratic Norms",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Exact binary primitive norm-value sumsets at discriminants -3,-7,-8,-11, with complete finite certificates and classical quaternionic Hecke proofs.",
+  "status": "published-preprint",
+  "publication_date": "2026-11-19",
+  "hexagon": "https://hexagonmath.org/2611.00673v1",
+  "license": "CC-BY-4.0",
+  "pdf": "paper.pdf",
+  "source": "source.zip",
+  "source_bundle": "source.zip",
+  "verification": {
+    "scope": "Complete standalone written argument using classical Hecke/Jacquet-Langlands/Ramanujan inputs, exact finite certificate replay and full coordinate-membership authentication; current review record distinguishes each check from external mathematical review and formal verification.",
+    "limits": "Publication and file-identity checks do not establish independent replay, formal verification, external mathematical review or historical priority. The verification record retains its stated scopes and open obligations.",
+    "evidence": [
+      "../verification.json"
+    ]
+  },
+  "publication_record_checked": "2026-11-19",
+  "current_edition": "../",
+  "abstract": "We determine the exact binary sumsets of primitive quadratic norm values at discriminants \\(-3,-7,-8,-11\\). The local congruence conditions are sufficient in three cases; at discriminant \\(-7\\) the complete additional exception set is \\(\\{7,77,203\\}\\). Stronger split-prime core identities separate the ramified dilations. The proofs combine quaternionic norm shells, precisely normalized classical Hecke bounds, and dyadic and ramified local filters. Explicit infinite estimates, rational interval certificates, complete finite sumset scans and multiplicative descent cover every positive target. We supply standalone verification code and explain the finite reductions that make the certificates complete. All sumsets concern numerical values, without coordinate multiplicities.",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

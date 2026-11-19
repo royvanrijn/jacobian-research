@@ -1,16 +1,21 @@
 # Multiple protected rank-one obstructions and the coloring budget
 
 The local four-strand obstruction can be packed on disjoint sets of
-top strands. The resulting loss is a sum of root and covector defects:
-`k` protected blocks force an irreducible dimension loss of at least
-`ceil(k/2)`. This gives explicit knots with such augmentation upper
-bounds. It does not yet give a matching meridional-rank lower bound or
-a prime knot with augmentation gap two.
+top strands. The stronger [two-sided theorem](TWO_SIDED_PROTECTED_OBSTRUCTIONS.md)
+now proves that `k` protected blocks force BOTH a root defect and a
+covector defect of at least `k`, so `ar_C<=b-k`. The weaker
+`b-ceil(k/2)` argument below is retained as a consequence of the
+original local disjunction. Explicit protected knot closures are supplied;
+a matching meridional lower bound and prime gap-two realization remain open.
 
-There is a separate obstruction to the most immediate coloring attempt.
+There is a separate obstruction to double-transposition colorings.
 Repeating the displayed alternating eight-symbol seed loses one distinct
-transposition edge per block. Its support-graph lower bound cannot certify
-an augmentation gap greater than one from the new dimension bound.
+transposition edge per block. A complete local tree-component census below
+proves the same support budget for EVERY coloring of disjoint protected
+blocks by double transpositions: `v<=2b-k+1`. Together with the weaker
+bound this certified at most a gap of one; the stronger two-sided bound
+leaves room for a gap of `ceil(k/2)` if compatible colorings and knot
+closures can be constructed.
 
 ## 1. The local hypothesis really needs only two protected meridians
 
@@ -26,7 +31,7 @@ Lemma `lem:spans`, has input arcs `(1,0,8,13)` and output arcs
 `(1,6,16,13)`. The repeated first and fourth labels come from their
 closure relations. That argument proves the following LOCAL statement.
 
-**Local lemma.** Suppose the matrices propagated through one copy of
+**Local lemma (weaker consequence of the two-sided theorem).** Suppose the matrices propagated through one copy of
 `U` have nonzero displacement rank one and common determinant
 `mu!=0`, over any field and in any finite ambient dimension. If its
 first and fourth output matrices equal the corresponding input
@@ -53,7 +58,7 @@ dependence statement below.
 
 ## 2. Independent defects on disjoint strand sets
 
-**Theorem 1 (disjoint-block defect).** Let `b>=4k`, `k>=1`. Embed
+**Theorem 1 (disjoint-block defect; weaker bound).** Let `b>=4k`, `k>=1`. Embed
 `k` copies `U_i` of `U` on the pairwise disjoint sets
 
 ```
@@ -118,9 +123,11 @@ all assertions. The proof uses neither a preserved form nor local
 complete reducibility. QED.
 
 Four blocks give `ar_C<=b-2`; two give only `ar_C<=b-1` by this
-argument. It is invalid to count every local obstruction as a root
-dependence: different blocks can supply their defects on opposite
-sides. The checker includes a rank-one irreducible linear-algebra
+weaker argument. From a local DISJUNCTION alone it is invalid to count
+every block as a root dependence: the supplied alternatives could lie
+on opposite sides. The actual signed `U` relations satisfy the stronger
+[two-sided local theorem](TWO_SIDED_PROTECTED_OBSTRUCTIONS.md), which
+excludes that possibility for these blocks. The checker includes a rank-one irreducible linear-algebra
 control with two disjoint four-element blocks and `r=q=7` at `b=8`.
 It meets the local dependence ALTERNATIVES, not the signed `U`
 relations, so it diagnoses that particular counting inference only.
@@ -239,12 +246,154 @@ gap of at most one (zero at even `k`, one at odd `k`). This does
 not bound the actual gap of a knot, exclude a stronger invariant,
 or classify different local colorings of the same braid blocks.
 
-Thus four protected blocks genuinely supply an augmentation upper
-bound two below the displayed braid size, but matching that size by
-the previous literal alternating seed is impossible. A gap-two
-construction needs new colorings, a stronger local two-sided defect,
-a more efficient packing, or a different meridional lower invariant.
-Its prime/hyperbolic realization is a further obligation.
+Matching the full displayed braid size by the previous literal
+alternating seed is impossible. The next result shows that different
+double-transposition colors obey the same budget on this disjoint-block
+architecture. The stronger [two-sided local defect](TWO_SIDED_PROTECTED_OBSTRUCTIONS.md)
+now improves the upper bound to `b-k`, making a gap of two compatible
+with this budget for three blocks. Constructing a compatible coloring
+and prime/hyperbolic realization remains a further obligation.
+
+### 4.1. The support budget holds for every local coloring
+
+All permutation products in this section mean composition from right
+to left. No particular alternating seed, whole-tuple return, or tail
+is assumed in the local computation.
+
+**Theorem 3 (universal protected-block coloring budget).** Let
+`(g_1,g_2,g_3,g_4)` be four double transpositions on a finite set.
+Suppose the literal Hurwitz action of `U` returns its first and fourth
+entries to `g_1,g_4`. The multigraph with one edge for EACH of its eight
+transposition occurrences is not a forest. Parallel edges from different
+colors remain distinct edges.
+
+Consequently, if `k` disjoint protected `U` blocks occur on a `b`-strand
+braid as in Theorem 1, EVERY transitive quotient coloring of its input
+meridians by double transpositions on `v` symbols satisfies
+
+```
+v<=2b-k+1.                                             (10)
+```
+
+In particular no such quotient can be the natural `A_(2b)` action when
+`k>=2`, regardless of the local colors or their overlapping symbol sets.
+The standard support lower bound and Theorem 1 can therefore certify
+an augmentation gap at most one by these two inequalities. This does
+not bound a knot's actual gap or rule out a different lower invariant.
+
+**Complete finite reduction for the local assertion.** Suppose the
+occurrence multigraph were a forest. Each of its nontrivial connected
+components is a tree with `n` vertices and `n-1` edges, where `2<=n<=9`:
+there are only eight edges in the entire graph. Each color preserves
+every such component, and restricts to an involution with zero, one or
+two transpositions. Write its edge-count vector as `(a_1,a_2,a_3,a_4)`;
+the counts sum to `n-1`. The two outer-return identities restrict to
+each component because all propagated colors remain in the generated
+permutation group.
+
+The ordered product of these four restricted involutions is an `n`-cycle.
+Indeed, expand them into their transposition edges. In ANY order of a
+forest's distinct edges, the next edge joins two components of the
+preceding forest. Inductively the partial permutation has one cycle on
+each preceding component. Multiplication by this next transposition
+merges precisely those two cycles. After every edge is inserted the
+product is a single cycle. Conversely an `n`-cycle product with exactly
+`n-1` transposition occurrences forces a connected graph and hence a
+tree, without parallel edges.
+
+Normalize that product to `c_n=(0 1 ... n-1)`. The centralizer of `c_n`
+is exactly its powers: a commuting permutation is determined by the image
+of zero and sends `c_n^i(0)` to `c_n^i(g(0))`. Thus we may choose the
+first involution to be the lexicographically least simultaneous rotation
+of its entries. We do NOT claim that this also removes the stabilizer
+of the first involution; duplicate full conjugacy orbits are harmless.
+
+For every `n=2,...,9` the checker explicitly generates the entire set
+of involutions with at most two transpositions: one identity,
+`binom(n,2)` single transpositions, and the three perfect matchings on
+every four-element subset. It then enumerates the normalized first
+color and all second and third colors, forcing the fourth to be
+
+```
+g_4=g_3*g_2*g_1*c_n.                                   (11)
+```
+
+It tests fourth-color membership, the total edge count and the literal
+fourteen-letter signed braid action. Its exact census is:
+
+| `n` | First-color representatives passing the capacity bound | Minimal factorizations tested | Both outer entries return |
+|---:|---:|---:|---:|
+| 2 | 2 | 4 | 0 |
+| 3 | 2 | 12 | 3 |
+| 4 | 5 | 49 | 0 |
+| 5 | 6 | 163 | 0 |
+| 6 | 13 | 647 | 0 |
+| 7 | 19 | 1736 | 0 |
+| 8 | 33 | 4395 | 0 |
+| 9 | 42 | 6561 | 0 |
+
+The ONLY returning edge-count vector is `(0,0,1,1)`. Its three
+normalized representatives all have identity first and second colors,
+with two distinct transpositions on three symbols as the last colors.
+One is `(1,1,(01),(12))`. Since every nontrivial tree component would
+have identity first and second restricted colors, the whole first and
+second permutations would be identities. This contradicts their being
+double transpositions, and proves the local assertion.
+
+
+The finite packing formulation is equivalent to the local forest question,
+in both directions. A forest tuple restricts to admissible connected tree
+components whose edge-count vectors sum to `(2,2,2,2)`. Conversely, given
+any such finite collection of admissible components, put their symbol
+sets disjointly and take the disjoint union of each of the four colors.
+Each resulting color is a double transposition because its total count is
+two. The Hurwitz action and both outer-return equalities act componentwise,
+so the assembled tuple satisfies them and its occurrence graph is a
+forest. Thus infeasibility of that vector packing is exactly the absence
+of a local forest tuple, rather than only a sufficient test for absence.
+Isolated fixed symbols may be omitted in either direction.
+
+For an efficient exact replay, let `ell(h)=n-number_of_cycles(h)`.
+This is the least number of transpositions in a factorization of `h`:
+one transposition changes the number of cycles by one, and each cycle
+has the usual length-minus-one factorization. The triangle inequality
+for this length shows that in a factorization of `c_n` of total length
+`n-1`, EVERY successive residual after removing `g_i` has length reduced
+by exactly `a_i`. The portable checker caches these complete residual
+successor lists before forcing the last factor. This loses no candidate.
+The capacity tests merely check that the remaining colors can supply the
+remaining length (at most two per color). No sampled tuple, modular
+calculation or heuristic group-generation test occurs.
+
+A separate reference search through `n=6` uses a different normalization:
+fix the FIRST color to an identity, `(01)` or `(01)(23)` under the full
+symmetric group, enumerate all three other colors with the exact edge
+budget, and check graph connectivity directly. It uses no product-cycle
+normalization or residual-length pruning. It finds the same sole component
+vector. This smaller cross-check does not replace the complete main census
+through nine.
+
+**Proof of the global consequence.** Form the full occurrence multigraph
+of the `b` input meridians, so it has exactly `2b` edges. Its vertices
+are the `v` symbols of the transitive action. It is connected because
+each generator preserves every connected component of its edge graph.
+Over `F_2`, the kernel of the edge-to-vertex boundary map has dimension
+`2b-v+1`: the boundary matrix of a connected graph has rank `v-1`, as
+seen on a spanning tree, and every column has even coordinate sum.
+
+By the local assertion each protected block has a nonzero cycle vector.
+Choose one for every block. These vectors are linearly independent in the
+full edge space because their nonempty supports lie in disjoint sets of
+OCCURRENCE edges. This remains true if different blocks reuse the same
+geometric transposition or the same symbols. Thus `2b-v+1>=k`, proving
+(10). For one block the old eight-symbol seed has cycle rank exactly one
+and reaches the bound, so this local loss cannot be increased without
+additional hypotheses. QED.
+
+The result in particular excludes any transitive nine-symbol local
+coloring of `U` by four double transpositions with these two outer
+closures. It does not assert that disconnected local actions have total
+support at most eight.
 
 ## 5. Primary input, checks and assurance
 
@@ -277,3 +426,25 @@ The receipt records source pins and exact scopes. No local signed
 obstruction replay, independent mathematical review, formal
 verification, prime realization, or matching meridional lower bound
 is inferred from this checker.
+
+The separate [complete forest-coloring checker](verify_protected_block_forest_colorings.py)
+and [receipt](protected_block_forest_colorings_verification.json) supply
+the exhaustive finite part of Theorem 3. It reconstructs the census
+through nine, the independent first-color normalization through six,
+all admitted component vectors and their bounded packing. Its controls
+retain the valid old eight-symbol coloring, reject an explicit
+nine-symbol path coloring, distinguish one outer closure from both,
+and verify inversion of the signed Hurwitz action. The finite proof
+does not establish a new prime knot or an augmentation gap two.
+
+```
+.venv/bin/python research/meridional-rank/representations/verify_protected_block_forest_colorings.py \
+  --write-receipt research/meridional-rank/representations/protected_block_forest_colorings_verification.json
+```
+
+The elementary tree factorization and cycle-space arguments are proved
+above; no external classification of Hurwitz orbits is imported. Primary
+comparison with Cornwell's results motivates the rank question but does
+not supply this local census. The exact finite replay and written
+reduction are internal evidence; formal verification, independent
+external review and historical priority are not claimed.

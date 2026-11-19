@@ -1,0 +1,31 @@
+{
+  "title": "Pointwise Correlations of Quadratic Form Values and Splitting Semigroups",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "CK/Smilansky fixed-shift asymptotics for ordinary values; genus-invariant primitive-value counts for fixed orders in one imaginary quadratic field; and target-uniform splitting-semigroup sums from a shared arithmetic-model comparison.",
+  "status": "published-preprint",
+  "publication_date": "2026-11-19",
+  "hexagon": "https://hexagonmath.org/2611.00672v1",
+  "license": "CC-BY-4.0",
+  "pdf": "paper.pdf",
+  "source": "source.zip",
+  "source_bundle": "source.zip",
+  "verification": {
+    "scope": "Internal review of the application proof and exact imported theorem interfaces; the complete zero-free and weighted-dilation preprints are dependencies, not independently revalidated here. Separate checks and the independent older-input norm route are recorded in verification.json.",
+    "limits": "Publication and file-identity checks do not establish independent replay, formal verification, external mathematical review or historical priority. The verification record retains its stated scopes and open obligations.",
+    "evidence": [
+      "../verification.json"
+    ]
+  },
+  "publication_record_checked": "2026-11-19",
+  "current_edition": "../",
+  "abstract": "Under the stated analytic inputs, we establish the fixed-shift pair asymptotics predicted by Smilansky for the ordinary values of \\(x^2+dy^2\\), \\(d=1,2,3,4,7\\). In particular, the number of \\(n\\le X\\) for which both \\(n\\) and \\(n+1\\) are sums of two squares is asymptotic to \\(X/(2\\log X)\\). For primitive positive definite binary forms of fixed discriminants \\(\\Delta_i=f_i^2D\\) sharing one negative fundamental discriminant \\(D\\), we count values admitting coprime coordinates. Replacing either form within its respective genus preserves the leading binary count, with a relative logarithmic saving through an independent classical route. Under the recent analytic inputs we give an explicit mixed leading term with relative \\(o(1)\\), including different fixed conductors in that one field, and no class-number divisor. The central mechanism is a shared comparison between sparse indicators and arithmetic models retaining every surviving congruence character. Following Walsh's proposed indicator extension, we supply the models, local factors and a uniform reflected-target argument, using the recent zero-free and weighted-dilation theorems of OpenAI. Applications to fixed subgroup restrictions and prime-coset self-sums give target-uniform asymptotics with logarithmic savings and exact eventual congruence criteria. They include prime support \\(1\\pmod{12}\\) on targets \\(2\\pmod{12}\\) and prime support \\(3\\pmod4\\) on even targets. All counts concern numerical values without coordinate or ideal multiplicities.",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

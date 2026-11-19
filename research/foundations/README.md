@@ -12,8 +12,9 @@ Precisely scoped Lean developments supporting published papers and current manus
 | Binary Gaussian moments in Lean | Internal result | conditional | [Source](formal/gmc2/README.md) |
 | Characteristic-zero finite etale Keller construction | Internal result | proved | [Source](formal/finite-etale-keller/README.md) |
 | Tangent-pencil algebra in Lean | Partial result | proved | [Source](formal/discriminant-pencils/README.md) |
+| Complete complex quadratic-height classification and exact finite moment ideals | Internal result | proved | [Source](extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 
-**Computed obligations:** 10 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 9 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:
@@ -22,6 +23,7 @@ Scope limits:
 - GMC2 retains two explicit mathematical axiom interfaces, shown as open formalization obligations. Its propagated formal claim remains conditional until discharged; its written mathematical theorem has separate proof support.
 - Binary GVC and generic tangent-pencil geometry are partial formalizations. The focused finite-etale certificate excludes the broader supplied-presentation and analytic counting scopes. No Lean build was rerun for this registry migration.
 - The retained two-pair Image cubic proof covers exact bihomogeneous bidegree (3,3), with sharp mixed cutoff and minimum failing balanced degree four. Independent review and formal coverage are separate obligations.
+- The entire complex polynomial winding-one quadratic-height numerator class is classified. On the nonzero constant-coefficient branch, its ordinary full moment ideal is exactly the finite coefficient ideal of (C-xCprime)^2D+C^3. The higher Hopf residual gap is discharged at this scope; general profiles and nilpotence indices are separate.
 
 Tracked obligations (computed states):
 

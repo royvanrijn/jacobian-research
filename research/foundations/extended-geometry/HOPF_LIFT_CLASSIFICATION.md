@@ -3,9 +3,11 @@
 ## 1. Scope
 
 This note isolates the mechanism behind the adjacent Taylor coefficients in
-the two-pair Image-Mathieu counterexample.  It first classifies a parametric
-one-profile class, then proves uniqueness in the complete minimum-degree
-\(t^2\)-linear numerator class.  Neither result is a search in the full space
+the two-pair Image-Mathieu counterexample. It classifies a parametric
+one-profile class and the complete polynomial winding-one \(t^2\)-linear
+numerator class, the latter over every characteristic-zero field. Its
+formal reconstruction closes all degree rectangles in that class; it does
+not search or classify the full space
 \(V_d=\operatorname{End}(\operatorname{Sym}^d)\).
 
 On the Hopf sphere use
@@ -456,9 +458,11 @@ which evaluates to (6.14).  No term containing \(b_m^2\) can have degree
 For the rectangle \((\deg C,\deg D)\le(d,d+2)\), the first \(d+2\) pure
 jets therefore reconstruct all of \(D\).  After normalizing \(a_1=1\), the
 entire remaining problem is an elimination problem in the \(d-1\) weighted
-parameters \(a_2,\ldots,a_d\). Proposition 6.2 gives this reduction; a
-classification of those higher-degree residual ideals is outside the
-retained proof above.
+parameters \(a_2,\ldots,a_d\). Section 8 below solves the unrestricted
+formal reconstruction explicitly and classifies every polynomial pair
+\(C,D\), with an exact ordinary moment-ideal presentation and sufficient
+prefix 3d+2 on c_0!=0. This closes these higher-degree rectangles in
+the stated class.
 
 ## 7. Real profiles with mixed height powers
 
@@ -686,6 +690,283 @@ mixed height powers in a single real profile, but makes no claim about
 multiple phase profiles or the full primitive degree-five space.
 
 
+## 8. Complete complex polynomial quadratic-height classification
+
+Here the coefficient field K is arbitrary of characteristic zero, with
+no reality or positivity hypothesis. Use the same angular functional
+\(\Lambda\) on \(t^2+2xy=1\). Let C,D be arbitrary polynomials in K[x]
+such that
+
+\[
+ p=x^{-1}\bigl(C(x)+t^2D(x)\bigr)
+ \tag{8.1}
+\]
+
+is a polynomial on the quadric. This polynomiality condition is exactly
+C(0)+D(0)=0: eliminating t^2 rewrites (8.1) as
+
+\[
+ p=\frac{C+D}{x}-2yD.
+\]
+
+The condition is also necessary by restriction to x=0, where t^2=1.
+This is the full winding-one quadratic-height numerator class, without
+a degree bound on either C or D.
+
+> **Theorem 8.1 (complete polynomial winding-one classification).**
+> Every pure phase (8.1), meaning \(\Lambda(p^m)=0\) for all m>=1,
+> belongs to exactly one of the following branches:
+>
+> 1. C and D are both divisible by x^2. The phase has strictly
+>    positive circular weight and is safe against every fixed
+>    polynomial marker.
+> 2. \(C=c_0+c_1x\), with c_0!=0, and
+>    \[
+>    D=-\frac{C^3}{c_0^2}.
+>    \tag{8.2}
+>    \]
+>    If c_1=0 the phase is 2c_0y and is safe. If c_1!=0 it is the
+>    retained quartic Hopf profile, up to a nonzero scalar and
+>    reciprocal rescaling of x,y. Its fixed marker x has a nonzero
+>    moment at every positive power.
+>
+> Conversely every listed phase is pure. Hence the only unsafe phases
+> in this entire class have least balanced degree four. In particular
+> it contains no R-primitive Image failure in balanced degree five,
+> seven, or any degree greater than four.
+
+### 8.1. The unique formal reconstruction
+
+Fix an arbitrary formal series C in K[[x]], with c_0=C(0)!=0.
+The coefficients of a formal D with D(0)=-c_0 are uniquely determined
+by the pure equations
+
+\[
+ \mu_m(C,D)=[x^m]\int_0^1(C+t^2D)^m\,dt=0,
+ \qquad m\ge1.
+ \tag{8.3}
+\]
+
+Indeed, the m-th equation uses only the coefficients through degree m.
+Its coefficient of the new variable d_m=[x^m]D is
+
+\[
+ \tau_m(c_0)
+ =mc_0^{m-1}\int_0^1t^2(1-t^2)^{m-1}\,dt
+ =c_0^{m-1}\frac{2^{m-1}m!}{(2m+1)!!}\ne0.
+ \tag{8.4}
+\]
+
+No term containing d_m^2 can contribute at degree m. Thus the
+equations determine d_m successively for all m. This is the general
+c_0 version of Proposition 6.2, and uses only rational polynomial
+integration.
+
+The formal solution has the following closed form:
+
+\[
+ \boxed{\quad D_*=-\frac{C^3}{(C-xC')^2}.\quad}
+ \tag{8.5}
+\]
+
+To prove it, write B=C-xC' and X=C/B. These are formal units with
+B(0)=c_0 and X(0)=1. Then C+t^2D_*=C(1-t^2X^2). Put
+
+\[
+ J_m(v)=\int_0^v(1-u^2)^m\,du,
+ \qquad \kappa_m=J_m(1).
+\]
+
+Since J'_m has a zero of order m at 1 and X-1 belongs to (x),
+
+\[
+ \int_0^1(C+t^2D_*)^m\,dt
+  =\frac{C^m}{X}J_m(X)
+  \equiv\kappa_m C^{m-1}(C-xC')\pmod{x^{m+1}}.
+ \tag{8.6}
+\]
+
+These are coefficientwise formal identities: the polynomial primitive
+J_m can be composed with the unit series X, and every requested
+coefficient depends on finitely many input coefficients. But
+
+\[
+ [x^m]C^{m-1}(C-xC')
+   =[x^m]\left(C^m-\frac{x}{m}(C^m)'\right)=0.
+ \tag{8.7}
+\]
+
+So (8.5) satisfies every formal pure equation. Uniqueness from (8.4)
+proves that every pure formal pair with c_0!=0 has exactly this D.
+No finite pure prefix is asserted sufficient for arbitrary formal C.
+
+### 8.2. Polynomiality forces C to be affine
+
+Now let C,D be polynomials, with C(0)!=0. Equality (8.5) is then an
+identity in K(x), since its denominator is a unit at x=0. In particular
+
+\[
+                    (C-xC')^2\mid C^3\quad\hbox{in }K[x].
+ \tag{8.8}
+\]
+
+Suppose h=deg C>=2, and work over an algebraic closure of K.
+Then B=C-xC' has degree h: its leading coefficient is (1-h)
+times that of C, which is nonzero in characteristic zero. Every root
+alpha of C is nonzero. If its multiplicity in C is e, then its
+multiplicity in B is exactly e-1, because the leading local term
+of -xC' there is -alpha*e times the leading coefficient of C.
+
+If C has k distinct roots, the total multiplicity of B at those roots
+is therefore h-k<h. Since B has degree h, it has a root that is not
+a root of C. This contradicts (8.8). Thus deg C<=1.
+For C=c_0+c_1x, B=c_0 and (8.5) becomes exactly (8.2).
+This root-count argument proves an unrestricted degree statement;
+observing finitely many nonzero Taylor coefficients of D_* would not
+suffice to establish it.
+
+For the remaining branch C(0)=0, polynomiality also gives D(0)=0.
+Write C=xC_1,D=xD_1. Then p=C_1(x)+t^2D_1(x) has only nonnegative
+circular weights. If c=C_1(0),d=D_1(0), its pure moments are precisely
+the moments of c+dt^2. The first two equations give
+
+\[
+ c+d/3=0,\qquad c^2+2cd/3+d^2/5=0.
+\]
+
+Substitution yields 4d^2/45=0. Hence c=d=0 over every
+characteristic-zero field, so C and D are divisible by x^2.
+Conversely those divisibilities give strictly positive circular weight,
+which proves purity and eventual mixed vanishing directly.
+
+### 8.3. The unsafe branch and the primitive-degree consequence
+
+In branch (8.2) put u=c_1/c_0 and X=1+ux. Then
+
+\[
+ p=c_0x^{-1}X(1-t^2X^2).
+\]
+
+The endpoint calculation of Section 3 gives
+
+\[
+ \Lambda(xp^m)
+   =c_0^m u^{m-1}\int_0^1(1-t^2)^m\,dt.
+ \tag{8.9}
+\]
+
+It is nonzero for every m>=1 when u!=0. For u=0 the phase
+is 2c_0y, which has one strict weight sign and is safe. For u!=0,
+the highest spatial term of p is -c_0u^3 x^2t^2, nonzero in
+the associated graded quadric ring, so its least balanced lift degree
+is exactly four. Its degree-four lift is a scalar/rescaling of the
+retained quartic; every higher-degree homogeneous lift introduces
+a factor of R. Thus no unsafe phase in this class supplies a new
+R-primitive higher-degree witness.
+
+The formal reconstruction, its polynomial obstruction, and the zero
+branch are self-contained algebraic arguments. The coefficient and
+endpoint manipulations are the same classical polynomial-integration
+mechanism used in Sections 3 and 6. The Image-space interpretation uses
+the already stated original contraction and radial identities; no
+new external classification theorem is imported.
+
+### 8.4. Exact moment ideals, with c_0 inverted
+
+The triangular reconstruction also gives an equality of ordinary ideals,
+not just a classification of field-valued points. Fix degree bounds
+deg C<=h and deg D<=k, and work over the universal coefficient ring
+
+\[
+ \mathscr R=\mathbb Q[c_0,c_0^{-1},c_1,\ldots,c_h,d_1,\ldots,d_k],
+ \quad C=\sum_{i=0}^hc_ix^i,\quad
+ D=-c_0+\sum_{i=1}^kd_ix^i.
+\]
+
+Write f_m=mu_m(C,D) for (8.3), B=C-xC', and
+
+\[
+ \delta_j=[x^j](D-D_*),\qquad
+ E(x)=B(x)^2D(x)+C(x)^3,\qquad E_j=[x^j]E(x).
+\]
+
+The formal coefficients of D_* belong to \(\mathscr R\), since the
+constant coefficient of B is the unit c_0. Also delta_0=E_0=0.
+
+> **Theorem 8.2 (ordinary ideal presentation and finite prefix).**
+> For every N>=1, as ordinary ideals of \(\mathscr R\),
+> \[
+> (f_1,\ldots,f_N)
+>   =(\delta_1,\ldots,\delta_N)=(E_1,\ldots,E_N).
+> \tag{8.10}
+> \]
+> In particular, for \(M=\max(2h+k,3h)\),
+> \[
+> (f_m:m\ge1)=(f_1,\ldots,f_M)=(E_1,\ldots,E_M).
+> \tag{8.11}
+> \]
+> When M=0 all three ideals are zero. The equalities persist under
+> every coefficient-algebra base change in which c_0 stays invertible.
+
+To prove the first equality, substitute D=D_*+(D-D_*) in f_m.
+The moment depends only on d_1,...,d_m, and its d_m coefficient is
+the unit tau_m(c_0) in (8.4). Its specialization with every delta_j
+zero is f_m(C,D_*)=0 by the universal formal identity (8.6)--(8.7).
+Thus
+
+\[
+ f_m-\tau_m(c_0)\delta_m
+                 \in(\delta_1,\ldots,\delta_{m-1}).
+\]
+
+One may first form this polynomial identity with independent coefficients
+d_1,...,d_m, then specialize d_j=0 for j>k (and c_j=0 for j>h).
+Thus the same identity holds when m exceeds the degree bound k;
+delta_m is then a prescribed coefficient of -D_* rather than an
+independent variable. Induction, and invertibility of tau_m(c_0),
+prove equality of every finite prefix. This argument is in the coefficient ring itself; it
+does not replace an ideal by its radical or infer membership from a
+set-theoretic calculation.
+
+For the second equality use the exact formal identity
+E=B^2(D-D_*). Its coefficients satisfy
+
+\[
+ E_m=c_0^2\delta_m+
+       \sum_{j=1}^{m-1}([x^j]B^2)\delta_{m-j}.
+\]
+
+The same triangular induction applies, since c_0^2 is a unit.
+Finally E is a polynomial of degree at most M, so all E_j above
+M are zero. Taking the union of (8.10) over all N proves (8.11),
+including the automatic infinite tail. For the earlier rectangle
+deg C<=d, deg D<=d+2, the explicit sufficient prefix is M=3d+2.
+
+This theorem is restricted to the open c_0!=0 coefficient branch.
+It preserves possible nonreduced structure and does not assert that
+the coefficient ideal of E is radical, compute its nilpotence index,
+or give this same prefix on the c_0=0 branch. It supplies the exact
+ordinary ideal presentation of the higher residual equations left
+by Proposition 6.2, while Theorem 8.1 gives their field-point
+classification.
+
+The [exact standard-library checker](verify_hopf_quadratic_height_classification.py)
+constructs the formal solution and independently solves the triangular
+moment equations on finite rational fixtures, checks both outputs and
+all requested moments, verifies exact polynomial division in affine and
+nonlinear examples, and includes zero-branch and corrupted-coefficient
+controls. It also reconstructs moment polynomials in independent delta
+variables and verifies explicit ordinary-ideal triangular certificates
+on separate finite coefficient fixtures. Its
+[receipt](hopf_quadratic_height_classification_verification.json)
+records the checked finite orders. The all-degree conclusion follows
+from the written root argument, and the ideal presentation and infinite
+tail follow from the unit triangular identities, not Taylor-prefix
+experiments.
+The theorem received a separate internal reconstruction of (8.4)--(8.8)
+and both branches. External human review, formal verification and
+worldwide priority remain unestablished.
+
 ## Verification scope
 
 The written classifications are the all-order arguments. The preexisting
@@ -697,3 +978,7 @@ received focused internal AI proof checks. No retained computational
 checker, independent replay, formal verification or external mathematical
 review is claimed for Section 7. Finite checks do not replace the
 universal proof.
+
+Section 8 has its separately named checker and receipt, with the exact
+finite scope described there. Those computations do not upgrade the
+assurance claimed for Section 7 or classify phases outside (8.1).

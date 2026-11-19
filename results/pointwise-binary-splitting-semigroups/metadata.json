@@ -6,7 +6,7 @@
   },
   "summary": "CK/Smilansky fixed-shift asymptotics for ordinary values; genus-invariant primitive-value counts for fixed orders in one imaginary quadratic field; and target-uniform splitting-semigroup sums from a shared arithmetic-model comparison.",
   "published": false,
-  "status": "submission-pending",
+  "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
@@ -67,18 +67,17 @@
     "policy_url": "https://hexagonmath.org/about",
     "policy_checked_on": "2026-11-19",
     "submission_performed": true,
-    "submission_provenance": "Author-reported Hexagon submission; public record and uploaded bytes not verified."
+    "submission_provenance": "Published Hexagon v1 record verified. The recorded original uploaded source-archive SHA-256 matches the local TeX-only archive; public deposited files are sealed under published/."
   },
-  "hexagon": "https://hexagonmath.org/2611.00672",
+  "hexagon": "https://hexagonmath.org/2611.00672v1",
   "submission": {
     "venue": "Hexagon",
-    "identifier": "hexagon:2611.00672",
-    "url": "https://hexagonmath.org/2611.00672",
-    "status": "pending",
+    "identifier": "hexagon:2611.00672v1",
+    "url": "https://hexagonmath.org/2611.00672v1",
+    "status": "published",
     "reported_on": "2026-11-19",
-    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
-    "public_record_verified": false,
-    "uploaded_files_verified": false,
+    "provenance": "Published status, version and date verified against the public Hexagon API. The public PDF and every deposited LaTeX member match their recorded SHA-256; all LaTeX members match the current repository sources.",
+    "public_record_verified": true,
     "candidate_local_files": {
       "pdf": {
         "path": "paper.pdf",
@@ -88,7 +87,13 @@
         "path": "hexagon-source.zip",
         "sha256": "1e30db10753005f780dd87d965c385c71c8eeafe383b07a3fbca2bfb84fbb9de"
       },
-      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
-    }
-  }
+      "scope": "Current local review PDF and TeX-only archive. The uploaded source-archive SHA-256 matches Hexagon; Hexagon supplies its own compiled PDF, preserved under published/."
+    },
+    "publication_date": "2026-11-19",
+    "verified_on": "2026-11-19",
+    "public_files_verified": true,
+    "uploaded_source_archive_verified": true,
+    "deposited_files": "published/deposited-files.json"
+  },
+  "published_edition": "published/"
 }

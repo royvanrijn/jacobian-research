@@ -1,6 +1,6 @@
 # Exact Sumsets of Primitive Quadratic Norms
 
-Hexagon submission: [hexagon:2611.00673](https://hexagonmath.org/2611.00673), pending moderation. The author reported this submission on 19 November 2026; the public record and uploaded files have not been independently verified.
+**Published preprint · [Hexagon v1](https://hexagonmath.org/2611.00673v1) · 19 November 2026 · [Deposited files](published/)**
 
 Reserved Zenodo draft DOI: [doi:10.5281/zenodo.24371462](https://doi.org/10.5281/zenodo.24371462), version 1 (2026). This records the author-supplied reservation, not a verified public deposit.
 
@@ -170,5 +170,5 @@ Please assess the written argument and the declared supplement together:
    and primitive-norm sumset literature. The adaptation from Howe--Huffman--
    Kohlmeyer--Kruer is attributed; a complete priority audit remains open.
 
-These outside reviews remain open after submission. The Hexagon submission
-is pending; no verified public deposit is recorded.
+These outside reviews remain open after publication. The exact public Hexagon v1
+files and checksums are preserved in the [deposited edition](published/).

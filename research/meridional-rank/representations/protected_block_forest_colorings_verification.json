@@ -1,0 +1,189 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "braid": [
+    1,
+    2,
+    -3,
+    -3,
+    2,
+    -3,
+    -3,
+    2,
+    1,
+    1,
+    2,
+    2,
+    2,
+    -3
+  ],
+  "arithmetic": "exact finite permutations and integer graph ranks",
+  "source_sha256": {
+    "research/meridional-rank/representations/verify_protected_block_forest_colorings.py": "1491dd349307b4d7d655f2df6daa89ff0a62dc4c5852b090ef80b7cf82d41f9e",
+    "research/meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a"
+  },
+  "complete_cycle_normalized_census": [
+    {
+      "vertices": 2,
+      "first_color_representatives": 2,
+      "minimal_factorizations": 4,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 2
+    },
+    {
+      "vertices": 3,
+      "first_color_representatives": 2,
+      "minimal_factorizations": 12,
+      "outer_returning_factorizations": 3,
+      "cached_residuals": 5
+    },
+    {
+      "vertices": 4,
+      "first_color_representatives": 5,
+      "minimal_factorizations": 49,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 13
+    },
+    {
+      "vertices": 5,
+      "first_color_representatives": 6,
+      "minimal_factorizations": 163,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 33
+    },
+    {
+      "vertices": 6,
+      "first_color_representatives": 13,
+      "minimal_factorizations": 647,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 93
+    },
+    {
+      "vertices": 7,
+      "first_color_representatives": 19,
+      "minimal_factorizations": 1736,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 216
+    },
+    {
+      "vertices": 8,
+      "first_color_representatives": 33,
+      "minimal_factorizations": 4395,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 444
+    },
+    {
+      "vertices": 9,
+      "first_color_representatives": 42,
+      "minimal_factorizations": 6561,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 701
+    }
+  ],
+  "independent_first_color_normalized_reference_through": 6,
+  "reference_census": [
+    {
+      "vertices": 2,
+      "tree_factorizations": 4,
+      "outer_returning_factorizations": 0
+    },
+    {
+      "vertices": 3,
+      "tree_factorizations": 24,
+      "outer_returning_factorizations": 6
+    },
+    {
+      "vertices": 4,
+      "tree_factorizations": 234,
+      "outer_returning_factorizations": 0
+    },
+    {
+      "vertices": 5,
+      "tree_factorizations": 2964,
+      "outer_returning_factorizations": 0
+    },
+    {
+      "vertices": 6,
+      "tree_factorizations": 41040,
+      "outer_returning_factorizations": 0
+    }
+  ],
+  "permitted_component_vectors": [
+    [
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "component_witnesses": [
+    {
+      "vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "tuple": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "controls": {
+    "old_seed_occurrence_cycle_rank": 1,
+    "old_seed_outer_return": true,
+    "single_outer_relation_negative_control": true,
+    "explicit_nine_symbol_tree_rejected": true,
+    "packing_states": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        2
+      ]
+    ],
+    "four_double_transposition_forest_exists": false
+  },
+  "scope": {
+    "complete_domain": "all connected tree components of a four-involution tuple, each color a product of at most two disjoint transpositions; total at most eight occurrence edges",
+    "two_outer_relations_only": true,
+    "written_consequence": "Every local four-double-transposition U coloring has a nonzero occurrence-cycle; k disjoint blocks force transitive support v<=2b-k+1",
+    "no_transitive_nine_symbol_coloring": true,
+    "all_local_support_at_most_eight": "not asserted for disconnected actions",
+    "prime_gap_two_realization": false,
+    "formal_verification": false,
+    "external_review": false,
+    "historical_priority": false
+  }
+}

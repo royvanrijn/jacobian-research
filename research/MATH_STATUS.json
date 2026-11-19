@@ -514,7 +514,7 @@
           "external_review": false,
           "verification_note": "Two focused internal proof audits and an exact symbolic checker support the first-four-moment elimination and integer Bezout identity printed in Theorem 5.6. The checker compares sphere moments with original four-variable contractions at m=1..4 over all symbolic parameters, including (5m+1)! normalization. The checker names the W coefficient d; the note names it e. No arbitrary-quintic prefix theorem, independent replay, formal verification, external review or novelty claim.",
           "dependency_coverage": "partial",
-          "graph_scope_note": "Only the exact scoped internal deduction is asserted. Broader primitive odd-degree and complex-profile questions remain open; assurance flags do not propagate."
+          "graph_scope_note": "Only the exact affine-multiplier exclusion is proved. Arbitrary primitive quintics and other odd prime degrees remain open; the nonlinear odd-composite construction is separate."
         },
         {
           "id": "TWO-PAIR-IMAGE-CUBIC",
@@ -844,6 +844,27 @@
             }
           ],
           "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim."
+        },
+        {
+          "id": "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+          "title": "Primitive two-pair Image witnesses in every odd composite degree",
+          "state": "proved",
+          "scope": "Over every characteristic-zero field, every odd composite balanced degree d admits an explicit rational R-primitive, non-proper-power two-pair Image witness F_d with all positive pure contractions zero and one fixed marker Q_d=Z^(a-1), for a chosen factorization d=ab with odd3<=a<=b, whose mixed contractions are nonzero at every positive even order. Degree9 has the explicit closed formula. Odd prime degrees, including5 and7, remain open.",
+          "canonical_source": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "checker": "foundations/extended-geometry/verify_odd_primitive_two_pair_image.py",
+          "artifact_hash": "sha256:506203187ec8e26e77bce8cfe5284f1e8f55c00f1af6dacfca80025a11924b09",
+          "evidence": [
+            "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+            "foundations/extended-geometry/odd_primitive_two_pair_image_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "all-order polynomial endpoint argument and explicit homogeneous construction",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
         }
       ],
       "open_questions": [
@@ -876,6 +897,12 @@
           "source": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
           "kind": "verification",
           "node": "VERIFY-IMAGE2-NULLCONE-APPLICATION"
+        },
+        {
+          "question": "Construct or exclude primitive two-pair Image witnesses in odd prime balanced degrees, starting with5 and7.",
+          "source": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "kind": "mathematical",
+          "node": "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
         }
       ],
       "scope_notes": [
@@ -890,7 +917,8 @@
         "For ternary Gaussian phases of degree at most three, the invariant/orbit/height argument proves universal geometric purity prefix>=16; first15 moments do not force purity, with an algebraic-coefficient witness and an unspecified later nonzero moment. The exceptional full moment scheme is nonreduced, tangent dimension10 versus reduced dimension4. The exact global threshold remains open. Higher shears separately give arbitrary Gaussian or sphere moment interpolation through explicit quadratic lengths M_d; no optimality is asserted.",
         "For rational polynomial phases and polynomial differential symbols, graph-elimination generation and checked nonnegative-power specialization support the actual-power selector. Its safe outputs have sufficient cutoffs, with a separate premise for pure-linear bounds.",
         "In two real Gaussian variables, eventual pure vanishing, purity, one strict circular-weight sign and all-marker safety are equivalent. If the angular weights fail separation, one fixed prime dilation gives nonzero moments at every sufficiently large prime.",
-        "For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff."
+        "For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff.",
+        "Primitive non-proper-power Image witnesses now exist in every composite balanced degree>=4, by the even height family and the new odd-composite nonlinear dilation. Odd prime degrees>=5 remain the degree frontier; nine is an exhibited odd degree, not a minimum theorem."
       ],
       "gap_ids": [
         "MOMENTS-SAFETY-PURITY",
@@ -928,7 +956,8 @@
         "VERIFY-GAUSSIAN-H21-CURRENT-PROOF",
         "GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE",
         "GAP-IMAGE2-PRIMITIVE-QUINTIC-COVERAGE",
-        "VERIFY-IMAGE2-NULLCONE-APPLICATION"
+        "VERIFY-IMAGE2-NULLCONE-APPLICATION",
+        "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
       ]
     },
     {
@@ -5783,7 +5812,7 @@
         },
         {
           "id": "MRC-MULTIPLE-PROTECTED-KNOTS",
-          "title": "Multiple protected augmentation defects and a literal-coloring barrier",
+          "title": "Multiple protected augmentation defects and explicit knot closures",
           "state": "proved",
           "scope": "For every b>=4k,k>=1 and ell>=0 the displayed P_k R_(k,b)^(1+(b-2k)ell) closes to a knot, its tail fixes every protected free meridian, and ordinary complex augmentation rank is at most b-ceil(k/2) under the stated U=1,mu!=1 correspondence. k=4,b=16 gives ar_C<=14. Matching meridional rank, bridge equality, primeness and hyperbolicity are not established.",
           "canonical_source": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
@@ -5801,6 +5830,46 @@
           "dependency_coverage": "partial",
           "graph_scope_note": "Only the exact stated theorem is proved. The full research goal and separately recorded larger gaps remain open.",
           "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim."
+        },
+        {
+          "id": "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER",
+          "title": "A universal coloring obstruction for disjoint protected blocks",
+          "state": "proved",
+          "scope": "For b double-transposition meridian colors containing k disjoint protected U strand blocks with both outer closures, every transitive action on v symbols satisfies v<=2b-k+1; k>=2 excludes the natural A_(2b) quotient. Combined solely with the earlier weaker ar<=b-ceil(k/2), these two bounds certify gap at most1. The separately proved stronger ar<=b-k leaves a conditional gap of ceil(k/2) if a compatible coloring and knot closure exist. No actual gap is bounded above.",
+          "canonical_source": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "checker": "meridional-rank/representations/verify_protected_block_forest_colorings.py",
+          "artifact_hash": "sha256:1491dd349307b4d7d655f2df6daa89ff0a62dc4c5852b090ef80b7cf82d41f9e",
+          "evidence": [
+            "meridional-rank/representations/protected_block_forest_colorings_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "complete exact finite census plus written component-reduction and cycle-space proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
+        },
+        {
+          "id": "MRC-TWO-SIDED-PROTECTED-DEFECTS",
+          "title": "Two-sided protected defects give augmentation rank at most b-k",
+          "state": "proved",
+          "scope": "Every protected U block forces both a root and a covector dependence over any field with common nonzero meridian determinant, including mu=1 and characteristic2. For k disjoint blocks in the stated protected knot closure, r,q<=b-k; in the conventional complex U=1,mu!=1 setting, ar_C<=b-k. The existing explicit K_(k,b,ell) knots satisfy this bound: k3,b12 gives ar_C<=9. Compatible meridional lower bounds, augmentation gap2, primeness and hyperbolicity remain open.",
+          "canonical_source": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "checker": "meridional-rank/representations/verify_two_sided_protected_obstructions.py",
+          "artifact_hash": "sha256:1c1f13c08239fa88b8979de9318f01449732d0e12b52228210e083d59f0272d7",
+          "evidence": [
+            "meridional-rank/representations/two_sided_protected_obstructions_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "covector-only signed-relation proof, exact duality and disjoint-support kernels",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
         }
       ],
       "open_questions": [
@@ -5870,7 +5939,8 @@
         "Protected-tail rank-one obstructions give explicit knots with ar_C<=b-1<mr=br=b for every b>=5. Certified hyperbolic parents give infinite prime tails at bridges five and six and every sufficiently large bridge number through one fixed three-cusped parent. Uniform bridge/filling thresholds remain non-effective. The old five-strand S6 quotient obstruction does not affect the new protected families.",
         "A three-meridian generating tuple gives the actual deck inversion on a two-generator branched-cover group. The geometric frontier is the existence of a compatible splitting into trivial three-string quotients. The trefoil test shows that orbifold generation of a specified triple can coexist with proper original lifts, and finite relative nilpotent stages do not detect that example.",
         "The direct F13 braid trace certificate proves mr=b=4 for T(4,5;2,2), excluding EVERY meridian triple, including all309 survivors of the earlier bounded panel. No simplified-presentation, peripheral-software, hyperbolicity or preprint input is needed for this rank bound. The previous nilpotent-fibre and lifting counterchecks remain method barriers; the universal three-meridian frontier remains open.",
-        "Multiple disjoint protected U blocks supply an arbitrary-field sum-of-defects theorem and explicit band-tail knots. The augmentation upper bound does not supply a meridional lower bound or primeness. The literal old A8 seed has a seven-edge deficit that prevents its support-graph argument from certifying gap greater than one."
+        "Multiple disjoint protected U blocks supply an arbitrary-field sum-of-defects theorem and explicit band-tail knots. The augmentation upper bound does not supply meridional rank or primeness. A complete tree-component census now proves v<=2b-k+1 for EVERY transitive double-transposition coloring of k disjoint protected blocks; changing the old local colors cannot overcome this support-graph barrier.",
+        "The signed seven-relation core now bounds each span separately, giving r,q<=b-k and ar_C<=b-k for the explicit protected knot family without a preserved form. Three blocks permit the conditional12-strand/22-symbol gap-two target. The universal coloring budget remains valid; no compatible global coloring or prime gap-two example is asserted."
       ],
       "gap_ids": [
         "GOAL-MRC",
@@ -5888,7 +5958,7 @@
     {
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
-      "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion papers are submitted to Hexagon with moderation pending: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11.",
+      "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11.",
       "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case now has the complete exact sumset: the five admissible mod8 classes with only exceptions3,4, as well as pointwise logarithmic value counts. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder. Classical nonmaximal-level Hecke transfer and a positive five-adic tree operator now prove an effective primitive x^2+5y^2 sum theorem for EVERY admissible N>=2^66, with ordered value count>=N^(2/3)/6000. Class-zero multiplier descent and atomic seed estimates reduce exact completion to reduced cores below2^29; the authenticated full2^29 scan closes that finite input. The exact global exception list is now proved to be3,4, with both reduction directions recorded.",
       "readme": "arithmetic/README.md",
       "results": [
@@ -9632,6 +9702,27 @@
               "value": 5
             }
           ]
+        },
+        {
+          "id": "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE",
+          "title": "Uniform split-target gcd estimates for the discriminant -23 norm sum",
+          "state": "proved",
+          "scope": "Let Q=x^2+xy+6y^2 and N=p^t m for a split rational prime p!=23, t>=1, gcd(m,23p)=1. If b counts signed ordered Q+Q representations outside pO with either binary block divisible by p, then with w=3/11, abs(b-16w p^(t-1)sigma(m)/(p+1))<=16t p^(t/2)tau(m)sqrt(m); at t=1 error<=8tau(m)sqrt(m). This addresses the target-dividing split-prime branch only; content terms, simultaneous small-prime filters and the full exact primitive -23 sumset remain open.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "checker": "arithmetic/verify_primitive_norm_minus23_split_targets.py",
+          "artifact_hash": "sha256:fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+          "evidence": [
+            "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+            "arithmetic/primitive_norm_minus23_split_target_checks.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "written positive Iwahori correspondence, full complementary spectral estimate and exact signed-return normalization",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
         }
       ],
       "open_questions": [
@@ -9938,7 +10029,7 @@
       ],
       "scope_notes": [
         "For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.",
-        "Companion submissions, author-reported on 2026-11-19: Pointwise Correlations of Quadratic Form Values and Splitting Semigroups (hexagon:2611.00672) and Exact Sumsets of Primitive Quadratic Norms (hexagon:2611.00673) are both pending moderation, with current editions in results/. The flagship contains CK/Smilansky ordinary fixed-shift asymptotics, shared arithmetic-model comparison, subgroup/coset sums, independent classical genus comparison and explicit primitive-form leading terms for fixed discriminants in one common quadratic field. The exact companion independently classifies all four discriminants -3,-7,-8,-11 with its existing certificates. Its proof does not depend on the flagship or the recent zero-free/graph inputs. Reciprocal companion citations express context rather than a proof implication. Submission implies no public release, external mathematical review, independent replay, formal verification or priority upgrade; the reserved Zenodo DOIs remain separately scoped until public records are verified.",
+        "Companion preprints published on Hexagon on 2026-11-19: Pointwise Correlations of Quadratic Form Values and Splitting Semigroups (hexagon:2611.00672v1) and Exact Sumsets of Primitive Quadratic Norms (hexagon:2611.00673v1), with current editions in results/ and verified public deposits preserved under published/. The flagship contains CK/Smilansky ordinary fixed-shift asymptotics, shared arithmetic-model comparison, subgroup/coset sums, independent classical genus comparison and explicit primitive-form leading terms for fixed discriminants in one common quadratic field. The exact companion independently classifies all four discriminants -3,-7,-8,-11 with its existing certificates. Its proof does not depend on the flagship or the recent zero-free/graph inputs. Reciprocal companion citations express context rather than a proof implication. Public deposit does not establish external mathematical review, independent replay, formal verification or historical priority; the reserved Zenodo DOIs remain separately scoped until their public records are verified.",
         "For every fixed imaginary quadratic order, with arbitrary class group, primitive principal norm self-sums contain every sufficiently large pair-primitive locally admissible target. The local set is periodic with an explicit conductor-sensitive modulus; PL3All gives a closed table for every maximal order. Within fixed genera, finer class data leave the full leading coordinate convolution unchanged, with O_epsilon(N^(7/8+epsilon)) difference. This is an explicit consequence of the existing quaternary theorem. This coordinate-count route supplies no numerical general cutoff or unweighted leading constant. The separate value-correlation source records the latter conclusion using its stated analytic imports.",
         "Six-prime coefficient: tests at 2,3,5,11,17,53 have exact coefficient2081912199403/9893175318390 and certified-field coefficient13361/114520, with square-root logarithmic error. Earlier prefix coefficients retain their exact finite scopes.",
         "Affine image: Serre and the uniform Kummer index give an open rank-two adelic affine image over each fixed number field. Outside a finite auxiliary set, complete affine factors are independent of the entire exceptional image. No numerical threshold or independence across varying residue primes is claimed.",
@@ -10038,7 +10129,8 @@
         "Erdos675 is deferred as a separate stretch goal for later research. Its notes, exact checks and partial results are retained outside the current norm-counting and binary-correlation papers; no paper result depends on this programme.",
         "Fix one imaginary quadratic field and two fixed orders of discriminantsDelta_i=f_i\u00b2D0. LetQ_i,Q_i_prime be primitive positive definite integral forms in the same genus for each sloti separately; the two slot genera may differ. Mixed primitive numerical-value counts have sharp order N J_S(N)/logN on every sufficiently large common locally admissible target and vanish outside it, S|2Delta1Delta2. Their ratio is1+O(log^-etaN), every0<eta<min_i delta_star(2Pic_i), with delta_star(0)=infinity encoding an exact zero class error. Constants/onsets depend on fixed forms/orders andeta; exponent1/5 works if any doubled group is nontrivial. Both-trivial groups give equal counts for every target. This classical assertion uses no ZF/G and no joint ring-class prime theorem. No genus is identified across discriminants, no different-field or varying-order theorem, no endpoint or quantitative full-leading remainder is asserted.",
         "For two fixed primitive positive definite forms of discriminantsDelta_i=f_i\u00b2D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route.",
-        "The primitive x^2+5y^2 binary sumset is globally exact: N>=2, Nmod8 in{2,3,4,6,7}, excluding only3,4. The internal proof retains all classical spectral imports, the positive five-adic operator, core/atomic seed intervals, and independently authenticated coordinate/genus flags through2^29. Both multiplier-descent implications are recorded. External review and historical priority remain separate."
+        "The primitive x^2+5y^2 binary sumset is globally exact: N>=2, Nmod8 in{2,3,4,6,7}, excluding only3,4. The internal proof retains all classical spectral imports, the positive five-adic operator, core/atomic seed intervals, and independently authenticated coordinate/genus flags through2^29. Both multiplier-descent implications are recorded. External review and historical priority remain separate.",
+        "The -23 target-dividing split-prime branch now has an all-valuation positive Iwahori correspondence and explicit gcd estimate, including its nonspherical complementary sector. An independent complete p=2 Brandt computation checks the signed return normalization through2^12. The full exact -23 sumset still needs the remaining global sieve and finite bridge."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -10208,6 +10300,26 @@
           "verification_note": "The retained formal source and project scope are the evidence. No Lean build was rerun during this cleanup; explicit theorem assumptions and unformalized portions remain as stated.",
           "dependency_coverage": "partial",
           "graph_scope_note": "Graph conclusion is exactly the stated scoped result, including a partial formalization or proved reduction where recorded. It does not assert a full conjecture. Source proof imports remain partially expanded."
+        },
+        {
+          "id": "HOPF-COMPLEX-QUADRATIC-HEIGHT",
+          "title": "Complete complex quadratic-height classification and exact finite moment ideals",
+          "state": "proved",
+          "scope": "Over every characteristic-zero field, the full polynomial winding-one class p=x^-1(C+t^2D) is pure exactly in the two stated safe/affine branches; its only unsafe phases are quartic Hopf rescalings. On the c0-invertible universal coefficient branch, every prefix moment ideal equals the corresponding coefficient prefix of E=(C-xCprime)^2D+C^3. The full ideal is generated by M=max(2deg_bound C+deg_bound D,3deg_bound C) moments, with sufficient rectangle bound3d+2 for degrees(d,d+2). Ordinary ideals are preserved; radicality and nilpotence indices are not claimed.",
+          "canonical_source": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "checker": "foundations/extended-geometry/verify_hopf_quadratic_height_classification.py",
+          "artifact_hash": "sha256:3918501e34856dac838bfcc473471f638c5aa9dae8f1a2ddd713f12a70816afa",
+          "evidence": [
+            "foundations/extended-geometry/hopf_quadratic_height_classification_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "universal formal triangular identities, elementary polynomial root argument and ordinary-ideal proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
         }
       ],
       "open_questions": [
@@ -10234,7 +10346,8 @@
         "Formal verification is scoped by exact declarations, transitive assumptions and the paper bridge. A paper theorem does not imply that its full formalization is complete.",
         "GMC2 retains two explicit mathematical axiom interfaces, shown as open formalization obligations. Its propagated formal claim remains conditional until discharged; its written mathematical theorem has separate proof support.",
         "Binary GVC and generic tangent-pencil geometry are partial formalizations. The focused finite-etale certificate excludes the broader supplied-presentation and analytic counting scopes. No Lean build was rerun for this registry migration.",
-        "The retained two-pair Image cubic proof covers exact bihomogeneous bidegree (3,3), with sharp mixed cutoff and minimum failing balanced degree four. Independent review and formal coverage are separate obligations."
+        "The retained two-pair Image cubic proof covers exact bihomogeneous bidegree (3,3), with sharp mixed cutoff and minimum failing balanced degree four. Independent review and formal coverage are separate obligations.",
+        "The entire complex polynomial winding-one quadratic-height numerator class is classified. On the nonzero constant-coefficient branch, its ordinary full moment ideal is exactly the finite coefficient ideal of (C-xCprime)^2D+C^3. The higher Hopf residual gap is discharged at this scope; general profiles and nilpotence indices are separate."
       ],
       "gap_ids": [
         "FORMAL-BINARY-GVC-COMPLETE",
@@ -10499,7 +10612,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 1.1 and Sections 2-4 all-order proofs; Section 6 scope limits"
           },
           {
@@ -33943,7 +34056,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem1.1;Sections3-4"
           }
         ],
@@ -33961,7 +34074,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Complete retained internal proof; exact statement locators on outgoing implications"
           }
         ],
@@ -33979,7 +34092,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Section5"
           }
         ],
@@ -33997,7 +34110,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Reproduction finalLean integration seam"
           }
         ],
@@ -34015,7 +34128,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Section2 Proposition2.1"
           }
         ],
@@ -34033,7 +34146,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Complete retained internal proof; exact statement locators on outgoing implications"
           }
         ],
@@ -34051,7 +34164,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Sections3-4"
           }
         ],
@@ -34064,12 +34177,12 @@
         "id": "HOPF-MINIMUM-T2-LINEAR",
         "kind": "claim",
         "title": "Minimum t-square-linear rigidity",
-        "scope": "Complete minimum-degree t\u00b2-linear numerator class has the stated unique Long template and finite coefficient reconstruction; higher-degree residual ideals remain unclassified.",
+        "scope": "The minimum-degree t^2-linear numerator class has the stated unique Long template and finite coefficient reconstruction. The full arbitrary-degree extension and exact residual ideal presentation are separately proved in Section8.",
         "status": "open",
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Sections5-6"
           }
         ],
@@ -34082,13 +34195,13 @@
         "id": "GAP-HOPF-HIGHER-RESIDUAL-IDEALS",
         "kind": "gap",
         "title": "Higher Hopf residual ideals",
-        "scope": "Classify higher-degreeweighted residualideals after pure-jet reconstruction ofD; d-1remainingweightedparameters are notsolvedbyProposition6.2.",
+        "scope": "For every degree rectangle, determine the higher pure-jet residual equations after triangular reconstruction of D, including an exact ordinary coefficient-ideal presentation and all field-valued solutions. Section8 now gives E=(C-xCprime)^2D+C^3 and the sufficient prefix max(2h+k,3h) with c0 invertible; it does not assert radicality or a general nilpotence index.",
         "status": "open",
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
-            "locator": "EndSection6"
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+            "locator": "Sections 6 and 8, former residual obligation and exact ordinary-ideal completion"
           }
         ],
         "topic": "foundations",
@@ -36858,7 +36971,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Section 5: Invariant padding and the remaining primitive frontier"
           }
         ],
@@ -36877,7 +36990,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 5.5 moment proof, equations (5.13)-(5.17): parity and adjacent Taylor coefficients"
           }
         ],
@@ -36895,7 +37008,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 5.5, equations (5.11)-(5.17), and algebraic coefficient formula (4.2)"
           }
         ],
@@ -36913,7 +37026,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 5.5 primitivity proof, equation (5.18), bilinear coefficient matrices and two D specializations"
           }
         ],
@@ -36931,7 +37044,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Section 2, equations (2.1)-(2.2); elementary dual-degree monomial reduction in the cited kernel proof"
           }
         ],
@@ -36949,7 +37062,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Lemma 5.1, equation (5.1), and its coefficient-substitution proof"
           }
         ],
@@ -36967,7 +37080,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorems 5.4-5.5: specialize the height family to k=2h-2"
           }
         ],
@@ -36985,7 +37098,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 5.5 at k=0 and Section 6 exact least balanced degree consequence"
           }
         ],
@@ -37012,7 +37125,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Section 5: Invariant padding and the remaining primitive frontier"
           }
         ],
@@ -37030,7 +37143,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 5.6, equations (5.20)-(5.24), symbolic moments and integer Bezout certificate"
           },
           {
@@ -37082,7 +37195,7 @@
           },
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "End of Section7,lines681-686;Theorem7.1 and Proposition7.3"
           }
         ]
@@ -37241,7 +37354,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Theorem 7.1, equations (7.1)-(7.7)"
           }
         ],
@@ -37259,7 +37372,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Lemma 7.2, equations (7.8)-(7.11)"
           }
         ],
@@ -37289,7 +37402,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Proposition 7.3, equations (7.12)-(7.14), associated graded and R=0 proofs"
           }
         ],
@@ -37307,7 +37420,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 5.2 and Section 6 moment-nullcone assertions"
           }
         ],
@@ -37327,7 +37440,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Section 2 immediately after (2.2): elementary monomial induction and explicit all-rank generalization"
           }
         ],
@@ -37383,7 +37496,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Source for the Image framework: Theorem 2.8 application with all hypotheses"
           }
         ],
@@ -37401,7 +37514,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Theorem 1.1 and exact one-pair application in Source for the Image framework"
           }
         ],
@@ -37428,7 +37541,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Source for the Image framework, final spectator-pair paragraph"
           }
         ],
@@ -37446,7 +37559,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-            "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+            "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
             "locator": "Source for the Image framework: exact one-pair theorem application and final spectator-pair extension"
           }
         ],
@@ -37464,7 +37577,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Proposition7.3,equations(7.13)-(7.14),lines614-655"
           }
         ],
@@ -37491,7 +37604,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "Proposition7.3 and arbitrary original-marker bridge,equation(7.15),lines656-679"
           }
         ],
@@ -37518,7 +37631,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-            "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
             "locator": "End of Section7,lines681-686;Theorem7.1 and Proposition7.3"
           }
         ],
@@ -89799,7 +89912,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "dbb93e03c5eb2efb6be21a15c0c6597860d139e8a0d2f9f459ec56b3acb2b468",
+            "sha256": "7a5995030bc2448d9a266f95badd5fc5eee8cbadec7be60988473ac3ee6e7b37",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           }
         ],
@@ -90679,7 +90792,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "dbb93e03c5eb2efb6be21a15c0c6597860d139e8a0d2f9f459ec56b3acb2b468",
+            "sha256": "7a5995030bc2448d9a266f95badd5fc5eee8cbadec7be60988473ac3ee6e7b37",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -90702,7 +90815,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "dbb93e03c5eb2efb6be21a15c0c6597860d139e8a0d2f9f459ec56b3acb2b468",
+            "sha256": "7a5995030bc2448d9a266f95badd5fc5eee8cbadec7be60988473ac3ee6e7b37",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -90988,7 +91101,7 @@
       {
         "id": "GAP-PRIMITIVE-NORM-EXACT-23",
         "title": "Exact discriminant -23 primitive norm sumset exceptions",
-        "scope": "Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen.",
+        "scope": "Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen. The separate split-target gcd estimate now supplies that local branch but does not discharge the global sieve or finite bridge.",
         "kind": "gap",
         "status": "open",
         "topic": "arithmetic",
@@ -91800,7 +91913,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "dbb93e03c5eb2efb6be21a15c0c6597860d139e8a0d2f9f459ec56b3acb2b468",
+            "sha256": "7a5995030bc2448d9a266f95badd5fc5eee8cbadec7be60988473ac3ee6e7b37",
             "locator": "Targeted historical review: exact comparison, verified overlaps, access limitations and qualified verdict"
           },
           {
@@ -96389,7 +96502,7 @@
         "sources": [
           {
             "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-            "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+            "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
             "locator": "Complete proof, Sections 1-5"
           },
           {
@@ -96399,7 +96512,7 @@
           },
           {
             "path": "meridional-rank/representations/multiple_protected_obstructions_verification.json",
-            "sha256": "868eb05489acb37eefdb7978cc835fa8be605d317775a106cb5991ef3b95c1c3",
+            "sha256": "0adf2f9f039a28e41ce207d95525e40e079f6bff2373932bd565cc59e5bd7028",
             "locator": "Recorded bounded controls"
           },
           {
@@ -96443,7 +96556,7 @@
         "id": "GAP-MRC-PRIME-GAP-TWO-REALIZATION",
         "kind": "gap",
         "title": "Realize a hyperbolic prime augmentation gap of at least two",
-        "scope": "Construct a hyperbolic prime knot with mr-ar_C>=2. Four disjoint protected blocks supply ar<=b-2 but no matching meridional lower bound. Literal old alternating seed stacking cannot obtain the needed lower bound from its support-graph argument. New local colors, stronger two-sided defects, different packing or another meridional invariant are required before prime realization.",
+        "scope": "Construct a hyperbolic prime knot with mr-ar_C>=2. Two-sided protected defects now prove ar<=b-k for k disjoint U blocks, while every transitive double-transposition coloring still has v<=2b-k+1. A compatible k3,b12 protected knot closure with a transitive22-symbol image would give mr>=11 and ar<=9, hence gap>=2; compatibility and knot closure are not yet established, and prime/hyperbolic realization remains further work. The old augmentation sum-defect estimate is superseded for this target.",
         "status": "open",
         "topic": "meridional-rank",
         "origin": "internal",
@@ -96453,8 +96566,13 @@
         "sources": [
           {
             "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-            "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+            "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
             "locator": "Sections 2-4, proved partial construction and precise coloring obstruction"
+          },
+          {
+            "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+            "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+            "locator": "Section4, exact new conditional target and remaining obligations"
           }
         ]
       },
@@ -96743,6 +96861,370 @@
         "topic": "moments",
         "origin": "internal",
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-MRC-PROTECTED-FOREST-CENSUS",
+        "kind": "source",
+        "title": "Complete exact protected-block forest census",
+        "scope": "The literal fourteen-letter signed U action, exact tree-component domain n=2..9, exhaustive cycle-normalized search and separate reference normalization through n=6, together with the written forest reduction and global cycle-space proof.",
+        "status": "proved",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+            "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+            "locator": "Section 4.1, Theorem 3 and complete finite reduction"
+          },
+          {
+            "path": "meridional-rank/representations/verify_protected_block_forest_colorings.py",
+            "sha256": "1491dd349307b4d7d655f2df6daa89ff0a62dc4c5852b090ef80b7cf82d41f9e",
+            "locator": "Complete main census, reference search and explicit controls"
+          },
+          {
+            "path": "meridional-rank/representations/protected_block_forest_colorings_verification.json",
+            "sha256": "13ec7a6f12f311daa21a41b4e70611ea4c8cf239eb6db1a06a215f3de4158ed4",
+            "locator": "All component degrees, exact counts and scope"
+          }
+        ]
+      },
+      {
+        "id": "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+        "kind": "claim",
+        "title": "The only protected tree component has edge vector (0,0,1,1)",
+        "scope": "For all connected occurrence-tree components of a four-involution U tuple, each color having at most two transpositions and total at most eight edges, both outer entries return only for n=3 and edge-count vector (0,0,1,1). Isolated fixed symbols are omitted.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+        "kind": "claim",
+        "title": "Protected tree components cannot assemble four double transpositions",
+        "scope": "No finite multiset of admissible outer-returning tree-component vectors sums to (2,2,2,2). The admissible components are defined by the literal U action, not by sampling.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-PROTECTED-OCCURRENCE-CYCLE",
+        "kind": "claim",
+        "title": "Every protected double-transposition block has an occurrence cycle",
+        "scope": "For any four double transpositions on any finite symbol set satisfying the two outer-return identities of U, the eight-edge occurrence multigraph has a nonzero F2 cycle vector. Parallel transposition occurrences are distinct edges. Disconnected total support is not bounded by eight.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-IMAGE2-ODD-COMPOSITE",
+        "kind": "source",
+        "title": "Nonlinear height dilation, odd-composite lifts and exact controls",
+        "scope": "Rational written endpoint-divisibility proof for all r>=1,s>=0,m>=1, original two-pair radial normalization, explicit homogeneous lifts, R=0 evaluation and exact irreducible T multiplicity. Finite checker and source review scopes are separate.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+            "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+            "locator": "Theorem OddCompositeImage, Lemma NonlinearHeightMoments and O1-O17"
+          },
+          {
+            "path": "foundations/extended-geometry/verify_odd_primitive_two_pair_image.py",
+            "sha256": "506203187ec8e26e77bce8cfe5284f1e8f55c00f1af6dacfca80025a11924b09",
+            "locator": "Original four-variable contractions and separate angular endpoint controls"
+          },
+          {
+            "path": "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+            "sha256": "d9832f95cd88a037cae6b18d5a16d9108018029ad9b4d981ae7506caf171851b",
+            "locator": "Exact primary statements, internal review and limits"
+          },
+          {
+            "path": "foundations/extended-geometry/odd_primitive_two_pair_image_verification.json",
+            "sha256": "44110e9b93dc7368437a14bc56b06d55ed30173dd72c88904f3c97fc291504d2",
+            "locator": "Six original-contraction parameter cases and 200 angular parameter/order cases"
+          }
+        ]
+      },
+      {
+        "id": "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+        "kind": "claim",
+        "title": "All-order nonlinear height-dilation angular moments",
+        "scope": "For r>=1,s>=0, A=1+x, H(u)=u(1-u^2)^r S_s(u^2), p=x^(-r)A^r H(tA^(2r)), with S_0=1 and S_s(v)=1+v^s for s>0, the normalized quadric functional has L(p^m)=0 and L(x^(2r)p^m)=C_m=(1/2)integral[-1,1]H(u)^m du for every m>=1. C_m vanishes at odd m and is positive rational at even m.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+        "kind": "claim",
+        "title": "Exact original contractions for the odd-composite family",
+        "scope": "For every characteristic-zero field and r>=1,s>=0,m>=1, the explicit F_(r,s) of degree d=(2r+1)(2r+1+2s) satisfies E2(F^m)=0 and E2(Z^(2r)F^m)=(dm+2r+1)! C_m, where C_m is the specified rational profile mean. In degree9 C_m=2^m m!/product_(j=0..m)(m+2j+1) for even m and zero for odd m.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+        "kind": "claim",
+        "title": "Odd-composite lifts are R-primitive and not proper powers",
+        "scope": "For every characteristic-zero field and r>=1,s>=0, F_(r,s) mod R=(-1)^r T^b Z^(2rb), b=2r+1+2s; its value at (1,1,1,-1) is (-1)^r2^b. The absolutely irreducible bilinear T occurs with exact multiplicity one, excluding proper powers even after scalar multiplication and field extension.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-ALL-COMPOSITE-PRIMITIVE",
+        "kind": "claim",
+        "title": "Every composite balanced degree admits a primitive Image witness",
+        "scope": "For every characteristic-zero field and every composite integer d>=4 there exists an R-primitive, non-proper-power balanced two-pair Image counterexample with a fixed marker violating eventual mixed vanishing. Even d use the retained height family; odd d use nonlinear height dilation. No obstruction for odd primes is asserted.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAP-IMAGE2-ODD-PRIME-PRIMITIVE",
+        "kind": "gap",
+        "title": "Primitive Image witnesses in odd prime balanced degrees",
+        "scope": "Determine whether any R-primitive two-pair Image witness exists in odd prime balanced degree, beginning with5 and7. Every even degree>=4 and every odd composite degree is now supplied. The affine-multiplier quintic exclusion and real single-affine-profile classification do not cover arbitrary complex quintics or nonlinear multiple-profile constructions.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+            "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+            "locator": "Statement and Section 5, exact remaining scope"
+          }
+        ]
+      },
+      {
+        "id": "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT",
+        "kind": "source",
+        "title": "Complete complex quadratic-height reconstruction and exact ideal proof",
+        "scope": "Self-contained written all-order formal uniqueness and derivative identity, unrestricted polynomial root argument, singular branch, original degree bridge and ordinary coefficient-ideal presentation, with separately scoped finite controls.",
+        "status": "proved",
+        "topic": "foundations",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+            "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+            "locator": "Section 8, Theorems 8.1 and 8.2, equations 8.1-8.11"
+          },
+          {
+            "path": "foundations/extended-geometry/verify_hopf_quadratic_height_classification.py",
+            "sha256": "3918501e34856dac838bfcc473471f638c5aa9dae8f1a2ddd713f12a70816afa",
+            "locator": "Rational formal reconstruction, independent triangular solve, polynomial division and ideal coefficient controls"
+          },
+          {
+            "path": "foundations/extended-geometry/hopf_quadratic_height_classification_verification.json",
+            "sha256": "d9179469b8fac972e26cdeccc4044b3dcd35e105ed662b14e531e845817f2fbd",
+            "locator": "Seven rational fixtures through order ten, 210 triangular and 70 coefficient controls"
+          }
+        ]
+      },
+      {
+        "id": "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+        "kind": "claim",
+        "title": "The unique pure quadratic-height formal series is rational",
+        "scope": "Over every characteristic-zero field, for formal C with c0=C(0)!=0 and D(0)=-c0, all pure jets [x^m]integral_0^1(C+t^2D)^m dt vanish iff D=-C^3/(C-xCprime)^2. Both implications use exact formal series; no finite prefix for arbitrary formal C is asserted.",
+        "status": "open",
+        "topic": "foundations",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+        "kind": "claim",
+        "title": "Every quadratic-height moment prefix has the same coefficient-ideal presentation",
+        "scope": "For universal Q[c0,c0^-1,c1..ch,d1..dk], C=sum ci x^i and D=-c0+sum di x^i, put E=(C-xCprime)^2D+C^3. For every N>=1, the ordinary ideals of the first N pure jets, the first N coefficients of D+C^3/(C-xCprime)^2, and the first N coefficients of E coincide. For M=max(2h+k,3h), these equal the full infinite moment ideal. Base change with c0 invertible is allowed; no radicality or nilpotence-index claim.",
+        "status": "open",
+        "topic": "foundations",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+        "kind": "claim",
+        "title": "All complex polynomial winding-one quadratic-height phases are classified",
+        "scope": "For any characteristic-zero field and arbitrary polynomials C,D with C0+D0=0, p=x^-1(C+t^2D) is pure iff either x^2 divides both C,D, or C=c0+c1x with c0!=0 and D=-C^3/c0^2. The first branch is strictly positive weight; the second is safe exactly when c1=0. No degree restriction or reality assumption is used.",
+        "status": "open",
+        "topic": "foundations",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+        "kind": "claim",
+        "title": "Unsafe quadratic-height phases have least balanced degree exactly four",
+        "scope": "In the entire complex polynomial winding-one quadratic-height numerator class, every unsafe phase is a scalar/torus rescaling of the retained quartic and has a fixed x marker surviving at every positive power. Its least balanced lift degree is4; every higher balanced lift is divisible by R. Thus no R-primitive degree5,7 or higher Image failure arises inside this class.",
+        "status": "open",
+        "topic": "foundations",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-ARITH-D23-SPLIT-TARGET-GCD",
+        "kind": "source",
+        "title": "Split-target coordinate gcd correspondence and exact return controls",
+        "scope": "Complete written all-valuation endpoint and Iwahori argument with explicit complementary-space restriction, principal mass and signed unit normalization. Finite original-coordinate, class-mass and edge-return controls have their recorded finite domains.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+            "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+            "locator": "Theorem CN3SplitTargetGcd and Sections1-5"
+          },
+          {
+            "path": "arithmetic/verify_primitive_norm_minus23_split_targets.py",
+            "sha256": "fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+            "locator": "Local matrix/lift/HNF controls and complete three-class Brandt construction"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus23_split_target_checks.json",
+            "sha256": "70aead73910732a9d74593456e5d04b160362b084149e9d52e5c4d8853adda88",
+            "locator": "Recorded finite exact counts and matrices"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+            "sha256": "3b7955c14f4818acd9580fb23041b1dd399050baefe3f294b20e75e6ce8e3f82",
+            "locator": "Pinned primary imports, hypotheses and two internal reviews"
+          },
+          {
+            "path": "arithmetic/sources/voight-quaternion-algebras-author.pdf",
+            "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+            "locator": "Author edition1.0.7u, Theorem25.1.1; Section23.5; Propositions41.3.1 and41.3.6"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+        "kind": "claim",
+        "title": "Split target gcd failures occupy four rank-one matrix axes",
+        "scope": "For every rational split prime p!=23, the nonzero determinant-zero matrices modulo p with one binary block divisible by p form four coordinate axes, fraction4/(p+1)^2. The same fraction lifts to each fixed determinant valuation t>=1 among p-primitive matrices. At a unit target the corresponding split-normalizer fraction is2/[p(p+1)].",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-D23-IWAHORI-PATH-OPERATOR",
+        "kind": "claim",
+        "title": "A positive endpoint path operator controls every target valuation",
+        "scope": "At split p for the discriminant23 maximal order, the selected image/kernel endpoint correspondence is V_t=B^(t-1)F, self-adjoint and nonnegative of degree p^(t-1). On the orthogonal complement H0 of all norm characters, norm(V_t)<=2t p^(t/2), and norm(V_1)<=1. The joint endpoint-projection kernel is included, and the Hecke compression is applied at coarser maximal p-level only.",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-D23-IWAHORI-SIGNED-RETURN",
+        "kind": "claim",
+        "title": "The signed gcd count is eight times one Iwahori return",
+        "scope": "For N=p^t m, t>=1, gcd(m,23p)=1, let f be the principal Iwahori axis-orbit point indicator of mass nu=2(3/11)/(p+1). The signed ordered norm-N elements outside pO with either binary block divisible by p are exactly8(V_t T_m f)(x_A), including zero binary blocks. The factor8 is four axis cases times two stabilizer units.",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+        "kind": "claim",
+        "title": "Actual two-adic Brandt returns match original coordinate counts",
+        "scope": "Complete left-order enumeration gives three maximal ideal classes of discriminant23, unit orders4,6,2 exhausting projective mass11/6. The unique T2 matrix and six-state Iwahori B,F yield8(B^(t-1)F)_(axis,axis) equal to original signed rank-one bad counts for t=1..12. This is a finite normalization check, not a proof of the infinite spectral estimate.",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS",
+        "kind": "source",
+        "title": "Covector-only core proof, two folds and exact dual transport",
+        "scope": "Self-contained all-field covector comparison proof, direct signed propagation and both preliminary folds, contragredient duality and disjoint-support counting. Rational symbolic replay checks31 exact algebra and mutation controls; characteristic two follows from the written integer identities and allowed divisions.",
+        "status": "proved",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+            "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+            "locator": "Theorems1 and3; Lemma2; full crossing trace and covector-only proof"
+          },
+          {
+            "path": "meridional-rank/representations/verify_two_sided_protected_obstructions.py",
+            "sha256": "1c1f13c08239fa88b8979de9318f01449732d0e12b52228210e083d59f0272d7",
+            "locator": "31 exact propagation, fold, scalar, sharp reflection and duality controls"
+          },
+          {
+            "path": "meridional-rank/representations/two_sided_protected_obstructions_verification.json",
+            "sha256": "e8574195fa0772ace4172d03373d99beedfa9eb184c8d28015bb7e2cf3b8e2ef",
+            "locator": "Actual replay and exact scope"
+          },
+          {
+            "path": "../results/prime-knot-augmentation-gaps/representations.tex",
+            "sha256": "bf778455b9bb487cdfa6be6f14422b9421389fcd8d8f074072bfaa8e2a52f499",
+            "locator": "eq:prefix, original trace and preliminary folds in lem:spans and lem:seven"
+          }
+        ]
+      },
+      {
+        "id": "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+        "kind": "claim",
+        "title": "The seven-relation core cannot have three independent covectors",
+        "scope": "Over any field and every common determinant mu!=0, rank-one nonzero displacement matrices satisfying the stated seven signed relations with M10=M2 and M5=M13 have covector span at most2. The proof assumes no root independence and includes mu=1 and characteristic2.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-SEVEN-RELATION-ROOT-BOUND",
+        "kind": "claim",
+        "title": "The seven-relation core cannot have three independent roots",
+        "scope": "Over any field and every common determinant mu!=0, rank-one nonzero displacement matrices satisfying the seven signed core relations with M10=M2 and M5=M13 have root span at most2. No covector-independence premise is required.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+        "kind": "claim",
+        "title": "Both input spans of every protected U block have a defect",
+        "scope": "Over any field, four invertible common-determinant mu!=0 matrices of nonzero displacement rank1 propagated through U have input root span<=3 and, separately, input covector span<=3 whenever both outer outputs return to the corresponding inputs. Includes mu=1 and characteristic2; no preserved form or ambient irreducibility is assumed.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-DISJOINT-TWO-SIDED-DEFECT",
+        "kind": "claim",
+        "title": "Disjoint protected blocks impose k defects on each side",
+        "scope": "For k disjoint protected U blocks on b>=4k strands whose tail fixes each outer free meridian and whose closure is a knot, every finite-dimensional rank-one meridional representation over any field has r<=b-k and q<=b-k. The kernel relations on each side have disjoint supports. An irreducible representation has dimension<=b-k.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
       }
     ],
     "implications": [
@@ -97010,7 +97492,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 1.1 and equations (2.1)-(2.2)"
         },
         "dependency_coverage": "partial",
@@ -109209,7 +109691,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem1.1;Sections3-4"
         },
         "dependency_coverage": "partial"
@@ -109225,7 +109707,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Lemma 5.1 and equations (5.2)-(5.3): exact pure/marked contractions and Image-kernel interpretation; geometric Theorem 5.2 is a separate conditional statement"
         },
         "dependency_coverage": "partial"
@@ -109239,7 +109721,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Section2 Proposition2.1"
         },
         "dependency_coverage": "partial"
@@ -109254,7 +109736,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Sections3-4"
         },
         "dependency_coverage": "partial"
@@ -109269,7 +109751,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Sections5-6"
         },
         "dependency_coverage": "partial"
@@ -110771,7 +111253,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5: d=2k+4 parametrizes all even d>=4; infinitely many surviving Z-marked powers contradict eventual Image membership"
         },
         "dependency_coverage": "partial",
@@ -110786,7 +111268,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5, equations (5.13)-(5.17)"
         },
         "dependency_coverage": "partial"
@@ -110801,7 +111283,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5 original-ring contraction identities from equations (4.2) and (5.13)-(5.17)"
         },
         "dependency_coverage": "partial"
@@ -110815,7 +111297,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Section 4, monomial beta identity (4.1), all-degree formula (4.2), and constant-term substitution (4.3)"
         },
         "dependency_coverage": "partial"
@@ -110829,7 +111311,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5 original-ring primitivity and factor multiplicity proof"
         },
         "dependency_coverage": "partial"
@@ -110843,7 +111325,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Specialize the printed all-rank monomial kernel proof to r=2"
         },
         "dependency_coverage": "partial",
@@ -110858,7 +111340,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Lemma 5.1: R restricts to 1; apply the bridge in degrees n and n+a"
         },
         "dependency_coverage": "partial"
@@ -110872,7 +111354,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5 at k=0, F_0=2F, and (5.17): E2(ZF^m)=2^(-m)(4m+2)!J_(0,m)(1)"
         },
         "dependency_coverage": "partial",
@@ -110889,7 +111371,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Lemma 5.1 and equations (5.2)-(5.3): exact pure/marked contractions and Image-kernel interpretation; geometric Theorem 5.2 is a separate conditional statement"
         },
         "dependency_coverage": "partial",
@@ -110904,7 +111386,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5 at k=2h-2 gives d=4h; comparison with the existence scope of Theorem 5.4"
         },
         "dependency_coverage": "partial"
@@ -110919,7 +111401,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5 primitive degree4 witness plus Section 6 positivity through balanced degree3"
         },
         "dependency_coverage": "partial"
@@ -110933,7 +111415,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Positive radial padding has the explicit R factor, as in equations (5.2), (5.4) and the primitive-quotient discussion"
         },
         "dependency_coverage": "partial"
@@ -111052,7 +111534,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.6: exact monomial functional, four symbolic moments and integer Bezout certificate"
         },
         "dependency_coverage": "partial"
@@ -111070,7 +111552,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.6: nonzero factorial factors; the certificate leaves only aR F_0; radial shift proves its pure moments vanish"
         },
         "dependency_coverage": "partial"
@@ -111084,7 +111566,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Theorem 7.1: both endpoint zeros, coefficient extraction and positive even C_m"
         },
         "dependency_coverage": "partial"
@@ -111098,7 +111580,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Lemma 7.2: fixed-endpoint comparison and coefficient-degree inequality"
         },
         "dependency_coverage": "partial"
@@ -111112,7 +111594,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Proposition 7.3: explicit lift, top term and R=0 specialization"
         },
         "dependency_coverage": "partial"
@@ -111133,7 +111615,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Theorem 7.1, Lemma 7.2 and Proposition 7.3, including unbalanced original-marker derivative tests (7.15)"
         },
         "dependency_coverage": "partial"
@@ -111147,7 +111629,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Section 7 at r=q=1, gamma=1, P(w)=w^k(1-w^2); main note (4.2) and Theorem 5.5 rational identity extension"
         },
         "dependency_coverage": "partial",
@@ -111162,7 +111644,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Section 2 after (2.2): same algebraic reduction works for any finite number of pairs"
         },
         "dependency_coverage": "partial"
@@ -111190,7 +111672,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Source for the Image framework: A=k[xi], a=xi and radical quotient k"
         },
         "dependency_coverage": "partial"
@@ -111205,7 +111687,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 1.1 plus the precise one-pair Theorem 2.8 application"
         },
         "dependency_coverage": "partial"
@@ -111219,7 +111701,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Final spectator-pair paragraph: literal monomial contraction rule with zero exponents in the added variables"
         },
         "dependency_coverage": "partial"
@@ -111235,7 +111717,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Final source paragraph: one-pair positivity and rank-two witness extended to every rank r>=2"
         },
         "dependency_coverage": "partial"
@@ -111251,7 +111733,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58",
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
           "locator": "Theorem 5.5 at k=0 recovers Theorem 1.1; kernel identity and checked one-pair application give the retained minimum-pair conclusion"
         },
         "dependency_coverage": "partial"
@@ -111265,7 +111747,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Theorem 7.1 specialized to r=q=1, gamma=1, P(w)=w^k(1-w^2); compare main-note Theorem 5.5 and rational coefficient formula (4.2)"
         },
         "dependency_coverage": "partial",
@@ -111283,7 +111765,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Theorem7.1 plus Proposition7.3;radial contraction factor(dm+2)! in(7.14)"
         },
         "dependency_coverage": "partial"
@@ -111300,7 +111782,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Lemma7.2 with sphere degree<=v;equation(7.15);finite bihomogeneous decomposition,lines656-679"
         },
         "dependency_coverage": "partial"
@@ -111317,7 +111799,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
           "locator": "Only q=r can fail;minimaldegree2n even;positive R padding is nonprimitive,lines681-686"
         },
         "dependency_coverage": "partial"
@@ -145754,7 +146236,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "dbb93e03c5eb2efb6be21a15c0c6597860d139e8a0d2f9f459ec56b3acb2b468",
+          "sha256": "7a5995030bc2448d9a266f95badd5fc5eee8cbadec7be60988473ac3ee6e7b37",
           "locator": "Plaksin specialization, finite local prime-unit test and elementary O(N^(1/2+epsilon)) gcd deletion"
         },
         "dependency_coverage": "partial"
@@ -149204,7 +149686,7 @@
         "status": "proved",
         "proof": {
           "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
           "locator": "Section 1, explicit extraction from released lem:spans and seven internal relations"
         },
         "dependency_coverage": "partial"
@@ -149219,7 +149701,7 @@
         "status": "proved",
         "proof": {
           "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
           "locator": "Section 2, disjoint supports in the root/covector kernel sum and form-preserving corollary"
         },
         "dependency_coverage": "partial"
@@ -149235,7 +149717,7 @@
         "status": "proved",
         "proof": {
           "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
           "locator": "Section 3, exact band Hurwitz action, protected interior entries and one-cycle matching"
         },
         "dependency_coverage": "partial"
@@ -149249,7 +149731,7 @@
         "status": "proved",
         "proof": {
           "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
           "locator": "Section 4, repeated edge (23), connected graph v-1 edge bound and exact ceil/floor comparison"
         },
         "dependency_coverage": "partial"
@@ -149414,6 +149896,357 @@
           "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
           "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
           "locator": "Sections2.1 and2.2: unprojected construction for allr includingd3..6, projected extension forr>=3, then optimize the admitted lengths"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+        "premises": [
+          "SRC-MRC-PROTECTED-FOREST-CENSUS"
+        ],
+        "conclusion": "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+          "locator": "Theorem 3, complete n=2..9 census and exact candidate completeness"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+        "premises": [
+          "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+          "SRC-MRC-PROTECTED-FOREST-CENSUS"
+        ],
+        "conclusion": "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+          "locator": "The only allowed component vector (0,0,1,1) cannot sum to (2,2,2,2)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER",
+        "premises": [
+          "MRC-PROTECTED-OCCURRENCE-CYCLE",
+          "SRC-MRC-PROTECTED-FOREST-CENSUS"
+        ],
+        "conclusion": "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+          "locator": "Theorem 3, disjoint occurrence-cycle supports are independent and connected cycle rank is 2b-v+1"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+        "premises": [
+          "SRC-IMAGE2-ODD-COMPOSITE"
+        ],
+        "conclusion": "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+          "locator": "Lemma NonlinearHeightMoments, O7-O13: parity and endpoint contact of order rm"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+        "premises": [
+          "SRC-IMAGE2-ODD-COMPOSITE"
+        ],
+        "conclusion": "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+          "locator": "O17 and exact T multiplicity at the two displayed original-variable points"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+        "premises": [
+          "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+          "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+          "IMAGE2-IMAGE-KERNEL-CHARZERO",
+          "SRC-IMAGE2-ODD-COMPOSITE"
+        ],
+        "conclusion": "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+          "locator": "Theorem OddCompositeImage: choose odd factors d=ab and use nonzero mixed contractions at every even order"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-ALL-COMPOSITE-PRIMITIVE",
+        "premises": [
+          "IMAGE2-EVEN-PRIMITIVE",
+          "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+          "SRC-IMAGE2-ODD-COMPOSITE"
+        ],
+        "conclusion": "IMAGE2-ALL-COMPOSITE-PRIMITIVE",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+          "locator": "Corollary CompositeImage: partition composite integers by parity"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+        "premises": [
+          "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT"
+        ],
+        "conclusion": "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+          "locator": "Section 8.1, uniqueness from the unit triangular coefficient and rational solution via derivative cancellation"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+        "premises": [
+          "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+          "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT"
+        ],
+        "conclusion": "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+          "locator": "Theorem 8.2, unit triangular identities in the universal coefficient ring and finite degree of E"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+        "premises": [
+          "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+          "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT"
+        ],
+        "conclusion": "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+          "locator": "Theorem 8.1, necessary polynomial divisibility, root multiplicities and first two singular-branch moments; converse branches"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+        "premises": [
+          "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+          "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT",
+          "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE"
+        ],
+        "conclusion": "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+          "locator": "Section 8.3, explicit marked moment, degree-four associated-graded leading term and radial padding"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HOPF-COMPLEX-QUADRATIC-HEIGHT",
+        "premises": [
+          "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+          "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+          "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+          "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT"
+        ],
+        "conclusion": "HOPF-COMPLEX-QUADRATIC-HEIGHT",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+          "locator": "Theorems 8.1 and 8.2, classification and exact infinite-tail presentation"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DISCHARGE-GAP-HOPF-HIGHER-RESIDUAL-IDEALS",
+        "premises": [
+          "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+          "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+          "SRC-HOPF-COMPLEX-QUADRATIC-HEIGHT"
+        ],
+        "conclusion": "GAP-HOPF-HIGHER-RESIDUAL-IDEALS",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md",
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+          "locator": "Theorem 8.2 gives the exact ordinary residual coefficient-ideal presentation; Theorem 8.1 identifies all field-valued solutions. No minimal Groebner basis or nilpotence index is claimed."
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+        "premises": [
+          "SRC-ARITH-D23-SPLIT-TARGET-GCD"
+        ],
+        "conclusion": "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+          "locator": "Section1, four axes and equal smooth determinant lifts"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D23-IWAHORI-PATH-OPERATOR",
+        "premises": [
+          "SRC-ARITH-D23-SPLIT-TARGET-GCD",
+          "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+        ],
+        "conclusion": "ARITH-D23-IWAHORI-PATH-OPERATOR",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+          "locator": "Sections2-3, nonbacktracking paths, two-frame recurrence and joint-projection kernel"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D23-IWAHORI-SIGNED-RETURN",
+        "premises": [
+          "SRC-ARITH-D23-SPLIT-TARGET-GCD"
+        ],
+        "conclusion": "ARITH-D23-IWAHORI-SIGNED-RETURN",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+          "locator": "Section4, axis orbit mass and stabilizer accounting"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+        "premises": [
+          "SRC-ARITH-D23-SPLIT-TARGET-GCD"
+        ],
+        "conclusion": "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+          "locator": "Section5, complete class mass and exact six-state return verification"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE",
+        "premises": [
+          "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+          "ARITH-D23-IWAHORI-PATH-OPERATOR",
+          "ARITH-D23-IWAHORI-SIGNED-RETURN",
+          "ARITH-MS-EXACT-LEM-HECKE-TRANSFER",
+          "SRC-ARITH-D23-SPLIT-TARGET-GCD"
+        ],
+        "conclusion": "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+          "locator": "Section4, constant spectral term and complementary point-indicator estimate; t=1 improvement"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-SEVEN-RELATION-COVECTOR-BOUND",
+        "premises": [
+          "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+          "locator": "Lemma2, independent covectors force scalar identities, P=-2 and h(P+2)=1/mu contradiction"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-TWO-SIDED-U-LOCAL-DEFECT",
+        "premises": [
+          "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+          "MRC-SEVEN-RELATION-ROOT-BOUND",
+          "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+          "locator": "Section2, both folds need only covector independence; apply core contradiction and whole-tuple contragredient"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-DISJOINT-TWO-SIDED-DEFECT",
+        "premises": [
+          "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+          "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-DISJOINT-TWO-SIDED-DEFECT",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+          "locator": "Theorem3, k disjoint nonzero kernel vectors on each side"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-TWO-SIDED-PROTECTED-DEFECTS",
+        "premises": [
+          "MRC-DISJOINT-TWO-SIDED-DEFECT",
+          "MRC-MULTIPLE-PROTECTED-KNOTS",
+          "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE",
+          "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-TWO-SIDED-PROTECTED-DEFECTS",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+          "locator": "Theorem3 and explicit knot-family corollary; ordinary augmentation parameter restriction retained"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-TWO-SIDED-IMPLIES-SUM-DEFECT",
+        "premises": [
+          "MRC-DISJOINT-TWO-SIDED-DEFECT",
+          "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS",
+          "SRC-MRC-MULTIPLE-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-MULTIPLE-PROTECTED-DEFECT",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+          "locator": "r,q<=b-k implies r+q<=2b-2k<=2b-k and the earlier irreducible bound"
         },
         "dependency_coverage": "partial"
       }
@@ -151771,6 +152604,128 @@
             "dependency_coverage": "partial"
           }
         ]
+      },
+      {
+        "id": "EQUIV-MRC-PROTECTED-FOREST-PACKING",
+        "title": "Local occurrence cycles and impossibility of assembling protected tree components",
+        "members": [
+          "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+          "MRC-PROTECTED-OCCURRENCE-CYCLE"
+        ],
+        "directions": [
+          {
+            "id": "MRC-NO-PACKING-TO-LOCAL-CYCLE",
+            "premises": [
+              "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+              "SRC-MRC-PROTECTED-FOREST-CENSUS"
+            ],
+            "conclusion": "MRC-PROTECTED-OCCURRENCE-CYCLE",
+            "status": "proved",
+            "proof": {
+              "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+              "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+              "locator": "Section 4.1, restrict a hypothetical forest tuple to its connected components"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "MRC-LOCAL-CYCLE-TO-NO-PACKING",
+            "premises": [
+              "MRC-PROTECTED-OCCURRENCE-CYCLE",
+              "SRC-MRC-PROTECTED-FOREST-CENSUS"
+            ],
+            "conclusion": "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+            "status": "proved",
+            "proof": {
+              "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+              "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+              "locator": "Section 4.1, converse disjoint-union construction from any admissible vector packing"
+            },
+            "dependency_coverage": "partial"
+          }
+        ]
+      },
+      {
+        "id": "EQUIV-IMAGE2-NONLINEAR-HEIGHT-CONTRACTIONS",
+        "title": "Nonlinear angular identities and the original two-pair contraction formulas",
+        "members": [
+          "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+          "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS"
+        ],
+        "directions": [
+          {
+            "id": "IMAGE2-NONLINEAR-ANGULAR-TO-ORIGINAL",
+            "premises": [
+              "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+              "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE",
+              "SRC-IMAGE2-ODD-COMPOSITE"
+            ],
+            "conclusion": "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+            "status": "proved",
+            "proof": {
+              "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+              "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+              "locator": "O5 and O15-O16: homogeneous lift and radial factor"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "IMAGE2-NONLINEAR-ORIGINAL-TO-ANGULAR",
+            "premises": [
+              "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+              "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE",
+              "SRC-IMAGE2-ODD-COMPOSITE"
+            ],
+            "conclusion": "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+            "status": "proved",
+            "proof": {
+              "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+              "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+              "locator": "O5 and O15-O16 reversed: divide the nonzero characteristic-zero factorials for pure and marked homogeneous degrees"
+            },
+            "dependency_coverage": "partial"
+          }
+        ]
+      },
+      {
+        "id": "EQUIV-MRC-CORE-ROOT-COVECTOR-BOUNDS",
+        "title": "Seven-relation root and covector bounds under contragredient duality",
+        "members": [
+          "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+          "MRC-SEVEN-RELATION-ROOT-BOUND"
+        ],
+        "directions": [
+          {
+            "id": "MRC-CORE-COVECTOR-TO-ROOT",
+            "premises": [
+              "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+              "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS"
+            ],
+            "conclusion": "MRC-SEVEN-RELATION-ROOT-BOUND",
+            "status": "proved",
+            "proof": {
+              "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+              "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+              "locator": "After Lemma2, M->M^-T preserves every relation, sends mu to mu^-1 and exchanges displacement lines"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "MRC-CORE-ROOT-TO-COVECTOR",
+            "premises": [
+              "MRC-SEVEN-RELATION-ROOT-BOUND",
+              "SRC-MRC-TWO-SIDED-PROTECTED-OBSTRUCTIONS"
+            ],
+            "conclusion": "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+            "status": "proved",
+            "proof": {
+              "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+              "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+              "locator": "The same involutive contragredient transport in reverse; all nonzero mu and all fields are quantified"
+            },
+            "dependency_coverage": "partial"
+          }
+        ]
       }
     ],
     "external_references": {
@@ -152794,7 +153749,8 @@
             "https://arxiv.org/abs/1310.7526v3",
             "https://arxiv.org/pdf/1310.7526v3",
             "https://doi.org/10.4310/JSG.2017.v15.n4.a2",
-            "https://arxiv.org/html/1310.7526v3#S1"
+            "https://arxiv.org/html/1310.7526v3#S1",
+            "https://arxiv.org/pdf/1310.7526"
           ],
           "local_sources": [
             {
@@ -152954,6 +153910,14 @@
               "role": "mathematical_input",
               "nodes": [
                 "MRC-MULTIPLE-PROTECTED-KNOTS"
+              ]
+            },
+            {
+              "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+              "locator": "Section5, Theorem1.2 and Definition1.8; epsilon(mu)!=1 parameter restriction",
+              "role": "mathematical_input",
+              "nodes": [
+                "MRC-TWO-SIDED-PROTECTED-DEFECTS"
               ]
             }
           ],
@@ -154589,7 +155553,8 @@
           },
           "urls": [
             "https://arxiv.org/abs/2607.19012",
-            "https://arxiv.org/abs/2607.19012v1"
+            "https://arxiv.org/abs/2607.19012v1",
+            "https://arxiv.org/html/2607.19012v1"
           ],
           "local_sources": [],
           "uses": [
@@ -154628,9 +155593,25 @@
               "locator": "citation Long26 at line 131",
               "role": "application_unverified",
               "nodes": []
+            },
+            {
+              "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+              "locator": "Section 5, Theorems 2.1 and 4.2, mixed interval/torus and SU(2) counterexample antecedents",
+              "role": "context",
+              "nodes": [
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE"
+              ]
+            },
+            {
+              "path": "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+              "locator": "inspected_primary_sources",
+              "role": "context",
+              "nodes": [
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE"
+              ]
             }
           ],
-          "verification": "citation_only",
+          "verification": "source_read",
           "resource_type": "paper",
           "citation_aliases": [
             "Long2026",
@@ -154639,7 +155620,7 @@
           ],
           "id": "EXT-PAPER-ARXIV-2607-19012",
           "title_status": "source_title",
-          "verification_basis": "Citation metadata/application record; no source-proof verification asserted"
+          "verification_basis": "Actual Theorems2.1 and4.2, displayed formulas and beta-binomial proof inspected for the new odd-composite antecedent comparison. Older uses retain their individual application-unverified scopes; no unrestricted application audit is implied."
         },
         {
           "title": "Graded Keller maps and the Jacobian conjecture",
@@ -156892,7 +157873,8 @@
           "urls": [
             "https://arxiv.org/abs/1008.3962",
             "https://arxiv.org/abs/1008.3962v2",
-            "https://doi.org/10.1016/j.jalgebra.2011.04.036"
+            "https://doi.org/10.1016/j.jalgebra.2011.04.036",
+            "https://arxiv.org/html/1008.3962v2#S3.Thm3"
           ],
           "local_sources": [
             {
@@ -156973,6 +157955,22 @@
               "locator": "citation EWZ11 at line 128",
               "role": "application_unverified",
               "nodes": []
+            },
+            {
+              "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+              "locator": "Section 5, Theorem 3.3, Image-kernel identity attributed to Zhao; elementary proof reproduced in new note",
+              "role": "context",
+              "nodes": [
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE"
+              ]
+            },
+            {
+              "path": "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+              "locator": "inspected_primary_sources",
+              "role": "context",
+              "nodes": [
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -166480,7 +167478,8 @@
           "citation": "J. Voight, \\emph{Quaternion Algebras}, Graduate Texts in Mathematics 288, Springer, 2021, Chapters 28 and 41. .",
           "identifiers": {},
           "urls": [
-            "https://doi.org/10.1007/978-3-030-56694-4"
+            "https://doi.org/10.1007/978-3-030-56694-4",
+            "https://jvoight.github.io/quat-book.pdf"
           ],
           "local_sources": [],
           "uses": [
@@ -166534,6 +167533,14 @@
               "role": "mathematical_input",
               "nodes": [
                 "ARITH-EISENSTEIN-DIRECTIONAL-HECKE-PROJECTION"
+              ]
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "locator": "primary_source_audit or closest_classical_comparisons: Quaternion Algebras",
+              "role": "context",
+              "nodes": [
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
               ]
             }
           ],
@@ -166695,6 +167702,14 @@
               "locator": "bibitem JL",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "locator": "primary_source_audit or closest_classical_comparisons: Automorphic Forms on GL(2)",
+              "role": "context",
+              "nodes": [
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -166802,6 +167817,14 @@
               "locator": "bibitem DeligneModular",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "locator": "primary_source_audit or closest_classical_comparisons: Formes modulaires et representations l-adiques",
+              "role": "context",
+              "nodes": [
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -166909,6 +167932,14 @@
               "locator": "bibitem DeligneWeil",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "locator": "primary_source_audit or closest_classical_comparisons: La conjecture de Weil.I",
+              "role": "context",
+              "nodes": [
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -173632,7 +174663,8 @@
           "citation": "Sums of Squares Coprime in Pairs",
           "identifiers": {},
           "urls": [
-            "https://doi.org/10.4064/ba62-3-3"
+            "https://doi.org/10.4064/ba62-3-3",
+            "https://www.impan.pl/shop/en/publication/transaction/download/product/85773"
           ],
           "local_sources": [],
           "uses": [
@@ -173641,6 +174673,14 @@
               "locator": "Comparison or classical algebra background",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "locator": "primary_source_audit or closest_classical_comparisons: Sums of squares coprime in pairs",
+              "role": "context",
+              "nodes": [
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -178688,6 +179728,65 @@
           ],
           "verification": "source_read",
           "verification_note": "The actual Theorem7.1 and ordinary-shell normalization were inspected. The theorem does not impose two separate binary gcds and is not a proof of primitive positivity."
+        },
+        {
+          "id": "EXT-NIST-DLMF-EULER-BETA-INTEGRAL",
+          "title": "NIST DLMF: Euler beta integral",
+          "citation": "NIST Digital Library of Mathematical Functions, equation5.12.1.",
+          "identifiers": {},
+          "urls": [
+            "https://dlmf.nist.gov/5.12.E1"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+              "locator": "Section 4, degree-nine C_m evaluation; Section 5 antecedents",
+              "role": "context",
+              "nodes": [
+                "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE"
+              ]
+            },
+            {
+              "path": "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+              "locator": "inspected_primary_sources[1]",
+              "role": "context",
+              "nodes": [
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "web_reference",
+          "citation_aliases": [],
+          "title_status": "source_title",
+          "verification_basis": "Actual equation5.12.1 and Re(a),Re(b)>0 hypotheses inspected. At even m, a=(m+1)/2,b=m+1; the proof also has a direct rational polynomial-integral derivation."
+        },
+        {
+          "id": "EXT-SUN-WILLIAMS-CLASS-NUMBER-THREE-EULER-PRODUCTS",
+          "title": "Ramanujan identities and Euler products for a type of Dirichlet series",
+          "citation": "Z.-H. Sun and K. S. Williams, Ramanujan identities and Euler products for a type of Dirichlet series (2006).",
+          "identifiers": {},
+          "urls": [
+            "https://www.impan.pl/shop/en/publication/transaction/download/product/82058"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "locator": "primary_source_audit or closest_classical_comparisons: Ramanujan identities and Euler products for a type of Dirichlet series",
+              "role": "context",
+              "nodes": [
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "citation_aliases": [],
+          "title_status": "source_title",
+          "verification_basis": "Actual Theorems7.1(i) and7.2, printedpp385-386, inspected for ordinary-representation context; not a primitive-coordinate theorem."
         }
       ],
       "internal_citations": [
@@ -181241,6 +182340,113 @@
           "novelty_limit": "Tree/lattice geometry and spectral decomposition principles are classical. The exact selection, full-space interface and application are internally reviewed deductions, without an external-review or priority claim.",
           "remaining_obligation": "The exact mathematical sumset completion is now proved by the separately recorded core/atomic-seed argument and full2^29 scan. External human review and historical priority remain unestablished.",
           "inspection_scope": "Actual retained Voight statements/lattice proofs and shared Hecke index hypotheses inspected; separate reviewer reconstructed both compact sectors, character preservation and infinite inequalities and replayed independent finite HNF/tree controls."
+        },
+        {
+          "id": "CLASSICAL-IMAGE2-ODD-COMPOSITE-ENDPOINT-ANTECEDENTS",
+          "title": "Classical Image kernel and beta cancellation versus the primitive odd-composite refinement",
+          "nodes": [
+            "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+            "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+            "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+          ],
+          "relation": "comparison_only",
+          "references": [
+            {
+              "paper_id": "EXT-PAPER-DOI-10-1016-J-JALGEBRA-2011-04-036",
+              "locator": "Theorem3.3",
+              "statement": "Image equals kernel of monomial contraction; exact characteristic-zero argument reproduced locally."
+            },
+            {
+              "paper_id": "EXT-PAPER-ARXIV-2607-19012",
+              "locator": "Theorems2.1 and4.2, v1",
+              "statement": "Existing mixed torus/interval and SU(2) Mathieu counterexamples use beta-binomial cancellation."
+            },
+            {
+              "paper_id": "EXT-NIST-DLMF-EULER-BETA-INTEGRAL",
+              "locator": "Equation5.12.1",
+              "statement": "Euler beta evaluation with positive-real parameters supplies the degree-nine rational constant; an elementary integration proof also suffices."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+              "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+              "locator": "Sections 2-5 and O5-O17"
+            },
+            {
+              "path": "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+              "sha256": "d9832f95cd88a037cae6b18d5a16d9108018029ad9b4d981ae7506caf171851b",
+              "locator": "Actual source statements and scope comparison"
+            }
+          ],
+          "application": "The new local argument proves all-order nonlinear height dilation and explicit primitive odd-composite homogeneous lifts. Classical unrestricted Mathieu/Image failure and the cancellation principle are antecedents, not new claims.",
+          "novelty_limit": "No historical priority claim for primitive odd-composite refinements; source inspection does not prove absence of related constructions.",
+          "remaining_obligation": "Odd prime degrees>=5; external mathematical review and any priority survey remain unperformed.",
+          "inspection_scope": "Exact cited primary statements and proofs inspected by the internal research agent; parent reconstructed the written local proof and independent original-variable finite controls. No external human review."
+        },
+        {
+          "id": "CLASSICAL-D23-SPLIT-TARGET-IWAHORI-APPLICATION",
+          "title": "Classical mass, tree and Hecke inputs for the -23 split endpoint filter",
+          "nodes": [
+            "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+            "ARITH-D23-IWAHORI-PATH-OPERATOR",
+            "ARITH-D23-IWAHORI-SIGNED-RETURN",
+            "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+            "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+          ],
+          "relation": "classical_method",
+          "references": [
+            {
+              "paper_id": "EXT-PRIMITIVE-NORM-RESOURCE-VOIGHT-QUATERNION-ALGEBRAS-AUTHOR",
+              "locator": "Theorem25.1.1; Section23.5; Propositions41.3.1 and41.3.6, author1.0.7u",
+              "statement": "Definite projective mass, regular lattice tree, endpoint edge model and all-integral-ideal degree/coprime composition."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+              "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+              "locator": "Sections1-5 and Dependencies"
+            },
+            {
+              "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+              "sha256": "3b7955c14f4818acd9580fb23041b1dd399050baefe3f294b20e75e6ce8e3f82",
+              "locator": "Exact inherited deep-import hypotheses and source audit"
+            }
+          ],
+          "application": "The local proof selects both endpoint flags, bounds the full Iwahori complement via the coarser Hecke compression and joint-projection kernel, and derives the signed factor8 with point mass2w/(p+1). The deep transfer is inherited from the shared pinned classical proof.",
+          "novelty_limit": "No novelty claim for quaternion mass, nonbacktracking operators, Jacquet-Langlands or Deligne; no historical priority established for this gcd specialization.",
+          "remaining_obligation": "Global all-prime separate-primitivity sieve, content terms and a finite bridge for the full -23 sumset remain open.",
+          "inspection_scope": "Actual retained Voight statements read by the arithmetic author and a separate internal reviewer. Root audited the local argument; the p=2 exact return computation was independently replayed internally. External review and formal verification are not claimed."
+        },
+        {
+          "id": "CLASSICAL-MRC-TWO-SIDED-CORNWELL-COMPARISON",
+          "title": "Classical KCH correspondence and the stronger local signed-relation bound",
+          "nodes": [
+            "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+            "MRC-DISJOINT-TWO-SIDED-DEFECT",
+            "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+          ],
+          "relation": "comparison_only",
+          "references": [
+            {
+              "paper_id": "EXT-PAPER-ARXIV-1310-7526",
+              "locator": "Theorem1.2 and Definition1.8, arXiv1310.7526",
+              "statement": "Ordinary augmentation rank with epsilon(mu)!=1 corresponds to irreducible KCH dimension; the correspondence does not supply the local two-sided span bound."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+              "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+              "locator": "Sections1-5, local proof, global application and exact correspondence hypotheses"
+            }
+          ],
+          "application": "The actual signed U relations give a covector-only core contradiction; contragredient duality then gives both sides and disjoint kernel relations add independently. Cornwell is used only for the final augmentation interpretation.",
+          "novelty_limit": "The correspondence and duality are classical. No independent external review or worldwide priority established for the stronger U-specific argument.",
+          "remaining_obligation": "Compatible meridional lower bound and protected knot coloring, followed by prime and hyperbolic realization.",
+          "inspection_scope": "Root independently reconstructed all scalar identities and both folds and reran the31-check symbolic propagation replay. Exact primary correspondence statement was inspected in the retained research; all assurance remains internal."
         }
       ]
     },
@@ -181257,7 +182463,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Retained collection/tooling information; it asserts no independent mathematical result.",
-          "sha256": "206fed6d927de18f93c6d2d1e3831bb310db64af178317272f76f66ea6bc906d"
+          "sha256": "b616c276692e52c53c00d3bd2f3a2dc1313a638decc97ad529f4adccfa0554fe"
         },
         {
           "path": "../results/gaussian-moments-two-variables/README.md",
@@ -182931,7 +184137,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Current four-discriminant scope, elementary Eisenstein value dictionary, proof coverage, build/replay commands and scoped review obligations. Editorial reorganization changes no theorem or certificate assurance.",
-          "sha256": "3898b0a8d0fff346a9f69e78c214a8f2c96286f86e406332fc3d8b05d1240e20"
+          "sha256": "036b413302978b6ece1f422b2053cce1e83fe197229f61d546bf6b24714940c6"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/check_ramified_counts.py",
@@ -183057,7 +184263,7 @@
           "statements": [],
           "role": "scope",
           "explanation": "Current manuscript result, limits, review obligations and separate publication status. Artifact paths distinguish paper sources from the relocated canonical research and evidence; the organization changes no mathematical scope or assurance.",
-          "sha256": "886d71f6136e058f9be1d024c41c5ed379a549721cca45e3d9c0d8d1575a36f5"
+          "sha256": "98d73c8040812dc5dc1983fe93889efda0cb25254a0a9e7f2f2ec23b7a3e282c"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/mixed_spectral_check.py",
@@ -183732,7 +184938,7 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Retained finite replay and scoped internal manuscript review history, with the current editorial edition/build/layout checks. No external human review, formal verification or independent import-proof certification is inferred.",
-          "sha256": "1e8ec6341521c29fb72581efd35a2984ea7da42d8da5fda2efcfc2d3d57ad109"
+          "sha256": "1c62bed490757db9b62ee1fd82b16b58387db3b761a0bc4e1334fc9cce780d9e"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/verify_binary_certificates.py",
@@ -200213,15 +201419,19 @@
             "HOPF-HEIGHT-PRIMITIVE-HOMOGENIZATION",
             "HOPF-HEIGHT-CRITICAL-IMAGE-FAILURE",
             "HOPF-HEIGHT-SUBCRITICAL-IMAGE-CUTOFF",
-            "HOPF-HEIGHT-PRIMITIVE-ODD-EXCLUSION"
+            "HOPF-HEIGHT-PRIMITIVE-ODD-EXCLUSION",
+            "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+            "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+            "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+            "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+            "HOPF-COMPLEX-QUADRATIC-HEIGHT",
+            "GAP-HOPF-HIGHER-RESIDUAL-IDEALS"
           ],
           "dependencies": [
             "HOPF-POLYNOMIALITY-CONTACT",
             "HOPF-ONE-PROFILE-CLASSIFICATION"
           ],
-          "gaps": [
-            "GAP-HOPF-HIGHER-RESIDUAL-IDEALS"
-          ],
+          "gaps": [],
           "statements": [
             {
               "locator": "Proposition 2.1 (polynomiality equals endpoint contact).**  Suppose",
@@ -200402,11 +201612,33 @@
                 "HOPF-HEIGHT-PRIMITIVE-ODD-EXCLUSION"
               ],
               "mapping_kind": "scoped-source-component"
+            },
+            {
+              "locator": "Theorem 8.1 (complete polynomial winding-one classification).",
+              "nodes": [
+                "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+                "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+                "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+                "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+                "HOPF-COMPLEX-QUADRATIC-HEIGHT",
+                "GAP-HOPF-HIGHER-RESIDUAL-IDEALS"
+              ]
+            },
+            {
+              "locator": "Theorem 8.2 (ordinary ideal presentation and finite prefix).",
+              "nodes": [
+                "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+                "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+                "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+                "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+                "HOPF-COMPLEX-QUADRATIC-HEIGHT",
+                "GAP-HOPF-HIGHER-RESIDUAL-IDEALS"
+              ]
             }
           ],
           "role": "proof",
           "explanation": "Current mathematical source mapped to explicit scoped statements, proof components and known gaps. Imported proof dependencies retain their separate status.",
-          "sha256": "eb7d0885fab4b9fdbdc77a3a5985fbfc4d1a8d0c0ae4b4e9f91bfc84bbb98dec"
+          "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60"
         },
         {
           "path": "foundations/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md",
@@ -200953,7 +202185,7 @@
           ],
           "role": "proof",
           "explanation": "Current mathematical source mapped to explicit scoped statements, proof components and known gaps. Imported proof dependencies retain their separate status.",
-          "sha256": "585234f7a0de87b17a98a6d57607f06d2268fe90d5e8ffd3299877dc28c67e58"
+          "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
         },
         {
           "path": "foundations/extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md",
@@ -245064,7 +246296,7 @@
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/README.md",
-          "sha256": "9c429bfe6bfe1cd5618e256b880af2f9d30cd6557bbe6b0e93b38ea1df6bcc7f",
+          "sha256": "46e51ffd53f118e5c112d9ffdc17f3a0f13f4272cd39e60d3b06d7975d68bf71",
           "claims": [
             "ARITHMETIC-EISENSTEIN-MOVING-WINDOWS",
             "ARITHMETIC-ASYMMETRIC-GAUSSIAN-EISENSTEIN-SUMS",
@@ -256283,7 +257515,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Manuscript scope and build instructions.",
-          "sha256": "00d9a3f06ec37163766a50921a000d6e681b69c0adb301c53a4d4b3ecda23086"
+          "sha256": "e31878b0bbbe55008f45c201ded95ede8f099eac50d7146aa3523c2ac9964b7c"
         },
         {
           "path": "../results/eisenstein-pointwise-counts/metadata.json",
@@ -257549,7 +258781,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "dbb93e03c5eb2efb6be21a15c0c6597860d139e8a0d2f9f459ec56b3acb2b468",
+          "sha256": "7a5995030bc2448d9a266f95badd5fc5eee8cbadec7be60988473ac3ee6e7b37",
           "claims": [
             "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON",
             "ARITH-D8-CLASSICAL-PRIME-COORDINATE-SUBCASES",
@@ -260433,7 +261665,7 @@
         },
         {
           "path": "../results/pointwise-binary-splitting-semigroups/README.md",
-          "sha256": "e2209ab7dfa1807fa514139b85a7bc8df9129452bcbc1b9a850eefdfda16ba9b",
+          "sha256": "0ffdd089ac4cc6132de53dd12b60a813a0699ae3e4eee7718a6392b2bc957230",
           "role": "documentation",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -260635,7 +261867,7 @@
         },
         {
           "path": "../results/pointwise-binary-splitting-semigroups/metadata.json",
-          "sha256": "26773eaf7d467faf2c896c6697f73652f5e98e17318c54c01b3a734c043cf507",
+          "sha256": "f13556b5e8e361ee69e466b6bfdb4e7ca2e98d41bc2c4a78f6780fcd6ce78f49",
           "role": "documentation",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -260977,7 +262209,7 @@
         },
         {
           "path": "../results/pointwise-binary-splitting-semigroups/verification.json",
-          "sha256": "0474531fc54b294deda7f414f91a5b64e4e96807c7152f289582b63f06aaefe0",
+          "sha256": "2821cb3578574e483583efb473c3559c6b6e91c7371f69ea3c229a09f1a1e7fe",
           "role": "evidence",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -262247,12 +263479,16 @@
         },
         {
           "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
-          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "sha256": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
           "claims": [
             "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
             "MRC-MULTIPLE-PROTECTED-DEFECT",
             "MRC-MULTIPLE-PROTECTED-KNOTS",
-            "MRC-LITERAL-SEED-COLORING-BUDGET"
+            "MRC-LITERAL-SEED-COLORING-BUDGET",
+            "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+            "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+            "MRC-PROTECTED-OCCURRENCE-CYCLE",
+            "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
           ],
           "dependencies": [
             "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
@@ -262262,12 +263498,16 @@
           ],
           "statements": [
             {
-              "locator": "Theorem 1 (disjoint-block defect).** Let `b>=4k`, `k>=1`. Embed",
+              "locator": "Theorem 1 (disjoint-block defect; weaker bound).** Let `b>=4k`, `k>=1`. Embed",
               "nodes": [
                 "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
                 "MRC-MULTIPLE-PROTECTED-DEFECT",
                 "MRC-MULTIPLE-PROTECTED-KNOTS",
-                "MRC-LITERAL-SEED-COLORING-BUDGET"
+                "MRC-LITERAL-SEED-COLORING-BUDGET",
+                "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+                "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+                "MRC-PROTECTED-OCCURRENCE-CYCLE",
+                "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
               ]
             },
             {
@@ -262276,7 +263516,11 @@
                 "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
                 "MRC-MULTIPLE-PROTECTED-DEFECT",
                 "MRC-MULTIPLE-PROTECTED-KNOTS",
-                "MRC-LITERAL-SEED-COLORING-BUDGET"
+                "MRC-LITERAL-SEED-COLORING-BUDGET",
+                "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+                "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+                "MRC-PROTECTED-OCCURRENCE-CYCLE",
+                "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
               ]
             },
             {
@@ -262285,7 +263529,24 @@
                 "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
                 "MRC-MULTIPLE-PROTECTED-DEFECT",
                 "MRC-MULTIPLE-PROTECTED-KNOTS",
-                "MRC-LITERAL-SEED-COLORING-BUDGET"
+                "MRC-LITERAL-SEED-COLORING-BUDGET",
+                "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+                "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+                "MRC-PROTECTED-OCCURRENCE-CYCLE",
+                "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
+              ]
+            },
+            {
+              "locator": "Theorem 3 (universal protected-block coloring budget).** Let",
+              "nodes": [
+                "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+                "MRC-MULTIPLE-PROTECTED-DEFECT",
+                "MRC-MULTIPLE-PROTECTED-KNOTS",
+                "MRC-LITERAL-SEED-COLORING-BUDGET",
+                "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+                "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+                "MRC-PROTECTED-OCCURRENCE-CYCLE",
+                "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
               ]
             }
           ],
@@ -262313,7 +263574,7 @@
         },
         {
           "path": "meridional-rank/representations/multiple_protected_obstructions_verification.json",
-          "sha256": "868eb05489acb37eefdb7978cc835fa8be605d317775a106cb5991ef3b95c1c3",
+          "sha256": "0adf2f9f039a28e41ce207d95525e40e079f6bff2373932bd565cc59e5bd7028",
           "claims": [
             "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
             "MRC-MULTIPLE-PROTECTED-DEFECT",
@@ -262509,6 +263770,367 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Exact support for the complete -20 sumset; packet and bounded scan domains are kept distinct from the written all-range proof."
+        },
+        {
+          "path": "meridional-rank/representations/verify_protected_block_forest_colorings.py",
+          "sha256": "1491dd349307b4d7d655f2df6daa89ff0a62dc4c5852b090ef80b7cf82d41f9e",
+          "claims": [
+            "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+            "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+            "MRC-PROTECTED-OCCURRENCE-CYCLE",
+            "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "meridional-rank/representations/protected_block_forest_colorings_verification.json",
+          "sha256": "13ec7a6f12f311daa21a41b4e70611ea4c8cf239eb6db1a06a215f3de4158ed4",
+          "claims": [
+            "MRC-PROTECTED-TREE-COMPONENT-CENSUS",
+            "MRC-PROTECTED-FOREST-PACKING-IMPOSSIBLE",
+            "MRC-PROTECTED-OCCURRENCE-CYCLE",
+            "MRC-UNIVERSAL-PROTECTED-COLORING-BARRIER"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+          "sha256": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
+          "claims": [
+            "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+            "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+            "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+          ],
+          "dependencies": [
+            "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE",
+            "IMAGE2-IMAGE-KERNEL-CHARZERO"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem OddCompositeImage.** Every odd composite integer d admits",
+              "nodes": [
+                "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+                "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+                "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+              ]
+            },
+            {
+              "locator": "Lemma NonlinearHeightMoments.** For every m>=1,",
+              "nodes": [
+                "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+                "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+                "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+              ]
+            },
+            {
+              "locator": "Corollary CompositeImage.** Every composite integer d>=4 admits an",
+              "nodes": [
+                "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+                "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+                "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+                "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/verify_odd_primitive_two_pair_image.py",
+          "sha256": "506203187ec8e26e77bce8cfe5284f1e8f55c00f1af6dacfca80025a11924b09",
+          "claims": [
+            "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+            "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+            "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+          ],
+          "dependencies": [
+            "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE",
+            "IMAGE2-IMAGE-KERNEL-CHARZERO"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json",
+          "sha256": "d9832f95cd88a037cae6b18d5a16d9108018029ad9b4d981ae7506caf171851b",
+          "claims": [
+            "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+            "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+            "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+          ],
+          "dependencies": [
+            "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE",
+            "IMAGE2-IMAGE-KERNEL-CHARZERO"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/odd_primitive_two_pair_image_verification.json",
+          "sha256": "44110e9b93dc7368437a14bc56b06d55ed30173dd72c88904f3c97fc291504d2",
+          "claims": [
+            "IMAGE2-NONLINEAR-HEIGHT-ANGULAR-MOMENTS",
+            "IMAGE2-ODD-COMPOSITE-ORIGINAL-CONTRACTIONS",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVITY",
+            "IMAGE2-ODD-COMPOSITE-PRIMITIVE",
+            "IMAGE2-ALL-COMPOSITE-PRIMITIVE"
+          ],
+          "dependencies": [
+            "IMAGE2-ALL-DEGREE-CONTRACTION-SPHERE-BRIDGE",
+            "IMAGE2-IMAGE-KERNEL-CHARZERO"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/verify_hopf_quadratic_height_classification.py",
+          "sha256": "3918501e34856dac838bfcc473471f638c5aa9dae8f1a2ddd713f12a70816afa",
+          "claims": [
+            "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+            "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+            "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+            "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+            "HOPF-COMPLEX-QUADRATIC-HEIGHT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/hopf_quadratic_height_classification_verification.json",
+          "sha256": "d9179469b8fac972e26cdeccc4044b3dcd35e105ed662b14e531e845817f2fbd",
+          "claims": [
+            "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION",
+            "HOPF-QUADRATIC-HEIGHT-ORDINARY-MOMENT-IDEALS",
+            "HOPF-QUADRATIC-HEIGHT-POLYNOMIAL-CLASSIFICATION",
+            "HOPF-QUADRATIC-HEIGHT-UNSAFE-DEGREE-FOUR",
+            "HOPF-COMPLEX-QUADRATIC-HEIGHT"
+          ],
+          "dependencies": [
+            "HOPF-QUADRATIC-HEIGHT-FORMAL-RECONSTRUCTION"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+          "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+          "claims": [
+            "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+            "ARITH-D23-IWAHORI-PATH-OPERATOR",
+            "ARITH-D23-IWAHORI-SIGNED-RETURN",
+            "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+            "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-23"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem CN3SplitTargetGcd.** Under the definitions and hypotheses",
+              "nodes": [
+                "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+                "ARITH-D23-IWAHORI-PATH-OPERATOR",
+                "ARITH-D23-IWAHORI-SIGNED-RETURN",
+                "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+                "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus23_split_targets.py",
+          "sha256": "fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+          "claims": [
+            "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+            "ARITH-D23-IWAHORI-PATH-OPERATOR",
+            "ARITH-D23-IWAHORI-SIGNED-RETURN",
+            "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+            "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-23"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus23_split_target_checks.json",
+          "sha256": "70aead73910732a9d74593456e5d04b160362b084149e9d52e5c4d8853adda88",
+          "claims": [
+            "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+            "ARITH-D23-IWAHORI-PATH-OPERATOR",
+            "ARITH-D23-IWAHORI-SIGNED-RETURN",
+            "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+            "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-23"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus23_split_target_source_ledger.json",
+          "sha256": "3b7955c14f4818acd9580fb23041b1dd399050baefe3f294b20e75e6ce8e3f82",
+          "claims": [
+            "ARITH-D23-SPLIT-RANKONE-BAD-MASS",
+            "ARITH-D23-IWAHORI-PATH-OPERATOR",
+            "ARITH-D23-IWAHORI-SIGNED-RETURN",
+            "ARITH-D23-TWO-ADIC-BRANDT-RETURN-CHECK",
+            "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-23"
+          ],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+          "claims": [
+            "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+            "MRC-SEVEN-RELATION-ROOT-BOUND",
+            "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+            "MRC-DISJOINT-TWO-SIDED-DEFECT",
+            "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+          ],
+          "dependencies": [
+            "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
+          ],
+          "gaps": [
+            "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem 1 (two-sided local defect).** Let four invertible matrices act",
+              "nodes": [
+                "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+                "MRC-SEVEN-RELATION-ROOT-BOUND",
+                "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+                "MRC-DISJOINT-TWO-SIDED-DEFECT",
+                "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+              ]
+            },
+            {
+              "locator": "Lemma 2 (covector-only core obstruction).** Suppose the signed",
+              "nodes": [
+                "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+                "MRC-SEVEN-RELATION-ROOT-BOUND",
+                "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+                "MRC-DISJOINT-TWO-SIDED-DEFECT",
+                "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+              ]
+            },
+            {
+              "locator": "Theorem 3 (independent defects on both sides).** Under the braid,",
+              "nodes": [
+                "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+                "MRC-SEVEN-RELATION-ROOT-BOUND",
+                "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+                "MRC-DISJOINT-TWO-SIDED-DEFECT",
+                "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "meridional-rank/representations/verify_two_sided_protected_obstructions.py",
+          "sha256": "1c1f13c08239fa88b8979de9318f01449732d0e12b52228210e083d59f0272d7",
+          "claims": [
+            "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+            "MRC-SEVEN-RELATION-ROOT-BOUND",
+            "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+            "MRC-DISJOINT-TWO-SIDED-DEFECT",
+            "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+          ],
+          "dependencies": [
+            "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
+          ],
+          "gaps": [
+            "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "meridional-rank/representations/two_sided_protected_obstructions_verification.json",
+          "sha256": "e8574195fa0772ace4172d03373d99beedfa9eb184c8d28015bb7e2cf3b8e2ef",
+          "claims": [
+            "MRC-SEVEN-RELATION-COVECTOR-BOUND",
+            "MRC-SEVEN-RELATION-ROOT-BOUND",
+            "MRC-TWO-SIDED-U-LOCAL-DEFECT",
+            "MRC-DISJOINT-TWO-SIDED-DEFECT",
+            "MRC-TWO-SIDED-PROTECTED-DEFECTS"
+          ],
+          "dependencies": [
+            "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
+          ],
+          "gaps": [
+            "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
         }
       ]
     },

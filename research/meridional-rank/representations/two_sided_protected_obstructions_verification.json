@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "scope": "exact symbolic support for unrestricted written two-sided proof, plus actual sharp rank-three U control",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "arithmetic": "rational functions over Q; exact Q(sqrt(5)) reflection control",
+  "checks": [
+    "independent formal propagation row 2",
+    "row 2 displacement normalization",
+    "independent formal propagation row 3",
+    "row 3 displacement normalization",
+    "independent formal propagation row 4",
+    "row 4 displacement normalization",
+    "independent formal propagation row 13",
+    "row 13 displacement normalization",
+    "reject reversed M3 crossing",
+    "S identity after kappa Z=1",
+    "Q identity after kappa Z=1",
+    "kappa definition gives scalar equation C",
+    "outer covector equation gives scalar equation B",
+    "B plus C gives t ell=mu h",
+    "A minus D forces h=eta/mu",
+    "f4(v)=-Z modulo Lambda=-mu Z",
+    "S=0 gives h(P+1)=1",
+    "first root relation evaluated by g forces P=-2",
+    "1+h=1/mu under mu h=eta",
+    "last contradiction identity with integer coefficients",
+    "reject corrupted sign in final identity",
+    "second-fold conjugation N",
+    "second-fold conjugation Q",
+    "second-fold conjugation C",
+    "first-fold application of f gives mu+eta=1",
+    "first-fold nu(a)=-lambda",
+    "actual rank-three reflection U tuple has both outer returns",
+    "actual U roots span three",
+    "actual U covectors span three",
+    "actual U meridians have determinant -1 and displacement rank one",
+    "contragredient interchanges root and covector lines"
+  ],
+  "check_count": 31,
+  "source_sha256": {
+    "research/meridional-rank/representations/verify_two_sided_protected_obstructions.py": "1c1f13c08239fa88b8979de9318f01449732d0e12b52228210e083d59f0272d7",
+    "research/meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+    "research/meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+    "results/prime-knot-augmentation-gaps/representations.tex": "bf778455b9bb487cdfa6be6f14422b9421389fcd8d8f074072bfaa8e2a52f499"
+  },
+  "assurance": {
+    "internal_replay": true,
+    "external_review": false,
+    "formal_verification": false
+  },
+  "does_not_establish": [
+    "prime realization",
+    "hyperbolicity",
+    "compatible transitive global coloring",
+    "augmentation gap two"
+  ]
+}
