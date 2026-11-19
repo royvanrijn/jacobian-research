@@ -1,0 +1,87 @@
+{
+  "checker_sha256": "8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa",
+  "local_five": {
+    "ring_units": 400,
+    "axis_units": 40,
+    "projective_quotient_order": 100,
+    "projective_axis_order": 10,
+    "conditional_axis_densities": {
+      "1": "1/5",
+      "2": "0",
+      "3": "0",
+      "4": "1/5"
+    },
+    "maximal_mod5_units": 480,
+    "borel_mod5_units": 80,
+    "projective_total_mass": "3/2",
+    "principal_probability": "1/3"
+  },
+  "dyadic": {
+    "norm_two_parity_orbits": [
+      [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "cross_pair_orbits_selected": 2
+  },
+  "shells": {
+    "full_shell_formula_comparison_through": 512,
+    "selected_shell_spectral_normalization_regression_through": 512,
+    "lattice_initial_bound": 24,
+    "negative_full_shell_at_six": 16,
+    "correct_odd_odd_selection_at_six": 8
+  },
+  "constants": {
+    "E_sixth_product": "225703257262529613518966235455837648952861683733558265399640484431350085557/1356457203905287127373317882841425662991321999339589737669197824000000",
+    "M_sixth_product": "9663676416000000/165196909843",
+    "inert_mass_upper": "1000809157598895081503666491/17365736766690126324433083160",
+    "infinite_sieve_upper_at_m_2_64": "47985177/52428800",
+    "margin_below_15_over_16": "1166823/52428800",
+    "dyadic_degrees": [
+      1,
+      2,
+      2
+    ]
+  },
+  "scope": "Finite local, normalization, Euler and rational certificates only. The written Hecke transfer, ideal-class mass argument and infinite prime-tail proof are not established by execution.",
+  "claimed_theorem_scope": "N>=2^66, 5 does not divide N, N mod8 in {2,3,4,6,7}; ordered primitive numerical-value count >=N^(2/3)/6000. No unrestricted exception-list completion."
+}

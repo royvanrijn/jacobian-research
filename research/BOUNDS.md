@@ -8,6 +8,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 
 | Claim | State | Quantity | Domain | Bound | Assumptions |
 |---|---|---|---|---|---|
+| GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN | proved | universal-geometric-pure-moment-prefix | All complex ternary Gaussian polynomials of total degree at most three, including lower-degree terms; normalized Wick functional | lower: 16 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-velocity-generator-count-over-full-target-normalization | actual complex plane Keller map in a generic monic source direction | upper: 2 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-derivative-generator-count-over-full-target-normalization | complex polynomial Keller map in n variables; {"n": "positive source dimension"} | upper: n^2 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | Hessian-entry-generator-count-over-gradient-normalization | complex four-variable polynomial potential with nonzero constant Hessian determinant | upper: 10 |  |
@@ -18,6 +19,9 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HESSIAN-COORDINATE-CONDUCTOR | proved | source-line-coordinate-order-normalization-defect | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate; source lines y=c where the global conductor leading coefficient is nonzero | lower: 4 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
+| ARITH-D20-EFFECTIVE-ALL-TARGETS | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | upper: 73786976294838206464 |  |
+| ARITH-D20-EXACT-SUMSET-AFFIRMATIVE | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | upper: 5 |  |
+| ARITH-D20-EXACT-SUMSET-AFFIRMATIVE | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | lower: 5 |  |
 | EXT-JC2-DEGREE-100 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 101 |  |
 | EXT-JC2-DEGREE-104 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 105 |  |
 | EXT-JC2-DEGREE-107 | conditional | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1 |
@@ -340,5 +344,6 @@ No unrecorded improvement in an identical domain.
 - HESSIAN-UNRESTRICTED-NODAL-ACTION has bound 4. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
 - HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION has bound 6. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
 - FACTORIAL-ORDINARY-INITIAL-FOUR has bound 4. FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH improves it to 5 under the same assumptions.
+- ARITH-D20-EFFECTIVE-ALL-TARGETS has bound 73786976294838206464. ARITH-D20-EXACT-SUMSET-AFFIRMATIVE improves it to 5 under the same assumptions.
 - EXT-JC2-DEGREE-100 has bound 101. EXT-JC2-DEGREE-104 improves it to 105 under the same assumptions.
 - HESS-HC4-DEGREE-101 has bound 102. HESS-HC4-DEGREE-105 improves it to 106 under the same assumptions.

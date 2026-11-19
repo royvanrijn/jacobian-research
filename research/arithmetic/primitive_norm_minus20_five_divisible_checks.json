@@ -1,0 +1,87 @@
+{
+  "checker_sha256": "21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236",
+  "lattice_shells": [
+    {
+      "b": 0,
+      "integral_cosets": 1,
+      "edge_distance_histogram": {
+        "0": 1
+      },
+      "nonradical_cosets": 1,
+      "radical_cosets": 0
+    },
+    {
+      "b": 1,
+      "integral_cosets": 11,
+      "edge_distance_histogram": {
+        "1": 10,
+        "0": 1
+      },
+      "nonradical_cosets": 10,
+      "radical_cosets": 1
+    },
+    {
+      "b": 2,
+      "integral_cosets": 61,
+      "edge_distance_histogram": {
+        "2": 50,
+        "1": 10,
+        "0": 1
+      },
+      "nonradical_cosets": 50,
+      "radical_cosets": 11
+    },
+    {
+      "b": 3,
+      "integral_cosets": 311,
+      "edge_distance_histogram": {
+        "3": 250,
+        "2": 50,
+        "1": 10,
+        "0": 1
+      },
+      "nonradical_cosets": 250,
+      "radical_cosets": 61
+    },
+    {
+      "b": 4,
+      "integral_cosets": 1561,
+      "edge_distance_histogram": {
+        "4": 1250,
+        "3": 250,
+        "2": 50,
+        "1": 10,
+        "0": 1
+      },
+      "nonradical_cosets": 1250,
+      "radical_cosets": 311
+    },
+    {
+      "b": 5,
+      "integral_cosets": 7811,
+      "edge_distance_histogram": {
+        "5": 6250,
+        "4": 1250,
+        "3": 250,
+        "2": 50,
+        "1": 10,
+        "0": 1
+      },
+      "nonradical_cosets": 6250,
+      "radical_cosets": 1561
+    }
+  ],
+  "tree_intersections": {
+    "tree_edges": 7811,
+    "radius": 5,
+    "intersection_recurrence_checked_through": 4
+  },
+  "constants": {
+    "b_times_5_to_minus_b_over_6_upper": "7/5",
+    "normalized_spectral_error_upper": "21*n^(-1/3)",
+    "sieve_upper_at_n_2_64": "265291/409600",
+    "margin_below_three_quarters": "41909/409600",
+    "claimed_count_denominator": 1000
+  },
+  "scope": "Finite local lattice cosets through b=5, independent tree intersection counts and exact infinite-inequality constants. Does not itself prove the global or full-space spectral argument."
+}

@@ -7,7 +7,7 @@
       "id": "moments",
       "title": "Moments and vanishing",
       "summary": "Generalized vanishing, Gaussian moments and Image/Mathieu spaces.",
-      "status": "Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally. The odd-height extension gives internal primitive, non-proper-power witnesses in every even balanced degree d>=4; primitive odd degree five remains open.",
+      "status": "Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally. The odd-height extension gives internal primitive, non-proper-power witnesses in every even balanced degree d>=4; primitive odd degree five remains open. The universal geometric ternary-cubic purity prefix is at least16 by invariant orbit separation and local height; the exceptional moment scheme is nonreduced. Higher Gaussian-preserving shears give arbitrary first M_d moments with explicit quadratic M_d, separately for Gaussian and sphere functionals.",
       "readme": "moments/README.md",
       "results": [
         {
@@ -794,6 +794,56 @@
           "verification_note": "Internal written proof by raw moment reduction at good primes, weighted support, and triangular Stein recurrences. The exact cubic source and the single-fibre estimates retain the moving endpoint. The checker gives exact bounded controls. Independent replay, formal verification and external review are not asserted.",
           "dependency_coverage": "partial",
           "graph_scope_note": "Safety through original degree seven for invariant cores. Full finite images with a nonzero affine boundary slope remain open."
+        },
+        {
+          "id": "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+          "title": "Arbitrary Gaussian and sphere moment interpolation at quadratic degree scale",
+          "state": "proved",
+          "scope": "For either Gaussian Wick or normalized q=1 sphere functional separately, a polynomial of degree<=d in three variables realizes every prescribed first M_d moments over any algebraically closed characteristic-zero field. M_d=10,13,22,27 atd3,4,5,6; M_d=(d^2+6d-3)/2 for oddd>=7 and(d^2+6d-10)/2 for evend>=8. More generally M=(2r+1)(d-r+1)+r for1<=r<=floor((d-1)/2), improved by2r whenr>=3. Data over K admit a finite algebraic coefficient extension. No simultaneous interpolation, optimality or rational section is claimed.",
+          "canonical_source": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "checker": "moments/vanishing/verify_gaussian_moment_interpolation.py",
+          "artifact_hash": "sha256:c10c032083af430e98a41993851a7a69a2d6e5b979aa00372c784d45f4000d9e",
+          "evidence": [
+            "moments/vanishing/gaussian_moment_interpolation_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "written proof with exact rational controls",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal all-degree written proof and separate review. The direct raw-contraction verifier passed20 exact Gaussian/sphere matrices including6 projected cases, plus576 independent comparisons of balanced one-dimensional and original two-dimensional multinomial contractions. Formal verification, external human review, independent whole-proof replay and priority remain separate.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Only the exact stated theorem is proved. The full research goal and separately recorded larger gaps remain open.",
+          "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim."
+        },
+        {
+          "id": "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+          "title": "Ternary cubic purity requires at least sixteen moments",
+          "state": "proved",
+          "scope": "There is a degree<=3 polynomial in three Gaussian variables over Qbar with its first fifteen moments zero and some later moment nonzero. Thus over every algebraically closed characteristic-zero field the least universal geometric purity prefix is at least sixteen. The later nonzero index is unspecified; nonvanishing specifically of moment16 and any universal upper prefix are not proved. Uses the retained complete complex cubic classification.",
+          "canonical_source": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+          "checker": "moments/vanishing/verify_gaussian_cubic_prefix_geometry.py",
+          "artifact_hash": "sha256:804674293302cd73238d055895a85f7fd9affb0f1ccaed333b2411a32bef597d",
+          "evidence": [
+            "moments/vanishing/gaussian_cubic_prefix_geometry_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "written proof with exact rational controls",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Only the exact stated theorem is proved. The full research goal and separately recorded larger gaps remain open.",
+          "bounds": [
+            {
+              "quantity": "universal-geometric-pure-moment-prefix",
+              "domain": "All complex ternary Gaussian polynomials of total degree at most three, including lower-degree terms; normalized Wick functional",
+              "sense": "lower",
+              "value": 16
+            }
+          ],
+          "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim."
         }
       ],
       "open_questions": [
@@ -810,8 +860,8 @@
           "node": "MOMENTS-TWO-BASE-SAFETY"
         },
         {
-          "question": "Determine the exact least pure-moment prefix for ternary cubics.",
-          "source": "../results/gaussian-boundary/manuscript.tex",
+          "question": "Determine the exact universal Gaussian purity prefix for total degree<=3 in three variables; the geometric lower bound is now16 and the exceptional moment scheme is nonreduced.",
+          "source": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
           "kind": "mathematical",
           "node": "GAP-TERNARY-PURE-PREFIX"
         },
@@ -837,7 +887,7 @@
         "Theorem 5.5 extends the retained primitive Image family to every even balanced degree d>=4. Odd height powers are allowed: for odd k the fixed marker survives at every even m, which already violates eventual mixed vanishing. The next primitive frontier is odd degree five, with F mod R nonzero required from the start; invariant padding cannot settle it. This internal deduction has no independent review, formal verification or novelty claim; unrestricted Image failure was already known in the retained results.",
         "The real signed-height one-affine-profile class is classified: q=r gives primitive failures only in even minimal degree, while q<r is safe for all original multipliers. A separate four-moment certificate excludes every bilinear multiple of the retained quartic from primitive degree five. Neither restriction decides arbitrary primitive odd degree five. The DAG separates angular identities, the contraction bridge, primitivity, Image membership, quartic specialization and padding. The full geometric nullcone interpretation retains a definition/application audit obligation.",
         "The pointwise safety decision has an exact-source Hom route and checked original integration-by-parts and Wick-jet certificates. The latter certify the actual decision without a completeness assumption for the relation matrix.",
-        "For ternary phases of degree at most three, the axial restrictions force a universal geometric pure-moment prefix of at least six and an ordinary ideal prefix of at least ten. The exact global thresholds remain open.",
+        "For ternary Gaussian phases of degree at most three, the invariant/orbit/height argument proves universal geometric purity prefix>=16; first15 moments do not force purity, with an algebraic-coefficient witness and an unspecified later nonzero moment. The exceptional full moment scheme is nonreduced, tangent dimension10 versus reduced dimension4. The exact global threshold remains open. Higher shears separately give arbitrary Gaussian or sphere moment interpolation through explicit quadratic lengths M_d; no optimality is asserted.",
         "For rational polynomial phases and polynomial differential symbols, graph-elimination generation and checked nonnegative-power specialization support the actual-power selector. Its safe outputs have sufficient cutoffs, with a separate premise for pure-linear bounds.",
         "In two real Gaussian variables, eventual pure vanishing, purity, one strict circular-weight sign and all-marker safety are equivalent. If the angular weights fail separation, one fixed prime dilation gives nonzero moments at every sufficiently large prime.",
         "For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff."
@@ -4493,7 +4543,7 @@
       "id": "meridional-rank",
       "title": "Meridional rank",
       "summary": "Knot-group representations, branched-cover bounds and explicit sharp families.",
-      "status": "The prime four-bridge family has ar_C3<mr=bridge4, hyperbolic covers/exteriors, cycliccoverH1 and sharporbifoldtorsionrank4. Exact Fox identities exclude all scalar models and all models through the fixed A8 and A8 x C2 quotients, in every characteristic. Ordinary knot-group rank, other coefficientmodels, remaining known-family/priority boundaries and fullMRC stayopen. Every finite metabelian quotient of each Kn is generated by at most two elements. Verified symmetry proves exact ordinary rank3 for the32 named knot groups and for all closed double-cover groups of Kn, and bounds ordinary ranks of Gamma_n and G_n between3 and4.",
+      "status": "The prime four-bridge family has ar_C3<mr=bridge4, hyperbolic covers/exteriors, cycliccoverH1 and sharporbifoldtorsionrank4. Exact Fox identities exclude all scalar models and all models through the fixed A8 and A8 x C2 quotients, in every characteristic. Ordinary knot-group rank, other coefficientmodels, remaining known-family/priority boundaries and fullMRC stayopen. Every finite metabelian quotient of each Kn is generated by at most two elements. Verified symmetry proves exact ordinary rank3 for the32 named knot groups and for all closed double-cover groups of Kn, and bounds ordinary ranks of Gamma_n and G_n between3 and4. Disjoint protected blocks add root-plus-covector defects and give explicit knots with ar_C<=b-ceil(k/2); repeating the old alternating colors cannot certify gap2 by its support graph. A prime gap2 realization remains open.",
       "readme": "meridional-rank/README.md",
       "results": [
         {
@@ -5730,6 +5780,27 @@
             "Infinitelymanydistinctprimeknots perbridge, notpairwisedistinctness ofallparameters.",
             "FixedNhyperbolicity usespinnedrigorousintervalsoftwareimports; noformalverification or externalhumanreview."
           ]
+        },
+        {
+          "id": "MRC-MULTIPLE-PROTECTED-KNOTS",
+          "title": "Multiple protected augmentation defects and a literal-coloring barrier",
+          "state": "proved",
+          "scope": "For every b>=4k,k>=1 and ell>=0 the displayed P_k R_(k,b)^(1+(b-2k)ell) closes to a knot, its tail fixes every protected free meridian, and ordinary complex augmentation rank is at most b-ceil(k/2) under the stated U=1,mu!=1 correspondence. k=4,b=16 gives ar_C<=14. Matching meridional rank, bridge equality, primeness and hyperbolicity are not established.",
+          "canonical_source": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "checker": "meridional-rank/representations/verify_multiple_protected_obstructions.py",
+          "artifact_hash": "sha256:be5d2c2ebae8f7ce562d077b5e1b494ec94232c5a1526d3ea661c8cda0158a94",
+          "evidence": [
+            "meridional-rank/representations/multiple_protected_obstructions_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "written proof with exact rational controls",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Only the exact stated theorem is proved. The full research goal and separately recorded larger gaps remain open.",
+          "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim."
         }
       ],
       "open_questions": [
@@ -5756,6 +5827,12 @@
           "kind": "mathematical",
           "source": "meridional-rank/representations/THREE_MERIDIAN_FRONTIER_AUDIT.md",
           "question": "Does every classical knot whose group is generated by three meridians admit a three-bridge presentation?"
+        },
+        {
+          "question": "Construct a hyperbolic prime knot with augmentation gap at least two, overcoming the proved literal-seed coloring budget.",
+          "source": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "kind": "mathematical",
+          "node": "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
         }
       ],
       "verification_note": "Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate.",
@@ -5792,7 +5869,8 @@
         "The unboundedprimeaugmentationgaptheoremisproved: for every sufficientlylargeb, infinitelymanydistinctprimeKbk satisfy ar_C<=b-1<mr=br=b. Anexactorientedportinduction transfersallparents tofillings ofonefixedrigorouslyhyperbolicthree-cuspedmanifold. Thresholdsarenon-effective;externalreviewandformalverificationremainpending.",
         "Protected-tail rank-one obstructions give explicit knots with ar_C<=b-1<mr=br=b for every b>=5. Certified hyperbolic parents give infinite prime tails at bridges five and six and every sufficiently large bridge number through one fixed three-cusped parent. Uniform bridge/filling thresholds remain non-effective. The old five-strand S6 quotient obstruction does not affect the new protected families.",
         "A three-meridian generating tuple gives the actual deck inversion on a two-generator branched-cover group. The geometric frontier is the existence of a compatible splitting into trivial three-string quotients. The trefoil test shows that orbifold generation of a specified triple can coexist with proper original lifts, and finite relative nilpotent stages do not detect that example.",
-        "The direct F13 braid trace certificate proves mr=b=4 for T(4,5;2,2), excluding EVERY meridian triple, including all309 survivors of the earlier bounded panel. No simplified-presentation, peripheral-software, hyperbolicity or preprint input is needed for this rank bound. The previous nilpotent-fibre and lifting counterchecks remain method barriers; the universal three-meridian frontier remains open."
+        "The direct F13 braid trace certificate proves mr=b=4 for T(4,5;2,2), excluding EVERY meridian triple, including all309 survivors of the earlier bounded panel. No simplified-presentation, peripheral-software, hyperbolicity or preprint input is needed for this rank bound. The previous nilpotent-fibre and lifting counterchecks remain method barriers; the universal three-meridian frontier remains open.",
+        "Multiple disjoint protected U blocks supply an arbitrary-field sum-of-defects theorem and explicit band-tail knots. The augmentation upper bound does not supply a meridional lower bound or primeness. The literal old A8 seed has a seven-edge deficit that prevents its support-graph argument from certifying gap greater than one."
       ],
       "gap_ids": [
         "GOAL-MRC",
@@ -5803,14 +5881,15 @@
         "GAP-MRC-THREE-MERIDIAN-FRONTIER",
         "GAP-MRC-THREE-MERIDIAN-DECK-SPLITTING",
         "GAP-MRC-T4522-THREE-MERIDIAN-GENERATION",
-        "GAP-MRC-T4522-FINITE-MONODROMY-ORBIT-CERTIFICATE"
+        "GAP-MRC-T4522-FINITE-MONODROMY-ORBIT-CERTIFICATE",
+        "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
       ]
     },
     {
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
       "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion papers are submitted to Hexagon with moderation pending: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11.",
-      "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder.",
+      "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case now has the complete exact sumset: the five admissible mod8 classes with only exceptions3,4, as well as pointwise logarithmic value counts. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder. Classical nonmaximal-level Hecke transfer and a positive five-adic tree operator now prove an effective primitive x^2+5y^2 sum theorem for EVERY admissible N>=2^66, with ordered value count>=N^(2/3)/6000. Class-zero multiplier descent and atomic seed estimates reduce exact completion to reduced cores below2^29; the authenticated full2^29 scan closes that finite input. The exact global exception list is now proved to be3,4, with both reduction directions recorded.",
       "readme": "arithmetic/README.md",
       "results": [
         {
@@ -9455,6 +9534,104 @@
               "locator": "part:form-leading"
             }
           ]
+        },
+        {
+          "id": "ARITH-D20-EFFECTIVE-UNIT5",
+          "title": "Effective primitive x^2+5y^2 sums for targets prime to five",
+          "state": "proved",
+          "scope": "For every N>=2^66 with5 not dividingN and Nmod8 in{2,3,4,6,7}, the ordered primitive numerical-value-pair count R_P(N) is at leastN^(2/3)/6000. Uses the retained classical Hecke transfer at unramified indices and explicit nonmaximal local operators. No all-range exception completion or large-five-divisible claim.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "checker": "arithmetic/verify_primitive_norm_minus20_effective.py",
+          "artifact_hash": "sha256:8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa",
+          "evidence": [
+            "arithmetic/primitive_norm_minus20_effective_checks.json",
+            "arithmetic/primitive_norm_minus20_source_ledger.json"
+          ],
+          "proof_type": "written classical spectral argument with exact local/Euler/lattice certificates",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Author exact replay and separate internal reconstruction/replay pass. The corrected dyadic valuation-one selection has degree2, not the full degree3. The deep Hecke imports retain their existing assurance. No external human review, formal verification or historical priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Only the prime-to-five effective subfamily is proved; global exact sumset and its residual domain remain open."
+        },
+        {
+          "id": "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+          "title": "A full numerical onset for primitive x^2+5y^2 binary sums",
+          "state": "proved",
+          "scope": "For every N>=2^66 with Nmod8 in{2,3,4,6,7}, the ordered primitive numerical-value count is at leastN^(2/3)/6000; other residue classes have count0. For5 dividingN the stronger denominator1000 holds. This is a numerical existence onset, not a numerical onset for the sharper logarithmic asymptotic. This onset proof is retained as an intermediate result; the separate complete exact theorem now classifies every smaller target.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "checker": "arithmetic/verify_primitive_norm_minus20_five_divisible.py",
+          "artifact_hash": "sha256:21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236",
+          "evidence": [
+            "arithmetic/primitive_norm_minus20_five_divisible_checks.json",
+            "arithmetic/primitive_norm_minus20_source_ledger.json"
+          ],
+          "proof_type": "written classical Hecke and positive Bruhat-Tits edge-shell argument with exact local support",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Separate internal proof reconstruction and exact replay passed. Full-space old and nonspherical sectors and global norm characters are treated explicitly. Deep imports retain existing review limits; no external human review, formal verification or historical priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The all-large-target onset remains valid; the separate exact classification now closes all smaller admissible targets too.",
+          "bounds": [
+            {
+              "quantity": "sufficient-numerical-existence-onset",
+              "domain": "Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations",
+              "sense": "upper",
+              "value": 73786976294838206464,
+              "superseded_by": "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE",
+          "title": "Exact primitive x^2+5y^2 binary sumset",
+          "state": "proved",
+          "scope": "For P={x^2+5y^2>0:gcd(x,y)=1}, every integerN>=2 satisfiesN inP+P iffNmod8 in{2,3,4,6,7} andN notin{3,4}. The class-number-two case is globally complete, using the retained classical Hecke proof, new core/atomic-seed interval certificates and a full authenticated2^29 scan.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "checker": "arithmetic/verify_primitive_norm_minus20_completion.py",
+          "artifact_hash": "sha256:46489c211fb21936d6e2a3304392ec8ab2020cd756deaa2f8f840df35847fd8d",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_primitive_norm_minus20.py",
+              "sha256": "02ad60a146081747461ed374e4495b15f3fd8bcb4c58d57b40ca102d17f7e903"
+            },
+            {
+              "path": "arithmetic/verify_primitive_norm_minus20_effective.py",
+              "sha256": "8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa"
+            },
+            {
+              "path": "arithmetic/verify_primitive_norm_minus20_five_divisible.py",
+              "sha256": "21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236"
+            }
+          ],
+          "evidence": [
+            "arithmetic/primitive_norm_minus20_completion_checks.json",
+            "arithmetic/primitive_norm_minus20_checks_2_29.json",
+            "arithmetic/primitive_norm_minus20_source_ledger.json"
+          ],
+          "proof_type": "written classical spectral and class-group descent proof with exact interval certificates and independent full finite membership authentication",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Two separate internal reviewers reconstructed the complete core/atomic-seed proof and independently replayed the interval packet. The full2^29 scan was executed with the unchanged original checker, authenticating335544320 local targets with exactly two exceptions. Published archives and the older2^24 receipt are preserved. The deep imported theorem assurance is unchanged; external human review, formal verification and historical priority are not established.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The complete exact -20 sumset is proved internally. Independent review and historical priority remain separate from mathematical graph status.",
+          "bounds": [
+            {
+              "quantity": "sufficient-numerical-existence-onset",
+              "domain": "Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations",
+              "sense": "upper",
+              "value": 5
+            },
+            {
+              "quantity": "sufficient-numerical-existence-onset",
+              "domain": "Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations",
+              "sense": "lower",
+              "value": 5
+            }
+          ]
         }
       ],
       "open_questions": [
@@ -9723,12 +9900,6 @@
           "source": "arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md"
         },
         {
-          "node": "GAP-PRIMITIVE-NORM-EXACT-20",
-          "kind": "mathematical",
-          "question": "Prove or disprove P_-20+P_-20={N>=2:Nmod8in{2,3,4,6,7}} minus{3,4}. Exceptions3,4 are actual; no further exceptions through2^24. Eventual existence and N J(N)/logN counts are proved, but no numerical global onset or all-range finite completion is supplied.",
-          "source": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md"
-        },
-        {
           "node": "GAP-PRIMITIVE-NORM-EXACT-23",
           "kind": "mathematical",
           "question": "Prove that the40locallyadmissible exceptions inCN3Finite areglobally complete, orfindfurtherexceptions above2^24. Everytargetthrough2^24 isclassified, largestexception3818, andeventual logarithmiccounts areproved; nonumericaleventualcutoff closes thegap. The full exactclassification remainsopen.",
@@ -9844,7 +10015,7 @@
         "For the quadratic gauge the full geometric fibre, nonzero universal discriminant and degree-N finite \u00e9tale neighborhood are equivalent. On \u03a0=0 the cubic fibre is full exactly when B(1\u2212BC)\u22600, while degrees N\u22654 have no full target on that slice.",
         "For every fixed pair of primitive positive-definite integral binary forms, an internally checked quaternary/Mobius deduction gives eventual pair-primitive local-global existence and a coordinate-count singular-series asymptotic with a power-saving error. All local obstructions form a finite congruence test, including conductor primes and arbitrary ideal classes. Both exact -8 and -11 self-sum identities are proved, with no exceptions through1000000; this does not resolve C12+C12 or unweighted leading constants.",
         "Principal norm sets of every imaginary quadratic order have an elementary effective at-most-four boundN>=4c and exact higher-sumset stabilization; all class-number-one k>=3 sumsets now have complete exceptions. General primitive binary pairs have qualitative angular equidistribution and fixed macroscopic balance. For -8, the exact primitive identity and both strong-core identities are proved using complete finite coverage,107analytic intervals and the independent old prime/core results. The explicit count onset remains2^78. A separate maximal-order -11 sieve now gives the explicit onset2^71 and value-pair lower boundN^(2/3)/100000; sharper bounds and a complete finite certificate now prove its exact binary identity without exceptions. These exact-norm and higher-sumset arguments do not establish C12+C12; the separate subgroup source records that claim and its analytic imports.",
-        "The first class-number-two principal norm x^2+5y^2 has pointwise N J_-20(N)/logN value counts on every eventual local target, by an explicit finite-genus-filter extension of the existing asymmetric proof. Its class constraint is a periodic genus character, and both signs must travel through every cofactor/gcd operation. Complete scans through2^24 have only exceptions3,4; global completeness and a numerical cutoff remain open.",
+        "The first class-number-two principal norm x^2+5y^2 has pointwise N J_-20(N)/logN value counts on every eventual local target, by an explicit finite-genus-filter extension of the existing asymmetric proof. Its class constraint is a periodic genus character, and both signs must travel through every cofactor/gcd operation. Complete scans through2^24 have only exceptions3,4; the exact global exception list3,4 is now proved by the separately recorded core/seed/certificate completion.",
         "For discriminant-23, a complete C3 individual-norm criterion exhibits infinite genuine primitive local/global failures, while four fixed nonprincipal split primes at exact exponent1 give a sufficient additive subset with pointwise N J_-23(N)/logN counts on every sufficiently large529-admissible target. The analytic proof remains quadratic-character dispersion plus finite profiles; no nonabelian distribution estimate is used. Exact additive exceptions and a numerical cutoff remain open.",
         "For every negative prime discriminant-p,p>=7,p=3mod4 (classgroup automaticallyodd), fixed exact-prime pools absorb arbitrary residualclasses and give every sufficiently large primitive-local target the sharp value-count order N J_K(N)/logN. Localconditions arep^2 notdividingN andN even when2 is inert. Primary class-prime density only choosesfixedpools; quadratic Dirichlet-character analytic inputs remain sufficient. Constants depend on the field and fixed pools. This prime-pool argument supplies no numerical cutoff, exact exception list, leading constant or mixed-field theorem. Even class groups and conductors are addressed by the separate all-orders source; its leading-term extension uses the separate correlation imports.",
         "For classgroupC4 inK=Q(sqrt(-14)), the primitiveformx^2+14y^2 haspointwise N J_-56(N)/logN sumcounts onevery sufficientlylarge49-admissibletarget, withoutdyadicexclusions. Aperiodicchi8genuscondition plus two exactoneoddclass primes correct2G. Ram2/7 requirefreshidealorientations, notnormgenerator scaling. Exactindividualcounts exposeinfinitegenuineclassfailures3^(4a+2); noall-even-classgroups theorem or exactadditiveexceptionlist isasserted.",
@@ -9866,7 +10037,8 @@
         "The675 continuation adds a prime-square upper bound and scoped obstructions to small-T norm sieves, finite-squareclass recurrence and a uniform Pell identity for position9. Checked primary approximation theorems do not produce the missing positive integer parameter; both fixed-set and tuple-existence goals remain OPEN.",
         "Erdos675 is deferred as a separate stretch goal for later research. Its notes, exact checks and partial results are retained outside the current norm-counting and binary-correlation papers; no paper result depends on this programme.",
         "Fix one imaginary quadratic field and two fixed orders of discriminantsDelta_i=f_i\u00b2D0. LetQ_i,Q_i_prime be primitive positive definite integral forms in the same genus for each sloti separately; the two slot genera may differ. Mixed primitive numerical-value counts have sharp order N J_S(N)/logN on every sufficiently large common locally admissible target and vanish outside it, S|2Delta1Delta2. Their ratio is1+O(log^-etaN), every0<eta<min_i delta_star(2Pic_i), with delta_star(0)=infinity encoding an exact zero class error. Constants/onsets depend on fixed forms/orders andeta; exponent1/5 works if any doubled group is nontrivial. Both-trivial groups give equal counts for every target. This classical assertion uses no ZF/G and no joint ring-class prime theorem. No genus is identified across discriminants, no different-field or varying-order theorem, no endpoint or quantitative full-leading remainder is asserted.",
-        "For two fixed primitive positive definite forms of discriminantsDelta_i=f_i\u00b2D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route."
+        "For two fixed primitive positive definite forms of discriminantsDelta_i=f_i\u00b2D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route.",
+        "The primitive x^2+5y^2 binary sumset is globally exact: N>=2, Nmod8 in{2,3,4,6,7}, excluding only3,4. The internal proof retains all classical spectral imports, the positive five-adic operator, core/atomic seed intervals, and independently authenticated coordinate/genus flags through2^29. Both multiplier-descent implications are recorded. External review and historical priority remain separate."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -14200,7 +14372,7 @@
         "title": "Exact universal geometric ternary-cubic pure-moment prefix",
         "kind": "gap",
         "status": "open",
-        "scope": "Determine the least N such that the first N pure moments cut out the pure locus set-theoretically among complex phases of total degree at most three in three variables. The axial specialization forces N>=6. The sharp mixed cutoff for pure phases has slope 3.",
+        "scope": "Determine the least N such that the first N pure moments cut out the pure locus set-theoretically among complex Gaussian polynomials of total degree at most three in three variables. The invariant/orbit/height argument proves N>=16, improving the earlier axial lower bound6. The full moment scheme is nonreduced on the exceptional orbit, with tangent dimension10 and reduced dimension4. Neither sufficiency of16 nor a larger exact threshold is established.",
         "sources": [
           {
             "path": "../results/gaussian-boundary/manuscript.tex",
@@ -14316,6 +14488,11 @@
             "path": "moments/vanishing/GAUSSIAN_GENERIC_FIVE_DIRECTION_MOMENT_SCHEMES.md",
             "sha256": "e398fea4f42a955a185c9e4932c7add2076098c1e3ec18daa5591824398e12d5",
             "locator": "Sections 2\u20134, exact ternary axial specialization and geometric prefix six"
+          },
+          {
+            "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+            "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+            "locator": "Section 4, proved lower bound16 and explicit lack of an upper prefix"
           }
         ],
         "dependency_coverage": "partial",
@@ -90291,7 +90468,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "CN2.3 and explicit valuation/genus decomposition"
           }
         ],
@@ -90309,7 +90486,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "LemmaCN2Filter, CN2.4-CN2.8 and complete source/error normalization proof"
           },
           {
@@ -90332,7 +90509,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "CN2.9 and the full directive/common-cofactor transport argument"
           },
           {
@@ -90378,7 +90555,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "PropositionCN2Finite and complete enumeration/bitmask proof"
           },
           {
@@ -90397,7 +90574,7 @@
       {
         "id": "GAP-PRIMITIVE-NORM-EXACT-20",
         "title": "Exact discriminant -20 primitive norm sumset exceptions",
-        "scope": "Prove or disprove P_-20+P_-20={N>=2:Nmod8in{2,3,4,6,7}} minus{3,4}. Exceptions3,4 are actual; no further exceptions through2^24. Eventual existence and N J(N)/logN counts are proved, but no numerical global onset or all-range finite completion is supplied.",
+        "scope": "The former exact primitive x^2+5y^2 exception problem is resolved affirmatively through the grounded ARITH-D20-EXACT-SUMSET-AFFIRMATIVE route: the five local mod8 classes have exactly exceptions3,4. The complete finite scan and all-range core/seed proof are retained; external review and historical priority are separate.",
         "kind": "gap",
         "status": "open",
         "topic": "arithmetic",
@@ -90406,8 +90583,13 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "CN2.2 bounded proposition and explicit remaining scope"
+          },
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+            "locator": "CN2EffectiveUnit5 and exact residual completion criterion"
           }
         ],
         "assessment": "Internal mathematical reconstruction and exact finite replay; no external review, formal verification or priority assurance.",
@@ -90756,7 +90938,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "CN2Filter proof mechanism, specialized anew rather than theorem statement outside its fixed parameters"
           }
         ],
@@ -91106,7 +91288,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-            "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
             "locator": "CN2Filter proof mechanism and all-sign/gcd transport"
           }
         ],
@@ -96018,6 +96200,549 @@
           }
         ],
         "assessment": "A named statement of the existing internally inspected derivation; no independent import-proof validation, mathematical replay, external review or formal verification is inferred."
+      },
+      {
+        "id": "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS",
+        "kind": "source",
+        "title": "Classical Jacobian presentations and openness of smooth morphisms",
+        "scope": "A polynomial map with an invertible square Jacobian minor is standard smooth after localizing that determinant; a smooth morphism is universally open.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "moments/vanishing/sources/stacks-00T1-moment-interpolation.html",
+            "sha256": "18042bd781db9d7a94da9d9715dd8c41c93a9a5d9194e27b8a068a5a5e8a0b26",
+            "locator": "Definition 10.137.5, Lemma 10.137.6 and Example 10.137.7"
+          },
+          {
+            "path": "moments/vanishing/sources/stacks-056G-moment-interpolation.html",
+            "sha256": "c9dea55de2297a5cb000e0357955949764020f9f061e62e8e804e6afc5fa8bc8",
+            "locator": "Lemma 29.35.10 statement and proof"
+          }
+        ]
+      },
+      {
+        "id": "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ",
+        "kind": "source",
+        "title": "Classical local dimension inequalities and Nullstellensatz",
+        "scope": "A quotient of a Noetherian local ring by N elements of its maximal ideal has dimension at least dim R-N (Stacks 00KW/0BBZ). Over an algebraically closed field, vanishing at all zeros is radical membership; a proper polynomial ideal has a closed rational point (00FS).",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "moments/vanishing/sources/stacks-00KW-moment-interpolation.html",
+            "sha256": "c67843e878e532cf9a072c5b8a0b5f601cbb79dd300a1ea32fe2dbe1f1a1a331",
+            "locator": "Lemma 10.60.13 and proof"
+          },
+          {
+            "path": "moments/vanishing/sources/stacks-0BBZ-moment-interpolation.html",
+            "sha256": "ae3d97570eb765f4d57a4648d9d77ef6a03108ce8d7c455ae6639c6155817f74",
+            "locator": "Lemma 10.60.12 and proof"
+          },
+          {
+            "path": "moments/vanishing/sources/stacks-00FS-moment-interpolation.html",
+            "sha256": "9f3ceec35dc0a7ca20d4c997449c3d111f3e0c91e437b5b749f12f4ac74a68a9",
+            "locator": "Theorem 10.34.1 and proof"
+          }
+        ]
+      },
+      {
+        "id": "SRC-GAUSSIAN-SPHERE-MOMENT-INTERPOLATION",
+        "kind": "source",
+        "title": "Written moment interpolation and direct original Jacobian controls",
+        "scope": "Self-contained higher shear, bounded additive marker intervals, projected moment Jacobian, weighted-open-image and normalized-witness proofs with direct original contraction controls.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim.",
+        "sources": [
+          {
+            "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+            "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+            "locator": "Complete proof, including Section2.2 projected higher-shear interpolation"
+          },
+          {
+            "path": "moments/vanishing/verify_gaussian_moment_interpolation.py",
+            "sha256": "c10c032083af430e98a41993851a7a69a2d6e5b979aa00372c784d45f4000d9e",
+            "locator": "Direct multinomial contraction and triangular-matrix verifier"
+          },
+          {
+            "path": "moments/vanishing/gaussian_moment_interpolation_verification.json",
+            "sha256": "6461052bd6b31daa88fb80d42a7ecde761dcb4429400d0bf5c078bb9cf29826c",
+            "locator": "20 finite Gaussian/sphere Jacobians,576 independent contraction comparisons and corruption controls"
+          }
+        ]
+      },
+      {
+        "id": "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+        "kind": "claim",
+        "title": "Positive weighted homogeneity upgrades local openness at the zero fiber to surjectivity",
+        "scope": "For homogeneous polynomial f_j of positive degrees on a finite-dimensional vector space over an algebraically closed characteristic-zero field, a point v0 with f(v0)=0 and surjective differential implies f is surjective on field-valued points. No inverse, unique section or rational section is asserted.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+        "kind": "claim",
+        "title": "Higher Gaussian-preserving shears have an exact consecutive marker-weight interval",
+        "scope": "For r>=1 and d>=2r+1, P_r=W+Z^rY-Z^(2r+1)/2 is pure for the Gaussian and normalized sphere functionals. Original markers Z^iY^jW^k, i+j+k<=d, realize every leading period degree 0..M-1 where M=(2r+1)(d-r+1)+r, and M is the first missing weight. Leading coefficients are (-1/2)^k, divided by (2n+1)!! on the sphere.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+        "kind": "claim",
+        "title": "Normalized algebraic witnesses for long vanishing moment prefixes",
+        "scope": "For every d>=3 and either functional separately, an algebraic-coefficient degree<=d polynomial has first M_d-1 moments zero and M_d-th moment one, with M_d as in the improved projected interpolation theorem (10,13,22,27,44,51,66 atd3..9). The same holds at every admitted unprojected or projected shear length.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+        "kind": "claim",
+        "title": "Actual last moments escape the radical of their preceding moment ideals",
+        "scope": "On the full degree<=d coefficient space over an algebraically closed characteristic-zero field, F_M is not in radical(F_1,...,F_(M-1)) for M=M_d and more generally M(r,d). This is equivalent to a normalized witness F_1=...=F_(M-1)=0,F_M=1, by Nullstellensatz and scalar normalization.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE",
+        "kind": "claim",
+        "title": "The first quadratic-length moment functions are algebraically independent",
+        "scope": "For each d>=3 and either functional separately, F_1,...,F_(M_d) are algebraically independent as coefficient polynomials. Surjectivity implies this; the converse to surjectivity is not asserted.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-GAUSSIAN-CUBIC-PREFIX-GEOMETRY",
+        "kind": "source",
+        "title": "Written cubic purity-prefix geometry and exact invariant controls",
+        "scope": "Separating invariant J=E[F1^3 F3], exceptional orbit dimension and classical local-height argument; classification is an explicit external premise of the derived claims.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim.",
+        "sources": [
+          {
+            "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+            "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+            "locator": "Complete proof, Sections 1-5"
+          },
+          {
+            "path": "moments/vanishing/verify_gaussian_cubic_prefix_geometry.py",
+            "sha256": "804674293302cd73238d055895a85f7fd9affb0f1ccaed333b2411a32bef597d",
+            "locator": "Direct sparse original-polynomial invariant, tangent and Wick controls"
+          },
+          {
+            "path": "moments/vanishing/gaussian_cubic_prefix_geometry_verification.json",
+            "sha256": "6b0393a108a193340e0294e0a49835bc928ce36b66b8e59f5ebba272b813f39a",
+            "locator": "Exact finite invariant and tangent verification"
+          }
+        ]
+      },
+      {
+        "id": "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+        "kind": "claim",
+        "title": "An explicit invariant isolates the four-dimensional exceptional pure orbit",
+        "scope": "For complex Gaussian polynomials of degree<=3, J(P)=E[F1(P)^3 F3(P)] is O3-invariant, homogeneous of coefficient degree four and zero on the entire one-sided family and its Zariski closure. J(P*)=-3. Using the retained full pure normal-form classification, the pure locus in J!=0 is exactly the exceptional O3 x Gm orbit, a smooth four-dimensional variety.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED",
+        "kind": "claim",
+        "title": "The full ternary cubic Gaussian moment scheme is nonreduced on its exceptional orbit",
+        "scope": "At P* and every orthogonal/scalar translate, the full moment scheme has tangent dimension ten, while its reduced germ is the smooth exceptional orbit of dimension four. Therefore its local moment ideal is nonradical. Neither its nilpotence index nor a complete local ideal presentation is determined.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-MRC-MULTIPLE-PROTECTED-OBSTRUCTIONS",
+        "kind": "source",
+        "title": "Written disjoint protected obstructions, knot tails and coloring barrier",
+        "scope": "Unrestricted defect-counting and band-tail arguments with exact finite controls; the local signed obstruction is retained in the released representations proof.",
+        "status": "proved",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "assessment": "Internal written proof and exact finite algebra controls; no external review, formal verification, independent whole-proof replay or priority claim.",
+        "sources": [
+          {
+            "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+            "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+            "locator": "Complete proof, Sections 1-5"
+          },
+          {
+            "path": "meridional-rank/representations/verify_multiple_protected_obstructions.py",
+            "sha256": "be5d2c2ebae8f7ce562d077b5e1b494ec94232c5a1526d3ea661c8cda0158a94",
+            "locator": "Free-word, permutation, kernel-side and edge-budget exact controls"
+          },
+          {
+            "path": "meridional-rank/representations/multiple_protected_obstructions_verification.json",
+            "sha256": "868eb05489acb37eefdb7978cc835fa8be605d317775a106cb5991ef3b95c1c3",
+            "locator": "Recorded bounded controls"
+          },
+          {
+            "path": "../results/prime-knot-augmentation-gaps/representations.tex",
+            "sha256": "bf778455b9bb487cdfa6be6f14422b9421389fcd8d8f074072bfaa8e2a52f499",
+            "locator": "lem:spans and lem:seven, only outer closure relations used"
+          }
+        ]
+      },
+      {
+        "id": "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+        "kind": "claim",
+        "title": "The four-strand signed obstruction needs only its two outer closures",
+        "scope": "Over any field, in any finite ambient dimension, rank-one displacement matrices of a common nonzero meridian determinant propagated through U cannot have both four input roots and four input covectors independent when the first and fourth output matrices equal the corresponding input matrices. No middle-product or global-tail relation is used.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-MULTIPLE-PROTECTED-DEFECT",
+        "kind": "claim",
+        "title": "Disjoint protected blocks add root-plus-covector defects",
+        "scope": "If k disjoint U blocks lie on b>=4k strands and the tail fixes all their outer free meridians with knot closure, every finite-dimensional rank-one-meridian representation over any field has r+q<=2b-k. An irreducible one has dimension<=b-ceil(k/2). If a preserved nondegenerate bilinear form identifies the two local dependence alternatives, then r=q<=b-k. General augmentations need not preserve such a form.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MRC-LITERAL-SEED-COLORING-BUDGET",
+        "kind": "claim",
+        "title": "Literal repeated alternating seeds cannot certify gap two by the old support graph bound",
+        "scope": "For b double-transposition meridian colors containing k disjoint strand blocks simultaneously conjugate to the old A8 four-color seed, at most2b-k distinct support edges exist. A transitive action on v symbols forces v<=2b-k+1. Combining only the resulting support-graph meridional lower bound with ar<=b-ceil(k/2) certifies gap at most1; this is not an upper bound on actual knot gaps or a classification of other colorings.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAP-MRC-PRIME-GAP-TWO-REALIZATION",
+        "kind": "gap",
+        "title": "Realize a hyperbolic prime augmentation gap of at least two",
+        "scope": "Construct a hyperbolic prime knot with mr-ar_C>=2. Four disjoint protected blocks supply ar<=b-2 but no matching meridional lower bound. Literal old alternating seed stacking cannot obtain the needed lower bound from its support-graph argument. New local colors, stronger two-sided defects, different packing or another meridional invariant are required before prime realization.",
+        "status": "open",
+        "topic": "meridional-rank",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+            "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+            "locator": "Sections 2-4, proved partial construction and precise coloring obstruction"
+          }
+        ]
+      },
+      {
+        "id": "SRC-ARITH-D20-EFFECTIVE-UNIT5",
+        "kind": "source",
+        "title": "Written effective five-unit primitive norm proof and exact finite support",
+        "scope": "Nonmaximal order mass, dyadic degree(1,2,2) operators, biased fine5 profile, inert sieve, Euler/lattice tail and value-count conversion. The classical spectral transfer is a separate declared premise.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+            "locator": "CN2EffectiveUnit5; CN2E.1-CN2E.10 and exact residual completion criterion"
+          },
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20_effective.py",
+            "sha256": "8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa",
+            "locator": "Direct finite local-ring, dyadic-shell, Euler and rational control verifier"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_effective_checks.json",
+            "sha256": "d056787751625c810cdc5bcac4405f3cd61e6e49a8250933cafd8610258a37d2",
+            "locator": "Actual scoped checker output"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_source_ledger.json",
+            "sha256": "22143c11270daa582b0ddcc387cfa65c2cecc217789743386e1b8893877a773a",
+            "locator": "effective_unit5 source/application audit and assurance limits"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-EFFECTIVE-UNIT5-CERTIFICATE",
+        "kind": "source",
+        "title": "Exact five-unit local and infinite-inequality certificates",
+        "scope": "Standard-library exact checks authenticate O/5O unit count400 and axis40, quotient100/10 and biased masses, dyadic degree2 sub-selection at v2=1, all-odd v2=2 selection, finite shell normalization controls through512, lattice bound1..24, finite Euler maxima and rational survival margin47985177/52428800<15/16. The spectral theorem and all-range positivity are written, not computational conclusions.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20_effective.py",
+            "sha256": "8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa",
+            "locator": "Complete exact finite certificate verifier"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_effective_checks.json",
+            "sha256": "d056787751625c810cdc5bcac4405f3cd61e6e49a8250933cafd8610258a37d2",
+            "locator": "Local masses, dyadic patterns, Euler products and survival margin"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-EXACT-SUMSET-RESIDUAL",
+        "kind": "claim",
+        "title": "The exact remaining finite -20 target interval",
+        "scope": "Every locally admissible N with2^24<N<2^66 lies in P+P. This previously open broad finite assertion is now a consequence of the complete exact theorem; its stated converse under CN2Finite and CN2EffectiveAll remains valid.",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "EXT-D20-BRUHAT-TITS-EDGE-GEOMETRY",
+        "title": "Classical Bruhat-Tits tree, lattice-chain cosets and Eichler normalizer",
+        "scope": "At split q=5 the tree of homothety classes of rank-two lattices is6-regular; the Iwahori compact fixes an oriented edge, and the Eichler-order normalizer includes its edge reversal. Voight author edition1.0.7u, Section23.5, Proposition23.5.8, lattice/cosets23.5.12 and normalizer23.5.16.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/voight-quaternion-algebras-author.pdf",
+            "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+            "locator": "Section23.5, actual statements and lattice proofs of23.5.8,23.5.12,23.5.16"
+          }
+        ]
+      },
+      {
+        "id": "SRC-ARITH-D20-FULL-EFFECTIVE-ONSET",
+        "title": "Written full effective -20 onset and five-adic local proof",
+        "scope": "Positive exact-distance Iwahori shell selection, complete old and nonspherical spectral bound, norm-character preservation, infinite inert sieve and numerical value-count proof. Other deep Hecke inputs retain their separate premises.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+            "locator": "CN2EffectiveAll, CN2FiveDivisibleOperator, F5.1-F5.11 and exact residual completion criterion"
+          },
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20_five_divisible.py",
+            "sha256": "21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236",
+            "locator": "Independent HNF lattice-chain, tree and rational control verifier"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_five_divisible_checks.json",
+            "sha256": "9da0e198056fb3d615bb402e9163d9ba06d84d0565d9bffcfd2c81afe4ac797b",
+            "locator": "Actual five-divisible finite support receipt"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_source_ledger.json",
+            "sha256": "22143c11270daa582b0ddcc387cfa65c2cecc217789743386e1b8893877a773a",
+            "locator": "full_onset exact application, source pins and assurance limits"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-FIVE-DIVISIBLE-CERTIFICATE",
+        "title": "Exact five-adic lattice-chain and tree certificates",
+        "scope": "All local integral Iwahori right-unit cosets for norm valuations b=0..5 are enumerated, with counts1,11,61,311,1561,7811; radical subtraction leaves2*5^b at b>=1. An independent7811-edge6-regular tree authenticates distance recurrences through4. Exact inequalities give sieve upper265291/409600<3/4. These finite controls do not prove the global spectral theorem.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20_five_divisible.py",
+            "sha256": "21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236",
+            "locator": "Complete finite exact verifier"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_five_divisible_checks.json",
+            "sha256": "9da0e198056fb3d615bb402e9163d9ba06d84d0565d9bffcfd2c81afe4ac797b",
+            "locator": "HNF cosets, edge distances, tree intersections and rational margins"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+        "title": "A positive five-adic primitive shell has a full-space spectral bound",
+        "scope": "For every integer b>=1 at level-five Eichler compact, the integral norm5^b correspondence minus the included iotaO5 branch has nonnegative kernel, is self-adjoint, has degree2*5^b and complementary operator norm<=4b5^(b/2) after removing all global reduced-norm characters. The proof covers both maximal-compact frames and kerP0 intersect kerP1. All occurring norm characters are unramified at5, so coarsening preserves the same character complement.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SRC-ARITH-D20-EXACT-COMPLETION",
+        "title": "Written complete discriminant -20 sumset proof and exact certificate support",
+        "scope": "Full C1-C14 multiplier/core/seed/interval argument and its exact finite inputs, including the separately executed coordinate/genus sumset scan through2^29. Deep spectral application remains explicitly dependent on the retained all-ideal Hecke transfer.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+            "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+            "locator": "Theorem CN2Exact and exact completion C1-C14; Proposition CN2Finite29"
+          },
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20_completion.py",
+            "sha256": "46489c211fb21936d6e2a3304392ec8ab2020cd756deaa2f8f840df35847fd8d",
+            "locator": "Portable exact Euler, lattice, prime-tail and divisor-envelope verifier"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_completion_checks.json",
+            "sha256": "f6eba4cf896f4433fd8d8c53b1fc62b285bf7472d82dd2d3980c4ad4c5be1b5f",
+            "locator": "134 core and12 atomic-seed interval certificates, infinite-end inequalities and envelope domain"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_checks_2_29.json",
+            "sha256": "ade0365c544eda0edc4704110a46b3edc1d654b010663cf6e9f9ada175ae2e4d",
+            "locator": "Authenticated full2^29 coordinate/genus/packed-sumset receipt"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_source_ledger.json",
+            "sha256": "22143c11270daa582b0ddcc387cfa65c2cecc217789743386e1b8893877a773a",
+            "locator": "exact_completion source pins, complete mathematical scope and two internal reviews"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+        "title": "Exact reduced-core and atomic-seed completion certificates",
+        "scope": "The portable verifier authenticates the all-odd initial lattice table, rational core Euler maximum61/20, rounded prime-tail upper bounds through65536, complete1439-state split-divisor envelope through2^52, all134 required core intervals and12 atomic-seed intervals, and the rational infinite continuations. No large sumset scan or global spectral theorem is inferred from this packet.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20_completion.py",
+            "sha256": "46489c211fb21936d6e2a3304392ec8ab2020cd756deaa2f8f840df35847fd8d",
+            "locator": "Complete exact interval verifier; finite enumeration and rational inequalities"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_completion_checks.json",
+            "sha256": "f6eba4cf896f4433fd8d8c53b1fc62b285bf7472d82dd2d3980c4ad4c5be1b5f",
+            "locator": "Actual complete finite packet and infinite-end bounds"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29",
+        "title": "Exact primitive -20 sumset classification through two to the twenty-ninth",
+        "scope": "For every2<=N<=2^29, membership in P+P is equivalent to Nmod8 in{2,3,4,6,7} and N notin{3,4}. The unchanged checker authenticates every coordinate/gcd flag against independently computed splitting/genus flags through536870912. There are335544320 admissible targets and335544318 represented targets, with zero forbidden targets covered and residuals exactly3,4. This is a bounded computation, not the global theorem.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_primitive_norm_minus20.py",
+            "sha256": "02ad60a146081747461ed374e4495b15f3fd8bcb4c58d57b40ca102d17f7e903",
+            "locator": "Full coordinate enumeration, independent genus sieve, packed value-set union and exhaustive residual test"
+          },
+          {
+            "path": "arithmetic/primitive_norm_minus20_checks_2_29.json",
+            "sha256": "ade0365c544eda0edc4704110a46b3edc1d654b010663cf6e9f9ada175ae2e4d",
+            "locator": "Actual --bound536870912 run, whole-array equality, two exceptions and negative controls"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-D20-SPLIT-MULTIPLIER-DESCENT",
+        "title": "Class-zero split multipliers reduce every target and isolate the two exceptional core families",
+        "scope": "For q supported on split primes with chi_-4(q)=1, qP subset P, and admissible residue classes are preserved both ways. Every target factorsN=cq, where c has ramified/inert support and at most one nonprincipal split prime to exponent1. The multiplier monoid atoms are principal split primes or pairs of nonprincipal split primes, allowing repeats. Cores3,4 are therefore handled by3p,4p,3pq,4pq seeds rather than discarded.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-D20-REDUCED-CORES-LARGE",
+        "title": "Every locally admissible reduced core at least two to the twenty-ninth is represented",
+        "scope": "For c=2^e5^b m locally admissible, e=0,1,2, where m has inert prime support and at most one nonprincipal split prime to exponent1, c>=2^29 implies c in P+P. Uses normalized intervals n>=2^28 for e0/e1 or n>=2^27 for e2 through2^50 plus independently proved infinite tails. This is a CORE theorem, not by itself every arbitrary target>=2^29.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+        "title": "All nontrivial atomic multiples of exceptional cores three and four are represented",
+        "scope": "Every3p or4p with p principal split prime, and every3pq or4pq with p,q nonprincipal split primes allowing equality, lies in P+P. E<=8/sqrtN,12 exact intervals from2^24 to2^30 and the explicit infinite bound13983/20480<1 handle all large seeds; smaller seeds use the retained2^24 classification.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+        "title": "The reduced-core finite bridge required by exact -20 completion",
+        "scope": "Every locally admissible reduced core c with2^24<c<2^29 lies in P+P. This finite assertion is independently grounded by the full2^29 scan and is equivalent to the exact global formula under the stated descent, large-core and atomic-seed premises.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN",
+        "title": "Truncating high marker periods extends the consecutive moment Jacobian interval",
+        "scope": "For every r>=3,d>=2r+1, add the explicit2r original degree<=d markers and truncate their periods after M+2r-1, where M=(2r+1)(d-r+1)+r. Their projected leading degrees fill the next2r positions with nonzero diagonal. The two special raw subleading Gaussian coefficients are r*b*(2b-1)*(-1/2)^(b-1) and2r*b*(b-1)*(-1/2)^(b-1); the sphere divides these by(2n+3)!! instead of the top-term(2n+1)!!. No modified spatial filtration is used.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "GAUSSIAN-SPHERE-UNPROJECTED-MOMENT-INTERPOLATION",
+        "title": "Unprojected higher-shear moment interpolation",
+        "scope": "For every d>=3 and1<=r<=floor((d-1)/2), either Gaussian or normalized sphere functional separately admits arbitrary first M=(2r+1)(d-r+1)+r moments from a degree<=d polynomial over an algebraically closed characteristic-zero field. This is the leading-weight construction before the additional2r projected-marker improvement.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
       }
     ],
     "implications": [
@@ -144966,7 +145691,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-          "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
           "locator": "CN2.3; exact class-number-two ideal criterion"
         },
         "dependency_coverage": "partial"
@@ -144983,7 +145708,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-          "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
           "locator": "CN2Filter; fixedperiod40t, good-modulus reduction and explicit principal normalization/sign transports"
         },
         "dependency_coverage": "partial"
@@ -144998,7 +145723,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-          "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
           "locator": "CN2.9; genus-carrying directives preserveGamma and full split-prime restoration"
         },
         "dependency_coverage": "partial"
@@ -145015,7 +145740,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-          "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
           "locator": "TheoremCN2 and PropositionCN2Finite; complete positive target table and finite scan scope"
         },
         "dependency_coverage": "partial"
@@ -148349,6 +149074,348 @@
           "locator": "prop:gr-arithmetic-reduction and its proof; eq:gr-comparison, eq:gr-comparison-term, eq:gr-sharednormal, eq:gr-sharedprob"
         },
         "description": "Existing signed comparison, endpoint pairing and shared-label derivation with explicit physical/list coefficient normalization; no added analytic hypothesis."
+      },
+      {
+        "id": "DERIVE-MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+        "premises": [
+          "SRC-GAUSSIAN-SPHERE-MOMENT-INTERPOLATION",
+          "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS"
+        ],
+        "conclusion": "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Section 1, Lemma WeightedOpenImage; smooth image U containing zero and contracting weighted target orbit"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+        "premises": [
+          "SRC-GAUSSIAN-SPHERE-MOMENT-INTERPOLATION"
+        ],
+        "conclusion": "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Section 2.1, I9-I10, derivation invariance and residue-class additive intervals"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+        "premises": [
+          "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+          "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+          "SRC-GAUSSIAN-SPHERE-MOMENT-INTERPOLATION"
+        ],
+        "conclusion": "GAUSSIAN-SPHERE-UNPROJECTED-MOMENT-INTERPOLATION",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Sections 2 and 2.1, original-marker triangular Jacobian, HigherShearInterpolation and optimized I11"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+        "premises": [
+          "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION"
+        ],
+        "conclusion": "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Section 3, I7 and higher-shear extension, target (0,...,0,1)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE",
+        "premises": [
+          "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION"
+        ],
+        "conclusion": "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Section 3, Corollary MomentAlgebraicIndependence, applied also to HigherShearInterpolation"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+        "premises": [
+          "SRC-GAUSSIAN-CUBIC-PREFIX-GEOMETRY",
+          "MOM-MANUSCRIPT-THM-NORMALFORMS"
+        ],
+        "conclusion": "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+          "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+          "locator": "Sections 1-3, J=-3, invariant weight separation and four independent orbit tangents"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+        "premises": [
+          "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+          "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ",
+          "SRC-GAUSSIAN-CUBIC-PREFIX-GEOMETRY"
+        ],
+        "conclusion": "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+          "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+          "locator": "Section 4, local dimension>=20-15=5 exceeds pure orbit dimension4, followed by finite-system Qbar descent"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED",
+        "premises": [
+          "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+          "MOMENT-PSTAR-GAUSSIAN-SPHERE-EXACT-FILTRATION",
+          "SRC-GAUSSIAN-CUBIC-PREFIX-GEOMETRY"
+        ],
+        "conclusion": "GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+          "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+          "locator": "Section 5, all moment differentials have rank10 but the reduced pure orbit is smooth dimension4"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+        "premises": [
+          "SRC-MRC-MULTIPLE-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "locator": "Section 1, explicit extraction from released lem:spans and seven internal relations"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-MULTIPLE-PROTECTED-DEFECT",
+        "premises": [
+          "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+          "SRC-MRC-MULTIPLE-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-MULTIPLE-PROTECTED-DEFECT",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "locator": "Section 2, disjoint supports in the root/covector kernel sum and form-preserving corollary"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-MULTIPLE-PROTECTED-KNOTS",
+        "premises": [
+          "MRC-MULTIPLE-PROTECTED-DEFECT",
+          "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE",
+          "SRC-MRC-MULTIPLE-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-MULTIPLE-PROTECTED-KNOTS",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "locator": "Section 3, exact band Hurwitz action, protected interior entries and one-cycle matching"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MRC-LITERAL-SEED-COLORING-BUDGET",
+        "premises": [
+          "SRC-MRC-MULTIPLE-PROTECTED-OBSTRUCTIONS"
+        ],
+        "conclusion": "MRC-LITERAL-SEED-COLORING-BUDGET",
+        "status": "proved",
+        "proof": {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "locator": "Section 4, repeated edge (23), connected graph v-1 edge bound and exact ceil/floor comparison"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-EFFECTIVE-UNIT5",
+        "premises": [
+          "SRC-ARITH-D20-EFFECTIVE-UNIT5",
+          "ARITH-D20-EFFECTIVE-UNIT5-CERTIFICATE",
+          "ARITH-MS-EXACT-LEM-HECKE-TRANSFER",
+          "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION"
+        ],
+        "conclusion": "ARITH-D20-EFFECTIVE-UNIT5",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "Effective five-unit section: mass1/3, selected degrees1,2,2, fine-level characters, CN2E.7 survival, CN2E.10 and value-count conversion"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "D20-AFFIRMATIVE-EXACT-SUMSET-CLOSES-REGISTERED-GAP",
+        "premises": [
+          "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+        ],
+        "conclusion": "GAP-PRIMITIVE-NORM-EXACT-20",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "Exact residual completion criterion, affirmative full equality settles the registered exact sumset question"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+        "premises": [
+          "SRC-ARITH-D20-FULL-EFFECTIVE-ONSET",
+          "ARITH-D20-FIVE-DIVISIBLE-CERTIFICATE",
+          "EXT-D20-BRUHAT-TITS-EDGE-GEOMETRY",
+          "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+        ],
+        "conclusion": "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "CN2FiveDivisibleOperator, F5.1-F5.8, positive radical subtraction and full P0/FP0 decomposition"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-EFFECTIVE-ALL-TARGETS",
+        "premises": [
+          "SRC-ARITH-D20-FULL-EFFECTIVE-ONSET",
+          "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+          "ARITH-D20-EFFECTIVE-UNIT5",
+          "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION",
+          "ARITH-D20-FIVE-DIVISIBLE-CERTIFICATE"
+        ],
+        "conclusion": "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "CN2EffectiveAll and F5.9-F5.11, five-divisible count>=N^(2/3)/1000 combined with the five-unit bound/6000"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-SPLIT-MULTIPLIER-DESCENT",
+        "premises": [
+          "SRC-ARITH-D20-EXACT-COMPLETION",
+          "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION"
+        ],
+        "conclusion": "ARITH-D20-SPLIT-MULTIPLIER-DESCENT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "Exact completion Sections1 and6, C1-C3 and exceptional-core atom factorization"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-REDUCED-CORES-LARGE",
+        "premises": [
+          "SRC-ARITH-D20-EXACT-COMPLETION",
+          "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+          "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+          "ARITH-MS-EXACT-LEM-HECKE-TRANSFER",
+          "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION"
+        ],
+        "conclusion": "ARITH-D20-REDUCED-CORES-LARGE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "Exact completion Sections2-4, C4-C13, per-dyadic lattice coefficients, core error and complete analytic intervals"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+        "premises": [
+          "SRC-ARITH-D20-EXACT-COMPLETION",
+          "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+          "ARITH-D20-PRIMITIVE-NORM-BOUNDED",
+          "ARITH-MS-EXACT-LEM-HECKE-TRANSFER",
+          "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION"
+        ],
+        "conclusion": "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "Exact completion Section5, C3 seed definitions, divisor bounds, twelve finite intervals and C14 infinite continuation"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+        "premises": [
+          "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29"
+        ],
+        "conclusion": "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+          "locator": "CN2Finite29 restricted to locally admissible reduced cores in the indicated subinterval"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN",
+        "premises": [
+          "SRC-GAUSSIAN-SPHERE-MOMENT-INTERPOLATION",
+          "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL"
+        ],
+        "conclusion": "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Section2.2, TheoremProjectedShearInterpolation: support modulo2(r+1), two exact subleading coefficients and2r truncated-marker table"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-SPHERE-PROJECTED-MOMENT-INTERPOLATION",
+        "premises": [
+          "GAUSSIAN-SPHERE-UNPROJECTED-MOMENT-INTERPOLATION",
+          "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN",
+          "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+          "SRC-GAUSSIAN-SPHERE-MOMENT-INTERPOLATION"
+        ],
+        "conclusion": "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "locator": "Sections2.1 and2.2: unprojected construction for allr includingd3..6, projected extension forr>=3, then optimize the admitted lengths"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -150588,6 +151655,122 @@
             }
           }
         ]
+      },
+      {
+        "id": "EQUIV-GAUSSIAN-SPHERE-PREFIX-WITNESS-RADICAL",
+        "title": "Normalized prescribed last moment and radical nonmembership",
+        "members": [
+          "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+          "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP"
+        ],
+        "directions": [
+          {
+            "id": "MOMENT-NORMALIZED-WITNESS-TO-RADICAL-NONMEMBERSHIP",
+            "premises": [
+              "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS"
+            ],
+            "conclusion": "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+            "status": "proved",
+            "proof": {
+              "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+              "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+              "locator": "Section 3, I8, evaluation of any hypothetical radical-membership identity"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "MOMENT-RADICAL-NONMEMBERSHIP-TO-NORMALIZED-WITNESS",
+            "premises": [
+              "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+              "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+            ],
+            "conclusion": "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+            "status": "proved",
+            "proof": {
+              "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+              "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+              "locator": "Section 3, I8, Nullstellensatz gives nonzero last moment and M-th-root scalar normalization gives one"
+            },
+            "dependency_coverage": "partial"
+          }
+        ]
+      },
+      {
+        "id": "EQUIV-D20-EXACT-SUMSET-RESIDUAL",
+        "title": "Exact -20 sumset, the broad finite interval and its reduced-core finite bridge",
+        "members": [
+          "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE",
+          "ARITH-D20-EXACT-SUMSET-RESIDUAL",
+          "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE"
+        ],
+        "directions": [
+          {
+            "id": "D20-EXACT-SUMSET-TO-RESIDUAL",
+            "premises": [
+              "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+            ],
+            "conclusion": "ARITH-D20-EXACT-SUMSET-RESIDUAL",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+              "locator": "Exact residual completion criterion, forward restriction or reverse three-range partition using CN2Finite and CN2EffectiveAll"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "D20-RESIDUAL-TO-EXACT-SUMSET",
+            "premises": [
+              "ARITH-D20-EXACT-SUMSET-RESIDUAL",
+              "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+              "ARITH-D20-PRIMITIVE-NORM-BOUNDED",
+              "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION",
+              "SRC-ARITH-D20-FULL-EFFECTIVE-ONSET"
+            ],
+            "conclusion": "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+              "locator": "Exact residual completion criterion, forward restriction or reverse three-range partition using CN2Finite and CN2EffectiveAll"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "D20-EXACT-SUMSET-TO-REDUCED-CORE-FINITE-BRIDGE",
+            "premises": [
+              "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+            ],
+            "conclusion": "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+              "locator": "Exact completion Section6, forward restriction of the global formula to the reduced-core interval"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "D20-REDUCED-CORE-FINITE-BRIDGE-TO-EXACT-SUMSET",
+            "premises": [
+              "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+              "ARITH-D20-SPLIT-MULTIPLIER-DESCENT",
+              "ARITH-D20-REDUCED-CORES-LARGE",
+              "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+              "ARITH-D20-PRIMITIVE-NORM-BOUNDED",
+              "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION",
+              "SRC-ARITH-D20-EXACT-COMPLETION"
+            ],
+            "conclusion": "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+              "locator": "Exact completion Section6, reverse implication: factorN=cq, represent nonexceptional cores, use atoms for3,4 and multiply; local residue necessity gives the converse"
+            },
+            "dependency_coverage": "partial"
+          }
+        ]
       }
     ],
     "external_references": {
@@ -151610,7 +152793,8 @@
           "urls": [
             "https://arxiv.org/abs/1310.7526v3",
             "https://arxiv.org/pdf/1310.7526v3",
-            "https://doi.org/10.4310/JSG.2017.v15.n4.a2"
+            "https://doi.org/10.4310/JSG.2017.v15.n4.a2",
+            "https://arxiv.org/html/1310.7526v3#S1"
           ],
           "local_sources": [
             {
@@ -151762,6 +152946,14 @@
               "role": "mathematical_input",
               "nodes": [
                 "MRC-PROTECTED-TAIL-PAIRED-BOUND"
+              ]
+            },
+            {
+              "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+              "locator": "Section5, Theorem1.2 and Definition1.8 under U=1,mu!=1",
+              "role": "mathematical_input",
+              "nodes": [
+                "MRC-MULTIPLE-PROTECTED-KNOTS"
               ]
             }
           ],
@@ -160641,7 +161833,11 @@
             "https://stacks.math.columbia.edu/tag/0EYG",
             "https://stacks.math.columbia.edu/tag/0EYH",
             "https://stacks.math.columbia.edu/tag/0BW3",
-            "https://stacks.math.columbia.edu/tag/0BWJ"
+            "https://stacks.math.columbia.edu/tag/0BWJ",
+            "https://stacks.math.columbia.edu/tag/00T1",
+            "https://stacks.math.columbia.edu/tag/056G",
+            "https://stacks.math.columbia.edu/tag/00KW",
+            "https://stacks.math.columbia.edu/tag/0BBZ"
           ],
           "local_sources": [
             {
@@ -160668,6 +161864,31 @@
               "path": "moments/vanishing/sources/stacks-054K-radial-reductions.html",
               "sha256": "149daba8ff82e969df0d18211e95747db809633d71df03edcee995e71b8d12ea",
               "locator": "Theorem 29.23.3, finite-presentation constructible image"
+            },
+            {
+              "path": "moments/vanishing/sources/stacks-00T1-moment-interpolation.html",
+              "sha256": "18042bd781db9d7a94da9d9715dd8c41c93a9a5d9194e27b8a068a5a5e8a0b26",
+              "locator": "Exact tag 00T1 primary statement and proof"
+            },
+            {
+              "path": "moments/vanishing/sources/stacks-056G-moment-interpolation.html",
+              "sha256": "c9dea55de2297a5cb000e0357955949764020f9f061e62e8e804e6afc5fa8bc8",
+              "locator": "Exact tag 056G primary statement and proof"
+            },
+            {
+              "path": "moments/vanishing/sources/stacks-00KW-moment-interpolation.html",
+              "sha256": "c67843e878e532cf9a072c5b8a0b5f601cbb79dd300a1ea32fe2dbe1f1a1a331",
+              "locator": "Exact tag 00KW primary statement and proof"
+            },
+            {
+              "path": "moments/vanishing/sources/stacks-0BBZ-moment-interpolation.html",
+              "sha256": "ae3d97570eb765f4d57a4648d9d77ef6a03108ce8d7c455ae6639c6155817f74",
+              "locator": "Exact tag 0BBZ primary statement and proof"
+            },
+            {
+              "path": "moments/vanishing/sources/stacks-00FS-moment-interpolation.html",
+              "sha256": "9f3ceec35dc0a7ca20d4c997449c3d111f3e0c91e437b5b749f12f4ac74a68a9",
+              "locator": "Exact tag 00FS primary statement and proof"
             }
           ],
           "uses": [
@@ -161024,6 +162245,22 @@
               "nodes": [
                 "HESSIAN-CODIFFERENT-DERIVATION-PREIMAGES",
                 "HESSIAN-ONE-VELOCITY-CODIFFERENT-INVERSE"
+              ]
+            },
+            {
+              "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+              "locator": "Explicit classical smooth-openness/height/Nullstellensatz application",
+              "role": "mathematical_input",
+              "nodes": [
+                "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY"
+              ]
+            },
+            {
+              "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+              "locator": "Explicit classical smooth-openness/height/Nullstellensatz application",
+              "role": "mathematical_input",
+              "nodes": [
+                "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN"
               ]
             }
           ],
@@ -172842,6 +174079,15 @@
               "locator": "bibitem Voight",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "locator": "Five-divisible section, Voight23.5.8,23.5.12,23.5.16 at q5; actual lattice proofs inspected",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+                "ARITH-D20-EFFECTIVE-ALL-TARGETS"
+              ]
             }
           ],
           "resource_type": "book",
@@ -177420,6 +178666,28 @@
             "public_deposit_asserted": false
           },
           "verification_basis": "Author, full title, year2026, version1 and reserved DOI supplied by the user and reflected in the local manuscript. No public DOI metadata or public availability verified. Reciprocal companion context only: no theorem premise, proof assurance, external review or publication status is added."
+        },
+        {
+          "id": "EXT-PAPER-ALACA-ALACA-WILLIAMS-QUATERNARY-2007",
+          "title": "On the quaternary forms x^2+y^2+z^2+5t^2, x^2+y^2+5z^2+5t^2 and x^2+5y^2+5z^2+5t^2",
+          "citation": "A. Alaca, S. Alaca and K. S. Williams, JP Journal of Algebra, Number Theory and Applications9(1)(2007),37-53.",
+          "urls": [
+            "https://people.math.carleton.ca/~aalaca/pubs/aa2007-7.pdf"
+          ],
+          "identifiers": {},
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "locator": "Effective five-unit section, Theorem7.1 printedp48 and equation7.3 ordinary shell diagnostic",
+              "role": "context",
+              "nodes": [
+                "ARITH-D20-EFFECTIVE-UNIT5"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_note": "The actual Theorem7.1 and ordinary-shell normalization were inspected. The theorem does not impose two separate binary gcds and is not a proof of primitive positivity."
         }
       ],
       "internal_citations": [
@@ -179866,6 +181134,113 @@
               "locator": "Sections2-3 independent qualitative reconstruction"
             }
           ]
+        },
+        {
+          "id": "CLASSICAL-MOMENT-WEIGHTED-OPEN-INTERPOLATION",
+          "title": "Moment surjectivity uses classical smooth openness plus positive weighted dilation",
+          "nodes": [
+            "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+            "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION"
+          ],
+          "relation": "classical_method",
+          "references": [
+            {
+              "paper_id": "EXT-PAPER-THE-STACKS-PROJECT",
+              "locator": "00T1 Definition10.137.5/Lemma10.137.6 and 056G Lemma29.35.10",
+              "statement": "An invertible Jacobian presentation is standard smooth; smooth morphisms are open."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+              "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+              "locator": "Sections1-2.1, full written bridge and specific moment Jacobians"
+            }
+          ],
+          "application": "An original-marker square Jacobian at a pure phase gives an open neighborhood of the zero target. Positive moment weights contract every prescribed tuple into it; scalar rescaling of the polynomial gives global surjectivity.",
+          "novelty_limit": "The openness mechanism and weighted scaling are classical. The higher shear and exact marker-weight interval supply the specific application; no historical novelty is inferred.",
+          "remaining_obligation": "The achieved interpolation lengths are not claimed optimal and do not identify a universal finite purity threshold.",
+          "inspection_scope": "Inspected exact primary tag statements/proofs, graph presentation, algebraically closed point hypotheses and the contracting-orbit argument; direct rational finite Jacobians separately replayed."
+        },
+        {
+          "id": "CLASSICAL-GAUSSIAN-CUBIC-ORBIT-HEIGHT-PREFIX",
+          "title": "Cubic prefix lower bound is a classical height consequence of the retained normal forms",
+          "nodes": [
+            "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+            "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN"
+          ],
+          "relation": "classical_corollary",
+          "references": [
+            {
+              "paper_id": "EXT-PAPER-THE-STACKS-PROJECT",
+              "locator": "00KW Lemma10.60.13; 0BBZ Lemma10.60.12; 00FS Theorem10.34.1",
+              "statement": "N local equations reduce dimension by at most N; proper polynomial ideals over algebraically closed fields have rational closed zeros."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+              "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+              "locator": "Sections2-4, invariant separation, orbit dimension and local-height deduction"
+            }
+          ],
+          "application": "J excludes all one-sided phases and their closure near the pure shear. The retained classification leaves a four-dimensional orbit; fifteen equations in twenty coefficients leave dimension at least five. A finite nonvanishing system descends a witness to Qbar.",
+          "novelty_limit": "Credit the dimension and point-existence steps as Krull height/Nullstellensatz. The lower bound inherits the retained classification's internal mathematical-review limits; no external review or priority follows.",
+          "remaining_obligation": "The least sufficient universal prefix and the first nonzero moment of a displayed witness are not determined.",
+          "inspection_scope": "Exact classical statements and all local-ring, maximal-ideal and finite-system hypotheses checked; two internal agents reviewed the deduction against the manuscript normal-form theorem."
+        },
+        {
+          "id": "CLASSICAL-D20-ORDINARY-SHELL-COMPARISON",
+          "title": "Classical ordinary quaternary shell formulas do not impose separate primitive blocks",
+          "nodes": [
+            "ARITH-D20-EFFECTIVE-UNIT5"
+          ],
+          "relation": "comparison_only",
+          "references": [
+            {
+              "paper_id": "EXT-PAPER-ALACA-ALACA-WILLIAMS-QUATERNARY-2007",
+              "locator": "Theorem7.1, printedp48; equation7.3",
+              "statement": "Exact ordinary diag(1,1,5,5) representation counts; even targets have a divisor-only formula, odd targets include a cusp coefficient."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+              "locator": "Effective five-unit section, full spectral/local-filter proof and final ordinary-shell comparison"
+            }
+          ],
+          "application": "Ordinary shell formulas independently diagnose finite shell normalization. Primitive positivity instead requires the mass1/3 nonmaximal quaternion space, dyadic degree2 selection, inert exclusion and biased ramified5 filter, with the retained all-ideal Hecke bound.",
+          "novelty_limit": "The ordinary shell formula is classical and not presented as new. The primitive deduction is internally reviewed and retains the deep imported theorem limits; no historical priority is established.",
+          "remaining_obligation": "The exact mathematical sumset completion is now proved by the separately recorded core/atomic-seed argument and full2^29 scan. External human review and historical priority remain unestablished.",
+          "inspection_scope": "Read actual ordinary-shell statement and proof, retained all-ideal lemma, Voight mass/degree hypotheses and new local normalization; independent internal review corrected the valuation-one degree3 shortcut to degree2."
+        },
+        {
+          "id": "CLASSICAL-D20-IWAHORI-POSITIVE-SHELL",
+          "title": "The ramified target branch uses classical tree geometry and a checked full edge-space decomposition",
+          "nodes": [
+            "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+            "ARITH-D20-EFFECTIVE-ALL-TARGETS"
+          ],
+          "relation": "classical_method",
+          "references": [
+            {
+              "paper_id": "EXT-PRIMITIVE-NORM-RESOURCE-VOIGHT-QUATERNION-ALGEBRAS-AUTHOR",
+              "locator": "Author1.0.7u Section23.5:23.5.8,23.5.12,23.5.16",
+              "statement": "Bruhat-Tits tree regularity, oriented-edge lattice-chain cosets and Eichler-order edge reversal normalizer."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
+              "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
+              "locator": "Five-divisible section, F5.1-F5.8, integral shells, positive radical subtraction and P0/FP0 spectral frames"
+            }
+          ],
+          "application": "Integral norm5^b shells identify with radius-b edge balls times reversal. Removing iotaO5 gives the exact-distance nonnegative kernel. Spherical adjacency is used only at coarser maximal5 level; the entire complementary edge sector is handled directly by the distance recurrence. The retained classical all-ideal lemma supplies the coarse tempered bound.",
+          "novelty_limit": "Tree/lattice geometry and spectral decomposition principles are classical. The exact selection, full-space interface and application are internally reviewed deductions, without an external-review or priority claim.",
+          "remaining_obligation": "The exact mathematical sumset completion is now proved by the separately recorded core/atomic-seed argument and full2^29 scan. External human review and historical priority remain unestablished.",
+          "inspection_scope": "Actual retained Voight statements/lattice proofs and shared Hecke index hypotheses inspected; separate reviewer reconstructed both compact sectors, character preservation and infinite inequalities and replayed independent finite HNF/tree controls."
         }
       ]
     },
@@ -255977,17 +257352,36 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
-          "sha256": "324f7ba799719a62d9a61929e715491b8820526c5a3628898a01cc7c3eed0874",
+          "sha256": "97a18482a02b0915f2e5215b44f9f9600e1fe086bc05eea16d831551465f2fd9",
           "claims": [
             "ARITH-CLASS-TWO-PRIMITIVE-NORM-COUNTS",
             "ARITH-PRIMITIVE-NORM-GENUS-FILTER-TRANSFER",
             "ARITH-PRIMITIVE-NORM-GENUS-RESTORATION",
             "ARITH-D20-PRIMITIVE-NORM-GENUS-CRITERION",
-            "ARITH-D20-PRIMITIVE-NORM-BOUNDED"
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED",
+            "ARITH-D20-EFFECTIVE-UNIT5",
+            "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE",
+            "ARITH-D20-EXACT-SUMSET-RESIDUAL",
+            "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+            "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+            "SRC-ARITH-D20-EXACT-COMPLETION",
+            "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29",
+            "ARITH-D20-SPLIT-MULTIPLIER-DESCENT",
+            "ARITH-D20-REDUCED-CORES-LARGE",
+            "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+            "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+            "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
           ],
           "dependencies": [
             "ARITH-SUBGROUP-ASYM-UNIFORM",
-            "ARITH-SUBGROUP-UNWEIGHTING"
+            "ARITH-SUBGROUP-UNWEIGHTING",
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER",
+            "ARITH-D20-EFFECTIVE-UNIT5-CERTIFICATE",
+            "EXT-D20-BRUHAT-TITS-EDGE-GEOMETRY",
+            "ARITH-D20-FIVE-DIVISIBLE-CERTIFICATE",
+            "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29"
           ],
           "gaps": [
             "GAP-PRIMITIVE-NORM-EXACT-20"
@@ -256022,22 +257416,73 @@
                 "ARITH-PRIMITIVE-NORM-GENUS-FILTER-TRANSFER"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition CN2EffectiveUnit5.** If \\(5\\nmid N\\), \\(N\\ge2^{66}\\), and",
+              "kind": "proposition",
+              "line": 347,
+              "title": "Proposition CN2EffectiveUnit5.** If \\(5\\nmid N\\), \\(N\\ge2^{66}\\), and",
+              "nodes": [
+                "ARITH-D20-EFFECTIVE-UNIT5"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition CN2EffectiveAll.** Every \\(N\\ge2^{66}\\) with",
+              "kind": "proposition",
+              "line": 624,
+              "title": "Proposition CN2EffectiveAll.** Every \\(N\\ge2^{66}\\) with",
+              "nodes": [
+                "ARITH-D20-EFFECTIVE-ALL-TARGETS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma CN2FiveDivisibleOperator.** At the level-five Eichler",
+              "kind": "lemma",
+              "line": 642,
+              "title": "Lemma CN2FiveDivisibleOperator.** At the level-five Eichler",
+              "nodes": [
+                "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem CN2Exact.** For every integer \\(N\\ge2\\),",
+              "kind": "theorem",
+              "line": 9,
+              "title": "Theorem CN2Exact.** For every integer \\(N\\ge2\\),",
+              "nodes": [
+                "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition CN2Finite29.** For every \\(2\\le N\\le2^{29}\\),",
+              "kind": "proposition",
+              "line": 1199,
+              "title": "Proposition CN2Finite29.** For every \\(2\\le N\\le2^{29}\\),",
+              "nodes": [
+                "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
           "role": "proof",
-          "explanation": "Separates the unrestricted filtered logarithmic count, complete finite CRT identities and the bounded2^24 exception classification."
+          "explanation": "Separates the unrestricted filtered logarithmic count, complete finite CRT identities and the bounded2^24 exception classification. The appended effective five-unit subfamily and bidirectional residual-domain criterion retain their separate scope. The five-divisible extension proves a full numerical onset, reducing exact completion to a finite interval. The complete exact class-number-two theorem is grounded by C1-C14 and the separately authenticated full2^29 scan."
         },
         {
           "path": "arithmetic/verify_primitive_norm_minus20.py",
           "sha256": "02ad60a146081747461ed374e4495b15f3fd8bcb4c58d57b40ca102d17f7e903",
           "claims": [
-            "ARITH-D20-PRIMITIVE-NORM-BOUNDED"
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED",
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29"
           ],
           "dependencies": [],
           "gaps": [],
           "statements": [],
           "role": "evidence",
-          "explanation": "Separates the unrestricted filtered logarithmic count, complete finite CRT identities and the bounded2^24 exception classification."
+          "explanation": "Separates the unrestricted filtered logarithmic count, complete finite CRT identities and the bounded2^24 exception classification. The unchanged checker was also executed at2^29 with a separate current receipt."
         },
         {
           "path": "arithmetic/primitive_norm_minus20_checks.json",
@@ -256077,13 +257522,25 @@
         },
         {
           "path": "arithmetic/primitive_norm_minus20_source_ledger.json",
-          "sha256": "4f00c0f4c1d622fad9cce29949ae757a7fab3390b96cf99915d8c761b16ad841",
+          "sha256": "22143c11270daa582b0ddcc387cfa65c2cecc217789743386e1b8893877a773a",
           "claims": [
             "ARITH-CLASS-TWO-PRIMITIVE-NORM-COUNTS",
-            "ARITH-PRIMITIVE-NORM-GENUS-FILTER-TRANSFER"
+            "ARITH-PRIMITIVE-NORM-GENUS-FILTER-TRANSFER",
+            "ARITH-D20-EFFECTIVE-UNIT5",
+            "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+            "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+            "SRC-ARITH-D20-EXACT-COMPLETION",
+            "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29",
+            "ARITH-D20-SPLIT-MULTIPLIER-DESCENT",
+            "ARITH-D20-REDUCED-CORES-LARGE",
+            "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+            "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+            "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
           ],
           "dependencies": [
-            "EXT-FBS-BGLM-SIGNED-DISPERSION"
+            "EXT-FBS-BGLM-SIGNED-DISPERSION",
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
           ],
           "gaps": [],
           "statements": [],
@@ -260596,6 +262053,462 @@
           "gaps": [],
           "statements": [],
           "explanation": "Hexagon-specific compile-only archive containing exactly18 TeX files and main.tex; certificate programs/data are supplied by the separately registered immutable external supplement. The clean extracted build is a packaging check, not new mathematical assurance."
+        },
+        {
+          "path": "moments/vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md",
+          "sha256": "e633858e651490044b5d8321835fb3f50525e44a1abf2cc0256282b0ce165b08",
+          "claims": [
+            "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+            "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+            "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+            "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+            "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+            "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE",
+            "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN",
+            "GAUSSIAN-SPHERE-UNPROJECTED-MOMENT-INTERPOLATION"
+          ],
+          "dependencies": [
+            "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS",
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+          ],
+          "gaps": [
+            "GAP-TERNARY-PURE-PREFIX"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem MomentInterpolation.** For either functional and every integer",
+              "nodes": [
+                "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+                "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+                "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+                "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+                "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+                "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE"
+              ]
+            },
+            {
+              "locator": "Lemma WeightedOpenImage.** Let V be a finite-dimensional vector space over",
+              "nodes": [
+                "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY"
+              ]
+            },
+            {
+              "locator": "Lemma MarkerWeightInterval.** If d>=2r+1, the least nonnegative integer",
+              "nodes": [
+                "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL"
+              ]
+            },
+            {
+              "locator": "Theorem HigherShearInterpolation.** For every d>=3 and",
+              "nodes": [
+                "GAUSSIAN-SPHERE-UNPROJECTED-MOMENT-INTERPOLATION"
+              ]
+            },
+            {
+              "locator": "Corollary NormalizedPrefixWitness.** For either functional, every d>=3",
+              "nodes": [
+                "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS"
+              ]
+            },
+            {
+              "locator": "Corollary MomentAlgebraicIndependence.** F_1,...,F_(3d+1) are",
+              "nodes": [
+                "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE"
+              ]
+            },
+            {
+              "locator": "Theorem ProjectedShearInterpolation.** Let r>=3 and d>=2r+1. For either",
+              "kind": "theorem",
+              "line": 182,
+              "title": "Theorem ProjectedShearInterpolation.** Let r>=3 and d>=2r+1. For either",
+              "nodes": [
+                "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN",
+                "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "moments/vanishing/verify_gaussian_moment_interpolation.py",
+          "sha256": "c10c032083af430e98a41993851a7a69a2d6e5b979aa00372c784d45f4000d9e",
+          "claims": [
+            "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+            "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+            "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+            "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+            "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+            "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE",
+            "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN"
+          ],
+          "dependencies": [
+            "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS",
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+          ],
+          "gaps": [
+            "GAP-TERNARY-PURE-PREFIX"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "moments/vanishing/gaussian_moment_interpolation_verification.json",
+          "sha256": "6461052bd6b31daa88fb80d42a7ecde761dcb4429400d0bf5c078bb9cf29826c",
+          "claims": [
+            "MOMENT-WEIGHTED-OPEN-IMAGE-SURJECTIVITY",
+            "MOMENT-HIGHER-SHEAR-MARKER-WEIGHT-INTERVAL",
+            "GAUSSIAN-SPHERE-POLYNOMIAL-MOMENT-INTERPOLATION",
+            "GAUSSIAN-SPHERE-NORMALIZED-PREFIX-WITNESS",
+            "GAUSSIAN-SPHERE-PREFIX-RADICAL-NONMEMBERSHIP",
+            "GAUSSIAN-SPHERE-MOMENT-ALGEBRAIC-INDEPENDENCE",
+            "MOMENT-PROJECTED-HIGHER-SHEAR-JACOBIAN"
+          ],
+          "dependencies": [
+            "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS",
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+          ],
+          "gaps": [
+            "GAP-TERNARY-PURE-PREFIX"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md",
+          "sha256": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+          "claims": [
+            "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+            "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+            "GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED"
+          ],
+          "dependencies": [
+            "MOM-MANUSCRIPT-THM-NORMALFORMS",
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ",
+            "MOMENT-PSTAR-GAUSSIAN-SPHERE-EXACT-FILTRATION"
+          ],
+          "gaps": [
+            "GAP-TERNARY-PURE-PREFIX"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem.** There is a ternary polynomial with algebraic coefficients,",
+              "nodes": [
+                "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+                "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+                "GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "moments/vanishing/verify_gaussian_cubic_prefix_geometry.py",
+          "sha256": "804674293302cd73238d055895a85f7fd9affb0f1ccaed333b2411a32bef597d",
+          "claims": [
+            "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+            "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+            "GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED"
+          ],
+          "dependencies": [
+            "MOM-MANUSCRIPT-THM-NORMALFORMS",
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ",
+            "MOMENT-PSTAR-GAUSSIAN-SPHERE-EXACT-FILTRATION"
+          ],
+          "gaps": [
+            "GAP-TERNARY-PURE-PREFIX"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "moments/vanishing/gaussian_cubic_prefix_geometry_verification.json",
+          "sha256": "6b0393a108a193340e0294e0a49835bc928ce36b66b8e59f5ebba272b813f39a",
+          "claims": [
+            "GAUSSIAN-CUBIC-EXCEPTIONAL-ORBIT-SEPARATION",
+            "GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN",
+            "GAUSSIAN-CUBIC-MOMENT-SCHEME-NONREDUCED"
+          ],
+          "dependencies": [
+            "MOM-MANUSCRIPT-THM-NORMALFORMS",
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ",
+            "MOMENT-PSTAR-GAUSSIAN-SPHERE-EXACT-FILTRATION"
+          ],
+          "gaps": [
+            "GAP-TERNARY-PURE-PREFIX"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md",
+          "sha256": "05c25ec1e9ad994e02c3c998fdbc359c9966a61d92bfd65504dc0b45d3c8ba36",
+          "claims": [
+            "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+            "MRC-MULTIPLE-PROTECTED-DEFECT",
+            "MRC-MULTIPLE-PROTECTED-KNOTS",
+            "MRC-LITERAL-SEED-COLORING-BUDGET"
+          ],
+          "dependencies": [
+            "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
+          ],
+          "gaps": [
+            "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem 1 (disjoint-block defect).** Let `b>=4k`, `k>=1`. Embed",
+              "nodes": [
+                "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+                "MRC-MULTIPLE-PROTECTED-DEFECT",
+                "MRC-MULTIPLE-PROTECTED-KNOTS",
+                "MRC-LITERAL-SEED-COLORING-BUDGET"
+              ]
+            },
+            {
+              "locator": "Corollary (a preserved form doubles the bound).** If the same",
+              "nodes": [
+                "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+                "MRC-MULTIPLE-PROTECTED-DEFECT",
+                "MRC-MULTIPLE-PROTECTED-KNOTS",
+                "MRC-LITERAL-SEED-COLORING-BUDGET"
+              ]
+            },
+            {
+              "locator": "Theorem 2 (edge budget for literal seed stacking).** Suppose the",
+              "nodes": [
+                "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+                "MRC-MULTIPLE-PROTECTED-DEFECT",
+                "MRC-MULTIPLE-PROTECTED-KNOTS",
+                "MRC-LITERAL-SEED-COLORING-BUDGET"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "meridional-rank/representations/verify_multiple_protected_obstructions.py",
+          "sha256": "be5d2c2ebae8f7ce562d077b5e1b494ec94232c5a1526d3ea661c8cda0158a94",
+          "claims": [
+            "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+            "MRC-MULTIPLE-PROTECTED-DEFECT",
+            "MRC-MULTIPLE-PROTECTED-KNOTS",
+            "MRC-LITERAL-SEED-COLORING-BUDGET"
+          ],
+          "dependencies": [
+            "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
+          ],
+          "gaps": [
+            "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "meridional-rank/representations/multiple_protected_obstructions_verification.json",
+          "sha256": "868eb05489acb37eefdb7978cc835fa8be605d317775a106cb5991ef3b95c1c3",
+          "claims": [
+            "MRC-MULTIPLE-PROTECTED-LOCAL-LEMMA",
+            "MRC-MULTIPLE-PROTECTED-DEFECT",
+            "MRC-MULTIPLE-PROTECTED-KNOTS",
+            "MRC-LITERAL-SEED-COLORING-BUDGET"
+          ],
+          "dependencies": [
+            "EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE"
+          ],
+          "gaps": [
+            "GAP-MRC-PRIME-GAP-TWO-REALIZATION"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof support for the scoped new result."
+        },
+        {
+          "path": "moments/vanishing/sources/stacks-00T1-moment-interpolation.html",
+          "sha256": "18042bd781db9d7a94da9d9715dd8c41c93a9a5d9194e27b8a068a5a5e8a0b26",
+          "claims": [
+            "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact Stacks primary statement and proof inspected for the scoped new algebraic application."
+        },
+        {
+          "path": "moments/vanishing/sources/stacks-056G-moment-interpolation.html",
+          "sha256": "c9dea55de2297a5cb000e0357955949764020f9f061e62e8e804e6afc5fa8bc8",
+          "claims": [
+            "EXT-MOMENT-STANDARD-SMOOTH-OPENNESS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact Stacks primary statement and proof inspected for the scoped new algebraic application."
+        },
+        {
+          "path": "moments/vanishing/sources/stacks-00KW-moment-interpolation.html",
+          "sha256": "c67843e878e532cf9a072c5b8a0b5f601cbb79dd300a1ea32fe2dbe1f1a1a331",
+          "claims": [
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact Stacks primary statement and proof inspected for the scoped new algebraic application."
+        },
+        {
+          "path": "moments/vanishing/sources/stacks-0BBZ-moment-interpolation.html",
+          "sha256": "ae3d97570eb765f4d57a4648d9d77ef6a03108ce8d7c455ae6639c6155817f74",
+          "claims": [
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact Stacks primary statement and proof inspected for the scoped new algebraic application."
+        },
+        {
+          "path": "moments/vanishing/sources/stacks-00FS-moment-interpolation.html",
+          "sha256": "9f3ceec35dc0a7ca20d4c997449c3d111f3e0c91e437b5b749f12f4ac74a68a9",
+          "claims": [
+            "EXT-MOMENT-LOCAL-HEIGHT-AND-NULLSTELLENSATZ"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained exact Stacks primary statement and proof inspected for the scoped new algebraic application."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus20_effective.py",
+          "sha256": "8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa",
+          "claims": [
+            "ARITH-D20-EFFECTIVE-UNIT5",
+            "ARITH-D20-EFFECTIVE-UNIT5-CERTIFICATE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-20"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact finite support for the new five-unit effective theorem, not a computational proof of the spectral imports."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus20_effective_checks.json",
+          "sha256": "d056787751625c810cdc5bcac4405f3cd61e6e49a8250933cafd8610258a37d2",
+          "claims": [
+            "ARITH-D20-EFFECTIVE-UNIT5",
+            "ARITH-D20-EFFECTIVE-UNIT5-CERTIFICATE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-20"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact finite support for the new five-unit effective theorem, not a computational proof of the spectral imports."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus20_five_divisible.py",
+          "sha256": "21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236",
+          "claims": [
+            "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+            "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+            "ARITH-D20-FIVE-DIVISIBLE-CERTIFICATE"
+          ],
+          "dependencies": [
+            "EXT-D20-BRUHAT-TITS-EDGE-GEOMETRY",
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-20"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Finite HNF, tree recurrence and rational controls for the all-target effective -20 theorem; spectral proof remains written."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus20_five_divisible_checks.json",
+          "sha256": "9da0e198056fb3d615bb402e9163d9ba06d84d0565d9bffcfd2c81afe4ac797b",
+          "claims": [
+            "ARITH-D20-EFFECTIVE-ALL-TARGETS",
+            "ARITH-D20-FIVE-ADIC-POSITIVE-SHELL-OPERATOR",
+            "ARITH-D20-FIVE-DIVISIBLE-CERTIFICATE"
+          ],
+          "dependencies": [
+            "EXT-D20-BRUHAT-TITS-EDGE-GEOMETRY",
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [
+            "GAP-PRIMITIVE-NORM-EXACT-20"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Finite HNF, tree recurrence and rational controls for the all-target effective -20 theorem; spectral proof remains written."
+        },
+        {
+          "path": "arithmetic/verify_primitive_norm_minus20_completion.py",
+          "sha256": "46489c211fb21936d6e2a3304392ec8ab2020cd756deaa2f8f840df35847fd8d",
+          "claims": [
+            "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+            "ARITH-D20-REDUCED-CORES-LARGE",
+            "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+            "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact support for the complete -20 sumset; packet and bounded scan domains are kept distinct from the written all-range proof."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus20_completion_checks.json",
+          "sha256": "f6eba4cf896f4433fd8d8c53b1fc62b285bf7472d82dd2d3980c4ad4c5be1b5f",
+          "claims": [
+            "ARITH-D20-COMPLETION-INTERVAL-CERTIFICATES",
+            "ARITH-D20-REDUCED-CORES-LARGE",
+            "ARITH-D20-EXCEPTIONAL-CORE-ATOMIC-SEEDS",
+            "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+          ],
+          "dependencies": [
+            "ARITH-MS-EXACT-LEM-HECKE-TRANSFER"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact support for the complete -20 sumset; packet and bounded scan domains are kept distinct from the written all-range proof."
+        },
+        {
+          "path": "arithmetic/primitive_norm_minus20_checks_2_29.json",
+          "sha256": "ade0365c544eda0edc4704110a46b3edc1d654b010663cf6e9f9ada175ae2e4d",
+          "claims": [
+            "ARITH-D20-PRIMITIVE-NORM-BOUNDED-29",
+            "ARITH-D20-REDUCED-CORE-FINITE-BRIDGE",
+            "ARITH-D20-EXACT-SUMSET-AFFIRMATIVE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact support for the complete -20 sumset; packet and bounded scan domains are kept distinct from the written all-range proof."
         }
       ]
     },

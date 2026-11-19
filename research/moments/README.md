@@ -4,7 +4,7 @@
 
 Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 
-**Authored assessment:** Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally. The odd-height extension gives internal primitive, non-proper-power witnesses in every even balanced degree d>=4; primitive odd degree five remains open.
+**Authored assessment:** Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally. The odd-height extension gives internal primitive, non-proper-power witnesses in every even balanced degree d>=4; primitive odd degree five remains open. The universal geometric ternary-cubic purity prefix is at least16 by invariant orbit separation and local height; the exceptional moment scheme is nonreduced. Higher Gaussian-preserving shears give arbitrary first M_d moments with explicit quadratic M_d, separately for Gaussian and sphere functionals.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -31,6 +31,8 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Fixed logarithmic covers and quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md) |
 | Unrestricted quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md) |
 | Cubic radial Gaussian safety and the relative Airy source | Internal result | proved | [Source](vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md) |
+| Arbitrary Gaussian and sphere moment interpolation at quadratic degree scale | Internal result | proved | [Source](vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md) |
+| Ternary cubic purity requires at least sixteen moments | Internal result | proved | [Source](vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md) |
 
 **Computed obligations:** 32 unresolved; 4 resolved within their exact scope.
 
@@ -45,7 +47,7 @@ Scope limits:
 - Theorem 5.5 extends the retained primitive Image family to every even balanced degree d>=4. Odd height powers are allowed: for odd k the fixed marker survives at every even m, which already violates eventual mixed vanishing. The next primitive frontier is odd degree five, with F mod R nonzero required from the start; invariant padding cannot settle it. This internal deduction has no independent review, formal verification or novelty claim; unrestricted Image failure was already known in the retained results.
 - The real signed-height one-affine-profile class is classified: q=r gives primitive failures only in even minimal degree, while q<r is safe for all original multipliers. A separate four-moment certificate excludes every bilinear multiple of the retained quartic from primitive degree five. Neither restriction decides arbitrary primitive odd degree five. The DAG separates angular identities, the contraction bridge, primitivity, Image membership, quartic specialization and padding. The full geometric nullcone interpretation retains a definition/application audit obligation.
 - The pointwise safety decision has an exact-source Hom route and checked original integration-by-parts and Wick-jet certificates. The latter certify the actual decision without a completeness assumption for the relation matrix.
-- For ternary phases of degree at most three, the axial restrictions force a universal geometric pure-moment prefix of at least six and an ordinary ideal prefix of at least ten. The exact global thresholds remain open.
+- For ternary Gaussian phases of degree at most three, the invariant/orbit/height argument proves universal geometric purity prefix>=16; first15 moments do not force purity, with an algebraic-coefficient witness and an unspecified later nonzero moment. The exceptional full moment scheme is nonreduced, tangent dimension10 versus reduced dimension4. The exact global threshold remains open. Higher shears separately give arbitrary Gaussian or sphere moment interpolation through explicit quadratic lengths M_d; no optimality is asserted.
 - For rational polynomial phases and polynomial differential symbols, graph-elimination generation and checked nonnegative-power specialization support the actual-power selector. Its safe outputs have sufficient cutoffs, with a separate premise for pure-linear bounds.
 - In two real Gaussian variables, eventual pure vanishing, purity, one strict circular-weight sign and all-marker safety are equivalent. If the angular weights fail separation, one fixed prime dilation gives nonzero moments at every sufficiently large prime.
 - For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff.
@@ -54,7 +56,7 @@ Tracked obligations (computed states):
 
 - **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
 - **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
-- **mathematical / open:** [Determine the exact least pure-moment prefix for ternary cubics.](../../results/gaussian-boundary/manuscript.tex) — GAP-TERNARY-PURE-PREFIX
+- **mathematical / open:** [Determine the exact universal Gaussian purity prefix for total degree<=3 in three variables; the geometric lower bound is now16 and the exceptional moment scheme is nonreduced.](vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [Decide whether a primitive two-pair Image witness exists in odd balanced degree five, requiring F mod R nonzero from the start.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE
 - **verification / open:** [Specify the group/nullcone and audit the nullcone-to-eventual-marker implication used in the Image moment-nullcone assertions.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — VERIFY-IMAGE2-NULLCONE-APPLICATION
 

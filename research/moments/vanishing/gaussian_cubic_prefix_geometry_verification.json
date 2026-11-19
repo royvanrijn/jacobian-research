@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction over Q; sparse original spatial polynomials",
+  "python": "3.12.3",
+  "coefficient_space_dimension": 20,
+  "separating_invariant_at_Pstar": "-3",
+  "orbit_tangents": [
+    [
+      {
+        "powers_Z_W_Y": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers_Z_W_Y": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers_Z_W_Y": [
+          3,
+          0,
+          0
+        ],
+        "coefficient": "-1/2"
+      }
+    ],
+    [
+      {
+        "powers_Z_W_Y": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "powers_Z_W_Y": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers_Z_W_Y": [
+          3,
+          0,
+          0
+        ],
+        "coefficient": "-3/2"
+      }
+    ],
+    [
+      {
+        "powers_Z_W_Y": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "powers_Z_W_Y": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "powers_Z_W_Y": [
+          0,
+          0,
+          2
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "powers_Z_W_Y": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers_Z_W_Y": [
+          2,
+          0,
+          1
+        ],
+        "coefficient": "3/2"
+      }
+    ]
+  ],
+  "orbit_tangent_rank": 4,
+  "first_ten_moment_jacobian_rank": 10,
+  "one_sided_weight_controls": [
+    {
+      "weight_sign": 1,
+      "linear_monomials": 1,
+      "cubic_monomials": 4,
+      "products_checked": 4
+    },
+    {
+      "weight_sign": -1,
+      "linear_monomials": 1,
+      "cubic_monomials": 4,
+      "products_checked": 4
+    }
+  ],
+  "rejecting_and_boundary_controls": {
+    "duplicated_orbit_tangent_rejected": true,
+    "wrong_rotation_sign_rejected": true,
+    "mixed_weight_phase_has_nonzero_invariant": true
+  },
+  "written_conclusions_not_computationally_proved": [
+    "The retained classification of every pure ternary cubic",
+    "Exceptional orbit dimension and smoothness beyond the displayed tangents",
+    "Krull dimension lower bound for moment zero sets",
+    "Existence of a nonpure algebraic phase with its first fifteen moments zero",
+    "The unspecified later nonzero moment and algebraic coefficient values",
+    "The all-order vanishing of later moment differentials",
+    "Nonreducedness of the full moment scheme, which uses the written inputs"
+  ],
+  "not_claimed": [
+    "external review",
+    "formal verification",
+    "universal upper prefix",
+    "sixteenth moment nonzero",
+    "historical novelty"
+  ],
+  "source_sha256": {
+    "research/moments/vanishing/verify_gaussian_cubic_prefix_geometry.py": "804674293302cd73238d055895a85f7fd9affb0f1ccaed333b2411a32bef597d",
+    "research/moments/vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md": "5a9d659f7f09338ce7ccfa0c05cf6dfc1c5b92efe4470be70dd75c7e845b3d95",
+    "research/moments/vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "26b8ba6247b66eebda42b38278820c3fe6772ce7e273aa3038dff756aaaced24",
+    "results/gaussian-boundary/manuscript.tex": "b636da0ced90547dc9b1c0dd5040413191c8c7522de22e3fd84aaae386ea5d25",
+    "results/gaussian-boundary/affine_classification_proof.tex": "9e5c41ad1239bdfa488969c9b861f3af866ad39c9ee051532690d2f4a842132b"
+  }
+}

@@ -1,17 +1,28 @@
 {
-  "title": "Class-number-two primitive norm sums: finite-filter logarithmic count and exact bounded exceptions",
+  "title": "Exact class-number-two primitive norm sumset and finite-filter logarithmic counts",
   "proof": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md",
   "checkers": [
     "verify_primitive_norm_genus_filters.py",
-    "verify_primitive_norm_minus20.py"
+    "verify_primitive_norm_minus20.py",
+    "verify_primitive_norm_minus20_effective.py",
+    "verify_primitive_norm_minus20_five_divisible.py",
+    "verify_primitive_norm_minus20_completion.py"
   ],
   "receipts": [
     "primitive_norm_genus_filter_checks.json",
-    "primitive_norm_minus20_checks.json"
+    "primitive_norm_minus20_checks.json",
+    "primitive_norm_minus20_checks_2_29.json",
+    "primitive_norm_minus20_effective_checks.json",
+    "primitive_norm_minus20_five_divisible_checks.json",
+    "primitive_norm_minus20_completion_checks.json"
   ],
   "reproduction": [
     "python3 research/arithmetic/verify_primitive_norm_genus_filters.py --output research/arithmetic/primitive_norm_genus_filter_checks.json",
-    "python3 research/arithmetic/verify_primitive_norm_minus20.py --output research/arithmetic/primitive_norm_minus20_checks.json"
+    "python3 research/arithmetic/verify_primitive_norm_minus20.py --output research/arithmetic/primitive_norm_minus20_checks.json",
+    "python3 research/arithmetic/verify_primitive_norm_minus20.py --bound 536870912 --output research/arithmetic/primitive_norm_minus20_checks_2_29.json",
+    "python3 research/arithmetic/verify_primitive_norm_minus20_effective.py",
+    "python3 research/arithmetic/verify_primitive_norm_minus20_five_divisible.py",
+    "python3 research/arithmetic/verify_primitive_norm_minus20_completion.py"
   ],
   "proof_dependencies": [
     {
@@ -72,11 +83,176 @@
   },
   "review": "Root and separate internal agents reconstructed finite normalization, analytic source transfer, genus/cofactor restoration and full target-residue coverage. Independent internal checker replays matched retained outputs. No external review or formal verification.",
   "limitations": [
-    "The unrestricted exception list{3,4} is not proved complete.",
-    "No numerical eventual cutoff or unweighted leading constant.",
+    "CN2Exact now proves the unrestricted exception list{3,4} complete under the retained classical spectral proof and declared exact finite certificates. Independent external human review, formal verification and historical priority remain unestablished.",
+    "The original classical CN2 logarithmic-count proof supplies no numerical onset for that sharp count. CN2EffectiveAll supplies existence onset2^66 and a weaker N^(2/3)/6000 value count; the separate core/seed descent plus2^29 finite certificate completes all smaller targets.",
+    "The original classical CN2 proof supplies no unweighted leading constant. The current separate pointwise-correlation manuscript supplies fixed-order leading constants under its declared recent inputs.",
     "The result extends the existing proof by a fixed finite filter; it is not a literal specialization of the original coefficient hypotheses.",
     "No historical priority or nonabelian class-group generalization is asserted."
   ],
+  "effective_unit5": {
+    "statement": "For every N>=2^66 with 5 not dividing N and N mod8 in {2,3,4,6,7}, the ordered primitive numerical-value pair count is at least N^(2/3)/6000.",
+    "proof_section": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md#an-effective-five-unit-subfamily",
+    "proof_label": "CN2EffectiveUnit5; equations CN2E.1-CN2E.10",
+    "checker": "verify_primitive_norm_minus20_effective.py",
+    "checker_sha256": "8e76bec2fcf3f062e4605984cc6368e81fb3978b22a6122bc4dccb8218dc1cfa",
+    "receipt": "primitive_norm_minus20_effective_checks.json",
+    "receipt_sha256": "d056787751625c810cdc5bcac4405f3cd61e6e49a8250933cafd8610258a37d2",
+    "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus20_effective.py --output research/arithmetic/primitive_norm_minus20_effective_checks.json",
+    "new_application_checks": [
+      "Order Z[sqrt(-5)] plus Z[sqrt(-5)]j is index10 in the Hurwitz order, has unit indices3 at2 and6 at5, total projective mass3/2 and principal probability1/3. All ideal classes are retained.",
+      "The fixed dyadic correspondences have degrees1,2,2. At norm valuation one, retain the two local cosets represented by1+J and1+K, giving both binary norms odd; the full degree-three shell is invalid. At norm valuation two, retain the two nonidentity Hurwitz-unit cosets, giving all four coordinates odd.",
+      "All unramified Hecke indices are prime to10 and the auxiliary prime. Nonmaximal local operators at2 have their elementary norm bounds. No unramified theorem at2 or5 is invoked.",
+      "An inert auxiliary prime has torus-normalizer mass2/(p(p-1)) inside the principal fiber, hence full-space mass one third of that. Index-dividing auxiliary primes are handled by direct common-block division.",
+      "The projective O5-unit quotient has order100; its axis normalizer has order10. Its quadratic norm character is identically one on that axis, yielding conditional axis density1/5 or0 rather than an unbiased1/10.",
+      "A finite Euler maximum, the initial lattice table and four progression tails imply an exact infinite survival inequality for m>=2^64; N>=2^66 guarantees that odd-part threshold. No scan beyond2^24 is claimed or required for this restricted effective statement."
+    ],
+    "shared_spectral_proof": {
+      "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+      "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+      "statement": "The shared all-integral-ideal Hecke lemma: degree sigma(m), self-adjointness, and tau(m)sqrt(m) complementary norm after all global reduced-norm characters are removed; maximal split level only at primes dividing m.",
+      "application_audit": "The retained proof explicitly permits nonmaximal compact levels away from the index. Here m is odd and prime to5, while all inert auxiliary primes are at least11. The new argument checks the principal-return divisor4, dyadic selections, global norm characters and biased auxiliary5 mass; it does not revalidate the complete deep primary sources."
+    },
+    "primary_source_audit": [
+      {
+        "author": "John Voight",
+        "title": "Quaternion Algebras",
+        "edition": "Author edition1.0.7u, 5August2026",
+        "url": "https://jvoight.github.io/quat-book.pdf",
+        "local_path": "sources/voight-quaternion-algebras-author.pdf",
+        "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+        "inspected_statements": [
+          "Theorem25.1.1, printedp403: projective inverse-unit mass for maximal definite quaternion orders; Hurwitz mass1/12. The nonmaximal mass3/2 here is derived by the explicit compact unit index18, not by treating O as maximal.",
+          "Propositions41.3.1 and41.3.6: all-integral-ideal degree, coprime composition and Hecke recurrence at primes away from the level. These index hypotheses are enforced here.",
+          "Main Theorem28.5.3: strong approximation in the S-indefinite norm-one group, as used in the retained shared transfer to exclude finite-dimensional split-place factors."
+        ],
+        "inspection_limit": "Actual retained theorem statements and the new application interface inspected. The general deep proofs remain imported through the shared transfer."
+      },
+      {
+        "authors": "Ayse Alaca, Saban Alaca, Kenneth S. Williams",
+        "title": "On the quaternary forms x^2+y^2+z^2+5t^2, x^2+y^2+5z^2+5t^2 and x^2+5y^2+5z^2+5t^2",
+        "edition": "JP Journal of Algebra, Number Theory and Applications9(1),2007,37-53",
+        "url": "https://people.math.carleton.ca/~aalaca/pubs/aa2007-7.pdf",
+        "inspected_statement": "Theorem7.1, printedp48, and proof/equation7.3: unrestricted diag(1,1,5,5) norm-shell formula. The even branch has no cusp coefficient. This theorem imposes no designated binary gcds.",
+        "role": "Independent finite shell-normalization diagnostic only; the primitive positivity proof does not import its unrestricted formula. No priority conclusion is drawn."
+      },
+      {
+        "authors": "H. Jacquet and R. P. Langlands",
+        "title": "Automorphic Forms on GL(2)",
+        "edition": "Lecture Notes in Mathematics114, Springer,1970; retained IAS PDF",
+        "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+        "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+        "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+        "role": "Existing deep import inherited from the shared proof: Theorem14.4 and Section5 Proposition5.20, cuspidal transfer after excluding finite-dimensional split-place factors and weight-two infinite type. This application does not claim a fresh revalidation of the complete primary proof."
+      },
+      {
+        "author": "P. Deligne",
+        "title": "Formes modulaires et representations l-adiques",
+        "edition": "Seminaire Bourbaki, expose355,1968/69; published1971,139-172",
+        "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+        "local_path": "sources/deligne-modular-355.pdf",
+        "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+        "role": "Existing deep import inherited from the shared proof: Theorems4.9 and5.1, the modular Frobenius-Hecke relation and purity interface. No fresh complete primary-proof revalidation is claimed."
+      },
+      {
+        "author": "P. Deligne",
+        "title": "La conjecture de Weil.I",
+        "edition": "Publications Mathematiques de l'IHES43,1974,273-307",
+        "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+        "local_path": "sources/deligne-weil-I.pdf",
+        "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+        "role": "Existing deep import inherited from the shared proof: Theorem1.6, used there for the weight-two unramified root bounds. No fresh complete primary-proof revalidation is claimed."
+      }
+    ],
+    "verification": {
+      "author_replay": "Exact effective checker passed on19November2026 with the retained receipt.",
+      "independent_internal_review": "A separate geometry/algebra agent reconstructed the order mass, local dyadic selections, principal-return normalization, quadratic norm bias, sieve and value-count conversion, and independently replayed the exact checker to a separate temporary output. The corrected degree-two e=1 selection passed review.",
+      "assurance_limits": "Internal written proof and exact finite support, not external human review, formal verification, an unrestricted sumset theorem or established historical priority."
+    },
+    "remaining_scope": [
+      "Targets divisible by5 are not covered by CN2EffectiveUnit5 itself; the separate full_onset argument below now supplies those branches.",
+      "The existing complete scan through2^24 does not bridge all five-unit targets below2^66.",
+      "Global completeness of the exception list{3,4} is now proved separately in exact_completion; it is not a consequence of the five-unit proposition alone."
+    ]
+  },
+  "full_onset": {
+    "statement": "CN2EffectiveAll: every N>=2^66 with N mod8 in {2,3,4,6,7} has ordered primitive numerical-value pair count at least N^(2/3)/6000. For 5 dividing N the separate proof gives N^(2/3)/1000. Other residue classes have count zero.",
+    "proof_section": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md#five-divisible-targets-and-a-uniform-numerical-onset",
+    "local_lemma": "CN2FiveDivisibleOperator; equationsF5.1-F5.8",
+    "checker": "verify_primitive_norm_minus20_five_divisible.py",
+    "checker_sha256": "21f55414693ae951c34b9b33243945c0d4426ecd26a78347397f3d40a8551236",
+    "receipt": "primitive_norm_minus20_five_divisible_checks.json",
+    "receipt_sha256": "9da0e198056fb3d615bb402e9163d9ba06d84d0565d9bffcfd2c81afe4ac797b",
+    "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus20_five_divisible.py --output research/arithmetic/primitive_norm_minus20_five_divisible_checks.json",
+    "proof_dependencies": [
+      "CN2EffectiveUnit5 and its order mass, dyadic degree1/2/2 selections, inert-prime orbit sieve, finite Euler constants and value-count conversion.",
+      "The same pinned shared Hecke transfer as effective_unit5.shared_spectral_proof, applied to T5 only after passing to coarser maximal compact level at5. The norm characters are the same because original order units have every5-adic unit norm.",
+      "The elementary new local edge-distance argument, including the sector with no maximal-compact invariants; the spherical bound is not asserted on the entire Iwahori space."
+    ],
+    "primary_tree_source": {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "edition": "Author edition1.0.7u, 5August2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "inspected_statements": [
+        "Proposition23.5.8, printedpp377-378: homothety-lattice graph is a(q+1)-regular tree.",
+        "23.5.12, printedp378: maximal-compact cosets identify with lattice vertices.",
+        "Lemma23.5.15 and23.5.16, printedp379: elementary-divisor lattice distance, Eichler paths and normalizer swapping the endpoint maximal orders."
+      ],
+      "inspection_scope": "Actual retained primary statements and elementary lattice proofs inspected; the specific integral Iwahori shell and full-space operator estimates are proved in the new note."
+    },
+    "new_local_argument": [
+      "Integral norm-valuation-b right-unit cosets identify exactly with the oriented edge ball of radiusb, with orientation adjusted by determinant parity: degree1+2sum_(k=1..b)5^k.",
+      "The included iotaO5 radical branch is F times the preceding ball. Its nonnegative-kernel complement is the exact-distance operatorD_b F^b of degree2*5^b, forcing both component norms to be5-units when5 divides the target.",
+      "Two endpoint conditional projectionsP0/P1 and edge reversalF giveD1=6(P0+P1)-2. On their joint kernel the exact-distance operator has norm2. On their image span, diagonalizeP0FP0=T5/6 at coarser maximal5 level and bound every two-dimensional frame using the retained unramified spectral lemma.",
+      "This proves norm(S_b)<=4b5^(b/2) on the full non-norm-character complement, explicitly including the nonspherical sector. The normalized full error is less than21*(5^bm)^(-1/3).",
+      "The all-valuation inert sieve has upper265291/409600<3/4 once the odd part5^bm is at least2^64, giving the stated all-target onset2^66."
+    ],
+    "finite_support_scope": "All local Hermite-normal lattice chains and integral right-unit cosets throughb=5; independent7811-edge6-regular tree intersection counts throughdistance4; exact rational b-uniform Euler/sieve constants. These finite checks do not execute the global spectral proof.",
+    "review": "The author replay and a separate geometry/algebra agent's independent mathematical reconstruction and replay passed. Review covers the integral ball correspondence, included radical branch, full-space old/new compact sectors, inverse-unit measure, norm-character preservation and numerical/value-count inequalities. No external human review or formal verification is claimed.",
+    "remaining_scope": "The exact_completion argument below now closes the global exception list{3,4} by reduced-core and atomic-seed descent plus a2^29 certificate. CN2EffectiveAll itself does not provide a numerical onset for the sharper CN2 logarithmic count."
+  },
+  "exact_completion": {
+    "statement": "TheoremCN2Exact: for every N>=2, N belongs to P_-20+P_-20 iff N mod8 is in{2,3,4,6,7} and N is not3 or4. This is the complete unrestricted classification.",
+    "proof_section": "PRIMITIVE_NORM_CLASS_NUMBER_TWO.md#exact-completion-by-reduced-cores-and-atomic-seeds",
+    "proof_labels": "CN2Exact, CN2Finite29; C1-C14",
+    "checker": "verify_primitive_norm_minus20_completion.py",
+    "checker_sha256": "46489c211fb21936d6e2a3304392ec8ab2020cd756deaa2f8f840df35847fd8d",
+    "receipt": "primitive_norm_minus20_completion_checks.json",
+    "receipt_sha256": "f6eba4cf896f4433fd8d8c53b1fc62b285bf7472d82dd2d3980c4ad4c5be1b5f",
+    "finite_sumset_receipt": "primitive_norm_minus20_checks_2_29.json",
+    "finite_sumset_receipt_sha256": "ade0365c544eda0edc4704110a46b3edc1d654b010663cf6e9f9ada175ae2e4d",
+    "unchanged_finite_checker": "verify_primitive_norm_minus20.py",
+    "unchanged_finite_checker_sha256": "02ad60a146081747461ed374e4495b15f3fd8bcb4c58d57b40ca102d17f7e903",
+    "reproduction": [
+      "python3 research/arithmetic/verify_primitive_norm_minus20_completion.py",
+      "python3 research/arithmetic/verify_primitive_norm_minus20.py --bound 536870912 --output research/arithmetic/primitive_norm_minus20_checks_2_29.json"
+    ],
+    "proof_dependencies": [
+      "The effective_unit5 and full_onset order, dyadic selections, nonnegative five-adic distance correspondence, complete norm-character complement and classical spectral estimates; their shared primary imports are fully pinned above.",
+      "Classical primitive genus criterionCN2.3/PL4, already pinned in proof_dependencies. It proves numerical-value closure under class-zero split multipliers and their exact principal-prime/two-nonprincipal-prime atom decomposition.",
+      "New layer-cake all-odd lattice boundS_oo(X)<=2X/3 and exact finite table through35; improved e=2 large-inert coefficients4 and2.",
+      "Reduced-core Euler constant61/20 from the complete inert-prime product and one optional exponent-one nonprincipal split factor, maximized at7.",
+      "Exact finite M-envelope enumeration1439states up to2^52;134core and12atomic-seed interval inequalities; explicit elementary infinite continuations beyond2^50 and2^30 respectively.",
+      "Complete actual finite sumset certificate through2^29, with full coordinate/gcd versus independent genus-flag authentication at every index, actual primitive-value anchors and exhaustive residual testing."
+    ],
+    "descent_scope": "Every admissible target is reduced by a class-zero split multiplier to a core supported on2,5,inert primes and at most one nonprincipal split prime to exponent1. Every reduced core>=2^29 is represented by the interval and infinite estimates. Exceptional cores3,4 multiplied by any nontrivial multiplier are handled by seed families3p,4p,3pq,4pq, including repeated primes, with E<=8/sqrt(N). The2^29 scan then closes every remaining core. A bound on reduced cores alone is not mislabeled as a uniform2^29 onset before the finite completion.",
+    "finite_sumset_scope": {
+      "bound": 536870912,
+      "primitive_value_flags": 45893814,
+      "coordinate_genus_equality_bound": 536870912,
+      "short_anchor_bound": 5000,
+      "genuine_primitive_anchors": 672,
+      "locally_admissible_targets": 335544320,
+      "represented_targets": 335544318,
+      "exceptions": [3,4],
+      "forbidden_targets_covered": 0,
+      "old_receipt_preserved": "The original2^24 receipt and unchanged checker bytes remain retained; this is an additional separately named actual2^29 receipt."
+    },
+    "verification": "Two separate internal reviewers independently reconstructed C1-C14 and replayed its exact packet, covering multiplier/atom descent, both exceptional-core families, lattice layer-cake normalization, Euler maxima, envelope completeness, prime-tail rounding and every finite-to-infinite transition. Parent independently replayed the unchanged full finite checker through2^29. The portable canonical completion checker replay matched the reviewed exact arithmetic payload.",
+    "assurance_limits": "Internal written proof and exact computation under the retained classical spectral imports. No external human review, formal verification or established historical priority is claimed. Public deposited archives are unchanged."
+  },
   "runtime_contract": {
     "required": "Python assertions enabled (__debug__ is True).",
     "optimized_execution": "Rejected by an explicit module-level RuntimeError before certificate computation/output.",

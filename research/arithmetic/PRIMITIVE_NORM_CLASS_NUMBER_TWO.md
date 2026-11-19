@@ -1,4 +1,4 @@
-# Primitive x²+5y² sums at the logarithmic counting scale
+# Exact primitive x²+5y² sums and logarithmic counts
 
 Put
 \[
@@ -6,6 +6,19 @@ Put
  \qquad R_P(N)=\#\{(a,b)\in P^2:a+b=N\}.
 \]
 Pairs are ordered and values are counted without coordinate multiplicity.
+
+**Theorem CN2Exact.** For every integer \(N\ge2\),
+\[
+ N\in P+P\quad\Longleftrightarrow\quad
+ N\bmod8\in\{2,3,4,6,7\}\quad\hbox{and}\quad N\notin\{3,4\}.
+\]
+The proof combines the classical spectral estimates below, exact
+core and atomic-seed interval certificates, class-group descent and
+complete finite coverage through \(2^{29}\). The two exceptions
+are actual. This is an internally reviewed written proof with exact
+computational support; external human review, formal verification
+and historical priority are separate and are not asserted.
+
 Define
 \[
  J_{-20}(N)=\prod_{\substack{p\mid N\\p\equiv11,13,17,19\ (20)}}
@@ -20,8 +33,9 @@ that every \(N\ge N_0\) with \(N\bmod8\in\{2,3,4,6,7\}\) satisfies
 \]
 For all other residue classes the count is exactly zero. Both inequalities
 are uniform in every target-prime valuation, including those at 2 and 5.
-No numerical \(N_0\), leading constant or complete global exception list
-is supplied.
+This classical counting argument supplies no numerical \(N_0\) for
+the logarithmic lower bound and no leading constant. The separate
+Theorem CN2Exact supplies the complete global exception list.
 
 **Proposition CN2Finite.** For every \(2\le N\le2^{24}=16777216\),
 \[
@@ -30,8 +44,8 @@ is supplied.
 \]
 The numbers 3 and 4 are actual exceptions: the only primitive value at
 most 4 is 1. Completeness of this exception list is asserted only through
-the stated bound. The unrestricted equality with the same two exceptions
-remains open here.
+the stated bound by this proposition alone. The unrestricted equality
+is proved separately by Theorem CN2Exact and the completion argument below.
 
 The arithmetic class-number-two criterion below is classical. The new
 counting deduction is a finite-period extension of the existing asymmetric
@@ -340,5 +354,881 @@ characters; it does not test a genuinely odd-order ideal-class obstruction.
 For comparison, the individual principal norm of discriminant -23 has a
 local/global failure at 2, as shown in the local arithmetic source. No
 claim that the same periodic filter handles that case is made. The exact
-global exception list \(\{3,4\}\), a numerical cutoff, and an unweighted
-leading constant remain unresolved.
+global exception list is supplied by CN2Exact below. The original
+classical logarithmic-count proof alone supplies neither its numerical
+onset nor an unweighted leading constant.
+
+## An effective five-unit subfamily
+
+The numerical onset in this section concerns targets prime to five and
+is an intermediate step in the exact completion below. The older statement
+above that no leading constant is supplied describes the classical CN2
+proof: the separate current pointwise manuscript supplies the fixed-order
+leading constant under its declared recent analytic inputs.
+
+**Proposition CN2EffectiveUnit5.** If \(5\nmid N\), \(N\ge2^{66}\), and
+\(N\bmod8\in\{2,3,4,6,7\}\), then
+\[
+                 R_P(N)\ge N^{2/3}/6000>0.                 \tag{CN2E.1}
+\]
+This is a classical spectral deduction, independent of the recent
+binary-correlation inputs. The complementary \(5\mid N\) family is
+treated by CN2EffectiveAll; the finite bridge is completed in CN2Exact.
+
+### The order and its mass
+
+Use Hamilton's algebra with \(I^2=J^2=K^2=IJK=-1\), put
+\(\iota=I+2J\), \(j=K\), and set
+\[
+ O=\mathbb Z[\iota]\oplus\mathbb Z[\iota]j
+   =\{a+(b+2d)I+(2b-d)J+cK:a,b,c,d\in\mathbb Z\}.
+\]
+Its norm is \(Q(a,b)+Q(c,d)\), its units are
+\(\{\pm1,\pm j\}\), and its index in the Hurwitz maximal order
+\(H\) is ten. The displayed coefficient change has determinant
+\(-5\), while the integer Hamilton order has index two in \(H\).
+Away from two and five, \(O\) is maximal.
+
+At two, \(O_2\) is the integer Hamilton order. If \(\mathfrak P\)
+is the radical of \(H_2\), reduction gives
+\(H_2/\mathfrak P=\mathbb F_4\), and
+\[
+ O_2^\times=\ker(H_2^\times\longrightarrow\mathbb F_4^\times).
+\]
+Indeed integer quaternions have reduction in \(\mathbb F_2\), and
+their norm is odd exactly when their reduction is one. Thus the
+unit index at two is three. At five, \(O_5\) is an Eichler order of
+level five in \(M_2(\mathbb Q_5)\): the square-zero line generated
+by \(\iota\bmod5\) makes its image in a containing maximal order
+the stabilizer of a line. Its unit index is consequently six.
+The Borel image has 80 units, against 480 for the full matrix group,
+which gives that index six. Separately, the ring \(O/5O\) has
+\(400\) units, with semisimple quotient
+\(\mathbb F_5\times\mathbb F_5\) and a radical of size \(25\).
+These are different reduction moduli; their unit counts are not
+divided to compute the index.
+
+The Hurwitz order is norm Euclidean, so its ideal-class space has
+one point of projective unit mass \(1/12\). Changing compact level
+multiplies the unnormalized mass by the unit index \(3\cdot6=18\).
+The total projective mass at \(O\)-level is therefore \(3/2\).
+The principal class has mass \(1/2\), hence probability
+\[
+                             w=1/3.                        \tag{CN2E.2}
+\]
+All ideal classes are retained. In particular this order cannot be
+treated as a class-number-one order. Its unit norm maps are onto
+\(\mathbb Z_\ell^\times\): this is immediate at maximal split
+places, follows from the two diagonal units at five, and at two the
+integer quaternions of norms \(1,3,5,7\), followed by central unit
+squares, supply every odd unit.
+
+### The fixed dyadic correspondences
+
+Write \(N=2^e m\), \(m\) odd. Local admissibility implies
+\(e=0,1,2\); for \(e=0\), it also implies \(m\equiv3,7\pmod8\).
+Consider the following selected norm shells:
+
+| \(e\) | Selection inside \(Q\oplus Q=N\) | Local correspondence \(A_e\) | Degree \(d_e\) |
+|---|---|---|---:|
+| 0 | full shell | identity | 1 |
+| 1 | both component norms odd | the two compatible norm-two local right-unit cosets | 2 |
+| 2 | all four coordinates odd | the two nonidentity cosets of \(H_2^\times/O_2^\times\) | 2 |
+
+Here is the local coset justification. The norm-valuation-one
+elements of \(H_2\) form \(\varpi H_2^\times\), all lying in
+\(O_2\); there are three right \(O_2^\times\)-cosets. Modulo two,
+their integer Hamilton parity patterns are the complementary pairs
+\[
+ \{1+I,J+K\},\quad\{1+J,I+K\},\quad\{1+K,I+J\}.
+\]
+Right multiplication by the eight odd-norm residue units preserves
+each pair and interchanges its two patterns. In the displayed
+\(O\)-basis, the last two pairs are exactly the cases where both
+binary norms are odd; they define \(A_1\). The unit kernel
+\(O_2^\times\) is normal in the local division group: conjugation
+by a uniformizer acts on the residue field \(\mathbb F_4\) by its
+Frobenius and preserves the kernel of reduction. Representatives
+\(1+I,1+J,1+K\) for the three cosets have squares
+\(2I,2J,2K\), respectively, so each is self-inverse modulo a
+central scalar and \(O_2^\times\). These are local representatives;
+\(1+J\) need not belong to the global order \(O\). Principal
+return is imposed separately in the global class space. Elements of
+\(O_2\) of norm valuation two are exactly twice the elements of
+\(H_2^\times\). The central coset consists of the all-even integer
+vectors; the other two consist of the all-odd vectors. The quotient
+\(H_2^\times/O_2^\times\) has order three and its two nonidentity
+cosets are inverses. These facts prove that each
+\(A_e\) is self-adjoint, has nonnegative kernel and constant row
+sum \(d_e\), and satisfies \(\|A_e\|\le d_e\).
+
+Every selected shell point has nonzero component norms and has
+both binary pairs primitive at two. To check this directly, the
+residues of \(Q\) modulo eight are \(0,1,4,5,6\); a nonprimitive
+binary pair has norm zero or four modulo eight. At an odd target
+three or seven, subtracting either zero or four leaves a forbidden
+\(Q\)-residue. For \(e=1\), the chosen component norms are both
+odd, forcing opposite-parity coordinates in each pair. For \(e=2\),
+the all-odd selection directly gives the assertion. Both latter
+selections also exclude zero components.
+
+At auxiliary levels prime to \(10m\), let \(T_m\) be the
+all-integral-ideal Hecke operator. The shared
+[classical Hecke transfer](../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex)
+gives constant eigenvalue \(\sigma(m)\) and complementary norm
+\(\tau(m)\sqrt m\), after removing global norm characters.
+The fixed \(A_e\) commutes with this operator and with the right
+action at every auxiliary prime. Thus \(A_eT_m\) has constant
+eigenvalue \(d_e\sigma(m)\) and complementary norm at most
+\(d_e\tau(m)\sqrt m\). At a principal base point, its value on a
+test supported in the principal fiber is one quarter of the
+selected shell sum with that test: a principal returning ideal has
+exactly four generators, the units of \(O\). No unramified estimate
+at two or five is being applied.
+
+Put \(E=\tau(m)\sqrt m/\sigma(m)\). Orbit averaging on the principal
+fiber, whose mass is \(w\), bounds the selected shell size \(G_e(N)\)
+by
+\[
+                   G_e(N)\ge\frac43d_e\sigma(m)(1-2E).
+                                                               \tag{CN2E.3}
+\]
+The factor two is \((1-w)/w\).
+
+### Local sieving and its normalization
+
+Let \(\mathcal I\) be the primes \(11,13,17,19\pmod{20}\), and
+let \(b_p(N)\) count selected points with one binary component
+divisible by \(p\). For \(p\in\mathcal I\), \(p\nmid N\), the
+fine projective quotient is \(G_p=\mathrm{PGL}_2(\mathbb F_p)\).
+The bad locus is the nonsplit-torus normalizer, of relative size
+\(\mu_p=2/[p(p-1)]\), inside the principal fiber. Its full-space
+measure is \(w\mu_p\), not \(\mu_p\). The determinant-square
+character has zero mean there, since the field norm is onto.
+The orbit-averaging identity and the complementary norm therefore give
+\[
+ \frac{b_p(N)}{(4/3)d_e\sigma(m)}
+                    \le\mu_p+(3-\mu_p)E\le\mu_p+3E.
+                                                               \tag{CN2E.4}
+\]
+If \(p\mid N\), anisotropy forces both blocks divisible by \(p\).
+The count vanishes at target valuation one, and otherwise equals
+\(G_e(N/p^2)\). Since
+\(\sigma(m/p^2)\le\sigma(m)/p^2\) and
+\(\tau(m/p^2)\sqrt{m/p^2}\le\tau(m)\sqrt m/p\), the same bound
+follows from \(p^{-2}+2E/p\le\mu_p+3E\). This treats every
+inert target valuation without a Hecke index divisible by its
+auxiliary level prime.
+
+At five use
+\[
+ G_5=O_5^\times/[\mathbb Z_5^\times(1+5O_5)],\qquad |G_5|=100.
+\]
+The image of \((\mathbb Z_5[\iota])^\times\) and its \(j\)-coset
+form a subgroup \(H_5\) of size ten. This is precisely the bad
+locus where one binary component is zero modulo five. Every element
+of \(H_5\) has square reduced norm modulo five. Its full-space
+indicator has mean \(w/10\) and the same coefficient on the
+quadratic norm character. The remaining squared norm is
+\((w/10)(1-2w/10)\). Consequently
+\[
+ \frac{b_5(N)}{(4/3)d_e\sigma(m)}
+ \le\frac{1+(N/5)}{10}+\frac{14}{5}E
+ \le\frac15+\frac{14}{5}E.                                  \tag{CN2E.5}
+\]
+The two norm characters at each separate fine level are exactly
+the constant and its quadratic residue character. Original order
+units have all unit norms at every other place, while the fine
+kernel and central scalars leave exactly the square residue norms
+at the auxiliary place. Fine stabilizers inject: a noncentral
+finite-order projective unit has trace discriminant \(-3\) or
+\(-4\), so cannot become scalar at five or at an inert prime
+at least eleven. Thus the full-space masses used above have the
+stated inverse-unit normalization.
+
+The elementary lattice bound
+\[
+ S_Q(X)=\#\{(x,y):0<Q(x,y)\le X\}\le2X                     \tag{CN2E.6}
+\]
+holds for every real \(X\). Row integration bounds it by
+\(\pi X/\sqrt5+(2+2/\sqrt5)\sqrt X\); for integer \(X\ge25\)
+use \(\pi<22/7\), \(\sqrt5>20/9\). Direct enumeration checks
+\(1\le X\le24\); flooring gives the real assertion.
+Ideal factorization gives
+\[
+ r_Q(t)\le2M(X),\qquad
+ M(X)=\max_{1\le v\le X}\prod_{\substack{\ell\mid v\\
+                               \ell\equiv1,3,7,9\ (20)}}
+                                      (v_\ell(v)+1).
+\]
+Counting a nonzero divisible block using (CN2E.6), then the other
+block and both possible positions, proves
+\(b_p(N)\le8M(N)N/p^2\). Relative to the denominator in
+(CN2E.4), this is at most \(12M(N)/p^2\), since
+\(6\cdot2^e/d_e\le12\).
+
+Write \(B=\sum_{p\in\mathcal I}\mu_p\),
+\(\Pi(P)=\#\{p\in\mathcal I:p\le P\}\) and
+\(T(P)=\sum_{p\in\mathcal I,p>P}p^{-2}\). A sufficient survival
+inequality is
+\[
+ B+\frac15+E\left(\frac{24}{5}+3\Pi(P)\right)
+                         +12M(N)T(P)<1.                    \tag{CN2E.7}
+\]
+Indeed the \(2E\) in (CN2E.3) and \(14E/5\) in (CN2E.5)
+account for \(24E/5\); (CN2E.4) handles the small inert primes,
+and the lattice estimate handles the others. A surviving value
+has no inert factor, has valuations at most one at two and five,
+and satisfies its represented genus sign. Since the class group
+is \(C_2\), criterion (CN2.3) makes both values primitive principal
+norms. Primitivity of these particular coordinate witnesses at
+split primes is not required.
+
+### Exact constants and an infinite threshold
+
+The four progressions give, for every \(P\ge1\),
+\[
+ B<\frac1{16},\qquad \Pi(P)\le\frac P5+2,\qquad
+                         T(P)\le\frac1{5P}+\frac4{P^2}.
+                                                               \tag{CN2E.8}
+\]
+For \(B\), sum the actual inert primes through 64 and bound the
+rest, starting at \(71,73,77,79\), by
+\((5/2)\sum_a(a^{-2}+(20a)^{-1})\). The other two estimates
+follow by counting the four progressions and integrating \(x^{-2}\).
+
+Finite Euler maximizations prove the unrestricted bounds
+\[
+              E<\frac{15}{2}m^{-1/3},\qquad
+              M(X)\le7X^{1/6}\le9m^{1/6}\quad(X=N\le4m).
+                                                               \tag{CN2E.9}
+\]
+For the first, at every odd prime \(p\ne5\) maximize
+\((a+1)^6p^{5a}/\sigma(p^a)^6\); for the second, maximize
+\((a+1)^6/p^a\) over the split primes. Only primes below 64 and
+exponents zero through six can improve either product. Larger
+primes use \(a+1\le2^a\); the subsequent exponent ratios are
+at most \((8/7)^6/3<1\). The rational products are respectively
+less than \((15/2)^6\) and \(7^6\). Finally \(4\cdot7^6<9^6\).
+
+Take \(P=m^{1/4}\). The left side of (CN2E.7) is strictly below
+\[
+                  \frac{21}{80}+\frac{261}{10}m^{-1/12}
+                                           +513m^{-1/3}.
+\]
+For \(m\ge2^{64}\), \(m^{1/12}>40\) and
+\(m^{1/3}\ge2^{21}\), so it is below
+\[
+ \frac{21}{80}+\frac{261}{400}+\frac{513}{2^{21}}
+       =\frac{47985177}{52428800}<\frac{15}{16}.             \tag{CN2E.10}
+\]
+The remaining shell therefore contains at least
+\(d_em/12\) coordinate points. Each ordered pair of numerical
+values has at most \((2M(N))^2\le324m^{1/3}\) witnesses.
+Thus its value count is at least \(d_em^{2/3}/3888\), which is
+at least \(N^{2/3}/6000\) for \(e=0,1,2\): the weakest dyadic
+factor satisfies \(d_e/2^{2e/3}>3/4\).
+If \(N\ge2^{66}\), then \(m\ge2^{64}\). This proves the
+asserted threshold.
+
+The [exact effective checker](verify_primitive_norm_minus20_effective.py)
+checks the finite local rings and axis masses, dyadic shell selections,
+Euler products, lattice initial table, and all rational inequalities.
+These computations do not prove the spectral transfer. Its primary
+dependencies are the same classical quaternionic transfer as the exact
+companion. Alaca--Alaca--Williams, [Theorem 7.1, printed p.48](https://people.math.carleton.ca/~aalaca/pubs/aa2007-7.pdf),
+independently supplies the unrestricted norm-shell formula; it imposes
+no separate binary gcds and is not a proof of the primitive assertion.
+
+## Five-divisible targets and a uniform numerical onset
+
+**Proposition CN2EffectiveAll.** Every \(N\ge2^{66}\) with
+\(N\bmod8\in\{2,3,4,6,7\}\) satisfies
+\[
+                         R_P(N)\ge N^{2/3}/6000>0.
+\]
+At a multiple of five the stronger bound \(N^{2/3}/1000\)
+holds. Targets in the other three residue classes have count zero.
+This supplies a uniform numerical existence onset, not an effective
+onset for the sharper logarithmic asymptotic of Theorem CN2. Global
+completeness of the exception list \(\{3,4\}\) follows from the
+structural descent and finite completion below.
+
+Use the order, mass, dyadic selection, inert prime sieve and
+value conversion of the preceding five-unit proof. It remains
+to handle every target divisible by five.
+
+### The integral Iwahori norm shell
+
+**Lemma CN2FiveDivisibleOperator.** At the level-five Eichler
+compact, for every \(b\ge1\) the integral norm-valuation-\(b\)
+correspondence minus its included \(\iota O_5\) branch is a
+self-adjoint correspondence \(S_b\) with nonnegative kernel and degree
+\(2\cdot5^b\). On the orthogonal complement of global reduced-norm
+characters in the finite global class space,
+\(\|S_b\|\le4b5^{b/2}\). The following proof covers both the
+maximal-compact frame and its orthogonal complement.
+
+At five the order \(O_5\) is an Eichler order of level five. Let
+\(q=5\), let \(\mathcal T\) be the \((q+1)\)-regular
+Bruhat--Tits tree, and identify its projective unit compact with
+the stabilizer of an oriented edge. The primary tree facts are
+Voight, author edition 1.0.7u, Section 23.5: Proposition 23.5.8,
+the lattice/coset identification 23.5.12 and the Eichler-order
+normalizer in 23.5.16. These statements and their lattice proofs
+were inspected in the retained primary PDF.
+
+Let \(F\) be edge reversal, a self-adjoint unitary involution.
+On oriented edges let \(D_k\) sum the edges at line-graph distance
+\(k\), choosing their orientations so that the initial vertices
+have the same bipartite color as the original initial vertex.
+Thus \(D_0=1\), \(D_k1=2q^k\) for \(k\ge1\), and \(F\)
+commutes with every \(D_k\). Put \(B_b=\sum_{k=0}^bD_k\).
+All these are identities of compact Hecke correspondences and
+descend to the finite global class space, including multiplicities.
+
+The local integral norm-valuation-\(b\) correspondence is
+\[
+ A_b=B_bF^b,\qquad
+ d_b=A_b1=1+2\sum_{k=1}^bq^k=2\sigma(q^b)-1.              \tag{F5.1}
+\]
+Here is the integrality check. Write the fixed edge as a lattice
+chain \(L_0\supset L_1\supset qL_0\). A projective element sending
+it to an edge at line-graph distance \(k\), with determinant
+valuation congruent to \(b\bmod2\), has a unique central scaling
+of determinant valuation \(b\). Both inclusions
+\(gL_i\subset L_i\) hold precisely when
+\[
+ b\ge k\quad(k\equiv b\bmod2),\qquad
+ b\ge k+1\quad(k\not\equiv b\bmod2).
+\]
+For example, if the new edge lies beyond the initial vertex,
+the two endpoint distances from their respective old endpoints
+are \(k,k\) in the first case and \(k-1,k+1\) in the second;
+the terminal-vertex case is reversed. Endpoint lattice distances
+give these inclusion conditions by elementary divisors. They are
+equivalent to \(k\le b\). A right unit coset determines exactly
+one oriented target edge and conversely. Its orientation is the
+color convention in \(D_k\), followed by \(F^b\). This proves
+(F5.1), rather than inferring the degree from a shell formula.
+
+Write a quaternion as
+\(\alpha=(a+b\iota)+(c+d\iota)j\). Its membership in the
+one-sided sublattice \(\iota O_5\) is equivalent to
+\(5\mid a,c\), since
+\[
+ -\iota\alpha/5=(b-(a/5)\iota)+(d-(c/5)\iota)j.
+\]
+Multiplication by \(\iota\) has norm five and normalizes the
+local order; its projective correspondence is edge reversal
+\(F\), since \(\iota^2=-5\) and it swaps the two maximal
+superorders. Thus the sublattice branch has correspondence
+\(FA_{b-1}\). For every \(b\ge1\), its positive complement is
+\[
+ S_b=A_b-FA_{b-1}=D_bF^b,\qquad S_b1=2q^b.                \tag{F5.2}
+\]
+This is an actual difference of a shell and its included
+sublattice, not a merely signed spectral test. For a target
+divisible by five, the surviving \(a,c\) are both units modulo
+five: from \(a^2+c^2=0\pmod5\), either both vanish or both
+are units. Therefore both component norms are five-units, so
+the local ramified-primitivity condition is automatic.
+
+### Full operator bound, including the nonspherical sector
+
+Let \(P_0,P_1\) average the oriented edges with fixed initial,
+respectively terminal, vertex. They are orthogonal projections,
+\(P_1=FP_0F\), and
+\[
+ D_1=(q+1)(P_0+P_1)-2.                                   \tag{F5.3}
+\]
+The edge-distance operators satisfy
+\[
+ D_2=D_1^2-(q-1)D_1-2q,
+ \quad D_{k+1}=(D_1-(q-1))D_k-qD_{k-1}\quad(k\ge2).
+                                                               \tag{F5.4}
+\]
+At distance \(k\ge1\), a neighboring edge has one predecessor,
+\(q-1\) neighbors at the same distance and \(q\) successors;
+at the root there are \(2q\) successors. These counts prove
+(F5.4) on the tree and hence in its compact Hecke algebra.
+
+Work on the orthogonal complement of the global norm characters.
+The projections and \(F\) preserve this complement. On
+this space at an auxiliary inert-prime level, the only possible
+nonconstant norm character is its quadratic residue character.
+It is unramified at five because
+\(\operatorname{nrd}(O_5^\times)=\mathbb Z_5^\times\).
+Consequently \(P_0\chi=P_1\chi=\chi\) and
+\(F\chi=\chi(5)\chi\). Thus removing norm characters commutes
+with both conditional expectations and edge reversal; no
+character component is silently lost in passing to maximal level.
+On
+\(\operatorname{im}P_0\),
+\[
+                   P_0FP_0=T_q/(q+1),                    \tag{F5.5}
+\]
+because averaging the reversals of the \(q+1\) edges from a
+fixed vertex is the ordinary spherical adjacency operator.
+This \(T_q\) acts at the **coarser maximal level at five**,
+with the same level elsewhere. The shared classical Hecke lemma
+therefore gives \(\|T_q\|\le2\sqrt q\). Every unramified
+index hypothesis is satisfied at this coarser level. No such
+bound has been asserted directly on the Iwahori space.
+
+Diagonalize (F5.5). An orthonormal eigenvector \(u\) and \(Fu\)
+span a two-dimensional invariant frame, with overlap
+\(s=\lambda/(q+1)\), \(|\lambda|\le2\sqrt q\).
+Since \(|s|<1\), the frame is nondegenerate. Distinct orthogonal
+eigenvectors give orthogonal frames, including repeated eigenvalues.
+Their span is exactly
+\(\operatorname{im}P_0+\operatorname{im}P_1\).
+On \(u+Fu,u-Fu\), the eigenvalues of \(D_1\) are
+\(q-1+\lambda,q-1-\lambda\); those of \(F\) are \(+1,-1\).
+
+Let \(U_0(t)=1\), \(U_1(t)=t\), and
+\(U_{k+1}(t)=tU_k(t)-qU_{k-1}(t)\), with \(U_{-1}=0\).
+The recurrence (F5.4) gives, for \(k\ge1\),
+\[
+ D_k=U_k(z)+(q-1)U_{k-1}(z)-qU_{k-2}(z),\qquad
+ z=D_1-(q-1),                                             \tag{F5.6}
+\]
+where the last term is omitted at \(k=1\). For
+\(|t|\le2\sqrt q\), \(|U_k(t)|\le(k+1)q^{k/2}\), by its
+unit-circle root formula, including the limiting double roots.
+Thus on these two-dimensional frames
+\[
+ \|S_b\|\le b\left(2+\frac{q-1}{\sqrt q}\right)q^{b/2}.
+                                                               \tag{F5.7}
+\]
+The complementary sector is
+\(\ker P_0\cap\ker P_1\). It is \(F\)-stable, and
+\(D_1=-2\) there, so (F5.4) gives
+\(D_b=2(-1)^b\) for \(b\ge1\). The norm of \(S_b\) on
+this entire sector is two. This explicitly treats the part with
+no maximal-compact invariant vectors; a spherical eigenvalue
+bound alone would not have done so.
+
+For \(q=5\), (F5.7) dominates two and is less than
+\(4b5^{b/2}\). Consequently on the whole non-norm-character
+complement
+\[
+                       \|S_b\|\le4b5^{b/2}.                \tag{F5.8}
+\]
+
+### The effective inert sieve
+
+Write \(N=2^e5^bm\), \((m,10)=1\), \(b\ge1\), and
+\(n=5^bm\). Compose the fixed dyadic correspondence \(A_e\)
+of degrees \(d_e=(1,2,2)\) with \(S_b\) and \(T_m\).
+They act at different places, are commuting self-adjoint
+correspondences and have nonnegative kernels. Principal return
+has the same divisor four as in CN2EffectiveUnit5. Its constant
+eigenvalue is \(d_e(2\cdot5^b)\sigma(m)\), while its
+complementary norm is at most
+\(d_e4b5^{b/2}\tau(m)\sqrt m\).
+
+Set
+\[
+ E_b=2b5^{-b/2}\,\frac{\tau(m)\sqrt m}{\sigma(m)}
+              <21n^{-1/3}.                               \tag{F5.9}
+\]
+For the inequality use the retained bound
+\(\tau(m)\sqrt m/\sigma(m)<(15/2)m^{-1/3}\) and
+\(b5^{-b/6}<7/5\). The latter is a finite sixth-power check
+at \(b=1,2,3,4\); later ratios are bounded by
+\((5/4)^6/5<1\).
+
+The selected shell has baseline
+\(C=(4/3)d_e(2\cdot5^b)\sigma(m)\) and size at least
+\(C(1-2E_b)\). At inert auxiliary primes the same orbit mass
+argument gives bad count at most \(C(\mu_p+3E_b)\).
+If an inert prime divides the target, direct division of both
+blocks gives the same bound, with the local five selection
+unchanged. Five has already been removed by the positive
+correspondence \(S_b\) and is not a fine auxiliary level.
+
+For the large inert primes use the same lattice estimate
+\(8M(N)N/p^2\). Relative to \(C\), its coefficient is now
+at most \(6M(N)\), since
+\(3\cdot2^e/d_e\le6\). Also \(M(N)\le9n^{1/6}\).
+A sufficient condition is therefore
+\[
+ B+E_b(2+3\Pi(P))+6M(N)T(P)<1.                            \tag{F5.10}
+\]
+Take \(P=n^{1/4}\), and insert the previously proved prime
+progression bounds. The left side is less than
+\[
+ \frac1{16}+\frac{117}{5}n^{-1/12}+384n^{-1/3}.
+\]
+For \(n\ge2^{64}\), it is at most
+\[
+ \frac1{16}+\frac{117}{200}+\frac{384}{2^{21}}
+                    <\frac34.                           \tag{F5.11}
+\]
+Thus at least \(C/4\ge(2/3)d_en\) coordinate points survive.
+Their two norms are positive, dyadically primitive, five-units
+and free of inert factors, hence primitive principal values by
+the \(C_2\) genus criterion. Dividing by the witness bound
+\((2M(N))^2\le324n^{1/3}\) gives at least
+\(d_en^{2/3}/486>N^{2/3}/1000\) ordered numerical-value pairs.
+Finally \(N\ge2^{66}\) implies \(n\ge2^{64}\).
+This proves the five-divisible assertion; combining it with
+CN2EffectiveUnit5 proves CN2EffectiveAll.
+
+The [exact five-divisible checker](verify_primitive_norm_minus20_five_divisible.py)
+enumerates all local integral right-unit cosets through \(b=5\)
+by Hermite-normal lattice chains, independently authenticates
+the edge-distance and radical partitions, checks the distance
+recurrences on an explicit 7811-edge tree, and verifies the
+rational infinite-range inequalities. It does not execute the
+global spectral proof. A separate internal reviewer reconstructed
+the local and global operator argument, including both compact
+sectors and the norm-character interface, and independently
+replayed these finite checks. No external human review, formal
+verification or historical-priority conclusion is asserted.
+
+## The exact residual completion criterion
+
+Put B=2^24 and T=2^66. Given CN2Finite and CN2EffectiveAll, the
+affirmative exact formula
+
+    P+P={N>=2:N mod8 in {2,3,4,6,7}} minus {3,4}
+
+is equivalent to representing every locally admissible N in the finite
+interval B<N<T.
+
+The forward implication restricts the exact formula to this interval;
+neither 3 nor 4 belongs to it. Conversely, partition all targets into
+N<=B, B<N<T, and N>=T. The first range is CN2Finite, the middle range
+is precisely the residual assertion, and the last is CN2EffectiveAll.
+The primitive residue table proves impossibility outside the five stated
+classes, and the bounded certificate already checks the two exceptions.
+This proves both directions. The residual assertion is established
+by the sharper reduced-core descent and finite completion below.
+
+The completion does not scan this entire interval up to T: structural
+descent reduces it to cores below \(2^{29}\), and exact coverage to
+that smaller bound supplies the remaining finite input.
+
+
+## Exact completion by reduced cores and atomic seeds
+
+The argument below completes Theorem CN2Exact. Its exact finite
+support is [the completion checker](verify_primitive_norm_minus20_completion.py)
+and [the separate full2^29 scan receipt](primitive_norm_minus20_checks_2_29.json).
+
+Let \(P=P_{-20}\), let \(\mathcal I\) consist of primes
+\(11,13,17,19\pmod{20}\), and call a split prime principal
+if it is \(1,9\pmod{20}\), nonprincipal if it is
+\(3,7\pmod{20}\). The terms refer to the proved \(C_2\)
+ideal-class criterion, not just quadratic splitting.
+
+### 1. Exact multiplier descent and its exceptional cores
+
+Let \(\mathcal Q\) be the positive integers supported on split
+primes and having \(\chi_{-4}(q)=1\). The value criterion CN2.3
+implies
+\[
+                         qP\subset P\quad(q\in\mathcal Q).
+                                                               \tag{C1}
+\]
+Indeed multiplication introduces no inert factors, leaves the
+ramified valuations at two and five unchanged and preserves the
+genus sign. This is a numerical-value assertion; no fixed choice
+of a coordinate multiplier is required. Every \(q\in\mathcal Q\)
+is \(1\) or \(5\pmod8\), so multiplication by \(q\) preserves
+the five admissible target residue classes, in both directions.
+
+Every positive integer has a factorization \(N=cq\),
+\(q\in\mathcal Q\), where the reduced core has the form
+\[
+ c=2^e5^b m,\quad
+ m=\prod_{r\in\mathcal I}r^{a_r}
+     \quad\hbox{or}\quad
+ m=p\prod_{r\in\mathcal I}r^{a_r},                         \tag{C2}
+\]
+with \(p\) a single nonprincipal split prime, to exponent one.
+To construct it, strip all principal split primes; pair off all
+nonprincipal split prime factors, counted with multiplicity,
+retaining one factor if their total multiplicity is odd.
+All stripped factors together have genus sign one. If \(N\)
+is locally admissible, then so is \(c\), and \(e=0,1,2\).
+
+The multiplicative monoid \(\mathcal Q\) is generated by the
+following atoms: a single principal split prime, or a product
+\(pq\) of two nonprincipal split primes, allowing \(p=q\).
+This follows by the same pairing of prime factors. Consequently,
+the exceptional cores \(c=3,4\) require only the seed families
+\[
+       3p,\ 4p\quad(p\text{ principal split prime}),
+ \qquad 3pq,\ 4pq\quad(p,q\text{ nonprincipal split primes}).
+                                                               \tag{C3}
+\]
+If all these seeds are represented, every \(3q,4q\) with
+\(q\in\mathcal Q\setminus\{1\}\) is represented: choose one
+atom \(a\mid q\), use the seed \(ca\), and multiply its two
+values by \(q/a\in\mathcal Q\) using (C1). This addresses the
+core exceptions, which cannot simply be discarded in a descent.
+
+### 2. A sharper all-odd binary lattice bound
+
+For every real \(X\ge0\),
+\[
+ S_{oo}(X)=\#\{x,y\text{ odd}:0<x^2+5y^2\le X\}
+                                  \le\frac23X.             \tag{C4}
+\]
+For a fixed odd row \(y\), the number of odd \(x\) is at most
+\(f(y)+1\), where \(f(y)=\sqrt{\max(X-5y^2,0)}\).
+The count of positive odd integers at most \(u\) is at most
+\((u+1)/2\). The layer-cake formula therefore gives
+\[
+ 2\sum_{y>0\ {\rm odd}}f(y)
+ =\int_0^{\sqrt X}2\#\left\{y>0\ {\rm odd}:
+                    y\le\sqrt{(X-t^2)/5}\right\}\,dt
+ \le\frac{\pi X}{4\sqrt5}+\sqrt X.
+\]
+The doubled number of nonempty positive odd rows is at most
+\(\sqrt{X/5}+1\). Adding those row-count errors yields
+\[
+ S_{oo}(X)\le\frac{\pi X}{4\sqrt5}
+                       +(1+1/\sqrt5)\sqrt X+1.             \tag{C5}
+\]
+For \(X\ge36\), divide by \(X\), use
+\(\pi<22/7\), \(\sqrt5>20/9\), and note that both remaining
+terms decrease. At 36 the upper ratio is
+\(99/280+29/120+1/36<2/3\). For integer \(1\le X\le35\),
+the only positive all-odd norms are \(6,14,30\), each with four
+signed points. This proves the initial table, and flooring extends
+the bound to real \(X\).
+
+In the \(e=2\) selected shell both binary pairs are all odd.
+For an inert prime \(p\), a divisible block is \(p\) times a
+nonzero all-odd pair. Counting it with (C4), the other block
+with \(r_Q(t)\le2M(N)\), and both positions, gives
+\[
+                  b_p(N)\le\frac83 M(N)N/p^2.              \tag{C6}
+\]
+Thus the large-inert coefficients relative to the already proved
+spectral baselines are now:
+
+| Target family | \(e=0\) | \(e=1\) | \(e=2\) |
+|---|---:|---:|---:|
+| \(5\nmid N\) | 6 | 6 | 4 |
+| \(5\mid N\), positive nonradical five-selection | 3 | 3 | 2 |
+
+Only the \(e=2\) coefficient changes. The other local, character
+and selected-shell estimates in the retained proof are unchanged.
+
+### 3. Uniform Euler error on reduced cores
+
+For \(m\) in (C2),
+\[
+ E(m)=\frac{\tau(m)\sqrt m}{\sigma(m)}
+                              <\frac{61}{20}m^{-1/3}.      \tag{C7}
+\]
+For inert-supported \(m\), the sixth power of
+\(E(m)m^{1/3}\) is bounded by the finite product over
+\(r<64\), \(r\in\mathcal I\), of the maxima of
+\((a+1)^6r^{5a}/\sigma(r^a)^6\) for \(0\le a\le6\).
+Larger primes use \(a+1\le2^a\); subsequent exponent ratios
+are less than \((8/7)^6/3<1\). An optional nonprincipal prime
+to exponent one contributes
+\(2p^{5/6}/(p+1)\). Its sixth power is
+\(64p^5/(p+1)^6\). This increases up to the real point five
+and decreases thereafter, so among the admissible primes it is
+maximal at seven, after comparison with three.
+
+The exact resulting product is
+\[
+ \frac{70488980893575774434725295714811315058601}
+      {87796383884751438569015630364672000000}
+                                           <(61/20)^6.     \tag{C8}
+\]
+The corresponding root is approximately 3.04865; the proof uses
+the rational sixth-power inequality.
+
+For a five-divisible core, write \(n=5^bm\), \(b\ge1\).
+The already proved bound on the positive local correspondence
+gives normalized error
+\[
+ E_b\le2b5^{-b/2}E(m)<\frac{427}{50}n^{-1/3}.             \tag{C9}
+\]
+Here \(b5^{-b/6}<7/5\) is the retained sixth-power certificate.
+
+### 4. Exact finite envelopes and the analytic intervals
+
+Let \(R=65536\), \(D=2^{64}\). Sieve every prime through \(R\)
+exactly. For any integer \(P<R\), set
+\[
+ V(P)=D^{-1}\sum_{\substack{P<p\le R\\p\in\mathcal I}}
+                   \left\lceil D/p^2\right\rceil
+                              +\frac1{5R}+\frac4{R^2}.
+\]
+The four progression tails prove \(V(P)\ge T(P)\).
+Rounding \(2/[p(p-1)]\) upwards in the same way through \(R\),
+then adding \((5/2)(1/(5R)+4/R^2)\), gives
+\[
+ B\le B_*=
+ \frac{481979897312363445}{9223372036854775808}<53/1000.
+                                                               \tag{C10}
+\]
+The factor \(5/2\) majorizes \(2p/(p-1)\) for all remaining
+primes. These tails are proved inequalities, not prime omissions.
+
+To compute \(M(X)\) exactly up to \(2^{52}\), enumerate
+nonincreasing exponents on initial segments of the split primes.
+Replacing larger split primes by smaller ones lowers the integer
+cost without changing the divisor product. Swapping exponents
+\(a<b\) at primes \(p<q\) likewise lowers cost. Hence this
+enumeration loses no maximizer. The initial primes are
+\(3,7,23,29,41,43,47,61,67,83,89\); their product exceeds
+\(2^{52}\), and \(3^{65}>2^{52}\). The complete recursion has
+1439 states, including its root. Sorted costs with prefix maxima
+give the exact envelope at each interval endpoint.
+
+For \(2^k\le n<2^{k+1}\), set
+\(M_{e,k}=M(2^e(2^{k+1}-1))\). In the five-unit case
+\(n=m\), put
+\(\varepsilon_k=(61/20)/\lfloor\sqrt[3]{2^k}\rfloor\);
+in the five-divisible case put
+\(\varepsilon_k=(427/50)/\lfloor\sqrt[3]{2^k}\rfloor\).
+Use the table's coefficient \(L_e\), take
+\[
+ P=\min(R-1,\lfloor\sqrt{L_eM_{e,k}/(3\varepsilon_k)}\rfloor),
+\]
+and verify the following rational inequalities:
+\[
+ B_*+\frac15+\varepsilon_k(24/5+3\Pi(P))
+                             +L_eM_{e,k}V(P)<1            \tag{C11}
+\]
+in the five-unit case, and
+\[
+ B_*+\varepsilon_k(2+3\Pi(P))
+                             +L_eM_{e,k}V(P)<1            \tag{C12}
+\]
+in the five-divisible case. The small-prime count is exact. The
+square-root cutoff is chosen for efficiency only; every asserted
+certificate is checked as an exact fraction.
+
+The script verifies all intervals \(k=28,\ldots,49\) for
+\(e=0,1\), and \(k=27,\ldots,49\) for \(e=2\), in both
+five-adic families. The smallest margin occurs for the
+five-divisible \(e=1,k=28\) row and exceeds 0.00148.
+
+For the infinite end \(n\ge2^{50}\), use \(P=n^{1/4}\),
+\(M(N)\le9n^{1/6}\), and the elementary progression bounds.
+The five-unit left side is at most
+\[
+ \frac{21}{80}+\frac{1263}{100}n^{-1/12}
+                      +\frac{12447}{50}n^{-1/3},
+\]
+and the five-divisible left side is at most
+\[
+ \frac1{16}+\frac{2631}{250}n^{-1/12}
+                       +\frac{4408}{25}n^{-1/3}.
+\]
+Since \(n^{1/12}>35/2\), \(n^{1/3}\ge2^{16}\), the
+corresponding rational upper bounds are
+\[
+ \frac{113313213}{114688000}<1,\qquad
+ \frac{23889577}{35840000}<1.                              \tag{C13}
+\]
+This completes the infinite end independently of any truncated
+\(M\)-envelope. The maximum finite envelope input is below
+\(2^{52}\), as required by its enumerated domain.
+
+Every locally admissible reduced core \(c\ge2^{29}\) therefore
+belongs to \(P+P\): if \(e=0\), then \(n=c\ge2^{29}\);
+if \(e=1\), then \(n\ge2^{28}\); if \(e=2\), then
+\(n\ge2^{27}\). These are exactly the certified intervals
+and their infinite continuation.
+
+### 5. Closing every atomic exception seed
+
+For a seed \(N=3p\) or \(3pq\), its odd cofactor has at most
+three prime factors counted with multiplicity. Thus
+\(\tau(N)\le8\), even if a factor equals three or repeats,
+and \(E(N)\le8/\sqrt N\) since \(\sigma(N)\ge N\).
+For a seed \(N=4p\) or \(4pq\), its odd cofactor has at
+most two prime factors, so \(E(N/4)\le4/\sqrt{N/4}
+=8/\sqrt N\). All seeds are prime to five and locally
+admissible. This verifies the hypotheses of the same retained
+spectral sieve without assuming anything about the size or
+individual classes of the primes beyond their seed definitions.
+
+For \(2^k\le N<2^{k+1}\), \(24\le k\le29\), take
+\(\varepsilon_k=8/\lfloor\sqrt{2^k}\rfloor\),
+\(M_k=M(2^{k+1}-1)\), and the same cutoff formula. Use
+\(L=6\) at odd seeds and \(L=4\) at the \(e=2\) seeds.
+The twelve exact inequalities (C11) all hold; the largest
+left side is less than 0.578. Their complete fractions are
+in the receipt.
+
+For \(N\ge2^{30}\), take \(P=N^{1/3}\). The sieve left
+side is at most
+\[
+ \frac{21}{80}+\frac{66}{5}N^{-1/6}
+                         +\frac{1272}{5}N^{-1/2}
+ \le\frac{13983}{20480}<1.                               \tag{C14}
+\]
+This follows from \(L\le6\), \(M(N)\le7N^{1/6}\) and the
+same four-progression tails. It completes every large seed.
+Smaller seeds are covered by CN2Finite, since their targets
+are admissible and strictly exceed both 3 and 4. Thus all
+four atomic seed families (C3) are globally represented.
+
+### 6. Finite completion and the exact theorem
+
+Given the retained finite scan through \(2^{24}\), (C1)--(C14)
+reduce the complete exact classification to the following finite
+assertion alone:
+
+    Every locally admissible reduced core c with 2^24<c<2^29
+    belongs to P+P.
+
+It is also sufficient to check every locally admissible target
+in that interval. Conversely the proposed exact classification
+implies either finite assertion. For the sufficiency direction,
+factor an arbitrary target as \(cq\) using (C2). For \(c\)
+other than 3 or 4, use CN2Finite, the finite bridge or the proved
+reduced-core large range, and then (C1). For \(c=3,4\), either
+\(q=1\), giving the actual exceptions, or use an atom and
+the completed seeds. No locally admissible core equals one.
+
+This does **not**, by itself, prove that every arbitrary target
+\(N\ge2^{29}\) is represented: its reduced core can still lie
+in that smaller finite interval. It does prove the stated
+equivalence for completing the exact formula. The completion
+checker performs no large finite sumset scan; the next independent
+finite input supplies that part.
+
+**Proposition CN2Finite29.** For every \(2\le N\le2^{29}\),
+the equivalence stated in CN2Exact holds. The unchanged
+[bounded checker](verify_primitive_norm_minus20.py), run with
+`--bound 536870912`, compares every primitive coordinate/gcd flag
+with the independently computed splitting/genus flag through that
+bound. Its 672 genuine primitive-value anchors at most 5000 cover
+every locally admissible target except 3 and 4. The exhaustive
+residual scan confirms those two actual exceptions. The
+[new receipt](primitive_norm_minus20_checks_2_29.json) records
+335544320 locally admissible targets, 335544318 represented targets,
+zero forbidden targets covered, the two residuals, complete flag
+equality and exact coverage hashes. The earlier \(2^{24}\) receipt
+and the checker's bytes are preserved.
+
+CN2Finite29 verifies the finite assertion above. Every reduced core
+is therefore either represented or one of 3 and 4; all nontrivial
+class-zero multiples of those two cores are represented by the
+proved atomic seeds. The multiplier descent covers every target,
+and the primitive residue table excludes the other three classes.
+This proves Theorem CN2Exact.
+
+Two separate internal reviewers reconstructed (C1)--(C14), including
+the exceptional-core seed argument, all-odd lattice estimate, Euler
+maximum at seven, envelope completeness, interval normalization and
+infinite continuations. They independently replayed the deterministic
+completion packet. The full \(2^{29}\) scan was executed separately
+and its original receipt was retained. These are internal written-proof
+review and exact computation; external human review, formal verification
+and historical priority are not claimed.
