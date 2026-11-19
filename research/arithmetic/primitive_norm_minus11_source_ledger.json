@@ -55,12 +55,26 @@
     }
   ],
   "spectral_dependency": {
-    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
-    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "path": "../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "3bff8d1613a99501b908aef6a45d28568f96dc5ebaed623193a36e829e18bc97",
     "scope": "Reuse the proof argument, not its class-number-one theorem outside its scope: all-ideal normalization; strong approximation; Jacquet-Langlands Theorem14.4 and Section5 Proposition5.20; Deligne Formes modulaires et representations l-adiques Theorems4.9,5.1 and La conjecture de Weil.I Theorem1.6.",
     "new_hypotheses_checked": "Discriminant11 maximal order; retain all ideal classes with Haar/inverse-unit mass; injectivity of every projective unit group at odd inert p>=7 and11; exactly two global norm characters; trivial infinite type; every Hecke index coprime to11 and its added level prime. Both finite-quotient correlations and the target-dividing inert-prime branch are proved in the new note.",
     "explicit_two_class_check": "Direct right-ideal and complete norm4 unit calculation gives the two coarse classes, projective stabilizers2,3, and probabilities3/5,2/5. Exact A2,A3,A4 and ten-point radical T2 kernel are derived in the proof. The source row/column convention mismatch is explicitly excluded; the full all-index spectral estimate remains imported.",
-    "direct_self_adjoint_correspondence": "For split maximal index primes, elementary divisors give mI subset J for each index-m ideal flag J subset I. Flag reversal to mI subset J is involutive modulo central scaling. At auxiliary primes J_p=I_p and identification mI~I changes markings only by the projectively trivial scalar m^-1. This proves fine kernel symmetry and its inverse-unit coarse pushforward directly."
+    "direct_self_adjoint_correspondence": "For split maximal index primes, elementary divisors give mI subset J for each index-m ideal flag J subset I. Flag reversal to mI subset J is involutive modulo central scaling. At auxiliary primes J_p=I_p and identification mI~I changes markings only by the projectively trivial scalar m^-1. This proves fine kernel symmetry and its inverse-unit coarse pushforward directly.",
+    "historical_source": {
+      "repository_path_at_review": "unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+      "git_commit": "217ee1515735a0cc0c607440cf174c39b1f77d48",
+      "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+      "url": "https://github.com/royvanrijn/jacobian-research/blob/217ee1515735a0cc0c607440cf174c39b1f77d48/unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex"
+    },
+    "current_proof_closure": [
+      {
+        "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+        "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+        "role": "Shared classical Hecke transfer cited by the current spectral lemma."
+      }
+    ],
+    "source_identity_scope": "Current file locations and digests after paper consolidation and relocation. The original reviewed source digest is preserved under historical_source; the spectral statement is unchanged, while its general proof now resides in the shared Hecke-transfer section. No new mathematical review is asserted."
   },
   "effective_scope": {
     "global_onset": 2361183241434822606848,

@@ -702,39 +702,45 @@ No general every-target distinct-value leading asymptotic was identified in the 
 
 ## Publication scope
 
-The primitive-norm publication plan consists of the following two
-papers. These are proposed article scopes; no new manuscript bundle,
-submission or external review is asserted by this plan.
+The two companion papers have been submitted to Hexagon and are pending
+moderation: [pointwise correlations](../../results/pointwise-binary-splitting-semigroups/)
+(`2611.00672`) and [exact sumsets](../../results/eisenstein-restricted-prime-sums/)
+(`2611.00673`). Their respective reserved Zenodo DOIs are
+`10.5281/zenodo.24371355` and `10.5281/zenodo.24371462`; this reservation does
+not establish public deposit. Submission does not change their mathematical
+dependencies or establish external review.
 
-### Paper 1: Exact Sumsets of Primitive Quadratic Norms
+### Exact companion: Exact Sumsets of Primitive Quadratic Norms
 
-The main result is the three exact primitive self-sum identities.
+The main result is the four exact primitive self-sum identities.
 For \(P_D=\{Q_D(x,y)>0:\gcd(x,y)=1\}\), they are:
 
 | \(D\) and \(Q_D\) | Exact sumset | Admissible exceptions |
 |---|---|---|
+| \(-3,\ x^2+xy+y^2\) | \(\{N\ge2:2\mid N,\ N\not\equiv0,12\pmod{18}\}\) | none |
 | \(-7,\ x^2+xy+2y^2\) | \(\{N\ge2:49\nmid N\}\setminus\{7,77,203\}\) | \(7,77,203\) |
 | \(-8,\ x^2+2y^2\) | \(\{N\ge2:16\nmid N\}\) | none |
 | \(-11,\ x^2+xy+3y^2\) | \(\{N\ge2:2\mid N,\ 121\nmid N\}\) | none |
 
-The article should explain how the primitive local obstructions,
+The article explains how the primitive local obstructions,
 stronger split-core identities and exceptional-quotient descent
 produce these complete sets. Its central contribution is the
 exact classification and the explicit proof joining finite
 certificates to an infinite sieve, including the exceptional
 targets in discriminant \(-7\).
 
-Use the three current proofs as the authoritative mathematical
-sources: [discriminant -7](PRIMITIVE_NORM_MINUS7_EXACT.md),
+The Eisenstein proof is retained in the
+[exact companion](../../results/eisenstein-restricted-prime-sums/sections/primitive-sumsets.tex).
+The three additional canonical research proofs are [discriminant -7](PRIMITIVE_NORM_MINUS7_EXACT.md),
 [discriminant -8](PRIMITIVE_NORM_MINUS8_EXACT.md) and
 [discriminant -11](PRIMITIVE_NORM_MINUS11_EFFECTIVE.md).
 The [common classification record](PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md)
 distinguishes these global identities from the bounded lists for
 other discriminants.
 
-A coherent proof order is:
+The proof separates the following tasks:
 
-1. State all three identities and prove the exact local exclusions.
+1. State all four identities and prove the exact local exclusions.
 2. Give the primitive-norm and split-core reductions, including the
    different roles of 2 and the ramified prime.
 3. Present the shared quaternionic/spectral sieve, preserving each
@@ -744,9 +750,9 @@ A coherent proof order is:
 5. Complete the exceptional-quotient descent and verify the actual
    exclusions \(7,77,203\).
 
-The certificate supplement should contain the existing exact inputs,
-verifiers and receipts: complete finite coverage through \(2^{24}\),
-\(2^{27}\) and \(2^{25}\), respectively; 257, 107 and 35 intermediate
+The certificate supplement contains the existing exact inputs,
+verifiers and receipts: complete finite coverage for \(-7,-8,-11\) through
+\(2^{24}\), \(2^{27}\) and \(2^{25}\), respectively; 257, 107 and 35 intermediate
 interval certificates; the additional 17 higher bins in the \(-7\)
 proof; and the precise handoffs to the proved infinite estimates.
 The mathematical proof must explain why those finite domains and
@@ -755,15 +761,21 @@ prove the imported spectral theorems.
 
 The explicit \(N^{2/3}\) value-count lower bounds can be secondary
 corollaries, with their recorded cutoffs and constants. They must
-remain distinct from Paper 2's sharp \(NJ_D(N)/\log N\) scale.
+remain distinct from the flagship's sharp \(NJ_D(N)/\log N\) scale.
 The exact \(-19,-43,-67,-163\) exception lists remain bounded
 computations and are not added to the main theorem.
 
 ### Flagship: Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 
-The flagship centers on the pointwise binary splitting theorem. Its
+The flagship opens with CK/Smilansky fixed-shift asymptotics for ordinary
+quadratic values and classical genus invariance for primitive values.
+Its central mechanism is the shared sparse-indicator/arithmetic-model
+comparison, with separate fixed-shift and reflected-target estimates.
+The fixed subgroup and prime-coset applications include the explicit
+`C12+C12` main term. Its
 [all-order sharp value-count theorem](PRIMITIVE_NORM_ALL_ORDERS.md)
-and the form-genus extension are substantial arithmetic applications.
+and common-field form-genus extension retain their separate classical
+and recent-input proof routes.
 For every fixed imaginary quadratic order, with arbitrary ring class
 group and conductor, every sufficiently large pair-primitive locally
 admissible target has
@@ -803,14 +815,14 @@ conductors in one imaginary quadratic field, with separate Picard groups
 and one-sided marking; it adds no joint ring-class prime input, no
 cross-discriminant genus identification and no different-field claim.
 
-A coherent exposition can begin with the genuine individual class
-failures at [discriminant -23](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md),
-then pass through the periodic genus filters at
+The arithmetic precursors include the genuine individual class
+failures at [discriminant -23](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md)
+and the periodic genus filters at
 [discriminant -20](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) and
 [discriminant -56](PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md).
 The [prime-discriminant odd-class theorem](PRIMITIVE_NORM_ODD_CLASS_GROUPS.md)
 and [all-maximal-order theorem](PRIMITIVE_NORM_MAXIMAL_ORDERS.md)
-are proved precursors. The general proof can then present the
+are proved precursors. The general proof presents the
 ring-class norm invariant, local value profiles, finite-character
 positive unweighting and lower-order class-error comparison.
 
@@ -825,9 +837,9 @@ a new nonabelian distribution estimate.
 The [pointwise correlation theorem](PRIMITIVE_NORM_BINARY_CORRELATION.md)
 now strengthens this to an explicit leading asymptotic, using the
 specified recent graph and fixed zero-free-half-plane theorems.
-Keep those analytic inputs visible in any manuscript statement of its
-proof method. The unconditional order-of-magnitude argument remains
-an independently useful, older-input result.
+Those recent analytic inputs remain dependencies of the leading asymptotic.
+The unconditional order-of-magnitude argument remains an independently useful,
+older-input result.
 Numerical general cutoffs and complete global exception lists for
 \(-20,-23,-56\) also remain open. Historical priority and specialist
 review of the exact value-count theorem are separate publication tasks.
@@ -838,14 +850,14 @@ The separately primitive quaternary theorem belongs in supporting
 theory. Include the needed parts as an appendix or background
 section of the relevant paper. A separate concise methodological
 note is an option if its independent purpose is clear; it is not
-the headline breakthrough of either planned paper.
+the headline breakthrough of either companion paper.
 
 Credit [Baker's convergent-sieve proof and its explicit first-power
 adaptation](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md#explicit-first-power-adaptation-of-baker),
 the older four-square coprimality work, and Waibel's theta estimate
 where used. Genus-invariant coordinate convolution is an immediate
 consequence of that theory. Neither a coordinate asymptotic nor
-qualitative existence establishes Paper 2's sharp value counts.
+qualitative existence establishes the flagship's sharp value counts.
 
 ### Pointwise leading terms and the scope of the new application
 
@@ -905,9 +917,9 @@ to the weight in their theorem. The comparison now concerns the same
 coprime count, its leading constant, quantitative remainder and analytic
 inputs; it does not certify first-result status.
 
-Historical priority, specialist mathematical review and publication
-remain separate from the completed internal manuscript preparation for
-the flagship and exact companion. No first-result claim follows from the absence
+Historical priority, specialist mathematical review and public release
+remain separate from the pending Hexagon submissions of the flagship and
+exact companion. No first-result claim follows from the absence
 of a matching source in the current searches.
 
 ## Evidence and limits

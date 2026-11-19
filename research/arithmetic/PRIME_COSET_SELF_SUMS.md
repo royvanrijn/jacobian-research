@@ -58,9 +58,9 @@ The full-group case `K=G` is elementary: use the exact unit-indicator
 model and count the fixed residue classes. The decaying rough-model
 bounds in the nontrivial application checks concern `rho<1`.
 
-The standalone proof is [the flagship coset section](../../unpublished/pointwise-binary-splitting-semigroups/cosets.tex),
+The standalone proof is [the flagship coset section](../../results/pointwise-binary-splitting-semigroups/cosets.tex),
 Theorem `thm:coset`. Its analytic comparison is Theorem
-`thm:model-comparison` in [the shared comparison section](../../unpublished/pointwise-binary-splitting-semigroups/comparison.tex).
+`thm:model-comparison` in [the shared comparison section](../../results/pointwise-binary-splitting-semigroups/comparison.tex).
 The proof uses no new energy estimate, graph construction, or
 prime-distribution theorem. It is an application of the same exact
 imported statements, not an independent validation of their proofs.

@@ -2,12 +2,12 @@
   "result": "PASS",
   "scope": "Exact finite coefficient, normalization, envelope and inequality checks. No new target scan, no Hecke theorem verification, no inert-core interval coverage and no complete exception theorem.",
   "provenance": {
-    "checker_sha256": "1aaed579e0be56f957280539f887de3889f8143f973d208e14d958d73fff1b78",
+    "checker_sha256": "b22661f00532473796aee0ae3c4ff6b28360e4caa7448643bfcfbc4a9777920e",
     "source_sha256": {
-      "research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md": "c176ed7db7dbd72712a602ac7d58c64949d8e36abba9382b610188916cd47328",
-      "research/arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md": "a48b5c151a947f6eeb88bca1b0d2dbb8059da63e4fc273d893e2cf8258b02a60",
-      "unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex": "ebfaf83394592ee9b2e929dd5f82bd19118a535807fb69bccd3e0d23b2ba890c",
-      "unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex": "6b29022871991b8e061fd3f0c16c9b515da30820f1e0222e1ad58eb9dbf06e3b",
+      "research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md": "53b4ed1a95fe411a38dca1f50e84ee20ffafdb9d039897e6a61dae0d06314729",
+      "research/arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md": "780c7a6ee115b3a9141cd47a79051eab914a22cf17be66f354f8f5df93729876",
+      "results/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex": "f43ef28740429a634a36385011e24b02d476382dd19e56cfdc3367c2ef8ec810",
+      "results/eisenstein-restricted-prime-sums/sections/mixed-local.tex": "827fe085615d352d4c693c6096856bca6f60a265075d59c8814e99e620766ae9",
       "research/arithmetic/eisenstein-restricted-prime-sums/research_notes/literature_balanced_polynomial_receipt.json": "c97f24de35754528a527881372bea75262311d53be1c8e1232764d654efd710c",
       "research/arithmetic/eisenstein-restricted-prime-sums/receipts/elementary_constants_receipt.json": "db4331593f09f3a42dd761d97e7145827a7a51cc9956b94cfb8d3d94e4bdc1f9",
       "research/arithmetic/eisenstein-restricted-prime-sums/receipts/python_finite_receipt.json": "49315747aa0f2b536ce5fc6d67314465a882f948764e12d5c4a4006a27937a2e"

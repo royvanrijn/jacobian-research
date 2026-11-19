@@ -55,7 +55,7 @@ All targets at which this reduction is used are prime to \(3\).
 Only the two units \(\pm1\) reduce to scalars at this factor, so the
 kernel of \(U\to\Gamma\), where \(\Gamma\) is the image in \(G\), is
 exactly \(\{\pm1\}\). This includes the case with no variable level.
-[Ramified reduction and its six cosets](../../unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex).
+[Ramified reduction and its six cosets](../../results/eisenstein-restricted-prime-sums/sections/mixed-local.tex).
 
 **Lemma (directional projection).** Let \(\rho=\operatorname{Sym}^{2k}\)
 of \(\mathrm{SU}(2)\), \(k\ge0\). This representation is trivial on the central signs and

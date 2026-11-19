@@ -20,5 +20,7 @@ SOURCE_DATE_EPOCH=1794960000 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -in
 
 The proof combines [moving-window estimates](../../research/arithmetic/EISENSTEIN_MOVING_WINDOWS.md),
 local density recurrences and a cofactor sieve. The
-[exact sumset paper](../../unpublished/eisenstein-restricted-prime-sums/)
-treats existence at every admissible target.
+[exact companion](../eisenstein-restricted-prime-sums/) gives complete primitive
+norm sumsets at four discriminants. The [pointwise companion](../pointwise-binary-splitting-semigroups/)
+develops broader correlation asymptotics and common-field genus comparison.
+Both companion submissions are pending at Hexagon.

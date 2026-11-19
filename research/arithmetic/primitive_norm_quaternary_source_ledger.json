@@ -105,11 +105,25 @@
   ],
   "dyadic_scope": "Exact unrestricted formulas (29)\u2013(30) count only coordinate primitivity at 2 for Q=x^2+2y^2; odd inert prime obstructions are not removed. The q^0 through q^2 and q^0 through q^8 Sturm certificates establish their completeness under the sourced modularity statements.",
   "minus8_spectral_dependency": {
-    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
-    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "path": "../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "3bff8d1613a99501b908aef6a45d28568f96dc5ebaed623193a36e829e18bc97",
     "scope": "Comparison source locating classical imports; the specialization is now expanded directly next to (33) and in the audit report.",
     "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption.",
-    "finite_normalizer_correlation": "The bridge directly computes the normalizer indicator mean mu, zero determinant projection, and complementary squared norm mu(1-mu) with uniform finite probability. Base-orbit averaging gives <u,T_Nu>=mu*b_p(N)/4; constant degree c_e*sigma(m) and complementary bound c_e*tau(m)*sqrt(m) yield (35) with no dyadic character term. A_e acts on the determinant character by (2/p)^e*c_e; that projection is zero for the indicator."
+    "finite_normalizer_correlation": "The bridge directly computes the normalizer indicator mean mu, zero determinant projection, and complementary squared norm mu(1-mu) with uniform finite probability. Base-orbit averaging gives <u,T_Nu>=mu*b_p(N)/4; constant degree c_e*sigma(m) and complementary bound c_e*tau(m)*sqrt(m) yield (35) with no dyadic character term. A_e acts on the determinant character by (2/p)^e*c_e; that projection is zero for the indicator.",
+    "historical_source": {
+      "repository_path_at_review": "unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+      "git_commit": "217ee1515735a0cc0c607440cf174c39b1f77d48",
+      "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+      "url": "https://github.com/royvanrijn/jacobian-research/blob/217ee1515735a0cc0c607440cf174c39b1f77d48/unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex"
+    },
+    "current_proof_closure": [
+      {
+        "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+        "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+        "role": "Shared classical Hecke transfer cited by the current spectral lemma."
+      }
+    ],
+    "source_identity_scope": "Current file locations and digests after paper consolidation and relocation. The original reviewed source digest is preserved under historical_source; the spectral statement is unchanged, while its general proof now resides in the shared Hecke-transfer section. No new mathematical review is asserted."
   },
   "minus8_effective_scope": {
     "global_onset": 302231454903657293676544,

@@ -1,5 +1,7 @@
 # Exact Sumsets of Primitive Quadratic Norms
 
+Hexagon submission: [hexagon:2611.00673](https://hexagonmath.org/2611.00673), pending moderation. The author reported this submission on 19 November 2026; the public record and uploaded files have not been independently verified.
+
 Reserved Zenodo draft DOI: [doi:10.5281/zenodo.24371462](https://doi.org/10.5281/zenodo.24371462), version 1 (2026). This records the author-supplied reservation, not a verified public deposit.
 
 This edition is shortened from 36 to 34 pages with the same typography and mathematical content. Results are stated at their natural generality; technical proofs and the declared certificate support are retained.
@@ -50,7 +52,7 @@ certificates.
 
 ## Hexagon source package
 
-Upload hexagon-source.zip as the TeX source package. It contains only the
+The local candidate Hexagon TeX source package is hexagon-source.zip. It contains only the
 article TeX files; main.tex is the entry point. It includes no verification
 programs, receipts, metadata or build scripts.
 
@@ -69,7 +71,7 @@ Build and check the upload package with:
 
 The helper uses the recorded reproducible-build environment. The submission
 archive was prepared against [Hexagon author information](https://hexagonmath.org/about);
-preparing it does not upload or submit the paper.
+rebuilding it does not upload or replace a Hexagon submission.
 
 ## Build
 
@@ -168,5 +170,5 @@ Please assess the written argument and the declared supplement together:
    and primitive-norm sumset literature. The adaptation from Howe--Huffman--
    Kohlmeyer--Kruer is attributed; a complete priority audit remains open.
 
-The bundle is prepared for these reviews. No outreach, submission or public
-deposit is part of this preparation.
+These outside reviews remain open after submission. The Hexagon submission
+is pending; no verified public deposit is recorded.

@@ -278,7 +278,7 @@ On the orthogonal complement of \(1,\psi_p\),
                          \|T_m\|\le\tau(m)\sqrt m.         \tag{M11.9}
 \]
 To specify the imported argument, the proof of the
-[Eisenstein spectral lemma](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex)
+[Eisenstein spectral lemma](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex)
 uses the all-ideal correspondence, strong approximation, global
 Jacquet--Langlands, and the weight-two Ramanujan bound. The same proof
 applies on this multi-class quotient: retaining all fibers replaces

@@ -2,10 +2,12 @@
 
 This is the canonical home for the branch's supporting research notes,
 verification programs, receipts and supplied inputs. The
-[unpublished manuscript](../../../unpublished/eisenstein-restricted-prime-sums/README.md)
-contains only paper sources, its PDF, paper records and its generated source
-archive. The relocation preserves every moved file's bytes and mathematical
-scope; it is not a new calculation or an assurance upgrade.
+[exact primitive-norm companion](../../../results/eisenstein-restricted-prime-sums/README.md)
+contains the four-discriminant article, PDF, review records and submission
+packages. Its Hexagon submission 2611.00673 is pending. The
+[pointwise companion](../../../results/pointwise-binary-splitting-semigroups/README.md),
+Hexagon submission 2611.00672, is also pending. The companion citations do not
+make the exact classifications depend on the pointwise argument.
 
 ## Research focus
 
@@ -20,16 +22,14 @@ above `2^60`. The residual task is now to cover the all-inert admissible cores
 in `[10^8, 2^60)`, by sharper estimates or an effective finite bridge. This is
 equivalent to the full conjecture; the residual interval remains unresolved.
 
-The secondary direction is additive coverage by splitting-prime semigroups,
-starting with the existing theorem for an abelian splitting semigroup paired
-with a quadratic splitting semigroup. Its exact admissibility conditions,
-counts and proof dependencies are in the
-[subgroup splitting note](../ASYMMETRIC_SUBGROUP_SPLITTING.md). Extending both
-sides to arbitrary splitting conditions is a separate open problem.
-
-The simultaneous `C12+C12` problem and the saved sieve reductions remain open
-background work. They are no longer the primary proof-search target. This change
-of research priority does not change any theorem or review status.
+For fixed abelian subgroup restrictions on both summands, the
+[general splitting theorem](../SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md) now gives
+pointwise leading asymptotics under the explicitly retained zero-free and
+weighted-dilation inputs. This includes `C12+C12` on every sufficiently large
+target `N = 2 mod 12`. The older
+[asymmetric subgroup route](../ASYMMETRIC_SUBGROUP_SPLITTING.md) and its sieve
+reductions retain their independent scopes. Arbitrary prime prescriptions and
+dependent coupled systems are not covered merely by the subgroup theorem.
 
 ## Current mathematics
 
@@ -70,8 +70,10 @@ of research priority does not change any theorem or review status.
 The manuscript proves both exact identities for the positive integers `A`
 whose prime divisors are `1 mod 3`, including `1`: `A+A` is precisely the
 positive `2 mod 6` class, and `A+(3·A)` is precisely the positive `4 mod 6`
-class. Its primitive-norm and higher-sumset consequences retain their original
-scope. The current angular note proves eventual balance. The separate
+class. The companion also proves the exact primitive norm-value sumsets at
+discriminants `-7`, `-8` and `-11`, independently of the pointwise companion.
+Its higher-sumset consequences retain their original scope. The current angular
+note proves eventual balance. The separate
 power-window proof gives every fixed difference exponent `2/3 < theta < 1`, in
 both ordinary and mixed cases, with an explicit onset formula and at least
 `n^(theta-1) R_o(n)/20` coordinate witnesses per orientation. For example,
@@ -100,8 +102,9 @@ the positive Jackson--Parseval construction also verifies the weaker `theta > 6/
 route. The fixed-interval argument separately closes the prime-multiplier
 families and proves balance on all-inert targets above `2^60`. It reduces the
 ordinary exact-exception conjecture to the all-inert interval `[10^8, 2^60)`,
-which remains unresolved. These are research notes; the manuscript
-has not been expanded to include the new power-window theorem.
+which remains unresolved. The [separate window paper](../../../results/eisenstein-pointwise-counts/)
+contains the moving-window value-count results; the exact companion retains
+its classification and certificate scope.
 
 The asymmetric theorem now gives a weighted pointwise asymptotic on EVERY
 sufficiently large target `N = 2 mod 6`, with the first summand in `C12`
@@ -138,10 +141,12 @@ means, including polynomially growing moduli. The new full weighted
 correlation theorem proves the natural lower bound and actual bad-prime
 marginals outside one power-sized exceptional set, including arbitrary target
 valuations and full moving balance intervals. Its fully sifted weighted
-proportion has an exact target-dependent Euler product. The all-target
-versions and every-target binary coverage remain open. The full semigroup variance is now proved for every fixed modulus
-and `5/6 < theta < 1`, including the original `.99` energy target. Every-target
-counts and power-saving full-count variance remain open. The separate
+proportion has an exact target-dependent Euler product. The all-target versions of these particular weighted power-window estimates
+remain open. Unrestricted `C12+C12` coverage and its leading binary count are
+supplied separately by the flagship theorem under its retained recent inputs.
+The full semigroup variance is proved for every fixed modulus and
+`5/6 < theta < 1`, including the original `.99` energy target. Every-target
+power-window counts and power-saving full-count variance remain open. The separate
 modulus-12 lower-count theorem now gives `H/(log X)^(3/2)` pairs outside
 `O(X^(1-10^(-6)))` compatible targets for `H=X^(99/100)`. The general note records the
 separate pointwise, angular, variance and proof-audit campaigns.
@@ -161,7 +166,7 @@ separate pointwise, angular, variance and proof-audit campaigns.
 - `supplied/compute_mixed_certificate.py` is the received implementation;
   `compute_mixed_certificate.py` is the separate canonical witness checker.
 
-The paper's [verification and review record](../../../unpublished/eisenstein-restricted-prime-sums/verification.json)
+The paper's [verification and review record](../../../results/eisenstein-restricted-prime-sums/verification.json)
 retains the existing calculation provenance and manuscript review. Its current
 artifact paths point here. Historical receipts and source hashes were not
 rewritten. A paper source archive may contain distribution copies of the code

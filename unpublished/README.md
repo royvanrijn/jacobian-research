@@ -4,8 +4,6 @@ Drafts and standalone notes with their current review status.
 
 | Paper | Status |
 |---|---|
-| [Pointwise Correlations of Quadratic Form Values and Splitting Semigroups](pointwise-binary-splitting-semigroups/) | draft |
-| [Exact Sumsets of Primitive Quadratic Norms](eisenstein-restricted-prime-sums/) | draft |
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |
 | [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](fixed-map-hasse-failures/) | draft |

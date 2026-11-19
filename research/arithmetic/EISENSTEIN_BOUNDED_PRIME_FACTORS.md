@@ -101,7 +101,7 @@ needed. Let \(\Gamma\) be the diagonal image of the order units. Class
 number one identifies the scalar automorphic quotient with
 \(\Gamma\backslash G\), with counting measure. This is the same
 principalization and stabilizer argument as in
-[the scalar spectral proof](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex),
+[the scalar spectral proof](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex),
 with the intersection of the reduction kernels at the indicated places.
 
 The cuspidal complement has all-ideal Hecke norm at most
@@ -727,7 +727,7 @@ The proof dependencies are
 \]
 The quaternionic inputs and their exact source locators are recorded in
 [EisPower](EISENSTEIN_POWER_SHRINKING_WINDOWS.md) and the
-[scalar spectral proof](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex).
+[scalar spectral proof](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex).
 The prime harmonic input is
 [Loughran--Matthiesen, Lemma 2.4](https://arxiv.org/html/1904.12845v2#S2).
 The composite-level projection, singular-prime recurrence, lower-sieve signs,

@@ -457,7 +457,8 @@
       "relative_error": "With L=log N and ell=loglog N, O(L^(-1/32768) ell^2 + L^(-1) ell^4 + N^(-1/2) tau(N) L^(3/2) ell), hence exponent 1/65536.",
       "written_review": "Root and a separate internal arithmetic agent checked the deduction from the stated uniform theorem, including the shrinking coprimality factor and divisor tail.",
       "manuscript_pdf": {
-        "repository_path": "unpublished/pointwise-binary-splitting-semigroups/paper.pdf",
+        "repository_path": "results/pointwise-binary-splitting-semigroups/paper.pdf",
+        "edition_scope": "Historical reviewed PDF hash and page range; repository_path locates the current paper and does not identify the historical reviewed bytes.",
         "sha256": "00ee9f2aebf6a6b010a0d5a25f857bfb139c9a1ec5afbf5e41a044de352f3321",
         "reviewed_pages": "1-5"
       },

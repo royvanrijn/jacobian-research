@@ -148,7 +148,7 @@ costs, after \(K\) is chosen sufficiently large.
 
 This is the specialization of the model and Lemma
 `lem:coset-centering` in
-[cosets.tex](../../unpublished/pointwise-binary-splitting-semigroups/cosets.tex),
+[cosets.tex](../../results/pointwise-binary-splitting-semigroups/cosets.tex),
 with \(m=4,K=\{1\},a=3\). Invariance follows because multiplying by
 an allowed small prime changes \(A\) and leaves \(v\) unchanged.
 The character is evaluated at \(v\). The size bound follows from

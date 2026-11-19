@@ -6,7 +6,7 @@
   },
   "summary": "CK/Smilansky fixed-shift asymptotics for ordinary values; genus-invariant primitive-value counts for fixed orders in one imaginary quadratic field; and target-uniform splitting-semigroup sums from a shared arithmetic-model comparison.",
   "published": false,
-  "status": "draft",
+  "status": "submission-pending",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
@@ -16,7 +16,7 @@
   "verification_record": "verification.json",
   "verification": "Internal review of the application proof and exact imported theorem interfaces; the complete zero-free and weighted-dilation preprints are dependencies, not independently revalidated here. Separate checks and the independent older-input norm route are recorded in verification.json.",
   "companion": "../eisenstein-restricted-prime-sums/metadata.json",
-  "related_window_paper": "../../results/eisenstein-pointwise-counts/metadata.json",
+  "related_window_paper": "../eisenstein-pointwise-counts/metadata.json",
   "catalogued_on": "2026-11-19",
   "next_steps": [
     "Obtain external specialist review of the shared comparison hypotheses, reflected and fixed-shift frequency estimates, complex-character coset models and quadratic-indicator application, retaining the exact preprint dependencies.",
@@ -66,6 +66,29 @@
     "code_in_submission_archive": false,
     "policy_url": "https://hexagonmath.org/about",
     "policy_checked_on": "2026-11-19",
-    "submission_performed": false
+    "submission_performed": true,
+    "submission_provenance": "Author-reported Hexagon submission; public record and uploaded bytes not verified."
+  },
+  "hexagon": "https://hexagonmath.org/2611.00672",
+  "submission": {
+    "venue": "Hexagon",
+    "identifier": "hexagon:2611.00672",
+    "url": "https://hexagonmath.org/2611.00672",
+    "status": "pending",
+    "reported_on": "2026-11-19",
+    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
+    "public_record_verified": false,
+    "uploaded_files_verified": false,
+    "candidate_local_files": {
+      "pdf": {
+        "path": "paper.pdf",
+        "sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c"
+      },
+      "source_archive": {
+        "path": "hexagon-source.zip",
+        "sha256": "1e30db10753005f780dd87d965c385c71c8eeafe383b07a3fbca2bfb84fbb9de"
+      },
+      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
+    }
   }
 }

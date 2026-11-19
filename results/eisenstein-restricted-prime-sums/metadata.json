@@ -6,7 +6,7 @@
   },
   "summary": "Exact binary primitive norm-value sumsets at discriminants -3,-7,-8,-11, with complete finite certificates and classical quaternionic Hecke proofs.",
   "published": false,
-  "status": "draft",
+  "status": "submission-pending",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
@@ -63,7 +63,8 @@
     "code_in_submission_archive": false,
     "policy_url": "https://hexagonmath.org/about",
     "policy_checked_on": "2026-11-19",
-    "submission_performed": false
+    "submission_performed": true,
+    "submission_provenance": "Author-reported Hexagon submission; public record and uploaded bytes not verified."
   },
   "shortening": {
     "pages_before": 36,
@@ -80,5 +81,27 @@
     "public_deposit_asserted": false
   },
   "companion": "../pointwise-binary-splitting-semigroups/metadata.json",
-  "companion_doi": "10.5281/zenodo.24371355"
+  "companion_doi": "10.5281/zenodo.24371355",
+  "hexagon": "https://hexagonmath.org/2611.00673",
+  "submission": {
+    "venue": "Hexagon",
+    "identifier": "hexagon:2611.00673",
+    "url": "https://hexagonmath.org/2611.00673",
+    "status": "pending",
+    "reported_on": "2026-11-19",
+    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
+    "public_record_verified": false,
+    "uploaded_files_verified": false,
+    "candidate_local_files": {
+      "pdf": {
+        "path": "paper.pdf",
+        "sha256": "2bd8db84d6c3125e8fd9232e020da74a908cfb959e553191b1ef744a0d5ce7c6"
+      },
+      "source_archive": {
+        "path": "hexagon-source.zip",
+        "sha256": "367d5e02f1a41b1700d3d585c82d16f28488c91de64bb7fc9cfc18be3cbd0ff5"
+      },
+      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
+    }
+  }
 }

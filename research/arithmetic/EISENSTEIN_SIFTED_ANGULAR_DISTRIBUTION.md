@@ -4,7 +4,7 @@ Let \(R=\mathbf Z[\omega]\), where \(\omega^2+\omega+1=0\), and put \(N(z)=z\bar
 
 **Theorem EisAngle.** As \(n\) tends to infinity along either class, the unit vectors \((z,w)/\sqrt n\) for \((z,w)\in G_n\), each counted once, become equidistributed in the normalized surface measure on \(S^3\subset\mathbf C^2\). For each fixed interval \(I\subset[0,1]\) of positive length, the proportion with \(N(z)/n\in I\) tends to \(|I|\). For every \(\epsilon>0\), such witnesses give \(\gg_{I,\epsilon} n^{1-\epsilon}\) distinct ordered pairs of positive summand values. In particular, each sufficiently large target in either class admits a decomposition with both summands between \(n/3\) and \(2n/3\).
 
-The proof uses the all-ideal Hecke norm estimate and torus-normalizer averaging for odd inert primes from the unpublished binary classification. It imposes a fixed finite set of local conditions before applying harmonic theta series. A uniform estimate for the primes above that finite set then gives angular equidistribution after the full sieve. [Norm count](../../unpublished/eisenstein-restricted-prime-sums/sections/norm-count.tex), [Hecke lemma and orbit averaging](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex), [odd-component filter](../../unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex), [large-prime and divisor bounds](../../unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
+The proof uses the all-ideal Hecke norm estimate and torus-normalizer averaging for odd inert primes from the exact binary classification. It imposes a fixed finite set of local conditions before applying harmonic theta series. A uniform estimate for the primes above that finite set then gives angular equidistribution after the full sieve. [Norm count](../../results/eisenstein-restricted-prime-sums/sections/norm-count.tex), [Hecke lemma and orbit averaging](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex), [odd-component filter](../../results/eisenstein-restricted-prime-sums/sections/mixed-local.tex), [large-prime and divisor bounds](../../results/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
 
 ## Proposition EisEta. The obstruction at 3
 
@@ -247,7 +247,7 @@ inert prime \(q\), including \(q\mid n\),
  \qquad \mu_q=\frac2{q(q-1)}. \tag{EB2}
 \]
 Here \(M(n)\) is the split-divisor maximum from the
-[elementary estimates](../../unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
+[elementary estimates](../../results/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
 The bounds used below are
 \[
  M(n)\le\frac{15}{8}n^{1/5},\qquad
@@ -388,7 +388,7 @@ It follows that
 \[
  \alpha(n)<\frac{20}{3}n^{-3/10}.
 \]
-The [refined odd scalar estimate](../../unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex),
+The [refined odd scalar estimate](../../results/eisenstein-restricted-prime-sums/sections/mixed-local.tex),
 equation `odd-local`, gives the sharper bad-prime bound
 \(b_q^o(n)/R_o(n)\le\mu_q+(9/4)n^{-3/10}\) on these targets.
 For \(q\mid n\), the exact scaling estimate in (EB2)'s source is
@@ -505,7 +505,7 @@ In particular \(\theta=3/4\) is valid at \(n\ge2^{2^{40}}\). For ordinary balanc
 certificate finds precisely two exceptions, \(8\) and \(44\), below
 \(10^8\). The explicit reduction above now isolates all-inert cores in
 \(10^8\le n<2^{60}\); that interval remains unchecked, so the complete
-exception list is still open. The angular result has internal proof support. External review and priority remain open. [Finite balanced calculation](../../unpublished/eisenstein-restricted-prime-sums/sections/balanced-summands.tex).
+exception list is still open. The angular result has internal proof support. External review and priority remain open. [Finite balanced calculation](../../results/eisenstein-restricted-prime-sums/sections/balanced-summands.tex).
 
 The Gaussian sieve strategy has earlier primary precedents: [Lucia's answer,
 3 September 2013](https://mathoverflow.net/a/141096), works with local forbidden-prime

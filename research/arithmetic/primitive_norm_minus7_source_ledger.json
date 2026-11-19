@@ -73,11 +73,25 @@
     }
   ],
   "spectral_dependency": {
-    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
-    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "path": "../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "3bff8d1613a99501b908aef6a45d28568f96dc5ebaed623193a36e829e18bc97",
     "scope": "Comparison proof mechanism, explicitly reconstructed for discriminant7 in M7.6-M7.15: all-ideal normalization; norm-one strong approximation; Jacquet-Langlands Theorem14.4 and Proposition5.20; Deligne modular realization and purity. The finite checker does not prove these imported infinite theorems.",
     "application_hypotheses": "Maximal order of discriminant7 and projective unit mass1/2 give class number one. Reductions of the two global projective units inject at all odd inert q including3 and at7. At ramified level7 only two norm characters occur; at joint q,7 level all four occur. The Hecke norm bound applies at every index coprime to7 and the added level, including powers of2. Target-dividing inert primes are counted by anisotropic scaling instead of applying a level-prime Hecke estimate.",
-    "character_scope": "Only global one-dimensional automorphic constituents are removed. The direct strong-approximation argument concerns each full smooth local factor, not its level-fixed vector space. Finite right-action characters can remain in the cuspidal complement: at level7 the two quartic C4 characters have T2 eigenvalue1, whereas the two global norm characters have eigenvalue3. The exact norm-two shell and T2=2I+R_[1+j] calculation are written in the proof."
+    "character_scope": "Only global one-dimensional automorphic constituents are removed. The direct strong-approximation argument concerns each full smooth local factor, not its level-fixed vector space. Finite right-action characters can remain in the cuspidal complement: at level7 the two quartic C4 characters have T2 eigenvalue1, whereas the two global norm characters have eigenvalue3. The exact norm-two shell and T2=2I+R_[1+j] calculation are written in the proof.",
+    "historical_source": {
+      "repository_path_at_review": "unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+      "git_commit": "217ee1515735a0cc0c607440cf174c39b1f77d48",
+      "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+      "url": "https://github.com/royvanrijn/jacobian-research/blob/217ee1515735a0cc0c607440cf174c39b1f77d48/unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex"
+    },
+    "current_proof_closure": [
+      {
+        "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+        "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+        "role": "Shared classical Hecke transfer cited by the current spectral lemma."
+      }
+    ],
+    "source_identity_scope": "Current file locations and digests after paper consolidation and relocation. The original reviewed source digest is preserved under historical_source; the spectral statement is unchanged, while its general proof now resides in the shared Hecke-transfer section. No new mathematical review is asserted."
   },
   "exact_classification": {
     "primitive_identity": "P_-7+P_-7={N>=2:49 not dividingN} minus{7,77,203}",

@@ -1,5 +1,7 @@
 # Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 
+Hexagon submission: [hexagon:2611.00672](https://hexagonmath.org/2611.00672), pending moderation. The author reported this submission on 19 November 2026; the public record and uploaded files have not been independently verified.
+
 Reserved Zenodo draft DOI: [doi:10.5281/zenodo.24371355](https://doi.org/10.5281/zenodo.24371355), version 1 (2026). This records the author-supplied reservation, not a verified public deposit.
 
 This edition is shortened from 71 to 69 pages with the same typography and mathematical content. Results are stated at their natural generality; technical proofs and the declared certificate support are retained.
@@ -124,12 +126,13 @@ four-discriminant classification scope and certificate bytes.
 Use the TeX-only archive for repository submission; its 19 TeX files include
 `main.tex` and build independently. A fresh extraction reproduced the current
 69-page PDF byte for byte. The full archive also retains the README, metadata,
-verification record and source manifest. No submission or deposit has been made.
+verification record and source manifest. The Hexagon submission is pending;
+no verified public deposit is recorded.
 
 The [exact companion](../eisenstein-restricted-prime-sums/) evolves the existing
 Eisenstein manuscript and retains its proofs and certificates while integrating
 discriminants -7, -8 and -11. The separately
-[deposited window paper](../../results/eisenstein-pointwise-counts/) addresses
+[deposited window paper](../eisenstein-pointwise-counts/) addresses
 where the summands can be placed. These are different statements and proof routes.
 
 ## Build
@@ -157,7 +160,7 @@ builds. None implies external human review, independent external replay,
 formal verification or established historical priority. There is no numerical
 onset or complete small-exception assertion in this paper.
 
-Before submission, obtain specialist review of the shared comparison hypotheses,
+External specialist review remains requested for the shared comparison hypotheses,
 both frequency regimes, the complex-character coset model, the older
 positive-restoration route, the form-to-ideal dictionary at conductor primes,
 the mixed genus filters and their conductor/class-group transfer.

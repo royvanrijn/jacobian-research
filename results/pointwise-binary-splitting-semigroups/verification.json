@@ -2433,5 +2433,38 @@
     "submission_performed": false,
     "assurance_changes": false,
     "scope": "Added the standalone TeX-only submission archive and packaging metadata; no changes to the 19 TeX sources, PDF or mathematical content."
+  },
+  "submission": {
+    "venue": "Hexagon",
+    "identifier": "hexagon:2611.00672",
+    "url": "https://hexagonmath.org/2611.00672",
+    "status": "pending",
+    "reported_on": "2026-11-19",
+    "provenance": "Author supplied the identifier and reported that moderation is still pending.",
+    "public_record_verified": false,
+    "uploaded_files_verified": false,
+    "candidate_local_files": {
+      "pdf": {
+        "path": "paper.pdf",
+        "sha256": "ec1520b595b09d6b2564b79f4d3ac254ce71cf8b5ceaa7c1079efdbf57c98a5c"
+      },
+      "source_archive": {
+        "path": "hexagon-source.zip",
+        "sha256": "1e30db10753005f780dd87d965c385c71c8eeafe383b07a3fbca2bfb84fbb9de"
+      },
+      "scope": "Current local candidate files; exact uploaded bytes have not been verified."
+    }
+  },
+  "repository_relocation": {
+    "date": "2026-11-19",
+    "from": "unpublished/pointwise-binary-splitting-semigroups",
+    "to": "results/pointwise-binary-splitting-semigroups",
+    "reason": "Author-reported Hexagon submission awaiting moderation.",
+    "source_pdf_submission_archive_and_certificate_bytes_preserved": true,
+    "historical_receipts": "Earlier receipts retain the repository paths and submission state at the time of their checks; these are historical provenance, not current file locations.",
+    "mathematical_content_changed": false,
+    "mathematical_computations_rerun": false,
+    "review_assurances_changed": false,
+    "public_deposit_asserted": false
   }
 }

@@ -12,7 +12,7 @@ unbounded-weight arithmetic reduction.
 The distinction from [the existing bounded-indicator comparison](SPARSE_ARITHMETIC_MODEL_COMPARISON.md)
 is visible in its (C1)--(C4) assumptions and the marked
 comparison calculation (5.15)--(5.19) in
-[the graph proof](../../unpublished/pointwise-binary-splitting-semigroups/graph.tex).
+[the graph proof](../../results/pointwise-binary-splitting-semigroups/graph.tex).
 The imported [weighted-dilation preprint](sources/weighted-dilation-graphs-sep24-2026.pdf), Definitions3.2--3.3, Lemma3.4,
 Theorem3.5 and Corollary3.11 (printed pp.11--12 and26).
 

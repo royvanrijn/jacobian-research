@@ -131,7 +131,7 @@ The relative error is
 \]
 since \(J_{12}(N)\ge1\) and \(\tau(N)=N^{o(1)}\).
 This proves (S.C1). The full manuscript proof is
-[Corollary `cor:coprime-c12`](../../unpublished/pointwise-binary-splitting-semigroups/theorems.tex).
+[Corollary `cor:coprime-c12`](../../results/pointwise-binary-splitting-semigroups/theorems.tex).
 The separate derivation was checked by an internal mathematical agent;
 it inherits the uniform theorem's imported dependencies and review limits.
 

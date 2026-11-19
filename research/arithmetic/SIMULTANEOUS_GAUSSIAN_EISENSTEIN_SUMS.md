@@ -115,7 +115,7 @@ with the finite search below. An effective eventual theorem would need a cutoff
 overlapping the verified range, or the intervening range would also have to be
 checked. The checked range alone supplies no eventual cutoff.
 
-The [Eisenstein manuscript](../../unpublished/eisenstein-restricted-prime-sums/README.md)
+The [exact primitive-norm companion](../../results/eisenstein-restricted-prime-sums/README.md)
 proves binary coverage with only the restriction \(p\equiv1\pmod3\).
 Requiring both quadratic splitting conditions selects the single class
 \(1\pmod {12}\). The target is not a consequence of that manuscript.

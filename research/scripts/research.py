@@ -219,7 +219,7 @@ def render_topic(topic: dict, evaluation: dict | None = None) -> str:
             metadata = ROOT / paper / "metadata.json"
             paper_meta = json.loads(metadata.read_text()) if metadata.is_file() else {}
             if paper_meta.get("status") == "submission-pending":
-                state = "Under review at " + paper_meta["submission"]["venue"]
+                state = "Submission pending at " + paper_meta["submission"]["venue"]
                 source = str(paper / "README.md")
             else:
                 state = "Published preprints"

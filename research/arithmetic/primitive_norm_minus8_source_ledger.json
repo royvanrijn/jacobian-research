@@ -32,10 +32,24 @@
     }
   ],
   "spectral_dependency": {
-    "path": "../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
-    "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+    "path": "../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+    "sha256": "3bff8d1613a99501b908aef6a45d28568f96dc5ebaed623193a36e829e18bc97",
     "scope": "Comparison source locating classical imports; the specialization is now expanded directly next to (33) and in the audit report.",
-    "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption."
+    "specialization": "Class number one, all-ideal normalization, norm-one strong approximation, JL infinite-dimensional split-place hypothesis, weight-two transfer, dyadic coprime factorization and torus-normalizer average reconstructed directly. No maximal-order or unramified-at-2 assumption.",
+    "historical_source": {
+      "repository_path_at_review": "unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex",
+      "git_commit": "217ee1515735a0cc0c607440cf174c39b1f77d48",
+      "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66",
+      "url": "https://github.com/royvanrijn/jacobian-research/blob/217ee1515735a0cc0c607440cf174c39b1f77d48/unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex"
+    },
+    "current_proof_closure": [
+      {
+        "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+        "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+        "role": "Shared classical Hecke transfer cited by the current spectral lemma."
+      }
+    ],
+    "source_identity_scope": "Current file locations and digests after paper consolidation and relocation. The original reviewed source digest is preserved under historical_source; the spectral statement is unchanged, while its general proof now resides in the shared Hecke-transfer section. No new mathematical review is asserted."
   },
   "primary_theta_sources": [
     {

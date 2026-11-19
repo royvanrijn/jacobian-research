@@ -1,13 +1,15 @@
 # AI Math Research
 
-Mathematical research by Roy van Rijn, developed with AI research assistants, especially OpenAI Codex. This repository brings together written proofs, exact computations and Lean formalizations around the Jacobian Conjecture, polynomial maps and moment-vanishing problems.
+Mathematical research by Roy van Rijn, developed with AI research assistants, especially OpenAI Codex. This repository brings together written proofs, exact computations and Lean formalizations around the Jacobian Conjecture, polynomial maps, moment-vanishing problems and additive number theory.
 
 Current PDFs and sources are linked below. The [paper catalogue](results/) records submissions and public deposits.
 
-## Released papers
+## Released and submitted papers
 
 | Paper | Main result | Read |
 |---|---|---|
+| **Pointwise Correlations of Quadratic Form Values and Splitting Semigroups** | CK/Smilansky pair asymptotics, genus-invariant primitive value counts in one quadratic field and target-uniform splitting-semigroup sums. | [Paper and verification](results/pointwise-binary-splitting-semigroups/) · [Hexagon submission · pending](https://hexagonmath.org/2611.00672) |
+| **Exact Sumsets of Primitive Quadratic Norms** | Exact primitive norm sumsets at discriminants -3, -7, -8 and -11, with finite certificates and an independent classical proof route. | [Paper and verification](results/eisenstein-restricted-prime-sums/) · [Hexagon submission · pending](https://hexagonmath.org/2611.00673) |
 | **The Dimension-Degree Boundary for Gaussian Moment Vanishing** | Classifies pure ternary cubics and establishes the sharp mixed-moment cutoff and the universal dimension–degree boundary. | [Paper and verification](results/gaussian-boundary/) |
 | **Prime Knots with Augmentation-Rank Gaps at Unbounded Bridge Number** | Constructs hyperbolic prime knots with an augmentation-rank gap at bridge numbers five and six and every sufficiently large bridge number. | [Paper and verification](results/prime-knot-augmentation-gaps/) |
 | **Pointwise representation counts for Eisenstein restricted sums** | Gives two-sided pointwise counts in prescribed summand windows for ordinary and mixed sums. | [Paper and verification](results/eisenstein-pointwise-counts/) |

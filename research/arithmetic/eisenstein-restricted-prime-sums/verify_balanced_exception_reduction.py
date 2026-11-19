@@ -21,8 +21,8 @@ NOTE = "research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md"
 SOURCES = (
     NOTE,
     "research/arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md",
-    "unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex",
-    "unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex",
+    "results/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex",
+    "results/eisenstein-restricted-prime-sums/sections/mixed-local.tex",
     "research/arithmetic/eisenstein-restricted-prime-sums/research_notes/literature_balanced_polynomial_receipt.json",
     "research/arithmetic/eisenstein-restricted-prime-sums/receipts/elementary_constants_receipt.json",
     "research/arithmetic/eisenstein-restricted-prime-sums/receipts/python_finite_receipt.json",

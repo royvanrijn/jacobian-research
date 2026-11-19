@@ -148,7 +148,7 @@ Hasse--Schilling theorem. Strong approximation for the norm-one
 group at a split place excludes additional constituents that are
 characters at such a place. This is the explicit single- and
 two-level extension of the argument in the
-[retained spectral proof](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex).
+[retained spectral proof](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex).
 
 For precision, this exclusion concerns the full smooth local factor
 \(\pi_\ell\) at a split finite place, rather than its finite-dimensional

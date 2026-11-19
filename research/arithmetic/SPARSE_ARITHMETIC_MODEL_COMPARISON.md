@@ -14,11 +14,11 @@ additive-to-Dirichlet conversion. No additional prime-distribution
 theorem or graph construction is used.
 
 The complete standalone statement is Theorem `thm:model-comparison` in
-[comparison.tex](../../unpublished/pointwise-binary-splitting-semigroups/comparison.tex).
+[comparison.tex](../../results/pointwise-binary-splitting-semigroups/comparison.tex).
 Its proof is in
-[graph.tex](../../unpublished/pointwise-binary-splitting-semigroups/graph.tex),
-[fixed-shift-comparison.tex](../../unpublished/pointwise-binary-splitting-semigroups/fixed-shift-comparison.tex)
-and [assembly.tex](../../unpublished/pointwise-binary-splitting-semigroups/assembly.tex).
+[graph.tex](../../results/pointwise-binary-splitting-semigroups/graph.tex),
+[fixed-shift-comparison.tex](../../results/pointwise-binary-splitting-semigroups/fixed-shift-comparison.tex)
+and [assembly.tex](../../results/pointwise-binary-splitting-semigroups/assembly.tex).
 Those sources give the operator identities, exact normalizations and
 precision order; the conditions and their independent proof roles are
 recorded below.
@@ -166,7 +166,7 @@ on that last depth.
 
 | Application | Arithmetic checks |
 |---|---|
-| Fixed subgroup pairs, with fixed residue filters | [Subgroup model section](../../unpublished/pointwise-binary-splitting-semigroups/model.tex): identity-class invariance, projected rough means, direct record sieve and explicit model product. |
+| Fixed subgroup pairs, with fixed residue filters | [Subgroup model section](../../results/pointwise-binary-splitting-semigroups/model.tex): identity-class invariance, projected rough means, direct record sieve and explicit model product. |
 | Unfiltered self-sums for one fixed prime coset | [Prime-coset theorem](PRIME_COSET_SELF_SUMS.md): every negative/complex branch retained, positive leading domination, one allowed prime class, and finite-image criterion. |
 | Prime factors three modulo four | [Two-branch check](PRIME_THREE_MOD_FOUR_SUMS.md), a specialization of the coset theorem. |
 | Connors–Keating fixed shifts | [Indicator check](CONNORS_KEATING_INDICATOR_CORRELATIONS.md): unrestricted even inert valuations, dyadic states and a prime-square upper sieve, followed by the separate arithmetic model evaluation. |

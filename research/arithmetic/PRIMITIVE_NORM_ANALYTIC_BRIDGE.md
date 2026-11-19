@@ -2052,7 +2052,7 @@ on this application. Multiplicativity proves (33) with constant 1,
 uniformly in \(p,m\). The level at 2 affects the conductor of the
 transfer; no unramified estimate at 2 is used. The exact primary source
 editions and theorem locators are pinned in the source ledger.
-The [earlier Eisenstein lemma](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex)
+The [earlier Eisenstein lemma](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex)
 is a comparison, rather than an additional unexpanded spectral input.
 
 For \(N=2^e m\), \(m\) odd, \(0\le e\le3\), let

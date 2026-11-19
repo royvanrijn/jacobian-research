@@ -83,7 +83,7 @@ The manuscript establishes its maximality, class number one, its twelve
 units \(R^\times\sqcup R^\times j\), and
 \(\#\mathcal Q_n=12\sigma(n)\) for \(3\nmid n\), where
 \(\mathcal Q_n=\{\alpha\in\mathcal O:\operatorname{nrd}\alpha=n\}\).
-[Norm count](../../unpublished/eisenstein-restricted-prime-sums/sections/norm-count.tex).
+[Norm count](../../results/eisenstein-restricted-prime-sums/sections/norm-count.tex).
 
 Let \(\Omega_n\subset\mathcal Q_n\) have both component norms odd.
 For even \(n\) with \(3\nmid n\), it has the displayed cardinality
@@ -106,8 +106,8 @@ anisotropy forces the entire quaternion to be divisible by \(p\):
 the bad set is empty unless \(p^2\mid n\), and otherwise its relative
 size is
 \(R_o(n/p^2)/R_o(n)<p^{-2}\le\mu_p\).
-[Scalar Hecke operator and averaging](../../unpublished/eisenstein-restricted-prime-sums/sections/prime-bounds.tex),
-[odd filter](../../unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex).
+[Scalar Hecke operator and averaging](../../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex),
+[odd filter](../../results/eisenstein-restricted-prime-sums/sections/mixed-local.tex).
 
 The lattice estimate supplies
 \[
@@ -115,7 +115,7 @@ The lattice estimate supplies
 M(n)=\max_{u\le n}\prod_{q^a\Vert u,\ q\equiv1(3)}(a+1)
 \le\max_{u\le n}\tau(u).\tag{2}
 \]
-[Large-prime bound](../../unpublished/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
+[Large-prime bound](../../results/eisenstein-restricted-prime-sums/sections/elementary-estimates.tex).
 Also
 \[
 \sum_{p\ge5,\ p\equiv2(3)}\mu_p<\frac17.\tag{3}
@@ -354,7 +354,7 @@ G_3=(\mathcal O/3\mathcal O)^\times/\mathbf F_3^\times,
 \]
 Their cardinalities are \(36,6,6\), respectively. The finite level at
 3 is the reduction kernel, with maximal level elsewhere, exactly as in
-the [six-point construction](../../unpublished/eisenstein-restricted-prime-sums/sections/mixed-local.tex).
+the [six-point construction](../../results/eisenstein-restricted-prime-sums/sections/mixed-local.tex).
 The same coefficient-valued construction and bound (6) hold for
 \(3\nmid n\). The density argument above imposes only a finite-index
 condition modulo 3 on \(\Gamma_\ell\).
