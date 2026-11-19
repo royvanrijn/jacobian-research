@@ -1,5 +1,8 @@
 # Erdős #675: a reviewed prime-partition argument and the fixed norm-pattern target
 
+**Project scope.** Deferred stretch goal for later research, kept separate
+from the current norm-counting and binary-correlation papers.
+
 **Mathematical status.** The translation property for the fixed set of
 sums of two squares remains **open in this work**. The existential
 prime-partition question has a valid qualitative Brun-sieve construction,
@@ -484,8 +487,8 @@ Global recurrence, however, supplies arbitrarily large returns of any
 fixed block: the finite-sums construction in ModularReturn can use
 arbitrarily many positive return times. This proves the second assertion.
 
-In particular, a construction confined to finitely many split-prime
-squareclasses cannot establish the required arbitrary-prefix recurrence.
+In particular, a construction confined to one fixed finite collection of
+split-prime squareclasses cannot establish arbitrary-prefix recurrence.
 The set \(E\) has infinitely many such classes; this proposition
 does not rule out its recurrence.
 

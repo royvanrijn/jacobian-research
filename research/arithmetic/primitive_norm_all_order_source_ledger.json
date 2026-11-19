@@ -3,8 +3,8 @@
   "date": "2026-11-19",
   "proof": {
     "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
-    "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
-    "locator": "OrderValueCounts,OrderClassError; O.1-O.15 and complete proofs"
+    "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+    "locator": "OrderValueCounts,OrderClassError O.1-O.15; FormIdealShadow,FormClassError,FormGenusCoreFilters,GenusBinaryInvariance F.1-F.6; complete conductor-safe primitive-value proofs"
   },
   "scope": {
     "orders": "All fixed imaginary quadratic orders, arbitrary conductors and ring class groups",
@@ -28,9 +28,9 @@
       "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v189-n1-p04-s.pdf",
       "path": "sources/khayutin-joint-cm-2019.pdf",
       "sha256": "f22691429c27058fabd47fe12c6a901e7feffffad7a0c52e1a936da645166d6f",
-      "locator": "Definition2.8 printedp167/PDFp23; AppendixA printedpp256-258/PDFpp112-114, PropositionA.1 and CorollaryA.2",
-      "role": "Proper invertible ideal/local-principal gluing and general-order norm kernel2Pic; arithmetic appendix, not conditional equidistribution theorem",
-      "inspection": "Actual statements and proofs read internally; independent local-ideal normalization reconstructed inO.4-O.6",
+      "locator": "Definition2.8(1) printedp167/PDFp23; Lemma10.2 first arithmetic assertion and ideal parametrization printedp240/PDFp96; AppendixA PropositionA.1 printedp257/PDFp113",
+      "role": "Locally principal proper invertible ideals, elementary normalized ideal-form correspondence without conductor-coprimality restriction, and kernel2Pic. The arbitrary-coefficient ideal construction and primitive-coordinate equivalence are proved directly; no shifted-convolution or equidistribution theorem is imported.",
+      "inspection": "Actual retained Def2.8, Lemma10.2 arithmetic statement/proof and PropA.1 inspected. For arbitrary(a,b,c), A=[a,(b+sqrtDelta)/2] and AbarA=aO are reconstructed explicitly; I=alpha*A^-1 is primitive iffalpha is notin pA.",
       "excluded_source_line": "Unused LemmaA.6 first dyadic case fails forK=Q(sqrt(-2)),f=2: maximalunitnorm3, orderunitnormsonly1mod8. Our full conductor unit table is proved directly; A.1 is independent of that later table."
     },
     {
@@ -102,7 +102,8 @@
     "arithmetic": "Root and separate internal agent read actual canonical proof: Theta kernel, primitiveideal existence, conductor type preservation, cap, H compatibility, allbadJ and finite-character lower",
     "local_tables": "Direct all-depth odd/dyadic proof read, exact finite coordinate image algorithms and negativecontrols replayed",
     "assurance": "Internal mathematical/source review and deterministic replay only; no externalhumanreview/formalverification/priorityclaim",
-    "class_error_strengthening": "The order-local primitive-ideal existence interface is unchanged. Saturated good-prime orientations generateB_n<=2Pic while preserving conductor-local ideals. A properB_n lies in a maximalM, giving k_M<=K_M; equal doubling fibres give uniondensity(ell-1)/(2ell). The unchanged exact-one mixed Selberg proof uses only fixed-order prime-class Mertens, CRT and positive weights; no ZF/G input is added. Separate finite evidence is not an analytic premise."
+    "class_error_strengthening": "The order-local primitive-ideal existence interface is unchanged. Saturated good-prime orientations generateB_n<=2Pic while preserving conductor-local ideals. A properB_n lies in a maximalM, giving k_M<=K_M; equal doubling fibres give uniondensity(ell-1)/(2ell). The unchanged exact-one mixed Selberg proof uses only fixed-order prime-class Mertens, CRT and positive weights; no ZF/G input is added. Separate finite evidence is not an analytic premise.",
+    "form_extension": "Actual manuscript arithmetic/analytic scope audited internally; canonical sections reproduce the explicit plus-b ideal construction, translated existential coset, target-class saturation, full Hilbert product and classical componentwise genus comparison. Finite class-group checks remain finite and do not certify the new conductor dictionary or analytic statements."
   },
   "maximal_subgroup_finite_checks": {
     "checker": {
@@ -118,5 +119,13 @@
     "command": "python3 research/arithmetic/verify_class_group_error_cover.py --output research/arithmetic/class_group_error_cover_checks.json",
     "execution": "Internal fresh replay to a scratch output; byte-identical to the retained receipt.",
     "scope": "Exact finite algebra only: doubling fibres, all maximal subgroups, outside-preimage inverse-pair densities, saturation and cover over199rich subsets in12listed groups. Three negative controls reject g-in-place-of-2g, one-family density and one-fixed-maximal-subgroup errors. This is not an analytic sieve proof, an infinite class-group assertion, a prime-distribution theorem or conductor-local verification. The existing maximal-order checker retains its original eight-group sufficient-saturation scope."
+  },
+  "form_extension": {
+    "scope": "Every fixed primitive positive definite integral binary quadratic form of one fixed negative order discriminant; arbitrary class targets c_Q and arbitrary genera in the two binary slots.",
+    "ideal_class": "For Q=ax\u00b2+bxy+cy\u00b2 use A=[a,(b+sqrtDelta)/2], c_Q=-[A]. Positive primitive values correspond to primitive integral invertible ideals of normn in classc_Q; local-shadow membership is existence of such an ideal in c_Q+2Pic. This remains existential at conductor-divisible norms.",
+    "class_error": "Same maximal-subgroup saturation and one-sided exact-one sieve, everyeta<delta_star(2Pic), universal1/5 with fixed-order constants; exact zero if2Pic=0. No new analytic input.",
+    "genus_comparison": "Q1,Q1prime must share a genus and Q2,Q2prime must share a genus; the two slots may have different genera. Classical mixed-shadow lower bounds and class error give a relative1+O(log^-etaN) comparison on sufficiently large common admissible targets, without ZF/G. Exact equality of counts when2Pic=0.",
+    "filters": "Separate actual masks A_{r,Q} retain individual local biases. Local multipliers lambda_p=N(z_p)/n(A) are units; their bad Hilbert symbols have product1, forcing each mask intoH=kerchi. Common genus is not assumed across the slots.",
+    "not_claimed": "No unique genus attached to a conductor-divisible numerical value, coordinate-weighted count, different-field extension, varying-discriminant uniformity, endpoint rate or historical priority."
   }
 }

@@ -475,6 +475,198 @@ Combining this lower bound with (O.3), its error is a smaller logarithmic
 order, so it can be absorbed in half the lower bound for sufficiently
 large \(N\). This proves OrderValueCounts.
 
+### 4.1. Primitive forms and a translated genus coset
+
+The same arithmetic applies to every primitive positive definite integral
+binary quadratic form of a fixed discriminant \(\Delta\), not just the
+principal norm form. Write
+\[
+ P_Q=\{Q(x,y)>0:(x,y)\in\mathbb Z^2,\ \gcd(x,y)=1\},\qquad
+ \mathscr V_{p,Q}=Q(\mathbb Z_p^2\setminus p\mathbb Z_p^2),
+ \quad \Lambda_Q=\mathbb Z_{>0}\cap\bigcap_p\mathscr V_{p,Q}.
+\]
+Numerical values are counted once. For two sets, let
+\(R_{T_1,T_2}(N)=\#\{(a,b)\in T_1\times T_2:a+b=N\}\), and write
+\(R_{Q_1,Q_2}=R_{P_{Q_1},P_{Q_2}}\). The term genus means local
+integral equivalence at every prime, with the positive real condition.
+It preserves primitive local value sets. For the comparisons in this
+section, set \(\delta_*(0)=+\infty\); the corresponding class error is
+exactly zero, rather than a new quantitative density estimate.
+
+For \(Q=ax^2+bxy+cy^2\), put
+\[
+ \beta=(b+\sqrt\Delta)/2,\qquad
+ A=\mathbb Za+\mathbb Z\beta,\qquad c_Q=-[A]\in G.
+ \tag{F.1}
+\]
+Here \(\mathcal O=\mathbb Z[\beta]\), \(n(A)=a\), and
+\(Q(x,y)=N(ax+\beta y)/a\). The lattice \(A\) is an ideal and
+\[
+ A\overline A=a(a,\beta,\overline\beta,c)\mathcal O=a\mathcal O,
+\]
+since \(\beta+\overline\beta=b\) and \(\gcd(a,b,c)=1\). Thus
+\(A^{-1}=\overline A/a\), so it is proper invertible even when
+\(a\) shares a prime with the conductor. This also fixes the class sign.
+Khayutin's Lemma 10.2, printed p.240, gives the normalized ideal-form
+construction and integral-ideal parametrization without a conductor
+coprimality restriction. Only that elementary arithmetic assertion and
+its proof are used, not the surrounding shifted-convolution theorem.
+
+**Lemma FormIdealShadow.** For every positive integer \(n\),
+\[
+ \begin{split}
+ n\in P_Q&\iff\exists I\text{ primitive integral invertible}:\quad
+                      n(I)=n,\ [I]=c_Q,\\
+ n\in\Lambda_Q&\iff\exists I\text{ primitive integral invertible}:\quad
+                      n(I)=n,\ [I]\in c_Q+2G.
+ \end{split}
+ \tag{F.2}
+\]
+
+**Proof.** For \(\alpha\in A\), the ideal \(I=(\alpha)A^{-1}\) is
+integral, has norm \(N(\alpha)/a\), and class \(-[A]\).
+Invertibility gives \(I\subset p\mathcal O\) exactly when
+\(\alpha\in pA\), which is precisely coordinate nonprimitivity in the
+basis \(a,\beta\). Conversely, \([I]=-[A]\) gives
+\(IA=(\alpha)\subset A\); the same identities prove the first line.
+
+Write \(A_p=z_p\mathcal O_p\) and
+\(\lambda_p=N(z_p)/a\in\mathbb Z_p^\times\), using (O.4).
+The basis change to this local generator is in
+\(\operatorname{GL}_2(\mathbb Z_p)\), so
+\(\mathscr V_{p,Q}=\lambda_p\mathscr V_p\).
+Moreover \(\Theta_p(c_Q)=\lambda_p\pmod{U_p}\).
+If \(n\in\Lambda_Q\), take primitive local elements
+\(\alpha_p=z_pw_p\in A_p\) with norm \(an\). Their primitive integral
+ideals \(w_p\mathcal O_p\) glue as in Section 1 to an invertible
+integral ideal \(I\) of norm \(n\). They are the unit lattice outside
+finitely many primes. Locally
+\(n/N(w_p)=\lambda_p\), hence \(\Theta([I])=\Theta(c_Q)\).
+The kernel in (O.5) is \(2G\), giving the coset in (F.2).
+Conversely, for such an \(I\), write \(I_p=i_p\mathcal O_p\).
+The equality of the two \(\Theta\)-classes says that
+\(n/(\lambda_pN(i_p))\) is the norm of a unit \(u_p\).
+Then \(z_pi_pu_p\) is primitive in \(A_p\), with norm \(an\).
+This proves local primitive representation, including at conductor
+primes. \(\square\)
+
+The ideal in (F.2) is existential. A conductor-divisible numerical value
+need not determine a unique genus, as the earlier discriminant \(-100\)
+example shows. The target class is changed, not this quantifier.
+
+**Theorem FormClassError.** Fix two forms \(Q_1,Q_2\) of discriminant
+\(\Delta\). If \(2G\ne0\), then for every fixed
+\(0<\eta<\delta_*(2G)\), uniformly for \(N\ge3\),
+\[
+ 0\le R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)-R_{Q_1,Q_2}(N)
+ \ll_{\Delta,\eta}\frac{NJ_{\mathcal O}(N)}{(\log N)^{1+\eta}}.
+ \tag{F.3}
+\]
+If \(2G=0\), then \(P_Q=\Lambda_Q\) for every such form and the
+difference is zero. The exponent \(1/5\) is available in every fixed
+order, with order-dependent constants and no endpoint claim.
+
+**Proof.** Start with an ideal in \(c_Q+2G\) from (F.2). The reserved
+orientations in Section 2 change its class through \(B_n\le2G\).
+If \(B_n=2G\), they cancel the difference from \(c_Q\); all
+conductor-local ideals remain unchanged. Thus a hidden failure has
+exactly the same maximal-subgroup cover (O.7), with the same
+\(\Omega_M,K_M\) and density \(d_M\).
+Charge a mixed pair with an exceptional summand to that summand and a
+subgroup in its cover. Both shadows forbid every good inert prime.
+Mark only the exceptional summand at \(\Omega_M\). The forbidden
+densities are still \(2-\mathbf1_{p\mid N}\) roots modulo an inert
+prime and \(p-1\) roots modulo \(p^2\) at a marked split prime.
+The exact CRT, Selberg and finite-mark argument proving (O.3) therefore
+proves (F.3) unchanged, uniformly in all target valuations. No zero-free
+or weighted-dilation input is used. \(\square\)
+
+**Lemma FormGenusCoreFilters.** Let \(S'\) be any fixed finite prime set
+containing all primes dividing \(2\Delta\). Set
+\[
+ L'=8\prod_{p\in S',\ p\text{ odd}}p,\quad H'=\ker(\chi\bmod L'),
+ \quad\mathcal C'=\langle p:p\notin S',\ \chi(p)=1\rangle.
+\]
+For \(S'\)-supported \(r\), define the actual filter
+\[
+ A_{r,Q}=\{u\in(\mathbb Z/L')^\times:
+                      ru\in\mathscr V_{p,Q}\text{ for all }p\in S'\}.
+\]
+It is a union of unit-square states, lies in \(H'\), and gives the
+exact disjoint decomposition
+\[
+ \Lambda_Q=\coprod_{r\in\langle S'\rangle}
+       r\{x\in\mathcal C':x\bmod L'\in A_{r,Q}\}.
+ \tag{F.4}
+\]
+The separate local genus biases are retained in \(A_{r,Q}\).
+
+**Proof.** Homogeneity and multiplication of a primitive vector by a
+unit show unit-square stability, so the filter is well defined.
+The local multipliers above are units and satisfy
+\[
+ \prod_{p\in S'}(\lambda_p,D_0)_p
+          =\prod_{p\in S'}(a,D_0)_p=1.
+ \tag{F.5}
+\]
+Their numerators are local field norms. Outside \(S'\), an invertible
+ideal norm has even valuation at an inert prime, and no obstruction at
+a split prime; the positive real norm has trivial infinite symbol.
+Hilbert reciprocity gives (F.5). If \(u\in A_{r,Q}\), then
+\((ru,D_0)_p=(\lambda_p,D_0)_p\) for every \(p\in S'\).
+The positive \(S'\)-supported integer \(r\) has product of bad symbols
+one, whereas a positive unit representative \(u\) has product
+\(\prod_{p\in S'}(u,D_0)_p=\chi(u)\). Multiplying gives
+\(\chi(u)=1\). Individual \(\lambda_p\) may have nontrivial genus
+bias; their product, rather than each bias separately, is used.
+Outside \(S'\), the primitive local set is \(\mathbb Z_p\) at split
+primes and \(\mathbb Z_p^\times\) at inert primes. This proves (F.4).
+\(\square\)
+
+**Theorem GenusBinaryInvariance.** Fix four forms of discriminant
+\(\Delta\), with \(Q_i,Q'_i\) in the same genus for each \(i=1,2\).
+The genera in the two slots may be different. For every fixed
+\(0<\eta<\delta_*(2G)\), uniformly on their common sufficiently large
+locally admissible targets,
+\[
+ R_{Q_1,Q_2}(N)=R_{Q'_1,Q'_2}(N)
+                         (1+O((\log N)^{-\eta})).
+ \tag{F.6}
+\]
+Both counts have order \(NJ_{\mathcal O}(N)/\log N\); outside the local
+set both counts are zero. When \(2G=0\), the counts are equal for every
+target. In that exact case one may use any \(\eta>0\) in the displayed
+comparison; it makes no assertion about an arbitrarily strong remainder
+for a one-variable density asymptotic. All constants and onsets depend
+on the fixed forms and \(\eta\). This result uses only the classical
+fixed-filter counting theorem and the class-error sieve, not ZF/G.
+
+**Proof.** Local integral equivalences preserve primitive vectors, so
+\(\Lambda_{Q_i}=\Lambda_{Q'_i}\) in each slot. Apply the preceding
+filter lemma with \(S'=S\). For any primitive quadratic form the
+identity
+\(\operatorname{adj}(\operatorname{Hess}Q)\nabla Q(v)=-\Delta v\)
+holds. Thus the full-coset/Hensel proof of (O.9) applies with
+\(e_p=2v_p(\Delta)+1\). Each local value set is a union of full
+cosets modulo \(p^{e_p}\). Replacing local summands by
+\(a+p^{e_p}t,b-p^{e_p}t\) gives both valuations at most \(e_p+1\):
+at most two residues of \(t\bmod p^2\) are excluded. CRT therefore
+selects prefixes \(r,s\mid\prod_{p\in S}p^{e_p+1}\) and a positive
+root in the two separate filters \(A_{r,Q_1},A_{s,Q_2}\).
+
+The classical finite-character theorem (O.15) allows distinct unit-square
+filters in \(H\). It gives a lower bound of order \(NJ/\log N\) in
+such a positive profile. There are finitely many profiles and local root
+states, so their positive constants have a common minimum. The unmarked
+inert sieve gives the matching upper bound for the entire mixed shadow.
+Both uses are independent of the pointwise binary asymptotic.
+Apply (F.3) to each of the two pairs. They differ from the same mixed
+shadow by \(O(NJ/\log^{1+\eta}N)\). Subtract and divide by the
+classical positive lower bound; the denominator actual count is at least
+half that lower bound for large \(N\). This proves (F.6).
+For \(2G=0\), (F.2) makes each global set equal its shadow, proving
+exact equality. \(\square\)
+
 ## 5. Imported sources and evidence limits
 
 The conductor algebra is classical principal-genus theory. Its role
@@ -485,7 +677,10 @@ interface (O.6), rather than claim a new genus theorem.
   145--276, DOI 10.4007/annals.2019.189.1.4.
   [Primary PDF](https://annals.math.princeton.edu/wp-content/uploads/annals-v189-n1-p04-s.pdf):
   Definition 2.8, printed p.167; Appendix A, printed pp.256--261,
-  especially Proposition A.1 and Lemmas A.3--A.4.
+  especially Proposition A.1 and Lemmas A.3--A.4; Lemma 10.2,
+  printed p.240, for the elementary normalized ideal-form construction.
+  The explicit ideal construction and primitivity equivalence are proved
+  in Section 4.1, including conductor-divisible values.
   The appendix explicitly handles nonmaximal orders. Its algebraic
   statements have no exceptional-zero hypothesis; the main article's
   equidistribution hypotheses are not used here.

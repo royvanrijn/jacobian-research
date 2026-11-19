@@ -339,6 +339,180 @@ itself compute the leading coefficient. Formula (LC.15) includes every
 valuation stratum; (LC.13) is what permits that passage for split
 conductor tails.
 
+### 3.1. Mixed primitive forms at one fixed discriminant
+
+Use \(P_Q,\Lambda_Q\) and the conductor-safe ideal-class convention of
+Section 4.1 in the all-orders note. First fix one discriminant
+\(\Delta=f^2D_0\), and two primitive positive definite integral forms
+\(Q_1,Q_2\) of that discriminant. They may be in different genera.
+Keep \(S,L,\alpha_L,H,\mathcal C,\chi,J\) as above and define
+\[
+ d_{p;1,2}(N)=\int_{\mathbb Z_p}
+       \mathbf1_{\mathscr V_{p,Q_1}}(a)
+       \mathbf1_{\mathscr V_{p,Q_2}}(N-a)\,da,
+ \qquad p\in S.
+ \tag{FM.1}
+\]
+Haar measure gives \(\mathbb Z_p\) mass one. These are densities of
+numerical values, not of coordinate preimages. Set
+\[
+ \mathfrak b_{D_0,S}=\frac{4L(1,\chi)}{\pi}
+  \prod_{p\in S}\frac{1-\chi(p)/p}{1-1/p}
+  \prod_{\substack{p\notin S\\\chi(p)=-1}}
+                         \left(1-\frac2{p(p-1)}\right).
+ \tag{FM.2}
+\]
+
+**Theorem FormBinaryLeading.** With BinaryCoreCorrelation, as supplied
+by the proved fixed-modulus binary theorem under its stated ZF/G inputs,
+uniformly through sufficiently large locally admissible targets,
+\[
+ R_{Q_1,Q_2}(N)\sim R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)\sim
+ \mathfrak b_{D_0,S}
+       \left(\prod_{p\in S}d_{p;1,2}(N)\right)
+                       J(N)\frac N{\log N}.
+ \tag{FM.3}
+\]
+Every nonadmissible target has zero count. Each bad density is computable,
+rational and periodic. The coefficient depends only on the two genera;
+there is no class-number divisor. The full asymptotic has a relative
+\(o(1)\) remainder, with no new quantitative remainder inferred from
+the class-error bound.
+
+**Proof.** The form-filter lemma gives the separate sets
+\(A_{r,1},A_{s,2}\subset H\), retaining their individual genus biases.
+For fixed prefixes let \(g=(r,s)\), \(A=r/g\), \(B=s/g\) and, when
+\(g\mid N\), \(M=N/g\). Put
+\[
+ \Gamma_{r,s;1,2}(N)=\frac L{|H|^2}
+  \#\{(u,v)\in A_{r,1}\times A_{s,2}:Au+Bv=M\bmod L\},
+ \tag{FM.4}
+\]
+and set it to zero otherwise. The original two filters remain after
+cancelling \(g\). The core asymptotic contributes
+\(c_{\mathcal C}^2C_{\rm in}\Gamma_{r,s;1,2}(N)g/(rs)\)
+relative to \(J(N)N/\log N\).
+
+The uniform upper bound (LC.13) still applies after dropping these two
+filters: the coefficients are good-prime units, and inert roots merge
+exactly when the prime divides \(N\). There are only polynomially
+many logarithmic prefix pairs, whereas (LC.14) is summable. Thus the
+fixed-prefix limits and summable tail may be taken in that order.
+
+The mixed Haar identity is
+\[
+ \sum_{r,s}\Gamma_{r,s;1,2}(N)\frac{(r,s)}{rs}
+       =\frac4{\alpha_L^2}\prod_{p\in S}d_{p;1,2}(N).
+ \tag{FM.5}
+\]
+At a bad prime write \(i=v_p(r)\), \(j=v_p(s)\), \(k=v_p(L)\).
+Each compatible unit-pair root modulo \(p^k\) has Haar measure
+\(p^{-\max(i,j)-k}\) on the line. If \(i\le j\), prescribing the
+second value modulo \(p^{j+k}\) fixes the required first residue;
+the other case is symmetric. Therefore each global root has measure
+\(g/(Lrs)\). Summing its roots gives
+\((\alpha_L^2/4)\Gamma_{r,s;1,2}(N)g/(rs)\), because
+\(|H|=\varphi(L)/2\). Sum the disjoint valuation strata to obtain
+(FM.5). Finite value cosets give a positive minimum for the bad product
+on its positive residue classes, so the resulting \(o(1)\) is relative
+uniformly on admissible targets.
+
+The mixed class error (F.3) transfers the shadow asymptotic to the
+actual values. Expanding (LC.1) and \(C_{\rm in}\) gives (FM.2) by
+\((1-p^{-2})(1-(p-1)^{-2})=1-2/[p(p-1)]\). No factor \(1/h\)
+arises: saturation makes a chosen compatible class attainable for almost
+all numerical values in its genus shadow; these value sets do not form
+a disjoint class partition. \(\square\)
+
+### 3.2. Different fixed conductors in the same quadratic field
+
+Fix \(K\) of fundamental discriminant \(D_0\), orders
+\(\mathcal O_i\) of discriminants \(\Delta_i=f_i^2D_0\), and primitive
+positive definite forms \(Q_i\) of discriminants \(\Delta_i\), for
+\(i=1,2\). Put
+\[
+ S=\{p:p\mid2\Delta_1\Delta_2\},\qquad
+ J_S(N)=\prod_{\substack{p\mid N\\p\notin S,\ \chi_{D_0}(p)=-1}}
+                               \frac{p-1}{p-2}.
+ \tag{FM.6}
+\]
+Use this common \(S\) in (FM.1)--(FM.2) and in the definitions of
+\(L,H,\mathcal C\). Let \(G_i=\operatorname{Pic}(\mathcal O_i)\),
+\(B_i=2G_i\), and
+\[
+ \eta_{\rm pair}=\min_i\delta_*(B_i),\qquad\delta_*(0)=+\infty.
+ \tag{FM.7}
+\]
+This convention records an exact zero class error in that slot.
+
+**Theorem CommonFieldGenusInvariance.** Without ZF/G, uniformly on all
+sufficiently large locally admissible targets, the mixed shadow and
+actual counts have order \(NJ_S(N)/\log N\). For every fixed
+\(0<\eta<\eta_{\rm pair}\), the all-target class error is
+\[
+ 0\le R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)-R_{Q_1,Q_2}(N)
+ \ll\frac{NJ_S(N)}{(\log N)^{1+\eta}},\qquad N\ge3.
+ \tag{FM.8}
+\]
+If \(Q'_i\) is in the same genus as \(Q_i\) in its own discriminant,
+then on their common sufficiently large admissible targets,
+\[
+ R_{Q_1,Q_2}(N)=R_{Q'_1,Q'_2}(N)
+                            (1+O((\log N)^{-\eta})).
+ \tag{FM.9}
+\]
+Nonadmissible targets have zero count. If both \(B_i=0\), the counts
+are equal for every target and the class error is zero. Otherwise
+\(\eta=1/5\) is a common permissible exponent. Constants and onsets
+depend on the fixed forms/orders and \(\eta\), and no endpoint or
+optimality claim is made.
+
+**Proof.** Apply FormIdealShadow and FormGenusCoreFilters to each order,
+with the common enlarged \(S\). Their separate local multipliers remain
+units with product of Hilbert symbols one; hence both actual filters
+lie in the same \(H\). No equality of their local genus biases is used.
+Deleting the extra bad primes removes finitely many terms from each
+class-prime family and does not change its harmonic density.
+
+For an exceptional summand apply saturation in its own Picard group.
+Mark only that summand's outside-maximal-subgroup family. Both shadows
+exclude the same good inert primes; the marked family is split in the
+common field. The same one-sided exact-one sieve proves the two class
+errors at the two respective thresholds, and their sum gives (FM.8).
+When one \(B_i=0\), that side contributes zero. There is no simultaneous
+marking of two class partitions, and no joint ring-class prime
+counting theorem is required.
+
+For the classical lower bound use
+\(e_p=1+2\max_i v_p(\Delta_i)\). Both value sets are unions of full
+cosets modulo \(p^{e_p}\). The common shift of the two local values by
+\(\pm p^{e_p}t\) bounds both valuations by \(e_p+1\), so there are
+finitely many covering profiles. The same classical fixed-filter theorem
+for the common split core gives a positive lower bound in a positive
+profile. The unmarked inert sieve gives the upper bound. Finally,
+componentwise genus equivalence makes the two shadows identical.
+Subtract (FM.8) for the two pairs and divide by the classical positive
+lower bound, exactly as in (F.6). This proves (FM.9), with no use of the
+pointwise binary asymptotic. \(\square\)
+
+**Corollary CommonFieldFormPairs.** With the same existing binary inputs
+as FormBinaryLeading, the explicit asymptotic (FM.3) holds for the two
+possibly different conductors, using (FM.6), the mixed local densities,
+and \(\mathfrak b_{D_0,S}\). Classical order bounds and componentwise
+genus invariance are supplied independently by the preceding theorem.
+There is no identification of genera across discriminants and no
+assertion for different quadratic fields or varying orders.
+
+**Proof.** Use the common core and the separate prefix masks just proved.
+For every fixed prefix pair the existing BinaryCoreCorrelation applies.
+The bound (LC.13), the summable series (LC.14), and the mixed root measure
+\(g/(Lrs)\) are unchanged. Hence (FM.5) holds with the enlarged \(S\),
+and the Euler expansion gives precisely (FM.2). The one-sided class
+errors in (FM.8) transfer the shadow asymptotic to actual values.
+The bad product has a fixed positive minimum on the finite positive
+residue classes; its vanishing makes the count identically zero.
+The leading remainder remains relative \(o(1)\). \(\square\)
+
 ## 4. A proved auxiliary-weight removal for the binary problem
 
 Averaging many small split-prime divisor weights can remove them with

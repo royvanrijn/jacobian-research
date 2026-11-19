@@ -170,22 +170,36 @@ are developed below. Thus the conclusion depends
 on these specified recent preprints; it does not follow from classical
 independent-linear-form correlations alone.
 
-The principal arithmetic application is to primitive norm values in
-every fixed imaginary quadratic order. It has two independent analytic
-routes. Classical Kloosterman estimates, a weighted correlation and
-positive restoration give pointwise order-of-magnitude bounds on all sufficiently
-large locally admissible targets. We retain that proof: this arithmetic
-conclusion does not depend on the recent zero-free or graph theorems.
-The full classical core proof is in Appendix~\ref{sec:older-route};
-the independent order-bound theorem remains in
-Section~\ref{sec:norms}. The new correlation theorem upgrades it to an explicit leading
-asymptotic. In both routes, a class-group obstruction changes the
-binary count only by a smaller logarithmic order. The saving in this
-class error can be chosen independently of the class number; the
-implied constant still depends on the fixed order. A conductor-prefix
-decomposition and summable tail bound transfer the leading term to
-actual primitive norm values, including conductor-local factors.
-No coordinate or ideal representation multiplicity enters the count.
+The arithmetic application is a genus-invariance theorem for primitive
+quadratic-form values. If \(Q_i,Q'_i\) have the same discriminant
+and are in the same genus for each \(i=1,2\), then
+\[
+ R_{Q_1,Q_2}(N)
+   =R_{Q'_1,Q'_2}(N)\left(1+O((\log N)^{-\eta})\right)
+\]
+for some explicit \(\eta>0\), on all sufficiently large common
+locally admissible targets. Here the summands are numerical values
+at coprime coordinates. The class changes only a smaller binary
+contribution; genus data governs the leading count. There is no
+automatic \(1/|\operatorname{Pic}(\mathcal O)|\) factor, because one
+value can be represented by every class in a compatible genus.
+Section~\ref{sec:forms} first proves the same-discriminant theorem,
+then treats two fixed conductors in one imaginary quadratic field,
+with genus replacement made separately in the two orders.
+
+This application retains two analytic routes. Classical Kloosterman
+estimates, a weighted correlation and positive restoration give
+pointwise order bounds. Combined with the class-error sieve, they
+already prove the quantitative genus comparison above, independently
+of the recent zero-free and graph theorems. The full classical core
+proof remains in Appendix~\ref{sec:older-route}.
+The principal norm case in Section~\ref{sec:norms} supplies the
+class-error estimate and its normalization. Its saving can be chosen
+independently of the class number; constants still depend on the
+fixed orders. The new correlation theorem then evaluates the mixed
+leading coefficient explicitly from local value densities. A finite
+conductor-prefix limit and summable tail retain those densities
+without coordinate or ideal representation multiplicities.
 
 The conclusion is that local arithmetic governs the pointwise binary
 count. Here ``local'' includes simultaneous residue conditions:

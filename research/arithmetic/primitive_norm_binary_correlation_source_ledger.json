@@ -9,7 +9,7 @@
   "canonical_proofs": [
     {
       "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
-      "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+      "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
       "locator": "B.4-B.14; PointwiseBinaryCorrelations Section6; OddGaussianPointwise and OddGaussianAlmostAll; exact alternative-input scope Section7"
     },
     {
@@ -404,7 +404,8 @@
     "graph": "LG1uniform-offsetresidueisomorphism, LG2modkblocks, LG3contributingedgecutoffandsignedendpoint/shared-labeltransport reviewed.",
     "target_energy": "Sharp all-conductorPerron primeinput underZF; exactgcd-profileorthogonality and principalcentering; targetarcwidth and allsmallbankweights reviewed.",
     "assurance": "Internal written/source checking only. No external human review or local formal-verification run of this application. Imported recent preprints remain explicit; no historical-priority claim.",
-    "class_error_propagation": "The all-order arithmetic transfer now uses everydelta<delta_star(2Pic), with1/5 available in every fixed order and exact zero error if2Pic=0. Constants remain order dependent. This replaces only the lower-order class-error estimate and adds no zero-free/weighted-dilation input or new quantitative rate for the full leading-term transfer."
+    "class_error_propagation": "The all-order arithmetic transfer now uses everydelta<delta_star(2Pic), with1/5 available in every fixed order and exact zero error if2Pic=0. Constants remain order dependent. This replaces only the lower-order class-error estimate and adds no zero-free/weighted-dilation input or new quantitative rate for the full leading-term transfer.",
+    "form_extension": "SameFieldPrimitiveForms B.11a uses the already proved binary core input plus conductor-safe translated form-class shadows, separate genus masks and the mixed Haar transfer. The componentwise genus ratio and sharp order bounds have an independent classical route; the explicit leading constant retains the existing ZF/G inputs. No1/h divisor or new quantitative leading remainder is introduced."
   },
   "source_validation": {
     "path": "PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md",

@@ -9341,7 +9341,7 @@
           "id": "ARITH-ERDOS675-TRANSLATION-PROGRAMME",
           "title": "Erdos675: reviewed prime partitions and the open fixed norm-pattern target",
           "state": "partial",
-          "scope": "The existential prime-partition part of Erdos675 is established by the supplied prior Price construction, internally reconstructed using the verified qualitative Richert lower sieve; both conventions at1 and a density-zero enlargement of any baseline prime set are included. For the fixed sums-of-two-squares set, an exact polynomial-norm reduction, returns on every fixed modulus, positive local densities and an infinite initial-block-through8 Pell family are proved. Arbitrary-N fixed-set recurrence and the prescribed norm-tuple existence assertion remain OPEN. No novelty is claimed for the reviewed prior result or elementary worked consequences.",
+          "scope": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. The supplied prior Price prime-partition construction is reconstructed using the qualitative Richert lower sieve; both conventions at1 and density-zero enlargement are included. For the fixed sums-of-two-squares set, the exact polynomial-norm reduction, local densities and an infinite initial-eight-bit Pell family are retained. New support results give only an upper envelope and precise norm-field, finite-squareclass and Pell-function-field obstructions to specific attempted extensions. Primary norm-approximation theorems were checked and do not discharge the integer slice. Arbitrary-N fixed-set recurrence and all-N norm-tuple existence remain OPEN. No novelty claim, external human review or independent whole-proof replay is made.",
           "canonical_source": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
           "checker": "arithmetic/verify_erdos675_reduction.py",
           "artifact_hash": "sha256:94fec1c380c038cbe25fbd6467c819d20f3dbff9407376cad3c194f643d538aa",
@@ -9350,16 +9350,101 @@
             "arithmetic/verify_erdos675_reduction.py",
             "arithmetic/sources/price-erdos675-prime-partition-2026.tex",
             "arithmetic/sources/erdos-translation-properties-1979.pdf",
-            "arithmetic/sources/richert-sieve-methods-1976.pdf"
+            "arithmetic/sources/richert-sieve-methods-1976.pdf",
+            "arithmetic/verify_erdos675_constructive_controls.py",
+            "arithmetic/verify_erdos675_graph_controls.py",
+            "arithmetic/sources/browning-matthiesen-skorobogatov-pencils-2014.pdf",
+            "arithmetic/sources/derenthal-wei-strong-approximation-1311.3914v2.pdf",
+            "arithmetic/sources/cao-wei-xu-norm-varieties-1803.11003v5.pdf",
+            "arithmetic/sources/shute-norm-polynomials-beta-sieve-2025.pdf",
+            "arithmetic/sources/noordman-siegel-2101.07111v2.pdf"
           ],
           "proof_type": "written_and_exact_finite_checks",
           "independent_replay": false,
           "formal_verification": false,
           "external_review": false,
           "review_status": "internal_only",
-          "verification_note": "Internal written proof and primary-source review only. The supplied Price manuscript is prior work; its qualitative prime-partition argument was reconstructed using the inspected classical Richert lower sieve. The explicit 1974 numerical R(k) citation was not independently inspected and is unnecessary for that proof. The fixed sums-of-two-squares translation property and the prescribed polynomial-norm existence estimate remain open. Finite exact checks cover only their stated domains; no recent ZF/G input, external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
+          "verification_note": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
           "dependency_coverage": "partial",
-          "graph_scope_note": "The existential prime-partition part of Erdos675 is established by the supplied prior Price construction, internally reconstructed using the verified qualitative Richert lower sieve; both conventions at1 and a density-zero enlargement of any baseline prime set are included. For the fixed sums-of-two-squares set, an exact polynomial-norm reduction, returns on every fixed modulus, positive local densities and an infinite initial-block-through8 Pell family are proved. Arbitrary-N fixed-set recurrence and the prescribed norm-tuple existence assertion remain OPEN. No novelty is claimed for the reviewed prior result or elementary worked consequences."
+          "graph_scope_note": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. The supplied prior Price prime-partition construction is reconstructed using the qualitative Richert lower sieve; both conventions at1 and density-zero enlargement are included. For the fixed sums-of-two-squares set, the exact polynomial-norm reduction, local densities and an infinite initial-eight-bit Pell family are retained. New support results give only an upper envelope and precise norm-field, finite-squareclass and Pell-function-field obstructions to specific attempted extensions. Primary norm-approximation theorems were checked and do not discharge the integer slice. Arbitrary-N fixed-set recurrence and all-N norm-tuple existence remain OPEN. No novelty claim, external human review or independent whole-proof replay is made.",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_erdos675_constructive_controls.py",
+              "sha256": "310fbc8c2258d3648069c7fdd3c857ea91db043c32b0c09a50ad5e50cf62599f",
+              "locator": "Exact finite checks only; not arbitrary-N recurrence"
+            },
+            {
+              "path": "arithmetic/verify_erdos675_graph_controls.py",
+              "sha256": "5a23f5325ebd9547cee92ca1a00c557750068695c419d796692fc79bc9a23234",
+              "locator": "Exact finite checks only; not arbitrary-N recurrence"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-PRIMITIVE-FORM-GENUS-BINARY-INVARIANCE",
+          "title": "Classical binary invariance under componentwise genus replacement",
+          "state": "proved",
+          "scope": "Fix one imaginary quadratic field and two fixed orders of discriminantsDelta_i=f_i\u00b2D0. LetQ_i,Q_i_prime be primitive positive definite integral forms in the same genus for each sloti separately; the two slot genera may differ. Mixed primitive numerical-value counts have sharp order N J_S(N)/logN on every sufficiently large common locally admissible target and vanish outside it, S|2Delta1Delta2. Their ratio is1+O(log^-etaN), every0<eta<min_i delta_star(2Pic_i), with delta_star(0)=infinity encoding an exact zero class error. Constants/onsets depend on fixed forms/orders andeta; exponent1/5 works if any doubled group is nontrivial. Both-trivial groups give equal counts for every target. This classical assertion uses no ZF/G and no joint ring-class prime theorem. No genus is identified across discriminants, no different-field or varying-order theorem, no endpoint or quantitative full-leading remainder is asserted.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
+            "arithmetic/primitive_norm_all_order_source_ledger.json",
+            "arithmetic/primitive_norm_leading_constant_source_ledger.json",
+            "arithmetic/primitive_norm_binary_correlation_source_ledger.json",
+            "../unpublished/pointwise-binary-splitting-semigroups/forms.tex"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Fix one imaginary quadratic field and two fixed orders of discriminantsDelta_i=f_i\u00b2D0. LetQ_i,Q_i_prime be primitive positive definite integral forms in the same genus for each sloti separately; the two slot genera may differ. Mixed primitive numerical-value counts have sharp order N J_S(N)/logN on every sufficiently large common locally admissible target and vanish outside it, S|2Delta1Delta2. Their ratio is1+O(log^-etaN), every0<eta<min_i delta_star(2Pic_i), with delta_star(0)=infinity encoding an exact zero class error. Constants/onsets depend on fixed forms/orders andeta; exponent1/5 works if any doubled group is nontrivial. Both-trivial groups give equal counts for every target. This classical assertion uses no ZF/G and no joint ring-class prime theorem. No genus is identified across discriminants, no different-field or varying-order theorem, no endpoint or quantitative full-leading remainder is asserted.",
+          "sources": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+              "locator": "Theorem CommonFieldGenusInvariance; FM.6-FM.9 and its classical proof"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-COMMON-FIELD-PRIMITIVE-FORM-LEADING",
+          "title": "Explicit leading asymptotics for mixed primitive form values in one fixed field",
+          "state": "proved",
+          "scope": "For two fixed primitive positive definite forms of discriminantsDelta_i=f_i\u00b2D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route.",
+          "canonical_source": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
+            "arithmetic/primitive_norm_all_order_source_ledger.json",
+            "arithmetic/primitive_norm_leading_constant_source_ledger.json",
+            "arithmetic/primitive_norm_binary_correlation_source_ledger.json",
+            "../unpublished/pointwise-binary-splitting-semigroups/forms.tex"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For two fixed primitive positive definite forms of discriminantsDelta_i=f_i\u00b2D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route.",
+          "sources": [
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+              "locator": "Corollary CommonFieldFormPairs explicit leading assertion; FM.1-FM.7; mixed Haar reduction and one-sided class errors"
+            }
+          ]
         }
       ],
       "open_questions": [
@@ -9682,7 +9767,7 @@
           "source": "arithmetic/SQUARED_HECKE_EIGENVALUE_PAIRS.md"
         },
         {
-          "question": "Does the fixed sums-of-two-squares set have the translation property? Equivalently, for every N does Q_N(u) have a norm value at some positive integer u?",
+          "question": "Deferred stretch goal, outside the current papers: Does the fixed sums-of-two-squares set have the translation property? Equivalently, for every N does Q_N(u) have a norm value at some positive integer u?",
           "source": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
           "kind": "mathematical",
           "node": "ARITH-ERDOS675-SUMS-TWO-SQUARES-TRANSLATION"
@@ -9785,7 +9870,11 @@
         "Every fixed nonempty prime coset now has an unfiltered self-sum asymptotic. All negative/complex branches are retained for centering; generated residue group H and prime density rho remain distinct. The order-four class3 modulo10 has Gamma5/2 when5 divides the even target and15/8 otherwise. Arbitrary mixed/disjoint prime pairs, whole-value state filters and uniform intermediate growing shifts remain outside the theorem.",
         "One quadratic-character Euler-indicator theorem now covers the fixed-shift ordinary pair conjectures for x^2+d y^2,d=1,2,3,4,7 under the same explicit ZF/G imports, including d=2,h=1 coefficient1/sqrt2. The coupled bad-prime Haar factor and finite valuation masks prevent unsupported principal-form generalization; the d=3 inert2 and d=4,7 order restrictions are explicit. This is one coherent extension with no additional analytic hypothesis. Internal written application review, exact local checks and scoped primary-source inspection. ZF and G remain explicit imported analytic inputs; this extension does not independently revalidate their complete preprints. Finite checks certify only their stated domains. No independent whole-proof replay, formal verification, external human review, numerical onset, growing-shift uniformity or priority claim is asserted.",
         "The squared-Delta shift-one direction remains open. Classical Hecke/Miller input gives an unconditional truncated-pair asymptotic and positive normalized constant; the exact signed large-divisor remainder is unproved. A separate weighted marked comparison retains G/ideal inputs and bounded invariant factors; it supplies neither the unbounded-weight reduction nor the required automorphic frequency estimate.",
-        "Erdos675 now distinguishes a reviewed prior positive-density prime-partition construction from the OPEN fixed sums-of-two-squares translation question. A polynomial-norm reduction and an infinite initial-eight-bit Pell family are elementary partial results; local positivity does not prove all-N recurrence."
+        "Erdos675 now distinguishes a reviewed prior positive-density prime-partition construction from the OPEN fixed sums-of-two-squares translation question. A polynomial-norm reduction and an infinite initial-eight-bit Pell family are elementary partial results; local positivity does not prove all-N recurrence.",
+        "The675 continuation adds a prime-square upper bound and scoped obstructions to small-T norm sieves, finite-squareclass recurrence and a uniform Pell identity for position9. Checked primary approximation theorems do not produce the missing positive integer parameter; both fixed-set and tuple-existence goals remain OPEN.",
+        "Erdos675 is deferred as a separate stretch goal for later research. Its notes, exact checks and partial results are retained outside the current norm-counting and binary-correlation papers; no paper result depends on this programme.",
+        "Fix one imaginary quadratic field and two fixed orders of discriminantsDelta_i=f_i\u00b2D0. LetQ_i,Q_i_prime be primitive positive definite integral forms in the same genus for each sloti separately; the two slot genera may differ. Mixed primitive numerical-value counts have sharp order N J_S(N)/logN on every sufficiently large common locally admissible target and vanish outside it, S|2Delta1Delta2. Their ratio is1+O(log^-etaN), every0<eta<min_i delta_star(2Pic_i), with delta_star(0)=infinity encoding an exact zero class error. Constants/onsets depend on fixed forms/orders andeta; exponent1/5 works if any doubled group is nontrivial. Both-trivial groups give equal counts for every target. This classical assertion uses no ZF/G and no joint ring-class prime theorem. No genus is identified across discriminants, no different-field or varying-order theorem, no endpoint or quantitative full-leading remainder is asserted.",
+        "For two fixed primitive positive definite forms of discriminantsDelta_i=f_i\u00b2D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -89540,7 +89629,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "ede08d185e1bd0953fd4b4ffbbe0ffe513ae537c857dad68d3a6a6d9f45eef57",
+            "sha256": "6e021ef8cfa8722fe5bf333958b1e5a4e0fa566a361a058d9f734fa7502b560c",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           }
         ],
@@ -90415,7 +90504,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "ede08d185e1bd0953fd4b4ffbbe0ffe513ae537c857dad68d3a6a6d9f45eef57",
+            "sha256": "6e021ef8cfa8722fe5bf333958b1e5a4e0fa566a361a058d9f734fa7502b560c",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -90438,7 +90527,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "ede08d185e1bd0953fd4b4ffbbe0ffe513ae537c857dad68d3a6a6d9f45eef57",
+            "sha256": "6e021ef8cfa8722fe5bf333958b1e5a4e0fa566a361a058d9f734fa7502b560c",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -91536,7 +91625,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "ede08d185e1bd0953fd4b4ffbbe0ffe513ae537c857dad68d3a6a6d9f45eef57",
+            "sha256": "6e021ef8cfa8722fe5bf333958b1e5a4e0fa566a361a058d9f734fa7502b560c",
             "locator": "Targeted historical review: exact comparison, verified overlaps, access limitations and qualified verdict"
           },
           {
@@ -91561,7 +91650,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderValueCounts,O.1-O.3;fullconductor/ring-classproof"
           }
         ],
@@ -91884,7 +91973,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderGenusKernel,O.4-O.5"
           }
         ],
@@ -91903,7 +91992,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderPrimitiveShadow,O.6andcounterexample"
           }
         ],
@@ -91922,7 +92011,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderClassSaturation O.7; saturated-subgroup construction preserving conductor-local ideal types"
           }
         ],
@@ -91941,7 +92030,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderClassError O.3; O.7-O.8a and Section2 full-union marking proof"
           }
         ],
@@ -91960,7 +92049,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderLocalCosets,O.9"
           }
         ],
@@ -91979,7 +92068,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "OrderLocalProfiles,O.10-O.14"
           }
         ],
@@ -91998,7 +92087,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-            "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
             "locator": "Section4,O.15andcompletecombination"
           }
         ],
@@ -92079,7 +92168,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-            "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
             "locator": "OrderMarginalAndAverage,LC.1-LC.7"
           }
         ],
@@ -92098,7 +92187,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-            "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
             "locator": "ConditionalOrderLeadingTerm,LC.10-LC.15"
           }
         ],
@@ -92117,7 +92206,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-            "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
             "locator": "BinaryAuxiliaryRemoval,LC.16-LC.20"
           }
         ],
@@ -92136,7 +92225,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-            "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
             "locator": "BinaryCoreCorrelation,LC.9;Sections4and6"
           }
         ],
@@ -92157,7 +92246,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-            "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
             "locator": "ConditionalOrderLeadingTermandexplicitopenBinaryCoreCorrelation"
           }
         ],
@@ -92287,7 +92376,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-            "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+            "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
             "locator": "ConditionalGaussianLeading,B.10"
           }
         ],
@@ -92305,7 +92394,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-            "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+            "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
             "locator": "ConditionalAllOrderLeading,B.11"
           }
         ],
@@ -92323,7 +92412,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-            "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+            "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
             "locator": "ConditionalC12Leading,B.12"
           }
         ],
@@ -92341,7 +92430,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-            "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+            "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
             "locator": "PointwiseBinaryCorrelations Section6, B.4-B.12"
           }
         ],
@@ -92361,7 +92450,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-            "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+            "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
             "locator": "PointwiseBinaryCorrelations Section6, B.4-B.12"
           }
         ],
@@ -92419,7 +92508,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-            "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+            "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
             "locator": "OddGaussianAlmostAll B.14"
           },
           {
@@ -93939,7 +94028,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-            "sha256": "068e357ed98522f6cb6da64c5d3ec6e5d03a60eb2ea250e311638403b1d74191",
+            "sha256": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
             "locator": "cor:basis13"
           }
         ],
@@ -93957,7 +94046,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-            "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+            "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
             "locator": "lem:norm-genus"
           }
         ],
@@ -93975,7 +94064,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-            "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+            "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
             "locator": "prop:norm-class-error; saturated subgroup B_n, full Omega_M union and exact-one marked sieve"
           }
         ],
@@ -93993,7 +94082,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-            "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+            "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
             "locator": "thm:norm-order"
           }
         ],
@@ -94011,7 +94100,7 @@
         "sources": [
           {
             "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-            "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+            "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
             "locator": "thm:norm-leading"
           }
         ],
@@ -95157,11 +95246,11 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Opening status, equationT.1 and the unresolved polynomial-norm targetT.7"
           }
         ],
-        "assessment": "Internal written proof and primary-source review only. The supplied Price manuscript is prior work; its qualitative prime-partition argument was reconstructed using the inspected classical Richert lower sieve. The explicit 1974 numerical R(k) citation was not independently inspected and is unnecessary for that proof. The fixed sums-of-two-squares translation property and the prescribed polynomial-norm existence estimate remain open. Finite exact checks cover only their stated domains; no recent ZF/G input, external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+        "assessment": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. Internal written proof and primary-source review only. The supplied Price manuscript is prior work; its qualitative prime-partition argument was reconstructed using the inspected classical Richert lower sieve. The explicit 1974 numerical R(k) citation was not independently inspected and is unnecessary for that proof. The fixed sums-of-two-squares translation property and the prescribed polynomial-norm existence estimate remain open. Finite exact checks cover only their stated domains; no recent ZF/G input, external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
       },
       {
         "id": "HYP-ERDOS675-PRESCRIBED-NORM-TUPLES",
@@ -95175,11 +95264,11 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Section5 equationT.7, pairwise-coprime inner factors and exact global equivalence"
           }
         ],
-        "assessment": "Internal written proof and primary-source review only. The supplied Price manuscript is prior work; its qualitative prime-partition argument was reconstructed using the inspected classical Richert lower sieve. The explicit 1974 numerical R(k) citation was not independently inspected and is unnecessary for that proof. The fixed sums-of-two-squares translation property and the prescribed polynomial-norm existence estimate remain open. Finite exact checks cover only their stated domains; no recent ZF/G input, external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+        "assessment": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. Internal written proof and primary-source review only. The supplied Price manuscript is prior work; its qualitative prime-partition argument was reconstructed using the inspected classical Richert lower sieve. The explicit 1974 numerical R(k) citation was not independently inspected and is unnecessary for that proof. The fixed sums-of-two-squares translation property and the prescribed polynomial-norm existence estimate remain open. Finite exact checks cover only their stated domains; no recent ZF/G input, external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
       },
       {
         "id": "ARITH-ERDOS675-UNIFORM-LINEAR-ALMOST-PRIMES",
@@ -95193,7 +95282,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Lemma UniformLinearAlmostPrimes; equationsT.2-T.4 and uniform lower-sieve application"
           },
           {
@@ -95216,7 +95305,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Theorem PrimePartitionRecurrence; quantitative coloring budget and density-zero completion"
           },
           {
@@ -95239,7 +95328,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Lemma ModularReturn; finite-sums prefix construction and congruent partial sums"
           }
         ],
@@ -95257,7 +95346,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Proposition Erdos675NormReduction; valuation locking, coprime product and ModularReturn"
           }
         ],
@@ -95275,7 +95364,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Proposition Erdos675LocalAdmissibility; equationT.8 and disjoint odd-valuation events"
           }
         ],
@@ -95293,7 +95382,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Proposition Erdos675PellExample; exact norm identities and unit congruences"
           }
         ],
@@ -95334,7 +95423,7 @@
           },
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
             "locator": "Sections1-2 and final review boundary for the numerical citation"
           }
         ],
@@ -95363,6 +95452,494 @@
           }
         ],
         "assessment": "Current checker inspected and internally replayed to a scratch output byte-identical to the retained receipt. Finite evidence is separate from all analytic proof routes and gives no external/formal assurance."
+      },
+      {
+        "id": "ARITH-ERDOS675-UPPER-ENVELOPE",
+        "title": "Upper envelope for prescribed initial norm values",
+        "scope": "For each fixed N, with k=|E intersect[1,N]|, the number of positive u<=X for which every 1+(M_N/a)u is a sum of two squares is O_N(X/(log X)^(k/2)). The retained interval version has error O_N(X^(1/20)). The written Selberg proof uses inert prime-square valuation-one atoms, CRT remainders and a lower bound for the sieve denominator. This is only an upper bound and supplies no positive u or asymptotic.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "locator": "Section8 Proposition Erdos675UpperEnvelope; square atoms and Selberg denominator/error proof"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "ARITH-ERDOS675-NORM-FIELD-BARRIER",
+        "title": "Gaussian subfield obstruction to the small-T norm sieve",
+        "scope": "For any number field K containing Q(i), at least half the elements of its Galois-closure group have only even cycles in the action on embeddings of K. Consequently Shute's T(G)>=1/2, so the inspected norm-sieve hypotheses, whose optimized threshold stays below1/2, do not apply through any such extension. This rules out that field-extension repair, not general norm methods.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "locator": "Section9 Proposition Erdos675NormFieldBarrier; index-two subgroup cycle argument"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION",
+        "title": "Finite squareclass sets cannot reproduce every initial block",
+        "scope": "For every finite set D of positive integers, only finitely many positive t have all t+1,t+4,t+9 in the union of d*N^2 for d in D. The explicit integral map X=delta*t, Z=delta^2*Y gives a nonsingular elliptic curve, and Siegel finiteness applies. If1 is in D, arbitrary-prefix recurrence for that union is impossible by ModularReturn. The sums-of-two-squares set has infinitely many squareclasses, so this is not a negative solution to675.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "locator": "Section10 Proposition Erdos675FiniteSquareclassObstruction; integral elliptic transformation"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION",
+        "title": "No uniform next-position norm identity on the current Pell conic",
+        "scope": "On z^2-3k^2=-2 with m=2k^2-1, m^2+8 is not a norm from the Gaussian constant-field extension. The displayed factorization has two distinct quartics irreducible over Q(i), certified by all linear/quadratic divisor tests over F5; a conjugation-fixed prime has odd valuation. This excludes a rational-function sum-of-two-squares identity for position9 on this family. It does not exclude infinitely many represented specializations or another family.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "locator": "Section11 Proposition Erdos675PellFunctionFieldObstruction; quartic factorization and parity"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "ARITH-ERDOS675-CONSTRUCTIVE-CONTROLS",
+        "title": "Exact constructive controls and finite-field certificate",
+        "scope": "The executable checker verifies two polynomial identities, all60 monic degree-one/two divisor tests for the two quartics over F5, and24 finite square-repair invariants. The exhaustive polynomial certificate supports the written function-field obstruction. Its bounded experiments do not prove arbitrary-N recurrence or its impossibility; optimized Python is rejected.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_erdos675_constructive_controls.py",
+            "sha256": "310fbc8c2258d3648069c7fdd3c857ea91db043c32b0c09a50ad5e50cf62599f",
+            "locator": "Exact identities, exhaustive F5 quartic certificate and bounded repair controls"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "ARITH-ERDOS675-GRAPH-CONTROLS",
+        "title": "Exact finite graph/projection and prime-square controls",
+        "scope": "The executable checker verifies3 prime controls, the explicit raw-permutation average0 versus marked average1/2,4 sparse marginals,6 sparse pairs,2 positive-Schur controls and96 prime-square root counts. These facts only audit the stated encodings and bounded atoms. They do not prove a general graph-method obstruction or arbitrary-N existence; optimized Python is rejected.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/verify_erdos675_graph_controls.py",
+            "sha256": "5a23f5325ebd9547cee92ca1a00c557750068695c419d796692fc79bc9a23234",
+            "locator": "Finite projection, sparse, Schur and square-atom controls"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "EXT-ERDOS675-BMS-NORM-PENCILS",
+        "title": "Rational points on pencils of conics and quadrics with many degenerate fibres: inspected interface",
+        "scope": "Inspected Theorems1.1-1.3 give rational-point/weak-approximation results; the norm-pencil formulation requires at least two homogeneous base variables with pairwise nonproportional forms. Rational base parameters and denominators do not supply the positive integer fixed slice in675.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/browning-matthiesen-skorobogatov-pencils-2014.pdf",
+            "sha256": "d817c4bef1880cdc09643fae43a172aee7c925b4a504ad378969c41639082f80",
+            "locator": "Theorems1.1-1.3, printedpp382-384; rational/weak approximation with at least two homogeneous base variables, not the integer slice"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "EXT-ERDOS675-DERENTHAL-WEI-STRONG-APPROX",
+        "title": "Strong approximation and descent: inspected interface",
+        "scope": "Inspected Theorem1.2 is strong approximation off infinity under its stated norm-form hypotheses: at least two base variables; factors pairwise proportional or affinely independent; relevant real components contain balls of arbitrarily large radius. Fixing an integer slice by a bounded-width strip violates the last condition. No strong approximation off an inert finite place is imported.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/derenthal-wei-strong-approximation-1311.3914v2.pdf",
+            "sha256": "c4ad7a9aa5d0e4ef385449437a79a93581a75114b33d2f2fe9766c836a8b90b2",
+            "locator": "Theorem1.2p3, Remark5.5 and Corollary5.7p20; off infinity, s>=2, affine-independence and unbounded real-component conditions"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "EXT-ERDOS675-CAO-WEI-XU-NORM-APPROX",
+        "title": "Strong approximation for a family of norm varieties: inspected interface",
+        "scope": "Inspected unconditional norm-variety theorem requires, for each polynomial factor, a root-field embedding into a norm field or the corresponding field degree dividing its exponent. For linear factors of exponent1 and Gaussian norm fields neither condition holds. The alternative inspected cyclic route is conditional on Schinzel's hypothesis; no such conjecture is assumed here.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/cao-wei-xu-norm-varieties-1803.11003v5.pdf",
+            "sha256": "35de675c1a0dc31e0b0102f67ee5bfa87faecc98623a3935f6066d6d564108d3",
+            "locator": "Theorems1.2-1.3p3 and Corollary4.6p23; linear-root embedding/exponent hypotheses fail for Gaussian norms; other route conditional on Schinzel"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "EXT-ERDOS675-SHUTE-NORM-SIEVE",
+        "title": "Polynomials represented by norm forms via the beta sieve: inspected interface",
+        "scope": "Definition(1.3) defines T(G) as the proportion of permutation-group elements with no odd cycle. Inspected Theorem1.1 is a rational-point norm-sieve theorem under an explicit small-T condition T(G)<=0.39/(k+j+1); the following optimization discussion never reaches1/2. The Gaussian case fails that hypothesis. The definition is used in the internal index-two subgroup obstruction.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/shute-norm-polynomials-beta-sieve-2025.pdf",
+            "sha256": "f75a80eeda092958139caa122575be3a4d24135987cbdfabaf24af1ea204d241",
+            "locator": "Definition(1.3), Theorem1.1 and following optimisation remark; T(G)<1/2 barrier. Actual conclusion concerns rational points"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "EXT-ERDOS675-SIEGEL-ELLIPTIC-INTEGRAL-POINTS",
+        "title": "Siegel's theorem via the Lawrence-Venkatesh method: inspected interface",
+        "scope": "Corollary4.3 states finiteness of S-integral points on an elliptic curve. Its use here is restricted to the nonsingular genus-one curves obtained by the explicit integral change of variables in Section10. It is not an existence theorem for675 or a general higher-genus result imported here.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/noordman-siegel-2101.07111v2.pdf",
+            "sha256": "c6eb99454f305157f6d8360006bf9e04685496c4c6d17ac31b86f0479a691975",
+            "locator": "Corollary4.3p9: finiteness of S-integral points on elliptic curves. Supports a scoped genus-one squareclass obstruction, not existence for675"
+          }
+        ],
+        "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
+        "evidence_type": "external_theorem"
+      },
+      {
+        "id": "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW",
+        "title": "Primitive form values as a conductor-safe translated ideal-class shadow",
+        "scope": "For primitiveQ=ax\u00b2+bxy+cy\u00b2 of fixed negative discriminantDelta, A=[a,(b+sqrtDelta)/2] is proper invertible withnorma even whena meets the conductor, andc_Q=-[A]. A positive primitive value is the norm of a primitive integral invertible ideal in classc_Q; local primitive representability is existence of one in c_Q+2Pic. The conductor-divisible numerical norm is not assigned a unique genus. The explicit ideal product and primitivity equivalence are written.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+            "locator": "Lemma FormIdealShadow; F.1-F.2 and complete proof"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-PRIMITIVE-FORM-CLASS-SATURATION",
+        "title": "Saturation targets any compatible form class",
+        "scope": "For a fixed order and any form targetc_Q, saturated good inverse-class families generateB_n<=2Pic. IfB_n=2Pic their independent orientation changes cancel the residual difference fromc_Q, preserving norm, primitivity and conductor-local ideals. A hidden failure has the same full outside-maximal-subgroup cover k_M<=K_M and densityd_M as the principal case. No prime-class partition across two orders is assumed.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+            "locator": "Proof of FormClassError; translated target c_Q and the same Omega_M,K_M cover"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-FIXED-DISCRIMINANT-FORM-CLASS-ERROR",
+        "title": "Mixed same-discriminant primitive-form class error",
+        "scope": "For two fixed forms at one discriminantDelta, the difference between their mixed local-shadow convolution and actual primitive value convolution is O_Delta,eta(N J_Delta/log^(1+eta)N), allN>=3 and target valuations, everyeta<delta_star(2Pic), with universaleta1/5 and fixed-order constants. If2Pic=0 each individual global set equals its local shadow, so error zero. Same exact-one marked sieve; no ZF/G or endpoint.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+            "locator": "Theorem FormClassError F.3; one-sided charging and unchanged marked CRT sieve"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS",
+        "title": "Separate genus filters retain the common quadratic core",
+        "scope": "For a fixed primitive form and any fixed enlarged bad-prime setS containing2Delta, local multiplierslambda_p=N(z_p)/n(A) are units with product_bad Hilbert(lambda_p,D0)=1. Actual prefix masks retain the separate local biases but lie inH=kerchi moduloL=8rad_odd(S), and the local shadow is the exact disjoint union r{c in common good split core:cmodL in A_(r,Q)}. This uses global Hilbert reciprocity, not equality of the local biases with principal-form biases.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+            "locator": "Lemma FormGenusCoreFilters F.4-F.5; full Hilbert-product calculation"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-FIXED-DISCRIMINANT-FORM-SHADOW-COUNTS",
+        "title": "Classical mixed form-shadow counts at one discriminant",
+        "scope": "For fixed forms of one discriminant, arbitrary slot genera and separate actual H-filters, finite Hensel cosets and bounded valuation profiles reduce local admissibility to finitely many positive fixed-filter roots. The older classical quadratic filter lower bound and unmarked inert upper sieve give shadow count comparable to N J_Delta/logN on sufficiently large admissible targets. No pointwise leading asymptotic or ZF/G is used.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+            "locator": "Classical lower/upper-bound part of proof of GenusBinaryInvariance; separate filters and finite profiles"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-FIXED-DISCRIMINANT-FORM-GENUS-INVARIANCE",
+        "title": "Classical corresponding-genus invariance at one discriminant",
+        "scope": "For four fixed forms at one discriminant, Q1,Q1_prime share a genus and Q2,Q2_prime share a genus independently; the two slot genera may differ. Mixed actual counts have ratio1+O(log^-etaN) on their common sufficiently large admissible targets for each eta<delta_star(2Pic). Both counts vanish outside the local set; exact equality at every target if2Pic=0. Constants fixed-data dependent; no ZF/G, endpoint or priority claim.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+            "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+            "locator": "Theorem GenusBinaryInvariance F.6 and complete classical proof"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-COMMON-FIELD-FORM-CLASS-ERROR",
+        "title": "One-sided class errors for two fixed conductors in one field",
+        "scope": "For two fixed orders/forms in one field, commonS|2Delta1Delta2, mixed shadow minus actual count is O(N J_S/log^(1+eta)N) allN>=3, everyeta<min_i delta_star(2Pic_i). A trivial doubled group contributes zero; both trivial give exact equality. Mark one exceptional summand in its own order at a time. Deleting extra bad primes is finite and preserves each density; no joint ring-class prime theorem or ZF/G is required.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+            "locator": "FM.8 and first part of proof of CommonFieldGenusInvariance; independent one-sided marking"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-COMMON-FIELD-FORM-SHADOW-COUNTS",
+        "title": "Classical common-field mixed shadow order bounds",
+        "scope": "Two fixed orders/forms in one field use the common split core and distinct actual H-masks. The local exponent e_p=1+2max_i v_pDelta_i gives full cosets and bounded valuation profiles for both slots. Classical fixed-filter lower estimates and unmarked inert upper estimates give sharp N J_S/logN order on every sufficiently large admissible target, uniformly in target valuations. No ZF/G, different-field or varying-order claim.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+            "locator": "Classical profile/lower-bound part of proof of CommonFieldGenusInvariance; common max exponent and separate masks"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-MIXED-FORM-HAAR-LEADING-REDUCTION",
+        "title": "Mixed primitive-form Haar leading-term reduction",
+        "scope": "Conditional on the fixed-prefix BinaryCoreCorrelation, two form shadows in one fixed field have coefficient b_(D0,S) product_bad mixed d_(p;1,2)(N). Separate original filters survive gcd cancellation; each unit-pair root has measureg/(Lrs), and sumGamma*g/(rs)=4alpha^-2 product_bad d. The uniform unmarked inert prefix bound plus the summable double-prefix series justifies the finite-first tail-second limit. No class-number divisor or quantitative full-leading rate is inferred.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+            "locator": "Proof of FormBinaryLeading FM.1-FM.5 and CommonFieldFormPairs; exact per-root Haar measure and summable prefix tail"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-FIXED-DISCRIMINANT-FORM-LEADING",
+        "title": "Mixed primitive-form leading asymptotic at one discriminant",
+        "scope": "For two fixed primitive forms of one negative discriminant, the same existing binary core input gives the explicit mixed local Haar leading coefficient b_(D0,S) product_bad d times N J_Delta/logN, uniformly on large admissible targets; zero otherwise. The coefficient depends on the two respective genera, not a1/h divisor. Actual values follow from the same-discriminant class error; the full remainder is relativeo(1).",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+            "locator": "Theorem FormBinaryLeading FM.1-FM.5 and complete proof"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-COMMON-FIELD-FORM-PAIRS",
+        "title": "Complete mixed primitive-form pair theorem for a common fixed field",
+        "scope": "For two fixed orders/forms in one field, the classical order bounds and componentwise same-genus ratio have their independent classical proof, while the explicit mixed Haar asymptotic uses the existing binary core/ZF/G input. Local genera are compared within each respective discriminant, never across conductors; no different-field claim or new quantitative full-leading remainder.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+            "locator": "Corollary CommonFieldFormPairs and independent Theorem CommonFieldGenusInvariance"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
+        "title": "thm:genus-binary-invariance in Pointwise Binary Correlations",
+        "scope": "Classical componentwise genus invariance, one fixed discriminant, arbitrary two slot genera; no ZF/G.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+            "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+            "locator": "thm:genus-binary-invariance"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING",
+        "title": "thm:form-binary-leading in Pointwise Binary Correlations",
+        "scope": "Explicit mixed primitive numerical-form leading term at one discriminant with mixed local Haar factors and existing binary inputs.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+            "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+            "locator": "thm:form-binary-leading"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
+        "title": "lem:form-ideal-shadow in Pointwise Binary Correlations",
+        "scope": "Conductor-safe primitive form ideal correspondence and existential coset c_Q+2Pic.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+            "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+            "locator": "lem:form-ideal-shadow"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
+      },
+      {
+        "id": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+        "title": "cor:common-field-form-pairs in Pointwise Binary Correlations",
+        "scope": "Two fixed conductors in one field; independent classical genus comparison and explicit mixed leading asymptotic with existing binary inputs.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "own_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+            "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+            "locator": "cor:common-field-form-pairs"
+          }
+        ],
+        "assessment": "Current written arithmetic/application argument, internally audited at its exact scope. Numerical primitive values are counted once. Finite group checks retain their own finite domains. No external human review, formal verification, independent imported-input revalidation, priority claim, effective onset or varying-order uniformity is inferred."
       }
     ],
     "implications": [
@@ -144374,7 +144951,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "ede08d185e1bd0953fd4b4ffbbe0ffe513ae537c857dad68d3a6a6d9f45eef57",
+          "sha256": "6e021ef8cfa8722fe5bf333958b1e5a4e0fa566a361a058d9f734fa7502b560c",
           "locator": "Plaksin specialization, finite local prime-unit test and elementary O(N^(1/2+epsilon)) gcd deletion"
         },
         "dependency_coverage": "partial"
@@ -145078,7 +145655,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "OrderGenusKernel,O.4-O.5"
         },
         "dependency_coverage": "partial"
@@ -145092,7 +145669,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "OrderPrimitiveShadow,O.6"
         },
         "dependency_coverage": "partial"
@@ -145107,7 +145684,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "OrderClassSaturation O.7; B_n from saturated good classes, full outside-maximal-subgroup deficiency and conductor types unchanged"
         },
         "dependency_coverage": "partial"
@@ -145123,7 +145700,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "OrderClassError O.3 and O.7-O.8a; finite uniondensityd_M, exact-one random marks, all target valuations and sameN^(9/20) endpoint"
         },
         "dependency_coverage": "partial"
@@ -145137,7 +145714,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "OrderLocalCosets,O.9;directstrongHenselargument"
         },
         "dependency_coverage": "partial"
@@ -145152,7 +145729,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "O.10-O.14,OrderLocalProfiles"
         },
         "dependency_coverage": "partial"
@@ -145168,7 +145745,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "Section4,arbitraryquadraticvectorfilterandfiniteunionstates"
         },
         "dependency_coverage": "partial"
@@ -145183,7 +145760,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "FinalcombinationofO.2andO.3"
         },
         "dependency_coverage": "partial"
@@ -145197,7 +145774,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "locator": "OrderValueCounts,allfixedorders"
         },
         "dependency_coverage": "partial"
@@ -145213,7 +145790,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-          "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "locator": "OrderMarginalAndAverage,LC.1-LC.7"
         },
         "dependency_coverage": "partial"
@@ -145227,7 +145804,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-          "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "locator": "BinaryAuxiliaryRemoval,LC.16-LC.20"
         },
         "dependency_coverage": "partial"
@@ -145243,7 +145820,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-          "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "locator": "ConditionalOrderLeadingTerm,LC.10-LC.15;proofisconditionalimplication"
         },
         "dependency_coverage": "partial"
@@ -145259,7 +145836,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-          "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "locator": "Provedcalibration/averages/reductions;pointwisegapretained"
         },
         "dependency_coverage": "partial"
@@ -145274,7 +145851,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-          "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "locator": "ConditionalOrderLeadingTerm,LC.10-LC.15"
         },
         "dependency_coverage": "partial"
@@ -145291,7 +145868,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "TheoremConditionalBinarySemigroups,fullB.4proof;logicalclaimretainsZF/G"
         },
         "dependency_coverage": "partial"
@@ -145305,7 +145882,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "B.10,threeexactcoredecompositions"
         },
         "dependency_coverage": "partial"
@@ -145321,7 +145898,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "B.11,earlierconductor-tail/Haartransfer"
         },
         "dependency_coverage": "partial"
@@ -145335,7 +145912,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "B.12,identitysubgroupmod12andexplicitbadfactor"
         },
         "dependency_coverage": "partial"
@@ -145351,7 +145928,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "B.4afterbothmathematicalinputsareestablished"
         },
         "dependency_coverage": "partial"
@@ -145365,7 +145942,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "B.4quadraticH1=H2specialization"
         },
         "dependency_coverage": "partial"
@@ -145379,7 +145956,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "B.12identityH1=H2mod12"
         },
         "dependency_coverage": "partial"
@@ -145397,7 +145974,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "PointwiseBinaryCorrelations Section6; formulasB.4/B.10/B.11/B.12; supportModuleF exacterrorbudget"
         },
         "dependency_coverage": "partial"
@@ -145413,7 +145990,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "locator": "OddGaussianPointwise B.13; direct B.4 specialization L0=4,Gamma4; Section6 discharges ZF/G; no class/order transfer"
         },
         "dependency_coverage": "partial"
@@ -146374,7 +146951,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-          "sha256": "068e357ed98522f6cb6da64c5d3ec6e5d03a60eb2ea250e311638403b1d74191",
+          "sha256": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
           "locator": "cor:basis13 and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146390,7 +146967,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+          "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
           "locator": "lem:norm-genus and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146405,7 +146982,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+          "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
           "locator": "prop:norm-class-error and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146422,7 +146999,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+          "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
           "locator": "thm:norm-order and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -146440,7 +147017,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+          "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
           "locator": "thm:norm-leading and its complete proof"
         },
         "description": "Inspected manuscript application of the named canonical/imported inputs; no assurance flag is propagated."
@@ -147243,7 +147820,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "locator": "Proof of Lemma UniformLinearAlmostPrimes; dimension<=k, uniform product and remainder bounds, fixed sieve ratio"
         }
       },
@@ -147257,7 +147834,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "locator": "Proof of Theorem PrimePartitionRecurrence; fixed finite patterns, bounded forced primes and all-scale density control"
         }
       },
@@ -147272,7 +147849,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "locator": "Proof of Proposition Erdos675NormReduction, including the indispensable pairwise-coprimality argument"
         }
       },
@@ -147286,7 +147863,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "locator": "Proof of Proposition Erdos675LocalAdmissibility; exact inert odd-valuation masses and convergent normalized product"
         }
       },
@@ -147300,7 +147877,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "locator": "Proof of Proposition Erdos675PellExample; explicit identities, congruences and increasing Pell units"
         }
       },
@@ -147315,7 +147892,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "locator": "Proposition Erdos675NormReduction: the direction from the unproved all-N positive polynomial-norm assertion to recurrence"
         }
       },
@@ -147325,15 +147902,337 @@
           "ARITH-ERDOS675-PRIME-PARTITION-RECURRENCE",
           "ARITH-ERDOS675-NORM-REDUCTION",
           "ARITH-ERDOS675-LOCAL-ADMISSIBILITY",
-          "ARITH-ERDOS675-PELL-INITIAL-BLOCK"
+          "ARITH-ERDOS675-PELL-INITIAL-BLOCK",
+          "ARITH-ERDOS675-UPPER-ENVELOPE",
+          "ARITH-ERDOS675-NORM-FIELD-BARRIER",
+          "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION",
+          "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION"
         ],
         "conclusion": "ARITH-ERDOS675-TRANSLATION-PROGRAMME",
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
-          "locator": "Scoped assembly of the reviewed prime-partition theorem and elementary fixed-set reductions; the full E target remains open"
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "locator": "Scoped assembly: reviewed prime-partition theorem, norm reductions, upper bound and limited obstructions; full E target OPEN"
+        }
+      },
+      {
+        "id": "ERDOS675-PRIME-SQUARE-UPPER-ENVELOPE",
+        "premises": [
+          "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
+          "EXT-SMILANSKY-FIVE-REPRESENTATION-CRITERIA"
+        ],
+        "conclusion": "ARITH-ERDOS675-UPPER-ENVELOPE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "locator": "Section8 proof of Proposition Erdos675UpperEnvelope; Selberg identity, CRT error and inert Mertens input"
+        }
+      },
+      {
+        "id": "ERDOS675-GAUSSIAN-NORM-FIELD-BARRIER",
+        "premises": [
+          "EXT-ERDOS675-SHUTE-NORM-SIEVE"
+        ],
+        "conclusion": "ARITH-ERDOS675-NORM-FIELD-BARRIER",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "locator": "Section9 proof of Proposition Erdos675NormFieldBarrier; elementary index-two subgroup cycle argument"
+        }
+      },
+      {
+        "id": "ERDOS675-FINITE-SQUARECLASS-SIEGEL-OBSTRUCTION",
+        "premises": [
+          "EXT-ERDOS675-SIEGEL-ELLIPTIC-INTEGRAL-POINTS",
+          "ARITH-ERDOS675-MODULAR-RETURN"
+        ],
+        "conclusion": "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "locator": "Section10 proof of Proposition Erdos675FiniteSquareclassObstruction; elliptic finiteness and unbounded modular returns"
+        }
+      },
+      {
+        "id": "ERDOS675-PELL-FUNCTION-FIELD-CERTIFICATE",
+        "premises": [
+          "ARITH-ERDOS675-CONSTRUCTIVE-CONTROLS"
+        ],
+        "conclusion": "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "locator": "Section11 proof of Proposition Erdos675PellFunctionFieldObstruction; complete irreducibility certificate and odd valuation"
+        }
+      },
+      {
+        "id": "FORM-IDEAL-SHADOW",
+        "premises": [
+          "ARITH-ALL-ORDER-GENUS-KERNEL",
+          "EXT-ORDER-PROPER-IDEALS-GENUS"
+        ],
+        "conclusion": "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+          "locator": "FormIdealShadow F.1-F.2; explicit arbitrary-coefficient ideal and translated Theta kernel"
+        }
+      },
+      {
+        "id": "FORM-TARGET-CLASS-SATURATION",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW",
+          "EXT-ORDER-PIC-FINITENESS"
+        ],
+        "conclusion": "ARITH-PRIMITIVE-FORM-CLASS-SATURATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+          "locator": "Proof of FormClassError; reserved orientations target c_Q instead of zero"
+        }
+      },
+      {
+        "id": "FORM-SAME-DISCRIMINANT-CLASS-ERROR",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-CLASS-SATURATION",
+          "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE",
+          "EXT-ORDER-CLASS-PRIME-MERTENS"
+        ],
+        "conclusion": "ARITH-FIXED-DISCRIMINANT-FORM-CLASS-ERROR",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+          "locator": "FormClassError F.3; same maximal-subgroup density and exact-one sieve"
+        }
+      },
+      {
+        "id": "FORM-GENUS-CORE-FILTERS",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW",
+          "EXT-MAXIMAL-HASSE-HILBERT-NORMS"
+        ],
+        "conclusion": "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+          "locator": "FormGenusCoreFilters F.4-F.5; local unit multiplier and full global Hilbert product"
+        }
+      },
+      {
+        "id": "FORM-SAME-DISCRIMINANT-SHADOW-COUNTS",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS",
+          "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER"
+        ],
+        "conclusion": "ARITH-FIXED-DISCRIMINANT-FORM-SHADOW-COUNTS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+          "locator": "Classical finite-profile part of GenusBinaryInvariance proof; Hensel cap and distinct H-filters"
+        }
+      },
+      {
+        "id": "FORM-SAME-DISCRIMINANT-GENUS-INVARIANCE",
+        "premises": [
+          "ARITH-FIXED-DISCRIMINANT-FORM-CLASS-ERROR",
+          "ARITH-FIXED-DISCRIMINANT-FORM-SHADOW-COUNTS"
+        ],
+        "conclusion": "ARITH-FIXED-DISCRIMINANT-FORM-GENUS-INVARIANCE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
+          "locator": "GenusBinaryInvariance F.6; identical componentwise shadows and classical positive lower bound"
+        }
+      },
+      {
+        "id": "FORM-COMMON-FIELD-CLASS-ERROR",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-CLASS-SATURATION",
+          "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS",
+          "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE",
+          "EXT-ORDER-CLASS-PRIME-MERTENS"
+        ],
+        "conclusion": "ARITH-COMMON-FIELD-FORM-CLASS-ERROR",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "CommonFieldGenusInvariance FM.8; independent one-sided marks, no joint ring-class input"
+        }
+      },
+      {
+        "id": "FORM-COMMON-FIELD-SHADOW-COUNTS",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS",
+          "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER"
+        ],
+        "conclusion": "ARITH-COMMON-FIELD-FORM-SHADOW-COUNTS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "CommonFieldGenusInvariance classical profile proof; common e_p and arbitrary distinct masks"
+        }
+      },
+      {
+        "id": "FORM-COMMON-FIELD-GENUS-INVARIANCE",
+        "premises": [
+          "ARITH-COMMON-FIELD-FORM-CLASS-ERROR",
+          "ARITH-COMMON-FIELD-FORM-SHADOW-COUNTS"
+        ],
+        "conclusion": "ARITH-PRIMITIVE-FORM-GENUS-BINARY-INVARIANCE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "CommonFieldGenusInvariance FM.6-FM.9; subtract errors and divide by classical shadow lower"
+        }
+      },
+      {
+        "id": "FORM-MIXED-HAAR-REDUCTION",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS",
+          "ARITH-MAXIMAL-ORDER-EXACT-ONE-SIEVE",
+          "EXT-ORDER-CORE-SELBERG-DELANGE"
+        ],
+        "conclusion": "ARITH-MIXED-FORM-HAAR-LEADING-REDUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "FormBinaryLeading FM.4-FM.5 and common-field extension; conditional core limit, exact root mass and summable prefix tail"
+        }
+      },
+      {
+        "id": "FORM-SAME-DISCRIMINANT-LEADING",
+        "premises": [
+          "ARITH-MIXED-FORM-HAAR-LEADING-REDUCTION",
+          "ARITH-FIXED-DISCRIMINANT-FORM-CLASS-ERROR",
+          "GAP-PRIMITIVE-NORM-BINARY-CORRELATION"
+        ],
+        "conclusion": "ARITH-FIXED-DISCRIMINANT-FORM-LEADING",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "FormBinaryLeading FM.3; binary core supplied, Haar reduction and actual-value class transfer"
+        }
+      },
+      {
+        "id": "FORM-COMMON-FIELD-LEADING",
+        "premises": [
+          "ARITH-MIXED-FORM-HAAR-LEADING-REDUCTION",
+          "ARITH-COMMON-FIELD-FORM-CLASS-ERROR",
+          "GAP-PRIMITIVE-NORM-BINARY-CORRELATION"
+        ],
+        "conclusion": "ARITH-COMMON-FIELD-PRIMITIVE-FORM-LEADING",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "CommonFieldFormPairs; supplied common-core binary asymptotic, mixed Haar and two independent class errors"
+        }
+      },
+      {
+        "id": "FORM-COMMON-FIELD-PAIRS",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-GENUS-BINARY-INVARIANCE",
+          "ARITH-COMMON-FIELD-PRIMITIVE-FORM-LEADING"
+        ],
+        "conclusion": "ARITH-COMMON-FIELD-FORM-PAIRS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+          "locator": "CommonFieldFormPairs; classical and explicit-leading conclusions kept separate"
+        }
+      },
+      {
+        "id": "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
+        "premises": [
+          "ARITH-FIXED-DISCRIMINANT-FORM-GENUS-INVARIANCE"
+        ],
+        "conclusion": "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+          "locator": "thm:genus-binary-invariance and its complete scoped arithmetic/analytic proof"
+        }
+      },
+      {
+        "id": "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING",
+        "premises": [
+          "ARITH-FIXED-DISCRIMINANT-FORM-LEADING"
+        ],
+        "conclusion": "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+          "locator": "thm:form-binary-leading and its complete scoped arithmetic/analytic proof"
+        }
+      },
+      {
+        "id": "MS-ROUTE-ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
+        "premises": [
+          "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW",
+          "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS"
+        ],
+        "conclusion": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+          "locator": "lem:form-ideal-shadow and its complete scoped arithmetic/analytic proof"
+        }
+      },
+      {
+        "id": "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+        "premises": [
+          "ARITH-COMMON-FIELD-FORM-PAIRS",
+          "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
+          "ARITH-MS-FLAGSHIP-THM-GENERAL"
+        ],
+        "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+          "locator": "cor:common-field-form-pairs and its complete scoped arithmetic/analytic proof"
         }
       }
     ],
@@ -167079,6 +167978,14 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+              "locator": "Existing quadratic Hilbert norm criterion and global reciprocity reused in FormGenusCoreFilters F.5; individual lambda_p biases retained and their full product equals1",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS"
+              ]
             }
           ],
           "verification": "source_read",
@@ -173990,6 +174897,14 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
               ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+              "locator": "Existing Lemma2(5.2) separately for each fixed order after deleting common badS; one-sided marked families only, no joint ring-class distribution theorem",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-COMMON-FIELD-FORM-CLASS-ERROR"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -174410,6 +175325,22 @@
               "role": "context",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
+              "locator": "Def2.8 and PropA.1 reused for local principality and kernel2Pic; Lemma10.2 printedp240/PDFp96 elementary normalized ideal-form parametrization compared with the explicit plus-b construction and primitivity proof here",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW"
+              ]
+            },
+            {
+              "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+              "locator": "Lemma10.2 arithmetic ideal-form parametrization only; arbitrary-coefficient ideal and primitive-coordinate equivalence are proved explicitly, with no conductor-coprimality restriction",
+              "role": "context",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
               ]
             }
           ],
@@ -175523,6 +176454,15 @@
                 "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
                 "ARITH-ERDOS675-UNIFORM-LINEAR-ALMOST-PRIMES"
               ]
+            },
+            {
+              "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+              "locator": "Section8 Selberg upper identity, Theorem11.5 and square-atom CRT error control",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
+                "ARITH-ERDOS675-UPPER-ENVELOPE"
+              ]
             }
           ],
           "resource_type": "book",
@@ -175827,6 +176767,153 @@
           "verification": "citation_only",
           "resource_type": "book",
           "verification_basis": "Bibliographic identity and secondary corroboration only; no mathematical premise uses the uninspected explicit formula."
+        },
+        {
+          "id": "EXT-PAPER-BMS-NORM-PENCILS-2014",
+          "title": "Rational points on pencils of conics and quadrics with many degenerate fibres",
+          "citation": "Browning, Matthiesen and Skorobogatov, Published final Annals of Mathematics180(2014),381-402 edition.",
+          "urls": [
+            "https://doi.org/10.4007/annals.2014.180.1.8",
+            "https://annals.math.princeton.edu/wp-content/uploads/annals-v180-n1-p08-p.pdf"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/browning-matthiesen-skorobogatov-pencils-2014.pdf",
+              "sha256": "d817c4bef1880cdc09643fae43a172aee7c925b4a504ad378969c41639082f80",
+              "locator": "Theorems1.1-1.3, printedpp382-384; rational/weak approximation with at least two homogeneous base variables, not the integer slice"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+              "locator": "Section9 applicability audit",
+              "role": "context",
+              "nodes": [
+                "EXT-ERDOS675-BMS-NORM-PENCILS"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Actual primary statements and relevant hypotheses read; cached exact edition. Inspected Theorems1.1-1.3 give rational-point/weak-approximation results; the norm-pencil formulation requires at least two homogeneous base variables with pairwise nonproportional forms. Rational base parameters and denominators do not supply the positive integer fixed slice in675. No complete external proof replay or675 existence input is asserted."
+        },
+        {
+          "id": "EXT-PAPER-DERENTHAL-WEI-STRONG-APPROXIMATION-1311.3914V2",
+          "title": "Strong approximation and descent",
+          "citation": "Ulrich Derenthal and Dasheng Wei, arXiv1311.3914v2,12December2014; PDF internal date26November2014.",
+          "urls": [
+            "https://arxiv.org/abs/1311.3914v2",
+            "https://arxiv.org/pdf/1311.3914v2"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/derenthal-wei-strong-approximation-1311.3914v2.pdf",
+              "sha256": "c4ad7a9aa5d0e4ef385449437a79a93581a75114b33d2f2fe9766c836a8b90b2",
+              "locator": "Theorem1.2p3, Remark5.5 and Corollary5.7p20; off infinity, s>=2, affine-independence and unbounded real-component conditions"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+              "locator": "Section9 applicability audit",
+              "role": "context",
+              "nodes": [
+                "EXT-ERDOS675-DERENTHAL-WEI-STRONG-APPROX"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "preprint",
+          "verification_basis": "Actual primary statements and relevant hypotheses read; cached exact edition. Inspected Theorem1.2 is strong approximation off infinity under its stated norm-form hypotheses: at least two base variables; factors pairwise proportional or affinely independent; relevant real components contain balls of arbitrarily large radius. Fixing an integer slice by a bounded-width strip violates the last condition. No strong approximation off an inert finite place is imported. No complete external proof replay or675 existence input is asserted."
+        },
+        {
+          "id": "EXT-PAPER-CAO-WEI-XU-NORM-VARIETIES-1803.11003V5",
+          "title": "Strong approximation for a family of norm varieties",
+          "citation": "Yang Cao, Dasheng Wei and Fei Xu, arXiv1803.11003v5,11March2021.",
+          "urls": [
+            "https://arxiv.org/abs/1803.11003v5",
+            "https://arxiv.org/pdf/1803.11003v5"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/cao-wei-xu-norm-varieties-1803.11003v5.pdf",
+              "sha256": "35de675c1a0dc31e0b0102f67ee5bfa87faecc98623a3935f6066d6d564108d3",
+              "locator": "Theorems1.2-1.3p3 and Corollary4.6p23; linear-root embedding/exponent hypotheses fail for Gaussian norms; other route conditional on Schinzel"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+              "locator": "Section9 applicability audit",
+              "role": "context",
+              "nodes": [
+                "EXT-ERDOS675-CAO-WEI-XU-NORM-APPROX"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "preprint",
+          "verification_basis": "Actual primary statements and relevant hypotheses read; cached exact edition. Inspected unconditional norm-variety theorem requires, for each polynomial factor, a root-field embedding into a norm field or the corresponding field degree dividing its exponent. For linear factors of exponent1 and Gaussian norm fields neither condition holds. The alternative inspected cyclic route is conditional on Schinzel's hypothesis; no such conjecture is assumed here. No complete external proof replay or675 existence input is asserted."
+        },
+        {
+          "id": "EXT-PAPER-SHUTE-NORM-POLYNOMIALS-2025",
+          "title": "Polynomials represented by norm forms via the beta sieve",
+          "citation": "Alec Shute, Published JIMJ24(4)(2025),1463-1519; revised23January2025, published25February2025.",
+          "urls": [
+            "https://doi.org/10.1017/S1474748025000076",
+            "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/967CC74D681A1832C0AA219B4DF1A6CB/S1474748025000076a.pdf/polynomials_represented_by_norm_forms_via_the_beta_sieve.pdf"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/shute-norm-polynomials-beta-sieve-2025.pdf",
+              "sha256": "f75a80eeda092958139caa122575be3a4d24135987cbdfabaf24af1ea204d241",
+              "locator": "Definition(1.3), Theorem1.1 and following optimisation remark; T(G)<1/2 barrier. Actual conclusion concerns rational points"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+              "locator": "Section9",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ERDOS675-SHUTE-NORM-SIEVE",
+                "ARITH-ERDOS675-NORM-FIELD-BARRIER"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Actual primary statements and relevant hypotheses read; cached exact edition. Definition(1.3) defines T(G) as the proportion of permutation-group elements with no odd cycle. Inspected Theorem1.1 is a rational-point norm-sieve theorem under an explicit small-T condition T(G)<=0.39/(k+j+1); the following optimization discussion never reaches1/2. The Gaussian case fails that hypothesis. The definition is used in the internal index-two subgroup obstruction. No complete external proof replay or675 existence input is asserted."
+        },
+        {
+          "id": "EXT-PAPER-NOORDMAN-SIEGEL-2101.07111V2",
+          "title": "Siegel's theorem via the Lawrence-Venkatesh method",
+          "citation": "Marc Paul Noordman, arXiv2101.07111v2,25January2021; PDF internal date18January2021.",
+          "urls": [
+            "https://arxiv.org/abs/2101.07111v2",
+            "https://arxiv.org/pdf/2101.07111v2"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/noordman-siegel-2101.07111v2.pdf",
+              "sha256": "c6eb99454f305157f6d8360006bf9e04685496c4c6d17ac31b86f0479a691975",
+              "locator": "Corollary4.3p9: finiteness of S-integral points on elliptic curves. Supports a scoped genus-one squareclass obstruction, not existence for675"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+              "locator": "Section10",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ERDOS675-SIEGEL-ELLIPTIC-INTEGRAL-POINTS",
+                "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "preprint",
+          "verification_basis": "Actual primary statements and relevant hypotheses read; cached exact edition. Corollary4.3 states finiteness of S-integral points on an elliptic curve. Its use here is restricted to the nonsingular genus-one curves obtained by the explicit integral change of variables in Section10. It is not an existence theorem for675 or a general higher-genus result imported here. No complete external proof replay or675 existence input is asserted."
         }
       ],
       "internal_citations": [
@@ -178269,7 +179356,7 @@
             },
             {
               "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-              "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+              "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
               "locator": "Sections2-3 independent qualitative reconstruction"
             }
           ]
@@ -254507,7 +255594,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "ede08d185e1bd0953fd4b4ffbbe0ffe513ae537c857dad68d3a6a6d9f45eef57",
+          "sha256": "6e021ef8cfa8722fe5bf333958b1e5a4e0fa566a361a058d9f734fa7502b560c",
           "claims": [
             "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON",
             "ARITH-D8-CLASSICAL-PRIME-COORDINATE-SUBCASES",
@@ -255556,7 +256643,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_ALL_ORDERS.md",
-          "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+          "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
           "claims": [
             "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS",
             "ARITH-ALL-ORDER-GENUS-KERNEL",
@@ -255600,7 +256687,7 @@
             {
               "locator": "Lemma OrderGenusKernel.** The homomorphism",
               "kind": "lemma",
-              "line": 97,
+              "line": 105,
               "title": "Lemma OrderGenusKernel.** The homomorphism",
               "nodes": [
                 "ARITH-ALL-ORDER-GENUS-KERNEL"
@@ -255610,7 +256697,7 @@
             {
               "locator": "Lemma OrderPrimitiveShadow.** For a positive integer \\(n\\),",
               "kind": "lemma",
-              "line": 127,
+              "line": 135,
               "title": "Lemma OrderPrimitiveShadow.** For a positive integer \\(n\\),",
               "nodes": [
                 "ARITH-ALL-ORDER-PRIMITIVE-SHADOW"
@@ -255620,7 +256707,7 @@
             {
               "locator": "Lemma OrderClassSaturation.** If \\(n\\in\\Lambda_{\\mathcal O}\\) and",
               "kind": "lemma",
-              "line": 167,
+              "line": 186,
               "title": "Lemma OrderClassSaturation.** If \\(n\\in\\Lambda_{\\mathcal O}\\) and",
               "nodes": [
                 "ARITH-ALL-ORDER-CLASS-SATURATION"
@@ -255630,7 +256717,7 @@
             {
               "locator": "Lemma OrderLocalCosets.** The primitive local value image",
               "kind": "lemma",
-              "line": 245,
+              "line": 299,
               "title": "Lemma OrderLocalCosets.** The primitive local value image",
               "nodes": [
                 "ARITH-ALL-ORDER-LOCAL-COSETS"
@@ -255640,10 +256727,50 @@
             {
               "locator": "Lemma OrderLocalProfiles.** A target is locally admissible exactly",
               "kind": "lemma",
-              "line": 334,
+              "line": 388,
               "title": "Lemma OrderLocalProfiles.** A target is locally admissible exactly",
               "nodes": [
                 "ARITH-ALL-ORDER-LOCAL-PROFILES"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma FormIdealShadow.** For every positive integer \\(n\\),",
+              "kind": "lemma",
+              "line": 514,
+              "title": "Lemma FormIdealShadow.** For every positive integer \\(n\\),",
+              "nodes": [
+                "ARITH-PRIMITIVE-FORM-IDEAL-SHADOW"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem FormClassError.** Fix two forms \\(Q_1,Q_2\\) of discriminant",
+              "kind": "theorem",
+              "line": 556,
+              "title": "Theorem FormClassError.** Fix two forms \\(Q_1,Q_2\\) of discriminant",
+              "nodes": [
+                "ARITH-FIXED-DISCRIMINANT-FORM-CLASS-ERROR"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Lemma FormGenusCoreFilters.** Let \\(S'\\) be any fixed finite prime set",
+              "kind": "lemma",
+              "line": 583,
+              "title": "Lemma FormGenusCoreFilters.** Let \\(S'\\) be any fixed finite prime set",
+              "nodes": [
+                "ARITH-PRIMITIVE-FORM-GENUS-CORE-FILTERS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem GenusBinaryInvariance.** Fix four forms of discriminant",
+              "kind": "theorem",
+              "line": 625,
+              "title": "Theorem GenusBinaryInvariance.** Fix four forms of discriminant",
+              "nodes": [
+                "ARITH-FIXED-DISCRIMINANT-FORM-GENUS-INVARIANCE"
               ],
               "mapping_kind": "exact-statement"
             }
@@ -255689,7 +256816,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_all_order_source_ledger.json",
-          "sha256": "39e9e1084f4d5f36f8afd784e0b6e2e577081c44ae0bb7a65316ec4f117961ad",
+          "sha256": "c15d8fca681c670c9abdeec4c0eb67af0c386b124e21d45fb838416968fbe68e",
           "claims": [
             "ARITH-ALL-ORDER-PRIMITIVE-NORM-COUNTS"
           ],
@@ -255701,7 +256828,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
-          "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
+          "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "claims": [
             "ARITH-PRIMITIVE-NORM-LEADING-CALIBRATION",
             "ARITH-ORDER-MARGINAL-AVERAGE",
@@ -255722,7 +256849,7 @@
             {
               "locator": "Theorem OrderMarginalAndAverage.** For every fixed order,",
               "kind": "theorem",
-              "line": 96,
+              "line": 92,
               "title": "Theorem OrderMarginalAndAverage.** For every fixed order,",
               "nodes": [
                 "ARITH-ORDER-MARGINAL-AVERAGE"
@@ -255732,7 +256859,7 @@
             {
               "locator": "Theorem ConditionalOrderLeadingTerm.** If BinaryCoreCorrelation holds",
               "kind": "theorem",
-              "line": 240,
+              "line": 244,
               "title": "Theorem ConditionalOrderLeadingTerm.** If BinaryCoreCorrelation holds",
               "nodes": [
                 "ARITH-ORDER-LEADING-REDUCTION"
@@ -255740,9 +256867,39 @@
               "mapping_kind": "exact-statement"
             },
             {
+              "locator": "Theorem FormBinaryLeading.** With BinaryCoreCorrelation, as supplied",
+              "kind": "theorem",
+              "line": 365,
+              "title": "Theorem FormBinaryLeading.** With BinaryCoreCorrelation, as supplied",
+              "nodes": [
+                "ARITH-FIXED-DISCRIMINANT-FORM-LEADING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem CommonFieldGenusInvariance.** Without ZF/G, uniformly on all",
+              "kind": "theorem",
+              "line": 447,
+              "title": "Theorem CommonFieldGenusInvariance.** Without ZF/G, uniformly on all",
+              "nodes": [
+                "ARITH-PRIMITIVE-FORM-GENUS-BINARY-INVARIANCE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary CommonFieldFormPairs.** With the same existing binary inputs",
+              "kind": "corollary",
+              "line": 497,
+              "title": "Corollary CommonFieldFormPairs.** With the same existing binary inputs",
+              "nodes": [
+                "ARITH-COMMON-FIELD-FORM-PAIRS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
               "locator": "Lemma BinaryAuxiliaryRemoval.** For fixed \\(A,B,U,V\\) as in (LC.9),",
               "kind": "lemma",
-              "line": 366,
+              "line": 546,
               "title": "Lemma BinaryAuxiliaryRemoval.** For fixed \\(A,B,U,V\\) as in (LC.9),",
               "nodes": [
                 "ARITH-ORDER-AUXILIARY-WEIGHT-REMOVAL"
@@ -255755,7 +256912,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_leading_constant_source_ledger.json",
-          "sha256": "2e409d81617cd61de317c139450eccaa9fd07a61e335762bb89a798b01f6ab53",
+          "sha256": "7a6370da6f12bfdfbe81f0396b5f9e0991df221686f9b2b29c56c74d28a1a834",
           "claims": [
             "ARITH-PRIMITIVE-NORM-LEADING-CALIBRATION"
           ],
@@ -255829,7 +256986,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md",
-          "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+          "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
           "claims": [
             "ARITH-PRIMITIVE-NORM-CONDITIONAL-BINARY-COUNTS",
             "ARITH-BINARY-CONDITIONAL-GAUSSIAN-LEADING",
@@ -255853,7 +257010,7 @@
             {
               "locator": "Theorem ConditionalBinarySemigroups.** Under ZF and graph input G,",
               "kind": "theorem",
-              "line": 87,
+              "line": 97,
               "title": "Theorem ConditionalBinarySemigroups.** Under ZF and graph input G,",
               "nodes": [
                 "ARITH-PRIMITIVE-NORM-CONDITIONAL-BINARY-COUNTS"
@@ -255863,39 +257020,10 @@
             {
               "locator": "Corollary ConditionalGaussianLeading.** Under the same two inputs,",
               "kind": "corollary",
-              "line": 331,
+              "line": 341,
               "title": "Corollary ConditionalGaussianLeading.** Under the same two inputs,",
               "nodes": [
                 "ARITH-BINARY-CONDITIONAL-GAUSSIAN-LEADING"
-              ],
-              "mapping_kind": "exact-statement"
-            },
-            {
-              "locator": "Corollary ConditionalAllOrderLeading.** Under ZF and graph input G,",
-              "kind": "corollary",
-              "line": 362,
-              "title": "Corollary ConditionalAllOrderLeading.** Under ZF and graph input G,",
-              "nodes": [
-                "ARITH-BINARY-CONDITIONAL-ALL-ORDER-LEADING"
-              ],
-              "mapping_kind": "exact-statement"
-            },
-            {
-              "locator": "Corollary ConditionalC12Leading.** Under the two explicit inputs,",
-              "kind": "corollary",
-              "line": 391,
-              "title": "Corollary ConditionalC12Leading.** Under the two explicit inputs,",
-              "nodes": [
-                "ARITH-BINARY-CONDITIONAL-C12-LEADING"
-              ],
-              "mapping_kind": "exact-statement"
-            },
-            {
-              "locator": "Theorem PointwiseBinaryCorrelations.** Formulas (B.4), (B.10),",
-              "kind": "theorem",
-              "title": "Theorem PointwiseBinaryCorrelations",
-              "nodes": [
-                "ARITH-PRIMITIVE-NORM-POINTWISE-COUNTS"
               ],
               "mapping_kind": "exact-statement"
             },
@@ -255906,7 +257034,8 @@
               "nodes": [
                 "ARITH-ODD-GAUSSIAN-POINTWISE-COUNTS"
               ],
-              "mapping_kind": "exact-statement"
+              "mapping_kind": "exact-statement",
+              "line": 368
             },
             {
               "locator": "Theorem OddGaussianAlmostAll.** For every fixed \\(A,\\varepsilon>0\\),",
@@ -255915,7 +257044,48 @@
               "nodes": [
                 "ARITH-GAUSSIAN-CLASSICAL-ALMOST-ALL"
               ],
+              "mapping_kind": "exact-statement",
+              "line": 408
+            },
+            {
+              "locator": "Corollary ConditionalAllOrderLeading.** Under ZF and graph input G,",
+              "kind": "corollary",
+              "line": 439,
+              "title": "Corollary ConditionalAllOrderLeading.** Under ZF and graph input G,",
+              "nodes": [
+                "ARITH-BINARY-CONDITIONAL-ALL-ORDER-LEADING"
+              ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary SameFieldPrimitiveForms.** Fix a negative fundamental",
+              "kind": "corollary",
+              "line": 460,
+              "title": "Corollary SameFieldPrimitiveForms.** Fix a negative fundamental",
+              "nodes": [
+                "ARITH-COMMON-FIELD-PRIMITIVE-FORM-LEADING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary ConditionalC12Leading.** Under the two explicit inputs,",
+              "kind": "corollary",
+              "line": 520,
+              "title": "Corollary ConditionalC12Leading.** Under the two explicit inputs,",
+              "nodes": [
+                "ARITH-BINARY-CONDITIONAL-C12-LEADING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem PointwiseBinaryCorrelations.** Formulas (B.4), (B.10),",
+              "kind": "theorem",
+              "title": "Theorem PointwiseBinaryCorrelations.** Formulas (B.4), (B.10),",
+              "nodes": [
+                "ARITH-PRIMITIVE-NORM-POINTWISE-COUNTS"
+              ],
+              "mapping_kind": "exact-statement",
+              "line": 563
             }
           ],
           "role": "proof",
@@ -256005,7 +257175,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_binary_correlation_source_ledger.json",
-          "sha256": "ebe4b65c9bdc5ca3cf83fab88e4869b837ae20764464101a65e7416d699c1255",
+          "sha256": "2812f39f93bb08c873f56f815e17b6aab15221596c3c7061acccd4e1e7c64312",
           "claims": [
             "ARITH-PRIMITIVE-NORM-CONDITIONAL-BINARY-COUNTS"
           ],
@@ -257289,7 +258459,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/README.md",
-          "sha256": "64aeeaec0c9852d892a826e6bc8bc6203fda7cdf6a91937d5f3b04e933444024",
+          "sha256": "8f40046c5f54591d163aafa01f58dc2a6291fb9509a31de896e35241ea01ba1d",
           "role": "documentation",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257315,7 +258485,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/consequences.tex",
-          "sha256": "068e357ed98522f6cb6da64c5d3ec6e5d03a60eb2ea250e311638403b1d74191",
+          "sha256": "8100a4145749bdeb19b1cbf832f4cc09659fb47464aa1c0a5821dfa8b6f117fa",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257329,7 +258499,10 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-COR-BASIS13"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "corollary",
+              "line": 2,
+              "title": "cor:basis13"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
@@ -257350,28 +258523,40 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-GR-IDEAL"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 153,
+              "title": "Progression ideal comparison"
             },
             {
               "locator": "lem:gr-large",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-GR-LARGE"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 416,
+              "title": "Large-target root moment and pairing"
             },
             {
               "locator": "lem:gr-primes",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-GR-PRIMES"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 635,
+              "title": "Prime factor estimate"
             },
             {
               "locator": "prop:gr-energy",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-GR-ENERGY"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 714,
+              "title": "Target-grid residue energy"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
@@ -257392,42 +258577,57 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-ZF"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 15,
+              "title": "Imported zero-free theorem"
             },
             {
               "locator": "prop:graphabsolute",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-GRAPHABSOLUTE"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 132,
+              "title": "Imported absolute bounds"
             },
             {
               "locator": "prop:rootmoment",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-ROOTMOMENT"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 154,
+              "title": "Imported local transference"
             },
             {
               "locator": "prop:graphcrt",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-GRAPHCRT"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 198,
+              "title": "Imported residue replacement"
             },
             {
               "locator": "cor:graphendpoint",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-COR-GRAPHENDPOINT"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "corollary",
+              "line": 224,
+              "title": "Imported endpoint consequence"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/introduction.tex",
-          "sha256": "954b79f797d03f7237aa14976ce9ab7e42c4cd9352790f168fc82f07cf22f7e2",
+          "sha256": "62f78462610801a74d0f6709106327315c571afabdffcea9c744d174f85e2256",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257440,7 +258640,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
-          "sha256": "11649b0ce35a4a6e0f44e6c7ab57f04ae317c6119fcfbe1c0ae49d0c1017ef67",
+          "sha256": "2a73356d2eb2edb5fa787310f116c1955640f26caefc74af80cb194836304669",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257453,7 +258653,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/metadata.json",
-          "sha256": "4f4a92bbfffbb8afe25a7d68577efb05569d53c0163d750dfea24d53f28d0851",
+          "sha256": "15bc19ced213b383b08f6f241127aa842a75cbdba2ed99765f0c10aae8113d1b",
           "role": "documentation",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257480,28 +258680,37 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-ROUGH-MEANS"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 59,
+              "title": "lem:rough-means"
             },
             {
               "locator": "prop:model-correlation",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-MODEL-CORRELATION"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 129,
+              "title": "prop:model-correlation"
             },
             {
               "locator": "lem:envelope",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-ENVELOPE"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 229,
+              "title": "lem:envelope"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "sha256": "1c39a348895965d4afa7fa923137a312402f29b092b9a1e08c686fcc0ffdea64",
+          "sha256": "562a6ff0d6ffcb1cbb154d072801daf8c9b5caab4d7e56520f6b88b7a593ef4b",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257515,28 +258724,40 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-THM-NORM-ORDER"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "theorem",
+              "line": 47,
+              "title": "The quadratic order bounds"
             },
             {
               "locator": "thm:norm-leading",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-THM-NORM-LEADING"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "theorem",
+              "line": 66,
+              "title": "thm:norm-leading"
             },
             {
               "locator": "prop:norm-class-error",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 92,
+              "title": "prop:norm-class-error"
             },
             {
               "locator": "lem:norm-genus",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 136,
+              "title": "lem:norm-genus"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
@@ -257557,21 +258778,27 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 24,
+              "title": "Classical quadratic core bound"
             },
             {
               "locator": "prop:older-weighted",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-PROP-OLDER-WEIGHTED"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "proposition",
+              "line": 160,
+              "title": "Uniform shifted weighted family"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/paper.pdf",
-          "sha256": "c343ed8f264f55f34963fba07c9d6475847a186e2c228aecdff25df3d36de08e",
+          "sha256": "e3b2de98314b51f043531c5d25c0a92531ddcc517bdd27ffdebf5d1e9ebffcae",
           "role": "manuscript",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257611,35 +258838,50 @@
               "nodes": [
                 "ARITH-MS-FLAGSHIP-THM-GENERAL"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "theorem",
+              "line": 47,
+              "title": "thm:general"
             },
             {
               "locator": "thm:c12",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-THM-C12"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "theorem",
+              "line": 75,
+              "title": "thm:c12"
             },
             {
               "locator": "cor:coprime-c12",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-COR-COPRIME-C12"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "corollary",
+              "line": 126,
+              "title": "cor:coprime-c12"
             },
             {
               "locator": "lem:finite-images",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-LEM-FINITE-IMAGES"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "lemma",
+              "line": 218,
+              "title": "lem:finite-images"
             },
             {
               "locator": "thm:local",
               "nodes": [
                 "ARITH-MS-FLAGSHIP-THM-LOCAL"
               ],
-              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route."
+              "reason": "Exact standalone declaration of the specified scoped result; complete dependencies remain explicit in the manuscript route.",
+              "kind": "theorem",
+              "line": 242,
+              "title": "thm:local"
             }
           ],
           "explanation": "Current flagship manuscript and build/review artifacts. Claim mappings preserve fixed arithmetic scope and exact imported-input boundaries without upgrading assurance."
@@ -257722,7 +258964,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/source.zip",
-          "sha256": "6ee8305564ec224ae4c73e86e2281a672c5c0485ecd5322d3631c434f9e3ca0d",
+          "sha256": "ecbaffc5013003a92293e7fc59e6340f133c1f5f2b1d8d97d7b9f6f3cf04c99f",
           "role": "evidence",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257735,7 +258977,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/source_manifest.json",
-          "sha256": "f8d1842f64e05d60cedaeb1724445b8ccc3ae30129e1ddbe51a8a013fbe04e6d",
+          "sha256": "3a097c9dc080a9e4223e5275967caa5b73d7f5f70b106fe36d501ef5d3189217",
           "role": "documentation",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257748,7 +258990,7 @@
         },
         {
           "path": "../unpublished/pointwise-binary-splitting-semigroups/verification.json",
-          "sha256": "cab9b94892dab2bdaf2a7279506a760edbf761a7dbad1157154381ba8c4d0e44",
+          "sha256": "01adacd88a8005edc204ad8b73349c478c9ef5c80611b99d8e8b201a97516084",
           "role": "evidence",
           "claims": [
             "ARITH-MS-FLAGSHIP-THM-GENERAL",
@@ -257828,11 +259070,12 @@
             {
               "locator": "thm:model-comparison",
               "kind": "theorem",
-              "title": "thm:model-comparison",
+              "title": "Arithmetic model comparison",
               "nodes": [
                 "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON"
               ],
-              "mapping_kind": "exact-statement"
+              "mapping_kind": "exact-statement",
+              "line": 140
             }
           ],
           "role": "manuscript",
@@ -257896,11 +259139,12 @@
             {
               "locator": "prop:fixed-comparison-energy",
               "kind": "proposition",
-              "title": "prop:fixed-comparison-energy",
+              "title": "Fixed-shift comparison energy",
               "nodes": [
                 "ARITH-SPARSE-FIXED-SHIFT-COMPARISON-ENERGY"
               ],
-              "mapping_kind": "exact-statement"
+              "mapping_kind": "exact-statement",
+              "line": 24
             }
           ],
           "role": "manuscript",
@@ -257928,7 +259172,8 @@
               "nodes": [
                 "ARITH-QUADRATIC-CHARACTER-INDICATOR-PAIRS"
               ],
-              "mapping_kind": "exact-statement"
+              "mapping_kind": "exact-statement",
+              "line": 56
             },
             {
               "locator": "cor:smilansky-five-pairs",
@@ -257937,7 +259182,8 @@
               "nodes": [
                 "ARITH-SMILANSKY-FIVE-FORM-PAIRS"
               ],
-              "mapping_kind": "exact-statement"
+              "mapping_kind": "exact-statement",
+              "line": 307
             }
           ],
           "role": "manuscript",
@@ -258323,7 +259569,7 @@
         },
         {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "cbbc0b8c68f1bb438e05c3fffc7fbaf3321f50d16cbbcc65fa5b11bf2e39924c",
+          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
           "role": "proof",
           "claims": [
             "ARITH-ERDOS675-TRANSLATION-PROGRAMME",
@@ -258333,11 +259579,20 @@
             "ARITH-ERDOS675-NORM-REDUCTION",
             "ARITH-ERDOS675-LOCAL-ADMISSIBILITY",
             "ARITH-ERDOS675-PELL-INITIAL-BLOCK",
-            "ARITH-ERDOS675-SUMS-TWO-SQUARES-TRANSLATION"
+            "ARITH-ERDOS675-SUMS-TWO-SQUARES-TRANSLATION",
+            "ARITH-ERDOS675-UPPER-ENVELOPE",
+            "ARITH-ERDOS675-NORM-FIELD-BARRIER",
+            "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION",
+            "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION"
           ],
           "dependencies": [
             "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
-            "EXT-SMILANSKY-FIVE-REPRESENTATION-CRITERIA"
+            "EXT-SMILANSKY-FIVE-REPRESENTATION-CRITERIA",
+            "EXT-ERDOS675-BMS-NORM-PENCILS",
+            "EXT-ERDOS675-DERENTHAL-WEI-STRONG-APPROX",
+            "EXT-ERDOS675-CAO-WEI-XU-NORM-APPROX",
+            "EXT-ERDOS675-SHUTE-NORM-SIEVE",
+            "EXT-ERDOS675-SIEGEL-ELLIPTIC-INTEGRAL-POINTS"
           ],
           "gaps": [
             "ARITH-ERDOS675-SUMS-TWO-SQUARES-TRANSLATION",
@@ -258404,9 +259659,49 @@
                 "ARITH-ERDOS675-PELL-INITIAL-BLOCK"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition Erdos675UpperEnvelope.** For every fixed \\(N\\), with",
+              "kind": "proposition",
+              "line": 306,
+              "title": "Proposition Erdos675UpperEnvelope.** For every fixed \\(N\\), with",
+              "nodes": [
+                "ARITH-ERDOS675-UPPER-ENVELOPE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition Erdos675NormFieldBarrier.** If a number field \\(K\\)",
+              "kind": "proposition",
+              "line": 413,
+              "title": "Proposition Erdos675NormFieldBarrier.** If a number field \\(K\\)",
+              "nodes": [
+                "ARITH-ERDOS675-NORM-FIELD-BARRIER"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition Erdos675FiniteSquareclassObstruction.** For every finite",
+              "kind": "proposition",
+              "line": 461,
+              "title": "Proposition Erdos675FiniteSquareclassObstruction.** For every finite",
+              "nodes": [
+                "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition Erdos675PellFunctionFieldObstruction.** On the Pell",
+              "kind": "proposition",
+              "line": 493,
+              "title": "Proposition Erdos675PellFunctionFieldObstruction.** On the Pell",
+              "nodes": [
+                "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
-          "explanation": "Internal written proof and primary-source review only. The supplied Price manuscript is prior work; its qualitative prime-partition argument was reconstructed using the inspected classical Richert lower sieve. The explicit 1974 numerical R(k) citation was not independently inspected and is unnecessary for that proof. The fixed sums-of-two-squares translation property and the prescribed polynomial-norm existence estimate remain open. Finite exact checks cover only their stated domains; no recent ZF/G input, external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+          "explanation": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
         },
         {
           "path": "arithmetic/verify_erdos675_reduction.py",
@@ -258494,6 +259789,146 @@
           "gaps": [],
           "statements": [],
           "explanation": "Separate exact finite group checks for the listed twelve groups and199rich subsets; not a premise or certificate of the analytic class-error theorem."
+        },
+        {
+          "path": "arithmetic/verify_erdos675_constructive_controls.py",
+          "sha256": "310fbc8c2258d3648069c7fdd3c857ea91db043c32b0c09a50ad5e50cf62599f",
+          "role": "evidence",
+          "claims": [
+            "ARITH-ERDOS675-CONSTRUCTIVE-CONTROLS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Two exact polynomial identities, complete F5 quartic certificate and24 finite controls; no all-N recurrence assertion."
+        },
+        {
+          "path": "arithmetic/verify_erdos675_graph_controls.py",
+          "sha256": "5a23f5325ebd9547cee92ca1a00c557750068695c419d796692fc79bc9a23234",
+          "role": "evidence",
+          "claims": [
+            "ARITH-ERDOS675-GRAPH-CONTROLS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Explicit finite projection and prime-square checks only; no universal graph failure or existence claim."
+        },
+        {
+          "path": "arithmetic/sources/browning-matthiesen-skorobogatov-pencils-2014.pdf",
+          "sha256": "d817c4bef1880cdc09643fae43a172aee7c925b4a504ad378969c41639082f80",
+          "role": "reference",
+          "claims": [
+            "EXT-ERDOS675-BMS-NORM-PENCILS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Theorems1.1-1.3, printedpp382-384; rational/weak approximation with at least two homogeneous base variables, not the integer slice. Inspected Theorems1.1-1.3 give rational-point/weak-approximation results; the norm-pencil formulation requires at least two homogeneous base variables with pairwise nonproportional forms. Rational base parameters and denominators do not supply the positive integer fixed slice in675."
+        },
+        {
+          "path": "arithmetic/sources/derenthal-wei-strong-approximation-1311.3914v2.pdf",
+          "sha256": "c4ad7a9aa5d0e4ef385449437a79a93581a75114b33d2f2fe9766c836a8b90b2",
+          "role": "reference",
+          "claims": [
+            "EXT-ERDOS675-DERENTHAL-WEI-STRONG-APPROX"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Theorem1.2p3, Remark5.5 and Corollary5.7p20; off infinity, s>=2, affine-independence and unbounded real-component conditions. Inspected Theorem1.2 is strong approximation off infinity under its stated norm-form hypotheses: at least two base variables; factors pairwise proportional or affinely independent; relevant real components contain balls of arbitrarily large radius. Fixing an integer slice by a bounded-width strip violates the last condition. No strong approximation off an inert finite place is imported."
+        },
+        {
+          "path": "arithmetic/sources/cao-wei-xu-norm-varieties-1803.11003v5.pdf",
+          "sha256": "35de675c1a0dc31e0b0102f67ee5bfa87faecc98623a3935f6066d6d564108d3",
+          "role": "reference",
+          "claims": [
+            "EXT-ERDOS675-CAO-WEI-XU-NORM-APPROX"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Theorems1.2-1.3p3 and Corollary4.6p23; linear-root embedding/exponent hypotheses fail for Gaussian norms; other route conditional on Schinzel. Inspected unconditional norm-variety theorem requires, for each polynomial factor, a root-field embedding into a norm field or the corresponding field degree dividing its exponent. For linear factors of exponent1 and Gaussian norm fields neither condition holds. The alternative inspected cyclic route is conditional on Schinzel's hypothesis; no such conjecture is assumed here."
+        },
+        {
+          "path": "arithmetic/sources/shute-norm-polynomials-beta-sieve-2025.pdf",
+          "sha256": "f75a80eeda092958139caa122575be3a4d24135987cbdfabaf24af1ea204d241",
+          "role": "reference",
+          "claims": [
+            "EXT-ERDOS675-SHUTE-NORM-SIEVE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Definition(1.3), Theorem1.1 and following optimisation remark; T(G)<1/2 barrier. Actual conclusion concerns rational points. Definition(1.3) defines T(G) as the proportion of permutation-group elements with no odd cycle. Inspected Theorem1.1 is a rational-point norm-sieve theorem under an explicit small-T condition T(G)<=0.39/(k+j+1); the following optimization discussion never reaches1/2. The Gaussian case fails that hypothesis. The definition is used in the internal index-two subgroup obstruction."
+        },
+        {
+          "path": "arithmetic/sources/noordman-siegel-2101.07111v2.pdf",
+          "sha256": "c6eb99454f305157f6d8360006bf9e04685496c4c6d17ac31b86f0479a691975",
+          "role": "reference",
+          "claims": [
+            "EXT-ERDOS675-SIEGEL-ELLIPTIC-INTEGRAL-POINTS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Corollary4.3p9: finiteness of S-integral points on elliptic curves. Supports a scoped genus-one squareclass obstruction, not existence for675. Corollary4.3 states finiteness of S-integral points on an elliptic curve. Its use here is restricted to the nonsingular genus-one curves obtained by the explicit integral change of variables in Section10. It is not an existence theorem for675 or a general higher-genus result imported here."
+        },
+        {
+          "path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "sha256": "66d8f211849bc5f61489f70d5c1bcc0b9484530ed18061c2de77204a201696eb",
+          "role": "manuscript",
+          "claims": [
+            "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE",
+            "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING",
+            "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
+            "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "thm:genus-binary-invariance",
+              "kind": "theorem",
+              "line": 40,
+              "title": "Classical genus invariance",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-THM-GENUS-BINARY-INVARIANCE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "thm:form-binary-leading",
+              "kind": "theorem",
+              "line": 70,
+              "title": "Mixed primitive form values",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-THM-FORM-BINARY-LEADING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "lem:form-ideal-shadow",
+              "kind": "lemma",
+              "line": 107,
+              "title": "lem:form-ideal-shadow",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "cor:common-field-form-pairs",
+              "kind": "corollary",
+              "line": 334,
+              "title": "cor:common-field-form-pairs",
+              "nodes": [
+                "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Primitive form-class dictionary, separate classical componentwise genus invariance and analytic mixed Haar leading theorem; different fixed conductors share one field. Counts numerical primitive values; no assurance upgrade."
         }
       ]
     },
@@ -267370,6 +268805,34 @@
         },
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of cor:common-field-form-pairs; reference lem:older-quadratic-filter at line 387",
+          "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
+          "reference": "lem:older-quadratic-filter",
+          "proof_locator": "proof of cor:common-field-form-pairs beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:362",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of cor:common-field-form-pairs; reference thm:general at line 388",
+          "conclusion": "ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-THM-GENERAL",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
+          "reference": "thm:general",
+          "proof_locator": "proof of cor:common-field-form-pairs beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:362",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COMMON-FIELD-FORM-PAIRS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/theorems.tex",
           "locator": "proof of cor:coprime-c12; reference thm:c12 at line 177",
           "conclusion": "ARITH-MS-FLAGSHIP-COR-COPRIME-C12",
@@ -267380,6 +268843,34 @@
           "proof_locator": "proof of cor:coprime-c12 beginning at ../unpublished/pointwise-binary-splitting-semigroups/theorems.tex:142",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-COR-COPRIME-C12"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of lem:form-ideal-shadow; reference lem:norm-genus at line 139",
+          "conclusion": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
+          "reference": "lem:norm-genus",
+          "proof_locator": "proof of lem:form-ideal-shadow beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:120",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
+          "source_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "locator": "proof of lem:form-ideal-shadow; reference lem:norm-genus at line 145",
+          "conclusion": "ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW",
+          "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/forms.tex",
+          "dependency": "ARITH-MS-FLAGSHIP-LEM-NORM-GENUS",
+          "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
+          "reference": "lem:norm-genus",
+          "proof_locator": "proof of lem:form-ideal-shadow beginning at ../unpublished/pointwise-binary-splitting-semigroups/forms.tex:120",
+          "routes": [
+            "MS-ROUTE-ARITH-MS-FLAGSHIP-LEM-FORM-IDEAL-SHADOW"
           ]
         },
         {
@@ -267455,13 +268946,13 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "locator": "proof of thm:norm-order; reference lem:older-quadratic-filter at line 492",
+          "locator": "proof of thm:norm-order; reference lem:older-quadratic-filter at line 494",
           "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-ORDER",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
           "dependency": "ARITH-MS-FLAGSHIP-LEM-OLDER-QUADRATIC-FILTER",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/older-norm-route.tex",
           "reference": "lem:older-quadratic-filter",
-          "proof_locator": "proof of thm:norm-order beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:468",
+          "proof_locator": "proof of thm:norm-order beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:470",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-ORDER"
           ]
@@ -267469,13 +268960,13 @@
         {
           "entrypoint": "../unpublished/pointwise-binary-splitting-semigroups/main.tex",
           "source_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
-          "locator": "proof of thm:norm-order; reference prop:norm-class-error at line 504",
+          "locator": "proof of thm:norm-order; reference prop:norm-class-error at line 506",
           "conclusion": "ARITH-MS-FLAGSHIP-THM-NORM-ORDER",
           "conclusion_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
           "dependency": "ARITH-MS-FLAGSHIP-PROP-NORM-CLASS-ERROR",
           "dependency_path": "../unpublished/pointwise-binary-splitting-semigroups/norms.tex",
           "reference": "prop:norm-class-error",
-          "proof_locator": "proof of thm:norm-order beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:468",
+          "proof_locator": "proof of thm:norm-order beginning at ../unpublished/pointwise-binary-splitting-semigroups/norms.tex:470",
           "routes": [
             "MS-ROUTE-ARITH-MS-FLAGSHIP-THM-NORM-ORDER"
           ]

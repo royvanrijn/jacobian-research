@@ -3,8 +3,8 @@
   "date": "2026-11-19",
   "proof": {
     "path": "PRIMITIVE_NORM_LEADING_CONSTANT.md",
-    "sha256": "c9d21e4068fa976be680ca3a90df2dc44e5de2ab08ceb073c4afe51a92b36ea7",
-    "locator": "OrderMarginalAndAverage; ConditionalOrderLeadingTerm; BinaryAuxiliaryRemoval"
+    "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
+    "locator": "OrderMarginalAndAverage; ConditionalOrderLeadingTerm; FormBinaryLeading; CommonFieldGenusInvariance; CommonFieldFormPairs; BinaryAuxiliaryRemoval"
   },
   "proved": [
     "ExactEuler andGamma-normalizedcoreconstant",
@@ -13,7 +13,9 @@
     "Individualhiddenclassfailureslowerorder",
     "Uniformconductor-prefixtailbound",
     "FullbadHaar-value normalization underexplicitbinaryhypothesis",
-    "Unconditionaluniformauxiliaryweightremovalwith1/sqrt(loglogN)cost"
+    "Unconditionaluniformauxiliaryweightremovalwith1/sqrt(loglogN)cost",
+    "Classicalcomponentwisegenusinvarianceforfixedprimitiveforms",
+    "Mixedprimitiveformleadingconstantsinthesamefixedquadraticfieldundertheexistingbinaryinputs"
   ],
   "open": [
     "Numerical onset and explicit pointwise error rates are not established here."
@@ -77,7 +79,7 @@
   "canonical_dependencies": [
     {
       "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
-      "sha256": "795eb599529d28a2879ef0299de5d0046aa62730f4d0cc1f52282ad9ed600bef",
+      "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735",
       "locator": "Exactshadowdecomposition, OrderClassError, primitive localvaluecosets"
     },
     {
@@ -92,12 +94,22 @@
     "reviewers": "Root and separate internal arithmetic/analytic agents",
     "scope": "Canonical marginal/average noncircularity, infinitebadprefix uniformSelbergtail, exactHaarfactor, signedCRTauxiliaryvarianceandCauchy; Gaussian constants; actualJLLtargetdenominatoraudit",
     "recent_method_gap": "FullSections3-8chaininspected;targetTdeterminantidentityandh-averageconductorsTqoutsideLemma7.2, plusmu_C-vs-mucoefficientmodel. IndexTrepairplausiblebutunproved; no deeprecentinputimported.",
-    "class_error_propagation": "The inequality D(X)A_Lambda(X)<=sum_(N<=2X)(R_Lambda-R_P)(N), bounded mean ofJ, small-target split and independent shadow mean were checked explicitly for the strengthened exponent; the trivial even-class-group case is exact equality."
+    "class_error_propagation": "The inequality D(X)A_Lambda(X)<=sum_(N<=2X)(R_Lambda-R_P)(N), bounded mean ofJ, small-target split and independent shadow mean were checked explicitly for the strengthened exponent; the trivial even-class-group case is exact equality.",
+    "form_extension": "The separate genus filters, local multiplier normalization, full Hilbert reciprocity product, common-core fixed-prefix application, per-root Haar measure, unchanged summable tail and independent one-sided class errors were reconstructed at the audited manuscript scope. No external/formal assurance is inferred."
   },
   "pointwise_resolution": {
     "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
-    "sha256": "2f82d4c82382d7ec738f5c47c22e1699586391805991b5e6fd36ac8e1e2ae94d",
+    "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934",
     "locator": "PointwiseBinaryCorrelations, Section 6; imported inputs checked in PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md"
   },
-  "class_error_saving": "OrderClassError allows everydelta<delta_star(2Pic), including1/5 with fixed-order constants. Summing the all-N pair error and dividing D(X)*#Lambda[1,X] by the independently established shadow mean gives #((Lambda-P)cap[1,X])<<X/log^(1/2+delta)X with no additional loss or circular use of the principal mean. This does not assign a new quantitative remainder to the full pointwise leading-term transfer."
+  "class_error_saving": "OrderClassError allows everydelta<delta_star(2Pic), including1/5 with fixed-order constants. Summing the all-N pair error and dividing D(X)*#Lambda[1,X] by the independently established shadow mean gives #((Lambda-P)cap[1,X])<<X/log^(1/2+delta)X with no additional loss or circular use of the principal mean. This does not assign a new quantitative remainder to the full pointwise leading-term transfer.",
+  "form_extension": {
+    "first_stage": "For two primitive forms at one fixed discriminant, mixed bad Haar VALUE densities replace the self-density. Corresponding slots may lie in different genera; no class-number divisor occurs.",
+    "common_field": "Two different fixed conductors in one fixed imaginary quadratic field share the good split core outsideS|2Delta1Delta2. Separate masks lie inH by the global Hilbert product. The two Picard groups remain separate.",
+    "classical": "CommonFieldGenusInvariance proves sharp mixed order bounds and componentwise genus-ratio comparison without ZF/G. Q_i and Q_i prime have the same genus in their own discriminant; genera are not identified across conductors.",
+    "error": "Class errors are one-sided marked separately in the two orders, at min_i delta_star(2Pic_i), with delta_star(0)=infinity encoding an exact zero error. Universal1/5 if any doubled group is nontrivial. No joint ring-class prime theorem is required.",
+    "haar": "Each compatible unit-pair root has measureg/(Lrs); sumGamma*g/(rs)=4alpha^-2 product_p bad d_{p;1,2}(N). Fixed-prefix limits, the existing uniform unmarked sieve and the summable double-prefix tail justify the full coefficient.",
+    "analytic": "FormBinaryLeading and CommonFieldFormPairs use exactly the existing BinaryCoreCorrelation/ZF/G chain for an explicit leading asymptotic. The full remainder remains relativeo(1). Classical genus invariance does not use that chain.",
+    "limits": "Fixed orders/forms and one common field; primitive positive numerical values counted once; no different-field theorem, varying-order uniformity, endpoint or priority claim."
+  }
 }

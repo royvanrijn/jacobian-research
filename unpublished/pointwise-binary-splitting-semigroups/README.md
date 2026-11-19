@@ -5,8 +5,10 @@ Smilansky's five quadratic-form pair predictions, consecutive sums of two
 squares with coefficient `1/2`, and prime-`3 mod 4` self-sums on every
 sufficiently large even target. It then develops the shared comparison and the
 general pointwise theorem for fixed subgroup pairs and prime-coset self-sums.
-The all-order primitive-norm application and the short basis-order-thirteen
-corollary remain in the main text.
+The arithmetic application now treats primitive values of arbitrary fixed
+positive definite forms, mixed pairs and genus invariance. Principal norms
+remain the prototype; the short basis-order-thirteen corollary remains in
+the main text.
 
 The shared arithmetic-model comparison theorem isolates exact invariance under
 a common prime class, centered one-variable rough means and positive sparse
@@ -60,6 +62,24 @@ outside a maximal subgroup and uses the existing marking sieve. It adds no
 analytic input. This estimate does not supply a quantitative remainder for
 the full conductor-prefix leading-term transfer, which still asserts `o(1)`.
 
+For fixed forms `Q_i,Q'_i` of one discriminant, replacing each form within
+its own genus gives `R_{Q1,Q2}/R_{Q'1,Q'2} = 1+O((log N)^(-eta))` on
+sufficiently large common locally admissible targets. The two slots may
+belong to different genera. This quantitative comparison and the mixed
+order bounds use the classical route, independently of the recent inputs.
+The recent binary theorem supplies the explicit leading coefficient, using
+the mixed local **value** densities. No `1/h` factor is inserted.
+
+The form/ideal dictionary targets `-[A]`, and its local shadow means that
+some primitive invertible ideal of norm `n` lies in `-[A]+2Pic(O)`.
+This remains existential at conductor primes: a number can occur in more
+than one genus. Separate local genus biases are retained in the two prefix
+filters. A common-field corollary then allows two different fixed conductors,
+marking one order's deficient prime families at a time. It needs no joint
+ring-class prime-distribution input. These statements concern numerical
+values at coprime coordinates, not ordinary unrestricted coordinate values
+or forms over different quadratic fields. The exact companion remains frozen.
+
 [PDF](paper.pdf) · [Source](main.tex) · [Metadata](metadata.json) ·
 [Verification record](verification.json) · [Standalone source archive](source.zip)
 
@@ -96,7 +116,8 @@ onset or complete small-exception assertion in this paper.
 
 Before submission, obtain specialist review of the shared comparison hypotheses,
 both frequency regimes, the complex-character coset model, the older
-positive-restoration route and the conductor/class-group transfer.
+positive-restoration route, the form-to-ideal dictionary at conductor primes,
+the mixed genus filters and their conductor/class-group transfer.
 The common invariant prime class is essential: arbitrary disjoint prime
 prescriptions and growing sublinear shifts are outside the comparison theorem.
 Broader historical-priority checking remains

@@ -789,6 +789,19 @@ local ideal types; it does not assign a unique genus to a numerical
 conductor norm. Discriminant \(-100\), value \(25\), provides a useful
 example of that distinction.
 
+The form-class extension in the all-orders note replaces the target
+zero by \(c_Q+2\operatorname{Pic}(\mathcal O)\), retaining an existential
+ideal-class condition at conductor-divisible norms. For two mixed pairs
+whose corresponding forms lie in the same respective genera, the
+classical shadow lower bound and class-error sieve give a relative
+\(1+O((\log N)^{-\eta})\) comparison without ZF/G. The explicit leading
+coefficient follows separately from the new binary correlation theorem.
+It contains the two mixed local Haar value densities and no class-number
+divisor. The leading-constant note also treats two different fixed
+conductors in one imaginary quadratic field, with separate Picard groups
+and one-sided marking; it adds no joint ring-class prime input, no
+cross-discriminant genus identification and no different-field claim.
+
 A coherent exposition can begin with the genuine individual class
 failures at [discriminant -23](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md),
 then pass through the periodic genus filters at

@@ -456,6 +456,58 @@ ring-class comparison transfers the result from the local shadow to
 the primitive principal norm values. No uniqueness of a genus attached
 to a conductor-divisible integer is assumed.
 
+### 4.1. Other form classes and mixed fixed conductors
+
+**Corollary SameFieldPrimitiveForms.** Fix a negative fundamental
+discriminant \(D_0\), two orders with discriminants
+\(\Delta_i=f_i^2D_0\), and primitive positive definite forms \(Q_i\)
+of discriminant \(\Delta_i\). Let \(P_{Q_i}\) be their positive
+primitive numerical-value sets. With
+\(S=\{p:p\mid2\Delta_1\Delta_2\}\), \(\chi=\chi_{D_0}\), and
+\(J_S(N)=\prod_{p\mid N,p\notin S,\chi(p)=-1}(p-1)/(p-2)\), put
+\[
+ d_{p;1,2}(N)=\int_{\mathbb Z_p}
+    \mathbf1_{\mathscr V_{p,Q_1}}(a)
+    \mathbf1_{\mathscr V_{p,Q_2}}(N-a)\,da.
+\]
+Under the same ZF/G inputs, uniformly on sufficiently large locally
+admissible targets,
+\[
+ \#\{a+b=N:a\in P_{Q_1},b\in P_{Q_2}\}
+ \sim \frac{4L(1,\chi)}\pi
+ \prod_{p\in S}\frac{1-\chi(p)/p}{1-1/p}
+ \prod_{\substack{p\notin S\\\chi(p)=-1}}
+          \left(1-\frac2{p(p-1)}\right)
+ \left(\prod_{p\in S}d_{p;1,2}(N)\right)
+                  J_S(N)\frac N{\log N}.
+ \tag{B.11a}
+\]
+Nonadmissible targets have zero count. Each bad factor is rational and
+periodic. There is no class-number divisor, and the full leading
+remainder remains relative \(o(1)\).
+
+**Proof.** The form ideal/shadow lemma in the all-orders note identifies
+the target ideal class \(c_Q\) and its local coset \(c_Q+2G\), with
+an existential quantifier at conductor-divisible norms. Its genus-filter
+lemma retains the local biases while placing both prefix masks in the
+common \(H=\ker\chi\). Thus (B.4) supplies the common-core asymptotic.
+FormBinaryLeading and CommonFieldFormPairs in the leading-constant note
+perform the complete mixed Haar normalization and summable-prefix
+transfer. One-sided marking in each Picard group transfers the shadow
+count to actual values, without a joint class-prime distribution input.
+The existing source discharge in Section 6 supplies the same ZF/G
+premises; no additional analytic input is required. \(\square\)
+
+Replacing \(Q_i\) within its own genus preserves its primitive local
+value sets. The quantitative ratio between the two mixed counts,
+with every fixed \(\eta<\min_i\delta_*(2\operatorname{Pic}(\mathcal O_i))\)
+and the convention \(\delta_*(0)=+\infty\), already follows from the
+classical shadow lower bound and the class-error sieve. It does not use
+ZF/G. It is an exact equality when both doubled class groups vanish.
+The explicit leading coefficient in (B.11a) uses the binary asymptotic.
+No genus is identified across different conductors and no statement
+about different quadratic fields or varying orders is inferred.
+
 ## 5. The \(C_{12}+C_{12}\) test case
 
 Let \(C_{12}\) be supported on primes \(1\bmod12\), put
