@@ -1,4 +1,4 @@
-\section{Keeping the unwanted primes out}\label{sec:spectral}
+\subsection{Keeping the unwanted primes out}\label{sec:spectral}
 A norm representation is only a candidate. A prime $p\equiv2\pmod3$
 can occur to even exponent in an Eisenstein norm, and that already keeps
 the value out of $\AA$. The useful feature is that divisibility of the
@@ -12,7 +12,7 @@ p\mid Q(x,y)\quad\Longleftrightarrow\quad p\mid x\text{ and }p\mid y.
 We first establish the unfiltered Hecke estimate. Section~\ref{sec:odd-ramified}
 will impose oddness and derive the local bounds used in the sieve.
 
-\subsection{The finite quotient and its Hecke operator}
+\subsubsection{The finite quotient and its Hecke operator}
 Fix an odd $p\in\PP$, so $p\ge5$, and first suppose $p\nmid n$.
 Reduction gives $\OO/p\OO\simeq M_2(\F_p)$, with norm equal to determinant.
 Write
@@ -37,7 +37,7 @@ $\chi_p(\Gamma_p g)=(\det(g)/p)$ is well-defined, because the units have
 norm one and scalar matrices have square determinant. Directly,
 $T_n\chi_p=(n/p)\sigma(n)\chi_p$.
 
-\subsection{The spectral bound}
+\subsubsection{The spectral bound}
 This is the main imported ingredient. It turns the large supply of norm
 representations into control of their distribution modulo a prime. The
 normalization matters, so we identify the concrete operator before using
@@ -48,7 +48,7 @@ Hecke correspondence, the two large character components must be removed,
 and the remaining spectrum must transfer to weight two. The proof below
 checks these points in that order. Readers following the arithmetic first
 can use the bound and continue with the normalizer average in the next
-subsection.
+subsubsection.
 
 \begin{lemma}\label{lem:spectral}
 On $\{1,\chi_p\}^\perp\subset\C[Y_p]$, the operator $T_n$ has norm at most
@@ -75,7 +75,7 @@ identified above.  Removing them, Lemma~\ref{lem:hecke-transfer}
 therefore applies for $(n,3p)=1$ and gives the asserted bound.
 \end{proof}
 
-\subsection{Torus-normalizer averaging}
+\subsubsection{Torus-normalizer averaging}
 The image $C_p=(R/pR)^\times/\F_p^\times$ is a nonsplit torus. Its
 normalizer is $K_p=C_p\cup C_p\rho_p(j)$, of order $2(p+1)$.
 All twelve order units lie in $R^\times\cup R^\times j$, so

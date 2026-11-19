@@ -1,135 +1,18 @@
-\section{Subgroup models and application checks}\label{sec:model}
-We verify the arithmetic hypotheses of Theorem~\ref{thm:model-comparison}
-for the subgroup restrictions, then evaluate their model correlation.
-We first work with a single proper subgroup \(H\le G\), of density
-\(\rho\), and write \(f=\1_{C_H}\), \(k_H=[G:H]=1/\rho\).
-The construction for the two sides is separate. Put
-\[
- L=\log N,\quad y=\exp(L^{2/5}),\quad S=\{p:p\le y\},\quad
- E=\exp(\sqrt L),\quad V_S=\prod_{p\le y}(1-1/p).
-\]
-Let \(n_S\) denote the \(S\)-supported part of \(n\), and
-\(n_{S'}=n/n_S\). Define
-\[
- E_+(y)=\prod_{\substack{p\le y\\p\in\mathcal P_H}}(1-1/p),\quad
- E_-(y)=\prod_{\substack{p\le y\\p\nmid L_0,\ p\notin\mathcal P_H}}(1-1/p),
- \quad \alpha_0=\varphi(L_0)/L_0.
-\]
-Then \(V_S=\alpha_0E_+(y)E_-(y)\) for large \(N\).
+\subsection{Subgroup applications}\label{sec:model}
 
-\subsection{Fractional poles and centered rough means}
-Character orthogonality gives, for \(\Re s>1\),
-\begin{equation}\label{eq:euler-branches}
- F_H(s)=\prod_{p\in\mathcal P_H}(1-p^{-s})^{-1}
-       =G_H(s)\prod_{\eta\in H^\perp}L(s,\eta)^\rho.
-\end{equation}
-At a forbidden good prime of coset order \(r>1\), the correction
-is \((1-p^{-rs})^{1/r}\); thus \(G_H\) converges absolutely for
-\(\Re s>1/2\). The literal principal character carries the bad
-Euler factors, proving \eqref{eq:marginal-product}. Every
-\(\eta\in H^\perp\) equals one on the support of \(f\); every such
-twist therefore has the same pole branch.
+Use the separate models of Section~\ref{sec:model-preparation} for
+the two subgroup restrictions, with outer scale \(X=N\).
+Thus \(L=\log N\), \(y=\exp(L^{2/5})\), and
+\(E=\exp(\sqrt L)\). We evaluate their correlation and verify the
+positive record envelope.
 
-Define the rough series and its regular part by
-\[
- F_R(s)=F_H(s)\prod_{\substack{p\le y\\p\in\mathcal P_H}}(1-p^{-s})
-        =(s-1)^{-\rho}H_R(s).
-\]
-Here \(H_R(1)=\Gamma(\rho)c_HE_+(y)\). Fixed-order Cauchy estimates
-on a disk of radius \(c/\log y\) give
-\begin{equation}\label{eq:rough-derivatives}
- |H_R^{(j)}(1)|/j!\ll_j H_R(1)(C\log y)^j.
-\end{equation}
-For a fixed depth \(K\), define on polynomial scales in \(N\)
-\begin{equation}\label{eq:hankel-model}
- M_{R,K}(t)=\sum_{j=0}^K\frac{H_R^{(j)}(1)}{j!}
-                 \frac{(\log t)^{\rho-j-1}}{\Gamma(\rho-j)}.
-\end{equation}
-For \(N^a\le t\le N^C\), with fixed \(0<a<C\), this is
-\(c_HE_+(y)(\log t)^{\rho-1}(1+O_K(L^{-3/5}))>0\).
-For definiteness fix a smooth real function \(\eta_0\), with
-\(0\le\eta_0\le1\), zero on \(({-}\infty,1/4]\) and one on
-\([1/3,\infty)\). Set \(M_{R,K}(t)=0\) for \(t\le N^{1/4}\),
-and multiply the displayed expression by \(\eta_0(\log t/L)\)
-above that point. On the transition range it has the same positive
-upper bound. All rough scales used in (C3) are at least
-\(N^{1/2}/E>N^{1/3}\), so the cutoff never changes their means.
-Only the polynomial bulk enters principal means.
+\subsubsection{The model correlation}
 
-\begin{lemma}\label{lem:rough-means}
-For fixed \(B,A_0>0\), sufficiently large fixed \(K\) has the
-following property. If \(b\) is bounded and periodic of period at
-most \(L^B\), and \(W\) is a smooth dyadic weight at a scale
-\(N^{2/5}\le T\le N^2\), with fixed derivatives bounded by
-fixed powers of \(L\),
-then
-\begin{align*}
- &\sum_n W(n)b(n)f(n)\1_{(n,\prod_{p\le y}p)=1}\\
- &\quad-\sum_n W(n)b(n)\1_{(n,\prod_{p\le y}p)=1}
-       \left(\sum_{\eta\in H^\perp}\eta(n)\right)
-                  \frac{M_{R,K}(n)}{V_S}\ll T L^{-A_0}.
-\end{align*}
-The same holds with a factor \(n^{iu}\), \(|u|\le L^B\).
-\end{lemma}
-\begin{proof}
-Refine the period to \(Q=\lcm(q,L_0)\) and expand on unit residues
-by characters. All primes dividing \(Q\) are at most \(y\).
-For \(\psi\bmod Q\), the twisted rough series is
-\[
- \prod_{\eta\in H^\perp}L(s,\psi\eta)^\rho\,G_\psi(s)
- \prod_{\substack{p\le y\\p\in\mathcal P_H}}(1-\psi(p)p^{-s}).
-\]
-If \(\psi\) is inflated from \(H^\perp\), this equals \(F_R\);
-otherwise all its character factors are nonprincipal.
-Use smooth Mellin inversion at height \(\exp(L^{1/10})\), moving
-to \(1-c/\log y\). The classical zero-free region is wider there
-at these heights and polylogarithmic conductors. Siegel's theorem
-places a possible exceptional real zero outside the strip for large
-\(N\), after choosing its fixed exponent depending on \(B\).
-The finite Euler product costs \(L^{O(1)}\); the displacement gives
-\(\exp(-cL^{3/5})\), dominating polynomial \(L\)-function growth at
-that height. Smooth tails are smaller than every fixed logarithmic
-power. The threshold can be ineffective.
-
-Hankel integration gives \eqref{eq:hankel-model} for each principal
-branch. Its relative Taylor error is \(O_K(L^{-3(K+1)/5})\),
-by \eqref{eq:rough-derivatives}.
-Choose \(K\) after the derivative and character-count costs.
-For the unweighted rough population the series
-\(\zeta(s)\prod_{p\le y}(1-p^{-s})\) has principal density \(V_S\),
-and only the trivial character contributes. The projection
-\(\sum_{\eta\in H^\perp}\eta\) therefore reproduces every principal
-branch of the first sum with its exact coefficient. The factor
-\(n^{iu}\) changes only the derivative budget and choice of \(K\).
-\end{proof}
-For \(U\subset H\), set
-\begin{equation}\label{eq:corrected-model}
- D_U(n)=k_H\1_{n\bmod L_0\in U}f(n_S)
-                       \frac{M_{R,K}(n_{S'})}{V_S},\qquad
- \xi_U(n)=f(n)\1_{n\bmod L_0\in U}-D_U(n).
-\end{equation}
-Then \(D_U\ge0\), \(D_U\ll L^{-3(1-\rho)/5}\) and
-\(|\xi_U|\ll1\). Conditioning on an exact record \(n_S=r\le E\)
-leaves residual state \(U/r\), so Lemma~\ref{lem:rough-means}
-centers its principal mean. Fixed divisor-growth record coefficients
-cost only powers of \(L\), since
-\(\sum_{r\ S\text{-supported}}d_j(r)/r\ll L^{O_j(1)}\).
-Rankin's bound with exponent \(c/\log y\) gives
-\begin{equation}\label{eq:record-tail}
-\#\{n\le T:n_S>E\}\ll TL^{O(1)}e^{-cL^{1/10}}
- \quad(N^a\le T\le N^C).
-\end{equation}
-Indeed the Euler moment is \(L^{O(1)}\), whereas
-\(E^{-c/\log y}\) gives the exponential saving. The same argument
-permits fixed divisor weights. For \(H=G\), use the exact model
-\(D_U=\1_{n\bmod L_0\in U}\) and \(\xi_U=0\).
-
-\subsection{The model correlation}
-Use separate constructions for the two subgroups with common \(S\).
+Use separate constructions for the two subgroups with common \(\mathcal P_y\).
 \begin{proposition}\label{prop:model-correlation}
 For a smooth \(0\le\Phi\le1\) supported away from zero and one,
 \begin{align*}
- &\sum_{Ax+By=N}\Phi(Ax/N)D_U(x)D_V(y)\\
+ &\sum_{Ax+By=N}\Phi(Ax/N)\mathcal D_U(x)\mathcal D_V(y)\\
  &\quad=c_1c_2\Gamma_N C_{\mathcal E}J_{\mathcal E}(N)
        \frac{N}{AB L^\kappa}
        \left(\int_0^1\Phi(t)\,dt+O(L^{-1/2})\right)+O(N^{1/2}).
@@ -146,7 +29,7 @@ error \(O(NJ_{\mathcal E}(N)L^{-\kappa-\delta_0})\), where
 Discard records larger than \(E\) using \eqref{eq:record-tail}.
 The rough logarithms on the rest are \(L+O(\sqrt L)\), giving
 \[
- \frac{M_{R,K}(n_{S'})}{V_S}
+ \frac{M_{R,K}(n_{>y})}{V_y}
  =\frac{c_H L^{\rho-1}}{\alpha_0E_-(y)}(1+O_K(L^{-1/2})).
 \]
 Count the remaining small-prime sieve set in the fixed residues.
@@ -192,9 +75,9 @@ Restoring the strips costs \(O(\epsilon)\) of the sparse scale.
 All other tails are superlogarithmic or power-smaller, proving the claim.
 \end{proof}
 
-\subsection{Verification of the comparison hypotheses}
+\subsubsection{Verification of the comparison hypotheses}
 The indicators lie between zero and one, and the model bound after
-\eqref{eq:corrected-model} gives \(D_U\le1\) eventually for each
+\eqref{eq:corrected-model} gives \(\mathcal D_U\le1\) eventually for each
 fixed depth. Thus (C1) holds, with a threshold allowed to depend on
 that depth. The full-unit-group exact model also lies between zero
 and one.
@@ -205,13 +88,13 @@ Choose banks of primes \(p\equiv1\pmod{L_0}\), with small banks in
 Every bank prime is a unit at \(A,B\), belongs to both allowed
 sets, and preserves the fixed states. Hence
 \begin{equation}\label{eq:exact-invariance}
- f_U(pn)=f_U(n),\quad D_U(pn)=D_U(n),\quad \xi_U(pn)=\xi_U(n)
+ f_U(pn)=f_U(n),\quad \mathcal D_U(pn)=\mathcal D_U(n),\quad \xi_U(pn)=\xi_U(n)
 \end{equation}
 exactly, including higher powers. The deletion changes reciprocal
 mass by at most \(O(L/(P_{\min}\log P_{\min}))\), which is smaller
 than every fixed inverse logarithmic power. This verifies (C2).
 
-For (C3), fix an \(S\)-smooth record \(r\le E\). If \(f(r)=0\),
+For (C3), fix an \(\mathcal P_y\)-smooth record \(r\le E\). If \(f(r)=0\),
 both the indicator and model on that record vanish. Otherwise
 \(r\bmod L_0\in H\), and insert the residual state \(U/r\)
 into the periodic test of Lemma~\ref{lem:rough-means}. Its smooth
@@ -238,52 +121,66 @@ The constant may depend on the fixed coefficients.
 \end{lemma}
 \begin{proof}
 Discard records \(r,s>E\) using \eqref{eq:record-tail} and bounded
-weights. There are at most \(E^2\) retained record pairs. A shared
-bank prime makes the stratum empty, because no bank prime divides
-\(N\). For coprime records, \(r\mid x,s\mid y\) select one
-progression of length \(|J|/(ABrs)\). Exactness excludes two roots
-at an unselected bank prime and the remaining variable's root at
-a prime dividing \(rs\). Thus the bank probability is exactly
+weights. Their total contribution is
+\(NL^{O(1)}e^{-cL^{1/10}}\). There are at most \(E^2\) retained
+record pairs. A shared bank prime makes a stratum empty, since every
+bank prime avoids \(N\). For coprime \(r,s\), their divisibilities
+select one progression of length \(|J|/(ABrs)\).
+
+At \(p^e\Vert r\), write \(x=r\ell\). Exact valuation excludes
+\(\ell\equiv0\pmod p\), while \(y\) is automatically a unit because
+\(p\nmid N\). The same argument applies to \(s\). At an unused bank
+prime there are two distinct excluded roots. Thus the complete bank
+factor, including the progression density, is
 \[
  \frac1{rs}\prod_{\substack{p\in\mathcal B\\p\nmid rs}}(1-2/p)
-             \prod_{p\mid rs}(1-1/p)=\mu_{\mathcal B}(r,s).
+             \prod_{p\mid rs}(1-1/p)
+       =\mu_{\mathcal B}(r,s).
 \]
-Forbidden-prime slopes remain units. Apply the upper Selberg sieve
-with \(z=N^{1/10}\), using primes up to \(w=z^{1/16}\), which
-contains all banks for large \(N\). The squared-weight CRT remainder
-is \(O(z^{4+\eta})\), for arbitrarily small fixed \(\eta>0\),
-uniformly in the records. After summation it is
-\(N^{0.45+o(1)}=O(N^{1/2})\).
-
-For two indicators the nonbank sieve denominator has size at least
-a constant times \((\log w)^\kappa/J_{\mathcal E}(N)\).
-For model times indicator it has size
-\((\log y)^{1-\rho_1}(\log w)^{1-\rho_2}/J_{\mathcal E}(N)\);
-the pointwise model bound \(L^{-3(1-\rho_1)/5}\) restores precisely
-\(L^{-\kappa}\). For two models the denominator is
-\((\log y)^\kappa/J_{\mathcal E}(N)\), and the two model bounds
-give the same result. At a prime forbidden on one side only that
-side's denominator occurs. Target mergers cost at most the full
-factor \(J_{\mathcal E}(N)\). Sum the retained main bounds against
-\(F\) to obtain the expectation. More explicitly, every retained
-coprime record pair has, for every choice of \(w_i\in\{f_i,D_i\}\),
+All forbidden-prime slopes remain units. Apply the upper Selberg
+sieve with \(z=N^{1/10}\) and primes up to \(w=z^{1/16}\),
+which contains every bank for sufficiently large \(N\).
+The nonbank sieve denominators are bounded below, up to fixed positive
+constants, by
 \[
- \sum_{\substack{Ax+By=N,\ Ax\in J\\x_{\mathcal B}=r,\ y_{\mathcal B}=s}}
-       w_1(x)w_2(y)
- \le C_K\frac{|J|}{AB}\mu_{\mathcal B}(r,s)
-              \frac{J_{\mathcal E}(N)}{L^\kappa}
-       +O_K(z^{4+\eta_1}),
+\begin{array}{c|c}
+ \text{weights}&\text{sieve denominator}\\ \hline
+ f_1,f_2&(\log w)^\kappa/J_{\mathcal E}(N),\\
+ \mathcal D_1,f_2&
+   (\log y)^{1-\rho_1}(\log w)^{1-\rho_2}/J_{\mathcal E}(N),\\
+ \mathcal D_1,\mathcal D_2&
+   (\log y)^\kappa/J_{\mathcal E}(N).
+\end{array}
 \]
-where \(\eta_1>0\) is arbitrarily small and fixed. At a prime
-\(p^e\Vert r\), write \(x=r\ell\): exact valuation excludes
-\(\ell\equiv0\pmod p\), while \(y\) is automatically a unit
-because \(p\nmid N\). This gives the factor \(1-1/p\);
-at \(p\nmid rs\) the two distinct excluded roots give \(1-2/p\).
-These are the displayed record masses, before applying the nonbank
-sieve denominator. Multiplication by \(F(r,s)\le L^B\) and
-summation over at most \(E^2\) records leaves endpoint error
-\(L^BE^2z^{4+\eta_1}=O(N^{1/2})\). The exponent and the
-available sieve level are independent of the final model depth.
+The middle row also applies with the sides interchanged.
+A model excludes its forbidden primes up to \(y\); an indicator
+excludes them up to \(w\). A prime forbidden on only one side enters
+only that side's denominator. Target-root mergers cost at most the
+displayed factor \(J_{\mathcal E}(N)\). Each model bound contributes
+\(L^{-3(1-\rho_i)/5}\), so all three rows give the same sparse
+factor \(L^{-\kappa}J_{\mathcal E}(N)\).
+
+Consequently every retained stratum, for \(w_i\in\{f_i,\mathcal D_i\}\),
+has the single uniform estimate
+\[
+ \sum_{\substack{Ax+By=N,\ Ax\in J\\
+                  x_{\mathcal B}=r,\ y_{\mathcal B}=s}}
+          w_1(x)w_2(y)
+ \le C_K\frac{|J|}{AB}\mu_{\mathcal B}(r,s)
+             \frac{J_{\mathcal E}(N)}{L^\kappa}
+        +O_K(z^{4+\epsilon}),
+\]
+where \(\epsilon>0\) is arbitrarily small and fixed.
+The remainder follows from the squared-weight CRT root counts.
+Multiplying by \(F(r,s)\le L^B\) and summing at most \(E^2\)
+retained records leaves
+\[
+ L^BE^2z^{4+\epsilon}=O(N^{1/2})
+\]
+after fixing, for example, \(\epsilon=1/2\).
+Summing the main terms gives \(\mathbb E_{\mu_{\mathcal B}}F\).
+The endpoint exponent and sieve level are independent of the final
+model depth; constants and thresholds may depend on it.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:general}]

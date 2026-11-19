@@ -1,14 +1,16 @@
-\section{The shared graph comparison and reflected target grids}\label{sec:graph}
+\section{The shared graph comparison}\label{sec:graph}
 
-This section proves the common graph argument for
-Theorem~\ref{thm:model-comparison}, then the residue-energy estimate
-needed for its reflected family. The fixed-shift major arcs are treated
-separately in Section~\ref{sec:fixed-shift-comparison}. No arithmetic
-form of the indicators is used here beyond \textup{(C1)--(C3)}.
-Two structural points matter. The labels lie in a fixed reduced class,
-so the character frame must identify restrictions differing by a known
-unit phase. A target-sized displacement requires retaining its exact
-rational grids in the energy estimate.
+This section proves the graph reduction common to the reflected and
+fixed-shift families of Theorem~\ref{thm:model-comparison}. Its output is
+\eqref{eq:gr-comparison}--\eqref{eq:gr-comparison-term}: every error
+correlation is replaced by comparisons containing two independent
+large prime products. Sections~\ref{sec:fixed-shift-comparison} and
+\ref{sec:reflected-comparison} estimate those comparisons in their
+different frequency windows. No arithmetic form of the indicators
+is used here beyond \textup{(C1)--(C3)}.
+
+The labels lie in one fixed reduced class. The character frame must
+therefore identify restrictions differing by a known unit phase.
 
 Write \(L=\log x\).  There are \(\asymp\log L\) small banks and big
 banks, with primes respectively in
@@ -37,12 +39,12 @@ The quotient below removes this redundancy while retaining its phase.
 
 Let \(\mathcal X_Q\) be the primitive characters of conductor at most
 \(Q\), and define
-\[
+\begin{equation}
  \eta\sim\eta'
  \quad\Longleftrightarrow\quad
  \operatorname{cond}(\eta\overline{\eta'})\mid L_0.
- \tag{5.1}\label{eq:gr-equivalence}
-\]
+ \label{eq:gr-equivalence}
+\end{equation}
 The conductor here belongs to the primitive character inducing the
 quotient on a common modulus.  Choose one representative from each
 class and denote the resulting set by \(\mathcal R_Q\).
@@ -67,17 +69,17 @@ on any fixed coset of it: translation multiplies their sum by a unit phase.
 Fix a nonempty set \(\Lambda\) of at most \(m\) slots per big bank,
 where \(m\) is fixed before the eventual graph mark length.
 Let \(D_\Lambda\) be the product of independent labels in these slots.
-Partition its logarithm into cells
-\(I_j=[jh,(j+1)h)\), and write
+Partition its logarithm into cells of width \(\tau>0\)
+\(I_j=[j\tau,(j+1)\tau)\), and write
 \(\nu_j=\Prob(\log D_\Lambda\in I_j)\).
 For inequivalent \(\eta,\eta'\in\mathcal R_Q\), and any prescribed
 \(A>0\), Siegel--Walfisz gives
-\[
+\begin{equation}
  \left|\E\big[
   \1_{\log D_\Lambda\in I_j}
         \eta(D_\Lambda)\overline{\eta'(D_\Lambda)}\big]\right|
-       \ll_A L^{-A}.                                  \tag{5.2}\label{eq:gr-cell}
-\]
+       \ll_A L^{-A}.                                  \label{eq:gr-cell}
+\end{equation}
 Here and below the accuracy in Siegel--Walfisz is chosen after all
 fixed logarithmic exponents.
 
@@ -97,27 +99,27 @@ of \([\exp(L^{1/3}),\exp(L^{2/5})]\) by
 This is an absolute bound; no lower bound for the subinterval's
 length or harmonic mass is needed.  Divide by \(V_g\), then average
 the frozen labels.  Deleting target divisors changes the answer by at most
-\[
+\begin{equation}
  \sum_{\substack{p\mid k\\p\ge\exp(L^{1/3})}}\frac1p
- \le \frac{\log(2|k|)}{L^{1/3}}\exp(-L^{1/3}),               \tag{5.3}\label{eq:gr-deletion}
-\]
+ \le \frac{\log(2|k|)}{L^{1/3}}\exp(-L^{1/3}),               \label{eq:gr-deletion}
+\end{equation}
 which is smaller than every fixed inverse power of \(L\).
 This proves \eqref{eq:gr-cell} uniformly for the actual banks.
 
 On cells with \(\nu_j\ge\xi\), define
-\[
+\begin{equation}
  K_\Lambda(D,X)=
  \sum_{\nu_j\ge\xi}
  \frac{\1_{\log D\in I_j}\1_{\log X\in I_j}}{\nu_j}
  \sum_{\eta\in\mathcal R_Q}\overline{\eta(D)}\eta(X).
- \tag{5.4}\label{eq:gr-kernel}
-\]
+ \label{eq:gr-kernel}
+\end{equation}
 Both product variables have the same law.  The elementary bounds are
-\[
+\begin{equation}
  |K_\Lambda|\le Q^2\xi^{-1},\qquad
  \sup_X\E_D|K_\Lambda(D,X)|\le Q^2,\qquad
- \#\{j:\nu_j>0\}\ll_m1+(\log L)L^{2/5}/h.              \tag{5.5}\label{eq:gr-kernel-bounds}
-\]
+ \#\{j:\nu_j>0\}\ll_m1+(\log L)L^{2/5}/\tau.              \label{eq:gr-kernel-bounds}
+\end{equation}
 The last inequality uses only the range of the logarithm.
 
 On a retained cell, the kernel is the positive frame operator
@@ -132,9 +134,9 @@ Its Gram matrix has diagonal entries one, since all labels exceed
 Thus its norm is at most
 \(1+O_A(Q^2\xi^{-1}L^{-A})\le2\).
 Distinct cells are orthogonal blocks, so
-\[
-             \|K_\Lambda\|_{2\to2}\le2.                \tag{5.6}\label{eq:gr-frame-norm}
-\]
+\begin{equation}
+             \|K_\Lambda\|_{2\to2}\le2.                \label{eq:gr-frame-norm}
+\end{equation}
 This also holds for tuple tests: conditional expectation from tuples
 to their product is a contraction.
 If \(\psi\) is a character of modulus \(r\le Q\), its primitive
@@ -142,10 +144,10 @@ inducing character is equivalent to one member of \(\mathcal R_Q\).
 For \(r_\Lambda\) selected slots and \(\psi=\vartheta\eta\) on
 these units, that summand gives
 \(\vartheta(c)^{r_\Lambda}\eta(X)=\psi(X)\). The other summands give
-\[
+\begin{equation}
  \E_D K_\Lambda(D,X)\psi(D)
-       =\psi(X)+O_A(Q^2\xi^{-1}L^{-A})                 \tag{5.7}\label{eq:gr-reproduce}
-\]
+       =\psi(X)+O_A(Q^2\xi^{-1}L^{-A})                 \label{eq:gr-reproduce}
+\end{equation}
 at every retained \(X\).  This is where quotienting the frame is
 essential: the unquotiented frame can reproduce the same constant
 several times.
@@ -168,12 +170,12 @@ the only step where restricting the prime labels changes the proof.
 
 For a product formed from \(k_g\le m\) draws in each of at most
 \(C_0\log L\) disjoint banks, unique factorization gives its exact law
-\[
+\begin{equation}
  n\Prob(D_\Lambda=n)
    =\prod_g\frac{k_g!}{V_g^{k_g}\prod_{p\in\mathcal P_g}a_p!},
  \qquad
- \Prob(D_\Lambda=n)\le L^{K_0}/n,                     \tag{5.8}\label{eq:gr-productlaw}
-\]
+ \Prob(D_\Lambda=n)\le L^{K_0}/n,                     \label{eq:gr-productlaw}
+\end{equation}
 where
 \(K_0=C_0(\log(m!)+m\log\max(1,v_-^{-1}))\) and
 \(V_g\ge v_->0\).
@@ -185,11 +187,11 @@ integer coefficient sequence of squared norm at most
 
 The elementary integer bilinear estimate
 \cite[Lemma~4.2]{weightedgraphs}, or \cite[Lemma~6.2]{walsh}, gives
-\[
+\begin{equation}
  \left|\sum_{u,v}a_ub_v\ee{\theta uv}\right|^2
  \ll \|a\|_2^2\|b\|_2^2
-             (1+U/r)(V+r\log(2r))                  \tag{5.9}\label{eq:gr-integer-bilinear}
-\]
+             (1+U/r)(V+r\log(2r))                  \label{eq:gr-integer-bilinear}
+\end{equation}
 when the two supports lie in containing intervals of lengths
 \(O(U),O(V)\), \((a,r)=1\), and
 \(|\theta-a/r|\le r^{-2}\).
@@ -206,10 +208,10 @@ Apply this estimate to two nonempty selected product sets \(A,B\).
 On product dyads \(U,V\), use Dirichlet approximation with denominator
 ceiling \(\lfloor UV/S\rfloor\).  When the resulting denominator
 exceeds \(Q\), \eqref{eq:gr-productlaw} gives the normalized bound
-\[
+\begin{equation}
  \ll L^{K_0}\big(o(L^{-A})+Q^{-1}+L^{7/5}/S\big)^{1/2}.
- \tag{5.10}\label{eq:gr-highden}
-\]
+ \label{eq:gr-highden}
+\end{equation}
 There are at most \(L^{7/5}\) product dyads per variable.
 The same bound applies to the kernel terms by moving each kernel
 onto its endpoint test using \eqref{eq:gr-frame-norm}.
@@ -227,8 +229,8 @@ Write the remaining phase as
 \(M(v)=\exp(i\zeta v)\ee{\beta\exp v}\).
 On matched cells its derivative is
 \(O(L^{C_4}+S)\), and the two logarithmic products move by at most
-\(2h\).  By \eqref{eq:gr-kernel-bounds}, this costs
-\(O(Q^4h(S+L^{C_4}))\).
+\(2\tau\).  By \eqref{eq:gr-kernel-bounds}, this costs
+\(O(Q^4\tau(S+L^{C_4}))\).
 The union of discarded cells has probability at most
 \((N_A+N_B)\xi\), where \(N_A,N_B\) count the possible cells.
 Cauchy--Schwarz bounds its contribution by the square root of this
@@ -241,11 +243,11 @@ There is no circular choice of precisions.  One possible hierarchy is
  \begin{split}
  B_0&>A_0+2(7/5)+10,\\
  q_*,s_*&>2(B_0+K_0+10)+7/5,\\
- h_*&>4q_*+\max(s_*,C_4)+B_0+10,\\
- x_*&>2B_0+7/5+h_*+10,
+ \tau_*&>4q_*+\max(s_*,C_4)+B_0+10,\\
+ x_*&>2B_0+7/5+\tau_*+10,
  \end{split}
 \]
-with \(Q=L^{q_*},S=L^{s_*},h=L^{-h_*},\xi=L^{-x_*}\).
+with \(Q=L^{q_*},S=L^{s_*},\tau=L^{-\tau_*},\xi=L^{-x_*}\).
 Choose the accuracy in \eqref{eq:gr-cell} afterwards.
 All these choices are independent of the eventual mark length.
 
@@ -254,17 +256,17 @@ Split the big banks into two blocks of comparable size and designate
 \(m\) probe slots per group.  For nonempty probe subsets
 \(A,B\) in the two blocks, free their slots and give the comparison
 coefficient
-\[
+\begin{equation}
               -(-1)^{|A|+|B|}K_A(D_A,X_A)K_B(D_B,X_B).
- \tag{5.11}\label{eq:gr-signed}
-\]
+ \label{eq:gr-signed}
+\end{equation}
 Here \(D_A,D_B\) are auxiliary-label products and \(X_A,X_B\)
 are the unshared endpoint products.  The coefficient has no small
 or shared labels.  There are at most \(2^{mC_0\log L}\) comparisons;
 by \eqref{eq:gr-kernel-bounds} their total supremum is at most
-\[
-        1+2^{mC_0\log L}Q^4\xi^{-2}\le L^{C_1}.         \tag{5.12}\label{eq:gr-coeffcost}
-\]
+\begin{equation}
+        1+2^{mC_0\log L}Q^4\xi^{-2}\le L^{C_1}.         \label{eq:gr-coeffcost}
+\end{equation}
 Expanding both kernels also separates each coefficient into a sum
 of products of four bounded factors: one on each auxiliary product
 and one on each unshared endpoint list.  The number of terms and
@@ -469,13 +471,13 @@ Here \(u_n\) is the unnormalized vector equal to one on all marks at
 \]
 Spectral H\"older and Cauchy--Schwarz give the source block estimate;
 its only dimension factor is now
-\[
+\begin{equation}
  \big(O(D_{\max})\sup|f_n|^2\big)^{1/(2R)}
  \le
  \exp\!\left(O_M\!\left(
  \frac{(\log L)L^{2/5}+\sqrt L}{L^{0.52}}\right)\right)=O(1).
- \tag{5.13}\label{eq:gr-block}
-\]
+ \label{eq:gr-block}
+\end{equation}
 Second-endpoint neighborhoods have bounded overlap within a residue
 class and are disjoint between residue classes.
 H\"older over blocks uses only the sum of root traces on the whole
@@ -490,10 +492,10 @@ ordered distinct list with product \(P\), divisibility gives
 \(O(X/P)\) integers in an interval of length \(O(X)\) contained in
 \([-CX,CX]\).  For fixed mark length, \(P=x^{o(1)}\).
 After summing the list weights,
-\[
+\begin{equation}
  \sum_{\text{lists}}\frac1P\prod_gV_g^{-M}\le1.
- \tag{5.14}\label{eq:gr-list-moments}
-\]
+ \label{eq:gr-list-moments}
+\end{equation}
 Thus the endpoint \(r\)-moments are \(O_r(X)\).
 Condition \textup{(C1)} bounds every fixed-depth model without a
 depth-dependent logarithmic exponent. Thus this observation is valid
@@ -509,13 +511,13 @@ the large reflected target is not covered by the fixed-shift theorem
 of \cite{walsh}.
 For a vector \(\mathbf t=(t_g)\) and a bounded function \(b\) on its
 ordered distinct lists, put
-\[
+\begin{equation}
  W_{\mathbf t}^b(n)=
  \prod_g\big(\1_{\omega_g(n)=t_g}V_g^{-t_g}\big)
        \sum_{\substack{\mathbf p\text{ a }\mathbf t\text{-list}\\
                         p_{g,j}\mid n}} b(\mathbf p).
- \tag{5.15}\label{eq:gr-listweight}
-\]
+ \label{eq:gr-listweight}
+\end{equation}
 Here \(\omega_g(n)\) counts distinct bank-prime divisors of \(|n|\).
 For fixed \(t_g\le m+1\), these weights are bounded by a fixed
 power of \(L\).  In particular \(W_{\mathbf1}^1=\Omega_{\mathcal P}\).
@@ -527,10 +529,10 @@ the positive half-line. For shifts use positive endpoints on both
 sides. These sign restrictions preserve prime-multiplication invariance.
 Take a smooth \(\Psi\) supported in a compact subset of \((0,\infty)\).
 The pairing and Lemma~\ref{lem:gr-ideal} imply
-\[
+\begin{equation}
  C_0+\sum_\nu c_\nu C_\nu=O_A(L^{-A}),\qquad
- \#\{\nu\}+\sum_\nu|c_\nu|\le L^{C},                  \tag{5.16}\label{eq:gr-comparison}
-\]
+ \#\{\nu\}+\sum_\nu|c_\nu|\le L^{C},                  \label{eq:gr-comparison}
+\end{equation}
 where
 \[
  C_0=\sum_{w\ne0}\frac{\Psi(|w|/x)}{|w|}
@@ -538,15 +540,15 @@ where
        W_{\mathbf1}^1(w)W_{\mathbf1}^1(w+k)
 \]
 and each comparison has the form
-\[
+\begin{equation}
  \begin{split}
  C_\nu=\E_{D_1,D_2}a_\nu(D_1)b_\nu(D_2)
  \sum_{w\ne0}\frac{\Psi(|w|/(xD_1D_2))}{|w|}
   \alpha(w)\beta(w+kD_1D_2)\\
  {}\times W_{\mathbf t}^{u_\nu}(w)
                   W_{\mathbf t}^{v_\nu}(w+kD_1D_2).
- \end{split}                                                     \tag{5.17}\label{eq:gr-comparison-term}
-\]
+ \end{split}                                                     \label{eq:gr-comparison-term}
+\end{equation}
 The two auxiliary products are independent, use at most \(m\) draws
 per big bank, and each contains at least one big-bank prime.
 The four separated coefficient functions have modulus at most one.
@@ -590,17 +592,17 @@ Invariance and harmonic scaling give
 The graph normalization at a shared prime combines with \(1/D_R\)
 to give its probability law \(\mu_g\).
 More explicitly, with \((D_R)_g\) its product in bank \(g\),
-\[
+\begin{equation}
  \frac{V_g^{-M-t_g}}{(D_R)_g}
        =V_g^{-2t_g}
-           \prod_{\text{shared slots in }g}\mu_g(p).   \tag{5.18}\label{eq:gr-sharednormal}
-\]
+           \prod_{\text{shared slots in }g}\mu_g(p).   \label{eq:gr-sharednormal}
+\end{equation}
 For fixed reduced endpoints and fixed auxiliary labels,
 the shared-label probability is
-\[
+\begin{equation}
  \prod_g\1_{\omega_g(w)=\omega_g(w')=t_g}
-              +O(L^{C_M}e^{-L^{1/8}}).               \tag{5.19}\label{eq:gr-sharedprob}
-\]
+              +O(L^{C_M}e^{-L^{1/8}}).               \label{eq:gr-sharedprob}
+\end{equation}
 Indeed there are only \(O_M(\log L)\) draws, each atom is
 \(O(e^{-L^{1/8}})\), and \(ww'D_C\) has \(O(L)\) prime divisors.
 If the reduced counts are \(t_g\), distinct draws avoiding those
@@ -625,366 +627,3 @@ exactly \eqref{eq:gr-listweight}, while \(D_C=D_1D_2\).
 The raw pattern has \(D_C=1,\mathbf t=\mathbf1\).
 This proves \eqref{eq:gr-comparison}--\eqref{eq:gr-comparison-term}
 with their stated independence properties.
-
-\subsection{Prime sums at target-sized conductor}
-
-Only this subsection uses the zero-free input.
-It is important that its conductor range is polynomial in \(x\),
-rather than a power of \(\log x\).
-
-\begin{lemma}[Prime factor estimate]\label{lem:gr-primes}
-Assume the fixed all-conductor zero-free half-plane stated in
-Section~\ref{sec:inputs}.
-Fix \(\sigma_1\in(11/12,1)\).
-For \(q\le x^B\), every character \(\chi\bmod q\), and
-\(P\ge\exp(L^a)\), uniformly on subintervals \(I\subset[P,2P]\),
-\[
- \sum_{p\in I}\chi(p)p^{it}
- =\delta_\chi\int_I\frac{u^{it}}{\log u}\,du
-       +O((1+|t|)P^{\sigma_1}L^C).                  \tag{5.20}\label{eq:gr-primes}
-\]
-Here \(\delta_\chi=1\) for a principal character and zero otherwise,
-and the estimate holds for every real \(t\).
-For progression banks the main vanishes unless \(\chi\) is induced
-from a character modulo \(L_0\).
-Removing target or modulus divisors preserves the error bound.
-\end{lemma}
-
-\begin{proof}
-A fixed distance to the right of the zero-free boundary, the local
-logarithmic-derivative formula and functional equation give
-\[
- \left|\frac{L'}{L}(s,\chi)+\frac{\delta_\chi}{s-1}\right|
-                 \ll \log(q(|\Im s|+3)).
- \tag{5.21}\label{eq:gr-logderivative}
-\]
-Imprimitive Euler factors contribute \(O(\log q)\), since the real
-part is fixed and positive.
-Apply truncated Perron to
-\(-L'/L(s,\chi)\), at
-\(c=1+1/\log Z\), height \(Z^2\), and a half-integer endpoint
-\(Z\in[P/2,4P]\).
-The truncation error is \(O(\log^2 Z)\): near \(Z\), sum the bounds
-\(O(Z\log Z/(Z^2|n-Z|))\); away from \(Z\), use absolute convergence
-at \(c\).  Shift to \(\sigma_1\).
-The principal pole gives \(\delta_\chi Z\), the new vertical integral
-is \(O(Z^{\sigma_1}\log^2(qZ))\), and horizontal edges cost
-\(O(Z^c\log(qZ)/(Z^2\log Z))\).
-Prime powers cost \(O(Z^{1/2}\log^2 Z)\).
-Replacing a real endpoint by the adjacent half-integer changes its
-prime-weighted count by \(O(\log Z)\).  Therefore
-\[
-       \sum_{p\le Z}\chi(p)\log p
-          =\delta_\chi Z+O(Z^{\sigma_1}L^C).
-\]
-Partial summation against \(u^{it}/\log u\) proves
-\eqref{eq:gr-primes} with its linear \(1+|t|\) growth.
-
-Expand the progression condition into the finitely many characters
-modulo \(L_0\).  A constituent is principal exactly when the original
-character is induced from \(L_0\).
-There are at most \(O(\log(q(2+|k|)))=O(L)\) deleted prime divisors;
-their absolute unweighted contribution is absorbed by the error.
-\end{proof}
-
-In particular, for a nonexceptional character the prime factor saves
-\(P^{\sigma_1-1}\) against its trivial length.  The all-height form
-above is convenient: smooth product-cutoff Mellin transforms have
-integrable \((1+|t|)\)-weighted absolute value bounded by a fixed
-power of \(L\), so there is no boundary-smoothing loss from a sharp bank.
-
-\subsection{The exact target-grid energy}
-
-Let \(S=\{p:p\le y\}\), \(y=\exp(L^{2/5})\), and
-\(E_0=\exp(\sqrt L)\), as in Section~\ref{sec:comparison}.
-Let \(\xi\) be either centered function in \textup{(C3)}, at a
-fixed depth which will be chosen after the required precision.
-For a comparison term, define
-\[
- F(n)=\psi(n/Y)n^{i\sigma}\xi(n)W_{\mathbf t}^b(n),
- \quad Y=x^{1+o(1)},\quad |\sigma|\le L^C,             \tag{5.22}\label{eq:gr-energy-F}
-\]
-where the support of \(\psi\) is a fixed compact positive interval.
-All its logarithmic derivatives are bounded by fixed powers of \(L\).
-The coefficient \(b\) ignores a selected small-bank label, whose count
-is exactly one.  This holds for every comparison above.
-Reflection changes only fixed character factors and additive signs,
-so we state the estimate at a positive endpoint.
-
-\begin{proposition}[Target-grid residue energy]\label{prop:gr-energy}
-Suppose that
-\[
-       q\le xL^B,\qquad
-       \frac{Y}{qP_{\max}}\gg_A L^A
-                       \quad\text{for every fixed }A,
- \tag{5.23}\label{eq:gr-energy-ratio}
-\]
-where \(P_{\max}\le\exp(CL^{1/4})\) is the selected small-bank scale.
-For every prescribed \(D>0\), a fixed sufficiently deep density model
-gives
-\[
- E_q(F):=\sum_{a\bmod q}\left|
-           \sum_{n\equiv a\ (q)}F(n)\right|^2
-                      \ll_D\frac{Y^2}{q}L^{-D}.       \tag{5.24}\label{eq:gr-energy}
-\]
-The estimate is uniform in all valuations of \(q\).
-It also holds with \(F(n)\) multiplied by \(\ee{\beta n}\)
-when \(|\beta|Y\) is bounded by a fixed power of \(L\).
-\end{proposition}
-
-\begin{proof}
-Refine to \(Q=\lcm(q,L_0)\).
-Cauchy--Schwarz on the refined classes gives
-\(E_q(F)\le(Q/q)E_Q(F)\le L_0E_Q(F)\).
-For every gcd profile \(d\mid Q\), put \(r=Q/d\).
-Multiplicative orthogonality gives the exact identity
-\[
- E_Q(F)=\sum_{d\mid Q}\frac1{\varphi(r)}
-       \sum_{\chi\bmod r}\left|\sum_m F(dm)\chi(m)\right|^2.
- \tag{5.25}\label{eq:gr-gcdidentity}
-\]
-The character zeros impose \((m,r)=1\), so this identity retains
-prime powers, including primes dividing \(L_0\). We do not assume
-that the endpoint is prime to \(L_0\). Call a character exceptional
-when its primitive inducing character has conductor dividing \(L_0\).
-There are only a fixed number of such characters for each \(r\).
-In particular \(L_0\mid r\) is not required.
-
-We first identify the negligible sets in the norm actually needed.
-For a set \(\mathcal B\) and \(|G|\le L^C\), Cauchy--Schwarz in each
-residue class gives
-\[
- E_Q(G\1_{\mathcal B})
- \le(1+CY/Q)\sum_{n\asymp Y}|G(n)|^2\1_{\mathcal B}(n).
- \tag{5.26}\label{eq:gr-tail-energy}
-\]
-The factor is \(O(Y/Q)\) here.
-The following populations are exponentially small relative to \(Y\),
-up to fixed logarithmic factors:
-\[
- \begin{array}{ll}
- n_S>E_0:& O(YL^C e^{-cL^{1/10}}),\\
- p\mid n,\ p\mid Q,\ p>y:& O(YL/y),\\
- p\mid n,\ p\mid Q,\ p\text{ in the selected bank}:&
-                  O(YL/P_{\min}),\\
- p^2\mid n,\ p\text{ in the selected bank}:&
-                  O(Y/P_{\min}).
- \end{array}                                                       \tag{5.27}\label{eq:gr-tailsets}
-\]
-For the first bound, take \(a=c/\log y\). Counting multiples of
-each possible smooth record gives
-\[
- \#\{n\le CY:n_S>E_0\}
- \le CY E_0^{-a}\prod_{p\le y}(1-p^{a-1})^{-1}
-                 \ll YL^C e^{-cL^{1/10}}.
-\]
-This estimate uses no property of the indicators. The other bounds
-follow by counting multiples,
-using \(P_{\min}\ge\exp(cL^{1/8})\).
-Thus all these sets are negligible in \eqref{eq:gr-tail-energy}.
-
-For nonexceptional characters remove only selected primes dividing
-\(Q\) and selected-prime squares.  Do not yet impose \(n_S\le E_0\),
-as that would couple the extracted prime to its cofactor.
-The unique selected small-bank prime gives \(n=dpm\).
-On a dyadic prime interval \(p\asymp P\), exact dilation invariance
-and the independence of \(b\) from this slot make its remaining
-coefficient \(\gamma_d(m)\) independent of \(p\), with
-\(|\gamma_d(m)|\le L^C\).
-It includes the condition that \(m\) has no other selected-bank prime,
-and every other bank weight.  Its containing length is
-\(M\asymp Y/(dP)\).
-Mellin inversion of the product cutoff separates the character sum as
-an integral of
-\[
- A_\chi(t)B_{d,\chi}(t),\qquad
- A_\chi(t)=\sum_{p\asymp P,\ p\in\mathcal P_g}\chi(p)p^{it},
- \quad
- B_{d,\chi}(t)=\sum_{m\asymp M}\gamma_d(m)\chi(m)m^{it}.
- \tag{5.28}\label{eq:gr-primefactorization}
-\]
-The omitted Mellin scaling has modulus one.
-The transform has polynomial-logarithmic weighted \(L^1\) norm,
-including weight \(1+|t|\).
-Condition \eqref{eq:gr-energy-ratio} gives
-\[
-                       M/r\asymp Y/(QP)\gg1,
-\]
-independently of \(d\).
-Elementary character orthogonality therefore yields
-\[
- \frac1{\varphi(r)}\sum_{\chi\bmod r}|B_{d,\chi}(t)|^2
- \le(1+CM/r)\sum_{m\asymp M}|\gamma_d(m)|^2
-                  \ll \frac{M^2}{r}L^C.             \tag{5.29}\label{eq:gr-cofactorenergy}
-\]
-Apply Lemma~\ref{lem:gr-primes} to \(A_\chi\) and Minkowski to the
-integral in \eqref{eq:gr-primefactorization}.
-Its nonexceptional energy at profile \(d\) is
-\[
- \ll \frac{Y^2}{Qd}L^C\exp(-cL^{1/8}).               \tag{5.30}\label{eq:gr-nonexceptional}
-\]
-The prime dyadic decomposition costs only a fixed power of \(L\).
-Summing \(d\) is harmless because
-\(\sum_{d\mid Q}1/d\le Q/\varphi(Q)\ll\log\log(3Q)\).
-There is no number-of-characters or unweighted divisor-count loss.
-
-For exceptional characters use the further restriction
-\(n_S=A\le E_0\), and remove \(Q\)-prime divisors above \(y\).
-The errors were already controlled in energy.
-Now the gcd profile is determined by the smooth record:
-\(\gcd(A,Q)=d\), \(n=Av\), \((v,S)=1\).
-If \(\chi^*\) is the primitive character inducing an exceptional
-\(\chi\bmod r\), then on the retained profile
-\[
-             \chi(n/d)=\chi^*(A/d)\chi^*(v).
-\]
-Indeed \(\operatorname{cond}\chi^*\mid r\) and
-\((A/d,r)=1\). One must use \(\chi^*\) here: a literal character
-modulo \(L_0\) could vanish on a retained bad-prime prefix.
-Every other list weight depends only on \(A\), is bounded by \(L^C\),
-and the remaining periodic test in \(v\) has fixed period \(L_0\).
-The one-variable hypothesis must center this full periodic test;
-matching only a scalar principal mean would not suffice.
-
-There is still the condition that \(v\) avoid primes \(p\mid Q\)
-above \(y\).  Remove it before applying the fixed-period centering
-lemma, extending the same bounded periodic test to those new points.
-At each retained record, multiples of such \(p\) number at most
-\(CY/(Ap)\) on the containing interval \(0<v\le CY/A\).
-Consequently the change in the profile sum is at most
-\[
- L^CY\sum_{\substack{A\ S\text{-smooth}\\d\mid A}}\frac1A
-                \sum_{\substack{p\mid Q\\p>y}}\frac1p
- \le \frac{Y}{d}L^CV_S^{-1}\frac{\log Q}{y\log y}
- \ll_D (Y/d)L^{-D}.                                  \tag{5.31}\label{eq:gr-avoidance}
-\]
-We used the exact harmonic identity
-\[
- \sum_{\substack{A\ S\text{-smooth}\\d\mid A}}\frac1A
-                       =\frac1{dV_S}                 \tag{5.32}\label{eq:gr-record-harmonic}
-\]
-when \(d\) is \(S\)-smooth; otherwise this restricted profile is empty.
-
-After this extension, hypothesis \textup{(C3)} applies record by
-record at length \(Y/A\).
-It permits arbitrary bounded fixed-period tests, arbitrary choices
-of retained records, and the stated smooth phases.
-Choose its logarithmic accuracy after the list and cutoff costs.
-Using \eqref{eq:gr-record-harmonic} gives, for every prescribed \(D_0\),
-\[
-            \left|\sum_mF_{\rm good}(dm)\chi(m)\right|
-                         \ll (Y/d)L^{-D_0}.          \tag{5.33}\label{eq:gr-exceptional}
-\]
-Restoring the avoidance condition costs \eqref{eq:gr-avoidance}.
-In \eqref{eq:gr-gcdidentity} the total exceptional contribution is at most
-\[
- \frac{Y^2}{Q}L^{-2D_0}
-           \sum_{d\mid Q}\frac1d\,\frac{Q/d}{\varphi(Q/d)}
-                     \ll \frac{Y^2}{Q}L^{-2D_0+C}.   \tag{5.34}\label{eq:gr-exceptionalenergy}
-\]
-Choose \(D_0\) large, add the negligible sets, and use the refinement
-inequality to prove \eqref{eq:gr-energy}.
-Multiplying the cutoff by \(\ee{\beta Yu}\) changes only its fixed
-logarithmic derivative bounds when \(|\beta|Y\le L^B\), proving the
-last assertion.
-\end{proof}
-
-This proof uses only boundedness, exact prime invariance, and the
-recordwise periodic means in \textup{(C1)--(C3)}. In particular no
-subgroup support, pole order, positivity of an individual character
-branch, or unit-support condition at the fixed modulus enters the
-energy estimate.
-
-\subsection{From target-grid energy to comparison cancellation}
-
-We now specialize to the reflected family \(k=T=x\) and complete
-its comparison estimate with all normalizations visible. The next
-section gives the different frequency argument for fixed \(k=h\).
-Dyadically localize the two auxiliary products in
-\eqref{eq:gr-comparison-term} to \(D_i\asymp H_i\).
-Then
-\[
- H_i\ge\exp(L^{1/3}),\qquad
- H_i\le\exp(O_m((\log L)L^{2/5})),\qquad
- Y=xH_1H_2.
-\]
-Insert endpoint dyadic cutoffs before Mellin inversion, as in the
-reflection argument.  The resulting ordinary comparison has form
-\[
- \frac1Y\int_0^1\widehat F(\theta)\widehat G(-\theta)
-                           m(T\theta)\,d\theta,\qquad
- m(\theta)=\E b_1(D_1)b_2(D_2)\ee{\theta D_1D_2}.
- \tag{5.35}\label{eq:gr-fouriercomparison}
-\]
-External Mellin transforms and their fixed logarithmic costs are
-understood here.  The endpoint \(F\) is centered and has exactly the
-form in \eqref{eq:gr-energy-F}; \(G\) has squared norm at most
-\(YL^C\).  This follows from bounded invariant endpoints and the
-pointwise list bound, without any multiplicativity of list coefficients.
-
-By \eqref{eq:gr-productlaw} and
-\eqref{eq:gr-integer-bilinear}, for a rational approximation
-\(|\theta-a/r|\le r^{-2}\),
-\[
- |m(\theta)|^2\ll L^{C_{\rm prod}}
- \left(r^{-1}+H_1^{-1}+\frac{\log(2r)}{H_2}
-                    +\frac{r\log(2r)}{H_1H_2}\right). \tag{5.36}\label{eq:gr-multiplier}
-\]
-Choose an outer cutoff \(B_{\rm out}\), after the finite comparison
-family has been fixed.
-Dirichlet approximation with denominator ceiling
-\(H_1H_2/L^{B_{\rm out}-1}\) makes the multiplier smaller than any
-requested inverse logarithmic power unless \(T\theta\) lies within
-\(L^{B_{\rm out}}/(H_1H_2)\) of a rational of denominator
-\(r\le L^{B_{\rm out}}\).
-The corresponding physical frequencies are covered by grids
-of denominator \(q=Tr\), with widths
-\(O(L^{B_{\rm out}}/(TH_1H_2))=O(L^{B_{\rm out}}/Y)\).
-Moreover
-\[
- \frac{Y}{qP_{\max}}
- \gg \exp(cL^{1/3}-CL^{1/4})L^{-B_{\rm out}},
-\]
-so \eqref{eq:gr-energy-ratio} holds uniformly in every gcd profile.
-
-Discrete additive Parseval gives the exact normalization
-\[
- \sum_{j\bmod q}|\widehat F(j/q+\beta)|^2
-                         =qE_q(F\ee{\beta n}).        \tag{5.37}\label{eq:gr-gridparseval}
-\]
-Integrating over width \(L^{B_{\rm out}}/Y\) and applying
-Proposition~\ref{prop:gr-energy} gives \(YL^{-D}\) for every desired
-\(D\), after demanding a larger residue-energy saving.
-The polynomial-logarithmic family of \(r\)'s is paid at the same step.
-In particular the \(T\) grid points do not create a factor \(T\):
-they are already included in \eqref{eq:gr-gridparseval}.
-Cauchy--Schwarz and Parseval on the other endpoint bound
-\eqref{eq:gr-fouriercomparison} on these grids by an arbitrary inverse
-power of \(L\).  Off the grids, use
-\eqref{eq:gr-multiplier} and the endpoint norms.
-This proves that every comparison in \eqref{eq:gr-comparison} is
-negligible to the requested logarithmic accuracy.
-
-Finally \(\Psi(t)=t\Phi(t)\) makes
-\[
-               \frac{\Psi(|w|/x)}{|w|}
-                       =\frac{\Phi(|w|/x)}x.
-\]
-Thus the harmonic raw correlation is \(1/x\) times the ordinary
-banked correlation on the reflected line.
-The comparison at scale \(Y\) has exactly the corresponding factor
-\(1/Y\).  Paying the finite comparison coefficients therefore proves
-the centered banked replacement required in the assembly.
-
-Fixed bad-supported coefficients in \(Aa+Bb=T\) cause no new
-analytic condition.  Embed, for example,
-\(\widetilde F(n)=\1_{A\mid n}F(n/A)\).
-Its exact residue energy is
-\[
-                  E_q(\widetilde F)=E_{q/(q,A)}(F),
-\]
-and its core length is divided by the fixed \(A\).
-All energy ratios change only by fixed factors.
-Bank primes are units at \(A,B\), so dilation invariance and
-shared-label removal persist.  This embedding also avoids treating
-the physical summands as units modulo \(L_0\) when they are not.

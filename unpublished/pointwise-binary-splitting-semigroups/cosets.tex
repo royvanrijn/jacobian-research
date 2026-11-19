@@ -1,4 +1,4 @@
-\section{Self-sums with prime support in a fixed coset}\label{sec:cosets}
+\subsection{Self-sums with prime support in a fixed coset}\label{sec:cosets}
 
 The comparison theorem also covers a prime coset which contains no
 identity class. The additional arithmetic issue is that its character
@@ -9,48 +9,48 @@ are smaller than its positive leading part.
 Fix an even integer \(m\), put \(G=(\Z/m\Z)^\times\), and let
 \(K\le G\), \(a\in G\). Write
 \[
- S=aK,\qquad H=\langle K,a\rangle,\qquad
+ \mathscr A=aK,\qquad H=\langle K,a\rangle,\qquad
  r=[G:K],\qquad d=\operatorname{ord}_{G/K}(aK),\qquad \rho=1/r.
 \]
 Define
 \[
- \mathcal P_S=\{p:p\nmid m,\ p\bmod m\in S\},\qquad
- C_S=\langle\mathcal P_S\rangle,\qquad f=\1_{C_S}.
+ \mathcal P_{\mathscr A}=\{p:p\nmid m,\ p\bmod m\in\mathscr A\},\qquad
+ C_{\mathscr A}=\langle\mathcal P_{\mathscr A}\rangle,\qquad f=\1_{C_{\mathscr A}}.
 \]
-Thus \(1\in C_S\). The generated residue group is \(H\), whereas
+Thus \(1\in C_{\mathscr A}\). The generated residue group is \(H\), whereas
 the prime density is \(\rho\); these are different data. Put
 \begin{align}
- c_S&=\frac1{\Gamma(\rho)}\lim_{s\downarrow1}(s-1)^\rho
-                        \prod_{p\in\mathcal P_S}(1-p^{-s})^{-1},
+ c_{\mathscr A}&=\frac1{\Gamma(\rho)}\lim_{s\downarrow1}(s-1)^\rho
+                        \prod_{p\in\mathcal P_{\mathscr A}}(1-p^{-s})^{-1},
                          \label{eq:coset-marginal}\\
- \Gamma_S(N)&=\frac{m}{|H|^2}
+ \Gamma_{\mathscr A}(N)&=\frac{m}{|H|^2}
        \#\{(u,v)\in H^2:u+v\equiv N\pmod m\},\notag\\
- \mathcal E_S&=\{p:p\nmid m,\ p\bmod m\notin S\},\notag\\
- C_{\mathcal E_S}&=\prod_{p\in\mathcal E_S}
+ \mathcal E_{\mathscr A}&=\{p:p\nmid m,\ p\bmod m\notin\mathscr A\},\notag\\
+ C_{\mathcal E_{\mathscr A}}&=\prod_{p\in\mathcal E_{\mathscr A}}
                  \left(1-\frac1{(p-1)^2}\right),\qquad
- J_S(N)=\prod_{\substack{p\mid N\\p\in\mathcal E_S}}
+ J_{\mathscr A}(N)=\prod_{\substack{p\mid N\\p\in\mathcal E_{\mathscr A}}}
                                       \frac{p-1}{p-2}.\notag
 \end{align}
-The constant \(c_S\) is positive; an explicit expression is given below.
+The constant \(c_{\mathscr A}\) is positive; an explicit expression is given below.
 For \(d>1\), set
 \[
- g_S=\rho\bigl(1-\cos(2\pi/d)\bigr),\qquad
- \delta_S=\min\left\{\frac1{8192\varphi(m)},\frac{3g_S}{10}\right\}.
+ g_{\mathscr A}=\rho\bigl(1-\cos(2\pi/d)\bigr),\qquad
+ \delta_{\mathscr A}=\min\left\{\frac1{8192\varphi(m)},\frac{3g_{\mathscr A}}{10}\right\}.
 \]
-For \(d=1\), use \(g_S=+\infty\) and
-\(\delta_S=1/(8192\varphi(m))\).
+For \(d=1\), use \(g_{\mathscr A}=+\infty\) and
+\(\delta_{\mathscr A}=1/(8192\varphi(m))\).
 
 \begin{theorem}\label{thm:coset}
 Under the analytic inputs of Section~\ref{sec:inputs}, uniformly in
-all sufficiently large targets with \(\Gamma_S(N)>0\),
+all sufficiently large targets with \(\Gamma_{\mathscr A}(N)>0\),
 \[
- \#\{(x,y)\in C_S^2:x+y=N\}
- =c_S^2\Gamma_S(N)C_{\mathcal E_S}J_S(N)
+ \#\{(x,y)\in C_{\mathscr A}^2:x+y=N\}
+ =c_{\mathscr A}^2\Gamma_{\mathscr A}(N)C_{\mathcal E_{\mathscr A}}J_{\mathscr A}(N)
        \frac{N}{(\log N)^{2-2\rho}}
-       \left(1+O((\log N)^{-\delta_S})\right).
+       \left(1+O((\log N)^{-\delta_{\mathscr A}})\right).
 \]
-If \(\Gamma_S(N)=0\), the count is identically zero.
-The condition \(\Gamma_S(N)>0\) is equivalent to solvability in
+If \(\Gamma_{\mathscr A}(N)=0\), the count is identically zero.
+The condition \(\Gamma_{\mathscr A}(N)>0\) is equivalent to solvability in
 every finite quotient. Consequently it characterizes eventual
 representability. The modulus and coset remain fixed, and the error
 is uniform in all target prime valuations.
@@ -60,13 +60,13 @@ The exponent incorporates both discarded banks and the gap between
 the leading and secondary character branches. In particular a fixed
 positive exponent works for every fixed coset. For \(d\ge2\),
 \(1-\cos(2\pi/d)=2\sin^2(\pi/d)\ge8/d^2\), so one may always
-replace \(\delta_S\) by the simpler, weaker
+replace \(\delta_{\mathscr A}\) by the simpler, weaker
 \(1/(8192\varphi(m)^3)\). There is no uniformity in growing \(m\).
 The new assertion concerns unfiltered self-sums. A filter on the
 whole numerical value need not be preserved by multiplication by a
 prime in a nonidentity coset.
 
-\subsection{Every fixed-character branch}
+\subsubsection{Every fixed-character branch}
 
 For a character \(\psi\), define
 \(F_\psi(s)=\sum_n\psi(n)f(n)n^{-s}\), with all characters inflated
@@ -80,7 +80,7 @@ The correction is uniformly absolutely convergent for \(\Re s>1/2\).
 Indeed the coefficient of \(p^{-s}\) in the logarithm is
 \[
  \rho\psi(p)\sum_{\chi\in K^\perp}\overline{\chi(a)}\chi(p)
-                =\psi(p)\1_{p\bmod m\in S};
+                =\psi(p)\1_{p\bmod m\in\mathscr A};
 \]
 the remaining logarithmic terms are bounded by a fixed multiple of
 \(\sum_p p^{-2\Re s}\). Literal Euler factors include all conductor
@@ -96,17 +96,17 @@ All other twists have no singular branch at one. The exponents
 \(\rho\) occur exactly for \(\psi\in H^\perp\). The remaining
 exponents are \(\rho\) times nontrivial \(d\)-th roots of unity,
 each with the same multiplicity. In particular,
-\(\rho-\Re\alpha_\psi\ge g_S\) outside \(H^\perp\).
+\(\rho-\Re\alpha_\psi\ge g_{\mathscr A}\) outside \(H^\perp\).
 
 For the untwisted series, an explicit positive correction is
 \[
  \log G_{1,p}(s)=\sum_{j\ge2}
- \frac{\1_{p\bmod m\in S}-\1_{(p\bmod m)^j\in S}}{j p^{js}}
+ \frac{\1_{p\bmod m\in\mathscr A}-\1_{(p\bmod m)^j\in\mathscr A}}{j p^{js}}
  \qquad(p\nmid m).
 \]
 Thus
 \begin{equation}\label{eq:coset-constant}
- c_S=\frac{(\varphi(m)/m)^\rho G_1(1)}{\Gamma(\rho)}
+ c_{\mathscr A}=\frac{(\varphi(m)/m)^\rho G_1(1)}{\Gamma(\rho)}
         \prod_{\substack{\chi\in K^\perp\\\chi\ne1}}
                      L(1,\chi)^{\rho\overline{\chi(a)}}.
 \end{equation}
@@ -118,26 +118,26 @@ asymptotic, and its complex twisted versions, also follow from
 That fixed-function theorem is not used in place of the moving-cutoff
 estimate which follows.
 
-\subsection{The arithmetic model and its one-variable means}
+\subsubsection{The arithmetic model and its one-variable means}
 
 If \(K=G\), then \(f\) is the indicator of integers coprime to
-\(m\), and we use the exact model \(D=f\). Counting the finite
+\(m\), and we use the exact model \(\mathcal D=f\). Counting the finite
 residue classes on the line proves Theorem~\ref{thm:coset} with
 \(O_m(1)\) error. In the model construction below assume
 \(K\ne G\), so \(\rho<1\) and the model upper bound tends to zero.
 
 Keep an outer scale \(X\), with \(L=\log X\), and let
 \[
- y=e^{L^{2/5}},\quad \mathcal S=\{p:p\le y\},\quad
+ y=e^{L^{2/5}},\quad \mathcal P_y=\{p:p\le y\},\quad
  V_y=\prod_{p\le y}(1-1/p),\quad E=e^{\sqrt L}.
 \]
-For \(n=A v\), where \(A=n_{\mathcal S}\), the integer \(v\) is
-\(\mathcal S\)-rough. The outer scale and cutoff are held fixed
+For \(n=A v\), where \(A=n_{\mathcal P_y}\), the integer \(v\) is
+\(\mathcal P_y\)-rough. The outer scale and cutoff are held fixed
 under multiplication by bank primes.
 For \(\psi\in K^\perp\), write
 \[
  F_{\psi,R}(s)=F_\psi(s)
-        \prod_{\substack{p\le y\\p\in\mathcal P_S}}
+        \prod_{\substack{p\le y\\p\in\mathcal P_{\mathscr A}}}
                          (1-\psi(p)p^{-s})
           =(s-1)^{-\alpha_\psi}H_{\psi,R}(s).
 \]
@@ -162,7 +162,7 @@ Choose a sufficiently large fixed depth \(J\), and put
 Write \(M_0=M_1\) for the positive principal branch. On any fixed
 power range, \(M_0(t)>0\), and
 \begin{equation}\label{eq:coset-secondary-gap}
- |M_\psi(t)|\ll L^{-3g_S/5}M_0(t)
+ |M_\psi(t)|\ll L^{-3g_{\mathscr A}/5}M_0(t)
                      \qquad(\psi\notin H^\perp).
 \end{equation}
 In fact its individual exponent is
@@ -174,22 +174,23 @@ Every \(\eta\in H^\perp\) is one on the support of \(f\), so
 \(F_{\psi\eta,R}=F_{\psi,R}\) and \(M_{\psi\eta}=M_\psi\)
 exactly. Define
 \begin{equation}\label{eq:coset-model}
- D_J(n)=\frac{f(A)}{V_y}
+ \mathcal D_J(n)=\frac{f(A)}{V_y}
               \sum_{\psi\in K^\perp}\overline{\psi(v)}M_\psi(v),
- \qquad \xi_J(n)=f(n)-D_J(n).
+ \qquad \xi_J(n)=f(n)-\mathcal D_J(n).
 \end{equation}
 Grouping characters modulo \(H^\perp\) factors the bracket by
 \(|G/H|\1_{v\bmod m\in H}\). Its leading term is positive and
 all other terms satisfy \eqref{eq:coset-secondary-gap}. Therefore
-\(D_J\) is real and nonnegative for large \(X\), and
+\(\mathcal D_J\) is real and nonnegative for large \(X\), and
 \begin{equation}\label{eq:coset-model-domination}
- D_{0,J}(n)=|G/H|\1_{v\bmod m\in H}\frac{f(A)M_0(v)}{V_y},
- \qquad |D_J-D_{0,J}|\ll L^{-3g_S/5}D_{0,J}.
+ \mathcal D_{0,J}(n)=|G/H|\1_{v\bmod m\in H}\frac{f(A)M_0(v)}{V_y},
+ \qquad |\mathcal D_J-\mathcal D_{0,J}|\ll L^{-3g_{\mathscr A}/5}\mathcal D_{0,J}.
 \end{equation}
 For \(d=1\), the difference is zero.
 
 For a precise extension, use the cutoff from
-Section~\ref{sec:model}, with the present outer scale \(X\):
+Section~\ref{sec:model-preparation}, immediately after
+\eqref{eq:hankel-model}, with the present outer scale \(X\):
 set every \(M_\psi(t)=0\) for \(t\le X^{1/4}\), and multiply
 \eqref{eq:coset-hankel} by \(\eta_0(\log t/L)\) above that point.
 It equals the displayed formula for \(t\ge X^{1/3}\).
@@ -200,13 +201,13 @@ Condition (C3) only uses \(t\gg X^{1/2}/E>X^{1/3}\).
 Consequently, on
 \(1\le n\le X^3\),
 \[
- 0\le D_J(n)\ll L^{-3(1-\rho)/5},\qquad |\xi_J(n)|\ll1.
+ 0\le \mathcal D_J(n)\ll L^{-3(1-\rho)/5},\qquad |\xi_J(n)|\ll1.
 \]
 These exponents are independent of the fixed depth. For an allowed
 \(p\le y\), multiplication changes \(A\) to \(pA\) and leaves
 \(v\) unchanged. Hence, exactly,
 \begin{equation}\label{eq:coset-invariance}
- f(pn)=f(n),\qquad D_J(pn)=D_J(n),\qquad \xi_J(pn)=\xi_J(n).
+ f(pn)=f(n),\qquad \mathcal D_J(pn)=\mathcal D_J(n),\qquad \xi_J(pn)=\xi_J(n).
 \end{equation}
 The characters in \eqref{eq:coset-model} are evaluated at the rough
 part \(v\), rather than at the whole integer \(n\).
@@ -214,13 +215,13 @@ part \(v\), rather than at the whole integer \(n\).
 \begin{lemma}\label{lem:coset-centering}
 For every fixed \(B,A_0>0\), a sufficiently large fixed depth \(J\)
 gives the recordwise estimate \eqref{eq:comparison-rough-means} for
-\(\xi_J\). It holds uniformly for every \(\mathcal S\)-supported
+\(\xi_J\). It holds uniformly for every \(\mathcal P_y\)-supported
 record \(r_0\le E\), every \(Y\in[X^{1/2},X^2]\), bounded periodic
 tests of period at most \(L^B\), and the smooth weights permitted
 there. In particular it includes every fixed-character contribution.
 \end{lemma}
 \begin{proof}
-First consider an \(\mathcal S\)-rough variable at scale
+First consider an \(\mathcal P_y\)-rough variable at scale
 \(T\in[X^{2/5},X^2]\). Expand a periodic test in characters after
 refining its period to \(Q=\operatorname{lcm}(q,m)\). All primes
 dividing \(Q\) lie below \(y\). For a character \(\vartheta\bmod Q\),
@@ -293,7 +294,7 @@ This is the required recordwise assertion, with the depth chosen
 after the requested accuracy.
 \end{proof}
 
-\subsection{Common banks and the independent sieve check}
+\subsubsection{Common banks and the independent sieve check}
 
 Choose one residue \(a_0\in aK\) and take all small and big banks
 from primes \(p\equiv a_0\pmod m\), deleting \(p\mid N\).
@@ -302,29 +303,17 @@ Equation \eqref{eq:coset-invariance} verifies condition (C2) of
 Theorem~\ref{thm:model-comparison}; the bounds above verify (C1),
 and Lemma~\ref{lem:coset-centering} verifies (C3).
 
-The progression character frame is compatible with these banks.
-If equivalent characters differ by a character \(\theta\bmod m\),
-then on a product of a specified \(s\) slots,
-\[
- \psi(D)=\theta(a_0)^s\eta(D),\qquad
- \psi(X)=\theta(a_0)^s\eta(X).
-\]
-The two products have the same slot set, so the same unit phase
-occurs in both. The conjugated frame kernel consequently reproduces
-\(\psi\) exactly to the existing error. Inequivalent characters
-have zero average on the lifted coset, since that average is a unit
-phase times their average on its kernel. Siegel--Walfisz and partial
-summation give the same logarithmic-cell estimate. Grouping equivalent
-characters in a rational-phase expansion cannot increase the total
-absolute coefficient mass. Thus there is no new graph construction
-or mark-length loss behind this application.
+Apply Lemma~\ref{lem:gr-ideal} with \(L_0=m\) and \(c=a_0\).
+Its quotient character frame already retains the common unit phase
+on products with the same slot type. Thus these banks require no
+new graph construction or mark-length loss.
 
 We verify the remaining envelope assumption independently of the
-comparison. Put \(\kappa_S=2-2\rho\) and
-\(\Sigma_N=NJ_S(N)L^{-\kappa_S}\). This satisfies
+comparison. Put \(\kappa_{\mathscr A}=2-2\rho\) and
+\(\Sigma_N=NJ_{\mathscr A}(N)L^{-\kappa_{\mathscr A}}\). This satisfies
 \eqref{eq:comparison-scale}, for example with \(\kappa_0=3\), since
-\(0\le\kappa_S<2\), \(J_S(N)\ge1\), and the prime-product bound
-\(J_S(N)\ll(\log\log(3N))^2\) is uniform in \(N\).
+\(0\le\kappa_{\mathscr A}<2\), \(J_{\mathscr A}(N)\ge1\), and the prime-product bound
+\(J_{\mathscr A}(N)\ll(\log\log(3N))^2\) is uniform in \(N\).
 At a bank prime \(p\nmid N\),
 the exact two-coordinate valuation law is \eqref{eq:bank-law}.
 For coprime bank records \(r_1,r_2\le E\), their divisibilities
@@ -343,22 +332,22 @@ sieve denominator, up to fixed positive constants:
 \[
 \begin{array}{c|c}
  \text{weights}&\text{sieve denominator}\\ \hline
- f,f&(\log w)^{2(1-\rho)}/J_S(N),\\
- D_J,f&(\log y)^{1-\rho}(\log w)^{1-\rho}/J_S(N),\\
- D_J,D_J&(\log y)^{2(1-\rho)}/J_S(N).
+ f,f&(\log w)^{2(1-\rho)}/J_{\mathscr A}(N),\\
+ \mathcal D_J,f&(\log y)^{1-\rho}(\log w)^{1-\rho}/J_{\mathscr A}(N),\\
+ \mathcal D_J,\mathcal D_J&(\log y)^{2(1-\rho)}/J_{\mathscr A}(N).
 \end{array}
 \]
 For a model factor use its nonnegative domination by \(2D_{0,J}\),
 its bound \(L^{-3(1-\rho)/5}\), and its exclusion of every forbidden
 prime at most \(y\). These bounds turn each row into exactly
-\(L^{-\kappa_S}J_S(N)\). Fixed residue conditions can be discarded
+\(L^{-\kappa_{\mathscr A}}J_{\mathscr A}(N)\). Fixed residue conditions can be discarded
 for this upper estimate. Its CRT endpoint error per retained record
 pair is \(O(z^{4+\epsilon})\); summing at most \(E^2\) pairs gives
 \(N^{0.45+o(1)}\). The exponent is independent of the model depth.
 
 Rankin's bound with parameter \(c/\log y\) gives
 \[
- \#\{n\le N:n_{\mathcal S}>E\}
+ \#\{n\le N:n_{\mathcal P_y}>E\}
                  \ll NL^{O(1)}e^{-cL^{1/10}}.
 \]
 It applies to every actual/model pair because the weights are
@@ -376,7 +365,7 @@ has been included as an arithmetic assumption.
 \subsection{The main term and the exact congruence criterion}
 
 \begin{lemma}\label{lem:coset-finite-images}
-A residue \(t\bmod M\) is represented by \(C_S\) if and only if
+A residue \(t\bmod M\) is represented by \(C_{\mathscr A}\) if and only if
 its reduction modulo \(\gcd(M,m)\) is that of some \(h\in H\),
 and \(p\nmid t\) at each forbidden prime \(p\mid M\), \(p\nmid m\).
 \end{lemma}
@@ -384,13 +373,13 @@ and \(p\nmid t\) at each forbidden prime \(p\mid M\), \(p\nmid m\).
 Necessity follows from prime support. For sufficiency extract an
 allowed-prime prefix \(D\) with valuations
 \(\min(v_p(t),v_p(M))\) at allowed primes dividing \(M\).
-It belongs to \(C_S\), and its residue belongs to \(H\).
+It belongs to \(C_{\mathscr A}\), and its residue belongs to \(H\).
 The desired unit tail has state \(hD^{-1}\in H\).
 
-The positive monoid generated by \(S\) in the finite group is \(H\),
+The positive monoid generated by \(\mathscr A\) in the finite group is \(H\),
 so choose a nonempty word \(s_1\cdots s_k=hD^{-1}\), with
-\(s_i\in S\). An identity state also has a nonempty word, by taking
-a positive power of any element of \(S\). Realize all but the last
+\(s_i\in\mathscr A\). An identity state also has a nonempty word, by taking
+a positive power of any element of \(\mathscr A\). Realize all but the last
 letter by primes in their reduced classes modulo \(m\), avoiding
 \(M\). For the last letter, impose its class modulo \(m\), and
 the remaining unit-tail congruences modulo the prime powers of \(M\).
@@ -403,41 +392,41 @@ is precisely the prescribed reduction of \(h\).
 The resulting CRT class is reduced, and Dirichlet's theorem supplies
 a prime in it. Multiplying all chosen primes and \(D\) realizes
 the required residue. A single prime would not suffice in general:
-the tail state need not itself lie in \(S\).
+the tail state need not itself lie in \(\mathscr A\).
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:coset}]
 The full-group case was handled by its exact model. Suppose \(K\ne G\).
 Theorem~\ref{thm:model-comparison}, applied using the checks above,
-replaces both copies of \(f\) by \(D_J\), at the sparse scale
-\(NJ_S(N)L^{-\kappa_S}\), with relative error
+replaces both copies of \(f\) by \(\mathcal D_J\), at the sparse scale
+\(NJ_{\mathscr A}(N)L^{-\kappa_{\mathscr A}}\), with relative error
 \(O(L^{-1/(8192\varphi(m))})\). Its interval version and the
 upper sieve handle the endpoint strips.
 
 On the retained records and power bulk,
-\eqref{eq:coset-model-domination} replaces \(D_JD_J\) by
-\(D_{0,J}D_{0,J}\) with relative error \(O(L^{-3g_S/5})\).
+\eqref{eq:coset-model-domination} replaces \(\mathcal D_J\mathcal D_J\) by
+\(\mathcal D_{0,J}\mathcal D_{0,J}\) with relative error \(O(L^{-3g_{\mathscr A}/5})\).
 Put
 \[
  \alpha_0=\varphi(m)/m,\qquad
- E_-(y)=\prod_{\substack{p\le y\\p\nmid m,\ p\notin\mathcal P_S}}
+ E_-(y)=\prod_{\substack{p\le y\\p\nmid m,\ p\notin\mathcal P_{\mathscr A}}}
                         (1-p^{-1}).
 \]
 Since \(\log v=L+O(\sqrt L+\log L)\), the leading model is
 \[
- |G/H|\1_{n\bmod m\in H}\,f(n_{\mathcal S})\lambda_X,
- \qquad \lambda_X=\frac{c_SL^{\rho-1}}{\alpha_0E_-(y)},
+ |G/H|\1_{n\bmod m\in H}\,f(n_{\mathcal P_y})\lambda_X,
+ \qquad \lambda_X=\frac{c_{\mathscr A}L^{\rho-1}}{\alpha_0E_-(y)},
 \]
 with relative error \(O(L^{-1/2})\). Here
-\(n_{\mathcal S}\bmod m\in H\), so the rough and whole-value
+\(n_{\mathcal P_y}\bmod m\in H\), so the rough and whole-value
 state tests are equivalent for this leading model.
 
-Let \(R_N\) be the number of pairs counted in \(\Gamma_S(N)\).
+Let \(R_N\) be the number of pairs counted in \(\Gamma_{\mathscr A}(N)\).
 The raw fixed-residue probability on the integer line is \(R_N/m\).
 Its two projections and marginal normalization give
 \[
  \frac{R_N}{m}\frac{|G/H|^2}{\alpha_0^2}
-              =\frac{mR_N}{|H|^2}=\Gamma_S(N).
+              =\frac{mR_N}{|H|^2}=\Gamma_{\mathscr A}(N).
 \]
 This calculation uses \(H\) for the residue support and \(\rho\)
 for the logarithmic density; it never identifies \(\rho\) with
@@ -450,43 +439,43 @@ The fundamental sieve lemma at a fixed power level, as in
 \cite[Theorem 11.7]{richert}, therefore evaluates the leading model
 as
 \[
- c_S^2\Gamma_S(N)C_{\mathcal E_S}J_S(N)
-                       \frac{N}{L^{\kappa_S}}.
+ c_{\mathscr A}^2\Gamma_{\mathscr A}(N)C_{\mathcal E_{\mathscr A}}J_{\mathscr A}(N)
+                       \frac{N}{L^{\kappa_{\mathscr A}}}.
 \]
 Its sieve error is smaller than every fixed logarithmic power;
 CRT endpoints are \(N^{0.45+o(1)}\). The omitted ordinary Euler
 tail is \(O(1/y)\), and its target-prime tail is
 \(O(L/(y\log y))\), uniformly in all target valuations.
 The density replacement and secondary-branch errors are bounded
-by the asserted \(L^{-\delta_S}\). This proves the asymptotic.
+by the asserted \(L^{-\delta_{\mathscr A}}\). This proves the asymptotic.
 
 For the local assertion, testing modulo \(m\) proves necessity of
-\(\Gamma_S(N)>0\). Conversely fix such a root. At primes dividing
+\(\Gamma_{\mathscr A}(N)>0\). Conversely fix such a root. At primes dividing
 \(m\), lift the equation while preserving its unit states.
 At every other prime, both coefficients are units and \(p\ge3\).
 The equation modulo \(p\) has \(p\) pairs; requiring a unit on
 each forbidden coordinate removes at most two. A surviving pair
 lifts, and CRT combines the choices. Lemma~\ref{lem:coset-finite-images}
-realizes each coordinate by an actual element of \(C_S\).
+realizes each coordinate by an actual element of \(C_{\mathscr A}\).
 This proves solvability in every finite quotient. Finally the
 positive asymptotic proves eventual global representability.
 \end{proof}
 
-\subsection{Two cosets which test the branches}
+\subsubsection{Two cosets which test the branches}
 
 For \(m=4\), \(K=\{1\}\), \(a=3\), the generated group is
 \(H=G\), while \(\rho=1/2\). The exponents are \(1/2,-1/2\).
 Let \(C^-_4\) contain the positive integers supported on primes
 \(3\pmod4\). With
 \(P_3=\prod_{p\equiv3(4)}(1-p^{-2})^{-1}\), its marginal is
-\(c_S^2=2P_3/\pi^2\). Indeed
+\(c_{\mathscr A}^2=2P_3/\pi^2\). Indeed
 \[
  F(s)^2=(1-2^{-s})\frac{\zeta(s)}{L(s,\chi_{-4})}F(2s).
 \]
-Here \(\Gamma_S(N)=2\) on every even target. Since
+Here \(\Gamma_{\mathscr A}(N)=2\) on every even target. Since
 \(\prod_{p\text{ odd}}(1-p^{-2})^{-1}=\pi^2/8\),
 \[
- 2c_S^2C_{\mathcal E_S}
+ 2c_{\mathscr A}^2C_{\mathcal E_{\mathscr A}}
        =\frac12\prod_{p\equiv1(4)}
                     \left(1-\frac2{p(p-1)}\right)=:A_-.
 \]
@@ -512,7 +501,7 @@ the exponents of \(1,\chi,\chi^2,\overline\chi\) are
 \]
 The rough model is explicitly real:
 \[
- D_J(n)=\frac{f(A)}{V_y}
+ \mathcal D_J(n)=\frac{f(A)}{V_y}
    \left\{M_1(v)+2\Re\bigl(\overline{\chi(v)}M_\chi(v)\bigr)
                        +\chi(v)^2 M_{\chi^2}(v)\right\}.
 \]
@@ -529,7 +518,7 @@ with the positive determination and convergent correction specified
 in \eqref{eq:coset-constant}. The forbidden good residues are
 \(1,7,9\pmod{10}\). For even \(N\),
 \[
- \Gamma_S(N)=
+ \Gamma_{\mathscr A}(N)=
  \begin{cases}5/2,&5\mid N,\\15/8,&5\nmid N.\end{cases}
 \]
 This follows by counting pairs of nonzero residues modulo five:
@@ -537,7 +526,7 @@ there are four at a zero target and three otherwise. Consequently
 every even target is congruence-admissible, and
 \[
  \#\{x+y=N:x,y\in C_{3,10}\}
- =c_{3,10}^2\Gamma_S(N)C_{\mathcal E_S}J_S(N)
+ =c_{3,10}^2\Gamma_{\mathscr A}(N)C_{\mathcal E_{\mathscr A}}J_{\mathscr A}(N)
        \frac N{(\log N)^{3/2}}
        \left(1+O((\log N)^{-1/32768})\right).
 \]

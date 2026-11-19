@@ -1,14 +1,21 @@
-# Pointwise Binary Correlations in Abelian Splitting Semigroups
+# Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 
-The flagship opens with concrete arithmetic consequences: `C_12 + C_12`,
-Smilansky's five quadratic-form pair predictions, consecutive sums of two
-squares with coefficient `1/2`, and prime-`3 mod 4` self-sums on every
-sufficiently large even target. It then develops the shared comparison and the
-general pointwise theorem for fixed subgroup pairs and prime-coset self-sums.
-The arithmetic application now treats primitive values of arbitrary fixed
-positive definite forms, mixed pairs and genus invariance. Principal norms
-remain the prototype; the short basis-order-thirteen corollary remains in
-the main text.
+The flagship opens with CK/Smilansky fixed-shift correlations of ordinary
+quadratic values, including consecutive sums of two squares with coefficient
+1/2. Its second headline is classical genus invariance for primitive values
+of forms in two fixed orders of **one** imaginary quadratic field. An early
+table separates ordinary values, primitive representations, coprime summands
+and the four theorem strengths. A concrete CK model precedes the operators.
+
+The central mechanism is the common arithmetic-model comparison. The graph
+reduction, common frequency tools, fixed-shift branch, reflected-target branch
+and reconstruction have separate sections. After shared model preparation,
+applications appear in this order: ordinary quadratic indicators; subgroup
+and prime-coset sums with the detailed C_12 constants and coprimality deduction;
+primitive forms and genus invariance, followed by the principal specialization.
+One complete mixed local-filter argument supplies the conductor-prefix bounds,
+summable tail, Haar strata and Euler normalization. The exact basis-order-thirteen
+corollary remains in the main text.
 
 The shared arithmetic-model comparison theorem isolates exact invariance under
 a common prime class, centered one-variable rough means and positive sparse
@@ -40,7 +47,7 @@ Walsh also states that classical estimates could replace the recent
 zero-free input in his fixed-shift divisor theorem. His supplied
 high-frequency proof still uses that input. Here the fixed-shift moduli
 are polynomial logarithmic, but Mellin heights reach `x*(log x)^C`.
-Section6.5 proves a classical smooth-prime replacement through
+The fixed-shift subsection on classical estimates proves a smooth-prime replacement through
 `|t| <= exp((log x)^(1/16))` and identifies the remaining weighted
 prime/cofactor energy above that height. The complete replacement is
 open in this argument; Connors–Keating and Smilansky retain both ZF and
@@ -64,7 +71,7 @@ uniform `o(1)`; an explicit logarithmic remainder for the full leading term is
 asserted for the fixed-data semigroup theorem. Its modulus is even and fixed, and all primes dividing
 it are excluded from the core.
 The independent order-bound theorem and dependency distinction stay prominent
-in the main text; its full classical core proof is in Appendix A. Numerical
+in the primitive-form application; its full classical core proof is in Appendix A. Numerical
 saving exponents and localization budgets are collected in the technical
 reconstruction section, after the early statements with positive savings.
 
@@ -139,3 +146,11 @@ The common invariant prime class is essential: arbitrary disjoint prime
 prescriptions and growing sublinear shifts are outside the comparison theorem.
 Broader historical-priority checking remains
 separate from the exact comparisons in the introduction.
+
+## Immutable import editions
+
+Both essential OpenAI primary PDFs are linked at commit
+4eaee87548250b2682affda7d05d947c05554bae. Fresh downloads at
+that commit were byte-identical to the retained audited PDFs.
+Their dates and theorem locators are unchanged. This checks edition
+identity; it does not revalidate either entire imported preprint.

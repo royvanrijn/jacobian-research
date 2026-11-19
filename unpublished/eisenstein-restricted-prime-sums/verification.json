@@ -74,43 +74,150 @@
     }
   ],
   "build": {
-    "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "command": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
     "result": "passed",
     "pages": 36,
     "warnings": [],
     "cross_references": "resolved",
     "citations": "resolved",
     "overfull_boxes": 0,
-    "clean_source_archive_rebuild": "Passed from a fresh extracted source.zip; byte-identical PDF, with no repository dependencies.",
-    "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4"
+    "clean_source_archive_rebuild": "Passed fresh extraction; byte-identical PDF, no repository dependency.",
+    "pdf_sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac"
   },
   "layout_review": {
-    "method": "Rendered all35pages before appendix expansion; inspected all contact sheets and fullpages1,22,26,30. Re-rendered finalpages31\u201336 at80dpi and inspected31,32,33,36 after the supplement/byte-convention fixes.",
-    "result": "No clipping, overlapping equations or unreadable tables found.",
-    "reviewer": "Internal Codex agent",
-    "scope": "Visual layout, not mathematical verification."
+    "performed": true,
+    "date": "2026-11-19",
+    "reviewer": "Codex root, rendered-page inspection",
+    "edition_sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
+    "pages": 36,
+    "method": "All36 final pages rendered65dpi; all6 contact sheets inspected. Additionally inspected120dpi opening theorem/primitive-value identity and complete coverage table. Fresh PDF-only reader checked all coverage rows against their proofs.",
+    "result": "No clipped or overlapping equations, missing glyphs or unreadable tables found. No underfull or overfull boxes.",
+    "scope": "Visual layout only; no new computation, external human review or formal proof verification."
   },
   "blind_reader": {
     "performed": true,
-    "reviewer": "Codex exact_pdf_reader, fresh isolated AI agent",
     "date": "2026-11-19",
-    "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
-    "pages": 36,
-    "supplied_context": "Only the compiled PDF, with text/pages derived from it. No repository sources, research history, archive, web, or other notes were supplied or accessed.",
-    "review_kind": "Internal AI PDF-only reader review; not external human review or full computational validation.",
-    "answers": {
-      "new": "Four exact primitive norm sumsets, stronger split-prime core identities, and explicit ordered-value lower bounds at -7 and -8. Arithmetic adaptations, rather than a new spectral theorem, are the methodological contribution. Priority cannot be assessed from the PDF.",
-      "concept": "Primitive prime support, quaternion norm shells, normalized Hecke mixing and exact local filters, rational interval certificates meeting exhaustive scans, and multiplicative descent.",
-      "hardest": "Shared spectral import Lemma2.1 pp2-3; -11 all-ideal-class inverse-unit mass3/5 and filtered bounds(22)-(27) pp29-30. Constants checked symbolically within PDF reading.",
-      "limits": "Four discriminants; balanced Eisenstein exception classification remains explicitly conjectural; large quantitative onsets and value lower bounds only for -7/-8.",
-      "verification_obstacles": "The PDF-only reader did not inspect or execute supplement arrays/tables and did not inspect primary spectral/modularity/Sturm references."
+    "reviewer": "Internal AI reader (OpenAI ChatGPT/Codex), isolated from repository sources and other reviews",
+    "review_kind": "fresh isolated PDF-only editorial, mathematical-structure, and target-coverage audit; internal AI review, not external certification",
+    "suppliedcontext": {
+      "article_evidence": "Only the supplied 36-page PDF was read as article evidence. PDF-derived text and rendered page images were used.",
+      "supplied_file": "/home/royvanrijn/src/jacobian-research/.scratch/editorial-companion-reader.pdf",
+      "supplied_sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
+      "requested_focus": [
+        "Primitive-value identity P_-3 = A disjoint-union 3A beside the opening classification and elementary proof before counting",
+        "One central Eisenstein proof in Section 3",
+        "Opening coverage table checked against the actual finite, interval, infinite, and descent arguments for all four discriminants",
+        "Standalone contribution, conceptual reason, hardest step and location, limits, verification obstacles and repairs"
+      ],
+      "excluded": "No repository source, notes, status, history, other chats, web, supplement, or external cited work was consulted. No certificate programs were run and no imported result was checked against its original source.",
+      "operations": "Read all PDF pages as extracted text; visually inspected pages 1-4, 19-20, 27, 31-32, and 36, including a separate enlarged check of page 31's bottom display. Recomputed selected small arithmetic consequences of equations and coverage counts printed in the PDF."
     },
-    "findings_resolved": [
-      "AppendixA identifies source.zip, supplement README, checker/receipt filenames, byte conventions and expected Eisenstein digests.",
-      "Section13.3 and AppendixA explicitly apply the 11-not-dividing-Q filter when authenticating split-core C rather than primitive P.",
-      "AppendixA completed-square formula uses |d| for negative discriminants -7,-11."
+    "editions": [
+      {
+        "title": "Exact Sumsets of Primitive Quadratic Norms",
+        "author": "Roy van Rijn",
+        "file": "/home/royvanrijn/src/jacobian-research/.scratch/editorial-companion-reader.pdf",
+        "pages": 36,
+        "sha256_before": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
+        "sha256_after": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
+        "unchanged": true
+      }
     ],
-    "final_result": "No remaining definite mathematical gap or clipping issue identified in this limited internal PDF-only review."
+    "five_question_answers": {
+      "precise_contribution": {
+        "answer": "The article asserts complete binary sumsets of positive primitive norm values for discriminants -3, -7, -8, -11, with the stated congruence obstructions and exactly the three additional -7 exceptions 7, 77, 203. It also proves stronger split-prime core identities, higher Eisenstein sumsets with sharp universal numbers of summands, and explicit ordered numerical-value pair lower bounds at -7 and -8. The contribution is exact coverage of all eligible targets, rather than merely eventual representation.",
+        "locations": "Theorem 1.1, p. 1; Theorem 3.2 and Propositions 3.8-3.9, pp. 4 and 13-14; Theorems 4.1, 5.1, 6.1, pp. 14, 21, 28.",
+        "qualification": "This identifies the contribution claimed and supported by the PDF's internal argument. Historical originality and comparison with external literature were not independently established."
+      },
+      "conceptual_reason": {
+        "answer": "Primitive numerical norm values are the split-prime semigroup and one ramified dilation. In the Eisenstein case this is P_-3 = A disjoint-union 3A, so only A+A and A+3A need separate binary proofs; 3(A+A) supplies the remaining type. Quaternion norm shells supply candidate pairs; orbit averaging and a precisely normalized Hecke bound control inert-prime losses. Exact dyadic and ramified filters preserve a positive margin. Finite scans, rational interval inequalities, and split-factor descent then convert effective existence into complete classifications.",
+        "locations": "Opening explanation, pp. 1-2; Proposition 3.1, p. 4; Sections 3.3-3.6, pp. 6-12; reusable mechanism in Appendix B, pp. 34-35.",
+        "focus_check": "The identity is displayed on p. 1 beside the opening classification, explained on p. 2, and proved elementarily in Proposition 3.1 on p. 4 before the norm-shell counting in Section 3.2 on p. 5. The proof establishes both directions and disjointness, including exclusion of inert primes, at most one ramified factor, and coprime coordinates for constructed values."
+      },
+      "hardest_step_and_proof_location": {
+        "answer": "The deepest imported input is Lemma 2.1 (pp. 3-4): the all-integral-ideal Hecke normalization, removal of global norm characters, and weight-two spectral bound. For the central Eisenstein argument, the most delicate arithmetic step is the six-point ramified quotient and exact mixed-family obstruction count in Sections 3.4.3-3.4.4 (pp. 9-10), which is combined with the odd-component filter and the strict sieve bound in Section 3.6 (pp. 11-12). Across the later cases, the joint ramified/inert correlation at -7 (Section 4.3, pp. 16-17) and preservation of all ideal classes with inverse-unit mass at -11 (Sections 6.1-6.2, pp. 29-30) are material places where normalization affects the conclusion.",
+        "proof_organization": "The Eisenstein argument is grouped in the single central Section 3, pp. 4-14: arithmetic preliminaries, counting, local filters, numerical estimates, finite completion, then primitive and higher sumsets. The common spectral input remains separately stated in Section 2, and Appendix A states the finite certificates' proof role."
+      },
+      "limits": {
+        "answer": "The theorems concern positive numerical values, with zero coordinates and signs allowed and without counting different coordinate representations as different summands. Only four discriminants are covered. The paper uses deep classical spectral results and computer-assisted finite assertions; it does not give a wholly elementary or computation-free proof. The small anchor menus are finite-range devices, and Proposition 3.7 proves that a fixed finite Eisenstein menu cannot work globally. Appendix C's balanced Eisenstein classification remains a question: its two finite failures 8 and 44 below 10^8 are not promoted to an all-target theorem.",
+        "locations": "Definition and value convention, p. 1; Proposition 3.7, p. 13; Appendix A, pp. 32-34; Appendix C, p. 35."
+      },
+      "verification_obstacles_and_required_repairs": {
+        "answer": "The PDF explains why its finite computations are complete and how the ranges meet, but it does not contain the full membership arrays, every interval fraction, or executable contents of the declared source.zip supplement. Thus I could audit the mathematics of the reduction and the printed arithmetic but could not authenticate the reported full scans, hashes, frontier state counts, or all successful interval inequalities. The exact scope and hypotheses of cited spectral, modular, and class-number results also require source checking outside this review.",
+        "required_repairs_within_focus": [],
+        "assessment": "No required structural, target-coverage, or opening-layout repair was identified in this PDF-only audit. Full independent verification still requires the declared supplement and replay instructions plus checking the cited mathematical imports. The article itself makes these dependencies visible in Appendix A; this review does not substitute for them."
+      }
+    },
+    "final_result": {
+      "status": "passes the requested focused standalone-reader audit, with verification limits stated",
+      "external_certification": false,
+      "all_target_coverage": {
+        "result": "Every target class claimed in the opening table has an explicit finite-to-infinite completion and descent argument in the PDF. The ranges have no arithmetic gaps. This statement audits the proof architecture and printed bounds; it does not assert independent execution of the finite certificates.",
+        "minus3": {
+          "table_matches": true,
+          "finite": "Proposition 3.6, pp. 12-13, scans every n=6k+2 or 6k+4 below 10^8. It explains exact A-membership, why inert primes below 10000 suffice, positivity of each witness, and the witness-to-sum formulas. Printed counts recompute to 16,666,667 ordinary targets ending at 99,999,998 and 16,666,666 mixed targets ending at 99,999,994.",
+          "intervals": "None is needed.",
+          "infinite": "Section 3.6, pp. 11-12, proves both reduced families for n>=10^8. The printed upper bound recomputes exactly to 591/625<1.",
+          "descent": "The initial Section 3 reduction, p. 5, removes every split-prime power into g in A; g=1 mod 6 preserves the admissible residue, and scaling a representation back preserves the required family. Reduced targets remain even and at least 2. Proposition 3.8 then expands P_-3+P_-3 into A+A, A+3A, and 3(A+A), giving exactly residues 2,4,6,8,10,14,16 modulo 18.",
+          "conclusion": "The finite strict bound n<10^8 meets the infinite weak bound n>=10^8, and split-factor removal exhausts the target families."
+        },
+        "minus7": {
+          "table_matches": true,
+          "finite": "Section 4.6, pp. 20-21, gives complete C- and P-membership flags through 2^24, authenticates them by exhaustive coordinate bounds, and explains bit-union coverage and complete positive-pair searches for all omitted eligible bits. Its exact finite exception sets are 11,29 for C+C and 7,77,203 for P+P.",
+          "intervals": "Lemma 4.2, pp. 19-20, tests 257 adjacent intervals on [2^24,2^37), both character signs and all nine valuation categories plus the split-prime boundary: 257*19=4883 cases. Seventeen dyadic tests cover [2^37,2^54). It explains completeness of the point table, Euler caps and cost-restricted envelopes, and explicitly carries the prime boundary into the latter range.",
+          "infinite": "The tail n>=2^54 is proved in the same lemma for inert-supported targets and the split-prime boundary. The printed margin recomputes to 9574319/6165626880>1/1024.",
+          "descent": "Section 4.6 treats a least exception. Removing a split prime leaves a smaller representable target unless the quotient is 1,11,29. The quotient 1 is the prime boundary; exceptional products reduce to the explicit patches 121=8+113, 319=2+317, 841=32+809. With no split factor the target is inert-supported. For primitive sums, 11=4+7 and 29=1+28 patch the unramified cases, while equation (7.2) reduces 7m to C+C. Quotients 1,11,29 give exactly 7,77,203; multiples of 49 are locally excluded.",
+          "conclusion": "The finite, two interval ranges, and tail meet at 2^24,2^37,2^54. The prime and exceptional-quotient cases are explicitly closed."
+        },
+        "minus8": {
+          "table_matches": true,
+          "finite": "Section 5.6, p. 27, explains exact C-membership through 2^27, full coordinate/gcd authentication, and genuine-sum bit unions compared with the full eligible masks. The printed mask sizes recompute to 50,331,648 even C+C targets and 67,108,863 odd mixed targets.",
+          "intervals": "The actual rows in (8.21), p. 27, are mixed m for 27<=k<=59 (33 tests), C+C at 2m for 26<=k<=59 (34), and C+C at 4m for 20<=k<=59 (40), totalling 107. These agree with Table 1's distinct lower bounds. The finite bound already covers m<=2^27, 2m with m<=2^26, and 4m with m<=2^25, so the 4m row deliberately overlaps the finite range.",
+          "infinite": "Equation (8.14), p. 25, covers all required inert-supported cores m>=2^60 and yields the core conclusions at m,2m,4m using the indicated parity/dilation argument. Its printed left-hand bound recomputes to 1015877/2097152<1/2. The mixed split-prime boundary (8.15) starts at 2^22, below the finite mixed scan's upper bound; its displayed bound is 5027/10240<1/2.",
+          "descent": "Section 5.7, p. 28, removes split factors from an eligible even exception until only 2m or 4m remains. For an odd mixed target, a split factor either gives a smaller target >=3 or leaves the single-prime boundary. No split factor means the inert-supported mixed core. Finally P=C disjoint-union 2C and (8.2) give all N>=2 with 16 not dividing N.",
+          "conclusion": "The finite, asymmetric interval rows, inert tail, and mixed prime boundary together cover every eligible target; the difference between target N and odd core m is explicitly respected."
+        },
+        "minus11": {
+          "table_matches": true,
+          "finite": "Section 6.3, pp. 31-32, gives complete C-flags through 2^25, genuine positive-sum union coverage, and exhaustive independent coordinate/gcd authentication retaining only odd eleven-unit values. The target count recomputes to 2^24-floor(2^25/22)=15,252,015.",
+          "intervals": "The 35 dyadic intervals k=25,...,59 cover [2^25,2^60) for even inert-supported targets prime to eleven. Section 6.3 explains finite limits for the exact M-enumeration, integer bounds, rational tail rounding, and the sufficient inequality.",
+          "infinite": "Equation (29) and the subsequent estimate, p. 31, cover the same reduced family from 2^60. The printed conservative left-hand bound recomputes to 1252677771/4613734400<2/3.",
+          "descent": "The least-exception argument on p. 32 removes split factors and retains an eligible even target at least 2, so the reduced exception must be inert-supported. Equation (18) and the ramified argument on p. 28 restore N=11^e n with e=0 or 1. Evenness prevents a quotient-one boundary, and multiples of 121 are locally impossible.",
+          "conclusion": "The finite endpoint 2^25, interval start 2^25, interval upper endpoint 2^60, and infinite onset 2^60 meet without gaps."
+        }
+      },
+      "readability_and_layout": {
+        "result": "The opening theorem, primitive identity, and coverage table are legible. Table 1 is dense but fits the page with readable column breaks. The elementary proof begins cleanly on page 4, before counting. The additional rendered proof and reference pages inspected show no clipped mathematics, overlapping text, or illegible references; the bottom display on page 31 was checked separately at larger scale.",
+        "inspected_pages": [
+          1,
+          2,
+          3,
+          4,
+          19,
+          20,
+          27,
+          31,
+          32,
+          36
+        ],
+        "limitation": "This was targeted visual inspection, not a visual inspection of every rendered page."
+      },
+      "independent_checks_performed": [
+        "SHA256 before and after the review, both matching the supplied edition",
+        "PDF metadata and exact 36-page count",
+        "All 36 pages read as PDF-derived text",
+        "Selected page render inspection including opening pages and coverage proofs",
+        "Small arithmetic checks of target counts, interval counts, printed tail margins, and range endpoints"
+      ],
+      "checks_not_performed": [
+        "No verification program or finite certificate was executed",
+        "No supplement file or repository source was inspected",
+        "No external reference or literature claim was independently verified",
+        "No claim of independent exhaustive mathematical certification or external referee review"
+      ],
+      "required_repairs": [],
+      "review_summary": "The PDF makes its primitive-value reduction intelligible at the start, keeps the Eisenstein proof in one central section, and explicitly closes the finite, interval, tail, descent, and exceptional boundary cases behind every coverage-table row. The focused editorial and completeness audit passes; finite computation results and imported mathematics remain subject to independent replay and source verification."
+    }
   },
   "assurance": {
     "external_human_review": false,
@@ -1717,15 +1824,15 @@
   },
   "edition": {
     "pdf": "paper.pdf",
-    "sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+    "sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
     "page_count": 36
   },
   "review_preparation": {
     "date": "2026-11-19",
-    "outcome": "Frozen four-discriminant edition prepared for external mathematical review; documentary audit and standalone rebuild passed, without mathematical extension, assurance upgrade or external action.",
+    "outcome": "Editorial revision of the frozen four-discriminant scope; no new mathematical claim or external action.",
     "edition": {
       "pdf": "paper.pdf",
-      "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+      "pdf_sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
       "pages": 36,
       "discriminants": [
         -3,
@@ -1734,43 +1841,130 @@
         -11
       ]
     },
-    "scope": "The existing four exact primitive numerical norm-value sumsets, stronger split-prime cores, and existing stated corollaries; the balanced exception classification remains open beyond its finite scan.",
+    "scope": "Primitive-value reduction and elementary proof brought forward; Eisenstein stages grouped; opening coverage table states exact finite/interval/tail/descent coverage.",
     "dependencies_for_outside_review": [
-      "Section 2: classical Hecke/Jacquet-Langlands/Deligne transfer, all-ideal normalization, norm-character removal and invariant mass.",
-      "Sections 5-6 and 11-13: local quotients, odd/dyadic/ramified filters, target-dividing branches, all ideal classes and inverse-unit mass.",
-      "Appendix A and arithmetic sections: exact finite membership and coverage, rational interval endpoints, infinite bounds and complete descent.",
-      "Independent external human replay of certificate arrays and negative controls; targeted attribution and priority audit."
+      "Shared classical Hecke/Jacquet-Langlands/Deligne transfer and all-ideal normalization.",
+      "Eisenstein and minus7/minus8/minus11 local filters, target-dividing branches, shell normalization and inverse-unit mass.",
+      "Finite scans, rational interval endpoints, infinite bounds and complete descent; outside human replay of certificates and negative controls."
     ],
-    "existing_evidence": "The fresh_replays, build, layout_review and blind_reader records retain their original internal scopes and are not upgraded by this preparation.",
+    "preservation": {
+      "certificate_files": 32,
+      "certificate_bytes_unchanged": true,
+      "formal_statement_blocks": 17,
+      "formal_statements_byte_identical": true,
+      "scope": "Source preservation only; no mathematical checker rerun or external review."
+    },
     "mathematical_computations_rerun": false,
     "new_external_mathematical_review": false,
     "formal_verification_performed": false,
     "outreach_submission_or_deposit": false,
-    "checks": {
-      "retained_receipt_sha256_matches": {
-        "result": "passed",
-        "receipts": 9,
-        "scope": "Compared each current receipt file with its existing fresh_replays hash; did not execute the numerical checkers."
-      },
-      "immutable_mathematical_files": {
-        "result": "passed; all 52 SHA256 digests match the pre-edit baseline",
-        "files": 52,
-        "scope": "PDF, main and section TeX, references, build helper and retained certificate sources/inputs/receipts; Python cache files excluded."
-      },
-      "source_archive": {
-        "result": "passed",
-        "command": "python3 build_bundle.py --verify-rebuild",
-        "scope": "Standalone archive membership and clean extraction build against the unchanged frozen PDF.",
-        "members": 54,
-        "member_bytes": "All archive members match their current source files; paths are local and unique.",
-        "clean_source_rebuild": "Passed from a temporary fresh extraction; PDF byte-identical to the frozen review edition.",
-        "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4"
-      },
-      "local_readme_links": {
-        "result": "passed",
-        "scope": "All local Markdown link targets in this README exist."
-      }
+    "source_archive": {
+      "archive": "source.zip",
+      "members": 54,
+      "clean_source_rebuild": "passed; byte-identical PDF",
+      "pdf_sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac"
     },
-    "assurance": "External human review, formal verification, public deposit and historical priority remain false in the existing assurance record."
+    "assurance": "Existing assurance flags preserved; PDF-only AI review is internal."
+  },
+  "prior_blind_readers": [
+    {
+      "performed": true,
+      "reviewer": "Codex exact_pdf_reader, fresh isolated AI agent",
+      "date": "2026-11-19",
+      "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+      "pages": 36,
+      "supplied_context": "Only the compiled PDF, with text/pages derived from it. No repository sources, research history, archive, web, or other notes were supplied or accessed.",
+      "review_kind": "Internal AI PDF-only reader review; not external human review or full computational validation.",
+      "answers": {
+        "new": "Four exact primitive norm sumsets, stronger split-prime core identities, and explicit ordered-value lower bounds at -7 and -8. Arithmetic adaptations, rather than a new spectral theorem, are the methodological contribution. Priority cannot be assessed from the PDF.",
+        "concept": "Primitive prime support, quaternion norm shells, normalized Hecke mixing and exact local filters, rational interval certificates meeting exhaustive scans, and multiplicative descent.",
+        "hardest": "Shared spectral import Lemma2.1 pp2-3; -11 all-ideal-class inverse-unit mass3/5 and filtered bounds(22)-(27) pp29-30. Constants checked symbolically within PDF reading.",
+        "limits": "Four discriminants; balanced Eisenstein exception classification remains explicitly conjectural; large quantitative onsets and value lower bounds only for -7/-8.",
+        "verification_obstacles": "The PDF-only reader did not inspect or execute supplement arrays/tables and did not inspect primary spectral/modularity/Sturm references."
+      },
+      "findings_resolved": [
+        "AppendixA identifies source.zip, supplement README, checker/receipt filenames, byte conventions and expected Eisenstein digests.",
+        "Section13.3 and AppendixA explicitly apply the 11-not-dividing-Q filter when authenticating split-core C rather than primitive P.",
+        "AppendixA completed-square formula uses |d| for negative discriminants -7,-11."
+      ],
+      "final_result": "No remaining definite mathematical gap or clipping issue identified in this limited internal PDF-only review."
+    }
+  ],
+  "prior_layout_reviews": [
+    {
+      "method": "Rendered all35pages before appendix expansion; inspected all contact sheets and fullpages1,22,26,30. Re-rendered finalpages31\u201336 at80dpi and inspected31,32,33,36 after the supplement/byte-convention fixes.",
+      "result": "No clipping, overlapping equations or unreadable tables found.",
+      "reviewer": "Internal Codex agent",
+      "scope": "Visual layout, not mathematical verification."
+    }
+  ],
+  "prior_review_preparations": [
+    {
+      "date": "2026-11-19",
+      "outcome": "Frozen four-discriminant edition prepared for external mathematical review; documentary audit and standalone rebuild passed, without mathematical extension, assurance upgrade or external action.",
+      "edition": {
+        "pdf": "paper.pdf",
+        "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+        "pages": 36,
+        "discriminants": [
+          -3,
+          -7,
+          -8,
+          -11
+        ]
+      },
+      "scope": "The existing four exact primitive numerical norm-value sumsets, stronger split-prime cores, and existing stated corollaries; the balanced exception classification remains open beyond its finite scan.",
+      "dependencies_for_outside_review": [
+        "Section 2: classical Hecke/Jacquet-Langlands/Deligne transfer, all-ideal normalization, norm-character removal and invariant mass.",
+        "Sections 5-6 and 11-13: local quotients, odd/dyadic/ramified filters, target-dividing branches, all ideal classes and inverse-unit mass.",
+        "Appendix A and arithmetic sections: exact finite membership and coverage, rational interval endpoints, infinite bounds and complete descent.",
+        "Independent external human replay of certificate arrays and negative controls; targeted attribution and priority audit."
+      ],
+      "existing_evidence": "The fresh_replays, build, layout_review and blind_reader records retain their original internal scopes and are not upgraded by this preparation.",
+      "mathematical_computations_rerun": false,
+      "new_external_mathematical_review": false,
+      "formal_verification_performed": false,
+      "outreach_submission_or_deposit": false,
+      "checks": {
+        "retained_receipt_sha256_matches": {
+          "result": "passed",
+          "receipts": 9,
+          "scope": "Compared each current receipt file with its existing fresh_replays hash; did not execute the numerical checkers."
+        },
+        "immutable_mathematical_files": {
+          "result": "passed; all 52 SHA256 digests match the pre-edit baseline",
+          "files": 52,
+          "scope": "PDF, main and section TeX, references, build helper and retained certificate sources/inputs/receipts; Python cache files excluded."
+        },
+        "source_archive": {
+          "result": "passed",
+          "command": "python3 build_bundle.py --verify-rebuild",
+          "scope": "Standalone archive membership and clean extraction build against the unchanged frozen PDF.",
+          "members": 54,
+          "member_bytes": "All archive members match their current source files; paths are local and unique.",
+          "clean_source_rebuild": "Passed from a temporary fresh extraction; PDF byte-identical to the frozen review edition.",
+          "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4"
+        },
+        "local_readme_links": {
+          "result": "passed",
+          "scope": "All local Markdown link targets in this README exist."
+        }
+      },
+      "assurance": "External human review, formal verification, public deposit and historical priority remain false in the existing assurance record."
+    }
+  ],
+  "editorial_revision": {
+    "baseline_pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+    "baseline_archive_sha256": "c7b49553d346a2e2bffae8139dc07dda0ee2366cb00bffe408676804e392561b",
+    "checklist12": "Primitive-value identity beside opening theorem; elementary ideal-factor proof in arithmetic preliminaries before the counting stages.",
+    "checklist13": "One Eisenstein section with stages3.1-3.8; coverage table distinguishes each finite scan, interval bridge, infinite threshold and descent.",
+    "preservation": {
+      "certificate_files": 32,
+      "certificate_bytes_unchanged": true,
+      "formal_statement_blocks": 17,
+      "formal_statements_byte_identical": true,
+      "scope": "Source preservation only; no mathematical checker rerun or external review."
+    },
+    "assurance_changes": false
   }
 }

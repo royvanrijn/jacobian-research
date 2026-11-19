@@ -1,0 +1,174 @@
+\section{Frequency tools for both branches}\label{sec:prime-estimates}
+
+The shared comparison has left two independent products of large
+prime labels. We first record its common Fourier normalization, then
+the prime estimates used by the two frequency branches.
+
+\subsection{The common Fourier reduction}
+
+Dyadically localize the products in
+\eqref{eq:gr-comparison-term} to \(D_i\asymp U_i\). Their ranges give
+\[
+ U_i\ge\exp(L^{1/3}),\qquad
+ U_i\le\exp(O_m((\log L)L^{2/5})),\qquad Y=xU_1U_2.
+\]
+After inserting endpoint dyadic cutoffs before Mellin inversion, the
+ordinary comparison has the form
+\begin{equation}\label{eq:gr-fouriercomparison}
+ \frac1Y\int_0^1\widehat F(\theta)\widehat G(-\theta)
+                           m(k\theta)\,d\theta,\qquad
+ m(\theta)=\E b_1(D_1)b_2(D_2)\ee{\theta D_1D_2}.
+\end{equation}
+The endpoint reflection for sums changes only signs and fixed character
+factors. External Mellin transforms have fixed logarithmic costs.
+The centered endpoint has the following common form.
+Let \(\xi\) be either centered function in \textup{(C3)}, at a
+fixed depth which will be chosen after the required precision.
+For a comparison term, define
+\begin{equation}
+ F(n)=\psi(n/Y)n^{i\sigma}\xi(n)W_{\mathbf t}^b(n),
+ \quad Y=x^{1+o(1)},\quad |\sigma|\le L^C,             \label{eq:gr-energy-F}
+\end{equation}
+where the support of \(\psi\) is a fixed compact positive interval.
+All its logarithmic derivatives are bounded by fixed powers of \(L\).
+The coefficient \(b\) ignores a selected small-bank label, whose count
+is exactly one.  This holds for every comparison above.
+Reflection changes only fixed character factors and additive signs,
+so we state the estimate at a positive endpoint.
+
+
+The other endpoint satisfies \(\sum_n|G(n)|^2\ll YL^C\), by
+bounded invariant endpoints and the pointwise list bound. No
+multiplicativity of the list coefficients is required.
+
+By \eqref{eq:gr-productlaw} and
+\eqref{eq:gr-integer-bilinear}, a rational approximation
+\(|\theta-a/r|\le r^{-2}\) gives
+\begin{equation}\label{eq:gr-multiplier}
+ |m(\theta)|^2\ll L^{C_{\rm prod}}
+ \left(r^{-1}+U_1^{-1}+\frac{\log(2r)}{U_2}
+                    +\frac{r\log(2r)}{U_1U_2}\right).
+\end{equation}
+The two branches apply this bound at \(k=h\) and \(k=x\),
+respectively; their resulting physical major windows differ.
+
+\subsection{Sharp twisted prime sums}
+
+
+The sharp estimate uses the zero-free input at conductors polynomial
+in \(x\). The reflected branch needs that range; the fixed-shift
+branch uses the smooth version below at polynomial-logarithmic
+conductors and polynomial height.
+
+\begin{lemma}[Prime factor estimate]\label{lem:gr-primes}
+Assume the fixed all-conductor zero-free half-plane stated in
+Section~\ref{sec:inputs}.
+Fix \(\sigma_1\in(11/12,1)\).
+For \(q\le x^B\), every character \(\chi\bmod q\), and
+\(P\ge\exp(L^a)\), uniformly on subintervals \(I\subset[P,2P]\),
+\begin{equation}
+ \sum_{p\in I}\chi(p)p^{it}
+ =\delta_\chi\int_I\frac{u^{it}}{\log u}\,du
+       +O((1+|t|)P^{\sigma_1}L^C).                  \label{eq:gr-primes}
+\end{equation}
+Here \(\delta_\chi=1\) for a principal character and zero otherwise,
+and the estimate holds for every real \(t\).
+For progression banks the main vanishes unless \(\chi\) is induced
+from a character modulo \(L_0\).
+Removing target or modulus divisors preserves the error bound.
+\end{lemma}
+
+\begin{proof}
+A fixed distance to the right of the zero-free boundary, the local
+logarithmic-derivative formula and functional equation give
+\begin{equation}
+ \left|\frac{L'}{L}(s,\chi)+\frac{\delta_\chi}{s-1}\right|
+                 \ll \log(q(|\Im s|+3)).
+ \label{eq:gr-logderivative}
+\end{equation}
+Imprimitive Euler factors contribute \(O(\log q)\), since the real
+part is fixed and positive.
+Apply truncated Perron to
+\(-L'/L(s,\chi)\), at
+\(c=1+1/\log Z\), height \(Z^2\), and a half-integer endpoint
+\(Z\in[P/2,4P]\).
+The truncation error is \(O(\log^2 Z)\): near \(Z\), sum the bounds
+\(O(Z\log Z/(Z^2|n-Z|))\); away from \(Z\), use absolute convergence
+at \(c\).  Shift to \(\sigma_1\).
+The principal pole gives \(\delta_\chi Z\), the new vertical integral
+is \(O(Z^{\sigma_1}\log^2(qZ))\), and horizontal edges cost
+\(O(Z^c\log(qZ)/(Z^2\log Z))\).
+Prime powers cost \(O(Z^{1/2}\log^2 Z)\).
+Replacing a real endpoint by the adjacent half-integer changes its
+prime-weighted count by \(O(\log Z)\).  Therefore
+\[
+       \sum_{p\le Z}\chi(p)\log p
+          =\delta_\chi Z+O(Z^{\sigma_1}L^C).
+\]
+Partial summation against \(u^{it}/\log u\) proves
+\eqref{eq:gr-primes} with its linear \(1+|t|\) growth.
+
+Expand the progression condition into the finitely many characters
+modulo \(L_0\).  A constituent is principal exactly when the original
+character is induced from \(L_0\).
+There are at most \(O(\log(q(2+|k|)))=O(L)\) deleted prime divisors;
+their absolute unweighted contribution is absorbed by the error.
+\end{proof}
+
+In particular, for a nonexceptional character the prime factor saves
+\(P^{\sigma_1-1}\) against its trivial length.  The all-height form
+above is convenient: smooth product-cutoff Mellin transforms have
+integrable \((1+|t|)\)-weighted absolute value bounded by a fixed
+power of \(L\), so there is no boundary-smoothing loss from a sharp bank.
+
+
+\subsection{Smooth prime sums at polynomial height}
+
+
+The high-frequency argument uses a smooth version of
+Lemma~\ref{lem:gr-primes}. Its height dependence is essential:
+the linear \(1+|t|\) loss in the sharp-interval estimate is not
+adequate when \(|t|\) can be of order \(x\).
+Fix \(\sigma_1\in(11/12,1)\). For \(w\) smooth and supported on
+\([1/2,2]\), with each required derivative bounded by a fixed
+power of \(L\), the same zero-free input gives
+\begin{equation}\label{eq:fixed-smooth-primes}
+ \sum_p\chi(p)w(p/P)p^{it}
+  =\delta_\chi\int_0^\infty\frac{w(u/P)u^{it}}{\log u}\,du
+                       +O(P^{\sigma_1}L^{C_w})
+\end{equation}
+uniformly for \(q\le L^B\), characters \(\chi\bmod q\),
+\(|t|\le x^C\), and \(P\ge\exp(cL^{1/8})\).
+Here \(C_w\) depends on the fixed derivative bounds and on \(B,C\).
+This is the smooth prime estimate used in
+\cite[Lemma 5.1 and Section 6.4]{walsh}.
+
+To obtain it directly from the present input, insert the von
+Mangoldt weight and the smooth factor \(w(u/P)/\log u\), apply
+Mellin inversion, and move the line from \(\Re s>1\) to
+\(\Re s=\sigma_1\). Formula \eqref{eq:gr-logderivative} bounds
+the regularized logarithmic derivative on this line by
+\(O(\log(q(|\Im s|+3)))\). The Mellin transform is translated
+in height by \(t\); its decay depends on the derivatives of
+\(w\), rather than on \(|t|\). Its weighted integral is consequently
+\(O(L^{C_w})\) even for \(|t|\le x^C\). The principal pole
+gives the integral in \eqref{eq:fixed-smooth-primes}; prime powers
+cost \(O(P^{1/2}L^{C_w})\), absorbed by the displayed error.
+Truncation followed by dominated convergence justifies the contour
+move. This uses the same fixed zero-free half-plane, without a
+second prime-distribution theorem.
+
+Impose simultaneously the bank class \(c\pmod{L_0}\) and a
+prime class modulo \(q\). Incompatible classes contribute zero;
+otherwise character orthogonality at \(\lcm(q,L_0)\) applies.
+For large \(x\), every prime in the small bank exceeds
+\(qL_0|h|\), so nonreduced prime classes and primes dividing
+\(h\) do not occur. Integration by parts in the principal
+integral, for every fixed \(j\), shows that the normalized
+prime sum \(P^{-1}\sum_p\cdots\) is bounded by
+\begin{equation}\label{eq:fixed-high-prime}
+        L^{C_{w,j}}(1+|t|)^{-j}
+                       +L^{C_w}\exp(-cL^{1/8}).
+\end{equation}
+All character and congruence costs here are polynomial logarithmic.
+

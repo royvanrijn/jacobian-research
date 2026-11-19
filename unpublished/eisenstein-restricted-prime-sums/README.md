@@ -1,16 +1,19 @@
 # Exact Sumsets of Primitive Quadratic Norms
 
-This companion manuscript is frozen for outside mathematical review at the
-four discriminants **-3, -7, -8 and -11**. The review edition is the existing
-36-page [PDF](paper.pdf), SHA256
-`65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4`.
-This preparation changes documentation and packaging only. The mathematical
-TeX, PDF, certificate programs and retained receipts are unchanged.
+This companion manuscript treats the four discriminants **-3, -7, -8 and
+-11**. The current [PDF](paper.pdf), edition hashes and scoped review records
+are maintained with the manuscript artifacts below.
+
+The presentation places the elementary identity P_-3 = A disjoint union 3A
+beside the opening theorem, groups the Eisenstein argument in one main section,
+and summarizes the finite scans, interval certificates, infinite estimates and
+descent in an opening coverage table. The theorem scopes, certificate programs
+and retained receipts are unchanged by this reorganization.
 
 [LaTeX](main.tex) · [Metadata](metadata.json) ·
 [Verification record](verification.json) · [Source archive](source.zip)
 
-## Frozen mathematical scope
+## Mathematical scope
 
 For positive primitive numerical values P_d of the displayed form, the paper
 states the following exact binary sumsets. Every row has N >= 2. Coordinates
@@ -25,7 +28,7 @@ coordinate representations do not create different numerical summands.
 | -11 | x² + xy + 3y² | N even and 121 does not divide N |
 
 The stronger split-prime core identities, the existing Eisenstein higher-sumset
-corollaries and the averaging criterion remain exactly as stated in this PDF.
+corollaries and the averaging criterion retain their stated scopes.
 No further discriminant or quadratic order is added. The balanced Eisenstein
 exception classification remains an open question beyond its declared finite
 scan; the observed failures 8 and 44 do not establish its unrestricted version.
@@ -39,7 +42,7 @@ certificates.
 From this directory, or the root of the extracted source archive:
 
 ```sh
-latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex
+SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex
 ```
 
 All included TeX and verification sources are present locally. The standalone
@@ -98,15 +101,16 @@ arguments or the imported theorems.
 
 The existing build record reports resolved references and citations, no
 overfull boxes, and a byte-identical PDF from a fresh source extraction. Its
-layout record specifies which page renders were inspected. A fresh isolated
-AI reader reviewed only the 36-page PDF; its supplied context, findings and
+layout record specifies which page renders were inspected. An isolated
+AI reader reviewed the preceding 36-page PDF; its supplied context, findings and
 rechecks are recorded separately. All of this is internal review. External
 specialist review, external human certificate replay, formal verification and
 historical priority are not established.
 
-This scope-freeze pass checks receipt hashes and preservation of the mathematical
-files, and refreshes and validates the standalone source archive. Its exact
-outcome is recorded under `review_preparation` in `verification.json`.
+The earlier scope-freeze pass checked receipt hashes and preservation of the
+mathematical files, and validated its standalone source archive. Its outcome
+is recorded under `review_preparation` in `verification.json`. The current
+editorial edition requires its own build and layout record.
 
 ## Questions for outside review
 
@@ -116,7 +120,8 @@ Please assess the written argument and the declared supplement together:
    Jacquet--Langlands and Deligne statements: all-integral-ideal normalization,
    global norm-character removal, maximal level at the unramified index primes,
    and self-adjointness for the correct invariant mass.
-2. Check the arithmetic local adaptations in Sections 5--6 and 11--13: the odd
+2. Check the arithmetic local adaptations in the Eisenstein proof (Section 3) and the discriminant -7, -8 and -11
+   proofs (Sections 4--6): the odd
    and ramified filters, the nonmaximal dyadic level at -8, target-dividing
    branches, and all ideal classes with inverse-unit mass at -11. In particular,
    verify that each local quotient and shell count matches the spectral setup.

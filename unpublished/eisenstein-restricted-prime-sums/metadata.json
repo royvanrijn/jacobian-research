@@ -10,7 +10,7 @@
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_bundle": "source.zip",
-  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "SOURCE_DATE_EPOCH=1795046400 FORCE_SOURCE_DATE=1 latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
   "verification": "Complete standalone written argument using classical Hecke/Jacquet-Langlands/Ramanujan inputs, exact finite certificate replay and full coordinate-membership authentication; current review record distinguishes each check from external mathematical review and formal verification.",
   "verification_record": "verification.json",
   "next_steps": [
@@ -29,10 +29,10 @@
     "subtype": "preprint"
   },
   "revised_on": "2026-11-19",
-  "review_status": "Frozen four-discriminant edition prepared for external mathematical review; that review has not occurred.",
+  "review_status": "Four-discriminant mathematical scope frozen; presentation reorganized and prepared for external mathematical review, which has not occurred.",
   "review_edition": {
     "pdf": "paper.pdf",
-    "sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+    "sha256": "065fd5f05f1b61278b011cd4da2c7331e1a41c20f52f7bb3b81d0de7a24e34ac",
     "page_count": 36,
     "discriminants": [
       -3,
@@ -40,7 +40,9 @@
       -8,
       -11
     ],
-    "mathematical_sources_and_certificates_unchanged": true,
-    "scope_limits": "No additional discriminants, general-order exact classification, balanced exception classification or numerical correlation asymptotic added."
+    "mathematical_statements_byte_identical": true,
+    "certificate_files_byte_identical": true,
+    "presentation_reorganized": true,
+    "scope_limits": "No new discriminants, classifications, numerical correlation asymptotics or assurance. Existing balanced-exception limitation retained."
   }
 }

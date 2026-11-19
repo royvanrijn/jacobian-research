@@ -1,52 +1,10 @@
-\section{What the two binary answers give us}\label{sec:primitive-sumsets}
-With both binary identities proved, the two families now fit into a
-single familiar object. We look at norm values that admit coprime
-coordinates:
-\[
-\NN=\{Q(x,y)>0:x,y\in\Z,\ \gcd(x,y)=1\}.
-\]
+\subsection{Primitive and higher sumsets}\label{sec:primitive-sumsets}
+With both binary identities proved, Proposition~\ref{prop:primitive-classification}
+identifies their union with the primitive norm values
+$\NN=P_{-3}=\AA\sqcup(3\!\cdot\!\AA)$.
 For a set $S\subset\Z_{>0}$, let $kS$ denote the sum of exactly $k$
 members of $S$, with repetitions allowed. We distinguish this from a
-dilation, writing $3\!\cdot\! S=\{3s:s\in S\}$.
-
-We begin by identifying these values, then use the two binary identities
-to work out their sums.
-
-\begin{proposition}\label{prop:primitive-classification}
-The primitive Eisenstein norms are exactly
-\[
-\NN=\AA\sqcup(3\!\cdot\!\AA).
-\]
-\end{proposition}
-\begin{proof}
-If an inert prime divides $Q(x,y)$, it divides both coordinates by
-\eqref{eq:anisotropic}. Also $9\mid Q(x,y)$ forces $3\mid x,y$.
-Indeed, $3\mid Q(x,y)$ gives $x+y\equiv0\pmod3$; writing
-$y=-x+3t$ gives
-\[
-Q(x,y)=3(x^2-3xt+3t^2).
-\]
-Divisibility by $9$ now forces $3\mid x$, and hence $3\mid y$.
-Thus a primitive norm has no inert prime factor and contains at most
-one factor $3$. It belongs to the stated union.
-
-Conversely, $R=\Z[\omega]$ is norm Euclidean by the lattice rounding
-argument, and hence is a unique factorization domain. For a rational
-prime $q\equiv1\pmod3$, choose a nontrivial cube root
-$t\in\F_q^\times$. The ideal $(q,\omega-t)$ has quotient $\F_q$;
-its principal generator $\pi_q$ therefore has norm $q$. The two distinct
-roots $t,t^{-1}$ yield conjugate, nonassociate factors. Thus
-$q=\pi_q\bar\pi_q$, up to a unit.
-For $a=\prod q^{e_q}\in\AA$, choose one factor $\pi_q$ at each $q$ and
-put $z=\prod\pi_q^{e_q}$. Then $N(z)=a$. The element
-$(1-\omega)z$ has norm $3a$. Neither element is divisible by a rational
-prime: a split rational prime would require both conjugate factors,
-an inert prime cannot divide its norm, and $3$ is associated to
-$(1-\omega)^2$, whereas at most one factor $1-\omega$ was used.
-Their coordinates in the integral basis $1,\omega$ are therefore
-coprime. Finally, the two sets are disjoint, since elements of $\AA$
-are prime to $3$.
-\end{proof}
+dilation, writing $3\!\cdot\!S=\{3s:s\in S\}$.
 
 We can now use the two binary answers in their simplest form:
 \begin{equation}\label{eq:binary-input-sumsets}

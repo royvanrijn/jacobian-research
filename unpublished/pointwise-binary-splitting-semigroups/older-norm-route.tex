@@ -62,18 +62,18 @@ than \(cm\), and permits subintervals of arbitrary lengths.
 
 Here is a direct completion proof.  Put \(Q=cm\),
 \[
- W_i(h)=\sum_{n\in I_i}\ee{-hn/Q},\qquad
+ W_i(\nu)=\sum_{n\in I_i}\ee{-\nu n/Q},\qquad
  G_i(t)=\sum_{r\bmod c}\omega_i(r)\ee{tr/c}.
 \]
 CRT and finite Fourier inversion express \(S(a)\) as
 \[
- Q^{-2}\sum_{h,k\bmod Q}
- W_1(h)W_2(k)G_1(m^{-1}h)G_2(m^{-1}k)
-       K_1(c^{-1}h,ac^{-1}k;m),
+ Q^{-2}\sum_{\nu,k\bmod Q}
+ W_1(\nu)W_2(k)G_1(m^{-1}\nu)G_2(m^{-1}k)
+       K_1(c^{-1}\nu,ac^{-1}k;m),
 \]
 where \(K_1(u,v;m)=\sum_{z\bmod m}^{*}\ee{(uz+v\bar z)/m}\);
 inverses in \(G_i\) are taken modulo \(c\).
-The terms \(h=0\bmod m\) or \(k=0\bmod m\) are independent of
+The terms \(\nu=0\bmod m\) or \(k=0\bmod m\) are independent of
 the unit \(a\), since the resulting Ramanujan sum is unchanged by
 unit multiplication.  For all other frequencies use
 \[
@@ -83,13 +83,13 @@ This is the ordinary Weil--Estermann bound stated and applied in
 \cite[printed p.~44]{heathbrown}.  The primary source's
 Lemma~6 is its singleton-padded divisor-box consequence.
 In centered frequency ranges,
-\(|W_i(h)|\ll\min(|I_i|,Q/|h|)\) and \(|G_i|\le c\).
+\(|W_i(\nu)|\ll\min(|I_i|,Q/|\nu|)\) and \(|G_i|\le c\).
 The remaining double sum is bounded using
 \[
- \sum_{\substack{0<|h|,|k|\le Q/2\\m\nmid h,\ m\nmid k}}
-      \frac{(h,k,m)^{1/2}}{|hk|}
+ \sum_{\substack{0<|\nu|,|k|\le Q/2\\m\nmid \nu,\ m\nmid k}}
+      \frac{(\nu,k,m)^{1/2}}{|\nu k|}
  \le \sum_{d\mid m}d^{1/2}
-       \left(\sum_{\substack{0<|h|\le Q/2\\d\mid h}}\frac1{|h|}\right)^2
+       \left(\sum_{\substack{0<|\nu|\le Q/2\\d\mid \nu}}\frac1{|\nu|}\right)^2
  \ll_c \log^2(2m)\sum_{d\mid m}d^{-3/2}.
 \]
 The \(Q^2\) from the two geometric sums cancels the completion
@@ -172,10 +172,10 @@ no restriction on their gcds.  For fixed residue subsets \(U,V_0\subset H\),
 \end{align*}
 uniformly in every target valuation.  Here
 \[
- D_p=\lim_{h\to\infty}p^{-h}
- \sum_{\substack{a,b\bmod p^h\\Au a+Bv b=N\ (p^h)}}
-       F_{t_1}(p^{\min(v_p(a),h)})
-       F_{t_2}(p^{\min(v_p(b),h)}).
+ D_p=\lim_{m_p\to\infty}p^{-m_p}
+ \sum_{\substack{a,b\bmod p^{m_p}\\Au a+Bv b=N\ (p^{m_p})}}
+       F_{t_1}(p^{\min(v_p(a),m_p)})
+       F_{t_2}(p^{\min(v_p(b),m_p)}).
 \]
 All factors, including zero factors, are retained.
 The same formula holds after imposing any fixed finite combination
@@ -523,7 +523,7 @@ Otherwise dividing the congruence by \(p^t\) gives
  D_p=p^tD_p^{\rm red}(a-t,b-t,n-t).
 \]
 The factor \(p^t\) follows from counting the two sets of lifts
-and the one-dimensional line normalization \(p^{-h}\).
+and the one-dimensional line normalization \(p^{-m_p}\).
 If the remaining valuations are \(a>0,b=0\), solving for the
 unit-coefficient variable gives
 \[

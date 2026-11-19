@@ -55,7 +55,7 @@ pairwise disjoint finite prime sets \(P_g\), with
  c_0T\le|\mathcal G_s|,|\mathcal G_b|\le C_0T.
 \]
 They satisfy
-\[
+\begin{equation}
 \begin{split}
  e^{\Lambda^\alpha}\le p\le e^{\Lambda^\beta}
        &\quad(g\in\mathcal G_s,\ p\in P_g),\\
@@ -63,8 +63,8 @@ They satisfy
        &\quad(g\in\mathcal G_b,\ p\in P_g),\\
  v_-\le V_g:=\sum_{p\in P_g}\frac1p\le v_+,
        &\qquad \mu_g(p)=\frac1{V_gp}.
-\end{split}                                                    \tag{3.1}\label{eq:inputbanks}
-\]
+\end{split}                                                    \label{eq:inputbanks}
+\end{equation}
 The sets need not be intervals. This freedom is needed when taking
 identity residue classes and deleting primes dividing the target.
 
@@ -85,9 +85,9 @@ multiplicity. Write \(D=D_sD_b\) according to group size.
 Each pattern has a complex coefficient \(K_\nu\). It may depend on
 the ordered big-group source labels, target labels, and auxiliary
 labels used in \(D_b\), and on no small-group labels. Assume
-\[
-                 \sum_\nu\sup |K_\nu|\le\Lambda^{C_1},           \tag{3.2}\label{eq:inputmass}
-\]
+\begin{equation}
+                 \sum_\nu\sup |K_\nu|\le\Lambda^{C_1},           \label{eq:inputmass}
+\end{equation}
 where \(m,C_1\) are fixed independently of \(J\). All operators below
 average source and target slot permutations independently in each
 applicable group. These averages are orthogonal projections.
@@ -125,11 +125,11 @@ labels, using row normalization \(\prod_gV_g^{-t_g}\); auxiliary
 labels retain their independent probability laws. Every auxiliary
 label is forbidden from both endpoint lists, although auxiliary
 labels may equal each other. Multiply the row by
-\[
+\begin{equation}
  K_\nu D^{\,i\zeta}
        \vartheta^{(\omega(n)-Ms)/2}
-       \vartheta^{(\omega(n')-Ms)/2},                            \tag{3.3}\label{eq:inputphysical}
-\]
+       \vartheta^{(\omega(n')-Ms)/2},                            \label{eq:inputphysical}
+\end{equation}
 sum over patterns and apply all endpoint permutation projections.
 The adjoint reverses the displacement and conjugates the coefficient
 with the endpoint roles interchanged. The joint endpoint
@@ -161,20 +161,20 @@ Reversing the joint endpoint measure gives the column bound.
 For every fixed \(E>0\), there is \(E_{\mathrm{id}}>0\), depending
 only on \(E\) and the fixed group data, such that the following holds.
 Suppose
-\[
+\begin{equation}
                    \sup_{\Theta\in\mathbb R}
                         \|\mathcal T(\Theta)\|_{2\to2}
                               \le\Lambda^{-E_{\mathrm{id}}}.
-                                                                    \tag{3.4}\label{eq:inputideal}
-\]
+                                                                    \label{eq:inputideal}
+\end{equation}
 After \(m,C_1\) have been fixed, take a sufficiently large fixed \(J\).
 Put \(R=\lceil\Lambda^{0.52}\rceil\). For every fixed \(\eta>0\)
 and \(I=[X,2X)\), with \(x^\eta\le X\le x^{1/\eta}\),
-\[
+\begin{equation}
  \frac1{|I\cap\Z|}\sum_{n\in I\cap\Z}
        \langle u_n,(AA^*)^Ru_n\rangle
-                         \le\Lambda^{-2RE}.                    \tag{3.5}\label{eq:inputroot}
-\]
+                         \le\Lambda^{-2RE}.                    \label{eq:inputroot}
+\end{equation}
 Here \(u_n\) is one on every physical mark list at position \(n\)
 and zero elsewhere. The threshold may depend on all the fixed
 parameters, including \(J,C_2,\eta\). No bound on \(\zeta\) is
@@ -193,13 +193,13 @@ the integer offsets and \(\mathcal A_i\) its active prime set at
 visit \(i\). Set \(\vartheta_i=\vartheta\) at internal visits and
 \(\vartheta_0=\vartheta_r=\sqrt{\vartheta}\).
 The position-dependent factor is
-\[
+\begin{equation}
  W(n)=\prod_{i=0}^{r}
        \left(\prod_{p\in\mathcal A_i}1_{p\mid n+h_i}\right)
        \vartheta_i^{\,\#\{p\notin\mathcal A_i:
                      \ p\text{ is a group prime},\ p\mid n+h_i\}}.
-                                                                    \tag{3.6}\label{eq:inputpath}
-\]
+                                                                    \label{eq:inputpath}
+\end{equation}
 
 \begin{proposition}[Imported residue replacement]\label{prop:graphcrt}
 For every fixed \(B>0\), the average of \eqref{eq:inputpath} on
@@ -236,10 +236,10 @@ list at each position, with value \(f_n\). If
           \|f\|,\|g\|\le X^{1/2}\Lambda^{C_3},
 \]
 then
-\[
+\begin{equation}
                     |\langle f,Ag\rangle|
-                        \ll X\Lambda^{-E+2C_3}.                 \tag{3.7}\label{eq:inputendpoint}
-\]
+                        \ll X\Lambda^{-E+2C_3}.                 \label{eq:inputendpoint}
+\end{equation}
 Only \(f\) must be constant on mark lists.
 \end{corollary}
 

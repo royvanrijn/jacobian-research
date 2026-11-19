@@ -1,0 +1,145 @@
+\section{Fractional rough models and one-variable means}\label{sec:model-preparation}
+We develop the rough Hankel model and its one-variable centering
+estimate before applying the comparison theorem. Fix an even
+\(L_0\), put \(G=(\Z/L_0\Z)^\times\), and take a proper subgroup
+\(H\le G\). Write
+\[
+ \mathcal P_H=\{p:p\nmid L_0,\ p\bmod L_0\in H\},\qquad
+ C_H=\langle\mathcal P_H\rangle,\qquad f=\1_{C_H},
+\]
+and set \(\rho=|H|/|G|\), \(k_H=[G:H]=1/\rho\). The outer
+scale is \(X\); later reflected applications take \(X=N\).
+Put
+\[
+ L=\log X,\quad y=\exp(L^{2/5}),\quad \mathcal P_y=\{p:p\le y\},\quad
+ E=\exp(\sqrt L),\quad V_y=\prod_{p\le y}(1-1/p).
+\]
+Let \(n_{\mathcal P_y}\) denote the \(\mathcal P_y\)-supported part of \(n\), and
+\(n_{>y}=n/n_{\mathcal P_y}\). Define
+\[
+ E_+(y)=\prod_{\substack{p\le y\\p\in\mathcal P_H}}(1-1/p),\quad
+ E_-(y)=\prod_{\substack{p\le y\\p\nmid L_0,\ p\notin\mathcal P_H}}(1-1/p),
+ \quad \alpha_0=\varphi(L_0)/L_0.
+\]
+Then \(V_y=\alpha_0E_+(y)E_-(y)\) for large \(X\).
+
+\subsection{Fractional poles and centered rough means}
+Character orthogonality gives, for \(\Re s>1\),
+\begin{equation}\label{eq:euler-branches}
+ F_H(s)=\prod_{p\in\mathcal P_H}(1-p^{-s})^{-1}
+       =G_H(s)\prod_{\eta\in H^\perp}L(s,\eta)^\rho.
+\end{equation}
+At a forbidden good prime of coset order \(r>1\), the correction
+is \((1-p^{-rs})^{1/r}\); thus \(G_H\) converges absolutely for
+\(\Re s>1/2\). The literal principal character carries the bad Euler factors.
+The positive marginal constant is
+\[
+ c_H=\frac1{\Gamma(\rho)}
+             \lim_{s\downarrow1}(s-1)^\rho F_H(s);
+\]
+its Euler expression is \eqref{eq:marginal-product}. Every
+\(\eta\in H^\perp\) equals one on the support of \(f\); every such
+twist therefore has the same pole branch.
+
+Define the rough series and its regular part by
+\[
+ F_R(s)=F_H(s)\prod_{\substack{p\le y\\p\in\mathcal P_H}}(1-p^{-s})
+        =(s-1)^{-\rho}H_R(s).
+\]
+Here \(H_R(1)=\Gamma(\rho)c_HE_+(y)\). Fixed-order Cauchy estimates
+on a disk of radius \(c/\log y\) give
+\begin{equation}\label{eq:rough-derivatives}
+ |H_R^{(j)}(1)|/j!\ll_j H_R(1)(C\log y)^j.
+\end{equation}
+For a fixed depth \(K\), define on polynomial scales in \(X\)
+\begin{equation}\label{eq:hankel-model}
+ M_{R,K}(t)=\sum_{j=0}^K\frac{H_R^{(j)}(1)}{j!}
+                 \frac{(\log t)^{\rho-j-1}}{\Gamma(\rho-j)}.
+\end{equation}
+For \(X^a\le t\le X^C\), with fixed \(0<a<C\), this is
+\(c_HE_+(y)(\log t)^{\rho-1}(1+O_K(L^{-3/5}))>0\).
+For definiteness fix a smooth real function \(\eta_0\), with
+\(0\le\eta_0\le1\), zero on \(({-}\infty,1/4]\) and one on
+\([1/3,\infty)\). Set \(M_{R,K}(t)=0\) for \(t\le X^{1/4}\),
+and multiply the displayed expression by \(\eta_0(\log t/L)\)
+above that point. On the transition range it has the same positive
+upper bound. All rough scales used in (C3) are at least
+\(X^{1/2}/E>X^{1/3}\), so the cutoff never changes their means.
+Only the polynomial bulk enters principal means.
+
+\begin{lemma}\label{lem:rough-means}
+For fixed \(B,A_0>0\), sufficiently large fixed \(K\) has the
+following property. If \(b\) is bounded and periodic of period at
+most \(L^B\), and \(W\) is a smooth dyadic weight at a scale
+\(X^{2/5}\le T\le X^2\), with fixed derivatives bounded by
+fixed powers of \(L\),
+then
+\begin{align*}
+ &\sum_n W(n)b(n)f(n)\1_{(n,\prod_{p\le y}p)=1}\\
+ &\quad-\sum_n W(n)b(n)\1_{(n,\prod_{p\le y}p)=1}
+       \left(\sum_{\eta\in H^\perp}\eta(n)\right)
+                  \frac{M_{R,K}(n)}{V_y}\ll T L^{-A_0}.
+\end{align*}
+The same holds with a factor \(n^{iu}\), \(|u|\le L^B\).
+\end{lemma}
+\begin{proof}
+Let \(q\le L^B\) be the period of \(b\). Refine it to \(Q=\lcm(q,L_0)\) and expand on unit residues
+by characters. All primes dividing \(Q\) are at most \(y\).
+For \(\psi\bmod Q\), the twisted rough series is
+\[
+ \prod_{\eta\in H^\perp}L(s,\psi\eta)^\rho\,G_\psi(s)
+ \prod_{\substack{p\le y\\p\in\mathcal P_H}}(1-\psi(p)p^{-s}).
+\]
+If \(\psi\) is inflated from \(H^\perp\), this equals \(F_R\);
+otherwise all its character factors are nonprincipal.
+Use smooth Mellin inversion at height \(\exp(L^{1/10})\), moving
+to \(1-c/\log y\). The classical zero-free region is wider there
+at these heights and polylogarithmic conductors. Siegel's theorem
+places a possible exceptional real zero outside the strip for large
+\(X\), after choosing its fixed exponent depending on \(B\).
+The finite Euler product costs \(L^{O(1)}\); the displacement gives
+\(\exp(-cL^{3/5})\), dominating polynomial \(L\)-function growth at
+that height. Smooth tails are smaller than every fixed logarithmic
+power. The threshold can be ineffective.
+
+Hankel integration gives \eqref{eq:hankel-model} for each principal
+branch. Its relative Taylor error is \(O_K(L^{-3(K+1)/5})\),
+by \eqref{eq:rough-derivatives}.
+Choose \(K\) after the derivative and character-count costs.
+For the unweighted rough population the series
+\(\zeta(s)\prod_{p\le y}(1-p^{-s})\) has principal density \(V_y\),
+and only the trivial character contributes. The projection
+\(\sum_{\eta\in H^\perp}\eta\) therefore reproduces every principal
+branch of the first sum with its exact coefficient. The factor
+\(n^{iu}\) changes only the derivative budget and choice of \(K\).
+\end{proof}
+
+The contour argument uses the fractional pole and the absolute
+convergence and fixed-order derivative bounds of its Euler correction.
+It therefore also applies when that correction is inverted and remains
+absolutely convergent for \(\Re s>1/2\). The quadratic-indicator
+application uses precisely this variant, with exponent \(1/2\)
+and its two principal character branches.
+
+For \(U\subset H\), set
+\begin{equation}\label{eq:corrected-model}
+ \mathcal D_U(n)=k_H\1_{n\bmod L_0\in U}f(n_{\mathcal P_y})
+                       \frac{M_{R,K}(n_{>y})}{V_y},\qquad
+ \xi_U(n)=f(n)\1_{n\bmod L_0\in U}-\mathcal D_U(n).
+\end{equation}
+Then \(\mathcal D_U\ge0\), \(\mathcal D_U\ll L^{-3(1-\rho)/5}\) and
+\(|\xi_U|\ll1\). Conditioning on an exact record \(n_{\mathcal P_y}=r\le E\)
+leaves residual state \(U/r\), so Lemma~\ref{lem:rough-means}
+centers its principal mean. Fixed divisor-growth record coefficients
+cost only powers of \(L\), since
+\(\sum_{r\ \mathcal P_y\text{-supported}}d_j(r)/r\ll L^{O_j(1)}\).
+Rankin's bound with exponent \(c/\log y\) gives
+\begin{equation}\label{eq:record-tail}
+\#\{n\le T:n_{\mathcal P_y}>E\}\ll TL^{O(1)}e^{-cL^{1/10}}
+ \quad(X^a\le T\le X^C).
+\end{equation}
+Indeed the Euler moment is \(L^{O(1)}\), whereas
+\(E^{-c/\log y}\) gives the exponential saving. The same argument
+permits fixed divisor weights. For \(H=G\), use the exact model
+\(\mathcal D_U=\1_{n\bmod L_0\in U}\) and \(\xi_U=0\).
+

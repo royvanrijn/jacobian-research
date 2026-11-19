@@ -37,6 +37,22 @@ The exact binary sumsets are
 \]
 \end{theorem}
 
+For the Eisenstein row, let
+\[
+ \AA=\{n\ge1:p\mid n\Longrightarrow p\equiv1\pmod3\}.
+\]
+Here $1\in\AA$.  The elementary identity
+\[
+                   P_{-3}=\AA\sqcup(3\!\cdot\!\AA)
+\]
+explains why two split-prime core identities suffice.  An inert prime
+cannot divide a primitive norm, while the ramified prime three occurs
+at most once; conversely every value in either displayed part has
+coprime coordinates.  Proposition~\ref{prop:primitive-classification}
+proves this in the arithmetic preliminaries.  Thus the three types of
+binary sums are $\AA+\AA$, $\AA+3\!\cdot\!\AA$ and
+$3\!\cdot\!(\AA+\AA)$.
+
 The proofs establish stronger identities for the semigroups generated
 by split primes.  In each ring, a primitive norm has no inert prime
 factor, and the ramified prime can appear only once.  Thus the norm
@@ -64,6 +80,44 @@ interval inequalities in exact arithmetic, and test every target in
 the stated finite domains.  Their mathematical roles and completeness
 arguments are included below and summarized in
 Appendix~\ref{app:verifier}.
+
+Table~\ref{tab:exact-coverage} shows how the finite and infinite parts
+meet.  In its last three rows, $C_d$ is the split-prime core defined in
+the corresponding section.  The variable $n$ is a reduced target; in
+the $-8$ row, $m$ is an odd inert-supported core.  Interval certificates
+certify the stated families throughout each interval, rather than
+scanning its individual targets.
+
+\begin{table}[ht]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.13}
+\caption{Coverage of the exact classifications.  All finite scans include
+only the locally eligible targets of the indicated families.}
+\label{tab:exact-coverage}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.045\linewidth}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{.255\linewidth}>{\raggedright\arraybackslash}p{.225\linewidth}>{\raggedright\arraybackslash}p{.24\linewidth}@{}}
+\toprule
+$d$&Complete finite scan&Rational interval bridge&Infinite estimate&Descent and dilation\\
+\midrule
+$-3$&$N<10^8$: $\AA+\AA$ and $\AA+3\!\cdot\!\AA$.
+&No interval bridge needed.
+&Reduced $n\ge10^8$, in both admissible classes modulo six.
+&Remove all split-prime factors, then scale back; use $P_{-3}=\AA\sqcup3\!\cdot\!\AA$.\\[3pt]
+$-7$&$N\le2^{24}$: $C_7+C_7$ and $P_7+P_7$, with their listed exceptions.
+&$257$ intervals on $[2^{24},2^{37})$; $17$ on $[2^{37},2^{54})$, for inert-supported targets and split primes.
+&The same reduced families for $n\ge2^{54}$.
+&Remove split factors; patch quotients $11,29$.  Ramified dilation by seven gives the primitive exceptions.\\[3pt]
+$-8$&$N\le2^{27}$: $C_8+C_8$ and $C_8+2C_8$.
+&$107$ intervals: $m\in[2^{27},2^{60})$ for mixed sums, $[2^{26},2^{60})$ at $2m$, and $[2^{20},2^{60})$ at $4m$.
+&Inert cores $m\ge2^{60}$; the mixed prime boundary holds for primes $N\ge2^{22}$.
+&Remove split factors; the remaining targets are $m,2m,4m$.  Use $P_{-8}=C_8\sqcup2C_8$.\\[3pt]
+$-11$&$N\le2^{25}$: $C_{11}+C_{11}$.
+&$35$ intervals on $[2^{25},2^{60})$, for even inert-supported targets prime to eleven.
+&The same reduced family for $n\ge2^{60}$.
+&Remove split factors; ramified dilation by eleven gives $P_{-11}+P_{-11}$.\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 We first prove the Eisenstein identities, including the mixed family
 forced by the ramified prime three.  The following sections treat

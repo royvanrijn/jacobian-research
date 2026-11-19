@@ -1,228 +1,228 @@
 \section{Introduction}
-Can every sufficiently large integer \(N\equiv2\pmod{12}\) be written
-as \(a+b\), where every prime factor of both \(a\) and \(b\) is
-\(1\pmod{12}\)?
-The congruence condition is unavoidable: each allowed summand is itself
-\(1\pmod{12}\). Why should that condition be sufficient, and how many
-representations should there be?
-
-Put
-\[
- C_{12}=\{n\ge1:p\mid n\Longrightarrow p\equiv1\pmod{12}\},
- \qquad R_{12}(N)=\#\{(a,b)\in C_{12}^2:a+b=N\}.
-\]
-We include \(1\), and count ordered pairs of numerical values.
-Our answer is the pointwise asymptotic
-\begin{equation}\label{eq:opening}
- R_{12}(N)=A_{12}J_{12}(N)\frac{N}{(\log N)^{3/2}}
-       \left(1+O((\log N)^{-\delta})\right),
- \qquad N\equiv2\pmod{12},
+How many positive integers \(n\le X\) have the property that both
+\(n\) and \(n+1\) are sums of two squares? Write \(b_d(n)\) for
+the indicator of the positive values of \(x^2+dy^2\), with
+\(x,y\in\Z\), and put \(b_d(n)=0\) for \(n\le0\).
+Coordinates are unrestricted and may vanish; each numerical value
+is counted once. Under the analytic inputs stated below, we obtain
+\begin{equation}\label{eq:ck-headline}
+ \#\{1\le n\le X:b_1(n)=b_1(n+1)=1\}
+                         \sim\frac{X}{2\log X}.
 \end{equation}
-with explicit positive factors and an explicit \(\delta>0\).
-The constants are given in Theorem~\ref{thm:c12}. In particular every
-sufficiently large integer in this congruence class has a representation.
+This is the shift-one Connors--Keating prediction. It belongs to
+Smilansky's five-form family of pair-correlation predictions.
 
-Smilansky's pair-correlation predictions give a second concrete
-arithmetic problem. Let \(b_d(n)\) indicate the positive integers
-of the form \(x^2+dy^2\), with \(x,y\in\Z\), counting each
-value once. For \(d\in\{1,2,3,4,7\}\) and every fixed
-\(h\ne0\), we prove, under the same analytic inputs,
+\begin{corollary}\label{cor:smilansky-five-pairs}
+Under the inputs of Section~\ref{sec:inputs}, for
+\(d\in\{1,2,3,4,7\}\) and fixed \(h\ne0\),
 \[
  \sum_{1\le n\le X}b_d(n)b_d(n+h)
        =\mathscr T_{d,h}\frac X{\log X}+o_{d,h}(X/\log X),
 \]
-with the explicit arithmetic coefficients predicted in
-\cite[Section 6.3]{smilansky}. In particular,
-\begin{equation}\label{eq:ck-headline}
- \#\{1\le n\le X:b_1(n)=b_1(n+1)=1\}
-                 \sim\frac{X}{2\log X}.
+with precisely the coefficients predicted in
+\cite[Section 6.3, equations (6.2)--(6.4)]{smilansky}.
+In particular,
+\begin{equation}\label{eq:minus-eight-shift-one}
+ \sum_{n\le X}b_2(n)b_2(n+1)
+                       \sim\frac1{\sqrt2}\frac X{\log X}.
 \end{equation}
-This is the shift-one Connors--Keating prediction. Each numerical
-value is counted once; the number of its representations as a norm
-does not enter. The shift-one coefficient for \(x^2+2y^2\) is
-\(1/\sqrt2\). Corollary~\ref{cor:smilansky-five-pairs} proves all
-five cases as one quadratic-character application, with their
-exceptional-prime conditions retained.
+\end{corollary}
 
-Let \(C^-_4=\{n\ge1:p\mid n\Longrightarrow p\equiv3\pmod4\}\).
-Every sufficiently large even integer is a sum of two elements of
-\(C^-_4\). More precisely, on every sufficiently large even target,
+The coefficients and their exceptional-prime conditions are evaluated
+in Section~\ref{sec:quadratic-pairs}. In particular these are ordinary
+value counts, with no weights for the number of coordinate representations.
+
+\subsection{A second headline: genus governs primitive value counts}
+
+Fix one negative fundamental discriminant \(D\) and two fixed
+discriminants \(\Delta_i=f_i^2D\). Let \(Q_i,Q'_i\) be primitive
+positive definite integral binary forms of discriminant \(\Delta_i\),
+in the same genus for each \(i=1,2\). Thus both slots belong to
+orders in the one quadratic field \(\Q(\sqrt D)\); no mixed-field
+assertion is made. If \(P_Q\) is the set of positive values of
+\(Q\) at coprime coordinates and
+\(R_{Q_1,Q_2}(N)=\#\{(a,b)\in P_{Q_1}\times P_{Q_2}:a+b=N\}\),
+then the classical route gives
+\begin{equation}\label{eq:genus-headline}
+ R_{Q_1,Q_2}(N)=R_{Q'_1,Q'_2}(N)
+                  \left(1+O((\log N)^{-1/5})\right)
+\end{equation}
+on sufficiently large common locally admissible targets.
+The two slots may have different genera and conductors; replacement
+is within each respective discriminant and genus. Under the recent
+analytic inputs we also obtain an explicit mixed leading term of
+order \(NJ_S(N)/\log N\), with relative error \(o(1)\).
+There is no class-number divisor: a numerical value can be represented
+by every class in its compatible genus. Section~\ref{sec:forms}
+states the general results before giving the ideal-class and local-filter
+proofs; Section~\ref{sec:norms} recovers the principal specialization.
+
+The counting conventions and strengths are different:
+\begin{center}\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.19\linewidth}>{\raggedright\arraybackslash}p{.34\linewidth}>{\raggedright\arraybackslash}p{.41\linewidth}@{}}
+\hline
+Result family&What is counted&Conclusion\\\hline
+CK/Smilansky&Ordinary values; unrestricted coordinates&Fixed-shift asymptotic with the stated little-\(o\) error\\[1mm]
+Subgroup/coset sums&Integers with prescribed prime support&Target-uniform asymptotic with a logarithmic saving\\[1mm]
+Primitive-form sums&Values admitting coprime coordinates in two fixed orders of one field&Explicit leading term with relative \(o(1)\)\\[1mm]
+Genus replacement&Comparison of two primitive-form value counts&Relative logarithmic saving through the classical route\\\hline
+\end{tabular}
+\end{center}
+The first three asymptotic families use the imports in
+Section~\ref{sec:inputs}; genus replacement does not.
+A \emph{primitive form} \([a,b,c]\) has \(\gcd(a,b,c)=1\).
+A \emph{primitive representation} \(Q(x,y)\) has
+\(\gcd(x,y)=1\). \emph{Coprime summands} in \(a+b=N\)
+means \(\gcd(a,b)=1\), a separate condition imposed only when stated.
+For example, \(4=2^2+0^2\) is an ordinary sum of two squares,
+but any representation of four has both coordinates even and is
+not primitive. Consequently the primitive-form theorem does not
+extend the ordinary CK statement to arbitrary forms. Its class-error
+saving also does not supply a logarithmic remainder for the full
+conductor-prefix leading term.
+
+\subsection{The common mechanism, in the CK example}
+
+The central result is the indicator-to-model comparison of
+Theorem~\ref{thm:model-comparison}. Multiplication by suitable primes
+preserves an indicator and its arithmetic model. One-variable means
+center their difference, and a positive sparse sieve controls exceptional
+prime-factor records. A shared graph reduction then leaves two frequency
+estimates: one for fixed shifts and one for reflected targets. Their
+assembly replaces the indicators in the binary count by the models.
+The model correlation can then be evaluated from local arithmetic.
+
+Here is the model for \(b_1\). At outer scale \(X\), put
+\(L=\log X\), \(y=\exp(L^{2/5})\),
+\(\mathcal P_y=\{p:p\le y\}\), and
+\(V_y=\prod_{p\le y}(1-1/p)\). Write every \(n\) uniquely as
+\(n=rv\), where \(r=n_{\mathcal P_y}\) contains its full small-prime
+powers and \(v\) has no prime factor at most \(y\).
+The rough ordinary-value series is
 \[
- \#\{(a,b)\in(C^-_4)^2:a+b=N\}
- =A_-J_-(N)\frac{N}{\log N}
-       \left(1+O((\log N)^{-\delta_-})\right),
+ F_y(s)=\prod_{\substack{p>y\\p\equiv1\ (4)}}(1-p^{-s})^{-1}
+         \prod_{\substack{p>y\\p\equiv3\ (4)}}(1-p^{-2s})^{-1}
+       =(s-1)^{-1/2}H_y(s).
 \]
-where \(\delta_->0\) and
+For a sufficiently deep fixed \(K\), its smooth density expansion is
 \[
- A_-=\frac12\prod_{p\equiv1\ (4)}
-                  \left(1-\frac{2}{p(p-1)}\right)>0,
- \qquad
- J_-(N)=\prod_{\substack{p\mid N\\p\equiv1\ (4)}}\frac{p-1}{p-2}.
+ M(v)=\sum_{j=0}^K\frac{H_y^{(j)}(1)}{j!}
+            \frac{(\log v)^{-1/2-j}}{\Gamma(1/2-j)},\qquad
+ \mathcal D(rv)=b_1(r)\bigl(1+\chi_{-4}(v)\bigr)\frac{M(v)}{V_y}.
 \]
-Odd targets have zero count. This is the simplest nonidentity-coset
-case of Theorem~\ref{thm:coset}. The arithmetic constants and the
-positive saving are the main features here; numerical choices for
-the saving exponents are collected in Section~\ref{sec:assembly}.
+These formulas apply on the polynomial rough scales used in the proof;
+the smooth bounded extension is specified in
+Section~\ref{sec:model-preparation} and the quadratic application.
+The leading term of \(M\) is \(H_y(1)/\sqrt{\pi\log v}\).
+Dividing by \(V_y\), the density of rough integers, gives the
+conditional density on the rough variable. Every allowed rough value
+has \(\chi_{-4}(v)=1\). The correction \(1+\chi_{-4}(v)\)
+retains this bias; average density alone would miss a leading contribution.
+For a split prime \(p\le y\), multiplication by \(p\) changes only
+\(r\), preserves \(b_1(r)\), and leaves both \(v\) and
+\(\mathcal D\) unchanged. Replacing
+\(b_1(n)b_1(n+h)\) by \(\mathcal D(n)\mathcal D(n+h)\)
+with an error \(o(X/\log X)\) is the analytic task. The remaining
+model product gives the coupled local factors and the coefficient
+\(1/2\) in \eqref{eq:ck-headline}.
 
-Knowing how many allowed integers lie below \(X\) does not tell us how
-often two allowed integers land on the particular line \(a+b=N\).
-Even an average over many targets can conceal exceptional targets.
-Classical correlation theorems for independent linear forms do not
-directly handle this pair: the linear parts of \(n\) and \(N-n\)
-are dependent. For example, the Frobenian correlation theorems of
-Loughran--Matthiesen require pairwise linearly independent nonconstant
-linear parts \cite[Theorems 1.9 and 3.10]{loughranmatthiesen}.
-The issue here is cancellation on each individual additive fibre.
+\subsection{Semigroups and the reflected-target obstacle}
 
-There is a direct historical antecedent. Iwaniec--Pomyka\l a studied
-sums and differences of coprime values of quartic norm forms
-\cite{iwaniecpomykala}. For \(\Q(\zeta_{12})\), their splitting
-conditions select exactly the primes \(1\pmod{12}\). Their
-Theorem~2 gives conditional order bounds for coprime sums at every
-sufficiently large admissible target; its hypothesis (P4) is a
-convolution estimate uniform in growing shifts. Their Theorem~1
-proves the corresponding fixed-difference result unconditionally.
-Their counts already count each numerical value once.
-Formula~\eqref{eq:opening} counts unrestricted pairs.
-Corollary~\ref{cor:coprime-c12} obtains a coprime leading asymptotic
-by M\"obius inversion. Its target weight is uniformly comparable to
-theirs, as the comparison following that corollary shows. Thus we also
-recover their coprime sum conclusion, with a leading constant and
-quantitative remainder, through the analytic inputs used here
-instead of their hypothesis (P4).
-We make no claim here about historical priority beyond this comparison.
+The same mechanism reaches a different geometry. Let
+\(C_{12}=\{n\ge1:p\mid n\Rightarrow p\equiv1\pmod{12}\}\),
+including one. Every sufficiently large \(N\equiv2\pmod{12}\)
+is a sum of two elements of \(C_{12}\), and
+the ordered value-pair count
+\(R_{12}(N)=\#\{(a,b)\in C_{12}^2:a+b=N\}\) satisfies
+\begin{equation}\label{eq:opening}
+ R_{12}(N)=A_{12}J_{12}(N)\frac{N}{(\log N)^{3/2}}
+                  \left(1+O((\log N)^{-\delta})\right),
+ \qquad\delta>0.
+\end{equation}
+The positive factors are explicit in Theorem~\ref{thm:c12}.
+For \(C^-_4=\{n\ge1:p\mid n\Rightarrow p\equiv3\pmod4\}\),
+every sufficiently large even target likewise has an explicit
+asymptotic of order \(N/\log N\), with a positive logarithmic saving.
+The subgroup and coset theorems allow fixed arithmetic data and retain
+all surviving characters, including the complex branches forced by
+the prime class \(3\pmod{10}\). Numerical saving exponents are
+collected in Section~\ref{sec:assembly}.
 
-The example belongs to a general theorem. Fix an even modulus \(L_0\)
-and subgroups \(H_1,H_2\le(\Z/L_0\Z)^\times\). Let \(C_i\)
-consist of integers supported on primes outside \(L_0\) whose residues
-lie in \(H_i\), and put \(\rho_i=|H_i|/\varphi(L_0)\).
-Then on the admissible target classes,
-\[
- \#\{a+b=N:a\in C_1,\ b\in C_2\}
- \sim \mathfrak C(N)\frac{N}{(\log N)^{2-\rho_1-\rho_2}},
-\]
-where \(\mathfrak C(N)>0\) is explicit. Theorem~\ref{thm:general}
-allows different, nonnested subgroups, fixed residue filters and fixed
-coefficients supported on \(L_0\). Its error is uniform in the target
-and all target prime valuations. The modulus, groups and coefficients
-remain fixed. Theorem~\ref{thm:local} identifies the admissibility
-condition with solvability in every finite quotient.
+One-variable density does not control the particular line \(a+b=N\),
+and averages can conceal exceptional targets. The nonconstant linear
+parts of \(n\) and \(N-n\) are dependent, so the independent-linear-form
+correlation theorems of Loughran--Matthiesen do not directly apply
+\cite[Theorems 1.9 and 3.10]{loughranmatthiesen}.
+The reflected frequency argument must retain cancellation and
+normalization when the target enters the rational denominators.
 
-The self-sum theorem extends further to primes in any one fixed coset
-of a subgroup. The coset need not contain the identity, and its prime
-density need not equal the reciprocal index of the group generated by
-its residues. Theorem~\ref{thm:coset} includes prime factors
-\(3\pmod4\) and \(3\pmod{10}\). The latter example forces
-genuinely complex character branches. Such branches are smaller than
-the positive leading density, but cannot be dropped when centering
-to an arbitrarily prescribed logarithmic accuracy.
+Iwaniec--Pomyka\l a's quartic-norm work is a direct antecedent
+\cite{iwaniecpomykala}. For \(\Q(\zeta_{12})\), its splitting conditions
+select the primes \(1\pmod{12}\). Their Theorem~2 gives conditional
+pointwise order bounds for coprime sums; hypothesis (P4) is uniform
+in growing shifts. Their Theorem~1 treats fixed differences
+unconditionally. They count numerical values once.
+Our unrestricted leading term gives a coprime asymptotic by M\"obius
+inversion, with the extra target factor in
+Corollary~\ref{cor:coprime-c12}. Historical priority beyond these
+precise comparisons remains separate from the proof.
 
-For Smilansky's five forms, the fixed-shift comparison reduces the
-problem to a primitive quadratic-character Euler indicator with
-finitely many prime-power restrictions. A coupled finite-place factor
-retains its character bias. The exact representation criteria identify
-the five forms, including their restrictions at two. This application
-and its Connors--Keating specialization use the same analytic inputs;
-their arithmetic checks are given in Section~\ref{sec:quadratic-pairs}.
+\subsection{Attribution, dependencies and scope}
 
-The proof has one organizing idea. Multiplication by an allowed prime
-preserves membership in these sparse sets. We construct a smooth model
-matching both their fractional logarithmic density and their surviving
-congruence biases, and use the multiplicative invariance to control the
-error in replacing the indicators by the model. Once that replacement
-is justified, local arithmetic determines the main term.
-Keeping the congruence characters is essential: the model with only
-the average density loses principal contributions of the same order
-as the answer.
+Walsh's multiplicative-invariance framework treats positive integer
+divisor orders and a fixed nonzero shift \cite{walsh}.
+He explicitly proposes sums-of-two-squares indicator correlations
+in Section~1.2.4, pp.~5--6. The application idea is already present
+there; the work here supplies the complete indicator models,
+arithmetic hypothesis checks and local factors, together with the
+uniform reflected-target argument. Exact common-prime invariance,
+centered one-variable rough means and a positive sparse envelope are
+the independently checkable assumptions of the comparison theorem.
+No centered binary cancellation estimate is assumed.
 
-This approach adapts Walsh's multiplicative-invariance framework for
-shifted divisor correlations \cite{walsh}. His theorem concerns
-positive integer divisor orders and a fixed nonzero shift. He explicitly
-proposes sums-of-two-squares indicator correlations as an extension
-\cite[Section 1.2.4, pp.~5--6]{walsh}. The fixed-shift application
-idea is therefore already present there. Here we construct and center
-the sparse indicator models, verify their hypotheses, and evaluate
-their coupled local value factors. We also establish the uniform
-reflected correlation \(n,N-n\), where the shift is as large as
-the target and enters the rational denominators.
-A fixed common prime class supplies the dilation banks. For filtered
-subgroups it is the identity class; for an unfiltered self-coset it can
-be any one of its allowed classes. A quotient character frame retains
-the resulting slot-dependent unit phases. Finally, target-grid energy
-retains the normalization when the target enters the rational denominators.
+The recent imports are the weighted-dilation root-moment theorem
+\cite[Section 3]{weightedgraphs} and the all-conductor Dirichlet
+zero-free half-plane \(\Re s>11/12\)
+\cite[Part I, Theorem 3.1]{zerofree}. The stronger Part II claim is
+not needed. Walsh states that classical estimates could recover his
+fixed-shift divisor theorem \cite[p.~2]{walsh}, while his printed
+Lemma~5.1 and Section~6.4 still use the recent zero-free input.
+Our fixed-shift moduli are polynomial-logarithmic, but their Mellin
+heights reach \(x(\log x)^C\). Section~\ref{sec:fixed-classical-boundary}
+proves a classical intermediate-height estimate and isolates the
+remaining high-frequency obligation. Both recent inputs remain in
+the fixed-shift theorem. A future replacement there would still leave
+the reflected proof's growing-conductor issue and the graph input.
 
-We package this argument as the arithmetic model comparison theorem,
-Theorem~\ref{thm:model-comparison}. Its hypotheses are bounded models,
-exact invariance under a common prime class, centered one-variable
-means for each retained small-prime record, and a positive upper-sieve
-envelope at the sparse scale. They assume no centered binary
-cancellation or major-arc energy estimate. The latter estimates are
-proved from those hypotheses. Reflected targets and fixed shifts have
-different frequency windows, so the theorem supplies both existing
-frequency arguments explicitly. This separates the shared analysis
-from the arithmetic checks in its applications.
+For primitive values in the fixed field \(\Q(\sqrt D)\), the classical
+Kloosterman, weighted-correlation and positive-restoration route gives
+pointwise order bounds. The class-error sieve then proves
+\eqref{eq:genus-headline} independently of the recent inputs.
+Its full classical core argument is Appendix~\ref{sec:older-route}.
+The common mixed local-filter calculation gives the explicit leading
+coefficient under the recent binary theorem; the principal norm case
+is a specialization. Constants and thresholds depend on the fixed
+forms and orders, and no numerical onset or complete small-exception
+classification is asserted here. The exact classifications and
+certificates belong to the companion article, and the deposited
+window paper addresses where summands may be placed.
 
-The analytic dependencies deserve explicit emphasis. We use the
-weighted-dilation root-moment theorem of OpenAI \cite{weightedgraphs}
-and the all-conductor Dirichlet zero-free half-plane supplied by
-Part~I, Theorem~3.1, of \cite{zerofree}. The latter gives
-\(\Re s>11/12\); the stronger Part~II claim is unnecessary.
-Section~\ref{sec:inputs} states the exact imports. The fractional
-density models, fixed-progression character correction, large-target
-pairing, the two frequency estimates and quantitative reconstruction
-are developed below. Thus the conclusion depends
-on these specified recent preprints; it does not follow from classical
-independent-linear-form correlations alone.
+\subsection{Notation}
 
-Walsh also states that his fixed-shift divisor theorem can be recovered
-using classical estimates instead of the recent zero-free theorem
-\cite[p.~2]{walsh}. His displayed high-frequency proof still uses
-that input \cite[Lemma 5.1 and Section 6.4]{walsh}.
-Our fixed-shift character moduli are polynomial-logarithmic, whereas
-the reflected proof encounters moduli containing the target. However,
-the fixed-shift Mellin heights reach \(x(\log x)^C\), so small
-moduli alone do not justify a classical substitution in our short
-prime-factor estimate. Section~\ref{sec:fixed-shift-comparison}
-isolates this remaining high-frequency issue. The fixed-shift results
-in this article retain both stated analytic inputs; removing the
-zero-free input would still leave the weighted-dilation input.
-
-The arithmetic application is a genus-invariance theorem for primitive
-quadratic-form values. If \(Q_i,Q'_i\) have the same discriminant
-and are in the same genus for each \(i=1,2\), then
-\[
- R_{Q_1,Q_2}(N)
-   =R_{Q'_1,Q'_2}(N)\left(1+O((\log N)^{-\eta})\right)
-\]
-for some explicit \(\eta>0\), on all sufficiently large common
-locally admissible targets. Here the summands are numerical values
-at coprime coordinates. The class changes only a smaller binary
-contribution; genus data governs the leading count. There is no
-automatic \(1/|\operatorname{Pic}(\mathcal O)|\) factor, because one
-value can be represented by every class in a compatible genus.
-Section~\ref{sec:forms} first proves the same-discriminant theorem,
-then treats two fixed conductors in one imaginary quadratic field,
-with genus replacement made separately in the two orders.
-
-This application retains two analytic routes. Classical Kloosterman
-estimates, a weighted correlation and positive restoration give
-pointwise order bounds. Combined with the class-error sieve, they
-already prove the quantitative genus comparison above, independently
-of the recent zero-free and graph theorems. The full classical core
-proof remains in Appendix~\ref{sec:older-route}.
-The principal norm case in Section~\ref{sec:norms} supplies the
-class-error estimate and its normalization. Its saving can be chosen
-independently of the class number; constants still depend on the
-fixed orders. The new correlation theorem then evaluates the mixed
-leading coefficient explicitly from local value densities. A finite
-conductor-prefix limit and summable tail retain those densities
-without coordinate or ideal representation multiplicities.
-
-The conclusion is that local arithmetic governs the pointwise binary
-count. Here ``local'' includes simultaneous residue conditions:
-separate \(p\)-adic tests can lose a coupling between primes, as the
-example following Theorem~\ref{thm:local} demonstrates.
-The final main section gives the short basis-order corollary and specifies
-the boundary of the result. Exact small-target classifications and
-their certificates, higher-fold systems and prime-star counts have
-different proof requirements and are outside this article.
+\begin{center}\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.28\linewidth}>{\raggedright\arraybackslash}p{.66\linewidth}@{}}
+\hline
+Symbol&Role\\\hline
+\(X\), \(L=\log X\), \(h\)&Outer scale, its logarithm, and the fixed shift\\
+\(\mathcal P_y\), \(n_{\mathcal P_y}\), \(V_y\)&Small primes, complete small-prime part, and rough-integer density\\
+\(f_i,\mathcal D_i,\xi_i\)&Indicators, arithmetic models, and centered errors\\
+\(D,D_i\), \(U_i\)&Auxiliary prime products and their dyadic lengths\\
+\(H_i\), \(\mathscr A\), \(\mathcal E\)&Residue subgroups, a prime coset, and forbidden prime sets\\
+\(B_0\), \(S\)&Finite exceptional-prime sets in the ordinary-indicator and primitive-form applications\\
+\(\Delta_i=f_i^2D\)&Order discriminants sharing one fixed fundamental discriminant \(D\); here \(f_i\) denotes a conductor\\
+\(P_Q,\Lambda_Q\), \(G\)&Primitive numerical values, their local shadow, and the applicable class group\\\hline
+\end{tabular}
+\end{center}
+The modulus and the arithmetic data stay fixed. Definitions in each
+application specify its groups and exceptional primes; \(h\) is
+reserved for the additive shift throughout.

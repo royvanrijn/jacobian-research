@@ -212,7 +212,7 @@
   ],
   "source_roles": {
     "weighted-dilation-graphs-sep24-2026.pdf": {
-      "url": "https://github.com/openai/math/blob/main/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
+      "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
       "role": "explicit graph input G",
       "locator": "Section3, Definition3.3, Lemmas3.4/3.6, Theorem3.5, Corollary3.11; Section4actual ideal-kernel proof and parameter order",
       "inspection": "Full applicable Section3 proof reconstructed, including residue replacement, factorial memory, clean signed contraction, rare transfers and equality-rank restoration; own AP/growing-shift hypotheses checked in support.",
@@ -224,13 +224,15 @@
         "counterexample": "C0=2,m1,v_-=1/10,2T groups with massesin[1/10,11/100] give n*rho(n)>L^log10; Mertens massin range exp(L^.1)..exp(L^.4) permits this group family for arbitrarilylargeL.",
         "scope": "General product-law explicit exponent only. Enlarging this fixed log exponent does not change Section3 graphtransference or the APcomparison parameter hierarchy; kappa remains independentJ.",
         "proof_location": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md, ModuleI step1 of the full comparison lemma."
-      }
+      },
+      "immutable_commit": "4eaee87548250b2682affda7d05d947c05554bae"
     },
     "qrh-sep30-2026.pdf": {
-      "url": "https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+      "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
       "role": "mathematical input ZF, discharged by Theorem3.1/PartI",
       "locator": "Theorem3.1 printedp10; applicable proof Sections2-11",
-      "inspection": "Applicable PartI chain reconstructed: known-zero-free-disk controls, all reflection/local branches, scalar calibration with explicit nonzero correction, sextic sieve/row envelope and uniform-epsilon closure. PartII not used."
+      "inspection": "Applicable PartI chain reconstructed: known-zero-free-disk controls, all reflection/local branches, scalar calibration with explicit nonzero correction, sextic sieve/row envelope and uniform-epsilon closure. PartII not used.",
+      "immutable_commit": "4eaee87548250b2682affda7d05d947c05554bae"
     },
     "walsh-2610.40439v1.pdf": {
       "url": "https://arxiv.org/pdf/2610.40439v1",
@@ -442,7 +444,7 @@
   "quantitative_subgroup_upgrade": {
     "statement": "Uniform main term c1*c2*Gamma*C_E*J_E*N/[AB log^kappa N] with remainder O(N*J_E/[AB log^(kappa+delta)N]), delta=1/(8192phi(L0)); C12delta=1/32768.",
     "additional_proof": "ModuleJ chooses mass-one bank counts, explicit Chernoff exponent2delta, movingendpointepsilon=log^-delta, TWO-SIDED target cutoff before Mellin, actual targetdyadsYprime differing fromY, enlarged energywindow, precise minor/major budgets and late density depth.",
-    "parameters": "Normalized graphprecisionL^-22 perSOURCEdyad andL^-20 aftertheirL^2reserve; localizationL^8delta; reconstruction\u2264L; A_min>Ccmp+2Cw+40+8delta, Bout>2A_min+Cprod+4, TE>2(Ccmp+Cw+40+8delta).",
+    "parameters": "Normalized graphprecisionL^-22 perSOURCEdyad andL^-20 aftertheirL^2reserve; localizationL^8delta; reconstruction≤L; A_min>Ccmp+2Cw+40+8delta, Bout>2A_min+Cprod+4, TE>2(Ccmp+Cw+40+8delta).",
     "local_criterion": "Gamma>0 iff soluble in every finite quotient, retaining coupled subgroup states. Separate p-adic closures are insufficient; H={1,11}mod12 gives an exact counterexample.",
     "profiles": "Finite exact bad-prime profiles transfer with same logarithmic exponent, rational-valued periodic coefficient and positive minimum on admissible classes. No unrestricted infinite-profile relative asymptotic is inferred.",
     "counterexample": "Cstar=<2,p1mod4> has R(2^t)=1; a fixed-logN relative main based on vanishing local density fails. Infinite profiles need additional nondegeneracy/tail analysis or residual-core scales.",
@@ -510,10 +512,10 @@
     "constant": "Gamma-normalized ci and explicitfinitecharacter sum(H7) of absolutelyconvergentEulerproducts, retaining jointprimepowercosets. Principal nu denominators only; maximalcoefficientratios are not multipliedtwice.",
     "source_corrections": "PublishedLM2.5(3a)absolute-equality criterion fails for S={3}mod4 andchi4, whosemean=-1/2. UseRe mu=rho. PublishedLM2.8 displayedconstant omitsGamma; useBT1.10. Earlierownsubgroupci alreadyGamma-normalized andsubgrouptwistmeans0/rho, so theirconstantsareunchanged.",
     "ap_repair": "Noncircular SW/Halaszuniformallnonmaxinducedchars; 2018Cor4.2 bounded3kexceptionalcharacters beforeFmembership; uniformpartialEulerHankelmaxmeans; thenAPstability,FandfixedW.",
-    "cosets": "H=<S> controlsmaximalcharacters, but allowedhigherpowers canleaveH. Theiralmostsurelyfiniteprime-squaredefects yield nonuniformcosetdistribution\u03c0, with anexplicitL10counterexampletouniformHmask.",
+    "cosets": "H=<S> controlsmaximalcharacters, but allowedhigherpowers canleaveH. Theiralmostsurelyfiniteprime-squaredefects yield nonuniformcosetdistributionπ, with anexplicitL10counterexampletouniformHmask.",
     "semigroups": "Forpureprime-factor sets S maybearbitrary, H=<S>states andrho=|S|/phiL aredifferentroles. Finiteimages andcoupledlocalglobal extendclassically; the separate unfiltered S={3} mod4 binary extension is now proved under the existing ZF/G inputs, while general arbitrary-S binary counts are not inferred. The additional unfiltered S={3} mod10 case is proved under the same ZF/G inputs; no general prime-coset theorem is inferred.",
-    "dense": "If f_i(p)=1 outsidefiniteB, elementaryCRTplusp\u00b2tailproves uniformabsoluteHL forarbitrarynonzeroaffineforms, evenoneparameter/dependent, witharbitraryhigherexponentrules. Allsmallprimevaluationsaretruncated beforelimit.",
-    "counterexample": "Fivepositive-densityEuler sets at2 andforms x,y,x+y,x+2y-1,2x+y-1 admitactualsetwitnessesineveryfinitequotient butno globalpoint; beta2=0 andonlyclosureparameterx=y0. Thusclosureadmissibility\u2260positivedensity.",
+    "dense": "If f_i(p)=1 outsidefiniteB, elementaryCRTplusp²tailproves uniformabsoluteHL forarbitrarynonzeroaffineforms, evenoneparameter/dependent, witharbitraryhigherexponentrules. Allsmallprimevaluationsaretruncated beforelimit.",
+    "counterexample": "Fivepositive-densityEuler sets at2 andforms x,y,x+y,x+2y-1,2x+y-1 admitactualsetwitnessesineveryfinitequotient butno globalpoint; beta2=0 andonlyclosureparameterx=y0. Thusclosureadmissibility≠positivedensity.",
     "review": "Root and separateanalytic/arithmetic/literatureagents checked currentcanonicalsource. FiveexactfiniteFourier-vs-jointcosetidentities werechecked asauxiliarycontrols. Internalwrittenevidenceonly; noexternalhumanreview/formalverification/numericalonset/priorityclaim."
   },
   "actual_prime_decompositions": {
@@ -535,7 +537,7 @@
     {
       "path": "SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
       "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
-      "locator": "Full Iwaniec--Pomyka\u0142a theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning",
+      "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning",
       "role": "historical_comparison"
     }
   ],
@@ -551,7 +553,7 @@
     "canonical": {
       "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
       "sha256": "3190feda6b93267792f315750fda36cd692057c7d18b5d2d15c30cc78fba7557",
-      "locator": "Full Iwaniec--Pomyka\u0142a theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
+      "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
     },
     "exact_overlap": "For K=Q(zeta_12), conductor 12 and splitting subgroup {1}, the paper's numerical summands are exactly C12. Local sum targets are 2 mod 12 and difference targets 0 mod 12.",
     "theorem_1": "Printed p. 234: unconditional infinitely many coprime complete-splitting pairs for each fixed admissible difference; count of order X/log^(3/2) X times product_(p|N)(1-epsilon_p/p). No growing-target onset uniformity is inferred.",

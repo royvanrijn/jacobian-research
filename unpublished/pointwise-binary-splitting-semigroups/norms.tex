@@ -1,12 +1,9 @@
-\section{Principal norm values and the class error}\label{sec:norms}
+\subsection{Principal norm specialization}\label{sec:norms}
 
-The binary theorem also applies when the permitted values carry a
-class-group obstruction.  We show that, in every fixed imaginary
-quadratic order, that obstruction changes the binary count by a smaller
-order term.  The leading coefficient is therefore determined by local
-\emph{value} densities, including the primes dividing the conductor.
-This principal-class case supplies the comparison used for arbitrary
-forms and mixed pairs in Section~\ref{sec:forms}.
+We recover primitive principal norm values by taking both forms in
+the preceding results to be the norm form of one order. Thus the
+ideal-class comparison and the local-density normalization require no
+separate argument.
 
 Fix an imaginary quadratic field $K$ of fundamental discriminant
 $D<0$, and an order $\mathcal O=\Z+f\mathcal O_K$ of discriminant
@@ -44,7 +41,7 @@ give an order-of-magnitude result. Its classical core estimate is proved
 in full in Appendix~\ref{sec:older-route}, using no new zero-free or
 weighted-dilation input.
 
-\begin{theorem}[The quadratic order bounds]\label{thm:norm-order}
+\begin{corollary}[The quadratic order bounds]\label{thm:norm-order}
 For every fixed imaginary quadratic order there are constants
 $c_{\mathcal O},C_{\mathcal O}>0$ and $N_{\mathcal O}$ such that every
 locally admissible $N\ge N_{\mathcal O}$ satisfies
@@ -53,19 +50,18 @@ locally admissible $N\ge N_{\mathcal O}$ satisfies
        \le R_P(N)\le R_\Lambda(N)
        \le C_{\mathcal O}\frac{NJ_{\mathcal O}(N)}{\log N}.
 \]
-Every nonadmissible target has count zero.  This theorem uses the
-older-input quadratic filter estimate proved in
-Appendix~\ref{sec:older-route}, Lemma~\ref{lem:older-quadratic-filter},
-and the class-error argument
-below; it does not use Theorem~\ref{thm:general}.
-\end{theorem}
+Every nonadmissible target has count zero.  These bounds use
+Lemma~\ref{lem:older-quadratic-filter} and
+Proposition~\ref{prop:norm-class-error}; they do not use
+Theorem~\ref{thm:general}.
+\end{corollary}
 
-The new binary correlation theorem upgrades these bounds to an explicit
-leading asymptotic.
+The leading-term theorem gives the following explicit specialization.
 
-\begin{theorem}\label{thm:norm-leading}
-For every fixed imaginary quadratic order, uniformly as $N$ tends to
-infinity through the locally admissible targets,
+\begin{corollary}\label{thm:norm-leading}
+Under the analytic inputs of Section~\ref{sec:inputs}, for every fixed
+imaginary quadratic order, uniformly as $N$ tends to infinity through
+the locally admissible targets,
 \[
  R_P(N)\sim\mathfrak A_{\mathcal O}(N)
                      J_{\mathcal O}(N)\frac N{\log N},
@@ -83,501 +79,32 @@ Every nonadmissible target has count zero.  Each $d_p(N)$ is a
 computable rational periodic function, and the infinite product
 converges absolutely.  No restriction on the conductor or the ring
 class group is required; the order remains fixed.
-\end{theorem}
+\end{corollary}
 
-We separate the arithmetic comparison from the use of
-Theorem~\ref{thm:general}.  In particular, the following estimate does
-not depend on that binary asymptotic.
-
-\begin{proposition}\label{prop:norm-class-error}
-Let $G=\operatorname{Pic}(\mathcal O)$ and $B=2G$. If $B=0$, then
-$P=\Lambda$. Otherwise put
-\[
- \eta_*(G)=\min_{\substack{\ell\mid |B|\\\ell\text{ prime}}}
-                         \frac{\ell-1}{2\ell}\ge\frac14.
-\]
-For every fixed $0<\eta<\eta_*(G)$, uniformly for $N\ge3$,
-\begin{equation}\label{eq:norm-class-error}
- 0\le R_\Lambda(N)-R_P(N)
- \ll_{\mathcal O,\eta}
-       \frac{N J_{\mathcal O}(N)}{(\log N)^{1+\eta}}.
-\end{equation}
-In particular, for every fixed imaginary quadratic order,
-\[
- 0\le R_\Lambda(N)-R_P(N)
-       \ll_{\mathcal O}\frac{NJ_{\mathcal O}(N)}{(\log N)^{6/5}}.
-\]
-Only the saving exponent is independent of the order; the implied
-constant remains order dependent.
-\end{proposition}
-
-\subsection{Local ideals and the principal genus}
-
-We use proper invertible ideals of the order.  If $I$ is an invertible
-fractional ideal, write $I_p=i_p\mathcal O_p$ and let $n(I)>0$ be its
-covolume norm.  Local determinants give
-\begin{equation}\label{eq:norm-ideal-identities}
- v_p(n(I))=v_p(\operatorname N(i_p)),\qquad
- n(IJ)=n(I)n(J),\qquad I\overline I=n(I)\mathcal O.
-\end{equation}
-These statements hold at conductor primes as well.  Call an integral
-ideal primitive if it is not contained in $p\mathcal O$ for any rational
-prime $p$.  Finitely many prescribed locally principal lattices, equal
-to $\mathcal O_p$ elsewhere, glue to an invertible fractional ideal:
-place them between $m\mathcal O_p$ and $m^{-1}\mathcal O_p$, glue the
-residue submodules by the Chinese remainder theorem, and glue their
-inverses in the same way.
-
-The following principal-genus statement is classical for arbitrary
-orders; compare \cite[Appendix~A, Proposition~A.1]{khayutin}.  We give
-the norm argument because retaining conductor-local ideal types is
-necessary here.
-
-\begin{lemma}\label{lem:norm-genus}
-Put $U_p=\operatorname N(\mathcal O_p^\times)$.  The homomorphism
-\[
- \Theta:G\longrightarrow
-       \prod_{p\in S}\Z_p^\times/U_p,\qquad
- \Theta_p([I])=n(I)/\operatorname N(i_p)\pmod{U_p}
-\]
-is well defined and has kernel $2G$.  Consequently,
+\begin{proof}[Specialization]
+The norm form is primitive of discriminant \(\Delta\) and corresponds
+to \(A=\mathcal O\), hence \(c_Q=0\). Lemma~\ref{lem:form-ideal-shadow}
+therefore reads
 \begin{equation}\label{eq:norm-shadow-ideals}
  n\in\Lambda\quad\Longleftrightarrow\quad
  \text{some primitive integral invertible }I
- \text{ has }n(I)=n\text{ and }[I]\in2G.
+       \text{ has }n(I)=n,\ [I]\in2G,
 \end{equation}
-Replacing $2G$ by the principal class characterizes $P$.
-\end{lemma}
-
-\begin{proof}
-The quotient in $\Theta_p$ is a unit by
-\eqref{eq:norm-ideal-identities}.  A change of local generator changes
-it by an order-unit norm.  Multiplication of $I$ by a principal ideal
-changes numerator and denominator by the same positive element norm.
-Every $U_p$ contains the rational unit squares, so the target has
-exponent two and $2G$ is in the kernel.  Outside $S$ every unit is a
-norm from $\mathcal O_p^\times$.
-
-Conversely, if $\Theta([I])=1$, choose units $u_p\in\mathcal O_p^\times$
-such that $\operatorname N(i_pu_p)=n(I)$ at every finite prime.
-Positivity handles the infinite place.  The cyclic Hasse norm theorem
-\cite[Chapter~VIII, Theorem~3.1]{milnecft} supplies $\alpha\in K^\times$
-with $\operatorname N(\alpha)=n(I)$.  Local Hilbert~90 writes
-$i_pu_p/\alpha=z_p/\overline z_p$.  For a norm-one element $c\ne-1$
-one may take $z=1+c$; for $c=-1$, take $z=\sqrt D$.  At almost all
-primes a unit solution exists: in an unramified field normalize its
-valuation by a rational uniformizer, and in a split algebra use
-$z=(c_1,1)$.  The lattices $z_p\mathcal O_p$ therefore glue to an
-invertible fractional ideal $J$.  They give
-$I/(\alpha)=J/\overline J$, hence $[I]=2[J]$ by
-\eqref{eq:norm-ideal-identities}.
-
-For \eqref{eq:norm-shadow-ideals}, primitive local elements of norm
-$n$ generate local ideals which glue to a primitive integral ideal of
-norm $n$, with trivial $\Theta$.  Conversely, trivial $\Theta$ lets
-one multiply each local generator by a unit to obtain a primitive
-local element of exact norm $n$.  A principal primitive integral
-ideal has an integral primitive generator.  Its norm is its ideal
-norm, proving the final assertion.
+and replacing \(2G\) by zero characterizes \(P\).
+The classical bounds just proved for mixed forms give
+Corollary~\ref{thm:norm-order}. The two local filters now coincide,
+\(d_{p;1,2}=d_p\), and \(J_\Delta=J_{\mathcal O}\), so
+Theorem~\ref{thm:form-binary-leading} gives
+\eqref{eq:norm-coefficient} and Corollary~\ref{thm:norm-leading}.
+In particular, Proposition~\ref{prop:norm-class-error} gives
+\(R_\Lambda-R_P\ll_{\mathcal O}NJ_{\mathcal O}/(\log N)^{6/5}\);
+if \(2G=0\), it gives \(P=\Lambda\) exactly.
+The finite local computation, prefix upper bound, summability and
+Haar normalization are given by
+\eqref{eq:norm-local-density-finite},
+\eqref{eq:norm-prefix-tail} and \eqref{eq:form-haar-strata}.
+They include all conductor-local factors in the principal case.
 \end{proof}
-
-At a conductor-divisible integer, different ideals of the same
-numerical norm can have different genera.  The existence quantifier
-in \eqref{eq:norm-shadow-ideals} avoids assigning a unique genus to
-such a value.
-
-\subsection{Orientation saturation and maximal subgroups}
-
-Write $h=|G|$ and $B=2G$. For every inverse pair
-$\{g,-g\}\subset G$ with $2g\ne0$, let
-$\Omega_g$ be the rational split primes outside $S$ whose two prime
-ideal classes are $g,-g$, and put
-\[
- m_g=\operatorname{ord}(2g)-1,\qquad
- k_g(n)=\#\{p\in\Omega_g:v_p(n)=1\}.
-\]
-These prime families are disjoint.  The fixed-discriminant prime-class
-estimate \cite[Lemma~2, equation~(5.2)]{bourgainfuchs} gives
-\begin{equation}\label{eq:norm-class-mertens}
- \sum_{\substack{p\le y\\p\in\Omega_g}}\frac1p
-                =\frac1h\log\log y+O_{\mathcal O}(1).
-\end{equation}
-The coefficient is $1/h$ for a nonambiguous inverse pair.  The source
-allows nonfundamental negative form discriminants.  For a fixed order
-its prime-counting error is $O_{\mathcal O}(x\exp(-c\sqrt{\log x}))$;
-partial summation gives the bounded remainder in
-\eqref{eq:norm-class-mertens}.
-
-Call the pair $\{g,-g\}$ saturated for $n$ if $k_g(n)\ge m_g$, and set
-\[
- B_n=\langle2g:\{g,-g\}\text{ is saturated for }n\rangle\le B.
-\]
-If $n\in\Lambda$ and $B_n=B$, then $n\in P$. To see this, start
-with a primitive ideal from \eqref{eq:norm-shadow-ideals}, whose class
-belongs to $B$. At a good split prime, primitivity puts the entire
-prime power in one conjugate prime ideal. From each saturated family
-reserve $m_g$ exponent-one factors, initially orienting each as $g$.
-This changes the ideal class only by an element of $B$, so its class
-still belongs to $B$. Reversing $j$ reserved orientations changes the
-class by $-2jg$, for $0\le j\le m_g$; these changes fill
-$\langle2g\rangle$. Families have disjoint prime support, so their
-choices are independent and their sums fill $B_n=B$. They therefore
-cancel the remaining class. The resulting ideal is principal and
-primitive, with the same numerical norm and every conductor-local
-ideal unchanged. Hence $n\in P$.
-
-Suppose $B\ne0$, and let $\mathcal H$ be its finite set of maximal
-proper subgroups. For $M\in\mathcal H$ define
-\[
- \begin{gathered}
- \ell_M=[B:M],\qquad
- \Omega_M=\bigcup_{\{g,-g\}:\,2g\notin M}\Omega_g,\\
- K_M=\sum_{\{g,-g\}:\,2g\notin M}(m_g-1),\qquad
- k_M(n)=\#\{p\in\Omega_M:v_p(n)=1\}.
- \end{gathered}
-\]
-Each inverse pair is counted once. Since $B$ is finite abelian,
-$B/M$ is cyclic of prime order $\ell_M$. If $n\in\Lambda\setminus P$,
-then $B_n$ is proper and lies in some $M\in\mathcal H$. Every pair
-with $2g\notin M$ is consequently deficient, giving
-\begin{equation}\label{eq:norm-deficiency}
- \Lambda\setminus P\subset
-     \bigcup_{M\in\mathcal H}\{n:k_M(n)\le K_M\}.
-\end{equation}
-If $2G=0$, Lemma~\ref{lem:norm-genus} already gives $P=\Lambda$.
-
-The doubling map $G\to B$ has equal fibres. Precisely
-$h(\ell_M-1)/\ell_M$ classes satisfy $2g\notin M$. None is
-ambiguous, since $2g\ne0$, so they form
-$h(\ell_M-1)/(2\ell_M)$ inverse pairs. Summing
-\eqref{eq:norm-class-mertens} over these disjoint families proves
-\begin{equation}\label{eq:norm-maximal-mertens}
- \sum_{\substack{p\le y\\p\in\Omega_M}}\frac1p
-     =d_M\log\log y+O_{\mathcal O}(1),\qquad
- d_M=\frac{\ell_M-1}{2\ell_M}\ge\frac14.
-\end{equation}
-Every prime divisor of $|B|$ occurs as the index of a maximal
-subgroup: in the corresponding primary component, reduce a cyclic
-factor modulo that prime. Thus $\min_{M\in\mathcal H}d_M=\eta_*(G)$.
-The proper-subgroup mechanism is classical in the exceptional-value
-argument of Bourgain--Fuchs
-\cite[Theorem 1, alternative (4.2), and Section 2, part (5)]{bourgainfuchs}.
-Here its use in \eqref{eq:norm-deficiency} makes an entire positive-density
-collection deficient on the binary line. For $G\simeq\Z/8\Z$ or
-$\Z/2\Z\times\Z/4\Z$ the threshold is $1/4$, while for
-$G\simeq(\Z/3\Z)^2$ it is $1/3$.
-
-\subsection{A sieve for the class error}
-
-We prove Proposition~\ref{prop:norm-class-error} directly on the line
-$a+(N-a)=N$. The case $B=0$ was settled above; assume $B\ne0$ and
-fix $M\in\mathcal H$. At every good inert prime $p$, both values must be units,
-so the forbidden residues of $a$ modulo $p$ are $0,N$, with
-$\nu_N(p)=2-\mathbf1_{p\mid N}$ roots.  At a marked prime
-$p\in\Omega_M$, forbid exactly $v_p(a)=1$: this removes the $p-1$
-residues $p,2p,\ldots,(p-1)p$ modulo $p^2$.  Its forbidden density is
-\[
- f_*(p)=\frac{p-1}{p^2}.
-\]
-Higher prime powers remain permitted, including when $p\mid N$.
-
-Here are the needed uniform sieve details.  Given any mark set
-$\mathcal M\subset\Omega_M\cap[1,y]$, use modulus $p$ at inert primes
-and $p^2$ at marked primes. All sieve indices below are squarefree
-and supported on the chosen inert and marked primes at most $y$.
-For such an index $d$, let
-$\ell(d)$ be the product of these moduli, $\nu(d)$ the product of
-the root counts, and $f(d)=\nu(d)/\ell(d)$.  Exact interval counting
-by the Chinese remainder theorem gives $Xf(d)+O(\nu(d))$ on an
-interval of length $X$.  In all cases $\nu(d)\le d$ and
-$0<f(p)\le2/p<1$.
-
-For $d\le z$ the Selberg quadratic majorant has main term $X/G(z)$,
-where
-\[
- w(d)=\prod_{p\mid d}\frac{f(p)}{1-f(p)},\qquad
- G(z)=\sum_{d\le z}\mu^2(d)w(d).
-\]
-To see the normalization, set $x_d=\lambda_df(d)$ and
-$y_u=\sum_{u\mid d}x_d$.  Then
-\[
- \sum_{d,e\le z}\lambda_d\lambda_e f([d,e])
-       =\sum_{u\le z}\frac{y_u^2}{w(u)},\qquad
- \lambda_1=\sum_{u\le z}\mu(u)y_u.
-\]
-The minimum with $\lambda_1=1$ is $1/G(z)$, attained at
-$y_u=\mu(u)w(u)/G(z)$.  Finite inversion gives
-\[
- \lambda_d=\mu(d)\prod_{p\mid d}(1-f(p))^{-1}
-       \frac{G_d(z/d)}{G(z)},\qquad
- G_d(v)=\sum_{\substack{e\le v\\(d,e)=1}}\mu^2(e)w(e).
-\]
-Uniformly in the mark set and target, $|\lambda_d|\ll_\epsilon d^\epsilon$.
-Since $\nu([d,e])\le de$, the total interval error is
-$O_\epsilon(z^{4+\epsilon})$.
-
-Take $y=z^{1/16}$.  The unrestricted Euler mass for the same prime
-indices is
-\[
- E(y)=\prod_{\substack{p\le y\\p\notin S,\,\chi(p)=-1}}
-                   (1-\nu_N(p)/p)^{-1}
-       \prod_{p\in\mathcal M}(1-f_*(p))^{-1}.
-\]
-In its normalized positive expansion, a prime is included with
-probability $f(p)$.  Therefore
-$\mathbb E\log d\le2\sum_{p\le y}(\log p)/p\le4\log y$
-for sufficiently large $y$.  Markov's inequality retains at least
-three quarters of the mass on $d\le z$, giving $G(z)\ge3E(y)/4$.
-Fixed quadratic-character prime number theory gives
-\[
- \prod_{\substack{p\le y\\p\notin S,\,\chi(p)=-1}}
-                 (1-\nu_N(p)/p)^{-1}
- =\frac{\displaystyle\prod_{p\le y,\,p\notin S,\,\chi(p)=-1}
-                           (1-2/p)^{-1}}
-        {\displaystyle\prod_{p\le y,\,p\mid N,\,p\notin S,\,\chi(p)=-1}
-                           (p-1)/(p-2)}
- \gg_{\mathcal O}\frac{\log y}{J_{\mathcal O}(N)}.
-\]
-Consequently, the number surviving the marked sieve is at most
-\begin{equation}\label{eq:norm-marked-sieve}
- \ll_{\mathcal O}
- \frac{XJ_{\mathcal O}(N)}{\log y}
-                \prod_{p\in\mathcal M}(1-f_*(p))
-                +O_\epsilon(z^{4+\epsilon}).
-\end{equation}
-This also holds without marked primes.  Only root counts and exact
-interval errors have been used, so the estimate is uniform in target
-valuations and root positions.
-
-Fix $M\in\mathcal H$. Independently mark each prime of
-$\Omega_M\cap[1,y]$ with probability $t\in(0,1)$. An integer with
-$k_M(a)\le K_M$ survives with probability at least $(1-t)^{K_M}$:
-its exponent-one factors below $y$ are at most its total such factors.
-This lower bound is a positive constant depending on the fixed order
-and $t$. On taking the finite expectation in
-\eqref{eq:norm-marked-sieve}, the marked factor becomes
-\[
- \prod_{\substack{p\le y\\p\in\Omega_M}}(1-tf_*(p))
-                 \ll_{\mathcal O,t}(\log y)^{-td_M},
-\]
-by \eqref{eq:norm-maximal-mertens}, since $f_*(p)=p^{-1}+O(p^{-2})$.
-Take $z=N^{1/10}$, $y=z^{1/16}$ and $\epsilon=1/2$.
-The number of pairs in $\Lambda^2$ whose first summand has
-$k_M(a)\le K_M$ is at most
-\[
- \ll_{\mathcal O,t}
- \frac{NJ_{\mathcal O}(N)}{(\log N)^{1+td_M}}+N^{9/20}.
-\]
-Given $\eta<\eta_*(G)$, choose $t\in(0,1)$ with
-$\eta<t\eta_*(G)$. The choice works for every $M\in\mathcal H$.
-Charge a pair in $\Lambda^2\setminus P^2$ to a deficient summand and
-then to a maximal subgroup in \eqref{eq:norm-deficiency}. Summing
-the finitely many subgroups and both orientations proves
-\eqref{eq:norm-class-error}; the power error is absorbed since
-$J_{\mathcal O}(N)\ge1$. Increasing the constant covers all $N\ge3$.
-For the uniform choice $\eta=1/5$, one can take $t=9/10$, because
-$td_M\ge9/40>1/5$. This argument uses only the existing fixed-order
-prime-class estimate, CRT and the finite upper sieve, independently
-of the recent zero-free and graph theorems.
-The use of $t<1$ explains the strict range $\eta<\eta_*(G)$;
-no endpoint or optimality assertion is made.
-
-\subsection{Local value filters and the leading term}
-
-The bad local value sets admit an exact finite computation, even when
-a split conductor prime permits unbounded valuations.  Write
-$Q(x,y)=x^2+bxy+cy^2$, put $t_p=v_p(\Delta)$ and $e_p=2t_p+1$.
-At a primitive vector $v$, the identity
-\[
- \operatorname{adj}(\operatorname{Hess}Q)\nabla Q(v)=-\Delta v
-\]
-shows that some partial derivative has valuation $s\le t_p$.
-For a target congruent to $Q(v)$ modulo $p^{e_p}$, strong
-one-variable Hensel lifting in that coordinate applies because
-$e_p>2s$.  The lifted vector stays primitive.  Hence $\mathscr V_p$
-is a union of full cosets modulo $p^{e_p}$, obtained by enumerating
-primitive vectors modulo that modulus.  In particular,
-\begin{equation}\label{eq:norm-local-density-finite}
- d_p(N)=\frac1{p^{e_p}}
-       \#\{a\bmod p^{e_p}:a,N-a\in\mathscr V_p\bmod p^{e_p}\}.
-\end{equation}
-Outside $S$, the primitive value set is all of $\Z_p$ at a split prime
-and $\Z_p^\times$ at an inert prime.  Since these primes are odd,
-every local target is a sum of two such values.  Thus local
-admissibility is exactly $d_p(N)>0$ for all $p\in S$, a finite
-congruence criterion.  The product of the bad densities has a positive
-minimum over admissible targets.
-
-Put
-\[
- L=8\prod_{\substack{p\in S\\p\text{ odd}}}p,\qquad
- \alpha=\frac{\varphi(L)}L,\qquad
- H=\ker(\chi\bmod L),\qquad
- \mathcal C=\langle p:p\notin S,\ \chi(p)=1\rangle.
-\]
-For every $S$-supported positive integer $r$, define
-\[
- A_r=\{u\in(\Z/L\Z)^\times:
-                         ru\in\mathscr V_p\text{ for every }p\in S\}.
-\]
-This is well defined.  Equal unit residues modulo an odd $p$, or
-modulo eight at two, differ by a local unit square; multiplication
-of an order element by a rational unit preserves primitivity and
-multiplies its norm by that square.  Consequently $A_r$ is a union
-of unit-square states.  Moreover $A_r\subset H$: writing
-$\lambda_p(x)=(x,D)_p$, membership implies
-$\lambda_p(u)=\lambda_p(r)$ at every bad prime.  Reciprocity for the
-positive $S$-supported rational number $r$ gives
-$\prod_{p\in S}\lambda_p(r)=1$, whereas
-$\prod_{p\in S}\lambda_p(u)=\chi(u)$.
-
-The exact, disjoint decomposition of the local shadow is
-\begin{equation}\label{eq:norm-prefix-decomposition}
- \Lambda=\coprod_{r\in\langle S\rangle}
-        r\{x\in\mathcal C:x\bmod L\in A_r\}.
-\end{equation}
-Indeed, primitive norms outside $S$ have no inert prime factor;
-at a good split prime every nonnegative valuation is permitted.
-
-Let $c_{\mathcal C}$ denote the Gamma-normalized marginal constant
-of this core.  Its Euler series satisfies
-\[
- \left(\sum_{n\in\mathcal C}n^{-s}\right)^2
-  =\zeta(s)L(s,\chi)
-      \prod_{p\in S}(1-p^{-s})(1-\chi(p)p^{-s})
-      \prod_{\substack{p\notin S\\\chi(p)=-1}}(1-p^{-2s}),
-\]
-so
-\begin{equation}\label{eq:norm-core-constant}
- c_{\mathcal C}^2=\frac{L(1,\chi)}\pi
-       \prod_{p\in S}(1-p^{-1})(1-\chi(p)p^{-1})
-       \prod_{\substack{p\notin S\\\chi(p)=-1}}(1-p^{-2}).
-\end{equation}
-Also put
-\[
- C_{\rm in}=\prod_{\substack{p\notin S\\\chi(p)=-1}}
-                         \left(1-\frac1{(p-1)^2}\right).
-\]
-
-Fix two prefixes $r,s\in\langle S\rangle$.  Set $g=(r,s)$,
-$A=r/g$, $B=s/g$, and, when $g\mid N$, $M=N/g$.  Define
-\[
- \Gamma_{r,s}(N)=\frac L{|H|^2}
-      \#\{(u,v)\in A_r\times A_s:Au+Bv=M\bmod L\},
-\]
-and set it to zero when $g\nmid N$.
-
-\begin{proof}[Proof of Theorem~\ref{thm:norm-order}]
-A finite collection of these profiles covers every locally admissible
-target.  To see this, put
-$Z=\prod_{p\in S}p^{e_p+1}$, with $e_p=2v_p(\Delta)+1$ as above.
-For local summands $a+b=N$, replace them by
-$a+p^{e_p}u,b-p^{e_p}u$.  They remain in their full value cosets.
-A valuation below $e_p$ stays fixed; otherwise at most one residue of
-$u\bmod p^2$ would make that summand divisible by $p^{e_p+2}$.
-Avoiding at most two residues is possible since $p^2>2$.  Thus both
-summands can be chosen nonzero with valuations at most $e_p+1$.
-
-Their exact valuations choose $r,s\mid Z$.  Their unit quotients at
-all bad primes assemble by the Chinese remainder theorem into a pair
-counted by $\Gamma_{r,s}(N)$.  The reciprocal-symbol argument above
-puts these quotients in $H$ and hence in $A_r,A_s$.  Conversely, a
-positive finite root lifts to an exact linear solution over each bad
-$\Z_p$, preserving unit-square states, since at least one of $A,B$
-is a unit.  Outside $S$ every target is already a sum of two primitive
-local norm values.  We have proved
-\[
- N\text{ locally admissible}\quad\Longleftrightarrow\quad
-       \Gamma_{r,s}(N)>0\text{ for some }r,s\mid Z.
-\]
-There are only finitely many such profiles.  The older-input estimate
-of Lemma~\ref{lem:older-quadratic-filter} supplies
-$\gg_{\mathcal O} MJ_{\mathcal O}(M)/\log M$ core value pairs in
-one positive profile.  Multiplying the values by $r,s$ is injective,
-and $J_{\mathcal O}(M)=J_{\mathcal O}(N)$ because $g$ is supported on
-$S$.  The finite minimum of the positive constants and maximum of their
-thresholds therefore give
-$R_\Lambda(N)\gg_{\mathcal O}NJ_{\mathcal O}(N)/\log N$ uniformly.
-
-For the matching upper bound, sieve the original line $a+b=N$ only
-at the good inert primes, discarding all bad local restrictions.
-The unmarked estimate \eqref{eq:norm-marked-sieve} gives
-$R_\Lambda(N)\ll_{\mathcal O}NJ_{\mathcal O}(N)/\log N$.
-Proposition~\ref{prop:norm-class-error} is smaller than the lower bound
-by a positive power of $\log N$; it transfers that lower bound to
-$R_P(N)$.  This proves the theorem entirely from the older route.
-\end{proof}
-
-We now use the new input to evaluate the leading coefficient.
-Theorem~\ref{thm:general} applies with the coprime fixed
-$L$-supported coefficients $A,B$.
-The contribution of this prefix pair, divided by
-$NJ_{\mathcal O}(N)/\log N$, is therefore
-\begin{equation}\label{eq:norm-prefix-main}
- c_{\mathcal C}^2C_{\rm in}\Gamma_{r,s}(N)\frac g{rs}+o(1).
-\end{equation}
-The original filters $A_r,A_s$ remain after dividing by $g$.
-Also $J_{\mathcal O}(N/g)=J_{\mathcal O}(N)$.
-
-To sum these fixed-prefix asymptotics, we need a uniform upper bound
-for the remaining prefixes.  The line $rx+sy=N$ has a parameter
-interval of length at most $Ng/(rs)$.  At every good inert prime
-both coefficients in its parameterization are units; its two
-forbidden roots coincide exactly when the prime divides $N$.
-The unmarked argument of \eqref{eq:norm-marked-sieve}, with
-$z=N^{1/10}$, therefore gives
-\begin{equation}\label{eq:norm-prefix-tail}
- R_{r,s}(N)\ll_{\mathcal O}
-       \frac{NgJ_{\mathcal O}(N)}{rs\log N}+O(N^{9/20}),
-\end{equation}
-uniformly in $r,s$; the residue filters may be discarded for this
-upper bound.  The interval error also covers intervals shorter than
-the sieve level.  Only $O_{\mathcal O}((1+\log N)^{2|S|})$ prefix
-pairs can occur, and
-\[
- \sum_{r,s\in\langle S\rangle}\frac{(r,s)}{rs}
-   =\prod_{p\in S}\sum_{i,j\ge0}p^{-\max(i,j)}
-   =\prod_{p\in S}\frac{1+p^{-1}}{(1-p^{-1})^2}<\infty.
-\]
-Thus the contribution beyond any fixed prefix bound is uniformly
-small relative to $NJ_{\mathcal O}(N)/\log N$, after that bound tends
-to infinity.  The sum of the interval errors is negligible.  This
-justifies a finite-prefix limit followed by a summable-tail limit;
-no uniform binary asymptotic for growing coefficients is presumed.
-
-It remains to identify the summed coefficient.  Partition the local
-Haar line $a+b=N$ by the exact bad-prime valuation prefixes $r,s$.
-The stratum for this pair has measure
-\[
- \frac g{Lrs}
-       \#\{(u,v)\in A_r\times A_s:Au+Bv=M\bmod L\}
-   =\frac{\alpha^2}{4}\Gamma_{r,s}(N)\frac g{rs}.
-\]
-Prime by prime, this follows by scaling out the common valuation;
-one of $A,B$ is a unit, so each unit-pair root has a unique linear
-lift.  Zero values have Haar measure zero.  Summing the disjoint
-strata gives the exact identity
-\begin{equation}\label{eq:norm-haar-strata}
- \sum_{r,s}\Gamma_{r,s}(N)\frac g{rs}
-       =\frac4{\alpha^2}\prod_{p\in S}d_p(N).
-\end{equation}
-Combining \eqref{eq:norm-prefix-main}--\eqref{eq:norm-haar-strata}
-proves, uniformly on admissible targets,
-\[
- R_\Lambda(N)\sim
- \frac{4c_{\mathcal C}^2}{\alpha^2}
-       \left(\prod_{p\in S}d_p(N)\right)C_{\rm in}
-                      J_{\mathcal O}(N)\frac N{\log N}.
-\]
-The positive minimum of the finite local factors and
-Proposition~\ref{prop:norm-class-error} transfer this to $R_P$.
-Finally, \eqref{eq:norm-core-constant} and
-\[
- (1-p^{-2})\left(1-\frac1{(p-1)^2}\right)
-                  =1-\frac2{p(p-1)}
-\]
-give \eqref{eq:norm-coefficient}, proving
-Theorem~\ref{thm:norm-leading}.
 
 \begin{remark}[Gaussian normalization]
 For $\mathcal O=\Z[i]$ one has $P=C_4\sqcup2C_4$ and

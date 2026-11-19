@@ -1,0 +1,261 @@
+\section{Reflected targets and exact rational grids}\label{sec:reflected-comparison}
+
+This branch treats a displacement equal to the target. Unlike the
+fixed-shift windows in Section~\ref{sec:fixed-shift-comparison}, its
+rational denominators contain that target. We prove the residue-energy
+estimate with those denominators retained.
+
+\subsection{The exact target-grid energy}
+
+
+Let \(\mathcal P_y=\{p:p\le y\}\), \(y=\exp(L^{2/5})\), and
+\(E_0=\exp(\sqrt L)\), as in Section~\ref{sec:comparison}.
+The endpoint \(F\) is the centered function in \eqref{eq:gr-energy-F}.
+
+\begin{proposition}[Target-grid residue energy]\label{prop:gr-energy}
+Suppose that
+\begin{equation}
+       q\le xL^B,\qquad
+       \frac{Y}{qP_{\max}}\gg_A L^A
+                       \quad\text{for every fixed }A,
+ \label{eq:gr-energy-ratio}
+\end{equation}
+where \(P_{\max}\le\exp(CL^{1/4})\) is the selected small-bank scale.
+For every prescribed \(D>0\), a fixed sufficiently deep density model
+gives
+\begin{equation}
+ E_q(F):=\sum_{a\bmod q}\left|
+           \sum_{n\equiv a\ (q)}F(n)\right|^2
+                      \ll_D\frac{Y^2}{q}L^{-D}.       \label{eq:gr-energy}
+\end{equation}
+The estimate is uniform in all valuations of \(q\).
+It also holds with \(F(n)\) multiplied by \(\ee{\beta n}\)
+when \(|\beta|Y\) is bounded by a fixed power of \(L\).
+\end{proposition}
+
+\begin{proof}
+Refine to \(Q=\lcm(q,L_0)\).
+Cauchy--Schwarz on the refined classes gives
+\(E_q(F)\le(Q/q)E_Q(F)\le L_0E_Q(F)\).
+For every gcd profile \(d\mid Q\), put \(r=Q/d\).
+Multiplicative orthogonality gives the exact identity
+\begin{equation}
+ E_Q(F)=\sum_{d\mid Q}\frac1{\varphi(r)}
+       \sum_{\chi\bmod r}\left|\sum_m F(dm)\chi(m)\right|^2.
+ \label{eq:gr-gcdidentity}
+\end{equation}
+The character zeros impose \((m,r)=1\), so this identity retains
+prime powers, including primes dividing \(L_0\). We do not assume
+that the endpoint is prime to \(L_0\). Call a character exceptional
+when its primitive inducing character has conductor dividing \(L_0\).
+There are only a fixed number of such characters for each \(r\).
+In particular \(L_0\mid r\) is not required.
+
+We first identify the negligible sets in the norm actually needed.
+For a set \(\mathcal B\) and \(|G|\le L^C\), Cauchy--Schwarz in each
+residue class gives
+\begin{equation}
+ E_Q(G\1_{\mathcal B})
+ \le(1+CY/Q)\sum_{n\asymp Y}|G(n)|^2\1_{\mathcal B}(n).
+ \label{eq:gr-tail-energy}
+\end{equation}
+The factor is \(O(Y/Q)\) here.
+The following populations are exponentially small relative to \(Y\),
+up to fixed logarithmic factors:
+\begin{equation}
+ \begin{array}{ll}
+ n_{\mathcal P_y}>E_0:& O(YL^C e^{-cL^{1/10}}),\\
+ p\mid n,\ p\mid Q,\ p>y:& O(YL/y),\\
+ p\mid n,\ p\mid Q,\ p\text{ in the selected bank}:&
+                  O(YL/P_{\min}),\\
+ p^2\mid n,\ p\text{ in the selected bank}:&
+                  O(Y/P_{\min}).
+ \end{array}                                                       \label{eq:gr-tailsets}
+\end{equation}
+For the first bound, take \(a=c/\log y\). Counting multiples of
+each possible smooth record gives
+\[
+ \#\{n\le CY:n_{\mathcal P_y}>E_0\}
+ \le CY E_0^{-a}\prod_{p\le y}(1-p^{a-1})^{-1}
+                 \ll YL^C e^{-cL^{1/10}}.
+\]
+This estimate uses no property of the indicators. The other bounds
+follow by counting multiples,
+using \(P_{\min}\ge\exp(cL^{1/8})\).
+Thus all these sets are negligible in \eqref{eq:gr-tail-energy}.
+
+For nonexceptional characters remove only selected primes dividing
+\(Q\) and selected-prime squares.  Do not yet impose \(n_{\mathcal P_y}\le E_0\),
+as that would couple the extracted prime to its cofactor.
+The unique selected small-bank prime gives \(n=dpm\).
+On a dyadic prime interval \(p\asymp P\), exact dilation invariance
+and the independence of \(b\) from this slot make its remaining
+coefficient \(\gamma_d(m)\) independent of \(p\), with
+\(|\gamma_d(m)|\le L^C\).
+It includes the condition that \(m\) has no other selected-bank prime,
+and every other bank weight.  Its containing length is
+\(M\asymp Y/(dP)\).
+Mellin inversion of the product cutoff separates the character sum as
+an integral of
+\begin{equation}
+ A_\chi(t)B_{d,\chi}(t),\qquad
+ A_\chi(t)=\sum_{p\asymp P,\ p\in\mathcal P_g}\chi(p)p^{it},
+ \quad
+ B_{d,\chi}(t)=\sum_{m\asymp M}\gamma_d(m)\chi(m)m^{it}.
+ \label{eq:gr-primefactorization}
+\end{equation}
+The omitted Mellin scaling has modulus one.
+The transform has polynomial-logarithmic weighted \(L^1\) norm,
+including weight \(1+|t|\).
+Condition \eqref{eq:gr-energy-ratio} gives
+\[
+                       M/r\asymp Y/(QP)\gg1,
+\]
+independently of \(d\).
+Elementary character orthogonality therefore yields
+\begin{equation}
+ \frac1{\varphi(r)}\sum_{\chi\bmod r}|B_{d,\chi}(t)|^2
+ \le(1+CM/r)\sum_{m\asymp M}|\gamma_d(m)|^2
+                  \ll \frac{M^2}{r}L^C.             \label{eq:gr-cofactorenergy}
+\end{equation}
+Apply Lemma~\ref{lem:gr-primes} to \(A_\chi\) and Minkowski to the
+integral in \eqref{eq:gr-primefactorization}.
+Its nonexceptional energy at profile \(d\) is
+\begin{equation}
+ \ll \frac{Y^2}{Qd}L^C\exp(-cL^{1/8}).               \label{eq:gr-nonexceptional}
+\end{equation}
+The prime dyadic decomposition costs only a fixed power of \(L\).
+Summing \(d\) is harmless because
+\(\sum_{d\mid Q}1/d\le Q/\varphi(Q)\ll\log\log(3Q)\).
+There is no number-of-characters or unweighted divisor-count loss.
+
+For exceptional characters use the further restriction
+\(n_{\mathcal P_y}=A\le E_0\), and remove \(Q\)-prime divisors above \(y\).
+The errors were already controlled in energy.
+Now the gcd profile is determined by the smooth record:
+\(\gcd(A,Q)=d\), \(n=Av\), \((v,S)=1\).
+If \(\chi^*\) is the primitive character inducing an exceptional
+\(\chi\bmod r\), then on the retained profile
+\[
+             \chi(n/d)=\chi^*(A/d)\chi^*(v).
+\]
+Indeed \(\operatorname{cond}\chi^*\mid r\) and
+\((A/d,r)=1\). One must use \(\chi^*\) here: a literal character
+modulo \(L_0\) could vanish on a retained bad-prime prefix.
+Every other list weight depends only on \(A\), is bounded by \(L^C\),
+and the remaining periodic test in \(v\) has fixed period \(L_0\).
+The one-variable hypothesis must center this full periodic test;
+matching only a scalar principal mean would not suffice.
+
+There is still the condition that \(v\) avoid primes \(p\mid Q\)
+above \(y\).  Remove it before applying the fixed-period centering
+lemma, extending the same bounded periodic test to those new points.
+At each retained record, multiples of such \(p\) number at most
+\(CY/(Ap)\) on the containing interval \(0<v\le CY/A\).
+Consequently the change in the profile sum is at most
+\begin{equation}
+ L^CY\sum_{\substack{A\ \mathcal P_y\text{-smooth}\\d\mid A}}\frac1A
+                \sum_{\substack{p\mid Q\\p>y}}\frac1p
+ \le \frac{Y}{d}L^CV_y^{-1}\frac{\log Q}{y\log y}
+ \ll_D (Y/d)L^{-D}.                                  \label{eq:gr-avoidance}
+\end{equation}
+We used the exact harmonic identity
+\begin{equation}
+ \sum_{\substack{A\ \mathcal P_y\text{-smooth}\\d\mid A}}\frac1A
+                       =\frac1{dV_y}                 \label{eq:gr-record-harmonic}
+\end{equation}
+when \(d\) is \(\mathcal P_y\)-smooth; otherwise this restricted profile is empty.
+
+After this extension, hypothesis \textup{(C3)} applies record by
+record at length \(Y/A\).
+It permits arbitrary bounded fixed-period tests, arbitrary choices
+of retained records, and the stated smooth phases.
+Choose its logarithmic accuracy after the list and cutoff costs.
+Using \eqref{eq:gr-record-harmonic} gives, for every prescribed \(D_0\),
+\begin{equation}
+            \left|\sum_mF_{\rm good}(dm)\chi(m)\right|
+                         \ll (Y/d)L^{-D_0}.          \label{eq:gr-exceptional}
+\end{equation}
+Restoring the avoidance condition costs \eqref{eq:gr-avoidance}.
+In \eqref{eq:gr-gcdidentity} the total exceptional contribution is at most
+\begin{equation}
+ \frac{Y^2}{Q}L^{-2D_0}
+           \sum_{d\mid Q}\frac1d\,\frac{Q/d}{\varphi(Q/d)}
+                     \ll \frac{Y^2}{Q}L^{-2D_0+C}.   \label{eq:gr-exceptionalenergy}
+\end{equation}
+Choose \(D_0\) large, add the negligible sets, and use the refinement
+inequality to prove \eqref{eq:gr-energy}.
+Multiplying the cutoff by \(\ee{\beta Yu}\) changes only its fixed
+logarithmic derivative bounds when \(|\beta|Y\le L^B\), proving the
+last assertion.
+\end{proof}
+
+This proof uses only boundedness, exact prime invariance, and the
+recordwise periodic means in \textup{(C1)--(C3)}. In particular no
+subgroup support, pole order, positivity of an individual character
+branch, or unit-support condition at the fixed modulus enters the
+energy estimate.
+
+\subsection{From target-grid energy to comparison cancellation}
+
+Specialize the common Fourier reduction of
+Section~\ref{sec:prime-estimates} to the reflected family \(k=T=x\).
+Use the product scales \(U_i\) and \(Y=xU_1U_2\) from that reduction.
+Choose an outer cutoff \(B_{\rm out}\), after the finite comparison
+family has been fixed.
+Dirichlet approximation with denominator ceiling
+\(U_1U_2/L^{B_{\rm out}-1}\) makes the multiplier smaller than any
+requested inverse logarithmic power unless \(T\theta\) lies within
+\(L^{B_{\rm out}}/(U_1U_2)\) of a rational of denominator
+\(r\le L^{B_{\rm out}}\).
+The corresponding physical frequencies are covered by grids
+of denominator \(q=Tr\), with widths
+\(O(L^{B_{\rm out}}/(TU_1U_2))=O(L^{B_{\rm out}}/Y)\).
+Moreover
+\[
+ \frac{Y}{qP_{\max}}
+ \gg \exp(cL^{1/3}-CL^{1/4})L^{-B_{\rm out}},
+\]
+so \eqref{eq:gr-energy-ratio} holds uniformly in every gcd profile.
+
+Discrete additive Parseval gives the exact normalization
+\begin{equation}
+ \sum_{j\bmod q}|\widehat F(j/q+\beta)|^2
+                         =qE_q(F\ee{\beta n}).        \label{eq:gr-gridparseval}
+\end{equation}
+Integrating over width \(L^{B_{\rm out}}/Y\) and applying
+Proposition~\ref{prop:gr-energy} gives \(YL^{-D}\) for every desired
+\(D\), after demanding a larger residue-energy saving.
+The polynomial-logarithmic family of \(r\)'s is paid at the same step.
+In particular the \(T\) grid points do not create a factor \(T\):
+they are already included in \eqref{eq:gr-gridparseval}.
+Cauchy--Schwarz and Parseval on the other endpoint bound
+\eqref{eq:gr-fouriercomparison} on these grids by an arbitrary inverse
+power of \(L\).  Off the grids, use
+\eqref{eq:gr-multiplier} and the endpoint norms.
+This proves that every comparison in \eqref{eq:gr-comparison} is
+negligible to the requested logarithmic accuracy.
+
+Finally \(\Psi(t)=t\Phi(t)\) makes
+\[
+               \frac{\Psi(|w|/x)}{|w|}
+                       =\frac{\Phi(|w|/x)}x.
+\]
+Thus the harmonic raw correlation is \(1/x\) times the ordinary
+banked correlation on the reflected line.
+The comparison at scale \(Y\) has exactly the corresponding factor
+\(1/Y\).  Paying the finite comparison coefficients therefore proves
+the centered banked replacement required in the assembly.
+
+Fixed bad-supported coefficients in \(Aa+Bb=T\) cause no new
+analytic condition.  Embed, for example,
+\(\widetilde F(n)=\1_{A\mid n}F(n/A)\).
+Its exact residue energy is
+\[
+                  E_q(\widetilde F)=E_{q/(q,A)}(F),
+\]
+and its core length is divided by the fixed \(A\).
+All energy ratios change only by fixed factors.
+Bank primes are units at \(A,B\), so dilation invariance and
+shared-label removal persist.  This embedding also avoids treating
+the physical summands as units modulo \(L_0\) when they are not.

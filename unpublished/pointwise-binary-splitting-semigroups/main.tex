@@ -3,10 +3,11 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
 \usepackage{mathrsfs}
+\usepackage{array}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue,breaklinks=true]{hyperref}
 \usepackage{bookmark}
-\hypersetup{pdftitle={Pointwise Binary Correlations in Abelian Splitting Semigroups},pdfauthor={Roy van Rijn}}
+\hypersetup{pdftitle={Pointwise Correlations of Quadratic Form Values and Splitting Semigroups},pdfauthor={Roy van Rijn}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -33,55 +34,60 @@
 \newcommand{\ee}[1]{e^{2\pi i #1}}
 \allowdisplaybreaks[2]
 \setlength{\emergencystretch}{1.5em}
-\title{Pointwise Binary Correlations in Abelian Splitting Semigroups}
+\title{Pointwise Correlations of Quadratic Form Values\\
+and Splitting Semigroups}
 \author{Roy van Rijn}
 \date{}
 \begin{document}
 \maketitle
 \begin{abstract}
-We establish the fixed-shift pair asymptotics predicted by Smilansky
-for the ordinary values of \(x^2+dy^2\), \(d=1,2,3,4,7\).
-In particular, \(X/(2\log X)\) is the asymptotic number of
-\(n\le X\) for which both \(n\) and \(n+1\) are sums of two squares.
-Every sufficiently large integer congruent to two modulo twelve is a
-sum of two positive integers supported on primes congruent to one modulo
-twelve. We give an explicit representation asymptotic of order
-\(N/(\log N)^{3/2}\). Every sufficiently large even integer is likewise
-a sum of two integers supported on primes congruent to three modulo four,
-with an explicit asymptotic of order \(N/\log N\).
-These results count numerical values once.
-The semigroup results belong to a pointwise binary theorem for two fixed
-abelian subgroup restrictions and for unfiltered self-sums of a fixed
-prime coset. It gives explicit arithmetic factors, a positive logarithmic
-saving, and an exact criterion for eventual representability.
-Following Walsh's proposed indicator extension of his multiplicative-invariance
-strategy, we supply the arithmetic models and local factors, together with
-a uniform reflected-target argument. The proof uses the recent zero-free
-and weighted-dilation theorems of OpenAI. A shared
-indicator-to-model comparison separates one-variable distribution and
-positive sieve bounds from the reflected and fixed-shift frequency arguments;
-the model retains every surviving congruence character.
-For primitive positive definite binary forms, we also count their distinct
-values at coprime coordinates. Replacing either form within its genus
-preserves the leading binary count, with no class-number divisor.
-Classical inputs give quantitative genus comparison and order bounds;
-the recent inputs give explicit mixed leading terms, also for two fixed
-conductors in one imaginary quadratic field. The class-error saving is
-independent of the class number. The full classical core argument is
-given in an appendix.
+Under the stated analytic inputs, we establish the fixed-shift pair
+asymptotics predicted by Smilansky for the ordinary values of
+\(x^2+dy^2\), \(d=1,2,3,4,7\).
+In particular, the number of \(n\le X\) for which both \(n\) and
+\(n+1\) are sums of two squares is asymptotic to \(X/(2\log X)\).
+For primitive positive definite binary forms of fixed discriminants
+\(\Delta_i=f_i^2D\) sharing one negative fundamental discriminant \(D\),
+we count values admitting coprime coordinates. Replacing either form
+within its respective genus preserves the leading binary count, with
+a relative logarithmic saving through an independent classical route.
+Under the recent analytic inputs we give an explicit mixed leading term
+with relative \(o(1)\), including different fixed conductors in that
+one field, and no class-number divisor.
+The central mechanism is a shared comparison between sparse indicators
+and arithmetic models retaining every surviving congruence character.
+Following Walsh's proposed indicator extension, we supply the models,
+local factors and a uniform reflected-target argument, using the recent
+zero-free and weighted-dilation theorems of OpenAI.
+Applications to fixed subgroup restrictions and prime-coset self-sums
+give target-uniform asymptotics with logarithmic savings and exact
+eventual congruence criteria. They include prime support \(1\pmod{12}\)
+on targets \(2\pmod{12}\) and prime support \(3\pmod4\) on even targets.
+All counts concern numerical values without coordinate or ideal multiplicities.
 \end{abstract}
 \input{introduction}
-\input{theorems}
-\input{inputs}
+\setcounter{tocdepth}{1}
+\begingroup\small
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{0em}{2em}}
+\makeatother
+\tableofcontents
+\endgroup
 \input{comparison}
+\input{inputs}
 \input{graph}
+\input{prime-estimates}
 \input{fixed-shift-comparison}
+\input{reflected-comparison}
 \input{assembly}
+\input{model-preparation}
+\input{quadratic-pairs}
+\section{Splitting semigroups and prime cosets}\label{sec:semigroup-apps}
+\input{theorems}
 \input{model}
 \input{cosets}
-\input{norms}
 \input{forms}
-\input{quadratic-pairs}
+\input{norms}
 \input{consequences}
 \appendix
 \input{older-norm-route}

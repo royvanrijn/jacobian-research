@@ -1,9 +1,11 @@
 \section{Primitive forms and invariance within a genus}\label{sec:forms}
 
-The principal class is not special for value counting. The orientation
-choices used in Section~\ref{sec:norms} fill a compatible coset of
-\(2\operatorname{Pic}(\mathcal O)\), rather than only the principal
-class. We first make this precise for one discriminant.
+For primitive forms in one imaginary quadratic field, the local value
+sets determine the leading binary count. The ideal class of a form
+affects only a smaller error: sufficiently many split prime factors
+allow independent orientation choices to fill its compatible genus.
+We state the general form results before treating the principal norm
+form as a specialization in Section~\ref{sec:norms}.
 
 Let \(\Delta=f^2D<0\), with \(D\) fundamental, and put
 \(\mathcal O=\Z+f\mathcal O_K\), \(K=\Q(\sqrt D)\),
@@ -34,8 +36,17 @@ Put \(S=\{p:p\mid2\Delta\}\), \(\chi=\chi_D\), and
 \]
 For a pair \(Q_1,Q_2\), a target is locally admissible if
 \(N\in\mathscr V_{p,Q_1}+\mathscr V_{p,Q_2}\) for every \(p\).
-Set \(\eta_*(G)=+\infty\) when \(2G=0\); otherwise use the
-prime-divisor threshold in Proposition~\ref{prop:norm-class-error}.
+For any finite abelian class group \(G\), put
+\[
+ \eta_*(G)=
+ \begin{cases}
+ +\infty,&2G=0,\\
+ \displaystyle\min_{\substack{\ell\mid |2G|\\\ell\ {\rm prime}}}
+                  \frac{\ell-1}{2\ell},&2G\ne0.
+ \end{cases}
+\]
+The strict saving range \(0<\eta<\eta_*(G)\) will follow from
+the maximal-subgroup cover below.
 
 \begin{theorem}[Classical genus invariance]\label{thm:genus-binary-invariance}
 Suppose \(Q_i,Q'_i\) are in the same genus for each \(i=1,2\).
@@ -86,9 +97,114 @@ representations by ideals or coordinates. A saturated value can be
 represented by every class in each compatible genus. Selecting one
 class therefore does not take a fixed fraction of a disjoint partition.
 
+\begin{corollary}\label{cor:common-field-form-pairs}
+Fix an imaginary quadratic field of fundamental discriminant \(D\),
+two orders \(\mathcal O_i=\Z+f_i\mathcal O_K\) of discriminants
+\(\Delta_i=f_i^2D\), and primitive positive definite forms \(Q_i\) of discriminants \(\Delta_i\). Put
+\[
+ S=\{p:p\mid2\Delta_1\Delta_2\},\qquad
+ J_S(N)=\prod_{\substack{p\mid N\\p\notin S,\ \chi_D(p)=-1}}
+                       \frac{p-1}{p-2}.
+\]
+The mixed classical order bounds hold on sufficiently large locally
+admissible targets. Under the inputs of Section~\ref{sec:inputs},
+\[
+ R_{Q_1,Q_2}(N)\sim
+ \mathfrak b_{D,S}\left(\prod_{p\in S}d_{p;1,2}(N)\right)
+                         J_S(N)\frac N{\log N}.
+\]
+If each \(Q'_i\) is in the genus of \(Q_i\), then, independently
+of those recent inputs, the classical comparison is
+\[
+ R_{Q_1,Q_2}(N)=R_{Q'_1,Q'_2}(N)
+                         \left(1+O((\log N)^{-\eta})\right)
+\]
+for every
+\(0<\eta<\min_i\eta_*(\operatorname{Pic}(\mathcal O_i))\), on
+sufficiently large common locally admissible targets. If both doubled
+class groups vanish the counts agree exactly; \(\eta=1/5\) is
+otherwise a common permissible exponent. All data remain fixed.
+\end{corollary}
+
+The same-discriminant theorems are special cases of a common proof for
+the two orders in Corollary~\ref{cor:common-field-form-pairs}. Throughout
+the proof, let \(\mathcal O_i=\Z+f_i\mathcal O_K\),
+\(G_i=\operatorname{Pic}(\mathcal O_i)\), and use its common set \(S\)
+and factor \(J_S(N)\). The local densities are always the two separate
+value densities
+\[
+ d_{p;1,2}(N)=\int_{\Z_p}
+       \1_{\mathscr V_{p,Q_1}}(a)\1_{\mathscr V_{p,Q_2}}(N-a)\,da.
+\]
+All constants may depend on the fixed pair of forms, denoted
+\(\mathcal F=(Q_1,Q_2)\). No ideals from different orders will be
+multiplied, and no distribution theorem for joint classes in the two
+orders is used.
+
+\subsection{Proper ideals and the genus map}
+
+Fix either order temporarily, write it as \(\mathcal O\), and put
+\(G=\operatorname{Pic}(\mathcal O)\). The set \(S\) may contain
+additional primes besides those dividing \(2\operatorname{disc}\mathcal O\).
+We use proper invertible ideals of the order.  If $I$ is an invertible
+fractional ideal, write $I_p=i_p\mathcal O_p$ and let $n(I)>0$ be its
+covolume norm.  Local determinants give
+\begin{equation}\label{eq:norm-ideal-identities}
+ v_p(n(I))=v_p(\operatorname N(i_p)),\qquad
+ n(IJ)=n(I)n(J),\qquad I\overline I=n(I)\mathcal O.
+\end{equation}
+These statements hold at conductor primes as well.  Call an integral
+ideal primitive if it is not contained in $p\mathcal O$ for any rational
+prime $p$.  Finitely many prescribed locally principal lattices, equal
+to $\mathcal O_p$ elsewhere, glue to an invertible fractional ideal:
+place them between $m\mathcal O_p$ and $m^{-1}\mathcal O_p$, glue the
+residue submodules by the Chinese remainder theorem, and glue their
+inverses in the same way.
+
+The following principal-genus statement is classical for arbitrary
+orders; compare \cite[Appendix~A, Proposition~A.1]{khayutin}.  We give
+the norm argument because retaining conductor-local ideal types is
+necessary here.
+
+\begin{lemma}\label{lem:norm-genus}
+Put $U_p=\operatorname N(\mathcal O_p^\times)$.  The homomorphism
+\[
+ \Theta:G\longrightarrow
+       \prod_{p\in S}\Z_p^\times/U_p,\qquad
+ \Theta_p([I])=n(I)/\operatorname N(i_p)\pmod{U_p}
+\]
+is well defined and has kernel $2G$.
+\end{lemma}
+
+\begin{proof}
+The quotient in $\Theta_p$ is a unit by
+\eqref{eq:norm-ideal-identities}.  A change of local generator changes
+it by an order-unit norm.  Multiplication of $I$ by a principal ideal
+changes numerator and denominator by the same positive element norm.
+Every $U_p$ contains the rational unit squares, so the target has
+exponent two and $2G$ is in the kernel.  Outside $S$ every unit is a
+norm from $\mathcal O_p^\times$.
+
+Conversely, if $\Theta([I])=1$, choose units $u_p\in\mathcal O_p^\times$
+such that $\operatorname N(i_pu_p)=n(I)$ at every finite prime.
+Positivity handles the infinite place.  The cyclic Hasse norm theorem
+\cite[Chapter~VIII, Theorem~3.1]{milnecft} supplies $\alpha\in K^\times$
+with $\operatorname N(\alpha)=n(I)$.  Local Hilbert~90 writes
+$i_pu_p/\alpha=z_p/\overline z_p$.  For a norm-one element $c\ne-1$
+one may take $z=1+c$; for $c=-1$, take $z=\sqrt D$.  At almost all
+primes a unit solution exists: in an unramified field normalize its
+valuation by a rational uniformizer, and in a split algebra use
+$z=(c_1,1)$.  The lattices $z_p\mathcal O_p$ therefore glue to an
+invertible fractional ideal $J$.  They give
+$I/(\alpha)=J/\overline J$, hence $[I]=2[J]$ by
+\eqref{eq:norm-ideal-identities}.
+
+\end{proof}
+
 \subsection{The target ideal class and its local shadow}
 
-For \(Q(x,y)=ax^2+bxy+cy^2\), take
+For either form \(Q(x,y)=ax^2+bxy+cy^2\), use its own order,
+discriminant and class group, and take
 \[
  \beta=(b+\sqrt\Delta)/2,\qquad
  A=\Z a+\Z\beta\subset\mathcal O,\qquad c_Q=-[A]\in G.
@@ -132,9 +248,10 @@ Write \(A_p=z_p\mathcal O_p\). The norm identities in
  \lambda_p=N(z_p)/a\in\Z_p^\times,\qquad
  \mathscr V_{p,Q}=\lambda_p\mathscr V_p,
 \]
-where \(\mathscr V_p\) is the principal primitive norm-value set for
-\(\mathcal O_p\). The change from an integral basis of \(A\) to
-the local generator is in \(\operatorname{GL}_2(\Z_p)\).
+where
+\(\mathscr V_p=\{N(w):w\in\mathcal O_p\setminus p\mathcal O_p\}\)
+is the primitive norm-value set for \(\mathcal O_p\). The change from
+an integral basis of \(A\) to the local generator is in \(\operatorname{GL}_2(\Z_p)\).
 Moreover \(\Theta_p(c_Q)=\lambda_p\pmod{U_p}\), with \(\Theta\)
 and \(U_p\) from Lemma~\ref{lem:norm-genus}.
 
@@ -164,36 +281,265 @@ not determine a unique genus. For example, at discriminant \(-32\),
 genera. Both nevertheless primitively represent \(24\), at
 \((4,1)\) and \((3,-1)\).
 
-\subsection{Saturation at an arbitrary class}
+\subsection{Orientation saturation and maximal subgroups}
 
-The saturation argument now targets \(c_Q\), rather than zero.
-Start with the ideal in \(c_Q+2G\) from
-Lemma~\ref{lem:form-ideal-shadow}. Initial reorientation of the
-reserved exponent-one primes keeps its class in that coset.
-If their doubled classes generate \(2G\), the independent reversal
-ranges cancel the difference from \(c_Q\). They leave every
-conductor-local ideal unchanged. Thus a failure in
-\(\Lambda_Q\setminus P_Q\) has the same cover
-\eqref{eq:norm-deficiency}, with exactly the same \(\Omega_M,K_M\).
-
-For two forms, charge a pair in
-\(\Lambda_{Q_1}\times\Lambda_{Q_2}\setminus(P_{Q_1}\times P_{Q_2})\)
-to an exceptional summand. Outside \(S\), both summands are units
-at every inert prime. Mark only the selected summand's deficient
-family. Its marked split primes are disjoint from these inert primes,
-and remove the same \(p-1\) roots modulo \(p^2\). The calculation
-\eqref{eq:norm-marked-sieve} therefore gives, for every
-\(0<\eta<\eta_*(G)\),
-\begin{equation}\label{eq:form-class-error}
- 0\le R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)-R_{Q_1,Q_2}(N)
-   \ll_{\Delta,\eta}\frac{NJ_\Delta(N)}{(\log N)^{1+\eta}}
-                  \qquad(N\ge3).
+For either form \(Q\), work in its own group \(G\), with target
+class \(c_Q=-[A]\), and write $h_{\mathcal O}=|G|$ and $B=2G$. For every inverse pair
+$\{g,-g\}\subset G$ with $2g\ne0$, let
+$\Omega_g$ be the rational split primes outside $S$ whose two prime
+ideal classes are $g,-g$, and put
+\[
+ m_g=\operatorname{ord}(2g)-1,\qquad
+ k_g(n)=\#\{p\in\Omega_g:v_p(n)=1\}.
+\]
+These prime families are disjoint. Enlarging \(S\) deletes only
+finitely many primes. The fixed-discriminant prime-class
+estimate \cite[Lemma~2, equation~(5.2)]{bourgainfuchs} gives
+\begin{equation}\label{eq:norm-class-mertens}
+ \sum_{\substack{p\le y\\p\in\Omega_g}}\frac1p
+                =\frac1h_{\mathcal O}\log\log y+O_{\mathcal O,S}(1).
 \end{equation}
-When \(2G=0\), this difference is identically zero. In particular,
-the exponent \(\eta=1/5\) remains available for every fixed order.
-No recent analytic input enters this comparison.
+The coefficient is $1/h_{\mathcal O}$ for a nonambiguous inverse pair.  The source
+allows nonfundamental negative form discriminants.  For a fixed order
+its prime-counting error is $O_{\mathcal O}(x\exp(-c\sqrt{\log x}))$;
+partial summation gives the bounded remainder in
+\eqref{eq:norm-class-mertens}.
 
-\subsection{The separate genus filters}
+Call the pair $\{g,-g\}$ saturated for $n$ if $k_g(n)\ge m_g$, and set
+\[
+ B_n=\langle2g:\{g,-g\}\text{ is saturated for }n\rangle\le B.
+\]
+If $n\in\Lambda_Q$ and $B_n=B$, then $n\in P_Q$. To see this,
+start with a primitive ideal from Lemma~\ref{lem:form-ideal-shadow},
+whose class belongs to $c_Q+B$. At a good split prime, primitivity puts
+the entire prime power in one conjugate prime ideal. From each saturated family
+reserve $m_g$ exponent-one factors, initially orienting each as $g$.
+This changes the ideal class only by an element of $B$, so its class
+still belongs to $c_Q+B$. Reversing $j$ reserved orientations changes
+its class by $-2jg$, for $0\le j\le m_g$; these changes fill
+$\langle2g\rangle$. Families have disjoint prime support, so their
+choices are independent and their sums fill $B_n=B$. They therefore
+cancel its difference from \(c_Q\). The resulting ideal is primitive,
+has class \(c_Q\), and has the same numerical norm and every
+conductor-local ideal unchanged. Hence $n\in P_Q$ by
+Lemma~\ref{lem:form-ideal-shadow}.
+
+Suppose $B\ne0$, and let $\mathcal H$ be its finite set of maximal
+proper subgroups. For $M\in\mathcal H$ define
+\[
+ \begin{gathered}
+ \ell_M=[B:M],\qquad
+ \Omega_M=\bigcup_{\{g,-g\}:\,2g\notin M}\Omega_g,\\
+ K_M=\sum_{\{g,-g\}:\,2g\notin M}(m_g-1),\qquad
+ k_M(n)=\#\{p\in\Omega_M:v_p(n)=1\}.
+ \end{gathered}
+\]
+Each inverse pair is counted once. Since $B$ is finite abelian,
+$B/M$ is cyclic of prime order $\ell_M$. If $n\in\Lambda_Q\setminus P_Q$,
+then $B_n$ is proper and lies in some $M\in\mathcal H$. Every pair
+with $2g\notin M$ is consequently deficient, giving
+\begin{equation}\label{eq:norm-deficiency}
+ \Lambda_Q\setminus P_Q\subset
+     \bigcup_{M\in\mathcal H}\{n:k_M(n)\le K_M\}.
+\end{equation}
+If $2G=0$, Lemma~\ref{lem:form-ideal-shadow} already gives $P_Q=\Lambda_Q$.
+
+The doubling map $G\to B$ has equal fibres. Precisely
+$h_{\mathcal O}(\ell_M-1)/\ell_M$ classes satisfy $2g\notin M$. None is
+ambiguous, since $2g\ne0$, so they form
+$h_{\mathcal O}(\ell_M-1)/(2\ell_M)$ inverse pairs. Summing
+\eqref{eq:norm-class-mertens} over these disjoint families proves
+\begin{equation}\label{eq:norm-maximal-mertens}
+ \sum_{\substack{p\le y\\p\in\Omega_M}}\frac1p
+     =d_M\log\log y+O_{\mathcal O,S}(1),\qquad
+ d_M=\frac{\ell_M-1}{2\ell_M}\ge\frac14.
+\end{equation}
+Every prime divisor of $|B|$ occurs as the index of a maximal
+subgroup: in the corresponding primary component, reduce a cyclic
+factor modulo that prime. Thus $\min_{M\in\mathcal H}d_M=\eta_*(G)$.
+The proper-subgroup mechanism is classical in the exceptional-value
+argument of Bourgain--Fuchs
+\cite[Theorem 1, alternative (4.2), and Section 2, part (5)]{bourgainfuchs}.
+Here its use in \eqref{eq:norm-deficiency} makes an entire positive-density
+collection deficient on the binary line. For $G\simeq\Z/8\Z$ or
+$\Z/2\Z\times\Z/4\Z$ the threshold is $1/4$, while for
+$G\simeq(\Z/3\Z)^2$ it is $1/3$.
+
+\begin{proposition}[The class error]\label{prop:norm-class-error}
+In the common-field setting above, for every fixed
+\(0<\eta<\min_i\eta_*(G_i)\), uniformly for \(N\ge3\),
+\begin{equation}\label{eq:form-class-error}\csname ltx@label\endcsname{eq:norm-class-error}
+ 0\le R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)-R_{Q_1,Q_2}(N)
+ \ll_{\mathcal F,\eta}
+              \frac{NJ_S(N)}{(\log N)^{1+\eta}}.
+\end{equation}
+If \(2G_i=0\), then \(P_{Q_i}=\Lambda_{Q_i}\), and that summand
+contributes no class error. If both doubled groups vanish the displayed
+difference is zero. In every case the exponent \(\eta=1/5\) is
+permissible. Only this saving exponent is independent of the orders;
+the implied constant remains dependent on the fixed forms.
+The proposition is classical and uses neither recent analytic input.
+\end{proposition}
+
+\subsection{A sieve for the class error}
+
+We prove Proposition~\ref{prop:norm-class-error} directly on the line
+$a+(N-a)=N$. First charge a bad pair to its first summand
+\(a\in\Lambda_{Q_1}\setminus P_{Q_1}\), and use the maximal-subgroup
+families in \(G_1\). If \(2G_1=0\), there is no such error.
+Otherwise fix \(M\in\mathcal H\) in this group. At every good inert
+prime $p$, both values must be units,
+so the forbidden residues of $a$ modulo $p$ are $0,N$, with
+$\nu_N(p)=2-\mathbf1_{p\mid N}$ roots.  At a marked prime
+$p\in\Omega_M$, forbid exactly $v_p(a)=1$: this removes the $p-1$
+residues $p,2p,\ldots,(p-1)p$ modulo $p^2$.  Its forbidden density is
+\[
+ f_*(p)=\frac{p-1}{p^2}.
+\]
+Higher prime powers remain permitted, including when $p\mid N$.
+
+Here are the needed uniform sieve details.  Given any mark set
+$\mathcal M\subset\Omega_M\cap[1,y]$, use modulus $p$ at inert primes
+and $p^2$ at marked primes. All sieve indices below are squarefree
+and supported on the chosen inert and marked primes at most $y$.
+For such an index $d$, let
+$\ell(d)$ be the product of these moduli, $\nu(d)$ the product of
+the root counts, and $f(d)=\nu(d)/\ell(d)$.  Exact interval counting
+by the Chinese remainder theorem gives $Xf(d)+O(\nu(d))$ on an
+interval of length $X$.  In all cases $\nu(d)\le d$ and
+$0<f(p)\le2/p<1$.
+
+For $d\le z$ the Selberg quadratic majorant has main term $X/G(z)$,
+where
+\[
+ w(d)=\prod_{p\mid d}\frac{f(p)}{1-f(p)},\qquad
+ G(z)=\sum_{d\le z}\mu^2(d)w(d).
+\]
+To see the normalization, set $x_d=\lambda_df(d)$ and
+$y_u=\sum_{u\mid d}x_d$.  Then
+\[
+ \sum_{d,e\le z}\lambda_d\lambda_e f([d,e])
+       =\sum_{u\le z}\frac{y_u^2}{w(u)},\qquad
+ \lambda_1=\sum_{u\le z}\mu(u)y_u.
+\]
+The minimum with $\lambda_1=1$ is $1/G(z)$, attained at
+$y_u=\mu(u)w(u)/G(z)$.  Finite inversion gives
+\[
+ \lambda_d=\mu(d)\prod_{p\mid d}(1-f(p))^{-1}
+       \frac{G_d(z/d)}{G(z)},\qquad
+ G_d(v)=\sum_{\substack{e\le v\\(d,e)=1}}\mu^2(e)w(e).
+\]
+Uniformly in the mark set and target, $|\lambda_d|\ll_\epsilon d^\epsilon$.
+Since $\nu([d,e])\le de$, the total interval error is
+$O_\epsilon(z^{4+\epsilon})$.
+
+Take $y=z^{1/16}$.  The unrestricted Euler mass for the same prime
+indices is
+\[
+ E(y)=\prod_{\substack{p\le y\\p\notin S,\,\chi(p)=-1}}
+                   (1-\nu_N(p)/p)^{-1}
+       \prod_{p\in\mathcal M}(1-f_*(p))^{-1}.
+\]
+In its normalized positive expansion, a prime is included with
+probability $f(p)$.  Therefore
+$\mathbb E\log d\le2\sum_{p\le y}(\log p)/p\le4\log y$
+for sufficiently large $y$.  Markov's inequality retains at least
+three quarters of the mass on $d\le z$, giving $G(z)\ge3E(y)/4$.
+Fixed quadratic-character prime number theory gives
+\[
+ \prod_{\substack{p\le y\\p\notin S,\,\chi(p)=-1}}
+                 (1-\nu_N(p)/p)^{-1}
+ =\frac{\displaystyle\prod_{p\le y,\,p\notin S,\,\chi(p)=-1}
+                           (1-2/p)^{-1}}
+        {\displaystyle\prod_{p\le y,\,p\mid N,\,p\notin S,\,\chi(p)=-1}
+                           (p-1)/(p-2)}
+ \gg_{\mathcal F}\frac{\log y}{J_S(N)}.
+\]
+Consequently, the number surviving the marked sieve is at most
+\begin{equation}\label{eq:norm-marked-sieve}
+ \ll_{\mathcal F}
+ \frac{XJ_S(N)}{\log y}
+                \prod_{p\in\mathcal M}(1-f_*(p))
+                +O_\epsilon(z^{4+\epsilon}).
+\end{equation}
+This also holds without marked primes.  Only root counts and exact
+interval errors have been used, so the estimate is uniform in target
+valuations and root positions.
+
+Fix $M\in\mathcal H$. Independently mark each prime of
+$\Omega_M\cap[1,y]$ with probability $t\in(0,1)$. An integer with
+$k_M(a)\le K_M$ survives with probability at least $(1-t)^{K_M}$:
+its exponent-one factors below $y$ are at most its total such factors.
+This lower bound is a positive constant depending on the fixed order
+and $t$. On taking the finite expectation in
+\eqref{eq:norm-marked-sieve}, the marked factor becomes
+\[
+ \prod_{\substack{p\le y\\p\in\Omega_M}}(1-tf_*(p))
+                 \ll_{\mathcal F,t}(\log y)^{-td_M},
+\]
+by \eqref{eq:norm-maximal-mertens}, since $f_*(p)=p^{-1}+O(p^{-2})$.
+Take $z=N^{1/10}$, $y=z^{1/16}$ and $\epsilon=1/2$.
+The number of pairs in \(\Lambda_{Q_1}\times\Lambda_{Q_2}\) whose first summand has
+$k_M(a)\le K_M$ is at most
+\[
+ \ll_{\mathcal F,t}
+ \frac{NJ_S(N)}{(\log N)^{1+td_M}}+N^{9/20}.
+\]
+Given \(\eta<\eta_*(G_1)\), choose \(t\in(0,1)\) with
+\(\eta<t\eta_*(G_1)\). Sum over this group's finitely many maximal
+subgroups. Repeat the argument for the second summand, using only its
+own group \(G_2\) and prime families. Their Mertens densities are
+unchanged by deleting the finitely many extra primes in \(S\).
+The common good inert sieve is the same in both arguments, while
+only one summand is marked at a time. Overlap between the two orders'
+split-prime families is therefore irrelevant. Taking \(\eta\) below
+both thresholds and adding the two bounds proves
+\eqref{eq:form-class-error}; the power error is absorbed since
+\(J_S(N)\ge1\). Increasing the constant covers all \(N\ge3\).
+For the uniform choice $\eta=1/5$, one can take $t=9/10$, because
+$td_M\ge9/40>1/5$. This argument uses only the existing fixed-order
+prime-class estimate, CRT and the finite upper sieve, independently
+of the recent zero-free and graph theorems.
+The use of \(t<1\) explains the strict range \(\eta<\min_i\eta_*(G_i)\);
+no endpoint or optimality assertion is made.
+
+\subsection{Two local filters on a common split core}\label{sec:form-local-assembly}
+
+The remaining calculation concerns the two local shadows. It is shared
+by all pairs above and by the principal specialization below.
+
+First the local sets have a finite description, even when a split
+conductor prime permits unbounded valuations. Put
+\[
+ e_p=1+2\max_i v_p(\Delta_i)\qquad(p\in S).
+\]
+At a primitive vector \(v\), the identity
+\[
+ \operatorname{adj}(\operatorname{Hess}Q_i)\nabla Q_i(v)
+                  =-\Delta_i v
+\]
+shows that some partial derivative has valuation
+\(s\le v_p(\Delta_i)\). For any target congruent to \(Q_i(v)\)
+modulo \(p^{e_p}\), strong one-variable Hensel lifting in that
+coordinate applies because \(e_p>2s\). The lifted vector stays
+primitive. Thus each \(\mathscr V_{p,Q_i}\) is a union of full
+cosets modulo \(p^{e_p}\), found by enumerating primitive vectors
+in that quotient, and
+\begin{equation}\label{eq:norm-local-density-finite}
+ d_{p;1,2}(N)=\frac1{p^{e_p}}
+ \#\left\{a\bmod p^{e_p}:
+ \begin{array}{l}
+ a\in\mathscr V_{p,Q_1}\bmod p^{e_p},\\
+ N-a\in\mathscr V_{p,Q_2}\bmod p^{e_p}
+ \end{array}\right\}.
+\end{equation}
+In particular these densities are rational periodic functions.
+Outside \(S\), the primitive value set of either form is \(\Z_p\)
+at split primes and \(\Z_p^\times\) at inert primes. These primes
+are odd, so every target is a sum of two permitted local values.
+Local admissibility is therefore the finite criterion
+\(\prod_{p\in S}d_{p;1,2}(N)>0\), and this product has a fixed
+positive minimum on admissible targets.
 
 The local genus biases must still be retained. Set
 \[
@@ -230,167 +576,171 @@ identifies \(\prod_{p\in S}(u,D)_p\) with \(\chi(u)\).
 Multiplication of the displayed local relations gives \(\chi(u)=1\).
 This does not identify \(A_{r,i}\) with the principal-form filter.
 
-Outside \(S\), the primitive value set is \(\Z_p\) at split primes
-and \(\Z_p^\times\) at inert primes. Consequently the exact disjoint
-decomposition is
-\begin{equation}\label{eq:form-prefix-decomposition}
+Consequently the exact disjoint decomposition is
+\begin{equation}\label{eq:form-prefix-decomposition}\csname ltx@label\endcsname{eq:norm-prefix-decomposition}
  \Lambda_{Q_i}=\coprod_{r\in\langle S\rangle}
                   r\{x\in\mathcal C:x\bmod L\in A_{r,i}\}.
 \end{equation}
-For \(Q_i\), the identity
-\(\operatorname{adj}(\operatorname{Hess}Q_i)\nabla Q_i(v)=-\Delta v\)
-shows that some partial derivative at a primitive vector has valuation
-at most \(v_p(\Delta)\). Hensel lifting therefore makes
-\(\mathscr V_{p,Q_i}\) a union of full cosets modulo
-\(p^{e_p}\), \(e_p=2v_p(\Delta)+1\). Thus each \(d_{p;1,2}\)
-is a rational periodic function, obtained by counting values in this
-finite quotient. Its positive values have a fixed positive minimum.
-At good primes, which are odd, every target is a sum of two allowed
-local values. Local admissibility is precisely
-\(\prod_{p\in S}d_{p;1,2}(N)>0\).
+Let $c_{\mathcal C}$ denote the Gamma-normalized marginal constant
+of this core.  Its Euler series satisfies
+\[
+ \left(\sum_{n\in\mathcal C}n^{-s}\right)^2
+  =\zeta(s)L(s,\chi)
+      \prod_{p\in S}(1-p^{-s})(1-\chi(p)p^{-s})
+      \prod_{\substack{p\notin S\\\chi(p)=-1}}(1-p^{-2s}),
+\]
+so
+\begin{equation}\label{eq:norm-core-constant}
+ c_{\mathcal C}^2=\frac{L(1,\chi)}\pi
+       \prod_{p\in S}(1-p^{-1})(1-\chi(p)p^{-1})
+       \prod_{\substack{p\notin S\\\chi(p)=-1}}(1-p^{-2}).
+\end{equation}
+Also put
+\[
+ C_{\rm in}=\prod_{\substack{p\notin S\\\chi(p)=-1}}
+                         \left(1-\frac1{(p-1)^2}\right).
+\]
 
-\subsection{Mixed profiles and their normalization}
+\subsection{Finite profiles, the classical bounds, and genus comparison}
 
-For fixed prefixes \(r,s\), let \(g=(r,s)\). When \(g\mid N\), put
-\(A=r/g\), \(B=s/g\), \(M=N/g\), and define
+For fixed prefixes \(r,s\in\langle S\rangle\), put \(g=(r,s)\).
+When \(g\mid N\), write \(A=r/g\), \(B=s/g\), \(M=N/g\), and set
 \[
  \Gamma_{r,s;1,2}(N)=\frac L{|H|^2}
   \#\{(u,v)\in A_{r,1}\times A_{s,2}:Au+Bv=M\bmod L\};
 \]
-otherwise set it to zero. The original two filters are retained after
-dividing by \(g\).
+otherwise set it to zero. The original two filters are retained
+after dividing by \(g\).
 
-There are finitely many profiles that cover every locally admissible
-target. Indeed, for local summands \(a+b=N\), replace them by
-\(a+p^{e_p}t,b-p^{e_p}t\). Values remain in their full local
-cosets. Valuations below \(e_p\) stay fixed; otherwise each summand
-excludes at most one residue \(t\bmod p^2\) if its valuation is to
-be at most \(e_p+1\). Since \(p^2>2\), both bounds can be met.
-Thus one can take
-\(r,s\mid Z=\prod_{p\in S}p^{e_p+1}\).
-CRT combines the local unit states into a root in
-\(A_{r,1}\times A_{s,2}\). Conversely, a positive root lifts on the
-local line, because one of \(A,B\) is a unit; the unit-square
-conditions preserve each separate local value set.
-
-Lemma~\ref{lem:older-quadratic-filter} allows distinct filters
-\(U,V_0\subset H\), so it gives a positive lower bound of order
-\(NJ_\Delta(N)/\log N\) in any positive profile. There are only
-finitely many such profiles and root patterns. The unmarked inert
-sieve supplies the matching upper bound for the whole mixed shadow.
-Together with \eqref{eq:form-class-error}, this proves the classical
-order bounds for \(R_{Q_1,Q_2}\).
-If \(Q_i,Q'_i\) are in the same genus, their local value sets and
-their mixed shadow coincide exactly. Subtract the two estimates
-\eqref{eq:form-class-error}, then divide by the classical positive
-lower bound. This proves Theorem~\ref{thm:genus-binary-invariance}.
-If \(2G=0\), equality of the individual global and local sets gives
-the exact conclusion for every target.
-
-For the explicit leading term, apply Theorem~\ref{thm:general} to
-each fixed profile. Write \(R_{r,s;1,2}(N)\) for the contribution
-of prefixes \(r,s\) in \eqref{eq:form-prefix-decomposition}.
-Let \(c_{\mathcal C}\) be its marginal core
-constant and \(C_{\rm in}\) the good inert product in
-Section~\ref{sec:norms}. The normalized contribution is
+A finite collection of profiles covers every locally admissible
+target. Put \(Z=\prod_{p\in S}p^{e_p+1}\). Given local summands
+\(a+b=N\), replace them by \(a+p^{e_p}t,b-p^{e_p}t\).
+They remain in their full value cosets. A valuation below \(e_p\)
+stays fixed; otherwise at most one residue \(t\bmod p^2\) makes that
+summand divisible by \(p^{e_p+2}\). Since \(p^2>2\), both forbidden
+residues can be avoided. The summands can therefore be chosen with
+valuations at most \(e_p+1\). Their valuations determine \(r,s\mid Z\),
+and CRT assembles their unit quotients into a root counted by
+\(\Gamma_{r,s;1,2}(N)\). Conversely, any such root lifts to an exact
+linear solution at each bad prime: one of \(A,B\) is a unit, and
+fixing the other unit residue preserves the two unit-square states.
+The local definitions of \(A_{r,1},A_{s,2}\) therefore remain valid.
+Outside \(S\) there is already no additive obstruction. Hence
 \[
- c_{\mathcal C}^2 C_{\rm in}\Gamma_{r,s;1,2}(N)\frac g{rs}+o(1).
+ N\text{ locally admissible}\quad\Longleftrightarrow\quad
+ \Gamma_{r,s;1,2}(N)>0\text{ for some }r,s\mid Z.
 \]
-At a good inert prime the coefficients of the line \(rx+sy=N\)
-are units, and its two forbidden roots merge exactly when \(p\mid N\).
-Discarding the two residue filters in the upper sieve gives
+
+\begin{proof}[Classical bounds and genus comparison]
+Lemma~\ref{lem:older-quadratic-filter} allows two distinct filters
+\(U,V_0\subset H\). In a positive fixed profile it supplies
+\(\gg_{\mathcal F}MJ_S(M)/\log M\) core pairs on \(Ax+By=M\).
+Multiplication by \(r,s\) is injective, and
+\(J_S(M)=J_S(N)\) because \(g\) is supported on \(S\). Only finitely
+many profiles and root patterns occur above, so the minimum of the
+positive lower constants and maximum of their thresholds give
 \[
- R_{r,s;1,2}(N)\ll_\Delta
-       \frac{NgJ_\Delta(N)}{rs\log N}+O(N^{9/20}).
+ R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)
+                 \gg_{\mathcal F}NJ_S(N)/\log N
 \]
-Only polynomially many logarithmic prefix pairs can occur, and
-\(\sum_{r,s\in\langle S\rangle}(r,s)/(rs)<\infty\).
-The finite-prefix limit and the uniform summable tail thus justify
-summing the fixed-profile main terms.
+uniformly on sufficiently large admissible targets. Sieving the
+original line only at good inert primes gives the matching upper
+bound by the unmarked case of \eqref{eq:norm-marked-sieve}.
+Proposition~\ref{prop:norm-class-error} transfers the lower bound
+to \(R_{Q_1,Q_2}\).
 
-For completeness, the mixed Haar normalization is
-\begin{equation}\label{eq:form-haar-strata}
- \sum_{r,s}\Gamma_{r,s;1,2}(N)\frac g{rs}
-        =\frac4{\alpha^2}\prod_{p\in S}d_{p;1,2}(N).
-\end{equation}
-At a prime with \(v_p(r)=i\), \(v_p(s)=j\), and \(v_p(L)=k\),
-each compatible unit-pair root modulo \(p^k\) has measure
-\(p^{-\max(i,j)-k}\) on the line. If \(i\le j\), prescribing the
-second summand modulo \(p^{j+k}\) fixes the first summand's required
-residue; the other case is symmetric. Hence a global root has
-measure \(g/(Lrs)\). Since \(|H|=\varphi(L)/2\), this is
-\((\alpha^2/4)\Gamma_{r,s;1,2}(N)g/(rs)\) after summing its roots.
-Summing the disjoint valuation strata proves
-\eqref{eq:form-haar-strata}. The Euler identity
-\eqref{eq:norm-core-constant} and the good-prime cancellation in
-Section~\ref{sec:norms} now give \eqref{eq:form-universal-factor}.
-Finally \eqref{eq:form-class-error} transfers the shadow asymptotic
-to the actual values, proving Theorem~\ref{thm:form-binary-leading}.
-The class group has entered only this smaller error, not a divisor
-of the leading value count.
-
-\subsection{Different fixed conductors in one field}
-
-\begin{corollary}\label{cor:common-field-form-pairs}
-Fix an imaginary quadratic field of fundamental discriminant \(D\),
-two orders of discriminants \(\Delta_i=f_i^2D\), and primitive positive
-definite forms \(Q_i\) of discriminants \(\Delta_i\). Put
-\[
- S=\{p:p\mid2\Delta_1\Delta_2\},\qquad
- J_S(N)=\prod_{\substack{p\mid N\\p\notin S,\ \chi_D(p)=-1}}
-                       \frac{p-1}{p-2}.
-\]
-The mixed classical order bounds hold on sufficiently large locally
-admissible targets. Under the inputs of Section~\ref{sec:inputs},
-\[
- R_{Q_1,Q_2}(N)\sim
- \mathfrak b_{D,S}\left(\prod_{p\in S}d_{p;1,2}(N)\right)
-                         J_S(N)\frac N{\log N}.
-\]
-If each \(Q'_i\) is in the genus of \(Q_i\), then, independently
-of those recent inputs, the classical comparison is
-\[
- R_{Q_1,Q_2}(N)=R_{Q'_1,Q'_2}(N)
-                         \left(1+O((\log N)^{-\eta})\right)
-\]
-for every
-\(0<\eta<\min_i\eta_*(\operatorname{Pic}(\mathcal O_i))\), on
-sufficiently large common locally admissible targets. If both doubled
-class groups vanish the counts agree exactly; \(\eta=1/5\) is
-otherwise a common permissible exponent. All data remain fixed.
-\end{corollary}
-\begin{proof}
-Use the common good split-prime core outside \(S\), the same quadratic
-character \(\chi_D\), and \(L=8\prod_{p\in S,\ p\text{ odd}}p\).
-Put \(\alpha=\varphi(L)/L\) and \(H=\ker(\chi_D\bmod L)\).
-For each ideal lattice the local multipliers remain units, and their
-Hilbert symbols have product one over \(S\); hence the two separate
-prefix filters still lie in \(H\). Use
-\(e_p=1+2\max_i v_p(\Delta_i)\) in the local finite quotient and
-bounded-valuation profile construction. The root formula and
-\eqref{eq:form-haar-strata} then use these two filters and the same
-factor \(4/\alpha^2\).
-
-Apply orientation saturation inside each order's own Picard group.
-Deleting \(S\) from its prime families removes only finitely many
-primes, so their Mertens densities are unchanged. For a bad pair mark
-one summand at a time, with that order's maximal-subgroup family.
-Both summands still exclude the same good inert primes. Thus the
-same binary sieve gives the two class errors at their respective
-thresholds, and their sum at the minimum threshold. The two Picard
-groups need never be compared or multiplied, and overlapping prime
-families across the orders cause no problem: no sieve marks both
-partitions simultaneously. No joint ring-class prime-distribution
-theorem is required.
-
-The classical bounds and genus comparison use
-Lemma~\ref{lem:older-quadratic-filter}, while the leading asymptotic
-uses Theorem~\ref{thm:general} on each fixed profile. The uniform
-prefix majorant and summable Haar strata use only the common core
-and separate masks.
-Its Euler identity is \eqref{eq:norm-core-constant} with the enlarged
-\(S\), giving precisely \(\mathfrak b_{D,S}\). This proves the stated
-asymptotic and classical comparison. Genus replacement is made in
-each respective discriminant; no cross-discriminant identification
-of genera or assertion for different quadratic fields is involved.
+If \(Q'_i\) is in the genus of \(Q_i\) for each \(i\), their local
+value sets coincide exactly, as do the two mixed local shadows.
+Subtract their two class-error estimates and divide by the classical
+positive lower bound. This proves
+Theorem~\ref{thm:genus-binary-invariance} and the classical assertions
+of Corollary~\ref{cor:common-field-form-pairs}. If both doubled groups
+vanish the individual global and local value sets are equal, proving
+the exact assertion for every target. Nonadmissible targets have zero
+count. This argument uses the older quadratic filter estimate, not
+Theorem~\ref{thm:general}.
 \end{proof}
+
+\subsection{Prefix summation and Haar normalization}
+
+Under the inputs of Section~\ref{sec:inputs}, apply
+Theorem~\ref{thm:general} with the coprime fixed \(L\)-supported
+coefficients \(A,B\) in each profile. Write \(R_{r,s;1,2}(N)\)
+for its contribution in \eqref{eq:form-prefix-decomposition}.
+Since \(J_S(N/g)=J_S(N)\), its contribution divided by
+\(NJ_S(N)/\log N\) is
+\begin{equation}\label{eq:norm-prefix-main}
+ c_{\mathcal C}^2 C_{\rm in}\Gamma_{r,s;1,2}(N)\frac g{rs}+o(1).
+\end{equation}
+The original filters \(A_{r,1},A_{s,2}\) remain in this formula.
+
+To sum the fixed-profile asymptotics, parameterize \(rx+sy=N\).
+Its positive interval has length at most \(Ng/(rs)\). At any good
+inert prime the two coefficients in this parameterization are units,
+and its two forbidden roots merge exactly when the prime divides
+\(N\). Discarding both residue filters and applying the unmarked
+sieve \eqref{eq:norm-marked-sieve} with \(z=N^{1/10}\) gives
+\begin{equation}\label{eq:norm-prefix-tail}
+ R_{r,s;1,2}(N)\ll_{\mathcal F}
+       \frac{NgJ_S(N)}{rs\log N}+O(N^{9/20}),
+\end{equation}
+uniformly in \(r,s\). The interval error also covers intervals shorter
+than the sieve level. Only
+\(O_{\mathcal F}((1+\log N)^{2|S|})\) prefix pairs can occur, while
+\[
+ \sum_{r,s\in\langle S\rangle}\frac{(r,s)}{rs}
+ =\prod_{p\in S}\sum_{i,j\ge0}p^{-\max(i,j)}
+ =\prod_{p\in S}\frac{1+p^{-1}}{(1-p^{-1})^2}<\infty.
+\]
+The total interval error is negligible relative to
+\(NJ_S(N)/\log N\); the remaining tail is uniformly small as a fixed
+prefix bound tends to infinity. This justifies a finite-prefix limit
+followed by a summable-tail limit, without assuming a binary
+asymptotic uniform in growing coefficients.
+
+Partition the local Haar line \(a+b=N\) by the exact valuation
+prefixes \(r,s\). At a prime with \(v_p(r)=i\), \(v_p(s)=j\), and
+\(v_p(L)=k\), each compatible unit-pair root modulo \(p^k\) has
+measure \(p^{-\max(i,j)-k}\). For \(i\le j\), prescribing the
+second summand modulo \(p^{j+k}\) fixes the first summand's required
+unit residue; the case \(j\le i\) is symmetric. Thus each global root
+has measure \(g/(Lrs)\), and the full stratum has measure
+\[
+ \frac g{Lrs}
+  \#\{(u,v)\in A_{r,1}\times A_{s,2}:Au+Bv=M\bmod L\}
+ =\frac{\alpha^2}{4}\Gamma_{r,s;1,2}(N)\frac g{rs},
+\]
+because \(|H|=\varphi(L)/2\). Zero values have Haar measure zero.
+Summing the disjoint strata gives the single normalization identity
+\begin{equation}\label{eq:form-haar-strata}\csname ltx@label\endcsname{eq:norm-haar-strata}
+ \sum_{r,s}\Gamma_{r,s;1,2}(N)\frac g{rs}
+             =\frac4{\alpha^2}\prod_{p\in S}d_{p;1,2}(N).
+\end{equation}
+Combining this identity with \eqref{eq:norm-prefix-main} and the
+summable tail proves
+\[
+ R_{\Lambda_{Q_1},\Lambda_{Q_2}}(N)\sim
+ \frac{4c_{\mathcal C}^2}{\alpha^2}C_{\rm in}
+       \left(\prod_{p\in S}d_{p;1,2}(N)\right)
+                              J_S(N)\frac N{\log N}.
+\]
+The coefficient is explicit. In \eqref{eq:norm-core-constant},
+divide the bad-prime factors by
+\(\alpha^2=\prod_{p\in S}(1-p^{-1})^2\), and use
+\[
+ (1-p^{-2})\left(1-\frac1{(p-1)^2}\right)
+                         =1-\frac2{p(p-1)}
+\]
+at every good inert prime. The result is precisely
+\(\mathfrak b_{D,S}\) in \eqref{eq:form-universal-factor}.
+The finite positive minimum of the local density product and
+\eqref{eq:form-class-error} transfer the asymptotic to the actual
+values. This proves Theorem~\ref{thm:form-binary-leading} and the
+leading-term assertion of Corollary~\ref{cor:common-field-form-pairs}.
+
+The proof has used a common field and two separate local filters.
+Genus replacement is made in each respective discriminant; it asserts
+neither an identification of genera across different orders nor a
+result for different quadratic fields. The class groups entered only
+the smaller error, without a class-number divisor in the leading
+value count.

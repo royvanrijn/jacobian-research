@@ -79,12 +79,15 @@ with the values of an arbitrary principal quadratic form.
 \end{theorem}
 
 \begin{proof}
-We verify the four hypotheses of
-Theorem~\ref{thm:model-comparison}, then evaluate the model product.
+We separate the arithmetic model, its positive upper envelope, and
+its correlation constant. Only the final assembly invokes the binary
+comparison theorem.
+
+\paragraph{Stage 1: model construction and rough means.}
 Choose a fixed even \(L_0\) divisible by \(q\) and all primes
 in \(B_0\), and use the prime class one modulo \(L_0\).
-Put \(L=\log X\), \(y=e^{L^{2/5}}\), \(S=\{p:p\le y\}\),
-\(E=e^{\sqrt L}\), and \(V_S=\prod_{p\le y}(1-1/p)\).
+Put \(L=\log X\), \(y=e^{L^{2/5}}\), \(\mathcal P_y=\{p:p\le y\}\),
+\(E=e^{\sqrt L}\), and \(V_y=\prod_{p\le y}(1-1/p)\).
 
 The exact Euler identity for \(F(s)=\sum f(n)n^{-s}\) is
 \begin{equation}\label{eq:quadratic-euler-square}
@@ -105,7 +108,7 @@ Here \(F_p(1)\) denotes the local factor evaluated at \(s=1\),
 not at its series variable. The factor \(\pi=\Gamma(1/2)^2\)
 is the Selberg--Delange normalization.
 
-Remove all factors at primes in \(S\), and write the resulting
+Remove all factors at primes in \(\mathcal P_y\), and write the resulting
 rough series as \(F_R(s)=(s-1)^{-1/2}H_R(s)\). Its leading
 coefficient is
 \[
@@ -124,11 +127,11 @@ Use this formula throughout \(X^{1/4}\le t\le X^3\), and
 extend it smoothly and nonnegatively below \(X^{1/4}\) with its
 leading upper bound. This contains the rough range in (C3), since
 \(Y/r\ge X^{1/2}/E>X^{1/4}\) for large \(X\).
-For \(n=av\), \(a=n_S\), define
+For \(n=av\), \(a=n_{\mathcal P_y}\), define
 \begin{equation}\label{eq:quadratic-model}
- D(n)=f(a)(1+\chi(v))M_K(v)/V_S.
+ \mathcal D(n)=f(a)(1+\chi(v))M_K(v)/V_y.
 \end{equation}
-For every fixed depth, \(D\ll L^{-3/10}\) on the relevant
+For every fixed depth, \(\mathcal D\ll L^{-3/10}\) on the relevant
 polynomial ranges, so (C1) holds eventually with a depth-independent
 bound one. Multiplication by a split bank prime changes only
 \(a\), preserving \(f(a)\) and \(v\) exactly. This proves (C2),
@@ -138,7 +141,7 @@ For (C3), inflate a test character \(\eta\) to a modulus
 containing \(q\). The square of its rough Dirichlet series has
 factors \(L(s,\eta)L(s,\eta\chi)\), an absolutely convergent
 prime-square correction, and the removed small-prime factors.
-All primes dividing the polylogarithmic test modulus lie in \(S\).
+All primes dividing the polylogarithmic test modulus lie in \(\mathcal P_y\).
 Only \(\eta=1\) and \(\eta=\chi\) give a principal branch,
 and their rough coefficients agree pointwise. The factor
 \(1+\chi(v)\) in \eqref{eq:quadratic-model} reproduces both.
@@ -154,6 +157,7 @@ Conditioning on \(a\le E\) leaves only its fixed multiplier
 \(f(a)\), outside the periodic rough sum. Choosing \(K\)
 after the desired logarithmic accuracy proves (C3).
 
+\paragraph{Stage 2: the prime-square sieve envelope.}
 For (C4), keep exact bank records \(r,s\le E\); larger ones
 have contribution \(XL^{O(1)}e^{-cL^{1/10}}\) by
 \eqref{eq:record-tail}. The retained records are coprime because
@@ -178,10 +182,10 @@ the CRT root errors: a least-common-multiple atom has at most
 Summing the \(E^2=X^{o(1)}\) records remains power smaller
 than \(X^{1/2}\).
 
-For \(ff\), \(Df\), and \(DD\), the nonbank sieve
+For \(ff\), \(\mathcal D f\), and \(\mathcal D\mathcal D\), the nonbank sieve
 denominators have orders respectively
 \(\log w\), \((\log y\log w)^{1/2}\), and \(\log y\).
-The bound \(D\ll L^{-3/10}\) supplies the missing factor
+The bound \(\mathcal D\ll L^{-3/10}\) supplies the missing factor
 on each model side. Explicitly, since \(\log y=L^{2/5}\)
 and \(\log w\asymp L\), their factors are
 \[
@@ -193,24 +197,21 @@ All three cases therefore give the common
 scale \(\mathcal S_X=X/L\), with the exact bank masses.
 This proves (C4), uniformly in the interval \(J\). The exponents
 in the exceptional-record errors do not depend on the final
-fixed depth. The comparison theorem now gives
-\begin{equation}\label{eq:quadratic-model-comparison}
- \sum_{X\le n\le2X}\{f(n)f(n+h)-D(n)D(n+h)\}
-                                      =o_h(X/L).
-\end{equation}
+fixed depth.
 
-It remains to calculate the model main. Let
+\paragraph{Stage 3: model correlation and the arithmetic constant.}
+We calculate the model main term separately from the analytic replacement. Let
 \(I_y=\{p\le y:p\notin B_0,\ \chi(p)=-1\}\) and put
 \[
  \Lambda_y=\frac{2c_f}{\sqrt L}
       \prod_{p\in B_0}\frac{F_p(1)^{-1}}{1-p^{-1}}
       \prod_{p\in I_y}(1+p^{-1}).
 \]
-Outside the negligible records \(n_S>E\), the rough cofactor
+Outside the negligible records \(n_{\mathcal P_y}>E\), the rough cofactor
 has \(\log v=L+O(\sqrt L)\). If the small inert exponents
 are even, its character is \(\chi(n/n_{B_0})\). Hence
 \begin{equation}\label{eq:quadratic-model-leading}
- D(n)=\Lambda_y\vartheta_{B_0}(n)
+ \mathcal D(n)=\Lambda_y\vartheta_{B_0}(n)
             \prod_{p\in I_y}\1_{2\mid v_p(n)}
                                       (1+O_K(L^{-1/2})).
 \end{equation}
@@ -257,7 +258,7 @@ This is negligible compared with \(X/L^A\) for every fixed
 \(\ll_h1/\operatorname{lcm}(d^2,e^2)\), with geometric
 bad-prime tails. Summing the disjoint valuation cells proves
 \[
- \sum_{X\le n\le2X}D(n)D(n+h)
+ \sum_{X\le n\le2X}\mathcal D(n)\mathcal D(n+h)
    =\Lambda_y^2XW_{B_0}(h)\prod_{p\in I_y}\delta_p(h)
                                                  +o_h(X/L).
 \]
@@ -267,8 +268,18 @@ the additional ratio is
 \((1-p^{-v_p(h)-1})/(1-p^{-1})\). Substitution of
 \eqref{eq:quadratic-marginal} cancels every \(F_p(1)\)
 and the inert Euler product, leaving
-\eqref{eq:quadratic-pair-constant}. This proves the dyadic
-asymptotic. Summing dyadically gives
+\eqref{eq:quadratic-pair-constant}. Thus the model correlation
+has the asserted constant on each dyadic interval.
+
+\paragraph{Assembly.}
+Stages 1 and 2 establish \textup{(C1)--(C4)} at scale \(X/L\).
+The comparison theorem now gives
+\begin{equation}\label{eq:quadratic-model-comparison}
+ \sum_{X\le n\le2X}\{f(n)f(n+h)-\mathcal D(n)\mathcal D(n+h)\}
+                                      =o_h(X/L).
+\end{equation}
+Combining this with Stage 3 proves the dyadic asymptotic for the
+ordinary indicator. Summing dyadically gives
 \eqref{eq:quadratic-pair-asymptotic}; the upper bound from (C4)
 controls the part below \(\varepsilon X\), after which
 \(\varepsilon\) tends to zero.
@@ -304,23 +315,9 @@ orders. For \(d=3\), the ordinary value set nevertheless has
 exactly the inert-even rule for \(\chi_{-3}\), including the
 prime two; no extra dyadic mask is imposed.
 
-\begin{corollary}\label{cor:smilansky-five-pairs}
-Under the inputs of Section~\ref{sec:inputs}, for
-\(d\in\{1,2,3,4,7\}\) and fixed \(h\ne0\),
-\[
- \sum_{1\le n\le X}b_d(n)b_d(n+h)
-       =\mathscr T_{d,h}\frac X{\log X}+o_{d,h}(X/\log X),
-\]
-with precisely the coefficients predicted in
-\cite[Section 6.3, equations (6.2)--(6.4)]{smilansky}.
-In particular,
-\begin{equation}\label{eq:minus-eight-shift-one}
- \sum_{n\le X}b_2(n)b_2(n+1)
-                       \sim\frac1{\sqrt2}\frac X{\log X}.
-\end{equation}
-\end{corollary}
 
-\begin{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:smilansky-five-pairs}]
 Write \(Q_d=\{p:\chi(p)=-1\}\), except that no prime in
 \(B_0\) is included; for the displayed five forms this exception
 changes none of the inert sets. These are respectively

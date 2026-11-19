@@ -759,7 +759,7 @@ remain distinct from Paper 2's sharp \(NJ_D(N)/\log N\) scale.
 The exact \(-19,-43,-67,-163\) exception lists remain bounded
 computations and are not added to the main theorem.
 
-### Flagship: Pointwise Binary Correlations in Abelian Splitting Semigroups
+### Flagship: Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 
 The flagship centers on the pointwise binary splitting theorem. Its
 [all-order sharp value-count theorem](PRIMITIVE_NORM_ALL_ORDERS.md)
