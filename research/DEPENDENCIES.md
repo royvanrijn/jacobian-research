@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 4353 claim/source nodes, 3258 implication rules and 38 documented equivalence components. conditional: 18; falsified: 17; open: 299; proved: 4010; stale: 9.
+The graph contains 4353 claim/source nodes, 3258 implication rules and 38 documented equivalence components. conditional: 18; falsified: 17; open: 299; proved: 4019.
 
 Inspect the current graph from the repository root:
 
@@ -3810,12 +3810,12 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITH-UNIFORM-TWO-LEAF-DT-ABSORPTION](arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md) | proved | partial | none in declared routes |
 | [ARITHMETIC-EISENSTEIN-BALANCED-REDUCTION](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md) | proved | partial | none in declared routes |
 | [ARITH-PRIMITIVE-NORM-LOCAL-STRUCTURE](arithmetic/PRIMITIVE_NORM_LOCAL_STRUCTURE.md) | proved | partial | none in declared routes |
-| [ARITH-PAIR-PRIMITIVE-QUATERNARY-LOCAL-GLOBAL](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | stale | partial | SRC-PAIR-PRIMITIVE-MOBIUS-COMPLETION (stale) |
-| [ARITH-PRIMITIVE-NORM-CLASS-DISAPPEARANCE](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | stale | partial | SRC-PAIR-PRIMITIVE-MOBIUS-COMPLETION (stale) |
+| [ARITH-PAIR-PRIMITIVE-QUATERNARY-LOCAL-GLOBAL](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | proved | partial | none in declared routes |
+| [ARITH-PRIMITIVE-NORM-CLASS-DISAPPEARANCE](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | proved | partial | none in declared routes |
 | [ARITH-TWO-QUADRATIC-SPLITTING-COROLLARY](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | proved | partial | none in declared routes |
 | [ARITH-PRIMITIVE-NORM-BOUNDED-CLASSIFICATIONS](arithmetic/PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md) | proved | partial | none in declared routes |
-| [ARITH-PAIR-PRIMITIVE-ANGULAR-BALANCE](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | stale | partial | SRC-PAIR-PRIMITIVE-MOBIUS-COMPLETION (stale) |
-| [ARITH-PRIMITIVE-NORM-EXACT-HIGHER-SUMSETS](arithmetic/PRIMITIVE_NORM_LOCAL_STRUCTURE.md) | stale | partial | SRC-PAIR-PRIMITIVE-MOBIUS-COMPLETION (stale) |
+| [ARITH-PAIR-PRIMITIVE-ANGULAR-BALANCE](arithmetic/PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) | proved | partial | none in declared routes |
+| [ARITH-PRIMITIVE-NORM-EXACT-HIGHER-SUMSETS](arithmetic/PRIMITIVE_NORM_LOCAL_STRUCTURE.md) | proved | partial | none in declared routes |
 | [ARITH-D8-EXPLICIT-LOCAL-GLOBAL](arithmetic/PRIMITIVE_NORM_MINUS8_EXACT.md) | proved | partial | none in declared routes |
 | [ARITH-D7-EXACT-LOCAL-GLOBAL](arithmetic/PRIMITIVE_NORM_MINUS7_EXACT.md) | proved | partial | none in declared routes |
 | [ARITH-D11-EXPLICIT-LOCAL-GLOBAL](arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md) | proved | partial | none in declared routes |
@@ -3983,8 +3983,8 @@ flowchart LR
   class n3 proved
   n4["ARITH-ODD-GAUSSIAN-POINTWISE-<br/>COUNTS<br/>proved"]
   class n4 proved
-  n5["ARITH-PAIR-PRIMITIVE-<br/>QUATERNARY-LOCAL-GLOBAL<br/>stale"]
-  class n5 stale
+  n5["ARITH-PAIR-PRIMITIVE-<br/>QUATERNARY-LOCAL-GLOBAL<br/>proved"]
+  class n5 proved
   n6["ARITH-D7-EXACT-LOCAL-GLOBAL<br/>proved"]
   class n6 proved
   n7["ARITH-ALTERNATING-PRIME-HALF-<br/>UNIQUE-MINIMUM<br/>proved"]
@@ -3999,12 +3999,12 @@ flowchart LR
   class n11 proved
   n12["ARITH-D23-SPLIT-TARGET-GCD-<br/>ESTIMATE<br/>proved"]
   class n12 proved
-  n13["ARITH-PAIR-PRIMITIVE-ANGULAR-<br/>BALANCE<br/>stale"]
-  class n13 stale
-  n14["ARITH-PRIMITIVE-NORM-CLASS-<br/>DISAPPEARANCE<br/>stale"]
-  class n14 stale
-  n15["ARITH-PRIMITIVE-NORM-EXACT-<br/>HIGHER-SUMSETS<br/>stale"]
-  class n15 stale
+  n13["ARITH-PAIR-PRIMITIVE-ANGULAR-<br/>BALANCE<br/>proved"]
+  class n13 proved
+  n14["ARITH-PRIMITIVE-NORM-CLASS-<br/>DISAPPEARANCE<br/>proved"]
+  class n14 proved
+  n15["ARITH-PRIMITIVE-NORM-EXACT-<br/>HIGHER-SUMSETS<br/>proved"]
+  class n15 proved
   n16["ARITH-ACTUAL-PRIME-SPLITTING-<br/>DECOMPOSITIONS<br/>proved"]
   class n16 proved
   n17["ARITH-ERDOS675-TRANSLATION-<br/>PROGRAMME<br/>proved"]
@@ -4314,12 +4314,12 @@ flowchart LR
   class r57 proved
   n0 --> r57
   r57 --> n4
-  r58{"AND<br/>PAIR-PRIMITIVE-ANGULAR-PROOF<br/>+2 omitted proof premises<br/>stale"}
-  class r58 stale
+  r58{"AND<br/>PAIR-PRIMITIVE-ANGULAR-PROOF<br/>+2 omitted proof premises<br/>proved"}
+  class r58 proved
   n5 --> r58
   r58 --> n13
-  r59{"AND<br/>PAIR-PRIMITIVE-QUATERNARY-<br/>PRINCIPAL<br/>+5 omitted proof premises<br/>stale"}
-  class r59 stale
+  r59{"AND<br/>PAIR-PRIMITIVE-QUATERNARY-<br/>PRINCIPAL<br/>+5 omitted proof premises<br/>proved"}
+  class r59 proved
   r59 --> n5
   r60{"AND<br/>DERIVE-ARITH-PAIRED-CRITICAL-<br/>BINOMIAL-OBSTRUCTION<br/>+2 omitted proof premises<br/>proved"}
   class r60 proved
@@ -4346,15 +4346,15 @@ flowchart LR
   r67{"AND<br/>PRIMITIVE-NORM-FINITE-SCAN-<br/>PRINCIPAL<br/>+2 omitted proof premises<br/>proved"}
   class r67 proved
   r67 --> n2
-  r68{"AND<br/>PRIMITIVE-NORM-CLASS-<br/>DISAPPEARANCE-COROLLARIES<br/>+1 omitted proof premise<br/>stale"}
-  class r68 stale
+  r68{"AND<br/>PRIMITIVE-NORM-CLASS-<br/>DISAPPEARANCE-COROLLARIES<br/>+1 omitted proof premise<br/>proved"}
+  class r68 proved
   n5 --> r68
   r68 --> n14
   r69{"AND<br/>BINARY-CONDITIONAL-ASSEMBLY<br/>+4 omitted proof premises<br/>proved"}
   class r69 proved
   r69 --> n0
-  r70{"AND<br/>PRIMITIVE-NORM-HIGHER-SUMSETS-<br/>PROOF<br/>+2 omitted proof premises<br/>stale"}
-  class r70 stale
+  r70{"AND<br/>PRIMITIVE-NORM-HIGHER-SUMSETS-<br/>PROOF<br/>+2 omitted proof premises<br/>proved"}
+  class r70 proved
   n5 --> r70
   r70 --> n15
   r71{"AND<br/>ORDER-LEADING-CALIBRATION<br/>+3 omitted proof premises<br/>proved"}
@@ -4973,15 +4973,3 @@ flowchart LR
 Overview: 77 statements and 79 routes (61 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
-
-## Changed or missing evidence
-
-These declarations require inspection and revalidation. Updating a digest alone does not repair the supporting argument.
-
-| Owner | Source | Freshness |
-|---|---|---|
-| GAP-PAIR-PRIMITIVE-HISTORICAL-PRIORITY | [arithmetic/PRIMITIVE_NORM_NOVELTY.md](arithmetic/PRIMITIVE_NORM_NOVELTY.md) | changed |
-| SRC-PAIR-PRIMITIVE-MOBIUS-COMPLETION | [arithmetic/PRIMITIVE_NORM_NOVELTY.md](arithmetic/PRIMITIVE_NORM_NOVELTY.md) | changed |
-| SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON | [arithmetic/PRIMITIVE_NORM_NOVELTY.md](arithmetic/PRIMITIVE_NORM_NOVELTY.md) | changed |
-| ARITH-D8-CLASSICAL-PRIME-COORDINATE-SUBCASES | [arithmetic/PRIMITIVE_NORM_NOVELTY.md](arithmetic/PRIMITIVE_NORM_NOVELTY.md) | changed |
-| D8-CLASSICAL-PRIME-COORDINATE-SUBCASES-PROOF | [arithmetic/PRIMITIVE_NORM_NOVELTY.md](arithmetic/PRIMITIVE_NORM_NOVELTY.md) | changed |

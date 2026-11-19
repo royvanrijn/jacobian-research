@@ -6,22 +6,22 @@ This index maps the retained current research and paper sources to graph stateme
 
 Generated navigation, tooling guides and immutable deposited archives are excluded from this current-source inventory. Archived publication integrity is checked separately.
 
-**Inventory:** 2653/2653 documents; 3332 explicit source declarations indexed. 10 coverage issues.
+**Inventory:** 2653/2663 documents; 3332 explicit source declarations indexed. 10 coverage issues.
 
 [Dependency graph](DEPENDENCIES.md) · [Exact scopes](SCOPES.md) · [Maintenance guide](DEPENDENCY_GUIDE.md)
 
 ## Coverage issues
 
-- changed coverage source: ../results/README.md
-- changed coverage source: ../results/eisenstein-pointwise-counts/README.md
-- changed coverage source: ../results/eisenstein-restricted-prime-sums/README.md
-- changed coverage source: ../results/eisenstein-restricted-prime-sums/metadata.json
-- changed coverage source: ../results/eisenstein-restricted-prime-sums/verification.json
-- changed coverage source: ../results/pointwise-binary-splitting-semigroups/README.md
-- changed coverage source: ../results/pointwise-binary-splitting-semigroups/metadata.json
-- changed coverage source: ../results/pointwise-binary-splitting-semigroups/verification.json
-- changed coverage source: arithmetic/PRIMITIVE_NORM_NOVELTY.md
-- changed coverage source: arithmetic/eisenstein-restricted-prime-sums/README.md
+- unmapped retained document: arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md
+- unmapped retained document: arithmetic/primitive_norm_minus23_effective_checks.json
+- unmapped retained document: arithmetic/primitive_norm_minus23_effective_source_ledger.json
+- unmapped retained document: arithmetic/verify_primitive_norm_minus23_effective.py
+- unmapped retained document: meridional-rank/representations/FREE_MERIDIAN_STABILIZERS.md
+- unmapped retained document: meridional-rank/representations/free_meridian_stabilizers_source_ledger.json
+- unmapped retained document: meridional-rank/representations/free_meridian_stabilizers_verification.json
+- unmapped retained document: meridional-rank/representations/sources/birman-ko-lee-band-generators-1998.pdf
+- unmapped retained document: meridional-rank/representations/sources/farb-margalit-primer-published.pdf
+- unmapped retained document: meridional-rank/representations/verify_free_meridian_stabilizers.py
 
 | Source | Role | Statements | Mapped claims / gaps | Assessment |
 |---|---|---|---|---|

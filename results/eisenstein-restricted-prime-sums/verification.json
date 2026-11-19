@@ -3315,6 +3315,23 @@
     "scope": "Public-record and byte-identity verification only. Hexagon supplies its own compiled PDF and regenerates the source-download ZIP. Historical submission and relocation receipts retain the status at the time they were recorded.",
     "mathematical_content_changed": false,
     "mathematical_computations_rerun": false,
-    "review_assurances_changed": false
+    "review_assurances_changed": false,
+    "current_full_source_bundle_refresh": {
+      "date": "2026-11-19",
+      "archive": "source.zip",
+      "members": 54,
+      "changed_members": [
+        "README.md",
+        "metadata.json",
+        "verification.json"
+      ],
+      "member_set_unchanged": true,
+      "source_and_certificate_members_byte_identical_to_prior_bundle": true,
+      "scope": "Refreshed current README, publication metadata and verification documentation in the full-source download after the public Hexagon status update. The immutable deposited edition and TeX-only submission archive are unchanged.",
+      "verification": "Every refreshed archive member matches its current repository file; the existing build_bundle.py generated the archive.",
+      "pdf_rebuilt": false,
+      "mathematical_computations_rerun": false,
+      "review_assurances_changed": false
+    }
   }
 }

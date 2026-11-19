@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "FREE_MERIDIAN_STABILIZERS.md",
+  "theorem": "Theorem FreeMeridianStabilizer",
+  "scope": "Classical mapping-class ingredients for the exact pointwise free-meridian stabilizer. The based-meridian-to-arc argument, cutting deduction, explicit reversed-index band formula, and deletion left inverse are supplied in the proof. No historical-priority, formal-verification or external-review claim.",
+  "sources": [
+    {
+      "id": "FarbMargalitPrimer",
+      "authors": ["Benson Farb", "Dan Margalit"],
+      "title": "A Primer on Mapping Class Groups",
+      "edition": "Published Princeton Mathematical Series 49, 2012",
+      "url": "https://euclid.nmu.edu/~joshthom/teaching/ma589/farbmarg.pdf",
+      "author_book_page": "https://www.math.uchicago.edu/~farb/books.html",
+      "official_book_site": "https://www.math.utah.edu/~margalit/primer/",
+      "retrieval_note": "The author-linked official book site returned HTTP403. The retained NMU-hosted PDF is the original published book, not a secondary summary.",
+      "retained_path": "sources/farb-margalit-primer-published.pdf",
+      "sha256": "c1d20309290cdcb3f8c0d22edc511b3abe0b8e6bb648d72e316e02a57fed0d93",
+      "inspected": true,
+      "uses": [
+        {"locator": "Section 1.2.7, printed pp.35-36; PDF indices 50-51", "statement": "Proper arcs with boundary/marked endpoints; the arc version of homotopy versus isotopy and ambient isotopy."},
+        {"locator": "Lemma 2.9, printed pp.61-62; PDF indices 76-77", "statement": "Individually isotopic disjoint proper-arc collections can be simultaneously ambient-isotoped relative to the boundary. Distinct protected stem endpoints satisfy the hypotheses."},
+        {"locator": "Section 9.1.3-4 and Theorem 9.1, printed pp.243-245; PDF indices 258-260", "statement": "The braid group is the mapping class group of the boundary-fixed marked disk; adjacent half twists are its standard generators."}
+      ]
+    },
+    {
+      "id": "BirmanKoLee1998",
+      "authors": ["Joan Birman", "Ki Hyoung Ko", "Sang Jin Lee"],
+      "title": "A New Approach to the Word and Conjugacy Problems in the Braid Groups",
+      "edition": "Advances in Mathematics 139 (1998), 322-353, DOI 10.1006/aima.1998.1761",
+      "url": "https://www.math.columbia.edu/~jb/bkl-newpres.pdf",
+      "retained_path": "sources/birman-ko-lee-band-generators-1998.pdf",
+      "sha256": "3a80d7836dd218638addf22d4f6205fb67206db770f817abfc2c23e4b8b029e9",
+      "inspected": true,
+      "uses": [
+        {"locator": "Equation (4), Figure 1(a), and adjacent geometric description, printed p.325; PDF index 3", "statement": "The explicit embedded band word exchanges the endpoint strands on one fixed side of intervening strands. Reversing the index order gives exactly the repository's canonical g_(i,j) word."}
+      ]
+    }
+  ],
+  "verification": {
+    "checker": "verify_free_meridian_stabilizers.py",
+    "receipt": "free_meridian_stabilizers_verification.json",
+    "scope": "Finite exact free-word, framing, braid-relation, protected-subset and deletion controls. They do not replace the unrestricted topological proof."
+  }
+}

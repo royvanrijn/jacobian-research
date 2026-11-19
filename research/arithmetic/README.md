@@ -102,12 +102,12 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform two-leaf double-transposition absorption | Internal result | proved | [Source](UNIFORM_TWO_LEAF_DT_ABSORPTION.md) |
 | Effective reduction of the balanced Eisenstein exception list | Internal result | proved | [Source](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md) |
 | Finite primitive local norm criteria and exact class constraints | Internal result | proved | [Source](PRIMITIVE_NORM_LOCAL_STRUCTURE.md) |
-| Eventual local-global principle for two separately primitive binary forms | Internal result | stale | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
-| Additive disappearance of class obstructions for every imaginary quadratic order | Internal result | stale | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
+| Eventual local-global principle for two separately primitive binary forms | Internal result | proved | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
+| Additive disappearance of class obstructions for every imaginary quadratic order | Internal result | proved | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
 | Two quadratic splitting kernels at the N/log N scale | Internal result | proved | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
 | Primitive norm self-sum classifications through one million | Internal result | proved | [Source](PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md) |
-| Primitive binary norm shells equidistribute and admit fixed balance | Internal result | stale | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
-| Effective higher norm sumsets and exact class-number-one exceptions | Internal result | stale | [Source](PRIMITIVE_NORM_LOCAL_STRUCTURE.md) |
+| Primitive binary norm shells equidistribute and admit fixed balance | Internal result | proved | [Source](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md) |
+| Effective higher norm sumsets and exact class-number-one exceptions | Internal result | proved | [Source](PRIMITIVE_NORM_LOCAL_STRUCTURE.md) |
 | Exact discriminant -8 primitive norm sumset and explicit value counts | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS8_EXACT.md) |
 | Exact discriminant -7 primitive norm sumset and its three exceptions | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS7_EXACT.md) |
 | Exact discriminant -11 primitive norm sumset and explicit value counts | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS11_EFFECTIVE.md) |

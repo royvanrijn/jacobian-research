@@ -1,0 +1,147 @@
+{
+  "title": "Effective all-large discriminant -23 primitive norm sumsets",
+  "proof": "PRIMITIVE_NORM_MINUS23_EFFECTIVE.md",
+  "checkers": [
+    "verify_primitive_norm_minus23_effective.py"
+  ],
+  "receipts": [
+    "primitive_norm_minus23_effective_checks.json"
+  ],
+  "reproduction": [
+    "python3 research/arithmetic/verify_primitive_norm_minus23_effective.py"
+  ],
+  "artifact_sha256": {
+    "PRIMITIVE_NORM_MINUS23_EFFECTIVE.md": "b499725f84e25cf20d892c8585ee57a8ff1c21a354bc0ed8aebcc09bce34f5e0",
+    "verify_primitive_norm_minus23_effective.py": "8ec6470e2901336e2c2e5ec8e2720e3c98bf98a6d611fde3c6606b14ede8f6c7",
+    "primitive_norm_minus23_effective_checks.json": "5fc4173180df8298830f5b8151fdae4fe76af9ab2dbbfccfea839cfd0448a620"
+  },
+  "results": [
+    {
+      "name": "CN3JointSmallPrimes",
+      "scope": "For N=2^a3^b m, a,b>=0, gcd(m,138)=1, count all signed ordered O-norm-N elements whose two binary coordinate blocks are both nonzero modulo2 and modulo3. Main term4w*d2(a)*d3(b)*rho2(a)*rho3(b)*sigma(m), error<=144(a+1)(b+1)tau(m)sqrt(N). Here w=3/11, d_p(0)=1,d_p(t)=(p+1)p^(t-1); rho2=(2/3 at0,5/9 otherwise),rho3=(5/6 at0,3/4 otherwise).",
+      "local_normalization": "Both target-dividing branches use two principal axis points of massw/6 and an eight-times aggregate return. Mixed branches use one point of massw/9 orw/6 and factor8; both-unit branch has massw/18 and factor4. Normalizer compact norms are all local units, so only constants occur."
+    },
+    {
+      "name": "CN3EffectiveAll",
+      "scope": "For every N>=2^249, with P the positive primitive x^2+xy+6y^2 numerical values, N belongs to P+P if and only if529 does not divideN. At every admissible such target the ordered numerical value-pair count is at least N^(5/7)/15000000000.",
+      "stronger_unit_statement": "For23-unit N satisfying N^(3/28)>=52800*1424, the signed U+U count is at least3N/550 and its numerical value-pair count is at least3N^(5/7)/(2200*1424^2), where U consists of primitive23-unit values. In particular the power-of-two unit cutoff2^245 suffices.",
+      "limits": "No complete finite40-exception classification below2^249; the retained bounded scan and the middle bridge remain separate. No logarithmic leading-term onset, external human review, formal verification or historical priority is asserted."
+    }
+  ],
+  "proof_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+      "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+      "result_id": "ARITH-D23-SPLIT-TARGET-GCD-ESTIMATE",
+      "scope": "Split rank-one bad-axis mass, exact V_t=B^(t-1)F endpoint correspondence, full complementary bound including nonspherical sector, mass and signed stabilizer return factor. Applied with commuting positive D2,D3 primitive operators."
+    },
+    {
+      "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+      "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+      "result_id": "ARITH-MS-EXACT-LEM-HECKE-TRANSFER",
+      "scope": "All-integral-ideal Hecke lemma removes ALL global reduced-norm characters before the tau(m)sqrt(m) norm bound. Index primes have maximal compact level; all fixed nonmaximal levels are kept away from those index primes. The unramified root assertion is used only after passing to the appropriate coarser maximal-p level.",
+      "hypotheses_checked": "Iwahori and split/nonsplit Cartan normalizer compact unit norms are full local units. The23 axis compact has square-residue unit norms, and the explicit positive-rational finite-idele quotient has exactly two norm characters1 andchi23. Both character components are retained with equal point coefficientw/12; chi23(2)=chi23(3)=1 handles simultaneous D2,D3."
+    }
+  ],
+  "checker_inputs": [
+    {
+      "path": "verify_primitive_norm_minus23_split_targets.py",
+      "sha256": "fb60a06b0b7bc1aea011dbdba43dc5cc2932da4cc20f89cbff9dac205b78ac16",
+      "scope": "Pinned finite exact quaternion multiplication, norm-vector and matrix helpers. The effective checker rejects any other source edition."
+    }
+  ],
+  "primary_source_audit": [
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "edition": "Author edition1.0.7u, 5August2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "inspected_statements": [
+        "Main Theorem14.7.4, printedp226: Hasse-Schilling identifies the rational reduced norms with the rationals positive at ramified real places. Here this is Q>0, used in the explicit finite-idele norm-character quotient.",
+        "Theorem25.1.1: maximal definite inverse-projective-unit mass; here discriminant23 gives11/6.",
+        "Proposition23.5.8 and23.5.12: regular tree and lattice/coset model.",
+        "Lemma23.5.15 and23.5.16: lattice distance, Eichler edge paths and endpoint-reversing normalizer.",
+        "Propositions41.3.1 and41.3.6: all-integral-ideal degrees, coprime composition and local recurrence."
+      ],
+      "inspection_scope": "Actual retained primary statements and the elementary tree arguments inspected; the split endpoint selection, full-space bound and signed-return normalization are proved in this note."
+    },
+    {
+      "authors": "H. Jacquet and R. P. Langlands",
+      "title": "Automorphic Forms on GL(2)",
+      "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+      "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+      "role": "Existing import through the shared proof: Theorem14.4 and Section5 Proposition5.20, cuspidal transfer, exclusion of finite-dimensional split-place factors, and weight-two infinite type.",
+      "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+      "inspection_limit": "Inherited pinned import; no fresh complete primary-proof revalidation is claimed in this application."
+    },
+    {
+      "author": "P. Deligne",
+      "title": "Formes modulaires et representations l-adiques",
+      "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+      "local_path": "sources/deligne-modular-355.pdf",
+      "role": "Existing import through the shared proof: Theorems4.9 and5.1, modular Frobenius-Hecke relation and purity interface.",
+      "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+      "inspection_limit": "Inherited pinned import; no fresh complete primary-proof revalidation is claimed in this application."
+    },
+    {
+      "author": "P. Deligne",
+      "title": "La conjecture de Weil.I",
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "local_path": "sources/deligne-weil-I.pdf",
+      "role": "Existing import through the shared proof: Theorem1.6 supplies the weight-two unramified root bound.",
+      "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+      "inspection_limit": "Inherited pinned import; no fresh complete primary-proof revalidation is claimed in this application."
+    }
+  ],
+  "closest_classical_comparisons": [
+    {
+      "author": "Jorg Brudern",
+      "title": "Sums of squares coprime in pairs",
+      "year": 2014,
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/85773",
+      "local_path": "sources/brudern-coprime-squares-2014.pdf",
+      "sha256": "9c8744c44fb31814ccfe62a81ce2e55f8b300b1421d4c96991449ae0b37b12f5",
+      "statement_inspected": "Theorem2, printedp219: power-saving four-square asymptotic with coordinate pairs coprime.",
+      "comparison": "A closely related analytic primitivity problem; its sum-of-squares form is different from Q23 plus Q23, so it does not directly settle the present target-dividing split-prime endpoint estimate."
+    },
+    {
+      "authors": "Zhi-Hong Sun and Kenneth S. Williams",
+      "title": "Ramanujan identities and Euler products for a type of Dirichlet series",
+      "year": 2006,
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/82058",
+      "statement_inspected": "Theorems7.1(i) and7.2, printedpp385-386: class-number-three ordinary representation Euler products.",
+      "comparison": "Classical ordinary form representation formulas do not enforce the whole-prime-power orientation needed for primitive binary coordinates. They are contextual, not an imported proof of the new endpoint estimate."
+    }
+  ],
+  "new_global_transitions": [
+    "Full pO branch is exactly the N/p^2 shell retaining two-and-three four-coordinate primitivity; split worst bad mass is(5p-3)/(p^2(p+1)), inert worst mass2/(p(p-1)). Each finite good-prime error is <=80tau(N)sqrt(N).",
+    "Ramified model O23=Z23[j]+Z23[j]sqrt(-23), residue F529, axis compact index12. Scalar Hensel squares give every principal unit norm; positive rational norms and clearing all valuations leave precisely the square-residue quotient. Strong unit bad mass is(1+chi23(N))/12<=1/6, with16tau(N)sqrt(N) error.",
+    "Remaining good-prime mass sum is strictly<6/25 by exact upward-rounded prime terms through65536 and a bound over every larger odd integer. With joint mass>=5/12 and ram loss<=1/6 this leaves1/100.",
+    "The complete large-prime coordinate-gcd tail uses r_Q(n)<=2tau(n), S_Q(X)<=6X and tau(n)<=1424n^(1/7). Zero blocks are already excluded by the small-prime selection; primes>sqrt(N) cannot obstruct. At Y=floorN^(1/4), total spectral+tail error<=288*1424N^(25/28).",
+    "The exact integer cutoff2^747>=23^3(52800*1424)^28 handles the scaled rational unit threshold, rather than rounding it to2^245. Primitive23 scaling has explicit coordinate matrix(-x-12y,2x+y); value-pair multiplicities give the stated N^(5/7) bound."
+  ],
+  "finite_verification": {
+    "receipt_sha256": "5fc4173180df8298830f5b8151fdae4fe76af9ab2dbbfccfea839cfd0448a620",
+    "actual_operators": [
+      "Complete22-state joint Iwahori2x3 quotient and24 signed-coordinate return comparisons through5184.",
+      "Mixed Iwahori/normalizer quotients34 and22 states, and the34-state both-normalizer quotient; exact positive-prime returns at2^t,3^t,5^t.",
+      "Complete28-state fine23 axis quotient of projective residueC24 byaxisC2, principal mass1/44; T2,T3 fix both character eigenvectors with full degree. All35 simultaneous D2/D3 returns through5184 match complete signed coordinate enumeration.",
+      "Actual T5 at fine23 has T5*chi23=-6chi23 and matches signed bad counts0,4,0,148 at5,25,125,625, directly exercising both norm-character signs."
+    ],
+    "rational_packet": [
+      "Complete finite Euler maxima for tau(n)<=1424n^(1/7), with a monotone adjacent-ratio proof covering every higher exponent and all primes>=128.",
+      "65536-prime local mass sum with every rational term rounded upward, plus a complete infinite odd-integer tail.",
+      "All22 nonzero norm fibers overF23, exact two-character axis fractions, both power-of-two cutoff comparisons and final value-count constant."
+    ],
+    "negative_control": "Python optimization mode is rejected before certificate output, because exact controls use assertions.",
+    "limits": "Finite return comparisons and constants support the unrestricted written proof; they do not replace its infinite spectral/correspondence/tail arguments."
+  },
+  "internal_review": {
+    "root": "Independent E1-E8 audit passed all joint factors, full-content ratios, ramified two-character gate, divisor and local-margin constants, complete tail, exponent25/28, exact cutoff and numerical-pair bound.",
+    "separate_reviewer": "Independent internal reconstruction of the full J23Uniform and E1-E8 proof passed, including the finite-idele norm-character quotient and scaled threshold. The then-current complete portable checker and separate28-state ramified packet were independently replayed.",
+    "additional_negative_character_control": "The actual T5 negative-character controls were added at root request and replayed by the author in the final portable checker. No unreceived external or formal review is asserted."
+  },
+  "assurance": "Written proof using pinned classical inputs, independently reviewed internally with exact finite computational support. No external human review, formal verification or historical priority."
+}

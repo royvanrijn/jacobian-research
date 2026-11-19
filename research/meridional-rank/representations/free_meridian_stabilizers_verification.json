@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "sources": {
+    "research/meridional-rank/representations/FREE_MERIDIAN_STABILIZERS.md": "10a51e4b27317075c56629be1a818d60f089dd8a711e7de52f3ec9206564eac4",
+    "research/meridional-rank/representations/verify_free_meridian_stabilizers.py": "3be081aca802e13dadd2feb91a60ceead6b6ea98c4ab09b349df413264a219b3",
+    "research/meridional-rank/representations/free_meridian_stabilizers_source_ledger.json": "a553e9088f3be21a3342d70f5f236f96cd6f8fd54e3eac76da8cab2dbcc27b04",
+    "research/meridional-rank/representations/sources/farb-margalit-primer-published.pdf": "c1d20309290cdcb3f8c0d22edc511b3abe0b8e6bb648d72e316e02a57fed0d93",
+    "research/meridional-rank/representations/sources/birman-ko-lee-band-generators-1998.pdf": "3a80d7836dd218638addf22d4f6205fb67206db770f817abfc2c23e4b8b029e9"
+  },
+  "exact_band_formula_controls": 286,
+  "protected_subsets": 510,
+  "signed_generator_controls": 2582,
+  "framed_braid_relations": 825,
+  "framed_commuting_relations": 699,
+  "lifted_word_controls": 2628,
+  "examples": [
+    {
+      "strands": 8,
+      "protected": [
+        1,
+        4,
+        5,
+        8
+      ],
+      "mobile": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "mobile_word": [
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2
+      ],
+      "lifted_band_word": [
+        2,
+        3,
+        4,
+        5,
+        -4,
+        -3,
+        -2,
+        3,
+        4,
+        -5,
+        -4,
+        -3,
+        2,
+        3,
+        4,
+        -5,
+        -4,
+        -3
+      ],
+      "deleted_word": [
+        1,
+        2,
+        -1,
+        -2,
+        1,
+        -2
+      ]
+    }
+  ],
+  "negative_controls": {
+    "opposite_band_rejected": true,
+    "fixed_conjugacy_is_not_fixed_word": true,
+    "pure_full_twist_output": [
+      [
+        -2,
+        1,
+        2
+      ],
+      [
+        -2,
+        -1,
+        2,
+        1,
+        2
+      ]
+    ]
+  },
+  "scope": "Bounded exact Artin free-word formula, protected subsets, framed Hurwitz actions, braid relations, and strand-deletion left inverses. The unrestricted full stabilizer theorem depends on the written based-arc and cutting proof, not on this finite computation. No formal or external review is asserted."
+}

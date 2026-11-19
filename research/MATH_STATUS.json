@@ -184890,7 +184890,7 @@
           "statements": [],
           "role": "manuscript",
           "explanation": "Full research source bundle for the current34-page exact-classification manuscript, including its32 unchanged certificate snapshots, replay instructions and review records. The separate hexagon-source.zip contains only18 TeX files; neither distribution adds mathematical assurance.",
-          "sha256": "285428c9008a05c0393179c68da9cc1c50ca8de412fccabc303ee58ee7a28888"
+          "sha256": "8634ac87e061454130e75ae8c1b8806659b2f81b13896d5b4deb9c753eb003d3"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/spectral_check.py",
@@ -184938,7 +184938,7 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Retained finite replay and scoped internal manuscript review history, with the current editorial edition/build/layout checks. No external human review, formal verification or independent import-proof certification is inferred.",
-          "sha256": "1c62bed490757db9b62ee1fd82b16b58387db3b761a0bc4e1334fc9cce780d9e"
+          "sha256": "8c2178f4484afa04d0c02d00ec5e0a23ac545bd0bf9913f572f3fd2d6af93910"
         },
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/verify_binary_certificates.py",
@@ -262158,7 +262158,7 @@
         },
         {
           "path": "../results/pointwise-binary-splitting-semigroups/source.zip",
-          "sha256": "405e56e47a599dd524a6bed5376c79ca7b1551845b3bc62f690e500f3be8ea32",
+          "sha256": "070521e662376a00136d2f56a9e578673f012370ac288427eb97ad61d434270b",
           "role": "evidence",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -262192,7 +262192,7 @@
         },
         {
           "path": "../results/pointwise-binary-splitting-semigroups/source_manifest.json",
-          "sha256": "04380f0d45f99afa04805c2ca264ca5c6f77292828c97de4d452fc0616fd82fc",
+          "sha256": "65ae685aab9708ebafbd15f6408e642190d7e76bf7fdc4f65cd7cdff751fe223",
           "role": "documentation",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -262209,7 +262209,7 @@
         },
         {
           "path": "../results/pointwise-binary-splitting-semigroups/verification.json",
-          "sha256": "2821cb3578574e483583efb473c3559c6b6e91c7371f69ea3c229a09f1a1e7fe",
+          "sha256": "85c39af35e0e44ef73d91c731d1f18d0d17d50f331644e5495be6045550550ae",
           "role": "evidence",
           "claims": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",

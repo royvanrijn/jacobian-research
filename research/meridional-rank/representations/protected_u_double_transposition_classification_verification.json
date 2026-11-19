@@ -1,0 +1,4842 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "scope": "complete local DT classification; exact local component-slot certificates; finite controls supporting the unrestricted written all-k tail barrier",
+  "source_sha256": {
+    "research/meridional-rank/representations/verify_protected_u_double_transposition_classification.py": "afcd756cee9e9a2a6678ccc13494cb5aa0d403a90a17654748a6ab4b050601a0",
+    "research/meridional-rank/representations/verify_protected_block_forest_colorings.py": "1491dd349307b4d7d655f2df6daa89ff0a62dc4c5852b090ef80b7cf82d41f9e",
+    "research/meridional-rank/representations/PROTECTED_U_DOUBLE_TRANSPOSITION_CLASSIFICATION.md": "d180a0332b21911a2c06a05f449ce2d452fe479ac198c64d25d428371c2fcea3",
+    "research/meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
+    "research/meridional-rank/representations/FREE_MERIDIAN_STABILIZERS.md": "10a51e4b27317075c56629be1a818d60f089dd8a711e7de52f3ec9206564eac4",
+    "research/meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8"
+  },
+  "complete_forest_census": [
+    {
+      "vertices": 2,
+      "first_color_representatives": 2,
+      "minimal_factorizations": 4,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 2
+    },
+    {
+      "vertices": 3,
+      "first_color_representatives": 2,
+      "minimal_factorizations": 12,
+      "outer_returning_factorizations": 3,
+      "cached_residuals": 5
+    },
+    {
+      "vertices": 4,
+      "first_color_representatives": 5,
+      "minimal_factorizations": 49,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 13
+    },
+    {
+      "vertices": 5,
+      "first_color_representatives": 6,
+      "minimal_factorizations": 163,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 33
+    },
+    {
+      "vertices": 6,
+      "first_color_representatives": 13,
+      "minimal_factorizations": 647,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 93
+    },
+    {
+      "vertices": 7,
+      "first_color_representatives": 19,
+      "minimal_factorizations": 1736,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 216
+    },
+    {
+      "vertices": 8,
+      "first_color_representatives": 33,
+      "minimal_factorizations": 4395,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 444
+    },
+    {
+      "vertices": 9,
+      "first_color_representatives": 42,
+      "minimal_factorizations": 6561,
+      "outer_returning_factorizations": 0,
+      "cached_residuals": 701
+    }
+  ],
+  "complete_cyclic_component_census": [
+    {
+      "vertices": 2,
+      "first_color_edges": 0,
+      "tested": 4,
+      "outer_returns": 1,
+      "connected": 1,
+      "orbits": 1
+    },
+    {
+      "vertices": 2,
+      "first_color_edges": 1,
+      "tested": 7,
+      "outer_returns": 2,
+      "connected": 2,
+      "orbits": 2
+    },
+    {
+      "vertices": 3,
+      "first_color_edges": 0,
+      "tested": 27,
+      "outer_returns": 0,
+      "connected": 0,
+      "orbits": 0
+    },
+    {
+      "vertices": 3,
+      "first_color_edges": 1,
+      "tested": 54,
+      "outer_returns": 3,
+      "connected": 2,
+      "orbits": 1
+    },
+    {
+      "vertices": 4,
+      "first_color_edges": 0,
+      "tested": 540,
+      "outer_returns": 3,
+      "connected": 0,
+      "orbits": 0
+    },
+    {
+      "vertices": 4,
+      "first_color_edges": 1,
+      "tested": 864,
+      "outer_returns": 9,
+      "connected": 2,
+      "orbits": 1
+    },
+    {
+      "vertices": 4,
+      "first_color_edges": 2,
+      "tested": 981,
+      "outer_returns": 18,
+      "connected": 14,
+      "orbits": 3
+    },
+    {
+      "vertices": 5,
+      "first_color_edges": 0,
+      "tested": 10125,
+      "outer_returns": 0,
+      "connected": 0,
+      "orbits": 0
+    },
+    {
+      "vertices": 5,
+      "first_color_edges": 1,
+      "tested": 15300,
+      "outer_returns": 45,
+      "connected": 24,
+      "orbits": 2
+    },
+    {
+      "vertices": 5,
+      "first_color_edges": 2,
+      "tested": 17200,
+      "outer_returns": 49,
+      "connected": 24,
+      "orbits": 3
+    },
+    {
+      "vertices": 6,
+      "first_color_edges": 0,
+      "tested": 91125,
+      "outer_returns": 0,
+      "connected": 0,
+      "orbits": 0
+    },
+    {
+      "vertices": 6,
+      "first_color_edges": 1,
+      "tested": 182250,
+      "outer_returns": 237,
+      "connected": 24,
+      "orbits": 1
+    },
+    {
+      "vertices": 6,
+      "first_color_edges": 2,
+      "tested": 218700,
+      "outer_returns": 196,
+      "connected": 88,
+      "orbits": 6
+    },
+    {
+      "vertices": 7,
+      "first_color_edges": 1,
+      "tested": 1157625,
+      "outer_returns": 0,
+      "connected": 0,
+      "orbits": 0
+    },
+    {
+      "vertices": 7,
+      "first_color_edges": 2,
+      "tested": 1852200,
+      "outer_returns": 573,
+      "connected": 48,
+      "orbits": 1
+    },
+    {
+      "vertices": 8,
+      "first_color_edges": 2,
+      "tested": 9261000,
+      "outer_returns": 1906,
+      "connected": 192,
+      "orbits": 1
+    }
+  ],
+  "connected_component_representatives": [
+    {
+      "vertices": 2,
+      "counts": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "cycle_rank": 1,
+      "colors": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "vertices": 2,
+      "counts": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cycle_rank": 1,
+      "colors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 2,
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "vertices": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cycle_rank": 2,
+      "colors": [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "vertices": 4,
+      "counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 4,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 5,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 4,
+      "counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "vertices": 4,
+      "counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "vertices": 5,
+      "counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "cycle_rank": 2,
+      "colors": [
+        [
+          1,
+          0,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4
+        ],
+        [
+          2,
+          1,
+          0,
+          4,
+          3
+        ]
+      ]
+    },
+    {
+      "vertices": 5,
+      "counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "cycle_rank": 2,
+      "colors": [
+        [
+          1,
+          0,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4
+        ],
+        [
+          3,
+          4,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ]
+      ]
+    },
+    {
+      "vertices": 5,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 4,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 5,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 4,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 5,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 4,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "cycle_rank": 1,
+      "colors": [
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          5,
+          4
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "cycle_rank": 1,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5
+        ],
+        [
+          5,
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "vertices": 6,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 3,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3,
+          5
+        ],
+        [
+          5,
+          1,
+          2,
+          4,
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "vertices": 7,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 2,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ]
+      ]
+    },
+    {
+      "vertices": 8,
+      "counts": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cycle_rank": 1,
+      "colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          5,
+          6,
+          2,
+          3,
+          4,
+          0,
+          1,
+          7
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          7,
+          6
+        ]
+      ]
+    },
+    {
+      "cycle_rank": 0,
+      "vertices": 3,
+      "counts": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "colors": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "full_local_type_count": 31,
+  "full_cycle_rank_distribution": {
+    "1": 2,
+    "2": 4,
+    "3": 11,
+    "4": 10,
+    "5": 3,
+    "6": 1
+  },
+  "local_component_slot_certificates": [
+    {
+      "component_ids": [
+        5
+      ],
+      "vertices": 4,
+      "cycle_rank": 5,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        10
+      ],
+      "vertices": 5,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        11
+      ],
+      "vertices": 5,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        12
+      ],
+      "vertices": 5,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        14
+      ],
+      "vertices": 6,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        15
+      ],
+      "vertices": 6,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        16
+      ],
+      "vertices": 6,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        17
+      ],
+      "vertices": 6,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          5,
+          4
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          5,
+          4
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          5,
+          4
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          5,
+          4
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        19
+      ],
+      "vertices": 6,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3,
+          5
+        ],
+        [
+          5,
+          1,
+          2,
+          4,
+          3,
+          0
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          3,
+          1,
+          4,
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          5,
+          1,
+          2,
+          4,
+          3,
+          0
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_component_slots": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        20
+      ],
+      "vertices": 7,
+      "cycle_rank": 2,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          2,
+          5,
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        21
+      ],
+      "vertices": 8,
+      "cycle_rank": 1,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          5,
+          6,
+          2,
+          3,
+          4,
+          0,
+          1,
+          7
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          7,
+          6
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          5,
+          4,
+          2,
+          3,
+          1,
+          0,
+          6,
+          7
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1,
+          7
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          7,
+          6
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "output_edge_order_flips": [
+        1,
+        1
+      ],
+      "component_slot_permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "component_slot_cost": 1,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 2,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        0,
+        6
+      ],
+      "vertices": 6,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        0,
+        7
+      ],
+      "vertices": 6,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          5,
+          3,
+          4,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        0,
+        18
+      ],
+      "vertices": 8,
+      "cycle_rank": 2,
+      "input_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          6,
+          5,
+          4,
+          3,
+          7
+        ],
+        [
+          1,
+          0,
+          7,
+          3,
+          4,
+          5,
+          6,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6,
+          7
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7,
+          6,
+          4,
+          5,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6,
+          7
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "output_edge_order_flips": [
+        1,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "component_slot_cost": 1,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        1,
+        4
+      ],
+      "vertices": 6,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          5,
+          4,
+          3,
+          2
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        1,
+        8
+      ],
+      "vertices": 7,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        1,
+        9
+      ],
+      "vertices": 7,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          5,
+          6,
+          4,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          5,
+          4,
+          3,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4,
+          6
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "output_component_slots": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        1,
+        13
+      ],
+      "vertices": 8,
+      "cycle_rank": 2,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          6,
+          7,
+          4,
+          5,
+          2,
+          3
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          6,
+          7,
+          4,
+          5,
+          2,
+          3
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 2,
+      "cost_plus_omission": 2,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        2,
+        2
+      ],
+      "vertices": 4,
+      "cycle_rank": 6,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        2,
+        3
+      ],
+      "vertices": 5,
+      "cycle_rank": 5,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          2
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          2
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        3,
+        3
+      ],
+      "vertices": 6,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        [
+          2,
+          1,
+          0,
+          5,
+          4,
+          3
+        ],
+        [
+          2,
+          1,
+          0,
+          5,
+          4,
+          3
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        [
+          2,
+          1,
+          0,
+          5,
+          4,
+          3
+        ],
+        [
+          2,
+          1,
+          0,
+          5,
+          4,
+          3
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        6,
+        22
+      ],
+      "vertices": 7,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        7,
+        22
+      ],
+      "vertices": 7,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": false
+    },
+    {
+      "component_ids": [
+        18,
+        22
+      ],
+      "vertices": 9,
+      "cycle_rank": 1,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          1,
+          2,
+          3,
+          4,
+          0,
+          7,
+          6,
+          8
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          8,
+          7
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          4,
+          2,
+          3,
+          1,
+          0,
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          7,
+          6,
+          8
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          8,
+          7
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "output_edge_order_flips": [
+        1,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "component_slot_cost": 1,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 2,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        0,
+        1,
+        2
+      ],
+      "vertices": 6,
+      "cycle_rank": 5,
+      "input_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "output_component_slots": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        0,
+        1,
+        3
+      ],
+      "vertices": 7,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          6,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          6,
+          5,
+          4
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          6,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          6,
+          5,
+          4
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "output_component_slots": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        1,
+        2,
+        22
+      ],
+      "vertices": 7,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        1,
+        3,
+        22
+      ],
+      "vertices": 8,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          5,
+          7,
+          6
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          5,
+          7,
+          6
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "vertices": 8,
+      "cycle_rank": 4,
+      "input_colors": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          7,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          7,
+          6
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          7,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          7,
+          6
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "input_component_slots": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "output_component_slots": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 0,
+      "cost_plus_omission": 0,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        0,
+        1,
+        1,
+        22
+      ],
+      "vertices": 9,
+      "cycle_rank": 3,
+      "input_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          7
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          7
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "input_component_slots": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "output_component_slots": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 1,
+      "cost_plus_omission": 1,
+      "same_geometric_mobile_edge_multiset": true
+    },
+    {
+      "component_ids": [
+        1,
+        1,
+        22,
+        22
+      ],
+      "vertices": 10,
+      "cycle_rank": 2,
+      "input_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          8,
+          7,
+          9
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          5,
+          7,
+          9,
+          8
+        ]
+      ],
+      "prefix_output_colors": [
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          8,
+          7,
+          9
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          5,
+          7,
+          9,
+          8
+        ]
+      ],
+      "local_mobile_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "input_component_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "output_component_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "output_edge_order_flips": [
+        0,
+        0
+      ],
+      "component_slot_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "component_slot_cost": 0,
+      "omitted_mobile_symbols": 2,
+      "cost_plus_omission": 2,
+      "same_geometric_mobile_edge_multiset": true
+    }
+  ],
+  "slot_control_count": 65128,
+  "crossing_sign_mutations_rejected": 14,
+  "assurance": {
+    "internal_replay": true,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "does_not_establish": [
+    "actual knot gap upper bound",
+    "other finite meridian classes",
+    "other meridional invariants",
+    "overlapping obstruction blocks",
+    "prime or hyperbolic gap-two knot"
+  ]
+}
