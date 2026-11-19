@@ -158,7 +158,7 @@ For (C4), keep exact bank records \(r,s\le E\); larger ones
 have contribution \(XL^{O(1)}e^{-cL^{1/10}}\) by
 \eqref{eq:record-tail}. The retained records are coprime because
 bank primes dividing \(h\) have been deleted. Their divisibilities
-give one progression of length \(O(|J|/(rs))\).
+give one progression with \(|J|/(rs)+O(1)\) terms.
 Exactness contributes two excluded bank roots outside \(rs\),
 and one at a prime of \(rs\). Together with \(1/(rs)\), these
 are exactly the record masses \eqref{eq:bank-law}.
@@ -182,7 +182,14 @@ For \(ff\), \(Df\), and \(DD\), the nonbank sieve
 denominators have orders respectively
 \(\log w\), \((\log y\log w)^{1/2}\), and \(\log y\).
 The bound \(D\ll L^{-3/10}\) supplies the missing factor
-on each model side. All three cases therefore give the common
+on each model side. Explicitly, since \(\log y=L^{2/5}\)
+and \(\log w\asymp L\), their factors are
+\[
+ (\log w)^{-1}\ll L^{-1},\qquad
+ \frac{L^{-3/10}}{(\log y\log w)^{1/2}}\ll L^{-1},\qquad
+ \frac{L^{-3/5}}{\log y}=L^{-1}.
+\]
+All three cases therefore give the common
 scale \(\mathcal S_X=X/L\), with the exact bank masses.
 This proves (C4), uniformly in the interval \(J\). The exponents
 in the exceptional-record errors do not depend on the final
@@ -211,12 +218,15 @@ At an inert prime the local pair density is
 \begin{equation}\label{eq:quadratic-inert-pair}
  \delta_p(h)=\frac p{p+1}(1-p^{-v_p(h)-1}).
 \end{equation}
-To see this, partition \(v_p(n)\) below, equal to, and above
-\(v_p(h)\). Below that valuation both endpoints have the same
-valuation; the permitted even terms form a geometric sum. At
-equality the two possible higher even tails have total mass
-\(2/(p(p+1))\), in addition to the \((p-2)/p\) unit mass.
-These sums give \eqref{eq:quadratic-inert-pair}, also for \(p=2\).
+To see this, put \(e=v_p(h)\) and partition \(v_p(n)\)
+below, equal to, and above \(e\). Below \(e\), both endpoints
+have the same valuation, and the permitted even terms form a
+geometric sum. If \(e\) is odd there are no further terms.
+If \(e\) is even, the stratum with both valuations equal to
+\(e\) has mass \(p^{-e}(p-2)/p\); the two possible higher
+even tails have combined mass \(2p^{-e}/(p(p+1))\).
+The two parity cases give \eqref{eq:quadratic-inert-pair}, also
+for \(p=2\).
 
 We justify the product of these densities at the growing cutoff.
 Extract the inert square parts \(d^2,e^2\), with \(d,e\)
@@ -227,12 +237,22 @@ each bad-prime power at \(E\). The omitted integer count is
 unit state gives an empty stratum or finitely many progressions
 modulo \(X^{o(1)}\). On them the two residual forms must be
 units at the primes in \(I_y\). Empty root cells are discarded;
-the remaining sieve dimension is at most one. Upper and lower
-fundamental-lemma weights at a small fixed power level have
-parameter \(\log(X^\epsilon)/\log y\asymp L^{3/5}\), so
-their relative error is smaller than every log power. The total
-CRT error over the \(X^{o(1)}\) prefixes is power smaller than
-\(X\). Their main masses are summable: compatibility requires
+the remaining sieve dimension is at most one. There are at most
+\(O_{B_0,q}(E^2(\log E)^{2|B_0|})\) retained cells: two
+square prefixes, two bounded valuation lists, and a fixed number
+of residual unit choices. Their moduli are at most
+\(O_{B_0,q}(E^{4+2|B_0|})\). Use upper and lower
+fundamental-lemma weights of level \(D_0=X^{1/100}\).
+Their parameter \(\log D_0/\log y\asymp L^{3/5}\)
+gives relative error smaller than every log power. Since the
+root count at a squarefree sieve divisor is at most
+\(2^{\omega(d)}\), a conservative total endpoint bound is
+\[
+ E^{O_{B_0,q}(1)}D_0^2(\log D_0)^{O(1)}
+                         =X^{1/50+o(1)}.
+\]
+This is negligible compared with \(X/L^A\) for every fixed
+\(A\). Their main masses are summable: compatibility requires
 \((d,e)^2\mid h\), and their progression densities are
 \(\ll_h1/\operatorname{lcm}(d^2,e^2)\), with geometric
 bad-prime tails. Summing the disjoint valuation cells proves
@@ -264,7 +284,8 @@ so \(W_{B_0}(h)>0\). This proves the exact zero assertion.
 
 Let \(b_d(n)\) indicate the positive integers of the form
 \(x^2+dy^2\), with \(x,y\in\Z\). Coordinates may vanish,
-and no coprimality condition is imposed. Smilansky's
+and no coprimality condition is imposed. Put \(b_d(n)=0\)
+for \(n\le0\). Smilansky's
 prime-factor criterion \cite[Theorem 10]{smilansky} identifies
 these ordinary indicators with the preceding Euler indicators:
 \[

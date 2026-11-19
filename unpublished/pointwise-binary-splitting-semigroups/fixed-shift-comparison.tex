@@ -54,16 +54,39 @@ is supported on \(n\asymp Y\), then
  \ll_C\frac1Y\int_{\mathbb R}(1+H|t|/Y)^{-2}
                          \left|\sum_na_nn^{it}\right|^2dt.
 \end{equation}
-For completeness, the interval kernel of length \(H/(4C)\) and
-Plancherel bound the left side by
-\(O(H^{-2})\int|\sum_{v<n\le v+H/(4C)}a_n|^2dv\).
-The short-interval Mellin mean-square identity bounds this by
+Here is the averaging step in that inequality, following
+\cite[Lemmas 2.1--2.2]{soundararajan}. Put
+\(\eta=H/(4C)\), \(A(v)=\sum_{n\le v}a_n\),
+\(P(t)=\sum_na_nn^{it}\), and
+\(J_\eta=\int_0^\infty|A(v+\eta)-A(v)|^2dv\).
+The interval kernel has Fourier transform of modulus at least
+\(c\eta\) on \(|\beta|\le C/H\), so Plancherel bounds the
+left side by \(O(\eta^{-2}J_\eta)\).
+For \(2\eta\le\nu\le3\eta\), split the increment at \(v+\nu\),
+square, and average in \(\nu\). Changing \(v\) to \(v+\eta\)
+in the second increment gives, if the coefficients are supported
+on \([aY,bY]\),
 \[
- O(YH^{-2})\int_{\mathbb R}
-       \min\{H^2/Y^2,|t|^{-2}\}
-                    \left|\sum_na_nn^{it}\right|^2dt,
+ J_\eta\ll\eta^{-1}\int_\eta^{3\eta}
+       \int_{aY/2}^{2bY}|A(v+\nu)-A(v)|^2dv\,d\nu.
 \]
-which is \eqref{eq:fixed-additive-mellin}. The other inequality,
+Substitute \(\nu=\Delta v\). Since \(v\asymp Y\), this is at most
+\[
+ \frac{CY^2}{\eta}
+ \int_{c_1\eta/Y}^{c_2\eta/Y}\int_0^\infty
+       |A(v(1+\Delta))-A(v)|^2\frac{dv}{v}\,d\Delta.
+\]
+Logarithmic Plancherel evaluates the inner integral exactly as
+\[
+ \frac1{2\pi}\int_{\mathbb R}|P(t)|^2
+          \left|\frac{(1+\Delta)^{it}-1}{t}\right|^2dt.
+\]
+The kernel is \(O(\min\{\eta^2/Y^2,|t|^{-2}\})\), and
+the \(\Delta\)-interval has length \(O(\eta/Y)\). Thus
+\(J_\eta\ll Y\int\min\{\eta^2/Y^2,|t|^{-2}\}|P(t)|^2dt\).
+Multiplying by \(\eta^{-2}\) proves
+\eqref{eq:fixed-additive-mellin}; no identification of fixed additive
+windows with fixed multiplicative windows is used. The other inequality,
 the ordinary Dirichlet-polynomial mean-value theorem, is
 \begin{equation}\label{eq:fixed-dirichlet-mean}
  \int_I\left|\sum_{n\le CR}a_nn^{it}\right|^2dt

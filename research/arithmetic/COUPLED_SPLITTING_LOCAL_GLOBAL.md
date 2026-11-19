@@ -482,6 +482,18 @@ separable-endpoint comparison cannot simply absorb it.
 A genuine joint correlation estimate is an additional obligation.
 No impossibility theorem or historical unsolved-status claim is made.
 
+For the fixed difference \(M=N+12\), the
+[shared-summand analysis](SHARED_SUMMAND_C12_CORRELATION.md) computes the
+three-factor local model and proves a uniform natural-scale upper bound.
+Iwaniec--Pomykała's unconditional fixed-difference theorem also yields
+natural-scale lower counts for a positive proportion of admissible
+targets. This does not use the current ZF/G inputs.
+The new analysis proves the three-factor bank envelope and a one-sided
+vector Fourier estimate, but an exact raw-edge control shows that the
+existing list-permutation projection changes the proposed third-factor
+weight. A correctly normalized joint comparison remains necessary;
+the all-target lower bound and pointwise leading asymptotic stay open.
+
 ## 7. Classical antecedents and scope
 
 Matthiesen's *Linear correlations amongst numbers represented by

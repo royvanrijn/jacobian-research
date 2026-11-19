@@ -373,14 +373,19 @@ avoid each inert prime up to \(y\). They exclude zero, one,
 or two residue roots; a cell excluding the full residue field
 is empty and is removed first.
 
+There are at most \(O_{B,q}(E^2(\log E)^{2|B|})\)
+retained cells, including the fixed number of unit choices.
+Their moduli are bounded by \(O_{B,q}(E^{4+2|B|})\).
 Use upper and lower fundamental-lemma weights of level
-\(X^\epsilon\), with fixed sufficiently small \(\epsilon\).
+\(D_0=X^{1/100}\).
 The sieve dimension is at most one, uniformly in the prefixes,
 and its parameter is
-\(\log(X^\epsilon)/\log y\asymp L^{3/5}\to\infty\).
+\(\log D_0/\log y\asymp L^{3/5}\to\infty\).
 Its relative error is superlogarithmic. The CRT remainder summed
-over \(X^{o(1)}\) prefixes and cells is
-\(X^{O(\epsilon)+o(1)}\), negligible compared with
+over the cells is at most
+\(E^{O_{B,q}(1)}D_0^2(\log D_0)^{O(1)}=X^{1/50+o(1)}\),
+using the squarefree sieve root bound \(2^{\omega(d)}\).
+It is negligible compared with
 \(X/L^A\) for each fixed \(A\).
 
 The total main mass of the prefix sum is bounded. Compatible

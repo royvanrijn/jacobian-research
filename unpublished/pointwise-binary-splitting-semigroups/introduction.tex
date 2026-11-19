@@ -22,6 +22,48 @@ with explicit positive factors and an explicit \(\delta>0\).
 The constants are given in Theorem~\ref{thm:c12}. In particular every
 sufficiently large integer in this congruence class has a representation.
 
+Smilansky's pair-correlation predictions give a second concrete
+arithmetic problem. Let \(b_d(n)\) indicate the positive integers
+of the form \(x^2+dy^2\), with \(x,y\in\Z\), counting each
+value once. For \(d\in\{1,2,3,4,7\}\) and every fixed
+\(h\ne0\), we prove, under the same analytic inputs,
+\[
+ \sum_{1\le n\le X}b_d(n)b_d(n+h)
+       =\mathscr T_{d,h}\frac X{\log X}+o_{d,h}(X/\log X),
+\]
+with the explicit arithmetic coefficients predicted in
+\cite[Section 6.3]{smilansky}. In particular,
+\begin{equation}\label{eq:ck-headline}
+ \#\{1\le n\le X:b_1(n)=b_1(n+1)=1\}
+                 \sim\frac{X}{2\log X}.
+\end{equation}
+This is the shift-one Connors--Keating prediction. Each numerical
+value is counted once; the number of its representations as a norm
+does not enter. The shift-one coefficient for \(x^2+2y^2\) is
+\(1/\sqrt2\). Corollary~\ref{cor:smilansky-five-pairs} proves all
+five cases as one quadratic-character application, with their
+exceptional-prime conditions retained.
+
+Let \(C^-_4=\{n\ge1:p\mid n\Longrightarrow p\equiv3\pmod4\}\).
+Every sufficiently large even integer is a sum of two elements of
+\(C^-_4\). More precisely, on every sufficiently large even target,
+\[
+ \#\{(a,b)\in(C^-_4)^2:a+b=N\}
+ =A_-J_-(N)\frac{N}{\log N}
+       \left(1+O((\log N)^{-\delta_-})\right),
+\]
+where \(\delta_->0\) and
+\[
+ A_-=\frac12\prod_{p\equiv1\ (4)}
+                  \left(1-\frac{2}{p(p-1)}\right)>0,
+ \qquad
+ J_-(N)=\prod_{\substack{p\mid N\\p\equiv1\ (4)}}\frac{p-1}{p-2}.
+\]
+Odd targets have zero count. This is the simplest nonidentity-coset
+case of Theorem~\ref{thm:coset}. The arithmetic constants and the
+positive saving are the main features here; numerical choices for
+the saving exponents are collected in Section~\ref{sec:assembly}.
+
 Knowing how many allowed integers lie below \(X\) does not tell us how
 often two allowed integers land on the particular line \(a+b=N\).
 Even an average over many targets can conceal exceptional targets.
@@ -75,21 +117,13 @@ genuinely complex character branches. Such branches are smaller than
 the positive leading density, but cannot be dropped when centering
 to an arbitrarily prescribed logarithmic accuracy.
 
-The fixed-shift comparison also applies to ordinary quadratic-form
-values. If \(b_d(n)\) indicates a positive integer of the form
-\(x^2+dy^2\), Section~\ref{sec:quadratic-pairs} proves the
-pair asymptotics conjectured by Smilansky for \(d=1,2,3,4,7\)
-\cite[Section 6.3]{smilansky}, using the same analytic inputs.
-In particular,
-\[
- \sum_{n\le X}b_2(n)b_2(n+1)
-            \sim\frac1{\sqrt2}\frac X{\log X}.
-\]
-One theorem treats a primitive quadratic-character Euler indicator
-with finitely many prime-power restrictions. A coupled finite-place
-factor retains its character bias. The exact representation criteria
-then identify the five forms, including their restrictions at two.
-Each ordinary value is counted once, with no primitivity requirement.
+For Smilansky's five forms, the fixed-shift comparison reduces the
+problem to a primitive quadratic-character Euler indicator with
+finitely many prime-power restrictions. A coupled finite-place factor
+retains its character bias. The exact representation criteria identify
+the five forms, including their restrictions at two. This application
+and its Connors--Keating specialization use the same analytic inputs;
+their arithmetic checks are given in Section~\ref{sec:quadratic-pairs}.
 
 The proof has one organizing idea. Multiplication by an allowed prime
 preserves membership in these sparse sets. We construct a smooth model
@@ -142,7 +176,9 @@ routes. Classical Kloosterman estimates, a weighted correlation and
 positive restoration give pointwise order-of-magnitude bounds on all sufficiently
 large locally admissible targets. We retain that proof: this arithmetic
 conclusion does not depend on the recent zero-free or graph theorems.
-The new correlation theorem upgrades it to an explicit leading
+The full classical core proof is in Appendix~\ref{sec:older-route};
+the independent order-bound theorem remains in
+Section~\ref{sec:norms}. The new correlation theorem upgrades it to an explicit leading
 asymptotic. In both routes, a class-group obstruction changes the
 binary count only by a smaller logarithmic order. A conductor-prefix
 decomposition and summable tail bound transfer the leading term to
@@ -153,7 +189,7 @@ The conclusion is that local arithmetic governs the pointwise binary
 count. Here ``local'' includes simultaneous residue conditions:
 separate \(p\)-adic tests can lose a coupling between primes, as the
 example following Theorem~\ref{thm:local} demonstrates.
-The final section gives the short basis-order corollary and specifies
+The final main section gives the short basis-order corollary and specifies
 the boundary of the result. Exact small-target classifications and
 their certificates, higher-fold systems and prime-star counts have
 different proof requirements and are outside this article.

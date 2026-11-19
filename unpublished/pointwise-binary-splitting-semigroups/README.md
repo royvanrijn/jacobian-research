@@ -1,11 +1,12 @@
 # Pointwise Binary Correlations in Abelian Splitting Semigroups
 
-The flagship article develops pointwise binary counting for two fixed abelian
-subgroup prime prescriptions and unfiltered self-sums for a fixed prime coset.
-It opens with the explicit `C_12 + C_12`
-asymptotic, proves the general correlation and joint congruence criterion, and
-applies them to primitive norm values in every fixed imaginary quadratic order.
-The short basis-order corollary gives thirteen for `C_12` with zero adjoined.
+The flagship opens with concrete arithmetic consequences: `C_12 + C_12`,
+Smilansky's five quadratic-form pair predictions, consecutive sums of two
+squares with coefficient `1/2`, and prime-`3 mod 4` self-sums on every
+sufficiently large even target. It then develops the shared comparison and the
+general pointwise theorem for fixed subgroup pairs and prime-coset self-sums.
+The all-order primitive-norm application and the short basis-order-thirteen
+corollary remain in the main text.
 
 The shared arithmetic-model comparison theorem isolates exact invariance under
 a common prime class, centered one-variable rough means and positive sparse
@@ -14,9 +15,19 @@ major-arc energy estimate. The reflected-target and fixed-shift frequency
 estimates are proved separately from the same imported analytic inputs.
 Subgroups and prime cosets then require explicit arithmetic application checks.
 The `3 mod 10` example retains all four quartic-character branches, including
-the complex pair. The Connors–Keating supporting note also uses the fixed-shift
-comparison; its inert-valuation and dyadic model calculations are separate
-arithmetic work and are not included as an application theorem in this article.
+the complex pair. The ordinary quadratic-indicator application uses the
+fixed-shift comparison after checking the inert valuations and exceptional-prime
+conditions. It includes Connors–Keating and the five forms treated by Smilansky.
+
+The editorial decision is to include Connors–Keating in this article.
+Its five-page quadratic-character application uses the shared fixed-shift
+theorem and introduces no new graph, energy or prime-distribution input.
+It proves Smilansky's five ordinary value-pair predictions for `x^2+d*y^2`,
+`d=1,2,3,4,7`, after checking fixed valuation masks and the coupled
+exceptional-prime factor. The consecutive-value coefficients for `d=1,2`
+are `1/2` and `1/sqrt(2)`. This application claims the stated little-o
+remainder, with no growing-shift uniformity or arbitrary principal-form
+identification.
 
 The coprime `C_12` corollary follows by Möbius inversion from the uniform
 count. It multiplies the leading term by
@@ -33,6 +44,10 @@ uses the new general binary theorem. The all-order transfer gives uniform
 `o(1)`; the explicit logarithmic saving belongs to the fixed-data semigroup
 theorem. The modulus in that theorem is even and fixed, and all primes dividing
 it are excluded from the core.
+The independent order-bound theorem and dependency distinction stay prominent
+in the main text; its full classical core proof is in Appendix A. Numerical
+saving exponents and localization budgets are collected in the technical
+reconstruction section, after the early statements with positive savings.
 
 [PDF](paper.pdf) · [Source](main.tex) · [Metadata](metadata.json) ·
 [Verification record](verification.json) · [Standalone source archive](source.zip)

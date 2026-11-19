@@ -2,64 +2,80 @@
   "format": 1,
   "files": {
     "README.md": {
-      "sha256": "406a0736cde695f65a16c3f0ba18c967601cad6c40336e8ba7983679f69f1d7a",
-      "bytes": 3301
+      "sha256": "a6b818df0e4e76c5eb1d978b83cf7929f728ebcafa6c4a745c1ecfc2bac54492",
+      "bytes": 5248
     },
     "assembly.tex": {
-      "sha256": "dcd9f8bc793485fbed49e947474446076f24e4b793d84e4f4ddf3e02d1db157e",
-      "bytes": 9097
+      "sha256": "9b47d662efb01cc48baf57d5178f8dcd42069269fdb48839a4a9fb8650933e6e",
+      "bytes": 10661
+    },
+    "comparison.tex": {
+      "sha256": "850bfe20188b902ee61800ece1235956d5b9d92f7246dc15d24c352fb70b5b36",
+      "bytes": 8508
     },
     "consequences.tex": {
-      "sha256": "e0a6b0c21e400015298c9c716c166ae47e6b9f77c548db5e063dd70961478770",
-      "bytes": 2988
+      "sha256": "068e357ed98522f6cb6da64c5d3ec6e5d03a60eb2ea250e311638403b1d74191",
+      "bytes": 3078
+    },
+    "cosets.tex": {
+      "sha256": "d1573997c6f049176abb0edfd3c44e0b39914391d4e64c0c78845faabe393873",
+      "bytes": 24562
+    },
+    "fixed-shift-comparison.tex": {
+      "sha256": "d8cb3b5a2596343aaa1e20e57e40f25f239fee0f72ac6837fdda71b63a9d4cae",
+      "bytes": 14375
     },
     "graph.tex": {
-      "sha256": "690a8008b9c95701b1c97f9421500a0f989b8589a915553b28bcde95df68b6ed",
-      "bytes": 41218
+      "sha256": "0cd3eb5d409c4e7fe258eed3d68fdc11ee968a1b77079efec6090985b5f3285c",
+      "bytes": 42691
     },
     "inputs.tex": {
       "sha256": "4294614003c9c4e571538b8ea65e956c16d697a33843178561d1689aef3ec3b6",
       "bytes": 12481
     },
     "introduction.tex": {
-      "sha256": "eb46442e6bcae8bb1df07b8a122c5b761e4faa4e09aac64dcdba3a32be1bbd36",
-      "bytes": 6694
+      "sha256": "414dd73d46de3da0f7fa45ebf77fa92784a1b60daaf76e59cd763c320b6ebaa7",
+      "bytes": 10322
     },
     "main.tex": {
-      "sha256": "3e5dab8755a948f22a8e9b92636ebb580629c273e2ae68f0b7c373c14ef77ebd",
-      "bytes": 3079
+      "sha256": "0e62eaa5a1ed82695befaade8dbb758c2ad5805803612f7402c9bd633e3cb3e8",
+      "bytes": 3580
     },
     "metadata.json": {
-      "sha256": "d7845a862ff44dad44c8752500679def3309f1392afdc572fba3a89c89f8d413",
-      "bytes": 3003
+      "sha256": "fd91863ca8a7dadc277c7a0d6b2669889c0725170989f40b5671ef55c56f274f",
+      "bytes": 3551
     },
     "model.tex": {
-      "sha256": "c4199ea259d113e3129dd9628e352bbb9b91f5e10e644f16c4ec9071d701a678",
-      "bytes": 12332
+      "sha256": "b82d8c14d44ba997b42f0018ddb738233edd74a15829a8cc67c1bc0bc8a05f49",
+      "bytes": 14331
     },
     "norms.tex": {
-      "sha256": "4b7bb607ef9545eebaf5d2d53c6abd5379d7ae8703d907c951bcfef3d12d7da5",
-      "bytes": 22095
+      "sha256": "034f4409e577e927c23a0b7a69a809cabcdf763fb5679e3a12b1e76dd3329868",
+      "bytes": 22222
     },
     "older-norm-route.tex": {
-      "sha256": "3ee1ac45898b5b24447745e8b6c07154d762593745870596f2834c8ce3a0f8d9",
-      "bytes": 33511
+      "sha256": "4bda30e5a083454b212b441d92ccd6724901685a5427b2f220f7fa10a908d24c",
+      "bytes": 33512
+    },
+    "quadratic-pairs.tex": {
+      "sha256": "c892e781fb6b9e0ddc7d0480d84d33edcb69ac147638227e8dca2d645375a0db",
+      "bytes": 17130
     },
     "references.tex": {
-      "sha256": "b08321fa2ded03c39fa3ad301a00d8635eb8aa4a21e9e26ac7a4122f7da02ac3",
-      "bytes": 2578
+      "sha256": "a55c95c0fe51245fec1f816831042257eefe8f00bb2f606631bb09821526f930",
+      "bytes": 3092
     },
     "theorems.tex": {
-      "sha256": "d1462f29e891ff5689af91f74530da8c2da20bc4b37970467d894fa90f713b76",
-      "bytes": 11329
+      "sha256": "88f4f02b970d06992f0b68257d0f2bb47a2e8d1181af0333901b1fb9ed5e0adf",
+      "bytes": 11555
     },
     "verification.json": {
-      "sha256": "f67a939cabb4f86543fa448303dbe520adf35168a9485474b8bd3e95dd5cf155",
-      "bytes": 12205
+      "sha256": "3850ce4546ae9f087c9cd516edfbb171763b9c1232c79d3fa32bec65635fe90a",
+      "bytes": 29377
     }
   },
   "pdf": {
-    "sha256": "5086aedbd0f70f70627d488bf76f993b3b6024382beca5965691ed231b9041ca",
-    "bytes": 763124
+    "sha256": "98d8120bceada4509fc461fb25fb60b3749c5e6965bad1a8333caf58dfe92415",
+    "bytes": 904603
   }
 }

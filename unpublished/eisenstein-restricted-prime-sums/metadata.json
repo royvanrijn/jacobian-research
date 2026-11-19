@@ -14,9 +14,10 @@
   "verification": "Complete standalone written argument using classical Hecke/Jacquet-Langlands/Ramanujan inputs, exact finite certificate replay and full coordinate-membership authentication; current review record distinguishes each check from external mathematical review and formal verification.",
   "verification_record": "verification.json",
   "next_steps": [
-    "Obtain external specialist review of all local quotient and global spectral applications.",
-    "Obtain independent human replay of the complete certificates.",
-    "Complete targeted literature review for historical priority before any priority claim."
+    "Obtain external specialist review of the shared Hecke transfer and each local quotient, shell normalization and target-dividing branch.",
+    "Obtain external human replay of the complete certificates, membership-array authentication and negative controls.",
+    "Check that finite scans, rational interval certificates, infinite estimates and descent meet without uncovered targets.",
+    "Complete a targeted attribution and historical-priority audit before any priority claim."
   ],
   "catalogued_on": "2026-11-17",
   "abstract": "We determine the exact binary sumsets of primitive quadratic norm values\nat discriminants $-3,-7,-8,-11$.  The local congruence conditions are\nsufficient in three cases; at discriminant $-7$ the complete additional\nexception set is $\\{7,77,203\\}$.  Stronger split-prime core identities\nseparate the ramified dilations.  The proofs combine quaternionic norm\nshells, precisely normalized classical Hecke bounds, and dyadic and\nramified local filters.  Explicit infinite estimates, rational interval\ncertificates, complete finite sumset scans and multiplicative descent\ncover every positive target.  We supply standalone verification code\nand explain the finite reductions that make the certificates complete.\nAll sumsets concern numerical values, without coordinate multiplicities.",
@@ -27,5 +28,19 @@
     "type": "publication",
     "subtype": "preprint"
   },
-  "revised_on": "2026-11-19"
+  "revised_on": "2026-11-19",
+  "review_status": "Frozen four-discriminant edition prepared for external mathematical review; that review has not occurred.",
+  "review_edition": {
+    "pdf": "paper.pdf",
+    "sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+    "page_count": 36,
+    "discriminants": [
+      -3,
+      -7,
+      -8,
+      -11
+    ],
+    "mathematical_sources_and_certificates_unchanged": true,
+    "scope_limits": "No additional discriminants, general-order exact classification, balanced exception classification or numerical correlation asymptotic added."
+  }
 }

@@ -29,7 +29,7 @@
     },
     {
       "path": "COUPLED_SPLITTING_LOCAL_GLOBAL.md",
-      "sha256": "b4995d848826b8c934df6b6dcdceb72ec4566414573409b9ceb444b68131d0f0",
+      "sha256": "e25703060950ce645107e6ec52af1a051073adcc9fbe0954046941326706226a",
       "locator": "C.1-C.5 general coupled finite tests/counts; finite profiles/Smith normalization; C.6-C.10 primitiveGaussian45classes and counts; coefficient and dependent-form boundaries"
     },
     {
@@ -51,6 +51,11 @@
       "path": "PRIME_THREE_MOD_TEN_SUMS.md",
       "sha256": "b0799ee43ce230b5851a7124dfd307e614b1e98c5ce96cf44b5693307f872b6c",
       "locator": "PrimeThreeModuloTenCorrelation, FourBranchInvariantModel and FourthRootCosetFrame; four-branch density, exact arithmetic and positive error budget"
+    },
+    {
+      "path": "SHARED_SUMMAND_C12_CORRELATION.md",
+      "sha256": "19e6263a08968d8951dd2708ce024147aeddaf95ce2f01fe829b4ba892798380",
+      "locator": "Six named Shared results: unconditional partial counts and bounds, exact local model, pair-bank envelope and one-sided Fourier tool; (ST.1) remains a candidate"
     }
   ],
   "primary_sources": [
@@ -356,8 +361,8 @@
     },
     "iwaniec-pomykala-quartic-norms-1993.pdf": {
       "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0025579300007014/resource/name/S0025579300007014a.pdf",
-      "locator": "Theorems 1-2 and remarks, printed p. 234; definitions pp. 233,239; Proposition (P1)-(P5), p. 243; uniformity and Fouvry alternative, p. 244",
-      "role": "Direct historical comparison: exact quartic complete-splitting semigroup, unconditional differences, conditional sums, coprime integer-pair order bounds. Not an unconditional sum input.",
+      "locator": "Theorem 1, printed p.234, fixed difference12; Theorem 2 and P4/P5 retain the separate conditional sum scope on pp.234,243-244",
+      "role": "Direct quartic comparison and mathematical input: Theorem 1 at fixed difference12 supplies the unconditional pair count used for positive-proportion shared-sum targets. Theorem 2 remains conditional for growing sum targets; no unconditional all-target sum result is imported.",
       "inspection": "Retained primary statements, hypotheses and comparison were read internally. This is a targeted source audit, not external review, proof replay of the 1993 numerical positivity calculation, or exhaustive historical priority certification."
     },
     "li-prime-progressions-2602.20917v6.pdf": {
@@ -458,7 +463,8 @@
     "Fixed-k>=3 higher counts are classical finite-complexity consequences witho(1); exact basis orders concern fixed subgroup cores, with zero explicitly adjoined for ordinary bases.",
     "Coupled systems: pairwise-independent kernel coordinates, fixed positive bulk, finite profiles; Gaussian full counts along fixed target rays only. General nonlinear or dependent-coordinate systems remain outside scope.",
     "HL sparse theorem is absolute and fixed finite-complexity; relative existence needs a uniform positive arithmetic factor. Dense summable-defect theorem permits dependent forms. All-moduli closure solubility alone fails for arbitrary infinite valuation profiles.",
-    "Specific unfiltered prime classes 3 mod 4 and 3 mod 10 have separate binary extensions under the same ZF/G inputs; no blanket prime-coset or dependent three-factor theorem is inferred."
+    "Specific unfiltered prime classes 3 mod 4 and 3 mod 10 have separate binary extensions under the same ZF/G inputs; no blanket prime-coset or dependent three-factor theorem is inferred.",
+    "The fixed-shift12 shared C12 system has proved unconditional positive-proportion natural-scale counts and upper bounds. Its pointwise three-factor leading asymptotic and all-target lower bound remain open."
   ],
   "goldbach_theory": {
     "existence": "For every fixed mixed list and k>=2, eventual positive representations are exactly U1+...+Uk moduloL. Fix k-2 actual representatives and apply binary; joint all-moduli criterion also holds for all integer targets.",
@@ -481,7 +487,8 @@
     "counterexample": "N=2*17^t+4,M=17^t+2: bothmarginalprimitiveGaussiantriples represented, but sharedvalueconstraintsdisjointmod8.",
     "coefficient_example": "C12matrixx1+5x2-5x3=N,2x2-x3+x4=2N has eventualbulkcriterionN1mod12,5notdividesN. Goodprime5rootdensity13/25 andsigma325/256; originalmodulus aloneinsufficient.",
     "boundary": "Oneparametersharedb,N-b,M-b remains outsideclassicalindependence. Binaryendpointcomparisondoesnotautomaticallyadmitthirdedge-label-dependentfactor. Diagonalexactlybinary; no generalnonlinear/dependent-formlocalglobal asserted.",
-    "review": "Currentcanonicalproof read byroot and separatearithmetic/analytic/literatureagents. Exactfinitecontrols:1344mod8/16/32cases and373oddprimerootcases. These areauxiliarychecks, not proofs of eventualexistence. No externalhumanreview/formalverification/numericalonset/priorityclaim."
+    "review": "Currentcanonicalproof read byroot and separatearithmetic/analytic/literatureagents. Exactfinitecontrols:1344mod8/16/32cases and373oddprimerootcases. These areauxiliarychecks, not proofs of eventualexistence. No externalhumanreview/formalverification/numericalonset/priorityclaim.",
+    "shared_fixed_shift_partial": "The fixed shift12 dependent C12 example now has unconditional natural-scale counts on a positive proportion of targets, a uniform upper bound, target moments and a positive pair-bank envelope. Its pointwise asymptotic and all-target lower count remain open; this does not enlarge the classical pairwise-independent coupled theorem."
   },
   "hardy_littlewood_theory": {
     "regime": "SparseEulerindicators: fixedevenL, coprimetoL, nonemptyperiodicprime-supportS_i, arbitrary0/1higherexponents; fixedpairwise-independentaffineforms andpositivebulk, movingO(T)intercepts.",
@@ -562,5 +569,15 @@
     "budget": "The bank density is 1/phi(10)=1/4, the pair sieve dimension is 3/2 and the signal is N J/log^(3/2)N. The explicit inherited precision order gives delta=1/32768; complex secondary branches cost O(log^(-3/20)N), and graph reconstruction is relatively O(log^(-35/2+8delta)N)/J.",
     "boundary": "Only this particular unfiltered class is proved here. General cosets, arbitrary residue sets, individual summand-state filters, the shared three-factor problem, numerical cutoffs, exact small exceptions and historical priority remain separate.",
     "review": "Internally reviewed written application under exactly the same explicit ZF and G inputs as the subgroup and prime-3-mod-4 proofs. Exact marginal and local factors, complex branches, normalized analytic logarithms, fourth-root slot phases and the quantitative assembly have separate written arguments. No external human review, formal verification, numerical cutoff, exhaustive later-literature review or historical priority is asserted."
+  },
+  "shared_c12_dependent_correlation": {
+    "proved_scope": "For T(N)=sum_(1<=a<N) 1_C12(a)1_C12(a+12)1_C12(N-a), there are constants c1,c2>0 such that every sufficiently large dyadic interval (X,2X] contains at least c2 X targets N=2 mod 12 with T(N)>=c1 X/log^(9/4)X. This unconditional natural-scale positive-proportion result follows from Iwaniec-Pomykala's fixed-difference Theorem 1, not its conditional sum theorem or the recent ZF/G inputs. Uniformly T(N)<<1_(N=2 mod12) J3(N)N/log^(9/4)N; all fixed moments of J3 are bounded on average. Finite admissibility is exactly N=2 mod12. A natural-scale pair-bank envelope for all eight f/model choices and a one-sided vector Fourier lemma are proved with their structural hypotheses. The displayed 144 c12^3 C3 J3(N)N/log^(9/4)N leading term remains a candidate, and the all-target joint comparison remains open.",
+    "classical_input": "Published Iwaniec-Pomykala Theorem 1 at the fixed difference12, plus the ordinary C12 marginal, proves the first moment. Uniform Selberg upper and bounded second target moment yield positive-proportion natural counts. This does not use ZF or G.",
+    "arithmetic_model": "The finite criterion is N=2 mod12. The candidate leading term is 144 c12^3 C3 J3(N) N/log^(9/4)N, with r_p=3-1_(p|N(N+12)), C3=product_E p^2(p-3)/(p-1)^3 and J3=product_(p|N(N+12),p in E)(p-2)/(p-3). It remains a candidate, not an imported or proved asymptotic.",
+    "upper_and_moments": "T(N)<<1_(N=2 mod12) J3(N)N/log^(9/4)N uniformly. Every fixed J3 moment has O(X) dyadic sum; the full CRT endpoint expansion costs only a polylogarithm.",
+    "envelope": "For all eight f/model products and pair-bank events B, the bound is natural scale times mu(B), plus N^(1/8)+N exp(-c(log N)^(1/10)). The positive model support and global bound are explicit hypotheses. Exact pair-record moduli, mixed Selberg denominator, unselected bank zeros and weighted-test integration are proved.",
+    "vector_tool": "The one-sided vector Fourier lemma assumes reduced rational approximation and no dependence on the other free product or selected small prime. It removes an unnecessary sqrt(Y) loss, but the actual graph lift has not been put in its required form.",
+    "open_frontier": "A joint comparison must preserve the raw third factor after both permutation projections and retain shared-label normalization with noncircular parameter order. The displayed raw edge changes weight under projection. The coloring attempt has no completed normalization/error budget. No universal no-go claim is made.",
+    "review": "Internally reviewed written partial results. Exact finite roots, target moments, the two-scale Selberg envelope and one-sided Fourier bound were separately checked. The positive-proportion count is a classical consequence of the published Iwaniec-Pomykala Theorem 1 at fixed difference 12 and ordinary marginal estimates; it does not depend on ZF or G. No pointwise triple asymptotic, all-target lower bound, external human review, formal verification, effective onset or priority is asserted."
   }
 }

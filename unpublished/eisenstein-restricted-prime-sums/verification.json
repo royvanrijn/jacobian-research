@@ -1719,5 +1719,58 @@
     "pdf": "paper.pdf",
     "sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
     "page_count": 36
+  },
+  "review_preparation": {
+    "date": "2026-11-19",
+    "outcome": "Frozen four-discriminant edition prepared for external mathematical review; documentary audit and standalone rebuild passed, without mathematical extension, assurance upgrade or external action.",
+    "edition": {
+      "pdf": "paper.pdf",
+      "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4",
+      "pages": 36,
+      "discriminants": [
+        -3,
+        -7,
+        -8,
+        -11
+      ]
+    },
+    "scope": "The existing four exact primitive numerical norm-value sumsets, stronger split-prime cores, and existing stated corollaries; the balanced exception classification remains open beyond its finite scan.",
+    "dependencies_for_outside_review": [
+      "Section 2: classical Hecke/Jacquet-Langlands/Deligne transfer, all-ideal normalization, norm-character removal and invariant mass.",
+      "Sections 5-6 and 11-13: local quotients, odd/dyadic/ramified filters, target-dividing branches, all ideal classes and inverse-unit mass.",
+      "Appendix A and arithmetic sections: exact finite membership and coverage, rational interval endpoints, infinite bounds and complete descent.",
+      "Independent external human replay of certificate arrays and negative controls; targeted attribution and priority audit."
+    ],
+    "existing_evidence": "The fresh_replays, build, layout_review and blind_reader records retain their original internal scopes and are not upgraded by this preparation.",
+    "mathematical_computations_rerun": false,
+    "new_external_mathematical_review": false,
+    "formal_verification_performed": false,
+    "outreach_submission_or_deposit": false,
+    "checks": {
+      "retained_receipt_sha256_matches": {
+        "result": "passed",
+        "receipts": 9,
+        "scope": "Compared each current receipt file with its existing fresh_replays hash; did not execute the numerical checkers."
+      },
+      "immutable_mathematical_files": {
+        "result": "passed; all 52 SHA256 digests match the pre-edit baseline",
+        "files": 52,
+        "scope": "PDF, main and section TeX, references, build helper and retained certificate sources/inputs/receipts; Python cache files excluded."
+      },
+      "source_archive": {
+        "result": "passed",
+        "command": "python3 build_bundle.py --verify-rebuild",
+        "scope": "Standalone archive membership and clean extraction build against the unchanged frozen PDF.",
+        "members": 54,
+        "member_bytes": "All archive members match their current source files; paths are local and unique.",
+        "clean_source_rebuild": "Passed from a temporary fresh extraction; PDF byte-identical to the frozen review edition.",
+        "pdf_sha256": "65d69cac4bebb0b6589786940eb7ec4086932b8db42c747d72fa78ec473945d4"
+      },
+      "local_readme_links": {
+        "result": "passed",
+        "scope": "All local Markdown link targets in this README exist."
+      }
+    },
+    "assurance": "External human review, formal verification, public deposit and historical priority remain false in the existing assurance record."
   }
 }

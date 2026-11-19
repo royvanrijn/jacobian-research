@@ -4,6 +4,9 @@
 This checks integer classification through LIMIT and p-adic residue enclosures.
 It does not prove or numerically test any correlation asymptotic.
 """
+if not __debug__:
+    raise RuntimeError("Run without Python optimization: the exact checks require assertions.")
+
 from fractions import Fraction as Q
 from math import isqrt
 import json

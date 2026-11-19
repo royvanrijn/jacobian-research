@@ -47,14 +47,21 @@ For a fixed depth \(K\), define on polynomial scales in \(N\)
 \end{equation}
 For \(N^a\le t\le N^C\), with fixed \(0<a<C\), this is
 \(c_HE_+(y)(\log t)^{\rho-1}(1+O_K(L^{-3/5}))>0\).
-Extend it smoothly and nonnegatively below that range with the same
-upper bound. Only the polynomial bulk enters principal means.
+For definiteness fix a smooth real function \(\eta_0\), with
+\(0\le\eta_0\le1\), zero on \(({-}\infty,1/4]\) and one on
+\([1/3,\infty)\). Set \(M_{R,K}(t)=0\) for \(t\le N^{1/4}\),
+and multiply the displayed expression by \(\eta_0(\log t/L)\)
+above that point. On the transition range it has the same positive
+upper bound. All rough scales used in (C3) are at least
+\(N^{1/2}/E>N^{1/3}\), so the cutoff never changes their means.
+Only the polynomial bulk enters principal means.
 
 \begin{lemma}\label{lem:rough-means}
 For fixed \(B,A_0>0\), sufficiently large fixed \(K\) has the
 following property. If \(b\) is bounded and periodic of period at
-most \(L^B\), and \(W\) is a smooth dyadic weight at a polynomial
-scale \(T\), with fixed derivatives bounded by fixed powers of \(L\),
+most \(L^B\), and \(W\) is a smooth dyadic weight at a scale
+\(N^{2/5}\le T\le N^2\), with fixed derivatives bounded by
+fixed powers of \(L\),
 then
 \begin{align*}
  &\sum_n W(n)b(n)f(n)\1_{(n,\prod_{p\le y}p)=1}\\
@@ -258,7 +265,25 @@ the pointwise model bound \(L^{-3(1-\rho_1)/5}\) restores precisely
 give the same result. At a prime forbidden on one side only that
 side's denominator occurs. Target mergers cost at most the full
 factor \(J_{\mathcal E}(N)\). Sum the retained main bounds against
-\(F\) to obtain the expectation.
+\(F\) to obtain the expectation. More explicitly, every retained
+coprime record pair has, for every choice of \(w_i\in\{f_i,D_i\}\),
+\[
+ \sum_{\substack{Ax+By=N,\ Ax\in J\\x_{\mathcal B}=r,\ y_{\mathcal B}=s}}
+       w_1(x)w_2(y)
+ \le C_K\frac{|J|}{AB}\mu_{\mathcal B}(r,s)
+              \frac{J_{\mathcal E}(N)}{L^\kappa}
+       +O_K(z^{4+\eta_1}),
+\]
+where \(\eta_1>0\) is arbitrarily small and fixed. At a prime
+\(p^e\Vert r\), write \(x=r\ell\): exact valuation excludes
+\(\ell\equiv0\pmod p\), while \(y\) is automatically a unit
+because \(p\nmid N\). This gives the factor \(1-1/p\);
+at \(p\nmid rs\) the two distinct excluded roots give \(1-2/p\).
+These are the displayed record masses, before applying the nonbank
+sieve denominator. Multiplication by \(F(r,s)\le L^B\) and
+summation over at most \(E^2\) records leaves endpoint error
+\(L^BE^2z^{4+\eta_1}=O(N^{1/2})\). The exponent and the
+available sieve level are independent of the final model depth.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:general}]

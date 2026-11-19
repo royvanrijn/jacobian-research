@@ -39,33 +39,31 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We study representations of an integer as a sum of two positive integers
-whose prime factors satisfy fixed abelian splitting restrictions.
-For semigroups defined by subgroups modulo a fixed even integer,
-and for unfiltered self-sums defined by a fixed prime coset,
-we establish pointwise asymptotics with explicit arithmetic factors and
-a positive logarithmic saving, uniformly in the target. The resulting
-congruence criterion characterizes eventual representability.
-In particular, integers supported on primes congruent to one modulo
-twelve have an explicit binary representation asymptotic of order
-\(N/(\log N)^{3/2}\) on every sufficiently large admissible target.
-The proof adapts Walsh's multiplicative-invariance framework, using
-the recent zero-free and weighted-dilation theorems of OpenAI.
-We prove an indicator-to-model comparison theorem whose hypotheses are
-one-variable distribution, exact prime invariance, and positive sieve bounds.
-The comparison treats reflected targets and fixed shifts with their
-respective frequency estimates. Complex character branches are retained
-for prime cosets, including the class three modulo ten.
-We count numerical values without representation multiplicities.
-For ordinary values of \(x^2+dy^2\), \(d=1,2,3,4,7\), the same
-comparison gives fixed-shift pair asymptotics with explicit exceptional-prime
-factors. A single quadratic-character theorem includes these five cases;
-for \(x^2+2y^2\) and shift one its coefficient is \(1/\sqrt2\).
-For primitive norm values in every fixed imaginary quadratic order,
-we first prove pointwise order-of-magnitude bounds using classical
-Kloosterman estimates and positive restoration, independently of the
-recent analytic theorems. The new correlation
-theorem upgrades these bounds to explicit leading asymptotics.
+We establish the fixed-shift pair asymptotics predicted by Smilansky
+for the ordinary values of \(x^2+dy^2\), \(d=1,2,3,4,7\).
+In particular, \(X/(2\log X)\) is the asymptotic number of
+\(n\le X\) for which both \(n\) and \(n+1\) are sums of two squares.
+Every sufficiently large integer congruent to two modulo twelve is a
+sum of two positive integers supported on primes congruent to one modulo
+twelve. We give an explicit representation asymptotic of order
+\(N/(\log N)^{3/2}\). Every sufficiently large even integer is likewise
+a sum of two integers supported on primes congruent to three modulo four,
+with an explicit asymptotic of order \(N/\log N\).
+These results count numerical values once.
+The semigroup results belong to a pointwise binary theorem for two fixed
+abelian subgroup restrictions and for unfiltered self-sums of a fixed
+prime coset. It gives explicit arithmetic factors, a positive logarithmic
+saving, and an exact criterion for eventual representability.
+The proof adapts Walsh's multiplicative-invariance framework using the
+recent zero-free and weighted-dilation theorems of OpenAI. A shared
+indicator-to-model comparison separates one-variable distribution and
+positive sieve bounds from the reflected and fixed-shift frequency arguments;
+the model retains every surviving congruence character.
+Applications include five ordinary quadratic-form indicators and primitive
+norm values in every fixed imaginary quadratic order. For the latter we
+retain independently proved classical order-of-magnitude bounds, whose full
+core argument is given in an appendix; the new analytic inputs upgrade them
+to explicit leading asymptotics.
 \end{abstract}
 \input{introduction}
 \input{theorems}
@@ -76,10 +74,11 @@ theorem upgrades these bounds to explicit leading asymptotics.
 \input{assembly}
 \input{model}
 \input{cosets}
-\input{older-norm-route}
 \input{norms}
 \input{quadratic-pairs}
 \input{consequences}
+\appendix
+\input{older-norm-route}
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.

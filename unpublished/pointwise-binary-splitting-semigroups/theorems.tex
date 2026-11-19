@@ -45,8 +45,8 @@ are paired. The Euler identity proving this formula is given in
 Section~\ref{sec:model}.
 
 \begin{theorem}\label{thm:general}
-With all these data fixed, let
-\(\delta=1/(8192\varphi(L_0))\). Uniformly in \(N\) and every interval
+With all these data fixed, there is an explicit \(\delta>0\)
+depending only on \(L_0\) such that, uniformly in \(N\) and every interval
 \(I\subset[0,1]\),
 \begin{align*}
  R_{U,V}^{A,B}(N;I)
@@ -62,6 +62,8 @@ when \(|I|(\log N)^\delta\to\infty\).
 \end{theorem}
 
 The implicit constant and threshold may depend on all fixed data.
+An admissible numerical choice of \(\delta\) is recorded in
+Section~\ref{sec:assembly}, together with the localization budgets.
 No numerical threshold, uniformity in a growing modulus, or
 power-short interval assertion is included. For noncoprime fixed
 coefficients, first divide by their gcd when it divides \(N\).
@@ -80,10 +82,11 @@ Let \(\mathcal E_{12}=\{p\nmid6:p\not\equiv1\pmod{12}\}\), and set
  J_{12}(N)=\prod_{\substack{p\mid N\\p\in\mathcal E_{12}}}
                                       \frac{p-1}{p-2}.
 \]
-For all sufficiently large \(N\equiv2\pmod{12}\),
+There is an explicit \(\delta_{12}>0\) such that, for all sufficiently
+large \(N\equiv2\pmod{12}\),
 \[
  R_{12}(N)=A_{12}J_{12}(N)\frac{N}{(\log N)^{3/2}}
-                 \left(1+O((\log N)^{-1/32768})\right).
+                 \left(1+O((\log N)^{-\delta_{12}})\right).
 \]
 All other residue classes have zero count.
 \end{theorem}
@@ -131,7 +134,7 @@ Uniformly over sufficiently large \(N\equiv2\pmod{12}\),
 \[
  R_{\mathrm{cop}}(N)
  =A_{12}J_{12}(N)P_{12}(N)\frac{N}{(\log N)^{3/2}}
-       \left(1+O((\log N)^{-1/65536})\right).
+       \left(1+O((\log N)^{-\delta_{12}/2})\right).
 \]
 Every other residue class has zero count. In particular, every
 sufficiently large admissible target has coprime summands.
@@ -148,7 +151,7 @@ so \(N/d\equiv2\pmod{12}\), and
 \(J_{12}(N/d)=J_{12}(N)\).
 
 Write \(L=\log N\), \(\ell=\log\log(3N)\),
-\(P=P_{12}(N)\), and \(\delta=1/32768\).
+\(P=P_{12}(N)\), and \(\delta=\delta_{12}\).
 We use the elementary divisor estimates
 \begin{align}
  S_0&=\sum_{\substack{d\mid N\\d\in C_{12}}}\frac{|\mu(d)|}{d}

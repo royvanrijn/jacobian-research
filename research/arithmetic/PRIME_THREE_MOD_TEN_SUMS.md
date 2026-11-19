@@ -1,5 +1,12 @@
 # Binary sums supported on primes 3 modulo 10
 
+This case is also the order-four specialization of
+[the fixed prime-coset self-sum theorem](PRIME_COSET_SELF_SUMS.md), using
+the [shared arithmetic-model comparison](SPARSE_ARITHMETIC_MODEL_COMPARISON.md).
+The standalone flagship gives the common proof once, followed by its coset
+checks and this explicit example in Section 9.5. The calculations below retain
+the quartic-character normalization and its local factor at five.
+
 The order-four prime class gives a further unfiltered extension of
 [the prime-\(3\bmod4\) proof](PRIME_THREE_MOD_FOUR_SUMS.md).
 All global conclusions retain exactly the same ZF and G inputs,
