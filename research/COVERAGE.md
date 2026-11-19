@@ -6,9 +6,13 @@ This index maps the retained current research and paper sources to graph stateme
 
 Generated navigation, tooling guides and immutable deposited archives are excluded from this current-source inventory. Archived publication integrity is checked separately.
 
-**Inventory:** 2483/2483 documents; 3182 explicit source declarations indexed. Current mappings pass.
+**Inventory:** 2483/2484 documents; 3182 explicit source declarations indexed. 1 coverage issues.
 
 [Dependency graph](DEPENDENCIES.md) · [Exact scopes](SCOPES.md) · [Maintenance guide](DEPENDENCY_GUIDE.md)
+
+## Coverage issues
+
+- unmapped retained document: arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md
 
 | Source | Role | Statements | Mapped claims / gaps | Assessment |
 |---|---|---|---|---|

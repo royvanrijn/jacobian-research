@@ -15,6 +15,13 @@ currently retained inputs, already for the odd primitive Gaussian core.
 The class group and conductor bookkeeping introduce no further unknown
 constant once that correlation is supplied.
 
+A [conditional dilation-graph proof](PRIMITIVE_NORM_BINARY_CORRELATION.md)
+now supplies that correlation under a uniform fixed zero-free
+Dirichlet half-plane and the specified graph input. Its assumptions,
+expanded proof and source-validation limits are explicit. This does
+not discharge the unconditional binary-correlation obligation.
+
+
 ## 1. Unconditional one-variable and averaged constants
 
 Let
@@ -48,10 +55,12 @@ Selberg--Delange gives
 For any fixed set \(A\subset H\) of unit residues,
 \[
  \#\{n\le X:n\in\mathcal C,\ n\bmod L\in A\}
- \sim c_{\mathcal C}\frac{|A|}{|H|}
+ =\left(c_{\mathcal C}\frac{|A|}{|H|}+o(1)\right)
                           \frac X{\sqrt{\log X}}.
  \tag{LC.3}
 \]
+For nonempty \(A\) this is an asymptotic equivalent; for empty \(A\)
+the count is identically zero.
 To check this normalization, expand by all characters modulo \(L\).
 The two twists \(1,\chi\) equal one on \(\mathcal C\).
 Every other twist has both associated Dirichlet character factors
@@ -464,7 +473,8 @@ Thus the conditional leading coefficient of \(J(N)N/\log N\) is
 \]
 on \(\{2,3,6,7\}\bmod8\), and \(A_G/2\) on \(4\bmod8\).
 For the odd core alone it is \(A_G\) on \(N=2\bmod4\).
-The average coefficient is \(c_P^2\), in agreement with (LC.6).
+The full coefficient, including \(J(N)\), has Cesàro mean \(c_P^2\),
+in agreement with (LC.6).
 These explicit Gaussian pointwise formulas remain conditional on
 BinaryCoreCorrelation.
 

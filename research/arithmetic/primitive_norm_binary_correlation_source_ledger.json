@@ -1,0 +1,104 @@
+{
+  "title": "Conditional pointwise primitive-norm and splitting-semigroup correlations",
+  "date": "2026-11-19",
+  "status": "Complete internally reviewed conditional deduction; unconditional objectives remain open",
+  "logical_inputs": {
+    "ZF": "A uniform fixed zero-free half-plane Re(s)>sigma0<1 for ALL DirichletL-functions. GRH suffices. The cited2026QRHmanuscript CLAIMS it, but its deep proof is not silently treated as independently verified.",
+    "G": "Exact k=1 root-moment theorem3.5 plus absolute/path and uniformresidue-replacementlemmas3.4/3.6 from the pinned24September2026 weighted-dilation manuscript. Imported deep source theorem; own AP and large-shift transfers are expanded."
+  },
+  "canonical_proofs": [
+    {
+      "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
+      "sha256": "c593dbbe79fffc63f91223963031a285e1851647c5fbe0072516a0d3b425b6aa",
+      "locator": "ConditionalBinarySemigroups B.1-B.9; ConditionalGaussianLeading B.10; ConditionalAllOrderLeading B.11; ConditionalC12Leading B.12"
+    },
+    {
+      "path": "PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
+      "sha256": "6beba252ac3883a20c0ae531773f89028ff2a669fd962ba32a18f232d04cc878",
+      "locator": "ModulesD,I,G,P,E,C: full expanded arithmetic, model, graph-transfer and target-energy proofs"
+    }
+  ],
+  "primary_sources": [
+    {
+      "path": "sources/weighted-dilation-graphs-sep24-2026.pdf",
+      "sha256": "351692885d112277e969901e75fe56eeee0d263d5d5847d0b980fe2c8c7744c0",
+      "bytes": 802390
+    },
+    {
+      "path": "sources/qrh-sep30-2026.pdf",
+      "sha256": "8fe93046f8cf5ef1ba5969c89addc02d76311adc4ee907509ff9cd96f7ec99e7",
+      "bytes": 1588969
+    },
+    {
+      "path": "sources/walsh-2610.40439v1.pdf",
+      "sha256": "21efec3645622c74acde7587bff811719b6c19801b07b253559b64f85ed259a7",
+      "bytes": 681169
+    },
+    {
+      "path": "sources/walsh-2610.40439v2.pdf",
+      "sha256": "5fb593fdd03c79d90e5895177b895c1ce6afcfae660f2bf2f10312f0ff23bad1",
+      "bytes": 682551
+    },
+    {
+      "path": "sources/kmt-short-ap-2023.pdf",
+      "sha256": "0e12d2185df3b67eeebe7d29173fe2ae9fa02fb4702a628f8b6b10814356709d",
+      "bytes": 728264
+    }
+  ],
+  "source_roles": {
+    "weighted-dilation-graphs-sep24-2026.pdf": {
+      "url": "https://github.com/openai/math/blob/main/preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
+      "role": "explicit graph input G",
+      "locator": "Section3, Definition3.3, Lemmas3.4/3.6, Theorem3.5, Corollary3.11; Section4actual ideal-kernel proof and parameter order",
+      "inspection": "Actual arithmetic transference scope and source proofs traced internally. New AP quotient frame and growing-shift transfer are reconstructed in support, not asserted printed."
+    },
+    "qrh-sep30-2026.pdf": {
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+      "role": "claimed route to discharging ZF; not an assurance upgrade",
+      "locator": "Theorem1.1 printedp4, Theorem3.1 and PartI; actual common continuation criterion Section2 read",
+      "inspection": "Actual uniform all-conductor/height statement independently read. Full194-plus-page theorem proof is a separate source-validation obligation; hypothesis remains explicit."
+    },
+    "walsh-2610.40439v1.pdf": {
+      "url": "https://arxiv.org/pdf/2610.40439v1",
+      "role": "method/source comparison and reconstruction, not assumed binary theorem",
+      "locator": "Theorem1.1fixedintegerorders/fixedh; Sections2-7, especially6.1/6.19-6.22/7.16-7.21",
+      "inspection": "Full proof chain inspected internally; own norm model, AP frame, growingtarget and targetenergy modifications supplied."
+    },
+    "walsh-2610.40439v2.pdf": {
+      "url": "https://arxiv.org/pdf/2610.40439v2",
+      "role": "latest inspected method version",
+      "locator": "Sections5-7 actual mathematical text compared againstv1",
+      "inspection": "Same rawpdftotext convention,NFKC andpage-number/whitespace normalization: differences onlyreference renumbering and introductorywords; relevant lemmas/shared-label identities mathematicallyunchanged."
+    },
+    "kmt-short-ap-2023.pdf": {
+      "url": "https://pure.mpg.de/rest/items/item_3521580_2/component/file_3524771/content",
+      "role": "comparison only, not a proof input",
+      "locator": "PublishedTheorems1.4/1.5pp370-372 andPropositions9.2/9.4pp404-405",
+      "inspection": "Every-modulus and sparse-relative conclusions do not follow from the printed absolutevariancebound, even under itsGRHqualification."
+    }
+  },
+  "version_audit": {
+    "walsh_sections": "5-7",
+    "normalization": "Same pdftotext -raw extraction, remove standalonepage numbers, NFKC/whitespace. All essential equations identical.",
+    "v1_tokens": 9958,
+    "v2_tokens": 9961,
+    "changes": "Three ref44-to45, two ref43-to44, insertionWe remark that, formalizationref52-to54."
+  },
+  "internal_review": {
+    "main": "Root plus separate analytic/arithmetic agents read actual main statements, conditional assumptions, genericGamma/AB, Gaussian andC12constants, all-order Haar transfer and parameter order.",
+    "density": "Complete roughHankel means, both/allfixed principalbranches, ordinaryDDsieve, sparsepairrecord envelope andexactreconstruction internally reviewed.",
+    "AP": "Full sourceSection4read and APquotient-character frame/reproduction/PSDoperator/parameter proof reviewed independently byroot andseparateagents.",
+    "graph": "LG1uniform-offsetresidueisomorphism, LG2modkblocks, LG3contributingedgecutoffandsignedendpoint/shared-labeltransport reviewed.",
+    "target_energy": "Sharp all-conductorPerron primeinput underZF; exactgcd-profileorthogonality and principalcentering; targetarcwidth and allsmallbankweights reviewed.",
+    "assurance": "Internal written/source checking only. No externalhumanreview, formal verification, unconditional fullgoal completion or historicalpriority certificate."
+  },
+  "unconditional_open_work": [
+    "Validate the deep external graph and uniform zero-free claims with complete applicable proofs, or replace the all-conductor prime input by a proved sufficient averaged estimate.",
+    "The actual Gaussian/all-order/C12 pointwise claims are not marked proved unconditionally from this conditional argument."
+  ],
+  "zero_free_targeted_review": {
+    "scope": "PartI11/12only: actual common continuation criterion, zero-free-disk/detector quantifiers, row ordering/optimization, contour/margin algebra andlate-height choices inspected internally. No concretegap located inthat limited pass.",
+    "not_validated": "Complete completed-theta reflection/localcuspGauss branches and full primary sextic-recursion proof remain under separate detailed audit; PartII7/8 proof not independently validated.",
+    "logical_status": "ZF remains an explicit hypothesis; a targeted audit does not silently discharge it."
+  }
+}

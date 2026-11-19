@@ -299,6 +299,32 @@ by \(p\) then gives the recursion
  \tag{7}
 \]
 It follows that \(\sup_{N\ge1}\beta_p(F;N)<\infty\), for each fixed \(p\).
+The ordinary density need not be periodic at a fixed finite depth.
+For example, take \(Q_1=Q_2=x^2+25y^2\) and \(a=v_5(N)\). Then
+\[
+ \beta_5(F;N)=
+ \begin{cases}
+  4/5,&a=0,\\
+  8/5,&a=1,\\
+  14/5-6\cdot5^{-a},&a\ge2.
+ \end{cases}
+\]
+Indeed the roots with at least one of the two \(x\)-coordinates a
+unit contribute \(4/5\) at a unit target and \(8/5\) at a multiple of
+5, by counting \(x_1^2+x_2^2\bmod5\). In the remaining branch both
+\(x\)-coordinates are divisible by 5. For \(25\mid N\), scaling them
+by 5 leaves \(25\) times the sum of four squares; the input measure
+factor \(5^{-2}\) cancels the output scaling factor \(5^2\).
+The ordinary four-square density at \(5\), for target valuation \(k\),
+is \((6/5)(1-5^{-k-1})\). Counting nonsingular roots modulo 5
+gives normalized counts \(24/25\) for a unit target and \(144/125\)
+for a zero target after removing the zero vector. Splitting off
+vectors divisible by 5 then gives the \(5^{-2}\) recursion.
+These identities give the displayed formula. Its values at \(5^a\)
+and \(5^{a+1}\) differ for every \(a\ge2\), while all are bounded by
+\(14/5\). Thus the ordinary genus-density bound used here controls
+arbitrarily deep target valuations without a finite-period assertion.
+
 Equations (5)--(7) imply (3): the nontarget factors converge absolutely,
 the finitely many bad factors are bounded above and below on admissible
 targets, and the remaining target factors are \(1+O(1/p)\).
@@ -1242,6 +1268,19 @@ Their orbit already has all six cosets of
 has one element. Principalizing in \(H\), then using this unit
 transitivity at 2, principalizes every locally principal \(O\)-ideal.
 This is a double-coset argument, not an inference from a mass alone.
+
+The local reduced norm also satisfies
+\(\operatorname{nrd}(O_2^\times)=\mathbb Z_2^\times\).
+In the basis \((1,\iota,j,\iota j)\), the elements
+\[
+ 1,\qquad 1+\iota,\qquad 1+\iota+\iota j,\qquad 1+\iota+2j
+\]
+have norms \(1,3,5,7\), respectively. Each is an \(O_2\)-unit because
+its inverse is its quaternion conjugate divided by an odd integer.
+Every \(2\)-adic unit is one of these four norms times a unit square;
+multiplication by a rational \(2\)-adic unit realizes that square
+factor as a reduced norm. This proves the stated norm surjectivity
+for the fixed, nonmaximal dyadic level.
 
 For an odd inert prime \(p\), \(({-8}/p)=-1\), reduction identifies
 \(O/pO\) with \(M_2(\mathbb F_p)\). Set

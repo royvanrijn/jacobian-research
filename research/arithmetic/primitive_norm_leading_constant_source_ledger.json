@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "proof": {
     "path": "PRIMITIVE_NORM_LEADING_CONSTANT.md",
-    "sha256": "376783050a90f47d01f992b303bdcb34a8fcec9259565c7e5a4c822dd3acd527",
+    "sha256": "2c2650e5713cf7404e1498b42829453d620a5895773f5f895a3709efc9bc7f8d",
     "locator": "OrderMarginalAndAverage; ConditionalOrderLeadingTerm; BinaryAuxiliaryRemoval"
   },
   "proved": [

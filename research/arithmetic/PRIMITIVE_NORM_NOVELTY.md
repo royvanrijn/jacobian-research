@@ -761,57 +761,55 @@ computations and are not added to the main theorem.
 
 ### Paper 2: Primitive Norm Sums Beyond Class Number One
 
-This article centers on sharp unweighted counts of ordered
-**value pairs**, with nontrivial ideal-class constraints. The new
-[all-maximal-order theorem](PRIMITIVE_NORM_MAXIMAL_ORDERS.md)
-now supplies the general centerpiece: every fixed maximal imaginary
-quadratic order has the sharp \(NJ_K(N)/\log N\) scale on every
-sufficiently large admissible target, with arbitrary class group.
-The pointwise genus-shadow comparison has a logarithmic saving
-\(\delta<1/h_K\), and has zero error when \(2G=0\).
-It replaces field-specific absorbers by a generic class-deficiency
-sieve and finite genus-vector transfer. The earlier organizing result
-[OddClassCounts](PRIMITIVE_NORM_ODD_CLASS_GROUPS.md) remains a
-proved precursor: for every
-fixed prime \(p\ge7\), \(p\equiv3\pmod4\), the maximal order
-of discriminant \(-p\) has
+The centerpiece is now the
+[all-order sharp value-count theorem](PRIMITIVE_NORM_ALL_ORDERS.md).
+For every fixed imaginary quadratic order, with arbitrary ring class
+group and conductor, every sufficiently large pair-primitive locally
+admissible target has
 \[
- \#\{a+b=N:a,b\in P_{-p}\}
-             \asymp_{K}\frac{N J_K(N)}{\log N}
+ \#\{a+b=N:a,b\in P_{\mathcal O}\}
+             \asymp_{\mathcal O}
+                   \frac{N J_{\mathcal O}(N)}{\log N}.
 \]
-for every sufficiently large primitive-locally admissible target.
-The class group may be any odd abelian group occurring in this
-family, including noncyclic groups. There is no class-number bound.
-The local condition is \(p^2\nmid N\), together with even \(N\)
-when \(p\equiv3\pmod8\).
+These are ordered pairs of numerical values. Here \(J_{\mathcal O}\)
+omits every prime dividing \(2\operatorname{disc}(\mathcal O)\);
+the full conductor conditions are in an explicit finite local criterion.
 
-Keep the scope of the two ingredients explicit: the signed absorber
-lemma is proved for every finite abelian odd group; the complete
-additive counting theorem is stated for the maximal-order
-negative-prime-discriminant family. This is not a theorem about
-arbitrary odd ring class groups with conductors.
+The quantitative comparison with the individual local shadow has
+a logarithmic saving \(\delta<1/h(\mathcal O)\), uniformly in every
+target valuation, and has zero error when \(2\operatorname{Pic}(\mathcal O)=0\).
+The proof uses generic good-class-prime saturation and an exact-one
+prime-square sieve. Its conductor step preserves primitive invertible
+local ideal types; it does not assign a unique genus to a numerical
+conductor norm. Discriminant \(-100\), value \(25\), provides a useful
+example of that distinction.
 
-Use [discriminant -23](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md) as the
-first class-obstruction example, then develop the general fixed
-class-prime pools, exact exponent profiles and the analytic
-unweighting argument. The class-number-two
-[discriminant -20](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) and cyclic
-class-number-four [discriminant -56](PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md)
-results show what genus constraints change beyond odd class groups.
-The \(-56\) relative class-error estimate supplies a quantitative
-comparison with locally allowed norm candidates.
+A coherent exposition can begin with the genuine individual class
+failures at [discriminant -23](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md),
+then pass through the periodic genus filters at
+[discriminant -20](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) and
+[discriminant -56](PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md).
+The [prime-discriminant odd-class theorem](PRIMITIVE_NORM_ODD_CLASS_GROUPS.md)
+and [all-maximal-order theorem](PRIMITIVE_NORM_MAXIMAL_ORDERS.md)
+are proved precursors. The general proof can then present the
+ring-class norm invariant, local value profiles, finite-character
+positive unweighting and lower-order class-error comparison.
 
-The proof should make visible how class information travels through
-cofactor removal, exact prime exponents and positive restoration.
-Prime ideals in fixed classes choose finitely many auxiliary primes;
-the current additive estimates use quadratic-character machinery.
-No new nonabelian additive-distribution theorem is asserted.
+The conductor tables include all dyadic types and the split-prime
+tails. The additive lower bound requires only finitely many bounded
+valuation profiles, with a proved uniform cap; it never assumes that
+all individual conductor valuations are bounded. Class-prime
+distribution enters only for a fixed order. The additive analytic
+input remains the existing quadratic-character theorem, without
+a new nonabelian distribution estimate.
 
-Here sharp means two-sided order of magnitude \(NJ_K(N)/\log N\).
-The current results do not give an unweighted leading constant,
-a numerical field-uniform cutoff, or globally complete exception
-lists for \(-20,-23,-56\). Their bounded exception computations
-can be examples, clearly labeled with the actual range.
+Here sharp means two-sided order \(NJ_{\mathcal O}(N)/\log N\).
+The separately proved marginal constant and averaged pair asymptotic
+can be corollaries. The pointwise leading asymptotic is still a
+research objective; it must not be announced as part of this theorem.
+Numerical general cutoffs and complete global exception lists for
+\(-20,-23,-56\) also remain open. Historical priority and specialist
+review of the exact value-count theorem are separate publication tasks.
 
 ### Supporting Baker/Waibel theory
 
@@ -828,91 +826,50 @@ where used. Genus-invariant coordinate convolution is an immediate
 consequence of that theory. Neither a coordinate asymptotic nor
 qualitative existence establishes Paper 2's sharp value counts.
 
-### Next target: sharp unweighted counts for every quadratic order
+### Next target: the actual pointwise unweighted leading term
 
-Fix any imaginary quadratic order \(\mathcal O_D\), of arbitrary
-conductor and ideal class group. Let \(P_D\) be its positive
-rational-coordinate primitive norm values, and define
+The fixed-order sharp-count objective, including conductors and
+arbitrary even ring class groups, is proved internally in the
+[all-order theorem](PRIMITIVE_NORM_ALL_ORDERS.md).
+The next mathematical objective is the pointwise leading constant.
+
+The [leading-constant note](PRIMITIVE_NORM_LEADING_CONSTANT.md)
+proves the exact one-variable constant and cumulative pair asymptotic
+for every fixed order. It also proves a uniform conductor-prefix
+tail bound and the conditional formula
 \[
- V_D(N)=\#\{(a,b)\in P_D^2:a+b=N\},\qquad
- J_D(N)=
- \prod_{\substack{\ell\mid N\\\ell\nmid2D,\ (D/\ell)=-1}}
-                        \frac{\ell-1}{\ell-2}.
+ R_P(N)\sim
+ \frac{4c_{\mathcal C}^2}{(\varphi(L)/L)^2}
+ \left(\prod_{p\mid2\Delta}d_p(N)\right)
+ C_{\rm in}J_{\mathcal O}(N)\frac N{\log N},
 \]
-Let \(\mathcal A_D\) denote the pair-primitive local admissible
-targets for the actual order, including its conductor primes.
-The first research target is
-\[
-             V_D(N)\asymp_D \frac{N J_D(N)}{\log N}
- \qquad(N\in\mathcal A_D,\ N\ge N_D).
-\]
-Constants and \(N_D\) may depend on the fixed order. Uniformity is
-in the target and all permitted target valuations, not in varying
-discriminants or conductors. The exact bad-prime factors must be
-derived: do not assume that a maximal-order factor or a bounded
-ramified prefix applies at conductor primes. If an additional
-order-local factor cannot be absorbed into fixed-order constants,
-identify it explicitly and formulate the corrected sharp scale.
+where \(d_p(N)\) is a primitive local VALUE convolution density.
+The formula is conditional on the explicit binary splitting-core
+correlation LC.9. The class contribution is already lower order;
+the conductor and singular-series normalizations introduce no
+further unresolved arithmetic input.
 
-The [general value-count bounds](PRIMITIVE_NORM_ANALYTIC_BRIDGE.md#stronger-lower-bounds-and-distinct-value-pairs)
-already give
-\[
- \frac{N}{(\log N)^{\log4+\epsilon}}
-       \ll_{D,\epsilon}V_D(N)
-       \ll_D\frac{N J_D(N)}{\log N}
-\]
-on sufficiently large admissible targets for the lower bound,
-and uniformly in the target for the upper bound.
-Thus the main missing estimate is the **matching lower bound**;
-a new upper sieve or another qualitative local-global theorem
-would not close it. Leading-constant asymptotics are a further,
-separate target.
+An unconditional auxiliary-weight removal reduces that correlation
+to its version weighted by many small good split-prime divisor bands.
+The unresolved part is evaluating the weighted unweighted-indicator
+correlation with an asymptotically exact constant. The existing
+coordinate-weight theorem and fixed-fraction positive restoration
+do not provide it.
 
-The maximal-order part of this target is now proved in
-[Primitive norm sums in every maximal imaginary quadratic order](PRIMITIVE_NORM_MAXIMAL_ORDERS.md),
-including arbitrary even class groups. Its generic prime-class
-saturation and exact-prime-square class-error sieve avoid a separate
-absorber construction for each group. The remaining all-order task
-is the conductor extension; the earlier odd and cyclic-four proofs
-remain useful special cases.
-
-For conductors and any further refinement, address these interfaces:
-
-1. Check the primary literature for this unweighted two-value
-   correlation, including genus and conductor restrictions.
-   The completed two-block coordinate review does not settle
-   historical priority of this different statement.
-2. Reuse the now-proved full finite genus-vector transfer for maximal
-   orders. For ring class groups, first establish the correct
-   conductor-local and invertible-ideal meaning of the states.
-   The distinction between \(G/2G\) and corrections in \(2G\)
-   remains essential; no odd-order inverse of 2 is assumed.
-3. Treat nonmaximal orders at conductor primes. Separate the
-   invertible ideal-class data away from the conductor from
-   primitive local branches at the conductor. Primitive order
-   norms can have unbounded conductor-prime valuations, so the
-   maximal-order ramification bound cannot be imported.
-4. Prove that the selected local/genus profiles have positive
-   mass for every admissible target and retain their conditions
-   through every cofactor and restoration step. Then establish
-   the positive unweighted lower bound on those actual profiles.
-
-The genus conditions filter whole cofactor values, rather than
-requiring each prime factor to lie in a smaller splitting set.
-First test whether the existing fixed-period transfer already
-handles the full genus-character vector. Do not assume the
-\(C_{12}+C_{12}\) distribution barrier applies to this problem;
-identify any genuinely new analytic estimate as an explicit obligation.
-
-The all-order objective remains open for nonmaximal orders.
-Every maximal order, including arbitrary even class groups, is
-now covered by the separate internally reviewed theorem. This
-is not yet a conductor theorem or an unweighted leading asymptotic.
+The targeted full-proof comparison with Jiang--Lau--Lü's recent
+prime-plus-norm preprint exposes a more specific possible route:
+a variable-target determinant normalization introduces an average
+over Fourier frequencies of denominator \(Nq\). Its small-conductor
+Möbius estimate does not cover this range, and a correct coefficient
+decomposition must also retain its principal model.
+These are explicit further analytic obligations, not an assertion
+that every possible binary method meets a universal barrier.
+No \(C_{12}+C_{12}\) theorem is inferred.
 
 Historical priority, specialist mathematical review and complete
 manuscript preparation remain separate publication obligations for
-both papers. No first-result claim follows from the absence of a
-matching source in the current searches.
+both planned papers. No first-result claim follows from the absence
+of a matching source in the current searches.
 
 ## Evidence and limits
 

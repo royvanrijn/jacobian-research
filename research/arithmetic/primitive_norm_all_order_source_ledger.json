@@ -80,7 +80,7 @@
     },
     {
       "path": "PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md",
-      "sha256": "370db27ce48a826c21ebef5509831c65a90f340fc29aa5e94e5ddc14723fb0e5",
+      "sha256": "79ea4d916ac415f6c9ee75c71dd0dc1c3822668ff493f594218a6238c1dce74e",
       "locator": "Complete direct odd/dyadic conductor images, correctorder-unitgroups, finitecaps and primitiveideal-localtype interface"
     }
   ],

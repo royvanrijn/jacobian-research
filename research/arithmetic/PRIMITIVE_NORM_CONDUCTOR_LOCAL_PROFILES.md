@@ -269,6 +269,27 @@ and the low layers are stable under additions from that ball. The same
 replacement argument gives the sufficient bound2c+2 there. The larger
 uniform bound(C8) avoids case bookkeeping and is enough for the theorem.
 
+The dyadic split cap 2c+2 is sharp in general.
+Take d=-7 and f=2^c with c>=2. Completing the square gives
+
+    Q_c=(x+2^(c-1)y)^2+7*2^(2c-2)y^2.
+
+The primitive 2-adic image has a full tail beginning at valuation 2c+1.
+Every lower valuation layer is even, e<=2c-2, and its unit quotients
+are all 1 mod 4 (below the top low layer) or all 3 mod 4 (at that layer).
+Two low values of the same valuation therefore sum to valuation e+1;
+different valuations sum to their minimum. A low value and a tail
+value also sum to the low valuation. Consequently the target
+
+    N_c=2^(2c+1)
+
+requires two tail values. Capping both addend valuations at 2c+1
+forces them to have equal valuation 2c+1, whose sum has larger
+valuation. That cap misses N_c. The cap 2c+2 covers it, since both
+2^(2c+2) and -2^(2c+1) belong to the primitive split tail and sum
+to N_c. Thus the stated 2c+2 bound is sharp for this family; a finite
+profile enumeration must retain the extra layer.
+
 ## 7 Proper ideal prefixes and consistency of class states
 
 This section records the interface, not an unproved replacement of
