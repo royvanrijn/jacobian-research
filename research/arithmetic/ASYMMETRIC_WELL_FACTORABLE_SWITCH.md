@@ -471,13 +471,14 @@ Wu's well-factorable linear-sieve formula, p.220 Lemma 2.2, assumes
 It is not a factorization theorem for the present half-dimensional
 weights with \(z\) almost \(D\).
 
-The full 1993 Iwaniec--Pomykała paper, *Sums and differences of
-quartic norms*, Mathematika 40 (1993), 233--245, has not been audited
-here. Wu's reproduction of its auxiliary Proposition in Lemma 2.5
-does not constitute an audit of that paper's main theorem. The
-scope and priority comparison with the full 1993 main theorem
-remain unresolved. No novelty or priority conclusion is drawn
-from the auxiliary estimate alone.
+The [full 1993 Iwaniec--Pomykała theorem comparison](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit)
+has now been completed from the original paper. Its Theorem 1 gives
+unconditional quartic differences; Theorem 2 gives conditional
+coprime sums, assuming its (P4) uniformly for target-sized shifts.
+The original (P5) factor range and the positive sieve constant are
+part of that application. Wu's auxiliary reproduction does not
+remove the growing-shift hypothesis. This comparison does not
+establish a later unconditional adaptation or historical priority.
 
 ## 7. Why the critical application still lies beyond these inputs
 

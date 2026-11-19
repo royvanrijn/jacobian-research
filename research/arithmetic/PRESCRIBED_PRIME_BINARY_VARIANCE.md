@@ -436,5 +436,6 @@ modulus 12 agreed with the displayed two- and four-form factors. Those checks
 are diagnostics; the identities are proved algebraically above.
 
 There is no external human review, formal verification, new finite-range
-coverage certificate or originality claim for these corollaries. The full
-Iwaniec--Pomykała priority audit remains unresolved in the case study.
+coverage certificate or originality claim for these corollaries. The [full Iwaniec--Pomykała theorem comparison](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit)
+is complete: conditional quartic sums and unconditional differences are
+explicit antecedents. Broader priority and later refinements remain separate.

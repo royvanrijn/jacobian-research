@@ -855,28 +855,13 @@ shrinking-window quantitative estimates or the inputs for arbitrary moduli.
   Theorems 1.1--1.2 and the introduction's Loeschian discussion: estimates
   quadratic-phase exponential sums and mentions simultaneous norms of sieve
   dimension \(3/4\). This is not the fixed-target binary counting input above.
-- Iwaniec--Pomykała, [*Sums and differences of quartic norms* (1993)](https://www.cambridge.org/core/journals/mathematika/article/abs/sums-and-differences-of-quartic-norms/352BA2199EC45E35B20AD4B33EAEC4D3):
-  the publisher extract already discusses binary sums of integers composed of
-  primes splitting completely in an abelian field. The field
-  \(\mathbb Q(\zeta_{12})\) gives our restriction. The full paper was not
-  retrieved, so its precise theorem remains unaudited. **Novelty is unresolved.**
-  A specific analytic input is reproduced in [Runbo Li,
-  arXiv:2602.20917v6](https://arxiv.org/html/2602.20917v6), Section 4.1.1,
-  Lemma 4.3: the 1993 Proposition supplies a Type-II bilinear distribution
-  estimate with explicit range and weight hypotheses. This is not a reproduced
-  binary coverage theorem. Direct substitution of \(\mathbf1_C\) fails its
-  Siegel--Walfisz Condition A: on any dyadic interval, its entire mass \(T\)
-  lies in residue 1 modulo 12, so the discrepancy from the proposed average
-  \(T/\varphi(12)\) is \(3T/4\). The one-variable estimate in
-  Loughran--Matthiesen's Lemma 2.8 gives
-  \(T\asymp L/(\log L)^{3/4}\). The discrepancy therefore violates the
-  condition already when its demanded logarithmic power is 1. The indicator also allows fixed small
-  factors such as 13, violating the roughness support required by Condition B.
-  Li fixes the nonzero residue \(a\) in the introduction and principal
-  statements; substituting \(a=N\) requires additional growing-target
-  uniformity. A decomposition or modified formulation would have to address
-  all three obligations. No impossibility of such a modification is asserted,
-  and none of this audits the original main theorem.
+- Iwaniec--Pomykała, [*Sums and differences of quartic norms* (1993)](sources/iwaniec-pomykala-quartic-norms-1993.pdf):
+  the full paper is now retained and its main theorems audited below.
+  Theorem 1 is unconditional for differences; Theorem 2 gives conditional
+  every-target sums of coprime completely splitting integers, with
+  \(N/(\log N)^{3/2}\)-order bounds for the quartic case.
+  The latter specializes exactly to \(C_{12}+C_{12}\), assuming the
+  stated growing-shift uniformity. It is a direct conditional antecedent.
 - Matthiesen, [*Linear correlations amongst numbers represented by positive
   definite binary quadratic forms*](https://arxiv.org/html/1106.4690v3),
   Theorem 1.1: requires pairwise
@@ -921,3 +906,159 @@ semigroup-scale family conjecture remain open here. D12Power supplies
 power-saving exceptions for the lower count at \(H=X^{99/100}\); a
 power-saving full-count asymptotic and elimination of every exception require
 further arguments.
+
+### Full Iwaniec--Pomykała theorem audit
+
+The full thirteen-page publisher PDF of [Iwaniec--Pomykała,
+*Sums and differences of quartic norms*, Mathematika 40 (1993),
+233--245](sources/iwaniec-pomykala-quartic-norms-1993.pdf) has been inspected.
+The comparison is with their actual main theorems, not merely their
+auxiliary distribution proposition.
+
+**Arithmetic identification.** Their degree-four abelian extension
+\(K/\mathbb Q\), of conductor \(\Delta\), determines an index-four
+subgroup \(\mathcal H\le(\mathbb Z/\Delta)^\times\). The summands are
+integers all of whose prime factors split completely in \(K\).
+They count each numerical pair once, independently of how many ideals
+have those norms; see pp. 233--234 and the excluded-prime sieve on p. 239.
+For
+\[
+ K=\mathbb Q(\zeta_{12}),\qquad \Delta=12,\qquad \mathcal H=\{1\},
+\]
+this is exactly \(C_{12}\). Their local sum condition is
+\(N\equiv2\pmod{12}\), and the difference condition is
+\(N\equiv0\pmod{12}\). The additional parity condition (2) on p. 233
+is automatic on these classes.
+
+The simultaneous primitive Gaussian and Eisenstein norm condition is
+also exactly \(C_{12}\): primitiveness excludes inert prime factors in
+each quadratic field; 2 is inert in the Eisenstein field, 3 in the
+Gaussian field, and all remaining allowed primes are \(1\bmod12\).
+Conversely those primes generate primitive norms in both class-number-one
+rings. Ordinary quartic norms would be a larger set: for example,
+\(N_{K/\mathbb Q}(2+i)=25\), with primitive coordinates
+\((2,0,0,1)\) in the integral basis \(1,\zeta_{12},\zeta_{12}^2,\zeta_{12}^3\).
+That distinction does not remove the historical overlap: the paper
+expressly imposes complete splitting of the prime factors.
+
+**Published conclusions, printed p. 234.** Put
+\[
+ W_\Delta(N)=\prod_{p\mid N}(1-\varepsilon_p/p),\qquad
+ \varepsilon_p=
+ \begin{cases}
+ 1,&p\bmod\Delta\in\mathcal H,\\
+ -1,&p\bmod\Delta\notin\mathcal H.
+ \end{cases}
+\]
+Their statements concern coprime summands.
+
+| Result | Hypotheses and conclusion |
+|---|---|
+| Theorem 1 | Unconditionally, every fixed positive admissible difference \(N\) has infinitely many coprime complete-splitting pairs \(a-b=N\). The count with \(a\le X\) has order \(W_\Delta(N)X/(\log X)^{3/2}\) as \(X\to\infty\). The comparison constants depend only on \(\Delta\); no onset uniform in growing \(N\) is supplied by the fixed-shift argument. |
+| Theorem 2 | Assuming their (P4) uniformly for all shifts \(|a|<X\), every sufficiently large admissible sum target \(N\) has coprime complete-splitting pairs, of order \(W_\Delta(N)N/(\log N)^{3/2}\). The statement is explicitly conditional. |
+| Quantitative scope | These are order bounds, not a leading asymptotic with a specified constant. The authors prove the lower bound and cite a Brun-sieve upper bound. Their theorem does not prescribe a central balance interval. An interval adaptation must be checked before claiming novelty for a balanced refinement. |
+
+The p. 234 remarks also discuss prescribing ideal classes via genus
+fields, with additional local conditions. That remark is an antecedent
+for the arithmetic motivation; it is not a separately proved
+all-order primitive-value leading asymptotic.
+
+In particular their Theorem 2 already gives, under its uniformity
+hypothesis,
+\[
+ \#\{a+b=N:a,b\in C_{12},\ (a,b)=1\}
+ \asymp
+ \left(\prod_{\substack{p\mid N\\p\equiv1(12)}}(1-p^{-1})\right)
+ \left(\prod_{\substack{p\mid N\\p\not\equiv1(12)}}(1+p^{-1})\right)
+ \frac{N}{(\log N)^{3/2}},
+ \qquad N\equiv2\pmod{12}.
+\]
+The factor at 2 is fixed, and 3 never divides an admissible sum target.
+
+**The exact analytic hypothesis.** The Proposition on p. 243 assumes
+a complex sequence \(\beta_n\), supported on \(n\sim Y\), satisfying
+\(|\beta_n|\le\tau(n)\), with no prime factor at most
+\(\exp((\log\log n)^2)\). Its (P3) requires
+\[
+ \sum_{\substack{n\sim Y\\n\equiv l\ (k)}}\beta_n
+ -\frac1{\varphi(k)}
+       \sum_{\substack{n\sim Y\\(n,k)=1}}\beta_n
+ \ll_B Y(\log Y)^{-B}
+\]
+for every \(B>0\), uniformly over \(k\ge1\) and \((l,k)=1\).
+Its other three coefficient sequences are arbitrary bounded sequences. Its (P4) bounds the weighted bilinear-modulus
+convolution discrepancy by
+\[
+ O_{\epsilon,a,B}\bigl(X(\log X)^{-B}\bigr)
+\]
+under the factor ranges
+\[
+ X^\epsilon(1+X^{-1}Q^2)R<Y
+       <X^{5/6-\epsilon}(Q^2R)^{-2/3}.                 \tag{IP.1}
+\]
+The published unconditional proposition allows dependence on the
+fixed nonzero shift \(a\). Theorem 2 needs that dependence removed
+for target-sized shifts. On p. 244 the authors trace it to the
+Maass Hecke coefficients and obtain uniformity for \(|a|<X\) under
+\(|\lambda_j(a)|\le\tau(|a|)\), their stated Ramanujan hypothesis.
+The distinction between fixed shift and growing target is the
+reason the unconditional difference theorem does not prove the
+sum theorem.
+
+The paper also states an unconditional uniform alternative from
+Fouvry, but its factor range yields only a parameter \(1/28\),
+where their successful quartic calculation uses \(1/10\).
+The numerical discussion on pp. 242--243 reports that even \(1/11\)
+does not make that same sieve lower bound positive. Neither a
+fixed-shift estimate nor an unspecified polynomial dependence
+therefore completes their sum argument. The reported rigorous
+positivity computation was not independently replayed in this
+source comparison.
+
+**What the later auxiliary statements do and do not supply.**
+[Li, arXiv:2602.20917v6](https://arxiv.org/abs/2602.20917v6),
+Section 4.1.1, Lemma 4.3, PDF p. 49, reproduces the auxiliary
+Proposition in a setting where the nonzero shift is fixed.
+Wu's Lemma 2.5, printed p. 222, permits only
+\(|a|\le(\log X)^A\). Neither inspected statement directly supplies
+the growing-target version assumed in Theorem 2.
+
+A literal substitution \(\beta=\mathbf1_{C_{12}}\) also fails the
+auxiliary hypotheses: its entire dyadic mass \(T\) is in the
+residue 1 modulo 12, giving discrepancy \(3T/4\), and the allowed
+factor 13 violates the rough support condition. These are
+obstructions to that substitution. They do not invalidate the
+original theorem or distinguish its arithmetic scope; the original
+proof constructs different weights.
+
+A relevant modern comparison is [Lichtman,
+arXiv:2309.08522v1](https://arxiv.org/abs/2309.08522v1),
+Proposition 3.1, p. 9, and Theorem 1.8, pp. 4--5.
+It does give a convolution estimate uniform in a growing shift,
+but requires triply well-factorable modulus weights, a rough
+Siegel--Walfisz factor and its own factor ranges. Its general
+Kloosterman estimate retains an explicit shift-dependent spectral
+term. A replacement of (IP.1) requires a weight-factorization,
+range and positivity argument; quoting Kim--Sarnak or a modern
+distribution level alone does not supply one. This checks the
+named statements only, not every later refinement of the 1993
+method.
+
+**Positioning consequence.** The 1993 main-theorem comparison is
+complete at the statement and hypothesis level. The quartic
+complete-splitting binary problem, its admissibility conditions,
+conditional every-target sum theorem and logarithmic order are
+established antecedents. The unconditional difference theorem must
+also be credited.
+
+The present [quantitative correlation theorem](SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md)
+asserts an unrestricted-pair leading asymptotic with an explicit
+constant and logarithmic remainder, using its separately recorded
+analytic inputs. Those quantitative and hypothesis differences are
+the comparison to make. It does not automatically recover the
+older coprime-pair count: the allowed-prime factor
+\(\prod_{p\mid N,\ p\equiv1(12)}(1-p^{-1})\) can tend to zero.
+This audit establishes neither a first unconditional result nor
+exhaustive historical priority. A later removal of the 1993
+uniformity hypothesis, an adapted balanced statement, and a new
+coprime-pair deduction require their own verified arguments.

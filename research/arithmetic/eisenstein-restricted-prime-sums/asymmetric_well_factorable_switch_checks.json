@@ -5,7 +5,7 @@
     "checker": "research/arithmetic/eisenstein-restricted-prime-sums/verify_asymmetric_well_factorable_switch.py",
     "checker_sha256": "ce6769d501d7e87a6cf3b82373300b53151c5d874752467ec626a1c9e1bb2b9f",
     "source_sha256": {
-      "research/arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+      "research/arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
       "research/arithmetic/ASYMMETRIC_SEMILINEAR_SIEVE.md": "7c83a78e354727e9a8a16c3daf5443eacd49668778b9c0f9ba6a94e281084ce8",
       "research/arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md": "70a4ce92a33164e5c63030eba2c0f3040ccf1a05a6e6ff2a462d52be3dc65049",
       "research/arithmetic/ASYMMETRIC_AUXILIARY_AVERAGE.md": "8cfafca142b954118e9c2a325ed2a54df5dc46739cd9813aba326c18cdc7ac94",

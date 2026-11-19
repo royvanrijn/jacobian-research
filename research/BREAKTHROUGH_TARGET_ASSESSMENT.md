@@ -246,11 +246,14 @@ N=a+b with a,b in C? Requiring N/3<=a,b<=2N/3 is a stronger separate target.
 Loughran--Matthiesen's JEMS 2024 Frobenian correlation theorem, BGLM's GAFA
 2023 signed dispersion estimate, Iwaniec's half-dimensional sieve and
 Henriot's corrected upper bound. They give substantial averaged or
-one-sided tools. The exact full theorem of Iwaniec--Pomykala (1993),
-*Sums and differences of quartic norms*, remains an explicit priority and
-hypothesis-audit obligation: the accessible primary extract is insufficient
-to claim the strongest historical binary theorem. This literature gap
-must not be converted into a novelty assertion.
+one-sided tools. The [full Iwaniec--Pomykała comparison](arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit)
+is now complete. Theorem 1 proves unconditional quartic differences.
+Theorem 2 already gives the exact \(C_{12}\) sum problem, with coprime
+summands and the expected logarithmic order, conditionally on its
+growing-shift convolution estimate. It supplies no leading constant.
+The present unrestricted leading asymptotic must be compared against
+that direct antecedent; later deconditioning, balanced adaptations
+and historical priority have not been exhausted.
 
 **Repository evidence.** Density-one coverage, quantitative exceptional-set
 bounds, local positivity and one-sided C+A3 pointwise results are retained.

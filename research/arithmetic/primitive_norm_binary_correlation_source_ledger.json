@@ -24,7 +24,7 @@
     },
     {
       "path": "SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-      "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+      "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
       "locator": "Sections1-6 quantitativebinarytheory; Sections7-10 Goldbachexistence G.1-G.2, classicalhighercounts G.3-G.6, exactbasisorders G.7-G.9"
     },
     {
@@ -163,6 +163,26 @@
       "path": "sources/milne-cft403.pdf",
       "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
       "bytes": 2072714
+    },
+    {
+      "path": "sources/iwaniec-pomykala-quartic-norms-1993.pdf",
+      "sha256": "ce9c8fe8d6eedfea709c4ffd2b590a1920727d5d6d91b641b04a32b349df86b2",
+      "bytes": 517206
+    },
+    {
+      "path": "sources/li-prime-progressions-2602.20917v6.pdf",
+      "sha256": "0e9dc0debab58e63dc117a55decba901205d26b9da0610d9f810b59d8334999e",
+      "bytes": 1074148
+    },
+    {
+      "path": "sources/lichtman-goldbach-2309.08522v1.pdf",
+      "sha256": "665693af46aee2d743e0a1f61c6e35464dc8113e3083b9f3546bfa7de98c55b5",
+      "bytes": 616691
+    },
+    {
+      "path": "sources/wu-chens-double-sieve-2004.pdf",
+      "sha256": "ebe75ef36478213bde937dce7d163bdd14b5b0352be54e085c9f696afc6e8a30",
+      "bytes": 337751
     }
   ],
   "source_roles": {
@@ -318,6 +338,30 @@
       "locator": "Theorem 0.4, p. 4; Chapter V, Theorems 3.5-3.6, p. 158; Example 3.9, p. 159; Frobenius, p. 160",
       "role": "Hilbert-class-field Artin isomorphism and principal-prime criterion",
       "inspection": "The actual retained primary version, statements and application hypotheses were read internally. No external human review, formal verification or priority certification."
+    },
+    "iwaniec-pomykala-quartic-norms-1993.pdf": {
+      "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0025579300007014/resource/name/S0025579300007014a.pdf",
+      "locator": "Theorems 1-2 and remarks, printed p. 234; definitions pp. 233,239; Proposition (P1)-(P5), p. 243; uniformity and Fouvry alternative, p. 244",
+      "role": "Direct historical comparison: exact quartic complete-splitting semigroup, unconditional differences, conditional sums, coprime integer-pair order bounds. Not an unconditional sum input.",
+      "inspection": "Retained primary statements, hypotheses and comparison were read internally. This is a targeted source audit, not external review, proof replay of the 1993 numerical positivity calculation, or exhaustive historical priority certification."
+    },
+    "li-prime-progressions-2602.20917v6.pdf": {
+      "url": "https://arxiv.org/pdf/2602.20917v6",
+      "locator": "Introduction fixes a nonzero shift; Section 4.1.1, Lemma 4.3, PDF p. 49",
+      "role": "Bounded follow-up comparison: fixed-shift reproduction of the auxiliary proposition, not a removal of the original growing-target hypothesis.",
+      "inspection": "Retained primary statements, hypotheses and comparison were read internally. This is a targeted source audit, not external review, proof replay of the 1993 numerical positivity calculation, or exhaustive historical priority certification."
+    },
+    "lichtman-goldbach-2309.08522v1.pdf": {
+      "url": "https://arxiv.org/pdf/2309.08522v1",
+      "locator": "Theorem 1.7, p. 4; Theorem 1.8, pp. 4-5; Proposition 3.1, p. 9",
+      "role": "Bounded follow-up comparison: growing-shift convolution estimates require triply well-factorable modulus weights and their own ranges; no direct original P4/P5 implication is asserted.",
+      "inspection": "Retained primary statements, hypotheses and comparison were read internally. This is a targeted source audit, not external review, proof replay of the 1993 numerical positivity calculation, or exhaustive historical priority certification."
+    },
+    "wu-chens-double-sieve-2004.pdf": {
+      "url": "https://www.impan.pl/shop/publication/transaction/download/product/82961",
+      "locator": "Lemma 2.5, printed p. 222",
+      "role": "Comparison only: the reproduced auxiliary estimate allows shifts at most a fixed logarithmic power, not a target-sized shift.",
+      "inspection": "Retained primary statements, hypotheses and comparison were read internally. This is a targeted source audit, not external review, proof replay of the 1993 numerical positivity calculation, or exhaustive historical priority certification."
     }
   },
   "version_audit": {
@@ -423,6 +467,12 @@
       "path": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
       "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
       "locator": "Arithmetic class-group calculation only: Minkowski norms 1, 2 and 3 and ideal relations; not the binary analytic lower bound"
+    },
+    {
+      "path": "SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
+      "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+      "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning",
+      "role": "historical_comparison"
     }
   ],
   "gcd_profile_rough_avoidance": {
@@ -431,5 +481,22 @@
     "repair": "For eachretainedA, use the fixed-periodeta0 extension on allS-roughv. The added population forp|Q,p>y is at mostCpsi*Y/(A*p), since support has0<v<=Cpsi*Y/A. Absolute summation overA multiplesd gives DeltaS_d<<(Y/d)*L^C*V^-1*sum_(p|Q,p>y)1/p.",
     "uniformity": "sum1/p<=logQ/(ylogy), V^-1<<logy, logQ=O(L), so the error is(Y/d)L^-B for everyfixedB. Ifdhasaprime>y thegoodprofileisempty. Arbitrary target valuations are retained.",
     "scope": "Written elementary comparison before recordwise exceptional-character centering; no new analytic hypothesis, no claimed counterexample toG15, no internal audit as a mathematical premise."
+  },
+  "quartic_norm_comparison": {
+    "status": "Completed original-paper statement and hypothesis audit; later deconditioning and exhaustive priority remain separate.",
+    "canonical": {
+      "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
+      "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+      "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
+    },
+    "exact_overlap": "For K=Q(zeta_12), conductor 12 and splitting subgroup {1}, the paper's numerical summands are exactly C12. Local sum targets are 2 mod 12 and difference targets 0 mod 12.",
+    "theorem_1": "Printed p. 234: unconditional infinitely many coprime complete-splitting pairs for each fixed admissible difference; count of order X/log^(3/2) X times product_(p|N)(1-epsilon_p/p). No growing-target onset uniformity is inferred.",
+    "theorem_2": "Printed p. 234: conditional eventual coprime sums, assuming P4 uniformly for every |a|<X, at the same logarithmic order. It gives no explicit leading asymptotic.",
+    "hypothesis": "P1-P5 on p. 243: |beta_n|<=tau(n), rough support and uniform Siegel-Walfisz bounds for all moduli. The unconditional error constant depends on the shift. Page 244 obtains growing-shift uniformity under the stated Maass Hecke Ramanujan bound.",
+    "range": "P5: X^epsilon(1+Q^2/X)R<Y<X^(5/6-epsilon)(Q^2R)^(-2/3). The successful quartic parameter is 1/10; the published Fouvry alternative yields 1/28, and p. 243 reports failure at 1/11 for that same positivity calculation.",
+    "coprimality": "epsilon_p=1 on allowed primes and -1 otherwise. The extra allowed-prime divisor product can tend to zero. The current unrestricted leading count is not automatically a proof of the older coprime count.",
+    "positioning": "Credit the existing quartic binary problem, admissibility, conditional every-target sum theorem and logarithmic order, plus the unconditional difference theorem. Compare the present unrestricted leading constant and analytic hypotheses explicitly. No first unconditional result or exhaustive historical priority is certified.",
+    "followup": "The inspected Li v6 fixed-shift result, Wu logarithmic-shift result and Lichtman triply well-factorable uniform estimate do not directly establish the original full P4/P5 package. Any adaptation needs verified weights, ranges and positivity. This does not rule out another later refinement.",
+    "review": "Original full 13-page paper read; theorem page visually checked; arithmetic and later-source implications reviewed separately by agents. No external human review, formal verification or replay of the reported 1993 numerical certificate."
   }
 }

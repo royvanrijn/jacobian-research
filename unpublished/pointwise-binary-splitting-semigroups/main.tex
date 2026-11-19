@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[hmargin=27mm,vmargin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue,breaklinks=true]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Pointwise Binary Correlations in Abelian Splitting Semigroups},pdfauthor={Roy van Rijn}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\N}{\mathbb N}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\1}{\mathbf 1}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\rad}{rad}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\TV}{TV}
+\newcommand{\ee}[1]{e^{2\pi i #1}}
+\allowdisplaybreaks[2]
+\setlength{\emergencystretch}{1.5em}
+\title{Pointwise Binary Correlations in Abelian Splitting Semigroups}
+\author{Roy van Rijn}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study representations of an integer as a sum of two positive integers
+whose prime factors satisfy fixed abelian splitting restrictions.
+For semigroups defined by subgroups of a fixed reduced residue group,
+we establish pointwise asymptotics with explicit arithmetic factors and
+a positive logarithmic saving, uniformly in the target. The resulting
+congruence criterion characterizes eventual representability.
+In particular, integers supported on primes congruent to one modulo
+twelve have an explicit binary representation asymptotic of order
+\(N/(\log N)^{3/2}\) on every sufficiently large admissible target.
+The proof adapts Walsh's multiplicative-invariance framework, using
+the recent zero-free and weighted-dilation theorems of OpenAI,
+a density model retaining the relevant congruence characters, and
+transference for reflected correlations with growing targets.
+We count numerical values without representation multiplicities.
+As an arithmetic application, we derive explicit leading asymptotics
+for sums of primitive norm values in every fixed imaginary quadratic order.
+\end{abstract}
+\input{introduction}
+\input{theorems}
+\input{inputs}
+\input{model}
+\input{graph}
+\input{assembly}
+\input{norms}
+\input{consequences}
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+\input{references}
+\end{document}

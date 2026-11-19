@@ -1,0 +1,114 @@
+\section{Introduction}
+Can every sufficiently large integer \(N\equiv2\pmod{12}\) be written
+as \(a+b\), where every prime factor of both \(a\) and \(b\) is
+\(1\pmod{12}\)?
+The congruence condition is unavoidable: each allowed summand is itself
+\(1\pmod{12}\). Why should that condition be sufficient, and how many
+representations should there be?
+
+Put
+\[
+ C_{12}=\{n\ge1:p\mid n\Longrightarrow p\equiv1\pmod{12}\},
+ \qquad R_{12}(N)=\#\{(a,b)\in C_{12}^2:a+b=N\}.
+\]
+We include \(1\), and count ordered pairs of numerical values.
+Our answer is the pointwise asymptotic
+\begin{equation}\label{eq:opening}
+ R_{12}(N)=A_{12}J_{12}(N)\frac{N}{(\log N)^{3/2}}
+       \left(1+O((\log N)^{-\delta})\right),
+ \qquad N\equiv2\pmod{12},
+\end{equation}
+with explicit positive factors and an explicit \(\delta>0\).
+The constants are given in Theorem~\ref{thm:c12}. In particular every
+sufficiently large integer in this congruence class has a representation.
+
+Knowing how many allowed integers lie below \(X\) does not tell us how
+often two allowed integers land on the particular line \(a+b=N\).
+Even an average over many targets can conceal exceptional targets.
+Classical correlation theorems for independent linear forms do not
+directly handle this pair: the linear parts of \(n\) and \(N-n\)
+are dependent. For example, the Frobenian correlation theorems of
+Loughran--Matthiesen require pairwise linearly independent nonconstant
+linear parts \cite[Theorems 1.9 and 3.10]{loughranmatthiesen}.
+The issue here is cancellation on each individual additive fibre.
+
+There is a direct historical antecedent. Iwaniec--Pomyka\l a studied
+sums and differences of coprime values of quartic norm forms
+\cite{iwaniecpomykala}. For \(\Q(\zeta_{12})\), their splitting
+conditions select exactly the primes \(1\pmod{12}\). Their
+Theorem~2 gives conditional order bounds for coprime sums at every
+sufficiently large admissible target; its hypothesis (P4) is a
+convolution estimate uniform in growing shifts. Their Theorem~1
+proves the corresponding fixed-difference result unconditionally.
+Their counts already count each numerical value once. Formula
+\eqref{eq:opening} concerns unrestricted pairs and supplies a leading
+constant and quantitative remainder through a different argument.
+We make no claim here about historical priority beyond this comparison.
+
+The example belongs to a general theorem. Fix an even modulus \(L_0\)
+and subgroups \(H_1,H_2\le(\Z/L_0\Z)^\times\). Let \(C_i\)
+consist of integers supported on primes outside \(L_0\) whose residues
+lie in \(H_i\), and put \(\rho_i=|H_i|/\varphi(L_0)\).
+Then on the admissible target classes,
+\[
+ \#\{a+b=N:a\in C_1,\ b\in C_2\}
+ \sim \mathfrak C(N)\frac{N}{(\log N)^{2-\rho_1-\rho_2}},
+\]
+where \(\mathfrak C(N)>0\) is explicit. Theorem~\ref{thm:general}
+allows different, nonnested subgroups, fixed residue filters and fixed
+coefficients supported on \(L_0\). Its error is uniform in the target
+and all target prime valuations. The modulus, groups and coefficients
+remain fixed. Theorem~\ref{thm:local} identifies the admissibility
+condition with solvability in every finite quotient.
+
+The proof has one organizing idea. Multiplication by an allowed prime
+preserves membership in these sparse sets. We construct a smooth model
+matching both their fractional logarithmic density and their surviving
+congruence biases, and use the multiplicative invariance to control the
+error in replacing the indicators by the model. Once that replacement
+is justified, local arithmetic determines the main term.
+Keeping the congruence characters is essential: the model with only
+the average density loses principal contributions of the same order
+as the answer.
+
+This approach adapts Walsh's multiplicative-invariance framework for
+shifted divisor correlations \cite{walsh}. His theorem concerns
+positive integer divisor orders and a fixed nonzero shift. Two
+adaptations are substantial here. We count distinct numerical values
+with fractional logarithmic densities, and we control the reflected
+correlation \(n,N-n\), with a shift as large as the target.
+Identity-class primes preserve the residue filters as well as the
+indicators. A quotient character frame then gives the required
+progression comparison. Finally, a target-grid energy estimate retains
+the normalization when the target itself enters the rational
+denominators.
+
+The analytic dependencies deserve explicit emphasis. We use the
+weighted-dilation root-moment theorem of OpenAI \cite{weightedgraphs}
+and the all-conductor Dirichlet zero-free half-plane supplied by
+Part~I, Theorem~3.1, of \cite{zerofree}. The latter gives
+\(\Re s>11/12\); the stronger Part~II claim is unnecessary.
+Section~\ref{sec:inputs} states the exact imports. The fractional
+density model, fixed-progression character correction, large-target
+pairing, target-grid estimate and quantitative cutoff argument are
+the application arguments developed below. Thus the conclusion depends
+on these specified recent preprints; it does not follow from classical
+independent-linear-form correlations alone.
+
+The principal arithmetic application is to primitive norm values in
+every fixed imaginary quadratic order. Local representability can
+leave a global class-group obstruction. We show that the obstructed
+values contribute a smaller logarithmic order to the binary count.
+A conductor-prefix decomposition and a summable tail bound then
+transfer the leading asymptotic to actual primitive norm values,
+including the local factors at conductor primes. No coordinate or
+ideal representation multiplicity enters that count.
+
+The conclusion is that local arithmetic governs the pointwise binary
+count. Here ``local'' includes simultaneous residue conditions:
+separate \(p\)-adic tests can lose a coupling between primes, as the
+example following Theorem~\ref{thm:local} demonstrates.
+The final section gives the short basis-order corollary and specifies
+the boundary of the result. Exact small-target classifications and
+their certificates, higher-fold systems and prime-star counts have
+different proof requirements and are outside this article.

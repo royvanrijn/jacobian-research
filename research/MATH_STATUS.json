@@ -5810,7 +5810,7 @@
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
       "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Restricted-prime sums have a separately scoped manuscript. Planned primitive-norm papers separate exact sumsets from sharp class-group value counts.",
-      "status": "Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Primebasis13vs14pinpointstheunprovedrestrictedbinarygap. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. Paper2 has an all-order centerpiece; Paper1 retains the exact -7,-8,-11 classifications and certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, S12U is the first every-target goal; the new pointwise upper bounds and fixed-cutoff tail leave the natural lower count and fixed-prime marginals open. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while C12 pointwise inputs, every-target goals, effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. The exact all-target C12 assertions, norm pointwise inputs, full-count power-saving variance and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, all-target C12, unweighted residual/full power-saving variance and priority remain open. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full C12+C12 goal and its pointwise lower/marginal inputs remain open. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative, and full C12/H1/H2 remain open. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis.",
+      "status": "The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Primebasis13vs14pinpointstheunprovedrestrictedbinarygap. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. Paper2 has an all-order centerpiece; Paper1 retains the exact -7,-8,-11 classifications and certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, S12U is the first every-target goal; the new pointwise upper bounds and fixed-cutoff tail leave the natural lower count and fixed-prime marginals open. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while C12 pointwise inputs, every-target goals, effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. The exact all-target C12 assertions, norm pointwise inputs, full-count power-saving variance and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, all-target C12, unweighted residual/full power-saving variance and priority remain open. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full C12+C12 goal and its pointwise lower/marginal inputs remain open. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative, and full C12/H1/H2 remain open. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case also has pointwise logarithmic value counts; its exact global exception list remains open. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate.",
       "readme": "arithmetic/README.md",
       "results": [
         {
@@ -9097,6 +9097,30 @@
           "verification_note": "Internal written application proof, actual primary-source statement/hypothesis review and separate analytic/arithmetic/literature agent audits. These actual-prime results are classical consequences; no semigroup-to-prime inference, external human review, formal verification, numerical onset or priority claim.",
           "dependency_coverage": "partial",
           "graph_scope_note": "Actual prime variables in the fixed progression 1 mod L have full uniform prime-star leading asymptotics and natural-order counts of distinct primes in power-short windows with theta>2/3, for any fixed number of shared triple equations. The explicit C_12 constants 3/32 and 9/64 use ordinary unit factors at all good primes. Chebotarev prime-tuple theorems show that every sufficiently large odd N is a sum of three distinct prime values of the principal discriminant -23 form, with a closed leading constant; five coupled principal prime values work for all sufficiently large comparable odd targets. With zero padding, the P_12 basis order is 13 or 14, and 13 is equivalent to eventual restricted binary Goldbach. The current banks do not extract the prime subslice of a semigroup count. All results are classical applications with written proofs. The all-target two-prime gap, mixed binary prime-plus-core correlations, effective onsets and Chebotarev power windows remain outside the claims."
+        },
+        {
+          "id": "ARITH-CONNORS-KEATING-FIXED-SHIFT",
+          "title": "Connors-Keating fixed-shift sums-of-two-squares indicator asymptotic",
+          "state": "proved",
+          "scope": "For each fixed nonzero integer h, the unweighted sum of b(n)b(n+h) up to x is asymptotic to C(h)x/log x, C(h)=W2(h)/2 times product over p=3mod4 dividing h of (1-p^(-v_p(h)-1))/(1-p^-1). Includes smooth test functions with an additive o(x/log x) error. Uses the same explicitly imported ZF and G theorems as the pointwise binary theory. No growing-shift uniformity or higher correlation is asserted.",
+          "canonical_source": "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+          "checker": "arithmetic/verify_connors_keating_local.py",
+          "artifact_hash": "sha256:1506490a1b95e9aeac4e0865258ae700db47cc9f29f9b1e7021bc2287a2b552a",
+          "evidence": [
+            "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+            "arithmetic/verify_connors_keating_local.py",
+            "arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION_SUPPORT.md",
+            "arithmetic/PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md",
+            "arithmetic/sources/walsh-2610.40439v2.pdf"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each fixed nonzero integer h, the unweighted sum of b(n)b(n+h) up to x is asymptotic to C(h)x/log x, C(h)=W2(h)/2 times product over p=3mod4 dividing h of (1-p^(-v_p(h)-1))/(1-p^-1). Includes smooth test functions with an additive o(x/log x) error. Uses the same explicitly imported ZF and G theorems as the pointwise binary theory. No growing-shift uniformity or higher correlation is asserted."
         }
       ],
       "open_questions": [
@@ -9221,12 +9245,6 @@
           "source": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md"
         },
         {
-          "node": "GAP-ARITH-M12-LITERATURE",
-          "kind": "verification",
-          "question": "Audit the full Iwaniec-Pomykala1993 main theorem and the exact distribution/roughness/varying-residue conditions before any priority or Type-II application claim.",
-          "source": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md"
-        },
-        {
           "node": "GAP-ARITH-ELLIPTIC-WEIGHTED-BRANCH-HAZARD",
           "kind": "mathematical",
           "question": "Prove infinite total predictable hazard for Haar-almost every vector in the positive certified K0 prefix C0 of ETP5. The exact kernel uses the actual reductions, formal depths and branch offsets, so no separate depth-one distribution hypothesis is required. This weighted divergence would imply zero intrinsic measure and A_K0=o(log B), while leaving Hasse infinitude open. ECM3 gives a sufficient conditional mean-variance route; its increasing-prime moment estimates are not established. EKX2 restricts a positive-density set to pole hazards only.",
@@ -9271,7 +9289,7 @@
         {
           "node": "GAP-ARITH-FROBENIAN-BINARY-PRIORITY",
           "kind": "verification",
-          "question": "Audit priority/ranges beyond Dq(theta>1/3) and Vq fixed-width variance, including smaller windows and genuinely power-saving exceptions.",
+          "question": "The original 1993 comparison is complete. Audit later removal of its growing-shift hypothesis, possible balanced adaptations, and priority/ranges beyond the stated density-one and variance results.",
           "source": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md"
         },
         {
@@ -9503,7 +9521,8 @@
         "Targeted historical review verifies that the full arbitrary-binary-pair separately primitive power-saving coordinate asymptotic and eventual local-global theorem are short deductions from Baker2006 uniform analytic lemmas/proofs plus elementary tails/local completion. Gaussian cases have still earlier antecedents. No standalone novelty claim for central generality alone is warranted; sharper7/8, explicit local arithmetic and exact exceptions require separate priority checks. The mathematical theorem and assurance remain unchanged.",
         "For every fixed imaginary quadratic order O=Z+f O_K, arbitrary conductor and ring class group, ordered positive primitive principal norm VALUE sums have sharp order N J_O(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside the finite local set. J_O omits all primes dividing2Delta. Uniform all target valuations; constants depend onO. The individual local shadow has the same scale; hidden class failures contribute O_O,delta(N J_O/log^(1+delta)N), any0<delta<1/h(O), allN>=3; P=Lambda if2Pic(O)=0. No pointwise leading constant, varying-order uniformity, numerical cutoff or exact global exceptions.",
         "For every fixed imaginary quadratic order, exact Euler/Gamma-normalized core and primitive-value marginal constants and cumulative pair asymptotic c_O^2 X^2/(2logX) are proved. Hidden individual class failures are lower order. A uniform bad-prefix tail bound and Haar-value identity reduce the FULL pointwise leading constant to explicit BinaryCoreCorrelation LC.9. An unconditional small-split-prime auxiliary-weight removal has relative cost1/sqrt(loglogN). The current binary argument imports the primary 2026 ZF and graph theorems as proved results and therefore claims an unconditional pointwise leading term, including C4+C4. Full independent verification of those imports and their application remains separate. Internal validation records are review evidence, not primary proof. Candidate local constants are VALUE densities, not coordinate densities; no extra Beta factor.",
-        "Conditional on uniformfixedDirichletzero-freehalfplaneZF and the specified k=1weighted-dilationgraphinputG, all fixed abelian splitting semigroups have pointwise unweighted binary leading constants, arbitrary nonnestedsubgroups, fixed residuefilters andcoprimebadcoefficients. Main c1*c2*Gamma*C_common-forbidden*J_common-forbidden(N)*N/[AB log^(2-rho1-rho2)N]. Includes primitiveGaussian explicitcoefficients on alladmissibleresidues, everyfixedimaginaryquadraticorder viaactualHaarvaluefactorsandlower-orderclasserror, andC12+C12 main12c12² C_E J_E N/log^(3/2)N onN2mod12. The modular conditional deduction records its logical premises. The current binary argument imports the primary 2026 ZF and graph G theorems as proved results and therefore claims unconditional completion. Full independent verification of those imports and their application remains separate; internal validation records are review evidence, not primary proof. No external review, formal verification or priority claim is asserted."
+        "Conditional on uniformfixedDirichletzero-freehalfplaneZF and the specified k=1weighted-dilationgraphinputG, all fixed abelian splitting semigroups have pointwise unweighted binary leading constants, arbitrary nonnestedsubgroups, fixed residuefilters andcoprimebadcoefficients. Main c1*c2*Gamma*C_common-forbidden*J_common-forbidden(N)*N/[AB log^(2-rho1-rho2)N]. Includes primitiveGaussian explicitcoefficients on alladmissibleresidues, everyfixedimaginaryquadraticorder viaactualHaarvaluefactorsandlower-orderclasserror, andC12+C12 main12c12² C_E J_E N/log^(3/2)N onN2mod12. The modular conditional deduction records its logical premises. The current binary argument imports the primary 2026 ZF and graph G theorems as proved results and therefore claims unconditional completion. Full independent verification of those imports and their application remains separate; internal validation records are review evidence, not primary proof. No external review, formal verification or priority claim is asserted.",
+        "For each fixed nonzero integer h, the unweighted sum of b(n)b(n+h) up to x is asymptotic to C(h)x/log x, C(h)=W2(h)/2 times product over p=3mod4 dividing h of (1-p^(-v_p(h)-1))/(1-p^-1). Includes smooth test functions with an additive o(x/log x) error. Uses the same explicitly imported ZF and G theorems as the pointwise binary theory. No growing-shift uniformity or higher correlation is asserted. Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -11933,7 +11952,7 @@
           },
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, exact reductions and counterexamples to stronger closure proposals"
           }
         ],
@@ -11958,7 +11977,7 @@
           },
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, linear-vacuum normalization and limitations of Wick-power tests"
           }
         ],
@@ -12983,7 +13002,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
           }
         ],
@@ -13001,7 +13020,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
           }
         ],
@@ -13030,7 +13049,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -13058,7 +13077,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -13086,7 +13105,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Giraudin’s total-degree-five theorem"
           }
         ],
@@ -13106,7 +13125,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, HC4 research priorities, priority 1"
           }
         ],
@@ -13125,7 +13144,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, HC4 research priorities, priority 1"
           }
         ],
@@ -13144,7 +13163,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, HC4 research priorities, priority 2"
           }
         ],
@@ -13163,7 +13182,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
           }
         ],
@@ -13190,7 +13209,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -13216,7 +13235,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
           }
         ],
@@ -26959,7 +26978,7 @@
           },
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, linear-vacuum cubic growth obstruction"
           }
         ],
@@ -57964,12 +57983,12 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Target S12; longer-term fixed-modulus question"
           },
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Corollary FixedModulusBalancedExistence, macroscopic interval factor1/3; q12 impliesS12 andS12U"
           }
         ]
@@ -57992,7 +58011,7 @@
           },
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Local theorem L12 and the sieve margin (2)-(4)"
           }
         ]
@@ -58010,7 +58029,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Tail lemma T12, sharp (5), global positive-multiple floor count and the p^2 divisibility proof"
           }
         ]
@@ -58028,7 +58047,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Conditional reduction C12, summed hypotheses H1-H2 and stronger pointwise corollary"
           }
         ]
@@ -58046,7 +58065,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Exact finite check"
           },
           {
@@ -58074,7 +58093,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Conditional reduction C12; averaged theorem A12 boundary; remaining pointwise obligation"
           },
           {
@@ -58087,19 +58106,24 @@
       },
       {
         "id": "GAP-ARITH-M12-LITERATURE",
-        "title": "Audit the 1993 quartic-norm theorem and priority",
-        "scope": "Retrieve and audit the full precise Iwaniec-Pomykala1993 main theorem against m=12 balanced coverage. Li Lemma4.3 reproduces only a Type-II Proposition. Direct substitution of xi=1_C fails Siegel-Walfisz Condition A already at logarithmic power 1, since all its mass T lies in residue 1 modulo 12 and gives discrepancy 3T/4, with T of order L/(log L)^(3/4); it also fails roughness Condition B at the fixed small factor 13. Modified weights or formulations and uniformity in the varying target residue are not verified; no impossibility of a modification is asserted. Published standard corollaries P12/A12G do not settle the main-theorem priority question; no novelty is claimed.",
+        "title": "Completed: original 1993 quartic-norm theorem comparison",
+        "scope": "Completed statement and hypothesis audit of the full Iwaniec-Pomykala 1993 paper. Theorem 1 is unconditional for each fixed admissible difference. Theorem 2 gives conditional eventual coprime sums, with logarithmic-order counts, assuming P4 uniformly for target-sized shifts. For Q(zeta_12), its splitting-prime semigroup is exactly C12, with sum targets 2 mod 12 and difference targets 0 mod 12. The count has product_(p|N)(1-epsilon_p/p), with epsilon_p=1 on allowed primes and -1 otherwise; no explicit leading asymptotic is printed. This is a completed source comparison, not an unconditional sum theorem or a certification of historical priority. Later deconditioning, balance adaptations and recovery of the coprime count remain separate.",
         "kind": "gap",
-        "status": "open",
+        "status": "proved",
         "topic": "arithmetic",
         "origin": "internal",
         "dependency_coverage": "partial",
-        "assessment": "Internal written arguments and exact computational controls only. No independent whole-proof replay, external review, formal verification or public deposit is asserted.",
+        "assessment": "Internal full-paper statement, hypothesis and arithmetic comparison, with separate source and arithmetic agent reviews. No external human review, formal verification, exhaustive later-literature review or replay of the reported 1993 positivity computation.",
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
-            "locator": "Literature: Iwaniec-Pomykala paragraph and unresolved priority"
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+            "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
+          },
+          {
+            "path": "arithmetic/sources/iwaniec-pomykala-quartic-norms-1993.pdf",
+            "sha256": "ce9c8fe8d6eedfea709c4ffd2b590a1920727d5d6d91b641b04a32b349df86b2",
+            "locator": "Theorems 1-2 and remarks, p. 234; P1-P5, p. 243; uniformity and Fouvry alternative, p. 244"
           }
         ],
         "gap_kind": "verification"
@@ -59413,7 +59437,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "A12 proof: exact Debaene Corollary 2 statement and fixed degree-four application"
           }
         ]
@@ -59431,7 +59455,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Averaged theorem A12 and proof: quartic ideal coefficients, square inversion, H_6 mean and balanced dyadic area X^2/2"
           }
         ]
@@ -61629,17 +61653,17 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "P12 proof: Theorem 1.9, Definitions 2.6-2.7, xi, two moment systems and positivity witnesses; literature application of Lemma 2.8"
           },
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Imported tools: Lemma2.8 and Lemma2.4(2), positive bounded Frobenian indicator check"
           },
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "V3-V5, LM constant/character specialization and fixed progression inputs"
           },
           {
@@ -61683,7 +61707,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Positive-proportion corollary P12 and proof via the two frobenian moment asymptotics"
           }
         ],
@@ -61701,7 +61725,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Sieved averaged theorem A12G: inverse forbidden Euler factors, square convolution, mean and dyadic count"
           }
         ],
@@ -61719,7 +61743,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "A12G numerical enclosure and its precise averaged interpretation"
           },
           {
@@ -64385,7 +64409,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Imported tools, LM Lemmas 2.8 and 2.4(2), equations F2-F3"
           }
         ]
@@ -64403,7 +64427,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Imported tools and FBS2 parameter check: exact Theorem 5/Corollary 2 upper application"
           }
         ],
@@ -64422,7 +64446,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Imported tools and FBS2: 2014 erratum upper-validity and leading-coefficient check"
           }
         ],
@@ -64441,7 +64465,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Upper-bound lemma FBS2, full parameter check and equations F4-F5"
           }
         ]
@@ -64459,7 +64483,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Block counting and the two moments, equation F6"
           }
         ]
@@ -64477,7 +64501,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Singular-factor lemma FBS3 and its squarefree-divisor proof, F7"
           }
         ]
@@ -64495,7 +64519,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Block counting and the two moments, F8 and threshold argument"
           }
         ]
@@ -64513,7 +64537,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Hq/H12, Candidate lemma Tq1 and Tq: exact symmetric/shifted Theorem3.1 calls and equation1.1"
           }
         ],
@@ -64532,7 +64556,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Known-range corollary Hq and H12 alias: block covering, weighted mean error, singular positivity and unweighting"
           }
         ]
@@ -64550,12 +64574,12 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Balanced family theorem FBS-G"
           },
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Corollary FixedModulusBalancedExistence, macroscopic interval factor1/3; q12 impliesS12 andS12U"
           }
         ]
@@ -64563,7 +64587,7 @@
       {
         "id": "GAP-ARITH-FROBENIAN-BINARY-PRIORITY",
         "title": "Audit sharper exceptional sets and window ranges before priority claims",
-        "scope": "Historical priority remains unaudited for these internally derived results. Dq gives lower counts at theta>1/3 with arbitrary logarithmic exceptional savings; Vq gives fixed-width variance; VqPower gives full-count power variance and energy at5/6<theta<1 with the stated logarithmic errors. Semigroup-scale density one at theta<=1/3, residual variance/energy at0<theta<=5/6, general power-saving full-count asymptotic rates and every-target FBS-U remain open in this programme, without a complete literature-frontier claim. EisValueCounts improves the one-ring value count but does not reach H/log. The full1993 Iwaniec-Pomykala main-theorem audit remains outstanding, and no novelty is asserted. D12Power is a separately accepted lower-count theorem at q12,theta=.99; its novelty and stronger extensions are not asserted. EisSemigroupScale now achieves the q3 pointwise order in its stated power/central ranges, with no leading-constant or priority claim. SimNormPower provides full weighted C12 means/marginals outside power exceptions only; source comparisons with2019 q4 existence and fixed-body LM asymptotics are contextual.",
+        "scope": "Historical priority remains unaudited for these internally derived results. Dq gives lower counts at theta>1/3 with arbitrary logarithmic exceptional savings; Vq gives fixed-width variance; VqPower gives full-count power variance and energy at5/6<theta<1 with the stated logarithmic errors. Semigroup-scale density one at theta<=1/3, residual variance/energy at0<theta<=5/6, general power-saving full-count asymptotic rates and every-target FBS-U remain open in this programme, without a complete literature-frontier claim. EisValueCounts improves the one-ring value count but does not reach H/log. The original 1993 Iwaniec-Pomykala audit is complete: conditional quartic sums and unconditional differences are direct antecedents. Later removal of the growing-shift hypothesis, balanced adaptations and broader priority remain to be checked; no novelty is asserted. D12Power is a separately accepted lower-count theorem at q12,theta=.99; its novelty and stronger extensions are not asserted. EisSemigroupScale now achieves the q3 pointwise order in its stated power/central ranges, with no leading-constant or priority claim. SimNormPower provides full weighted C12 means/marginals outside power exceptions only; source comparisons with2019 q4 existence and fixed-body LM asymptotics are contextual.",
         "kind": "gap",
         "status": "open",
         "topic": "arithmetic",
@@ -64573,8 +64597,8 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
-            "locator": "Campaign E; smaller-window and exceptional-set priority boundaries; full1993 audit"
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
+            "locator": "Campaign E: completed original 1993 comparison; later uniformity, smaller-window and exceptional-set priority boundaries"
           }
         ],
         "gap_kind": "verification"
@@ -66912,7 +66936,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Uniform semigroup-scale conjecture FBS-U, equation U"
           },
           {
@@ -66941,12 +66965,12 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Campaign D: residual theta<=5/6; wide-power variance/energy theorem now proved"
           },
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Campaign A exact energy/variance reduction"
           },
           {
@@ -66970,7 +66994,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Five complementary campaigns and every-target FBS-U boundary"
           }
         ],
@@ -66989,7 +67013,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Candidate lemma Tq1, equation T1 and first symmetric Halupczok application"
           }
         ]
@@ -67007,7 +67031,7 @@
         "sources": [
           {
             "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-            "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+            "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
             "locator": "Ternary corollary Tq, equation T, candidate injection and shifted second Halupczok application"
           }
         ]
@@ -69109,7 +69133,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "V1,V6,V9 and Eq equation6; exact integer squarefree-divisor tail"
           }
         ],
@@ -69127,7 +69151,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "V3-V5, exact conductor and character comparison, equations3.19-3.20 of LM"
           }
         ],
@@ -69145,7 +69169,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Fixed-width variance theorem Vq and fixed-body/mixed-moment proof"
           }
         ],
@@ -69163,7 +69187,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Aq/Pq exact hypotheses, scales D_X/P_X and Theorem1.7 application"
           }
         ],
@@ -69182,7 +69206,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Pq proof, Granville-Soundararajan p.1192 and exact frequency/distance check"
           }
         ],
@@ -69201,7 +69225,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Power-window first-moment theorem Aq, equations1-2 and sharp finite-difference argument"
           }
         ],
@@ -69219,7 +69243,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Projection theorem Pq, equations3-5, fixed twists and conditional variance"
           }
         ],
@@ -69237,7 +69261,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Reduction theorem Eq, equations6-7 and sharp upper-energy criterion E"
           }
         ],
@@ -69255,7 +69279,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Open centered-variance statement and Eq equivalence"
           }
         ],
@@ -69274,7 +69298,7 @@
         "sources": [
           {
             "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-            "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+            "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
             "locator": "Exact remaining inequality E"
           },
           {
@@ -75031,12 +75055,12 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Unbalanced target S12U and first pointwise priority"
           },
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Corollary FixedModulusBalancedExistence, macroscopic interval factor1/3; q12 impliesS12 andS12U"
           }
         ]
@@ -75097,7 +75121,7 @@
         "sources": [
           {
             "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-            "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+            "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
             "locator": "Scaling lemma S12Scale; core14 and seven balanced cores; power-window factor"
           }
         ]
@@ -82086,7 +82110,7 @@
           },
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Sections 1, 3–5 and 7, exact split and remaining signed estimate"
           },
           {
@@ -84259,7 +84283,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Moh’s inclusive degree-100 result and author summary"
           }
         ],
@@ -84279,7 +84303,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1"
           }
         ],
@@ -84302,7 +84326,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1"
           }
         ],
@@ -84609,7 +84633,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Sections 2–7 and stated dependencies"
           }
         ]
@@ -84626,7 +84650,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Proposition WFSupport and equations (6)–(7)"
           }
         ]
@@ -84643,7 +84667,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Proposition WFLowerObstruction and equations (8)–(10)"
           }
         ]
@@ -84660,7 +84684,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Proposition WFActualPairObstruction and equations (11)–(13)"
           }
         ]
@@ -84677,7 +84701,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Section 3.2, equations (14)–(15)"
           }
         ]
@@ -84694,7 +84718,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Proposition RosserLargePrimeSwitch, equations (16)–(19)"
           }
         ]
@@ -84729,7 +84753,7 @@
         "sources": [
           {
             "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-            "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+            "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
             "locator": "Sections 5–7, equations (21)–(28)"
           }
         ]
@@ -84923,7 +84947,7 @@
           },
           {
             "path": "arithmetic/eisenstein-restricted-prime-sums/asymmetric_well_factorable_switch_checks.json",
-            "sha256": "2bfb58ad2e5878c8ef8938839a7e84a9d82c56cdcba50826506ba7dc0a0f03e4",
+            "sha256": "c61a78a004db9d32faabc3cc60172ae39a7532582c9b2ddfe8de1394eae0eeb7",
             "locator": "PASS and the recorded finite switch ranges"
           }
         ],
@@ -87772,7 +87796,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, paragraphs from the Wick-pair padding formula through the cubic-image obstruction"
           }
         ],
@@ -87808,7 +87832,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, independent Wick-pair contraction and its nonzero factorials"
           }
         ],
@@ -87826,7 +87850,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, linear-vacuum normalization using the last nonzero moment"
           }
         ],
@@ -87844,7 +87868,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, Wick-pair padding, linear-vacuum normalization, and rescaling by 1/a!"
           }
         ],
@@ -87862,7 +87886,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, unrestricted complex quantifier"
           }
         ],
@@ -87880,7 +87904,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, linear-vacuum normalization and radial padding"
           }
         ],
@@ -87898,7 +87922,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, heat order and recovery of all Taylor coefficients by Hermite markers"
           }
         ],
@@ -87916,7 +87940,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, the unrestricted safety condition"
           }
         ],
@@ -87934,7 +87958,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, the Hermite-coordinate order condition"
           }
         ],
@@ -87952,7 +87976,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, transported product and the Wick-pair example"
           }
         ],
@@ -87970,7 +87994,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, imaginary-Gaussian formula, Hu–Yan Theorem 5.3"
           }
         ],
@@ -87990,7 +88014,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, canonical Wick correlation after Hu–Yan Theorem 5.3"
           }
         ],
@@ -88008,7 +88032,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, displayed S_a(R), Wick-power factorization and positive falling-factorial multiplier"
           }
         ],
@@ -88026,7 +88050,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, unresolved canonical-marker variant and exact radial padding test"
           }
         ],
@@ -88045,7 +88069,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, full original-marker identity for the independent null multiplier"
           }
         ],
@@ -88063,7 +88087,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, A=1+V and the ensuing full original-marker identity"
           }
         ],
@@ -88081,7 +88105,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, Gaussian-preserving shear and heat transform with squared gradient −10"
           }
         ],
@@ -88099,7 +88123,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, explicit coupled phase, squared gradient 35 and the fixed-k polynomiality obstruction"
           }
         ],
@@ -88117,7 +88141,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, complete-functional tilt obstruction by the evaluation span of preserving derivations"
           }
         ],
@@ -88135,7 +88159,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, independent seed and pure power, followed by the cubic raw-moment bound"
           }
         ],
@@ -88178,7 +88202,7 @@
         "sources": [
           {
             "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-            "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+            "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
             "locator": "Gaussian safety-to-purity, the exact positive radial multiplier and rescaling"
           }
         ],
@@ -89246,7 +89270,7 @@
           },
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "0a906d9dd93cd82674101f7a8c359cc02ffbb44404e9fc894f600e82ba466182",
+            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           }
         ],
@@ -90121,7 +90145,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "0a906d9dd93cd82674101f7a8c359cc02ffbb44404e9fc894f600e82ba466182",
+            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -90144,7 +90168,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "0a906d9dd93cd82674101f7a8c359cc02ffbb44404e9fc894f600e82ba466182",
+            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
             "locator": "Exact antecedent comparisons, failed hypotheses, applied classical estimates and search limits"
           },
           {
@@ -91242,7 +91266,7 @@
         "sources": [
           {
             "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-            "sha256": "0a906d9dd93cd82674101f7a8c359cc02ffbb44404e9fc894f600e82ba466182",
+            "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
             "locator": "Targeted historical review: exact comparison, verified overlaps, access limitations and qualified verdict"
           },
           {
@@ -92220,7 +92244,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "SplittingFiniteImages,Section3"
           }
         ]
@@ -92238,7 +92262,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "SplittingCongruenceLocalGlobal,Section3, finite congruence equivalence proof"
           }
         ]
@@ -92256,7 +92280,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "CoupledCongruenceObstruction,Section3"
           }
         ]
@@ -92274,7 +92298,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "FiniteBadProfileCorrelation S.8-S.9 and finite-modulus converse"
           }
         ]
@@ -92292,7 +92316,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Section5,Why unrestricted bad generators require a residual scale,S.10 and localdensity recursion"
           }
         ]
@@ -92310,7 +92334,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "C12QuantitativeCorrelation S.1-S.4 and exact specialization afterSection3"
           }
         ]
@@ -92366,7 +92390,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Section4 Splitting fields and finite conjunctions"
           }
         ]
@@ -92384,7 +92408,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Theorem SplittingGoldbachExistence G.1-G.2 and fixed-anchor proof"
           }
         ]
@@ -92402,7 +92426,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Theorem SplittingHigherGoldbachCount G.3-G.6; full moving-target/F/W/prefix proof"
           }
         ]
@@ -92420,7 +92444,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Theorem SplittingRelativeBasisOrder G.7; increasing sumsets and sharp +/-1 family"
           }
         ]
@@ -92438,7 +92462,7 @@
         "sources": [
           {
             "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-            "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+            "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
             "locator": "Theorem SplittingOrdinaryBasisOrder G.8-G.9, finite algorithm and exact examples"
           }
         ]
@@ -93149,6 +93173,24 @@
           }
         ],
         "gap_kind": "mathematical"
+      },
+      {
+        "id": "ARITH-CONNORS-KEATING-LOCAL-MODEL",
+        "title": "Two-branch norm indicator model and exact Connors-Keating local factors",
+        "scope": "For b the sums-of-two-squares indicator, the projected rough model has principal and chi4 branches. Its fixed-h model product is asymptotic to C(h)x/log x by finite inert square/dyadic prefixes and a dimension-one fundamental-lemma sieve; delta2=W2/4 and delta_p=p/(p+1)(1-p^(-v_p(h)-1)). This arithmetic/model evaluation is independent of the centered graph comparison.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+            "sha256": "493b4d524877e1f8a548e50b730a6afb5e2f55bf8866f3df43ff8478eece3073",
+            "locator": "Sections 2 and 5, CK.4-CK.7 and CK.14-CK.16"
+          }
+        ],
+        "assessment": "Written local/model calculation, internally reviewed. 640 finite residue-pair checks, 320 valuation-partition checks and 10 singleton checks passed; these check local factors only."
       }
     ],
     "implications": [
@@ -95341,7 +95383,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Nguyen, Theorem 3.6 and its appeal to Theorem 3.4; recorded in Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
         },
         "dependency_coverage": "partial"
@@ -120035,7 +120077,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "Conditional reduction C12 from L12 and sharp T12, assuming the open summed H1-H2"
         },
         "dependency_coverage": "partial"
@@ -120050,7 +120092,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "Target S12 via sufficient global counting hypotheses"
         },
         "dependency_coverage": "partial"
@@ -120083,7 +120125,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "Open first target S12U with separate unconditional progress and conditional H*; balanced S12 remains stronger and open"
         },
         "dependency_coverage": "partial"
@@ -120863,7 +120905,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "A12 proof from Debaene Corollary 2, square convolution, H_6 and Abel summation"
         },
         "dependency_coverage": "partial"
@@ -122302,7 +122344,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "P12 proof, independent moment systems and thresholded Cauchy-Schwarz"
         },
         "dependency_coverage": "partial"
@@ -122316,7 +122358,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "A12G from square-divisor convolution and the fixed balanced dyadic area"
         },
         "dependency_coverage": "partial"
@@ -122331,7 +122373,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "Exact checker enclosure of the limiting A12G/A12 weighted-average ratio"
         },
         "dependency_coverage": "partial"
@@ -124244,7 +124286,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "Imported tools, F2-F3"
         },
         "dependency_coverage": "partial"
@@ -124260,7 +124302,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "FBS2 and its full uniformity/Euler-product check"
         },
         "dependency_coverage": "partial"
@@ -124274,7 +124316,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "F6, block Cauchy-Schwarz"
         },
         "dependency_coverage": "partial"
@@ -124289,7 +124331,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "F8 from F4 and F7"
         },
         "dependency_coverage": "partial"
@@ -124304,7 +124346,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "FBS1 thresholded Cauchy-Schwarz from the two moments"
         },
         "dependency_coverage": "partial"
@@ -124318,7 +124360,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "Hq proof by short-block covering, positive singular series and Markov bound"
         },
         "dependency_coverage": "partial"
@@ -124332,7 +124374,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "FBS-G at q=12 is the existing target S12"
         },
         "dependency_coverage": "partial"
@@ -126058,7 +126100,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "Improved Tq1: first symmetric Halupczok mass plus MV interval partner bound"
         },
         "dependency_coverage": "partial"
@@ -126073,7 +126115,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "Tq proof via distinct candidate remainders and the shifted second mean estimate"
         },
         "dependency_coverage": "partial"
@@ -126087,7 +126129,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "Written implication FBS-U to FBS-G: diverging lower count and eventual N^theta<=N/3"
         },
         "dependency_coverage": "partial"
@@ -126120,7 +126162,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "locator": "Central conjecture FBS-U and the three separately proved baselines"
         },
         "dependency_coverage": "partial"
@@ -127471,7 +127513,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-          "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+          "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
           "locator": "V3-V5 specialization and independent-coordinate comparison"
         },
         "dependency_coverage": "partial"
@@ -127486,7 +127528,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-          "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+          "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
           "locator": "V6-V9, fixed-body four-form and mixed moments"
         },
         "dependency_coverage": "partial"
@@ -127501,7 +127543,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-          "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+          "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
           "locator": "Aq triangular smoothing and finite differences"
         },
         "dependency_coverage": "partial"
@@ -127518,7 +127560,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-          "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+          "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
           "locator": "Pq nonprincipal-twist decay and character orthogonality"
         },
         "dependency_coverage": "partial"
@@ -127534,7 +127576,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-          "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+          "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
           "locator": "Eq exact mixed/model moments and integer L2 tail"
         },
         "dependency_coverage": "partial"
@@ -132258,7 +132300,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "S12 implies S12U by dropping only the balance restriction"
         },
         "dependency_coverage": "partial"
@@ -132272,7 +132314,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "locator": "S12Scale algebraic proof and separately certified bounded balanced cores"
         },
         "dependency_coverage": "partial"
@@ -138911,7 +138953,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds, Moh’s inclusive degree-100 result and author summary"
         },
         "dependency_coverage": "partial"
@@ -138925,7 +138967,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1; the only permitted pair below 125 has maximum 108"
         },
         "dependency_coverage": "partial"
@@ -138941,7 +138983,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional degree-pair restriction; Guccione–Guccione–Horruitiner–Valqui arXiv:2204.14178v1 Theorem 2.1"
         },
         "dependency_coverage": "partial",
@@ -138958,7 +139000,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds; restriction of planar maximum component degree from at most 107 to at most 104"
         },
         "dependency_coverage": "partial"
@@ -138972,7 +139014,7 @@
         "status": "proved",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Four-variable Hessian conjecture and planar degree bounds; restriction of four-variable total potential degree from at most 108 to at most 105"
         },
         "dependency_coverage": "partial"
@@ -139170,7 +139212,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Balanced split Q_1=Q_2=sqrt(Q)"
         },
         "dependency_coverage": "partial"
@@ -139185,7 +139227,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Evaluate at p and average the resulting nonpositive function"
         },
         "dependency_coverage": "partial"
@@ -139200,7 +139242,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Actual shifted-pair family (11)–(13) with only 1 and p as sieve divisors"
         },
         "dependency_coverage": "partial"
@@ -139216,7 +139258,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Equations (14)–(15), fixed-class prime sums and deleting target divisors"
         },
         "dependency_coverage": "partial"
@@ -139232,7 +139274,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Shift the indexing by one in the strict support inequalities; the large prime is unique"
         },
         "dependency_coverage": "partial"
@@ -139249,7 +139291,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Large-residue exponent inequalities, short factor test and compressed modulus comparison"
         },
         "dependency_coverage": "partial"
@@ -139267,7 +139309,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "locator": "Scope: support obstructions, exact switching and primary-source range only"
         },
         "dependency_coverage": "partial"
@@ -140833,7 +140875,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, displayed Wick-pair factorization and its power version"
         }
       },
@@ -140848,7 +140890,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, the −P^L/μ_L construction; safe recomposition at root zero"
         }
       },
@@ -140866,7 +140908,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, high-order padding after the linear-vacuum normalization"
         }
       },
@@ -140881,7 +140923,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, Hermite coefficient recovery; iterated Gaussian integration by parts"
         }
       },
@@ -140895,7 +140937,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, both Wick-pair powers tend to zero and their product has constant term m!"
         }
       },
@@ -140910,7 +140952,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, apply the polynomial imaginary-copy formula to (HP)^k"
         }
       },
@@ -140925,7 +140967,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, canonical Wick factorization and exact radial moment multiplier"
         }
       },
@@ -140941,7 +140983,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, normalize a safe nonpure phase to unit 1−t and use that all original Wick-power markers are polynomial under safety"
         }
       },
@@ -140956,7 +140998,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, displayed Wick contraction for all original markers and time-Weyl stability"
         }
       },
@@ -140973,7 +141015,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, unweighted seed 1−t, null multiplier, and coefficient identity Φ[A^k]=1+(k−1)t"
         }
       },
@@ -140989,7 +141031,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, displayed HP for the safe shear and selected action −5t²+O(t³)"
         }
       },
@@ -141006,7 +141048,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, safe shear, imaginary-copy period formula and the coupled critical action"
         }
       },
@@ -141021,7 +141063,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, Gaussian integration by parts, divisorial tangency and full evaluation span"
         }
       },
@@ -141037,7 +141079,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "locator": "Gaussian safety-to-purity, product of independent unit periods and Stirling comparison for raw moments"
         }
       },
@@ -142160,7 +142202,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "0a906d9dd93cd82674101f7a8c359cc02ffbb44404e9fc894f600e82ba466182",
+          "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
           "locator": "Plaksin specialization, finite local prime-unit test and elementary O(N^(1/2+epsilon)) gcd deletion"
         },
         "dependency_coverage": "partial"
@@ -143276,7 +143318,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "SplittingFiniteImages: valuationprefixD and reducedunitCRTprime"
         },
         "dependency_coverage": "partial"
@@ -143290,7 +143332,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "SplittingCongruenceLocalGlobal arithmeticdirection; local lifts andCRT"
         },
         "dependency_coverage": "partial"
@@ -143304,7 +143346,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "CoupledCongruenceObstruction H12={1,11}; fullclosure calculation"
         },
         "dependency_coverage": "partial"
@@ -143319,7 +143361,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "FiniteBadProfileCorrelation S.8-S.9, gcd reduction and finiteperiod"
         },
         "dependency_coverage": "partial"
@@ -143333,7 +143375,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Section4 compositum subgroup and Artin inverseimage; fixed badset"
         },
         "dependency_coverage": "partial"
@@ -143348,7 +143390,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "S.1-S.4 exact Euler/L-values and L0=12,H1=H2={1},Gamma12"
         },
         "dependency_coverage": "partial"
@@ -143371,7 +143413,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Sections1-10: quantitative binary laws, classical higher asymptotics, all fixed-order residue sumsets and exact basis orders"
         },
         "dependency_coverage": "partial"
@@ -143386,7 +143428,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Corollary FixedModulusBalancedExistence and proof; H={1}, L=lcm(2,q), I=[1/3,2/3]"
         },
         "dependency_coverage": "partial"
@@ -143402,7 +143444,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Section7 fixed actual anchors, all-moduli congruences and finite maximum threshold"
         },
         "dependency_coverage": "partial"
@@ -143417,7 +143459,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Section8 full verification of F-twists, moving O(N) intercept, fixed W characters, uniform Euler/prefix tails and constants"
         },
         "dependency_coverage": "partial"
@@ -143431,7 +143473,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Section9 increasing finite cyclic sumsets, stabilization and sharp +/-1 family"
         },
         "dependency_coverage": "partial"
@@ -143446,7 +143488,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "locator": "Section9 finite residue union, forbidden-prime lower obstruction, full-group edge cases and exact examples"
         },
         "dependency_coverage": "partial"
@@ -143815,6 +143857,24 @@
           "locator": "The r=1 case of (P.6) implies the earlier Tq existence result, with the sharp count order"
         },
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "CONNORS-KEATING-ZF-GRAPH-APPLICATION",
+        "premises": [
+          "HYP-BINARY-DIRICHLET-FIXED-ZEROFREE",
+          "HYP-BINARY-WEIGHTED-DILATION-ROOT-MOMENT",
+          "ARITH-BINARY-FIXED-AP-IDEAL-KERNELS",
+          "ARITH-CONNORS-KEATING-LOCAL-MODEL"
+        ],
+        "conclusion": "ARITH-CONNORS-KEATING-FIXED-SHIFT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+          "sha256": "493b4d524877e1f8a548e50b730a6afb5e2f55bf8866f3df43ff8478eece3073",
+          "locator": "Sections 2-5; centered comparison CK.11 and model identity CK.13"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Internal written application proof and separate analytic/arithmetic review. The existing precise 2026 zero-free and graph imports remain indispensable and visible; this task does not independently revalidate their proofs. Exact finite local checks do not prove the global asymptotic. No external human review, formal verification, numerical onset or priority claim."
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -144150,7 +144210,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Gaussian safety-to-purity, purity of every safe phase excludes unit 1−t"
             }
           },
@@ -144165,7 +144225,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Gaussian safety-to-purity, normalize and pad a hypothetical counterexample to the specified order"
             }
           },
@@ -144220,7 +144280,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-              "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+              "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
               "locator": "Eq equation7: variance implies sharp upper energy; restrict both endpoints to0<theta<=5/6"
             },
             "dependency_coverage": "partial"
@@ -144235,7 +144295,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-              "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+              "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
               "locator": "Eq equation7 and matching lower bound: sharp upper energy implies variance; restrict both endpoints to0<theta<=5/6"
             },
             "dependency_coverage": "partial"
@@ -144249,7 +144309,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-              "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+              "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
               "locator": "Campaign D asks for the same unweighted full-count variance o(X H^2 m_X^4) on 0<theta<=5/6"
             },
             "dependency_coverage": "partial"
@@ -144264,7 +144324,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-              "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+              "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
               "locator": "Equation (7), the exact equivalence for 0<theta<=5/6 with the same mean normalization"
             },
             "dependency_coverage": "partial"
@@ -144562,7 +144622,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, Conditional corollary and cotangent-doubling converse"
             },
             "dependency_coverage": "partial",
@@ -144580,7 +144640,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, unconditional cotangent-doubling converse"
             },
             "dependency_coverage": "partial"
@@ -144606,7 +144666,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
             },
             "dependency_coverage": "partial",
@@ -144624,7 +144684,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, unconditional cotangent-doubling converse"
             },
             "dependency_coverage": "partial"
@@ -144650,7 +144710,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, paragraph beginning The transfer takes any planar component-degree bound"
             },
             "dependency_coverage": "partial",
@@ -144668,7 +144728,7 @@
             "status": "proved",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Four-variable Hessian conjecture and planar degree bounds, unconditional cotangent-doubling converse"
             },
             "dependency_coverage": "partial"
@@ -145785,7 +145845,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Gaussian safety-to-purity, take the maximum cutoff over the finite Hermite degree packet"
             }
           },
@@ -145800,7 +145860,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Gaussian safety-to-purity, each fixed marker belongs to a finite Hermite degree packet"
             }
           }
@@ -145824,7 +145884,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Gaussian safety-to-purity, restrict the unresolved canonical-marker assertion to phases of sufficiently high order"
             }
           },
@@ -145839,7 +145899,7 @@
             "dependency_coverage": "partial",
             "proof": {
               "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-              "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+              "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
               "locator": "Gaussian safety-to-purity, take Q=P(ZW)^a/a! and reflect every fixed canonical period through the nonzero multiplier"
             }
           }
@@ -161279,22 +161339,45 @@
           "title": "Sums and differences of quartic norms",
           "citation": "H. Iwaniec and J. Pomykala, Mathematika 40(2) (1993),233-245; DOI 10.1112/S0025579300007014.",
           "urls": [
-            "https://www.cambridge.org/core/journals/mathematika/article/abs/sums-and-differences-of-quartic-norms/352BA2199EC45E35B20AD4B33EAEC4D3"
+            "https://www.cambridge.org/core/journals/mathematika/article/abs/sums-and-differences-of-quartic-norms/352BA2199EC45E35B20AD4B33EAEC4D3",
+            "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0025579300007014/resource/name/S0025579300007014a.pdf"
           ],
-          "local_sources": [],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/iwaniec-pomykala-quartic-norms-1993.pdf",
+              "sha256": "ce9c8fe8d6eedfea709c4ffd2b590a1920727d5d6d91b641b04a32b349df86b2",
+              "locator": "Theorems 1-2 and remarks, printed p. 234; definitions pp. 233,239; Proposition (P1)-(P5), p. 243; uniformity and Fouvry alternative, p. 244"
+            }
+          ],
           "uses": [
             {
               "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-              "locator": "Literature and the remaining obligation: Publisher extract directly relevant; full theorem not retrieved or audited",
-              "role": "application_unverified",
+              "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning",
+              "role": "context",
               "nodes": [
                 "GAP-ARITH-M12-LITERATURE"
               ]
+            },
+            {
+              "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
+              "locator": "Historical antecedent before Section 1: the conditional coprime quartic theorem versus the present unrestricted leading asymptotic",
+              "role": "context",
+              "nodes": [
+                "ARITH-C12-QUANTITATIVE-LEADING"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
+              "locator": "Pointwise leading terms: exact quartic-semigroup antecedent and coprime/unrestricted distinction",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-FROBENIAN-BINARY-PRIORITY"
+              ]
             }
           ],
-          "verification": "application_pending",
+          "verification": "source_read",
           "resource_type": "paper",
-          "verification_basis": "Primary citation identity and contextual scope recorded; no essential global counting theorem is imported. Publisher extract only; precise full theorem remains unaudited."
+          "verification_basis": "The retained full publisher PDF was read. Printed pp. 233-234 and 243-244 were checked for the exact semigroup, coprimality, conditional sum versus unconditional difference quantifiers, target factors and uniformity hypothesis. The original-paper comparison is complete; this imports no unconditional sum theorem and certifies no historical priority."
         },
         {
           "id": "EXT-M12-MATTHIESEN",
@@ -161563,7 +161646,13 @@
             "https://arxiv.org/html/2602.20917v6",
             "https://arxiv.org/abs/2602.20917v6"
           ],
-          "local_sources": [],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/li-prime-progressions-2602.20917v6.pdf",
+              "sha256": "0e9dc0debab58e63dc117a55decba901205d26b9da0610d9f810b59d8334999e",
+              "locator": "Introduction fixes a nonzero shift; Section 4.1.1, Lemma 4.3, PDF p. 49"
+            }
+          ],
           "uses": [
             {
               "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
@@ -161576,7 +161665,7 @@
           ],
           "verification": "source_read",
           "resource_type": "paper",
-          "verification_basis": "Versioned primary Lemma 4.3 and attribution to Iwaniec-Pomykala [21] inspected. Context only: no application to h-weighted balanced correlations is verified, and the 1993 main theorem remains unaudited."
+          "verification_basis": "Versioned primary Lemma 4.3 and its fixed nonzero shift were inspected in the retained v6 PDF. This is an auxiliary proposition, not the norm-coverage theorem; the original 1993 main theorems are now separately audited. No direct target-sized uniformity or application to the literal C12 indicator is verified."
         },
         {
           "id": "EXT-PAPER-NEW17-YAM87",
@@ -171020,7 +171109,8 @@
             "https://arxiv.org/pdf/2610.40439v1",
             "https://arxiv.org/abs/2610.40439v1",
             "https://arxiv.org/pdf/2610.40439v2",
-            "https://arxiv.org/abs/2610.40439v2"
+            "https://arxiv.org/abs/2610.40439v2",
+            "https://arxiv.org/html/2610.40439v2"
           ],
           "local_sources": [
             {
@@ -171067,6 +171157,14 @@
               "role": "mathematical_input",
               "nodes": [
                 "ARITH-SPLITTING-LOGARITHMIC-CORRELATION"
+              ]
+            },
+            {
+              "path": "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+              "locator": "Section 1.2.4 theorem boundary; Lemmas 5.1-5.2, Proposition 6.1, Sections 6.1-6.4 and 7.5 proof interfaces, with two-branch indicator substitutions stated in Sections 2-4",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-CONNORS-KEATING-FIXED-SHIFT"
               ]
             }
           ],
@@ -171482,6 +171580,38 @@
           "resource_type": "paper",
           "verification": "source_read",
           "verification_basis": "Actual primary statements, normalizations and application scope were inspected internally. No external human review, full imported-proof replay or formal verification."
+        },
+        {
+          "id": "EXT-M12-LICHTMAN-UNIFORM-2023",
+          "title": "Primes in arithmetic progressions to large moduli, and Goldbach beyond the square-root barrier",
+          "citation": "Jared Duker Lichtman, with an appendix with Sary Drappeau, arXiv:2309.08522v1, 30 August 2023.",
+          "identifiers": {
+            "arxiv": "2309.08522v1"
+          },
+          "urls": [
+            "https://arxiv.org/abs/2309.08522v1",
+            "https://arxiv.org/pdf/2309.08522v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/lichtman-goldbach-2309.08522v1.pdf",
+              "sha256": "665693af46aee2d743e0a1f61c6e35464dc8113e3083b9f3546bfa7de98c55b5",
+              "locator": "Theorem 1.7, p. 4; Theorem 1.8, pp. 4-5; Proposition 3.1, p. 9"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
+              "locator": "Full Iwaniec--Pomykała theorem audit: bounded comparison with later uniform convolution estimates",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-FROBENIAN-BINARY-PRIORITY"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Theorem 1.7, Theorem 1.8 and Proposition 3.1 were inspected. Growing-shift uniformity comes with triply well-factorable weights and its own factor ranges; no direct implication of the entire original P4/P5 package is asserted. Context only, not an essential input to the current correlation theorem."
         }
       ],
       "internal_citations": [
@@ -173481,7 +173611,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
               "locator": "Section6 exact comparison and fixedtargetscope"
             }
           ],
@@ -173508,7 +173638,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
               "locator": "Section4 compositum subgroup/Artin inverseimage"
             }
           ],
@@ -173540,7 +173670,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-              "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
               "locator": "Section8 complete moving-target application, local evaluation and uniform W-prefix tails"
             }
           ],
@@ -173767,7 +173897,7 @@
             },
             {
               "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-              "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+              "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
               "locator": "Improved Tq1 and the Tq pointer"
             }
           ],
@@ -173814,6 +173944,54 @@
           "remaining_obligation": "Binary principal-form prime Goldbach and effective small-exception lists remain separate.",
           "inspection_scope": "The retained Kane v5, Frei-Tinkova v3 and Milne editions were read; finite quadratic-residue counts and the current proof were audited.",
           "missing_before": "The class-group semigroup lower counts did not force any norm value itself to be prime."
+        },
+        {
+          "id": "ANT-IWANIEC-POMYKALA-QUARTIC-BINARY",
+          "title": "The quartic complete-splitting binary problem has a direct conditional 1993 antecedent",
+          "nodes": [
+            "ARITH-C12-QUANTITATIVE-LEADING",
+            "GAP-ARITH-M12-LITERATURE"
+          ],
+          "relation": "comparison_only",
+          "references": [
+            {
+              "paper_id": "EXT-M12-IWANIEC-POMYKALA",
+              "locator": "Theorems 1-2 and remarks, p. 234; P1-P5, p. 243; uniformity, p. 244",
+              "statement": "Unconditional fixed-target coprime differences and conditional every-large-target coprime sums in abelian quartic complete-splitting semigroups, with N/log^(3/2) N-order bounds and the explicit target-prime product."
+            },
+            {
+              "paper_id": "EXT-M12-LI-TYPE-II",
+              "locator": "Introduction and Section 4.1.1, Lemma 4.3, PDF p. 49",
+              "statement": "Fixed-shift reproduction of the auxiliary proposition; no target-sized uniformity is supplied."
+            },
+            {
+              "paper_id": "EXT-PAPER-WU-CHEN-DOUBLE-SIEVE-2004",
+              "locator": "Lemma 2.5, printed p. 222",
+              "statement": "The reproduced auxiliary estimate permits shifts only up to a fixed logarithmic power."
+            },
+            {
+              "paper_id": "EXT-M12-LICHTMAN-UNIFORM-2023",
+              "locator": "Theorem 1.8, pp. 4-5; Proposition 3.1, p. 9",
+              "statement": "Relevant growing-shift estimates with triply well-factorable modulus weights and different factor ranges; a direct original-P4/P5 application is not established."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
+              "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
+              "locator": "Full Iwaniec--Pomykała theorem audit: exact C12 specialization, coprime target product, P4/P5 quantifiers and current positioning"
+            },
+            {
+              "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
+              "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
+              "locator": "Historical antecedent before Section 1 and defining unrestricted C12 asymptotic"
+            }
+          ],
+          "application": "K=Q(zeta_12) has conductor 12 and trivial splitting subgroup, so the 1993 summands are exactly C12. Its sum condition is N=2 mod 12 and its difference condition is N=0 mod 12. The numerical pairs are counted once and are required to be coprime.",
+          "novelty_limit": "The quartic binary problem, local criterion, conditional eventual sum coverage and expected logarithmic order are direct antecedents. No first unconditional theorem or exhaustive priority claim is certified. The present leading asymptotic counts unrestricted pairs; it does not automatically establish the older coprime-pair formula.",
+          "remaining_obligation": "Check any proposed later removal of the growing-shift hypothesis, interval/balance adaptation, and coprime deduction with explicit weights, ranges and positivity before asserting a stronger historical conclusion.",
+          "inspection_scope": "Full original 13-page publisher paper read, theorem page visually verified, arithmetic specialization and named later statements separately reviewed internally. No external human review, formal verification or replay of the 1993 reported numerical positivity calculation.",
+          "missing_before": "The repository had only the publisher extract and later reproductions of an auxiliary proposition; the original main theorems were explicitly marked unaudited."
         }
       ]
     },
@@ -227075,7 +227253,7 @@
         },
         {
           "path": "arithmetic/SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md",
-          "sha256": "6d4092e18e90e0108a0307f44a9e7ddf7065b7a38dadb8de361b3880b758fa4a",
+          "sha256": "c73cd0d020366b3abf12a477feba00aef27719738cf504516a1c468246a33a57",
           "claims": [
             "ARITH-M12-LOCAL-DENSITIES",
             "ARITH-M12-LARGE-PRIME-TAIL",
@@ -231708,7 +231886,7 @@
         },
         {
           "path": "arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md",
-          "sha256": "9159f8016e60288ad6abaf667ebbf25becf3cba6bdf33cca8e39572eb7549266",
+          "sha256": "e54285dc70cdbf47dbe8f497985f8772da2c58c1c49aa0744800030de4c3eed0",
           "claims": [
             "ARITHMETIC-FROBENIAN-BINARY-SUMS",
             "ARITH-FROBENIAN-BINARY-MEAN",
@@ -235091,7 +235269,7 @@
         },
         {
           "path": "arithmetic/PRESCRIBED_PRIME_BINARY_VARIANCE.md",
-          "sha256": "60196da37e56abff4fff739f8afcae3ecbe070762551358511a21844f8c262e4",
+          "sha256": "58467c23b87cb87d6b2f0c84f8f5386760b2a7e2e3db9c859d1b004a37ffe4f5",
           "claims": [
             "ARITH-FBS-SINGULAR-MODEL",
             "ARITH-FBS-LM-CHARACTER-CONSTANT",
@@ -246412,7 +246590,7 @@
         },
         {
           "path": "BREAKTHROUGH_TARGET_ASSESSMENT.md",
-          "sha256": "d9bc9e615c6cf12e6308fa9a7627ebe481739e294f3bd358bf19090a4f789988",
+          "sha256": "19b11264db8a7b38e173062492c9a39e26bbe5e39c5af8b97f3ebf26f4f9ab2e",
           "role": "documentation",
           "claims": [
             "HESS-HC4-JC2-DEGREE-TRANSFER",
@@ -248095,7 +248273,7 @@
         {
           "path": "arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md",
           "role": "proof",
-          "sha256": "c46b7d2b846796ad2682b9bcd474ec947869bba58d5115b8d7d2c4a29fab728e",
+          "sha256": "4e47d1e4776599bce5418d61b809ccb49e0b97612ad2ff5ea88be094c73f0f7e",
           "claims": [
             "ARITHMETIC-ASYMMETRIC-WELL-FACTORABLE-SWITCH"
           ],
@@ -248219,7 +248397,7 @@
         {
           "path": "arithmetic/eisenstein-restricted-prime-sums/asymmetric_well_factorable_switch_checks.json",
           "role": "evidence",
-          "sha256": "2bfb58ad2e5878c8ef8938839a7e84a9d82c56cdcba50826506ba7dc0a0f03e4",
+          "sha256": "c61a78a004db9d32faabc3cc60172ae39a7532582c9b2ddfe8de1394eae0eeb7",
           "claims": [
             "ARITH-ASYM-WF-FINITE-CONTROLS"
           ],
@@ -250048,7 +250226,7 @@
         },
         {
           "path": "arithmetic/PRIMITIVE_NORM_NOVELTY.md",
-          "sha256": "0a906d9dd93cd82674101f7a8c359cc02ffbb44404e9fc894f600e82ba466182",
+          "sha256": "bb55457bf9555dd71b58ac0ca84b85ee490e58686a39beac0dcf1d20014799f6",
           "claims": [
             "SRC-PAIR-PRIMITIVE-NOVELTY-COMPARISON",
             "ARITH-D8-CLASSICAL-PRIME-COORDINATE-SUBCASES",
@@ -251546,7 +251724,7 @@
         },
         {
           "path": "arithmetic/primitive_norm_binary_correlation_source_ledger.json",
-          "sha256": "aa29ce4cd3386111f4cdeebcf78e34143dbb36e7ce08ef4494c9d77cdb1d9822",
+          "sha256": "d485d35e51bcc25e8312ccde923b05c33fe85e9d9eed80fc1ffcbc063600df3b",
           "claims": [
             "ARITH-PRIMITIVE-NORM-CONDITIONAL-BINARY-COUNTS"
           ],
@@ -251654,7 +251832,7 @@
         },
         {
           "path": "arithmetic/SPLITTING_SEMIGROUP_LOCAL_GLOBAL.md",
-          "sha256": "6fcdef3ce0b25ff85f76a6eeab5e495961f46b0396e8ce546185e183457feab3",
+          "sha256": "227156e94e328243ca954144e678a0f6a17fe04641d32e12c369ecc6c1378bba",
           "claims": [
             "ARITH-SPLITTING-QUANTITATIVE-LOCAL-GLOBAL",
             "ARITH-SPLITTING-LOGARITHMIC-CORRELATION",
@@ -252156,6 +252334,75 @@
           "statements": [],
           "role": "reference",
           "explanation": "Exactinspectedprimary actualprimeinput orscopedclassicalantecedent; noimportbeyondrecordedtheoremhypotheses."
+        },
+        {
+          "path": "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+          "sha256": "493b4d524877e1f8a548e50b730a6afb5e2f55bf8866f3df43ff8478eece3073",
+          "claims": [
+            "ARITH-CONNORS-KEATING-LOCAL-MODEL",
+            "ARITH-CONNORS-KEATING-FIXED-SHIFT"
+          ],
+          "dependencies": [
+            "HYP-BINARY-DIRICHLET-FIXED-ZEROFREE",
+            "HYP-BINARY-WEIGHTED-DILATION-ROOT-MOMENT",
+            "ARITH-BINARY-FIXED-AP-IDEAL-KERNELS"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem CKFixedShift.** Under inputs ZF and G below, for every",
+              "kind": "theorem",
+              "title": "Theorem CKFixedShift",
+              "nodes": [
+                "ARITH-CONNORS-KEATING-FIXED-SHIFT"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "role": "proof",
+          "explanation": "Fixed-shift indicator application with exact ZF/G hypotheses, two principal branches, square-prime bank envelope, graph comparison and complete local/model constant."
+        },
+        {
+          "path": "arithmetic/verify_connors_keating_local.py",
+          "sha256": "1506490a1b95e9aeac4e0865258ae700db47cc9f29f9b1e7021bc2287a2b552a",
+          "claims": [
+            "ARITH-CONNORS-KEATING-LOCAL-MODEL"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact finite residue counts corrected by rational unresolved-valuation tails. Checks local factors only, not the global correlation or imported estimates."
+        },
+        {
+          "path": "arithmetic/sources/iwaniec-pomykala-quartic-norms-1993.pdf",
+          "sha256": "ce9c8fe8d6eedfea709c4ffd2b590a1920727d5d6d91b641b04a32b349df86b2",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained primary source for the targeted 1993 quartic-semigroup historical and hypothesis comparison. Context only; no unconditional sum theorem is imported."
+        },
+        {
+          "path": "arithmetic/sources/li-prime-progressions-2602.20917v6.pdf",
+          "sha256": "0e9dc0debab58e63dc117a55decba901205d26b9da0610d9f810b59d8334999e",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained primary source for the targeted 1993 quartic-semigroup historical and hypothesis comparison. Context only; no unconditional sum theorem is imported."
+        },
+        {
+          "path": "arithmetic/sources/lichtman-goldbach-2309.08522v1.pdf",
+          "sha256": "665693af46aee2d743e0a1f61c6e35464dc8113e3083b9f3546bfa7de98c55b5",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Retained primary source for the targeted 1993 quartic-semigroup historical and hypothesis comparison. Context only; no unconditional sum theorem is imported."
         }
       ]
     },

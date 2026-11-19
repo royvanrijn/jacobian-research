@@ -861,6 +861,19 @@ yield the result. A targeted historical comparison of this exact
 pointwise statement remains necessary; neither the underlying graph
 method nor the zero-free theorem is claimed as a new contribution here.
 
+
+The exact quartic-semigroup historical comparison is now available in
+[the full Iwaniec--Pomykała audit](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit).
+Their Theorem 2 already treats coprime \(C_{12}+C_{12}\) representations
+on every large admissible target, conditionally on a growing-shift
+convolution estimate; it gives the expected logarithmic order.
+Theorem 1 is unconditional for differences. The present leading
+asymptotic concerns unrestricted pairs and an explicit constant.
+Those are substantive comparison distinctions, not a certification
+of first-result status. The older coprime assertion has an additional
+allowed-prime target factor and is not automatically recovered from
+the unrestricted count.
+
 Historical priority, specialist mathematical review and complete
 manuscript preparation remain separate publication obligations for
 both planned papers. No first-result claim follows from the absence

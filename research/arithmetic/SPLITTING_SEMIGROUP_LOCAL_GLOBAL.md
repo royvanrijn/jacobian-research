@@ -20,6 +20,18 @@ The source applications and new arguments have internal written review.
 No external human review, formal verification, numerical onset or
 historical-priority claim is asserted.
 
+
+The direct historical antecedent is Iwaniec--Pomykała (1993),
+Theorem 2: under a convolution estimate uniform in growing shifts,
+every sufficiently large \(N\equiv2\pmod{12}\) has coprime
+\(C_{12}\)-summands, with the expected logarithmic-order bounds.
+Their Theorem 1 proves the corresponding difference result unconditionally.
+The [full theorem and hypothesis comparison](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit)
+distinguishes this from the unrestricted-pair leading asymptotic here.
+It rules out positioning the quartic binary problem or conditional
+every-target existence as new. It does not certify priority for the
+present quantitative statement.
+
 ## 1. The defining case
 
 Let

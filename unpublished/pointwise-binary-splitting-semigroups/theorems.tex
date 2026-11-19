@@ -1,0 +1,178 @@
+\section{The correlation theorem and congruence admissibility}
+Throughout, \(L_0\ge2\) is even,
+\(G=(\Z/L_0\Z)^\times\), and \(H_1,H_2\le G\) are fixed.
+Define
+\[
+ \mathcal P_i=\{p\nmid L_0:p\bmod L_0\in H_i\},\quad
+ C_i=\langle\mathcal P_i\rangle,\quad
+ \rho_i=\frac{|H_i|}{\varphi(L_0)},\quad
+ \kappa=2-\rho_1-\rho_2.
+\]
+An empty product is one. Fix \(U\subset H_1\), \(V\subset H_2\),
+and coprime positive \(L_0\)-supported integers \(A,B\).
+Write
+\[
+ R_{U,V}^{A,B}(N;I)=\#\{Ax+By=N:x\in C_1,\ y\in C_2,
+      \ x\bmod L_0\in U,\ y\bmod L_0\in V,\ Ax/N\in I\}.
+\]
+Omit \(I\) when \(I=[0,1]\). Put
+\begin{align}
+ c_i&=\frac{1}{\Gamma(\rho_i)}
+    \lim_{s\downarrow1}(s-1)^{\rho_i}
+              \prod_{p\in\mathcal P_i}(1-p^{-s})^{-1},\label{eq:marginal}\\
+ \Gamma_N&=\frac{L_0}{|H_1||H_2|}
+    \#\{(u,v)\in U\times V:Au+Bv\equiv N\pmod{L_0}\},\label{eq:finite}\\
+ \mathcal E&=\{p\nmid L_0:p\notin\mathcal P_1,
+                                  \ p\notin\mathcal P_2\},\notag\\
+ C_{\mathcal E}&=\prod_{p\in\mathcal E}
+               \left(1-\frac{1}{(p-1)^2}\right),\qquad
+ J_{\mathcal E}(N)=\prod_{\substack{p\mid N\\p\in\mathcal E}}
+                              \frac{p-1}{p-2}.\label{eq:singular}
+\end{align}
+The infinite product in \eqref{eq:singular} converges absolutely and
+is positive, since \(2\mid L_0\). The constants \(c_i\) are positive.
+For an explicit convergent expression, let \(r_i(p)>1\) denote the
+order of \(pH_i\) in \(G/H_i\) at a forbidden good prime. Then
+\begin{equation}\label{eq:marginal-product}
+ c_i=\frac{(\varphi(L_0)/L_0)^{\rho_i}}{\Gamma(\rho_i)}
+ \prod_{\substack{\eta\in H_i^\perp\\\eta\ne1}}L(1,\eta)^{\rho_i}
+ \prod_{\substack{p\nmid L_0\\p\notin\mathcal P_i}}
+                     (1-p^{-r_i(p)})^{1/r_i(p)}.
+\end{equation}
+Characters here are literal modulo \(L_0\). Continuation along the
+positive real axis from \(s>1\) fixes the powers; conjugate factors
+are paired. The Euler identity proving this formula is given in
+Section~\ref{sec:model}.
+
+\begin{theorem}\label{thm:general}
+With all these data fixed, let
+\(\delta=1/(8192\varphi(L_0))\). Uniformly in \(N\) and every interval
+\(I\subset[0,1]\),
+\begin{align*}
+ R_{U,V}^{A,B}(N;I)
+ &=c_1c_2\Gamma_N C_{\mathcal E}|I|
+       \frac{NJ_{\mathcal E}(N)}{AB(\log N)^\kappa}\\
+ &\quad+O\left(\frac{NJ_{\mathcal E}(N)}
+                         {AB(\log N)^{\kappa+\delta}}\right).
+\end{align*}
+If \(\Gamma_N=0\), the count is identically zero.
+For \(\Gamma_N>0\) and \(I=[0,1]\), the error is a relative
+\(O((\log N)^{-\delta})\). More generally it is relative \(o(1)\)
+when \(|I|(\log N)^\delta\to\infty\).
+\end{theorem}
+
+The implicit constant and threshold may depend on all fixed data.
+No numerical threshold, uniformity in a growing modulus, or
+power-short interval assertion is included. For noncoprime fixed
+coefficients, first divide by their gcd when it divides \(N\).
+The even-modulus convention makes the prime two a bad prime throughout
+the analytic theorem. Passing from an odd modulus to its even multiple
+requires retaining this convention; freely admitting the prime two is
+a separate valuation-profile operation, not a change of notation.
+
+\begin{theorem}\label{thm:c12}
+Let \(\mathcal E_{12}=\{p\nmid6:p\not\equiv1\pmod{12}\}\), and set
+\[
+ A_{12}=\frac{4\pi}{\Gamma(1/4)^2}
+       \sqrt{\frac{\log(2+\sqrt3)}{6}}
+       \prod_{p\in\mathcal E_{12}}
+                        \left(1-\frac{2}{p(p-1)}\right),\qquad
+ J_{12}(N)=\prod_{\substack{p\mid N\\p\in\mathcal E_{12}}}
+                                      \frac{p-1}{p-2}.
+\]
+For all sufficiently large \(N\equiv2\pmod{12}\),
+\[
+ R_{12}(N)=A_{12}J_{12}(N)\frac{N}{(\log N)^{3/2}}
+                 \left(1+O((\log N)^{-1/32768})\right).
+\]
+All other residue classes have zero count.
+\end{theorem}
+\begin{proof}[Deduction from Theorem~\ref{thm:general}]
+Take \(L_0=12\), \(H_1=H_2=U=V=\{1\}\), \(A=B=1\).
+Then \(\rho_i=1/4\) and \(\Gamma_N=12\) on the indicated class.
+The four characters give the exact identity
+\begin{align*}
+ F_{12}(s)^4={}&\zeta(s)L(s,\chi_{-4})L(s,\chi_{-3})L(s,\chi_{12})\,
+        (1-2^{-2s})(1-3^{-2s})
+        \prod_{p\in\mathcal E_{12}}(1-p^{-2s})^2.
+\end{align*}
+Here the three nonprincipal characters displayed are primitive.
+Use \(L(1,\chi_{-4})=\pi/4\),
+\(L(1,\chi_{-3})=\pi/(3\sqrt3)\), and
+\[
+ L(1,\chi_{12})=\int_0^1\frac{1-x^4}{1+x^6}\,dx
+ =\left[\frac{1}{2\sqrt3}
+ \log\frac{x^2+\sqrt3x+1}{x^2-\sqrt3x+1}\right]_0^1
+ =\frac{\log(2+\sqrt3)}{\sqrt3}.
+\]
+Consequently
+\[
+ c_{12}=\frac{1}{\Gamma(1/4)}
+ \left(\frac{\pi^2\log(2+\sqrt3)}{54}
+       \prod_{p\in\mathcal E_{12}}(1-p^{-2})^2\right)^{1/4}.
+\]
+In \(12c_{12}^2C_{\mathcal E_{12}}\), combine the factors by
+\((1-p^{-2})(1-(p-1)^{-2})=1-2/(p(p-1))\).
+This is exactly \(A_{12}\). The real density integrates to one;
+there is no extra beta-integral factor.
+\end{proof}
+
+We next clarify the congruence criterion without analytic inputs.
+Write \(C_H(U)=\{n\in C_H:n\bmod L_0\in U\}\).
+\begin{lemma}\label{lem:finite-images}
+A residue \(r\bmod M\) is represented by \(C_H(U)\) if and only if
+its reduction modulo \(\gcd(M,L_0)\) is that of some \(h\in U\),
+and every forbidden prime \(p\mid M\), \(p\nmid L_0\), satisfies
+\(p\nmid r\).
+\end{lemma}
+\begin{proof}
+Necessity follows from prime support. Choose such an \(h\), and for
+each allowed \(p^k\Vert M\) put \(e_p=\min(v_p(r),k)\).
+Set \(D=\prod p^{e_p}\), so \(D\in C_H\) and \((D,L_0)=1\).
+We seek a prime \(\ell\equiv hD^{-1}\pmod{L_0}\).
+Where \(e_p<k\), impose
+\[
+ \ell\equiv(r/p^{e_p})(D/p^{e_p})^{-1}\pmod{p^{k-e_p}}.
+\]
+Where \(e_p=k\), impose \(\ell\equiv1\pmod p\).
+At primes of \(M\) not dividing \(D\), impose the unit condition
+\(\ell\equiv rD^{-1}\pmod{p^k}\). These congruences are compatible
+with the \(L_0\)-condition precisely by the stated hypotheses.
+They give a reduced CRT class. Dirichlet's theorem supplies a prime
+\(\ell\) outside the finite exceptional set; then \(D\ell\) has
+the required residue and state.
+\end{proof}
+
+\begin{theorem}\label{thm:local}
+The condition \(\Gamma_N>0\) is equivalent to solvability of
+\(Ax+By\equiv N\pmod M\) with actual
+\(x\in C_{H_1}(U),y\in C_{H_2}(V)\), for every \(M\ge1\).
+For all sufficiently large \(N\), it is also equivalent to positive
+additive representability.
+\end{theorem}
+\begin{proof}
+Taking \(M=L_0\) proves necessity. For sufficiency choose a root
+counted by \(\Gamma_N\) and work modulo \(K=\lcm(M,L_0)\).
+At a prime dividing \(L_0\), at least one coefficient is a unit;
+adjust its variable to lift the equation while preserving the fixed
+unit states. At a prime outside \(L_0\), both coefficients are units
+and \(p\ge3\). Of the \(p\) solutions modulo \(p\), requiring a
+unit on each forbidden side removes at most two. A surviving pair
+lifts to every higher power. CRT and Lemma~\ref{lem:finite-images}
+realize the required two residues by actual semigroup values.
+Finally Theorem~\ref{thm:general} is positive for all sufficiently
+large targets with \(\Gamma_N>0\).
+\end{proof}
+
+\begin{remark}[A joint congruence obstruction]\label{rem:coupled}
+Take \(L_0=12\), \(H=\{1,11\}=\ker\chi_{12}\).
+Then \(H+H=\{0,2,10\}\pmod{12}\), so \(N\equiv4\pmod{12}\)
+is never a sum. Nevertheless \(H\) projects onto the full unit groups
+modulo four and three. The separate closures are \(\Z_2^\times\)
+and \(\Z_3^\times\); at other primes they are \(\Z_p\) or
+\(\Z_p^\times\), according as that prime is allowed or forbidden.
+Two units sum to every element of \(\Z_p\) for odd \(p\), and to
+every even element for \(p=2\). Thus these targets pass every
+separate \(p\)-adic test. The missing condition is the simultaneous
+residue state modulo twelve.
+\end{remark}

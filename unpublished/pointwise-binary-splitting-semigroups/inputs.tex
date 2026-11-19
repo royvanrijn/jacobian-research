@@ -1,0 +1,278 @@
+\section{Analytic inputs and the comparison framework}\label{sec:inputs}
+
+The analytic argument has three sources with different roles.
+Walsh's density-model and multiplicative-invariance framework
+\cite[Sections 2--7]{walsh} supplies the architecture of the comparison.
+The zero-free theorem \cite[Theorem 3.1]{zerofree} supplies a fixed
+half-plane for Dirichlet \(L\)-functions. The weighted-dilation theorem
+\cite[Section 3]{weightedgraphs} transfers an independent-label operator
+estimate to a moment on integers. We state the latter input with its
+normalizations, since constancy on a mark fiber and the order of parameter
+choices matter in this application.
+
+\subsection{The zero-free input}
+
+\begin{proposition}[Imported zero-free theorem]\label{prop:zf}
+Every Dirichlet \(L\)-function, including \(\zeta\), is nonzero in
+\[
+                         \Re s>11/12.
+\]
+The pole at \(s=1\) of a principal character is allowed. Both conductor
+and height are unrestricted.
+\end{proposition}
+
+This is the Dirichlet conclusion of
+\cite[Theorem 3.1, printed p.~10]{zerofree}. The same theorem treats
+finite-order Hecke characters over \(\Q(\sqrt{-3})\); that stronger
+form is not needed here. Neither the boundary line nor the sharper
+\(7/8\) assertion in Part II of that source is used. The input is
+nonvanishing on the open half-plane, not an asserted numerical
+threshold for the representation theorem. Estimates for individual
+\(L\)-functions used below require the usual functional equation,
+Euler product, and holomorphic logarithm on zero-free rectangles in
+addition to this proposition.
+
+\subsection{Prime groups and the two operators}
+
+For this subsection only, write
+\[
+                \Lambda=\log x,\qquad T=\log\Lambda.
+\]
+Fix constants
+\[
+ 0<\alpha<\beta<\gamma<\delta<0.47,\quad
+ c_0,C_0,v_-,v_+>0,\quad 0<\vartheta<1,\quad \ell\ge1.
+\]
+There are disjoint collections \(\mathcal G_s,\mathcal G_b\) of
+pairwise disjoint finite prime sets \(P_g\), with
+\[
+ c_0T\le|\mathcal G_s|,|\mathcal G_b|\le C_0T.
+\]
+They satisfy
+\[
+\begin{split}
+ e^{\Lambda^\alpha}\le p\le e^{\Lambda^\beta}
+       &\quad(g\in\mathcal G_s,\ p\in P_g),\\
+ e^{\Lambda^\gamma}\le p\le e^{\Lambda^\delta}
+       &\quad(g\in\mathcal G_b,\ p\in P_g),\\
+ v_-\le V_g:=\sum_{p\in P_g}\frac1p\le v_+,
+       &\qquad \mu_g(p)=\frac1{V_gp}.
+\end{split}                                                    \tag{3.1}\label{eq:inputbanks}
+\]
+The sets need not be intervals. This freedom is needed when taking
+identity residue classes and deleting primes dividing the target.
+
+Fix a sufficiently large integer \(J\), and put \(M=J+\ell\).
+A pattern \(\nu\) specifies subsets
+\(C_g\subseteq\{1,\ldots,J\}\), with
+\[
+ C_g=\varnothing\quad(g\in\mathcal G_s),\qquad
+ |C_g|\le m\quad(g\in\mathcal G_b),\qquad t_g=\ell+|C_g|.
+\]
+The slots in \(\{1,\ldots,J\}\setminus C_g\) are shared between the
+two endpoint lists. The remaining \(t_g\) slots at each endpoint
+are unshared. Form \(D\) from the shared labels and, in the
+\(C_g\)-slots, fresh independent draws with laws \(\mu_g\).
+Thus \(D\) has \(J\) prime factors from each group, counted with
+multiplicity. Write \(D=D_sD_b\) according to group size.
+
+Each pattern has a complex coefficient \(K_\nu\). It may depend on
+the ordered big-group source labels, target labels, and auxiliary
+labels used in \(D_b\), and on no small-group labels. Assume
+\[
+                 \sum_\nu\sup |K_\nu|\le\Lambda^{C_1},           \tag{3.2}\label{eq:inputmass}
+\]
+where \(m,C_1\) are fixed independently of \(J\). All operators below
+average source and target slot permutations independently in each
+applicable group. These averages are orthogonal projections.
+
+The \emph{ideal operator} acts on
+\[
+ \mathcal H_{\mathrm{id}}=
+ L^2\!\left(\prod_{g\in\mathcal G_b}P_g^M,
+                    \bigotimes_{g\in\mathcal G_b}\mu_g^{\otimes M}\right).
+\]
+Numerical repetitions are permitted. Its row operation retains shared
+labels, samples the unshared target labels and auxiliary labels
+independently, and multiplies by
+\[
+                         K_\nu D_b^{\,i\zeta}e(\Theta D_b),
+             \qquad e(t)=\exp(2\pi it).
+\]
+Sum over patterns and compose with the permutation projections on
+both sides; denote the result by \(\mathcal T(\Theta)\).
+
+A \emph{physical state} consists of an integer \(n\) and an ordered
+\(M\)-tuple in every group, with distinct labels within each group,
+all dividing \(n\). Give every such state at \(n\) mass
+\(\prod_gV_g^{-M}\), and use counting measure on the integer position.
+This defines \(\mathcal H_{\mathrm{ph}}\). Put
+\[
+ \omega_g(n)=\#\{p\in P_g:p\mid n\},\quad
+ \omega(n)=\sum_g\omega_g(n),\quad
+ s=|\mathcal G_s|+|\mathcal G_b|.
+\]
+For a fixed integer \(k\) with \(0<|k|\le\Lambda^{C_2}\), the
+\emph{physical operator} \(A\) moves from \(n\) to \(n'=n+kD\).
+It sums over the physical target lists with the prescribed shared
+labels, using row normalization \(\prod_gV_g^{-t_g}\); auxiliary
+labels retain their independent probability laws. Every auxiliary
+label is forbidden from both endpoint lists, although auxiliary
+labels may equal each other. Multiply the row by
+\[
+ K_\nu D^{\,i\zeta}
+       \vartheta^{(\omega(n)-Ms)/2}
+       \vartheta^{(\omega(n')-Ms)/2},                            \tag{3.3}\label{eq:inputphysical}
+\]
+sum over patterns and apply all endpoint permutation projections.
+The adjoint reverses the displacement and conjugates the coefficient
+with the endpoint roles interchanged. The joint endpoint
+normalization in each group is \(V_g^{-M-t_g}\) in either direction.
+
+\begin{proposition}[Imported absolute bounds]\label{prop:graphabsolute}
+Replace every elementary transition coefficient of \(A\) by its
+absolute value before summing patterns and averaging permutations.
+The resulting operator and its adjoint have row sums at most
+\(\Lambda^{C_{\mathrm{abs}}}\). The exponent may depend on \(m,C_1\)
+and the fixed group data, but is independent of \(J\).
+The same assertion holds with integer position replaced by independent
+uniform residues at all group primes.
+\end{proposition}
+
+This is \cite[Lemma 3.4]{weightedgraphs}. The independence from \(J\)
+is part of the assertion. To see its source, once the shared labels
+are fixed, the new target slots in a group cost at most
+\[
+       \sup_{z\ge0}V_g^{-t_g}(z+t_g)^{t_g}\vartheta^{z/2}.
+\]
+Here \(t_g\le\ell+m\). This is a fixed constant per group and its
+product over \(O(T)\) groups is a fixed power of \(\Lambda\).
+Reversing the joint endpoint measure gives the column bound.
+
+\subsection{Root moments, residue replacement, and endpoints}
+
+\begin{proposition}[Imported local transference]\label{prop:rootmoment}
+For every fixed \(E>0\), there is \(E_{\mathrm{id}}>0\), depending
+only on \(E\) and the fixed group data, such that the following holds.
+Suppose
+\[
+                   \sup_{\Theta\in\mathbb R}
+                        \|\mathcal T(\Theta)\|_{2\to2}
+                              \le\Lambda^{-E_{\mathrm{id}}}.
+                                                                    \tag{3.4}\label{eq:inputideal}
+\]
+After \(m,C_1\) have been fixed, take a sufficiently large fixed \(J\).
+Put \(R=\lceil\Lambda^{0.52}\rceil\). For every fixed \(\eta>0\)
+and \(I=[X,2X)\), with \(x^\eta\le X\le x^{1/\eta}\),
+\[
+ \frac1{|I\cap\Z|}\sum_{n\in I\cap\Z}
+       \langle u_n,(AA^*)^Ru_n\rangle
+                         \le\Lambda^{-2RE}.                    \tag{3.5}\label{eq:inputroot}
+\]
+Here \(u_n\) is one on every physical mark list at position \(n\)
+and zero elsewhere. The threshold may depend on all the fixed
+parameters, including \(J,C_2,\eta\). No bound on \(\zeta\) is
+required beyond \eqref{eq:inputideal}.
+\end{proposition}
+
+This is \cite[Theorem 3.5]{weightedgraphs}. It imposes return of the
+integer position. The final mark list need not equal the initial
+list, and \(u_n\) is not normalized. Substituting a trace with
+identical initial and final mark lists would change the statement.
+
+The arithmetic replacement inside that theorem has the following
+precise form, which also explains its scale limitation.
+For a fixed compatible path with \(r=2R\) edges, let \(h_i\) be
+the integer offsets and \(\mathcal A_i\) its active prime set at
+visit \(i\). Set \(\vartheta_i=\vartheta\) at internal visits and
+\(\vartheta_0=\vartheta_r=\sqrt{\vartheta}\).
+The position-dependent factor is
+\[
+ W(n)=\prod_{i=0}^{r}
+       \left(\prod_{p\in\mathcal A_i}1_{p\mid n+h_i}\right)
+       \vartheta_i^{\,\#\{p\notin\mathcal A_i:
+                     \ p\text{ is a group prime},\ p\mid n+h_i\}}.
+                                                                    \tag{3.6}\label{eq:inputpath}
+\]
+
+\begin{proposition}[Imported residue replacement]\label{prop:graphcrt}
+For every fixed \(B>0\), the average of \eqref{eq:inputpath} on
+\(I\cap\Z\) equals its expectation with independent uniform residues
+at all group primes, multiplied by \(1+O(\exp(-BrT))\).
+An incompatible collection of active congruences has zero weight
+in both models.
+\end{proposition}
+
+This is \cite[Lemma 3.6]{weightedgraphs}. For clarity, its relative
+form retains all deterministic damping belonging to active primes.
+The product \(Q_{\mathrm{act}}\) of active primes satisfies
+\[
+              \log Q_{\mathrm{act}}
+                   =O_J(rT\Lambda^\delta)=o(\Lambda).
+\]
+After those factors are extracted, a Bonferroni expansion of degree
+\(O_B(rT)\) controls the remaining damping. Its independent
+expectation is at least \(\exp(-O(rT))\); its total interval
+counting error is \(\exp(-\eta\Lambda+o(\Lambda))\).
+The inequality \(0.52+\delta<1\) makes that error negligible
+even after division by the active congruence density. Together
+with Proposition~\ref{prop:graphabsolute}, this permits summation
+over paths with absolute coefficients. These observations describe
+the imported replacement and do not assert replacement on intervals
+shorter than its stated range.
+
+\begin{corollary}[Imported endpoint consequence]\label{cor:graphendpoint}
+Under Proposition~\ref{prop:rootmoment}, let \(f\in\mathcal H_{\mathrm{ph}}\)
+be supported on positions \(I=[X,2X)\), constant on the chosen mark
+list at each position, with value \(f_n\). If
+\[
+ \sup_{n\in I}|f_n|\le\exp(O(\sqrt{\Lambda})),\qquad
+          \|f\|,\|g\|\le X^{1/2}\Lambda^{C_3},
+\]
+then
+\[
+                    |\langle f,Ag\rangle|
+                        \ll X\Lambda^{-E+2C_3}.                 \tag{3.7}\label{eq:inputendpoint}
+\]
+Only \(f\) must be constant on mark lists.
+\end{corollary}
+
+This is \cite[Corollary 3.11]{weightedgraphs}. Its proof partitions
+\(I\) into intervals on the displacement scale
+\(\exp(O_J(T\Lambda^\delta))\), uses spectral H\"older for
+\(AA^*\), and bounds the positive matrix
+\((\langle u_n,(AA^*)^Ru_m\rangle)\) by its trace.
+It makes no equal-fiber-mass assumption.
+
+\subsection{What must be proved for the binary application}
+
+The propositions above do not state a binary correlation theorem.
+Walsh's theorem \cite[Theorem 1.1]{walsh} concerns
+\(d_k(n)d_l(n+h)\) for positive \emph{integer} divisor orders and a
+fixed nonzero shift \(h\). His Section 1.2.4 identifies other
+indicator correlations as possible extensions. The membership
+indicators and the reflected line in the present article require
+separate arguments.
+
+There are three interfaces. First, the one-variable Euler series
+has a fractional branch \((s-1)^{-\rho_i}\). Its density model must
+retain every character trivial on \(H_i\); an average scalar density
+would lose genuine main terms. Second, the independent-label
+comparison must be constructed for the fixed progression filters
+and for prime groups in an identity residue class. The coefficient
+bound \eqref{eq:inputmass} and the restriction to big labels must
+hold before the final \(J\) is chosen. In particular, the source's
+ideal-kernel construction for unrestricted interval prime sets is
+not silently imported for these progression filters. Third, the
+relation is \(n+(N-n)=N\), with the target growing on the summation
+scale. Its comparison terms, endpoint norms, and localization
+errors must be uniform in that target. We prove these interfaces
+in the following sections; none is a consequence of the root
+moment alone.
+
+The parameter order is consequently part of the proof: choose the
+required final accuracy, choose the ideal accuracy supplied by
+Proposition~\ref{prop:rootmoment}, construct the signed family and
+its fixed \(m,C_1\), and only then choose \(J\). The threshold in
+\(x\) is taken last. The modulus and subgroup data remain fixed
+throughout.

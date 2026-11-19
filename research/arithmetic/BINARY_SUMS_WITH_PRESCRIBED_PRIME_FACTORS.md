@@ -832,13 +832,15 @@ mechanism. A mean-square theorem does not eliminate the last exceptional
 target. Campaign D is not a prerequisite for Campaigns A and B.
 
 **Campaign E: proof and priority audit.** Continue independent checks of the
-Eisenstein spectral inputs and the power-window proof. Retrieve and audit the
-full main theorem of Iwaniec--Pomykała's 1993 *Sums and differences of quartic
-norms* before making any priority claim for S12U. Its introduction explicitly
-poses the relevant splitting-prime question, but the full theorem has not been
-obtained in this audit. The reproduced auxiliary proposition has extra
-hypotheses and cannot stand in for it. No every-target modulus-12 result is
-claimed here.
+Eisenstein spectral inputs and the power-window proof. The
+[full Iwaniec--Pomykała comparison](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#full-iwaniec--pomykała-theorem-audit)
+is complete: Theorem 1 proves unconditional quartic differences, and
+Theorem 2 proves conditional every-target coprime sums at the expected
+logarithmic order. Its field \(\mathbb Q(\zeta_{12})\) gives exactly
+\(C_{12}\). The growing-shift hypothesis and coprime target factor must
+be retained. The present unrestricted leading asymptotic is a different
+quantitative statement. Checking later removal of the old hypothesis,
+balanced adaptations and broader priority remains separate.
 
 For existence in a target-sized window, the auxiliary exceptional count
 \[
@@ -878,7 +880,8 @@ here concern the stated clean congruence family.
 
 A larger first moment alone does not establish the remaining stages. The
 [Iwaniec--Pomykała audit](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md#literature-and-the-remaining-obligation)
-remains necessary before claiming novelty for an every-target theorem.
+records the direct conditional antecedent. Broader priority and later adaptations
+remain to be checked before any first-result claim.
 
 ## Verification scope
 
