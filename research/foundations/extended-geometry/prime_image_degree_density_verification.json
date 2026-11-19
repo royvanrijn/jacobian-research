@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "passed": true,
+  "scope": "Finite exact parameter/divisor/CRT controls only. Classical fixed-PNT and written sequential-limit argument prove densityone; no finite sample proves an asymptotic.",
+  "odd_degree_limit": 20000,
+  "odd_degree_equivalence_cases": 9999,
+  "prime_controls": 2262,
+  "full_family_prime_controls": 1452,
+  "prime_q_subfamily_controls": 1291,
+  "crt_controls": [
+    {
+      "q": [
+        5
+      ],
+      "modulus": 5,
+      "unit_residues": 4,
+      "covered": 1,
+      "density": "1/4"
+    },
+    {
+      "q": [
+        13
+      ],
+      "modulus": 13,
+      "unit_residues": 12,
+      "covered": 1,
+      "density": "1/12"
+    },
+    {
+      "q": [
+        17
+      ],
+      "modulus": 17,
+      "unit_residues": 16,
+      "covered": 1,
+      "density": "1/16"
+    },
+    {
+      "q": [
+        29
+      ],
+      "modulus": 29,
+      "unit_residues": 28,
+      "covered": 1,
+      "density": "1/28"
+    },
+    {
+      "q": [
+        5,
+        13
+      ],
+      "modulus": 65,
+      "unit_residues": 48,
+      "covered": 15,
+      "density": "5/16"
+    },
+    {
+      "q": [
+        5,
+        17
+      ],
+      "modulus": 85,
+      "unit_residues": 64,
+      "covered": 19,
+      "density": "19/64"
+    },
+    {
+      "q": [
+        5,
+        29
+      ],
+      "modulus": 145,
+      "unit_residues": 112,
+      "covered": 31,
+      "density": "31/112"
+    },
+    {
+      "q": [
+        13,
+        17
+      ],
+      "modulus": 221,
+      "unit_residues": 192,
+      "covered": 27,
+      "density": "9/64"
+    },
+    {
+      "q": [
+        13,
+        29
+      ],
+      "modulus": 377,
+      "unit_residues": 336,
+      "covered": 39,
+      "density": "13/112"
+    },
+    {
+      "q": [
+        17,
+        29
+      ],
+      "modulus": 493,
+      "unit_residues": 448,
+      "covered": 43,
+      "density": "43/448"
+    },
+    {
+      "q": [
+        5,
+        13,
+        17
+      ],
+      "modulus": 1105,
+      "unit_residues": 768,
+      "covered": 273,
+      "density": "91/256"
+    },
+    {
+      "q": [
+        5,
+        13,
+        29
+      ],
+      "modulus": 1885,
+      "unit_residues": 1344,
+      "covered": 453,
+      "density": "151/448"
+    },
+    {
+      "q": [
+        5,
+        17,
+        29
+      ],
+      "modulus": 2465,
+      "unit_residues": 1792,
+      "covered": 577,
+      "density": "577/1792"
+    },
+    {
+      "q": [
+        13,
+        17,
+        29
+      ],
+      "modulus": 6409,
+      "unit_residues": 5376,
+      "covered": 921,
+      "density": "307/1792"
+    },
+    {
+      "q": [
+        5,
+        13,
+        17,
+        29
+      ],
+      "modulus": 32045,
+      "unit_residues": 21504,
+      "covered": 8139,
+      "density": "2713/7168"
+    }
+  ],
+  "negative_controls": [
+    "prime3 would require n0",
+    "prime41 belongs to full family but not prime-q subfamily",
+    "prime37 belongs to neither old parameter set",
+    "incorrect denominator q instead of q-1 rejected"
+  ],
+  "sources": {
+    "PRIME_IMAGE_DEGREE_DENSITY.md": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+    "verify_prime_image_degree_density.py": "f5522c4953e974d78620f57a7dfd72b2b55af5d16586ebc64396c48c54844f17",
+    "prime_image_degree_density_source_ledger.json": "5ba3f0f95ae87e61d3369a6baefcd0949c73343866cb050a1689b97ef190650b"
+  },
+  "retained_inputs": [
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "locator": "Section6, H18--H22 and all-parameter theorem"
+    },
+    {
+      "retained_path": "verify_hyperbolic_odd_height_image.py",
+      "sha256": "d451ce11f359c288f359ebbfc5cb2dbaf7d0ea0af7be0c49a8f136829810dfaf",
+      "locator": "Retained construction finite-checker identity"
+    },
+    {
+      "retained_path": "hyperbolic_odd_height_image_verification.json",
+      "sha256": "2f3bc4a96bda236a0b3985001a31af3768ee29d5e7434274b23edfe46dc36f58",
+      "locator": "Retained construction finite evidence"
+    },
+    {
+      "retained_path": "sources/soprounov_pnt_arithmetic_progressions.pdf",
+      "sha256": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038",
+      "locator": "Theorem2.1 printedp1 and proof pp2--4"
+    }
+  ],
+  "python": "3.12.3",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

@@ -2,7 +2,7 @@
 
 <!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->
 
-Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
+Generalized vanishing, Gaussian moments and Image/Mathieu spaces. The explicit radial-primitive non-power two-pair Image family covers asymptotically all prime balanced degrees; its cubic-height subfamily alone covers primes3mod10 other than3.
 
 **Authored assessment:** Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally. The odd-height extension gives internal primitive, non-proper-power witnesses in every even balanced degree d>=4; primitive odd degree five remains open. The universal geometric ternary-cubic purity prefix is at least16 by invariant orbit separation and local height; the exceptional moment scheme is nonreduced. Higher Gaussian-preserving shears give arbitrary first M_d moments with explicit quadratic M_d, separately for Gaussian and sphere functionals.
 
@@ -36,6 +36,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Primitive two-pair Image witnesses in every odd composite degree | Internal result | proved | [Source](../foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md) |
 | Primitive Image witnesses in prime degrees from hyperbolic inverse covers | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md) |
 | Complete hyperbolic-coordinate fibers and additional prime Image witnesses | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md) |
+| Primitive Image counterexamples in asymptotically all prime degrees | Internal result | proved | [Source](../foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 
@@ -56,6 +57,7 @@ Scope limits:
 - For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff.
 - Primitive non-proper-power Image witnesses exist in every composite balanced degree>=4. Hyperbolic inverse covers additionally supply degrees(2a+3)n+a+2 for odd a>=1,n>=1, including odd primes13,23,41,59, with one fixed original marker surviving at every even order. Degrees5,7,11 and other residual odd primes remain open; no minimum odd or prime failing degree is proved.
 - Polynomial quotient deformations now extend the hyperbolic Image family to degrees(2ell(a+2)-1)N+a+2, including prime37,61,71,89 outside the earlier covered set. The same theorem gives the full polynomial pure fiber at each fixed u_N; marker ZQ_h survives every even order with exact original factorials. Global prime5,7,11,17,19 remain open.
+- The explicit full hyperbolic all-odd-a family has relative natural densityone among prime balanced degrees. Already the a1 cubic-height branch covers primes3mod10 except3 with relative density1/4. These are classical fixed-PNT/CRT consequences, and individual residual primes remain open.
 
 Tracked obligations (computed states):
 
@@ -64,6 +66,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine the exact universal Gaussian purity prefix for total degree<=3 in three variables; the geometric lower bound is now16 and the exceptional moment scheme is nonreduced.](vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [Decide whether a primitive two-pair Image witness exists in odd balanced degree five, requiring F mod R nonzero from the start.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE
 - **verification / open:** [Specify the group/nullcone and audit the nullcone-to-eventual-marker implication used in the Image moment-nullcone assertions.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — VERIFY-IMAGE2-NULLCONE-APPLICATION
-- **mathematical / open:** [Construct or exclude primitive Image witnesses at residual odd prime degrees, especially5,7,11,17,19, outside the extended hyperbolic-coordinate covered set.](../foundations/extended-geometry/HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md) — GAP-IMAGE2-ODD-PRIME-PRIMITIVE
+- **mathematical / open:** [Which individual residual primes, including5,7,11,17,19, admit primitive Image counterexamples? The explicit family already covers asymptotically all prime degrees; densityone does not decide each omitted prime.](../foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md) — GAP-IMAGE2-ODD-PRIME-PRIMITIVE
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

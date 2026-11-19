@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "PRIME_IMAGE_DEGREE_DENSITY.md",
+  "proof_labels": [
+    "PrimeDegreeDensityOne",
+    "CubicHeightQuarterDensity"
+  ],
+  "domain": "Every characteristic-zero coefficient field; counting prime balanced degrees of the explicit retained all-odd-a family.",
+  "retained_resources": [
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "locator": "Section6, H18--H22 and all-parameter theorem"
+    },
+    {
+      "retained_path": "verify_hyperbolic_odd_height_image.py",
+      "sha256": "d451ce11f359c288f359ebbfc5cb2dbaf7d0ea0af7be0c49a8f136829810dfaf",
+      "locator": "Retained construction finite-checker identity"
+    },
+    {
+      "retained_path": "hyperbolic_odd_height_image_verification.json",
+      "sha256": "2f3bc4a96bda236a0b3985001a31af3768ee29d5e7434274b23edfe46dc36f58",
+      "locator": "Retained construction finite evidence"
+    },
+    {
+      "retained_path": "sources/soprounov_pnt_arithmetic_progressions.pdf",
+      "sha256": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038",
+      "locator": "Theorem2.1 printedp1 and proof pp2--4"
+    }
+  ],
+  "analytic_import": {
+    "theorem": "Soprounov Theorem2.1",
+    "hypotheses": "Fixed positive modulus and coprime residue; no growing-modulus uniformity.",
+    "actual_statement_inspected": true,
+    "proof_inspected": true,
+    "url": "https://academic.csuohio.edu/soprunov-ivan/wp-content/uploads/sites/93/2023/02/primes.pdf"
+  },
+  "self_contained_arguments": [
+    "a1 progression exactly primes3mod10 except3",
+    "prime-q subfamily and inverse parameters",
+    "finite reduced-residue CRT union density",
+    "divergent q1mod4 reciprocals from PNT and partial summation",
+    "sequential fixed-modulus liminf squeeze giving natural relative densityone"
+  ],
+  "verification": {
+    "checker": "verify_prime_image_degree_density.py",
+    "receipt": "prime_image_degree_density_verification.json",
+    "scope": "Finite exact arithmetic and source pins only; written proof and imported classical PNT establish asymptotics.",
+    "internal_review": "Root rederived full argument; separate arithmetic-agent adversarial audit confirmed parity, cutoffs, CRT unit counts and sequential limits."
+  },
+  "not_claimed": [
+    "Every sufficiently large prime is covered.",
+    "Prime-q proper-divisor criterion is necessary for the full family.",
+    "An effective omitted-prime error term or global minimum prime degree.",
+    "External human review, formal verification or historical priority."
+  ]
+}

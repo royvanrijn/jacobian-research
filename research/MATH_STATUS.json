@@ -6,7 +6,7 @@
     {
       "id": "moments",
       "title": "Moments and vanishing",
-      "summary": "Generalized vanishing, Gaussian moments and Image/Mathieu spaces.",
+      "summary": "Generalized vanishing, Gaussian moments and Image/Mathieu spaces. The explicit radial-primitive non-power two-pair Image family covers asymptotically all prime balanced degrees; its cubic-height subfamily alone covers primes3mod10 other than3.",
       "status": "Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally. The odd-height extension gives internal primitive, non-proper-power witnesses in every even balanced degree d>=4; primitive odd degree five remains open. The universal geometric ternary-cubic purity prefix is at least16 by invariant orbit separation and local height; the exceptional moment scheme is nonreduced. Higher Gaussian-preserving shears give arbitrary first M_d moments with explicit quadratic M_d, separately for Gaussian and sphere functionals.",
       "readme": "moments/README.md",
       "results": [
@@ -907,6 +907,27 @@
           "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
           "dependency_coverage": "partial",
           "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
+        },
+        {
+          "id": "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES",
+          "title": "Primitive Image counterexamples in asymptotically all prime degrees",
+          "state": "proved",
+          "scope": "Over every characteristic-zero field, the explicit retained all-odd-a hyperbolic Image construction supplies radial-primitive nonproper-power witnesses in a set H of prime balanced degrees with H(X)~pi(X)~X/log X. Already a1 gives exactly primes3mod10 except3, count pi(X;10,3)-1~X/(4log X). Full densityone follows from fixed finite CRT unions over prime2a+3=1mod4, divergent reciprocals and a sequential liminf squeeze. Pure contractions vanish at every order and one fixed markerZ survives at every even order by the old theorem. Does not settle every individual prime, give an effective error rate or establish historical priority.",
+          "canonical_source": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "checker": "foundations/extended-geometry/verify_prime_image_degree_density.py",
+          "artifact_hash": "sha256:f5522c4953e974d78620f57a7dfd72b2b55af5d16586ebc64396c48c54844f17",
+          "evidence": [
+            "foundations/extended-geometry/prime_image_degree_density_source_ledger.json",
+            "foundations/extended-geometry/prime_image_degree_density_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "Classical fixed-modulus PNT corollary, exact CRT union and sequential limit proof on the retained all-order construction",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "verification_note": "Internal written proof, focused internal mathematical review and exact finite replay. No external review, complete formal verification or worldwide priority is asserted.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The exact stated scope only; broader research goals and stated open obligations remain open."
         }
       ],
       "open_questions": [
@@ -941,8 +962,8 @@
           "node": "VERIFY-IMAGE2-NULLCONE-APPLICATION"
         },
         {
-          "question": "Construct or exclude primitive Image witnesses at residual odd prime degrees, especially5,7,11,17,19, outside the extended hyperbolic-coordinate covered set.",
-          "source": "foundations/extended-geometry/HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md",
+          "question": "Which individual residual primes, including5,7,11,17,19, admit primitive Image counterexamples? The explicit family already covers asymptotically all prime degrees; densityone does not decide each omitted prime.",
+          "source": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
           "kind": "mathematical",
           "node": "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
         }
@@ -961,7 +982,8 @@
         "In two real Gaussian variables, eventual pure vanishing, purity, one strict circular-weight sign and all-marker safety are equivalent. If the angular weights fail separation, one fixed prime dilation gives nonzero moments at every sufficiently large prime.",
         "For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff.",
         "Primitive non-proper-power Image witnesses exist in every composite balanced degree>=4. Hyperbolic inverse covers additionally supply degrees(2a+3)n+a+2 for odd a>=1,n>=1, including odd primes13,23,41,59, with one fixed original marker surviving at every even order. Degrees5,7,11 and other residual odd primes remain open; no minimum odd or prime failing degree is proved.",
-        "Polynomial quotient deformations now extend the hyperbolic Image family to degrees(2ell(a+2)-1)N+a+2, including prime37,61,71,89 outside the earlier covered set. The same theorem gives the full polynomial pure fiber at each fixed u_N; marker ZQ_h survives every even order with exact original factorials. Global prime5,7,11,17,19 remain open."
+        "Polynomial quotient deformations now extend the hyperbolic Image family to degrees(2ell(a+2)-1)N+a+2, including prime37,61,71,89 outside the earlier covered set. The same theorem gives the full polynomial pure fiber at each fixed u_N; marker ZQ_h survives every even order with exact original factorials. Global prime5,7,11,17,19 remain open.",
+        "The explicit full hyperbolic all-odd-a family has relative natural densityone among prime balanced degrees. Already the a1 cubic-height branch covers primes3mod10 except3 with relative density1/4. These are classical fixed-PNT/CRT consequences, and individual residual primes remain open."
       ],
       "gap_ids": [
         "MOMENTS-SAFETY-PURITY",
@@ -9485,6 +9507,51 @@
           "verification_note": "Written deduction from the fixed-shift pair theorem and the classical triple upper bound. The determinant hypotheses of Nowak's theorem and the signed offset and interval endpoints were checked.",
           "dependency_coverage": "partial",
           "graph_scope_note": "Under the scoped ZF and G inputs, for fixed integer offsets u<v and a finite disjoint zero set Z, the binary pattern with ones at u and v and zeros on Z has count asymptotic to T_(v-u) X/log X. Its deficit from the pair count is O_(u,v,Z)(X/(log X)^(3/2)). In particular each fixed consecutive gap h>=1 has count asymptotic to T_h X/log X with positive leading coefficient."
+        },
+        {
+          "id": "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL",
+          "title": "A prime plus a sum of two squares for almost all targets",
+          "state": "proved",
+          "scope": "For the positive sums-of-two-squares indicator b, R(N)=sum_(p<N)b(N-p) has an upper bound of order C(N)N/log^(3/2)N for every N, and an asymptotic with relative O_A(log^(-1/2)X) error for X<N<=2X outside O_A(X/log^A X) targets, for every fixed A>0. The prime-convolved arithmetic model has that asymptotic uniformly in the target. The factor C(N) is (PN.1), with all targets locally admissible. The proof is classical.",
+          "canonical_source": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+            "arithmetic/CONNORS_KEATING_INDICATOR_CORRELATIONS.md",
+            "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written model evaluation by the sieve and Bombieri-Vinogradov, and minor-arc Parseval for the almost-all statement. Direct modular controls check the local factors.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For the positive sums-of-two-squares indicator b, R(N)=sum_(p<N)b(N-p) has an upper bound of order C(N)N/log^(3/2)N for every N, and an asymptotic with relative O_A(log^(-1/2)X) error for X<N<=2X outside O_A(X/log^A X) targets, for every fixed A>0. The prime-convolved arithmetic model has that asymptotic uniformly in the target. The factor C(N) is (PN.1), with all targets locally admissible. The proof is classical."
+        },
+        {
+          "id": "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-MAJOR-ARCS",
+          "title": "Major arcs and auxiliary weights for the reflected prime-plus-norm problem",
+          "state": "proved",
+          "scope": "For the reflected Jiang-Lau-Lu Type II mean square with actual split-prime banks trimmed by the target and the stated unit-supported rough coefficients, the unrestricted target-grid major expression (PN.4) is O_D(XY/log^D X) for every fixed D>0, under the existing fixed zero-free input ZF. The pointwise estimate holds uniformly for T comparable to X. Section 2 also removes the averaged auxiliary weight uniformly at relative cost O(1/sqrt(J)) on the natural upper-bound scale.",
+          "canonical_source": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+            "arithmetic/sources/jiang-lau-lu-2611.12467v2.pdf",
+            "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
+            "../results/pointwise-binary-splitting-semigroups/prime-estimates.tex"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written target-grid mean-square argument under the stated ZF input. The proof retains the grid average and uses multiplicative character orthogonality on its units. Exact lattice and local residue controls do not test the analytic bounds.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For the reflected Jiang-Lau-Lu Type II mean square with actual split-prime banks trimmed by the target and the stated unit-supported rough coefficients, the unrestricted target-grid major expression (PN.4) is O_D(XY/log^D X) for every fixed D>0, under the existing fixed zero-free input ZF. The pointwise estimate holds uniformly for T comparable to X. Section 2 also removes the averaged auxiliary weight uniformly at relative cost O(1/sqrt(J)) on the natural upper-bound scale."
         },
         {
           "id": "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
@@ -94302,6 +94369,24 @@
         "gap_kind": "mathematical"
       },
       {
+        "id": "GAP-REFLECTED-PRIME-GAUSSIAN-NORM-POINTWISE",
+        "title": "Every-target prime-plus-Gaussian-norm asymptotic",
+        "scope": "The all-target asymptotic for R(N) with the explicit C(N) in (PN.1) remains open in this argument. The attempted Jiang-Lau-Lu transfer still needs (PN.8), a minor-arc bound across the index-N projective lattices, and a reflected Type I evaluation at moving possibly nonreduced residues.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+            "sha256": "2a68d0aea1a62ab8b67bd6c439893aed3681c7a664a2ba76d13e753d99ade478",
+            "locator": "Sections 1 and 3: pointwise target, determinant normalization and residual minor-arc and Type I estimates"
+          }
+        ],
+        "gap_kind": "mathematical"
+      },
+      {
         "id": "ARITH-CONNORS-KEATING-LOCAL-MODEL",
         "title": "Two-branch norm indicator model and exact Connors-Keating local factors",
         "scope": "For b the sums-of-two-squares indicator, the projected rough model has principal and chi4 branches. Its fixed-h model product is asymptotic to C(h)x/log x by finite inert square/dyadic prefixes and a dimension-one fundamental-lemma sieve; delta2=W2/4 and delta_p=p/(p+1)(1-p^(-v_p(h)-1)). This arithmetic/model evaluation is independent of the centered graph comparison.",
@@ -97505,7 +97590,7 @@
         "id": "GAP-IMAGE2-ODD-PRIME-PRIMITIVE",
         "kind": "gap",
         "title": "Primitive Image witnesses in odd prime balanced degrees",
-        "scope": "Determine the remaining odd prime balanced degrees admitting primitive two-pair Image witnesses. Every composite degree>=4 and the extended hyperbolic degrees(2ell(a+2)-1)N+a+2 are supplied, including13,23,37,41,59,61,71,89. Global residual questions include5,7,11,17,19. The full quadratic-height class has no odd unsafe degree; the entire odd-cubic winding-one class has sharp least odd unsafe degree9, so its prime question starts at11. The starting-height3 box is safe through degree5. Generic odd-start pure unit centers have rational u,X and prime degree requires u zero or pole at infinity. No global minimum prime or arbitrary quintic/septic classification is proved.",
+        "scope": "Determine INDIVIDUAL remaining odd prime balanced degrees admitting radial-primitive nonproper-power two-pair Image counterexamples, including global5,7,11,17,19. The retained full all-odd-a hyperbolic family ALREADY covers a relative natural densityone set of primes: H(X)~pi(X)~X/log X. Its a1 subfamily alone covers exactly primes3mod10 except3, asymptotic X/(4log X). Densityone does not imply eventual coverage of every prime and does not settle these individual gaps. Every composite degree>=4 and the extended hyperbolic degrees are supplied. The full odd-cubic winding-one class has sharp odd unsafe threshold9; no global minimum-prime theorem is proved.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -97557,6 +97642,11 @@
             "path": "foundations/extended-geometry/ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
             "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
             "locator": "SharpOddCubicOddThreshold, exact coordinate scope"
+          },
+          {
+            "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+            "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+            "locator": "Densityone versus individual prime scope, Sections1 and5"
           }
         ]
       },
@@ -99634,6 +99724,187 @@
             "value": 9
           }
         ]
+      },
+      {
+        "id": "SRC-IMAGE2-PRIME-DEGREE-DENSITY",
+        "kind": "claim",
+        "title": "Current prime-degree density proof and exact arithmetic source packet",
+        "scope": "Pinned written classical corollary, exact finite arithmetic controls and all essential retained inputs. Finite tests do not establish an asymptotic.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "checked_mathematical_source",
+        "sources": [
+          {
+            "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+            "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+            "locator": "Sections1--6"
+          },
+          {
+            "path": "foundations/extended-geometry/verify_prime_image_degree_density.py",
+            "sha256": "f5522c4953e974d78620f57a7dfd72b2b55af5d16586ebc64396c48c54844f17",
+            "locator": "Exact parameter/divisor/CRT controls"
+          },
+          {
+            "path": "foundations/extended-geometry/prime_image_degree_density_source_ledger.json",
+            "sha256": "5ba3f0f95ae87e61d3369a6baefcd0949c73343866cb050a1689b97ef190650b",
+            "locator": "Input identities and source scopes"
+          },
+          {
+            "path": "foundations/extended-geometry/prime_image_degree_density_verification.json",
+            "sha256": "c6cfcbb2776941cd125649fd615513ee81c91b789eef2cd24ebd51c28db8722b",
+            "locator": "Passed finite controls"
+          },
+          {
+            "path": "foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf",
+            "sha256": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038",
+            "locator": "Classical Theorem2.1 and proof"
+          },
+          {
+            "path": "foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+            "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+            "locator": "Retained H18--H22 full all-odd-a theorem"
+          },
+          {
+            "path": "foundations/extended-geometry/verify_hyperbolic_odd_height_image.py",
+            "sha256": "d451ce11f359c288f359ebbfc5cb2dbaf7d0ea0af7be0c49a8f136829810dfaf",
+            "locator": "Retained construction checker"
+          },
+          {
+            "path": "foundations/extended-geometry/hyperbolic_odd_height_image_verification.json",
+            "sha256": "2f3bc4a96bda236a0b3985001a31af3768ee29d5e7434274b23edfe46dc36f58",
+            "locator": "Retained construction receipt"
+          }
+        ]
+      },
+      {
+        "id": "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+        "kind": "claim",
+        "title": "Classical prime number theorem in each fixed reduced arithmetic progression",
+        "scope": "For every fixed positive modulus m and residue b with gcd(b,m)=1, pi(X;m,b)~X/(phi(m)log X). The case m1 gives ordinary PNT. No growing-modulus estimate or repository-specific zero-free hypothesis.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf",
+            "sha256": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038",
+            "locator": "Soprounov Theorem2.1 printedp1; proof pp2--4"
+          }
+        ]
+      },
+      {
+        "id": "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+        "kind": "claim",
+        "title": "Cubic-height prime degrees are exactly three modulo ten except three",
+        "scope": "In the a1 hyperbolic subfamily d5n3,n>=1, a prime degree occurs exactly at p3mod10,p>3, with inverse n=(p-3)/5 a positive even integer. This is exact for this subfamily only.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+        "kind": "claim",
+        "title": "The cubic-height subfamily covers one quarter of primes",
+        "scope": "The a1 subfamily prime-degree count is pi(X;10,3)-1 for X>=3, asymptotic X/(4log X), and relative natural prime density1/4. This is not an upper bound on full prime coverage.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+        "kind": "claim",
+        "title": "Primitive two-pair Image counterexamples exist in infinitely many prime degrees",
+        "scope": "Over every characteristic-zero field, infinitely many prime balanced degrees admit radial-primitive non-proper-power Image counterexamples. Already the a1 d5n3 branch and classical Dirichlet suffice.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+        "kind": "claim",
+        "title": "Prime-q parameter subfamily",
+        "scope": "The prime-q subfamily consists of odd primes p representable as p=q*n+(q+1)/2 with q prime1mod4, a=(q-3)/2 odd>=1 and n even>=2. This is a specified subset of primes, not a universal assertion about each prime. At every such parameter the retained construction is radial-primitive, nonpower and all-pure with markerZ surviving every even power.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+        "kind": "claim",
+        "title": "Prime-q subfamily equals a proper prime-divisor test",
+        "scope": "An odd prime p belongs to the prime-q parameter subfamily iff2p-1 has a PRIME PROPER divisor q1mod4. The cofactor is1mod4 and>=5; n=((2p-1)/q-1)/2. The criterion is not necessary for the full hyperbolic family;41 is a counterexample.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+        "kind": "claim",
+        "title": "Finite prime-q unions have exact CRT densities",
+        "scope": "For every FIXED finite set S of primes q1mod4, primes satisfying p=(q+1)/2 modq for some q inS have relative density1-product((q-2)/(q-1)). Finite n0 and p-divides-product exceptions do not affect density.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+        "kind": "claim",
+        "title": "Reciprocals of primes one modulo four diverge",
+        "scope": "Fixed PNT AP mod4 and explicit partial summation prove sum_(q1mod4)1/q diverges. Hence product_(q<=Y,q1mod4)(1-1/(q-1)) tends0. Infinitude alone is not used as a substitute.",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+        "kind": "claim",
+        "title": "Prime-q explicit subfamily has prime density one",
+        "scope": "The prime-degree spectrum with prime2a+3 has relative natural densityone among primes, by fixed finite CRT unions then a sequential liminf squeeze. No uniform PNT, interchange of limits or simultaneous-prime conjecture.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+        "kind": "claim",
+        "title": "Full hyperbolic family covers asymptotically all prime degrees",
+        "scope": "Let H be the prime degrees of the retained full all-odd-a hyperbolic family. Then H(X)/pi(X)->1 and H(X)~X/log X. The witnesses and one fixed markerZ come from the old all-order theorem. Does not assert every sufficiently large prime covered.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+        "kind": "claim",
+        "title": "The old hyperbolic family omits o(X/log X) prime degrees",
+        "scope": "The number of primes p<=X outside the retained full hyperbolic degree spectrum is o(X/log X), equivalently o(pi(X)) by ordinary PNT. No explicit error rate or eventual coverage of all primes follows.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+        "kind": "claim",
+        "title": "All admissible primitive Image prime degrees have density one",
+        "scope": "For every characteristic-zero field, the set C of ALL prime balanced degrees admitting radial-primitive nonproper-power two-pair Image witnesses has C(X)/pi(X)->1 and C(X)~X/log X, by inclusion of the explicit family. Individual residual prime degrees remain open.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial"
       }
     ],
     "implications": [
@@ -150367,6 +150638,38 @@
         "dependency_coverage": "partial"
       },
       {
+        "id": "REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL-PROOF",
+        "premises": [
+          "EXT-HL-SIEGEL-WALFISZ",
+          "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
+          "ARITH-CONNORS-KEATING-LOCAL-MODEL"
+        ],
+        "conclusion": "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+          "sha256": "2a68d0aea1a62ab8b67bd6c439893aed3681c7a664a2ba76d13e753d99ade478",
+          "locator": "Section 1: local masses, prime arithmetic model and prime minor arcs with Parseval"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "REFLECTED-PRIME-GAUSSIAN-NORM-MAJOR-ARCS-PROOF",
+        "premises": [
+          "HYP-BINARY-DIRICHLET-FIXED-ZEROFREE",
+          "ARITH-MS-FLAGSHIP-LEM-GR-PRIMES",
+          "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL"
+        ],
+        "conclusion": "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-MAJOR-ARCS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+          "sha256": "2a68d0aea1a62ab8b67bd6c439893aed3681c7a664a2ba76d13e753d99ade478",
+          "locator": "Section 2: target-grid and character orthogonality, split prime estimate, auxiliary weight removal"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
         "id": "ZETA-SIXTH-AVERAGED-REMAINDER-IMPLIES-MOMENT",
         "premises": [
           "ARITH-ZETA-SIXTH-AVERAGED-REDUCTION",
@@ -154413,6 +154716,188 @@
           "locator": "Both named statements and separate two-root/pole-degree lemmas"
         },
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-CUBIC-PRIME-PROGRESSION",
+        "premises": [
+          "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section2, parity and explicit inverse n"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-CUBIC-QUARTER-PRIME-DENSITY",
+        "premises": [
+          "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section2, exact count and phi10"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-INFINITE-PRIME-DEGREES-DIRICHLET",
+        "premises": [
+          "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+          "EXT-SPLITTING-DIRICHLET-PROGRESSIONS",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section2, classical Dirichlet with gcd3,10=1"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-PRIME-Q-PARAMETER-SUBFAMILY",
+        "premises": [
+          "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section3, q-to-a substitution and n parity"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-PRIME-FINITE-CRT-DENSITIES",
+        "premises": [
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section4, independent reduced-residue CRT counting"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCALS",
+        "premises": [
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section5, P7 partial summation and P8 logarithmic inequality"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-PRIME-Q-DENSITY-ONE",
+        "premises": [
+          "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+          "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+          "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Sections4--5, X first at fixedS then enlargeS"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-HYPERBOLIC-PRIME-DENSITY-ONE",
+        "premises": [
+          "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+          "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section5, prime-q inclusion and squeeze"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-ALL-ADMISSIBLE-PRIME-DENSITY-ONE",
+        "premises": [
+          "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+          "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Section5, explicitH subset alladmissibleC subset allprimes"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-INFINITE-PRIME-DEGREES-DENSITY",
+        "premises": [
+          "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Densityone and unbounded pi imply infinitude"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES",
+        "premises": [
+          "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+          "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+          "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+          "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+          "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+          "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+          "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+          "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+          "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+          "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+          "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+        ],
+        "conclusion": "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "locator": "Corollaries PrimeDegreeDensityOne and CubicHeightQuarterDensity, complete Sections1--5"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -157399,6 +157884,91 @@
             "dependency_coverage": "partial"
           }
         ]
+      },
+      {
+        "id": "EQUIV-IMAGE2-PRIME-Q-PARAMETERS-DIVISOR",
+        "title": "Exact prime-q subfamily/divisor equivalence",
+        "members": [
+          "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+          "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION"
+        ],
+        "directions": [
+          {
+            "id": "IMAGE2-PRIME-Q-PARAMETERS-TO-DIVISOR",
+            "premises": [
+              "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+              "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+            ],
+            "conclusion": "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+            "status": "proved",
+            "proof": {
+              "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+              "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+              "locator": "Section3, P1 supplies prime proper divisor"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "IMAGE2-PRIME-Q-DIVISOR-TO-PARAMETERS",
+            "premises": [
+              "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+              "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+              "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+            ],
+            "conclusion": "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+            "status": "proved",
+            "proof": {
+              "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+              "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+              "locator": "Section3, explicit P5 and cofactor1mod4>=5"
+            },
+            "dependency_coverage": "partial"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "EQUIV-IMAGE2-PRIME-DENSITY-ONE-OMISSIONS",
+        "title": "Full-family densityone iff omitted primes are little-o",
+        "members": [
+          "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+          "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O"
+        ],
+        "directions": [
+          {
+            "id": "IMAGE2-PRIME-DENSITY-ONE-TO-OMISSIONS",
+            "premises": [
+              "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+              "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+              "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+            ],
+            "conclusion": "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+            "status": "proved",
+            "proof": {
+              "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+              "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+              "locator": "Section5, subtract from pi(X) and ordinary PNT"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "IMAGE2-PRIME-OMISSIONS-TO-DENSITY-ONE",
+            "premises": [
+              "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+              "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+              "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+            ],
+            "conclusion": "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+            "status": "proved",
+            "proof": {
+              "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+              "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+              "locator": "Section5, divide omitted count by pi(X)~X/log X"
+            },
+            "dependency_coverage": "partial"
+          }
+        ],
+        "dependency_coverage": "partial"
       }
     ],
     "external_references": {
@@ -182871,6 +183441,121 @@
           "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
         },
         {
+          "id": "EXT-REFLECTED-NORM-ASSING-BLOMER-LI",
+          "title": "Uniform Titchmarsh divisor problems",
+          "citation": "E. Assing, V. Blomer and J. Li, Uniform Titchmarsh divisor problems, arXiv:2005.13915.",
+          "identifiers": {},
+          "urls": [
+            "https://arxiv.org/abs/2005.13915"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Section 1 distinction between the classical r2-weighted problem and the value indicator",
+              "role": "context",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Primary source scope inspected."
+        },
+        {
+          "id": "EXT-REFLECTED-NORM-BOMBIERI-LARGE-SIEVE",
+          "title": "On the large sieve",
+          "citation": "E. Bombieri, On the large sieve, Mathematika 12 (1965), 201-225.",
+          "identifiers": {},
+          "urls": [
+            "https://doi.org/10.1112/S0025579300005313"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Section 1 uses the classical Bombieri-Vinogradov theorem at moduli much smaller than the square-root level",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Primary source scope inspected."
+        },
+        {
+          "id": "EXT-REFLECTED-NORM-VAUGHAN-PRIME-FOURIER",
+          "title": "On the distribution of alpha p modulo 1",
+          "citation": "R. C. Vaughan, On the distribution of alpha p modulo 1, Mathematika 24 (1977), 135-141.",
+          "identifiers": {},
+          "urls": [
+            "https://doi.org/10.1112/S0025579300009025"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Section 1 uses the rational approximation bound for the von Mangoldt exponential sum",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Primary source scope inspected."
+        },
+        {
+          "id": "EXT-LU-WANG-WU-HARDY-LITTLEWOOD-CHOWLA",
+          "title": "On the Hardy-Littlewood-Chowla conjecture",
+          "citation": "G. Lu, Z. Wang and J. Wu, On the Hardy-Littlewood-Chowla conjecture, arXiv:2610.20242.",
+          "identifiers": {},
+          "urls": [
+            "https://arxiv.org/abs/2610.20242"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Section 4 records Theorem 1 as a global shifted Mobius input for the twin benchmark",
+              "role": "context",
+              "nodes": [
+                "GAP-REFLECTED-PRIME-GAUSSIAN-NORM-POINTWISE"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Primary source scope inspected."
+        },
+        {
+          "id": "EXT-MURTY-VATWANI-TWIN-PARITY",
+          "title": "Twin primes and the parity problem",
+          "citation": "M. R. Murty and A. Vatwani, Twin primes and the parity problem, J. Number Theory 180 (2017), 643-659.",
+          "identifiers": {},
+          "urls": [
+            "https://mrammurty-ai.github.io/TwinPrimes-Parity.pdf"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Section 4 uses Theorem 1.1(a) and the fixed-residue remark for the twin benchmark",
+              "role": "context",
+              "nodes": [
+                "GAP-REFLECTED-PRIME-GAUSSIAN-NORM-POINTWISE"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Primary source scope inspected."
+        },
+        {
           "id": "EXT-PRIMITIVE-NORM-JIANG-LAU-LU-2026",
           "title": "An asymptotic formula for primes of the form u\u00b2+v\u00b2+1",
           "citation": "An asymptotic formula for primes of the form u\u00b2+v\u00b2+1",
@@ -182891,6 +183576,22 @@
               "locator": "Theorem1.1p2;Sections4-8fulltargettransferaudit;fixedshift1notouruniformbinarytarget",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Theorem 1.1 and Section 2 benchmark for predecessor counts and bank parameters",
+              "role": "context",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL"
+              ]
+            },
+            {
+              "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+              "locator": "Sections 4-7 and 8: Type II and weight-removal comparisons",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-MAJOR-ARCS"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -184930,6 +185631,40 @@
           "verification": "source_read",
           "citation_aliases": [],
           "verification_basis": "Actual primary article and stated passages inspected. Exact/log lemma is proved directly; no new classical theorem or full Liouville classification is claimed."
+        },
+        {
+          "id": "EXT-SOPROUNOV-FIXED-PNT-AP",
+          "title": "A short proof of the prime number theorem for arithmetic progressions",
+          "citation": "Ivan Soprounov, A short proof of the prime number theorem for arithmetic progressions, author-hosted four-page note, Theorem2.1. No date inferred from upload.",
+          "resource_type": "paper",
+          "identifiers": {},
+          "urls": [
+            "https://academic.csuohio.edu/soprunov-ivan/wp-content/uploads/sites/93/2023/02/primes.pdf"
+          ],
+          "local_sources": [
+            {
+              "path": "foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf",
+              "sha256": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038",
+              "locator": "Theorem2.1 printedp1 and proof pp2--4"
+            }
+          ],
+          "uses": [
+            {
+              "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+              "locator": "Sections2,4--6, fixed-modulus PNT and ordinary PNT q1",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+                "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+                "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+                "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+                "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "citation_aliases": [],
+          "verification_basis": "Actual theorem, hypotheses and proof inspected in author-hosted and retained identical PDF. Fixed modulus only; introduction explicitly imports classical L1 nonvanishing, not a repository-specific zero-free theorem."
         }
       ],
       "internal_citations": [
@@ -188089,6 +188824,41 @@
           "novelty_limit": "The field/pole mechanisms and degree9 witness are antecedents. No new F9 construction, arbitrary-phase septic theorem or global minimum odd degree is asserted.",
           "remaining_obligation": "Prime11 and general higher-degree multi-root odd-cubic centers, arbitrary quintic/septic phases and external review remain open.",
           "inspection_scope": "Root and independent arithmetic-agent passes checked every c/e/h case and field map identity; fresh exact replay passed56 patterns,26 illustrative partial fractions and four original F9 powers."
+        },
+        {
+          "id": "CLASSICAL-IMAGE2-PRIME-DEGREE-DENSITY",
+          "title": "Classical prime distribution promotes the retained all-order family to densityone",
+          "nodes": [
+            "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES",
+            "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+            "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+            "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE"
+          ],
+          "relation": "classical_corollary",
+          "references": [
+            {
+              "paper_id": "EXT-SOPROUNOV-FIXED-PNT-AP",
+              "locator": "Theorem2.1",
+              "statement": "Each fixed reduced residue class has prime count X/(phi(m)log X)."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+              "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+              "locator": "Sections2--5"
+            },
+            {
+              "path": "foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+              "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+              "locator": "Section6 H18--H22, exact all-odd-a construction"
+            }
+          ],
+          "application": "a1 gives the user-observed quarter-density corollary. Varying odda through prime2a3=1mod4 produces finite CRT coverage tendingone, with reciprocal divergence and sequential limits proved explicitly.",
+          "novelty_limit": "This is a classical number-theoretic consequence of an existing construction. No new analytic witness construction, exhaustive historical-priority claim or eventual coverage of all primes.",
+          "remaining_obligation": "Individual omitted primes and global minimum prime degree remain unresolved.",
+          "inspection_scope": "Root and independent arithmetic-agent audit checked parameter parity and cutoffs, CRT unit counts, reciprocal divergence and fixed-modulus limit order. Exact finite checker supplies controls only."
         }
       ]
     },
@@ -265656,6 +266426,48 @@
           "explanation": "Inspectedprimaryeditions,conductorhypotheses,sourcecautionandfinite/infiniteboundaries."
         },
         {
+          "path": "arithmetic/PRIME_PLUS_GAUSSIAN_NORM.md",
+          "sha256": "2a68d0aea1a62ab8b67bd6c439893aed3681c7a664a2ba76d13e753d99ade478",
+          "role": "proof",
+          "claims": [
+            "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL",
+            "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-MAJOR-ARCS"
+          ],
+          "dependencies": [
+            "EXT-HL-SIEGEL-WALFISZ",
+            "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
+            "ARITH-CONNORS-KEATING-LOCAL-MODEL",
+            "HYP-BINARY-DIRICHLET-FIXED-ZEROFREE",
+            "ARITH-MS-FLAGSHIP-LEM-GR-PRIMES"
+          ],
+          "gaps": [
+            "GAP-REFLECTED-PRIME-GAUSSIAN-NORM-POINTWISE"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem ReflectedPrimeNormAlmostAll.** Uniformly for \\(X<N\\le2X\\),",
+              "kind": "theorem",
+              "line": 37,
+              "title": "Theorem ReflectedPrimeNormAlmostAll",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-ALMOST-ALL"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition ReflectedPrimeNormMajorArcs.** Under the retained",
+              "kind": "proposition",
+              "line": 254,
+              "title": "Proposition ReflectedPrimeNormMajorArcs",
+              "nodes": [
+                "ARITH-REFLECTED-PRIME-GAUSSIAN-NORM-MAJOR-ARCS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Uniform prime-facing model, almost-all indicator asymptotic, and reflected major-arc and weight-removal proofs. The pointwise minor-arc and Type I requirements are recorded explicitly."
+        },
+        {
           "path": "arithmetic/PRIMITIVE_NORM_LEADING_CONSTANT.md",
           "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992",
           "claims": [
@@ -271838,6 +272650,177 @@
           ],
           "statements": [],
           "role": "reference",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+          "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4",
+          "claims": [
+            "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+            "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+            "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+            "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+            "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+            "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+            "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+            "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+            "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+            "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+          ],
+          "dependencies": [
+            "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+            "IMAGE2-HYPERBOLIC-ODD-DEGREE-FACTOR-CRITERION",
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+            "EXT-SPLITTING-DIRICHLET-PROGRESSIONS",
+            "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [
+            {
+              "locator": "Corollary PrimeDegreeDensityOne.** The explicitly constructed set H has relative natural density one among primes:",
+              "nodes": [
+                "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+                "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+                "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+                "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+                "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+                "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+                "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+                "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+                "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+                "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+                "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+                "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+              ]
+            },
+            {
+              "locator": "Corollary CubicHeightQuarterDensity.** The a=1 subfamily alone gives every prime p=3 mod10 other than3. For X>=3 its exact prime-degree count is",
+              "nodes": [
+                "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+                "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+                "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+                "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+                "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+                "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+                "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+                "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+                "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+                "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+                "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+                "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/verify_prime_image_degree_density.py",
+          "sha256": "f5522c4953e974d78620f57a7dfd72b2b55af5d16586ebc64396c48c54844f17",
+          "claims": [
+            "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+            "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+            "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+            "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+            "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+            "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+            "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+            "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+            "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+            "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+          ],
+          "dependencies": [
+            "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+            "IMAGE2-HYPERBOLIC-ODD-DEGREE-FACTOR-CRITERION",
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+            "EXT-SPLITTING-DIRICHLET-PROGRESSIONS",
+            "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/prime_image_degree_density_source_ledger.json",
+          "sha256": "5ba3f0f95ae87e61d3369a6baefcd0949c73343866cb050a1689b97ef190650b",
+          "claims": [
+            "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+            "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+            "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+            "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+            "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+            "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+            "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+            "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+            "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+            "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+          ],
+          "dependencies": [
+            "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+            "IMAGE2-HYPERBOLIC-ODD-DEGREE-FACTOR-CRITERION",
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+            "EXT-SPLITTING-DIRICHLET-PROGRESSIONS",
+            "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/prime_image_degree_density_verification.json",
+          "sha256": "c6cfcbb2776941cd125649fd615513ee81c91b789eef2cd24ebd51c28db8722b",
+          "claims": [
+            "IMAGE2-CUBIC-HEIGHT-PRIME-PROGRESSION",
+            "IMAGE2-CUBIC-HEIGHT-QUARTER-PRIME-DENSITY",
+            "IMAGE2-INFINITELY-MANY-PRIME-DEGREES",
+            "IMAGE2-PRIME-Q-HYPERBOLIC-PARAMETERS",
+            "IMAGE2-PRIME-Q-PROPER-DIVISOR-CRITERION",
+            "IMAGE2-PRIME-DEGREE-FINITE-CRT-DENSITIES",
+            "CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE",
+            "IMAGE2-PRIME-Q-SUBFAMILY-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-PRIME-DEGREE-DENSITY-ONE",
+            "IMAGE2-HYPERBOLIC-OMITTED-PRIMES-LITTLE-O",
+            "IMAGE2-PRIMITIVE-PRIME-DEGREES-DENSITY-ONE",
+            "IMAGE2-ASYMPTOTICALLY-ALL-PRIME-DEGREES"
+          ],
+          "dependencies": [
+            "IMAGE2-HYPERBOLIC-ODD-HEIGHT-PRIMITIVE",
+            "IMAGE2-HYPERBOLIC-ODD-DEGREE-FACTOR-CRITERION",
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+            "EXT-SPLITTING-DIRICHLET-PROGRESSIONS",
+            "SRC-IMAGE2-PRIME-DEGREE-DENSITY"
+          ],
+          "gaps": [
+            "GAP-IMAGE2-ODD-PRIME-PRIMITIVE"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
+        },
+        {
+          "path": "foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf",
+          "sha256": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038",
+          "claims": [
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "imported-source",
           "explanation": "Exact current proof and replay support; unrestricted claims use the written argument, with finite computations scoped separately."
         }
       ]

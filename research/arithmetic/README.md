@@ -135,6 +135,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform sums-of-two-squares pair asymptotics for logarithmic shifts | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
 | Poisson variance of sums of two squares at the mean-spacing scale | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
 | Fixed consecutive gaps and binary patterns with two prescribed ones for sums of two squares | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
+| A prime plus a sum of two squares for almost all targets | Internal result | proved | [Source](PRIME_PLUS_GAUSSIAN_NORM.md) |
+| Major arcs and auxiliary weights for the reflected prime-plus-norm problem | Internal result | proved | [Source](PRIME_PLUS_GAUSSIAN_NORM.md) |
 | Sixth zeta moment reduction to an unshifted signed averaged divisor remainder | Internal result | proved | [Source](SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md) |
 | Pointwise binary sums with prime factors three modulo four | Internal result | proved | [Source](PRIME_THREE_MOD_FOUR_SUMS.md) |
 | Pointwise binary sums supported on primes three modulo ten | Internal result | proved | [Source](PRIME_THREE_MOD_TEN_SUMS.md) |
