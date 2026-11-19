@@ -15,7 +15,8 @@ by Walsh, Section 1.2.4; see the exact
 [source comparison](CONNORS_KEATING_INDICATOR_CORRELATIONS.md#1-statement-and-imported-inputs).
 This note completes the arithmetic model checks and local constants
 for the stated quadratic-indicator family within that framework.
-The existing ZF/G inputs remain part of its proof.
+The existing ZF/G inputs remain part of its proof. Section 9 gives
+the mixed fixed-shift correlation between the square and hexagonal forms.
 
 ## 1. The indicator and its coupled bad-prime factor
 
@@ -659,3 +660,225 @@ written internal application review. No independent validation
 of the imported preprints, external human review, formal
 verification, growing-shift uniformity or numerical onset is
 inferred from these checks.
+
+## 9. Mixed square and hexagonal indicator correlations
+
+Let \(u_p(t)=t/p^{v_p(t)}\) on \(\mathbb Z_p\setminus\{0\}\)
+and let \(\nu_2(t)\), \(\nu_3(t)\) be the indicators of
+\(u_2(t)\equiv1\pmod4\), \(u_3(t)\equiv1\pmod3\), respectively.
+The two mixed local masses, with normalized Haar measure, are
+\[
+ \begin{split}
+ W_2(h)&=\int_{\mathbb Z_2}\nu_2(t)
+                    \mathbf1_{2\mid v_2(t+h)}\,dt,\\
+ W_3(h)&=\int_{\mathbb Z_3}\mathbf1_{2\mid v_3(t)}
+                    \nu_3(t+h)\,dt .
+ \end{split}                                                   \tag{QP.25}
+\]
+Null sets of infinite valuations can be discarded. These definitions
+keep the square form at the unshifted endpoint.
+
+**Theorem MixedSquareHexagonalPairs.** Assume the same scoped ZF and G
+inputs. For each fixed nonzero integer \(h\), with \(\delta=1/32768\),
+\[
+ \sum_{1\le n\le X} b_1(n)b_3(n+h)
+      = C_{1,3}(h)\frac X{\log X}
+                  +O_h\!\left(\frac{X}{(\log X)^{1+\delta}}\right),
+                                                               \tag{QP.26}
+\]
+where
+\[
+ C_{1,3}(h)=
+ \frac{4\,3^{1/4}}{\sqrt2}\,W_2(h)W_3(h)
+ \prod_{p\equiv5,7\ (12)}(1-p^{-2})^{-1/2}
+ \prod_{\substack{p\mid h\\p\equiv11\ (12)}}
+            \frac{1-p^{-v_p(h)-1}}{1-p^{-1}}.
+                                                               \tag{QP.27}
+\]
+The finite-place masses are positive and satisfy
+\[
+ \begin{aligned}
+ W_2(h)&=
+ \begin{cases}
+  1/4,& h\equiv1\pmod4,\\
+  5/12,& h\equiv3\pmod4,\\
+  1/2-W_2(h/2)/2,&2\mid h,
+ \end{cases}
+ &
+ W_3(h)&=
+ \begin{cases}
+  1/4,& h\equiv1\pmod3,\\
+  1/2,& h\equiv2\pmod3,\\
+  1/2-W_3(h/3)/3,&3\mid h.
+ \end{cases}
+ \end{aligned}                                                 \tag{QP.28}
+\]
+In particular
+\[
+ C_{1,3}(1)
+     =\frac{3^{1/4}}{4\sqrt2}
+                    \prod_{p\equiv5,7\ (12)}(1-p^{-2})^{-1/2}.
+                                                               \tag{QP.29}
+\]
+
+### Joint sieve envelope
+
+Use (QP.23) for each indicator, enlarging both finite sets to
+\(B=\{2,3\}\) with the original valuation rules. On the square
+side, two has all exponents and three has even exponents.
+On the hexagonal side, two has even exponents and three has
+all exponents. Put \(\chi_1=\chi_{-4}\), \(\chi_3=\chi_{-3}\)
+and \(I_d=\{p\notin B:\chi_d(p)=-1\}\) for \(d=1,3\).
+Both sets of inert primes have density \(1/2\).
+The two models \(D_d\) from (QP.14) satisfy (C1) and (C3)
+separately with the same outer parameters. Choose a fixed depth
+sufficient for both. For (C2), the identity class modulo 12
+consists of split primes for both characters. A bank prime
+changes only the small-prime factor and preserves both the
+indicator and its model exactly.
+
+For (C4), use the bank law (QP.16) after deleting primes
+dividing \(h\), and the same exact-record progressions and
+large-record bound as in Section 4. For an endpoint \(d\), use
+a cutoff \(w\) when its weight is \(b_d\) and \(y\) when its
+weight is \(D_d\). At a prime \(p\in I_d\) below that cutoff,
+the endpoint's valuation cannot be one. Bank-record slopes
+are units at these inert primes since the bank class is
+\(1\bmod12\). Omit the finitely many good primes dividing \(h\)
+for the upper bound. If \(k_p\in\{0,1,2\}\) endpoint tests
+are active at \(p\), their forbidden classes are disjoint and
+occupy a fraction \(\rho_p=k_p(p-1)/p^2\) modulo \(p^2\).
+Since \(1-\rho_p=(1-1/p)^{k_p}(1+O(p^{-2}))\),
+Mertens' theorem applied to the two inert sets gives the
+nonbank sieve product
+\[
+ \prod_p(1-\rho_p)\asymp_h
+                 \frac{1}{\sqrt{\log Y_1\log Y_3}},
+ \qquad Y_d=\begin{cases}w,& w_d=b_d,\\ y,&w_d=D_d.\end{cases}
+\]
+Here \(w_d\) denotes the chosen endpoint weight. A model
+weight supplies a factor \(O(L^{-3/10})\). With
+\(z=X^{1/100}\) and \(w=z^{1/16}\), every choice of endpoint
+weights therefore has sieve scale \(X/L\).
+The Selberg denominator argument of Section 4 applies since the
+forbidden fractions, including the bank atoms, are at most
+\(2/p\). At a squarefree least common multiple \(m\) of the
+sieve labels the CRT root count is at most \(2^{\omega(m)}m\).
+Thus the endpoint error is still \(O(z^{4+o(1)})\) per retained
+record, and summing over the \(E^2\) records costs less than
+\(X^{1/2}\). The retained bank factors give exactly
+\(\mu_{\mathcal P}(r,s)\), including the reciprocal record modulus.
+Together with the large-record bound this yields (C4) for each
+\(w_d\in\{b_d,D_d\}\), with absolute interval dependence through
+the length. The shared comparison theorem gives a mixed
+indicator-to-model replacement error \(O_h(XL^{-1-\delta})\)
+on the dyadic interval, using the fixed-shift branch and modulus 12.
+
+### Mixed model product and normalization
+
+The cross-prime unit phases in (QP.3) equal one on the allowed
+bad-prime masks. In fact \(\chi_1(3)=-1\) and \(\chi_3(2)=-1\)
+are raised to even valuations. Thus the product of the two
+bad profiles has Haar mass \(W_2(h)W_3(h)\).
+Write \(K_d=K_{b_d}\) from (QP.6) and let \(A_d\) be the
+product \(A_B\) from (QP.2) for \(b_d\) with enlarged \(B\).
+By (QP.19), outside large smooth records the prefactor
+on side \(d\) is
+\[
+ \lambda_{d,y}=\frac{2K_d}{A_d\sqrt L}
+                           \prod_{\substack{p\le y\\p\in I_d}}(1+1/p)
+\]
+with relative error \(O(L^{-1/2})\).
+
+To count the joint model support, use the square-prefix argument
+of Section 5 with the prefix on side \(d\) supported on
+\(I_d\cap[1,y]\). Retain both prefixes up to \(E\) and the
+four bad-prime powers up to \(E\). The omitted integer count
+is \(O_h(X/E+\sqrt X)\) by summing divisibility by squares and
+bad-prime powers, and the omitted Haar mass is \(O(E^{-1})\).
+In each retained progression the bad unit conditions are fixed.
+The two quotient forms at good primes exclude at most one
+root per inert endpoint, with an empty cell discarded if a
+required quotient is identically zero there. The upper
+dimension bound is one since the root fraction is at most
+\((\mathbf1_{p\in I_1}+\mathbf1_{p\in I_3})/p\).
+The fundamental lemma with level \(X^{1/100}\) has
+\(\log(X^{1/100})/\log y\asymp L^{3/5}\).
+The relative sieve error is smaller than every fixed log power.
+The \(O(E^2(1+\log E)^4)\) retained cells, with at most
+\(2^{\omega(m)}\) CRT roots at a squarefree sieve divisor \(m\),
+have total endpoint error \(X^{1/50+o(1)}\).
+Their main coefficients are the exact Haar masses of disjoint
+cells and have sum at most one. Completing the omitted Haar
+tails gives the joint mass
+\[
+ W_2(h)W_3(h)\prod_{5\le p\le y}\delta_{1,3;p}(h),
+\]
+where a prime inert on neither side has density one, a prime
+inert on exactly one side has density \(p/(p+1)\), and a
+prime inert on both sides has the pair density (QP.21).
+The full smooth-record tails removed in using (QP.19) cost
+\(XL^{O(1)}\exp(-cL^{1/10})\) on the two endpoints.
+
+Multiply the densities by the two prefactors. At a singly
+inert prime, \((1+1/p)\delta_{1,3;p}=1\). At a doubly inert
+prime the two factors give \((1-p^{-2})\) times the
+shift factor in (QP.27), which equals one for \(p\nmid h\).
+Equation (QP.22) supplies the remaining constants
+\[
+ \begin{split}
+ \frac{K_1^2}{A_1^2}\prod_{p\in I_1}(1-p^{-2})
+ &=\frac{L(1,\chi_1)}{\pi}\,
+   \frac1{1-1/2}\frac{1+1/3}{1-1/3}=1,\\
+ \frac{K_3^2}{A_3^2}\prod_{p\in I_3}(1-p^{-2})
+ &=\frac{L(1,\chi_3)}{\pi}\,
+   \frac{1+1/2}{1-1/2}\frac1{1-1/3}=\frac{\sqrt3}{2}.
+ \end{split}
+\]
+The Euler normalizations cancel the doubly inert factors
+\(1-p^{-2}\). The primes inert at just one endpoint are
+\(5,7\bmod12\), and those inert at both are \(11\bmod12\).
+Thus the remaining absolutely convergent product and the
+bad-place factors give (QP.27). Their omitted good-prime tail
+as \(y\) grows has relative size \(O(y^{-1})\) once every prime
+dividing \(h\) is included. The model sum on \(X<n\le2X\)
+therefore has main term \(C_{1,3}(h)X/L\) and error
+\(O_h(XL^{-3/2})\). Combining with the replacement and summing
+over dyads down to \(\sqrt X\) proves (QP.26). The omitted
+\(O(\sqrt X)\) terms and the \(O(X/L^2)\) error from summing
+the dyadic main terms fit the asserted error.
+
+### The two finite-place factors
+
+For odd \(h\), the even \(t\) contribution at two has mass
+\(1/4\), since \(t+h\) is odd. An odd \(t\) must be \(1\bmod4\);
+this contributes nothing when \(h\equiv1\bmod4\), and contributes
+the mass \(1/6\) of positive even valuations of \(t+h\) when
+\(h\equiv3\bmod4\). For even \(h\), the odd \(t\) contribution
+is \(1/4\). On the even part, division by two preserves
+\(\nu_2\) and reverses the valuation parity test at \(t+h\).
+This gives \(W_2(h)=1/4+(1/2)(1/2-W_2(h/2))\).
+
+At three, for \(h\equiv1\bmod3\), the classes \(t\equiv0,2\)
+contribute \(1/12\) and \(1/6\) respectively. The first
+is the mass of positive even valuations of \(t\). The second
+is the mass of positive valuations of \(t+h\) with unit
+part \(1\bmod3\). For \(h\equiv2\bmod3\), the classes
+\(t\equiv1,2\) contribute \(1/6\) and \(1/3\) respectively.
+If \(3\mid h\), the \(t\equiv1\) class contributes \(1/3\).
+Division by three on \(t\equiv0\) reverses the valuation parity
+test and preserves \(\nu_3\) at the translated endpoint, giving
+\(W_3(h)=1/3+(1/3)(1/2-W_3(h/3))\).
+These computations prove (QP.28). Both integrals are at most
+\(1/2\) and both recurrences and their initial values give a
+lower bound \(1/4\). At \(h=1\) both masses equal \(1/4\).
+
+In Iyer's notation the mixed count corresponds to
+\(S(\triangle,\square_2,-h)\), by translating the starting
+variable to \(n+h\). At \(h=1\), the hypothesis
+\(\chi_{-3}(-1)=-1\) in Lemma 1.3 gives an unconditional
+global lower bound of order \(X/(\log X)^{3/2}\).
+Equation (QP.26) gives the global leading term under ZF and G.
+Iyer's Corollary 1.4 gives a short-interval lower bound on
+intervals of length \(H_a x^{5/6}(\log x)^{19}\).
+[Iyer, Gaps between hexagonal and square lattices](https://doi.org/10.1017/S0004972726101191).

@@ -9668,6 +9668,28 @@
           ]
         },
         {
+          "id": "ARITH-MIXED-SQUARE-HEXAGONAL-PAIRS",
+          "title": "Mixed fixed-shift correlations of square and hexagonal quadratic form values",
+          "state": "proved",
+          "scope": "For each fixed nonzero integer h, under the existing ZF/G inputs, the ordinary mixed indicator count sum_{1<=n<=X} b_1(n)b_3(n+h) is C_(1,3)(h) X/log X + O_h(X/(log X)^(1+1/32768)), where b_d indicates values of x^2+d*y^2. The coefficient is positive with explicit signed local recurrences at 2 and 3 and shift-divisor factors only at primes 11 mod 12. At h=1 it is (3^(1/4)/(4 sqrt(2))) product_{p=5,7 mod 12}(1-p^(-2))^(-1/2).",
+          "canonical_source": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
+            "arithmetic/SPARSE_ARITHMETIC_MODEL_COMPARISON.md",
+            "arithmetic/sources/smilansky-1208.2419v2.pdf"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal application proof under the existing ZF and G inputs. The two model branches, mixed sieve envelope and normalization were checked. Finite local residue checks are arithmetic controls and do not establish the analytic comparison.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each fixed nonzero integer h, under the existing ZF/G inputs, the ordinary mixed indicator count sum_{1<=n<=X} b_1(n)b_3(n+h) is C_(1,3)(h) X/log X + O_h(X/(log X)^(1+1/32768)), where b_d indicates values of x^2+d*y^2. The coefficient is positive with explicit signed local recurrences at 2 and 3 and shift-divisor factors only at primes 11 mod 12. At h=1 it is (3^(1/4)/(4 sqrt(2))) product_{p=5,7 mod 12}(1-p^(-2))^(-1/2)."
+        },
+        {
           "id": "ARITH-SHARED-SUMMAND-C12-POSITIVE-PROPORTION",
           "title": "Shared C12 summand: unconditional positive-proportion natural-scale counts",
           "state": "proved",
@@ -95359,7 +95381,7 @@
           },
           {
             "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
-            "sha256": "41b5655416a34f821886b7e6bde9ce53d88b7488b22d1ccae805d9c4e83ffc81",
+            "sha256": "2c0834cdc66eff00537d5b7f9ef3872f97e9a34c4e26df7fff9b8e09365a88f6",
             "locator": "Sections3-4; two-branch rough means and positive prime-square record envelope"
           }
         ],
@@ -95382,7 +95404,7 @@
           },
           {
             "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
-            "sha256": "41b5655416a34f821886b7e6bde9ce53d88b7488b22d1ccae805d9c4e83ffc81",
+            "sha256": "2c0834cdc66eff00537d5b7f9ef3872f97e9a34c4e26df7fff9b8e09365a88f6",
             "locator": "Sections1-2 and5; coupled bad-prime factor and leading normalization"
           }
         ],
@@ -95457,7 +95479,7 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
-            "sha256": "41b5655416a34f821886b7e6bde9ce53d88b7488b22d1ccae805d9c4e83ffc81",
+            "sha256": "2c0834cdc66eff00537d5b7f9ef3872f97e9a34c4e26df7fff9b8e09365a88f6",
             "locator": "Corollary SmilanskyFiveForms; Sections7-8"
           },
           {
@@ -95499,7 +95521,7 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
-            "sha256": "41b5655416a34f821886b7e6bde9ce53d88b7488b22d1ccae805d9c4e83ffc81",
+            "sha256": "2c0834cdc66eff00537d5b7f9ef3872f97e9a34c4e26df7fff9b8e09365a88f6",
             "locator": "Section7: exact criteria, dyadic and odd-prime density recurrences, primitive L-values and five-form table"
           },
           {
@@ -151323,6 +151345,23 @@
         }
       },
       {
+        "id": "MIXED-SQUARE-HEXAGONAL-PAIR-COMPARISON",
+        "premises": [
+          "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
+          "EXT-SMILANSKY-FIVE-REPRESENTATION-CRITERIA",
+          "ARITH-QUADRATIC-CHARACTER-INDICATOR-CONDITIONS",
+          "ARITH-QUADRATIC-CHARACTER-INDICATOR-MODEL-PRODUCT"
+        ],
+        "conclusion": "ARITH-MIXED-SQUARE-HEXAGONAL-PAIRS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
+          "sha256": "2c0834cdc66eff00537d5b7f9ef3872f97e9a34c4e26df7fff9b8e09365a88f6",
+          "locator": "Section 9, mixed exact-record upper sieve, square-prefix model, and signed finite-place recurrences"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
         "id": "SMILANSKY-FIVE-FORM-PAIRS",
         "premises": [
           "ARITH-QUADRATIC-CHARACTER-INDICATOR-PAIRS",
@@ -182672,6 +182711,31 @@
           "resource_type": "paper",
           "verification": "source_read",
           "verification_basis": "Actualprimaryspecifiedstatementsandhypothesesread;scopedinternalapplicationreviewonly."
+        },
+        {
+          "id": "EXT-IYER-GAPS-HEXAGONAL-SQUARE-LATTICES",
+          "title": "Gaps between hexagonal and square lattices",
+          "citation": "S. Iyer, Gaps between hexagonal and square lattices, Bull. Aust. Math. Soc. 114(3), 421-435 (2026).",
+          "identifiers": {
+            "doi": "10.1017/S0004972726101191"
+          },
+          "urls": [
+            "https://doi.org/10.1017/S0004972726101191"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
+              "locator": "Section 9 compares the global count with Lemma 1.3 at a=-1, and records the short-interval scope in Corollary 1.4",
+              "role": "context",
+              "nodes": [
+                "ARITH-MIXED-SQUARE-HEXAGONAL-PAIRS"
+              ]
+            }
+          ],
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Primary publication, mixed-shift sign convention, Lemma 1.3 hypotheses and Corollary 1.4 scale inspected."
         },
         {
           "id": "EXT-CONNORS-KEATING-FRIEDLANDER-IWANIEC-OPERA",
@@ -268043,13 +268107,14 @@
         },
         {
           "path": "arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md",
-          "sha256": "41b5655416a34f821886b7e6bde9ce53d88b7488b22d1ccae805d9c4e83ffc81",
+          "sha256": "2c0834cdc66eff00537d5b7f9ef3872f97e9a34c4e26df7fff9b8e09365a88f6",
           "claims": [
             "ARITH-QUADRATIC-CHARACTER-INDICATOR-CONDITIONS",
             "ARITH-QUADRATIC-CHARACTER-INDICATOR-PAIRS",
             "ARITH-SMILANSKY-FIVE-FORM-LOCAL-FACTORS",
             "ARITH-SMILANSKY-FIVE-FORM-PAIRS",
-            "ARITH-QUADRATIC-CHARACTER-INDICATOR-MODEL-PRODUCT"
+            "ARITH-QUADRATIC-CHARACTER-INDICATOR-MODEL-PRODUCT",
+            "ARITH-MIXED-SQUARE-HEXAGONAL-PAIRS"
           ],
           "dependencies": [
             "ARITH-SPARSE-ARITHMETIC-MODEL-COMPARISON",
@@ -268074,10 +268139,20 @@
                 "ARITH-SMILANSKY-FIVE-FORM-PAIRS"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem MixedSquareHexagonalPairs.** Assume the same scoped ZF and G",
+              "kind": "theorem",
+              "line": 681,
+              "title": "Theorem MixedSquareHexagonalPairs",
+              "nodes": [
+                "ARITH-MIXED-SQUARE-HEXAGONAL-PAIRS"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
           "role": "proof",
-          "explanation": "Internal written application review, exact local checks and scoped primary-source inspection. ZF and G remain explicit imported analytic inputs; this extension does not independently revalidate their complete preprints. Finite checks certify only their stated domains. No independent whole-proof replay, formal verification, external human review, numerical onset, growing-shift uniformity or priority claim is asserted."
+          "explanation": "Fixed-shift quadratic-character comparison and local models, with same-form applications and the mixed square-hexagonal pair asymptotic."
         },
         {
           "path": "arithmetic/SPARSE_ARITHMETIC_MODEL_COMPARISON.md",

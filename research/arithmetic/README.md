@@ -132,12 +132,16 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Hardy-Littlewood laws for multiplicative sets: finite characters, dense correlations and density obstructions | Internal result | proved | [Source](MULTIPLICATIVE_HARDY_LITTLEWOOD.md) |
 | Actual prime decompositions: short-window stars and class-number-three principal prime values | Internal result | proved | [Source](PRIME_SPLITTING_DECOMPOSITIONS.md) |
 | Connors-Keating fixed-shift sums-of-two-squares indicator asymptotic | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
+| Uniform sums-of-two-squares pair asymptotics for logarithmic shifts | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
+| Poisson variance of sums of two squares at the mean-spacing scale | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
+| Fixed consecutive gaps and binary patterns with two prescribed ones for sums of two squares | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
 | Sixth zeta moment reduction to an unshifted signed averaged divisor remainder | Internal result | proved | [Source](SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md) |
 | Pointwise binary sums with prime factors three modulo four | Internal result | proved | [Source](PRIME_THREE_MOD_FOUR_SUMS.md) |
 | Pointwise binary sums supported on primes three modulo ten | Internal result | proved | [Source](PRIME_THREE_MOD_TEN_SUMS.md) |
 | A shared sparse arithmetic indicator-to-model comparison | Internal result | proved | [Source](SPARSE_ARITHMETIC_MODEL_COMPARISON.md) |
 | Pointwise binary self-sums for every fixed prime coset | Internal result | proved | [Source](PRIME_COSET_SELF_SUMS.md) |
 | One fixed-shift pair theorem for quadratic-character Euler indicators | Internal result | proved | [Source](QUADRATIC_CHARACTER_INDICATOR_PAIRS.md) |
+| Mixed fixed-shift correlations of square and hexagonal quadratic form values | Internal result | proved | [Source](QUADRATIC_CHARACTER_INDICATOR_PAIRS.md) |
 | Shared C12 summand: unconditional positive-proportion natural-scale counts | Internal result | proved | [Source](SHARED_SUMMAND_C12_CORRELATION.md) |
 | Erdos675: reviewed prime partitions and the open fixed norm-pattern target | Partial result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | Classical binary invariance under componentwise genus replacement | Internal result | proved | [Source](PRIMITIVE_NORM_LEADING_CONSTANT.md) |

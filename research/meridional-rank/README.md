@@ -63,6 +63,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | Exact free-meridian stabilizers are precisely mobile braid groups | Internal result | proved | [Source](representations/FREE_MERIDIAN_STABILIZERS.md) |
 | All protected U DT colorings obey the closing support bound | Internal result | proved | [Source](representations/PROTECTED_U_DOUBLE_TRANSPOSITION_CLASSIFICATION.md) |
 | Every two-cable of the explicit gap families has actual augmentation gap at most one | Internal result | proved | [Source](representations/TWO_CABLE_AUGMENTATION_RANK_BARRIER.md) |
+| Universal covector/root-cohomology equivalence and protected rank-one ceiling | Internal result | proved | [Source](representations/RANK_ONE_COHOMOLOGY_COVECTOR_BARRIER.md) |
 
 **Computed obligations:** 7 unresolved; 3 resolved within their exact scope.
 
@@ -105,6 +106,7 @@ Scope limits:
 - The signed seven-relation core now bounds each span separately, giving r,q<=b-k and ar_C<=b-k for the explicit protected knot family without a preserved form. The former12-strand/22-symbol target is now excluded by the complete DT support theorem. The universal coloring budget remains valid; no compatible global coloring or prime gap-two example is asserted.
 - The complete local DT classification and the full exact free-meridian stabilizer give v<=2b-2k+2 for every disjoint protected-U knot coloring. Thus the standard DT support lower bound plus ar<=b-k cannot certify gap2, for any number of blocks or extra strands. The augmentation theorem remains valid; a genuinely different lower invariant, meridian class, overlap pattern or local braid is needed.
 - Every odd-slope two-cable of K_n or K_(b,k) has augmentation rank>=2b-1 and mr<=2b, so its actual augmentation gap is at most one. The same natural companion representation cannot extend to odd-p rank-one cable representations. Other representations and a hyperbolic prime gap-two realization remain open; strict augmentation products alone were already known.
+- Universal rank-one covector bounds are now equivalent to universal root-valued cohomology bounds, with the reverse supplied by coboundaries. Protected k-block groups satisfy dimZroot<=b-k and dimZ1<=dimV+b-k-1 in every field. Their rank-one cohomology certificate cannot amplify the known augmentation deficit; higher-displacement modules remain outside this theorem.
 
 **Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 
