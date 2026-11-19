@@ -231,8 +231,8 @@
   "odd_prime_degree_result": false,
   "source_sha256": {
     "research/foundations/extended-geometry/verify_odd_primitive_two_pair_image.py": "506203187ec8e26e77bce8cfe5284f1e8f55c00f1af6dacfca80025a11924b09",
-    "research/foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md": "4edcb9febbf1d67f338eb3b747df2a57fac799c9209e75e0a046faede4d21cd5",
-    "research/foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json": "d9832f95cd88a037cae6b18d5a16d9108018029ad9b4d981ae7506caf171851b",
+    "research/foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203",
+    "research/foundations/extended-geometry/odd_primitive_two_pair_image_source_ledger.json": "dd543081a03c3ce455f37c54711d4b24f68b441a139a4f69b48b4cfd761006f5",
     "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
   }
 }

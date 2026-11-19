@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md",
+  "proof_labels": [
+    "HyperbolicCoordinateFiberImage",
+    "FixedHyperbolicCoordinatePolynomialFiber"
+  ],
+  "domain": "Every characteristic-zero field; N>=1, odd a>=1, odd ell>=1, lambda nonzero. The exact converse fixes the stated rational coordinate u_N.",
+  "retained_resources": [
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "exact_use": "Explicit inverse coordinate, formal Phi0, self-contained ODE recurrence for every-even marked coefficients mu, and old ell1 subfamily."
+    },
+    {
+      "retained_path": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "exact_use": "Original two-pair bilinears, factorial/angular normalization, Image-kernel equivalence and original marker convention."
+    }
+  ],
+  "self_contained_arguments": [
+    "Odd-start endpoint contact/residue identity and Phi deformation.",
+    "Laurent-unit reverse classification and exclusion of every negative exponent branch.",
+    "Explicit literal homogeneous lift, exact factorial/scaling and marker degree, radial primitivity and T multiplicity.",
+    "Simple negative algebraic specialization root proves nonpower for all parameters, not only coprime a,N."
+  ],
+  "inspected_primary_antecedents": [
+    {
+      "source": "NIST DLMF",
+      "url": "https://dlmf.nist.gov/15.4.E13",
+      "locator": "Equation15.4.13",
+      "exact_use": "Classical antecedent for the retained hyperbolic coefficient identity, not an imported new theorem."
+    },
+    {
+      "source": "NIST DLMF",
+      "url": "https://dlmf.nist.gov/4.37.E16",
+      "locator": "Equation4.37.16",
+      "exact_use": "Classical inverse-hyperbolic logarithmic parametrization, already audited in the retained antecedent."
+    }
+  ],
+  "verification": {
+    "checker": "verify_hyperbolic_coordinate_fiber_image.py",
+    "receipt": "hyperbolic_coordinate_fiber_image_verification.json",
+    "method": "Standalone standard-library exact polynomial and original contractions:108rawcases/1296moments through12,9original lifts/22powers, exact Laurent divisibility/unit controls, altered-Q and omitted-marker-Q negative controls.",
+    "internal_review": "Root and arithmetic agent independently reconstructed the full all-odd-a Laurent necessity/converse, original scaling/marker normalization, radial primitivity and all-field simple-root nonpower proof; arithmetic independently replayed the checker. Internal mathematical review, not external human review."
+  },
+  "not_claimed": [
+    "No classification of arbitrary Image phases or arbitrary odd-height centers; the reverse theorem fixes u_N.",
+    "No minimum-prime claim and no assertion all prime degrees are covered.",
+    "No all-order conclusion inferred from a finite vanishing prefix; no global priority, proof-assistant or external human review claim."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "arithmetic": "exact finite permutations and freely reduced words",
+  "source_sha256": {
+    "verify_two_cable_augmentation_rank_barrier.py": "92cbd805bccbb4a4e270bfdf128bdfcd924f75c64f0d811482fc7ef69f4d3c21",
+    "TWO_CABLE_AUGMENTATION_RANK_BARRIER.md": "09179102a7b60834ee7fb642e996212d5142a6c484f931b6ff79d9b579c25b43",
+    "two_cable_augmentation_rank_barrier_source_ledger.json": "4979bdc125759098638a86cf5df638fa6a1324a03d50219b9f23ba0000da3994",
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+    "sources/cornwell-hemminger-1408.4110v1.pdf": "ed8f7c18ebf0727e8b3734311b9086882adfdf8042c1fdda12ac1e76888b1b9d",
+    "sources/gao-gu-li-wang-2611.15673v1.pdf": "50831e7525fa71bed1c3eba7d5cf27b79af86f52f54002e29b90b28e64464dbd",
+    "sources/boileau-dutra-jang-weidmann-1608.01570v1.pdf": "b43863ae9d0be524f00543705e55f719d9cf5d69e350c1286abb8109aeaebe13",
+    "UNIFORM_PROTECTED_AUGMENTATION_GAPS.md": "a19c720f0c4c6f2a7438f5d4b5434a6ce6faf38d2f5af75008b1951019fcdbb0",
+    "PRIME_AUGMENTATION_GAP_FAMILY.tex": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed"
+  },
+  "four_bridge_period_identity": true,
+  "uniform_all_parameter_scope": "written ordered-packet and explicit cycle proof; finite b4..12/n or k controls supplement it",
+  "parameter_controls": 64,
+  "independent_cabling_methods": [
+    "literal4crossing replacement",
+    "ordered packet Hurwitz action",
+    "original companion peripheral transport + mappingtorus amalgam"
+  ],
+  "independent_group_case": {
+    "b": 4,
+    "n": 0,
+    "blackboard_q": 1,
+    "Seifert_Q": 15,
+    "meridian": [
+      1,
+      0,
+      3,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "longitude": [
+      2,
+      3,
+      1,
+      0,
+      5,
+      7,
+      4,
+      6
+    ],
+    "transport": [
+      3,
+      2,
+      0,
+      1,
+      5,
+      7,
+      4,
+      6
+    ]
+  },
+  "conclusion": "ar_C(2-cable)>=2b-1; mr<=2b; actual gap<=1 for every released family member and every odd slope",
+  "odd_p_scope": "same natural companion representation cannot extend to a KCH representation; no bound for other companion representations",
+  "external_review": false,
+  "formal_verification": false
+}

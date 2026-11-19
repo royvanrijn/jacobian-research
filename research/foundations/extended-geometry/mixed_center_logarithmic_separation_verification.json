@@ -1,0 +1,746 @@
+{
+  "passed": true,
+  "scope": "Exact bounded polynomial/divisibility/norm and raw moment/original contraction controls only; the separate proof supplies all-order separation and prime exclusion.",
+  "cases": [
+    {
+      "branch": "fixed_root",
+      "s": 1,
+      "lambda": "1",
+      "degree": 12,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "8/35",
+        "0",
+        "128/3003",
+        "0",
+        "1024/138567",
+        "0",
+        "32768/26558675",
+        "0",
+        "262144/1302340845",
+        "0",
+        "4194304/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 1,
+      "lambda": "-2",
+      "degree": 12,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "32/35",
+        "0",
+        "2048/3003",
+        "0",
+        "65536/138567",
+        "0",
+        "8388608/26558675",
+        "0",
+        "268435456/1302340845",
+        "0",
+        "17179869184/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 1,
+      "lambda": "1/2",
+      "degree": 12,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "2/35",
+        "0",
+        "8/3003",
+        "0",
+        "16/138567",
+        "0",
+        "128/26558675",
+        "0",
+        "256/1302340845",
+        "0",
+        "1024/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 2,
+      "lambda": "1",
+      "degree": 18,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "8/35",
+        "0",
+        "128/3003",
+        "0",
+        "1024/138567",
+        "0",
+        "32768/26558675",
+        "0",
+        "262144/1302340845",
+        "0",
+        "4194304/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 2,
+      "lambda": "-2",
+      "degree": 18,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "32/35",
+        "0",
+        "2048/3003",
+        "0",
+        "65536/138567",
+        "0",
+        "8388608/26558675",
+        "0",
+        "268435456/1302340845",
+        "0",
+        "17179869184/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 2,
+      "lambda": "1/2",
+      "degree": 18,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "2/35",
+        "0",
+        "8/3003",
+        "0",
+        "16/138567",
+        "0",
+        "128/26558675",
+        "0",
+        "256/1302340845",
+        "0",
+        "1024/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 3,
+      "lambda": "1",
+      "degree": 24,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "8/35",
+        "0",
+        "128/3003",
+        "0",
+        "1024/138567",
+        "0",
+        "32768/26558675",
+        "0",
+        "262144/1302340845",
+        "0",
+        "4194304/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 3,
+      "lambda": "-2",
+      "degree": 24,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "32/35",
+        "0",
+        "2048/3003",
+        "0",
+        "65536/138567",
+        "0",
+        "8388608/26558675",
+        "0",
+        "268435456/1302340845",
+        "0",
+        "17179869184/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 3,
+      "lambda": "1/2",
+      "degree": 24,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "2/35",
+        "0",
+        "8/3003",
+        "0",
+        "16/138567",
+        "0",
+        "128/26558675",
+        "0",
+        "256/1302340845",
+        "0",
+        "1024/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 4,
+      "lambda": "1",
+      "degree": 30,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "8/35",
+        "0",
+        "128/3003",
+        "0",
+        "1024/138567",
+        "0",
+        "32768/26558675",
+        "0",
+        "262144/1302340845",
+        "0",
+        "4194304/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 4,
+      "lambda": "-2",
+      "degree": 30,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "32/35",
+        "0",
+        "2048/3003",
+        "0",
+        "65536/138567",
+        "0",
+        "8388608/26558675",
+        "0",
+        "268435456/1302340845",
+        "0",
+        "17179869184/129733184175"
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 4,
+      "lambda": "1/2",
+      "degree": 30,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "2/35",
+        "0",
+        "8/3003",
+        "0",
+        "16/138567",
+        "0",
+        "128/26558675",
+        "0",
+        "256/1302340845",
+        "0",
+        "1024/129733184175"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 0,
+      "lambda": "1",
+      "degree": 8,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-4/105",
+        "0",
+        "16/5005",
+        "0",
+        "-320/969969",
+        "0",
+        "1792/47805615",
+        "0",
+        "-21504/4775249765",
+        "0",
+        "45056/80311018775"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 0,
+      "lambda": "-2",
+      "degree": 8,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-16/105",
+        "0",
+        "256/5005",
+        "0",
+        "-20480/969969",
+        "0",
+        "458752/47805615",
+        "0",
+        "-22020096/4775249765",
+        "0",
+        "184549376/80311018775"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 0,
+      "lambda": "1/2",
+      "degree": 8,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-1/105",
+        "0",
+        "1/5005",
+        "0",
+        "-5/969969",
+        "0",
+        "7/47805615",
+        "0",
+        "-21/4775249765",
+        "0",
+        "11/80311018775"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 1,
+      "lambda": "1",
+      "degree": 20,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-4/21",
+        "0",
+        "80/1001",
+        "0",
+        "-37952/969969",
+        "0",
+        "440576/21729825",
+        "0",
+        "-4697088/434113615",
+        "0",
+        "3306377216/562177131425"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 1,
+      "lambda": "-2",
+      "degree": 20,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-16/21",
+        "0",
+        "1280/1001",
+        "0",
+        "-2428928/969969",
+        "0",
+        "112787456/21729825",
+        "0",
+        "-4809818112/434113615",
+        "0",
+        "13542921076736/562177131425"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 1,
+      "lambda": "1/2",
+      "degree": 20,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-1/21",
+        "0",
+        "5/1001",
+        "0",
+        "-593/969969",
+        "0",
+        "1721/21729825",
+        "0",
+        "-4587/434113615",
+        "0",
+        "807221/562177131425"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 2,
+      "lambda": "1",
+      "degree": 32,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-12/35",
+        "0",
+        "1808/5005",
+        "0",
+        "-149440/323323",
+        "0",
+        "9997568/15935205",
+        "0",
+        "-12560325632/14325749295",
+        "0",
+        "370438144/296872275"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 2,
+      "lambda": "-2",
+      "degree": 32,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-48/35",
+        "0",
+        "28928/5005",
+        "0",
+        "-9564160/323323",
+        "0",
+        "2559377408/15935205",
+        "0",
+        "-12861773447168/14325749295",
+        "0",
+        "1517314637824/296872275"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 2,
+      "lambda": "1/2",
+      "degree": 32,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-3/35",
+        "0",
+        "113/5005",
+        "0",
+        "-2335/323323",
+        "0",
+        "39053/15935205",
+        "0",
+        "-12265943/14325749295",
+        "0",
+        "90439/296872275"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 3,
+      "lambda": "1",
+      "degree": 44,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-52/105",
+        "0",
+        "1136/1155",
+        "0",
+        "-60352/24871",
+        "0",
+        "38941952/6128925",
+        "0",
+        "-1715581952/100180065",
+        "0",
+        "45847998464/975437475"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 3,
+      "lambda": "-2",
+      "degree": 44,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-208/105",
+        "0",
+        "18176/1155",
+        "0",
+        "-3862528/24871",
+        "0",
+        "9969139712/6128925",
+        "0",
+        "-1756755918848/100180065",
+        "0",
+        "187793401708544/975437475"
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 3,
+      "lambda": "1/2",
+      "degree": 44,
+      "pure_controls": 12,
+      "marked_controls": [
+        "0",
+        "-13/105",
+        "0",
+        "71/1155",
+        "0",
+        "-943/24871",
+        "0",
+        "152117/6128925",
+        "0",
+        "-1675373/100180065",
+        "0",
+        "11193359/975437475"
+      ]
+    }
+  ],
+  "original_lifts": [
+    {
+      "branch": "fixed_root",
+      "s": 1,
+      "degree": 12,
+      "phase_support": 90,
+      "powers": [
+        {
+          "m": 1,
+          "support": 90,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 2,
+          "support": 349,
+          "pure": 0,
+          "normalized_marked": "8/35"
+        },
+        {
+          "m": 3,
+          "support": 748,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 4,
+          "support": 1331,
+          "pure": 0,
+          "normalized_marked": "128/3003"
+        }
+      ]
+    },
+    {
+      "branch": "fixed_root",
+      "s": 2,
+      "degree": 18,
+      "phase_support": 190,
+      "powers": [
+        {
+          "m": 1,
+          "support": 190,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 2,
+          "support": 745,
+          "pure": 0,
+          "normalized_marked": "8/35"
+        }
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 0,
+      "degree": 8,
+      "phase_support": 42,
+      "powers": [
+        {
+          "m": 1,
+          "support": 42,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 2,
+          "support": 161,
+          "pure": 0,
+          "normalized_marked": "-4/105"
+        },
+        {
+          "m": 3,
+          "support": 340,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 4,
+          "support": 605,
+          "pure": 0,
+          "normalized_marked": "16/5005"
+        }
+      ]
+    },
+    {
+      "branch": "inversion",
+      "s": 1,
+      "degree": 20,
+      "phase_support": 232,
+      "powers": [
+        {
+          "m": 1,
+          "support": 232,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 2,
+          "support": 909,
+          "pure": 0,
+          "normalized_marked": "-4/21"
+        },
+        {
+          "m": 3,
+          "support": 1986,
+          "pure": 0,
+          "normalized_marked": "0"
+        },
+        {
+          "m": 4,
+          "support": 3555,
+          "pure": 0,
+          "normalized_marked": "80/1001"
+        }
+      ]
+    }
+  ],
+  "inversion_divisibility_controls": [
+    {
+      "q": 0,
+      "divisible": true
+    },
+    {
+      "q": 1,
+      "divisible": false
+    },
+    {
+      "q": 2,
+      "divisible": false
+    },
+    {
+      "q": 3,
+      "divisible": false
+    },
+    {
+      "q": 4,
+      "divisible": true
+    },
+    {
+      "q": 5,
+      "divisible": false
+    },
+    {
+      "q": 6,
+      "divisible": false
+    },
+    {
+      "q": 7,
+      "divisible": false
+    },
+    {
+      "q": 8,
+      "divisible": true
+    },
+    {
+      "q": 9,
+      "divisible": false
+    },
+    {
+      "q": 10,
+      "divisible": false
+    },
+    {
+      "q": 11,
+      "divisible": false
+    },
+    {
+      "q": 12,
+      "divisible": true
+    },
+    {
+      "q": 13,
+      "divisible": false
+    },
+    {
+      "q": 14,
+      "divisible": false
+    },
+    {
+      "q": 15,
+      "divisible": false
+    },
+    {
+      "q": 16,
+      "divisible": true
+    },
+    {
+      "q": 17,
+      "divisible": false
+    },
+    {
+      "q": 18,
+      "divisible": false
+    },
+    {
+      "q": 19,
+      "divisible": false
+    },
+    {
+      "q": 20,
+      "divisible": true
+    },
+    {
+      "q": 21,
+      "divisible": false
+    },
+    {
+      "q": 22,
+      "divisible": false
+    },
+    {
+      "q": 23,
+      "divisible": false
+    },
+    {
+      "q": 24,
+      "divisible": true
+    }
+  ],
+  "quadratic_norm_identity_controls": 9,
+  "negative_controls": {
+    "linear_C_purity_rejected": true
+  },
+  "status": "passed",
+  "schema_version": 1,
+  "python": "3.12.3",
+  "sources": {
+    "research/foundations/extended-geometry/MIXED_CENTER_LOGARITHMIC_SEPARATION.md": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+    "research/foundations/extended-geometry/verify_mixed_center_logarithmic_separation.py": "f51a5de5c545e082b789fa718238c30bfe65cbd7b1f97fad2375517fbe6455ca",
+    "research/foundations/extended-geometry/mixed_center_logarithmic_separation_source_ledger.json": "20af656ca48972d6502251026f512a859a88a55a11ceb53cef9a6fbd67570577",
+    "research/foundations/extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+    "research/foundations/extended-geometry/ONE_POLE_ODD_CUBIC_CLASSIFICATION.md": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+    "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+    "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273"
+  }
+}

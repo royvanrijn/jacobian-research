@@ -1,0 +1,121 @@
+{
+  "title": "Universal primitive discriminant -23 multiplier cones at16,19,39",
+  "proof": "PRIMITIVE_NORM_MINUS23_MULTIPLIER_CONES.md",
+  "checkers": [
+    "verify_primitive_norm_minus23_multiplier_cones.py"
+  ],
+  "receipts": [
+    "primitive_norm_minus23_multiplier_cone_checks.json"
+  ],
+  "reproduction": [
+    "python3 research/arithmetic/verify_primitive_norm_minus23_multiplier_cones.py"
+  ],
+  "artifact_sha256": {
+    "PRIMITIVE_NORM_MINUS23_MULTIPLIER_CONES.md": "3f9dea6058cfba9ca840b97e5e968b6f0eb2e693c5f007faff93e6a4871edca4",
+    "verify_primitive_norm_minus23_multiplier_cones.py": "6348efa6a04e98c90a8f0db4aa72ddea095107f3e346fe600e1117a6fd5aeb31",
+    "primitive_norm_minus23_multiplier_cone_checks.json": "7683ada453ebe9938ad73b21f10692c9e9338bb83a65e9f319297ca81177c132"
+  },
+  "results": [
+    {
+      "name": "CN3MultiplierCones",
+      "scope": "For every positive q with no inert prime factor and v23(q)<=1, the three numbers16q,19q,39q are each sums of two positive primitive x^2+xy+6y^2 numerical values. Inert-free q may have arbitrary split classes and exponents and need not itself be an ordinary or primitive principal norm.",
+      "seed_pairs": {
+        "16": [
+          [
+            8,
+            8
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        "19": [
+          [
+            1,
+            18
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            6,
+            13
+          ]
+        ],
+        "39": [
+          [
+            3,
+            36
+          ],
+          [
+            12,
+            27
+          ],
+          [
+            13,
+            26
+          ]
+        ]
+      },
+      "consequences": [
+        "Every target with inert part exactly19 and v23<=1 is represented, with arbitrary split multipliers.",
+        "Every inert-free target divisible by16 or39 and with v23<=1 is represented.",
+        "Every power of two at least16 is represented."
+      ],
+      "limits": "No assertion for arbitrary inert factors in q, no complete40-exception classification and no historical-priority claim."
+    },
+    {
+      "name": "CN3DisplayedPairCover",
+      "scope": "For a specified finite list of positive{2,3,13}-smooth pairs with a common sum, the complete R0/R1 class-phase cover is equivalent to one of THOSE pairs giving two primitive norms after every multiplier q in the stated domain. R>=2 is automatic.",
+      "reverse": "Realize e by q0=2^e2*3^e3*13^e13, e_i in{0,1,2}. The same phase with outside active count one is realized by29q0;29 is independently checked split and nonprincipal. No assertion that all universal P+P membership must use the displayed list."
+    }
+  ],
+  "proof_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "sha256": "3a84e27de5087a2db83673bd41803ab0d231bb330ee7e316121540a9ffbf5576",
+      "result_id": "ARITH-CLASS-THREE-PRIMITIVE-NORM-CRITERION",
+      "locator": "Lemma CN3Individual and its explicit discriminant-23 specialization",
+      "scope": "For inert-free n with v23(n)<=1, primitive principal representation holds exactly when the number of DISTINCT nonprincipal split prime powers with exponent nonzero mod3 is not one. Imports only this exact criterion and class-group specialization, not the analytic counts, profile asymptotics or Hecke estimates in other sections."
+    }
+  ],
+  "primary_structural_source": {
+    "author": "James S. Milne",
+    "title": "Algebraic Number Theory",
+    "version": "v3.08, 19 July 2020",
+    "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+    "local_path": "sources/milne-ant308.pdf",
+    "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+    "statements_used": [
+      "Theorem4.3, printedp70/PDFp72: Minkowski ideal-class representative bound.",
+      "Theorem4.29, printedp82/PDFp84: ideal-class/binary-form correspondence."
+    ],
+    "inspection_scope": "Root and internal reviewer inspected the actual retained3.08 PDF. The two classical theorems are imported; the explicit -23 class calculation and all primitive class-orientation restrictions are proved in the note. The old3.00 source is preserved separately.",
+    "role_here": "Inherited structural input through the retained C3 criterion: maximal ideal classes and ideal/form correspondence. The new cone proof imports no further analytic theorem; finite class-orientation restrictions are supplied by CN3Individual.",
+    "inspection_limit": "Existing primary-statement audit is retained; no new full revalidation of a deep primary proof or novelty assertion is made."
+  },
+  "finite_verification": {
+    "bank": [
+      2,
+      3,
+      13
+    ],
+    "case_completeness": "27 bank-exponent phases times outside active cases0,1,>=2, at each of three seeds. All seed factors lie in the bank, so outside active primes are unchanged. R>=2 is monotone automatic; R0/R1 are exact finite cases.",
+    "reverse_realizations": "54 explicit q values realize every bank phase with R0 orR1, using the nonprincipal prime29 forR1.",
+    "primary_bank_controls": "Complete principal-form nonrepresentation checks for2,3,13,29, explicit nonprincipal-form witnesses, splitting controls and inertness of19.",
+    "negative_controls": "Deleting any one of the three listed pairs at each seed produces a retained uncovered phase. This is only necessity within those pair lists. Python optimization mode is refused before certificate output.",
+    "limit": "The finite certificate proves an unrestricted result through the complete phase reduction and imported C3 criterion; it is not a bounded sumset scan, formal verification or external review."
+  },
+  "internal_review": {
+    "root": "Root independently passed the compact16/19/39 phase proof and small bank facts before promotion; the seed16 partition was also checked by hand.",
+    "reverse_addition": "The explicit reversible displayed-pair criterion was added at root request, with all R0/R1 realizations and the necessary nonprincipal29 control. The reverse statement is scoped to the specified pair list.",
+    "author_replay": "The final standard-library checker passed, including complete phases and deletion controls. Optimization-mode refusal was checked."
+  },
+  "assurance": "Written exact class-theoretic proof with complete finite phase certificate and internal review only. No external human review, formal verification or historical priority is asserted."
+}

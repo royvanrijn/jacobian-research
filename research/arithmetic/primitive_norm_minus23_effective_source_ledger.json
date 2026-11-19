@@ -11,7 +11,7 @@
     "python3 research/arithmetic/verify_primitive_norm_minus23_effective.py"
   ],
   "artifact_sha256": {
-    "PRIMITIVE_NORM_MINUS23_EFFECTIVE.md": "b499725f84e25cf20d892c8585ee57a8ff1c21a354bc0ed8aebcc09bce34f5e0",
+    "PRIMITIVE_NORM_MINUS23_EFFECTIVE.md": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8",
     "verify_primitive_norm_minus23_effective.py": "8ec6470e2901336e2c2e5ec8e2720e3c98bf98a6d611fde3c6606b14ede8f6c7",
     "primitive_norm_minus23_effective_checks.json": "5fc4173180df8298830f5b8151fdae4fe76af9ab2dbbfccfea839cfd0448a620"
   },
@@ -26,6 +26,10 @@
       "scope": "For every N>=2^249, with P the positive primitive x^2+xy+6y^2 numerical values, N belongs to P+P if and only if529 does not divideN. At every admissible such target the ordered numerical value-pair count is at least N^(5/7)/15000000000.",
       "stronger_unit_statement": "For23-unit N satisfying N^(3/28)>=52800*1424, the signed U+U count is at least3N/550 and its numerical value-pair count is at least3N^(5/7)/(2200*1424^2), where U consists of primitive23-unit values. In particular the power-of-two unit cutoff2^245 suffices.",
       "limits": "No complete finite40-exception classification below2^249; the retained bounded scan and the middle bridge remain separate. No logarithmic leading-term onset, external human review, formal verification or historical priority is asserted."
+    },
+    {
+      "name": "CN3FiniteBridge",
+      "scope": "Given CN3Finite and CN3EffectiveAll, the exact global40-exception formula is equivalent to representing every529-admissible target in the unresolved interval2^24<N<2^249. The forward restriction and reverse three-range partition are proved; neither unresolved member is asserted."
     }
   ],
   "proof_dependencies": [

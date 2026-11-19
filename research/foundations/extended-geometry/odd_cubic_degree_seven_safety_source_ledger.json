@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+  "proof_labels": [
+    "OddCubicDegreeSevenSafety",
+    "SharpOddCubicOddThreshold"
+  ],
+  "domain": "Every characteristic-zero field; all regular winding-one odd-cubic-height phases t/x*(C+t\u00b2D). Safety restricted to odd least degrees<=7; sharp least ODD unsafe degree9 within this class only.",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "Arbitrary-characteristic-zero rational-u descent, endpoint criterion and retained odd-cubic degree<=5 safety."
+    },
+    {
+      "retained_path": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "exact_use": "All-degree zero-center safety with REPAIRED original-marker equivariance/output-degree transfer; used at starting height1."
+    },
+    {
+      "retained_path": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+      "exact_use": "Exact one-pole degree alternatives3c,5c-2 and rational-primitive root-count criterion."
+    },
+    {
+      "retained_path": "MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "exact_use": "All-order rational/logarithmic splitting and squarefree-center consequence."
+    },
+    {
+      "retained_path": "ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+      "sha256": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203",
+      "exact_use": "EXISTING all-order primitive degree9 F9 witness and its fixedZ\u00b2 marked formula; no new witness claim."
+    }
+  ],
+  "self_contained_arguments": [
+    "Two-root logarithmic exclusion, including arbitrary root multiplicities.",
+    "Rational primitive exact pole degreec-h; induced field automorphism and equal mapdegreeR_sigma without requiring extension toK(x).",
+    "Zero-at-infinity lower bound and pole-sum upper bound; maximality forces disjoint pole supports.",
+    "Explicitc/e/h case split at exactdegree7 and simple-root pole-capacity contradiction."
+  ],
+  "verification": {
+    "checker": "verify_odd_cubic_degree_seven_safety.py",
+    "receipt": "odd_cubic_degree_seven_safety_verification.json",
+    "method": "Stdlib56degree-seven integer root-pattern cases; exact Gaussian elimination reconstructs26rational partial-fraction examples and verifies pole degrees/residue identities;4direct ORIGINALF9 contractions and an alteredF9 negativecontrol.",
+    "internal_review": "Root and arithmetic agent independently reconstructed every field-involution, map-degree, two-root, maximal-pole and scope step; both independently replayed the checker. This is internal mathematical review, not external human review."
+  },
+  "not_claimed": [
+    "No unsafe even-degree exclusion: the retained degree6 witness remains valid.",
+    "No global minimum odd unsafe degree for arbitrary sphere or Image phases.",
+    "No classification of the larger t/x*(C+t\u00b2B+t4D) profile or arbitrary quintics/septics.",
+    "No finite-prefix purity inference, external human review, proof-assistant or historical-priority assertion."
+  ]
+}

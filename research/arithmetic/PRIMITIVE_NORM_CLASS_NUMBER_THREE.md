@@ -352,8 +352,12 @@ python3 research/arithmetic/verify_primitive_norm_class3_profiles.py \
 
 Internal agents audited the arithmetic, finite profiles and analytic
 transfer separately, and independent internal replays matched the retained
-outputs. A numerical eventual cutoff, completeness beyond the finite checked range,
-unweighted leading constant and historical priority remain unestablished.
+outputs. For the sharp logarithmic comparison above, a numerical cutoff,
+an unweighted leading constant and historical priority remain unestablished.
+The [effective all-large companion](PRIMITIVE_NORM_MINUS23_EFFECTIVE.md)
+separately proves existence for every admissible target at least 2^249,
+with an explicit weaker power lower bound for the number of value pairs.
+Completeness of the finite exception list above 2^24 remains open.
 
 
 ## Exact bounded binary exceptions

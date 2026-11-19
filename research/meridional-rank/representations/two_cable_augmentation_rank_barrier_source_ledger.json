@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "file": "sources/cornwell-kch-1310.7526v3.pdf",
+      "url": "https://arxiv.org/pdf/1310.7526v3",
+      "title": "Cornwell, KCH representations, augmentations, and A-polynomials",
+      "locators": "Proposition2.12; Lemma3.14; Definition1.8; Theorem1.2 for the converse direction",
+      "use": "representation-to-augmentation direction and exact augmentation-rank/dimension convention",
+      "sha256": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+      "bytes": 375388,
+      "proof_role": "imported proof premise"
+    },
+    {
+      "file": "sources/cornwell-hemminger-1408.4110v1.pdf",
+      "url": "https://arxiv.org/pdf/1408.4110v1",
+      "title": "Cornwell-Hemminger, Augmentation rank of satellites with braid pattern",
+      "locators": "Theorem1.2; Proposition2.1; Proposition5.2; pp21-22 Section5.2",
+      "use": "maximal-rank hypotheses; writhe correction; lower bounds; known strict examples",
+      "sha256": "ed8f7c18ebf0727e8b3734311b9086882adfdf8042c1fdda12ac1e76888b1b9d",
+      "bytes": 252139,
+      "proof_role": "imported proof premise"
+    },
+    {
+      "file": "sources/gao-gu-li-wang-2611.15673v1.pdf",
+      "url": "https://arxiv.org/pdf/2611.15673v1",
+      "title": "Gao-Gu-Li-Wang, Meridional ranks of iterated Whitehead doubles",
+      "locators": "Lemma2.10; Proposition2.16; Proposition2.22; Theorem1.3",
+      "use": "precise Whitehead lower-bound/peripheral conditions; comparison only",
+      "sha256": "50831e7525fa71bed1c3eba7d5cf27b79af86f52f54002e29b90b28e64464dbd",
+      "bytes": 1177902,
+      "proof_role": "primary comparison; not a premise of the new cable construction"
+    },
+    {
+      "file": "sources/boileau-dutra-jang-weidmann-1608.01570v1.pdf",
+      "url": "https://arxiv.org/pdf/1608.01570v1",
+      "title": "Boileau-Dutra-Jang-Weidmann, Meridional rank of knots whose exterior is a graph manifold",
+      "locators": "Definition1; Theorem1",
+      "use": "meridional tameness premise; comparison only",
+      "sha256": "b43863ae9d0be524f00543705e55f719d9cf5d69e350c1286abb8109aeaebe13",
+      "bytes": 637789,
+      "proof_role": "primary comparison; not a premise of the new cable construction"
+    }
+  ],
+  "scope": "All specified four-bridge/uniform family parameters and all odd preferred two-cable slopes; odd-p corollary only excludes extension of the SAME natural companion representation.",
+  "external_review": false,
+  "repository_inputs": [
+    {
+      "original_path": "research/meridional-rank/representations/UNIFORM_PROTECTED_AUGMENTATION_GAPS.md",
+      "file": "UNIFORM_PROTECTED_AUGMENTATION_GAPS.md",
+      "sha256": "a19c720f0c4c6f2a7438f5d4b5434a6ce6faf38d2f5af75008b1951019fcdbb0",
+      "role": "precise companion family and its already-established augmentation upper bound; not re-proved by finite cable checks"
+    },
+    {
+      "original_path": "research/meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex",
+      "file": "PRIME_AUGMENTATION_GAP_FAMILY.tex",
+      "sha256": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed",
+      "role": "precise companion family and its already-established augmentation upper bound; not re-proved by finite cable checks"
+    }
+  ],
+  "proof": "TWO_CABLE_AUGMENTATION_RANK_BARRIER.md",
+  "checker": "verify_two_cable_augmentation_rank_barrier.py",
+  "receipt": "two_cable_augmentation_rank_barrier_verification.json"
+}

@@ -280,15 +280,14 @@ these hypotheses. Two blocks now give an augmentation bound two
 below their displayed strand count. A meridional lower bound is
 still needed to turn that into a gap.
 
-The universal double-transposition budget remains
-`v<=2b-k+1`. Its support lower bound `mr>=ceil((v-1)/2)` can at
-most reach `b-floor(k/2)`. Compared with (8), this leaves room for
-a certified gap of `ceil(k/2)`, provided compatible transitive
-colorings and knot closures can be constructed. Thus three blocks
-could yield a gap of two if a `b`-strand protected closure had a
-transitive double-transposition image on `2b-2` symbols. For the
-smallest `b=12` this target has `v=22`, `mr>=11`, and `ar_C<=9`.
-These are conditional targets, not existence assertions.
+The [complete double-transposition coloring companion](PROTECTED_U_DOUBLE_TRANSPOSITION_CLASSIFICATION.md)
+now proves the stronger support bound v<=2b-2k+2 for every exact-word
+protected tail with a knot closure. Its support lower bound
+mr>=ceil((v-1)/2), combined with (8), can certify a gap of at most one.
+Thus changing the number of blocks or their double-transposition colors
+cannot complete this particular lower-bound route. The augmentation
+bound (8) remains valid; other lower invariants, finite meridian classes,
+overlapping obstructions and local braids remain separate targets.
 
 ## 5. Primary input, exact checks and assurance
 

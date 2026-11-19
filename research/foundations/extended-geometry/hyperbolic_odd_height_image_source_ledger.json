@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+  "proof_labels": [
+    "HyperbolicOddCubicImage",
+    "PrimeDegreeThirteenImage",
+    "HyperbolicOddHeightImage"
+  ],
+  "domain": "Every characteristic-zero field, every integern>=1, every odd integera>=1, lambda nonzero. Balanced degree d=(2a+3)n+a+2 means bidegree(d,d), ordinary totaldegree2d.",
+  "statement": "Explicit radial-primitive non-proper-power two-pair Image witnesses in degrees d, including primes13,23,41,59. Every pure power contracts tozero, and the ONE fixed original markerZ has a nonzero contraction at every positive even exponent. All odd marked moments arezero.",
+  "retained_resources": [
+    {
+      "retained_path": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "locator": "Sections2/4 and Theorem5.5",
+      "exact_use": "Exact bilinear convention, factorial/angular normalization, Image-kernel reduction and existing all-even height family antecedent."
+    },
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "locator": "Section1 endpoint/residue criterion; general CharacterSpanDescent context",
+      "exact_use": "The odd-cubic endpoint and formal residue identities. The present construction proves its explicit all-order Phi parity directly; it does not assume Phi rational in u."
+    }
+  ],
+  "self_contained_arguments": [
+    "Polynomial endpoint contact and exact residue coefficient identities.",
+    "The rational inverse coordinate u=(U^n-U^(-n))/(2n*lambda) and algebraic odd correction Phi=1-n*lambda*u/sqrt(1+n\u00b2lambda\u00b2u\u00b2).",
+    "The elementary formal differential equation and coefficient recurrence, proving every even marked coefficient nonzero without importing hypergeometric theory.",
+    "Literal homogeneous divided difference, exact clearing factor(2n)^(a+1), R=0 evaluation and all-field degree calculation.",
+    "A simple negative-real algebraic specialization zero excludes every proper power for all a,n, including noncoprimeparameters; transport to arbitrary char0 algebraic closures is explicit."
+  ],
+  "inspected_primary_antecedents": [
+    {
+      "source": "NIST Digital Library of Mathematical Functions",
+      "url": "https://dlmf.nist.gov/4.37.E16",
+      "locator": "Equation4.37.16",
+      "actual_statement_inspected": true,
+      "role": "Classical arcsinh logarithmic parametrization and branch atzero. Formal algebra used in proof; no analytic continuation premise needed."
+    },
+    {
+      "source": "NIST Digital Library of Mathematical Functions",
+      "url": "https://dlmf.nist.gov/15.4.E13",
+      "locator": "Equation15.4.13, parameter1/(2n)",
+      "actual_statement_inspected": true,
+      "role": "Exact classical hypergeometric identity matching cosh(q*asinh(z))/sqrt(1+z\u00b2). The proof independently derives its ODE/coefficient recurrence, so this is an antecedent rather than an indispensable theorem import."
+    },
+    {
+      "authors": "Christopher D. Long",
+      "title": "Counterexamples to the xz-Conjecture and the Mathieu Conjecture for SU(2)",
+      "version": "arXiv2607.19012v1,21July2026",
+      "url": "https://arxiv.org/html/2607.19012v1",
+      "locator": "Theorem2.1, Proposition3.1, Theorem4.2",
+      "actual_statement_inspected": true,
+      "role": "Circuit counterexamples and SU(2) failure are antecedents. No claim that Mathieu/Image failure itself or the hypergeometric identity is new."
+    },
+    {
+      "authors": "Roy van Rijn",
+      "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification",
+      "version": "hexagon2611.00556v1,17November2026",
+      "url": "https://hexagonmath.org/pdf/2611.00556v1",
+      "locator": "Abstract/Sections1 and5 scope",
+      "actual_statement_inspected": true,
+      "role": "Published quotient/classification and radial examples are antecedents, not a prime balanced-degree theorem. Targeted searches were not an exhaustive worldwide priority audit."
+    }
+  ],
+  "verification": {
+    "checker": "verify_hyperbolic_odd_height_image.py",
+    "receipt": "hyperbolic_odd_height_image_verification.json",
+    "method": "Standard-library raw interval contractions for54(a,n,lambda) cases throughm14;72 ODE/product controls; original four-variable contractions in11 cases, including F13 throughm6 and degree41/59. Checks actual specialization, R=0 and T-quotient values; omitted-top, unscaled-formula and altered-angular negativecontrols.",
+    "internal_review": "Root independently rederived the family, degree and exact scaling and checked35 raw interval cases. Geometry agent independently reconstructed the algebraic marker coefficients and originalF13 contractions throughm4. Generalodd-a extension and all-parameter simple-specialization proof were internally reviewed. This is internal mathematical review, not external human review."
+  },
+  "not_claimed": [
+    "The factorization2d-1=(2n+1)(2a+3) constrains this parameter family only, not arbitrary primitive Image witnesses.",
+    "No assertion that13 is the minimum prime balanced degree; degrees5,7,11 and other uncovered primes remain unsettled outside restricted classifications.",
+    "No all-order quantifier is inferred from a finite vanishing prefix. No formal proof-assistant verification, external human review or worldwide priority claim."
+  ],
+  "family_odd_degree_equivalence": "The displayed family realizes an odd integer d iff 2d-1=u*v for integers u,v>=5 with u=v=1 mod4; inverse parameters n=(u-1)/2,a=(v-3)/2. This is not a necessary condition for arbitrary Image witnesses."
+}

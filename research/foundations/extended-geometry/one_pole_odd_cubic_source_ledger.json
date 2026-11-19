@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+  "proof_labels": [
+    "OnePoleOddCubicPurity",
+    "RationalPrimitiveOddCubicPurity",
+    "SquarefreeCenterObstruction"
+  ],
+  "domain": "Every characteristic-zero field; regular unit-center p=t/x*(C+t^2 D), with C constant or a power of one normalized linear polynomial. Rational-primitive corollary and squarefree-center exclusion are separately scoped.",
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "exact_use": "All-order endpoint/residue criterion and rational-u CharacterSpanDescent over arbitrary characteristic-zero fields."
+    },
+    {
+      "retained_path": "HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "exact_use": "Inversion branch and its every-even fixed-marker formula; no finite-prefix purity inference."
+    },
+    {
+      "retained_path": "sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "locator": "Theorem3.17 (printedp39), Remark5.47 (printedp84)",
+      "exact_use": "Finite Galois correspondence for the explicit cyclic rational-function extension; product-over-embeddings formula for finite separable field norms and traces."
+    }
+  ],
+  "inspected_primary_antecedents": [
+    {
+      "author": "J.S. Milne",
+      "title": "Fields and Galois Theory",
+      "version": "5.10, September2022",
+      "url": "https://www.jmilne.org/math/CourseNotes/FT.pdf",
+      "locator": "Theorem3.17, printedp39; Remark5.47, printedp84",
+      "actual_statement_inspected": true,
+      "exact_use": "Finite Galois intermediate-field correspondence; norm as product of embeddings for finite separable extensions."
+    }
+  ],
+  "self_contained_arguments": [
+    "Purity-induced field involution, cyclic intermediate-field reduction and exhaustive Mobius pole alternatives.",
+    "Constant and logarithmic boundary cases; rational-degree and norm-logarithmic-derivative proofs.",
+    "All-order sufficiency of both branches, least degree, literal original lift, R-primitivity and exact T-order1.",
+    "Fixed-zero marker U^N has infinitely many surviving even moments by a pole obstruction, not finite extrapolation.",
+    "Rational-primitive scope equivalence; squarefree-center obstruction via traces of logarithmic derivatives."
+  ],
+  "verification": {
+    "checker": "verify_one_pole_odd_cubic.py",
+    "receipt": "one_pole_odd_cubic_verification.json",
+    "method": "84 exact coefficient cases,1008 raw moments through12, independent residue/pole-series coefficients,8 actual original4variable lifts and34 powers; alteredD and invalid uniformmarkerx negative controls.",
+    "internal_review": "Root and the arithmetic agent independently reconstructed the full field/involution/pole proof and both Section7 corollaries. This is internal mathematical review, not external human review."
+  },
+  "not_claimed": [
+    "No complete classification of arbitrary C with several roots of mixed multiplicities.",
+    "No global prime-degree obstruction for arbitrary Image witnesses.",
+    "No all-order statement inferred from finite controls, no formal proof-assistant or external human review, no priority claim."
+  ]
+}

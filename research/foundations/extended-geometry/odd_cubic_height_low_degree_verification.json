@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "sources": {
+    "research/foundations/extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+    "research/foundations/extended-geometry/verify_odd_cubic_height_low_degree.py": "9bd8035573925ad21d50c889f768f7c60f85d0c849399f6e89cc846fcb97c083",
+    "research/foundations/extended-geometry/odd_cubic_height_low_degree_certificates.json": "78341369e8dc6135c9af33a3e32bf746abd49c2174a3cdab7bcee873f9bfa0b5",
+    "research/foundations/extended-geometry/odd_cubic_height_low_degree_source_ledger.json": "52cd3a98cfee2c8eb3b1c1bfa97c46bdad8827530fa8206c9ffa423f22e6bf12",
+    "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+  },
+  "h1_unit_ideal": {
+    "degree_bound": 16,
+    "multiplier_terms": [
+      71,
+      38,
+      24
+    ],
+    "identity": "exactly1",
+    "corrupted_multiplier_rejected": true
+  },
+  "h3_J_nonconstant_unit_ideal": {
+    "degree_bound": 12,
+    "multiplier_terms": [
+      22,
+      11,
+      8
+    ],
+    "identity": "exactly1",
+    "corrupted_multiplier_rejected": true
+  },
+  "h0_constant_squarefree_part": {
+    "generator_degrees": [
+      4,
+      6
+    ],
+    "multiplier_degrees": [
+      5,
+      3
+    ],
+    "identity": "exactly1",
+    "d_zero_restriction": "-1157*b^4"
+  },
+  "constant_J_nonconstant_H": {
+    "first_two_equations": "b=-a^2/2; a*(24c-7a^3)/2=0",
+    "a_zero_sixth_equation": "15c^2=0",
+    "a_nonzero_normalized_sixth": "1397/192"
+  },
+  "zero_center": {
+    "generator_degrees": [
+      2,
+      4
+    ],
+    "multiplier_degrees": [
+      3,
+      1
+    ],
+    "identity": "exactly1"
+  },
+  "independent_raw_interval_controls": 48,
+  "sharp_degree_six": {
+    "degree": 6,
+    "radial_zero_value": 8,
+    "T_quotient_value_at_T_zero": 144,
+    "controls": [
+      {
+        "m": 1,
+        "support": 26,
+        "pure": 0,
+        "normalized_marker_Z": "0"
+      },
+      {
+        "m": 2,
+        "support": 93,
+        "pure": 0,
+        "normalized_marker_Z": "8/105"
+      },
+      {
+        "m": 3,
+        "support": 190,
+        "pure": 0,
+        "normalized_marker_Z": "0"
+      },
+      {
+        "m": 4,
+        "support": 337,
+        "pure": 0,
+        "normalized_marker_Z": "128/15015"
+      },
+      {
+        "m": 5,
+        "support": 506,
+        "pure": 0,
+        "normalized_marker_Z": "0"
+      },
+      {
+        "m": 6,
+        "support": 733,
+        "pure": 0,
+        "normalized_marker_Z": "1024/969969"
+      },
+      {
+        "m": 7,
+        "support": 974,
+        "pure": 0,
+        "normalized_marker_Z": "0"
+      },
+      {
+        "m": 8,
+        "support": 1281,
+        "pure": 0,
+        "normalized_marker_Z": "32768/239028075"
+      }
+    ]
+  },
+  "certificates_sha256": "78341369e8dc6135c9af33a3e32bf746abd49c2174a3cdab7bcee873f9bfa0b5",
+  "scope": "Exact finite ideal-one identity and low-degree case controls, independent raw interval and original four-variable contractions. Full rational-u reduction and universal classification implications use the separate unrestricted written proof."
+}

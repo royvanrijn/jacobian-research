@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "QUADRATIC_HEIGHT_HOPF_CLASSIFICATION.md",
+  "proof_labels": [
+    "QuadraticHeightHopfClassification",
+    "QuadraticHeightDegreeSix"
+  ],
+  "domain": "Every characteristic-zero field. All regular sphere phases x^-1(C+tB+t\u00b2D) with polynomial C,B,D, including C(0)=0. Balanced degree means bidegree(d,d) in two contraction pairs.",
+  "statement": "Complete pure-phase classification: zero-center and constant-center branches are eventually safe for every fixed marker; every nonconstant center has u=x/A=c[1-(1+lambda*x)^(-n)], even least balanced degree, and fixed markerx surviving at every positive exponent. The explicit degree6 lift is radial-primitive and is not a proper power over field extensions.",
+  "retained_resources": [
+    {
+      "retained_path": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "role": "retained normalization input",
+      "locator": "Sections2 and4; original contraction and sphere/angular identity",
+      "exact_use": "For balanced homogeneous H of degreeD, E2(H)=(D+1)! Lambda(H(1,x,y,t)), with t\u00b2+2xy=1. Image equals the contraction kernel. Existing even primitive examples are antecedents."
+    },
+    {
+      "retained_path": "HOPF_LIFT_CLASSIFICATION.md",
+      "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60",
+      "role": "narrower retained antecedent",
+      "locator": "Section8, including8.4",
+      "exact_use": "The B=0 polynomial classification and localized ordinary-ideal presentation. The new proof allows arbitrary polynomial linear-height term B, and does not upgrade or repeat the narrower ideal/scheme claim."
+    },
+    {
+      "retained_path": "ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+      "sha256": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203",
+      "role": "retained normalization antecedent and frontier",
+      "locator": "Sphere/Image normalization and odd-composite theorem",
+      "exact_use": "The two-pair bilinear convention and factorial normalization are the same. The height-dilation family covers all odd composite degrees; the separate hyperbolic inverse-cover family now supplies some odd prime degrees. This quadratic-height classification excludes only its stated winding-one coordinate class."
+    }
+  ],
+  "self_contained_new_arguments": [
+    "Endpoint polynomial primitive congruence and unique formal coefficient reconstruction with arbitrary linear height term.",
+    "Rational pole/critical-point bookkeeping and polynomial degree comparison; no Belyi-map classification is imported.",
+    "Formal residue change of variable and coefficient identity are proved directly; no uninspected Lagrange inversion theorem is imported.",
+    "Polynomial locally nilpotent shear, its boundary-term invariance, and eventual mixed vanishing.",
+    "Exact first-three-moment zero-center reduction; least-degree parity and original smooth specialization zero."
+  ],
+  "classical_antecedent_scope": "The familiar endpoint and formal-residue tools are used explicitly. Existing Mathieu/Image failure and even-degree primitive witnesses are antecedents, not new priority claims. The original primary-source antecedents are documented in the retained companion ledgers; this proof imports no additional external theorem beyond the stated normalization input.",
+  "verification": {
+    "checker": "verify_quadratic_height_hopf_classification.py",
+    "receipt": "quadratic_height_hopf_classification_verification.json",
+    "method": "Standard-library rational polynomial arithmetic, raw(x,t) interval contractions independent of the closed coefficient formula, and original four-variable factorial contractions forF6 throughm8. Includes parameter/divisibility/degree controls, singular-core reductions and corrupted-coefficient controls.",
+    "internal_review": "Root independently reconstructed the rational-u classification, polynomial parity, zero-center branch and LND safety argument; independently expanded original F6 and checked pure/marked contractions throughm4. This is internal mathematical review, not external human review."
+  },
+  "not_claimed": [
+    "No primitive Image counterexample at odd prime degree5 or7 is constructed or excluded outside this entire winding1 quadratic-height class.",
+    "No ordinary-ideal, radicality, reducedness or universal-prefix improvement is inferred from this field-valued classification.",
+    "No finite moment check supplies an all-order quantifier. No formal verification, external review or historical priority is asserted."
+  ]
+}

@@ -511,6 +511,29 @@ complement of constants, with the two Iwahori nonspherical sectors
 treated before taking their commuting product. The mathematical argument and the finite computations have been independently reconstructed internally. No external human review, formal verification or historical priority is asserted.
 
 
+## Exact finite bridge for the 40-exception question
+
+Let E be the explicit 40-element set in Proposition CN3Finite of
+[the class-number-three note](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md).
+Every member is at most3818, hence below2^24.
+
+**Lemma CN3FiniteBridge.** Under the proved bounded classification and
+Theorem CN3EffectiveAll, the following statements are equivalent:
+
+1. For every N>=2, N belongs to P+P exactly when529 does not divide N
+   and N is not in E.
+2. Every N with2^24<N<2^249 and529 not dividing N belongs to P+P.
+
+The forward implication restricts the global formula to the displayed
+interval, which contains no member of E. Conversely partition N>=2 into
+N<=2^24, the displayed middle interval, and N>=2^249. Proposition
+CN3Finite proves the first range, statement2 proves the admissible
+middle targets, and CN3EffectiveAll proves the last range.
+The local529 obstruction in E8 excludes every forbidden middle target;
+the bounded result supplies every actual exception in E. This proves
+both directions. The middle assertion has not been proved, so this
+equivalence does not establish global exception completeness.
+
 ## Sources and exact finite support
 
 The infinite input is the retained

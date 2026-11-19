@@ -1,12 +1,12 @@
 # Connors and Keating indicator correlations
 
-**Scope.** A fixed-shift indicator-correlation argument using the same
-imported zero-free and weighted-dilation theorems as the
-[pointwise binary theory](PRIMITIVE_NORM_BINARY_CORRELATION.md).
-The precise inputs are stated below. The argument concerns values,
-each counted once, and does not use a representation-weighted
-correlation in place of an indicator correlation. Growing shifts and
-higher correlations are outside its scope.
+**Scope.** Indicator correlations at fixed and logarithmically growing
+shifts, Poisson variance at the mean-spacing scale, and fixed gap
+frequencies under the imported zero-free and weighted-dilation theorems
+of the [pointwise binary theory](PRIMITIVE_NORM_BINARY_CORRELATION.md).
+Each numerical value is counted once. Sections 1--6 treat fixed shifts.
+Section 7 proves uniformity and the moment limits. Section 8 treats
+fixed consecutive gaps and binary patterns with two prescribed ones.
 
 ## 1. Statement and imported inputs
 
@@ -448,3 +448,308 @@ and the analytic comparison. The written proof records the resulting
 mark-fiber, periodic-centering, cofactor-length and sharp-bank smoothing
 conditions explicitly. No independent verification of the imported
 theorems is inferred from that application review.
+
+## 7. Logarithmically growing shifts and the second moment
+
+The same ZF and G inputs give the following uniform form of the
+Connors--Keating asymptotic. Use \(T_h=C(h)\) from (CK.1), and let
+\[
+ C_h(X)=\sum_{X<n\le 2X}b(n)b(n+h),\qquad
+ L=\log X,\qquad \delta=\frac1{16384}.
+\]
+
+**Theorem CKLogarithmicShifts.** For every fixed \(A>0\), uniformly
+for integers \(1\le |h|\le L^A\),
+\[
+ C_h(X)=T_h\frac X L\bigl(1+O_A(L^{-\delta})\bigr).
+ \tag{CK.17}
+\]
+In this estimate \(X\) can be real. The proof uses the same model
+\(\mathcal D\) as in Sections 2--5, at a fixed depth chosen for the
+entire shift range.
+
+### 7.1. Uniformity in the graph and frequency estimates
+
+We use the interval comparison in Section 2 of the
+[shared comparison note](SPARSE_ARITHMETIC_MODEL_COMPARISON.md),
+with (C1)--(C3) as stated there and with (C4) uniform in the shift,
+at a possibly shift-dependent scale \(\mathcal S_{X,h}\). Here is
+the extra argument for the shift range. Set the common bank class
+to \(1\bmod 4\).
+
+Every bank prime exceeds \(L^A\) for large \(X\), so all the banks
+are common to this range. In the [graph reduction](../../results/pointwise-binary-splitting-semigroups/graph.tex),
+the physical displacement is \(h\) times an edge product.
+Definition 3.3, Theorem 3.5 and Corollary 3.11 of G cover this
+uniformly with the single exponent \(C_2=A\). The progression-bank
+ideal is estimated uniformly in its real frequency and has no
+dependence on \(h\). The shared-label reconstruction uses that
+\(h\) is a unit at the bank primes and that both endpoint positions
+are \(O(X^{1+o(1)})\). Those bounds are uniform here. On the support
+of a dilated bulk cutoff the two endpoints remain comparable,
+since their displacement divided by the dilated scale is
+\(O(|h|/X)\).
+
+In the [Fourier reduction](../../results/pointwise-binary-splitting-semigroups/prime-estimates.tex),
+put \(U_*=U_1U_2\) for the product of the two dyadic scales and
+\(Y=XU_*\). Approximate \(h\theta\bmod 1\) with Dirichlet
+denominator ceiling \(\lfloor U_*/L^B\rfloor\), with \(B\)
+chosen after the fixed comparison costs. If its denominator
+\(r\) exceeds \(L^B\), the integer bilinear estimate gives
+the prescribed minor-arc saving by taking \(B\) large. For
+\(r\le L^B\), the lifts to \(\theta\bmod 1\) have reduced
+denominators at most \(|h|r\), and the total number of arcs is
+\[
+ O\left(|h|\sum_{r\le L^B}\varphi(r)\right)=O(L^{A+2B}).
+\]
+Each lifted arc is inside a window of radius \(2L^B/U_*\)
+about its center, since lifting divides the radius by \(|h|\).
+Use this common radius for every shift.
+
+The [wide-arc energy proof](../../results/pointwise-binary-splitting-semigroups/fixed-shift-comparison.tex)
+now runs with window parameter \(W=U_*L^{-B}\) and
+\(q\le L^{A+B}\). Its additive-to-Dirichlet inequality uses the
+fixed radius constant \(2\). The tail cutoff remains
+\(T_0=(Y/W)L^{B_1}=XL^{B+B_1}\) for the chosen fixed \(B_1\).
+At low frequency the periodic test on the rough variable has
+period dividing \(q\), so (C3) applies with one enlarged fixed
+exponent. At high frequency, splitting the small-bank prime and
+cofactor into residue classes costs at most \(q^2\) pairs. The
+smooth prime estimate uses modulus \(\operatorname{lcm}(q,4)\)
+and polynomial height, uniformly, and the unaltered cofactor ratio
+satisfies
+\[
+ \frac{T_0}{Y/P}=\frac{P L^{B+B_1}}{U_1U_2}
+ \le L^{B+B_1}\exp(O(L^{1/4})-2L^{1/3})=o(1).
+\]
+These are all the modulus and height costs in the energy estimate.
+For every fixed \(D>0\), its bound \(O(YL^{-D})\) on each
+window follows by choosing the low-frequency model depth after
+the residue, smoothing and Mellin budgets. Cauchy--Schwarz and
+Parseval then absorb \(O(L^{A+2B})\) windows, as well as the
+fixed comparison costs, by choosing \(D\) before that depth.
+The same bounds apply with the centered endpoint in either slot,
+using the opposite sign of the displacement for the reversed pairing.
+
+The explicit reconstruction in
+[assembly.tex](../../results/pointwise-binary-splitting-semigroups/assembly.tex)
+now uses its existing rare-bank probability \(O(L^{-2\delta})\)
+and smooth endpoint transitions of width \(XL^{-\delta}\).
+Both costs use the uniform (C4) bound at \(\mathcal S_{X,h}\).
+The scale is allowed between \(XL^{-\kappa_0}\) and
+\(XL^{\kappa_0}\) for a fixed \(\kappa_0\), so the earlier
+arbitrary logarithmic savings absorb the reconstruction costs
+with one accuracy for all shifts. The resulting interval comparison
+error is \(O_A(\mathcal S_{X,h}L^{-\delta})\).
+
+### 7.2. The sieve scale and the model tails
+
+Use the envelope of Section 3 with
+\[
+ J(h)=\prod_{\substack{p\mid h\\p\equiv3\ (4)}}\frac{p-1}{p-2},
+ \qquad \mathcal S_{X,h}=\frac{XJ(h)}{L}.
+\]
+The inequalities \(1\le J(h)\le |h|\) put this scale in the range
+required above. To get the displayed factor \(J(h)\), when an inert
+prime divides \(h\) and both endpoints are being sieved at that prime,
+keep the necessary condition \(v_p(n)\ne1\) at one endpoint.
+At other inert primes with both tests, the excluded classes are
+disjoint. With \(\rho_p=(p-1)/p^2\), the cost of using one test
+instead of two is therefore at most
+\[
+ \frac{1-\rho_p}{1-2\rho_p}\le\frac{p-1}{p-2}.
+\]
+At primes with just one active test keep that test, even if the prime
+divides \(h\). The nonbank product without these corrections
+has the same three orders as in Section 3 by Mertens' theorem
+in the class \(3\bmod4\). They are \(1/\log w\),
+\(1/\sqrt{\log y\log w}\) and \(1/\log y\) for two actual
+endpoints, one model endpoint and two model endpoints,
+respectively. Each model factor is \(O(L^{-3/10})\).
+The exact bank law is unchanged since \(p\nmid h\) at every bank
+prime. The Selberg denominator proof in Section 3 is uniform
+since all forbidden fractions are at most \(2/p\), and the
+CRT endpoint bound only counts roots. With level \(z=X^{1/100}\),
+the \(O(z^{4+o(1)})\) error per retained record, summed over at
+most \(E^2\) records, is power smaller than \(X^{1/2}\).
+For omitted records the one-variable Rankin bound applies on
+\([1,3X]\) to either endpoint. This gives (C4) with constants
+independent of \(h\).
+
+For \(v=v_p(h)\ge1\), the factor of \(T_h\) at an odd inert
+prime is \(S_p(v)=1+1/p+\cdots+1/p^v\). Uniformly in \(v\),
+\[
+ 1\le \frac{(p-1)/(p-2)}{S_p(v)}
+ \le\frac{(p-1)/(p-2)}{1+1/p}
+ =1+\frac{2}{(p-2)(p+1)}.
+\]
+The upper bounds have a convergent product. The dyadic factor
+\(W_2(h)/2\) lies in \([1/4,1]\). Consequently
+\(T_h\asymp J(h)\) with absolute constants.
+
+For the model product, the full small-prime records exceeding
+\(E=\exp(\sqrt L)\) have total integer count
+\(O(XL^{O(1)}\exp(-cL^{1/10}))\), uniformly by the same
+one-variable bound on \([1,3X]\). On the other records
+(CK.14) holds with its uniform relative \(O(L^{-1/2})\).
+For (CK.15) use the half-open interval and the inert square
+prefixes \(d^2,e^2\), retaining \(d,e\le E\) and dyadic powers
+at most \(E\). Either endpoint's square-prefix tail is bounded
+by
+\[
+ \sum_{E<d\le\sqrt{3X}}\left(\frac X{d^2}+1\right)
+       \ll X/E+\sqrt X.
+\]
+A dyadic tail consists of multiples of the first power of two
+above \(E\) and costs \(O(X/E+1)\). The corresponding Haar
+tails have mass \(O(E^{-1})\) by the same divisibility union
+bound, since translation by \(h\) preserves Haar measure.
+
+In each retained compatible prefix progression \(n=a+Qt\),
+the normalized endpoints \(n/d^2\) and \((n+h)/e^2\) are
+integral linear forms in \(t\). At an inert prime at most \(y\),
+the two unit conditions exclude at most two roots in \(t\), or
+the cell is empty if an endpoint is identically zero there.
+This holds also at primes dividing \(Q\). The sieve dimension
+bound follows uniformly from the product of
+\((1-2/p)^{-1}\) over primes \(p\equiv3\bmod4\), using
+Mertens' theorem in that class. With fundamental-lemma level
+\(D_0=X^{1/100}\), the relative error is
+\(O(\exp(-cL^{3/5}))\), by the
+[fundamental lemma](https://books.google.com/books?id=GJSKAwAAQBAJ)
+of Friedlander and Iwaniec, Lemma 6.11.
+The CRT remainder at a squarefree divisor \(m\) is
+\(O(2^{\omega(m)})\) per cell. Over all
+\(O(E^2(1+\log E)^2)\) cells, the endpoint error is at most
+\(X^{1/50+o(1)}\).
+
+The main coefficient for each cell is its exact Haar mass,
+because restriction to the progression fixes the prefix and
+the residual root densities multiply. The retained valuation
+cells are disjoint, hence the sum of their Haar masses is at
+most one. Adding the omitted Haar tails gives
+\(\delta_2(h)\prod_{p\le y,\ p\equiv3\ (4)}\delta_p(h)\),
+with all the errors above smaller than every fixed logarithmic
+power relative to \(X\) in the count. Every prime divisor of
+\(h\) lies below \(y\), so the only missing Euler factors in
+(CK.14)--(CK.16) are \(1-p^{-2}\) at \(p>y\). Their tail
+has relative error \(O(y^{-1})\). This proves
+\[
+ \sum_{X<n\le2X}\mathcal D(n)\mathcal D(n+h)
+    =T_h\frac X L\bigl(1+O_A(L^{-1/2})\bigr).
+\]
+The uniform comparison gives an error of size
+\(O_A(XJ(h)L^{-1-\delta})\).
+Using \(J(h)\ll T_h\) proves (CK.17).
+
+### 7.3. The mean, second factorial moment and variance
+
+**Corollary CKPoissonVariance.** Under ZF and G, for every fixed
+\(\lambda>0\), let \(H=\lfloor\lambda\sqrt L/K\rfloor\) and
+let \(t\) be uniform on \([X,2X]\cap\mathbb Z\). Then
+\(Z_X(t)=\sum_{j=1}^H b(t+j)\) satisfies
+\[
+ \mathbb E Z_X\longrightarrow\lambda,\qquad
+ \mathbb E[Z_X(Z_X-1)]\longrightarrow\lambda^2,\qquad
+ \operatorname{Var}(Z_X)\longrightarrow\lambda.
+ \tag{CK.18}
+\]
+
+Write \(N_X=|[X,2X]\cap\mathbb Z|=X+O(1)\) and
+\(B(x)=\sum_{n\le x}b(n)\). Translating the \(j\)-th inner interval
+changes the count from \(B(2X)-B(X)\) by \(O(j+1)\). Landau's
+asymptotic gives
+\[
+ \mathbb E Z_X=
+ \frac{H}{N_X}\bigl(B(2X)-B(X)\bigr)+O(H^2/X)
+ =\frac{HK}{\sqrt L}(1+o(1))+O(H^2/X).
+\]
+For a pair \(j,j+h\), the same translation changes the inner
+pair count from \(C_h(X)\) by \(O(j+1)\). Accounting for
+both orders gives
+\[
+ \mathbb E[Z_X(Z_X-1)]
+ =\frac{2}{N_X}\sum_{1\le h<H}(H-h)C_h(X)+O(H^3/X).
+\]
+In our normalization Smilansky's
+[Theorem 1](https://arxiv.org/abs/1208.2419v2) gives
+\[
+ 2\sum_{1\le h<H}(H-h)T_h=K^2H^2+O_\varepsilon(H^{1+\varepsilon}).
+\]
+In particular (CK.17) and positivity imply
+\[
+ \sum_{1\le h<H}(H-h)\left(C_h(X)-T_h\frac X L\right)
+ \ll_\lambda XL^{-\delta}.
+\]
+The second factorial moment is therefore \(K^2H^2/L+o(1)\).
+The variance follows by adding the first moment and subtracting
+its square.
+
+For the original sampling range \(1\le t\le X\), one can use
+\(\sum_{1\le n\le X}b(n)b(n+h)\) in the same proof. To see that
+it satisfies (CK.17) with the same main term, use dyads
+\((Y,2Y]\) with \(Y=X/2^j\ge \sqrt X\) and bound the remaining
+\(O(\sqrt X)\) terms trivially. For large \(X\) all these dyads
+have \(|h|\le(\log Y)^{A+1}\).
+Their comparison remainders sum to \(O_A(T_h XL^{-1-\delta})\).
+The main terms sum using
+\(\sum_jY/\log Y=X/L+O(X/L^2)\), which follows from
+\(\left|(\log Y)^{-1}-L^{-1}\right|\ll j/L^2\) and
+\(\sum_{j\ge1}j2^{-j}<\infty\). The unused mass at the lower
+endpoint is absorbed since \(T_h\ge1/4\).
+The argument permits \(H+1\) terms with the same limiting
+\(HK/\sqrt L\). Taking an inclusive interval gives
+\(\mathbb E Z_X^2\to\lambda+\lambda^2\) in the sampling of
+Gorodetsky--Rodgers [Conjecture 1, \(k=2\)](https://arxiv.org/abs/1810.06002v4).
+
+## 8. Fixed consecutive gaps and patterns with two ones
+
+**Corollary CKFixedPatterns.** Assume ZF and G. Let \(u<v\) be
+fixed integers and let \(\mathcal Z\) be a fixed finite subset of
+\(\mathbb Z\setminus\{u,v\}\). Then
+\[
+ P_{u,v,\mathcal Z}(X)
+ :=\sum_{1\le n\le X} b(n+u)b(n+v)
+                   \prod_{z\in\mathcal Z}(1-b(n+z))
+ \sim T_{v-u}\frac{X}{\log X}.
+ \tag{CK.19}
+\]
+In particular, if \(s_1<s_2<\cdots\) are the positive sums of two
+squares, then for every fixed \(h\ge1\),
+\[
+ \#\{j:s_j\le X,\ s_{j+1}-s_j=h\}
+ \sim T_h\frac{X}{\log X}.
+ \tag{CK.20}
+\]
+
+The Selberg sieve bound of [Nowak, Section 2](https://doi.org/10.2298/PIM0591071N),
+also recorded by
+[Freiberg--Kurlberg--Rosenzweig, Section 2.1](https://arxiv.org/abs/1701.01157v1),
+gives, for three distinct fixed integer offsets \(u,v,z\),
+\[
+ \sum_{1\le n\le X}b(n+u)b(n+v)b(n+z)
+ \ll_{u,v,z}\frac{X}{(\log X)^{3/2}}.
+\]
+Indeed, take the normal extension \(\mathbb Q(i)/\mathbb Q\) of
+degree two and the three monic linear forms with offsets \(u,v,z\).
+Their pairwise determinants are nonzero. The finite exceptional-prime
+product depends only on the offsets. In the Gaussian field the
+integral-ideal norm indicator is exactly \(b\).
+
+Let \(P_{u,v,\varnothing}(X)\) be the pair count. Each excluded pair
+has \(b(n+z)=1\) for some \(z\in\mathcal Z\). The union bound gives
+\[
+ 0\le P_{u,v,\varnothing}(X)-P_{u,v,\mathcal Z}(X)
+ \le\sum_{z\in\mathcal Z}\ \sum_{1\le n\le X}
+                      b(n+u)b(n+v)b(n+z)
+ \ll_{u,v,\mathcal Z}\frac{X}{(\log X)^{3/2}}.
+\]
+Translating \(n\) by \(u\) changes at most \(O_u(1)\) endpoint
+terms when applying (CK.2) at shift \(v-u\). Since \(T_{v-u}>0\),
+the pair asymptotic gives (CK.19). Taking \(u=0\), \(v=h\) and
+\(\mathcal Z=\{1,\ldots,h-1\}\) gives exactly the count in (CK.20).
+For \(h=1\) the interior is empty.
+
+These are frequencies for each fixed gap size. Bounds on gap size
+as \(s_j\) grows are the subject of
+[Erdős Problem 222](https://www.erdosproblems.com/222).

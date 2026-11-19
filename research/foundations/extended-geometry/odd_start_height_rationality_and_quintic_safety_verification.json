@@ -1,0 +1,1366 @@
+{
+  "passed": true,
+  "unit_center_degree_box": {
+    "constant_H_second_coefficient": 55,
+    "linear_H_Bezout": {
+      "first": [
+        1,
+        22,
+        55
+      ],
+      "second": [
+        1,
+        84,
+        1260,
+        5320,
+        5985
+      ],
+      "Bezout_first_multiplier": [
+        20153693,
+        671446930,
+        3272197005,
+        3832387020
+      ],
+      "Bezout_second_multiplier": [
+        -12852499,
+        -35218260
+      ],
+      "nonzero_constant": 7301194,
+      "second_remainder_mod_first": [
+        "4082/3025",
+        "10584/275"
+      ]
+    }
+  },
+  "all_degree_zero_center": {
+    "coefficient_convention": "All arrays ascend in a; quadratic/quartic coefficient lists descend in z.",
+    "D2_factors": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "D4_factors": [
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        9,
+        4
+      ]
+    ],
+    "A2_coefficients_in_z": [
+      [
+        15,
+        16,
+        4
+      ],
+      [
+        10,
+        24,
+        8
+      ],
+      [
+        3,
+        8,
+        4
+      ]
+    ],
+    "A4_coefficients_in_z": [
+      [
+        945,
+        2976,
+        3296,
+        1536,
+        256
+      ],
+      [
+        1260,
+        7328,
+        10496,
+        5632,
+        1024
+      ],
+      [
+        1134,
+        7200,
+        12480,
+        7680,
+        1536
+      ],
+      [
+        540,
+        3552,
+        6656,
+        4608,
+        1024
+      ],
+      [
+        105,
+        704,
+        1376,
+        1024,
+        256
+      ]
+    ],
+    "Sylvester_matrix": [
+      [
+        [
+          15,
+          16,
+          4
+        ],
+        [
+          10,
+          24,
+          8
+        ],
+        [
+          3,
+          8,
+          4
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          0
+        ],
+        [
+          15,
+          16,
+          4
+        ],
+        [
+          10,
+          24,
+          8
+        ],
+        [
+          3,
+          8,
+          4
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          15,
+          16,
+          4
+        ],
+        [
+          10,
+          24,
+          8
+        ],
+        [
+          3,
+          8,
+          4
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          15,
+          16,
+          4
+        ],
+        [
+          10,
+          24,
+          8
+        ],
+        [
+          3,
+          8,
+          4
+        ]
+      ],
+      [
+        [
+          945,
+          2976,
+          3296,
+          1536,
+          256
+        ],
+        [
+          1260,
+          7328,
+          10496,
+          5632,
+          1024
+        ],
+        [
+          1134,
+          7200,
+          12480,
+          7680,
+          1536
+        ],
+        [
+          540,
+          3552,
+          6656,
+          4608,
+          1024
+        ],
+        [
+          105,
+          704,
+          1376,
+          1024,
+          256
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          0
+        ],
+        [
+          945,
+          2976,
+          3296,
+          1536,
+          256
+        ],
+        [
+          1260,
+          7328,
+          10496,
+          5632,
+          1024
+        ],
+        [
+          1134,
+          7200,
+          12480,
+          7680,
+          1536
+        ],
+        [
+          540,
+          3552,
+          6656,
+          4608,
+          1024
+        ],
+        [
+          105,
+          704,
+          1376,
+          1024,
+          256
+        ]
+      ]
+    ],
+    "determinant_coefficients": [
+      41472000,
+      471859200,
+      2121990144,
+      4895932416,
+      6413615104,
+      4954521600,
+      2231369728,
+      541065216,
+      54525952
+    ],
+    "positive_polynomial_P": [
+      10125,
+      115200,
+      518064,
+      1195296,
+      1565824,
+      1209600,
+      544768,
+      132096,
+      13312
+    ],
+    "constant_factor": 4096,
+    "nonzero_determinant_permutation_terms": 33,
+    "identity": "det Sylvester(D2*P2,D4*P4)=4096P(a) in Z[a].",
+    "quantifier_scope": "Polynomial coefficient identity, not finite sampling in a. Positive coefficients make P(a) nonzero for every positive integer a; characteristic zero preserves nonvanishing.",
+    "limits": "Applies to zero-center phases t^a(C+t^2D)/x with positive odd integera and C(0)=D(0)=0. It does not classify arbitrary polynomials of heighta+2."
+  },
+  "endpoint_controls": {
+    "cases": [
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "0",
+        "kappa": "8/105",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "0",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "0",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "8/5",
+        "kappa": "8/105",
+        "endpoint_coefficient": "21"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "128/21",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "715"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "4096/143",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "27132"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "8/5",
+        "kappa": "8/105",
+        "endpoint_coefficient": "21"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "128/21",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "715"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "4096/143",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "27132"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "2/5",
+        "kappa": "8/105",
+        "endpoint_coefficient": "21/4"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "8/21",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "715/16"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "64/143",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "6783/16"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "8/105",
+        "kappa": "8/105",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "128/15015",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "1024/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "96/35",
+        "kappa": "8/105",
+        "endpoint_coefficient": "36"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "8704/429",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "2380"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "2355200/12597",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "177100"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "64/105",
+        "kappa": "8/105",
+        "endpoint_coefficient": "8"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "-512/5005",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "-12"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "-1458176/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "-1424"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "106/105",
+        "kappa": "8/105",
+        "endpoint_coefficient": "53/4"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "14152/5005",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "5307/16"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "9584320/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "149755/16"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "32/105",
+        "kappa": "8/105",
+        "endpoint_coefficient": "4"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "2048/15015",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "16"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "65536/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "64"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "424/105",
+        "kappa": "8/105",
+        "endpoint_coefficient": "53"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "226432/5005",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "5307"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "613396480/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "599020"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "-8/35",
+        "kappa": "8/105",
+        "endpoint_coefficient": "-3"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "-12928/15015",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "-101"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "2633728/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "2572"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "62/35",
+        "kappa": "8/105",
+        "endpoint_coefficient": "93/4"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "130904/15015",
+        "kappa": "128/15015",
+        "endpoint_coefficient": "16363/16"
+      },
+      {
+        "a": 1,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "52067776/969969",
+        "kappa": "1024/969969",
+        "endpoint_coefficient": "813559/16"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "0",
+        "kappa": "8/693",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "0",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "0",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "40/63",
+        "kappa": "8/693",
+        "endpoint_coefficient": "55"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "384/221",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "5985"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "13312/2185",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "736281"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "40/63",
+        "kappa": "8/693",
+        "endpoint_coefficient": "55"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "384/221",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "5985"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "13312/2185",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "736281"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "10/63",
+        "kappa": "8/693",
+        "endpoint_coefficient": "55/4"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "24/221",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "5985/16"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "208/2185",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "736281/64"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "8/693",
+        "kappa": "8/693",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "128/440895",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "1024/123751845",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "208/231",
+        "kappa": "8/693",
+        "endpoint_coefficient": "78"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "323840/88179",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "12650"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "113360896/5892945",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "2324784"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "272/693",
+        "kappa": "8/693",
+        "endpoint_coefficient": "34"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "78592/146965",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "1842"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "21643264/24750369",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "105680"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "206/693",
+        "kappa": "8/693",
+        "endpoint_coefficient": "103/4"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "59608/146965",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "22353/16"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "87998864/123751845",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "5499929/64"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "32/693",
+        "kappa": "8/693",
+        "endpoint_coefficient": "4"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "2048/440895",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "16"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "65536/123751845",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "64"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "824/693",
+        "kappa": "8/693",
+        "endpoint_coefficient": "103"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "953728/146965",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "22353"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "5631927296/123751845",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "5499929"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "40/231",
+        "kappa": "8/693",
+        "endpoint_coefficient": "15"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "-34688/440895",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "-271"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "-9638912/41250615",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "-28239"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "106/231",
+        "kappa": "8/693",
+        "endpoint_coefficient": "159/4"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "24968/25935",
+        "kappa": "128/440895",
+        "endpoint_coefficient": "53057/16"
+      },
+      {
+        "a": 3,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "21439472/8250123",
+        "kappa": "1024/123751845",
+        "endpoint_coefficient": "20099505/64"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "0",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "0",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "0",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "0"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "56/143",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "105"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "1664/1725",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "23751"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "38912/12617",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "6096454"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "56/143",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "105"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "1664/1725",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "23751"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "38912/12617",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "6096454"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "14/143",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "105/4"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "104/1725",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "23751/16"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 0,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "608/12617",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "3048227/32"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "8/2145",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "128/3151575",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "1024/2024183161",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "1"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "1088/2145",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "136"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "349184/210105",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "40920"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "185966592/26288093",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "13983816"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "608/2145",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "76"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "1466368/3151575",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "11456"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "1985007616/2024183161",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "1938484"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "26/165",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "169/4"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "509368/3151575",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "63671/16"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 1,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "436029280/2024183161",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "13625915/32"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 2,
+        "direct_angular_moment": "32/2145",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "4"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 4,
+        "direct_angular_moment": "2048/3151575",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "16"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "0",
+        "m": 6,
+        "direct_angular_moment": "65536/2024183161",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "64"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 2,
+        "direct_angular_moment": "104/165",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "169"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 4,
+        "direct_angular_moment": "8149888/3151575",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "63671"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1",
+        "m": 6,
+        "direct_angular_moment": "27905873920/2024183161",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "27251830"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 2,
+        "direct_angular_moment": "392/2145",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "49"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 4,
+        "direct_angular_moment": "142976/1050525",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "3351"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "-1",
+        "m": 6,
+        "direct_angular_moment": "14481408/155706397",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "183846"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 2,
+        "direct_angular_moment": "482/2145",
+        "kappa": "8/2145",
+        "endpoint_coefficient": "241/4"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 4,
+        "direct_angular_moment": "38184/116725",
+        "kappa": "128/3151575",
+        "endpoint_coefficient": "128871/16"
+      },
+      {
+        "a": 5,
+        "H_linear_coefficient": 2,
+        "J_linear_coefficient": "1/2",
+        "m": 6,
+        "direct_angular_moment": "1253591904/2024183161",
+        "kappa": "1024/2024183161",
+        "endpoint_coefficient": "39174747/32"
+      }
+    ],
+    "case_count": 108,
+    "wrong_height_exponent_rejected": true,
+    "scope": "Independent direct Laurent-x/height integral versus endpoint coefficient at odd starts1,3,5. Finite controls only."
+  },
+  "contraction_weight_controls": {
+    "E2_z1_is_z1": true,
+    "negative_branch_fixed_degree_controls": [
+      {
+        "m": 1,
+        "input_weight": 0,
+        "output": [
+          2,
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "m": 2,
+        "input_weight": -1,
+        "output": [
+          4,
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "m": 3,
+        "input_weight": -2,
+        "output": null
+      },
+      {
+        "m": 4,
+        "input_weight": -3,
+        "output": null
+      }
+    ],
+    "positive_weights_rejected": true,
+    "scope": "Regression against the false assertion that all nonzero original torus weights vanish. Eventual safety uses the written output-degree argument."
+  },
+  "source_sha256": {
+    "verify_odd_start_height_rationality_and_quintic_safety.py": "c9677862dfe73ccdfb2a71b5b9a116a0e7b29fa56c8650b3282c1ebb03c31db3",
+    "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851"
+  },
+  "scope": "Exact literal Bezout and universal Z[a] Sylvester coefficient identities, with finite raw endpoint controls. Written arguments supply all-degree rationality, purity equivalence, safety and infinity restriction.",
+  "external_review": false,
+  "formal_verification": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "arithmetic": "exact finite-field matrices, complete nullspaces and freely reduced words",
+  "case": {
+    "field_characteristic": 11,
+    "V_dimension": 6,
+    "Z1_dimension": 11,
+    "Zroot_dimension": 6,
+    "extended_dimension": 12,
+    "extended_covector_span": 6,
+    "projected_cocycle_coefficient_rank": 6,
+    "original_covector_span": 5,
+    "coboundary_map_rank": 5,
+    "global_invariant_dimension": 1,
+    "b": 8,
+    "k": 2
+  },
+  "controls": {
+    "whole_augmented_braid_closure": true,
+    "exact_protected_free_words": true,
+    "one_knot_permutation_cycle": true,
+    "mu_one_characteristic_two": true,
+    "nonroot_translation_rejected": true,
+    "all_imported_source_pins": true,
+    "reverse_bridge_covectors_coboundaries_invariants": true
+  },
+  "source_sha256": {
+    "verify_rank_one_cohomology_covector_barrier.py": "69804bf7728e37d3207285ab96d3404d151b6dde6b11f4fe381b38f064f45c1e",
+    "rank_one_cohomology_barrier_inputs.json": "18698d50106fec531fde02e0110059c901151cbd3705c4f84c717e64d58383a3",
+    "RANK_ONE_COHOMOLOGY_COVECTOR_BARRIER.md": "04c3d38cbaadc87edc5279c760c6fbbcc467d1b6b05ac99aeb7031b4c00b3f37",
+    "rank_one_cohomology_covector_barrier_source_ledger.json": "3fde37be51bce8f7df0900f0684fc574594416c17d03cb2c524c15f04969c910",
+    "TWO_SIDED_PROTECTED_OBSTRUCTIONS.md": "1ed5ec8850e62258ee8b960382fbcd90506e7e6bbc8409d6d549f4d9a96f3789",
+    "gao-gu-li-wang-2611.15673v1.pdf": "50831e7525fa71bed1c3eba7d5cf27b79af86f52f54002e29b90b28e64464dbd"
+  },
+  "scope": "finite controls of the universal affine-extension proof; all-field/mu1 theorem follows from written argument, not sampling",
+  "external_review": false,
+  "formal_verification": false
+}

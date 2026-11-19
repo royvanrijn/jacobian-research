@@ -1,0 +1,4802 @@
+{
+  "bank": [
+    2,
+    3,
+    13
+  ],
+  "prime_controls": [
+    {
+      "p": 2,
+      "split": true,
+      "nonprincipal_form_witness": [
+        1,
+        0
+      ],
+      "principal_representations": []
+    },
+    {
+      "p": 3,
+      "split": true,
+      "nonprincipal_form_witness": [
+        0,
+        1
+      ],
+      "principal_representations": []
+    },
+    {
+      "p": 13,
+      "split": true,
+      "nonprincipal_form_witness": [
+        2,
+        1
+      ],
+      "principal_representations": []
+    },
+    {
+      "p": 29,
+      "split": true,
+      "nonprincipal_form_witness": [
+        -2,
+        3
+      ],
+      "principal_representations": []
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 16,
+      "pairs": [
+        {
+          "label": "A",
+          "u": 8,
+          "v": 8,
+          "u_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "v_bank_phase": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "B",
+          "u": 3,
+          "v": 13,
+          "u_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "v_bank_phase": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "C",
+          "u": 4,
+          "v": 12,
+          "u_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "v_bank_phase": [
+            2,
+            1,
+            0
+          ]
+        }
+      ],
+      "complete_phase_cases": 81,
+      "witnesses": [
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            0,
+            0
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "B",
+          "u": 3,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 4,
+          "v": 12,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            2,
+            0
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 4,
+          "v": 12,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            0,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 8,
+          "v": 8,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        }
+      ],
+      "pair_deletion_controls": [
+        {
+          "removed_label": "A",
+          "uncovered_phase_case": [
+            [
+              0,
+              0,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "removed_label": "B",
+          "uncovered_phase_case": [
+            [
+              0,
+              2,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "removed_label": "C",
+          "uncovered_phase_case": [
+            [
+              0,
+              0,
+              1
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "pairs": [
+        {
+          "label": "A",
+          "u": 1,
+          "v": 18,
+          "u_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "v_bank_phase": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "label": "B",
+          "u": 3,
+          "v": 16,
+          "u_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "v_bank_phase": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "C",
+          "u": 6,
+          "v": 13,
+          "u_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "v_bank_phase": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "complete_phase_cases": 81,
+      "witnesses": [
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            0,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 6,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            0,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 6,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            2,
+            0
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            2,
+            0
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 3,
+          "v": 16,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 6,
+          "v": 13,
+          "active_counts_at_case_minimum": [
+            0,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 1,
+          "v": 18,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        }
+      ],
+      "pair_deletion_controls": [
+        {
+          "removed_label": "A",
+          "uncovered_phase_case": [
+            [
+              0,
+              0,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "removed_label": "B",
+          "uncovered_phase_case": [
+            [
+              0,
+              0,
+              1
+            ],
+            0
+          ]
+        },
+        {
+          "removed_label": "C",
+          "uncovered_phase_case": [
+            [
+              0,
+              1,
+              0
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 39,
+      "pairs": [
+        {
+          "label": "A",
+          "u": 3,
+          "v": 36,
+          "u_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "v_bank_phase": [
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "label": "B",
+          "u": 12,
+          "v": 27,
+          "u_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "v_bank_phase": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "C",
+          "u": 13,
+          "v": 26,
+          "u_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "v_bank_phase": [
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "complete_phase_cases": 81,
+      "witnesses": [
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            0
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 13,
+          "v": 26,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            0,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            0,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 13,
+          "v": 26,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            0
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            0,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            1,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            0,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "B",
+          "u": 12,
+          "v": 27,
+          "active_counts_at_case_minimum": [
+            2,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            1,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            5,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": "0",
+          "pair_label": "C",
+          "u": 13,
+          "v": 26,
+          "active_counts_at_case_minimum": [
+            3,
+            2
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            0
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            1
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": "0",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            2,
+            3
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": "1",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            3,
+            4
+          ]
+        },
+        {
+          "q_bank_phase": [
+            2,
+            2,
+            2
+          ],
+          "outside_active_case": ">=2",
+          "pair_label": "A",
+          "u": 3,
+          "v": 36,
+          "active_counts_at_case_minimum": [
+            4,
+            5
+          ]
+        }
+      ],
+      "pair_deletion_controls": [
+        {
+          "removed_label": "A",
+          "uncovered_phase_case": [
+            [
+              0,
+              0,
+              1
+            ],
+            0
+          ]
+        },
+        {
+          "removed_label": "B",
+          "uncovered_phase_case": [
+            [
+              0,
+              0,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "removed_label": "C",
+          "uncovered_phase_case": [
+            [
+              0,
+              1,
+              0
+            ],
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "compact_table": [
+    {
+      "phase": [
+        0,
+        0,
+        0
+      ],
+      "16_R0": "A",
+      "16_R1": "B",
+      "19_R0": "A",
+      "19_R1": "B",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        0,
+        1
+      ],
+      "16_R0": "C",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        0,
+        2
+      ],
+      "16_R0": "B",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        1,
+        0
+      ],
+      "16_R0": "C",
+      "16_R1": "A",
+      "19_R0": "C",
+      "19_R1": "A",
+      "39_R0": "C",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        1,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        1,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        2,
+        0
+      ],
+      "16_R0": "B",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "B"
+    },
+    {
+      "phase": [
+        0,
+        2,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        0,
+        2,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        0,
+        0
+      ],
+      "16_R0": "B",
+      "16_R1": "A",
+      "19_R0": "C",
+      "19_R1": "A",
+      "39_R0": "C",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        0,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        0,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        1,
+        0
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "B"
+    },
+    {
+      "phase": [
+        1,
+        1,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        1,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        2,
+        0
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        2,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        1,
+        2,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        0,
+        0
+      ],
+      "16_R0": "B",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        0,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        0,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        1,
+        0
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "B",
+      "39_R0": "B",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        1,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        1,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "B",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        2,
+        0
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "C",
+      "19_R1": "A",
+      "39_R0": "C",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        2,
+        1
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    },
+    {
+      "phase": [
+        2,
+        2,
+        2
+      ],
+      "16_R0": "A",
+      "16_R1": "A",
+      "19_R0": "A",
+      "19_R1": "A",
+      "39_R0": "A",
+      "39_R1": "A"
+    }
+  ],
+  "reverse_phase_realizations": [
+    {
+      "bank_phase": [
+        0,
+        0,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 1
+    },
+    {
+      "bank_phase": [
+        0,
+        0,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 29
+    },
+    {
+      "bank_phase": [
+        0,
+        0,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 13
+    },
+    {
+      "bank_phase": [
+        0,
+        0,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 377
+    },
+    {
+      "bank_phase": [
+        0,
+        0,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 169
+    },
+    {
+      "bank_phase": [
+        0,
+        0,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 4901
+    },
+    {
+      "bank_phase": [
+        0,
+        1,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 3
+    },
+    {
+      "bank_phase": [
+        0,
+        1,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 87
+    },
+    {
+      "bank_phase": [
+        0,
+        1,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 39
+    },
+    {
+      "bank_phase": [
+        0,
+        1,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 1131
+    },
+    {
+      "bank_phase": [
+        0,
+        1,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 507
+    },
+    {
+      "bank_phase": [
+        0,
+        1,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 14703
+    },
+    {
+      "bank_phase": [
+        0,
+        2,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 9
+    },
+    {
+      "bank_phase": [
+        0,
+        2,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 261
+    },
+    {
+      "bank_phase": [
+        0,
+        2,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 117
+    },
+    {
+      "bank_phase": [
+        0,
+        2,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 3393
+    },
+    {
+      "bank_phase": [
+        0,
+        2,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 1521
+    },
+    {
+      "bank_phase": [
+        0,
+        2,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 44109
+    },
+    {
+      "bank_phase": [
+        1,
+        0,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 2
+    },
+    {
+      "bank_phase": [
+        1,
+        0,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 58
+    },
+    {
+      "bank_phase": [
+        1,
+        0,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 26
+    },
+    {
+      "bank_phase": [
+        1,
+        0,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 754
+    },
+    {
+      "bank_phase": [
+        1,
+        0,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 338
+    },
+    {
+      "bank_phase": [
+        1,
+        0,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 9802
+    },
+    {
+      "bank_phase": [
+        1,
+        1,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 6
+    },
+    {
+      "bank_phase": [
+        1,
+        1,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 174
+    },
+    {
+      "bank_phase": [
+        1,
+        1,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 78
+    },
+    {
+      "bank_phase": [
+        1,
+        1,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 2262
+    },
+    {
+      "bank_phase": [
+        1,
+        1,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 1014
+    },
+    {
+      "bank_phase": [
+        1,
+        1,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 29406
+    },
+    {
+      "bank_phase": [
+        1,
+        2,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 18
+    },
+    {
+      "bank_phase": [
+        1,
+        2,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 522
+    },
+    {
+      "bank_phase": [
+        1,
+        2,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 234
+    },
+    {
+      "bank_phase": [
+        1,
+        2,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 6786
+    },
+    {
+      "bank_phase": [
+        1,
+        2,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 3042
+    },
+    {
+      "bank_phase": [
+        1,
+        2,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 88218
+    },
+    {
+      "bank_phase": [
+        2,
+        0,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 4
+    },
+    {
+      "bank_phase": [
+        2,
+        0,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 116
+    },
+    {
+      "bank_phase": [
+        2,
+        0,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 52
+    },
+    {
+      "bank_phase": [
+        2,
+        0,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 1508
+    },
+    {
+      "bank_phase": [
+        2,
+        0,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 676
+    },
+    {
+      "bank_phase": [
+        2,
+        0,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 19604
+    },
+    {
+      "bank_phase": [
+        2,
+        1,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 12
+    },
+    {
+      "bank_phase": [
+        2,
+        1,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 348
+    },
+    {
+      "bank_phase": [
+        2,
+        1,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 156
+    },
+    {
+      "bank_phase": [
+        2,
+        1,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 4524
+    },
+    {
+      "bank_phase": [
+        2,
+        1,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 2028
+    },
+    {
+      "bank_phase": [
+        2,
+        1,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 58812
+    },
+    {
+      "bank_phase": [
+        2,
+        2,
+        0
+      ],
+      "outside_active_count": 0,
+      "q": 36
+    },
+    {
+      "bank_phase": [
+        2,
+        2,
+        0
+      ],
+      "outside_active_count": 1,
+      "q": 1044
+    },
+    {
+      "bank_phase": [
+        2,
+        2,
+        1
+      ],
+      "outside_active_count": 0,
+      "q": 468
+    },
+    {
+      "bank_phase": [
+        2,
+        2,
+        1
+      ],
+      "outside_active_count": 1,
+      "q": 13572
+    },
+    {
+      "bank_phase": [
+        2,
+        2,
+        2
+      ],
+      "outside_active_count": 0,
+      "q": 6084
+    },
+    {
+      "bank_phase": [
+        2,
+        2,
+        2
+      ],
+      "outside_active_count": 1,
+      "q": 176436
+    }
+  ],
+  "finite_cover_equivalence": "For the specified bank-smooth pair list, the complete R0/R1 phase cover is equivalent to one of those displayed pairs giving two primitive values after every multiplier q in C. Reverse realizes phase e by the bank product and R1 by its product with nonprincipal29. This does not claim all universal P+P membership must use the displayed list.",
+  "outside_case_completeness": "All seed factors lie in the bank, so outside active primes are unchanged. R>=2 makes every final count at least2; exact R0 andR1 cover every remaining integer.",
+  "ramified_scope": "Arbitrary q with no inert factor and v23(q)<=1. Every seed summand is prime to23, so both resulting summands retain that ramified valuation.",
+  "scope": "Universal unbounded multiplier cones proved by a complete finite C3 phase reduction. No unrestricted exact -23 exception completion, external review or formal verification is asserted.",
+  "checker_sha256": "6348efa6a04e98c90a8f0db4aa72ddea095107f3e346fe600e1117a6fd5aeb31"
+}

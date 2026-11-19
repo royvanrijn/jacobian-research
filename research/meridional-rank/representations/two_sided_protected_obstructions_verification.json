@@ -40,7 +40,7 @@
   "check_count": 31,
   "source_sha256": {
     "research/meridional-rank/representations/verify_two_sided_protected_obstructions.py": "1c1f13c08239fa88b8979de9318f01449732d0e12b52228210e083d59f0272d7",
-    "research/meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md": "f2cbb636fa4148c5f26da49e9a21d4f9551f2fa0a95347c905a09a22fab288d8",
+    "research/meridional-rank/representations/TWO_SIDED_PROTECTED_OBSTRUCTIONS.md": "1ed5ec8850e62258ee8b960382fbcd90506e7e6bbc8409d6d549f4d9a96f3789",
     "research/meridional-rank/representations/MULTIPLE_PROTECTED_OBSTRUCTIONS.md": "fb6648ceb9b3f7476ae609f2971e740bbff1b8900cd467b8a6d6a2fcfc65717a",
     "results/prime-knot-augmentation-gaps/representations.tex": "bf778455b9bb487cdfa6be6f14422b9421389fcd8d8f074072bfaa8e2a52f499"
   },

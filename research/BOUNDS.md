@@ -19,9 +19,12 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HESSIAN-COORDINATE-CONDUCTOR | proved | source-line-coordinate-order-normalization-defect | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate; source lines y=c where the global conductor leading coefficient is nonzero | lower: 4 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
+| MRC-TWO-CABLE-ACTUAL-GAP-AT-MOST-ONE | proved | complex-augmentation-gap | Preferred winding-two cables C_(2,Q)(K) for every odd Q, where K is the explicit four-bridge K_n (n>=0) or uniform K_(b,k) (b>=5,k>=0) companion | upper: 1 |  |
+| ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED | proved | uniform-admissible-existence-onset | The least integer N0 such that every integer N>=N0 with529 not dividingN lies in P23+P23, P23 positive primitive x^2+xy+6y^2 values | lower: 3819 |  |
 | ARITH-D20-EFFECTIVE-ALL-TARGETS | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | upper: 73786976294838206464 |  |
 | ARITH-D20-EXACT-SUMSET-AFFIRMATIVE | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | upper: 5 |  |
 | ARITH-D20-EXACT-SUMSET-AFFIRMATIVE | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | lower: 5 |  |
+| ARITH-D23-EFFECTIVE-ALL-TARGETS | proved | uniform-admissible-existence-onset | The least integer N0 such that every integer N>=N0 with529 not dividingN lies in P23+P23, P23 positive primitive x^2+xy+6y^2 values | upper: 904625697166532776746648320380374280103671755200316906558262375061821325312 |  |
 | EXT-JC2-DEGREE-100 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 101 |  |
 | EXT-JC2-DEGREE-104 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 105 |  |
 | EXT-JC2-DEGREE-107 | conditional | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1 |
@@ -334,6 +337,8 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-EISENSTEIN-BALANCED-INERT-TAIL | proved | sufficient onset for ordinary thirds balance on all-inert targets | positive n=2 modulo 6 with every prime divisor 2 modulo 3 | upper: 2^60 |  |
 | GAUSSIAN-TERNARY-CUBIC-GEOMETRIC-PREFIX-AT-LEAST-SIX | proved | geometric pure-moment prefix | Complex polynomials of total degree at most three in three variables with standard Gaussian Wick moments | lower: 6 |  |
 | GAUSSIAN-TERNARY-CUBIC-ORDINARY-PREFIX-AT-LEAST-TEN | proved | ordinary pure-moment ideal prefix | Complex polynomials of total degree at most three in three variables with standard Gaussian Wick moments | lower: 10 |  |
+| HOPF-ODD-CUBIC-SHARP-UNSAFE-THRESHOLD-SIX | proved | least-unsafe-sphere-degree | Regular pure sphere phases p=t*x^-1(C(x)+t^2*D(x)) over characteristic-zero fields, least sphere degree admitting failure of eventual mixed vanishing for a fixed polynomial marker | lower: 6 |  |
+| HOPF-ODD-CUBIC-SHARP-UNSAFE-THRESHOLD-SIX | proved | least-unsafe-sphere-degree | Regular pure sphere phases p=t*x^-1(C(x)+t^2*D(x)) over characteristic-zero fields, least sphere degree admitting failure of eventual mixed vanishing for a fixed polynomial marker | upper: 6 |  |
 
 ## Comparable improvements
 

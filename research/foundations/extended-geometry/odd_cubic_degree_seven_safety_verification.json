@@ -1,0 +1,1609 @@
+{
+  "passed": true,
+  "scope": "Exact finite degree/root-partition bookkeeping and rational partial-fraction/original-F9 controls. Field-involution and pole-divisor arguments in the separate proof establish universal septic exclusion; old all-order F9 supplies sharpness.",
+  "degree_seven_patterns": [
+    {
+      "c": 1,
+      "e": 5,
+      "multiplicities": [
+        1
+      ],
+      "h": 1,
+      "R_degree": 0,
+      "exclusion": "squarefree center excluded"
+    },
+    {
+      "c": 3,
+      "e": 5,
+      "multiplicities": [
+        3
+      ],
+      "h": 1,
+      "R_degree": 2,
+      "exclusion": "one-pole degrees classified"
+    },
+    {
+      "c": 3,
+      "e": 5,
+      "multiplicities": [
+        2,
+        1
+      ],
+      "h": 2,
+      "R_degree": 1,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 3,
+      "e": 5,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 0,
+      "exclusion": "squarefree center excluded"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        5
+      ],
+      "h": 1,
+      "R_degree": 4,
+      "exclusion": "one-pole degrees classified"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        4,
+        1
+      ],
+      "h": 2,
+      "R_degree": 3,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2
+      ],
+      "h": 2,
+      "R_degree": 3,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        3,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 1,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 5,
+      "e": 5,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 0,
+      "exclusion": "squarefree center excluded"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        7
+      ],
+      "h": 1,
+      "R_degree": 6,
+      "exclusion": "one-pole degrees classified"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        7
+      ],
+      "h": 1,
+      "R_degree": 6,
+      "exclusion": "one-pole degrees classified"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        7
+      ],
+      "h": 1,
+      "R_degree": 6,
+      "exclusion": "one-pole degrees classified"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        6,
+        1
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        6,
+        1
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        6,
+        1
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        5,
+        2
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        5,
+        2
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        5,
+        2
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        5,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        5,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        5,
+        1,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "maximal pole union forces simple-root capacity contradiction"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        4,
+        3
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        4,
+        3
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        4,
+        3
+      ],
+      "h": 2,
+      "R_degree": 5,
+      "exclusion": "two-root logarithmic exclusion"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        4,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        4,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        4,
+        2,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "maximal pole union forces simple-root capacity contradiction"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        3,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        3,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        3,
+        3,
+        1
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "maximal pole union forces simple-root capacity contradiction"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        3,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        3,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2,
+        2
+      ],
+      "h": 3,
+      "R_degree": 4,
+      "exclusion": "maximal pole union forces simple-root capacity contradiction"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "h": 4,
+      "R_degree": 3,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "h": 5,
+      "R_degree": 2,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 1,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 1,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 6,
+      "R_degree": 1,
+      "exclusion": "infinity zero degree exceeds pole sum"
+    },
+    {
+      "c": 7,
+      "e": 1,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 0,
+      "exclusion": "squarefree center excluded"
+    },
+    {
+      "c": 7,
+      "e": 3,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 0,
+      "exclusion": "squarefree center excluded"
+    },
+    {
+      "c": 7,
+      "e": 5,
+      "multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "h": 7,
+      "R_degree": 0,
+      "exclusion": "squarefree center excluded"
+    }
+  ],
+  "partial_fraction_controls": [
+    {
+      "partition": [
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-1"
+      ],
+      "R_numerator": [
+        "0"
+      ],
+      "R_denominator": [
+        "1"
+      ],
+      "R_degree": 0,
+      "residues": [
+        "-1"
+      ]
+    },
+    {
+      "partition": [
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-3",
+        "3",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-1/2"
+      ],
+      "R_denominator": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-5/2",
+        "2",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2"
+      ],
+      "R_denominator": [
+        "-1",
+        "1"
+      ],
+      "R_degree": 1,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-11/6",
+        "1",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0"
+      ],
+      "R_denominator": [
+        "1"
+      ],
+      "R_degree": 0,
+      "residues": [
+        "-3",
+        "6",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        5
+      ],
+      "C_coefficients": [
+        "1",
+        "-5",
+        "10",
+        "-10",
+        "5",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-3/2",
+        "1",
+        "-1/4"
+      ],
+      "R_denominator": [
+        "1",
+        "-4",
+        "6",
+        "-4",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-9/2",
+        "8",
+        "-7",
+        "3",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2",
+        "3",
+        "-5/3"
+      ],
+      "R_denominator": [
+        "-1",
+        "3",
+        "-3",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-4",
+        "25/4",
+        "-19/4",
+        "7/4",
+        "-1/4"
+      ],
+      "R_numerator": [
+        "0",
+        "10",
+        "-20",
+        "8"
+      ],
+      "R_denominator": [
+        "-2",
+        "5",
+        "-4",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "-12",
+        "12"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-23/6",
+        "17/3",
+        "-4",
+        "4/3",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0",
+        "-3/2",
+        "3"
+      ],
+      "R_denominator": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "-21/4",
+        "6",
+        "-3/4"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-10/3",
+        "17/4",
+        "-31/12",
+        "3/4",
+        "-1/12"
+      ],
+      "R_numerator": [
+        "0",
+        "18",
+        "-12"
+      ],
+      "R_denominator": [
+        "2",
+        "-3",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "15",
+        "-12",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-37/12",
+        "85/24",
+        "-15/8",
+        "11/24",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-4"
+      ],
+      "R_denominator": [
+        "-1",
+        "1"
+      ],
+      "R_degree": 1,
+      "residues": [
+        "22/3",
+        "-12",
+        "6",
+        "-4/3"
+      ]
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-137/60",
+        "15/8",
+        "-17/24",
+        "1/8",
+        "-1/120"
+      ],
+      "R_numerator": [
+        "0"
+      ],
+      "R_denominator": [
+        "1"
+      ],
+      "R_degree": 0,
+      "residues": [
+        "-5",
+        "20",
+        "-30",
+        "20",
+        "-5"
+      ]
+    },
+    {
+      "partition": [
+        7
+      ],
+      "C_coefficients": [
+        "1",
+        "-7",
+        "21",
+        "-35",
+        "35",
+        "-21",
+        "7",
+        "-1"
+      ],
+      "R_numerator": [
+        "0",
+        "1",
+        "-5/2",
+        "10/3",
+        "-5/2",
+        "1",
+        "-1/6"
+      ],
+      "R_denominator": [
+        "1",
+        "-6",
+        "15",
+        "-20",
+        "15",
+        "-6",
+        "1"
+      ],
+      "R_degree": 6,
+      "residues": [
+        "0"
+      ]
+    },
+    {
+      "partition": [
+        6,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-13/2",
+        "18",
+        "-55/2",
+        "25",
+        "-27/2",
+        "4",
+        "-1/2"
+      ],
+      "R_numerator": [
+        "0",
+        "-2",
+        "6",
+        "-26/3",
+        "35/6",
+        "-47/30"
+      ],
+      "R_denominator": [
+        "-1",
+        "5",
+        "-10",
+        "10",
+        "-5",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "2",
+        "-2"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-6",
+        "61/4",
+        "-85/4",
+        "35/2",
+        "-17/2",
+        "9/4",
+        "-1/4"
+      ],
+      "R_numerator": [
+        "0",
+        "18",
+        "-72",
+        "304/3",
+        "-62",
+        "41/3"
+      ],
+      "R_denominator": [
+        "-2",
+        "9",
+        "-16",
+        "14",
+        "-6",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "-20",
+        "20"
+      ]
+    },
+    {
+      "partition": [
+        5,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-35/6",
+        "43/3",
+        "-115/6",
+        "15",
+        "-41/6",
+        "5/3",
+        "-1/6"
+      ],
+      "R_numerator": [
+        "0",
+        "-15/8",
+        "33/4",
+        "-75/8",
+        "15/4"
+      ],
+      "R_denominator": [
+        "1",
+        "-4",
+        "6",
+        "-4",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "-93/16",
+        "6",
+        "-3/16"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        3
+      ],
+      "C_coefficients": [
+        "1",
+        "-11/2",
+        "51/4",
+        "-129/8",
+        "12",
+        "-21/4",
+        "5/4",
+        "-1/8"
+      ],
+      "R_numerator": [
+        "0",
+        "-164",
+        "525",
+        "-1853/3",
+        "929/3",
+        "-167/3"
+      ],
+      "R_denominator": [
+        "-4",
+        "16",
+        "-25",
+        "19",
+        "-7",
+        "1"
+      ],
+      "R_degree": 5,
+      "residues": [
+        "80",
+        "-80"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-16/3",
+        "143/12",
+        "-173/12",
+        "61/6",
+        "-25/6",
+        "11/12",
+        "-1/12"
+      ],
+      "R_numerator": [
+        "0",
+        "39",
+        "-207/2",
+        "185/2",
+        "-26"
+      ],
+      "R_denominator": [
+        "2",
+        "-7",
+        "9",
+        "-5",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "147/4",
+        "-36",
+        "-3/4"
+      ]
+    },
+    {
+      "partition": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-61/12",
+        "257/24",
+        "-289/24",
+        "31/4",
+        "-17/6",
+        "13/24",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-55/9",
+        "107/9",
+        "-64/9"
+      ],
+      "R_denominator": [
+        "-1",
+        "3",
+        "-3",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "575/54",
+        "-12",
+        "3/2",
+        "-4/27"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        3,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-29/6",
+        "39/4",
+        "-85/8",
+        "27/4",
+        "-5/2",
+        "1/2",
+        "-1/24"
+      ],
+      "R_numerator": [
+        "0",
+        "-180",
+        "411",
+        "-288",
+        "63"
+      ],
+      "R_denominator": [
+        "4",
+        "-12",
+        "13",
+        "-6",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "-93",
+        "96",
+        "-3"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2,
+        2
+      ],
+      "C_coefficients": [
+        "1",
+        "-14/3",
+        "325/36",
+        "-337/36",
+        "101/18",
+        "-35/18",
+        "13/36",
+        "-1/36"
+      ],
+      "R_numerator": [
+        "0",
+        "-165",
+        "717/2",
+        "-453/2",
+        "42"
+      ],
+      "R_denominator": [
+        "6",
+        "-17",
+        "17",
+        "-7",
+        "1"
+      ],
+      "R_degree": 4,
+      "residues": [
+        "-207/4",
+        "36",
+        "63/4"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-55/12",
+        "26/3",
+        "-419/48",
+        "121/24",
+        "-5/3",
+        "7/24",
+        "-1/48"
+      ],
+      "R_numerator": [
+        "0",
+        "124/3",
+        "-76",
+        "92/3"
+      ],
+      "R_denominator": [
+        "-2",
+        "5",
+        "-4",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "-374/9",
+        "36",
+        "6",
+        "-4/9"
+      ]
+    },
+    {
+      "partition": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-257/60",
+        "893/120",
+        "-809/120",
+        "41/12",
+        "-29/30",
+        "17/120",
+        "-1/120"
+      ],
+      "R_numerator": [
+        "0",
+        "-65/12",
+        "95/12"
+      ],
+      "R_denominator": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "-2075/144",
+        "20",
+        "-15/2",
+        "20/9",
+        "-5/16"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-47/12",
+        "113/18",
+        "-769/144",
+        "47/18",
+        "-53/72",
+        "1/9",
+        "-1/144"
+      ],
+      "R_numerator": [
+        "0",
+        "-204",
+        "240",
+        "-60"
+      ],
+      "R_denominator": [
+        "-6",
+        "11",
+        "-6",
+        "1"
+      ],
+      "R_degree": 3,
+      "residues": [
+        "40",
+        "36",
+        "-72",
+        "-4"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-227/60",
+        "29/5",
+        "-373/80",
+        "17/8",
+        "-11/20",
+        "3/40",
+        "-1/240"
+      ],
+      "R_numerator": [
+        "0",
+        "40",
+        "-30"
+      ],
+      "R_denominator": [
+        "2",
+        "-3",
+        "1"
+      ],
+      "R_degree": 2,
+      "residues": [
+        "185/6",
+        "-20/3",
+        "-30",
+        "20/3",
+        "-5/6"
+      ]
+    },
+    {
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-69/20",
+        "847/180",
+        "-2359/720",
+        "91/72",
+        "-49/180",
+        "11/360",
+        "-1/720"
+      ],
+      "R_numerator": [
+        "0",
+        "-6"
+      ],
+      "R_denominator": [
+        "-1",
+        "1"
+      ],
+      "R_degree": 1,
+      "residues": [
+        "137/10",
+        "-30",
+        "30",
+        "-20",
+        "15/2",
+        "-6/5"
+      ]
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "C_coefficients": [
+        "1",
+        "-363/140",
+        "469/180",
+        "-967/720",
+        "7/18",
+        "-23/360",
+        "1/180",
+        "-1/5040"
+      ],
+      "R_numerator": [
+        "0"
+      ],
+      "R_denominator": [
+        "1"
+      ],
+      "R_degree": 0,
+      "residues": [
+        "-7",
+        "42",
+        "-105",
+        "140",
+        "-105",
+        "42",
+        "-7"
+      ]
+    }
+  ],
+  "retained_F9_original_controls": [
+    {
+      "m": 1,
+      "support": 50,
+      "pure": 0,
+      "normalized_Z2_marker": "0"
+    },
+    {
+      "m": 2,
+      "support": 200,
+      "pure": 0,
+      "normalized_Z2_marker": "8/105"
+    },
+    {
+      "m": 3,
+      "support": 428,
+      "pure": 0,
+      "normalized_Z2_marker": "0"
+    },
+    {
+      "m": 4,
+      "support": 763,
+      "pure": 0,
+      "normalized_Z2_marker": "128/15015"
+    }
+  ],
+  "negative_controls": {
+    "altered_F9_rejected": true
+  },
+  "status": "passed",
+  "schema_version": 1,
+  "python": "3.12.3",
+  "sources": {
+    "research/foundations/extended-geometry/ODD_CUBIC_DEGREE_SEVEN_SAFETY.md": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958",
+    "research/foundations/extended-geometry/verify_odd_cubic_degree_seven_safety.py": "bd5807e041937992e1b8b042ed228cb136e8e8ac0e27ee9d2a94c18f978bc6aa",
+    "research/foundations/extended-geometry/odd_cubic_degree_seven_safety_source_ledger.json": "fd9de807f47676cfa7d20ec9b6b38cef2136791e2b230540a978fe64a1c4f6b7",
+    "research/foundations/extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+    "research/foundations/extended-geometry/ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+    "research/foundations/extended-geometry/ONE_POLE_ODD_CUBIC_CLASSIFICATION.md": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6",
+    "research/foundations/extended-geometry/MIXED_CENTER_LOGARITHMIC_SEPARATION.md": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+    "research/foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203"
+  }
+}

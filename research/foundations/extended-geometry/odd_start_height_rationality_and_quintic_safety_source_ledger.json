@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+  "proof_labels": [
+    "OddStartRationalCenter",
+    "OddStartZeroCenterPurity",
+    "OddStartThreeDegreeFiveSafety",
+    "OddStartFiniteNonzeroInfinity"
+  ],
+  "domain": "Every characteristic-zero field, positive odd integera, and regular p=t^a(C(x)+t^2D(x))/x on t^2+2xy=1. Unit-center rationality, arbitrary-degree zero-center purity, the a3 degree<=5 box, and a scoped infinity restriction are separate claims. Not arbitrary height-five phases or arbitrary quintics.",
+  "claims": [
+    {
+      "label": "OddStartRationalCenter",
+      "scope": "Every all-pure unit-center phase in this form has u=xX^a/C, X=sqrt(-D/C), and A=C/X^a in K(x). The proof extends endpoint contact to every odda and applies the retained general quadratic inverse-branch character lemma. Rationality is necessary, not sufficient for purity."
+    },
+    {
+      "label": "OddStartZeroCenterPurity",
+      "scope": "For C(0)=D(0)=0, in ALL degrees, purity iff the second and fourth angular moments vanish iff x^2 divides BOTH C andD. Every such phase is safe for every fixed sphere and original polynomial marker."
+    },
+    {
+      "label": "OddStartThreeDegreeFiveSafety",
+      "scope": "Every pure p=t^3(C+t^2D)/x of least degree<=5 is safe. Up to nonzero scalar, its unit-center normal form is2t^3y; its zero-center forms are x t^3(alpha+beta*x), including zero."
+    },
+    {
+      "label": "OddStartFiniteNonzeroInfinity",
+      "scope": "For a pure unit-center phase with u finite nonzero at infinity, rational X has integer growthr>=1 and exact least degree(a+2)(r+1), composite. Equivalently in this class a pure phase of prime least degree must have u vanishing or a pole at infinity. This is the contrapositive with every nonzero unit-center degree>=2, not a sufficiency statement for either infinity behavior."
+    }
+  ],
+  "retained_resources": [
+    {
+      "retained_path": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826",
+      "role": "General finite Galois character descent input only",
+      "result_ids": [
+        "GALOIS-ONE-DIMENSIONAL-CHARACTER-SPAN-DESCENT",
+        "GALOIS-QUADRATIC-INVERSE-BRANCH-DESCENT"
+      ],
+      "locator": "CharacterSpanDescent and QuadraticInverseBranchDescent",
+      "exact_use": "For rational R,S over a characteristic-zero field, inverse branches with S-values differing by1/sqrt(z) force the selected sqrt(R) to lie in K(x). The new argument supplies R=x^2(-D)^a/C^(a+2), S=X^(a-1)/(CRprime), and extends endpoint identities to odd startinga. It does not apply the old height-one rational-center theorem to larger heights."
+    },
+    {
+      "retained_path": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "role": "Sphere and balanced original contraction conventions",
+      "locator": "Sections2/4 angular-factorial normalization",
+      "exact_use": "Least sphere filtration agrees with radial-primitive balanced lift degree. Original all-marker safety here is also proved directly from the torus weights, independently of any finite unsafe witness."
+    }
+  ],
+  "self_contained_new_arguments": [
+    "Endpoint contact of orderm+1 for s^(am)(1-s^2)^m, with nonzero rational kappa for evenm; general all-odd-a rational-u and rational-X descent.",
+    "HJK parity, exponent(a+2)m+1 onJ and -am-1 onK, and exact least-degree formula.",
+    "Zero-center projection to c t^a+d t^(a+2), explicit second/fourth moments, and polynomial Sylvester determinant4096P(a) with all positive coefficients.",
+    "Complete a3 degree<=5 HJK boxes and literal integer Bezout7301194; one-sided normal forms and all-marker safety.",
+    "Finite nonzero infinity degree balances, exclusion of rational-X growthr0 by a nonzero second moment, and prime-degree contrapositive."
+  ],
+  "verification": {
+    "checker": "verify_odd_start_height_rationality_and_quintic_safety.py",
+    "receipt": "odd_start_height_rationality_and_quintic_safety_verification.json",
+    "reproduction": [
+      "python3 research/foundations/extended-geometry/verify_odd_start_height_rationality_and_quintic_safety.py"
+    ],
+    "artifact_sha256": {
+      "ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "verify_odd_start_height_rationality_and_quintic_safety.py": "c9677862dfe73ccdfb2a71b5b9a116a0e7b29fa56c8650b3282c1ebb03c31db3",
+      "odd_start_height_rationality_and_quintic_safety_verification.json": "3a6b581aa043bc0331ee7b0371302e0ffbe595f870a1d04cb84fde8dde92db32"
+    },
+    "arithmetic": "Standard-library exact integers and fractions; no symbolic algebra library is required by the retained checker.",
+    "unit_certificate": "Literal polynomial multiplication verifies the displayed A7 Bezout identity with nonzero integer7301194.",
+    "zero_certificate": "Actual6x6Sylvester matrix overZ[a], all720determinantpermutations,33nonzeroterms; coefficient identity4096P(a) of degree8. Positive coefficients give nonvanishing for every integera>=1. This is symbolic coefficient equality, not samplinga.",
+    "raw_controls": "108 direct Laurent-x/height integral checks at odd startsa1,3,5 versus endpoint coefficients; altered height exponent is rejected. These finite checks do not establish universal purity or safety.",
+    "original_marker_scope": "E2 is equivariant and has only nonpositive z-output weights, so it kills strictly positive input weights. For the negative branch, a fixed marker bidegree(u,v) fixes output degreev-u or forces zero ifu>v; output weights stay in[-(v-u),0], while phase powers drive input weights below this interval. No assertion that E2 kills all nonzero weights is made.",
+    "weight_regression_controls": "The exact monomial contraction checks E2(z1)=z1 and a surviving finite negative-weight marker term, then eventual vanishing once the fixed output-degree interval is missed. Strictly positive weights are rejected.",
+    "optimization_refusal": "The checker rejects Python optimization mode before certificate output.",
+    "independent_review": "A separate internal agent reconstructed general odd-a descent, a3 boxes, all-marker safety and both original low-degree Bezout products. Root independently reviewed and replayed the universal Sylvester identity and checked the finite-infinity corollary; the author independently verified that corollary as well.",
+    "limits": "Written all-order arguments plus exact algebraic identities and internal review only; no external human review or formal verification."
+  },
+  "primary_source_scope": "No additional deep primary theorem is imported beyond the retained self-contained Galois lemma and sphere normalization. Polynomial moment results already audited in the older source remain antecedents, not a theorem about arbitrary prime balanced degrees.",
+  "assurance": "Internal written proof and exact replay. No external review, formal verification, minimum-prime claim or established historical priority."
+}

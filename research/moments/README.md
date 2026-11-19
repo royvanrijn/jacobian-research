@@ -34,6 +34,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Arbitrary Gaussian and sphere moment interpolation at quadratic degree scale | Internal result | proved | [Source](vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md) |
 | Ternary cubic purity requires at least sixteen moments | Internal result | proved | [Source](vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md) |
 | Primitive two-pair Image witnesses in every odd composite degree | Internal result | proved | [Source](../foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md) |
+| Primitive Image witnesses in prime degrees from hyperbolic inverse covers | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 
@@ -52,7 +53,7 @@ Scope limits:
 - For rational polynomial phases and polynomial differential symbols, graph-elimination generation and checked nonnegative-power specialization support the actual-power selector. Its safe outputs have sufficient cutoffs, with a separate premise for pure-linear bounds.
 - In two real Gaussian variables, eventual pure vanishing, purity, one strict circular-weight sign and all-marker safety are equivalent. If the angular weights fail separation, one fixed prime dilation gives nonzero moments at every sufficiently large prime.
 - For characteristic-zero Laurent polynomials, vanishing on all multiples of one fixed positive integer forces Newton separation and the exact fixed-marker cutoff.
-- Primitive non-proper-power Image witnesses now exist in every composite balanced degree>=4, by the even height family and the new odd-composite nonlinear dilation. Odd prime degrees>=5 remain the degree frontier; nine is an exhibited odd degree, not a minimum theorem.
+- Primitive non-proper-power Image witnesses exist in every composite balanced degree>=4. Hyperbolic inverse covers additionally supply degrees(2a+3)n+a+2 for odd a>=1,n>=1, including odd primes13,23,41,59, with one fixed original marker surviving at every even order. Degrees5,7,11 and other residual odd primes remain open; no minimum odd or prime failing degree is proved.
 
 Tracked obligations (computed states):
 
@@ -61,6 +62,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine the exact universal Gaussian purity prefix for total degree<=3 in three variables; the geometric lower bound is now16 and the exceptional moment scheme is nonreduced.](vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [Decide whether a primitive two-pair Image witness exists in odd balanced degree five, requiring F mod R nonzero from the start.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE
 - **verification / open:** [Specify the group/nullcone and audit the nullcone-to-eventual-marker implication used in the Image moment-nullcone assertions.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — VERIFY-IMAGE2-NULLCONE-APPLICATION
-- **mathematical / open:** [Construct or exclude primitive two-pair Image witnesses in odd prime balanced degrees, starting with5 and7.](../foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md) — GAP-IMAGE2-ODD-PRIME-PRIMITIVE
+- **mathematical / open:** [Construct or exclude primitive two-pair Image witnesses in residual odd prime balanced degrees, especially5,7,11, beyond the explicit hyperbolic factor criterion.](../foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md) — GAP-IMAGE2-ODD-PRIME-PRIMITIVE
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

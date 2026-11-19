@@ -1,7 +1,11 @@
 {
   "statement": "Every odd composite balanced degree d admits an explicit rational two-pair Image witness F_d with R not dividing F_d, no proper-power representation even up to scalar over field extensions, all pure contractions zero and one fixed marker surviving at every even positive moment order.",
   "proof": "ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
-  "proof_labels": ["OddCompositeImage", "NonlinearHeightMoments", "O1-O17"],
+  "proof_labels": [
+    "OddCompositeImage",
+    "NonlinearHeightMoments",
+    "O1-O17"
+  ],
   "domain": "Every characteristic-zero field; two contraction pairs; balanced degree d means bidegree(d,d), ordinary degree2d.",
   "logical_inputs": [
     {
@@ -53,7 +57,7 @@
     "internal_review": "Parent independently reconstructed the nonlinear-height all-order proof, degree/marker exponents, R=0 reduction and exact T multiplicity; separately expanded the original four-variable F9 and checked pure/marked contractions through m4. This is internal mathematical review, not external human review."
   },
   "remaining_scope": [
-    "Primitive odd prime balanced degrees, including5 and7, remain open; nine is only the first odd degree in this family, not a minimum theorem.",
+    "This odd-composite family has no prime-degree conclusion of its own. The separate hyperbolic inverse-cover family supplies some odd prime degrees, including13 and23; degrees5 and7 remain open. Nine is only the first odd degree in this family, not a minimum theorem.",
     "The least degree of a bad original marker for arbitrary phases is not classified.",
     "No complete classification of pure two-pair phases, formal verification, external human review or worldwide historical priority is asserted."
   ]

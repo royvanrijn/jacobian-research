@@ -1,0 +1,28 @@
+{
+  "proof": "RANK_ONE_COHOMOLOGY_COVECTOR_BARRIER.md",
+  "checker": "verify_rank_one_cohomology_covector_barrier.py",
+  "inputs": "rank_one_cohomology_barrier_inputs.json",
+  "receipt": "rank_one_cohomology_covector_barrier_verification.json",
+  "sources": [
+    {
+      "file": "TWO_SIDED_PROTECTED_OBSTRUCTIONS.md",
+      "kind": "repository theorem",
+      "locator": "Theorem 3; Theorem 1 for its all-field local input",
+      "role": "Universal covector span <=b-k for all rank-one meridional representations, including reducible, determinant-one and characteristic-two cases",
+      "sha256": "1ed5ec8850e62258ee8b960382fbcd90506e7e6bbc8409d6d549f4d9a96f3789",
+      "bytes": 12581
+    },
+    {
+      "file": "sources/gao-gu-li-wang-2611.15673v1.pdf",
+      "kind": "primary paper",
+      "locator": "Lemma 6.2, printed pp38-39",
+      "role": "The exact all-field conjugate-generator cohomology bound dimZ1-dimV <=(r-1)rank(rho(m)-I)",
+      "sha256": "50831e7525fa71bed1c3eba7d5cf27b79af86f52f54002e29b90b28e64464dbd",
+      "bytes": 1177902,
+      "url": "https://arxiv.org/pdf/2611.15673v1"
+    }
+  ],
+  "scope": "Universal all-field affine-extension lemma, reverse coboundary bridge and equivalence of universal covector/Zroot bounds and protected corollary for b>=4k, exact outer free-meridian fixation, knot closure, nonzero rank-one displacement. No defect>=2 barrier or new gap-two knot is claimed.",
+  "external_review": false,
+  "formal_verification": false
+}

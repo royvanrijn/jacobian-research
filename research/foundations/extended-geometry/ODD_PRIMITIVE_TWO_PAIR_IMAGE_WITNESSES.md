@@ -343,7 +343,8 @@ written argument (O7)--(O17), not bounded experimental coverage.
 The affine-multiplier quintic obstruction and real affine-profile
 classification retain their exact scopes. This nonlinear family does
 not produce balanced degree five or seven. Together with the retained
-even-degree family, the still-unsettled primitive degree frontiers are
-the odd prime degrees at least five. No universal obstruction in those
-degrees, exhaustive pure-phase classification or formal verification
-is claimed.
+even-degree family, it supplies every composite balanced degree at least
+four. The separate [hyperbolic inverse-cover construction](HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md)
+also supplies certain odd prime degrees, including thirteen and twenty-three.
+The remaining primitive degree questions include five and seven.
+No exhaustive pure-phase classification or formal verification is claimed.

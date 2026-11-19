@@ -146,6 +146,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A full numerical onset for primitive x^2+5y^2 binary sums | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) |
 | Exact primitive x^2+5y^2 binary sumset | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) |
 | Uniform split-target gcd estimates for the discriminant -23 norm sum | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md) |
+| Explicit all-large primitive -23 norm sumsets | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS23_EFFECTIVE.md) |
+| Universal primitive -23 multiplier cones at 16,19 and39 | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS23_MULTIPLIER_CONES.md) |
 
 **Computed obligations:** 72 unresolved; 15 resolved within their exact scope.
 
@@ -255,6 +257,8 @@ Scope limits:
 - For two fixed primitive positive definite forms of discriminantsDelta_i=f_i²D0 in one imaginary quadratic field, under exactly the existing fixed-modulus binary core/ZF/G inputs, the ordered primitive numerical-value count on sufficiently large locally admissible targets is asymptotic to b_(D0,S) product_bad d_(p;1,2)(N) J_S(N) N/logN, S|2Delta1Delta2. Here b=(4L(1,chi_D0)/pi) product_bad(1-chi(p)/p)/(1-1/p) product_good inert(1-2/[p(p-1)]), and d is mixed local VALUE Haar density. Nonadmissible targets have zero count; bad factors are computable rational periodic functions. Leading coefficients depend on the respective genera, with no class-number divisor. The full relative remainder is o(1), not a new quantitative rate. All data fixed; no different-field or varying-order uniformity. Classical genus invariance has its own independent route.
 - The primitive x^2+5y^2 binary sumset is globally exact: N>=2, Nmod8 in{2,3,4,6,7}, excluding only3,4. The internal proof retains all classical spectral imports, the positive five-adic operator, core/atomic seed intervals, and independently authenticated coordinate/genus flags through2^29. Both multiplier-descent implications are recorded. External review and historical priority remain separate.
 - The -23 target-dividing split-prime branch now has an all-valuation positive Iwahori correspondence and explicit gcd estimate, including its nonspherical complementary sector. An independent complete p=2 Brandt computation checks the signed return normalization through2^12. The full exact -23 sumset still needs the remaining global sieve and finite bridge.
+- The effective -23 theorem now proves representation of every529-admissible N>=2^249, with an explicit N^(5/7) numerical-pair lower bound. This is an existence cutoff, not a sharp-logarithmic-comparison cutoff. Global40-exception completeness is equivalent to the still-open finite middle interval2^24<N<2^249.
+- For discriminant-23, exact universal multiplier cones16q,19q,39q are now proved for every inert-free q with v23(q)<=1. This includes every target with inert part exactly19 and arbitrary split multipliers. The proof is a complete finite C3 phase cover with a reverse displayed-pair implication; no Hecke cutoff or full40-exception completion is inferred.
 
 Tracked obligations (computed states):
 

@@ -532,7 +532,7 @@
   "application_support": [
     {
       "path": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
-      "sha256": "ba7d46e3ab929b2445c581471a04b30790f1ae7e3014abb8a390c260f8596fb3",
+      "sha256": "3a84e27de5087a2db83673bd41803ab0d231bb330ee7e316121540a9ffbf5576",
       "locator": "Arithmetic class-group calculation only: Minkowski norms 1, 2 and 3 and ideal relations; not the binary analytic lower bound"
     },
     {

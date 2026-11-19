@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "proof": "ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+  "proof_labels": [
+    "CharacterSpanDescent",
+    "QuadraticInverseBranchDescent",
+    "OddCubicRationalCenter",
+    "OddCubicHeightLowDegree"
+  ],
+  "domain": "Every characteristic-zero field; every regular winding-one odd cubic-height phase p=t*x^(-1)(C(x)+t\u00b2D(x)) with polynomial C,D. Balanced degree is bidegree(d,d) in two contraction pairs.",
+  "statement": "All pure phases in this class of least degree at most5 are safe for every fixed original polynomial marker. The retained odd-height k=1 witness makes6 the sharp least unsafe degree within this class. Pure unit-center phases admit a rational u=x/A reconstruction, proved by a reusable character-projector lemma.",
+  "retained_resources": [
+    {
+      "retained_path": "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "role": "Retained normalization and sharpness input",
+      "locator": "Sections2/4; Theorem5.5 and equations(5.11)-(5.12), k=1",
+      "exact_use": "For a balanced homogeneous H of degreeD, E2(H)=(D+1)! Lambda(H(1,x,y,t)); Image equals the contraction kernel. The degree6 sharpness witness F1=T(R+Z)\u00b2[2R\u00b2W-T\u00b2(2R+Z)] and original markerZ are already retained, not a new construction."
+    }
+  ],
+  "closest_retained_results": [
+    {
+      "proof": "QUADRATIC_HEIGHT_HOPF_CLASSIFICATION.md",
+      "scope": "The neighboring full quadratic-height classification is an antecedent. The odd cubic proof supplies its own even-moment reconstruction, Galois bridge and finite degree-case obstruction; it imports no ordinary-ideal or reducedness claim."
+    }
+  ],
+  "inspected_primary_antecedents": [
+    {
+      "authors": "F. Pakovich and M. Muzychuk",
+      "title": "Solution of the polynomial moment problem",
+      "version": "Proc. London Math. Soc.99(2009),633-657, DOI10.1112/plms/pdp010",
+      "url": "https://www.math.bgu.ac.il/~pakovich/Publications/s.pdf",
+      "inspected_sha256": "f886a4af26898339ec9d88fe38377bee501459f2889dc4afee8ad4da1c03a87d",
+      "locator": "Theorem1.1, author PDFp3",
+      "actual_statement_inspected": true,
+      "role": "Antecedent and priority boundary, not an indispensable proof premise. It concerns one fixed univariate polynomialP and moments integral P^i q on an interval, classified as sums of compositional solutions. It does not identify the phase balanced degree with degP."
+    },
+    {
+      "authors": "F. Pakovich",
+      "title": "On the polynomial moment problem",
+      "version": "Math. Res. Lett.10(2003),401-410",
+      "url": "https://www.math.bgu.ac.il/~pakovich/Publications/opmp.pdf",
+      "inspected_sha256": "a4cf968f2645b3b697b0d45d4692f8b2508b39e106187d68401b0dda563329f4",
+      "locator": "Theorem1, printedp402/PDFp2",
+      "actual_statement_inspected": true,
+      "role": "Antecedent and priority boundary only. Under its endpoint hypotheses, indecomposableP forces Q to factor throughP. Prime fixeddegP is a specialcase, not a theorem about arbitrary prime balanced-degree Image phases."
+    }
+  ],
+  "self_contained_arguments": [
+    "The even-moment endpoint reconstruction and formal residue change of variable.",
+    "CharacterSpanDescent for a finite separable extension and a one-dimensional character over its base field; its quadratic inverse-branch corollary.",
+    "Exact rational-u field descent and exhaustive H/J/K degree boxes.",
+    "Three low-degree Bezout implications plus the zero-center core certificate; independent coefficient derivation and exact Fraction replay.",
+    "Safety for every sphere marker and its transfer to arbitrary original markers by top derivatives."
+  ],
+  "verification": {
+    "certificates": "odd_cubic_height_low_degree_certificates.json",
+    "checker": "verify_odd_cubic_height_low_degree.py",
+    "receipt": "odd_cubic_height_low_degree_verification.json",
+    "method": "Standard-library rational polynomial arithmetic derives the normalized even-moment generators, eliminates the linear coefficient and checks every primitive scaling and Bezout identity equal to1. It rejects altered multipliers, compares48 separate raw interval controls, and replays original four-variable contractions of the retained degree6 witness throughm8.",
+    "generation": "Certificate coefficients were obtained by exact rational Macaulay linear algebra and univariate Bezout calculation. Their truth is established by the independent direct identities, without importing a SymPy or Groebner routine.",
+    "internal_review": "Root independently reconstructed the Galois projector, factorization/degree coverage, all rational identities and original contractions. This is internal mathematical review, not external human review."
+  },
+  "not_claimed": [
+    "The first eight original moments are not asserted to imply rational reconstruction or form a universal purity cutoff. The Galois reduction uses all even moments before finite necessary equations are applied.",
+    "No primitive quintic outside this whole odd cubic-height winding-one class is excluded; septic phases remain open.",
+    "No new degree6 witness, global prime-degree theorem, ordinary-ideal/reducedness result, formal assistant verification, external human review or worldwide priority claim."
+  ]
+}
