@@ -1,0 +1,175 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "logical_inputs": [
+    "uniform_local_proof",
+    "uniform_global_proof",
+    "compact_402_proof",
+    "fixed_cusp_405_proof",
+    "fixed_local_construction",
+    "fixed_global_complement",
+    "fixed_morse_proof",
+    "cusp_stationary_geometry",
+    "actual_coalescing_bridge",
+    "fixed_bounded_proof",
+    "quartic_unfolding_proof",
+    "quartic_model_proof",
+    "primary_newman",
+    "old_gamma_upper_soft",
+    "sharp_annulus_soft_404",
+    "closed_disc_grace"
+  ],
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "UNIFORM_INTEGER_CUSP_EVENTUAL_STRONG_FACTORIAL.md",
+      "relation": "written_argument",
+      "role": "main_proof",
+      "sha256": "61e5ddfbd9853dcf7a98288b8ae23259b136f66db08ef06292d8df36593f9159"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_GROWING_QUARTIC_CUSP_NEIGHBORHOOD.md",
+      "relation": "mathematical_input_uniform_local",
+      "role": "uniform_local_proof",
+      "sha256": "e9b23ad408aa1d0933d55d07b0126a801a79dc2623a28900a310c156e77543ca"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_CUSP_CURIE_WEISS_REGULAR_COMPLEMENT.md",
+      "relation": "mathematical_input_uniform_regular",
+      "role": "uniform_global_proof",
+      "sha256": "8b64926a462956eb4d1b60cdbb8246ae92c85a0614136bf1f6a2e251041d31f8"
+    },
+    {
+      "kind": "local",
+      "path": "verify_uniform_cusp_eventual.py",
+      "relation": "exact_and_source_support",
+      "role": "exact_checker",
+      "sha256": "d0922179140dda4c43d73530fe741704ab67144ebf8c5465c566883184f65c85"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_cusp_eventual_inputs.json",
+      "relation": "exact_fixture_input",
+      "role": "exact_inputs",
+      "sha256": "a61cd529fa359c60f1fe333eee464bff8c710459c8bd1bd1bc7120cf76ffefae"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_CUSP_PRIMARY_CONTEXT.md",
+      "relation": "classical_context_only",
+      "role": "context_audit",
+      "sha256": "aeb7dddda06692373c4e9ed660c4d669f1a0db293bd30fe6656a4c7e119209b0"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "classical_context_only",
+      "role": "primary_kabluchko",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "mathematical_input_compact_family_and_bounded_H",
+      "role": "compact_402_proof",
+      "sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md",
+      "relation": "mathematical_input_narrow_bounded_s_route",
+      "role": "fixed_cusp_405_proof",
+      "sha256": "89fe772b7231063a7bd824aceba48c191b8bc821ced68efe6087b39efb25dd2b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "relation": "mathematical_input_C1_to_C15_revalidated_uniformly",
+      "role": "fixed_local_construction",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "relation": "mathematical_input_narrow_405_closure",
+      "role": "fixed_global_complement",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "relation": "mathematical_input_narrow_405_closure",
+      "role": "fixed_morse_proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "relation": "mathematical_input_narrow_405_closure",
+      "role": "cusp_stationary_geometry",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "relation": "mathematical_input_actual_phase_and_jets",
+      "role": "actual_coalescing_bridge",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "mathematical_input_402_model_mechanism",
+      "role": "fixed_bounded_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "relation": "mathematical_input_402_actual_jet_mechanism",
+      "role": "quartic_unfolding_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "relation": "mathematical_input_model_location_and_simplicity_only",
+      "role": "quartic_model_proof",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "relation": "mathematical_input_model_location_only",
+      "role": "primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "mathematical_input_old_upper_and_local_catch_soft",
+      "role": "old_gamma_upper_soft",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md",
+      "relation": "mathematical_input_compact_annulus_and_finite_bad_box",
+      "role": "sharp_annulus_soft_404",
+      "sha256": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "relation": "mathematical_input_404_closed_disc_mechanism_only",
+      "role": "closed_disc_grace",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    }
+  ]
+}

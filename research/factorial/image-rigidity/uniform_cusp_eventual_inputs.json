@@ -1,0 +1,54 @@
+{
+  "finite_controls": {
+    "annulus_s_max": 80,
+    "box_N0_max": 24,
+    "box_s_max": 64,
+    "coefficient_pairs": [
+      [
+        -2,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "jet_s_max": 20,
+    "local_k": [
+      20,
+      100,
+      1000
+    ],
+    "local_rho": [
+      "1/10",
+      "1/20",
+      "1/50"
+    ],
+    "moment_order_max": 6,
+    "moment_s_max": 6
+  },
+  "schema": 1,
+  "scope": {
+    "all_order_sfc_claimed": false,
+    "coefficient_and_characteristic_zero_field_uniform": true,
+    "cutoff_evaluated": false,
+    "exact_finite_gamma_circle_claimed": false,
+    "finite_box_evaluated": false,
+    "global_bad_pair_set_finite": true,
+    "one_cutoff_all_integer_cusps": true,
+    "small_m_over_s_assumed": false,
+    "uses_407_main": false
+  }
+}

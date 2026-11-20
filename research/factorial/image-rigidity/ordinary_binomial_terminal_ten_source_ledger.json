@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_ordinary_binomial_terminal_ten.py",
+      "role": "checker",
+      "sha256": "e5b0e576844881af98d21f8ef7c08cb649e7657be0b33bddcf47591854eed0a3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+      "role": "constant_large_exponent",
+      "sha256": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_terminal_ten_inputs.json",
+      "role": "inputs",
+      "sha256": "1c4801f6276b79943d9e14d17c12c092faad99da7d9e50841b24dceb02c259d0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "role": "old_rational_annuli",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "local",
+      "path": "ORDINARY_BINOMIAL_TERMINALS_THROUGH_TEN.md",
+      "role": "proof",
+      "sha256": "338fa68aef853c08c29acf05e2b98682659927e7283857917c9be1f982ba7da5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md",
+      "role": "sharp_soft_criterion",
+      "sha256": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+    }
+  ]
+}

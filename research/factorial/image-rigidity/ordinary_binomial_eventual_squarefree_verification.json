@@ -1,0 +1,188 @@
+{
+  "checker_sha256": "cf9764e4e0886f7cbc8f94728a4d64212aff6ff6eb4c9c513b36f4ba09aee990",
+  "counts": {
+    "Gamma_ODE_coefficient_identities": 32,
+    "actual_Appell_identities": 56,
+    "exact_packet_zero_derivative_controls": 16,
+    "literal_actual_QQ_squarefree_controls": 180,
+    "rational_error_margins": 9,
+    "universal_Laurent_exponent_identities": 4
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "input_sha256": "b2d53b19c09fd4022e9546bc2eed2a8e7d74f2644056bd45bd59e0bca4133a66",
+  "mandatory_source_roles": 16,
+  "meaning": "The written complete contour/Cauchy/Rouche argument proves eventual simplicity. Exact finite controls authenticate its algebra and scope; no finite sample proves eventuality.",
+  "negative_controls": [
+    "omit:checker",
+    "badpin:checker",
+    "omit:complete_morse_mechanisms",
+    "badpin:complete_morse_mechanisms",
+    "omit:complete_wall_detours",
+    "badpin:complete_wall_detours",
+    "omit:constant_analytic_tail",
+    "badpin:constant_analytic_tail",
+    "omit:inputs",
+    "badpin:inputs",
+    "omit:old_gamma_upper",
+    "badpin:old_gamma_upper",
+    "omit:proof",
+    "badpin:proof",
+    "omit:quartic_bounded_packets",
+    "badpin:quartic_bounded_packets",
+    "omit:quartic_growing_packets",
+    "badpin:quartic_growing_packets",
+    "omit:quartic_local_geometry",
+    "badpin:quartic_local_geometry",
+    "omit:quartic_simple_model",
+    "badpin:quartic_simple_model",
+    "omit:regular_packets",
+    "badpin:regular_packets",
+    "omit:simple_turn_packets",
+    "badpin:simple_turn_packets",
+    "omit:small_constant_prime_powers",
+    "badpin:small_constant_prime_powers",
+    "omit:stationary_phase_geometry",
+    "badpin:stationary_phase_geometry",
+    "omit:strict_subcritical_packets",
+    "badpin:strict_subcritical_packets",
+    "false-scope:new_sharp_lower_annulus_logical_premise",
+    "false-scope:novertical_pair_logical_premise",
+    "false-scope:eventual_consecutive_coprimality_alone_implies_simplicity",
+    "false-scope:all_exponent_constant_finite_prefix_logical_premise",
+    "false-scope:all_orders_all_positive_supports",
+    "false-scope:effective_cutoff",
+    "false-scope:uniform_cutoff_over_supports",
+    "missing-scope:regular_positive_coexistence_two_packet",
+    "missing-scope:bounded_models_one_root_counted_with_multiplicity",
+    "boolean-schema",
+    "coprime-pair-with-repeated-upper",
+    "modulus-versus-real-separation"
+  ],
+  "proof_sha256": "4aeba104dd1ac39688f912268c1a2ad4fc4af489a320a0bea0af8d365c13d4b3",
+  "schema": 1,
+  "scope": {
+    "all_exponent_constant_finite_prefix_logical_premise": false,
+    "all_orders_all_positive_supports": false,
+    "bounded_models_one_root_counted_with_multiplicity": true,
+    "effective_cutoff": false,
+    "eventual_consecutive_coprimality_alone_implies_simplicity": false,
+    "external_review": false,
+    "fixed_support": {
+      "a_min": 0,
+      "d_min": 1,
+      "integer_parameters": true
+    },
+    "formal_verification": false,
+    "independent_replay": false,
+    "individual_period_w_Cauchy_collars_logical_premise": true,
+    "new_sharp_lower_annulus_logical_premise": false,
+    "novertical_pair_logical_premise": false,
+    "regular_positive_coexistence_two_packet": true,
+    "same_cutoff_over_characteristic_zero_fields": true,
+    "schema": 1,
+    "statement": "for each fixed support exists m0; all m>=m0 actual A_m squarefree",
+    "uniform_cutoff_over_supports": false
+  },
+  "source_ledger_sha256": "7b0a23edc174aaecf3e3551d07e163e0fab02f40798f048e30c59ef58bb967a0",
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_ordinary_binomial_eventual_squarefree.py",
+      "role": "checker",
+      "sha256": "cf9764e4e0886f7cbc8f94728a4d64212aff6ff6eb4c9c513b36f4ba09aee990"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "complete_morse_mechanisms",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "role": "complete_wall_detours",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "role": "constant_analytic_tail",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_squarefree_inputs.json",
+      "role": "inputs",
+      "sha256": "b2d53b19c09fd4022e9546bc2eed2a8e7d74f2644056bd45bd59e0bca4133a66"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "old_gamma_upper",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "local",
+      "path": "EVENTUAL_SQUAREFREENESS_OF_ORDINARY_BINOMIAL_MOMENTS.md",
+      "role": "proof",
+      "sha256": "4aeba104dd1ac39688f912268c1a2ad4fc4af489a320a0bea0af8d365c13d4b3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "quartic_bounded_packets",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "role": "quartic_growing_packets",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "role": "quartic_local_geometry",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "role": "quartic_simple_model",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "kind": "support",
+      "path": "ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+      "role": "regular_packets",
+      "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0"
+    },
+    {
+      "kind": "support",
+      "path": "SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "role": "simple_turn_packets",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+      "role": "small_constant_prime_powers",
+      "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "role": "stationary_phase_geometry",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md",
+      "role": "strict_subcritical_packets",
+      "sha256": "3bcd961a7cbf63fe780f30580554118355f4f5252cf1d92992741881ece500e6"
+    }
+  ],
+  "status": "PASS"
+}

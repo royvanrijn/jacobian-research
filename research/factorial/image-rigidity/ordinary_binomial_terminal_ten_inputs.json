@@ -1,0 +1,66 @@
+{
+  "C": [
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14
+  ],
+  "actual_shapes": [
+    "a*(N-1)+1",
+    "a*N+1"
+  ],
+  "adjacent_all_order_premise": false,
+  "all_constant_finite_prefix_premise": false,
+  "all_first_ten_pairwise_coprime": false,
+  "all_orders": false,
+  "conclusion": "all ordinary supports; every terminal2..10; every characteristic-zero field",
+  "earlier_terminal_finite_certificate_premise": false,
+  "external_review": false,
+  "formal_verification": false,
+  "high_gap_cutoffs": [
+    7,
+    12,
+    18,
+    24,
+    30,
+    37,
+    44,
+    50
+  ],
+  "independent_replay": false,
+  "main_counts": [
+    23,
+    129,
+    450,
+    1089,
+    2154,
+    3968,
+    6587,
+    9759
+  ],
+  "main_domain": "N3..10: 1<=d<d0(N),1<=a<d(N-2), plus a0,d1..8",
+  "main_total": 24159,
+  "maximum_factorial_argument": 4400,
+  "primes": [
+    65537,
+    1000003,
+    1000033
+  ],
+  "schema": 1,
+  "terminal_two_entirely_sharp_soft": true,
+  "terminals": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}

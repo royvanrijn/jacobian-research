@@ -1,0 +1,211 @@
+{
+  "analytic_proof_notice": "Exact/source checks support the written proofs; finite samples do not certify complete contours, analytic estimates or uniformity.",
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "counts": {
+    "actual_cusp_jet_records": 20,
+    "actual_moment_normalizations": 180,
+    "annulus_and_d_over_L_controls": 80,
+    "finite_gamma_circle_obstructions": 12,
+    "finite_soft_box_controls": 3542,
+    "genuine_math_negative_controls": 6,
+    "local_error_exponent_controls": 9,
+    "monomial_axis_controls": 36,
+    "positive_horizontal_coefficients": 16,
+    "source_pins": 21,
+    "source_scope_negative_controls": 57,
+    "two_source_actual_coefficients": 162,
+    "universal_identity_families": 15
+  },
+  "excluded_routes": [
+    "407_main",
+    "broad_405_square_root_gap",
+    "finite_terminal_prefix",
+    "exact_finite_gamma_circle_law"
+  ],
+  "jet_records": [
+    {
+      "first_z_q_coefficient": "-2/3",
+      "fourth_z_coefficient": "-1/3",
+      "s": 1
+    },
+    {
+      "first_z_q_coefficient": "-6/5",
+      "fourth_z_coefficient": "-3",
+      "s": 2
+    },
+    {
+      "first_z_q_coefficient": "-12/7",
+      "fourth_z_coefficient": "-12",
+      "s": 3
+    },
+    {
+      "first_z_q_coefficient": "-20/9",
+      "fourth_z_coefficient": "-100/3",
+      "s": 4
+    },
+    {
+      "first_z_q_coefficient": "-30/11",
+      "fourth_z_coefficient": "-75",
+      "s": 5
+    },
+    {
+      "first_z_q_coefficient": "-42/13",
+      "fourth_z_coefficient": "-147",
+      "s": 6
+    },
+    {
+      "first_z_q_coefficient": "-56/15",
+      "fourth_z_coefficient": "-784/3",
+      "s": 7
+    },
+    {
+      "first_z_q_coefficient": "-72/17",
+      "fourth_z_coefficient": "-432",
+      "s": 8
+    },
+    {
+      "first_z_q_coefficient": "-90/19",
+      "fourth_z_coefficient": "-675",
+      "s": 9
+    },
+    {
+      "first_z_q_coefficient": "-110/21",
+      "fourth_z_coefficient": "-3025/3",
+      "s": 10
+    },
+    {
+      "first_z_q_coefficient": "-132/23",
+      "fourth_z_coefficient": "-1452",
+      "s": 11
+    },
+    {
+      "first_z_q_coefficient": "-156/25",
+      "fourth_z_coefficient": "-2028",
+      "s": 12
+    },
+    {
+      "first_z_q_coefficient": "-182/27",
+      "fourth_z_coefficient": "-8281/3",
+      "s": 13
+    },
+    {
+      "first_z_q_coefficient": "-210/29",
+      "fourth_z_coefficient": "-3675",
+      "s": 14
+    },
+    {
+      "first_z_q_coefficient": "-240/31",
+      "fourth_z_coefficient": "-4800",
+      "s": 15
+    },
+    {
+      "first_z_q_coefficient": "-272/33",
+      "fourth_z_coefficient": "-18496/3",
+      "s": 16
+    },
+    {
+      "first_z_q_coefficient": "-306/35",
+      "fourth_z_coefficient": "-7803",
+      "s": 17
+    },
+    {
+      "first_z_q_coefficient": "-342/37",
+      "fourth_z_coefficient": "-9747",
+      "s": 18
+    },
+    {
+      "first_z_q_coefficient": "-380/39",
+      "fourth_z_coefficient": "-36100/3",
+      "s": 19
+    },
+    {
+      "first_z_q_coefficient": "-420/41",
+      "fourth_z_coefficient": "-14700",
+      "s": 20
+    }
+  ],
+  "logical_inputs": [
+    "uniform_local_proof",
+    "uniform_global_proof",
+    "compact_402_proof",
+    "fixed_cusp_405_proof",
+    "fixed_local_construction",
+    "fixed_global_complement",
+    "fixed_morse_proof",
+    "cusp_stationary_geometry",
+    "actual_coalescing_bridge",
+    "fixed_bounded_proof",
+    "quartic_unfolding_proof",
+    "quartic_model_proof",
+    "primary_newman",
+    "old_gamma_upper_soft",
+    "sharp_annulus_soft_404",
+    "closed_disc_grace"
+  ],
+  "positive_horizontal_coefficients": [
+    "4/3",
+    "8/5",
+    "8/21",
+    "16/405",
+    "8/3465",
+    "16/184275",
+    "16/7016625",
+    "32/723647925",
+    "8/12131744625",
+    "16/2051541867375",
+    "16/213458046676875",
+    "32/53596531285171875",
+    "16/3994013511371008125",
+    "32/1394206568321175984375",
+    "32/281677802889440348015625",
+    "64/130434995499287619218203125"
+  ],
+  "schema": 1,
+  "scope": "One unevaluated eventual cutoff for every integer cusp, all coefficient pairs and characteristic-zero fields; equivalent global bad-pair finiteness. No all-order theorem or evaluated finite box.",
+  "source_ledger_sha256": "d9ba7c0dc2c7be77457c197af1f7caf9557386489b0078e812ac97d39505604a",
+  "source_pins": {
+    "actual_coalescing_bridge": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e",
+    "closed_disc_grace": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473",
+    "compact_402_proof": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e",
+    "context_audit": "aeb7dddda06692373c4e9ed660c4d669f1a0db293bd30fe6656a4c7e119209b0",
+    "cusp_stationary_geometry": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+    "exact_checker": "d0922179140dda4c43d73530fe741704ab67144ebf8c5465c566883184f65c85",
+    "exact_inputs": "a61cd529fa359c60f1fe333eee464bff8c710459c8bd1bd1bc7120cf76ffefae",
+    "fixed_bounded_proof": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906",
+    "fixed_cusp_405_proof": "89fe772b7231063a7bd824aceba48c191b8bc821ced68efe6087b39efb25dd2b",
+    "fixed_global_complement": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44",
+    "fixed_local_construction": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409",
+    "fixed_morse_proof": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c",
+    "main_proof": "61e5ddfbd9853dcf7a98288b8ae23259b136f66db08ef06292d8df36593f9159",
+    "old_gamma_upper_soft": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9",
+    "primary_kabluchko": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c",
+    "primary_newman": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28",
+    "quartic_model_proof": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89",
+    "quartic_unfolding_proof": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953",
+    "sharp_annulus_soft_404": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c",
+    "uniform_global_proof": "8b64926a462956eb4d1b60cdbb8246ae92c85a0614136bf1f6a2e251041d31f8",
+    "uniform_local_proof": "e9b23ad408aa1d0933d55d07b0126a801a79dc2623a28900a310c156e77543ca"
+  },
+  "status": "PASS",
+  "universal_identities": [
+    "limiting stationary-map derivative",
+    "critical factor at a stationary point",
+    "reciprocal stationary map",
+    "reciprocal entire factor",
+    "positive horizontal primitive derivative",
+    "tilted horizontal monotonicity numerator",
+    "horizontal Gaussian curvature at the favored maximum",
+    "complete-tail numerator modulo L squared equals s(s+1)",
+    "exact normalized eta path",
+    "exact endpoint cone ratio",
+    "endpoint ratio derivative sign formula",
+    "actual adjacent bare-action envelope",
+    "first local transported error after exact m=k/rho^4",
+    "second local transported error after exact m=k/rho^4",
+    "critical CW and unitary-Hermite logarithmic weights"
+  ]
+}

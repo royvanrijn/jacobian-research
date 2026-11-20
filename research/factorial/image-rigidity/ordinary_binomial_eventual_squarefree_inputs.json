@@ -1,0 +1,23 @@
+{
+  "all_exponent_constant_finite_prefix_logical_premise": false,
+  "all_orders_all_positive_supports": false,
+  "bounded_models_one_root_counted_with_multiplicity": true,
+  "effective_cutoff": false,
+  "eventual_consecutive_coprimality_alone_implies_simplicity": false,
+  "external_review": false,
+  "fixed_support": {
+    "a_min": 0,
+    "d_min": 1,
+    "integer_parameters": true
+  },
+  "formal_verification": false,
+  "independent_replay": false,
+  "individual_period_w_Cauchy_collars_logical_premise": true,
+  "new_sharp_lower_annulus_logical_premise": false,
+  "novertical_pair_logical_premise": false,
+  "regular_positive_coexistence_two_packet": true,
+  "same_cutoff_over_characteristic_zero_fields": true,
+  "schema": 1,
+  "statement": "for each fixed support exists m0; all m>=m0 actual A_m squarefree",
+  "uniform_cutoff_over_supports": false
+}

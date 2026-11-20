@@ -1,0 +1,683 @@
+{
+  "boundary_completed_evidence": {
+    "a0_exponent_six_records_authenticated": 9998,
+    "a0_prefix_records_authenticated": 92935,
+    "a0_selected_current_receipt_maps": [
+      {
+        "file_map_count": 11,
+        "receipt": "uniform_two_term_sfc_verification.json",
+        "selected_current_replay": true
+      },
+      {
+        "file_map_count": 6,
+        "receipt": "exponent_six_simplicity_verification.json",
+        "selected_current_replay": true
+      }
+    ],
+    "a1_completed_cases_authenticated": 171812,
+    "a1_parent_ledgers": [
+      {
+        "recorded_receipt_authenticated": true,
+        "required_sources": 5,
+        "tag": "a1_finite"
+      },
+      {
+        "recorded_receipt_authenticated": true,
+        "required_sources": 10,
+        "tag": "a1_analytic"
+      }
+    ],
+    "boundary_finite_Bezout_or_gcd_replays": 0,
+    "density_context_is_not_a_mathematical_premise": true,
+    "meaning": "Immutable defining code, literal certificate data, domain records and completed receipts are source-authenticated. Their old large finite computations are reused, not rerun."
+  },
+  "checker_sha256": "34bcf3717afe235d26b2a8b5a237ca3f9a89faa8b8d95e239d515ab1b8a394ec",
+  "counts": {
+    "actual_moment_normalizations": 48,
+    "diagonal_model_parameter_controls": 125,
+    "exact_binary_cutoffs": 127,
+    "exact_rational_annular_majorants": 496,
+    "finite_projection_fiber_models": 12,
+    "fixed_gap_triangle_and_old_counts": 304,
+    "fixed_lower_rectangle_counts": 285,
+    "fixed_terminal_triangle_counts": 63,
+    "fresh_parent_replays": 3,
+    "logical_countermodel_controls": 5,
+    "parent_source_boundaries": 4,
+    "source_scope_controls": 152
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_parent_replays": [
+    {
+      "byte_identical": true,
+      "receipt_sha256": "3bae7d6483722dbe3246d6254aded998fe139fa7e5150abe71c6cea65cc4ee22",
+      "tag": "quadratic"
+    },
+    {
+      "byte_identical": true,
+      "receipt_sha256": "612b989011943b54d7b6d372c39dbef6b284735b481d50413df43a3e500f0466",
+      "tag": "eventual"
+    },
+    {
+      "byte_identical": true,
+      "receipt_sha256": "7e88638ac48c4e7d7318389fee62e02ef3494ea5d5499e8d822d79e3f7fa5f15",
+      "tag": "soft"
+    }
+  ],
+  "input_sha256": "90e2b4700c27d8f4fc8d75cbd5d8c096f2b237ce9e44e6cec35e7f9993db9e0a",
+  "logical_countermodel_names": [
+    "uniform-terminal-only-does-not-bound-support-without-soft-input",
+    "finite-projection-with-infinite-fiber",
+    "finite-fibers-with-unbounded-projection",
+    "fixed-terminal-count-formula-needs-N>=3",
+    "all-three-coordinate-fibers-finite-does-not-make-global-set-finite"
+  ],
+  "mandatory_source_roles": 63,
+  "meaning": "The written finite-union proof combines retained quantified theorems. Fresh parent guards authenticate their own closures. The relative full run and boundary all-order theorems are explicitly reused, not rerun. Finite set/count controls support scope and algebra; they are not formal verification or new numerical SFC evidence.",
+  "parent_source_boundaries": [
+    {
+      "all_descendants_freshly_validated_by_parent": true,
+      "sources": 13,
+      "tag": "quadratic"
+    },
+    {
+      "all_descendants_freshly_validated_by_parent": true,
+      "sources": 77,
+      "tag": "eventual"
+    },
+    {
+      "all_descendants_freshly_validated_by_parent": true,
+      "sources": 6,
+      "tag": "soft"
+    },
+    {
+      "recorded_completed_evidence_reused": true,
+      "sources": 7,
+      "tag": "relative"
+    }
+  ],
+  "proof_sha256": "c727d2734e9658c4eed113a3e5986a8ca4f693f80b945afd69186e449357b0e2",
+  "relative_completed_evidence": {
+    "finite_source_sha256": "e33fe9e57513b9a0ff74c1e5a5334718e57179450d87cdae2964da27d34ebe32",
+    "fresh_fallback_Bezout_replays": 0,
+    "full_gcd_run_rerun": false,
+    "immutable_completed_receipt_sha256": "95bf53dba99f375ea908aedcaa80a36162a9824a0e193840150d81663f6d9036",
+    "previously_recorded_fallbacks": 5,
+    "support_rows_authenticated": 532,
+    "terminal_stream_entries_authenticated": 3694040
+  },
+  "schema": 1,
+  "scope": {
+    "all_coordinate_escape_for_infinite_distinct_bad_sequences": true,
+    "all_fixed_gap_bad_pair_sets_finite": true,
+    "all_fixed_lower_bad_pair_sets_finite": true,
+    "all_fixed_terminal_bad_support_sets_finite": true,
+    "all_order_SFC_claim": false,
+    "boundary_a0_a1_all_order_inputs_reused": true,
+    "boundary_a0_receipt_selection": "designated current_replay; obsolete historical top-level entries unused",
+    "boundary_a0_recorded_prefix_cases_reused": 92935,
+    "boundary_a1_recorded_finite_cases_reused": 171812,
+    "boundary_nested_density_context_replayed": false,
+    "boundary_old_finite_runs_repeated": false,
+    "effective_L_U_claim": false,
+    "explicit_bad_lower_projection": "a<10^24*d^2 for each d>=2",
+    "external_review": false,
+    "field_scope": "every characteristic-zero field; rational Bezout, no arbitrary embedding in C",
+    "finite_projection_and_finite_fibers_iff": true,
+    "fixed_gap_cutoff": "for each d exists L(d), for all a>=0 and N>=L(d)",
+    "fixed_lower_cutoff": "for each a exists U(a), for all d>=1 and N>=U(a)",
+    "fixed_terminal_count_domain": "N>=3; N=2 separately empty",
+    "fixed_terminal_triangle": "2<=d<D_N,1<=a<d*(N-2)",
+    "formal_verification": false,
+    "global_B_finite_claim": false,
+    "global_terminal_cutoff_claim": false,
+    "new_analytic_estimate_claim": false,
+    "new_fixed_terminal_finiteness_claim": false,
+    "parameters": "integer a>=0,d>=1,N>=2",
+    "relative_bad_gap_projection": "d<3*a for a>=2",
+    "relative_completed_cases_reused": 3694040,
+    "relative_completed_supports_reused": 532,
+    "relative_fresh_fallback_Bezout_rerun": false,
+    "relative_full_gcd_run_rerun": false,
+    "same_cutoff_all_fields_and_coefficients": true,
+    "schema": 1,
+    "terminal_only_iff_uses_actual_support_complements": true
+  },
+  "source_ledger_sha256": "0b78f537bbd8b909e39d07f11760c81dc5d0b4aa768a105497fa3d7e4904e349",
+  "source_scope_negative_names": [
+    "omit:a0_receipt",
+    "badpin:a0_receipt",
+    "omit:a0_six_source_1",
+    "badpin:a0_six_source_1",
+    "omit:a0_six_source_2",
+    "badpin:a0_six_source_2",
+    "omit:a0_six_source_3",
+    "badpin:a0_six_source_3",
+    "omit:a0_six_source_4",
+    "badpin:a0_six_source_4",
+    "omit:a0_source_1",
+    "badpin:a0_source_1",
+    "omit:a0_source_10",
+    "badpin:a0_source_10",
+    "omit:a0_source_2",
+    "badpin:a0_source_2",
+    "omit:a0_source_3",
+    "badpin:a0_source_3",
+    "omit:a0_source_4",
+    "badpin:a0_source_4",
+    "omit:a0_source_5",
+    "badpin:a0_source_5",
+    "omit:a0_source_6",
+    "badpin:a0_source_6",
+    "omit:a0_source_7",
+    "badpin:a0_source_7",
+    "omit:a0_source_8",
+    "badpin:a0_source_8",
+    "omit:a0_source_9",
+    "badpin:a0_source_9",
+    "omit:a1_analytic_ledger",
+    "badpin:a1_analytic_ledger",
+    "omit:a1_analytic_receipt",
+    "badpin:a1_analytic_receipt",
+    "omit:a1_analytic_source_1",
+    "badpin:a1_analytic_source_1",
+    "omit:a1_analytic_source_2",
+    "badpin:a1_analytic_source_2",
+    "omit:a1_analytic_source_3",
+    "badpin:a1_analytic_source_3",
+    "omit:a1_analytic_source_4",
+    "badpin:a1_analytic_source_4",
+    "omit:a1_analytic_source_5",
+    "badpin:a1_analytic_source_5",
+    "omit:a1_analytic_source_8",
+    "badpin:a1_analytic_source_8",
+    "omit:a1_finite_ledger",
+    "badpin:a1_finite_ledger",
+    "omit:a1_finite_receipt",
+    "badpin:a1_finite_receipt",
+    "omit:a1_finite_source_1",
+    "badpin:a1_finite_source_1",
+    "omit:a1_finite_source_2",
+    "badpin:a1_finite_source_2",
+    "omit:a1_finite_source_3",
+    "badpin:a1_finite_source_3",
+    "omit:a1_finite_source_4",
+    "badpin:a1_finite_source_4",
+    "omit:boundary_a0",
+    "badpin:boundary_a0",
+    "omit:boundary_a1",
+    "badpin:boundary_a1",
+    "omit:boundary_adjacent",
+    "badpin:boundary_adjacent",
+    "omit:checker",
+    "badpin:checker",
+    "omit:eventual_checker",
+    "badpin:eventual_checker",
+    "omit:eventual_inputs",
+    "badpin:eventual_inputs",
+    "omit:eventual_ledger",
+    "badpin:eventual_ledger",
+    "omit:eventual_proof",
+    "badpin:eventual_proof",
+    "omit:eventual_receipt",
+    "badpin:eventual_receipt",
+    "omit:inputs",
+    "badpin:inputs",
+    "omit:old_high_gap",
+    "badpin:old_high_gap",
+    "omit:old_terminal_triangle",
+    "badpin:old_terminal_triangle",
+    "omit:older_soft",
+    "badpin:older_soft",
+    "omit:proof",
+    "badpin:proof",
+    "omit:quadratic_checker",
+    "badpin:quadratic_checker",
+    "omit:quadratic_inputs",
+    "badpin:quadratic_inputs",
+    "omit:quadratic_ledger",
+    "badpin:quadratic_ledger",
+    "omit:quadratic_proof",
+    "badpin:quadratic_proof",
+    "omit:quadratic_receipt",
+    "badpin:quadratic_receipt",
+    "omit:qualitative_fixed_gap",
+    "badpin:qualitative_fixed_gap",
+    "omit:relative_analytic_proof",
+    "badpin:relative_analytic_proof",
+    "omit:relative_checker",
+    "badpin:relative_checker",
+    "omit:relative_finite_checker",
+    "badpin:relative_finite_checker",
+    "omit:relative_finite_receipt",
+    "badpin:relative_finite_receipt",
+    "omit:relative_input",
+    "badpin:relative_input",
+    "omit:relative_ledger",
+    "badpin:relative_ledger",
+    "omit:relative_lower_two_proof",
+    "badpin:relative_lower_two_proof",
+    "omit:relative_proof",
+    "badpin:relative_proof",
+    "omit:relative_receipt",
+    "badpin:relative_receipt",
+    "omit:soft_checker",
+    "badpin:soft_checker",
+    "omit:soft_inputs",
+    "badpin:soft_inputs",
+    "omit:soft_ledger",
+    "badpin:soft_ledger",
+    "omit:soft_proof",
+    "badpin:soft_proof",
+    "omit:soft_receipt",
+    "badpin:soft_receipt",
+    "false-scope:global_B_finite_claim",
+    "false-scope:global_terminal_cutoff_claim",
+    "false-scope:all_order_SFC_claim",
+    "false-scope:effective_L_U_claim",
+    "false-scope:new_analytic_estimate_claim",
+    "false-scope:new_fixed_terminal_finiteness_claim",
+    "false-scope:relative_full_gcd_run_rerun",
+    "false-scope:relative_fresh_fallback_Bezout_rerun",
+    "false-scope:boundary_old_finite_runs_repeated",
+    "false-scope:boundary_nested_density_context_replayed",
+    "missing-scope:all_fixed_gap_bad_pair_sets_finite",
+    "missing-scope:all_fixed_lower_bad_pair_sets_finite",
+    "missing-scope:all_fixed_terminal_bad_support_sets_finite",
+    "missing-scope:same_cutoff_all_fields_and_coefficients",
+    "missing-scope:finite_projection_and_finite_fibers_iff",
+    "missing-scope:terminal_only_iff_uses_actual_support_complements",
+    "missing-scope:all_coordinate_escape_for_infinite_distinct_bad_sequences",
+    "wrong-quantity:fixed_gap_cutoff",
+    "wrong-quantity:fixed_lower_cutoff",
+    "wrong-quantity:fixed_terminal_count_domain",
+    "wrong-quantity:relative_completed_cases_reused",
+    "typed-input-schema",
+    "ledger:schema",
+    "ledger:empty",
+    "ledger:duplicate",
+    "forged-parent-receipt"
+  ],
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_two_term_sfc_verification.json",
+      "role": "a0_receipt",
+      "sha256": "f9647b8e287f998cfd1d7cd070ccc8a380eb4685a420c6b9f397cbdbce51348a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_exponent_six_simplicity.py",
+      "role": "a0_six_source_1",
+      "sha256": "c648c7209b6414afd220bb224b6d4ed37bd5dfb2e2126335e86b1876c071e5b2"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/exponent_six_prefix_certificates.json",
+      "role": "a0_six_source_2",
+      "sha256": "867c2b9024bd4d3fe21720b80c3da2c9ecac078bc1f312dfaf2f62731f9cdaa5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/exponent_six_simplicity_audit.json",
+      "role": "a0_six_source_3",
+      "sha256": "c7d4e2fabccdab5ea8f6d9ac3ac232a66f3e55933b0a672a5db7b5c425798f76"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/EFFECTIVE_SADDLE_ANNULUS.tex",
+      "role": "a0_six_source_4",
+      "sha256": "ab91570d589fc95790090cfdd5770ae8c17c9ab14277a05c80d0a84f0e04ca26"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_two_term_sfc.py",
+      "role": "a0_source_1",
+      "sha256": "ff24ce25e08b659958d2e757c1d7a93e9308546bc84b7809637a8ea14b91f8a0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/all_exponent_squarefree_verification.json",
+      "role": "a0_source_10",
+      "sha256": "f6772435458a75069a2346d66dbd754d6f8f9c1ff5f557b8420f5f6eb7d0dece"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_uniform_two_term_sfc.py",
+      "role": "a0_source_2",
+      "sha256": "38daf8780fc6985dd749e5319c32aa8e14bb09572766e867ea15737dc82dceb7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/all_exponent_prefix_certificates.json",
+      "role": "a0_source_3",
+      "sha256": "79b06fc07ec60d593fde7af48da96e873583f6d0d406896d3dda21ad5c74b16f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_two_term_sfc_audit.json",
+      "role": "a0_source_4",
+      "sha256": "79b50f2e57e95cd12ea7416d73c715efbde565bce264b62fdd817bd4f5ff0768"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex",
+      "role": "a0_source_5",
+      "sha256": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/exponent_six_simplicity_verification.json",
+      "role": "a0_source_6",
+      "sha256": "2dbb42292d3b72785866259c551282cbaccf60ee0edbb5fb597d67bb9a641484"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+      "role": "a0_source_7",
+      "sha256": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+      "role": "a0_source_8",
+      "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex",
+      "role": "a0_source_9",
+      "sha256": "af0cda81c31a095f6dae9dcde1dc7998684968207aaa644713fc9a28dfce4025"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/factorial_practical_uniform_saddle_source_ledger.json",
+      "role": "a1_analytic_ledger",
+      "sha256": "593216409c84912979c4618b61bb84cd200c053075c0c6ccd927d7728b6329f4"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/factorial_practical_uniform_saddle_verification.json",
+      "role": "a1_analytic_receipt",
+      "sha256": "f3f1bb923be3fe2dfda71fd11ad60e79acf437772d56e0bf07487934708cceca"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_factorial_practical_uniform_saddle_tail.py",
+      "role": "a1_analytic_source_1",
+      "sha256": "054bca80c7a5b140d52adeef66f4bf8d0293f9d8b9da7e042373c90ad9226d2f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/factorial_practical_uniform_saddle_constants.json",
+      "role": "a1_analytic_source_2",
+      "sha256": "4c11fe9e7d6dfc2df6c4a4be8222dbdee794955092f3b3f0e00466e03cbcf02b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/FACTORIAL_GAP_TEN_SADDLE_EXTENSION.md",
+      "role": "a1_analytic_source_3",
+      "sha256": "73e6e300438a289e4b20a063756ee7fe429f8f25b72f03fb4a18a2baea7fa0e8"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_factorial_gap_ten_saddle_extension.py",
+      "role": "a1_analytic_source_4",
+      "sha256": "538e14b7b4fea77cb2152250e499f5379d1148d1ae15a1394bb4421f0de113c5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/FACTORIAL_UNIFORM_LARGE_GAP_SADDLE_SIMPLICITY.md",
+      "role": "a1_analytic_source_5",
+      "sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "role": "a1_analytic_source_8",
+      "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ordinary_lower_one_finite_bridge_source_ledger.json",
+      "role": "a1_finite_ledger",
+      "sha256": "13c2ff28b0341cf3dda61e97a47241a01fb004fe25e307b0df597fb92a63ce29"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ordinary_lower_one_finite_bridge_verification.json",
+      "role": "a1_finite_receipt",
+      "sha256": "f9e79087389ebe8375cc3c332d355d6de12fadcd8ad2c1f862632352e340430b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_ordinary_lower_one_finite_bridge.py",
+      "role": "a1_finite_source_1",
+      "sha256": "197b59e7337d3107bcb7ce19a9ad5c52991b3ff1923d46d68ecff31d33b7a52b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ordinary_lower_one_finite_bridge_inputs.json",
+      "role": "a1_finite_source_2",
+      "sha256": "b9d56f818f9b34641392bce0c937b3f3364ae03ab762edbc1a8d9d1985b4418d"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "role": "a1_finite_source_3",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "role": "a1_finite_source_4",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "role": "boundary_a0",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ORDINARY_LOWER_ONE_STRONG_FACTORIAL.md",
+      "role": "boundary_a1",
+      "sha256": "6e309c34718f5a794acfdd1d7325bb680f7287277073a14078f9d174c4428a32"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "role": "boundary_adjacent",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+    },
+    {
+      "kind": "local",
+      "path": "verify_fiberwise_uniform_eventual_binomial.py",
+      "role": "checker",
+      "sha256": "34bcf3717afe235d26b2a8b5a237ca3f9a89faa8b8d95e239d515ab1b8a394ec"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_ordinary_binomial_eventual_completion.py",
+      "role": "eventual_checker",
+      "sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ordinary_binomial_eventual_inputs.json",
+      "role": "eventual_inputs",
+      "sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ordinary_binomial_eventual_source_ledger.json",
+      "role": "eventual_ledger",
+      "sha256": "78bdc6094a425aa2b8642ad17bc39576ac37572280e935a719702b0248ab102e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+      "role": "eventual_proof",
+      "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ordinary_binomial_eventual_verification.json",
+      "role": "eventual_receipt",
+      "sha256": "612b989011943b54d7b6d372c39dbef6b284735b481d50413df43a3e500f0466"
+    },
+    {
+      "kind": "local",
+      "path": "fiberwise_uniform_eventual_inputs.json",
+      "role": "inputs",
+      "sha256": "90e2b4700c27d8f4fc8d75cbd5d8c096f2b237ce9e44e6cec35e7f9993db9e0a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "role": "old_high_gap",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/POLYNOMIAL_TRIANGLE_AND_TERMINAL_SIX.md",
+      "role": "old_terminal_triangle",
+      "sha256": "6618fd72ef2255e50f6664cc2c11e141fac7e8fe51b4ec04f29ae91d4ab96310"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "older_soft",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "local",
+      "path": "FIBERWISE_UNIFORM_EVENTUAL_BINOMIAL_SFC.md",
+      "role": "proof",
+      "sha256": "c727d2734e9658c4eed113a3e5986a8ca4f693f80b945afd69186e449357b0e2"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_uniform_quadratic_strong_factorial_completion.py",
+      "role": "quadratic_checker",
+      "sha256": "68ddabfd88f71c9bdf1b1f91fa556d171b09d319dc5637169c5f943000884215"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_quadratic_strong_factorial_completion_inputs.json",
+      "role": "quadratic_inputs",
+      "sha256": "c7daea01d23171451c898bb4e86f1e64170ddb0744f18db846d12f05166da2fe"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_quadratic_strong_factorial_completion_source_ledger.json",
+      "role": "quadratic_ledger",
+      "sha256": "27019c6e286efb8d79ce56068c31c73c75407caadc333e1ec377a2ad52f713a9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md",
+      "role": "quadratic_proof",
+      "sha256": "7e443fc6cd6743fc6885d4de047de0a43f5547526d40b872fa39fc2471d72d5a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_quadratic_strong_factorial_completion_verification.json",
+      "role": "quadratic_receipt",
+      "sha256": "3bae7d6483722dbe3246d6254aded998fe139fa7e5150abe71c6cea65cc4ee22"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/FIXED_GAP_LARGE_LOWER_EXPONENT_EXTENSION.md",
+      "role": "qualitative_fixed_gap",
+      "sha256": "07bba3dcb68b47e4b04189b8da9bae9763fe0273cec2360d644ba00c865b21b2"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/RELATIVE_GAP_THREE_LOWER_WEIGHTED_SADDLE_TAIL.md",
+      "role": "relative_analytic_proof",
+      "sha256": "1e270805e8e7beeb349d8aba8f43252fdb9c126dbccd67f2243d56d8eb1792b2"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_relative_gap_three_completion.py",
+      "role": "relative_checker",
+      "sha256": "c35239cfe3df56955687ca2b7acd8d94ff931d81679e572d7994101ba3e316f6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_relative_gap_three_finite_box.py",
+      "role": "relative_finite_checker",
+      "sha256": "e33fe9e57513b9a0ff74c1e5a5334718e57179450d87cdae2964da27d34ebe32"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/relative_gap_three_finite_box_verification.json",
+      "role": "relative_finite_receipt",
+      "sha256": "95bf53dba99f375ea908aedcaa80a36162a9824a0e193840150d81663f6d9036"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/relative_gap_three_completion_inputs.json",
+      "role": "relative_input",
+      "sha256": "b9e8adbd4eeceae13a885d6d1a790df847d53374bf468c5f76936ec82a35ea5e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/relative_gap_three_completion_source_ledger.json",
+      "role": "relative_ledger",
+      "sha256": "7bcd969d8459443cc614e5ae8b0b8af1b90522f247decfbc738dd8067023a887"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md",
+      "role": "relative_lower_two_proof",
+      "sha256": "da178d221b862cc08e7332b747484ee956869d48910f60259acb66643e1a00f6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/RELATIVE_GAP_THREE_STRONG_FACTORIAL.md",
+      "role": "relative_proof",
+      "sha256": "0e9ab6b15400c7e1b6a7d5630fc781d6bfab9f20483cfb76d7476fc8667bda2e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/relative_gap_three_completion_verification.json",
+      "role": "relative_receipt",
+      "sha256": "9ea61ac59a3a02c8cdcbc4d9c0a048c6c79a89d2ffdb72be610f7e83680ab65d"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_gamma_product_sharp_lower_annulus.py",
+      "role": "soft_checker",
+      "sha256": "6b112894dd581270d193d79796d96c3394795d34de995851d6d515277d41f664"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/gamma_product_sharp_lower_annulus_inputs.json",
+      "role": "soft_inputs",
+      "sha256": "d25523b322e219796c57b732523aea0c4a360ddd7a20ed8f2174786695070df0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/gamma_product_sharp_lower_annulus_source_ledger.json",
+      "role": "soft_ledger",
+      "sha256": "179e161316b1010113ddd3ddf0683fc51ff9d70118154af0322b7d2fbc9187ca"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md",
+      "role": "soft_proof",
+      "sha256": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/gamma_product_sharp_lower_annulus_verification.json",
+      "role": "soft_receipt",
+      "sha256": "7e88638ac48c4e7d7318389fee62e02ef3494ea5d5499e8d822d79e3f7fa5f15"
+    }
+  ],
+  "status": "PASS"
+}
