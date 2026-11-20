@@ -1,0 +1,893 @@
+{
+  "affine_inverse_controls": 48,
+  "assurance": "finite exact internal controls; unrestricted statements use written proofs",
+  "finite_marker_degree_controls": 73,
+  "known_phase_shifted_support": 913,
+  "known_pure_unsafe_original_powers": [
+    {
+      "m": 1,
+      "marked": "240",
+      "original_support": 16,
+      "pure": []
+    },
+    {
+      "m": 2,
+      "marked": "483840",
+      "original_support": 50,
+      "pure": []
+    },
+    {
+      "m": 3,
+      "marked": "4981616640",
+      "original_support": 101,
+      "pure": []
+    },
+    {
+      "m": 4,
+      "marked": "162599967129600",
+      "original_support": 173,
+      "pure": []
+    }
+  ],
+  "known_pure_unsafe_shifted_controls": 2,
+  "mixed_outputs": [
+    {
+      "m": 0,
+      "name": "one-pair-mixed-degrees",
+      "output": [
+        [
+          [
+            0
+          ],
+          "3"
+        ],
+        [
+          [
+            1
+          ],
+          "-1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "one-pair-mixed-degrees",
+      "output": [
+        [
+          [
+            0
+          ],
+          "5"
+        ],
+        [
+          [
+            1
+          ],
+          "-2"
+        ],
+        [
+          [
+            2
+          ],
+          "-7/3"
+        ],
+        [
+          [
+            3
+          ],
+          "1/3"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "one-pair-mixed-degrees",
+      "output": [
+        [
+          [
+            0
+          ],
+          "8"
+        ],
+        [
+          [
+            1
+          ],
+          "-40/3"
+        ],
+        [
+          [
+            2
+          ],
+          "-22/3"
+        ],
+        [
+          [
+            3
+          ],
+          "4/3"
+        ],
+        [
+          [
+            4
+          ],
+          "11/9"
+        ],
+        [
+          [
+            5
+          ],
+          "-1/9"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "name": "one-pair-mixed-degrees",
+      "output": [
+        [
+          [
+            0
+          ],
+          "-2"
+        ],
+        [
+          [
+            1
+          ],
+          "-58"
+        ],
+        [
+          [
+            2
+          ],
+          "-16"
+        ],
+        [
+          [
+            3
+          ],
+          "56/3"
+        ],
+        [
+          [
+            4
+          ],
+          "17/3"
+        ],
+        [
+          [
+            5
+          ],
+          "-2/3"
+        ],
+        [
+          [
+            6
+          ],
+          "-5/9"
+        ],
+        [
+          [
+            7
+          ],
+          "1/27"
+        ]
+      ]
+    },
+    {
+      "m": 4,
+      "name": "one-pair-mixed-degrees",
+      "output": [
+        [
+          [
+            0
+          ],
+          "-88"
+        ],
+        [
+          [
+            1
+          ],
+          "-192"
+        ],
+        [
+          [
+            2
+          ],
+          "184/3"
+        ],
+        [
+          [
+            3
+          ],
+          "344/3"
+        ],
+        [
+          [
+            4
+          ],
+          "16"
+        ],
+        [
+          [
+            5
+          ],
+          "-16"
+        ],
+        [
+          [
+            6
+          ],
+          "-92/27"
+        ],
+        [
+          [
+            7
+          ],
+          "8/27"
+        ],
+        [
+          [
+            8
+          ],
+          "19/81"
+        ],
+        [
+          [
+            9
+          ],
+          "-1/81"
+        ]
+      ]
+    },
+    {
+      "m": 0,
+      "name": "one-pair-nonconstant-output",
+      "output": [
+        [
+          [
+            2
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "one-pair-nonconstant-output",
+      "output": [
+        [
+          [
+            0
+          ],
+          "-4"
+        ],
+        [
+          [
+            3
+          ],
+          "3"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "one-pair-nonconstant-output",
+      "output": [
+        [
+          [
+            1
+          ],
+          "-28"
+        ],
+        [
+          [
+            4
+          ],
+          "27/2"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "name": "one-pair-nonconstant-output",
+      "output": [
+        [
+          [
+            2
+          ],
+          "-222"
+        ],
+        [
+          [
+            5
+          ],
+          "167/2"
+        ]
+      ]
+    },
+    {
+      "m": 4,
+      "name": "one-pair-nonconstant-output",
+      "output": [
+        [
+          [
+            3
+          ],
+          "-2128"
+        ],
+        [
+          [
+            6
+          ],
+          "666"
+        ]
+      ]
+    },
+    {
+      "m": 0,
+      "name": "two-pair-unbalanced",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "two-pair-unbalanced",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "1/3"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "-3"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "2/3"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "2"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "two-pair-unbalanced",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "38/9"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "-4"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "4/3"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-22/3"
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          "4"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "8/3"
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          "4"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "name": "two-pair-unbalanced",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "38/9"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "-42"
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          "76/3"
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          "-136/9"
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          "4"
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          "-8"
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          "8"
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          "8"
+        ],
+        [
+          [
+            4,
+            1
+          ],
+          "8"
+        ]
+      ]
+    },
+    {
+      "m": 0,
+      "name": "two-pair-cancelling-output-degrees",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "two-pair-cancelling-output-degrees",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "two-pair-cancelling-output-degrees",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "-1"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "name": "two-pair-cancelling-output-degrees",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "-5"
+        ]
+      ]
+    },
+    {
+      "m": 0,
+      "name": "three-pair-mixed",
+      "output": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "three-pair-mixed",
+      "output": [
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "three-pair-mixed",
+      "output": [
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            0,
+            2,
+            1
+          ],
+          "1"
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 0,
+      "name": "safe-isotropic-coordinate",
+      "output": [
+        [
+          [
+            1
+          ],
+          "2"
+        ],
+        [
+          [
+            3
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "safe-isotropic-coordinate",
+      "output": [
+        [
+          [
+            0
+          ],
+          "2"
+        ],
+        [
+          [
+            2
+          ],
+          "3"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "safe-isotropic-coordinate",
+      "output": [
+        [
+          [
+            1
+          ],
+          "6"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "name": "safe-isotropic-coordinate",
+      "output": [
+        [
+          [
+            0
+          ],
+          "6"
+        ]
+      ]
+    },
+    {
+      "m": 4,
+      "name": "safe-isotropic-coordinate",
+      "output": []
+    },
+    {
+      "m": 5,
+      "name": "safe-isotropic-coordinate",
+      "output": []
+    },
+    {
+      "m": 0,
+      "name": "unsafe-unit-constant",
+      "output": [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "unsafe-unit-constant",
+      "output": [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "name": "unsafe-unit-constant",
+      "output": [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "name": "unsafe-unit-constant",
+      "output": [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 4,
+      "name": "unsafe-unit-constant",
+      "output": [
+        [
+          [
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 0,
+      "name": "zero-phase",
+      "output": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "name": "zero-phase",
+      "output": []
+    },
+    {
+      "m": 2,
+      "name": "zero-phase",
+      "output": []
+    }
+  ],
+  "mixed_phase_marker_controls": 35,
+  "monomial_controls": 181,
+  "negative_controls": [
+    "omitted_shift",
+    "wrong_half",
+    "wrong_sign"
+  ],
+  "primary_source_ledger_sha256": "2148c3d39c372ab0b901eea25b488f73626165c57dc538a3147a0a9bdaf36e3b",
+  "result": "PASS",
+  "schema": 1,
+  "source_hashes": {
+    "checker": "bee133bd6422f2c1367930e3a1a3073aef43e7d003509e60969d8c7a0ae404cf",
+    "inputs": "3ae1a2986ff83139bf3833b1e23a8b943e0059f3f2c7fd26ff605700faefe2fa",
+    "proof": "c2f285d04ad2cbd771f5387c1965fab342f5a37e8785d8f88a7d4f3fe8a24634",
+    "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+    "research/moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "dfb6f3ac2050868a4ac6d6972ab250daf100923e30985a40ddfa8f8eeb4aed2a",
+    "research/moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md": "9c1c60587841e6b028edfa5e7488725dc60ba91c769f7fd320a4500eac177d14"
+  },
+  "validated_source_pins": [
+    {
+      "path": "sources/oaku_holonomic_integration_2013.pdf",
+      "role": "mathematical_input",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a"
+    },
+    {
+      "path": "sources/tsai_walther_hom_0007139v1.pdf",
+      "role": "mathematical_input",
+      "sha256": "e12f72392608d76c3ebd7862076c93fed2f9fa0c3ba32792c0b516d8d0df6ac5"
+    },
+    {
+      "path": "research/moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md",
+      "role": "mathematical_input",
+      "sha256": "dfb6f3ac2050868a4ac6d6972ab250daf100923e30985a40ddfa8f8eeb4aed2a"
+    },
+    {
+      "path": "research/moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md",
+      "role": "mathematical_input",
+      "sha256": "9c1c60587841e6b028edfa5e7488725dc60ba91c769f7fd320a4500eac177d14"
+    },
+    {
+      "path": "research/foundations/extended-geometry/FORMAL_INDICIAL_PURITY_CERTIFICATES.md",
+      "role": "mathematical_input",
+      "sha256": "775d9d7abaf8868b654937342febdaddcf244c1cd8a432aa92abedb9daa7b225"
+    },
+    {
+      "path": "research/foundations/extended-geometry/GLOBAL_SPHERE_PURITY_RECOGNITION.md",
+      "role": "context",
+      "sha256": "a1019817f4bf1957753be955e4a4daff954e9679b9487b360c3bf91c700c97f2"
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/singular_sing_1534.html",
+      "role": "mathematical_input",
+      "sha256": "48e747ffacca53148107971d39415f9217c8d9b95f690728b08faf30a35793c9"
+    },
+    {
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "role": "test_input",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "path": "SHIFTED_GAUSSIAN_IMAGE_EQUIVALENCE.md",
+      "role": "mathematical_input",
+      "sha256": "c2f285d04ad2cbd771f5387c1965fab342f5a37e8785d8f88a7d4f3fe8a24634"
+    },
+    {
+      "path": "verify_shifted_gaussian_image_equivalence.py",
+      "role": "evidence",
+      "sha256": "bee133bd6422f2c1367930e3a1a3073aef43e7d003509e60969d8c7a0ae404cf"
+    },
+    {
+      "path": "shifted_gaussian_image_equivalence_inputs.json",
+      "role": "mathematical_input",
+      "sha256": "3ae1a2986ff83139bf3833b1e23a8b943e0059f3f2c7fd26ff605700faefe2fa"
+    },
+    {
+      "path": "GAUSSIAN_COMPUTABLE_UNIFORM_PURITY_PREFIX.md",
+      "role": "mathematical_input",
+      "sha256": "e2adfb917c8153808a9ea9085b7bb22243fa16beecf01ad823ac8372da623adf"
+    },
+    {
+      "path": "verify_gaussian_computable_uniform_purity_prefix.py",
+      "role": "evidence",
+      "sha256": "081fb24401c8f29d97a6d49ead9273400ee589b9264c6102f048b1b545a266f2"
+    }
+  ]
+}

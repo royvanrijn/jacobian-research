@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "base_relative_path": "research/jacobian/subtree-shuffling/cubic_index_four_syzygy58.json",
+  "u": 0,
+  "w": 47,
+  "p": 48,
+  "seed_quadratic": [
+    {
+      "inputs": [
+        0,
+        51
+      ],
+      "coefficient": "1"
+    },
+    {
+      "inputs": [
+        0,
+        53
+      ],
+      "coefficient": "-4"
+    },
+    {
+      "inputs": [
+        48,
+        49
+      ],
+      "coefficient": "9"
+    }
+  ],
+  "iterations": 5,
+  "base_dimension": 58,
+  "base_inverse_degree": 207,
+  "seed_quadratic_weight": 90,
+  "base_w_weight": 29,
+  "lambda_negative_controls": [
+    "0",
+    "2"
+  ]
+}

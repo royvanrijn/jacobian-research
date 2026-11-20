@@ -1,0 +1,50 @@
+{
+  "scope": "Exact canonical proof inputs; contour arguments imported only as explicitly amended by the gap-ten proof. No external novelty claim.",
+  "files": [
+    {
+      "location": "packet",
+      "path": "FACTORIAL_GAP_TEN_SADDLE_EXTENSION.md",
+      "sha256": "73e6e300438a289e4b20a063756ee7fe429f8f25b72f03fb4a18a2baea7fa0e8"
+    },
+    {
+      "location": "packet",
+      "path": "verify_factorial_gap_ten_saddle_extension.py",
+      "sha256": "538e14b7b4fea77cb2152250e499f5379d1148d1ae15a1394bb4421f0de113c5"
+    },
+    {
+      "location": "packet",
+      "path": "factorial_gap_ten_saddle_constants.json",
+      "sha256": "deab4c7f68aec8a9bfee086be9190c0e2731d89e86bcbae64fe21218fae68b45"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/FACTORIAL_UNIFORM_LARGE_GAP_SADDLE_SIMPLICITY.md",
+      "sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/verify_factorial_uniform_large_gap_saddle.py",
+      "sha256": "f830d22228783c73bfc2349d1844df9b8cc579b308d0e78c84955e727a6bf8c0"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/FACTORIAL_HIGH_GAP_ROUCHE_REGION.md",
+      "sha256": "108393fc4ee7cdd100fcb40cf76e01ef7038d6034a4dcfc91071e70293fd256b"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    }
+  ]
+}

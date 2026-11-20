@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "proof": "CONSTANT_ENDPOINT_PRIMITIVE_NONPOWER_LIFTS.md",
+  "proof_labels": [
+    "ConstantEndpointPrimitiveNonpowerLifts",
+    "ConstantEndpointPrimitiveNonpowerFamilyCount"
+  ],
+  "domain": "Everychar0field, everyintegerheighta>=0; canonicalminimalbalancedoriginal lift ofeveryNONTRIVIALnormalizedPhi1profile. RadialprimitivityandfailureofscalarproperpowersoverALLfieldextensions.",
+  "retained_resources": [
+    {
+      "retained_path": "research/foundations/extended-geometry/CONSTANT_ENDPOINT_DAVENPORT_ZANNIER_CLASSIFICATION.md",
+      "sha256": "025216db689f3318dea140cafe3818eb8de592371d4d31c79ab47a4652f22aa5",
+      "exact_use": "CompletePhi1classification: squarefreeP, allHrootsamongP, h=ar+1, all-orderpurity/fixedZunsafety and geometricprofilecounts. Nonpower/radial assertions are not imported."
+    },
+    {
+      "retained_path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "exact_use": "Exactall-heightleast-degree formula needed toidentify(N1) asMINIMALbalancedlift."
+    },
+    {
+      "retained_path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2",
+      "exact_use": "OriginalR/Z/W/Tbilinears, quadricidentity and exactfactorial/angularnormalization. Existingwitnessantecedents only."
+    }
+  ],
+  "self_contained_arguments": [
+    "LiteralminimalhomogeneousliftandnonzeroR0topmonomial.",
+    "Absoluteirreducibilityofrank-two bilinears; exactT/L_alpha orders overalgebraicclosuresofarbitraryextensionfields.",
+    "Factorordernumerics k|a andk|sumh_alpha=ar+1 prohibitk>=2,includinga0.",
+    "Countconsequencepreservestheexistingprofile/x-scaling equivalence, withnobroaderImageclassificationclaimed."
+  ],
+  "verification": {
+    "checker": "verify_constant_endpoint_primitive_nonpower_lifts.py",
+    "receipt": "constant_endpoint_primitive_nonpower_lifts_verification.json",
+    "method": "Threeactualfour-variablefixturesdegrees4,9,12; exactmultivariatefactororders/radialresidues; sixpure/markedoriginalcontractioncomparisonsandproper-squaregcdnegativecontrol.",
+    "review_status": "Universal proof independently reconstructed by root and moments and read in full by arithmetic. Canonical exact replay passes all three literal original-variable fixtures and six contractions. All review/replay is internal.",
+    "inputs": "constant_endpoint_primitive_nonpower_lifts_inputs.json"
+  },
+  "not_claimed": [
+    "Nocountmodarbitraryoriginalvariablechanges.",
+    "Nonewminimumdegreeorwitnessconstructionclaim.",
+    "Nofinite-prefixproof ofpurityorunrestrictednonpower."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "odd_start_marked_gcd_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "location": "repository",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "role": "formal endpoint dependency ONLY",
+      "exact_use": "Section1 formal endpoint criterion with algebraic selected square root and inverse branch; odd pure moments vanish by parity. Section6 zero-center iff x^2|C,D for optional complete recognition. No rationality theorem from its later sections is imported."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "location": "repository",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "role": "primary elementary algebra",
+      "exact_use": "Gauss lemma and primitive-divisibility consequence9.23, Section9 printedp118. NO Luroth theorem or rational-return classification imported."
+    },
+    {
+      "path": "sources/batenkov_binyamini_uniform_2015.pdf",
+      "location": "packet",
+      "sha256": "503e186cc1dbe1582be6a8edd1a4c4c86ce9e2b955c94ffdd0c6ab25ece7bb69",
+      "role": "adjacent classical context ONLY",
+      "exact_use": "Actual Introduction Definition1/Remark2/Theorem1, printedpp2-3: complex polynomials and fixed endpoint path moments, Bautin index bounds dQ+3(dP-1)^2 and2+dq+3(dP-1)^2. Different hypotheses; no identification or bound imported."
+    }
+  ],
+  "inspected_primary_context": {
+    "author": "Dmitry Batenkov and Gal Binyamini",
+    "title": "Uniform upper bounds for the cyclicity of the zero solution of the Abel differential equation",
+    "year": 2015,
+    "url": "https://dimabatenkov.info/pdf/batenkov_uniform_2015.pdf",
+    "actual_source_read": true,
+    "scope_difference": "Their fixed-complex-endpoint polynomial integrals differ from spherical angular coefficient moments; used only as adjacent finite-moment context."
+  },
+  "new_self_contained_steps": [
+    "Marked reflected-fiber gcd criterion with primitive specialization",
+    "Rational f/H setup valid without rational X/u",
+    "Primitive residual division and Sylvester order bound",
+    "Explicit first nonzero even moment cutoff",
+    "Finite recognition including separate zero-center branch"
+  ],
+  "certificate_provenance": "SymPy exact gcd/gcdex/resultants discover literal sparse factors/Bezout identities. The verifier has no SymPy runtime dependency and reconstructs every polynomial from exact input fractions.",
+  "assurances": "Written all-field/all-order proof plus exact finite controls; no formal verification, external human review or general finite-moment priority claim."
+}

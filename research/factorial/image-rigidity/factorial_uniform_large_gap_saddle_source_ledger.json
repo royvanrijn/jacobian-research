@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-20",
+  "files": [
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/FACTORIAL_HIGH_GAP_ROUCHE_REGION.md",
+      "scope": "Complementary all-parameter root-disk theorem and ordinary physical-shape corollary, canonical proof input.",
+      "sha256": "108393fc4ee7cdd100fcb40cf76e01ef7038d6034a4dcfc91071e70293fd256b"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/verify_factorial_high_gap_rouche.py",
+      "scope": "Associated finite exact supporting replay of the retained high-gap theorem.",
+      "sha256": "46a950f11e8848adbb6e4269c4480f351e5392dc588a6e34514d11e921f1374e"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/factorial_high_gap_primary_source_record.json",
+      "scope": "Actual DLMF5.15.1 inspection record, not a falsely claimed original page download.",
+      "sha256": "0cffa1fbc9abba4630d244e5ec5232f4c4c75ad24a3e9dac14739357e67c2a34"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "scope": "Exact all-gap resultant/squarefreeness identity formula1 and fixed-gap contour method antecedent.",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "scope": "Exact two-shape resultant normalization and nonzero positive divisors.",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "scope": "Context only: existing prime-power coverage. No claimed completion of remaining small all-index gaps.",
+      "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+    },
+    {
+      "location": "packet",
+      "path": "FACTORIAL_UNIFORM_LARGE_GAP_SADDLE_SIMPLICITY.md",
+      "scope": "Current written proof or exact arithmetic support; internal mathematical/replay assurance only.",
+      "sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762"
+    },
+    {
+      "location": "packet",
+      "path": "verify_factorial_uniform_large_gap_saddle.py",
+      "scope": "Current written proof or exact arithmetic support; internal mathematical/replay assurance only.",
+      "sha256": "f830d22228783c73bfc2349d1844df9b8cc579b308d0e78c84955e727a6bf8c0"
+    },
+    {
+      "location": "packet",
+      "path": "factorial_uniform_large_gap_saddle_constants.json",
+      "scope": "Current written proof or exact arithmetic support; internal mathematical/replay assurance only.",
+      "sha256": "344209f38c7997a24bc64156f03c7e36a97bbf09033bf144a1f8751e6f1d62c0"
+    }
+  ],
+  "schema": 1,
+  "scope": "Uniform d>=20 polynomial-threshold saddle proof, and d>=512 all-terminal ordinary lower-one closure. Remaining all-index gaps10,12,14,15,18 and finite boxes are not claimed closed."
+}

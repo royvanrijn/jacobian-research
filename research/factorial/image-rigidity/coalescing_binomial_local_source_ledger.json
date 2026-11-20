@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "retained_date": "2026-11-20",
+  "scope": "Local algebraic/analytic identities, uniform LOCAL Hermite bulk and conditional action noncollision only. Context references are not theorem premises. Global localization, cycles and uniform error estimates remain open.",
+  "files": {
+    "airy_proof": {
+      "scope": "packet",
+      "path": "COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e",
+      "role": "proof_and_replay_provenance"
+    },
+    "bulk_proof": {
+      "scope": "packet",
+      "path": "COALESCING_BINOMIAL_HERMITE_BULK.md",
+      "sha256": "080041f624d7f2b116ffb14fceafc484a35a2857e57c172348b532f059bcd856",
+      "role": "proof_and_replay_provenance"
+    },
+    "airy_checker": {
+      "scope": "packet",
+      "path": "verify_coalescing_binomial_saddle_bridge.py",
+      "sha256": "fa1f8a840a1846c517f9e34b2e27aacc1530252ab11657e0a0ef00bd7f875248",
+      "role": "proof_and_replay_provenance"
+    },
+    "bulk_checker": {
+      "scope": "packet",
+      "path": "verify_coalescing_binomial_hermite_bulk.py",
+      "sha256": "fedd70287cc457f944e7f208884f8f88875073224fb203a32017313114fe3606",
+      "role": "proof_and_replay_provenance"
+    },
+    "large_lower": {
+      "scope": "repository",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9",
+      "role": "proof_and_replay_provenance"
+    },
+    "lower_four": {
+      "scope": "repository",
+      "path": "research/factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex",
+      "sha256": "e41f5b9b6f97cfc5d3c77d6783d0c9000c1f7cfed93b68856da8de07adbd6697",
+      "role": "proof_and_replay_provenance"
+    },
+    "lower_five": {
+      "scope": "repository",
+      "path": "research/factorial/image-rigidity/LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex",
+      "sha256": "150d433c66c8bd1ac0c82bbe0fff6a53ad701c2aede630e961c783f27c8facce",
+      "role": "proof_and_replay_provenance"
+    },
+    "gamma_obstruction": {
+      "scope": "repository",
+      "path": "research/factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex",
+      "sha256": "672dd8c896c0cda82227209cb11a05b313cbd710c41d3c4be4c98119c5929790",
+      "role": "proof_and_replay_provenance"
+    },
+    "etna_context": {
+      "scope": "repository",
+      "path": "research/factorial/image-rigidity/sources/dunster_gil_ruiz_segura_etna65_2026_140_155.pdf",
+      "sha256": "056e2ca9241dc3ecca9ec99e411471f3e3258dbf2d66492d9afbb551c7d7aa4d",
+      "role": "context_only"
+    },
+    "wolfs_context": {
+      "scope": "repository",
+      "path": "research/factorial/image-rigidity/sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf",
+      "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
+      "role": "context_only"
+    }
+  },
+  "primary_contexts": [
+    {
+      "title": "NIST DLMF2.4(v)",
+      "url": "https://dlmf.nist.gov/2.4#v",
+      "inspection": "Equations2.4.17–21 and following Airy/Scorer contour qualification read. Local classical framework only; no global cycle or uniform actual-pair theorem imported."
+    },
+    {
+      "title": "NIST DLMF36.12(ii)",
+      "url": "https://dlmf.nist.gov/36.12#ii",
+      "inspection": "Equations36.12.11–12 and analytic-continuation branch convention read. Two-amplitude framework only."
+    },
+    {
+      "title": "Dunster–Gil–Ruiz-Antolin–Segura, ETNA65(2026)140–155",
+      "url": "https://etna.ricam.oeaw.ac.at/vol.65.2026/pp140-155.dir/pp140-155.pdf",
+      "inspection": "Printed140 definition;142condition2.4;144Theorem2.1;145Section3. Compact alpha=(a_Bessel−2)/(n+1/2) excludes unbounded lower exponent in the first convolution factor. The actual gap2 moment is3F0; its adjoint is an additive convolution, not one2F0. No coprimality theorem imported."
+    },
+    {
+      "title": "Wolfs, arXiv2401.08312v1",
+      "url": "https://arxiv.org/pdf/2401.08312v1",
+      "inspection": "Theorem4.6 and Section4 multiple-Bessel/unit-circle scope; no AT-system zero-separation conclusion. Retained versionv1 used consistently."
+    }
+  ],
+  "review": "Root and a separate internal agent audited the whole mathematics/code and copied external-cwd replays. This is internal review, not external human or formal verification."
+}

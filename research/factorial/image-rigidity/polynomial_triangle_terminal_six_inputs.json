@@ -1,0 +1,10 @@
+{
+  "terminal": 6,
+  "prime": 1000003,
+  "binary_exponent": 7,
+  "gap_cutoff": 70,
+  "strict_lower_factor": 9,
+  "expected_cases": 21658,
+  "maximum_factorial_argument": 4134,
+  "case_stream_sha256": "1e519fc37d83a0afed508b0fe784dd8dcd126d194129caf0538652993378a73d"
+}

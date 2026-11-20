@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "scope": "Finite exact controls for the proof; not a general creative-telescoping implementation.",
+  "checker_sha256": "661c5e2aee4e0a82b254801967d0adf8625bae411fb7174883dc99f8c2cf80b3",
+  "input_sha256": "2b4fdeaa673de0244c1cc4bc951f32ff0231994a09ce874a5a2734bad2249051",
+  "checks": {
+    "literal_certificate_terms": 42,
+    "raw_sphere_moments": 17,
+    "ode_series_coefficients": 23,
+    "homogenized_series_coefficients": 22,
+    "original_balanced_lift_moments": 7,
+    "radial_n_pair_fixtures": 52,
+    "three_height_first_nonzero_order": 2,
+    "three_height_mu2": "8/21",
+    "homogenized_indicial": "-10584*N*(N-1)*(2*N-1)*(6*N-7)*(6*N+1)",
+    "J_minus_one_cutoff": 1,
+    "sphere_G_minus_one_cutoff": 2,
+    "corrupt_certificate_rejected": true,
+    "pure_three_height_regular_certificate": true,
+    "pure_three_height_raw_moments": 10,
+    "symbolic_linear_family_moments": 13,
+    "arbitrary_marker_euler_aggregation_fixtures": 36
+  },
+  "verified_source_pins": [
+    {
+      "path": "GLOBAL_SPHERE_PURITY_RECOGNITION.md",
+      "sha256": "a1019817f4bf1957753be955e4a4daff954e9679b9487b360c3bf91c700c97f2"
+    },
+    {
+      "path": "verify_global_sphere_three_height.py",
+      "sha256": "661c5e2aee4e0a82b254801967d0adf8625bae411fb7174883dc99f8c2cf80b3"
+    },
+    {
+      "path": "global_sphere_three_height_certificates.json",
+      "sha256": "2b4fdeaa673de0244c1cc4bc951f32ff0231994a09ce874a5a2734bad2249051"
+    },
+    {
+      "path": "FORMAL_INDICIAL_PURITY_CERTIFICATES.md",
+      "sha256": "775d9d7abaf8868b654937342febdaddcf244c1cd8a432aa92abedb9daa7b225"
+    },
+    {
+      "path": "verify_formal_indicial_purity_certificates.py",
+      "sha256": "b17b80a50a7bda6f52a3164aebd50573f81c5f6567106767bd4b94db47878f53"
+    },
+    {
+      "path": "formal_indicial_purity_certificates_verification.json",
+      "sha256": "fd40924fa8ac466da1095b5b1ba293ddad714198c7fb648dc26550262a335828"
+    },
+    {
+      "path": "sources/bostan_lairez_salvy_1301_4313v2.pdf",
+      "sha256": "c7d666525392f58a13d1fb5b8b77805e612391c069c07f2f8c53c482d4d40886"
+    },
+    {
+      "path": "sources/singular_sing_1534.html",
+      "sha256": "48e747ffacca53148107971d39415f9217c8d9b95f690728b08faf30a35793c9"
+    }
+  ],
+  "independent_indicial_controls": {
+    "passed": true,
+    "scope": "Exact operator algebra and finite controls supplement the unrestricted formal proof. Companion3height annihilator validity must be verified separately by its rational telescoping certificate.",
+    "delayed_operator_controls": [
+      {
+        "n": 1,
+        "cutoff": 1,
+        "indicial": [
+          "-1",
+          "1"
+        ]
+      },
+      {
+        "n": 2,
+        "cutoff": 2,
+        "indicial": [
+          "-2",
+          "1"
+        ]
+      },
+      {
+        "n": 7,
+        "cutoff": 7,
+        "indicial": [
+          "-7",
+          "1"
+        ]
+      },
+      {
+        "n": 31,
+        "cutoff": 31,
+        "indicial": [
+          "-31",
+          "1"
+        ]
+      }
+    ],
+    "irregular_root_free_controls": 2,
+    "sphere_t": {
+      "cutoff": 2,
+      "indicial": [
+        "0",
+        "-4",
+        "-2",
+        "2"
+      ],
+      "moment2": "1/3"
+    },
+    "three_height": {
+      "J_cutoff": 1,
+      "sphere_cutoff": 2,
+      "indicial": [
+        "0",
+        "74088",
+        "158760",
+        "-1375920",
+        "1905120",
+        "-762048"
+      ],
+      "sphere_moment2": "8/21"
+    },
+    "noncommutative_composition_controls": 12,
+    "general_marker_normalization_controls": 108,
+    "fixed_marker_controls": {
+      "pure_y_marker_x": "z/3 polynomial",
+      "t_marker_t": "nonpolynomial, mean0, firstcoefficient1/3",
+      "infinity_indicial": [
+        "-6",
+        "-11",
+        "-6",
+        "-1"
+      ]
+    },
+    "packet_sha256": {
+      "FORMAL_INDICIAL_PURITY_CERTIFICATES.md": "775d9d7abaf8868b654937342febdaddcf244c1cd8a432aa92abedb9daa7b225",
+      "verify_formal_indicial_purity_certificates.py": "b17b80a50a7bda6f52a3164aebd50573f81c5f6567106767bd4b94db47878f53"
+    }
+  },
+  "ledger_sha256": "3d8776f2e6842f40efa73776a78d176729c3015941c26695bf10dfb4e37dd127"
+}

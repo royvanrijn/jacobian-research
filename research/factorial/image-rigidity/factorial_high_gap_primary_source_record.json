@@ -1,0 +1,8 @@
+{
+  "actual_statement": "psi_prime(z)=sum_{k=0}^infinity 1/(k+z)^2, z not in {0,-1,-2,...}; applied only to positive real z.",
+  "date_read": "2026-11-20",
+  "scope": "Primary theorem statement inspected via the web page. This file is an inspection record, not a downloaded byte-for-byte original page. A direct automated file request returnedHTTP403. The integral comparison and all root arguments are proved in the note.",
+  "source_title": "NIST Digital Library of Mathematical Functions,5.15.1",
+  "url": "https://dlmf.nist.gov/5.15.E1",
+  "used_consequence": "For realu>0,psi_prime(u)>integral_0^infinity (u+t)^(-2)dt=1/u."
+}

@@ -1,0 +1,478 @@
+{
+  "all_terminal_gap_cutoff": 512,
+  "checker_sha256": "f830d22228783c73bfc2349d1844df9b8cc579b308d0e78c84955e727a6bf8c0",
+  "inequalities": [
+    {
+      "left": "17640",
+      "name": "upper_Rouche",
+      "relation": "<",
+      "right": "1048576"
+    },
+    {
+      "left": "129654",
+      "name": "upper_local_third",
+      "relation": "<",
+      "right": "1048576"
+    },
+    {
+      "left": "70560",
+      "name": "upper_real_curvature",
+      "relation": "<",
+      "right": "1048576"
+    },
+    {
+      "left": "14700",
+      "name": "small_log_ratios",
+      "relation": "<",
+      "right": "1048576"
+    },
+    {
+      "left": "6300",
+      "name": "main_derivative_separation",
+      "relation": "<",
+      "right": "1048576"
+    },
+    {
+      "left": "16800",
+      "name": "lower_real_curvature",
+      "relation": "<",
+      "right": "95367431640625"
+    },
+    {
+      "left": "3528",
+      "name": "lower_local_third",
+      "relation": "<",
+      "right": "95367431640625"
+    },
+    {
+      "left": "5324/9261",
+      "name": "two_power_ratio_j<=3",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "484/2205",
+      "name": "five_power_ratio_j<=2",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "8400",
+      "name": "W_lower_bound",
+      "relation": "<",
+      "right": "79792266297612001"
+    },
+    {
+      "left": "22/147",
+      "name": "seven_power_growth",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "8/3",
+      "name": "Euler_lower",
+      "relation": "<",
+      "right": "1957/720"
+    },
+    {
+      "left": "31967/11760",
+      "name": "Euler_upper",
+      "relation": "<",
+      "right": "87/32"
+    },
+    {
+      "left": "87/32",
+      "name": "Euler_weakening",
+      "relation": "<",
+      "right": "11/4"
+    },
+    {
+      "left": "29250547391998543654496747675769787000224063161425688305268710037971224965461915233632997033369746022101452285461007395960341483889982973850088820161296751817213/16053040770848578676341074600082301172467874558484990026139414283584117889404296875000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "local_exp_3_5",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "21012696923017571287175370389149864037610212168719765224022482714904532219747406313273521414375809362300729832437565413891691867431014429130069008143538761728450128956305556375790720663143463627900670463085992537017365279451/15861215782086222660300660499655090194611732877482644146884137851296907814080726172811421023571264431565475164600572068640673174659373725746961794097851170651214506004217607552336411845174136645047707238400000000000000000000",
+      "name": "left_upper_envelope",
+      "relation": "<",
+      "right": "4/3"
+    },
+    {
+      "left": "18093729503048682503452978990321660220630891686051107620704474390004505261548333015764842515186564160836802427058121235992719960557799793445816473766263879939966034594895209047185420851012631895244469849/16371883486179635794605180467801625370112829598052419517975391295578357093687233083013155632932903190528000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "small_log_radius",
+      "relation": "<",
+      "right": "10/9"
+    },
+    {
+      "left": "68583324399968237561838186557315037658655058073813914581332669293455304529746115888858415991162939962373472465359039254359959194146094973598783516335513189717367400029916885299979328431342287620266254871592058224407075946636007946383541176915101872284408901195990776912014018267773743/67900908920153814451754201378155595078965595785078001765367639346606690119014601384634938566162381379993600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "low_saddle_radius",
+      "relation": "<",
+      "right": "4/3"
+    },
+    {
+      "left": "40/9",
+      "name": "lower_far_first",
+      "relation": "<",
+      "right": "36386943786989442196261915704195112233281075592047048711088833433178989431697478872721124174212072072252154000820354454511591/8119024594502867997270408223175833619352966616377776622188590899126872425518839738228002985277456782458880000000000000000000"
+    },
+    {
+      "left": "18500624860645400253027500",
+      "name": "lower_far_second_squared",
+      "relation": "<",
+      "right": "19342813113834066795298816"
+    },
+    {
+      "left": "10875/3956",
+      "name": "lower_far_margin",
+      "relation": "<",
+      "right": "25/9"
+    },
+    {
+      "left": "99/100",
+      "name": "real_inverse_square",
+      "relation": "<",
+      "right": "99990000/100020001"
+    },
+    {
+      "left": "2/315",
+      "name": "upper_imaginary_ratio",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "1/1050",
+      "name": "lower_imaginary_ratio",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "4431/43681",
+      "name": "upper_saddle_curvature_error",
+      "relation": "<",
+      "right": "1/5"
+    },
+    {
+      "left": "44100/4405801",
+      "name": "lower_saddle_curvature_error",
+      "relation": "<",
+      "right": "1/10"
+    },
+    {
+      "left": "10098900/9129329",
+      "name": "upper_a_derivative",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "27778590000/9247776299",
+      "name": "lower_a_derivative",
+      "relation": "<",
+      "right": "4"
+    },
+    {
+      "left": "1085/836",
+      "name": "upper_prefactor_s_derivative",
+      "relation": "<",
+      "right": "3/2"
+    },
+    {
+      "left": "1/3",
+      "name": "upper_global_curvature_margin",
+      "relation": "<",
+      "right": "667/1250"
+    },
+    {
+      "left": "1/3",
+      "name": "lower_global_curvature_margin",
+      "relation": "<",
+      "right": "98/225"
+    },
+    {
+      "left": "9/10",
+      "name": "upper_local_cube_denominator",
+      "relation": "<",
+      "right": "912673/1000000"
+    },
+    {
+      "left": "1717/1500",
+      "name": "upper_log_third_factor",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "1030200/704969",
+      "name": "lower_log_third_factor",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "2000000/704969",
+      "name": "lower_base_third",
+      "relation": "<",
+      "right": "3"
+    },
+    {
+      "left": "4",
+      "name": "upper_leading_lower_squared",
+      "relation": "<",
+      "right": "220500/44521"
+    },
+    {
+      "left": "31500/3971",
+      "name": "upper_leading_upper_squared",
+      "relation": "<",
+      "right": "9"
+    },
+    {
+      "left": "4",
+      "name": "lower_leading_lower_squared",
+      "relation": "<",
+      "right": "264600000/48556211"
+    },
+    {
+      "left": "30800000/4405801",
+      "name": "lower_leading_upper_squared",
+      "relation": "<",
+      "right": "9"
+    },
+    {
+      "left": "354019/917504000",
+      "name": "upper_height",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "1/35000",
+      "name": "lower_height",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "5481/64",
+      "name": "upper_left_low_term_base",
+      "relation": "<",
+      "right": "9594700189231127932457480640742990732343498124093215860219394133070620787606737223078384020539179793099442721544147316756337558206173723289361/50348365777619453241089476149298559936689015580934091267145257959038919228824373798337602259308430191787858544948653588480000000000000000000"
+    },
+    {
+      "left": "1/21",
+      "name": "upper_left_monotonicity",
+      "relation": "<",
+      "right": "1/4"
+    },
+    {
+      "left": "16511/84000",
+      "name": "lower_central_ratio",
+      "relation": "<",
+      "right": "1/5"
+    },
+    {
+      "left": "4037/28000",
+      "name": "lower_local_ratio",
+      "relation": "<",
+      "right": "1/5"
+    },
+    {
+      "left": "101/320",
+      "name": "lower_origin_base",
+      "relation": "<",
+      "right": "8/25"
+    },
+    {
+      "left": "50601/160000",
+      "name": "lower_vertical_base",
+      "relation": "<",
+      "right": "33/100"
+    },
+    {
+      "left": "275/98",
+      "name": "lower_origin_endpoint_loss",
+      "relation": "<",
+      "right": "100/33"
+    },
+    {
+      "left": "1/945000",
+      "name": "lower_far_imaginary",
+      "relation": "<",
+      "right": "1/10000"
+    },
+    {
+      "left": "1/1050",
+      "name": "lower_left_integrated_amplitude",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "1000000000000",
+      "name": "overlap_decimal",
+      "relation": "<",
+      "right": "1099511627776"
+    },
+    {
+      "left": "513",
+      "name": "overlap_power_two",
+      "relation": "<",
+      "right": "1024"
+    },
+    {
+      "left": "16",
+      "name": "overlap_log_two",
+      "relation": "<",
+      "right": "512/27"
+    },
+    {
+      "left": "435/4",
+      "name": "overlap_log_margin",
+      "relation": "<",
+      "right": "511/4"
+    },
+    {
+      "left": "10/513",
+      "name": "overlap_derivative",
+      "relation": "<",
+      "right": "1/4"
+    },
+    {
+      "left": "146/3",
+      "name": "lower_prefactor_s_derivative",
+      "relation": "<=",
+      "right": "63"
+    },
+    {
+      "left": "-19/100",
+      "name": "upper_far_derivative",
+      "relation": "<=",
+      "right": "-1/10"
+    },
+    {
+      "left": "1/3",
+      "name": "upper_local_decay",
+      "relation": "<=",
+      "right": "37/105"
+    },
+    {
+      "left": "1/3",
+      "name": "lower_local_decay",
+      "relation": "<=",
+      "right": "7/20"
+    },
+    {
+      "left": "2048/33065",
+      "name": "upper_left_log_sum",
+      "relation": "<=",
+      "right": "21/160"
+    },
+    {
+      "left": "23/2100",
+      "name": "upper_left_endpoint_loss",
+      "relation": "<=",
+      "right": "21/200"
+    },
+    {
+      "left": "120/17",
+      "name": "upper_local_error_bracket",
+      "relation": "<",
+      "right": "9"
+    },
+    {
+      "left": "39000/899",
+      "name": "lower_local_error_bracket",
+      "relation": "<",
+      "right": "46"
+    },
+    {
+      "left": "6194316312576",
+      "name": "upper_tail_threshold",
+      "relation": "<=",
+      "right": "4640650289117164100520051333566036654601000000000000000000000000000000000000"
+    },
+    {
+      "left": "32256000000000000",
+      "name": "lower_tail_threshold",
+      "relation": "<=",
+      "right": "4640650289117164100520051333566036654601000000000000000000000000000000000000"
+    },
+    {
+      "left": "1/92610000",
+      "name": "common_relative_error",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "13/92610000",
+      "name": "log_error_Cauchy",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "252",
+      "name": "zero_free_threshold",
+      "relation": "<=",
+      "right": "16679880978201000000000000"
+    },
+    {
+      "left": "1/4",
+      "name": "main_derivative_gap",
+      "relation": "<",
+      "right": "97/300"
+    },
+    {
+      "left": "16",
+      "name": "main_derivative_order",
+      "relation": "<",
+      "right": "16679880978201000000000000"
+    }
+  ],
+  "inputs_sha256": "344209f38c7997a24bc64156f03c7e36a97bbf09033bf144a1f8751e6f1d62c0",
+  "ledger_sha256": "69ece13e60370280d94b611c8f87bf02db2d88ad7f1810b29b2113692a0a54b7",
+  "minimum_gap": 20,
+  "negative_controls": [
+    "weakened_upper_curvature",
+    "D20_far_envelope_not_certified",
+    "oversized_lower_local_radius"
+  ],
+  "phase_identity_count": 3,
+  "proof_sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762",
+  "rational_inequality_count": 70,
+  "scope": "Exact base and monotonicity ledger supports the written uniform contour proof; no numerical root/contour scan or missing small-gap completion inferred.",
+  "status": "PASS",
+  "terminal_threshold": "10^12*(d+1)^10",
+  "verified_source_pins": [
+    {
+      "path": "research/factorial/image-rigidity/FACTORIAL_HIGH_GAP_ROUCHE_REGION.md",
+      "sha256": "108393fc4ee7cdd100fcb40cf76e01ef7038d6034a4dcfc91071e70293fd256b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_factorial_high_gap_rouche.py",
+      "sha256": "46a950f11e8848adbb6e4269c4480f351e5392dc588a6e34514d11e921f1374e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/factorial_high_gap_primary_source_record.json",
+      "sha256": "0cffa1fbc9abba4630d244e5ec5232f4c4c75ad24a3e9dac14739357e67c2a34"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    },
+    {
+      "path": "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+    },
+    {
+      "path": "FACTORIAL_UNIFORM_LARGE_GAP_SADDLE_SIMPLICITY.md",
+      "sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762"
+    },
+    {
+      "path": "verify_factorial_uniform_large_gap_saddle.py",
+      "sha256": "f830d22228783c73bfc2349d1844df9b8cc579b308d0e78c84955e727a6bf8c0"
+    },
+    {
+      "path": "factorial_uniform_large_gap_saddle_constants.json",
+      "sha256": "344209f38c7997a24bc64156f03c7e36a97bbf09033bf144a1f8751e6f1d62c0"
+    }
+  ]
+}

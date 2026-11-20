@@ -1,0 +1,234 @@
+{
+  "all_source_coefficients_reconstructed": true,
+  "coefficient_perturbation_nonzero_J17_at_ones": [
+    0,
+    0,
+    "2451201582"
+  ],
+  "common_image": [
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+  ],
+  "dimension": 18,
+  "distinct_rational_collision": true,
+  "exact_nilpotency_index": 17,
+  "jet_controls": {
+    "gap_endpoint_checks": 1001,
+    "invertible_seed_bounded_jet_controls": [
+      {
+        "M": 1,
+        "inverse_degree": 3
+      },
+      {
+        "M": 2,
+        "inverse_degree": 3
+      },
+      {
+        "M": 3,
+        "inverse_degree": 3
+      },
+      {
+        "M": 4,
+        "inverse_degree": 3
+      }
+    ],
+    "literal_jet_operator_checks": [
+      {
+        "M": 0,
+        "dimension": 18,
+        "full_jacobian_operator_entries": 0,
+        "jet_cubic_terms": 0
+      },
+      {
+        "M": 1,
+        "dimension": 36,
+        "full_jacobian_operator_entries": 76,
+        "jet_cubic_terms": 45
+      },
+      {
+        "M": 2,
+        "dimension": 54,
+        "full_jacobian_operator_entries": 228,
+        "jet_cubic_terms": 165
+      },
+      {
+        "M": 3,
+        "dimension": 72,
+        "full_jacobian_operator_entries": 456,
+        "jet_cubic_terms": 405
+      },
+      {
+        "M": 4,
+        "dimension": 90,
+        "full_jacobian_operator_entries": 760,
+        "jet_cubic_terms": 796
+      }
+    ],
+    "scalar_noninvertible_jet_controls": [
+      {
+        "M": 1,
+        "inverse_degree": 3
+      },
+      {
+        "M": 2,
+        "inverse_degree": 5
+      },
+      {
+        "M": 3,
+        "inverse_degree": 7
+      },
+      {
+        "M": 4,
+        "inverse_degree": 9
+      }
+    ]
+  },
+  "literal_cubic_terms": 45,
+  "malformed_inputs_rejected": 4,
+  "power_profiles": [
+    {
+      "nonzero_entries": 76,
+      "nonzero_terms": 120,
+      "power": 1
+    },
+    {
+      "nonzero_entries": 173,
+      "nonzero_terms": 531,
+      "power": 2
+    },
+    {
+      "nonzero_entries": 222,
+      "nonzero_terms": 979,
+      "power": 3
+    },
+    {
+      "nonzero_entries": 261,
+      "nonzero_terms": 1493,
+      "power": 4
+    },
+    {
+      "nonzero_entries": 288,
+      "nonzero_terms": 2083,
+      "power": 5
+    },
+    {
+      "nonzero_entries": 300,
+      "nonzero_terms": 2564,
+      "power": 6
+    },
+    {
+      "nonzero_entries": 303,
+      "nonzero_terms": 3007,
+      "power": 7
+    },
+    {
+      "nonzero_entries": 301,
+      "nonzero_terms": 3392,
+      "power": 8
+    },
+    {
+      "nonzero_entries": 291,
+      "nonzero_terms": 3480,
+      "power": 9
+    },
+    {
+      "nonzero_entries": 269,
+      "nonzero_terms": 3156,
+      "power": 10
+    },
+    {
+      "nonzero_entries": 230,
+      "nonzero_terms": 2439,
+      "power": 11
+    },
+    {
+      "nonzero_entries": 178,
+      "nonzero_terms": 1526,
+      "power": 12
+    },
+    {
+      "nonzero_entries": 119,
+      "nonzero_terms": 719,
+      "power": 13
+    },
+    {
+      "nonzero_entries": 61,
+      "nonzero_terms": 255,
+      "power": 14
+    },
+    {
+      "nonzero_entries": 21,
+      "nonzero_terms": 69,
+      "power": 15
+    },
+    {
+      "nonzero_entries": 5,
+      "nonzero_terms": 10,
+      "power": 16
+    },
+    {
+      "nonzero_entries": 0,
+      "nonzero_terms": 0,
+      "power": 17
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Direct QQ cubic identity/collision; infinite jet-growth and shuffle consequences use the written formal/graded arguments, not finite inverse-prefix sampling.",
+  "sixteenth_power_witness": {
+    "coefficient": "288",
+    "column": 17,
+    "inputs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "row": 3
+  },
+  "source_ledger_sha256": "f57515b83dfbc4b4ea1a27c97dd0c598b9c767d0c0441bc0f800c2490e97fbfa",
+  "status": "PASS"
+}

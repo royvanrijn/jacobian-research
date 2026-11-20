@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "minimum_lower_exponent": 40000,
+  "minimum_terminal": 2,
+  "physical_gap": 2,
+  "gamma_parameter_samples": [
+    "1/2",
+    "1",
+    "5/3",
+    "10"
+  ],
+  "matrix_maximum_dimension": 16,
+  "actual_fixture_lower_exponents": [
+    1,
+    2,
+    4,
+    6,
+    40000
+  ],
+  "actual_fixture_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "polar_identity_maximum_degree": 7,
+  "proof_scope": "Every actual upper-moment zero lies in the global Hermite rectangle; no consecutive coprimality claim."
+}

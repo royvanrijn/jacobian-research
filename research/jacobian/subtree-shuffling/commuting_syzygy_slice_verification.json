@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source_ledger_sha256": "3cb4f4ef1ea659a7f34369ea675d9f7d19743b4c4e918ad043dbe2c35ab19a43",
+  "algebra": {
+    "commutator_generator_identities": 11,
+    "slice_identities": 4,
+    "normalized_coordinates": 8,
+    "joint_kernel_coordinates": 7,
+    "algebraic_negative_controls": 2,
+    "line_values_checked": 5
+  },
+  "literal_matrix": {
+    "jacobian_cube_nonzero_entries": 453,
+    "jacobian_fourth_power_entries": 0,
+    "pre_S_row_column_identities": 522,
+    "pre_S_new_fibre_columns_zero": true,
+    "post_S_columns_checked": 3,
+    "omega_J_entries": 0,
+    "omega_coefficient_negative_control": true,
+    "negative_converse_Q": "p1^3",
+    "negative_converse_Q_S": 0,
+    "negative_converse_fourth_row_nonzero_entries": 45,
+    "negative_converse_coefficient": "1179049050096099039/3404635167332"
+  }
+}

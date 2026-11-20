@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "source_ledger_sha256": "999281cc5debf8a77fb6a7f3426fc600d9a432ac531c4ef8a7d1a5738032c970",
+  "mixed_dimension": 17,
+  "full_dimension": 18,
+  "inverse_jacobian_degree": 15,
+  "resolvent_block_series_degrees": [
+    15,
+    14,
+    14,
+    13
+  ],
+  "mixed_companion_exact_index": 16,
+  "full_exact_index": 17,
+  "J16_only_tau_column": true,
+  "J16_entries": 5,
+  "J16_monomials": 10,
+  "top_inverse_jacobian_columns": [
+    7
+  ],
+  "top_times_cubic_inclusion_zero": true,
+  "top_times_DC_zero": true,
+  "top_times_Q_row3": {
+    "coefficient": "-288",
+    "inputs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ]
+  },
+  "all_constant_target_tau3_shears_obstructed_by_degree": true,
+  "affine_center_controls": 3,
+  "both_resolvent_inverse_orders_verified": true,
+  "A15_entries": 10,
+  "A15_support_columns": [
+    7,
+    16
+  ],
+  "complete_carrier_rows_verified": 2,
+  "wrong_affine_matrix_order_controls": 2,
+  "wrong_resolvent_sign_rejected": true,
+  "universal_product_splitting_and_lift_verified": true,
+  "malformed_inputs_rejected": 4
+}

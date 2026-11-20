@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "logical_scope": "fixed cubic homogeneous nilpotency-index-at-most-three; exact inverse29",
+  "inputs": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "CUBIC_CUBE_ZERO_SHUFFLE_EXTENSION.md",
+      "sha256": "00e9ae1513feb0fc831b3b6960a7fd709d6f5bef7c59316c292cd02aa246e00b",
+      "locator": "Theorems CubicCubeZeroSharpInverseDegree and CubicLengthThreeEventualShuffle"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_cubic_cube_zero_shuffle.py",
+      "sha256": "9a86194f84f146a8a7c8a23cccec1aa75be3fedca9bb92f5ccbb02855c2cf401",
+      "locator": "Portable exact QQ/Fp replay; no CAS dependency"
+    },
+    {
+      "role": "certificate",
+      "scope": "packet",
+      "path": "cubic_cube_zero_shuffle_certificates.json.gz",
+      "sha256": "ce4c712192ea60690315552a9df4df55f0a82ae466b063c260fd552135686be0",
+      "locator": "Exact RREF1..18 and selected valid modular root substitutions19..28"
+    },
+    {
+      "role": "quotient_kernel",
+      "scope": "repository",
+      "path": "research/jacobian/subtree-shuffling/verify_subtree_shuffle.py",
+      "sha256": "346bbace70014809c9b84fbbf9ce6de8547860c977c593c943321974f69d475c",
+      "locator": "ShuffleQuotient root_shuffles/lower_shuffle and graded basis construction"
+    },
+    {
+      "role": "quotient_theory",
+      "scope": "repository",
+      "path": "research/jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa",
+      "locator": "ShuffleOrbitReduction and ShuffleInverseDegreeEquivalence"
+    },
+    {
+      "role": "primary_shuffle",
+      "scope": "packet",
+      "path": "sources/bisi_et_al_subtree_shuffle_2301_08221v3.pdf",
+      "sha256": "1e22ca8fd2a64eb042ec84442f72204665ae3fce76e0248deeccc5697349d37a",
+      "locator": "Conjecture1.3 printedp5; Lemma3.3; Theorem1.4; strong-nilpotency comparison",
+      "url": "https://arxiv.org/pdf/2301.08221v3"
+    },
+    {
+      "role": "primary_gap",
+      "scope": "packet",
+      "path": "sources/zhao_inversion_burgers_math0403020v2.pdf",
+      "sha256": "5ae7d2a3b13796bad70a44b3347c82bea95d8f5ad3b34d3ecba252afeb631866",
+      "locator": "Theorem2.4 and Proposition2.5, equations2.6/2.10 printedpp7-9; arbitraryQalgebra scope p4",
+      "url": "https://arxiv.org/pdf/math/0403020v2"
+    },
+    {
+      "role": "primary_symmetry_context",
+      "scope": "packet",
+      "path": "sources/wright_symmetric_tree_math0511214v2.pdf",
+      "sha256": "0aeb8e359bf6c6e8deda57837cb2fdc8c00d1f5c1712a6cf033bf4e3250a4a58",
+      "locator": "Theorem3.2 printedp8 explicitly symmetric Jacobian",
+      "url": "https://arxiv.org/pdf/math/0511214v2"
+    },
+    {
+      "role": "primary_kernel_context",
+      "scope": "packet",
+      "path": "sources/yan_de_bondt_1302_5864v3.pdf",
+      "sha256": "d5984efa1de6cfc4c241016127a5035b9e5f38c7f14b0d0017eb98346c37ac7b",
+      "locator": "Theorem5.3(ii) printedpp11-12 requires equality of kernel dimensions; Corollary5.4 power-linear case",
+      "url": "https://arxiv.org/pdf/1302.5864v3"
+    },
+    {
+      "role": "primary_power_linear_context",
+      "scope": "packet",
+      "path": "sources/adamus_et_al_nilpotency_1508_02012v1.pdf",
+      "sha256": "6cec704145697fe227c2ee5aca28bc1522da6a079587d2a2da7fa54e64a01307",
+      "locator": "Theorem3 printedpp3-4: each component is a cube of a linear form, inverse degree9",
+      "url": "https://arxiv.org/pdf/1508.02012v1"
+    }
+  ]
+}

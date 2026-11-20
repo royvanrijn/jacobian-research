@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "sources_sha256": "0cd17199a09c962c39a824a5fc47e6e6784b33ed09bde61e8bc4e028adc43f6e",
+  "cases": [
+    {
+      "label": "affine-fibre-obstruction",
+      "dimension": 7,
+      "cubic_terms": 8,
+      "jacobian_cube_nonzero_entries": 4,
+      "jacobian_fourth_power_entries": 0,
+      "L_e0_cubed_e0": [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "obstruction_product": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "inverse_line_coefficients": [
+        "1",
+        "1",
+        "3",
+        "9",
+        "27",
+        "-81",
+        "0"
+      ],
+      "inverse_degree": 13,
+      "perturbed_fourth_power_nonzero_entries": 3
+    },
+    {
+      "label": "quadratic-fibre-obstruction",
+      "dimension": 9,
+      "cubic_terms": 12,
+      "jacobian_cube_nonzero_entries": 9,
+      "jacobian_fourth_power_entries": 0,
+      "L_e0_cubed_e0": [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "obstruction_product": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      "inverse_line_coefficients": [
+        "1",
+        "1",
+        "3",
+        "9",
+        "27",
+        "27",
+        "-162",
+        "243",
+        "729"
+      ],
+      "inverse_degree": 21,
+      "perturbed_fourth_power_nonzero_entries": 1
+    }
+  ],
+  "malformed_inputs_rejected": 4
+}

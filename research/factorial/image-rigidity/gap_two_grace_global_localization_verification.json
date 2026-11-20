@@ -1,0 +1,59 @@
+{
+  "counts": {
+    "actual_duplication_vectors": 40,
+    "closed_inverse_disc_controls": 24,
+    "matrix_minor_coefficient_identities": 544,
+    "negative_controls": 4,
+    "polar_identity_values": 35,
+    "rational_domain_guards": 7,
+    "universal_cleared_identities": 6
+  },
+  "rational_guards": [
+    {
+      "label": "M exceeds U in the all-a range",
+      "left": "160009",
+      "relation": "<",
+      "right": "400000000"
+    },
+    {
+      "label": "M-U lower-bound derivative positive",
+      "left": "4",
+      "relation": "<",
+      "right": "20000"
+    },
+    {
+      "label": "all-root real width",
+      "left": "160009/4000000",
+      "relation": "<",
+      "right": "1/20"
+    },
+    {
+      "label": "all-root imaginary width squared",
+      "left": "112024002340081/8000000000000",
+      "relation": "<",
+      "right": "16"
+    },
+    {
+      "label": "U removed t coefficient",
+      "left": "7/4",
+      "relation": "<",
+      "right": "320025/2"
+    },
+    {
+      "label": "E+U removed t coefficient",
+      "left": "4",
+      "relation": "<",
+      "right": "280026"
+    },
+    {
+      "label": "2M+E removed t coefficient",
+      "left": "11/4",
+      "relation": "<",
+      "right": "120027/2"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Exact support for the full written all-N global ACTUAL gap-two zero-localization proof. The finite controls do not by themselves prove the universal matrix/Grace argument. No SFC closure.",
+  "source_ledger_sha256": "03b4de7441ab56d366bd178a627e4b0f337d6a944593de157f3292ebbd2d2be7",
+  "status": "PASS"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "scope": "The complete actual a=2 finite bridge is a separately executed input to the written analytic theorem; no finite-to-infinite inference is made.",
+  "files": [
+    {
+      "location": "packet",
+      "path": "ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md",
+      "sha256": "da178d221b862cc08e7332b747484ee956869d48910f60259acb66643e1a00f6"
+    },
+    {
+      "location": "packet",
+      "path": "verify_ordinary_lower_two_finite_bridge.py",
+      "sha256": "1e3776fd467209382030db3f89fe76c840a5772c861fa12d675419e36bc15092"
+    },
+    {
+      "location": "packet",
+      "path": "ordinary_lower_two_finite_bridge_inputs.json",
+      "sha256": "5f64b80b1b80d8c295656f88a797c548cfe97dc7ed570a6cd7ca2c677b070a7a"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/LOWER_TWO_PRIME_GAP_SFC.tex",
+      "sha256": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex",
+      "sha256": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    }
+  ]
+}

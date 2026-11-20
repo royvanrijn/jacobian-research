@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Complete localized pre-S and actual post-S scalar-extension criteria; base-independent necessary single-scalar obstruction; no full polynomiality or infinite-iteration theorem",
+  "sources": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "COMMUTING_SYZYGY_SLICES_AND_SCALAR_OBSTRUCTION.md",
+      "sha256": "50dd9267653613edc7262d8e5f93c9059626635efa3fef02eb8578def29205fa",
+      "locator": "Complete localized common-kernel iff; actual pre-S criterion and universal post-S column obstruction"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_commuting_syzygy_slices.py",
+      "sha256": "1055987b36b0f0d71af6ee52eb0dfa8da535865d7f58a5d6374a44d295e6c3f4",
+      "locator": "Laurent polynomial identities, slices and direct full58-matrix columns"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "commuting_syzygy_slice_inputs.json",
+      "sha256": "3680cfd26f0a01f781d0eff24863d52b5d0bf438931ac6281c1a6ba7640ce25a",
+      "locator": "Exact variable indexing and canonical literal input selector"
+    },
+    {
+      "role": "canonical_proof",
+      "scope": "repo",
+      "path": "jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_SYZYGY58.md",
+      "sha256": "02559e0af8c50e682e14afafa081a5087b9a278d0f2c20a4c7be93c00d97294a",
+      "locator": "The displayed cubics, actual r/du independence and literal index4 map"
+    },
+    {
+      "role": "literal_data",
+      "scope": "repo",
+      "path": "jacobian/subtree-shuffling/cubic_index_four_syzygy58.json",
+      "sha256": "b8899afd6e1f1f197d783bdb5c3936434da06cec4be3e607ec64b8c5cac1e4e8",
+      "locator": "All1248 literal cubics, direct fullmatrix replay"
+    },
+    {
+      "role": "classical_linear_context",
+      "scope": "packet",
+      "path": "sources/drensky_makar_limanov_0804_2933v1.pdf",
+      "sha256": "49c384f69862fca68f5e6df36fd2c1be2cbd05bca90e4968a6fc1b22d8d96d69",
+      "locator": "Introduction pp1\u20132: linear nilpotent derivation hypotheses; special theorem only Jordan blocks2"
+    },
+    {
+      "role": "classical_covariant_context",
+      "scope": "packet",
+      "path": "sources/bedratyuk_weitzenbock_covariants_2010.pdf",
+      "sha256": "316278c30eee5a0989d9886bf2e1e1463c4db6a75bd2d99806495cb6dc842aa8",
+      "locator": "Sections1\u20132 printed99\u2013102: linear Weitzenbock derivations and binary covariants"
+    }
+  ]
+}

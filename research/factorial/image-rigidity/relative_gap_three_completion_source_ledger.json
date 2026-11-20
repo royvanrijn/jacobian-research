@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "Complete actual finite relative-gap-three box plus separately proved analytical/lower-two inputs. The completed primary source and receipt are immutable executed bytes; no completed secondary-run or external assurance.",
+  "sources": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "RELATIVE_GAP_THREE_STRONG_FACTORIAL.md",
+      "sha256": "897f86922ac0140b5445302f0fd449e0ed0789e39e73fdd99cd2deef84b909c6"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_relative_gap_three_completion.py",
+      "sha256": "c35239cfe3df56955687ca2b7acd8d94ff931d81679e572d7994101ba3e316f6"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "relative_gap_three_completion_inputs.json",
+      "sha256": "b9e8adbd4eeceae13a885d6d1a790df847d53374bf468c5f76936ec82a35ea5e"
+    },
+    {
+      "role": "finite_checker",
+      "scope": "packet",
+      "path": "verify_relative_gap_three_finite_box.py",
+      "sha256": "e33fe9e57513b9a0ff74c1e5a5334718e57179450d87cdae2964da27d34ebe32"
+    },
+    {
+      "role": "finite_receipt",
+      "scope": "packet",
+      "path": "relative_gap_three_finite_box_verification.json",
+      "sha256": "95bf53dba99f375ea908aedcaa80a36162a9824a0e193840150d81663f6d9036"
+    },
+    {
+      "role": "analytic_proof",
+      "scope": "packet",
+      "path": "RELATIVE_GAP_THREE_LOWER_WEIGHTED_SADDLE_TAIL.md",
+      "sha256": "1e270805e8e7beeb349d8aba8f43252fdb9c126dbccd67f2243d56d8eb1792b2"
+    },
+    {
+      "role": "lower_two_proof",
+      "scope": "packet",
+      "path": "ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md",
+      "sha256": "da178d221b862cc08e7332b747484ee956869d48910f60259acb66643e1a00f6"
+    }
+  ],
+  "executed_receipt_preserved_verbatim": true,
+  "secondary_run_scope": "No complete secondary-run conclusion is imported.",
+  "finite_arithmetic_import": "python-flint0.9.0 / FLINT3.6.0 exact finite-field polynomial gcd and extended gcd; every degree-preserving bound and actual coefficient normalization proved in the written source."
+}

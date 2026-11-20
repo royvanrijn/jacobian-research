@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "support_gap_range": [
+    9,
+    63
+  ],
+  "lower_exponent_minimum": 3,
+  "relative_gap_factor": 3,
+  "absolute_terminal_onset": 4000,
+  "linear_terminal_factor": 128,
+  "support_pairs": 532,
+  "terminal_cases": 3694040,
+  "maximum_terminal": 10751,
+  "maximum_factorial": 903084,
+  "primary_prime": 1000003,
+  "alternative_prime": 1000033,
+  "finite_source_sha256": "e33fe9e57513b9a0ff74c1e5a5334718e57179450d87cdae2964da27d34ebe32",
+  "completed_receipt_sha256": "95bf53dba99f375ea908aedcaa80a36162a9824a0e193840150d81663f6d9036",
+  "fallbacks": [
+    [
+      11,
+      41,
+      6142
+    ],
+    [
+      4,
+      48,
+      4491
+    ],
+    [
+      13,
+      61,
+      3147
+    ],
+    [
+      19,
+      61,
+      3843
+    ],
+    [
+      19,
+      62,
+      2254
+    ]
+  ]
+}

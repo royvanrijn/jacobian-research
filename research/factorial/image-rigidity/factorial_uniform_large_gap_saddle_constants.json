@@ -1,0 +1,6 @@
+{
+  "all_terminal_gap_cutoff": 512,
+  "minimum_gap": 20,
+  "threshold_factor": 1000000000000,
+  "threshold_power": 10
+}

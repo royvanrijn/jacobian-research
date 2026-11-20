@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "arithmetic": "QQ and F_1000000009; standard library only",
+  "exact_grades": [
+    {
+      "grade": 1,
+      "columns": 1,
+      "root_relations": 0,
+      "rank": 0,
+      "dimension": 1,
+      "inverse_support": 1
+    },
+    {
+      "grade": 2,
+      "columns": 1,
+      "root_relations": 0,
+      "rank": 0,
+      "dimension": 1,
+      "inverse_support": 1
+    },
+    {
+      "grade": 3,
+      "columns": 2,
+      "root_relations": 1,
+      "rank": 1,
+      "dimension": 1,
+      "inverse_support": 1
+    },
+    {
+      "grade": 4,
+      "columns": 3,
+      "root_relations": 2,
+      "rank": 1,
+      "dimension": 2,
+      "inverse_support": 2
+    },
+    {
+      "grade": 5,
+      "columns": 5,
+      "root_relations": 4,
+      "rank": 2,
+      "dimension": 3,
+      "inverse_support": 3
+    },
+    {
+      "grade": 6,
+      "columns": 8,
+      "root_relations": 7,
+      "rank": 4,
+      "dimension": 4,
+      "inverse_support": 4
+    },
+    {
+      "grade": 7,
+      "columns": 14,
+      "root_relations": 14,
+      "rank": 8,
+      "dimension": 6,
+      "inverse_support": 6
+    },
+    {
+      "grade": 8,
+      "columns": 22,
+      "root_relations": 26,
+      "rank": 13,
+      "dimension": 9,
+      "inverse_support": 9
+    },
+    {
+      "grade": 9,
+      "columns": 37,
+      "root_relations": 48,
+      "rank": 24,
+      "dimension": 13,
+      "inverse_support": 13
+    },
+    {
+      "grade": 10,
+      "columns": 60,
+      "root_relations": 85,
+      "rank": 41,
+      "dimension": 19,
+      "inverse_support": 19
+    },
+    {
+      "grade": 11,
+      "columns": 98,
+      "root_relations": 152,
+      "rank": 72,
+      "dimension": 26,
+      "inverse_support": 26
+    },
+    {
+      "grade": 12,
+      "columns": 155,
+      "root_relations": 267,
+      "rank": 121,
+      "dimension": 34,
+      "inverse_support": 34
+    },
+    {
+      "grade": 13,
+      "columns": 246,
+      "root_relations": 468,
+      "rank": 206,
+      "dimension": 40,
+      "inverse_support": 40
+    },
+    {
+      "grade": 14,
+      "columns": 375,
+      "root_relations": 805,
+      "rank": 340,
+      "dimension": 35,
+      "inverse_support": 28
+    },
+    {
+      "grade": 15,
+      "columns": 560,
+      "root_relations": 1376,
+      "rank": 544,
+      "dimension": 16,
+      "inverse_support": 0
+    },
+    {
+      "grade": 16,
+      "columns": 807,
+      "root_relations": 2314,
+      "rank": 794,
+      "dimension": 13,
+      "inverse_support": 0
+    },
+    {
+      "grade": 17,
+      "columns": 1170,
+      "root_relations": 3840,
+      "rank": 1161,
+      "dimension": 9,
+      "inverse_support": 0
+    },
+    {
+      "grade": 18,
+      "columns": 1682,
+      "root_relations": 6274,
+      "rank": 1680,
+      "dimension": 2,
+      "inverse_support": 0
+    }
+  ],
+  "modular_zero_grades": [
+    {
+      "grade": 19,
+      "columns": 2429,
+      "independent_valid_relations": 2429,
+      "dimension": 0
+    },
+    {
+      "grade": 20,
+      "columns": 3454,
+      "independent_valid_relations": 3454,
+      "dimension": 0
+    },
+    {
+      "grade": 21,
+      "columns": 4892,
+      "independent_valid_relations": 4892,
+      "dimension": 0
+    },
+    {
+      "grade": 22,
+      "columns": 6841,
+      "independent_valid_relations": 6841,
+      "dimension": 0
+    },
+    {
+      "grade": 23,
+      "columns": 9467,
+      "independent_valid_relations": 9467,
+      "dimension": 0
+    },
+    {
+      "grade": 24,
+      "columns": 12877,
+      "independent_valid_relations": 12877,
+      "dimension": 0
+    },
+    {
+      "grade": 25,
+      "columns": 17276,
+      "independent_valid_relations": 17276,
+      "dimension": 0
+    },
+    {
+      "grade": 26,
+      "columns": 22723,
+      "independent_valid_relations": 22723,
+      "dimension": 0
+    },
+    {
+      "grade": 27,
+      "columns": 29422,
+      "independent_valid_relations": 29422,
+      "dimension": 0
+    },
+    {
+      "grade": 28,
+      "columns": 37406,
+      "independent_valid_relations": 37406,
+      "dimension": 0
+    }
+  ],
+  "grade14_dual_coordinate": 664,
+  "grade14_nonzero_dual_value": "-10529123457938566680915/34700041625447744",
+  "sharp_inverse_degree": 29,
+  "sharp_example_dimension": 195,
+  "controls": {
+    "duplicate_relation_rejected": true,
+    "malformed_pivot_controls": 4,
+    "quadratic_gap_first_inductive_grade": 29
+  },
+  "input_sha256": "ce4c712192ea60690315552a9df4df55f0a82ae466b063c260fd552135686be0",
+  "kernel_sha256": "346bbace70014809c9b84fbbf9ce6de8547860c977c593c943321974f69d475c",
+  "checker_sha256": "9a86194f84f146a8a7c8a23cccec1aa75be3fedca9bb92f5ccbb02855c2cf401",
+  "source_ledger_sha256": "41433b4214fb8df6a5af11bb6fcc2308d325822d525868d0fb481ed641477281",
+  "source_pins_checked": 10,
+  "seconds": 34.09666299819946
+}

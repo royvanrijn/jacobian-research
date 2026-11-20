@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-20",
+  "scope": "Core7 exact{21,483} via coefficient21 neutral atoms; proof imports retained ALL-prime Hecke/local bounds and selected other-block tail, not a uniform generic N-scale tail. Complete actual native principal replay and57 coordinate cube witnesses. Internal written proof and exact replay; no global40 conclusion.",
+  "primary_source_actual_scope": "Rosser-Schoenfeld1962Corollary1(3.5),(3.6),printed69/PDF6: pi(x)>x/logx forx>=17,pi(x)<1.25506x/logx forx>1; both bounds enter retained selected prime tail. Milne ideal-class correspondence is imported through existing exact CN3Individual proof.",
+  "files": [
+    {
+      "location": "packet",
+      "path": "MINUS23_INERT_CORE_SEVEN_CLOSURE.md",
+      "sha256": "4900f8febcd83edfafc35ae65b0072b8ed4f1b01c817756cae9c4e6a9bdc9f9e"
+    },
+    {
+      "location": "packet",
+      "path": "verify_minus23_inert_core_seven.py",
+      "sha256": "548fdce661a666bd2500ab04d0cb1818591cc819438a4fe3191ab5b158b4d661"
+    },
+    {
+      "location": "packet",
+      "path": "verify_core_seven_principal_atoms.cpp",
+      "sha256": "dfcc09b690a1b0a26e60158b0603de41ddb7580e01b9fab44a4f9caf9e5504c3"
+    },
+    {
+      "location": "packet",
+      "path": "core_seven_cube_atom_witnesses.json",
+      "sha256": "fc4caf2612e3c3f36d1942933cfce9b7be0a5146b1a3538bfb064db018766131"
+    },
+    {
+      "location": "packet",
+      "path": "core_seven_completion_inputs.json",
+      "sha256": "6530b23c1f0d7f67be4707466dfe1030d0d6f9b536b89591c9c8b37c2dd51c5b"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "sha256": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md",
+      "sha256": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+      "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md",
+      "sha256": "b53a42b1d299d97deb7dcabd39c32ba7ee910d111b2387b2d99b4f77ba3bceaf"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md",
+      "sha256": "480432abc097dc77f264a7f3b726b241d59b15633008e0b8e8cc81af1f66eba8"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/sources/rosser_schoenfeld_1962.pdf",
+      "sha256": "8e37b06f82e09421bceb2502578c47b61469141f0287e6acedb70e01765ab556"
+    }
+  ]
+}

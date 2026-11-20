@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-20",
+  "schema": 1,
+  "scope": "Exact principal neutral atoms plus complete inert-core5 classification via selected-block tail and actual complete native bridge. Other inert cores/global40 remain open.",
+  "files": [
+    {
+      "location": "packet",
+      "path": "MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md",
+      "sha256": "480432abc097dc77f264a7f3b726b241d59b15633008e0b8e8cc81af1f66eba8"
+    },
+    {
+      "location": "packet",
+      "path": "verify_minus23_principal_atoms_and_core_five.py",
+      "sha256": "bf3a8925c56fc8627915174e9e4d1b0a529eb2f85cda036e7ca0888f2e26c156"
+    },
+    {
+      "location": "packet",
+      "path": "verify_minus23_principal_atoms_finite.cpp",
+      "sha256": "39a31d575702319ef922c4c5ca431504206ebc53fb811677488afb46b13e81ce"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md",
+      "sha256": "b53a42b1d299d97deb7dcabd39c32ba7ee910d111b2387b2d99b4f77ba3bceaf"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "sha256": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md",
+      "sha256": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/primitive_norm_minus23_sumset_checks.json",
+      "sha256": "6773ef579384d0612fec2ab4bdb5238a038c5445e41b03a731eb4e3029194cf3"
+    },
+    {
+      "location": "repository",
+      "path": "research/arithmetic/sources/rosser_schoenfeld_1962.pdf",
+      "sha256": "8e37b06f82e09421bceb2502578c47b61469141f0287e6acedb70e01765ab556"
+    }
+  ],
+  "primary_statement": "Rosser-Schoenfeld1962Corollary1(3.5),(3.6), printedp69/PDFp6: pi(Y)>Y/logY forY>=17 and pi(t)<1.25506t/logt for ALLt>1. Both actual bounds read. The negative endpoint in partial summation is retained.",
+  "finite_scope": "Native complete coordinate-row enumeration, exact full principal-prime sieve and every target below2^30; actual3701503cases completed, no numerical sampling. Full old2^24 coordinate/ideal prefix hash independently agrees.",
+  "assurance": "Internal written mathematical review by root/arithmetic/moments and separate complete native compilation/replays. No external human review, formal verification, historical-priority or global40-completeness claim.",
+  "primary_statement_actual_read": {
+    "pdf": "research/arithmetic/sources/rosser_schoenfeld_1962.pdf",
+    "printed_page": 69,
+    "pdf_page_one_based": 6,
+    "locator": "Section3 Corollary1 formulas(3.5),(3.6)",
+    "lower_hypothesis": "Y>=17",
+    "upper_hypothesis": "t>1",
+    "scope": "Actual scanned primary page independently read. Lowerpi bound is essential to retain the negative boundary term, yielding5/(3YlogY); the original cube proof used only the upper bound.",
+    "assurance": "Internal actual-statement/hypothesis audit; no full-primary-proof or external/formal-review claim."
+  }
+}

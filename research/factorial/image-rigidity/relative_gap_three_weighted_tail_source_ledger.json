@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "Uniform ANALYTICAL tail and all-terminal d>=max(64,3a) class; exact finite equivalence. The separate3694040-case rational finite obligation is not asserted completed by this packet.",
+  "files": {
+    "proof": {
+      "location": "local",
+      "path": "RELATIVE_GAP_THREE_LOWER_WEIGHTED_SADDLE_TAIL.md",
+      "sha256": "1e270805e8e7beeb349d8aba8f43252fdb9c126dbccd67f2243d56d8eb1792b2",
+      "use": "Full analytic parameter, contour, weighted Gaussian, sparse-overlap and both finite-equivalence directions."
+    },
+    "checker": {
+      "location": "local",
+      "path": "verify_relative_gap_three_weighted_tail.py",
+      "sha256": "d3fda8f9fef1f34ecbd06a29b64b4afad5e6f0a8c23671aecfbf3f581fbe3e96",
+      "use": "Exact rational guards, three complete Bernstein re-expansions, failure controls and domain counts."
+    },
+    "corner_proof": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md",
+      "sha256": "da178d221b862cc08e7332b747484ee956869d48910f60259acb66643e1a00f6",
+      "use": "Sections2-6 whole complex-strip certificates and packet budgets; a2 all-gap finite computation is only used for least-exponent-two branch."
+    },
+    "corner_constants": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/lower_two_weighted_saddle_constants.json",
+      "sha256": "65ad9a2418c8dd01117761d4ee801d854c2b68f3814913f06c26a1ed5d038353",
+      "use": "All three full power/Bernstein coefficient lists at the certified parameter corner."
+    },
+    "corner_checker": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/verify_lower_two_weighted_saddle_tail.py",
+      "sha256": "330071e8872138df8eb06cb96a1d474ce9f3ee3c1991fdd5ef1c6249be5199ef",
+      "use": "Exact retained inequalities used after proven continuous majorant reduction."
+    },
+    "sparse": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+      "use": "Theorem thm:sparse, actual changing-shape moments at arbitrary lower exponent."
+    }
+  },
+  "primary_context_only": [
+    {
+      "url": "https://dlmf.nist.gov/2.4#iv",
+      "locator": "Sections2.4(iv)-(v), actual hypotheses and uniform coalescing discussion inspected",
+      "scope": "Classical saddle expansion comparison. No finite onset or actual consecutive coprimality theorem imported; all new estimates proved in the retained note."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Direct18-dimensional homogeneous cubic collision of exact index17, explicit triangular jets with unbounded inverse degree, fixed17/all-later shuffle failure; fixed4 remains open",
+  "sources": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "CUBIC_INDEX_SEVENTEEN_SHUFFLE_FAILURE.md",
+      "sha256": "7e227742191536c13f617a5cab72fe1b951ad4b7effdc7d5e60102a5102fa52b",
+      "locator": "Exact literal index17/collision; explicit jet degree criterion/growth; shuffle and finite graded reverse bridge"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_cubic_index_seventeen_shuffle_failure.py",
+      "sha256": "4aed8de2304ea9d4df6c25208ecf8cbe3dad5332843e92d8947c84ecd9d11b49",
+      "locator": "Direct standard-library rational reconstruction, complete Jacobian powers and jet operator controls"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "cubic_index_seventeen_shuffle_failure_inputs.json",
+      "sha256": "f305ecd8db14df064ff706c9c74242b8d004024d0ef25747c6f2334a3f98e26b",
+      "locator": "All45 cubics, both18-dimensional rational points and full J16 monomial witness"
+    },
+    {
+      "role": "retained_base_input",
+      "scope": "repo",
+      "path": "research/jacobian/cubic-reduction/de-bondt12-witness.json",
+      "sha256": "107941e34acb90cf11112bc6a42bec284360db347ad91b4844e4fa43ad9714bd",
+      "locator": "Original12-variable scale11=1 coefficients and rational collision; exact diagonal conjugation reconstructs scale2"
+    },
+    {
+      "role": "retained_companion_proof",
+      "scope": "repo",
+      "path": "research/jacobian/cubic-reduction/POWER89.md",
+      "sha256": "e803ff33062b5c4c39463bdc8b6f9bfcd4840d9b0ef41aa2d11814ed4b7dd3e9",
+      "locator": "Exact18-variable homogeneous companion and lifted collision; attribution and base determinant comparison"
+    },
+    {
+      "role": "retained_shuffle_proof",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa",
+      "locator": "ShuffleOrbitReduction and ShuffleInverseDegreeEquivalence; finite graded all-substitutions realization"
+    },
+    {
+      "role": "primary_shuffle",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/sources/bisi_et_al_subtree_shuffle_2301_08221v3.pdf",
+      "sha256": "1e22ca8fd2a64eb042ec84442f72204665ae3fce76e0248deeccc5697349d37a",
+      "locator": "Conjecture1.3, Lemma3.3, Theorem1.4; original fixed-index/all-length quantifiers"
+    }
+  ]
+}

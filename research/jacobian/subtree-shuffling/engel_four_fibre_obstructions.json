@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "label": "affine-fibre-obstruction",
+      "dimension": 7,
+      "coordinate_grades": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "H_terms": [
+        {
+          "output": 1,
+          "inputs": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "output": 2,
+          "inputs": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 3,
+          "inputs": [
+            0,
+            0,
+            2
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 5,
+          "inputs": [
+            0,
+            0,
+            4
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 6,
+          "inputs": [
+            0,
+            0,
+            5
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 4,
+          "inputs": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 5,
+          "inputs": [
+            0,
+            2,
+            3
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "output": 6,
+          "inputs": [
+            0,
+            3,
+            3
+          ],
+          "coefficient": "3"
+        }
+      ]
+    },
+    {
+      "label": "quadratic-fibre-obstruction",
+      "dimension": 9,
+      "coordinate_grades": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "H_terms": [
+        {
+          "output": 1,
+          "inputs": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "output": 2,
+          "inputs": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 3,
+          "inputs": [
+            0,
+            0,
+            2
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 6,
+          "inputs": [
+            0,
+            0,
+            5
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 7,
+          "inputs": [
+            0,
+            0,
+            6
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 8,
+          "inputs": [
+            0,
+            0,
+            7
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 4,
+          "inputs": [
+            0,
+            2,
+            2
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 5,
+          "inputs": [
+            2,
+            2,
+            2
+          ],
+          "coefficient": "1"
+        },
+        {
+          "output": 6,
+          "inputs": [
+            2,
+            2,
+            3
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "output": 8,
+          "inputs": [
+            2,
+            2,
+            4
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 7,
+          "inputs": [
+            2,
+            3,
+            3
+          ],
+          "coefficient": "3"
+        },
+        {
+          "output": 8,
+          "inputs": [
+            3,
+            3,
+            3
+          ],
+          "coefficient": "-1"
+        }
+      ]
+    }
+  ]
+}

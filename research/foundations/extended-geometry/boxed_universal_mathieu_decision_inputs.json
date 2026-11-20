@@ -1,0 +1,220 @@
+{
+  "component_cases": [
+    {
+      "guard": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [],
+      "name": "irreducible_scaling_family",
+      "retained_components": 1,
+      "universal_valid": false
+    },
+    {
+      "guard": [
+        [
+          [
+            1,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [],
+      "name": "punctured_scaling_family",
+      "retained_components": 1,
+      "universal_valid": false
+    },
+    {
+      "guard": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          1,
+          0
+        ]
+      ],
+      "name": "closed_zero_phase",
+      "retained_components": 1,
+      "universal_valid": true
+    },
+    {
+      "guard": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          1,
+          1
+        ]
+      ],
+      "name": "reducible_both_components",
+      "retained_components": 2,
+      "universal_valid": false
+    },
+    {
+      "guard": [
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          1,
+          1
+        ]
+      ],
+      "name": "open_guard_selects_safe_component",
+      "retained_components": 1,
+      "universal_valid": true
+    },
+    {
+      "guard": [
+        [
+          [
+            1,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          1,
+          1
+        ]
+      ],
+      "name": "open_guard_selects_unsafe_component",
+      "retained_components": 1,
+      "universal_valid": false
+    },
+    {
+      "guard": [
+        [
+          [
+            1,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          1,
+          1
+        ]
+      ],
+      "name": "empty_product_guard",
+      "retained_components": 0,
+      "universal_valid": true
+    },
+    {
+      "guard": [
+        [
+          [
+            1,
+            0
+          ],
+          "1"
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          1,
+          1
+        ]
+      ],
+      "name": "nonzero_sum_keeps_both",
+      "retained_components": 2,
+      "universal_valid": false
+    },
+    {
+      "guard": [
+        [
+          [
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "monomial_ideal": [
+        [
+          0,
+          0
+        ]
+      ],
+      "name": "unit_ideal_empty",
+      "retained_components": 0,
+      "universal_valid": true
+    },
+    {
+      "guard": [],
+      "monomial_ideal": [],
+      "name": "zero_guard_empty",
+      "retained_components": 0,
+      "universal_valid": true
+    }
+  ],
+  "interpolation_cases": [
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      1,
+      5
+    ],
+    [
+      2,
+      2,
+      2
+    ]
+  ],
+  "max_F4_moment": 4,
+  "max_linear_marker_exponent": 3,
+  "max_linear_moment": 10,
+  "max_power_divisor_degree": 40,
+  "schema": 1
+}

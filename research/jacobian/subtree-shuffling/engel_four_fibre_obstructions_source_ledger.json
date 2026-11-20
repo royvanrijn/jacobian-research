@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Explicit7/9-variable rational homogeneous cubics: exact Jacobian index4; frame-independent affine/quadratic fibre obstructions; inverse degrees13/21",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "ENGEL_FOUR_FIBRE_OBSTRUCTIONS.md",
+      "sha256": "a7d4e1fbb6697b07f1393906fccdffcf0674be75783937c38b38862c1be71b98"
+    },
+    {
+      "role": "literal_input",
+      "path": "engel_four_fibre_obstructions.json",
+      "sha256": "635531280ab5e8bdd54480bf0b9f1eca5a473d3bde58623e3abf0b40ef705c3c"
+    },
+    {
+      "role": "checker",
+      "path": "verify_engel_four_fibre_obstructions.py",
+      "sha256": "40279d2fc3a789a7434d18977e179370645afaccf104ec69ac9e68d2e21e7e1b"
+    }
+  ]
+}

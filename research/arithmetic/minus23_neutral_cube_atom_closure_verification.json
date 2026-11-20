@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "Complete literal finite nonprincipal-cube atom bridge plus exact constants/onset arithmetic. The infinite theorem uses the written retained Hecke and local operator inputs; no principal-atom completeness is claimed.",
+  "prime_bound_exclusive": 16384,
+  "complete_nonprincipal_split_prime_count": 633,
+  "literal_primitive_23_unit_decompositions": 1899,
+  "cube_target_onset_power_of_two": 43,
+  "principal_target_sufficient_onset_power_of_two": 40,
+  "cube_scaled_positive_surplus": "139/192",
+  "principal_scaled_positive_surplus": "328385/164736",
+  "euler_maximizing_exponents": {
+    "2": 6,
+    "3": 4,
+    "5": 2,
+    "7": 2,
+    "11": 1,
+    "13": 1,
+    "17": 1,
+    "19": 1,
+    "23": 1,
+    "29": 1,
+    "31": 1
+  },
+  "divisor_constant": 29,
+  "nonzero_binary_lattice_count_short_table": [
+    2,
+    2,
+    2,
+    4,
+    4,
+    8,
+    8,
+    12,
+    14,
+    14,
+    14,
+    18,
+    18,
+    18,
+    18,
+    20,
+    20,
+    24,
+    24,
+    24,
+    24,
+    24,
+    26,
+    30
+  ],
+  "main_term_constants": [
+    "68/125",
+    "872/1375",
+    "864/1375"
+  ],
+  "negative_controls": [
+    "omitted_domain_row",
+    "changed_literal_coordinate",
+    "ordinary_imprimitive_four"
+  ],
+  "source_sha256": {
+    "proof": "b53a42b1d299d97deb7dcabd39c32ba7ee910d111b2387b2d99b4f77ba3bceaf",
+    "checker": "aa3b2cd07b6b591973c252203536753941ecb2a4808781126f031ba04f6ae7f1",
+    "literal_packet": "1c815095c850b6b7659a45824801bda371932633464039c1199bbbe1785bdf27"
+  },
+  "retained_source_sha256": {
+    "research/arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8",
+    "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5",
+    "research/arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+    "results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367"
+  },
+  "source_ledger_sha256": "6226d34cd694a89fde5d27f96e763d85f16bb176b1a9d2d73f41e6f6c4df7ad6",
+  "verified_primary_source_pins": [
+    {
+      "path": "sources/rosser_schoenfeld_1962.pdf",
+      "sha256": "8e37b06f82e09421bceb2502578c47b61469141f0287e6acedb70e01765ab556",
+      "role": "mathematical_input"
+    },
+    {
+      "path": "sources/rouse_thompson_2206_00412v1.pdf",
+      "sha256": "92d35aec177b635d3db19ed0d56498ada1ffe20ac7599391bb13f36352a0ae92",
+      "role": "context"
+    },
+    {
+      "path": "sources/fuchs_hsu_rickards_schindler_stange_2025.pdf",
+      "sha256": "b1c306fade2532d60535367250e496784e0ee04b994eaa16efc40036df91c9dc",
+      "role": "context"
+    }
+  ],
+  "external_or_formal_review": false
+}

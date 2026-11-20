@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Repeatable cubic index-four block, forced cancellation and bounded exact inverse degrees; no unbounded inverse family",
+  "sources": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "REPEATABLE_INDEX_FOUR_BLOCK_AND_INVERSE_RESET.md",
+      "sha256": "578a7cfcf2c0c4ea029957b32118b02d5d567a640d1e630626ba9658ebfbe9cc",
+      "locator": "Theorems (R1)--(R9), exact iterate family and coefficient-forced reset"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_repeatable_index_four_reset.py",
+      "sha256": "328760c5aa9ca6d0c3f88657259bce33464fecf628d1655bcb1b59dd149ed175",
+      "locator": "Standard-library symbolic module identities and full literal iterates"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "repeatable_index_four_reset_inputs.json",
+      "sha256": "d405102630004d1da1f52b5e6c4b3969bc7b6f83aca7d67d337ad07d4d8742d4",
+      "locator": "Exact seed quadratic, coordinates and five-iterate/negative-control inputs"
+    },
+    {
+      "role": "base_proof",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_SYZYGY58.md",
+      "sha256": "02559e0af8c50e682e14afafa081a5087b9a278d0f2c20a4c7be93c00d97294a",
+      "locator": "Literal cubic index-four map, weight profile and exact inverse degree207"
+    },
+    {
+      "role": "base_input",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/cubic_index_four_syzygy58.json",
+      "sha256": "b8899afd6e1f1f197d783bdb5c3936434da06cec4be3e607ec64b8c5cac1e4e8",
+      "locator": "All1248 literal old cubic components"
+    },
+    {
+      "role": "primary_context",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/sources/umirbaev-polarization-algebras-2014.pdf",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86",
+      "locator": "Lemmas7--8/Corollary2 printed7--8; example printed9--10; context only"
+    }
+  ]
+}

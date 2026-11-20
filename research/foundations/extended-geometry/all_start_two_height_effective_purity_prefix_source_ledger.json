@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "proof": "ALL_START_TWO_HEIGHT_EFFECTIVE_PURITY_PREFIX.md",
+  "proof_sha256": "41100233ab31d0e1144c4833dd21c29633832eb0d939d73e68a1ae303cddb129",
+  "proof_labels": [
+    "AllStartUniformPurityPrefix",
+    "UniformReducedMomentLocus"
+  ],
+  "domain": "Every characteristic-zero field, every integer a>=0, all regular exact two-height profiles t^a(C+t^2D)/x of least sphere degree at most d>=1. All-order purity iff the first B_d=3 floor((d+5)^2/4)(floor((d+3)^2/4)-1)-4 moments vanish. Reduced universal moment ideals have the same radical as this explicit prefix; no ordinary ideal equality is asserted.",
+  "retained_resources": [
+    {
+      "path": "ODD_START_MARKED_GCD_AND_FINITE_PURITY.md",
+      "sha256": "3bc84f448efa1b443ad01afb419990292efd7a21a561dcf162355da81f3901ca",
+      "exact_use": "Odd-start first bad even order <=(deg f-1)(deg f+4deg H)-4, without rationality of selected X,u before purity. Both P,Q are divided by their entire primitive common gcd before the residual Sylvester bound."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "graph_source_id": "SRC-HOPF-ALL-START-HEIGHT-TWO-MARKER-SAFETY",
+      "exact_use": "Formal endpoint identity before purity, nonzero endpoint factors at all positive even orders (and every order for even a); all-height zero-center second/fourth Sylvester criterion and positive-weight converse. No safety classification is used to infer purity."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "graph_source_id": "SRC-HOPF-ALL-START-HEIGHT-SHARP-UNSAFE-DEGREE",
+      "exact_use": "Exact all-height least sphere/radial-primitive balanced degree max(deg C+a-1,deg D+a+1), yielding coefficient degree constraints. No pole-compensation or rationality result is needed by this uniform addendum."
+    }
+  ],
+  "self_contained_steps": [
+    "Exact rational H formula -2 C^((a+5)/2)/(x(-D)^((a-1)/2)E) and its coefficient-degree bound.",
+    "Two concave-product bounds give an explicit quartic-in-d odd-start cutoff uniformly over a.",
+    "Even-start purity iff the rational identity W^2=u'^2; selected T(0)=1 excludes the negative square branch, including a0.",
+    "Direct rational-degree estimate bounds the first bad even-start order, and the same B_d dominates it and the zero-center tests.",
+    "A prime generic point over Frac(R/P), still characteristic zero, proves equality of RADICAL moment ideals without a Nullstellensatz or algebraically closed embedding premise.",
+    "The universal field-point criterion and radical moment-ideal identity imply each other; degree dependence is necessary by the delayed first-bad-moment family merged in Section6."
+  ],
+  "verification": {
+    "checker": "verify_all_start_two_height_effective_purity_prefix.py",
+    "checker_sha256": "b36d5c43716b2e8208904097c2c2746d6872f6980f8b05de5f906e09ba67475e",
+    "receipt": "all_start_two_height_effective_purity_prefix_verification.json",
+    "method": "Standard-library Fraction polynomial and rational arithmetic reconstructs28odd H identities and35even rational square criteria on actual polynomial phases,504direct raw angular moments and5050integer degree-bound controls. Common factors and a0 negative rational exponent are exercised. Refuses disabled assertions. Finite controls supplement the written all-order theorem.",
+    "internal_review": "Root and arithmetic independently reconstructed the universal bounds and parity branches. Geometry and moments each independently read the complete frozen uniform proof and replayed its focused checker:28odd H identities35even criteria504raw moments5050degree controls, all PASS. Arithmetic independently audited and replayed the frozen odd-start marked-gcd source:9exact gcds1590literal Bezout terms64raw moments, and checked all18source fractions are reduced. Moments also independently audited and replayed the delayed-nonpurity addendum:135fixtures945raw controls, PASS. All reviews are internal; no external human or formal assurance is claimed."
+  },
+  "separate_scope_control": {
+    "proof": "ALL_START_TWO_HEIGHT_EFFECTIVE_PURITY_PREFIX.md",
+    "proof_sha256": "41100233ab31d0e1144c4833dd21c29633832eb0d939d73e68a1ae303cddb129",
+    "checker": "verify_two_height_delayed_nonpurity.py",
+    "checker_sha256": "ed1338786586a026bbba787dd2246015c81689661952f59d3953b033a966a9c3",
+    "receipt": "two_height_delayed_nonpurity_verification.json",
+    "exact_use": "C1,D=-1+epsilon*x^N with even N has first bad order N and least degree N+a+1. Exact angular-weight argument and135fixtures945raw moment controls establish the necessity of degree dependence; these are NONPURE examples. Can be merged into the main note at canonical integration rather than retained as a second proof home.",
+    "locator": "Section6 DelayedTwoHeightNonpurity"
+  },
+  "classical_scope": "The new bound is proved through the companion marked branch and residual resultant, not by applying a polynomial-segment moment multiplicity theorem to this angular functional. The companion source ledger records the inspected Batenkov-Binyamini antecedent with its different hypotheses; no historical-priority claim is made.",
+  "not_claimed": [
+    "No purity test for arbitrary height profiles, arbitrary sphere polynomials or arbitrary Image polynomials.",
+    "No degree-independent finite purity prefix; explicit delayed-nonpurity examples exclude one even at any fixed starting height.",
+    "No equality of ordinary moment ideals, nilpotence exponent or scheme-multiplicity bound.",
+    "No all-order inference solely from the finite fixture checks, no external review and no proof-assistant verification."
+  ]
+}

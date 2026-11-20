@@ -1,0 +1,9 @@
+{
+  "minimum_gap": 10,
+  "absolute_terminal_threshold": 5000,
+  "linear_terminal_factor": 128,
+  "all_terminal_gap_cutoff": 44,
+  "finite_box_maximum_gap": 43,
+  "finite_box_pair_count": 171812,
+  "finite_box_terminal_ceiling_exclusive": 5632
+}

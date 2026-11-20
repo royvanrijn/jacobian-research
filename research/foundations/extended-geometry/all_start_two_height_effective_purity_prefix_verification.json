@@ -1,0 +1,664 @@
+{
+  "checker_sha256": "b36d5c43716b2e8208904097c2c2746d6872f6980f8b05de5f906e09ba67475e",
+  "direct_raw_moment_controls": 504,
+  "even_square_criterion_controls": 35,
+  "external_or_formal_review_claimed": false,
+  "external_review": false,
+  "fixtures": [
+    {
+      "a": 0,
+      "actual_degree_bound": 4,
+      "c": 0,
+      "d": 1,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 77
+    },
+    {
+      "a": 0,
+      "actual_degree_bound": 5,
+      "c": 1,
+      "d": 1,
+      "e": 0,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 77
+    },
+    {
+      "a": 0,
+      "actual_degree_bound": 5,
+      "c": 0,
+      "d": 2,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 176
+    },
+    {
+      "a": 0,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 2,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 176
+    },
+    {
+      "a": 0,
+      "actual_degree_bound": 14,
+      "c": 2,
+      "d": 5,
+      "e": 4,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 1121
+    },
+    {
+      "a": 0,
+      "actual_degree_bound": 12,
+      "c": 2,
+      "d": 3,
+      "e": 2,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 380
+    },
+    {
+      "a": 0,
+      "actual_degree_bound": 8,
+      "c": 1,
+      "d": 4,
+      "e": 3,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 656
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 2,
+      "c": 0,
+      "d": 2,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 176
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 26,
+      "c": 1,
+      "d": 2,
+      "e": 0,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 176
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 18,
+      "c": 0,
+      "d": 3,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 380
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 3,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 380
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 2,
+      "c": 2,
+      "d": 6,
+      "e": 4,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 146,
+      "c": 2,
+      "d": 4,
+      "e": 2,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 656
+    },
+    {
+      "a": 1,
+      "actual_degree_bound": 2,
+      "c": 2,
+      "d": 6,
+      "e": 4,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 4,
+      "c": 0,
+      "d": 3,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 380
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 11,
+      "c": 1,
+      "d": 3,
+      "e": 0,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 380
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 9,
+      "c": 0,
+      "d": 4,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 656
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 4,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 656
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 6,
+      "c": 2,
+      "d": 7,
+      "e": 4,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 2588
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 22,
+      "c": 2,
+      "d": 5,
+      "e": 2,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 1121
+    },
+    {
+      "a": 2,
+      "actual_degree_bound": 8,
+      "c": 3,
+      "d": 8,
+      "e": 5,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 2,
+      "c": 0,
+      "d": 4,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 656
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 80,
+      "c": 1,
+      "d": 4,
+      "e": 0,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 656
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 64,
+      "c": 0,
+      "d": 5,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1121
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 5,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1121
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 44,
+      "c": 2,
+      "d": 8,
+      "e": 4,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 374,
+      "c": 2,
+      "d": 6,
+      "e": 2,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 3,
+      "actual_degree_bound": 2,
+      "c": 4,
+      "d": 10,
+      "e": 6,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 6884
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 4,
+      "c": 0,
+      "d": 5,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 1121
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 17,
+      "c": 1,
+      "d": 5,
+      "e": 0,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 1121
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 15,
+      "c": 0,
+      "d": 6,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 6,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 14,
+      "c": 2,
+      "d": 9,
+      "e": 4,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 5141
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 34,
+      "c": 2,
+      "d": 7,
+      "e": 2,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 2588
+    },
+    {
+      "a": 4,
+      "actual_degree_bound": 8,
+      "c": 5,
+      "d": 12,
+      "e": 7,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 11876
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 2,
+      "c": 0,
+      "d": 6,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 158,
+      "c": 1,
+      "d": 6,
+      "e": 0,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 1706
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 134,
+      "c": 0,
+      "d": 7,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 2588
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 7,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 2588
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 192,
+      "c": 2,
+      "d": 10,
+      "e": 4,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 6884
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 698,
+      "c": 2,
+      "d": 8,
+      "e": 2,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 5,
+      "actual_degree_bound": 2,
+      "c": 6,
+      "d": 14,
+      "e": 8,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 19166
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 4,
+      "c": 0,
+      "d": 7,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 2588
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 23,
+      "c": 1,
+      "d": 7,
+      "e": 0,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 2588
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 21,
+      "c": 0,
+      "d": 8,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 8,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 26,
+      "c": 2,
+      "d": 11,
+      "e": 4,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 9212
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 46,
+      "c": 2,
+      "d": 9,
+      "e": 2,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 5141
+    },
+    {
+      "a": 6,
+      "actual_degree_bound": 8,
+      "c": 7,
+      "d": 16,
+      "e": 9,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 29366
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 2,
+      "c": 0,
+      "d": 8,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 260,
+      "c": 1,
+      "d": 8,
+      "e": 0,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 3650
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 228,
+      "c": 0,
+      "d": 9,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 5141
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 9,
+      "e": 1,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 5141
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 436,
+      "c": 2,
+      "d": 12,
+      "e": 4,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 11876
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 1118,
+      "c": 2,
+      "d": 10,
+      "e": 2,
+      "first_bad_within_eight": 2,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 6884
+    },
+    {
+      "a": 7,
+      "actual_degree_bound": 2,
+      "c": 8,
+      "d": 18,
+      "e": 10,
+      "first_bad_within_eight": null,
+      "status": "odd_resultant_bound",
+      "uniform_prefix": 43160
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 4,
+      "c": 0,
+      "d": 9,
+      "e": 0,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 5141
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 29,
+      "c": 1,
+      "d": 9,
+      "e": 0,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 5141
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 27,
+      "c": 0,
+      "d": 10,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 6884
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 6,
+      "c": 1,
+      "d": 10,
+      "e": 1,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 6884
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 38,
+      "c": 2,
+      "d": 13,
+      "e": 4,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 15305
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 58,
+      "c": 2,
+      "d": 11,
+      "e": 2,
+      "first_bad_within_eight": 1,
+      "status": "nonpure",
+      "uniform_prefix": 9212
+    },
+    {
+      "a": 8,
+      "actual_degree_bound": 8,
+      "c": 9,
+      "d": 20,
+      "e": 11,
+      "first_bad_within_eight": null,
+      "status": "pure",
+      "uniform_prefix": 61304
+    }
+  ],
+  "formal_verification": false,
+  "independent_replay": false,
+  "nonpure_early_moment_controls": 44,
+  "odd_H_formula_controls": 28,
+  "ordinary_moment_ideal_equality_claimed": false,
+  "proof_sha256": "41100233ab31d0e1144c4833dd21c29633832eb0d939d73e68a1ae303cddb129",
+  "retained_source_pins": [
+    {
+      "path": "ODD_START_MARKED_GCD_AND_FINITE_PURITY.md",
+      "sha256": "3bc84f448efa1b443ad01afb419990292efd7a21a561dcf162355da81f3901ca"
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade"
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Exact finite rational-formula, raw moment and integer-bound controls; the all-order prefix and reduced-ideal results are the written proofs.",
+  "source_ledger_sha256": "305697f6d7474a03b814f992cf2efd9ba89e91875b5c23198189db5da8d3e7ee",
+  "status": "PASS",
+  "uniform_integer_degree_controls": 5050
+}

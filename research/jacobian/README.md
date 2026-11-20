@@ -4,7 +4,7 @@
 
 Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 
-**Authored assessment:** Explicit ordinary characteristic-zero Keller collisions give an internal failure of the unrestricted Jacobian conjecture under the retained proofs. JC2, universal classifications and minimum bounds remain open; external review remains separate.
+**Authored assessment:** Explicit ordinary characteristic-zero Keller collisions give an internal failure of the unrestricted Jacobian conjecture under the retained proofs. JC2, universal classifications and minimum bounds remain open; external review remains separate. Cubic homogeneous cube-zero Jacobians now have sharp dimension-independent inverse degree29; the cubic length-three shuffle threshold is exactly15. Higher nilpotency-index cases remain open. A standalone48-variable rational cubic now attains inverse degree29 with exact Jacobian nilpotency index3; its complete direct symbolic check takes under one second. At cubic Jacobian nilpotency index4 an explicit58-variable map has inverse degree207, so every dimension-uniform bound is>=207; a uniform bound or an unbounded family remains open. Small7/9 maps obstruct affine/quadratic fibre reduction over cube-zero bases in every linear frame. The explicit index-four block now has exact localized scalar-extension criteria: after its degree207 coordinate, independence ofS plus the pre-S joint-kernel condition is necessary and sufficient; independence alone fails. Infinite parallel repeatability remains open. The homogeneous exact-index17 collision now yields explicit triangular jet families of unbounded inverse degree, so all-path cubic uniformity is false; fixed4 remains open. A separate repeatable index4 block has exact inverse reset and bounded degree207, and two full cubic-helper restart fibres admit no old polynomial correction.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -24,8 +24,17 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | One fixed A4 map for each uniform alternating Hasse product family | Internal result | proved | [Source](../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md) |
 | All-length odd-prime plane Keller lifts with a provably nonpolynomial radial limit | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) |
 | Positive-genus ramification excludes every rational source and target correction of BGV seeds | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_CRITICAL_GENUS_AND_RATIONAL_CORRECTIONS.md) |
+| Exact subtree shuffling and uniform inverse degrees | Internal result | proved | [Source](subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md) |
+| Sharp inverse degree29 for cubic cube-zero Jacobians | Internal result | proved | [Source](subtree-shuffling/CUBIC_CUBE_ZERO_SHUFFLE_EXTENSION.md) |
+| Explicit48-variable sharp cubic cube-zero example | Internal result | proved | [Source](subtree-shuffling/CUBIC_CUBE_ZERO_SHARP48.md) |
+| Explicit58-variable cubic index-four inverse of degree207 | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_FOUR_SYZYGY58.md) |
+| Frame-independent affine and quadratic fibre obstructions at cubic index4 | Internal result | proved | [Source](subtree-shuffling/ENGEL_FOUR_FIBRE_OBSTRUCTIONS.md) |
+| Complete scalar-extension criteria from commuting index-four syzygies | Internal result | proved | [Source](subtree-shuffling/COMMUTING_SYZYGY_SLICES_AND_SCALAR_OBSTRUCTION.md) |
+| Cubic index17 shuffle failure and explicit unbounded triangular inverse degrees | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_SEVENTEEN_SHUFFLE_FAILURE.md) |
+| A repeatable cubic index-four block with forced inverse reset | Internal result | proved | [Source](subtree-shuffling/REPEATABLE_INDEX_FOUR_BLOCK_AND_INVERSE_RESET.md) |
+| Complete cubic third-covector image and all-helper polynomial restart obstructions | Internal result | proved | [Source](subtree-shuffling/THIRD_COVECTOR_CUBIC_IMAGE_AND_RESTART_OBSTRUCTIONS.md) |
 
-**Computed obligations:** 17 unresolved; 4 resolved within their exact scope.
+**Computed obligations:** 18 unresolved; 5 resolved within their exact scope.
 
 
 Scope limits:
@@ -58,5 +67,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can actual Keller/source constraints force one generic first velocity into the ordinary codifferent in a source-finite frame, eliminating the exact polar marked traces at original omitted ramified primes?](../hessian/hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md) — GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT
 - **mathematical / open:** [For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective.](../hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md) — GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION
 - **mathematical / open:** [Realize or universally exclude alternating generic monodromy for polynomial plane Keller maps beyond the proved A4 exclusions. Known dimension-three alternating realizations settle the earlier abstract action question; the reported natural A5 result remains a primary-source verification obligation here.](../arithmetic/KNOT_HURWITZ_KELLER_MOONSHOT_AUDIT.md) — JAC-PLANE-ALTERNATING-POLYNOMIAL-REALIZATION
+- **mathematical / open:** [Cubic eventual shuffle membership holds forp<=3 and fails for everyp>=17. Determine the least failing length in[4,17], particularly whether fixedp4 has a finite dimension-uniform inverse bound or an unbounded inverse family. The58-variable index4 example gives only a lower bound207; the7/9 fibre obstructions and scalar restart barriers do not decide this alternative.](subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md) — GAP-JAC-SUBTREE-SHUFFLE-UNIFORM
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -1,0 +1,438 @@
+{
+  "status": "PASS",
+  "terminal": 6,
+  "binary_exponent": 7,
+  "gap_cutoff": 70,
+  "prime": 1000033,
+  "tested_cases": 21658,
+  "full_polynomial_Bezout_identities": 21658,
+  "all_full_degrees": [
+    5,
+    6
+  ],
+  "maximum_factorial_argument": 4134,
+  "coefficient_construction": "c0=1; c(k+1)=c(k)*(m-k)/(k+1)*(a*m+1+d*k)_(d), inverse-table and sliding rising products; no factorial tables",
+  "actual_physical_shapes": [
+    "5*a+1",
+    "6*a+1"
+  ],
+  "literal_integer_coefficient_controls": 272,
+  "gaps": [
+    {
+      "gap": 2,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 17,
+      "cases": 17
+    },
+    {
+      "gap": 3,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 26,
+      "cases": 26
+    },
+    {
+      "gap": 4,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 35,
+      "cases": 35
+    },
+    {
+      "gap": 5,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 44,
+      "cases": 44
+    },
+    {
+      "gap": 6,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 53,
+      "cases": 53
+    },
+    {
+      "gap": 7,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 62,
+      "cases": 62
+    },
+    {
+      "gap": 8,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 71,
+      "cases": 71
+    },
+    {
+      "gap": 9,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 80,
+      "cases": 80
+    },
+    {
+      "gap": 10,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 89,
+      "cases": 89
+    },
+    {
+      "gap": 11,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 98,
+      "cases": 98
+    },
+    {
+      "gap": 12,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 107,
+      "cases": 107
+    },
+    {
+      "gap": 13,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 116,
+      "cases": 116
+    },
+    {
+      "gap": 14,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 125,
+      "cases": 125
+    },
+    {
+      "gap": 15,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 134,
+      "cases": 134
+    },
+    {
+      "gap": 16,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 143,
+      "cases": 143
+    },
+    {
+      "gap": 17,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 152,
+      "cases": 152
+    },
+    {
+      "gap": 18,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 161,
+      "cases": 161
+    },
+    {
+      "gap": 19,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 170,
+      "cases": 170
+    },
+    {
+      "gap": 20,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 179,
+      "cases": 179
+    },
+    {
+      "gap": 21,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 188,
+      "cases": 188
+    },
+    {
+      "gap": 22,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 197,
+      "cases": 197
+    },
+    {
+      "gap": 23,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 206,
+      "cases": 206
+    },
+    {
+      "gap": 24,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 215,
+      "cases": 215
+    },
+    {
+      "gap": 25,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 224,
+      "cases": 224
+    },
+    {
+      "gap": 26,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 233,
+      "cases": 233
+    },
+    {
+      "gap": 27,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 242,
+      "cases": 242
+    },
+    {
+      "gap": 28,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 251,
+      "cases": 251
+    },
+    {
+      "gap": 29,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 260,
+      "cases": 260
+    },
+    {
+      "gap": 30,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 269,
+      "cases": 269
+    },
+    {
+      "gap": 31,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 278,
+      "cases": 278
+    },
+    {
+      "gap": 32,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 287,
+      "cases": 287
+    },
+    {
+      "gap": 33,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 296,
+      "cases": 296
+    },
+    {
+      "gap": 34,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 305,
+      "cases": 305
+    },
+    {
+      "gap": 35,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 314,
+      "cases": 314
+    },
+    {
+      "gap": 36,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 323,
+      "cases": 323
+    },
+    {
+      "gap": 37,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 332,
+      "cases": 332
+    },
+    {
+      "gap": 38,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 341,
+      "cases": 341
+    },
+    {
+      "gap": 39,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 350,
+      "cases": 350
+    },
+    {
+      "gap": 40,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 359,
+      "cases": 359
+    },
+    {
+      "gap": 41,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 368,
+      "cases": 368
+    },
+    {
+      "gap": 42,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 377,
+      "cases": 377
+    },
+    {
+      "gap": 43,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 386,
+      "cases": 386
+    },
+    {
+      "gap": 44,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 395,
+      "cases": 395
+    },
+    {
+      "gap": 45,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 404,
+      "cases": 404
+    },
+    {
+      "gap": 46,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 413,
+      "cases": 413
+    },
+    {
+      "gap": 47,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 422,
+      "cases": 422
+    },
+    {
+      "gap": 48,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 431,
+      "cases": 431
+    },
+    {
+      "gap": 49,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 440,
+      "cases": 440
+    },
+    {
+      "gap": 50,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 449,
+      "cases": 449
+    },
+    {
+      "gap": 51,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 458,
+      "cases": 458
+    },
+    {
+      "gap": 52,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 467,
+      "cases": 467
+    },
+    {
+      "gap": 53,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 476,
+      "cases": 476
+    },
+    {
+      "gap": 54,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 485,
+      "cases": 485
+    },
+    {
+      "gap": 55,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 494,
+      "cases": 494
+    },
+    {
+      "gap": 56,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 503,
+      "cases": 503
+    },
+    {
+      "gap": 57,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 512,
+      "cases": 512
+    },
+    {
+      "gap": 58,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 521,
+      "cases": 521
+    },
+    {
+      "gap": 59,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 530,
+      "cases": 530
+    },
+    {
+      "gap": 60,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 539,
+      "cases": 539
+    },
+    {
+      "gap": 61,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 548,
+      "cases": 548
+    },
+    {
+      "gap": 62,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 557,
+      "cases": 557
+    },
+    {
+      "gap": 63,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 566,
+      "cases": 566
+    },
+    {
+      "gap": 64,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 575,
+      "cases": 575
+    },
+    {
+      "gap": 65,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 584,
+      "cases": 584
+    },
+    {
+      "gap": 66,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 593,
+      "cases": 593
+    },
+    {
+      "gap": 67,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 602,
+      "cases": 602
+    },
+    {
+      "gap": 68,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 611,
+      "cases": 611
+    },
+    {
+      "gap": 69,
+      "first_lower_exponent": 1,
+      "last_lower_exponent": 620,
+      "cases": 620
+    }
+  ],
+  "case_stream_sha256": "bbd77d51b5f922047ca9f3c17a08544b88062b8ed6ead1d73faa557fd114b7bd",
+  "checker_sha256": "31d3664718fb73f8afa9c9433bca5e620a0ebaff56742d089099a5feff4086b6",
+  "versions": {
+    "python_flint": "0.9.0",
+    "FLINT": "3.6.0"
+  },
+  "seconds": 0.13004548102617264,
+  "scope": "Completed finite actual terminal-six triangle; universal all-exponent terminal-six conclusion additionally uses retained high-gap/large-lower-exponent complements. No all-terminal conclusion."
+}

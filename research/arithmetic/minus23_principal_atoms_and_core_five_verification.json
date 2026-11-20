@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "scope": "Actual complete native principal-atom finite bridge below2^30 plus exact improved analytic constants and complete neutral phase reduction. Combined with the written all-prime sieve and retained cube theorem, this proves the entire inert-core5 statement; other cores/global40 remain open.",
+  "complete_native_counts": {
+    "inclusive_norm_bound": 1073741823,
+    "prime_cap": 214748364,
+    "all_primes_through_cap": 11849083,
+    "principal_split_primes_through_cap": 1974507,
+    "primitive_norm_value_count": 132325868,
+    "positive_y_ellipse_candidates": 703340510,
+    "primitive_positive_y_points": 427599363,
+    "anchor_limit": 5000,
+    "anchor_count": 834,
+    "coefficient_domain": [
+      5,
+      10,
+      15
+    ],
+    "covered_by_coefficient": [
+      1974507,
+      1026431,
+      700565
+    ],
+    "maximum_anchor_trials": [
+      76,
+      63,
+      67
+    ],
+    "independent_square_regression_bound": 100000,
+    "failures": []
+  },
+  "principal_target_onset_power_of_two": 30,
+  "scaled_positive_surplus": "1750191/10877000",
+  "selected_other_binary_representation_constant": 12,
+  "selected_ideal_constant_sixth_power": "140737488355328/3986190273",
+  "norm_flags_encoding": "little-endian uint64 bitset, bitn means n is a primitiveQ value",
+  "assignment_encoding": "little-endian uint32 triples(p,c,anchor), in increasingp and coefficient5/10/15 order",
+  "full_primitive_flags_sha256": "52539112b7b448b497c968da7e79910a6204d370aad1acd3de1f79c41ba73d07",
+  "full_assignment_sha256": "9345ce971a4aad2dcad25e12ad23f2d7242454d48fe5bf8deeb427d5ec22e731",
+  "old_complete_coordinate_vs_genus_prefix_bound": 16777216,
+  "old_prefix_primitive_flags_sha256": "d7599b28577008963282a2c37bcce7ee7cbb4434ef4389d6bd4e6e914b26cb62",
+  "neutral_phase_missing_cells": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      0
+    ]
+  ],
+  "inert_core_five_exact_exceptions": [
+    5,
+    10,
+    15,
+    115,
+    230,
+    345
+  ],
+  "negative_controls": [
+    "ordinary_norm4_is_not_primitive",
+    "independent_signed_square_through100000",
+    "missing_anchor_family_has_actual_failures"
+  ],
+  "source_sha256": {
+    "proof": "480432abc097dc77f264a7f3b726b241d59b15633008e0b8e8cc81af1f66eba8",
+    "python_checker": "bf3a8925c56fc8627915174e9e4d1b0a529eb2f85cda036e7ca0888f2e26c156",
+    "native_checker": "39a31d575702319ef922c4c5ca431504206ebc53fb811677488afb46b13e81ce",
+    "source_ledger": "24ef28deead942facc3f9b45c30a304e59dd90fe9d7c21eedd8af83d0fd87f5a"
+  },
+  "retained_source_sha256": {
+    "research/arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md": "b53a42b1d299d97deb7dcabd39c32ba7ee910d111b2387b2d99b4f77ba3bceaf",
+    "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5",
+    "research/arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8",
+    "research/arithmetic/primitive_norm_minus23_sumset_checks.json": "6773ef579384d0612fec2ab4bdb5238a038c5445e41b03a731eb4e3029194cf3",
+    "research/arithmetic/sources/rosser_schoenfeld_1962.pdf": "8e37b06f82e09421bceb2502578c47b61469141f0287e6acedb70e01765ab556"
+  },
+  "compile_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra"
+  ],
+  "native_runtime_is_not_a_proof_premise": true,
+  "external_review_or_formal_verification": false
+}

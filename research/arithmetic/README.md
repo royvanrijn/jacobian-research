@@ -158,6 +158,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform split-target gcd estimates for the discriminant -23 norm sum | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md) |
 | Explicit all-large primitive -23 norm sumsets | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS23_EFFECTIVE.md) |
 | Universal primitive -23 multiplier cones at 16,19 and39 | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS23_MULTIPLIER_CONES.md) |
+| Every nonprincipal neutral cube atom gives a primitive -23 norm sum | Internal result | proved | [Source](MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md) |
+| Complete primitive discriminant -23 inert-core-five exception set | Internal result | proved | [Source](MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md) |
+| Complete primitive discriminant -23 inert-core-seven exception set | Internal result | proved | [Source](MINUS23_INERT_CORE_SEVEN_CLOSURE.md) |
 
 **Computed obligations:** 73 unresolved; 15 resolved within their exact scope.
 

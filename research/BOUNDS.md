@@ -359,6 +359,8 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HOPF-ALL-START-EXACT-MINIMUM-UNSAFE-DEGREE | proved | least-unsafe-sphere-degree | All regular pure two-term sphere phases t^4(C(x)+t^2D(x))/x over characteristic-zero fields at fixed starting height a=4; least sphere/radial-primitive balanced degree at which all-marker safety can fail | upper: 12 |  |
 | HOPF-ALL-START-EXACT-MINIMUM-UNSAFE-DEGREE | proved | least-unsafe-sphere-degree | All regular pure two-term sphere phases t^5(C(x)+t^2D(x))/x over characteristic-zero fields at fixed starting height a=5; least sphere/radial-primitive balanced degree at which all-marker safety can fail | lower: 14 |  |
 | HOPF-ALL-START-EXACT-MINIMUM-UNSAFE-DEGREE | proved | least-unsafe-sphere-degree | All regular pure two-term sphere phases t^5(C(x)+t^2D(x))/x over characteristic-zero fields at fixed starting height a=5; least sphere/radial-primitive balanced degree at which all-marker safety can fail | upper: 14 |  |
+| DIX-LONG-GRADED-CAP27-ALL-PARITY-OBSTRUCTION | proved | common ordinary spatial degree of the canonical Long symbols | canonical graded scalar Long symbols over characteristic-zero fields with arbitrary Moyal-symbol parity; {"all six relations": "through h7"} | lower: 28 |  |
+| DIX-LONG-GRADED-CAP27-ALL-PARITY-OBSTRUCTION | proved | common ordinary spatial degree of the canonical Long symbols | canonical graded scalar Long symbols over characteristic-zero fields with arbitrary Moyal-symbol parity with one common finite degree bound at all orders | lower: 28 |  |
 
 ## Comparable improvements
 

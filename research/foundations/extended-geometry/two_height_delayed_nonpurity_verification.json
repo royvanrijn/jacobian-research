@@ -1,0 +1,1092 @@
+{
+  "checker_sha256": "ed1338786586a026bbba787dd2246015c81689661952f59d3953b033a966a9c3",
+  "direct_moment_controls": 945,
+  "external_or_formal_review_claimed": false,
+  "fixtures": 135,
+  "proof_sha256": "41100233ab31d0e1144c4833dd21c29633832eb0d939d73e68a1ae303cddb129",
+  "pure_counterexample_claimed": false,
+  "results": [
+    {
+      "N": 2,
+      "a": 0,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/15",
+      "phase_degree": 3
+    },
+    {
+      "N": 2,
+      "a": 0,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/15",
+      "phase_degree": 3
+    },
+    {
+      "N": 2,
+      "a": 0,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/45",
+      "phase_degree": 3
+    },
+    {
+      "N": 4,
+      "a": 0,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/315",
+      "phase_degree": 5
+    },
+    {
+      "N": 4,
+      "a": 0,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/315",
+      "phase_degree": 5
+    },
+    {
+      "N": 4,
+      "a": 0,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/945",
+      "phase_degree": 5
+    },
+    {
+      "N": 6,
+      "a": 0,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/3003",
+      "phase_degree": 7
+    },
+    {
+      "N": 6,
+      "a": 0,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/3003",
+      "phase_degree": 7
+    },
+    {
+      "N": 6,
+      "a": 0,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/9009",
+      "phase_degree": 7
+    },
+    {
+      "N": 8,
+      "a": 0,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/109395",
+      "phase_degree": 9
+    },
+    {
+      "N": 8,
+      "a": 0,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/109395",
+      "phase_degree": 9
+    },
+    {
+      "N": 8,
+      "a": 0,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/328185",
+      "phase_degree": 9
+    },
+    {
+      "N": 10,
+      "a": 0,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/969969",
+      "phase_degree": 11
+    },
+    {
+      "N": 10,
+      "a": 0,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/969969",
+      "phase_degree": 11
+    },
+    {
+      "N": 10,
+      "a": 0,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/2909907",
+      "phase_degree": 11
+    },
+    {
+      "N": 2,
+      "a": 1,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/35",
+      "phase_degree": 4
+    },
+    {
+      "N": 2,
+      "a": 1,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/35",
+      "phase_degree": 4
+    },
+    {
+      "N": 2,
+      "a": 1,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/105",
+      "phase_degree": 4
+    },
+    {
+      "N": 4,
+      "a": 1,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/3003",
+      "phase_degree": 6
+    },
+    {
+      "N": 4,
+      "a": 1,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/3003",
+      "phase_degree": 6
+    },
+    {
+      "N": 4,
+      "a": 1,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/9009",
+      "phase_degree": 6
+    },
+    {
+      "N": 6,
+      "a": 1,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/138567",
+      "phase_degree": 8
+    },
+    {
+      "N": 6,
+      "a": 1,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/138567",
+      "phase_degree": 8
+    },
+    {
+      "N": 6,
+      "a": 1,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/415701",
+      "phase_degree": 8
+    },
+    {
+      "N": 8,
+      "a": 1,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/26558675",
+      "phase_degree": 10
+    },
+    {
+      "N": 8,
+      "a": 1,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/26558675",
+      "phase_degree": 10
+    },
+    {
+      "N": 8,
+      "a": 1,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/79676025",
+      "phase_degree": 10
+    },
+    {
+      "N": 10,
+      "a": 1,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/1302340845",
+      "phase_degree": 12
+    },
+    {
+      "N": 10,
+      "a": 1,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/1302340845",
+      "phase_degree": 12
+    },
+    {
+      "N": 10,
+      "a": 1,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/3907022535",
+      "phase_degree": 12
+    },
+    {
+      "N": 2,
+      "a": 2,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/63",
+      "phase_degree": 5
+    },
+    {
+      "N": 2,
+      "a": 2,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/63",
+      "phase_degree": 5
+    },
+    {
+      "N": 2,
+      "a": 2,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/189",
+      "phase_degree": 5
+    },
+    {
+      "N": 4,
+      "a": 2,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/12155",
+      "phase_degree": 7
+    },
+    {
+      "N": 4,
+      "a": 2,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/12155",
+      "phase_degree": 7
+    },
+    {
+      "N": 4,
+      "a": 2,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/36465",
+      "phase_degree": 7
+    },
+    {
+      "N": 6,
+      "a": 2,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/1300075",
+      "phase_degree": 9
+    },
+    {
+      "N": 6,
+      "a": 2,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/1300075",
+      "phase_degree": 9
+    },
+    {
+      "N": 6,
+      "a": 2,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/3900225",
+      "phase_degree": 9
+    },
+    {
+      "N": 8,
+      "a": 2,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/583401555",
+      "phase_degree": 11
+    },
+    {
+      "N": 8,
+      "a": 2,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/583401555",
+      "phase_degree": 11
+    },
+    {
+      "N": 8,
+      "a": 2,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/1750204665",
+      "phase_degree": 11
+    },
+    {
+      "N": 10,
+      "a": 2,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/67282234305",
+      "phase_degree": 13
+    },
+    {
+      "N": 10,
+      "a": 2,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/67282234305",
+      "phase_degree": 13
+    },
+    {
+      "N": 10,
+      "a": 2,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/201846702915",
+      "phase_degree": 13
+    },
+    {
+      "N": 2,
+      "a": 3,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/99",
+      "phase_degree": 6
+    },
+    {
+      "N": 2,
+      "a": 3,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/99",
+      "phase_degree": 6
+    },
+    {
+      "N": 2,
+      "a": 3,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/297",
+      "phase_degree": 6
+    },
+    {
+      "N": 4,
+      "a": 3,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/33915",
+      "phase_degree": 8
+    },
+    {
+      "N": 4,
+      "a": 3,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/33915",
+      "phase_degree": 8
+    },
+    {
+      "N": 4,
+      "a": 3,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/101745",
+      "phase_degree": 8
+    },
+    {
+      "N": 6,
+      "a": 3,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/6513255",
+      "phase_degree": 10
+    },
+    {
+      "N": 6,
+      "a": 3,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/6513255",
+      "phase_degree": 10
+    },
+    {
+      "N": 6,
+      "a": 3,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/19539765",
+      "phase_degree": 10
+    },
+    {
+      "N": 8,
+      "a": 3,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/5265566163",
+      "phase_degree": 12
+    },
+    {
+      "N": 8,
+      "a": 3,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/5265566163",
+      "phase_degree": 12
+    },
+    {
+      "N": 8,
+      "a": 3,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/15796698489",
+      "phase_degree": 12
+    },
+    {
+      "N": 10,
+      "a": 3,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/1095605459949",
+      "phase_degree": 14
+    },
+    {
+      "N": 10,
+      "a": 3,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/1095605459949",
+      "phase_degree": 14
+    },
+    {
+      "N": 10,
+      "a": 3,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/3286816379847",
+      "phase_degree": 14
+    },
+    {
+      "N": 2,
+      "a": 4,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/143",
+      "phase_degree": 7
+    },
+    {
+      "N": 2,
+      "a": 4,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/143",
+      "phase_degree": 7
+    },
+    {
+      "N": 2,
+      "a": 4,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/429",
+      "phase_degree": 7
+    },
+    {
+      "N": 4,
+      "a": 4,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/76475",
+      "phase_degree": 9
+    },
+    {
+      "N": 4,
+      "a": 4,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/76475",
+      "phase_degree": 9
+    },
+    {
+      "N": 4,
+      "a": 4,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/229425",
+      "phase_degree": 9
+    },
+    {
+      "N": 6,
+      "a": 4,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/23051259",
+      "phase_degree": 11
+    },
+    {
+      "N": 6,
+      "a": 4,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/23051259",
+      "phase_degree": 11
+    },
+    {
+      "N": 6,
+      "a": 4,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/69153777",
+      "phase_degree": 11
+    },
+    {
+      "N": 8,
+      "a": 4,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/29294263635",
+      "phase_degree": 13
+    },
+    {
+      "N": 8,
+      "a": 4,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/29294263635",
+      "phase_degree": 13
+    },
+    {
+      "N": 8,
+      "a": 4,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/87882790905",
+      "phase_degree": 13
+    },
+    {
+      "N": 10,
+      "a": 4,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/9587762715377",
+      "phase_degree": 15
+    },
+    {
+      "N": 10,
+      "a": 4,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/9587762715377",
+      "phase_degree": 15
+    },
+    {
+      "N": 10,
+      "a": 4,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/28763288146131",
+      "phase_degree": 15
+    },
+    {
+      "N": 2,
+      "a": 5,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/195",
+      "phase_degree": 8
+    },
+    {
+      "N": 2,
+      "a": 5,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/195",
+      "phase_degree": 8
+    },
+    {
+      "N": 2,
+      "a": 5,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/585",
+      "phase_degree": 8
+    },
+    {
+      "N": 4,
+      "a": 5,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/150075",
+      "phase_degree": 10
+    },
+    {
+      "N": 4,
+      "a": 5,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/150075",
+      "phase_degree": 10
+    },
+    {
+      "N": 4,
+      "a": 5,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/450225",
+      "phase_degree": 10
+    },
+    {
+      "N": 6,
+      "a": 5,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/65296231",
+      "phase_degree": 12
+    },
+    {
+      "N": 6,
+      "a": 5,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/65296231",
+      "phase_degree": 12
+    },
+    {
+      "N": 6,
+      "a": 5,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/195888693",
+      "phase_degree": 12
+    },
+    {
+      "N": 8,
+      "a": 5,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/119880334035",
+      "phase_degree": 14
+    },
+    {
+      "N": 8,
+      "a": 5,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/119880334035",
+      "phase_degree": 14
+    },
+    {
+      "N": 8,
+      "a": 5,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/359641002105",
+      "phase_degree": 14
+    },
+    {
+      "N": 10,
+      "a": 5,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/56703300986189",
+      "phase_degree": 16
+    },
+    {
+      "N": 10,
+      "a": 5,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/56703300986189",
+      "phase_degree": 16
+    },
+    {
+      "N": 10,
+      "a": 5,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/170109902958567",
+      "phase_degree": 16
+    },
+    {
+      "N": 2,
+      "a": 6,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/255",
+      "phase_degree": 9
+    },
+    {
+      "N": 2,
+      "a": 6,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/255",
+      "phase_degree": 9
+    },
+    {
+      "N": 2,
+      "a": 6,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/765",
+      "phase_degree": 9
+    },
+    {
+      "N": 4,
+      "a": 6,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/267003",
+      "phase_degree": 11
+    },
+    {
+      "N": 4,
+      "a": 6,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/267003",
+      "phase_degree": 11
+    },
+    {
+      "N": 4,
+      "a": 6,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/801009",
+      "phase_degree": 11
+    },
+    {
+      "N": 6,
+      "a": 6,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/158347371",
+      "phase_degree": 13
+    },
+    {
+      "N": 6,
+      "a": 6,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/158347371",
+      "phase_degree": 13
+    },
+    {
+      "N": 6,
+      "a": 6,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/475042113",
+      "phase_degree": 13
+    },
+    {
+      "N": 8,
+      "a": 6,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/396468593235",
+      "phase_degree": 15
+    },
+    {
+      "N": 8,
+      "a": 6,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/396468593235",
+      "phase_degree": 15
+    },
+    {
+      "N": 8,
+      "a": 6,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/1189405779705",
+      "phase_degree": 15
+    },
+    {
+      "N": 10,
+      "a": 6,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/255799705145985",
+      "phase_degree": 17
+    },
+    {
+      "N": 10,
+      "a": 6,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/255799705145985",
+      "phase_degree": 17
+    },
+    {
+      "N": 10,
+      "a": 6,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/767399115437955",
+      "phase_degree": 17
+    },
+    {
+      "N": 2,
+      "a": 7,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/323",
+      "phase_degree": 10
+    },
+    {
+      "N": 2,
+      "a": 7,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/323",
+      "phase_degree": 10
+    },
+    {
+      "N": 2,
+      "a": 7,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/969",
+      "phase_degree": 10
+    },
+    {
+      "N": 4,
+      "a": 7,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/441595",
+      "phase_degree": 12
+    },
+    {
+      "N": 4,
+      "a": 7,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/441595",
+      "phase_degree": 12
+    },
+    {
+      "N": 4,
+      "a": 7,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/1324785",
+      "phase_degree": 12
+    },
+    {
+      "N": 6,
+      "a": 7,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/342375495",
+      "phase_degree": 14
+    },
+    {
+      "N": 6,
+      "a": 7,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/342375495",
+      "phase_degree": 14
+    },
+    {
+      "N": 6,
+      "a": 7,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/1027126485",
+      "phase_degree": 14
+    },
+    {
+      "N": 8,
+      "a": 7,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/1121063728083",
+      "phase_degree": 16
+    },
+    {
+      "N": 8,
+      "a": 7,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/1121063728083",
+      "phase_degree": 16
+    },
+    {
+      "N": 8,
+      "a": 7,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/3363191184249",
+      "phase_degree": 16
+    },
+    {
+      "N": 10,
+      "a": 7,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/946044490756365",
+      "phase_degree": 18
+    },
+    {
+      "N": 10,
+      "a": 7,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/946044490756365",
+      "phase_degree": 18
+    },
+    {
+      "N": 10,
+      "a": 7,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/2838133472269095",
+      "phase_degree": 18
+    },
+    {
+      "N": 2,
+      "a": 8,
+      "epsilon": "1",
+      "first_bad_moment": 2,
+      "moment_value": "4/399",
+      "phase_degree": 11
+    },
+    {
+      "N": 2,
+      "a": 8,
+      "epsilon": "-1",
+      "first_bad_moment": 2,
+      "moment_value": "-4/399",
+      "phase_degree": 11
+    },
+    {
+      "N": 2,
+      "a": 8,
+      "epsilon": "2/3",
+      "first_bad_moment": 2,
+      "moment_value": "8/1197",
+      "phase_degree": 11
+    },
+    {
+      "N": 4,
+      "a": 8,
+      "epsilon": "1",
+      "first_bad_moment": 4,
+      "moment_value": "64/690235",
+      "phase_degree": 13
+    },
+    {
+      "N": 4,
+      "a": 8,
+      "epsilon": "-1",
+      "first_bad_moment": 4,
+      "moment_value": "-64/690235",
+      "phase_degree": 13
+    },
+    {
+      "N": 4,
+      "a": 8,
+      "epsilon": "2/3",
+      "first_bad_moment": 4,
+      "moment_value": "128/2070705",
+      "phase_degree": 13
+    },
+    {
+      "N": 6,
+      "a": 8,
+      "epsilon": "1",
+      "first_bad_moment": 6,
+      "moment_value": "512/677724091",
+      "phase_degree": 15
+    },
+    {
+      "N": 6,
+      "a": 8,
+      "epsilon": "-1",
+      "first_bad_moment": 6,
+      "moment_value": "-512/677724091",
+      "phase_degree": 15
+    },
+    {
+      "N": 6,
+      "a": 8,
+      "epsilon": "2/3",
+      "first_bad_moment": 6,
+      "moment_value": "1024/2033172273",
+      "phase_degree": 15
+    },
+    {
+      "N": 8,
+      "a": 8,
+      "epsilon": "1",
+      "first_bad_moment": 8,
+      "moment_value": "16384/2810985770835",
+      "phase_degree": 17
+    },
+    {
+      "N": 8,
+      "a": 8,
+      "epsilon": "-1",
+      "first_bad_moment": 8,
+      "moment_value": "-16384/2810985770835",
+      "phase_degree": 17
+    },
+    {
+      "N": 8,
+      "a": 8,
+      "epsilon": "2/3",
+      "first_bad_moment": 8,
+      "moment_value": "32768/8432957312505",
+      "phase_degree": 17
+    },
+    {
+      "N": 10,
+      "a": 8,
+      "epsilon": "1",
+      "first_bad_moment": 10,
+      "moment_value": "131072/3005103668066929",
+      "phase_degree": 19
+    },
+    {
+      "N": 10,
+      "a": 8,
+      "epsilon": "-1",
+      "first_bad_moment": 10,
+      "moment_value": "-131072/3005103668066929",
+      "phase_degree": 19
+    },
+    {
+      "N": 10,
+      "a": 8,
+      "epsilon": "2/3",
+      "first_bad_moment": 10,
+      "moment_value": "262144/9015311004200787",
+      "phase_degree": 19
+    }
+  ],
+  "scope": "Finite exact direct-expansion controls; the unrestricted first-bad-order statement is the written angular-weight proof.",
+  "status": "PASS"
+}

@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "arithmetic": "rational",
+  "runs": [
+    {
+      "d": 2,
+      "p": 3,
+      "rows": [
+        {
+          "k": 1,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "1"
+        },
+        {
+          "k": 2,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "2"
+        },
+        {
+          "k": 3,
+          "unordered": 2,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "1"
+        },
+        {
+          "k": 4,
+          "unordered": 3,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "-2"
+        },
+        {
+          "k": 5,
+          "unordered": 6,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "2"
+        },
+        {
+          "k": 6,
+          "unordered": 11,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 7,
+          "unordered": 23,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 8,
+          "unordered": 46,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 9,
+          "unordered": 98,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 10,
+          "unordered": 207,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 11,
+          "unordered": 451,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        }
+      ],
+      "truncated_algebra_dimension": 6
+    },
+    {
+      "d": 2,
+      "p": 4,
+      "rows": [
+        {
+          "k": 1,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "1"
+        },
+        {
+          "k": 2,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "2"
+        },
+        {
+          "k": 3,
+          "unordered": 2,
+          "quotient_dimension": 2,
+          "reduced_coefficient_support": 2,
+          "dual_evaluation": "4"
+        },
+        {
+          "k": 4,
+          "unordered": 3,
+          "quotient_dimension": 2,
+          "reduced_coefficient_support": 2,
+          "dual_evaluation": "2"
+        },
+        {
+          "k": 5,
+          "unordered": 6,
+          "quotient_dimension": 4,
+          "reduced_coefficient_support": 3,
+          "dual_evaluation": "-4"
+        },
+        {
+          "k": 6,
+          "unordered": 11,
+          "quotient_dimension": 6,
+          "reduced_coefficient_support": 5,
+          "dual_evaluation": "-16"
+        },
+        {
+          "k": 7,
+          "unordered": 23,
+          "quotient_dimension": 10,
+          "reduced_coefficient_support": 9,
+          "dual_evaluation": "32"
+        },
+        {
+          "k": 8,
+          "unordered": 46,
+          "quotient_dimension": 15,
+          "reduced_coefficient_support": 15,
+          "dual_evaluation": "-8"
+        },
+        {
+          "k": 9,
+          "unordered": 98,
+          "quotient_dimension": 25,
+          "reduced_coefficient_support": 23,
+          "dual_evaluation": "16"
+        },
+        {
+          "k": 10,
+          "unordered": 207,
+          "quotient_dimension": 40,
+          "reduced_coefficient_support": 39,
+          "dual_evaluation": "-48"
+        },
+        {
+          "k": 11,
+          "unordered": 451,
+          "quotient_dimension": 65,
+          "reduced_coefficient_support": 63,
+          "dual_evaluation": "-368"
+        },
+        {
+          "k": 12,
+          "unordered": 983,
+          "quotient_dimension": 102,
+          "reduced_coefficient_support": 98,
+          "dual_evaluation": "-8624/9"
+        },
+        {
+          "k": 13,
+          "unordered": 2179,
+          "quotient_dimension": 161,
+          "reduced_coefficient_support": 149,
+          "dual_evaluation": "624"
+        },
+        {
+          "k": 14,
+          "unordered": 4850,
+          "quotient_dimension": 245,
+          "reduced_coefficient_support": 224,
+          "dual_evaluation": "14740/9"
+        }
+      ],
+      "truncated_algebra_dimension": 680
+    },
+    {
+      "d": 3,
+      "p": 2,
+      "rows": [
+        {
+          "k": 1,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "1"
+        },
+        {
+          "k": 2,
+          "unordered": 1,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 3,
+          "unordered": 2,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 4,
+          "unordered": 4,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        },
+        {
+          "k": 5,
+          "unordered": 8,
+          "quotient_dimension": 0,
+          "reduced_coefficient_support": 0
+        }
+      ],
+      "truncated_algebra_dimension": 2
+    },
+    {
+      "d": 3,
+      "p": 3,
+      "rows": [
+        {
+          "k": 1,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "1"
+        },
+        {
+          "k": 2,
+          "unordered": 1,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "3"
+        },
+        {
+          "k": 3,
+          "unordered": 2,
+          "quotient_dimension": 1,
+          "reduced_coefficient_support": 1,
+          "dual_evaluation": "3"
+        },
+        {
+          "k": 4,
+          "unordered": 4,
+          "quotient_dimension": 2,
+          "reduced_coefficient_support": 2,
+          "dual_evaluation": "-9"
+        },
+        {
+          "k": 5,
+          "unordered": 8,
+          "quotient_dimension": 3,
+          "reduced_coefficient_support": 3,
+          "dual_evaluation": "27"
+        },
+        {
+          "k": 6,
+          "unordered": 17,
+          "quotient_dimension": 4,
+          "reduced_coefficient_support": 4,
+          "dual_evaluation": "18"
+        },
+        {
+          "k": 7,
+          "unordered": 39,
+          "quotient_dimension": 6,
+          "reduced_coefficient_support": 6,
+          "dual_evaluation": "-108"
+        },
+        {
+          "k": 8,
+          "unordered": 89,
+          "quotient_dimension": 9,
+          "reduced_coefficient_support": 9,
+          "dual_evaluation": "81"
+        },
+        {
+          "k": 9,
+          "unordered": 211,
+          "quotient_dimension": 13,
+          "reduced_coefficient_support": 13,
+          "dual_evaluation": "-1017/16"
+        },
+        {
+          "k": 10,
+          "unordered": 507,
+          "quotient_dimension": 19,
+          "reduced_coefficient_support": 19,
+          "dual_evaluation": "-185895/728"
+        },
+        {
+          "k": 11,
+          "unordered": 1238,
+          "quotient_dimension": 26,
+          "reduced_coefficient_support": 26,
+          "dual_evaluation": "-594378/637"
+        },
+        {
+          "k": 12,
+          "unordered": 3057,
+          "quotient_dimension": 34,
+          "reduced_coefficient_support": 34,
+          "dual_evaluation": "11198331/224224"
+        },
+        {
+          "k": 13,
+          "unordered": 7639,
+          "quotient_dimension": 40,
+          "reduced_coefficient_support": 40,
+          "dual_evaluation": "427795074727731/5870546528"
+        },
+        {
+          "k": 14,
+          "unordered": 19241,
+          "quotient_dimension": 35,
+          "reduced_coefficient_support": 28,
+          "dual_evaluation": "-10529123457938566680915/34700041625447744"
+        },
+        {
+          "k": 15,
+          "unordered": 48865,
+          "quotient_dimension": 16,
+          "reduced_coefficient_support": 0
+        }
+      ],
+      "truncated_algebra_dimension": 211
+    }
+  ],
+  "literal_planar_controls": [
+    {
+      "d": 2,
+      "p": 3,
+      "k": 5,
+      "planar": 42,
+      "planar_classes": 72,
+      "unordered": 6,
+      "quotient_dimension": 1,
+      "constant_in_span": false
+    },
+    {
+      "d": 2,
+      "p": 3,
+      "k": 6,
+      "planar": 132,
+      "planar_classes": 304,
+      "unordered": 11,
+      "quotient_dimension": 0,
+      "constant_in_span": true
+    },
+    {
+      "d": 2,
+      "p": 4,
+      "k": 6,
+      "planar": 132,
+      "planar_classes": 144,
+      "unordered": 11,
+      "quotient_dimension": 6,
+      "constant_in_span": false
+    },
+    {
+      "d": 3,
+      "p": 2,
+      "k": 4,
+      "planar": 55,
+      "planar_classes": 117,
+      "unordered": 4,
+      "quotient_dimension": 0,
+      "constant_in_span": true
+    },
+    {
+      "d": 3,
+      "p": 3,
+      "k": 4,
+      "planar": 55,
+      "planar_classes": 54,
+      "unordered": 4,
+      "quotient_dimension": 2,
+      "constant_in_span": false
+    },
+    {
+      "d": 3,
+      "p": 3,
+      "k": 5,
+      "planar": 273,
+      "planar_classes": 351,
+      "unordered": 8,
+      "quotient_dimension": 3,
+      "constant_in_span": false
+    }
+  ],
+  "input_hashes": {
+    "verify_subtree_shuffle.py": "346bbace70014809c9b84fbbf9ce6de8547860c977c593c943321974f69d475c",
+    "SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa"
+  }
+}

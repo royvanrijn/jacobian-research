@@ -1,0 +1,58 @@
+{
+  "schema": "odd_start_rational_composition_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "role": "rationality dependency",
+      "exact_use": "OddStartRationalCenter: every odd a>=1, pure unit center, rational X,u over ORIGINAL characteristic-zero K. No square-root coefficient extension."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "role": "endpoint dependency",
+      "exact_use": "Exact all-height marked endpoint criterion and purity iff Phi(u)+Phi(-u)=2 for odd a. No finite-prefix inference."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "role": "actual primary field theorem",
+      "exact_use": "Theorem9.19 printedp117: every intermediate field properly containing F in F(X) is F(rational generator), arbitrary F. Lemma9.24 p118 rational-map field degree; Example9.25 p119 Mobius generators. Actual statements read."
+    },
+    {
+      "path": "research/foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056",
+      "role": "finite source fixtures",
+      "exact_use": "Normalized hyperbolic C,D,u,T at all odd heights, reproducing primitive U,V data and degree59 admissible pullback."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "role": "polynomial-outer scope restriction only",
+      "exact_use": "Nontrivial pure unit-center outer phase has degD>=a+3, with equality exactly the sharp Phi1 family. Used only for finite-pole restriction N11."
+    },
+    {
+      "path": "research/foundations/extended-geometry/MIXED_CENTER_LOGARITHMIC_SEPARATION.md",
+      "sha256": "5dd7b51737e3b8cdab2af0c43ddbf876fbf6cd7861829c3efa49b43928c23542",
+      "role": "optional compatibility lemma",
+      "exact_use": "Uniqueness of rational exact/log decomposition; new core normalform uses no R or logarithmic step after imported rationality."
+    }
+  ],
+  "new_self_contained_steps": [
+    "Stable involution on K(u,T)",
+    "Marked K-rational unramified base place and normalized Mobius split",
+    "Unique anti-invariant generator over original K",
+    "Exhaustive rational-data iff and optional canonical bijection",
+    "Finite polynomial divisibility and generic-fiber primitivity tests",
+    "Field equality with former rational-primitive stable field"
+  ],
+  "not_assumed": [
+    "K algebraically closed",
+    "analytic convergence",
+    "polynomial w",
+    "polynomial outer phase",
+    "rational original x-return",
+    "semisimplicity or any representation-theoretic condition"
+  ],
+  "assurance": "Written unrestricted proof with bounded exact controls; no external human review or proof-assistant verification."
+}

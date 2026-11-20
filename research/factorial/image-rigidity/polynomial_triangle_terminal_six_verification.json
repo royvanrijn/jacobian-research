@@ -1,0 +1,62 @@
+{
+  "actual_shapes": [
+    "5*a+1",
+    "6*a+1"
+  ],
+  "all_full_degree_gcds_equal_one": true,
+  "binary_exponent": 7,
+  "case_stream_sha256": "1e519fc37d83a0afed508b0fe784dd8dcd126d194129caf0538652993378a73d",
+  "checker_sha256": "f843db497db38fbdc0882ef6b9b08537669fad65304a56a6a294096c18536628",
+  "gap_cutoff": 70,
+  "inputs_sha256": "1401a0bca889121ebac463f63e618ac42c38aeede7c9b6215de021dc6d497934",
+  "integer_cutoff_controls": 127,
+  "ledger_sha256": "252df649a94492630730b0b1dff1416e2bc0bd76de1510a0dab63bb6cf8a02fe",
+  "literal_factorial_polynomial_controls": 24,
+  "maximum_factorial_argument": 4134,
+  "negative_controls": [
+    "three_malformed_domains",
+    "full_degree_common_root_corruption",
+    "incorrect_shared_Gamma_shape"
+  ],
+  "prime": 1000003,
+  "proof_sha256": "6618fd72ef2255e50f6664cc2c11e141fac7e8fe51b4ec04f29ae91d4ab96310",
+  "rational_moment_controls": 8,
+  "scope": "Complete ACTUAL terminal-six finite triangle only; the all-exponent theorem and all-N>=7 equivalence require the written complement arguments. No all-order Strong Factorial closure.",
+  "status": "PASS",
+  "terminal": 6,
+  "tested_cases": 21658,
+  "verified_source_pins": [
+    {
+      "path": "POLYNOMIAL_TRIANGLE_AND_TERMINAL_SIX.md",
+      "sha256": "6618fd72ef2255e50f6664cc2c11e141fac7e8fe51b4ec04f29ae91d4ab96310"
+    },
+    {
+      "path": "verify_polynomial_triangle_terminal_six.py",
+      "sha256": "f843db497db38fbdc0882ef6b9b08537669fad65304a56a6a294096c18536628"
+    },
+    {
+      "path": "polynomial_triangle_terminal_six_inputs.json",
+      "sha256": "1401a0bca889121ebac463f63e618ac42c38aeede7c9b6215de021dc6d497934"
+    },
+    {
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/wagner-multivariate-stable-polynomials-2011.pdf",
+      "sha256": "ab72551b3407480e08185ce2b0a9527c8cea385b95ef93dcf904ec90a46170c1"
+    }
+  ]
+}

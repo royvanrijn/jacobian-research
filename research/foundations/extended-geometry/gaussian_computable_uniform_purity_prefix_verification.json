@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "Finite formula and source-identity controls supplement the unrestricted termination proof; no universal prime-stratification run or numerical B_G is claimed.",
+  "counts": {
+    "symbolic_centered_linear_moments": 52,
+    "literal_unit_source_identities": 2,
+    "formal_egf_ode_coefficients": 60,
+    "isotropic_complex_moments": 15,
+    "computed_numerical_unrestricted_prefix": false
+  },
+  "verified_source_pins": [
+    {
+      "path": "sources/oaku_holonomic_integration_2013.pdf",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a"
+    },
+    {
+      "path": "sources/tsai_walther_hom_0007139v1.pdf",
+      "sha256": "e12f72392608d76c3ebd7862076c93fed2f9fa0c3ba32792c0b516d8d0df6ac5"
+    },
+    {
+      "path": "research/moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md",
+      "sha256": "dfb6f3ac2050868a4ac6d6972ab250daf100923e30985a40ddfa8f8eeb4aed2a"
+    },
+    {
+      "path": "research/moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md",
+      "sha256": "9c1c60587841e6b028edfa5e7488725dc60ba91c769f7fd320a4500eac177d14"
+    },
+    {
+      "path": "research/foundations/extended-geometry/FORMAL_INDICIAL_PURITY_CERTIFICATES.md",
+      "sha256": "775d9d7abaf8868b654937342febdaddcf244c1cd8a432aa92abedb9daa7b225"
+    },
+    {
+      "path": "research/foundations/extended-geometry/GLOBAL_SPHERE_PURITY_RECOGNITION.md",
+      "sha256": "a1019817f4bf1957753be955e4a4daff954e9679b9487b360c3bf91c700c97f2"
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/singular_sing_1534.html",
+      "sha256": "48e747ffacca53148107971d39415f9217c8d9b95f690728b08faf30a35793c9"
+    },
+    {
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "path": "SHIFTED_GAUSSIAN_IMAGE_EQUIVALENCE.md",
+      "sha256": "c2f285d04ad2cbd771f5387c1965fab342f5a37e8785d8f88a7d4f3fe8a24634"
+    },
+    {
+      "path": "verify_shifted_gaussian_image_equivalence.py",
+      "sha256": "bee133bd6422f2c1367930e3a1a3073aef43e7d003509e60969d8c7a0ae404cf"
+    },
+    {
+      "path": "shifted_gaussian_image_equivalence_inputs.json",
+      "sha256": "3ae1a2986ff83139bf3833b1e23a8b943e0059f3f2c7fd26ff605700faefe2fa"
+    },
+    {
+      "path": "GAUSSIAN_COMPUTABLE_UNIFORM_PURITY_PREFIX.md",
+      "sha256": "e2adfb917c8153808a9ea9085b7bb22243fa16beecf01ad823ac8372da623adf"
+    },
+    {
+      "path": "verify_gaussian_computable_uniform_purity_prefix.py",
+      "sha256": "081fb24401c8f29d97a6d49ead9273400ee589b9264c6102f048b1b545a266f2"
+    }
+  ],
+  "checker_sha256": "081fb24401c8f29d97a6d49ead9273400ee589b9264c6102f048b1b545a266f2",
+  "ledger_sha256": "2148c3d39c372ab0b901eea25b488f73626165c57dc538a3147a0a9bdaf36e3b"
+}

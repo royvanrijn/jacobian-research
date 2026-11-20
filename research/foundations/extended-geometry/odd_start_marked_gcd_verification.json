@@ -1,0 +1,281 @@
+{
+  "assurance": "No runtime SymPy, numerical root finder, finite-prefix assumption, formal verification or external review.",
+  "discovery_engine": {
+    "name": "SymPy",
+    "role": "discovery only; no runtime dependency of stdlib verifier",
+    "version": "1.14.0"
+  },
+  "fixtures": [
+    {
+      "G00": "0",
+      "G_Y_degree": 1,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": null,
+      "T_equals_one_control": true,
+      "coarse_prefix": 6,
+      "eliminant_degree": 0,
+      "first_nonzero_moment": null,
+      "h": 1,
+      "id": "pure_trivial_a1",
+      "literal_Bezout_terms": 1,
+      "n": 2,
+      "nonrational_X_control": false,
+      "prefix_bound": 2,
+      "pure": true,
+      "raw_moments": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "G00": "0",
+      "G_Y_degree": 1,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": null,
+      "T_equals_one_control": true,
+      "coarse_prefix": 6,
+      "eliminant_degree": 0,
+      "first_nonzero_moment": null,
+      "h": 1,
+      "id": "pure_sharp_a1",
+      "literal_Bezout_terms": 1,
+      "n": 2,
+      "nonrational_X_control": false,
+      "prefix_bound": 2,
+      "pure": true,
+      "raw_moments": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "G00": "0",
+      "G_Y_degree": 1,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": null,
+      "T_equals_one_control": false,
+      "coarse_prefix": 6,
+      "eliminant_degree": 0,
+      "first_nonzero_moment": null,
+      "h": 1,
+      "id": "pure_affine_Phi_a1",
+      "literal_Bezout_terms": 1,
+      "n": 2,
+      "nonrational_X_control": false,
+      "prefix_bound": 2,
+      "pure": true,
+      "raw_moments": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "G00": "0",
+      "G_Y_degree": 3,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": null,
+      "T_equals_one_control": true,
+      "coarse_prefix": 90,
+      "eliminant_degree": 24,
+      "first_nonzero_moment": null,
+      "h": 3,
+      "id": "pure_two_root_a3",
+      "literal_Bezout_terms": 78,
+      "n": 6,
+      "nonrational_X_control": false,
+      "prefix_bound": 86,
+      "pure": true,
+      "raw_moments": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "G00": "0",
+      "G_Y_degree": 1,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": null,
+      "T_equals_one_control": false,
+      "coarse_prefix": 60,
+      "eliminant_degree": 31,
+      "first_nonzero_moment": null,
+      "h": 4,
+      "id": "pure_hyperbolic_n1_a1",
+      "literal_Bezout_terms": 224,
+      "n": 4,
+      "nonrational_X_control": false,
+      "prefix_bound": 56,
+      "pure": true,
+      "raw_moments": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "G00": "1",
+      "G_Y_degree": 0,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": 6,
+      "T_equals_one_control": false,
+      "coarse_prefix": 22,
+      "eliminant_degree": 16,
+      "first_nonzero_moment": 2,
+      "h": 2,
+      "id": "nonpure_nonsquare_X_a1",
+      "literal_Bezout_terms": 49,
+      "n": 3,
+      "nonrational_X_control": true,
+      "prefix_bound": 18,
+      "pure": false,
+      "raw_moments": [
+        "0",
+        "1/7",
+        "0",
+        "1/13",
+        "0",
+        "1/19",
+        "0",
+        "1/25"
+      ]
+    },
+    {
+      "G00": "1",
+      "G_Y_degree": 0,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": 6,
+      "T_equals_one_control": false,
+      "coarse_prefix": 68,
+      "eliminant_degree": 48,
+      "first_nonzero_moment": 2,
+      "h": 3,
+      "id": "nonpure_nonsquare_X_a3",
+      "literal_Bezout_terms": 280,
+      "n": 5,
+      "nonrational_X_control": true,
+      "prefix_bound": 64,
+      "pure": false,
+      "raw_moments": [
+        "0",
+        "1/11",
+        "0",
+        "1/21",
+        "0",
+        "1/31",
+        "0",
+        "1/41"
+      ]
+    },
+    {
+      "G00": "1",
+      "G_Y_degree": 0,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": 8,
+      "T_equals_one_control": false,
+      "coarse_prefix": 48,
+      "eliminant_degree": 36,
+      "first_nonzero_moment": 4,
+      "h": 3,
+      "id": "nonpure_second_zero_a1",
+      "literal_Bezout_terms": 206,
+      "n": 4,
+      "nonrational_X_control": false,
+      "prefix_bound": 44,
+      "pure": false,
+      "raw_moments": [
+        "0",
+        "0",
+        "0",
+        "-32/429",
+        "0",
+        "96/4199",
+        "0",
+        "3584/185725"
+      ]
+    },
+    {
+      "G00": "-2",
+      "G_Y_degree": 1,
+      "Q_is_nonzero": true,
+      "Q_marked_branch_order": 6,
+      "T_equals_one_control": false,
+      "coarse_prefix": 130,
+      "eliminant_degree": 84,
+      "first_nonzero_moment": null,
+      "h": 5,
+      "id": "off_base_common_component",
+      "literal_Bezout_terms": 750,
+      "n": 6,
+      "nonrational_X_control": false,
+      "prefix_bound": 126,
+      "pure": false,
+      "raw_moments": []
+    }
+  ],
+  "literal_Bezout_terms": 1590,
+  "negative_controls": {
+    "constant_Y_resultant_case": true,
+    "corrupt_eliminant_rejected": true,
+    "off_base_nonconstant_gcd_rejected": true,
+    "unprimitive_x_multiple_rejected": true
+  },
+  "packet_sha256": {
+    "ODD_START_MARKED_GCD_AND_FINITE_PURITY.md": "3bc84f448efa1b443ad01afb419990292efd7a21a561dcf162355da81f3901ca",
+    "odd_start_marked_gcd_certificates.json": "b31c6f94ee210474c35f5d4f5c024591352074799c00535520cd49d68ff3372a",
+    "odd_start_marked_gcd_source_ledger.json": "6db8cee3270115aed242cabd33c4466db75ab3b7e40aa1f37c52fd09bd5ab87d",
+    "verify_odd_start_marked_gcd_finite_purity.py": "9442088db41dfb798bcde31683d61b8f9c1db78268c1ee4e614bb978ee4c2eaa"
+  },
+  "raw_moment_controls": 64,
+  "runtime": {
+    "python": "3.12.3",
+    "standard_library_only": true
+  },
+  "scope": "Exact gcd factors and polynomial Bezout eliminants certify finite inputs; the written all-field/all-order proof gives the universal marked criterion and prefix bound.",
+  "source_pins": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "role": "formal endpoint dependency ONLY",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade"
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "role": "primary elementary algebra",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273"
+    },
+    {
+      "path": "sources/batenkov_binyamini_uniform_2015.pdf",
+      "role": "adjacent classical context ONLY",
+      "sha256": "503e186cc1dbe1582be6a8edd1a4c4c86ce9e2b955c94ffdd0c6ab25ece7bb69"
+    }
+  ],
+  "status": "PASS"
+}

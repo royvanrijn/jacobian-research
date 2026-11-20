@@ -1,0 +1,338 @@
+{
+  "cases": [
+    {
+      "a": 1,
+      "critical_value_integer_coefficients": [
+        "2",
+        "-2"
+      ],
+      "d": 1,
+      "norm": "4",
+      "trace": "0"
+    },
+    {
+      "a": 2,
+      "critical_value_integer_coefficients": [
+        "3",
+        "-2"
+      ],
+      "d": 1,
+      "norm": "9",
+      "trace": "-2"
+    },
+    {
+      "a": 11,
+      "critical_value_integer_coefficients": [
+        "12",
+        "-2"
+      ],
+      "d": 1,
+      "norm": "144",
+      "trace": "-20"
+    },
+    {
+      "a": 1,
+      "critical_value_integer_coefficients": [
+        "9",
+        "-3"
+      ],
+      "d": 2,
+      "norm": "27",
+      "trace": "9"
+    },
+    {
+      "a": 4,
+      "critical_value_integer_coefficients": [
+        "72",
+        "-15"
+      ],
+      "d": 2,
+      "norm": "864",
+      "trace": "9"
+    },
+    {
+      "a": 5,
+      "critical_value_integer_coefficients": [
+        "105",
+        "-19"
+      ],
+      "d": 2,
+      "norm": "1715",
+      "trace": "1"
+    },
+    {
+      "a": 41,
+      "critical_value_integer_coefficients": [
+        "5289",
+        "-163"
+      ],
+      "d": 2,
+      "norm": "3259787",
+      "trace": "-2951"
+    },
+    {
+      "a": 2,
+      "critical_value_integer_coefficients": [
+        "90",
+        "-14"
+      ],
+      "d": 3,
+      "norm": "2500",
+      "trace": "96"
+    },
+    {
+      "a": 10,
+      "critical_value_integer_coefficients": [
+        "6370",
+        "-558"
+      ],
+      "d": 3,
+      "norm": "2856100",
+      "trace": "464"
+    },
+    {
+      "a": 91,
+      "critical_value_integer_coefficients": [
+        "3883516",
+        "-49320"
+      ],
+      "d": 3,
+      "norm": "646538213776",
+      "trace": "-1307848"
+    },
+    {
+      "a": 3,
+      "critical_value_integer_coefficients": [
+        "1008",
+        "-75"
+      ],
+      "d": 4,
+      "norm": "453789",
+      "trace": "1341"
+    },
+    {
+      "a": 17,
+      "critical_value_integer_coefficients": [
+        "696864",
+        "-36167"
+      ],
+      "d": 4,
+      "norm": "20065188213",
+      "trace": "55549"
+    },
+    {
+      "a": 161,
+      "critical_value_integer_coefficients": [
+        "4802952000",
+        "-33124775"
+      ],
+      "d": 4,
+      "norm": "510384350107603125",
+      "trace": "-1159647875"
+    },
+    {
+      "a": 5,
+      "critical_value_integer_coefficients": [
+        "38200",
+        "-1896"
+      ],
+      "d": 5,
+      "norm": "625000000",
+      "trace": "49856"
+    },
+    {
+      "a": 26,
+      "critical_value_integer_coefficients": [
+        "121636684",
+        "-4179384"
+      ],
+      "d": 5,
+      "norm": "405567882128656",
+      "trace": "9227864"
+    },
+    {
+      "a": 251,
+      "critical_value_integer_coefficients": [
+        "9104076918784",
+        "-39371570784"
+      ],
+      "d": 5,
+      "norm": "1117209648693134183366656",
+      "trace": "-1713860979136"
+    },
+    {
+      "a": 7,
+      "critical_value_integer_coefficients": [
+        "1370915",
+        "-36258"
+      ],
+      "d": 6,
+      "norm": "1054614325219",
+      "trace": "2052928"
+    },
+    {
+      "a": 37,
+      "critical_value_integer_coefficients": [
+        "31029185495",
+        "-758076798"
+      ],
+      "d": 6,
+      "norm": "18848978080403530399",
+      "trace": "2170303948"
+    },
+    {
+      "a": 361,
+      "critical_value_integer_coefficients": [
+        "24625257074723279",
+        "-72971065605702"
+      ],
+      "d": 6,
+      "norm": "5497920546127998030333728879623",
+      "trace": "-3799450545898796"
+    },
+    {
+      "a": 10,
+      "critical_value_integer_coefficients": [
+        "115321880",
+        "-2448984"
+      ],
+      "d": 7,
+      "norm": "6975757441000000",
+      "trace": "166970176"
+    },
+    {
+      "a": 50,
+      "critical_value_integer_coefficients": [
+        "10882357361400",
+        "-198750512024"
+      ],
+      "d": 7,
+      "norm": "1741080579875015625000000",
+      "trace": "697160448256"
+    },
+    {
+      "a": 491,
+      "critical_value_integer_coefficients": [
+        "90208444503550176048",
+        "-194543526358333664"
+      ],
+      "d": 7,
+      "norm": "53005836767580033132649704446080624896",
+      "trace": "-11792115034933307936"
+    },
+    {
+      "a": 13,
+      "critical_value_integer_coefficients": [
+        "8832308121",
+        "-107465697"
+      ],
+      "d": 8,
+      "norm": "49839895005648670377",
+      "trace": "14118248241"
+    },
+    {
+      "a": 65,
+      "critical_value_integer_coefficients": [
+        "5019616518901985",
+        "-71126585435881"
+      ],
+      "d": 8,
+      "norm": "288601934326618998393361015625",
+      "trace": "294890833088273"
+    },
+    {
+      "a": 641,
+      "critical_value_integer_coefficients": [
+        "430302937433190960041057",
+        "-705510763351837070185"
+      ],
+      "d": 8,
+      "norm": "908256423103379731627846068684250077641917769",
+      "trace": "-48797499094136063386351"
+    },
+    {
+      "a": 17,
+      "critical_value_integer_coefficients": [
+        "1286616717984",
+        "-14017682080"
+      ],
+      "d": 9,
+      "norm": "984747417928396388770816",
+      "trace": "1984490788608"
+    },
+    {
+      "a": 82,
+      "critical_value_integer_coefficients": [
+        "2944896559953899824",
+        "-33317108362375200"
+      ],
+      "d": 9,
+      "norm": "79602139806403572775672248837765376",
+      "trace": "159250481579265248"
+    },
+    {
+      "a": 811,
+      "critical_value_integer_coefficients": [
+        "2592630897824951888492800000",
+        "-3340420480438224062400000"
+      ],
+      "d": 9,
+      "norm": "25722036935945679602257863469520644072253440000000000",
+      "trace": "-259623587464401444726400000"
+    },
+    {
+      "a": 21,
+      "critical_value_integer_coefficients": [
+        "170565529748040",
+        "-1117937717739"
+      ],
+      "d": 10,
+      "norm": "20181446212828691478113432811",
+      "trace": "284116235891391"
+    },
+    {
+      "a": 101,
+      "critical_value_integer_coefficients": [
+        "2140724617209268095720",
+        "-19783923712976202059"
+      ],
+      "d": 10,
+      "norm": "34470305361101930161746613688476217281611",
+      "trace": "107041330980557556991"
+    },
+    {
+      "a": 1001,
+      "critical_value_integer_coefficients": [
+        "19258595365293371038860569781120",
+        "-20011841567416068382578942659"
+      ],
+      "d": 10,
+      "norm": "1138071136003252085491932737924171741956112470566432517780611",
+      "trace": "-1726622661486971439645114125009"
+    }
+  ],
+  "counts": {
+    "actual_phase_shift_identities": 125,
+    "amplitude_jet_controls": 31,
+    "gap_two_explicit_cases": 4,
+    "negative_controls": 3,
+    "quadratic_algebra_cases": 31,
+    "quartic_boundary_cases": 6
+  },
+  "files": [
+    {
+      "path": "COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "verify_coalescing_binomial_saddle_bridge.py",
+      "sha256": "fa1f8a840a1846c517f9e34b2e27aacc1530252ab11657e0a0ef00bd7f875248"
+    },
+    {
+      "path": "coalescing_binomial_local_source_ledger.json",
+      "sha256": "dfce6b517686d6300012860c4464abc817266520faff455b4f379070d6a7305e"
+    }
+  ],
+  "scope": "Local exact critical-circle/integrality/Lucas/turning/actual-amplitude and radial-shift controls only. No global cycle, uniform remainder or SFC theorem.",
+  "status": "PASS"
+}

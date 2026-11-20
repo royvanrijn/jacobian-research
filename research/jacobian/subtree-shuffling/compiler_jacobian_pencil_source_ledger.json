@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Exact companion resolvent and all-affine obstruction for the SAME retained mixed compiler; not all possible cubic reductions",
+  "sources": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "COMPILER_JACOBIAN_PENCIL_AND_TAU_CHAIN.md",
+      "sha256": "152567fe3b12d49a2fc215e10bd336c105b01173f646bf8a1097509d7d7aa075",
+      "locator": "Proposition CompanionResolventCriterion, Theorem AffineCompilerIndexObstruction, actualindex17 corollary and LegalProductSplitting"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_compiler_jacobian_pencil.py",
+      "sha256": "86bf01b1c4bfc792be0c52dea8b83e419bcdcb67ddbb7b25b43962baaeff99be",
+      "locator": "Whole symbolic block inverse and all mandatory guards/controls"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "compiler_jacobian_pencil_inputs.json",
+      "sha256": "c5b0fb3aac42b9bc548e6a21b8d49f0f96c26c1c3ed67c90a925663c0f01dc4b",
+      "locator": "Pinnedseed selector, degree profile, affine centers and exact coefficient"
+    },
+    {
+      "role": "seed_input",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/cubic_index_seventeen_shuffle_failure_inputs.json",
+      "sha256": "f305ecd8db14df064ff706c9c74242b8d004024d0ef25747c6f2334a3f98e26b",
+      "locator": "Complete45-term rational homogeneous companion and retained mixed/compiler coordinates"
+    },
+    {
+      "role": "arithmetic_module",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/verify_cubic_index_seventeen_shuffle_failure.py",
+      "sha256": "4aed8de2304ea9d4df6c25208ecf8cbe3dad5332843e92d8947c84ecd9d11b49",
+      "locator": "Imported exact rational polynomial operations; actual module SHA pinned beforeimport"
+    },
+    {
+      "role": "companion_proof",
+      "scope": "repo",
+      "path": "research/jacobian/cubic-reduction/POWER89.md",
+      "sha256": "e803ff33062b5c4c39463bdc8b6f9bfcd4840d9b0ef41aa2d11814ed4b7dd3e9",
+      "locator": "Exact18-dimensional companion and the all-parameter determinant identity; context"
+    },
+    {
+      "role": "index17_proof",
+      "scope": "repo",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_SEVENTEEN_SHUFFLE_FAILURE.md",
+      "sha256": "7e227742191536c13f617a5cab72fe1b951ad4b7effdc7d5e60102a5102fa52b",
+      "locator": "Actual exactnilindex17 source and sourceconstruction/provenance; no external theorem needed forblock algebra"
+    }
+  ]
+}

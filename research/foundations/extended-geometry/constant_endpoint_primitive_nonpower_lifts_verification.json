@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "scope": "Three literal original-variable fixtures and exact factor-order checks supplement the all-extension proof; no purity/nonpower conclusion is inferred universally from bounded tests.",
+  "fixtures": [
+    {
+      "a": 0,
+      "r": 1,
+      "balanced_degree": 4,
+      "expanded_terms": 16,
+      "T_order": 0,
+      "geometric_L_orders": [
+        1
+      ],
+      "R_order": 0,
+      "R_zero_specialization": "-4",
+      "proper_square_order_gcd": 2,
+      "original_contractions": [
+        {
+          "m": 1,
+          "normalized_pure": "0",
+          "normalized_marked": "2/3",
+          "expanded_power_terms": 16
+        },
+        {
+          "m": 2,
+          "normalized_pure": "0",
+          "normalized_marked": "8/15",
+          "expanded_power_terms": 50
+        }
+      ]
+    },
+    {
+      "a": 1,
+      "r": 2,
+      "balanced_degree": 9,
+      "expanded_terms": 52,
+      "T_order": 1,
+      "geometric_L_orders": [
+        3,
+        0
+      ],
+      "R_order": 0,
+      "R_zero_specialization": "-2",
+      "proper_square_order_gcd": 2,
+      "original_contractions": [
+        {
+          "m": 1,
+          "normalized_pure": "0",
+          "normalized_marked": "0",
+          "expanded_power_terms": 52
+        },
+        {
+          "m": 2,
+          "normalized_pure": "0",
+          "normalized_marked": "4/35",
+          "expanded_power_terms": 200
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "r": 2,
+      "balanced_degree": 12,
+      "expanded_terms": 93,
+      "T_order": 2,
+      "geometric_L_orders": [
+        5,
+        0
+      ],
+      "R_order": 0,
+      "R_zero_specialization": "-64/9",
+      "proper_square_order_gcd": 2,
+      "original_contractions": [
+        {
+          "m": 1,
+          "normalized_pure": "0",
+          "normalized_marked": "2/15",
+          "expanded_power_terms": 93
+        },
+        {
+          "m": 2,
+          "normalized_pure": "0",
+          "normalized_marked": "8/189",
+          "expanded_power_terms": 336
+        }
+      ]
+    }
+  ],
+  "changed_factor_order_rejected": true,
+  "retained_source_pins": [
+    {
+      "path": "research/foundations/extended-geometry/CONSTANT_ENDPOINT_DAVENPORT_ZANNIER_CLASSIFICATION.md",
+      "sha256": "025216db689f3318dea140cafe3818eb8de592371d4d31c79ab47a4652f22aa5"
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269"
+    },
+    {
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    }
+  ],
+  "packet_sha256": {
+    "CONSTANT_ENDPOINT_PRIMITIVE_NONPOWER_LIFTS.md": "5f3915a2a7eb97ff20601e7a8d4f1595db07b26a5d9445e3af0e00ddaa41d766",
+    "verify_constant_endpoint_primitive_nonpower_lifts.py": "5238dc90504f2905536a38c944d58cebe785785e730acc5ed9407e3b092cbffe",
+    "constant_endpoint_primitive_nonpower_lifts_inputs.json": "c5522ba21b042eeb6e90a7fc99a1d1fec8e753ea6f091f17f7d50349779acdaa",
+    "constant_endpoint_primitive_nonpower_lifts_source_ledger.json": "5ce2eb344666981e3ee5a9341eaeb7e966ab955deedde85a641c29ca6b41e267"
+  }
+}

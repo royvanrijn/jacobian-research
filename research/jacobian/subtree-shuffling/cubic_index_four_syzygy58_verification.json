@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "source_ledger_sha256": "b99db379095a081fd656ed622407767b86ec5cff9283bcc09d67425822e432a9",
+  "dimension": 58,
+  "cubic_terms": 1248,
+  "universal_polynomial_cancellations": 8,
+  "base_jacobian_cube_entries": 0,
+  "full_jacobian_cube_nonzero_entries": 453,
+  "full_jacobian_fourth_power_entries": 0,
+  "nilpotency_index": 4,
+  "inverse_degree": 207,
+  "inverse_line_top_coefficient": "-4098768930505745805561851158497483293806586708514117435227364044629238901973030585621476496178547633434414836283845312015292094650889/35774229529842396762889100058642287423261200114613244672712098869782381918768033689831430168772608",
+  "coefficient_perturbation_fourth_power_nonzero_entries": 45,
+  "malformed_inputs_rejected": 4
+}

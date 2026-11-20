@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "arithmetical_evidence": "internal exact replay",
+  "analytic_terminal_cutoff": 10000,
+  "literal_coupling_and_forest_controls": 30,
+  "contour_constant_inequalities": "passed by exact rational Taylor bounds",
+  "finite_prefix": {
+    "first_terminal": 2,
+    "last_terminal": 9999,
+    "preceding_prime_tests": 9984,
+    "degree_one_residual_gcds": [
+      [
+        95,
+        89,
+        6
+      ],
+      [
+        126,
+        113,
+        13
+      ],
+      [
+        1711,
+        1709,
+        2
+      ]
+    ],
+    "full_degree_prime": 100003,
+    "full_degree_fallbacks": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        16,
+        0
+      ],
+      [
+        22,
+        0
+      ],
+      [
+        27,
+        0
+      ],
+      [
+        28,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  "source_sha256": {
+    "GAP_SIX_RESULTANT_STRICT_POSITIVITY.md": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc",
+    "verify_gap_six_resultant_strict.py": "250c93a8fa48bbd48db8aacd4cea5f6e5f20e83315a98f4bc8a94a77f18aa6f0"
+  }
+}

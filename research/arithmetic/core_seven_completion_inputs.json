@@ -1,0 +1,24 @@
+{
+  "coefficient": 21,
+  "principal_bound": 2147483647,
+  "cube_prime_cutoff": 1024,
+  "cube_count": 57,
+  "principal_expected_counts": {
+    "inclusive_norm_bound": 2147483647,
+    "prime_cap": 102261126,
+    "all_primes_through_cap": 5884179,
+    "principal_split_primes": 980245,
+    "primitive_norm_flags": 261095104,
+    "positive_y_ellipse_candidates": 1406700140,
+    "primitive_positive_y_points": 855199379,
+    "anchor_limit": 5000,
+    "anchor_count": 834,
+    "coefficient": 21,
+    "covered": 980245,
+    "maximum_anchor_trials": 70,
+    "independent_square_regression_bound": 100000,
+    "failures": []
+  },
+  "principal_flags_sha256": "e3610c2abafb3a5ab3b8597247b1c76b0bb9a2950b964b39033d256ea62e4f7c",
+  "principal_assignments_sha256": "3000e52e53ac94833c8e938dea8649052dc58f09f124f33a4944517cd9ae3e29"
+}

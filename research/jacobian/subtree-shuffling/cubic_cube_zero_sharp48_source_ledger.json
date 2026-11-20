@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Explicit48-variable rational homogeneous cubic; exact Jacobian nilpotency3 and inverse degree29; standalone direct polynomial checks",
+  "inputs": [
+    {
+      "role": "proof",
+      "path": "CUBIC_CUBE_ZERO_SHARP48.md",
+      "sha256": "51a969f58b3e6253b3859216a2f6efc0face67febc6867ce29d0215d93c4a526",
+      "scope": "packet"
+    },
+    {
+      "role": "input",
+      "path": "cubic_cube_zero_sharp48.json",
+      "sha256": "512d41f8eee87dffb4d1572ecba8493da319fbd9744923e393f9844e38bac16d",
+      "scope": "packet"
+    },
+    {
+      "role": "checker",
+      "path": "verify_cubic_cube_zero_sharp48.py",
+      "sha256": "11d4966fdb6dc7f613b39c817c6ce61f9bfffe17ea7c245001179d6b6ced34e5",
+      "scope": "packet"
+    }
+  ]
+}

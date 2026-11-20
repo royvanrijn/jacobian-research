@@ -38,6 +38,11 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. The explicit r
 | Primitive Image witnesses in prime degrees from hyperbolic inverse covers | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md) |
 | Complete hyperbolic-coordinate fibers and additional prime Image witnesses | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md) |
 | Primitive Image counterexamples in asymptotically all prime degrees | Internal result | proved | [Source](../foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md) |
+| Every constant-endpoint family has a primitive nonpower Image lift | Internal result | proved | [Source](../foundations/extended-geometry/CONSTANT_ENDPOINT_PRIMITIVE_NONPOWER_LIFTS.md) |
+| Global sphere and balanced Image purity recognition with finite certificates | Internal result | proved | [Source](../foundations/extended-geometry/GLOBAL_SPHERE_PURITY_RECOGNITION.md) |
+| Unrestricted Image purity and safety through faithful shifted Gaussians | Internal result | proved | [Source](../foundations/extended-geometry/SHIFTED_GAUSSIAN_IMAGE_EQUIVALENCE.md) |
+| Computable uniform Gaussian purity prefixes and unrestricted Image transfer | Internal result | proved | [Source](../foundations/extended-geometry/GAUSSIAN_COMPUTABLE_UNIFORM_PURITY_PREFIX.md) |
+| Decidable boxed universal Mathieu validity and constructible counterexample existence | Internal result | proved | [Source](../foundations/extended-geometry/BOXED_UNIVERSAL_MATHIEU_DECISION.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 
@@ -59,6 +64,9 @@ Scope limits:
 - Primitive non-proper-power Image witnesses exist in every composite balanced degree>=4. Hyperbolic inverse covers additionally supply degrees(2a+3)n+a+2 for odd a>=1,n>=1, including odd primes13,23,41,59, with one fixed original marker surviving at every even order. Degrees5,7,11 and other residual odd primes remain open; no minimum odd or prime failing degree is proved.
 - Polynomial quotient deformations now extend the hyperbolic Image family to degrees(2ell(a+2)-1)N+a+2, including prime37,61,71,89 outside the earlier covered set. The same theorem gives the full polynomial pure fiber at each fixed u_N; marker ZQ_h survives every even order with exact original factorials. Global prime5,7,11,17,19 remain open.
 - The explicit full hyperbolic all-odd-a family has relative natural densityone among prime balanced degrees. Already the a1 cubic-height branch covers primes3mod10 except3 with relative density1/4. These are classical fixed-PNT/CRT consequences, and individual residual primes remain open.
+- Global rational-period recognition now decides arbitrary sphere polynomial purity and balanced n-pair purity over effective finitely generated fields. A terminating generic minimal-prime algorithm proves computable universal reduced degree prefixes. Arbitrary FIXED original markers admit exact tail decisions with cancellations. This route does not itself decide safety over all markers; explicit numerical bounds/backend remain open.
+- The old WHOLE Gaussian source/Hom theorem now transfers through a faithful GENERIC shifted-Wick isomorphism to arbitrary Image polynomials, including unbalanced and mixed-degree inputs. All-marker safety is equivalent over the parameter field; a computable finite ORIGINAL monomial marker list and fixed-input affine cutoffs transfer. The L=K(i)(z) backend is theoretical, whereas the executed producer supports QQ/simple number fields.
+- A total Gaussian unit-period recognizer over generic Q-fields and strict radical ACC give a computable uniform B_G(N,D) for all characteristic-zero Gaussian coefficients. The reduced moment locus is defined by that finite prefix; B_Image(n,D)=B_G(2n,D) applies to unrestricted Image inputs. No numerical bound, ordinary-ideal equality, prescribed16 cutoff or coefficient-existence classification is claimed.
 
 Tracked obligations (computed states):
 

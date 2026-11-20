@@ -1,0 +1,385 @@
+{
+  "F4_marked_values": [
+    "240",
+    "483840",
+    "4981616640",
+    "162599967129600"
+  ],
+  "checker_sha256": "e6c40ec5c50d1a4544b3595434455e5f13d5e2b7e26ab511d5dc2aaa18b0bab8",
+  "component_records": [
+    {
+      "minimal_primes": [
+        []
+      ],
+      "name": "irreducible_scaling_family",
+      "retained_primes": [
+        []
+      ],
+      "universal_valid": false
+    },
+    {
+      "minimal_primes": [
+        []
+      ],
+      "name": "punctured_scaling_family",
+      "retained_primes": [
+        []
+      ],
+      "universal_valid": false
+    },
+    {
+      "minimal_primes": [
+        [
+          0
+        ]
+      ],
+      "name": "closed_zero_phase",
+      "retained_primes": [
+        [
+          0
+        ]
+      ],
+      "universal_valid": true
+    },
+    {
+      "minimal_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "name": "reducible_both_components",
+      "retained_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "universal_valid": false
+    },
+    {
+      "minimal_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "name": "open_guard_selects_safe_component",
+      "retained_primes": [
+        [
+          0
+        ]
+      ],
+      "universal_valid": true
+    },
+    {
+      "minimal_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "name": "open_guard_selects_unsafe_component",
+      "retained_primes": [
+        [
+          1
+        ]
+      ],
+      "universal_valid": false
+    },
+    {
+      "minimal_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "name": "empty_product_guard",
+      "retained_primes": [],
+      "universal_valid": true
+    },
+    {
+      "minimal_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "name": "nonzero_sum_keeps_both",
+      "retained_primes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "universal_valid": false
+    },
+    {
+      "minimal_primes": [],
+      "name": "unit_ideal_empty",
+      "retained_primes": [],
+      "universal_valid": true
+    },
+    {
+      "minimal_primes": [
+        []
+      ],
+      "name": "zero_guard_empty",
+      "retained_primes": [],
+      "universal_valid": true
+    }
+  ],
+  "counts": {
+    "F4_original_powers": 4,
+    "component_restriction_cases": 10,
+    "integral_power_relations": 22,
+    "interpolation_profiles": 5,
+    "malformed_power_relations_rejected": 22,
+    "prime_divisor_guard_degrees": 40,
+    "rational_sample_memberships": 75,
+    "split_Q_prime_marker_moments": 176,
+    "uniform_linear_tail_identities": 112
+  },
+  "inputs_sha256": "349180b2ab68221422571ca947cd07e4fd86211593006b1cfc02f3eaa42d540c",
+  "interpolation_records": [
+    {
+      "evaluation_rank": 1,
+      "input_bidegree": 1,
+      "input_dimension": 1,
+      "pairs": 1,
+      "power": 2,
+      "selected_rational_points": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "evaluation_rank": 4,
+      "input_bidegree": 1,
+      "input_dimension": 4,
+      "pairs": 2,
+      "power": 2,
+      "selected_rational_points": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "evaluation_rank": 4,
+      "input_bidegree": 1,
+      "input_dimension": 4,
+      "pairs": 2,
+      "power": 3,
+      "selected_rational_points": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "evaluation_rank": 4,
+      "input_bidegree": 1,
+      "input_dimension": 4,
+      "pairs": 2,
+      "power": 5,
+      "selected_rational_points": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "evaluation_rank": 9,
+      "input_bidegree": 2,
+      "input_dimension": 9,
+      "pairs": 2,
+      "power": 2,
+      "selected_rational_points": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "ledger_sha256": "8b3ff05323098719a8b893216d1465847a12f6ee8e5f4bd4824bc9e62163c7f5",
+  "proof_sha256": "f0dd6f02e1e94a79a0cd391e00319d792d7684ba1497a25f954347f171a4417f",
+  "scope": "Finite exact specialization/interpolation/original-moment controls; no general minimal-prime or generic Hom computation is executed.",
+  "status": "PASS",
+  "verified_source_pins": [
+    {
+      "path": "research/foundations/extended-geometry/GAUSSIAN_COMPUTABLE_UNIFORM_PURITY_PREFIX.md",
+      "sha256": "e2adfb917c8153808a9ea9085b7bb22243fa16beecf01ad823ac8372da623adf"
+    },
+    {
+      "path": "research/foundations/extended-geometry/SHIFTED_GAUSSIAN_IMAGE_EQUIVALENCE.md",
+      "sha256": "c2f285d04ad2cbd771f5387c1965fab342f5a37e8785d8f88a7d4f3fe8a24634"
+    },
+    {
+      "path": "research/moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md",
+      "sha256": "dfb6f3ac2050868a4ac6d6972ab250daf100923e30985a40ddfa8f8eeb4aed2a"
+    },
+    {
+      "path": "research/moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md",
+      "sha256": "9c1c60587841e6b028edfa5e7488725dc60ba91c769f7fd320a4500eac177d14"
+    },
+    {
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/singular_sing_1534.html",
+      "sha256": "48e747ffacca53148107971d39415f9217c8d9b95f690728b08faf30a35793c9"
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/oaku_holonomic_integration_2013.pdf",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a"
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/tsai_walther_hom_0007139v1.pdf",
+      "sha256": "e12f72392608d76c3ebd7862076c93fed2f9fa0c3ba32792c0b516d8d0df6ac5"
+    },
+    {
+      "path": "BOXED_UNIVERSAL_MATHIEU_DECISION.md",
+      "sha256": "f0dd6f02e1e94a79a0cd391e00319d792d7684ba1497a25f954347f171a4417f"
+    },
+    {
+      "path": "verify_boxed_universal_mathieu_decision.py",
+      "sha256": "e6c40ec5c50d1a4544b3595434455e5f13d5e2b7e26ab511d5dc2aaa18b0bab8"
+    },
+    {
+      "path": "boxed_universal_mathieu_decision_inputs.json",
+      "sha256": "349180b2ab68221422571ca947cd07e4fd86211593006b1cfc02f3eaa42d540c"
+    }
+  ]
+}

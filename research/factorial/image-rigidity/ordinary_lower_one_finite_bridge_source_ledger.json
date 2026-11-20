@@ -1,0 +1,30 @@
+{
+  "scope": "Complete exact finite auxiliary-polynomial bridge only. The written main proof and separate analytical checker supply the unrestricted tail and small-gap inputs.",
+  "files": [
+    {
+      "location": "packet",
+      "path": "ORDINARY_LOWER_ONE_STRONG_FACTORIAL.md",
+      "sha256": "6e309c34718f5a794acfdd1d7325bb680f7287277073a14078f9d174c4428a32"
+    },
+    {
+      "location": "packet",
+      "path": "verify_ordinary_lower_one_finite_bridge.py",
+      "sha256": "197b59e7337d3107bcb7ce19a9ad5c52991b3ff1923d46d68ecff31d33b7a52b"
+    },
+    {
+      "location": "packet",
+      "path": "ordinary_lower_one_finite_bridge_inputs.json",
+      "sha256": "b9d56f818f9b34641392bce0c937b3f3364ae03ab762edbc1a8d9d1985b4418d"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Explicit58-variable rational homogeneous cubic: exact Jacobian index4, inverse degree207, and a universal six-coordinate syzygy method lemma; no unbounded-family claim",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "CUBIC_INDEX_FOUR_SYZYGY58.md",
+      "sha256": "02559e0af8c50e682e14afafa081a5087b9a278d0f2c20a4c7be93c00d97294a"
+    },
+    {
+      "role": "literal_input",
+      "path": "cubic_index_four_syzygy58.json",
+      "sha256": "b8899afd6e1f1f197d783bdb5c3936434da06cec4be3e607ec64b8c5cac1e4e8"
+    },
+    {
+      "role": "checker",
+      "path": "verify_cubic_index_four_syzygy58.py",
+      "sha256": "71b3e4b66b3e0041742f6432995163299d40b73183f07df8ffcfcc3ab3cfa97e"
+    },
+    {
+      "role": "primary_context",
+      "path": "sources/umirbaev-polarization-algebras-2014.pdf",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2035/1/preprint_2014_60.pdf",
+      "locator": "Lemmas7--8 and Corollary2, printed7--8; four-dimensional example, printed9--10",
+      "mathematical_use": "Classical context only; no imported theorem is a premise of the literal example"
+    }
+  ]
+}

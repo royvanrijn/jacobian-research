@@ -1,0 +1,52 @@
+{
+  "actual_completed_receipt_sha256": "95bf53dba99f375ea908aedcaa80a36162a9824a0e193840150d81663f6d9036",
+  "actual_finite_source_sha256": "e33fe9e57513b9a0ff74c1e5a5334718e57179450d87cdae2964da27d34ebe32",
+  "completed_support_pairs": 532,
+  "completed_terminal_stream_entries": 3694040,
+  "fresh_fallback_Bezout_replays": [
+    {
+      "N": 6142,
+      "a": 11,
+      "alternate_Bezout_verified": true,
+      "d": 41,
+      "primary_gcd_degree": 1
+    },
+    {
+      "N": 4491,
+      "a": 4,
+      "alternate_Bezout_verified": true,
+      "d": 48,
+      "primary_gcd_degree": 1
+    },
+    {
+      "N": 3147,
+      "a": 13,
+      "alternate_Bezout_verified": true,
+      "d": 61,
+      "primary_gcd_degree": 1
+    },
+    {
+      "N": 3843,
+      "a": 19,
+      "alternate_Bezout_verified": true,
+      "d": 61,
+      "primary_gcd_degree": 1
+    },
+    {
+      "N": 2254,
+      "a": 19,
+      "alternate_Bezout_verified": true,
+      "d": 62,
+      "primary_gcd_degree": 1
+    }
+  ],
+  "literal_coefficient_vectors": 24,
+  "maximum_factorial_argument": 903084,
+  "maximum_terminal": 10751,
+  "negative_controls": 6,
+  "no_completed_secondary_run_claim": true,
+  "schema_version": 1,
+  "scope": "Pinned completed finite artifact, all532support/3694040terminal stream entries,24literal coefficient vectors and five freshly reconstructed alternate full Bezout identities; the full3694040GCD run is authenticated, not rerun here. Analytical and all-terminal conclusions use the separate written proofs.",
+  "source_ledger_sha256": "38baf7389b21c83758ff549ea0b9daefd13f166cb28d1115a759dd5fc028c2c0",
+  "status": "PASS"
+}

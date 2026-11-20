@@ -1,0 +1,65 @@
+{
+  "files": {
+    "adjacent": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5",
+      "use": "Adjacent-exponent Strong Factorial theorem, gap1."
+    },
+    "checker": {
+      "location": "local",
+      "path": "verify_lower_two_weighted_saddle_tail.py",
+      "sha256": "330071e8872138df8eb06cb96a1d474ce9f3ee3c1991fdd5ef1c6249be5199ef",
+      "use": "Independent exact rational inequality and polynomial certificate replay."
+    },
+    "constants": {
+      "location": "local",
+      "path": "lower_two_weighted_saddle_constants.json",
+      "sha256": "65ad9a2418c8dd01117761d4ee801d854c2b68f3814913f06c26a1ed5d038353",
+      "use": "Literal full polynomial/Bernstein certificate coefficients."
+    },
+    "fourth_gap": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex",
+      "sha256": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+      "use": "Theorem thm:fourth-gap at beta=1, gap4."
+    },
+    "prime_gap": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/LOWER_TWO_PRIME_GAP_SFC.tex",
+      "sha256": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200",
+      "use": "Theorem thm:prime at beta=1, gaps2,3,5."
+    },
+    "proof": {
+      "location": "local",
+      "path": "ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md",
+      "sha256": "da178d221b862cc08e7332b747484ee956869d48910f60259acb66643e1a00f6",
+      "use": "Full written analytic and finite-domain proof."
+    },
+    "sparse": {
+      "location": "repository",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+      "use": "Theorem thm:sparse, actual moments with arbitrary lower exponent."
+    }
+  },
+  "primary_context_only": [
+    {
+      "locator": "Proposition2.1",
+      "scope": "Generic hypergeometric zero relations, not the changing-shape coprimality used here.",
+      "url": "https://arxiv.org/abs/1507.07808"
+    },
+    {
+      "locator": "Bessel polynomial representation",
+      "scope": "Adjacent-gap comparison only.",
+      "url": "https://dlmf.nist.gov/18.34"
+    },
+    {
+      "locator": "Section4, Theorem4.6",
+      "scope": "Multiple Bessel-like hypergeometric formulas; no arbitrary-gap consecutive theorem imported.",
+      "url": "https://arxiv.org/abs/2401.08312"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Exact analytic support and retained all-terminal antecedents; finite modular evidence is separate."
+}

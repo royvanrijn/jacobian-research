@@ -1,0 +1,55 @@
+{
+  "fixtures": [
+    [
+      2,
+      20,
+      "2"
+    ],
+    [
+      3,
+      24,
+      "3"
+    ],
+    [
+      5,
+      32,
+      "5"
+    ],
+    [
+      8,
+      40,
+      "8"
+    ],
+    [
+      12,
+      48,
+      "12"
+    ],
+    [
+      20,
+      64,
+      "20"
+    ],
+    [
+      4,
+      28,
+      "7/2"
+    ],
+    [
+      5,
+      40,
+      "10"
+    ]
+  ],
+  "outside_criterion": [
+    20,
+    6,
+    20
+  ],
+  "primary_record_sha256": "0cffa1fbc9abba4630d244e5ec5232f4c4c75ad24a3e9dac14739357e67c2a34",
+  "proof_sha256": "108393fc4ee7cdd100fcb40cf76e01ef7038d6034a4dcfc91071e70293fd256b",
+  "retained_source_hashes": {
+    "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae",
+    "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+  }
+}

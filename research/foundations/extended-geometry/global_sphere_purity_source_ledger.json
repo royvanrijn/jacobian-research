@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "date": "2026-11-20",
+  "scope": "Global exact sphere purity recognition; computable nonnumerical degree prefix; arbitrary fixed marker tail recognition. No universal Mathieu-safety decision or equality of ordinary moment ideals.",
+  "primary_imports_actually_read": [
+    "Bostan-Lairez-Salvy1301.4313v2 Proposition4 and Theorem12, with singular-denominator deformation and regularity warning.",
+    "Official Singular4.4.1 minAssGTZ primary documentation, proper-ideal and characteristic-zero/global-polynomial scope."
+  ],
+  "classical_context_not_imported": [
+    "GTZ1988 primary decomposition article: bibliographic identity and publisher abstract inspected; full paper not required/read here.",
+    "Rational diagonal closure is not used; normalized sphere moments can have unbounded denominators."
+  ],
+  "files": [
+    {
+      "path": "GLOBAL_SPHERE_PURITY_RECOGNITION.md",
+      "kind": "proof",
+      "sha256": "a1019817f4bf1957753be955e4a4daff954e9679b9487b360c3bf91c700c97f2",
+      "scope": "Complete unrestricted proof, including marked closed tube, fair regular certificate search, singular initial test, effective coefficient-space termination, all balanced pairs and arbitrary fixed markers."
+    },
+    {
+      "path": "verify_global_sphere_three_height.py",
+      "kind": "checker",
+      "sha256": "661c5e2aee4e0a82b254801967d0adf8625bae411fb7174883dc99f8c2cf80b3",
+      "scope": "Stdlib finite exact certificate replay, source hash checks, and subprocess replay of independently written formal-operator controls."
+    },
+    {
+      "path": "global_sphere_three_height_certificates.json",
+      "kind": "exact_input",
+      "sha256": "2b4fdeaa673de0244c1cc4bc951f32ff0231994a09ce874a5a2734bad2249051",
+      "scope": "42 sparse rational terms specifying a genuine three-height order-four algebraic differential certificate."
+    },
+    {
+      "path": "FORMAL_INDICIAL_PURITY_CERTIFICATES.md",
+      "kind": "independent_control_proof",
+      "sha256": "775d9d7abaf8868b654937342febdaddcf244c1cd8a432aa92abedb9daa7b225",
+      "scope": "Independent full formal origin/infinity indicial proofs and fixed-marker polynomiality criterion; all lemmas also proved in main note."
+    },
+    {
+      "path": "verify_formal_indicial_purity_certificates.py",
+      "kind": "independent_control_checker",
+      "sha256": "b17b80a50a7bda6f52a3164aebd50573f81c5f6567106767bd4b94db47878f53",
+      "scope": "Exact noncommutative operator algebra, delayed and irregular controls, actual sphere and zero-mean weighted fixtures."
+    },
+    {
+      "path": "formal_indicial_purity_certificates_verification.json",
+      "kind": "independent_control_receipt",
+      "sha256": "fd40924fa8ac466da1095b5b1ba293ddad714198c7fb648dc26550262a335828",
+      "scope": "Receipt of the independent formal-operator replay; universal validity comes from proof, not finite examples."
+    },
+    {
+      "path": "sources/bostan_lairez_salvy_1301_4313v2.pdf",
+      "kind": "primary_pdf",
+      "sha256": "c7d666525392f58a13d1fb5b8b77805e612391c069c07f2f8c53c482d4d40886",
+      "scope": "Proposition 4 PDFp4: regular certificate implies ODE for closed pole-free n-cycle. Theorem 12 PDFp7 and Section7: arbitrary affine rational input, effective regular telescoper, singular denominators allowed.",
+      "url": "https://arxiv.org/pdf/1301.4313v2"
+    },
+    {
+      "path": "sources/singular_sing_1534.html",
+      "kind": "primary_documentation",
+      "sha256": "48e747ffacca53148107971d39415f9217c8d9b95f690728b08faf30a35793c9",
+      "scope": "Singular4.4.1 Manual D.4.27.7 minAssGTZ returns minimal associated primes of a proper polynomial ideal, designed characteristic0. Use global ordering overQ; no absolute decomposition required.",
+      "url": "https://www.singular.uni-kl.de/Manual/latest/sing_1534.htm"
+    }
+  ],
+  "canonical_review_scope": "Root read complete unrestricted proof, actual BLS Proposition4/Theorem12 and official Singular minAssGTZ specifications; two agents independently audited formal, period, generic-component and fixed-marker steps. Exact finite controls separately replayed; no external/formal assurance."
+}

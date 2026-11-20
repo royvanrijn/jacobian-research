@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "dimension": 58,
+  "pre_S_dimension": 57,
+  "u": 0,
+  "w": 47,
+  "auxiliary_coordinates": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "canonical_literal_data": "jacobian/subtree-shuffling/cubic_index_four_syzygy58.json"
+}

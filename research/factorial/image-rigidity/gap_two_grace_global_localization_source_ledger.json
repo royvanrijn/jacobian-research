@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "Self-contained closed-disc Grace/polar proof, complex Laguerre matrix, and actual physical gap-two coefficient bounds; context sources are not mathematical proof premises.",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "role": "checker",
+      "path": "verify_gap_two_grace_global_localization.py",
+      "sha256": "fc20b8c7154761f8bc28bcecfce6c5810d08c1fa5af901946e8b02f021fe4be2"
+    },
+    {
+      "role": "input",
+      "path": "gap_two_grace_global_localization_inputs.json",
+      "sha256": "f5a5e32fccf64b5f5ac10d1030435f1188a317e636376819e5c5cb5fe0e09a3e"
+    }
+  ],
+  "context_sources": [
+    {
+      "title": "Lars Hormander, On a theorem of Grace, Math.Scand.2(1954),55-64",
+      "locator": "Printed55-58: actual LARS byline, normalized polar Lemma1 at56, first-polar Lemma2 at57, Theorem1 and strict-region variant at58.",
+      "url": "https://doi.org/10.7146/math.scand.a-10395",
+      "scope": "Classical lineage; direct disc proof supplied in note. Publisher webpage author metadata differs from actual LARS byline.",
+      "local_path": "sources/hormander_grace_1954.pdf",
+      "sha256": "e02b7d6bf230f1af9e9795654fc186592d694b25cf9aadee5c1b20afec2c758b"
+    },
+    {
+      "title": "Alvarez-Nodarse--Castillo, arXiv2510.01703v2",
+      "locator": "Theorem3.2, exact closed-disc Grace-Szego statement and nonzero constant proviso.",
+      "url": "https://arxiv.org/html/2510.01703v2",
+      "scope": "Exact formulation comparison only; direct proof in retained note."
+    }
+  ]
+}

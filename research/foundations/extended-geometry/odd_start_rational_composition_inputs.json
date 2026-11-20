@@ -1,0 +1,25 @@
+{
+  "schema": "odd_start_rational_composition_inputs_v1",
+  "starting_heights": [
+    1,
+    3,
+    5
+  ],
+  "lambda_values": [
+    "1",
+    "2/3"
+  ],
+  "hyperbolic_indices": [
+    1,
+    2
+  ],
+  "maximum_moment": 6,
+  "involution_beta_values": [
+    "0",
+    "1",
+    "-2",
+    "2/3"
+  ],
+  "optional_primitivity": "Full canonical data require K(U,V)=K(z). The checker includes primitive hyperbolic recovery and an accepted nonprimitive degree3 right-factor representation.",
+  "scope": "Exact rational fixtures supplement the arbitrary-char0 all-order theorem; no degree cutoff or polynomial w/outer premise."
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Complete ordinary-cubic Gamma image, localized triple kernel and impossibility of old polynomial correction for ALL helpers in two specified restart families; no universal parallel-block obstruction",
+  "sources": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "THIRD_COVECTOR_CUBIC_IMAGE_AND_RESTART_OBSTRUCTIONS.md",
+      "sha256": "f0285ae00637834ebf2532df8d6fa52d6eea57320b3c3ab8a3232a60d5df661a",
+      "locator": "Triple normal form, complete finite cubic image and both full helper-family polynomial obstructions"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_third_covector_restart_obstructions.py",
+      "sha256": "28207c8eeeb502c1c901f4ef0bbfbc19ff6be43f96cf0dd0bb054c34c55bdf7d",
+      "locator": "Exact286column eliminations, all21/18basis vectors,63/1312certificates and fullactualrow decomposition"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "third_covector_restart_inputs.json",
+      "sha256": "74bed349fd2ea7bee8346be4d9023cc3e80e1a9fb25fe43cc562726d08eb4f14",
+      "locator": "Both explicit cubic helpers and six-coefficient obstruction functional"
+    },
+    {
+      "role": "joint_proof",
+      "scope": "repo",
+      "path": "jacobian/subtree-shuffling/COMMUTING_SYZYGY_SLICES_AND_SCALAR_OBSTRUCTION.md",
+      "sha256": "50dd9267653613edc7262d8e5f93c9059626635efa3fef02eb8578def29205fa",
+      "locator": "Commuting derivations, localized7generator kernel and actualindependent r/du rows"
+    },
+    {
+      "role": "joint_checker",
+      "scope": "repo",
+      "path": "jacobian/subtree-shuffling/verify_commuting_syzygy_slices.py",
+      "sha256": "1055987b36b0f0d71af6ee52eb0dfa8da535865d7f58a5d6374a44d295e6c3f4",
+      "locator": "Pinned standard-library Laurent and sparse polynomial matrix operations; imported by this checker"
+    },
+    {
+      "role": "literal_proof",
+      "scope": "repo",
+      "path": "jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_SYZYGY58.md",
+      "sha256": "02559e0af8c50e682e14afafa081a5087b9a278d0f2c20a4c7be93c00d97294a",
+      "locator": "Exact old component polynomials and actual index-four map"
+    },
+    {
+      "role": "literal_data",
+      "scope": "repo",
+      "path": "jacobian/subtree-shuffling/cubic_index_four_syzygy58.json",
+      "sha256": "b8899afd6e1f1f197d783bdb5c3936434da06cec4be3e607ec64b8c5cac1e4e8",
+      "locator": "All1248 literal cubics used in both complete59/60matrix reconstructions"
+    }
+  ]
+}

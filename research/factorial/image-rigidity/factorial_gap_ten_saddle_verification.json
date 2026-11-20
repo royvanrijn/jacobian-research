@@ -1,0 +1,531 @@
+{
+  "checker_sha256": "538e14b7b4fea77cb2152250e499f5379d1148d1ae15a1394bb4421f0de113c5",
+  "constants_sha256": "deab4c7f68aec8a9bfee086be9190c0e2731d89e86bcbae64fe21218fae68b45",
+  "finite_all_terminal_box": "10<=d<=511,2<=N<10^12*(d+1)^10",
+  "inequalities": [
+    {
+      "left": "163/60",
+      "name": "Euler_lower_series",
+      "relation": "<",
+      "right": "1957/720"
+    },
+    {
+      "left": "31967/11760",
+      "name": "Euler_upper_series",
+      "relation": "<",
+      "right": "87/32"
+    },
+    {
+      "left": "87/32",
+      "name": "W_base",
+      "relation": "<",
+      "right": "11/4"
+    },
+    {
+      "left": "4400",
+      "name": "W_threshold",
+      "relation": "<",
+      "right": "1048576"
+    },
+    {
+      "left": "3/11",
+      "name": "W_growth_ratio",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "648/1331",
+      "name": "q_polynomial_ratio",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "864/1331",
+      "name": "half_polynomial_ratio",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "432/1331",
+      "name": "quarter_polynomial_ratio",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "288/605",
+      "name": "lower_power_ratio",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "35724645/134217728",
+      "name": "upper_Rouche",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "550159533/536870912",
+      "name": "upper_local_log_third",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "48715425/268435456",
+      "name": "upper_separation",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "360448/390625",
+      "name": "lower_curvature",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "991232/9765625",
+      "name": "lower_third",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "13640319/536870912",
+      "name": "upper_local_y_envelope",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "4546773/1073741824",
+      "name": "upper_local_y_small",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "47/50",
+      "name": "upper_local_modulus",
+      "relation": "<",
+      "right": "52/55"
+    },
+    {
+      "left": "1541525/1142053",
+      "name": "upper_third_correction_factor",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "250000/103823",
+      "name": "upper_third_base",
+      "relation": "<",
+      "right": "3"
+    },
+    {
+      "left": "5",
+      "name": "upper_third_remainder",
+      "relation": "<",
+      "right": "18"
+    },
+    {
+      "left": "5270886993/1476395008000",
+      "name": "upper_local_height",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "63/605000",
+      "name": "lower_local_height",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "1221/11881",
+      "name": "upper_saddle_curvature_error",
+      "relation": "<",
+      "right": "1/5"
+    },
+    {
+      "left": "12100/1207801",
+      "name": "lower_saddle_curvature_error",
+      "relation": "<",
+      "right": "1/10"
+    },
+    {
+      "left": "29250547391998543654496747675769787000224063161425688305268710037971224965461915233632997033369746022101452285461007395960341483889982973850088820161296751817213/16053040770848578676341074600082301172467874558484990026139414283584117889404296875000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "upper_local_exp",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "18093729503048682503452978990321660220630891686051107620704474390004505261548333015764842515186564160836802427058121235992719960557799793445816473766263879939966034594895209047185420851012631895244469849/16371883486179635794605180467801625370112829598052419517975391295578357093687233083013155632932903190528000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "upper_Rouche_exp",
+      "relation": "<",
+      "right": "10/9"
+    },
+    {
+      "left": "68583324399968237561838186557315037658655058073813914581332669293455304529746115888858415991162939962373472465359039254359959194146094973598783516335513189717367400029916885299979328431342287620266254871592058224407075946636007946383541176915101872284408901195990776912014018267773743/67900908920153814451754201378155595078965595785078001765367639346606690119014601384634938566162381379993600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "lower_Rouche_exp",
+      "relation": "<",
+      "right": "4/3"
+    },
+    {
+      "left": "4",
+      "name": "upper_leading_lower_squared",
+      "relation": "<",
+      "right": "60500/12321"
+    },
+    {
+      "left": "665500/83167",
+      "name": "upper_leading_upper_squared",
+      "relation": "<",
+      "right": "9"
+    },
+    {
+      "left": "4",
+      "name": "lower_leading_lower_squared",
+      "relation": "<",
+      "right": "2200000/404067"
+    },
+    {
+      "left": "532400000/76091463",
+      "name": "lower_leading_upper_squared",
+      "relation": "<",
+      "right": "9"
+    },
+    {
+      "left": "2/165",
+      "name": "upper_central_imaginary_ratio",
+      "relation": "<",
+      "right": "1/80"
+    },
+    {
+      "left": "99/100",
+      "name": "upper_inverse_square",
+      "relation": "<",
+      "right": "40953600/40972801"
+    },
+    {
+      "left": "1/550",
+      "name": "lower_imaginary_ratio",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "99/100",
+      "name": "lower_inverse_square",
+      "relation": "<",
+      "right": "99990000/100020001"
+    },
+    {
+      "left": "1/3",
+      "name": "upper_central_curvature",
+      "relation": "<",
+      "right": "236/625"
+    },
+    {
+      "left": "1948617/9998051383",
+      "name": "upper_far_y",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "8/225",
+      "name": "upper_left_imaginary",
+      "relation": "<",
+      "right": "1/25"
+    },
+    {
+      "left": "2161283703465490489863/151115727451828646838272",
+      "name": "upper_left_first_high_squared",
+      "relation": "<",
+      "right": "1/64"
+    },
+    {
+      "left": "2128369302536447560973720687507126062785303/11150372599265311570767859136324180752990208",
+      "name": "upper_left_second_high_fourth",
+      "relation": "<",
+      "right": "16/81"
+    },
+    {
+      "left": "22",
+      "name": "upper_left_first_low_exp",
+      "relation": "<",
+      "right": "4330747/192000"
+    },
+    {
+      "left": "7744",
+      "name": "upper_left_second_low_exp_squared",
+      "relation": "<",
+      "right": "81224760533853742723/10077696000000000"
+    },
+    {
+      "left": "96/121",
+      "name": "first_left_low_monotonicity",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "8/11",
+      "name": "second_left_low_monotonicity",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "11/16",
+      "name": "first_left_sum",
+      "relation": "<",
+      "right": "7/8"
+    },
+    {
+      "left": "41/48",
+      "name": "second_left_sum",
+      "relation": "<",
+      "right": "7/8"
+    },
+    {
+      "left": "44/39",
+      "name": "left_height_loss_exp",
+      "relation": "<",
+      "right": "8/7"
+    },
+    {
+      "left": "511/660",
+      "name": "left_integrated_amplitude",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "16",
+      "name": "left_log2",
+      "relation": "<",
+      "right": "512/27"
+    },
+    {
+      "left": "1101/4000",
+      "name": "lower_local_ratio",
+      "relation": "<",
+      "right": "2/5"
+    },
+    {
+      "left": "1501/4000",
+      "name": "lower_central_ratio",
+      "relation": "<",
+      "right": "2/5"
+    },
+    {
+      "left": "1030200/704969",
+      "name": "lower_log_third_factor",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "2000000/704969",
+      "name": "lower_base_third",
+      "relation": "<",
+      "right": "3"
+    },
+    {
+      "left": "40/9",
+      "name": "lower_far_first_exp",
+      "relation": "<",
+      "right": "36386943786989442196261915704195112233281075592047048711088833433178989431697478872721124174212072072252154000820354454511591/8119024594502867997270408223175833619352966616377776622188590899126872425518839738228002985277456782458880000000000000000000"
+    },
+    {
+      "left": "32701396607127/562949953421312",
+      "name": "lower_far_second_base_eighth",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "1968653960462029503085063925259651434023672666782694208668919502488676430311601820609317726630641220837272469618554221778564786752090984167930521887230894983/30191699398572330817932436647906151127335369763331523427009650401964993299137190816689013801421270140331747000246110759198164677039398341060491474011461568349195162615808",
+      "name": "lower_far_second_eighth",
+      "relation": "<",
+      "right": "43046721/655360000000000000000"
+    },
+    {
+      "left": "10875/3956",
+      "name": "lower_far_margin",
+      "relation": "<",
+      "right": "25/9"
+    },
+    {
+      "left": "1/495000",
+      "name": "lower_far_imaginary",
+      "relation": "<",
+      "right": "1/10000"
+    },
+    {
+      "left": "101/320",
+      "name": "lower_origin_base",
+      "relation": "<",
+      "right": "8/25"
+    },
+    {
+      "left": "50601/160000",
+      "name": "lower_vertical_base",
+      "relation": "<",
+      "right": "33/100"
+    },
+    {
+      "left": "275/98",
+      "name": "lower_endpoint_loss",
+      "relation": "<",
+      "right": "100/33"
+    },
+    {
+      "left": "1/550",
+      "name": "lower_vertical_integrated",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "1560900/1295029",
+      "name": "upper_a_derivative",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "3991790000/1327373299",
+      "name": "lower_a_derivative",
+      "relation": "<",
+      "right": "4"
+    },
+    {
+      "left": "585/436",
+      "name": "upper_prefactor_s_derivative",
+      "relation": "<",
+      "right": "3/2"
+    },
+    {
+      "left": "238/9",
+      "name": "lower_prefactor_s_derivative",
+      "relation": "<",
+      "right": "33"
+    },
+    {
+      "left": "1/4",
+      "name": "main_derivative_gap",
+      "relation": "<",
+      "right": "97/300"
+    },
+    {
+      "left": "371712/982081",
+      "name": "upper_central_factor",
+      "relation": "<",
+      "right": "2/5"
+    },
+    {
+      "left": "1/5",
+      "name": "upper_local_decay",
+      "relation": "<=",
+      "right": "29/110"
+    },
+    {
+      "left": "1/3",
+      "name": "lower_local_decay",
+      "relation": "<=",
+      "right": "7/20"
+    },
+    {
+      "left": "5/44",
+      "name": "left_height_exponent",
+      "relation": "<=",
+      "right": "5/44"
+    },
+    {
+      "left": "925/52",
+      "name": "upper_local_error",
+      "relation": "<",
+      "right": "20"
+    },
+    {
+      "left": "39000/899",
+      "name": "lower_local_error",
+      "relation": "<",
+      "right": "46"
+    },
+    {
+      "left": "466323111936",
+      "name": "upper_tail_threshold",
+      "relation": "<=",
+      "right": "17449402268886407318558803753801000000000000000000000000000000000000"
+    },
+    {
+      "left": "16896000000000000",
+      "name": "lower_tail_threshold",
+      "relation": "<=",
+      "right": "17449402268886407318558803753801000000000000000000000000000000000000"
+    },
+    {
+      "left": "1/13310000",
+      "name": "relative_error",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "13/13310000",
+      "name": "error_Cauchy",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "132",
+      "name": "zero_free_threshold",
+      "relation": "<=",
+      "right": "25937424601000000000000"
+    },
+    {
+      "left": "16",
+      "name": "zero_separation_threshold",
+      "relation": "<",
+      "right": "25937424601000000000000"
+    }
+  ],
+  "ledger_sha256": "fbf5af3b1d2d77e8c4296a7ac49e19b8a4c09f0bf48d949f195aefc4fc8ecbb8",
+  "minimum_gap": 10,
+  "negative_controls": [
+    "loosened_central_y",
+    "unsupported_d9_K_bound",
+    "oversized_far_K_constant"
+  ],
+  "proof_sha256": "73e6e300438a289e4b20a063756ee7fe429f8f25b72f03fb4a18a2baea7fa0e8",
+  "rational_inequality_count": 79,
+  "scope": "Exact changed-bound/monotonicity ledger for written all-contour d>=10 proof; finite all-terminal box remains unevaluated.",
+  "status": "PASS",
+  "terminal_threshold": "10^12*(d+1)^10",
+  "verified_source_pins": [
+    {
+      "path": "FACTORIAL_GAP_TEN_SADDLE_EXTENSION.md",
+      "sha256": "73e6e300438a289e4b20a063756ee7fe429f8f25b72f03fb4a18a2baea7fa0e8"
+    },
+    {
+      "path": "verify_factorial_gap_ten_saddle_extension.py",
+      "sha256": "538e14b7b4fea77cb2152250e499f5379d1148d1ae15a1394bb4421f0de113c5"
+    },
+    {
+      "path": "factorial_gap_ten_saddle_constants.json",
+      "sha256": "deab4c7f68aec8a9bfee086be9190c0e2731d89e86bcbae64fe21218fae68b45"
+    },
+    {
+      "path": "research/factorial/image-rigidity/FACTORIAL_UNIFORM_LARGE_GAP_SADDLE_SIMPLICITY.md",
+      "sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_factorial_uniform_large_gap_saddle.py",
+      "sha256": "f830d22228783c73bfc2349d1844df9b8cc579b308d0e78c84955e727a6bf8c0"
+    },
+    {
+      "path": "research/factorial/image-rigidity/FACTORIAL_HIGH_GAP_ROUCHE_REGION.md",
+      "sha256": "108393fc4ee7cdd100fcb40cf76e01ef7038d6034a4dcfc91071e70293fd256b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    }
+  ]
+}

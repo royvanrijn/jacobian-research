@@ -1,0 +1,150 @@
+{
+  "all_iterated_inverse_degrees": 207,
+  "base_dimension": 58,
+  "base_inverse_degree": 207,
+  "first_block_degree_upper_bound": 121,
+  "inverse_reset": [
+    {
+      "coefficient": "1",
+      "inputs": [
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "inputs": [
+        0,
+        5
+      ]
+    },
+    {
+      "coefficient": "1",
+      "inputs": [
+        2,
+        3
+      ]
+    }
+  ],
+  "lambda_negative_controls": [
+    {
+      "fourth_row_nonzero_columns": 45,
+      "lambda": "0"
+    },
+    {
+      "fourth_row_nonzero_columns": 45,
+      "lambda": "2"
+    }
+  ],
+  "later_block_degree_upper_bound": 35,
+  "literal_inverse_reset_checks": 15,
+  "literal_profiles": [
+    {
+      "cubic_terms": 1259,
+      "dimension": 61,
+      "iterations": 1,
+      "jacobian_cube_entries": 544,
+      "jacobian_fourth_entries": 0,
+      "largest_added_weight": 121,
+      "returned_quadratic_weight": 122
+    },
+    {
+      "cubic_terms": 1267,
+      "dimension": 64,
+      "iterations": 2,
+      "jacobian_cube_entries": 635,
+      "jacobian_fourth_entries": 0,
+      "largest_added_weight": 153,
+      "returned_quadratic_weight": 154
+    },
+    {
+      "cubic_terms": 1275,
+      "dimension": 67,
+      "iterations": 3,
+      "jacobian_cube_entries": 726,
+      "jacobian_fourth_entries": 0,
+      "largest_added_weight": 185,
+      "returned_quadratic_weight": 186
+    },
+    {
+      "cubic_terms": 1283,
+      "dimension": 70,
+      "iterations": 4,
+      "jacobian_cube_entries": 817,
+      "jacobian_fourth_entries": 0,
+      "largest_added_weight": 217,
+      "returned_quadratic_weight": 218
+    },
+    {
+      "cubic_terms": 1291,
+      "dimension": 73,
+      "iterations": 5,
+      "jacobian_cube_entries": 908,
+      "jacobian_fourth_entries": 0,
+      "largest_added_weight": 249,
+      "returned_quadratic_weight": 250
+    }
+  ],
+  "malformed_inputs_rejected": 4,
+  "schema_version": 1,
+  "scope": "Universal reset identities plus five literal iterates; no inverse-degree amplification",
+  "source_ledger_sha256": "e619f4d528e0c96c59510cb66cbe74c37f4ab157530b54b420189bdcc214e4b1",
+  "status": "PASS",
+  "symbolic_identities": 11,
+  "universal_fourth_row": {
+    "b": [
+      {
+        "coefficient": "1",
+        "inputs": [
+          0,
+          0,
+          1,
+          7,
+          9
+        ]
+      },
+      {
+        "coefficient": "1",
+        "inputs": [
+          0,
+          0,
+          1,
+          8,
+          10
+        ]
+      }
+    ],
+    "c": [
+      {
+        "coefficient": "1",
+        "inputs": [
+          2,
+          11
+        ]
+      }
+    ],
+    "r": [
+      {
+        "coefficient": "1",
+        "inputs": [
+          0,
+          0,
+          3,
+          8,
+          10
+        ]
+      },
+      {
+        "coefficient": "1",
+        "inputs": [
+          0,
+          0,
+          3,
+          11
+        ]
+      }
+    ]
+  }
+}

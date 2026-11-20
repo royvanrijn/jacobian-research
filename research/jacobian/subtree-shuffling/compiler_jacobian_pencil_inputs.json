@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "seed_input": "research/jacobian/subtree-shuffling/cubic_index_seventeen_shuffle_failure_inputs.json",
+  "arithmetic_module": "research/jacobian/subtree-shuffling/verify_cubic_index_seventeen_shuffle_failure.py",
+  "mixed_dimension": 17,
+  "base_dimension": 12,
+  "cubic_rank": 5,
+  "tau_index": 17,
+  "resolvent_degree_profile": [
+    15,
+    14,
+    14,
+    13
+  ],
+  "inverse_jacobian_degree": 15,
+  "affine_centers": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  ],
+  "top_times_Q_witness": {
+    "row": 3,
+    "column": 0,
+    "inputs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "coefficient": "-288"
+  },
+  "top_chain_columns": [
+    7,
+    16
+  ]
+}

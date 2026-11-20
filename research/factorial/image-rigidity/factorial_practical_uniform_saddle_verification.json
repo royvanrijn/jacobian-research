@@ -1,0 +1,310 @@
+{
+  "all_terminal_gap_cutoff": 44,
+  "checker_sha256": "054bca80c7a5b140d52adeef66f4bf8d0293f9d8b9da7e042373c90ad9226d2f",
+  "finite_box_pair_count": 171812,
+  "finite_box_terminal_ceiling_exclusive": 5632,
+  "inequalities": [
+    {
+      "left": "550159533/536870912",
+      "name": "third_derivative_raw_upper",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "5",
+      "name": "local_remainder_budget",
+      "relation": "<",
+      "right": "6"
+    },
+    {
+      "left": "1/3",
+      "name": "local_decay",
+      "relation": "<",
+      "right": "39/110"
+    },
+    {
+      "left": "0",
+      "name": "bracket_monotone",
+      "relation": "<",
+      "right": "52"
+    },
+    {
+      "left": "375/52",
+      "name": "upper_bracket",
+      "relation": "<",
+      "right": "29/4"
+    },
+    {
+      "left": "46",
+      "name": "lower_bracket",
+      "relation": "<",
+      "right": "47"
+    },
+    {
+      "left": "4/33",
+      "name": "central_upper_gaussian_amplitude",
+      "relation": "<",
+      "right": "2/11"
+    },
+    {
+      "left": "10875/3916",
+      "name": "lower_far_loss",
+      "relation": "<",
+      "right": "25/9"
+    },
+    {
+      "left": "1/495000",
+      "name": "lower_imaginary_allowance",
+      "relation": "<",
+      "right": "1/1000"
+    },
+    {
+      "left": "11/4",
+      "name": "lower_far_log_amplitude",
+      "relation": "<",
+      "right": "11"
+    },
+    {
+      "left": "14",
+      "name": "lower_total_remaining_amplitude",
+      "relation": "<",
+      "right": "44"
+    },
+    {
+      "left": "100",
+      "name": "sqrt128_lower",
+      "relation": "<",
+      "right": "128"
+    },
+    {
+      "left": "5000",
+      "name": "sqrt5000_upper",
+      "relation": "<",
+      "right": "5041"
+    },
+    {
+      "left": "3600",
+      "name": "sqrt5000_above60",
+      "relation": "<",
+      "right": "5000"
+    },
+    {
+      "left": "227738281/16777216",
+      "name": "upper_main_relative_squared",
+      "relation": "<",
+      "right": "8712/625"
+    },
+    {
+      "left": "3/31250000",
+      "name": "upper_left_relative",
+      "relation": "<",
+      "right": "1/1000"
+    },
+    {
+      "left": "2/15125",
+      "name": "upper_far_relative",
+      "relation": "<",
+      "right": "1/1000"
+    },
+    {
+      "left": "83/250",
+      "name": "upper_total_relative",
+      "relation": "<",
+      "right": "1/3"
+    },
+    {
+      "left": "529/5000",
+      "name": "lower_local_relative_squared",
+      "relation": "<",
+      "right": "1089/10000"
+    },
+    {
+      "left": "6561/16777216",
+      "name": "lower_central_relative",
+      "relation": "<",
+      "right": "1/2000"
+    },
+    {
+      "left": "3/10000",
+      "name": "lower_far_decreasing",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "31856723203825958626679799375/11417981541647679048466287755595961091061972992",
+      "name": "lower_far_relative",
+      "relation": "<",
+      "right": "1/1000"
+    },
+    {
+      "left": "663/2000",
+      "name": "lower_total_relative",
+      "relation": "<",
+      "right": "1/3"
+    },
+    {
+      "left": "1",
+      "name": "leading_magnitude_lower",
+      "relation": "<",
+      "right": "4/3"
+    },
+    {
+      "left": "25/49",
+      "name": "zero_free_exponential",
+      "relation": "<",
+      "right": "2/3"
+    },
+    {
+      "left": "8/9",
+      "name": "zero_free_base",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "56",
+      "name": "separation_threshold",
+      "relation": "<",
+      "right": "5000"
+    },
+    {
+      "left": "1/4",
+      "name": "main_reciprocal_margin",
+      "relation": "<",
+      "right": "97/300"
+    },
+    {
+      "left": "8771174964103629009764724996113894893434267374606304085727310312278500193101975336590098212583300662562970742432302073540414353215634540595029128817293254990353631469175968989622771504188782763874240277993505980682987894459983777728637019561317244552577432992142999054285272483240626103307396713378944060795515362651119569883845261/8597494063155804216800934502289107586753826210672423254757635939406537560804100887027143940049341797354580025294544547796249389648437500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "small_exp_series_bound",
+      "relation": "<",
+      "right": "50/49"
+    },
+    {
+      "left": "46080",
+      "name": "sparse_overlap",
+      "relation": "<",
+      "right": "24540856389361175444626550249492420898827510296266495966906215562657877415723400059346216036157912045562285662823183360011756801026671512725958960140988688327517107550975636504208891729259055774811794961793891407816514383326393527797373989462276971438522639938148069832534634071890697455163/523372966396497559394404707203064030017890296003192701450109315906710562206528772464635528524123166606304304341747191502516724316814447665561929149885959200367503939424671102811645681153861492420566190683440818028237564440253692257693778704086794151262296281856833957135677337646484375"
+    },
+    {
+      "left": "0",
+      "name": "overlap_derivative",
+      "relation": "<",
+      "right": "461/2025"
+    },
+    {
+      "left": "181",
+      "name": "overlap_derivative_increasing",
+      "relation": "<",
+      "right": "2025"
+    },
+    {
+      "left": "5000",
+      "name": "overlap_linear_regime",
+      "relation": "<",
+      "right": "5760"
+    },
+    {
+      "left": "5000",
+      "name": "canonical_large_N_not_needed",
+      "relation": "<",
+      "right": "25937424601000000000000"
+    },
+    {
+      "left": "21/1000",
+      "name": "lower_far_exp_geometric",
+      "relation": "<=",
+      "right": "21/1000"
+    },
+    {
+      "left": "5",
+      "name": "upper_central_exponent",
+      "relation": "<=",
+      "right": "16/3"
+    },
+    {
+      "left": "8",
+      "name": "lower_central_exponent",
+      "relation": "<=",
+      "right": "25/3"
+    },
+    {
+      "left": "4",
+      "name": "coarse_upper_magnitude",
+      "relation": "<=",
+      "right": "4"
+    },
+    {
+      "left": "6",
+      "name": "Cauchy_logerror",
+      "relation": "<=",
+      "right": "6"
+    },
+    {
+      "left": "7",
+      "name": "logderivative_allowance",
+      "relation": "<=",
+      "right": "7"
+    },
+    {
+      "left": "1",
+      "name": "zero_free_monotone_ratio",
+      "relation": "<=",
+      "right": "1"
+    }
+  ],
+  "inputs_sha256": "4c11fe9e7d6dfc2df6c4a4be8222dbdee794955092f3b3f0e00466e03cbcf02b",
+  "ledger_sha256": "593216409c84912979c4618b61bb84cd200c053075c0c6ccd927d7728b6329f4",
+  "minimum_gap": 10,
+  "negative_controls": [
+    "old_length_only_upper_central_bound",
+    "coarse_Euler_far_loss_budget",
+    "oversized_relative_error"
+  ],
+  "proof_sha256": "6e309c34718f5a794acfdd1d7325bb680f7287277073a14078f9d174c4428a32",
+  "rational_comparison_count": 41,
+  "scope": "Exact proof-ledger support for the full-contour practical tail; the actual finite global discriminant/resultant box is not checked here.",
+  "status": "PASS",
+  "symbolic_identity_count": 5,
+  "terminal_onset": "max(5000,128*(d+1))",
+  "verified_source_pins": [
+    {
+      "path": "ORDINARY_LOWER_ONE_STRONG_FACTORIAL.md",
+      "sha256": "6e309c34718f5a794acfdd1d7325bb680f7287277073a14078f9d174c4428a32"
+    },
+    {
+      "path": "verify_factorial_practical_uniform_saddle_tail.py",
+      "sha256": "054bca80c7a5b140d52adeef66f4bf8d0293f9d8b9da7e042373c90ad9226d2f"
+    },
+    {
+      "path": "factorial_practical_uniform_saddle_constants.json",
+      "sha256": "4c11fe9e7d6dfc2df6c4a4be8222dbdee794955092f3b3f0e00466e03cbcf02b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/FACTORIAL_GAP_TEN_SADDLE_EXTENSION.md",
+      "sha256": "73e6e300438a289e4b20a063756ee7fe429f8f25b72f03fb4a18a2baea7fa0e8"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_factorial_gap_ten_saddle_extension.py",
+      "sha256": "538e14b7b4fea77cb2152250e499f5379d1148d1ae15a1394bb4421f0de113c5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/FACTORIAL_UNIFORM_LARGE_GAP_SADDLE_SIMPLICITY.md",
+      "sha256": "f0e60450e6db2840754105cdba7a0a78e2691028150d81ffc3184306f641a762"
+    },
+    {
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md",
+      "sha256": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+    },
+    {
+      "path": "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+      "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae"
+    }
+  ]
+}

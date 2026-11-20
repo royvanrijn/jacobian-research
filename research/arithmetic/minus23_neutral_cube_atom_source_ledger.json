@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-20",
+  "status": "internal_written_proof_and_exact_replay",
+  "claim": "Every c*p^3 with c in {5,10,15} and nonprincipal split p is a sum of two positive primitive discriminant -23 norm values prime to23.",
+  "proof": "MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md",
+  "checker": "verify_minus23_neutral_cube_atom_closure.py",
+  "inputs": "minus23_neutral_cube_atom_witnesses.json",
+  "receipt": "minus23_neutral_cube_atom_closure_verification.json",
+  "infinite_argument": "Actual small-prime selected shell, all-prime separate-block gcd sieve, exact5/23 exclusions, classical spectral transfer, elementary divisor and lattice bounds, explicit prime-tail bound.",
+  "finite_scope": "Complete633-prime domain p<2^14 and1899 literal coordinate witnesses. PARI finds coordinates only; the stdlib verifier independently regenerates all primes and the complete principal-Q flags, and checks the literal norms/gcds.",
+  "retained_imports": [
+    {
+      "path": "research/arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md",
+      "locator": "J3, E2 exact spectral expression, E4 including content, E8 exact rational mass margin",
+      "role": "mathematical_input",
+      "sha256": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8"
+    },
+    {
+      "path": "research/arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md",
+      "locator": "Scoped all-valuation positive split-target endpoint operator and full complementary norm bound",
+      "role": "inherited_mathematical_input",
+      "sha256": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3"
+    },
+    {
+      "path": "results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+      "locator": "lem:hecke-transfer, all-integral-ideal Hecke operators after removal of all norm characters",
+      "role": "inherited_mathematical_input",
+      "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367"
+    },
+    {
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "locator": "CN3Individual for neutral multiplier consequences and small principal/nonprincipal classification",
+      "role": "mathematical_input_to_stated_consequences",
+      "sha256": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Approximate formulas for some functions of prime numbers",
+      "authors": "J. Barkley Rosser and Lowell Schoenfeld",
+      "year": 1962,
+      "url": "https://denisevellachemla.eu/Rosser-Schoenfeld-1962.pdf",
+      "local_path": "sources/rosser_schoenfeld_1962.pdf",
+      "sha256": "8e37b06f82e09421bceb2502578c47b61469141f0287e6acedb70e01765ab556",
+      "locator": "Section3 Corollary1 formula(3.6), printedp69/PDFp6",
+      "role": "mathematical_input",
+      "actual_statement_read": "pi(x)<1.25506*x/logx for every x>1; weakened here to4/3. The prime-square tail is derived explicitly by partial summation."
+    },
+    {
+      "title": "Quaternary quadratic forms with prime discriminant",
+      "authors": "Jeremy Rouse and Katherine Thompson",
+      "edition": "arXiv2206.00412v1",
+      "url": "https://arxiv.org/pdf/2206.00412v1",
+      "local_path": "sources/rouse_thompson_2206_00412v1.pdf",
+      "sha256": "92d35aec177b635d3db19ed0d56498ada1ffe20ac7599391bb13f36352a0ae92",
+      "locator": "Introduction and Theorem1, PDFpp1-2",
+      "role": "context",
+      "actual_hypothesis_gap": "Prime discriminant theorem does not apply to Gram discriminant23^2 and does not enforce separate binary-block primitivity. No such theorem is imported."
+    },
+    {
+      "title": "Primes represented by shifted quadratic forms: on primitivity and congruence classes",
+      "authors": "Elena Fuchs, Catherine Hsu, James Rickards, Damaris Schindler and Katherine E. Stange",
+      "edition": "27April2025 author PDF",
+      "url": "https://www.math.ucdavis.edu/~efuchs/PrimitiveShiftedPrimes.pdf",
+      "local_path": "sources/fuchs_hsu_rickards_schindler_stange_2025.pdf",
+      "sha256": "b1c306fade2532d60535367250e496784e0ee04b994eaa16efc40036df91c9dc",
+      "locator": "Theorem1.1, PDFp1; methods/hypothesis discussion PDFp2",
+      "role": "context",
+      "actual_hypothesis_gap": "Counts varying primes represented by a fixed shifted binary form; does not assert every prime-parameter target has two separate primitive norm summands."
+    }
+  ],
+  "scope_limits": [
+    "All principal-prime atoms below target2^40 remain uncertified.",
+    "Full inert-core5 exception completeness and global40-exception classification remain open.",
+    "Other inert cores and the global retained middle interval remain separate.",
+    "A total quaternary theta count does not remove separate-block bad primes not dividing the target.",
+    "No external human review, formal verification, implemented arbitrary-range prime-family algorithm or historical priority is asserted."
+  ],
+  "scratch_file_pins": {
+    "MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md": "5f147ad93519d06e4e3ec408d1d906de35ef0ea5d0f508beff7f9eaef95b0984",
+    "verify_minus23_neutral_cube_atom_closure.py": "ed7d36c4c44e81fb70099290d8a4867c4e5d141902e050211ea4c9296610e3d6",
+    "minus23_neutral_cube_atom_witnesses.json": "1c815095c850b6b7659a45824801bda371932633464039c1199bbbe1785bdf27"
+  },
+  "retained_source_pins": {
+    "research/arithmetic/PRIMITIVE_NORM_MINUS23_EFFECTIVE.md": "12aca6b4c236921622a6717eb645282a9ead547c8df1de5cbf4a5af4499492d8",
+    "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5",
+    "research/arithmetic/PRIMITIVE_NORM_MINUS23_SPLIT_TARGETS.md": "ddf87190618e6e76e79e8d5bb90c4cc1d77d284fa0e8edc5324b3f5b890245e3",
+    "results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367"
+  },
+  "packet_sha256": {
+    "MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md": "b53a42b1d299d97deb7dcabd39c32ba7ee910d111b2387b2d99b4f77ba3bceaf",
+    "verify_minus23_neutral_cube_atom_closure.py": "aa3b2cd07b6b591973c252203536753941ecb2a4808781126f031ba04f6ae7f1",
+    "minus23_neutral_cube_atom_witnesses.json": "1c815095c850b6b7659a45824801bda371932633464039c1199bbbe1785bdf27"
+  }
+}

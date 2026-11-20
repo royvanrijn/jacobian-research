@@ -1,0 +1,84 @@
+{
+  "negative_controls": [
+    "malformed_normalized_middle_budget",
+    "outside_sufficient_region",
+    "positive_measure_multiple_root"
+  ],
+  "normalized_middle_coefficient_controls": 51,
+  "profiles": [
+    {
+      "N": 2,
+      "alpha": "100/21",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "2",
+      "gap": 20,
+      "normalized_middle_coefficient_sum_upper": "75879/4294967296"
+    },
+    {
+      "N": 3,
+      "alpha": "144/25",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "3",
+      "gap": 24,
+      "normalized_middle_coefficient_sum_upper": "41/268435456"
+    },
+    {
+      "N": 5,
+      "alpha": "256/33",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "5",
+      "gap": 32,
+      "normalized_middle_coefficient_sum_upper": "1/1073741824"
+    },
+    {
+      "N": 8,
+      "alpha": "400/41",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "8",
+      "gap": 40,
+      "normalized_middle_coefficient_sum_upper": "7/4294967296"
+    },
+    {
+      "N": 12,
+      "alpha": "576/49",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "12",
+      "gap": 48,
+      "normalized_middle_coefficient_sum_upper": "11/4294967296"
+    },
+    {
+      "N": 20,
+      "alpha": "1024/65",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "20",
+      "gap": 64,
+      "normalized_middle_coefficient_sum_upper": "19/4294967296"
+    },
+    {
+      "N": 4,
+      "alpha": "224/33",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "7/2",
+      "gap": 28,
+      "normalized_middle_coefficient_sum_upper": "5/2147483648"
+    },
+    {
+      "N": 5,
+      "alpha": "200/21",
+      "full_degree_modular_squarefree_prime": 1000003,
+      "gamma": "10",
+      "gap": 40,
+      "normalized_middle_coefficient_sum_upper": "1/1073741824"
+    }
+  ],
+  "scope": "A few exact normalized coefficient and modular controls support the full written infinite-parameter proof; no unproved saddle extension or all-gap closure inferred.",
+  "source_hashes": {
+    "checker": "46a950f11e8848adbb6e4269c4480f351e5392dc588a6e34514d11e921f1374e",
+    "inputs": "6e0631dada8c9e46ea9a04cc764dec72f3985b88cd78af655e724ec46a5dc89f",
+    "primary_inspection_record": "0cffa1fbc9abba4630d244e5ec5232f4c4c75ad24a3e9dac14739357e67c2a34",
+    "proof": "108393fc4ee7cdd100fcb40cf76e01ef7038d6034a4dcfc91071e70293fd256b",
+    "research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae",
+    "research/factorial/image-rigidity/GAP_SIX_RESULTANT_STRICT_POSITIVITY.md": "df2c3ad8ff9decbd751b18dd08d3a1c4f7fbd3b5787503a5ce29d9d8ee4666bc"
+  },
+  "status": "PASS"
+}

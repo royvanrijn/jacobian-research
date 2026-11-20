@@ -1,0 +1,54 @@
+{
+  "checker_sha256": "548fdce661a666bd2500ab04d0cb1818591cc819438a4fe3191ab5b158b4d661",
+  "controls": {
+    "cube_scaled_surplus": "84031919/40923036",
+    "displayed_pair_failures": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ],
+    "main": "20672/40425",
+    "phase_cases": 27,
+    "principal_scaled_surplus": "13571626381/12562935000"
+  },
+  "cube_witness_sha256": "fc4caf2612e3c3f36d1942933cfce9b7be0a5146b1a3538bfb064db018766131",
+  "cube_witnesses_verified": 57,
+  "input_sha256": "6530b23c1f0d7f67be4707466dfe1030d0d6f9b536b89591c9c8b37c2dd51c5b",
+  "ledger_sha256": "62e708cfd2374095918223a6e9a32796d436bb6a1df0f55a311bef36a8475007",
+  "native_sha256": "dfcc09b690a1b0a26e60158b0603de41ddb7580e01b9fab44a4f9caf9e5504c3",
+  "principal_counts": {
+    "all_primes_through_cap": 5884179,
+    "anchor_count": 834,
+    "anchor_limit": 5000,
+    "coefficient": 21,
+    "covered": 980245,
+    "failures": [],
+    "inclusive_norm_bound": 2147483647,
+    "independent_square_regression_bound": 100000,
+    "maximum_anchor_trials": 70,
+    "positive_y_ellipse_candidates": 1406700140,
+    "prime_cap": 102261126,
+    "primitive_norm_flags": 261095104,
+    "primitive_positive_y_points": 855199379,
+    "principal_split_primes": 980245
+  },
+  "proof_sha256": "4900f8febcd83edfafc35ae65b0072b8ed4f1b01c817756cae9c4e6a9bdc9f9e",
+  "scope": "Complete core7 phase/atom proof controls and ACTUAL exhaustive principal/cube finite bridges. No other inert-core or global40 classification. Internal replay only.",
+  "status": "PASS",
+  "versions": {
+    "g++": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "python": "3.12.3"
+  }
+}

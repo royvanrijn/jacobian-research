@@ -1,0 +1,139 @@
+<HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Created on January, 16  2025 by texi2html 1.65 -->
+<!--
+Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Olaf Bachmann <obachman@mathematik.uni-kl.de>
+Send bugs and suggestions to <texi2html@mathematik.uni-kl.de>
+
+-->
+<HEAD>
+<TITLE>Singular Manual: minAssGTZ</TITLE>
+
+<META NAME="description" CONTENT="Singular Manual: minAssGTZ">
+<META NAME="keywords" CONTENT="Singular Manual: minAssGTZ">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META NAME="Generator" CONTENT="texi2html 1.65">
+
+</HEAD>
+
+<BODY LANG="EN"  BACKGROUND="Mybg.gif">
+
+<A NAME="SEC1615"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR VALIGN="TOP">
+<TD ALIGN="LEFT">
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT">  <a href="index.htm"><img
+    src="singular-icon-transparent.gif" width="50"
+      border="0" ALT="Top"></a>
+</TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_1533.htm#SEC1614"><IMG SRC="a_left.gif" BORDER="0" ALT="Back: primdec" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_1535.htm#SEC1616"><IMG SRC="a_right.gif" BORDER="0" ALT="Forward: minAssGTZE" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><IMG SRC="a_leftdouble_na.gif" BORDER="0" ALT="FastBack: " ALIGN="MIDDLE"></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><IMG SRC="a_rightdouble_na.gif" BORDER="0" ALT="FastForward: " ALIGN="MIDDLE"></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_1527.htm#SEC1608"><IMG SRC="a_up.gif" BORDER="0" ALT="Up: primdec_lib" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="index.htm#SEC_Top"><IMG SRC="a_top.gif" BORDER="0" ALT="Top: Singular Manual" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_toc.htm#SEC_Contents"><IMG SRC="a_tableofcon.gif" BORDER="0" ALT="Contents: Table of Contents" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_3124.htm#SEC3228"><IMG SRC="a_index.gif" BORDER="0" ALT="Index: Index" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_abt.htm#SEC_About"><IMG SRC="a_help.gif" BORDER="0" ALT="About: About this document" ALIGN="MIDDLE"></A></TD>
+</TR>
+</TABLE>
+</TD>
+<TD ALIGN="LEFT">
+<H4> D.4.27.7 minAssGTZ </H4>
+<!--docid::SEC1615::-->
+Procedure from library <CODE>primdec.lib</CODE> (see  <A HREF="sing_1527.htm#SEC1608">primdec_lib</A>).
+<P>
+
+<DL COMPACT>
+<DT><STRONG>Usage:</STRONG>
+<DD>minAssGTZ(I[, l]); I ideal, l list (optional)
+<BR> Optional parameters in list l (can be entered in any order):
+<BR> 0, "facstd" -&gt; uses facstd to first decompose the ideal (default)
+<BR> 1, "noFacstd" -&gt; does not use facstd
+<BR> "GTZ" -&gt; the original algorithm by Gianni, Trager and Zacharias is used
+<BR> "SL" -&gt; GTZ algorithm with modificiations by Laplagne is used (default)
+<P>
+
+<DT><STRONG>Return:</STRONG>
+<DD>a list, the minimal associated prime ideals of proper ideal I, otherwise ideal(1)
+<P>
+
+<DT><STRONG>Note:</STRONG>
+<DD>- Designed for characteristic 0, works also in char k &gt; 0 based
+on an algorithm of Yokoyama
+<BR>- For local orderings, the result is considered in the localization
+of the polynomial ring, not in the power series ring
+<BR>- For local and mixed orderings, the decomposition in the
+corresponding global ring is returned if the string 'global'
+is specified as second argument
+<P>
+
+</DL>
+<STRONG>Example:</STRONG>
+<TABLE><tr><td>&nbsp;</td><td class=smallexample><FONT SIZE=-1><pre>LIB "primdec.lib";
+ring  r = 0,(x,y,z),dp;
+poly  p = z2+1;
+poly  q = z3+2;
+ideal i = p*q^2,y-z2;
+list pr = minAssGTZ(i);
+pr;
+==> [1]:
+==>    _[1]=z3+2
+==>    _[2]=-z2+y
+==> [2]:
+==>    _[1]=z2+1
+==>    _[2]=-z2+y
+</FONT></pre></td></tr></table><P>
+
+<A NAME="minAssGTZE"></A>
+</TD>
+</TR>
+</TABLE>
+<HR SIZE=1>
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">  <a href="index.htm"><img
+    src="singular-icon-transparent.gif" width="50"
+      border="0" ALT="Top"></a>
+</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_1533.htm#SEC1614"><IMG SRC="a_left.gif" BORDER="0" ALT="Back: primdec" ALIGN="MIDDLE"></A></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_1535.htm#SEC1616"><IMG SRC="a_right.gif" BORDER="0" ALT="Forward: minAssGTZE" ALIGN="MIDDLE"></A></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><IMG SRC="a_leftdouble_na.gif" BORDER="0" ALT="FastBack: " ALIGN="MIDDLE"></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><IMG SRC="a_rightdouble_na.gif" BORDER="0" ALT="FastForward: " ALIGN="MIDDLE"></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_1527.htm#SEC1608"><IMG SRC="a_up.gif" BORDER="0" ALT="Up: primdec_lib" ALIGN="MIDDLE"></A></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="index.htm#SEC_Top"><IMG SRC="a_top.gif" BORDER="0" ALT="Top: Singular Manual" ALIGN="MIDDLE"></A></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_toc.htm#SEC_Contents"><IMG SRC="a_tableofcon.gif" BORDER="0" ALT="Contents: Table of Contents" ALIGN="MIDDLE"></A></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_3124.htm#SEC3228"><IMG SRC="a_index.gif" BORDER="0" ALT="Index: Index" ALIGN="MIDDLE"></A></TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_abt.htm#SEC_About"><IMG SRC="a_help.gif" BORDER="0" ALT="About: About this document" ALIGN="MIDDLE"></A></TD>
+</TR></TABLE>
+<FONT SIZE="-1">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; User manual for <A HREF="https://www.singular.uni-kl.de/"><I>Singular</I></A> version 4.4.1, 2025,
+generated by <I>texi2html</I>.
+</FONT>
+
+</BODY>
+</HTML>

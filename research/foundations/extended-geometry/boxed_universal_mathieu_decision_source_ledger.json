@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-20",
+  "files": [
+    {
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/GAUSSIAN_COMPUTABLE_UNIFORM_PURITY_PREFIX.md",
+      "scope": "Computable pure prefixes for Gaussian and unrestricted Image phases; effective generic fields and radical coefficient-prefix stabilization.",
+      "sha256": "e2adfb917c8153808a9ea9085b7bb22243fa16beecf01ad823ac8372da623adf"
+    },
+    {
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/SHIFTED_GAUSSIAN_IMAGE_EQUIVALENCE.md",
+      "scope": "Original all-marker safety equivalence, theoretical generic-field decision, finite original monomial witnesses and pure-linear cutoff transfer.",
+      "sha256": "c2f285d04ad2cbd771f5387c1965fab342f5a37e8785d8f88a7d4f3fe8a24634"
+    },
+    {
+      "location": "repository",
+      "path": "research/moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md",
+      "scope": "Exact whole Gaussian source, formal Hom uniqueness and field safety iff nonzero polynomial Hom.",
+      "sha256": "dfb6f3ac2050868a4ac6d6972ab250daf100923e30985a40ddfa8f8eeb4aed2a"
+    },
+    {
+      "location": "repository",
+      "path": "research/moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md",
+      "scope": "Exact whole-source field algorithms, original bad-marker selection and pure-linear marker bounds; generic-field use is theoretical.",
+      "sha256": "9c1c60587841e6b028edfa5e7488725dc60ba91c769f7fd320a4500eac177d14"
+    },
+    {
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "scope": "Theorem1.1 all-order original pure unsafe F4 antecedent; finite contractions do not supply the all-order premise.",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/sources/singular_sing_1534.html",
+      "scope": "Primary minimal-associated-prime algorithm for global characteristic-zero polynomial ideals, inspected in retained uniform-prefix work.",
+      "sha256": "48e747ffacca53148107971d39415f9217c8d9b95f690728b08faf30a35793c9"
+    },
+    {
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/sources/oaku_holonomic_integration_2013.pdf",
+      "scope": "Primary whole integration before cyclic extraction, physicalpp14-15, supporting the retained Gaussian theorem.",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a"
+    },
+    {
+      "location": "repository",
+      "path": "research/foundations/extended-geometry/sources/tsai_walther_hom_0007139v1.pdf",
+      "scope": "Primary polynomial Hom over computable fields, Introduction and Algorithm3.3, supporting the retained Gaussian theorem.",
+      "sha256": "e12f72392608d76c3ebd7862076c93fed2f9fa0c3ba32792c0b516d8d0df6ac5"
+    },
+    {
+      "location": "packet",
+      "path": "BOXED_UNIVERSAL_MATHIEU_DECISION.md",
+      "scope": "Written proof or finite exact evidence. No unrestricted coefficient-box execution, external review or formal verification claimed.",
+      "sha256": "f0dd6f02e1e94a79a0cd391e00319d792d7684ba1497a25f954347f171a4417f"
+    },
+    {
+      "location": "packet",
+      "path": "verify_boxed_universal_mathieu_decision.py",
+      "scope": "Written proof or finite exact evidence. No unrestricted coefficient-box execution, external review or formal verification claimed.",
+      "sha256": "e6c40ec5c50d1a4544b3595434455e5f13d5e2b7e26ab511d5dc2aaa18b0bab8"
+    },
+    {
+      "location": "packet",
+      "path": "boxed_universal_mathieu_decision_inputs.json",
+      "scope": "Written proof or finite exact evidence. No unrestricted coefficient-box execution, external review or formal verification claimed.",
+      "sha256": "349180b2ab68221422571ca947cd07e4fd86211593006b1cfc02f3eaa42d540c"
+    }
+  ],
+  "schema": 1,
+  "scope": "Exact premises for boxed complex universal Mathieu decision and uniform pure-linear valid-box cutoff. No constructibility of the safety locus or rational/Qbar point algorithm assumed."
+}
