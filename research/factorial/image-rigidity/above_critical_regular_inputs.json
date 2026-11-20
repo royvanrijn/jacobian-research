@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "integer_a_min": 1,
+  "integer_d_min": 2,
+  "strict_abovecritical_support": true,
+  "fixed_support": true,
+  "compact_avoids_both_turning_values": true,
+  "a_one_d_two_included": true,
+  "shrunk_wedge_for_d_two": true,
+  "equal_height_stokes_complete_packets": true,
+  "novertical_input_only_at_equal_moduli": true,
+  "global_fixed_branch_divider": false,
+  "turning_neighborhood_excluded_by_this_module": false,
+  "global_eventual_sfc_claimed_by_this_module": false,
+  "all_order_coprimality": false,
+  "effective_cutoff": false,
+  "uniform_support_cutoff": false
+}

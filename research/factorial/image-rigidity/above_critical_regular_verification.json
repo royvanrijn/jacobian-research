@@ -1,0 +1,25 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "3feb2efbdefb67f2460a1150ccbcac796602974fb2ebb29e0998494ff37b4956",
+  "checks": {
+    "actual_abovecritical_support_fixtures": 9,
+    "actual_own_order_coefficient_controls": 180,
+    "exit_and_infinity_budget_controls": 15,
+    "genuine_false_statement_controls": 3,
+    "old_global_upper_factor_controls": 150,
+    "source_and_scope_negative_controls": 26,
+    "strict_real_stationary_slope_controls": 36,
+    "universal_identity_families": 8
+  },
+  "inputs_sha256": "cab18fccfc42b8443a06e1ae00d4f4c3380390436053b87a1f756165ab9535ee",
+  "mandatory_source_records": 8,
+  "proof_sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+  "schema": 1,
+  "scope": "Written actual abovecritical regular compact-complement support; no turning-neighborhood, global SFC, effective or uniform-cutoff conclusion",
+  "source_ledger_sha256": "ffc11b9e3d31b9bd90f33fccd0adef099636e02c2b563fa77b91c6b8145fac8b",
+  "status": "PASS"
+}

@@ -86,10 +86,12 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Stationary cusp covers, monodromy and global radial geometry | Internal result | proved | [Source](image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md) |
 | Sharp positive-shape Gamma annuli and separation | Internal result | proved | [Source](image-rigidity/GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md) |
 | Eventual SFC for square-root separated ordinary supports | Internal result | proved | [Source](image-rigidity/SQUARE_ROOT_GAP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md) |
+| Physical equimodular saddles cannot align vertically | Internal result | proved | [Source](image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md) |
+| Eventual Strong Factorial for every fixed ordinary binomial | Internal result | proved | [Source](image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md) |
 
-**Computed obligations:** 54 unresolved; 12 resolved within their exact scope.
+**Computed obligations:** 54 unresolved; 13 resolved within their exact scope.
 
-**Assessment update needed:** GAP-FACTORIAL-GAP-TWO-UNIFORM-QUANTITATIVE-CUBIC-INVERSE, GAP-FACTORIAL-UNIFORM-GAP-POLYNOMIAL-TAIL-ANALYTIC-CONTROL now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
+**Assessment update needed:** GAP-FACTORIAL-GAP-TWO-UNIFORM-QUANTITATIVE-CUBIC-INVERSE, GAP-FACTORIAL-UNIFORM-GAP-POLYNOMIAL-TAIL-ANALYTIC-CONTROL, GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
 
 
 Scope limits:
@@ -154,7 +156,8 @@ Scope limits:
 - Moving Grace-disc centres now give polynomial all-root real/imaginary bounds for every finite order and real a>=100*d^2, with explicit a>=C*d^4 thin-strip corollaries. On the integer domain, two still-open actual coprimality and strip-noncollision assertions are equivalent. No stronger SFC claim is inferred from localization alone; separate uniform phase and quadratic-tail proofs now provide their explicitly stated larger-threshold results.
 - The uniform quadratic ordinary-SFC tail a>=10^24*d^2 now holds for every integer d>=2 and every terminal order over every characteristic-zero field. Its exact Bad_d cap is equivalent. The Bell/homotopy route imports no400 Grace strip; the separately retained quartic10^20*d^4 route does. All a>=100*d^2 noncollision, full binomial SFC and the stronger older remainder optimizations remain open.
 - At integer quartic cusps a=s^2,d=2s+1, actual consecutive roots are eventually excluded from every fixed normalized compact field window with one uncomputed cutoff N0(H) independent of s. The complete stationary-cover classification and distinguished global radial graph are separate structural results. Full cusp SFC, active original cycles and escaping actual roots remain open.
-- For every fixed ordinary support with sqrt(a+d)-sqrt(a)>=1, all sufficiently large consecutive moments are now excluded uniformly in coefficients and characteristic-zero fields. The cutoff is unevaluated and may depend on the support. All-order claims and remaining above-critical supports remain open. The independent sharper positive-shape annulus improves only sufficient finite-terminal separation.
+- For every fixed ordinary support with sqrt(a+d)-sqrt(a)>=1, all sufficiently large consecutive moments are excluded uniformly in coefficients and characteristic-zero fields. The cutoff is unevaluated and may depend on the support. The above-critical fixed-support eventual tail is now proved separately by ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md; all-order claims remain open. The independent sharper positive-shape annulus improves only sufficient finite-terminal separation.
+- Every fixed ordinary one-variable binomial support now has an eventual consecutive-moment exclusion theorem with one cutoff uniform over its coefficients and characteristic-zero fields. The cutoff is unevaluated and need not be uniform over supports. The remaining finite terminal orders and all-order SFC remain open in general.
 
 Tracked obligations (computed states):
 
@@ -189,6 +192,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine and exclude possible common roots outside every fixed bounded normalized h_N window, including growing indices and the complementary coefficient plane. No global capture follows from compact-window branches.](image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md) — GAP-FACTORIAL-QUARTIC-CUSP-ESCAPING-FIELD-EXHAUSTION
 - **mathematical / open:** [Determine original-cycle saddle coefficients on cut cells, bound complete packets near active ties and branch values, and prove actual-zero exhaustion. The distinguished radial graph alone does not prove activation or finite-order SFC.](image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md) — GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS
 - **mathematical / open:** [Prove every terminal N>=2 at each allowed integer support. The new eventual result leaves an uncomputed finite set of possibly bad terminal orders for every support.](image-rigidity/SQUARE_ROOT_GAP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md) — GOAL-FACTORIAL-SQRT-GAP-ALL-ORDER-SFC
-- **mathematical / open:** [Extend the complete fixed-support argument to supports 4a>(d-1)^2. The verified strict divider and the integer-cusp local theorem do not establish that remaining regime; no necessity of the square-root gap is inferred.](image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md) — GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL
+- **mathematical / proved (discharged):** Authored question: [Extend the complete fixed-support argument to supports 4a>(d-1)^2. The verified strict divider and the integer-cusp local theorem do not establish that remaining regime; no necessity of the square-root gap is inferred.](image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md) — GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL
+- **mathematical / open:** [Can the unevaluated support-dependent eventual cutoffs and remaining finite bad-terminal sets be made explicit?](image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF
+- **mathematical / open:** [Are all finite sets BadTerminal_(a,b) empty for every ordinary support0<=a<b, equivalently are all actual pairs coprime for every N>=2? Prove the all-order statement or exhibit an actual counterexample.](image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md) — GOAL-ORDINARY-BINOMIAL-SFC
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

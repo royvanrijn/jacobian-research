@@ -1,0 +1,788 @@
+{
+  "checker_sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348",
+  "counts": {
+    "a0_Appell_derivative_controls": 40,
+    "a0_analytic_tail_hypothesis_controls": 123,
+    "actual_factorial_and_integral_normalizations": 256,
+    "actual_rational_Bezout_identities": 36,
+    "cross_linked_source_ledgers": 12,
+    "fresh_direct_children": 4,
+    "source_scope_controls": 176,
+    "support_case_counts": {
+      "abovecritical": 227,
+      "adjacent": 32,
+      "constant": 20,
+      "square_gap": 381
+    }
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_children": [
+    {
+      "byte_identical": true,
+      "checker_role": "gap405_main_checker",
+      "receipt_sha256": "db5a38da23315af34fd1b918babdf278def04f33b974722162b506e379bbb5eb"
+    },
+    {
+      "byte_identical": true,
+      "checker_role": "turn_checker",
+      "receipt_sha256": "f3cc8da299b08524b326b238a318e9011d8b05dbe763202bd388fe61cfdfe2f4"
+    },
+    {
+      "byte_identical": true,
+      "checker_role": "regular_checker",
+      "receipt_sha256": "9f95ce0bbaf9d5509eff06ac13ff3de90b80553938a44fc42fe772dfe53bfdbe"
+    },
+    {
+      "byte_identical": true,
+      "checker_role": "novertical_checker",
+      "receipt_sha256": "36d12857ba5756f58f2c928e71bd9bd73644474e34dab27a54b58282940144c3"
+    }
+  ],
+  "input_sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a",
+  "mandatory_source_roles": 77,
+  "meaning": "The retained edge-family analytic/algebraic results, square-root-gap theorem, regular and turning-neighborhood proofs, compact root capture and rational Bezout prove the written fixed-support eventual theorem. Exact/source controls are supporting evidence, not formal verification or a finite-prefix inference.",
+  "negative_names": [
+    "omit:adjacent_all_order_proof",
+    "badpin:adjacent_all_order_proof",
+    "omit:constant_plus_power_analytic_proof",
+    "badpin:constant_plus_power_analytic_proof",
+    "omit:gap405_coalescing_bridge_proof",
+    "badpin:gap405_coalescing_bridge_proof",
+    "omit:gap405_complement_checker",
+    "badpin:gap405_complement_checker",
+    "omit:gap405_complement_inputs",
+    "badpin:gap405_complement_inputs",
+    "omit:gap405_complement_ledger",
+    "badpin:gap405_complement_ledger",
+    "omit:gap405_complement_proof",
+    "badpin:gap405_complement_proof",
+    "omit:gap405_complement_receipt",
+    "badpin:gap405_complement_receipt",
+    "omit:gap405_cusp_main_checker",
+    "badpin:gap405_cusp_main_checker",
+    "omit:gap405_cusp_main_inputs",
+    "badpin:gap405_cusp_main_inputs",
+    "omit:gap405_cusp_main_ledger",
+    "badpin:gap405_cusp_main_ledger",
+    "omit:gap405_cusp_main_proof",
+    "badpin:gap405_cusp_main_proof",
+    "omit:gap405_cusp_main_receipt",
+    "badpin:gap405_cusp_main_receipt",
+    "omit:gap405_fixed_bounded_checker",
+    "badpin:gap405_fixed_bounded_checker",
+    "omit:gap405_fixed_bounded_proof",
+    "badpin:gap405_fixed_bounded_proof",
+    "omit:gap405_fixed_bounded_receipt",
+    "badpin:gap405_fixed_bounded_receipt",
+    "omit:gap405_fixed_completion_checker",
+    "badpin:gap405_fixed_completion_checker",
+    "omit:gap405_fixed_completion_inputs",
+    "badpin:gap405_fixed_completion_inputs",
+    "omit:gap405_fixed_completion_ledger",
+    "badpin:gap405_fixed_completion_ledger",
+    "omit:gap405_fixed_completion_receipt",
+    "badpin:gap405_fixed_completion_receipt",
+    "omit:gap405_fixed_cusp_checker",
+    "badpin:gap405_fixed_cusp_checker",
+    "omit:gap405_fixed_cusp_proof",
+    "badpin:gap405_fixed_cusp_proof",
+    "omit:gap405_fixed_cusp_receipt",
+    "badpin:gap405_fixed_cusp_receipt",
+    "omit:gap405_fixed_model_checker",
+    "badpin:gap405_fixed_model_checker",
+    "omit:gap405_fixed_model_inputs",
+    "badpin:gap405_fixed_model_inputs",
+    "omit:gap405_fixed_model_ledger",
+    "badpin:gap405_fixed_model_ledger",
+    "omit:gap405_fixed_model_proof",
+    "badpin:gap405_fixed_model_proof",
+    "omit:gap405_fixed_model_receipt",
+    "badpin:gap405_fixed_model_receipt",
+    "omit:gap405_fixed_primary_hjn",
+    "badpin:gap405_fixed_primary_hjn",
+    "omit:gap405_fixed_primary_newman",
+    "badpin:gap405_fixed_primary_newman",
+    "omit:gap405_ledger",
+    "badpin:gap405_ledger",
+    "omit:gap405_local_checker",
+    "badpin:gap405_local_checker",
+    "omit:gap405_local_inputs",
+    "badpin:gap405_local_inputs",
+    "omit:gap405_local_ledger",
+    "badpin:gap405_local_ledger",
+    "omit:gap405_local_proof",
+    "badpin:gap405_local_proof",
+    "omit:gap405_local_receipt",
+    "badpin:gap405_local_receipt",
+    "omit:gap405_main_checker",
+    "badpin:gap405_main_checker",
+    "omit:gap405_main_inputs",
+    "badpin:gap405_main_inputs",
+    "omit:gap405_main_proof",
+    "badpin:gap405_main_proof",
+    "omit:gap405_morse_checker",
+    "badpin:gap405_morse_checker",
+    "omit:gap405_morse_inputs",
+    "badpin:gap405_morse_inputs",
+    "omit:gap405_morse_ledger",
+    "badpin:gap405_morse_ledger",
+    "omit:gap405_morse_proof",
+    "badpin:gap405_morse_proof",
+    "omit:gap405_morse_receipt",
+    "badpin:gap405_morse_receipt",
+    "omit:gap405_primary_vidunas",
+    "badpin:gap405_primary_vidunas",
+    "omit:gap405_receipt",
+    "badpin:gap405_receipt",
+    "omit:gap405_retained_gamma_upper",
+    "badpin:gap405_retained_gamma_upper",
+    "omit:gap405_stationary_checker",
+    "badpin:gap405_stationary_checker",
+    "omit:gap405_stationary_inputs",
+    "badpin:gap405_stationary_inputs",
+    "omit:gap405_stationary_ledger",
+    "badpin:gap405_stationary_ledger",
+    "omit:gap405_stationary_primary_audit",
+    "badpin:gap405_stationary_primary_audit",
+    "omit:gap405_stationary_proof",
+    "badpin:gap405_stationary_proof",
+    "omit:gap405_stationary_receipt",
+    "badpin:gap405_stationary_receipt",
+    "omit:gap405_strict_checker",
+    "badpin:gap405_strict_checker",
+    "omit:gap405_strict_inputs",
+    "badpin:gap405_strict_inputs",
+    "omit:gap405_strict_ledger",
+    "badpin:gap405_strict_ledger",
+    "omit:gap405_strict_proof",
+    "badpin:gap405_strict_proof",
+    "omit:gap405_strict_receipt",
+    "badpin:gap405_strict_receipt",
+    "omit:main_checker",
+    "badpin:main_checker",
+    "omit:main_inputs",
+    "badpin:main_inputs",
+    "omit:main_proof",
+    "badpin:main_proof",
+    "omit:novertical_checker",
+    "badpin:novertical_checker",
+    "omit:novertical_inputs",
+    "badpin:novertical_inputs",
+    "omit:novertical_ledger",
+    "badpin:novertical_ledger",
+    "omit:novertical_proof",
+    "badpin:novertical_proof",
+    "omit:novertical_receipt",
+    "badpin:novertical_receipt",
+    "omit:regular_checker",
+    "badpin:regular_checker",
+    "omit:regular_inputs",
+    "badpin:regular_inputs",
+    "omit:regular_ledger",
+    "badpin:regular_ledger",
+    "omit:regular_proof",
+    "badpin:regular_proof",
+    "omit:regular_receipt",
+    "badpin:regular_receipt",
+    "omit:small_prime_power_proof",
+    "badpin:small_prime_power_proof",
+    "omit:turn_checker",
+    "badpin:turn_checker",
+    "omit:turn_inputs",
+    "badpin:turn_inputs",
+    "omit:turn_ledger",
+    "badpin:turn_ledger",
+    "omit:turn_proof",
+    "badpin:turn_proof",
+    "omit:turn_receipt",
+    "badpin:turn_receipt",
+    "false-scope:BadTerminal_empty",
+    "false-scope:all_terminal_orders",
+    "false-scope:effective_terminal_cutoff",
+    "false-scope:uniform_terminal_cutoff_over_supports",
+    "false-scope:arbitrary_polynomial_supports",
+    "false-scope:general_Gamma_shapes",
+    "false-scope:new_sharp_lower_annulus_logical_premise",
+    "false-scope:constant_plus_power_finite_prefix_logical_premise",
+    "false-scope:lower_one_full_finite_bridge_logical_premise",
+    "false-scope:legacy_checkers_executed",
+    "missing-scope:same_cutoff_all_coefficients",
+    "missing-scope:same_cutoff_all_characteristic_zero_fields",
+    "missing-scope:BadTerminal_finite_iff_eventual",
+    "missing-scope:complex_all_coefficients_iff_rational_coprime",
+    "typed-support",
+    "wrong-quantifier",
+    "ledger:schema",
+    "ledger:empty",
+    "ledger:duplicate",
+    "forged-child",
+    "false-always-different-Gamma-shapes",
+    "actual-wrong-shared-Gamma"
+  ],
+  "proof_sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+  "schema": 1,
+  "scope": {
+    "BadTerminal_each_support_finite": true,
+    "BadTerminal_empty": false,
+    "BadTerminal_finite_iff_eventual": true,
+    "all_terminal_orders": false,
+    "arbitrary_polynomial_supports": false,
+    "complex_all_coefficients_iff_rational_coprime": true,
+    "constant_plus_power_finite_prefix_logical_premise": false,
+    "descent": "Q[x] Bezout identity; no embedding of an arbitrary field in C",
+    "effective_terminal_cutoff": false,
+    "external_review": false,
+    "formal_verification": false,
+    "general_Gamma_shapes": false,
+    "legacy_checkers_executed": false,
+    "lower_one_full_finite_bridge_logical_premise": false,
+    "new_sharp_lower_annulus_logical_premise": false,
+    "order_quantifier": "for each fixed support (a,b) exists integer N_(a,b)>=2; every terminal N>=N_(a,b)",
+    "rational_actual_pair_coprime": true,
+    "same_cutoff_all_characteristic_zero_fields": true,
+    "same_cutoff_all_coefficients": true,
+    "schema": 1,
+    "support": {
+      "a_min": 0,
+      "b": "a+d",
+      "condition": "0<=a<b integers",
+      "d_min": 1
+    },
+    "support_cases": [
+      "a=0 analytic tail plus small prime powers and adjacent one",
+      "a>=1,d=1 adjacent",
+      "a>=1,d>=2,4a<=(d-1)^2",
+      "a>=1,d>=2,4a>(d-1)^2"
+    ],
+    "uniform_terminal_cutoff_over_supports": false
+  },
+  "source_ledger_sha256": "78bdc6094a425aa2b8642ad17bc39576ac37572280e935a719702b0248ab102e",
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "role": "adjacent_all_order_proof",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "role": "constant_plus_power_analytic_proof",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "role": "gap405_coalescing_bridge_proof",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_global_complement.py",
+      "role": "gap405_complement_checker",
+      "sha256": "124141b699233179d9ab2ee5b102641d6068f76d96eafde57faf17acd362778f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_global_complement_inputs.json",
+      "role": "gap405_complement_inputs",
+      "sha256": "71efe9650de3a94f45451aa3045376a0728b4ad47489fd49ff6ff5fa9acbaa50"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_global_complement_source_ledger.json",
+      "role": "gap405_complement_ledger",
+      "sha256": "4cdd1e993f54e01fc55a3ad109143e306f15dd95e8bac0d0443b6bddcb25e755"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "role": "gap405_complement_proof",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_global_complement_verification.json",
+      "role": "gap405_complement_receipt",
+      "sha256": "6169d465daeaa731907c6efc66fe2423d01453b64bdcbd93c7c79c6caa3aa687"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_eventual_strong_factorial_completion.py",
+      "role": "gap405_cusp_main_checker",
+      "sha256": "7ee237b079d544c3036fdbb6b60d6a08990d1301992cd51ed32c9287aa04ce73"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_eventual_strong_factorial_inputs.json",
+      "role": "gap405_cusp_main_inputs",
+      "sha256": "9361fb493e8d35866a84cc04e60820c3e43376bec7a06e724f34dcba02fb43b6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_eventual_strong_factorial_source_ledger.json",
+      "role": "gap405_cusp_main_ledger",
+      "sha256": "efffec8f50a9daa028b753c261570888430dbe8d661917aaab30afd37823da40"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md",
+      "role": "gap405_cusp_main_proof",
+      "sha256": "89fe772b7231063a7bd824aceba48c191b8bc821ced68efe6087b39efb25dd2b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_eventual_strong_factorial_verification.json",
+      "role": "gap405_cusp_main_receipt",
+      "sha256": "0ddf09aadd8e7a86d399f3bcd5f36e7195cc644f0b308d79489f1cbd8252f9cd"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_bounded_quartic_cusp.py",
+      "role": "gap405_fixed_bounded_checker",
+      "sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "gap405_fixed_bounded_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/bounded_quartic_cusp_verification.json",
+      "role": "gap405_fixed_bounded_receipt",
+      "sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "role": "gap405_fixed_completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "role": "gap405_fixed_completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "role": "gap405_fixed_completion_ledger",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "role": "gap405_fixed_completion_receipt",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_unfolding.py",
+      "role": "gap405_fixed_cusp_checker",
+      "sha256": "2aaed2628fa2b900a2010bd06bfc7a366f149262f0df14151b684c389016eec3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "role": "gap405_fixed_cusp_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_unfolding_verification.json",
+      "role": "gap405_fixed_cusp_receipt",
+      "sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "role": "gap405_fixed_model_checker",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_inputs.json",
+      "role": "gap405_fixed_model_inputs",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "role": "gap405_fixed_model_ledger",
+      "sha256": "4abeba96e71f2c708448fa595504c5714e63aeb55551d0cebb5f3512f2b97bba"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "role": "gap405_fixed_model_proof",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_verification.json",
+      "role": "gap405_fixed_model_receipt",
+      "sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "role": "gap405_fixed_primary_hjn",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "role": "gap405_fixed_primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/square_root_gap_eventual_source_ledger.json",
+      "role": "gap405_ledger",
+      "sha256": "e2d50a955c747684012e741041bb763de7d2330df9c8e428354d0a356e22e5a8"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_shrinking_window_log_ratio.py",
+      "role": "gap405_local_checker",
+      "sha256": "62a543ee270d338ddc0b8a69f717adabc71a72b18182113b7c2a91d3cd08ea16"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_shrinking_window_inputs.json",
+      "role": "gap405_local_inputs",
+      "sha256": "77df02e2602ba6687239d504401e020c372c4754a5b488b5a6b2cc23c9c52566"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_shrinking_window_source_ledger.json",
+      "role": "gap405_local_ledger",
+      "sha256": "47980a650faad7443e8d998e0e10bac330d03a14592a05172a4d34e79977b32c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "role": "gap405_local_proof",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_shrinking_window_verification.json",
+      "role": "gap405_local_receipt",
+      "sha256": "4e348fd8541d8d834c0af9f402d8b2a42dc5f77d3ec74765c3356d9481125514"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_square_root_gap_eventual_completion.py",
+      "role": "gap405_main_checker",
+      "sha256": "f5087dd51adc0f672ebb3ff9a9bbf306fff8351da1c9c044b50671e079854332"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/square_root_gap_eventual_inputs.json",
+      "role": "gap405_main_inputs",
+      "sha256": "70018a6fcc949ed4df69366e153e04c8f790b4a93ccdd003691d14bb16560367"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SQUARE_ROOT_GAP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md",
+      "role": "gap405_main_proof",
+      "sha256": "e94bee72ca97955605fa0f70f1b7e2b2287e27a5ef080567e50b05fbc1cdadde"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_two_thimble_positive_cycle.py",
+      "role": "gap405_morse_checker",
+      "sha256": "9d683f987eca019ec23d1345ba4549ba079c6a5834ad9178364b39259e84fe4e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_two_thimble_inputs.json",
+      "role": "gap405_morse_inputs",
+      "sha256": "a43241330fdace46a4668f3483032bfcab92683b0c387e18989a982e562d8947"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_two_thimble_source_ledger.json",
+      "role": "gap405_morse_ledger",
+      "sha256": "a7cc79b13416f47f1da880be6db02e0830ea8270aeaa827bf88a17f878f25d33"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "gap405_morse_proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_two_thimble_verification.json",
+      "role": "gap405_morse_receipt",
+      "sha256": "5d86ebc659028fd1814798db8f8b21b69aa62405eb282891323ea210f008d6cb"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/vidunas-belyi-2025.pdf",
+      "role": "gap405_primary_vidunas",
+      "sha256": "62973b1fdf8ebdca85a845db389625922f48e1862173e4b72d92a85db8f088dd"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/square_root_gap_eventual_verification.json",
+      "role": "gap405_receipt",
+      "sha256": "db5a38da23315af34fd1b918babdf278def04f33b974722162b506e379bbb5eb"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "gap405_retained_gamma_upper",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_stationary_belyi_monodromy.py",
+      "role": "gap405_stationary_checker",
+      "sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_inputs.json",
+      "role": "gap405_stationary_inputs",
+      "sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_source_ledger.json",
+      "role": "gap405_stationary_ledger",
+      "sha256": "97b32b27b4cc60691e7a8fcfd68088b770b24a4691f960e7fc5773f2b88a62ee"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_primary_audit.md",
+      "role": "gap405_stationary_primary_audit",
+      "sha256": "cc9535349d58cd4cdf57d305f3d2b674957f2ea95c15b7f3f78ca7c2cd25b038"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "role": "gap405_stationary_proof",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_verification.json",
+      "role": "gap405_stationary_receipt",
+      "sha256": "15b4b1f5f7e0b5fa8090498ba0db56a83ed54e76a17e8e69c3c9c12b79cfa72d"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_strict_subcritical_eventual_sfc.py",
+      "role": "gap405_strict_checker",
+      "sha256": "c0771e61f31e8710278e2827183dbfa20050817fd3e5b05bf715c4c24606df2d"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/strict_subcritical_inputs.json",
+      "role": "gap405_strict_inputs",
+      "sha256": "c0ce9d7e31de8583af26adfed32e260b3bb2df41c30c1f0884fc1dd35eea0c88"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/strict_subcritical_source_ledger.json",
+      "role": "gap405_strict_ledger",
+      "sha256": "91179cdd9807a5481369248b81fb906ccd2b6df96bbebe37570c0f160bb1056a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md",
+      "role": "gap405_strict_proof",
+      "sha256": "3bcd961a7cbf63fe780f30580554118355f4f5252cf1d92992741881ece500e6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/strict_subcritical_verification.json",
+      "role": "gap405_strict_receipt",
+      "sha256": "41a952dbc205a954aee97acc317a77e0076e585f22e19dc02c6525312e203eea"
+    },
+    {
+      "kind": "local",
+      "path": "verify_ordinary_binomial_eventual_completion.py",
+      "role": "main_checker",
+      "sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_inputs.json",
+      "role": "main_inputs",
+      "sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a"
+    },
+    {
+      "kind": "local",
+      "path": "ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+      "role": "main_proof",
+      "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27"
+    },
+    {
+      "kind": "support",
+      "path": "verify_no_vertical_physical_equimodular_pair.py",
+      "role": "novertical_checker",
+      "sha256": "130ebebf4e9fc6ce4e8af0d0cfaa1163f4cb55398e2b46c3ceb27c33d0722070"
+    },
+    {
+      "kind": "support",
+      "path": "no_vertical_pair_inputs.json",
+      "role": "novertical_inputs",
+      "sha256": "05f17e41149a60ca1ac1bd5a4080c9e895e1ec7ffbf344be551c48b4bffc2c15"
+    },
+    {
+      "kind": "support",
+      "path": "no_vertical_pair_source_ledger.json",
+      "role": "novertical_ledger",
+      "sha256": "5461a3e5a407971c88a36c78ae119f1d43dec01b3bc1c5ba51ba759d142be8a2"
+    },
+    {
+      "kind": "support",
+      "path": "NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+      "role": "novertical_proof",
+      "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc"
+    },
+    {
+      "kind": "support",
+      "path": "no_vertical_pair_verification.json",
+      "role": "novertical_receipt",
+      "sha256": "36d12857ba5756f58f2c928e71bd9bd73644474e34dab27a54b58282940144c3"
+    },
+    {
+      "kind": "support",
+      "path": "verify_above_critical_regular_complement.py",
+      "role": "regular_checker",
+      "sha256": "3feb2efbdefb67f2460a1150ccbcac796602974fb2ebb29e0998494ff37b4956"
+    },
+    {
+      "kind": "support",
+      "path": "above_critical_regular_inputs.json",
+      "role": "regular_inputs",
+      "sha256": "cab18fccfc42b8443a06e1ae00d4f4c3380390436053b87a1f756165ab9535ee"
+    },
+    {
+      "kind": "support",
+      "path": "above_critical_regular_source_ledger.json",
+      "role": "regular_ledger",
+      "sha256": "ffc11b9e3d31b9bd90f33fccd0adef099636e02c2b563fa77b91c6b8145fac8b"
+    },
+    {
+      "kind": "support",
+      "path": "ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+      "role": "regular_proof",
+      "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0"
+    },
+    {
+      "kind": "support",
+      "path": "above_critical_regular_verification.json",
+      "role": "regular_receipt",
+      "sha256": "9f95ce0bbaf9d5509eff06ac13ff3de90b80553938a44fc42fe772dfe53bfdbe"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+      "role": "small_prime_power_proof",
+      "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228"
+    },
+    {
+      "kind": "support",
+      "path": "verify_simple_turn_shrinking_window.py",
+      "role": "turn_checker",
+      "sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406"
+    },
+    {
+      "kind": "support",
+      "path": "simple_turn_shrinking_window_inputs.json",
+      "role": "turn_inputs",
+      "sha256": "000ddb64be5231dea07ba78f23809181a26c904805f856be38dafb46d1eddb59"
+    },
+    {
+      "kind": "support",
+      "path": "simple_turn_shrinking_window_source_ledger.json",
+      "role": "turn_ledger",
+      "sha256": "57c405cf017f0427edb44a48f555691f7b78c0e5b38ded14bba640565c9d6a71"
+    },
+    {
+      "kind": "support",
+      "path": "SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "role": "turn_proof",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    },
+    {
+      "kind": "support",
+      "path": "simple_turn_shrinking_window_verification.json",
+      "role": "turn_receipt",
+      "sha256": "f3cc8da299b08524b326b238a318e9011d8b05dbe763202bd388fe61cfdfe2f4"
+    }
+  ],
+  "status": "PASS",
+  "verified_child_ledgers": [
+    {
+      "kind": "support",
+      "path": "simple_turn_shrinking_window_source_ledger.json",
+      "sources": 5
+    },
+    {
+      "kind": "support",
+      "path": "above_critical_regular_source_ledger.json",
+      "sources": 8
+    },
+    {
+      "kind": "support",
+      "path": "no_vertical_pair_source_ledger.json",
+      "sources": 4
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/square_root_gap_eventual_source_ledger.json",
+      "sources": 54
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_eventual_strong_factorial_source_ledger.json",
+      "sources": 44
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/strict_subcritical_source_ledger.json",
+      "sources": 6
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_two_thimble_source_ledger.json",
+      "sources": 8
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_shrinking_window_source_ledger.json",
+      "sources": 9
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_global_complement_source_ledger.json",
+      "sources": 6
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "sources": 15
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "sources": 5
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_source_ledger.json",
+      "sources": 6
+    }
+  ]
+}

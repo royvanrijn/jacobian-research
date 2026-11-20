@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "proof",
+      "root": "local",
+      "path": "ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+      "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0"
+    },
+    {
+      "role": "checker",
+      "root": "local",
+      "path": "verify_above_critical_regular_complement.py",
+      "sha256": "3feb2efbdefb67f2460a1150ccbcac796602974fb2ebb29e0998494ff37b4956"
+    },
+    {
+      "role": "inputs",
+      "root": "local",
+      "path": "above_critical_regular_inputs.json",
+      "sha256": "cab18fccfc42b8443a06e1ae00d4f4c3380390436053b87a1f756165ab9535ee"
+    },
+    {
+      "role": "novertical_proof",
+      "root": "support",
+      "path": "NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+      "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc"
+    },
+    {
+      "role": "coalescing_actual_bridge",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "role": "morse_mechanisms",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "role": "finite_level_stokes_detour",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "role": "retained_gamma_upper_bound",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    }
+  ]
+}

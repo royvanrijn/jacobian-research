@@ -1,0 +1,124 @@
+{
+  "checker_sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406",
+  "counts": {
+    "exact_actual_moment_normalizations": 32,
+    "exact_actual_turning_fixtures": 106,
+    "mathematical_negative_controls": 4,
+    "source_scope_controls": 24,
+    "universal_Laurent_identity_families": 16
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "input_sha256": "000ddb64be5231dea07ba78f23809181a26c904805f856be38dafb46d1eddb59",
+  "mandatory_source_roles": 5,
+  "mathematical_negative_names": [
+    "full-cubic-real-bands-not-compact",
+    "full-d2-boundary-not-uniformly-decaying",
+    "wrong-shared-Gamma-shape",
+    "bare-leading-root-error-not-o-one-over-N"
+  ],
+  "meaning": "The written complete-contour proof proves the fixed-support local theorem. These exact algebra/source controls support and authenticate it; no finite control proves the quantified flow or uniform estimates by itself.",
+  "proof_sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+  "schema": 1,
+  "scope": {
+    "a0_support_included": false,
+    "a_min": 1,
+    "all_terminal_orders": false,
+    "bounded_and_growing_fields": true,
+    "conclusion": "there exist a fixed physical turning disc and a terminal cutoff for each fixed support",
+    "cubic_tail_method": "proper critical-value inverse rays, not compact real-phase bands",
+    "d2_infinity": "locally narrower wedge with alpha<pi/2",
+    "d_min": 2,
+    "effective_cutoff": false,
+    "entire_physical_neighborhood": true,
+    "external_review": false,
+    "fixed_center_rho_on_complex_w_collars": true,
+    "formal_verification": false,
+    "global_coefficient_plane_exclusion": false,
+    "individual_complex_m_periods": true,
+    "original_identity_orders": "positive integers only",
+    "original_noninteger_m_identity_required": false,
+    "schema": 1,
+    "support_condition": "4*a>(d-1)^2",
+    "support_parameters": "fixed positive integers",
+    "uniform_cutoff_over_supports": false
+  },
+  "source_ledger_sha256": "57c405cf017f0427edb44a48f555691f7b78c0e5b38ded14bba640565c9d6a71",
+  "source_scope_negative_names": [
+    "omit:proof",
+    "badpin:proof",
+    "omit:checker",
+    "badpin:checker",
+    "omit:inputs",
+    "badpin:inputs",
+    "omit:actual_stationary_bridge",
+    "badpin:actual_stationary_bridge",
+    "omit:actual_morse_mechanism",
+    "badpin:actual_morse_mechanism",
+    "false-scope:effective_cutoff",
+    "false-scope:uniform_cutoff_over_supports",
+    "false-scope:all_terminal_orders",
+    "false-scope:global_coefficient_plane_exclusion",
+    "false-scope:a0_support_included",
+    "false-scope:original_noninteger_m_identity_required",
+    "missing-scope:entire_physical_neighborhood",
+    "missing-scope:bounded_and_growing_fields",
+    "missing-scope:individual_complex_m_periods",
+    "missing-scope:fixed_center_rho_on_complex_w_collars",
+    "typed-a",
+    "ledger:schema",
+    "ledger:empty",
+    "ledger:duplicate"
+  ],
+  "sources": [
+    {
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "actual_morse_mechanism",
+      "root": "repo",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "role": "actual_stationary_bridge",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "verify_simple_turn_shrinking_window.py",
+      "role": "checker",
+      "root": "local",
+      "sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406"
+    },
+    {
+      "path": "simple_turn_shrinking_window_inputs.json",
+      "role": "inputs",
+      "root": "local",
+      "sha256": "000ddb64be5231dea07ba78f23809181a26c904805f856be38dafb46d1eddb59"
+    },
+    {
+      "path": "SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "role": "proof",
+      "root": "local",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    }
+  ],
+  "status": "PASS",
+  "universal_identity_names": [
+    "actual stationary numerator",
+    "actual Omega derivative after T'=dT/S",
+    "critical stationary mixed derivative numerator",
+    "normalized physical-to-cubic flow",
+    "normalized phase descent",
+    "cubic derivative",
+    "cubic critical values",
+    "error rho/m",
+    "error1/(mk)",
+    "error1/(m rho)",
+    "error1/(mk rho\u00b2)",
+    "exact radial logarithm transport",
+    "bounded actual radial field leading coefficient",
+    "bounded actual radial field constant",
+    "bounded actual radial field no epsilon\u00b2 term",
+    "Airy initial data determinant nonzero cyclotomic certificate"
+  ]
+}

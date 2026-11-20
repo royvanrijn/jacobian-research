@@ -1,0 +1,51 @@
+{
+  "external_review": false,
+  "formal_verification": false,
+  "primary_contexts": [
+    {
+      "scope": "local cubic/contour-dependent framework; actual cycle is proved in the note",
+      "url": "https://dlmf.nist.gov/2.4#v"
+    },
+    {
+      "scope": "canonical homogeneous cubic contour",
+      "url": "https://dlmf.nist.gov/9.5#ii"
+    },
+    {
+      "scope": "Airy ODE and nonzero initial values",
+      "url": "https://dlmf.nist.gov/9.2"
+    }
+  ],
+  "schema": 1,
+  "sources": [
+    {
+      "path": "SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "role": "proof",
+      "root": "local",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    },
+    {
+      "path": "verify_simple_turn_shrinking_window.py",
+      "role": "checker",
+      "root": "local",
+      "sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406"
+    },
+    {
+      "path": "simple_turn_shrinking_window_inputs.json",
+      "role": "inputs",
+      "root": "local",
+      "sha256": "000ddb64be5231dea07ba78f23809181a26c904805f856be38dafb46d1eddb59"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "role": "actual_stationary_bridge",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "actual_morse_mechanism",
+      "root": "repo",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    }
+  ]
+}

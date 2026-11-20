@@ -5071,6 +5071,100 @@
           "replay_commands": [
             "python3 research/factorial/image-rigidity/verify_square_root_gap_eventual_completion.py --repo-root . --output /tmp/factorial-square-root-gap-eventual-sfc.json"
           ]
+        },
+        {
+          "id": "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR",
+          "title": "Physical equimodular saddles cannot align vertically",
+          "state": "proved",
+          "scope": "For every real a>=1 and integer d>=2, two distinct points of the defined physical wedge or its positive boundary cannot simultaneously have the same stationary value Omega, equal critical-factor modulus and equal real parts. The a=1 endpoint is proved separately. This supplies pointwise equimodular radial transversality, not global branch labels, original-cycle activation or any Strong Factorial conclusion.",
+          "canonical_source": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "checker": "factorial/image-rigidity/verify_no_vertical_physical_equimodular_pair.py",
+          "artifact_hash": "sha256:130ebebf4e9fc6ce4e8af0d0cfaa1163f4cb55398e2b46c3ceb27c33d0722070",
+          "evidence": [
+            "factorial/image-rigidity/no_vertical_pair_inputs.json",
+            "factorial/image-rigidity/no_vertical_pair_source_ledger.json",
+            "factorial/image-rigidity/no_vertical_pair_verification.json"
+          ],
+          "additional_checkers": [],
+          "proof_type": "physical_modulus_elimination_hyperbolic_convexity_separate_crossings_and_argument_obstruction",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal-review-complete",
+          "dependency_coverage": "partial",
+          "verification_note": "Whole written algebra/integration/argument and exact code audits passed internally. Exact replay passed10 identities,16 hyperbolic coefficients,390 candidate triples,220 strict crossing pairs,6 endpoint-a1 controls and genuine negative/source tests. Copied/source QA passed; all assurance flags remain false.",
+          "scope_limits": [
+            "The two points must be distinct and in the stated physical wedge or positive boundary, with all factors defined.",
+            "The condition a>=1 includes a separate endpoint proof at a1; no claim is made for smaller real a or d1.",
+            "No global branch ordering, activation, error bound or SFC assertion is inferred."
+          ],
+          "replay_commands": [
+            "python3 research/factorial/image-rigidity/verify_no_vertical_physical_equimodular_pair.py --repo-root . --output /tmp/factorial-no-vertical-physical-equimodular-pair.json"
+          ]
+        },
+        {
+          "id": "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC",
+          "title": "Eventual Strong Factorial for every fixed ordinary binomial",
+          "state": "proved",
+          "scope": "For every fixed ordinary integer support 0<=a<b, there is an unevaluated terminal cutoff N_(a,b) after which the actual consecutive factorial-moment polynomials are coprime over Q. The same cutoff works for every nonzero coefficient pair over every characteristic-zero field, equivalently for all complex coefficient pairs. This is equivalent to finiteness of BadTerminal at each fixed support. No support-uniform or numerical cutoff, emptiness of the finite bad set, all-order SFC, multivariate result or arbitrary polynomial-support theorem is asserted.",
+          "canonical_source": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "checker": "factorial/image-rigidity/verify_ordinary_binomial_eventual_completion.py",
+          "artifact_hash": "sha256:112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348",
+          "evidence": [
+            "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+            "factorial/image-rigidity/no_vertical_pair_inputs.json",
+            "factorial/image-rigidity/no_vertical_pair_source_ledger.json",
+            "factorial/image-rigidity/no_vertical_pair_verification.json",
+            "factorial/image-rigidity/verify_no_vertical_physical_equimodular_pair.py",
+            "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "factorial/image-rigidity/above_critical_regular_inputs.json",
+            "factorial/image-rigidity/above_critical_regular_source_ledger.json",
+            "factorial/image-rigidity/above_critical_regular_verification.json",
+            "factorial/image-rigidity/verify_above_critical_regular_complement.py",
+            "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "factorial/image-rigidity/simple_turn_shrinking_window_inputs.json",
+            "factorial/image-rigidity/simple_turn_shrinking_window_source_ledger.json",
+            "factorial/image-rigidity/simple_turn_shrinking_window_verification.json",
+            "factorial/image-rigidity/verify_simple_turn_shrinking_window.py",
+            "factorial/image-rigidity/ordinary_binomial_eventual_inputs.json",
+            "factorial/image-rigidity/ordinary_binomial_eventual_source_ledger.json",
+            "factorial/image-rigidity/ordinary_binomial_eventual_verification.json",
+            "factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+            "factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+            "factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+            "factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md"
+          ],
+          "additional_checkers": [
+            {
+              "path": "factorial/image-rigidity/verify_no_vertical_physical_equimodular_pair.py",
+              "sha256": "130ebebf4e9fc6ce4e8af0d0cfaa1163f4cb55398e2b46c3ceb27c33d0722070"
+            },
+            {
+              "path": "factorial/image-rigidity/verify_above_critical_regular_complement.py",
+              "sha256": "3feb2efbdefb67f2460a1150ccbcac796602974fb2ebb29e0998494ff37b4956"
+            },
+            {
+              "path": "factorial/image-rigidity/verify_simple_turn_shrinking_window.py",
+              "sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406"
+            }
+          ],
+          "proof_type": "complete_actual_fixed_support_contours_support_exhaustion_and_rational_Bezout",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal-review-complete",
+          "dependency_coverage": "partial",
+          "verification_note": "Whole analytic and arithmetic-source proofs and code reviews passed internally. Canonical replay passed77 mandatory pins, four fresh byte-identical child completions,12 cross-linked ledgers,660 support cases,123 a0 tail controls,256 moment identities,40 Appell identities,36 actual rational Bezout identities and176 negatives. Copied/source/forged-child QA passed; no formal, external or independent-replay assurance is upgraded.",
+          "scope_limits": [
+            "The cutoff is uniform over coefficients and fields only after the support is fixed; no formula or bound uniform across supports is provided.",
+            "Each bad-terminal set is finite, but its emptiness and remaining finite terminal orders are unresolved in general.",
+            "Only ordinary one-variable phases with at most two monomials are covered, not arbitrary supports, multivariate phases or general Gamma shapes.",
+            "The raw constant-family analytic tail and small prime-power/adjacent results are used; no92935 finite prefix, lower-one finite bridge or old all-order constant-family principal is a premise.",
+            "The405 square-root-gap theorem is an input subroute. No full-to405 reverse rule creates a proof cycle, and the new sharp annulus is not needed."
+          ],
+          "replay_commands": [
+            "python3 research/factorial/image-rigidity/verify_ordinary_binomial_eventual_completion.py --repo-root . --output /tmp/factorial-all-ordinary-binomial-eventual-sfc.json"
+          ]
         }
       ],
       "open_questions": [
@@ -5268,6 +5362,18 @@
           "source": "factorial/image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md",
           "kind": "mathematical",
           "node": "GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL"
+        },
+        {
+          "question": "Can the unevaluated support-dependent eventual cutoffs and remaining finite bad-terminal sets be made explicit?",
+          "source": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "kind": "mathematical",
+          "node": "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF"
+        },
+        {
+          "question": "Are all finite sets BadTerminal_(a,b) empty for every ordinary support0<=a<b, equivalently are all actual pairs coprime for every N>=2? Prove the all-order statement or exhibit an actual counterexample.",
+          "source": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "kind": "mathematical",
+          "node": "GOAL-ORDINARY-BINOMIAL-SFC"
         }
       ],
       "scope_notes": [
@@ -5331,7 +5437,8 @@
         "Moving Grace-disc centres now give polynomial all-root real/imaginary bounds for every finite order and real a>=100*d^2, with explicit a>=C*d^4 thin-strip corollaries. On the integer domain, two still-open actual coprimality and strip-noncollision assertions are equivalent. No stronger SFC claim is inferred from localization alone; separate uniform phase and quadratic-tail proofs now provide their explicitly stated larger-threshold results.",
         "The uniform quadratic ordinary-SFC tail a>=10^24*d^2 now holds for every integer d>=2 and every terminal order over every characteristic-zero field. Its exact Bad_d cap is equivalent. The Bell/homotopy route imports no400 Grace strip; the separately retained quartic10^20*d^4 route does. All a>=100*d^2 noncollision, full binomial SFC and the stronger older remainder optimizations remain open.",
         "At integer quartic cusps a=s^2,d=2s+1, actual consecutive roots are eventually excluded from every fixed normalized compact field window with one uncomputed cutoff N0(H) independent of s. The complete stationary-cover classification and distinguished global radial graph are separate structural results. Full cusp SFC, active original cycles and escaping actual roots remain open.",
-        "For every fixed ordinary support with sqrt(a+d)-sqrt(a)>=1, all sufficiently large consecutive moments are now excluded uniformly in coefficients and characteristic-zero fields. The cutoff is unevaluated and may depend on the support. All-order claims and remaining above-critical supports remain open. The independent sharper positive-shape annulus improves only sufficient finite-terminal separation."
+        "For every fixed ordinary support with sqrt(a+d)-sqrt(a)>=1, all sufficiently large consecutive moments are excluded uniformly in coefficients and characteristic-zero fields. The cutoff is unevaluated and may depend on the support. The above-critical fixed-support eventual tail is now proved separately by ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md; all-order claims remain open. The independent sharper positive-shape annulus improves only sufficient finite-terminal separation.",
+        "Every fixed ordinary one-variable binomial support now has an eventual consecutive-moment exclusion theorem with one cutoff uniform over its coefficients and characteristic-zero fields. The cutoff is unevaluated and need not be uniform over supports. The remaining finite terminal orders and all-order SFC remain open in general."
       ],
       "gap_ids": [
         "FACTORIAL-GENERAL-FC",
@@ -5399,7 +5506,8 @@
         "GAP-FACTORIAL-QUARTIC-CUSP-ESCAPING-FIELD-EXHAUSTION",
         "GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS",
         "GOAL-FACTORIAL-SQRT-GAP-ALL-ORDER-SFC",
-        "GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL"
+        "GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL",
+        "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF"
       ]
     },
     {
@@ -115056,6 +115164,927 @@
         ],
         "assessment": "The written analytic proofs are the mathematical evidence. Exact controls and source/portable replays are internal and do not upgrade independent, formal or external assurance.",
         "gap_kind": "mathematical"
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-NO-VERTICAL-PAIR",
+        "title": "Written support: NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+        "scope": "Current complete written proof and exact/source support under its precise real-parameter or fixed-integer-support hypotheses.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+            "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/no_vertical_pair_inputs.json",
+            "sha256": "05f17e41149a60ca1ac1bd5a4080c9e895e1ec7ffbf344be551c48b4bffc2c15",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/no_vertical_pair_source_ledger.json",
+            "sha256": "5461a3e5a407971c88a36c78ae119f1d43dec01b3bc1c5ba51ba759d142be8a2",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/no_vertical_pair_verification.json",
+            "sha256": "36d12857ba5756f58f2c928e71bd9bd73644474e34dab27a54b58282940144c3",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_no_vertical_physical_equimodular_pair.py",
+            "sha256": "130ebebf4e9fc6ce4e8af0d0cfaa1163f4cb55398e2b46c3ceb27c33d0722070",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+        "title": "Written support: ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+        "scope": "Current complete written proof and exact/source support under its precise real-parameter or fixed-integer-support hypotheses.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/above_critical_regular_inputs.json",
+            "sha256": "cab18fccfc42b8443a06e1ae00d4f4c3380390436053b87a1f756165ab9535ee",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/above_critical_regular_source_ledger.json",
+            "sha256": "ffc11b9e3d31b9bd90f33fccd0adef099636e02c2b563fa77b91c6b8145fac8b",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/above_critical_regular_verification.json",
+            "sha256": "9f95ce0bbaf9d5509eff06ac13ff3de90b80553938a44fc42fe772dfe53bfdbe",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_above_critical_regular_complement.py",
+            "sha256": "3feb2efbdefb67f2460a1150ccbcac796602974fb2ebb29e0998494ff37b4956",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+        "title": "Written support: SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+        "scope": "Current complete written proof and exact/source support under its precise real-parameter or fixed-integer-support hypotheses.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/simple_turn_shrinking_window_inputs.json",
+            "sha256": "000ddb64be5231dea07ba78f23809181a26c904805f856be38dafb46d1eddb59",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/simple_turn_shrinking_window_source_ledger.json",
+            "sha256": "57c405cf017f0427edb44a48f555691f7b78c0e5b38ded14bba640565c9d6a71",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/simple_turn_shrinking_window_verification.json",
+            "sha256": "f3cc8da299b08524b326b238a318e9011d8b05dbe763202bd388fe61cfdfe2f4",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_simple_turn_shrinking_window.py",
+            "sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS",
+        "title": "Written support: ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+        "scope": "Current complete written proof and exact/source support under its precise real-parameter or fixed-integer-support hypotheses.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/ordinary_binomial_eventual_inputs.json",
+            "sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/ordinary_binomial_eventual_source_ledger.json",
+            "sha256": "78bdc6094a425aa2b8642ad17bc39576ac37572280e935a719702b0248ab102e",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/ordinary_binomial_eventual_verification.json",
+            "sha256": "612b989011943b54d7b6d372c39dbef6b284735b481d50413df43a3e500f0466",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_ordinary_binomial_eventual_completion.py",
+            "sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348",
+            "locator": "Whole exact scoped written proof and its guarded support"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL",
+        "title": "Written support: ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+        "scope": "Raw retained mathematical input at the specified locator; no old finite-prefix or all-order principal is a premise.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+            "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+            "locator": "ONLY thm:analytic and its proof; no finite-prefix conclusion"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS",
+        "title": "Written support: PRIME_POWER_TWO_TERM_SFC.tex",
+        "scope": "Raw retained mathematical input at the specified locator; no old finite-prefix or all-order principal is a premise.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+            "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
+            "locator": "Prime-power simplicity, used only for constant-plus-power gaps2,3,4,5"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY",
+        "title": "Written support: UNIFORM_PADE_PARABOLA_SFC.tex",
+        "scope": "Raw retained mathematical input at the specified locator; no old finite-prefix or all-order principal is a premise.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+            "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5",
+            "locator": "thm:coprime/thm:main and exact transfer at ordinary Gamma shape1"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+        "title": "Written support: COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+        "scope": "Raw retained mathematical input at the specified locator; no old finite-prefix or all-order principal is a premise.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+            "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e",
+            "locator": "Sections1--5 actual stationary, turning and radial identities only"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-MODULUS",
+        "title": "Exact vertical-pair modulus elimination",
+        "scope": "At a>1, equal moduli and equal real parts give the exact K_D/K_a equations and denominator-positive formulas for R and X.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+            "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+            "locator": "Modulus equations and elimination"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-LOCATION",
+        "title": "Sharp real-part range forced by modulus equality",
+        "scope": "Hyperbolic convexity makes K_D/K_a strictly monotone, forcing a<X<D for a>1; the separate a=1 argument gives X=D/2.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+            "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+            "locator": "Hyperbolic ratio and Endpoint a=1"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+        "title": "Two separate weighted crossings force an argument change",
+        "scope": "The two weighted integrals have their own strict crossings; subtraction gives intF1<0 and intF2>0, with F2 identically0 at a1.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+            "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+            "locator": "F1/F2 separate crossing argument"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+        "title": "Distinct physical equimodular pairs cannot align vertically",
+        "scope": "For every real a>=1 and integer d>=2, distinct defined physical stationary points with common Omega and equal critical-factor modulus have different real parts. No global order or activation follows.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+            "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+            "locator": "Corollary NoVerticalPhysicalEquimodularPair"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+        "title": "Actual above-critical physical geometry",
+        "scope": "For fixed ordinary a>=1,d>=2 with 4a>(d-1)^2, two stationary roots in the lower S wedge over upper w merge at the upper turning value. Conjugation gives the upper S wedge over lower w and its lower turn. Away from their turns the selected pairs are locally simple.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "R1--R4"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-SHRINK",
+        "title": "Locally smaller physical wedges have genuine stable caps",
+        "scope": "A fixed locally smaller wedge contains both selected roots and the finite zero, has inward boundaries and cos(alpha)>0 infinity decay, including d2.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "Section1; |V-1|<cos(alpha)/2"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+        "title": "Complete equal-height Stokes packets",
+        "scope": "A fixed local Morse exit loss below both critical heights prevents either arm from reaching the other critical point, even when phases agree. Complete Gaussian packets and the actual endpoint-tree identity persist.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "R5--R6"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-WALL",
+        "title": "Unequal-height wall detours give actual zero-freeness",
+        "scope": "A high finite-sublevel detour and a complete low contour form an actual endpoint-tree basis; either the active high packet dominates or only the low one remains.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "Section2 finite-sublevel detour"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-REALPART",
+        "title": "Actual equimodular physical separation is nonzero",
+        "scope": "The exact stationary factor equals the lambda used in the no-vertical lemma, so every distinct actual equal-modulus physical pair has nonzero real-part difference and can be locally oriented.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "R3--R4"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-COMPARISON",
+        "title": "Actual regular consecutive log-ratio exclusion",
+        "scope": "At a compact regular equal-height point, exact own-order radial transport has a strict real action drop. Uniform complete Gaussian errors are used only at endpoint values.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "R7--R8"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+        "title": "Whole real boundary and zero are controlled",
+        "scope": "Positive real parameters and0 have complete one-packet complex neighborhoods; negative real parameters have two exact complete endpoint packets and eventual actual pair exclusion.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "Section3 whole sup/L1 and actual real boundary arguments"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-REGULAR",
+        "title": "Every above-critical compact complement is excluded",
+        "scope": "For each fixed ordinary above-critical support and compact K avoiding both turning values, every sufficiently large actual consecutive pair has no common root with x/N^d in K.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+            "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+            "locator": "Theorem AboveCriticalRegularCompactComplement"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-CUBIC",
+        "title": "Exact analytic cubic normal form and radial unfolding",
+        "scope": "At a fixed simple turn, a bounded Wiener-algebra inverse gives a local analytic cubic coordinate, nonzero unfolding derivative and exact d*w_star*eta_w=b.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "A1--A3"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-EXITS",
+        "title": "Three local cubic exits have distinct actual end labels",
+        "scope": "The two local attachments reduce three actual end components to one; a shared level below both critical heights preserves the three individually labeled exits throughout the small parameter disc.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "Section3 and end-label paragraph"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-PROPER",
+        "title": "Complete proper cubic inverse-ray and wall contours",
+        "scope": "Proper polynomial inverse rays, not noncompact real-phase bands, give uniformly controlled cubic arms. The left-half-plane cover gives the scaled Stokes detour and correct three-end tree.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "A4a and Section6 proper-cover argument"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+        "title": "Individual complete periods have analytic order lifts",
+        "scope": "Each complete thimble has consistent Log lifts and a jointly holomorphic inverse-ray Laplace representation. Equality with the original positive cycle is required only at integer orders.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "A5--A5a"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-CAUCHY",
+        "title": "Exact singular Gaussian errors have genuine Cauchy collars",
+        "scope": "Fixed-center rho collars give full complete errors O(1/k) and derivatives O(1/(mk)), O(1/(k rho²)); all actual exterior tails are included.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "A6--A8"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-GROWING",
+        "title": "Every growing turning field has a strict actual ratio drop",
+        "scope": "Three angular anti-Stokes cones and exact radial transversality give a c*rho main drop that dominates all A12 errors along the adjacent own-order path.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "A9--A12"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-BOUNDED",
+        "title": "Bounded turning fields have actual nonzero Airy branches",
+        "scope": "The actual cubic exit class gives a nonzero homogeneous Airy solution, a complete two-term expansion and finite simple-root labels. Same-label adjacent motion is o(1/N), contradicting the actual radial shift.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "A13--A15"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+        "title": "A whole fixed simple-turn neighborhood is excluded",
+        "scope": "For each fixed above-critical ordinary support there is an uncomputed physical disc and terminal cutoff excluding all actual common roots in that disc, including unbounded scaled fields; conjugation gives the other turn.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+            "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+            "locator": "Theorem FixedSimpleTurnNeighborhoodConsecutiveExclusion"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-ABOVE",
+        "title": "Every fixed above-critical support has an eventual all-plane tail",
+        "scope": "The two local turning discs and a compact regular complement cover the old Gamma upper root disk. Their finite maximum cutoff excludes every coefficient ratio at that fixed support.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Section4 M6--M7"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-A0ANALYTIC",
+        "title": "Retained constant-plus-power analytic tail",
+        "scope": "For d>=6 and N>=max(10000,d²), the raw retained thm:analytic gives simplicity of the actual constant-plus-power polynomial. No92935 finite prefix is needed.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+            "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+            "locator": "thm:analytic only"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-APPELL",
+        "title": "Exact constant-plus-power Appell derivative",
+        "scope": "At a0 the rising Gamma coefficients do not depend on m; P_N,d prime=N P_(N-1),d exactly.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Section3 case1"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-PRIMEPOWERS",
+        "title": "Retained small prime-power constant families",
+        "scope": "The gaps2,3,4,5 are prime powers and the raw retained theorem gives their actual polynomial simplicity at every order.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+            "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
+            "locator": "Prime-power theorem restricted to these four gaps"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-ADJACENT",
+        "title": "Retained adjacent supports cover every lower exponent",
+        "scope": "For ordinary a>=0,d1, the raw Padé theorem excludes every actual consecutive pair at every terminal order, with A_m(x)=(-1)^m R_m(am,-x).",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+            "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5",
+            "locator": "thm:main/thm:coprime, transfer at beta1"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-A0TAIL",
+        "title": "Every constant-plus-power support has a tail independent of the finite prefix",
+        "scope": "The analytic d>=6 tail, four small prime powers and adjacent d1 exhaust all fixed a0 supports; this route does not use the old all-order constant-family principal or its finite prefix.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Section3 case1"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-PARTITION",
+        "title": "All ordinary support cases are exhausted",
+        "scope": "Every fixed0<=a<b belongs to a0, adjacent d1, the405 square-root-gap domain, or the strict above-critical domain. No least-exponent-one finite certificate is needed.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Section3 complete partition"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-BEZOUT",
+        "title": "Exact original moments and universal rational descent",
+        "scope": "M4 and the rational Euclidean identity transfer actual coprimality to every characteristic-zero field; complex/all-field reverses use a common algebraic root and never a nonclosed-field norm.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "M4 and M8"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-BADIFF",
+        "title": "Four genuine eventual formulations are equivalent",
+        "scope": "At every fixed support, finite BadTerminal, eventual actual QQ coprimality, one coefficient-uniform complex cutoff and one coefficient/field-uniform cutoff are equivalent, with the empty-set cutoff2.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Corollary OrdinaryBinomialFiniteBadTerminalEquivalence"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-TAILQQ",
+        "title": "Every fixed ordinary support has eventual actual QQ coprimality",
+        "scope": "For each fixed0<=a<b one uncomputed cutoff works for all later actual consecutive polynomial pairs. No support-uniform or effective cutoff is given.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Theorem EveryFixedOrdinaryBinomialEventualStrongFactorial"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+        "title": "The same fixed-support cutoff works for every field and coefficient",
+        "scope": "For every fixed support a single cutoff excludes consecutive zero moments for every nonzero coefficient pair over EVERY characteristic-zero field.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Main theorem and Section5"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+        "title": "The same fixed-support cutoff works for all complex coefficients",
+        "scope": "For every fixed ordinary support, a single cutoff excludes consecutive zero moments for all nonzero complex coefficient pairs.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Corollary equivalence item(iv)"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "FACT-ORDINARY-EVENTUAL-BADFINITE",
+        "title": "Each fixed ordinary support has finitely many bad terminal orders",
+        "scope": "BadTerminal_(a,b) is finite for every fixed integer0<=a<b; its emptiness and members are not determined in general.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "M9 and finite bad-terminal corollary"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance."
+      },
+      {
+        "id": "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+        "title": "Make the ordinary-binomial eventual cutoff explicit",
+        "scope": "Extract quantitative terminal cutoffs from the fixed-support analytic proof and certify the remaining finite bad-terminal sets. Eventuality alone neither enumerates those sets nor proves them empty.",
+        "kind": "gap",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+            "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+            "locator": "Exact remaining scope"
+          }
+        ],
+        "assessment": "Whole written arguments and exact/source/portable replays are internal. Finite controls do not replace analytic proof or upgrade external, formal or independent-replay assurance.",
+        "gap_kind": "mathematical"
       }
     ],
     "implications": [
@@ -179276,6 +180305,561 @@
         },
         "dependency_coverage": "partial",
         "assessment": "Exactly the stated scoped implication; no eventual-to-all-order, square-root-condition necessity or coefficient-plane-to-technical-bound reverse."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-N-MODULUS",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-NO-VERTICAL-PAIR"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-MODULUS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+          "locator": "Exact two-modulus elimination"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-N-LOCATION",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-NO-VERTICAL-PAIR",
+          "FACT-ORDINARY-EVENTUAL-MODULUS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-LOCATION",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+          "locator": "Strict convexity and separate a1 endpoint"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-N-CROSSINGS",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-NO-VERTICAL-PAIR",
+          "FACT-ORDINARY-EVENTUAL-LOCATION"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+          "locator": "Two separate weighted crossings, not one common crossing"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-N-EXCLUSION",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-NO-VERTICAL-PAIR",
+          "FACT-ORDINARY-EVENTUAL-MODULUS",
+          "FACT-ORDINARY-EVENTUAL-LOCATION",
+          "FACT-ORDINARY-EVENTUAL-CROSSINGS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+          "locator": "Argument change lies strictly between0 and2pi"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-PHYSICAL",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "R1--R4, simple physical roots and exact critical factors"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-SHRINK",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-PHYSICAL"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-SHRINK",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "Locally smaller wedge, inward signs and cos(alpha)/2 infinity velocity margin"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-EQUAL-HEIGHT",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-SHRINK",
+          "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "R5--R6 fixed Morse exit loss below BOTH critical heights"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-WALL",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-SHRINK",
+          "SRC-FACTORIAL-CUSP-ACTUAL-MORSE",
+          "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-WALL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "Revalidated finite-sublevel detour at unequal heights"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-SEPARATION",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+          "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+          "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-REALPART",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "Apply the pointwise no-vertical lemma only to actual equal-modulus pairs"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-COMPARISON",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+          "FACT-ORDINARY-EVENTUAL-REALPART"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-COMPARISON",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "R7--R8 actual own-order path"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-BOUNDARY",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "Whole sup/L1 estimates and two exact endpoint packets, with hypotheses reverified"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-R-COMPACT",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ABOVECRITICAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-SHRINK",
+          "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+          "FACT-ORDINARY-EVENTUAL-WALL",
+          "FACT-ORDINARY-EVENTUAL-COMPARISON",
+          "FACT-ORDINARY-EVENTUAL-REALBOUNDARY"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-REGULAR",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "locator": "Theorem AboveCriticalRegularCompactComplement; no local turning conclusion"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-CUBIC",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-CUBIC",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "A1--A3 local analytic inverse and actual radial identity"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-ENDS",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "FACT-ORDINARY-EVENTUAL-CUBIC",
+          "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-EXITS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "Three cubic sectors attach to three distinct actual ends with a shared fixed lower level"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-PROPER",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-PROPER",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "A4a and scaled Stokes proper-cover proof, without noncompact real-band assumptions"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-ANALYTIC",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "FACT-ORDINARY-EVENTUAL-EXITS",
+          "FACT-ORDINARY-EVENTUAL-PROPER"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "A5--A5a individual inverse-ray Laplace periods"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-CAUCHY",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "FACT-ORDINARY-EVENTUAL-CUBIC",
+          "FACT-ORDINARY-EVENTUAL-PROPER",
+          "FACT-ORDINARY-EVENTUAL-ANALYTIC"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-CAUCHY",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "A6--A8 fixed-center rho collars and complete actual tails"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-GROWING",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "FACT-ORDINARY-EVENTUAL-CUBIC",
+          "FACT-ORDINARY-EVENTUAL-EXITS",
+          "FACT-ORDINARY-EVENTUAL-PROPER",
+          "FACT-ORDINARY-EVENTUAL-CAUCHY"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-GROWING",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "A9--A12 three anti-Stokes cones and exact real ratio drop"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-BOUNDED",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "FACT-ORDINARY-EVENTUAL-CUBIC",
+          "FACT-ORDINARY-EVENTUAL-EXITS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-BOUNDED",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "A13--A15 nonzero actual Airy class and derivative-free two-term root comparison"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-T-LOCAL",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-SIMPLE-TURN-NEIGHBORHOOD",
+          "FACT-ORDINARY-EVENTUAL-GROWING",
+          "FACT-ORDINARY-EVENTUAL-BOUNDED"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "locator": "Theorem FixedSimpleTurnNeighborhoodConsecutiveExclusion"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-ABOVE-TAIL",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS",
+          "FACT-ORDINARY-EVENTUAL-REGULAR",
+          "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+          "FACT-GAMMA-PRODUCT-ROOT-MODULUS-THM-PRODUCT-ANNULUS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-ABOVE",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "M6--M7 actual upper root disk, two local discs and one compact complement"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-CLOSE-AUTHORIZED-ABOVECRITICAL-GAP",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS",
+          "FACT-ORDINARY-EVENTUAL-ABOVE"
+        ],
+        "conclusion": "GAP-FACTORIAL-ABOVECRITICAL-ACTUAL-CYCLE-AND-PAIR-CONTROL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "Section4 complete fixed-support above-critical argument"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-EDGE-A0-ANALYTIC",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-A0ANALYTIC",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+          "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+          "locator": "thm:analytic at fixed d>=6,N>=max(10000,d²); no finite prefix"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-EDGE-APPELL",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-APPELL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "Direct coefficients at a0"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-EDGE-PRIME-POWERS",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-PRIMEPOWERS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+          "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
+          "locator": "Only d2,3,4,5 simplicity"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-EDGE-ADJACENT",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-ADJACENT",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+          "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5",
+          "locator": "Ordinary beta1; thm:coprime and thm:main exact actual polynomial transfer"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-EDGE-A0-TAIL",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS",
+          "FACT-ORDINARY-EVENTUAL-A0ANALYTIC",
+          "FACT-ORDINARY-EVENTUAL-APPELL",
+          "FACT-ORDINARY-EVENTUAL-PRIMEPOWERS",
+          "FACT-ORDINARY-EVENTUAL-ADJACENT"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-A0TAIL",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "Case1 and no92935-prefix route"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-SUPPORT-PARTITION",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-PARTITION",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "All four integer cases in Section3"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-RATIONAL-BEZOUT",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-BEZOUT",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "M4 and M8; universal-coefficient reverse over C or algebraic closure"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-BAD-IFF",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-BADIFF",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "M9 empty case2 or one plus max, and field reverses"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-ALL-SUPPORT-SEED",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS",
+          "FACT-ORDINARY-EVENTUAL-PARTITION",
+          "FACT-ORDINARY-EVENTUAL-A0TAIL",
+          "FACT-ORDINARY-EVENTUAL-ADJACENT",
+          "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC",
+          "FACT-ORDINARY-EVENTUAL-ABOVE"
+        ],
+        "conclusion": "FACT-ORDINARY-EVENTUAL-TAILQQ",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "Main theorem, exhaustive support regimes; no reverse to its405 premise"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-PRINCIPAL-406",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-NO-VERTICAL-PAIR",
+          "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+          "FACT-ORDINARY-EVENTUAL-LOCATION",
+          "FACT-ORDINARY-EVENTUAL-CROSSINGS"
+        ],
+        "conclusion": "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+          "locator": "Full no-vertical corollary including a1"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
+      },
+      {
+        "id": "DERIVE-ORDINARY-EVENTUAL-PRINCIPAL-407",
+        "premises": [
+          "SRC-ORDINARY-EVENTUAL-ALL-FIXED-SUPPORTS",
+          "FACT-ORDINARY-EVENTUAL-TAILQQ",
+          "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+          "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+          "FACT-ORDINARY-EVENTUAL-BADFINITE",
+          "FACT-ORDINARY-EVENTUAL-BADIFF"
+        ],
+        "conclusion": "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "locator": "Main theorem and genuine four-way eventual equivalence"
+        },
+        "dependency_coverage": "partial",
+        "assessment": "Precisely this scoped implication; no eventual-to-all-order or theorem-to-technical-bound reverse is inferred."
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -184413,6 +185997,92 @@
               "path": "factorial/image-rigidity/CUSP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md",
               "sha256": "89fe772b7231063a7bd824aceba48c191b8bc821ced68efe6087b39efb25dd2b",
               "locator": "Empty case2 or one plus largest bad order"
+            },
+            "dependency_coverage": "partial"
+          }
+        ]
+      },
+      {
+        "id": "EQUIV-ORDINARY-BINOMIAL-EVENTUAL-QQ-FIELDS-COMPLEX-BAD",
+        "title": "Equivalent fixed-support eventual rational, universal-field, complex-coefficient and finite-bad formulations",
+        "members": [
+          "FACT-ORDINARY-EVENTUAL-TAILQQ",
+          "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+          "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+          "FACT-ORDINARY-EVENTUAL-BADFINITE"
+        ],
+        "directions": [
+          {
+            "id": "ORDINARY-QQ-TO-EVERY-FIELD",
+            "premises": [
+              "FACT-ORDINARY-EVENTUAL-TAILQQ",
+              "FACT-ORDINARY-EVENTUAL-BEZOUT"
+            ],
+            "conclusion": "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+            "status": "proved",
+            "proof": {
+              "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+              "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+              "locator": "M4/M8 rational Bezout to every field"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "ORDINARY-FIELDS-TO-COMPLEX",
+            "premises": [
+              "FACT-ORDINARY-EVENTUAL-TAILFIELDS"
+            ],
+            "conclusion": "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+            "status": "proved",
+            "proof": {
+              "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+              "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+              "locator": "Universal fields include C"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "ORDINARY-COMPLEX-TO-QQ",
+            "premises": [
+              "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+              "FACT-ORDINARY-EVENTUAL-BEZOUT"
+            ],
+            "conclusion": "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "status": "proved",
+            "proof": {
+              "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+              "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+              "locator": "A common complex divisor root supplies a forbidden coefficient ratio"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "ORDINARY-TAIL-TO-FINITE-BAD",
+            "premises": [
+              "FACT-ORDINARY-EVENTUAL-TAILQQ",
+              "FACT-ORDINARY-EVENTUAL-BADIFF"
+            ],
+            "conclusion": "FACT-ORDINARY-EVENTUAL-BADFINITE",
+            "status": "proved",
+            "proof": {
+              "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+              "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+              "locator": "All bad terminal orders lie below the fixed-support cutoff"
+            },
+            "dependency_coverage": "partial"
+          },
+          {
+            "id": "ORDINARY-FINITE-BAD-TO-TAIL",
+            "premises": [
+              "FACT-ORDINARY-EVENTUAL-BADFINITE",
+              "FACT-ORDINARY-EVENTUAL-BADIFF"
+            ],
+            "conclusion": "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "status": "proved",
+            "proof": {
+              "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+              "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+              "locator": "Cutoff2 if empty, otherwise1+max BadTerminal"
             },
             "dependency_coverage": "partial"
           }
@@ -193881,6 +195551,15 @@
               "nodes": [
                 "FACT-AIRY-COMPACT-JOINT-NORM-AND-COMPATIBLE-CONTOUR",
                 "FACT-AIRY-GLOBAL-CONTOUR-ENVELOPE-TWO-TEN-SEVEN"
+              ]
+            },
+            {
+              "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+              "locator": "Equation9.5.4 canonical homogeneous cubic contour, with actual exit-pair identification proved separately",
+              "role": "context",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-EXITS",
+                "FACT-ORDINARY-EVENTUAL-BOUNDED"
               ]
             }
           ],
@@ -206128,6 +207807,15 @@
               "nodes": [
                 "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC"
               ]
+            },
+            {
+              "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+              "locator": "Classical two-monomial/factorial-polynomial dictionary; exact M4/M5 and rational Bezout are rederived; no priority inference.",
+              "role": "context",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-BEZOUT",
+                "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+              ]
             }
           ],
           "verification": "citation_only",
@@ -213183,6 +214871,16 @@
               "locator": "Exact endpoint applicability, NIST2-4",
               "role": "context",
               "nodes": []
+            },
+            {
+              "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+              "locator": "Local cubic CFU framework,2.4.17--21; actual contour and Scorer exclusion proved in the note",
+              "role": "context",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-CUBIC",
+                "FACT-ORDINARY-EVENTUAL-EXITS",
+                "FACT-ORDINARY-EVENTUAL-BOUNDED"
+              ]
             }
           ],
           "verification": "source_read",
@@ -213238,6 +214936,15 @@
               "role": "context",
               "nodes": [
                 "FACTORIAL-COALESCING-LOCAL-GEOMETRY-AND-HERMITE-BULK"
+              ]
+            },
+            {
+              "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+              "locator": "Classical two-amplitude Airy framework only; all complete actual period/error estimates proved explicitly",
+              "role": "context",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-CAUCHY",
+                "FACT-ORDINARY-EVENTUAL-BOUNDED"
               ]
             }
           ],
@@ -213370,6 +215077,15 @@
                 "EXT-DLMF-AIRY-EXACT-INITIAL-CONNECTION-AND-FINITE-ERROR-INPUTS",
                 "FACT-AIRY-COMPACT-JOINT-NORM-AND-COMPATIBLE-CONTOUR",
                 "FACT-AIRY-EXPLICIT-SECTOR-JOINT-NORM-BOUNDS"
+              ]
+            },
+            {
+              "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+              "locator": "Airy ODE and nonzero initial data; the actual local homology map is separately justified",
+              "role": "context",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-EXITS",
+                "FACT-ORDINARY-EVENTUAL-BOUNDED"
               ]
             }
           ],
@@ -314514,6 +316230,561 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Primary context only, without an external theorem import or priority inference."
+        },
+        {
+          "path": "factorial/image-rigidity/NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+          "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-MODULUS",
+            "FACT-ORDINARY-EVENTUAL-LOCATION",
+            "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [
+            {
+              "locator": "Corollary NoVerticalPhysicalEquimodularPair.** The same exclusion holds for every real a>=1 and integer d>=2.",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-NOVERTICAL"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/no_vertical_pair_inputs.json",
+          "sha256": "05f17e41149a60ca1ac1bd5a4080c9e895e1ec7ffbf344be551c48b4bffc2c15",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-MODULUS",
+            "FACT-ORDINARY-EVENTUAL-LOCATION",
+            "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/no_vertical_pair_source_ledger.json",
+          "sha256": "5461a3e5a407971c88a36c78ae119f1d43dec01b3bc1c5ba51ba759d142be8a2",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-MODULUS",
+            "FACT-ORDINARY-EVENTUAL-LOCATION",
+            "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/no_vertical_pair_verification.json",
+          "sha256": "36d12857ba5756f58f2c928e71bd9bd73644474e34dab27a54b58282940144c3",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-MODULUS",
+            "FACT-ORDINARY-EVENTUAL-LOCATION",
+            "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_no_vertical_physical_equimodular_pair.py",
+          "sha256": "130ebebf4e9fc6ce4e8af0d0cfaa1163f4cb55398e2b46c3ceb27c33d0722070",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-MODULUS",
+            "FACT-ORDINARY-EVENTUAL-LOCATION",
+            "FACT-ORDINARY-EVENTUAL-CROSSINGS",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "FACTORIAL-NO-VERTICAL-PHYSICAL-EQUIMODULAR-PAIR"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+          "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+            "FACT-ORDINARY-EVENTUAL-SHRINK",
+            "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+            "FACT-ORDINARY-EVENTUAL-WALL",
+            "FACT-ORDINARY-EVENTUAL-REALPART",
+            "FACT-ORDINARY-EVENTUAL-COMPARISON",
+            "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+            "FACT-ORDINARY-EVENTUAL-REGULAR"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE",
+            "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem AboveCriticalRegularCompactComplement.",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-REGULAR"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/above_critical_regular_inputs.json",
+          "sha256": "cab18fccfc42b8443a06e1ae00d4f4c3380390436053b87a1f756165ab9535ee",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+            "FACT-ORDINARY-EVENTUAL-SHRINK",
+            "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+            "FACT-ORDINARY-EVENTUAL-WALL",
+            "FACT-ORDINARY-EVENTUAL-REALPART",
+            "FACT-ORDINARY-EVENTUAL-COMPARISON",
+            "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+            "FACT-ORDINARY-EVENTUAL-REGULAR"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE",
+            "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/above_critical_regular_source_ledger.json",
+          "sha256": "ffc11b9e3d31b9bd90f33fccd0adef099636e02c2b563fa77b91c6b8145fac8b",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+            "FACT-ORDINARY-EVENTUAL-SHRINK",
+            "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+            "FACT-ORDINARY-EVENTUAL-WALL",
+            "FACT-ORDINARY-EVENTUAL-REALPART",
+            "FACT-ORDINARY-EVENTUAL-COMPARISON",
+            "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+            "FACT-ORDINARY-EVENTUAL-REGULAR"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE",
+            "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/above_critical_regular_verification.json",
+          "sha256": "9f95ce0bbaf9d5509eff06ac13ff3de90b80553938a44fc42fe772dfe53bfdbe",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+            "FACT-ORDINARY-EVENTUAL-SHRINK",
+            "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+            "FACT-ORDINARY-EVENTUAL-WALL",
+            "FACT-ORDINARY-EVENTUAL-REALPART",
+            "FACT-ORDINARY-EVENTUAL-COMPARISON",
+            "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+            "FACT-ORDINARY-EVENTUAL-REGULAR"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE",
+            "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_above_critical_regular_complement.py",
+          "sha256": "3feb2efbdefb67f2460a1150ccbcac796602974fb2ebb29e0998494ff37b4956",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-PHYSICAL",
+            "FACT-ORDINARY-EVENTUAL-SHRINK",
+            "FACT-ORDINARY-EVENTUAL-EQUALHEIGHT",
+            "FACT-ORDINARY-EVENTUAL-WALL",
+            "FACT-ORDINARY-EVENTUAL-REALPART",
+            "FACT-ORDINARY-EVENTUAL-COMPARISON",
+            "FACT-ORDINARY-EVENTUAL-REALBOUNDARY",
+            "FACT-ORDINARY-EVENTUAL-REGULAR"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "FACT-ORDINARY-EVENTUAL-NOVERTICAL",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE",
+            "SRC-FACTORIAL-CUSP-COMPACT-COMPLEMENT"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+          "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-CUBIC",
+            "FACT-ORDINARY-EVENTUAL-EXITS",
+            "FACT-ORDINARY-EVENTUAL-PROPER",
+            "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+            "FACT-ORDINARY-EVENTUAL-CAUCHY",
+            "FACT-ORDINARY-EVENTUAL-GROWING",
+            "FACT-ORDINARY-EVENTUAL-BOUNDED",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem FixedSimpleTurnNeighborhoodConsecutiveExclusion.",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-TURNLOCAL"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/simple_turn_shrinking_window_inputs.json",
+          "sha256": "000ddb64be5231dea07ba78f23809181a26c904805f856be38dafb46d1eddb59",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-CUBIC",
+            "FACT-ORDINARY-EVENTUAL-EXITS",
+            "FACT-ORDINARY-EVENTUAL-PROPER",
+            "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+            "FACT-ORDINARY-EVENTUAL-CAUCHY",
+            "FACT-ORDINARY-EVENTUAL-GROWING",
+            "FACT-ORDINARY-EVENTUAL-BOUNDED",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/simple_turn_shrinking_window_source_ledger.json",
+          "sha256": "57c405cf017f0427edb44a48f555691f7b78c0e5b38ded14bba640565c9d6a71",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-CUBIC",
+            "FACT-ORDINARY-EVENTUAL-EXITS",
+            "FACT-ORDINARY-EVENTUAL-PROPER",
+            "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+            "FACT-ORDINARY-EVENTUAL-CAUCHY",
+            "FACT-ORDINARY-EVENTUAL-GROWING",
+            "FACT-ORDINARY-EVENTUAL-BOUNDED",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/simple_turn_shrinking_window_verification.json",
+          "sha256": "f3cc8da299b08524b326b238a318e9011d8b05dbe763202bd388fe61cfdfe2f4",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-CUBIC",
+            "FACT-ORDINARY-EVENTUAL-EXITS",
+            "FACT-ORDINARY-EVENTUAL-PROPER",
+            "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+            "FACT-ORDINARY-EVENTUAL-CAUCHY",
+            "FACT-ORDINARY-EVENTUAL-GROWING",
+            "FACT-ORDINARY-EVENTUAL-BOUNDED",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_simple_turn_shrinking_window.py",
+          "sha256": "b94a61f0ba71cb64e72ea64c056898de76b5b1ddeeb9999776436a867ac4b406",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-CUBIC",
+            "FACT-ORDINARY-EVENTUAL-EXITS",
+            "FACT-ORDINARY-EVENTUAL-PROPER",
+            "FACT-ORDINARY-EVENTUAL-ANALYTIC",
+            "FACT-ORDINARY-EVENTUAL-CAUCHY",
+            "FACT-ORDINARY-EVENTUAL-GROWING",
+            "FACT-ORDINARY-EVENTUAL-BOUNDED",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-EVENTUAL-RAW-ACTUAL-COALESCING-IDENTITIES",
+            "SRC-FACTORIAL-CUSP-ACTUAL-MORSE"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+          "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-ABOVE",
+            "FACT-ORDINARY-EVENTUAL-APPELL",
+            "FACT-ORDINARY-EVENTUAL-A0TAIL",
+            "FACT-ORDINARY-EVENTUAL-PARTITION",
+            "FACT-ORDINARY-EVENTUAL-BEZOUT",
+            "FACT-ORDINARY-EVENTUAL-BADIFF",
+            "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+            "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+            "FACT-ORDINARY-EVENTUAL-BADFINITE",
+            "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+          ],
+          "dependencies": [
+            "FACT-ORDINARY-EVENTUAL-REGULAR",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+            "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL",
+            "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS",
+            "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY",
+            "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC",
+            "FACT-GAMMA-PRODUCT-ROOT-MODULUS-THM-PRODUCT-ANNULUS"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem EveryFixedOrdinaryBinomialEventualStrongFactorial.",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-TAILQQ",
+                "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+              ]
+            },
+            {
+              "locator": "Corollary OrdinaryBinomialFiniteBadTerminalEquivalence.",
+              "nodes": [
+                "FACT-ORDINARY-EVENTUAL-BADIFF"
+              ]
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/ordinary_binomial_eventual_inputs.json",
+          "sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-ABOVE",
+            "FACT-ORDINARY-EVENTUAL-APPELL",
+            "FACT-ORDINARY-EVENTUAL-A0TAIL",
+            "FACT-ORDINARY-EVENTUAL-PARTITION",
+            "FACT-ORDINARY-EVENTUAL-BEZOUT",
+            "FACT-ORDINARY-EVENTUAL-BADIFF",
+            "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+            "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+            "FACT-ORDINARY-EVENTUAL-BADFINITE",
+            "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+          ],
+          "dependencies": [
+            "FACT-ORDINARY-EVENTUAL-REGULAR",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+            "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL",
+            "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS",
+            "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY",
+            "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC",
+            "FACT-GAMMA-PRODUCT-ROOT-MODULUS-THM-PRODUCT-ANNULUS"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/ordinary_binomial_eventual_source_ledger.json",
+          "sha256": "78bdc6094a425aa2b8642ad17bc39576ac37572280e935a719702b0248ab102e",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-ABOVE",
+            "FACT-ORDINARY-EVENTUAL-APPELL",
+            "FACT-ORDINARY-EVENTUAL-A0TAIL",
+            "FACT-ORDINARY-EVENTUAL-PARTITION",
+            "FACT-ORDINARY-EVENTUAL-BEZOUT",
+            "FACT-ORDINARY-EVENTUAL-BADIFF",
+            "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+            "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+            "FACT-ORDINARY-EVENTUAL-BADFINITE",
+            "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+          ],
+          "dependencies": [
+            "FACT-ORDINARY-EVENTUAL-REGULAR",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+            "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL",
+            "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS",
+            "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY",
+            "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC",
+            "FACT-GAMMA-PRODUCT-ROOT-MODULUS-THM-PRODUCT-ANNULUS"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/ordinary_binomial_eventual_verification.json",
+          "sha256": "612b989011943b54d7b6d372c39dbef6b284735b481d50413df43a3e500f0466",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-ABOVE",
+            "FACT-ORDINARY-EVENTUAL-APPELL",
+            "FACT-ORDINARY-EVENTUAL-A0TAIL",
+            "FACT-ORDINARY-EVENTUAL-PARTITION",
+            "FACT-ORDINARY-EVENTUAL-BEZOUT",
+            "FACT-ORDINARY-EVENTUAL-BADIFF",
+            "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+            "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+            "FACT-ORDINARY-EVENTUAL-BADFINITE",
+            "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+          ],
+          "dependencies": [
+            "FACT-ORDINARY-EVENTUAL-REGULAR",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+            "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL",
+            "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS",
+            "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY",
+            "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC",
+            "FACT-GAMMA-PRODUCT-ROOT-MODULUS-THM-PRODUCT-ANNULUS"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_ordinary_binomial_eventual_completion.py",
+          "sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348",
+          "claims": [
+            "FACT-ORDINARY-EVENTUAL-ABOVE",
+            "FACT-ORDINARY-EVENTUAL-APPELL",
+            "FACT-ORDINARY-EVENTUAL-A0TAIL",
+            "FACT-ORDINARY-EVENTUAL-PARTITION",
+            "FACT-ORDINARY-EVENTUAL-BEZOUT",
+            "FACT-ORDINARY-EVENTUAL-BADIFF",
+            "FACT-ORDINARY-EVENTUAL-TAILQQ",
+            "FACT-ORDINARY-EVENTUAL-TAILFIELDS",
+            "FACT-ORDINARY-EVENTUAL-TAILCOMPLEX",
+            "FACT-ORDINARY-EVENTUAL-BADFINITE",
+            "FACTORIAL-ALL-ORDINARY-BINOMIAL-EVENTUAL-SFC"
+          ],
+          "dependencies": [
+            "FACT-ORDINARY-EVENTUAL-REGULAR",
+            "FACT-ORDINARY-EVENTUAL-TURNLOCAL",
+            "SRC-ORDINARY-EVENTUAL-RAW-CONSTANT-ANALYTIC-TAIL",
+            "SRC-ORDINARY-EVENTUAL-RAW-SMALL-PRIME-POWERS",
+            "SRC-ORDINARY-EVENTUAL-RAW-ADJACENT-FAMILY",
+            "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC",
+            "FACT-GAMMA-PRODUCT-ROOT-MODULUS-THM-PRODUCT-ANNULUS"
+          ],
+          "gaps": [
+            "GAP-ORDINARY-BINOMIAL-EXPLICIT-EVENTUAL-CUTOFF",
+            "GOAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact written source and scoped support. Actual complete cycles and quantified analytic estimates are written proofs; finite controls and current-source freshness do not infer eventuality from a finite prefix."
         }
       ]
     },

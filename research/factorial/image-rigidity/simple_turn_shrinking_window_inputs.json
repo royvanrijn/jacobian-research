@@ -1,0 +1,23 @@
+{
+  "a0_support_included": false,
+  "a_min": 1,
+  "all_terminal_orders": false,
+  "bounded_and_growing_fields": true,
+  "conclusion": "there exist a fixed physical turning disc and a terminal cutoff for each fixed support",
+  "cubic_tail_method": "proper critical-value inverse rays, not compact real-phase bands",
+  "d2_infinity": "locally narrower wedge with alpha<pi/2",
+  "d_min": 2,
+  "effective_cutoff": false,
+  "entire_physical_neighborhood": true,
+  "external_review": false,
+  "fixed_center_rho_on_complex_w_collars": true,
+  "formal_verification": false,
+  "global_coefficient_plane_exclusion": false,
+  "individual_complex_m_periods": true,
+  "original_identity_orders": "positive integers only",
+  "original_noninteger_m_identity_required": false,
+  "schema": 1,
+  "support_condition": "4*a>(d-1)^2",
+  "support_parameters": "fixed positive integers",
+  "uniform_cutoff_over_supports": false
+}

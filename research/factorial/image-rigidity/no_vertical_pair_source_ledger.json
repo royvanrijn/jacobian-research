@@ -1,0 +1,34 @@
+{
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "logical_inputs": [],
+  "schema": 1,
+  "sources": [
+    {
+      "path": "verify_no_vertical_physical_equimodular_pair.py",
+      "role": "checker",
+      "root": "local",
+      "sha256": "130ebebf4e9fc6ce4e8af0d0cfaa1163f4cb55398e2b46c3ceb27c33d0722070"
+    },
+    {
+      "path": "no_vertical_pair_inputs.json",
+      "role": "inputs",
+      "root": "local",
+      "sha256": "05f17e41149a60ca1ac1bd5a4080c9e895e1ec7ffbf344be551c48b4bffc2c15"
+    },
+    {
+      "path": "NO_VERTICAL_PHYSICAL_EQUIMODULAR_PAIR.md",
+      "role": "proof",
+      "root": "local",
+      "sha256": "c95b339705322fd8cad69f3770b96e5bb5133a15a63f72596fc740b7b21bcafc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "role": "stationary_context",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    }
+  ],
+  "stationary_context_only": true
+}

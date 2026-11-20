@@ -1,0 +1,35 @@
+{
+  "BadTerminal_each_support_finite": true,
+  "BadTerminal_empty": false,
+  "BadTerminal_finite_iff_eventual": true,
+  "all_terminal_orders": false,
+  "arbitrary_polynomial_supports": false,
+  "complex_all_coefficients_iff_rational_coprime": true,
+  "constant_plus_power_finite_prefix_logical_premise": false,
+  "descent": "Q[x] Bezout identity; no embedding of an arbitrary field in C",
+  "effective_terminal_cutoff": false,
+  "external_review": false,
+  "formal_verification": false,
+  "general_Gamma_shapes": false,
+  "legacy_checkers_executed": false,
+  "lower_one_full_finite_bridge_logical_premise": false,
+  "new_sharp_lower_annulus_logical_premise": false,
+  "order_quantifier": "for each fixed support (a,b) exists integer N_(a,b)>=2; every terminal N>=N_(a,b)",
+  "rational_actual_pair_coprime": true,
+  "same_cutoff_all_characteristic_zero_fields": true,
+  "same_cutoff_all_coefficients": true,
+  "schema": 1,
+  "support": {
+    "a_min": 0,
+    "b": "a+d",
+    "condition": "0<=a<b integers",
+    "d_min": 1
+  },
+  "support_cases": [
+    "a=0 analytic tail plus small prime powers and adjacent one",
+    "a>=1,d=1 adjacent",
+    "a>=1,d>=2,4a<=(d-1)^2",
+    "a>=1,d>=2,4a>(d-1)^2"
+  ],
+  "uniform_terminal_cutoff_over_supports": false
+}

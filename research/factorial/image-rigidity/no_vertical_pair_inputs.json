@@ -1,0 +1,16 @@
+{
+  "a_one_separate_proof": true,
+  "a_range": "real a>=1",
+  "activation_claimed": false,
+  "claim": "distinct physical points with equal Omega and equal |lambda| cannot have the same real part",
+  "cutoff_claimed": false,
+  "d_range": "integer d>=2",
+  "domain": "-pi/d<arg(S)<0 and its positive boundary, at defined points",
+  "external_review": false,
+  "formal_verification": false,
+  "global_SFC_claimed": false,
+  "global_branch_labeling_claimed": false,
+  "global_fixed_sign_claimed": false,
+  "independent_replay": false,
+  "schema": 1
+}
