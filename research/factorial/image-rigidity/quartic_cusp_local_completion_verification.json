@@ -1,0 +1,176 @@
+{
+  "checker_sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605",
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_children": [
+    {
+      "byte_identical": true,
+      "checker_role": "model_checker",
+      "receipt_sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "byte_identical": true,
+      "checker_role": "cusp_checker",
+      "receipt_sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "byte_identical": true,
+      "checker_role": "bounded_checker",
+      "receipt_sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    }
+  ],
+  "fresh_replays": 3,
+  "input_sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3",
+  "interpretation": "Source and finite-algebra replay supports the complete written proofs; no effective N0 or global cusp SFC claim.",
+  "mandatory_source_roles": 15,
+  "negative_controls": 44,
+  "negative_names": [
+    "omit-role:bounded_checker",
+    "bad-hash:bounded_checker",
+    "omit-role:bounded_proof",
+    "bad-hash:bounded_proof",
+    "omit-role:bounded_receipt",
+    "bad-hash:bounded_receipt",
+    "omit-role:completion_checker",
+    "bad-hash:completion_checker",
+    "omit-role:completion_inputs",
+    "bad-hash:completion_inputs",
+    "omit-role:cusp_checker",
+    "bad-hash:cusp_checker",
+    "omit-role:cusp_proof",
+    "bad-hash:cusp_proof",
+    "omit-role:cusp_receipt",
+    "bad-hash:cusp_receipt",
+    "omit-role:model_checker",
+    "bad-hash:model_checker",
+    "omit-role:model_inputs",
+    "bad-hash:model_inputs",
+    "omit-role:model_ledger",
+    "bad-hash:model_ledger",
+    "omit-role:model_proof",
+    "bad-hash:model_proof",
+    "omit-role:model_receipt",
+    "bad-hash:model_receipt",
+    "omit-role:primary_hjn",
+    "bad-hash:primary_hjn",
+    "omit-role:primary_newman",
+    "bad-hash:primary_newman",
+    "schema",
+    "empty",
+    "duplicate",
+    "false-scope:effective_N0",
+    "false-scope:uniform_in_s",
+    "false-scope:growing_scaled_window",
+    "false-scope:all_actual_roots_localized",
+    "false-scope:analytic_at_epsilon_zero",
+    "false-scope:global_cusp_SFC",
+    "missing-scope:fixed_integer_cusp",
+    "missing-scope:every_fixed_finite_scaled_window",
+    "missing-scope:whole_original_cycle",
+    "wrong-order-quantifier",
+    "forged-child-bytes"
+  ],
+  "schema": 1,
+  "scope": {
+    "C2_one_sided_epsilon_extension": true,
+    "actual_window": "abs(x/N^d-w_c) <= L*N^(-3/4)",
+    "all_actual_roots_localized": false,
+    "analytic_at_epsilon_zero": false,
+    "cusp_parameterization": {
+      "a": "s^2",
+      "d": "2s+1",
+      "s_min": 1
+    },
+    "effective_N0": false,
+    "every_fixed_finite_scaled_window": true,
+    "external_review": false,
+    "fixed_integer_cusp": true,
+    "formal_verification": false,
+    "global_cusp_SFC": false,
+    "growing_scaled_window": false,
+    "model_Lee_Yang_requires_real_tau": true,
+    "order_quantifier": "exists N0(s,L); all integers N>=N0(s,L)",
+    "schema": 1,
+    "uniform_in_s": false,
+    "whole_original_cycle": true
+  },
+  "source_ledger_sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78",
+  "sources": [
+    {
+      "path": "verify_bounded_quartic_cusp.py",
+      "role": "bounded_checker",
+      "sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc"
+    },
+    {
+      "path": "BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "bounded_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "path": "bounded_quartic_cusp_verification.json",
+      "role": "bounded_receipt",
+      "sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    },
+    {
+      "path": "verify_quartic_cusp_local_completion.py",
+      "role": "completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "path": "quartic_cusp_local_completion_inputs.json",
+      "role": "completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "path": "verify_quartic_cusp_unfolding.py",
+      "role": "cusp_checker",
+      "sha256": "2aaed2628fa2b900a2010bd06bfc7a366f149262f0df14151b684c389016eec3"
+    },
+    {
+      "path": "QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "role": "cusp_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "path": "quartic_cusp_unfolding_verification.json",
+      "role": "cusp_receipt",
+      "sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "path": "verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "role": "model_checker",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_inputs.json",
+      "role": "model_inputs",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "role": "model_ledger",
+      "sha256": "4abeba96e71f2c708448fa595504c5714e63aeb55551d0cebb5f3512f2b97bba"
+    },
+    {
+      "path": "QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "role": "model_proof",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_verification.json",
+      "role": "model_receipt",
+      "sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "path": "quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "role": "primary_hjn",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad"
+    },
+    {
+      "path": "quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "role": "primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,83 @@
+{
+  "external_review": false,
+  "formal_verification": false,
+  "package": "quartic-cusp-local-completion",
+  "schema": 1,
+  "sources": [
+    {
+      "path": "verify_bounded_quartic_cusp.py",
+      "role": "bounded_checker",
+      "sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc"
+    },
+    {
+      "path": "BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "bounded_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "path": "bounded_quartic_cusp_verification.json",
+      "role": "bounded_receipt",
+      "sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    },
+    {
+      "path": "verify_quartic_cusp_local_completion.py",
+      "role": "completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "path": "quartic_cusp_local_completion_inputs.json",
+      "role": "completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "path": "verify_quartic_cusp_unfolding.py",
+      "role": "cusp_checker",
+      "sha256": "2aaed2628fa2b900a2010bd06bfc7a366f149262f0df14151b684c389016eec3"
+    },
+    {
+      "path": "QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "role": "cusp_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "path": "quartic_cusp_unfolding_verification.json",
+      "role": "cusp_receipt",
+      "sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "path": "verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "role": "model_checker",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_inputs.json",
+      "role": "model_inputs",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "role": "model_ledger",
+      "sha256": "4abeba96e71f2c708448fa595504c5714e63aeb55551d0cebb5f3512f2b97bba"
+    },
+    {
+      "path": "QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "role": "model_proof",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_verification.json",
+      "role": "model_receipt",
+      "sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "path": "quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "role": "primary_hjn",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad"
+    },
+    {
+      "path": "quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "role": "primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    }
+  ]
+}

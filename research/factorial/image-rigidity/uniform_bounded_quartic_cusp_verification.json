@@ -1,0 +1,415 @@
+{
+  "checker_sha256": "79940a888698f55c23ff75c5f9d78ccd0d508add837f3f521f979bc5ffe00bb3",
+  "counts": {
+    "exact_integer_cusp_controls": 32,
+    "negative_controls": 4,
+    "rational_guards": 20,
+    "source_scope_controls": 29,
+    "universal_polynomial_identities": 7
+  },
+  "cusp_controls": [
+    {
+      "c_squared": "9/2",
+      "d": 3,
+      "gamma_squared": "1/200",
+      "s": 1
+    },
+    {
+      "c_squared": "25/6",
+      "d": 5,
+      "gamma_squared": "1/600",
+      "s": 2
+    },
+    {
+      "c_squared": "49/12",
+      "d": 7,
+      "gamma_squared": "1/1200",
+      "s": 3
+    },
+    {
+      "c_squared": "81/20",
+      "d": 9,
+      "gamma_squared": "1/2000",
+      "s": 4
+    },
+    {
+      "c_squared": "121/30",
+      "d": 11,
+      "gamma_squared": "1/3000",
+      "s": 5
+    },
+    {
+      "c_squared": "169/42",
+      "d": 13,
+      "gamma_squared": "1/4200",
+      "s": 6
+    },
+    {
+      "c_squared": "225/56",
+      "d": 15,
+      "gamma_squared": "1/5600",
+      "s": 7
+    },
+    {
+      "c_squared": "289/72",
+      "d": 17,
+      "gamma_squared": "1/7200",
+      "s": 8
+    },
+    {
+      "c_squared": "361/90",
+      "d": 19,
+      "gamma_squared": "1/9000",
+      "s": 9
+    },
+    {
+      "c_squared": "441/110",
+      "d": 21,
+      "gamma_squared": "1/11000",
+      "s": 10
+    },
+    {
+      "c_squared": "529/132",
+      "d": 23,
+      "gamma_squared": "1/13200",
+      "s": 11
+    },
+    {
+      "c_squared": "625/156",
+      "d": 25,
+      "gamma_squared": "1/15600",
+      "s": 12
+    },
+    {
+      "c_squared": "729/182",
+      "d": 27,
+      "gamma_squared": "1/18200",
+      "s": 13
+    },
+    {
+      "c_squared": "841/210",
+      "d": 29,
+      "gamma_squared": "1/21000",
+      "s": 14
+    },
+    {
+      "c_squared": "961/240",
+      "d": 31,
+      "gamma_squared": "1/24000",
+      "s": 15
+    },
+    {
+      "c_squared": "1089/272",
+      "d": 33,
+      "gamma_squared": "1/27200",
+      "s": 16
+    },
+    {
+      "c_squared": "1225/306",
+      "d": 35,
+      "gamma_squared": "1/30600",
+      "s": 17
+    },
+    {
+      "c_squared": "1369/342",
+      "d": 37,
+      "gamma_squared": "1/34200",
+      "s": 18
+    },
+    {
+      "c_squared": "1521/380",
+      "d": 39,
+      "gamma_squared": "1/38000",
+      "s": 19
+    },
+    {
+      "c_squared": "1681/420",
+      "d": 41,
+      "gamma_squared": "1/42000",
+      "s": 20
+    },
+    {
+      "c_squared": "1849/462",
+      "d": 43,
+      "gamma_squared": "1/46200",
+      "s": 21
+    },
+    {
+      "c_squared": "2025/506",
+      "d": 45,
+      "gamma_squared": "1/50600",
+      "s": 22
+    },
+    {
+      "c_squared": "2209/552",
+      "d": 47,
+      "gamma_squared": "1/55200",
+      "s": 23
+    },
+    {
+      "c_squared": "2401/600",
+      "d": 49,
+      "gamma_squared": "1/60000",
+      "s": 24
+    },
+    {
+      "c_squared": "2601/650",
+      "d": 51,
+      "gamma_squared": "1/65000",
+      "s": 25
+    },
+    {
+      "c_squared": "2809/702",
+      "d": 53,
+      "gamma_squared": "1/70200",
+      "s": 26
+    },
+    {
+      "c_squared": "3025/756",
+      "d": 55,
+      "gamma_squared": "1/75600",
+      "s": 27
+    },
+    {
+      "c_squared": "3249/812",
+      "d": 57,
+      "gamma_squared": "1/81200",
+      "s": 28
+    },
+    {
+      "c_squared": "3481/870",
+      "d": 59,
+      "gamma_squared": "1/87000",
+      "s": 29
+    },
+    {
+      "c_squared": "3721/930",
+      "d": 61,
+      "gamma_squared": "1/93000",
+      "s": 30
+    },
+    {
+      "c_squared": "3969/992",
+      "d": 63,
+      "gamma_squared": "1/99200",
+      "s": 31
+    },
+    {
+      "c_squared": "4225/1056",
+      "d": 65,
+      "gamma_squared": "1/105600",
+      "s": 32
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_local_completion": {
+    "byte_identical": true,
+    "child_fresh_replays": 3,
+    "receipt_sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+  },
+  "guard_names": [
+    "global_Lipschitz_upper",
+    "hard_radial_cap",
+    "imaginary_transport_power",
+    "large_d_real_margin",
+    "large_field_noise_decay",
+    "large_field_power",
+    "large_field_suppression",
+    "left_compact_p",
+    "left_tail_slope",
+    "normalization_large_m",
+    "phase_log_series_budget",
+    "positive_fixed_Q0",
+    "positive_uniform_c0",
+    "quartic_SOS_coefficient",
+    "relative_c_lower",
+    "right_tail_slope",
+    "root_motion_vs_radial",
+    "small_field_inverse_c",
+    "variance_scale_gaussian",
+    "variance_scale_quartic"
+  ],
+  "imported_local_closure": [
+    {
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "path": "research/factorial/image-rigidity/bounded_quartic_cusp_verification.json",
+      "sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_unfolding_verification.json",
+      "sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_inputs.json",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "sha256": "4abeba96e71f2c708448fa595504c5714e63aeb55551d0cebb5f3512f2b97bba"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_verification.json",
+      "sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_bounded_quartic_cusp.py",
+      "sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_unfolding.py",
+      "sha256": "2aaed2628fa2b900a2010bd06bfc7a366f149262f0df14151b684c389016eec3"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    }
+  ],
+  "imported_local_core_files": 17,
+  "input_sha256": "a3a444664f883bf9742e220087d8471c91140657c39c13cfae8b20dbe104327b",
+  "mandatory_source_roles": 8,
+  "meaning": "The full written proof establishes uniform analytic bounds. Exact/source replay does not replace compactness, Newman, or concentration arguments.",
+  "proof_sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e",
+  "schema": 1,
+  "scope": {
+    "all_N_at_fixed_support": false,
+    "all_actual_roots_localized": false,
+    "complete_original_positive_side_bound": true,
+    "effective_N0": false,
+    "external_review": false,
+    "field": "h_N=(N^(3/4)/c_d)*(x/(N^d*w_c)-1)",
+    "fixed_finite_H": true,
+    "formal_verification": false,
+    "global_SFC": false,
+    "growing_window": false,
+    "integer_cusps": {
+      "a": "s^2",
+      "d": "2s+1",
+      "s_min": 1
+    },
+    "order_quantifier": "exists N0(H); all integer s>=1 and all integers N>=N0(H)",
+    "schema": 1,
+    "uniform_in_integer_cusp_s": true,
+    "uniform_real_concentration": true
+  },
+  "soft_criterion_locator": "cor:linear-lower-exponent, beta=1",
+  "soft_criterion_sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9",
+  "source_ledger_sha256": "3791aedf89cee3b7229bf603e1458b40699714e3a46bcc06c902936f9806317c",
+  "source_scope_control_names": [
+    "omit:local_completion_checker",
+    "badpin:local_completion_checker",
+    "omit:local_completion_inputs",
+    "badpin:local_completion_inputs",
+    "omit:local_completion_ledger",
+    "badpin:local_completion_ledger",
+    "omit:local_completion_receipt",
+    "badpin:local_completion_receipt",
+    "omit:soft_criterion",
+    "badpin:soft_criterion",
+    "omit:uniform_checker",
+    "badpin:uniform_checker",
+    "omit:uniform_inputs",
+    "badpin:uniform_inputs",
+    "omit:uniform_proof",
+    "badpin:uniform_proof",
+    "false-scope:effective_N0",
+    "false-scope:growing_window",
+    "false-scope:all_N_at_fixed_support",
+    "false-scope:global_SFC",
+    "false-scope:all_actual_roots_localized",
+    "omitted-scope:fixed_finite_H",
+    "omitted-scope:uniform_in_integer_cusp_s",
+    "omitted-scope:complete_original_positive_side_bound",
+    "omitted-scope:uniform_real_concentration",
+    "ledger:schema",
+    "ledger:empty",
+    "ledger:duplicate",
+    "forged-child"
+  ],
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "role": "local_completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "role": "local_completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "role": "local_completion_ledger",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "role": "local_completion_receipt",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "soft_criterion",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "local",
+      "path": "verify_uniform_bounded_quartic_cusp.py",
+      "role": "uniform_checker",
+      "sha256": "79940a888698f55c23ff75c5f9d78ccd0d508add837f3f521f979bc5ffe00bb3"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_bounded_quartic_cusp_inputs.json",
+      "role": "uniform_inputs",
+      "sha256": "a3a444664f883bf9742e220087d8471c91140657c39c13cfae8b20dbe104327b"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "uniform_proof",
+      "sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e"
+    }
+  ],
+  "status": "PASS"
+}

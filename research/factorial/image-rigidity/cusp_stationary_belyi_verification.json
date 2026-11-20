@@ -1,0 +1,448 @@
+{
+  "arithmetic_squareclass_controls": [
+    {
+      "arithmetic": "S",
+      "d": 3,
+      "kappa": -3
+    },
+    {
+      "arithmetic": "S",
+      "d": 5,
+      "kappa": 5
+    },
+    {
+      "arithmetic": "S",
+      "d": 7,
+      "kappa": -7
+    },
+    {
+      "arithmetic": "A",
+      "d": 9,
+      "kappa": 9
+    },
+    {
+      "arithmetic": "S",
+      "d": 11,
+      "kappa": -11
+    },
+    {
+      "arithmetic": "S",
+      "d": 13,
+      "kappa": 13
+    },
+    {
+      "arithmetic": "S",
+      "d": 15,
+      "kappa": -15
+    },
+    {
+      "arithmetic": "S",
+      "d": 17,
+      "kappa": 17
+    },
+    {
+      "arithmetic": "S",
+      "d": 19,
+      "kappa": -19
+    },
+    {
+      "arithmetic": "S",
+      "d": 21,
+      "kappa": 21
+    },
+    {
+      "arithmetic": "S",
+      "d": 23,
+      "kappa": -23
+    },
+    {
+      "arithmetic": "A",
+      "d": 25,
+      "kappa": 25
+    },
+    {
+      "arithmetic": "S",
+      "d": 27,
+      "kappa": -27
+    },
+    {
+      "arithmetic": "S",
+      "d": 29,
+      "kappa": 29
+    },
+    {
+      "arithmetic": "S",
+      "d": 31,
+      "kappa": -31
+    },
+    {
+      "arithmetic": "S",
+      "d": 33,
+      "kappa": 33
+    },
+    {
+      "arithmetic": "S",
+      "d": 35,
+      "kappa": -35
+    },
+    {
+      "arithmetic": "S",
+      "d": 37,
+      "kappa": 37
+    },
+    {
+      "arithmetic": "S",
+      "d": 39,
+      "kappa": -39
+    },
+    {
+      "arithmetic": "S",
+      "d": 41,
+      "kappa": 41
+    },
+    {
+      "arithmetic": "S",
+      "d": 43,
+      "kappa": -43
+    },
+    {
+      "arithmetic": "S",
+      "d": 45,
+      "kappa": 45
+    },
+    {
+      "arithmetic": "S",
+      "d": 47,
+      "kappa": -47
+    },
+    {
+      "arithmetic": "A",
+      "d": 49,
+      "kappa": 49
+    }
+  ],
+  "bad_hash_controls": 6,
+  "checker_sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118",
+  "degenerate_discriminant_controls": 18,
+  "enumerated_geometric_groups": [
+    {
+      "d": 2,
+      "geometric": "S",
+      "order": 6
+    },
+    {
+      "d": 3,
+      "geometric": "A",
+      "order": 12
+    },
+    {
+      "d": 4,
+      "geometric": "S",
+      "order": 120
+    },
+    {
+      "d": 5,
+      "geometric": "A",
+      "order": 360
+    },
+    {
+      "d": 6,
+      "geometric": "S",
+      "order": 5040
+    },
+    {
+      "d": 7,
+      "geometric": "A",
+      "order": 20160
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "input_sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42",
+  "input_type_scope_controls": 4,
+  "literal_cover_controls": [
+    {
+      "c": "1/3",
+      "d": 2,
+      "degree": 3,
+      "fiber_one_cofactor_degree": 0,
+      "s_c": "3/4"
+    },
+    {
+      "c": "1/2",
+      "d": 3,
+      "degree": 4,
+      "fiber_one_cofactor_degree": 1,
+      "s_c": "2"
+    },
+    {
+      "c": "3/5",
+      "d": 4,
+      "degree": 5,
+      "fiber_one_cofactor_degree": 2,
+      "s_c": "15/4"
+    },
+    {
+      "c": "2/3",
+      "d": 5,
+      "degree": 6,
+      "fiber_one_cofactor_degree": 3,
+      "s_c": "6"
+    },
+    {
+      "c": "5/7",
+      "d": 6,
+      "degree": 7,
+      "fiber_one_cofactor_degree": 4,
+      "s_c": "35/4"
+    },
+    {
+      "c": "3/4",
+      "d": 7,
+      "degree": 8,
+      "fiber_one_cofactor_degree": 5,
+      "s_c": "12"
+    },
+    {
+      "c": "7/9",
+      "d": 8,
+      "degree": 9,
+      "fiber_one_cofactor_degree": 6,
+      "s_c": "63/4"
+    },
+    {
+      "c": "4/5",
+      "d": 9,
+      "degree": 10,
+      "fiber_one_cofactor_degree": 7,
+      "s_c": "20"
+    },
+    {
+      "c": "9/11",
+      "d": 10,
+      "degree": 11,
+      "fiber_one_cofactor_degree": 8,
+      "s_c": "99/4"
+    },
+    {
+      "c": "5/6",
+      "d": 11,
+      "degree": 12,
+      "fiber_one_cofactor_degree": 9,
+      "s_c": "30"
+    },
+    {
+      "c": "11/13",
+      "d": 12,
+      "degree": 13,
+      "fiber_one_cofactor_degree": 10,
+      "s_c": "143/4"
+    },
+    {
+      "c": "6/7",
+      "d": 13,
+      "degree": 14,
+      "fiber_one_cofactor_degree": 11,
+      "s_c": "42"
+    },
+    {
+      "c": "13/15",
+      "d": 14,
+      "degree": 15,
+      "fiber_one_cofactor_degree": 12,
+      "s_c": "195/4"
+    },
+    {
+      "c": "7/8",
+      "d": 15,
+      "degree": 16,
+      "fiber_one_cofactor_degree": 13,
+      "s_c": "56"
+    },
+    {
+      "c": "15/17",
+      "d": 16,
+      "degree": 17,
+      "fiber_one_cofactor_degree": 14,
+      "s_c": "255/4"
+    },
+    {
+      "c": "8/9",
+      "d": 17,
+      "degree": 18,
+      "fiber_one_cofactor_degree": 15,
+      "s_c": "72"
+    },
+    {
+      "c": "17/19",
+      "d": 18,
+      "degree": 19,
+      "fiber_one_cofactor_degree": 16,
+      "s_c": "323/4"
+    },
+    {
+      "c": "9/10",
+      "d": 19,
+      "degree": 20,
+      "fiber_one_cofactor_degree": 17,
+      "s_c": "90"
+    },
+    {
+      "c": "19/21",
+      "d": 20,
+      "degree": 21,
+      "fiber_one_cofactor_degree": 18,
+      "s_c": "399/4"
+    }
+  ],
+  "literal_discriminants": [
+    {
+      "W": -1,
+      "d": 2,
+      "discriminant": "432"
+    },
+    {
+      "W": 2,
+      "d": 2,
+      "discriminant": "-216"
+    },
+    {
+      "W": 3,
+      "d": 2,
+      "discriminant": "-1296"
+    },
+    {
+      "W": -1,
+      "d": 3,
+      "discriminant": "-110592"
+    },
+    {
+      "W": 2,
+      "d": 3,
+      "discriminant": "-110592"
+    },
+    {
+      "W": 3,
+      "d": 3,
+      "discriminant": "-995328"
+    },
+    {
+      "W": -1,
+      "d": 4,
+      "discriminant": "-86400000"
+    },
+    {
+      "W": 2,
+      "d": 4,
+      "discriminant": "172800000"
+    },
+    {
+      "W": 3,
+      "d": 4,
+      "discriminant": "2332800000"
+    },
+    {
+      "W": -1,
+      "d": 5,
+      "discriminant": "149299200000"
+    },
+    {
+      "W": 2,
+      "d": 5,
+      "discriminant": "597196800000"
+    },
+    {
+      "W": 3,
+      "d": 5,
+      "discriminant": "12093235200000"
+    },
+    {
+      "W": -1,
+      "d": 6,
+      "discriminant": "480290277600000"
+    },
+    {
+      "W": 2,
+      "d": 6,
+      "discriminant": "-3842322220800000"
+    },
+    {
+      "W": 3,
+      "d": 6,
+      "discriminant": "-116710537456800000"
+    },
+    {
+      "W": -1,
+      "d": 7,
+      "discriminant": "-2578538793598451712"
+    },
+    {
+      "W": 2,
+      "d": 7,
+      "discriminant": "-41256620697575227392"
+    },
+    {
+      "W": 3,
+      "d": 7,
+      "discriminant": "-1879754780533271298048"
+    },
+    {
+      "W": -1,
+      "d": 8,
+      "discriminant": "-21411581797011793379328"
+    },
+    {
+      "W": 2,
+      "d": 8,
+      "discriminant": "685170617504377388138496"
+    },
+    {
+      "W": 3,
+      "d": 8,
+      "discriminant": "46827129390064792120590336"
+    },
+    {
+      "W": -1,
+      "d": 9,
+      "discriminant": "259993489071144960000000000"
+    },
+    {
+      "W": 2,
+      "d": 9,
+      "discriminant": "16639583300553277440000000000"
+    },
+    {
+      "W": 3,
+      "d": 9,
+      "discriminant": "1705817281795782082560000000000"
+    },
+    {
+      "W": -1,
+      "d": 10,
+      "discriminant": "4421423477820821951160000000000"
+    },
+    {
+      "W": 2,
+      "d": 10,
+      "discriminant": "-565942205161065209748480000000000"
+    },
+    {
+      "W": 3,
+      "d": 10,
+      "discriminant": "-87026878313947238464682280000000000"
+    }
+  ],
+  "mandatory_sources": 6,
+  "missing_source_controls": 6,
+  "negative_controls": 7,
+  "optimized_mode_controls": 2,
+  "proof_sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+  "schema": 1,
+  "schema_controls": 2,
+  "scope": "Positive-parameter stationary branch classification, exact cusp geometric/arithmetic cover, distinguished global radial graph and activation barriers only; no global actual-root/SFC conclusion.",
+  "sector_derivative_controls": 54,
+  "source_ledger_sha256": "97b32b27b4cc60691e7a8fcfd68088b770b24a4691f960e7fc5773f2b88a62ee",
+  "status": "PASS_STATIONARY_COVER_ALGEBRA_AND_GROUP_SUPPORT",
+  "universal_identities": 10
+}

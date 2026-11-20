@@ -1,0 +1,152 @@
+{
+  "checker_sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc",
+  "counts": {
+    "actual_moment_pair_controls": 16,
+    "exact_cusp_first_corrections": 16,
+    "exponent_guards": 6,
+    "negative_controls": 4,
+    "universal_ODE_identities": 2
+  },
+  "local_cusp_proof_sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953",
+  "meaning": "Supporting exact algebra; written analysis supplies all asymptotic quantifiers.",
+  "proof_sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906",
+  "rows": [
+    {
+      "Fvvz": "0",
+      "a": 1,
+      "d": 3,
+      "gamma_squared": "1/200",
+      "s": 1,
+      "wc": "16"
+    },
+    {
+      "Fvvz": "0",
+      "a": 4,
+      "d": 5,
+      "gamma_squared": "1/600",
+      "s": 2,
+      "wc": "11664"
+    },
+    {
+      "Fvvz": "0",
+      "a": 9,
+      "d": 7,
+      "gamma_squared": "1/1200",
+      "s": 3,
+      "wc": "47775744"
+    },
+    {
+      "Fvvz": "0",
+      "a": 16,
+      "d": 9,
+      "gamma_squared": "1/2000",
+      "s": 4,
+      "wc": "640000000000"
+    },
+    {
+      "Fvvz": "0",
+      "a": 25,
+      "d": 11,
+      "gamma_squared": "1/3000",
+      "s": 5,
+      "wc": "21257640000000000"
+    },
+    {
+      "Fvvz": "0",
+      "a": 36,
+      "d": 13,
+      "gamma_squared": "1/4200",
+      "s": 6,
+      "wc": "1476344004845344395264"
+    },
+    {
+      "Fvvz": "0",
+      "a": 49,
+      "d": 15,
+      "gamma_squared": "1/5600",
+      "s": 7,
+      "wc": "190902823634801822682578944"
+    },
+    {
+      "Fvvz": "0",
+      "a": 64,
+      "d": 17,
+      "gamma_squared": "1/7200",
+      "s": 8,
+      "wc": "42247883974617233597120303333376"
+    },
+    {
+      "Fvvz": "0",
+      "a": 81,
+      "d": 19,
+      "gamma_squared": "1/9000",
+      "s": 9,
+      "wc": "15009463529699912100000000000000000000"
+    },
+    {
+      "Fvvz": "0",
+      "a": 100,
+      "d": 21,
+      "gamma_squared": "1/11000",
+      "s": 10,
+      "wc": "8140274938683976111332100000000000000000000"
+    },
+    {
+      "Fvvz": "0",
+      "a": 121,
+      "d": 23,
+      "gamma_squared": "1/13200",
+      "s": 11,
+      "wc": "6471261929941518215314558617286693741758624301056"
+    },
+    {
+      "Fvvz": "0",
+      "a": 144,
+      "d": 25,
+      "gamma_squared": "1/15600",
+      "s": 12,
+      "wc": "7292510533832475111575069082975522279838453658051149824"
+    },
+    {
+      "Fvvz": "0",
+      "a": 169,
+      "d": 27,
+      "gamma_squared": "1/18200",
+      "s": 13,
+      "wc": "11326928497018995174764020134017976419824070586054785634402304"
+    },
+    {
+      "Fvvz": "0",
+      "a": 196,
+      "d": 29,
+      "gamma_squared": "1/21000",
+      "s": 14,
+      "wc": "23676787189373286227143119048806309462250000000000000000000000000000"
+    },
+    {
+      "Fvvz": "0",
+      "a": 225,
+      "d": 31,
+      "gamma_squared": "1/24000",
+      "s": 15,
+      "wc": "65249504295362867872710100461288646829408256000000000000000000000000000000"
+    },
+    {
+      "Fvvz": "0",
+      "a": 256,
+      "d": 33,
+      "gamma_squared": "1/27200",
+      "s": 16,
+      "wc": "232864224454016874515996298619456100337888345032544328283694208666426419680641024"
+    }
+  ],
+  "scope": {
+    "all_actual_roots_localized": false,
+    "analytic_at_epsilon_zero": false,
+    "bounded_scaled_window": true,
+    "effective_cutoff": false,
+    "fixed_cusp": true,
+    "global_SFC": false
+  },
+  "status": "PASS"
+}

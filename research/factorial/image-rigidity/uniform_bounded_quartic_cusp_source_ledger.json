@@ -1,0 +1,56 @@
+{
+  "external_review": false,
+  "formal_verification": false,
+  "package": "uniform-bounded-quartic-cusp",
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "role": "local_completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "role": "local_completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "role": "local_completion_ledger",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "role": "local_completion_receipt",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "soft_criterion",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "local",
+      "path": "verify_uniform_bounded_quartic_cusp.py",
+      "role": "uniform_checker",
+      "sha256": "79940a888698f55c23ff75c5f9d78ccd0d508add837f3f521f979bc5ffe00bb3"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_bounded_quartic_cusp_inputs.json",
+      "role": "uniform_inputs",
+      "sha256": "a3a444664f883bf9742e220087d8471c91140657c39c13cfae8b20dbe104327b"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "uniform_proof",
+      "sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e"
+    }
+  ]
+}

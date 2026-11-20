@@ -1,0 +1,21 @@
+{
+  "all_N_at_fixed_support": false,
+  "all_actual_roots_localized": false,
+  "complete_original_positive_side_bound": true,
+  "effective_N0": false,
+  "external_review": false,
+  "field": "h_N=(N^(3/4)/c_d)*(x/(N^d*w_c)-1)",
+  "fixed_finite_H": true,
+  "formal_verification": false,
+  "global_SFC": false,
+  "growing_window": false,
+  "integer_cusps": {
+    "a": "s^2",
+    "d": "2s+1",
+    "s_min": 1
+  },
+  "order_quantifier": "exists N0(H); all integer s>=1 and all integers N>=N0(H)",
+  "schema": 1,
+  "uniform_in_integer_cusp_s": true,
+  "uniform_real_concentration": true
+}

@@ -1,0 +1,51 @@
+{
+  "external_review": false,
+  "files": [
+    {
+      "path": "CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "root": "local",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "path": "cusp_stationary_belyi_inputs.json",
+      "root": "local",
+      "sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42"
+    },
+    {
+      "path": "cusp_stationary_belyi_primary_audit.md",
+      "root": "local",
+      "sha256": "cc9535349d58cd4cdf57d305f3d2b674957f2ea95c15b7f3f78ca7c2cd25b038"
+    },
+    {
+      "path": "sources/vidunas-belyi-2025.pdf",
+      "root": "local",
+      "sha256": "62973b1fdf8ebdca85a845db389625922f48e1862173e4b72d92a85db8f088dd"
+    },
+    {
+      "path": "verify_cusp_stationary_belyi_monodromy.py",
+      "root": "local",
+      "sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    }
+  ],
+  "formal_verification": false,
+  "independent_replay": false,
+  "primary_context": [
+    {
+      "doi": "10.3390/math13010156",
+      "locator": "Section5 Remark3 Eq98, printed15",
+      "scope": "Classical exact rational Belyi family; not a logical premise of the self-contained monodromy proof."
+    },
+    {
+      "doi": "10.1017/S0963548303006023",
+      "locator": "Theorem1.5 printed226 and Theorem3.2 printed235",
+      "scope": "Exact analytic sum / logarithmic-growth accumulation context only; no automatic saddle/SFC import."
+    }
+  ],
+  "schema": 1,
+  "scope": "Exact stationary geometry and monodromy, with explicit active-saddle scope barriers; no actual global zero/SFC claim."
+}

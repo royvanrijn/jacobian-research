@@ -1,0 +1,23 @@
+{
+  "C2_one_sided_epsilon_extension": true,
+  "actual_window": "abs(x/N^d-w_c) <= L*N^(-3/4)",
+  "all_actual_roots_localized": false,
+  "analytic_at_epsilon_zero": false,
+  "cusp_parameterization": {
+    "a": "s^2",
+    "d": "2s+1",
+    "s_min": 1
+  },
+  "effective_N0": false,
+  "every_fixed_finite_scaled_window": true,
+  "external_review": false,
+  "fixed_integer_cusp": true,
+  "formal_verification": false,
+  "global_cusp_SFC": false,
+  "growing_scaled_window": false,
+  "model_Lee_Yang_requires_real_tau": true,
+  "order_quantifier": "exists N0(s,L); all integers N>=N0(s,L)",
+  "schema": 1,
+  "uniform_in_s": false,
+  "whole_original_cycle": true
+}

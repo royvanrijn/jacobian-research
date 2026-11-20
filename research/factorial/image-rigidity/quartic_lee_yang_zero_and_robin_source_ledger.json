@@ -1,0 +1,34 @@
+{
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "schema": 1,
+  "sources": [
+    {
+      "path": "QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "path": "verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    },
+    {
+      "path": "quartic_lee_yang_zero_and_robin_inputs.json",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "locator": "Theorem 2, (1.8), printed pp.246-248; empty-product quartic class and proof of sufficiency",
+      "path": "quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "scope": "Essential all-real-tau imaginary-zero theorem. Direct specialization, not inferred from critical limit.",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28",
+      "url": "https://sites.math.northwestern.edu/~auffing/papers/Newman.pdf"
+    },
+    {
+      "locator": "Equation (17), Theorem 2, printed p.5",
+      "path": "quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "scope": "Essential finite-CW monotonicity at fixed even degree and positive coupling; even-degree critical subsequence. Odd degree has a constant pi/2 endpoint, not used. No adjacent-degree interlacing or uniform Gamma approximation.",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad",
+      "url": "https://arxiv.org/pdf/2208.00917v1"
+    }
+  ]
+}

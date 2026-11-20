@@ -4,7 +4,7 @@
 
 Factorial moment functionals, composition rigidity and Strong Factorial families.
 
-**Authored assessment:** Ordinary Strong Factorial is proved at every gap and terminal for least exponentsONE andTWO over every characteristic-zero coefficient field. Lower-two closure uses weighted actual consecutive-pair contours, sparse overlap and complete176816-case modular/independent Bezout evidence. Arbitrary lower exponents, all-positive-Gamma strict terminal determinants, general supports and unrestricted FC/SFC remain open.
+**Authored assessment:** Ordinary Strong Factorial is proved at every gap and terminal for least exponentsONE andTWO over every characteristic-zero coefficient field. Lower-two closure uses weighted actual consecutive-pair contours, sparse overlap and complete176816-case modular/independent Bezout evidence. Arbitrary lower exponents, all-positive-Gamma strict terminal determinants, general supports and unrestricted FC/SFC remain open. A uniform numerical tail is also proved for all gaps d>=2, all lower exponents a>=10^24*d^2 and every terminal order; a separate Grace-based route gives a>=10^20*d^4. The unrestricted remaining lower-exponent region is not closed.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -80,10 +80,14 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | A full regular cubic inverse on the actual endpoint window | Internal result | proved | [Source](image-rigidity/GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md) |
 | An explicit global Airy contour bound in the joint norm | Internal result | proved | [Source](image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md) |
 | Ordinary gap-two Strong Factorial for all lower exponents at least4*10^16 | Internal result | proved | [Source](image-rigidity/GAP_TWO_EFFECTIVE_LARGE_LOWER_EXPONENT_THEOREM.md) |
+| Polynomial all-root localization from moving Grace discs | Internal result | proved | [Source](image-rigidity/ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md) |
+| A uniform quadratic lower-exponent tail for ordinary Strong Factorial | Internal result | proved | [Source](image-rigidity/UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md) |
+| Uniform eventual exclusion in bounded quartic-cusp windows | Internal result | proved | [Source](image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md) |
+| Stationary cusp covers, monodromy and global radial geometry | Internal result | proved | [Source](image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md) |
 
-**Computed obligations:** 47 unresolved; 11 resolved within their exact scope.
+**Computed obligations:** 52 unresolved; 12 resolved within their exact scope.
 
-**Assessment update needed:** GAP-FACTORIAL-GAP-TWO-UNIFORM-QUANTITATIVE-CUBIC-INVERSE now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
+**Assessment update needed:** GAP-FACTORIAL-GAP-TWO-UNIFORM-QUANTITATIVE-CUBIC-INVERSE, GAP-FACTORIAL-UNIFORM-GAP-POLYNOMIAL-TAIL-ANALYTIC-CONTROL now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
 
 
 Scope limits:
@@ -145,6 +149,9 @@ Scope limits:
 - The quantitative gap-two package proves explicit matched stationary data and a true full inverse at the exact critical basepoint, together with a conditional Robin budget. The separate full-window theorem now supplies an inverse on the actual thin rectangle; the stronger uniform C_R<=10^10 optimization remains open. The separate effective theorem supplies the4*10^16 cutoff by a larger piecewise budget.
 - A true uniform cubic inverse is now proved on the actual thin endpoint rectangle, and a separate global Ai-contour envelope has explicit constant20000000. The separate effective theorem now controls actual complete-period pieces and supplies the4*10^16 cutoff using larger piecewise constants. The stronger uniform10^10/2300 optimization and broader40000 property remain open.
 - An explicit actual-period proof now gives ordinary gap-two Strong Factorial for every integer a>=4*10^16 and every terminal order. It uses piecewise compact10^14/large10^9 remainders. The broader40000 threshold, all smaller lower exponents together and full binomial Strong Factorial remain open; the older stronger uniform10^10/2300 optimization is not implied.
+- Moving Grace-disc centres now give polynomial all-root real/imaginary bounds for every finite order and real a>=100*d^2, with explicit a>=C*d^4 thin-strip corollaries. On the integer domain, two still-open actual coprimality and strip-noncollision assertions are equivalent. No stronger SFC claim is inferred from localization alone; separate uniform phase and quadratic-tail proofs now provide their explicitly stated larger-threshold results.
+- The uniform quadratic ordinary-SFC tail a>=10^24*d^2 now holds for every integer d>=2 and every terminal order over every characteristic-zero field. Its exact Bad_d cap is equivalent. The Bell/homotopy route imports no400 Grace strip; the separately retained quartic10^20*d^4 route does. All a>=100*d^2 noncollision, full binomial SFC and the stronger older remainder optimizations remain open.
+- At integer quartic cusps a=s^2,d=2s+1, actual consecutive roots are eventually excluded from every fixed normalized compact field window with one uncomputed cutoff N0(H) independent of s. The complete stationary-cover classification and distinguished global radial graph are separate structural results. Full cusp SFC, active original cycles and escaping actual roots remain open.
 
 Tracked obligations (computed states):
 
@@ -172,5 +179,11 @@ Tracked obligations (computed states):
 - **mathematical / proved (discharged):** Authored question: [Uniform quantitative persistence of the true cubic inverse on a nonzero endpoint parameter window.](image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md) — GAP-FACTORIAL-GAP-TWO-UNIFORM-QUANTITATIVE-CUBIC-INVERSE
 - **mathematical / open:** [An explicit bound for the actual complete-period Airy vector remainder and its nonlocal constants.](image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md) — GAP-FACTORIAL-GAP-TWO-EXPLICIT-COMPLETE-PERIOD-REMAINDER
 - **mathematical / open:** [Explicit complete-period contour connections, nonlocal contributions and compatible normalization strong enough for a numerical Airy remainder budget.](image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md) — GAP-FACTORIAL-GAP-TWO-QUANTITATIVE-COMPLETE-PERIOD-CONNECTORS
+- **mathematical / open:** [Actual consecutive coprimality in the integer polynomial Grace region, equivalently strip noncollision.](image-rigidity/ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md) — GOAL-FACTORIAL-POLYNOMIAL-GRACE-REGION-COPRIMALITY
+- **mathematical / open:** [Common-root exclusion in the polynomial Grace strip at the same upper-order affine argument.](image-rigidity/ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md) — GAP-FACTORIAL-POLYNOMIAL-GRACE-STRIP-NONCOLLISION
+- **mathematical / proved (discharged):** Authored question: [An absolute all-gap polynomial tail is now proved by the uniform quadratic and separate quartic theorems; smaller constants and the full a>=100*d^2 region remain separate.](image-rigidity/ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md) — GAP-FACTORIAL-UNIFORM-GAP-POLYNOMIAL-TAIL-ANALYTIC-CONTROL
+- **mathematical / open:** [For every s>=1 and N>=2 prove actual consecutive coprimality at a=s^2,d=2s+1. Eventual uniform fixed-H exclusion does not prove this global property.](image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md) — GOAL-FACTORIAL-INTEGER-QUARTIC-CUSP-ALL-ORDER-SFC
+- **mathematical / open:** [Determine and exclude possible common roots outside every fixed bounded normalized h_N window, including growing indices and the complementary coefficient plane. No global capture follows from compact-window branches.](image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md) — GAP-FACTORIAL-QUARTIC-CUSP-ESCAPING-FIELD-EXHAUSTION
+- **mathematical / open:** [Determine original-cycle saddle coefficients on cut cells, bound complete packets near active ties and branch values, and prove actual-zero exhaustion. The distinguished radial graph alone does not prove activation or finite-order SFC.](image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md) — GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

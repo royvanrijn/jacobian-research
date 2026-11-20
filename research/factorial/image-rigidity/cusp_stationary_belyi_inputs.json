@@ -1,0 +1,21 @@
+{
+  "actual_global_zero_localization": false,
+  "cusp_a": "(d-1)^2/4",
+  "distinguished_global_radial_graph": true,
+  "distinguished_sector_d_min": 3,
+  "enumerated_group_d_max": 7,
+  "general_real_a_strictly_positive": true,
+  "geometric_odd_cusp": "A_(d+1)",
+  "geometric_other": "S_(d+1)",
+  "integer_d_min": 2,
+  "literal_cover_d_max": 20,
+  "literal_discriminant_W": [
+    -1,
+    2,
+    3
+  ],
+  "literal_discriminant_d_max": 10,
+  "new_SFC_claim": false,
+  "odd_cusp_arithmetic_constant": "(-1)^((d-1)/2)*d",
+  "schema": 1
+}
