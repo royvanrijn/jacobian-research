@@ -1,0 +1,192 @@
+{
+  "checker_sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d",
+  "comparisons": [
+    {
+      "left": "1/3",
+      "name": "positive contour cross coefficient",
+      "relation": "=",
+      "right": "1/3"
+    },
+    {
+      "left": "5/9",
+      "name": "positive contour cubic loss",
+      "relation": "=",
+      "right": "5/9"
+    },
+    {
+      "left": "32",
+      "name": "positive contour envelope constant squared",
+      "relation": "<",
+      "right": "36"
+    },
+    {
+      "left": "48",
+      "name": "cos5pi12 exceeds one quarter squared reduction",
+      "relation": "<",
+      "right": "49"
+    },
+    {
+      "left": "16/25",
+      "name": "negative middle square-root lower",
+      "relation": "<",
+      "right": "7/9"
+    },
+    {
+      "left": "4/9",
+      "name": "negative middle D factor",
+      "relation": "<",
+      "right": "64/135"
+    },
+    {
+      "left": "19/6",
+      "name": "negative middle arc derivative",
+      "relation": "<",
+      "right": "4"
+    },
+    {
+      "left": "216",
+      "name": "negative middle Gaussian constant squared",
+      "relation": "<",
+      "right": "225"
+    },
+    {
+      "left": "2/27",
+      "name": "negative upper D quadratic",
+      "relation": "=",
+      "right": "2/27"
+    },
+    {
+      "left": "22/9",
+      "name": "negative upper arc derivative",
+      "relation": "<",
+      "right": "3"
+    },
+    {
+      "left": "729/4",
+      "name": "negative upper Gaussian constant squared",
+      "relation": "=",
+      "right": "729/4"
+    },
+    {
+      "left": "5/3",
+      "name": "negative lower arc derivative",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "432",
+      "name": "negative lower Gaussian constant squared",
+      "relation": "<",
+      "right": "441"
+    },
+    {
+      "left": "99/2",
+      "name": "negative full envelope",
+      "relation": "<",
+      "right": "50"
+    },
+    {
+      "left": "5/8",
+      "name": "Robin denominator bootstrap",
+      "relation": "=",
+      "right": "5/8"
+    },
+    {
+      "left": "8/5",
+      "name": "Robin speed bootstrap",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "15/2",
+      "name": "endpoint drift coefficient",
+      "relation": "=",
+      "right": "15/2"
+    },
+    {
+      "left": "0",
+      "name": "minimum terminal positive rho gap",
+      "relation": "<",
+      "right": "4"
+    }
+  ],
+  "negative_controls": 3,
+  "pins": [
+    {
+      "path": "GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "local",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    },
+    {
+      "path": "verify_gap_two_endpoint_contour_identities.py",
+      "root": "local",
+      "sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d"
+    },
+    {
+      "path": "sources/dlmf-2-4-endpoint.html",
+      "root": "local",
+      "sha256": "c90ac6736075b2d0851c48421da534e74d99ef2d1f33884024ef6297f1dc971f"
+    },
+    {
+      "path": "sources/dlmf-9-2-endpoint.html",
+      "root": "local",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "path": "sources/dlmf-9-7-endpoint.html",
+      "root": "local",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "path": "sources/dlmf-9-9-endpoint.html",
+      "root": "local",
+      "sha256": "7f5e538332164cf3103abb2374acc2619bfca1c765cd46e04fa738ec790d962b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "root": "repo",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "root": "repo",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_HERMITE_BULK.md",
+      "root": "repo",
+      "sha256": "080041f624d7f2b116ffb14fceafc484a35a2857e57c172348b532f059bcd856"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_HERMITE_BULK_CONTOUR_EXCLUSION.md",
+      "root": "repo",
+      "sha256": "6cdbfc1b494ddf7b19d4f2d1543e617abc7b97ecf578f4381ac8d9c4a4a4688c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+      "root": "repo",
+      "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_OUTSIDE_ENDPOINT_ONE_PACKET.md",
+      "root": "repo",
+      "sha256": "6a326ebc96592fbcaf16eeeffcf4851d6f80fefb1a27ce8fb13fb90ce34a83eb"
+    },
+    {
+      "path": "gap_two_large_lower_endpoint_primary_audit.md",
+      "root": "local",
+      "sha256": "e93ab7dc1aa6e0383cbfbb14c7c0eab58dcc0c1964f904809c8209936c2b1d02"
+    }
+  ],
+  "polynomial_division_cases": 18,
+  "proof_sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58",
+  "schema": 1,
+  "scope": "universal algebra and rational contour guards; the written argument supplies analytic uniformity and the nonnumerical threshold",
+  "source_ledger_sha256": "36d76238946c169c64a52b5edb01c43b14bd909411d9ffda1b03474ddae2d0bb",
+  "universal_identity_count": 10
+}

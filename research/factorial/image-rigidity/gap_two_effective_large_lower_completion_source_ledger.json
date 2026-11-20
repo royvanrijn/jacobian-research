@@ -1,0 +1,286 @@
+{
+  "coverage": [
+    {
+      "declaration": "Theorem EffectiveGapTwoLargeLowerExponent",
+      "proof": "GAP_TWO_EFFECTIVE_LARGE_LOWER_EXPONENT_THEOREM.md",
+      "scope": "Exact ordinary actual-moment pair; large lower exponent at fixed gap2 only."
+    }
+  ],
+  "files": [
+    {
+      "path": "ACTUAL_SHIFTED_HERMITE_NONLOCAL_BOUND.md",
+      "root": "local",
+      "sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95"
+    },
+    {
+      "path": "COMPACT_AIRY_PHYSICAL_CUT_ADDENDUM.md",
+      "root": "local",
+      "sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4"
+    },
+    {
+      "path": "GAP_TWO_EFFECTIVE_LARGE_LOWER_EXPONENT_THEOREM.md",
+      "root": "local",
+      "sha256": "561a32a1c77f2070f18ba4f2ae3f2f583413eea2dcddbedca50b5c4325a9e035"
+    },
+    {
+      "path": "GAP_TWO_HORIZONTAL_ENDPOINT_CUBIC_LOCATION.md",
+      "root": "local",
+      "sha256": "2c78967e7950153d60188c41330d3b832efb080add9627adf27f34ebc79711b5"
+    },
+    {
+      "path": "NEGATIVE_AIRY_CURVE_OUTER_TAIL.md",
+      "root": "local",
+      "sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a"
+    },
+    {
+      "path": "POSITIVE_AIRY_THIN_OUTER_TAIL_AND_CUT_GEOMETRY.md",
+      "root": "local",
+      "sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_inputs.json",
+      "root": "local",
+      "sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_source_ledger.json",
+      "root": "local",
+      "sha256": "1fe3919a7f2f8ada0e6de5182614e6700efad45d76372466283f38f4a0d30e45"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_verification.json",
+      "root": "local",
+      "sha256": "d5c26c11f0374a704779cd8d7e4b94bc38aa69f6539c9cde0c55434b3a23daba"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_inputs.json",
+      "root": "local",
+      "sha256": "169e26d91b196625c328bad6681a60c2d6240a33f1b5766c53f222b0b0beeb34"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_source_ledger.json",
+      "root": "local",
+      "sha256": "c4bbffe41566ca173a65d22052a6d05057b4113274ab135dbf1352c203c1fcde"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_verification.json",
+      "root": "local",
+      "sha256": "6356a98a106fa91ea9806b0d36f3f1dca5df3dbe2406f24dead9f7d7a9f3b3d3"
+    },
+    {
+      "path": "compact_airy_physical_cut_verification.json",
+      "root": "local",
+      "sha256": "f463c0d7039d517a7d23601b4a6599807cfd951ce9454923d7c6bc9e12a028cb"
+    },
+    {
+      "path": "gap_two_effective_large_lower_completion_inputs.json",
+      "root": "local",
+      "sha256": "89408cc62f4a1f316ff7c8d164a47dce7164acd692fcd99420d53db0f2b06f37"
+    },
+    {
+      "path": "gap_two_effective_large_lower_exponent_verification.json",
+      "root": "local",
+      "sha256": "a45db11e60af6b454b431539191f04aba66ddbfbffa00eaa3d2cbc07c9289a51"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_cubic_balls_verification.json",
+      "root": "local",
+      "sha256": "748d043c8f70cfcbb7ff4960bf01692eeeab2539ce184f86b5f2c72de012b9e7"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_inputs.json",
+      "root": "local",
+      "sha256": "fefe4d982d3fe9bdfacde78a267a23225ddd3d61d53826b6b71dd1f9bd3f5dd8"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_location_verification.json",
+      "root": "local",
+      "sha256": "b01d1863a64d110a1f87fed8360ba255316eefc02c19c06834430ca7c6c2767d"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_primary_audit.md",
+      "root": "local",
+      "sha256": "d98a52ad46e2bba9c82ddce3609dc09cbdc46d5497a2242a13d8acef16fdcc0a"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_source_ledger.json",
+      "root": "local",
+      "sha256": "0e5dfea9def3dda3798217286f358d06fe34f87a064ecb7d75e00beef7e801e8"
+    },
+    {
+      "path": "negative_airy_curve_outer_tail_verification.json",
+      "root": "local",
+      "sha256": "d2868f15a06887406f852951733a008d0ba0a9400002166ed655b53662d84790"
+    },
+    {
+      "path": "positive_airy_thin_outer_tail_verification.json",
+      "root": "local",
+      "sha256": "aee4e07dd69f1f03588a25f2423c1b4e20f0165b548ccb69ae4f4f082c0053df"
+    },
+    {
+      "path": "verify_actual_shifted_hermite_nonlocal.py",
+      "root": "local",
+      "sha256": "1f257df5560f72c61128fb97c63c07c04568967358b51ccefcc90dfdfecd4141"
+    },
+    {
+      "path": "verify_airy_outer_tail_and_cut_package.py",
+      "root": "local",
+      "sha256": "ddfde9e607cef379e0c1f65b1b5277c11049b9731d693f2627757eadc1cb3a3f"
+    },
+    {
+      "path": "verify_compact_airy_physical_cut.py",
+      "root": "local",
+      "sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4"
+    },
+    {
+      "path": "verify_gap_two_effective_large_lower_completion.py",
+      "root": "local",
+      "sha256": "eadf840e147e070656e0742443a9d8acd0fa1e216bfe3b10ac7746c8e8b83def"
+    },
+    {
+      "path": "verify_gap_two_effective_large_lower_exponent.py",
+      "root": "local",
+      "sha256": "917cf63f26b3d41b4d76301cbc1cd6ba406bb0e9afa7c8ba9ab5269d7457127b"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_cubic_balls.py",
+      "root": "local",
+      "sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_location.py",
+      "root": "local",
+      "sha256": "12e05090b021420b109f02e7fa7f303ac4883d057226f0bb401c43d08842a8b5"
+    },
+    {
+      "path": "verify_negative_airy_curve_outer_tail.py",
+      "root": "local",
+      "sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f"
+    },
+    {
+      "path": "verify_positive_airy_thin_outer_tail.py",
+      "root": "local",
+      "sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+      "root": "repo",
+      "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "root": "repo",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+      "root": "repo",
+      "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+      "root": "repo",
+      "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "repo",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    },
+    {
+      "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "repo",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_source_ledger.json",
+      "root": "repo",
+      "sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_verification.json",
+      "root": "repo",
+      "sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_endpoint_contour_identities_verification.json",
+      "root": "repo",
+      "sha256": "e38c0a891d3809ae8086718568965131c708c5181c6459c04a7b10d9e69bce23"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_endpoint_reduction_guards_verification.json",
+      "root": "repo",
+      "sha256": "5f40fb1dcd791ff276f8a104fe72d2854c4b18ba8438b77ec24ef62d83ef394d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_endpoint_reduction_source_ledger.json",
+      "root": "repo",
+      "sha256": "b981f929bb70d888cb8f553e6530074af4d5e4854613761f82f8c43766423806"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_source_ledger.json",
+      "root": "repo",
+      "sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_verification.json",
+      "root": "repo",
+      "sha256": "48967f0cdbd59c1f48d6f6794fd36df923510be5799c635123c5688c550fbd40"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_large_lower_endpoint_source_ledger.json",
+      "root": "repo",
+      "sha256": "36d76238946c169c64a52b5edb01c43b14bd909411d9ffda1b03474ddae2d0bb"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_source_ledger.json",
+      "root": "repo",
+      "sha256": "2834fdd366ed1f162c5a66b2bdbcfabe271a1b232a806db555f36f57426e3858"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_verification.json",
+      "root": "repo",
+      "sha256": "30794eba794e5228868cb259978ca3a6207bac11747e81e3179e109af5b60657"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_explicit_airy_contour_envelope.py",
+      "root": "repo",
+      "sha256": "b820a1ce46ccf1bc6242e0e39f2c25b500bbae33e9d3917512eea343d4d32da1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_endpoint_contour_identities.py",
+      "root": "repo",
+      "sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_endpoint_reduction_guards.py",
+      "root": "repo",
+      "sha256": "8e2d3ad12cf498a297b05cf1956c3a115ad1062477d4c824b103fcd791aec3ea"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_full_endpoint_uniform_inverse.py",
+      "root": "repo",
+      "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quantitative_gap_two_endpoint_data.py",
+      "root": "repo",
+      "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+    }
+  ],
+  "mandatory_pin_cardinalities": {
+    "local": 31,
+    "repo": 22,
+    "total": 53
+  },
+  "mathematical_premises": "The written proof gives complete actual normalization, physical/canonical Cauchy replacement, five-term remainder aggregation, piecewise Robin control and actual adjacent-order drift. Separate audited contour/inverse/norm accounts are explicitly pinned. Certificate replays support those analytic proofs, not replace them.",
+  "primary_context": "Classical argument-principle/Rouche and Airy ODE/zeros/finite asymptotic-error inputs are pinned by canonical396/397/398 and394 source ledgers and freshly replayed. The exact soft boundary is the retained GAMMA_PRODUCT_ROOT_MODULUS.tex cor:linear-lower-exponent. No unquantified CFU compactness constant is used for the numerical threshold.",
+  "replay_scope": "Four local source-guarded children and five retained canonical checkers are run afresh; every complete receipt is compared bytewise. Child wrappers recursively validate the retained primary and source inputs. Deterministic parent receipt omits timing and absolute paths.",
+  "schema": 1,
+  "scope": "Support for the written effective ordinary gap-two theorem: all integer a>=4e16, every actual terminal order, every characteristic-zero field, NONZERO binomials. No full-a>=40000 or uniformC_R1e10 claim."
+}

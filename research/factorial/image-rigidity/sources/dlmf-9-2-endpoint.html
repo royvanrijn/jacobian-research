@@ -1,0 +1,1219 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/9.2";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./9#PT2" title="Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="up up" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./9.1" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions">
+<link rel="next" href="./9.3" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.1" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.3" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.5" title="§9.5 Integral Representations ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.6" title="§9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.8" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.10" title="§9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.11" title="§9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.12" title="§9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.13" title="§9.13 Generalized Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.14" title="§9.14 Incomplete Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.16" title="§9.16 Physical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.18" title="§9.18 Tables ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.19" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.20" title="§9.20 Software ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB1" title="Sidebar 9.SB1: Supernumerary Rainbows ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB2" title="Sidebar 9.SB2: Interference Patterns in Caustics ‣ Chapter 9 Airy and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Airy functions, Airy’s equation, Riccati form, Wronskians, analytic properties, connection formulas, definitions, differential equation, initial values, numerically satisfactory solutions">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./9" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>Airy and Related Functions</span></a><a href="./9#PT2" title="In Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Airy Functions</span></a><a href="./9.1" title="In Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.1 </span>Special Notation</span></a><a href="./9.3" title="In Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.3 </span>Graphics</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§9.2 </span>Differential Equation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.17#Px4" title="Airy Functions (§9.2) ‣ §1.17(ii) Integral Representations ‣ §1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.17(ii)</span></a>,
+<a href="./10.19#iii.p3" title="§10.19(iii) Transition Region ‣ §10.19 Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.19(iii)</span></a>,
+<a href="./10.20#i.p4" title="§10.20(i) Real Variables ‣ §10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.20(i)</span></a>,
+<a href="./15.12#iii.p7" title="§15.12(iii) Other Large Parameters ‣ §15.12 Asymptotic Approximations ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.12(iii)</span></a>,
+<a href="./18.15#Px3.p1" title="In Terms of Airy Functions ‣ §18.15(iv) Laguerre ‣ §18.15 Asymptotic Approximations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.15(iv)</span></a>,
+<a href="./18.32#p1" title="§18.32 OP’s with Respect to Freud Weights ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.32</span></a>,
+<a href="./18.34#iii.p2" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.35#iii.p2" title="§18.35(iii) Other Properties ‣ §18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.35(iii)</span></a>,
+<a href="./2.4#v.p2" title="§2.4(v) Coalescing Saddle Points: Chester, Friedman, and Ursell’s Method ‣ §2.4 Contour Integrals ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.4(v)</span></a>,
+<a href="./2.8#i.p5" title="§2.8(i) Classification of Cases ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(i)</span></a>,
+<a href="./2.8#iii.p3" title="§2.8(iii) Case II: Simple Turning Point ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iii)</span></a>,
+<a href="./3.3#Px8.p1" title="Example ‣ §3.3(v) Inverse Interpolation ‣ §3.3 Interpolation ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.3(v)</span></a>,
+<a href="./32.10#ii.p1" title="§32.10(ii) Second Painlevé Equation ‣ §32.10 Special Function Solutions ‣ Properties ‣ Chapter 32 Painlevé Transcendents" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§32.10(ii)</span></a>,
+<a href="./32.11#ii.p1" title="§32.11(ii) Second Painlevé Equation ‣ §32.11 Asymptotic Approximations for Real Variables ‣ Properties ‣ Chapter 32 Painlevé Transcendents" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§32.11(ii)</span></a>,
+<a href="./32.14#p1" title="§32.14 Combinatorics ‣ Applications ‣ Chapter 32 Painlevé Transcendents" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§32.14</span></a>,
+<a href="./32.5#p1" title="§32.5 Integral Equations ‣ Properties ‣ Chapter 32 Painlevé Transcendents" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§32.5</span></a>,
+<a href="./33.12#i.p2" title="§33.12(i) Transition Region ‣ §33.12 Asymptotic Expansions for Large 𝜂 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.12(i)</span></a>,
+<a href="./36.1#t1.r5" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.1</span></a>,
+<a href="./36.12#ii.p3" title="§36.12(ii) Special Case ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(ii)</span></a>,
+<a href="./36.2#ii.p1" title="§36.2(ii) Special Cases ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.2(ii)</span></a>,
+<a href="./36.7#i.p1" title="§36.7(i) Fold Canonical Integral ‣ §36.7 Zeros ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.7(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2" title="" class="ltx_ref">http://dlmf.nist.gov/9.2</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§9.2(i) </span>Airy’s Equation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§9.2(ii) </span>Initial Values</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§9.2(iii) </span>Numerically Satisfactory Pairs of Solutions</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§9.2(iv) </span>Wronskians</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§9.2(v) </span>Connection Formulas</a></li>
+<li class="ltx_tocentry"><a href="#vi"><span class="ltx_tag ltx_tag_subsection">§9.2(vi) </span>Riccati Form of Differential Equation</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.2(i) </span>Airy’s Equation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</span>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=Airy%20equation">Airy’s equation</a>, <a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=definitions">definitions</a>, <a class="ltx_keyword" href="./search/search?q=differential%20equation">differential equation</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1619" title="The Airy Integral, Giving Tables of Solutions of the Differential Equation = y ′′ ⁢ x y" class="ltx_ref">1946</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 392–393, 413–414)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./13.18#iii.p1" title="§13.18(iii) Modified Bessel Functions ‣ §13.18 Relations to Other Functions ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.18(iii)</span></a>,
+<a href="./13.21#iii.p3" title="§13.21(iii) Large 𝜅, 0≤𝜇≤(1-𝛿)⁢𝜅 (Continued) ‣ §13.21 Uniform Asymptotic Approximations for Large 𝜅 ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.21(iii)</span></a>,
+<a href="./13.6#iii.p1" title="§13.6(iii) Modified Bessel Functions ‣ §13.6 Relations to Other Functions ‣ Kummer Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§13.6(iii)</span></a>,
+<a href="./36.10#Px1.p1" title="Special Cases ‣ §36.10(i) Equations for Ψ_𝐾(𝐱) ‣ §36.10 Differential Equations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.10(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.i" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="54px" altimg-valign="-18px" altimg-width="107px" alttext="\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=zw." display="block"><mrow><mrow><mfrac><mrow><msup><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mn>2</mn></msup><mi href="./9.2#E1" title="ODE solution">w</mi></mrow><msup><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mn href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac><mo>=</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><mi href="./9.2#E1" title="ODE solution">w</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./9.2#E1" title="ODE solution">w</mi></math>:  ODE solution (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (1.01), p. 392)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.1</span> (in slightly different form)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./36.8#info" title="§36.8 Convergent Series Expansions ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.8</span></a>,
+<a href="./9.10#E10.info" title="In §9.10(iii) Other Indefinite Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.10)</span></a>,
+<a href="./9.10#E20.info" title="In §9.10(viii) Repeated Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.20)</span></a>,
+<a href="./9.10#E21.info" title="In §9.10(viii) Repeated Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.21)</span></a>,
+<a href="./9.10#E8.info" title="In §9.10(iii) Other Indefinite Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.8)</span></a>,
+<a href="./9.10#E9.info" title="In §9.10(iii) Other Indefinite Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.9)</span></a>,
+<a href="./9.10#iii.p1" title="§9.10(iii) Other Indefinite Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.10(iii)</span></a>,
+<a href="./9.11#E2.info" title="In §9.11(ii) Wronskian ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.11.2)</span></a>,
+<a href="./9.11#i.p1" title="§9.11(i) Differential Equation ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.11(i)</span></a>,
+<a href="./9.11#iv.p1" title="§9.11(iv) Indefinite Integrals ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.11(iv)</span></a>,
+<a href="./9.12#i.p1" title="§9.12(i) Differential Equation ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.12(i)</span></a>,
+<a href="./9.17#ii.p1" title="§9.17(ii) Differential Equations ‣ §9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.17(ii)</span></a>,
+<a href="./9.17#ii.p3" title="§9.17(ii) Differential Equations ‣ §9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.17(ii)</span></a>,
+<a href="./9.2#E16.info" title="In §9.2(vi) Riccati Form of Differential Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.2.16)</span></a>,
+<a href="./9.2#iii.p1" title="§9.2(iii) Numerically Satisfactory Pairs of Solutions ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(iii)</span></a>,
+<a href="./9.2#vi.p1" title="§9.2(vi) Riccati Form of Differential Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(vi)</span></a>,
+<a href="./9.8#E14.info" title="In §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.8.14)</span></a>,
+<a href="./9.8#E16.info" title="In §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.8.16)</span></a>,
+<a href="./9.8#E18.info" title="In §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.8.18)</span></a>,
+<a href="./9.8#E19.info" title="In §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.8.19)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E1" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E1.tex">TeX</a>, <a href="./9.2.E1.pmml">pMML</a>, <a href="./9.2.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#i.info" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(i)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">All solutions are entire functions of <math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">Standard solutions are:</p>
+<div class="ltx_equation_container">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="122px" altimg-valign="-15px" altimg-width="179px" alttext="w=\operatorname{Ai}\left(z\right),\;\operatorname{Bi}\left(z\right),\;%
+\operatorname{Ai}\left(ze^{\mp 2\pi\mathrm{i}/3}\right)." display="block"><mrow><mrow><mi href="./9.2#E1" title="ODE solution">w</mi><mo>=</mo><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo rspace="0.447em">,</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo rspace="0.447em">,</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>∓</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a> and
+<a href="./9.2#E1" title="(9.2.1) ‣ §9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./9.2#E1" title="ODE solution">w</mi></math>:  ODE solution</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 392–393, 413–414)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E2" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E2.tex">TeX</a>, <a href="./9.2.E2.pmml">pMML</a>, <a href="./9.2.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#i.info" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(i)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.2(ii) </span>Initial Values</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=differential%20equation">differential equation</a>, <a class="ltx_keyword" href="./search/search?q=initial%20values">initial values</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1619" title="The Airy Integral, Giving Tables of Solutions of the Differential Equation = y ′′ ⁢ x y" class="ltx_ref">1946</a>, p. B9)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 392–393)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.12#E11.info" title="In §9.12(v) Connection Formulas ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.12.11)</span></a>,
+<a href="./9.12#E12.info" title="In §9.12(v) Connection Formulas ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.12.12)</span></a>,
+<a href="./9.12#E13.info" title="In §9.12(v) Connection Formulas ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.12.13)</span></a>,
+<a href="./9.12#E14.info" title="In §9.12(v) Connection Formulas ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.12.14)</span></a>,
+<a href="./9.12#v.info" title="§9.12(v) Connection Formulas ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.12(v)</span></a>,
+<a href="./9.17#ii.p1" title="§9.17(ii) Differential Equations ‣ §9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.17(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.ii" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<div class="ltx_equationgroup_container">
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E3">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="40px" altimg-valign="-7px" altimg-width="75px" alttext="\displaystyle\operatorname{Ai}\left(0\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="57px" altimg-valign="-25px" altimg-width="309px" alttext="\displaystyle=\frac{1}{3^{2/3}\Gamma\left(\tfrac{2}{3}\right)}=0.35502\;80538\ldots," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mn>3</mn><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>)</mo></mrow></mrow></mrow></mfrac></mstyle><mo>=</mo><mrow><mn>0.35502 80538</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (1.03), p. 392)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.4</span> (with more digits)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E3" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E3.tex">TeX</a>, <a href="./9.2.E3.pmml">pMML</a>, <a href="./9.2.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#ii.info" title="§9.2(ii) Initial Values ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(ii)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E4">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="40px" altimg-valign="-7px" altimg-width="80px" alttext="\displaystyle\operatorname{Ai}'\left(0\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="57px" altimg-valign="-25px" altimg-width="341px" alttext="\displaystyle=-\frac{1}{3^{1/3}\Gamma\left(\tfrac{1}{3}\right)}=-0.25881\;9403%
+7\ldots," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mn>3</mn><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo></mrow></mrow></mrow></mfrac></mstyle></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mn>0.25881 94037</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (1.03), p. 392)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.5</span> (with more digits)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E4" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E4.tex">TeX</a>, <a href="./9.2.E4.pmml">pMML</a>, <a href="./9.2.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#ii.info" title="§9.2(ii) Initial Values ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(ii)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E5">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="40px" altimg-valign="-7px" altimg-width="74px" alttext="\displaystyle\operatorname{Bi}\left(0\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="57px" altimg-valign="-25px" altimg-width="309px" alttext="\displaystyle=\frac{1}{3^{1/6}\Gamma\left(\tfrac{2}{3}\right)}=0.61492\;66274\ldots," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mn>3</mn><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>)</mo></mrow></mrow></mrow></mfrac></mstyle><mo>=</mo><mrow><mn>0.61492 66274</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (1.11), p. 393)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.4</span> (in different form)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.12#E15.info" title="In §9.12(vi) Maclaurin Series ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.12.15)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E5" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E5.tex">TeX</a>, <a href="./9.2.E5.pmml">pMML</a>, <a href="./9.2.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#ii.info" title="§9.2(ii) Initial Values ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(ii)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E6">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="40px" altimg-valign="-7px" altimg-width="79px" alttext="\displaystyle\operatorname{Bi}'\left(0\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="62px" altimg-valign="-25px" altimg-width="272px" alttext="\displaystyle=\frac{3^{1/6}}{\Gamma\left(\tfrac{1}{3}\right)}=0.44828\;83573\ldots." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><msup><mn>3</mn><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow></msup><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo></mrow></mrow></mfrac></mstyle><mo>=</mo><mrow><mn>0.44828 83573</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a> and
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (1.11), p. 393)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.5</span> (in different form)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.12#E15.info" title="In §9.12(vi) Maclaurin Series ‣ §9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.12.15)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E6" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E6.tex">TeX</a>, <a href="./9.2.E6.pmml">pMML</a>, <a href="./9.2.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#ii.info" title="§9.2(ii) Initial Values ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(ii)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.2(iii) </span>Numerically Satisfactory Pairs of Solutions</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=differential%20equation">differential equation</a>, <a class="ltx_keyword" href="./search/search?q=numerically%20satisfactory%20solutions">numerically satisfactory solutions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 392–393, 413–414)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.1.I4.ix2.p1" title="In Other Changes ‣ Version 1.0.1 (June 27, 2011) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.1) for  Clarifications</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.iii" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.iii</a></dd>
+<dt>Clarification (effective with 1.0.1):</dt>
+<dd>
+It was clarified that numerically satisfactory pairs of solutions are stated for <em class="ltx_emph ltx_font_italic">intervals</em>
+as well as regions.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Table <a href="./9.2#T1" title="Table 9.2.1 ‣ §9.2(iii) Numerically Satisfactory Pairs of Solutions ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2.1</span></a> lists numerically satisfactory pairs of solutions of
+(<a href="./9.2#E1" title="(9.2.1) ‣ §9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2.1</span></a>) for the stated intervals or regions; compare §<a href="./2.7#iv" title="§2.7(iv) Numerically Satisfactory Solutions ‣ §2.7 Differential Equations ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7(iv)</span></a>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 9.2.1: </span>Numerically satisfactory pairs of solutions of Airy’s equation.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;">Pair</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;">Interval or Region</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="122px" alttext="\operatorname{Ai}\left(x\right),\operatorname{Bi}\left(x\right)" display="inline"><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-4px" altimg-width="129px" alttext="-\infty&lt;x&lt;\infty" display="inline"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math></td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\operatorname{Ai}\left(z\right),\operatorname{Bi}\left(z\right)" display="inline"><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m20.png" altimg-height="54px" altimg-valign="-22px" altimg-width="156px" alttext="\left\{\begin{array}[]{l}|\operatorname{ph}z|\leq\tfrac{1}{3}\pi\\
+-\infty&lt;z\leq 0\end{array}\right." display="inline"><mrow><mo>{</mo><mtable rowspacing="3.0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>≤</mo><mn>0</mn></mrow></mtd></mtr></mtable><mi></mi></mrow></math></td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m26.png" altimg-height="30px" altimg-valign="-9px" altimg-width="187px" alttext="\operatorname{Ai}\left(z\right),\operatorname{Ai}\left(ze^{-2\pi\mathrm{i}/3}\right)" display="inline"><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m15.png" altimg-height="29px" altimg-valign="-9px" altimg-width="151px" alttext="-\tfrac{1}{3}\pi\leq\operatorname{ph}z\leq\pi" display="inline"><mrow><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow><mo>≤</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo>≤</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math></td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m27.png" altimg-height="30px" altimg-valign="-9px" altimg-width="174px" alttext="\operatorname{Ai}\left(z\right),\operatorname{Ai}\left(ze^{2\pi\mathrm{i}/3}\right)" display="inline"><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m14.png" altimg-height="29px" altimg-valign="-9px" altimg-width="151px" alttext="-\pi\leq\operatorname{ph}z\leq\tfrac{1}{3}\pi" display="inline"><mrow><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>≤</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo>≤</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math></td>
+</tr>
+<tr id="T1.t1.r6" class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m29.png" altimg-height="30px" altimg-valign="-9px" altimg-width="122px" alttext="\operatorname{Ai}\left(ze^{\mp 2\pi\mathrm{i}/3}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>∓</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m37.png" altimg-height="29px" altimg-valign="-9px" altimg-width="146px" alttext="|\operatorname{ph}\left(-z\right)|\leq\tfrac{2}{3}\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math></td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./9.1#t1.r2" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 413–414)</cite></dd>
+<dt>Notes:</dt>
+<dd>See also <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 154–155)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./9.2#iii.p1" title="§9.2(iii) Numerically Satisfactory Pairs of Solutions ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.T1" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.T1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#iii.info" title="§9.2(iii) Numerically Satisfactory Pairs of Solutions ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(iii)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.2(iv) </span>Wronskians</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=Wronskians">Wronskians</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, pp. 393, 416)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.iv" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="117px" altimg-valign="-16px" altimg-width="148px" alttext="\mathscr{W}\left\{\operatorname{Ai}\left(z\right),\operatorname{Bi}\left(z%
+\right)\right\}=\frac{1}{\pi}," display="block"><mrow><mrow><mrow><mi class="ltx_font_mathscript" href="./1.13#Px2.p1" title="Wronskian">𝒲</mi><mo>⁡</mo><mrow><mo>{</mo><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./1.13#Px2.p1" title="Wronskian ‣ §1.13(i) Existence of Solutions ‣ §1.13 Differential Equations ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="27px" alttext="\mathscr{W}" display="inline"><mi class="ltx_font_mathscript" href="./1.13#Px2.p1" title="Wronskian">𝒲</mi></math>: Wronskian</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (1.19), p. 393)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.10</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.10#E2.info" title="In §9.10(i) Indefinite Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.2)</span></a>,
+<a href="./9.10#E3.info" title="In §9.10(i) Indefinite Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.3)</span></a>,
+<a href="./9.11#E2.info" title="In §9.11(ii) Wronskian ‣ §9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.11.2)</span></a>,
+<a href="./9.8#E13.info" title="In §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.8.13)</span></a>,
+<a href="./9.8#E17.info" title="In §9.8(ii) Identities ‣ §9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.8.17)</span></a>,
+<a href="./9.9#E3.info" title="In §9.9(ii) Relation to Modulus and Phase ‣ §9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.9.3)</span></a>,
+<a href="./9.9#E4.info" title="In §9.9(ii) Relation to Modulus and Phase ‣ §9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.9.4)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E7" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E7.tex">TeX</a>, <a href="./9.2.E7.pmml">pMML</a>, <a href="./9.2.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#iv.info" title="§9.2(iv) Wronskians ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(iv)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="131px" altimg-valign="-16px" altimg-width="270px" alttext="\mathscr{W}\left\{\operatorname{Ai}\left(z\right),\operatorname{Ai}\left(ze^{%
+\mp 2\pi i/3}\right)\right\}=\frac{e^{\pm\pi i/6}}{2\pi}," display="block"><mrow><mrow><mrow><mi class="ltx_font_mathscript" href="./1.13#Px2.p1" title="Wronskian">𝒲</mi><mo>⁡</mo><mrow><mo>{</mo><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>∓</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow><mo>=</mo><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>6</mn></mrow></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./1.13#Px2.p1" title="Wronskian ‣ §1.13(i) Existence of Solutions ‣ §1.13 Differential Equations ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="27px" alttext="\mathscr{W}" display="inline"><mi class="ltx_font_mathscript" href="./1.13#Px2.p1" title="Wronskian">𝒲</mi></math>: Wronskian</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>Derivable from <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 416)</cite>.</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.11</span></span> <span class="ltx_origref"><span class="ltx_tag">10.4.12</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E8" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E8.tex">TeX</a>, <a href="./9.2.E8.pmml">pMML</a>, <a href="./9.2.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#iv.info" title="§9.2(iv) Wronskians ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(iv)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="126px" altimg-valign="-16px" altimg-width="230px" alttext="\mathscr{W}\left\{\operatorname{Ai}\left(ze^{-2\pi i/3}\right),\operatorname{%
+Ai}\left(ze^{2\pi i/3}\right)\right\}=\frac{1}{2\pi i}." display="block"><mrow><mrow><mrow><mi class="ltx_font_mathscript" href="./1.13#Px2.p1" title="Wronskian">𝒲</mi><mo>⁡</mo><mrow><mo>{</mo><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./1.13#Px2.p1" title="Wronskian ‣ §1.13(i) Existence of Solutions ‣ §1.13 Differential Equations ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="27px" alttext="\mathscr{W}" display="inline"><mi class="ltx_font_mathscript" href="./1.13#Px2.p1" title="Wronskian">𝒲</mi></math>: Wronskian</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>Derivable from <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 416)</cite>.</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.13</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E9" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E9.tex">TeX</a>, <a href="./9.2.E9.pmml">pMML</a>, <a href="./9.2.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#iv.info" title="§9.2(iv) Wronskians ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(iv)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.2(v) </span>Connection Formulas</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=connection%20formulas">connection formulas</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Miller (<a href="./bib/M#bib1619" title="The Airy Integral, Giving Tables of Solutions of the Differential Equation = y ′′ ⁢ x y" class="ltx_ref">1946</a>, p. B9)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 414)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.7#iv.p2" title="§9.7(iv) Error Bounds for Complex Variables ‣ §9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.7(iv)</span></a>,
+<a href="./9.7#v.p2" title="§9.7(v) Exponentially-Improved Expansions ‣ §9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.7(v)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.v" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="128px" altimg-valign="-15px" altimg-width="270px" alttext="\operatorname{Bi}\left(z\right)=e^{-\pi i/6}\operatorname{Ai}\left(ze^{-2\pi i%
+/3}\right)+e^{\pi i/6}\operatorname{Ai}\left(ze^{2\pi i/3}\right)." display="block"><mrow><mrow><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>6</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>6</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>Derivable from <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 414)</cite>.</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.6</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./9.10#E19.info" title="In §9.10(vii) Stieltjes Transforms ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.10.19)</span></a>,
+<a href="./9.5#E5.info" title="In §9.5(ii) Complex Variable ‣ §9.5 Integral Representations ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(9.5.5)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E10" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E10.tex">TeX</a>, <a href="./9.2.E10.pmml">pMML</a>, <a href="./9.2.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#v.info" title="§9.2(v) Connection Formulas ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(v)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="128px" altimg-valign="-15px" altimg-width="178px" alttext="\operatorname{Ai}\left(ze^{\mp 2\pi i/3}\right)=\tfrac{1}{2}e^{\mp\pi i/3}%
+\left(\operatorname{Ai}\left(z\right)\pm i\operatorname{Bi}\left(z\right)%
+\right)." display="block"><mrow><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>∓</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>∓</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>±</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (8.04), p. 414)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.9</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E11" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E11.tex">TeX</a>, <a href="./9.2.E11.pmml">pMML</a>, <a href="./9.2.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#v.info" title="§9.2(v) Connection Formulas ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(v)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="128px" altimg-valign="-15px" altimg-width="260px" alttext="\operatorname{Ai}\left(z\right)+e^{-2\pi i/3}\operatorname{Ai}\left(ze^{-2\pi i%
+/3}\right)+e^{2\pi i/3}\operatorname{Ai}\left(ze^{2\pi i/3}\right)=0," display="block"><mrow><mrow><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, (8.03), p. 414)</cite></dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.7</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E12" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E12.tex">TeX</a>, <a href="./9.2.E12.pmml">pMML</a>, <a href="./9.2.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#v.info" title="§9.2(v) Connection Formulas ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(v)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="128px" altimg-valign="-15px" altimg-width="259px" alttext="\operatorname{Bi}\left(z\right)+e^{-2\pi i/3}\operatorname{Bi}\left(ze^{-2\pi i%
+/3}\right)+e^{2\pi i/3}\operatorname{Bi}\left(ze^{2\pi i/3}\right)=0." display="block"><mrow><mrow><mrow><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>Derivable from <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 414)</cite>.</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">10.4.8</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E13" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E13.tex">TeX</a>, <a href="./9.2.E13.pmml">pMML</a>, <a href="./9.2.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#v.info" title="§9.2(v) Connection Formulas ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(v)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equationgroup_container">
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E14">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="40px" altimg-valign="-7px" altimg-width="91px" alttext="\displaystyle\operatorname{Ai}\left(-z\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="92px" altimg-valign="-15px" altimg-width="224px" alttext="\displaystyle=e^{\pi i/3}\operatorname{Ai}\left(ze^{\pi i/3}\right)+e^{-\pi i/%
+3}\operatorname{Ai}\left(ze^{-\pi i/3}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 414)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E14" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E14.tex">TeX</a>, <a href="./9.2.E14.pmml">pMML</a>, <a href="./9.2.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#v.info" title="§9.2(v) Connection Formulas ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(v)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E15">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="40px" altimg-valign="-7px" altimg-width="90px" alttext="\displaystyle\operatorname{Bi}\left(-z\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="92px" altimg-valign="-15px" altimg-width="211px" alttext="\displaystyle=e^{-\pi i/6}\operatorname{Ai}\left(ze^{\pi i/3}\right)+e^{\pi i/%
+6}\operatorname{Ai}\left(ze^{-\pi i/3}\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>6</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>6</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 414)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E15" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E15.tex">TeX</a>, <a href="./9.2.E15.pmml">pMML</a>, <a href="./9.2.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#v.info" title="§9.2(v) Connection Formulas ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(v)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="vi" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.2(vi) </span>Riccati Form of Differential Equation</h2>
+<div id="vi.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=Riccati%20form">Riccati form</a>, <a class="ltx_keyword" href="./search/search?q=differential%20equation">differential equation</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.vi" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.vi</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vi.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">9.2.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="49px" altimg-valign="-16px" altimg-width="147px" alttext="\frac{\mathrm{d}W}{\mathrm{d}z}+W^{2}=z," display="block"><mrow><mrow><mrow><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./9.2#E16" title="Riccati solution">W</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow></mfrac><mo>+</mo><msup><mi href="./9.2#E16" title="Riccati solution">W</mi><mn>2</mn></msup></mrow><mo>=</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="27px" alttext="W" display="inline"><mi href="./9.2#E16" title="Riccati solution">W</mi></math>:  Riccati solution (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a> and
+<a href="./9.1#t1.r3" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./9.1#t1.r3" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>Derive properties using (<a href="./9.2#E1" title="(9.2.1) ‣ §9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2.1</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.2.E16" title="" class="ltx_ref">http://dlmf.nist.gov/9.2.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./9.2.E16.tex">TeX</a>, <a href="./9.2.E16.pmml">pMML</a>, <a href="./9.2.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.2#vi.info" title="§9.2(vi) Riccati Form of Differential Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2(vi)</span></a>,
+<a href="./9.2#info" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.2</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="175px" alttext="W=(1/w)\ifrac{\mathrm{d}w}{\mathrm{d}z}" display="inline"><mrow><mi href="./9.2#E16" title="Riccati solution">W</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi href="./9.2#E1" title="ODE solution">w</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./9.2#E1" title="ODE solution">w</mi></mrow><mo href="./1.4#E4" lspace="0em" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">/</mo><mrow><mo href="./1.4#E4" lspace="0em" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi></mrow></mrow></mrow></mrow></math>, where  <math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./9.2#E1" title="ODE solution">w</mi></math> is
+any nontrivial solution of (<a href="./9.2#E1" title="(9.2.1) ‣ §9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2.1</span></a>). See also <cite class="ltx_cite ltx_citemacro_citet">Smith (<a href="./bib/S#bib2125" title="A Riccati approach to the Airy equation" class="ltx_ref">1990</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./9.1" title="In Notation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.1 </span>Special Notation</span></a><a href="./9.3" title="In Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.3 </span>Graphics</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#3f7b73727912595a5a5b5d5e5c547f51564c4b11585049">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5d556c61b650c92',t:'MTc5NTE1NTUyMw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5d556c61b650c92',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

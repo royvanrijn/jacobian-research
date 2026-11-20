@@ -1,0 +1,190 @@
+{
+  "complete_source_replay": {
+    "actual_W_perturbation": "501/25000000",
+    "actual_zeta_perturbation": "139199/7999920000",
+    "angle_guard": "1/1000",
+    "arithmetic": "outward-rounded Arb/Acb balls; exact rational subdivision and centers",
+    "attempted_cells": 14522,
+    "certified_cells": 7262,
+    "maximum_depth": 13,
+    "negative_controls": 3,
+    "precision_bits": 128,
+    "radial_bracket_guard": "1/10",
+    "root_disc_radius": "1/1000",
+    "scope": "All Hermite horizontal endpoints and their actual |Re z|<=1e-5,|delta|<=1e-8 perturbations: selected cubic roots satisfy .379<|T|<.403,Re T>.01 and opposite Im signs of modulus>.2. This does not certify complete-period connections or an SFC threshold.",
+    "shared_endpoint_subdiscs": 7264,
+    "source_sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa",
+    "status": "PASS_CUBIC_ENDPOINT_ROOTS_ONLY",
+    "stream_sha256": "3daab939d21f7735b25c06f48b19bda42beb79754951d4cde49f0af1a9f5bf00",
+    "versions": {
+      "FLINT": "3.6.0",
+      "python_flint": "0.9.0"
+    }
+  },
+  "coverage": [
+    {
+      "declaration": "Theorem HorizontalEndpointCubicLocation",
+      "support": "Written exact phase/series/perturbation proof, full closed-cell outward-ball Rouch\u00e9 certificate, and branch-labelled shared-endpoint discs."
+    },
+    {
+      "declaration": "Corollary EndpointRadialCubicDecay",
+      "support": "Certified root-angle/bracket bounds and the exact radial derivative identity."
+    }
+  ],
+  "independent_ball_leaf_checks": 7262,
+  "independent_shared_endpoint_discs": 7264,
+  "negative_controls": 5,
+  "pins": [
+    {
+      "path": "GAP_TWO_HORIZONTAL_ENDPOINT_CUBIC_LOCATION.md",
+      "root": "local",
+      "sha256": "2c78967e7950153d60188c41330d3b832efb080add9627adf27f34ebc79711b5"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_location.py",
+      "root": "local",
+      "sha256": "12e05090b021420b109f02e7fa7f303ac4883d057226f0bb401c43d08842a8b5"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_inputs.json",
+      "root": "local",
+      "sha256": "fefe4d982d3fe9bdfacde78a267a23225ddd3d61d53826b6b71dd1f9bd3f5dd8"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_primary_audit.md",
+      "root": "local",
+      "sha256": "d98a52ad46e2bba9c82ddce3609dc09cbdc46d5497a2242a13d8acef16fdcc0a"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_cubic_balls.py",
+      "root": "local",
+      "sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_cubic_balls_verification.json",
+      "root": "local",
+      "sha256": "748d043c8f70cfcbb7ff4960bf01692eeeab2539ce184f86b5f2c72de012b9e7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "repo",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+      "root": "repo",
+      "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_full_endpoint_uniform_inverse.py",
+      "root": "repo",
+      "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_source_ledger.json",
+      "root": "repo",
+      "sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "root": "repo",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    }
+  ],
+  "rational_guards": [
+    {
+      "left": "501/25000000",
+      "name": "Rouch\u00e9 perturbation W",
+      "relation": "=",
+      "right": "501/25000000"
+    },
+    {
+      "left": "139199/7999920000",
+      "name": "Rouch\u00e9 perturbation zeta",
+      "relation": "=",
+      "right": "139199/7999920000"
+    },
+    {
+      "left": "99/100000",
+      "name": "radial derivative strict loss",
+      "relation": "<",
+      "right": "7943822803/7999920000000"
+    },
+    {
+      "left": "403/1000",
+      "name": "endpoint radius below connector",
+      "relation": "<",
+      "right": "41/100"
+    },
+    {
+      "left": "41/100",
+      "name": "connector below inverse",
+      "relation": "<",
+      "right": "91/200"
+    },
+    {
+      "left": "20223477773/199998000000",
+      "name": "actual zeta real lower",
+      "relation": "<",
+      "right": "51/500"
+    },
+    {
+      "left": "-8025413/3902400000",
+      "name": "fixed Airy exit strict phase",
+      "relation": "<",
+      "right": "-1/500"
+    },
+    {
+      "left": "188/5",
+      "name": "larger inverse Jacobian",
+      "relation": "<",
+      "right": "38"
+    },
+    {
+      "left": "5168000/267",
+      "name": "annular G",
+      "relation": "<",
+      "right": "20000"
+    },
+    {
+      "left": "1033600000/801",
+      "name": "annular G derivative",
+      "relation": "<",
+      "right": "1300000"
+    },
+    {
+      "left": "79/1000",
+      "name": "circle convexity on endpoint-to-ray arc",
+      "relation": "<",
+      "right": "1243060841/15609600000"
+    },
+    {
+      "left": "5707159/1951200000000",
+      "name": "circle large-p branch",
+      "relation": "<",
+      "right": "1/78125"
+    },
+    {
+      "left": "49/400",
+      "name": "circle small-p ordinate",
+      "relation": "<",
+      "right": "1281/10000"
+    },
+    {
+      "left": "5707159/1951200000000",
+      "name": "circle small-p branch",
+      "relation": "<",
+      "right": "343/100000"
+    }
+  ],
+  "schema": 1,
+  "scope": "Actual endpoint-root locations, branch labels, and decreasing radial canonical connector only; no complete-period connection, C_R constant, or numerical SFC threshold.",
+  "source_ledger_sha256": "0e5dfea9def3dda3798217286f358d06fe34f87a064ecb7d75e00beef7e801e8",
+  "status": "PASS_HORIZONTAL_ENDPOINT_LOCATION_SUPPORT",
+  "universal_radial_identity_count": 1
+}

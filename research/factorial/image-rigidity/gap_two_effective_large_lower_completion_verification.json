@@ -1,0 +1,3108 @@
+{
+  "coverage": [
+    {
+      "declaration": "Theorem EffectiveGapTwoLargeLowerExponent",
+      "support": "Written complete actual-period proof, separately proved analytic inputs, exact outward-ball endpoint certificates, and rational/identity budget controls."
+    }
+  ],
+  "excluded_conclusions": [
+    "all a>=40000 gap-two claim",
+    "uniform complete-period constant C_R=10^10",
+    "all-gap Strong Factorial conjecture",
+    "formal verification"
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_imported_replays": 5,
+  "fresh_local_child_replays": 4,
+  "independent_replay": false,
+  "mandatory_local_pins": 31,
+  "mandatory_repo_pins": 22,
+  "optimized_modes_rejected": [
+    "-O",
+    "-OO"
+  ],
+  "pins": [
+    {
+      "path": "ACTUAL_SHIFTED_HERMITE_NONLOCAL_BOUND.md",
+      "root": "local",
+      "sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95"
+    },
+    {
+      "path": "COMPACT_AIRY_PHYSICAL_CUT_ADDENDUM.md",
+      "root": "local",
+      "sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4"
+    },
+    {
+      "path": "GAP_TWO_EFFECTIVE_LARGE_LOWER_EXPONENT_THEOREM.md",
+      "root": "local",
+      "sha256": "561a32a1c77f2070f18ba4f2ae3f2f583413eea2dcddbedca50b5c4325a9e035"
+    },
+    {
+      "path": "GAP_TWO_HORIZONTAL_ENDPOINT_CUBIC_LOCATION.md",
+      "root": "local",
+      "sha256": "2c78967e7950153d60188c41330d3b832efb080add9627adf27f34ebc79711b5"
+    },
+    {
+      "path": "NEGATIVE_AIRY_CURVE_OUTER_TAIL.md",
+      "root": "local",
+      "sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a"
+    },
+    {
+      "path": "POSITIVE_AIRY_THIN_OUTER_TAIL_AND_CUT_GEOMETRY.md",
+      "root": "local",
+      "sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_inputs.json",
+      "root": "local",
+      "sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_source_ledger.json",
+      "root": "local",
+      "sha256": "1fe3919a7f2f8ada0e6de5182614e6700efad45d76372466283f38f4a0d30e45"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_verification.json",
+      "root": "local",
+      "sha256": "d5c26c11f0374a704779cd8d7e4b94bc38aa69f6539c9cde0c55434b3a23daba"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_inputs.json",
+      "root": "local",
+      "sha256": "169e26d91b196625c328bad6681a60c2d6240a33f1b5766c53f222b0b0beeb34"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_source_ledger.json",
+      "root": "local",
+      "sha256": "c4bbffe41566ca173a65d22052a6d05057b4113274ab135dbf1352c203c1fcde"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_verification.json",
+      "root": "local",
+      "sha256": "6356a98a106fa91ea9806b0d36f3f1dca5df3dbe2406f24dead9f7d7a9f3b3d3"
+    },
+    {
+      "path": "compact_airy_physical_cut_verification.json",
+      "root": "local",
+      "sha256": "f463c0d7039d517a7d23601b4a6599807cfd951ce9454923d7c6bc9e12a028cb"
+    },
+    {
+      "path": "gap_two_effective_large_lower_completion_inputs.json",
+      "root": "local",
+      "sha256": "89408cc62f4a1f316ff7c8d164a47dce7164acd692fcd99420d53db0f2b06f37"
+    },
+    {
+      "path": "gap_two_effective_large_lower_exponent_verification.json",
+      "root": "local",
+      "sha256": "a45db11e60af6b454b431539191f04aba66ddbfbffa00eaa3d2cbc07c9289a51"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_cubic_balls_verification.json",
+      "root": "local",
+      "sha256": "748d043c8f70cfcbb7ff4960bf01692eeeab2539ce184f86b5f2c72de012b9e7"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_inputs.json",
+      "root": "local",
+      "sha256": "fefe4d982d3fe9bdfacde78a267a23225ddd3d61d53826b6b71dd1f9bd3f5dd8"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_location_verification.json",
+      "root": "local",
+      "sha256": "b01d1863a64d110a1f87fed8360ba255316eefc02c19c06834430ca7c6c2767d"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_primary_audit.md",
+      "root": "local",
+      "sha256": "d98a52ad46e2bba9c82ddce3609dc09cbdc46d5497a2242a13d8acef16fdcc0a"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_source_ledger.json",
+      "root": "local",
+      "sha256": "0e5dfea9def3dda3798217286f358d06fe34f87a064ecb7d75e00beef7e801e8"
+    },
+    {
+      "path": "negative_airy_curve_outer_tail_verification.json",
+      "root": "local",
+      "sha256": "d2868f15a06887406f852951733a008d0ba0a9400002166ed655b53662d84790"
+    },
+    {
+      "path": "positive_airy_thin_outer_tail_verification.json",
+      "root": "local",
+      "sha256": "aee4e07dd69f1f03588a25f2423c1b4e20f0165b548ccb69ae4f4f082c0053df"
+    },
+    {
+      "path": "verify_actual_shifted_hermite_nonlocal.py",
+      "root": "local",
+      "sha256": "1f257df5560f72c61128fb97c63c07c04568967358b51ccefcc90dfdfecd4141"
+    },
+    {
+      "path": "verify_airy_outer_tail_and_cut_package.py",
+      "root": "local",
+      "sha256": "ddfde9e607cef379e0c1f65b1b5277c11049b9731d693f2627757eadc1cb3a3f"
+    },
+    {
+      "path": "verify_compact_airy_physical_cut.py",
+      "root": "local",
+      "sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4"
+    },
+    {
+      "path": "verify_gap_two_effective_large_lower_completion.py",
+      "root": "local",
+      "sha256": "eadf840e147e070656e0742443a9d8acd0fa1e216bfe3b10ac7746c8e8b83def"
+    },
+    {
+      "path": "verify_gap_two_effective_large_lower_exponent.py",
+      "root": "local",
+      "sha256": "917cf63f26b3d41b4d76301cbc1cd6ba406bb0e9afa7c8ba9ab5269d7457127b"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_cubic_balls.py",
+      "root": "local",
+      "sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_location.py",
+      "root": "local",
+      "sha256": "12e05090b021420b109f02e7fa7f303ac4883d057226f0bb401c43d08842a8b5"
+    },
+    {
+      "path": "verify_negative_airy_curve_outer_tail.py",
+      "root": "local",
+      "sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f"
+    },
+    {
+      "path": "verify_positive_airy_thin_outer_tail.py",
+      "root": "local",
+      "sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+      "root": "repo",
+      "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "root": "repo",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+      "root": "repo",
+      "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+      "root": "repo",
+      "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "repo",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    },
+    {
+      "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "repo",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_source_ledger.json",
+      "root": "repo",
+      "sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_verification.json",
+      "root": "repo",
+      "sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_endpoint_contour_identities_verification.json",
+      "root": "repo",
+      "sha256": "e38c0a891d3809ae8086718568965131c708c5181c6459c04a7b10d9e69bce23"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_endpoint_reduction_guards_verification.json",
+      "root": "repo",
+      "sha256": "5f40fb1dcd791ff276f8a104fe72d2854c4b18ba8438b77ec24ef62d83ef394d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_endpoint_reduction_source_ledger.json",
+      "root": "repo",
+      "sha256": "b981f929bb70d888cb8f553e6530074af4d5e4854613761f82f8c43766423806"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_source_ledger.json",
+      "root": "repo",
+      "sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_verification.json",
+      "root": "repo",
+      "sha256": "48967f0cdbd59c1f48d6f6794fd36df923510be5799c635123c5688c550fbd40"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_large_lower_endpoint_source_ledger.json",
+      "root": "repo",
+      "sha256": "36d76238946c169c64a52b5edb01c43b14bd909411d9ffda1b03474ddae2d0bb"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_source_ledger.json",
+      "root": "repo",
+      "sha256": "2834fdd366ed1f162c5a66b2bdbcfabe271a1b232a806db555f36f57426e3858"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_verification.json",
+      "root": "repo",
+      "sha256": "30794eba794e5228868cb259978ca3a6207bac11747e81e3179e109af5b60657"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_explicit_airy_contour_envelope.py",
+      "root": "repo",
+      "sha256": "b820a1ce46ccf1bc6242e0e39f2c25b500bbae33e9d3917512eea343d4d32da1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_endpoint_contour_identities.py",
+      "root": "repo",
+      "sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_endpoint_reduction_guards.py",
+      "root": "repo",
+      "sha256": "8e2d3ad12cf498a297b05cf1956c3a115ad1062477d4c824b103fcd791aec3ea"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_full_endpoint_uniform_inverse.py",
+      "root": "repo",
+      "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quantitative_gap_two_endpoint_data.py",
+      "root": "repo",
+      "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+    }
+  ],
+  "replays": [
+    {
+      "data": {
+        "complete_source_replay": {
+          "actual_W_perturbation": "501/25000000",
+          "actual_zeta_perturbation": "139199/7999920000",
+          "angle_guard": "1/1000",
+          "arithmetic": "outward-rounded Arb/Acb balls; exact rational subdivision and centers",
+          "attempted_cells": 14522,
+          "certified_cells": 7262,
+          "maximum_depth": 13,
+          "negative_controls": 3,
+          "precision_bits": 128,
+          "radial_bracket_guard": "1/10",
+          "root_disc_radius": "1/1000",
+          "scope": "All Hermite horizontal endpoints and their actual |Re z|<=1e-5,|delta|<=1e-8 perturbations: selected cubic roots satisfy .379<|T|<.403,Re T>.01 and opposite Im signs of modulus>.2. This does not certify complete-period connections or an SFC threshold.",
+          "shared_endpoint_subdiscs": 7264,
+          "source_sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa",
+          "status": "PASS_CUBIC_ENDPOINT_ROOTS_ONLY",
+          "stream_sha256": "3daab939d21f7735b25c06f48b19bda42beb79754951d4cde49f0af1a9f5bf00",
+          "versions": {
+            "FLINT": "3.6.0",
+            "python_flint": "0.9.0"
+          }
+        },
+        "coverage": [
+          {
+            "declaration": "Theorem HorizontalEndpointCubicLocation",
+            "support": "Written exact phase/series/perturbation proof, full closed-cell outward-ball Rouch\u00e9 certificate, and branch-labelled shared-endpoint discs."
+          },
+          {
+            "declaration": "Corollary EndpointRadialCubicDecay",
+            "support": "Certified root-angle/bracket bounds and the exact radial derivative identity."
+          }
+        ],
+        "independent_ball_leaf_checks": 7262,
+        "independent_shared_endpoint_discs": 7264,
+        "negative_controls": 5,
+        "pins": [
+          {
+            "path": "GAP_TWO_HORIZONTAL_ENDPOINT_CUBIC_LOCATION.md",
+            "root": "local",
+            "sha256": "2c78967e7950153d60188c41330d3b832efb080add9627adf27f34ebc79711b5"
+          },
+          {
+            "path": "verify_gap_two_horizontal_endpoint_location.py",
+            "root": "local",
+            "sha256": "12e05090b021420b109f02e7fa7f303ac4883d057226f0bb401c43d08842a8b5"
+          },
+          {
+            "path": "gap_two_horizontal_endpoint_inputs.json",
+            "root": "local",
+            "sha256": "fefe4d982d3fe9bdfacde78a267a23225ddd3d61d53826b6b71dd1f9bd3f5dd8"
+          },
+          {
+            "path": "gap_two_horizontal_endpoint_primary_audit.md",
+            "root": "local",
+            "sha256": "d98a52ad46e2bba9c82ddce3609dc09cbdc46d5497a2242a13d8acef16fdcc0a"
+          },
+          {
+            "path": "verify_gap_two_horizontal_endpoint_cubic_balls.py",
+            "root": "local",
+            "sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa"
+          },
+          {
+            "path": "gap_two_horizontal_endpoint_cubic_balls_verification.json",
+            "root": "local",
+            "sha256": "748d043c8f70cfcbb7ff4960bf01692eeeab2539ce184f86b5f2c72de012b9e7"
+          },
+          {
+            "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+            "root": "repo",
+            "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+          },
+          {
+            "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+            "root": "repo",
+            "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+            "root": "repo",
+            "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+          },
+          {
+            "path": "research/factorial/image-rigidity/verify_gap_two_full_endpoint_uniform_inverse.py",
+            "root": "repo",
+            "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+          },
+          {
+            "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_source_ledger.json",
+            "root": "repo",
+            "sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8"
+          },
+          {
+            "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+            "root": "repo",
+            "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+          }
+        ],
+        "rational_guards": [
+          {
+            "left": "501/25000000",
+            "name": "Rouch\u00e9 perturbation W",
+            "relation": "=",
+            "right": "501/25000000"
+          },
+          {
+            "left": "139199/7999920000",
+            "name": "Rouch\u00e9 perturbation zeta",
+            "relation": "=",
+            "right": "139199/7999920000"
+          },
+          {
+            "left": "99/100000",
+            "name": "radial derivative strict loss",
+            "relation": "<",
+            "right": "7943822803/7999920000000"
+          },
+          {
+            "left": "403/1000",
+            "name": "endpoint radius below connector",
+            "relation": "<",
+            "right": "41/100"
+          },
+          {
+            "left": "41/100",
+            "name": "connector below inverse",
+            "relation": "<",
+            "right": "91/200"
+          },
+          {
+            "left": "20223477773/199998000000",
+            "name": "actual zeta real lower",
+            "relation": "<",
+            "right": "51/500"
+          },
+          {
+            "left": "-8025413/3902400000",
+            "name": "fixed Airy exit strict phase",
+            "relation": "<",
+            "right": "-1/500"
+          },
+          {
+            "left": "188/5",
+            "name": "larger inverse Jacobian",
+            "relation": "<",
+            "right": "38"
+          },
+          {
+            "left": "5168000/267",
+            "name": "annular G",
+            "relation": "<",
+            "right": "20000"
+          },
+          {
+            "left": "1033600000/801",
+            "name": "annular G derivative",
+            "relation": "<",
+            "right": "1300000"
+          },
+          {
+            "left": "79/1000",
+            "name": "circle convexity on endpoint-to-ray arc",
+            "relation": "<",
+            "right": "1243060841/15609600000"
+          },
+          {
+            "left": "5707159/1951200000000",
+            "name": "circle large-p branch",
+            "relation": "<",
+            "right": "1/78125"
+          },
+          {
+            "left": "49/400",
+            "name": "circle small-p ordinate",
+            "relation": "<",
+            "right": "1281/10000"
+          },
+          {
+            "left": "5707159/1951200000000",
+            "name": "circle small-p branch",
+            "relation": "<",
+            "right": "343/100000"
+          }
+        ],
+        "schema": 1,
+        "scope": "Actual endpoint-root locations, branch labels, and decreasing radial canonical connector only; no complete-period connection, C_R constant, or numerical SFC threshold.",
+        "source_ledger_sha256": "0e5dfea9def3dda3798217286f358d06fe34f87a064ecb7d75e00beef7e801e8",
+        "status": "PASS_HORIZONTAL_ENDPOINT_LOCATION_SUPPORT",
+        "universal_radial_identity_count": 1
+      },
+      "receipt": "gap_two_horizontal_endpoint_location_verification.json",
+      "receipt_sha256": "b01d1863a64d110a1f87fed8360ba255316eefc02c19c06834430ca7c6c2767d",
+      "root": "local",
+      "script": "verify_gap_two_horizontal_endpoint_location.py"
+    },
+    {
+      "data": {
+        "coverage": [
+          "negative canonical tails with weights0,1,2",
+          "thin positive canonical tails with weights0,1",
+          "compact canonical tails with weights0,1",
+          "right and left radius-0.41 cut and connector inequalities",
+          "physical-disk Cauchy replacement under certified endpoint matching"
+        ],
+        "excluded_conclusions": [
+          "original-period nonlocal estimate",
+          "actual complete-period remainder",
+          "numerical Strong Factorial cutoff"
+        ],
+        "external_review": false,
+        "formal_verification": false,
+        "imported_airy_replay": {
+          "data": {
+            "negative_controls": 2,
+            "primary_error_scope": "Actual DLMF9.7.17 n1, sigma1/6Ai and0Aiprime, exact error sectors; no asymptotic inference or zero sampling.",
+            "proof_sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046",
+            "rational_guards": [
+              {
+                "left": "9/10",
+                "name": "Gamma2/3 integral lower",
+                "relation": "=",
+                "right": "9/10"
+              },
+              {
+                "left": "9/4",
+                "name": "Gamma1/3 integral lower",
+                "relation": "=",
+                "right": "9/4"
+              },
+              {
+                "left": "3",
+                "name": "Bi initial root upper",
+                "relation": "<",
+                "right": "4096/729"
+              },
+              {
+                "left": "38/27",
+                "name": "Bi initial majorant",
+                "relation": "<",
+                "right": "3/2"
+              },
+              {
+                "left": "25767549888412498917368655049812299316350010899695291370912522059048806367901/8644050000175932578168189526912110173972645761338495238637468048095703125",
+                "name": "exp8 exact series",
+                "relation": "<",
+                "right": "3000"
+              },
+              {
+                "left": "4500",
+                "name": "Bi disk majorant",
+                "relation": "=",
+                "right": "4500"
+              },
+              {
+                "left": "9000",
+                "name": "Bi derivative disk majorant",
+                "relation": "=",
+                "right": "9000"
+              },
+              {
+                "left": "57873461418686387516540549356296553328124029915002687729415815783033433559235854636495158174678350875681241/279410177699351031155315977932942855091607744204268442374520836867698388042489177421254463773834228515625",
+                "name": "compact exponential",
+                "relation": "<",
+                "right": "225"
+              },
+              {
+                "left": "-21",
+                "name": "compact bend bracket at6",
+                "relation": "<",
+                "right": "0"
+              },
+              {
+                "left": "-29/3",
+                "name": "compact bend bracket derivative",
+                "relation": "<",
+                "right": "0"
+              },
+              {
+                "left": "4/3",
+                "name": "compact arc factor squared",
+                "relation": "<",
+                "right": "49/36"
+              },
+              {
+                "left": "22/7",
+                "name": "sqrtpi compact bound squared",
+                "relation": "<",
+                "right": "81/25"
+              },
+              {
+                "left": "945/2",
+                "name": "compatible compact integral",
+                "relation": "<",
+                "right": "500"
+              },
+              {
+                "left": "18000000",
+                "name": "compact joint ratio",
+                "relation": "<",
+                "right": "20000000"
+              },
+              {
+                "left": "7/6",
+                "name": "chi Ai parameter",
+                "relation": "<",
+                "right": "2"
+              },
+              {
+                "left": "1",
+                "name": "chi derivative parameter",
+                "relation": "<",
+                "right": "2"
+              },
+              {
+                "left": "22/3",
+                "name": "last Ai multiplier square-root bound",
+                "relation": "<",
+                "right": "49/4"
+              },
+              {
+                "left": "10",
+                "name": "last Ai multiplier upper",
+                "relation": "=",
+                "right": "10"
+              },
+              {
+                "left": "7",
+                "name": "last derivative multiplier upper",
+                "relation": "=",
+                "right": "7"
+              },
+              {
+                "left": "16/3",
+                "name": "primary action modulus at r4",
+                "relation": "=",
+                "right": "16/3"
+              },
+              {
+                "left": "25/192",
+                "name": "Ai leading relative error",
+                "relation": "<",
+                "right": "1/4"
+              },
+              {
+                "left": "49/384",
+                "name": "derivative leading relative error",
+                "relation": "<",
+                "right": "1/4"
+              },
+              {
+                "left": "32",
+                "name": "positive contour ratio",
+                "relation": "=",
+                "right": "32"
+              },
+              {
+                "left": "5/128",
+                "name": "rotated Ai relative error",
+                "relation": "=",
+                "right": "5/128"
+              },
+              {
+                "left": "7/128",
+                "name": "rotated derivative relative error",
+                "relation": "=",
+                "right": "7/128"
+              },
+              {
+                "left": "29/32",
+                "name": "rotated joint lower",
+                "relation": "=",
+                "right": "29/32"
+              },
+              {
+                "left": "3/4",
+                "name": "rotated lower margin",
+                "relation": "<",
+                "right": "29/32"
+              },
+              {
+                "left": "800/3",
+                "name": "negative contour ratio",
+                "relation": "<",
+                "right": "300"
+              },
+              {
+                "left": "23000000000/3",
+                "name": "conditional normalized local CR",
+                "relation": "<",
+                "right": "8000000000"
+              }
+            ],
+            "schema_version": 1,
+            "scope": "Global absolute Ai-contour bound C_A=2e7, with compatible bent/rotated cycles. No actual CFU remainder constant or numerical SFC cutoff supplied.",
+            "source_ledger_sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7",
+            "status": "PASS",
+            "universal_identity_count": 8
+          },
+          "receipt_sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9"
+        },
+        "independent_replay": false,
+        "pins": [
+          {
+            "path": "COMPACT_AIRY_PHYSICAL_CUT_ADDENDUM.md",
+            "root": "local",
+            "sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4"
+          },
+          {
+            "path": "NEGATIVE_AIRY_CURVE_OUTER_TAIL.md",
+            "root": "local",
+            "sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a"
+          },
+          {
+            "path": "POSITIVE_AIRY_THIN_OUTER_TAIL_AND_CUT_GEOMETRY.md",
+            "root": "local",
+            "sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021"
+          },
+          {
+            "path": "airy_outer_tail_and_cut_inputs.json",
+            "root": "local",
+            "sha256": "169e26d91b196625c328bad6681a60c2d6240a33f1b5766c53f222b0b0beeb34"
+          },
+          {
+            "path": "compact_airy_physical_cut_verification.json",
+            "root": "local",
+            "sha256": "f463c0d7039d517a7d23601b4a6599807cfd951ce9454923d7c6bc9e12a028cb"
+          },
+          {
+            "path": "negative_airy_curve_outer_tail_verification.json",
+            "root": "local",
+            "sha256": "d2868f15a06887406f852951733a008d0ba0a9400002166ed655b53662d84790"
+          },
+          {
+            "path": "positive_airy_thin_outer_tail_verification.json",
+            "root": "local",
+            "sha256": "aee4e07dd69f1f03588a25f2423c1b4e20f0165b548ccb69ae4f4f082c0053df"
+          },
+          {
+            "path": "verify_airy_outer_tail_and_cut_package.py",
+            "root": "local",
+            "sha256": "ddfde9e607cef379e0c1f65b1b5277c11049b9731d693f2627757eadc1cb3a3f"
+          },
+          {
+            "path": "verify_compact_airy_physical_cut.py",
+            "root": "local",
+            "sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4"
+          },
+          {
+            "path": "verify_negative_airy_curve_outer_tail.py",
+            "root": "local",
+            "sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f"
+          },
+          {
+            "path": "verify_positive_airy_thin_outer_tail.py",
+            "root": "local",
+            "sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9"
+          },
+          {
+            "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+            "root": "repo",
+            "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+          },
+          {
+            "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_source_ledger.json",
+            "root": "repo",
+            "sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7"
+          },
+          {
+            "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_verification.json",
+            "root": "repo",
+            "sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9"
+          },
+          {
+            "path": "research/factorial/image-rigidity/verify_explicit_airy_contour_envelope.py",
+            "root": "repo",
+            "sha256": "b820a1ce46ccf1bc6242e0e39f2c25b500bbae33e9d3917512eea343d4d32da1"
+          }
+        ],
+        "replays": [
+          {
+            "data": {
+              "certificates": {
+                "arc_ratio_identity": true,
+                "phase_loss_identity": true,
+                "positive_left_coefficients": [
+                  "6",
+                  "345/8",
+                  "531/4",
+                  "114135/512",
+                  "110697/512",
+                  "60273/512",
+                  "260283/8192",
+                  "394833/131072"
+                ],
+                "positive_right_coefficients": [
+                  "54",
+                  "594",
+                  "2079",
+                  "3429",
+                  "3096",
+                  "1584",
+                  "432",
+                  "48"
+                ]
+              },
+              "checker_sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f",
+              "external_review": false,
+              "formal_verification": false,
+              "independent_replay": false,
+              "negative_controls_rejected": 3,
+              "outer_tail_bound": "10^11*m^(-1/3)*exp(-m/14000)*joint_Airy_norm",
+              "phase_loss_constant": "1/243",
+              "physical_loss_constant": "1/7000",
+              "proof_sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a",
+              "rational_guards": {
+                "P_left_positive": true,
+                "P_right_positive": true,
+                "compact_coefficient_below_limit": true,
+                "compact_tail_coefficient": true,
+                "exp_sixteen_thirds_upper": true,
+                "large_tail_coefficient": true,
+                "left_interval_below_one": true,
+                "left_interval_value": true,
+                "positive_absolute_loss": true,
+                "ratio_at_nine_eighths": true,
+                "rational_cubic_loss": true,
+                "zero_zeta_coefficient": true,
+                "zero_zeta_decay": true
+              },
+              "schema_version": 1,
+              "scope": "exact elementary negative-sector canonical Airy outer-tail certificates; not a full-period remainder"
+            },
+            "receipt": "negative_airy_curve_outer_tail_verification.json",
+            "script": "verify_negative_airy_curve_outer_tail.py",
+            "sha256": "d2868f15a06887406f852951733a008d0ba0a9400002166ed655b53662d84790"
+          },
+          {
+            "data": {
+              "checker_sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9",
+              "external_review": false,
+              "formal_verification": false,
+              "independent_replay": false,
+              "negative_controls": 3,
+              "proof_sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021",
+              "rational_guards": [
+                {
+                  "left": "3",
+                  "name": "sqrt3 upper",
+                  "relation": "<",
+                  "right": "81/25"
+                },
+                {
+                  "left": "289/100",
+                  "name": "sqrt3 lower",
+                  "relation": "<",
+                  "right": "3"
+                },
+                {
+                  "left": "1/25000",
+                  "name": "q modulus",
+                  "relation": "<",
+                  "right": "49/1000000"
+                },
+                {
+                  "left": "1/8",
+                  "name": "s modulus",
+                  "relation": "<",
+                  "right": "31329/250000"
+                },
+                {
+                  "left": "3173/25000",
+                  "name": "vertical cannot exit",
+                  "relation": "<",
+                  "right": "9/64"
+                },
+                {
+                  "left": "7/400",
+                  "name": "large p y bound",
+                  "relation": "=",
+                  "right": "7/400"
+                },
+                {
+                  "left": "1/20000",
+                  "name": "large p loss",
+                  "relation": "<",
+                  "right": "49/960000"
+                },
+                {
+                  "left": "3127/50000",
+                  "name": "small p s bound",
+                  "relation": "<",
+                  "right": "63001/1000000"
+                },
+                {
+                  "left": "31/300",
+                  "name": "small p y bound",
+                  "relation": "=",
+                  "right": "31/300"
+                },
+                {
+                  "left": "23/675",
+                  "name": "small p x bound",
+                  "relation": "=",
+                  "right": "23/675"
+                },
+                {
+                  "left": "1/5000",
+                  "name": "small p loss",
+                  "relation": "<",
+                  "right": "22103/109350000"
+                },
+                {
+                  "left": "4",
+                  "name": "arc sqrt bound",
+                  "relation": "<",
+                  "right": "108/25"
+                },
+                {
+                  "left": "1728/25",
+                  "name": "whole Gaussian constant",
+                  "relation": "<",
+                  "right": "81"
+                },
+                {
+                  "left": "432/25",
+                  "name": "first weighted Gaussian coefficient",
+                  "relation": "<",
+                  "right": "18"
+                },
+                {
+                  "left": "48",
+                  "name": "large norm zero weight coefficient",
+                  "relation": "<",
+                  "right": "200"
+                },
+                {
+                  "left": "144",
+                  "name": "large norm first weight coefficient",
+                  "relation": "<",
+                  "right": "200"
+                },
+                {
+                  "left": "1/16",
+                  "name": "compact cubic loss",
+                  "relation": "<",
+                  "right": "5/72"
+                },
+                {
+                  "left": "12",
+                  "name": "compact bend start",
+                  "relation": "<",
+                  "right": "24"
+                },
+                {
+                  "left": "16",
+                  "name": "compact outer cubic dominates linear",
+                  "relation": "<",
+                  "right": "576"
+                },
+                {
+                  "left": "60",
+                  "name": "compact zero weight integral",
+                  "relation": "=",
+                  "right": "60"
+                },
+                {
+                  "left": "46272/25",
+                  "name": "compact first weight integral",
+                  "relation": "<",
+                  "right": "1900"
+                },
+                {
+                  "left": "15390000000",
+                  "name": "compact normalized bound",
+                  "relation": "<",
+                  "right": "20000000000"
+                },
+                {
+                  "left": "20000000000",
+                  "name": "requested slack",
+                  "relation": "<",
+                  "right": "1000000000000000"
+                },
+                {
+                  "left": "7/150",
+                  "name": "positive cut y",
+                  "relation": "=",
+                  "right": "7/150"
+                },
+                {
+                  "left": "7/1000",
+                  "name": "positive cut imaginary sign",
+                  "relation": "<",
+                  "right": "7/150"
+                },
+                {
+                  "left": "576/625",
+                  "name": "cos half angle lower",
+                  "relation": "<",
+                  "right": "37/40"
+                },
+                {
+                  "left": "3/40",
+                  "name": "sin half angle upper",
+                  "relation": "<",
+                  "right": "1/9"
+                },
+                {
+                  "left": "1/1000",
+                  "name": "sqrt small q",
+                  "relation": "<",
+                  "right": "16/15625"
+                },
+                {
+                  "left": "7/300",
+                  "name": "negative right X large q",
+                  "relation": "=",
+                  "right": "7/300"
+                },
+                {
+                  "left": "71/5000",
+                  "name": "negative right re large q",
+                  "relation": "=",
+                  "right": "71/5000"
+                },
+                {
+                  "left": "71/5000",
+                  "name": "negative right re small q",
+                  "relation": "<",
+                  "right": "109/7500"
+                },
+                {
+                  "left": "287/1500",
+                  "name": "negative right imaginary sign",
+                  "relation": "=",
+                  "right": "287/1500"
+                },
+                {
+                  "left": "361/2500",
+                  "name": "negative incoming X",
+                  "relation": "<",
+                  "right": "48167/320000"
+                },
+                {
+                  "left": "8/25",
+                  "name": "negative incoming real part",
+                  "relation": "<",
+                  "right": "6411/20000"
+                },
+                {
+                  "left": "41/2500000",
+                  "name": "complex circular perturbation",
+                  "relation": "=",
+                  "right": "41/2500000"
+                },
+                {
+                  "left": "1/30000",
+                  "name": "circular connector remaining margin",
+                  "relation": "<",
+                  "right": "21/625000"
+                },
+                {
+                  "left": "233/2000",
+                  "name": "left-circle derivative",
+                  "relation": "=",
+                  "right": "233/2000"
+                },
+                {
+                  "left": "1/10000",
+                  "name": "left-circle remaining margin",
+                  "relation": "<",
+                  "right": "2213/17500000"
+                }
+              ],
+              "schema": 1,
+              "scope": "thin canonical positive-Airy outer tails and conditional right-circle connector geometry only",
+              "universal_identities": 2
+            },
+            "receipt": "positive_airy_thin_outer_tail_verification.json",
+            "script": "verify_positive_airy_thin_outer_tail.py",
+            "sha256": "aee4e07dd69f1f03588a25f2423c1b4e20f0165b548ccb69ae4f4f082c0053df"
+          },
+          {
+            "data": {
+              "checker_sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4",
+              "external_review": false,
+              "formal_verification": false,
+              "independent_replay": false,
+              "negative_controls": 2,
+              "proof_sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4",
+              "rational_guards": {
+                "cubic_loss": true,
+                "m_epsilon": true,
+                "outer_y": true,
+                "p_lower": true,
+                "p_upper_positive_correction": true,
+                "radial_arc": true,
+                "right_connector_endpoint_loss": true,
+                "saddle_loss": true,
+                "small_zeta": true,
+                "tail_constant": true,
+                "tail_decay": true
+              },
+              "schema": 1,
+              "scope": "compact canonical Airy physical-cut and weighted-tail rational support only",
+              "status": "PASS",
+              "universal_identities": 1
+            },
+            "receipt": "compact_airy_physical_cut_verification.json",
+            "script": "verify_compact_airy_physical_cut.py",
+            "sha256": "f463c0d7039d517a7d23601b4a6599807cfd951ce9454923d7c6bc9e12a028cb"
+          }
+        ],
+        "schema": 1,
+        "scope": "canonical weighted Airy tails, certified cuts, conditional circle connectors and physical-disk Cauchy replacement only",
+        "source_ledger_sha256": "c4bbffe41566ca173a65d22052a6d05057b4113274ab135dbf1352c203c1fcde",
+        "status": "PASS_CANONICAL_AIRY_TAILS_AND_CUTS"
+      },
+      "receipt": "airy_outer_tail_and_cut_verification.json",
+      "receipt_sha256": "6356a98a106fa91ea9806b0d36f3f1dca5df3dbe2406f24dead9f7d7a9f3b3d3",
+      "root": "local",
+      "script": "verify_airy_outer_tail_and_cut_package.py"
+    },
+    {
+      "data": {
+        "input_sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860",
+        "negative_controls": 2,
+        "pins": [
+          {
+            "path": "ACTUAL_SHIFTED_HERMITE_NONLOCAL_BOUND.md",
+            "root": "local",
+            "sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95"
+          },
+          {
+            "path": "verify_actual_shifted_hermite_nonlocal.py",
+            "root": "local",
+            "sha256": "1f257df5560f72c61128fb97c63c07c04568967358b51ccefcc90dfdfecd4141"
+          },
+          {
+            "path": "actual_shifted_hermite_nonlocal_inputs.json",
+            "root": "local",
+            "sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860"
+          },
+          {
+            "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+            "root": "repo",
+            "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+          },
+          {
+            "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+            "root": "repo",
+            "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+          },
+          {
+            "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+            "root": "repo",
+            "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+          },
+          {
+            "path": "research/factorial/image-rigidity/sources/dlmf-9-7-endpoint.html",
+            "root": "repo",
+            "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+          },
+          {
+            "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+            "root": "repo",
+            "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+          }
+        ],
+        "proof_sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95",
+        "rational_guards": [
+          {
+            "left": "57/1000",
+            "name": "cut above .057",
+            "right": "22957999/400000000"
+          },
+          {
+            "left": "39/625",
+            "name": "bulk q above .0624",
+            "right": "24962001/400000000"
+          },
+          {
+            "left": "9/10000",
+            "name": "bulk horizontal loss",
+            "right": "1521/1660000"
+          },
+          {
+            "left": "7/10000",
+            "name": "stable horizontal loss",
+            "right": "3249/4228000"
+          },
+          {
+            "left": "41042001/400000000",
+            "name": "stable shift s below .321",
+            "right": "103041/1000000"
+          },
+          {
+            "left": "27421/20000",
+            "name": "D+s below1.372",
+            "right": "343/250"
+          },
+          {
+            "left": "108824440001/10000000000",
+            "name": "horizontal denominator upper",
+            "right": "1089/100"
+          },
+          {
+            "left": "826967/379980",
+            "name": "horizontal z derivative",
+            "right": "11/5"
+          },
+          {
+            "left": "28373999188000002400000000/3478820595708988265578101",
+            "name": "horizontal delta phase derivative",
+            "right": "9"
+          },
+          {
+            "left": "2211/100000000",
+            "name": "horizontal actual perturbation",
+            "right": "3/100000"
+          },
+          {
+            "left": "4104620121/40000000000",
+            "name": "critical quadratic centre",
+            "right": "103/1000"
+          },
+          {
+            "left": "3750000009/160000000000000000",
+            "name": "critical numerator perturbation",
+            "right": "3/100000000"
+          },
+          {
+            "left": "16418484234000009/160000000000000000",
+            "name": "critical small circle",
+            "right": "4/25"
+          },
+          {
+            "left": "23040000172800000000000000000000000/25599999232000008639999956800000081",
+            "name": "critical z action derivative",
+            "right": "901/1000"
+          },
+          {
+            "left": "225000000000000000/159999997600000009",
+            "name": "critical delta phase derivative",
+            "right": "141/100"
+          },
+          {
+            "left": "341/100",
+            "name": "critical delta action derivative",
+            "right": "7/2"
+          },
+          {
+            "left": "1809/200000000",
+            "name": "critical action perturbation",
+            "right": "1/100000"
+          },
+          {
+            "left": "1/1152",
+            "name": "kappa squared",
+            "right": "9/10000"
+          },
+          {
+            "left": "10",
+            "name": "vertical norm",
+            "right": "256/25"
+          },
+          {
+            "left": "134104800101/10000000000",
+            "name": "vertical logarithm norm",
+            "right": "14"
+          },
+          {
+            "left": "14",
+            "name": "exp3 lower polynomial",
+            "right": "131/8"
+          },
+          {
+            "left": "2280916599000000200000000/274597151369140945296873",
+            "name": "vertical delta derivative",
+            "right": "9"
+          },
+          {
+            "left": "-249999991/100000000",
+            "name": "vertical actual phase",
+            "right": "-19/10"
+          },
+          {
+            "left": "-299999991/100000000",
+            "name": "real endpoint actual phase",
+            "right": "-2"
+          },
+          {
+            "left": "0",
+            "name": "right log derivative numerator difference",
+            "right": "399995997/400000000"
+          },
+          {
+            "left": "-999999997/400000006",
+            "name": "right tail phase derivative",
+            "right": "-2"
+          },
+          {
+            "left": "2",
+            "name": "left tail phase derivative",
+            "right": "46997/18999"
+          },
+          {
+            "left": "2/5",
+            "name": "mean phase lower",
+            "right": "16096199299/40000000000"
+          },
+          {
+            "left": "1/36000",
+            "name": "joint lower constant",
+            "right": "3/16"
+          },
+          {
+            "left": "33/50000",
+            "name": "far gap dominates horizontal",
+            "right": "226999/100000"
+          },
+          {
+            "left": "60000",
+            "name": "weak target coefficient",
+            "right": "1000000000000000"
+          },
+          {
+            "left": "1/100000",
+            "name": "weak target exponential",
+            "right": "33/50000"
+          }
+        ],
+        "scope": "Exact rational support for the written shifted-Hermite ORIGINAL-period nonlocal bound only; no numerical SFC or complete-period conclusion.",
+        "source_ledger_sha256": "1fe3919a7f2f8ada0e6de5182614e6700efad45d76372466283f38f4a0d30e45",
+        "status": "PASS"
+      },
+      "receipt": "actual_shifted_hermite_nonlocal_verification.json",
+      "receipt_sha256": "d5c26c11f0374a704779cd8d7e4b94bc38aa69f6539c9cde0c55434b3a23daba",
+      "root": "local",
+      "script": "verify_actual_shifted_hermite_nonlocal.py"
+    },
+    {
+      "data": {
+        "actual_moment_normalization_controls": [
+          {
+            "a": 4,
+            "coefficients": [
+              "1",
+              "30"
+            ],
+            "m": 1
+          },
+          {
+            "a": 4,
+            "coefficients": [
+              "1",
+              "180",
+              "11880"
+            ],
+            "m": 2
+          },
+          {
+            "a": 6,
+            "coefficients": [
+              "1",
+              "1140",
+              "526680",
+              "96909120"
+            ],
+            "m": 3
+          },
+          {
+            "a": 8,
+            "coefficients": [
+              "1",
+              "4488",
+              "8482320",
+              "7950761280",
+              "3100796899200"
+            ],
+            "m": 4
+          }
+        ],
+        "checker_sha256": "917cf63f26b3d41b4d76301cbc1cd6ba406bb0e9afa7c8ba9ab5269d7457127b",
+        "negative_controls": 3,
+        "proof_sha256": "561a32a1c77f2070f18ba4f2ae3f2f583413eea2dcddbedca50b5c4325a9e035",
+        "rational_guards": [
+          {
+            "left": "4",
+            "name": "actual threshold delta",
+            "relation": "=",
+            "right": "4"
+          },
+          {
+            "left": "4",
+            "name": "soft boundary exact",
+            "relation": "=",
+            "right": "4"
+          },
+          {
+            "left": "8000000000000000",
+            "name": "m cube-root lower",
+            "relation": "<",
+            "right": "10000000000000000"
+          },
+          {
+            "left": "40000000000",
+            "name": "m two-thirds lower",
+            "relation": "=",
+            "right": "40000000000"
+          },
+          {
+            "left": "188/5",
+            "name": "true enlarged h",
+            "relation": "<",
+            "right": "38"
+          },
+          {
+            "left": "5168000/267",
+            "name": "true annular G",
+            "relation": "<",
+            "right": "20000"
+          },
+          {
+            "left": "1033600000/801",
+            "name": "true annular G derivative",
+            "relation": "<",
+            "right": "1300000"
+          },
+          {
+            "left": "16200000",
+            "name": "compact critical-reference comparison",
+            "relation": "<",
+            "right": "20000000"
+          },
+          {
+            "left": "16/3",
+            "name": "large critical-reference comparison",
+            "relation": "<",
+            "right": "20000000"
+          },
+          {
+            "left": "1/40000",
+            "name": "right circle connector loss",
+            "relation": "<",
+            "right": "21/625000"
+          },
+          {
+            "left": "1/10000",
+            "name": "left circle connector loss",
+            "relation": "<",
+            "right": "2213/17500000"
+          },
+          {
+            "left": "1/40000",
+            "name": "compact circle connector loss",
+            "relation": "<",
+            "right": "24959/2500000"
+          },
+          {
+            "left": "1/40000",
+            "name": "original circle endpoint loss",
+            "relation": "<",
+            "right": "1609/2500000"
+          },
+          {
+            "left": "233/2000",
+            "name": "left circle real derivative",
+            "relation": "=",
+            "right": "233/2000"
+          },
+          {
+            "left": "13747/3500",
+            "name": "all added connector lengths",
+            "relation": "<",
+            "right": "10"
+          },
+          {
+            "left": "545926120/729",
+            "name": "weighted negative tail elementary coefficient",
+            "relation": "<",
+            "right": "1000000"
+          },
+          {
+            "left": "64800000000000",
+            "name": "weighted negative compact coefficient",
+            "relation": "<",
+            "right": "1000000000000000"
+          },
+          {
+            "left": "64000000/3",
+            "name": "weighted negative large coefficient",
+            "relation": "<",
+            "right": "1000000000000000"
+          },
+          {
+            "left": "20000000000",
+            "name": "positive weighted tail coefficient",
+            "relation": "<",
+            "right": "1000000000000000"
+          },
+          {
+            "left": "2000000",
+            "name": "old compact weighted tail coefficient",
+            "relation": "<",
+            "right": "1000000000000000"
+          },
+          {
+            "left": "1/100000",
+            "name": "positive and compact tail exponential",
+            "relation": "<",
+            "right": "1/40000"
+          },
+          {
+            "left": "1/40000",
+            "name": "negative tail stronger exponential",
+            "relation": "<",
+            "right": "1/14000"
+          },
+          {
+            "left": "500000000000000",
+            "name": "canonical A/B tail rounded coefficient",
+            "relation": "=",
+            "right": "500000000000000"
+          },
+          {
+            "left": "100000000",
+            "name": "A/B connector coefficient",
+            "relation": "<",
+            "right": "1000000000"
+          },
+          {
+            "left": "130000000000000/3",
+            "name": "G derivative connector coefficient",
+            "relation": "<",
+            "right": "50000000000000"
+          },
+          {
+            "left": "400000000000/3",
+            "name": "two physical G endpoint coefficient",
+            "relation": "<",
+            "right": "200000000000"
+          },
+          {
+            "left": "550201000060000",
+            "name": "aggregate other coefficient",
+            "relation": "<",
+            "right": "10000000000000000"
+          },
+          {
+            "left": "1/40000",
+            "name": "actual original nonlocal exponent",
+            "relation": "<",
+            "right": "33/50000"
+          },
+          {
+            "left": "9/12500000000000000",
+            "name": "sixth Taylor exponential budget",
+            "relation": "<",
+            "right": "1"
+          },
+          {
+            "left": "13000000000003/3",
+            "name": "local compact complete remainder",
+            "relation": "<",
+            "right": "100000000000000"
+          },
+          {
+            "left": "65000001",
+            "name": "local large complete remainder",
+            "relation": "<",
+            "right": "1000000000"
+          },
+          {
+            "left": "50013/4850000",
+            "name": "compact actual lambda",
+            "relation": "<",
+            "right": "11/1000"
+          },
+          {
+            "left": "5450000/9799999",
+            "name": "large rescaled K",
+            "relation": "<",
+            "right": "14/25"
+          },
+          {
+            "left": "250052/97",
+            "name": "uniform rescaled K",
+            "relation": "<",
+            "right": "2600"
+          },
+          {
+            "left": "121/250000",
+            "name": "compact Robin product",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "49/1250",
+            "name": "large Robin product",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "1331/1000000000",
+            "name": "compact Robin cubic",
+            "relation": "<",
+            "right": "1/16"
+          },
+          {
+            "left": "343/15625000000000000000",
+            "name": "large Robin cubic",
+            "relation": "<",
+            "right": "1/16"
+          },
+          {
+            "left": "3/8",
+            "name": "Robin path bootstrap",
+            "relation": "<",
+            "right": "1/2"
+          },
+          {
+            "left": "8/5",
+            "name": "Robin path reciprocal",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "1/2",
+            "name": "radial geometric lower",
+            "relation": "<",
+            "right": "59999997/80000000"
+          },
+          {
+            "left": "1300000009/10000000000000000",
+            "name": "endpoint window real margin",
+            "relation": "<",
+            "right": "1/100000"
+          },
+          {
+            "left": "210000000000000063/100000000000000000",
+            "name": "endpoint window imaginary margin",
+            "relation": "<",
+            "right": "21001/10000"
+          },
+          {
+            "left": "15600",
+            "name": "actual adjacent-order drift versus two bands",
+            "relation": "<",
+            "right": "100000000"
+          }
+        ],
+        "schema": 1,
+        "scope": "Complete-period aggregation and Robin arithmetic supporting the written theorem and separately proved contour inputs. No all-order conclusion follows from these finite guards alone.",
+        "status": "PASS_EXACT_BUDGETS_ONLY",
+        "universal_identities": 3
+      },
+      "receipt": "gap_two_effective_large_lower_exponent_verification.json",
+      "receipt_sha256": "a45db11e60af6b454b431539191f04aba66ddbfbffa00eaa3d2cbc07c9289a51",
+      "root": "local",
+      "script": "verify_gap_two_effective_large_lower_exponent.py"
+    },
+    {
+      "data": {
+        "comparisons": [
+          {
+            "left": "25/12",
+            "name": "outside b upper corner",
+            "relation": "<",
+            "right": "21/10"
+          },
+          {
+            "left": "4",
+            "name": "outside b lower corner",
+            "relation": "<",
+            "right": "17/4"
+          },
+          {
+            "left": "3004342756475664001/40000000000000000000000",
+            "name": "outside selected saddle Rouche",
+            "relation": "<",
+            "right": "1747/3000000"
+          },
+          {
+            "left": "1/2",
+            "name": "outside selected derivative simple",
+            "relation": "<",
+            "right": "34873999146199547747/60000000000000000000"
+          },
+          {
+            "left": "4/3",
+            "name": "outside whole horizontal denominator",
+            "relation": "<",
+            "right": "269799997747/200000000000"
+          },
+          {
+            "left": "-11867945210774750651041640624999/27126735243055562500000000000000",
+            "name": "outside whole horizontal concavity",
+            "relation": "<",
+            "right": "-2/5"
+          },
+          {
+            "left": "381469727478027244140625234375009/244140617187500062500000000000000",
+            "name": "outside curvature norm",
+            "relation": "<",
+            "right": "8/5"
+          },
+          {
+            "left": "5/4",
+            "name": "outside local denominator",
+            "relation": "<",
+            "right": "259799997597/200000000000"
+          },
+          {
+            "left": "238418583665042860984802246093815185546728515621/232830632477998912334441184997558593750000000000",
+            "name": "outside local third",
+            "relation": "<",
+            "right": "6/5"
+          },
+          {
+            "left": "31/1000",
+            "name": "outside stationary Gaussian positive",
+            "relation": "=",
+            "right": "31/1000"
+          },
+          {
+            "left": "423564751/599999997747000000",
+            "name": "outside stationary Taylor remainder",
+            "relation": "<",
+            "right": "1/100000000"
+          },
+          {
+            "left": "-1879897/3000000",
+            "name": "outside right derivative",
+            "relation": "<",
+            "right": "0"
+          },
+          {
+            "left": "2",
+            "name": "outside left derivative",
+            "relation": "<",
+            "right": "78647/29549"
+          },
+          {
+            "left": "4000096023200720081/160000000000000000",
+            "name": "outside real endpoint denominator",
+            "relation": "<",
+            "right": "36"
+          },
+          {
+            "left": "6",
+            "name": "log6 bound",
+            "relation": "<",
+            "right": "744762456985249098176105187845733267764454958131442393051107072466475391466181887256811418220656979568285499575583333155629403843377073991385538904519639545748320972944267669081201556193880122766729515375598540443591571730303531833702479032974734709306284413814669247475505570383432552293269671917004313813248205247873869466764464804318491138588681850672312012944612547755218041570810664493984829547156498728781898684080108789999/100792638060094263296026776278921245425752912000692783557423886740659784084496279426426436626094614945120639423582797353767415276070834653848518109452151838276359671416340221009409649593996710140651243377794231378182191176123392503651325245475352184379870329171059353865792147594954809428717020289495395092183473957901018811610346074527257763623189891833125952789714095724736206955118888485556372103246758342720568180084228515625"
+          },
+          {
+            "left": "-494/203",
+            "name": "outside real endpoint",
+            "relation": "<",
+            "right": "-2"
+          },
+          {
+            "left": "554765627/78125000",
+            "name": "outside vertical modulus",
+            "relation": "<",
+            "right": "8"
+          },
+          {
+            "left": "8",
+            "name": "log8 bound",
+            "relation": "<",
+            "right": "92293765613365690733737936637145245872876623985682095649084988534348262541576125468692409508191120418340127994750483262878849084405282297360693262474431297735230224554338306952392844843672755082611745742118628239256902650101382679093263505248947252903164417531080532463136820405447020627626066878750166540356721886495147374165526794684789904362756172099838801057935255529753063655964300939153900752528894804170125109654089478249947840349118991236845388090776252430892487855652945195382282300093069639114813546357417206035433769488652323182299142732208518891545835630345087961354581834292962410264057734116399963410007611712854725284173247734237270316384598283085345579/11301964887030644671147610458189855920909931055707338661345922051641894508389251567292810493182277208541038031733961429033319714543071133086311900018358386458642388969821476796879440611298625489069909338893710778856678037179217954153366491415754960953126963263984213621148262348695934890847526507615253677126913218708416950667454897050709485934346240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "left": "-26474993/12500000",
+            "name": "outside vertical phase",
+            "relation": "<",
+            "right": "-21/10"
+          },
+          {
+            "left": "74970081691613083718601755961877978797982628250519784768271821809104844505525457901171619993972225512091980766914492328900210330202655547713860811157794893631621202346655375014366520798368854861235396549614918081118434007399045338399589011371501650859841202573350124856428853986660594130538963045543776968394984510184106567616989917035368572249595655866629857761730593286258760044251635686250428197073817328041014706512972416039/14994016338322616743720351192375595759596514494327964102080473399462752462028505304644759359719862850948622705797851641914463645945781013966452626501174817801097070515525055669746846225844164112264017784733886164444806556295348067143294338445722019838481119337758131926261721865280537211267573015454720949688462969308574926148392114561622734921186347303132329486006924313818342474676041780938137117768698398432006091420934859371800000",
+            "name": "outside local error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "8366831994638680426588600656967987857928460835808613376395294503564994721806501513900759847689581423466868850692376160029263142635193765220915726719644832139594264028233821456327780168839236627781759779483152582938754117652533883377581722605994898201394279212044123065144786710623524154851180273025177803989536733466196303983660220288700385109774809018541865262817616109028645793518259147637411244717877/37485040845806541859300877980938989398991286235819910255201183498656881155071263261611898399299657127371556764494629104786159114864452534916131566252937044502742676288812639174367115564610410280660044461834715411112016390738370167858235846114305049596202798344395329815654304663201343028168932538636802374221157423271437315370980286404056837302965868257830823715017310784545856186690104452345342794421745996080015228552337148429500000000000",
+            "name": "outside nonlocal error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "8366831994638680426588600656967987857928460835808613376395294503564994721806501513900759847689581423466868850692376160029263142635193765220915726719644832139594264028233821456327780168839236627781759779483152582938754117652533883377581722605994898201394279212044123065144786710623524154851180273025177803989536733466196303983660220288700385109774809018541865262817616109028645793518259147637411244717877/74970081691613083718601755961877978797982572471639820510402366997313762310142526523223796798599314254743113528989258209572318229728905069832263132505874089005485352577625278348734231129220820561320088923669430822224032781476740335716471692228610099192405596688790659631308609326402686056337865077273604748442314846542874630741960572808113674605931736515661647430034621569091712373380208904690685588843491992160030457104674296859000000000000",
+            "name": "outside far error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "19999999999999999/99999999999999980000000000000001",
+            "name": "bulk radial inverse square",
+            "relation": "<",
+            "right": "3/10000000000000000"
+          },
+          {
+            "left": "13000000000000003/100000000000000000000000",
+            "name": "bulk shifted real",
+            "relation": "<",
+            "right": "1/5000000"
+          },
+          {
+            "left": "190000000000000057/100000000000000000",
+            "name": "bulk shifted imaginary",
+            "relation": "<",
+            "right": "191/100"
+          },
+          {
+            "left": "1369/15625",
+            "name": "bulk Hermite real part",
+            "relation": "<",
+            "right": "3519/40000"
+          },
+          {
+            "left": "8500008701000302000101/40000000000000000000000000000",
+            "name": "bulk selected root Rouche",
+            "relation": "<",
+            "right": "591999/1000000000000"
+          },
+          {
+            "left": "576000337017770337245821102387058537488963249185257481481925926/237036464592936315559515212811339274068366110185224444465740740962963",
+            "name": "bulk curvature perturbation",
+            "relation": "<",
+            "right": "3/1000000"
+          },
+          {
+            "left": "17/100",
+            "name": "bulk curvature real",
+            "relation": "<",
+            "right": "175947/1000000"
+          },
+          {
+            "left": "47/50",
+            "name": "bulk local denominator",
+            "relation": "<",
+            "right": "379999518894997899999/400000000000000000000"
+          },
+          {
+            "left": "64000000716986869970385407995200276441778404375050973831390482992101097483462493699999/26578687581385267517409446299323200963214638277664000000000000000000000000000000000000",
+            "name": "bulk local third",
+            "relation": "<",
+            "right": "5/2"
+          },
+          {
+            "left": "3/50",
+            "name": "bulk local decay",
+            "relation": "<",
+            "right": "77/1200"
+          },
+          {
+            "left": "397180252027912604208980262552151851823345681090311417383511125911055192069051493747964730168071319768451764684785609025562281426357907734665869337156962423668509562754912390995185232718830582201137306828490766187550946505464245619907521210882622223925013627627293108192948188285735399424354443115533238134867260426409752303195221856504706401470397778295246869934142293792554829534900783523725864316583311323240168470348123968844516955592578635007000138706122530334565977986077219267220509076014629624108558572781143238273746997053850588172035829370271738019722351726006641955208492120228598827009784308451065980367540074391072384349252070790573651589042923049957061563341224613429600091853947761829304651688965271562654632438321173932435206148231428822195970850769773788581681682922534418896304764484582950554405862716245306483302096356790600840764835087892080009081610770693703816920517061478586223225492771854714668920088029636986082939524400378657607559689944258131005791907936510272667156523190703966239096657139330460226664507994053347163598199321126806702719660125823448553839771250906673795554131315343693086443376474106227179340372252521218596270017379494265294536479727925348545036300775647062874055603660196457769878578426535696978742251090179649151429988965910771052072062810412476025541121881845687919983137771649520174565297669330172880998267637977878072131185037084534619606893612921758405136707781445864688903417070600153911270884780653040149915198411892000256689372576043230863999877622328027150435342808681399206666202524951427147896804896282608122169400891438383326971911586810316589765882655404226931513118427014273540185775964452851170617537812962937243759341073119266981087882928379316568256995868014841320176998047536143815376252317229173036175386970761962602012949353770716053050665235725209361/397489992091290887733771945260849050368372739293073870103945431188723205773250614925307704598231589185058850264589789660423898215853965520794861696213704833876267449275180418305104818155452346445532997252347238252938847419820241420475473179437746406801894812455468189344491773667520380302019713096910031312531767932344885098644480045230983675511761135734142551796320880262649408260690927822875146228294700838210299258065385673543037917223709378808174793739585918200588511375749344685641104628459161576701842553631492050246349130358445192659779611623505703975674699827388218391893734095564542515297401254824279642784918969578152776637542349703093115334725809821899858158064482850083012799352032493028113140822042570578872972083200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "name": "bulk centre barrier",
+            "relation": "<",
+            "right": "1"
+          },
+          {
+            "left": "158599594239937/9999874000000000000",
+            "name": "bulk compact comparison",
+            "relation": "<",
+            "right": "1/50000"
+          },
+          {
+            "left": "49/1000",
+            "name": "bulk horizontal distance",
+            "relation": "<",
+            "right": "49999/1000000"
+          },
+          {
+            "left": "1/10000",
+            "name": "bulk horizontal gap",
+            "relation": "<",
+            "right": "5203/50000000"
+          },
+          {
+            "left": "1/1000",
+            "name": "bulk connector gap",
+            "relation": "<",
+            "right": "61/37500"
+          },
+          {
+            "left": "300121395866087740586614164177322209310649001207976129782162923634250387351476112199200838068887466998509417476970269261722914643188719768752578925587706265587475392393189208215666278308785036352045593187997197433796757209590796044218090190792026694217409267941380154670689332730834116192932639310426730363207508757967220422238876968985048285063912657456525605728368186044206745520038998335128030671594937231729614404115865919758637067/402148654603015305405739467304698691056318866003873021255806417655486308428059135625184353721159441110147869231264369766651266715741788767022380531431587516646082326224466503975127355988023943224149261895148595879746006647420794233182142991293817048046164611564720932509123331378460487963828415526531646858096312887714068877499909106224715094592263067835106573776117103354171264692534546597579847571068967226892709732055664062500000000",
+            "name": "bulk near-zero phase",
+            "relation": "<",
+            "right": "1"
+          },
+          {
+            "left": "-4087972969999/2000000000000",
+            "name": "bulk far vertical phase",
+            "relation": "<",
+            "right": "-2"
+          },
+          {
+            "left": "3125000000000000/38183766184071",
+            "name": "bulk Gaussian Taylor constant",
+            "relation": "<",
+            "right": "120"
+          },
+          {
+            "left": "4000000000000000/24041630560341",
+            "name": "bulk Gaussian truncation constant",
+            "relation": "<",
+            "right": "240"
+          },
+          {
+            "left": "1/5000",
+            "name": "bulk Gaussian exponential",
+            "relation": "<",
+            "right": "17/80000"
+          },
+          {
+            "left": "224910245074839251155805267885633936393947734148583450808567937435478611589042458983055737354409816141434000758345344864515322319328840352861268701113198508404296812663584864045892380288406871973934859058791938644340418712206912507954350272428697763077447471831739818461461901377285430591273924622301865911312745438720993473288390521692517493110894385352275405389612656222425251421402054748539979548999573577244386646136512326331/1874252042290327092965043899046949469949564311790995512760059174932844057753563163080594919964982856368577838224731455239307955743222626745806578312646852225137133814440631958718355778230520514033002223091735770555600819536918508392911792305715252479810139917219766490782715233160067151408446626931840118711057871163571865768549014320202841865148293412891541185750865539227292809334505222617267139721087299804000761427616857421475000",
+            "name": "bulk local error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "236649745618303134772287507369263535629217748991528629676220102168922252455969467125360124971261334986276830068577746267950787355949401230807166571666464920018431628243546082540617100957789601363746780801715814382684652711418598337322956302944861446956863573356770178112263017782379917709027912408609643578706545963459166195240935902076564785728865663874085277850468239750358385164864196949329051104177/2998803267664523348744070238475119151919302898865592820416094679892550492405701060928951871943972570189724541159570328382892729189156202793290525300234963560219414103105011133949369245168832822452803556946777232888961311259069613428658867689144403967696223867551626385252344373056107442253514603090944189937692593861714985229678422912324546984237269460626465897201384862763668494935208356187627423553739679686401218284186971874360000000000",
+            "name": "bulk horizontal error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "78883248539434378257429169123087845209739249663842876558740034056307417485323155708453374990420444995425610022859248755983595785316467076935722190555488306672810542747848694180205700319263200454582260267238604794228217570472866112440985434314953815652287857785590059370754339260793305903009304136203214526235515321153055398413645300692188261909621887958028425950156079916786128388288065649776350368059/749700816916130837186017559618779787979825724716398205104023669973137623101425265232237967985993142547431135289892582095723182297289050698322631325058740890054853525776252783487342311292208205613200889236694308222240327814767403357164716922286100991924055966887906596313086093264026860563378650772736047484423148465428746307419605728081136746059317365156616474300346215690917123733802089046906855888434919921600304571046742968590000000000",
+            "name": "bulk far error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "78883248539434378257429169123087845209739249663842876558740034056307417485323155708453374990420444995425610022859248755983595785316467076935722190555488306672810542747848694180205700319263200454582260267238604794228217570472866112440985434314953815652287857785590059370754339260793305903009304136203214526235515321153055398413645300692188261909621887958028425950156079916786128388288065649776350368059/1499401633832261674372035119237559575959651449432796410208047339946275246202850530464475935971986285094862270579785164191446364594578101396645262650117481780109707051552505566974684622584416411226401778473388616444480655629534806714329433844572201983848111933775813192626172186528053721126757301545472094968846296930857492614839211456162273492118634730313232948600692431381834247467604178093813711776869839843200609142093485937180000000000",
+            "name": "bulk connector error",
+            "relation": "<",
+            "right": "1/1000"
+          },
+          {
+            "left": "840168050417/200000000000",
+            "name": "bulk prefactor ratio",
+            "relation": "<",
+            "right": "5"
+          },
+          {
+            "left": "505/99",
+            "name": "bulk upper zero ratio",
+            "relation": "<",
+            "right": "6"
+          },
+          {
+            "left": "2/5",
+            "name": "bulk action drop",
+            "relation": "<",
+            "right": "59/120"
+          },
+          {
+            "left": "111557759928515738909623582164390765862755895646390745822514697734475850468238655784200947500955763195357303841609252271699538060193331264579338296068599830615251890974517788802451844610005366234638285783103334871211769118930450240489320515816148402195936540344439905339327282463873750058688454509795287327838701936420663391943434334095341742853563119485216460650671761968498816596238360/74970081691613083718601755961877978797982572471639820510402366997313762310142526523223796798599314254743113528989258209572318229728905069832263132505874089005485352577625278348734231129220820561320088923669430822224032781476740335716471692228610099192405596688790659631308609326402686056337865077273604748442314846542874630741960572808113674605931736515661647430034621569091712373380208904690685588843491992160030457104674296859",
+            "name": "bulk lower exclusion",
+            "relation": "<",
+            "right": "1"
+          },
+          {
+            "left": "160000000000000009/4000000000000000000000000",
+            "name": "global real width in the huge-a domain",
+            "relation": "<",
+            "right": "1/10000000"
+          },
+          {
+            "left": "1000000000000",
+            "name": "hard orders exceed the one-packet onset",
+            "relation": "<",
+            "right": "20000000000000003/2"
+          }
+        ],
+        "ledger_sha256": "b981f929bb70d888cb8f553e6530074af4d5e4854613761f82f8c43766423806",
+        "negative_control_count": 3,
+        "pins": [
+          {
+            "path": "GAP_TWO_OUTSIDE_ENDPOINT_ONE_PACKET.md",
+            "root": "local",
+            "sha256": "6a326ebc96592fbcaf16eeeffcf4851d6f80fefb1a27ce8fb13fb90ce34a83eb"
+          },
+          {
+            "path": "GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+            "root": "local",
+            "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+          },
+          {
+            "path": "verify_gap_two_endpoint_reduction_guards.py",
+            "root": "local",
+            "sha256": "8e2d3ad12cf498a297b05cf1956c3a115ad1062477d4c824b103fcd791aec3ea"
+          },
+          {
+            "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_HERMITE_BULK.md",
+            "root": "repo",
+            "sha256": "080041f624d7f2b116ffb14fceafc484a35a2857e57c172348b532f059bcd856"
+          },
+          {
+            "path": "COALESCING_HERMITE_BULK_CONTOUR_EXCLUSION.md",
+            "root": "local",
+            "sha256": "6cdbfc1b494ddf7b19d4f2d1543e617abc7b97ecf578f4381ac8d9c4a4a4688c"
+          },
+          {
+            "path": "verify_coalescing_hermite_bulk_contour_exclusion.py",
+            "root": "local",
+            "sha256": "663196bf0bd7c84ff6b043d6b2ebb5110a9d07e6c25704dd72c7bc9fffca0c35"
+          },
+          {
+            "path": "research/factorial/image-rigidity/verify_coalescing_binomial_hermite_bulk.py",
+            "root": "repo",
+            "sha256": "fedd70287cc457f944e7f208884f8f88875073224fb203a32017313114fe3606"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+            "root": "repo",
+            "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+          },
+          {
+            "path": "research/factorial/image-rigidity/verify_gap_two_grace_global_localization.py",
+            "root": "repo",
+            "sha256": "fc20b8c7154761f8bc28bcecfce6c5810d08c1fa5af901946e8b02f021fe4be2"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+            "root": "repo",
+            "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+          }
+        ],
+        "polynomial_identity_count": 1,
+        "schema": 1,
+        "scope": "supporting guards for outside-endpoint zero-freeness and thin-strip actual-pair bulk exclusion; no endpoint-window claim"
+      },
+      "receipt": "research/factorial/image-rigidity/gap_two_endpoint_reduction_guards_verification.json",
+      "receipt_sha256": "5f40fb1dcd791ff276f8a104fe72d2854c4b18ba8438b77ec24ef62d83ef394d",
+      "root": "repo",
+      "script": "research/factorial/image-rigidity/verify_gap_two_endpoint_reduction_guards.py"
+    },
+    {
+      "data": {
+        "checker_sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d",
+        "comparisons": [
+          {
+            "left": "1/3",
+            "name": "positive contour cross coefficient",
+            "relation": "=",
+            "right": "1/3"
+          },
+          {
+            "left": "5/9",
+            "name": "positive contour cubic loss",
+            "relation": "=",
+            "right": "5/9"
+          },
+          {
+            "left": "32",
+            "name": "positive contour envelope constant squared",
+            "relation": "<",
+            "right": "36"
+          },
+          {
+            "left": "48",
+            "name": "cos5pi12 exceeds one quarter squared reduction",
+            "relation": "<",
+            "right": "49"
+          },
+          {
+            "left": "16/25",
+            "name": "negative middle square-root lower",
+            "relation": "<",
+            "right": "7/9"
+          },
+          {
+            "left": "4/9",
+            "name": "negative middle D factor",
+            "relation": "<",
+            "right": "64/135"
+          },
+          {
+            "left": "19/6",
+            "name": "negative middle arc derivative",
+            "relation": "<",
+            "right": "4"
+          },
+          {
+            "left": "216",
+            "name": "negative middle Gaussian constant squared",
+            "relation": "<",
+            "right": "225"
+          },
+          {
+            "left": "2/27",
+            "name": "negative upper D quadratic",
+            "relation": "=",
+            "right": "2/27"
+          },
+          {
+            "left": "22/9",
+            "name": "negative upper arc derivative",
+            "relation": "<",
+            "right": "3"
+          },
+          {
+            "left": "729/4",
+            "name": "negative upper Gaussian constant squared",
+            "relation": "=",
+            "right": "729/4"
+          },
+          {
+            "left": "5/3",
+            "name": "negative lower arc derivative",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "432",
+            "name": "negative lower Gaussian constant squared",
+            "relation": "<",
+            "right": "441"
+          },
+          {
+            "left": "99/2",
+            "name": "negative full envelope",
+            "relation": "<",
+            "right": "50"
+          },
+          {
+            "left": "5/8",
+            "name": "Robin denominator bootstrap",
+            "relation": "=",
+            "right": "5/8"
+          },
+          {
+            "left": "8/5",
+            "name": "Robin speed bootstrap",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "15/2",
+            "name": "endpoint drift coefficient",
+            "relation": "=",
+            "right": "15/2"
+          },
+          {
+            "left": "0",
+            "name": "minimum terminal positive rho gap",
+            "relation": "<",
+            "right": "4"
+          }
+        ],
+        "negative_controls": 3,
+        "pins": [
+          {
+            "path": "GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+            "root": "local",
+            "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+          },
+          {
+            "path": "verify_gap_two_endpoint_contour_identities.py",
+            "root": "local",
+            "sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d"
+          },
+          {
+            "path": "sources/dlmf-2-4-endpoint.html",
+            "root": "local",
+            "sha256": "c90ac6736075b2d0851c48421da534e74d99ef2d1f33884024ef6297f1dc971f"
+          },
+          {
+            "path": "sources/dlmf-9-2-endpoint.html",
+            "root": "local",
+            "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+          },
+          {
+            "path": "sources/dlmf-9-7-endpoint.html",
+            "root": "local",
+            "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+          },
+          {
+            "path": "sources/dlmf-9-9-endpoint.html",
+            "root": "local",
+            "sha256": "7f5e538332164cf3103abb2374acc2619bfca1c765cd46e04fa738ec790d962b"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+            "root": "repo",
+            "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+            "root": "repo",
+            "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+          },
+          {
+            "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+            "root": "repo",
+            "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+          },
+          {
+            "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_HERMITE_BULK.md",
+            "root": "repo",
+            "sha256": "080041f624d7f2b116ffb14fceafc484a35a2857e57c172348b532f059bcd856"
+          },
+          {
+            "path": "research/factorial/image-rigidity/COALESCING_HERMITE_BULK_CONTOUR_EXCLUSION.md",
+            "root": "repo",
+            "sha256": "6cdbfc1b494ddf7b19d4f2d1543e617abc7b97ecf578f4381ac8d9c4a4a4688c"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+            "root": "repo",
+            "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAP_TWO_OUTSIDE_ENDPOINT_ONE_PACKET.md",
+            "root": "repo",
+            "sha256": "6a326ebc96592fbcaf16eeeffcf4851d6f80fefb1a27ce8fb13fb90ce34a83eb"
+          },
+          {
+            "path": "gap_two_large_lower_endpoint_primary_audit.md",
+            "root": "local",
+            "sha256": "e93ab7dc1aa6e0383cbfbb14c7c0eab58dcc0c1964f904809c8209936c2b1d02"
+          }
+        ],
+        "polynomial_division_cases": 18,
+        "proof_sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58",
+        "schema": 1,
+        "scope": "universal algebra and rational contour guards; the written argument supplies analytic uniformity and the nonnumerical threshold",
+        "source_ledger_sha256": "36d76238946c169c64a52b5edb01c43b14bd909411d9ffda1b03474ddae2d0bb",
+        "universal_identity_count": 10
+      },
+      "receipt": "research/factorial/image-rigidity/gap_two_endpoint_contour_identities_verification.json",
+      "receipt_sha256": "e38c0a891d3809ae8086718568965131c708c5181c6459c04a7b10d9e69bce23",
+      "root": "repo",
+      "script": "research/factorial/image-rigidity/verify_gap_two_endpoint_contour_identities.py"
+    },
+    {
+      "data": {
+        "comparisons": [
+          {
+            "left": "3476336923703933354073267578918997101517138851444449622157664178802472336483547708709989557076806232329843707450907030856000770793468412312409893889440396066752985785639316417943038572748725309254388315556733193913594472160459124330392991800584298713757314478204825919175237853634746097602898122279104712005374048165215019934621935145366245462646891503861138411786646332808726223723508879791192337561153585142664356029719407073425457923678539255928814358976837872202607360477656342985815481133077274512176267294150190788363760640202344760535461767843682981839935235836702396346833230876550289716280284955690217588925396831750593659432890242149248820925177384620332061555796939755913749899199980387952666690644529895915940135197533214279699062055246733637338827365247626927285733823977898299432844767921673066991773100066410997879958541851351343798630684415538986411734933530738754327879339257863542450001091183241629845295821469020625444331573815710355309280583198429326860054814144617554518791312499854561045281118105049121215762824444956765773387466897711356438933327688773461734823793461569902429579293114497570059590920039884726253130242416655009462756162239027161416617497657984566568258738367283095306774550174778444272573938731877676449143522418978387/68141674078811490079988438456822867346229883680040539745054300541026134823679922080294618987742156433878558640767554577601504759994162176440524378279244093248986051543722886321922715912480788058250965438620639631239121961548330052958636221898040913990930229584039477976213008880889180776671782596931082533613333870959584741921891192483154934472428128026184515398614177876096524812226534005347705319242261477009280168250394494064870175928293906019473796612690388025933340893141277490369071493099947214231483431007370817001360908352676947834635479313554239906366371997362827859230144169511448908581351835058823362162406559097847576422080058366667223519433168378595384680993042655862340632644686935749236653324796615884663786421946224647591390385697770159129124551253405272431807562690867968048496407794018223288357998576767069908306044325965126781022900042505026061194481918244142952544140667239152887896783948077472638925081102809594836625967274167480824574433103777645608688527137788691158763627246370285416848563757348426079054387826913348653550660391220291880818438549409819280523983508093385341942431429288714055083248200950436710120304649809935916799214698206620745458610271242950241620590592000000000000000000000000000000000000000000000000000000000000000",
+            "name": "Hermite u Rouche",
+            "relation": "<",
+            "right": "1/18"
+          },
+          {
+            "left": "122901862739919204156453692498585342223048808817840542366693506980284533134467519540879920339049541372339808449683646159365897399834399677292428490860847913972948203320599358318629334929738815329553736068080847729374839171233782444757706136257439274426241736332463500544327543302143762662597415129923144498541018788495969217557198374099288925024353878768166149997718803376312034325377287343509632169148369792874777961695145993399937224248647936762365193091220613952449411597902386344219980185923227870265873654574709378335732537953815827026803225601204820367537488497826333817421414854410259020513419613263003157069497762695552944636344341270790854224455681277850274836673649927571925771669460033010692546904527501038917229750443085384082543038444100519323274040743009840377386112620130143952868518249387792150819326304826909175249283016427641431304620841410442368199948008984451457435972844123432633101558220557718880181485294255496073457327219642553852355183437971175137485240777758224762890115355899850398371291941209379693219332897815897639165799622373778557899093767924480844775901459871067251321439/5472316803086031051466265766169787901240025573449739779766753134789277594482283898207919975180384150257244708377970466513270580435029802553294609031597929312432846512392000732693427013465108613802845112874627393320401891192132349897457252347091880551286622833488371182699621528168451943189326018926548420185280043657534601184876072084140010036257224609054102576626607849333057581754405597339512578169322371664940984795175790487122379441755677486341191850609265466965921262449842948322962363447002132600822567763582764339043316098442830263742970628859610658898607093699331970628982441973924045245659842023571587067398610553007570480468985619030075187872785844197379315578643376777539277458852745948617966059584768105132035010388503272110337702391206680303891727317751383569026100597458259975976970916693647533454970903473573577457615603104395156409531266045542246211426486628782791578247382299057901871206150057294411532762304520321587319915793465336628595350456330303858148682232250928332550494276332954228450477476256722341525755769130374701696788896194629793880495616242853884614305570721626281738281250",
+            "name": "Hermite critical-action cube root input",
+            "relation": "<",
+            "right": "1/40"
+          },
+          {
+            "left": "1/117",
+            "name": "principal cube root transfer",
+            "relation": "=",
+            "right": "1/117"
+          },
+          {
+            "left": "1662831584390430319443933726171901370592667559074283727364133919435576111822037638820350160721193256559323742328682288831494167867592906841256485476986072031733995684703359949031389241539085049797449909658741560114600871194770020909959403495426003230984690941795752346536535247858576755846855304471177951486814330121448952262212501056157580911148560174917040503039104168756395789711123383370951180454947935285222664995605786406108355565510154951004704544987695026567945434971108496642025877541909743270572007142215790057237889160314144133562423754215446219867750354047742846129301933194529431690892787846611969490666257721590983408573273193384048425108769959534474485219349444920012376175101610773510713852896153267006798509526342865283405572711622891867458490482086689627498256369156235935971329749123132301974022313279646873332370152386741381374996283187648903418019986650041267179749632928877112641286603691082876444538004075957530594972835605427679695467785603021755173825177564323441762830748284950292378903087388272341820985630779307035116420158777479183170292148585070366728507970115734975859315516643544023236558133037122453649283161474710700161303705694559016669193186262321364018897826419843907568547064713591990405697948140266889891433128771200671272926415441667413684987825079666804733898049044052502395768570685267094497553431474410399221277492572813844417092068729212056500991323086209312677299398022091/176594756778838131165779010247548000836551159266199578203095238545235059216964953079879475903129362149621438515247590747989541591692061529081461719759675827464182856462303892792802736875794721791237679142275259760755286025853886429875320400774202754259399080823306022113700615847973467562393712983893100811952774542652187821401372876097823260209070007983210925783698641226692003201386220360993738362039794486736977125833289870138057645905175508836660945114256568165133506610496438935875638252128108990205294976505244808430702990051099640901617212536811663932241055048170381269032250295334952246180418897478393227227926338130698935475733969560027234140606630392615636560207015824679279168283177874724342007322541516881921335446932746187003683404007507496431695850778738213951913636336021874328337515313996462849392227534463877731496043377205629961165837873985427038214057090837652335099524077721903921042841466959785311291303693351808819408310750302549224425217354821613097628628923636127777349732215496037435018119393011015864799039180850478432786125436022070812791469436517320071438646485438511828063965963486044658042870987661700897934680770095496218832724799615880108474981507375746670540748933197687692350459181033224507776515491243769978909295789537738037951657873011403482785501861804321149119790917988938396145003116110242976757699050829225371583654098736208203140432882901345079726932552576796845545285732220403",
+            "name": "Hermite tanh quotient",
+            "relation": "<",
+            "right": "1/100"
+          },
+          {
+            "left": "3259907626512173333534585446900414838572186477884560759249160701521560930865937711085355865310828364849299122813046267770986686110394572431604531324794448743123412976772107578616121383974701038245071988996123902823783304834094664924849895755141098741559680450360608116812731961442858390286529302985450875304442183097030199188319532850979654945588564152292862808062685469680497133258314208473543165225025334495431295195247065100607782501203902995506128668177118752891318649594405192714684285142957917003149584166450356913252302632558605235134682554860762392902792157226512636829867307338307619093793388523387366392484963980784366936717321806792157053141226786217059703637367381947504101213949482935116877107433125989333196942549116404337273385253353583925346557858313426728961080129529892086848015600754895938939656772828670787975643093116206695749726853908473533902488897436519185232328823541004075539471262244206643826636220022411322225711090578911984023279968718082340837819682099013701832848668211350317162825603255895043645584160654087989225884919007082922060800184752371977303756715702514800260252328691746744259845996522703128293122882926362031793381615865232342585262767032474476824780577071056921350799559926852729023883232638501303745611990214723297201/175059880071306997078227962274107213383757598872409912302949154754934014476717652774823088840474345518977058223305549453009033002777150529428299151784077402856353369049169014748729152791852185107410358620946071726571487924379702253542684277563908377332869475533575771317038085570002665765756481599451462602408921221635405967149450560649109215073192814302501334667337214784770350309468495778119570081169875079721563540401667357503033904525397280345536348560999209953008340119001492944113506561798652211208556051428837037196022598099754370577692872041298962212041987730874827627475162699782674147665422847444431737634929919373636812283226528336088783714868056405796846468313333594887017310424413478632370994541345174605103189118210185302845473306489191398005040687116674606177297143227992911631542907774312293823074115613676011586746194939214388654143468948731747682979674939056212576494925791424236375258267400258311030126113535288599993436663417448504643432141522076457742948744174887806009433517171775936290330305787965697666652079602804098400501862086181370751868043907489865374955870440460390459947093018387709696267836171846109004669711044670120104975792880163151541909947918103703147296925417472000000000000000000000000000000000000000000000000000000000000000",
+            "name": "Hermite sinh quotient",
+            "relation": "<",
+            "right": "1/50"
+          },
+          {
+            "left": "217/11583",
+            "name": "Hermite A square",
+            "relation": "<",
+            "right": "1/50"
+          },
+          {
+            "left": "978121/1000000",
+            "name": "Hermite A modulus",
+            "relation": "<",
+            "right": "49/50"
+          },
+          {
+            "left": "13924/123201",
+            "name": "Hermite zeta modulus",
+            "relation": "<",
+            "right": "1/8"
+          },
+          {
+            "left": "167/5800",
+            "name": "Hermite zeta derivative",
+            "relation": "<",
+            "right": "3/100"
+          },
+          {
+            "left": "2677509/16000000",
+            "name": "outer selected-pair Rouche",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "9769/16000",
+            "name": "outer denominator radius",
+            "relation": "=",
+            "right": "9769/16000"
+          },
+          {
+            "left": "4501/4000000",
+            "name": "outer quotient numerator",
+            "relation": "=",
+            "right": "4501/4000000"
+          },
+          {
+            "left": "7501/3997000",
+            "name": "outer multiplicative quotient error",
+            "relation": "<",
+            "right": "1/500"
+          },
+          {
+            "left": "3/5",
+            "name": "outer K right half-plane",
+            "relation": "<",
+            "right": "98871392/160566639"
+          },
+          {
+            "left": "5344/2077",
+            "name": "outer K modulus",
+            "relation": "<",
+            "right": "13/5"
+          },
+          {
+            "left": "85262163125858/33169709737731",
+            "name": "outer logarithmic derivative",
+            "relation": "<",
+            "right": "3"
+          },
+          {
+            "left": "64/125",
+            "name": "J cube-root lower",
+            "relation": "<",
+            "right": "3/5"
+          },
+          {
+            "left": "13/5",
+            "name": "J cube-root upper",
+            "relation": "<",
+            "right": "343/125"
+          },
+          {
+            "left": "7/3",
+            "name": "stationary auxiliary H modulus squared",
+            "relation": "<",
+            "right": "4"
+          },
+          {
+            "left": "15/4",
+            "name": "stationary auxiliary B modulus",
+            "relation": "<",
+            "right": "4"
+          },
+          {
+            "left": "49/100",
+            "name": "outer matched zeta",
+            "relation": "=",
+            "right": "49/100"
+          },
+          {
+            "left": "1/99999",
+            "name": "Cauchy transfer ratio",
+            "relation": "=",
+            "right": "1/99999"
+          },
+          {
+            "left": "2/99999",
+            "name": "Cauchy A change",
+            "relation": "<",
+            "right": "21/1000000"
+          },
+          {
+            "left": "4/99999",
+            "name": "Cauchy B change",
+            "relation": "<",
+            "right": "41/1000000"
+          },
+          {
+            "left": "49/9999900",
+            "name": "Cauchy zeta change",
+            "relation": "<",
+            "right": "1/200000"
+          },
+          {
+            "left": "49/50",
+            "name": "actual A modulus",
+            "relation": "<",
+            "right": "988979/1000000"
+          },
+          {
+            "left": "500040549/989000000",
+            "name": "actual B modulus",
+            "relation": "<",
+            "right": "13/25"
+          },
+          {
+            "left": "2784923201/24640200000",
+            "name": "actual zeta modulus",
+            "relation": "<",
+            "right": "1/8"
+          },
+          {
+            "left": "490/9",
+            "name": "outer zeta z-derivative",
+            "relation": "=",
+            "right": "490/9"
+          },
+          {
+            "left": "490/899991",
+            "name": "Cauchy zeta derivative change",
+            "relation": "<",
+            "right": "3/5000"
+          },
+          {
+            "left": "153/5000",
+            "name": "actual zeta derivative",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "132651/625000",
+            "name": "critical full inverse boundary",
+            "relation": "<",
+            "right": "27/125"
+          },
+          {
+            "left": "6",
+            "name": "critical true Jacobian Cauchy bound",
+            "relation": "=",
+            "right": "6"
+          },
+          {
+            "left": "1500",
+            "name": "critical true divided-amplitude derivative",
+            "relation": "=",
+            "right": "1500"
+          },
+          {
+            "left": "64000000000000000000000000000000",
+            "name": "huge order two-thirds bound",
+            "relation": "<",
+            "right": "100000000000000000000000000000000"
+          },
+          {
+            "left": "950000/899999",
+            "name": "conditional effective Robin K",
+            "relation": "<",
+            "right": "11/10"
+          },
+          {
+            "left": "121/800",
+            "name": "conditional Robin product",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "1331/10000000000000000000",
+            "name": "conditional Robin cubic",
+            "relation": "<",
+            "right": "1/16"
+          },
+          {
+            "left": "66/5",
+            "name": "conditional actual radial separation",
+            "relation": "<",
+            "right": "200000000"
+          }
+        ],
+        "exact_taylor_identity_count": 3,
+        "negative_controls": 3,
+        "pins": [
+          {
+            "path": "QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+            "root": "local",
+            "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+          },
+          {
+            "path": "verify_quantitative_gap_two_endpoint_data.py",
+            "root": "local",
+            "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+          },
+          {
+            "path": "sources/olde-daalhuis-temme-1994-uniform-airy.pdf",
+            "root": "local",
+            "sha256": "9ba8642d7a278a7004145f7eaf494c4ce13d844a5805fb72fff37fe9f27c8d8b"
+          },
+          {
+            "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+            "root": "repo",
+            "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+          },
+          {
+            "path": "research/factorial/image-rigidity/gap_two_large_lower_endpoint_primary_audit.md",
+            "root": "repo",
+            "sha256": "e93ab7dc1aa6e0383cbfbb14c7c0eab58dcc0c1964f904809c8209936c2b1d02"
+          },
+          {
+            "path": "HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+            "root": "local",
+            "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+          }
+        ],
+        "schema": 1,
+        "scope": "Matched endpoint data, exact-critical-point full inverse and conditional Robin budget; no inverse uniform over a nonzero parameter window, actual C_R bound or numerical SFC cutoff",
+        "source_ledger_sha256": "2834fdd366ed1f162c5a66b2bdbcfabe271a1b232a806db555f36f57426e3858",
+        "universal_algebra_identity_count": 5,
+        "weighted_average_moment_cases": 18
+      },
+      "receipt": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_verification.json",
+      "receipt_sha256": "30794eba794e5228868cb259978ca3a6207bac11747e81e3179e109af5b60657",
+      "root": "repo",
+      "script": "research/factorial/image-rigidity/verify_quantitative_gap_two_endpoint_data.py"
+    },
+    {
+      "data": {
+        "boundary_replay": {
+          "arithmetic": "python-flint Arb/Acb outward-rounded complex balls",
+          "attempted_boxes": 2088,
+          "certified_leaf_boxes": 1300,
+          "leaf_stream_sha256": "ac7b501b1144b46b929a6711185955b9df2582756ab87b241e1d5630aadf6a31",
+          "maximum_bisection_depth": 7,
+          "negative_controls": 2,
+          "precision_bits": 100,
+          "root_boxes": 512,
+          "scope": "For every y in[1.8999,2.1001] and theta in[0,2pi], with z=iy,v=-z/2+.94exp(i theta), |F0(v,z)-Phi0(z)|>.09. No uniform inverse, period remainder or SFC cutoff follows from this verifier alone.",
+          "source_sha256": "9041c5ba279121d17986fe4167a809a14c43ee83f228f563c7814cdba0fcac35",
+          "status": "PASS_RIGOROUS_BOUNDARY_ONLY",
+          "versions": {
+            "FLINT": "3.6.0",
+            "python_flint": "0.9.0"
+          }
+        },
+        "complete_monodromy_cases": [
+          {
+            "boundary": [
+              0,
+              1,
+              2
+            ],
+            "common_fixed_sheets": [
+              2
+            ],
+            "first": [
+              1,
+              0,
+              2
+            ],
+            "second": [
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "boundary": [
+              2,
+              0,
+              1
+            ],
+            "common_fixed_sheets": [],
+            "first": [
+              1,
+              0,
+              2
+            ],
+            "second": [
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "boundary": [
+              1,
+              2,
+              0
+            ],
+            "common_fixed_sheets": [],
+            "first": [
+              1,
+              0,
+              2
+            ],
+            "second": [
+              0,
+              2,
+              1
+            ]
+          },
+          {
+            "boundary": [
+              1,
+              2,
+              0
+            ],
+            "common_fixed_sheets": [],
+            "first": [
+              2,
+              1,
+              0
+            ],
+            "second": [
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "boundary": [
+              0,
+              1,
+              2
+            ],
+            "common_fixed_sheets": [
+              1
+            ],
+            "first": [
+              2,
+              1,
+              0
+            ],
+            "second": [
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "boundary": [
+              2,
+              0,
+              1
+            ],
+            "common_fixed_sheets": [],
+            "first": [
+              2,
+              1,
+              0
+            ],
+            "second": [
+              0,
+              2,
+              1
+            ]
+          },
+          {
+            "boundary": [
+              2,
+              0,
+              1
+            ],
+            "common_fixed_sheets": [],
+            "first": [
+              0,
+              2,
+              1
+            ],
+            "second": [
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "boundary": [
+              1,
+              2,
+              0
+            ],
+            "common_fixed_sheets": [],
+            "first": [
+              0,
+              2,
+              1
+            ],
+            "second": [
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "boundary": [
+              0,
+              1,
+              2
+            ],
+            "common_fixed_sheets": [
+              0
+            ],
+            "first": [
+              0,
+              2,
+              1
+            ],
+            "second": [
+              0,
+              2,
+              1
+            ]
+          }
+        ],
+        "coverage": [
+          {
+            "declaration": "Theorem FullActualEndpointInverse",
+            "support": "Written complex-analytic/covering proof plus exact rational margins, universal identities, complete S3 enumeration, and closed-cell boundary replay."
+          }
+        ],
+        "independent_closed_tiling_root_boxes": 512,
+        "independently_rechecked_leaf_enclosures": 1300,
+        "negative_controls": 7,
+        "pins": [
+          {
+            "path": "GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+            "root": "local",
+            "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+          },
+          {
+            "path": "verify_gap_two_full_endpoint_uniform_inverse.py",
+            "root": "local",
+            "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+          },
+          {
+            "path": "gap_two_full_endpoint_inverse_inputs.json",
+            "root": "local",
+            "sha256": "614c3bc0db1ad87cfdf3f3f375aebd5b2b3b4e26abcff346d6a715f533bf22f5"
+          },
+          {
+            "path": "gap_two_full_endpoint_inverse_primary_audit.md",
+            "root": "local",
+            "sha256": "c3e0291b10f0b0920746fdcae22b5bbbcff73b127f9cbd76a4a6becd5a5f730c"
+          },
+          {
+            "path": "verify_hermite_endpoint_outer_boundary_ball.py",
+            "root": "local",
+            "sha256": "9041c5ba279121d17986fe4167a809a14c43ee83f228f563c7814cdba0fcac35"
+          },
+          {
+            "path": "hermite_endpoint_outer_boundary_ball_verification.json",
+            "root": "local",
+            "sha256": "b4d00070b0634d9dcd9434c3e921be72982321c0777b5c72c5d2a7bc3b71931b"
+          },
+          {
+            "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+            "root": "repo",
+            "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+          },
+          {
+            "path": "research/factorial/image-rigidity/verify_quantitative_gap_two_endpoint_data.py",
+            "root": "repo",
+            "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+          },
+          {
+            "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_source_ledger.json",
+            "root": "repo",
+            "sha256": "2834fdd366ed1f162c5a66b2bdbcfabe271a1b232a806db555f36f57426e3858"
+          },
+          {
+            "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+            "root": "repo",
+            "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+          },
+          {
+            "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+            "root": "repo",
+            "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+          }
+        ],
+        "rational_guards": [
+          {
+            "left": "99/10000",
+            "name": "upper-half-plane log margin",
+            "relation": "<",
+            "right": "199/20000"
+          },
+          {
+            "left": "100200101/10000000000",
+            "name": "whole matched-data disk",
+            "relation": "<",
+            "right": "10201/1000000"
+          },
+          {
+            "left": "20396209/398000",
+            "name": "Hermite z derivative",
+            "relation": "<",
+            "right": "52"
+          },
+          {
+            "left": "1991/1000",
+            "name": "physical v modulus",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "3039799900000000300000000/29849969403000602984997",
+            "name": "actual delta phase derivative",
+            "relation": "<",
+            "right": "102"
+          },
+          {
+            "left": "1259819986500000050625/639679990404800035982",
+            "name": "critical mean delta derivative",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "104",
+            "name": "actual phase delta allowance",
+            "relation": "<",
+            "right": "110"
+          },
+          {
+            "left": "447/5000",
+            "name": "actual boundary",
+            "relation": "<",
+            "right": "894789/10000000"
+          },
+          {
+            "left": "2118571/24000000",
+            "name": "cubic inverse radius",
+            "relation": "<",
+            "right": "447/5000"
+          },
+          {
+            "left": "1100000400000001/10000000000000000",
+            "name": "stationary comparison",
+            "relation": "<",
+            "right": "2209/2500"
+          },
+          {
+            "left": "414201/4000000",
+            "name": "Hermite stationary constant",
+            "relation": "<",
+            "right": "11/100"
+          },
+          {
+            "left": "1/1152",
+            "name": "critical cubic value squared",
+            "relation": "<",
+            "right": "9/10000"
+          },
+          {
+            "left": "3/100",
+            "name": "critical value below boundary",
+            "relation": "<",
+            "right": "447/5000"
+          },
+          {
+            "left": "295999/39999600000",
+            "name": "zero-curve Rouche",
+            "relation": "<",
+            "right": "1/100000"
+          },
+          {
+            "left": "1/100000",
+            "name": "safe punctured-domain point",
+            "relation": "<",
+            "right": "1/20"
+          },
+          {
+            "left": "1/8",
+            "name": "canonical stationary t inside inverse",
+            "relation": "<",
+            "right": "8281/40000"
+          },
+          {
+            "left": "9/20",
+            "name": "closed inverse disk",
+            "relation": "<",
+            "right": "91/200"
+          },
+          {
+            "left": "94/5",
+            "name": "actual inverse Jacobian",
+            "relation": "<",
+            "right": "19"
+          },
+          {
+            "left": "1/8",
+            "name": "divided amplitude contour encloses canonical criticals",
+            "relation": "<",
+            "right": "4/25"
+          },
+          {
+            "left": "3/8",
+            "name": "divided amplitude t margin",
+            "relation": "<",
+            "right": "2/5"
+          },
+          {
+            "left": "2432000/7",
+            "name": "actual divided amplitude derivative",
+            "relation": "<",
+            "right": "350000"
+          }
+        ],
+        "schema": 1,
+        "scope": "Full actual thin endpoint window: true uniform regular cubic inverse and local G_t bound only. No complete-period C_R or numerical Strong Factorial cutoff.",
+        "source_ledger_sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8",
+        "status": "PASS_FULL_WINDOW_INVERSE_SUPPORT",
+        "universal_identity_count": 4
+      },
+      "receipt": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_verification.json",
+      "receipt_sha256": "48967f0cdbd59c1f48d6f6794fd36df923510be5799c635123c5688c550fbd40",
+      "root": "repo",
+      "script": "research/factorial/image-rigidity/verify_gap_two_full_endpoint_uniform_inverse.py"
+    },
+    {
+      "data": {
+        "negative_controls": 2,
+        "primary_error_scope": "Actual DLMF9.7.17 n1, sigma1/6Ai and0Aiprime, exact error sectors; no asymptotic inference or zero sampling.",
+        "proof_sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046",
+        "rational_guards": [
+          {
+            "left": "9/10",
+            "name": "Gamma2/3 integral lower",
+            "relation": "=",
+            "right": "9/10"
+          },
+          {
+            "left": "9/4",
+            "name": "Gamma1/3 integral lower",
+            "relation": "=",
+            "right": "9/4"
+          },
+          {
+            "left": "3",
+            "name": "Bi initial root upper",
+            "relation": "<",
+            "right": "4096/729"
+          },
+          {
+            "left": "38/27",
+            "name": "Bi initial majorant",
+            "relation": "<",
+            "right": "3/2"
+          },
+          {
+            "left": "25767549888412498917368655049812299316350010899695291370912522059048806367901/8644050000175932578168189526912110173972645761338495238637468048095703125",
+            "name": "exp8 exact series",
+            "relation": "<",
+            "right": "3000"
+          },
+          {
+            "left": "4500",
+            "name": "Bi disk majorant",
+            "relation": "=",
+            "right": "4500"
+          },
+          {
+            "left": "9000",
+            "name": "Bi derivative disk majorant",
+            "relation": "=",
+            "right": "9000"
+          },
+          {
+            "left": "57873461418686387516540549356296553328124029915002687729415815783033433559235854636495158174678350875681241/279410177699351031155315977932942855091607744204268442374520836867698388042489177421254463773834228515625",
+            "name": "compact exponential",
+            "relation": "<",
+            "right": "225"
+          },
+          {
+            "left": "-21",
+            "name": "compact bend bracket at6",
+            "relation": "<",
+            "right": "0"
+          },
+          {
+            "left": "-29/3",
+            "name": "compact bend bracket derivative",
+            "relation": "<",
+            "right": "0"
+          },
+          {
+            "left": "4/3",
+            "name": "compact arc factor squared",
+            "relation": "<",
+            "right": "49/36"
+          },
+          {
+            "left": "22/7",
+            "name": "sqrtpi compact bound squared",
+            "relation": "<",
+            "right": "81/25"
+          },
+          {
+            "left": "945/2",
+            "name": "compatible compact integral",
+            "relation": "<",
+            "right": "500"
+          },
+          {
+            "left": "18000000",
+            "name": "compact joint ratio",
+            "relation": "<",
+            "right": "20000000"
+          },
+          {
+            "left": "7/6",
+            "name": "chi Ai parameter",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "1",
+            "name": "chi derivative parameter",
+            "relation": "<",
+            "right": "2"
+          },
+          {
+            "left": "22/3",
+            "name": "last Ai multiplier square-root bound",
+            "relation": "<",
+            "right": "49/4"
+          },
+          {
+            "left": "10",
+            "name": "last Ai multiplier upper",
+            "relation": "=",
+            "right": "10"
+          },
+          {
+            "left": "7",
+            "name": "last derivative multiplier upper",
+            "relation": "=",
+            "right": "7"
+          },
+          {
+            "left": "16/3",
+            "name": "primary action modulus at r4",
+            "relation": "=",
+            "right": "16/3"
+          },
+          {
+            "left": "25/192",
+            "name": "Ai leading relative error",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "49/384",
+            "name": "derivative leading relative error",
+            "relation": "<",
+            "right": "1/4"
+          },
+          {
+            "left": "32",
+            "name": "positive contour ratio",
+            "relation": "=",
+            "right": "32"
+          },
+          {
+            "left": "5/128",
+            "name": "rotated Ai relative error",
+            "relation": "=",
+            "right": "5/128"
+          },
+          {
+            "left": "7/128",
+            "name": "rotated derivative relative error",
+            "relation": "=",
+            "right": "7/128"
+          },
+          {
+            "left": "29/32",
+            "name": "rotated joint lower",
+            "relation": "=",
+            "right": "29/32"
+          },
+          {
+            "left": "3/4",
+            "name": "rotated lower margin",
+            "relation": "<",
+            "right": "29/32"
+          },
+          {
+            "left": "800/3",
+            "name": "negative contour ratio",
+            "relation": "<",
+            "right": "300"
+          },
+          {
+            "left": "23000000000/3",
+            "name": "conditional normalized local CR",
+            "relation": "<",
+            "right": "8000000000"
+          }
+        ],
+        "schema_version": 1,
+        "scope": "Global absolute Ai-contour bound C_A=2e7, with compatible bent/rotated cycles. No actual CFU remainder constant or numerical SFC cutoff supplied.",
+        "source_ledger_sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7",
+        "status": "PASS",
+        "universal_identity_count": 8
+      },
+      "receipt": "research/factorial/image-rigidity/explicit_airy_contour_envelope_verification.json",
+      "receipt_sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9",
+      "root": "repo",
+      "script": "research/factorial/image-rigidity/verify_explicit_airy_contour_envelope.py"
+    }
+  ],
+  "schema": 1,
+  "scope": "Supporting certificates for the full written theorem: all integer a>=4e16 and actual ordinary gap-two consecutive coprimality over every characteristic-zero field. The executable is not a formal verification of analytic arguments.",
+  "source_failure_and_scope_controls": 66,
+  "source_ledger_sha256": "fbb3dff8318dd54fca04a51da777e98c553a057ae61e43f29c0d9968d6d8900f",
+  "status": "PASS_SOURCE_GUARDED_EFFECTIVE_GAP_TWO_SUPPORT"
+}

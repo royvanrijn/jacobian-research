@@ -1,0 +1,622 @@
+{
+  "coverage": [
+    "negative canonical tails with weights0,1,2",
+    "thin positive canonical tails with weights0,1",
+    "compact canonical tails with weights0,1",
+    "right and left radius-0.41 cut and connector inequalities",
+    "physical-disk Cauchy replacement under certified endpoint matching"
+  ],
+  "excluded_conclusions": [
+    "original-period nonlocal estimate",
+    "actual complete-period remainder",
+    "numerical Strong Factorial cutoff"
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "imported_airy_replay": {
+    "data": {
+      "negative_controls": 2,
+      "primary_error_scope": "Actual DLMF9.7.17 n1, sigma1/6Ai and0Aiprime, exact error sectors; no asymptotic inference or zero sampling.",
+      "proof_sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046",
+      "rational_guards": [
+        {
+          "left": "9/10",
+          "name": "Gamma2/3 integral lower",
+          "relation": "=",
+          "right": "9/10"
+        },
+        {
+          "left": "9/4",
+          "name": "Gamma1/3 integral lower",
+          "relation": "=",
+          "right": "9/4"
+        },
+        {
+          "left": "3",
+          "name": "Bi initial root upper",
+          "relation": "<",
+          "right": "4096/729"
+        },
+        {
+          "left": "38/27",
+          "name": "Bi initial majorant",
+          "relation": "<",
+          "right": "3/2"
+        },
+        {
+          "left": "25767549888412498917368655049812299316350010899695291370912522059048806367901/8644050000175932578168189526912110173972645761338495238637468048095703125",
+          "name": "exp8 exact series",
+          "relation": "<",
+          "right": "3000"
+        },
+        {
+          "left": "4500",
+          "name": "Bi disk majorant",
+          "relation": "=",
+          "right": "4500"
+        },
+        {
+          "left": "9000",
+          "name": "Bi derivative disk majorant",
+          "relation": "=",
+          "right": "9000"
+        },
+        {
+          "left": "57873461418686387516540549356296553328124029915002687729415815783033433559235854636495158174678350875681241/279410177699351031155315977932942855091607744204268442374520836867698388042489177421254463773834228515625",
+          "name": "compact exponential",
+          "relation": "<",
+          "right": "225"
+        },
+        {
+          "left": "-21",
+          "name": "compact bend bracket at6",
+          "relation": "<",
+          "right": "0"
+        },
+        {
+          "left": "-29/3",
+          "name": "compact bend bracket derivative",
+          "relation": "<",
+          "right": "0"
+        },
+        {
+          "left": "4/3",
+          "name": "compact arc factor squared",
+          "relation": "<",
+          "right": "49/36"
+        },
+        {
+          "left": "22/7",
+          "name": "sqrtpi compact bound squared",
+          "relation": "<",
+          "right": "81/25"
+        },
+        {
+          "left": "945/2",
+          "name": "compatible compact integral",
+          "relation": "<",
+          "right": "500"
+        },
+        {
+          "left": "18000000",
+          "name": "compact joint ratio",
+          "relation": "<",
+          "right": "20000000"
+        },
+        {
+          "left": "7/6",
+          "name": "chi Ai parameter",
+          "relation": "<",
+          "right": "2"
+        },
+        {
+          "left": "1",
+          "name": "chi derivative parameter",
+          "relation": "<",
+          "right": "2"
+        },
+        {
+          "left": "22/3",
+          "name": "last Ai multiplier square-root bound",
+          "relation": "<",
+          "right": "49/4"
+        },
+        {
+          "left": "10",
+          "name": "last Ai multiplier upper",
+          "relation": "=",
+          "right": "10"
+        },
+        {
+          "left": "7",
+          "name": "last derivative multiplier upper",
+          "relation": "=",
+          "right": "7"
+        },
+        {
+          "left": "16/3",
+          "name": "primary action modulus at r4",
+          "relation": "=",
+          "right": "16/3"
+        },
+        {
+          "left": "25/192",
+          "name": "Ai leading relative error",
+          "relation": "<",
+          "right": "1/4"
+        },
+        {
+          "left": "49/384",
+          "name": "derivative leading relative error",
+          "relation": "<",
+          "right": "1/4"
+        },
+        {
+          "left": "32",
+          "name": "positive contour ratio",
+          "relation": "=",
+          "right": "32"
+        },
+        {
+          "left": "5/128",
+          "name": "rotated Ai relative error",
+          "relation": "=",
+          "right": "5/128"
+        },
+        {
+          "left": "7/128",
+          "name": "rotated derivative relative error",
+          "relation": "=",
+          "right": "7/128"
+        },
+        {
+          "left": "29/32",
+          "name": "rotated joint lower",
+          "relation": "=",
+          "right": "29/32"
+        },
+        {
+          "left": "3/4",
+          "name": "rotated lower margin",
+          "relation": "<",
+          "right": "29/32"
+        },
+        {
+          "left": "800/3",
+          "name": "negative contour ratio",
+          "relation": "<",
+          "right": "300"
+        },
+        {
+          "left": "23000000000/3",
+          "name": "conditional normalized local CR",
+          "relation": "<",
+          "right": "8000000000"
+        }
+      ],
+      "schema_version": 1,
+      "scope": "Global absolute Ai-contour bound C_A=2e7, with compatible bent/rotated cycles. No actual CFU remainder constant or numerical SFC cutoff supplied.",
+      "source_ledger_sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7",
+      "status": "PASS",
+      "universal_identity_count": 8
+    },
+    "receipt_sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9"
+  },
+  "independent_replay": false,
+  "pins": [
+    {
+      "path": "COMPACT_AIRY_PHYSICAL_CUT_ADDENDUM.md",
+      "root": "local",
+      "sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4"
+    },
+    {
+      "path": "NEGATIVE_AIRY_CURVE_OUTER_TAIL.md",
+      "root": "local",
+      "sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a"
+    },
+    {
+      "path": "POSITIVE_AIRY_THIN_OUTER_TAIL_AND_CUT_GEOMETRY.md",
+      "root": "local",
+      "sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021"
+    },
+    {
+      "path": "airy_outer_tail_and_cut_inputs.json",
+      "root": "local",
+      "sha256": "169e26d91b196625c328bad6681a60c2d6240a33f1b5766c53f222b0b0beeb34"
+    },
+    {
+      "path": "compact_airy_physical_cut_verification.json",
+      "root": "local",
+      "sha256": "f463c0d7039d517a7d23601b4a6599807cfd951ce9454923d7c6bc9e12a028cb"
+    },
+    {
+      "path": "negative_airy_curve_outer_tail_verification.json",
+      "root": "local",
+      "sha256": "d2868f15a06887406f852951733a008d0ba0a9400002166ed655b53662d84790"
+    },
+    {
+      "path": "positive_airy_thin_outer_tail_verification.json",
+      "root": "local",
+      "sha256": "aee4e07dd69f1f03588a25f2423c1b4e20f0165b548ccb69ae4f4f082c0053df"
+    },
+    {
+      "path": "verify_airy_outer_tail_and_cut_package.py",
+      "root": "local",
+      "sha256": "ddfde9e607cef379e0c1f65b1b5277c11049b9731d693f2627757eadc1cb3a3f"
+    },
+    {
+      "path": "verify_compact_airy_physical_cut.py",
+      "root": "local",
+      "sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4"
+    },
+    {
+      "path": "verify_negative_airy_curve_outer_tail.py",
+      "root": "local",
+      "sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f"
+    },
+    {
+      "path": "verify_positive_airy_thin_outer_tail.py",
+      "root": "local",
+      "sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+      "root": "repo",
+      "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+    },
+    {
+      "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_source_ledger.json",
+      "root": "repo",
+      "sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/explicit_airy_contour_envelope_verification.json",
+      "root": "repo",
+      "sha256": "27e4750166612f14472173eeb19f2d3098616aea64501c41844be06a3c31b8b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_explicit_airy_contour_envelope.py",
+      "root": "repo",
+      "sha256": "b820a1ce46ccf1bc6242e0e39f2c25b500bbae33e9d3917512eea343d4d32da1"
+    }
+  ],
+  "replays": [
+    {
+      "data": {
+        "certificates": {
+          "arc_ratio_identity": true,
+          "phase_loss_identity": true,
+          "positive_left_coefficients": [
+            "6",
+            "345/8",
+            "531/4",
+            "114135/512",
+            "110697/512",
+            "60273/512",
+            "260283/8192",
+            "394833/131072"
+          ],
+          "positive_right_coefficients": [
+            "54",
+            "594",
+            "2079",
+            "3429",
+            "3096",
+            "1584",
+            "432",
+            "48"
+          ]
+        },
+        "checker_sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f",
+        "external_review": false,
+        "formal_verification": false,
+        "independent_replay": false,
+        "negative_controls_rejected": 3,
+        "outer_tail_bound": "10^11*m^(-1/3)*exp(-m/14000)*joint_Airy_norm",
+        "phase_loss_constant": "1/243",
+        "physical_loss_constant": "1/7000",
+        "proof_sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a",
+        "rational_guards": {
+          "P_left_positive": true,
+          "P_right_positive": true,
+          "compact_coefficient_below_limit": true,
+          "compact_tail_coefficient": true,
+          "exp_sixteen_thirds_upper": true,
+          "large_tail_coefficient": true,
+          "left_interval_below_one": true,
+          "left_interval_value": true,
+          "positive_absolute_loss": true,
+          "ratio_at_nine_eighths": true,
+          "rational_cubic_loss": true,
+          "zero_zeta_coefficient": true,
+          "zero_zeta_decay": true
+        },
+        "schema_version": 1,
+        "scope": "exact elementary negative-sector canonical Airy outer-tail certificates; not a full-period remainder"
+      },
+      "receipt": "negative_airy_curve_outer_tail_verification.json",
+      "script": "verify_negative_airy_curve_outer_tail.py",
+      "sha256": "d2868f15a06887406f852951733a008d0ba0a9400002166ed655b53662d84790"
+    },
+    {
+      "data": {
+        "checker_sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9",
+        "external_review": false,
+        "formal_verification": false,
+        "independent_replay": false,
+        "negative_controls": 3,
+        "proof_sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021",
+        "rational_guards": [
+          {
+            "left": "3",
+            "name": "sqrt3 upper",
+            "relation": "<",
+            "right": "81/25"
+          },
+          {
+            "left": "289/100",
+            "name": "sqrt3 lower",
+            "relation": "<",
+            "right": "3"
+          },
+          {
+            "left": "1/25000",
+            "name": "q modulus",
+            "relation": "<",
+            "right": "49/1000000"
+          },
+          {
+            "left": "1/8",
+            "name": "s modulus",
+            "relation": "<",
+            "right": "31329/250000"
+          },
+          {
+            "left": "3173/25000",
+            "name": "vertical cannot exit",
+            "relation": "<",
+            "right": "9/64"
+          },
+          {
+            "left": "7/400",
+            "name": "large p y bound",
+            "relation": "=",
+            "right": "7/400"
+          },
+          {
+            "left": "1/20000",
+            "name": "large p loss",
+            "relation": "<",
+            "right": "49/960000"
+          },
+          {
+            "left": "3127/50000",
+            "name": "small p s bound",
+            "relation": "<",
+            "right": "63001/1000000"
+          },
+          {
+            "left": "31/300",
+            "name": "small p y bound",
+            "relation": "=",
+            "right": "31/300"
+          },
+          {
+            "left": "23/675",
+            "name": "small p x bound",
+            "relation": "=",
+            "right": "23/675"
+          },
+          {
+            "left": "1/5000",
+            "name": "small p loss",
+            "relation": "<",
+            "right": "22103/109350000"
+          },
+          {
+            "left": "4",
+            "name": "arc sqrt bound",
+            "relation": "<",
+            "right": "108/25"
+          },
+          {
+            "left": "1728/25",
+            "name": "whole Gaussian constant",
+            "relation": "<",
+            "right": "81"
+          },
+          {
+            "left": "432/25",
+            "name": "first weighted Gaussian coefficient",
+            "relation": "<",
+            "right": "18"
+          },
+          {
+            "left": "48",
+            "name": "large norm zero weight coefficient",
+            "relation": "<",
+            "right": "200"
+          },
+          {
+            "left": "144",
+            "name": "large norm first weight coefficient",
+            "relation": "<",
+            "right": "200"
+          },
+          {
+            "left": "1/16",
+            "name": "compact cubic loss",
+            "relation": "<",
+            "right": "5/72"
+          },
+          {
+            "left": "12",
+            "name": "compact bend start",
+            "relation": "<",
+            "right": "24"
+          },
+          {
+            "left": "16",
+            "name": "compact outer cubic dominates linear",
+            "relation": "<",
+            "right": "576"
+          },
+          {
+            "left": "60",
+            "name": "compact zero weight integral",
+            "relation": "=",
+            "right": "60"
+          },
+          {
+            "left": "46272/25",
+            "name": "compact first weight integral",
+            "relation": "<",
+            "right": "1900"
+          },
+          {
+            "left": "15390000000",
+            "name": "compact normalized bound",
+            "relation": "<",
+            "right": "20000000000"
+          },
+          {
+            "left": "20000000000",
+            "name": "requested slack",
+            "relation": "<",
+            "right": "1000000000000000"
+          },
+          {
+            "left": "7/150",
+            "name": "positive cut y",
+            "relation": "=",
+            "right": "7/150"
+          },
+          {
+            "left": "7/1000",
+            "name": "positive cut imaginary sign",
+            "relation": "<",
+            "right": "7/150"
+          },
+          {
+            "left": "576/625",
+            "name": "cos half angle lower",
+            "relation": "<",
+            "right": "37/40"
+          },
+          {
+            "left": "3/40",
+            "name": "sin half angle upper",
+            "relation": "<",
+            "right": "1/9"
+          },
+          {
+            "left": "1/1000",
+            "name": "sqrt small q",
+            "relation": "<",
+            "right": "16/15625"
+          },
+          {
+            "left": "7/300",
+            "name": "negative right X large q",
+            "relation": "=",
+            "right": "7/300"
+          },
+          {
+            "left": "71/5000",
+            "name": "negative right re large q",
+            "relation": "=",
+            "right": "71/5000"
+          },
+          {
+            "left": "71/5000",
+            "name": "negative right re small q",
+            "relation": "<",
+            "right": "109/7500"
+          },
+          {
+            "left": "287/1500",
+            "name": "negative right imaginary sign",
+            "relation": "=",
+            "right": "287/1500"
+          },
+          {
+            "left": "361/2500",
+            "name": "negative incoming X",
+            "relation": "<",
+            "right": "48167/320000"
+          },
+          {
+            "left": "8/25",
+            "name": "negative incoming real part",
+            "relation": "<",
+            "right": "6411/20000"
+          },
+          {
+            "left": "41/2500000",
+            "name": "complex circular perturbation",
+            "relation": "=",
+            "right": "41/2500000"
+          },
+          {
+            "left": "1/30000",
+            "name": "circular connector remaining margin",
+            "relation": "<",
+            "right": "21/625000"
+          },
+          {
+            "left": "233/2000",
+            "name": "left-circle derivative",
+            "relation": "=",
+            "right": "233/2000"
+          },
+          {
+            "left": "1/10000",
+            "name": "left-circle remaining margin",
+            "relation": "<",
+            "right": "2213/17500000"
+          }
+        ],
+        "schema": 1,
+        "scope": "thin canonical positive-Airy outer tails and conditional right-circle connector geometry only",
+        "universal_identities": 2
+      },
+      "receipt": "positive_airy_thin_outer_tail_verification.json",
+      "script": "verify_positive_airy_thin_outer_tail.py",
+      "sha256": "aee4e07dd69f1f03588a25f2423c1b4e20f0165b548ccb69ae4f4f082c0053df"
+    },
+    {
+      "data": {
+        "checker_sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4",
+        "external_review": false,
+        "formal_verification": false,
+        "independent_replay": false,
+        "negative_controls": 2,
+        "proof_sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4",
+        "rational_guards": {
+          "cubic_loss": true,
+          "m_epsilon": true,
+          "outer_y": true,
+          "p_lower": true,
+          "p_upper_positive_correction": true,
+          "radial_arc": true,
+          "right_connector_endpoint_loss": true,
+          "saddle_loss": true,
+          "small_zeta": true,
+          "tail_constant": true,
+          "tail_decay": true
+        },
+        "schema": 1,
+        "scope": "compact canonical Airy physical-cut and weighted-tail rational support only",
+        "status": "PASS",
+        "universal_identities": 1
+      },
+      "receipt": "compact_airy_physical_cut_verification.json",
+      "script": "verify_compact_airy_physical_cut.py",
+      "sha256": "f463c0d7039d517a7d23601b4a6599807cfd951ce9454923d7c6bc9e12a028cb"
+    }
+  ],
+  "schema": 1,
+  "scope": "canonical weighted Airy tails, certified cuts, conditional circle connectors and physical-disk Cauchy replacement only",
+  "source_ledger_sha256": "c4bbffe41566ca173a65d22052a6d05057b4113274ab135dbf1352c203c1fcde",
+  "status": "PASS_CANONICAL_AIRY_TAILS_AND_CUTS"
+}

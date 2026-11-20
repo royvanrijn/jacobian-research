@@ -1,0 +1,241 @@
+{
+  "checker_sha256": "6aca9908e074965ac7b39df0dd03e7783f792d8841597bbf03dcdbc68c0269d9",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "negative_controls": 3,
+  "proof_sha256": "c873fb448fada9cfe3245c7861d72431757d617d0d196b5dc4529c11593a9021",
+  "rational_guards": [
+    {
+      "left": "3",
+      "name": "sqrt3 upper",
+      "relation": "<",
+      "right": "81/25"
+    },
+    {
+      "left": "289/100",
+      "name": "sqrt3 lower",
+      "relation": "<",
+      "right": "3"
+    },
+    {
+      "left": "1/25000",
+      "name": "q modulus",
+      "relation": "<",
+      "right": "49/1000000"
+    },
+    {
+      "left": "1/8",
+      "name": "s modulus",
+      "relation": "<",
+      "right": "31329/250000"
+    },
+    {
+      "left": "3173/25000",
+      "name": "vertical cannot exit",
+      "relation": "<",
+      "right": "9/64"
+    },
+    {
+      "left": "7/400",
+      "name": "large p y bound",
+      "relation": "=",
+      "right": "7/400"
+    },
+    {
+      "left": "1/20000",
+      "name": "large p loss",
+      "relation": "<",
+      "right": "49/960000"
+    },
+    {
+      "left": "3127/50000",
+      "name": "small p s bound",
+      "relation": "<",
+      "right": "63001/1000000"
+    },
+    {
+      "left": "31/300",
+      "name": "small p y bound",
+      "relation": "=",
+      "right": "31/300"
+    },
+    {
+      "left": "23/675",
+      "name": "small p x bound",
+      "relation": "=",
+      "right": "23/675"
+    },
+    {
+      "left": "1/5000",
+      "name": "small p loss",
+      "relation": "<",
+      "right": "22103/109350000"
+    },
+    {
+      "left": "4",
+      "name": "arc sqrt bound",
+      "relation": "<",
+      "right": "108/25"
+    },
+    {
+      "left": "1728/25",
+      "name": "whole Gaussian constant",
+      "relation": "<",
+      "right": "81"
+    },
+    {
+      "left": "432/25",
+      "name": "first weighted Gaussian coefficient",
+      "relation": "<",
+      "right": "18"
+    },
+    {
+      "left": "48",
+      "name": "large norm zero weight coefficient",
+      "relation": "<",
+      "right": "200"
+    },
+    {
+      "left": "144",
+      "name": "large norm first weight coefficient",
+      "relation": "<",
+      "right": "200"
+    },
+    {
+      "left": "1/16",
+      "name": "compact cubic loss",
+      "relation": "<",
+      "right": "5/72"
+    },
+    {
+      "left": "12",
+      "name": "compact bend start",
+      "relation": "<",
+      "right": "24"
+    },
+    {
+      "left": "16",
+      "name": "compact outer cubic dominates linear",
+      "relation": "<",
+      "right": "576"
+    },
+    {
+      "left": "60",
+      "name": "compact zero weight integral",
+      "relation": "=",
+      "right": "60"
+    },
+    {
+      "left": "46272/25",
+      "name": "compact first weight integral",
+      "relation": "<",
+      "right": "1900"
+    },
+    {
+      "left": "15390000000",
+      "name": "compact normalized bound",
+      "relation": "<",
+      "right": "20000000000"
+    },
+    {
+      "left": "20000000000",
+      "name": "requested slack",
+      "relation": "<",
+      "right": "1000000000000000"
+    },
+    {
+      "left": "7/150",
+      "name": "positive cut y",
+      "relation": "=",
+      "right": "7/150"
+    },
+    {
+      "left": "7/1000",
+      "name": "positive cut imaginary sign",
+      "relation": "<",
+      "right": "7/150"
+    },
+    {
+      "left": "576/625",
+      "name": "cos half angle lower",
+      "relation": "<",
+      "right": "37/40"
+    },
+    {
+      "left": "3/40",
+      "name": "sin half angle upper",
+      "relation": "<",
+      "right": "1/9"
+    },
+    {
+      "left": "1/1000",
+      "name": "sqrt small q",
+      "relation": "<",
+      "right": "16/15625"
+    },
+    {
+      "left": "7/300",
+      "name": "negative right X large q",
+      "relation": "=",
+      "right": "7/300"
+    },
+    {
+      "left": "71/5000",
+      "name": "negative right re large q",
+      "relation": "=",
+      "right": "71/5000"
+    },
+    {
+      "left": "71/5000",
+      "name": "negative right re small q",
+      "relation": "<",
+      "right": "109/7500"
+    },
+    {
+      "left": "287/1500",
+      "name": "negative right imaginary sign",
+      "relation": "=",
+      "right": "287/1500"
+    },
+    {
+      "left": "361/2500",
+      "name": "negative incoming X",
+      "relation": "<",
+      "right": "48167/320000"
+    },
+    {
+      "left": "8/25",
+      "name": "negative incoming real part",
+      "relation": "<",
+      "right": "6411/20000"
+    },
+    {
+      "left": "41/2500000",
+      "name": "complex circular perturbation",
+      "relation": "=",
+      "right": "41/2500000"
+    },
+    {
+      "left": "1/30000",
+      "name": "circular connector remaining margin",
+      "relation": "<",
+      "right": "21/625000"
+    },
+    {
+      "left": "233/2000",
+      "name": "left-circle derivative",
+      "relation": "=",
+      "right": "233/2000"
+    },
+    {
+      "left": "1/10000",
+      "name": "left-circle remaining margin",
+      "relation": "<",
+      "right": "2213/17500000"
+    }
+  ],
+  "schema": 1,
+  "scope": "thin canonical positive-Airy outer tails and conditional right-circle connector geometry only",
+  "universal_identities": 2
+}

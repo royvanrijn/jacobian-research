@@ -1,0 +1,22 @@
+{
+  "conclusion": {
+    "coefficient": 60000,
+    "exponential_gap": "33/50000",
+    "m_power": "1/2",
+    "normalization": "m^(1/3)*exp(-m*Phi)/(2*pi*i)",
+    "weak_coefficient": 1000000000000000,
+    "weak_exponential_gap": "1/100000"
+  },
+  "domain": {
+    "D_lower": "18999/20000",
+    "D_upper": "21001/20000",
+    "actual_shape": "a=4/delta^2 is a positive integer",
+    "delta_upper": "1/100000000",
+    "m_lower": 1,
+    "real_z_upper": "1/100000"
+  },
+  "expected_rational_guards": 32,
+  "negative_controls": 2,
+  "schema": 1,
+  "scope": "Actual original v-period nonlocal pieces only; no local canonical-chain estimate, complete-period C_R or numerical Strong Factorial conclusion."
+}

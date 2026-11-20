@@ -1,0 +1,60 @@
+{
+  "assurance": "Internal mathematical derivation and exactguardsonly. No historicalpriority, formalverification or externalhumanreview.",
+  "files": [
+    {
+      "path": "EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+      "root": "local",
+      "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+    },
+    {
+      "path": "verify_explicit_airy_contour_envelope.py",
+      "root": "local",
+      "sha256": "b820a1ce46ccf1bc6242e0e39f2c25b500bbae33e9d3917512eea343d4d32da1"
+    },
+    {
+      "path": "sources/dlmf-9-2-endpoint.html",
+      "root": "local",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "path": "sources/dlmf-9-7-endpoint.html",
+      "root": "local",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "repo",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    }
+  ],
+  "primary_readings": [
+    {
+      "locator": "9.7.17 aftererrata: n1, sigma1/6Ai and0Aiprime; firstneglectedu1=5/72,abs(v1)=7/72; x=1,7/6 chi boundedby2 usingbeta integral.",
+      "role": "mathematical_input",
+      "url": "https://dlmf.nist.gov/9.7#iv"
+    },
+    {
+      "locator": "ODE9.2.1, initialBi5-6, Wronskian7, connection12 anditsderivative.",
+      "role": "mathematical_input",
+      "url": "https://dlmf.nist.gov/9.2"
+    },
+    {
+      "locator": "StandardAi contour normalization2pi i; officialstatementread.",
+      "role": "mathematical_input",
+      "url": "https://dlmf.nist.gov/9.5.E4"
+    },
+    {
+      "locator": "PositiveGamma Euler integral.",
+      "role": "mathematical_input",
+      "url": "https://dlmf.nist.gov/5.2.E1"
+    },
+    {
+      "locator": "Positiveargumentbeta ratio andsineintegral; chi<=2 directlyrederived.",
+      "role": "mathematical_input",
+      "url": "https://dlmf.nist.gov/5.12.E1"
+    }
+  ],
+  "retained_input": "Twoexplicit compatiblecontour estimates6 and50 fromcanonicalendpointproof Section4, alreadywhole-reviewed.",
+  "schema_version": 1,
+  "scope": "Explicit global Airy-contour constant only; no actual complete-period C_R or numerical Strong Factorial cutoff. All five source records are mandatory."
+}

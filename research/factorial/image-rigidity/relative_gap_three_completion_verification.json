@@ -47,6 +47,6 @@
   "no_completed_secondary_run_claim": true,
   "schema_version": 1,
   "scope": "Pinned completed finite artifact, all532support/3694040terminal stream entries,24literal coefficient vectors and five freshly reconstructed alternate full Bezout identities; the full3694040GCD run is authenticated, not rerun here. Analytical and all-terminal conclusions use the separate written proofs.",
-  "source_ledger_sha256": "38baf7389b21c83758ff549ea0b9daefd13f166cb28d1115a759dd5fc028c2c0",
+  "source_ledger_sha256": "7bcd969d8459443cc614e5ae8b0b8af1b90522f247decfbc738dd8067023a887",
   "status": "PASS"
 }

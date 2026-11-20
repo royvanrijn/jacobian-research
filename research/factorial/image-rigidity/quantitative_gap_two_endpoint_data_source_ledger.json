@@ -1,0 +1,45 @@
+{
+  "checker_scope": "All rational series/polydisc margins and universal normalization/Taylor controls are exact; the conditional C_R budget is explicitly a hypothesis, never certified as an actual period bound.",
+  "files": [
+    {
+      "path": "QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "local",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "verify_quantitative_gap_two_endpoint_data.py",
+      "root": "local",
+      "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+    },
+    {
+      "path": "sources/olde-daalhuis-temme-1994-uniform-airy.pdf",
+      "root": "local",
+      "sha256": "9ba8642d7a278a7004145f7eaf494c4ce13d844a5805fb72fff37fe9f27c8d8b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "repo",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_large_lower_endpoint_primary_audit.md",
+      "root": "repo",
+      "sha256": "e93ab7dc1aa6e0383cbfbb14c7c0eab58dcc0c1964f904809c8209936c2b1d02"
+    },
+    {
+      "path": "HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "local",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    }
+  ],
+  "primary_context": [
+    {
+      "actual_inspection": "Olde Daalhuis--Temme1994, printed308--309 Theorem4.1 and Cauchy representations, printed312 Theorem5.2, printed316--317 quantitative majorants.",
+      "exact_limit": "The Cauchy representation bounds remainders only after the transformed amplitude is bounded on its analytic neighborhood. This note does not infer such a full inverse-amplitude bound from its stationary interpolation data.",
+      "local_path": "sources/olde-daalhuis-temme-1994-uniform-airy.pdf",
+      "url": "https://ir.cwi.nl/pub/1473/1473D.pdf"
+    }
+  ],
+  "schema": 1,
+  "scope": "Explicit matched critical data, a full inverse and true divided-amplitude bound at the EXACT Hermite basepoint, and a CONDITIONAL Robin budget. No uniform nonzero-parameter inverse, actual C_R bound or numerical Strong Factorial cutoff."
+}

@@ -1,0 +1,35 @@
+{
+  "boundary_evidence": {
+    "attempted_boxes": 2088,
+    "certified_leaf_boxes": 1300,
+    "leaf_stream_sha256": "ac7b501b1144b46b929a6711185955b9df2582756ab87b241e1d5630aadf6a31",
+    "maximum_bisection_depth": 7,
+    "root_boxes": 512,
+    "source_sha256": "9041c5ba279121d17986fe4167a809a14c43ee83f228f563c7814cdba0fcac35"
+  },
+  "bounds": {
+    "boundary_actual": "447/5000",
+    "boundary_hermite": "9/100",
+    "divided_amplitude_derivative_bound": "350000",
+    "divided_amplitude_radius": "3/8",
+    "inverse_radius": "91/200",
+    "jacobian_bound": "19",
+    "jacobian_radius": "2/5",
+    "zeta": "1/8"
+  },
+  "coverage": [
+    {
+      "declaration": "Theorem FullActualEndpointInverse",
+      "support": "Written complex-analytic/covering proof plus exact rational margins, universal identities, complete S3 enumeration, and closed-cell boundary replay."
+    }
+  ],
+  "domain": {
+    "delta": "1/100000000",
+    "imag_z_max": "21001/10000",
+    "imag_z_min": "18999/10000",
+    "physical_radius": "47/50",
+    "real_z": "1/100000"
+  },
+  "schema": 1,
+  "scope": "Full actual thin endpoint window: true uniform regular cubic inverse and local G_t bound only. No complete-period C_R or numerical Strong Factorial cutoff."
+}

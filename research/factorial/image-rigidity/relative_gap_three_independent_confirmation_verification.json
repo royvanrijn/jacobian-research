@@ -1,0 +1,108 @@
+{
+  "actual_completed_receipt_sha256": "b5336126eb70bbb25258b215af1a3e3234ee58e6737ddb337a80dc9b4412a865",
+  "actual_executed_source_sha256": "12d554bd8fe2dc2a933d3be47b6ba791c8c1d689126588be1df59425184e5a38",
+  "artifact_negative_controls": 8,
+  "assurance_scope": "Additional internal, differently implemented finite confirmation only.",
+  "completed_supports": 532,
+  "completed_terminal_pairs": 3694040,
+  "fresh_full_fallback_attempt_replays": [
+    {
+      "N": 1168,
+      "a": 5,
+      "d": 31,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 1,
+      "prime": 1000033
+    },
+    {
+      "N": 1168,
+      "a": 5,
+      "d": 31,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 0,
+      "prime": 1000037
+    },
+    {
+      "N": 2932,
+      "a": 9,
+      "d": 33,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 1,
+      "prime": 1000033
+    },
+    {
+      "N": 2932,
+      "a": 9,
+      "d": 33,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 0,
+      "prime": 1000037
+    },
+    {
+      "N": 7079,
+      "a": 10,
+      "d": 50,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 1,
+      "prime": 1000033
+    },
+    {
+      "N": 7079,
+      "a": 10,
+      "d": 50,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 0,
+      "prime": 1000037
+    },
+    {
+      "N": 7734,
+      "a": 5,
+      "d": 57,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 1,
+      "prime": 1000033
+    },
+    {
+      "N": 7734,
+      "a": 5,
+      "d": 57,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 0,
+      "prime": 1000037
+    },
+    {
+      "N": 7495,
+      "a": 4,
+      "d": 60,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 1,
+      "prime": 1000033
+    },
+    {
+      "N": 7495,
+      "a": 4,
+      "d": 60,
+      "full_Bezout_identity_verified": true,
+      "gcd_degree": 0,
+      "prime": 1000037
+    }
+  ],
+  "fresh_literal_coefficient_vectors": 54,
+  "frozen_source_controls_freshly_replayed": {
+    "common_factor_detected": true,
+    "corrupted_Bezout_identity_rejected": true,
+    "literal_integer_coefficient_vectors": 54,
+    "wrong_actual_shape_rejected": true
+  },
+  "full_domain_restarted": false,
+  "reconstructed_terminal_stream_entries": 3694040,
+  "schema_version": 1,
+  "scope": "Authenticated completed FINITE actual domain only. The all-order theorem imports separate analytical premises. No full-domain restart, external review or formal verification.",
+  "source_ledger_sha256": "e405926a6f336889794f9fdb8e896770037b1dca2902d3b38c439b98bbe3a0ed",
+  "status": "PASS",
+  "successful_primes": {
+    "1000033": 3694035,
+    "1000037": 5
+  },
+  "verified_full_Bezout_attempt_count": 3694045
+}

@@ -1,0 +1,42 @@
+{
+  "actual_polynomial": "A_m(Z)=sum binom(m,k)(a*m+1)_(2k) Z^(m-k)",
+  "coefficient_scope": "Every characteristic-zero field; NONZERO ordinary X^a(A+B*X^2)",
+  "coverage": [
+    {
+      "declaration": "Theorem EffectiveGapTwoLargeLowerExponent",
+      "support": "Written complete actual-period proof, separately proved analytic inputs, exact outward-ball endpoint certificates, and rational/identity budget controls."
+    }
+  ],
+  "domain": {
+    "N_min": 2,
+    "a_min": "40000000000000000",
+    "delta_max": "1/100000000",
+    "hard_order": "N>a/4+3/2",
+    "imaginary_z_bounds": [
+      "18999/10000",
+      "21001/10000"
+    ],
+    "local_m_min": "10000000000000000",
+    "real_z_abs_max": "1/100000"
+  },
+  "excludes": [
+    "all a>=40000 gap-two claim",
+    "uniform complete-period constant C_R=10^10",
+    "all-gap Strong Factorial conjecture",
+    "formal verification"
+  ],
+  "expected_arithmetic": {
+    "negative_controls": 3,
+    "normalization_controls": 4,
+    "rational_guards": 44,
+    "universal_identities": 3
+  },
+  "remainder": {
+    "compact_constant": "100000000000000",
+    "compact_xi_abs_max": 4,
+    "large_constant": "1000000000",
+    "normalization": "sigma*2*pi*i*m^(-1/3)*exp(m*Phi) after exact nonzero actual moment scalars are removed"
+  },
+  "schema": 1,
+  "theorem": "Theorem EffectiveGapTwoLargeLowerExponent"
+}

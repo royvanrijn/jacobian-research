@@ -1,0 +1,33 @@
+{
+  "angle_guard": "1/1000",
+  "common_connector_radius": "41/100",
+  "coverage": [
+    {
+      "declaration": "Theorem HorizontalEndpointCubicLocation",
+      "support": "Written exact phase/series/perturbation proof, full closed-cell outward-ball Rouch\u00e9 certificate, and branch-labelled shared-endpoint discs."
+    },
+    {
+      "declaration": "Corollary EndpointRadialCubicDecay",
+      "support": "Certified root-angle/bracket bounds and the exact radial derivative identity."
+    }
+  ],
+  "expected_execution": {
+    "attempted_cells": 14522,
+    "certified_cells": 7262,
+    "maximum_depth": 13,
+    "shared_endpoint_subdiscs": 7264,
+    "source_sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa",
+    "stream_sha256": "3daab939d21f7735b25c06f48b19bda42beb79754951d4cde49f0af1a9f5bf00"
+  },
+  "radial_bracket_guard": "1/10",
+  "radial_derivative_bound": "-99/100000",
+  "root_imaginary_abs_lower": "1/5",
+  "root_modulus_bounds": [
+    "379/1000",
+    "403/1000"
+  ],
+  "root_radius": "1/1000",
+  "root_real_lower": "1/100",
+  "schema": 1,
+  "scope": "Actual endpoint-root locations, branch labels, and decreasing radial canonical connector only; no complete-period connection, C_R constant, or numerical SFC threshold."
+}

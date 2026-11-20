@@ -6,7 +6,7 @@
       "role": "proof",
       "scope": "packet",
       "path": "RELATIVE_GAP_THREE_STRONG_FACTORIAL.md",
-      "sha256": "897f86922ac0140b5445302f0fd449e0ed0789e39e73fdd99cd2deef84b909c6"
+      "sha256": "0e9ab6b15400c7e1b6a7d5630fc781d6bfab9f20483cfb76d7476fc8667bda2e"
     },
     {
       "role": "checker",

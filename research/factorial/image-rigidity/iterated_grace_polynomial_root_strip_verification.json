@@ -1,0 +1,413 @@
+{
+  "actual_multiplication_and_recurrence_controls": [
+    {
+      "N": 1,
+      "a": 407,
+      "coefficient_vector_sha256": "d3a3500f11eb231e1980d365c469a3188d48bc61d4beff7298e98d98a2332596",
+      "d": 2,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 2
+    },
+    {
+      "N": 2,
+      "a": 407,
+      "coefficient_vector_sha256": "685c91474da45a46f4ab0d21f114f81d66e2c3a1d1d3020b46fe8aea35365804",
+      "d": 2,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 2
+    },
+    {
+      "N": 3,
+      "a": 407,
+      "coefficient_vector_sha256": "4415665a2697fb283ad729f0e7bb54450f8086343fb3c1d2e92e65fa5f0e9ac4",
+      "d": 2,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 2
+    },
+    {
+      "N": 4,
+      "a": 407,
+      "coefficient_vector_sha256": "e9e1754c0290a4634b9fac2edd847265eb093f484028a2d68cbdc041b6ee5d8d",
+      "d": 2,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 2
+    },
+    {
+      "N": 5,
+      "a": 407,
+      "coefficient_vector_sha256": "8fb2a75335a2dbf7a30640fe8ed83d6c92eb6aee35623c2361cd6161a6c20ce9",
+      "d": 2,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 2
+    },
+    {
+      "N": 1,
+      "a": 907,
+      "coefficient_vector_sha256": "a8805ae43d8c52f7dbfb1a1f8d129032a426de6a9758c0c440bf64331fb5a377",
+      "d": 3,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 3
+    },
+    {
+      "N": 2,
+      "a": 907,
+      "coefficient_vector_sha256": "a2ef2fc28406dd750ff42a234cec9129a66b58b81dad6717c843bd724ed7eaea",
+      "d": 3,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 3
+    },
+    {
+      "N": 3,
+      "a": 907,
+      "coefficient_vector_sha256": "f9a066ddbc9b55177c19c9601560e34947ca2a2888174ad93d69a3bd0204a235",
+      "d": 3,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 3
+    },
+    {
+      "N": 4,
+      "a": 907,
+      "coefficient_vector_sha256": "7afbff118030a5322e55c03edb1677932c0767329638e662e371cf00b1bff1f7",
+      "d": 3,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 3
+    },
+    {
+      "N": 5,
+      "a": 907,
+      "coefficient_vector_sha256": "15c285e1c319bbe76e8aa62d2cb8a98d30fef45baa9e8c0f3763b2a44b8835e3",
+      "d": 3,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 3
+    },
+    {
+      "N": 1,
+      "a": 1607,
+      "coefficient_vector_sha256": "4c2afb072042c26fe78ef894c65628a9749f45f8e5a4dfa56402130101414dc3",
+      "d": 4,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 4
+    },
+    {
+      "N": 2,
+      "a": 1607,
+      "coefficient_vector_sha256": "f5caeb6014d84aed038e48809b629e5fc3e708dfb1082b4164c99ffca28f179b",
+      "d": 4,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 4
+    },
+    {
+      "N": 3,
+      "a": 1607,
+      "coefficient_vector_sha256": "4cb904966f18ce4f168a8acc19b7b0022dc79f78c814dc9aea7b2ce4f36e6c2b",
+      "d": 4,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 4
+    },
+    {
+      "N": 4,
+      "a": 1607,
+      "coefficient_vector_sha256": "7ae8185897620f1741e3029c867e1b7c5f32fac89000bf02c2e854db34a12b6f",
+      "d": 4,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 4
+    },
+    {
+      "N": 5,
+      "a": 1607,
+      "coefficient_vector_sha256": "34725638e0a8e622cf50b3e1b52a8d2e1b63b0e9e97c6bf09e29a61e4510d160",
+      "d": 4,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 4
+    },
+    {
+      "N": 1,
+      "a": 2507,
+      "coefficient_vector_sha256": "9bc70cb541c34407f9d7dad9cd8ce3323aef753942d7cd2e603f55f98bdb829f",
+      "d": 5,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 5
+    },
+    {
+      "N": 2,
+      "a": 2507,
+      "coefficient_vector_sha256": "d96735cc197468b94e06864ccdd133e323a8f07cf433379aa12dd484827a0d92",
+      "d": 5,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 5
+    },
+    {
+      "N": 3,
+      "a": 2507,
+      "coefficient_vector_sha256": "cf91eb450acb44b0668742648996e0e84c3c8df3f8d6b8e6efe6e1617f83b59a",
+      "d": 5,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 5
+    },
+    {
+      "N": 4,
+      "a": 2507,
+      "coefficient_vector_sha256": "cf7f622c115374a4df577cb72d9752cc641a2e860e2cddfeba17d921789786b3",
+      "d": 5,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 5
+    },
+    {
+      "N": 5,
+      "a": 2507,
+      "coefficient_vector_sha256": "2713b0948e23cb011a5e0987e5a2cc847993da40dabb5fb60354024390288a46",
+      "d": 5,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 5
+    },
+    {
+      "N": 1,
+      "a": 3607,
+      "coefficient_vector_sha256": "6510ed5e1da6cc2a6b99359d97d6a21d9d03e8c99c7998e87cd44c64b51bb903",
+      "d": 6,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 6
+    },
+    {
+      "N": 2,
+      "a": 3607,
+      "coefficient_vector_sha256": "113cf02007d7600fcd6188e7369e26d9539438523dbc11b57ecf2952071fed13",
+      "d": 6,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 6
+    },
+    {
+      "N": 3,
+      "a": 3607,
+      "coefficient_vector_sha256": "06de0d5f9afa2c97c4b8f7b4ef478d63eec5fbc78c5efb88f7c26d15a43fbb12",
+      "d": 6,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 6
+    },
+    {
+      "N": 4,
+      "a": 3607,
+      "coefficient_vector_sha256": "986886f4961af3d780861228bc493ee5965dfd0f31ed804d5c568a33c9d36578",
+      "d": 6,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 6
+    },
+    {
+      "N": 5,
+      "a": 3607,
+      "coefficient_vector_sha256": "a872f15c9af277ac3cd98ac51fe1dbe58c715e88d5a52246c5741823a6395002",
+      "d": 6,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 6
+    },
+    {
+      "N": 1,
+      "a": 4907,
+      "coefficient_vector_sha256": "698d2f09a30116f2ee7135d344927f966cbffce9f0bb7ebfee12a8e48f88466b",
+      "d": 7,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 7
+    },
+    {
+      "N": 2,
+      "a": 4907,
+      "coefficient_vector_sha256": "8abb1637c9f09c7c640e6fbcb30e74af02aa988547a0d73cfb014979f933b22a",
+      "d": 7,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 7
+    },
+    {
+      "N": 3,
+      "a": 4907,
+      "coefficient_vector_sha256": "3c6af621ef429e1bd274b84e94725a5ee4f22d4b87453ae1b0222e7834678e43",
+      "d": 7,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 7
+    },
+    {
+      "N": 4,
+      "a": 4907,
+      "coefficient_vector_sha256": "9761bc24edf209f1c24f1172d7176a49910113c49c8d0889591f953e1db267df",
+      "d": 7,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 7
+    },
+    {
+      "N": 5,
+      "a": 4907,
+      "coefficient_vector_sha256": "5459319b7646280b37d5460a2a91dbf85eb0d658b9df4f1af60ceb84244107eb",
+      "d": 7,
+      "height_majorant_branch": "B<1",
+      "recurrence_steps": 7
+    },
+    {
+      "N": 1,
+      "a": 40000,
+      "coefficient_vector_sha256": "f0c9c66849fff8b87c357887072ad70d1f3c5590485c9fb9f2ddbdc8546510d4",
+      "d": 20,
+      "height_majorant_branch": "B>=1",
+      "recurrence_steps": 20
+    },
+    {
+      "N": 1,
+      "a": 250000,
+      "coefficient_vector_sha256": "94dcde7c39df58967f7c8fc11d7ccd46b4e55044dd4e1c65d07b740c4a9f82fb",
+      "d": 50,
+      "height_majorant_branch": "B>=1",
+      "recurrence_steps": 50
+    },
+    {
+      "N": 1,
+      "a": 1000000,
+      "coefficient_vector_sha256": "56129f38cce47ec3e4bc149b6219a5b236c1314769035cb48d513acc1ec6238a",
+      "d": 100,
+      "height_majorant_branch": "B>=1",
+      "recurrence_steps": 100
+    }
+  ],
+  "common_affine_controls": [
+    {
+      "N": 2,
+      "a": 400,
+      "actual_lower_shape": 401,
+      "d": 2,
+      "original_gcd_degree": 0,
+      "same_affine_gcd_degree": 0
+    },
+    {
+      "N": 3,
+      "a": 900,
+      "actual_lower_shape": 1801,
+      "d": 3,
+      "original_gcd_degree": 0,
+      "same_affine_gcd_degree": 0
+    },
+    {
+      "N": 4,
+      "a": 1600,
+      "actual_lower_shape": 4801,
+      "d": 4,
+      "original_gcd_degree": 0,
+      "same_affine_gcd_degree": 0
+    },
+    {
+      "original_gcd_degree": 1,
+      "same_affine_gcd_degree": 1,
+      "type": "nonconstant_common_factor"
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "negative_controls": 5,
+  "pins": [
+    {
+      "path": "ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md",
+      "root": "local",
+      "sha256": "ca342102aaed739613c66f40e897b2bb998d5e6f25bab1e814a5a5781882c562"
+    },
+    {
+      "path": "verify_iterated_grace_polynomial_root_strip.py",
+      "root": "local",
+      "sha256": "5e60ac60a7cc958ac0a9c321297252c6ebe1c8e4bdab8dcde3c83be5411a1c52"
+    },
+    {
+      "path": "iterated_grace_polynomial_root_strip_inputs.json",
+      "root": "local",
+      "sha256": "42097b86f680338ec4565690e2bc4e9460c0fd9e1a94e1223e858ecd88f041f0"
+    },
+    {
+      "path": "iterated_grace_primary_scope_audit.md",
+      "root": "local",
+      "sha256": "8adafedd295ebadc788464c7101cbc9a89f12432f73788b9bb922dfe81f9a2e5"
+    },
+    {
+      "path": "sources/lamprecht-grace-2015.pdf",
+      "root": "local",
+      "sha256": "73f2f1dea56564b70b7d72a124806666f81fe64ebe6a64a52029a462abbba5a0"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "root": "repo",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "path": "research/factorial/image-rigidity/FIXED_GAP_LARGE_LOWER_EXPONENT_EXTENSION.md",
+      "root": "repo",
+      "sha256": "07bba3dcb68b47e4b04189b8da9bae9763fe0273cec2360d644ba00c865b21b2"
+    }
+  ],
+  "rational_guards": [
+    {
+      "left": "300/97",
+      "name": "origin growth bound",
+      "relation": "<",
+      "right": "4"
+    },
+    {
+      "left": "102/25",
+      "name": "disc cross term",
+      "relation": "<",
+      "right": "5"
+    },
+    {
+      "left": "0",
+      "name": "induction positive shifted constant",
+      "relation": "<",
+      "right": "349"
+    },
+    {
+      "left": "100/99",
+      "name": "physical product upper",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "500/99",
+      "name": "physical lower real constant",
+      "relation": "<",
+      "right": "6"
+    },
+    {
+      "left": "200/33",
+      "name": "physical upper real constant",
+      "relation": "<",
+      "right": "7"
+    },
+    {
+      "left": "1/100",
+      "name": "eta uniform bound",
+      "relation": "=",
+      "right": "1/100"
+    },
+    {
+      "left": "51/25",
+      "name": "height two-plus-e upper",
+      "relation": "=",
+      "right": "51/25"
+    },
+    {
+      "left": "54400/3267",
+      "name": "height constant",
+      "relation": "<",
+      "right": "17"
+    },
+    {
+      "left": "7/1000",
+      "name": "polynomial thin rectangle",
+      "relation": "<",
+      "right": "1/100"
+    },
+    {
+      "left": "7/1000000000",
+      "name": "large polynomial strip",
+      "relation": "<",
+      "right": "1/10000000"
+    }
+  ],
+  "schema": 1,
+  "scope": "Universal exact algebra/majorant support for the written ALL-ROOT, ALL-ORDER localization theorem, not an SFC claim",
+  "source_ledger_sha256": "bbc69917029fe3ff39f3ee3a202a57f80ae67e708f80c7517d68efac6002d956",
+  "status": "PASS_POLYNOMIAL_GLOBAL_ROOT_STRIP_SUPPORT",
+  "universal_identities": 6
+}

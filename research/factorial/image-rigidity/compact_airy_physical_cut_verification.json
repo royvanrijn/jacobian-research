@@ -1,0 +1,25 @@
+{
+  "checker_sha256": "1bbc0df5e143c8e359aa9e9c3f411a7a13075596d64d139f323d7177608419c4",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "negative_controls": 2,
+  "proof_sha256": "8cc9736ded20105c04800a10c548e834a91eed37a82444ebf9adf570f03b25a4",
+  "rational_guards": {
+    "cubic_loss": true,
+    "m_epsilon": true,
+    "outer_y": true,
+    "p_lower": true,
+    "p_upper_positive_correction": true,
+    "radial_arc": true,
+    "right_connector_endpoint_loss": true,
+    "saddle_loss": true,
+    "small_zeta": true,
+    "tail_constant": true,
+    "tail_decay": true
+  },
+  "schema": 1,
+  "scope": "compact canonical Airy physical-cut and weighted-tail rational support only",
+  "status": "PASS",
+  "universal_identities": 1
+}

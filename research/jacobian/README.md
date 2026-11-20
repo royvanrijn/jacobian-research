@@ -33,6 +33,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Cubic index17 shuffle failure and explicit unbounded triangular inverse degrees | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_SEVENTEEN_SHUFFLE_FAILURE.md) |
 | A repeatable cubic index-four block with forced inverse reset | Internal result | proved | [Source](subtree-shuffling/REPEATABLE_INDEX_FOUR_BLOCK_AND_INVERSE_RESET.md) |
 | Complete cubic third-covector image and all-helper polynomial restart obstructions | Internal result | proved | [Source](subtree-shuffling/THIRD_COVECTOR_CUBIC_IMAGE_AND_RESTART_OBSTRUCTIONS.md) |
+| Exact compiler resolvent and an all-affine obstruction to shortening index17 | Internal result | proved | [Source](subtree-shuffling/COMPILER_JACOBIAN_PENCIL_AND_TAU_CHAIN.md) |
 
 **Computed obligations:** 18 unresolved; 5 resolved within their exact scope.
 

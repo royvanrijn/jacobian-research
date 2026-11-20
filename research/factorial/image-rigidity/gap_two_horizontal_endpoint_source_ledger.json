@@ -1,0 +1,75 @@
+{
+  "checker_scope": "Immutable executed boundary source and full closed-cell receipt, fresh replay, independent all7262 leaf Rouch\u00e9 checks and all7264 shared endpoint subdiscs, exact rational radial/circle/Cauchy margins, source freshness and negative controls.",
+  "files": [
+    {
+      "path": "GAP_TWO_HORIZONTAL_ENDPOINT_CUBIC_LOCATION.md",
+      "root": "local",
+      "sha256": "2c78967e7950153d60188c41330d3b832efb080add9627adf27f34ebc79711b5"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_location.py",
+      "root": "local",
+      "sha256": "12e05090b021420b109f02e7fa7f303ac4883d057226f0bb401c43d08842a8b5"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_inputs.json",
+      "root": "local",
+      "sha256": "fefe4d982d3fe9bdfacde78a267a23225ddd3d61d53826b6b71dd1f9bd3f5dd8"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_primary_audit.md",
+      "root": "local",
+      "sha256": "d98a52ad46e2bba9c82ddce3609dc09cbdc46d5497a2242a13d8acef16fdcc0a"
+    },
+    {
+      "path": "verify_gap_two_horizontal_endpoint_cubic_balls.py",
+      "root": "local",
+      "sha256": "92f46812d51f25398846e4bcbd35d2771ea906b20eb4eeb6262915dd167339fa"
+    },
+    {
+      "path": "gap_two_horizontal_endpoint_cubic_balls_verification.json",
+      "root": "local",
+      "sha256": "748d043c8f70cfcbb7ff4960bf01692eeeab2539ce184f86b5f2c72de012b9e7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "repo",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+      "root": "repo",
+      "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_full_endpoint_uniform_inverse.py",
+      "root": "repo",
+      "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_full_endpoint_inverse_source_ledger.json",
+      "root": "repo",
+      "sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "root": "repo",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    }
+  ],
+  "mathematical_premises": "Matched-data theorem, full thin-window regular inverse and critical-base normalization are retained inputs. The new written proof supplies the signed zeta series, endpoint perturbation margins and root-label continuation.",
+  "primary_context": [
+    {
+      "retained_path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "scope": "Classical Rouch\u00e9 root count; exact strict inequalities and all parameter coverage are supplied in the proof and verifier.",
+      "url": "https://dlmf.nist.gov/1.10"
+    }
+  ],
+  "schema": 1,
+  "scope": "Actual horizontal endpoint cubic locations and strictly decreasing local radial connector only; no complete-period connector or numerical SFC threshold."
+}

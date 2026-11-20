@@ -1,0 +1,33 @@
+{
+  "common_domain": {
+    "connector_radius": "41/100",
+    "m_min": "1",
+    "outer_radius": "3/8",
+    "zeta_modulus_max": "1/8"
+  },
+  "compact_domain": {
+    "m_min": "10000000000000000",
+    "scaled_argument_modulus_max": "4"
+  },
+  "coverage": [
+    "negative canonical tails with weights0,1,2",
+    "thin positive canonical tails with weights0,1",
+    "compact canonical tails with weights0,1",
+    "right and left radius-0.41 cut and connector inequalities",
+    "physical-disk Cauchy replacement under certified endpoint matching"
+  ],
+  "excludes": [
+    "original-period nonlocal estimate",
+    "actual complete-period remainder",
+    "numerical Strong Factorial cutoff"
+  ],
+  "negative_domain": {
+    "arg_minus_zeta_abs_max": "pi/6"
+  },
+  "positive_domain": {
+    "arg_abs_max": "5*pi/6",
+    "imaginary_modulus_max": "1/50000"
+  },
+  "schema": 1,
+  "scope": "canonical weighted Airy tails, certified cuts, conditional circle connectors and physical-disk Cauchy replacement only"
+}

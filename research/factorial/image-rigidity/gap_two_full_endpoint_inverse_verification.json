@@ -1,0 +1,388 @@
+{
+  "boundary_replay": {
+    "arithmetic": "python-flint Arb/Acb outward-rounded complex balls",
+    "attempted_boxes": 2088,
+    "certified_leaf_boxes": 1300,
+    "leaf_stream_sha256": "ac7b501b1144b46b929a6711185955b9df2582756ab87b241e1d5630aadf6a31",
+    "maximum_bisection_depth": 7,
+    "negative_controls": 2,
+    "precision_bits": 100,
+    "root_boxes": 512,
+    "scope": "For every y in[1.8999,2.1001] and theta in[0,2pi], with z=iy,v=-z/2+.94exp(i theta), |F0(v,z)-Phi0(z)|>.09. No uniform inverse, period remainder or SFC cutoff follows from this verifier alone.",
+    "source_sha256": "9041c5ba279121d17986fe4167a809a14c43ee83f228f563c7814cdba0fcac35",
+    "status": "PASS_RIGOROUS_BOUNDARY_ONLY",
+    "versions": {
+      "FLINT": "3.6.0",
+      "python_flint": "0.9.0"
+    }
+  },
+  "complete_monodromy_cases": [
+    {
+      "boundary": [
+        0,
+        1,
+        2
+      ],
+      "common_fixed_sheets": [
+        2
+      ],
+      "first": [
+        1,
+        0,
+        2
+      ],
+      "second": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "boundary": [
+        2,
+        0,
+        1
+      ],
+      "common_fixed_sheets": [],
+      "first": [
+        1,
+        0,
+        2
+      ],
+      "second": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "boundary": [
+        1,
+        2,
+        0
+      ],
+      "common_fixed_sheets": [],
+      "first": [
+        1,
+        0,
+        2
+      ],
+      "second": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "boundary": [
+        1,
+        2,
+        0
+      ],
+      "common_fixed_sheets": [],
+      "first": [
+        2,
+        1,
+        0
+      ],
+      "second": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "boundary": [
+        0,
+        1,
+        2
+      ],
+      "common_fixed_sheets": [
+        1
+      ],
+      "first": [
+        2,
+        1,
+        0
+      ],
+      "second": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "boundary": [
+        2,
+        0,
+        1
+      ],
+      "common_fixed_sheets": [],
+      "first": [
+        2,
+        1,
+        0
+      ],
+      "second": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "boundary": [
+        2,
+        0,
+        1
+      ],
+      "common_fixed_sheets": [],
+      "first": [
+        0,
+        2,
+        1
+      ],
+      "second": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "boundary": [
+        1,
+        2,
+        0
+      ],
+      "common_fixed_sheets": [],
+      "first": [
+        0,
+        2,
+        1
+      ],
+      "second": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "boundary": [
+        0,
+        1,
+        2
+      ],
+      "common_fixed_sheets": [
+        0
+      ],
+      "first": [
+        0,
+        2,
+        1
+      ],
+      "second": [
+        0,
+        2,
+        1
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "declaration": "Theorem FullActualEndpointInverse",
+      "support": "Written complex-analytic/covering proof plus exact rational margins, universal identities, complete S3 enumeration, and closed-cell boundary replay."
+    }
+  ],
+  "independent_closed_tiling_root_boxes": 512,
+  "independently_rechecked_leaf_enclosures": 1300,
+  "negative_controls": 7,
+  "pins": [
+    {
+      "path": "GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+      "root": "local",
+      "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+    },
+    {
+      "path": "verify_gap_two_full_endpoint_uniform_inverse.py",
+      "root": "local",
+      "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+    },
+    {
+      "path": "gap_two_full_endpoint_inverse_inputs.json",
+      "root": "local",
+      "sha256": "614c3bc0db1ad87cfdf3f3f375aebd5b2b3b4e26abcff346d6a715f533bf22f5"
+    },
+    {
+      "path": "gap_two_full_endpoint_inverse_primary_audit.md",
+      "root": "local",
+      "sha256": "c3e0291b10f0b0920746fdcae22b5bbbcff73b127f9cbd76a4a6becd5a5f730c"
+    },
+    {
+      "path": "verify_hermite_endpoint_outer_boundary_ball.py",
+      "root": "local",
+      "sha256": "9041c5ba279121d17986fe4167a809a14c43ee83f228f563c7814cdba0fcac35"
+    },
+    {
+      "path": "hermite_endpoint_outer_boundary_ball_verification.json",
+      "root": "local",
+      "sha256": "b4d00070b0634d9dcd9434c3e921be72982321c0777b5c72c5d2a7bc3b71931b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quantitative_gap_two_endpoint_data.py",
+      "root": "repo",
+      "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_source_ledger.json",
+      "root": "repo",
+      "sha256": "2834fdd366ed1f162c5a66b2bdbcfabe271a1b232a806db555f36f57426e3858"
+    },
+    {
+      "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "repo",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "root": "repo",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    }
+  ],
+  "rational_guards": [
+    {
+      "left": "99/10000",
+      "name": "upper-half-plane log margin",
+      "relation": "<",
+      "right": "199/20000"
+    },
+    {
+      "left": "100200101/10000000000",
+      "name": "whole matched-data disk",
+      "relation": "<",
+      "right": "10201/1000000"
+    },
+    {
+      "left": "20396209/398000",
+      "name": "Hermite z derivative",
+      "relation": "<",
+      "right": "52"
+    },
+    {
+      "left": "1991/1000",
+      "name": "physical v modulus",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "3039799900000000300000000/29849969403000602984997",
+      "name": "actual delta phase derivative",
+      "relation": "<",
+      "right": "102"
+    },
+    {
+      "left": "1259819986500000050625/639679990404800035982",
+      "name": "critical mean delta derivative",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "104",
+      "name": "actual phase delta allowance",
+      "relation": "<",
+      "right": "110"
+    },
+    {
+      "left": "447/5000",
+      "name": "actual boundary",
+      "relation": "<",
+      "right": "894789/10000000"
+    },
+    {
+      "left": "2118571/24000000",
+      "name": "cubic inverse radius",
+      "relation": "<",
+      "right": "447/5000"
+    },
+    {
+      "left": "1100000400000001/10000000000000000",
+      "name": "stationary comparison",
+      "relation": "<",
+      "right": "2209/2500"
+    },
+    {
+      "left": "414201/4000000",
+      "name": "Hermite stationary constant",
+      "relation": "<",
+      "right": "11/100"
+    },
+    {
+      "left": "1/1152",
+      "name": "critical cubic value squared",
+      "relation": "<",
+      "right": "9/10000"
+    },
+    {
+      "left": "3/100",
+      "name": "critical value below boundary",
+      "relation": "<",
+      "right": "447/5000"
+    },
+    {
+      "left": "295999/39999600000",
+      "name": "zero-curve Rouche",
+      "relation": "<",
+      "right": "1/100000"
+    },
+    {
+      "left": "1/100000",
+      "name": "safe punctured-domain point",
+      "relation": "<",
+      "right": "1/20"
+    },
+    {
+      "left": "1/8",
+      "name": "canonical stationary t inside inverse",
+      "relation": "<",
+      "right": "8281/40000"
+    },
+    {
+      "left": "9/20",
+      "name": "closed inverse disk",
+      "relation": "<",
+      "right": "91/200"
+    },
+    {
+      "left": "94/5",
+      "name": "actual inverse Jacobian",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "left": "1/8",
+      "name": "divided amplitude contour encloses canonical criticals",
+      "relation": "<",
+      "right": "4/25"
+    },
+    {
+      "left": "3/8",
+      "name": "divided amplitude t margin",
+      "relation": "<",
+      "right": "2/5"
+    },
+    {
+      "left": "2432000/7",
+      "name": "actual divided amplitude derivative",
+      "relation": "<",
+      "right": "350000"
+    }
+  ],
+  "schema": 1,
+  "scope": "Full actual thin endpoint window: true uniform regular cubic inverse and local G_t bound only. No complete-period C_R or numerical Strong Factorial cutoff.",
+  "source_ledger_sha256": "16a65fbdcecf61887680c40a0b6f16aba59588e9ed0abdb2249112de3e2e65d8",
+  "status": "PASS_FULL_WINDOW_INVERSE_SUPPORT",
+  "universal_identity_count": 4
+}

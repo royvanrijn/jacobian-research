@@ -1,0 +1,52 @@
+{
+  "certificates": {
+    "arc_ratio_identity": true,
+    "phase_loss_identity": true,
+    "positive_left_coefficients": [
+      "6",
+      "345/8",
+      "531/4",
+      "114135/512",
+      "110697/512",
+      "60273/512",
+      "260283/8192",
+      "394833/131072"
+    ],
+    "positive_right_coefficients": [
+      "54",
+      "594",
+      "2079",
+      "3429",
+      "3096",
+      "1584",
+      "432",
+      "48"
+    ]
+  },
+  "checker_sha256": "94810046030d98da8bf58a0e497d855d4c1894c9e2734c1d1c5bccc35d423c3f",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "negative_controls_rejected": 3,
+  "outer_tail_bound": "10^11*m^(-1/3)*exp(-m/14000)*joint_Airy_norm",
+  "phase_loss_constant": "1/243",
+  "physical_loss_constant": "1/7000",
+  "proof_sha256": "9379570128ce2d65adbe88178a68d6a611fa8a5ab7e4ccb91816c6d2ff3cbe6a",
+  "rational_guards": {
+    "P_left_positive": true,
+    "P_right_positive": true,
+    "compact_coefficient_below_limit": true,
+    "compact_tail_coefficient": true,
+    "exp_sixteen_thirds_upper": true,
+    "large_tail_coefficient": true,
+    "left_interval_below_one": true,
+    "left_interval_value": true,
+    "positive_absolute_loss": true,
+    "ratio_at_nine_eighths": true,
+    "rational_cubic_loss": true,
+    "zero_zeta_coefficient": true,
+    "zero_zeta_decay": true
+  },
+  "schema_version": 1,
+  "scope": "exact elementary negative-sector canonical Airy outer-tail certificates; not a full-period remainder"
+}

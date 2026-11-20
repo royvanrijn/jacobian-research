@@ -1,0 +1,48 @@
+{
+  "assurance": "Internal proof and exact rational support only; no independent-replay, formal-verification, external-review or numerical Strong Factorial assurance.",
+  "files": [
+    {
+      "path": "ACTUAL_SHIFTED_HERMITE_NONLOCAL_BOUND.md",
+      "root": "local",
+      "sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95"
+    },
+    {
+      "path": "verify_actual_shifted_hermite_nonlocal.py",
+      "root": "local",
+      "sha256": "1f257df5560f72c61128fb97c63c07c04568967358b51ccefcc90dfdfecd4141"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_inputs.json",
+      "root": "local",
+      "sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+      "root": "repo",
+      "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+      "root": "repo",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-7-endpoint.html",
+      "root": "repo",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "root": "repo",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    }
+  ],
+  "necessary_inputs": "Selected matched phase and unfolding bounds, and finite joint-Airy lower bounds. The actual thin-window inverse theorem is not required to prove the specified nonlocal bound.",
+  "schema": 1,
+  "scope": "Actual original v-period nonlocal pieces only; no local canonical-chain estimate, complete-period C_R or numerical Strong Factorial conclusion."
+}

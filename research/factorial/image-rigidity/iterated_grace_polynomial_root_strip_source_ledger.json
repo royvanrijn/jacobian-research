@@ -1,0 +1,47 @@
+{
+  "context_only": [
+    "actual Lamprecht2015 Theorem1.3 primary scope",
+    "older fixed-gap note exponential constants",
+    "Bihun-Calogero Proposition2.1 zero identities, not localization"
+  ],
+  "files": [
+    {
+      "path": "ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md",
+      "root": "local",
+      "sha256": "ca342102aaed739613c66f40e897b2bb998d5e6f25bab1e814a5a5781882c562"
+    },
+    {
+      "path": "verify_iterated_grace_polynomial_root_strip.py",
+      "root": "local",
+      "sha256": "5e60ac60a7cc958ac0a9c321297252c6ebe1c8e4bdab8dcde3c83be5411a1c52"
+    },
+    {
+      "path": "iterated_grace_polynomial_root_strip_inputs.json",
+      "root": "local",
+      "sha256": "42097b86f680338ec4565690e2bc4e9460c0fd9e1a94e1223e858ecd88f041f0"
+    },
+    {
+      "path": "iterated_grace_primary_scope_audit.md",
+      "root": "local",
+      "sha256": "8adafedd295ebadc788464c7101cbc9a89f12432f73788b9bb922dfe81f9a2e5"
+    },
+    {
+      "path": "sources/lamprecht-grace-2015.pdf",
+      "root": "local",
+      "sha256": "73f2f1dea56564b70b7d72a124806666f81fe64ebe6a64a52029a462abbba5a0"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "root": "repo",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "path": "research/factorial/image-rigidity/FIXED_GAP_LARGE_LOWER_EXPONENT_EXTENSION.md",
+      "root": "repo",
+      "sha256": "07bba3dcb68b47e4b04189b8da9bae9763fe0273cec2360d644ba00c865b21b2"
+    }
+  ],
+  "mathematical_premise": "The retained gap-two Grace note supplies the exact closed-disc composition lemma and Gamma-Appell matrix root bounds. Every new induction and rescaling is proved locally.",
+  "schema": 1,
+  "scope": "Polynomial all-root localization for every finite N and a genuine common-coordinate equivalence; neither consecutive coprimality nor an all-gap SFC theorem is asserted."
+}

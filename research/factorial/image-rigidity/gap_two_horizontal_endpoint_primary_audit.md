@@ -1,0 +1,7 @@
+# Retained sources and exact scope
+
+The matched-data theorem QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md supplies the exact analytic phase, mean critical value, zeta normalization and its complex-parameter derivative/transfer bounds. The full-window inverse theorem GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md supplies the selected global physical cubic coordinate and its stationary matching. The critical inverse note fixes the normalization at D=1. The new location proof derives its own signed zeta power series across D=1 and the actual endpoint perturbation bounds.
+
+Rouche's theorem is the only classical root-count input; the retained primary NIST page https://dlmf.nist.gov/1.10 supplies context. The strict inequality is stated explicitly in the proof and replayed over every closed parameter cell. Rational complex centers are proposed by machine arithmetic but certified only by outward-rounded ball inequalities. Adjacent-root identity is certified by smaller root discs contained in both neighboring discs; overlap of the large discs alone is not treated as sufficient.
+
+The original executed boundary source and receipt for this location computation are retained unchanged. The wrapper verifies mandatory source hashes, replays the exact cover, independently rechecks every leaf's cubic inequality and all shared endpoint discs, and reruns the original source. Its deterministic receipt omits absolute paths and timing. No sampled root estimate is upgraded to an all-parameter claim, and no whole-period or numerical Strong Factorial cutoff is inferred.

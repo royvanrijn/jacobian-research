@@ -1,0 +1,186 @@
+{
+  "negative_controls": 2,
+  "primary_error_scope": "Actual DLMF9.7.17 n1, sigma1/6Ai and0Aiprime, exact error sectors; no asymptotic inference or zero sampling.",
+  "proof_sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046",
+  "rational_guards": [
+    {
+      "left": "9/10",
+      "name": "Gamma2/3 integral lower",
+      "relation": "=",
+      "right": "9/10"
+    },
+    {
+      "left": "9/4",
+      "name": "Gamma1/3 integral lower",
+      "relation": "=",
+      "right": "9/4"
+    },
+    {
+      "left": "3",
+      "name": "Bi initial root upper",
+      "relation": "<",
+      "right": "4096/729"
+    },
+    {
+      "left": "38/27",
+      "name": "Bi initial majorant",
+      "relation": "<",
+      "right": "3/2"
+    },
+    {
+      "left": "25767549888412498917368655049812299316350010899695291370912522059048806367901/8644050000175932578168189526912110173972645761338495238637468048095703125",
+      "name": "exp8 exact series",
+      "relation": "<",
+      "right": "3000"
+    },
+    {
+      "left": "4500",
+      "name": "Bi disk majorant",
+      "relation": "=",
+      "right": "4500"
+    },
+    {
+      "left": "9000",
+      "name": "Bi derivative disk majorant",
+      "relation": "=",
+      "right": "9000"
+    },
+    {
+      "left": "57873461418686387516540549356296553328124029915002687729415815783033433559235854636495158174678350875681241/279410177699351031155315977932942855091607744204268442374520836867698388042489177421254463773834228515625",
+      "name": "compact exponential",
+      "relation": "<",
+      "right": "225"
+    },
+    {
+      "left": "-21",
+      "name": "compact bend bracket at6",
+      "relation": "<",
+      "right": "0"
+    },
+    {
+      "left": "-29/3",
+      "name": "compact bend bracket derivative",
+      "relation": "<",
+      "right": "0"
+    },
+    {
+      "left": "4/3",
+      "name": "compact arc factor squared",
+      "relation": "<",
+      "right": "49/36"
+    },
+    {
+      "left": "22/7",
+      "name": "sqrtpi compact bound squared",
+      "relation": "<",
+      "right": "81/25"
+    },
+    {
+      "left": "945/2",
+      "name": "compatible compact integral",
+      "relation": "<",
+      "right": "500"
+    },
+    {
+      "left": "18000000",
+      "name": "compact joint ratio",
+      "relation": "<",
+      "right": "20000000"
+    },
+    {
+      "left": "7/6",
+      "name": "chi Ai parameter",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "1",
+      "name": "chi derivative parameter",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "22/3",
+      "name": "last Ai multiplier square-root bound",
+      "relation": "<",
+      "right": "49/4"
+    },
+    {
+      "left": "10",
+      "name": "last Ai multiplier upper",
+      "relation": "=",
+      "right": "10"
+    },
+    {
+      "left": "7",
+      "name": "last derivative multiplier upper",
+      "relation": "=",
+      "right": "7"
+    },
+    {
+      "left": "16/3",
+      "name": "primary action modulus at r4",
+      "relation": "=",
+      "right": "16/3"
+    },
+    {
+      "left": "25/192",
+      "name": "Ai leading relative error",
+      "relation": "<",
+      "right": "1/4"
+    },
+    {
+      "left": "49/384",
+      "name": "derivative leading relative error",
+      "relation": "<",
+      "right": "1/4"
+    },
+    {
+      "left": "32",
+      "name": "positive contour ratio",
+      "relation": "=",
+      "right": "32"
+    },
+    {
+      "left": "5/128",
+      "name": "rotated Ai relative error",
+      "relation": "=",
+      "right": "5/128"
+    },
+    {
+      "left": "7/128",
+      "name": "rotated derivative relative error",
+      "relation": "=",
+      "right": "7/128"
+    },
+    {
+      "left": "29/32",
+      "name": "rotated joint lower",
+      "relation": "=",
+      "right": "29/32"
+    },
+    {
+      "left": "3/4",
+      "name": "rotated lower margin",
+      "relation": "<",
+      "right": "29/32"
+    },
+    {
+      "left": "800/3",
+      "name": "negative contour ratio",
+      "relation": "<",
+      "right": "300"
+    },
+    {
+      "left": "23000000000/3",
+      "name": "conditional normalized local CR",
+      "relation": "<",
+      "right": "8000000000"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Global absolute Ai-contour bound C_A=2e7, with compatible bent/rotated cycles. No actual CFU remainder constant or numerical SFC cutoff supplied.",
+  "source_ledger_sha256": "f4050e2d8175a165c661888ca818089c9b2645188ac5f90242cb57b66c945ab7",
+  "status": "PASS",
+  "universal_identity_count": 8
+}

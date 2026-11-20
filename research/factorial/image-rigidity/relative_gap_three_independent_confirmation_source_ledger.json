@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-20",
+  "scope": "ONLY the completed532-support/3694040-pair actual finite domain. No analytical tail or all-binomial theorem is inferred by this packet. All five source roles are mandatory; no external or formal assurance.",
+  "files": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "RELATIVE_GAP_THREE_INDEPENDENT_FINITE_CONFIRMATION.md",
+      "sha256": "d7521129392204936078b8ee58d1952035fa29dfe429d913a93ad36799249ef4"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_relative_gap_three_independent_confirmation.py",
+      "sha256": "ace50bb37d1a9afb9ab4e09294041333417be98b5f3691aa90d73e894a46ccf8"
+    },
+    {
+      "role": "input",
+      "scope": "packet",
+      "path": "relative_gap_three_independent_confirmation_inputs.json",
+      "sha256": "ac4d72087898c1636de689c2eb811bd2429efedd7fd51d4f9be1d86565156ca8"
+    },
+    {
+      "role": "finite_checker",
+      "scope": "packet",
+      "path": "independent_verify_relative_gap_three_finite_box.py",
+      "sha256": "12d554bd8fe2dc2a933d3be47b6ba791c8c1d689126588be1df59425184e5a38"
+    },
+    {
+      "role": "finite_receipt",
+      "scope": "packet",
+      "path": "independent_relative_gap_three_finite_box.json",
+      "sha256": "b5336126eb70bbb25258b215af1a3e3234ee58e6737ddb337a80dc9b4412a865"
+    }
+  ],
+  "arithmetic_input": "Exact python-flint/FLINT modular polynomials. Every executed attempt multiplies the full Bezout identity. Degree-preserving transfer is proved in the note.",
+  "replay_scope": "All532rows/3694040streamtags, 54literalvectors andsource negatives, ALL10fallbackattempts freshly rebuilt with a separate factorial-table construction. This short validator does not rerun3694040polynomial xgcds."
+}

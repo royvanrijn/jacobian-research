@@ -1,0 +1,85 @@
+{
+  "checker_scope": "Universal closure identities and exact literal controls support the all-parameter written induction; fixtures do not prove the quantified analytic theorem.",
+  "files": [
+    {
+      "path": "FIXED_GAP_LARGE_LOWER_EXPONENT_EXTENSION.md",
+      "root": "local",
+      "sha256": "07bba3dcb68b47e4b04189b8da9bae9763fe0273cec2360d644ba00c865b21b2"
+    },
+    {
+      "path": "verify_fixed_gap_large_lower_extension.py",
+      "root": "local",
+      "sha256": "96ec08daefa50241ea7d309b913207273f58d90390c4bff99f57ad18721680cb"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "repo",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_endpoint_contour_identities.py",
+      "root": "repo",
+      "sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_large_lower_endpoint_source_ledger.json",
+      "root": "repo",
+      "sha256": "36d76238946c169c64a52b5edb01c43b14bd909411d9ffda1b03474ddae2d0bb"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_large_lower_endpoint_primary_audit.md",
+      "root": "repo",
+      "sha256": "e93ab7dc1aa6e0383cbfbb14c7c0eab58dcc0c1964f904809c8209936c2b1d02"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "root": "repo",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "root": "repo",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_HERMITE_BULK.md",
+      "root": "repo",
+      "sha256": "080041f624d7f2b116ffb14fceafc484a35a2857e57c172348b532f059bcd856"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+      "root": "repo",
+      "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_OUTSIDE_ENDPOINT_ONE_PACKET.md",
+      "root": "repo",
+      "sha256": "6a326ebc96592fbcaf16eeeffcf4851d6f80fefb1a27ce8fb13fb90ce34a83eb"
+    }
+  ],
+  "schema": 1,
+  "scope": "For each fixed integer gap d there exists an uncomputed a0(d). No effectivity, no uniform C*d^2, and no finite global support box.",
+  "source_use": [
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "use": "Exact closed-disc Grace representation and Gamma-Laguerre factor bounds; the new proof gives the full iterated closure algebra."
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "use": "The compact analytic Hermite/CFU contour and Robin mechanism is reused only after every hypothesis is reverified for the fixed-d analytic family. This is not a black-box application of a gap-two theorem to a different gap."
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "use": "Exact all-order physical lower boundary a>=d*(2N-3), leaving N>a/(2d)+3/2."
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "use": "Actual coupled-order scaling and phase normalization, with the gap kept fixed throughout."
+    }
+  ]
+}

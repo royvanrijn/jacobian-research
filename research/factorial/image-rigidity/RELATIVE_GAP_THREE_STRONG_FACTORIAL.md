@@ -133,9 +133,15 @@ every support and terminal stream digest, exact degree-preservation
 bounds, the literal coefficient formula and all five full Bezout
 fallbacks. It does not pretend to rerun all3,694,040 gcd computations.
 The full finite run can be reproduced separately with the executed
-checker. A second independently implemented runner was still running
-when this proof was assembled; no completed independent-run result or
-external/formal assurance is asserted.
+checker. A second, differently implemented complete run has now finished and is
+retained in [the separate finite confirmation](RELATIVE_GAP_THREE_INDEPENDENT_FINITE_CONFIRMATION.md).
+It verifies all3,694,040 actual terminal pairs and3,694,045 full Bezout
+identities, using a sliding-rising-product construction and a different
+first prime. The original primary validator retains its primary-only
+scope; the new run has its own immutable source, completed receipt and
+guarded artifact validator. This is additional internal confirmation;
+all independent-replay, formal-verification and external-review assurance
+flags remain false.
 
 ## 4. Why the finite box closes every terminal in the stated family
 

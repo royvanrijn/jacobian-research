@@ -1,0 +1,75 @@
+{
+  "checker_scope": "Exact rational margins, four universal polynomial identities, all nine S3 transposition pairs, independent exact closed-leaf tiling, all1300 outward-ball leaf rechecks and a fresh byte-pinned boundary replay. The finite controls support the analytic proof; they do not replace its continuation argument.",
+  "files": [
+    {
+      "path": "GAP_TWO_FULL_ENDPOINT_UNIFORM_CUBIC_INVERSE.md",
+      "root": "local",
+      "sha256": "83d8933c372ed341d89963484ebca98edcceae5a638090093546ab3298b538d1"
+    },
+    {
+      "path": "verify_gap_two_full_endpoint_uniform_inverse.py",
+      "root": "local",
+      "sha256": "e628a5acd5713553039a3fd92a3a34ea94f4c8b4030d37003ff28935e66f11d7"
+    },
+    {
+      "path": "gap_two_full_endpoint_inverse_inputs.json",
+      "root": "local",
+      "sha256": "614c3bc0db1ad87cfdf3f3f375aebd5b2b3b4e26abcff346d6a715f533bf22f5"
+    },
+    {
+      "path": "gap_two_full_endpoint_inverse_primary_audit.md",
+      "root": "local",
+      "sha256": "c3e0291b10f0b0920746fdcae22b5bbbcff73b127f9cbd76a4a6becd5a5f730c"
+    },
+    {
+      "path": "verify_hermite_endpoint_outer_boundary_ball.py",
+      "root": "local",
+      "sha256": "9041c5ba279121d17986fe4167a809a14c43ee83f228f563c7814cdba0fcac35"
+    },
+    {
+      "path": "hermite_endpoint_outer_boundary_ball_verification.json",
+      "root": "local",
+      "sha256": "b4d00070b0634d9dcd9434c3e921be72982321c0777b5c72c5d2a7bc3b71931b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quantitative_gap_two_endpoint_data.py",
+      "root": "repo",
+      "sha256": "b40b3e64da329d3bec05ec894cbdc3a01a1f39cfd0b1793253a73d34c14f4f6f"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quantitative_gap_two_endpoint_data_source_ledger.json",
+      "root": "repo",
+      "sha256": "2834fdd366ed1f162c5a66b2bdbcfabe271a1b232a806db555f36f57426e3858"
+    },
+    {
+      "path": "research/factorial/image-rigidity/HERMITE_CRITICAL_CUBIC_INVERSE_DISK.md",
+      "root": "repo",
+      "sha256": "a9914b0860194f9c8a9c0ec21ef25abe18c0d428c227e690e7637f15ec0805cc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "root": "repo",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    }
+  ],
+  "mathematical_premises": "The matched-data theorem supplies the jointly holomorphic selected critical data. The exact closed-cell boundary computation supplies the Hermite boundary modulus. The new written proof supplies the regular-sheet topology and parameter continuation.",
+  "primary_context": [
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "url": "https://dlmf.nist.gov/1.10",
+      "use": "Classical argument-principle/Rouche context; strict contours and root counts are stated in the proof."
+    },
+    {
+      "url": "https://doi.org/10.1017/S0305004100032655",
+      "use": "Classical three-sheeted-cover method antecedent, Section3 lemma and Theorem1, printed603--605. The present proof quantitatively adapts it with explicit boundary, counts and inverse radius; no unspecified classical neighborhood is imported."
+    }
+  ],
+  "retained_immutable_execution": "The boundary program 9041c5ba... and its original complete receipt are retained byte-identically, including the original timing field; the new wrapper receipt omits timing and absolute paths.",
+  "schema": 1,
+  "scope": "Full actual endpoint rectangle uniform cubic inverse and true local divided-amplitude derivative; no complete-period remainder constant or numerical SFC threshold."
+}

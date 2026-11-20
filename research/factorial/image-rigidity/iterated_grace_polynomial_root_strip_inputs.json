@@ -1,0 +1,22 @@
+{
+  "actual_polynomial": "A_(N;a,d)(x)=sum binom(N,k)*(aN+1)_(d*k)*x^(N-k)",
+  "common_argument": "S_N(Z)=N^d*a^d*(-1+(d/sqrt(a))*Z), used for BOTH actual orders N,N-1",
+  "conclusion": {
+    "imaginary_square_bound": "17*d",
+    "real_bound": "7*d^2/sqrt(a)"
+  },
+  "declaration": "Theorem PolynomialGlobalHermiteStrip",
+  "domain": {
+    "N_min": 1,
+    "a_min": "100*d^2",
+    "d_min": 2
+  },
+  "equivalence_declaration": "Corollary ActualPolynomialStripNoncollisionEquivalence",
+  "excludes": [
+    "consecutive coprimality",
+    "uniform outside-one-packet theorem",
+    "polynomial Strong Factorial threshold"
+  ],
+  "normalization": "Z=(x/(N^d*a^d)+1)/(d/sqrt(a))",
+  "schema": 1
+}

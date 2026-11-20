@@ -1,0 +1,105 @@
+{
+  "checker_scope": "Universal polynomial identities and exact rational contour/Robin/drift guards support the written analytic proof; finite controls do not replace its compactness arguments.",
+  "files": [
+    {
+      "path": "GAP_TWO_LARGE_LOWER_EXPONENT_ENDPOINT_THEOREM.md",
+      "root": "local",
+      "sha256": "ce0e6f1b316377c607f79dd12b46fbc6e95e0dd8c76f4ec050116b771c3aec58"
+    },
+    {
+      "path": "verify_gap_two_endpoint_contour_identities.py",
+      "root": "local",
+      "sha256": "46c9e2ec7942c841bc574ddc581b57304f79bd2743b44f4e8b33571259f5294d"
+    },
+    {
+      "path": "sources/dlmf-2-4-endpoint.html",
+      "root": "local",
+      "sha256": "c90ac6736075b2d0851c48421da534e74d99ef2d1f33884024ef6297f1dc971f"
+    },
+    {
+      "path": "sources/dlmf-9-2-endpoint.html",
+      "root": "local",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "path": "sources/dlmf-9-7-endpoint.html",
+      "root": "local",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "path": "sources/dlmf-9-9-endpoint.html",
+      "root": "local",
+      "sha256": "7f5e538332164cf3103abb2374acc2619bfca1c765cd46e04fa738ec790d962b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "root": "repo",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "root": "repo",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "root": "repo",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_HERMITE_BULK.md",
+      "root": "repo",
+      "sha256": "080041f624d7f2b116ffb14fceafc484a35a2857e57c172348b532f059bcd856"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_HERMITE_BULK_CONTOUR_EXCLUSION.md",
+      "root": "repo",
+      "sha256": "6cdbfc1b494ddf7b19d4f2d1543e617abc7b97ecf578f4381ac8d9c4a4a4688c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_EXTENDED_BULK_ENDPOINT_REDUCTION.md",
+      "root": "repo",
+      "sha256": "5e42e6fce34efba084d88163f75767b0f1b3cc8681a0c3d2899a909d88637665"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_OUTSIDE_ENDPOINT_ONE_PACKET.md",
+      "root": "repo",
+      "sha256": "6a326ebc96592fbcaf16eeeffcf4851d6f80fefb1a27ce8fb13fb90ce34a83eb"
+    },
+    {
+      "path": "gap_two_large_lower_endpoint_primary_audit.md",
+      "root": "local",
+      "sha256": "e93ab7dc1aa6e0383cbfbb14c7c0eab58dcc0c1964f904809c8209936c2b1d02"
+    }
+  ],
+  "primary_sources": [
+    {
+      "local_path": "sources/dlmf-2-4-endpoint.html",
+      "url": "https://dlmf.nist.gov/2.4#v",
+      "use": "Classical cubic normal-form context; actual full CFU Theorem1 separately inspected."
+    },
+    {
+      "local_path": "sources/dlmf-9-2-endpoint.html",
+      "url": "https://dlmf.nist.gov/9.2",
+      "use": "Airy equation and no-common-zero consequence by uniqueness."
+    },
+    {
+      "local_path": "sources/dlmf-9-7-endpoint.html",
+      "url": "https://dlmf.nist.gov/9.7",
+      "use": "Uniform complex sectors of9.7.5--6 and9.7.9--10, used to compare explicit contour envelopes with the joint Airy norm."
+    },
+    {
+      "local_path": "sources/dlmf-9-9-endpoint.html",
+      "url": "https://dlmf.nist.gov/9.9",
+      "use": "Section9.9(i): Ai and Ai-prime have only their negative real zeros."
+    },
+    {
+      "actual_inspection": "Full cached primary PDF text inspected at printed605--606 Theorem1 and608--609 Theorem2/proof. Fresh direct PDF retrieval404, so no downloaded-byte hash is asserted.",
+      "bibliography": "Chester--Friedman--Ursell1957, Proc.CambridgePhil.Soc.53,599--611, DOI10.1017/S0305004100032655",
+      "scope": "Only the regular analytic cubic transformation is imported. The needed unweighted vector remainder is derived in the present proof by exact one-step integration by parts and explicit compatible cubic contours; no precise OCR remainder power is imported.",
+      "url": "https://last.hit.bme.hu/download/firtha/spa/S0305004100032655.pdf"
+    }
+  ],
+  "schema": 1,
+  "scope": "Existence of an uncomputed threshold a0 at fixed gap2 only. No effectivity or claim a0<=4e16; fixed-threshold open obligations remain open."
+}

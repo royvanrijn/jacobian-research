@@ -1,0 +1,315 @@
+{
+  "actual_moment_normalization_controls": [
+    {
+      "a": 4,
+      "coefficients": [
+        "1",
+        "30"
+      ],
+      "m": 1
+    },
+    {
+      "a": 4,
+      "coefficients": [
+        "1",
+        "180",
+        "11880"
+      ],
+      "m": 2
+    },
+    {
+      "a": 6,
+      "coefficients": [
+        "1",
+        "1140",
+        "526680",
+        "96909120"
+      ],
+      "m": 3
+    },
+    {
+      "a": 8,
+      "coefficients": [
+        "1",
+        "4488",
+        "8482320",
+        "7950761280",
+        "3100796899200"
+      ],
+      "m": 4
+    }
+  ],
+  "checker_sha256": "917cf63f26b3d41b4d76301cbc1cd6ba406bb0e9afa7c8ba9ab5269d7457127b",
+  "negative_controls": 3,
+  "proof_sha256": "561a32a1c77f2070f18ba4f2ae3f2f583413eea2dcddbedca50b5c4325a9e035",
+  "rational_guards": [
+    {
+      "left": "4",
+      "name": "actual threshold delta",
+      "relation": "=",
+      "right": "4"
+    },
+    {
+      "left": "4",
+      "name": "soft boundary exact",
+      "relation": "=",
+      "right": "4"
+    },
+    {
+      "left": "8000000000000000",
+      "name": "m cube-root lower",
+      "relation": "<",
+      "right": "10000000000000000"
+    },
+    {
+      "left": "40000000000",
+      "name": "m two-thirds lower",
+      "relation": "=",
+      "right": "40000000000"
+    },
+    {
+      "left": "188/5",
+      "name": "true enlarged h",
+      "relation": "<",
+      "right": "38"
+    },
+    {
+      "left": "5168000/267",
+      "name": "true annular G",
+      "relation": "<",
+      "right": "20000"
+    },
+    {
+      "left": "1033600000/801",
+      "name": "true annular G derivative",
+      "relation": "<",
+      "right": "1300000"
+    },
+    {
+      "left": "16200000",
+      "name": "compact critical-reference comparison",
+      "relation": "<",
+      "right": "20000000"
+    },
+    {
+      "left": "16/3",
+      "name": "large critical-reference comparison",
+      "relation": "<",
+      "right": "20000000"
+    },
+    {
+      "left": "1/40000",
+      "name": "right circle connector loss",
+      "relation": "<",
+      "right": "21/625000"
+    },
+    {
+      "left": "1/10000",
+      "name": "left circle connector loss",
+      "relation": "<",
+      "right": "2213/17500000"
+    },
+    {
+      "left": "1/40000",
+      "name": "compact circle connector loss",
+      "relation": "<",
+      "right": "24959/2500000"
+    },
+    {
+      "left": "1/40000",
+      "name": "original circle endpoint loss",
+      "relation": "<",
+      "right": "1609/2500000"
+    },
+    {
+      "left": "233/2000",
+      "name": "left circle real derivative",
+      "relation": "=",
+      "right": "233/2000"
+    },
+    {
+      "left": "13747/3500",
+      "name": "all added connector lengths",
+      "relation": "<",
+      "right": "10"
+    },
+    {
+      "left": "545926120/729",
+      "name": "weighted negative tail elementary coefficient",
+      "relation": "<",
+      "right": "1000000"
+    },
+    {
+      "left": "64800000000000",
+      "name": "weighted negative compact coefficient",
+      "relation": "<",
+      "right": "1000000000000000"
+    },
+    {
+      "left": "64000000/3",
+      "name": "weighted negative large coefficient",
+      "relation": "<",
+      "right": "1000000000000000"
+    },
+    {
+      "left": "20000000000",
+      "name": "positive weighted tail coefficient",
+      "relation": "<",
+      "right": "1000000000000000"
+    },
+    {
+      "left": "2000000",
+      "name": "old compact weighted tail coefficient",
+      "relation": "<",
+      "right": "1000000000000000"
+    },
+    {
+      "left": "1/100000",
+      "name": "positive and compact tail exponential",
+      "relation": "<",
+      "right": "1/40000"
+    },
+    {
+      "left": "1/40000",
+      "name": "negative tail stronger exponential",
+      "relation": "<",
+      "right": "1/14000"
+    },
+    {
+      "left": "500000000000000",
+      "name": "canonical A/B tail rounded coefficient",
+      "relation": "=",
+      "right": "500000000000000"
+    },
+    {
+      "left": "100000000",
+      "name": "A/B connector coefficient",
+      "relation": "<",
+      "right": "1000000000"
+    },
+    {
+      "left": "130000000000000/3",
+      "name": "G derivative connector coefficient",
+      "relation": "<",
+      "right": "50000000000000"
+    },
+    {
+      "left": "400000000000/3",
+      "name": "two physical G endpoint coefficient",
+      "relation": "<",
+      "right": "200000000000"
+    },
+    {
+      "left": "550201000060000",
+      "name": "aggregate other coefficient",
+      "relation": "<",
+      "right": "10000000000000000"
+    },
+    {
+      "left": "1/40000",
+      "name": "actual original nonlocal exponent",
+      "relation": "<",
+      "right": "33/50000"
+    },
+    {
+      "left": "9/12500000000000000",
+      "name": "sixth Taylor exponential budget",
+      "relation": "<",
+      "right": "1"
+    },
+    {
+      "left": "13000000000003/3",
+      "name": "local compact complete remainder",
+      "relation": "<",
+      "right": "100000000000000"
+    },
+    {
+      "left": "65000001",
+      "name": "local large complete remainder",
+      "relation": "<",
+      "right": "1000000000"
+    },
+    {
+      "left": "50013/4850000",
+      "name": "compact actual lambda",
+      "relation": "<",
+      "right": "11/1000"
+    },
+    {
+      "left": "5450000/9799999",
+      "name": "large rescaled K",
+      "relation": "<",
+      "right": "14/25"
+    },
+    {
+      "left": "250052/97",
+      "name": "uniform rescaled K",
+      "relation": "<",
+      "right": "2600"
+    },
+    {
+      "left": "121/250000",
+      "name": "compact Robin product",
+      "relation": "<",
+      "right": "1/4"
+    },
+    {
+      "left": "49/1250",
+      "name": "large Robin product",
+      "relation": "<",
+      "right": "1/4"
+    },
+    {
+      "left": "1331/1000000000",
+      "name": "compact Robin cubic",
+      "relation": "<",
+      "right": "1/16"
+    },
+    {
+      "left": "343/15625000000000000000",
+      "name": "large Robin cubic",
+      "relation": "<",
+      "right": "1/16"
+    },
+    {
+      "left": "3/8",
+      "name": "Robin path bootstrap",
+      "relation": "<",
+      "right": "1/2"
+    },
+    {
+      "left": "8/5",
+      "name": "Robin path reciprocal",
+      "relation": "<",
+      "right": "2"
+    },
+    {
+      "left": "1/2",
+      "name": "radial geometric lower",
+      "relation": "<",
+      "right": "59999997/80000000"
+    },
+    {
+      "left": "1300000009/10000000000000000",
+      "name": "endpoint window real margin",
+      "relation": "<",
+      "right": "1/100000"
+    },
+    {
+      "left": "210000000000000063/100000000000000000",
+      "name": "endpoint window imaginary margin",
+      "relation": "<",
+      "right": "21001/10000"
+    },
+    {
+      "left": "15600",
+      "name": "actual adjacent-order drift versus two bands",
+      "relation": "<",
+      "right": "100000000"
+    }
+  ],
+  "schema": 1,
+  "scope": "Complete-period aggregation and Robin arithmetic supporting the written theorem and separately proved contour inputs. No all-order conclusion follows from these finite guards alone.",
+  "status": "PASS_EXACT_BUDGETS_ONLY",
+  "universal_identities": 3
+}

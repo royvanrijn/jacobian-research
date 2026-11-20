@@ -1,0 +1,212 @@
+{
+  "input_sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860",
+  "negative_controls": 2,
+  "pins": [
+    {
+      "path": "ACTUAL_SHIFTED_HERMITE_NONLOCAL_BOUND.md",
+      "root": "local",
+      "sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95"
+    },
+    {
+      "path": "verify_actual_shifted_hermite_nonlocal.py",
+      "root": "local",
+      "sha256": "1f257df5560f72c61128fb97c63c07c04568967358b51ccefcc90dfdfecd4141"
+    },
+    {
+      "path": "actual_shifted_hermite_nonlocal_inputs.json",
+      "root": "local",
+      "sha256": "bdd4859c6738aed780217d218edaeff90f1fc71af9603aba31dd14f9610a5860"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUANTITATIVE_GAP_TWO_ENDPOINT_DATA.md",
+      "root": "repo",
+      "sha256": "430906c5005baea67e0d133dcfa0b699cd4d0df842a92d95f671d3016a7f0d3d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/EXPLICIT_AIRY_CONTOUR_ENVELOPE.md",
+      "root": "repo",
+      "sha256": "81395bd9a4bf4d71016bd8ee8c189946ac53bceef4b5580d130209a403fba046"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+      "root": "repo",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-7-endpoint.html",
+      "root": "repo",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-1-10-rouche.html",
+      "root": "repo",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    }
+  ],
+  "proof_sha256": "524e94c8ffbe5cda7bdd21fc47da946afb9b9f35a86487e79a6f54cdf290be95",
+  "rational_guards": [
+    {
+      "left": "57/1000",
+      "name": "cut above .057",
+      "right": "22957999/400000000"
+    },
+    {
+      "left": "39/625",
+      "name": "bulk q above .0624",
+      "right": "24962001/400000000"
+    },
+    {
+      "left": "9/10000",
+      "name": "bulk horizontal loss",
+      "right": "1521/1660000"
+    },
+    {
+      "left": "7/10000",
+      "name": "stable horizontal loss",
+      "right": "3249/4228000"
+    },
+    {
+      "left": "41042001/400000000",
+      "name": "stable shift s below .321",
+      "right": "103041/1000000"
+    },
+    {
+      "left": "27421/20000",
+      "name": "D+s below1.372",
+      "right": "343/250"
+    },
+    {
+      "left": "108824440001/10000000000",
+      "name": "horizontal denominator upper",
+      "right": "1089/100"
+    },
+    {
+      "left": "826967/379980",
+      "name": "horizontal z derivative",
+      "right": "11/5"
+    },
+    {
+      "left": "28373999188000002400000000/3478820595708988265578101",
+      "name": "horizontal delta phase derivative",
+      "right": "9"
+    },
+    {
+      "left": "2211/100000000",
+      "name": "horizontal actual perturbation",
+      "right": "3/100000"
+    },
+    {
+      "left": "4104620121/40000000000",
+      "name": "critical quadratic centre",
+      "right": "103/1000"
+    },
+    {
+      "left": "3750000009/160000000000000000",
+      "name": "critical numerator perturbation",
+      "right": "3/100000000"
+    },
+    {
+      "left": "16418484234000009/160000000000000000",
+      "name": "critical small circle",
+      "right": "4/25"
+    },
+    {
+      "left": "23040000172800000000000000000000000/25599999232000008639999956800000081",
+      "name": "critical z action derivative",
+      "right": "901/1000"
+    },
+    {
+      "left": "225000000000000000/159999997600000009",
+      "name": "critical delta phase derivative",
+      "right": "141/100"
+    },
+    {
+      "left": "341/100",
+      "name": "critical delta action derivative",
+      "right": "7/2"
+    },
+    {
+      "left": "1809/200000000",
+      "name": "critical action perturbation",
+      "right": "1/100000"
+    },
+    {
+      "left": "1/1152",
+      "name": "kappa squared",
+      "right": "9/10000"
+    },
+    {
+      "left": "10",
+      "name": "vertical norm",
+      "right": "256/25"
+    },
+    {
+      "left": "134104800101/10000000000",
+      "name": "vertical logarithm norm",
+      "right": "14"
+    },
+    {
+      "left": "14",
+      "name": "exp3 lower polynomial",
+      "right": "131/8"
+    },
+    {
+      "left": "2280916599000000200000000/274597151369140945296873",
+      "name": "vertical delta derivative",
+      "right": "9"
+    },
+    {
+      "left": "-249999991/100000000",
+      "name": "vertical actual phase",
+      "right": "-19/10"
+    },
+    {
+      "left": "-299999991/100000000",
+      "name": "real endpoint actual phase",
+      "right": "-2"
+    },
+    {
+      "left": "0",
+      "name": "right log derivative numerator difference",
+      "right": "399995997/400000000"
+    },
+    {
+      "left": "-999999997/400000006",
+      "name": "right tail phase derivative",
+      "right": "-2"
+    },
+    {
+      "left": "2",
+      "name": "left tail phase derivative",
+      "right": "46997/18999"
+    },
+    {
+      "left": "2/5",
+      "name": "mean phase lower",
+      "right": "16096199299/40000000000"
+    },
+    {
+      "left": "1/36000",
+      "name": "joint lower constant",
+      "right": "3/16"
+    },
+    {
+      "left": "33/50000",
+      "name": "far gap dominates horizontal",
+      "right": "226999/100000"
+    },
+    {
+      "left": "60000",
+      "name": "weak target coefficient",
+      "right": "1000000000000000"
+    },
+    {
+      "left": "1/100000",
+      "name": "weak target exponential",
+      "right": "33/50000"
+    }
+  ],
+  "scope": "Exact rational support for the written shifted-Hermite ORIGINAL-period nonlocal bound only; no numerical SFC or complete-period conclusion.",
+  "source_ledger_sha256": "1fe3919a7f2f8ada0e6de5182614e6700efad45d76372466283f38f4a0d30e45",
+  "status": "PASS"
+}
