@@ -1,0 +1,908 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/36.12";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./36#PT3" title="Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="up up" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./36.11" title="§36.11 Leading-Order Asymptotics ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="next" href="./36.13" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.2" title="§36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.3" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.5" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.6" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.7" title="§36.7 Zeros ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.8" title="§36.8 Convergent Series Expansions ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.9" title="§36.9 Integral Identities ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.10" title="§36.10 Differential Equations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.11" title="§36.11 Leading-Order Asymptotics ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.13" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.14" title="§36.14 Other Physical Applications ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.15" title="§36.15 Methods of Computation ‣ Computation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Pearcey integral, applications, asymptotic approximations, canonical integrals, coalescing, coalescing saddle points, critical points, diffraction catastrophes, elliptic umbilic canonical integral, hyperbolic umbilic canonical integral, integrals, integrals with coalescing critical points, saddle points, swallowtail canonical integral, with coalescing saddle points">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./36" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36 </span>Integrals with Coalescing Saddles</span></a><a href="./36#PT3" title="In Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./36.11" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.11 </span>Leading-Order Asymptotics</span></a><a href="./36.13" title="In Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.13 </span>Kelvin’s Ship-Wave Pattern</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§36.12 </span>Uniform Approximation of Integrals</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=canonical%20integrals">canonical integrals</a>, <a class="ltx_keyword" href="./search/search?q=coalescing">coalescing</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>, <a class="ltx_keyword" href="./search/search?q=integrals%20with%20coalescing%20critical%20points">integrals with coalescing critical points</a>, <a class="ltx_keyword" href="./search/search?q=saddle%20points">saddle points</a>, <a class="ltx_keyword" href="./search/search?q=with%20coalescing%20saddle%20points">with coalescing saddle points</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./2.4#vi.p2" title="§2.4(vi) Other Coalescing Critical Points ‣ §2.4 Contour Integrals ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.4(vi)</span></a>,
+<a href="./36.15#ii.p1" title="§36.15(ii) Asymptotics ‣ §36.15 Methods of Computation ‣ Computation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.15(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12" title="" class="ltx_ref">http://dlmf.nist.gov/36.12</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§36.12(i) </span>General Theory for Cuspoids</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§36.12(ii) </span>Special Case</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§36.12(iii) </span>Additional References</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.12(i) </span>General Theory for Cuspoids</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=coalescing">coalescing</a>, <a class="ltx_keyword" href="./search/search?q=coalescing%20saddle%20points">coalescing saddle points</a>, <a class="ltx_keyword" href="./search/search?q=critical%20points">critical points</a>, <a class="ltx_keyword" href="./search/search?q=diffraction%20catastrophes">diffraction catastrophes</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.20.I1.ix4" title="In Changes ‣ Version 1.0.20 (September 15, 2018) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.20) for  Equation (<span class="ltx_text ltx_ref_tag">36.2.18</span>), Subsections §§<span class="ltx_text ltx_ref_tag">36.12(i)</span>, <span class="ltx_text ltx_ref_tag">36.15(i)</span>, <span class="ltx_text ltx_ref_tag">36.15(ii)</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.i" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.i</a></dd>
+<dt>Clarification (effective with 1.0.20):</dt>
+<dd>
+In the second to last paragraph of this section, <math class="ltx_Math" altimg="m40.png" altimg-height="17px" altimg-valign="-2px" altimg-width="55px" alttext="\mathbf{x}=0" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>=</mo><mn>0</mn></mrow></math>, has
+been clarified to read <math class="ltx_Math" altimg="m41.png" altimg-height="17px" altimg-valign="-2px" altimg-width="57px" alttext="\mathbf{x}=\boldsymbol{{0}}" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>=</mo><mn>𝟎</mn></mrow></math>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The canonical integrals (<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.4</span></a>) provide a basis for uniform
+asymptotic approximations of oscillatory integrals. In the cuspoid case (one
+integration variable)</p>
+<div class="ltx_equation_container">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="84px" altimg-valign="-23px" altimg-width="370px" alttext="I(\mathbf{y},k)=\int_{-\infty}^{\infty}\exp\left(ikf(u;\mathbf{y})\right)g(u,%
+\mathbf{y})\,\mathrm{d}u," display="block"><mrow><mrow><mrow><mi href="./36.12#E1" title="oscillatory integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo>⁢</mo><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./36.12#i.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./36.12#E4" title="mapping">u</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="I(\mathbf{y},k)" display="inline"><mrow><mi href="./36.12#E1" title="oscillatory integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  oscillatory integral (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E19" title="(4.2.19) ‣ §4.2(iii) The Exponential Function ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="17px" altimg-valign="-6px" altimg-width="50px" alttext="\exp\NVar{z}" display="inline"><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: exponential function</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>:  variable</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="g(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.12#E4" title="(36.12.4) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  mapping</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.13#p1" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.13</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E1" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E1.tex">TeX</a>, <a href="./36.12.E1.pmml">pMML</a>, <a href="./36.12.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math> is a large real parameter and <math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="151px" alttext="\mathbf{y}=\{y_{1},y_{2},\dots\}" display="inline"><mrow><mi>𝐲</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi href="./36.1#t1.r4" title="real parameter">y</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./36.1#t1.r4" title="real parameter">y</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></math> is
+a set of additional (nonasymptotic) parameters. As <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math> varies as many
+as <math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-4px" altimg-width="59px" alttext="K+1" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></math> (real or complex) critical points of the smooth phase function <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi href="./36.12#i.p1" title="function">f</mi></math> can
+coalesce in clusters of two or more. The function <math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./36.12#i.p1" title="function">g</mi></math> has a smooth amplitude.
+Also, <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi href="./36.12#i.p1" title="function">f</mi></math> is real analytic, and <math class="ltx_Math" altimg="m37.png" altimg-height="42px" altimg-valign="-15px" altimg-width="187px" alttext="\ifrac{{\partial}^{K+2}f}{{\partial u}^{K+2}}&gt;0" display="inline"><mrow><mrow><mrow><msup><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow></msup><mi href="./36.12#i.p1" title="function">f</mi></mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" stretchy="true" symmetric="true" title="partial derivative of 𝑓 with respect to 𝑥">/</mo><msup><mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./36.12#E4" title="mapping">u</mi></mrow><mrow><mi href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">K</mi><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">+</mo><mn href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">2</mn></mrow></msup></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> for all <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math>
+such that all <math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-4px" altimg-width="59px" alttext="K+1" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></math> critical points coincide. If <math class="ltx_Math" altimg="m36.png" altimg-height="42px" altimg-valign="-15px" altimg-width="187px" alttext="\ifrac{{\partial}^{K+2}f}{{\partial u}^{K+2}}&lt;0" display="inline"><mrow><mrow><mrow><msup><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow></msup><mi href="./36.12#i.p1" title="function">f</mi></mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" stretchy="true" symmetric="true" title="partial derivative of 𝑓 with respect to 𝑥">/</mo><msup><mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./36.12#E4" title="mapping">u</mi></mrow><mrow><mi href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">K</mi><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">+</mo><mn href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">2</mn></mrow></msup></mrow><mo>&lt;</mo><mn>0</mn></mrow></math>,
+then we may evaluate the complex conjugate of <math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="I" display="inline"><mi href="./36.12#E1" title="oscillatory integral">I</mi></math> for real values of
+<math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math> and <math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./36.12#i.p1" title="function">g</mi></math>, and obtain <math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="I" display="inline"><mi href="./36.12#E1" title="oscillatory integral">I</mi></math> by conjugation and analytic continuation.
+The critical points <math class="ltx_Math" altimg="m69.png" altimg-height="26px" altimg-valign="-8px" altimg-width="54px" alttext="u_{j}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E4" title="mapping">u</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="22px" altimg-valign="-6px" altimg-width="135px" alttext="1\leq j\leq K+1" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></mrow></math>, are defined by</p>
+<div class="ltx_equation_container">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="49px" altimg-valign="-16px" altimg-width="180px" alttext="\frac{\partial}{\partial u}f(u_{j}(\mathbf{y});\mathbf{y})=0." display="block"><mrow><mrow><mrow><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./36.12#E4" title="mapping">u</mi></mrow></mfrac><mo>⁡</mo><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E4" title="mapping">u</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.12#E4" title="(36.12.4) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  mapping</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E2" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E2.tex">TeX</a>, <a href="./36.12.E2.pmml">pMML</a>, <a href="./36.12.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">The leading-order uniform asymptotic approximation is given by</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="I(\mathbf{y},k)=\frac{\exp\left(ikA(\mathbf{y})\right)}{k^{1/(K+2)}}\sum%
+\limits_{m=0}^{K}\frac{a_{m}(\mathbf{y})}{k^{m/(K+2)}}\left(\delta_{m,0}-\left%
+(1-\delta_{m,0}\right)i\frac{\partial}{\partial z_{m}}\right)\Psi_{K}\left(%
+\mathbf{z}(\mathbf{y};k)\right)\left(1+O\left(\frac{1}{k}\right)\right)," display="block"><mrow><mrow><mi href="./36.12#E1" title="oscillatory integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo>⁢</mo><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi href="./36.1#t1.r3" title="codimension">K</mi></munderover><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mfrac><mrow><msub><mi href="./36.12#E8" title="function">a</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mn>0</mn></mrow></msub><mo>−</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mn>0</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><msub><mi href="./36.12#E7" title="function">z</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub></mrow></mfrac></mrow></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>×</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.12#E7" title="function">𝐳</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mi href="./36.1#t1.r2" title="variable">k</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mo>,</mo></mtd></mtr></mtable></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./4.2#E19" title="(4.2.19) ‣ §4.2(iii) The Exponential Function ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="17px" altimg-valign="-6px" altimg-width="50px" alttext="\exp\NVar{z}" display="inline"><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: exponential function</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./36.1#t1.r1" title="integer">n</mi></math>:  integer</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>:  variable</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.12#E1" title="(36.12.1) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="I(\mathbf{y},k)" display="inline"><mrow><mi href="./36.12#E1" title="oscillatory integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  oscillatory integral</a>,
+<a href="./36.12#E8" title="(36.12.8) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="a_{m}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E8" title="function">a</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#E6" title="(36.12.6) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="A(\mathbf{y})" display="inline"><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#E7" title="(36.12.7) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="\mathbf{z}(\mathbf{y},k)" display="inline"><mrow><mi href="./36.12#E7" title="function">𝐳</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.12#E7" title="(36.12.7) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="z_{m}(\mathbf{y},k)" display="inline"><mrow><msub><mi href="./36.12#E7" title="function">z</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E3" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E3.tex">TeX</a>, <a href="./36.12.E3.pmml">pMML</a>, <a href="./36.12.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="i.p4" class="ltx_para">
+<p class="ltx_p">where <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="A(\mathbf{y})" display="inline"><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="\mathbf{z}(\mathbf{y},k)" display="inline"><mrow><mi href="./36.12#E7" title="function">𝐳</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="a_{m}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E8" title="function">a</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> are as
+follows. Define a mapping <math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> by relating <math class="ltx_Math" altimg="m55.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u;\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> to
+the normal form (<a href="./36.2#E1" title="(36.2.1) ‣ Normal Forms Associated with Canonical Integrals: Cuspoid Catastrophe with Codimension 𝐾 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.1</span></a>) of <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Phi_{K}\left(t;\mathbf{x}\right)" display="inline"><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>)</mo></mrow></mrow></math> in the
+following way:</p>
+<div class="ltx_equation_container">
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="56px" altimg-valign="-7px" altimg-width="331px" alttext="f(u(t,\mathbf{y});\mathbf{y})=A(\mathbf{y})+\Phi_{K}\left(t;\mathbf{x}(\mathbf%
+{y})\right)," display="block"><mrow><mrow><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  mapping (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E1" title="(36.2.1) ‣ Normal Forms Associated with Canonical Integrals: Cuspoid Catastrophe with Codimension 𝐾 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Phi_{\NVar{K}}\left(\NVar{t};\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: cuspoid catastrophe of codimension <math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math></a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi href="./36.1#t1.r2" title="variable">t</mi></math>:  variable</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#i.p4" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.12#E6" title="(36.12.6) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="A(\mathbf{y})" display="inline"><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E4" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E4.tex">TeX</a>, <a href="./36.12.E4.pmml">pMML</a>, <a href="./36.12.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">with the <math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-4px" altimg-width="59px" alttext="K+1" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></math> functions <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="A(\mathbf{y})" display="inline"><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+determined by correspondence of the <math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-4px" altimg-width="59px" alttext="K+1" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></math> critical points of <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi href="./36.12#i.p1" title="function">f</mi></math> and
+<math class="ltx_Math" altimg="m25.png" altimg-height="21px" altimg-valign="-5px" altimg-width="35px" alttext="\Phi_{K}" display="inline"><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></math>. Then</p>
+<div class="ltx_equation_container">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="57px" altimg-valign="-8px" altimg-width="389px" alttext="f(u_{j}(\mathbf{y});\mathbf{y})=A(\mathbf{y})+\Phi_{K}\left(t_{j}(\mathbf{x}(%
+\mathbf{y}));\mathbf{x}(\mathbf{y})\right)," display="block"><mrow><mrow><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E4" title="mapping">u</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E1" title="(36.2.1) ‣ Normal Forms Associated with Canonical Integrals: Cuspoid Catastrophe with Codimension 𝐾 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Phi_{\NVar{K}}\left(\NVar{t};\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: cuspoid catastrophe of codimension <math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math></a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#E4" title="(36.12.4) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  mapping</a>,
+<a href="./36.12#i.p4" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#E6" title="(36.12.6) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="A(\mathbf{y})" display="inline"><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.4#Px1.p1" title="Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  solutions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E5" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E5.tex">TeX</a>, <a href="./36.12.E5.pmml">pMML</a>, <a href="./36.12.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m65.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#i.p4" title="function">𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="22px" altimg-valign="-6px" altimg-width="135px" alttext="1\leq j\leq K+1" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></mrow></math>, are the critical points of
+<math class="ltx_Math" altimg="m25.png" altimg-height="21px" altimg-valign="-5px" altimg-width="35px" alttext="\Phi_{K}" display="inline"><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></math>, that is, the solutions (real and complex) of (<a href="./36.4#E1" title="(36.4.1) ‣ Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4.1</span></a>).
+Correspondence between the <math class="ltx_Math" altimg="m69.png" altimg-height="26px" altimg-valign="-8px" altimg-width="54px" alttext="u_{j}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E4" title="mapping">u</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> and the <math class="ltx_Math" altimg="m65.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#i.p4" title="function">𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math> is
+established by the order of critical points along the real axis when
+<math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math> and <math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\mathbf{x}" display="inline"><mi href="./36.12#i.p4" title="function">𝐱</mi></math> are such that these critical points are all real,
+and by continuation when some or all of the critical points are complex. The
+branch for <math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> is such that <math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\mathbf{x}" display="inline"><mi href="./36.12#i.p4" title="function">𝐱</mi></math> is real when
+<math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math> is real. In consequence,</p>
+<div class="ltx_equation_container">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="27px" altimg-valign="-7px" altimg-width="196px" alttext="A(\mathbf{y})=f(u(0,\mathbf{y});\mathbf{y})," display="block"><mrow><mrow><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="A(\mathbf{y})" display="inline"><mrow><mi href="./36.12#E6" title="function">A</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.12#E4" title="(36.12.4) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  mapping</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E6" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E6.tex">TeX</a>, <a href="./36.12.E6.pmml">pMML</a>, <a href="./36.12.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equationgroup_container">
+<table id="E7" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.12.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="27px" altimg-valign="-7px" altimg-width="67px" alttext="\displaystyle\mathbf{z}(\mathbf{y};k)" display="inline"><mrow><mi href="./36.12#E7" title="function">𝐳</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="27px" altimg-valign="-7px" altimg-width="323px" alttext="\displaystyle=\{z_{1}(\mathbf{y};k),z_{2}(\mathbf{y};k),\dots,z_{K}(\mathbf{y}%
+;k)\}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><msub><mi href="./36.12#E7" title="function">z</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi href="./36.12#E7" title="function">z</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi href="./36.12#E7" title="function">z</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="27px" altimg-valign="-7px" altimg-width="82px" alttext="\displaystyle z_{m}(\mathbf{y};k)" display="inline"><mrow><msub><mi href="./36.12#E7" title="function">z</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="31px" altimg-valign="-7px" altimg-width="210px" alttext="\displaystyle=x_{m}(\mathbf{y})k^{1-(m/(K+2))}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="\mathbf{z}(\mathbf{y},k)" display="inline"><mrow><mi href="./36.12#E7" title="function">𝐳</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m73.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="z_{m}(\mathbf{y},k)" display="inline"><mrow><msub><mi href="./36.12#E7" title="function">z</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./36.1#t1.r1" title="integer">n</mi></math>:  integer</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>:  variable</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="16px" altimg-valign="-5px" altimg-width="23px" alttext="x_{i}" display="inline"><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></msub></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E7" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E7a.tex">TeX</a>, <a href="./36.12.E7b.tex">TeX</a>, <a href="./36.12.E7a.pmml">pMML</a>, <a href="./36.12.E7b.pmml">pMML</a>, <a href="./36.12.E7a.png">png</a>, <a href="./36.12.E7b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="110px" altimg-valign="-67px" altimg-width="499px" alttext="a_{m}(\mathbf{y})=\sum_{n=1}^{K+1}\frac{P_{mn}(\mathbf{y})G_{n}(\mathbf{y})}{(%
+t_{n}(\mathbf{x}(\mathbf{y})))^{m+1}\prod\limits_{\begin{subarray}{c}l=1\\
+l\neq n\end{subarray}}^{K+1}(t_{n}(\mathbf{x}(\mathbf{y}))-t_{l}(\mathbf{x}(%
+\mathbf{y})))}," display="block"><mrow><mrow><mrow><msub><mi href="./36.12#E8" title="function">a</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./36.1#t1.r1" title="integer">n</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></munderover><mfrac><mrow><mrow><msub><mi>P</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>⁢</mo><mi href="./36.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msub><mi>G</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mtable rowspacing="0pt"><mtr><mtd><mrow><mi href="./36.1#t1.r1" title="integer">l</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi href="./36.1#t1.r1" title="integer">l</mi><mo>≠</mo><mi href="./36.1#t1.r1" title="integer">n</mi></mrow></mtd></mtr></mtable><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></munderover><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">l</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="a_{m}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E8" title="function">a</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="18px" altimg-valign="-2px" altimg-width="11px" alttext="l" display="inline"><mi href="./36.1#t1.r1" title="integer">l</mi></math>:  integer</a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./36.1#t1.r1" title="integer">n</mi></math>:  integer</a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./36.1#t1.r1" title="integer">m</mi></math>:  integer</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.12#i.p4" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.4#Px1.p1" title="Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  solutions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E8" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E8.tex">TeX</a>, <a href="./36.12.E8.pmml">pMML</a>, <a href="./36.12.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where</p>
+<div class="ltx_equation_container">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="73px" altimg-valign="-31px" altimg-width="548px" alttext="P_{mn}(\mathbf{y})={(t_{n}(\mathbf{x}(\mathbf{y})))}^{K+1}+\sum_{l=m+2}^{K}%
+\frac{l}{K+2}x_{l}(\mathbf{y}){(t_{n}(\mathbf{x}(\mathbf{y})))}^{l-1}," display="block"><mrow><mrow><mrow><msub><mi>P</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>⁢</mo><mi href="./36.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>1</mn></mrow></msup><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./36.1#t1.r1" title="integer">l</mi><mo>=</mo><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>+</mo><mn>2</mn></mrow></mrow><mi href="./36.1#t1.r3" title="codimension">K</mi></munderover><mrow><mfrac><mi href="./36.1#t1.r1" title="integer">l</mi><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>⁢</mo><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./36.1#t1.r1" title="integer">l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./36.1#t1.r1" title="integer">l</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="18px" altimg-valign="-2px" altimg-width="11px" alttext="l" display="inline"><mi href="./36.1#t1.r1" title="integer">l</mi></math>:  integer</a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./36.1#t1.r1" title="integer">n</mi></math>:  integer</a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./36.1#t1.r1" title="integer">m</mi></math>:  integer</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="16px" altimg-valign="-5px" altimg-width="23px" alttext="x_{i}" display="inline"><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></msub></math>:  real parameter</a>,
+<a href="./36.12#i.p4" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.4#Px1.p1" title="Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  solutions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E9" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E9.tex">TeX</a>, <a href="./36.12.E9.pmml">pMML</a>, <a href="./36.12.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">and</p>
+<div class="ltx_equation_container">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="70px" altimg-valign="-26px" altimg-width="465px" alttext="G_{n}(\mathbf{y})=g(t_{n}(\mathbf{y}),\mathbf{y})\sqrt{\frac{\ifrac{{\partial}%
+^{2}\Phi_{K}\left(t_{n}(\mathbf{x}(\mathbf{y}));\mathbf{x}(\mathbf{y})\right)}%
+{{\partial t}^{2}}}{\ifrac{{\partial}^{2}f(u_{n}(\mathbf{y}))}{{\partial u}^{2%
+}}}}." display="block"><mrow><mrow><mrow><msub><mi>G</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./36.12#i.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msqrt><mfrac><mrow><mrow><msup><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mn>2</mn></msup><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" stretchy="true" symmetric="true" title="partial derivative of 𝑓 with respect to 𝑥">/</mo><msup><mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./36.1#t1.r2" title="variable">t</mi></mrow><mn href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">2</mn></msup></mrow><mrow><mrow><msup><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mn>2</mn></msup><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E4" title="mapping">u</mi><mi href="./36.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" stretchy="true" symmetric="true" title="partial derivative of 𝑓 with respect to 𝑥">/</mo><msup><mrow><mo href="./1.5#E3" lspace="0em" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./36.12#E4" title="mapping">u</mi></mrow><mn href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">2</mn></msup></mrow></mfrac></msqrt></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E1" title="(36.2.1) ‣ Normal Forms Associated with Canonical Integrals: Cuspoid Catastrophe with Codimension 𝐾 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Phi_{\NVar{K}}\left(\NVar{t};\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: cuspoid catastrophe of codimension <math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./36.1#t1.r1" title="integer">m</mi></math>:  integer</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi href="./36.1#t1.r2" title="variable">t</mi></math>:  variable</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="g(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#E4" title="(36.12.4) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="u(t;\mathbf{y})" display="inline"><mrow><mi href="./36.12#E4" title="mapping">u</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  mapping</a>,
+<a href="./36.12#i.p4" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\mathbf{x}(\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.4#Px1.p1" title="Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  solutions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.12#i.p4" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E10" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E10.tex">TeX</a>, <a href="./36.12.E10.pmml">pMML</a>, <a href="./36.12.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#i.info" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(i)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">In (<a href="./36.12#E10" title="(36.12.10) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.12.10</span></a>), both second derivatives vanish when critical points
+coalesce, but their ratio remains finite. The square roots are real and
+positive when <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math> is such that all the critical points are real, and
+are defined by analytic continuation elsewhere. The quantities
+<math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="a_{m}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E8" title="function">a</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math> are real for real <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mathbf{y}" display="inline"><mi>𝐲</mi></math> when <math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./36.12#i.p1" title="function">g</mi></math> is real analytic.</p>
+</div>
+<div id="i.p5" class="ltx_para">
+<p class="ltx_p">This technique can be applied to generate a hierarchy of approximations for the
+diffraction catastrophes <math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\Psi_{K}(\mathbf{x};k)" display="inline"><mrow><msub><mi href="./36.2#E10" mathvariant="normal" title="diffraction catastrophe">Ψ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math> in (<a href="./36.2#E10" title="(36.2.10) ‣ Diffraction Catastrophes ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.10</span></a>)
+away from <math class="ltx_Math" altimg="m41.png" altimg-height="17px" altimg-valign="-2px" altimg-width="57px" alttext="\mathbf{x}=\boldsymbol{{0}}" display="inline"><mrow><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>=</mo><mn>𝟎</mn></mrow></math>, in terms of canonical integrals
+<math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="111px" alttext="\Psi_{J}\left(\xi(\mathbf{x};k)\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi>J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>ξ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#i.p4" title="function">𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m17.png" altimg-height="19px" altimg-valign="-3px" altimg-width="65px" alttext="J&lt;K" display="inline"><mrow><mi>J</mi><mo>&lt;</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></math>. For example, the diffraction catastrophe
+<math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="99px" alttext="\Psi_{2}(x,y;k)" display="inline"><mrow><msub><mi href="./36.2#E10" mathvariant="normal" title="diffraction catastrophe">Ψ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math> defined by (<a href="./36.2#E10" title="(36.2.10) ‣ Diffraction Catastrophes ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.10</span></a>), and corresponding to the Pearcey
+integral (<a href="./36.2#E14" title="(36.2.14) ‣ §36.2(ii) Special Cases ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.14</span></a>), can be approximated by the Airy function
+<math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="128px" alttext="\Psi_{1}\left(\xi(x,y;k)\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>ξ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math> when <math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math> is large, provided that <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math> and <math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math> are
+not small. For details of this example, see <cite class="ltx_cite ltx_citemacro_citet">Paris (<a href="./bib/P#bib1833" title="The asymptotic behaviour of Pearcey’s integral for complex variables" class="ltx_ref">1991</a>)</cite>.</p>
+</div>
+<div id="i.p6" class="ltx_para">
+<p class="ltx_p">For further information see <cite class="ltx_cite ltx_citemacro_citet">Berry and Howls (<a href="./bib/B#bib260" title="Unfolding the high orders of asymptotic expansions with coalescing saddles: Singularity theory, crossover and duality" class="ltx_ref">1993</a>)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.12(ii) </span>Special Case</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Berry and Howls (<a href="./bib/B#bib260" title="Unfolding the high orders of asymptotic expansions with coalescing saddles: Singularity theory, crossover and duality" class="ltx_ref">1993</a>)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./2.8#iii.p6" title="§2.8(iii) Case II: Simple Turning Point ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.ii" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="61px" alttext="K=1" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>=</mo><mn>1</mn></mrow></math>, with a single parameter <math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>, let the two critical points of
+<math class="ltx_Math" altimg="m56.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="f(u;y)" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>;</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></math> be denoted by <math class="ltx_Math" altimg="m68.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="u_{\pm}(y)" display="inline"><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>±</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></math>, with <math class="ltx_Math" altimg="m67.png" altimg-height="20px" altimg-valign="-7px" altimg-width="84px" alttext="u_{+}&gt;u_{-}" display="inline"><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>+</mo></msub><mo>&gt;</mo><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>−</mo></msub></mrow></math> for those values of
+<math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math> for which these critical points are real. Then</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.12.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="I(y,k)=\frac{\Delta^{1/4}\pi\sqrt{2}}{k^{1/3}}\exp\left(ik\widetilde{f}\right)%
+\left(\left(\frac{g_{+}}{\sqrt{f_{+}^{\prime\prime}}}+\frac{g_{-}}{\sqrt{-f_{-%
+}^{\prime\prime}}}\right)\operatorname{Ai}\left(-k^{2/3}\Delta\right)\left(1+O%
+\left(\frac{1}{k}\right)\right)-i\left(\frac{g_{+}}{\sqrt{f_{+}^{\prime\prime}%
+}}-\frac{g_{-}}{\sqrt{-f_{-}^{\prime\prime}}}\right)\frac{\operatorname{Ai}'%
+\left(-k^{2/3}\Delta\right)}{k^{1/3}\Delta^{1/2}}\left(1+O\left(\frac{1}{k}%
+\right)\right)\right)," display="block"><mrow><mrow><mi href="./36.12#E1" title="oscillatory integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mfrac><mrow><msup><mi mathvariant="normal">Δ</mi><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo>⁢</mo><mover accent="true"><mi>f</mi><mo>~</mo></mover></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>×</mo><mrow><mo maxsize="4.68em" minsize="4.68em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mrow><mo>(</mo><mrow><mfrac><msub><mi>g</mi><mo>+</mo></msub><msqrt><msubsup><mi>f</mi><mo>+</mo><mo>′′</mo></msubsup></msqrt></mfrac><mo>+</mo><mfrac><msub><mi>g</mi><mo>−</mo></msub><msqrt><mrow><mo>−</mo><msubsup><mi>f</mi><mo>−</mo><mo>′′</mo></msubsup></mrow></msqrt></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mi href="./36.1#t1.r2" title="variable">k</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>−</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><msub><mi>g</mi><mo>+</mo></msub><msqrt><msubsup><mi>f</mi><mo>+</mo><mo>′′</mo></msubsup></msqrt></mfrac><mo>−</mo><mfrac><msub><mi>g</mi><mo>−</mo></msub><msqrt><mrow><mo>−</mo><msubsup><mi>f</mi><mo>−</mo><mo>′′</mo></msubsup></mrow></msqrt></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mfrac><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></mrow><mo>)</mo></mrow></mrow><mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><msup><mi mathvariant="normal">Δ</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mi href="./36.1#t1.r2" title="variable">k</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo maxsize="4.68em" minsize="4.68em">)</mo><mo>,</mo></mtd></mtr></mtable></mrow></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./9.2#i" title="§9.2(i) Airy’s Equation ‣ §9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m50.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(\NVar{z}\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Airy function</a>,
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E19" title="(4.2.19) ‣ §4.2(iii) The Exponential Function ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="17px" altimg-valign="-6px" altimg-width="50px" alttext="\exp\NVar{z}" display="inline"><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: exponential function</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>:  variable</a> and
+<a href="./36.12#E1" title="(36.12.1) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="I(\mathbf{y},k)" display="inline"><mrow><mi href="./36.12#E1" title="oscillatory integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  oscillatory integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.13#p3" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.13</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E11" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E11.tex">TeX</a>, <a href="./36.12.E11.pmml">pMML</a>, <a href="./36.12.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#ii.info" title="§36.12(ii) Special Case ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(ii)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ii.p3" class="ltx_para">
+<p class="ltx_p">where</p>
+<div class="ltx_equationgroup_container">
+<table id="E12" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.12.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="31px" altimg-valign="-6px" altimg-width="19px" alttext="\displaystyle\widetilde{f}" display="inline"><mover accent="true"><mi>f</mi><mo>~</mo></mover></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="31px" altimg-valign="-9px" altimg-width="292px" alttext="\displaystyle=\tfrac{1}{2}(f(u_{+}(y),y)+f(u_{-}(y),y))," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>+</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>−</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="20px" altimg-valign="-7px" altimg-width="31px" alttext="\displaystyle g_{\pm}" display="inline"><msub><mi>g</mi><mo>±</mo></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="27px" altimg-valign="-7px" altimg-width="134px" alttext="\displaystyle=g(u_{\pm}(y),y)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./36.12#i.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>±</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="30px" altimg-valign="-9px" altimg-width="31px" alttext="\displaystyle f_{\pm}^{\prime\prime}" display="inline"><msubsup><mi>f</mi><mo>±</mo><mo>′′</mo></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="54px" altimg-valign="-18px" altimg-width="174px" alttext="\displaystyle=\frac{{\partial}^{2}}{{\partial u}^{2}}f(u_{\pm}(y),y)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mn>2</mn></msup><msup><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi>u</mi></mrow><mn href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac></mstyle><mo>⁡</mo><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>±</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="20px" altimg-valign="-2px" altimg-width="24px" alttext="\displaystyle\Delta" display="inline"><mi mathvariant="normal">Δ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="43px" altimg-valign="-9px" altimg-width="344px" alttext="\displaystyle=\left(\tfrac{3}{4}(f(u_{-}(y),y)-f(u_{+}(y),y))\right)^{2/3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>−</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./36.12#E2" title="critical points">u</mi><mo>+</mo></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m57.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="g(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>,
+<a href="./36.12#i.p1" title="§36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="f(u,\mathbf{y})" display="inline"><mrow><mi href="./36.12#i.p1" title="function">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.12#E4" title="mapping">u</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./36.12#E2" title="(36.12.2) ‣ §36.12(i) General Theory for Cuspoids ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="26px" altimg-valign="-8px" altimg-width="54px" alttext="u_{j}(\mathbf{y})" display="inline"><mrow><msub><mi href="./36.12#E4" title="mapping">u</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐲</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  critical points</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.13#p3" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.13</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.E12" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.12.E12a.tex">TeX</a>, <a href="./36.12.E12b.tex">TeX</a>, <a href="./36.12.E12c.tex">TeX</a>, <a href="./36.12.E12d.tex">TeX</a>, <a href="./36.12.E12a.pmml">pMML</a>, <a href="./36.12.E12b.pmml">pMML</a>, <a href="./36.12.E12c.pmml">pMML</a>, <a href="./36.12.E12d.pmml">pMML</a>, <a href="./36.12.E12a.png">png</a>, <a href="./36.12.E12b.png">png</a>, <a href="./36.12.E12c.png">png</a>, <a href="./36.12.E12d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#ii.info" title="§36.12(ii) Special Case ‣ §36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12(ii)</span></a>,
+<a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">For <math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\operatorname{Ai}" display="inline"><mi href="./9.2#i" title="Airy function">Ai</mi></math> and <math class="ltx_Math" altimg="m48.png" altimg-height="21px" altimg-valign="-2px" altimg-width="31px" alttext="\operatorname{Ai}'" display="inline"><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup></math> see §<a href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2</span></a>.
+Branches are chosen so that <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\Delta" display="inline"><mi mathvariant="normal">Δ</mi></math> is real and positive if the critical
+points are real, or real and negative if they are complex. The coefficients of
+<math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="26px" alttext="\operatorname{Ai}" display="inline"><mi href="./9.2#i" title="Airy function">Ai</mi></math> and <math class="ltx_Math" altimg="m48.png" altimg-height="21px" altimg-valign="-2px" altimg-width="31px" alttext="\operatorname{Ai}'" display="inline"><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup></math> are real if <math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math> is real and <math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./36.12#i.p1" title="function">g</mi></math> is real analytic.
+Also, <math class="ltx_Math" altimg="m24.png" altimg-height="30px" altimg-valign="-9px" altimg-width="103px" alttext="\Delta^{1/4}/\sqrt{f_{+}^{\prime\prime}}" display="inline"><mrow><msup><mi mathvariant="normal">Δ</mi><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>/</mo><msqrt><msubsup><mi>f</mi><mo>+</mo><mo>′′</mo></msubsup></msqrt></mrow></math> and
+<math class="ltx_Math" altimg="m23.png" altimg-height="30px" altimg-valign="-9px" altimg-width="119px" alttext="\Delta^{1/4}/\sqrt{-f_{-}^{\prime\prime}}" display="inline"><mrow><msup><mi mathvariant="normal">Δ</mi><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>/</mo><msqrt><mrow><mo>−</mo><msubsup><mi>f</mi><mo>−</mo><mo>′′</mo></msubsup></mrow></msqrt></mrow></math> are chosen to be positive real when <math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math> is
+such that both critical points are real, and by analytic continuation
+otherwise.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.12(iii) </span>Additional References</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Pearcey%20integral">Pearcey integral</a>, <a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations">asymptotic approximations</a>, <a class="ltx_keyword" href="./search/search?q=canonical%20integrals">canonical integrals</a>, <a class="ltx_keyword" href="./search/search?q=coalescing">coalescing</a>, <a class="ltx_keyword" href="./search/search?q=coalescing%20saddle%20points">coalescing saddle points</a>, <a class="ltx_keyword" href="./search/search?q=critical%20points">critical points</a>, <a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>, <a class="ltx_keyword" href="./search/search?q=integrals%20with%20coalescing%20critical%20points">integrals with coalescing critical points</a>, <a class="ltx_keyword" href="./search/search?q=saddle%20points">saddle points</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=with%20coalescing%20saddle%20points">with coalescing saddle points</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.12.iii" title="" class="ltx_ref">http://dlmf.nist.gov/36.12.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.12#info" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.12</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">For further information concerning integrals with several coalescing saddle
+points see <cite class="ltx_cite ltx_citemacro_citet">Arnol’d<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib138" title="Singularities of Differentiable Maps. Vol. II" class="ltx_ref">1988</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Berry and Howls (<a href="./bib/B#bib260" title="Unfolding the high orders of asymptotic expansions with coalescing saddles: Singularity theory, crossover and duality" class="ltx_ref">1993</a>, <a href="./bib/B#bib261" title="Overlapping Stokes smoothings: Survival of the error function and canonical catastrophe integrals" class="ltx_ref">1994</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Bleistein (<a href="./bib/B#bib299" title="Uniform asymptotic expansions of integrals with many nearby stationary points and algebraic singularities" class="ltx_ref">1967</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Duistermaat (<a href="./bib/D#bib688" title="Oscillatory integrals, Lagrange immersions and unfolding of singularities" class="ltx_ref">1974</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Ludwig (<a href="./bib/L#bib1484" title="Uniform asymptotic expansions at a caustic" class="ltx_ref">1966</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib1769" title="On the asymptotics for late coefficients in uniform asymptotic expansions of integrals with coalescing saddles" class="ltx_ref">2000</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Ursell (<a href="./bib/U#bib2292" title="Integrals with a large parameter. Several nearly coincident saddle-points" class="ltx_ref">1972</a>, <a href="./bib/U#bib2293" title="Integrals with a large parameter: A double complex integral with four nearly coincident saddle-points" class="ltx_ref">1980</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./36.11" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.11 </span>Leading-Order Asymptotics</span></a><a href="./36.13" title="In Applications ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.13 </span>Kelvin’s Ship-Wave Pattern</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#7c3830313a511a1919181e1d1f173c12150f08521b130a">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5d80c459e4fc569',t:'MTc5NTE4MzkyOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5d80c459e4fc569',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

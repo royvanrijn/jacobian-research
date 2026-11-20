@@ -1,0 +1,76 @@
+{
+  "G4_compact_subcritical_interval": "fixed real compact subset of (0,1/4)",
+  "G5_used_at_ONE_fixed_finite_U": true,
+  "G6_sequential_to_fixed_relative_strip": true,
+  "G7_Kabluchko_2_3_logical_and_407_bounded_gap_only": true,
+  "K": 4000000000000000000000000,
+  "QQ_tail_to_finite_B_requires_raw_fixed_terminal_input_NOT407": true,
+  "a0_92935_or9998_finite_certificate_import": false,
+  "a0_boundary_uses_RAW_analytic_large_and_primepower_proofs_ONLY": true,
+  "all_fast_regional_guards_replayed_fresh": true,
+  "all_nonzero_coefficients_and_characteristic_zero_fields": true,
+  "all_order_SFC": false,
+  "arbitrary_polynomial_supports": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "bad_support_projection_finite": true,
+  "constant_family_uniform_terminal": 10000,
+  "controls": {
+    "critical_deltas": [
+      "1/1000000000000",
+      "1/1000",
+      "1/10",
+      "1",
+      "10"
+    ],
+    "critical_denominators": [
+      1,
+      2,
+      3,
+      7,
+      19,
+      64
+    ],
+    "maximum_gap": 8,
+    "maximum_lower": 4,
+    "maximum_order": 5,
+    "root_t_samples": [
+      100,
+      101,
+      128,
+      150,
+      200
+    ],
+    "small_epsilons": [
+      "1/1000000",
+      "1/100",
+      "1",
+      "100"
+    ],
+    "terminal_count_maximum": 64
+  },
+  "critical_halfwidth": "h=min(1/8,delta/16)",
+  "effective_Nstar_or_containing_box": false,
+  "exceptional_projective_ratios_algebraic_over_Q": true,
+  "finite_projective_exceptional_phases": true,
+  "finite_support_or_projective_phases_to_finite_B_REQUIRES407": true,
+  "general_Gamma_shapes": false,
+  "global_analytic_estimates_newly_proved_by_finite_controls": false,
+  "global_bad_set_empty": false,
+  "global_bad_triple_set_finite": true,
+  "heavy_finite_boundary_runs_repeated": false,
+  "main_reviewed_sha256": "2923c4c29f5e29dd02fb5f25d50e5167e6b9d71b1a66bf41d8e24453f7a1a722",
+  "parameters": "integers a>=0,d>=1,N>=2; c=a/(d-1)^2 ONLY when a>=1,d>=2",
+  "quadratic_G2_domain": "a>=10^24*d^2,d>=2,N>=2",
+  "rational_Bezout_no_arbitrary_field_embedding": true,
+  "replication_of_one_bad_triple": false,
+  "schema": 1,
+  "six_way_equivalence_under_declared_inputs": true,
+  "small_cut": "epsilon=min(epsilon_small,1/16)",
+  "small_ratio_G3_requires_RAW_old_sparse": true,
+  "theorem": "one unevaluated integer Nstar for ALL ordinary supports and every N>=Nstar",
+  "unscaled_coefficient_pairs_finite": false
+}

@@ -1,0 +1,129 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_compact_supercritical_ratio_uniform.py",
+      "relation": "exact_and_source_support",
+      "role": "exact_checker",
+      "sha256": "6a6cbb02ea4dfa9804b2b2cf7de73128caa0cf5320f38a75b3b999e6365f81a3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_strict_subcritical_eventual_sfc.py",
+      "relation": "code_ONLY_sparse_Q_polynomial_kernel_NOT_subcritical_theorem",
+      "role": "exact_polynomial_kernel",
+      "sha256": "c0771e61f31e8710278e2827183dbfa20050817fd3e5b05bf715c4c24606df2d"
+    },
+    {
+      "kind": "support",
+      "path": "verify_ordinary_binomial_eventual_completion.py",
+      "relation": "defining_existing_407_guard",
+      "role": "fallback_407_checker",
+      "sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348"
+    },
+    {
+      "kind": "support",
+      "path": "ordinary_binomial_eventual_inputs.json",
+      "relation": "defining_existing_407_scope",
+      "role": "fallback_407_inputs",
+      "sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a"
+    },
+    {
+      "kind": "support",
+      "path": "ordinary_binomial_eventual_source_ledger.json",
+      "relation": "hierarchical_complete_77_source_boundary",
+      "role": "fallback_407_manifest",
+      "sha256": "78bdc6094a425aa2b8642ad17bc39576ac37572280e935a719702b0248ab102e"
+    },
+    {
+      "kind": "support",
+      "path": "ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+      "relation": "logical_input_ONLY_bounded_gap_finite_support_fallback",
+      "role": "fallback_407_proof",
+      "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27"
+    },
+    {
+      "kind": "support",
+      "path": "ordinary_binomial_eventual_verification.json",
+      "relation": "fresh_byte_identical_existing_407_replay",
+      "role": "fallback_407_receipt",
+      "sha256": "612b989011943b54d7b6d372c39dbef6b284735b481d50413df43a3e500f0466"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md",
+      "relation": "logical_ONLY_sections5_8_local_cubic_proper_arms_Cauchy_NOT_large_thermal_theorem",
+      "role": "large_thermal_cubic_mechanism",
+      "sha256": "a9ca7dfb62b814d0637d1a56baac5084f951b479e8e64f9e5df5b36948d13c87"
+    },
+    {
+      "kind": "local",
+      "path": "COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md",
+      "relation": "written_complete_actual_period_proof",
+      "role": "main_proof",
+      "sha256": "0a4945c8a491c20a628db6e1fd37af555b70fa5e4b850d4202087c6bc5c4219f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-2-4-endpoint.html",
+      "relation": "classical_CFU_context_does_NOT_select_actual_cycle",
+      "role": "nist_CFU_context",
+      "sha256": "c90ac6736075b2d0851c48421da534e74d99ef2d1f33884024ef6297f1dc971f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+      "relation": "logical_Airy_ODE_uniqueness_simplicity",
+      "role": "nist_airy_ODE",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-7-endpoint.html",
+      "relation": "logical_classical_Ai_sector_9_7_5",
+      "role": "nist_airy_sector",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-9-endpoint.html",
+      "relation": "logical_classical_Ai_zero_location_9_9_i",
+      "role": "nist_airy_zeros",
+      "sha256": "7f5e538332164cf3103abb2374acc2619bfca1c765cd46e04fa738ec790d962b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "logical_input_OLD_UPPER_bound_only_no_lower_annulus",
+      "role": "old_gamma_upper",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "logical_Theorem2_3_inverse_existence_ONLY_Theorem2_4_circlelaw_context",
+      "role": "primary_kabluchko",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "relation": "logical_local_analytic_cubic_and_proper_arm_mechanisms_revalidated_here",
+      "role": "simple_turn_mechanism",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    },
+    {
+      "kind": "local",
+      "path": "compact_supercritical_ratio_universal_ledger.json",
+      "relation": "typed_universal_identity_and_scope_ledger",
+      "role": "universal_ledger",
+      "sha256": "c5e7c012e905b5762f7173599c4f25d6bbbd8bcffd95e3ff39d3b90873908b53"
+    }
+  ]
+}

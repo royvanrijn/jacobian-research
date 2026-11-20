@@ -1,0 +1,38 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md",
+      "relation": "written_complete_actual_cycle_argument",
+      "role": "main_proof",
+      "sha256": "ebf6489506e379f766728c199d821862ab02da3b034e9ffb428eb35a0bd925e5"
+    },
+    {
+      "kind": "local",
+      "path": "verify_unrestricted_small_ratio.py",
+      "relation": "exact_algebra_arithmetic_source_support",
+      "role": "exact_checker",
+      "sha256": "1b9c27e5d256357aa639315b0c6c0109c7bea32c328bf7b4a518b965e8f31d9a"
+    },
+    {
+      "kind": "local",
+      "path": "unrestricted_small_ratio_inputs.json",
+      "relation": "exact_typed_scope_and_controls",
+      "role": "exact_inputs",
+      "sha256": "1cad44ce9d59efe7d27631d6ec428a2e7289cb0eb58e19cc1c97602be6e244b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "relation": "logical_mathematical_premise_thm_sparse_only",
+      "role": "raw_old_sparse_theorem",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    }
+  ]
+}

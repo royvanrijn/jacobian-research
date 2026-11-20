@@ -1,0 +1,55 @@
+{
+  "actual_leading_actions_no_m_over_d_restriction": true,
+  "all_order_SFC": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "both_actual_endpoint_circle_capture_before_lambda_limit": true,
+  "compact_supercritical_ratio_proved": false,
+  "controls": {
+    "fixed_terminal_maximum": 64,
+    "intervals": [
+      [
+        "1/100",
+        "1/8"
+      ],
+      [
+        "1/16",
+        "1/5"
+      ],
+      [
+        "1/8",
+        "3/16"
+      ]
+    ],
+    "maximum_gap": 16,
+    "maximum_lower": 48,
+    "maximum_order": 4,
+    "series_coefficients": 16,
+    "tail_gaps": [
+      129,
+      257,
+      1025
+    ]
+  },
+  "effective_cutoff": false,
+  "entire_original_integer_integrands": true,
+  "exact_integer_partial_periods_not_model_circlelaw_transfer": true,
+  "fixed_d_fallback_405_strict_only": true,
+  "global_bad_triple_set_finite": false,
+  "heavy_finite_prefix_replay": false,
+  "kabluchko_2_4_is_off_circle_context_only": true,
+  "model_all_circle_two_simple_global_maxima_including_q1": true,
+  "old_high_gap_and_old_soft_only_for_regional_reverse": true,
+  "parameters": "integers a>=1,d>=2; fixed real 0<c_minus<=c_plus<1/4; c=a/(d-1)^2",
+  "regional_finite_bad_iff_uniform_cutoff_and_fields": true,
+  "reviewed_body_sha256": "fd1f3bd7680fc8d342b2fffe1676912d3f65d68aec8c89c38aacf2ba603cc014",
+  "same_cutoff_all_fields_and_coefficients": true,
+  "schema": 1,
+  "uniform_as_c_tends_zero_or_quarter": false,
+  "uniformity": "one non-effective terminal cutoff for every support in the fixed ratio interval",
+  "uses_401_404_407_411_412": false,
+  "zero_disc_gaussian_replaces_lower_annulus": true
+}

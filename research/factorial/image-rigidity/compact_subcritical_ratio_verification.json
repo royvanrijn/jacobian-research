@@ -1,0 +1,216 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "4b6171747a607da7dcd255a7930fa4fb74f5c7bae1fb14dd4400784d754bd624",
+  "counts": {
+    "abstract_endpoint_escape_controls": 138,
+    "actual_moment_controls": 944,
+    "actual_own_order_controls": 944,
+    "fixed_terminal_counts": 63,
+    "genuine_math_negative_controls": 3,
+    "old_gamma_upper_factor_controls": 11964,
+    "positive_hyperbolic_series_controls": 32,
+    "whole_original_tail_inequalities": 276
+  },
+  "fresh_narrow405_parent": {
+    "receipt_byte_identical": true,
+    "receipt_sha256": "41a952dbc205a954aee97acc317a77e0076e585f22e19dc02c6525312e203eea",
+    "source_roles": 6
+  },
+  "input_sha256": "99c76d61da371c8ad8795f2f5ec47012c2f3ae68b0551a70ecf2e53ff119eaa6",
+  "mandatory_source_roles": 13,
+  "meaning": "Written actual whole-tail/packet estimates supply compact-parameter uniformity. Finite algebra, arithmetic and current-source controls support that proof, not formal verification or an effective cutoff.",
+  "proof_sha256": "bc230f8206319e53ba84e43371407815b0a92a347e245aaa61633ce1a46aa2c5",
+  "schema": 1,
+  "scope": {
+    "actual_leading_actions_no_m_over_d_restriction": true,
+    "all_order_SFC": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false
+    },
+    "both_actual_endpoint_circle_capture_before_lambda_limit": true,
+    "compact_supercritical_ratio_proved": false,
+    "controls": {
+      "fixed_terminal_maximum": 64,
+      "intervals": [
+        [
+          "1/100",
+          "1/8"
+        ],
+        [
+          "1/16",
+          "1/5"
+        ],
+        [
+          "1/8",
+          "3/16"
+        ]
+      ],
+      "maximum_gap": 16,
+      "maximum_lower": 48,
+      "maximum_order": 4,
+      "series_coefficients": 16,
+      "tail_gaps": [
+        129,
+        257,
+        1025
+      ]
+    },
+    "effective_cutoff": false,
+    "entire_original_integer_integrands": true,
+    "exact_integer_partial_periods_not_model_circlelaw_transfer": true,
+    "fixed_d_fallback_405_strict_only": true,
+    "global_bad_triple_set_finite": false,
+    "heavy_finite_prefix_replay": false,
+    "kabluchko_2_4_is_off_circle_context_only": true,
+    "model_all_circle_two_simple_global_maxima_including_q1": true,
+    "old_high_gap_and_old_soft_only_for_regional_reverse": true,
+    "parameters": "integers a>=1,d>=2; fixed real 0<c_minus<=c_plus<1/4; c=a/(d-1)^2",
+    "regional_finite_bad_iff_uniform_cutoff_and_fields": true,
+    "reviewed_body_sha256": "fd1f3bd7680fc8d342b2fffe1676912d3f65d68aec8c89c38aacf2ba603cc014",
+    "same_cutoff_all_fields_and_coefficients": true,
+    "schema": 1,
+    "uniform_as_c_tends_zero_or_quarter": false,
+    "uniformity": "one non-effective terminal cutoff for every support in the fixed ratio interval",
+    "uses_401_404_407_411_412": false,
+    "zero_disc_gaussian_replaces_lower_annulus": true
+  },
+  "source_ledger_sha256": "b673752ffa242e5ae2a588d8124889dc7926eb2090958c3ea7b93d216009c0fc",
+  "source_scope_negative_controls": [
+    "omit:main_proof",
+    "badpin:main_proof",
+    "omit:exact_checker",
+    "badpin:exact_checker",
+    "omit:exact_inputs",
+    "badpin:exact_inputs",
+    "omit:parent_ledger",
+    "badpin:parent_ledger",
+    "omit:parent_receipt",
+    "badpin:parent_receipt",
+    "omit:raw_old_high_gap",
+    "badpin:raw_old_high_gap",
+    "omit:primary_kabluchko_context",
+    "badpin:primary_kabluchko_context",
+    "omit:parent_proof",
+    "badpin:parent_proof",
+    "omit:parent_checker",
+    "badpin:parent_checker",
+    "omit:parent_inputs",
+    "badpin:parent_inputs",
+    "omit:parent_two_thimble_proof",
+    "badpin:parent_two_thimble_proof",
+    "omit:parent_global_complement_proof",
+    "badpin:parent_global_complement_proof",
+    "omit:parent_retained_gamma_upper_bound",
+    "badpin:parent_retained_gamma_upper_bound",
+    "false-scope:uses_401_404_407_411_412",
+    "false-scope:uniform_as_c_tends_zero_or_quarter",
+    "false-scope:compact_supercritical_ratio_proved",
+    "false-scope:effective_cutoff",
+    "false-scope:all_order_SFC",
+    "false-scope:global_bad_triple_set_finite",
+    "false-scope:heavy_finite_prefix_replay",
+    "missing-scope:zero_disc_gaussian_replaces_lower_annulus",
+    "missing-scope:both_actual_endpoint_circle_capture_before_lambda_limit",
+    "missing-scope:regional_finite_bad_iff_uniform_cutoff_and_fields",
+    "missing-scope:actual_leading_actions_no_m_over_d_restriction",
+    "typed-schema",
+    "empty-ledger"
+  ],
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_compact_subcritical_ratio_uniform.py",
+      "role": "exact_checker",
+      "sha256": "4b6171747a607da7dcd255a7930fa4fb74f5c7bae1fb14dd4400784d754bd624"
+    },
+    {
+      "kind": "local",
+      "path": "compact_subcritical_ratio_inputs.json",
+      "role": "exact_inputs",
+      "sha256": "99c76d61da371c8ad8795f2f5ec47012c2f3ae68b0551a70ecf2e53ff119eaa6"
+    },
+    {
+      "kind": "local",
+      "path": "COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md",
+      "role": "main_proof",
+      "sha256": "bc230f8206319e53ba84e43371407815b0a92a347e245aaa61633ce1a46aa2c5"
+    },
+    {
+      "kind": "support",
+      "path": "verify_strict_subcritical_eventual_sfc.py",
+      "role": "parent_checker",
+      "sha256": "c0771e61f31e8710278e2827183dbfa20050817fd3e5b05bf715c4c24606df2d"
+    },
+    {
+      "kind": "support",
+      "path": "CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "role": "parent_global_complement_proof",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "support",
+      "path": "strict_subcritical_inputs.json",
+      "role": "parent_inputs",
+      "sha256": "c0ce9d7e31de8583af26adfed32e260b3bb2df41c30c1f0884fc1dd35eea0c88"
+    },
+    {
+      "kind": "support",
+      "path": "strict_subcritical_source_ledger.json",
+      "role": "parent_ledger",
+      "sha256": "91179cdd9807a5481369248b81fb906ccd2b6df96bbebe37570c0f160bb1056a"
+    },
+    {
+      "kind": "support",
+      "path": "SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md",
+      "role": "parent_proof",
+      "sha256": "3bcd961a7cbf63fe780f30580554118355f4f5252cf1d92992741881ece500e6"
+    },
+    {
+      "kind": "support",
+      "path": "strict_subcritical_verification.json",
+      "role": "parent_receipt",
+      "sha256": "41a952dbc205a954aee97acc317a77e0076e585f22e19dc02c6525312e203eea"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "parent_retained_gamma_upper_bound",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "support",
+      "path": "CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "parent_two_thimble_proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "role": "primary_kabluchko_context",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "role": "raw_old_high_gap",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    }
+  ],
+  "status": "PASS",
+  "universal_identities": [
+    "exact central linear cancellation",
+    "uniform tail scale lower bound decomposition",
+    "model stationary derivative numerator",
+    "horizontal curvature strictness decomposition",
+    "exact whole-tail numerator",
+    "stationary actual radial envelope",
+    "old Gamma upper factor comparison",
+    "Gaussian unitary-Hermite coefficient exponent"
+  ]
+}

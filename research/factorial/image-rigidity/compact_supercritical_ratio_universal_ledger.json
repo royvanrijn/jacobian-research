@@ -1,0 +1,55 @@
+{
+  "407_role": "ONLY finitely many bounded-d supports",
+  "Kabluchko_2_3_logical_inverse_existence": true,
+  "Kabluchko_2_4_and_circlelaw_context_only": true,
+  "actual_leading_actions_no_m_over_d_restriction": true,
+  "actual_zero_free_log_strip_and_complex_order_partials": true,
+  "all_order_SFC": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "both_actual_endpoint_capture_before_step_or_label_assumptions": true,
+  "bounded_fields_same_finite_Ai_label_and_derivative_free_comparison": true,
+  "controls": {
+    "intervals": [
+      [
+        "1/3",
+        "1"
+      ],
+      [
+        "1",
+        "4"
+      ],
+      [
+        "4",
+        "16"
+      ]
+    ],
+    "maximum_gap": 12,
+    "maximum_lower": 48,
+    "maximum_order": 4,
+    "positive_series_terms": 16,
+    "pythagorean_parameter_max_denominator": 12
+  },
+  "effective_cutoff": false,
+  "full_corollary": "one unevaluated terminal cutoff for every support on the fixed ratio interval",
+  "global_bad_triple_set_finite": false,
+  "heavy_finite_boundary_computation_rerun": false,
+  "large_gap_core": "there exist d0(I),N0(I); every d>=d0,N>=N0 on I is good",
+  "large_gap_core_independent_407": true,
+  "large_thermal_role": "ONLY local cubic/proper-arm/Cauchy construction with hypotheses reverified; NOT its sequential theorem",
+  "large_thermal_theorem_premise": false,
+  "model_circlelaw_to_Gamma_transfer": false,
+  "parameters": "integers a>=1,d>=2; fixed real 1/4<c_minus<=c_plus<infinity; c=a/(d-1)^2",
+  "primary_Kabluchko_v3_sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c",
+  "proper_cubic_shared_left_sheet_low_midpoint": true,
+  "raw_large_thermal_expected_sha256": "a9ca7dfb62b814d0637d1a56baac5084f951b479e8e64f9e5df5b36948d13c87",
+  "reviewed_main_expected_sha256": "0a4945c8a491c20a628db6e1fd37af555b70fa5e4b850d4202087c6bc5c4219f",
+  "right_single_Ai_class_NOT_Scorer": true,
+  "same_cutoff_all_nonzero_coefficients_and_characteristic_zero_fields": true,
+  "schema": 1,
+  "sharp_lower_annulus_premise": false,
+  "uniform_to_cusp_or_infinite_ratio": false
+}

@@ -1,0 +1,660 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "d625528abb755d8760144eec23fbf295e82160a931bfce64ec06a4bc46d3cc4f",
+  "complete_child_boundaries": [
+    {
+      "all_current": true,
+      "direct_child_sources": 13,
+      "tag": "quadratic"
+    },
+    {
+      "all_current": true,
+      "direct_child_sources": 4,
+      "tag": "small_ratio"
+    },
+    {
+      "all_current": true,
+      "direct_child_sources": 13,
+      "tag": "subcritical"
+    },
+    {
+      "all_current": true,
+      "direct_child_sources": 27,
+      "tag": "bounded_thermal"
+    },
+    {
+      "all_current": true,
+      "direct_child_sources": 23,
+      "tag": "large_thermal"
+    },
+    {
+      "all_current": true,
+      "direct_child_sources": 17,
+      "tag": "supercritical"
+    },
+    {
+      "direct_child_sources": 77,
+      "freshly_executed_by_G7": true,
+      "tag": "fixed_support407"
+    }
+  ],
+  "counts": {
+    "K4e24_quadratic_threshold_controls": 127,
+    "a0_Appell_vector_identities": 112,
+    "actual_moment_normalizations": 200,
+    "actual_projective_scaling_identities": 200,
+    "critical_strip_margin_controls": 90,
+    "explicit_G2_domain_controls": 1,
+    "finite_cover_controls": 220,
+    "generic_algebraic_projective_ratio_toy": 1,
+    "genuine_math_negative_controls": 2,
+    "raw_constant_uniform_tail_controls": 50,
+    "raw_fixed_terminal_support_counts": 63
+  },
+  "fixed_support_407_freshly_replayed_inside_G7": true,
+  "fresh_regional_replays": [
+    {
+      "receipt_byte_identical": true,
+      "receipt_sha256": "3bae7d6483722dbe3246d6254aded998fe139fa7e5150abe71c6cea65cc4ee22",
+      "tag": "quadratic"
+    },
+    {
+      "receipt_byte_identical": true,
+      "receipt_sha256": "e9bddbe742c58eae8e6a1d92009236d077ed629275097aeb4e1f36b35ffddf66",
+      "tag": "small_ratio"
+    },
+    {
+      "receipt_byte_identical": true,
+      "receipt_sha256": "1e03525e0698e7b15753db93f81f7d36afde975a74f2678cfd75d5c9b40bd0c4",
+      "tag": "subcritical"
+    },
+    {
+      "receipt_byte_identical": true,
+      "receipt_sha256": "5d568b4c81dbe604bc5a1de13c9ec7288520e45172d76fa0e74895345f864983",
+      "tag": "bounded_thermal"
+    },
+    {
+      "receipt_byte_identical": true,
+      "receipt_sha256": "fa2d35a4be51cfc3793137c28e74cc2389847d7e90dff2bc1178224dc26b1570",
+      "tag": "large_thermal"
+    },
+    {
+      "receipt_byte_identical": true,
+      "receipt_sha256": "c74a7dfbcb8085365f6837fd9bca5b1f7ecc474f9e0f7208cf59e6f9659892aa",
+      "tag": "supercritical"
+    }
+  ],
+  "input_sha256": "ed00af24bd383c7fd3e4f0bcee22fcc41c2c34c3ceb69f9ec9532de479c9efbb",
+  "logical_six_way_dependency_controls": [
+    "six-way seeded:BadFinite",
+    "six-way seeded:ComplexTail",
+    "six-way seeded:FieldTail",
+    "six-way seeded:ProjectiveFinite",
+    "six-way seeded:SupportFinite",
+    "six-way seeded:TailQ",
+    "no-cycle-bootstrap",
+    "407-required:ProjectiveFinite",
+    "407-required:SupportFinite",
+    "raw-fixedN-required-for-tail-to-B",
+    "raw-fixedN-suffices-without407",
+    "no-allorder-empty-effective:BadFinite",
+    "no-allorder-empty-effective:ComplexTail",
+    "no-allorder-empty-effective:FieldTail",
+    "no-allorder-empty-effective:ProjectiveFinite",
+    "no-allorder-empty-effective:SupportFinite",
+    "no-allorder-empty-effective:TailQ",
+    "abstract-fixedN-infinite-support-pattern",
+    "abstract-fixed-support-infinite-terminal-pattern",
+    "projective-versus-unscaled"
+  ],
+  "mandatory_source_roles": 48,
+  "meaning": "The whole written regional theorems and elementary finite cover prove uniform eventuality. Fresh source-closed replays authenticate the exact reused packets. Finite QQ/logic controls are supporting evidence, not a formal analytic proof, effective box, all-order theorem or proof that the finite bad set is empty.",
+  "proof_sha256": "2923c4c29f5e29dd02fb5f25d50e5167e6b9d71b1a66bf41d8e24453f7a1a722",
+  "schema": 1,
+  "scope": {
+    "G4_compact_subcritical_interval": "fixed real compact subset of (0,1/4)",
+    "G5_used_at_ONE_fixed_finite_U": true,
+    "G6_sequential_to_fixed_relative_strip": true,
+    "G7_Kabluchko_2_3_logical_and_407_bounded_gap_only": true,
+    "K": 4000000000000000000000000,
+    "QQ_tail_to_finite_B_requires_raw_fixed_terminal_input_NOT407": true,
+    "a0_92935_or9998_finite_certificate_import": false,
+    "a0_boundary_uses_RAW_analytic_large_and_primepower_proofs_ONLY": true,
+    "all_fast_regional_guards_replayed_fresh": true,
+    "all_nonzero_coefficients_and_characteristic_zero_fields": true,
+    "all_order_SFC": false,
+    "arbitrary_polynomial_supports": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false
+    },
+    "bad_support_projection_finite": true,
+    "constant_family_uniform_terminal": 10000,
+    "controls": {
+      "critical_deltas": [
+        "1/1000000000000",
+        "1/1000",
+        "1/10",
+        "1",
+        "10"
+      ],
+      "critical_denominators": [
+        1,
+        2,
+        3,
+        7,
+        19,
+        64
+      ],
+      "maximum_gap": 8,
+      "maximum_lower": 4,
+      "maximum_order": 5,
+      "root_t_samples": [
+        100,
+        101,
+        128,
+        150,
+        200
+      ],
+      "small_epsilons": [
+        "1/1000000",
+        "1/100",
+        "1",
+        "100"
+      ],
+      "terminal_count_maximum": 64
+    },
+    "critical_halfwidth": "h=min(1/8,delta/16)",
+    "effective_Nstar_or_containing_box": false,
+    "exceptional_projective_ratios_algebraic_over_Q": true,
+    "finite_projective_exceptional_phases": true,
+    "finite_support_or_projective_phases_to_finite_B_REQUIRES407": true,
+    "general_Gamma_shapes": false,
+    "global_analytic_estimates_newly_proved_by_finite_controls": false,
+    "global_bad_set_empty": false,
+    "global_bad_triple_set_finite": true,
+    "heavy_finite_boundary_runs_repeated": false,
+    "main_reviewed_sha256": "2923c4c29f5e29dd02fb5f25d50e5167e6b9d71b1a66bf41d8e24453f7a1a722",
+    "parameters": "integers a>=0,d>=1,N>=2; c=a/(d-1)^2 ONLY when a>=1,d>=2",
+    "quadratic_G2_domain": "a>=10^24*d^2,d>=2,N>=2",
+    "rational_Bezout_no_arbitrary_field_embedding": true,
+    "replication_of_one_bad_triple": false,
+    "schema": 1,
+    "six_way_equivalence_under_declared_inputs": true,
+    "small_cut": "epsilon=min(epsilon_small,1/16)",
+    "small_ratio_G3_requires_RAW_old_sparse": true,
+    "theorem": "one unevaluated integer Nstar for ALL ordinary supports and every N>=Nstar",
+    "unscaled_coefficient_pairs_finite": false
+  },
+  "source_ledger_sha256": "eedc1be55b7c10bae9fe9eca4d177ef9973131d7d14cd9b33cf1a7cc26fb828c",
+  "source_scope_negative_controls": [
+    "omit:main_proof",
+    "badpin:main_proof",
+    "omit:exact_checker",
+    "badpin:exact_checker",
+    "omit:exact_inputs",
+    "badpin:exact_inputs",
+    "omit:quadratic_proof",
+    "badpin:quadratic_proof",
+    "omit:quadratic_checker",
+    "badpin:quadratic_checker",
+    "omit:quadratic_inputs",
+    "badpin:quadratic_inputs",
+    "omit:quadratic_ledger",
+    "badpin:quadratic_ledger",
+    "omit:quadratic_receipt",
+    "badpin:quadratic_receipt",
+    "omit:small_ratio_proof",
+    "badpin:small_ratio_proof",
+    "omit:small_ratio_checker",
+    "badpin:small_ratio_checker",
+    "omit:small_ratio_inputs",
+    "badpin:small_ratio_inputs",
+    "omit:small_ratio_ledger",
+    "badpin:small_ratio_ledger",
+    "omit:small_ratio_receipt",
+    "badpin:small_ratio_receipt",
+    "omit:subcritical_proof",
+    "badpin:subcritical_proof",
+    "omit:subcritical_checker",
+    "badpin:subcritical_checker",
+    "omit:subcritical_inputs",
+    "badpin:subcritical_inputs",
+    "omit:subcritical_ledger",
+    "badpin:subcritical_ledger",
+    "omit:subcritical_receipt",
+    "badpin:subcritical_receipt",
+    "omit:bounded_thermal_proof",
+    "badpin:bounded_thermal_proof",
+    "omit:bounded_thermal_checker",
+    "badpin:bounded_thermal_checker",
+    "omit:bounded_thermal_inputs",
+    "badpin:bounded_thermal_inputs",
+    "omit:bounded_thermal_ledger",
+    "badpin:bounded_thermal_ledger",
+    "omit:bounded_thermal_receipt",
+    "badpin:bounded_thermal_receipt",
+    "omit:large_thermal_proof",
+    "badpin:large_thermal_proof",
+    "omit:large_thermal_checker",
+    "badpin:large_thermal_checker",
+    "omit:large_thermal_inputs",
+    "badpin:large_thermal_inputs",
+    "omit:large_thermal_ledger",
+    "badpin:large_thermal_ledger",
+    "omit:large_thermal_receipt",
+    "badpin:large_thermal_receipt",
+    "omit:supercritical_proof",
+    "badpin:supercritical_proof",
+    "omit:supercritical_checker",
+    "badpin:supercritical_checker",
+    "omit:supercritical_inputs",
+    "badpin:supercritical_inputs",
+    "omit:supercritical_ledger",
+    "badpin:supercritical_ledger",
+    "omit:supercritical_receipt",
+    "badpin:supercritical_receipt",
+    "omit:large_thermal_context",
+    "badpin:large_thermal_context",
+    "omit:large_thermal_primary_framework",
+    "badpin:large_thermal_primary_framework",
+    "omit:raw_adjacent",
+    "badpin:raw_adjacent",
+    "omit:raw_primepowers",
+    "badpin:raw_primepowers",
+    "omit:raw_constant_analytic",
+    "badpin:raw_constant_analytic",
+    "omit:raw_constant_large",
+    "badpin:raw_constant_large",
+    "omit:raw_six_entropy",
+    "badpin:raw_six_entropy",
+    "omit:raw_terminal_highgap",
+    "badpin:raw_terminal_highgap",
+    "omit:raw_Gamma_soft",
+    "badpin:raw_Gamma_soft",
+    "omit:exact_polynomial_kernel",
+    "badpin:exact_polynomial_kernel",
+    "omit:fixed_support_407_proof",
+    "badpin:fixed_support_407_proof",
+    "omit:fixed_support_407_checker",
+    "badpin:fixed_support_407_checker",
+    "omit:fixed_support_407_inputs",
+    "badpin:fixed_support_407_inputs",
+    "omit:fixed_support_407_ledger",
+    "badpin:fixed_support_407_ledger",
+    "omit:fixed_support_407_receipt",
+    "badpin:fixed_support_407_receipt",
+    "false-scope:a0_92935_or9998_finite_certificate_import",
+    "false-scope:unscaled_coefficient_pairs_finite",
+    "false-scope:all_order_SFC",
+    "false-scope:global_bad_set_empty",
+    "false-scope:effective_Nstar_or_containing_box",
+    "false-scope:replication_of_one_bad_triple",
+    "false-scope:arbitrary_polynomial_supports",
+    "false-scope:general_Gamma_shapes",
+    "false-scope:global_analytic_estimates_newly_proved_by_finite_controls",
+    "false-scope:heavy_finite_boundary_runs_repeated",
+    "missing-scope:all_nonzero_coefficients_and_characteristic_zero_fields",
+    "missing-scope:G5_used_at_ONE_fixed_finite_U",
+    "missing-scope:G6_sequential_to_fixed_relative_strip",
+    "missing-scope:global_bad_triple_set_finite",
+    "missing-scope:finite_projective_exceptional_phases",
+    "missing-scope:bad_support_projection_finite",
+    "missing-scope:six_way_equivalence_under_declared_inputs",
+    "missing-scope:QQ_tail_to_finite_B_requires_raw_fixed_terminal_input_NOT407",
+    "missing-scope:finite_support_or_projective_phases_to_finite_B_REQUIRES407",
+    "wrong-constant-or-domain:K",
+    "wrong-constant-or-domain:quadratic_G2_domain",
+    "wrong-constant-or-domain:parameters",
+    "typed-schema",
+    "empty-source-ledger"
+  ],
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_bounded_thermal_transition.py",
+      "relation": "fresh_scoped_regional_evidence_bounded_thermal",
+      "role": "bounded_thermal_checker",
+      "sha256": "2cd4e530a9f410124a51a2f5382b7d7cbf01ba2c4cba2762bdacd14d66d3c418"
+    },
+    {
+      "kind": "local",
+      "path": "bounded_thermal_transition_inputs.json",
+      "relation": "fresh_scoped_regional_evidence_bounded_thermal",
+      "role": "bounded_thermal_inputs",
+      "sha256": "92b351fac6b3d097270187965f6afe20fc9cf015d9123f8df9fb13b80de2a915"
+    },
+    {
+      "kind": "local",
+      "path": "bounded_thermal_transition_source_ledger.json",
+      "relation": "fresh_scoped_regional_evidence_bounded_thermal",
+      "role": "bounded_thermal_ledger",
+      "sha256": "84d06c4e7ef2a6c0f7c2c6dee0f9018e0fc9f7f1bc003b88e43f87f6055a1eaa"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_BOUNDED_THERMAL_TRANSITION_EVENTUAL_SFC.md",
+      "relation": "logical_regional_theorem_bounded_thermal",
+      "role": "bounded_thermal_proof",
+      "sha256": "83a48e4da05099917114b51cf3bb6fc8ac686c5f42c936efbdc3d028a3cb7e93"
+    },
+    {
+      "kind": "local",
+      "path": "bounded_thermal_transition_verification.json",
+      "relation": "fresh_scoped_regional_evidence_bounded_thermal",
+      "role": "bounded_thermal_receipt",
+      "sha256": "5d568b4c81dbe604bc5a1de13c9ec7288520e45172d76fa0e74895345f864983"
+    },
+    {
+      "kind": "local",
+      "path": "verify_support_uniform_ordinary_completion.py",
+      "relation": "exact_algebra_logical_and_source_support",
+      "role": "exact_checker",
+      "sha256": "d625528abb755d8760144eec23fbf295e82160a931bfce64ec06a4bc46d3cc4f"
+    },
+    {
+      "kind": "local",
+      "path": "support_uniform_ordinary_completion_inputs.json",
+      "relation": "typed_scope_and_universal_cover_ledger",
+      "role": "exact_inputs",
+      "sha256": "ed00af24bd383c7fd3e4f0bcee22fcc41c2c34c3ceb69f9ec9532de479c9efbb"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_strict_subcritical_eventual_sfc.py",
+      "relation": "CODE_ONLY_sparse_rational_polynomial_kernel",
+      "role": "exact_polynomial_kernel",
+      "sha256": "c0771e61f31e8710278e2827183dbfa20050817fd3e5b05bf715c4c24606df2d"
+    },
+    {
+      "kind": "local",
+      "path": "verify_ordinary_binomial_eventual_completion.py",
+      "relation": "source_407_already_freshly_replayed_inside_G7",
+      "role": "fixed_support_407_checker",
+      "sha256": "112b25e3a87fd8502e55e9b220c6413d28f513dec90d8ea7f4d73a317804f348"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_inputs.json",
+      "relation": "source_407_already_freshly_replayed_inside_G7",
+      "role": "fixed_support_407_inputs",
+      "sha256": "ca5355a732f5cd718cdfc6460a41d6895c14fc72edf4a952464671047c258c3a"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_source_ledger.json",
+      "relation": "source_407_already_freshly_replayed_inside_G7",
+      "role": "fixed_support_407_ledger",
+      "sha256": "78bdc6094a425aa2b8642ad17bc39576ac37572280e935a719702b0248ab102e"
+    },
+    {
+      "kind": "local",
+      "path": "ALL_ORDINARY_BINOMIAL_EVENTUAL_STRONG_FACTORIAL.md",
+      "relation": "LOGICAL_407_ONLY_finite_support_reverse_and_G7_bounded_gap_fallback",
+      "role": "fixed_support_407_proof",
+      "sha256": "d87da237dd716c3e207e4fbd155112d1650d9dc58e2e2fcfc582a1066a91ef27"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_verification.json",
+      "relation": "source_407_already_freshly_replayed_inside_G7",
+      "role": "fixed_support_407_receipt",
+      "sha256": "612b989011943b54d7b6d372c39dbef6b284735b481d50413df43a3e500f0466"
+    },
+    {
+      "kind": "local",
+      "path": "verify_large_thermal_quartic_fold_matching.py",
+      "relation": "fresh_scoped_regional_evidence_large_thermal",
+      "role": "large_thermal_checker",
+      "sha256": "bbe51ac5537be9e6c98b6a983b71f5a16acc3bf9e5cacf2344042ae738d42549"
+    },
+    {
+      "kind": "local",
+      "path": "LARGE_THERMAL_PRIMARY_CONTEXT.md",
+      "relation": "declared_large_thermal_primary_context_only",
+      "role": "large_thermal_context",
+      "sha256": "57b154c5dbd87856d8eabadc18fcaee3ceaee0be497f5526c47ae0323ac186cc"
+    },
+    {
+      "kind": "local",
+      "path": "large_thermal_quartic_fold_inputs.json",
+      "relation": "fresh_scoped_regional_evidence_large_thermal",
+      "role": "large_thermal_inputs",
+      "sha256": "ab4f9308696882c5cf5293cdc05fe97d09376d366f63fd27cfc2e343cd669a2a"
+    },
+    {
+      "kind": "local",
+      "path": "large_thermal_quartic_fold_source_ledger.json",
+      "relation": "fresh_scoped_regional_evidence_large_thermal",
+      "role": "large_thermal_ledger",
+      "sha256": "f84bb22cbde0b12eb10ebbd3821f7a357e00f42e3dc6a33adf34035b9714e9eb"
+    },
+    {
+      "kind": "local",
+      "path": "sources/dlmf-36-12-large-thermal.html",
+      "relation": "declared_large_thermal_primary_context_only",
+      "role": "large_thermal_primary_framework",
+      "sha256": "b10bf13a639a0673f559713a1dff703d67ab3ff1d1e2fc81cba58148628d78ff"
+    },
+    {
+      "kind": "local",
+      "path": "LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md",
+      "relation": "logical_regional_theorem_large_thermal",
+      "role": "large_thermal_proof",
+      "sha256": "a9ca7dfb62b814d0637d1a56baac5084f951b479e8e64f9e5df5b36948d13c87"
+    },
+    {
+      "kind": "local",
+      "path": "large_thermal_quartic_fold_verification.json",
+      "relation": "fresh_scoped_regional_evidence_large_thermal",
+      "role": "large_thermal_receipt",
+      "sha256": "fa2d35a4be51cfc3793137c28e74cc2389847d7e90dff2bc1178224dc26b1570"
+    },
+    {
+      "kind": "local",
+      "path": "SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SYNTHESIS.md",
+      "relation": "written_finite_cover_and_six_way_scope_argument",
+      "role": "main_proof",
+      "sha256": "2923c4c29f5e29dd02fb5f25d50e5167e6b9d71b1a66bf41d8e24453f7a1a722"
+    },
+    {
+      "kind": "local",
+      "path": "verify_uniform_quadratic_strong_factorial_completion.py",
+      "relation": "fresh_scoped_regional_evidence_quadratic",
+      "role": "quadratic_checker",
+      "sha256": "68ddabfd88f71c9bdf1b1f91fa556d171b09d319dc5637169c5f943000884215"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_quadratic_strong_factorial_completion_inputs.json",
+      "relation": "fresh_scoped_regional_evidence_quadratic",
+      "role": "quadratic_inputs",
+      "sha256": "c7daea01d23171451c898bb4e86f1e64170ddb0744f18db846d12f05166da2fe"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_quadratic_strong_factorial_completion_source_ledger.json",
+      "relation": "fresh_scoped_regional_evidence_quadratic",
+      "role": "quadratic_ledger",
+      "sha256": "27019c6e286efb8d79ce56068c31c73c75407caadc333e1ec377a2ad52f713a9"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md",
+      "relation": "logical_regional_theorem_quadratic",
+      "role": "quadratic_proof",
+      "sha256": "7e443fc6cd6743fc6885d4de047de0a43f5547526d40b872fa39fc2471d72d5a"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_quadratic_strong_factorial_completion_verification.json",
+      "relation": "fresh_scoped_regional_evidence_quadratic",
+      "role": "quadratic_receipt",
+      "sha256": "3bae7d6483722dbe3246d6254aded998fe139fa7e5150abe71c6cea65cc4ee22"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "LOGICAL_old_soft_fixed_terminal_support_finiteness_ONLY",
+      "role": "raw_Gamma_soft",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "relation": "LOGICAL_thm_main_ordinary_d1_ONLY",
+      "role": "raw_adjacent",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "relation": "LOGICAL_thm_analytic_Nge10000_6ledlesqrtN_ONLY_NO_finite_prefix",
+      "role": "raw_constant_analytic",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+      "relation": "LOGICAL_thm_large_2powerdge4Nsquared_ONLY",
+      "role": "raw_constant_large",
+      "sha256": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+      "relation": "LOGICAL_thm_sfc_alpha1_d2_3_4_5_ONLY",
+      "role": "raw_primepowers",
+      "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex",
+      "relation": "AUTHENTICATED_analytic_credit_source_closure_NOT_separate_theorem_NO_finite_prefix",
+      "role": "raw_six_entropy",
+      "sha256": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "relation": "LOGICAL_thm_gapbound_fixed_terminal_support_finiteness_ONLY",
+      "role": "raw_terminal_highgap",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "local",
+      "path": "verify_unrestricted_small_ratio.py",
+      "relation": "fresh_scoped_regional_evidence_small_ratio",
+      "role": "small_ratio_checker",
+      "sha256": "1b9c27e5d256357aa639315b0c6c0109c7bea32c328bf7b4a518b965e8f31d9a"
+    },
+    {
+      "kind": "local",
+      "path": "unrestricted_small_ratio_inputs.json",
+      "relation": "fresh_scoped_regional_evidence_small_ratio",
+      "role": "small_ratio_inputs",
+      "sha256": "1cad44ce9d59efe7d27631d6ec428a2e7289cb0eb58e19cc1c97602be6e244b9"
+    },
+    {
+      "kind": "local",
+      "path": "unrestricted_small_ratio_source_ledger.json",
+      "relation": "fresh_scoped_regional_evidence_small_ratio",
+      "role": "small_ratio_ledger",
+      "sha256": "e1877345aee67d9c04f60fdf92a924b097627880d2f20d822d2bda0438ab5f1e"
+    },
+    {
+      "kind": "local",
+      "path": "UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md",
+      "relation": "logical_regional_theorem_small_ratio",
+      "role": "small_ratio_proof",
+      "sha256": "ebf6489506e379f766728c199d821862ab02da3b034e9ffb428eb35a0bd925e5"
+    },
+    {
+      "kind": "local",
+      "path": "unrestricted_small_ratio_verification.json",
+      "relation": "fresh_scoped_regional_evidence_small_ratio",
+      "role": "small_ratio_receipt",
+      "sha256": "e9bddbe742c58eae8e6a1d92009236d077ed629275097aeb4e1f36b35ffddf66"
+    },
+    {
+      "kind": "local",
+      "path": "verify_compact_subcritical_ratio_uniform.py",
+      "relation": "fresh_scoped_regional_evidence_subcritical",
+      "role": "subcritical_checker",
+      "sha256": "4b6171747a607da7dcd255a7930fa4fb74f5c7bae1fb14dd4400784d754bd624"
+    },
+    {
+      "kind": "local",
+      "path": "compact_subcritical_ratio_inputs.json",
+      "relation": "fresh_scoped_regional_evidence_subcritical",
+      "role": "subcritical_inputs",
+      "sha256": "99c76d61da371c8ad8795f2f5ec47012c2f3ae68b0551a70ecf2e53ff119eaa6"
+    },
+    {
+      "kind": "local",
+      "path": "compact_subcritical_ratio_source_ledger.json",
+      "relation": "fresh_scoped_regional_evidence_subcritical",
+      "role": "subcritical_ledger",
+      "sha256": "b673752ffa242e5ae2a588d8124889dc7926eb2090958c3ea7b93d216009c0fc"
+    },
+    {
+      "kind": "local",
+      "path": "COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md",
+      "relation": "logical_regional_theorem_subcritical",
+      "role": "subcritical_proof",
+      "sha256": "bc230f8206319e53ba84e43371407815b0a92a347e245aaa61633ce1a46aa2c5"
+    },
+    {
+      "kind": "local",
+      "path": "compact_subcritical_ratio_verification.json",
+      "relation": "fresh_scoped_regional_evidence_subcritical",
+      "role": "subcritical_receipt",
+      "sha256": "1e03525e0698e7b15753db93f81f7d36afde975a74f2678cfd75d5c9b40bd0c4"
+    },
+    {
+      "kind": "local",
+      "path": "verify_compact_supercritical_ratio_uniform.py",
+      "relation": "fresh_scoped_regional_evidence_supercritical",
+      "role": "supercritical_checker",
+      "sha256": "6a6cbb02ea4dfa9804b2b2cf7de73128caa0cf5320f38a75b3b999e6365f81a3"
+    },
+    {
+      "kind": "local",
+      "path": "compact_supercritical_ratio_universal_ledger.json",
+      "relation": "fresh_scoped_regional_evidence_supercritical",
+      "role": "supercritical_inputs",
+      "sha256": "c5e7c012e905b5762f7173599c4f25d6bbbd8bcffd95e3ff39d3b90873908b53"
+    },
+    {
+      "kind": "local",
+      "path": "compact_supercritical_ratio_source_manifest.json",
+      "relation": "fresh_scoped_regional_evidence_supercritical",
+      "role": "supercritical_ledger",
+      "sha256": "a07888f310204db0e95f81b9a8b5ed2f65850c48519abb523e454960782b6942"
+    },
+    {
+      "kind": "local",
+      "path": "COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md",
+      "relation": "logical_regional_theorem_supercritical",
+      "role": "supercritical_proof",
+      "sha256": "0a4945c8a491c20a628db6e1fd37af555b70fa5e4b850d4202087c6bc5c4219f"
+    },
+    {
+      "kind": "local",
+      "path": "compact_supercritical_ratio_verification.json",
+      "relation": "fresh_scoped_regional_evidence_supercritical",
+      "role": "supercritical_receipt",
+      "sha256": "c74a7dfbcb8085365f6837fd9bca5b1f7ecc474f9e0f7208cf59e6f9659892aa"
+    }
+  ],
+  "status": "PASS",
+  "universal_cover_identities": [
+    "exact_thermal_ratio_identity",
+    "K4e24_threshold_factorization"
+  ]
+}

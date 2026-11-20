@@ -1,0 +1,171 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md",
+      "relation": "written_actual_complete_cycle_argument",
+      "role": "main_proof",
+      "sha256": "a9ca7dfb62b814d0637d1a56baac5084f951b479e8e64f9e5df5b36948d13c87"
+    },
+    {
+      "kind": "local",
+      "path": "verify_large_thermal_quartic_fold_matching.py",
+      "relation": "exact_and_source_support",
+      "role": "exact_checker",
+      "sha256": "bbe51ac5537be9e6c98b6a983b71f5a16acc3bf9e5cacf2344042ae738d42549"
+    },
+    {
+      "kind": "local",
+      "path": "large_thermal_quartic_fold_inputs.json",
+      "relation": "exact_typed_fixture_and_scope",
+      "role": "exact_inputs",
+      "sha256": "ab4f9308696882c5cf5293cdc05fe97d09376d366f63fd27cfc2e343cd669a2a"
+    },
+    {
+      "kind": "local",
+      "path": "LARGE_THERMAL_PRIMARY_CONTEXT.md",
+      "relation": "primary_scope_audit",
+      "role": "primary_context",
+      "sha256": "57b154c5dbd87856d8eabadc18fcaee3ceaee0be497f5526c47ae0323ac186cc"
+    },
+    {
+      "kind": "local",
+      "path": "sources/dlmf-36-12-large-thermal.html",
+      "relation": "classical_framework_context_only",
+      "role": "dlmf_cubic_framework",
+      "sha256": "b10bf13a639a0673f559713a1dff703d67ab3ff1d1e2fc81cba58148628d78ff"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_BOUNDED_THERMAL_TRANSITION_EVENTUAL_SFC.md",
+      "relation": "small_T_and_global_capture_mechanisms_and_separate_strip_consequence",
+      "role": "thermal_parent_proof",
+      "sha256": "83a48e4da05099917114b51cf3bb6fc8ac686c5f42c936efbdc3d028a3cb7e93"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_bounded_thermal_transition.py",
+      "relation": "fresh_parent_exact_and_source_support",
+      "role": "thermal_parent_checker",
+      "sha256": "2cd4e530a9f410124a51a2f5382b7d7cbf01ba2c4cba2762bdacd14d66d3c418"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/bounded_thermal_transition_inputs.json",
+      "relation": "exact_parent_input_boundary",
+      "role": "thermal_parent_inputs",
+      "sha256": "92b351fac6b3d097270187965f6afe20fc9cf015d9123f8df9fb13b80de2a915"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/bounded_thermal_transition_source_ledger.json",
+      "relation": "complete_parent_source_boundary",
+      "role": "thermal_parent_ledger",
+      "sha256": "84d06c4e7ef2a6c0f7c2c6dee0f9018e0fc9f7f1bc003b88e43f87f6055a1eaa"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/bounded_thermal_transition_verification.json",
+      "relation": "byte_identical_fresh_parent_receipt",
+      "role": "thermal_parent_receipt",
+      "sha256": "5d568b4c81dbe604bc5a1de13c9ec7288520e45172d76fa0e74895345f864983"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_uniform_cusp_eventual.py",
+      "relation": "exact_QQ_rational_function_kernel_only",
+      "role": "exact_rational_kernel",
+      "sha256": "d0922179140dda4c43d73530fe741704ab67144ebf8c5465c566883184f65c85"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "relation": "analytic_local_normal_form_and_proper_arms_revalidated_here",
+      "role": "actual_simple_turn_mechanism",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+      "relation": "classical_model_ODE_and_uniqueness_only",
+      "role": "dlmf_airy_ode",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-7-endpoint.html",
+      "relation": "classical_model_Ai_sector_leading_coefficient_only",
+      "role": "dlmf_airy_sector",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-9-endpoint.html",
+      "relation": "classical_model_Ai_negative_real_zero_location_only",
+      "role": "dlmf_airy_zeros",
+      "sha256": "7f5e538332164cf3103abb2374acc2619bfca1c765cd46e04fa738ec790d962b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-2-4-endpoint.html",
+      "relation": "classical_framework_context_allows_Ai_or_Scorer",
+      "role": "dlmf_cfu_framework",
+      "sha256": "c90ac6736075b2d0851c48421da534e74d99ef2d1f33884024ef6297f1dc971f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "parent_classical_CW_context_only_not_actual_fold",
+      "role": "primary_kabluchko",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "relation": "model_location_for_separate_bounded_parent_only",
+      "role": "primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "actual_compact_phase_and_complete_tails_revalidated",
+      "role": "compact_402_tails",
+      "sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md",
+      "relation": "uniform_actual_root_annulus_for_global_capture",
+      "role": "global_annulus_404",
+      "sha256": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_CUSP_CURIE_WEISS_REGULAR_COMPLEMENT.md",
+      "relation": "actual_regular_model_geometry_revalidated_for_r_tending_zero",
+      "role": "uniform_regular_capture",
+      "sha256": "8b64926a462956eb4d1b60cdbb8246ae92c85a0614136bf1f6a2e251041d31f8"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_GROWING_QUARTIC_CUSP_NEIGHBORHOOD.md",
+      "relation": "small_temperature_quartic_packet_mechanism_revalidated",
+      "role": "uniform_small_T_packets",
+      "sha256": "e9b23ad408aa1d0933d55d07b0126a801a79dc2623a28900a310c156e77543ca"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "old_soft_lower_endpoint_local_catch_only",
+      "role": "old_Gamma_catch",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    }
+  ]
+}

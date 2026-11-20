@@ -1,0 +1,40 @@
+{
+  "actual_critical_powers_retained": true,
+  "actual_lower_fold_cycle": "one nonzero right-exit Ai cycle",
+  "all_characteristic_zero_fields_and_coefficients": true,
+  "all_order_SFC": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "bounded_fold_uses_same_two_term_coefficients": true,
+  "canonical_zeta_omega_at_limit": "-i",
+  "complex_m_uses_consistent_actual_logs": true,
+  "controls": {
+    "comparison_maximum": 40,
+    "comparison_minimum": 8,
+    "cone_grid": 12,
+    "detunings": [
+      -1,
+      1
+    ],
+    "moment_max": 4,
+    "support_s_max": 9
+  },
+  "effective_width_or_cutoff": false,
+  "endpoint_capture_precedes_small_adjacent_step": true,
+  "finite_checks_certify_uniform_estimates": false,
+  "integer_parameters": "a>=1,d>=2,N>=2",
+  "nearcritical_strip_consequence": "one unevaluated fixed relative strip and uniform eventual cutoff, using separate bounded-thermal parent at one U0",
+  "nonzero_detuning_lattice": "abs(e)>=1/4",
+  "original_horizontal_midpoint_supplies_cubic_loss": false,
+  "quantified_large_thermal_region": "exists unevaluated delta0>0,U0,N0 excluding 0<abs(r)<delta0 and sqrt(N)*abs(r)>U0 for N>=N0",
+  "remainder_differentiated_without_Cauchy": false,
+  "schema": 1,
+  "sequential_theorem": "no actual common-root sequence with N->infinity, 0<abs(r)->0 and sqrt(N)*abs(r)->infinity",
+  "shared_midpoint": "negative-real inverse sheet, canonical loss 4*rho^3/3",
+  "support_global_uniform_cutoff": false,
+  "upper_high_saddle_automatically_active": false,
+  "uses_407_or_411": false
+}

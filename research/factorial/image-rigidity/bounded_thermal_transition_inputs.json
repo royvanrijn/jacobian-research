@@ -1,0 +1,49 @@
+{
+  "actual_actions_used_no_m_over_s_smallness": true,
+  "actual_complex_temperature_frozen_real": false,
+  "all_U_cutoffs_iff_distinct_bad_sequences_thermal_escape": true,
+  "all_d_covered": true,
+  "all_order_SFC": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "bounded_field_uses_integrality_not_zero_labels": true,
+  "controls": {
+    "fixed_terminal_maximum": 64,
+    "lattice_fourth_roots": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "maximum_gap": 12,
+    "maximum_lower": 40,
+    "moment_maximum": 4,
+    "thermal_bounds": [
+      "1",
+      "2",
+      "5"
+    ]
+  },
+  "effective_cutoff": false,
+  "global_bad_triple_set_finite": false,
+  "growing_error": "1/N + rho/k + U/k^(3/2) + 1/k^2",
+  "leading_amplitude_T_over_rho_cubed_term_retained": true,
+  "model_zero_simplicity_or_HJN_needed": false,
+  "nonzero_e_lattice_lower_bound": "1/4",
+  "old_a0_a1_full_finite_prefix_premise": false,
+  "parameters": "integers a>=1,d>=2,N>=2; s=(d-1)/2 may be half-integral",
+  "raw_old_fixed_terminal_complements_only_for_reverse": true,
+  "real_temperature_model_location_only": true,
+  "regional_bad_set_finite_iff_uniform_tube_cutoff": true,
+  "reviewed_T_body_sha256": "b47c3b457d2fe296442936e5e4fa9645386542c865305aa84a826fb0fa0e1958",
+  "same_cutoff_all_fields_and_coefficients": true,
+  "schema": 1,
+  "thermal_T_held_fixed_on_support_fixed_complex_m_collars": true,
+  "thermal_tube": "for each finite U>=0 one N0(U) works for sqrt(N)*abs(a-s^2)/(a+s)<=U",
+  "unbounded_thermal_matching_solved": false,
+  "uses_407_or_411": false
+}

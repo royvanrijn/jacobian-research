@@ -1,0 +1,360 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "2cd4e530a9f410124a51a2f5382b7d7cbf01ba2c4cba2762bdacd14d66d3c418",
+  "counts": {
+    "actual_moment_normalizations": 1760,
+    "actual_own_order_transport_controls": 1760,
+    "genuine_math_negative_controls": 3,
+    "logical_diagonal_countermodel_controls": 69,
+    "ordinary_lattice_and_squared_drop_controls": 991,
+    "raw_fixed_terminal_support_counts": 63
+  },
+  "fresh_uniform_parent": {
+    "receipt_byte_identical": true,
+    "receipt_sha256": "6cad24b950512dc437a0c648edd01e07bb3d649631771b1f99987072f01c65dd",
+    "source_roles": 21
+  },
+  "input_sha256": "92b351fac6b3d097270187965f6afe20fc9cf015d9123f8df9fb13b80de2a915",
+  "mandatory_source_roles": 27,
+  "meaning": "The complete written detuned-cycle and packet proof supplies uniformity. Exact/source controls support jets, scalings, discrete and logical boundaries, not a finite-prefix inference or formal verification.",
+  "proof_sha256": "83a48e4da05099917114b51cf3bb6fc8ac686c5f42c936efbdc3d028a3cb7e93",
+  "schema": 1,
+  "scope": {
+    "actual_actions_used_no_m_over_s_smallness": true,
+    "actual_complex_temperature_frozen_real": false,
+    "all_U_cutoffs_iff_distinct_bad_sequences_thermal_escape": true,
+    "all_d_covered": true,
+    "all_order_SFC": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false
+    },
+    "bounded_field_uses_integrality_not_zero_labels": true,
+    "controls": {
+      "fixed_terminal_maximum": 64,
+      "lattice_fourth_roots": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "maximum_gap": 12,
+      "maximum_lower": 40,
+      "moment_maximum": 4,
+      "thermal_bounds": [
+        "1",
+        "2",
+        "5"
+      ]
+    },
+    "effective_cutoff": false,
+    "global_bad_triple_set_finite": false,
+    "growing_error": "1/N + rho/k + U/k^(3/2) + 1/k^2",
+    "leading_amplitude_T_over_rho_cubed_term_retained": true,
+    "model_zero_simplicity_or_HJN_needed": false,
+    "nonzero_e_lattice_lower_bound": "1/4",
+    "old_a0_a1_full_finite_prefix_premise": false,
+    "parameters": "integers a>=1,d>=2,N>=2; s=(d-1)/2 may be half-integral",
+    "raw_old_fixed_terminal_complements_only_for_reverse": true,
+    "real_temperature_model_location_only": true,
+    "regional_bad_set_finite_iff_uniform_tube_cutoff": true,
+    "reviewed_T_body_sha256": "b47c3b457d2fe296442936e5e4fa9645386542c865305aa84a826fb0fa0e1958",
+    "same_cutoff_all_fields_and_coefficients": true,
+    "schema": 1,
+    "thermal_T_held_fixed_on_support_fixed_complex_m_collars": true,
+    "thermal_tube": "for each finite U>=0 one N0(U) works for sqrt(N)*abs(a-s^2)/(a+s)<=U",
+    "unbounded_thermal_matching_solved": false,
+    "uses_407_or_411": false
+  },
+  "source_ledger_sha256": "84d06c4e7ef2a6c0f7c2c6dee0f9018e0fc9f7f1bc003b88e43f87f6055a1eaa",
+  "source_scope_negative_controls": [
+    "omit:main_proof",
+    "badpin:main_proof",
+    "omit:exact_checker",
+    "badpin:exact_checker",
+    "omit:exact_inputs",
+    "badpin:exact_inputs",
+    "omit:uniform_parent_ledger",
+    "badpin:uniform_parent_ledger",
+    "omit:uniform_parent_receipt",
+    "badpin:uniform_parent_receipt",
+    "omit:old_fixed_terminal_high_gap",
+    "badpin:old_fixed_terminal_high_gap",
+    "omit:uniform_main_proof",
+    "badpin:uniform_main_proof",
+    "omit:uniform_uniform_local_proof",
+    "badpin:uniform_uniform_local_proof",
+    "omit:uniform_uniform_global_proof",
+    "badpin:uniform_uniform_global_proof",
+    "omit:uniform_exact_checker",
+    "badpin:uniform_exact_checker",
+    "omit:uniform_exact_inputs",
+    "badpin:uniform_exact_inputs",
+    "omit:uniform_context_audit",
+    "badpin:uniform_context_audit",
+    "omit:uniform_primary_kabluchko",
+    "badpin:uniform_primary_kabluchko",
+    "omit:uniform_compact_402_proof",
+    "badpin:uniform_compact_402_proof",
+    "omit:uniform_fixed_cusp_405_proof",
+    "badpin:uniform_fixed_cusp_405_proof",
+    "omit:uniform_fixed_local_construction",
+    "badpin:uniform_fixed_local_construction",
+    "omit:uniform_fixed_global_complement",
+    "badpin:uniform_fixed_global_complement",
+    "omit:uniform_fixed_morse_proof",
+    "badpin:uniform_fixed_morse_proof",
+    "omit:uniform_cusp_stationary_geometry",
+    "badpin:uniform_cusp_stationary_geometry",
+    "omit:uniform_actual_coalescing_bridge",
+    "badpin:uniform_actual_coalescing_bridge",
+    "omit:uniform_fixed_bounded_proof",
+    "badpin:uniform_fixed_bounded_proof",
+    "omit:uniform_quartic_unfolding_proof",
+    "badpin:uniform_quartic_unfolding_proof",
+    "omit:uniform_quartic_model_proof",
+    "badpin:uniform_quartic_model_proof",
+    "omit:uniform_primary_newman",
+    "badpin:uniform_primary_newman",
+    "omit:uniform_old_gamma_upper_soft",
+    "badpin:uniform_old_gamma_upper_soft",
+    "omit:uniform_sharp_annulus_soft_404",
+    "badpin:uniform_sharp_annulus_soft_404",
+    "omit:uniform_closed_disc_grace",
+    "badpin:uniform_closed_disc_grace",
+    "false-scope:model_zero_simplicity_or_HJN_needed",
+    "false-scope:actual_complex_temperature_frozen_real",
+    "false-scope:uses_407_or_411",
+    "false-scope:old_a0_a1_full_finite_prefix_premise",
+    "false-scope:global_bad_triple_set_finite",
+    "false-scope:all_order_SFC",
+    "false-scope:effective_cutoff",
+    "false-scope:unbounded_thermal_matching_solved",
+    "missing-scope:all_d_covered",
+    "missing-scope:real_temperature_model_location_only",
+    "missing-scope:thermal_T_held_fixed_on_support_fixed_complex_m_collars",
+    "missing-scope:leading_amplitude_T_over_rho_cubed_term_retained",
+    "missing-scope:regional_bad_set_finite_iff_uniform_tube_cutoff",
+    "boolean-schema",
+    "empty-ledger"
+  ],
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_bounded_thermal_transition.py",
+      "relation": "exact_and_source_support",
+      "role": "exact_checker",
+      "sha256": "2cd4e530a9f410124a51a2f5382b7d7cbf01ba2c4cba2762bdacd14d66d3c418"
+    },
+    {
+      "kind": "local",
+      "path": "bounded_thermal_transition_inputs.json",
+      "relation": "exact_fixture_input",
+      "role": "exact_inputs",
+      "sha256": "92b351fac6b3d097270187965f6afe20fc9cf015d9123f8df9fb13b80de2a915"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_BOUNDED_THERMAL_TRANSITION_EVENTUAL_SFC.md",
+      "relation": "written_argument",
+      "role": "main_proof",
+      "sha256": "83a48e4da05099917114b51cf3bb6fc8ac686c5f42c936efbdc3d028a3cb7e93"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "relation": "mathematical_input_raw_fixed_terminal_support_finiteness",
+      "role": "old_fixed_terminal_high_gap",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "relation": "mathematical_input_actual_phase_and_jets",
+      "role": "uniform_actual_coalescing_bridge",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "relation": "mathematical_input_404_closed_disc_mechanism_only",
+      "role": "uniform_closed_disc_grace",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "mathematical_input_compact_family_and_bounded_H",
+      "role": "uniform_compact_402_proof",
+      "sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e"
+    },
+    {
+      "kind": "support",
+      "path": "UNIFORM_CUSP_PRIMARY_CONTEXT.md",
+      "relation": "classical_context_only",
+      "role": "uniform_context_audit",
+      "sha256": "aeb7dddda06692373c4e9ed660c4d669f1a0db293bd30fe6656a4c7e119209b0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "relation": "mathematical_input_narrow_405_closure",
+      "role": "uniform_cusp_stationary_geometry",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "kind": "support",
+      "path": "verify_uniform_cusp_eventual.py",
+      "relation": "exact_and_source_support",
+      "role": "uniform_exact_checker",
+      "sha256": "d0922179140dda4c43d73530fe741704ab67144ebf8c5465c566883184f65c85"
+    },
+    {
+      "kind": "support",
+      "path": "uniform_cusp_eventual_inputs.json",
+      "relation": "exact_fixture_input",
+      "role": "uniform_exact_inputs",
+      "sha256": "a61cd529fa359c60f1fe333eee464bff8c710459c8bd1bd1bc7120cf76ffefae"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "mathematical_input_402_model_mechanism",
+      "role": "uniform_fixed_bounded_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md",
+      "relation": "mathematical_input_narrow_bounded_s_route",
+      "role": "uniform_fixed_cusp_405_proof",
+      "sha256": "89fe772b7231063a7bd824aceba48c191b8bc821ced68efe6087b39efb25dd2b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "relation": "mathematical_input_narrow_405_closure",
+      "role": "uniform_fixed_global_complement",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "relation": "mathematical_input_C1_to_C15_revalidated_uniformly",
+      "role": "uniform_fixed_local_construction",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "relation": "mathematical_input_narrow_405_closure",
+      "role": "uniform_fixed_morse_proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "support",
+      "path": "UNIFORM_INTEGER_CUSP_EVENTUAL_STRONG_FACTORIAL.md",
+      "relation": "written_argument",
+      "role": "uniform_main_proof",
+      "sha256": "61e5ddfbd9853dcf7a98288b8ae23259b136f66db08ef06292d8df36593f9159"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "mathematical_input_old_upper_and_local_catch_soft",
+      "role": "uniform_old_gamma_upper_soft",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "support",
+      "path": "uniform_cusp_eventual_source_ledger.json",
+      "relation": "exact_uniform_parent_source_boundary",
+      "role": "uniform_parent_ledger",
+      "sha256": "d9ba7c0dc2c7be77457c197af1f7caf9557386489b0078e812ac97d39505604a"
+    },
+    {
+      "kind": "support",
+      "path": "uniform_cusp_eventual_verification.json",
+      "relation": "exact_uniform_parent_receipt",
+      "role": "uniform_parent_receipt",
+      "sha256": "6cad24b950512dc437a0c648edd01e07bb3d649631771b1f99987072f01c65dd"
+    },
+    {
+      "kind": "support",
+      "path": "uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "classical_context_only",
+      "role": "uniform_primary_kabluchko",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "relation": "mathematical_input_model_location_only",
+      "role": "uniform_primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "relation": "mathematical_input_model_location_and_simplicity_only",
+      "role": "uniform_quartic_model_proof",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "relation": "mathematical_input_402_actual_jet_mechanism",
+      "role": "uniform_quartic_unfolding_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md",
+      "relation": "mathematical_input_compact_annulus_and_finite_bad_box",
+      "role": "uniform_sharp_annulus_soft_404",
+      "sha256": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+    },
+    {
+      "kind": "support",
+      "path": "UNIFORM_CUSP_CURIE_WEISS_REGULAR_COMPLEMENT.md",
+      "relation": "mathematical_input_uniform_regular",
+      "role": "uniform_uniform_global_proof",
+      "sha256": "8b64926a462956eb4d1b60cdbb8246ae92c85a0614136bf1f6a2e251041d31f8"
+    },
+    {
+      "kind": "support",
+      "path": "UNIFORM_GROWING_QUARTIC_CUSP_NEIGHBORHOOD.md",
+      "relation": "mathematical_input_uniform_local",
+      "role": "uniform_uniform_local_proof",
+      "sha256": "e9b23ad408aa1d0933d55d07b0126a801a79dc2623a28900a310c156e77543ca"
+    }
+  ],
+  "status": "PASS",
+  "universal_identities": [
+    "stationary moving center",
+    "raw quadratic thermal jet",
+    "raw cubic thermal jet",
+    "raw quartic thermal jet",
+    "exact mixed linear field jet cleared by d",
+    "raw mixed quadratic field jet vanishes",
+    "support a=C-s identity",
+    "frozen cusp beta error modulo L squared equals C",
+    "detuned full-tail numerator",
+    "all-support stationary envelope",
+    "exact own-order scaled field relation",
+    "exact real thermal own-order relation",
+    "residual thermal parameter is support fixed",
+    "no spurious complex-order thermal derivative",
+    "all three transported amplitude terms",
+    "thermal amplitude error has k to three halves",
+    "quarter-integral numerator",
+    "strict half-integer square residue",
+    "leading ratio derivative at zero thermal parameter"
+  ]
+}
