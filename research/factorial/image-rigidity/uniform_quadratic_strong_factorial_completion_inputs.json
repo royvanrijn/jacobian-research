@@ -1,0 +1,62 @@
+{
+  "actual_moment": "A_(m;a,d)(Z)=sum binom(m,k)(a*m+1)_(d*k) Z^(m-k)",
+  "coverage": [
+    {
+      "declaration": "Theorem UniformQuadraticStrongFactorialTail",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md"
+    },
+    {
+      "declaration": "Lemma UniformActualMomentRootRectangle",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md"
+    },
+    {
+      "declaration": "Corollary QuadraticBadLowerExponentEquivalence",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md"
+    },
+    {
+      "declaration": "Lemma UniformActualPhaseMajorants",
+      "path": "UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md"
+    },
+    {
+      "declaration": "Lemma UniformAllHeightOnePacket",
+      "path": "UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md"
+    }
+  ],
+  "domain": {
+    "homotopy_delta_max": "1/1000000000000",
+    "homotopy_m_min": "10000000000000000",
+    "homotopy_real_a": "d^2/delta^2",
+    "homotopy_requires_hard_order": false,
+    "integer_N_min": 2,
+    "integer_d_min": 2,
+    "ordinary_integer_a_lower": "10^24*d^2",
+    "uniform_phase_actual_delta_max": "1/10000000000",
+    "uniform_phase_outer_delta_max": "1/100000"
+  },
+  "excludes": [
+    "full ordinary binomial SFC",
+    "Bad_d empty",
+    "a>=100*d^2 universal claim",
+    "any bound on bad N below the cutoff",
+    "formal verification"
+  ],
+  "main_route_excludes_400": true,
+  "phase_expected": {
+    "falling_coefficient_controls": 2079,
+    "negative_controls": 2,
+    "rational_guards": 70,
+    "universal_identities": 3
+  },
+  "quad_expected": {
+    "exact_laurent_bell_cases": 27,
+    "negative_controls": 4,
+    "rational_guards": 18,
+    "universal_identities": 3
+  },
+  "rectangle": {
+    "imaginary_abs_max": "21/10",
+    "real_abs_max": "1/10000000"
+  },
+  "schema": 1,
+  "scope": "Every characteristic-zero field, nonzero ordinary binomials, all integer gaps d>=2 and every terminal N>=2 at a>=10^24*d^2. Bad_d is bounded by the same quadratic cutoff."
+}

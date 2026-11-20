@@ -189,12 +189,15 @@ zeros of generic hypergeometric polynomials, not the finite-N strip
 claimed here. Those identities are not imported as a localization
 theorem. Neither classical comparison justifies a novelty claim.
 
-The new global bound supplies a polynomially small REAL strip once
-a is a constant times d^4. The remaining uniform analytic obligations
-are a complete outside-one-packet bound for the growing imaginary
-range |Im Z|<sqrt(17d), and the uniform-in-d local/endpoint and
-actual-adjacent-order comparison with explicit constants. No SFC tail
-theorem follows from(P1) alone.
+The global bound supplies a polynomially small REAL strip once
+a is a constant times d^4. The uniform outside-one-packet, local,
+endpoint and actual-adjacent-order estimates are established separately
+in [Uniform actual-phase and contour estimates](UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md).
+The [quadratic tail theorem](UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md)
+uses a separate Bell/homotopy root capture and proves a>=10^24*d^2.
+The [quartic tail proof](UNIFORM_QUARTIC_STRONG_FACTORIAL_TAIL.md)
+combines those analytic estimates with this strip at a>=10^20*d^4.
+No SFC tail theorem follows from(P1) alone.
 
 ## 5. The exact common-root equivalence on the proved region
 
@@ -224,9 +227,9 @@ coprimality does not require a root in a specified nonclosed field.
 
 Quantifying either property over ALL stated integer a,d,N gives
 equivalent universal assertions. Neither is proved by this root
-localization theorem. Uniform all-gap analytic control, including the
-growing imaginary range and an actual adjacent-order comparison,
-remains a separate open obligation.
+localization theorem. The separate uniform analytic and tail proofs
+linked in Section4 establish their stated larger-threshold regions;
+they do not settle either universal assertion for all a>=100*d^2.
 
 ## Exact reproduction
 

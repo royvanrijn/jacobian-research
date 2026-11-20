@@ -304,7 +304,7 @@
     {
       "path": "ITERATED_GRACE_POLYNOMIAL_ROOT_STRIP.md",
       "root": "local",
-      "sha256": "ca342102aaed739613c66f40e897b2bb998d5e6f25bab1e814a5a5781882c562"
+      "sha256": "5b11bd422d921d8e1e735d105ebcad7e916620effb914f58ab6d5866cf3c85f5"
     },
     {
       "path": "verify_iterated_grace_polynomial_root_strip.py",
@@ -407,7 +407,7 @@
   ],
   "schema": 1,
   "scope": "Universal exact algebra/majorant support for the written ALL-ROOT, ALL-ORDER localization theorem, not an SFC claim",
-  "source_ledger_sha256": "bbc69917029fe3ff39f3ee3a202a57f80ae67e708f80c7517d68efac6002d956",
+  "source_ledger_sha256": "e093c6273cf5e119ba66faded11176bd8f5015115e9bdd828ef75ed63ba37e40",
   "status": "PASS_POLYNOMIAL_GLOBAL_ROOT_STRIP_SUPPORT",
   "universal_identities": 6
 }

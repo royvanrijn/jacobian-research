@@ -1,0 +1,97 @@
+{
+  "checker_scope": "Three fresh byte-identical receipt replays, exact mandatory pins/row schema, full source-ledger closure excludes400, all omission/corruption/schema/scope guards, and optimized-mode refusal. The written analytic and topological proofs supply the all-quantifier conclusion; no formal verification claim.",
+  "coverage": [
+    {
+      "declaration": "Theorem UniformQuadraticStrongFactorialTail",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md"
+    },
+    {
+      "declaration": "Lemma UniformActualMomentRootRectangle",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md"
+    },
+    {
+      "declaration": "Corollary QuadraticBadLowerExponentEquivalence",
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md"
+    },
+    {
+      "declaration": "Lemma UniformActualPhaseMajorants",
+      "path": "UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md"
+    },
+    {
+      "declaration": "Lemma UniformAllHeightOnePacket",
+      "path": "UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md",
+      "root": "local",
+      "sha256": "f2c08b978834b3ce9b3511b930814851cfed3719d7f232972d41febcd0e4774a"
+    },
+    {
+      "path": "UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md",
+      "root": "local",
+      "sha256": "7e443fc6cd6743fc6885d4de047de0a43f5547526d40b872fa39fc2471d72d5a"
+    },
+    {
+      "path": "uniform_actual_phase_and_contour_verification.json",
+      "root": "local",
+      "sha256": "d312e7e9c5cffcbe2491ad525ca120a140bec05461f9a1a13e34ae0fabf7dfae"
+    },
+    {
+      "path": "uniform_quadratic_strong_factorial_completion_inputs.json",
+      "root": "local",
+      "sha256": "c7daea01d23171451c898bb4e86f1e64170ddb0744f18db846d12f05166da2fe"
+    },
+    {
+      "path": "uniform_quadratic_strong_factorial_tail_verification.json",
+      "root": "local",
+      "sha256": "a591c35e33317058f72bb9b149601ead8adaa461b5bcda5b8e7d6c868a152412"
+    },
+    {
+      "path": "verify_uniform_actual_phase_and_contour_estimates.py",
+      "root": "local",
+      "sha256": "b1b20b05cba432e051e146fa536a48c7008ecd2a0e42945b845d14d4272faf89"
+    },
+    {
+      "path": "verify_uniform_quadratic_strong_factorial_completion.py",
+      "root": "local",
+      "sha256": "68ddabfd88f71c9bdf1b1f91fa556d171b09d319dc5637169c5f943000884215"
+    },
+    {
+      "path": "verify_uniform_quadratic_strong_factorial_tail.py",
+      "root": "local",
+      "sha256": "2988fbfc2100ed72748bffc5f1c6ce96cf0171eb7abd812d9ab7adb6b8641fdf"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "root": "repo",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/GAP_TWO_EFFECTIVE_LARGE_LOWER_EXPONENT_THEOREM.md",
+      "root": "repo",
+      "sha256": "561a32a1c77f2070f18ba4f2ae3f2f583413eea2dcddbedca50b5c4325a9e035"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_effective_large_lower_completion_source_ledger.json",
+      "root": "repo",
+      "sha256": "fbb3dff8318dd54fca04a51da777e98c553a057ae61e43f29c0d9968d6d8900f"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_effective_large_lower_completion_verification.json",
+      "root": "repo",
+      "sha256": "0f27d071e5cc194f392b476a17acb0b1e087e8370f8265a90d07b5eb4d1ed551"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_gap_two_effective_large_lower_completion.py",
+      "root": "repo",
+      "sha256": "eadf840e147e070656e0742443a9d8acd0fa1e216bfe3b10ac7746c8e8b83def"
+    }
+  ],
+  "main_route_imports_400": false,
+  "mathematical_premises": "The local uniform phase proof explicitly reverifies the actual family for all d. The quadratic proof supplies the real-a branch extension, exact Bell/Gamma monic homotopy, zero-free rectangle boundary, all-root count and actual adjacent-order comparison. Canonical399 provides the separately audited numerical Airy/physical-contour templates; the exact soft criterion is the actual GAMMA_PRODUCT note. No400 polynomial Grace strip or quartic-tail theorem is a premise.",
+  "primary_context": "Retained primary NIST/Rouche/Airy and exact actual-moment source records are transitively pinned and freshly replayed by canonical399. The main Gaussian initial root bound is proved by its explicit Jacobi matrix, while the Bell continuation is derived from the Gamma moment-generating function in the new proof.",
+  "schema": 1,
+  "scope": "Uniform quadratic actual ordinary Strong Factorial tail a>=10^24*d^2 and exact Bad_d reverse equivalence; every integer d>=2,N>=2 and every characteristic-zero field, NONZERO binomials."
+}
