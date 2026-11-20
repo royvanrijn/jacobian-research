@@ -1,0 +1,279 @@
+{
+  "external_review": false,
+  "formal_verification": false,
+  "logical_route": [
+    "fixed_bounded_cusp",
+    "shrinking_cusp",
+    "two_thimble",
+    "global_complement",
+    "retained_upper",
+    "rational_Bezout"
+  ],
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "role": "coalescing_bridge_proof",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "kind": "support",
+      "path": "verify_cusp_global_complement.py",
+      "role": "complement_checker",
+      "sha256": "124141b699233179d9ab2ee5b102641d6068f76d96eafde57faf17acd362778f"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_global_complement_inputs.json",
+      "role": "complement_inputs",
+      "sha256": "71efe9650de3a94f45451aa3045376a0728b4ad47489fd49ff6ff5fa9acbaa50"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_global_complement_source_ledger.json",
+      "role": "complement_ledger",
+      "sha256": "4cdd1e993f54e01fc55a3ad109143e306f15dd95e8bac0d0443b6bddcb25e755"
+    },
+    {
+      "kind": "support",
+      "path": "CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "role": "complement_proof",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_global_complement_verification.json",
+      "role": "complement_receipt",
+      "sha256": "6169d465daeaa731907c6efc66fe2423d01453b64bdcbd93c7c79c6caa3aa687"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_bounded_quartic_cusp.py",
+      "role": "fixed_bounded_checker",
+      "sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "fixed_bounded_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/bounded_quartic_cusp_verification.json",
+      "role": "fixed_bounded_receipt",
+      "sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "role": "fixed_completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "role": "fixed_completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "role": "fixed_completion_ledger",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "role": "fixed_completion_receipt",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_unfolding.py",
+      "role": "fixed_cusp_checker",
+      "sha256": "2aaed2628fa2b900a2010bd06bfc7a366f149262f0df14151b684c389016eec3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "role": "fixed_cusp_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_unfolding_verification.json",
+      "role": "fixed_cusp_receipt",
+      "sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "role": "fixed_model_checker",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_inputs.json",
+      "role": "fixed_model_inputs",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "role": "fixed_model_ledger",
+      "sha256": "4abeba96e71f2c708448fa595504c5714e63aeb55551d0cebb5f3512f2b97bba"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "role": "fixed_model_proof",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_verification.json",
+      "role": "fixed_model_receipt",
+      "sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "role": "fixed_primary_hjn",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "role": "fixed_primary_newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "kind": "support",
+      "path": "verify_cusp_shrinking_window_log_ratio.py",
+      "role": "local_checker",
+      "sha256": "62a543ee270d338ddc0b8a69f717adabc71a72b18182113b7c2a91d3cd08ea16"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_shrinking_window_inputs.json",
+      "role": "local_inputs",
+      "sha256": "77df02e2602ba6687239d504401e020c372c4754a5b488b5a6b2cc23c9c52566"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_shrinking_window_source_ledger.json",
+      "role": "local_ledger",
+      "sha256": "47980a650faad7443e8d998e0e10bac330d03a14592a05172a4d34e79977b32c"
+    },
+    {
+      "kind": "support",
+      "path": "CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "role": "local_proof",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_shrinking_window_verification.json",
+      "role": "local_receipt",
+      "sha256": "4e348fd8541d8d834c0af9f402d8b2a42dc5f77d3ec74765c3356d9481125514"
+    },
+    {
+      "kind": "local",
+      "path": "verify_cusp_eventual_strong_factorial_completion.py",
+      "role": "main_checker",
+      "sha256": "7ee237b079d544c3036fdbb6b60d6a08990d1301992cd51ed32c9287aa04ce73"
+    },
+    {
+      "kind": "local",
+      "path": "cusp_eventual_strong_factorial_inputs.json",
+      "role": "main_inputs",
+      "sha256": "9361fb493e8d35866a84cc04e60820c3e43376bec7a06e724f34dcba02fb43b6"
+    },
+    {
+      "kind": "local",
+      "path": "CUSP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md",
+      "role": "main_proof",
+      "sha256": "89fe772b7231063a7bd824aceba48c191b8bc821ced68efe6087b39efb25dd2b"
+    },
+    {
+      "kind": "support",
+      "path": "verify_cusp_two_thimble_positive_cycle.py",
+      "role": "morse_checker",
+      "sha256": "9d683f987eca019ec23d1345ba4549ba079c6a5834ad9178364b39259e84fe4e"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_two_thimble_inputs.json",
+      "role": "morse_inputs",
+      "sha256": "a43241330fdace46a4668f3483032bfcab92683b0c387e18989a982e562d8947"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_two_thimble_source_ledger.json",
+      "role": "morse_ledger",
+      "sha256": "a7cc79b13416f47f1da880be6db02e0830ea8270aeaa827bf88a17f878f25d33"
+    },
+    {
+      "kind": "support",
+      "path": "CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "morse_proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "support",
+      "path": "cusp_two_thimble_verification.json",
+      "role": "morse_receipt",
+      "sha256": "5d86ebc659028fd1814798db8f8b21b69aa62405eb282891323ea210f008d6cb"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/vidunas-belyi-2025.pdf",
+      "role": "primary_vidunas",
+      "sha256": "62973b1fdf8ebdca85a845db389625922f48e1862173e4b72d92a85db8f088dd"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "role": "retained_gamma_upper",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_stationary_belyi_monodromy.py",
+      "role": "stationary_checker",
+      "sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_inputs.json",
+      "role": "stationary_inputs",
+      "sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_source_ledger.json",
+      "role": "stationary_ledger",
+      "sha256": "97b32b27b4cc60691e7a8fcfd68088b770b24a4691f960e7fc5773f2b88a62ee"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_primary_audit.md",
+      "role": "stationary_primary_audit",
+      "sha256": "cc9535349d58cd4cdf57d305f3d2b674957f2ea95c15b7f3f78ca7c2cd25b038"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "role": "stationary_proof",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_verification.json",
+      "role": "stationary_receipt",
+      "sha256": "15b4b1f5f7e0b5fa8090498ba0db56a83ed54e76a17e8e69c3c9c12b79cfa72d"
+    }
+  ]
+}

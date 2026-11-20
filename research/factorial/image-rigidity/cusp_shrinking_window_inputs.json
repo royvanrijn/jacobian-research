@@ -1,0 +1,26 @@
+{
+  "HJN_monotonicity_is_logical_premise": false,
+  "actual_common_order_scaling": "w=x/N^d; lower w=(N/(N-1))^d*w",
+  "actual_polynomials": "A_m(x)=sum binom(m,k)(a*m+1)_(d*k)x^(m-k)",
+  "all_RHP_is_zero_free": false,
+  "all_scaled_fields_in_neighborhood": true,
+  "complex_m_extension_only_in_narrow_zero_free_S_sector": true,
+  "effective_cutoff": false,
+  "exact_partial_periods_and_Cauchy_derivatives": true,
+  "external_review": false,
+  "fixed_bounded_window_core_suffices": true,
+  "fixed_cusp": {
+    "a": "s^2",
+    "d": "2s+1",
+    "s_min": 1
+  },
+  "formal_verification": false,
+  "global_all_support_SFC": false,
+  "global_fixed_cusp_SFC": false,
+  "independent_replay": false,
+  "order_quantifier": "for every fixed s exists r_s>0,N_s; all N>=N_s",
+  "parameter_region": "one fixed physical neighborhood of w_c for each fixed cusp",
+  "schema": 1,
+  "uniform_H_core_required": false,
+  "uniform_in_s": false
+}

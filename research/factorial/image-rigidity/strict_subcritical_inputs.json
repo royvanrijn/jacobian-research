@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "fixed_ordinary_integer_supports": true,
+  "strict_subcritical_only": true,
+  "globally_ordered_physical_pair": true,
+  "stokes_argument_revalidated": true,
+  "spinodal_inflections_strictly_inactive": true,
+  "coexistence_two_complete_packets": true,
+  "eventual_coprimality": true,
+  "effective_cutoff": false,
+  "uniform_terminal_bound": false,
+  "all_order_coprimality": false,
+  "critical_equality_proved_by_this_note": false
+}

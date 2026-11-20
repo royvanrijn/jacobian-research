@@ -1,0 +1,23 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "124141b699233179d9ab2ee5b102641d6068f76d96eafde57faf17acd362778f",
+  "checks": {
+    "actual_moment_coefficient_controls": 135,
+    "genuine_false_statement_controls": 3,
+    "negative_axis_sign_controls": 9,
+    "retained_upper_factor_controls": 210,
+    "source_and_scope_negative_controls": 20,
+    "universal_identities": 5
+  },
+  "inputs_sha256": "71efe9650de3a94f45451aa3045376a0728b4ad47489fd49ff6ff5fa9acbaa50",
+  "mandatory_source_records": 6,
+  "proof_sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44",
+  "schema": 1,
+  "scope": "Written analytic compact-complement proof support for each fixed integer cusp; no effective cutoff or all-order conclusion",
+  "source_ledger_sha256": "4cdd1e993f54e01fc55a3ad109143e306f15dd95e8bac0d0443b6bddcb25e755",
+  "status": "PASS"
+}

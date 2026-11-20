@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "proof",
+      "root": "local",
+      "path": "CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "role": "checker",
+      "root": "local",
+      "path": "verify_cusp_global_complement.py",
+      "sha256": "124141b699233179d9ab2ee5b102641d6068f76d96eafde57faf17acd362778f"
+    },
+    {
+      "role": "inputs",
+      "root": "local",
+      "path": "cusp_global_complement_inputs.json",
+      "sha256": "71efe9650de3a94f45451aa3045376a0728b4ad47489fd49ff6ff5fa9acbaa50"
+    },
+    {
+      "role": "two_thimble_proof",
+      "root": "support",
+      "path": "CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "role": "distinguished_sector_proof",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "role": "retained_gamma_upper_bound",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    }
+  ]
+}

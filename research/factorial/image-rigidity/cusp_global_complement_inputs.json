@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "fixed_integer_cusps": true,
+  "compact_excludes_positive_cusp": true,
+  "complete_stokes_detour": true,
+  "nonnegative_boundary_includes_zero": true,
+  "negative_boundary_pair_exclusion_only": true,
+  "retained_upper_bound_only": true,
+  "effective_cutoff": false,
+  "uniform_in_s": false,
+  "all_order_coprimality": false,
+  "all_root_localization": false
+}

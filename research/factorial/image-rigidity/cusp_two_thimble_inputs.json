@@ -1,0 +1,30 @@
+{
+  "Stokes_uniform_error": false,
+  "all_actual_roots_localized": false,
+  "both_active_everywhere": false,
+  "both_active_on_distinguished_equimodular_arc": true,
+  "complete_Gaussian_packets_on_compact_nonStokes_cells": true,
+  "complete_original_cycle": true,
+  "effective_cutoff": false,
+  "eventual_compact_regular_cell_noncollision": true,
+  "exact_period_integer_m_min": 1,
+  "external_review": false,
+  "fixed_integer_cusp": {
+    "a": "s^2",
+    "d": "2s+1",
+    "s_min": 1
+  },
+  "formal_verification": false,
+  "global_cusp_SFC": false,
+  "ordinary_untwisted_integer_periods_only": true,
+  "original_cycle_tree_path": "one or two oriented edges; coefficients 0,+1,-1",
+  "parameter_domain": "Im(w)>0",
+  "relative_rank": 2,
+  "schema": 1,
+  "three_ends": [
+    "0",
+    "zeta",
+    "infinity"
+  ],
+  "uniform_in_d": false
+}

@@ -1,0 +1,69 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "primary_inspection": {
+    "actual_dictionary": "b=gamma-n+1; G(z)=z^n*y_n(2/z;b); n+b-1=gamma>0",
+    "actual_inspection": "Rendered scanned printed1,2,3 personally viewed; PDF combines I and II.",
+    "authors": [
+      "M. G. de Bruin",
+      "E. B. Saff",
+      "R. S. Varga"
+    ],
+    "comparison": "Theorem3.1 credits Saff-Varga cardioid; following paragraph credits Docev containing circle. The lower Gamma circle is classical.",
+    "header": "Proceedings A84(1), March20,1981",
+    "inspected": true,
+    "original_docev_paper_inspected": false,
+    "source_is_mathematical_premise": false,
+    "theorem": "Paper I, printed3, Theorem3.1; printed2 (2.1),(2.3)",
+    "title": "On the zeros of generalized Bessel polynomials. I",
+    "url": "https://www.math.kent.edu/~varga/pub/paper_127.pdf"
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "location": "local",
+      "path": "GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md",
+      "relation": "written_argument",
+      "role": "written_proof",
+      "sha256": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+    },
+    {
+      "location": "local",
+      "path": "verify_gamma_product_sharp_lower_annulus.py",
+      "relation": "computational_support",
+      "role": "exact_checker",
+      "sha256": "6b112894dd581270d193d79796d96c3394795d34de995851d6d515277d41f664"
+    },
+    {
+      "location": "local",
+      "path": "gamma_product_sharp_lower_annulus_inputs.json",
+      "relation": "computational_support",
+      "role": "exact_fixture_input",
+      "sha256": "d25523b322e219796c57b732523aea0c4a360ddd7a20ed8f2174786695070df0"
+    },
+    {
+      "location": "local",
+      "path": "sources/varga-generalized-bessel-1981-I-II.pdf",
+      "relation": "classical_context_only",
+      "role": "classical_bessel_primary",
+      "sha256": "97c68961d1658bc410ae70eb2f090c1c9f39f94385f5bd8a450d4cc716968d20"
+    },
+    {
+      "location": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "mathematical_input_upper_factor_only",
+      "role": "gamma_upper_disk_proof",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "location": "repo",
+      "path": "research/factorial/image-rigidity/GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md",
+      "relation": "mathematical_input_closed_disc_only",
+      "role": "closed_disc_grace_proof",
+      "sha256": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473"
+    }
+  ]
+}

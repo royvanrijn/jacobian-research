@@ -1,0 +1,80 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "note_sha256": "e449dd3c8ab0339672058877aa5e0055d949ae0100c1949c6a0a8d37febd4eaa",
+  "primary_sources": [
+    {
+      "inspection": "Actual PDF Definition2.7/Conjecture2.8 printed2-3; Section3.2 Theorem3.2/Lemma3.3/Conjecture3.4/Proposition3.5 and closing paragraph printed10-12.",
+      "path": "sources/edo-van-den-essen-1304.3956v2.pdf",
+      "sha256": "c6fd11479a33c02b5260dd54d82613530ef2448fc532336f653685a4761ea1e9",
+      "url": "https://arxiv.org/pdf/1304.3956v2"
+    },
+    {
+      "inspection": "Actual28-page author preprint, dated6Sep2015; Section3.4 printed13-18, Prop3.14/3.15/Remarks3.18-3.19.",
+      "path": "sources/rocks-2015-author-preprint.pdf",
+      "sha256": "cee089adf02a4cc8add4bded8804e89bd51317108939c612ff2e3710bd43ecdc",
+      "url": "https://people.math.sc.edu/rocks/BradyRocksSFC2015.pdf"
+    },
+    {
+      "inspection": "Actual published PDF printed1 Theorem1.1; lower irreducibility density log2 for lower-exponent-zero family.",
+      "path": "sources/filaseta-rocks-2016-published.pdf",
+      "sha256": "a2885c831b92a23ce45695df9f40840246a6f26b5a0a5ce4820c54be7f227255",
+      "url": "https://people.math.sc.edu/filaseta/papers/ColloquiumMathPaper2016.pdf"
+    }
+  ],
+  "proof_context_only": true,
+  "published_rocks2017": {
+    "claim_about_final_theorem_numbering": false,
+    "doi": "10.1016/j.jalgebra.2017.01.039",
+    "full_published_text_inspected": false,
+    "inspection": "Publisher metadata and abstract only. Full-text direct fetch returned403.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0021869317300649"
+  },
+  "repo_overlap_proofs": [
+    {
+      "path": "research/factorial/image-rigidity/ORDINARY_LOWER_ONE_STRONG_FACTORIAL.md",
+      "sha256": "6e309c34718f5a794acfdd1d7325bb680f7287277073a14078f9d174c4428a32"
+    },
+    {
+      "path": "research/factorial/image-rigidity/ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md",
+      "sha256": "da178d221b862cc08e7332b747484ee956869d48910f60259acb66643e1a00f6"
+    },
+    {
+      "path": "research/factorial/image-rigidity/RELATIVE_GAP_THREE_STRONG_FACTORIAL.md",
+      "sha256": "0e9ab6b15400c7e1b6a7d5630fc781d6bfab9f20483cfb76d7476fc8667bda2e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "path": "research/factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex",
+      "sha256": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "path": "research/factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex",
+      "sha256": "e41f5b9b6f97cfc5d3c77d6783d0c9000c1f7cfed93b68856da8de07adbd6697"
+    },
+    {
+      "path": "research/factorial/image-rigidity/LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex",
+      "sha256": "150d433c66c8bd1ac0c82bbe0fff6a53ad701c2aede630e961c783f27c8facce"
+    },
+    {
+      "path": "research/factorial/image-rigidity/UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md",
+      "sha256": "7e443fc6cd6743fc6885d4de047de0a43f5547526d40b872fa39fc2471d72d5a"
+    },
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    }
+  ],
+  "schema": 1,
+  "scope": "Narrow primary applicability/context audit, not an exhaustive priority determination."
+}

@@ -1,0 +1,24 @@
+{
+  "BadTerminal_finite_iff_eventual": true,
+  "BadTerminal_s_empty": false,
+  "BadTerminal_s_finite": true,
+  "HJN_monotonicity_logical_premise": false,
+  "all_terminal_orders": false,
+  "descent": "Q[x] Bezout identity; no embedding of an arbitrary field in C",
+  "effective_Ns": false,
+  "external_review": false,
+  "fixed_support": {
+    "a": "s^2",
+    "d": "2s+1",
+    "s_min": 1
+  },
+  "formal_verification": false,
+  "new_sharp_lower_annulus_logical_premise": false,
+  "order_quantifier": "for each s exists integer N_s>=2; all terminal N>=N_s",
+  "rational_actual_pair_coprime": true,
+  "same_cutoff_all_characteristic_zero_fields": true,
+  "same_cutoff_all_coefficients": true,
+  "schema": 1,
+  "uniform_H_bound_logical_premise": false,
+  "uniform_Ns_in_s": false
+}

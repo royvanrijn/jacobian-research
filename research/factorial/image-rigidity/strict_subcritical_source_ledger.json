@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "proof",
+      "root": "local",
+      "path": "SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md",
+      "sha256": "3bcd961a7cbf63fe780f30580554118355f4f5252cf1d92992741881ece500e6"
+    },
+    {
+      "role": "checker",
+      "root": "local",
+      "path": "verify_strict_subcritical_eventual_sfc.py",
+      "sha256": "c0771e61f31e8710278e2827183dbfa20050817fd3e5b05bf715c4c24606df2d"
+    },
+    {
+      "role": "inputs",
+      "root": "local",
+      "path": "strict_subcritical_inputs.json",
+      "sha256": "c0ce9d7e31de8583af26adfed32e260b3bb2df41c30c1f0884fc1dd35eea0c88"
+    },
+    {
+      "role": "two_thimble_proof",
+      "root": "support",
+      "path": "CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "role": "global_complement_proof",
+      "root": "support",
+      "path": "CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "role": "retained_gamma_upper_bound",
+      "root": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    }
+  ]
+}

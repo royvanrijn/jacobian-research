@@ -1,0 +1,182 @@
+{
+  "checker_sha256": "9d683f987eca019ec23d1345ba4549ba079c6a5834ad9178364b39259e84fe4e",
+  "counts": {
+    "actual_complex_rotated_integral_controls": 12,
+    "mathematical_negative_controls": 4,
+    "oriented_tree_cases": 12,
+    "rational_guards": 9,
+    "source_scope_controls": 29,
+    "universal_polynomial_identities": 8
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_stationary_receipt_byte_identical": true,
+  "fresh_stationary_receipt_sha256": "15b4b1f5f7e0b5fa8090498ba0db56a83ed54e76a17e8e69c3c9c12b79cfa72d",
+  "guard_names": [
+    "Gaussian_relative_order",
+    "compact_radial_error",
+    "integer_m_min",
+    "inverse_derivative_perturbation",
+    "inverse_derivative_speed",
+    "noncollision_leading_gap",
+    "sector_cosine_margin",
+    "simple_zero_cap_exponent",
+    "zero_cap_exponent"
+  ],
+  "imported_stationary_closure": [
+    {
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_inputs.json",
+      "sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42"
+    },
+    {
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_primary_audit.md",
+      "sha256": "cc9535349d58cd4cdf57d305f3d2b674957f2ea95c15b7f3f78ca7c2cd25b038"
+    },
+    {
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_source_ledger.json",
+      "sha256": "97b32b27b4cc60691e7a8fcfd68088b770b24a4691f960e7fc5773f2b88a62ee"
+    },
+    {
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_verification.json",
+      "sha256": "15b4b1f5f7e0b5fa8090498ba0db56a83ed54e76a17e8e69c3c9c12b79cfa72d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/vidunas-belyi-2025.pdf",
+      "sha256": "62973b1fdf8ebdca85a845db389625922f48e1862173e4b72d92a85db8f088dd"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_cusp_stationary_belyi_monodromy.py",
+      "sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118"
+    }
+  ],
+  "input_sha256": "a43241330fdace46a4668f3483032bfcab92683b0c387e18989a982e562d8947",
+  "mandatory_roles": 8,
+  "meaning": "Finite algebra and source replay support the complete written topological/analytic proof; they do not formally verify flow, handles or Gaussian estimates.",
+  "negative_names": [
+    "omit:proof",
+    "badpin:proof",
+    "omit:checker",
+    "badpin:checker",
+    "omit:inputs",
+    "badpin:inputs",
+    "omit:stationary_proof",
+    "badpin:stationary_proof",
+    "omit:stationary_checker",
+    "badpin:stationary_checker",
+    "omit:stationary_inputs",
+    "badpin:stationary_inputs",
+    "omit:stationary_ledger",
+    "badpin:stationary_ledger",
+    "omit:stationary_receipt",
+    "badpin:stationary_receipt",
+    "false-scope:both_active_everywhere",
+    "false-scope:Stokes_uniform_error",
+    "false-scope:effective_cutoff",
+    "false-scope:global_cusp_SFC",
+    "false-scope:all_actual_roots_localized",
+    "false-scope:uniform_in_d",
+    "omitted-scope:complete_original_cycle",
+    "omitted-scope:both_active_on_distinguished_equimodular_arc",
+    "omitted-scope:eventual_compact_regular_cell_noncollision",
+    "ledger:schema",
+    "ledger:empty",
+    "ledger:duplicate",
+    "forged-child"
+  ],
+  "proof_sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c",
+  "schema": 1,
+  "scope": {
+    "Stokes_uniform_error": false,
+    "all_actual_roots_localized": false,
+    "both_active_everywhere": false,
+    "both_active_on_distinguished_equimodular_arc": true,
+    "complete_Gaussian_packets_on_compact_nonStokes_cells": true,
+    "complete_original_cycle": true,
+    "effective_cutoff": false,
+    "eventual_compact_regular_cell_noncollision": true,
+    "exact_period_integer_m_min": 1,
+    "external_review": false,
+    "fixed_integer_cusp": {
+      "a": "s^2",
+      "d": "2s+1",
+      "s_min": 1
+    },
+    "formal_verification": false,
+    "global_cusp_SFC": false,
+    "ordinary_untwisted_integer_periods_only": true,
+    "original_cycle_tree_path": "one or two oriented edges; coefficients 0,+1,-1",
+    "parameter_domain": "Im(w)>0",
+    "relative_rank": 2,
+    "schema": 1,
+    "three_ends": [
+      "0",
+      "zeta",
+      "infinity"
+    ],
+    "uniform_in_d": false
+  },
+  "source_ledger_sha256": "a7cc79b13416f47f1da880be6db02e0830ea8270aeaa827bf88a17f878f25d33",
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_cusp_two_thimble_positive_cycle.py",
+      "role": "checker",
+      "sha256": "9d683f987eca019ec23d1345ba4549ba079c6a5834ad9178364b39259e84fe4e"
+    },
+    {
+      "kind": "local",
+      "path": "cusp_two_thimble_inputs.json",
+      "role": "inputs",
+      "sha256": "a43241330fdace46a4668f3483032bfcab92683b0c387e18989a982e562d8947"
+    },
+    {
+      "kind": "local",
+      "path": "CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_stationary_belyi_monodromy.py",
+      "role": "stationary_checker",
+      "sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_inputs.json",
+      "role": "stationary_inputs",
+      "sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_source_ledger.json",
+      "role": "stationary_ledger",
+      "sha256": "97b32b27b4cc60691e7a8fcfd68088b770b24a4691f960e7fc5773f2b88a62ee"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "role": "stationary_proof",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_verification.json",
+      "role": "stationary_receipt",
+      "sha256": "15b4b1f5f7e0b5fa8090498ba0db56a83ed54e76a17e8e69c3c9c12b79cfa72d"
+    }
+  ],
+  "status": "PASS",
+  "tree_path_lengths": {
+    "1": 8,
+    "2": 4
+  }
+}

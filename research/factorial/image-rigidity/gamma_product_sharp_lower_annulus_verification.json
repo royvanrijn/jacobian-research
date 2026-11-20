@@ -1,0 +1,43 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checks": {
+    "actual_shape_pairwise_QQ_gcds": 448,
+    "cusp_hard_complement_controls": 2300,
+    "exact_shape_threshold_QQ_gcds": 336,
+    "formal_gamma_ode_and_vieta_identities": 16,
+    "full_original_gamma_moment_vectors": 216,
+    "full_product_dilation_and_reversal_vectors": 90,
+    "ordinary_normalized_annulus_endpoints": 112,
+    "rejected_mathematical_extensions": 4,
+    "rejected_source_schema_and_scope_controls": 18,
+    "shape_cases_not_covered_by_old_threshold": 336,
+    "shape_threshold_equality_cases": 168,
+    "universal_cleared_complex_real_part_identity": 1
+  },
+  "classical_comparison": "1981 paper I (2.1),(2.3),Theorem3.1 and following Docev-circle attribution inspected; classical factor circle is not claimed new.",
+  "schema": 1,
+  "scope": {
+    "all_positive_integer_degrees_and_gaps": true,
+    "classical_factor_circle_priority_claimed": false,
+    "criterion_necessity_claimed": false,
+    "factor_simplicity_proved": true,
+    "fixed_lower_exponent_all_order_sfc_claimed": false,
+    "positive_real_shapes": true,
+    "product_simplicity_claimed": false
+  },
+  "source_ledger_sha256": "179e161316b1010113ddd3ddf0683fc51ff9d70118154af0322b7d2fbc9187ca",
+  "source_sha256": {
+    "classical_bessel_primary": "97c68961d1658bc410ae70eb2f090c1c9f39f94385f5bd8a450d4cc716968d20",
+    "closed_disc_grace_proof": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473",
+    "exact_checker": "6b112894dd581270d193d79796d96c3394795d34de995851d6d515277d41f664",
+    "exact_fixture_input": "d25523b322e219796c57b732523aea0c4a360ddd7a20ed8f2174786695070df0",
+    "gamma_upper_disk_proof": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9",
+    "written_proof": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c"
+  },
+  "status": "PASS",
+  "universal_proof": "Written minimum-modulus/strictness argument, closed-disc composition and reversal; finite fixtures are support only."
+}

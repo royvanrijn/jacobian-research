@@ -1,0 +1,224 @@
+{
+  "checker_sha256": "62a543ee270d338ddc0b8a69f717adabc71a72b18182113b7c2a91d3cd08ea16",
+  "counts": {
+    "actual_cusp_quartic_jet_vectors": 12,
+    "full_actual_consecutive_common_x_vectors": 72,
+    "full_actual_own_order_integral_vectors": 72,
+    "mathematical_negative_controls": 4,
+    "rational_guards": 12,
+    "source_scope_controls": 29,
+    "universal_algebra_and_scale_identities": 9
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "fresh_fixed_completion_receipt_byte_identical": true,
+  "fresh_fixed_completion_receipt_sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a",
+  "guard_names": [
+    "Cauchy_m_scale",
+    "Cauchy_w_scale",
+    "K_error_floor",
+    "complex_m_disk_sector",
+    "core_power_scaling",
+    "cubic_gaussian_exponent",
+    "halfline_ratio",
+    "path_overlap",
+    "relative_error_exponent",
+    "rho_error_small",
+    "small_remainder_log",
+    "squared_cubic_gaussian_exponent"
+  ],
+  "independent_replay": false,
+  "input_sha256": "77df02e2602ba6687239d504401e020c372c4754a5b488b5a6b2cc23c9c52566",
+  "logical_inputs": [
+    "fixed_cusp_bounded_window_theorem",
+    "exact_cusp_quartic_jets"
+  ],
+  "meaning": "Exact finite algebra and source replays support the written complete-contour/Cauchy proof. They do not formally verify those analytic arguments or prove global SFC.",
+  "negative_names": [
+    "omit:proof",
+    "badpin:proof",
+    "omit:checker",
+    "badpin:checker",
+    "omit:inputs",
+    "badpin:inputs",
+    "omit:fixed_window_proof",
+    "badpin:fixed_window_proof",
+    "omit:cusp_jet_proof",
+    "badpin:cusp_jet_proof",
+    "omit:fixed_completion_checker",
+    "badpin:fixed_completion_checker",
+    "omit:fixed_completion_inputs",
+    "badpin:fixed_completion_inputs",
+    "omit:fixed_completion_ledger",
+    "badpin:fixed_completion_ledger",
+    "omit:fixed_completion_receipt",
+    "badpin:fixed_completion_receipt",
+    "false-scope:uniform_H_core_required",
+    "false-scope:HJN_monotonicity_is_logical_premise",
+    "false-scope:all_RHP_is_zero_free",
+    "false-scope:uniform_in_s",
+    "false-scope:effective_cutoff",
+    "false-scope:global_fixed_cusp_SFC",
+    "false-scope:global_all_support_SFC",
+    "schema:True",
+    "schema:1",
+    "schema:2",
+    "forged-child"
+  ],
+  "proof_sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409",
+  "retained_fixed_core_closure": [
+    {
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "path": "research/factorial/image-rigidity/bounded_quartic_cusp_verification.json",
+      "sha256": "9fe211a9230dd8733c668ae3e52d5702549d04bdd2c5f7c28ad2ed5f1f37a3f1"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_cusp_unfolding_verification.json",
+      "sha256": "6ec9019e6b7254ae9d56e92f834ecdcb8fc0529ff734b0b1158435c1838d14e5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/hou_jiang_newman_2208_00917v1.pdf",
+      "sha256": "0a3982b1bb761615e622cab4762bee747c08b293a876aadbb31a749338f61bad"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_inputs.json",
+      "sha256": "360699fc5460f68a119f04325584fb427fe1fb52784ccc582a4fdd93205db06c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_source_ledger.json",
+      "sha256": "4abeba96e71f2c708448fa595504c5714e63aeb55551d0cebb5f3512f2b97bba"
+    },
+    {
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_zero_and_robin_verification.json",
+      "sha256": "bd7085ba10dd45a16b1658afd3c9a42734bb3a9b1be22138228ef54bcf027a9c"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_bounded_quartic_cusp.py",
+      "sha256": "2d61fc238f05de3fa9a6f36cf3ae2df1f43e8e2b0a17481de4750523450e51dc"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_unfolding.py",
+      "sha256": "2aaed2628fa2b900a2010bd06bfc7a366f149262f0df14151b684c389016eec3"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_quartic_lee_yang_zero_and_robin_bridge.py",
+      "sha256": "571e82c8b9b4af66a42d0ba59911df01e3a33d61d59dc6da075b65f4c46516f1"
+    }
+  ],
+  "schema": 1,
+  "scope": {
+    "HJN_monotonicity_is_logical_premise": false,
+    "actual_common_order_scaling": "w=x/N^d; lower w=(N/(N-1))^d*w",
+    "actual_polynomials": "A_m(x)=sum binom(m,k)(a*m+1)_(d*k)x^(m-k)",
+    "all_RHP_is_zero_free": false,
+    "all_scaled_fields_in_neighborhood": true,
+    "complex_m_extension_only_in_narrow_zero_free_S_sector": true,
+    "effective_cutoff": false,
+    "exact_partial_periods_and_Cauchy_derivatives": true,
+    "external_review": false,
+    "fixed_bounded_window_core_suffices": true,
+    "fixed_cusp": {
+      "a": "s^2",
+      "d": "2s+1",
+      "s_min": 1
+    },
+    "formal_verification": false,
+    "global_all_support_SFC": false,
+    "global_fixed_cusp_SFC": false,
+    "independent_replay": false,
+    "order_quantifier": "for every fixed s exists r_s>0,N_s; all N>=N_s",
+    "parameter_region": "one fixed physical neighborhood of w_c for each fixed cusp",
+    "schema": 1,
+    "uniform_H_core_required": false,
+    "uniform_in_s": false
+  },
+  "source_ledger_sha256": "47980a650faad7443e8d998e0e10bac330d03a14592a05172a4d34e79977b32c",
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_cusp_shrinking_window_log_ratio.py",
+      "role": "checker",
+      "sha256": "62a543ee270d338ddc0b8a69f717adabc71a72b18182113b7c2a91d3cd08ea16"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "role": "cusp_jet_proof",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_quartic_cusp_local_completion.py",
+      "role": "fixed_completion_checker",
+      "sha256": "af36c1d7a692dc9ba1cf602c1d28a1c43c553696ce908d931859069278a3b605"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_inputs.json",
+      "role": "fixed_completion_inputs",
+      "sha256": "1d27d48a8852b1c8cf1f0a67949255aa6b7ab9f753cffe6e0627f101ef751dc3"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_source_ledger.json",
+      "role": "fixed_completion_ledger",
+      "sha256": "4369f4f119ee2a5e34ab70c16139f3a26d154969905a91f845e3113134635c78"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_cusp_local_completion_verification.json",
+      "role": "fixed_completion_receipt",
+      "sha256": "78feafd508da6422188c747dc94b484ada4740d5b169c849933b4cc7be39814a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "role": "fixed_window_proof",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "local",
+      "path": "cusp_shrinking_window_inputs.json",
+      "role": "inputs",
+      "sha256": "77df02e2602ba6687239d504401e020c372c4754a5b488b5a6b2cc23c9c52566"
+    },
+    {
+      "kind": "local",
+      "path": "CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "role": "proof",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    }
+  ],
+  "status": "PASS"
+}

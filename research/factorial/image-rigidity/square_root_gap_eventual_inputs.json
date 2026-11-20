@@ -1,0 +1,28 @@
+{
+  "BadTerminal_each_allowed_support_finite": true,
+  "BadTerminal_empty": false,
+  "BadTerminal_finite_iff_eventual": true,
+  "HJN_monotonicity_logical_premise": false,
+  "all_terminal_orders": false,
+  "descent": "Q[x] Bezout identity; no embedding of an arbitrary field in C",
+  "effective_terminal_cutoff": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_sharp_lower_annulus_logical_premise": false,
+  "order_quantifier": "for each fixed allowed support (a,b) exists integer N_(a,b)>=2; every terminal N>=N_(a,b)",
+  "rational_actual_pair_coprime": true,
+  "remaining_supports_proved": false,
+  "same_cutoff_all_characteristic_zero_fields": true,
+  "same_cutoff_all_coefficients": true,
+  "schema": 1,
+  "strict_and_integer_cusp_cases_exhaustive": true,
+  "support": {
+    "a_min": 1,
+    "b": "a+d",
+    "condition": "4*a<=(d-1)^2",
+    "d_min": 3,
+    "equivalent_condition": "sqrt(b)-sqrt(a)>=1"
+  },
+  "uniform_H_bound_logical_premise": false,
+  "uniform_terminal_cutoff_over_supports": false
+}

@@ -1,0 +1,60 @@
+{
+  "context_only": {
+    "locator": "Sections3.1.1-3.1.5, printed24-32",
+    "scope": "Classical context only. Inward boundary, logarithmic ends and actual cycle are proved directly.",
+    "url": "https://arxiv.org/pdf/1001.2933v4"
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_cusp_two_thimble_positive_cycle.py",
+      "role": "checker",
+      "sha256": "9d683f987eca019ec23d1345ba4549ba079c6a5834ad9178364b39259e84fe4e"
+    },
+    {
+      "kind": "local",
+      "path": "cusp_two_thimble_inputs.json",
+      "role": "inputs",
+      "sha256": "a43241330fdace46a4668f3483032bfcab92683b0c387e18989a982e562d8947"
+    },
+    {
+      "kind": "local",
+      "path": "CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "role": "proof",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/verify_cusp_stationary_belyi_monodromy.py",
+      "role": "stationary_checker",
+      "sha256": "fe94d0ef2c29c593a74707bb7492519df229406255b1a8e00ddd16af59026118"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_inputs.json",
+      "role": "stationary_inputs",
+      "sha256": "ef32e80da7c509a2e099693866070dce1420c413120d28a32da6f844a3d0ea42"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_source_ledger.json",
+      "role": "stationary_ledger",
+      "sha256": "97b32b27b4cc60691e7a8fcfd68088b770b24a4691f960e7fc5773f2b88a62ee"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+      "role": "stationary_proof",
+      "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/cusp_stationary_belyi_verification.json",
+      "role": "stationary_receipt",
+      "sha256": "15b4b1f5f7e0b5fa8090498ba0db56a83ed54e76a17e8e69c3c9c12b79cfa72d"
+    }
+  ]
+}

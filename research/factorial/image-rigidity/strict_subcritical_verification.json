@@ -1,0 +1,24 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "c0771e61f31e8710278e2827183dbfa20050817fd3e5b05bf715c4c24606df2d",
+  "checks": {
+    "actual_moment_coefficient_controls": 160,
+    "genuine_false_statement_controls": 3,
+    "independent_critical_equality_controls": 8,
+    "old_upper_factor_controls": 215,
+    "source_and_scope_negative_controls": 20,
+    "strict_integer_support_fixtures": 8,
+    "universal_identity_families": 11
+  },
+  "inputs_sha256": "c0ce9d7e31de8583af26adfed32e260b3bb2df41c30c1f0884fc1dd35eea0c88",
+  "mandatory_source_records": 6,
+  "proof_sha256": "3bcd961a7cbf63fe780f30580554118355f4f5252cf1d92992741881ece500e6",
+  "schema": 1,
+  "scope": "Written strict-subcritical eventual proof support for fixed ordinary integer supports; no effective cutoff, uniform bound or all-order conclusion",
+  "source_ledger_sha256": "91179cdd9807a5481369248b81fb906ccd2b6df96bbebe37570c0f160bb1056a",
+  "status": "PASS"
+}
