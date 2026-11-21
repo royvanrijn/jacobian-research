@@ -1,0 +1,46 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "OFFCENTER_CUBIC_ALL_MULTIPLES_OF_THREE_IMAGE_FAMILY.md",
+      "relation": "complete_direct_endpoint_original_lift_and_every_order_fixed_Z_proof",
+      "role": "written_proof",
+      "sha256": "82c28b517070c5f2d65b98df2f9cc925cf1c5a64bd5b030a2fe31cadc297d39d"
+    },
+    {
+      "kind": "local",
+      "path": "verify_offcenter_cubic_all_order.py",
+      "relation": "bounded_literal_original_and_universal_identity_support_only",
+      "role": "exact_checker",
+      "sha256": "77036bd6f4416b657122a30b5b885afce8928dda19a2ff416692805696a3ae04"
+    },
+    {
+      "kind": "local",
+      "path": "offcenter_cubic_all_order_inputs.json",
+      "relation": "exact_j_m_degree_marker_and_antecedent_scope",
+      "role": "typed_inputs",
+      "sha256": "78054511bf07825e23fd22dc2741bbfcbec9fd538b49163bcd871727e5b1364a"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+      "relation": "ONLY_equations3_4_arbitrary_balanced_contraction_to_sphere_NOT_complete_cubic_safety",
+      "role": "balanced_normalization",
+      "sha256": "3e3afcf39fbbf3ec1641843cc81b550248d15db531020f4635a2ea0f5759e825"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "relation": "ONLY_section2_equations2_1_2_2_direct_charzero_Image_kernel_NOT_old_witness_existence",
+      "role": "image_kernel",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    }
+  ]
+}

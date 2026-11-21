@@ -1,0 +1,201 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "classical_context": [
+    {
+      "author": "Richard P. Stanley",
+      "doi": "10.1016/S0195-6698(80)80051-5",
+      "journal": "European Journal of Combinatorics1,175-188",
+      "locators": [
+        "Theorem2.1 printedp178",
+        "Definition1.3 and Theorem1.5 printedp176"
+      ],
+      "relation": "INSPECTED_CLASSICAL_CONTEXT_ONLY; printed statements over complex coefficients; direct all-field proof supplied.",
+      "title": "Differentiably finite power series",
+      "url": "https://math.mit.edu/~rstan/pubs/pubfiles/45.pdf",
+      "year": 1980
+    },
+    {
+      "author": "Jet Wimp",
+      "doi": "10.4153/CJM-1987-050-4",
+      "identity": "D_(m,h)(z)=27^(-h/2)*P_hat_h^(1/3,-1/3)(sqrt(27)*z;c=m+1)",
+      "journal": "Canadian Journal of Mathematics39(4),983-1000",
+      "locator": "equation12 printedp986; definitions printedpp983-985",
+      "parameters": {
+        "alpha": "1/3",
+        "association": "c=m+1",
+        "beta": "-1/3",
+        "first_squared_index": "m+2",
+        "gamma": "1"
+      },
+      "relation": "INSPECTED_CLASSICAL_CONTEXT_ONLY; local monic continuants, not scalar initial data or an imported association-shift zero theorem.",
+      "title": "Explicit formulas for the associated Jacobi polynomials and some applications",
+      "url": "https://doi.org/10.4153/CJM-1987-050-4",
+      "year": 1987
+    }
+  ],
+  "continuant_controls": {
+    "constant_continuant_H10_controls": 18,
+    "formal_H11_Laurent_controls": 16,
+    "local_index_controls": 12,
+    "local_path_determinants": 6
+  },
+  "logical_boundary": {
+    "actual_phase_properties_unconditionally_seeded": false,
+    "bounded_controls_prove_universal_quantifiers": false,
+    "classical_sources_are_logical_premises": false,
+    "external_mathematical_premises": [],
+    "universal_mathematics": "self-contained written H1-H19 and all-field proofs"
+  },
+  "pins": [
+    {
+      "path": "NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md",
+      "relation": "WRITTEN_SELF_CONTAINED_UNIVERSAL_PROOF",
+      "role": "main_proof",
+      "root": "here",
+      "sha256": "20ff19e08cc7decb8564346c363e2a3657d846241267a462899934d481458e07"
+    },
+    {
+      "path": "verify_noncentral_affine_cubic_shape.py",
+      "relation": "BOUNDED_EXACT_IDENTITIES_AND_SOURCE_AUTHENTICATION",
+      "role": "checker",
+      "root": "here",
+      "sha256": "42291bb10d235ef02d2ff42e13028d7c52045d0e6c4c5ca2818f56db9b62353f"
+    },
+    {
+      "path": "noncentral_affine_cubic_shape_inputs.json",
+      "relation": "EXACT_TYPED_SCOPE",
+      "role": "typed_inputs",
+      "root": "here",
+      "sha256": "4833413931ebafb91a09c5a3665d790779ef1cc5ed0b1e85c71800a58b6503e9"
+    }
+  ],
+  "realization_controls": {
+    "generic_lambda_endpoint_coefficients": 140,
+    "generic_lambda_marked_coefficients": 120,
+    "integer_degree_comparison_controls": 121,
+    "literal_realization_degree_controls": 10
+  },
+  "scalar_controls": {
+    "allowed_kappa2_shape": "7lambda^2-7lambda+2=0, kappa1/kappa3 nonzero",
+    "kappa_degree_and_exception_orders": 16,
+    "m0_failure": "lambda(lambda-1)(2lambda-1), value6 atlambda2",
+    "scalar_recurrence_controls": 15
+  },
+  "scope": {
+    "field": "every characteristic-zero field and every coefficient-field extension",
+    "nonclaims": {
+      "general_original_absolute_nonpower": false,
+      "generic_mixed_cubic_classification": false,
+      "global_degree5_resolved": false,
+      "global_degree7_resolved": false,
+      "new_original_Image_witness_theorem": false
+    },
+    "purity": {
+      "criterion": "pure iff h/2=1-x(E*h^3)'/(E*h^3)",
+      "unconditional_Pure_f_seed": false,
+      "universal_theorem_on_fixed_valid_H2_data": true
+    },
+    "rationality": {
+      "Q0": 1,
+      "Q_squarefree": true,
+      "h": "2/Q",
+      "nonconstant_Q_degree_E": "3*degQ+1",
+      "u_prime_and_J_may_vanish_at_finite_fiber": true
+    },
+    "safety": {
+      "all_arbitrary_A_markers_bad_claim": false,
+      "every_nonconstant_Kx_marker_infinitely_bad": true,
+      "every_order_marked_nonzero_claim": false,
+      "safe_degrees": "2,5,8,...",
+      "safe_iff_Q_constant": true,
+      "unsafe_degrees": "6,9,12,..."
+    },
+    "scalar": {
+      "actual_kappa_has_Jacobi_initial_data_claim": false,
+      "all_exceptions_handled": [
+        "0",
+        "1",
+        "-1",
+        "2"
+      ],
+      "fixed_gap_finite_for_r_Delta_nonzero": true,
+      "local_continuant_first_squared_index": "m+2",
+      "m0_recurrence_claim": false,
+      "only_midpoint_excluded": true,
+      "recurrence_minimum_m": 1
+    },
+    "schema": 1,
+    "shape": {
+      "E_polynomial_unit_at_zero": true,
+      "excluded_lambda": "1/2",
+      "formal_s_h_allowed": true,
+      "h0": 2,
+      "lambda_constant": true,
+      "purity_forces_constant_shape_claim": false,
+      "requires_all_kappa_m_nonzero": false,
+      "s0": -1
+    },
+    "source_boundary": {
+      "FPYZ_logical_premise": false,
+      "Stanley": "inspected context only",
+      "Wimp": "inspected local-associated-Jacobi context only",
+      "all_Aut_logical_premise": false,
+      "old429_logical_premise": false,
+      "self_contained_math": true
+    },
+    "support": {
+      "algebraic_required": true,
+      "arbitrarily_late_zero_blocks_required": true,
+      "infinitely_many_zero_coefficients_alone_suffices": false,
+      "second_marked_support_application_required": true
+    },
+    "verification": {
+      "bounded_exact_controls_only": true,
+      "external_review": false,
+      "finite_controls_prove_universal_quantifiers": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    }
+  },
+  "source_ledger_sha256": "11b5b143b899a1ec92fe784eafe236fe993287e35cd3d4b335b87c438d52f645",
+  "source_scope_negative_controls": 42,
+  "status": "PASS_SOURCE_GUARDED_NONCENTRAL_AFFINE_CUBIC",
+  "support_and_boundary_controls": {
+    "central_literal_boundary_controls": 12,
+    "mathematical_negative_controls": [
+      "Allowed noncentral shape7lambda^2-7lambda+2=0 has kappa2=0: all-kappa nonvanishing and EVERY-order marked survival are false.",
+      "The scalar recurrence cannot be extended to m0; its defect is lambda(lambda-1)(2lambda-1).",
+      "Algebraic rational1/(1-u^2) has infinitely many zero coefficients but is nonpolynomial: late arbitrary-length zero blocks are essential.",
+      "Nonpolynomial algebraic u/(1-u^2) is killed coefficientwise by midpoint kappas: marked-tail support must be reused.",
+      "Polynomial Bdiag=1+u^2 meets scalar diagonal constraints at the kappa2 shape: the omitted-value geometry is indispensable.",
+      "Central lambda1/2 admits polynomial-compatible a=1+x,h=2/(1+x)^2,E=(1+x)^7/8, Bdiag=1-u and ell!=J; it must remain excluded.",
+      "At a ramified finite fiber J may vanish; E=a/h^3 still has a pole, so nonzero u' is not assumed."
+    ],
+    "shift_triangular_controls": 63
+  },
+  "universal_polynomial_identity_controls": [
+    "H6 universal polynomial IBP certificate",
+    "H14 depressed h^2 coefficient",
+    "H14 depressed h^3 coefficient",
+    "Discriminant Delta=lambda^2(1-lambda)^2",
+    "H8 exact rational normalization",
+    "Wimp Eq12 monic local coefficient identification (context)"
+  ],
+  "written_identity_families": [
+    "H6 universal IBP polynomial certificate and exact scalar recurrence for m>=1 only.",
+    "H8 local Jacobi normalization; local zero-start determinant first uses t_(m+2).",
+    "H10 derivative certificate proves squarefree constant continuants algebraically.",
+    "H11 formal common m^-2 correction distinguishes every fixed nonzero spectral value.",
+    "Algebraic derivative span gives a finite polynomial coefficient recurrence with a nonzero highest shift.",
+    "H13 endpoint congruence and residue formula give Bdiag; both purity directions are scoped theorem propositions.",
+    "Two omitted finite values contradict a nonconstant rational map; polynomial E excludes every Bdiag root fiber.",
+    "H15 rational squarefreeQ degree data plus the SECOND support argument prove infinite polynomial-x marked survival.",
+    "H18-H19 degree comparisons and literal general-lambda safe/unsafe realizations."
+  ]
+}

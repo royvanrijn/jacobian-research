@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "field": "every characteristic-zero field and every coefficient-field extension",
+  "pairs": {
+    "integer": true,
+    "minimum": 2,
+    "n1_cone_argument_claim": false
+  },
+  "ring": "balanced subring C of K[xi,z], A=C/(R-1), R=sum xi_i z_i",
+  "trace": {
+    "diagonal_formula": "alpha!/(n)_D",
+    "off_diagonal_zero": true,
+    "all_polynomial_A_automorphisms": true,
+    "exact_top_coefficient_codimension": 1,
+    "exact_top_coefficient_space_is_ideal": false
+  },
+  "volume": {
+    "beta": "tr(M dM wedge dM)",
+    "omega": "beta^(n-1)/(n-1)!",
+    "automorphism_multiplier": "nonzero field constant",
+    "pointwise_preservation_claim": false
+  },
+  "original": {
+    "kernel": "ker E_n=sum_i(partial_zi-xi_i)S",
+    "kernel_is_ideal_claim": false,
+    "balanced_normalization": "E_n(H)=(n)_D Lambda(H|R=1)",
+    "arbitrary_marker_first_balanced": true,
+    "fixed_marker_per_transport": true,
+    "same_literal_marker_for_every_automorphism_claim": false
+  },
+  "power_descent": {
+    "full_original_ring": true,
+    "R_primitive_required": true,
+    "both_bigradings_required": true,
+    "scalar_factors_allowed": true,
+    "all_extensions": true
+  },
+  "transport": {
+    "pure": true,
+    "safe": true,
+    "unsafe": true,
+    "absolute_nonproper_power": true,
+    "arbitrary_automorphism_degree_formula_claim": false,
+    "starting_witness_existence_claim": false,
+    "padding_or_degree_spectrum_corollary_claim": false
+  },
+  "verification": {
+    "bounded_exact_controls_only": true,
+    "finite_controls_prove_universal_quantifiers": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  }
+}

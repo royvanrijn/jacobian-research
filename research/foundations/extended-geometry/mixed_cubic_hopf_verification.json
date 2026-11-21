@@ -1,0 +1,92 @@
+{
+  "analytic_boundary": {
+    "conditional_branch": "Written formal endpoint recurrence and rational-function valuations; finite controls do not prove it",
+    "cubic_prefix": "Direct rational identities; no external finite-prefix theorem imported",
+    "field_transfer": "Only the finitely generated coefficient field embeds in C",
+    "interval_rigidity": "FPYZ2011 Corollary4.1, printed27; complex coefficients and distinct interval endpoints"
+  },
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "mandatory_source_roles": 5,
+  "negative_controls": [
+    "first_three_moments_do_not_force_zero",
+    "corrupt_remainder",
+    "corrupt_depressed_invariant",
+    "purity_does_not_imply_invariant_zero_even_quintic"
+  ],
+  "proof_sha256": "c4fee78a3b99b286e22818f63c90f8da450293bde974b354fb22bd2866bf1dc6",
+  "scope": {
+    "characteristic_zero": true,
+    "conditional_E0_nonzero": true,
+    "conditional_degree_ceiling": 7,
+    "conditional_invariant_zero": true,
+    "conditional_offcenter_C0_over_B0": [
+      -3,
+      3
+    ],
+    "conditional_safe_degrees": [
+      5,
+      7
+    ],
+    "cubic_prefix": 4,
+    "global_degree5_7_resolution": false,
+    "nonnegative_angular_all_heights": true,
+    "prefix_three_suffices": false,
+    "purity_implies_invariant_zero": false,
+    "unrestricted_mixed_classification": false,
+    "zero_center_cubic": true
+  },
+  "source_ledger_sha256": "fbce8041bcae07cfcc471ca1112e53cc3579184e8f9c1531e28c3d6be8b0a74a",
+  "source_scope_controls": [
+    "omit:proof",
+    "bad_hash:proof",
+    "omit:checker",
+    "bad_hash:checker",
+    "omit:inputs",
+    "bad_hash:inputs",
+    "omit:classical_interval_rigidity",
+    "bad_hash:classical_interval_rigidity",
+    "omit:classical_stronger_context",
+    "bad_hash:classical_stronger_context",
+    "false_scope:characteristic_zero",
+    "false_scope:conditional_E0_nonzero",
+    "false_scope:conditional_degree_ceiling",
+    "false_scope:conditional_invariant_zero",
+    "false_scope:conditional_offcenter_C0_over_B0",
+    "false_scope:conditional_safe_degrees",
+    "false_scope:cubic_prefix",
+    "false_scope:global_degree5_7_resolution",
+    "false_scope:nonnegative_angular_all_heights",
+    "false_scope:prefix_three_suffices",
+    "false_scope:purity_implies_invariant_zero",
+    "false_scope:unrestricted_mixed_classification",
+    "false_scope:zero_center_cubic",
+    "boolean_schema",
+    "boolean_integer_domain",
+    "logical_input_downgraded"
+  ],
+  "status": "PASS_SOURCE_GUARDED_MIXED_CUBIC_REDUCTIONS",
+  "universal_identities": [
+    "normalized_first_moment",
+    "second_moment",
+    "third_moment",
+    "fourth_moment",
+    "third_reduction",
+    "fourth_reduction",
+    "q_remainder",
+    "P_remainder",
+    "q_contradiction",
+    "P_contradiction",
+    "quadratic_contradiction",
+    "depressed_cubic_invariant",
+    "depressed_cubic_expansion",
+    "endpoint_profile",
+    "safe_quintic_literal_numerator",
+    "safe_quintic_invariant",
+    "safe_quintic_exact_top_degree",
+    "safe_quintic_exact_height"
+  ]
+}

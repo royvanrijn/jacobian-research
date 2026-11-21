@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "field": "every characteristic-zero field and every coefficient-field extension",
+  "pairs": {
+    "integer": true,
+    "minimum": 3,
+    "two_pair_coverage_claim": false
+  },
+  "degree": {
+    "integer": true,
+    "balanced_minimum": 2,
+    "ordinary_total": "2D",
+    "least_matrix_degree": "D",
+    "degree_one_claim": false
+  },
+  "seed": {
+    "retained_preprint_credit": true,
+    "journal_publication_claim": false,
+    "all_order_identities_reproved": true
+  },
+  "family": {
+    "D2": "tau(t-y)(wz+vt)",
+    "D_at_least3": "tau(t-y)[R^(D-2)(wz+vt)+(wy)^(D-2)w(t-y)]",
+    "same_marker": "tau*y",
+    "marker_balanced_degree": 1,
+    "marker_same_for_all_n_D_m": true
+  },
+  "moments": {
+    "all_positive_integer_orders": true,
+    "pure": 0,
+    "mixed": "(-1)^(m-1)(m+1)!m! (n+2m+1)_(m(D-2))",
+    "Image_kernel_is_vector_space_not_ideal": true
+  },
+  "power": {
+    "full_original_ring": true,
+    "R_primitive": true,
+    "tau_valuation": 1,
+    "absolute_scalar_nonproper_power": true,
+    "all_extensions": true
+  },
+  "source_boundary": {
+    "all_math_reproved": true,
+    "all_Aut_theorem_logical_premise": false,
+    "automorphism_group_classification_logical_premise": false,
+    "finite_prefix_logical_premise": false,
+    "seed_file_relation": "AUTHENTICATED_RETAINED_PREPRINT_CREDIT_ONLY"
+  },
+  "nonclaims": {
+    "all_polynomials_of_these_degrees_fail": false,
+    "two_pair_degree5_resolved": false,
+    "two_pair_degree7_resolved": false,
+    "Jacobian_consequence": false,
+    "historical_priority": false
+  },
+  "verification": {
+    "bounded_exact_controls_only": true,
+    "finite_controls_prove_universal_quantifiers": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false
+  }
+}

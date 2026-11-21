@@ -1,0 +1,168 @@
+{
+  "classical_context": {
+    "author": "Doron Zeilberger",
+    "journal": "Discrete Mathematics",
+    "locator": "Section2 printed63 equation2",
+    "pages": "61-72",
+    "role": "classical_context_only",
+    "sha256": "6378bd7078732326b6b228d2d27e490f3cde33a278bbec40ba6d3a79640b9e5f",
+    "title": "A combinatorial approach to matrix algebra",
+    "url": "https://sites.math.rutgers.edu/~zeilberg/mamarimY/DM85.pdf",
+    "volume": 56,
+    "year": 1985
+  },
+  "composite_seed_orders": [
+    1,
+    2,
+    3
+  ],
+  "filter_degrees": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "filter_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "logical_boundary": {
+    "all_characteristic_zero_extensions": true,
+    "all_nonzero_input_weights_annihilated": false,
+    "arbitrary_shifted_progression": false,
+    "composite_automatic_nonpower": false,
+    "external_mathematical_premise": false,
+    "external_review": false,
+    "fixed_r_multiples_and_eventual_multiples": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "nilpotence_safety_both_directions": true,
+    "original_full_polynomial_markers": true,
+    "positive_characteristic": false,
+    "prime_counterexample_absolute_scalar_nonpower": true,
+    "purity_alone_nonpower": false,
+    "radial_primitivity_required": false,
+    "squarefree_or_irreducible_conclusion": false,
+    "two_pair_five_seven_resolution": false,
+    "unconditional_witness_existence": false
+  },
+  "matrix_controls": [
+    [
+      [
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        -1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "moment_orders": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "prime_scope_controls": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "schema": 1,
+  "sharp_marker_degrees": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

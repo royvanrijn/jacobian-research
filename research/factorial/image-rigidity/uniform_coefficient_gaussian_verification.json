@@ -1,0 +1,304 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "1b94203a8a54b6218d776d20c9329ea36d0afb4e76725ead09bc5bae8e04f2d2",
+  "counts": {
+    "Hilbert_profiles": 31,
+    "actual_Macaulay_quotients": 21,
+    "actual_graded_rank_checks": 189,
+    "actual_radial_phase_moments": 18,
+    "finite_actual_profiles": [
+      {
+        "M": 2,
+        "a": 0,
+        "d": 1,
+        "length": 2,
+        "sharp_nilpotence": 2,
+        "socle": 1
+      },
+      {
+        "M": 3,
+        "a": 0,
+        "d": 1,
+        "length": 6,
+        "sharp_nilpotence": 4,
+        "socle": 3
+      },
+      {
+        "M": 4,
+        "a": 0,
+        "d": 1,
+        "length": 12,
+        "sharp_nilpotence": 6,
+        "socle": 5
+      },
+      {
+        "M": 5,
+        "a": 0,
+        "d": 1,
+        "length": 20,
+        "sharp_nilpotence": 8,
+        "socle": 7
+      },
+      {
+        "M": 6,
+        "a": 0,
+        "d": 1,
+        "length": 30,
+        "sharp_nilpotence": 10,
+        "socle": 9
+      },
+      {
+        "M": 7,
+        "a": 0,
+        "d": 1,
+        "length": 42,
+        "sharp_nilpotence": 12,
+        "socle": 11
+      },
+      {
+        "M": 8,
+        "a": 0,
+        "d": 1,
+        "length": 56,
+        "sharp_nilpotence": 14,
+        "socle": 13
+      },
+      {
+        "M": 2,
+        "a": 1,
+        "d": 2,
+        "length": 2,
+        "sharp_nilpotence": 2,
+        "socle": 1
+      },
+      {
+        "M": 3,
+        "a": 1,
+        "d": 2,
+        "length": 6,
+        "sharp_nilpotence": 4,
+        "socle": 3
+      },
+      {
+        "M": 4,
+        "a": 1,
+        "d": 2,
+        "length": 12,
+        "sharp_nilpotence": 6,
+        "socle": 5
+      },
+      {
+        "M": 5,
+        "a": 1,
+        "d": 2,
+        "length": 20,
+        "sharp_nilpotence": 8,
+        "socle": 7
+      },
+      {
+        "M": 6,
+        "a": 1,
+        "d": 2,
+        "length": 30,
+        "sharp_nilpotence": 10,
+        "socle": 9
+      },
+      {
+        "M": 7,
+        "a": 1,
+        "d": 2,
+        "length": 42,
+        "sharp_nilpotence": 12,
+        "socle": 11
+      },
+      {
+        "M": 8,
+        "a": 1,
+        "d": 2,
+        "length": 56,
+        "sharp_nilpotence": 14,
+        "socle": 13
+      },
+      {
+        "M": 2,
+        "a": 2,
+        "d": 3,
+        "length": 2,
+        "sharp_nilpotence": 2,
+        "socle": 1
+      },
+      {
+        "M": 3,
+        "a": 2,
+        "d": 3,
+        "length": 6,
+        "sharp_nilpotence": 4,
+        "socle": 3
+      },
+      {
+        "M": 4,
+        "a": 2,
+        "d": 3,
+        "length": 12,
+        "sharp_nilpotence": 6,
+        "socle": 5
+      },
+      {
+        "M": 5,
+        "a": 2,
+        "d": 3,
+        "length": 20,
+        "sharp_nilpotence": 8,
+        "socle": 7
+      },
+      {
+        "M": 6,
+        "a": 2,
+        "d": 3,
+        "length": 30,
+        "sharp_nilpotence": 10,
+        "socle": 9
+      },
+      {
+        "M": 7,
+        "a": 2,
+        "d": 3,
+        "length": 42,
+        "sharp_nilpotence": 12,
+        "socle": 11
+      },
+      {
+        "M": 8,
+        "a": 2,
+        "d": 3,
+        "length": 56,
+        "sharp_nilpotence": 14,
+        "socle": 13
+      }
+    ],
+    "genuine_math_negative_families": 5,
+    "nonreduced_ring_countercontrols": 31,
+    "radial_Gaussian_powers_and_convolutions": 65
+  },
+  "input_sha256": "ac19760f560bdb179e112cbe20129af7226c3ee40706747b6902246eedbfc98d",
+  "mandatory_source_roles": 5,
+  "meaning": "The pointwise regular-sequence/Hilbert proof and formal Gaussian generating function establish the universal implications. Finite exact ranks, moments and source controls support those proofs; they do not evaluate the shared cutoff or prove all-order SFC.",
+  "proof_sha256": "200881f425252bcee55be4598ebdc5573cf3d1219536dce5332393e8170195c7",
+  "schema": 1,
+  "scope": {
+    "all_order_SFC": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false
+    },
+    "coefficient_rings": "unital commutative Q-algebras",
+    "controls": {
+      "Gaussian_power_max": 64,
+      "Hilbert_terminal_max": 32,
+      "Macaulay_terminal_max": 8,
+      "moment_max": 6,
+      "supports": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "effective_cutoff": false,
+    "exponent_independent_of_support_but_not_terminal": true,
+    "finite_controls_certify_universal_estimates": false,
+    "fixed_pair_terminal_minimum": 2,
+    "fixed_pair_universal_predicates_equivalent": true,
+    "full_eventual_equivalence_requires_every_M_beyond_shared_cutoff": true,
+    "gaussian_dimension": 2,
+    "gaussian_radial_moment": "k!",
+    "gaussian_variance": 1,
+    "ideal_power_exponent": "2*M-2",
+    "other_dimensions_or_Gamma_shapes_included": false,
+    "pointwise_coefficient_nilpotence_iff_prescribed_pair_vanishes": false,
+    "radial_denominator": 2,
+    "reduced_Q_algebra_nonzero_phases_share_cutoff": true,
+    "reviewed_proof_sha256": "200881f425252bcee55be4598ebdc5573cf3d1219536dce5332393e8170195c7",
+    "schema": 1,
+    "single_good_pair_implies_all_higher_pairs": false,
+    "terminal_independent_nilpotence_exponent_for_unspecified_late_pair": false,
+    "universal_CI_length": "M*(M-1)",
+    "universal_CI_top_degree": "2*M-3"
+  },
+  "source_ledger_sha256": "22778ef119120fba3c20b600ea3e468ee335b49ca68848e1ceeefd3a000110a9",
+  "source_scope_negative_controls": [
+    "omit:main_proof",
+    "badpin:main_proof",
+    "omit:exact_checker",
+    "badpin:exact_checker",
+    "omit:exact_inputs",
+    "badpin:exact_inputs",
+    "omit:global_eventual_input",
+    "badpin:global_eventual_input",
+    "omit:retained_CI_mechanism",
+    "badpin:retained_CI_mechanism",
+    "false-scope:single_good_pair_implies_all_higher_pairs",
+    "false-scope:pointwise_coefficient_nilpotence_iff_prescribed_pair_vanishes",
+    "false-scope:terminal_independent_nilpotence_exponent_for_unspecified_late_pair",
+    "false-scope:other_dimensions_or_Gamma_shapes_included",
+    "false-scope:all_order_SFC",
+    "false-scope:effective_cutoff",
+    "false-scope:finite_controls_certify_universal_estimates",
+    "wrong-domain-or-type:coefficient_rings",
+    "wrong-domain-or-type:gaussian_dimension",
+    "wrong-domain-or-type:radial_denominator",
+    "wrong-domain-or-type:schema",
+    "boolean-ledger-schema"
+  ],
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_uniform_coefficient_gaussian_corollary.py",
+      "relation": "exact_algebra_and_source_support",
+      "role": "exact_checker",
+      "sha256": "1b94203a8a54b6218d776d20c9329ea36d0afb4e76725ead09bc5bae8e04f2d2"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_coefficient_gaussian_inputs.json",
+      "relation": "typed_quantifier_and_shape_scope",
+      "role": "exact_inputs",
+      "sha256": "ac19760f560bdb179e112cbe20129af7226c3ee40706747b6902246eedbfc98d"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SYNTHESIS.md",
+      "relation": "one_support_uniform_field_cutoff_only",
+      "role": "global_eventual_input",
+      "sha256": "2923c4c29f5e29dd02fb5f25d50e5167e6b9d71b1a66bf41d8e24453f7a1a722"
+    },
+    {
+      "kind": "local",
+      "path": "SUPPORT_UNIFORM_COEFFICIENT_NILPOTENCE_AND_RADIAL_GAUSSIAN.md",
+      "relation": "written_pointwise_CI_equivalences_and_exact_radial_identity",
+      "role": "main_proof",
+      "sha256": "200881f425252bcee55be4598ebdc5573cf3d1219536dce5332393e8170195c7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/EVENTUAL_BINOMIAL_ALGEBRAIC_CONSEQUENCES.md",
+      "relation": "classical_regular_sequence_Hilbert_mechanism_reproduced_here",
+      "role": "retained_CI_mechanism",
+      "sha256": "1f200d3a3f060c41fae993a65ba2dc5376af81456a9b16a952ec1ca153901830"
+    }
+  ],
+  "status": "PASS"
+}

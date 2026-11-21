@@ -1,0 +1,83 @@
+{
+  "all_automorphisms": {
+    "all_polynomial_A_automorphisms_preserve_Lambda": true,
+    "arbitrary_automorphism_preserves_ordinary_degree_claim": false,
+    "exact_form_space_is_ideal_claim": false,
+    "exact_form_vector_space_codimension": 1,
+    "marker_transported_by_sigma": true,
+    "nu_k_plus_c_for_all_automorphisms_claim": false,
+    "pointwise_volume_form_preservation_claim": false,
+    "pure_safe_unsafe_transport": true
+  },
+  "degree": {
+    "all_k_formula_claim": false,
+    "formula": "nu*k+c",
+    "meaning": "least ordinary sphere filtration degree, not derivation height",
+    "only_nonzero_f": true,
+    "only_nu_positive": true,
+    "sufficient_threshold": "k>=d-c+1"
+  },
+  "derivation": "J=x partial_t-t partial_y",
+  "field": "every characteristic-zero field and every coefficient-field extension",
+  "low_height": {
+    "arbitrary_nonlinear_conjugates_claim": false,
+    "linear_orthogonal_conjugates_only": true,
+    "odd_height_uses_retained_full_quadratic_classification": true,
+    "odd_unsafe_nu_min": 3,
+    "unsafe_nu_min": 2
+  },
+  "mixed_box": {
+    "all_odd_phases_have_a_height3_direction_claim": false,
+    "degree5_resolved": false,
+    "degree7_resolved": false,
+    "degree_bounds": [
+      "degC<=d+1",
+      "degB<=d",
+      "degD<=d-1",
+      "degE<=d-2"
+    ],
+    "dimensions": {
+      "5": 20,
+      "7": 28
+    },
+    "nu_at_most": 3,
+    "odd_only_class_exhausts_mixed_box_claim": false,
+    "regularity": [
+      "C0+D0=0",
+      "B0+E0=0"
+    ],
+    "shape": "x^-1(C+tB+t^2D+t^3E)"
+  },
+  "moments": {
+    "Kx_marker_unchanged": true,
+    "arbitrary_marker_preserves_every_even_order_claim": false,
+    "arbitrary_original_marker_first_balanced": true,
+    "marker_may_depend_on_k": true,
+    "one_fixed_marker_per_k": true,
+    "pure_all_positive_orders": true
+  },
+  "power_descent": {
+    "all_extensions": true,
+    "both_bigrading_extremes_required": true,
+    "primitive_homogenization_required_for_iff": true,
+    "ring": "FULL original four-variable polynomial ring",
+    "scalar_factors_allowed": true
+  },
+  "ring": "K[x,y,t]/(t^2+2xy-1)",
+  "schema": 1,
+  "source_boundary": {
+    "classical_LND_context": "inspected context, not an imported logical premise",
+    "general_degree_and_power_proof": "self-contained",
+    "old_even_or_prime_coverage": "not a logical premise",
+    "quadratic_classification": "logical only for odd-unsafe nu<=2 exclusion",
+    "source_authentication_is_not_a_finite_prefix_proof": true
+  },
+  "verification": {
+    "bounded_exact_controls_only": true,
+    "external_review": false,
+    "finite_controls_prove_universal_quantifiers": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  }
+}

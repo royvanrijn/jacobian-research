@@ -1,0 +1,52 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "FIXED_TERMINAL_REPEATED_ROOT_SUPPORT_FINITENESS.md",
+      "relation": "complete written fixed-terminal proof; exact frozen847 body",
+      "role": "reviewed_proof",
+      "sha256": "847a961f4f55400f2fc5973fa2ea547c694ea998150dce1e45a75e1cb206a24d"
+    },
+    {
+      "kind": "local",
+      "path": "verify_fixed_terminal_repeated_support.py",
+      "relation": "exact algebra, finite coefficients, source and scope support",
+      "role": "exact_checker",
+      "sha256": "5682b139b031f48bde77a74749e2caf7daa9963e3ec52447ad9c8db5847941b9"
+    },
+    {
+      "kind": "local",
+      "path": "fixed_terminal_repeated_support_inputs.json",
+      "relation": "fixed-terminal quantifiers, actual shape and exact source boundary",
+      "role": "typed_inputs",
+      "sha256": "ef4c74606a13d32e6fea43996ef8e0a96b28227ec54a6e21a17accb4b8050bd4"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "relation": "ONLY thm:sparse individual-squarefreeness clause and proof; a>=1,d>=2",
+      "role": "raw_sparse",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+      "relation": "ONLY thm:large coefficient proof for a0; no all-order finite prefix",
+      "role": "raw_large_exponent",
+      "sha256": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "actual v3 printedp2 equations1.4-1.5 and printedp5 Lemma2.1; finite circle law only",
+      "role": "finite_Lee_Yang_primary",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    }
+  ]
+}

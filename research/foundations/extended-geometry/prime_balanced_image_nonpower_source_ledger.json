@@ -1,0 +1,43 @@
+{
+  "logical_boundary": {
+    "all_characteristic_zero_extensions": true,
+    "all_nonzero_input_weights_annihilated": false,
+    "arbitrary_shifted_progression": false,
+    "composite_automatic_nonpower": false,
+    "external_mathematical_premise": false,
+    "external_review": false,
+    "fixed_r_multiples_and_eventual_multiples": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "nilpotence_safety_both_directions": true,
+    "original_full_polynomial_markers": true,
+    "positive_characteristic": false,
+    "prime_counterexample_absolute_scalar_nonpower": true,
+    "purity_alone_nonpower": false,
+    "radial_primitivity_required": false,
+    "squarefree_or_irreducible_conclusion": false,
+    "two_pair_five_seven_resolution": false,
+    "unconditional_witness_existence": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "path": "PRIME_BALANCED_IMAGE_FAILURES_ARE_ABSOLUTELY_NONPOWER.md",
+      "relation": "mathematical_proof",
+      "role": "written_proof",
+      "sha256": "46669b6dc70e08b197607a5f10ca70f08016e35ca8e7f3540501346344d15642"
+    },
+    {
+      "path": "verify_prime_balanced_image_nonpower.py",
+      "relation": "identity_and_source_support",
+      "role": "exact_checker",
+      "sha256": "55610c06f1c913252efe8e698ad660952dc5a6813b51edca9377a308a4da879b"
+    },
+    {
+      "path": "prime_balanced_image_nonpower_inputs.json",
+      "relation": "exact_control_data",
+      "role": "typed_inputs",
+      "sha256": "bb22e02727219589ee376b03ba6e33d77b39cfebe87aa809e9df4ef6b461392d"
+    }
+  ]
+}

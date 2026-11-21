@@ -1,0 +1,181 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_sha256": "5682b139b031f48bde77a74749e2caf7daa9963e3ec52447ad9c8db5847941b9",
+  "counts": {
+    "Gaussian_full_ODEs": 24,
+    "actual_d1_Gamma_full_ODEs": 18,
+    "centered_Gamma_cumulants": 231,
+    "finite_CW_exponent_and_sign_entries": 600,
+    "full_actual_own_shape_vectors": 54,
+    "full_global_Taylor_derivative_polynomials": 33,
+    "genuine_math_negative_families": 5,
+    "heat_PDE_and_Vieta_polynomials": 23,
+    "universal_identities": [
+      "Fourier-shift heat eigenvalue",
+      "finite-CW actual radial exponent",
+      "Gamma-ODE coefficient recurrence",
+      "mgf budget derivative in inverse-sqrt-a",
+      "mgf budget derivative in inverse-terminal"
+    ],
+    "whole_Gamma_budget_controls": 93
+  },
+  "input_sha256": "ef4c74606a13d32e6fea43996ef8e0a96b28227ec54a6e21a17accb4b8050bd4",
+  "mandatory_source_roles": 6,
+  "meaning": "The frozen complete written proof establishes fixed-terminal support finiteness. Exact polynomial identities, finite actual coefficient vectors and source/scope controls support its algebra. They do not prove discriminant compactness, asymptotic uniformity, a numerical box, a support-uniform terminal cutoff or an all-order theorem.",
+  "proof_sha256": "847a961f4f55400f2fc5973fa2ea547c694ea998150dce1e45a75e1cb206a24d",
+  "schema": 1,
+  "scope": {
+    "Gamma_Gaussian_common_space_coupling_claimed": false,
+    "HJN_motion_imported": false,
+    "a0_uses_only_raw_large_exponent_criterion": true,
+    "actual_shape": "a*m+1",
+    "all_order_SFC": false,
+    "all_order_boundary_prefix_imported": false,
+    "all_order_squarefreeness": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false
+    },
+    "claim": "finitely many repeated-root SUPPORTS at EACH fixed terminal",
+    "coefficient_fields": "Q, equivalently complex repeated roots",
+    "compact_c_limit": "fixed degree; actual coefficient convergence and discriminant compactness",
+    "controls": {
+      "CW_c_values": [
+        "1/8",
+        "1/2",
+        "1",
+        "3"
+      ],
+      "CW_degree_max": 16,
+      "Gamma_cumulant_max": 12,
+      "Gaussian_degree_max": 24,
+      "Taylor_degree_max": 12,
+      "actual_a_squares": [
+        1,
+        4,
+        9
+      ],
+      "actual_gaps": [
+        2,
+        3,
+        5
+      ],
+      "actual_m_max": 6,
+      "budget_terminal_max": 32,
+      "heat_degree_max": 24,
+      "inverse_sqrt_a_values": [
+        "1",
+        "1/2",
+        "1/5"
+      ]
+    },
+    "d1_simplicity": "explicit Gamma ODE, not adjacent coprimality",
+    "evaluated_support_box": false,
+    "external_input": "finite Lee-Yang circle law for H_m(z;t), EVERY finite m and t>0",
+    "finite_controls_prove_asymptotic_uniformity": false,
+    "finite_controls_prove_discriminant_compactness": false,
+    "finite_global_repeated_triple_set_claimed": false,
+    "finite_per_terminal": true,
+    "finite_per_terminal_implies_finite_global_triples": false,
+    "global_h_Taylor_domain": "v>=-sqrt(a), d>=2, a>=1",
+    "h_Taylor_on_whole_real_line_claimed": false,
+    "large_c_limit": "global Gamma L^m nonlinear comparison and momentwise Gaussian convergence",
+    "large_degree_zero_law_imported": false,
+    "model_simplicity": "self-derived backward-heat multiplicity blowup",
+    "polynomial": "sum binom(m,k)*(a*m+1)_(d*k)*x^(m-k)",
+    "proof_body_preserved_exactly": true,
+    "raw_sparse_individual_clause_is_logical_input": true,
+    "reviewed_body_sha256": "847a961f4f55400f2fc5973fa2ea547c694ea998150dce1e45a75e1cb206a24d",
+    "schema": 1,
+    "supports": "integer a>=0,d>=1",
+    "terminal": "EACH fixed integer m>=2",
+    "theorem407_or418_imported": false,
+    "uniform_terminal_cutoff_claimed": false,
+    "unitary_Hermite_time": "1/(c*m), c=a/d^2"
+  },
+  "source_ledger_sha256": "9c11b463412f2ecd6c18a9353ee3b58bc1ad5d5b8b7d1dd062758ba173e57f3b",
+  "source_scope_negative_controls": [
+    "omit:reviewed_proof",
+    "badpin:reviewed_proof",
+    "omit:exact_checker",
+    "badpin:exact_checker",
+    "omit:typed_inputs",
+    "badpin:typed_inputs",
+    "omit:raw_sparse",
+    "badpin:raw_sparse",
+    "omit:raw_large_exponent",
+    "badpin:raw_large_exponent",
+    "omit:finite_Lee_Yang_primary",
+    "badpin:finite_Lee_Yang_primary",
+    "false-scope:uniform_terminal_cutoff_claimed",
+    "false-scope:finite_global_repeated_triple_set_claimed",
+    "false-scope:all_order_squarefreeness",
+    "false-scope:all_order_SFC",
+    "false-scope:evaluated_support_box",
+    "false-scope:HJN_motion_imported",
+    "false-scope:large_degree_zero_law_imported",
+    "false-scope:theorem407_or418_imported",
+    "false-scope:all_order_boundary_prefix_imported",
+    "false-scope:h_Taylor_on_whole_real_line_claimed",
+    "false-scope:Gamma_Gaussian_common_space_coupling_claimed",
+    "false-scope:finite_per_terminal_implies_finite_global_triples",
+    "false-scope:finite_controls_prove_discriminant_compactness",
+    "false-scope:finite_controls_prove_asymptotic_uniformity",
+    "wrong-type-or-domain:schema",
+    "wrong-type-or-domain:actual_shape",
+    "wrong-type-or-domain:unitary_Hermite_time",
+    "wrong-type-or-domain:terminal",
+    "wrong-type-or-domain:supports",
+    "boolean-ledger-schema"
+  ],
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_fixed_terminal_repeated_support.py",
+      "relation": "exact algebra, finite coefficients, source and scope support",
+      "role": "exact_checker",
+      "sha256": "5682b139b031f48bde77a74749e2caf7daa9963e3ec52447ad9c8db5847941b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "actual v3 printedp2 equations1.4-1.5 and printedp5 Lemma2.1; finite circle law only",
+      "role": "finite_Lee_Yang_primary",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+      "relation": "ONLY thm:large coefficient proof for a0; no all-order finite prefix",
+      "role": "raw_large_exponent",
+      "sha256": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "relation": "ONLY thm:sparse individual-squarefreeness clause and proof; a>=1,d>=2",
+      "role": "raw_sparse",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "local",
+      "path": "FIXED_TERMINAL_REPEATED_ROOT_SUPPORT_FINITENESS.md",
+      "relation": "complete written fixed-terminal proof; exact frozen847 body",
+      "role": "reviewed_proof",
+      "sha256": "847a961f4f55400f2fc5973fa2ea547c694ea998150dce1e45a75e1cb206a24d"
+    },
+    {
+      "kind": "local",
+      "path": "fixed_terminal_repeated_support_inputs.json",
+      "relation": "fixed-terminal quantifiers, actual shape and exact source boundary",
+      "role": "typed_inputs",
+      "sha256": "ef4c74606a13d32e6fea43996ef8e0a96b28227ec54a6e21a17accb4b8050bd4"
+    }
+  ],
+  "status": "PASS_FIXED_TERMINAL_REPEATED_ROOT_SUPPORT_FINITENESS"
+}

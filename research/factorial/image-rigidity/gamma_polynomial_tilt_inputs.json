@@ -1,0 +1,64 @@
+{
+  "barriers": {
+    "all_order_resultant_proved": false,
+    "factorial_SFC_counterexample": false,
+    "law_class_positivity_implies_ordered_separation": false,
+    "no_fixed_finite_band_recurrence_in_THIS_Appell_basis": true,
+    "other_basis_or_multi_index_excluded_claim": false,
+    "pure_product_or_Gamma_power_counterexample": false
+  },
+  "closure": {
+    "coefficientwise_rescaling": "(gamma)_(K+d) A N",
+    "finite_product_Gamma_closed_claim": false,
+    "law_identity_uses_full_test_functions": true,
+    "moment_determinacy_assumed": false,
+    "moment_matching_alone_identifies_law": false,
+    "nonnegative_coefficients": true,
+    "translated_zero_bias_law": "X^d under tilt X^d N(X)"
+  },
+  "probability_domain": {
+    "all_moments_exist": true,
+    "base_rate": 1,
+    "d": "positive integer",
+    "gamma": "real gamma>0",
+    "tilt": "nonzero polynomial with nonnegative real coefficients"
+  },
+  "schema": 1,
+  "source_boundary": {
+    "GR_primary": "classical zero-bias definition/existence/uniqueness only",
+    "old_convolution_note": "authenticated retained-example credit only; new witness verified directly",
+    "unrelated_multiple_orthogonality_or_branched_fraction_PDFs_imported": false
+  },
+  "verification": {
+    "bounded_exact_controls_only": true,
+    "external_review": false,
+    "finite_controls_prove_universal_closure": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "witness": {
+    "base_rate": 1,
+    "degrees": [
+      4,
+      5
+    ],
+    "gamma": "5014/361",
+    "mean": "264/19",
+    "mixture_nodes": [
+      0,
+      1,
+      24,
+      25,
+      88,
+      89
+    ],
+    "new_scope": "exact finite positive polynomial tilt realization of the retained collision",
+    "old_Gamma_convolution_collision_rediscovered_claim": false,
+    "old_collision_scale": 2,
+    "shared_factor": "u^2-2u+76",
+    "shared_factor_discriminant": -300,
+    "tilt_degree": 89,
+    "variance": "14"
+  }
+}

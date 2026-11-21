@@ -1,0 +1,68 @@
+{
+  "E0_zero_case_all_center_coefficients_zero": true,
+  "E0_zero_case_requires_I_zero": true,
+  "FPYZ_needed": false,
+  "all_Aut_or_424_needed": false,
+  "arbitrary_marker_rational_shift_safety_transfer": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "central_classification_max_least_degree": 7,
+  "central_unit_hypotheses": [
+    "I=0",
+    "E0!=0",
+    "C0=D0=0",
+    "B0=-E0"
+  ],
+  "characteristic_zero": true,
+  "controls": {
+    "degree6_boxes": 6,
+    "polynomial_x_markers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_m_max": 6,
+    "retained_Bezout_cases": [
+      "h1",
+      "h3_j1",
+      "h0_d_nonzero",
+      "zero_center_core"
+    ]
+  },
+  "depression_does_not_increase_least_degree": true,
+  "entire_invariant_zero_degree5_and7_safe": true,
+  "exact_moment_transfer": "EVERY m>=1 and EVERY polynomial-x monomial marker x^ell,ell>=0",
+  "full_shape430_needed": false,
+  "full_zero_center_uses": "425 algebraic first FOUR moments only",
+  "generic_I_nonzero_classified": false,
+  "invariant": "I=27*C*E^2-9*B*D*E+2*D^3",
+  "nonpower_exact_J_height": 3,
+  "nonpower_negative_center": "(C0 != 0) OR (B0 != 0)",
+  "nonpower_over_every_extension": true,
+  "odd_degree6_unique": "H=b*(1+a*x)^2,E=-b*(1+a*x)^4,a*b!=0",
+  "original_lift_power_argument_uses_both_gradings": true,
+  "prime11_minimality_claimed": false,
+  "pure_phase_forced_I_zero": false,
+  "pure_unsafe_height3_nonpower": true,
+  "rational_depression_polynomial_H": true,
+  "rational_u_inferred_from_finite_controls": false,
+  "regularity": [
+    "C0+D0=0",
+    "B0+E0=0"
+  ],
+  "reviewed_proof_sha256": "0b65f1da0010eaa646355670099cdd0bbd111ace80abb85f76eeccc1e5547fc9",
+  "safe_central_exact_degrees": [
+    2,
+    5
+  ],
+  "schema": 1,
+  "unrestricted_global_degrees5_or7_resolved": false,
+  "unsafe_central_exact_degrees": [
+    6
+  ]
+}

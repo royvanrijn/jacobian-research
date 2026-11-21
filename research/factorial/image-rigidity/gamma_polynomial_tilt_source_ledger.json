@@ -1,0 +1,65 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "logical_boundary": {
+    "GR_primary": "classical zero-bias definition/existence/uniqueness only",
+    "old_convolution_note": "authenticated retained-example credit only; new witness verified directly",
+    "unrelated_multiple_orthogonality_or_branched_fraction_PDFs_imported": false
+  },
+  "primary": {
+    "authors": "Larry Goldstein and Gesine Reinert",
+    "doi": "10.1214/aoap/1043862419",
+    "locators": [
+      "Definition1.1 printedp2",
+      "Existence/uniqueness printedpp2-3",
+      "Lemma2.1 printedp4"
+    ],
+    "published": "Ann. Appl. Probab.7(1997),935-952",
+    "retained_version": "Author manuscript dated28Nov2001",
+    "scope": "Centered finite nonzero variance zero bias. Translate back to Y; the Gamma-law identity here is proved with full compactly-supported C1 tests, not from moments alone.",
+    "title": "Stein's Method and the Zero Bias Transformation with Application to Simple Random Sampling",
+    "url": "https://dornsife.usc.edu/larry-goldstein/wp-content/uploads/sites/221/2023/06/zer.pdf"
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "boundary": "WRITTEN_CLOSURE_AND_EXACT_FINITE_REALIZATION",
+      "path": "GAMMA_POLYNOMIAL_TILT_ZERO_BIAS_CLOSURE_AND_OBSTRUCTION.md",
+      "role": "proof",
+      "root": "here",
+      "sha256": "28b7302c8b63accdb41872bcb76655881bcb912742355a04acac3b0feb425113"
+    },
+    {
+      "boundary": "BOUNDED_EXACT_CONTROLS_NOT_UNIVERSAL_QUANTIFIER_PROOF",
+      "path": "verify_gamma_polynomial_tilt_zero_bias.py",
+      "role": "checker",
+      "root": "here",
+      "sha256": "5859cecf88c7197ceb49cd0b26cc6b11a18ecfe6f1d628e67c26940e06f8bd70"
+    },
+    {
+      "boundary": "EXACT_TYPED_SCOPE",
+      "path": "gamma_polynomial_tilt_inputs.json",
+      "role": "inputs",
+      "root": "here",
+      "sha256": "a2b0dac77437d1536e95e3a77aa2d3e3aaf898dd459f9451b2f9b3e51a00a154"
+    },
+    {
+      "boundary": "CLASSICAL_ZERO_BIAS_IDENTIFICATION_AND_ATTRIBUTION_ONLY",
+      "path": "research/factorial/image-rigidity/sources/goldstein_reinert_zero_bias_author2001.pdf",
+      "role": "zero_bias_primary",
+      "root": "repo",
+      "sha256": "e435d58b7cba5567e53a11c269d7cf305c5af0870b51ae6cdb6e79ed25f9b983"
+    },
+    {
+      "boundary": "AUTHENTICATED_RETAINED_COLLISION_CREDIT_ONLY",
+      "path": "research/factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex",
+      "role": "retained_collision",
+      "root": "repo",
+      "sha256": "672dd8c896c0cda82227209cb11a05b313cbd710c41d3c4be4c98119c5929790"
+    }
+  ]
+}

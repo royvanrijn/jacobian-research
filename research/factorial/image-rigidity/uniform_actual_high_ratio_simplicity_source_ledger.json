@@ -1,0 +1,88 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "checker_scope": "Exact polynomial identities, rational endpoint/bulk budgets, literal Gamma/moment coefficient normalizations, full numerical source closure and one fresh byte-identical parent replay. Finite controls do not certify complex analytic estimates.",
+  "files": [
+    {
+      "path": "research/factorial/image-rigidity/UNIFORM_ACTUAL_PHASE_AND_CONTOUR_ESTIMATES.md",
+      "role": "actual_uniform_phase",
+      "root": "repo",
+      "sha256": "f2c08b978834b3ce9b3511b930814851cfed3719d7f232972d41febcd0e4774a"
+    },
+    {
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+      "role": "airy_ode",
+      "root": "repo",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "path": "research/factorial/image-rigidity/UNIFORM_QUADRATIC_STRONG_FACTORIAL_TAIL.md",
+      "role": "all_root_location",
+      "root": "repo",
+      "sha256": "7e443fc6cd6743fc6885d4de047de0a43f5547526d40b872fa39fc2471d72d5a"
+    },
+    {
+      "path": "UNIFORM_ACTUAL_BULK_ROOT_SIMPLICITY.md",
+      "role": "bulk_proof",
+      "root": "local",
+      "sha256": "4a2f09edc09fcfab3dfdcec9beab321c68e9d656ee67172249afc904f033633a"
+    },
+    {
+      "path": "verify_uniform_actual_high_ratio_simplicity.py",
+      "role": "combined_checker",
+      "root": "local",
+      "sha256": "713aad26f1e8d7eaeaf444968ee2df70fb6437b114a50d923314b5eb50f6c397"
+    },
+    {
+      "path": "UNIFORM_ACTUAL_ENDPOINT_ROOT_SIMPLICITY.md",
+      "role": "endpoint_proof",
+      "root": "local",
+      "sha256": "799db033a60dfdd7bc6383252b894f8a4b0c001ce240dbc83858eb93956e97aa"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_uniform_quadratic_strong_factorial_completion.py",
+      "role": "numerical_boundary_checker",
+      "root": "repo",
+      "sha256": "68ddabfd88f71c9bdf1b1f91fa556d171b09d319dc5637169c5f943000884215"
+    },
+    {
+      "path": "research/factorial/image-rigidity/uniform_quadratic_strong_factorial_completion_inputs.json",
+      "role": "numerical_boundary_inputs",
+      "root": "repo",
+      "sha256": "c7daea01d23171451c898bb4e86f1e64170ddb0744f18db846d12f05166da2fe"
+    },
+    {
+      "path": "research/factorial/image-rigidity/uniform_quadratic_strong_factorial_completion_source_ledger.json",
+      "role": "numerical_boundary_ledger",
+      "root": "repo",
+      "sha256": "27019c6e286efb8d79ce56068c31c73c75407caadc333e1ec377a2ad52f713a9"
+    },
+    {
+      "path": "research/factorial/image-rigidity/uniform_quadratic_strong_factorial_completion_verification.json",
+      "role": "numerical_boundary_receipt",
+      "root": "repo",
+      "sha256": "3bae7d6483722dbe3246d6254aded998fe139fa7e5150abe71c6cea65cc4ee22"
+    },
+    {
+      "path": "uniform_actual_high_ratio_simplicity_inputs.json",
+      "role": "typed_inputs",
+      "root": "local",
+      "sha256": "9a142624defc668e1e20f87e3de3984476b779241f81d86534836d89564d7ba7"
+    }
+  ],
+  "logical_premises": [
+    "Actual phase U9 matched data and U12 complete holomorphic remainder",
+    "Airy ODE and uniqueness",
+    "R6 all-individual-root location, independent of hard-order inequality"
+  ],
+  "numerical_authentication": "The current 401 completion and its entire nested ledger closure authenticate all retained original boundary and endpoint-location executed inputs/receipts. Its coprimality conclusion and Gamma soft-order theorem are NOT simplicity premises.",
+  "primary_reading": {
+    "locator": "DLMF 9.2.1 Airy differential equation; nontrivial Ai and ODE uniqueness",
+    "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+    "role": "Airy ODE only"
+  },
+  "schema": 1
+}

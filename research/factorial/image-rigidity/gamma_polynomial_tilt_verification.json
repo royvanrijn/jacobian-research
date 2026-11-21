@@ -1,0 +1,487 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "checker_sha256": "5859cecf88c7197ceb49cd0b26cc6b11a18ecfe6f1d628e67c26940e06f8bd70",
+  "cumulant_and_no_fixed_band_controls": {
+    "literal_Appell_recurrence_coefficients": 81,
+    "positive_cumulant_domains": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        1
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        6
+      ],
+      [
+        2,
+        4,
+        10
+      ],
+      [
+        2,
+        5,
+        15
+      ],
+      [
+        2,
+        6,
+        21
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        7
+      ],
+      [
+        3,
+        3,
+        23
+      ],
+      [
+        3,
+        4,
+        54
+      ],
+      [
+        3,
+        5,
+        105
+      ],
+      [
+        3,
+        6,
+        181
+      ]
+    ],
+    "scope": "Finite exact combinatorial/formal controls; the written labeled-component proof supplies all n and all numbers of Gamma factors.",
+    "transitive_permutation_tuple_domains": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        4,
+        6,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        26,
+        6
+      ],
+      [
+        2,
+        4,
+        426,
+        10
+      ],
+      [
+        3,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        7,
+        7
+      ],
+      [
+        3,
+        3,
+        194,
+        23
+      ]
+    ]
+  },
+  "exact_witness": {
+    "Stein_coefficients": 91,
+    "base_rate": 1,
+    "base_shape": "5014/361",
+    "centered_P4": [
+      "912",
+      "128",
+      "84",
+      "0",
+      "1"
+    ],
+    "centered_P5": [
+      "23104",
+      "4560",
+      "320",
+      "140",
+      "0",
+      "1"
+    ],
+    "discriminant": -300,
+    "first_remainder": "56*(u^2-2u+76)*(u+38/7)",
+    "mathematical_negative_controls": [
+      "omitted positive atom breaks normalization",
+      "corrupted atom breaks normalization",
+      "rate2 law is not the displayed rate1 law",
+      "single scaled Gamma cumulant identity fails"
+    ],
+    "mean": "264/19",
+    "nodes_and_weights": [
+      [
+        0,
+        "23959174167747319/24009255465548716"
+      ],
+      [
+        1,
+        "787871138391581/404852698201373433"
+      ],
+      [
+        24,
+        "337387137375/4512464765741536"
+      ],
+      [
+        25,
+        "578110771745/9270172181795112"
+      ],
+      [
+        88,
+        "14673828944125/11828739703970562912"
+      ],
+      [
+        89,
+        "70917583625/48018510931097432"
+      ]
+    ],
+    "raw_moments_0_through_5": [
+      "1",
+      "264/19",
+      "74750/361",
+      "22622000/6859",
+      "7321626000/130321",
+      "2579379400000/2476099"
+    ],
+    "retained_collision_credit": "Exactly twice the retained Gamma convolution, matched only through moment5; finite positive polynomial realization is the new scope.",
+    "shared_centered_factor": "u^2-2u+76",
+    "tilt_degree": 89,
+    "variance": "14",
+    "zero_bias_moments": 4
+  },
+  "formal_closure_controls": {
+    "d2_denominator_pole_numerator": "2*gamma*(gamma+1)>0",
+    "formal_K_d_domains": [
+      [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        5
+      ],
+      [
+        0,
+        3,
+        2,
+        3,
+        12
+      ],
+      [
+        0,
+        4,
+        3,
+        4,
+        22
+      ],
+      [
+        1,
+        1,
+        1,
+        2,
+        9
+      ],
+      [
+        1,
+        2,
+        2,
+        3,
+        26
+      ],
+      [
+        1,
+        3,
+        3,
+        4,
+        52
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        87
+      ],
+      [
+        2,
+        1,
+        2,
+        3,
+        35
+      ],
+      [
+        2,
+        2,
+        3,
+        4,
+        81
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        144
+      ],
+      [
+        2,
+        4,
+        5,
+        6,
+        225
+      ],
+      [
+        3,
+        1,
+        3,
+        4,
+        96
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        193
+      ],
+      [
+        3,
+        3,
+        5,
+        6,
+        318
+      ],
+      [
+        3,
+        4,
+        6,
+        7,
+        472
+      ]
+    ],
+    "nonnegative_formal_coefficients": 1778,
+    "scope": "Exact formal identities for gamma and every original tilt coefficient in the listed K,d domains; written proof supplies all K,d."
+  },
+  "inputs_sha256": "a2b0dac77437d1536e95e3a77aa2d3e3aaf898dd459f9451b2f9b3e51a00a154",
+  "mandatory_source_roles": 5,
+  "numerical_normalized_closure_cases": {
+    "literal_first_remainder_identities": 135,
+    "normalized_closure_cases": 27
+  },
+  "pins": [
+    {
+      "boundary": "WRITTEN_CLOSURE_AND_EXACT_FINITE_REALIZATION",
+      "path": "GAMMA_POLYNOMIAL_TILT_ZERO_BIAS_CLOSURE_AND_OBSTRUCTION.md",
+      "role": "proof",
+      "root": "here",
+      "sha256": "28b7302c8b63accdb41872bcb76655881bcb912742355a04acac3b0feb425113"
+    },
+    {
+      "boundary": "BOUNDED_EXACT_CONTROLS_NOT_UNIVERSAL_QUANTIFIER_PROOF",
+      "path": "verify_gamma_polynomial_tilt_zero_bias.py",
+      "role": "checker",
+      "root": "here",
+      "sha256": "5859cecf88c7197ceb49cd0b26cc6b11a18ecfe6f1d628e67c26940e06f8bd70"
+    },
+    {
+      "boundary": "EXACT_TYPED_SCOPE",
+      "path": "gamma_polynomial_tilt_inputs.json",
+      "role": "inputs",
+      "root": "here",
+      "sha256": "a2b0dac77437d1536e95e3a77aa2d3e3aaf898dd459f9451b2f9b3e51a00a154"
+    },
+    {
+      "boundary": "CLASSICAL_ZERO_BIAS_IDENTIFICATION_AND_ATTRIBUTION_ONLY",
+      "path": "research/factorial/image-rigidity/sources/goldstein_reinert_zero_bias_author2001.pdf",
+      "role": "zero_bias_primary",
+      "root": "repo",
+      "sha256": "e435d58b7cba5567e53a11c269d7cf305c5af0870b51ae6cdb6e79ed25f9b983"
+    },
+    {
+      "boundary": "AUTHENTICATED_RETAINED_COLLISION_CREDIT_ONLY",
+      "path": "research/factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex",
+      "role": "retained_collision",
+      "root": "repo",
+      "sha256": "672dd8c896c0cda82227209cb11a05b313cbd710c41d3c4be4c98119c5929790"
+    }
+  ],
+  "primary": {
+    "authors": "Larry Goldstein and Gesine Reinert",
+    "doi": "10.1214/aoap/1043862419",
+    "locators": [
+      "Definition1.1 printedp2",
+      "Existence/uniqueness printedpp2-3",
+      "Lemma2.1 printedp4"
+    ],
+    "published": "Ann. Appl. Probab.7(1997),935-952",
+    "retained_version": "Author manuscript dated28Nov2001",
+    "scope": "Centered finite nonzero variance zero bias. Translate back to Y; the Gamma-law identity here is proved with full compactly-supported C1 tests, not from moments alone.",
+    "title": "Stein's Method and the Zero Bias Transformation with Application to Simple Random Sampling",
+    "url": "https://dornsife.usc.edu/larry-goldstein/wp-content/uploads/sites/221/2023/06/zer.pdf"
+  },
+  "proof_sha256": "28b7302c8b63accdb41872bcb76655881bcb912742355a04acac3b0feb425113",
+  "schema": 1,
+  "scope": {
+    "barriers": {
+      "all_order_resultant_proved": false,
+      "factorial_SFC_counterexample": false,
+      "law_class_positivity_implies_ordered_separation": false,
+      "no_fixed_finite_band_recurrence_in_THIS_Appell_basis": true,
+      "other_basis_or_multi_index_excluded_claim": false,
+      "pure_product_or_Gamma_power_counterexample": false
+    },
+    "closure": {
+      "coefficientwise_rescaling": "(gamma)_(K+d) A N",
+      "finite_product_Gamma_closed_claim": false,
+      "law_identity_uses_full_test_functions": true,
+      "moment_determinacy_assumed": false,
+      "moment_matching_alone_identifies_law": false,
+      "nonnegative_coefficients": true,
+      "translated_zero_bias_law": "X^d under tilt X^d N(X)"
+    },
+    "probability_domain": {
+      "all_moments_exist": true,
+      "base_rate": 1,
+      "d": "positive integer",
+      "gamma": "real gamma>0",
+      "tilt": "nonzero polynomial with nonnegative real coefficients"
+    },
+    "schema": 1,
+    "source_boundary": {
+      "GR_primary": "classical zero-bias definition/existence/uniqueness only",
+      "old_convolution_note": "authenticated retained-example credit only; new witness verified directly",
+      "unrelated_multiple_orthogonality_or_branched_fraction_PDFs_imported": false
+    },
+    "verification": {
+      "bounded_exact_controls_only": true,
+      "external_review": false,
+      "finite_controls_prove_universal_closure": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "witness": {
+      "base_rate": 1,
+      "degrees": [
+        4,
+        5
+      ],
+      "gamma": "5014/361",
+      "mean": "264/19",
+      "mixture_nodes": [
+        0,
+        1,
+        24,
+        25,
+        88,
+        89
+      ],
+      "new_scope": "exact finite positive polynomial tilt realization of the retained collision",
+      "old_Gamma_convolution_collision_rediscovered_claim": false,
+      "old_collision_scale": 2,
+      "shared_factor": "u^2-2u+76",
+      "shared_factor_discriminant": -300,
+      "tilt_degree": 89,
+      "variance": "14"
+    }
+  },
+  "source_ledger_sha256": "5bb6ce953579459f3c4191250b68f43f23b8720c4257041585fcfb9383a74d4a",
+  "source_scope_negative_controls": 29,
+  "status": "PASS_SOURCE_GUARDED_GAMMA_POLYNOMIAL_TILT_CLOSURE_AND_OBSTRUCTION",
+  "verification_boundary": "Universal closure/positivity and all-order no-fixed-band theorem are WRITTEN proofs. Finite formal controls and the complete rational degree89 witness have distinct scopes. No product-Gamma/factorial SFC counterexample or separation theorem is inferred."
+}

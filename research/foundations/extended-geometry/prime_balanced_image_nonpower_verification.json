@@ -1,0 +1,248 @@
+{
+  "classical_context_is_mathematical_premise": false,
+  "external_review": false,
+  "finite_controls_prove_universal_theorem": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "logical_boundary": {
+    "all_characteristic_zero_extensions": true,
+    "all_nonzero_input_weights_annihilated": false,
+    "arbitrary_shifted_progression": false,
+    "composite_automatic_nonpower": false,
+    "external_mathematical_premise": false,
+    "external_review": false,
+    "fixed_r_multiples_and_eventual_multiples": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "nilpotence_safety_both_directions": true,
+    "original_full_polynomial_markers": true,
+    "positive_characteristic": false,
+    "prime_counterexample_absolute_scalar_nonpower": true,
+    "purity_alone_nonpower": false,
+    "radial_primitivity_required": false,
+    "squarefree_or_irreducible_conclusion": false,
+    "two_pair_five_seven_resolution": false,
+    "unconditional_witness_existence": false
+  },
+  "schema": 1,
+  "source_records": {
+    "exact_checker": {
+      "path": "verify_prime_balanced_image_nonpower.py",
+      "relation": "identity_and_source_support",
+      "role": "exact_checker",
+      "sha256": "55610c06f1c913252efe8e698ad660952dc5a6813b51edca9377a308a4da879b"
+    },
+    "typed_inputs": {
+      "path": "prime_balanced_image_nonpower_inputs.json",
+      "relation": "exact_control_data",
+      "role": "typed_inputs",
+      "sha256": "bb22e02727219589ee376b03ba6e33d77b39cfebe87aa809e9df4ef6b461392d"
+    },
+    "written_proof": {
+      "path": "PRIME_BALANCED_IMAGE_FAILURES_ARE_ABSOLUTELY_NONPOWER.md",
+      "relation": "mathematical_proof",
+      "role": "written_proof",
+      "sha256": "46669b6dc70e08b197607a5f10ca70f08016e35ca8e7f3540501346344d15642"
+    }
+  },
+  "status": "PASS_PRIME_BALANCED_NONPOWER_AND_LINEAR_SAMPLE_NILPOTENCE_SUPPORT",
+  "support": {
+    "actual_composite_seed_sha256": "0320bca241df534982dad4f6427f47e6a2c2297178ef906abfaad7091a0c0a6a",
+    "actual_math_scope_countermodels": 6,
+    "composite_proper_square_controls": [
+      {
+        "m": 1,
+        "marked": "-12"
+      },
+      {
+        "m": 2,
+        "marked": "-2880"
+      },
+      {
+        "m": 3,
+        "marked": "-3628800"
+      }
+    ],
+    "determinant_literal_controls": 48,
+    "determinant_rows": [
+      {
+        "determinant": [
+          "1",
+          "-2"
+        ],
+        "matrix": [
+          [
+            2
+          ]
+        ],
+        "scalar_coefficients": [
+          "1",
+          "2",
+          "4",
+          "8",
+          "16",
+          "32",
+          "64",
+          "128"
+        ]
+      },
+      {
+        "determinant": [
+          "1",
+          "-5",
+          "-2"
+        ],
+        "matrix": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "scalar_coefficients": [
+          "1",
+          "5",
+          "27",
+          "145",
+          "779",
+          "4185",
+          "22483",
+          "120785"
+        ]
+      },
+      {
+        "determinant": [
+          "1",
+          "0",
+          "0"
+        ],
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "scalar_coefficients": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "determinant": [
+          "1",
+          "0",
+          "0"
+        ],
+        "matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ],
+        "scalar_coefficients": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "determinant": [
+          "1",
+          "-3",
+          "-3",
+          "10"
+        ],
+        "matrix": [
+          [
+            2,
+            1,
+            -1
+          ],
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "scalar_coefficients": [
+          "1",
+          "3",
+          "12",
+          "35",
+          "111",
+          "318",
+          "937",
+          "2655"
+        ]
+      },
+      {
+        "determinant": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "matrix": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "scalar_coefficients": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "full_GL_polynomial_controls": 20,
+    "full_two_grading_controls": 16,
+    "pure_safe_prime_power_controls": 12,
+    "root_unity_fraction_controls": 154,
+    "sharp_full_marker_controls": 33
+  },
+  "typed_source_scope_internal_negatives": 21
+}

@@ -1,0 +1,49 @@
+{
+  "all_order_SFC": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "coefficient_rings": "unital commutative Q-algebras",
+  "controls": {
+    "Gaussian_power_max": 64,
+    "Hilbert_terminal_max": 32,
+    "Macaulay_terminal_max": 8,
+    "moment_max": 6,
+    "supports": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "effective_cutoff": false,
+  "exponent_independent_of_support_but_not_terminal": true,
+  "finite_controls_certify_universal_estimates": false,
+  "fixed_pair_terminal_minimum": 2,
+  "fixed_pair_universal_predicates_equivalent": true,
+  "full_eventual_equivalence_requires_every_M_beyond_shared_cutoff": true,
+  "gaussian_dimension": 2,
+  "gaussian_radial_moment": "k!",
+  "gaussian_variance": 1,
+  "ideal_power_exponent": "2*M-2",
+  "other_dimensions_or_Gamma_shapes_included": false,
+  "pointwise_coefficient_nilpotence_iff_prescribed_pair_vanishes": false,
+  "radial_denominator": 2,
+  "reduced_Q_algebra_nonzero_phases_share_cutoff": true,
+  "reviewed_proof_sha256": "200881f425252bcee55be4598ebdc5573cf3d1219536dce5332393e8170195c7",
+  "schema": 1,
+  "single_good_pair_implies_all_higher_pairs": false,
+  "terminal_independent_nilpotence_exponent_for_unspecified_late_pair": false,
+  "universal_CI_length": "M*(M-1)",
+  "universal_CI_top_degree": "2*M-3"
+}

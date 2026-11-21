@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "main_proof",
+      "root": "here",
+      "path": "NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md",
+      "sha256": "20ff19e08cc7decb8564346c363e2a3657d846241267a462899934d481458e07",
+      "relation": "WRITTEN_SELF_CONTAINED_UNIVERSAL_PROOF"
+    },
+    {
+      "role": "checker",
+      "root": "here",
+      "path": "verify_noncentral_affine_cubic_shape.py",
+      "sha256": "42291bb10d235ef02d2ff42e13028d7c52045d0e6c4c5ca2818f56db9b62353f",
+      "relation": "BOUNDED_EXACT_IDENTITIES_AND_SOURCE_AUTHENTICATION"
+    },
+    {
+      "role": "typed_inputs",
+      "root": "here",
+      "path": "noncentral_affine_cubic_shape_inputs.json",
+      "sha256": "4833413931ebafb91a09c5a3665d790779ef1cc5ed0b1e85c71800a58b6503e9",
+      "relation": "EXACT_TYPED_SCOPE"
+    }
+  ],
+  "classical_context": [
+    {
+      "author": "Richard P. Stanley",
+      "title": "Differentiably finite power series",
+      "year": 1980,
+      "journal": "European Journal of Combinatorics1,175-188",
+      "url": "https://math.mit.edu/~rstan/pubs/pubfiles/45.pdf",
+      "doi": "10.1016/S0195-6698(80)80051-5",
+      "locators": [
+        "Theorem2.1 printedp178",
+        "Definition1.3 and Theorem1.5 printedp176"
+      ],
+      "relation": "INSPECTED_CLASSICAL_CONTEXT_ONLY; printed statements over complex coefficients; direct all-field proof supplied."
+    },
+    {
+      "author": "Jet Wimp",
+      "title": "Explicit formulas for the associated Jacobi polynomials and some applications",
+      "year": 1987,
+      "journal": "Canadian Journal of Mathematics39(4),983-1000",
+      "url": "https://doi.org/10.4153/CJM-1987-050-4",
+      "doi": "10.4153/CJM-1987-050-4",
+      "locator": "equation12 printedp986; definitions printedpp983-985",
+      "parameters": {
+        "alpha": "1/3",
+        "beta": "-1/3",
+        "gamma": "1",
+        "association": "c=m+1",
+        "first_squared_index": "m+2"
+      },
+      "identity": "D_(m,h)(z)=27^(-h/2)*P_hat_h^(1/3,-1/3)(sqrt(27)*z;c=m+1)",
+      "relation": "INSPECTED_CLASSICAL_CONTEXT_ONLY; local monic continuants, not scalar initial data or an imported association-shift zero theorem."
+    }
+  ],
+  "logical_boundary": {
+    "external_mathematical_premises": [],
+    "universal_mathematics": "self-contained written H1-H19 and all-field proofs",
+    "classical_sources_are_logical_premises": false,
+    "actual_phase_properties_unconditionally_seeded": false,
+    "bounded_controls_prove_universal_quantifiers": false
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  }
+}

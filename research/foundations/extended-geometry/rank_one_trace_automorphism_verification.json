@@ -1,0 +1,136 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "contraction_and_marker_controls": {
+    "Lie_trace_controls": 20,
+    "balanced_marker_controls": 210,
+    "factorial_coinvariant_controls": 22498,
+    "kernel_controls": 630,
+    "original_normalization_controls": 231
+  },
+  "logical_boundary": {
+    "bounded_controls_establish_universal_quantifiers": false,
+    "classical_context_is_mathematical_premise": false,
+    "external_mathematical_premises": [],
+    "written_universal_proof": "self-contained Sections1-5"
+  },
+  "matrix_and_form_controls": {
+    "chart_entry_and_trace_controls": 32,
+    "differential_form_controls": 53,
+    "tangent_field_controls": 36
+  },
+  "pins": [
+    {
+      "path": "RANK_ONE_TRACE_AUTOMORPHISM_INVARIANCE_ALL_IMAGE_PAIRS.md",
+      "relation": "WRITTEN_SELF_CONTAINED_UNIVERSAL_PROOF",
+      "role": "main_proof",
+      "root": "here",
+      "sha256": "6a387aa4213cb00f945fb5e41ff9c5166a8ac118264e01bab795ec54bf189c5a"
+    },
+    {
+      "path": "verify_rank_one_trace_automorphisms.py",
+      "relation": "BOUNDED_EXACT_CONTROLS_AND_SOURCE_AUTHENTICATION",
+      "role": "checker",
+      "root": "here",
+      "sha256": "f93aa7638dd2f34bd15fcb91bb073db0cbac348f53b20e90c08d3a88029cb5cd"
+    },
+    {
+      "path": "rank_one_trace_automorphism_inputs.json",
+      "relation": "EXACT_TYPED_SCOPE",
+      "role": "typed_inputs",
+      "root": "here",
+      "sha256": "e3151eb1e2bf3a9330c8e501068235165945b64ffc53510379c3c5fe94da3fcf"
+    }
+  ],
+  "power_and_boundary_controls": {
+    "mathematical_boundary_controls": [
+      "R-primitive hypothesis cannot be removed: R*Z^2 has simple original slice but sphere image is square.",
+      "Both original gradings are essential: [xi1(1+z1)]^2 is xi-homogeneous and has z degrees0,1,2.",
+      "Transpose reverses beta, so pointwise volume preservation is false.",
+      "Exact-form coefficient space and original Image kernel are vector spaces, not ideals."
+    ],
+    "original_scalar_power_controls": 24,
+    "primitive_original_root_controls": 3
+  },
+  "primary_context": {
+    "actual_scope": "Real Lie-group coadjoint-orbit KKS form on fundamental fields, paired with reversed Lie bracket.",
+    "author": "Bertram Kostant",
+    "locator": "Section3.1,printedpp24-25,equation(3.2)",
+    "relation": "INSPECTED_CLASSICAL_CONTEXT_ONLY; no logical import, PDF download/hash claim or automorphism classification.",
+    "title": "Minimal coadjoint orbits and symplectic induction",
+    "url": "https://arxiv.org/pdf/math/0312252v1",
+    "version": "arXiv:math/0312252v1,12Dec2003"
+  },
+  "scope": {
+    "field": "every characteristic-zero field and every coefficient-field extension",
+    "original": {
+      "arbitrary_marker_first_balanced": true,
+      "balanced_normalization": "E_n(H)=(n)_D Lambda(H|R=1)",
+      "fixed_marker_per_transport": true,
+      "kernel": "ker E_n=sum_i(partial_zi-xi_i)S",
+      "kernel_is_ideal_claim": false,
+      "same_literal_marker_for_every_automorphism_claim": false
+    },
+    "pairs": {
+      "integer": true,
+      "minimum": 2,
+      "n1_cone_argument_claim": false
+    },
+    "power_descent": {
+      "R_primitive_required": true,
+      "all_extensions": true,
+      "both_bigradings_required": true,
+      "full_original_ring": true,
+      "scalar_factors_allowed": true
+    },
+    "ring": "balanced subring C of K[xi,z], A=C/(R-1), R=sum xi_i z_i",
+    "schema": 1,
+    "trace": {
+      "all_polynomial_A_automorphisms": true,
+      "diagonal_formula": "alpha!/(n)_D",
+      "exact_top_coefficient_codimension": 1,
+      "exact_top_coefficient_space_is_ideal": false,
+      "off_diagonal_zero": true
+    },
+    "transport": {
+      "absolute_nonproper_power": true,
+      "arbitrary_automorphism_degree_formula_claim": false,
+      "padding_or_degree_spectrum_corollary_claim": false,
+      "pure": true,
+      "safe": true,
+      "starting_witness_existence_claim": false,
+      "unsafe": true
+    },
+    "verification": {
+      "bounded_exact_controls_only": true,
+      "external_review": false,
+      "finite_controls_prove_universal_quantifiers": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "volume": {
+      "automorphism_multiplier": "nonzero field constant",
+      "beta": "tr(M dM wedge dM)",
+      "omega": "beta^(n-1)/(n-1)!",
+      "pointwise_preservation_claim": false
+    }
+  },
+  "source_ledger_sha256": "1c981c9d0e0d6d076de15a5b088e1a70c252433912873c54f5c6281ed4d258a6",
+  "source_scope_negative_controls": 27,
+  "status": "PASS_SOURCE_GUARDED_RANK_ONE_TRACE_ALL_PAIRS",
+  "written_identity_families": [
+    "MU+UM=U and MUM=0 imply [UM-MU,M]=U; this formal block calculation is dimension-independent.",
+    "beta(U,V)=tr M(UV-VU)=a*d-c*b; odd off-diagonal triple products have trace zero.",
+    "d(f contraction(D_X,omega))=(D_X f)omega because conjugation preserves omega.",
+    "(alpha_j+1)alpha!=alpha_i(alpha-e_i+e_j)!.",
+    "sum_i (alpha+e_i)!=(D+n)alpha!; R multiplication occurs before taking coinvariants.",
+    "E_n((partial_zi-xi_i)H)=0 and monomial reduction prove the written kernel identity.",
+    "E_n(xi^eta H)=partial_z^eta E_n(H) gives fixed-marker balancing.",
+    "Primitive filtered lifts multiply without radial padding; both original bigrading extremes constrain any full-ring power root."
+  ]
+}

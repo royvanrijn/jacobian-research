@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "main_proof",
+      "root": "here",
+      "path": "ALL_BALANCED_DEGREES_IMAGE_WITNESSES_AT_LEAST_THREE_PAIRS.md",
+      "sha256": "cd00c7e229e0bb738726608e45525e8694c93131ce38021861b553886c92b918",
+      "relation": "WRITTEN_SELF_CONTAINED_UNIVERSAL_PROOF"
+    },
+    {
+      "role": "checker",
+      "root": "here",
+      "path": "verify_all_balanced_image_degrees.py",
+      "sha256": "4c2d2343662bbc84573cbd4dc02f4e69a8ffb37f6a84021bf8a91033ea64e7ce",
+      "relation": "BOUNDED_EXACT_CONTROLS_AND_SOURCE_AUTHENTICATION"
+    },
+    {
+      "role": "typed_inputs",
+      "root": "here",
+      "path": "all_balanced_image_degree_inputs.json",
+      "sha256": "8bfa9ecf1e49e8a052c90bfbbec54ad8d57f9f943a8314355b9d5e4adfc4dbb4",
+      "relation": "EXACT_TYPED_SCOPE"
+    },
+    {
+      "role": "retained_seed_credit",
+      "root": "repo",
+      "path": "results/three-pair-image-counterexample/main.tex",
+      "sha256": "0c49d6bb76957f2bc8a2159fbd70e191b526b4552945cfcb9dab163a88a18dcb",
+      "relation": "AUTHENTICATED_RETAINED_PREPRINT_CREDIT_ONLY"
+    }
+  ],
+  "credit": {
+    "file": "results/three-pair-image-counterexample/main.tex",
+    "status": "deposited preprint; not a journal-publication claim",
+    "locators": [
+      "Theorem thm:main",
+      "Lemma lem:kernel",
+      "Proof binomial identities eq:pure and eq:mixed"
+    ],
+    "relation": "Seed and moment cancellation credited; all identities needed by this theorem are reproved in the new note."
+  },
+  "logical_boundary": {
+    "external_mathematical_premises": [],
+    "all_order_math": "self-contained N1-N12, normalization, kernel and tau-valuation proof",
+    "credit_file_is_logical_premise": false,
+    "all_Aut_theorem_is_logical_premise": false,
+    "finite_checks_prove_all_orders": false
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  }
+}

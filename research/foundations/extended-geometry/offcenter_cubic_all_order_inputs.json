@@ -1,0 +1,58 @@
+{
+  "FPYZ_needed": false,
+  "all_Aut_or_424_needed": false,
+  "all_balanced_degrees_claimed": false,
+  "all_degree5_or7_resolved": false,
+  "all_order_conclusion_from_finite_prefix": false,
+  "arbitrary_mixed_classification": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "balanced_degree": "3*j+3",
+  "characteristic_zero": true,
+  "controls": {
+    "chart_j_max": 6,
+    "chart_m_max": 6,
+    "degree_j_max": 32,
+    "endpoint_m_max": 12,
+    "kappa_m_max": 40,
+    "original_cases": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ]
+  },
+  "even_orders_only": false,
+  "fixed_marker": "Z=xi1*z2",
+  "fixed_marker_orders": "EVERY positive integer m",
+  "full_conditional_theorem_input_needed": false,
+  "integer_original_lift": true,
+  "old_existence_family_needed": false,
+  "ordinary_total_degree": "6*j+6",
+  "original_curve_derivative_at_zero": -16,
+  "original_curve_value": "16*tau^3-16*tau",
+  "parameter_j_min": 1,
+  "pure_orders": "EVERY positive integer m",
+  "radial_point": [
+    1,
+    0,
+    0,
+    1
+  ],
+  "radial_value": -1,
+  "reviewed_proof_sha256": "82c28b517070c5f2d65b98df2f9cc925cf1c5a64bd5b030a2fe31cadc297d39d",
+  "scalar_nonpower_over_every_extension": true,
+  "schema": 1
+}

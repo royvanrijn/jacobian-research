@@ -1,0 +1,71 @@
+{
+  "logical_boundary": {
+    "MIT_elliptic_primary_mathematical_premise": false,
+    "all_central_prime_phases_safe": false,
+    "analytic_interval_theorem_premise": false,
+    "arbitrary_higher_height_or_varying_invariant_classification": false,
+    "characteristic_zero_all_fields_and_extensions": true,
+    "constant_j_implies_Kx_constant_curve_isomorphism": false,
+    "elliptic_interpretation_requires_nonzero_discriminant": true,
+    "external_review": false,
+    "formal_trivialization_over_K_itself": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "lower_height_E_identically_zero_in_scope": false,
+    "nonunit_center_constant_invariant_forces_zero_center": true,
+    "pure_constant_invariant_degree_five_seven_safe": true,
+    "pure_zero_center_safe_via_first_four_only": true,
+    "purity_implies_I_zero": false,
+    "purity_implies_constant_invariant": false,
+    "regular_cubic_height_E_not_identically_zero": true,
+    "unit_center_constant_invariant_iff_formal_fixed_shape": true,
+    "unsafe_prime_degree_constant_invariant_forces_central_unit_j1728": true,
+    "unsafe_witness_existence_or_minimum_degree": false,
+    "zero_pair_is_separate_not_projective": true
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "locator": "Proposition and Sections1-5",
+      "path": "CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md",
+      "relation": "mathematical_proof",
+      "role": "written_proof",
+      "sha256": "b5cc3c456884e0fbdd70b1eeae036c487d37a374d9cf51cb087ff77bc69a47be"
+    },
+    {
+      "locator": "Universal polynomial algebra and finite exceptional controls",
+      "path": "verify_constant_cubic_invariant_moduli.py",
+      "relation": "identity_and_source_support",
+      "role": "exact_checker",
+      "sha256": "134ad158185d09d76091e501be580f8382776ce8673562bbc8a862b7cd0f196a"
+    },
+    {
+      "locator": "Immutable typed scope and exact controls",
+      "path": "constant_cubic_invariant_moduli_inputs.json",
+      "relation": "exact_control_data",
+      "role": "typed_inputs",
+      "sha256": "2784faffb0239f5bbe46749ead85560ea0157924557ec910f2f2ff649f314c95"
+    },
+    {
+      "locator": "Main theorem; unsafe degree spectrum6,9,12,...; lambda!=1/2",
+      "path": "research/foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md",
+      "relation": "mathematical_noncentral_shape",
+      "role": "noncentral_shape_classification",
+      "sha256": "20ff19e08cc7decb8564346c363e2a3657d846241267a462899934d481458e07"
+    },
+    {
+      "locator": "Central I=0, E0!=0 low-degree theorem only",
+      "path": "research/foundations/extended-geometry/INVARIANT_ZERO_MIXED_CUBIC_LOW_DEGREE_CLASSIFICATION.md",
+      "relation": "mathematical_central_low_degree",
+      "role": "central_invariant_zero_classification",
+      "sha256": "0b65f1da0010eaa646355670099cdd0bbd111ace80abb85f76eeccc1e5547fc9"
+    },
+    {
+      "locator": "Section2 direct first-four-moment certificate only",
+      "path": "research/foundations/extended-geometry/MIXED_CUBIC_ZERO_CENTER_AND_CONDITIONAL_OFFCENTER.md",
+      "relation": "mathematical_first_four_only",
+      "role": "finite_cubic_interval_certificate",
+      "sha256": "c4fee78a3b99b286e22818f63c90f8da450293bde974b354fb22bd2866bf1dc6"
+    }
+  ]
+}

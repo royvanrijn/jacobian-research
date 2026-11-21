@@ -1,0 +1,36 @@
+{
+  "analytic_boundary": {
+    "conditional_branch": "Written formal endpoint recurrence and rational-function valuations; finite controls do not prove it",
+    "cubic_prefix": "Direct rational identities; no external finite-prefix theorem imported",
+    "field_transfer": "Only the finitely generated coefficient field embeds in C",
+    "interval_rigidity": "FPYZ2011 Corollary4.1, printed27; complex coefficients and distinct interval endpoints"
+  },
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "schema": 1,
+  "scope": {
+    "characteristic_zero": true,
+    "conditional_E0_nonzero": true,
+    "conditional_degree_ceiling": 7,
+    "conditional_invariant_zero": true,
+    "conditional_offcenter_C0_over_B0": [
+      -3,
+      3
+    ],
+    "conditional_safe_degrees": [
+      5,
+      7
+    ],
+    "cubic_prefix": 4,
+    "global_degree5_7_resolution": false,
+    "nonnegative_angular_all_heights": true,
+    "prefix_three_suffices": false,
+    "purity_implies_invariant_zero": false,
+    "unrestricted_mixed_classification": false,
+    "zero_center_cubic": true
+  }
+}

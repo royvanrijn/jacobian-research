@@ -1,0 +1,736 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "checker_sha256": "77036bd6f4416b657122a30b5b885afce8928dda19a2ff416692805696a3ae04",
+  "degree_controls": [
+    {
+      "D": 6,
+      "j": 1,
+      "pure_x_top": -1
+    },
+    {
+      "D": 9,
+      "j": 2,
+      "pure_x_top": -1
+    },
+    {
+      "D": 12,
+      "j": 3,
+      "pure_x_top": -1
+    },
+    {
+      "D": 15,
+      "j": 4,
+      "pure_x_top": -1
+    },
+    {
+      "D": 18,
+      "j": 5,
+      "pure_x_top": -1
+    },
+    {
+      "D": 21,
+      "j": 6,
+      "pure_x_top": -1
+    },
+    {
+      "D": 24,
+      "j": 7,
+      "pure_x_top": -1
+    },
+    {
+      "D": 27,
+      "j": 8,
+      "pure_x_top": -1
+    },
+    {
+      "D": 30,
+      "j": 9,
+      "pure_x_top": -1
+    },
+    {
+      "D": 33,
+      "j": 10,
+      "pure_x_top": -1
+    },
+    {
+      "D": 36,
+      "j": 11,
+      "pure_x_top": -1
+    },
+    {
+      "D": 39,
+      "j": 12,
+      "pure_x_top": -1
+    },
+    {
+      "D": 42,
+      "j": 13,
+      "pure_x_top": -1
+    },
+    {
+      "D": 45,
+      "j": 14,
+      "pure_x_top": -1
+    },
+    {
+      "D": 48,
+      "j": 15,
+      "pure_x_top": -1
+    },
+    {
+      "D": 51,
+      "j": 16,
+      "pure_x_top": -1
+    },
+    {
+      "D": 54,
+      "j": 17,
+      "pure_x_top": -1
+    },
+    {
+      "D": 57,
+      "j": 18,
+      "pure_x_top": -1
+    },
+    {
+      "D": 60,
+      "j": 19,
+      "pure_x_top": -1
+    },
+    {
+      "D": 63,
+      "j": 20,
+      "pure_x_top": -1
+    },
+    {
+      "D": 66,
+      "j": 21,
+      "pure_x_top": -1
+    },
+    {
+      "D": 69,
+      "j": 22,
+      "pure_x_top": -1
+    },
+    {
+      "D": 72,
+      "j": 23,
+      "pure_x_top": -1
+    },
+    {
+      "D": 75,
+      "j": 24,
+      "pure_x_top": -1
+    },
+    {
+      "D": 78,
+      "j": 25,
+      "pure_x_top": -1
+    },
+    {
+      "D": 81,
+      "j": 26,
+      "pure_x_top": -1
+    },
+    {
+      "D": 84,
+      "j": 27,
+      "pure_x_top": -1
+    },
+    {
+      "D": 87,
+      "j": 28,
+      "pure_x_top": -1
+    },
+    {
+      "D": 90,
+      "j": 29,
+      "pure_x_top": -1
+    },
+    {
+      "D": 93,
+      "j": 30,
+      "pure_x_top": -1
+    },
+    {
+      "D": 96,
+      "j": 31,
+      "pure_x_top": -1
+    },
+    {
+      "D": 99,
+      "j": 32,
+      "pure_x_top": -1
+    }
+  ],
+  "endpoint_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "kappa_controls": [
+    "1",
+    "1/4",
+    "8/105",
+    "1/40",
+    "128/15015",
+    "1/336",
+    "1024/969969",
+    "1/2640",
+    "32768/239028075",
+    "1/20020",
+    "262144/14325749295",
+    "1/148512",
+    "4194304/1686531394275",
+    "1/1085280",
+    "33554432/98022687300225",
+    "1/7845024",
+    "2147483648/45149249770483635",
+    "1/56241900",
+    "17179869184/2580589472175682275",
+    "1/400600200",
+    "274877906944/293290784537693068665",
+    "1/2838538560",
+    "2199023255552/16588069696904588493975",
+    "1/20026843200",
+    "70368744177664/3738085445176368789750975",
+    "1/140788707696",
+    "562949953421312/209896373196995550905124747",
+    "1/986724276160",
+    "9007199254740992/23505062109600057327550080795",
+    "1/6897348511680",
+    "72057594037927936/1312879296728626650316055892129",
+    "1/48103443491136",
+    "9223372036854775808/1170791876066544637031850488319555",
+    "1/334810899299100",
+    "73786976294838206464/65132341640215314754237115668386795",
+    "1/2326232365886520",
+    "1180591620717411303424/7234652386188868723606356952765668477",
+    "1/16136927222816400",
+    "9444732965739290427392/401199037376348573527444986918306665115",
+    "1/111782520154813200",
+    "302231454903657293676544/88874845218185278618795082563641502630629"
+  ],
+  "mandatory_source_roles": 5,
+  "meaning": "The written endpoint congruence proves every j,m. Finite controls reconstruct ORIGINAL lifts/contractions and authenticate exact narrow sources; no old witness or broader classification is imported.",
+  "original_four_variable_controls": [
+    {
+      "D": 6,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "-2",
+      "j": 1,
+      "m": 1,
+      "marked": "-80640",
+      "original_terms": 34,
+      "power_terms": 34,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 6,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "512/105",
+      "j": 1,
+      "m": 2,
+      "marked": "425097953280",
+      "original_terms": 34,
+      "power_terms": 113,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 6,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "-64/5",
+      "j": 1,
+      "m": 3,
+      "marked": "-31141145704660992000",
+      "original_terms": 34,
+      "power_terms": 241,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 9,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "-2",
+      "j": 2,
+      "m": 1,
+      "marked": "-79833600",
+      "original_terms": 60,
+      "power_terms": 60,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 9,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "512/105",
+      "j": 2,
+      "m": 2,
+      "marked": "11863293601775616000",
+      "original_terms": 60,
+      "power_terms": 222,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 9,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "-64/5",
+      "j": 2,
+      "m": 3,
+      "marked": "-113174553519868185018158284800000",
+      "original_terms": 60,
+      "power_terms": 475,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 12,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "-2",
+      "j": 3,
+      "m": 1,
+      "marked": "-174356582400",
+      "original_terms": 97,
+      "power_terms": 97,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 12,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "512/105",
+      "j": 3,
+      "m": 2,
+      "marked": "1966525981874496051609600000",
+      "original_terms": 97,
+      "power_terms": 365,
+      "pure": "0",
+      "radial_point": -1
+    },
+    {
+      "D": 12,
+      "curve": [
+        0,
+        -16,
+        0,
+        16
+      ],
+      "expected_normalized": "-64/5",
+      "j": 3,
+      "m": 3,
+      "marked": "-6694689503572494230528092468480950927360000000",
+      "original_terms": 97,
+      "power_terms": 796,
+      "pure": "0",
+      "radial_point": -1
+    }
+  ],
+  "proof_sha256": "82c28b517070c5f2d65b98df2f9cc925cf1c5a64bd5b030a2fe31cadc297d39d",
+  "raw_chart_controls": [
+    {
+      "j": 1,
+      "m": 1,
+      "marked": "-2",
+      "pure": "0"
+    },
+    {
+      "j": 1,
+      "m": 2,
+      "marked": "512/105",
+      "pure": "0"
+    },
+    {
+      "j": 1,
+      "m": 3,
+      "marked": "-64/5",
+      "pure": "0"
+    },
+    {
+      "j": 1,
+      "m": 4,
+      "marked": "524288/15015",
+      "pure": "0"
+    },
+    {
+      "j": 1,
+      "m": 5,
+      "marked": "-2048/21",
+      "pure": "0"
+    },
+    {
+      "j": 1,
+      "m": 6,
+      "marked": "268435456/969969",
+      "pure": "0"
+    },
+    {
+      "j": 2,
+      "m": 1,
+      "marked": "-2",
+      "pure": "0"
+    },
+    {
+      "j": 2,
+      "m": 2,
+      "marked": "512/105",
+      "pure": "0"
+    },
+    {
+      "j": 2,
+      "m": 3,
+      "marked": "-64/5",
+      "pure": "0"
+    },
+    {
+      "j": 2,
+      "m": 4,
+      "marked": "524288/15015",
+      "pure": "0"
+    },
+    {
+      "j": 2,
+      "m": 5,
+      "marked": "-2048/21",
+      "pure": "0"
+    },
+    {
+      "j": 2,
+      "m": 6,
+      "marked": "268435456/969969",
+      "pure": "0"
+    },
+    {
+      "j": 3,
+      "m": 1,
+      "marked": "-2",
+      "pure": "0"
+    },
+    {
+      "j": 3,
+      "m": 2,
+      "marked": "512/105",
+      "pure": "0"
+    },
+    {
+      "j": 3,
+      "m": 3,
+      "marked": "-64/5",
+      "pure": "0"
+    },
+    {
+      "j": 3,
+      "m": 4,
+      "marked": "524288/15015",
+      "pure": "0"
+    },
+    {
+      "j": 3,
+      "m": 5,
+      "marked": "-2048/21",
+      "pure": "0"
+    },
+    {
+      "j": 3,
+      "m": 6,
+      "marked": "268435456/969969",
+      "pure": "0"
+    },
+    {
+      "j": 4,
+      "m": 1,
+      "marked": "-2",
+      "pure": "0"
+    },
+    {
+      "j": 4,
+      "m": 2,
+      "marked": "512/105",
+      "pure": "0"
+    },
+    {
+      "j": 4,
+      "m": 3,
+      "marked": "-64/5",
+      "pure": "0"
+    },
+    {
+      "j": 4,
+      "m": 4,
+      "marked": "524288/15015",
+      "pure": "0"
+    },
+    {
+      "j": 4,
+      "m": 5,
+      "marked": "-2048/21",
+      "pure": "0"
+    },
+    {
+      "j": 4,
+      "m": 6,
+      "marked": "268435456/969969",
+      "pure": "0"
+    },
+    {
+      "j": 5,
+      "m": 1,
+      "marked": "-2",
+      "pure": "0"
+    },
+    {
+      "j": 5,
+      "m": 2,
+      "marked": "512/105",
+      "pure": "0"
+    },
+    {
+      "j": 5,
+      "m": 3,
+      "marked": "-64/5",
+      "pure": "0"
+    },
+    {
+      "j": 5,
+      "m": 4,
+      "marked": "524288/15015",
+      "pure": "0"
+    },
+    {
+      "j": 5,
+      "m": 5,
+      "marked": "-2048/21",
+      "pure": "0"
+    },
+    {
+      "j": 5,
+      "m": 6,
+      "marked": "268435456/969969",
+      "pure": "0"
+    },
+    {
+      "j": 6,
+      "m": 1,
+      "marked": "-2",
+      "pure": "0"
+    },
+    {
+      "j": 6,
+      "m": 2,
+      "marked": "512/105",
+      "pure": "0"
+    },
+    {
+      "j": 6,
+      "m": 3,
+      "marked": "-64/5",
+      "pure": "0"
+    },
+    {
+      "j": 6,
+      "m": 4,
+      "marked": "524288/15015",
+      "pure": "0"
+    },
+    {
+      "j": 6,
+      "m": 5,
+      "marked": "-2048/21",
+      "pure": "0"
+    },
+    {
+      "j": 6,
+      "m": 6,
+      "marked": "268435456/969969",
+      "pure": "0"
+    }
+  ],
+  "schema": 1,
+  "scope": {
+    "FPYZ_needed": false,
+    "all_Aut_or_424_needed": false,
+    "all_balanced_degrees_claimed": false,
+    "all_degree5_or7_resolved": false,
+    "all_order_conclusion_from_finite_prefix": false,
+    "arbitrary_mixed_classification": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "balanced_degree": "3*j+3",
+    "characteristic_zero": true,
+    "controls": {
+      "chart_j_max": 6,
+      "chart_m_max": 6,
+      "degree_j_max": 32,
+      "endpoint_m_max": 12,
+      "kappa_m_max": 40,
+      "original_cases": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "even_orders_only": false,
+    "fixed_marker": "Z=xi1*z2",
+    "fixed_marker_orders": "EVERY positive integer m",
+    "full_conditional_theorem_input_needed": false,
+    "integer_original_lift": true,
+    "old_existence_family_needed": false,
+    "ordinary_total_degree": "6*j+6",
+    "original_curve_derivative_at_zero": -16,
+    "original_curve_value": "16*tau^3-16*tau",
+    "parameter_j_min": 1,
+    "pure_orders": "EVERY positive integer m",
+    "radial_point": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "radial_value": -1,
+    "reviewed_proof_sha256": "82c28b517070c5f2d65b98df2f9cc925cf1c5a64bd5b030a2fe31cadc297d39d",
+    "scalar_nonpower_over_every_extension": true,
+    "schema": 1
+  },
+  "source_ledger_sha256": "68f982b2cf908c5b7ce3b7010216d4939e30ae8613d9de0ed7a32a9e609e6698",
+  "source_scope_controls": [
+    "omit:written_proof",
+    "badpin:written_proof",
+    "omit:exact_checker",
+    "badpin:exact_checker",
+    "omit:typed_inputs",
+    "badpin:typed_inputs",
+    "omit:balanced_normalization",
+    "badpin:balanced_normalization",
+    "omit:image_kernel",
+    "badpin:image_kernel",
+    "false_scope:parameter_j_min",
+    "false_scope:fixed_marker_orders",
+    "false_scope:even_orders_only",
+    "false_scope:fixed_marker",
+    "false_scope:balanced_degree",
+    "false_scope:radial_value",
+    "false_scope:original_curve_derivative_at_zero",
+    "false_scope:all_Aut_or_424_needed",
+    "false_scope:FPYZ_needed",
+    "false_scope:old_existence_family_needed",
+    "false_scope:all_degree5_or7_resolved",
+    "false_scope:all_balanced_degrees_claimed",
+    "false_scope:all_order_conclusion_from_finite_prefix",
+    "false_scope:schema",
+    "Boolean_ledger_schema",
+    "j0_wrong_parameter"
+  ],
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+      "relation": "ONLY_equations3_4_arbitrary_balanced_contraction_to_sphere_NOT_complete_cubic_safety",
+      "role": "balanced_normalization",
+      "sha256": "3e3afcf39fbbf3ec1641843cc81b550248d15db531020f4635a2ea0f5759e825"
+    },
+    {
+      "kind": "local",
+      "path": "verify_offcenter_cubic_all_order.py",
+      "relation": "bounded_literal_original_and_universal_identity_support_only",
+      "role": "exact_checker",
+      "sha256": "77036bd6f4416b657122a30b5b885afce8928dda19a2ff416692805696a3ae04"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "relation": "ONLY_section2_equations2_1_2_2_direct_charzero_Image_kernel_NOT_old_witness_existence",
+      "role": "image_kernel",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "kind": "local",
+      "path": "offcenter_cubic_all_order_inputs.json",
+      "relation": "exact_j_m_degree_marker_and_antecedent_scope",
+      "role": "typed_inputs",
+      "sha256": "78054511bf07825e23fd22dc2741bbfcbec9fd538b49163bcd871727e5b1364a"
+    },
+    {
+      "kind": "local",
+      "path": "OFFCENTER_CUBIC_ALL_MULTIPLES_OF_THREE_IMAGE_FAMILY.md",
+      "relation": "complete_direct_endpoint_original_lift_and_every_order_fixed_Z_proof",
+      "role": "written_proof",
+      "sha256": "82c28b517070c5f2d65b98df2f9cc925cf1c5a64bd5b030a2fe31cadc297d39d"
+    }
+  ],
+  "status": "PASS_OFFCENTER_CUBIC_EVERY_ORDER_IMAGE_FAMILY",
+  "universal_identity_families": [
+    "regularity_mod_quadric",
+    "cleared_endpoint_profile",
+    "kappa_product_ratio",
+    "original_rank_one_quadric"
+  ]
+}

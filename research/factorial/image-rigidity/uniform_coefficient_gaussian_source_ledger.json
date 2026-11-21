@@ -1,0 +1,45 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "SUPPORT_UNIFORM_COEFFICIENT_NILPOTENCE_AND_RADIAL_GAUSSIAN.md",
+      "relation": "written_pointwise_CI_equivalences_and_exact_radial_identity",
+      "role": "main_proof",
+      "sha256": "200881f425252bcee55be4598ebdc5573cf3d1219536dce5332393e8170195c7"
+    },
+    {
+      "kind": "local",
+      "path": "verify_uniform_coefficient_gaussian_corollary.py",
+      "relation": "exact_algebra_and_source_support",
+      "role": "exact_checker",
+      "sha256": "1b94203a8a54b6218d776d20c9329ea36d0afb4e76725ead09bc5bae8e04f2d2"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_coefficient_gaussian_inputs.json",
+      "relation": "typed_quantifier_and_shape_scope",
+      "role": "exact_inputs",
+      "sha256": "ac19760f560bdb179e112cbe20129af7226c3ee40706747b6902246eedbfc98d"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SYNTHESIS.md",
+      "relation": "one_support_uniform_field_cutoff_only",
+      "role": "global_eventual_input",
+      "sha256": "2923c4c29f5e29dd02fb5f25d50e5167e6b9d71b1a66bf41d8e24453f7a1a722"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/EVENTUAL_BINOMIAL_ALGEBRAIC_CONSEQUENCES.md",
+      "relation": "classical_regular_sequence_Hilbert_mechanism_reproduced_here",
+      "role": "retained_CI_mechanism",
+      "sha256": "1f200d3a3f060c41fae993a65ba2dc5376af81456a9b16a952ec1ca153901830"
+    }
+  ]
+}

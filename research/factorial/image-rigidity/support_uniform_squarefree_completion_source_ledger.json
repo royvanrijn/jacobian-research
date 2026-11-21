@@ -1,0 +1,367 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md",
+      "relation": "LOGICAL_written_one_order_five_region_proof_and_separate_six_way_reverse",
+      "role": "main_proof",
+      "sha256": "eba17e08f06ac6d0c848ef80bfc552f8233c649e79ad754b078729210f8c023d"
+    },
+    {
+      "kind": "local",
+      "path": "verify_support_uniform_squarefree_completion.py",
+      "relation": "exact_support_and_artifact_freshness_NOT_formal_analytic_verification",
+      "role": "exact_checker",
+      "sha256": "0d7ab6194ad7b10f9b4b6e380470d47981cd347487f9bd8eba4c6559cd97d587"
+    },
+    {
+      "kind": "local",
+      "path": "support_uniform_squarefree_completion_inputs.json",
+      "relation": "exact_typed_scope_and_source_roles",
+      "role": "typed_inputs",
+      "sha256": "08a0b9d9ed80318f80f284fdacfb1be8886e748ac00bfae7773274d709c3c7cc"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_ACTUAL_ENDPOINT_ROOT_SIMPLICITY.md",
+      "relation": "LOGICAL_individual_derivative_and_R6_LOCATION_only_NOT401_coprimality",
+      "role": "high_ratio_proof0",
+      "sha256": "799db033a60dfdd7bc6383252b894f8a4b0c001ce240dbc83858eb93956e97aa"
+    },
+    {
+      "kind": "local",
+      "path": "UNIFORM_ACTUAL_BULK_ROOT_SIMPLICITY.md",
+      "relation": "LOGICAL_individual_derivative_and_R6_LOCATION_only_NOT401_coprimality",
+      "role": "high_ratio_proof1",
+      "sha256": "4a2f09edc09fcfab3dfdcec9beab321c68e9d656ee67172249afc904f033633a"
+    },
+    {
+      "kind": "local",
+      "path": "verify_uniform_actual_high_ratio_simplicity.py",
+      "relation": "fresh_narrow_child_artifact_high_ratio_NOT_parent_coprimality",
+      "role": "high_ratio_checker",
+      "sha256": "713aad26f1e8d7eaeaf444968ee2df70fb6437b114a50d923314b5eb50f6c397"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_actual_high_ratio_simplicity_inputs.json",
+      "relation": "fresh_narrow_child_artifact_high_ratio_NOT_parent_coprimality",
+      "role": "high_ratio_inputs",
+      "sha256": "9a142624defc668e1e20f87e3de3984476b779241f81d86534836d89564d7ba7"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_actual_high_ratio_simplicity_source_ledger.json",
+      "relation": "fresh_narrow_child_artifact_high_ratio_NOT_parent_coprimality",
+      "role": "high_ratio_ledger",
+      "sha256": "95505f9802863cba7211a84a9387a0f82a6270a4e0235ea8297d15243913f197"
+    },
+    {
+      "kind": "local",
+      "path": "uniform_actual_high_ratio_simplicity_verification.json",
+      "relation": "fresh_narrow_child_artifact_high_ratio_NOT_parent_coprimality",
+      "role": "high_ratio_receipt",
+      "sha256": "2841f337b39424f3676318bc6a2f6125088525a2cfde0c467bcc0785a4692477"
+    },
+    {
+      "kind": "local",
+      "path": "FIXED_TERMINAL_REPEATED_ROOT_SUPPORT_FINITENESS.md",
+      "relation": "LOGICAL_ONLY_tail_to_finite_repeated_triples_NOT_main_uniform_cutoff",
+      "role": "fixed_terminal_proof0",
+      "sha256": "847a961f4f55400f2fc5973fa2ea547c694ea998150dce1e45a75e1cb206a24d"
+    },
+    {
+      "kind": "local",
+      "path": "verify_fixed_terminal_repeated_support.py",
+      "relation": "fresh_narrow_child_artifact_fixed_terminal_NOT_parent_coprimality",
+      "role": "fixed_terminal_checker",
+      "sha256": "5682b139b031f48bde77a74749e2caf7daa9963e3ec52447ad9c8db5847941b9"
+    },
+    {
+      "kind": "local",
+      "path": "fixed_terminal_repeated_support_inputs.json",
+      "relation": "fresh_narrow_child_artifact_fixed_terminal_NOT_parent_coprimality",
+      "role": "fixed_terminal_inputs",
+      "sha256": "ef4c74606a13d32e6fea43996ef8e0a96b28227ec54a6e21a17accb4b8050bd4"
+    },
+    {
+      "kind": "local",
+      "path": "fixed_terminal_repeated_support_source_ledger.json",
+      "relation": "fresh_narrow_child_artifact_fixed_terminal_NOT_parent_coprimality",
+      "role": "fixed_terminal_ledger",
+      "sha256": "9c11b463412f2ecd6c18a9353ee3b58bc1ad5d5b8b7d1dd062758ba173e57f3b"
+    },
+    {
+      "kind": "local",
+      "path": "fixed_terminal_repeated_support_verification.json",
+      "relation": "fresh_narrow_child_artifact_fixed_terminal_NOT_parent_coprimality",
+      "role": "fixed_terminal_receipt",
+      "sha256": "60a0ac37f0d604b49d5879daef793039793bab883ced20ea98a98330ef55c796"
+    },
+    {
+      "kind": "local",
+      "path": "EVENTUAL_SQUAREFREENESS_OF_ORDINARY_BINOMIAL_MOMENTS.md",
+      "relation": "LOGICAL_ONLY_finitely_bounded_supports_and_projection_reverse_NOT407",
+      "role": "fixed_support_proof0",
+      "sha256": "4aeba104dd1ac39688f912268c1a2ad4fc4af489a320a0bea0af8d365c13d4b3"
+    },
+    {
+      "kind": "local",
+      "path": "verify_ordinary_binomial_eventual_squarefree.py",
+      "relation": "fresh_narrow_child_artifact_fixed_support_NOT_parent_coprimality",
+      "role": "fixed_support_checker",
+      "sha256": "cf9764e4e0886f7cbc8f94728a4d64212aff6ff6eb4c9c513b36f4ba09aee990"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_squarefree_inputs.json",
+      "relation": "fresh_narrow_child_artifact_fixed_support_NOT_parent_coprimality",
+      "role": "fixed_support_inputs",
+      "sha256": "b2d53b19c09fd4022e9546bc2eed2a8e7d74f2644056bd45bd59e0bca4133a66"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_squarefree_source_ledger.json",
+      "relation": "fresh_narrow_child_artifact_fixed_support_NOT_parent_coprimality",
+      "role": "fixed_support_ledger",
+      "sha256": "7b0a23edc174aaecf3e3551d07e163e0fab02f40798f048e30c59ef58bb967a0"
+    },
+    {
+      "kind": "local",
+      "path": "ordinary_binomial_eventual_squarefree_verification.json",
+      "relation": "fresh_narrow_child_artifact_fixed_support_NOT_parent_coprimality",
+      "role": "fixed_support_receipt",
+      "sha256": "2f8027da9a04bd28bc9e36c4ac54c3902f4595942ede15996f58b4cf5fa21846"
+    },
+    {
+      "kind": "local",
+      "path": "ABOVE_CRITICAL_REGULAR_COMPACT_COMPLEMENT.md",
+      "relation": "LOGICAL408_complete_regular_periods_and_Cauchy_collars",
+      "role": "fixed_support_regular_mechanism",
+      "sha256": "40ee81bec6a1bf906e695a819a7e609be85ca03b19e5df2fb7a5a2388c5a67e0"
+    },
+    {
+      "kind": "local",
+      "path": "SIMPLE_TURN_SHRINKING_WINDOW_CONSECUTIVE_EXCLUSION.md",
+      "relation": "LOGICAL_RAW_normal_form_proper_arms_and_holomorphic_errors_ONLY",
+      "role": "actual_simple_turn_mechanism",
+      "sha256": "be8c73ad8b346bb5c260f165b30057dca9295d000629557b86cf9e312929ead0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md",
+      "relation": "LOGICAL_RAW_U5_U20_seam_periods_complete_tails_Morse_collar_NOT_coprimality",
+      "role": "small_ratio_raw",
+      "sha256": "ebf6489506e379f766728c199d821862ab02da3b034e9ffb428eb35a0bd925e5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md",
+      "relation": "LOGICAL_RAW_S1_S16_actual_compactification_tail_circle_midpoint_ONLY",
+      "role": "subcritical_raw",
+      "sha256": "bc230f8206319e53ba84e43371407815b0a92a347e245aaa61633ce1a46aa2c5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_BOUNDED_THERMAL_TRANSITION_EVENTUAL_SFC.md",
+      "relation": "LOGICAL_RAW_T3_T19_actual_jets_complete_quartic_limit_FIXED_T_collar_ONLY",
+      "role": "bounded_thermal_raw",
+      "sha256": "83a48e4da05099917114b51cf3bb6fc8ac686c5f42c936efbdc3d028a3cb7e93"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md",
+      "relation": "LOGICAL_RAW_L1_L9_L13_L19_L25_cycles_errors_Ai_ONLY_NO_gamma_over_M",
+      "role": "large_thermal_raw",
+      "sha256": "a9ca7dfb62b814d0637d1a56baac5084f951b479e8e64f9e5df5b36948d13c87"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md",
+      "relation": "LOGICAL_RAW_A1_A21_A26_actual_localization_cycles_errors_ONLY_NO407",
+      "role": "supercritical_raw",
+      "sha256": "0a4945c8a491c20a628db6e1fd37af555b70fa5e4b850d4202087c6bc5c4219f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_CUSP_CURIE_WEISS_REGULAR_COMPLEMENT.md",
+      "relation": "LOGICAL_RAW_complete_model_regular_geometry_and_tails",
+      "role": "uniform_CW_regular",
+      "sha256": "8b64926a462956eb4d1b60cdbb8246ae92c85a0614136bf1f6a2e251041d31f8"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_GROWING_QUARTIC_CUSP_NEIGHBORHOOD.md",
+      "relation": "LOGICAL_RAW_uniform_quartic_packets_revalidated_with_small_T",
+      "role": "uniform_quartic_growing",
+      "sha256": "e9b23ad408aa1d0933d55d07b0126a801a79dc2623a28900a310c156e77543ca"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "LOGICAL_RAW_compact_phase_jets_and_complete_bounded_field_tails",
+      "role": "uniform_quartic_bounded",
+      "sha256": "8a7a94ab8daadf196ceab85b4d3be1387de4b2f2825144dd12332407b041c08e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_LEE_YANG_ZERO_AND_ROBIN_BRIDGE.md",
+      "relation": "LOGICAL_ONLY_sections1_2_Newman_location_ODE_heat_simplicity_NO_HJN",
+      "role": "quartic_model",
+      "sha256": "957127791def20f8c73730810775760cb124a9175d5a3c7b91e8cf7498521d89"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md",
+      "relation": "LOGICAL_RAW_actual_quartic_jets_and_local_analytic_geometry",
+      "role": "quartic_unfolding",
+      "sha256": "86b19ffd10650e14a91cddd47974a360d9329f44dfeda6cc860cb0a84faa7953"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md",
+      "relation": "LOGICAL408_actual_complete_strict_packets_ONLY",
+      "role": "strict_packets_408",
+      "sha256": "3bcd961a7cbf63fe780f30580554118355f4f5252cf1d92992741881ece500e6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_SHRINKING_WINDOW_LOG_RATIO_NONCOLLISION.md",
+      "relation": "LOGICAL408_complete_quartic_packets_and_open_collars_ONLY",
+      "role": "quartic_growing_408",
+      "sha256": "679586446ff23794d0182c6bc45feedd7d710d13973600d9076da6c578a32409"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md",
+      "relation": "LOGICAL408_complete_bounded_model_period_ONLY",
+      "role": "quartic_bounded_408",
+      "sha256": "abd5481d1dda7beb2d637ea9904d580c51882030e17d108496f6163b4003f906"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md",
+      "relation": "LOGICAL408_actual_complete_periods_NO_coprimality_inference",
+      "role": "morse_mechanism_408",
+      "sha256": "7e21794c68108551133243bb1b1e574166c27dfad8c0750ba28f809d8900b85c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md",
+      "relation": "LOGICAL408_actual_wall_and_real_boundary_periods_ONLY",
+      "role": "wall_mechanism_408",
+      "sha256": "f38231556fbb8f8eaecc5170a28bd90a9fa9498673a28129d41d0c870b5afc44"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/COALESCING_BINOMIAL_SADDLE_BRIDGE.md",
+      "relation": "LOGICAL408_actual_stationary_and_phase_geometry_ONLY",
+      "role": "stationary_geometry_408",
+      "sha256": "8ac6b9100edf75f0ba1cc1d0b03209bff3b76c4802e1b855840065911fd9131e"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/GAMMA_PRODUCT_ROOT_MODULUS.tex",
+      "relation": "LOGICAL_ONLY_product_annulus_UPPER_NOT_soft_pair_simplicity",
+      "role": "old_gamma_upper",
+      "sha256": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+      "relation": "LOGICAL_ONLY_thm_sparse_INDIVIDUAL_simplicity_clause_and_proof",
+      "role": "raw_sparse",
+      "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+      "relation": "LOGICAL_ONLY_thm_analytic_individual_tail_NO_finite_prefix",
+      "role": "raw_constant_analytic",
+      "sha256": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex",
+      "relation": "LOGICAL_ONLY_LITERAL_thm_large_F_squarefree_nonzero_reversal",
+      "role": "raw_constant_large",
+      "sha256": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+      "relation": "LOGICAL_shape1_small_primepower_sfc_plus_EXACT_a0_Appell_ONLY",
+      "role": "raw_primepower",
+      "sha256": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex",
+      "relation": "AUTHENTICATED_raw_analytic_credit_ONLY_NO_finite_prefix",
+      "role": "raw_entropy_credit",
+      "sha256": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/uniform_cusp_sources/kabluchko_2203_05533v3.pdf",
+      "relation": "LOGICAL_Thm2_3_inverse_for_cutoff_Lemma2_1_finite_circle_ONLY_for847_NO_circle_PR",
+      "role": "primary_Kabluchko",
+      "sha256": "fbf2a26f4424761bf0a75ac2846b27aade3cd4c65433ff11fdf6ca929073a02c"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/quartic_lee_yang_sources/newman_fourier_transforms_1976.pdf",
+      "relation": "LOGICAL_Thm2_empty_product_all_real_temperature_location_NO_HJN",
+      "role": "primary_Newman",
+      "sha256": "f154969b9a39b0e64075570eb9f4c920affbea85bbcee0367eb66302e7a1be28"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-2-endpoint.html",
+      "relation": "LOGICAL_Airy_ODE_uniqueness_and_simplicity",
+      "role": "primary_Airy_ODE",
+      "sha256": "a237add8efb2c719dc7cc74baf78b435b50beec368dbc1adc672645f792b7ac7"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-7-endpoint.html",
+      "relation": "LOGICAL_Ai_single_exponential_sector_model_only_actual_cycles_proved_separately",
+      "role": "primary_Airy_sectors",
+      "sha256": "2073a97493c6b612a5d7f3414de437aa1a58e97bf1268563cacd33aa537bf6d1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-9-9-endpoint.html",
+      "relation": "LOGICAL_Ai_negative_zero_location_ONLY_in_imported_R6_boundary_proof_NO_all_index_separation",
+      "role": "primary_Airy_location_credit",
+      "sha256": "7f5e538332164cf3103abb2374acc2619bfca1c765cd46e04fa738ec790d962b"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-2-4-endpoint.html",
+      "relation": "AUTHENTICATED_framework_context_allows_other_cycles_NOT_actual_cycle_proof",
+      "role": "primary_cubic_context",
+      "sha256": "c90ac6736075b2d0851c48421da534e74d99ef2d1f33884024ef6297f1dc971f"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/LARGE_THERMAL_PRIMARY_CONTEXT.md",
+      "relation": "AUTHENTICATED_classical_hypothesis_audit_context_only",
+      "role": "large_thermal_primary_context",
+      "sha256": "57b154c5dbd87856d8eabadc18fcaee3ceaee0be497f5526c47ae0323ac186cc"
+    },
+    {
+      "kind": "repo",
+      "path": "research/factorial/image-rigidity/sources/dlmf-36-12-large-thermal.html",
+      "relation": "AUTHENTICATED_classical_cubic_framework_context_only",
+      "role": "large_thermal_cubic_context",
+      "sha256": "b10bf13a639a0673f559713a1dff703d67ab3ff1d1e2fc81cba58148628d78ff"
+    }
+  ]
+}

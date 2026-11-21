@@ -1,0 +1,90 @@
+{
+  "affine_shape_parameters": [
+    "0",
+    "1",
+    "1/2",
+    "-1",
+    "2",
+    "3"
+  ],
+  "classical_context": {
+    "author": "Andrew Sutherland",
+    "course": "MIT18.783 Fall2025 Lecture13",
+    "locator": "Definition13.11 and Theorems13.13-13.14 printed4-6",
+    "role": "classical_context_only",
+    "scope": "Equal j gives algebraic-closure isomorphism, not automatically K(x)-isomorphism.",
+    "title": "Ordinary and supersingular elliptic curves",
+    "url": "https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec13.pdf"
+  },
+  "formal_pq_cases": [
+    [
+      "1",
+      "1"
+    ],
+    [
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "formal_rho": [
+    "1",
+    "1/2",
+    "-1/3",
+    "2/5",
+    "-1/7",
+    "1/11"
+  ],
+  "logical_boundary": {
+    "MIT_elliptic_primary_mathematical_premise": false,
+    "all_central_prime_phases_safe": false,
+    "analytic_interval_theorem_premise": false,
+    "arbitrary_higher_height_or_varying_invariant_classification": false,
+    "characteristic_zero_all_fields_and_extensions": true,
+    "constant_j_implies_Kx_constant_curve_isomorphism": false,
+    "elliptic_interpretation_requires_nonzero_discriminant": true,
+    "external_review": false,
+    "formal_trivialization_over_K_itself": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "lower_height_E_identically_zero_in_scope": false,
+    "nonunit_center_constant_invariant_forces_zero_center": true,
+    "pure_constant_invariant_degree_five_seven_safe": true,
+    "pure_zero_center_safe_via_first_four_only": true,
+    "purity_implies_I_zero": false,
+    "purity_implies_constant_invariant": false,
+    "regular_cubic_height_E_not_identically_zero": true,
+    "unit_center_constant_invariant_iff_formal_fixed_shape": true,
+    "unsafe_prime_degree_constant_invariant_forces_central_unit_j1728": true,
+    "unsafe_witness_existence_or_minimum_degree": false,
+    "zero_pair_is_separate_not_projective": true
+  },
+  "prime_scope_controls": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31
+  ],
+  "schema": 1,
+  "unsafe_noncentral_degrees": [
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ]
+}

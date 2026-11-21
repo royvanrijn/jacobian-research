@@ -1,0 +1,468 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "credit": {
+    "file": "results/three-pair-image-counterexample/main.tex",
+    "locators": [
+      "Theorem thm:main",
+      "Lemma lem:kernel",
+      "Proof binomial identities eq:pure and eq:mixed"
+    ],
+    "relation": "Seed and moment cancellation credited; all identities needed by this theorem are reproved in the new note.",
+    "status": "deposited preprint; not a journal-publication claim"
+  },
+  "family_controls": {
+    "R_primitive_controls": 15,
+    "exact_flow_controls": 15,
+    "homogeneous_degree_controls": 30,
+    "original_family_contractions": 45,
+    "records": [
+      {
+        "D": 2,
+        "m": 1,
+        "mixed_integer": "2",
+        "n": 3,
+        "terms": 4
+      },
+      {
+        "D": 2,
+        "m": 2,
+        "mixed_integer": "-12",
+        "n": 3,
+        "terms": 9
+      },
+      {
+        "D": 2,
+        "m": 3,
+        "mixed_integer": "144",
+        "n": 3,
+        "terms": 16
+      },
+      {
+        "D": 3,
+        "m": 1,
+        "mixed_integer": "12",
+        "n": 3,
+        "terms": 13
+      },
+      {
+        "D": 3,
+        "m": 2,
+        "mixed_integer": "-864",
+        "n": 3,
+        "terms": 65
+      },
+      {
+        "D": 3,
+        "m": 3,
+        "mixed_integer": "190080",
+        "n": 3,
+        "terms": 197
+      },
+      {
+        "D": 4,
+        "m": 1,
+        "mixed_integer": "84",
+        "n": 3,
+        "terms": 23
+      },
+      {
+        "D": 4,
+        "m": 2,
+        "mixed_integer": "-95040",
+        "n": 3,
+        "terms": 132
+      },
+      {
+        "D": 4,
+        "m": 3,
+        "mixed_integer": "518918400",
+        "n": 3,
+        "terms": 448
+      },
+      {
+        "D": 5,
+        "m": 1,
+        "mixed_integer": "672",
+        "n": 3,
+        "terms": 35
+      },
+      {
+        "D": 5,
+        "m": 2,
+        "mixed_integer": "-14826240",
+        "n": 3,
+        "terms": 223
+      },
+      {
+        "D": 5,
+        "m": 3,
+        "mixed_integer": "2540624486400",
+        "n": 3,
+        "terms": 793
+      },
+      {
+        "D": 6,
+        "m": 1,
+        "mixed_integer": "6048",
+        "n": 3,
+        "terms": 51
+      },
+      {
+        "D": 6,
+        "m": 2,
+        "mixed_integer": "-3113510400",
+        "n": 3,
+        "terms": 342
+      },
+      {
+        "D": 6,
+        "m": 3,
+        "mixed_integer": "20274183401472000",
+        "n": 3,
+        "terms": 1238
+      },
+      {
+        "D": 2,
+        "m": 1,
+        "mixed_integer": "2",
+        "n": 4,
+        "terms": 4
+      },
+      {
+        "D": 2,
+        "m": 2,
+        "mixed_integer": "-12",
+        "n": 4,
+        "terms": 9
+      },
+      {
+        "D": 2,
+        "m": 3,
+        "mixed_integer": "144",
+        "n": 4,
+        "terms": 16
+      },
+      {
+        "D": 3,
+        "m": 1,
+        "mixed_integer": "14",
+        "n": 4,
+        "terms": 17
+      },
+      {
+        "D": 3,
+        "m": 2,
+        "mixed_integer": "-1080",
+        "n": 4,
+        "terms": 103
+      },
+      {
+        "D": 3,
+        "m": 3,
+        "mixed_integer": "247104",
+        "n": 4,
+        "terms": 379
+      },
+      {
+        "D": 4,
+        "m": 1,
+        "mixed_integer": "112",
+        "n": 4,
+        "terms": 37
+      },
+      {
+        "D": 4,
+        "m": 2,
+        "mixed_integer": "-142560",
+        "n": 4,
+        "terms": 292
+      },
+      {
+        "D": 4,
+        "m": 3,
+        "mixed_integer": "830269440",
+        "n": 4,
+        "terms": 1246
+      },
+      {
+        "D": 5,
+        "m": 1,
+        "mixed_integer": "1008",
+        "n": 4,
+        "terms": 69
+      },
+      {
+        "D": 5,
+        "m": 2,
+        "mixed_integer": "-25945920",
+        "n": 4,
+        "terms": 631
+      },
+      {
+        "D": 5,
+        "m": 3,
+        "mixed_integer": "4827186524160",
+        "n": 4,
+        "terms": 2909
+      },
+      {
+        "D": 6,
+        "m": 1,
+        "mixed_integer": "10080",
+        "n": 4,
+        "terms": 117
+      },
+      {
+        "D": 6,
+        "m": 2,
+        "mixed_integer": "-6227020800",
+        "n": 4,
+        "terms": 1170
+      },
+      {
+        "D": 6,
+        "m": 3,
+        "mixed_integer": "44603203483238400",
+        "n": 4,
+        "terms": 5620
+      },
+      {
+        "D": 2,
+        "m": 1,
+        "mixed_integer": "2",
+        "n": 5,
+        "terms": 4
+      },
+      {
+        "D": 2,
+        "m": 2,
+        "mixed_integer": "-12",
+        "n": 5,
+        "terms": 9
+      },
+      {
+        "D": 2,
+        "m": 3,
+        "mixed_integer": "144",
+        "n": 5,
+        "terms": 16
+      },
+      {
+        "D": 3,
+        "m": 1,
+        "mixed_integer": "16",
+        "n": 5,
+        "terms": 21
+      },
+      {
+        "D": 3,
+        "m": 2,
+        "mixed_integer": "-1320",
+        "n": 5,
+        "terms": 150
+      },
+      {
+        "D": 3,
+        "m": 3,
+        "mixed_integer": "314496",
+        "n": 5,
+        "terms": 644
+      },
+      {
+        "D": 4,
+        "m": 1,
+        "mixed_integer": "144",
+        "n": 5,
+        "terms": 55
+      },
+      {
+        "D": 4,
+        "m": 2,
+        "mixed_integer": "-205920",
+        "n": 5,
+        "terms": 569
+      },
+      {
+        "D": 4,
+        "m": 3,
+        "mixed_integer": "1283143680",
+        "n": 5,
+        "terms": 2993
+      },
+      {
+        "D": 5,
+        "m": 1,
+        "mixed_integer": "1440",
+        "n": 5,
+        "terms": 121
+      },
+      {
+        "D": 5,
+        "m": 2,
+        "mixed_integer": "-43243200",
+        "n": 5,
+        "terms": 1537
+      },
+      {
+        "D": 5,
+        "m": 3,
+        "mixed_integer": "8776702771200",
+        "n": 5,
+        "terms": 9011
+      },
+      {
+        "D": 6,
+        "m": 1,
+        "mixed_integer": "15840",
+        "n": 5,
+        "terms": 235
+      },
+      {
+        "D": 6,
+        "m": 2,
+        "mixed_integer": "-11762150400",
+        "n": 5,
+        "terms": 3406
+      },
+      {
+        "D": 6,
+        "m": 3,
+        "mixed_integer": "93261243646771200",
+        "n": 5,
+        "terms": 21294
+      }
+    ],
+    "simple_tau_controls": 15
+  },
+  "logical_boundary": {
+    "all_Aut_theorem_is_logical_premise": false,
+    "all_order_math": "self-contained N1-N12, normalization, kernel and tau-valuation proof",
+    "credit_file_is_logical_premise": false,
+    "external_mathematical_premises": [],
+    "finite_checks_prove_all_orders": false
+  },
+  "mathematical_negative_controls": [
+    "Pochhammer normalization cannot be omitted.",
+    "Radial padding alone can share moments while failing primitivity.",
+    "The literal balanced marker is tau*y; y alone has nonconstant contraction.",
+    "The original Image subspace is not an ideal."
+  ],
+  "normalization_and_replica_controls": {
+    "literal_replica_controls": 11906,
+    "marker_balancing_controls": 180,
+    "original_kernel_controls": 720,
+    "radial_normalization_controls": 924
+  },
+  "pins": [
+    {
+      "path": "ALL_BALANCED_DEGREES_IMAGE_WITNESSES_AT_LEAST_THREE_PAIRS.md",
+      "relation": "WRITTEN_SELF_CONTAINED_UNIVERSAL_PROOF",
+      "role": "main_proof",
+      "root": "here",
+      "sha256": "cd00c7e229e0bb738726608e45525e8694c93131ce38021861b553886c92b918"
+    },
+    {
+      "path": "verify_all_balanced_image_degrees.py",
+      "relation": "BOUNDED_EXACT_CONTROLS_AND_SOURCE_AUTHENTICATION",
+      "role": "checker",
+      "root": "here",
+      "sha256": "4c2d2343662bbc84573cbd4dc02f4e69a8ffb37f6a84021bf8a91033ea64e7ce"
+    },
+    {
+      "path": "all_balanced_image_degree_inputs.json",
+      "relation": "EXACT_TYPED_SCOPE",
+      "role": "typed_inputs",
+      "root": "here",
+      "sha256": "8bfa9ecf1e49e8a052c90bfbbec54ad8d57f9f943a8314355b9d5e4adfc4dbb4"
+    },
+    {
+      "path": "results/three-pair-image-counterexample/main.tex",
+      "relation": "AUTHENTICATED_RETAINED_PREPRINT_CREDIT_ONLY",
+      "role": "retained_seed_credit",
+      "root": "repo",
+      "sha256": "0c49d6bb76957f2bc8a2159fbd70e191b526b4552945cfcb9dab163a88a18dcb"
+    }
+  ],
+  "scope": {
+    "degree": {
+      "balanced_minimum": 2,
+      "degree_one_claim": false,
+      "integer": true,
+      "least_matrix_degree": "D",
+      "ordinary_total": "2D"
+    },
+    "family": {
+      "D2": "tau(t-y)(wz+vt)",
+      "D_at_least3": "tau(t-y)[R^(D-2)(wz+vt)+(wy)^(D-2)w(t-y)]",
+      "marker_balanced_degree": 1,
+      "marker_same_for_all_n_D_m": true,
+      "same_marker": "tau*y"
+    },
+    "field": "every characteristic-zero field and every coefficient-field extension",
+    "moments": {
+      "Image_kernel_is_vector_space_not_ideal": true,
+      "all_positive_integer_orders": true,
+      "mixed": "(-1)^(m-1)(m+1)!m! (n+2m+1)_(m(D-2))",
+      "pure": 0
+    },
+    "nonclaims": {
+      "Jacobian_consequence": false,
+      "all_polynomials_of_these_degrees_fail": false,
+      "historical_priority": false,
+      "two_pair_degree5_resolved": false,
+      "two_pair_degree7_resolved": false
+    },
+    "pairs": {
+      "integer": true,
+      "minimum": 3,
+      "two_pair_coverage_claim": false
+    },
+    "power": {
+      "R_primitive": true,
+      "absolute_scalar_nonproper_power": true,
+      "all_extensions": true,
+      "full_original_ring": true,
+      "tau_valuation": 1
+    },
+    "schema": 1,
+    "seed": {
+      "all_order_identities_reproved": true,
+      "journal_publication_claim": false,
+      "retained_preprint_credit": true
+    },
+    "source_boundary": {
+      "all_Aut_theorem_logical_premise": false,
+      "all_math_reproved": true,
+      "automorphism_group_classification_logical_premise": false,
+      "finite_prefix_logical_premise": false,
+      "seed_file_relation": "AUTHENTICATED_RETAINED_PREPRINT_CREDIT_ONLY"
+    },
+    "verification": {
+      "bounded_exact_controls_only": true,
+      "external_review": false,
+      "finite_controls_prove_universal_quantifiers": false,
+      "formal_verification": false,
+      "independent_replay": false
+    }
+  },
+  "seed_binomial_controls": 6720,
+  "source_ledger_sha256": "50be674afb846a9973b0f21294103491b2996c566318232fb7303db0597d768b",
+  "source_scope_negative_controls": 31,
+  "status": "PASS_SOURCE_GUARDED_ALL_BALANCED_IMAGE_DEGREES",
+  "written_identity_families": [
+    "N2-N3: matching pure indices j=s and marked indices j=s+1 reduce to exact full and truncated binomial sums.",
+    "N4: E_n(R H)=(n+D) E_n(H) on balanced degree D; repeated radial powers give a rising factorial.",
+    "N7: alpha_v*beta!=beta_z*alpha! under beta=alpha+e_w-e_v.",
+    "N8: L(h)=0 implies h^k L(a)=L(h^k a); each derivative term has zero trace.",
+    "N10-N11: L(F2)=tau*w*(t-y)^2, L^2(F2)=0, and the balanced lift restricts to exp(h^k L)f2.",
+    "N1: (n)_(mD+1)/(n)_(2m+1)=(n+2m+1)_(m(D-2)).",
+    "N12: reduction modulo R leaves a nonzero product of displayed linear factors; literal R=0 points are additional controls.",
+    "Simple tau valuation one excludes every scalar proper power over all coefficient extensions.",
+    "Monomial reduction by partial_z-xi and E annihilation prove the original Image kernel identity."
+  ]
+}

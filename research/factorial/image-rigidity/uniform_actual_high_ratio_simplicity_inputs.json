@@ -1,0 +1,48 @@
+{
+  "analytic_boundary": {
+    "bulk_holomorphic_imag_open": "191/100",
+    "bulk_holomorphic_real_open": "1/5000000",
+    "common_zeta_collar": "3/1000000",
+    "compact_R_constant": 100000000000000,
+    "large_R_constant": 1000000000,
+    "physical_imag_open": [
+      "18999/10000",
+      "21001/10000"
+    ],
+    "physical_real_open": "1/100000"
+  },
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "scope": {
+    "actual_moment": "sum binom(m,j)*(a*m+1)_(d*j)*x^(m-j)",
+    "all_characteristic_zero_fields": true,
+    "all_order_SFC": false,
+    "all_root_corollary_a_min": "10^24*d^2",
+    "all_root_location_delta_max": "1/1000000000000",
+    "all_support_uniform_squarefreeness": false,
+    "bulk_abs_imag_max": "19/10",
+    "bulk_abs_real_max": "1/10000000",
+    "derivative_delta_max": "1/10000000000",
+    "endpoint_abs_imag_max": "21/10",
+    "endpoint_abs_imag_min": "19/10",
+    "endpoint_abs_real_max": "1/10000000",
+    "individual_root_simplicity": true,
+    "integer_a_min": 1,
+    "integer_d_min": 2,
+    "integer_m_min": 10000000000000000,
+    "logical_location_input": "R6",
+    "logical_phase_inputs": [
+      "U9",
+      "U12"
+    ],
+    "parent_replay_role": "authenticate complete numerical source boundary only",
+    "small_order_simplicity": false,
+    "uses_HJN": false,
+    "uses_parent_coprimality": false,
+    "uses_soft_order_as_simplicity": false
+  }
+}

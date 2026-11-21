@@ -1,0 +1,70 @@
+{
+  "Gamma_Gaussian_common_space_coupling_claimed": false,
+  "HJN_motion_imported": false,
+  "a0_uses_only_raw_large_exponent_criterion": true,
+  "actual_shape": "a*m+1",
+  "all_order_SFC": false,
+  "all_order_boundary_prefix_imported": false,
+  "all_order_squarefreeness": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "claim": "finitely many repeated-root SUPPORTS at EACH fixed terminal",
+  "coefficient_fields": "Q, equivalently complex repeated roots",
+  "compact_c_limit": "fixed degree; actual coefficient convergence and discriminant compactness",
+  "controls": {
+    "CW_c_values": [
+      "1/8",
+      "1/2",
+      "1",
+      "3"
+    ],
+    "CW_degree_max": 16,
+    "Gamma_cumulant_max": 12,
+    "Gaussian_degree_max": 24,
+    "Taylor_degree_max": 12,
+    "actual_a_squares": [
+      1,
+      4,
+      9
+    ],
+    "actual_gaps": [
+      2,
+      3,
+      5
+    ],
+    "actual_m_max": 6,
+    "budget_terminal_max": 32,
+    "heat_degree_max": 24,
+    "inverse_sqrt_a_values": [
+      "1",
+      "1/2",
+      "1/5"
+    ]
+  },
+  "d1_simplicity": "explicit Gamma ODE, not adjacent coprimality",
+  "evaluated_support_box": false,
+  "external_input": "finite Lee-Yang circle law for H_m(z;t), EVERY finite m and t>0",
+  "finite_controls_prove_asymptotic_uniformity": false,
+  "finite_controls_prove_discriminant_compactness": false,
+  "finite_global_repeated_triple_set_claimed": false,
+  "finite_per_terminal": true,
+  "finite_per_terminal_implies_finite_global_triples": false,
+  "global_h_Taylor_domain": "v>=-sqrt(a), d>=2, a>=1",
+  "h_Taylor_on_whole_real_line_claimed": false,
+  "large_c_limit": "global Gamma L^m nonlinear comparison and momentwise Gaussian convergence",
+  "large_degree_zero_law_imported": false,
+  "model_simplicity": "self-derived backward-heat multiplicity blowup",
+  "polynomial": "sum binom(m,k)*(a*m+1)_(d*k)*x^(m-k)",
+  "proof_body_preserved_exactly": true,
+  "raw_sparse_individual_clause_is_logical_input": true,
+  "reviewed_body_sha256": "847a961f4f55400f2fc5973fa2ea547c694ea998150dce1e45a75e1cb206a24d",
+  "schema": 1,
+  "supports": "integer a>=0,d>=1",
+  "terminal": "EACH fixed integer m>=2",
+  "theorem407_or418_imported": false,
+  "uniform_terminal_cutoff_claimed": false,
+  "unitary_Hermite_time": "1/(c*m), c=a/d^2"
+}

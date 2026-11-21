@@ -1,0 +1,87 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md",
+      "relation": "CONTEXT_only_fixed_coordinate_classification_NOT_an_arbitrary_phase_obstruction",
+      "role": "coordinate_fiber_context",
+      "sha256": "94be4b772da0dfb9ba1f4155a53c68990c51b931a1685b61c518aec28882a4d2"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+      "relation": "CONTEXT_old_exp_xdelta_invariance_NOT_new_construction",
+      "role": "cubic_shear_antecedent",
+      "sha256": "3e3afcf39fbbf3ec1641843cc81b550248d15db531020f4635a2ea0f5759e825"
+    },
+    {
+      "kind": "local",
+      "path": "verify_hopf_shear_image_degree.py",
+      "relation": "bounded_exact_controls_NOT_proof_of_all_order_identities",
+      "role": "exact_checker",
+      "sha256": "ea022dc85ae2818fd06ade8ca8e4e80dec5b8e1e1267e623b269790cd30e0ec1"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "relation": "LOGICAL_a1_all_n_seed_fixed_x_moments_and_integer_clearing",
+      "role": "hyperbolic_seed",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md",
+      "relation": "LOGICAL_ONLY_combined_all_D_ge8_coverage_may_have_other_fixed_marker",
+      "role": "odd_composite",
+      "sha256": "a0b6f21548d266fdfedb397ae55f9e14df035e7a6edf2d7a22d48f8078d6b203"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/QUADRATIC_HEIGHT_HOPF_CLASSIFICATION.md",
+      "relation": "LOGICAL_section4_polynomial_Lambda_invariance_reproved_in_new_note",
+      "role": "old_shear",
+      "sha256": "cc68360e2ae7d09d025e484433e0207df0498131ba2f2ee2bfd518f9bf9f86e4"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "relation": "LOGICAL_original_factorial_normalization_and_all_even_primitive_nonpower_family",
+      "role": "original_and_even",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md",
+      "relation": "CONTEXT_only_existing_density_one_corollary_NOT_a_premise_of_every_prime_coverage",
+      "role": "prime_density_antecedent",
+      "sha256": "492b43aca812a2892fe6129a1a357a2c28b182f5dc11b310eba87ff0ada9dfd4"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/TWO_HEIGHT_MINIMUM_UNSAFE_PRIME_THIRTEEN.md",
+      "relation": "CONTEXT_only_its_restricted_two_height_threshold_new_shears_leave_class",
+      "role": "two_height_threshold_context",
+      "sha256": "3d3f4c28e64402a8d5bf24dbcc8bbb65c85c0c21696b6a2f85cbc89335aea656"
+    },
+    {
+      "kind": "local",
+      "path": "hopf_shear_image_degree_inputs.json",
+      "relation": "exact_scope_markers_k_min_and_source_roles",
+      "role": "typed_inputs",
+      "sha256": "f6a9b2ac4a614c9a6bb4a71d50ddab19f84d90d48673feb709e1c090dbc19cfc"
+    },
+    {
+      "kind": "local",
+      "path": "HOPF_SHEAR_PRIMITIVE_IMAGE_DEGREE_PROPAGATION.md",
+      "relation": "complete_all_n_k_m_proof_and_separate_coverage_equivalence",
+      "role": "written_proof",
+      "sha256": "b4a2a9e22308f45ea7f0223f3058ae6bdf119e85f1be7f532efa44afe25d0c04"
+    }
+  ]
+}

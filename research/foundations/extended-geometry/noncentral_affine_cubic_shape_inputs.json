@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "field": "every characteristic-zero field and every coefficient-field extension",
+  "shape": {
+    "lambda_constant": true,
+    "excluded_lambda": "1/2",
+    "E_polynomial_unit_at_zero": true,
+    "s0": -1,
+    "h0": 2,
+    "formal_s_h_allowed": true,
+    "requires_all_kappa_m_nonzero": false,
+    "purity_forces_constant_shape_claim": false
+  },
+  "purity": {
+    "criterion": "pure iff h/2=1-x(E*h^3)'/(E*h^3)",
+    "universal_theorem_on_fixed_valid_H2_data": true,
+    "unconditional_Pure_f_seed": false
+  },
+  "scalar": {
+    "recurrence_minimum_m": 1,
+    "m0_recurrence_claim": false,
+    "local_continuant_first_squared_index": "m+2",
+    "actual_kappa_has_Jacobi_initial_data_claim": false,
+    "fixed_gap_finite_for_r_Delta_nonzero": true,
+    "all_exceptions_handled": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "only_midpoint_excluded": true
+  },
+  "support": {
+    "algebraic_required": true,
+    "arbitrarily_late_zero_blocks_required": true,
+    "infinitely_many_zero_coefficients_alone_suffices": false,
+    "second_marked_support_application_required": true
+  },
+  "rationality": {
+    "h": "2/Q",
+    "Q0": 1,
+    "Q_squarefree": true,
+    "nonconstant_Q_degree_E": "3*degQ+1",
+    "u_prime_and_J_may_vanish_at_finite_fiber": true
+  },
+  "safety": {
+    "safe_iff_Q_constant": true,
+    "safe_degrees": "2,5,8,...",
+    "unsafe_degrees": "6,9,12,...",
+    "every_nonconstant_Kx_marker_infinitely_bad": true,
+    "every_order_marked_nonzero_claim": false,
+    "all_arbitrary_A_markers_bad_claim": false
+  },
+  "nonclaims": {
+    "generic_mixed_cubic_classification": false,
+    "global_degree5_resolved": false,
+    "global_degree7_resolved": false,
+    "general_original_absolute_nonpower": false,
+    "new_original_Image_witness_theorem": false
+  },
+  "source_boundary": {
+    "self_contained_math": true,
+    "Stanley": "inspected context only",
+    "Wimp": "inspected local-associated-Jacobi context only",
+    "FPYZ_logical_premise": false,
+    "all_Aut_logical_premise": false,
+    "old429_logical_premise": false
+  },
+  "verification": {
+    "bounded_exact_controls_only": true,
+    "finite_controls_prove_universal_quantifiers": false,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  }
+}

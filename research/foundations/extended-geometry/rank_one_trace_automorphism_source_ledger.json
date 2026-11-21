@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "main_proof",
+      "root": "here",
+      "path": "RANK_ONE_TRACE_AUTOMORPHISM_INVARIANCE_ALL_IMAGE_PAIRS.md",
+      "sha256": "6a387aa4213cb00f945fb5e41ff9c5166a8ac118264e01bab795ec54bf189c5a",
+      "relation": "WRITTEN_SELF_CONTAINED_UNIVERSAL_PROOF"
+    },
+    {
+      "role": "checker",
+      "root": "here",
+      "path": "verify_rank_one_trace_automorphisms.py",
+      "sha256": "f93aa7638dd2f34bd15fcb91bb073db0cbac348f53b20e90c08d3a88029cb5cd",
+      "relation": "BOUNDED_EXACT_CONTROLS_AND_SOURCE_AUTHENTICATION"
+    },
+    {
+      "role": "typed_inputs",
+      "root": "here",
+      "path": "rank_one_trace_automorphism_inputs.json",
+      "sha256": "e3151eb1e2bf3a9330c8e501068235165945b64ffc53510379c3c5fe94da3fcf",
+      "relation": "EXACT_TYPED_SCOPE"
+    }
+  ],
+  "primary_context": [
+    {
+      "author": "Bertram Kostant",
+      "title": "Minimal coadjoint orbits and symplectic induction",
+      "version": "arXiv:math/0312252v1,12Dec2003",
+      "url": "https://arxiv.org/pdf/math/0312252v1",
+      "locator": "Section3.1,printedpp24-25,equation(3.2)",
+      "actual_scope": "Real Lie-group coadjoint-orbit KKS form on fundamental fields, paired with reversed Lie bracket.",
+      "relation": "INSPECTED_CLASSICAL_CONTEXT_ONLY; no logical import, PDF download/hash claim or automorphism classification."
+    }
+  ],
+  "logical_boundary": {
+    "written_universal_proof": "self-contained Sections1-5",
+    "external_mathematical_premises": [],
+    "classical_context_is_mathematical_premise": false,
+    "bounded_controls_establish_universal_quantifiers": false
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  }
+}

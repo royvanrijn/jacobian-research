@@ -1,0 +1,74 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "local",
+      "path": "INVARIANT_ZERO_MIXED_CUBIC_LOW_DEGREE_CLASSIFICATION.md",
+      "relation": "Sections1--10_complete_depression_central_classification_entire_I0_and_negative_center_height3_nonpower",
+      "role": "written_proof",
+      "sha256": "0b65f1da0010eaa646355670099cdd0bbd111ace80abb85f76eeccc1e5547fc9"
+    },
+    {
+      "kind": "local",
+      "path": "verify_invariant_zero_mixed_cubic.py",
+      "relation": "bounded_algebra_certificate_and_source_controls_NOT_prefix_inference_of_rational_u",
+      "role": "exact_checker",
+      "sha256": "4e86b24964a4b53d4115674961bf231877a9277b3a848df89069073f0d6c83f8"
+    },
+    {
+      "kind": "local",
+      "path": "invariant_zero_mixed_cubic_inputs.json",
+      "relation": "exact_central_unit_entire_I0_markers_and_nonpower_scope",
+      "role": "typed_inputs",
+      "sha256": "ca6659523e6bba2f561afac470eee3f1f5b6e46276b1238b421119b4aaac8e63"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "relation": "ONLY_unit_center_degree_at_most5_and_all_order_rational_u_endpoint_reconstruction_NOT_old_sharpness_witness",
+      "role": "odd_low_degree",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/odd_cubic_height_low_degree_certificates.json",
+      "relation": "ACTUAL_four_Bezout_certificates_with_moment_generators_and_scalings_recomputed",
+      "role": "odd_exact_certificate",
+      "sha256": "78341369e8dc6135c9af33a3e32bf746abd49c2174a3cdab7bcee873f9bfa0b5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "relation": "ONLY_exact_degree7_unit_center_exclusion_and_pole_root_cases_with_new_complete_curve_separation",
+      "role": "odd_seven",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "relation": "ONLY_constant_coefficient_boundary_one_geometric_root_degrees_and_N1_fixed_zero_or_inversion_branches",
+      "role": "one_pole",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/MIXED_CUBIC_ZERO_CENTER_AND_CONDITIONAL_OFFCENTER.md",
+      "relation": "ONLY_Section2_algebraic_first4_and_Sections3--4_E0unit_C0_plus_or_minus3B0_I0_branch_NOT_FPYZ_or_all_height",
+      "role": "mixed425",
+      "sha256": "c4fee78a3b99b286e22818f63c90f8da450293bde974b354fb22bd2866bf1dc6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "relation": "ACTUAL_Theorem3_17_printed39_finite_Galois_correspondence_used_in_imported_one_pole_cyclic_step_NOT_Remark5_47_norm_branch",
+      "role": "milne_galois",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273"
+    }
+  ]
+}

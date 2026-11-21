@@ -1,0 +1,624 @@
+{
+  "additional_universal_and_boundary_controls": {
+    "actual_negative_controls": [
+      "t^3 is exact height3 but a cube with zero center",
+      "E0=B0=0,D0=1,C0=-1 gives I0=2",
+      "xi1*(1+z1) cubed is dual-homogeneous but not coordinate-homogeneous"
+    ],
+    "full_original_coordinate_degrees": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full_original_dual_degrees": [
+      3
+    ],
+    "universal": [
+      "regular_center_I_factorization",
+      "negative_center_joint_nonzero_coefficients",
+      "E0zero_I0_constraint"
+    ]
+  },
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "central_controls": {
+    "degree6_boxes": [
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "double_pole_negative": true,
+    "exact_xmarker_moment_comparisons": 120,
+    "raw_parameter_cases": [
+      {
+        "least_degree": 5,
+        "parameters": [
+          "safe",
+          "1",
+          "1",
+          "1"
+        ],
+        "rows": [
+          {
+            "m": 1,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 2,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "8/105",
+              "0"
+            ]
+          },
+          {
+            "m": 3,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 4,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 5,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 6,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "least_degree": 5,
+        "parameters": [
+          "safe",
+          "3/2",
+          "0",
+          "1"
+        ],
+        "rows": [
+          {
+            "m": 1,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 2,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "6/35",
+              "0"
+            ]
+          },
+          {
+            "m": 3,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 4,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 5,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 6,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "least_degree": 6,
+        "parameters": [
+          "unsafe",
+          "1",
+          "1",
+          "1",
+          "0"
+        ],
+        "rows": [
+          {
+            "m": 1,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 2,
+            "markers_x0_to_x3": [
+              "0",
+              "8/105",
+              "8/105",
+              "0"
+            ]
+          },
+          {
+            "m": 3,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 4,
+            "markers_x0_to_x3": [
+              "0",
+              "128/15015",
+              "128/5005",
+              "128/5005"
+            ]
+          },
+          {
+            "m": 5,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 6,
+            "markers_x0_to_x3": [
+              "0",
+              "1024/969969",
+              "5120/969969",
+              "10240/969969"
+            ]
+          }
+        ]
+      },
+      {
+        "least_degree": 6,
+        "parameters": [
+          "unsafe",
+          "1",
+          "1",
+          "0",
+          "1"
+        ],
+        "rows": [
+          {
+            "m": 1,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 2,
+            "markers_x0_to_x3": [
+              "0",
+              "8/105",
+              "8/105",
+              "0"
+            ]
+          },
+          {
+            "m": 3,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 4,
+            "markers_x0_to_x3": [
+              "0",
+              "128/15015",
+              "128/5005",
+              "128/5005"
+            ]
+          },
+          {
+            "m": 5,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 6,
+            "markers_x0_to_x3": [
+              "0",
+              "1024/969969",
+              "5120/969969",
+              "10240/969969"
+            ]
+          }
+        ]
+      },
+      {
+        "least_degree": 6,
+        "parameters": [
+          "unsafe",
+          "-2",
+          "3/2",
+          "2",
+          "-3"
+        ],
+        "rows": [
+          {
+            "m": 1,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 2,
+            "markers_x0_to_x3": [
+              "0",
+              "-12/35",
+              "6/35",
+              "0"
+            ]
+          },
+          {
+            "m": 3,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 4,
+            "markers_x0_to_x3": [
+              "0",
+              "-1728/5005",
+              "2592/5005",
+              "-1296/5005"
+            ]
+          },
+          {
+            "m": 5,
+            "markers_x0_to_x3": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "m": 6,
+            "markers_x0_to_x3": [
+              "0",
+              "-124416/323323",
+              "311040/323323",
+              "-311040/323323"
+            ]
+          }
+        ]
+      }
+    ],
+    "universal_identities": [
+      "depressed_invariant_zero",
+      "literal_shift_identity",
+      "polynomial_H_cleared_identity"
+    ]
+  },
+  "checker_sha256": "4e86b24964a4b53d4115674961bf231877a9277b3a848df89069073f0d6c83f8",
+  "inputs_sha256": "ca6659523e6bba2f561afac470eee3f1f5b6e46276b1238b421119b4aaac8e63",
+  "meaning": "Exact bounded controls and source authentication support the written all-order proof. Neither rational-u reconstruction, complete-curve separation nor all-order classification is inferred from a finite moment prefix.",
+  "proof_sha256": "0b65f1da0010eaa646355670099cdd0bbd111ace80abb85f76eeccc1e5547fc9",
+  "retained_certificates": {
+    "constant_J": {
+      "a_nonzero_normalized_sixth": "1397/192",
+      "a_zero_sixth_equation": "15c^2=0",
+      "first_two_equations": "b=-a^2/2; a*(24c-7a^3)/2=0"
+    },
+    "h0_d_nonzero": {
+      "d_zero_restriction": "-1157*b^4",
+      "generator_degrees": [
+        4,
+        6
+      ],
+      "identity": "exactly1",
+      "multiplier_degrees": [
+        5,
+        3
+      ]
+    },
+    "h1": {
+      "corrupted_multiplier_rejected": true,
+      "degree_bound": 16,
+      "identity": "exactly1",
+      "multiplier_terms": [
+        71,
+        38,
+        24
+      ]
+    },
+    "h3_j1": {
+      "corrupted_multiplier_rejected": true,
+      "degree_bound": 12,
+      "identity": "exactly1",
+      "multiplier_terms": [
+        22,
+        11,
+        8
+      ]
+    },
+    "raw_interval_generator_comparisons": 48,
+    "zero_center_core": {
+      "generator_degrees": [
+        2,
+        4
+      ],
+      "identity": "exactly1",
+      "multiplier_degrees": [
+        3,
+        1
+      ]
+    }
+  },
+  "schema": 1,
+  "scope": {
+    "E0_zero_case_all_center_coefficients_zero": true,
+    "E0_zero_case_requires_I_zero": true,
+    "FPYZ_needed": false,
+    "all_Aut_or_424_needed": false,
+    "arbitrary_marker_rational_shift_safety_transfer": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "central_classification_max_least_degree": 7,
+    "central_unit_hypotheses": [
+      "I=0",
+      "E0!=0",
+      "C0=D0=0",
+      "B0=-E0"
+    ],
+    "characteristic_zero": true,
+    "controls": {
+      "degree6_boxes": 6,
+      "polynomial_x_markers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "raw_m_max": 6,
+      "retained_Bezout_cases": [
+        "h1",
+        "h3_j1",
+        "h0_d_nonzero",
+        "zero_center_core"
+      ]
+    },
+    "depression_does_not_increase_least_degree": true,
+    "entire_invariant_zero_degree5_and7_safe": true,
+    "exact_moment_transfer": "EVERY m>=1 and EVERY polynomial-x monomial marker x^ell,ell>=0",
+    "full_shape430_needed": false,
+    "full_zero_center_uses": "425 algebraic first FOUR moments only",
+    "generic_I_nonzero_classified": false,
+    "invariant": "I=27*C*E^2-9*B*D*E+2*D^3",
+    "nonpower_exact_J_height": 3,
+    "nonpower_negative_center": "(C0 != 0) OR (B0 != 0)",
+    "nonpower_over_every_extension": true,
+    "odd_degree6_unique": "H=b*(1+a*x)^2,E=-b*(1+a*x)^4,a*b!=0",
+    "original_lift_power_argument_uses_both_gradings": true,
+    "prime11_minimality_claimed": false,
+    "pure_phase_forced_I_zero": false,
+    "pure_unsafe_height3_nonpower": true,
+    "rational_depression_polynomial_H": true,
+    "rational_u_inferred_from_finite_controls": false,
+    "regularity": [
+      "C0+D0=0",
+      "B0+E0=0"
+    ],
+    "reviewed_proof_sha256": "0b65f1da0010eaa646355670099cdd0bbd111ace80abb85f76eeccc1e5547fc9",
+    "safe_central_exact_degrees": [
+      2,
+      5
+    ],
+    "schema": 1,
+    "unrestricted_global_degrees5_or7_resolved": false,
+    "unsafe_central_exact_degrees": [
+      6
+    ]
+  },
+  "source_ledger_sha256": "abaf468879eabaed1c2b70bfa69e9f35b46210b062efecf8f56c0a9dded3830f",
+  "source_scope_negative_controls": [
+    "missing_role:written_proof",
+    "bad_hash:written_proof",
+    "missing_role:exact_checker",
+    "bad_hash:exact_checker",
+    "missing_role:typed_inputs",
+    "bad_hash:typed_inputs",
+    "missing_role:odd_low_degree",
+    "bad_hash:odd_low_degree",
+    "missing_role:odd_exact_certificate",
+    "bad_hash:odd_exact_certificate",
+    "missing_role:odd_seven",
+    "bad_hash:odd_seven",
+    "missing_role:one_pole",
+    "bad_hash:one_pole",
+    "missing_role:mixed425",
+    "bad_hash:mixed425",
+    "missing_role:milne_galois",
+    "bad_hash:milne_galois",
+    "Boolean_ledger_schema",
+    "duplicate_source_role",
+    "false_scope:schema",
+    "false_scope:central_classification_max_least_degree",
+    "false_scope:nonpower_exact_J_height",
+    "false_scope:nonpower_negative_center",
+    "false_scope:E0_zero_case_requires_I_zero",
+    "false_scope:arbitrary_marker_rational_shift_safety_transfer",
+    "false_scope:pure_phase_forced_I_zero",
+    "false_scope:generic_I_nonzero_classified",
+    "false_scope:unrestricted_global_degrees5_or7_resolved",
+    "false_scope:prime11_minimality_claimed",
+    "false_scope:original_lift_power_argument_uses_both_gradings",
+    "false_scope:rational_u_inferred_from_finite_controls",
+    "false_scope:unsafe_central_exact_degrees",
+    "false_scope:full_shape430_needed",
+    "false_scope:FPYZ_needed",
+    "false_scope:all_Aut_or_424_needed",
+    "unsupported_assurance"
+  ],
+  "sources": [
+    {
+      "kind": "local",
+      "path": "verify_invariant_zero_mixed_cubic.py",
+      "relation": "bounded_algebra_certificate_and_source_controls_NOT_prefix_inference_of_rational_u",
+      "role": "exact_checker",
+      "sha256": "4e86b24964a4b53d4115674961bf231877a9277b3a848df89069073f0d6c83f8"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "relation": "ACTUAL_Theorem3_17_printed39_finite_Galois_correspondence_used_in_imported_one_pole_cyclic_step_NOT_Remark5_47_norm_branch",
+      "role": "milne_galois",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/MIXED_CUBIC_ZERO_CENTER_AND_CONDITIONAL_OFFCENTER.md",
+      "relation": "ONLY_Section2_algebraic_first4_and_Sections3--4_E0unit_C0_plus_or_minus3B0_I0_branch_NOT_FPYZ_or_all_height",
+      "role": "mixed425",
+      "sha256": "c4fee78a3b99b286e22818f63c90f8da450293bde974b354fb22bd2866bf1dc6"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/odd_cubic_height_low_degree_certificates.json",
+      "relation": "ACTUAL_four_Bezout_certificates_with_moment_generators_and_scalings_recomputed",
+      "role": "odd_exact_certificate",
+      "sha256": "78341369e8dc6135c9af33a3e32bf746abd49c2174a3cdab7bcee873f9bfa0b5"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md",
+      "relation": "ONLY_unit_center_degree_at_most5_and_all_order_rational_u_endpoint_reconstruction_NOT_old_sharpness_witness",
+      "role": "odd_low_degree",
+      "sha256": "51e8ccec1e80166c1c70f87e5cc83b0725a8d3bb04eb697931da18b11a06a826"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ODD_CUBIC_DEGREE_SEVEN_SAFETY.md",
+      "relation": "ONLY_exact_degree7_unit_center_exclusion_and_pole_root_cases_with_new_complete_curve_separation",
+      "role": "odd_seven",
+      "sha256": "af8611c27bd832dedcbb77587fedd604d811c93f2ff79a210937bbf6ab03a958"
+    },
+    {
+      "kind": "repo",
+      "path": "research/foundations/extended-geometry/ONE_POLE_ODD_CUBIC_CLASSIFICATION.md",
+      "relation": "ONLY_constant_coefficient_boundary_one_geometric_root_degrees_and_N1_fixed_zero_or_inversion_branches",
+      "role": "one_pole",
+      "sha256": "9cc0bd3906988d71d7b47211949823df1c4696183c28e69cf8d2299141db7bf6"
+    },
+    {
+      "kind": "local",
+      "path": "invariant_zero_mixed_cubic_inputs.json",
+      "relation": "exact_central_unit_entire_I0_markers_and_nonpower_scope",
+      "role": "typed_inputs",
+      "sha256": "ca6659523e6bba2f561afac470eee3f1f5b6e46276b1238b421119b4aaac8e63"
+    },
+    {
+      "kind": "local",
+      "path": "INVARIANT_ZERO_MIXED_CUBIC_LOW_DEGREE_CLASSIFICATION.md",
+      "relation": "Sections1--10_complete_depression_central_classification_entire_I0_and_negative_center_height3_nonpower",
+      "role": "written_proof",
+      "sha256": "0b65f1da0010eaa646355670099cdd0bbd111ace80abb85f76eeccc1e5547fc9"
+    }
+  ],
+  "status": "PASS"
+}

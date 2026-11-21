@@ -1,0 +1,46 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "files": [
+    {
+      "locator": "Sections1--5: exact stated branches and explicit safe quintic only",
+      "path": "MIXED_CUBIC_ZERO_CENTER_AND_CONDITIONAL_OFFCENTER.md",
+      "relation": "mathematical_input",
+      "role": "proof",
+      "sha256": "c4fee78a3b99b286e22818f63c90f8da450293bde974b354fb22bd2866bf1dc6"
+    },
+    {
+      "locator": "Eighteen exact identity families and source/scope controls",
+      "path": "verify_mixed_cubic_hopf.py",
+      "relation": "checker",
+      "role": "checker",
+      "sha256": "8b74221c92e8cfbb043d1c155c747727a87192f7b2cea2b25999efc98bb3910d"
+    },
+    {
+      "locator": "Exact all-field and conditional-branch scope",
+      "path": "mixed_cubic_hopf_inputs.json",
+      "relation": "typed_scope",
+      "role": "inputs",
+      "sha256": "b9e83da508fcc3712d74081ec3382d7eb69ff9eb02c78dc75ddc1c76e07cfc69"
+    },
+    {
+      "locator": "Corollary4.1, printed27, distinct interval endpoints and eventually zero complex polynomial power moments",
+      "path": "mixed_cubic_sources/francoise_pakovich_yomdin_zhao_2011.pdf",
+      "relation": "mathematical_input",
+      "role": "classical_interval_rigidity",
+      "sha256": "6dcafd3fa8920502e6cb3e45e691b0e328bc364deccdb85aa81b2377a1d4d67f"
+    },
+    {
+      "locator": "Theorem2.1 and Remark2.2, printed2: stronger limsup theorem and prior credit; no finite-prefix bound",
+      "path": "mixed_cubic_sources/muger_tuset_2019.pdf",
+      "relation": "context",
+      "role": "classical_stronger_context",
+      "sha256": "39292887e1ba9d6a44a0909cb64136e3b8dab21c45457eb08b7b55b9de9f1b56"
+    }
+  ],
+  "schema": 1
+}
