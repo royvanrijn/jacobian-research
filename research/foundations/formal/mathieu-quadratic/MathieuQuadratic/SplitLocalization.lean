@@ -154,4 +154,76 @@ noncomputable def splitComplementEquivLaurent (c : Kˣ) (powers : J → ℕ) (hp
   AlgEquiv.ofAlgHom (toLaurent c powers) (fromLaurent c powers hp)
     (toLaurent_fromLaurent c powers hp) (fromLaurent_toLaurent c powers hp)
 
+private noncomputable def scaleVariables (χ : J → Kˣ) :
+    MvPolynomial J K →ₐ[K] MvPolynomial J K :=
+  aeval fun i ↦ C (χ i : K) * X i
+
+omit [DecidableEq J] in
+private theorem scaleVariables_norm (c : Kˣ) (powers : J → ℕ) (χ : J → Kˣ) :
+    scaleVariables χ (splitNorm c powers) =
+      C (↑(∏ i, χ i ^ powers i) : K) * splitNorm c powers := by
+  rw [splitNorm, map_mul, map_prod]
+  have hc := map_prod (Units.coeHom K) (fun i ↦ χ i ^ powers i) Finset.univ
+  change (↑(∏ i, χ i ^ powers i) : K) = ∏ i, (↑(χ i ^ powers i) : K) at hc
+  rw [hc, map_prod]
+  simp only [scaleVariables, aeval_C, algebraMap_eq, map_pow, aeval_X, mul_pow,
+    Finset.prod_mul_distrib, Units.val_pow_eq_pow_val]
+  ring
+
+omit [DecidableEq J] in
+private theorem scaleVariables_norm_unit (c : Kˣ) (powers : J → ℕ) (χ : J → Kˣ) :
+    IsUnit (algebraMap (MvPolynomial J K) (SplitComplement c powers)
+      (scaleVariables χ (splitNorm c powers))) := by
+  rw [scaleVariables_norm, map_mul]
+  refine IsUnit.mul ?_ (IsLocalization.Away.algebraMap_isUnit _)
+  change IsUnit (algebraMap K (SplitComplement c powers) (↑(∏ i, χ i ^ powers i) : K))
+  exact (∏ i, χ i ^ powers i).isUnit.map _
+
+/-- The diagonal torus pullback on the split coordinate chart. -/
+noncomputable def splitDiagonalPullback (c : Kˣ) (powers : J → ℕ) (χ : J → Kˣ) :
+    SplitComplement c powers →ₐ[K] SplitComplement c powers :=
+  IsLocalization.Away.liftAlgHom (splitNorm c powers)
+    (f := (IsScalarTower.toAlgHom K (MvPolynomial J K) (SplitComplement c powers)).comp
+      (scaleVariables χ))
+    (scaleVariables_norm_unit c powers χ)
+
+omit [DecidableEq J] in
+private theorem splitDiagonalPullback_X (c : Kˣ) (powers : J → ℕ) (χ : J → Kˣ) (i : J) :
+    splitDiagonalPullback c powers χ (algebraMap (MvPolynomial J K) _ (X i)) =
+      algebraMap K _ (χ i : K) * algebraMap (MvPolynomial J K) _ (X i) := by
+  have he := IsLocalization.Away.lift_eq (S := SplitComplement c powers) (splitNorm c powers)
+    (g := (algebraMap (MvPolynomial J K) (SplitComplement c powers)).comp (scaleVariables χ).toRingHom)
+    (scaleVariables_norm_unit c powers χ) (X i)
+  change splitDiagonalPullback c powers χ (algebraMap (MvPolynomial J K) _ (X i)) =
+    algebraMap (MvPolynomial J K) (SplitComplement c powers) (scaleVariables χ (X i)) at he
+  rw [he]
+  rw [scaleVariables, aeval_X, map_mul]
+  rfl
+
+/-- On Laurent monomials the geometric pullback has the product
+character appearing in the manuscript. -/
+theorem splitDiagonalPullback_character (c : Kˣ) (powers : J → ℕ)
+    (hp : ∀ i, 0 < powers i) (χ : J → Kˣ) (g : J → ℤ) :
+    splitDiagonalPullback c powers χ ((splitComplementEquivLaurent c powers hp).symm
+      (AddMonoidAlgebra.single g 1)) =
+        ((↑(∏ i, χ i ^ g i) : K)) •
+          (splitComplementEquivLaurent c powers hp).symm (AddMonoidAlgebra.single g 1) := by
+  change splitDiagonalPullback c powers χ (fromLaurent c powers hp (AddMonoidAlgebra.single g 1)) =
+    _ • fromLaurent c powers hp (AddMonoidAlgebra.single g 1)
+  simp only [fromLaurent, AddMonoidAlgebra.lift_single, one_smul]
+  let B := SplitComplement c powers
+  let h := splitDiagonalPullback c powers χ
+  let u := splitVariable c powers hp
+  let φ := Units.map (algebraMap K B).toMonoidHom
+  have hu (i : J) : Units.map h.toMonoidHom (u i) = φ (χ i) * u i := by
+    apply Units.ext
+    change h (splitVariable c powers hp i : B) =
+      algebraMap K B (χ i : K) * (splitVariable c powers hp i : B)
+    rw [splitVariable_val, splitDiagonalPullback_X]
+  change h (↑(∏ i, u i ^ g i) : B) = (↑(∏ i, χ i ^ g i) : K) • (↑(∏ i, u i ^ g i) : B)
+  rw [Algebra.smul_def]
+  change (↑(Units.map h.toMonoidHom (∏ i, u i ^ g i)) : B) =
+    (↑((φ (∏ i, χ i ^ g i)) * (∏ i, u i ^ g i)) : B)
+  simp_rw [map_prod, map_zpow, hu, mul_zpow, Finset.prod_mul_distrib]
+
 end MathieuQuadratic

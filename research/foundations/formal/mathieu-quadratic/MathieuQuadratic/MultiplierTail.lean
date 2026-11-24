@@ -95,6 +95,26 @@ theorem multiplierTailFunction_eq_zero_iff (M γ : ℕ) (support : Finset (ℤ �
   rw [multiplierTailFunction, div_eq_zero_iff,
     map_eq_zero_iff _ hi, map_eq_zero_iff _ hi, or_iff_left hd]
 
+/-- The common-denominator expression equals the termwise rational sum. -/
+theorem multiplierTailFunction_eq_sum (M γ : ℕ) (support : Finset (ℤ × ℕ))
+    (c : ℤ × ℕ → K) :
+    multiplierTailFunction M γ support c =
+      ∑ p ∈ support,
+        algebraMap K[X] (RatFunc K) (C (c p) * (tailNumeratorTerm M p.1 p.2).map (algebraMap ℚ K)) /
+          algebraMap K[X] (RatFunc K) ((tailDenominatorTerm M γ p.2).map (algebraMap ℚ K)) := by
+  rw [multiplierTailFunction, multiplierTailNumerator, map_sum, Finset.sum_div]
+  refine Finset.sum_congr rfl fun p hp ↦ ?_
+  rw [multiplierTailDenominator, ← Finset.prod_erase_mul _ _ hp, map_mul, map_mul,
+    map_mul, map_prod]
+  have hd (t : ℤ × ℕ) :
+      algebraMap K[X] (RatFunc K) ((tailDenominatorTerm M γ t.2).map (algebraMap ℚ K)) ≠ 0 := by
+    intro h
+    have hpoly : (tailDenominatorTerm M γ t.2).map (algebraMap ℚ K) = 0 :=
+      (IsFractionRing.injective K[X] (RatFunc K)) (h.trans (map_zero _).symm)
+    exact tailDenominatorTerm_eval_ne (K := K) M γ t.2 0 (by rw [hpoly, eval_zero])
+  rw [mul_comm (∏ t ∈ support.erase p, _), mul_div_mul_right _ _
+    (Finset.prod_ne_zero_iff.2 (fun t _ ↦ hd t))]
+
 private theorem betaMoment_cast_ne_zero (M k j : ℕ) (hM : 0 < M) :
     algebraMap ℚ K (mixedBetaMoment M k j) ≠ 0 :=
   (map_ne_zero_iff (algebraMap ℚ K) (RingHom.injective (algebraMap ℚ K))).mpr
@@ -184,5 +204,34 @@ theorem product_multiplier_tail_iff (trace : A →ₗ[K] K) (U : Aˣ) (S : A)
   constructor <;> rintro ⟨m₀, hm⟩ <;> refine ⟨max cutoff m₀, fun m h ↦ ?_⟩
   · exact (hz m ((le_max_left _ _).trans h)).1 (hm m ((le_max_right _ _).trans h))
   · exact (hz m ((le_max_left _ _).trans h)).2 (hm m ((le_max_right _ _).trans h))
+
+/-- A nonzero rational test gives nonzero marked moments at every
+sufficiently large order. -/
+theorem product_multiplier_tail_eventually_ne_zero (trace : A →ₗ[K] K) (U : Aˣ) (S : A)
+    (M γ : ℕ) (hM : 0 < M) (hγ : M < γ)
+    (weight : ∀ (a : ℤ) (i : ℕ), a ≠ 0 → trace ((↑(U ^ a) : A) * S ^ i) = 0)
+    (height : ∀ i : ℕ, trace (S ^ i) = (M : K) / (↑(M + 2 * i) : K))
+    (support : Finset (ℤ × ℕ)) (c : ℤ × ℕ → K)
+    (hn : multiplierTailFunction M γ support c ≠ 0) :
+    ∃ m₀ : ℕ, ∀ m ≥ m₀,
+      trace ((∑ p ∈ support, c p • ((↑(U ^ p.1) : A) * S ^ p.2)) *
+        productPhase U S M M γ ^ m) ≠ 0 := by
+  let p := multiplierTailNumerator M γ support c
+  have hp : p ≠ 0 := mt (multiplierTailFunction_eq_zero_iff M γ support c).2 hn
+  have hroots := (Polynomial.finite_setOf_isRoot hp).preimage
+    (Nat.cast_injective (R := K)).injOn
+  obtain ⟨r, hr⟩ := hroots.bddAbove
+  let cutoff := support.sup (fun q ↦ q.1.natAbs + M + 2 * q.2)
+  refine ⟨max cutoff (r + 1), fun m hm ↦ ?_⟩
+  have hcut (q : ℤ × ℕ) (hq : q ∈ support) : q.1.natAbs + M + 2 * q.2 ≤ m :=
+    (Finset.le_sup hq).trans ((le_max_left _ _).trans hm)
+  have hmne : p.eval (m : K) ≠ 0 := by
+    intro hz
+    have hle : m ≤ r := hr (show (m : K) ∈ {x | p.IsRoot x} from hz)
+    have hgt := (le_max_right cutoff (r + 1)).trans hm
+    omega
+  rw [product_multiplier_tail_formula trace U S M γ hM hγ weight height support c m hcut]
+  exact mul_ne_zero (betaMoment_cast_ne_zero M (γ * m) 0 hM)
+    (div_ne_zero hmne (multiplierTailDenominator_eval_ne M γ support m))
 
 end MathieuQuadratic

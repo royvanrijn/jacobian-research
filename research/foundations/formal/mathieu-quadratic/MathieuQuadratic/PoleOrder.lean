@@ -167,6 +167,7 @@ theorem perturbedProductPhase_pole_order
   simp only [perturbationPolynomial, map_add, map_mul, map_one, map_natCast]
   rw [← normUnit_val, hB']
 
+omit [CharZero K] in
 /-- At the minimum possible pole exponent in height rank at least two,
 the only pure product phase is a proper power. -/
 theorem productFamily_pole_lower_bound
@@ -187,7 +188,10 @@ theorem productFamily_pole_lower_bound
   have he : productPhase U (height a b) M M M = V ^ M := by
     simp [V, productPhase, mul_pow]
   apply hn 1 (Algebra.TensorProduct.includeRight V) M hM
-  simp [he]
+  change Algebra.TensorProduct.includeRight (R := K) (A := AlgebraicClosure K)
+      (productPhase U (height a b) M M M) =
+    (1 : AlgebraicClosure K ⊗[K] NormComplement a b) * (Algebra.TensorProduct.includeRight V) ^ M
+  rw [he, map_pow, one_mul]
 
 /-- The perturbation in the draft on the localized diagonal chart. -/
 theorem draft_perturbation (ha : a 0 ≠ 0) (i : Fin M) (hb : b i ≠ 0) (hM : 4 ≤ M)
@@ -200,5 +204,65 @@ theorem draft_perturbation (ha : a 0 ≠ 0) (i : Fin M) (hb : b i ≠ 0) (hM : 4
   exact ⟨perturbedProductPhase_absolute_nonpower a b ha i hb hM,
     perturbation_allOrderWitness trace _ _ hM ht.weight ht.height,
     perturbedProductPhase_pole_order a b ha i hb⟩
+
+omit [CharZero K] in
+/-- The quotient expression in the opening ternary example. -/
+theorem draft_ternary_regular_formula (a : Fin 2 → K) (b : Fin 1 → K) :
+    let U := normUnit a b
+    let q : NormComplement a b := U
+    let B := algebraMap (QuadPolynomial K 1) (NormComplement a b) (heightNorm b)
+    complementProductPhase a b 1 1 1 =
+      (q + 1) * (q - (q + 1) ^ 2 * B) * (↑(U⁻¹) : NormComplement a b) ^ 2 := by
+  intro U q B
+  have h := productPhase_clear_order a b 1 1 1
+  have hunit : (↑(U⁻¹) : NormComplement a b) ^ 2 * q ^ 2 = 1 := by
+    rw [← mul_pow]
+    change ((↑(U⁻¹) : NormComplement a b) * (U : NormComplement a b)) ^ 2 = 1
+    rw [Units.inv_mul, one_pow]
+  have he : complementProductPhase a b 1 1 1 =
+      (↑(U⁻¹) : NormComplement a b) ^ 2 *
+        (q ^ 2 * complementProductPhase a b 1 1 1) := by
+    rw [← mul_assoc, hunit, one_mul]
+  rw [he]
+  change _ ^ 2 * ((normUnit a b : NormComplement a b) ^ (1 + 1) *
+    productPhase (normUnit a b) (height a b) 1 1 1) = _
+  rw [h]
+  simp only [productNumerator, map_mul, map_pow, map_sub, map_add, map_one, pow_one, ← normUnit_val]
+  change (↑(U⁻¹) : NormComplement a b) ^ 2 * ((1 + q) * (q - (1 + q) ^ 2 * B)) = _
+  ring
+
+/-- The sharp minimum denominator order in the pure product family with
+a geometrically nonpower detecting phase. -/
+theorem draft_product_minimum_pole_order (hM : 0 < M) (ha : a 0 ≠ 0) (i : Fin M) (hb : b i ≠ 0)
+    {trace : NormComplement a b →ₗ[K] K} (h : GeometricTrace a b trace) :
+    IsLeast {n : ℕ | ∃ α β γ : ℕ, 0 < α ∧ α ≤ γ ∧ n = α + γ ∧
+      Pure trace (complementProductPhase a b α β γ) ∧
+      NonpowerUpToUnits (Algebra.TensorProduct.includeRight (R := K) (A := AlgebraicClosure K)
+        (complementProductPhase a b α β γ)) ∧
+      ∃ H : NormComplement a b, ¬ ∃ m₀ : ℕ, ∀ m ≥ m₀,
+        trace (H * complementProductPhase a b α β γ ^ m) = 0}
+      (if M = 1 then 2 else 2 * M + 1) := by
+  let γ := if M = 1 then M else M + 1
+  have hγ : M ≤ γ := by dsimp [γ]; split_ifs <;> omega
+  have hcop : M.Coprime γ := by
+    dsimp only [γ]
+    split_ifs with hm
+    · simp [hm]
+    · simp
+  have ht := h.complementTrace.normalizer a b hM
+  constructor
+  · have hn : (if M = 1 then 2 else 2 * M + 1) = M + γ := by
+      dsimp only [γ]
+      split_ifs <;> omega
+    obtain ⟨hw, _⟩ := draft_product_witness a b h hM γ hγ
+    refine ⟨M, M, γ, hM, hγ, hn, hw.1, productPhase_absolute_nonpower a b ha i hb _ _ _ hcop,
+      (normUnit a b : NormComplement a b) ^ M, ?_⟩
+    rintro ⟨m₀, hm⟩
+    exact hw.2 (m₀ + 1) (by omega) (hm (m₀ + 1) (by omega))
+  · rintro n ⟨α, β, k, hα, hαk, rfl, hp, hn, _⟩
+    obtain ⟨hβ, hβα⟩ := (product_pure_iff trace _ _ hM ht.weight ht.height hαk).1 hp
+    split_ifs with hm
+    · omega
+    · exact productFamily_pole_lower_bound a b (by omega) hβ hβα hαk hn
 
 end MathieuQuadratic

@@ -1,0 +1,436 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[margin=1.15in]{geometry}
+\usepackage[expansion=false]{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+\hypersetup{pdftitle={Additive representations by powerful integers},pdfauthor={Roy van Rijn}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\DeclareMathOperator{\rad}{rad}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Rel}{\ll_{\eps}}
+\title[Additive representations by powerful integers]{Additive representations by powerful integers}
+\author{Roy van Rijn}
+\subjclass[2020]{11D45, 11D72, 11N25, 11G50}
+\keywords{powerful numbers, rational reconstruction, bipartite graphs, Campana points}
+\begin{document}
+\begin{abstract}
+For fixed \(k\ge2\), let \(r_k(N)\) count ordered representations of \(N\)
+as a sum of two positive \(k\)-full integers. We prove
+\(r_2(N)\ll_\eps N^{3/10+\eps}\) and
+\(r_k(N)\ll_{k,\eps}N^{1/(k+1)+\eps}\) for \(k\ge3\).
+The proof bounds the number of common neighbors in bipartite graphs formed
+by omitting one coordinate of the canonical factorization.
+The graph bounds also apply to coprime differences of size at least
+\(X^{2/k}\) between \(k\)-full integers bounded by \(X\), for \(k\ge3\).
+An application to primitive \(k\)-full triples \(a+b=c\le X\) gives an
+upper bound of order \(X^{2/k-5/(3k^2)+O(k^{-3})+\eps}\).
+For \(k=3\) we obtain the explicit exponent \(21/40+\eps\).
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+A positive integer \(m\) is \(k\)-full if \(p^k\mid m\) for every prime
+\(p\mid m\). Write \(r_k(N)\) for the number of ordered pairs of positive
+\(k\)-full integers with sum \(N\).
+Erd\H{o}s asked whether \(r_2(N)\ll_\eps N^\eps\) for every \(\eps>0\).
+Blomer and Sch\"obel \cite[Corollary~2]{BS} proved the uniform bound
+\(r_k(N)\ll_{k,\eps} N^{2/(2k+1)+\eps}\). For \(k=2\), the exponent \(2/5\)
+also appears in Chojecki's treatment of the pointwise problem \cite[Theorem~1.2]{Cho}.
+
+\begin{theorem}\label{thm:binary}
+For every fixed \(k\ge2\) and every \(\eps>0\),
+\[
+r_k(N)\ll_{k,\eps}N^{\tau_k+\eps},
+\qquad
+\tau_2=\frac{3}{10},\qquad \tau_k=\frac1{k+1}\quad(k\ge3).
+\]
+\end{theorem}
+
+The canonical factorization of a \(k\)-full integer is
+\[
+m=\prod_{j=k}^{2k-1}a_j^j,
+\]
+where \(a_{k+1},\ldots,a_{2k-1}\) are squarefree and pairwise coprime.
+For \(v_p(m)=kq+r\), with \(0\le r<k\), the prime \(p\) occurs in
+\(a_k\) to exponent \(q\) when \(r=0\). If \(r>0\), it occurs to exponent
+one in \(a_{k+r}\) and to exponent \(q-1\) in \(a_k\). In particular,
+\(a_k\) may have a prime factor in common with some \(a_j\) for \(j>k\).
+
+For a chosen \(e\), keep all the coordinates except \(a_e\) on each side.
+These two tuples are vertices of a bipartite graph, and a representation
+gives an edge. For \(k=2\) and \(e=2\), a pair of cube factors \(b_1,b_2\)
+sharing a neighbor satisfies
+\[
+\left(\frac{a_1c_2}{a_2c_1}\right)^2\equiv \frac{b_2^3}{b_1^3}\pmod N
+\]
+in the case of coprime summands. If the omitted coordinates are short,
+each modular root specifies only a few reduced fractions. Factoring
+those fractions and using the exact representation equations recovers
+the common neighbor. We use this argument with two choices of \(e\) whose
+bounds are effective in complementary ranges. The same graphs count
+differences if the modulus is large enough relative to the summands.
+
+\begin{theorem}\label{thm:difference}
+Fix \(k\ge3\) and \(\eps>0\). For \(X\ge2\) and an integer
+\(n\ge X^{2/k}\), the number of ordered coprime positive \(k\)-full pairs
+\(u,v\le X\) with \(u-v=n\) is
+\[
+                         O_{k,\eps}(X^{1/(k+1)+\eps}).
+\]
+\end{theorem}
+
+Let \(N_k(X)\) be the number of ordered triples of positive \(k\)-full
+integers \(a+b=c\le X\) with \(\gcd(a,b,c)=1\). These are the primitive
+positive Campana points for the equal-multiplicity orbifold
+\[
+\left(\mathbb P^1,\ (1-1/k)([0]+[1]+[\infty])\right).
+\]
+The identification sends \((a,b,c)\) to \((a:c)\), whose height is \(c\).
+Browning and Verzobio \cite[Theorem~1.1]{BV} prove a diagonal saving
+\(1/k^2+O(k^{-5/2})\) over \(2/k\) for sufficiently large \(k\).
+The binary sum and difference bounds let us fix any summand when
+all three are large. A uniform projective curve bound handles the
+remaining coordinates.
+
+\begin{theorem}\label{thm:campana}
+For each fixed \(k\ge4\) and every \(\eps>0\),
+\[
+ N_k(X)\ll_{k,\eps}
+ X^{\theta_k+\eps},
+ \qquad \theta_k=\frac{6k^2-k-4}{(k+1)(3k^2-k-2)}
+                 =\frac2k-\frac{5}{3k^2}+O(k^{-3}).
+\]
+For \(k=3\) we have \(N_3(X)\ll_\eps X^{21/40+\eps}\).
+\end{theorem}
+
+\section{Recovering common neighbors}
+We work with signed canonical products with coprime absolute values,
+each at most \(X\), in
+\begin{equation}\label{eq:coeff}
+ \kappa_1\prod_{j=k}^{2k-1}a_j^j+
+ \kappa_2\prod_{j=k}^{2k-1}c_j^j=n>0.
+\end{equation}
+The nonzero integers \(\kappa_1,\kappa_2\) are fixed, and the estimates
+are uniform in them. Every factor in either term is a unit modulo
+\(n\), and \((a_i,c_j)=1\) for all \(i,j\). For sums we take \(X=n\).
+
+\begin{lemma}\label{lem:edge}
+For fixed \(e\ge2\), nonzero integers \(P,Q\) and a positive integer \(n\),
+the equation \(P a^e+Q c^e=n\) has \(O_{e,\eps}(X^\eps)\) positive
+solutions with \(|P|a^e,|Q|c^e\le X\), uniformly in \(P,Q,n\).
+\end{lemma}
+\begin{proof}
+Assume \(e=2\) and order the terms so that \(P>0\). If \(-PQ\) is a
+square, then the two integer factors \(Pa\pm c\sqrt{-PQ}\) have
+product \(Pn\) and determine \(a,c\). Otherwise, \(Pa+c\sqrt{-PQ}\)
+is an algebraic integer of norm \(Pn\) in the quadratic field
+\(\Q(\sqrt{-PQ})\). Prime-ideal factorization gives at most \(\tau(Pn)\)
+ideals of this norm. In an imaginary quadratic field each principal
+ideal has at most six generators of the specified norm. In a real
+quadratic field all the displayed generators lie between \(1\) and
+\(2X\). The ratio of two generators of the same ideal has norm one
+and is a unit. Any such ratio \(w>1\) has integer trace \(w+1/w\ge3\),
+which gives \(O(\log(2X))\) generators per ideal in this range.
+Since \(P\le X\) and \(n\le2X\), these bounds give the claim.
+
+For \(e\ge3\) and an irreducible form, apply Evertse
+\cite[Theorem~1]{Ev} with the real place and the primes dividing \(n\).
+The number of \(S\)-unit cosets is at most
+\((5\cdot10^6e)^{1+\omega(n)}\). At the fixed positive right-hand
+side, homogeneity permits at most one positive pair in each coset.
+
+In the reducible case write \(P X^e+QY^e=G(X,Y)H(X,Y)\) with coprime
+integer homogeneous factors of degrees \(d,f>0\). Such a factorization
+exists by Gauss's lemma and the fact that the linear factors over \(\C\)
+are distinct. Fix the nonzero values \(u=G(a,c)\), \(v=H(a,c)\).
+There are at most \(2\tau(n)\) choices because \(uv=n\).
+The ratio \(t=a/c\) satisfies
+\[
+                 v^dG(t,1)^f-u^fH(t,1)^d=0.
+\]
+This polynomial is nonzero and has degree at most \(df\):
+\(G(t,1)\) and \(H(t,1)\) are coprime and nonconstant since
+\(Y\) does not divide the original form. Each \(t\) then gives
+at most one positive \(c\) by homogeneity.
+\end{proof}
+
+Let \(A_j,C_j\) be the lower endpoints of positive dyadic boxes on
+\(a_j,c_j\), respectively. Define
+\[
+ M_1=\prod_{j\ne e}A_j,\qquad
+ M_2=\prod_{j\ne e}C_j,\qquad H_e=A_e C_e .
+\]
+
+\begin{proposition}\label{prop:graph}
+In the graph omitting exponent \(e\), the number of representations
+in a box is bounded, with a constant depending only on \(k,\eps\), by
+\begin{equation}\label{eq:graph}
+ X^\eps\left(M_1+M_2+
+     (1+H_e/\sqrt n)\min(M_1\sqrt{M_2},M_2\sqrt{M_1})\right).
+\end{equation}
+\end{proposition}
+\begin{proof}
+Consider two distinct vertices on the first side sharing one on the
+second. Including the coefficients, their fixed products give
+\[
+       P_i a_i^e+Q c_i^e=n\qquad (i=1,2).
+\]
+Here \(a_i,c_i\) refer just to the two omitted coordinates in the
+\(i\)-th equation. Take \(a_i=g\alpha_i\) and \(c_i=h\gamma_i\)
+by removing each common divisor. The fraction
+\(u/v=\alpha_1\gamma_2/(\alpha_2\gamma_1)\) is reduced by the two
+gcd reductions and \((a_i,c_i)=1\). Eliminating \(Q\) gives
+\begin{equation}\label{eq:recover}
+ (u/v)^e\equiv P_2/P_1\pmod n,\qquad
+ g^e(P_1u^e-P_2v^e)=n(\gamma_2^e-\gamma_1^e).
+\end{equation}
+There are \(O_k(e^{\omega(n)})\) unit roots of the first congruence
+by the prime-power unit groups and the Chinese remainder theorem.
+Within one modular class of fractions with \(u,v\le4H_e\), distinct
+fractions have cross difference a nonzero multiple of \(n\).
+The corresponding vectors in the first quadrant have lengths
+\(O(H_e)\) and angles separated by \(\gg n/H_e^2\).
+Thus each class contains \(O(1+H_e^2/n)\) fractions.
+
+A fraction \(u/v\) gives at most \(\tau(u)\tau(v)\) choices of the
+four reduced factors. The coefficient of \(g^e\) in \eqref{eq:recover}
+is nonzero for an actual common neighbor. If it vanished, then
+\(\gamma_1=\gamma_2=1\), so the complete first summands would be
+equal, and uniqueness of the canonical factorization would give
+the same first vertex. We recover \(g\) and then \(Qh^e\) from either
+original equation. Dividing \(Qh^e\) by its fixed signed coefficient
+gives a canonical product, since \(h\mid c_i\). It recovers the common
+vertex and \(h\).
+
+The codegree bound on both sides is therefore
+\(K\ll_{k,\eps}X^\eps(1+H_e^2/n)\).
+A bipartite graph with side sizes \(m_1,m_2\) has at most
+\(m_1+m_2+\sqrt K\min(m_1\sqrt{m_2},m_2\sqrt{m_1})\) edges under
+this bound. Indeed the sum of \(\binom{\deg v}{2}\) over the
+second side is at most \(K\binom{m_1}{2}\), and Cauchy--Schwarz
+gives one estimate. Interchanging the sides gives the other.
+Lemma~\ref{lem:edge} bounds the multiplicity of each edge.
+Using \(\sqrt{1+H_e^2/n}\le 1+H_e/\sqrt n\) proves
+\eqref{eq:graph}. Counting all possible vertex pairs also gives \(O_{k,\eps}(X^\eps M_1M_2)\).
+\end{proof}
+
+\section{Optimizing the boxes}
+First take \(k\ge3\) and \(n\ge X^{2/k}\) in \eqref{eq:coeff}.
+Let \(x,y,z\) denote, respectively, the
+logarithmic dyadic sizes in base \(X\) of the coordinates of
+exponents \(k,k+1\) and the sum of the remaining logarithmic sizes
+on one side. Write \(x',y',z'\) for the other side, and put
+\(t=1/(k+1)\). The size constraint gives
+\(kx+(k+1)y+(k+2)z\le1\), and likewise on the other side.
+Fixing one complete summand determines the other. We may therefore
+assume \(x+y+z\ge t\) and \(x'+y'+z'\ge t\), which imply
+\(x\ge z\) and \(x'\ge z'\).
+
+Set \(p=y+z\), \(q=x+z\) and define \(p',q'\) symmetrically.
+The constraints give
+\begin{equation}\label{eq:complement}
+                  p,p'\le t,\qquad q\le 2(t-p),\quad q'\le2(t-p').
+\end{equation}
+For example, \(2t(kx+(k+1)y+(k+2)z)-(q+2p)
+=(k-1)t(x-z)\ge0\). Put \(w=\log n/(2\log X)\ge1/k\).
+If \(p+p'\le t\), counting all vertex pairs in the \(e=k\) graph
+suffices. Otherwise \(k(x+x')+(k+1)(p+p')\le2\) gives
+\(x+x'<1/k\), so the \(e=k\) graph has a bounded height factor.
+This graph gives the desired bound unless both \(p+p'/2>t\)
+and \(p'+p/2>t\). In that case \(p,p'>t/2\) and \eqref{eq:complement}
+gives \(q,q'<t\) and \(q+q'/2<t\). Thus the \(e=k+1\) graph
+suffices if \(y+y'\le w\).
+
+If \(y+y'>w\), the exponent of the square-root term in the
+\(e=k+1\) graph, including its height factor, is
+\[
+ \min(q+q'/2,q'+q/2)+y+y'-w
+   =s+s'-\tfrac12\max(q,q')-w,
+\]
+where \(s=x+y+z\) and \(s'=x'+y'+z'\). The size constraints give
+\(s\le t(1+x-z)\le t(1+q)\) and similarly on the other side.
+The last displayed exponent is therefore at most
+\(2t+(2t-\tfrac12)\max(q,q')-w\le t\), since \(t\le1/4\)
+and \(w\ge1/k\ge t\).
+The number of dyadic boxes is \(O_k((\log(2X))^{2k})\).
+Absorbing this factor in \(X^\eps\) proves
+Theorem~\ref{thm:difference} and the coprime coefficient bound
+for the positive sign with \(X=n\).
+
+For \(k=2\), write the summands as
+\(\kappa_1 a^2 b^3\) and \(\kappa_2 c^2 d^3\), with scales
+\(A,B,C,D\). In addition to \(AC\) and \(BD\) from
+Lemma~\ref{lem:edge}, and the two graph bounds, we use the
+mixed-coordinate bound
+\begin{equation}\label{eq:mixed}
+ \ll_\eps n^\eps\min\bigl(AD\max(B,C)^{1/3},\,
+                            BC\max(A,D)^{1/3}\bigr).
+\end{equation}
+For fixed \(a,d\) the equation in \(b,c\) is \(P b^3+Qc^2=n\).
+It defines an absolutely irreducible plane cubic, since
+\((n-PX^3)/Q\) has simple zeros and is not a square in \(\C(X)\).
+Bombieri--Pila \cite[Theorem~5]{BP} in a square of side
+\(2\max(B,C)\) gives the first bound. Fixing \(b,c\) gives the
+second.
+
+Let \(\alpha,\beta,\gamma,\delta\) be the logarithms to base \(n\)
+of \(A,B,C,D\), and set \(S=\alpha+\gamma,\ W=\beta+\delta\).
+The size constraints are
+\[
+ 2\alpha+3\beta\le1,\qquad 2\gamma+3\delta\le1.
+\]
+The fixed-pair estimates suffice unless \(S,W\ge 3/10\).
+Then \(S\le11/20\) and \(W\le7/15<1/2\), so the graph on the
+square-root coordinates has a bounded height factor.
+If a cube-coordinate exponent is at least \(3/10\), take
+\(\beta\ge3/10\) by symmetry, so \(\alpha\le1/20\).
+When \(\gamma<3/10\), the graph on the square-root coordinates
+suffices, since \(\alpha+\gamma/2<1/5\).
+When \(\gamma\ge3/10\), use \eqref{eq:mixed}.
+If \(\gamma\ge\beta\), its first exponent is at most
+\(1/20+(1-\gamma)/3\le17/60\). If \(\beta\ge\gamma\), it is
+at most \((1-3\beta)/2+\beta/3+2/15\le17/60\).
+
+It remains to take \(\beta,\delta<3/10\).
+If \(S>1/2\), the graph on the cube coordinates suffices, since
+the exponent of its square-root term with the height factor is at
+most \(3W/4+S-1/2\le S/2\le11/40\).
+If \(S\le1/2\) and a square-root exponent is at least \(3/10\),
+take \(\alpha\ge3/10\) by symmetry. Then \(\beta\le2/15\)
+and the graph on the cube coordinates again suffices, since
+\(\beta+\delta/2<17/60\).
+In the remaining case every exponent is below \(3/10\) and both
+height factors are bounded. For both graph estimates to have
+exponent at least \(3/10\), one must have \(S,W\ge2/5\).
+The constraint \(2S+3W\le2\) forces \(S=W=2/5\).
+Equality in both graph estimates requires
+\(\alpha=\beta=\gamma=\delta=1/5\).
+This gives the exponent \(3/10\) in every box.
+
+To pass from coprime summands to arbitrary \(m_1+m_2=N\), take
+\(h=(m_1,m_2)\mid N\), \(n=N/h\).
+A prime occurring with exponent \(1,\ldots,k-1\) in \(m_i/h\)
+divides \(h\), with exponent at least \(k\) in \(h\).
+Let \(\kappa_i\) be the product of the full powers of all such
+primes in \(m_i/h\). Then \(\kappa_i\mid h\) and
+\((m_i/h)/\kappa_i\) is \(k\)-full, so its canonical factorization
+puts the quotients in \eqref{eq:coeff}. There are at most
+\(\tau(N)^3\) choices of \(h,\kappa_1,\kappa_2\).
+The box estimates are uniform in these coefficients. The divisor
+function and the \(O_k((\log(2n))^{2k})\) dyadic boxes cost only a
+subpower factor. This completes the proof of Theorem~\ref{thm:binary}.
+
+\newpage
+\section{Primitive triples and Campana points}
+To prove Theorem~\ref{thm:campana}, fix a common canonical dyadic box
+for the three summands. Let \(s_i\) be the sum of logarithmic
+coordinate sizes to base \(X\) on side \(i\), and \(u_i\) the sum
+excluding the coordinate of exponent \(k\). Write
+\[
+ S=s_1+s_2+s_3,\qquad U=u_1+u_2+u_3,\qquad v_i=s_i-u_i .
+\]
+The size constraints are \(ks_i+u_i\le1\), which imply \(U\le3-kS\).
+
+Fix the non-\(k\)-power coordinates on all three sides in
+\(O_k(X^U)\) ways. The remaining coordinates lie on
+\(\lambda x^k+\mu y^k=\nu z^k\) with fixed positive coefficients.
+The projective curve is smooth, because the partial derivatives
+cannot all vanish at a projective point, and is absolutely
+irreducible by B\'ezout. A primitive solution of \(a+b=c\) is
+pairwise coprime, so its positive root-coordinate triple is
+primitive and injects into the rational points of the curve.
+In the rectangular box, Heath-Brown's coefficient-uniform bound
+\cite[Theorem~3]{HBcurves} gives the exponent
+\[
+ U+\frac{v_1+v_2+v_3-\max_i v_i}{k}
+    \le U+\frac{2(S-U)}{3k}.
+\]
+Here the largest monomial size is the \(k\)-th power of the largest
+coordinate bound, because the form is diagonal. The same theorem
+in an enclosing cube gives the exponent \(U+2/k^2\). When \(k=3\),
+Heath-Brown's uniform diagonal-cubic theorem
+\cite[Theorem~1.3]{HBcubic} gives the exponent \(U\).
+
+Let \(\Delta\) be the minimum of the available counting exponents
+in a box, so its contribution is \(O_{k,\eps}(X^{\Delta+\eps})\).
+First count triples all of whose entries are at least \(X^{2/k}\).
+Fixing \(c\) and using Theorem~\ref{thm:binary}, or fixing \(a\) or
+\(b\) and using Theorem~\ref{thm:difference}, gives
+\(\Delta\le s_i+t\) for all \(i\), where \(t=1/(k+1)\).
+Thus \(S\ge3(\Delta-t)\). For \(k\ge4\), set
+\(L=k-2/3-2/(3k)>0\). The rectangular curve bound gives
+\[
+ \Delta\le U+\frac{2(S-U)}{3k}
+     \le 3-\frac2k-L S
+     \le 3-\frac2k-3L(\Delta-t).
+\]
+Solving yields \(\Delta\le\theta_k\). For \(k=3\) we use
+\(\Delta\le U\le3-3S\le3-9(\Delta-1/4)\), so
+\(\Delta\le21/40\).
+
+For the remaining triples, by symmetry suppose \(a<X^{2/k}\).
+Its size constraint strengthens to \(ks_1+u_1\le2/k\).
+Any two summands determine the third, so both
+\(\Delta\le s_1+s_2\) and \(\Delta\le s_1+s_3\) hold. In particular
+\(S\ge2\Delta-s_1\). For \(k\ge4\), the enclosing-cube bound gives
+\[
+ \Delta\le U+\frac2{k^2}
+       \le 2+\frac2k-kS+\frac2{k^2}
+       \le 2+\frac4k+\frac2{k^2}-2k\Delta .
+\]
+The resulting exponent \((2+4/k+2/k^2)/(2k+1)\) is smaller than
+\(2/(k+1)<\theta_k\) for \(k\ge4\).
+For \(k=3\), use \(\Delta\le U\) in the same calculation to give
+\(\Delta\le10/21<21/40\). In each range the number of boxes is
+absorbed in \(X^\eps\).
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+
+\bibitem{BS}
+V.~Blomer and A.~Sch\"obel,
+\emph{Twins of powerful numbers},
+Functiones et Approximatio Commentarii Mathematici \textbf{49}
+(2013), 349--356.
+\href{https://doi.org/10.7169/facm/2013.49.2.12}{doi:10.7169/facm/2013.49.2.12}.
+
+\bibitem{BP}
+E.~Bombieri and J.~Pila,
+\emph{The number of integral points on arcs and ovals},
+Duke Math. J. \textbf{59} (1989), 337--357.
+
+\bibitem{BV}
+T.~Browning and M.~Verzobio,
+\emph{Sums of three powerful numbers},
+2026, \href{https://arxiv.org/abs/2608.24512v1}{arXiv:2608.24512v1}.
+
+\bibitem{Cho}
+P.~Chojecki,
+\emph{Erd\H{o}s Problem 943 on sums of two squarefull numbers},
+18 March 2026, \url{https://www.ulam.ai/research/erdos943.pdf}.
+
+\bibitem{Ev}
+J.-H.~Evertse,
+\emph{The number of solutions of the Thue--Mahler equation},
+J. Reine Angew. Math. \textbf{482} (1997), 121--149.
+
+\bibitem{HBcurves}
+D.~R.~Heath-Brown,
+\emph{The density of rational points on curves and surfaces},
+Ann. of Math. \textbf{155} (2002), 553--598.
+
+\bibitem{HBcubic}
+D.~R.~Heath-Brown,
+\emph{Counting square-full solutions to \(x+y=z\)},
+2026, \href{https://arxiv.org/abs/2601.07817v1}{arXiv:2601.07817v1}.
+
+\end{thebibliography}
+\end{document}

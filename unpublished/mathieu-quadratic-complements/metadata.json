@@ -4,23 +4,24 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Classifies the normalized trace on quadratic complements in characteristic zero and proves explicit witnesses, the sharp polynomial multiplier bound, and a fixed-multiplier test.",
+  "summary": "Classifies quadratic-complement traces in characteristic zero, proves degree-one detection in every dimension at least three, and gives a finite fixed-multiplier test and results for related norm spaces.",
   "status": "ready-for-review",
   "published": false,
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
   "pdf": "mathieu-quadratic-complements.pdf",
   "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=mathieu-quadratic-complements main.tex",
-  "abstract": "Let \\(q\\) be a nondegenerate quadratic form of dimension \\(N\\ge1\\) over a\nfield of characteristic zero. The kernel of the normalized\n\\(\\SO(q)\\times\\Gm\\)-invariant trace on \\(\\{q\\ne0\\}\\) is a Mathieu--Zhao\nsubspace exactly when \\(N\\le2\\). For \\(N\\ge3\\) we give an explicit\ngeometrically nonpower function whose positive powers have zero trace,\nwhile multiplication by \\(q^{N-2}\\) gives a nonzero trace at every order.\nFor this function the least detecting polynomial degree is \\(2N-4\\).\nWe give the sharp vanishing cutoff below that degree and a finite test\nfor eventual vanishing with any fixed regular multiplier.",
+  "abstract": "Let \\(q\\) be a nondegenerate quadratic form of dimension \\(N\\ge1\\) over a\nfield of characteristic zero. The kernel of the normalized\n\\(\\SO(q)\\times\\Gm\\)-invariant trace on \\(\\{q\\ne0\\}\\) is a Mathieu--Zhao\nsubspace exactly when \\(N\\le2\\). For \\(N\\ge3\\) we give an explicit\ngeometrically nonpower function whose positive powers have zero trace,\nwhile multiplication by \\(q^{N-2}\\) gives a nonzero trace at every order.\nFor this function the least detecting polynomial degree is \\(2N-4\\).\nWe give the sharp vanishing cutoff below that degree and a finite test\nfor eventual vanishing with any fixed regular multiplier.\nA linear multiplier detects every order for another explicit phase\nin every dimension \\(N\\ge3\\). Polynomial recurrences give a finite\ntest for any fixed phase and multiplier in the block-invariant ring.\nIn dimensions at least three the geometric nullcone is strictly contained\nin the pure phases with eventual marked vanishing, which in turn form\na proper subset of the pure phases. The results also apply to quadratic\nand quaternionic Hermitian norm complements. On the norm-one level,\nisotropy gives an all-order counterexample over the ground field.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "verification": {
-    "scope": "Complete written arguments, bounded exact coefficient checks, and PDF-only internal review. The complex spherical comparison and the isotropic ternary example were checked in this edition.",
+    "scope": "Written arguments, bounded exact arithmetic controls, and PDF-only internal review of the linear multiplier, residue recurrence, two-weight criterion, and norm-space extensions.",
     "limits": "External specialist review, independent external replay, and full formal verification remain pending."
   },
   "next_steps": [
-    "Obtain specialist review of the endpoint identity, block averaging, and multiplier cutoff.",
-    "Review the revised manuscript with the author before any submission."
+    "Obtain specialist review of the endpoint calculations, formal-residue recurrence and ground-field trace comparisons.",
+    "Characterize eventual marked vanishing for every regular multiplier beyond the classified subfamilies.",
+    "Review the manuscript with the author before any submission."
   ]
 }

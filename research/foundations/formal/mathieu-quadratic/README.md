@@ -11,7 +11,54 @@ From this directory, run:
 The dependency lock pins Mathlib v4.32.1. The audit prints the transitive
 Lean axioms of the principal declarations.
 
-## Uniform construction
+## Statements in the current draft
+
+The [paper draft](../../../../unpublished/mathieu-quadratic-complements/main.tex)
+uses the product phase \(F_{α,β,γ}=q^{-α}(1+q)^β W^γ\). The formal
+statements follow this choice of phase.
+
+- [Moments.lean](MathieuQuadratic/Moments.lean) and
+  [Draft.lean](MathieuQuadratic/Draft.lean) give the mixed-moment
+  proposition for arbitrary product parameters, the zero for a negative
+  extraction index, and the first omitted coefficient. They identify the
+  rational beta constants with the integrals in the draft.
+- [Draft.lean](MathieuQuadratic/Draft.lean) gives the opening ternary
+  witness \(F_{1,1,1}\), its first marked moment \(2/3\), and the
+  prescription \(F_{M,M,M+1}\) with marker \(q^M\). These statements use
+  a normalized trace with scalar and geometric infinitesimal invariance.
+  [Nonpower.lean](MathieuQuadratic/Nonpower.lean) checks the two
+  restriction orders over the algebraic closure.
+- [SharpMultiplier.lean](MathieuQuadratic/SharpMultiplier.lean) proves
+  the sharp order cutoff on the span of the averaged monomials, the
+  last-order detection by \(B^J\), and the purity and detection
+  alternatives for the product family given the block expansions.
+  [MultiplierTail.lean](MathieuQuadratic/MultiplierTail.lean) gives the
+  cleared rational function for a finite expansion and proves the
+  equivalence with eventual vanishing.
+- [Perturbation.lean](MathieuQuadratic/Perturbation.lean) gives the
+  first-order cancellation, all positive pure and marked moments,
+  and below-threshold vanishing on the block span for \(F_*\).
+  [PoleOrder.lean](MathieuQuadratic/PoleOrder.lean) proves the exact
+  clearing powers for both phases and assembles the perturbation witness
+  with its absolute nonpower property.
+- [OrthogonalTrace.lean](MathieuQuadratic/OrthogonalTrace.lean) realizes
+  the rank-two rotations as special orthogonal dual-number points.
+  [GeometricAction.lean](MathieuQuadratic/GeometricAction.lean) and
+  [Transitivity.lean](MathieuQuadratic/Transitivity.lean) prove geometric
+  transitivity and the constant invariant subspace.
+  [QuadraticCoordinates.lean](MathieuQuadratic/QuadraticCoordinates.lean)
+  gives the norm-preserving localization equivalence for the rank-two chart.
+- [Draft.lean](MathieuQuadratic/Draft.lean) proves the stated dimension
+  cutoff and field-extension result given the trace comparisons and
+  the complex Laurent theorem. The high-dimensional conclusion uses
+  the draft's product phase and prescribed norm-power marker.
+
+The geometric Reynolds decomposition, its trace comparisons, the
+unconditional block averaging proposition, the isotropic ternary linear
+multiplier example, and the complex Laurent necessity theorem remain
+formalization obligations.
+
+## Supporting squared-normalizer construction
 
 The coordinate ring in [Complement.lean](MathieuQuadratic/Complement.lean)
 is the localization of the multivariate polynomial ring away from the norm.

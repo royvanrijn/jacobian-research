@@ -99,6 +99,16 @@ private theorem eq_algebraMap_of_constant_evaluations [Infinite K] [Nonempty J]
   rw [← map_pow, hfrac, hp, map_mul]
   congr 1
 
+/-- Evaluation at nonzero-norm points detects equality of regular functions. -/
+theorem complement_funext [Infinite K] [Nonempty J] (d : J → Kˣ)
+    (f g : Localization.Away (diagonalNormPolynomial d))
+    (h : ∀ v (hv : diagonalNorm d v ≠ 0),
+      evalOnComplement d v hv f = evalOnComplement d v hv g) : f = g := by
+  apply sub_eq_zero.mp
+  have he := eq_algebraMap_of_constant_evaluations d (f - g) 0 (fun v hv ↦ by
+    rw [map_sub, h v hv, sub_self])
+  simpa using he
+
 /-- Regular functions invariant under geometric scalar and special
 orthogonal points are constant. In positive dimension every constant is
 the value at a nonzero-norm point, so the scalar is unique. -/

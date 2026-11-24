@@ -73,6 +73,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Explicit all-field counterexamples on seven standard compact classical products | Internal result | proved | [Source](../foundations/extended-geometry/STANDARD_COMPACT_CLASSICAL_PRODUCT_COUNTEREXAMPLES.md) |
 | Finite piecewise-polynomial endpoint criterion with one all-order unit marker | Internal result | proved | [Source](../foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md) |
 | All-order unit-marker counterexamples on compact coadjoint and standard rational Chevalley products | Internal result | proved | [Source](../foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md) |
+| All-field fixed-unit-marker counterexamples on highest-root Wolf products | Internal result | proved | [Source](../foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 

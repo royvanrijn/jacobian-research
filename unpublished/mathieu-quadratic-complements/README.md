@@ -4,14 +4,20 @@
 
 The normalized rotation-and-scaling trace on a nondegenerate quadratic
 complement in characteristic zero has a Mathieu–Zhao kernel exactly in
-dimensions one and two. The paper opens with a double-pole ternary
-example and gives a uniform witness in higher dimensions. For this
-witness the least polynomial degree detecting infinitely many orders is
-\(2N-4\). The paper gives the sharp lower-degree cutoff, a test for fixed
-regular multipliers, and a pole-reducing perturbation in dimensions at
-least six. The introduction credits Long's spherical classification
-for the complex case. An isotropic ternary example illustrates how the
-least detecting polynomial degree can change with the choice of witness.
+dimensions one and two. In every higher dimension, a linear multiplier
+detects every order of an explicit pure phase. The paper also gives the
+sharp degree and cutoff for its original uniform witness.
+
+Polynomial recurrences decide eventual vanishing for each fixed phase in
+the block-invariant ring and each fixed regular multiplier. The geometric
+nullcone is strictly smaller than the pure phases with eventual marked
+vanishing in dimensions at least three.
+
+The same trace classification gives explicit witnesses for quadratic-étale
+and quaternionic Hermitian norm complements. Isotropic norm-one quadrics
+also have witnesses over the ground field. For positive-definite real
+norm-one quadrics of dimension at least two, the real trace is Mathieu–Zhao
+and the complex trace fails.
 
 [PDF](mathieu-quadratic-complements.pdf) · [LaTeX source](main.tex) ·
 [Metadata](metadata.json) · [Verification record](verification.json)

@@ -14,5 +14,6 @@ Drafts and standalone notes with their current review status.
 | [Gaussian Marker Reduction with a Constant Quadratic Fibre](gaussian-constant-fibre-base-marker-certificates/) | ready for review |
 | [Gaussian Moment Vanishing with One Base Variable and Constant Quadratic Fibres](gaussian-quadratic-fibre-jordan-cancellation/) | ready for review |
 | [Additive basis thresholds for random prime semigroups](random-prime-semigroups/) | ready for review |
+| [Additive representations by powerful integers](powerful-number-representations/) | draft |
 
 [Released and submitted papers](../results/) · [Research topics](../research/)

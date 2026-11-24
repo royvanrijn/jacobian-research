@@ -10,8 +10,9 @@ import Mathlib.RingTheory.PowerSeries.Inverse
 
 A simple zero gives a map to dual numbers with zero residue and nonzero
 linear coefficient. Such an image cannot be a unit times any proper power.
-The jets are defined at norm −1/2 for the uniform phase and norm −1 for
-the direct ternary phase.
+For the product phase, the two first-order restrictions give orders β
+and γ, whose greatest common divisor controls the power assertion.
+The perturbation uses a simple zero on the norm-one level.
 -/
 
 open scoped DualNumber TensorProduct BigOperators

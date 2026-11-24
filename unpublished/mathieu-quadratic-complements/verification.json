@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-24",
-  "scope": "Theorem 1 through Proposition 8 of the revised quadratic-complements article, including the uniform and double-pole ternary witnesses, sharp polynomial cutoff, rational tail criterion and the perturbation for N>=6. Includes the justification for applying Long's complex spherical classification and the linear multiplier example on an isotropic ternary complement.",
+  "scope": "Theorem 1 through Corollary 14 of the quadratic-complements article, including explicit witnesses, multiplier bounds, recurrence and two-weight tests, geometric instability and extensions to Hermitian and isotropic norm-one spaces.",
   "proof_dependencies": [
     {
       "location": "Section 2",
@@ -29,9 +29,29 @@
       "basis": "Theorem 1.1 in Long's spherical-pair preprint applies to the connected reductive action after establishing a Borel open orbit and reductivity of the norm-one stabilizer. The general reductive homogeneous-space classification also gives the complex cutoff. The local all-field proof is independent of either criterion."
     },
     {
-      "location": "Section 5, equation (8)",
-      "claim": "Degree-one detection on isotropic ternary complements",
-      "basis": "The hyperbolic torus and Lie derivative give diagonal moments. Endpoint extraction after the substitution for y/q gives the pure and linear-marked moments. Restricting to y=1,z=0 certifies a simple zero. Constants vanish by purity."
+      "location": "Section 5, Proposition 6",
+      "claim": "Degree-one detection for every nondegenerate quadratic complement of dimension at least three",
+      "basis": "One-coordinate projection inside a rank-one or rank-two block gives the polynomial angular density and the extra even-dimensional torus coefficient. Endpoint extraction gives the missing and leading coefficients, and coprime orders rule out powers."
+    },
+    {
+      "location": "Section 8, Lemma 11 and Corollary 12",
+      "claim": "The geometric nullcone is contained in the pure phases with eventual marked vanishing. This inclusion and the next inclusion into pure phases are strict exactly for N>=3.",
+      "basis": "Long’s weight argument with the affine Hilbert–Mumford criterion, trace base change, Laurent support separation in low dimensions, and an explicit safe product phase in high dimensions. The lowest and highest averaged scalar weights give a nonzero homogeneous invariant on that phase."
+    },
+    {
+      "location": "Section 6, Proposition 8",
+      "claim": "Finite fixed-multiplier test for arbitrary phases in the block-invariant ring",
+      "basis": "Block averaging, a formal double residue for the moments, an explicit common-denominator dimension count, and elimination by formal integration by parts. Past the endpoint roots, a recurrence propagates zero forward and backward."
+    },
+    {
+      "location": "End of Section 8",
+      "claim": "Two Laurent powers over a formally real field",
+      "basis": "For a zero exponent or two opposite exponents, a selected pure moment is a positive integer times a rational Gram square. Its nonvanishing is preserved in every ordering. A one-sided support is destabilized by scalars."
+    },
+    {
+      "location": "Section 9, Corollaries 13–14",
+      "claim": "Hermitian complements and isotropic norm-one spaces",
+      "basis": "The split dual-vector and symplectic-pair actions give transitivity and normalized trace equality for the Hermitian complements. On the isotropic norm-one level the hyperbolic torus replaces the scalar torus, and the rank-two recurrence and the endpoint calculation give an original-field witness."
     }
   ],
   "sources": [
@@ -43,7 +63,7 @@
     {
       "reference": "Long, A Classification of Mathieu's Second Conjecture for Reductive Spherical Pairs",
       "identifier": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex",
-      "inspected": "Versioned source and retained author PDF, Theorem 1.1 (hypotheses, characterization and fixed witnesses) and Section 5, Proposition 5.1 (endpoint calculation)."
+      "inspected": "Versioned source and retained author PDF, Theorem 1.1 (characterization and fixed witnesses), Lemma 2.1 (instability), and Proposition 5.1 (endpoint calculation)."
     },
     {
       "reference": "Milne, Algebraic Groups",
@@ -54,6 +74,16 @@
       "reference": "Van Rijn, Counterexamples to the Mathieu Property",
       "identifier": "https://doi.org/10.5281/zenodo.24310836",
       "inspected": "Retained deposited source and current LaTeX theorem statement, Theorem 1.1."
+    },
+    {
+      "reference": "Kempf, Instability in invariant theory",
+      "identifier": "https://arxiv.org/abs/1807.02890v1",
+      "inspected": "Original preprint transcribed by I. Morrison, Introduction, p. 1, affine Hilbert–Mumford criterion."
+    },
+    {
+      "reference": "Chyzak, The ABC of Creative Telescoping: Algorithms, Bounds, Complexity",
+      "identifier": "https://mathexp.eu/chyzak/Publications/Chyzak-2014-ACT.pdf",
+      "inspected": "Author’s 2014 habilitation memoir, Section 2.2 on Lipshitz’s residue elimination and Sections 3.4 and 4.1 on extracting a recurrence. The manuscript supplies a direct proof for its explicit differential coefficients."
     }
   ],
   "checks": {
@@ -66,41 +96,65 @@
     },
     "layout": {
       "passed": true,
-      "pages": 7,
+      "pages": 11,
       "renderer": "Poppler pdftoppm at 122 dpi",
       "embedded_fonts": true,
       "type3_fonts": false,
-      "scope": "Final pages 2, 3 and 5–7 rendered and visually inspected. Pages 1 and 4 were pixel-identical to the reviewed prior edition. Display equations, page breaks and bibliography links were checked."
+      "scope": "All eleven final pages were rendered at 122 dpi and visually inspected. Display equations, page breaks, embedded fonts, and bibliography destinations were checked."
     },
     "arithmetic": {
       "passed": true,
       "method": "Temporary Python 3.12.3 probe with exact fractions. Direct finite Laurent expansion uses Lambda(S^j)=M/(M+2j), and a separate rational product computes the beta moments.",
       "scope": "66,760 coefficient comparisons for M=1..5, alpha=1..M+2, beta=0..M+1, max(1,alpha-1)<=gamma<=alpha+1, m=1..4 and j=0..3 over the displayed endpoint range and one negative-index control above it. Also 6,080 first omitted coefficients, 284 below-degree vanishing cases, 60 pure or marked perturbation moments for M=4..8 and m=1..6, sharp predecessor orders, the 2/3 ternary moment, cancellation, and the M=3 failed perturbation. These checks are bounded. The formulas covered by those checks are unchanged in this edition."
     },
-    "comparisons": {
+    "navigation": {
+      "manuscript_check_passed": true,
+      "scope": "The five manuscript files, fourteen mapped declarations, two registered proof links, six bibliography entries, exact abstract and reviewed edition hashes passed the manuscript checks."
+    },
+    "previous_ternary_comparison": {
       "passed": true,
       "method": "Exact Python fractions. Direct finite Laurent expansion of the isotropic seed compared with the diagonal-moment recurrence, and exact isometry and group-law controls on the displayed transformations.",
-      "scope": "Pure and linear-marked ternary moments for orders 1 through 40, including marked value 1/3 at order one. Verifies the new passages in a bounded scope. The arguments in the paper are all-order."
+      "scope": "The earlier isotropic ternary formula was checked at orders 1 through 40. The current manuscript uses the more general construction in Proposition 6."
     },
-    "navigation": {
-      "render_passed": true,
-      "manuscript_check_passed": true,
-      "repository_wide_check_passed": false,
-      "scope": "The manuscript coverage, eight mapped declarations, proof links, bibliography and reviewed hashes passed. The repository-wide navigation check reported missing or stale coverage outside the paper, including the ongoing Lean formalization."
+    "linear_multiplier": {
+      "passed": true,
+      "method": "Exact fractions using direct finite expansion with the marginal moments, and a separate two-coordinate sphere-moment recurrence for the even block.",
+      "scope": "456 direct odd and unrestricted even pure or marked moments for two densities, including 120 simplified ternary or quaternary cases up to order 30 and marked values 2/15 and 1/12. Also 693 direct two-coordinate spherical averages for even dimensions 4 through 16."
+    },
+    "nullcone_separation": {
+      "passed": true,
+      "method": "Exact Python fractions and finite Laurent coefficients.",
+      "scope": "96 pure powers for M=1..8 and m=1..12, 16 nonzero extremal coefficients, 2,160 eventual marked vanishing probes past the three monomial thresholds, and the coprime multiplicities."
+    },
+    "residue_recurrence": {
+      "passed": true,
+      "method": "Finite Laurent multiplication and exact rational extraction of the double residue, plus an explicit recurrence replay.",
+      "scope": "644 comparisons for four phase–multiplier pairs, M=1..7 and m=0..22, including a nonzero recurrence tail and two eventually zero controls. This bounded check exercises the moment encoding and recurrence decision; the symbolic termination argument is in Proposition 8."
+    },
+    "norm_one": {
+      "passed": true,
+      "method": "Direct polynomial expansion in the two hyperbolic coordinates with exact diagonal moments, compared with the rational endpoint integral.",
+      "scope": "160 pure or marked moments for M=1..8 and m=1..10. The split Hermitian transitivity and original-field transfer were checked in the written proof review."
+    },
+    "typography": {
+      "passed": true,
+      "scope": "On page 3 the inequality uses LaTeX \\neq and PDF ActualText to copy out as the single Unicode relation in ℓ ≠ 0.",
+      "visual_comparison": "All 11 rendered pages matched the earlier mathematically reviewed PDF pixel for pixel in Poppler at 122 dpi. The inequality was visualized again at 200 dpi and the extracted phrase was checked.",
+      "comparison_pdf_sha256": "342e6bfe5b270ee2a8493aa0f38c97eebd2cbb3961a644c0ac5b21304bc66677"
     }
   },
   "review": {
     "blind_reader": {
       "performed": true,
       "reviewer": "Fresh no-history internal AI reader",
-      "supplied_context": "Only the exact revised PDF and the paper-guide questions, with a request to check the complex comparison and isotropic example. No repository, earlier conversation or external references.",
-      "final_pdf_sha256": "e785092db1a7c9fb096820a85ad8a178f00d79ffe553f846f24566dfe2667a07",
+      "supplied_context": "Only the exact eleven-page PDF and the paper-guide questions, with a request to reconstruct the unrestricted even witness, residue recurrence, two-weight test and Hermitian and norm-one transfers. No repository, earlier drafts, conversation or external references.",
+      "final_pdf_sha256": "342e6bfe5b270ee2a8493aa0f38c97eebd2cbb3961a644c0ac5b21304bc66677",
       "answers": {
-        "contribution": "Explicit all-field witnesses and precise phase-specific degree, cutoff, pole and tail results. The earlier complex classification is credited and the isotropic ternary example gives a degree-one minimum across witnesses.",
-        "conceptual_reason": "Scalar-weight extraction and a beta endpoint identity give the pure and marked moments. In the isotropic model a hyperbolic torus takes the place of scalar weights and yields the same mechanism with a linear multiplier.",
-        "hardest_step": "Proposition 2, pp. 3–4, including control of the first omitted coefficient. The reader separately reconstructed both new passages.",
-        "limitations": "The pole minimum is family-specific. The degree-one minimum across all witnesses concerns isotropic ternary complements. The lower-pole perturbation is in dimensions at least six.",
-        "verification_obstacles": "The exact cited classification hypotheses require reading the cited papers outside the PDF-only exercise. The reader found no error in the orbit, stabilizer, moment, or simple-zero arguments."
+        "contribution": "The all-field dimension criterion and degree-one minimum in every high dimension, a finite fixed-multiplier test on the block-invariant ring, and original-field results for Hermitian complements and isotropic norm-one levels.",
+        "conceptual_reason": "A normalized rank-two block projection supplies the even-dimensional moments. Residue elimination gives a recurrence, while split vector-pair actions and the hyperbolic torus transfer the moment method to other norm spaces.",
+        "hardest_step": "Proposition 6 and Proposition 8. The reader reconstructed the balanced torus coefficient, endpoint cutoff, dimension count for the annihilating operator, lexicographic removal of derivatives, and forward/backward use of the recurrence.",
+        "limitations": "The finite test concerns a given multiplier or specified finite-dimensional space, and the two-weight classification concerns formally real fields. The norm-one witness assumes isotropy. The reader also checked the positive-definite real contrast and the original-field Hermitian trace equality.",
+        "verification_obstacles": "No concrete gap was found in the reconstructed passages. Text extraction omits closure bars, which the rendered PDF confirms. The general literature and performance bounds for the recurrence procedure were outside the PDF-only review."
       }
     },
     "external_human_review": false,
@@ -109,10 +163,23 @@
     "previous_edition": {
       "pdf_sha256": "78f3554de3c9a658505e3fcb8c5b3bd994ff97e44ac4f761e8715de5305f149e",
       "scope": "Reviewer confirmed the final edition hash and the clarifications. The reviewer also made a separate internal direct-expansion check of 98,400 small coefficient cases and 45 perturbation parameter pairs."
+    },
+    "earlier_revision": {
+      "performed": true,
+      "reviewer": "Fresh no-history internal AI reader",
+      "supplied_context": "Only the exact nine-page PDF and the paper-guide questions, with a request to reconstruct the linear-multiplier and instability proofs. No repository, earlier drafts, conversation or external references.",
+      "final_pdf_sha256": "49473923da62fd033db2af1efae9057ce006ec8175f7701f5ba5753b7063e0de",
+      "answers": {
+        "contribution": "The all-characteristic-zero dimension cutoff, explicit witnesses and phase-specific cutoff, the minimum degree on odd-dimensional and isotropic complements, and explicit pure phases distinguishing eventual marked vanishing from the geometric nullcone.",
+        "conceptual_reason": "Rotation or hyperbolic moments give polynomial angular densities. Laurent coefficient extraction selects the first missing or the leading retained coefficient. Opposite extreme scalar weights give the invariant certificate for the safe phase.",
+        "hardest_step": "The endpoint substitutions on pp. 3–4 and 5–6 and the strict middle class on p. 8. The reader reconstructed the rank-one recurrence, both densities, the tail order, the leading coefficient, the two vanishing orders, the weight cutoff and the invariant.",
+        "limitations": "The degree-one result concerns odd dimension or isotropic q in N>=3. The sharp polynomial cutoff and rational test concern the stated phases and the pole minimum concerns its stated family. Eventual marked vanishing permits a multiplier-dependent cutoff.",
+        "verification_obstacles": "The reader found no mathematical gap in the reconstructed passages. Text extraction loses overlines on K in Section 8; rendered page 8 confirms the use of the algebraic closure. The cited theorems and literature priority were outside the PDF-only exercise."
+      }
     }
   },
   "artifact_hashes": {
-    "main.tex": "4060e6081cf6cc4fc68de4a2ad279975f01cf0d85127e4aab23942044225a38d",
-    "mathieu-quadratic-complements.pdf": "e785092db1a7c9fb096820a85ad8a178f00d79ffe553f846f24566dfe2667a07"
+    "main.tex": "483b33c8dd323a1582bf3539cf0b33fa05fd0d08c7c784537c449e38496290fd",
+    "mathieu-quadratic-complements.pdf": "4a699b183b4172bbf6e7516b477fafe196f1edad1fb58c1191ced718b01eee9e"
   }
 }

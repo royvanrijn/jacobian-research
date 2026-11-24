@@ -2,6 +2,7 @@ import MathieuQuadratic.Classification
 import MathieuQuadratic.Extension
 import MathieuQuadratic.LaurentBaseChange
 import MathieuQuadratic.OrthogonalTrace
+import MathieuQuadratic.QuadraticCoordinates
 import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 
 /-!
@@ -253,5 +254,42 @@ theorem draft_mathieu_iff_after_extension (L : Type*) [Field L] [Algebra K L]
     exact ⟨F, hw, (allOrderWitness_includeRight_iff L trace _ _).2 hw⟩
 
 end Classification
+
+section ArbitraryQuadraticForm
+
+open MvPolynomial
+
+variable {I : Type*} [Fintype I] [Infinite K]
+
+/-- The unit represented by the norm on its quadratic complement. -/
+noncomputable def quadraticNormUnit (q : QuadraticForm K (I → K)) :
+    (Localization.Away (quadraticCoordinatePolynomial q))ˣ :=
+  (IsLocalization.Away.algebraMap_isUnit (quadraticCoordinatePolynomial q)).unit
+
+/-- Diagonalization supplies the coordinates and the prescribed multiplier
+for an arbitrary nondegenerate form of dimension M + 2. -/
+theorem exists_DiagonalTraceModel_of_form (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (M : ℕ) (hdim : Fintype.card I = M + 2)
+    (trace : Localization.Away (quadraticCoordinatePolynomial q) →ₗ[K] K)
+    (compatible : ∀ (a : Fin 2 → Kˣ) (b : Fin M → Kˣ)
+      (e : Localization.Away (quadraticCoordinatePolynomial q) ≃ₐ[K]
+        NormComplement (fun i ↦ (a i : K)) (fun j ↦ (b j : K))),
+      e (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+        (normUnit (fun i ↦ (a i : K)) (fun j ↦ (b j : K)) :
+          NormComplement (fun i ↦ (a i : K)) (fun j ↦ (b j : K))) →
+      GeometricTrace (fun i ↦ (a i : K)) (fun j ↦ (b j : K)) (trace.comp e.symm.toLinearMap)) :
+    Nonempty (DiagonalTraceModel M (quadraticNormUnit q) trace) := by
+  obtain ⟨a, b, e, he⟩ := exists_diagonal_localization q hn M hdim
+  have hunit : e (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+      (normUnit (fun i ↦ (a i : K)) (fun j ↦ (b j : K)) :
+        NormComplement (fun i ↦ (a i : K)) (fun j ↦ (b j : K))) := by
+    have hq : (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+        algebraMap (MvPolynomial I K) _ (quadraticCoordinatePolynomial q) := IsUnit.unit_spec _
+    rw [hq, he]
+  exact ⟨⟨fun i ↦ a i, fun j ↦ b j, e, hunit, (a 0).ne_zero, fun i ↦ (b i).ne_zero,
+    compatible a b e hunit⟩⟩
+
+end ArbitraryQuadraticForm
 
 end MathieuQuadratic

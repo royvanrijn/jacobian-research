@@ -4,8 +4,10 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[hidelinks]{hyperref}
+\usepackage{accsupp}
 
 \newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 \DeclareMathOperator{\SO}{SO}
@@ -31,6 +33,14 @@ while multiplication by \(q^{N-2}\) gives a nonzero trace at every order.
 For this function the least detecting polynomial degree is \(2N-4\).
 We give the sharp vanishing cutoff below that degree and a finite test
 for eventual vanishing with any fixed regular multiplier.
+A linear multiplier detects every order for another explicit phase
+in every dimension \(N\ge3\). Polynomial recurrences give a finite
+test for any fixed phase and multiplier in the block-invariant ring.
+In dimensions at least three the geometric nullcone is strictly contained
+in the pure phases with eventual marked vanishing, which in turn form
+a proper subset of the pure phases. The results also apply to quadratic
+and quaternionic Hermitian norm complements. On the norm-one level,
+isotropy gives an all-order counterexample over the ground field.
 \end{abstract}
 
 \section{A double-pole counterexample in dimension three}
@@ -110,7 +120,7 @@ The endpoint substitution here adapts Long's calculation on
 \(\mathrm{SL}_2/N(T)\) \cite[Prop.~5.1]{Long}. The rotation recurrence
 supplies the moments over the original characteristic-zero field.
 It gives explicit witnesses there, as well as the exact cutoff for
-their polynomial multipliers.
+their polynomial multipliers. Section~\ref{sec:cutoff} gives an all-field linear multiplier construction.
 
 \section{The trace and the two low dimensions}\label{sec:positive}
 
@@ -149,7 +159,7 @@ term eventually vanishes. If either factor is zero the conclusion is
 immediate.
 
 When \(N=1\), write \(q=ax^2\). The ring is \(K[x,x^{-1}]\), and the
-scalar action gives \(\Lq=\CT_x\) since each \(x^i\) has weight \(i\).
+scalar action gives \(\Lq=\CT_x\) since each \(x^i\) has weight \(-i\) under pullback.
 When \(N=2\), pass to a splitting field \(L/K\) of degree at most two
 and write \(q=a uv\) in linear coordinates \(u,v\). Both \(u\) and \(v\)
 are then units on the complement. The rotation and scalar tori act
@@ -199,8 +209,9 @@ equivalently
 \end{equation}
 For coefficients in \(K\), the integral denotes termwise polynomial
 integration, defined by \(\int_0^1t^r\,dt=1/(r+1)\) and \(K\)-linearity.
-Also, \(q^\ell g(S)\) has scalar weight \(2\ell\), so its trace is
-zero whenever \(\ell\ne0\). This allows us to compute the trace of
+Also, \(q^\ell g(S)\) has scalar pullback weight \(-2\ell\), so its trace is
+zero whenever \BeginAccSupp{method=hex,unicode,ActualText=21130020226000200030}%
+\(\ell \neq 0\)\EndAccSupp{}. This allows us to compute the trace of
 any Laurent expression in \(q\) with polynomial coefficients in \(S\)
 by applying \eqref{eq:beta} to its constant coefficient.
 
@@ -358,39 +369,84 @@ needs degree at least six to detect infinitely many orders. All
 polynomial multipliers of degree at most five vanish from order
 three, and \(B^2\) detects the second order.
 
-\paragraph{A linear multiplier in the isotropic ternary case.}
-Write \(q=2xy+az^2\), with \(a\in K^\times\), and set
-\[
- p=(1+x)^3\frac{y}{q}-\frac{(1+x)(2+x)}2 .
-\]
-Then for every \(m\ge1\),
-\begin{equation}\label{eq:isotropic-linear}
- \Lq(p^m)=0,\qquad
- \Lq(xp^m)=2^{-m}\int_0^1(1-w^2)^m\,dw\ne0 .
-\end{equation}
-Indeed the hyperbolic torus gives opposite weights to \(x\) and
-\(u=y/q\). The derivation \(az\,\partial_y-x\,\partial_z\) applied
-to \(x^{k-1}y^kz/q^k\) gives
-\((2k+1)\Lq((xu)^k)=k\Lq((xu)^{k-1})\). Thus on polynomials in
-\(x,u\) the trace equals the constant term in \(x\) after substituting
-\(u=(1-t^2)/(2x)\), integrated over \(0\le t\le1\).
-This follows by checking the moments with equal exponents, for
-which \(2^{-k}\int_0^1(1-t^2)^k\,dt\) satisfies the same recurrence.
-With \(T=1+x\) the substitution gives
-\(p=T(1-T^2t^2)/(2x)\). For the two moments in
-\eqref{eq:isotropic-linear}, the coefficients sought have degrees
-\(m\) and \(m-1\) in
-\(2^{-m}T^{m-1}\int_0^T(1-w^2)^m\,dw\).
-The integral differs from its value at \(T=1\) first in order
-\(m+1\) in \(x\). The retained polynomial \(T^{m-1}\) has zero
-coefficient at degree \(m\) and leading coefficient \(1\).
+\begin{proposition}[Linear multipliers]\label{prop:linear}
+For every \(N\ge3\) there is a geometrically nonpower pure phase
+\(p\) for which a linear multiplier detects every positive order.
+The least detecting polynomial degree over all phases is one.
+\end{proposition}
 
-On the line \(y=1,z=0\), the restriction \(p=(1+x)/(2x)\) has a
-simple zero at \(x=-1\), so \(p\) is geometrically nonpower up to
-units. A constant multiplier gives zero by purity. Hence the
-least detecting polynomial degree among all witnesses on an
-isotropic ternary complement is one. For the double-pole phase
-\(F_0\) on the same complement, Theorem~\ref{thm:cutoff} gives two.
+\begin{proof}
+Split off \(R=ax^2\) in odd dimension and \(R=ax^2+cy^2\)
+in even dimension, writing \(q=R+Q\) and \(U=R/q\).
+Use \((\kappa,r)=(2,(N-3)/2)\) in odd dimension and
+\((\kappa,r)=(1,(N-4)/2)\) in even dimension.
+In both cases the trace of \(g(U)\) is
+\[
+ c_r\int_0^1 g(t^\kappa)(1-t^\kappa)^r\,dt,\qquad
+ c_r^{-1}=\int_0^1(1-t^\kappa)^r\,dt .
+\]
+For odd \(N\), write \(Q=\sum_i a_i z_i^2\), apply
+\(ax\,\partial_{z_i}-a_i z_i\,\partial_x\) to
+\(a^{j-1}x^{2j-1}z_i/q^j\), and sum. This gives
+\((N+2j-2)\Lq(U^j)=(2j-1)\Lq(U^{j-1})\), which the integral
+satisfies by integration by parts. For even \(N\), \(U=1-S\)
+in \eqref{eq:beta}, and the substitution \(t=1-s^2\) gives the
+stated density.
+
+Set \(v=ax\). Scalar invariance kills \(x^i(v/q)^j g(U)\)
+unless \(i=j\). When \(i=j\), the trace is
+\(\eta_j\Lq(U^j g(U))\), with \(\eta_j=1\) in odd dimension and
+\(\eta_j=4^{-j}\binom{2j}j\) in even dimension. Indeed, in
+the latter case use split coordinates \(u_1,u_2\) over
+\(\overline K\) with \(R=u_1u_2\) and
+\(ax^2=(u_1+u_2)^2/4\). The rotation torus of the two-dimensional
+block keeps just the term with equal exponents in \((ax^2)^j\),
+giving \(\eta_j R^j\).
+
+Set \(b=\kappa r+1\), \(T=1+x\), and take \(\gamma=b+1\).
+Define
+\begin{equation}\label{eq:linear-phase}
+ p=T^{(\kappa+1)b}(v/q)^b(1-T^\kappa U)^\gamma .
+\end{equation}
+The moments \(\Lq(x^\ell p^m)\) for \(\ell=0,1\) extract the
+coefficients of degrees \(bm-\ell\) in \(x\) from
+\[
+ \eta_{bm}c_r T^{(\kappa+1)bm}
+ \int_0^1 t^{\kappa bm}(1-T^\kappa t^\kappa)^{\gamma m}
+                         (1-t^\kappa)^r\,dt .
+\]
+Putting \(w=Tt\) changes the prefactor to
+\(\eta_{bm}c_r T^{b(m-1)}\), the upper limit to \(T\), and the
+integrand to \(w^{\kappa bm}(1-w^\kappa)^{\gamma m}
+(T^\kappa-w^\kappa)^r\). The integral from \(1\) to \(T\)
+is divisible by \(x^{\gamma m+1}\), as is seen by putting
+\(w=1+xu\). The retained expression has degree \(bm-1\)
+and leading coefficient
+\[
+ \eta_{bm}c_r\int_0^1 w^{\kappa bm}(1-w^\kappa)^{\gamma m}\,dw>0
+ \qquad\text{in }\mathbb Q .
+\]
+Thus \(p\) is pure and \(x\) detects it at every order.
+
+For the two vanishing orders, the factor \(v^b\) gives order \(b\)
+at \(x=0\), with \(q\ne0\), \(U=0\) and \(T=1\). In the even case
+also set \(y=0\) at this point. For the other order set \(x=1\)
+and, in the even case, \(y=0\). Choose \(Q=(2^\kappa-1)a\)
+over \(\overline K\). Then \(U=2^{-\kappa}\), and varying \(Q\)
+gives a simple zero of \(1-T^\kappa U\) at a point where \(v/q\)
+and \(T\) are units. The orders \(b,\gamma\) are coprime.
+Constants give zero by purity.
+\end{proof}
+
+In dimensions three and four one may take \(b=\gamma=1\).
+For \(q=x^2+y^2+z^2\), take
+\(p=(1+x)^3(x/q)(1-(1+x)^2x^2/q)\), with \(\Lq(xp)=2/15\).
+For \(q=x^2+y^2+z^2+w^2\), take
+\[
+ p=(1+x)^2\frac{x}{q}
+       \left(1-(1+x)\frac{x^2+y^2}{q}\right),\qquad
+ \Lq(xp)=\frac1{12}.
+\]
 
 \section{A test for a fixed regular multiplier}\label{sec:tail}
 
@@ -445,6 +501,67 @@ For the uniform ternary phase \(F=F_{1,1,2}\), the multiplier
 vanish for all \(m\ge3\). Its rational test is
 \((4(X-3)+15)/(4X+3)-1=0\), with the cancellation at \(m=3\)
 given directly by \eqref{eq:moments}.
+
+\subsection*{A finite test throughout the block-invariant ring}
+
+\begin{proposition}\label{prop:recurrence}
+For any fixed \(f\in K[q,q^{-1},S]\) and \(h\in\mathcal O(X_q)\),
+the sequence \(a_m=\Lq(hf^m)\) satisfies a computable recurrence
+with polynomial coefficients in \(m\). From this recurrence one
+obtains a finite test for eventual vanishing. The procedure is
+effective with the coefficients given in a finitely generated
+field presented over \(\mathbb Q\). This also tests eventual
+vanishing for every multiplier in a specified finite-dimensional
+space, by testing a basis.
+\end{proposition}
+
+\begin{proof}
+Use \eqref{eq:average} to replace \(h\) by its block average.
+In the next formula \(u\) denotes the Laurent variable \(q\).
+Put \(B_M(t)=\sum_{j\ge0}M t^j/(M+j)\). By \eqref{eq:beta},
+\(\sum_{m\ge0}a_m z^m\) is the formal double residue of
+\[
+ V=\frac{h(u,t^{-2})B_M(t)}{ut\bigl(1-zf(u,t^{-2})\bigr)} .
+\]
+Here the denominator is expanded in \(z\) first, and the residue
+takes the coefficient of \(u^{-1}t^{-1}\).
+The factor \(B_M\) supplies \(M/(M+2j)\) for each \(S^j\).
+
+We use Lipshitz's elimination argument for residues, in the form
+described by Chyzak \cite[\S2.2]{Chyzak}. The equation
+\(t B_M'+M B_M=M/(1-t)\) shows that derivatives of \(V\) are
+rational linear combinations of \(1,B_M\).
+Choose a common polynomial denominator \(D\) for the two
+coefficients of \(V\) and those of \(B_M'\).
+The expressions \(z^c\partial_z^i\partial_u^j\partial_t^k V\)
+with \(c+i+j+k\le n\) can all be put over \(D^{n+1}\),
+with numerator pairs of degree \(O(n)\). There are on the order
+of \(n^4\) expressions and only \(O(n^3)\) numerator coefficients.
+Increasing \(n\) and solving linear systems therefore yields
+a nonzero operator \(L\) annihilating \(V\).
+
+Write \(L=\sum_{j,k}\partial_u^j\partial_t^k L_{j,k}(z,\partial_z)\)
+and let \((j_0,k_0)\) be the lexicographically first nonzero
+coefficient. Multiply \(LV=0\) by \(u^{j_0}t^{k_0}\) and take
+the double residue. Moving the derivatives onto the monomial
+kills the other terms and shows \(L_{j_0,k_0}\sum a_m z^m=0\).
+All rational expressions and derivatives can be expanded in the
+iterated Laurent series field \(K((t))((u))((z))\), where formal
+residues of derivatives in the corresponding variable vanish.
+
+Taking coefficients gives a nontrivial recurrence
+\(\sum_{j=0}^d p_j(m)a_{m+j}=0\) for all sufficiently large
+\(m\), with \(p_0p_d\ne0\) after dropping unused shifts.
+Choose \(m_0\) in that range beyond the nonnegative integer roots
+of both endpoint coefficients. For an effective bound, take a
+nonzero rational coordinate polynomial of their product in a
+\(\mathbb Q\)-basis of the span of its coefficients. Its integer
+roots include every integer root of that product. The sequence is eventually zero
+exactly when \(a_{m_0},\ldots,a_{m_0+d-1}\) all vanish.
+The leading coefficient propagates zero forward and the trailing
+coefficient propagates eventual zero backward. For \(d=0\), the
+sequence vanishes from \(m_0\).
+\end{proof}
 
 \section{Pole order and another witness}\label{sec:poles}
 
@@ -526,16 +643,220 @@ The upper index is nonnegative once
 eventually vanishes, while \(q^M\) detects all orders.
 \end{proof}
 
+\section{Instability and eventual marked vanishing}\label{sec:nullcone}
+
+Let \(\mathcal P\) be the pure phases in \(\mathcal O(X_q)\), and let
+\(\mathcal E\subseteq\mathcal P\) consist of those \(f\) for which
+\(\Lq(h f^m)=0\) for all sufficiently large \(m\), for each fixed
+regular \(h\). The cutoff may depend on \(h\).
+Let \(\mathcal N\) be the geometric nullcone on the same ring.
+Thus \(f\in\mathcal N\) if \(0\) belongs to the
+\(G_q(\overline K)\)-orbit closure of \(f\) in a finite-dimensional
+rational \(G_{q,\overline K}\)-module containing it. This condition
+is independent of the module, since linear subspaces in a larger
+module are closed.
+
+\begin{lemma}[Instability implies eventual vanishing]\label{lem:unstable}
+One has \(\mathcal N\subseteq\mathcal E\). If a destabilizing
+one-parameter subgroup gives a nonzero \(f\) least weight
+\(\delta>0\) and a nonzero \(h\) least weight \(b\), the marked
+moment vanishes whenever \(m\delta+b>0\).
+\end{lemma}
+
+\begin{proof}
+This is the weight argument in Long's instability lemma
+\cite[Lem.~2.1]{Long}. Over \(\overline K\), the affine
+Hilbert--Mumford criterion supplies a one-parameter subgroup taking
+a nonzero \(f\in\mathcal N\) to zero \cite[p.~1]{Kempf}.
+All its weights on \(f\) are then positive. Every weight in \(h f^m\)
+is at least \(b+m\delta\), and trace invariance kills nonzero weights.
+For \(h=1\) this gives purity at every positive order. Scalar extension
+preserves the trace, so these equalities descend to \(K\).
+The cases \(f=0\) or \(h=0\) are immediate.
+\end{proof}
+
+\begin{corollary}\label{cor:nullcone}
+For \(N\le2\), \(\mathcal N=\mathcal E=\mathcal P\).
+For \(N\ge3\), there are strict inclusions
+\[
+             \mathcal N\subsetneq\mathcal E\subsetneq\mathcal P.
+\]
+Both differences contain explicit phases that are geometrically nonpower
+up to units.
+\end{corollary}
+
+\begin{proof}
+In dimensions one and two, the Laurent constant-term criterion in
+Section~\ref{sec:positive} separates the support of every nonzero
+pure phase from the origin over \(\overline K\). A separating
+integral covector gives a destabilizing cocharacter. In dimension
+two the weight map \((i,j)\mapsto(j-i,-i-j)\) is invertible over
+\(\mathbb Q\), so a separating covector for the Laurent exponents
+gives one for the \(G_q\)-weights after clearing denominators.
+This proves \(\mathcal P\subseteq\mathcal N\) there.
+
+For \(N\ge3\), \eqref{eq:witness} gives a pure phase outside
+\(\mathcal E\). For the other strict inclusion take
+\[
+             G=F_{M+1,M,2M+1}.
+\]
+The exponents \(M,2M+1\) are coprime, so the two vanishing orders
+in Section~\ref{sec:endpoint} exclude powers up to units.
+The pure binomial coefficient in \eqref{eq:moments} is zero at
+every positive order. By \eqref{eq:average}, it suffices for eventual
+vanishing to consider each term \(q^\ell S^j\) of the averaged
+multiplier. For fixed \(\ell,j\) and large \(m\), this term is in
+the range of \eqref{eq:moments} and its lower index exceeds the
+nonnegative upper index by \(m+M+2j-\ell>0\). Thus \(G\in\mathcal E\).
+
+To see that \(G\) is outside the nullcone, put
+\(L_\ell(f)=\Lq(q^\ell f)\) and \(d=4M+1\).
+For the pullback action \((g,s)\cdot f(v)=f(s^{-1}g^{-1}v)\),
+one has \(L_\ell((g,s)\cdot f)=s^{2\ell}L_\ell(f)\).
+Hence
+\[
+           L_{M+1}(f)^d L_{-d}(f)^{M+1}
+\]
+is a homogeneous invariant polynomial on each finite-dimensional
+module. On \(G\), the two linear factors are the traces of the
+lowest and highest Laurent coefficients, respectively:
+\[
+         L_{M+1}(G)=\Lq((1-S)^{2M+1}), \qquad
+         L_{-d}(G)=-\Lq(S^{2M+1}).
+\]
+Both are nonzero by \eqref{eq:beta}. The invariant is therefore
+nonzero on \(G\) and zero at the origin, proving
+\(G\notin\mathcal N\).
+\end{proof}
+
+Over a formally real field, phases with at most two Laurent powers
+of \(q\) already admit a support test. A nonzero phase of this kind
+is pure exactly when its exponents are all strictly positive or
+all strictly negative. Indeed, if one exponent is zero, the
+constant term of the square is the square of its coefficient
+in \(K[S]\). If the exponents are \(a<0<b\), the power
+\(2(b-a)\) has constant term a positive integer times \((P^b Q^{-a})^2\), where \(P,Q\)
+are the coefficient polynomials of \(q^a,q^b\). In both cases its trace is
+nonzero. To see this over any ordered ground field, the rational
+Gram matrix of \eqref{eq:beta} on any finite set of powers of \(S\)
+is positive definite over \(\mathbb R\), so its rational
+diagonalization has positive entries in every ordering.
+For one-sided support the scalar torus gives a destabilizing
+cocharacter. The same test therefore characterizes eventual
+marked vanishing among the pure phases in this slice.
+
+\section{Other norm traces}\label{sec:hermitian}
+
+Suppose a connected reductive subgroup preserving \(q\), together
+with scalars, acts transitively on \(X_q\) over \(\overline K\).
+Its normalized trace equals \(\Lq\).
+The orthogonal trace is invariant under all isometries by uniqueness,
+and complete reducibility gives uniqueness for the smaller group.
+
+\begin{corollary}\label{cor:hermitian}
+Let \(h\) be a nondegenerate Hermitian form of positive rank \(n\)
+over a quadratic \'{e}tale algebra or a quaternion algebra with its
+canonical involution, over a characteristic-zero field \(K\).
+On the open set \(h(v,v)\ne0\), take the normalized trace of the
+isometry group and the scalar torus. In the quadratic \'{e}tale
+case its kernel is Mathieu--Zhao exactly for \(n=1\).
+In the quaternion case the kernel always fails to be Mathieu--Zhao.
+In each failure case, a geometrically nonpower pure phase and a
+linear polynomial detect every positive order over \(K\).
+\end{corollary}
+
+\begin{proof}
+Write \(q(v)=h(v,v)\in K\). Over \(\overline K\), the quadratic
+\'{e}tale algebra splits into two factors exchanged by the involution.
+The space becomes a vector space and its dual, with norm
+\(q(x,y)=y(x)\). The isometry group is \(\mathrm{GL}_n\), which
+acts transitively on pairs with a given nonzero value of \(y(x)\):
+choose a basis with first vector \(x\) and the other vectors in
+\(\ker y\).
+
+In the quaternion case the split involution is
+\(B\mapsto J^{-1}B^{\mathsf T}J\) on two-by-two matrices, where
+\(J=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)\).
+Write \(J_n\) for its block diagonal repetition and \(H\) for the
+matrix of \(h\). The Hermitian identity says
+\(\Omega=J_nH\) is a nondegenerate alternating matrix. A vector
+becomes a matrix with columns \(x,y\); its norm is
+\(x^{\mathsf T}\Omega y\), and the isometry group is
+\(\mathrm{Sp}(\Omega)\). If this pairing is nonzero, the pair
+extends to a symplectic basis after rescaling one vector.
+This proves transitivity on each nonzero norm level.
+In either case scalars move between such levels over \(\overline K\).
+
+These split descriptions also show that \(q\) is nondegenerate
+of dimension \(2n\) or \(4n\), respectively, and that the isometry
+groups are connected reductive. The trace equality now gives the
+assertions by Theorem~\ref{thm:main} and
+Proposition~\ref{prop:linear}.
+\end{proof}
+
+\subsection*{The norm-one level of an isotropic form}
+
+\begin{corollary}\label{cor:norm-one}
+Let \(q\) be isotropic of dimension \(N\ge3\) over \(K\). The
+normalized \(\SO(q)\)-trace on \(q=1\) has a geometrically nonpower
+pure phase with a fixed polynomial multiplier detecting every order.
+\end{corollary}
+
+\begin{proof}
+Write \(q=2xy+B\), set \(M=N-2\), \(S=B\) on the level \(q=1\),
+and put \(T=1+x\). Use the phase
+\[
+             P=xT^M\bigl(2T^2 y-2-x\bigr)^{M+1}.
+\]
+The hyperbolic torus gives opposite weights to \(x,y\). The
+rank-two derivations in Section~\ref{sec:beta} restrict to \(q=1\)
+and give the same moments for \(S\). Thus on polynomials in
+\(x,y\), the trace is constant term in \(x\) after substituting
+\(y=(1-t^2)/(2x)\), followed by integration against
+\(M t^{M-1}\,dt\). Indeed only equal exponents of \(x,y\)
+survive, and \(xy=(1-S)/2\).
+
+After the substitution, \(P=x^{-M}T^M(1-T^2t^2)^{M+1}\).
+The endpoint calculation of Section~\ref{sec:endpoint}, now with
+\(x\) as the Laurent variable, gives
+\[
+  \Lambda(P^m)=0,\qquad
+  \Lambda(x^M P^m)
+     =M\int_0^1 w^{M-1}(1-w^2)^{(M+1)m}\,dw\ne0 .
+\]
+For the nonpower assertion use \(x=0\), \(B=1\), \(y\ne1\)
+over \(\overline K\). The condition \(B=1\) has nonzero differential
+in the complementary block, so \(x\) is a local parameter in
+a transverse direction and \(P\) has order one.
+\end{proof}
+
+For a positive-definite real form, the norm-one trace is spherical
+averaging. The real sphere is Zariski dense in the level, so the
+trace of the square of a nonzero real regular function is
+strictly positive. The real kernel is therefore Mathieu--Zhao,
+while Corollary~\ref{cor:norm-one} gives failure after extending
+the same form to \(\mathbb C\) in dimension at least three.
+
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
+\bibitem{Chyzak}
+F. Chyzak, \emph{The ABC of Creative Telescoping: Algorithms, Bounds,
+Complexity}, Habilitation memoir, 2014.
+\href{https://mathexp.eu/chyzak/Publications/Chyzak-2014-ACT.pdf}{Author's manuscript}.
+
 \bibitem{DvK}
 J.~J. Duistermaat and W. van der Kallen,
 \emph{Constant terms in powers of a Laurent polynomial},
 Indag. Math. (N.S.) \textbf{9} (1998), no.~2, 221--231.
 \href{https://doi.org/10.1016/S0019-3577(98)80020-7}{DOI: 10.1016/S0019-3577(98)80020-7}.
+
+\bibitem{Kempf}
+G. Kempf, \emph{Instability in invariant theory}, original preprint,
+transcription by I. Morrison, 2018.
+\href{https://arxiv.org/abs/1807.02890v1}{arXiv:1807.02890v1}.
 
 \bibitem{Long}
 C.~D. Long,

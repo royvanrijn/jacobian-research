@@ -153,6 +153,47 @@ private theorem exists_nonisotropic_perpendicular [DecidableEq J] (d : J → Kˣ
     · exact ⟨v, hv, hv0⟩
   · exact ⟨u, hu, hu0⟩
 
+omit [CharZero K] in
+private theorem reflection_sub_sends [DecidableEq J] (d : J → Kˣ) (x y : J → K)
+    (hxy : diagonalNorm d x = diagonalNorm d y) (hminus : diagonalNorm d (x - y) ≠ 0) :
+    reflection d (x - y) *ᵥ x = y := by
+  rw [reflection_action, diagonalPair_comm d (x - y) x, diagonalPair_sub_right]
+  have he : diagonalNorm d (x - y) = 2 * (diagonalNorm d x - diagonalPair d x y) := by
+    rw [diagonalNorm_sub, ← hxy]
+    ring
+  change x + ((-2 / diagonalNorm d (x - y)) * (diagonalNorm d x - diagonalPair d x y)) •
+    (x - y) = y
+  have hc : (-2 / diagonalNorm d (x - y)) * (diagonalNorm d x - diagonalPair d x y) = -1 := by
+    field_simp
+    rw [he]
+  rw [hc]
+  ext k
+  simp
+
+/-- Transitivity of the full orthogonal group on the nonzero norm
+levels, including rank one. -/
+theorem exists_orthogonal_same_norm [DecidableEq J] (d : J → Kˣ) (x y : J → K)
+    (hxy : diagonalNorm d x = diagonalNorm d y) (hy : diagonalNorm d y ≠ 0) :
+    ∃ T : Matrix J J K, (∀ v, diagonalNorm d (T *ᵥ v) = diagonalNorm d v) ∧ T *ᵥ x = y := by
+  by_cases hminus : diagonalNorm d (x - y) = 0
+  · have hplus : diagonalNorm d (x + y) ≠ 0 := by
+      intro hz
+      rw [diagonalNorm_sub, hxy] at hminus
+      rw [diagonalNorm_add, hxy] at hz
+      exact hy (by linear_combination (hminus + hz) / 4)
+    have hneg : diagonalNorm d (-y) = diagonalNorm d y := by
+      unfold diagonalNorm diagonalPair
+      simp
+    have hx' : reflection d (x + y) *ᵥ x = -y := by
+      simpa only [sub_neg_eq_add] using reflection_sub_sends d x (-y) (hxy.trans hneg.symm)
+        (by simpa only [sub_neg_eq_add] using hplus)
+    refine ⟨reflection d y * reflection d (x + y), ?_, ?_⟩
+    · intro v
+      rw [← Matrix.mulVec_mulVec, reflection_preserves d y _ hy, reflection_preserves d _ _ hplus]
+    · rw [← Matrix.mulVec_mulVec, hx', Matrix.mulVec_neg, reflection_self d y hy, neg_neg]
+  · exact ⟨reflection d (x - y), fun v ↦ reflection_preserves d _ v hminus,
+      reflection_sub_sends d x y hxy hminus⟩
+
 /-- The special orthogonal action is transitive on each nonzero norm
 level for every diagonal nondegenerate form of dimension at least two. -/
 theorem exists_specialOrthogonal_same_norm [DecidableEq J] (d : J → Kˣ) (x y : J → K)
@@ -166,19 +207,7 @@ theorem exists_specialOrthogonal_same_norm [DecidableEq J] (d : J → Kˣ) (x y 
       rw [diagonalNorm_add, hxy] at hplus
       rw [diagonalNorm_sub, hxy] at hz
       exact hy (by linear_combination (hplus + hz) / 4)
-    have hx' : reflection d (x - y) *ᵥ x = y := by
-      rw [reflection_action, diagonalPair_comm d (x - y) x, diagonalPair_sub_right]
-      have he : diagonalNorm d (x - y) = 2 * (diagonalNorm d x - diagonalPair d x y) := by
-        rw [diagonalNorm_sub, ← hxy]
-        ring
-      change x + ((-2 / diagonalNorm d (x - y)) * (diagonalNorm d x - diagonalPair d x y)) •
-        (x - y) = y
-      have hc : (-2 / diagonalNorm d (x - y)) * (diagonalNorm d x - diagonalPair d x y) = -1 := by
-        field_simp
-        rw [he]
-      rw [hc]
-      ext k
-      simp
+    have hx' := reflection_sub_sends d x y hxy hminus
     obtain ⟨w, hperp, hw⟩ := exists_nonisotropic_perpendicular d y hr hy
     refine ⟨reflection d w * reflection d (x - y), ?_, ?_, ?_⟩
     · rw [Matrix.det_mul, reflection_det d w hw, reflection_det d _ hminus]

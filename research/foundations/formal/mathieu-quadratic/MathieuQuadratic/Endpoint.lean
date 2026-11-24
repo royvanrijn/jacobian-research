@@ -124,6 +124,17 @@ private theorem betaIntegral_succ (M n : ℕ) (hM : 0 < M) :
   rw [hv, sub_eq_zero] at he
   exact he
 
+/-- The recurrence of the beta integral in the exponent. -/
+theorem powerBetaMoment_succ (M k : ℕ) (hM : 0 < M) :
+    ((M : ℚ) + 2 * (k + 1 : ℕ)) * powerBetaMoment M (k + 1) =
+      (2 * (k + 1 : ℕ) : ℚ) * powerBetaMoment M k := by
+  have h := betaIntegral_succ M k hM
+  rw [show betaIntegral M (k + 1) = (powerBetaMoment M (k + 1) : ℝ) from
+        (powerBetaMoment_cast_eq_integral M (k + 1) hM).symm,
+      show betaIntegral M k = (powerBetaMoment M k : ℝ) from
+        (powerBetaMoment_cast_eq_integral M k hM).symm] at h
+  exact_mod_cast h
+
 open Polynomial in
 /-- The factorial and rising-factorial evaluation of the beta moment. -/
 theorem powerBetaMoment_closed_form (M k : ℕ) (hM : 0 < M) :

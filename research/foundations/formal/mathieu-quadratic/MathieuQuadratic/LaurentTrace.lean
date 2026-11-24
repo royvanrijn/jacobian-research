@@ -126,4 +126,66 @@ theorem binary_mathieu_of_character_weights {L : Type*} [Field L] [Algebra K L]
     (isMathieu_of_laurent_equiv_trace_eq (extendTrace L trace) e ht
       (laurentSeparation_of_complex dvk))
 
+section SplitTori
+
+def scalarTwo : Kˣ := Units.mk0 2 two_ne_zero
+
+def inverseTorusTwo : Fin 2 → Kˣ :=
+  ![scalarTwo, scalarTwo⁻¹]
+
+/-- A normalized trace invariant under the scalar torus on the split
+unary chart is exactly Laurent constant coefficient. -/
+theorem splitUnaryTrace_eq_laurentCT (a : Kˣ)
+    (trace : SplitComplement a (fun _ : Fin 1 ↦ 2) →ₗ[K] K) (hn : trace 1 = 1)
+    (scalar : ∀ f, trace (splitDiagonalPullback a (fun _ : Fin 1 ↦ 2) (fun _ ↦ scalarTwo) f) =
+      trace f) :
+    trace.comp (splitComplementEquivLaurent a (fun _ : Fin 1 ↦ 2) (by simp)).symm.toLinearMap =
+      laurentCT := by
+  let e := splitComplementEquivLaurent a (fun _ : Fin 1 ↦ 2) (by simp)
+  apply unaryTrace_eq_laurentCT
+  · simpa using hn
+  · intro g
+    have ht := scalar (e.symm (AddMonoidAlgebra.single g 1))
+    change trace (splitDiagonalPullback a (fun _ : Fin 1 ↦ 2) (fun _ ↦ scalarTwo)
+      ((splitComplementEquivLaurent a (fun _ : Fin 1 ↦ 2) (by simp)).symm
+        (AddMonoidAlgebra.single g 1))) = _ at ht
+    rw [splitDiagonalPullback_character, Fin.prod_univ_one, Units.val_zpow_eq_zpow_val] at ht
+    simpa only [e, scalarTwo, Units.val_mk0, LinearMap.comp_apply, AlgEquiv.toLinearMap_apply,
+      map_smul, smul_eq_mul] using ht
+
+/-- The split binary scalar torus and inverse rotation torus give
+the two characters i + j and i − j. -/
+theorem splitBinaryTrace_eq_laurentCT (a : Kˣ)
+    (trace : SplitComplement a (fun _ : Fin 2 ↦ 1) →ₗ[K] K) (hn : trace 1 = 1)
+    (scalar : ∀ f, trace (splitDiagonalPullback a (fun _ : Fin 2 ↦ 1) (fun _ ↦ scalarTwo) f) =
+      trace f)
+    (rotation : ∀ f, trace (splitDiagonalPullback a (fun _ : Fin 2 ↦ 1) inverseTorusTwo f) =
+      trace f) :
+    trace.comp (splitComplementEquivLaurent a (fun _ : Fin 2 ↦ 1) (by simp)).symm.toLinearMap =
+      laurentCT := by
+  let e := splitComplementEquivLaurent a (fun _ : Fin 2 ↦ 1) (by simp)
+  apply binaryTrace_eq_laurentCT
+  · simpa using hn
+  · intro g
+    have ht := scalar (e.symm (AddMonoidAlgebra.single g 1))
+    change trace (splitDiagonalPullback a (fun _ : Fin 2 ↦ 1) (fun _ ↦ scalarTwo)
+      ((splitComplementEquivLaurent a (fun _ : Fin 2 ↦ 1) (by simp)).symm
+        (AddMonoidAlgebra.single g 1))) = _ at ht
+    rw [splitDiagonalPullback_character, Fin.prod_univ_two, Units.val_mul,
+      Units.val_zpow_eq_zpow_val, Units.val_zpow_eq_zpow_val, ← zpow_add₀] at ht
+    · simpa only [e, scalarTwo, Units.val_mk0, LinearMap.comp_apply, AlgEquiv.toLinearMap_apply, map_smul, smul_eq_mul] using ht
+    · exact two_ne_zero
+  · intro g
+    have ht := rotation (e.symm (AddMonoidAlgebra.single g 1))
+    change trace (splitDiagonalPullback a (fun _ : Fin 2 ↦ 1) inverseTorusTwo
+      ((splitComplementEquivLaurent a (fun _ : Fin 2 ↦ 1) (by simp)).symm
+        (AddMonoidAlgebra.single g 1))) = _ at ht
+    rw [splitDiagonalPullback_character, Fin.prod_univ_two, Units.val_mul,
+      Units.val_zpow_eq_zpow_val, Units.val_zpow_eq_zpow_val] at ht
+    simp only [inverseTorusTwo, Matrix.cons_val_zero, Matrix.cons_val_one, Units.val_inv_eq_inv_val,
+      inv_zpow, scalarTwo, Units.val_mk0, ← zpow_neg, ← zpow_add₀ (two_ne_zero : (2 : K) ≠ 0), ← sub_eq_add_neg] at ht
+    simpa only [e, LinearMap.comp_apply, AlgEquiv.toLinearMap_apply, map_smul, smul_eq_mul] using ht
+
+end SplitTori
+
 end MathieuQuadratic
