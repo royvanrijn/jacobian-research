@@ -1,0 +1,434 @@
+{
+  "python": "3.12.3",
+  "inputs_sha256": {
+    "verify_heegner_core_completion.py": "7937349a2ecb645d145fae8d95e41e5a5f1e251e5a1a1d92907e773b20e2ca8b",
+    "verify_minus163_core_bridge.cpp": "d86de18b4fd2389ccf546a42466fe6643d9ffbbb1e20f84c5b4d3e033dafad9e",
+    "verify_heegner_core_bounds.py": "a58476bbcb07d7fd28c478c51557b80d265c8b7defbe601b65b891ae2644970d",
+    "verify_primitive_norm_minus11.py": "12c93dfc0335042f340189e9d6e1af526357ecbec80ec91479bed59af83f0629",
+    "heegner_core_sumset_checks.json": "aa8d00002ed710fcd448118676f97bc9f0ac3aeca87f77ca775607d520296a10",
+    "sources/jaeschke-strong-pseudoprimes-1993.pdf": "0e50aa7ee1b6b76ac4b3753c198e6b8e913bafc85254ddca53d0d5b1d1f69adc"
+  },
+  "thresholds_sha256": "90dbfcf314973db11ad69a36896bc36d778842a2d54eae28a03a0e627d980b8d",
+  "prime_cap": 33554432,
+  "scale": 1048576,
+  "threshold_minima": {
+    "34": 118302318,
+    "35": 172351020,
+    "36": 246391782,
+    "37": 354765276,
+    "38": 469201669,
+    "39": 565133482,
+    "40": 678556351,
+    "41": 970345343,
+    "42": 1379605385
+  },
+  "bins": [
+    {
+      "k": 34,
+      "targets": 9547936,
+      "visited_prefixes": 22748678,
+      "largest_smaller_summand": 4789,
+      "summand_checksum": 2482484296,
+      "first_failure": 0
+    },
+    {
+      "k": 35,
+      "targets": 4057387,
+      "visited_prefixes": 9856437,
+      "largest_smaller_summand": 5351,
+      "summand_checksum": 1065411615,
+      "first_failure": 0
+    },
+    {
+      "k": 36,
+      "targets": 1345407,
+      "visited_prefixes": 3694456,
+      "largest_smaller_summand": 4751,
+      "summand_checksum": 354387923,
+      "first_failure": 0
+    },
+    {
+      "k": 37,
+      "targets": 285955,
+      "visited_prefixes": 1129031,
+      "largest_smaller_summand": 3581,
+      "summand_checksum": 74752675,
+      "first_failure": 0
+    },
+    {
+      "k": 38,
+      "targets": 78489,
+      "visited_prefixes": 579269,
+      "largest_smaller_summand": 3301,
+      "summand_checksum": 20467141,
+      "first_failure": 0
+    },
+    {
+      "k": 39,
+      "targets": 53275,
+      "visited_prefixes": 549262,
+      "largest_smaller_summand": 3079,
+      "summand_checksum": 14047311,
+      "first_failure": 0
+    },
+    {
+      "k": 40,
+      "targets": 37045,
+      "visited_prefixes": 545226,
+      "largest_smaller_summand": 2809,
+      "summand_checksum": 9628103,
+      "first_failure": 0
+    },
+    {
+      "k": 41,
+      "targets": 1077,
+      "visited_prefixes": 376837,
+      "largest_smaller_summand": 2719,
+      "summand_checksum": 289821,
+      "first_failure": 0
+    },
+    {
+      "k": 42,
+      "targets": 1,
+      "visited_prefixes": 364713,
+      "largest_smaller_summand": 499,
+      "summand_checksum": 499,
+      "first_failure": 0
+    }
+  ],
+  "certified_witness_targets": 15406572,
+  "common_tail_minus7": {
+    "onset": 1329227995784915872903807060280344576,
+    "sieve_upper_bound": "46586436536613/96207267430400",
+    "inert_mass_bound": "65962036854242603929699/141039193501564804268032"
+  },
+  "gap_structure": {
+    "rows": [
+      {
+        "p": 19,
+        "largest": 20,
+        "gaps": 2,
+        "admitted": 10,
+        "inert_supported": 7,
+        "observed_inert_gaps": 1,
+        "closure_baseline_mean": "1"
+      },
+      {
+        "p": 43,
+        "largest": 74,
+        "gaps": 10,
+        "admitted": 37,
+        "inert_supported": 28,
+        "observed_inert_gaps": 10,
+        "closure_baseline_mean": "66/7"
+      },
+      {
+        "p": 67,
+        "largest": 138,
+        "gaps": 21,
+        "admitted": 68,
+        "inert_supported": 53,
+        "observed_inert_gaps": 17,
+        "closure_baseline_mean": "817/44"
+      },
+      {
+        "p": 163,
+        "largest": 992,
+        "gaps": 67,
+        "admitted": 493,
+        "inert_supported": 384,
+        "observed_inert_gaps": 62,
+        "closure_baseline_mean": "25429/415"
+      }
+    ],
+    "split_bearing_failures": [
+      {
+        "p": 19,
+        "gap": 20,
+        "inert_part": 4,
+        "split_prime": 5,
+        "smaller_summands": [
+          1,
+          5,
+          7
+        ],
+        "complementary_forbidden_divisors": [
+          19,
+          3,
+          13
+        ]
+      },
+      {
+        "p": 67,
+        "gap": 68,
+        "inert_part": 4,
+        "split_prime": 17,
+        "smaller_summands": [
+          1,
+          17,
+          19,
+          23,
+          29
+        ],
+        "complementary_forbidden_divisors": [
+          67,
+          3,
+          7,
+          3,
+          3
+        ]
+      },
+      {
+        "p": 67,
+        "gap": 114,
+        "inert_part": 6,
+        "split_prime": 19,
+        "smaller_summands": [
+          1,
+          17,
+          19,
+          23,
+          29,
+          37,
+          47
+        ],
+        "complementary_forbidden_divisors": [
+          113,
+          97,
+          5,
+          7,
+          5,
+          7,
+          67
+        ]
+      },
+      {
+        "p": 67,
+        "gap": 116,
+        "inert_part": 4,
+        "split_prime": 29,
+        "smaller_summands": [
+          1,
+          17,
+          19,
+          23,
+          29,
+          37,
+          47
+        ],
+        "complementary_forbidden_divisors": [
+          5,
+          3,
+          97,
+          3,
+          3,
+          79,
+          3
+        ]
+      },
+      {
+        "p": 67,
+        "gap": 138,
+        "inert_part": 6,
+        "split_prime": 23,
+        "smaller_summands": [
+          1,
+          17,
+          19,
+          23,
+          29,
+          37,
+          47,
+          59
+        ],
+        "complementary_forbidden_divisors": [
+          137,
+          11,
+          7,
+          5,
+          109,
+          101,
+          7,
+          79
+        ]
+      },
+      {
+        "p": 163,
+        "gap": 164,
+        "inert_part": 4,
+        "split_prime": 41,
+        "smaller_summands": [
+          1,
+          41,
+          43,
+          47,
+          53,
+          61,
+          71
+        ],
+        "complementary_forbidden_divisors": [
+          163,
+          3,
+          11,
+          3,
+          3,
+          103,
+          3
+        ]
+      },
+      {
+        "p": 163,
+        "gap": 188,
+        "inert_part": 4,
+        "split_prime": 47,
+        "smaller_summands": [
+          1,
+          41,
+          43,
+          47,
+          53,
+          61,
+          71,
+          83
+        ],
+        "complementary_forbidden_divisors": [
+          11,
+          3,
+          5,
+          3,
+          3,
+          127,
+          3,
+          3
+        ]
+      },
+      {
+        "p": 163,
+        "gap": 332,
+        "inert_part": 4,
+        "split_prime": 83,
+        "smaller_summands": [
+          1,
+          41,
+          43,
+          47,
+          53,
+          61,
+          71,
+          83,
+          97,
+          113,
+          131,
+          151
+        ],
+        "complementary_forbidden_divisors": [
+          331,
+          3,
+          17,
+          3,
+          3,
+          271,
+          3,
+          3,
+          5,
+          3,
+          3,
+          181
+        ]
+      },
+      {
+        "p": 163,
+        "gap": 344,
+        "inert_part": 8,
+        "split_prime": 43,
+        "smaller_summands": [
+          1,
+          41,
+          43,
+          47,
+          53,
+          61,
+          71,
+          83,
+          97,
+          113,
+          131,
+          151,
+          167
+        ],
+        "complementary_forbidden_divisors": [
+          7,
+          3,
+          7,
+          3,
+          3,
+          283,
+          3,
+          3,
+          13,
+          3,
+          3,
+          193,
+          3
+        ]
+      },
+      {
+        "p": 163,
+        "gap": 568,
+        "inert_part": 8,
+        "split_prime": 71,
+        "smaller_summands": [
+          1,
+          41,
+          43,
+          47,
+          53,
+          61,
+          71,
+          83,
+          97,
+          113,
+          131,
+          151,
+          167,
+          173,
+          179,
+          197,
+          199,
+          223,
+          227,
+          251,
+          263,
+          281
+        ],
+        "complementary_forbidden_divisors": [
+          3,
+          17,
+          3,
+          521,
+          5,
+          3,
+          7,
+          5,
+          3,
+          5,
+          19,
+          3,
+          401,
+          5,
+          389,
+          7,
+          3,
+          3,
+          11,
+          317,
+          5,
+          7
+        ]
+      }
+    ],
+    "naive_baseline_mean": "28281513/364820",
+    "closure_baseline_mean": "11538497/127820",
+    "closure_baseline_probability_at_least_observed": "13101991165758701957012515664843862017170807/20525165971281084097022698422578399121322900"
+  }
+}

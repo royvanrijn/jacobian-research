@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "python": "3.12.14",
+  "arithmetic": "Exact integers and rational probabilities; standard library only.",
+  "source_ledger_sha256": "14c6b17c2ecf2234aae0b6c0e70a900bbfc86c19e77c3e168833e4c42e26eaaa",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "research/arithmetic/PRIMITIVE_NORM_TARGET_FACTOR_REFINEMENT.md",
+      "scope": "T.1--T.12: subgroup target products, enlarged-order overlap densities, compressed endpoints, exact maximal order, and normalization limits.",
+      "sha256": "e5a221a53015327a3db8be9d0040e37c865526e5aa01dd06f9265df157f3ce31"
+    },
+    {
+      "role": "checker",
+      "path": "research/arithmetic/verify_primitive_norm_target_factor_refinement.py",
+      "scope": "Deterministic finite input domains are contained in this exact standard-library checker.",
+      "sha256": "07fa2692570d0e86053df59dd7da899f8ac67406fb4e548f58396a6208628bf6"
+    },
+    {
+      "role": "mixed_field_counting",
+      "path": "research/arithmetic/PRIMITIVE_NORM_DIFFERENT_FIELDS_CLASS_ERROR.md",
+      "scope": "D.7 subgroup cover, D.10 local probabilities, D.11 uniform marked sieve, D.15--D.16 complete remainder, D.19--D.21 classical counts and concrete admissibility.",
+      "sha256": "8dfb822a2f23d776af94e13634e4df33311b7084f260c566de31067b9408ce3b"
+    },
+    {
+      "role": "endpoint_cover",
+      "path": "research/arithmetic/PRIMITIVE_NORM_ENDPOINT_CLASS_ERROR.md",
+      "scope": "All-proper-subgroup stabilizer cap and fixed-order prime-class Mertens; endpoint marking and subgroup compression.",
+      "sha256": "14fe947c9b58a3db563903833d9494ce9b3b05314501621b7d9177bf6f2e1363"
+    },
+    {
+      "role": "class_number_three",
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "scope": "Discriminant minus23 has class group C3; concrete example only.",
+      "sha256": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5"
+    },
+    {
+      "role": "class_number_four",
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+      "scope": "Discriminant minus56 has class group C4 and chi8 detects class parity; concrete examples only.",
+      "sha256": "967eef97bc00525d1cd76a0c052c0cfb182c786a2d872240bc4ecf7e8ac1384c"
+    },
+    {
+      "role": "class_prime_primary",
+      "path": "research/arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf",
+      "scope": "Section2 part(5), Lemma2, equation(5.2), page15: fixed form-class prime count, inverse-class normalization and exponential error; actual retained statement reread.",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9"
+    },
+    {
+      "role": "genus_primary",
+      "path": "research/arithmetic/sources/ibukiyama-genus-characters-2303.14983v1.pdf",
+      "scope": "Proposition3.4 and Theorem3.5, printed/PDF pages12--14; prime-to-conductor ideal correspondence on page13. Actual retained statements and proof inspected; norm formula used only at good primes.",
+      "sha256": "298cdd2b42c1b589ed7b4036f45bde1b657e67bf981d8e68ca68747d1e9a6fa4"
+    }
+  ],
+  "checks": {
+    "local": {
+      "primes": [
+        3,
+        5,
+        7
+      ],
+      "targets": "Every residue modulo p^2",
+      "probabilities": [
+        "0",
+        "1/3",
+        "2/3",
+        "9/10",
+        "1"
+      ],
+      "normalized_shadow_cases": 332,
+      "rational_mark_ratio_cases": 1660
+    },
+    "finite_group_fibres": {
+      "groups": [
+        {
+          "cyclic_factors": [
+            2
+          ],
+          "relevant_subgroups": 0,
+          "nontrivial_sign_characters": 1,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            3
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 0,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            4
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 1,
+          "cases": 1
+        },
+        {
+          "cyclic_factors": [
+            5
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 0,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            6
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 1,
+          "cases": 1
+        },
+        {
+          "cyclic_factors": [
+            8
+          ],
+          "relevant_subgroups": 2,
+          "nontrivial_sign_characters": 1,
+          "cases": 2
+        },
+        {
+          "cyclic_factors": [
+            9
+          ],
+          "relevant_subgroups": 2,
+          "nontrivial_sign_characters": 0,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            10
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 1,
+          "cases": 1
+        },
+        {
+          "cyclic_factors": [
+            12
+          ],
+          "relevant_subgroups": 3,
+          "nontrivial_sign_characters": 1,
+          "cases": 3
+        },
+        {
+          "cyclic_factors": [
+            16
+          ],
+          "relevant_subgroups": 3,
+          "nontrivial_sign_characters": 1,
+          "cases": 3
+        },
+        {
+          "cyclic_factors": [
+            2,
+            2
+          ],
+          "relevant_subgroups": 0,
+          "nontrivial_sign_characters": 3,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            2,
+            4
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 3,
+          "cases": 3
+        },
+        {
+          "cyclic_factors": [
+            2,
+            6
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 3,
+          "cases": 3
+        },
+        {
+          "cyclic_factors": [
+            2,
+            8
+          ],
+          "relevant_subgroups": 2,
+          "nontrivial_sign_characters": 3,
+          "cases": 6
+        },
+        {
+          "cyclic_factors": [
+            3,
+            3
+          ],
+          "relevant_subgroups": 5,
+          "nontrivial_sign_characters": 0,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            4,
+            4
+          ],
+          "relevant_subgroups": 4,
+          "nontrivial_sign_characters": 3,
+          "cases": 12
+        },
+        {
+          "cyclic_factors": [
+            2,
+            2,
+            2
+          ],
+          "relevant_subgroups": 0,
+          "nontrivial_sign_characters": 7,
+          "cases": 0
+        },
+        {
+          "cyclic_factors": [
+            2,
+            2,
+            4
+          ],
+          "relevant_subgroups": 1,
+          "nontrivial_sign_characters": 7,
+          "cases": 7
+        }
+      ],
+      "character_subgroup_cases": 42,
+      "aligned_cases": 18,
+      "odd_index_cases": 6,
+      "inverse_pairs_counted": 108
+    },
+    "compression": {
+      "surjection_character_models": 40,
+      "proper_subgroup_cases": 71,
+      "profiles": [
+        [
+          2,
+          "1/4",
+          "1/4"
+        ],
+        [
+          2,
+          "1/4",
+          "1/8"
+        ],
+        [
+          3,
+          "1/3",
+          "1/6"
+        ],
+        [
+          5,
+          "2/5",
+          "1/5"
+        ]
+      ]
+    },
+    "concrete_examples": {
+      "unit_classes_mod56": [
+        1,
+        3,
+        5,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        51,
+        53,
+        55
+      ],
+      "minus56_markers": [
+        3,
+        5,
+        13,
+        19,
+        27,
+        45
+      ],
+      "minus7_overlap": [
+        3,
+        5,
+        13,
+        19,
+        27,
+        45
+      ],
+      "Gaussian_overlap": [
+        3,
+        19,
+        27
+      ],
+      "form_parity_cases": 128,
+      "endpoint_examples": [
+        {
+          "name": "minus23_Gaussian",
+          "delta": "1/3",
+          "beta": "1/6",
+          "cap": 1,
+          "relative_loglog_exponent": "7/6"
+        },
+        {
+          "name": "minus56_minus7",
+          "delta": "1/4",
+          "beta": "1/4",
+          "cap": 0,
+          "relative_loglog_exponent": "1/4"
+        },
+        {
+          "name": "minus56_Gaussian",
+          "delta": "1/4",
+          "beta": "1/8",
+          "cap": 0,
+          "relative_loglog_exponent": "1/8"
+        }
+      ]
+    },
+    "negative_controls": [
+      "Halve an aligned index-two obstruction density",
+      "Assign exact quarter density to an odd-index obstruction",
+      "Insert an exclusive-prime target factor in the shadow density",
+      "Retain a marker gain at a target-dividing opposite-inert prime",
+      "Replace descent to the doubled group by descent to the original group",
+      "Count oriented classes without dividing into inverse pairs"
+    ]
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "historical_priority": false,
+    "finite_controls_prove_prime_distribution": false,
+    "optimality_of_actual_class_error": false
+  },
+  "scope": "Complete stated finite domains. Distribution, all-target bounds and maximal-order limits are the written proof with the pinned primary statements."
+}

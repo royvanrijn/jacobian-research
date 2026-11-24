@@ -1,0 +1,91 @@
+{
+  "schema": "starred_dixmier_primary_coefficient_audit_source_ledger_v1",
+  "sources": [
+    {
+      "role": "written_coefficient_correction",
+      "path": "research/dixmier/dixmier-formal-lifting/STARRED_DIXMIER_PRIMARY_COEFFICIENT_AUDIT.md",
+      "sha256": "7b38e2f4bf73b94c3cc3ed0c973caa7166bb423c6f973870fa6342e581b6c125",
+      "exact_use": "CorrectNextOddCoefficient, exact H^2/H^3 witness, and strictly limited interpretation of the failed displayed deduction."
+    },
+    {
+      "role": "exact_symbolic_checker",
+      "path": "research/dixmier/dixmier-formal-lifting/verify_starred_dixmier_primary_coefficient_audit.py",
+      "sha256": "a8bc0a93ee40293c78a9d7341396947f10671cca82f7c5d50c01ecc19793e7db",
+      "exact_use": "Unrestricted polynomial identity in formal jet symbols; exact normal-order Weyl controls, including a real commutator 1/2 pair. Does not perform the separate analytic foundation review."
+    },
+    {
+      "role": "inspected_primary_version",
+      "path": "research/dixmier/dixmier-formal-lifting/sources/moskowicz-valqui-1401.5141v1.pdf",
+      "sha256": "c0df28098861e0e83118cb62ecdecab8fda4f73650e0eadb45b9d7dbd3a2dfd7",
+      "exact_use": "Proposition 2.6, printed pages 4-5, equations (2.2)-(2.3) and the next coefficient display. Rendered page inspected; normal order X^i Y^j and [Y,X]=1 retained."
+    },
+    {
+      "role": "separately_reviewed_coprime_proof",
+      "path": "research/dixmier/dixmier-formal-lifting/ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md",
+      "sha256": "f23a75cd754b1350446e7774b4d04f00169dc8acf28e3755af07ddfd76931710",
+      "exact_use": "Fresh read-only reconstruction of the residue time primitive, forward Stokes application, full-phase injectivity, finite-branch continuation, constant-field descent and weighted infinity bracket. No scope or assurance upgrade."
+    },
+    {
+      "role": "separately_reviewed_selfadjoint_proof",
+      "path": "research/dixmier/dixmier-formal-lifting/SELFADJOINT_POWER_OF_TWO_STRING_CLASSIFICATION.md",
+      "sha256": "995e70ad5b576ff0fe07857d8bc4e6ec566b7e2a278d6d3dbdefefa59e78a698",
+      "exact_use": "Adjoint projection for power-of-two order, finite fractional-flow centralizer descent, algebraic first-order normalization, and original-ring low-order-remainder specialization. Does not depend on the starred preprint."
+    },
+    {
+      "role": "primary_source_for_separate_review",
+      "path": "research/dixmier/dixmier-formal-lifting/sources/beals-sattinger-solv-int-9801010v1.pdf",
+      "sha256": "05e7df65dac43b343791d5a6ee7a02f0cd5ed662738a2c1530a105f2a21ac738",
+      "exact_use": "Section 9 printed pp43-47, lower-flow remark, Theorem 9.1, Lemma 9.3, and Theorem 9.4; Section 8 pp36-39 for companion shearing and the first-row argument. Actual statements and arguments re-read."
+    },
+    {
+      "role": "retained_coprime_dependency_scope",
+      "path": "research/dixmier/dixmier-formal-lifting/all_coprime_algebraic_string_source_ledger.json",
+      "sha256": "2dc16e1c3ba62be4691623716cf4f9c751a2d325d9df40702b6783a8c7846417",
+      "exact_use": "Pins the existing analytic source and its scoped application; retained only to identify the unchanged dependency boundary."
+    }
+  ],
+  "primary_source": {
+    "authors": "Vered Moskowicz and Christian Valqui",
+    "version": "arXiv:1401.5141v1, 21 January 2014",
+    "url": "https://arxiv.org/abs/1401.5141v1",
+    "pdf_url": "https://arxiv.org/pdf/1401.5141v1",
+    "exact_location": "Proposition 2.6, printed pp4-5; disputed coefficient substitution on p5",
+    "version_verification": "Downloaded primary PDF carries the v1/date label and contains the visually inspected disputed display.",
+    "publisher_record": "Communications in Algebra 43(8) (2015), pp3073-3082; DOI 10.1080/00927872.2014.907418",
+    "publisher_proof_status": "Not inspected. The publisher full-PDF endpoint returned HTTP403; this audit makes no assertion about that edition."
+  },
+  "coefficient_review": {
+    "audit_agent": "Jacobian/Dixmier research agent",
+    "independent_internal_reconstruction": "Root research agent independently obtained the three coefficients s(r+s-1)/2, -r(r+s-1)/2, and (s-r)(r+s-1)/2 before this packet was written.",
+    "negative_witness_scope": "H^2 and H^3 have commutator zero, so they refute the intermediate identity but are not counterexamples under the full nonzero-commutator hypothesis.",
+    "positive_control": "P0=-X/6+Y^6+2Y^2+3 and P1=3Y have the required adjoint parities and commutator 1/2."
+  },
+  "separate_foundation_reassessment": {
+    "kind": "Read-only internal mathematical review, not a new theorem or automated analytic verification",
+    "coprime_steps_inspected": [
+      "The finite residue formula supplies a primitive of one for the normalized derivation; no original-derivation primitive is asserted.",
+      "Constant lower-flow coefficients are admitted by the primary p43 remark, and coprimeness makes the leading J^m eigenvalues distinct.",
+      "Companion spectral coefficients are polynomial in the spectral parameter, so the original systems and fundamental-matrix inverses are ordinary at every finite spectral point.",
+      "The full formal phase is matched, including constant integration coefficients; matching only Stokes matrices would omit a necessary normalization.",
+      "Equal right jumps cancel in the left ratio. Its entire first row is exactly (1,0,...,0); x-derivatives identify all companion rows on the common local domain.",
+      "Formal phase coefficients lie in the algebraic field and have zero normalized derivative. Canonical sectorial solutions vary analytically locally, with constant Stokes matrices along finite continuation loops.",
+      "Trivial finite branch monodromy followed by Riemann-Hurwitz forces the coefficient field to be rational in the normalized time.",
+      "The positive infinity weight, strict derivative/lower-flow loss, and common-power polynomial conclusion give the stated coprime contradiction."
+    ],
+    "selfadjoint_steps_inspected": [
+      "Skew projection has odd order, hence coprime to 2^e unless it has order one.",
+      "Finite fractional-flow subtraction puts centralizers of the resulting Airy form in C[w][E]; the polynomial shear gives C[P].",
+      "Leading coefficients descend the polynomial subtraction to the original constant field.",
+      "The valuation argument is applied in the original differential ring with a stable maximal ideal, independently of poles in the generic normalization."
+    ],
+    "finding": "No substantive obstruction was found in this fresh reconstruction of the retained route. The starred preprint is not its premise. This remains internal review, with the original theorem scopes and assurance unchanged."
+  },
+  "not_claimed": [
+    "The starred Dixmier theorem or Proposition 2.6 is false",
+    "The unseen publisher proof contains the same error",
+    "The disputed conclusion cannot be proved by another argument",
+    "The new checker verifies the separate forward-Stokes argument",
+    "An unrestricted selfadjoint-order or general quartic classification",
+    "Historical priority, external human review or formal verification"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Closed algebraic inverse slice for the fixed cubic index17 map; nonzero weighted inverse coefficients at every grade; compressed triangular jets of dimension17M+4 and inverse degree2M+1, exact index17 for M>=16.",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "CUBIC_INDEX_SEVENTEEN_INVERSE_SERIES.md",
+      "sha256": "a97d64f93e30db82093c133536021b8863568bc4c223181bd5f444fafe1298d2",
+      "locator": "ClosedAlgebraicInverseSlice, EveryIndexSeventeenWeightedCoefficientSurvives, SharpCompressedIndexSeventeenJets"
+    },
+    {
+      "role": "checker",
+      "path": "verify_cubic_index_seventeen_inverse_series.py",
+      "sha256": "df96989aeb49ce0fea689ec54375dcced560b69f6b84b335a1c622765c76d997",
+      "locator": "Exact all-order polynomial identities, literal seed powers, direct coefficient recurrence and compressed-jet controls"
+    },
+    {
+      "role": "seed_input",
+      "path": "cubic_index_seventeen_shuffle_failure_inputs.json",
+      "sha256": "f305ecd8db14df064ff706c9c74242b8d004024d0ef25747c6f2334a3f98e26b",
+      "locator": "Complete 45-term homogeneous cubic and exact sixteenth-power witness"
+    },
+    {
+      "role": "arithmetic_module",
+      "path": "verify_cubic_index_seventeen_shuffle_failure.py",
+      "sha256": "4aed8de2304ea9d4df6c25208ecf8cbe3dad5332843e92d8947c84ecd9d11b49",
+      "locator": "Sparse rational polynomial and matrix arithmetic; complete full-jet generators"
+    },
+    {
+      "role": "jet_proof_context",
+      "path": "CUBIC_INDEX_SEVENTEEN_SHUFFLE_FAILURE.md",
+      "sha256": "7e227742191536c13f617a5cab72fe1b951ad4b7effdc7d5e60102a5102fa52b",
+      "locator": "Previous uncompressed jet family; comparison only, all new compressed-family arguments are written in the present proof"
+    },
+    {
+      "role": "shuffle_dictionary",
+      "path": "SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa",
+      "locator": "Universal inverse coefficients and exact constant-vector shuffle membership dictionary"
+    },
+    {
+      "role": "primary_seed_construction",
+      "path": "../de-bondt-2610.24889/verify.py",
+      "sha256": "18f08520e669f434b47499d0920b83dee95147025f3188032ea3eaca87f2beca",
+      "locator": "Literal scale11=2 mixed cubic seed construction from primary Sections4.6\u20134.7; actual inverse identities checked against seed input"
+    }
+  ],
+  "primary_context": {
+    "url": "https://arxiv.org/html/2610.24889v1",
+    "locators": "Equations(6)\u2013(8), Sections4.6\u20134.7",
+    "role": "Attribution and source normalization; the new all-order slice and Jacobian identities are verified directly against the retained explicit map."
+  },
+  "assurance": {
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "historical_priority_claimed": false
+  }
+}

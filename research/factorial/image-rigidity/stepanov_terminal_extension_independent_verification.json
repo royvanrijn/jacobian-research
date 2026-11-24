@@ -1,0 +1,109 @@
+{
+  "algorithmically_separate_internal_replay": true,
+  "all_order_SFC": false,
+  "certificate_bytes": 2346687,
+  "certificate_sha256": "401fe2b233dd45dff604aa955b0b6134662ccfd894675b2155375f082d699ae1",
+  "checker_sha256": "83c47ebd04e714db515bd7e493c4cc64c24e2dfadb480ac458cf5a44fc654191",
+  "coefficient_method": "Exact binomial recurrence and modular rising-factorial blocks at each own-order Gamma shape; no factorial tables or quotients",
+  "complement_hypotheses": [
+    {
+      "annulus_difference_bits": 50047,
+      "annulus_difference_sha256": "be6be6b88a684f14c392b6b7d71a7d9b0669be506224217525d3af0cd67456d2",
+      "constant_gap_cutoff": 9,
+      "positive_lower_gap_cutoff": 57,
+      "radii": [
+        14,
+        16
+      ],
+      "strict_radius_integer_margins": [
+        1858919327,
+        912475781199
+      ],
+      "terminal": 11
+    },
+    {
+      "annulus_difference_bits": 71073,
+      "annulus_difference_sha256": "4f668a9d56daa4b51e5b5bb7e444ca1f890815d5628c61e1618079083e4117f7",
+      "constant_gap_cutoff": 10,
+      "positive_lower_gap_cutoff": 65,
+      "radii": [
+        16,
+        17
+      ],
+      "strict_radius_integer_margins": [
+        912475781199,
+        8413093033346
+      ],
+      "terminal": 12
+    }
+  ],
+  "conclusion": "Complete finite certificate for every residual support at terminals 11 and 12; written complement theorems cover all other ordinary univariate supports at those two terminals",
+  "domain": {
+    "11": {
+      "constant_boundary_cases": 8,
+      "positive_lower_cases": 14308,
+      "total": 14316
+    },
+    "12": {
+      "constant_boundary_cases": 9,
+      "positive_lower_cases": 20736,
+      "total": 20745
+    }
+  },
+  "finite_replay": {
+    "bezout_coefficient_equalities": 777771,
+    "case_stream_sha256": "ac6096df76970dcf1c02bb6587aa7d12721d9c321dcb9645c6231e83de34fbbf",
+    "constant_boundary_appell_identities": 17,
+    "full_bezout_identities": 35061,
+    "independently_reconstructed_moment_vectors": 70122,
+    "negative_controls": [
+      "boolean-terminal",
+      "missing-witness",
+      "noninteger-witness-coefficient",
+      "noncanonical-witness-residue",
+      "excess-witness-degree",
+      "duplicate-case",
+      "out-of-domain-case",
+      "missing-case",
+      "duplicate-json-key",
+      "invalid-json-number",
+      "altered-bezout-witness",
+      "altered-upper-moment-coefficient",
+      "frozen-upper-gamma-shape-at-lower-order",
+      "composite-prime",
+      "N12-constant-d9-is-not-in-large-gap-complement"
+    ],
+    "per_prime": {
+      "1000003": 0,
+      "1000033": 0,
+      "65537": 35061
+    },
+    "per_terminal": {
+      "11": 14316,
+      "12": 20745
+    },
+    "rising_coefficient_stream_sha256": "7371bed55d5c22d648f14d8bf73f699ced5545bec3312aad997b2d7c08bc1ea8"
+  },
+  "formal_verification": false,
+  "generator_imported": false,
+  "identity_method": "Every coefficient of U H_N + V H_(N-1) checked directly as a dot product modulo the certified prime",
+  "independent_external_review": false,
+  "maximum_factorial_argument": 8436,
+  "multivariate_extension": false,
+  "proof_source_sha256": {
+    "ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7",
+    "GAMMA_PRODUCT_ROOT_MODULUS.tex": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9",
+    "GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c",
+    "GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+  },
+  "python_version": "3.12.14",
+  "schema": 1,
+  "standard_library_only": true,
+  "status": "PASS",
+  "terminals": [
+    11,
+    12
+  ],
+  "uniform_eventual_theorem_used": false
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "elementary_reciprocal_exponents_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ELEMENTARY_RECIPROCAL_EXPONENT_DECISION.md",
+      "sha256": "127d737a39c0e2fa3063d0e1f04db69f2709c5660ddf2657420799b0222227a5",
+      "role": "written_proof",
+      "exact_use": "Theorem ElementaryRationalPointOrbit and the two separate corollaries ReciprocalExponentDecisionWithoutOrbitImport and UniformFibreCoefficientField. Universal termination is proved in writing, not inferred from finite controls."
+    },
+    {
+      "path": "research/foundations/extended-geometry/verify_elementary_reciprocal_exponents.py",
+      "sha256": "22efe3c42b5ae6eb1802bb941da9c3d85ca1224d06aaf8d4089cc90948c91949",
+      "role": "exact_algorithm_and_controls",
+      "exact_use": "General implemented rational matrix point-orbit algorithm: Krylov quotient, zero-primary split, repeated-factor derivative, explicit nonintegral denominator bound, integral coefficient-growth certificate, and squarefree finite torsion period. The CLI executes34 exact control cases."
+    },
+    {
+      "path": "research/arithmetic/sources/milne-ant308.pdf",
+      "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+      "role": "required_basic_valuation_infrastructure",
+      "exact_use": "Milne ANT v3.08, Theorem7.38 printedp123/PDFp125 and Corollary7.40 printedp124/PDFp126, with Remark7.39: the p-adic absolute value extends to a finite separable extension and then an algebraic closure; ultrametricity remains. Actual retained statements inspected. The negative-root existence, denominator<=degree, and exponent bound O.6 are proved here; no ideal-factorization or Newton-polygon decision theorem is imported."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "role": "required_only_for_fibre_corollaries",
+      "exact_use": "FixedCoordinateFibreClassification, in particular F.4-F.6, F.15-F.20: marked reciprocity, exact full-jet congruence, finite support, cyclic canonical polynomial and reconstruction. Algorithm Theorem ElementaryRationalPointOrbit itself does not depend on this source."
+    },
+    {
+      "path": "research/foundations/extended-geometry/EFFECTIVE_ODD_START_FIBRE_CLASSIFICATION.md",
+      "sha256": "f13bbfa33f3fda433bf3b08f64fa7b59d2ebca488fcca7045dfeed6069919cb5",
+      "role": "required_only_bounded_constructions_for_alternative_fibre_route",
+      "exact_use": "Sections3-5 only: BoundedCanonicalPolynomial, EffectiveFiniteReciprocalBox and ExplicitReciprocalTwistBox. The complete effective theorem and Section6 RationalOrbitReduction/imported decision theorem are NOT premises of their alternative proof here."
+    }
+  ],
+  "context_sources": [
+    {
+      "path": "research/foundations/extended-geometry/sources/chonev-ouaknine-worrell-orbit-2016.pdf",
+      "sha256": "35116eb7e385b63da3bfd8585b37c06efc0d05735237a3488fa940f1d9927551",
+      "role": "classical_antecedent_not_a_proof_premise",
+      "exact_use": "Actual introduction, Theorem2.2 and relevant Sections3-4 inspected. Classical stronger polynomial-time Orbit result; not invoked to prove or implement the new terminating route."
+    }
+  ],
+  "primary_context": [
+    {
+      "authors": "Ravindran Kannan and Richard J. Lipton",
+      "title": "Polynomial-time algorithm for the orbit problem",
+      "publication": "Journal of the ACM33(4)(1986),808-821",
+      "doi": "10.1145/6490.6496",
+      "inspection_scope": "Original DOI access returned403. Classical attribution checked against the actual COW introduction and Lipton author exposition; no unseen theorem from the1986 article is a premise."
+    },
+    {
+      "author": "Richard J. Lipton",
+      "title": "The Orbit Problem",
+      "date": "2009-09-02",
+      "url": "https://rjlipton.com/2009/09/02/the-orbit-problem/",
+      "inspection_scope": "Actual author exposition sections The Orbit Problem and The Proof inspected. It states the classical rational point-to-point result and explains the algebraic-integer/Kronecker versus nonintegral ideal-growth split. Context only, accurately labeled as an author exposition."
+    }
+  ],
+  "claim_dependency_separation": {
+    "ElementaryRationalPointOrbit": "Written O.2-O.10; only explicit external infrastructure is extension of the p-adic valuation. No dependency on a general Orbit decision theorem, Skolem theorem, old RationalOrbitReduction, or an imported complexity result.",
+    "ReciprocalExponentDecisionWithoutOrbitImport": "ElementaryRationalPointOrbit plus retained fixed-coordinate conditions and the bounded canonical/finite-box/twist-box constructions. Uses complete coordinate vectors after rational restriction of scalars, including all jets.",
+    "UniformFibreCoefficientField": "Retained F.15-F.16 finite support and reconstruction only. For u=P/Q, use squarefree part of Q(P+cQ), or Q at c=infinity, remove the factor x. One splitting field degree<= (2deg u)! works simultaneously for every positive odd height."
+  },
+  "internal_review": {
+    "author_scope": "Fresh adversarial audit reconstructed reciprocal descent to K(R), geometric coefficient-field control, finite-jet periodicity and the effective algorithm independently of prior review labels. No underlying proof gap found; the new route removes the general Orbit decision import.",
+    "root_review": "Root read the complete algorithm and written proof. It checked repeated-factor representative dependence, full-q differentiation, unique early nilpotent hits, nonreduced ambient versus cyclic algebra, the nonintegral bound and exact coefficient-growth cutoff. No substantive issue remained; requested typography and the explicit support polynomial were corrected.",
+    "replay_scope": "Author exact controls pass. Separate replay can be recorded in repository status; this ledger does not infer it from author execution.",
+    "assurance": "Internal AI-assisted review and exact controls; no external human review or formal verification."
+  },
+  "implemented_scope": {
+    "input": "Arbitrary rational square matrix of positive dimension and two rational vectors; noninvertible matrices and zero vectors included.",
+    "output": "Entire nonnegative exponent set: empty, singleton, or one explicit arithmetic progression.",
+    "core_functions": [
+      "orbit_solutions",
+      "quotient_power_solutions",
+      "unit_power_solutions"
+    ],
+    "controls": {
+      "algorithm_cases": 34,
+      "independent_direct_power_prefix_comparisons": 2320,
+      "cyclotomic_index_controls": 512,
+      "rational_basis_change_controls": 1,
+      "negative_controls": 6
+    },
+    "arithmetic": "Exact SymPy QQ/ZZ polynomial and matrix arithmetic. No floating-point acceptance, general Orbit oracle, root isolation, ideal factorization, or hidden search timeout."
+  },
+  "not_claimed": [
+    "A historically new Orbit decidability theorem or new polynomial-time result",
+    "A polynomial-time or practical runtime bound for this implementation",
+    "Decision of scalar recurrence zero sets, Skolem problems, or arbitrary target subspaces",
+    "An end-to-end implementation of the whole fixed-coordinate fibre classifier",
+    "A finite-control proof of universal termination",
+    "External mathematical review, formal verification or publication"
+  ],
+  "reproduction": "python3 research/foundations/extended-geometry/verify_elementary_reciprocal_exponents.py --repo-root . --output research/foundations/extended-geometry/elementary_reciprocal_exponents_verification.json"
+}

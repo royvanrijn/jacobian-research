@@ -1,0 +1,51 @@
+{
+  "absolute_nonpower_up_to_units": true,
+  "all_orders_power_marker_iff": "N-2<=ell<=a",
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "characteristic": 0,
+  "circuit_coefficients": [
+    2,
+    2,
+    2
+  ],
+  "dimensions": "all_N_ge_3",
+  "eventual_integer_marker_iff": "ell>=N-2",
+  "exact_mixed_formula_domain": "k>=1,ell>=-k",
+  "extensions": "all_characteristic_zero_extensions",
+  "forms": "all_nondegenerate_over_given_field",
+  "global_failure_descent_claimed": false,
+  "long_is_logical_premise": false,
+  "marker": "q^(N-2)",
+  "nonpower_phase": "P^(N-2)*(1+P)",
+  "phase": "(q+1)*(q-(q+1)^2*B)^2/q^3",
+  "probe_dimensions": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "probe_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "rank_A": 2,
+  "rank_B": "N-2",
+  "requires_rational_point": false,
+  "sharp_pure_power_iff": "a>=N-2",
+  "ternary_direct_phase": true
+}

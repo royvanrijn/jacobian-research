@@ -14,6 +14,9 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Weighted Euler reduction and the rank-two descent obstruction | Internal result | proved | [Source](dixmier-formal-lifting/EULER_REDUCTION_TRACE_OBSTRUCTION.md) |
 | Cubic/quintic models and universal matrix admission obstructions | Internal result | proved | [Source](dixmier-formal-lifting/VALUED_MATRIX_LATTICE_AND_SHIFTED_ADMISSION.md) |
 | Global Laurent admission and closed quartic scalar faces | Internal result | proved | [Source](dixmier-formal-lifting/GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md) |
+| All coprime algebraic string orders and prime-order Long obstruction | Internal result | proved | [Source](dixmier-formal-lifting/ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md) |
+| Complete selfadjoint power-of-two strings and quartic-square criterion | Internal result | proved | [Source](dixmier-formal-lifting/SELFADJOINT_POWER_OF_TWO_STRING_CLASSIFICATION.md) |
+| A corrected coefficient identity in the starred Dixmier preprint | Internal result | proved | [Source](dixmier-formal-lifting/STARRED_DIXMIER_PRIMARY_COEFFICIENT_AUDIT.md) |
 
 **Computed obligations:** 21 unresolved; 2 resolved within their exact scope.
 
@@ -66,6 +69,10 @@ Scope limits:
 - For bounded full Long lifts the two finite uncompleted Weyl division indices agree by index symmetry. Their common value is three exactly when either valuation-lattice module is finite, equivalently when both completion comparison maps are injective. Finite generation of the ambient Weyl algebra over its image is excluded.
 - For an irreducible affine-line connection with at most one finite singularity, finite-cover reducibility is equivalent to a nontrivial Kummer self-twist at that puncture. If the minimal-extension inverse-Fourier rank is exactly half the connection rank, an actual split must already occur on the quadratic power cover and imposes the indicated local type.
 - The entire canonical graded scalar cap-27 scheme has no point through h7 over any characteristic-zero field, with arbitrary Moyal-symbol parity.
+- All coprime scalar algebraic differential orders at least2 are excluded for a nonzero constant commutator. Prime-order mates reduce to order1; a constant-uniformizer specialization argument forces both generic orders of an exact-first-image regular scalar Long repair to be composite with a common factor. Composite/matrix/general lifts remain open.
+- The selfadjoint power-of-two gap is closed within the finite scalar algebraic class: all mates are polynomial-in-P plus first order; completed quartic squares have the exact Uprime=0, Wprime nonzero constant criterion. A differential-ideal specialization excludes these normalized orders in regular exact-first-image Long repairs. Arbitrary quartics remain outside this result.
+- The subsequent primary audit corrects an intermediate odd-coefficient identity in arXiv:1401.5141v1 Proposition2.6. It gives no theorem counterexample and makes no claim about the uninspected publisher proof. No all-order extension is imported; the retained coprime and selfadjoint power-of-two classifications remain unchanged.
+- Leading-term cancellation eliminates generic orders (4,4) in the exact-first-image regular scalar Long chart. The larger generic order is at least six, and a fourth-order member requires an even partner and lies beyond the selfadjoint exclusion.
 
 Tracked obligations (computed states):
 

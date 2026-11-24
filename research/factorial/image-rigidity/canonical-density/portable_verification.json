@@ -1,0 +1,82 @@
+{
+  "deliberate_mutations_rejected": 7,
+  "external_review": false,
+  "formal_verification": false,
+  "mutations": [
+    {
+      "error": "ArithmeticError: proof authentication",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "altered proof: canonical_density_exclusion.md"
+    },
+    {
+      "error": "ArithmeticError: proof authentication",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "altered proof: inverse_canonical_reachability.md"
+    },
+    {
+      "error": "ArithmeticError: proof authentication",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "altered proof: moment_pair_obstructions.md"
+    },
+    {
+      "error": "ArithmeticError: independent factorial-moment reconstruction",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "moment coefficient with copied fixture pin refreshed"
+    },
+    {
+      "error": "ArithmeticError: modular Bezout identity",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "Bezout coefficient with copied fixture pin refreshed"
+    },
+    {
+      "error": "ArithmeticError: backward top-coefficient cancellation",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "wrong backward leading coefficient"
+    },
+    {
+      "error": "ArithmeticError: genuine generic collision",
+      "optimized": true,
+      "status": "REJECTED",
+      "success_receipt_written": false,
+      "test": "wrong generic collision factor"
+    }
+  ],
+  "replays": [
+    {
+      "checker": "verify_density_exclusion.py",
+      "normal_optimized_byte_identical": true
+    },
+    {
+      "checker": "verify_inverse_reachability.py",
+      "normal_optimized_byte_identical": true
+    },
+    {
+      "checker": "verify_moment_pairs.py",
+      "normal_optimized_byte_identical": true
+    }
+  ],
+  "scope": "Internal exact replay and negative controls; no unrestricted SFC closure.",
+  "source_bytes_unchanged": true,
+  "source_sha256": {
+    "canonical_density_exclusion.md": "3a4a48ca11658e7bb87985f4b06a09548b064e50e2e498efe37a17c63b8a409e",
+    "inverse_canonical_reachability.md": "6345b503c1754630fe8e44cdb162cca672f05933c4b0094234d082cae91ea2ba",
+    "moment_pair_certificates.json": "0f3e8f68902d838a3038e7913407ef76c2621d72dbb3e59d44cfb45513bec378",
+    "moment_pair_obstructions.md": "2f40b43023e38b83f160420c44983305f810225964a29696ae6340711da91322",
+    "verify_density_exclusion.py": "994abcccd3a895a766caa7a851f32478e9d2e2aeb231866d4ed2bfe2027dcf51",
+    "verify_inverse_reachability.py": "47f75c5458bba1f16d91e3cc2d0931539712c75f2dff45e0101c4c8c3eb1ee0e",
+    "verify_moment_pairs.py": "2cadced81d0312cd886cfd08f168363c49d623cfd15b8cc842e9f60dc80dad16"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "source_sha256": {
+    "SFC_PRIME_POWER_SCALAR_TRANSFER.md": "9fa457f230397c670c7b4152c0510df93da24df03fc08112f1c5bf5c73bc0349",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "LOWER_TWO_FOURTH_POWER_GAP_SFC.tex": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+    "DIAGONAL_PRIME_GAP_SFC.tex": "db034b5fb29ece9c3a0cb8cbce4c82f692b933e3679b27ee823db5ca5e7f98eb"
+  },
+  "scope": "finite exact controls; all-parameter conclusions rely on the written proofs",
+  "actual_leaf_controls": [
+    {
+      "p": 2,
+      "s": 1,
+      "q": 2,
+      "n": 1,
+      "gamma": "1/3",
+      "nu": "-1",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 2,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 3,
+      "s": 1,
+      "q": 3,
+      "n": 2,
+      "gamma": "1/2",
+      "nu": "-1",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 3,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 2,
+      "s": 2,
+      "q": 4,
+      "n": 3,
+      "gamma": "5/3",
+      "nu": "-3",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 4,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 5,
+      "s": 1,
+      "q": 5,
+      "n": 1,
+      "gamma": "11",
+      "nu": "-1",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 5,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 2,
+      "s": 3,
+      "q": 8,
+      "n": 1,
+      "gamma": "1/3",
+      "nu": "-27",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 8,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 3,
+      "s": 2,
+      "q": 9,
+      "n": 2,
+      "gamma": "1/2",
+      "nu": "-8",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 9,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 2,
+      "s": 4,
+      "q": 16,
+      "n": 1,
+      "gamma": "3/5",
+      "nu": "-2955",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 16,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    },
+    {
+      "p": 3,
+      "s": 3,
+      "q": 27,
+      "n": 1,
+      "gamma": "2/5",
+      "nu": "-58528",
+      "checked_outer_degree": 2,
+      "actual_split_leaves": 27,
+      "restricted_seed_coefficients_checked": 3,
+      "first_variation_coefficients_checked": 2
+    }
+  ],
+  "sharp_stage_controls": [
+    {
+      "p": 2,
+      "s": 1,
+      "q": 2,
+      "B": 0,
+      "u": 2
+    },
+    {
+      "p": 2,
+      "s": 2,
+      "q": 4,
+      "B": 1,
+      "u": 24
+    },
+    {
+      "p": 2,
+      "s": 3,
+      "q": 8,
+      "B": 4,
+      "u": 40320
+    },
+    {
+      "p": 2,
+      "s": 4,
+      "q": 16,
+      "B": 11,
+      "u": 20922789888000
+    },
+    {
+      "p": 3,
+      "s": 1,
+      "q": 3,
+      "B": 0,
+      "u": -6
+    },
+    {
+      "p": 3,
+      "s": 2,
+      "q": 9,
+      "B": 2,
+      "u": -362880
+    },
+    {
+      "p": 5,
+      "s": 1,
+      "q": 5,
+      "B": 0,
+      "u": -120
+    }
+  ],
+  "actual_deep_response_countercontrol": {
+    "p": 5,
+    "s": 1,
+    "q": 5,
+    "n": 1,
+    "gamma": "11",
+    "h": 5,
+    "T0": -32400,
+    "Tj": [
+      1146,
+      1184,
+      1224,
+      1266
+    ],
+    "sum_Tj": 4820,
+    "kappa": "1/637560",
+    "kappa_valuation": -1,
+    "exact_lower_root": "-1/360360",
+    "upper_at_lower_root": "1067285/13013",
+    "meaning": "actual nondegeneracy failure; exact pair still coprime"
+  },
+  "arithmetic_controls": {
+    "ordinary_valuation_identity_controls": 1280,
+    "finite_precision_and_disjoint_ball_controls": 185
+  },
+  "gamma_gram_entry_controls": 245,
+  "formal_unit_closed_disk_countercontrol": {
+    "series": "1-v",
+    "constant": 1,
+    "value_at_1": 0
+  },
+  "all_parameter_quantifiers_certified_by_finite_tests": false
+}

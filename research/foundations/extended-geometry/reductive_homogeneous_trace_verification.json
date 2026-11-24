@@ -1,0 +1,2769 @@
+{
+  "SL2_universal_models": {
+    "adjoint_determinant": "(ad-bc)^3 before division by determinant^3",
+    "exact_divergence_and_Cartan": [
+      {
+        "Cartan_first_jet_identity": true,
+        "divergence": "0",
+        "field": "E"
+      },
+      {
+        "Cartan_first_jet_identity": true,
+        "divergence": "0",
+        "field": "F"
+      },
+      {
+        "Cartan_first_jet_identity": true,
+        "divergence": "0",
+        "field": "H"
+      }
+    ],
+    "normalizer_component_quotient_determinant": -1,
+    "scope": "Exact SL2 model, not a finite proof of every reductive-group or isotropy theorem.",
+    "universal_families": 7,
+    "volume_chart": "omega=a^-1 da wedge db wedge dc on ad-bc=1"
+  },
+  "additive_group_and_point_models": {
+    "Ga_constant_is_Lie_image": true,
+    "Ga_exact_basis_degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "point_dimension_zero": "A=K, trace=id; separate case rather than contraction with a negative-degree form."
+  },
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "checker_sha256": "d42effd699221cc636b90223fd4b85710da1ef0b00d543241885a95effda2451",
+  "finite_character_models": {
+    "rows": [
+      {
+        "character_exponent": 0,
+        "component_order": 1,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 2,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 2,
+        "determinant_order": 2,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 3,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 3
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 3,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 3,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 4,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 4
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 4,
+        "determinant_order": 4,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 4,
+        "determinant_order": 2,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 4,
+        "determinant_order": 4,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 5,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 5
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 5,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 5,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 5,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 5,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 6,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 6
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 6,
+        "determinant_order": 6,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 6,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 6,
+        "determinant_order": 2,
+        "invariant_line_dimension": 0,
+        "kernel_size": 3
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 6,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 6,
+        "determinant_order": 6,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 7,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 7
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 7,
+        "determinant_order": 7,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 7,
+        "determinant_order": 7,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 7,
+        "determinant_order": 7,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 7,
+        "determinant_order": 7,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 7,
+        "determinant_order": 7,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 6,
+        "component_order": 7,
+        "determinant_order": 7,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 8,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 8
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 8,
+        "determinant_order": 8,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 8,
+        "determinant_order": 4,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 8,
+        "determinant_order": 8,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 8,
+        "determinant_order": 2,
+        "invariant_line_dimension": 0,
+        "kernel_size": 4
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 8,
+        "determinant_order": 8,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 6,
+        "component_order": 8,
+        "determinant_order": 4,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 7,
+        "component_order": 8,
+        "determinant_order": 8,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 9,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 9
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 9,
+        "determinant_order": 9,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 9,
+        "determinant_order": 9,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 9,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 3
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 9,
+        "determinant_order": 9,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 9,
+        "determinant_order": 9,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 6,
+        "component_order": 9,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 3
+      },
+      {
+        "character_exponent": 7,
+        "component_order": 9,
+        "determinant_order": 9,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 8,
+        "component_order": 9,
+        "determinant_order": 9,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 10,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 10
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 10,
+        "determinant_order": 10,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 10,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 10,
+        "determinant_order": 10,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 10,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 10,
+        "determinant_order": 2,
+        "invariant_line_dimension": 0,
+        "kernel_size": 5
+      },
+      {
+        "character_exponent": 6,
+        "component_order": 10,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 7,
+        "component_order": 10,
+        "determinant_order": 10,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 8,
+        "component_order": 10,
+        "determinant_order": 5,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 9,
+        "component_order": 10,
+        "determinant_order": 10,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 11,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 11
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 6,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 7,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 8,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 9,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 10,
+        "component_order": 11,
+        "determinant_order": 11,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 0,
+        "component_order": 12,
+        "determinant_order": 1,
+        "invariant_line_dimension": 1,
+        "kernel_size": 12
+      },
+      {
+        "character_exponent": 1,
+        "component_order": 12,
+        "determinant_order": 12,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 2,
+        "component_order": 12,
+        "determinant_order": 6,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 3,
+        "component_order": 12,
+        "determinant_order": 4,
+        "invariant_line_dimension": 0,
+        "kernel_size": 3
+      },
+      {
+        "character_exponent": 4,
+        "component_order": 12,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 4
+      },
+      {
+        "character_exponent": 5,
+        "component_order": 12,
+        "determinant_order": 12,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 6,
+        "component_order": 12,
+        "determinant_order": 2,
+        "invariant_line_dimension": 0,
+        "kernel_size": 6
+      },
+      {
+        "character_exponent": 7,
+        "component_order": 12,
+        "determinant_order": 12,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      },
+      {
+        "character_exponent": 8,
+        "component_order": 12,
+        "determinant_order": 3,
+        "invariant_line_dimension": 0,
+        "kernel_size": 4
+      },
+      {
+        "character_exponent": 9,
+        "component_order": 12,
+        "determinant_order": 4,
+        "invariant_line_dimension": 0,
+        "kernel_size": 3
+      },
+      {
+        "character_exponent": 10,
+        "component_order": 12,
+        "determinant_order": 6,
+        "invariant_line_dimension": 0,
+        "kernel_size": 2
+      },
+      {
+        "character_exponent": 11,
+        "component_order": 12,
+        "determinant_order": 12,
+        "invariant_line_dimension": 0,
+        "kernel_size": 1
+      }
+    ],
+    "scope": "Exact bounded finite-character models support the character, subgroup and invariant-line steps; they do not prove general homogeneous-cover or de Rham descent theorems."
+  },
+  "finite_etale_laurent_models": {
+    "monomial_trace_matrix_controls": 150,
+    "rows": [
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "-3",
+        "order": 0
+      },
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "6",
+        "order": 1
+      },
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "-209/18",
+        "order": 2
+      },
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "65/3",
+        "order": 3
+      },
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "-116/3",
+        "order": 4
+      },
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "278/3",
+        "order": 5
+      },
+      {
+        "degree": 1,
+        "fixture": 0,
+        "moment": "-432",
+        "order": 6
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "0",
+        "order": 0
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "0",
+        "order": 2
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "1",
+        "order": 3
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "0",
+        "order": 4
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 1,
+        "fixture": 1,
+        "moment": "0",
+        "order": 6
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "1",
+        "order": 0
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "16/7",
+        "order": 2
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "50/7",
+        "order": 4
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 1,
+        "fixture": 2,
+        "moment": "170/7",
+        "order": 6
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "-3",
+        "order": 0
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "43/6",
+        "order": 1
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "-50/3",
+        "order": 2
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "38",
+        "order": 3
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "-256/3",
+        "order": 4
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "3283/18",
+        "order": 5
+      },
+      {
+        "degree": 2,
+        "fixture": 0,
+        "moment": "-70981/216",
+        "order": 6
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 0
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 2
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 4
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 2,
+        "fixture": 1,
+        "moment": "0",
+        "order": 6
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "1",
+        "order": 0
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "2/7",
+        "order": 1
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "2",
+        "order": 2
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "6/7",
+        "order": 3
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "6",
+        "order": 4
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "20/7",
+        "order": 5
+      },
+      {
+        "degree": 2,
+        "fixture": 2,
+        "moment": "20",
+        "order": 6
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "-3",
+        "order": 0
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "6",
+        "order": 1
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "-12",
+        "order": 2
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "24",
+        "order": 3
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "-48",
+        "order": 4
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "1603/18",
+        "order": 5
+      },
+      {
+        "degree": 3,
+        "fixture": 0,
+        "moment": "-326/3",
+        "order": 6
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "0",
+        "order": 0
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "1",
+        "order": 1
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "0",
+        "order": 2
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "0",
+        "order": 4
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 3,
+        "fixture": 1,
+        "moment": "0",
+        "order": 6
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "1",
+        "order": 0
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "2",
+        "order": 2
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "6",
+        "order": 4
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 3,
+        "fixture": 2,
+        "moment": "20",
+        "order": 6
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "-3",
+        "order": 0
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "6",
+        "order": 1
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "-12",
+        "order": 2
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "323/12",
+        "order": 3
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "-214/3",
+        "order": 4
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "3703/18",
+        "order": 5
+      },
+      {
+        "degree": 4,
+        "fixture": 0,
+        "moment": "-1726/3",
+        "order": 6
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 0
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 2
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 4
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 4,
+        "fixture": 1,
+        "moment": "0",
+        "order": 6
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "1",
+        "order": 0
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "2",
+        "order": 2
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "6",
+        "order": 4
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 4,
+        "fixture": 2,
+        "moment": "20",
+        "order": 6
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "-3",
+        "order": 0
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "6",
+        "order": 1
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "-26/3",
+        "order": 2
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "4",
+        "order": 3
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "32",
+        "order": 4
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "-3197/18",
+        "order": 5
+      },
+      {
+        "degree": 5,
+        "fixture": 0,
+        "moment": "2074/3",
+        "order": 6
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 0
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 2
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 4
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 5,
+        "fixture": 1,
+        "moment": "0",
+        "order": 6
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "1",
+        "order": 0
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "2",
+        "order": 2
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "6",
+        "order": 4
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 5,
+        "fixture": 2,
+        "moment": "20",
+        "order": 6
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "-3",
+        "order": 0
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "6",
+        "order": 1
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "-12",
+        "order": 2
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "24",
+        "order": 3
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "-48",
+        "order": 4
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "1603/18",
+        "order": 5
+      },
+      {
+        "degree": 6,
+        "fixture": 0,
+        "moment": "-326/3",
+        "order": 6
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 0
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 2
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 4
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 6,
+        "fixture": 1,
+        "moment": "0",
+        "order": 6
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "1",
+        "order": 0
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "0",
+        "order": 1
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "2",
+        "order": 2
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "0",
+        "order": 3
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "6",
+        "order": 4
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "0",
+        "order": 5
+      },
+      {
+        "degree": 6,
+        "fixture": 2,
+        "moment": "20",
+        "order": 6
+      }
+    ],
+    "scope": "Exact finite-free Laurent models and bounded marked moments support E1; they do not prove Galois domination, presentation independence or arbitrary finite-etale compatibility."
+  },
+  "inputs_sha256": "d8fd4640899caf77711e1faa77cbe73f1d102889e6565cad93c19617b7d97a8b",
+  "meaning": "Source authentication and bounded exact supporting controls PASS. The unrestricted all-field theorem is established by the complete written proof and its narrowly scoped classical imports. No bounded test proves complete reducibility, Rosenlicht, finite-etale descent, the homogeneous-cover theorem, arbitrary-field descent or any unrestricted conclusion.",
+  "nonnormal_S3_averaging_model": {
+    "Delta_normal": false,
+    "Delta_order": 2,
+    "cover_degree": 3,
+    "group": "S3",
+    "group_order": 6,
+    "rows": [
+      {
+        "average": "5/18",
+        "branch_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "g": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "average": "5/18",
+        "branch_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "g": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "average": "5/18",
+        "branch_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "g": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "average": "5/18",
+        "branch_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "g": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "average": "5/18",
+        "branch_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "g": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "average": "5/18",
+        "branch_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "g": [
+          2,
+          1,
+          0
+        ]
+      }
+    ],
+    "scope": "Exact finite set/function algebra model for E6 with NONNORMAL intermediate subgroup; not a connected algebraic-cover proof."
+  },
+  "proof_sha256": "b4b223a00cd9ed00a3f3957749b488dc0daea32f6e3491cb047d6d6dcac0aba5",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "rankone_models": [
+    {
+      "meaning": "Symbolic fixed-size rankone models support the written all-n orbit/stabilizer argument.",
+      "n": 2,
+      "stabilizer_nonzero_constraints": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "universal_matrix_equalities": 6
+    },
+    {
+      "meaning": "Symbolic fixed-size rankone models support the written all-n orbit/stabilizer argument.",
+      "n": 3,
+      "stabilizer_nonzero_constraints": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "universal_matrix_equalities": 19
+    },
+    {
+      "meaning": "Symbolic fixed-size rankone models support the written all-n orbit/stabilizer argument.",
+      "n": 4,
+      "stabilizer_nonzero_constraints": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "universal_matrix_equalities": 53
+    }
+  ],
+  "schema": 2,
+  "scope": {
+    "Lie_image_is_ideal": false,
+    "acting_group": "connected reductive linear algebraic K-group G",
+    "actual_descending_phase_on_finite_quotient_required": true,
+    "all_K_algebra_automorphisms": true,
+    "all_field_extensions": true,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "automorphisms_lift_to_G_assumed": false,
+    "averaging_preserves_purity": false,
+    "connected_stabilizer_Theorem1_2_imported": false,
+    "constant_units_required": false,
+    "controls": {
+      "Ga_primitive_degree_max": 12,
+      "cyclic_order_max": 12,
+      "finite_etale_degree_max": 6,
+      "rankone_matrix_sizes": [
+        2,
+        3,
+        4
+      ],
+      "symmetric_power_degree_max": 10,
+      "torus_power_max": 6
+    },
+    "degree_filtration_or_Image_power_descent_claimed": false,
+    "determinant_character_required_trivial": false,
+    "determinant_cover": "over algebraic closure, Hplus=kerdelta_H, finite etale connected CYCLIC Galois Y=G/Hplus of degree m=order(image delta_H)",
+    "embedding_in_C_required": false,
+    "every_variety_isomorphism_trace_compatible": true,
+    "extension_quantifiers": "for EVERY extension L/K, Lambda_L=id_L tensor Lambda and EVERY L-algebra automorphism of O(X_L), including new automorphisms",
+    "field": "ANY field K of characteristic zero",
+    "finite_etale_all_field_extensions_and_new_elements": true,
+    "finite_etale_fixed_marker": "ONE upstairs h pushes to ONE Tq(h); exact surviving orders ALL r>=0; downstairs a pulls to qstar(a)",
+    "finite_etale_fixed_marker_descent_by_normalized_trace": true,
+    "finite_etale_marked_identity": "Lambda_Z(h qstar(a))=Lambda_X((Tr_B/A(h)/d) a), ALL h,a; d=deg q>=1; normalized finite locally free algebra trace",
+    "finite_etale_purity_safety_unsafety_both_directions": true,
+    "finite_etale_scope": "ANY finite etale q:Z->X between TWO affine reductive homogeneous varieties with GIVEN possibly unrelated presentations; no equivariance required",
+    "fixed_K_phase_field_extension_both_directions": true,
+    "full_theorem_logical_evidence": "complete written proof plus narrowly scoped primary imports; finite controls supporting only",
+    "general_morphism_trace_functoriality_claimed": false,
+    "geometric_determinant_cover_lift_proved": true,
+    "geometric_forms_scope": "ANY smooth geometrically integral AFFINE K-variety with geometrically transitive action of connected reductive K-group; no K-point or K-quotient presentation required",
+    "geometric_forms_without_K_points": true,
+    "geometric_lift_descends_to_K_claimed": false,
+    "group_cover_import": "Brion-Szamuely Prop1.1(a) ONLY; disconnected homogeneous cover derived by component/deck stabilizer and etale lift rigidity",
+    "intrinsic_cover_scope": "UNIQUE up to isomorphism over X among connected finite etale GALOIS degree-m covers with nonzero H^n_dR; both directions explicit",
+    "marker_quantifiers": "EVERY fixed pair f,h and sigma; ONE marker sigma(h) independent of r, ALL r>=0 and exact surviving orders",
+    "nonGalois_cover_classification_claimed": false,
+    "nontrivial_determinant_case_included": true,
+    "normalized_trace": "unique K-linear G-invariant Lambda:O(X)->K with Lambda(1)=1; A=K1 directsum gA",
+    "optional_full_determinant_square_one": true,
+    "optional_sharpness_is_main_proof_premise": false,
+    "preexisting_invariant_marker_on_finite_quotient_required": false,
+    "purity_safety_unsafety_both_directions": true,
+    "quotient": "represented fppf/scheme quotient, geometrically integral and smooth; no G(K)-transitivity assumption",
+    "retained427_is_core_input": false,
+    "reviewed_proof_sha256": "b4b223a00cd9ed00a3f3957749b488dc0daea32f6e3491cb047d6d6dcac0aba5",
+    "schema": 2,
+    "split_group_required": false,
+    "starting_pure_unsafe_pair_created": false,
+    "subgroup": "ANY closed K-subgroup H, possibly disconnected, with affine scheme quotient X=G/H",
+    "top_cohomology_criterion": "for EVERY affine homogeneous G/H over algebraically closed char0: H^n_dR!=0 IFF delta_H=1; both directions proved; not an iff with all-Aut trace",
+    "trace_presentation_independent": true,
+    "volume_lemma": "ONLY when full determinant character is trivial: invariant omega, dOmega^(n-1)=(kerLambda)omega and NONZERO H^n_dR=K[omega]",
+    "zero_dimension": "X=SpecK, A=K, Lambda=id; no negative-degree form"
+  },
+  "source_ledger_sha256": "fa33cdb00d6b5b1c1cc5341f055d621e4702fd258d95b9e8d3195a72462e025c",
+  "source_scope_negative_controls": [
+    "missing_role:written_proof",
+    "bad_hash:written_proof",
+    "surplus_source_field:written_proof",
+    "missing_role:exact_checker",
+    "bad_hash:exact_checker",
+    "surplus_source_field:exact_checker",
+    "missing_role:typed_inputs",
+    "bad_hash:typed_inputs",
+    "surplus_source_field:typed_inputs",
+    "missing_role:matsushima_primary",
+    "bad_hash:matsushima_primary",
+    "surplus_source_field:matsushima_primary",
+    "missing_role:group_structure_primary",
+    "bad_hash:group_structure_primary",
+    "surplus_source_field:group_structure_primary",
+    "missing_role:units_primary",
+    "bad_hash:units_primary",
+    "surplus_source_field:units_primary",
+    "missing_role:group_cover_primary",
+    "bad_hash:group_cover_primary",
+    "surplus_source_field:group_cover_primary",
+    "missing_role:homogeneous_cover_antecedent",
+    "bad_hash:homogeneous_cover_antecedent",
+    "surplus_source_field:homogeneous_cover_antecedent",
+    "missing_role:volume_context_antecedent",
+    "bad_hash:volume_context_antecedent",
+    "surplus_source_field:volume_context_antecedent",
+    "missing_role:galois_domination_primary",
+    "bad_hash:galois_domination_primary",
+    "surplus_source_field:galois_domination_primary",
+    "missing_role:galois_domination_construction_primary",
+    "bad_hash:galois_domination_construction_primary",
+    "surplus_source_field:galois_domination_construction_primary",
+    "false_scope:schema",
+    "false_scope:reviewed_proof_sha256",
+    "false_scope:field",
+    "false_scope:acting_group",
+    "false_scope:subgroup",
+    "false_scope:quotient",
+    "false_scope:normalized_trace",
+    "false_scope:determinant_character_required_trivial",
+    "false_scope:nontrivial_determinant_case_included",
+    "false_scope:constant_units_required",
+    "false_scope:split_group_required",
+    "false_scope:embedding_in_C_required",
+    "false_scope:all_K_algebra_automorphisms",
+    "false_scope:all_field_extensions",
+    "false_scope:extension_quantifiers",
+    "false_scope:volume_lemma",
+    "false_scope:top_cohomology_criterion",
+    "false_scope:determinant_cover",
+    "false_scope:intrinsic_cover_scope",
+    "false_scope:group_cover_import",
+    "false_scope:connected_stabilizer_Theorem1_2_imported",
+    "false_scope:nonGalois_cover_classification_claimed",
+    "false_scope:automorphisms_lift_to_G_assumed",
+    "false_scope:geometric_determinant_cover_lift_proved",
+    "false_scope:geometric_lift_descends_to_K_claimed",
+    "false_scope:zero_dimension",
+    "false_scope:marker_quantifiers",
+    "false_scope:purity_safety_unsafety_both_directions",
+    "false_scope:fixed_K_phase_field_extension_both_directions",
+    "false_scope:actual_descending_phase_on_finite_quotient_required",
+    "false_scope:preexisting_invariant_marker_on_finite_quotient_required",
+    "false_scope:finite_etale_fixed_marker_descent_by_normalized_trace",
+    "false_scope:averaging_preserves_purity",
+    "false_scope:starting_pure_unsafe_pair_created",
+    "false_scope:degree_filtration_or_Image_power_descent_claimed",
+    "false_scope:retained427_is_core_input",
+    "false_scope:Lie_image_is_ideal",
+    "false_scope:optional_full_determinant_square_one",
+    "false_scope:optional_sharpness_is_main_proof_premise",
+    "false_scope:trace_presentation_independent",
+    "false_scope:every_variety_isomorphism_trace_compatible",
+    "false_scope:general_morphism_trace_functoriality_claimed",
+    "false_scope:finite_etale_scope",
+    "false_scope:finite_etale_marked_identity",
+    "false_scope:finite_etale_fixed_marker",
+    "false_scope:finite_etale_purity_safety_unsafety_both_directions",
+    "false_scope:finite_etale_all_field_extensions_and_new_elements",
+    "false_scope:geometric_forms_without_K_points",
+    "false_scope:geometric_forms_scope",
+    "false_scope:full_theorem_logical_evidence",
+    "false_scope:controls",
+    "false_scope:assurance_flags",
+    "surplus_input_field",
+    "boolean_integer_bound",
+    "json:duplicate_top",
+    "json:duplicate_nested",
+    "json:NaN",
+    "json:Infinity",
+    "json:negative_Infinity",
+    "bad_ledger:schema",
+    "bad_ledger:surplus",
+    "bad_ledger:assurance_flags",
+    "duplicate_role",
+    "path_confinement:../outside.pdf",
+    "path_confinement:/tmp/outside.pdf",
+    "path_confinement:sources/../../outside.pdf",
+    "path_confinement:sources\\outside.pdf",
+    "path_confinement:sources//bad.pdf",
+    "path_confinement:./bad.pdf"
+  ],
+  "sources": [
+    {
+      "path": "verify_reductive_homogeneous_trace.py",
+      "relation": "Source_authentication_and_bounded_exact_support_NOT_a_proof_of_general_structure_or_covering_theorems",
+      "role": "exact_checker",
+      "sha256": "d42effd699221cc636b90223fd4b85710da1ef0b00d543241885a95effda2451"
+    },
+    {
+      "path": "sources/stacks-0BN2.html",
+      "relation": "ONLY_Lemma58_3_8_Tag0BN2_complete_finite_Galois_domination_construction_reproduced_in_Section25_2",
+      "role": "galois_domination_construction_primary",
+      "sha256": "ef24281ea6c76868d2a534c6abebb8e9faea6a9642682ad0720d4d4803a561d0"
+    },
+    {
+      "path": "sources/stacks-03SF.html",
+      "relation": "ONLY_Section58_7_Tag03SF_connected_finite_etale_Galois_covers_and_domination_NOT_a_nonGalois_homogeneous_cover_classification",
+      "role": "galois_domination_primary",
+      "sha256": "93635733d2e998fe28282d40a4fe70b19dcd3b4e4449fee951eea7433e5310f6"
+    },
+    {
+      "path": "sources/brion-szamuely-1109.2802v4.pdf",
+      "relation": "ONLY_Proposition1_1a_physical1_and_Section2_proof_physical3_connected_finite_etale_GALOIS_group_cover_central_isogeny_over_algebraically_closed_char0_NOT_Theorem1_2_for_disconnected_H",
+      "role": "group_cover_primary",
+      "sha256": "4fa0b70b09a200e4b3758c8e9ad17b245627cf30c8ddc5f3d398ce018fe09da2"
+    },
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "relation": "ONLY_5_25_5_28_printed105_106_22_42_22_43_printed477_478_12l_printed248_249_PLUS_OPTIONAL_delta_squared_lemma_21_60_21_61_printed442_443_12_23_printed240_22c_printed475_NOT_whole_book_review",
+      "role": "group_structure_primary",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67"
+    },
+    {
+      "path": "sources/borovoi-demarche-20121217.pdf",
+      "relation": "ONLY_Proposition5_2_and_complete_proof_physical17_18_exact_disconnected_stabilizer_GALOIS_cover_theorem_specialized_proof_reproduced_and_credited",
+      "role": "homogeneous_cover_antecedent",
+      "sha256": "80d830f74073185941fff49ee6e987b0b762c1e5f981007e350cd002f52e09b5"
+    },
+    {
+      "path": "sources/arzhantsev-matsushima-math0506430v1.pdf",
+      "relation": "ONLY_Section1_Theorem2_1_Proposition2_2_physical1_2_BOTH_affineness_directions_converse_for_H0_is_used_in_full_proof",
+      "role": "matsushima_primary",
+      "sha256": "786bff5625883f4456f6decd82e3fc72c60ace70ced673d58aeb20566889b685"
+    },
+    {
+      "path": "reductive_homogeneous_trace_inputs.json",
+      "relation": "Exact_full_theorem_quantifiers_covering_scope_all_extensions_and_one_fixed_marker",
+      "role": "typed_inputs",
+      "sha256": "d8fd4640899caf77711e1faa77cbe73f1d102889e6565cad93c19617b7d97a8b"
+    },
+    {
+      "path": "sources/conrad-units-on-product-varieties.pdf",
+      "relation": "ONLY_Theorem1_1_Corollary1_2_physical1_normalized_unit_character_over_same_field_Rosenlicht_input",
+      "role": "units_primary",
+      "sha256": "0720c7f594d69049ebe70d804582a252fcd83852b6f530b3f52fabb7cee9e9e0"
+    },
+    {
+      "path": "sources/kaliman-kutzschebauch-1201.4769v2.pdf",
+      "relation": "CONTEXT_ONLY_Proposition3_6_Remark3_7_physical9_Proposition8_4_Example8_5_physical24_25_Proposition8_6_physical26_NOT_a_logical_premise",
+      "role": "volume_context_antecedent",
+      "sha256": "db983596e35f530551fffbb4eef1387491f001b851fad95edc50a515e505587e"
+    },
+    {
+      "path": "REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md",
+      "relation": "Sections1--26_complete_all_field_trace_proof_volume_lemma_intrinsic_cover_isomorphisms_marked_finite_etale_trace_and_forms",
+      "role": "written_proof",
+      "sha256": "b4b223a00cd9ed00a3f3957749b488dc0daea32f6e3491cb047d6d6dcac0aba5"
+    }
+  ],
+  "status": "PASS",
+  "symmetric_power_coinvariant_models": [
+    {
+      "Lie_image_basis_size": 0,
+      "coinvariant_dimension": 1,
+      "dimension": 1,
+      "r": 0
+    },
+    {
+      "Lie_image_basis_size": 2,
+      "coinvariant_dimension": 0,
+      "dimension": 2,
+      "r": 1
+    },
+    {
+      "Lie_image_basis_size": 3,
+      "coinvariant_dimension": 0,
+      "dimension": 3,
+      "r": 2
+    },
+    {
+      "Lie_image_basis_size": 4,
+      "coinvariant_dimension": 0,
+      "dimension": 4,
+      "r": 3
+    },
+    {
+      "Lie_image_basis_size": 5,
+      "coinvariant_dimension": 0,
+      "dimension": 5,
+      "r": 4
+    },
+    {
+      "Lie_image_basis_size": 6,
+      "coinvariant_dimension": 0,
+      "dimension": 6,
+      "r": 5
+    },
+    {
+      "Lie_image_basis_size": 7,
+      "coinvariant_dimension": 0,
+      "dimension": 7,
+      "r": 6
+    },
+    {
+      "Lie_image_basis_size": 8,
+      "coinvariant_dimension": 0,
+      "dimension": 8,
+      "r": 7
+    },
+    {
+      "Lie_image_basis_size": 9,
+      "coinvariant_dimension": 0,
+      "dimension": 9,
+      "r": 8
+    },
+    {
+      "Lie_image_basis_size": 10,
+      "coinvariant_dimension": 0,
+      "dimension": 10,
+      "r": 9
+    },
+    {
+      "Lie_image_basis_size": 11,
+      "coinvariant_dimension": 0,
+      "dimension": 11,
+      "r": 10
+    }
+  ],
+  "torus_models": {
+    "finite_averaging_negative": {
+      "average": "(t+t^-1)/2",
+      "inference_rejected": "All-Aut trace invariance does not preserve phase purity under averaging.",
+      "pure_inputs": [
+        "t",
+        "t^-1"
+      ],
+      "square_trace": "1/2"
+    },
+    "fixed_pair_rows": [
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 1,
+        "moment": "-1"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 2,
+        "moment": "22/3"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 3,
+        "moment": "-32"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 4,
+        "moment": "112"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 5,
+        "moment": "-1040/3"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 6,
+        "moment": "35587/36"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 2,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 3,
+        "moment": "1"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 4,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 6,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 0,
+        "moment": "1"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 2,
+        "moment": "16/7"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 3,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 4,
+        "moment": "50/7"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 6,
+        "moment": "170/7"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 1,
+        "moment": "-1"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 2,
+        "moment": "22/3"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 3,
+        "moment": "-32"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 4,
+        "moment": "112"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 5,
+        "moment": "-1040/3"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 6,
+        "moment": "35587/36"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 2,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 3,
+        "moment": "1"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 4,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 6,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 0,
+        "moment": "1"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 2,
+        "moment": "16/7"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 3,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 4,
+        "moment": "50/7"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 6,
+        "moment": "170/7"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 1,
+        "moment": "-1"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 2,
+        "moment": "22/3"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 3,
+        "moment": "-32"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 4,
+        "moment": "112"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 5,
+        "moment": "-1040/3"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 6,
+        "moment": "35587/36"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 2,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 3,
+        "moment": "1"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 4,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 6,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 0,
+        "moment": "1"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 2,
+        "moment": "16/7"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 3,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 4,
+        "moment": "50/7"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 6,
+        "moment": "170/7"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 1,
+        "moment": "-1"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 2,
+        "moment": "22/3"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 3,
+        "moment": "-32"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 4,
+        "moment": "112"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 5,
+        "moment": "-1040/3"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 6,
+        "moment": "35587/36"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 2,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 3,
+        "moment": "1"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 4,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 6,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 0,
+        "moment": "1"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 2,
+        "moment": "16/7"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 3,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 4,
+        "moment": "50/7"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 6,
+        "moment": "170/7"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 1,
+        "moment": "-1"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 2,
+        "moment": "22/3"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 3,
+        "moment": "-32"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 4,
+        "moment": "112"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 5,
+        "moment": "-1040/3"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 0,
+        "m": 6,
+        "moment": "35587/36"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 2,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 3,
+        "moment": "1"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 4,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 1,
+        "m": 6,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 0,
+        "moment": "1"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 2,
+        "moment": "16/7"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 3,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 4,
+        "moment": "50/7"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "fixture": 2,
+        "m": 6,
+        "moment": "170/7"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 1,
+        "moment": "-1"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 2,
+        "moment": "22/3"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 3,
+        "moment": "-32"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 4,
+        "moment": "112"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 5,
+        "moment": "-1040/3"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 0,
+        "m": 6,
+        "moment": "35587/36"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 0,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 2,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 3,
+        "moment": "1"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 4,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 1,
+        "m": 6,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 0,
+        "moment": "1"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 1,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 2,
+        "moment": "16/7"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 3,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 4,
+        "moment": "50/7"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 5,
+        "moment": "0"
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "fixture": 2,
+        "m": 6,
+        "moment": "170/7"
+      }
+    ],
+    "nonconstant_unit_controls": 16,
+    "volume_signs": [
+      {
+        "a": "-2",
+        "epsilon": -1,
+        "volume_multiplier": -1
+      },
+      {
+        "a": "-2",
+        "epsilon": 1,
+        "volume_multiplier": 1
+      },
+      {
+        "a": "1/2",
+        "epsilon": -1,
+        "volume_multiplier": -1
+      },
+      {
+        "a": "1/2",
+        "epsilon": 1,
+        "volume_multiplier": 1
+      },
+      {
+        "a": "3",
+        "epsilon": -1,
+        "volume_multiplier": -1
+      },
+      {
+        "a": "3",
+        "epsilon": 1,
+        "volume_multiplier": 1
+      }
+    ]
+  }
+}

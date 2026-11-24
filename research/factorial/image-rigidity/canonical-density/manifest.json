@@ -1,0 +1,83 @@
+{
+  "check_counts": {
+    "json": 5,
+    "markdown_links": 4,
+    "python": 4
+  },
+  "date": "2026-11-22",
+  "deliberate_mutations_rejected": 7,
+  "external_review": false,
+  "files": [
+    {
+      "bytes": 4487,
+      "path": "README.md",
+      "sha256": "c092106821bb9eb584682e0cd1bceb83d69016a8def634fc56d4b360e057a46a"
+    },
+    {
+      "bytes": 8609,
+      "path": "canonical_density_exclusion.md",
+      "sha256": "3a4a48ca11658e7bb87985f4b06a09548b064e50e2e498efe37a17c63b8a409e"
+    },
+    {
+      "bytes": 1489,
+      "path": "density_exclusion_verification.json",
+      "sha256": "d681532f9339649b785fa92f7e8e9c371cfc1b0661c77786182af2da50934347"
+    },
+    {
+      "bytes": 9621,
+      "path": "inverse_canonical_reachability.md",
+      "sha256": "6345b503c1754630fe8e44cdb162cca672f05933c4b0094234d082cae91ea2ba"
+    },
+    {
+      "bytes": 3621,
+      "path": "inverse_reachability_verification.json",
+      "sha256": "7435f6d62f0a4eeac073b48fb5360ff9a1483089bf23034f830164704792755e"
+    },
+    {
+      "bytes": 7462,
+      "path": "moment_pair_certificates.json",
+      "sha256": "0f3e8f68902d838a3038e7913407ef76c2621d72dbb3e59d44cfb45513bec378"
+    },
+    {
+      "bytes": 8744,
+      "path": "moment_pair_obstructions.md",
+      "sha256": "2f40b43023e38b83f160420c44983305f810225964a29696ae6340711da91322"
+    },
+    {
+      "bytes": 2032,
+      "path": "moment_pair_verification.json",
+      "sha256": "33998ace269d990cb592c6b00e51ffa10133c96449aafc9c38bc63ee12b3c476"
+    },
+    {
+      "bytes": 2961,
+      "path": "portable_verification.json",
+      "sha256": "4c9197fadb3b6db192bdcc9e834d0254f4f02ad130c77b117dc062f58a55ad2d"
+    },
+    {
+      "bytes": 5616,
+      "path": "verify_audit_controls.py",
+      "sha256": "66d4ed1085f078f7e5b4717d00e1184ccac7c46fe55245ebffc90a449fe20f7b"
+    },
+    {
+      "bytes": 5822,
+      "path": "verify_density_exclusion.py",
+      "sha256": "994abcccd3a895a766caa7a851f32478e9d2e2aeb231866d4ed2bfe2027dcf51"
+    },
+    {
+      "bytes": 6745,
+      "path": "verify_inverse_reachability.py",
+      "sha256": "47f75c5458bba1f16d91e3cc2d0931539712c75f2dff45e0101c4c8c3eb1ee0e"
+    },
+    {
+      "bytes": 8142,
+      "path": "verify_moment_pairs.py",
+      "sha256": "2cadced81d0312cd886cfd08f168363c49d623cfd15b8cc842e9f60dc80dad16"
+    }
+  ],
+  "formal_verification": false,
+  "normal_optimized_byte_identical": 3,
+  "python_version": "3.12.14",
+  "scope": "Two canonical-density exclusions; a finite exact canonical membership theorem; coprimality of both retained obstruction moment pairs; a generic positive-law collision, not SFC closure.",
+  "status": "PASS",
+  "unrestricted_SFC_solved": false
+}

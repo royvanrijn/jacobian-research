@@ -1,0 +1,71 @@
+{
+  "schema": "global_cyclotomic_infinite_fibres_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "role": "required endpoint premise",
+      "exact_use": "Section1 odd-height all-order endpoint identity; inherited by the reciprocal-unit interface. No finite-moment extrapolation."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "role": "required reciprocal-unit theorem",
+      "exact_use": "FixedCoordinateFibreClassification parts1\u20134; exact pole/jet conditions, existence and cyclicity of a canonical polynomial generator, all rational reciprocal units in K(R), and original-field descent. These written premises are independently audited in this round."
+    },
+    {
+      "path": "research/foundations/extended-geometry/EFFECTIVE_ODD_START_FIBRE_CLASSIFICATION.md",
+      "sha256": "f13bbfa33f3fda433bf3b08f64fa7b59d2ebca488fcca7045dfeed6069919cb5",
+      "role": "prior twist-box context",
+      "exact_use": "Section5 E8\u2013E11 is the prior explicit pole-twist box. The new note reproves the required divisor and pole argument in Section5. The general Orbit Problem theorem in Section6 is not imported."
+    },
+    {
+      "path": "research/foundations/extended-geometry/DAVENPORT_ZANNIER_COORDINATE_FIBRES_AND_SHABAT_RIGIDITY.md",
+      "sha256": "aaacae42afa592c5ae0a91ca8036a9d56d58814c2782e47a0541b73c69a4700a",
+      "role": "prior restricted classification",
+      "exact_use": "Polynomial u/(xu') subclass and logarithmic stable-field rigidity; context and audited earlier scope, not an assumption on the new theorem."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "role": "primary field premise through retained theorem",
+      "exact_use": "Milne v5.10,Theorem9.19 and Lemma9.24,printed pp117\u2013118: arbitrary-field Luroth and rational-map field degree. Actual retained statements inspected in the preceding proofs and application hypotheses audited here."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/stacks_curves_function_fields_0bxx.html",
+      "sha256": "07dec8a97847292618371f2ef7ac390b31a58e2f5d79d65c4742211fec24df91",
+      "role": "primary curve premise through retained theorem",
+      "exact_use": "Stacks Section53.2,Theorem53.2.6 and Lemmas53.2.2,53.2.4,53.2.8,53.2.9(3): smooth projective function-field model,finite projections and constants. Used by retained marked-component proof,not a new covering classification."
+    },
+    {
+      "path": "research/foundations/extended-geometry/verify_odd_start_fixed_coordinate_fibres.py",
+      "sha256": "fca4424236bce1fc6bc276fde1482d8cb22750c287330b33708d974073328c3d",
+      "role": "exact arithmetic helper",
+      "exact_use": "Unchanged polynomial,Rat,construction and raw-moment formulae. The new checker explicitly substitutes exact coefficients in Q(i) or Q(sqrt2) using its own quadratic-field adapter. No prior receipt is used as proof."
+    }
+  ],
+  "new_statement": "For every odd a>=1 and characteristic-zero field K,all normalized rational endpoint coordinates with infinite polynomial two-height fibres are precisely the canonical nonpower compositions u=U(R) satisfying the explicit maximum-ramification,torsion and bounded pole-twist coset conditions G1\u2013G14. Geometric and K-rational twist descent are separate.",
+  "self_contained_steps": [
+    "Canonical generator iff the normalized polynomial reciprocal unit is not a proper polynomial power",
+    "All source-line jet conditions converted exactly into maximum quotient ramification inequalities",
+    "Exact finite simultaneous cyclotomic compatibility test and full infinite-branch exhaustion",
+    "Explicit finite-side cardinality bound when a canonical polynomial generator exists",
+    "No-twist common positive 2-adic-valuation criterion",
+    "Arbitrarily thick jets and a rational-pole-twist-essential family"
+  ],
+  "verification_scope": {
+    "written_proof": "Universal necessity,sufficiency,exhaustion and descent; not inferred from finite controls.",
+    "checker": "Bounded exact local order tables,simultaneous residue tests,polynomial reconstruction and raw moments over Q,Q(i),Q(sqrt2),with corrupted controls. Actual counts and current packet pins are in the receipt.",
+    "internal_proof_review": "Root and a separate internal Jacobian agent read the complete proof; no substantive gap reported. Reviewer requested an explicit G4\u2013G5 hypothesis on the ramification corollary,now present.",
+    "separate_example_control": "Jacobian reviewer independently used SymPy exact Q(sqrt2) cancellation for G30 at e2,a1: J degree5,R^8=1 mod J,eta=-1 mod J,G36,and normalized C,D degrees7,19 passed. This is separate from the checker.",
+    "replay": "Author exact replay is recorded in the current receipt. Any separate replay is a separate assurance action,not implied by this ledger."
+  },
+  "not_claimed": [
+    "Polynomial u/(xu') or squarefree jet polynomial as a hypothesis",
+    "All geometric pole twists descend to the original coefficient field",
+    "A global enumeration of isolated finite-fibre exponents or all coordinate degrees",
+    "A solution of unrestricted degree5/degree7 safety or arbitrary sphere-phase classification",
+    "A general Orbit Problem,Skolem\u2013Mahler\u2013Lech,Pell or Belyi theorem import",
+    "Historical novelty,publication,external mathematical review or formal verification"
+  ]
+}

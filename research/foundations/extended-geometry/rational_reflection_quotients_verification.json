@@ -1,0 +1,291 @@
+{
+  "status": "PASS",
+  "scope": "Implemented exact quotient extraction on seven specified inputs, and bounded exact pole-box, polynomial reconstruction, full-jet and moment controls. Universal extraction, exhaustion and the finite-fibre bound rely on the separate written proof.",
+  "arithmetic": "Exact rational and Q(i) polynomial/rational-function arithmetic; SymPy factorization, field linear algebra and univariate gcd; active assertions.",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "proof_sha256": "f4117799ab1a8fdbc8f2da0a98caed43674c07b414cf333b6526c0645dbc6243",
+  "checker_sha256": "829775e5edfea5179707d1b9701d3096d6c7817600de0918e7dff0b6a687b84c",
+  "source_ledger_sha256": "737137b0bd736ba13e424e729bc266d1b36ed2936da32c7bb82386f7127b68b7",
+  "source_pins_checked": 6,
+  "extractions": [
+    {
+      "coordinate": "x",
+      "N": 1,
+      "marked_component": "x + y",
+      "linear_space_dimension": 2,
+      "minimal_polynomial": "T - x",
+      "h": "x",
+      "h_degree": 1,
+      "w": "x",
+      "mobius_b": "0",
+      "outer": "z",
+      "basis": [
+        "1/x",
+        "x"
+      ],
+      "name": "linear",
+      "coefficient_field": "QQ",
+      "polynomial_direction": null
+    },
+    {
+      "coordinate": "-x/(x**2 - 1)",
+      "N": 2,
+      "marked_component": "x + y",
+      "linear_space_dimension": 3,
+      "minimal_polynomial": "T - x",
+      "h": "x",
+      "h_degree": 1,
+      "w": "x",
+      "mobius_b": "0",
+      "outer": "-z/(z**2 - 1)",
+      "basis": [
+        "1/(-x**3 + x)",
+        "-x/(x**2 - 1)",
+        "-x**3/(x**2 - 1)"
+      ],
+      "name": "rational_odd",
+      "coefficient_field": "QQ",
+      "polynomial_direction": null
+    },
+    {
+      "coordinate": "x**2 + x",
+      "N": 2,
+      "marked_component": "x**2 + x + y**2 + y",
+      "linear_space_dimension": 2,
+      "minimal_polynomial": "T**2 + T - x**2 - x",
+      "h": "x**2 + x",
+      "h_degree": 2,
+      "w": "x**2 + x",
+      "mobius_b": "0",
+      "outer": "z",
+      "basis": [
+        "1/(x**2 + x)",
+        "x**2 + x"
+      ],
+      "name": "polynomial_nonrational_return",
+      "coefficient_field": "QQ",
+      "polynomial_direction": null
+    },
+    {
+      "coordinate": "(-8*x**3 + 16*x**2 - 8*x)/(27*x**3 - 54*x**2 + 36*x - 8)",
+      "N": 3,
+      "marked_component": "x**3*y**3 - 2*x**3*y**2 + 7*x**3*y/6 - 4*x**3/27 - 2*x**2*y**3 + 4*x**2*y**2 - 7*x**2*y/3 + 8*x**2/27 + 7*x*y**3/6 - 7*x*y**2/3 + 4*x*y/3 - 4*x/27 - 4*y**3/27 + 8*y**2/27 - 4*y/27",
+      "linear_space_dimension": 2,
+      "minimal_polynomial": "T**3 - 2*T**2 + T*(-9*x**3 + 18*x**2 - 8)/(9*x - 8) + (8*x**3 - 16*x**2 + 8*x)/(9*x - 8)",
+      "h": "(-8*x**3 + 16*x**2 - 8*x)/(27*x**3 - 54*x**2 + 36*x - 8)",
+      "h_degree": 3,
+      "w": "(-8*x**3 + 16*x**2 - 8*x)/(9*x - 8)",
+      "mobius_b": "-27/8",
+      "outer": "z",
+      "basis": [
+        "(-486*x**4 + 1404*x**3 - 1431*x**2 + 576*x - 64)/(104976*x**6 - 419904*x**5 + 664848*x**4 - 520992*x**3 + 202176*x**2 - 31104*x)",
+        "(-81*x**6 + 324*x**5 - 1080*x**3 + 1350*x**2 - 576*x + 64)/(17496*x**6 - 69984*x**5 + 110808*x**4 - 86832*x**3 + 33696*x**2 - 5184*x)"
+      ],
+      "name": "weighted_DZ_singleton",
+      "coefficient_field": "QQ",
+      "polynomial_direction": null
+    },
+    {
+      "coordinate": "x/(x + 1)",
+      "N": 1,
+      "marked_component": "x*y + x/2 + y/2",
+      "linear_space_dimension": 2,
+      "minimal_polynomial": "T - x",
+      "h": "x/(x + 1)",
+      "h_degree": 1,
+      "w": "x",
+      "mobius_b": "1",
+      "outer": "z",
+      "basis": [
+        "(2*x + 1)/(2*x**2 + 2*x)",
+        "x/(x + 1)"
+      ],
+      "name": "mobius_polynomial_generator",
+      "coefficient_field": "QQ",
+      "polynomial_direction": {
+        "c": "1",
+        "R": "2*x + 1"
+      }
+    },
+    {
+      "coordinate": "(2*x**2 + 16*x)/(x**2 + 8*x + 16)",
+      "N": 2,
+      "marked_component": "x**2*y**2 + 8*x**2*y + 8*x**2 + 8*x*y**2 + 64*x*y + 64*x + 8*y**2 + 64*y",
+      "linear_space_dimension": 2,
+      "minimal_polynomial": "T**2 + 8*T - x**2 - 8*x",
+      "h": "(2*x**2 + 16*x)/(x**2 + 8*x + 16)",
+      "h_degree": 2,
+      "w": "x**2/8 + x",
+      "mobius_b": "1/2",
+      "outer": "z",
+      "basis": [
+        "(x**2 + 8*x + 8)/(2*x**4 + 32*x**3 + 160*x**2 + 256*x)",
+        "(x**4 + 16*x**3 - 512*x - 512)/(2*x**4 + 32*x**3 + 160*x**2 + 256*x)"
+      ],
+      "name": "quadratic_nonrational_return",
+      "coefficient_field": "QQ",
+      "polynomial_direction": {
+        "c": "2",
+        "R": "x**2/8 + x + 1"
+      }
+    },
+    {
+      "coordinate": "(-2*x**3/3 - 2*x**2 - 2*x)/(x**3*(-1 + I) + x**2*(-3 + 3*I) + x*(-3 + 3*I) - 2)",
+      "N": 3,
+      "marked_component": "x**3*y**3 + 3*x**3*y**2 + 3*x**3*y + x**3*(1/2 + I/2) + 3*x**2*y**3 + 9*x**2*y**2 + 9*x**2*y + x**2*(3/2 + 3*I/2) + 3*x*y**3 + 9*x*y**2 + 9*x*y + x*(3/2 + 3*I/2) + y**3*(1/2 + I/2) + y**2*(3/2 + 3*I/2) + y*(3/2 + 3*I/2)",
+      "linear_space_dimension": 2,
+      "minimal_polynomial": "T**3 + 3*T**2 + 3*T - x**3 - 3*x**2 - 3*x",
+      "h": "(-x**3/3 - x**2 - x)/(x**3*(-1/2 + I/2) + x**2*(-3/2 + 3*I/2) + x*(-3/2 + 3*I/2) - 1)",
+      "h_degree": 3,
+      "w": "x**3/3 + x**2 + x",
+      "mobius_b": "3/2 - 3*I/2",
+      "outer": "z",
+      "basis": [
+        "(-15116544*I*x**3 - 45349632*I*x**2 - 45349632*I*x + 7558272 - 7558272*I)/(x**6*(-6 + 6*I) + x**5*(-36 + 36*I) + x**4*(-90 + 90*I) + x**3*(-120 + 108*I) + x**2*(-90 + 54*I) - 36*x)",
+        "(-15116544*I*x**6 - 90699264*I*x**5 - 226748160*I*x**4 + 680244480*I*x**2 + 816293376*I*x - 136048896 + 136048896*I)/(x**6*(-6 + 6*I) + x**5*(-36 + 36*I) + x**4*(-90 + 90*I) + x**3*(-120 + 108*I) + x**2*(-90 + 54*I) - 36*x)"
+      ],
+      "name": "Qi_thick_jet",
+      "coefficient_field": "QQ<I>",
+      "polynomial_direction": {
+        "c": "1/3 + I/3",
+        "R": "3*x**3*(1/3 - I/3) + 3*x**2*(1 - I) + 3*x*(1 - I) + 1"
+      }
+    }
+  ],
+  "fibre_control_counts": {
+    "finite_pole_box_candidates": 3,
+    "polynomial_pairs": 12,
+    "raw_even_moments": 36,
+    "nonpolynomial_reconstructions": 5,
+    "thick_jet_tests": 8
+  },
+  "samples": [
+    {
+      "name": "linear_complete_singleton",
+      "heights": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "name": "empty_three_candidate_fibre",
+      "candidates": [
+        {
+          "exponent": -1,
+          "eta": "(-x - 1)/(x - 1)",
+          "jet_passed": false
+        },
+        {
+          "exponent": 0,
+          "eta": "1",
+          "jet_passed": false
+        },
+        {
+          "exponent": 1,
+          "eta": "(1 - x)/(x + 1)",
+          "jet_passed": false
+        }
+      ]
+    },
+    {
+      "name": "weighted_DZ_singleton",
+      "height": 3,
+      "eta": "1",
+      "X": "3*x**2/2 - 5*x/2 + 1",
+      "C": "-729*x**7/64 + 3645*x**6/64 - 243*x**5/2 + 2295*x**4/16 - 405*x**3/4 + 171*x**2/4 - 10*x + 1",
+      "D": "6561*x**11/256 - 54675*x**10/256 + 206307*x**9/256 - 465345*x**8/256 + 21789*x**7/8 - 45549*x**6/16 + 16947*x**5/8 - 8979*x**4/8 + 415*x**3 - 102*x**2 + 15*x - 1"
+    },
+    {
+      "name": "weighted_DZ_singleton",
+      "height": 5,
+      "eta": "1",
+      "X": "3*x**2/2 - 5*x/2 + 1",
+      "C": "-6561*x**11/256 + 54675*x**10/256 - 206307*x**9/256 + 465345*x**8/256 - 21789*x**7/8 + 45549*x**6/16 - 16947*x**5/8 + 8979*x**4/8 - 415*x**3 + 102*x**2 - 15*x + 1",
+      "D": "59049*x**15/1024 - 688905*x**14/1024 + 1869885*x**13/512 - 6265755*x**12/512 + 28988685*x**11/1024 - 49039101*x**10/1024 + 489645*x**9/8 - 15406605*x**8/256 + 1468935*x**7/32 - 869205*x**6/32 + 49471*x**5/4 - 34045*x**4/8 + 4285*x**3/4 - 745*x**2/4 + 20*x - 1"
+    },
+    {
+      "name": "weighted_DZ_singleton",
+      "height": 7,
+      "eta": "1",
+      "X": "3*x**2/2 - 5*x/2 + 1",
+      "C": "-59049*x**15/1024 + 688905*x**14/1024 - 1869885*x**13/512 + 6265755*x**12/512 - 28988685*x**11/1024 + 49039101*x**10/1024 - 489645*x**9/8 + 15406605*x**8/256 - 1468935*x**7/32 + 869205*x**6/32 - 49471*x**5/4 + 34045*x**4/8 - 4285*x**3/4 + 745*x**2/4 - 20*x + 1",
+      "D": "531441*x**19/4096 - 7971615*x**18/4096 + 56509893*x**17/4096 - 251647155*x**16/4096 + 789229251*x**15/4096 - 1852229349*x**14/4096 + 3373414695*x**13/4096 - 4879221057*x**12/4096 + 355471335*x**11/256 - 673791723*x**10/512 + 260678979*x**9/256 - 164682495*x**8/256 + 5287147*x**7/16 - 1094555*x**6/8 + 719949*x**5/16 - 183791*x**4/16 + 2195*x**3 - 591*x**2/2 + 25*x - 1"
+    },
+    {
+      "name": "degree_one_polynomial_direction",
+      "height": 1,
+      "eta": "1",
+      "X": "x + 1",
+      "C": "x**2 + 2*x + 1",
+      "D": "-x**4 - 4*x**3 - 6*x**2 - 4*x - 1"
+    },
+    {
+      "name": "degree_one_polynomial_direction",
+      "height": 1,
+      "eta": "2*x + 1",
+      "X": "x**2 + 2*x + 1",
+      "C": "x**3 + 3*x**2 + 3*x + 1",
+      "D": "-x**7 - 7*x**6 - 21*x**5 - 35*x**4 - 35*x**3 - 21*x**2 - 7*x - 1"
+    },
+    {
+      "name": "degree_one_polynomial_direction",
+      "height": 1,
+      "eta": "(2*x + 1)**2",
+      "X": "2*x**3 + 4*x**2 + 3*x + 1",
+      "C": "2*x**4 + 6*x**3 + 7*x**2 + 4*x + 1",
+      "D": "-8*x**10 - 56*x**9 - 180*x**8 - 352*x**7 - 466*x**6 - 438*x**5 - 297*x**4 - 144*x**3 - 48*x**2 - 10*x - 1"
+    },
+    {
+      "name": "degree_one_polynomial_direction",
+      "height": 1,
+      "eta": "(2*x + 1)**3",
+      "X": "4*x**4 + 10*x**3 + 9*x**2 + 4*x + 1",
+      "C": "4*x**5 + 14*x**4 + 19*x**3 + 13*x**2 + 5*x + 1",
+      "D": "-64*x**13 - 544*x**12 - 2112*x**11 - 4984*x**10 - 8032*x**9 - 9414*x**8 - 8331*x**7 - 5685*x**6 - 3015*x**5 - 1237*x**4 - 385*x**3 - 87*x**2 - 13*x - 1"
+    },
+    {
+      "name": "degree_one_polynomial_direction",
+      "height": 1,
+      "eta": "(2*x + 1)**4",
+      "X": "8*x**5 + 24*x**4 + 28*x**3 + 16*x**2 + 5*x + 1",
+      "C": "8*x**6 + 32*x**5 + 52*x**4 + 44*x**3 + 21*x**2 + 6*x + 1",
+      "D": "-512*x**16 - 5120*x**15 - 23808*x**14 - 68352*x**13 - 135744*x**12 - 198144*x**11 - 220672*x**10 - 192256*x**9 - 133320*x**8 - 74416*x**7 - 33604*x**6 - 12252*x**5 - 3569*x**4 - 812*x**3 - 138*x**2 - 16*x - 1"
+    },
+    {
+      "name": "quadratic_polynomial_direction",
+      "height": 1,
+      "eta": "(x**2/8 + x + 1)**2",
+      "X": "x**6/4096 + 7*x**5/1024 + 19*x**4/256 + 25*x**3/64 + 33*x**2/32 + 11*x/8 + 1",
+      "C": "x**7/8192 + 7*x**6/2048 + 5*x**5/128 + 15*x**4/64 + 51*x**3/64 + 25*x**2/16 + 7*x/4 + 1",
+      "D": "-x**19/137438953472 - 21*x**18/34359738368 - 205*x**17/8589934592 - 1235*x**16/2147483648 - 10283*x**15/1073741824 - 31399*x**14/268435456 - 2277*x**13/2097152 - 8215*x**12/1048576 - 374139*x**11/8388608 - 424255*x**10/2097152 - 385725*x**9/524288 - 282187*x**8/131072 - 332531*x**7/65536 - 157415*x**6/16384 - 7429*x**5/512 - 551*x**4/32 - 4001*x**3/256 - 661*x**2/64 - 9*x/2 - 1"
+    },
+    {
+      "name": "maximum_finite_ramification",
+      "h": "x**2 + x",
+      "pole_value": "-1/4",
+      "local_degree": 2,
+      "height": 1,
+      "outer_pole_order": 1,
+      "quotient_pole_cap": 0
+    }
+  ],
+  "negative_controls": [
+    "replace the marked component by the full correspondence",
+    "normalize by an arbitrary Mobius transform",
+    "omit the field-generator requirement",
+    "omit a quotient-denominator unit condition",
+    "ignore an ordinary critical jet",
+    "accept the weighted singleton at height one",
+    "use unramified allowance at a ramified preimage"
+  ],
+  "omitted_control": "The optional degree-four Q(sqrt(2)) twist-family extraction exceeded a 90-second exploratory cap and is not included in this receipt. No output or completion is claimed for that run.",
+  "not_claimed": [
+    "A full arbitrary-number-field fibre classifier implementation",
+    "A runtime bound for number-field factorization",
+    "Finite controls proving the unrestricted classification",
+    "Formal verification or external human review"
+  ],
+  "elapsed_seconds": 18.370493
+}

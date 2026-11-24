@@ -52,7 +52,12 @@ Its value-pair bound \(N^{2/3}/20000\) holds for eligible \(N\ge2^{69}\).
 
 Exact local-global equality also fails for \(D=-19\): 4 is locally
 admissible for \(x^2+xy+5y^2\), but its only primitive positive value
-at most 4 is 1. The remaining global exception lists below are open.
+at most 4 is 1.
+
+The [split-prime core experiment](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) now
+proves the complete core and primitive sumsets at discriminants −19, −43,
+−67 and −163. At −163 the scan through \(2^{34}\) is joined to the infinite
+tail by rational pruning and a complete factorization-based witness search.
 
 ## Reproducible bounded classification
 
@@ -93,9 +98,8 @@ Their sizes and largest elements are:
 
 The assertions about individual exceptions remain true without the
 upper-bound qualification: e.g. \(380\notin P_{-19}+P_{-19}\).
-For \(-19,-43,-67,-163\), the assertion that the lists have no further
-members is bounded by \(10^6\); their maxima are not proved global cutoffs.
-The \(-7\) exception list is globally complete by the separate proof above.
+This certificate proves completeness through \(10^6\). The separate proofs establish
+global completeness for \(-7,-19,-43,-67,-163\).
 
 The checker is
 [verify_primitive_norm_exact_sumsets.py](verify_primitive_norm_exact_sumsets.py).
@@ -147,11 +151,8 @@ through 16 against hand lists.
 
 ## Remaining exact obligations
 
-The -7, -8 and -11 classifications are proved in their linked canonical sources.
-For -19,-43,-67,-163 the bounded exception lists below remain globally
-unclassified: an effective cutoff and complete finite coverage are still
-needed. Increasing a scan bound without a completion argument does not
-prove that those lists have no further members.
+The −7, −8, −11, −19, −43, −67 and −163 classifications are proved in their
+linked canonical sources.
 
 
 ## An exact reduction with one coordinate equal to 1

@@ -1,0 +1,50 @@
+{
+  "schema": "starred_dixmier_primary_coefficient_audit_verification_v1",
+  "status": "PASS",
+  "arithmetic": "Exact SymPy polynomial identities and Weyl normal ordering",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "counts": {
+    "unrestricted_symbolic_coefficient_identities": 1,
+    "exact_commuting_witnesses": 1,
+    "genuine_nonzero_commutator_controls": 1,
+    "negative_controls": 2
+  },
+  "details": {
+    "normal_order": "X^i Y^j with [Y,X]=1",
+    "correct_odd_coefficient": "(r+s-1)/2 * (s*g'*h-r*h'*g)'",
+    "witness": {
+      "H": "X*Y + 1/2",
+      "P0": "X**2*Y**2 + 2*X*Y + 1/4",
+      "P1": "X**3*Y**3 + 9*X**2*Y**2/2 + 13*X*Y/4 + 1/8",
+      "r": 2,
+      "s": 3,
+      "g": "Y^2",
+      "h": "Y^3",
+      "actual_commutator": "0",
+      "actual_next_odd_coefficient": "0",
+      "alleged_remaining_coefficient": "24*Y^3",
+      "satisfies_nonzero_commutator_hypothesis": false
+    },
+    "positive_control": {
+      "P0": "-X/6 + Y**6 + 2*Y**2 + 3",
+      "P1": "3*Y",
+      "commutator": "1/2",
+      "satisfies_all_displayed_proposition_hypotheses": true
+    }
+  },
+  "source_pins_checked": 7,
+  "packet_pins": {
+    "research/dixmier/dixmier-formal-lifting/STARRED_DIXMIER_PRIMARY_COEFFICIENT_AUDIT.md": "7b38e2f4bf73b94c3cc3ed0c973caa7166bb423c6f973870fa6342e581b6c125",
+    "research/dixmier/dixmier-formal-lifting/verify_starred_dixmier_primary_coefficient_audit.py": "a8bc0a93ee40293c78a9d7341396947f10671cca82f7c5d50c01ecc19793e7db",
+    "research/dixmier/dixmier-formal-lifting/starred_dixmier_primary_coefficient_audit_source_ledger.json": "9c30b83545c516fc33a53f5b42694b4ff9e04c3b377eaf9b0f6f0a77b4176c87"
+  },
+  "scope": "Correction of one displayed intermediate coefficient identity in arXiv:1401.5141v1, with exact witnesses. The separate read-only foundation audit is recorded in the ledger and is not performed by this checker.",
+  "not_claimed": [
+    "A counterexample to Proposition 2.6 or the starred Dixmier theorem",
+    "An assertion about the uninspected publisher proof",
+    "Impossibility of proving the same conclusion by another argument",
+    "A new extension beyond the retained power-of-two classification",
+    "Formal verification or external human review"
+  ]
+}

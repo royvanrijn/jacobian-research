@@ -1,0 +1,1864 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "checker_sha256": "17d8cd5f923c3d5b9c68743e977e54f08065a4e6052e085a97eb7864bcb04b9d",
+  "field_models": {
+    "even_quadratic_Laurent_models": [
+      {
+        "dimension": 4,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 4,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0",
+        "r": 2
+      },
+      {
+        "dimension": 6,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 6,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0",
+        "r": 3
+      },
+      {
+        "dimension": 8,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 8,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0",
+        "r": 4
+      },
+      {
+        "dimension": 10,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 10,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0",
+        "r": 5
+      },
+      {
+        "dimension": 12,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0",
+        "r": 6
+      },
+      {
+        "dimension": 12,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0",
+        "r": 6
+      }
+    ],
+    "negative_models": {
+      "dependent_Gram_basis": "REJECTED in dimensions3 and4",
+      "non_formally_real_square_isotropy": "0"
+    },
+    "rational_Gram_models": [
+      {
+        "basis_size": 8,
+        "model": "basis",
+        "pivots": [
+          "1",
+          "1/3",
+          "1/3",
+          "1/3",
+          "4/15",
+          "1/15",
+          "1/15",
+          "1/15"
+        ],
+        "rational_SOS_counts": [
+          1,
+          3,
+          3,
+          3,
+          60,
+          15,
+          15,
+          15
+        ],
+        "sphere_ambient_dimension": 3
+      },
+      {
+        "basis_size": 8,
+        "model": "triangular_mixture",
+        "pivots": [
+          "1",
+          "1/3",
+          "1/3",
+          "1/3",
+          "4/15",
+          "1/15",
+          "1/15",
+          "1/15"
+        ],
+        "rational_SOS_counts": [
+          1,
+          3,
+          3,
+          3,
+          60,
+          15,
+          15,
+          15
+        ],
+        "sphere_ambient_dimension": 3
+      },
+      {
+        "basis_size": 12,
+        "model": "basis",
+        "pivots": [
+          "1",
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/6",
+          "1/24",
+          "1/24",
+          "1/24",
+          "1/24",
+          "1/24",
+          "1/24"
+        ],
+        "rational_SOS_counts": [
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "sphere_ambient_dimension": 4
+      },
+      {
+        "basis_size": 12,
+        "model": "triangular_mixture",
+        "pivots": [
+          "1",
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/6",
+          "1/24",
+          "1/24",
+          "1/24",
+          "1/24",
+          "1/24",
+          "1/24"
+        ],
+        "rational_SOS_counts": [
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "sphere_ambient_dimension": 4
+      }
+    ],
+    "scope": "Declared bounded rational models support E1/E3, Laurent dilation and Gram linear algebra; they do not establish arbitrary q/field/dimension or global Mathieu classification."
+  },
+  "inputs_sha256": "0a40c7cfd30f185e9cc76dfbf1332e3e4256be3610bb946909c238eea202b4e2",
+  "meaning": "Source authentication and declared bounded exact supporting controls PASS. The complete written proof and narrow Milne/DvK imports establish the stated orders, standard Q-model field extensions, formally real Gram implication and arbitrary even nondegenerate quadratic complements. Finite models do not prove all-order purity, arbitrary fields/forms, complete reducibility, quadratic normalization or any global Mathieu classification.",
+  "models": {
+    "S2_height_Laurent_models": [
+      {
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      }
+    ],
+    "SU_n_Laurent_models": [
+      {
+        "N": 2,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "N": 2,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "N": 3,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "N": 4,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "N": 5,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "N": 6,
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      }
+    ],
+    "beta_polynomial_CDF_models": [
+      {
+        "a": 1,
+        "b": 1,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "k": 6,
+        "moment": "1/7"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 0,
+        "moment": "1"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 1,
+        "moment": "1/2"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 2,
+        "moment": "1/3"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 3,
+        "moment": "1/4"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 4,
+        "moment": "1/5"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 5,
+        "moment": "1/6"
+      },
+      {
+        "a": 4,
+        "b": 4,
+        "k": 6,
+        "moment": "1/7"
+      }
+    ],
+    "negative_models": {
+      "omitting_SU3_CDF_first_moment": "1/3",
+      "wrong_middle_coefficient_first_moment": "1/2"
+    },
+    "quaternion_pullback_models": [
+      {
+        "m": 1,
+        "marked": "1/2",
+        "pure": "0"
+      },
+      {
+        "m": 2,
+        "marked": "-1/3",
+        "pure": "0"
+      },
+      {
+        "m": 3,
+        "marked": "1/4",
+        "pure": "0"
+      },
+      {
+        "m": 4,
+        "marked": "-1/5",
+        "pure": "0"
+      },
+      {
+        "m": 5,
+        "marked": "1/6",
+        "pure": "0"
+      },
+      {
+        "m": 6,
+        "marked": "-1/7",
+        "pure": "0"
+      },
+      {
+        "m": 7,
+        "marked": "1/8",
+        "pure": "0"
+      },
+      {
+        "m": 8,
+        "marked": "-1/9",
+        "pure": "0"
+      },
+      {
+        "m": 9,
+        "marked": "1/10",
+        "pure": "0"
+      },
+      {
+        "m": 10,
+        "marked": "-1/11",
+        "pure": "0"
+      }
+    ],
+    "quaternion_regular_formula_pullback": true
+  },
+  "proof_sha256": "8537845bffd21a60bcadcaaff190501b7d9d6869f395680c241b373ee443d97a",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "schema": 2,
+  "scope": {
+    "Gram_scope": "EVERY finite Q-independent coefficient set has rational Gram matrix, strictly positive definite after R-Haar extension; exact rational LDL gives positive rational pivots",
+    "Lagrange_four_square_import_required": false,
+    "Long_Theorem4_2_is_uniform_SU_n_S2_quaternion_core_premise": false,
+    "Long_interval_construction_claimed_new": false,
+    "Long_split_real_SL2_comparison_uses_Theorem4_2_import": true,
+    "Q_itself_has_product_counterexamples": true,
+    "S2_phase": "f=((1+z)*t-2*z+(z-1)*t^-1)/2; h=t^-1",
+    "S2_scope": "standard Q-sphere x^2+y^2+z^2=1 after ANY char0 K, times SPLIT G_m; real specialization compact SO(3)/SO(2); v=(1+z)/2",
+    "SU_n_first_column": "OVER R: uniform complex sphere by transitivity; normalized complex Gaussians give exact Beta(1,n-1). These rational trace moments descend to Q then all K.",
+    "SU_n_scope": "EVERY n>=2 standard Q(i)-unitary Q-form after ANY char0 field K, times SPLIT G_m; real specialization compact SU(n); u=a11^2+b11^2, v=1-(1-u)^(n-1)",
+    "SU_n_to_SO_group_map_surjective_assumed": false,
+    "all_char0_standard_Q_form_counterexamples": true,
+    "all_order_identity": "for EVERY integer m>=1: Lambda(f^m)=0 and Lambda(h*f^m)=(-1)^(m-1)/(m+1) !=0",
+    "all_order_proof": "exact Laurent identity integral_0^1 f(s,t)^m ds=(t-1)^(m-1)*(t-t^-m)/(m+1); positive and negative exponents separated",
+    "alternative_SU_n_bridge": "standard q on dimension2n; (M,s)->s*(first complex column), q->s^2, A->s^2*|M11|^2; U_n x G_m geometrically transitive on target, so trace restriction; CT(t->s^2) recovers degree1 family",
+    "arbitrary_twists_of_standard_unitary_or_sphere_forms_claimed": false,
+    "arbitrary_upstairs_phase_descends_claimed": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "base_field": "ANY characteristic-zero K for standard Q-form and even-quadratic bad pairs; individual-factor Mathieu product-instability conclusion for EVERY FORMALLY REAL K; R is a special calculation, not the whole scope",
+    "beta_CDF_scope": "GIVEN regular u with Beta(a,b) law for POSITIVE INTEGER a,b; polynomial V(s)=((a+b-1)!/((a-1)!(b-1)!))*integral_0^s r^(a-1)*(1-r)^(b-1)dr makes V(u) uniform",
+    "compact_derived_suffices_for_Mathieu_claimed": false,
+    "compact_factor_Mathieu_over_C_claimed": false,
+    "compact_real_factor_Mathieu": true,
+    "compactness_of_general_K_points_claimed": false,
+    "complete_real_classification_claimed": false,
+    "controls": {
+      "Gram_basis_sizes": [
+        8,
+        12
+      ],
+      "Gram_sphere_dimensions": [
+        3,
+        4
+      ],
+      "Gram_triangular_mixtures": true,
+      "SU_n_sizes": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "beta_a_max": 4,
+      "beta_b_max": 4,
+      "beta_moment_max": 6,
+      "even_r_max": 6,
+      "marked_moment_max": 10
+    },
+    "cover_marker_choice_depends_on_order": false,
+    "cover_marker_scope": "quaternion and even-quadratic ACTUAL double covers; EVERY GIVEN downstairs phase, ONE fixed marker, normalized trace Tp=(1+tau)/2=Tr/2, ALL m>=0, both purity/safety/unsafety directions",
+    "embedding_entire_K_in_R_or_C_required": false,
+    "even_quadratic_all_order_moments": "ALL m>=1: Lambda_X(F^m)=0 and Lambda_X(H F^m)=(-1)^(m-1)/(m+1); all extensions",
+    "even_quadratic_beta_moments": "lambda_{q=1}(A(w)^k)=k!*(r-1)!/(k+r-1)! for ALL k>=0 via standard Q real-sphere law, Kbar pair-normalization and faithful descent",
+    "even_quadratic_cover": "W={q=1}, Y=W x G_m, p(w,s)=s*w; O(Y)=O(X)[s]/(s^2-q), finite faithfully flat rank2 and etale; tau=(-w,-s)",
+    "even_quadratic_dimension_min": 4,
+    "even_quadratic_norm_one_K_point_required": false,
+    "even_quadratic_phase": "u=A/q, v=1-(B/q)^(r-1), F=(1-q^-1)*(1-v+v*q), ONE fixed H=q^-1; equivalently F=(q-1)-(q-1)^2*B^(r-1)/q^r",
+    "even_quadratic_requires_positive_definiteness": false,
+    "even_quadratic_requires_split_form": false,
+    "even_quadratic_scope": "EVERY nondegenerate quadratic form q on dimension N=2r>=4 over ANY char0 K; choose orthogonal nondegenerate rank2 A and rank(2r-2) B, q=A+B",
+    "even_quadratic_space": "X=Spec K[V,q^-1], geometrically homogeneous under connected reductive SO(q) x G_m; quotient/field statements scheme-geometric, not K-point transitivity",
+    "every_compact_factor_times_Gm_fails_claimed": false,
+    "external_full_homogeneous_trace_package_is_required_premise": false,
+    "finite_controls_prove_unrestricted_orders": false,
+    "forced_reverse_from_SU_n_witness_to_arbitrary_q_claimed": false,
+    "formally_real_compact_form_factors_have_only_zero_pure_element": true,
+    "formally_real_product_of_two_Mathieu_factors_fails": true,
+    "formally_real_scope": "-1 is NOT a finite sum of squares in K; use this DEFINITION directly, no chosen ordering",
+    "functional": "unique normalized invariant K-linear Reynolds projection; on standard real compact factors Haar, on products tensor Laurent CT; no compactness of arbitrary K-points",
+    "given_phase_cover_purity_forward": true,
+    "given_phase_cover_purity_reverse": true,
+    "given_phase_cover_safety_forward": true,
+    "given_phase_cover_safety_reverse": true,
+    "given_phase_cover_trace": "for EVERY GIVEN downstairs g under quaternion or even-quadratic actual double cover and ONE fixed b upstairs, ALL m>=0: Lambda_up(b*(pstar g)^m)=Lambda_down(Tp(b)*g^m), Tp=(1+tau)/2=Tr/2",
+    "given_phase_cover_unsafety_both_directions": true,
+    "global_Mathieu_property_scalar_extension_invariant_claimed": false,
+    "independent_direct_and_quadratic_pullback_routes_retained": true,
+    "noninteger_beta_CDF_regular_claimed": false,
+    "odd_cover_pointed_K_identification_without_K_point_claimed": false,
+    "odd_dimension_global_Mathieu_classification_claimed": false,
+    "odd_dimensional_unsafe_phase_constructed": false,
+    "ordering_or_Artin_Schreier_import_required": false,
+    "phase_averaging_or_phase_norm_preserves_purity_claimed": false,
+    "product_of_two_Mathieu_factors_can_fail": true,
+    "purity_of_power_implies_purity_of_root_claimed": false,
+    "quaternion_cover": "p:SU2_compact x G_m -> GL_1(H), (q,s)->s*q; O(cover)=O(base)[s]/(s^2-N), finite faithfully flat rank2, derivative2s unit, kernel diagonal mu_2",
+    "quaternion_derived": "SL_1(H_K), with compact real SU2 realization; geometric group SL2; no nonidentity K-unipotents if K formally real",
+    "quaternion_group": "standard Hamilton Q-algebra (-1,-1)_Q, base changed to ANY char0 K; GL_1(H_K)=Spec K[a,b,c,d,N^-1], N=sum four squares",
+    "quaternion_no_nonidentity_K_unipotents_for_formally_real_K": true,
+    "quaternion_phase": "alpha=a^2+b^2, beta=c^2+d^2; F=(N-1)*(alpha*N+beta)/N^2; ONE fixed Hmark=N^-1",
+    "quaternion_pullback": "pstar(F)=(1-s^-2)*((1-u)+u*s^2), pstar(Hmark)=s^-2; d=2 Long family, trace restriction by direct equivariant isogeny uniqueness",
+    "rational_SOS_identity": "positive rational A/B is a sum of A*B copies of (1/B)^2; formally real sum of squares0 forces all terms0, so lambda_K(f^2)=0 implies f=0",
+    "rational_models": "standard determinant-one unitary Q-group of Q(i)^n, standard Q-sphere x^2+y^2+z^2=1, Hamilton Q-quaternion group; base change THESE specified models to K",
+    "rational_trace": "A_Q=Q1 directsum Lie(G_Q)A_Q; normalized invariant Lambda_Q from same-field complete reducibility; Lambda_K=id_K tensor Lambda_Q for EVERY field extension",
+    "reused_Milne_source_leaf": "SRC-RHT-MILNE-COMPLETE-REDUCIBILITY; exact existing canonical PDF, narrow22.42--22.43 and12l scope only",
+    "reviewed_proof_sha256": "8537845bffd21a60bcadcaaff190501b7d9d6869f395680c241b373ee443d97a",
+    "schema": 2,
+    "split_real_torus_Mathieu": true,
+    "torus_Mathieu_any_char0_field": true,
+    "torus_field_embedding_scope": "ONLY the finitely generated coefficient field Q(coefficients of ONE GIVEN phase and marker) embeds in C; never the entire arbitrary K",
+    "uniform_criterion": "ANY commutative unital real algebra B and normalized R-linear lambda, GIVEN v with lambda(p(v))=integral_0^1 p(s)ds for EVERY real polynomial p",
+    "uniform_phase": "f=(1-t^-1)((1-v)+v*t), ONE fixed h=t^-1 in B[t,t^-1]",
+    "whole_Milne_book_review_claimed": false
+  },
+  "source_ledger_sha256": "9761efc9bc4cd84fa334d62d8b056e0dc207c43d2acdb2b857bee7506b316cb5",
+  "source_scope_negative_controls": [
+    "missing_role:written_proof",
+    "bad_hash:written_proof",
+    "surplus_source_field:written_proof",
+    "missing_role:exact_checker",
+    "bad_hash:exact_checker",
+    "surplus_source_field:exact_checker",
+    "missing_role:typed_inputs",
+    "bad_hash:typed_inputs",
+    "surplus_source_field:typed_inputs",
+    "missing_role:long_known_method_primary",
+    "bad_hash:long_known_method_primary",
+    "surplus_source_field:long_known_method_primary",
+    "missing_role:long_split_SL2_comparison_primary",
+    "bad_hash:long_split_SL2_comparison_primary",
+    "surplus_source_field:long_split_SL2_comparison_primary",
+    "missing_role:meckes_column_primary",
+    "bad_hash:meckes_column_primary",
+    "surplus_source_field:meckes_column_primary",
+    "missing_role:dvk_torus_comparison_primary",
+    "bad_hash:dvk_torus_comparison_primary",
+    "surplus_source_field:dvk_torus_comparison_primary",
+    "missing_role:complete_reducibility_primary_reused",
+    "bad_hash:complete_reducibility_primary_reused",
+    "surplus_source_field:complete_reducibility_primary_reused",
+    "false_scope:schema",
+    "false_scope:reviewed_proof_sha256",
+    "false_scope:base_field",
+    "false_scope:functional",
+    "false_scope:uniform_criterion",
+    "false_scope:uniform_phase",
+    "false_scope:all_order_identity",
+    "false_scope:all_order_proof",
+    "false_scope:beta_CDF_scope",
+    "false_scope:noninteger_beta_CDF_regular_claimed",
+    "false_scope:SU_n_scope",
+    "false_scope:SU_n_first_column",
+    "false_scope:S2_scope",
+    "false_scope:S2_phase",
+    "false_scope:quaternion_group",
+    "false_scope:quaternion_phase",
+    "false_scope:quaternion_cover",
+    "false_scope:quaternion_pullback",
+    "false_scope:quaternion_derived",
+    "false_scope:given_phase_cover_trace",
+    "false_scope:given_phase_cover_purity_forward",
+    "false_scope:given_phase_cover_purity_reverse",
+    "false_scope:given_phase_cover_safety_forward",
+    "false_scope:given_phase_cover_safety_reverse",
+    "false_scope:given_phase_cover_unsafety_both_directions",
+    "false_scope:arbitrary_upstairs_phase_descends_claimed",
+    "false_scope:purity_of_power_implies_purity_of_root_claimed",
+    "false_scope:cover_marker_choice_depends_on_order",
+    "false_scope:compact_real_factor_Mathieu",
+    "false_scope:split_real_torus_Mathieu",
+    "false_scope:product_of_two_Mathieu_factors_can_fail",
+    "false_scope:compact_derived_suffices_for_Mathieu_claimed",
+    "false_scope:compact_factor_Mathieu_over_C_claimed",
+    "false_scope:global_Mathieu_property_scalar_extension_invariant_claimed",
+    "false_scope:every_compact_factor_times_Gm_fails_claimed",
+    "false_scope:complete_real_classification_claimed",
+    "false_scope:Long_interval_construction_claimed_new",
+    "false_scope:Long_split_real_SL2_comparison_uses_Theorem4_2_import",
+    "false_scope:Long_Theorem4_2_is_uniform_SU_n_S2_quaternion_core_premise",
+    "false_scope:finite_controls_prove_unrestricted_orders",
+    "false_scope:external_full_homogeneous_trace_package_is_required_premise",
+    "false_scope:controls",
+    "false_scope:assurance_flags",
+    "false_scope:rational_models",
+    "false_scope:rational_trace",
+    "false_scope:all_char0_standard_Q_form_counterexamples",
+    "false_scope:formally_real_scope",
+    "false_scope:formally_real_compact_form_factors_have_only_zero_pure_element",
+    "false_scope:formally_real_product_of_two_Mathieu_factors_fails",
+    "false_scope:Q_itself_has_product_counterexamples",
+    "false_scope:compactness_of_general_K_points_claimed",
+    "false_scope:arbitrary_twists_of_standard_unitary_or_sphere_forms_claimed",
+    "false_scope:Gram_scope",
+    "false_scope:rational_SOS_identity",
+    "false_scope:ordering_or_Artin_Schreier_import_required",
+    "false_scope:Lagrange_four_square_import_required",
+    "false_scope:torus_Mathieu_any_char0_field",
+    "false_scope:torus_field_embedding_scope",
+    "false_scope:embedding_entire_K_in_R_or_C_required",
+    "false_scope:quaternion_no_nonidentity_K_unipotents_for_formally_real_K",
+    "false_scope:even_quadratic_scope",
+    "false_scope:even_quadratic_dimension_min",
+    "false_scope:even_quadratic_requires_positive_definiteness",
+    "false_scope:even_quadratic_requires_split_form",
+    "false_scope:even_quadratic_norm_one_K_point_required",
+    "false_scope:even_quadratic_space",
+    "false_scope:even_quadratic_phase",
+    "false_scope:even_quadratic_all_order_moments",
+    "false_scope:even_quadratic_beta_moments",
+    "false_scope:even_quadratic_cover",
+    "false_scope:cover_marker_scope",
+    "false_scope:odd_dimensional_unsafe_phase_constructed",
+    "false_scope:odd_dimension_global_Mathieu_classification_claimed",
+    "false_scope:odd_cover_pointed_K_identification_without_K_point_claimed",
+    "false_scope:phase_averaging_or_phase_norm_preserves_purity_claimed",
+    "false_scope:alternative_SU_n_bridge",
+    "false_scope:SU_n_to_SO_group_map_surjective_assumed",
+    "false_scope:forced_reverse_from_SU_n_witness_to_arbitrary_q_claimed",
+    "false_scope:independent_direct_and_quadratic_pullback_routes_retained",
+    "false_scope:reused_Milne_source_leaf",
+    "false_scope:whole_Milne_book_review_claimed",
+    "json:duplicate_top",
+    "json:duplicate_nested",
+    "json:NaN",
+    "json:Infinity",
+    "json:negative_Infinity",
+    "boolean_integer_bound",
+    "surplus_input_field",
+    "bad_ledger:schema",
+    "bad_ledger:surplus",
+    "bad_ledger:assurance_flags",
+    "duplicate_role",
+    "path_confinement:../outside.pdf",
+    "path_confinement:/tmp/outside.pdf",
+    "path_confinement:sources/../../outside.pdf",
+    "path_confinement:sources\\outside.pdf",
+    "path_confinement:sources//bad.pdf",
+    "path_confinement:./bad.pdf"
+  ],
+  "sources": [
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "relation": "REUSED_SRC_RHT_MILNE_COMPLETE_REDUCIBILITY_ONLY_22_42_22_43_printed477_478_and_12l_12_53_Reynolds_printed248_249_same_field_rational_semisimplicity_NOT_whole_book_or_full_allAut_theorem",
+      "role": "complete_reducibility_primary_reused",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67"
+    },
+    {
+      "path": "sources/dvk-powers-1998.pdf",
+      "relation": "ONLY_printed222_223_and_Section3_scalar_Laurent_Mathieu_theorem_over_C_local_finite_coefficient_field_extension_proved_in_Section10_NOT_function_valued_coefficients_or_entire_K_embedding",
+      "role": "dvk_torus_comparison_primary",
+      "sha256": "bb002d12b539a1ff3fdd099f343d3accd921ccf60f8a149f29b07cd0f7e87e1b"
+    },
+    {
+      "path": "verify_field_mathieu_product_quadratic.py",
+      "relation": "Source_authentication_and_bounded_exact_CDF_Laurent_Gram_models_NOT_unrestricted_field_or_quadratic_form_proof",
+      "role": "exact_checker",
+      "sha256": "17d8cd5f923c3d5b9c68743e977e54f08065a4e6052e085a97eb7864bcb04b9d"
+    },
+    {
+      "path": "sources/long-2607.19012v1.html",
+      "relation": "CREDITED_KNOWN_METHOD_Theorem2_1_complete_beta_binomial_proof_Proposition3_1_Lemma4_1_NOT_a_new_interval_counterexample_or_Jacobian_claim",
+      "role": "long_known_method_primary",
+      "sha256": "abeec76e95cba0e6244f4af31240634e28d657116c8afcf743b58db144dd7ebd"
+    },
+    {
+      "path": "sources/long-2607.19012v1.html",
+      "relation": "ACTUAL_IMPORT_ONLY_Theorem4_2_exact_complex_SU2_Haar_pair_F_equals_1plusc_times_adplusb_H_equals_minusc_all_orders_USED_FOR_SPLIT_REAL_SL2_COMPARISON_via_real_coefficients_trace_uniqueness_and_scalar_extension_NOT_uniform_SU_n_S2_quaternion_core",
+      "role": "long_split_SL2_comparison_primary",
+      "sha256": "abeec76e95cba0e6244f4af31240634e28d657116c8afcf743b58db144dd7ebd"
+    },
+    {
+      "path": "sources/meckes-haar-book.pdf",
+      "relation": "ONLY_Section1_2_printed19_20_Haar_first_column_uniform_on_real_or_complex_sphere_including_SU_n_last_column_adjustment_CROSSCHECK_self_contained_transitivity_Gaussian_proof_is_in_Section3",
+      "role": "meckes_column_primary",
+      "sha256": "12c9e49c9768f9f87951a59e6f4e960bf4a5bf6aa6f7fc5c8b442076e57d3dbe"
+    },
+    {
+      "path": "field_mathieu_product_quadratic_inputs.json",
+      "relation": "Exact_standard_Q_models_all_char0_fixed_pair_identities_formal_reality_Gram_all_even_quadratic_scopes_and_given_phase_cover_directions",
+      "role": "typed_inputs",
+      "sha256": "0a40c7cfd30f185e9cc76dfbf1332e3e4256be3610bb946909c238eea202b4e2"
+    },
+    {
+      "path": "FIELD_MATHIEU_PRODUCT_AND_QUADRATIC_COUNTEREXAMPLES.md",
+      "relation": "Sections1--22_complete_R_Q_all_char0_formally_real_Gram_even_quadratic_actual_cover_and_acyclic_comparison_proofs",
+      "role": "written_proof",
+      "sha256": "8537845bffd21a60bcadcaaff190501b7d9d6869f395680c241b373ee443d97a"
+    }
+  ],
+  "status": "PASS"
+}

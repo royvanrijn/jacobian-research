@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "path": "QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md",
+      "sha256": "69582d9ee0446768701cb3fb0375ffefd8e8631e1382c2923bfcbfa28e0ae82c",
+      "role": "written_universal_proof"
+    },
+    {
+      "path": "verify_quadratic_uniform_normalizer.py",
+      "sha256": "613f98c163099866a8cd656a349040863ccb013ba6149392c48470c4fef73745",
+      "role": "bounded_exact_checker"
+    },
+    {
+      "path": "quadratic_uniform_normalizer_inputs.json",
+      "sha256": "44b62800cf00878245a1266218c976ab0d0009e957545d2622ae18bbd4b16cb1",
+      "role": "typed_replay_scope"
+    },
+    {
+      "path": "sources/long-spherical-e9edac2.pdf",
+      "sha256": "b2bf25fbc2d6211333d4ff3e1f6de0b6562990e869c6078a2e219ef746f1026b",
+      "role": "classical_method_context_not_logical_premise"
+    },
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67",
+      "role": "same_field_complete_reducibility"
+    },
+    {
+      "path": "REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md",
+      "sha256": "b4b223a00cd9ed00a3f3957749b488dc0daea32f6e3491cb047d6d6dcac0aba5",
+      "role": "narrow_normalized_trace_alternate_route"
+    }
+  ]
+}

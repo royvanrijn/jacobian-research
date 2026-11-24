@@ -1,0 +1,39 @@
+{
+  "checker_sha256": "de0709bb3e99055c248eee5ecc4c69a3f7dd74b301a64ec5eb26e38edd36a9a7",
+  "note_sha256": "646708ec9d996f1148cc172405e36b2841eb6cd645b046cc3c1a4bfa8564413f",
+  "row_merging": {
+    "distinct_column_checks": 8,
+    "source_reciprocal_identities": 1612,
+    "target_quadratic_identities": 60,
+    "upper_half_plane_zeros": 4
+  },
+  "scope": "finite exact controls for the uniform private-degree proof and row-merge counterexample",
+  "source_pins": {
+    "POWER_DIAGONAL_LINEAR_SFC_TRANSFER.md": "40278040a10d4813c473e8256b868e4fb6d42f20912972b801136398436609d6",
+    "SFC_IDENTICAL_MONOMIAL_PAIR.md": "7157a05550267289e1cbfc2c01f08659eb2d85e4b9d62661d3e4e57c2fb0e04e",
+    "UNRESTRICTED_SFC_MECHANISMS.tex": "f8b3dfc5947601fb002aee0ba942b0fc20b7ef46ca8e0d4f69b5a3e5e1361785"
+  },
+  "status": "PASS",
+  "swap_pairs": {
+    "controls": [
+      "altered middle coefficient",
+      "malformed degree",
+      "zero difference outside mirrored-pair convention",
+      "negative base exponent",
+      "common-power SFC example b=d=1 has failed coefficient criterion, not failed SFC",
+      "private degree one has limiting ratio 1/2; the geometric-sum family remains SFC"
+    ],
+    "counts": {
+      "bezout_identities": 49,
+      "derivative_inequalities": 168,
+      "equal_row_identities": 308,
+      "exact_logconcavity_ratios": 196,
+      "finite_order_refinements": 10,
+      "matched_merge_identities": 5,
+      "normalization_identities": 308,
+      "padding_identities": 27,
+      "symbolic_endpoint_limits": 10
+    },
+    "uniform_parameter_cases": 7
+  }
+}

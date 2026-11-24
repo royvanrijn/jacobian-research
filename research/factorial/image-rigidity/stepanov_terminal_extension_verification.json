@@ -1,0 +1,65 @@
+{
+  "all_orders": false,
+  "certificate_bytes": 2346687,
+  "certificate_sha256": "401fe2b233dd45dff604aa955b0b6134662ccfd894675b2155375f082d699ae1",
+  "checker_sha256": "bb521eaaf78e329aba07aaf7dc5a22877ed7ba106a6efa4df948105b467e123b",
+  "complement_inequalities": [
+    {
+      "C_previous": 14,
+      "C_upper": 16,
+      "annulus_difference_bits": 50047,
+      "annulus_difference_sha256": "be6be6b88a684f14c392b6b7d71a7d9b0669be506224217525d3af0cd67456d2",
+      "annulus_inequality": true,
+      "cases": 14316,
+      "constant_gap_cutoff": 9,
+      "gap_cutoff": 57,
+      "terminal": 11
+    },
+    {
+      "C_previous": 16,
+      "C_upper": 17,
+      "annulus_difference_bits": 71073,
+      "annulus_difference_sha256": "4f668a9d56daa4b51e5b5bb7e444ca1f890815d5628c61e1618079083e4117f7",
+      "annulus_inequality": true,
+      "cases": 20745,
+      "constant_gap_cutoff": 10,
+      "gap_cutoff": 65,
+      "terminal": 12
+    }
+  ],
+  "conclusion": "all ordinary univariate binomials, all characteristic-zero fields, terminal 11 or 12",
+  "controls": {
+    "literal_moment_controls": 32,
+    "negative_controls": 2
+  },
+  "finite": {
+    "full_Bezout_identities": 35061,
+    "nondefault_prime_certificates": [],
+    "per_prime": {
+      "1000003": 0,
+      "1000033": 0,
+      "65537": 35061
+    },
+    "per_terminal": {
+      "11": 14316,
+      "12": 20745
+    }
+  },
+  "formal_verification": false,
+  "maximum_factorial_argument": 8436,
+  "multivariate_extension": false,
+  "schema": 1,
+  "source_sha256": {
+    "ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7",
+    "GAMMA_PRODUCT_ROOT_MODULUS.tex": "b6cb212dd2b461a12c5f687375089da7839495031737ef04d0de2cc8151950b9",
+    "GAMMA_PRODUCT_SHARP_LOWER_ANNULUS_AND_SHAPE_SEPARATION.md": "22700eab6cdb655dc676d75158f17ca5350fe0b7684fc6fe933c5a1195f2db9c",
+    "GAP_TWO_GRACE_GLOBAL_LOCALIZATION.md": "5ddbe130e436416808dda833a06b6512a0d2b62eda682ccd5029e8414f32f473",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+  },
+  "status": "PASS",
+  "terminals": [
+    11,
+    12
+  ],
+  "uniform_eventual_theorem_premise": false
+}

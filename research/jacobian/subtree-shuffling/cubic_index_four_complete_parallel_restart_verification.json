@@ -1,0 +1,900 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "python": "3.12.14",
+  "arithmetic": "Exact rational sparse polynomials and complete column elimination; standard library only.",
+  "source_ledger_sha256": "d1ebd5e1a0808d0a400e89f7e2a4c3ac253e9270a1edc553927ba3ac0f6472c3",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_COMPLETE_PARALLEL_RESTART.md",
+      "sha256": "acd7df4cbf1038abde8642a82623513050bd3a6761100b64832e62281825e847",
+      "scope": "Complete one-parallel-layer theorem, finite reduction, arbitrary-helper-family reduction and inverse support argument."
+    },
+    {
+      "role": "checker",
+      "path": "research/jacobian/subtree-shuffling/verify_cubic_index_four_complete_parallel_restart.py",
+      "sha256": "1ee857db79ba91dbfbd056850c1eee31b7d4265d0a9e21560460a3cccf8299ed",
+      "scope": "Exact rational reconstruction of the full finite kernels and all inverse support bounds."
+    },
+    {
+      "role": "literal_data",
+      "path": "research/jacobian/subtree-shuffling/cubic_index_four_syzygy58.json",
+      "sha256": "b8899afd6e1f1f197d783bdb5c3936434da06cec4be3e607ec64b8c5cac1e4e8",
+      "scope": "Literal pre-S and S cubics; actual48-variable sharp base and its positive weights."
+    },
+    {
+      "role": "literal_proof",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_SYZYGY58.md",
+      "sha256": "02559e0af8c50e682e14afafa081a5087b9a278d0f2c20a4c7be93c00d97294a",
+      "scope": "Definition of the nine pre-S components and P_S; retained sharp instance."
+    },
+    {
+      "role": "pre_S_row_proof",
+      "path": "research/jacobian/subtree-shuffling/COMMUTING_SYZYGY_SLICES_AND_SCALAR_OBSTRUCTION.md",
+      "sha256": "50dd9267653613edc7262d8e5f93c9059626635efa3fef02eb8578def29205fa",
+      "scope": "Pre-S third-row formulas and scalar criterion; generic formulas are rebuilt by the new checker."
+    },
+    {
+      "role": "third_row_proof",
+      "path": "research/jacobian/subtree-shuffling/THIRD_COVECTOR_CUBIC_IMAGE_AND_RESTART_OBSTRUCTIONS.md",
+      "sha256": "f0285ae00637834ebf2532df8d6fa52d6eea57320b3c3ab8a3232a60d5df661a",
+      "scope": "Full third-row identity for ordinary cubic joint invariants and definition of gamma."
+    },
+    {
+      "role": "primary_context",
+      "path": "research/jacobian/subtree-shuffling/sources/umirbaev-polarization-algebras-2014.pdf",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86",
+      "scope": "Printedpp7-8 Lemmas7-8/Corollary2 andp12 example; context only, no theorem imported."
+    },
+    {
+      "role": "cube_zero_inverse_corollary",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_CUBE_ZERO_SHUFFLE_EXTENSION.md",
+      "sha256": "00e9ae1513feb0fc831b3b6960a7fd709d6f5bef7c59316c292cd02aa246e00b",
+      "scope": "CubicCubeZeroSharpInverseDegree, Section1; imported only for UniversalParallelRestartCeiling, which removes the invertibility hypothesis and gives D,B<=29. No new replay of its finite certificates is claimed here."
+    }
+  ],
+  "checks": {
+    "coefficient_field": "QQ; scalar extension to every characteristic-zero field",
+    "pre_S_cubic_domain_dimension": 286,
+    "pre_S_cubic_rank": 265,
+    "pre_S_cubic_kernel_dimension": 21,
+    "helper_basis": [
+      [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            3
+          ],
+          "-1/2"
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          "-2/3"
+        ],
+        [
+          [
+            0,
+            1,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          "-1/3"
+        ],
+        [
+          [
+            1,
+            1,
+            2
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            5
+          ],
+          "1/9"
+        ],
+        [
+          [
+            0,
+            0,
+            7
+          ],
+          "-4/9"
+        ],
+        [
+          [
+            0,
+            2,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            5
+          ],
+          "1/9"
+        ],
+        [
+          [
+            0,
+            0,
+            7
+          ],
+          "-1/9"
+        ],
+        [
+          [
+            1,
+            2,
+            2
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            4
+          ],
+          "-2/3"
+        ],
+        [
+          [
+            1,
+            1,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            6
+          ],
+          "1/2"
+        ],
+        [
+          [
+            0,
+            1,
+            5
+          ],
+          "1/6"
+        ],
+        [
+          [
+            0,
+            1,
+            7
+          ],
+          "-7/6"
+        ],
+        [
+          [
+            0,
+            2,
+            4
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            7
+          ],
+          "-4/3"
+        ],
+        [
+          [
+            0,
+            3,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            5
+          ],
+          "1/9"
+        ],
+        [
+          [
+            0,
+            1,
+            7
+          ],
+          "-4/9"
+        ],
+        [
+          [
+            1,
+            2,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            6
+          ],
+          "-1/3"
+        ],
+        [
+          [
+            0,
+            3,
+            4
+          ],
+          "-1/3"
+        ],
+        [
+          [
+            1,
+            1,
+            7
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            6
+          ],
+          "1/9"
+        ],
+        [
+          [
+            0,
+            3,
+            4
+          ],
+          "-7/18"
+        ],
+        [
+          [
+            1,
+            1,
+            5
+          ],
+          "1/6"
+        ],
+        [
+          [
+            1,
+            2,
+            4
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            6
+          ],
+          "-4/9"
+        ],
+        [
+          [
+            0,
+            3,
+            4
+          ],
+          "-4/9"
+        ],
+        [
+          [
+            1,
+            3,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            9
+          ],
+          "1/21"
+        ],
+        [
+          [
+            0,
+            1,
+            8
+          ],
+          "8/105"
+        ],
+        [
+          [
+            0,
+            2,
+            6
+          ],
+          "-4/7"
+        ],
+        [
+          [
+            0,
+            3,
+            5
+          ],
+          "-2/35"
+        ],
+        [
+          [
+            0,
+            3,
+            7
+          ],
+          "2/35"
+        ],
+        [
+          [
+            1,
+            2,
+            5
+          ],
+          "-4/21"
+        ],
+        [
+          [
+            1,
+            2,
+            7
+          ],
+          "-4/35"
+        ],
+        [
+          [
+            2,
+            2,
+            4
+          ],
+          "-8/7"
+        ],
+        [
+          [
+            2,
+            3,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            4,
+            4
+          ],
+          "-1/2"
+        ],
+        [
+          [
+            1,
+            1,
+            6
+          ],
+          "-1/2"
+        ],
+        [
+          [
+            1,
+            3,
+            4
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            9
+          ],
+          "1/2"
+        ],
+        [
+          [
+            0,
+            3,
+            6
+          ],
+          "23/5"
+        ],
+        [
+          [
+            0,
+            4,
+            5
+          ],
+          "37/15"
+        ],
+        [
+          [
+            0,
+            4,
+            7
+          ],
+          "4/15"
+        ],
+        [
+          [
+            1,
+            1,
+            8
+          ],
+          "4/5"
+        ],
+        [
+          [
+            1,
+            2,
+            6
+          ],
+          "-76/5"
+        ],
+        [
+          [
+            1,
+            3,
+            5
+          ],
+          "-53/10"
+        ],
+        [
+          [
+            1,
+            3,
+            7
+          ],
+          "-2/5"
+        ],
+        [
+          [
+            2,
+            3,
+            4
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            9
+          ],
+          "2/3"
+        ],
+        [
+          [
+            0,
+            3,
+            6
+          ],
+          "24/5"
+        ],
+        [
+          [
+            0,
+            4,
+            5
+          ],
+          "128/45"
+        ],
+        [
+          [
+            0,
+            4,
+            7
+          ],
+          "16/45"
+        ],
+        [
+          [
+            1,
+            1,
+            8
+          ],
+          "16/15"
+        ],
+        [
+          [
+            1,
+            2,
+            6
+          ],
+          "-88/5"
+        ],
+        [
+          [
+            1,
+            3,
+            5
+          ],
+          "-32/5"
+        ],
+        [
+          [
+            1,
+            3,
+            7
+          ],
+          "-8/15"
+        ],
+        [
+          [
+            3,
+            3,
+            3
+          ],
+          "1"
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            10
+          ],
+          "-2"
+        ],
+        [
+          [
+            0,
+            3,
+            9
+          ],
+          "3"
+        ],
+        [
+          [
+            0,
+            4,
+            8
+          ],
+          "8"
+        ],
+        [
+          [
+            0,
+            5,
+            6
+          ],
+          "-8"
+        ],
+        [
+          [
+            1,
+            2,
+            9
+          ],
+          "-6"
+        ],
+        [
+          [
+            1,
+            3,
+            8
+          ],
+          "-12"
+        ],
+        [
+          [
+            1,
+            5,
+            5
+          ],
+          "-2"
+        ],
+        [
+          [
+            1,
+            7,
+            7
+          ],
+          "-8"
+        ],
+        [
+          [
+            2,
+            3,
+            6
+          ],
+          "-12"
+        ],
+        [
+          [
+            2,
+            4,
+            5
+          ],
+          "-8"
+        ],
+        [
+          [
+            3,
+            3,
+            5
+          ],
+          "9"
+        ],
+        [
+          [
+            3,
+            3,
+            7
+          ],
+          "12"
+        ]
+      ]
+    ],
+    "helper_weights_for_elimination_only": [
+      3,
+      31,
+      59,
+      61,
+      87,
+      89,
+      89,
+      91,
+      91,
+      117,
+      119,
+      119,
+      119,
+      147,
+      147,
+      147,
+      149,
+      175,
+      177,
+      177,
+      207
+    ],
+    "S_helper_index": 31,
+    "exact_third_fibre_equalities": 63,
+    "inverse_composition_coordinate_equalities": 64,
+    "restart_kernels": [
+      {
+        "degree": 1,
+        "domain_dimension": 32,
+        "rank": 20,
+        "kernel_dimension": 12,
+        "all_basis_vectors_ignore_S": true,
+        "inverse_W_degree": 1,
+        "inverse_total_degree": 3,
+        "inverse_profile": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "basis_sha256": "19ddd90961ec939f5fb7f2a9b3df853f5f66606836820c79945a76d0155d7d33"
+      },
+      {
+        "degree": 2,
+        "domain_dimension": 528,
+        "rank": 439,
+        "kernel_dimension": 89,
+        "all_basis_vectors_ignore_S": true,
+        "inverse_W_degree": 5,
+        "inverse_total_degree": 8,
+        "inverse_profile": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "basis_sha256": "69fd6b9fe28f98fa813356fcfd4df9cf91574ac02bc980e65448a5bf88019e92"
+      },
+      {
+        "degree": 3,
+        "domain_dimension": 5984,
+        "rank": 5462,
+        "kernel_dimension": 522,
+        "all_basis_vectors_ignore_S": true,
+        "inverse_W_degree": 7,
+        "inverse_total_degree": 11,
+        "inverse_profile": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        "basis_sha256": "27f0806d051199cf09f6d19208dbfb0abbd2140af47e66778e543b2baa711fb0"
+      }
+    ],
+    "constant_kernel_dimension": 1,
+    "all_frozen_direction_extensions_covered": "Expand a total cubic in frozen variables; apply the degree0..3 kernel bounds coefficientwise.",
+    "uniform_support_envelope": {
+      "W_degree_at_most": 7,
+      "ordinary_degree_at_most": 11
+    },
+    "resulting_inverse_degree_bound": "max(D,7*B+4), with B=deg G_w>=1",
+    "sharp_literal_instance": {
+      "base_dimension": 48,
+      "base_inverse_degree": 29,
+      "base_jacobian_cube_zero": true,
+      "r_du_independence_coefficient": "393016350032033013/3404635167332",
+      "W_inverse_line_coefficient": "8803690708443294969/95329784685296",
+      "S_inverse_line_factor": "-2*U^4*W^7",
+      "inverse_degree": 207,
+      "jacobian_index": 4
+    },
+    "negative_controls_rejected": [
+      "Add p1^3 to a valid helper",
+      "Append w^2*S as the restart",
+      "Replace the sharp degree ceiling by206"
+    ],
+    "duplicate_S_positive_control": "u^2*(S-S_copy) is allowed and its inverse value is a degree-three frozen difference",
+    "scope": "All finite parallel pre-S cubic helper families, then one further parallel layer of arbitrary homogeneous cubics in the displayed old coordinates and helpers. No further-round or unrestricted-index-four conclusion."
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false,
+    "unrestricted_index_four_bound": false,
+    "all_restart_rounds": false
+  },
+  "elapsed_seconds": 4.314352
+}

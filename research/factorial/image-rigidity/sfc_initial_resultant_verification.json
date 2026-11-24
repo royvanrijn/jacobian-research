@@ -1,0 +1,175 @@
+{
+  "arithmetic": "exact rational/integer; Python standard library",
+  "boundaries_and_resonances": {
+    "exact_boundary_identities": 4,
+    "minimal_resonance_coefficient_controls": 192
+  },
+  "initial_resultant": {
+    "actual_Macaulay_controls": [
+      {
+        "extraneous_minor_size": 0,
+        "matrix_size": 1,
+        "r": [
+          "0"
+        ],
+        "resultant": "1"
+      },
+      {
+        "extraneous_minor_size": 0,
+        "matrix_size": 1,
+        "r": [
+          "1"
+        ],
+        "resultant": "2"
+      },
+      {
+        "extraneous_minor_size": 0,
+        "matrix_size": 3,
+        "r": [
+          "0",
+          "0"
+        ],
+        "resultant": "1"
+      },
+      {
+        "extraneous_minor_size": 0,
+        "matrix_size": 3,
+        "r": [
+          "1",
+          "2"
+        ],
+        "resultant": "24"
+      },
+      {
+        "extraneous_minor_size": 0,
+        "matrix_size": 3,
+        "r": [
+          "-1/3",
+          "2/5"
+        ],
+        "resultant": "224/225"
+      },
+      {
+        "extraneous_minor_size": 4,
+        "matrix_size": 15,
+        "r": [
+          "0",
+          "0",
+          "0"
+        ],
+        "resultant": "1"
+      },
+      {
+        "extraneous_minor_size": 4,
+        "matrix_size": 15,
+        "r": [
+          "1",
+          "1",
+          "2"
+        ],
+        "resultant": "172800"
+      },
+      {
+        "extraneous_minor_size": 4,
+        "matrix_size": 15,
+        "r": [
+          "1",
+          "2",
+          "3"
+        ],
+        "resultant": "3386880"
+      },
+      {
+        "extraneous_minor_size": 70,
+        "matrix_size": 120,
+        "r": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "resultant": "1"
+      },
+      {
+        "extraneous_minor_size": 70,
+        "matrix_size": 120,
+        "r": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "resultant": "9130086859014144000000"
+      }
+    ],
+    "formal_triangular_controls": [
+      {
+        "formal_order": 1,
+        "parameter_variables": 2,
+        "support": 1
+      },
+      {
+        "formal_order": 2,
+        "parameter_variables": 4,
+        "support": 2
+      },
+      {
+        "formal_order": 3,
+        "parameter_variables": 6,
+        "support": 3
+      },
+      {
+        "formal_order": 4,
+        "parameter_variables": 8,
+        "support": 4
+      }
+    ],
+    "recursion_controls_supports": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "scope": "all-support initial formula by written induction; two uniform shifted ternary polynomial identities by complete degree-bounded interpolation; no arbitrary-start SFC closure",
+  "shifted_countercontrol": {
+    "initial_resultant_at_countercontrol": "4/27",
+    "negative_parameter_countercontrol": [
+      "-1/3",
+      "-1/3"
+    ],
+    "nonlinear_factor_terms": 15,
+    "symbolic_resultant_verified": true
+  },
+  "source_sha256": {
+    "SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md": "9df960f24475ad06f6447739dc30c8d25f9a00b629f10b9f32c88a00b2631751",
+    "sfc_ternary_orders_2_4_witness.json": "d3c25d8280d238533abbba7eb417445e27d92ac18a458742137f2e77e1b93639",
+    "sfc_ternary_orders_3_5_witness.json": "4226c5203c2ab09835cc511dca8d40d0f5e95a2c839394a3b011efbb0eb91e46"
+  },
+  "status": "PASS",
+  "ternary_orders_2_4": {
+    "complete_interpolation_grid": [
+      35,
+      25
+    ],
+    "degree_bounds": [
+      34,
+      24
+    ],
+    "exact_determinants": 875,
+    "positive_Q_terms": 70
+  },
+  "ternary_orders_3_5": {
+    "complete_interpolation_grid": [
+      85
+    ],
+    "degree_bound": 84,
+    "exact_determinants": 85,
+    "positive_Q_terms": 23
+  }
+}

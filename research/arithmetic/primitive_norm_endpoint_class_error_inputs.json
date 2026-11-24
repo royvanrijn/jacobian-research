@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "domain": "Exact finite endpoint profiles, subset sums and randomized prime-square marking; no asymptotic certification.",
+  "local_primes": [
+    3,
+    5,
+    7,
+    11,
+    13
+  ],
+  "mark_primes": [
+    3,
+    5,
+    7,
+    11
+  ],
+  "mark_probabilities": [
+    "0",
+    "1/2",
+    "9/10",
+    "999/1000",
+    "1"
+  ],
+  "max_sequence_length": 4,
+  "groups": [
+    {
+      "name": "trivial",
+      "moduli": [],
+      "expected_profiles": [],
+      "expected_stabilizer_profiles": []
+    },
+    {
+      "name": "C2",
+      "moduli": [
+        2
+      ],
+      "expected_profiles": [],
+      "expected_stabilizer_profiles": []
+    },
+    {
+      "name": "C3",
+      "moduli": [
+        3
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 3,
+          "density": "1/3",
+          "cap": 1,
+          "multiplicity": 1
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 3,
+          "density": "1/3",
+          "cap": 1,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C4",
+      "moduli": [
+        4
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 2,
+          "density": "1/4",
+          "cap": 0,
+          "multiplicity": 1
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 2,
+          "density": "1/4",
+          "cap": 0,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C5",
+      "moduli": [
+        5
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 5,
+          "density": "2/5",
+          "cap": 6,
+          "multiplicity": 1
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 5,
+          "density": "2/5",
+          "cap": 3,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C6",
+      "moduli": [
+        6
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 3,
+          "density": "1/3",
+          "cap": 2,
+          "multiplicity": 1
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 3,
+          "density": "1/3",
+          "cap": 1,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C8",
+      "moduli": [
+        8
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 2,
+          "density": "1/4",
+          "cap": 4,
+          "multiplicity": 1
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 2,
+          "density": "1/4",
+          "cap": 0,
+          "multiplicity": 1
+        },
+        {
+          "index": 4,
+          "density": "3/8",
+          "cap": 2,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C12",
+      "moduli": [
+        12
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 2,
+          "density": "1/4",
+          "cap": 8,
+          "multiplicity": 1
+        },
+        {
+          "index_prime": 3,
+          "density": "1/3",
+          "cap": 10,
+          "multiplicity": 1
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 2,
+          "density": "1/4",
+          "cap": 0,
+          "multiplicity": 1
+        },
+        {
+          "index": 3,
+          "density": "1/3",
+          "cap": 1,
+          "multiplicity": 1
+        },
+        {
+          "index": 6,
+          "density": "5/12",
+          "cap": 4,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C3xC3",
+      "moduli": [
+        3,
+        3
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 3,
+          "density": "1/3",
+          "cap": 3,
+          "multiplicity": 4
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 3,
+          "density": "1/3",
+          "cap": 1,
+          "multiplicity": 4
+        },
+        {
+          "index": 9,
+          "density": "4/9",
+          "cap": 7,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "name": "C4xC4",
+      "moduli": [
+        4,
+        4
+      ],
+      "expected_profiles": [
+        {
+          "index_prime": 2,
+          "density": "1/4",
+          "cap": 0,
+          "multiplicity": 3
+        }
+      ],
+      "expected_stabilizer_profiles": [
+        {
+          "index": 2,
+          "density": "1/4",
+          "cap": 0,
+          "multiplicity": 3
+        },
+        {
+          "index": 4,
+          "density": "3/8",
+          "cap": 2,
+          "multiplicity": 1
+        }
+      ]
+    }
+  ]
+}

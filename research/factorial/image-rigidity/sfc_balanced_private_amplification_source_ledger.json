@@ -1,0 +1,37 @@
+{
+  "limitations": [
+    "Private markers remain separate across support columns.",
+    "Base monomial columns have identical exponent profiles.",
+    "Every arbitrary support can be enlarged explicitly to meet these hypotheses.",
+    "Removing the private decorations or merging their marker variables is not proved to preserve regularity.",
+    "Full SFC remains open."
+  ],
+  "proved_application_scope": [
+    "Balanced shared monomials with private marker exponent D>=6s; all orders and characteristic-zero coefficients.",
+    "Every finite nonnegative integer support admits an explicit balanced private enlargement.",
+    "Nonnegative rational polynomial templates with equal pure factorial moments; active-block window implies actual support-size SFC."
+  ],
+  "review": {
+    "external_peer_review_of_application": false,
+    "formal_verification": false,
+    "independent_internal_reviewers": 2,
+    "independent_internal_source_review": true,
+    "rh_or_alpoge_claim_used": false,
+    "source_statement_and_proof_inspected": true
+  },
+  "schema": 1,
+  "source": {
+    "audit_copy": "research/artifacts/local/stepanov_merging/root_montgomery_vaughan_turan.pdf",
+    "authors": [
+      "Hugh L. Montgomery",
+      "Robert C. Vaughan"
+    ],
+    "locator": "Appendix K, Theorem K.3 and proof, printed pages 334\u2013337",
+    "pdf_sha256": "ef098f0a0e5e27fd16721e44fb2197b163357de45b16111e7b82d179f36e7855",
+    "retrieved": "2026-11-21",
+    "scope": "Turan second main theorem for M>=0, N>=1, max |z_j|=1; specialized to weights all equal to one and M=n-1, N=s.",
+    "text_sha256": "0ee3549ec759e81eff099b5fbdcc5be7590a0edc70a15f31d4ce118a870d3333",
+    "title": "Multiplicative Number Theory III",
+    "url": "https://personal.science.psu.edu/rcv4/571s25/Vol3.pdf"
+  }
+}

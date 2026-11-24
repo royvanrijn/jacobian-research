@@ -1,0 +1,566 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "python": "3.12.14",
+  "arithmetic": "Exact rational sparse polynomials; standard library only.",
+  "source_ledger_sha256": "46a67e17245a53db1080785a262abe705cc04b0d15b5920d99fdd82f10ee9d73",
+  "sources": [
+    {
+      "role": "direct_proof",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_ENGEL_INDEX_FOUR_ONE_GENERATOR_OBSTRUCTION.md",
+      "scope": "Self-contained Jacobian, polarization, cyclic generation, all-grade words and inverse formulas.",
+      "sha256": "a51113e3472434bdcff7512bb1d2068f6dbefc49736f54992dfb17d53785934d"
+    },
+    {
+      "role": "exact_checker",
+      "path": "research/jacobian/subtree-shuffling/verify_cubic_engel_index_four_one_generator_obstruction.py",
+      "scope": "Literal five-monomial input and exact arithmetic controls; no asymptotic or finite-prefix inference.",
+      "sha256": "a02a990ef8b0fbf623584bc2065d03e2d0a6932dc2d77a76406359d33f01b36d"
+    },
+    {
+      "role": "primary_context",
+      "path": "research/jacobian/subtree-shuffling/sources/umirbaev-polarization-algebras-2014.pdf",
+      "scope": "Section 5, printed p12/PDFp16: exact Gorni-Zampieri map and one-generator polarization context; bibliography [19] on printed p13. Context only, no theorem imported.",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86"
+    },
+    {
+      "role": "grading_convention",
+      "path": "research/jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "scope": "Free symmetric ternary algebra and internal-vertex grading convention only; no inverse-degree or index-three theorem imported.",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa"
+    }
+  ],
+  "checks": {
+    "literal_cubic_terms": [
+      {
+        "output": 0,
+        "inputs": [
+          0,
+          2,
+          3
+        ],
+        "coefficient": "1"
+      },
+      {
+        "output": 0,
+        "inputs": [
+          1,
+          2,
+          2
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "output": 1,
+        "inputs": [
+          0,
+          3,
+          3
+        ],
+        "coefficient": "1"
+      },
+      {
+        "output": 1,
+        "inputs": [
+          1,
+          2,
+          3
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "output": 2,
+        "inputs": [
+          3,
+          3,
+          3
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "jacobian_cube": [
+      {
+        "row": 0,
+        "column": 3,
+        "polynomial": [
+          {
+            "exponents": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "exponents": [
+              1,
+              0,
+              1,
+              4
+            ],
+            "coefficient": "3"
+          }
+        ]
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "polynomial": [
+          {
+            "exponents": [
+              0,
+              1,
+              1,
+              4
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "exponents": [
+              1,
+              0,
+              0,
+              5
+            ],
+            "coefficient": "3"
+          }
+        ]
+      }
+    ],
+    "jacobian_fourth_power_nonzero_entries": 0,
+    "exact_index_witness": {
+      "a": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "L_a_cubed_e_t": [
+        "0",
+        "1/9",
+        "0",
+        "0"
+      ]
+    },
+    "polarization_basis_triples": 64,
+    "polarization_diagonal_and_derivative_polynomial_identities": true,
+    "cyclic_words": {
+      "g": [
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "b": [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "c": [
+        "0",
+        "-1/3",
+        "0",
+        "0"
+      ],
+      "e": [
+        "-1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      "d": [
+        "1/9",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "cyclic_basis_determinant": "1/9",
+    "mixed_multiplier_columns": [
+      [
+        "1/6",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1/6",
+        "0",
+        "0"
+      ],
+      [
+        "-1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1/6",
+        "0",
+        "0"
+      ]
+    ],
+    "bounded_words": [
+      {
+        "family": "even",
+        "k": 0,
+        "grade": 2,
+        "leaves": 5,
+        "value": [
+          "0",
+          "-1/3",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 0,
+        "grade": 3,
+        "leaves": 7,
+        "value": [
+          "-1/3",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 1,
+        "grade": 4,
+        "leaves": 9,
+        "value": [
+          "0",
+          "1/18",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 1,
+        "grade": 5,
+        "leaves": 11,
+        "value": [
+          "-1/18",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 2,
+        "grade": 6,
+        "leaves": 13,
+        "value": [
+          "0",
+          "-1/108",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 2,
+        "grade": 7,
+        "leaves": 15,
+        "value": [
+          "-1/108",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 3,
+        "grade": 8,
+        "leaves": 17,
+        "value": [
+          "0",
+          "1/648",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 3,
+        "grade": 9,
+        "leaves": 19,
+        "value": [
+          "-1/648",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 4,
+        "grade": 10,
+        "leaves": 21,
+        "value": [
+          "0",
+          "-1/3888",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 4,
+        "grade": 11,
+        "leaves": 23,
+        "value": [
+          "-1/3888",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 5,
+        "grade": 12,
+        "leaves": 25,
+        "value": [
+          "0",
+          "1/23328",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 5,
+        "grade": 13,
+        "leaves": 27,
+        "value": [
+          "-1/23328",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 6,
+        "grade": 14,
+        "leaves": 29,
+        "value": [
+          "0",
+          "-1/139968",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 6,
+        "grade": 15,
+        "leaves": 31,
+        "value": [
+          "-1/139968",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 7,
+        "grade": 16,
+        "leaves": 33,
+        "value": [
+          "0",
+          "1/839808",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 7,
+        "grade": 17,
+        "leaves": 35,
+        "value": [
+          "-1/839808",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 8,
+        "grade": 18,
+        "leaves": 37,
+        "value": [
+          "0",
+          "-1/5038848",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 8,
+        "grade": 19,
+        "leaves": 39,
+        "value": [
+          "-1/5038848",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 9,
+        "grade": 20,
+        "leaves": 41,
+        "value": [
+          "0",
+          "1/30233088",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 9,
+        "grade": 21,
+        "leaves": 43,
+        "value": [
+          "-1/30233088",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 10,
+        "grade": 22,
+        "leaves": 45,
+        "value": [
+          "0",
+          "-1/181398528",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 10,
+        "grade": 23,
+        "leaves": 47,
+        "value": [
+          "-1/181398528",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 11,
+        "grade": 24,
+        "leaves": 49,
+        "value": [
+          "0",
+          "1/1088391168",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 11,
+        "grade": 25,
+        "leaves": 51,
+        "value": [
+          "-1/1088391168",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "even",
+        "k": 12,
+        "grade": 26,
+        "leaves": 53,
+        "value": [
+          "0",
+          "-1/6530347008",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "family": "odd",
+        "k": 12,
+        "grade": 27,
+        "leaves": 55,
+        "value": [
+          "-1/6530347008",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "internal_grades_checked_inclusive": [
+      0,
+      27
+    ],
+    "inverse_controls": [
+      {
+        "epsilon": -1,
+        "coordinate_degrees": [
+          7,
+          5,
+          3,
+          1
+        ],
+        "both_compositions_identity": true,
+        "generator_line_identity": true
+      },
+      {
+        "epsilon": 1,
+        "coordinate_degrees": [
+          7,
+          5,
+          3,
+          1
+        ],
+        "both_compositions_identity": true,
+        "generator_line_identity": true
+      }
+    ],
+    "negative_controls_rejected": [
+      "Reverse the y*s^2 cubic sign and retain J^4=0",
+      "Use polarization denominator three instead of six",
+      "Reverse the even-family eigenvalue sign",
+      "Count the fixed b word as a generator leaf"
+    ],
+    "corrupted_jacobian_fourth_power_nonzero_entries": 6
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false,
+    "bounded_tree_tests_prove_all_grades": false,
+    "unbounded_inverse_degree_claim": false
+  },
+  "scope": "Exact polynomial and linear identities plus bounded word controls. All grades and all characteristic-zero extensions follow from the written induction and universal evaluation argument; no inverse-growth or index-three conclusion."
+}

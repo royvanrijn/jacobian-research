@@ -1,0 +1,59 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "schema": 2,
+  "sources": [
+    {
+      "path": "FIELD_MATHIEU_PRODUCT_AND_QUADRATIC_COUNTEREXAMPLES.md",
+      "relation": "Sections1--22_complete_R_Q_all_char0_formally_real_Gram_even_quadratic_actual_cover_and_acyclic_comparison_proofs",
+      "role": "written_proof",
+      "sha256": "8537845bffd21a60bcadcaaff190501b7d9d6869f395680c241b373ee443d97a"
+    },
+    {
+      "path": "verify_field_mathieu_product_quadratic.py",
+      "relation": "Source_authentication_and_bounded_exact_CDF_Laurent_Gram_models_NOT_unrestricted_field_or_quadratic_form_proof",
+      "role": "exact_checker",
+      "sha256": "17d8cd5f923c3d5b9c68743e977e54f08065a4e6052e085a97eb7864bcb04b9d"
+    },
+    {
+      "path": "field_mathieu_product_quadratic_inputs.json",
+      "relation": "Exact_standard_Q_models_all_char0_fixed_pair_identities_formal_reality_Gram_all_even_quadratic_scopes_and_given_phase_cover_directions",
+      "role": "typed_inputs",
+      "sha256": "0a40c7cfd30f185e9cc76dfbf1332e3e4256be3610bb946909c238eea202b4e2"
+    },
+    {
+      "path": "sources/long-2607.19012v1.html",
+      "relation": "CREDITED_KNOWN_METHOD_Theorem2_1_complete_beta_binomial_proof_Proposition3_1_Lemma4_1_NOT_a_new_interval_counterexample_or_Jacobian_claim",
+      "role": "long_known_method_primary",
+      "sha256": "abeec76e95cba0e6244f4af31240634e28d657116c8afcf743b58db144dd7ebd"
+    },
+    {
+      "path": "sources/long-2607.19012v1.html",
+      "relation": "ACTUAL_IMPORT_ONLY_Theorem4_2_exact_complex_SU2_Haar_pair_F_equals_1plusc_times_adplusb_H_equals_minusc_all_orders_USED_FOR_SPLIT_REAL_SL2_COMPARISON_via_real_coefficients_trace_uniqueness_and_scalar_extension_NOT_uniform_SU_n_S2_quaternion_core",
+      "role": "long_split_SL2_comparison_primary",
+      "sha256": "abeec76e95cba0e6244f4af31240634e28d657116c8afcf743b58db144dd7ebd"
+    },
+    {
+      "path": "sources/meckes-haar-book.pdf",
+      "relation": "ONLY_Section1_2_printed19_20_Haar_first_column_uniform_on_real_or_complex_sphere_including_SU_n_last_column_adjustment_CROSSCHECK_self_contained_transitivity_Gaussian_proof_is_in_Section3",
+      "role": "meckes_column_primary",
+      "sha256": "12c9e49c9768f9f87951a59e6f4e960bf4a5bf6aa6f7fc5c8b442076e57d3dbe"
+    },
+    {
+      "path": "sources/dvk-powers-1998.pdf",
+      "relation": "ONLY_printed222_223_and_Section3_scalar_Laurent_Mathieu_theorem_over_C_local_finite_coefficient_field_extension_proved_in_Section10_NOT_function_valued_coefficients_or_entire_K_embedding",
+      "role": "dvk_torus_comparison_primary",
+      "sha256": "bb002d12b539a1ff3fdd099f343d3accd921ccf60f8a149f29b07cd0f7e87e1b"
+    },
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "relation": "REUSED_SRC_RHT_MILNE_COMPLETE_REDUCIBILITY_ONLY_22_42_22_43_printed477_478_and_12l_12_53_Reynolds_printed248_249_same_field_rational_semisimplicity_NOT_whole_book_or_full_allAut_theorem",
+      "role": "complete_reducibility_primary_reused",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67"
+    }
+  ]
+}

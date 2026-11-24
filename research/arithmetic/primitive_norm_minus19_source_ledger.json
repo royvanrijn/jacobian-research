@@ -1,0 +1,135 @@
+{
+  "title": "Exact primitive discriminant -19 norm self-sums: complete proof and certificate scope",
+  "proof": "PRIMITIVE_NORM_MINUS19_EXACT.md",
+  "proof_sha256": "19c4b0e10bd9c47f28470b5db10bb5be4c98588831266859d9c2aa323be031ab",
+  "checker": "verify_primitive_norm_minus19.py",
+  "checker_sha256": "06693af65fbd185714bbb90513439ccfdeaeafba1c2ebcf9db5d3cf69a36f1fb",
+  "receipt": "primitive_norm_minus19_checks.json",
+  "receipt_sha256": "4a3ab3d954592a288c1fbc3650462bd5cfb05a0b1062ea79d5c5f04222de740a",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus19.py --output research/arithmetic/primitive_norm_minus19_checks.json",
+  "sources": [
+    {
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "v3.08, 19 July 2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "local_path": "sources/milne-ant308.pdf",
+      "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+      "statements_used": [
+        "Theorem 4.3, printed p.70 / PDF p.72: every ideal class has an integral representative of norm at most (2/pi)*sqrt(19) < 3. Since 2 is inert in Q(sqrt(-19)), only norm one is possible."
+      ],
+      "inspection_scope": "Actual retained v3.08 theorem statement inspected in this continuation. The discriminant -19 specialization, inert-prime exclusion at norm two, and primitive ideal orientations are proved in the new note."
+    },
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "version": "Author edition v1.0.7u, 5 August 2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "statements_used": [
+        "Theorem 15.5.5 and Example 15.5.7, printed p.241 / PDF p.261: for p = 19, B = (-19,-1) has discriminant 19 and O = Z[(1+i)/2] + Z[(1+i)/2]j is maximal.",
+        "Theorem 25.1.1, printed p.403 / PDF p.423: projective maximal-order unit mass phi(19)/12 = 3/2. Principal projective stabilizer size 2 gives Haar class probability 1/3, not a class-number-one assertion.",
+        "Main Theorem 14.7.4, printed p.226: rational reduced norms of a definite rational quaternion algebra are all positive rationals; used to identify the global norm-character quotient.",
+        "Main Theorem 28.5.3, printed p.473: strong approximation for the norm-one group when S contains a split noncompact place; removes character-at-a-split-place constituents.",
+        "Propositions 41.3.1 and 41.3.6, printed pp.756-757: all-integral-ideal degree sigma(m), relatively prime multiplicativity and unramified prime-power recurrence. Principal scalars act trivially over Q and on projective markings."
+      ],
+      "inspection_scope": "Actual retained statements inspected in this continuation. Complete ideal-class quotient, inverse-unit measure, auxiliary-prime injectivity including p=3, and flag-reversal normalization checked in the new proof. Deep theorems remain imports."
+    },
+    {
+      "author": "Herve Jacquet and Robert P. Langlands",
+      "title": "Automorphic Forms on GL(2)",
+      "version": "IAS typesetting accessed18 November2026",
+      "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+      "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+      "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+      "statements_used": [
+        "Theorem 14.4, printed p.248 / PDF p.254: global transfer after excluding finite-dimensional local factors at split places.",
+        "Section 5, Proposition 5.20, printed pp.105-106 / PDF pp.111-112: archimedean parameter for chi tensor rho_n; n=0 and trivial infinite type give weight two."
+      ],
+      "inspection_scope": "Actual primary theorem statements and application hypotheses inspected in this continuation; full proofs remain imported. The shared transfer lemma supplies the norm-one strong-approximation exclusion."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "Formes modulaires et representations l-adiques",
+      "version": "Seminaire Bourbaki1968-1969, expose355",
+      "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+      "local_path": "sources/deligne-modular-355.pdf",
+      "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+      "statements_used": [
+        "Theorems 4.9 and 5.1, PDF pp.30-31: Frobenius/Hecke realization and purity consequence, as cited in the existing transfer proof.",
+        "This older modular realization is not the sole basis for arbitrary-level root bounds in M19: the explicit primary statement is Deligne Weil I, Theorem 8.2."
+      ],
+      "inspection_scope": "Actual retained statements inspected; transitive context for the shared transfer proof. Direct unramified root input is separately cited below."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "La conjecture de Weil. I",
+      "version": "Publications mathematiques de l IHES43 (1974),273-307",
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "local_path": "sources/deligne-weil-I.pdf",
+      "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+      "statements_used": [
+        "Theorem 8.2, printed p.302 / PDF p.31: for a normalized primitive cuspidal modular form of weight k >= 2, arbitrary level N and character epsilon, the roots of T^2 - a_p T + epsilon(p)p^(k-1) have absolute value p^((k-1)/2) whenever p does not divide N. Applied at k=2 and trivial central character; old spaces at other primes have the same unramified roots.",
+        "Theorem 1.6, PDF p.5: purity for smooth projective varieties over finite fields, as used in the existing transfer proof."
+      ],
+      "inspection_scope": "Actual theorem text inspected; Theorem 8.2 page also rendered and visually checked to verify its exact formula and arbitrary-level scope. No full independent proof of the classical theorem is claimed."
+    }
+  ],
+  "spectral_dependency": {
+    "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+    "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+    "statement": "On the complement of all global reduced-norm characters, the all-integral-ideal operator T_m has norm <= tau(m)*sqrt(m) for indices coprime to the algebra discriminant and auxiliary/nonmaximal levels; normalized unramified roots have unit absolute value and product one.",
+    "application_hypotheses": "Maximal discriminant-19 order; retain all ideal classes with principal Haar probability 1/3. Fine quotients at odd inert p and at ramified 19 have trivial stabilizers; the ramified quotient has 30 points. Exactly two global norm characters at each single auxiliary level and one at full maximal level. All Hecke indices are prime to 19 and to their own auxiliary level; target-dividing inert primes use anisotropic scaling instead.",
+    "normalization": "M19.5-M19.12 give mass, marked ideal-flag reversal, four generators per principal ideal, odd-component scalar subtraction, coarse return correlation and the two local bad-point bounds.",
+    "theta_scope": "No explicit theta/newform identity, no level-19 a_2 specialization, and no auxiliary-level cusp cancellation are needed. The generic filtered Delta bound is used on every space.",
+    "direct_primary_root_statement": "Deligne Weil I, Theorem 8.2, is explicitly cited in M19 independently of the older Bourbaki realization route."
+  },
+  "exact_classification": {
+    "core": "C+C = {n >= 2: n even, 19 does not divide n} minus {4,20}",
+    "primitive": "P+P = {N >= 2: N even, 361 does not divide N} minus {4,76,380}",
+    "primitive_value_identity": "P = C disjoint_union 19C; C contains 1 and all positive integers supported on split primes for Q(sqrt(-19)).",
+    "analytic_inert_core_onset": 17179869184,
+    "analytic_interval_indices": [
+      34,
+      59
+    ],
+    "analytic_interval_count": 26,
+    "interval_uniform_margin": "1/100",
+    "infinite_inert_core_tail_onset": 1152921504606846976,
+    "exceptional_quotient_families": "n=4p and n=20p for a split prime p; the generic E <= (100/9)n^(-1/2) bound covers their terms at least 2^30.",
+    "exceptional_quotient_onset": 1073741824,
+    "finite_bound": 17179869184,
+    "finite_segments": 512,
+    "finite_segment_target_span": 33554432,
+    "eligible_finite_targets": 8137832770,
+    "short_summand_domain": [
+      1,
+      4999
+    ],
+    "short_summand_count": 657,
+    "finite_membership_completeness": "M19.21: character +1 and no inert prime divisor <= sqrt(segment upper). At most one larger inert factor can remain and it would force character -1. The deterministic segmented checker reconstructs every required mask; hashes are supplementary.",
+    "descent": "A least additional core exception is either entirely inert-supported or has a split prime quotient equal to 4 or 20. The analytic core and thin-family bounds exclude all possibilities above finite coverage. At ramified targets, 19m in P+P iff m in C+C; 20=1+19 removes the unramified core exception 20."
+  },
+  "verification": {
+    "author_replay": "Full exact checker PASS: all 512 segments through 2^34, zero missing eligible targets; 26 rational interval bounds, finite Euler/lattice bounds, independent coordinate membership comparison through 2^20, and 7 negative controls.",
+    "root_internal_review": "Separate internal agent read the full proof/checker and checked principal mass, coarse return/bad-point constants, Euler/tail algebra, exceptional quotient families, and least-counterexample descent; no gap reported.",
+    "focused_independent_review": "A separate internal agent checked M19.21, modular sieve starts, character period, both bit-shift signs, positive summands, segment endpoints, target count, and core-to-primitive descent. It independently factored 386 segment flags and checked 40 shifts across four windows including the final 2^34 endpoint; all passed.",
+    "large_replay_scope": "One full author replay. The focused reviewer did not duplicate the large scan. No independent external replay, external mathematical review, or formal verification is claimed."
+  },
+  "runtime_contract": {
+    "required": "Python 3 with assertions enabled; standard library only.",
+    "optimized_execution": "Explicit module-level RuntimeError rejects -O, -OO and PYTHONOPTIMIZE before computation.",
+    "arithmetic": "Exact integers, rational fractions and integer square/cube roots; no floating-point acceptance criteria.",
+    "negative_modes_checked": [
+      "-O",
+      "-OO",
+      "PYTHONOPTIMIZE=1"
+    ]
+  },
+  "limitations": [
+    "The computational checker establishes the finite and rational certificates, not the classical automorphic theorems.",
+    "The result is a complete numerical value-set classification, not a logarithmic leading count asymptotic or an optimal effective bound.",
+    "No historical priority, publication, external review or formal verification claim."
+  ]
+}

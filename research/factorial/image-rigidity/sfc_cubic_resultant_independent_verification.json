@@ -1,0 +1,495 @@
+{
+  "status": "PASS",
+  "arithmetic": "FLINT exact integer resultants",
+  "model_pairs": [
+    {
+      "n": 1,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 2,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 3,
+      "residual_gcd_degree": 1,
+      "resultant_valuation": 1
+    },
+    {
+      "n": 4,
+      "residual_gcd_degree": 1,
+      "resultant_valuation": 1
+    },
+    {
+      "n": 5,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 6,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 7,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 8,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 9,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 10,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 11,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 12,
+      "residual_gcd_degree": 3,
+      "resultant_valuation": 3
+    },
+    {
+      "n": 13,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 14,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 15,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 16,
+      "residual_gcd_degree": 4,
+      "resultant_valuation": 4
+    },
+    {
+      "n": 17,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 18,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 19,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 20,
+      "residual_gcd_degree": 1,
+      "resultant_valuation": 1
+    },
+    {
+      "n": 21,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 22,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 23,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 24,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 25,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 26,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 27,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 28,
+      "residual_gcd_degree": 1,
+      "resultant_valuation": 1
+    },
+    {
+      "n": 29,
+      "residual_gcd_degree": 3,
+      "resultant_valuation": 3
+    },
+    {
+      "n": 30,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 31,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 32,
+      "residual_gcd_degree": 0,
+      "resultant_valuation": 0
+    },
+    {
+      "n": 39,
+      "residual_gcd_degree": 10,
+      "resultant_valuation": 10
+    },
+    {
+      "n": 52,
+      "residual_gcd_degree": 13,
+      "resultant_valuation": 13
+    }
+  ],
+  "deformed_pairs": [
+    {
+      "n": 1,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 1,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 1,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 2,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 2,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 2,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 3,
+      "variant": 0,
+      "valuation": 1
+    },
+    {
+      "n": 3,
+      "variant": 1,
+      "valuation": 1
+    },
+    {
+      "n": 3,
+      "variant": 2,
+      "valuation": 1
+    },
+    {
+      "n": 4,
+      "variant": 0,
+      "valuation": 1
+    },
+    {
+      "n": 4,
+      "variant": 1,
+      "valuation": 1
+    },
+    {
+      "n": 4,
+      "variant": 2,
+      "valuation": 1
+    },
+    {
+      "n": 5,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 5,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 5,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 6,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 6,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 6,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 7,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 7,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 7,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 8,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 8,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 8,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 9,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 9,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 9,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 10,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 10,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 10,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 11,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 11,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 11,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 12,
+      "variant": 0,
+      "valuation": 3
+    },
+    {
+      "n": 12,
+      "variant": 1,
+      "valuation": 3
+    },
+    {
+      "n": 12,
+      "variant": 2,
+      "valuation": 3
+    },
+    {
+      "n": 13,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 13,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 13,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 14,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 14,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 14,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 15,
+      "variant": 0,
+      "valuation": 0
+    },
+    {
+      "n": 15,
+      "variant": 1,
+      "valuation": 0
+    },
+    {
+      "n": 15,
+      "variant": 2,
+      "valuation": 0
+    },
+    {
+      "n": 16,
+      "variant": 0,
+      "valuation": 4
+    },
+    {
+      "n": 16,
+      "variant": 1,
+      "valuation": 4
+    },
+    {
+      "n": 16,
+      "variant": 2,
+      "valuation": 4
+    }
+  ],
+  "raw_weighted_pairs": [
+    {
+      "n": 1,
+      "valuation": 2
+    },
+    {
+      "n": 2,
+      "valuation": 8
+    },
+    {
+      "n": 3,
+      "valuation": 20
+    },
+    {
+      "n": 4,
+      "valuation": 30
+    },
+    {
+      "n": 5,
+      "valuation": 46
+    },
+    {
+      "n": 6,
+      "valuation": 68
+    },
+    {
+      "n": 7,
+      "valuation": 86
+    },
+    {
+      "n": 8,
+      "valuation": 122
+    },
+    {
+      "n": 9,
+      "valuation": 166
+    },
+    {
+      "n": 10,
+      "valuation": 194
+    },
+    {
+      "n": 11,
+      "valuation": 235
+    },
+    {
+      "n": 12,
+      "valuation": 284
+    }
+  ],
+  "mod3_common_root_countercontrol": {
+    "orders": [
+      3,
+      4
+    ],
+    "phase": "-1/6"
+  },
+  "scope": "Finite audit; unrestricted quantifiers rely on the written proof.",
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "python_version": "3.12.14",
+  "python_flint_version": "0.9.0",
+  "flint_version": "3.6.0",
+  "source_pins": [
+    {
+      "path": "research/factorial/image-rigidity/SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md",
+      "sha256": "0dff58f64cd64b3e324e71c17d7314de849eaeccf797e4177414a89c7684b57a",
+      "expected_sha256": "0dff58f64cd64b3e324e71c17d7314de849eaeccf797e4177414a89c7684b57a",
+      "reviewed_pin_verified": true
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_sfc_cubic_resultant_independent.py",
+      "sha256": "0fba7495112f3cc590767e0f4bbd7115ef94627d615ef1bd7ac44f3b417bd90d",
+      "role": "current checker bytes; external manifests may pin this hash"
+    }
+  ],
+  "unrestricted_quantifiers_proved_by_finite_sampling": false,
+  "universal_proof": "SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md, Sections 1-3"
+}

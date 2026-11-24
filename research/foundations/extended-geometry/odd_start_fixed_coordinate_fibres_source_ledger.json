@@ -1,0 +1,61 @@
+{
+  "schema": "odd_start_fixed_coordinate_fibres_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "role": "required endpoint; optional marker consequence",
+      "exact_use": "Section 1 (S2)-(S3), exact odd-height endpoint coefficient identity; all-marker dichotomy used only to label the degree-one-coordinate phases unsafe."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_HEIGHT_RATIONALITY_AND_QUINTIC_SAFETY.md",
+      "sha256": "0e1023cd9714dca756786be35b151b4aacda8d3a47cf48c87bbbf3680ce1a851",
+      "role": "optional global coverage of rational-coordinate fibres",
+      "exact_use": "OddStartRationalCenter, only to place every pure unit-center odd-start phase in some rational u fibre. Fixed-rational-u theorem derives rational X directly and does not need this import."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "role": "required primary field theorem",
+      "exact_use": "Milne v5.10 Theorem 9.19 printed p117, Lemma 9.24 p118 and Example 9.25 p119: arbitrary-field Luroth, rational-map degree, Mobius generators. Actual statements inspected."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/stacks_curves_function_fields_0bxx.html",
+      "sha256": "07dec8a97847292618371f2ef7ac390b31a58e2f5d79d65c4742211fec24df91",
+      "role": "required primary curve infrastructure",
+      "exact_use": "Stacks 0BXX, Theorem 53.2.6; Lemmas 53.2.2, 53.2.4, 53.2.8 and 53.2.9(3): smooth projective function-field model, finite projections, constant functions. Actual current statements inspected; retained primary page."
+    }
+  ],
+  "primary_context_not_imported": [
+    {
+      "url": "https://arxiv.org/pdf/0910.2105",
+      "version": "arXiv:0910.2105v1",
+      "location": "Lemma 4.1 and Theorem 4.2, PDF pp18-19",
+      "scope": "Pakovich rational inverse-branch composition and monodromy-dependent moment theorem. Actual statements read; no monodromy hypothesis or curve integral criterion imported."
+    },
+    {
+      "url": "https://doi.org/10.1017/fms.2022.77",
+      "location": "Section 2, Theorem 2.3",
+      "scope": "Barroero-Capuano-Zannier actual polynomial Pell ramification and prescribed-branch correspondence. Actual statements read; no Pell or Belyi property imported."
+    }
+  ],
+  "self_contained_steps": [
+    "Marked reciprocal-unit iff without rational original return",
+    "Exact finite-pole bounds and one polynomial jet congruence",
+    "Finite support and integer divisor lattice",
+    "Cyclic polynomial reciprocal units and canonical quotient",
+    "Dickson finite translates, with no enumeration bound claimed",
+    "Cyclic-algebra coset filter, without Skolem-Mahler-Lech",
+    "Exact eventual degree progressions and geometric finite-degree rigidity",
+    "Complete degree-one-coordinate and displayed quadratic-quotient fibres"
+  ],
+  "not_claimed": [
+    "Classification as u varies",
+    "Unrestricted degree5 or degree7 safety",
+    "Rational return on the original x-line",
+    "A polynomial outer phase at all odd heights",
+    "An effective bound or completed enumeration of all finite base representatives",
+    "A finite-control proof of the universal classification",
+    "Historical novelty, external human review or formal verification"
+  ]
+}

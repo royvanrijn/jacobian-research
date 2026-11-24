@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "claim": "Subgroup-specific mixed-field primitive norm class-error factors, exact quadratic-character overlap densities, improved compressed endpoint profiles, and exact maximal order of the target product.",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "research/arithmetic/PRIMITIVE_NORM_TARGET_FACTOR_REFINEMENT.md",
+      "scope": "T.1--T.12: subgroup target products, enlarged-order overlap densities, compressed endpoints, exact maximal order, and normalization limits.",
+      "sha256": "e5a221a53015327a3db8be9d0040e37c865526e5aa01dd06f9265df157f3ce31"
+    },
+    {
+      "role": "checker",
+      "path": "research/arithmetic/verify_primitive_norm_target_factor_refinement.py",
+      "scope": "Deterministic finite input domains are contained in this exact standard-library checker.",
+      "sha256": "07fa2692570d0e86053df59dd7da899f8ac67406fb4e548f58396a6208628bf6"
+    },
+    {
+      "role": "mixed_field_counting",
+      "path": "research/arithmetic/PRIMITIVE_NORM_DIFFERENT_FIELDS_CLASS_ERROR.md",
+      "scope": "D.7 subgroup cover, D.10 local probabilities, D.11 uniform marked sieve, D.15--D.16 complete remainder, D.19--D.21 classical counts and concrete admissibility.",
+      "sha256": "8dfb822a2f23d776af94e13634e4df33311b7084f260c566de31067b9408ce3b"
+    },
+    {
+      "role": "endpoint_cover",
+      "path": "research/arithmetic/PRIMITIVE_NORM_ENDPOINT_CLASS_ERROR.md",
+      "scope": "All-proper-subgroup stabilizer cap and fixed-order prime-class Mertens; endpoint marking and subgroup compression.",
+      "sha256": "14fe947c9b58a3db563903833d9494ce9b3b05314501621b7d9177bf6f2e1363"
+    },
+    {
+      "role": "class_number_three",
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "scope": "Discriminant minus23 has class group C3; concrete example only.",
+      "sha256": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5"
+    },
+    {
+      "role": "class_number_four",
+      "path": "research/arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md",
+      "scope": "Discriminant minus56 has class group C4 and chi8 detects class parity; concrete examples only.",
+      "sha256": "967eef97bc00525d1cd76a0c052c0cfb182c786a2d872240bc4ecf7e8ac1384c"
+    },
+    {
+      "role": "class_prime_primary",
+      "path": "research/arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf",
+      "scope": "Section2 part(5), Lemma2, equation(5.2), page15: fixed form-class prime count, inverse-class normalization and exponential error; actual retained statement reread.",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9"
+    },
+    {
+      "role": "genus_primary",
+      "path": "research/arithmetic/sources/ibukiyama-genus-characters-2303.14983v1.pdf",
+      "scope": "Proposition3.4 and Theorem3.5, printed/PDF pages12--14; prime-to-conductor ideal correspondence on page13. Actual retained statements and proof inspected; norm formula used only at good primes.",
+      "sha256": "298cdd2b42c1b589ed7b4036f45bde1b657e67bf981d8e68ca68747d1e9a6fa4"
+    }
+  ],
+  "primary_statements": [
+    {
+      "authors": "Tomoyoshi Ibukiyama",
+      "title": "Genus character L-functions of quadratic orders in an adelic way and maximal orders of matrix algebras",
+      "edition": "arXiv:2303.14983v1",
+      "url": "https://arxiv.org/pdf/2303.14983v1",
+      "locator": "Proposition3.4 and Theorem3.5, printed/PDF pages12--14; prime-to-conductor ideal correspondence on page13.",
+      "scope": "Genus characters for nonmaximal quadratic orders and their values on good prime ideals. Applied at conductor F=f_i|D_j|; no conductor-divisible norm-character assertion.",
+      "actual_statement_and_proof_inspected": true
+    },
+    {
+      "authors": "Jean Bourgain and Elena Fuchs",
+      "title": "On representation of integers by binary quadratic forms",
+      "edition": "arXiv:1105.3698v2",
+      "url": "https://arxiv.org/pdf/1105.3698v2",
+      "locator": "Section2 numbered part(5), Lemma2, equation(5.2), printed/PDF page15.",
+      "scope": "Fixed discriminant form-class prime counting with exponential error and ambiguous-class factor. Applied to one enlarged fixed order; no independent-field distribution premise.",
+      "actual_statement_inspected": true
+    }
+  ],
+  "new_argument": [
+    "Exact target factor is restricted to the deficient subgroup classes; normalized split/inert shadow density remains one regardless of target divisibility.",
+    "A genus character on one enlarged order encodes the other quadratic splitting condition. Its restriction to the subgroup preimage gives the density dichotomy d_H/2 or1/4.",
+    "The dominant subgroup index gives beta=delta/2 for odd q, and beta=1/8 or1/4 for q2 according to descent through the doubling map.",
+    "A convergent Mertens product and prime-divisor split give an exact limsup constant for W; the marked-prime primorial sequence attains it."
+  ],
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "historical_priority": false,
+    "finite_controls_prove_prime_distribution": false,
+    "optimality_of_actual_class_error": false
+  },
+  "not_claimed": [
+    "Optimal actual class-error lower bound",
+    "Varying-field or conductor uniformity",
+    "Numerical cutoff",
+    "New leading asymptotic",
+    "Historical priority",
+    "External review",
+    "Formal verification"
+  ],
+  "checker_command": "python3 research/arithmetic/verify_primitive_norm_target_factor_refinement.py",
+  "receipt_path": "research/arithmetic/primitive_norm_target_factor_refinement_checks.json",
+  "proof_scope": "Internal written proof with exact finite controls. The all-target product limsup is not a claim about every admissible target; the minus23/Gaussian example separately supplies an admissible attaining sequence."
+}

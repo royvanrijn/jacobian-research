@@ -1,0 +1,51 @@
+{
+  "D1": {
+    "complete_current_candidates": [
+      {
+        "ell": 1,
+        "n": 11,
+        "r": 10,
+        "s": 21,
+        "u": 11
+      }
+    ],
+    "current_degree": 254,
+    "current_endpoint_orders": [
+      111,
+      122
+    ],
+    "current_leading_sign_match": false,
+    "forced_actual_first_pivot": "135575957/22855940445",
+    "previous_degree": 252,
+    "previous_degree_match": false,
+    "previous_mean_delta": "9999/59648000",
+    "top_term_ratio": "1434214893826/8212939136313"
+  },
+  "D2": {
+    "complete_current_candidates": [
+      {
+        "ell": 1,
+        "n": 11,
+        "r": 5,
+        "s": 11,
+        "u": 6
+      }
+    ],
+    "current_degree": 134,
+    "current_endpoint_orders": [
+      61,
+      73
+    ],
+    "current_leading_sign_match": false,
+    "forced_actual_first_pivot": "588764/52371555",
+    "normalizer": "4051587308496779144355663972757/3046760870601420524860394238360",
+    "previous_degree": 131,
+    "previous_degree_match": false,
+    "previous_mean_delta": "19243030530352707943816806380284/22425535752529672564008600089209995"
+  },
+  "checker_sha256": "994abcccd3a895a766caa7a851f32478e9d2e2aeb231866d4ed2bfe2027dcf51",
+  "proof_sha256": "3a4a48ca11658e7bb87985f4b06a09548b064e50e2e498efe37a17c63b8a409e",
+  "represented_degree": 10,
+  "scope": "Exact exclusion as canonical density pairs at k=10 for all integer profiles and depths; not a general inverse theorem for truncated moments or an SFC closure.",
+  "status": "PASS"
+}

@@ -1,0 +1,443 @@
+{
+  "status": "PASS",
+  "arithmetic": "QQ and F_1000000009; standard library only",
+  "exact_grades": [
+    {
+      "grade": 1,
+      "columns": 1,
+      "root_relations": 0,
+      "rank": 0,
+      "dimension": 1,
+      "inverse_support": 1
+    },
+    {
+      "grade": 2,
+      "columns": 1,
+      "root_relations": 0,
+      "rank": 0,
+      "dimension": 1,
+      "inverse_support": 1
+    },
+    {
+      "grade": 3,
+      "columns": 2,
+      "root_relations": 1,
+      "rank": 1,
+      "dimension": 1,
+      "inverse_support": 1
+    },
+    {
+      "grade": 4,
+      "columns": 3,
+      "root_relations": 2,
+      "rank": 1,
+      "dimension": 2,
+      "inverse_support": 2
+    },
+    {
+      "grade": 5,
+      "columns": 5,
+      "root_relations": 4,
+      "rank": 2,
+      "dimension": 3,
+      "inverse_support": 3
+    },
+    {
+      "grade": 6,
+      "columns": 8,
+      "root_relations": 7,
+      "rank": 4,
+      "dimension": 4,
+      "inverse_support": 4
+    },
+    {
+      "grade": 7,
+      "columns": 14,
+      "root_relations": 14,
+      "rank": 8,
+      "dimension": 6,
+      "inverse_support": 6
+    },
+    {
+      "grade": 8,
+      "columns": 22,
+      "root_relations": 26,
+      "rank": 13,
+      "dimension": 9,
+      "inverse_support": 9
+    },
+    {
+      "grade": 9,
+      "columns": 37,
+      "root_relations": 48,
+      "rank": 24,
+      "dimension": 13,
+      "inverse_support": 13
+    },
+    {
+      "grade": 10,
+      "columns": 60,
+      "root_relations": 85,
+      "rank": 41,
+      "dimension": 19,
+      "inverse_support": 19
+    },
+    {
+      "grade": 11,
+      "columns": 98,
+      "root_relations": 152,
+      "rank": 72,
+      "dimension": 26,
+      "inverse_support": 26
+    },
+    {
+      "grade": 12,
+      "columns": 155,
+      "root_relations": 267,
+      "rank": 121,
+      "dimension": 34,
+      "inverse_support": 34
+    },
+    {
+      "grade": 13,
+      "columns": 246,
+      "root_relations": 468,
+      "rank": 206,
+      "dimension": 40,
+      "inverse_support": 40
+    },
+    {
+      "grade": 14,
+      "columns": 375,
+      "root_relations": 805,
+      "rank": 340,
+      "dimension": 35,
+      "inverse_support": 28
+    },
+    {
+      "grade": 15,
+      "columns": 560,
+      "root_relations": 1376,
+      "rank": 544,
+      "dimension": 16,
+      "inverse_support": 0
+    },
+    {
+      "grade": 16,
+      "columns": 807,
+      "root_relations": 2314,
+      "rank": 794,
+      "dimension": 13,
+      "inverse_support": 0
+    },
+    {
+      "grade": 17,
+      "columns": 1170,
+      "root_relations": 3840,
+      "rank": 1161,
+      "dimension": 9,
+      "inverse_support": 0
+    },
+    {
+      "grade": 18,
+      "columns": 1682,
+      "root_relations": 6274,
+      "rank": 1680,
+      "dimension": 2,
+      "inverse_support": 0
+    }
+  ],
+  "modular_zero_grades": [
+    {
+      "grade": 19,
+      "columns": 2429,
+      "independent_valid_relations": 2429,
+      "dimension": 0,
+      "seconds": 0.8640352600000369
+    },
+    {
+      "grade": 20,
+      "columns": 3454,
+      "independent_valid_relations": 3454,
+      "dimension": 0,
+      "seconds": 0.7192612799999551
+    },
+    {
+      "grade": 21,
+      "columns": 4892,
+      "independent_valid_relations": 4892,
+      "dimension": 0,
+      "seconds": 1.1054056279999713
+    },
+    {
+      "grade": 22,
+      "columns": 6841,
+      "independent_valid_relations": 6841,
+      "dimension": 0,
+      "seconds": 1.6341747469996335
+    },
+    {
+      "grade": 23,
+      "columns": 9467,
+      "independent_valid_relations": 9467,
+      "dimension": 0,
+      "seconds": 1.400421825000194
+    },
+    {
+      "grade": 24,
+      "columns": 12877,
+      "independent_valid_relations": 12877,
+      "dimension": 0,
+      "seconds": 1.6489274370001112
+    },
+    {
+      "grade": 25,
+      "columns": 17276,
+      "independent_valid_relations": 17276,
+      "dimension": 0,
+      "seconds": 1.7473715769997398
+    },
+    {
+      "grade": 26,
+      "columns": 22723,
+      "independent_valid_relations": 22723,
+      "dimension": 0,
+      "seconds": 2.5455949689999215
+    },
+    {
+      "grade": 27,
+      "columns": 29422,
+      "independent_valid_relations": 29422,
+      "dimension": 0,
+      "seconds": 2.676202930999807
+    },
+    {
+      "grade": 28,
+      "columns": 37406,
+      "independent_valid_relations": 37406,
+      "dimension": 0,
+      "seconds": 3.330255414000021
+    },
+    {
+      "grade": 29,
+      "columns": 46928,
+      "independent_valid_relations": 46928,
+      "dimension": 0,
+      "seconds": 63.50177781800039
+    },
+    {
+      "grade": 30,
+      "columns": 58204,
+      "independent_valid_relations": 58204,
+      "dimension": 0,
+      "seconds": 29.080668575000345
+    },
+    {
+      "grade": 31,
+      "columns": 71585,
+      "independent_valid_relations": 71585,
+      "dimension": 0,
+      "seconds": 23.206042180999702
+    },
+    {
+      "grade": 32,
+      "columns": 86861,
+      "independent_valid_relations": 86861,
+      "dimension": 0,
+      "seconds": 20.277256265999767
+    },
+    {
+      "grade": 33,
+      "columns": 103831,
+      "independent_valid_relations": 103831,
+      "dimension": 0,
+      "seconds": 25.296119722000185
+    },
+    {
+      "grade": 34,
+      "columns": 121788,
+      "independent_valid_relations": 121788,
+      "dimension": 0,
+      "seconds": 33.17029564900031
+    },
+    {
+      "grade": 35,
+      "columns": 139784,
+      "independent_valid_relations": 139784,
+      "dimension": 0,
+      "seconds": 40.58092706299976
+    },
+    {
+      "grade": 36,
+      "columns": 156021,
+      "independent_valid_relations": 156021,
+      "dimension": 0,
+      "seconds": 52.0783215219999
+    },
+    {
+      "grade": 37,
+      "columns": 168640,
+      "independent_valid_relations": 168640,
+      "dimension": 0,
+      "seconds": 59.68683628300005
+    },
+    {
+      "grade": 38,
+      "columns": 175309,
+      "independent_valid_relations": 175309,
+      "dimension": 0,
+      "seconds": 57.04343427399999
+    },
+    {
+      "grade": 39,
+      "columns": 174479,
+      "independent_valid_relations": 174479,
+      "dimension": 0,
+      "seconds": 81.20367188799992
+    },
+    {
+      "grade": 40,
+      "columns": 164945,
+      "independent_valid_relations": 164945,
+      "dimension": 0,
+      "seconds": 83.62601035399985
+    },
+    {
+      "grade": 41,
+      "columns": 147536,
+      "independent_valid_relations": 147536,
+      "dimension": 0,
+      "seconds": 72.44311313699973
+    },
+    {
+      "grade": 42,
+      "columns": 124159,
+      "independent_valid_relations": 124159,
+      "dimension": 0,
+      "seconds": 90.98585473899993
+    },
+    {
+      "grade": 43,
+      "columns": 98523,
+      "independent_valid_relations": 98523,
+      "dimension": 0,
+      "seconds": 44.808158792000086
+    },
+    {
+      "grade": 44,
+      "columns": 73466,
+      "independent_valid_relations": 73466,
+      "dimension": 0,
+      "seconds": 18.84901805399977
+    },
+    {
+      "grade": 45,
+      "columns": 51364,
+      "independent_valid_relations": 51364,
+      "dimension": 0,
+      "seconds": 8.988309053999728
+    },
+    {
+      "grade": 46,
+      "columns": 33259,
+      "independent_valid_relations": 33259,
+      "dimension": 0,
+      "seconds": 3.5026594890000524
+    },
+    {
+      "grade": 47,
+      "columns": 20152,
+      "independent_valid_relations": 20152,
+      "dimension": 0,
+      "seconds": 1.833996463999938
+    },
+    {
+      "grade": 48,
+      "columns": 11425,
+      "independent_valid_relations": 11425,
+      "dimension": 0,
+      "seconds": 0.9789366380000502
+    },
+    {
+      "grade": 49,
+      "columns": 5906,
+      "independent_valid_relations": 5906,
+      "dimension": 0,
+      "seconds": 0.48212673599982736
+    },
+    {
+      "grade": 50,
+      "columns": 2705,
+      "independent_valid_relations": 2705,
+      "dimension": 0,
+      "seconds": 0.19770293199962907
+    },
+    {
+      "grade": 51,
+      "columns": 1160,
+      "independent_valid_relations": 1160,
+      "dimension": 0,
+      "seconds": 0.07501812600003177
+    },
+    {
+      "grade": 52,
+      "columns": 447,
+      "independent_valid_relations": 447,
+      "dimension": 0,
+      "seconds": 0.026195001000360207
+    },
+    {
+      "grade": 53,
+      "columns": 129,
+      "independent_valid_relations": 129,
+      "dimension": 0,
+      "seconds": 0.0066293269997004245
+    },
+    {
+      "grade": 54,
+      "columns": 27,
+      "independent_valid_relations": 27,
+      "dimension": 0,
+      "seconds": 0.0014577779998035112
+    },
+    {
+      "grade": 55,
+      "columns": 4,
+      "independent_valid_relations": 4,
+      "dimension": 0,
+      "seconds": 0.00016504099994563148
+    }
+  ],
+  "last_verified_zero_grade": 55,
+  "grade18_witness": {
+    "tree_id": 3569,
+    "grade": 18,
+    "leaf_count": 37,
+    "expression": "L^2 (M L)^4 b",
+    "definitions": "a=mu(x,x,x), b=mu(a,a,a), L(y)=mu(x,x,y), M(y)=mu(x,a,y)",
+    "rational_remainder": {
+      "3569": "1"
+    }
+  },
+  "full_algebra_dimension": 235,
+  "optimal_repeated_element_leaf_threshold": 39,
+  "mixed_input_nilpotence_for_arbitrary_algebras_claimed": false,
+  "input_sha256": "6eafab13e395bf6d42612a2c09a9588bfc86340be06bbf8a8c3865e250622f0f",
+  "prefix_certificate_sha256": "ce4c712192ea60690315552a9df4df55f0a82ae466b063c260fd552135686be0",
+  "grade29_certificate_sha256": "9104dd117af57eae57b178d29491a8472077c2bcfa527ca017af307e40bbc45d",
+  "prefix_ledger_sha256": "41433b4214fb8df6a5af11bb6fcc2308d325822d525868d0fb481ed641477281",
+  "checker_sha256": "8baadd192b7cc3406728c9f037ac5cd956dbd8d40eeb1ed82fef176a6faedc53",
+  "controls": {
+    "unit_row_propagation": true,
+    "detached_unit_block": true,
+    "gap_not_skipped": true,
+    "dependent_relation_rejected": true,
+    "out_of_prequotient_column_rejected": true,
+    "inherited": {
+      "duplicate_relation_rejected": true,
+      "malformed_pivot_controls": 4,
+      "quadratic_gap_first_inductive_grade": 29
+    }
+  },
+  "seconds": 872.9612015160001
+}

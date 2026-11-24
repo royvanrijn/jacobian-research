@@ -1,0 +1,65 @@
+{
+  "schema": "selfadjoint_power_two_string_source_ledger_v1",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "research/dixmier/dixmier-formal-lifting/SELFADJOINT_POWER_OF_TWO_STRING_CLASSIFICATION.md",
+      "sha256": "995e70ad5b576ff0fe07857d8bc4e6ec566b7e2a278d6d3dbdefefa59e78a698",
+      "exact_use": "PowerTwoSelfadjointStringClassification; PowerTwoNormalizedMateDescent; CompleteSquareMateCriterion; LowOrderRemainderSpecialization; PowerTwoSelfadjointLongObstruction"
+    },
+    {
+      "role": "exact_bounded_checker",
+      "path": "research/dixmier/dixmier-formal-lifting/verify_selfadjoint_power_two_string.py",
+      "sha256": "219c098c840a508a4c0b83d4d64aba56ad176fc49f56891b5434f4322036c727",
+      "exact_use": "Exact formal adjoints, actual positive mates, quartic boundary, normalized time and valuation controls; not a universal finite computation"
+    },
+    {
+      "role": "required_coprime_theorem",
+      "path": "research/dixmier/dixmier-formal-lifting/ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md",
+      "sha256": "f23a75cd754b1350446e7774b4d04f00169dc8acf28e3755af07ddfd76931710",
+      "exact_use": "CoprimeAlgebraicStringExclusion, original actual-constant-field and finite scalar hypotheses; Section1 finite fractional-flow subtraction"
+    },
+    {
+      "role": "transitive_primary_source_scope",
+      "path": "research/dixmier/dixmier-formal-lifting/all_coprime_algebraic_string_source_ledger.json",
+      "sha256": "2dc16e1c3ba62be4691623716cf4f9c751a2d325d9df40702b6783a8c7846417",
+      "exact_use": "Pinned Beals-Sattinger forward Stokes input and its exact scope for the imported all-coprime theorem; no new analytic extension"
+    },
+    {
+      "role": "earlier_square_context",
+      "path": "research/dixmier/dixmier-formal-lifting/GENERAL_SELFADJOINT_SQUARE_INFINITY_OBSTRUCTION.md",
+      "sha256": "7f336b11d7c488eb8579a132fd8b9f3012c1e88475949557b815629578f6ff0d",
+      "exact_use": "Adjoint projection and the earlier growing-U, slow-W square obstruction; context only, no theorem needed for the stronger classification"
+    },
+    {
+      "role": "required_global_first_order_bridge",
+      "path": "research/dixmier/dixmier-formal-lifting/LOW_ORDER_DC1_AUTOMORPHISMS.md",
+      "sha256": "f59e6e39efd2273a6341d4e351cf82ea10c560c023784d7204c5ad548e5c4db6",
+      "exact_use": "Section1: actual first-order polynomial Weyl image and its mate generate the polynomial Weyl algebra; used only for the final rank-one endomorphism corollary"
+    },
+    {
+      "role": "required_long_chart",
+      "path": "research/dixmier/dixmier-formal-lifting/QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md",
+      "sha256": "7f23fed53e80380922b737978ea79105a5c05472d526321298fdf8680a47a014",
+      "exact_use": "Exact scalar chart [a,v]=h/v, generic classical pair of differential orders2,3; actual unchanged-first-image scope"
+    }
+  ],
+  "primary_comparison_not_imported": {
+    "title": "Commuting Ordinary Differential Operators and the Dixmier Test",
+    "authors": "Emma Previato, Sonia L. Rueda and Maria-Angeles Zurro",
+    "edition": "SIGMA15(2019),101",
+    "url": "https://doi.org/10.3842/SIGMA.2019.101",
+    "inspected_pdf": "https://www.emis.de/journals/SIGMA/2019/101/sigma19-101.pdf",
+    "locator": "Section2.1, printed pp4-5, Lemma2.2, Corollary2.4 and Theorem2.6; commuting example(1.1), printed p2",
+    "scope": "Actual statements inspected. General centralizer commutativity and formal-root descriptions do not imply C[P]; the needed Airy centralizer equality is proved directly. The commuting example is not a nonzero-constant string pair."
+  },
+  "universal_argument": "Adjoint projection reduces the mate to odd order; the imported coprime theorem forces first order for selfadjoint order2^e. Finite flow subtraction and Airy shear prove centralizer polynomiality, with actual-field descent and a separate differential-ideal specialization argument.",
+  "scope_limits": [
+    "One-variable algebraic coefficient fields over their actual constants, characteristic zero, finite scalar differential operators.",
+    "Selfadjointness after the specified algebraic first-order normalization is a hypothesis, not automatic for arbitrary quartics.",
+    "Time derivative is the normalized rho*delta; no original-delta primitive is asserted.",
+    "The Long application retains exact first image and regular classical orders2,3.",
+    "Generic normalization may have parameter poles; valuation arguments are applied only after descent in the original ring.",
+    "Finite controls do not prove the unrestricted classification; no historical-priority, external-human-review or formal-verification assertion."
+  ]
+}

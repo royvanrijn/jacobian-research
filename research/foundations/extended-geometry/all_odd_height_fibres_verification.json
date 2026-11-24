@@ -1,0 +1,754 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "Exact rational polynomial, divisor and moment arithmetic; no floating-point acceptance.",
+  "checker_sha256": "7274e9139ace221315d78d27f1027c91014dfe15f3d961e50e7e34a12e3aac32",
+  "source_pins_checked": 7,
+  "packet_pins": {
+    "research/foundations/extended-geometry/ALL_ODD_HEIGHT_FIBRE_STABILIZATION.md": "ba32f29b37c6ec4bbe93e91d192e18316e7662803a14ddd9ed373925eb92ab58",
+    "research/foundations/extended-geometry/verify_all_odd_height_fibres.py": "7274e9139ace221315d78d27f1027c91014dfe15f3d961e50e7e34a12e3aac32",
+    "research/foundations/extended-geometry/all_odd_height_fibres_source_ledger.json": "6a3050dd1ba84dc558ba34fcfa361d70b4c734e0be1850404e72554d85f61a0d"
+  },
+  "scope": "Finite controls for the written unrestricted theorem; not an implementation of the entire all-height atlas.",
+  "verification": {
+    "integer_local_order_controls": 2475,
+    "rational_interval_cases": 24,
+    "independent_literal_polynomiality_checks": 144,
+    "stable_signature_controls": 3072,
+    "sharp_degree_cases": 8,
+    "pure_polynomial_pair_controls": 31,
+    "transport_controls": 20,
+    "exact_least_degree_controls": 31,
+    "raw_moment_controls": 20,
+    "negative_controls": [
+      "using C alone incorrectly admits a pole of X",
+      "requiring X to vanish at the marked point",
+      "omitting an unmarked zero of u",
+      "allowing a pole of X away from the poles of u",
+      "local polynomiality alone falsely treated as reciprocity/purity",
+      "rounding the sharp cutoff down to the previous odd height",
+      "claiming stabilized C and D themselves remain unchanged"
+    ],
+    "sharp_examples": [
+      {
+        "coordinate_degree": 2,
+        "first_odd_height": 1,
+        "eta": "1",
+        "interval": [
+          1,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 3,
+        "first_odd_height": 3,
+        "eta": "1",
+        "interval": [
+          2,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 4,
+        "first_odd_height": 3,
+        "eta": "1",
+        "interval": [
+          3,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 5,
+        "first_odd_height": 5,
+        "eta": "1",
+        "interval": [
+          4,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 6,
+        "first_odd_height": 5,
+        "eta": "1",
+        "interval": [
+          5,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 7,
+        "first_odd_height": 7,
+        "eta": "1",
+        "interval": [
+          6,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 8,
+        "first_odd_height": 7,
+        "eta": "1",
+        "interval": [
+          7,
+          null
+        ]
+      },
+      {
+        "coordinate_degree": 9,
+        "first_odd_height": 9,
+        "eta": "1",
+        "interval": [
+          8,
+          null
+        ]
+      }
+    ],
+    "infinite_example_controls": [
+      {
+        "exponent": 0,
+        "height_interval": [
+          1,
+          null
+        ],
+        "degree_slope": 2
+      },
+      {
+        "exponent": 1,
+        "height_interval": [
+          1,
+          null
+        ],
+        "degree_slope": 3
+      },
+      {
+        "exponent": 2,
+        "height_interval": [
+          1,
+          null
+        ],
+        "degree_slope": 4
+      },
+      {
+        "exponent": 5,
+        "height_interval": [
+          1,
+          null
+        ],
+        "degree_slope": 7
+      }
+    ],
+    "local_rational_examples": [
+      {
+        "orders": [
+          1,
+          1,
+          3,
+          0
+        ],
+        "interval": [
+          1,
+          null
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          2,
+          1,
+          4,
+          0
+        ],
+        "interval": [
+          2,
+          null
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          3,
+          1,
+          7,
+          0
+        ],
+        "interval": [
+          3,
+          null
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          4,
+          2,
+          6,
+          0
+        ],
+        "interval": [
+          2,
+          null
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          5,
+          2,
+          3,
+          0
+        ],
+        "interval": [
+          3,
+          null
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          6,
+          3,
+          4,
+          0
+        ],
+        "interval": [
+          2,
+          null
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          1,
+          1,
+          3,
+          1
+        ],
+        "interval": [
+          1,
+          1
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          1,
+          1,
+          5,
+          1
+        ],
+        "interval": [
+          1,
+          3
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1,
+          3
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          1,
+          1,
+          7,
+          1
+        ],
+        "interval": [
+          1,
+          5
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1,
+          3,
+          5
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          1,
+          1,
+          9,
+          1
+        ],
+        "interval": [
+          1,
+          7
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          2,
+          1,
+          5,
+          1
+        ],
+        "interval": [
+          2,
+          3
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          2,
+          1,
+          7,
+          1
+        ],
+        "interval": [
+          2,
+          5
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          3,
+          1,
+          5,
+          1
+        ],
+        "interval": [
+          3,
+          3
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          3,
+          1,
+          7,
+          1
+        ],
+        "interval": [
+          3,
+          5
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          4,
+          1,
+          5,
+          1
+        ],
+        "interval": [
+          4,
+          3
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          4,
+          1,
+          7,
+          1
+        ],
+        "interval": [
+          4,
+          5
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          5
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          4,
+          2,
+          5,
+          1
+        ],
+        "interval": [
+          2,
+          3
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          5,
+          2,
+          7,
+          1
+        ],
+        "interval": [
+          3,
+          5
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          3,
+          5
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          1,
+          1,
+          6,
+          2
+        ],
+        "interval": [
+          1,
+          1
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          1,
+          1,
+          8,
+          2
+        ],
+        "interval": [
+          1,
+          2
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [
+          1
+        ],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          2,
+          1,
+          6,
+          2
+        ],
+        "interval": [
+          2,
+          1
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          2,
+          1,
+          8,
+          2
+        ],
+        "interval": [
+          2,
+          2
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          3,
+          2,
+          6,
+          2
+        ],
+        "interval": [
+          2,
+          1
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [],
+        "purity_claimed": false
+      },
+      {
+        "orders": [
+          5,
+          3,
+          9,
+          2
+        ],
+        "interval": [
+          2,
+          2
+        ],
+        "tested_heights": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "polynomial_heights": [],
+        "purity_claimed": false
+      }
+    ],
+    "local_nonpure_transient_control": {
+      "u": "x/(1 - x)**5",
+      "X": "1/(1 - x)",
+      "height_interval": [
+        1,
+        3
+      ],
+      "reciprocal_norm_x_squared_coefficient": "-220",
+      "pure_example": false
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "status": "PASS",
+  "scope": "exact finite algebra controls; universal proof is in companion note",
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "mixed_triangularization_controls": 12,
+  "actual_native_rank_controls": 40,
+  "sample_actual_native_ranks": [
+    {
+      "d": 8,
+      "p": 2,
+      "n": 1,
+      "rank": 6
+    },
+    {
+      "d": 8,
+      "p": 2,
+      "n": 2,
+      "rank": 5
+    },
+    {
+      "d": 8,
+      "p": 2,
+      "n": 3,
+      "rank": 4
+    },
+    {
+      "d": 8,
+      "p": 2,
+      "n": 4,
+      "rank": 4
+    }
+  ],
+  "actual_factorial_coefficient_radius_controls": 5050,
+  "sharp_stage_control": {
+    "n": 1,
+    "c": 8,
+    "u": 40320,
+    "Q": [
+      -109584,
+      118124,
+      -67284,
+      22449,
+      -4536,
+      546,
+      -36,
+      1
+    ],
+    "coefficient_valuations": [
+      4,
+      2,
+      2,
+      0,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "residue_stage_candidate_lower_indices_mod_256": [
+    69,
+    162,
+    197
+  ],
+  "residue_stage_candidate_terminal_indices_mod_256": [
+    70,
+    163,
+    198
+  ],
+  "exact_three_stage_operator_controls": 32,
+  "actual_full_leaf_interpolation_controls": [
+    {
+      "n": 1,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -31,
+      "S0_valuation": 0
+    },
+    {
+      "n": 2,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -56,
+      "S0_valuation": 3
+    },
+    {
+      "n": 3,
+      "leaf_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -73,
+      "S0_valuation": 0
+    },
+    {
+      "n": 4,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -98,
+      "S0_valuation": 1
+    },
+    {
+      "n": 5,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -123,
+      "S0_valuation": 0
+    },
+    {
+      "n": 6,
+      "leaf_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -140,
+      "S0_valuation": 2
+    },
+    {
+      "n": 7,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -165,
+      "S0_valuation": 0
+    },
+    {
+      "n": 8,
+      "leaf_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -182,
+      "S0_valuation": 1
+    },
+    {
+      "n": 69,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -1531,
+      "S0_valuation": 0,
+      "E": 8,
+      "forced_L": 9,
+      "normalized_mixed_series_valuations": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "n": 197,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -4347,
+      "S0_valuation": 0,
+      "E": 7,
+      "forced_L": 8,
+      "normalized_mixed_series_valuations": [
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "n": 162,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -3576,
+      "S0_valuation": 3,
+      "E": 8,
+      "forced_L": 6
+    },
+    {
+      "n": 930,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -20472,
+      "S0_valuation": 3,
+      "E": 11,
+      "forced_L": 9,
+      "normalized_mixed_series_valuations": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "n": 1954,
+      "leaf_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "degree_in_v_checked": 2,
+      "S0": -43000,
+      "S0_valuation": 3,
+      "E": 10,
+      "forced_L": 8,
+      "normalized_mixed_series_valuations": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "universal_closure_proved_by_finite_checks": false,
+  "full_gap_eight_proof_location": "STEPANOV_LOWER_THREE_EIGHTH_GAP_CLOSURE.md, Sections 1-4"
+}

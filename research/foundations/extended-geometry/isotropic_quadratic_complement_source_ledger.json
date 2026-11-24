@@ -1,0 +1,41 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "path": "ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md",
+      "relation": "Complete_Sections1--9_all_field_Lie_endpoint_sharp_iff_marker_and_absolute_nonpower_proof",
+      "role": "written_proof",
+      "sha256": "fd84d668b215a80b5f4ac949e9d307e5bbcd6055e150454528f513518186bb19"
+    },
+    {
+      "path": "verify_isotropic_quadratic_complement.py",
+      "relation": "Source_authentication_and_BOUNDED_exact_sparse_Lie_factor_models_NOT_universal_proof",
+      "role": "exact_checker",
+      "sha256": "e2763ee6ff5691ced351e5529ddb0c683a21d255d7b07c0143fdb49c34234ca7"
+    },
+    {
+      "path": "isotropic_quadratic_complement_inputs.json",
+      "relation": "Exact_isotropic_all_char0_mixed_moments_sharp_seed_threshold_nonpower_witness_and_boundaries",
+      "role": "typed_inputs",
+      "sha256": "7c1642e066aee242cd93108ee0f2fc61206904bc081ac15d240d58ef590b0f88"
+    },
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "relation": "NECESSARY_REUSED_SRC_RHT_MILNE_COMPLETE_REDUCIBILITY_22_42_22_43_printed477_478_and_12l_printed248_249_same_field_only",
+      "role": "milne_complete_reducibility_reused",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67"
+    },
+    {
+      "path": "HOPF_LIFT_CLASSIFICATION.md",
+      "relation": "CONTEXT_ONLY_REUSED_SRC_HOPF_LIFT_CLASSIFICATION_Theorem7_1_equations7_1--7_7_M_equals1_endpoint_reproduced_locally_NOT_core_premise",
+      "role": "hopf_endpoint_context_reused",
+      "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60"
+    }
+  ]
+}

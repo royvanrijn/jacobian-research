@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "scope": "Bounded exact ramification, cyclic-jet, pole-twist, construction and moment controls. The written proof supplies the global classification and exhaustion.",
+  "arithmetic": "Exact integers and rational arithmetic in Q, Q(i), and Q(sqrt(2)); standard library only; active assertions.",
+  "python": "3.12.14",
+  "proof_sha256": "3d30790a8fcde6f86dfd7612e231654c3b75a36aa9bcb78098f53f9b20c8ea5c",
+  "checker_sha256": "aa637e08b2df0ee8620d2d4d0a56ca0f724560f20c36155566c1dc4636413277",
+  "source_ledger_sha256": "6d85d700c8cfad46acd0cd5bdd51f3d3154792781a6464f3ec1ebc6d73b40c27",
+  "source_pins_checked": 7,
+  "local_and_cyclotomic_controls": {
+    "zero_ramification_cases": 320,
+    "regular_ramification_cases": 320,
+    "pole_bound_cases": 2880,
+    "simultaneous_untwisted_order_cases": 672
+  },
+  "algebraic_controls": {
+    "polynomial_pairs": 14,
+    "raw_moments": 84,
+    "period_residue_cases": 240,
+    "thick_jet_cases": 3
+  },
+  "samples": [
+    {
+      "family": "Qi_thick_jet",
+      "e": 2,
+      "a": 1,
+      "exponent": 2,
+      "least_sphere_degree": 21
+    },
+    {
+      "family": "Qi_thick_jet",
+      "e": 2,
+      "a": 3,
+      "exponent": 2,
+      "least_sphere_degree": 35
+    },
+    {
+      "family": "Qi_thick_jet",
+      "e": 3,
+      "a": 1,
+      "exponent": 2,
+      "least_sphere_degree": 30
+    },
+    {
+      "family": "Qi_thick_jet",
+      "e": 3,
+      "a": 3,
+      "exponent": 2,
+      "least_sphere_degree": 50
+    },
+    {
+      "family": "Qi_thick_jet",
+      "e": 4,
+      "a": 1,
+      "exponent": 2,
+      "least_sphere_degree": 39
+    },
+    {
+      "family": "Qi_thick_jet",
+      "e": 4,
+      "a": 3,
+      "exponent": 2,
+      "least_sphere_degree": 65
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 2,
+      "a": 1,
+      "twist": 1,
+      "exponent": 2,
+      "least_sphere_degree": 21
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 2,
+      "a": 3,
+      "twist": 1,
+      "exponent": 2,
+      "least_sphere_degree": 35
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 2,
+      "a": 1,
+      "twist": -1,
+      "exponent": 6,
+      "least_sphere_degree": 45
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 2,
+      "a": 3,
+      "twist": 0,
+      "exponent": 4,
+      "least_sphere_degree": 55
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 3,
+      "a": 1,
+      "twist": 1,
+      "exponent": 2,
+      "least_sphere_degree": 30
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 3,
+      "a": 3,
+      "twist": 1,
+      "exponent": 2,
+      "least_sphere_degree": 50
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 4,
+      "a": 1,
+      "twist": 1,
+      "exponent": 2,
+      "least_sphere_degree": 39
+    },
+    {
+      "family": "Qsqrt2_pole_twist",
+      "e": 4,
+      "a": 3,
+      "twist": 1,
+      "exponent": 2,
+      "least_sphere_degree": 65
+    }
+  ],
+  "negative_controls": [
+    "cyclotomic residues with a jet made too thick",
+    "drop the incompatible active value -1",
+    "permit a pole twist beyond the exact bound",
+    "ignore higher quotient ramification",
+    "ignore the active marked value 1",
+    "treat zero as a torsion unit",
+    "a proper-power quotient claimed canonical",
+    "use an unramified preimage for the pole bound",
+    "distinct 2-adic orders claimed compatible"
+  ],
+  "not_claimed": [
+    "Finite tests proving the universal theorem",
+    "A complete degree atlas of coordinates",
+    "A classification of all finite fibres",
+    "Formal verification or external review"
+  ]
+}

@@ -1,0 +1,608 @@
+# Ordinary support {3,11} by complete two-adic leaf interpolation
+
+## Theorem and scope
+
+Let `K` be any field of characteristic zero. For every nonzero
+`f(X)=X^3(A+B X^8)` in `K[X]` and every integer `n>=1`, the two ordinary
+factorial moments `L_1(f^n)` and `L_1(f^(n+1))` cannot both vanish, where
+`L_1(X^j)=j!`. Equivalently, the rational polynomials
+
+\[
+ P_{n,8}(t)=\sum_{k=0}^n\binom nk(3n+1)_{8k}t^k
+\]
+
+satisfy `gcd(P_(n,8),P_(n+1,8))=1` for every `n>=1`.
+The terminal index is `N=n+1`. The coefficient degenerates `A=0` and
+`B=0` are included. This is an ordinary factorial theorem; no
+arbitrary Gamma-shape conclusion is asserted.
+
+The proof first restricts a hypothetical collision to
+`n=69 (mod128)` or `n=162 (mod256)`. It then retains all three exact
+Artin–Hasse stages, including their actual seeds. Seven scalar leaf
+equations determine a normalized relation polynomial with a uniform
+integral error. On both remaining progressions the mixed equation is
+an injective restricted series. Rational descent and an exact rational
+sum-of-squares identity exclude its last possible common root.
+
+The intermediate residue statement used below is
+
+\[
+ P_{n,8},P_{n+1,8}\text{ have a common root}
+ \ \Longrightarrow\
+ n\equiv69\pmod {128}\ \text{or}\ n\equiv162\pmod {256}.
+ \tag{1}
+\]
+
+## Retained inputs
+
+The following exact sources were inspected at base commit
+`19eb9912fb60142f8b620dac24896931d4ff3e46`:
+
+* [DIAGONAL_PRIME_GAP_SFC.tex](DIAGONAL_PRIME_GAP_SFC.tex), Theorem
+  `thm:offset-rank` and its constant triangularization: the actual
+  mixed-shape matrix, including multiple lower roots.
+* [ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex](ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex),
+  Lemmas `lem:artin-hasse-closure` and `lem:frobenius-noncollision`:
+  the exact integral operator/seed class, prime-power block descent,
+  and noncollision below reduced degree `p^s-1`.
+* [LOWER_TWO_FOURTH_POWER_GAP_SFC.tex](LOWER_TWO_FOURTH_POWER_GAP_SFC.tex),
+  Section 1 and the proof of Theorem `thm:boundary`: explicit seed and
+  operator transformations and the nonresonant divided-Taylor estimates.
+
+All valuation arguments allow ramified algebraic extensions. Positive
+valuation is not replaced by valuation at least one without an
+explicit integral-ideal argument. Outer parameters remain scalars
+under inner Euler operators. No theorem about an arbitrary seed is
+substituted for the actual descended seeds.
+
+## 1. Exact offset-three columns
+
+Fix `d >= 3`, `gamma=3n+1`, `M=(d+3)n+1`, and write
+
+\[
+ c=\gamma+d-1=3n+d,\qquad A=c-zD_z+z,
+ \quad \Pi_{n,d}(X)=\prod_{\ell=0}^{n-1}(X+d\ell),
+\]
+\[
+ R_i(X)=\prod_{\ell=n}^{n+i-1}(X+d\ell),\qquad
+ B_{n+i}=\Pi_{n,d}(A)R_i(A)1.
+\]
+
+Put `u=(-1)^(d+1)/t`, `C=M+d`, and
+
+\[
+ \kappa=\frac{d(n+1)}{(C)_3}
+ =\frac{d}{(d+3)((d+3)n+d+1)((d+3)n+d+2)},
+\]
+\[
+ m=(d-2)\left(M+\frac{d^2+1}{2}\right)-(M+d+2).
+ \tag{2}
+\]
+
+The actual consecutive common-root condition is equivalent to rank
+less than `d-1` of the cyclic columns
+
+\[
+ B_{n+1},\ldots,B_{n+d-3},\quad
+ B_{n+d-2}-\kappa uB_n,\quad
+ B_{n+d-1}-\kappa m uB_n.
+ \tag{3}
+\]
+
+For verification, the retained offset-three columns are
+`L_j-epsilon*kappa*u*v_(d-1-j)*B_n`, where only
+`v_2=1` and `v_1=C+2` affect the matrix. Before cyclic evaluation,
+
+\[
+ L_j=\Pi_{n,d}(A)R_1(A)
+       \prod_{r=0}^{j-1}(c-A-r)1.
+\]
+
+Its two highest terms in the `R_i` basis are
+
+\[
+ L_j=(-1)^jB_{n+j+1}
+ +(-1)^{j-1}j\left(M+\frac{3d-1+(d-1)j}{2}\right)B_{n+j}
+ +\text{earlier columns}.
+\]
+
+Eliminate earlier columns in increasing order. The penultimate
+correction becomes `-kappa*u`; the final one becomes
+`-kappa*u*((d-2)(M+(d^2+1)/2)-(C+2))`, proving (3).
+These are constant invertible column operations over characteristic
+zero. The replay checks the entire triangular reduction, including
+signs, rather than only the two displayed coefficients.
+
+An actual dependence in (3), normalized so its coefficients `a_i`
+are integral and one is a unit, gives a zero cyclic column of
+
+\[
+ \Pi_{n,d}(A)Q(A)1,\qquad
+ Q(X)=\sum_{i=1}^{d-1}a_iR_i(X)-\kappa uS,
+ \quad S=a_{d-2}+m a_{d-1}.
+ \tag{4}
+\]
+
+If `Q(X)=sum c_j X^j`, then the top two monomial coefficients give
+
+\[
+ S=c_{d-2}+
+ \left((d-9)n+\frac{(d-4)(d+3)}2\right)c_{d-1}.
+ \tag{5}
+\]
+
+In particular, at gap eight,
+
+\[
+ m=55n+190,\quad
+ \kappa=\frac8{11(11n+9)(11n+10)},\quad
+ S=c_6+(22-n)c_7.
+ \tag{6}
+\]
+
+## 2. A necessary three-stage coefficient pattern
+
+Work in the exact closed Artin--Hasse stage class at `p=2`, `q=8`
+of the retained sources. Its integral seed reduces to a constant
+unit, its operator is `A=c-theta+F(z)`, and its radius satisfies
+`v_2(u)>=7`. Let `Q=sum_(j=0)^7 c_j X^j` be integral and primitive.
+
+**Lemma.** If
+`C_8(Pi_(n,8)(A) Q(A) h;u)=0`, with `n>=1`, then
+
+\[
+ v(c_0)=4,\qquad v(c_1)=2,\qquad
+ c_2\in4\mathcal O,\qquad c_6\in2\mathcal O,
+ \qquad c_3,c_7\in\mathcal O^\times.
+ \tag{7}
+\]
+
+**Proof.** In the first nonresonant block, the four cyclic vectors
+generated by powers `0,1,2,3` of its descended operator form an
+integral unit basis. This is the actual descended seed: its constant
+reduction is a unit by Artin--Hasse closure. The divided-Taylor
+argument therefore gives
+
+\[
+ Q^{[r]}(1)\in2^{4-r}\mathcal O\quad(0\le r<4).
+ \tag{8}
+\]
+
+Consequently `bar Q=(X-1)^4 H`, with `deg H<=3`; the first unit
+coefficient of `Q` occurs at an index at most three. Set
+
+\[
+ \mu=\min_j\{v(c_j)+j\}\le3.
+\]
+
+In the resonant block, divide `Q(2X)` by an actual coefficient of
+valuation `mu`. This produces an integral primitive polynomial
+whose reduced degree is at most `floor(mu)`. If `mu<3`, the retained
+noncollision lemma at `q=4` excludes the collision. Thus `mu=3`,
+and the first unit coefficient is `c_3`. We may use the exact
+normalization
+
+\[
+ Q_1(X)=Q(2X)/8=\sum d_jX^j.
+\]
+
+It is integral and primitive with reduced degree at most three.
+Its exact descended collision lies at radius at least three.
+
+Repeat the argument at `q=4`. Its nonresonant block gives
+
+\[
+ Q_1(1)\in4\mathcal O,\qquad Q_1'(1)\in2\mathcal O.
+ \tag{9}
+\]
+
+The first unit coefficient has index at most one. The resonant
+minimum `min_j(v(d_j)+j)` must be one: a smaller value would give
+a nonzero constant reduction at `q=2`, contrary to the retained
+noncollision lemma. Thus `d_1` is a unit and `v(d_0)>=1`.
+The final normalized polynomial `Q_1(2X)/2` has reduced degree at
+most one; the simple nonzero eigenvalue at `q=2` forces its
+reduction to be a nonzero multiple of `X-1`. Hence `v(d_0)=1`.
+This proves `v(c_0)=4` and `v(c_1)=2`.
+
+The preceding first-unit facts also give
+`bar Q=X^3(X-1)^4*bar c_3`, so `c_7` is a unit.
+Since `d_j=2^(j-3)c_j`, all `d_j` for `j>=4` belong to `2O`.
+Equation (9), first for the derivative, implies
+`d_1+d_3 in 2O`; then its value equation implies `d_2 in 2O`.
+Thus `c_2=2d_2 in 4O`. This uses actual powers of two, not only
+reduction in the residue field.
+
+Finally (8) at `r=3` gives
+
+\[
+ c_3+4c_4+10c_5+20c_6+35c_7\in2\mathcal O,
+\]
+
+so `c_3+c_7 in 2O`. At `r=2` it gives
+
+\[
+ c_2+3c_3+6c_4+10c_5+15c_6+21c_7\in4\mathcal O.
+\]
+
+All terms other than `15c_6` already belong to `2O`. Since 15
+is a unit, `c_6 in 2O`. This proves the lemma. Each division was
+by an actual integer power after its exact valuation had been
+proved. The proof is valid over ramified extensions. ∎
+
+The constant valuation four is sharp in the stated stage class.
+Take `n=1`, `A=8-theta+z`, `h=1`, `u=8!`, and
+
+\[
+ XQ(X)=\prod_{j=1}^{8}(X-j)-8!.
+\]
+
+Then `A Q(A)1=z^8-u`, and `v_2(Q(0))=4`. This is a stage-class
+control, not an ordinary lower-three SFC counterexample.
+
+## 3. Application to support {3,11}
+
+Every interval of `8k` consecutive integers contributes at least
+`7k` to its factorial two-adic valuation. Thus an actual lower
+root gives
+
+\[
+ v(u)\ge7.
+ \tag{10}
+\]
+
+For the actual relation (4), the nonconstant coefficients of `Q`
+are integral and at least one is a unit, because `R_i mod m=X^i`.
+If its constant coefficient had negative valuation, division by
+that coefficient would produce an integral primitive polynomial
+with constant reduction, forbidden by the retained noncollision
+lemma. Thus `Q` is integral and primitive, and (7) applies.
+
+In the `R_i` basis the coefficient of `X` in each `R_i`, `i>=2`,
+is divisible by eight. Hence `v(c_1)=2` forces `v(a_1)=2`.
+Moreover
+
+\[
+ R_i(0)=8^i(n)_i,
+ \qquad v\left(\sum_i a_iR_i(0)\right)\ge5.
+\]
+
+Since `v(c_0)=4`, the constant coefficient in (4) therefore forces
+
+\[
+ v(\kappa uS)=4.
+ \tag{11}
+\]
+
+Let `E=v_2((11n+9)(11n+10))` and `L=v(u)`. From (6),
+
+\[
+ L+v(S)=E+1.
+ \tag{12}
+\]
+
+If `n` is odd, (6)--(7) make `S` a unit. Equation (10) first
+gives `E>=6`, hence `n=5 (mod64)`. In this class `3n+1` is
+divisible by sixteen, so the first eight-factor block has
+valuation at least eight. For every `k>=2`, counting multiples
+of sixteen gives the stronger bound
+
+\[
+ v_2((3n+1)_{8k})\ge7k+\lfloor k/2\rfloor>7k.
+\]
+
+Thus every nonleading reciprocal coefficient is strictly above
+the line of slope seven, and `L>7`. Now `L=E+1` and `E` is an
+integer, so `E>=7`, equivalent to `n=69 (mod128)`.
+
+If `n` is even, (6)--(7) give `S in 2O`. For `k=1` the factor
+`binom(n,1)=n` supplies an additional factor two, and the same
+`k>=2` estimate applies. Hence `L>7` for every even `n`.
+Equation (12) gives `E+1>8`, so `E>=8`. This is equivalent to
+`n=162 (mod256)`. The arithmetic is checked by direct enumeration
+of the exact residue conditions, not by searching for roots.
+
+This proves (1). If a common root existed over a characteristic-zero
+field, it would already force the rational resultant to vanish.
+Absence of a common root over `C_2` yields a rational Bezout identity,
+which transfers to every characteristic-zero field. For `AB!=0`,
+the actual moments are `A^j (3j)! P_(j,8)(B/A)`. If either coefficient
+is zero, every positive moment is a nonzero monomial factorial.
+
+## 4. Seven scalar leaves and closure of the gap-eight progressions
+
+Sections 2–3 reduce any hypothetical common root to
+`v_2(u)>7`. Put `v=u/128`, so `v_2(v)>0`. This strict inequality
+permits one further parity split at the last prime stage; no series is
+evaluated at a unit argument until it has been rescaled into a
+restricted series.
+
+### 4.1. All three exact stages, with their actual seeds
+
+For an operator `A=c-theta+F(z)` in the retained stage class, write
+
+\[
+ F(z)=z+\sum_{r\ge1}a_rz^{2^r},\qquad a_r\in2\mathbb Z_2.
+\]
+
+Conjugation by `E_2(z)` replaces the multiplication part by
+`sum_(r>=1)(a_r-1) z^(2^r)`. For parity `j in {0,1}`, let
+`e in {0,1}` be congruent to `c-j` modulo two. Set
+
+\[
+ b=a_1-1\in\mathbb Z_2^\times,\quad x=bz^2/2,
+ \quad c'=(c-j-e)/2.
+\]
+
+The block operator is `e+2L`, with
+
+\[
+ L=c'-xD_x+x+
+ \sum_{r\ge1}\frac{(a_{r+1}-1)2^{2^r-1}}{b^{2^r}}x^{2^r}.
+ \tag{13}
+\]
+
+If `E_2(z)^(-1)h(z)=sum g_m z^m`, its actual new seed is
+
+\[
+ h'_j(x)=\sum_{\ell\ge0}g_{2\ell+j}(2x/b)^\ell.
+ \tag{14}
+\]
+
+Its coefficients are integral, all positive coefficients are divisible
+by two, and its constant is a unit. For the latter assertion, the old
+seed reduces to its constant unit, while `E_2^(-1)` has coefficients
+`1,-1` in degrees zero and one. Formula (13) preserves the operator
+class. These formulas are exactly the algebra of the retained
+Artin--Hasse closure lemma. They also hold for the last split from
+cyclic size two to cyclic size one: this follows directly by the same
+conjugation and parity extraction, without an induction assertion at
+stage zero.
+
+Starting from `F(z)=z`, the first two new quadratic coefficients are
+both `-2`. Thus the three scaling units are
+
+\[
+ b_0=-1,\qquad b_1=b_2=-3.
+\]
+
+They are independent of parity, since (13) changes the multiplication
+part independently of `c` and `j`. The final scalar variable is
+
+\[
+ y=-\frac{27}{128}z^8=-27v.
+ \tag{15}
+\]
+
+Index a leaf by its three parity digits
+`j=j_1+2j_2+4j_3`, so `0<=j<8`. The original operator on this leaf is
+
+\[
+ e_j+8L_j,\qquad e_j\in\{0,\ldots,7\},\quad
+ e_j\equiv c-j\pmod8,\qquad
+ L_j(0)=\frac{c-j-e_j}{8}.
+ \tag{16}
+\]
+
+The formula follows by composing the three identities `A=e+2L`;
+the accumulated parity shifts give exactly `c-j`. Every original zero
+cyclic column gives a zero scalar output on every leaf. At each step
+the gauge is an integral convergent unit, and its parity sections
+retain all the original equations. The scalar factors from changes
+of variables and from extracting monomials are nonzero; dropping
+them does not alter a zero equation.
+
+There is exactly one leaf with `e_j=0`, namely `j_0=c mod8`. Discard
+that equation, retaining the other seven. For `j!=j_0`, put
+`r_j=v_2(e_j)<=2`. Absorb
+
+\[
+ 2^{-nr_j}\Pi_{n,8}(e_j+8L_j)
+ =\prod_{\ell=0}^{n-1}
+       \left(\frac{e_j}{2^{r_j}}+2^{3-r_j}(L_j+\ell)\right)
+ \tag{17}
+\]
+
+into its actual seed. Every factor is an integral Euler operator
+reducing to a nonzero constant scalar; it preserves constant-unit
+reduction. Denote the resulting integral seed by `H_j`. Its evaluated
+series `H_j(-27v)` has unit constant and an inverse in `Z_2[[v]]`;
+both converge whenever `v_2(v)>0`.
+
+Set `a_j=c-j` and `T_j=L_j-L_j(0)`. The operator `T_j` sends every
+integral series to one with zero constant. Consequently the exact
+leaf equation, after division by `H_j`, is
+
+\[
+ \mathcal F_j(Q)=Q(a_j)+
+ \sum_{k=1}^{7}8^k Q^{[k]}(a_j)\tau_{jk}(v)=0,
+ \qquad
+ \tau_{jk}(v)=\left.\frac{T_j^kH_j}{H_j}\right|_{y=-27v}
+              \in v\mathbb Z_2[[v]].
+ \tag{18}
+\]
+
+The powers commute with their constant part, so this is ordinary
+finite polynomial expansion. The outer parameter `v`, and every
+coefficient of `Q(X;v)`, are held constant by the inner Euler operators.
+Those operators act on whole series in the inner variable `y` before
+evaluation. In particular, no Euler operator has been asserted to
+act on a characteristic-zero quotient by a nonzero cyclic parameter.
+
+### 4.2. A uniform interpolation bound
+
+Normalize the actual `Q` by its unit leading coefficient `c_7`,
+whose nonvanishing was proved in Section 2. Write
+
+\[
+ Q_0(X)=\prod_{j\ne j_0}(X-a_j),\qquad
+ G_j(X)=\frac{Q_0(X)}{X-a_j},\qquad w_j=G_j(a_j).
+\]
+
+The seven nodes are distinct integers in a block of eight consecutive
+integers. Every nonzero node difference has valuation at most two.
+Writing a monic polynomial as
+
+\[
+ Q(X;v)=Q_0(X)+\sum_{j\ne j_0} b_j(v)G_j(X),
+ \tag{19}
+\]
+
+equations (18), divided rowwise by `w_j`, give an integral invertible
+system for the seven coefficients `b_j`.
+
+Here are the explicit denominator estimates. For every `k>=1`,
+
+\[
+ v_2\left(\frac{8^k G_\ell^{[k]}(a_j)}{w_j}\right)\ge k,
+ \qquad
+ v_2\left(\frac{8^k Q_0^{[k]}(a_j)}{w_j}\right)\ge k+2.
+ \tag{20}
+\]
+
+For `ell=j`, the first quotient before multiplication by `8^k`
+is a sum of products of `k` reciprocal node differences. For
+`ell!=j`, `G_ell` has a simple factor `X-a_j`: its divided derivative
+produces one reciprocal `a_j-a_ell` and `k-1` other reciprocal
+differences. This again loses at most `2k` valuation. The second
+quotient loses at most `2(k-1)`, since `Q_0` has the same simple
+factor. This proves (20), including cases where a derivative is zero.
+
+The system matrix is therefore `I+2v U(v)` with
+`U in Mat_7(Z_2[[v]])`, and its right-hand side belongs to
+`8v Z_2[[v]]^7`. It has a unique formal solution, convergent for
+`v_2(v)>0`, with
+
+\[
+ b_j(v)\in8v\mathbb Z_2[[v]].
+ \tag{21}
+\]
+
+At any actual common root the same invertible system holds, so the
+actual monic relation polynomial equals this specific analytic
+`Q(X;v)`. There is no assumption that arbitrary seeds are cyclic:
+the seven scalar equations were derived from the actual seeds in
+(14)--(17).
+
+### 4.3. The remaining mixed condition is injective
+
+Equation (4) evaluated at `X=-8n` is exactly
+
+\[
+ Q(-8n;v)+\kappa uS(v)=0,\qquad
+ S(v)=c_6(v)+22-n,
+ \quad u=128v.
+ \tag{22}
+\]
+
+In either residue class left by (1), the seven factors of
+`Q_0(-8n)` have the seven nonzero residues modulo eight. Their
+valuation sum is `0+1+0+2+0+1+0=4`. Removing any one factor leaves
+valuation at least two. Thus (19)--(21) give
+
+\[
+ v_2(Q_0(-8n))=4,\qquad
+ Q(-8n;v)-Q_0(-8n)\in32v\mathbb Z_2[[v]],
+ \quad S(v)-S_0\in8v\mathbb Z_2[[v]].
+ \tag{23}
+\]
+
+The last inclusion uses that every `G_j` is monic of degree six.
+The constant term of `S` as a series in `v` is
+
+\[
+ S_0=-22n-6-j_0.
+ \tag{24}
+\]
+
+For odd remaining `n`, one has `j_0=7`, so `S_0=-22n-13` is a
+unit. Let `E=v_2(11n+9)>=7`. Section 3 gave `v_2(u)=E+1`.
+Substitute `u=2^(E+1)w`, hence `v=2^(E-6)w`, in (22) and divide
+by sixteen. Its two leading terms are
+
+\[
+ \frac{Q_0(-8n)}{16}
+ +\frac{\kappa 2^{E+1}S_0}{16}w,
+ \tag{25}
+\]
+
+both with unit coefficients. All remaining coefficients are even
+by (23): the evaluation correction is in `2v Z_2[[v]]`, and the
+upper correction is in `8v w Z_2[[v]]` after this normalization.
+
+For even remaining `n`, `n=162 (mod256)` gives `j_0=6` and
+`S_0=-2(11n+6)` of valuation exactly three. Since `v_2(v)>0`,
+(23) forces `v_2(S(v))=3`. Equation (12) then gives
+`v_2(u)=E-2`, where `E=v_2(11n+10)`. The strict bound `v_2(u)>7`
+forces `E>=10`. Substitute `u=2^(E-2)w` and `v=2^(E-9)w` in
+(22), again dividing by sixteen. The constant and linear terms
+are units. The remaining evaluation correction belongs to
+`2v Z_2[[v]]`; the remaining upper correction belongs to
+`v w Z_2[[v]]`. Their coefficients are even since `E>=10`.
+
+In both cases the resulting series belongs to the restricted ring
+`Z_2< w >`, because every formal series in (23) is evaluated at
+`v=2^b w` with integer `b>=1`. It has unit linear coefficient and
+all coefficients of degree at least two even. Its divided difference
+at any two integral arguments is therefore a unit. It is injective
+on the entire integral disk, even in a complete algebraically closed
+extension, and has at most one zero there. Every actual common root
+has the prescribed radius, so there is at most one distinct common
+root of the two rational polynomials.
+
+In characteristic zero the irreducible factor of any common root is
+separable. All of its algebraic conjugates would also be common roots,
+and can be embedded in `C_2`. The preceding uniqueness therefore
+forces any common root to be rational.
+
+Finally a nonzero rational root `t` would give a rational nonzero phase
+`f=X^3(1+tX^8)` with two consecutive vanishing factorial moments.
+One of these moments has even order `2r`. For any nonzero rational
+polynomial `g=f^r`, the factorial quadratic form `L_1(g^2)` is
+positive definite. This can be checked algebraically: the moment
+Gram matrix has entries `(i+j)!` and factorization
+
+\[
+ (i+j)!=i!j!\sum_{k\ge0}\binom ik\binom jk.
+\]
+
+The finite binomial matrix is triangular with unit diagonal, so
+the quadratic form is a sum of rational squares under an invertible rational
+linear change of coordinates. Hence `L_1(g^2)>0`, a contradiction.
+This excludes the last possible root and proves the full gap-eight
+theorem. Rational Bezout descent gives the stated characteristic-zero
+field scope.
+
+## 5. Exact replay and review scope
+
+Run:
+
+```sh
+python3 research/factorial/image-rigidity/verify_stepanov_lower_three_eighth_gap_closure.py
+```
+
+The verifier uses Python's standard library and exact integer/rational
+arithmetic. It checks the complete mixed-column triangularization,
+the stage-class sharpness example, actual factorial coefficient bounds,
+and residue arithmetic. It also compares the direct three-stage
+splitting of the **original** polynomial `Pi(A)Q(A)1` with the composed
+leaf operators at all eight leaves, and checks the actual absorbed
+seeds, interpolation matrices and forced-scale auxiliary series at
+explicit indices, including the tight even progression.
+
+The accompanying
+[receipt](stepanov_lower_three_eighth_gap_closure_verification.json)
+records the finite scope. These finite checks do not establish an
+unrestricted theorem by themselves: the all-index proof is Sections 1–4.
+
+Internal review: the root reviewer reconstructed the full-leaf
+interpolation, both forced-radius normalizations and the final
+injectivity argument. A separate factorial reviewer directly inspected
+the retained stage formulas and reconstructed the last size-two to
+size-one split, all three scaling units, actual seed preservation and
+the shared leaf variable. The exact verifier was run by the authoring
+agent; a root replay is recorded separately if performed. These are
+internal mathematical checks, not external review or formal verification.
+
+The composite-gap-six support `{3,9}` is a separate problem and is not
+settled by this theorem.

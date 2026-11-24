@@ -1,0 +1,90 @@
+{
+  "cases": [
+    {
+      "B_through_degree_6": "42*t**6 + 14*t**5 + 5*t**4 + 2*t**3 + t**2 + t",
+      "D": "1 - 2*z",
+      "H": "z",
+      "T": "z**2",
+      "a": "-z**2 + z",
+      "aligned": true,
+      "degree_D": 1,
+      "degree_a": 2,
+      "fixed_resultant": "1",
+      "inverse_burgers_coefficient_checks": 18,
+      "monic_reduced_caustic": "-eps**2/4 - eps/2 + t - 1/4",
+      "moving_resultant": "eps**2 + 2*eps - 4*t + 1",
+      "name": "constant_derivative_boundary",
+      "power_exponent": 1,
+      "scalar": "-4"
+    },
+    {
+      "B_through_degree_6": "-660*t**6 + 138*t**5 - 14*t**4 + 6*t**3 + t",
+      "D": "20*z**3 - 18*z**2 + 1",
+      "H": "z**2 + z",
+      "T": "-12*z**5 - 6*z**4 + 12*z**3",
+      "a": "8*z**5 - 4*z**4 - 6*z**3 + z**2 + z",
+      "aligned": true,
+      "degree_D": 3,
+      "degree_a": 5,
+      "fixed_resultant": "8*(eps + 4*t)",
+      "geometric_irreducibility_reason": "proved caustic-field proposition and gcd(deg a,deg H)=1",
+      "inverse_burgers_coefficient_checks": 18,
+      "monic_reduced_caustic": "-27*eps**5/50000 + 459*eps**4/12500 + 2403*eps**3/25000 + 783*eps**2/12500 - 27*eps/2000 + t**3 + t**2*(1764/3125 - 171*eps/100) + t*(27*eps**3/250 + 1593*eps**2/12500 - 216*eps/3125 - 1107/12500) - 54/3125",
+      "moving_resultant": "64*(-27*eps**5 + 1836*eps**4 + 5400*eps**3*t + 4806*eps**3 + 6372*eps**2*t + 3132*eps**2 - 85500*eps*t**2 - 3456*eps*t - 675*eps + 50000*t**3 + 28224*t**2 - 4428*t - 864)",
+      "name": "primitive_r112",
+      "power_exponent": 1,
+      "scalar": "3200000"
+    },
+    {
+      "B_through_degree_6": "43008*t**6 + 3584*t**5 + 320*t**4 + 32*t**3 + 4*t**2 + t",
+      "D": "8*z**2 - 8*z + 1",
+      "H": "-z**2 + z",
+      "T": "4*z**4 - 8*z**3 + 4*z**2",
+      "a": "-4*z**4 + 8*z**3 - 5*z**2 + z",
+      "aligned": true,
+      "degree_D": 2,
+      "degree_a": 4,
+      "fixed_resultant": "-4*(-eps + 4*t)",
+      "inverse_burgers_coefficient_checks": 18,
+      "monic_reduced_caustic": "-eps**2/16 - eps/8 + t - 1/16",
+      "moving_resultant": "16*(-eps**2 - 2*eps + 16*t - 1)**2",
+      "name": "quadratic_pullback",
+      "power_exponent": 2,
+      "scalar": "4096"
+    },
+    {
+      "B_through_degree_6": "-63*t**6/6250 - 27*t**5/1250 - 3*t**2/10 + t",
+      "D": "6*z**2/25 + 3*z/5 + 1",
+      "H": "-z**2/2 + z",
+      "T": "3*z**4/50 - 3*z**3/50 - 3*z**2/10",
+      "a": "-3*z**4/50 - 3*z**3/25 - z**2/5 + z",
+      "aligned": false,
+      "contact_with_quadratic": {
+        "exact_difference": "9*z**5*(3*z**3 + 12*z**2 + 32*z - 60)/25000",
+        "n_plus_S": 4,
+        "order": 5
+      },
+      "degree_D": 2,
+      "degree_a": 4,
+      "fixed_resultant": "-(-25*eps + 50*t - 31)/50",
+      "inverse_burgers_coefficient_checks": 18,
+      "monic_reduced_caustic": "625*eps**4/576 + 4525*eps**3/576 + 1525*eps**2/96 + 7225*eps/576 + t**2 + t*(-25*eps**2/12 + 35*eps/24 + 205/96) + 1975/576",
+      "moving_resultant": "9*(625*eps**4 + 4525*eps**3 - 1200*eps**2*t + 9150*eps**2 + 840*eps*t + 7225*eps + 576*t**2 + 1230*t + 1975)/1562500",
+      "name": "misaligned_negative_control",
+      "power_exponent": 1,
+      "scalar": "1296/390625"
+    }
+  ],
+  "checker_sha256": "a741c39e3fa82ae9b6dee9061344cc264c080f576a2452f48eadb8b9ddd33cfd",
+  "domain": "exact rational polynomials",
+  "note_sha256": "081d8d21cd67ded8188ffd0f6246727895da3715ef07b17f29537df7be57ea24",
+  "scope": "four finite pencil controls, not a sharp-gap proof",
+  "source_sha256": {
+    "SFC_ALGEBRAIC_UNIFORM_WINDOWS.md": "5066e9fef20d387d80bf865cb07f19563bb5907ace2c8e5c0032b29028f3b2f4",
+    "SFC_MONOMIAL_LINEAR_CONTACT_BOUND.md": "409ca1ed8a1ef3218fb07673d14830d04cf10562f5714c88bd8de8e9a681b417",
+    "SFC_RAMIFIED_PULLBACK_CLOSURE.md": "eb444a8f02feb92834336589024e0d920b4eba23970582291af406c11bd7f519"
+  },
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "total_inverse_burgers_coefficient_checks": 72
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Whole grade29 of the one-generator symmetric ternary cube-zero Engel algebra vanishes; no full-algebra dimension claim",
+  "inputs": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "CUBIC_CUBE_ZERO_GRADE29.md",
+      "sha256": "918ee90e86b3ba4ac807d9ecd7d1e17efcb6ce54793bb32f4e2c99cea71be19d",
+      "locator": "CubeZeroGrade29; complete whole-prequotient rank and characteristic-zero transfer"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_cubic_cube_zero_grade29.py",
+      "sha256": "0dd26f486533262d794a69b5cb32654b347190f9059413563d982cd7b3228219",
+      "locator": "Standard-library rational prefix and selected-relation replay"
+    },
+    {
+      "role": "certificate",
+      "scope": "packet",
+      "path": "cubic_cube_zero_grade29_certificate.json.gz",
+      "sha256": "9104dd117af57eae57b178d29491a8472077c2bcfa527ca017af307e40bbc45d",
+      "locator": "46,928 valid root substitutions in grade29"
+    },
+    {
+      "role": "prefix_ledger",
+      "scope": "packet",
+      "path": "cubic_cube_zero_shuffle_source_ledger.json",
+      "sha256": "41433b4214fb8df6a5af11bb6fcc2308d325822d525868d0fb481ed641477281",
+      "locator": "All retained prefix sources are authenticated during replay"
+    },
+    {
+      "role": "prefix_checker",
+      "scope": "packet",
+      "path": "verify_cubic_cube_zero_shuffle.py",
+      "sha256": "9a86194f84f146a8a7c8a23cccec1aa75be3fedca9bb92f5ccbb02855c2cf401",
+      "locator": "Exact rational quotient validation and finite-field row arithmetic"
+    },
+    {
+      "role": "prefix_certificate",
+      "scope": "packet",
+      "path": "cubic_cube_zero_shuffle_certificates.json.gz",
+      "sha256": "ce4c712192ea60690315552a9df4df55f0a82ae466b063c260fd552135686be0",
+      "locator": "Exact grades1\u201318 and complete zero pieces19\u201328"
+    },
+    {
+      "role": "quotient_kernel",
+      "scope": "packet",
+      "path": "verify_subtree_shuffle.py",
+      "sha256": "346bbace70014809c9b84fbbf9ce6de8547860c977c593c943321974f69d475c",
+      "locator": "Canonical graded ternary trees and genuine polarized root sums"
+    },
+    {
+      "role": "base_change_proof",
+      "scope": "packet",
+      "path": "CUBIC_CUBE_ZERO_SHUFFLE_EXTENSION.md",
+      "sha256": "00e9ae1513feb0fc831b3b6960a7fd709d6f5bef7c59316c292cd02aa246e00b",
+      "locator": "Sections3\u20134: quotient completeness and integral base change"
+    },
+    {
+      "role": "quotient_theory",
+      "scope": "packet",
+      "path": "SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa",
+      "locator": "Polarized free-algebra interpretation and shuffle presentation"
+    }
+  ]
+}

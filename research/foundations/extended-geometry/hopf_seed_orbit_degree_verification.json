@@ -1,0 +1,765 @@
+{
+  "assurance": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "finite_exact_controls": {
+    "T_absorption_and_inverse_word_controls": 24,
+    "coordinate_exponential_comparisons": 3,
+    "degree_bound_and_converse_arithmetic_controls": 276,
+    "full_frame_height_cases": 18,
+    "later_full_reduced_word_controls": 3,
+    "mathematical_scope_countercontrols": 5,
+    "nonmonomial_first_shears": [
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 6,
+        "frame": "native",
+        "height": 2,
+        "leading_coefficient": "-1/2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 8,
+        "frame": "native",
+        "height": 2,
+        "leading_coefficient": "-1/2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 10,
+        "frame": "native",
+        "height": 2,
+        "leading_coefficient": "-2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 9,
+        "frame": "native",
+        "height": 3,
+        "leading_coefficient": "-1",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 12,
+        "frame": "native",
+        "height": 3,
+        "leading_coefficient": "1",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 15,
+        "frame": "native",
+        "height": 3,
+        "leading_coefficient": "-8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 11,
+        "frame": "native",
+        "height": 3,
+        "leading_coefficient": "-1",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 14,
+        "frame": "native",
+        "height": 3,
+        "leading_coefficient": "1",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 17,
+        "frame": "native",
+        "height": 3,
+        "leading_coefficient": "-8",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 10,
+        "frame": "opposite",
+        "height": 6,
+        "leading_coefficient": "-1/8",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 16,
+        "frame": "opposite",
+        "height": 6,
+        "leading_coefficient": "-1/8",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 22,
+        "frame": "opposite",
+        "height": 6,
+        "leading_coefficient": "-8",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 15,
+        "frame": "opposite",
+        "height": 9,
+        "leading_coefficient": "1/8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 24,
+        "frame": "opposite",
+        "height": 9,
+        "leading_coefficient": "-1/8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 33,
+        "frame": "opposite",
+        "height": 9,
+        "leading_coefficient": "64",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 21,
+        "frame": "opposite",
+        "height": 13,
+        "leading_coefficient": "1/32",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 34,
+        "frame": "opposite",
+        "height": 13,
+        "leading_coefficient": "-1/32",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 47,
+        "frame": "opposite",
+        "height": 13,
+        "leading_coefficient": "256",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 12,
+        "frame": "generic",
+        "height": 8,
+        "leading_coefficient": "-1/128",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 20,
+        "frame": "generic",
+        "height": 8,
+        "leading_coefficient": "-1/128",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 28,
+        "frame": "generic",
+        "height": 8,
+        "leading_coefficient": "-2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 18,
+        "frame": "generic",
+        "height": 12,
+        "leading_coefficient": "1/512",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 30,
+        "frame": "generic",
+        "height": 12,
+        "leading_coefficient": "1/512",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 42,
+        "frame": "generic",
+        "height": 12,
+        "leading_coefficient": "8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 24,
+        "frame": "generic",
+        "height": 16,
+        "leading_coefficient": "1/8192",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 40,
+        "frame": "generic",
+        "height": 16,
+        "leading_coefficient": "1/8192",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 56,
+        "frame": "generic",
+        "height": 16,
+        "leading_coefficient": "8",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 6,
+        "frame": "native_nontrivial_T",
+        "height": 2,
+        "leading_coefficient": "-2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 8,
+        "frame": "native_nontrivial_T",
+        "height": 2,
+        "leading_coefficient": "-2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 10,
+        "frame": "native_nontrivial_T",
+        "height": 2,
+        "leading_coefficient": "-8",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 9,
+        "frame": "native_nontrivial_T",
+        "height": 3,
+        "leading_coefficient": "-8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 12,
+        "frame": "native_nontrivial_T",
+        "height": 3,
+        "leading_coefficient": "8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 15,
+        "frame": "native_nontrivial_T",
+        "height": 3,
+        "leading_coefficient": "-64",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 11,
+        "frame": "native_nontrivial_T",
+        "height": 3,
+        "leading_coefficient": "-32",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 14,
+        "frame": "native_nontrivial_T",
+        "height": 3,
+        "leading_coefficient": "32",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 17,
+        "frame": "native_nontrivial_T",
+        "height": 3,
+        "leading_coefficient": "-256",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 10,
+        "frame": "opposite_nontrivial_T",
+        "height": 6,
+        "leading_coefficient": "-2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 16,
+        "frame": "opposite_nontrivial_T",
+        "height": 6,
+        "leading_coefficient": "-2",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 22,
+        "frame": "opposite_nontrivial_T",
+        "height": 6,
+        "leading_coefficient": "-128",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 15,
+        "frame": "opposite_nontrivial_T",
+        "height": 9,
+        "leading_coefficient": "-8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 24,
+        "frame": "opposite_nontrivial_T",
+        "height": 9,
+        "leading_coefficient": "8",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 33,
+        "frame": "opposite_nontrivial_T",
+        "height": 9,
+        "leading_coefficient": "-4096",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 21,
+        "frame": "opposite_nontrivial_T",
+        "height": 13,
+        "leading_coefficient": "-32",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 34,
+        "frame": "opposite_nontrivial_T",
+        "height": 13,
+        "leading_coefficient": "32",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 47,
+        "frame": "opposite_nontrivial_T",
+        "height": 13,
+        "leading_coefficient": "-262144",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 12,
+        "frame": "generic_nontrivial_T",
+        "height": 8,
+        "leading_coefficient": "-2/81",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 20,
+        "frame": "generic_nontrivial_T",
+        "height": 8,
+        "leading_coefficient": "-2/81",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 28,
+        "frame": "generic_nontrivial_T",
+        "height": 8,
+        "leading_coefficient": "-512/81",
+        "seed_degree": 4
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 18,
+        "frame": "generic_nontrivial_T",
+        "height": 12,
+        "leading_coefficient": "-8/729",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 30,
+        "frame": "generic_nontrivial_T",
+        "height": 12,
+        "leading_coefficient": "-8/729",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 42,
+        "frame": "generic_nontrivial_T",
+        "height": 12,
+        "leading_coefficient": "-32768/729",
+        "seed_degree": 6
+      },
+      {
+        "H": [
+          "1",
+          "1"
+        ],
+        "degree": 24,
+        "frame": "generic_nontrivial_T",
+        "height": 16,
+        "leading_coefficient": "-8/6561",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "-2",
+          "3",
+          "-1"
+        ],
+        "degree": 40,
+        "frame": "generic_nontrivial_T",
+        "height": 16,
+        "leading_coefficient": "-8/6561",
+        "seed_degree": 8
+      },
+      {
+        "H": [
+          "2",
+          "-1",
+          "0",
+          "2"
+        ],
+        "degree": 56,
+        "frame": "generic_nontrivial_T",
+        "height": 16,
+        "leading_coefficient": "-524288/6561",
+        "seed_degree": 8
+      }
+    ],
+    "prime_class_controls": 35,
+    "seed_polynomial_identities": 3
+  },
+  "logical_boundary": {
+    "PGL2_frames_require_nonzero_determinant": true,
+    "all_characteristic_zero_fields_and_extensions": true,
+    "all_unsafe_phases_are_in_these_orbits": false,
+    "degree_eight_exact_odd_times_first_shear_spectrum": true,
+    "degree_eight_minimum_eight_first_prime_eleven": true,
+    "degree_eight_orbit_contains_prime_thirteen_or_nineteen": false,
+    "degree_eight_prime_classes_two_mod_three_or_eight_mod_thirteen": true,
+    "degree_growth_only_for_reduced_words": true,
+    "degree_six_exact_multiples_three_at_least_six": true,
+    "every_nonlinear_word_increases_degree": false,
+    "external_review": false,
+    "formal_verification": false,
+    "full_automorphism_orbit_degrees": true,
+    "generic_H_polynomials_and_constant_T_absorption": true,
+    "global_degree_five_seven_exclusion": false,
+    "independent_replay": false,
+    "old_seed_unsafe_theorem_logical_premise": false,
+    "pointwise_height_degree_lemma_requires_matching_top_height": true,
+    "positive_characteristic_scope": false,
+    "prime_density_claim": false,
+    "quadratic_case_primary_applies": true,
+    "quartic_exact_even_degrees_at_least_four": true,
+    "quartic_or_degree_six_orbit_has_prime_degree": false,
+    "trace_or_purity_theorem_logical_premise": false,
+    "unconditional_original_Image_counterexample_conclusion": false
+  },
+  "primary_metadata": {
+    "authors": [
+      "Jeremy Blanc",
+      "Anna Bot",
+      "Pierre-Marie Poloni"
+    ],
+    "doi": "10.5565/PUBLMAT6722314",
+    "journal": "Publicacions Matematiques",
+    "locator": "Theorems3.5-3.6 printed860-862; Lemma3.9 printed863-864",
+    "pages": "851-890",
+    "role": "mathematical_quadratic_automorphism_generation_only",
+    "title": "Real forms of some Gizatullin surfaces and Koras-Russell threefolds",
+    "url": "https://algebra.dmi.unibas.ch/bot/publmat.pdf",
+    "volume": 67,
+    "year": 2023
+  },
+  "schema": 1,
+  "source_ledger_sha256": "f763f7a9971b53f6411c1c7b55271f5250a5d5c21f98ab63c47b0ca2d603ceac",
+  "source_scope_negative_controls": 37,
+  "sources": {
+    "exact_checker": {
+      "locator": "Universal frame/top identities and finite degree controls",
+      "path": "verify_hopf_seed_orbit_degrees.py",
+      "relation": "exact_identity_and_source_support",
+      "role": "exact_checker",
+      "sha256": "030e566bcbc929f86d06a7174fdbe59c32c3365b30d9c8a0cf0ebec7653c8464"
+    },
+    "quadratic_automorphism_primary": {
+      "locator": "Theorems3.5-3.6 printed860-862; Lemma3.9 printed863-864",
+      "path": "quadric_orbit_sources/blanc_bot_poloni2023.pdf",
+      "relation": "mathematical_quadratic_automorphism_generation_only",
+      "role": "quadratic_automorphism_primary",
+      "sha256": "91b7e296d7c04c3bcbcf550b19f5748d709295c479337819065aa94ff076438e"
+    },
+    "typed_inputs": {
+      "locator": "Immutable typed frames, H polynomials and scope",
+      "path": "hopf_seed_orbit_degree_inputs.json",
+      "relation": "exact_control_data",
+      "role": "typed_inputs",
+      "sha256": "774b8d390e2f4442377e534a615ac4b8b8459a7cacd4812404476597c059c11f"
+    },
+    "written_proof": {
+      "locator": "Theorem and Sections1-8",
+      "path": "HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md",
+      "relation": "mathematical_proof",
+      "role": "written_proof",
+      "sha256": "5056557fcfccc64d642b1baf6ad62e053c0a323de21d99abf22a69e26da6f01d"
+    }
+  },
+  "status": "PASS_HOPF_SEED_ORBIT_EXACT_DEGREE_AND_SOURCE_SUPPORT",
+  "universal_expansion_identities": [
+    "PGL2 quadratic-frame preservation with denominator cleared",
+    "4 native universal last top derivative",
+    "4 native universal next derivative zero",
+    "4 opposite universal last top derivative",
+    "4 opposite universal next derivative zero",
+    "4 generic universal last top derivative",
+    "4 generic universal next derivative zero",
+    "6 native universal last top derivative",
+    "6 native universal next derivative zero",
+    "6 opposite universal last top derivative",
+    "6 opposite universal next derivative zero",
+    "6 generic universal last top derivative",
+    "6 generic universal next derivative zero",
+    "8 native universal last top derivative",
+    "8 native universal next derivative zero",
+    "8 opposite universal last top derivative",
+    "8 opposite universal next derivative zero",
+    "8 generic universal last top derivative",
+    "8 generic universal next derivative zero"
+  ]
+}

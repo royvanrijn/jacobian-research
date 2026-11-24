@@ -1,0 +1,416 @@
+{
+  "schema": "davenport_zannier_coordinate_fibres_verification_v1",
+  "status": "PASS",
+  "python": "3.12.14",
+  "arithmetic": "exact Fraction and integer arithmetic; standard library only",
+  "counts": {
+    "pure_pairs": 149,
+    "raw_moments": 894,
+    "dz_identities": 10,
+    "height_rejections": 16,
+    "even_height_nonconstant_endpoint_rejections": 16,
+    "weighted_deformation_rejections": 6,
+    "outside_class_pairs": 15
+  },
+  "negative_controls": [
+    "nonconstant eta cannot repair the unmarked double-zero height cap",
+    "reciprocal deformation of weighted DZ coordinate has a finite u=c pole",
+    "even height requires constant Phi, not only even-part cancellation",
+    "critical value outside {minus1,plus1} fails polynomial logarithmic quotient",
+    "degree-three non-Phi1 coordinate invalidates unrestricted Shabat rigidity",
+    "degree-two non-Phi1 coordinate also has non-Shabat infinite deformations",
+    "corrupted normalized polynomial pair fails raw moments"
+  ],
+  "tree_enumeration_rows": [
+    {
+      "a": 1,
+      "r": 1,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 1,
+      "r": 2,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 1,
+      "r": 3,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 1,
+      "r": 4,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 1,
+      "r": 5,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 1,
+      "r": 6,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 1,
+      "r": 7,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 2,
+      "r": 1,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 2,
+      "r": 2,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 2,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 2,
+      "r": 3,
+      "ordinary_plane_trees": 2,
+      "weighted_plane_trees": 5,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 2,
+      "r": 4,
+      "ordinary_plane_trees": 4,
+      "weighted_plane_trees": 14,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 2,
+      "r": 5,
+      "ordinary_plane_trees": 9,
+      "weighted_plane_trees": 42,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 2,
+      "r": 6,
+      "ordinary_plane_trees": 21,
+      "weighted_plane_trees": 132,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 2,
+      "r": 7,
+      "ordinary_plane_trees": 51,
+      "weighted_plane_trees": 429,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 3,
+      "r": 1,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 3,
+      "r": 2,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 3,
+      "singleton_coordinate_classes_at_odd_height": 2
+    },
+    {
+      "a": 3,
+      "r": 3,
+      "ordinary_plane_trees": 2,
+      "weighted_plane_trees": 12,
+      "singleton_coordinate_classes_at_odd_height": 10
+    },
+    {
+      "a": 3,
+      "r": 4,
+      "ordinary_plane_trees": 5,
+      "weighted_plane_trees": 55,
+      "singleton_coordinate_classes_at_odd_height": 50
+    },
+    {
+      "a": 3,
+      "r": 5,
+      "ordinary_plane_trees": 13,
+      "weighted_plane_trees": 273,
+      "singleton_coordinate_classes_at_odd_height": 260
+    },
+    {
+      "a": 3,
+      "r": 6,
+      "ordinary_plane_trees": 36,
+      "weighted_plane_trees": 1428,
+      "singleton_coordinate_classes_at_odd_height": 1392
+    },
+    {
+      "a": 3,
+      "r": 7,
+      "ordinary_plane_trees": 104,
+      "weighted_plane_trees": 7752,
+      "singleton_coordinate_classes_at_odd_height": 7648
+    },
+    {
+      "a": 4,
+      "r": 1,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 4,
+      "r": 2,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 4,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 4,
+      "r": 3,
+      "ordinary_plane_trees": 2,
+      "weighted_plane_trees": 22,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 4,
+      "r": 4,
+      "ordinary_plane_trees": 5,
+      "weighted_plane_trees": 140,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 4,
+      "r": 5,
+      "ordinary_plane_trees": 14,
+      "weighted_plane_trees": 969,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 4,
+      "r": 6,
+      "ordinary_plane_trees": 41,
+      "weighted_plane_trees": 7084,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 4,
+      "r": 7,
+      "ordinary_plane_trees": 125,
+      "weighted_plane_trees": 53820,
+      "singleton_coordinate_classes_at_odd_height": null
+    },
+    {
+      "a": 5,
+      "r": 1,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 1,
+      "singleton_coordinate_classes_at_odd_height": 0
+    },
+    {
+      "a": 5,
+      "r": 2,
+      "ordinary_plane_trees": 1,
+      "weighted_plane_trees": 5,
+      "singleton_coordinate_classes_at_odd_height": 4
+    },
+    {
+      "a": 5,
+      "r": 3,
+      "ordinary_plane_trees": 2,
+      "weighted_plane_trees": 35,
+      "singleton_coordinate_classes_at_odd_height": 33
+    },
+    {
+      "a": 5,
+      "r": 4,
+      "ordinary_plane_trees": 5,
+      "weighted_plane_trees": 285,
+      "singleton_coordinate_classes_at_odd_height": 280
+    },
+    {
+      "a": 5,
+      "r": 5,
+      "ordinary_plane_trees": 14,
+      "weighted_plane_trees": 2530,
+      "singleton_coordinate_classes_at_odd_height": 2516
+    },
+    {
+      "a": 5,
+      "r": 6,
+      "ordinary_plane_trees": 42,
+      "weighted_plane_trees": 23751,
+      "singleton_coordinate_classes_at_odd_height": 23709
+    },
+    {
+      "a": 5,
+      "r": 7,
+      "ordinary_plane_trees": 131,
+      "weighted_plane_trees": 231880,
+      "singleton_coordinate_classes_at_odd_height": 231749
+    }
+  ],
+  "degree_count_rows": [
+    {
+      "a": 1,
+      "s": 1,
+      "degree": 6,
+      "phase_source_classes": 1
+    },
+    {
+      "a": 1,
+      "s": 2,
+      "degree": 9,
+      "phase_source_classes": 2
+    },
+    {
+      "a": 1,
+      "s": 3,
+      "degree": 12,
+      "phase_source_classes": 2
+    },
+    {
+      "a": 1,
+      "s": 4,
+      "degree": 15,
+      "phase_source_classes": 3
+    },
+    {
+      "a": 1,
+      "s": 5,
+      "degree": 18,
+      "phase_source_classes": 2
+    },
+    {
+      "a": 1,
+      "s": 6,
+      "degree": 21,
+      "phase_source_classes": 4
+    },
+    {
+      "a": 1,
+      "s": 7,
+      "degree": 24,
+      "phase_source_classes": 2
+    },
+    {
+      "a": 3,
+      "s": 1,
+      "degree": 10,
+      "phase_source_classes": 1
+    },
+    {
+      "a": 3,
+      "s": 2,
+      "degree": 15,
+      "phase_source_classes": 4
+    },
+    {
+      "a": 3,
+      "s": 3,
+      "degree": 20,
+      "phase_source_classes": 13
+    },
+    {
+      "a": 3,
+      "s": 4,
+      "degree": 25,
+      "phase_source_classes": 57
+    },
+    {
+      "a": 3,
+      "s": 5,
+      "degree": 30,
+      "phase_source_classes": 274
+    },
+    {
+      "a": 3,
+      "s": 6,
+      "degree": 35,
+      "phase_source_classes": 1432
+    },
+    {
+      "a": 3,
+      "s": 7,
+      "degree": 40,
+      "phase_source_classes": 7753
+    },
+    {
+      "a": 5,
+      "s": 1,
+      "degree": 14,
+      "phase_source_classes": 1
+    },
+    {
+      "a": 5,
+      "s": 2,
+      "degree": 21,
+      "phase_source_classes": 6
+    },
+    {
+      "a": 5,
+      "s": 3,
+      "degree": 28,
+      "phase_source_classes": 36
+    },
+    {
+      "a": 5,
+      "s": 4,
+      "degree": 35,
+      "phase_source_classes": 287
+    },
+    {
+      "a": 5,
+      "s": 5,
+      "degree": 42,
+      "phase_source_classes": 2531
+    },
+    {
+      "a": 5,
+      "s": 6,
+      "degree": 49,
+      "phase_source_classes": 23755
+    },
+    {
+      "a": 5,
+      "s": 7,
+      "degree": 56,
+      "phase_source_classes": 231881
+    }
+  ],
+  "samples": [
+    {
+      "corrupted_pair_even_moments": [
+        "2/99",
+        "-8/25935",
+        "16/5380515"
+      ]
+    }
+  ],
+  "source_pins_checked": 7,
+  "packet_pins": {
+    "research/foundations/extended-geometry/DAVENPORT_ZANNIER_COORDINATE_FIBRES_AND_SHABAT_RIGIDITY.md": "aaacae42afa592c5ae0a91ca8036a9d56d58814c2782e47a0541b73c69a4700a",
+    "research/foundations/extended-geometry/verify_davenport_zannier_coordinate_fibres.py": "fd3672be6a38f29298d1d7f339c49db1f432ce2c180e1e2198360980669bb3b4",
+    "research/foundations/extended-geometry/davenport_zannier_coordinate_fibres_source_ledger.json": "431bf86394fb4348d397247526e8e068a49b7c0d3de17690a8fa3274d0380148"
+  },
+  "scope": "Bounded exact algebraic, moment and plane-tree controls. The written proof supplies stable-field rigidity and exhaustive all-height empty/singleton/infinite classification. No classification outside polynomial u/(xu') is claimed.",
+  "assurance": "Internal author replay; no external human review or formal verification."
+}

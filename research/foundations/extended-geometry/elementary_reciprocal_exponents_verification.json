@@ -1,0 +1,1312 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "Exact rational polynomial and matrix arithmetic; no floating point or Orbit oracle.",
+  "checker_sha256": "22efe3c42b5ae6eb1802bb941da9c3d85ca1224d06aaf8d4089cc90948c91949",
+  "source_pins_checked": 6,
+  "packet_pins": {
+    "research/foundations/extended-geometry/ELEMENTARY_RECIPROCAL_EXPONENT_DECISION.md": "127d737a39c0e2fa3063d0e1f04db69f2709c5660ddf2657420799b0222227a5",
+    "research/foundations/extended-geometry/verify_elementary_reciprocal_exponents.py": "22efe3c42b5ae6eb1802bb941da9c3d85ca1224d06aaf8d4089cc90948c91949",
+    "research/foundations/extended-geometry/elementary_reciprocal_exponents_source_ledger.json": "81c921eaad6cf45f78eb1b3def950eab42a2fbd792a34404f57a5fae78421649"
+  },
+  "algorithm": "Implemented rational point-to-point exponent decision with complete solution descriptions.",
+  "verification": {
+    "algorithm_cases": 34,
+    "independent_prefix_comparisons": 2320,
+    "cyclotomic_index_controls": 512,
+    "rational_basis_change_controls": 1,
+    "negative_controls": [
+      "jet test falsely accepts torsion point value",
+      "higher jets discarded after forced exponent",
+      "unit-circle nonintegral root falsely periodic",
+      "nilpotent tail starts too early",
+      "target outside cyclic span accepted",
+      "inexact input accepted"
+    ],
+    "cases": [
+      {
+        "name": "jet_singleton",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 7
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-2",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-2",
+              "1"
+            ],
+            "target_polynomial": [
+              "7",
+              "-6"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "-1"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "7"
+              ],
+              "candidate": 7,
+              "full_modulus_check": true
+            }
+          }
+        }
+      },
+      {
+        "name": "torsion_value_wrong_jet",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "2",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "2",
+              "1"
+            ],
+            "target_polynomial": [
+              "-1"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "1"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "0"
+              ],
+              "candidate": 0,
+              "full_modulus_check": false
+            }
+          }
+        }
+      },
+      {
+        "name": "higher_jet_singleton",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 7
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-3",
+            "3",
+            "-1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-3",
+              "3",
+              "-1"
+            ],
+            "target_polynomial": [
+              "21",
+              "-35",
+              "15"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "-1"
+              ],
+              "multiplicity": 3,
+              "forced_exponent_residue": [
+                "7"
+              ],
+              "candidate": 7,
+              "full_modulus_check": true
+            }
+          }
+        }
+      },
+      {
+        "name": "higher_jet_corruption",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-3",
+            "3",
+            "-1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-3",
+              "3",
+              "-1"
+            ],
+            "target_polynomial": [
+              "22",
+              "-37",
+              "16"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "-1"
+              ],
+              "multiplicity": 3,
+              "forced_exponent_residue": [
+                "7"
+              ],
+              "candidate": 7,
+              "full_modulus_check": false
+            }
+          }
+        }
+      },
+      {
+        "name": "quadratic_torsion_jet",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 2
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "2",
+            "0",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "2",
+              "0",
+              "1"
+            ],
+            "target_polynomial": [
+              "1",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "0",
+                "1"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "2"
+              ],
+              "candidate": 2,
+              "full_modulus_check": true
+            }
+          }
+        }
+      },
+      {
+        "name": "number_field_jet",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 3
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "-4",
+            "0",
+            "4"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "-4",
+              "0",
+              "4"
+            ],
+            "target_polynomial": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "0",
+                "-2"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "3"
+              ],
+              "candidate": 3,
+              "full_modulus_check": true
+            }
+          }
+        }
+      },
+      {
+        "name": "number_field_value_only_false",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "-4",
+            "0",
+            "4"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "-4",
+              "0",
+              "4"
+            ],
+            "target_polynomial": [
+              "2"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "0",
+                "-2"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "0"
+              ],
+              "candidate": 0,
+              "full_modulus_check": false
+            }
+          }
+        }
+      },
+      {
+        "name": "dyadic_denominator_hit",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 7
+        },
+        "evidence": {
+          "ambient_dimension": 1,
+          "cyclic_dimension": 1,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-1/2"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-1/2"
+            ],
+            "target_polynomial": [
+              "1/128"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "nonintegral_valuation_bound",
+              "factor": [
+                "1",
+                "-1/2"
+              ],
+              "primitive_factor": [
+                "2",
+                "-1"
+              ],
+              "target_residue": [
+                "1/128"
+              ],
+              "target_degree": 0,
+              "coefficient_denominator": 128,
+              "inclusive_exponent_bound": 7,
+              "tested_exponents": 8
+            }
+          }
+        }
+      },
+      {
+        "name": "dyadic_denominator_miss",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 1,
+          "cyclic_dimension": 1,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-1/2"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-1/2"
+            ],
+            "target_polynomial": [
+              "1/129"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "nonintegral_valuation_bound",
+              "factor": [
+                "1",
+                "-1/2"
+              ],
+              "primitive_factor": [
+                "2",
+                "-1"
+              ],
+              "target_residue": [
+                "1/129"
+              ],
+              "target_degree": 0,
+              "coefficient_denominator": 129,
+              "inclusive_exponent_bound": 7,
+              "tested_exponents": 8
+            }
+          }
+        }
+      },
+      {
+        "name": "unit_circle_nonintegral_hit",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 7
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-6/5",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-6/5",
+              "1"
+            ],
+            "target_polynomial": [
+              "4031/15625",
+              "2574/3125"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "nonintegral_valuation_bound",
+              "factor": [
+                "1",
+                "-6/5",
+                "1"
+              ],
+              "primitive_factor": [
+                "5",
+                "-6",
+                "5"
+              ],
+              "target_residue": [
+                "4031/15625",
+                "2574/3125"
+              ],
+              "target_degree": 1,
+              "coefficient_denominator": 15625,
+              "inclusive_exponent_bound": 27,
+              "tested_exponents": 28
+            }
+          }
+        }
+      },
+      {
+        "name": "unit_circle_nonintegral_miss",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-6/5",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-6/5",
+              "1"
+            ],
+            "target_polynomial": [
+              "2"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "nonintegral_valuation_bound",
+              "factor": [
+                "1",
+                "-6/5",
+                "1"
+              ],
+              "primitive_factor": [
+                "5",
+                "-6",
+                "5"
+              ],
+              "target_residue": [
+                "2"
+              ],
+              "target_degree": 0,
+              "coefficient_denominator": 1,
+              "inclusive_exponent_bound": 0,
+              "tested_exponents": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "integral_unit_growth_hit",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 7
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-1",
+            "-1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-1",
+              "-1"
+            ],
+            "target_polynomial": [
+              "13",
+              "8"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "integral_nontorsion_growth",
+              "factor": [
+                "1",
+                "-1",
+                "-1"
+              ],
+              "power_index": 2,
+              "coefficient_index": 1,
+              "coefficient_absolute_value": 3,
+              "unit_disc_binomial_bound": 2,
+              "conjugate_modulus_lower": "9/8",
+              "all_conjugates_modulus_upper": "2",
+              "target_modulus_upper": "34",
+              "exclusive_exponent_bound": 30,
+              "tested_exponents": 30
+            }
+          }
+        }
+      },
+      {
+        "name": "integral_unit_growth_norm_obstruction",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-1",
+            "-1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-1",
+              "-1"
+            ],
+            "target_polynomial": [
+              "1",
+              "3"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "integral_nontorsion_growth",
+              "factor": [
+                "1",
+                "-1",
+                "-1"
+              ],
+              "power_index": 2,
+              "coefficient_index": 1,
+              "coefficient_absolute_value": 3,
+              "unit_disc_binomial_bound": 2,
+              "conjugate_modulus_lower": "9/8",
+              "all_conjugates_modulus_upper": "2",
+              "target_modulus_upper": "5",
+              "exclusive_exponent_bound": 14,
+              "tested_exponents": 14
+            }
+          }
+        }
+      },
+      {
+        "name": "mixed_torsion_orders",
+        "solution": {
+          "kind": "progression",
+          "first": 5,
+          "step": 12
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "1",
+            "2",
+            "1",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "1",
+              "2",
+              "1",
+              "1"
+            ],
+            "target_polynomial": [
+              "-1",
+              "1",
+              "0",
+              "1"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "squarefree_torsion",
+              "factor_orders": [
+                4,
+                3
+              ],
+              "period": 12,
+              "tested_exponents": 12
+            }
+          }
+        }
+      },
+      {
+        "name": "torsion_target_miss",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "1"
+            ],
+            "target_polynomial": [
+              "1",
+              "1"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "squarefree_torsion",
+              "factor_orders": [
+                4
+              ],
+              "period": 4,
+              "tested_exponents": 4
+            }
+          }
+        }
+      },
+      {
+        "name": "nilpotent_early",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 2
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "1",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 3,
+            "branch": "early_zero_primary_witness"
+          }
+        }
+      },
+      {
+        "name": "nilpotent_tail",
+        "solution": {
+          "kind": "progression",
+          "first": 3,
+          "step": 1
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "0"
+            ],
+            "zero_primary_exponent": 3,
+            "branch": "nilpotent_zero_tail"
+          }
+        }
+      },
+      {
+        "name": "nilpotent_identity",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 0
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "1"
+            ],
+            "zero_primary_exponent": 3,
+            "branch": "early_zero_primary_witness"
+          }
+        }
+      },
+      {
+        "name": "nilpotent_nonzero_miss",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "2"
+            ],
+            "zero_primary_exponent": 3,
+            "branch": "zero_primary_obstruction"
+          }
+        }
+      },
+      {
+        "name": "mixed_zero_torsion_odd",
+        "solution": {
+          "kind": "progression",
+          "first": 3,
+          "step": 2
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 2,
+            "unit_part": {
+              "branch": "squarefree_torsion",
+              "factor_orders": [
+                2
+              ],
+              "period": 2,
+              "tested_exponents": 2
+            }
+          }
+        }
+      },
+      {
+        "name": "mixed_zero_torsion_even",
+        "solution": {
+          "kind": "progression",
+          "first": 2,
+          "step": 2
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "1",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 2,
+            "unit_part": {
+              "branch": "squarefree_torsion",
+              "factor_orders": [
+                2
+              ],
+              "period": 2,
+              "tested_exponents": 2
+            }
+          }
+        }
+      },
+      {
+        "name": "mixed_zero_early",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 1
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "1",
+              "0"
+            ],
+            "zero_primary_exponent": 2,
+            "branch": "early_zero_primary_witness"
+          }
+        }
+      },
+      {
+        "name": "mixed_zero_no_hit",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "0"
+            ],
+            "zero_primary_exponent": 2,
+            "unit_part": {
+              "branch": "unit_power_cannot_equal_nonunit"
+            }
+          }
+        }
+      },
+      {
+        "name": "mixed_zero_growth",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 5
+        },
+        "evidence": {
+          "ambient_dimension": 3,
+          "cyclic_dimension": 3,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-2",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-2",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "8",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 2,
+            "unit_part": {
+              "branch": "integral_nontorsion_growth",
+              "factor": [
+                "1",
+                "-2"
+              ],
+              "power_index": 1,
+              "coefficient_index": 1,
+              "coefficient_absolute_value": 2,
+              "unit_disc_binomial_bound": 1,
+              "conjugate_modulus_lower": "3/2",
+              "all_conjugates_modulus_upper": "3",
+              "target_modulus_upper": "32",
+              "exclusive_exponent_bound": 9,
+              "tested_exponents": 9
+            }
+          }
+        }
+      },
+      {
+        "name": "irrational_forced_jet",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "2",
+            "0",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "2",
+              "0",
+              "1"
+            ],
+            "target_polynomial": [
+              "1",
+              "2"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "0",
+                "1"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "2/5",
+                "1/5"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "negative_forced_jet",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-2",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-2",
+              "1"
+            ],
+            "target_polynomial": [
+              "-1",
+              "2"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "-1"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "-1"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "fractional_forced_jet",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-2",
+            "1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-2",
+              "1"
+            ],
+            "target_polynomial": [
+              "1/2",
+              "1/2"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "-1"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "1/2"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "nonunit_target_in_unit_algebra",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 2,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-3",
+            "2"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-3",
+              "2"
+            ],
+            "target_polynomial": [
+              "1",
+              "-1"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "unit_power_cannot_equal_nonunit"
+            }
+          }
+        }
+      },
+      {
+        "name": "unit_witness_below_zero_threshold",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-2",
+              "0",
+              "0",
+              "0"
+            ],
+            "target_polynomial": [
+              "1/4",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 3,
+            "unit_part": {
+              "branch": "integral_nontorsion_growth",
+              "factor": [
+                "1",
+                "-2"
+              ],
+              "power_index": 1,
+              "coefficient_index": 1,
+              "coefficient_absolute_value": 2,
+              "unit_disc_binomial_bound": 1,
+              "conjugate_modulus_lower": "3/2",
+              "all_conjugates_modulus_upper": "3",
+              "target_modulus_upper": "2",
+              "exclusive_exponent_bound": 2,
+              "tested_exponents": 2
+            }
+          }
+        }
+      },
+      {
+        "name": "nonreduced_ambient_constant_multiplier",
+        "solution": {
+          "kind": "progression",
+          "first": 0,
+          "step": 1
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 1,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-1"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "-1"
+            ],
+            "target_polynomial": [
+              "1"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "squarefree_torsion",
+              "factor_orders": [
+                1
+              ],
+              "period": 1,
+              "tested_exponents": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "zero_start_equal",
+        "solution": {
+          "kind": "progression",
+          "first": 0,
+          "step": 1
+        },
+        "evidence": {
+          "branch": "zero_start"
+        }
+      },
+      {
+        "name": "zero_start_unequal",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "branch": "zero_start"
+        }
+      },
+      {
+        "name": "outside_cyclic_span",
+        "solution": {
+          "kind": "empty"
+        },
+        "evidence": {
+          "ambient_dimension": 2,
+          "cyclic_dimension": 1,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "-2"
+          ],
+          "branch": "target_outside_cyclic_span"
+        }
+      },
+      {
+        "name": "number_field_full_jet_restriction",
+        "solution": {
+          "kind": "singleton",
+          "exponent": 3
+        },
+        "evidence": {
+          "ambient_dimension": 4,
+          "cyclic_dimension": 4,
+          "cyclic_minimal_polynomial": [
+            "1",
+            "0",
+            "-4",
+            "0",
+            "4"
+          ],
+          "quotient": {
+            "minimal_polynomial": [
+              "1",
+              "0",
+              "-4",
+              "0",
+              "4"
+            ],
+            "target_polynomial": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_primary_exponent": 0,
+            "unit_part": {
+              "branch": "repeated_factor_derivative",
+              "factor": [
+                "1",
+                "0",
+                "-2"
+              ],
+              "multiplicity": 2,
+              "forced_exponent_residue": [
+                "3"
+              ],
+              "candidate": 3,
+              "full_modulus_check": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  "scope": "Finite exact controls for the implemented general algorithm. Written proof establishes universal termination; no polynomial-time claim or end-to-end fibre implementation."
+}

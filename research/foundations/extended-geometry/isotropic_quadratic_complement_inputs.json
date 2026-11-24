@@ -1,0 +1,56 @@
+{
+  "M": "N-2>=1",
+  "absolute_nonpower": "over Kbar, Fstar != unit*g^e for EVERY e>=2; ord_C1(Fstar)=1 in Kbar[V,q^-1]",
+  "all_phases_or_all_markers_classified": false,
+  "anisotropic_odd_forms_claimed": false,
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "base_field": "EVERY characteristic-zero K; every extension",
+  "controls": {
+    "Lie_M": [
+      1,
+      2,
+      4
+    ],
+    "Lie_k_max": 4,
+    "dimensions": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11
+    ],
+    "nonpower_m_max": 3,
+    "seed_k_bound": "2*(N-2)+2"
+  },
+  "diagonal_moments": "mu_k=k!/[2^k*(N/2)_k], all k>=0",
+  "dimension_two_claimed": false,
+  "finite_models_prove_universal_quantifiers": false,
+  "fixed_marker": "H=X^M, independent of m",
+  "functional": "unique normalized same-field SO(q) x G_m invariant Reynolds trace",
+  "marked_nonpower": "ALL m>=1: sum_(r=0)^m binom(m,r)*mu_(M*m+r), positive RATIONAL hence nonzero in K",
+  "marked_power": "ALL m>=1: Lambda(H*F0^m)=mu_(M*m)!=0",
+  "minimal_monomial_marker": "j<M vanishes for all k>=M; j>=M survives all k>=max(M,j); least detecting exponent M",
+  "mixed_moments": "ALL k>=1,j>=0: mu_k*binom(k-M,k-j) for j<=k; zero j>k; generalized upper binomial",
+  "nonpower_phase": "Fstar=p^M*(1+p)",
+  "norm_one_K_point_required": false,
+  "old_Hopf_context_only": true,
+  "ordering_or_whole_field_embedding_required": false,
+  "power_phase": "F0=p^M",
+  "prior_cover_or_fulltrace_or_even_packet_required": false,
+  "pure_power_iff": "EVERY integer a>=1: p^a is pure IFF a>=M",
+  "pure_seed_moments": "ALL k>=1: (-1)^k*binom(M-1,k)*mu_k",
+  "quadratic_scope": "EVERY nondegenerate ISOTROPIC q, dimension N>=3; choose q=2XY+sum a_i Z_i^2, all a_i nonzero",
+  "radial_primitivity_or_Image_degree_claimed": false,
+  "raw_Milne_required": true,
+  "reviewed_proof_sha256": "fd84d668b215a80b5f4ac949e9d307e5bbcd6055e150454528f513518186bb19",
+  "schema": 1,
+  "seed": "p=(1+X)^3*Y/q-(X+1)*(X+2)/2"
+}

@@ -1,0 +1,77 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "schema": 2,
+  "sources": [
+    {
+      "path": "REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md",
+      "relation": "Sections1--26_complete_all_field_trace_proof_volume_lemma_intrinsic_cover_isomorphisms_marked_finite_etale_trace_and_forms",
+      "role": "written_proof",
+      "sha256": "b4b223a00cd9ed00a3f3957749b488dc0daea32f6e3491cb047d6d6dcac0aba5"
+    },
+    {
+      "path": "verify_reductive_homogeneous_trace.py",
+      "relation": "Source_authentication_and_bounded_exact_support_NOT_a_proof_of_general_structure_or_covering_theorems",
+      "role": "exact_checker",
+      "sha256": "d42effd699221cc636b90223fd4b85710da1ef0b00d543241885a95effda2451"
+    },
+    {
+      "path": "reductive_homogeneous_trace_inputs.json",
+      "relation": "Exact_full_theorem_quantifiers_covering_scope_all_extensions_and_one_fixed_marker",
+      "role": "typed_inputs",
+      "sha256": "d8fd4640899caf77711e1faa77cbe73f1d102889e6565cad93c19617b7d97a8b"
+    },
+    {
+      "path": "sources/arzhantsev-matsushima-math0506430v1.pdf",
+      "relation": "ONLY_Section1_Theorem2_1_Proposition2_2_physical1_2_BOTH_affineness_directions_converse_for_H0_is_used_in_full_proof",
+      "role": "matsushima_primary",
+      "sha256": "786bff5625883f4456f6decd82e3fc72c60ace70ced673d58aeb20566889b685"
+    },
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "relation": "ONLY_5_25_5_28_printed105_106_22_42_22_43_printed477_478_12l_printed248_249_PLUS_OPTIONAL_delta_squared_lemma_21_60_21_61_printed442_443_12_23_printed240_22c_printed475_NOT_whole_book_review",
+      "role": "group_structure_primary",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67"
+    },
+    {
+      "path": "sources/conrad-units-on-product-varieties.pdf",
+      "relation": "ONLY_Theorem1_1_Corollary1_2_physical1_normalized_unit_character_over_same_field_Rosenlicht_input",
+      "role": "units_primary",
+      "sha256": "0720c7f594d69049ebe70d804582a252fcd83852b6f530b3f52fabb7cee9e9e0"
+    },
+    {
+      "path": "sources/brion-szamuely-1109.2802v4.pdf",
+      "relation": "ONLY_Proposition1_1a_physical1_and_Section2_proof_physical3_connected_finite_etale_GALOIS_group_cover_central_isogeny_over_algebraically_closed_char0_NOT_Theorem1_2_for_disconnected_H",
+      "role": "group_cover_primary",
+      "sha256": "4fa0b70b09a200e4b3758c8e9ad17b245627cf30c8ddc5f3d398ce018fe09da2"
+    },
+    {
+      "path": "sources/borovoi-demarche-20121217.pdf",
+      "relation": "ONLY_Proposition5_2_and_complete_proof_physical17_18_exact_disconnected_stabilizer_GALOIS_cover_theorem_specialized_proof_reproduced_and_credited",
+      "role": "homogeneous_cover_antecedent",
+      "sha256": "80d830f74073185941fff49ee6e987b0b762c1e5f981007e350cd002f52e09b5"
+    },
+    {
+      "path": "sources/kaliman-kutzschebauch-1201.4769v2.pdf",
+      "relation": "CONTEXT_ONLY_Proposition3_6_Remark3_7_physical9_Proposition8_4_Example8_5_physical24_25_Proposition8_6_physical26_NOT_a_logical_premise",
+      "role": "volume_context_antecedent",
+      "sha256": "db983596e35f530551fffbb4eef1387491f001b851fad95edc50a515e505587e"
+    },
+    {
+      "path": "sources/stacks-03SF.html",
+      "relation": "ONLY_Section58_7_Tag03SF_connected_finite_etale_Galois_covers_and_domination_NOT_a_nonGalois_homogeneous_cover_classification",
+      "role": "galois_domination_primary",
+      "sha256": "93635733d2e998fe28282d40a4fe70b19dcd3b4e4449fee951eea7433e5310f6"
+    },
+    {
+      "path": "sources/stacks-0BN2.html",
+      "relation": "ONLY_Lemma58_3_8_Tag0BN2_complete_finite_Galois_domination_construction_reproduced_in_Section25_2",
+      "role": "galois_domination_construction_primary",
+      "sha256": "ef24281ea6c76868d2a534c6abebb8e9faea6a9642682ad0720d4d4803a561d0"
+    }
+  ]
+}

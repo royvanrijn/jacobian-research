@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "logical_scope": "Exact235-dimensional universal one-generator symmetric ternary cube-zero Engel algebra; sharp39-leaf nilpotence within one-generated subalgebras. Separate boundary corollary uses the classical index4 obstruction.",
+  "inputs": [
+    {
+      "role": "proof",
+      "scope": "packet",
+      "path": "CUBIC_CUBE_ZERO_ONE_GENERATOR_ALGEBRA.md",
+      "sha256": "5705d573e672bf6b23205cefaa40b0ea0c4183e1b42b149768e52890ec4f37fc",
+      "locator": "UniversalCubeZeroAlgebra, WholePiecePropagation, SharpRepeatedElementThreshold and ExactEngelIndexBoundary"
+    },
+    {
+      "role": "checker",
+      "scope": "packet",
+      "path": "verify_cubic_cube_zero_one_generator_algebra.py",
+      "sha256": "8baadd192b7cc3406728c9f037ac5cd956dbd8d40eeb1ed82fef176a6faedc53",
+      "locator": "Exact QQ prefix; streamed consecutive same-prime zero-piece replay; explicit37-leaf witness and rank controls"
+    },
+    {
+      "role": "certificate",
+      "scope": "packet",
+      "path": "cubic_cube_zero_one_generator_certificates.jsonl.gz",
+      "sha256": "6eafab13e395bf6d42612a2c09a9588bfc86340be06bbf8a8c3865e250622f0f",
+      "locator": "Selected genuine root substitutions for every grade30\u201355"
+    },
+    {
+      "role": "grade29_certificate",
+      "scope": "packet",
+      "path": "cubic_cube_zero_grade29_certificate.json.gz",
+      "sha256": "9104dd117af57eae57b178d29491a8472077c2bcfa527ca017af307e40bbc45d",
+      "locator": "46,928 genuine grade29 root substitutions, rechecked within the complete replay"
+    },
+    {
+      "role": "prefix_certificate",
+      "scope": "packet",
+      "path": "cubic_cube_zero_shuffle_certificates.json.gz",
+      "sha256": "ce4c712192ea60690315552a9df4df55f0a82ae466b063c260fd552135686be0",
+      "locator": "Exact rational grades1\u201318 and selected zero-piece relations19\u201328"
+    },
+    {
+      "role": "prefix_source_ledger",
+      "scope": "packet",
+      "path": "cubic_cube_zero_shuffle_source_ledger.json",
+      "sha256": "41433b4214fb8df6a5af11bb6fcc2308d325822d525868d0fb481ed641477281",
+      "locator": "All ten pinned retained sources are authenticated during the complete replay"
+    },
+    {
+      "role": "prefix_checker",
+      "scope": "packet",
+      "path": "verify_cubic_cube_zero_shuffle.py",
+      "sha256": "9a86194f84f146a8a7c8a23cccec1aa75be3fedca9bb92f5ccbb02855c2cf401",
+      "locator": "Rational quotient verification and exact modular normal forms"
+    },
+    {
+      "role": "quotient_kernel",
+      "scope": "packet",
+      "path": "verify_subtree_shuffle.py",
+      "sha256": "346bbace70014809c9b84fbbf9ce6de8547860c977c593c943321974f69d475c",
+      "locator": "Canonical graded ternary prequotients and genuine polarized root sums"
+    },
+    {
+      "role": "base_change_proof",
+      "scope": "packet",
+      "path": "CUBIC_CUBE_ZERO_SHUFFLE_EXTENSION.md",
+      "sha256": "00e9ae1513feb0fc831b3b6960a7fd709d6f5bef7c59316c292cd02aa246e00b",
+      "locator": "Sections3\u20134: quotient completeness and integral passage from whole modular zero pieces to characteristic zero"
+    },
+    {
+      "role": "quotient_theory",
+      "scope": "packet",
+      "path": "SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa",
+      "locator": "Free symmetric ternary Engel quotient and root-substitution presentation"
+    },
+    {
+      "role": "boundary_corollary_only",
+      "scope": "packet",
+      "path": "CUBIC_ENGEL_INDEX_FOUR_ONE_GENERATOR_OBSTRUCTION.md",
+      "sha256": "a51113e3472434bdcff7512bb1d2068f6dbefc49736f54992dfb17d53785934d",
+      "locator": "Only the p>=4 part of ExactEngelIndexBoundary; not a premise of the235-dimensional theorem"
+    },
+    {
+      "role": "primary_context",
+      "scope": "packet",
+      "path": "sources/umirbaev-polarization-algebras-2014.pdf",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86",
+      "locator": "Lemma7, printedpp7\u20138; Section4, printedp10: polarization dictionary and nil-of-bounded-index terminology",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2035/1/preprint_2014_60.pdf"
+    }
+  ],
+  "assurance": {
+    "complete_internal_exact_replay": true,
+    "separate_internal_mathematical_and_code_review": true,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false,
+    "historical_priority_claimed": false
+  }
+}

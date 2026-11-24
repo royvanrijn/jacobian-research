@@ -1,0 +1,107 @@
+{
+  "title": "Exact primitive discriminant -43 norm self-sums: full finite coverage and complete classification",
+  "proof": "PRIMITIVE_NORM_MINUS43_EXACT.md",
+  "proof_sha256": "86579a6ed89346546e06e6b140877ae82ff50a4db6469f8fa5800d400522fd84",
+  "checker": "verify_primitive_norm_minus43.py",
+  "checker_sha256": "f6e44624790eb1735552e9c8dc9aa18138ca1a961f695e777c16f4637f67d60b",
+  "receipt": "primitive_norm_minus43_checks.json",
+  "receipt_sha256": "1523616638ac8c3348d6951e9461fede54b64b0ff83206214b2668e1d060881c",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_minus43.py --output research/arithmetic/primitive_norm_minus43_checks.json",
+  "canonical_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_HEEGNER_REFINED_BOUNDS.md",
+      "sha256": "3a63897a0b8d5438e7912a66bb1f9c22c163143007f340d5cfc5a8e28e4f2384",
+      "statements": "Theorem H1 (HeegnerCoreAndQuotientOnsets) and H2 (HeegnerFiniteClassificationReduction), specialized at D43. Every inert core and every ep with e in E43 and p split, including p|e, is represented above2^32. H.6 gives P=C disjoint_union43C and43m inP+P iff m inC+C. This packet supplies the previously open complete finite domain."
+    },
+    {
+      "path": "verify_primitive_norm_heegner_refined_bounds.py",
+      "sha256": "70c2b4c0a2964464b0590ccfa0c939341677c28d9bdb780d0f3b386f44790668",
+      "statements": "Exact finite Euler/valuation-frontier/prime-tail certificates for H1; no large finite sumset coverage in that checker."
+    },
+    {
+      "path": "primitive_norm_heegner_refined_bounds_checks.json",
+      "sha256": "3cfd95315edf8f74b95a443f55b92a3009eb197d0d84ea3074e926eff39b86d2",
+      "statements": "PASS analytic receipt at D43 with onset2^32, corrected thin-tail boundary powers, and exact E43 input."
+    },
+    {
+      "path": "primitive_norm_heegner_refined_bounds_source_ledger.json",
+      "sha256": "e1b8fd12846b4a7e488a9ce7520923dbe6786749bfcd1f0f67ea3255bb549f38",
+      "statements": "Explicit retained classical sources and exact application scope: Milne,Voight,Jacquet-Langlands,Deligne; independent internal review scope and the corrected thin-tail calculation."
+    }
+  ],
+  "spectral_scope": {
+    "mass": "(43-1)/12=7/2; principal projective stabilizer2; w=1/7.",
+    "ramified_point_weight": "nu=12/(43^2-1)=1/154.",
+    "classical_imports": "Maximal order and all-integral-ideal Hecke transfer at complete coarse/fine ideal-class quotients; direct Deligne Weil I Theorem8.2 unramified weight-two root bound. Full source details and current local pins are in the retained refinement ledger.",
+    "no_extra_assumptions": "No new zero-free-region hypothesis, auxiliary cusp cancellation, a2 specialization, or quaternion class-number-one assumption."
+  },
+  "exact_classification": {
+    "core": "C+C={n>=2:n even,43 does not divide n} minus{4,6,8,10,16,20,38,50,56,74}",
+    "primitive": "P+P={N>=2:N even,1849 does not divide N} minus{4,6,8,10,16,20,38,50,172,258,344,430,688,860,1634,2150,2408,3182}",
+    "core_exceptions": [
+      4,
+      6,
+      8,
+      10,
+      16,
+      20,
+      38,
+      50,
+      56,
+      74
+    ],
+    "primitive_exceptions": [
+      4,
+      6,
+      8,
+      10,
+      16,
+      20,
+      38,
+      50,
+      172,
+      258,
+      344,
+      430,
+      688,
+      860,
+      1634,
+      2150,
+      2408,
+      3182
+    ],
+    "mixed_holes_filled": [
+      "56=13+43",
+      "74=31+43"
+    ],
+    "analytic_and_finite_bound": 4294967296,
+    "finite_segments": 128,
+    "target_span_per_segment": 33554432,
+    "eligible_finite_targets": 2097542158,
+    "short_summand_bound": 49999,
+    "short_summand_count": 4635,
+    "maximum_summands_used": 176,
+    "finite_membership": "M43.4: for odd b<=H, character+1 and absence of inert divisors<=sqrt(H) are equivalent to literal split-factor membership. At most one larger inert prime could remain, exponent1, contradicting the character.",
+    "complete_target_domain": "All even43-unit targets2..2^32 outside E43, including those with split prime factors. Required count is2^31-floor(2^32/86)-10.",
+    "descent": "A least additional exception is either an inert core or has a split prime quotient e inE43. Both cases are excluded by H1 above the complete finite certificate. Ramified targets transport via43m iff m inC+C."
+  },
+  "verification": {
+    "author_full_replay": "PASS: all128 consecutive segments through2^32,2097542158 eligible targets, zero missing. Full scan53.64s and peak RSS63.18MiB in this run; these are informational timings, not acceptance criteria.",
+    "independent_internal_implementations": "Complete primitive coordinate enumeration compared against all524288 odd membership flags through2^20;5000 literal trial-factor flags;96 additional low/high membership cases;864 bit-shift cases in both directions; both exact small sumsets through4096;6 negative controls.",
+    "pilot_scope": "Earlier four-segment pilot used only to assess resource feasibility; it is not a premise of completeness. Final full run includes current stronger shift controls.",
+    "separate_internal_review": "Root read the complete scanner and analytic/descent interface; passed. A separate internal reviewer read M43.4, positive summand coverage, complete exception exclusions, the18 primitive exceptions and H1/H2 least-counterexample descent; no issue found. Its independent tiny controls checked320 trial-factored membership flags including first/final boundaries,512 signed-shift bits,316 target-mask bits, and all128 endpoint/count records with total2097542158; all passed. It did not duplicate the full scan.",
+    "independent_full_replay": "Root performed a separate full replay against current bytes: all128 segments,2097542158 required targets, zero missing;51.69s. The resulting JSON matches the retained author receipt exactly. This is an independent internal replay, not external or formal verification.",
+    "formal_or_external": "No formal verification, external mathematical review or external replay is claimed."
+  },
+  "runtime_contract": {
+    "required": "Python3, standard library, assertions enabled.",
+    "arithmetic": "Exact integer and bitset operations. Floating point only in informational timings.",
+    "optimized_modes": "-O,-OO,PYTHONOPTIMIZE=1 tested; all rejected before computation.",
+    "pilot_guard": "--pilot emits PILOT_PASS and complete:false for four named segments. Only default full mode can emit PASS and complete:true.",
+    "analytic_import_guard": "Scanner rejects changed analytic proof, checker or receipt bytes using explicit pinned SHA256 values."
+  },
+  "limitations": [
+    "No closure or large finite coverage for discriminants -67 or -163.",
+    "No optimized bound, leading asymptotic count, historical priority, publication or external review claim."
+  ]
+}

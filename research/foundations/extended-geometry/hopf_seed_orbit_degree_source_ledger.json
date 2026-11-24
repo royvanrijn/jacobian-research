@@ -1,0 +1,60 @@
+{
+  "logical_boundary": {
+    "PGL2_frames_require_nonzero_determinant": true,
+    "all_characteristic_zero_fields_and_extensions": true,
+    "all_unsafe_phases_are_in_these_orbits": false,
+    "degree_eight_exact_odd_times_first_shear_spectrum": true,
+    "degree_eight_minimum_eight_first_prime_eleven": true,
+    "degree_eight_orbit_contains_prime_thirteen_or_nineteen": false,
+    "degree_eight_prime_classes_two_mod_three_or_eight_mod_thirteen": true,
+    "degree_growth_only_for_reduced_words": true,
+    "degree_six_exact_multiples_three_at_least_six": true,
+    "every_nonlinear_word_increases_degree": false,
+    "external_review": false,
+    "formal_verification": false,
+    "full_automorphism_orbit_degrees": true,
+    "generic_H_polynomials_and_constant_T_absorption": true,
+    "global_degree_five_seven_exclusion": false,
+    "independent_replay": false,
+    "old_seed_unsafe_theorem_logical_premise": false,
+    "pointwise_height_degree_lemma_requires_matching_top_height": true,
+    "positive_characteristic_scope": false,
+    "prime_density_claim": false,
+    "quadratic_case_primary_applies": true,
+    "quartic_exact_even_degrees_at_least_four": true,
+    "quartic_or_degree_six_orbit_has_prime_degree": false,
+    "trace_or_purity_theorem_logical_premise": false,
+    "unconditional_original_Image_counterexample_conclusion": false
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "locator": "Theorem and Sections1-8",
+      "path": "HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md",
+      "relation": "mathematical_proof",
+      "role": "written_proof",
+      "sha256": "5056557fcfccc64d642b1baf6ad62e053c0a323de21d99abf22a69e26da6f01d"
+    },
+    {
+      "locator": "Universal frame/top identities and finite degree controls",
+      "path": "verify_hopf_seed_orbit_degrees.py",
+      "relation": "exact_identity_and_source_support",
+      "role": "exact_checker",
+      "sha256": "030e566bcbc929f86d06a7174fdbe59c32c3365b30d9c8a0cf0ebec7653c8464"
+    },
+    {
+      "locator": "Immutable typed frames, H polynomials and scope",
+      "path": "hopf_seed_orbit_degree_inputs.json",
+      "relation": "exact_control_data",
+      "role": "typed_inputs",
+      "sha256": "774b8d390e2f4442377e534a615ac4b8b8459a7cacd4812404476597c059c11f"
+    },
+    {
+      "locator": "Theorems3.5-3.6 printed860-862; Lemma3.9 printed863-864",
+      "path": "quadric_orbit_sources/blanc_bot_poloni2023.pdf",
+      "relation": "mathematical_quadratic_automorphism_generation_only",
+      "role": "quadratic_automorphism_primary",
+      "sha256": "91b7e296d7c04c3bcbcf550b19f5748d709295c479337819065aa94ff076438e"
+    }
+  ]
+}

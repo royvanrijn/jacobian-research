@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "claim": "CoprimeAlgebraicStringExclusion",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md",
+      "sha256": "f23a75cd754b1350446e7774b4d04f00169dc8acf28e3755af07ddfd76931710"
+    },
+    {
+      "role": "checker",
+      "path": "verify_all_coprime_algebraic_string.py",
+      "sha256": "b2804e1d875127a6573ab8fab23125e3e098fa180513f1ae6358f67452c0e0b5"
+    },
+    {
+      "role": "primary_forward_stokes",
+      "path": "sources/beals-sattinger-solv-int-9801010v1.pdf",
+      "sha256": "05e7df65dac43b343791d5a6ee7a02f0cd5ed662738a2c1530a105f2a21ac738"
+    },
+    {
+      "role": "prior_cubic_antecedent_and_long_orders",
+      "path": "ALL_CUBIC_ALGEBRAIC_STRING_OBSTRUCTION.md",
+      "sha256": "9b1c38c2187d01a7a834d35f842f74f62468103e47633314d274ea336e4f7926"
+    },
+    {
+      "role": "prior_quadratic_antecedent",
+      "path": "QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md",
+      "sha256": "94504e12decd32f5056a43ae489e0d16df25da99c830ec3f378b5e0ae223b2a3"
+    },
+    {
+      "role": "riemann_hurwitz",
+      "path": "sources/stacks-0C1B.html",
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3"
+    },
+    {
+      "role": "classical_long_chart",
+      "path": "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md",
+      "sha256": "7f23fed53e80380922b737978ea79105a5c05472d526321298fdf8680a47a014"
+    }
+  ],
+  "primary_source_review": {
+    "authors": [
+      "Richard Beals",
+      "David H. Sattinger"
+    ],
+    "title": "Integrable Systems and Isomonodromy Deformations",
+    "version": "arXiv:solv-int/9801010v1",
+    "url": "https://arxiv.org/abs/solv-int/9801010",
+    "locations": [
+      "Section 9 page 43: arbitrary finite constant lower-flow combinations",
+      "Theorem 9.1 and Lemma 9.3, pages 44-46: forward sectorial solutions, fixed phase and constant Stokes matrices",
+      "Theorem 9.4, page 47: scalar injectivity",
+      "Section 8 pages 36-39: companion shearing and first-row injectivity argument"
+    ],
+    "application": [
+      "Monic depressed scalar differential operator of arbitrary order n; highest flow m coprime to n.",
+      "All lower flows have constant coefficients, as required by the page-43 remark.",
+      "Leading matrix J^m has distinct fixed eigenvalues.",
+      "Finite spectral companion equation is polynomial and ordinary at zero.",
+      "Analytic continuation compares actual existing algebraic branches with BOTH the same full formal phase and the same right Stokes matrices.",
+      "The proof uses the correctly oriented left ratio and rederives its first-row consequence for every n."
+    ],
+    "not_used": "No generic inverse-data solvability or arbitrary resonant reconstruction from Theorem 9.5.",
+    "review": "Actual retained primary PDF inspected by root and jacobian_dixmier_audit; internal review."
+  },
+  "written_new_arguments": [
+    "Finite exact residue primitive of one for every scalar commutator using res[P,Q P^(-1/n)].",
+    "All-coprime-order scalar algebraic branching exclusion by the precisely scoped forward-Stokes input.",
+    "Single weighted infinity bracket, with lower flows and derivative corrections strictly lower.",
+    "All-prime-order finite mate normal form over the original constant field.",
+    "Constant-uniformizer valued specialization obstruction allowing a nonunit leading coefficient."
+  ],
+  "scope": "Finite scalar differential operators over one-variable characteristic-zero algebraic function fields. Long application retains the exact-first-image scalar chart and regular classical orders 2 and 3. Composite common-divisor orders, changed first images and matrix carriers remain open.",
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "historical_priority": false
+  },
+  "additional_primary_review": {
+    "url": "https://stacks.math.columbia.edu/tag/0C1B",
+    "exact_location": "Section 53.12, characteristic-zero tame ramification formula; Lemma 53.12.2",
+    "application": "The compactified coefficient curve has no finite ramification; all residue fields are algebraically closed constants, so total infinity ramification is d-b."
+  }
+}

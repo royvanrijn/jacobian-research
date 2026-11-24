@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "direct_proof",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_ENGEL_INDEX_FOUR_ONE_GENERATOR_OBSTRUCTION.md",
+      "scope": "Self-contained Jacobian, polarization, cyclic generation, all-grade words and inverse formulas.",
+      "sha256": "a51113e3472434bdcff7512bb1d2068f6dbefc49736f54992dfb17d53785934d"
+    },
+    {
+      "role": "exact_checker",
+      "path": "research/jacobian/subtree-shuffling/verify_cubic_engel_index_four_one_generator_obstruction.py",
+      "scope": "Literal five-monomial input and exact arithmetic controls; no asymptotic or finite-prefix inference.",
+      "sha256": "a02a990ef8b0fbf623584bc2065d03e2d0a6932dc2d77a76406359d33f01b36d"
+    },
+    {
+      "role": "primary_context",
+      "path": "research/jacobian/subtree-shuffling/sources/umirbaev-polarization-algebras-2014.pdf",
+      "scope": "Section 5, printed p12/PDFp16: exact Gorni-Zampieri map and one-generator polarization context; bibliography [19] on printed p13. Context only, no theorem imported.",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86"
+    },
+    {
+      "role": "grading_convention",
+      "path": "research/jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "scope": "Free symmetric ternary algebra and internal-vertex grading convention only; no inverse-degree or index-three theorem imported.",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa"
+    }
+  ],
+  "primary_context": {
+    "registry_id": "EXT-PAPER-UMIRBAEV-POLARIZATION-ALGEBRAS-2014",
+    "author": "Ualbai Umirbaev",
+    "title": "Polarization algebras and their relations",
+    "edition": "MPIM Preprint 2014-60",
+    "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2035/1/preprint_2014_60.pdf",
+    "locator": "Section 5, printed p12/PDFp16; bibliography [19], printed p13",
+    "scope": "Exact displayed map and its attribution inspected. Classical context, not a logical premise.",
+    "attribution": "G. Gorni and G. Zampieri, Yagzhev polynomial mappings: on the structure of the Taylor expansion of their local inverse, Ann. Polon. Math.64(1996),285-290.",
+    "original_1996_paper_inspected": false
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false,
+    "bounded_tree_tests_prove_all_grades": false,
+    "unbounded_inverse_degree_claim": false
+  }
+}

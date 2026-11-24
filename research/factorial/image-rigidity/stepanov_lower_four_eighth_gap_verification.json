@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "scope": "complete bounded-degree identity certificate plus finite coefficient controls",
+  "symbolic_identity_degree_bound_in_n": 2,
+  "symbolic_identity_values": [
+    {
+      "n": 0,
+      "row": [
+        1,
+        18,
+        281
+      ]
+    },
+    {
+      "n": 1,
+      "row": [
+        1,
+        18,
+        545
+      ]
+    },
+    {
+      "n": 2,
+      "row": [
+        1,
+        18,
+        1001
+      ]
+    }
+  ],
+  "corrupted_upper_row_constant_rejected": true,
+  "kappa_normalization_controls": 128,
+  "actual_factorial_coefficient_valuation_controls": 8256,
+  "radius_seven_boundary_indices_checked": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    21,
+    25,
+    29,
+    33,
+    37,
+    41,
+    45,
+    49,
+    53,
+    57,
+    61,
+    65,
+    69,
+    73,
+    77,
+    81,
+    85,
+    89,
+    93,
+    97,
+    101,
+    105,
+    109,
+    113,
+    117,
+    121,
+    125
+  ],
+  "n1_exact_reciprocal_root_u_equals_minus_one_over_t": 19958400,
+  "n1_exact_reciprocal_root_valuation": 7,
+  "universal_proof": "STEPANOV_LOWER_FOUR_EIGHTH_GAP_CLOSURE.md, Sections 1-2",
+  "imported_generic_stage_lemma": "STEPANOV_LOWER_THREE_EIGHTH_GAP_CLOSURE.md, Section 2",
+  "all_order_theorem_not_inferred_from_a_finite_prefix": true
+}

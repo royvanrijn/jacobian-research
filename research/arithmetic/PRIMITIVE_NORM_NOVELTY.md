@@ -763,8 +763,9 @@ prove the imported spectral theorems.
 The explicit \(N^{2/3}\) value-count lower bounds can be secondary
 corollaries, with their recorded cutoffs and constants. They must
 remain distinct from the flagship's sharp \(NJ_D(N)/\log N\) scale.
-The exact \(-19,-43,-67,-163\) exception lists remain bounded
-computations and are not added to the main theorem.
+The [separate split-prime core experiment](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) completes
+the \(-19,-43,-67,-163\) exception lists.
+These cases are outside the main theorem of the deposited paper.
 
 ### Flagship: Pointwise Correlations of Quadratic Form Values and Splitting Semigroups
 

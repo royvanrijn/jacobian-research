@@ -1,0 +1,3306 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "Exact rational functions, polynomial factorization and integer roots; no floating-point acceptance.",
+  "checker_sha256": "46de7fadfff09d026d4c2e965c2a0b2dd126efe30af5c07b28bbfe774d58ecb3",
+  "source_pins_checked": 5,
+  "packet_pins": {
+    "research/foundations/extended-geometry/ODD_RETURN_CORE_AND_CAYLEY_OBSTRUCTION.md": "219923e50bb7a1274c2be9b022bc642822b5b43aae9e8540c49092511953827a",
+    "research/foundations/extended-geometry/verify_odd_return_cores.py": "46de7fadfff09d026d4c2e965c2a0b2dd126efe30af5c07b28bbfe774d58ecb3",
+    "research/foundations/extended-geometry/odd_return_cores_source_ledger.json": "36d258aafd0be04416ef5c2113ee31617458430bef4c4e547721b28d73ac7853"
+  },
+  "scope": "Finite exact controls for the written reduction, and all-integer-m coverage for exactly 44 rational-divisor cases.",
+  "verification": {
+    "bounded_n_values": [
+      12,
+      15,
+      18,
+      20,
+      24,
+      30
+    ],
+    "Q_divisor_cases": 44,
+    "all_integer_roots_recorded": 91,
+    "actual_clearing_exceptions": 0,
+    "binomial_coefficient_controls": 132,
+    "small_cleared_polynomial_controls": 4,
+    "literal_small_coefficient_controls": 8,
+    "admissible_Cayley_candidates": [],
+    "Cayley_construction_controls": [
+      {
+        "n": 2,
+        "m": 1,
+        "Afactor": "r**2 + 1",
+        "logarithmic_residue": "0",
+        "integrable": true,
+        "u": "-x/(x**2 - 1)",
+        "X": "(-x - 1)/(x - 1)",
+        "C": "x**2 + 2*x + 1",
+        "phase_D": "(-x**4 - 4*x**3 - 6*x**2 - 4*x - 1)/(x**2 - 2*x + 1)",
+        "C_polynomial": true,
+        "phase_D_polynomial": false,
+        "orders_C_D_at_plus_and_minus_one": [
+          0,
+          -2,
+          2,
+          4
+        ],
+        "admissible_pole_bound": false,
+        "pure_polynomial_core_claimed": false
+      },
+      {
+        "n": 5,
+        "m": 3,
+        "Afactor": "r**4 - r**3 + r**2 - r + 1",
+        "logarithmic_residue": "0",
+        "integrable": true,
+        "u": "(-5*x**3 - 3*x)/(3*x**6 - 9*x**4 + 9*x**2 - 3)",
+        "X": "(5*x**3 + 5*x**2 + 3*x + 3)/(3*x**4 - 12*x**3 + 18*x**2 - 12*x + 3)",
+        "C": "(-x**4 - 4*x**3 - 6*x**2 - 4*x - 1)/(x - 1)",
+        "phase_D": "(25*x**10 + 150*x**9 + 405*x**8 + 680*x**7 + 834*x**6 + 804*x**5 + 610*x**4 + 360*x**3 + 165*x**2 + 54*x + 9)/(9*x**9 - 81*x**8 + 324*x**7 - 756*x**6 + 1134*x**5 - 1134*x**4 + 756*x**3 - 324*x**2 + 81*x - 9)",
+        "C_polynomial": false,
+        "phase_D_polynomial": false,
+        "orders_C_D_at_plus_and_minus_one": [
+          -1,
+          -9,
+          4,
+          6
+        ],
+        "admissible_pole_bound": false,
+        "pure_polynomial_core_claimed": false
+      },
+      {
+        "n": 2,
+        "m": 3,
+        "Afactor": "r**2 + 1",
+        "logarithmic_residue": "1/8",
+        "integrable": false
+      }
+    ],
+    "repeated_pole_family_controls": [
+      {
+        "m": 1,
+        "lambda": "1",
+        "a": 1,
+        "critical_polynomial": "x**2 + 1",
+        "critical_unit_trace": "0",
+        "torsion_order_when_present": 4,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 1,
+        "lambda": "1",
+        "a": 3,
+        "critical_polynomial": "x**2 + 1",
+        "critical_unit_trace": "0",
+        "torsion_order_when_present": 4,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 1,
+        "lambda": "4",
+        "a": 1,
+        "critical_polynomial": "4*x**2 + 1",
+        "critical_unit_trace": "0",
+        "torsion_order_when_present": 4,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 1,
+        "lambda": "4",
+        "a": 3,
+        "critical_polynomial": "4*x**2 + 1",
+        "critical_unit_trace": "0",
+        "torsion_order_when_present": 4,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 2,
+        "lambda": "1",
+        "a": 1,
+        "critical_polynomial": "3*x**2 + 1",
+        "critical_unit_trace": "1",
+        "torsion_order_when_present": 6,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 2,
+        "lambda": "1",
+        "a": 3,
+        "critical_polynomial": "3*x**2 + 1",
+        "critical_unit_trace": "1",
+        "torsion_order_when_present": 6,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 2,
+        "lambda": "4",
+        "a": 1,
+        "critical_polynomial": "12*x**2 + 1",
+        "critical_unit_trace": "1",
+        "torsion_order_when_present": 6,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 2,
+        "lambda": "4",
+        "a": 3,
+        "critical_polynomial": "12*x**2 + 1",
+        "critical_unit_trace": "1",
+        "torsion_order_when_present": 6,
+        "exact_exponent_cap": 1,
+        "rejected_jet_values": [
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          }
+        ]
+      },
+      {
+        "m": 7,
+        "lambda": "1",
+        "a": 1,
+        "critical_polynomial": "13*x**2 + 1",
+        "critical_unit_trace": "12/7",
+        "torsion_order_when_present": null,
+        "exact_exponent_cap": 3,
+        "rejected_jet_values": [
+          {
+            "exponent": -3,
+            "nonzero_jet_numerator": "-20/13"
+          },
+          {
+            "exponent": -2,
+            "nonzero_jet_numerator": "24/13"
+          },
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 2,
+            "nonzero_jet_numerator": "24/13"
+          },
+          {
+            "exponent": 3,
+            "nonzero_jet_numerator": "20/13"
+          }
+        ]
+      },
+      {
+        "m": 7,
+        "lambda": "1",
+        "a": 3,
+        "critical_polynomial": "13*x**2 + 1",
+        "critical_unit_trace": "12/7",
+        "torsion_order_when_present": null,
+        "exact_exponent_cap": 2,
+        "rejected_jet_values": [
+          {
+            "exponent": -2,
+            "nonzero_jet_numerator": "24/13"
+          },
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 2,
+            "nonzero_jet_numerator": "24/13"
+          }
+        ]
+      },
+      {
+        "m": 7,
+        "lambda": "4",
+        "a": 1,
+        "critical_polynomial": "52*x**2 + 1",
+        "critical_unit_trace": "12/7",
+        "torsion_order_when_present": null,
+        "exact_exponent_cap": 3,
+        "rejected_jet_values": [
+          {
+            "exponent": -3,
+            "nonzero_jet_numerator": "-20/13"
+          },
+          {
+            "exponent": -2,
+            "nonzero_jet_numerator": "24/13"
+          },
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 2,
+            "nonzero_jet_numerator": "24/13"
+          },
+          {
+            "exponent": 3,
+            "nonzero_jet_numerator": "20/13"
+          }
+        ]
+      },
+      {
+        "m": 7,
+        "lambda": "4",
+        "a": 3,
+        "critical_polynomial": "52*x**2 + 1",
+        "critical_unit_trace": "12/7",
+        "torsion_order_when_present": null,
+        "exact_exponent_cap": 2,
+        "rejected_jet_values": [
+          {
+            "exponent": -2,
+            "nonzero_jet_numerator": "24/13"
+          },
+          {
+            "exponent": -1,
+            "nonzero_jet_numerator": "-2"
+          },
+          {
+            "exponent": 0,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 1,
+            "nonzero_jet_numerator": "2"
+          },
+          {
+            "exponent": 2,
+            "nonzero_jet_numerator": "24/13"
+          }
+        ]
+      }
+    ],
+    "repeated_pole_nonzero_jet_controls": 48,
+    "source_pullback_local_controls": [
+      {
+        "case": "unmarked zero",
+        "a": 1,
+        "e": 1,
+        "orders": [
+          0,
+          2
+        ]
+      },
+      {
+        "case": "unmarked zero",
+        "a": 1,
+        "e": 2,
+        "orders": [
+          -1,
+          1
+        ]
+      },
+      {
+        "case": "unmarked zero",
+        "a": 1,
+        "e": 3,
+        "orders": [
+          -2,
+          0
+        ]
+      },
+      {
+        "case": "unmarked zero",
+        "a": 3,
+        "e": 1,
+        "orders": [
+          2,
+          4
+        ]
+      },
+      {
+        "case": "unmarked zero",
+        "a": 3,
+        "e": 2,
+        "orders": [
+          1,
+          3
+        ]
+      },
+      {
+        "case": "unmarked zero",
+        "a": 3,
+        "e": 3,
+        "orders": [
+          0,
+          2
+        ]
+      },
+      {
+        "case": "nonzero ramified value",
+        "a": 1,
+        "e": 2,
+        "outer_orders": [
+          0,
+          0
+        ],
+        "orders": [
+          -1,
+          -3
+        ]
+      },
+      {
+        "case": "nonzero ramified value",
+        "a": 1,
+        "e": 2,
+        "outer_orders": [
+          1,
+          2
+        ],
+        "orders": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "nonzero ramified value",
+        "a": 3,
+        "e": 2,
+        "outer_orders": [
+          2,
+          3
+        ],
+        "orders": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "nonzero ramified value",
+        "a": 1,
+        "e": 3,
+        "outer_orders": [
+          1,
+          1
+        ],
+        "orders": [
+          1,
+          -3
+        ]
+      },
+      {
+        "case": "nonzero ramified value",
+        "a": 3,
+        "e": 3,
+        "outer_orders": [
+          2,
+          4
+        ],
+        "orders": [
+          0,
+          2
+        ]
+      },
+      {
+        "case": "nonzero ramified value",
+        "a": 3,
+        "e": 3,
+        "outer_orders": [
+          3,
+          4
+        ],
+        "orders": [
+          3,
+          2
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 1,
+        "e": 1,
+        "outer_degrees": [
+          2,
+          4
+        ],
+        "orders": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 1,
+        "e": 1,
+        "outer_degrees": [
+          0,
+          0
+        ],
+        "orders": [
+          2,
+          4
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 1,
+        "e": 2,
+        "outer_degrees": [
+          2,
+          4
+        ],
+        "orders": [
+          -1,
+          -3
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 1,
+        "e": 2,
+        "outer_degrees": [
+          0,
+          0
+        ],
+        "orders": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 3,
+        "e": 1,
+        "outer_degrees": [
+          4,
+          6
+        ],
+        "orders": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 3,
+        "e": 1,
+        "outer_degrees": [
+          0,
+          0
+        ],
+        "orders": [
+          4,
+          6
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 3,
+        "e": 2,
+        "outer_degrees": [
+          4,
+          6
+        ],
+        "orders": [
+          -3,
+          -5
+        ]
+      },
+      {
+        "case": "finite pole",
+        "a": 3,
+        "e": 2,
+        "outer_degrees": [
+          0,
+          0
+        ],
+        "orders": [
+          5,
+          7
+        ]
+      }
+    ],
+    "pure_polynomial_pair_controls": [
+      {
+        "family": "DZ trivial outer",
+        "degree_u": 2,
+        "a": 1,
+        "u": "(-x**2 + x)/(4*x**2 - 4*x + 1)",
+        "X": "(1 - 2*x)*(1 - x)",
+        "degree_C": 3,
+        "degree_phase_D": 7,
+        "control_scope": "Trivial-outer pullback and polynomial purity; no claim that this source lacks a polynomial direction."
+      },
+      {
+        "family": "DZ trivial outer",
+        "degree_u": 2,
+        "a": 3,
+        "u": "(-x**2 + x)/(4*x**2 - 4*x + 1)",
+        "X": "(1 - 2*x)*(1 - x)",
+        "degree_C": 7,
+        "degree_phase_D": 11,
+        "control_scope": "Trivial-outer pullback and polynomial purity; no claim that this source lacks a polynomial direction."
+      },
+      {
+        "family": "DZ trivial outer",
+        "degree_u": 3,
+        "a": 3,
+        "u": "(-8*x**3 + 16*x**2 - 8*x)/(27*x**3 - 54*x**2 + 36*x - 8)",
+        "X": "(1 - 3*x/2)*(1 - x)",
+        "degree_C": 7,
+        "degree_phase_D": 11,
+        "control_scope": "Trivial-outer pullback and polynomial purity; no claim that this source lacks a polynomial direction."
+      },
+      {
+        "family": "DZ trivial outer",
+        "degree_u": 4,
+        "a": 3,
+        "u": "(-81*x**4 + 243*x**3 - 243*x**2 + 81*x)/(256*x**4 - 768*x**3 + 864*x**2 - 432*x + 81)",
+        "X": "(1 - 4*x/3)*(1 - x)",
+        "degree_C": 7,
+        "degree_phase_D": 11,
+        "control_scope": "Trivial-outer pullback and polynomial purity; no claim that this source lacks a polynomial direction."
+      },
+      {
+        "family": "polynomial pullback degree identity",
+        "a": 1,
+        "degree_h": 2,
+        "degree_C": 3,
+        "degree_phase_D": 7,
+        "outer_endpoint_is_odd": false,
+        "control_scope": "Pullback degree and polynomial purity; not a nontrivial odd-return core."
+      },
+      {
+        "family": "polynomial pullback degree identity",
+        "a": 3,
+        "degree_h": 2,
+        "degree_C": 7,
+        "degree_phase_D": 11,
+        "outer_endpoint_is_odd": false,
+        "control_scope": "Pullback degree and polynomial purity; not a nontrivial odd-return core."
+      }
+    ],
+    "moment_controls_total": 24,
+    "direct_even_raw_moment_computations": 12,
+    "odd_moment_parity_controls": 12,
+    "negative_controls": [
+      "Corrupted cleared polynomial rejected for r**2 + 1",
+      "Corrupted cleared polynomial rejected for r**2 - r + 1",
+      "Corrupted cleared polynomial rejected for r**4 - r**3 + r**2 - r + 1",
+      "A cleared root outside m>=degree(Afactor)/2 was rejected.",
+      "Rational integration did not suffice for polynomial phase D.",
+      "A rationally integrable fixture with a pole in C was rejected.",
+      "A nonzero logarithmic residue was rejected.",
+      "A proposed Cayley factor not dividing r^n+1 was rejected.",
+      "Ramified pullbacks with an actual finite coefficient pole were rejected.",
+      "Dropping the no-polynomial-direction premise invalidates outer polynomiality."
+    ],
+    "divisor_records": [
+      {
+        "n": 12,
+        "selected_irreducible_factors": [],
+        "Afactor": "1",
+        "degree_Afactor": 0,
+        "cleared_polynomial": "1",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": []
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 12,
+        "selected_irreducible_factors": [
+          "r**8 - r**4 + 1"
+        ],
+        "Afactor": "r**8 - r**4 + 1",
+        "degree_Afactor": 8,
+        "cleared_polynomial": "m**4 - 38*m**3 + 347*m**2 - 1270*m + 1680",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**4 - 38*m**3 + 347*m**2 - 1270*m + 1680",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 12,
+        "selected_irreducible_factors": [
+          "r**4 + 1"
+        ],
+        "Afactor": "r**4 + 1",
+        "degree_Afactor": 4,
+        "cleared_polynomial": "2*m**2 - 10*m + 12",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 3",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 2",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "2",
+            "multiplicity": 1
+          },
+          {
+            "root": "3",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 2,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "2",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 3,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 12,
+        "selected_irreducible_factors": [
+          "r**4 + 1",
+          "r**8 - r**4 + 1"
+        ],
+        "Afactor": "r**12 + 1",
+        "degree_Afactor": 12,
+        "cleared_polynomial": "2*m**6 - 102*m**5 + 2150*m**4 - 23970*m**3 + 149048*m**2 - 490008*m + 665280",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 11",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 10",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 9",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 8",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 7",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 6",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "6",
+            "multiplicity": 1
+          },
+          {
+            "root": "7",
+            "multiplicity": 1
+          },
+          {
+            "root": "8",
+            "multiplicity": 1
+          },
+          {
+            "root": "9",
+            "multiplicity": 1
+          },
+          {
+            "root": "10",
+            "multiplicity": 1
+          },
+          {
+            "root": "11",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 6,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "720",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 7,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "5040",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 8,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "20160",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 9,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "60480",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 10,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "151200",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 11,
+            "multiplicity": 1,
+            "cayley_power": 10,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "332640",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [],
+        "Afactor": "1",
+        "degree_Afactor": 0,
+        "cleared_polynomial": "1",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": []
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**8 + r**7 - r**5 - r**4 - r**3 + r + 1"
+        ],
+        "Afactor": "r**8 + r**7 - r**5 - r**4 - r**3 + r + 1",
+        "degree_Afactor": 8,
+        "cleared_polynomial": "m**4 - 54*m**3 + 467*m**2 - 1494*m + 1680",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**4 - 54*m**3 + 467*m**2 - 1494*m + 1680",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**4 - r**3 + r**2 - r + 1"
+        ],
+        "Afactor": "r**4 - r**3 + r**2 - r + 1",
+        "degree_Afactor": 4,
+        "cleared_polynomial": "m**2 - 7*m + 12",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 4",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 3",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "3",
+            "multiplicity": 1
+          },
+          {
+            "root": "4",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 3,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 4,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "12",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**4 - r**3 + r**2 - r + 1",
+          "r**8 + r**7 - r**5 - r**4 - r**3 + r + 1"
+        ],
+        "Afactor": "r**12 - r**9 + r**6 - r**3 + 1",
+        "degree_Afactor": 12,
+        "cleared_polynomial": "m**6 - 69*m**5 + 1813*m**4 - 22563*m**3 + 146722*m**2 - 488784*m + 665280",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**6 - 69*m**5 + 1813*m**4 - 22563*m**3 + 146722*m**2 - 488784*m + 665280",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**2 - r + 1"
+        ],
+        "Afactor": "r**2 - r + 1",
+        "degree_Afactor": 2,
+        "cleared_polynomial": "m - 2",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 2",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "2",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 2,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "2",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**2 - r + 1",
+          "r**8 + r**7 - r**5 - r**4 - r**3 + r + 1"
+        ],
+        "Afactor": "r**10 - r**5 + 1",
+        "degree_Afactor": 10,
+        "cleared_polynomial": "m**5 - 60*m**4 + 935*m**3 - 6600*m**2 + 22524*m - 30240",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**5 - 60*m**4 + 935*m**3 - 6600*m**2 + 22524*m - 30240",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**2 - r + 1",
+          "r**4 - r**3 + r**2 - r + 1"
+        ],
+        "Afactor": "r**6 - 2*r**5 + 3*r**4 - 3*r**3 + 3*r**2 - 2*r + 1",
+        "degree_Afactor": 6,
+        "cleared_polynomial": "m**3 - 11*m**2 + 58*m - 120",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 4",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m**2 - 7*m + 30",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "4",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 4,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "24",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 15,
+        "selected_irreducible_factors": [
+          "r**2 - r + 1",
+          "r**4 - r**3 + r**2 - r + 1",
+          "r**8 + r**7 - r**5 - r**4 - r**3 + r + 1"
+        ],
+        "Afactor": "r**14 - r**13 + r**12 - r**11 + r**10 - r**9 + r**8 - r**7 + r**6 - r**5 + r**4 - r**3 + r**2 - r + 1",
+        "degree_Afactor": 14,
+        "cleared_polynomial": "m**7 - 77*m**6 + 2527*m**5 - 45815*m**4 + 495544*m**3 - 3197348*m**2 + 11393808*m - 17297280",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 14",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 13",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 12",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 11",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 10",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 9",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 8",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "8",
+            "multiplicity": 1
+          },
+          {
+            "root": "9",
+            "multiplicity": 1
+          },
+          {
+            "root": "10",
+            "multiplicity": 1
+          },
+          {
+            "root": "11",
+            "multiplicity": 1
+          },
+          {
+            "root": "12",
+            "multiplicity": 1
+          },
+          {
+            "root": "13",
+            "multiplicity": 1
+          },
+          {
+            "root": "14",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 8,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "40320",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 9,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "181440",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 10,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "604800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 11,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1663200",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 12,
+            "multiplicity": 1,
+            "cayley_power": 10,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "3991680",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 13,
+            "multiplicity": 1,
+            "cayley_power": 12,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "8648640",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 14,
+            "multiplicity": 1,
+            "cayley_power": 14,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "17297280",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [],
+        "Afactor": "1",
+        "degree_Afactor": 0,
+        "cleared_polynomial": "1",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": []
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**12 - r**6 + 1"
+        ],
+        "Afactor": "r**12 - r**6 + 1",
+        "degree_Afactor": 12,
+        "cleared_polynomial": "m**6 - 87*m**5 + 2065*m**4 - 23745*m**3 + 148774*m**2 - 489888*m + 665280",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**6 - 87*m**5 + 2065*m**4 - 23745*m**3 + 148774*m**2 - 489888*m + 665280",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**4 - r**2 + 1",
+        "degree_Afactor": 4,
+        "cleared_polynomial": "m**2 - 9*m + 12",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**2 - 9*m + 12",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**4 - r**2 + 1",
+          "r**12 - r**6 + 1"
+        ],
+        "Afactor": "r**16 - r**14 + r**12 - r**10 + r**8 - r**6 + r**4 - r**2 + 1",
+        "degree_Afactor": 16,
+        "cleared_polynomial": "m**8 - 108*m**7 + 5002*m**6 - 129120*m**5 + 2021929*m**4 - 19603812*m**3 + 114970188*m**2 - 374020560*m + 518918400",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**8 - 108*m**7 + 5002*m**6 - 129120*m**5 + 2021929*m**4 - 19603812*m**3 + 114970188*m**2 - 374020560*m + 518918400",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**2 + 1"
+        ],
+        "Afactor": "r**2 + 1",
+        "degree_Afactor": 2,
+        "cleared_polynomial": "2*m - 2",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 1",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "1",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 1,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**12 - r**6 + 1"
+        ],
+        "Afactor": "r**14 + r**12 - r**8 - r**6 + r**2 + 1",
+        "degree_Afactor": 14,
+        "cleared_polynomial": "2*m**7 - 188*m**6 + 5492*m**5 - 82880*m**4 + 745898*m**3 - 4092932*m**2 + 12738528*m - 17297280",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 7",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m**6 - 87*m**5 + 2137*m**4 - 26481*m**3 + 187582*m**2 - 733392*m + 1235520",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "7",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 7,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "5040",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**6 + 1",
+        "degree_Afactor": 6,
+        "cleared_polynomial": "2*m**3 - 24*m**2 + 94*m - 120",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 5",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 4",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 3",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "3",
+            "multiplicity": 1
+          },
+          {
+            "root": "4",
+            "multiplicity": 1
+          },
+          {
+            "root": "5",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 3,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 4,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "24",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 5,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "60",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 18,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**4 - r**2 + 1",
+          "r**12 - r**6 + 1"
+        ],
+        "Afactor": "r**18 + 1",
+        "degree_Afactor": 18,
+        "cleared_polynomial": "2*m**9 - 234*m**8 + 12108*m**7 - 363636*m**6 + 6984978*m**5 - 88987626*m**4 + 751846912*m**3 - 4061995704*m**2 + 12733034400*m - 17643225600",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 17",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 16",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 15",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 14",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 13",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 12",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 11",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 10",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 9",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "9",
+            "multiplicity": 1
+          },
+          {
+            "root": "10",
+            "multiplicity": 1
+          },
+          {
+            "root": "11",
+            "multiplicity": 1
+          },
+          {
+            "root": "12",
+            "multiplicity": 1
+          },
+          {
+            "root": "13",
+            "multiplicity": 1
+          },
+          {
+            "root": "14",
+            "multiplicity": 1
+          },
+          {
+            "root": "15",
+            "multiplicity": 1
+          },
+          {
+            "root": "16",
+            "multiplicity": 1
+          },
+          {
+            "root": "17",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 9,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "362880",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 10,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "3628800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 11,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "19958400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 12,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "79833600",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 13,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "259459200",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 14,
+            "multiplicity": 1,
+            "cayley_power": 10,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "726485760",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 15,
+            "multiplicity": 1,
+            "cayley_power": 12,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1816214400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 16,
+            "multiplicity": 1,
+            "cayley_power": 14,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "4151347200",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 17,
+            "multiplicity": 1,
+            "cayley_power": 16,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "8821612800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 20,
+        "selected_irreducible_factors": [],
+        "Afactor": "1",
+        "degree_Afactor": 0,
+        "cleared_polynomial": "1",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": []
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 20,
+        "selected_irreducible_factors": [
+          "r**16 - r**12 + r**8 - r**4 + 1"
+        ],
+        "Afactor": "r**16 - r**12 + r**8 - r**4 + 1",
+        "degree_Afactor": 16,
+        "cleared_polynomial": "m**8 - 124*m**7 + 6130*m**6 - 155320*m**5 + 2303569*m**4 - 21098236*m**3 + 118506300*m**2 - 376318800*m + 518918400",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**8 - 124*m**7 + 6130*m**6 - 155320*m**5 + 2303569*m**4 - 21098236*m**3 + 118506300*m**2 - 376318800*m + 518918400",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 20,
+        "selected_irreducible_factors": [
+          "r**4 + 1"
+        ],
+        "Afactor": "r**4 + 1",
+        "degree_Afactor": 4,
+        "cleared_polynomial": "2*m**2 - 10*m + 12",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 3",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 2",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "2",
+            "multiplicity": 1
+          },
+          {
+            "root": "3",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 2,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "2",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 3,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 20,
+        "selected_irreducible_factors": [
+          "r**4 + 1",
+          "r**16 - r**12 + r**8 - r**4 + 1"
+        ],
+        "Afactor": "r**20 + 1",
+        "degree_Afactor": 20,
+        "cleared_polynomial": "2*m**10 - 290*m**9 + 18840*m**8 - 722100*m**7 + 18081546*m**6 - 309061410*m**5 + 3651698860*m**4 - 29448809800*m**3 + 155119231152*m**2 - 481894948800*m + 670442572800",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 19",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 18",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 17",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 16",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 15",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 14",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 13",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 12",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 11",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 10",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "10",
+            "multiplicity": 1
+          },
+          {
+            "root": "11",
+            "multiplicity": 1
+          },
+          {
+            "root": "12",
+            "multiplicity": 1
+          },
+          {
+            "root": "13",
+            "multiplicity": 1
+          },
+          {
+            "root": "14",
+            "multiplicity": 1
+          },
+          {
+            "root": "15",
+            "multiplicity": 1
+          },
+          {
+            "root": "16",
+            "multiplicity": 1
+          },
+          {
+            "root": "17",
+            "multiplicity": 1
+          },
+          {
+            "root": "18",
+            "multiplicity": 1
+          },
+          {
+            "root": "19",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 10,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "3628800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 11,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "39916800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 12,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "239500800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 13,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1037836800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 14,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "3632428800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 15,
+            "multiplicity": 1,
+            "cayley_power": 10,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "10897286400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 16,
+            "multiplicity": 1,
+            "cayley_power": 12,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "29059430400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 17,
+            "multiplicity": 1,
+            "cayley_power": 14,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "70572902400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 18,
+            "multiplicity": 1,
+            "cayley_power": 16,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "158789030400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 19,
+            "multiplicity": 1,
+            "cayley_power": 18,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "335221286400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 24,
+        "selected_irreducible_factors": [],
+        "Afactor": "1",
+        "degree_Afactor": 0,
+        "cleared_polynomial": "1",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": []
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 24,
+        "selected_irreducible_factors": [
+          "r**16 - r**8 + 1"
+        ],
+        "Afactor": "r**16 - r**8 + 1",
+        "degree_Afactor": 16,
+        "cleared_polynomial": "m**8 - 156*m**7 + 7042*m**6 - 165480*m**5 + 2358769*m**4 - 21247884*m**3 + 118694988*m**2 - 376403760*m + 518918400",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**8 - 156*m**7 + 7042*m**6 - 165480*m**5 + 2358769*m**4 - 21247884*m**3 + 118694988*m**2 - 376403760*m + 518918400",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 24,
+        "selected_irreducible_factors": [
+          "r**8 + 1"
+        ],
+        "Afactor": "r**8 + 1",
+        "degree_Afactor": 8,
+        "cleared_polynomial": "2*m**4 - 44*m**3 + 358*m**2 - 1276*m + 1680",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 7",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 6",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 5",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 4",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "4",
+            "multiplicity": 1
+          },
+          {
+            "root": "5",
+            "multiplicity": 1
+          },
+          {
+            "root": "6",
+            "multiplicity": 1
+          },
+          {
+            "root": "7",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 4,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "24",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 5,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "120",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 6,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "360",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 7,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "840",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 24,
+        "selected_irreducible_factors": [
+          "r**8 + 1",
+          "r**16 - r**8 + 1"
+        ],
+        "Afactor": "r**24 + 1",
+        "degree_Afactor": 24,
+        "cleared_polynomial": "2*m**12 - 420*m**11 + 40282*m**10 - 2333100*m**9 + 90884046*m**8 - 2508368940*m**7 + 50294204686*m**6 - 738126861780*m**5 + 7869286618952*m**4 - 59432810846640*m**3 + 301824796885632*m**2 - 925377133605120*m + 1295295050649600",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 23",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 22",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 21",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 20",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 19",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 18",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 17",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 16",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 15",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 14",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 13",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 12",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "12",
+            "multiplicity": 1
+          },
+          {
+            "root": "13",
+            "multiplicity": 1
+          },
+          {
+            "root": "14",
+            "multiplicity": 1
+          },
+          {
+            "root": "15",
+            "multiplicity": 1
+          },
+          {
+            "root": "16",
+            "multiplicity": 1
+          },
+          {
+            "root": "17",
+            "multiplicity": 1
+          },
+          {
+            "root": "18",
+            "multiplicity": 1
+          },
+          {
+            "root": "19",
+            "multiplicity": 1
+          },
+          {
+            "root": "20",
+            "multiplicity": 1
+          },
+          {
+            "root": "21",
+            "multiplicity": 1
+          },
+          {
+            "root": "22",
+            "multiplicity": 1
+          },
+          {
+            "root": "23",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 12,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "479001600",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 13,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6227020800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 14,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "43589145600",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 15,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "217945728000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 16,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "871782912000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 17,
+            "multiplicity": 1,
+            "cayley_power": 10,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "2964061900800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 18,
+            "multiplicity": 1,
+            "cayley_power": 12,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "8892185702400",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 19,
+            "multiplicity": 1,
+            "cayley_power": 14,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "24135932620800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 20,
+            "multiplicity": 1,
+            "cayley_power": 16,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "60339831552000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 21,
+            "multiplicity": 1,
+            "cayley_power": 18,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "140792940288000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 22,
+            "multiplicity": 1,
+            "cayley_power": 20,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "309744468633600",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 23,
+            "multiplicity": 1,
+            "cayley_power": 22,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "647647525324800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [],
+        "Afactor": "1",
+        "degree_Afactor": 0,
+        "cleared_polynomial": "1",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": []
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1",
+        "degree_Afactor": 16,
+        "cleared_polynomial": "m**8 - 220*m**7 + 9634*m**6 - 208840*m**5 + 2737009*m**4 - 23010220*m**3 + 122573676*m**2 - 378857520*m + 518918400",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**8 - 220*m**7 + 9634*m**6 - 208840*m**5 + 2737009*m**4 - 23010220*m**3 + 122573676*m**2 - 378857520*m + 518918400",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**8 - r**6 + r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**8 - r**6 + r**4 - r**2 + 1",
+        "degree_Afactor": 8,
+        "cleared_polynomial": "m**4 - 30*m**3 + 311*m**2 - 1242*m + 1680",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**4 - 30*m**3 + 311*m**2 - 1242*m + 1680",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**8 - r**6 + r**4 - r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**24 - r**18 + r**12 - r**6 + 1",
+        "degree_Afactor": 24,
+        "cleared_polynomial": "m**12 - 282*m**11 + 33137*m**10 - 2135250*m**9 + 87549063*m**8 - 2472223446*m**7 + 50037731771*m**6 - 736942488630*m**5 + 7865822393836*m**4 - 59426746142472*m**3 + 301819136848992*m**2 - 925375034949120*m + 1295295050649600",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**12 - 282*m**11 + 33137*m**10 - 2135250*m**9 + 87549063*m**8 - 2472223446*m**7 + 50037731771*m**6 - 736942488630*m**5 + 7865822393836*m**4 - 59426746142472*m**3 + 301819136848992*m**2 - 925375034949120*m + 1295295050649600",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**4 - r**2 + 1",
+        "degree_Afactor": 4,
+        "cleared_polynomial": "m**2 - 9*m + 12",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**2 - 9*m + 12",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**4 - r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**20 - r**10 + 1",
+        "degree_Afactor": 20,
+        "cleared_polynomial": "m**10 - 245*m**9 + 17970*m**8 - 712650*m**7 + 18018273*m**6 - 308792085*m**5 + 3650975180*m**4 - 29447637100*m**3 + 155118204576*m**2 - 481894585920*m + 670442572800",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**10 - 245*m**9 + 17970*m**8 - 712650*m**7 + 18018273*m**6 - 308792085*m**5 + 3650975180*m**4 - 29447637100*m**3 + 155118204576*m**2 - 481894585920*m + 670442572800",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**4 - r**2 + 1",
+          "r**8 - r**6 + r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**12 - 2*r**10 + 3*r**8 - 3*r**6 + 3*r**4 - 2*r**2 + 1",
+        "degree_Afactor": 12,
+        "cleared_polynomial": "m**6 - 47*m**5 + 1221*m**4 - 17761*m**3 + 132770*m**2 - 479064*m + 665280",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**6 - 47*m**5 + 1221*m**4 - 17761*m**3 + 132770*m**2 - 479064*m + 665280",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**4 - r**2 + 1",
+          "r**8 - r**6 + r**4 - r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**28 - r**26 + r**24 - r**22 + r**20 - r**18 + r**16 - r**14 + r**12 - r**10 + r**8 - r**6 + r**4 - r**2 + 1",
+        "degree_Afactor": 28,
+        "cleared_polynomial": "m**14 - 315*m**13 + 45731*m**12 - 4052307*m**11 + 244649433*m**10 - 10636642485*m**9 + 343183891433*m**8 - 8342473157361*m**7 + 153482876598226*m**6 - 2126441593783500*m**5 + 21842200643672136*m**4 - 161356765969228032*m**3 + 810856103646752640*m**2 - 2482773640828185600*m + 3497296636753920000",
+        "factorization": {
+          "content": "1",
+          "irreducible_factors": [
+            {
+              "polynomial": "m**14 - 315*m**13 + 45731*m**12 - 4052307*m**11 + 244649433*m**10 - 10636642485*m**9 + 343183891433*m**8 - 8342473157361*m**7 + 153482876598226*m**6 - 2126441593783500*m**5 + 21842200643672136*m**4 - 161356765969228032*m**3 + 810856103646752640*m**2 - 2482773640828185600*m + 3497296636753920000",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [],
+        "all_integer_roots": []
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1"
+        ],
+        "Afactor": "r**2 + 1",
+        "degree_Afactor": 2,
+        "cleared_polynomial": "2*m - 2",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 1",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "1",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 1,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**18 + 2*r**16 + r**14 - r**12 - 2*r**10 - 2*r**8 - r**6 + r**4 + 2*r**2 + 1",
+        "degree_Afactor": 18,
+        "cleared_polynomial": "2*m**9 - 458*m**8 + 23612*m**7 - 620276*m**6 + 10181618*m**5 - 112605002*m**4 + 852114288*m**3 - 4272760824*m**2 + 12864198240*m - 17643225600",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 9",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m**8 - 220*m**7 + 9826*m**6 - 221704*m**5 + 3095473*m**4 - 28443244*m**3 + 170067948*m**2 - 605768880*m + 980179200",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "9",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 9,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "362880",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**8 - r**6 + r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**10 + 1",
+        "degree_Afactor": 10,
+        "cleared_polynomial": "2*m**5 - 70*m**4 + 970*m**3 - 6650*m**2 + 22548*m - 30240",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 9",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 8",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 7",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 6",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 5",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "5",
+            "multiplicity": 1
+          },
+          {
+            "root": "6",
+            "multiplicity": 1
+          },
+          {
+            "root": "7",
+            "multiplicity": 1
+          },
+          {
+            "root": "8",
+            "multiplicity": 1
+          },
+          {
+            "root": "9",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 5,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "120",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 6,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "720",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 7,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "2520",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 8,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6720",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 9,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "15120",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**8 - r**6 + r**4 - r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**26 + r**24 - r**20 - r**18 + r**14 + r**12 - r**8 - r**6 + r**2 + 1",
+        "degree_Afactor": 26,
+        "cleared_polynomial": "2*m**13 - 590*m**12 + 74038*m**11 - 5233150*m**10 + 240349746*m**9 - 7759236450*m**8 + 183799858114*m**7 - 3261124858570*m**6 + 43522347682052*m**5 - 432294445877960*m**4 + 3107676360631248*m**3 - 15306937380262080*m**2 + 46268789283763200*m - 64764752532480000",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 13",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m**12 - 282*m**11 + 33353*m**10 - 2182986*m**9 + 91796055*m**8 - 2686269510*m**7 + 56978425427*m**6 - 889842898734*m**5 + 10193216157484*m**4 - 83635412891688*m**3 + 466577812723680*m**2 - 1587957124723200*m + 2490952020480000",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "13",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 13,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6227020800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**6 + 1",
+        "degree_Afactor": 6,
+        "cleared_polynomial": "2*m**3 - 24*m**2 + 94*m - 120",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 5",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 4",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 3",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "3",
+            "multiplicity": 1
+          },
+          {
+            "root": "4",
+            "multiplicity": 1
+          },
+          {
+            "root": "5",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 3,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "6",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 4,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "24",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 5,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "60",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**4 - r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**22 + r**20 - r**12 - r**10 + r**2 + 1",
+        "degree_Afactor": 22,
+        "cleared_polynomial": "2*m**11 - 512*m**10 + 41730*m**9 - 1874640*m**8 + 54942846*m**7 - 1126126176*m**6 + 16590285430*m**5 - 176079918160*m**4 + 1319792297352*m**3 - 6649072912512*m**2 + 20239579866240*m - 28158588057600",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 11",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m**10 - 245*m**9 + 18170*m**8 - 737450*m**7 + 19359473*m**6 - 350108885*m**5 + 4443944980*m**4 - 39156564300*m**3 + 229173941376*m**2 - 803623101120*m + 1279935820800",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "11",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 11,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "39916800",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**4 - r**2 + 1",
+          "r**8 - r**6 + r**4 - r**2 + 1"
+        ],
+        "Afactor": "r**14 - r**12 + r**10 + r**4 - r**2 + 1",
+        "degree_Afactor": 14,
+        "cleared_polynomial": "2*m**7 - 108*m**6 + 3164*m**5 - 56520*m**4 + 605138*m**3 - 3762252*m**2 + 12524496*m - 17297280",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 9",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 8",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 7",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m**4 - 30*m**3 + 671*m**2 - 5922*m + 17160",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "7",
+            "multiplicity": 1
+          },
+          {
+            "root": "8",
+            "multiplicity": 1
+          },
+          {
+            "root": "9",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 7,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "5040",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 8,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "40320",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 9,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "181440",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      },
+      {
+        "n": 30,
+        "selected_irreducible_factors": [
+          "r**2 + 1",
+          "r**4 - r**2 + 1",
+          "r**8 - r**6 + r**4 - r**2 + 1",
+          "r**16 + r**14 - r**10 - r**8 - r**6 + r**2 + 1"
+        ],
+        "Afactor": "r**30 + 1",
+        "degree_Afactor": 30,
+        "cleared_polynomial": "2*m**15 - 660*m**14 + 101360*m**13 - 9609600*m**12 + 628963244*m**11 - 30103633560*m**10 + 1088431681480*m**9 - 30271367583600*m**8 + 652922735571106*m**7 - 10921467487830900*m**6 + 140514306718272760*m**5 - 1365531160436242800*m**4 + 9702653921316603648*m**3 - 47585669985149978880*m**2 + 144037229777341286400*m - 202843204931727360000",
+        "factorization": {
+          "content": "2",
+          "irreducible_factors": [
+            {
+              "polynomial": "m - 29",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 28",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 27",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 26",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 25",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 24",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 23",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 22",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 21",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 20",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 19",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 18",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 17",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 16",
+              "multiplicity": 1
+            },
+            {
+              "polynomial": "m - 15",
+              "multiplicity": 1
+            }
+          ]
+        },
+        "all_rational_roots": [
+          {
+            "root": "15",
+            "multiplicity": 1
+          },
+          {
+            "root": "16",
+            "multiplicity": 1
+          },
+          {
+            "root": "17",
+            "multiplicity": 1
+          },
+          {
+            "root": "18",
+            "multiplicity": 1
+          },
+          {
+            "root": "19",
+            "multiplicity": 1
+          },
+          {
+            "root": "20",
+            "multiplicity": 1
+          },
+          {
+            "root": "21",
+            "multiplicity": 1
+          },
+          {
+            "root": "22",
+            "multiplicity": 1
+          },
+          {
+            "root": "23",
+            "multiplicity": 1
+          },
+          {
+            "root": "24",
+            "multiplicity": 1
+          },
+          {
+            "root": "25",
+            "multiplicity": 1
+          },
+          {
+            "root": "26",
+            "multiplicity": 1
+          },
+          {
+            "root": "27",
+            "multiplicity": 1
+          },
+          {
+            "root": "28",
+            "multiplicity": 1
+          },
+          {
+            "root": "29",
+            "multiplicity": 1
+          }
+        ],
+        "all_integer_roots": [
+          {
+            "m": 15,
+            "multiplicity": 1,
+            "cayley_power": 0,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1307674368000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 16,
+            "multiplicity": 1,
+            "cayley_power": 2,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "20922789888000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 17,
+            "multiplicity": 1,
+            "cayley_power": 4,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "177843714048000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 18,
+            "multiplicity": 1,
+            "cayley_power": 6,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1067062284288000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 19,
+            "multiplicity": 1,
+            "cayley_power": 8,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "5068545850368000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 20,
+            "multiplicity": 1,
+            "cayley_power": 10,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "20274183401472000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 21,
+            "multiplicity": 1,
+            "cayley_power": 12,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "70959641905152000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 22,
+            "multiplicity": 1,
+            "cayley_power": 14,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "223016017416192000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 23,
+            "multiplicity": 1,
+            "cayley_power": 16,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "641171050071552000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 24,
+            "multiplicity": 1,
+            "cayley_power": 18,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "1709789466857472000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 25,
+            "multiplicity": 1,
+            "cayley_power": 20,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "4274473667143680000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 26,
+            "multiplicity": 1,
+            "cayley_power": 22,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "10103301395066880000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 27,
+            "multiplicity": 1,
+            "cayley_power": 24,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "22732428138900480000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 28,
+            "multiplicity": 1,
+            "cayley_power": 26,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "48962152914554880000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          },
+          {
+            "m": 29,
+            "multiplicity": 1,
+            "cayley_power": 28,
+            "positive_pole_and_factorial_domain": true,
+            "clearing_denominator": "101421602465863680000",
+            "clearing_exception": false,
+            "original_middle_coefficient": "0",
+            "admissible_pole_bound": false,
+            "admissible_candidate": false
+          }
+        ]
+      }
+    ],
+    "limits": [
+      "Only the displayed n-list and rational reciprocal factors are enumerated.",
+      "No nontrivial pure odd-return polynomial core is exhibited or excluded universally.",
+      "The unrestricted descent and converse rely on the written proof."
+    ]
+  }
+}

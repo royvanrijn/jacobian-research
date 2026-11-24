@@ -1,0 +1,35 @@
+{
+  "altered_note_control": "rejected",
+  "assurance": "Exact finite controls for the stated written proofs; no general SFC closure.",
+  "checker_sha256": "71c30afa026e68680c5737a5ea3dc2c17f3d7d84232aaaa294d26c8089206123",
+  "counts": {
+    "annihilated_spanning_rows": 6,
+    "conjugation_checks": 144,
+    "exact_resultants": 2,
+    "ideal_classification_obstructions": 9,
+    "inverse_variance_checks": 8,
+    "laurent_kernel_checks": 8,
+    "marker_profile_inequalities": 668,
+    "mathematical_negative_controls": 5,
+    "nonmembership_certificates": 2,
+    "ordinary_form_coefficients": 14,
+    "shift_resolvent_checks": 140,
+    "twisted_product_checks": 81,
+    "unit_marker_equalities": 208
+  },
+  "forward_nonmembership_functional": "1",
+  "inverse_nonmembership_functional": "-1/2",
+  "macaulay_cross_ratio": "1/2",
+  "note_sha256": "df9f19e4418c2abdf47c0f2696a60637dcfb761f93a9b91457aad4b5c671e6b0",
+  "ordinary_resultants": [
+    1,
+    36
+  ],
+  "outcome": "PASS",
+  "saturation_scope": "Both ordinary example ideals saturate to the unit ideal.",
+  "source_hashes": {
+    "SFC_BALANCED_PRIVATE_AMPLIFICATION.md": "f4ebaa9028cb04258cf65be178685650d53e2852644ed0678f1a655d134c065e",
+    "SFC_ROW_MERGING_OBSTRUCTIONS.md": "731e5dcd27f8cfe6f688c351b55888facffe0756c797c192f3f1970a7113edee",
+    "UNRESTRICTED_SFC_MECHANISMS.tex": "f8b3dfc5947601fb002aee0ba942b0fc20b7ef46ca8e0d4f69b5a3e5e1361785"
+  }
+}

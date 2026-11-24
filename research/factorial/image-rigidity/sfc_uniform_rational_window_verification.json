@@ -1,0 +1,2918 @@
+{
+  "actual_factorial_moment_checks": 54,
+  "case_count": 6,
+  "cases": [
+    {
+      "A": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "C": 2,
+      "D_phase": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "Delta": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "M": 1,
+      "Omega": [
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "U": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          }
+        ]
+      ],
+      "a": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "actual_window_bound": 2,
+      "coarse_uniform_bound": 2,
+      "coefficients": [
+        1,
+        -1
+      ],
+      "cofactors": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -2
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ]
+      ],
+      "connection": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ]
+        ]
+      ],
+      "critical_resultant": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "d": 1,
+      "decay_exponent": {
+        "denominator": 1,
+        "numerator": -2
+      },
+      "derivative_vectors": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 1
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -2
+            }
+          ]
+        ]
+      ],
+      "direct_normalized_moments": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "e": 0,
+      "exponents": [
+        0,
+        0
+      ],
+      "independent_rows": [
+        0
+      ],
+      "minimal_order_q": 1,
+      "operator": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -2
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ]
+      ],
+      "s": 2,
+      "sigma": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "u": 0
+    },
+    {
+      "A": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "C": 2,
+      "D_phase": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "Delta": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "M": 1,
+      "Omega": [
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "U": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          }
+        ]
+      ],
+      "a": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "actual_window_bound": 2,
+      "coarse_uniform_bound": 3,
+      "coefficients": [
+        1,
+        1,
+        -1
+      ],
+      "cofactors": [
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": -3
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ]
+      ],
+      "connection": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ]
+        ]
+      ],
+      "critical_resultant": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "d": 1,
+      "decay_exponent": {
+        "denominator": 1,
+        "numerator": -3
+      },
+      "derivative_vectors": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 1
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": -1
+            },
+            {
+              "denominator": 1,
+              "numerator": -3
+            }
+          ]
+        ]
+      ],
+      "direct_normalized_moments": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        },
+        {
+          "denominator": 1,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 5
+        }
+      ],
+      "e": 0,
+      "exponents": [
+        0,
+        0,
+        0
+      ],
+      "independent_rows": [
+        0
+      ],
+      "minimal_order_q": 1,
+      "operator": [
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": -3
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ]
+      ],
+      "s": 3,
+      "sigma": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "u": 0
+    },
+    {
+      "A": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "C": 1,
+      "D_phase": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        }
+      ],
+      "Delta": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -8
+        },
+        {
+          "denominator": 1,
+          "numerator": 16
+        }
+      ],
+      "M": 1,
+      "Omega": [
+        {
+          "denominator": 4,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -3
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "U": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -4
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ]
+      ],
+      "a": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "actual_window_bound": 2,
+      "coarse_uniform_bound": 8,
+      "coefficients": [
+        1,
+        2
+      ],
+      "cofactors": [
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 4
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 4
+          }
+        ]
+      ],
+      "connection": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 4,
+              "numerator": -1
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 2,
+              "numerator": 1
+            }
+          ]
+        ]
+      ],
+      "critical_resultant": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        }
+      ],
+      "d": 2,
+      "decay_exponent": {
+        "denominator": 2,
+        "numerator": -2
+      },
+      "derivative_vectors": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 1
+            },
+            {
+              "denominator": 1,
+              "numerator": -4
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": -1
+            },
+            {
+              "denominator": 1,
+              "numerator": 4
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ]
+        ]
+      ],
+      "direct_normalized_moments": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 16
+        },
+        {
+          "denominator": 1,
+          "numerator": 64
+        },
+        {
+          "denominator": 1,
+          "numerator": 256
+        },
+        {
+          "denominator": 1,
+          "numerator": 1024
+        },
+        {
+          "denominator": 1,
+          "numerator": 4096
+        },
+        {
+          "denominator": 1,
+          "numerator": 16384
+        },
+        {
+          "denominator": 1,
+          "numerator": 65536
+        }
+      ],
+      "e": 1,
+      "exponents": [
+        1,
+        0
+      ],
+      "independent_rows": [
+        0
+      ],
+      "minimal_order_q": 1,
+      "operator": [
+        [
+          {
+            "denominator": 1,
+            "numerator": -1
+          },
+          {
+            "denominator": 1,
+            "numerator": 4
+          }
+        ],
+        [
+          {
+            "denominator": 4,
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "numerator": -2
+          },
+          {
+            "denominator": 1,
+            "numerator": 4
+          }
+        ]
+      ],
+      "s": 2,
+      "sigma": [
+        {
+          "denominator": 4,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "u": 1
+    },
+    {
+      "A": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        }
+      ],
+      "C": 2,
+      "D_phase": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        }
+      ],
+      "Delta": [
+        {
+          "denominator": 1,
+          "numerator": -2
+        },
+        {
+          "denominator": 1,
+          "numerator": 14
+        },
+        {
+          "denominator": 1,
+          "numerator": 16
+        }
+      ],
+      "M": 5,
+      "Omega": [
+        {
+          "denominator": 8,
+          "numerator": -1
+        },
+        {
+          "denominator": 8,
+          "numerator": 7
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -3
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "U": [
+        [
+          {
+            "denominator": 1,
+            "numerator": -2
+          },
+          {
+            "denominator": 1,
+            "numerator": -8
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 12
+          }
+        ]
+      ],
+      "a": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        }
+      ],
+      "actual_window_bound": 7,
+      "coarse_uniform_bound": 8,
+      "coefficients": [
+        1,
+        2
+      ],
+      "cofactors": [
+        [
+          {
+            "denominator": 8,
+            "numerator": 9
+          },
+          {
+            "denominator": 4,
+            "numerator": -63
+          },
+          {
+            "denominator": 8,
+            "numerator": 297
+          },
+          {
+            "denominator": 1,
+            "numerator": 126
+          },
+          {
+            "denominator": 1,
+            "numerator": 72
+          }
+        ],
+        [
+          {
+            "denominator": 2,
+            "numerator": -15
+          },
+          {
+            "denominator": 2,
+            "numerator": 63
+          },
+          {
+            "denominator": 1,
+            "numerator": 207
+          },
+          {
+            "denominator": 1,
+            "numerator": 168
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": -6
+          },
+          {
+            "denominator": 1,
+            "numerator": 42
+          },
+          {
+            "denominator": 1,
+            "numerator": 48
+          }
+        ]
+      ],
+      "connection": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 8,
+              "numerator": -1
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 2,
+              "numerator": 1
+            }
+          ]
+        ]
+      ],
+      "critical_resultant": [
+        {
+          "denominator": 1,
+          "numerator": 2
+        },
+        {
+          "denominator": 1,
+          "numerator": -16
+        }
+      ],
+      "d": 2,
+      "decay_exponent": {
+        "denominator": 2,
+        "numerator": -2
+      },
+      "derivative_vectors": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": -2
+            },
+            {
+              "denominator": 1,
+              "numerator": -8
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 12
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 4,
+              "numerator": 5
+            },
+            {
+              "denominator": 2,
+              "numerator": 5
+            },
+            {
+              "denominator": 1,
+              "numerator": 8
+            }
+          ],
+          [
+            {
+              "denominator": 2,
+              "numerator": -9
+            },
+            {
+              "denominator": 1,
+              "numerator": -18
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 16,
+              "numerator": -31
+            },
+            {
+              "denominator": 8,
+              "numerator": -51
+            },
+            {
+              "denominator": 4,
+              "numerator": -21
+            },
+            {
+              "denominator": 1,
+              "numerator": -16
+            }
+          ],
+          [
+            {
+              "denominator": 8,
+              "numerator": 63
+            },
+            {
+              "denominator": 2,
+              "numerator": 45
+            },
+            {
+              "denominator": 1,
+              "numerator": 45
+            }
+          ]
+        ]
+      ],
+      "direct_normalized_moments": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": 31
+        },
+        {
+          "denominator": 1,
+          "numerator": 209
+        },
+        {
+          "denominator": 1,
+          "numerator": 1471
+        },
+        {
+          "denominator": 1,
+          "numerator": 10625
+        },
+        {
+          "denominator": 1,
+          "numerator": 78079
+        },
+        {
+          "denominator": 1,
+          "numerator": 580865
+        },
+        {
+          "denominator": 1,
+          "numerator": 4361215
+        }
+      ],
+      "e": 1,
+      "exponents": [
+        0,
+        1
+      ],
+      "independent_rows": [
+        0,
+        1
+      ],
+      "minimal_order_q": 2,
+      "operator": [
+        [
+          {
+            "denominator": 8,
+            "numerator": 9
+          },
+          {
+            "denominator": 4,
+            "numerator": -63
+          },
+          {
+            "denominator": 8,
+            "numerator": 297
+          },
+          {
+            "denominator": 1,
+            "numerator": 126
+          },
+          {
+            "denominator": 1,
+            "numerator": 72
+          }
+        ],
+        [
+          {
+            "denominator": 16,
+            "numerator": 15
+          },
+          {
+            "denominator": 2,
+            "numerator": -21
+          },
+          {
+            "denominator": 16,
+            "numerator": -93
+          },
+          {
+            "denominator": 8,
+            "numerator": 1533
+          },
+          {
+            "denominator": 1,
+            "numerator": 354
+          },
+          {
+            "denominator": 1,
+            "numerator": 168
+          }
+        ],
+        [
+          {
+            "denominator": 32,
+            "numerator": -3
+          },
+          {
+            "denominator": 32,
+            "numerator": 63
+          },
+          {
+            "denominator": 32,
+            "numerator": -369
+          },
+          {
+            "denominator": 32,
+            "numerator": 21
+          },
+          {
+            "denominator": 4,
+            "numerator": 369
+          },
+          {
+            "denominator": 1,
+            "numerator": 126
+          },
+          {
+            "denominator": 1,
+            "numerator": 48
+          }
+        ]
+      ],
+      "s": 2,
+      "sigma": [
+        {
+          "denominator": 8,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "u": 1
+    },
+    {
+      "A": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "C": 2,
+      "D_phase": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 3
+        }
+      ],
+      "Delta": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 27
+        }
+      ],
+      "M": 5,
+      "Omega": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 27,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "U": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -6
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "numerator": 9
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": -2
+          }
+        ]
+      ],
+      "a": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "actual_window_bound": 5,
+      "coarse_uniform_bound": 15,
+      "coefficients": [
+        1,
+        1
+      ],
+      "cofactors": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 6561,
+            "numerator": 512
+          },
+          {
+            "denominator": 243,
+            "numerator": -256
+          },
+          {
+            "denominator": 9,
+            "numerator": 32
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 243,
+            "numerator": 32
+          },
+          {
+            "denominator": 3,
+            "numerator": -8
+          },
+          {
+            "denominator": 1,
+            "numerator": 12
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 27,
+            "numerator": -16
+          },
+          {
+            "denominator": 1,
+            "numerator": 4
+          }
+        ]
+      ],
+      "connection": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 9,
+              "numerator": -2
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 27,
+              "numerator": -4
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": 2
+            },
+            {
+              "denominator": 3,
+              "numerator": 1
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": 4
+            },
+            {
+              "denominator": 9,
+              "numerator": -4
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": -2
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": -4
+            },
+            {
+              "denominator": 3,
+              "numerator": 2
+            }
+          ]
+        ]
+      ],
+      "critical_resultant": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 27
+        }
+      ],
+      "d": 3,
+      "decay_exponent": {
+        "denominator": 3,
+        "numerator": -2
+      },
+      "derivative_vectors": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -6
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 2
+            },
+            {
+              "denominator": 1,
+              "numerator": 9
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": -2
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 27,
+              "numerator": -4
+            },
+            {
+              "denominator": 1,
+              "numerator": 4
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": 4
+            },
+            {
+              "denominator": 9,
+              "numerator": -16
+            },
+            {
+              "denominator": 1,
+              "numerator": -6
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": -4
+            },
+            {
+              "denominator": 1,
+              "numerator": 2
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 243,
+              "numerator": -8
+            },
+            {
+              "denominator": 81,
+              "numerator": 44
+            },
+            {
+              "denominator": 3,
+              "numerator": -20
+            }
+          ],
+          [
+            {
+              "denominator": 243,
+              "numerator": 8
+            },
+            {
+              "denominator": 243,
+              "numerator": -140
+            },
+            {
+              "denominator": 27,
+              "numerator": 92
+            },
+            {
+              "denominator": 1,
+              "numerator": 10
+            }
+          ],
+          [
+            {
+              "denominator": 243,
+              "numerator": -8
+            },
+            {
+              "denominator": 243,
+              "numerator": 152
+            },
+            {
+              "denominator": 9,
+              "numerator": -38
+            }
+          ]
+        ]
+      ],
+      "direct_normalized_moments": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 21
+        },
+        {
+          "denominator": 1,
+          "numerator": 120
+        },
+        {
+          "denominator": 1,
+          "numerator": 715
+        },
+        {
+          "denominator": 1,
+          "numerator": 4368
+        },
+        {
+          "denominator": 1,
+          "numerator": 27132
+        },
+        {
+          "denominator": 1,
+          "numerator": 170544
+        },
+        {
+          "denominator": 1,
+          "numerator": 1081575
+        }
+      ],
+      "e": 1,
+      "exponents": [
+        0,
+        2
+      ],
+      "independent_rows": [
+        0,
+        1
+      ],
+      "minimal_order_q": 2,
+      "operator": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 6561,
+            "numerator": 512
+          },
+          {
+            "denominator": 243,
+            "numerator": -256
+          },
+          {
+            "denominator": 9,
+            "numerator": 32
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 6561,
+            "numerator": -128
+          },
+          {
+            "denominator": 243,
+            "numerator": 128
+          },
+          {
+            "denominator": 9,
+            "numerator": -40
+          },
+          {
+            "denominator": 1,
+            "numerator": 12
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 19683,
+            "numerator": -256
+          },
+          {
+            "denominator": 243,
+            "numerator": 64
+          },
+          {
+            "denominator": 9,
+            "numerator": -16
+          },
+          {
+            "denominator": 1,
+            "numerator": 4
+          }
+        ]
+      ],
+      "s": 2,
+      "sigma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 27,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "u": 1
+    },
+    {
+      "A": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        }
+      ],
+      "C": 3,
+      "D_phase": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": -11
+        },
+        {
+          "denominator": 1,
+          "numerator": 6
+        }
+      ],
+      "Delta": [
+        {
+          "denominator": 1,
+          "numerator": 1296
+        },
+        {
+          "denominator": 1,
+          "numerator": 17208
+        },
+        {
+          "denominator": 1,
+          "numerator": -3872
+        },
+        {
+          "denominator": 1,
+          "numerator": 216
+        }
+      ],
+      "M": 18,
+      "Omega": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 3,
+          "numerator": -2
+        },
+        {
+          "denominator": 27,
+          "numerator": -241
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -3
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "U": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 1296
+          },
+          {
+            "denominator": 1,
+            "numerator": 4440
+          },
+          {
+            "denominator": 1,
+            "numerator": 144
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 7584
+          },
+          {
+            "denominator": 1,
+            "numerator": 4384
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 8832
+          },
+          {
+            "denominator": 1,
+            "numerator": 1632
+          }
+        ]
+      ],
+      "a": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        }
+      ],
+      "actual_window_bound": 18,
+      "coarse_uniform_bound": 24,
+      "coefficients": [
+        1,
+        1,
+        -2
+      ],
+      "cofactors": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 9,
+            "numerator": 16085155840
+          },
+          {
+            "denominator": 81,
+            "numerator": 9769299476480
+          },
+          {
+            "denominator": 81,
+            "numerator": 263624411054080
+          },
+          {
+            "denominator": 6561,
+            "numerator": 287884872814428160
+          },
+          {
+            "denominator": 59049,
+            "numerator": 17420163440908697600
+          },
+          {
+            "denominator": 177147,
+            "numerator": 138577337869008240640
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -505692860943745679360
+          },
+          {
+            "denominator": 43046721,
+            "numerator": -9625501111453839523840
+          },
+          {
+            "denominator": 129140163,
+            "numerator": 14274324165585545461760
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -114390289245660774400
+          },
+          {
+            "denominator": 177147,
+            "numerator": 512356430100561920
+          },
+          {
+            "denominator": 6561,
+            "numerator": -1334653453598720
+          },
+          {
+            "denominator": 243,
+            "numerator": 1899766743040
+          },
+          {
+            "denominator": 9,
+            "numerator": -1147535360
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 3,
+            "numerator": 29641670656
+          },
+          {
+            "denominator": 9,
+            "numerator": 4746897784832
+          },
+          {
+            "denominator": 81,
+            "numerator": 847762512674816
+          },
+          {
+            "denominator": 2187,
+            "numerator": 197118207506513920
+          },
+          {
+            "denominator": 2187,
+            "numerator": 567976154058752000
+          },
+          {
+            "denominator": 59049,
+            "numerator": -16183049170224840704
+          },
+          {
+            "denominator": 1594323,
+            "numerator": -324365366643604815872
+          },
+          {
+            "denominator": 4782969,
+            "numerator": 884659970219415666688
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -262533317275955855360
+          },
+          {
+            "denominator": 177147,
+            "numerator": 1478006583318118400
+          },
+          {
+            "denominator": 2187,
+            "numerator": -1540117481291776
+          },
+          {
+            "denominator": 243,
+            "numerator": 7661199785984
+          },
+          {
+            "denominator": 9,
+            "numerator": -5278662656
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -736100352
+          },
+          {
+            "denominator": 1,
+            "numerator": -56061853696
+          },
+          {
+            "denominator": 9,
+            "numerator": -13335229235200
+          },
+          {
+            "denominator": 81,
+            "numerator": -1360171141365760
+          },
+          {
+            "denominator": 729,
+            "numerator": -52817187245096960
+          },
+          {
+            "denominator": 6561,
+            "numerator": -178173979172962304
+          },
+          {
+            "denominator": 59049,
+            "numerator": 3132097179000143872
+          },
+          {
+            "denominator": 59049,
+            "numerator": -1226930070563225600
+          },
+          {
+            "denominator": 19683,
+            "numerator": 75464561199185920
+          },
+          {
+            "denominator": 243,
+            "numerator": -91788599787520
+          },
+          {
+            "denominator": 9,
+            "numerator": 173421985792
+          },
+          {
+            "denominator": 1,
+            "numerator": -401637376
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 736100352
+          },
+          {
+            "denominator": 1,
+            "numerator": 30780162048
+          },
+          {
+            "denominator": 3,
+            "numerator": 1322990043136
+          },
+          {
+            "denominator": 1,
+            "numerator": 2313247326208
+          },
+          {
+            "denominator": 243,
+            "numerator": 490799658008576
+          },
+          {
+            "denominator": 2187,
+            "numerator": -3437889747582976
+          },
+          {
+            "denominator": 19683,
+            "numerator": 7547527349469184
+          },
+          {
+            "denominator": 243,
+            "numerator": -10820543709184
+          },
+          {
+            "denominator": 9,
+            "numerator": 22846799872
+          },
+          {
+            "denominator": 1,
+            "numerator": -57376768
+          }
+        ]
+      ],
+      "connection": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 9,
+              "numerator": 1
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 27,
+              "numerator": -1
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": -1
+            },
+            {
+              "denominator": 3,
+              "numerator": 1
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": 1
+            },
+            {
+              "denominator": 9,
+              "numerator": 2
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": -2
+            }
+          ],
+          [
+            {
+              "denominator": 27,
+              "numerator": 2
+            },
+            {
+              "denominator": 3,
+              "numerator": 2
+            }
+          ]
+        ]
+      ],
+      "critical_resultant": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 128
+        },
+        {
+          "denominator": 1,
+          "numerator": 1728
+        }
+      ],
+      "d": 3,
+      "decay_exponent": {
+        "denominator": 3,
+        "numerator": -3
+      },
+      "derivative_vectors": [
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 1296
+            },
+            {
+              "denominator": 1,
+              "numerator": 4440
+            },
+            {
+              "denominator": 1,
+              "numerator": 144
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 7584
+            },
+            {
+              "denominator": 1,
+              "numerator": 4384
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": 8832
+            },
+            {
+              "denominator": 1,
+              "numerator": 1632
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 3872
+            },
+            {
+              "denominator": 3,
+              "numerator": -23200
+            },
+            {
+              "denominator": 3,
+              "numerator": -29248
+            },
+            {
+              "denominator": 1,
+              "numerator": -144
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": -416
+            },
+            {
+              "denominator": 3,
+              "numerator": 74272
+            },
+            {
+              "denominator": 1,
+              "numerator": -35104
+            },
+            {
+              "denominator": 1,
+              "numerator": -6944
+            }
+          ],
+          [
+            {
+              "denominator": 1,
+              "numerator": -832
+            },
+            {
+              "denominator": 3,
+              "numerator": 78080
+            },
+            {
+              "denominator": 27,
+              "numerator": -829568
+            },
+            {
+              "denominator": 1,
+              "numerator": -2176
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 3,
+              "numerator": 416
+            },
+            {
+              "denominator": 27,
+              "numerator": 1563136
+            },
+            {
+              "denominator": 27,
+              "numerator": -1300480
+            },
+            {
+              "denominator": 729,
+              "numerator": 25806368
+            },
+            {
+              "denominator": 27,
+              "numerator": 806032
+            },
+            {
+              "denominator": 1,
+              "numerator": 288
+            }
+          ],
+          [
+            {
+              "denominator": 3,
+              "numerator": -416
+            },
+            {
+              "denominator": 27,
+              "numerator": -233152
+            },
+            {
+              "denominator": 27,
+              "numerator": 9125120
+            },
+            {
+              "denominator": 729,
+              "numerator": -179255936
+            },
+            {
+              "denominator": 243,
+              "numerator": 35906144
+            },
+            {
+              "denominator": 9,
+              "numerator": 162304
+            }
+          ],
+          [
+            {
+              "denominator": 3,
+              "numerator": -832
+            },
+            {
+              "denominator": 27,
+              "numerator": -488768
+            },
+            {
+              "denominator": 81,
+              "numerator": 26619136
+            },
+            {
+              "denominator": 729,
+              "numerator": -146060672
+            },
+            {
+              "denominator": 81,
+              "numerator": 9394880
+            },
+            {
+              "denominator": 3,
+              "numerator": 15232
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 3,
+              "numerator": 416
+            },
+            {
+              "denominator": 27,
+              "numerator": 203488
+            },
+            {
+              "denominator": 243,
+              "numerator": 327629824
+            },
+            {
+              "denominator": 2187,
+              "numerator": -2415000704
+            },
+            {
+              "denominator": 2187,
+              "numerator": 904634144
+            },
+            {
+              "denominator": 243,
+              "numerator": -44759840
+            },
+            {
+              "denominator": 9,
+              "numerator": -1081696
+            },
+            {
+              "denominator": 1,
+              "numerator": -864
+            }
+          ],
+          [
+            {
+              "denominator": 3,
+              "numerator": -416
+            },
+            {
+              "denominator": 27,
+              "numerator": -210976
+            },
+            {
+              "denominator": 243,
+              "numerator": -58723072
+            },
+            {
+              "denominator": 2187,
+              "numerator": 16543347008
+            },
+            {
+              "denominator": 2187,
+              "numerator": -12242519968
+            },
+            {
+              "denominator": 6561,
+              "numerator": 12785106592
+            },
+            {
+              "denominator": 243,
+              "numerator": -177354176
+            },
+            {
+              "denominator": 9,
+              "numerator": -584960
+            }
+          ],
+          [
+            {
+              "denominator": 3,
+              "numerator": -832
+            },
+            {
+              "denominator": 27,
+              "numerator": -444416
+            },
+            {
+              "denominator": 243,
+              "numerator": -128434496
+            },
+            {
+              "denominator": 2187,
+              "numerator": 15394643584
+            },
+            {
+              "denominator": 6561,
+              "numerator": -29991577792
+            },
+            {
+              "denominator": 6561,
+              "numerator": 9155733248
+            },
+            {
+              "denominator": 243,
+              "numerator": -129860800
+            },
+            {
+              "denominator": 9,
+              "numerator": -152320
+            }
+          ]
+        ]
+      ],
+      "direct_normalized_moments": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 43
+        },
+        {
+          "denominator": 1,
+          "numerator": -486
+        },
+        {
+          "denominator": 1,
+          "numerator": 5753
+        },
+        {
+          "denominator": 1,
+          "numerator": -69976
+        },
+        {
+          "denominator": 1,
+          "numerator": 866535
+        },
+        {
+          "denominator": 1,
+          "numerator": -10867530
+        },
+        {
+          "denominator": 1,
+          "numerator": 137586517
+        }
+      ],
+      "e": 2,
+      "exponents": [
+        0,
+        0,
+        2
+      ],
+      "independent_rows": [
+        0,
+        1,
+        2
+      ],
+      "minimal_order_q": 3,
+      "operator": [
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 9,
+            "numerator": 16085155840
+          },
+          {
+            "denominator": 81,
+            "numerator": 9769299476480
+          },
+          {
+            "denominator": 81,
+            "numerator": 263624411054080
+          },
+          {
+            "denominator": 6561,
+            "numerator": 287884872814428160
+          },
+          {
+            "denominator": 59049,
+            "numerator": 17420163440908697600
+          },
+          {
+            "denominator": 177147,
+            "numerator": 138577337869008240640
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -505692860943745679360
+          },
+          {
+            "denominator": 43046721,
+            "numerator": -9625501111453839523840
+          },
+          {
+            "denominator": 129140163,
+            "numerator": 14274324165585545461760
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -114390289245660774400
+          },
+          {
+            "denominator": 177147,
+            "numerator": 512356430100561920
+          },
+          {
+            "denominator": 6561,
+            "numerator": -1334653453598720
+          },
+          {
+            "denominator": 243,
+            "numerator": 1899766743040
+          },
+          {
+            "denominator": 9,
+            "numerator": -1147535360
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 9,
+            "numerator": -59283341312
+          },
+          {
+            "denominator": 81,
+            "numerator": -35625029337088
+          },
+          {
+            "denominator": 81,
+            "numerator": -945708805390336
+          },
+          {
+            "denominator": 6561,
+            "numerator": -1003708223191777280
+          },
+          {
+            "denominator": 59049,
+            "numerator": -57111039910387449856
+          },
+          {
+            "denominator": 177147,
+            "numerator": -362314086236000387072
+          },
+          {
+            "denominator": 4782969,
+            "numerator": 13591239132286260084736
+          },
+          {
+            "denominator": 43046721,
+            "numerator": 61066650694698357751808
+          },
+          {
+            "denominator": 129140163,
+            "numerator": -234751047810043960360960
+          },
+          {
+            "denominator": 129140163,
+            "numerator": 86438037459936978599936
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -616487412567898980352
+          },
+          {
+            "denominator": 177147,
+            "numerator": 2587788179196084224
+          },
+          {
+            "denominator": 6561,
+            "numerator": -6464136162246656
+          },
+          {
+            "denominator": 243,
+            "numerator": 8933357486080
+          },
+          {
+            "denominator": 9,
+            "numerator": -5278662656
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -327155712
+          },
+          {
+            "denominator": 9,
+            "numerator": -303091941376
+          },
+          {
+            "denominator": 81,
+            "numerator": -112055427792896
+          },
+          {
+            "denominator": 81,
+            "numerator": -2387544704548864
+          },
+          {
+            "denominator": 6561,
+            "numerator": -2277473864528429056
+          },
+          {
+            "denominator": 59049,
+            "numerator": -127747886470219366400
+          },
+          {
+            "denominator": 177147,
+            "numerator": -1005681366811493564416
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -1094216451030121873408
+          },
+          {
+            "denominator": 43046721,
+            "numerator": 186049447451774932221952
+          },
+          {
+            "denominator": 43046721,
+            "numerator": -110041896665802988716032
+          },
+          {
+            "denominator": 14348907,
+            "numerator": 10328845781630406295552
+          },
+          {
+            "denominator": 531441,
+            "numerator": -63020376092967501824
+          },
+          {
+            "denominator": 19683,
+            "numerator": 237808660693123072
+          },
+          {
+            "denominator": 729,
+            "numerator": -549071099723776
+          },
+          {
+            "denominator": 27,
+            "numerator": 713855172608
+          },
+          {
+            "denominator": 1,
+            "numerator": -401637376
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -218103808
+          },
+          {
+            "denominator": 9,
+            "numerator": -160924958720
+          },
+          {
+            "denominator": 81,
+            "numerator": -49677263175680
+          },
+          {
+            "denominator": 729,
+            "numerator": -8233770352640000
+          },
+          {
+            "denominator": 6561,
+            "numerator": -776999993826344960
+          },
+          {
+            "denominator": 59049,
+            "numerator": -40134608482147106816
+          },
+          {
+            "denominator": 531441,
+            "numerator": -934973366389375631360
+          },
+          {
+            "denominator": 4782969,
+            "numerator": -2792738118215999651840
+          },
+          {
+            "denominator": 43046721,
+            "numerator": 61080116097566723276800
+          },
+          {
+            "denominator": 387420489,
+            "numerator": -262031447083474146426880
+          },
+          {
+            "denominator": 4782969,
+            "numerator": 787634710528578289664
+          },
+          {
+            "denominator": 177147,
+            "numerator": -4269187598000783360
+          },
+          {
+            "denominator": 19683,
+            "numerator": 43622850249359360
+          },
+          {
+            "denominator": 243,
+            "numerator": -30643394969600
+          },
+          {
+            "denominator": 9,
+            "numerator": 36674600960
+          },
+          {
+            "denominator": 1,
+            "numerator": -57376768
+          }
+        ]
+      ],
+      "s": 3,
+      "sigma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 27,
+          "numerator": 2
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "u": 2
+    }
+  ],
+  "controls": [
+    "complete degree-bounded resultant interpolation",
+    "weighted polynomial basis reduction",
+    "actual critical-value and pole alignment",
+    "exact connection and derivative recurrence",
+    "first-independent-block minor and full cofactor relation",
+    "operator degree and zero-valuation bounds",
+    "degree-one distinct-coefficient window"
+  ],
+  "helper_sha256": "c80ea0aa4ade828a89d18e028072c65fc0525c6700afc661183b5cb14c2e1055",
+  "note_sha256": "5066e9fef20d387d80bf865cb07f19563bb5907ace2c8e5c0032b29028f3b2f4",
+  "scope": "Finite exact rational-observable controls; the written proof supplies all-parameter quantifiers.",
+  "sharp_SFC_claimed": false,
+  "status": "PASS"
+}

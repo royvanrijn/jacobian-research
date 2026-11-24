@@ -1,0 +1,36 @@
+{
+  "compatible_cyclic_cases": 2,
+  "corruption_controls": [
+    "altered constant coefficient rejected",
+    "malformed polynomial degree rejected"
+  ],
+  "critical_value_resultant_degree": 6,
+  "exact_resultant_evaluation_points": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "nonzero_critical_values_of_divided_polynomial": 5,
+  "note_sha256": "ec6b4d6a8a5e84feb8a351c68567d367b900c8831d21dba916d713a6d74f2973",
+  "rejected_proposed_critical_value_budget": 4,
+  "scope": "Exact identities and obstruction controls; general contact target unproved",
+  "source_sha256": {
+    "research/factorial/image-rigidity/POWER_DIAGONAL_LINEAR_SFC_TRANSFER.md": "40278040a10d4813c473e8256b868e4fb6d42f20912972b801136398436609d6",
+    "research/factorial/image-rigidity/WEIGHTED_RADIAL_LINEAR_SFC_TRANSFER.md": "f9ee0dd06d5e6bc85a5b8d35aacb6d55f5c8ec18e483a59c00d3275177495645"
+  },
+  "squarefreeness_prime": 101,
+  "status": "PASS",
+  "unicritical_finite_inputs": 8,
+  "unicritical_inverse_degree_checked": 14,
+  "unicritical_powers_checked": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

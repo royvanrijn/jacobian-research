@@ -1,0 +1,57 @@
+{
+  "schema": "effective_odd_start_fibres_source_ledger_v1",
+  "sources": [
+    {
+      "role": "written_proof",
+      "path": "research/foundations/extended-geometry/EFFECTIVE_ODD_START_FIBRE_CLASSIFICATION.md",
+      "sha256": "f13bbfa33f3fda433bf3b08f64fa7b59d2ebca488fcca7045dfeed6069919cb5",
+      "exact_use": "EffectiveAlgebraicOddFibre and Lemmas BoundedCanonicalPolynomial, EffectiveFiniteReciprocalBox, ExplicitReciprocalTwistBox and RationalOrbitReduction; universal termination is a written argument, not a finite test."
+    },
+    {
+      "role": "exact_finite_checker",
+      "path": "research/foundations/extended-geometry/verify_effective_odd_start_fibres.py",
+      "sha256": "4dca45c24766a428284d7b6a1f2ee50167ced5216d3f9e04fed9c3ba0c274127",
+      "exact_use": "Explicit rational bounded generator searches, the complete 100-vector no-generator box, asymmetric maximum-ramification pole bounds, full-jet quotient matrices and a number-field restriction-of-scalars control."
+    },
+    {
+      "role": "required_retained_classification",
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "exact_use": "Exact marked-curve reciprocity, finite-pole bounds, finite support, canonical cyclic polynomial unit, descent of its geometric generator, all rational reciprocal units in K(R), and the full polynomial jet congruence. The old non-effective Dickson step is replaced here."
+    },
+    {
+      "role": "required_primary_decision_theorem",
+      "path": "research/foundations/extended-geometry/sources/chonev-ouaknine-worrell-orbit-2016.pdf",
+      "sha256": "35116eb7e385b63da3bfd8585b37c06efc0d05735237a3488fa940f1d9927551",
+      "exact_use": "Chonev-Ouaknine-Worrell, Theorem 2.2, printed page 0:3: only the one-dimensional-target PTIME clause for the rational-matrix Orbit Problem. Sections 3-4, printed pages 0:5-0:9, include the repeated-eigenvalue equations. Last-coordinate augmentation is proved in the new note; no higher-target or Skolem decision theorem is imported."
+    }
+  ],
+  "primary_source": {
+    "authors": "Ventsislav Chonev, Joel Ouaknine and James Worrell",
+    "publication": "On the Complexity of the Orbit Problem, Journal of the ACM 63(3), Article 23 (2016)",
+    "url": "https://people.mpi-sws.org/~joel/publications/orbit_journal_14.pdf",
+    "edition": "Retained 40-page author manuscript; actual Theorem 2.2 and relevant Sections 3-4 inspected",
+    "imported_scope": "Arbitrary rational square matrix and rational initial vector; decide whether its nonnegative orbit meets a one-dimensional rational target subspace. Repeated eigenvalues are allowed."
+  },
+  "internal_review": {
+    "proof_author": "Root research agent",
+    "written_proof_review": "The Jacobian/Dixmier audit agent independently read the complete argument and checked bounded canonical extraction, the Cramer box, maximum-ramification inverse-paired twists, base descent, number-field restriction of scalars and the one-dimensional Orbit import. No substantive objection remained before this checker was written.",
+    "checker_author": "The same Jacobian/Dixmier audit agent implemented the finite controls in this packet; this is not an independent replay by that agent.",
+    "assurance": "Internal AI-assisted proof review and exact finite controls only; no external human review or formal verification."
+  },
+  "self_contained_steps": [
+    "Zeros of the canonical polynomial lie over the opposite infinity value, and its degree divides the rational-map degree.",
+    "Absence of a polynomial reciprocal unit makes the exponent polyhedron bounded; the Cramer bound gives a finite explicit box.",
+    "Maximum ramification gives the sharp pole-twist intervals before the jet test.",
+    "Complete quotient-algebra vectors retain all jets; restriction of scalars and a last coordinate reduce equality to a rational target line.",
+    "After an imported positive decision, exact sequential search finds the least exponent; the finite-order test gives the entire integer coset."
+  ],
+  "not_claimed": [
+    "A new proof or implementation of the general Orbit decision algorithm",
+    "An end-to-end implemented classifier for arbitrary number-field inputs",
+    "A finite-control proof of the universal classification or its geometric descent",
+    "A polynomial-time bound for the whole classification",
+    "Classification as the endpoint coordinate varies",
+    "Historical novelty, external human review or formal verification"
+  ]
+}

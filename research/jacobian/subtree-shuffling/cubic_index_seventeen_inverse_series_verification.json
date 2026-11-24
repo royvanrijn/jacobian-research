@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational sparse polynomials; Python standard library",
+  "source_ledger_sha256": "092563aabdca57254e96899e90438db17195f1558fb481a7bdc0f57422824135",
+  "checker_sha256": "df96989aeb49ce0fea689ec54375dcced560b69f6b84b335a1c622765c76d997",
+  "seed_input_sha256": "f305ecd8db14df064ff706c9c74242b8d004024d0ef25747c6f2334a3f98e26b",
+  "literal_cubic_monomials": 45,
+  "all_order_inverse_equations": 18,
+  "all_order_nonzero_identity_quotients": 3,
+  "all_order_identity_max_quotient_terms": 3,
+  "formal_branch_constant_verified": true,
+  "seed_jacobian_seventeenth_power_zero": true,
+  "seed_jacobian_sixteenth_power_entries": 5,
+  "restricted_sixteenth_power_witness": {
+    "row": 3,
+    "column": 17,
+    "inputs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "coefficient": "288"
+  },
+  "inverse_prefix_controls_through_grade": 32,
+  "first_eight_even_coefficients": [
+    "1",
+    "3",
+    "10",
+    "35",
+    "126",
+    "462",
+    "1716",
+    "6435"
+  ],
+  "first_eight_odd_coefficients": [
+    "-1",
+    "-6",
+    "-29",
+    "-130",
+    "-562",
+    "-2380",
+    "-9949",
+    "-41226"
+  ],
+  "compressed_jet_controls": [
+    {
+      "order": 0,
+      "dimension": 4,
+      "cubic_monomials": 0,
+      "jacobian_entries": 0,
+      "coefficientwise_operator_identity": true
+    },
+    {
+      "order": 1,
+      "dimension": 21,
+      "cubic_monomials": 12,
+      "jacobian_entries": 28,
+      "coefficientwise_operator_identity": true
+    },
+    {
+      "order": 2,
+      "dimension": 38,
+      "cubic_monomials": 54,
+      "jacobian_entries": 109,
+      "coefficientwise_operator_identity": true
+    },
+    {
+      "order": 3,
+      "dimension": 55,
+      "cubic_monomials": 149,
+      "jacobian_entries": 249,
+      "coefficientwise_operator_identity": true
+    },
+    {
+      "order": 4,
+      "dimension": 72,
+      "cubic_monomials": 310,
+      "jacobian_entries": 448,
+      "coefficientwise_operator_identity": true
+    }
+  ],
+  "negative_controls_rejected": [
+    "wrong_discriminant_sign",
+    "omitted_x6_helper",
+    "wrong_scale11",
+    "perturbed_literal_cubic",
+    "freezing_tau_removes_sixteenth_power_witness"
+  ],
+  "universal_claim_support": "Polynomial inverse identities plus the written binomial positivity, weight, coefficientwise operator and retained-column arguments; the finite prefix and small jets are controls only.",
+  "seconds": 0.8564
+}

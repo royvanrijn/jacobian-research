@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "written_proof",
+      "path": "research/foundations/extended-geometry/HOPF_COORDINATE_DEGREES_AND_FULL_HYPERBOLIC_SPECTRA.md",
+      "scope": "All-word degree induction, explicit realizations, full displayed-family spectra and divisor criterion; uses the separately pinned classical generator theorem.",
+      "sha256": "4a4b085420ba5c55131a33efe3279d3f17b6967ba88a970bf795aaa241f75b80"
+    },
+    {
+      "role": "exact_checker",
+      "path": "research/foundations/extended-geometry/verify_hopf_coordinate_degree_spectra.py",
+      "scope": "Deterministic bounded exact controls, with complete input-generation parameters in this file.",
+      "sha256": "d1208a631e3dbf92bd5d96b8f96dfb5e26d3018af7b74bebd3159fd5674a219b"
+    },
+    {
+      "role": "arithmetic_helper",
+      "path": "research/foundations/extended-geometry/verify_hopf_lnd_orbit.py",
+      "scope": "Sparse rational polynomial arithmetic and the independent xy-reduction normal form only.",
+      "sha256": "f18d1a5680248ff748d9681fc021c39a84720801b5e149cffe0d9703feccf02e"
+    },
+    {
+      "role": "primary_generation_theorem",
+      "path": "research/foundations/extended-geometry/sources/blanc-dubouloz-a1-fibered-surfaces-2011.pdf",
+      "scope": "Theorem 5.4.5(7),(8), printed pages 5915-5919, with field convention page 5889: generation for the split quadratic surface. The printed missing-v shear term is corrected directly in C.4.",
+      "sha256": "071c360bd5d87f8029fc06394df2a0388777fbbb291264c0063baa0dbedb92f7"
+    },
+    {
+      "role": "retained_family_context",
+      "path": "research/foundations/extended-geometry/HOPF_AUTOMORPHISM_ORBIT_SPECTRA.md",
+      "scope": "Section 8 identifies the retained family and its separate classification/Image interpretation; no such result is needed for the new algebraic degree proof.",
+      "sha256": "e33d36f721b23938cc58be885a015fbb63efd2b065d4b84689c31ddb9652d0fe"
+    }
+  ],
+  "primary_input": {
+    "authors": "Jeremy Blanc and Adrien Dubouloz",
+    "title": "Automorphisms of A1-fibered affine surfaces",
+    "publication": "Transactions of the AMS 363 (2011), 5887-5924",
+    "url": "https://algebra.dmi.unibas.ch/blanc/articles/autoa1fibrations.pdf",
+    "locator": "Theorem 5.4.5(7),(8), printed pages 5915-5919; field convention page 5889",
+    "role": "mathematical_input",
+    "inspected": "Actual primary statement, factorization proof, explicit generator proof, and split-root field hypotheses.",
+    "printed_formula_correction": "The second coordinate in T and T0 omits the original v summand. C.4 is derived from uv=P(w), independently verified, and agrees with the plane-shear lift in the proof on page 5919.",
+    "novelty_claim": false
+  },
+  "assurance": {
+    "bounded_exact_controls_only": true,
+    "finite_controls_prove_universal_quantifiers": false,
+    "primary_generator_theorem_is_imported": true,
+    "independent_replay": false,
+    "independent_mathematical_review": false,
+    "formal_verification": false,
+    "external_review": false,
+    "worldwide_priority": false
+  }
+}

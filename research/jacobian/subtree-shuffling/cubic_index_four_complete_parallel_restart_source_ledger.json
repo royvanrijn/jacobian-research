@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "proof",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_COMPLETE_PARALLEL_RESTART.md",
+      "sha256": "acd7df4cbf1038abde8642a82623513050bd3a6761100b64832e62281825e847",
+      "scope": "Complete one-parallel-layer theorem, finite reduction, arbitrary-helper-family reduction and inverse support argument."
+    },
+    {
+      "role": "checker",
+      "path": "research/jacobian/subtree-shuffling/verify_cubic_index_four_complete_parallel_restart.py",
+      "sha256": "1ee857db79ba91dbfbd056850c1eee31b7d4265d0a9e21560460a3cccf8299ed",
+      "scope": "Exact rational reconstruction of the full finite kernels and all inverse support bounds."
+    },
+    {
+      "role": "literal_data",
+      "path": "research/jacobian/subtree-shuffling/cubic_index_four_syzygy58.json",
+      "sha256": "b8899afd6e1f1f197d783bdb5c3936434da06cec4be3e607ec64b8c5cac1e4e8",
+      "scope": "Literal pre-S and S cubics; actual48-variable sharp base and its positive weights."
+    },
+    {
+      "role": "literal_proof",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_SYZYGY58.md",
+      "sha256": "02559e0af8c50e682e14afafa081a5087b9a278d0f2c20a4c7be93c00d97294a",
+      "scope": "Definition of the nine pre-S components and P_S; retained sharp instance."
+    },
+    {
+      "role": "pre_S_row_proof",
+      "path": "research/jacobian/subtree-shuffling/COMMUTING_SYZYGY_SLICES_AND_SCALAR_OBSTRUCTION.md",
+      "sha256": "50dd9267653613edc7262d8e5f93c9059626635efa3fef02eb8578def29205fa",
+      "scope": "Pre-S third-row formulas and scalar criterion; generic formulas are rebuilt by the new checker."
+    },
+    {
+      "role": "third_row_proof",
+      "path": "research/jacobian/subtree-shuffling/THIRD_COVECTOR_CUBIC_IMAGE_AND_RESTART_OBSTRUCTIONS.md",
+      "sha256": "f0285ae00637834ebf2532df8d6fa52d6eea57320b3c3ab8a3232a60d5df661a",
+      "scope": "Full third-row identity for ordinary cubic joint invariants and definition of gamma."
+    },
+    {
+      "role": "primary_context",
+      "path": "research/jacobian/subtree-shuffling/sources/umirbaev-polarization-algebras-2014.pdf",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86",
+      "scope": "Printedpp7-8 Lemmas7-8/Corollary2 andp12 example; context only, no theorem imported."
+    },
+    {
+      "role": "cube_zero_inverse_corollary",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_CUBE_ZERO_SHUFFLE_EXTENSION.md",
+      "sha256": "00e9ae1513feb0fc831b3b6960a7fd709d6f5bef7c59316c292cd02aa246e00b",
+      "scope": "CubicCubeZeroSharpInverseDegree, Section1; imported only for UniversalParallelRestartCeiling, which removes the invertibility hypothesis and gives D,B<=29. No new replay of its finite certificates is claimed here."
+    }
+  ],
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false,
+    "worldwide_priority": false,
+    "unrestricted_index_four_bound": false,
+    "all_restart_rounds": false
+  }
+}

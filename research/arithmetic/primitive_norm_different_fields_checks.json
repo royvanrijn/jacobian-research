@@ -1,0 +1,145 @@
+{
+  "arithmetic": "Python standard library; exact integers and fractions",
+  "concrete_pair_controls": {
+    "gaussian_mod23_nonzero_image": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "joint_quadratic_modulus": 92,
+    "joint_sign_counts": {
+      "-1,-1": 11,
+      "-1,1": 11,
+      "1,-1": 11,
+      "1,1": 11
+    },
+    "minus23_primitive_mod8_image": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "crt_control": {
+    "corrected_bound": 60,
+    "forbidden_root_count": 45,
+    "modulus": 225,
+    "old_bound": 15,
+    "primes": [
+      3,
+      5
+    ]
+  },
+  "finite_filter_controls": {
+    "coefficient_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        1,
+        8
+      ]
+    ],
+    "common_factor_example": {
+      "d": 9,
+      "modulus": 40,
+      "u": 13,
+      "v": 3
+    },
+    "common_factor_transport_cases": 40,
+    "first_kernel": [
+      1,
+      5
+    ],
+    "mask_transport_cases": 6144,
+    "modulus": 8,
+    "normalization_cases": 1536,
+    "second_kernel": [
+      1,
+      3
+    ]
+  },
+  "local_controls": {
+    "baseline_cases": 1492,
+    "complete_target_classes_mod_p_squared": true,
+    "marked_cases": 1492,
+    "maximum_prime_square_forbidden_counts": {
+      "11": 21,
+      "13": 25,
+      "3": 5,
+      "5": 9,
+      "7": 13
+    }
+  },
+  "mark_controls": {
+    "cases": 320,
+    "mark_sets_each": 16,
+    "opposite_inert_patterns": 16,
+    "primes": [
+      3,
+      5,
+      7,
+      11
+    ],
+    "probabilities": [
+      "0",
+      "1/2",
+      "9/10",
+      "999/1000",
+      "1"
+    ],
+    "targets": [
+      1,
+      3,
+      15,
+      105
+    ]
+  },
+  "negative_controls_rejected": [
+    "reuse_old_nu_d_at_most_d",
+    "claim_marker_gain_at_opposite_inert_target_prime",
+    "put_exclusive_target_prime_in_common_inert_J",
+    "hold_masks_fixed_during_cofactor_restoration",
+    "freeze_base_Gamma_for_an_untransported_shift"
+  ],
+  "passed": true,
+  "schema_version": 1,
+  "scope": "Complete displayed finite spaces only. No numerical sampling proves the sieve, Mertens estimate, lower-count bridge or asymptotic theorem. No external review or formal verification.",
+  "source_sha256": {
+    "research/arithmetic/PRIMITIVE_NORM_DIFFERENT_FIELDS_CLASS_ERROR.md": "8dfb822a2f23d776af94e13634e4df33311b7084f260c566de31067b9408ce3b",
+    "research/arithmetic/PRIMITIVE_NORM_ENDPOINT_CLASS_ERROR.md": "14fe947c9b58a3db563903833d9494ce9b3b05314501621b7d9177bf6f2e1363",
+    "research/arithmetic/verify_primitive_norm_different_fields.py": "43b04058da78ca9ad0f38174480c9d5e685615fc5b748096303c97dd33b7c044"
+  }
+}

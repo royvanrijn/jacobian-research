@@ -1,0 +1,357 @@
+{
+  "status": "PASS",
+  "evidence_type": "exact finite algebra controls; not a quantified proof",
+  "imported_source_sha256": {
+    "SFC_PRIME_POWER_UPPER_RESPONSE.md": "c32d3c76f705aa5fbb5e046b23b1ca4c18fdc91568b5f3e5e36b3fd4774dbdf2",
+    "SFC_PRIME_POWER_SCALAR_TRANSFER.md": "9fa457f230397c670c7b4152c0510df93da24df03fc08112f1c5bf5c73bc0349",
+    "verify_sfc_prime_power_scalar_transfer.py": "cc64f7e35237b6b2fe674c5da8b7b54bdf3ceab17c6494e391ebeeb1c8bca18c",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "LOWER_TWO_FOURTH_POWER_GAP_SFC.tex": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+    "DIAGONAL_PRIME_GAP_SFC.tex": "db034b5fb29ece9c3a0cb8cbce4c82f692b933e3679b27ee823db5ca5e7f98eb"
+  },
+  "imported_checker_sha256": "cc64f7e35237b6b2fe674c5da8b7b54bdf3ceab17c6494e391ebeeb1c8bca18c",
+  "own_note_sha256": "c32d3c76f705aa5fbb5e046b23b1ca4c18fdc91568b5f3e5e36b3fd4774dbdf2",
+  "own_checker_sha256": "72202205a5e39e8f8c5eb3de85751ca168d70f24074571c07f875d5cce930f65",
+  "finite_cases": [
+    {
+      "p": 2,
+      "s": 1,
+      "q": 2,
+      "n": 1,
+      "gamma": "1/3",
+      "h": 2,
+      "checked_outer_degree": 4,
+      "actual_complete_leaves": 2,
+      "kappa": "9/52",
+      "kappa_valuation": -2,
+      "D": null,
+      "e": null,
+      "denominator_depth_bound": 1,
+      "T0": "1",
+      "Tj": [
+        "0"
+      ],
+      "upper_response_valuations": [
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mixed_auxiliary_valuations": [
+        0,
+        -1,
+        2,
+        4,
+        4
+      ],
+      "translation_control": "prime translation identity checked coefficientwise",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 3,
+      "s": 1,
+      "q": 3,
+      "n": 2,
+      "gamma": "1/2",
+      "h": 3,
+      "checked_outer_degree": 5,
+      "actual_complete_leaves": 3,
+      "kappa": "24/3059",
+      "kappa_valuation": 1,
+      "D": 0,
+      "e": 3,
+      "denominator_depth_bound": 1,
+      "T0": "-18",
+      "Tj": [
+        "1",
+        "1"
+      ],
+      "upper_response_valuations": [
+        2,
+        1,
+        3,
+        3,
+        5,
+        6
+      ],
+      "mixed_auxiliary_valuations": [
+        0,
+        2,
+        2,
+        4,
+        4,
+        7
+      ],
+      "translation_control": "prime translation identity checked coefficientwise",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 5,
+      "s": 1,
+      "q": 5,
+      "n": 1,
+      "gamma": "11",
+      "h": 5,
+      "checked_outer_degree": 7,
+      "actual_complete_leaves": 5,
+      "kappa": "1/637560",
+      "kappa_valuation": -1,
+      "D": 0,
+      "e": 1,
+      "denominator_depth_bound": 1,
+      "T0": "-32400",
+      "Tj": [
+        "1146",
+        "1184",
+        "1224",
+        "1266"
+      ],
+      "upper_response_valuations": [
+        2,
+        2,
+        3,
+        3,
+        6,
+        6,
+        7,
+        7
+      ],
+      "mixed_auxiliary_valuations": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        6,
+        6,
+        7
+      ],
+      "translation_control": "prime translation identity checked coefficientwise",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 5,
+      "s": 1,
+      "q": 5,
+      "n": 1,
+      "gamma": "3111",
+      "h": 5,
+      "checked_outer_degree": 7,
+      "actual_complete_leaves": 5,
+      "kappa": "1/29707061718757500",
+      "kappa_valuation": -4,
+      "D": 0,
+      "e": -2,
+      "denominator_depth_bound": 4,
+      "T0": "-121485374400",
+      "Tj": [
+        "29193846",
+        "29200084",
+        "29206324",
+        "29212566"
+      ],
+      "upper_response_valuations": [
+        2,
+        2,
+        3,
+        3,
+        6,
+        6,
+        7,
+        7
+      ],
+      "mixed_auxiliary_valuations": [
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        3,
+        3,
+        4
+      ],
+      "translation_control": "prime translation identity checked coefficientwise",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 5,
+      "s": 1,
+      "q": 5,
+      "n": 2,
+      "gamma": "1/2",
+      "h": 4,
+      "checked_outer_degree": 6,
+      "actual_complete_leaves": 5,
+      "kappa": "16/88319",
+      "kappa_valuation": 0,
+      "D": 0,
+      "e": 2,
+      "denominator_depth_bound": 1,
+      "T0": "-2481/4",
+      "Tj": [
+        "26",
+        "27",
+        "29",
+        "30"
+      ],
+      "upper_response_valuations": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "mixed_auxiliary_valuations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        6
+      ],
+      "translation_control": "prime translation identity checked coefficientwise",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 7,
+      "s": 1,
+      "q": 7,
+      "n": 1,
+      "gamma": "29",
+      "h": 7,
+      "checked_outer_degree": 8,
+      "actual_complete_leaves": 7,
+      "kappa": "1/30924210240",
+      "kappa_valuation": -1,
+      "D": 0,
+      "e": 1,
+      "denominator_depth_bound": 1,
+      "T0": "-799727040",
+      "Tj": [
+        "15015960",
+        "15293448",
+        "15580800",
+        "15878496",
+        "16187040",
+        "16506960"
+      ],
+      "upper_response_valuations": [
+        2,
+        2,
+        4,
+        4,
+        5,
+        5,
+        8,
+        8,
+        10
+      ],
+      "mixed_auxiliary_valuations": [
+        0,
+        2,
+        2,
+        4,
+        4,
+        5,
+        5,
+        8,
+        8
+      ],
+      "translation_control": "prime translation identity checked coefficientwise",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 2,
+      "s": 3,
+      "q": 8,
+      "n": 2,
+      "gamma": "5/3",
+      "h": 7,
+      "checked_outer_degree": 5,
+      "actual_complete_leaves": 8,
+      "kappa": "6561/4275320803600",
+      "kappa_valuation": -4,
+      "D": 0,
+      "e": 2,
+      "denominator_depth_bound": 1,
+      "T0": "5092924190/81",
+      "Tj": [
+        "-147516305/81",
+        "-151808942/81",
+        "-156348305/81",
+        "-161154482/81",
+        "-166249505/81",
+        "-171657350/81",
+        "-183517130/81"
+      ],
+      "upper_response_valuations": [
+        1,
+        3,
+        4,
+        6,
+        6,
+        8
+      ],
+      "mixed_auxiliary_valuations": [
+        4,
+        4,
+        7,
+        7,
+        8,
+        9
+      ],
+      "translation_control": "proper-power naive translation refuted at the w coefficient",
+      "exact_moment_gcd_degree": 0
+    },
+    {
+      "p": 3,
+      "s": 2,
+      "q": 9,
+      "n": 1,
+      "gamma": "1/2",
+      "h": 8,
+      "checked_outer_degree": 5,
+      "actual_complete_leaves": 9,
+      "kappa": "512/1494007445385",
+      "kappa_valuation": -2,
+      "D": 0,
+      "e": 2,
+      "denominator_depth_bound": 1,
+      "T0": "-16221952089/64",
+      "Tj": [
+        "37800585/4",
+        "157016657/16",
+        "81644859/8",
+        "170077131/16",
+        "185461605/16",
+        "97109901/8",
+        "203818463/16",
+        "53593659/4"
+      ],
+      "upper_response_valuations": [
+        2,
+        2,
+        4,
+        4,
+        6,
+        7
+      ],
+      "mixed_auxiliary_valuations": [
+        2,
+        4,
+        6,
+        6,
+        6,
+        8
+      ],
+      "translation_control": "proper-power naive translation refuted at the w coefficient",
+      "exact_moment_gcd_degree": 0
+    }
+  ],
+  "independent_algebra": "actual scalar-leaf reconstruction versus formal polynomial translation; direct rational Euclidean moment gcds",
+  "universal_claims": "proved in companion note from the pinned complete scalar transfer; finite cases are controls only"
+}

@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 53.2 (0BXX): Curves and function fields&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/0BRV" data-tag="0BRV">53</a>: Algebraic Curves
+    
+  
+    <li class="active">Section <a href="/tag/0BXX" data-tag="0BXX">53.2</a>: Curves and function fields
+    <span id="citation">(<a href="/tag/0BXX/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0BRW">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0CCM">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="curves-section-curves-function-fields" class="tex-section"><span data-tag="0BXX">53.2</span> Curves and function fields</h2>
+
+<p>
+In this section we elaborate on the results of Varieties, Section <a href="/tag/0BXM" data-tag="0BXM">33.4</a> in the case of curves. 
+</p>
+<p>
+<article class="env-lemma" id="0BXY">
+  <p><a class="environment-identifier" href="/tag/0BXY">Lemma <span data-tag="0BXY">53.2.1</span>.</a> Let $k$ be a field. Let $X$ be a curve and $Y$ a proper variety. Let $U \subset X$ be a nonempty open and let $f : U \to Y$ be a morphism. If $x \in X$ is a closed point such that $\mathcal{O}_{X, x}$ is a discrete valuation ring, then there exist an open $U \subset U' \subset X$ containing $x$ and a morphism of varieties $f' : U' \to Y$ extending $f$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is a special case of Morphisms, Lemma <a href="/tag/0BX7" data-tag="0BX7">29.43.5</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BXZ">
+  <p><a class="environment-identifier" href="/tag/0BXZ">Lemma <span data-tag="0BXZ">53.2.2</span>.</a> Let $k$ be a field. Let $X$ be a normal curve and $Y$ a proper variety. The set of rational maps from $X$ to $Y$ is the same as the set of morphisms $X \to Y$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      A rational map from $X$ to $Y$ can be extended to a morphism $X \to Y$ by Lemma <a href="/tag/0BXY" data-tag="0BXY">53.2.1</a> as every local ring is a discrete valuation ring (for example by Varieties, Lemma <a href="/tag/0B8Y" data-tag="0B8Y">33.43.8</a>). Conversely, if two morphisms $f,g: X \to Y$ are equivalent as rational maps, then $f = g$ by Morphisms, Lemma <a href="/tag/01RH" data-tag="01RH">29.7.10</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0CCK">
+  <p><a class="environment-identifier" href="/tag/0CCK">Lemma <span data-tag="0CCK">53.2.3</span>.</a> Let $k$ be a field. Let $f : X \to Y$ be a nonconstant morphism of curves over $k$. If $Y$ is normal, then $f$ is flat. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Pick $x \in X$ mapping to $y \in Y$. Then $\mathcal{O}_{Y, y}$ is either a field or a discrete valuation ring (Varieties, Lemma <a href="/tag/0B8Y" data-tag="0B8Y">33.43.8</a>). Since $f$ is nonconstant it is dominant (as it must map the generic point of $X$ to the generic point of $Y$). This implies that $\mathcal{O}_{Y, y} \to \mathcal{O}_{X, x}$ is injective (Morphisms, Lemma <a href="/tag/0CC1" data-tag="0CC1">29.8.8</a>). Hence $\mathcal{O}_{X, x}$ is torsion free as a $\mathcal{O}_{Y, y}$-module and therefore $\mathcal{O}_{X, x}$ is flat as a $\mathcal{O}_{Y, y}$-module by More on Algebra, Lemma <a href="/tag/0539" data-tag="0539">15.22.10</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0CCL">
+  <p><a class="environment-identifier" href="/tag/0CCL">Lemma <span data-tag="0CCL">53.2.4</span>.</a> Let $k$ be a field. Let $f : X \to Y$ be a morphism of schemes over $k$. Assume </p>
+  <p><ol>
+  <li><p>
+$Y$ is separated over $k$, 
+</p>
+</li><li><p>
+$X$ is proper of dimension $\leq 1$ over $k$, 
+</p>
+</li><li><p>
+$f(Z)$ has at least two points for every irreducible component $Z \subset X$ of dimension $1$. 
+</p>
+</li>
+</ol></p>
+  <p> Then $f$ is finite. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The morphism $f$ is proper by Morphisms, Lemma <a href="/tag/01W6" data-tag="01W6">29.42.7</a>. Thus $f(X)$ is closed and images of closed points are closed. Let $y \in Y$ be the image of a closed point in $X$. Then $f^{-1}(\{ y\} )$ is a closed subset of $X$ not containing any of the generic points of irreducible components of dimension $1$ by condition (3). It follows that $f^{-1}(\{ y\} )$ is finite. Hence $f$ is finite over an open neighbourhood of $y$ by More on Morphisms, Lemma <a href="/tag/02UP" data-tag="02UP">37.44.2</a> (if $Y$ is Noetherian, then you can use the easier Cohomology of Schemes, Lemma <a href="/tag/02OH" data-tag="02OH">30.21.2</a>). Since we've seen above that there are enough of these points $y$, the proof is complete. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BY0">
+  <p><a class="environment-identifier" href="/tag/0BY0">Lemma <span data-tag="0BY0">53.2.5</span>.</a> Let $k$ be a field. Let $X \to Y$ be a morphism of varieties with $Y$ proper and $X$ a curve. There exists a factorization $X \to \overline{X} \to Y$ where $X \to \overline{X}$ is an open immersion and $\overline{X}$ is a projective curve. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This is clear from Lemma <a href="/tag/0BXY" data-tag="0BXY">53.2.1</a> and Varieties, Lemma <a href="/tag/0BXW" data-tag="0BXW">33.43.6</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Here is the main theorem of this section. We will say a morphism $f : X \to Y$ of varieties is <em>constant</em> if the image $f(X)$ consists of a single point $y$ of $Y$. If this happens then $y$ is a closed point of $Y$ (since the image of a closed point of $X$ will be a closed point of $Y$). 
+</p>
+<p>
+<article class="env-theorem" id="0BY1">
+  <p><a class="environment-identifier" href="/tag/0BY1">Theorem <span data-tag="0BY1">53.2.6</span>.</a> Let $k$ be a field. The following categories are canonically equivalent </p>
+  <p><ol>
+  <li><p>
+The category of finitely generated field extensions $K/k$ of transcendence degree $1$. 
+</p>
+</li><li><p>
+The category of curves and dominant rational maps. 
+</p>
+</li><li><p>
+The category of normal projective curves and nonconstant morphisms. 
+</p>
+</li><li><p>
+The category of nonsingular projective curves and nonconstant morphisms. 
+</p>
+</li><li><p>
+The category of regular projective curves and nonconstant morphisms. 
+</p>
+</li><li><p>
+The category of normal proper curves and nonconstant morphisms. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      The equivalence between categories (1) and (2) is the restriction of the equivalence of Varieties, Theorem <a href="/tag/0BXN" data-tag="0BXN">33.4.1</a>. Namely, a variety is a curve if and only if its function field has transcendence degree $1$, see for example Varieties, Lemma <a href="/tag/0A21" data-tag="0A21">33.20.3</a>. 
+    <p>
+      The categories in (3), (4), (5), and (6) are the same. First of all, the terms “regular” and “nonsingular” are synonyms, see Properties, Definition <a href="/tag/02IS" data-tag="02IS">28.9.1</a>. Being normal and regular are the same thing for Noetherian $1$-dimensional schemes (Properties, Lemmas <a href="/tag/0569" data-tag="0569">28.9.4</a> and <a href="/tag/0BX2" data-tag="0BX2">28.12.6</a>). See Varieties, Lemma <a href="/tag/0B8Y" data-tag="0B8Y">33.43.8</a> for the case of curves. Thus (3) is the same as (5). Finally, (6) is the same as (3) by Varieties, Lemma <a href="/tag/0A26" data-tag="0A26">33.43.4</a>. 
+    <p>
+      If $f : X \to Y$ is a nonconstant morphism of nonsingular projective curves, then $f$ sends the generic point $\eta $ of $X$ to the generic point $\xi $ of $Y$. Hence we obtain a morphism $k(Y) = \mathcal{O}_{Y, \xi } \to \mathcal{O}_{X, \eta } = k(X)$ in the category (1). If two morphisms $f,g: X \to Y$ gives the same morphism $k(Y) \to k(X)$, then by the equivalence between (1) and (2), $f$ and $g$ are equivalent as rational maps, so $f=g$ by Lemma <a href="/tag/0BXZ" data-tag="0BXZ">53.2.2</a>. Conversely, suppose that we have a map $k(Y) \to k(X)$ in the category (1). Then we obtain a morphism $U \to Y$ for some nonempty open $U \subset X$. By Lemma <a href="/tag/0BXY" data-tag="0BXY">53.2.1</a> this extends to all of $X$ and we obtain a morphism in the category (5). Thus we see that there is a fully faithful functor (5)$\to $(1). 
+    <p>
+      To finish the proof we have to show that every $K/k$ in (1) is the function field of a normal projective curve. We already know that $K = k(X)$ for some curve $X$. After replacing $X$ by its normalization (which is a variety birational to $X$) we may assume $X$ is normal (Varieties, Lemma <a href="/tag/0BXR" data-tag="0BXR">33.27.1</a>). Then we choose $X \to \overline{X}$ with $\overline{X} \setminus X = \{ x_1, \ldots , x_ n\} $ as in Varieties, Lemma <a href="/tag/0BXW" data-tag="0BXW">33.43.6</a>. Since $X$ is normal and since each of the local rings $\mathcal{O}_{\overline{X}, x_ i}$ is normal we conclude that $\overline{X}$ is a normal projective curve as desired. (Remark: We can also first compactify using Varieties, Lemma <a href="/tag/0BXV" data-tag="0BXV">33.43.5</a> and then normalize using Varieties, Lemma <a href="/tag/0BXR" data-tag="0BXR">33.27.1</a>. Doing it this way we avoid using the somewhat tricky Morphisms, Lemma <a href="/tag/0BXB" data-tag="0BXB">29.54.16</a>.) 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-definition" id="0BY2">
+  <p><a class="environment-identifier" href="/tag/0BY2">Definition <span data-tag="0BY2">53.2.7</span>.</a> Let $k$ be a field. Let $X$ be a curve. A <em>nonsingular projective model of $X$</em> is a pair $(Y, \varphi )$ where $Y$ is a nonsingular projective curve and $\varphi : k(X) \to k(Y)$ is an isomorphism of function fields. </p>
+</article> 
+</p>
+<p>
+A nonsingular projective model is determined up to unique isomorphism by Theorem <a href="/tag/0BY1" data-tag="0BY1">53.2.6</a>. Thus we often say “the nonsingular projective model”. We usually drop $\varphi $ from the notation. Warning: it needn't be the case that $Y$ is smooth over $k$ but Lemma <a href="/tag/0BY3" data-tag="0BY3">53.2.8</a> shows this can only happen in positive characteristic. 
+</p>
+<p>
+<article class="env-lemma" id="0BY3">
+  <p><a class="environment-identifier" href="/tag/0BY3">Lemma <span data-tag="0BY3">53.2.8</span>.</a> Let $k$ be a field. Let $X$ be a curve and let $Y$ be the nonsingular projective model of $X$. If $k$ is perfect, then $Y$ is a smooth projective curve. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      See Varieties, Lemma <a href="/tag/0B8Y" data-tag="0B8Y">33.43.8</a> for example. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0BY4">
+  <p><a class="environment-identifier" href="/tag/0BY4">Lemma <span data-tag="0BY4">53.2.9</span>.</a> Let $k$ be a field. Let $X$ be a geometrically irreducible curve over $k$. For a field extension $K/k$ denote $Y_ K$ a nonsingular projective model of $(X_ K)_{red}$. </p>
+  <p><ol>
+  <li><p>
+If $X$ is proper, then $Y_ K$ is the normalization of $X_ K$. 
+</p>
+</li><li><p>
+There exists $K/k$ finite purely inseparable such that $Y_ K$ is smooth. 
+</p>
+</li><li><p>
+Whenever $Y_ K$ is smooth<a class="footnotemark footnote-offset" href="#footnote-1" id="footnote-1-mark"></a><a href="#footnote-1"><sup>1</sup></a> we have $H^0(Y_ K, \mathcal{O}_{Y_ K}) = K$. 
+</p>
+</li><li><p>
+Given a commutative diagram 
+</p>
+<div class="equation">
+  \[  \xymatrix{ \Omega &  K' \ar[l] \\  K \ar[u] &  k \ar[l] \ar[u] }  \]
+</div>
+<p>
+ of fields such that $Y_ K$ and $Y_{K'}$ are smooth, then $Y_\Omega = (Y_ K)_\Omega = (Y_{K'})_\Omega $. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $X'$ be a nonsingular projective model of $X$. Then $X'$ and $X$ have isomorphic nonempty open subschemes. In particular $X'$ is geometrically irreducible as $X$ is (some details omitted). Thus we may assume that $X$ is projective. 
+    <p>
+      Assume $X$ is proper. Then $X_ K$ is proper and hence the normalization $(X_ K)^\nu $ is proper as a scheme finite over a proper scheme (Varieties, Lemma <a href="/tag/0BXR" data-tag="0BXR">33.27.1</a> and Morphisms, Lemmas <a href="/tag/01WN" data-tag="01WN">29.45.11</a> and <a href="/tag/01W3" data-tag="01W3">29.42.4</a>). On the other hand, $X_ K$ is irreducible as $X$ is geometrically irreducible. Hence $X_ K^\nu $ is proper, normal, irreducible, and birational to $(X_ K)_{red}$. This proves (1) because a proper curve is projective (Varieties, Lemma <a href="/tag/0A26" data-tag="0A26">33.43.4</a>). 
+    <p>
+      Proof of (2). As $X$ is proper and we have (1), we can apply Varieties, Lemma <a href="/tag/0BXT" data-tag="0BXT">33.27.4</a> to find $K/k$ finite purely inseparable such that $Y_ K$ is geometrically normal. Then $Y_ K$ is geometrically regular as normal and regular are the same for curves (Properties, Lemma <a href="/tag/0BX2" data-tag="0BX2">28.12.6</a>). Then $Y$ is a smooth variety by Varieties, Lemma <a href="/tag/038X" data-tag="038X">33.12.6</a>. 
+    <p>
+      If $Y_ K$ is geometrically reduced, then $Y_ K$ is geometrically integral (Varieties, Lemma <a href="/tag/038K" data-tag="038K">33.9.2</a>) and we see that $H^0(Y_ K, \mathcal{O}_{Y_ K}) = K$ by Varieties, Lemma <a href="/tag/04L2" data-tag="04L2">33.26.2</a>. This proves (3) because a smooth variety is geometrically reduced (even geometrically regular, see Varieties, Lemma <a href="/tag/038X" data-tag="038X">33.12.6</a>). 
+    <p>
+      If $Y_ K$ is smooth, then for every extension $\Omega /K$ the base change $(Y_ K)_\Omega $ is smooth over $\Omega $ (Morphisms, Lemma <a href="/tag/01VB" data-tag="01VB">29.35.5</a>). Hence it is clear that $Y_\Omega = (Y_ K)_\Omega $. This proves (4). 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+    <section id="footnotes">
+    
+      <div><a id="footnote-1" class="footnote-offset"></a><a href="#footnote-1-mark">[1]</a> Or even geometrically reduced.</div>
+    
+    </section>
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (8)</h2>
+
+  
+    <a id="comment-2057" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-2057">Comment #2057</a>
+        by
+        <cite>David Hansen</cite>
+        on <time datetime="2016-06-07 20:08:13">June 07, 2016 at 20:08 </time>
+      </header>
+
+      <blockquote><p>In Lemma 46.2.5, you should probably say that X is a curve!</p></blockquote>
+    </article>
+  
+    <a id="comment-2087" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-2087">Comment #2087</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2016-06-16 13:44:32">June 16, 2016 at 13:44 </time>
+      </header>
+
+      <blockquote><p>Thanks, fixed <a href="https://github.com/stacks/stacks-project/commit/85d1a249d162dc81d26684d7710e6149e84d2071">here</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-4169" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-4169">Comment #4169</a>
+        by
+        <cite>Che Shen</cite>
+        on <time datetime="2019-04-14 18:40:24.347086">April 14, 2019 at 18:40 </time>
+      </header>
+
+      <blockquote><p>In the third paragraph of theorem <a href="https://stacks.math.columbia.edu/tag/0BY1">0BY1</a>, we conclude that "there is a fully faithful functor (5)→(1)". We only proved it's full, but did not prove it's faithful.</p>
+<p>To prove faithfulness, we can add the following before "Conversely, suppose ...":</p>
+<p>Suppose <script type="math/tex">f,g: X \to Y</script> gives the same field homomorphism <script type="math/tex">K(X)\to K(Y)</script>. By <a href="https://stacks.math.columbia.edu/tag/01RK">01RK</a>, <script type="math/tex">f,g</script> are dominant morphisms. So by <a href="https://stacks.math.columbia.edu/tag/0BXN">0BXN</a>, <script type="math/tex">f</script> and <script type="math/tex">g</script> are equal as ratinal maps. So they agree on an open subset <script type="math/tex">U \subset X</script>. Since <script type="math/tex">Y</script> is separated, <script type="math/tex">f = g</script> as morphisms.</p>
+<p>(For the last sentence above, I think there should be a lemma in stacks project saying "If <script type="math/tex">f,g: X \to Y</script> agree on an open subset <script type="math/tex">U \subset X</script> and <script type="math/tex">Y</script> is separated, then <script type="math/tex">f=g</script>", but I did not find it.)</p></blockquote>
+    </article>
+  
+    <a id="comment-4175" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-4175">Comment #4175</a>
+        by
+        <cite><a href="http://math.columbia.edu/~dejong" rel="author">Johan</a></cite>
+        
+        on <time datetime="2019-04-17 08:46:04.651371">April 17, 2019 at 08:46 </time>
+      </header>
+
+      <blockquote><p>OK, thanks and thanks for sending the edits by email. The corresponding <a href="https://github.com/stacks/stacks-project/commit/82f171d88e4f45ecfd66bc8ba92c80ef062a266a">changes are here</a>.</p></blockquote>
+    </article>
+  
+    <a id="comment-5048" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-5048">Comment #5048</a>
+        by
+        <cite>Raphael Rouquier</cite>
+        on <time datetime="2020-04-21 19:17:02.699227">April 21, 2020 at 19:17 </time>
+      </header>
+
+      <blockquote><p>Maybe an irreducibility assumption is needed for the curves in Theorem 0BY1?</p></blockquote>
+    </article>
+  
+    <a id="comment-5049" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-5049">Comment #5049</a>
+        by
+        <cite>Raphael Rouquier</cite>
+        on <time datetime="2020-04-21 19:22:42.945484">April 21, 2020 at 19:22 </time>
+      </header>
+
+      <blockquote><p>Apologies, by definition a curve has the required irreducibility property.</p></blockquote>
+    </article>
+  
+    <a id="comment-8811" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-8811">Comment #8811</a>
+        by
+        <cite>Thomas Manopulo</cite>
+        on <time datetime="2024-02-16 08:58:55.579735">February 16, 2024 at 08:58 </time>
+      </header>
+
+      <blockquote><p>I think in Lemma 0BXY it should be mentioned that the point x lies in U, no?</p></blockquote>
+    </article>
+  
+    <a id="comment-9277" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0BXX#comment-9277">Comment #9277</a>
+        by
+        <cite><a href="https://stacks.math.columbia.edu/" rel="author">Stacks project</a></cite>
+        
+        on <time datetime="2024-05-22 09:30:30.912849">May 22, 2024 at 09:30 </time>
+      </header>
+
+      <blockquote><p>No.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0BXX",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0BXX</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0BXX"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0BXX</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0BRW">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0CCM">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/curves.pdf#nameddest=0BXX">View Section <span data-tag="0BXX">53.2</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "schema": "odd_start_fixed_coordinate_fibres_verification_v1",
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction; Python standard library only",
+  "python": "3.12.14",
+  "counts": {
+    "polynomial_pairs": 70,
+    "raw_even_moments": 210,
+    "rational_return_identities": 49,
+    "nonrational_return_series_controls": 21,
+    "marker_controls": 36,
+    "finite_empty_fibre_candidates": 3,
+    "jet_exponent_cases": 48,
+    "higher_height_rejections": 3,
+    "negative_controls": 6
+  },
+  "samples": [
+    {
+      "control": "corrupted_coefficient_raw_moments",
+      "orders": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        "2/15",
+        "-136/15015",
+        "368/969969"
+      ]
+    }
+  ],
+  "source_pins_checked": 4,
+  "packet_pins": {
+    "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+    "research/foundations/extended-geometry/verify_odd_start_fixed_coordinate_fibres.py": "fca4424236bce1fc6bc276fde1482d8cb22750c287330b33708d974073328c3d",
+    "research/foundations/extended-geometry/odd_start_fixed_coordinate_fibres_source_ledger.json": "56be1fa80ffca6bd0643187019d32d6d2afdd61c8db1f0894e6473e9dc22fe27"
+  },
+  "scope": "Bounded exact controls for the displayed fibres and failure cases. The written proof supplies the universal classification, Dickson finiteness and arithmetic-progression conclusions. No enumeration of all endpoint coordinates or all fibre bases.",
+  "assurance": "Internal author replay; not external or proof-assistant verification."
+}

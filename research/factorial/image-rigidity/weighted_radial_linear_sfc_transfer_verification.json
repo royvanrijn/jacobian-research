@@ -1,0 +1,3407 @@
+{
+  "status": "PASS",
+  "inspected_base": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "assurance": "Exact finite controls support the written all-order proof; no formal verification or external review is claimed.",
+  "scope": "Integer-Gamma matched exponent family, and its ordinary disjoint-block-sum lift. Excludes ordinary unmarked unequal-exponent transfer and full SFC.",
+  "source_sha256": {
+    "WEIGHTED_RADIAL_LINEAR_SFC_TRANSFER.md": "f9ee0dd06d5e6bc85a5b8d35aacb6d55f5c8ec18e483a59c00d3275177495645",
+    "POWER_DIAGONAL_LINEAR_SFC_TRANSFER.md": "40278040a10d4813c473e8256b868e4fb6d42f20912972b801136398436609d6",
+    "RIGIDITY_CRITICAL_VALUES.tex": "8a2b6faa7996398d8c0474b34550a56cab6a771436a49fb2d3dff7a393e9c4dd",
+    "sources/rigidity.typ": "8a6e152c797c227529e88572db140fcfb5b6c3ad61650c2a94fc6304cb334af6",
+    "UNRESTRICTED_SFC_MECHANISMS.tex": "f8b3dfc5947601fb002aee0ba942b0fc20b7ef46ca8e0d4f69b5a3e5e1361785"
+  },
+  "checker_sha256": "33d1d5c9ecee2b8ff2ac941cd464b75c6e85acdc0f7866a1faf3bce0d23a7dc1",
+  "weighted_family": {
+    "parameter_cases": 52,
+    "moment_identities": 260,
+    "independent_lagrange_identities": 260,
+    "marked_identities": 260,
+    "structural_zero_coefficients": 351,
+    "inactive_variable_identities": 240,
+    "finite_window_controls": 164,
+    "cases": [
+      {
+        "q": 1,
+        "shapes": [
+          1
+        ],
+        "coefficients": [
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          4,
+          96,
+          5760,
+          645120
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          2,
+          8,
+          40,
+          224
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              1
+            ]
+          ],
+          "degree_a": 2,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 1,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1,
+            -4
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2
+        ],
+        "coefficients": [
+          -3
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -72,
+          45360,
+          -97977600,
+          504388684800
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -6,
+          63,
+          -810,
+          11583
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ]
+          ],
+          "degree_a": 3,
+          "degree_common_zero_fiber_factor": 1,
+          "degree_residual": 1,
+          "common_factor": [
+            1,
+            3
+          ],
+          "residual": [
+            1,
+            9
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          4
+        ],
+        "coefficients": [
+          1
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          6720,
+          1037836800,
+          1067062284288000,
+          4308669456480829440000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          4,
+          26,
+          204,
+          1771
+        ],
+        "derivative": {
+          "groups": [
+            [
+              1,
+              4
+            ]
+          ],
+          "degree_a": 5,
+          "degree_common_zero_fiber_factor": 3,
+          "degree_residual": 1,
+          "common_factor": [
+            1,
+            -3,
+            3,
+            -1
+          ],
+          "residual": [
+            1,
+            -5
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          5,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -12,
+          33120,
+          -47174400,
+          1576002355200
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -1,
+          23,
+          -65,
+          1508
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "degree_a": 4,
+          "degree_common_zero_fiber_factor": 1,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            3
+          ],
+          "residual": [
+            1,
+            -1,
+            -60
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          1
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          12,
+          14400,
+          23950080,
+          315618508800
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          1,
+          10,
+          33,
+          302
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "degree_a": 4,
+          "degree_common_zero_fiber_factor": 1,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            -2
+          ],
+          "residual": [
+            1,
+            0,
+            -24
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          2
+        ],
+        "coefficients": [
+          1,
+          -1
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          172800,
+          0,
+          173820100608000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          11
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "degree_a": 5,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            -5
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          7200,
+          2322432000,
+          7435637637120000,
+          124364527470850867200000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          10,
+          160,
+          3080,
+          65520
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              5
+            ]
+          ],
+          "degree_a": 6,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 1,
+          "common_factor": [
+            1,
+            -8,
+            24,
+            -32,
+            16
+          ],
+          "residual": [
+            1,
+            -12
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          1,
+          3
+        ],
+        "coefficients": [
+          0,
+          -2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -720,
+          14515200,
+          -2092278988800,
+          1229255751499776000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -6,
+          60,
+          -728,
+          9792
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              3
+            ]
+          ],
+          "degree_a": 4,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 1,
+          "common_factor": [
+            1,
+            4,
+            4
+          ],
+          "residual": [
+            1,
+            8
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          3,
+          2
+        ],
+        "coefficients": [
+          2,
+          0
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          4320,
+          870912000,
+          1757514350592000,
+          18586346962676613120000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          6,
+          60,
+          728,
+          9792
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 4,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 1,
+          "common_factor": [
+            1,
+            -4,
+            4
+          ],
+          "residual": [
+            1,
+            -8
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "h": 3,
+        "weighted_moments_through_four": [
+          1,
+          4320,
+          2090188800,
+          14919558635520000,
+          746597157772811304960000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          6,
+          72,
+          1030,
+          16389
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "degree_a": 7,
+          "degree_common_zero_fiber_factor": 3,
+          "degree_residual": 3,
+          "common_factor": [
+            1,
+            -4,
+            -3,
+            18
+          ],
+          "residual": [
+            1,
+            -8,
+            -29,
+            42
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          1,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -72,
+          1209600,
+          -106077081600,
+          68263894056960000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -1,
+          7,
+          -29,
+          180
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "degree_a": 6,
+          "degree_common_zero_fiber_factor": 3,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            -3,
+            2
+          ],
+          "residual": [
+            1,
+            2,
+            -12
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          3,
+          1
+        ],
+        "coefficients": [
+          0,
+          2,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          2880,
+          928972800,
+          4403442548736000,
+          146504146646980362240000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          4,
+          32,
+          304,
+          3216
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 5,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            -4,
+            4
+          ],
+          "residual": [
+            1,
+            -4,
+            -20
+          ]
+        }
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          0,
+          0
+        ],
+        "h": 0,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "derivative": {
+          "groups": [],
+          "degree_a": 1,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 0,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          1
+        ],
+        "coefficients": [
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          12,
+          2880,
+          2903040,
+          7664025600
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          12,
+          0,
+          96,
+          0,
+          880
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              1
+            ]
+          ],
+          "degree_a": 3,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 2,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1,
+            0,
+            -6
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2
+        ],
+        "coefficients": [
+          -3
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -2160,
+          359251200,
+          -564915326976000,
+          4138366315908464640000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -6,
+          0,
+          99,
+          0,
+          -2160,
+          0,
+          53865
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ]
+          ],
+          "degree_a": 5,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            3
+          ],
+          "residual": [
+            1,
+            0,
+            15
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          4
+        ],
+        "coefficients": [
+          1
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          79833600,
+          8515157028618240000,
+          44208809968698509772718080000000,
+          3399647013532907226440046956650482892800000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          4,
+          0,
+          42,
+          0,
+          580,
+          0,
+          9139
+        ],
+        "derivative": {
+          "groups": [
+            [
+              1,
+              4
+            ]
+          ],
+          "degree_a": 9,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            -3,
+            0,
+            3,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            -9
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          5,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -720,
+          2090188800,
+          -25421189713920000,
+          9184753124056026316800000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          24,
+          0,
+          -135,
+          0,
+          2965
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "degree_a": 7,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            3
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -105
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2,
+          1
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          720,
+          958003200,
+          12051526975488000,
+          2152918523176707686400000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          11,
+          0,
+          64,
+          0,
+          695
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "degree_a": 7,
+          "degree_common_zero_fiber_factor": 2,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            -2
+          ],
+          "residual": [
+            1,
+            0,
+            -1,
+            0,
+            -42
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2,
+          2
+        ],
+        "coefficients": [
+          1,
+          -1
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          2633637888000,
+          0,
+          519211594858765586440126464000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          19
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "degree_a": 9,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -9
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          72576000,
+          41125835803852800000,
+          2825121913202106867394805760000000,
+          5359039643183992030307115705524331479040000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          10,
+          0,
+          260,
+          0,
+          8880,
+          0,
+          345920
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              5
+            ]
+          ],
+          "degree_a": 11,
+          "degree_common_zero_fiber_factor": 8,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            -8,
+            0,
+            24,
+            0,
+            -32,
+            0,
+            16
+          ],
+          "residual": [
+            1,
+            0,
+            -22
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          1,
+          3
+        ],
+        "coefficients": [
+          0,
+          -2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -725760,
+          1004293914624000,
+          -74453808207988732723200000,
+          85559962461020347873727663308800000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -6,
+          0,
+          96,
+          0,
+          -2024,
+          0,
+          48720
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              3
+            ]
+          ],
+          "degree_a": 7,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            4,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            14
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          3,
+          2
+        ],
+        "coefficients": [
+          2,
+          0
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          43545600,
+          15184923989114880000,
+          643924183819939673379176448000000,
+          754776860013656601863328738359000432640000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          6,
+          0,
+          96,
+          0,
+          2024,
+          0,
+          48720
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 7,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 2,
+          "common_factor": [
+            1,
+            0,
+            -4,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            -14
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "h": 3,
+        "weighted_moments_through_four": [
+          1,
+          87091200,
+          409992947706101760000,
+          582280532704845053263588884480000000,
+          42678727415530830887430567764175479635968000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          6,
+          0,
+          108,
+          0,
+          2542,
+          0,
+          68325
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 6,
+          "common_factor": [
+            1,
+            0,
+            -4,
+            0,
+            -3,
+            0,
+            18
+          ],
+          "residual": [
+            1,
+            0,
+            -14,
+            0,
+            -53,
+            0,
+            78
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2,
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          1,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -86400,
+          252829237248000,
+          -59801571352412002713600000,
+          481496064608224854241115677655040000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          8,
+          0,
+          -51,
+          0,
+          437
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "degree_a": 11,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            2
+          ],
+          "residual": [
+            1,
+            0,
+            3,
+            0,
+            -22
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2,
+          3,
+          1
+        ],
+        "coefficients": [
+          0,
+          2,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          58060800,
+          182219087869378560000,
+          172256082059025759266018426880000000,
+          8405195113112079918350028830365828817879040000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          4,
+          0,
+          48,
+          0,
+          752,
+          0,
+          13456
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 9,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            -4,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            -8,
+            0,
+            -36
+          ]
+        }
+      },
+      {
+        "q": 2,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          0,
+          0
+        ],
+        "h": 0,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "derivative": {
+          "groups": [],
+          "degree_a": 1,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 0,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          1
+        ],
+        "coefficients": [
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          48,
+          161280,
+          3832012800,
+          334764638208000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          16,
+          0,
+          0,
+          176,
+          0,
+          0,
+          2240
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              1
+            ]
+          ],
+          "degree_a": 4,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 3,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -8
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2
+        ],
+        "coefficients": [
+          -3
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -120960,
+          11769069312000,
+          -30348019649995407360000,
+          716182721492915858318032896000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -6,
+          0,
+          0,
+          135,
+          0,
+          0,
+          -4158,
+          0,
+          0,
+          147987
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ]
+          ],
+          "degree_a": 7,
+          "degree_common_zero_fiber_factor": 3,
+          "degree_residual": 3,
+          "common_factor": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            21
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          4
+        ],
+        "coefficients": [
+          1
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          3487131648000,
+          1473626998956616992423936000000,
+          234167686292146649757190434374085261656064000000000,
+          2116067225609712654327516807927752826596720175241572793712640000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          58,
+          0,
+          0,
+          1148,
+          0,
+          0,
+          26235
+        ],
+        "derivative": {
+          "groups": [
+            [
+              1,
+              4
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 9,
+          "degree_residual": 3,
+          "common_factor": [
+            1,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            3,
+            0,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -13
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          5,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -120960,
+          1569209241600000,
+          -550899323973734812876800000,
+          11131646150532061121640499091865600000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          25,
+          0,
+          0,
+          -208,
+          0,
+          0,
+          4802
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "degree_a": 10,
+          "degree_common_zero_fiber_factor": 3,
+          "degree_residual": 6,
+          "common_factor": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -150
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2,
+          1
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          120960,
+          753220435968000,
+          259558335333778902220800000,
+          2920840097807246358447944368128000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          0,
+          0,
+          98,
+          0,
+          0,
+          1260
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "degree_a": 10,
+          "degree_common_zero_fiber_factor": 3,
+          "degree_residual": 6,
+          "common_factor": [
+            1,
+            0,
+            0,
+            -2
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            -60
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2,
+          2
+        ],
+        "coefficients": [
+          1,
+          -1
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          1085722065221713920000,
+          0,
+          2026794494158189173087715316335371872108544000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 6,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -13
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          4023613440000,
+          38177323151379822532362240000000,
+          570475446335521932820341127026499706997964800000000000,
+          1268519486936160864554796738830368960945253255041890988993806336000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          10,
+          0,
+          0,
+          360,
+          0,
+          0,
+          17680,
+          0,
+          0,
+          1002320
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              5
+            ]
+          ],
+          "degree_a": 16,
+          "degree_common_zero_fiber_factor": 12,
+          "degree_residual": 3,
+          "common_factor": [
+            1,
+            0,
+            0,
+            -8,
+            0,
+            0,
+            24,
+            0,
+            0,
+            -32,
+            0,
+            0,
+            16
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -32
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          1,
+          3
+        ],
+        "coefficients": [
+          0,
+          -2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -2874009600,
+          1618561047999755059200000,
+          -381939672425994832908320289010483200000000,
+          5384001427307343008080023819354328265744318673715200000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -6,
+          0,
+          0,
+          132,
+          0,
+          0,
+          -3968,
+          0,
+          0,
+          137760
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              3
+            ]
+          ],
+          "degree_a": 10,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 3,
+          "common_factor": [
+            1,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            20
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          3,
+          2
+        ],
+        "coefficients": [
+          2,
+          0
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          2414168064000,
+          13998351822172601595199488000000,
+          128034308317836596687280180545313961389588480000000000,
+          174346760037039588854925371878513476793656804627834327005134848000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          6,
+          0,
+          0,
+          132,
+          0,
+          0,
+          3968,
+          0,
+          0,
+          137760
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 10,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 3,
+          "common_factor": [
+            1,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -20
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "h": 3,
+        "weighted_moments_through_four": [
+          1,
+          14485008384000,
+          10995069067597388889320325120000000,
+          55055454700295995679447794977410574474085505433600000000000,
+          107473081871888421805032550623034908114836413378048926122251123477708800000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          6,
+          0,
+          0,
+          144,
+          0,
+          0,
+          4702,
+          0,
+          0,
+          177285
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "degree_a": 19,
+          "degree_common_zero_fiber_factor": 9,
+          "degree_residual": 9,
+          "common_factor": [
+            1,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            18
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -20,
+            0,
+            0,
+            -77,
+            0,
+            0,
+            114
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2,
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          1,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -609638400,
+          3517739491318353100800000,
+          -24485959000363657326720806139671347200000000,
+          29412789813284590830206093625146818422519264549273600000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          9,
+          0,
+          0,
+          -76,
+          0,
+          0,
+          818
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "degree_a": 16,
+          "degree_common_zero_fiber_factor": 9,
+          "degree_residual": 6,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            2
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            4,
+            0,
+            0,
+            -32
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2,
+          3,
+          1
+        ],
+        "coefficients": [
+          0,
+          2,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          9656672256000,
+          4886697363376617284142366720000000,
+          16298850051640158652869274906115593293901961625600000000000,
+          21193326802838476048757300221571483135599069361178838916061140405452800000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          64,
+          0,
+          0,
+          1392,
+          0,
+          0,
+          34960
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 6,
+          "degree_residual": 6,
+          "common_factor": [
+            1,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            -12,
+            0,
+            0,
+            -52
+          ]
+        }
+      },
+      {
+        "q": 3,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          0,
+          0
+        ],
+        "h": 0,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "derivative": {
+          "groups": [],
+          "degree_a": 1,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 0,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          1
+        ],
+        "coefficients": [
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          240,
+          14515200,
+          10461394944000,
+          38926432130826240000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0,
+          280,
+          0,
+          0,
+          0,
+          4560
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              1
+            ]
+          ],
+          "degree_a": 5,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 4,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -10
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2
+        ],
+        "coefficients": [
+          -3
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -10886400,
+          1094805903679488000,
+          -8231985304516274233540608000000,
+          1114864000389333948751594346108053094400000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -6,
+          0,
+          0,
+          0,
+          171,
+          0,
+          0,
+          0,
+          -6804,
+          0,
+          0,
+          0,
+          314685
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ]
+          ],
+          "degree_a": 9,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            3
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            27
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          4
+        ],
+        "coefficients": [
+          1
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          405483668029440000,
+          2293958848537724174385996596930150400000000,
+          38473949556540230078682123780504596847213094095301323522048000000000000,
+          141746431427977052920194607373321001714764101353466039314405127231431446729679836282880000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          74,
+          0,
+          0,
+          0,
+          1908,
+          0,
+          0,
+          0,
+          57155
+        ],
+        "derivative": {
+          "groups": [
+            [
+              1,
+              4
+            ]
+          ],
+          "degree_a": 17,
+          "degree_common_zero_fiber_factor": 12,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -17
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          5,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -43545600,
+          6711736403188776960000,
+          -164587021384376580515717500108800000000,
+          521470260482936054455009303763111626428068659200000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0,
+          0,
+          -284,
+          0,
+          0,
+          0,
+          7035
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 8,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            3
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            -195
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2,
+          1
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          43545600,
+          3355868201594388480000,
+          78236788334122670315569938432000000000,
+          149213878372729250549812896727099318265771458560000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          0,
+          2013
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -3,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 4,
+          "degree_residual": 8,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -2
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            -78
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2,
+          2
+        ],
+        "coefficients": [
+          1,
+          -1
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          4554487674199698126667776000000,
+          0,
+          1076712069531732328187712106481599968643947491148172149865316352000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "degree_a": 17,
+          "degree_common_zero_fiber_factor": 8,
+          "degree_residual": 8,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -17
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          790881457766400000,
+          593865208686169329599636048927784960000000000,
+          9327349168648241651138211314929183536362156287072727860248576000000000000000,
+          118241477578149716465804087325101154587580584658204351679532314009122060645910387440274636800000000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          460,
+          0,
+          0,
+          0,
+          29480,
+          0,
+          0,
+          0,
+          2194720
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              5
+            ]
+          ],
+          "degree_a": 21,
+          "degree_common_zero_fiber_factor": 16,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -8,
+            0,
+            0,
+            0,
+            24,
+            0,
+            0,
+            0,
+            -32,
+            0,
+            0,
+            0,
+            16
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -42
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          1,
+          3
+        ],
+        "coefficients": [
+          0,
+          -2
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          -31384184832000,
+          24586196109488605710841282560000000,
+          -64095255086992178667619331182789622211241888972800000000000,
+          38639153411184096487461301622453083701714566693681425924805877093629952000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -6,
+          0,
+          0,
+          0,
+          168,
+          0,
+          0,
+          0,
+          -6560,
+          0,
+          0,
+          0,
+          297648
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              3
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 8,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            26
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          3,
+          2
+        ],
+        "coefficients": [
+          2,
+          0
+        ],
+        "h": 1,
+        "weighted_moments_through_four": [
+          1,
+          474528874659840000,
+          216889902302774885592910556999712768000000000,
+          2075556667107614153034825855696589009448295293188503892918272000000000000000,
+          16035913154380106258025467934015140182202825810283411491538526190214315770182043723492229120000000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          168,
+          0,
+          0,
+          0,
+          6560,
+          0,
+          0,
+          0,
+          297648
+        ],
+        "derivative": {
+          "groups": [
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 13,
+          "degree_common_zero_fiber_factor": 8,
+          "degree_residual": 4,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -26
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "h": 3,
+        "weighted_moments_through_four": [
+          1,
+          11388692991836160000,
+          9369643779479875057613736062387591577600000000000,
+          1138171369345802024643645056235711086587163979565596969819931095859200000000000000000,
+          410315260708773097337817900951132491243408565280980135604032165579210888015921248876762021634873753600000000000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          180,
+          0,
+          0,
+          0,
+          7510,
+          0,
+          0,
+          0,
+          364005
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "degree_a": 25,
+          "degree_common_zero_fiber_factor": 12,
+          "degree_residual": 12,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            18
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -26,
+            0,
+            0,
+            0,
+            -101,
+            0,
+            0,
+            0,
+            150
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2,
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          1,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          -15801827328000,
+          918184715118659142336223641600000000,
+          -934880849811001664529778036985106698026284692275200000000000000,
+          861850043329104681906541204126271610594408442749287125195981862592598926950400000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          -104,
+          0,
+          0,
+          0,
+          1339
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "degree_a": 21,
+          "degree_common_zero_fiber_factor": 12,
+          "degree_residual": 8,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            2
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            -42
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2,
+          3,
+          1
+        ],
+        "coefficients": [
+          0,
+          2,
+          -2
+        ],
+        "h": 2,
+        "weighted_moments_through_four": [
+          1,
+          7592461994557440000,
+          4164286124213277803383882694394485145600000000000,
+          337056341601206884528291159130255853071884512723553616628432324526080000000000000000,
+          80961754055979777594240279440980591066239685698661054819642604526204977461451155284472893069884129280000000000000000000000
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          80,
+          0,
+          0,
+          0,
+          2224,
+          0,
+          0,
+          0,
+          71824
+        ],
+        "derivative": {
+          "groups": [
+            [
+              -2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "degree_a": 17,
+          "degree_common_zero_fiber_factor": 8,
+          "degree_residual": 8,
+          "common_factor": [
+            1,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            0,
+            4
+          ],
+          "residual": [
+            1,
+            0,
+            0,
+            0,
+            -16,
+            0,
+            0,
+            0,
+            -68
+          ]
+        }
+      },
+      {
+        "q": 4,
+        "shapes": [
+          2,
+          3
+        ],
+        "coefficients": [
+          0,
+          0
+        ],
+        "h": 0,
+        "weighted_moments_through_four": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "derivative": {
+          "groups": [],
+          "degree_a": 1,
+          "degree_common_zero_fiber_factor": 0,
+          "degree_residual": 0,
+          "common_factor": [
+            1
+          ],
+          "residual": [
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "ordinary_blocks": {
+    "cases": [
+      {
+        "q": 1,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          5,
+          -3
+        ],
+        "ordinary_variables": 3,
+        "actual_support": 7,
+        "support_formula": 7,
+        "h": 2,
+        "moments_through_three": [
+          1,
+          -12,
+          33120,
+          -47174400
+        ]
+      },
+      {
+        "q": 2,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          5,
+          -3
+        ],
+        "ordinary_variables": 3,
+        "actual_support": 11,
+        "support_formula": 11,
+        "h": 2,
+        "moments_through_three": [
+          1,
+          -720,
+          2090188800,
+          -25421189713920000
+        ]
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          2
+        ],
+        "coefficients": [
+          1,
+          -1
+        ],
+        "ordinary_variables": 4,
+        "actual_support": 24,
+        "support_formula": 24,
+        "h": 2,
+        "moments_through_three": [
+          1,
+          0,
+          172800,
+          0
+        ]
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          2
+        ],
+        "coefficients": [
+          3,
+          3
+        ],
+        "ordinary_variables": 4,
+        "actual_support": 24,
+        "support_formula": 24,
+        "h": 1,
+        "moments_through_three": [
+          1,
+          864,
+          20217600,
+          3357888307200
+        ]
+      },
+      {
+        "q": 1,
+        "shapes": [
+          1,
+          2,
+          1
+        ],
+        "coefficients": [
+          1,
+          -2,
+          0
+        ],
+        "ordinary_variables": 4,
+        "actual_support": 7,
+        "support_formula": 7,
+        "h": 2,
+        "moments_through_three": [
+          1,
+          -36,
+          51840,
+          -570447360
+        ]
+      },
+      {
+        "q": 2,
+        "shapes": [
+          3
+        ],
+        "coefficients": [
+          -2
+        ],
+        "ordinary_variables": 3,
+        "actual_support": 36,
+        "support_formula": 36,
+        "h": 1,
+        "moments_through_three": [
+          1,
+          -362880,
+          41845579776000,
+          -103408066955539906560000
+        ]
+      },
+      {
+        "q": 1,
+        "shapes": [
+          2,
+          1
+        ],
+        "coefficients": [
+          0,
+          -1
+        ],
+        "ordinary_variables": 3,
+        "actual_support": 3,
+        "support_formula": 3,
+        "h": 1,
+        "moments_through_three": [
+          1,
+          -12,
+          2880,
+          -3628800
+        ]
+      },
+      {
+        "q": 1,
+        "shapes": [
+          1,
+          2
+        ],
+        "coefficients": [
+          0,
+          0
+        ],
+        "ordinary_variables": 3,
+        "actual_support": 0,
+        "support_formula": 0,
+        "h": 0,
+        "moments_through_three": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "parameter_cases": 8,
+    "moment_identities": 32
+  },
+  "window_controls": [
+    {
+      "q": 1,
+      "h": 1,
+      "start": 1,
+      "first": 2,
+      "last": 2,
+      "forced": 1,
+      "required_upper_bound": 1
+    },
+    {
+      "q": 1,
+      "h": 3,
+      "start": 4,
+      "first": 5,
+      "last": 7,
+      "forced": 3,
+      "required_upper_bound": 3
+    },
+    {
+      "q": 2,
+      "h": 1,
+      "start": 1,
+      "first": 2,
+      "last": 4,
+      "forced": 3,
+      "required_upper_bound": 2
+    },
+    {
+      "q": 2,
+      "h": 3,
+      "start": 2,
+      "first": 4,
+      "last": 10,
+      "forced": 7,
+      "required_upper_bound": 6
+    },
+    {
+      "q": 3,
+      "h": 2,
+      "start": 5,
+      "first": 14,
+      "last": 21,
+      "forced": 8,
+      "required_upper_bound": 6
+    },
+    {
+      "q": 5,
+      "h": 4,
+      "start": 7,
+      "first": 32,
+      "last": 55,
+      "forced": 24,
+      "required_upper_bound": 20
+    }
+  ],
+  "negative_controls": {
+    "passed": [
+      "q_zero",
+      "q_noninteger",
+      "q_boolean",
+      "shape_zero",
+      "shape_boolean",
+      "shape_noninteger",
+      "empty_shapes",
+      "dimension_mismatch",
+      "ordinary_zero_does_not_imply_weighted_zero",
+      "changed_inverse_coefficient",
+      "wrong_normalizer",
+      "mismatched_exponent_shape"
+    ],
+    "count": 12,
+    "scope_control": {
+      "q": 2,
+      "shapes": [
+        1,
+        2
+      ],
+      "coefficients": [
+        5,
+        -3
+      ],
+      "ordinary_first_moment": 0,
+      "weighted_first_moment": -720
+    }
+  }
+}

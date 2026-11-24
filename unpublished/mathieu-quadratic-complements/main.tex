@@ -1,0 +1,320 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\DeclareMathOperator{\SO}{SO}
+\newcommand{\Gm}{\mathbb G_m}
+\newcommand{\CT}{\operatorname{CT}}
+\newcommand{\Lq}{\Lambda_q}
+
+\title{The Mathieu property for quadratic complements}
+\author{Roy van Rijn}
+\date{}
+\hypersetup{pdftitle={The Mathieu property for quadratic complements},pdfauthor={Roy van Rijn}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let \(q\) be a nondegenerate quadratic form of positive dimension \(N\) over a
+field of characteristic zero. The kernel of the normalized
+\(\SO(q)\times\Gm\)-invariant trace on \(\{q\ne0\}\) is a Mathieu--Zhao
+subspace exactly when \(N\le2\). In dimensions one and two the trace becomes
+a Laurent constant term over a splitting field. In every dimension
+\(N\ge3\) we construct a regular function whose positive powers all have
+trace zero, while multiplication by \(q^{N-2}\) gives a nonzero trace at
+every order. The function is not a proper power even up to a unit over an
+algebraic closure. The construction uses a rotation recurrence and a
+coefficient calculation at one endpoint of a polynomial integral.
+\end{abstract}
+
+\section{A counterexample in dimension three}
+
+Take \(q=x^2+y^2+z^2\) over \(\mathbb Q\) and let \(\Lq\) be the normalized
+trace on \(\mathbb Q[x,y,z,q^{-1}]\) invariant under rotations and scalar
+multiplication. The regular function
+\[
+   P=\frac{(q+1)\bigl(q-(q+1)^2z^2\bigr)^2}{q^3}
+\]
+satisfies, for every \(m\ge1\),
+\begin{equation}\label{eq:opening}
+   \Lq(P^m)=0,\qquad
+   \Lq(qP^m)=\int_0^1(1-w^2)^{2m}\,dw\ne0.
+\end{equation}
+The integral here is a positive rational number, so the same identities
+hold over every characteristic-zero field. The multiplier is \(q\) at
+every order. Proposition~\ref{prop:moments} proves these identities and
+explains the choice of \(P\).
+
+Let \(q\) be a nondegenerate quadratic form on a vector space \(V\) over
+a field \(K\) of characteristic zero. Write
+\[
+   X_q=\{q\ne0\},\qquad \mathcal O(X_q)=K[V,q^{-1}],
+   \qquad G_q=\SO(q)\times\Gm .
+\]
+The two factors of \(G_q\) act by isometries and scalar multiplication,
+respectively. The trace \(\Lq\) is the unique \(G_q\)-invariant linear
+functional on \(\mathcal O(X_q)\) taking \(1\) to \(1\). Its kernel is a
+Mathieu--Zhao subspace if every \(f\) with \(\Lq(f^m)=0\) for all
+\(m\ge1\) satisfies \(\Lq(hf^m)=0\) for all sufficiently large \(m\), for
+each fixed \(h\in\mathcal O(X_q)\).
+
+\begin{theorem}\label{thm:main}
+Let \(K\) have characteristic zero and let \(q\) be nondegenerate of
+dimension \(N\ge1\). Then
+\[
+   \boxed{\ker\Lq\text{ is a Mathieu--Zhao subspace}
+          \quad\Longleftrightarrow\quad N\le2.}
+\]
+For \(N\ge3\) there is an explicit \(F\in\mathcal O(X_q)\) such that
+\[
+   \Lq(F^m)=0,\qquad \Lq(q^{N-2}F^m)\ne0\qquad(m\ge1).
+\]
+Over an algebraic closure, \(F\) is not a unit times an \(e\)-th power
+for any \(e\ge2\). In dimension three the function \(P\) obtained from
+the formula above by replacing \(z^2\) with a one-dimensional
+orthogonal summand of \(q\) already satisfies these conclusions.
+\end{theorem}
+
+In dimension two the split coordinate ring is Laurent, and the trace
+takes its constant term. Starting in dimension three, write \(q=A+B\)
+as an orthogonal sum with \(A\) of rank two and \(B\) of rank \(M=N-2\).
+The ratio \(B/q\) is nonconstant and has moments
+\(M/(M+2j)\), and \(q\) itself has nonzero scalar weight. Thus the trace
+on expressions in \(q\) and \(B/q\) can be computed by a polynomial
+integral followed by Laurent coefficient extraction. The substitution
+\(w=(1+q)t\) makes the endpoint contribution vanish to high order.
+For \(k\ge M\), the trace of \(P^k\) asks for a coefficient above
+the degree of the resulting polynomial. Multiplication by \(q^M\)
+moves the extraction exactly to its leading coefficient.
+
+The endpoint calculation adapts Long's construction on the complex
+normalizer quotient \(\mathrm{SL}_2/N(T)\) \cite[Prop.~5.1]{Long}.
+Here \(q\) is invertible on the space itself, and the rotation recurrence
+gives the density \(M t^{M-1}\) in every dimension over the original
+field. Over \(\mathbb C\), the dimension cutoff for the kernel also
+follows from the general reductive homogeneous-space criterion of
+\cite[Thm.~1.1]{vanRijn}. Indeed for \(N\ge3\) the derived subgroup
+contains the full rotation group, which acts nontrivially on the
+complement, whereas in dimensions one and two \(G_q\) is a torus.
+The argument here produces the witness and its marked moments
+directly over \(K\).
+
+\section{The trace and the two low dimensions}\label{sec:positive}
+
+The action on \(X_q\) is transitive over an algebraic closure.
+Scalar multiplication changes a nonzero value of \(q\) to any other
+such value. In dimension at least two, an isometry taking one vector
+to another of the same nonzero norm exists by extending an isometry
+of their nondegenerate lines. Its determinant can be corrected by
+a reflection in the orthogonal complement of the target vector.
+In dimension one the scalar action alone is transitive.
+
+The coordinate ring is a locally finite rational representation
+of the connected reductive group \(G_q\). Complete reducibility
+\cite[\S12l and Thm.~22.42]{Milne} gives the projection onto its trivial
+isotypic part. This part is \(K\cdot1\) by geometric transitivity,
+which proves existence and uniqueness of \(\Lq\). The trace commutes
+with field extension. Indeed, the extended trace is still invariant
+and normalized, and the same uniqueness applies over the larger
+field. Invariance also implies \(\Lq(Df)=0\) for every infinitesimal
+action \(D\).
+
+We use the Laurent constant-term theorem of Duistermaat and van der
+Kallen \cite[\S\S1, 3]{DvK}. If a nonzero complex Laurent polynomial
+has zero constant term in every positive power, then the convex hull
+of its support excludes the origin. This implication holds over any
+characteristic-zero field. The finitely many coefficients generate
+a finitely generated extension of \(\mathbb Q\), which embeds in
+\(\mathbb C\) by choosing images for a transcendence basis and
+extending algebraically. The embedding preserves the support and
+all the constant-term identities. A linear functional strictly
+positive on that support gives a lower bound \(m\delta\), for some
+\(\delta>0\), on the weights of monomials in the \(m\)-th power.
+If the least monomial weight of a fixed nonzero multiplier is \(b\),
+the product has weights at least \(b+m\delta\). Hence its constant
+term eventually vanishes. If either factor is zero the conclusion is
+immediate.
+
+When \(N=1\), write \(q=ax^2\). The ring is \(K[x,x^{-1}]\), and the
+scalar action gives \(\Lq=\CT_x\) since each \(x^i\) has weight \(i\).
+When \(N=2\), pass to a splitting field \(L/K\) of degree at most two
+and write \(q=a uv\) in linear coordinates \(u,v\). Both \(u\) and \(v\)
+are then units on the complement. The rotation and scalar tori act
+on \(u^iv^j\) with character \(t^{i-j}s^{i+j}\), which is trivial
+exactly for \(i=j=0\). Hence \(\Lq\otimes_K L=\CT_{u,v}\) on
+\(L[u^{\pm1},v^{\pm1}]\). For \(f,h\) defined over \(K\), pure vanishing
+extends to \(L\), and the eventual mixed vanishing over \(L\) descends
+to \(K\) by injectivity. This proves the positive direction of
+Theorem~\ref{thm:main}.
+
+\section{A rank-two splitting and its moments}\label{sec:beta}
+
+Assume \(N\ge3\) and set \(M=N-2\). Diagonalize \(q\) over \(K\) and write
+\[
+   q=A+B,\qquad A=a_1x_1^2+a_2x_2^2,\qquad
+   B=\sum_{i=1}^M b_i z_i^2,\qquad S=\frac{B}{q}.
+\]
+All \(a_\alpha,b_i\) are nonzero. To compute the moments of \(S\), use the
+infinitesimal rotations
+\[
+   D_{\alpha i}
+   =b_i z_i\frac{\partial}{\partial x_\alpha}
+    -a_\alpha x_\alpha\frac{\partial}{\partial z_i},
+   \qquad \alpha=1,2,\quad 1\le i\le M.
+\]
+They preserve \(q\), and hence act on its localization. For \(j\ge1\),
+the product rule gives
+\begin{equation}\label{eq:rotation}
+   \sum_{\alpha,i}D_{\alpha i}
+   \left(S^{j-1}\frac{x_\alpha z_i}{q}\right)
+     =2S^j-(M+2j-2)(1-S)S^{j-1}.
+\end{equation}
+Differentiating \(x_\alpha z_i\) contributes
+\(2S^j-M(1-S)S^{j-1}\). For \(j>1\), differentiating \(S^{j-1}\)
+contributes \(-2(j-1)AB S^{j-2}/q^2
+=-2(j-1)(1-S)S^{j-1}\). That term is absent when \(j=1\).
+
+Applying \(\Lq\) to \eqref{eq:rotation} yields
+\[
+   (M+2j)\Lq(S^j)=(M+2j-2)\Lq(S^{j-1}),
+   \qquad \Lq(1)=1.
+\]
+It follows that \(\Lq(S^j)=M/(M+2j)\) for all \(j\ge0\), or
+equivalently
+\begin{equation}\label{eq:beta}
+   \Lq(g(S))=M\int_0^1 t^{M-1}g(t^2)\,dt\qquad(g\in K[s]).
+\end{equation}
+For coefficients in \(K\), the integral denotes termwise polynomial
+integration, defined by \(\int_0^1t^r\,dt=1/(r+1)\) and \(K\)-linearity.
+Also, \(q^\ell g(S)\) has scalar weight \(2\ell\), so its trace is
+zero whenever \(\ell\ne0\). This allows us to compute the trace of
+any Laurent expression in \(q\) with polynomial coefficients in \(S\)
+by applying \eqref{eq:beta} to its constant coefficient.
+
+\section{The coefficient at the endpoint}\label{sec:endpoint}
+
+Define the regular function
+\begin{equation}\label{eq:phase}
+   P=q^{-1}(1+q)\bigl(1-(1+q)^2S\bigr)^2
+    =\frac{(q+1)\bigl(q-(q+1)^2B\bigr)^2}{q^3}.
+\end{equation}
+The factor \(1-(1+q)^2S\) becomes \(1-w^2\) after writing \(S=t^2\) and
+substituting \(w=(1+q)t\). Its \(2k\)-th power has a zero of order
+\(2k\) at \(w=1\). That order is what allows coefficient extraction
+using only the value of the antiderivative at \(1\).
+
+\begin{proposition}\label{prop:moments}
+For \(k\ge1\) and any integer \(\ell\ge-k\),
+\begin{equation}\label{eq:moments}
+   \Lq(q^\ell P^k)=J_{M,k}\binom{k-M}{k-\ell},
+   \qquad J_{M,k}=M\int_0^1 w^{M-1}(1-w^2)^{2k}\,dw \in\mathbb Q_{>0}.
+\end{equation}
+The binomial coefficient is the coefficient of degree \(k-\ell\) in
+\((1+U)^{k-M}\) expanded at \(U=0\), with coefficient zero in negative
+degrees.
+\end{proposition}
+
+\begin{proof}
+Write \(U\) for the formal variable representing \(q\), and set \(T=1+U\).
+Combining scalar weight extraction with \eqref{eq:beta} gives
+\[
+  \Lq(q^\ell P^k)
+   =[U^{k-\ell}]\,T^k M\int_0^1 t^{M-1}(1-T^2t^2)^{2k}\,dt .
+\]
+Let
+\[
+   J(T)=M\int_0^T w^{M-1}(1-w^2)^{2k}\,dw \in \mathbb Q[T].
+\]
+Substitution in each monomial of the integral rewrites the expression
+inside the coefficient as \(T^{k-M}J(T)\). This is a polynomial even
+for \(k<M\), since \(T^M\) divides \(J(T)\). Also \(J'(T)\) is divisible
+by \((T-1)^{2k}\), so \(J(T)-J(1)\) is divisible by \((T-1)^{2k+1}\).
+In the expansion at \(U=0\), the factor \(T^{k-M}\) has constant
+coefficient \(1\). Since \(k-\ell\le2k\), we may replace \(J(T)\) by
+\(J(1)\) at the coefficient in question. This proves
+\eqref{eq:moments}. The integrand is strictly positive on \(0<w<1\)
+as a real polynomial, so its rational integral is nonzero in \(K\).
+\end{proof}
+
+For \(k\ge M\), the polynomial \((1+U)^{k-M}\) has degree \(k-M\).
+Its coefficient of \(U^k\) is zero and its coefficient of
+\(U^{k-M}\) is \(1\). Consequently
+\[
+   \Lq(P^k)=0,\qquad \Lq(q^M P^k)=J_{M,k}\qquad(k\ge M).
+\]
+When \(M=1\), this already proves \eqref{eq:opening}. The exponent
+\(M\) is also the smallest positive \(a\) such that all positive
+powers of \(P^a\) have trace zero. In fact, for \(1\le a<M\),
+the first moment of \(P^a\) is
+\((-1)^a\binom{M-1}{a}J_{M,a}\ne0\).
+
+To obtain a function with a simple zero in every dimension, put
+\(F=P^M(1+P)\). All exponents in
+\(F^m=\sum_{r=0}^m\binom mr P^{Mm+r}\) are at least \(M\). Thus
+\[
+   \Lq(F^m)=0,\qquad
+   \Lq(q^M F^m)=\sum_{r=0}^m\binom mr J_{M,Mm+r}\in\mathbb Q_{>0}
+   \qquad(m\ge1).
+\]
+To rule out a proper power up to a unit, work over an algebraic closure
+of \(K\) and restrict to the punctured \(x_1\)-axis. There \(q=a_1x_1^2\)
+and \(P=1+q^{-1}\). Each root of \(a_1x_1^2=-1/2\) is nonzero with
+\(dq/dx_1\ne0\). At such a root \(1+P=2+q^{-1}\) has a simple zero
+and \(P=-1\), so \(F\) has a simple zero on the axis. A unit restricts
+to a unit, and an \(e\)-th power has zero multiplicities divisible by
+\(e\). In the ternary case the same argument gives a simple zero of
+\(P\) at a root of \(a_1x_1^2=-1\).
+This proves the remaining claims of Theorem~\ref{thm:main}.
+
+\begin{corollary}
+For this family of quadratic complements, the Mathieu--Zhao property
+of the trace kernel is invariant under every field extension.
+When it fails, the same functions \(F,q^{N-2}\) witness failure over
+every extension.
+\end{corollary}
+
+\begin{proof}
+Dimension and nondegeneracy are unchanged by scalar extension.
+The marked moments displayed above are nonzero rational numbers,
+and the normalized trace commutes with extension.
+\end{proof}
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{DvK}
+J.~J. Duistermaat and W. van der Kallen,
+\emph{Constant terms in powers of a Laurent polynomial},
+Indag. Math. (N.S.) \textbf{9} (1998), no.~2, 221--231.
+\href{https://doi.org/10.1016/S0019-3577(98)80020-7}{DOI: 10.1016/S0019-3577(98)80020-7}.
+
+\bibitem{Long}
+C.~D. Long,
+\emph{A Classification of Mathieu's Second Conjecture for Reductive
+Spherical Pairs}, 2026.\par\nopagebreak
+GitHub \href{https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs}{\nolinkurl{long-mathematics/mathieu-second-conjecture-spherical-pairs}},
+\href{https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex}{rev.~\texttt{e9edac2}}.
+
+\bibitem{Milne}
+J.~S. Milne,
+\emph{Algebraic Groups: The Theory of Group Schemes of Finite Type over a
+Field}, Cambridge Studies in Advanced Mathematics \textbf{170},
+Cambridge University Press, 2017.
+
+\bibitem{vanRijn}
+R. van Rijn,
+\emph{Counterexamples to the Mathieu Property: From Explicit Quotient
+Constructions to a General Classification}, 2026.
+\href{https://doi.org/10.5281/zenodo.24310836}{DOI: 10.5281/zenodo.24310836}.
+\end{thebibliography}
+
+\end{document}

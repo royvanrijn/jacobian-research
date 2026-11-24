@@ -1,0 +1,68 @@
+{
+  "arithmetic": "Python standard-library exact integers/Fraction; no sibling imports",
+  "cases": [
+    {
+      "lower_degree": 10,
+      "name": "strict_Bernstein_and_transport_counterpair",
+      "prime": 65537,
+      "rational_gcd_degree": 0,
+      "upper_degree": 11
+    },
+    {
+      "lower_degree": 10,
+      "name": "three_logconcave_densities_counterpair",
+      "prime": 65537,
+      "rational_gcd_degree": 0,
+      "upper_degree": 11
+    },
+    {
+      "lower_degree": 3,
+      "name": "zero_pivot_with_constant_nonzero_remainder",
+      "prime": 65537,
+      "rational_gcd_degree": 0,
+      "upper_degree": 4
+    }
+  ],
+  "certificate_sha256": "0f3e8f68902d838a3038e7913407ef76c2621d72dbb3e59d44cfb45513bec378",
+  "checker_sha256": "2cadced81d0312cd886cfd08f168363c49d623cfd15b8cc842e9f60dc80dad16",
+  "parameter_family": {
+    "collision_gcd_degree": 2,
+    "controls": [
+      {
+        "nominal_pivot": "-3/220",
+        "resultant": "27/1827629375",
+        "theta": "0"
+      },
+      {
+        "nominal_pivot": "-7/1980",
+        "resultant": "531991/85269876120000",
+        "theta": "1/3"
+      },
+      {
+        "nominal_pivot": "13/1980",
+        "resultant": "3703/4263493806000",
+        "theta": "2/3"
+      },
+      {
+        "nominal_pivot": "1/60",
+        "resultant": "1/1437480000",
+        "theta": "1"
+      },
+      {
+        "nominal_pivot": "0",
+        "resultant": "729/187149248000",
+        "theta": "9/20"
+      },
+      {
+        "nominal_pivot": "9/748",
+        "resultant": "0",
+        "theta": "72/85"
+      }
+    ],
+    "scope": "Generic moment pair; not a factorial-profile counterexample.",
+    "uniform_identity_certificate": "Both sides have theta degree at most3; four distinct exact Sylvester evaluations certify equality."
+  },
+  "proof_sha256": "2f40b43023e38b83f160420c44983305f810225964a29696ae6340711da91322",
+  "scope": "The two explicit obstruction moment pairs and the zero-pivot control have no common root over any characteristic-zero field.",
+  "status": "PASS"
+}

@@ -1,0 +1,1775 @@
+{
+  "checker_sha256": "d3cf5377150ced908929614f92eb27512bb6d5de96dd14b459115484da4cd68b",
+  "finite_identity_controls": {
+    "cases": [
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          2,
+          24,
+          720,
+          40320,
+          3628800
+        ],
+        "actual_polynomial_degree": 2,
+        "coefficients": [
+          1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          1,
+          2,
+          5,
+          14,
+          42
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -4,
+          96,
+          -5760,
+          645120,
+          -116121600
+        ],
+        "actual_polynomial_degree": 2,
+        "coefficients": [
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -2,
+          8,
+          -40,
+          224,
+          -1344
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -4,
+          192,
+          -34560,
+          15482880,
+          -13934592000
+        ],
+        "actual_polynomial_degree": 2,
+        "coefficients": [
+          0,
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -2,
+          8,
+          -40,
+          224,
+          -1344
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          0,
+          24,
+          0,
+          207360,
+          0
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          3,
+          0
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -2,
+          192,
+          -30240,
+          17141760,
+          -16111872000
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -1,
+          8,
+          -35,
+          248,
+          -1554
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -2,
+          384,
+          -181440,
+          411402240,
+          -1933424640000
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          0,
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          -1,
+          8,
+          -35,
+          248,
+          -1554
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          4,
+          624,
+          435456,
+          1073295360,
+          6497003520000
+        ],
+        "actual_polynomial_degree": 4,
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          2,
+          13,
+          84,
+          647,
+          5222
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          0,
+          288,
+          -62208,
+          1074954240,
+          -6270566400000
+        ],
+        "actual_polynomial_degree": 4,
+        "coefficients": [
+          1,
+          1,
+          -2,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          3,
+          -2,
+          27,
+          -42
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 0,
+        "actual_moments_through_five": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_polynomial_degree": 1,
+        "coefficients": [
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 4,
+        "actual_moments_through_five": [
+          1,
+          0,
+          192,
+          0,
+          437944320,
+          0
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          11,
+          0
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          4,
+          768,
+          1244160,
+          8918138880,
+          200658124800000
+        ],
+        "actual_polynomial_degree": 2,
+        "coefficients": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          2,
+          8,
+          40,
+          224,
+          1344
+        ],
+        "q": 1
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          6,
+          720,
+          362880,
+          479001600,
+          1307674368000
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          3,
+          0,
+          12,
+          0,
+          55,
+          0,
+          273
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -12,
+          2880,
+          -2903040,
+          7664025600,
+          -41845579776000
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -2,
+          0,
+          12,
+          0,
+          -96,
+          0,
+          880,
+          0,
+          -8736
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -24,
+          69120,
+          -2090188800,
+          309013512192000,
+          -151849239891148800000
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          0,
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -2,
+          0,
+          12,
+          0,
+          -96,
+          0,
+          880,
+          0,
+          -8736
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          0,
+          5760,
+          0,
+          1755758592000,
+          0
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -12,
+          51840,
+          -1306368000,
+          198400720896000,
+          -91516282970112000000
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          9,
+          0,
+          -60,
+          0,
+          565,
+          0,
+          -5265
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -24,
+          1244160,
+          -940584960000,
+          7999517066526720000,
+          -332094287641942425600000000
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          0,
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          9,
+          0,
+          -60,
+          0,
+          565,
+          0,
+          -5265
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          48,
+          2350080,
+          2664990720000,
+          28104498012487680000,
+          1574625222543865282560000000
+        ],
+        "actual_polynomial_degree": 7,
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          17,
+          0,
+          170,
+          0,
+          1985,
+          0,
+          24964
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          0,
+          9953280,
+          -22574039040000,
+          25689068611515187200000,
+          -16480051295659222892544000000000
+        ],
+        "actual_polynomial_degree": 7,
+        "coefficients": [
+          1,
+          1,
+          -2,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          -2,
+          0,
+          45,
+          0,
+          -72
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 0,
+        "actual_moments_through_five": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_polynomial_degree": 1,
+        "coefficients": [
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 4,
+        "actual_moments_through_five": [
+          1,
+          0,
+          6635520,
+          0,
+          10846495635973079040000,
+          0
+        ],
+        "actual_polynomial_degree": 9,
+        "coefficients": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          96,
+          39813120,
+          1083553873920000,
+          502364008402963660800000,
+          1999579557206652377628672000000000
+        ],
+        "actual_polynomial_degree": 3,
+        "coefficients": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          12,
+          0,
+          96,
+          0,
+          880,
+          0,
+          8736
+        ],
+        "q": 2
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          24,
+          40320,
+          479001600,
+          20922789888000,
+          2432902008176640000
+        ],
+        "actual_polynomial_degree": 4,
+        "coefficients": [
+          1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          22,
+          0,
+          0,
+          140,
+          0,
+          0,
+          969
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -48,
+          161280,
+          -3832012800,
+          334764638208000,
+          -77852864261652480000
+        ],
+        "actual_polynomial_degree": 4,
+        "coefficients": [
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          16,
+          0,
+          0,
+          -176,
+          0,
+          0,
+          2240,
+          0,
+          0,
+          -31008
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -288,
+          116121600,
+          -1390560804864000,
+          160352797325053132800000,
+          -101806195070346193419632640000000
+        ],
+        "actual_polynomial_degree": 4,
+        "coefficients": [
+          0,
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          16,
+          0,
+          0,
+          -176,
+          0,
+          0,
+          2240,
+          0,
+          0,
+          -31008
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          0,
+          7257600,
+          0,
+          501102491640791040000,
+          0
+        ],
+        "actual_polynomial_degree": 7,
+        "coefficients": [
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -144,
+          72576000,
+          -695280402432000,
+          73160963779555491840000,
+          -40354100348607619431137280000000
+        ],
+        "actual_polynomial_degree": 7,
+        "coefficients": [
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          10,
+          0,
+          0,
+          -88,
+          0,
+          0,
+          1022,
+          0,
+          0,
+          -12291
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -864,
+          52254720000,
+          -252303352434524160000,
+          35044218707949127880146944000000,
+          -52770022669574048419596962145239040000000000
+        ],
+        "actual_polynomial_degree": 7,
+        "coefficients": [
+          0,
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          10,
+          0,
+          0,
+          -88,
+          0,
+          0,
+          1022,
+          0,
+          0,
+          -12291
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          1728,
+          109734912000,
+          802783394109849600000,
+          149057943956413756257337344000000,
+          314430508520781466931706380251299840000000000
+        ],
+        "actual_polynomial_degree": 10,
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          21,
+          0,
+          0,
+          280,
+          0,
+          0,
+          4347,
+          0,
+          0,
+          73236
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          0,
+          11287019520000,
+          -2080814557532730163200000,
+          1034768023881630717525718833561600000000,
+          -572663950570795988351019554257223119011840000000000000
+        ],
+        "actual_polynomial_degree": 10,
+        "coefficients": [
+          1,
+          1,
+          -2,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          63,
+          0,
+          0,
+          -102
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 0,
+        "actual_moments_through_five": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_polynomial_degree": 1,
+        "coefficients": [
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 4,
+        "actual_moments_through_five": [
+          1,
+          0,
+          7524679680000,
+          0,
+          443472010234984593225308071526400000000,
+          0
+        ],
+        "actual_polynomial_degree": 13,
+        "coefficients": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          10368,
+          60197437440000,
+          183111681062880254361600000,
+          36791751960235758845358891859968000000000,
+          174089840973521980458709944494195828179599360000000000000
+        ],
+        "actual_polynomial_degree": 4,
+        "coefficients": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          16,
+          0,
+          0,
+          176,
+          0,
+          0,
+          2240,
+          0,
+          0,
+          31008
+        ],
+        "q": 3
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          120,
+          3628800,
+          1307674368000,
+          2432902008176640000,
+          15511210043330985984000000
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          285,
+          0,
+          0,
+          0,
+          2530
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -240,
+          14515200,
+          -10461394944000,
+          38926432130826240000,
+          -496358721386591551488000000
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0,
+          -280,
+          0,
+          0,
+          0,
+          4560,
+          0,
+          0,
+          0,
+          -80960
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          -5760,
+          585252864000,
+          -5011024916407910400000,
+          814449560562769547357061120000000,
+          -1207592130037427934436718119558840320000000000
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          0,
+          -2
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0,
+          -280,
+          0,
+          0,
+          0,
+          4560,
+          0,
+          0,
+          0,
+          -80960
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          0,
+          29262643200,
+          0,
+          1607466237952834632941568000000,
+          0
+        ],
+        "actual_polynomial_degree": 9,
+        "coefficients": [
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -2880,
+          321889075200,
+          -2129685589473361920000,
+          292023033228098291651051520000000,
+          -354730188198494455740785947620409344000000000
+        ],
+        "actual_polynomial_degree": 9,
+        "coefficients": [
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          -119,
+          0,
+          0,
+          0,
+          1635,
+          0,
+          0,
+          0,
+          -23782
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 2,
+        "actual_moments_through_five": [
+          1,
+          -69120,
+          12978567512064000,
+          -1020122804854683517059072000000,
+          6109936566687942934026695567223029760000000000,
+          -863023787228994604392007320125929144587231858524160000000000000
+        ],
+        "actual_polynomial_degree": 9,
+        "coefficients": [
+          0,
+          2,
+          -3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          -119,
+          0,
+          0,
+          0,
+          1635,
+          0,
+          0,
+          0,
+          -23782
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          138240,
+          29496744345600000,
+          3548998665628898958508032000000,
+          29854607480899067951033193202779684864000000000,
+          6090664637160036851902519745828597080532832422461440000000000000
+        ],
+        "actual_polynomial_degree": 13,
+        "coefficients": [
+          1,
+          -2,
+          3
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          414,
+          0,
+          0,
+          0,
+          7989,
+          0,
+          0,
+          0,
+          167838
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 3,
+        "actual_moments_through_five": [
+          1,
+          0,
+          142717047841751040000,
+          -8212444633981196170839038361600000000,
+          6333205162152546994371595454441481917775740928000000000000,
+          -11653944338873063370708287706965084191077018559842124418147942400000000000000000
+        ],
+        "actual_polynomial_degree": 13,
+        "coefficients": [
+          1,
+          1,
+          -2,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          81,
+          0,
+          0,
+          0,
+          -132
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 0,
+        "actual_moments_through_five": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_polynomial_degree": 1,
+        "coefficients": [
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 4,
+        "actual_moments_through_five": [
+          1,
+          0,
+          95144698561167360000,
+          0,
+          2736570131794310429666738776610516878051246080000000000000,
+          0
+        ],
+        "actual_polynomial_degree": 17,
+        "coefficients": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          35,
+          0,
+          0,
+          0,
+          0
+        ],
+        "q": 4
+      },
+      {
+        "active_terms": 1,
+        "actual_moments_through_five": [
+          1,
+          3317760,
+          951446985611673600000,
+          1149742248757367463917465370624000000000,
+          356535994313773015979437966324113056111819489280000000000000,
+          7147752527842145534034416460271918303860571383369836309797404672000000000000000000
+        ],
+        "actual_polynomial_degree": 5,
+        "coefficients": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "inverse_coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0,
+          280,
+          0,
+          0,
+          0,
+          4560,
+          0,
+          0,
+          0,
+          80960
+        ],
+        "q": 4
+      }
+    ],
+    "finite_nonzero_window_controls": 160,
+    "inactive_variable_identities": 96,
+    "moment_identities": 264,
+    "parameter_cases": 44,
+    "structural_zero_coefficients": 363
+  },
+  "independent_adjunction_controls": [
+    {
+      "checked_orders": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "coefficients": [
+        1,
+        -1
+      ],
+      "independent_factor_exponents": [
+        3
+      ],
+      "linear_coefficients": [
+        2
+      ],
+      "q": 2
+    },
+    {
+      "checked_orders": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "coefficients": [
+        1,
+        0,
+        -2
+      ],
+      "independent_factor_exponents": [
+        1,
+        2
+      ],
+      "linear_coefficients": [
+        2,
+        -3
+      ],
+      "q": 3
+    }
+  ],
+  "inspected_retained_base": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "proof_boundary": {
+    "external_peer_review": false,
+    "formal_verification": false,
+    "general_variable_identification_proved": false,
+    "literature_priority_claim": false,
+    "ordinary_binomial_eventual_theorem_used": false,
+    "rigidity_proof_replaced_by_finite_tests": false,
+    "universal_theorem_from_written_proof": true,
+    "unrestricted_SFC_proved": false
+  },
+  "python_version": "3.12.14",
+  "rejected_controls": [
+    "q-zero-in-positive-q-identity",
+    "noninteger-q",
+    "boolean-q",
+    "empty-ambient-variable-list",
+    "m-plus-one-instead-of-qm-plus-one",
+    "altered-inverse-coefficient",
+    "omitted-inactive-variable-factor",
+    "unsupported-unequal-common-exponents"
+  ],
+  "root_of_unity_sharpness_controls": [
+    {
+      "cyclotomic_polynomial": [
+        1,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        24
+      ],
+      "q": 1,
+      "s": 2
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        1,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        0,
+        5184
+      ],
+      "q": 1,
+      "s": 3
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        0,
+        0,
+        39813120
+      ],
+      "q": 1,
+      "s": 4
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        5760
+      ],
+      "q": 2,
+      "s": 2
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        1,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        0,
+        15676416000
+      ],
+      "q": 2,
+      "s": 3
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        0,
+        0,
+        570868191367004160000
+      ],
+      "q": 2,
+      "s": 4
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        7257600
+      ],
+      "q": 3,
+      "s": 2
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        1,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        0,
+        2867083550392320000
+      ],
+      "q": 3,
+      "s": 3
+    },
+    {
+      "cyclotomic_polynomial": [
+        1,
+        0,
+        1
+      ],
+      "positive_moments_through_s": [
+        0,
+        0,
+        0,
+        16424889267962392341678076723200000000
+      ],
+      "q": 3,
+      "s": 4
+    }
+  ],
+  "schema": 1,
+  "source_sha256": {
+    "EVENTUAL_BINOMIAL_ALGEBRAIC_CONSEQUENCES.md": "1f200d3a3f060c41fae993a65ba2dc5376af81456a9b16a952ec1ca153901830",
+    "POWER_DIAGONAL_LINEAR_SFC_TRANSFER.md": "40278040a10d4813c473e8256b868e4fb6d42f20912972b801136398436609d6",
+    "RIGIDITY_CRITICAL_VALUES.tex": "8a2b6faa7996398d8c0474b34550a56cab6a771436a49fb2d3dff7a393e9c4dd",
+    "UNRESTRICTED_SFC_MECHANISMS.tex": "f8b3dfc5947601fb002aee0ba942b0fc20b7ef46ca8e0d4f69b5a3e5e1361785",
+    "sources/edo-van-den-essen-1304.3956v2.pdf": "c6fd11479a33c02b5260dd54d82613530ef2448fc532336f653685a4761ea1e9",
+    "sources/rigidity.typ": "8a6e152c797c227529e88572db140fcfb5b6c3ad61650c2a94fc6304cb334af6",
+    "sources/rocks-2015-author-preprint.pdf": "cee089adf02a4cc8add4bded8804e89bd51317108939c612ff2e3710bd43ecdc"
+  },
+  "standard_library_only": true,
+  "status": "PASS",
+  "theorem_scope": "Every common monomial power times a linear form, any active support size, every positive starting index, every characteristic-zero field",
+  "window_index_controls": [
+    {
+      "first_inverse_degree": 2,
+      "forced_count": 1,
+      "last_inverse_degree": 2,
+      "q": 1,
+      "required_count": 1,
+      "s": 1,
+      "start_moment": 1
+    },
+    {
+      "first_inverse_degree": 4,
+      "forced_count": 4,
+      "last_inverse_degree": 7,
+      "q": 1,
+      "required_count": 4,
+      "s": 4,
+      "start_moment": 3
+    },
+    {
+      "first_inverse_degree": 2,
+      "forced_count": 3,
+      "last_inverse_degree": 4,
+      "q": 2,
+      "required_count": 2,
+      "s": 1,
+      "start_moment": 1
+    },
+    {
+      "first_inverse_degree": 2,
+      "forced_count": 7,
+      "last_inverse_degree": 8,
+      "q": 2,
+      "required_count": 6,
+      "s": 3,
+      "start_moment": 1
+    },
+    {
+      "first_inverse_degree": 11,
+      "forced_count": 8,
+      "last_inverse_degree": 18,
+      "q": 3,
+      "required_count": 6,
+      "s": 2,
+      "start_moment": 4
+    },
+    {
+      "first_inverse_degree": 32,
+      "forced_count": 24,
+      "last_inverse_degree": 55,
+      "q": 5,
+      "required_count": 20,
+      "s": 4,
+      "start_moment": 7
+    }
+  ]
+}

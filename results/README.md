@@ -16,4 +16,6 @@ verified public deposits and their checksums.
 | [Sparse minimality in dimension three](sparse-minimality-gaussian-moments-dimension-three/) | No failure with both degree at most four and at most four Witt monomials. | [24 July 2026](sparse-minimality-gaussian-moments-dimension-three/published/) |
 | [Filtered Frobenius proof of the two-variable Gaussian Moments Conjecture](gaussian-moments-two-variables/) | Alternative proof of the known bivariate support classification and sharp cutoff. | [23 July 2026](gaussian-moments-two-variables/published/) |
 
+The two quadratic arithmetic papers have a shared Lean project with a theorem-by-theorem scope record. [Lean verification](../research/foundations/formal/quadratic-norms/README.md)
+
 [Manuscripts in preparation](../unpublished/) · [Research topics](../research/)

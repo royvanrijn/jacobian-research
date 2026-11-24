@@ -113,6 +113,65 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Exact discriminant -8 primitive norm sumset and explicit value counts | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS8_EXACT.md) |
 | Exact discriminant -7 primitive norm sumset and its three exceptions | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS7_EXACT.md) |
 | Exact discriminant -11 primitive norm sumset and explicit value counts | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS11_EFFECTIVE.md) |
+| Split-prime core sumsets through explicit bounds at four Heegner discriminants | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) |
+| A common effective split-prime sumset bound at five Heegner discriminants | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) |
+| Exact core and primitive norm sumsets at five Heegner discriminants | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) |
+| Bernoulli limit of fixed-window gaps across prime discriminants | Internal result | proved | [Source](PRIME_DISCRIMINANT_CORE_UNIFORM.md) |
+| Pointwise rough Eisenstein shell scale and mark boundaries | Internal result | proved | [Source](EISENSTEIN_POINTWISE_LEASTNESS.md) |
+| Visible least-prime reduction and direct leastness budgets | Internal result | proved | [Source](EISENSTEIN_POINTWISE_LEASTNESS.md) |
+| A prime-free model for short Eisenstein divisor moments | Internal result | proved | [Source](EISENSTEIN_DIVISOR_EXCHANGE.md) |
+| The separate and joint Eisenstein sieve budgets | Internal result | proved | [Source](EISENSTEIN_BUDGET_INTERSECTION.md) |
+| Signed divisor weights and the Eisenstein roughness trade-off | Internal result | proved | [Source](EISENSTEIN_DIVISOR_MODULUS.md) |
+| Square-root obstruction and longer pair marks for rough Eisenstein sums | Internal result | proved | [Source](EISENSTEIN_DIVISOR_MODULUS.md) |
+| Fixed-factor distribution in almost all rough Eisenstein pairs | Internal result | proved | [Source](EISENSTEIN_ROUGH_FACTOR_DISTRIBUTION.md) |
+| Value-normalized proper-divisor marks at one-fifth roughness | Internal result | proved | [Source](EISENSTEIN_ROUGH_FACTOR_DISTRIBUTION.md) |
+| Almost-all one-mark comparison for rough Eisenstein pairs | Internal result | proved | [Source](EISENSTEIN_ROUGH_ONE_MARK.md) |
+| Exact finite one-mark certificate through twenty million | Internal result | proved | [Source](EISENSTEIN_ROUGH_ONE_MARK.md) |
+| Random thinning threshold with rough semiprime pairs alone | Internal result | proved | [Source](ROUGH_GOLDBACH_SEMIGROUP_PARITY.md) |
+| Nonzero dyadic Liouville averages for one-third-rough Goldbach pairs | Internal result | proved | [Source](ROUGH_GOLDBACH_SEMIGROUP_PARITY.md) |
+| Uniform rough representation thinning by quadratic discriminants | Internal result | proved | [Source](ROUGH_GOLDBACH_SEMIGROUP_PARITY.md) |
+| Effective polynomial gap bound across prime discriminants | Internal result | proved | [Source](PRIME_DISCRIMINANT_CORE_UNIFORM.md) |
+| Stretched-exponential gap tails for random prime semigroups | Internal result | proved | [Source](RANDOM_SPLIT_PRIME_SUMSETS.md) |
+| Sharp basis threshold for sparse random prime semigroups | Internal result | proved | [Source](RANDOM_SPLIT_PRIME_SUMSETS.md) |
+| Almost-sure counting and moments in sparse random prime semigroups | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_BASIS_THRESHOLD.md) |
+| Sharp additive basis threshold at every order for random prime semigroups | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_BASIS_THRESHOLD.md) |
+| Semigroup counts under a constant multiplier on prime selection | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Density and gap tails at the constant multiplier transition | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Cofiniteness under every positive logarithmic prime enhancement | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Subcritical representation lower bounds and fixed-modulus averaged laws | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Uniform weighted squarefree twin correlations | Internal result | proved | [Source](SQUAREFREE_TWIN_CORRELATION_NEAR_ZERO.md) |
+| Uniform isolation of the twin-prime coefficient | Internal result | proved | [Source](SQUAREFREE_TWIN_CORRELATION_NEAR_ZERO.md) |
+| Signed doubling criterion for a quantitative twin-prime lower bound | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
+| Small-cofactor reduction for the weighted twin doubling combination | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
+| Column-wise entropy transfer at the power-rough pair scale | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
+| Information lower bounds for marked columns and the full rough-pair array | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
+| Relative entropy lower bound for detection in prime-only dilation columns | Internal result | proved | [Source](LARGE_DILATION_ENTROPY_TEST.md) |
+| Prime-restricted resampled mean at polynomial dilation scales | Internal result | proved | [Source](LARGE_DILATION_ENTROPY_TEST.md) |
+| Two polynomial dilation scales force information loss | Internal result | proved | [Source](LARGE_DILATION_ENTROPY_TEST.md) |
+| One-bank entropy obstruction from recovery of the prime residue | Internal result | proved | [Source](LARGE_DILATION_ENTROPY_TEST.md) |
+| Primitive collision fibers of the diagonal cubic in Erdős #940 | Internal result | proved | [Source](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) |
+| Bounded singular-series moments for nonsquare primitive cubic collision fibers | Internal result | proved | [Source](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) |
+| Poisson separation of the critical cubic collision lattice count | Internal result | proved | [Source](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) |
+| Positive-density smooth roots with finitely many prime markings | Internal result | proved | [Source](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) |
+| A smooth-moment lower bound for values of the fixed cubic | Internal result | proved | [Source](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) |
+| Power saving for the unit cube-modulus congruence | Internal result | proved | [Source](ERDOS_943_CUBE_MODULUS_BOXES.md) |
+| Composite-target and unbalanced cube-modulus boxes | Internal result | proved | [Source](ERDOS_943_CUBE_MODULUS_BOXES.md) |
+| Uniform 7/19 bound for sums of two square-full integers | Internal result | proved | [Source](ERDOS_943_CUBE_MODULUS_BOXES.md) |
+| Sixth-power carry distribution and stationary phase | Internal result | proved | [Source](ERDOS_943_SIXTH_POWER_CARRY.md) |
+| Difference bound for short boxes at the cube modulus | Internal result | proved | [Source](ERDOS_943_SIXTH_POWER_CARRY.md) |
+| Uniform 5/14 bound for sums of two square-full integers | Internal result | proved | [Source](ERDOS_943_SIXTH_POWER_CARRY.md) |
+| Uniform one-third bound for sums of two square-full integers | Internal result | proved | [Source](ERDOS_943_KERNEL_GRAPH.md) |
+| Codegrees in the coprime square-full kernel graph | Internal result | proved | [Source](ERDOS_943_KERNEL_GRAPH.md) |
+| Exact amplified square tests and reconstruction | Internal result | proved | [Source](ERDOS_943_SIXTH_POWER_CARRY.md) |
+| A target-independent bound for off-diagonal cube-modulus collisions | Internal result | proved | [Source](ERDOS_943_OFF_DIAGONAL_COLLISIONS.md) |
+| Structured off-diagonal collision families in the balanced box | Internal result | proved | [Source](ERDOS_943_OFF_DIAGONAL_COLLISIONS.md) |
+| Small counting constants and heavy gap tails at the exact multiplier | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Exact semigroup counts after a polynomial prime cutoff at the endpoint | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Strictly intermediate cofiniteness at the logarithmic multiplier endpoint | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Almost-sure finite reversibility of the critical basis property | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) |
+| Total-variation gap law in a power-sized discriminant window | Internal result | proved | [Source](RANDOM_SPLIT_PRIME_SUMSETS.md) |
+| Complete -163 inert-supported bridge | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) |
+| Split-divisor structure of the Heegner core exceptions | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_CORE_SUMSETS.md) |
 | Class-number-two primitive norm sums at the logarithmic scale | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_TWO.md) |
 | Class-number-three primitive norm sums via fixed prime factors | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md) |
 | Exact primitive norm criterion and coordinate counts for class group C3 | Internal result | proved | [Source](PRIMITIVE_NORM_CLASS_NUMBER_THREE.md) |
@@ -161,8 +220,14 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Every nonprincipal neutral cube atom gives a primitive -23 norm sum | Internal result | proved | [Source](MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md) |
 | Complete primitive discriminant -23 inert-core-five exception set | Internal result | proved | [Source](MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md) |
 | Complete primitive discriminant -23 inert-core-seven exception set | Internal result | proved | [Source](MINUS23_INERT_CORE_SEVEN_CLOSURE.md) |
+| Stabilizer endpoint errors for primitive norm values | Internal result | proved | [Source](PRIMITIVE_NORM_ENDPOINT_CLASS_ERROR.md) |
+| Primitive value counts and genus comparison across different quadratic fields | Internal result | proved | [Source](PRIMITIVE_NORM_DIFFERENT_FIELDS_CLASS_ERROR.md) |
+| Class-specific target factors and sharper mixed-field error profiles | Internal result | proved | [Source](PRIMITIVE_NORM_TARGET_FACTOR_REFINEMENT.md) |
+| Exact sums of two primitive discriminant19 norms | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS19_EXACT.md) |
+| Exact refined Heegner bounds and complete finite-classification reductions | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_REFINED_BOUNDS.md) |
+| Exact sums of two primitive discriminant43 norms | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS43_EXACT.md) |
 
-**Computed obligations:** 73 unresolved; 15 resolved within their exact scope.
+**Computed obligations:** 86 unresolved; 15 resolved within their exact scope.
 
 
 Scope limits:
@@ -272,6 +337,20 @@ Scope limits:
 - The -23 target-dividing split-prime branch now has an all-valuation positive Iwahori correspondence and explicit gcd estimate, including its nonspherical complementary sector. An independent complete p=2 Brandt computation checks the signed return normalization through2^12. CN3EffectiveAll supplies the global sieve and covers all admissible N>=2^249. Exact40 completeness requires coverage of every 529-admissible target with 2^24<N<2^249.
 - The effective -23 theorem now proves representation of every529-admissible N>=2^249, with an explicit N^(5/7) numerical-pair lower bound. This is an existence cutoff, not a sharp-logarithmic-comparison cutoff. Global40-exception completeness is equivalent to the still-open finite middle interval2^24<N<2^249.
 - For discriminant-23, exact universal multiplier cones16q,19q,39q are now proved for every inert-free q with v23(q)<=1. This includes every target with inert part exactly19 and arbitrary split multipliers. The proof is a complete finite C3 phase cover with a reverse displayed-pair implication; no Hecke cutoff or full40-exception completion is inferred.
+- The split-prime and primitive sumsets at -7, -19, -43, -67 and -163 now have complete exception lists. The -163 bridge uses exact arithmetic pruning and 15406572 direct witnesses.
+- For every prime p congruent to 3 modulo 4, the largest eligible split-prime core exception is bounded by an explicit quartic in p and effectively by p^(3+epsilon) for each fixed epsilon>0. Fixed-window gap laws as p varies follow from independent splitting bits, with positive association of gap indicators.
+- The independent prime model has stretched-exponential gap tails and a sharp sparse basis threshold at gamma=1/2. Across prime discriminants the truncated arithmetic gap set through X^(1/12) has a total-variation limit on finite sets. Tightness beyond that moving cutoff remains open.
+- For every fixed k>=2, sparse random prime semigroups with 2 admitted have the sharp basis threshold gamma=1-1/k. The critical upper density of gaps is bounded below using the almost-sure counting constant from a random Euler product whose normalized counting function converges in all finite moments.
+- At gamma=1-1/k a constant multiplier lambda gives density one for every lambda>1. The cofiniteness transition is at lambda=1+1/k, where cofiniteness has strictly intermediate probability. Every sufficiently large dyadic block has gaps when 1<lambda<1+1/k. A prime weight enhancement (log q)^beta gives cofiniteness for every beta>0. Fixed-modulus averaged representation laws quantify local arithmetic effects.
+- At the exact multiplier lambda=1+1/k, a small realized counting constant gives a largest-gap tail lower bound exceeding every fixed negative power in order, and all positive moments diverge. Exposing primes through any fixed power of x leaves asymptotically a positive proportion of the cumulative representation tuples already determined. The stopped-martingale proof establishes infinitely many gaps with positive probability.
+- For the squarefree twin polynomial the twin-prime coefficient is isolated up to o(X/(log X)^2) whenever t=o(1/log log X), after dividing by t^2. The uniform upper sieve controls the error, while a positive lower bound in this window remains open.
+- At t=c/log log X, a fixed doubling margin below 8 implies a quantitative twin-prime lower bound. The uniform twin correlation reduces to two-prime equations with small cofactors. The existing marked dilation support does not estimate the required signed low-degree contribution.
+- At the exact multiplier, almost every selected prime set can be made into a basis of least order k by finite additions and made into a basis of least order k+1 by finite removals. These finite changes preserve the prime counting asymptotic.
+- Stabilizer endpoint errors extend to different quadratic fields with explicit exclusive-splitting target factors. Actual finite masks and bad coefficients are retained in the classical lower bridge. Numerical-value counts and relative genus comparison are separate from a leading singular-series asymptotic or a priority claim.
+- Mixed-field target factors now use the actual obstruction classes. A genus character on one enlarged fixed order yields exact density halving or a specified even-index alignment. The target-product limsup is sharp; optimality of the actual class error is not asserted.
+- Discriminant-19 primitive norm sums are completely classified: all even N>=2 with361 not dividing N, except4,76,380. The proof joins all8137832770 eligible targets through2^34 to the analytic tail using inert-core and exceptional-quotient descent. The older bounded observations remain historical; the new canonical exact packet supplies the unrestricted result.
+- Exact refined estimates now cover every inert core and every exceptional quotient e*p from 2^32 for discriminant43,2^35 for67 and2^45 for163, including p|e. Complete finite candidate classifications reduce to the respective explicit intervals; the refinement packet itself does not perform those large sumset checks.
+- The subsequent complete -43 certificate closes its finite obligation: every even N>=2 with1849 not dividing N is a sum of two positive primitive x^2+xy+11y^2 values except the eighteen stated exceptions, largest3182. All2097542158 required targets through2^32 were covered and separately replayed. The five-discriminant core theorem separately completes the classifications at -67 and -163.
 
 Tracked obligations (computed states):
 
@@ -326,5 +405,18 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Deferred stretch goal, outside the current papers: Does the fixed sums-of-two-squares set have the translation property? Equivalently, for every N does Q_N(u) have a norm value at some positive integer u?](ERDOS_675_TRANSLATION_PATTERNS.md) — ARITH-ERDOS675-SUMS-TWO-SQUARES-TRANSLATION
 - **mathematical / open:** [Prove the actual full-height weighted prime/cofactor energy C.2, or an adequate classical aggregate replacement, beyondZ=exp((logx)^1/16) throughT0=x*polylogx; the existing moderate-height lemma does not remove ZF.](SPARSE_ARITHMETIC_MODEL_COMPARISON.md) — GAP-SPARSE-FIXED-SHIFT-CLASSICAL-HIGH-ENERGY
 - **mathematical / open:** [With xi_X=b-D_X from CK.7 at the fixed outer scale and H=floor(lambda sqrt(log X)/K), prove sum_{1<=u<v<H}(H-v) sum_{X<n<=2X} xi_X(n)xi_X(n+u)xi_X(n+v)=o_lambda(X). Under the pair inputs this is equivalent to the third factorial limit. Positive upper sieving and the direct two-endpoint raw graph insertion do not supply the signed estimate.](AVERAGED_GAUSSIAN_NORM_TRIPLES.md) — GAP-ARITH-CK-AVERAGED-CENTERED-TRIPLES
+- **mathematical / open:** [For all sufficiently large N=2 mod 6, establish a positive value-normalized rough signed certificate R_N-2L_N+2V_N. The signed complementary rule has positive limiting margin at eta=1/5 and theta=0.592 or 3/5, requiring opposite one-sided estimates for the two pair bands. The square-root rule has positive limiting margin at eta=0.220, with a stronger rough-shell lower-count requirement. Both require uniform control of errors within the corresponding shape margin.](EISENSTEIN_DIVISOR_MODULUS.md) — GAP-ARITH-EISENSTEIN-ROUGH-PAIR-MODULUS-POINTWISE
+- **mathematical / open:** [At eta=1/5 and N=2 mod 6, establish for all sufficiently large N a positive value-normalized margin R_N minus the proper-divisor incidence count in (5), via a rough-shell lower bound and one-sided distribution for the mark in its small-prime and switched cofactor ranges. The full-factor comparison proves a positive margin off O_A(X/log^A X) exceptions. The raw lattice composite share exceeds one half there, so the pointwise route requires normalization.](EISENSTEIN_ROUGH_FACTOR_DISTRIBUTION.md) — GAP-ARITH-EISENSTEIN-ROUGH-PROPER-DIVISOR-POINTWISE
+- **mathematical / open:** [For all sufficiently large N=2 mod 6, prove the one-sided signed minor-arc bound (7) for the prime-pair exponential square minus four times the semiprime-pair exponential square, or another pointwise bound giving a strictly positive weighted one-mark margin at N^(1/3) roughness. The circle proof gives the margin off O_A(X/log^A X) exceptions for each fixed A. The exact integer computation covers all targets in this branch from 20 through 20000000.](EISENSTEIN_ROUGH_ONE_MARK.md) — GAP-ARITH-ROUGH-EISENSTEIN-MARKED-LOWER
+- **mathematical / open:** [For primes p sampled up to X in either fixed class 3 or 7 modulo 8, show that the probability of an eligible gap n in (X^(1/12), C_epsilon X^(3+epsilon)] tends to zero. The growing-window theorem and the uniform polynomial bound reduce full tightness to this range.](RANDOM_SPLIT_PRIME_SUMSETS.md) — GAP-ARITH-PRIME-DISCRIMINANT-GAP-TIGHTNESS
+- **mathematical / open:** [At gamma=1-1/k and lambda=1, decide whether kC has a natural density and determine its law if it exists. The complement has almost-sure lower density at least exp(-Gamma(1+1/k)^k A^k/k!).](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) — GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY
+- **mathematical / open:** [For 0<gamma<1-1/k, obtain a pointwise representation asymptotic or fluctuation law that accounts for arithmetic effects. The current asymptotic averages through x in fixed residue classes.](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) — GAP-ARITH-RANDOM-PRIME-POINTWISE-REPRESENTATIONS
+- **mathematical / open:** [For some positive t_X=o(1/log log X), prove a positive limiting lower bound for T_X(t_X,t_X)/(t_X^2 X/(log X)^2), or prove convergence on a fixed rescaled real interval to a function whose analytic continuation has positive value at zero. Either would give a quantitative twin-prime lower bound. The former is equivalent to that lower bound by coefficient isolation.](SQUAREFREE_TWIN_CORRELATION_NEAR_ZERO.md) — GAP-ARITH-SQUAREFREE-TWIN-POSITIVE-SMALL-PARAMETER
+- **mathematical / open:** [Prove for some fixed c>0, t=c/log log X, a positive signed margin at scale t^3*X/(log X)^2 in the restricted equation bq-ap=2 with a,b<=X^delta and p,q>X^(1/3), sufficient to exceed the truncation error. The current lifted weighted-dilation theorem requires marks absent from the terms carrying the quadratic coefficient.](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) — GAP-ARITH-SQUAREFREE-TWIN-SIGNED-COFACTOR-ESTIMATE
+- **mathematical / open:** [Prove a positive one-sided parity margin of order 1/(log X)^2 for the degree-at-most-three squarefree power-rough twin correlation. For the permissive column route, show d=o(b) and lower-bound the mean over prime shifts 2p at the same sparse scale, or obtain the margin directly.](ROUGH_TWIN_PARITY_ENTROPY.md) — GAP-ARITH-ROUGH-TWIN-ONE-SIDED-PARITY
+- **mathematical / open:** [Prove positive upper density for F=x^3+2y^3+4z^3. The immediate collision estimate is a constant-order average over nonsquare primitive differences of size comparable to the midpoint scale, including the signed lattice discrepancy of the congruence relaxation. A no-loss bound for the exceptional square fibers and the nonprimitive ranges, or a bounded size-biased representation moment, remains needed for the intended density conclusion.](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) — GAP-ARITH-ERDOS940-FIXED-CUBIC-POSITIVE-DENSITY
+- **mathematical / open:** [Prove the subpolynomial pointwise bound for ordered representations of N as the sum of two positive square-full integers in Erdős #943. The kernel graph gives O_epsilon(N^(1/3+epsilon)).](ERDOS_943_CUBE_MODULUS_BOXES.md) — GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS
+- **mathematical / open:** [Obtain the independent short-box carry or exact-square average sum of A_b over squarefree b comparable to B bounded by O_epsilon(M^(2/3+epsilon)/B) in the stated active boxes. At the balanced one-third scale this asks for O_epsilon(B^(1+epsilon)) amplified product pairs per modulus on average. The kernel-graph one-third theorem bypasses this estimate.](ERDOS_943_SIXTH_POWER_CARRY.md) — GAP-ARITH-ERDOS943-ONE-THIRD-CARRY-AVERAGE
+- **mathematical / open:** [Bound the ordered distinct unit collisions c_1^2 d_1^3 = c_2^2 d_2^3 modulo b^3 summed over squarefree b between B and 2B, with squarefree d_i comparable to B and c_i comparable to B^(3/4), by O_epsilon(B^(2+epsilon)). The current bound is O_epsilon(B^(71/28+epsilon)). A sufficient asymmetric estimate for the full one-third pointwise goal is equation (9).](ERDOS_943_OFF_DIAGONAL_COLLISIONS.md) — GAP-ARITH-ERDOS943-OFF-DIAGONAL-TWO
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

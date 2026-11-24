@@ -1,0 +1,440 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "authenticated_sources": {
+    "QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md": "69582d9ee0446768701cb3fb0375ffefd8e8631e1382c2923bfcbfa28e0ae82c",
+    "REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md": "b4b223a00cd9ed00a3f3957749b488dc0daea32f6e3491cb047d6d6dcac0aba5",
+    "quadratic_uniform_normalizer_inputs.json": "44b62800cf00878245a1266218c976ab0d0009e957545d2622ae18bbd4b16cb1",
+    "sources/long-spherical-e9edac2.pdf": "b2bf25fbc2d6211333d4ff3e1f6de0b6562990e869c6078a2e219ef746f1026b",
+    "sources/milne-algebraic-groups-2017.pdf": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67",
+    "verify_quadratic_uniform_normalizer.py": "613f98c163099866a8cd656a349040863ccb013ba6149392c48470c4fef73745"
+  },
+  "bounded_models": {
+    "bad_phase_negative_control": true,
+    "direct_endpoint_comparisons": 388,
+    "direct_nonpower_phase_models": 12,
+    "outside_endpoint_domain_counterexample": "N3,k1,ell-2:4/3",
+    "regular_factor_and_simple_point_identities": true,
+    "rows": [
+      {
+        "N": 3,
+        "k": 1,
+        "marked_moment": "8/15",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 2,
+        "marked_moment": "128/315",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 3,
+        "marked_moment": "1024/3003",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 4,
+        "marked_moment": "32768/109395",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 5,
+        "marked_moment": "262144/969969",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 6,
+        "marked_moment": "4194304/16900975",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 7,
+        "marked_moment": "33554432/145422675",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 8,
+        "marked_moment": "2147483648/9917826435",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 9,
+        "marked_moment": "17179869184/83945001525",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 3,
+        "k": 10,
+        "marked_moment": "274877906944/1412926920405",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 1,
+        "marked_moment": "0/1",
+        "pure_moment": "-1/3"
+      },
+      {
+        "N": 4,
+        "k": 2,
+        "marked_moment": "1/5",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 3,
+        "marked_moment": "1/7",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 4,
+        "marked_moment": "1/9",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 5,
+        "marked_moment": "1/11",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 6,
+        "marked_moment": "1/13",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 7,
+        "marked_moment": "1/15",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 8,
+        "marked_moment": "1/17",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 9,
+        "marked_moment": "1/19",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 4,
+        "k": 10,
+        "marked_moment": "1/21",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 1,
+        "marked_moment": "0/1",
+        "pure_moment": "-16/35"
+      },
+      {
+        "N": 5,
+        "k": 2,
+        "marked_moment": "0/1",
+        "pure_moment": "128/1155"
+      },
+      {
+        "N": 5,
+        "k": 3,
+        "marked_moment": "1024/15015",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 4,
+        "marked_moment": "32768/692835",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 5,
+        "marked_moment": "262144/7436429",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 6,
+        "marked_moment": "4194304/152108775",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 7,
+        "marked_moment": "33554432/1502700975",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 8,
+        "marked_moment": "2147483648/115707975075",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 9,
+        "marked_moment": "17179869184/1091285019825",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 5,
+        "k": 10,
+        "marked_moment": "274877906944/20251952525805",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 1,
+        "marked_moment": "0/1",
+        "pure_moment": "-1/2"
+      },
+      {
+        "N": 6,
+        "k": 2,
+        "marked_moment": "0/1",
+        "pure_moment": "1/5"
+      },
+      {
+        "N": 6,
+        "k": 3,
+        "marked_moment": "0/1",
+        "pure_moment": "-1/28"
+      },
+      {
+        "N": 6,
+        "k": 4,
+        "marked_moment": "1/45",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 5,
+        "marked_moment": "1/66",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 6,
+        "marked_moment": "1/91",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 7,
+        "marked_moment": "1/120",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 8,
+        "marked_moment": "1/153",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 9,
+        "marked_moment": "1/190",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 6,
+        "k": 10,
+        "marked_moment": "1/231",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 8,
+        "k": 1,
+        "marked_moment": "0/1",
+        "pure_moment": "-1/2"
+      },
+      {
+        "N": 8,
+        "k": 2,
+        "marked_moment": "0/1",
+        "pure_moment": "2/7"
+      },
+      {
+        "N": 8,
+        "k": 3,
+        "marked_moment": "0/1",
+        "pure_moment": "-5/42"
+      },
+      {
+        "N": 8,
+        "k": 4,
+        "marked_moment": "0/1",
+        "pure_moment": "1/33"
+      },
+      {
+        "N": 8,
+        "k": 5,
+        "marked_moment": "0/1",
+        "pure_moment": "-1/286"
+      },
+      {
+        "N": 8,
+        "k": 6,
+        "marked_moment": "1/455",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 8,
+        "k": 7,
+        "marked_moment": "1/680",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 8,
+        "k": 8,
+        "marked_moment": "1/969",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 8,
+        "k": 9,
+        "marked_moment": "1/1330",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 8,
+        "k": 10,
+        "marked_moment": "1/1771",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 9,
+        "k": 1,
+        "marked_moment": "0/1",
+        "pure_moment": "-16/33"
+      },
+      {
+        "N": 9,
+        "k": 2,
+        "marked_moment": "0/1",
+        "pure_moment": "128/429"
+      },
+      {
+        "N": 9,
+        "k": 3,
+        "marked_moment": "0/1",
+        "pure_moment": "-20480/138567"
+      },
+      {
+        "N": 9,
+        "k": 4,
+        "marked_moment": "0/1",
+        "pure_moment": "163840/3187041"
+      },
+      {
+        "N": 9,
+        "k": 5,
+        "marked_moment": "0/1",
+        "pure_moment": "-524288/47805615"
+      },
+      {
+        "N": 9,
+        "k": 6,
+        "marked_moment": "0/1",
+        "pure_moment": "4194304/3907022535"
+      },
+      {
+        "N": 9,
+        "k": 7,
+        "marked_moment": "33554432/49589132175",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 9,
+        "k": 8,
+        "marked_moment": "2147483648/4770474515235",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 9,
+        "k": 9,
+        "marked_moment": "17179869184/54969585427185",
+        "pure_moment": "0/1"
+      },
+      {
+        "N": 9,
+        "k": 10,
+        "marked_moment": "274877906944/1223796559773645",
+        "pure_moment": "0/1"
+      }
+    ]
+  },
+  "computation_is_not_universal_proof": true,
+  "schema": 1,
+  "scope": {
+    "absolute_nonpower_up_to_units": true,
+    "all_orders_power_marker_iff": "N-2<=ell<=a",
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "characteristic": 0,
+    "circuit_coefficients": [
+      2,
+      2,
+      2
+    ],
+    "dimensions": "all_N_ge_3",
+    "eventual_integer_marker_iff": "ell>=N-2",
+    "exact_mixed_formula_domain": "k>=1,ell>=-k",
+    "extensions": "all_characteristic_zero_extensions",
+    "forms": "all_nondegenerate_over_given_field",
+    "global_failure_descent_claimed": false,
+    "long_is_logical_premise": false,
+    "marker": "q^(N-2)",
+    "nonpower_phase": "P^(N-2)*(1+P)",
+    "phase": "(q+1)*(q-(q+1)^2*B)^2/q^3",
+    "probe_dimensions": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "probe_orders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "rank_A": 2,
+    "rank_B": "N-2",
+    "requires_rational_point": false,
+    "sharp_pure_power_iff": "a>=N-2",
+    "ternary_direct_phase": true
+  },
+  "status": "PASS",
+  "universal_proof": "QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md"
+}

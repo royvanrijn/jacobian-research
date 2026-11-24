@@ -12,6 +12,7 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Binary Gaussian moments in Lean | Internal result | conditional | [Source](formal/gmc2/README.md) |
 | Characteristic-zero finite etale Keller construction | Internal result | proved | [Source](formal/finite-etale-keller/README.md) |
 | Tangent-pencil algebra in Lean | Partial result | proved | [Source](formal/discriminant-pencils/README.md) |
+| Primitive quadratic norms and binary correlations in Lean | Partial result | proved | [Source](formal/quadratic-norms/README.md) |
 | Complete complex quadratic-height classification and exact finite moment ideals | Internal result | proved | [Source](extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 | Complete quadratic-height Hopf purity and safety classification | Internal result | proved | [Source](extended-geometry/QUADRATIC_HEIGHT_HOPF_CLASSIFICATION.md) |
 | Odd cubic-height rational reconstruction and sharp low-degree safety | Internal result | proved | [Source](extended-geometry/ODD_CUBIC_HEIGHT_LOW_DEGREE_CLASSIFICATION.md) |
@@ -32,6 +33,7 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Canonical rational composition normal form for every pure odd-start unit phase | Internal result | proved | [Source](extended-geometry/ODD_START_RATIONAL_COMPOSITION_NORMAL_FORM.md) |
 | Marked gcd recognition and finite purity at every odd starting height | Internal result | proved | [Source](extended-geometry/ODD_START_MARKED_GCD_AND_FINITE_PURITY.md) |
 | Uniform finite purity cutoff and reduced moment locus for every starting height | Internal result | proved | [Source](extended-geometry/ALL_START_TWO_HEIGHT_EFFECTIVE_PURITY_PREFIX.md) |
+| Lean verification of Mathieu kernels on quadratic complements | Partial result | proved | [Source](formal/mathieu-quadratic/README.md) |
 
 **Computed obligations:** 11 unresolved; 1 resolved within their exact scope.
 
@@ -69,6 +71,6 @@ Tracked obligations (computed states):
 - **formalization / open:** [Formalize the full generic tangent-pencil geometric theorem beyond the checked tangent, contact and collision algebra.](formal/discriminant-pencils/README.md) — FORMAL-DISCRIMINANT-COMPLETE
 - **verification / open:** [Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.](README.md) — GAP-FOUNDATIONS-2
 - **mathematical / open:** [Classify the remaining pure rational-return odd-cubic quotients and admissible polynomial covers. In the regular winding-one class, pure phases of exact least degree 17 or 19 are safe and have no unit-center cases. General higher quotients and covers remain open, including the individual odd-cubic questions at 29 and 31. The unrestricted degree-17 and degree-19 Image questions remain open. Exact membership recognition and degree-bounded purity prefixes are now settled by the separate gcd/resultant theorem; this question asks for geometric classification.](extended-geometry/ODD_CUBIC_DEGREE_NINETEEN_SAFETY.md) — GAP-HOPF-ODD-CUBIC-MULTIROOT-CENTERS
-- **mathematical / open:** [Explicitly classify the geometric families of nonconstant-Phi pure unit centers at odd starting heights by solving the canonical rational-composition polynomiality conditions. Individual purity recognition and a uniform degree-only finite prefix are now proved; wider height profiles remain separate.](extended-geometry/ODD_START_RATIONAL_COMPOSITION_NORMAL_FORM.md) — GAP-HOPF-ODD-START-UNIT-CENTER-CLASSIFICATION
+- **mathematical / open:** [Classify which varying normalized rational endpoint coordinates carry nonconstant-Phi pure unit centers at odd starting heights, and give a geometric classification of the resulting families. For a supplied endpoint the all-height atlas and exact reconstruction are already proved.](extended-geometry/ODD_START_RATIONAL_COMPOSITION_NORMAL_FORM.md) — GAP-HOPF-ODD-START-UNIT-CENTER-CLASSIFICATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

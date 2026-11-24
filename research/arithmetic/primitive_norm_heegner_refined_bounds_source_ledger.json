@@ -1,0 +1,177 @@
+{
+  "title": "Refined analytic bounds and explicit finite reductions for primitive norms at discriminants -43,-67,-163",
+  "proof": "PRIMITIVE_NORM_HEEGNER_REFINED_BOUNDS.md",
+  "proof_sha256": "3a63897a0b8d5438e7912a66bb1f9c22c163143007f340d5cfc5a8e28e4f2384",
+  "checker": "verify_primitive_norm_heegner_refined_bounds.py",
+  "checker_sha256": "70c2b4c0a2964464b0590ccfa0c939341677c28d9bdb780d0f3b386f44790668",
+  "receipt": "primitive_norm_heegner_refined_bounds_checks.json",
+  "receipt_sha256": "3cfd95315edf8f74b95a443f55b92a3009eb197d0d84ea3074e926eff39b86d2",
+  "reproduction": "python3 research/arithmetic/verify_primitive_norm_heegner_refined_bounds.py --output research/arithmetic/primitive_norm_heegner_refined_bounds_checks.json",
+  "sources": [
+    {
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "version": "v3.08, 19 July 2020",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "local_path": "sources/milne-ant308.pdf",
+      "sha256": "24b83c789a89f25aebffb3cbe4ae5ca29edd0075acc072de093d140770630847",
+      "statements_used": [
+        "Theorem 4.3, printed p.70 / PDF p.72: every ideal class has an integral representative of norm at most (2/pi)*sqrt(D), which is <5,<6,<9 for D43,67,163. The corresponding small rational primes are inert; possible ideal norms1 and4 give principal ideals."
+      ],
+      "inspection_scope": "Actual retained theorem statement rechecked; the three finite residue-symbol specializations are independently verified in this checker."
+    },
+    {
+      "author": "John Voight",
+      "title": "Quaternion Algebras",
+      "version": "Author edition v1.0.7u, 5 August 2026",
+      "url": "https://jvoight.github.io/quat-book.pdf",
+      "local_path": "sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+      "statements_used": [
+        "Theorem15.5.5 and Example15.5.7, printed p.241 / PDF p.261: for every prime p congruent3 mod4, B=(-p,-1) has discriminant p and O=Z[(1+i)/2]+Z[(1+i)/2]j is maximal. Applied separately to43,67,163.",
+        "Theorem25.1.1, printed p.403 / PDF p.423: inverse-projective-unit mass (D-1)/12. Principal stabilizer2 gives w=6/(D-1), and the ramified fine point weight is nu=12/(D^2-1).",
+        "Main Theorem 14.7.4, printed p.226: rational reduced norms of a definite rational quaternion algebra are all positive rationals; used to identify the global norm-character quotient.",
+        "Main Theorem 28.5.3, printed p.473: strong approximation for the norm-one group when S contains a split noncompact place; removes character-at-a-split-place constituents.",
+        "Propositions 41.3.1 and 41.3.6, printed pp.756-757: all-integral-ideal degree sigma(m), relatively prime multiplicativity and unramified prime-power recurrence. Principal scalars act trivially over Q and on projective markings."
+      ],
+      "inspection_scope": "Actual maximal-order and mass statements rechecked in this continuation. Remaining actual primary statements were inspected for the retained M19 transfer proof; their application is unchanged except for the explicit discriminant and mass, verified in H.7-H.12."
+    },
+    {
+      "author": "Herve Jacquet and Robert P. Langlands",
+      "title": "Automorphic Forms on GL(2)",
+      "version": "IAS typesetting accessed18 November2026",
+      "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+      "local_path": "sources/jacquet-langlands-IAS-2026.pdf",
+      "sha256": "ede21b1b303d3a398eb0b9057716c4b293bafe39eba118fd9b6a871eab6f2dcf",
+      "statements_used": [
+        "Theorem 14.4, printed p.248 / PDF p.254: global transfer after excluding finite-dimensional local factors at split places.",
+        "Section 5, Proposition 5.20, printed pp.105-106 / PDF pp.111-112: archimedean parameter for chi tensor rho_n; n=0 and trivial infinite type give weight two."
+      ],
+      "inspection_scope": "Actual primary statements inspected in the retained M19 construction, whose transfer argument is reused with the new explicitly checked mass and discriminant. No new independent proof of the deep theorem is claimed."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "Formes modulaires et representations l-adiques",
+      "version": "Seminaire Bourbaki1968-1969, expose355",
+      "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+      "local_path": "sources/deligne-modular-355.pdf",
+      "sha256": "19509c19b0cb056f4a5eba83a48a99f54bb6df0c7a96ab7f4018b0765e1ed98c",
+      "statements_used": [
+        "Theorems 4.9 and 5.1, PDF pp.30-31: Frobenius/Hecke realization and purity consequence, as cited in the existing transfer proof.",
+        "This older modular realization is not the sole basis for arbitrary-level root bounds here: the explicit primary statement is Deligne Weil I, Theorem 8.2."
+      ],
+      "inspection_scope": "Actual primary statements inspected in the retained M19 construction, whose transfer argument is reused with the new explicitly checked mass and discriminant. No new independent proof of the deep theorem is claimed."
+    },
+    {
+      "author": "Pierre Deligne",
+      "title": "La conjecture de Weil. I",
+      "version": "Publications mathematiques de l IHES43 (1974),273-307",
+      "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+      "local_path": "sources/deligne-weil-I.pdf",
+      "sha256": "8392b345d4854e6dc55fb42cfc0b616d941935983723627237239a87348f42e5",
+      "statements_used": [
+        "Theorem 8.2, printed p.302 / PDF p.31: for a normalized primitive cuspidal modular form of weight k >= 2, arbitrary level N and character epsilon, the roots of T^2 - a_p T + epsilon(p)p^(k-1) have absolute value p^((k-1)/2) whenever p does not divide N. Applied at k=2 and trivial central character; old spaces at other primes have the same unramified roots.",
+        "Theorem 1.6, PDF p.5: purity for smooth projective varieties over finite fields, as used in the existing transfer proof."
+      ],
+      "inspection_scope": "Actual Theorem8.2 text rechecked in this continuation; the arbitrary-level, unramified weight-two root bound is used on the primitive constituents underlying all cusp spaces. The retained M19 review also visually inspected this page. Deep proof remains imported."
+    }
+  ],
+  "canonical_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_MINUS19_EXACT.md",
+      "sha256": "19c4b0e10bd9c47f28470b5db10bb5be4c98588831266859d9c2aa323be031ab",
+      "scope": "Sections2-4: complete coarse/fine ideal quotients, Hecke normalization, generic dyadic filter and local bad-point arguments. New H.7-H.12 give all changed constants and local branches. The M19 exact finite scan and its final classification are not premises."
+    },
+    {
+      "path": "../../results/eisenstein-restricted-prime-sums/sections/hecke-transfer.tex",
+      "sha256": "f4fa2e2d2da4a25a6d692902b777b037fcb4ccd643e9abc3a45aa160a7cc8367",
+      "scope": "Complement of all global norm characters: all-ideal norm <=tau(m)*sqrt(m), indices coprime to discriminant and auxiliary level. Target-dividing inert primes use direct anisotropic scaling, never an unramified estimate at their own level."
+    }
+  ],
+  "antecedent_context_not_premise": [
+    {
+      "authors": "Michael Baake, Rudolf Scharlau, Peter Zeiner",
+      "title": "Similar Sublattices of Planar Lattices",
+      "publication": "Canadian Journal of Mathematics63(6)(2011),1220-1237",
+      "url": "https://doi.org/10.4153/CJM-2011-019-9",
+      "inspected": "Actual primary Proposition5.2 and Corollary5.3, printed pp.1227-1228; primitive values omit inert factors and ramified squares. These are single-value statements, not the additive coverage H.3. H.6 is proved directly here."
+    },
+    {
+      "title": "Exact Sumsets of Primitive Quadratic Norms",
+      "author": "Roy van Rijn",
+      "url": "https://hexagonmath.org/pdf/2611.00673v1",
+      "inspected": "Actual deposited Theorem1.1 covers discriminants -3,-7,-8,-11; no -43,-67,-163 classification is imported. No historical priority inference is drawn from a targeted search."
+    }
+  ],
+  "proved_claims": {
+    "HeegnerCoreAndQuotientOnsets": "H1/H.2: every inert core, and every e*p with e in the exact E_D list and p split, is a split-semigroup sum at n>=X_D; includes p dividing e.",
+    "HeegnerFiniteClassificationReduction": "H2/H.3-H.5: global core and primitive candidate classifications are equivalent to complete finite coverage through X_D. This packet does not verify that finite coverage.",
+    "OddNormLatticeBound": "H3/H.13: S_odd,D(X)<=3*pi/(2*sqrt(D))*X+(3+6/sqrt(D))*sqrt(X)+2 for every real X>=0; complete row/integral proof.",
+    "ValuationResolvedQuaternionCriterion": "H4/H.15: explicit sufficient inequality with all three target-dividing inert branches, finite state savings, odd-lattice tail and correct principal mass."
+  },
+  "exact_domains": [
+    {
+      "D": 43,
+      "analytic_onset": 4294967296,
+      "finite_coverage_still_required": [
+        2,
+        4294967296
+      ],
+      "core_state_inequalities": 15552,
+      "thin_family_inequalities": 640,
+      "small_sumset_bound": 1024,
+      "core_exception_count": 10,
+      "candidate_primitive_exception_count": 18,
+      "global_tail_onset": 79228162514264337593543950336,
+      "large_finite_coverage_performed": false
+    },
+    {
+      "D": 67,
+      "analytic_onset": 34359738368,
+      "finite_coverage_still_required": [
+        2,
+        34359738368
+      ],
+      "core_state_inequalities": 14823,
+      "thin_family_inequalities": 1281,
+      "small_sumset_bound": 1024,
+      "core_exception_count": 21,
+      "candidate_primitive_exception_count": 38,
+      "global_tail_onset": 79228162514264337593543950336,
+      "large_finite_coverage_performed": false
+    },
+    {
+      "D": 163,
+      "analytic_onset": 35184372088832,
+      "finite_coverage_still_required": [
+        2,
+        35184372088832
+      ],
+      "core_state_inequalities": 12393,
+      "thin_family_inequalities": 3417,
+      "small_sumset_bound": 1024,
+      "core_exception_count": 67,
+      "candidate_primitive_exception_count": 129,
+      "global_tail_onset": 79228162514264337593543950336,
+      "large_finite_coverage_performed": false
+    }
+  ],
+  "verification": {
+    "author_replay": "PASS:42768 exact core-state inequalities,5338 exact exceptional-quotient inequalities, all global Euler/tail comparisons, direct small sumsets/coordinate comparison through1024, target-dividing shell controls and18 negative controls. No large finite sumset scan.",
+    "internal_review": "Root and a separate internal agent read the mathematical proof and checker. The separate reviewer found the initial thin-tail boundary/count decay incorrectly grouped as n^(-1/2); H.23 and code were corrected to n^(-1/3), a targeted exact negative control was added, and the full rational replay passed. Reviewer independently recomputed corrected tails with all advertised ceilings passing.",
+    "independent_replay": "Root performed a separate full analytic replay against current bytes; its JSON matches the retained author receipt exactly. A separate internal reviewer independently recomputed the corrected global tails from inert primes through1024 and the displayed constants; all ceilings passed. That reviewer did not duplicate the full analytic checker or run a sumset scan.",
+    "assurance_limit": "No formal verification, external mathematical review, independent external replay or historical novelty claim.",
+    "root_internal_review": "Root independently read H1-H4 and the complete checker; reviewed all changed order/mass, local valuation, lattice, Euler, interval and descent interfaces. Review passed after the separately reported H.23 thin-tail correction."
+  },
+  "runtime_contract": {
+    "required": "Python3 standard library with assertions active.",
+    "arithmetic": "Integer arithmetic,Fraction,integer roots,upward fixed-denominator reciprocal rounding; no floating-point acceptance.",
+    "optimized_modes": "-O,-OO,PYTHONOPTIMIZE=1 each tested and rejected before computation."
+  },
+  "limitations": [
+    "H.3 remains open for all three discriminants in this packet; a longer bounded sample cannot supply it.",
+    "The -163 finite bound is still too large for the current scan strategy.",
+    "Classical spectral theorems are explicit imports and are not proved by this checker.",
+    "The onsets and lattice estimates are sufficient, not optimal."
+  ]
+}

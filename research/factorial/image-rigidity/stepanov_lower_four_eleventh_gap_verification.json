@@ -1,0 +1,769 @@
+{
+  "status": "PASS",
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "python_version": "3.12.14",
+  "dependencies": "Python standard library only",
+  "scope": "universal polynomial identities, complete ten-case F11 certificates, and finite actual-jet guards",
+  "all_order_closure_established_by_finite_probes": false,
+  "all_order_proof": "STEPANOV_LOWER_FOUR_ELEVENTH_GAP_CLOSURE.md, Sections 2-6",
+  "source_pins": [
+    {
+      "path": "research/factorial/image-rigidity/STEPANOV_LOWER_FOUR_ELEVENTH_GAP_CLOSURE.md",
+      "sha256": "35ddf2dc6a2e2b2bd1f87411485ed74c16e2e270bf13ad37baff3e4662b8c2d5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_stepanov_lower_four_eleventh_gap.py",
+      "sha256": "2fb3a55e53b86e95b37c8d49122ad93c90223a6d281a69642ddf8eca8da9b9ee"
+    }
+  ],
+  "symbolic_top_coefficient_checks": {
+    "coefficient_convention": "ascending integer coefficients in C",
+    "top_coefficients_by_w": {
+      "1": {
+        "f10": [
+          1
+        ],
+        "f9": [
+          35,
+          1
+        ],
+        "f8": [
+          510,
+          36
+        ]
+      },
+      "2": {
+        "f10": [
+          0
+        ],
+        "f9": [
+          -1
+        ],
+        "f8": [
+          -27,
+          -1
+        ]
+      },
+      "3": {
+        "f10": [
+          0
+        ],
+        "f9": [
+          0
+        ],
+        "f8": [
+          1
+        ]
+      }
+    },
+    "scalar_multipliers_for_f10_f9_f8": [
+      [
+        546,
+        69,
+        3
+      ],
+      [
+        -30,
+        -2
+      ],
+      [
+        1
+      ]
+    ],
+    "H_top_coefficients": [
+      1,
+      45,
+      870
+    ],
+    "constant_numerator": [
+      66,
+      -21,
+      3
+    ],
+    "H_at_one_mod121": 10,
+    "S0_mod121_when_C_divisible121": 55,
+    "remaining_terminal_mod1331": 1065
+  },
+  "dual_number_check": {
+    "ring": "F11[u]/(u^2)",
+    "rho": [
+      1,
+      10
+    ],
+    "quotient_product_verified": true,
+    "H_at_one": [
+      10,
+      0
+    ],
+    "F_top_coefficients": [
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        2
+      ]
+    ],
+    "S": [
+      0,
+      5
+    ]
+  },
+  "complete_finite_field_certificate": {
+    "prime": 11,
+    "coefficient_convention": "ascending, residues 0 through 10",
+    "ell": [
+      1,
+      4,
+      1,
+      6,
+      7,
+      9,
+      3,
+      6,
+      1
+    ],
+    "ell_at_minus_one": 10,
+    "squarefree_witness": {
+      "A": [
+        9,
+        10,
+        6,
+        5,
+        7,
+        6,
+        10
+      ],
+      "B": [
+        9,
+        6,
+        6,
+        2,
+        7,
+        1,
+        10,
+        7
+      ],
+      "identity": "A*ell+B*ell'=1 in F11[x]"
+    },
+    "complete_nonzero_residue_witnesses": [
+      {
+        "d_mod11": 1,
+        "quadratic": [
+          5,
+          1,
+          1
+        ],
+        "A": [
+          10,
+          5
+        ],
+        "B": [
+          7,
+          5,
+          7,
+          0,
+          5,
+          7,
+          9,
+          6
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 2,
+        "quadratic": [
+          10,
+          1,
+          1
+        ],
+        "A": [
+          3,
+          4
+        ],
+        "B": [
+          2,
+          7,
+          6,
+          2,
+          9,
+          0,
+          10,
+          7
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 3,
+        "quadratic": [
+          4,
+          1,
+          1
+        ],
+        "A": [
+          2,
+          5
+        ],
+        "B": [
+          8,
+          3,
+          0,
+          6,
+          4,
+          9,
+          6,
+          6
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 4,
+        "quadratic": [
+          9,
+          1,
+          1
+        ],
+        "A": [
+          0,
+          9
+        ],
+        "B": [
+          5,
+          7,
+          2,
+          9,
+          5,
+          0,
+          10,
+          2
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 5,
+        "quadratic": [
+          3,
+          1,
+          1
+        ],
+        "A": [
+          7,
+          6
+        ],
+        "B": [
+          9,
+          4,
+          0,
+          1,
+          8,
+          6,
+          7,
+          5
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 6,
+        "quadratic": [
+          8,
+          1,
+          1
+        ],
+        "A": [
+          5,
+          1
+        ],
+        "B": [
+          5,
+          5,
+          10,
+          8,
+          5,
+          7,
+          1,
+          10
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 7,
+        "quadratic": [
+          2,
+          1,
+          1
+        ],
+        "A": [
+          6,
+          5
+        ],
+        "B": [
+          3,
+          6,
+          10,
+          10,
+          9,
+          1,
+          2,
+          6
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 8,
+        "quadratic": [
+          7,
+          1,
+          1
+        ],
+        "A": [
+          7,
+          6
+        ],
+        "B": [
+          7,
+          2,
+          10,
+          4,
+          0,
+          8,
+          7,
+          5
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 9,
+        "quadratic": [
+          1,
+          1,
+          1
+        ],
+        "A": [
+          7,
+          6
+        ],
+        "B": [
+          5,
+          5,
+          3,
+          10,
+          1,
+          5,
+          7,
+          5
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      },
+      {
+        "d_mod11": 10,
+        "quadratic": [
+          6,
+          1,
+          1
+        ],
+        "A": [
+          8,
+          10
+        ],
+        "B": [
+          8,
+          10,
+          0,
+          7,
+          7,
+          7,
+          8,
+          1
+        ],
+        "identity": "A*ell+B*quadratic=1 in F11[x]"
+      }
+    ],
+    "deliberately_corrupted_witness_rejected": true
+  },
+  "actual_lower_reduction_guards": [
+    {
+      "N": 97,
+      "n": 96,
+      "gamma": 385,
+      "C": 1452,
+      "coefficient_k_0_through_10_mod11": [
+        1,
+        6,
+        3,
+        9,
+        7,
+        6,
+        1,
+        4,
+        1,
+        0,
+        0
+      ],
+      "tail_from_k10_vanishes_by_integer_block_recurrence": true,
+      "reduction": "x^(n-8)*ell(x)"
+    },
+    {
+      "N": 1065,
+      "n": 1064,
+      "gamma": 4257,
+      "C": 15972,
+      "coefficient_k_0_through_10_mod11": [
+        1,
+        6,
+        3,
+        9,
+        7,
+        6,
+        1,
+        4,
+        1,
+        0,
+        0
+      ],
+      "tail_from_k10_vanishes_by_integer_block_recurrence": true,
+      "reduction": "x^(n-8)*ell(x)"
+    },
+    {
+      "N": 2396,
+      "n": 2395,
+      "gamma": 9581,
+      "C": 35937,
+      "coefficient_k_0_through_10_mod11": [
+        1,
+        6,
+        3,
+        9,
+        7,
+        6,
+        1,
+        4,
+        1,
+        0,
+        0
+      ],
+      "tail_from_k10_vanishes_by_integer_block_recurrence": true,
+      "reduction": "x^(n-8)*ell(x)"
+    },
+    {
+      "N": 11713,
+      "n": 11712,
+      "gamma": 46849,
+      "C": 175692,
+      "coefficient_k_0_through_10_mod11": [
+        1,
+        6,
+        3,
+        9,
+        7,
+        6,
+        1,
+        4,
+        1,
+        0,
+        0
+      ],
+      "tail_from_k10_vanishes_by_integer_block_recurrence": true,
+      "reduction": "x^(n-8)*ell(x)"
+    }
+  ],
+  "actual_normalized_jet_guards": [
+    {
+      "N": 97,
+      "n": 96,
+      "actual_lower_shape_gamma": 385,
+      "actual_upper_moment_shape": 389,
+      "C": 1452,
+      "v11_C": 2,
+      "coefficient_modulus": 1771561,
+      "u_degree": 3,
+      "minor_determinant_mod11": 1,
+      "normalized_last_component": 1,
+      "kernel_first_ten_coefficients": [
+        [
+          1058859,
+          1560657,
+          374020,
+          1530336,
+          427392,
+          1505604,
+          1360519,
+          55680,
+          960075,
+          1433365
+        ],
+        [
+          1547711,
+          1521068,
+          440063,
+          688930,
+          1290514,
+          538836,
+          91098,
+          1271116,
+          1081705,
+          673023
+        ],
+        [
+          10956,
+          300993,
+          1404908,
+          25954,
+          1141072,
+          1026867,
+          1339540,
+          1071182,
+          367614,
+          1086271
+        ],
+        [
+          1532344,
+          1683484,
+          1675399,
+          228403,
+          895434,
+          1019439,
+          1186231,
+          1516313,
+          1533832,
+          898468
+        ]
+      ],
+      "all_retained_rows_recomposed": true,
+      "S_coefficients": [
+        1042591,
+        713212,
+        854952,
+        826375
+      ],
+      "S0_over_11_mod11": 5,
+      "S1_mod11": 5,
+      "constant_formula_modulus": 1771561,
+      "constant_formula_value": 1042591
+    },
+    {
+      "N": 1065,
+      "n": 1064,
+      "actual_lower_shape_gamma": 4257,
+      "actual_upper_moment_shape": 4261,
+      "C": 15972,
+      "v11_C": 3,
+      "coefficient_modulus": 1771561,
+      "u_degree": 3,
+      "minor_determinant_mod11": 1,
+      "normalized_last_component": 1,
+      "kernel_first_ten_coefficients": [
+        [
+          341450,
+          903264,
+          68253,
+          80877,
+          1504897,
+          1275220,
+          887167,
+          880900,
+          897760,
+          1755588
+        ],
+        [
+          1656853,
+          166110,
+          1323968,
+          596486,
+          762349,
+          628618,
+          288933,
+          454971,
+          37596,
+          1124353
+        ],
+        [
+          1079749,
+          987789,
+          1561966,
+          623694,
+          894716,
+          1497678,
+          1026513,
+          48127,
+          1078005,
+          46881
+        ],
+        [
+          1416547,
+          30382,
+          1214873,
+          1351767,
+          1116501,
+          1593584,
+          1576093,
+          958866,
+          938633,
+          6819
+        ]
+      ],
+      "all_retained_rows_recomposed": true,
+      "S_coefficients": [
+        953535,
+        605643,
+        1384690,
+        1445290
+      ],
+      "S0_over_11_mod11": 5,
+      "S1_mod11": 5,
+      "constant_formula_modulus": 1771561,
+      "constant_formula_value": 953535
+    },
+    {
+      "N": 2396,
+      "n": 2395,
+      "actual_lower_shape_gamma": 9581,
+      "actual_upper_moment_shape": 9585,
+      "C": 35937,
+      "v11_C": 3,
+      "coefficient_modulus": 1771561,
+      "u_degree": 3,
+      "minor_determinant_mod11": 10,
+      "normalized_last_component": 1,
+      "kernel_first_ten_coefficients": [
+        [
+          19348,
+          663684,
+          1399253,
+          402979,
+          67417,
+          636340,
+          1202614,
+          1612950,
+          1355624,
+          1735623
+        ],
+        [
+          1364033,
+          517494,
+          103441,
+          227799,
+          942034,
+          148127,
+          822664,
+          802362,
+          1762572,
+          1060465
+        ],
+        [
+          113443,
+          1046353,
+          449250,
+          559806,
+          314400,
+          957292,
+          173342,
+          1037060,
+          1430720,
+          1476375
+        ],
+        [
+          1035881,
+          1743379,
+          1024540,
+          239051,
+          1199023,
+          591341,
+          1025059,
+          1460653,
+          261154,
+          89341
+        ]
+      ],
+      "all_retained_rows_recomposed": true,
+      "S_coefficients": [
+        992134,
+        1122071,
+        784409,
+        303292
+      ],
+      "S0_over_11_mod11": 5,
+      "S1_mod11": 5,
+      "constant_formula_modulus": 1771561,
+      "constant_formula_value": 992134
+    },
+    {
+      "N": 11713,
+      "n": 11712,
+      "actual_lower_shape_gamma": 46849,
+      "actual_upper_moment_shape": 46853,
+      "C": 175692,
+      "v11_C": 4,
+      "coefficient_modulus": 1771561,
+      "u_degree": 3,
+      "minor_determinant_mod11": 1,
+      "normalized_last_component": 1,
+      "kernel_first_ten_coefficients": [
+        [
+          1307756,
+          758185,
+          86887,
+          886132,
+          634423,
+          1478863,
+          1639182,
+          1422617,
+          1017550,
+          1595868
+        ],
+        [
+          1085854,
+          1205621,
+          417557,
+          1190112,
+          428268,
+          327812,
+          1015659,
+          1462538,
+          1436477,
+          613249
+        ],
+        [
+          435545,
+          1456301,
+          1518043,
+          112590,
+          1566871,
+          717712,
+          1287389,
+          873347,
+          356603,
+          853467
+        ],
+        [
+          142780,
+          1333431,
+          1463770,
+          1307844,
+          5116,
+          661884,
+          710943,
+          1430040,
+          833484,
+          666995
+        ]
+      ],
+      "all_retained_rows_recomposed": true,
+      "S_coefficients": [
+        1262327,
+        1193945,
+        125564,
+        1167111
+      ],
+      "S0_over_11_mod11": 5,
+      "S1_mod11": 5,
+      "constant_formula_modulus": 1771561,
+      "constant_formula_value": 1262327
+    }
+  ],
+  "assurance": "internal exact replay; no external review or formal verification claimed"
+}

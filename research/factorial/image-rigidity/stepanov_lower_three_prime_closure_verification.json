@@ -1,0 +1,783 @@
+{
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "scope": "exact guards for the uniform normalized-jet proof used in both closures; the separate Hensel verifier certifies the final gap-seven branch; finite examples do not prove all-order identities",
+  "structural_identities": [
+    {
+      "p": 5,
+      "rho_mod_u2": "2-u",
+      "H_u_at_two_mod_p_u2": -1,
+      "S_mod_p_u2": "-u"
+    },
+    {
+      "p": 7,
+      "rho_mod_u2": "2-u",
+      "H_u_at_two_mod_p_u2": -1,
+      "S_mod_p_u2": "-u"
+    },
+    {
+      "p": 11,
+      "rho_mod_u2": "2-u",
+      "H_u_at_two_mod_p_u2": -1,
+      "S_mod_p_u2": "-u"
+    },
+    {
+      "p": 13,
+      "rho_mod_u2": "2-u",
+      "H_u_at_two_mod_p_u2": -1,
+      "S_mod_p_u2": "-u"
+    }
+  ],
+  "actual_series_certificates": [
+    {
+      "p": 5,
+      "N": 22,
+      "gamma": 64,
+      "D": 175,
+      "coefficient_modulus": 15625,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 4,
+      "normalized_kernel_coefficients": [
+        [
+          8579,
+          12351,
+          2646,
+          1987
+        ],
+        [
+          14080,
+          13679,
+          1850,
+          9841
+        ],
+        [
+          14745,
+          9265,
+          13019,
+          10263
+        ],
+        [
+          5165,
+          12875,
+          3900,
+          1779
+        ]
+      ],
+      "S_coefficients": [
+        6630,
+        7384,
+        10635,
+        40
+      ],
+      "constant_formula_modulus": 15625,
+      "constant_formula_value": 6630
+    },
+    {
+      "p": 5,
+      "N": 47,
+      "gamma": 139,
+      "D": 375,
+      "coefficient_modulus": 15625,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 1,
+      "normalized_kernel_coefficients": [
+        [
+          9579,
+          3401,
+          11771,
+          3812
+        ],
+        [
+          6830,
+          8554,
+          13275,
+          1066
+        ],
+        [
+          8495,
+          390,
+          6644,
+          3313
+        ],
+        [
+          10215,
+          14450,
+          4600,
+          11179
+        ]
+      ],
+      "S_coefficients": [
+        11355,
+        14134,
+        7010,
+        11540
+      ],
+      "constant_formula_modulus": 15625,
+      "constant_formula_value": 11355
+    },
+    {
+      "p": 5,
+      "N": 172,
+      "gamma": 514,
+      "D": 1375,
+      "coefficient_modulus": 15625,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 4,
+      "normalized_kernel_coefficients": [
+        [
+          14579,
+          5526,
+          13646,
+          3562
+        ],
+        [
+          1830,
+          14179,
+          7900,
+          7191
+        ],
+        [
+          11620,
+          15390,
+          2894,
+          9188
+        ],
+        [
+          4215,
+          12950,
+          8100,
+          5054
+        ]
+      ],
+      "S_coefficients": [
+        3730,
+        1009,
+        4510,
+        290
+      ],
+      "constant_formula_modulus": 15625,
+      "constant_formula_value": 3730
+    },
+    {
+      "p": 5,
+      "N": 422,
+      "gamma": 1264,
+      "D": 3375,
+      "coefficient_modulus": 15625,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 4,
+      "normalized_kernel_coefficients": [
+        [
+          8954,
+          9776,
+          1771,
+          3062
+        ],
+        [
+          7455,
+          9804,
+          12775,
+          3816
+        ],
+        [
+          2245,
+          14140,
+          11019,
+          5313
+        ],
+        [
+          7840,
+          9950,
+          15100,
+          8429
+        ]
+      ],
+      "S_coefficients": [
+        4105,
+        6009,
+        15135,
+        9040
+      ],
+      "constant_formula_modulus": 15625,
+      "constant_formula_value": 4105
+    },
+    {
+      "p": 5,
+      "N": 547,
+      "gamma": 1639,
+      "D": 4375,
+      "coefficient_modulus": 15625,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 1,
+      "normalized_kernel_coefficients": [
+        [
+          13954,
+          11901,
+          3646,
+          2812
+        ],
+        [
+          2455,
+          15429,
+          7400,
+          9941
+        ],
+        [
+          5370,
+          13515,
+          7269,
+          11188
+        ],
+        [
+          1840,
+          8450,
+          2975,
+          2304
+        ]
+      ],
+      "S_coefficients": [
+        12105,
+        8509,
+        12635,
+        13415
+      ],
+      "constant_formula_modulus": 15625,
+      "constant_formula_value": 12105
+    },
+    {
+      "p": 7,
+      "N": 5,
+      "gamma": 13,
+      "D": 49,
+      "coefficient_modulus": 117649,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 1,
+      "normalized_kernel_coefficients": [
+        [
+          106987,
+          16647,
+          26734,
+          117455,
+          111320,
+          90625
+        ],
+        [
+          18235,
+          47270,
+          47460,
+          88019,
+          70684,
+          41186
+        ],
+        [
+          76881,
+          19320,
+          15889,
+          89899,
+          56058,
+          20152
+        ],
+        [
+          21224,
+          95886,
+          52836,
+          69201,
+          100347,
+          69611
+        ]
+      ],
+      "S_coefficients": [
+        71792,
+        17828,
+        98602,
+        98245
+      ],
+      "constant_formula_modulus": 2401,
+      "constant_formula_value": 2163
+    },
+    {
+      "p": 7,
+      "N": 103,
+      "gamma": 307,
+      "D": 1029,
+      "coefficient_modulus": 117649,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 1,
+      "normalized_kernel_coefficients": [
+        [
+          70629,
+          111021,
+          43198,
+          116377,
+          107988,
+          87979
+        ],
+        [
+          83062,
+          965,
+          58142,
+          111784,
+          24967,
+          35061
+        ],
+        [
+          101920,
+          61852,
+          114673,
+          73141,
+          75462,
+          2071
+        ],
+        [
+          448,
+          3423,
+          108941,
+          49699,
+          113045,
+          89127
+        ]
+      ],
+      "S_coefficients": [
+        34160,
+        24002,
+        96544,
+        111916
+      ],
+      "constant_formula_modulus": 117649,
+      "constant_formula_value": 34160
+    },
+    {
+      "p": 7,
+      "N": 446,
+      "gamma": 1336,
+      "D": 4459,
+      "coefficient_modulus": 117649,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 6,
+      "normalized_kernel_coefficients": [
+        [
+          61025,
+          88383,
+          33594,
+          95797,
+          62712,
+          28297
+        ],
+        [
+          66255,
+          65792,
+          45108,
+          85716,
+          10218,
+          10022
+        ],
+        [
+          92316,
+          54649,
+          78658,
+          7285,
+          41505,
+          98797
+        ],
+        [
+          29260,
+          89859,
+          63322,
+          23288,
+          54392,
+          91871
+        ]
+      ],
+      "S_coefficients": [
+        20097,
+        28804,
+        12509,
+        116718
+      ],
+      "constant_formula_modulus": 117649,
+      "constant_formula_value": 20097
+    },
+    {
+      "p": 7,
+      "N": 789,
+      "gamma": 2365,
+      "D": 7889,
+      "coefficient_modulus": 117649,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 1,
+      "normalized_kernel_coefficients": [
+        [
+          51421,
+          65745,
+          23990,
+          75217,
+          17436,
+          86264
+        ],
+        [
+          49448,
+          12970,
+          32074,
+          59648,
+          113118,
+          102632
+        ],
+        [
+          82712,
+          47446,
+          42643,
+          59078,
+          7548,
+          77874
+        ],
+        [
+          58072,
+          58646,
+          17703,
+          114526,
+          113388,
+          94615
+        ]
+      ],
+      "S_coefficients": [
+        6034,
+        33606,
+        46123,
+        3871
+      ],
+      "constant_formula_modulus": 117649,
+      "constant_formula_value": 6034
+    },
+    {
+      "p": 7,
+      "N": 1818,
+      "gamma": 5452,
+      "D": 18179,
+      "coefficient_modulus": 117649,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 6,
+      "normalized_kernel_coefficients": [
+        [
+          22609,
+          115480,
+          112827,
+          13477,
+          116906,
+          24867
+        ],
+        [
+          116676,
+          89802,
+          110621,
+          99093,
+          68871,
+          27515
+        ],
+        [
+          53900,
+          25837,
+          52247,
+          96808,
+          23326,
+          15105
+        ],
+        [
+          26859,
+          82656,
+          116144,
+          35293,
+          55078,
+          102847
+        ]
+      ],
+      "S_coefficients": [
+        81494,
+        48012,
+        29316,
+        18277
+      ],
+      "constant_formula_modulus": 117649,
+      "constant_formula_value": 81494
+    },
+    {
+      "p": 7,
+      "N": 2161,
+      "gamma": 6481,
+      "D": 21609,
+      "coefficient_modulus": 117649,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 1,
+      "normalized_kernel_coefficients": [
+        [
+          13005,
+          92842,
+          103223,
+          110546,
+          71630,
+          82834
+        ],
+        [
+          99869,
+          36980,
+          97587,
+          73025,
+          54122,
+          2476
+        ],
+        [
+          44296,
+          18634,
+          16232,
+          30952,
+          107018,
+          111831
+        ],
+        [
+          55671,
+          51443,
+          70525,
+          8882,
+          114074,
+          105591
+        ]
+      ],
+      "S_coefficients": [
+        67431,
+        52814,
+        62930,
+        23079
+      ],
+      "constant_formula_modulus": 117649,
+      "constant_formula_value": 67431
+    },
+    {
+      "p": 11,
+      "N": 26,
+      "gamma": 76,
+      "D": 363,
+      "coefficient_modulus": 1771561,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 10,
+      "normalized_kernel_coefficients": [
+        [
+          1684440,
+          1308627,
+          1339471,
+          1165947,
+          1137472,
+          1024124,
+          670702,
+          950581,
+          1118867,
+          647773
+        ],
+        [
+          637923,
+          1004893,
+          245245,
+          1277838,
+          1001885,
+          477426,
+          579337,
+          208053,
+          102606,
+          1558642
+        ],
+        [
+          410993,
+          725945,
+          51226,
+          829376,
+          720231,
+          1769302,
+          70637,
+          487897,
+          1487176,
+          58601
+        ],
+        [
+          96448,
+          797291,
+          81092,
+          1150841,
+          1634859,
+          1507173,
+          962019,
+          1265882,
+          797385,
+          572970
+        ]
+      ],
+      "S_coefficients": [
+        1484681,
+        1134374,
+        1516273,
+        473143
+      ],
+      "constant_formula_modulus": 1771561,
+      "constant_formula_value": 1484681
+    },
+    {
+      "p": 13,
+      "N": 74,
+      "gamma": 220,
+      "D": 1183,
+      "coefficient_modulus": 4826809,
+      "u_degree": 3,
+      "minor_determinant_mod_p": 12,
+      "normalized_kernel_coefficients": [
+        [
+          249625,
+          2203085,
+          2296529,
+          2999375,
+          4349923,
+          45680,
+          579101,
+          442707,
+          4597576,
+          264830,
+          3318794,
+          1634821
+        ],
+        [
+          2810314,
+          2857295,
+          3444467,
+          1514033,
+          2890152,
+          2087384,
+          1432507,
+          3977679,
+          3236734,
+          3215706,
+          3064328,
+          907689
+        ],
+        [
+          4595214,
+          2705105,
+          2990389,
+          4299046,
+          256888,
+          925195,
+          2961936,
+          3320203,
+          4187390,
+          2322436,
+          4330096,
+          4125675
+        ],
+        [
+          346294,
+          2973919,
+          1900769,
+          3689841,
+          1035757,
+          1071695,
+          4470261,
+          3024588,
+          168903,
+          1251032,
+          1208207,
+          28695
+        ]
+      ],
+      "S_coefficients": [
+        3323736,
+        4597670,
+        3624738,
+        2707250
+      ],
+      "constant_formula_modulus": 4826809,
+      "constant_formula_value": 3323736
+    }
+  ],
+  "residue_root_checks": [
+    {
+      "p": 5,
+      "n_mod_p": 1,
+      "lower_unit_polynomial": "x + 2",
+      "compatibility": [
+        {
+          "D_over_p3_mod_p": 1,
+          "gcd_coefficients_ascending_mod_p": [
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 2,
+          "gcd_coefficients_ascending_mod_p": [
+            2,
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 3,
+          "gcd_coefficients_ascending_mod_p": [
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 4,
+          "gcd_coefficients_ascending_mod_p": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "p": 7,
+      "n_mod_p": 4,
+      "lower_unit_polynomial": "x**4 - x**3 + x**2 + 2*x + 1",
+      "compatibility": [
+        {
+          "D_over_p3_mod_p": 1,
+          "gcd_coefficients_ascending_mod_p": [
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 2,
+          "gcd_coefficients_ascending_mod_p": [
+            4,
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 3,
+          "gcd_coefficients_ascending_mod_p": [
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 4,
+          "gcd_coefficients_ascending_mod_p": [
+            3,
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 5,
+          "gcd_coefficients_ascending_mod_p": [
+            1
+          ]
+        },
+        {
+          "D_over_p3_mod_p": 6,
+          "gcd_coefficients_ascending_mod_p": [
+            3,
+            6,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "gap7_residual_terminal_mod2401": 446,
+  "gram_identity_degree_guard": 10,
+  "complex_positivity_countercontrol": {
+    "g": "x-1+i",
+    "Lambda_g_squared": 0
+  }
+}

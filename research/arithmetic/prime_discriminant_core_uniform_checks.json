@@ -1,0 +1,113 @@
+{
+  "python": "3.12.3",
+  "inputs_sha256": {
+    "verify_prime_discriminant_core_uniform.py": "fcf5dd26a70cb00a04dec65822a4d9436ad329c65e81597b9a3ab6adfabf0af4",
+    "verify_primitive_norm_minus11.py": "12c93dfc0335042f340189e9d6e1af526357ecbec80ec91479bed59af83f0629",
+    "../foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf": "01074b660618007cd90cb05addccd9c3b0c2862e7bc9cf16c55cdf738264e038"
+  },
+  "uniform_divisor_bounds": [
+    {
+      "h": 8,
+      "checked_primes": 54,
+      "divisor_bound_dyadic_exponent": 16,
+      "cutoff_dyadic_exponent": 192,
+      "discriminant_exponent": "6"
+    },
+    {
+      "h": 10,
+      "checked_primes": 172,
+      "divisor_bound_dyadic_exponent": 36,
+      "cutoff_dyadic_exponent": 294,
+      "discriminant_exponent": "5"
+    },
+    {
+      "h": 16,
+      "checked_primes": 6542,
+      "divisor_bound_dyadic_exponent": 685,
+      "cutoff_dyadic_exponent": 3696,
+      "discriminant_exponent": "4"
+    }
+  ],
+  "crt_control": {
+    "target_bound": 12,
+    "modulus": 9240,
+    "odd_primes": [
+      3,
+      5,
+      7,
+      11
+    ],
+    "classes_per_splitting_pattern": 30,
+    "initial_run_probability": "1/16",
+    "gap_distribution_numerators": [
+      {
+        "gaps": [],
+        "weight": 6
+      },
+      {
+        "gaps": [
+          4
+        ],
+        "weight": 2
+      },
+      {
+        "gaps": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "weight": 1
+      },
+      {
+        "gaps": [
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "weight": 1
+      },
+      {
+        "gaps": [
+          4,
+          6,
+          10
+        ],
+        "weight": 1
+      },
+      {
+        "gaps": [
+          4,
+          6,
+          10,
+          12
+        ],
+        "weight": 1
+      },
+      {
+        "gaps": [
+          4,
+          8
+        ],
+        "weight": 1
+      },
+      {
+        "gaps": [
+          4,
+          8,
+          12
+        ],
+        "weight": 1
+      },
+      {
+        "gaps": [
+          8
+        ],
+        "weight": 2
+      }
+    ],
+    "gap_distribution_denominator": 16
+  }
+}

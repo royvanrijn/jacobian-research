@@ -1,0 +1,31 @@
+{
+  "schema": "selfadjoint_power_two_string_verification_v1",
+  "status": "PASS",
+  "arithmetic": "exact SymPy rational and symbolic differential expressions",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "counts": {
+    "generic_quartic_identities": 2,
+    "adjoint_parity_controls": 10,
+    "power_two_positive_pairs": 4,
+    "normalization_controls": 2,
+    "specialization_controls": 2,
+    "negative_boundary_controls": 6,
+    "global_polynomial_landing_controls": 1
+  },
+  "source_pins_checked": 7,
+  "packet_pins": {
+    "research/dixmier/dixmier-formal-lifting/SELFADJOINT_POWER_OF_TWO_STRING_CLASSIFICATION.md": "995e70ad5b576ff0fe07857d8bc4e6ec566b7e2a278d6d3dbdefefa59e78a698",
+    "research/dixmier/dixmier-formal-lifting/verify_selfadjoint_power_two_string.py": "219c098c840a508a4c0b83d4d64aba56ad176fc49f56891b5434f4322036c727",
+    "research/dixmier/dixmier-formal-lifting/selfadjoint_power_two_string_source_ledger.json": "761bd890e32fc6ddb09cebe1bc28354fbbe414ee4501e8b59d038c64de94299f"
+  },
+  "scope": "Bounded exact controls. The written proof, imported all-coprime theorem, algebraic normalization/descent and differential-ideal specialization argument establish the unrestricted claims.",
+  "not_claimed": [
+    "All even or all composite differential orders are classified",
+    "Every quartic can be normalized to a selfadjoint quartic",
+    "An original derivation has an algebraic primitive of one",
+    "Selfadjointness alone forces centralizer C[P]",
+    "A finite-control proof of the universal theorem",
+    "External human review or formal verification"
+  ]
+}

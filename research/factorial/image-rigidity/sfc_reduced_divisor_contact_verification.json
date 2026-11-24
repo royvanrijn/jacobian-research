@@ -1,0 +1,7705 @@
+{
+  "cases": [
+    {
+      "A": [
+        1,
+        -1
+      ],
+      "D": [
+        1,
+        -2
+      ],
+      "E": [
+        0
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        -1
+      ],
+      "S": 1,
+      "T": 0,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": -2
+        }
+      ],
+      "coefficients": [
+        1
+      ],
+      "contact_bound_coefficients": [
+        1,
+        1
+      ],
+      "d": 1,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 2
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 2
+            }
+          ],
+          "N": [
+            2
+          ],
+          "actual_degree": 0,
+          "final_actual_degree": 0,
+          "final_upper_degree": 0,
+          "k": 2,
+          "radical_actual_degree": 0,
+          "radical_upper_degree": 0,
+          "upper_degree": 0
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 12
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 12
+            }
+          ],
+          "N": [
+            12
+          ],
+          "actual_degree": 0,
+          "final_actual_degree": 0,
+          "final_upper_degree": 0,
+          "k": 3,
+          "radical_actual_degree": 0,
+          "radical_upper_degree": 0,
+          "upper_degree": 0
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 120
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 120
+            }
+          ],
+          "N": [
+            120
+          ],
+          "actual_degree": 0,
+          "final_actual_degree": 0,
+          "final_upper_degree": 0,
+          "k": 4,
+          "radical_actual_degree": 0,
+          "radical_upper_degree": 0,
+          "upper_degree": 0
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 1680
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 1680
+            }
+          ],
+          "N": [
+            1680
+          ],
+          "actual_degree": 0,
+          "final_actual_degree": 0,
+          "final_upper_degree": 0,
+          "k": 5,
+          "radical_actual_degree": 0,
+          "radical_upper_degree": 0,
+          "upper_degree": 0
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 30240
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 30240
+            }
+          ],
+          "N": [
+            30240
+          ],
+          "actual_degree": 0,
+          "final_actual_degree": 0,
+          "final_upper_degree": 0,
+          "k": 6,
+          "radical_actual_degree": 0,
+          "radical_upper_degree": 0,
+          "upper_degree": 0
+        }
+      ],
+      "window_bound_coefficients": [
+        0,
+        1
+      ]
+    },
+    {
+      "A": [
+        1,
+        8,
+        24,
+        32,
+        16
+      ],
+      "D": [
+        1,
+        10
+      ],
+      "E": [
+        6
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        2
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 10
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        2
+      ],
+      "S": 1,
+      "T": 1,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 10
+        }
+      ],
+      "coefficients": [
+        -2
+      ],
+      "contact_bound_coefficients": [
+        2,
+        0
+      ],
+      "d": 1,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        4
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -10
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -10
+            }
+          ],
+          "N": [
+            -10
+          ],
+          "actual_degree": 0,
+          "final_actual_degree": 0,
+          "final_upper_degree": 0,
+          "k": 2,
+          "radical_actual_degree": 0,
+          "radical_upper_degree": 0,
+          "upper_degree": 0
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1200
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1200
+            }
+          ],
+          "N": [
+            360,
+            1200
+          ],
+          "actual_degree": 1,
+          "final_actual_degree": 1,
+          "final_upper_degree": 1,
+          "k": 3,
+          "radical_actual_degree": 1,
+          "radical_upper_degree": 1,
+          "upper_degree": 1
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -21840
+            },
+            {
+              "denominator": 1,
+              "numerator": -148800
+            },
+            {
+              "denominator": 1,
+              "numerator": -264000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -21840
+            },
+            {
+              "denominator": 1,
+              "numerator": -148800
+            },
+            {
+              "denominator": 1,
+              "numerator": -264000
+            }
+          ],
+          "N": [
+            -21840,
+            -148800,
+            -264000
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 4,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 1860480
+            },
+            {
+              "denominator": 1,
+              "numerator": 19238400
+            },
+            {
+              "denominator": 1,
+              "numerator": 68544000
+            },
+            {
+              "denominator": 1,
+              "numerator": 84480000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 1860480
+            },
+            {
+              "denominator": 1,
+              "numerator": 19238400
+            },
+            {
+              "denominator": 1,
+              "numerator": 68544000
+            },
+            {
+              "denominator": 1,
+              "numerator": 84480000
+            }
+          ],
+          "N": [
+            1860480,
+            19238400,
+            68544000,
+            84480000
+          ],
+          "actual_degree": 3,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 5,
+          "radical_actual_degree": 3,
+          "radical_upper_degree": 3,
+          "upper_degree": 3
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -204019200
+            },
+            {
+              "denominator": 1,
+              "numerator": -2833689600
+            },
+            {
+              "denominator": 1,
+              "numerator": -15176448000
+            },
+            {
+              "denominator": 1,
+              "numerator": -37255680000
+            },
+            {
+              "denominator": 1,
+              "numerator": -35481600000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -204019200
+            },
+            {
+              "denominator": 1,
+              "numerator": -2833689600
+            },
+            {
+              "denominator": 1,
+              "numerator": -15176448000
+            },
+            {
+              "denominator": 1,
+              "numerator": -37255680000
+            },
+            {
+              "denominator": 1,
+              "numerator": -35481600000
+            }
+          ],
+          "N": [
+            -204019200,
+            -2833689600,
+            -15176448000,
+            -37255680000,
+            -35481600000
+          ],
+          "actual_degree": 4,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 6,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 4
+        }
+      ],
+      "window_bound_coefficients": [
+        1,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        1,
+        -6,
+        -4,
+        8
+      ],
+      "D": [
+        1,
+        0,
+        -18,
+        20
+      ],
+      "E": [
+        2
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        2
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -18
+        },
+        {
+          "denominator": 1,
+          "numerator": 20
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        -1,
+        -4,
+        4
+      ],
+      "S": 3,
+      "T": 1,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -36
+        },
+        {
+          "denominator": 1,
+          "numerator": 60
+        }
+      ],
+      "coefficients": [
+        1,
+        2,
+        -2
+      ],
+      "contact_bound_coefficients": [
+        4,
+        0
+      ],
+      "d": 3,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1,
+        1,
+        2
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 36
+            },
+            {
+              "denominator": 1,
+              "numerator": -60
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 36
+            },
+            {
+              "denominator": 1,
+              "numerator": -60
+            }
+          ],
+          "N": [
+            0,
+            36,
+            -60
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 2,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 36
+            },
+            {
+              "denominator": 1,
+              "numerator": -120
+            },
+            {
+              "denominator": 1,
+              "numerator": 3120
+            },
+            {
+              "denominator": 1,
+              "numerator": -2304
+            },
+            {
+              "denominator": 1,
+              "numerator": -15360
+            },
+            {
+              "denominator": 1,
+              "numerator": 19200
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 36
+            },
+            {
+              "denominator": 1,
+              "numerator": -120
+            },
+            {
+              "denominator": 1,
+              "numerator": 3120
+            },
+            {
+              "denominator": 1,
+              "numerator": -2304
+            },
+            {
+              "denominator": 1,
+              "numerator": -15360
+            },
+            {
+              "denominator": 1,
+              "numerator": 19200
+            }
+          ],
+          "N": [
+            36,
+            -120,
+            3120,
+            -2304,
+            -15360,
+            19200
+          ],
+          "actual_degree": 5,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 3,
+          "radical_actual_degree": 5,
+          "radical_upper_degree": 5,
+          "upper_degree": 5
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -336
+            },
+            {
+              "denominator": 1,
+              "numerator": 13200
+            },
+            {
+              "denominator": 1,
+              "numerator": -26544
+            },
+            {
+              "denominator": 1,
+              "numerator": 343680
+            },
+            {
+              "denominator": 1,
+              "numerator": 280896
+            },
+            {
+              "denominator": 1,
+              "numerator": -3855360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1512960
+            },
+            {
+              "denominator": 1,
+              "numerator": 10291200
+            },
+            {
+              "denominator": 1,
+              "numerator": -9984000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -336
+            },
+            {
+              "denominator": 1,
+              "numerator": 13200
+            },
+            {
+              "denominator": 1,
+              "numerator": -26544
+            },
+            {
+              "denominator": 1,
+              "numerator": 343680
+            },
+            {
+              "denominator": 1,
+              "numerator": 280896
+            },
+            {
+              "denominator": 1,
+              "numerator": -3855360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1512960
+            },
+            {
+              "denominator": 1,
+              "numerator": 10291200
+            },
+            {
+              "denominator": 1,
+              "numerator": -9984000
+            }
+          ],
+          "N": [
+            -336,
+            13200,
+            -26544,
+            343680,
+            280896,
+            -3855360,
+            1512960,
+            10291200,
+            -9984000
+          ],
+          "actual_degree": 8,
+          "final_actual_degree": 8,
+          "final_upper_degree": 8,
+          "k": 4,
+          "radical_actual_degree": 8,
+          "radical_upper_degree": 8,
+          "upper_degree": 8
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 16560
+            },
+            {
+              "denominator": 1,
+              "numerator": -243360
+            },
+            {
+              "denominator": 1,
+              "numerator": 4190400
+            },
+            {
+              "denominator": 1,
+              "numerator": -2361600
+            },
+            {
+              "denominator": 1,
+              "numerator": 28851840
+            },
+            {
+              "denominator": 1,
+              "numerator": 159356160
+            },
+            {
+              "denominator": 1,
+              "numerator": -809510400
+            },
+            {
+              "denominator": 1,
+              "numerator": -777415680
+            },
+            {
+              "denominator": 1,
+              "numerator": 4729466880
+            },
+            {
+              "denominator": 1,
+              "numerator": -724377600
+            },
+            {
+              "denominator": 1,
+              "numerator": -9179136000
+            },
+            {
+              "denominator": 1,
+              "numerator": 7188480000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 16560
+            },
+            {
+              "denominator": 1,
+              "numerator": -243360
+            },
+            {
+              "denominator": 1,
+              "numerator": 4190400
+            },
+            {
+              "denominator": 1,
+              "numerator": -2361600
+            },
+            {
+              "denominator": 1,
+              "numerator": 28851840
+            },
+            {
+              "denominator": 1,
+              "numerator": 159356160
+            },
+            {
+              "denominator": 1,
+              "numerator": -809510400
+            },
+            {
+              "denominator": 1,
+              "numerator": -777415680
+            },
+            {
+              "denominator": 1,
+              "numerator": 4729466880
+            },
+            {
+              "denominator": 1,
+              "numerator": -724377600
+            },
+            {
+              "denominator": 1,
+              "numerator": -9179136000
+            },
+            {
+              "denominator": 1,
+              "numerator": 7188480000
+            }
+          ],
+          "N": [
+            16560,
+            -243360,
+            4190400,
+            -2361600,
+            28851840,
+            159356160,
+            -809510400,
+            -777415680,
+            4729466880,
+            -724377600,
+            -9179136000,
+            7188480000
+          ],
+          "actual_degree": 11,
+          "final_actual_degree": 11,
+          "final_upper_degree": 11,
+          "k": 5,
+          "radical_actual_degree": 11,
+          "radical_upper_degree": 11,
+          "upper_degree": 11
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -475200
+            },
+            {
+              "denominator": 1,
+              "numerator": 16666560
+            },
+            {
+              "denominator": 1,
+              "numerator": -117495360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1234897920
+            },
+            {
+              "denominator": 1,
+              "numerator": 1681724160
+            },
+            {
+              "denominator": 1,
+              "numerator": -4324354560
+            },
+            {
+              "denominator": 1,
+              "numerator": 44934981120
+            },
+            {
+              "denominator": 1,
+              "numerator": -127020994560
+            },
+            {
+              "denominator": 1,
+              "numerator": -549552660480
+            },
+            {
+              "denominator": 1,
+              "numerator": 1470467727360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1843494543360
+            },
+            {
+              "denominator": 1,
+              "numerator": -6339398860800
+            },
+            {
+              "denominator": 1,
+              "numerator": -205701120000
+            },
+            {
+              "denominator": 1,
+              "numerator": 10134650880000
+            },
+            {
+              "denominator": 1,
+              "numerator": -6613401600000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -475200
+            },
+            {
+              "denominator": 1,
+              "numerator": 16666560
+            },
+            {
+              "denominator": 1,
+              "numerator": -117495360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1234897920
+            },
+            {
+              "denominator": 1,
+              "numerator": 1681724160
+            },
+            {
+              "denominator": 1,
+              "numerator": -4324354560
+            },
+            {
+              "denominator": 1,
+              "numerator": 44934981120
+            },
+            {
+              "denominator": 1,
+              "numerator": -127020994560
+            },
+            {
+              "denominator": 1,
+              "numerator": -549552660480
+            },
+            {
+              "denominator": 1,
+              "numerator": 1470467727360
+            },
+            {
+              "denominator": 1,
+              "numerator": 1843494543360
+            },
+            {
+              "denominator": 1,
+              "numerator": -6339398860800
+            },
+            {
+              "denominator": 1,
+              "numerator": -205701120000
+            },
+            {
+              "denominator": 1,
+              "numerator": 10134650880000
+            },
+            {
+              "denominator": 1,
+              "numerator": -6613401600000
+            }
+          ],
+          "N": [
+            -475200,
+            16666560,
+            -117495360,
+            1234897920,
+            1681724160,
+            -4324354560,
+            44934981120,
+            -127020994560,
+            -549552660480,
+            1470467727360,
+            1843494543360,
+            -6339398860800,
+            -205701120000,
+            10134650880000,
+            -6613401600000
+          ],
+          "actual_degree": 14,
+          "final_actual_degree": 14,
+          "final_upper_degree": 14,
+          "k": 6,
+          "radical_actual_degree": 14,
+          "radical_upper_degree": 14,
+          "upper_degree": 14
+        }
+      ],
+      "window_bound_coefficients": [
+        3,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        -20,
+        166,
+        -714,
+        1512,
+        -378,
+        -5670,
+        13122,
+        -12393,
+        4374
+      ],
+      "D": [
+        1,
+        -22,
+        -33,
+        60
+      ],
+      "E": [
+        -18
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        -3
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -3
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -22
+        },
+        {
+          "denominator": 1,
+          "numerator": -33
+        },
+        {
+          "denominator": 1,
+          "numerator": 60
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        -2,
+        -5,
+        6
+      ],
+      "S": 3,
+      "T": 1,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": -22
+        },
+        {
+          "denominator": 1,
+          "numerator": -66
+        },
+        {
+          "denominator": 1,
+          "numerator": 180
+        }
+      ],
+      "coefficients": [
+        1,
+        -2,
+        3
+      ],
+      "contact_bound_coefficients": [
+        4,
+        0
+      ],
+      "d": 3,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1,
+        1,
+        7
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 22
+            },
+            {
+              "denominator": 1,
+              "numerator": 66
+            },
+            {
+              "denominator": 1,
+              "numerator": -180
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 22
+            },
+            {
+              "denominator": 1,
+              "numerator": 66
+            },
+            {
+              "denominator": 1,
+              "numerator": -180
+            }
+          ],
+          "N": [
+            22,
+            66,
+            -180
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 2,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 1914
+            },
+            {
+              "denominator": 1,
+              "numerator": -5178
+            },
+            {
+              "denominator": 1,
+              "numerator": -68094
+            },
+            {
+              "denominator": 1,
+              "numerator": 15246
+            },
+            {
+              "denominator": 1,
+              "numerator": 420120
+            },
+            {
+              "denominator": 1,
+              "numerator": -421200
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 1914
+            },
+            {
+              "denominator": 1,
+              "numerator": -5178
+            },
+            {
+              "denominator": 1,
+              "numerator": -68094
+            },
+            {
+              "denominator": 1,
+              "numerator": 15246
+            },
+            {
+              "denominator": 1,
+              "numerator": 420120
+            },
+            {
+              "denominator": 1,
+              "numerator": -421200
+            }
+          ],
+          "N": [
+            1914,
+            -5178,
+            -68094,
+            15246,
+            420120,
+            -421200
+          ],
+          "actual_degree": 5,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 3,
+          "radical_actual_degree": 5,
+          "radical_upper_degree": 5,
+          "upper_degree": 5
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 280008
+            },
+            {
+              "denominator": 1,
+              "numerator": -2420472
+            },
+            {
+              "denominator": 1,
+              "numerator": -8504496
+            },
+            {
+              "denominator": 1,
+              "numerator": 82012896
+            },
+            {
+              "denominator": 1,
+              "numerator": 176423832
+            },
+            {
+              "denominator": 1,
+              "numerator": -674960040
+            },
+            {
+              "denominator": 1,
+              "numerator": -707026320
+            },
+            {
+              "denominator": 1,
+              "numerator": 2818216800
+            },
+            {
+              "denominator": 1,
+              "numerator": -1743768000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 280008
+            },
+            {
+              "denominator": 1,
+              "numerator": -2420472
+            },
+            {
+              "denominator": 1,
+              "numerator": -8504496
+            },
+            {
+              "denominator": 1,
+              "numerator": 82012896
+            },
+            {
+              "denominator": 1,
+              "numerator": 176423832
+            },
+            {
+              "denominator": 1,
+              "numerator": -674960040
+            },
+            {
+              "denominator": 1,
+              "numerator": -707026320
+            },
+            {
+              "denominator": 1,
+              "numerator": 2818216800
+            },
+            {
+              "denominator": 1,
+              "numerator": -1743768000
+            }
+          ],
+          "N": [
+            280008,
+            -2420472,
+            -8504496,
+            82012896,
+            176423832,
+            -674960040,
+            -707026320,
+            2818216800,
+            -1743768000
+          ],
+          "actual_degree": 8,
+          "final_actual_degree": 8,
+          "final_upper_degree": 8,
+          "k": 4,
+          "radical_actual_degree": 8,
+          "radical_upper_degree": 8,
+          "upper_degree": 8
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 57501240
+            },
+            {
+              "denominator": 1,
+              "numerator": -844088760
+            },
+            {
+              "denominator": 1,
+              "numerator": 671131800
+            },
+            {
+              "denominator": 1,
+              "numerator": 35648833320
+            },
+            {
+              "denominator": 1,
+              "numerator": -64190259000
+            },
+            {
+              "denominator": 1,
+              "numerator": -673878181320
+            },
+            {
+              "denominator": 1,
+              "numerator": 611093798280
+            },
+            {
+              "denominator": 1,
+              "numerator": 4649998476600
+            },
+            {
+              "denominator": 1,
+              "numerator": -4870991259360
+            },
+            {
+              "denominator": 1,
+              "numerator": -12513242426400
+            },
+            {
+              "denominator": 1,
+              "numerator": 23096084688000
+            },
+            {
+              "denominator": 1,
+              "numerator": -10357981920000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 57501240
+            },
+            {
+              "denominator": 1,
+              "numerator": -844088760
+            },
+            {
+              "denominator": 1,
+              "numerator": 671131800
+            },
+            {
+              "denominator": 1,
+              "numerator": 35648833320
+            },
+            {
+              "denominator": 1,
+              "numerator": -64190259000
+            },
+            {
+              "denominator": 1,
+              "numerator": -673878181320
+            },
+            {
+              "denominator": 1,
+              "numerator": 611093798280
+            },
+            {
+              "denominator": 1,
+              "numerator": 4649998476600
+            },
+            {
+              "denominator": 1,
+              "numerator": -4870991259360
+            },
+            {
+              "denominator": 1,
+              "numerator": -12513242426400
+            },
+            {
+              "denominator": 1,
+              "numerator": 23096084688000
+            },
+            {
+              "denominator": 1,
+              "numerator": -10357981920000
+            }
+          ],
+          "N": [
+            57501240,
+            -844088760,
+            671131800,
+            35648833320,
+            -64190259000,
+            -673878181320,
+            611093798280,
+            4649998476600,
+            -4870991259360,
+            -12513242426400,
+            23096084688000,
+            -10357981920000
+          ],
+          "actual_degree": 11,
+          "final_actual_degree": 11,
+          "final_upper_degree": 11,
+          "k": 5,
+          "radical_actual_degree": 11,
+          "radical_upper_degree": 11,
+          "upper_degree": 11
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 15198757200
+            },
+            {
+              "denominator": 1,
+              "numerator": -315523491120
+            },
+            {
+              "denominator": 1,
+              "numerator": 1387626890400
+            },
+            {
+              "denominator": 1,
+              "numerator": 11416479949440
+            },
+            {
+              "denominator": 1,
+              "numerator": -86772746288160
+            },
+            {
+              "denominator": 1,
+              "numerator": -187477125060960
+            },
+            {
+              "denominator": 1,
+              "numerator": 1877429217087360
+            },
+            {
+              "denominator": 1,
+              "numerator": 2457023801385600
+            },
+            {
+              "denominator": 1,
+              "numerator": -16782592028767920
+            },
+            {
+              "denominator": 1,
+              "numerator": -10844031536187120
+            },
+            {
+              "denominator": 1,
+              "numerator": 81872371788778080
+            },
+            {
+              "denominator": 1,
+              "numerator": -15797256693955200
+            },
+            {
+              "denominator": 1,
+              "numerator": -190245227135040000
+            },
+            {
+              "denominator": 1,
+              "numerator": 227729620514880000
+            },
+            {
+              "denominator": 1,
+              "numerator": -80170780060800000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 15198757200
+            },
+            {
+              "denominator": 1,
+              "numerator": -315523491120
+            },
+            {
+              "denominator": 1,
+              "numerator": 1387626890400
+            },
+            {
+              "denominator": 1,
+              "numerator": 11416479949440
+            },
+            {
+              "denominator": 1,
+              "numerator": -86772746288160
+            },
+            {
+              "denominator": 1,
+              "numerator": -187477125060960
+            },
+            {
+              "denominator": 1,
+              "numerator": 1877429217087360
+            },
+            {
+              "denominator": 1,
+              "numerator": 2457023801385600
+            },
+            {
+              "denominator": 1,
+              "numerator": -16782592028767920
+            },
+            {
+              "denominator": 1,
+              "numerator": -10844031536187120
+            },
+            {
+              "denominator": 1,
+              "numerator": 81872371788778080
+            },
+            {
+              "denominator": 1,
+              "numerator": -15797256693955200
+            },
+            {
+              "denominator": 1,
+              "numerator": -190245227135040000
+            },
+            {
+              "denominator": 1,
+              "numerator": 227729620514880000
+            },
+            {
+              "denominator": 1,
+              "numerator": -80170780060800000
+            }
+          ],
+          "N": [
+            15198757200,
+            -315523491120,
+            1387626890400,
+            11416479949440,
+            -86772746288160,
+            -187477125060960,
+            1877429217087360,
+            2457023801385600,
+            -16782592028767920,
+            -10844031536187120,
+            81872371788778080,
+            -15797256693955200,
+            -190245227135040000,
+            227729620514880000,
+            -80170780060800000
+          ],
+          "actual_degree": 14,
+          "final_actual_degree": 14,
+          "final_upper_degree": 14,
+          "k": 6,
+          "radical_actual_degree": 14,
+          "radical_upper_degree": 14,
+          "upper_degree": 14
+        }
+      ],
+      "window_bound_coefficients": [
+        3,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        4,
+        -4,
+        -22,
+        3,
+        18
+      ],
+      "D": [
+        1,
+        5,
+        -27,
+        -7,
+        36
+      ],
+      "E": [
+        3
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        3
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 3
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": -27
+        },
+        {
+          "denominator": 1,
+          "numerator": -7
+        },
+        {
+          "denominator": 1,
+          "numerator": 36
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        1,
+        -7,
+        -1,
+        6
+      ],
+      "S": 4,
+      "T": 1,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": -54
+        },
+        {
+          "denominator": 1,
+          "numerator": -21
+        },
+        {
+          "denominator": 1,
+          "numerator": 144
+        }
+      ],
+      "coefficients": [
+        1,
+        2,
+        -1,
+        -3
+      ],
+      "contact_bound_coefficients": [
+        5,
+        0
+      ],
+      "d": 4,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -5
+            },
+            {
+              "denominator": 1,
+              "numerator": 54
+            },
+            {
+              "denominator": 1,
+              "numerator": 21
+            },
+            {
+              "denominator": 1,
+              "numerator": -144
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -5
+            },
+            {
+              "denominator": 1,
+              "numerator": 54
+            },
+            {
+              "denominator": 1,
+              "numerator": 21
+            },
+            {
+              "denominator": 1,
+              "numerator": -144
+            }
+          ],
+          "N": [
+            -5,
+            54,
+            21,
+            -144
+          ],
+          "actual_degree": 3,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 2,
+          "radical_actual_degree": 3,
+          "radical_upper_degree": 3,
+          "upper_degree": 3
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 144
+            },
+            {
+              "denominator": 1,
+              "numerator": -1008
+            },
+            {
+              "denominator": 1,
+              "numerator": 1236
+            },
+            {
+              "denominator": 1,
+              "numerator": 31152
+            },
+            {
+              "denominator": 1,
+              "numerator": -4128
+            },
+            {
+              "denominator": 1,
+              "numerator": -126720
+            },
+            {
+              "denominator": 1,
+              "numerator": 540
+            },
+            {
+              "denominator": 1,
+              "numerator": 155520
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 144
+            },
+            {
+              "denominator": 1,
+              "numerator": -1008
+            },
+            {
+              "denominator": 1,
+              "numerator": 1236
+            },
+            {
+              "denominator": 1,
+              "numerator": 31152
+            },
+            {
+              "denominator": 1,
+              "numerator": -4128
+            },
+            {
+              "denominator": 1,
+              "numerator": -126720
+            },
+            {
+              "denominator": 1,
+              "numerator": 540
+            },
+            {
+              "denominator": 1,
+              "numerator": 155520
+            }
+          ],
+          "N": [
+            144,
+            -1008,
+            1236,
+            31152,
+            -4128,
+            -126720,
+            540,
+            155520
+          ],
+          "actual_degree": 7,
+          "final_actual_degree": 7,
+          "final_upper_degree": 7,
+          "k": 3,
+          "radical_actual_degree": 7,
+          "radical_upper_degree": 7,
+          "upper_degree": 7
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -5904
+            },
+            {
+              "denominator": 1,
+              "numerator": 50280
+            },
+            {
+              "denominator": 1,
+              "numerator": 98856
+            },
+            {
+              "denominator": 1,
+              "numerator": -1300104
+            },
+            {
+              "denominator": 1,
+              "numerator": 4111656
+            },
+            {
+              "denominator": 1,
+              "numerator": 28681128
+            },
+            {
+              "denominator": 1,
+              "numerator": -25691160
+            },
+            {
+              "denominator": 1,
+              "numerator": -153645624
+            },
+            {
+              "denominator": 1,
+              "numerator": 52909416
+            },
+            {
+              "denominator": 1,
+              "numerator": 330499440
+            },
+            {
+              "denominator": 1,
+              "numerator": -37849680
+            },
+            {
+              "denominator": 1,
+              "numerator": -268738560
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -5904
+            },
+            {
+              "denominator": 1,
+              "numerator": 50280
+            },
+            {
+              "denominator": 1,
+              "numerator": 98856
+            },
+            {
+              "denominator": 1,
+              "numerator": -1300104
+            },
+            {
+              "denominator": 1,
+              "numerator": 4111656
+            },
+            {
+              "denominator": 1,
+              "numerator": 28681128
+            },
+            {
+              "denominator": 1,
+              "numerator": -25691160
+            },
+            {
+              "denominator": 1,
+              "numerator": -153645624
+            },
+            {
+              "denominator": 1,
+              "numerator": 52909416
+            },
+            {
+              "denominator": 1,
+              "numerator": 330499440
+            },
+            {
+              "denominator": 1,
+              "numerator": -37849680
+            },
+            {
+              "denominator": 1,
+              "numerator": -268738560
+            }
+          ],
+          "N": [
+            -5904,
+            50280,
+            98856,
+            -1300104,
+            4111656,
+            28681128,
+            -25691160,
+            -153645624,
+            52909416,
+            330499440,
+            -37849680,
+            -268738560
+          ],
+          "actual_degree": 11,
+          "final_actual_degree": 11,
+          "final_upper_degree": 11,
+          "k": 4,
+          "radical_actual_degree": 11,
+          "radical_upper_degree": 11,
+          "upper_degree": 11
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 345480
+            },
+            {
+              "denominator": 1,
+              "numerator": -3083040
+            },
+            {
+              "denominator": 1,
+              "numerator": -7863480
+            },
+            {
+              "denominator": 1,
+              "numerator": 150525360
+            },
+            {
+              "denominator": 1,
+              "numerator": 6618240
+            },
+            {
+              "denominator": 1,
+              "numerator": -1889431200
+            },
+            {
+              "denominator": 1,
+              "numerator": 8629981200
+            },
+            {
+              "denominator": 1,
+              "numerator": 34560452160
+            },
+            {
+              "denominator": 1,
+              "numerator": -67528040760
+            },
+            {
+              "denominator": 1,
+              "numerator": -229286185920
+            },
+            {
+              "denominator": 1,
+              "numerator": 207377291880
+            },
+            {
+              "denominator": 1,
+              "numerator": 695644050960
+            },
+            {
+              "denominator": 1,
+              "numerator": -299172327120
+            },
+            {
+              "denominator": 1,
+              "numerator": -1037799734400
+            },
+            {
+              "denominator": 1,
+              "numerator": 173833957440
+            },
+            {
+              "denominator": 1,
+              "numerator": 638522818560
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 345480
+            },
+            {
+              "denominator": 1,
+              "numerator": -3083040
+            },
+            {
+              "denominator": 1,
+              "numerator": -7863480
+            },
+            {
+              "denominator": 1,
+              "numerator": 150525360
+            },
+            {
+              "denominator": 1,
+              "numerator": 6618240
+            },
+            {
+              "denominator": 1,
+              "numerator": -1889431200
+            },
+            {
+              "denominator": 1,
+              "numerator": 8629981200
+            },
+            {
+              "denominator": 1,
+              "numerator": 34560452160
+            },
+            {
+              "denominator": 1,
+              "numerator": -67528040760
+            },
+            {
+              "denominator": 1,
+              "numerator": -229286185920
+            },
+            {
+              "denominator": 1,
+              "numerator": 207377291880
+            },
+            {
+              "denominator": 1,
+              "numerator": 695644050960
+            },
+            {
+              "denominator": 1,
+              "numerator": -299172327120
+            },
+            {
+              "denominator": 1,
+              "numerator": -1037799734400
+            },
+            {
+              "denominator": 1,
+              "numerator": 173833957440
+            },
+            {
+              "denominator": 1,
+              "numerator": 638522818560
+            }
+          ],
+          "N": [
+            345480,
+            -3083040,
+            -7863480,
+            150525360,
+            6618240,
+            -1889431200,
+            8629981200,
+            34560452160,
+            -67528040760,
+            -229286185920,
+            207377291880,
+            695644050960,
+            -299172327120,
+            -1037799734400,
+            173833957440,
+            638522818560
+          ],
+          "actual_degree": 15,
+          "final_actual_degree": 15,
+          "final_upper_degree": 15,
+          "k": 5,
+          "radical_actual_degree": 15,
+          "radical_upper_degree": 15,
+          "upper_degree": 15
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -25884720
+            },
+            {
+              "denominator": 1,
+              "numerator": 248077440
+            },
+            {
+              "denominator": 1,
+              "numerator": 888211440
+            },
+            {
+              "denominator": 1,
+              "numerator": -14796897120
+            },
+            {
+              "denominator": 1,
+              "numerator": 6056051760
+            },
+            {
+              "denominator": 1,
+              "numerator": 414065272320
+            },
+            {
+              "denominator": 1,
+              "numerator": -298540165680
+            },
+            {
+              "denominator": 1,
+              "numerator": -3389787344160
+            },
+            {
+              "denominator": 1,
+              "numerator": 19150487552880
+            },
+            {
+              "denominator": 1,
+              "numerator": 49304727135360
+            },
+            {
+              "denominator": 1,
+              "numerator": -174024209113200
+            },
+            {
+              "denominator": 1,
+              "numerator": -391374399572640
+            },
+            {
+              "denominator": 1,
+              "numerator": 691225081995600
+            },
+            {
+              "denominator": 1,
+              "numerator": 1551606080232960
+            },
+            {
+              "denominator": 1,
+              "numerator": -1451445564090960
+            },
+            {
+              "denominator": 1,
+              "numerator": -3346284999540960
+            },
+            {
+              "denominator": 1,
+              "numerator": 1616104900641600
+            },
+            {
+              "denominator": 1,
+              "numerator": 3868644307080960
+            },
+            {
+              "denominator": 1,
+              "numerator": -772400600928000
+            },
+            {
+              "denominator": 1,
+              "numerator": -1930893003325440
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -25884720
+            },
+            {
+              "denominator": 1,
+              "numerator": 248077440
+            },
+            {
+              "denominator": 1,
+              "numerator": 888211440
+            },
+            {
+              "denominator": 1,
+              "numerator": -14796897120
+            },
+            {
+              "denominator": 1,
+              "numerator": 6056051760
+            },
+            {
+              "denominator": 1,
+              "numerator": 414065272320
+            },
+            {
+              "denominator": 1,
+              "numerator": -298540165680
+            },
+            {
+              "denominator": 1,
+              "numerator": -3389787344160
+            },
+            {
+              "denominator": 1,
+              "numerator": 19150487552880
+            },
+            {
+              "denominator": 1,
+              "numerator": 49304727135360
+            },
+            {
+              "denominator": 1,
+              "numerator": -174024209113200
+            },
+            {
+              "denominator": 1,
+              "numerator": -391374399572640
+            },
+            {
+              "denominator": 1,
+              "numerator": 691225081995600
+            },
+            {
+              "denominator": 1,
+              "numerator": 1551606080232960
+            },
+            {
+              "denominator": 1,
+              "numerator": -1451445564090960
+            },
+            {
+              "denominator": 1,
+              "numerator": -3346284999540960
+            },
+            {
+              "denominator": 1,
+              "numerator": 1616104900641600
+            },
+            {
+              "denominator": 1,
+              "numerator": 3868644307080960
+            },
+            {
+              "denominator": 1,
+              "numerator": -772400600928000
+            },
+            {
+              "denominator": 1,
+              "numerator": -1930893003325440
+            }
+          ],
+          "N": [
+            -25884720,
+            248077440,
+            888211440,
+            -14796897120,
+            6056051760,
+            414065272320,
+            -298540165680,
+            -3389787344160,
+            19150487552880,
+            49304727135360,
+            -174024209113200,
+            -391374399572640,
+            691225081995600,
+            1551606080232960,
+            -1451445564090960,
+            -3346284999540960,
+            1616104900641600,
+            3868644307080960,
+            -772400600928000,
+            -1930893003325440
+          ],
+          "actual_degree": 19,
+          "final_actual_degree": 19,
+          "final_upper_degree": 19,
+          "k": 6,
+          "radical_actual_degree": 19,
+          "radical_upper_degree": 19,
+          "upper_degree": 19
+        }
+      ],
+      "window_bound_coefficients": [
+        4,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        0,
+        -5,
+        0,
+        4
+      ],
+      "D": [
+        1,
+        0,
+        -15,
+        0,
+        20
+      ],
+      "E": [
+        0
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -15
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 20
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        0,
+        -5,
+        0,
+        4
+      ],
+      "S": 4,
+      "T": 0,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -30
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 80
+        }
+      ],
+      "coefficients": [
+        1,
+        -1,
+        2,
+        -2
+      ],
+      "contact_bound_coefficients": [
+        4,
+        1
+      ],
+      "d": 4,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 30
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -80
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 30
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -80
+            }
+          ],
+          "N": [
+            0,
+            30,
+            0,
+            -80
+          ],
+          "actual_degree": 3,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 2,
+          "radical_actual_degree": 3,
+          "radical_upper_degree": 3,
+          "upper_degree": 3
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 30
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2010
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -10200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 14400
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 30
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2010
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -10200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 14400
+            }
+          ],
+          "N": [
+            30,
+            0,
+            2010,
+            0,
+            -10200,
+            0,
+            14400
+          ],
+          "actual_degree": 6,
+          "final_actual_degree": 6,
+          "final_upper_degree": 6,
+          "k": 3,
+          "radical_actual_degree": 6,
+          "radical_upper_degree": 6,
+          "upper_degree": 6
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 8520
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 188400
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -1555200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 4128000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -4032000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 8520
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 188400
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -1555200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 4128000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -4032000
+            }
+          ],
+          "N": [
+            0,
+            8520,
+            0,
+            188400,
+            0,
+            -1555200,
+            0,
+            4128000,
+            0,
+            -4032000
+          ],
+          "actual_degree": 9,
+          "final_actual_degree": 9,
+          "final_upper_degree": 9,
+          "k": 4,
+          "radical_actual_degree": 9,
+          "radical_upper_degree": 9,
+          "upper_degree": 9
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 8520
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2226600
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 18709200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -275256000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1112544000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -2036160000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1532160000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 8520
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2226600
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 18709200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -275256000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1112544000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -2036160000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1532160000
+            }
+          ],
+          "N": [
+            8520,
+            0,
+            2226600,
+            0,
+            18709200,
+            0,
+            -275256000,
+            0,
+            1112544000,
+            0,
+            -2036160000,
+            0,
+            1532160000
+          ],
+          "actual_degree": 12,
+          "final_actual_degree": 12,
+          "final_upper_degree": 12,
+          "k": 5,
+          "radical_actual_degree": 12,
+          "radical_upper_degree": 12,
+          "upper_degree": 12
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 6753600
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 603086400
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 763308000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -52619616000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 311673600000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -848977920000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1196697600000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -735436800000
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 6753600
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 603086400
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 763308000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -52619616000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 311673600000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -848977920000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1196697600000
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": -735436800000
+            }
+          ],
+          "N": [
+            0,
+            6753600,
+            0,
+            603086400,
+            0,
+            763308000,
+            0,
+            -52619616000,
+            0,
+            311673600000,
+            0,
+            -848977920000,
+            0,
+            1196697600000,
+            0,
+            -735436800000
+          ],
+          "actual_degree": 15,
+          "final_actual_degree": 15,
+          "final_upper_degree": 15,
+          "k": 6,
+          "radical_actual_degree": 15,
+          "radical_upper_degree": 15,
+          "upper_degree": 15
+        }
+      ],
+      "window_bound_coefficients": [
+        3,
+        1
+      ]
+    },
+    {
+      "A": [
+        1,
+        4,
+        1,
+        -10,
+        -4,
+        8
+      ],
+      "D": [
+        1,
+        4,
+        -17,
+        12
+      ],
+      "E": [
+        4
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        2
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": -17
+        },
+        {
+          "denominator": 1,
+          "numerator": 12
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        0,
+        -3,
+        2
+      ],
+      "S": 3,
+      "T": 1,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": -34
+        },
+        {
+          "denominator": 1,
+          "numerator": 36
+        }
+      ],
+      "coefficients": [
+        1,
+        1,
+        -2
+      ],
+      "contact_bound_coefficients": [
+        4,
+        0
+      ],
+      "d": 3,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        0,
+        2,
+        3
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -4
+            },
+            {
+              "denominator": 1,
+              "numerator": 34
+            },
+            {
+              "denominator": 1,
+              "numerator": -36
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -4
+            },
+            {
+              "denominator": 1,
+              "numerator": 34
+            },
+            {
+              "denominator": 1,
+              "numerator": -36
+            }
+          ],
+          "N": [
+            -4,
+            34,
+            -36
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 2,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 98
+            },
+            {
+              "denominator": 1,
+              "numerator": -660
+            },
+            {
+              "denominator": 1,
+              "numerator": 1290
+            },
+            {
+              "denominator": 1,
+              "numerator": 4300
+            },
+            {
+              "denominator": 1,
+              "numerator": -12480
+            },
+            {
+              "denominator": 1,
+              "numerator": 7776
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 98
+            },
+            {
+              "denominator": 1,
+              "numerator": -660
+            },
+            {
+              "denominator": 1,
+              "numerator": 1290
+            },
+            {
+              "denominator": 1,
+              "numerator": 4300
+            },
+            {
+              "denominator": 1,
+              "numerator": -12480
+            },
+            {
+              "denominator": 1,
+              "numerator": 7776
+            }
+          ],
+          "N": [
+            98,
+            -660,
+            1290,
+            4300,
+            -12480,
+            7776
+          ],
+          "actual_degree": 5,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 3,
+          "radical_actual_degree": 5,
+          "radical_upper_degree": 5,
+          "upper_degree": 5
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -3600
+            },
+            {
+              "denominator": 1,
+              "numerator": 27240
+            },
+            {
+              "denominator": 1,
+              "numerator": -31440
+            },
+            {
+              "denominator": 1,
+              "numerator": -258960
+            },
+            {
+              "denominator": 1,
+              "numerator": 1054560
+            },
+            {
+              "denominator": 1,
+              "numerator": -96000
+            },
+            {
+              "denominator": 1,
+              "numerator": -4424640
+            },
+            {
+              "denominator": 1,
+              "numerator": 6503040
+            },
+            {
+              "denominator": 1,
+              "numerator": -2799360
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -3600
+            },
+            {
+              "denominator": 1,
+              "numerator": 27240
+            },
+            {
+              "denominator": 1,
+              "numerator": -31440
+            },
+            {
+              "denominator": 1,
+              "numerator": -258960
+            },
+            {
+              "denominator": 1,
+              "numerator": 1054560
+            },
+            {
+              "denominator": 1,
+              "numerator": -96000
+            },
+            {
+              "denominator": 1,
+              "numerator": -4424640
+            },
+            {
+              "denominator": 1,
+              "numerator": 6503040
+            },
+            {
+              "denominator": 1,
+              "numerator": -2799360
+            }
+          ],
+          "N": [
+            -3600,
+            27240,
+            -31440,
+            -258960,
+            1054560,
+            -96000,
+            -4424640,
+            6503040,
+            -2799360
+          ],
+          "actual_degree": 8,
+          "final_actual_degree": 8,
+          "final_upper_degree": 8,
+          "k": 4,
+          "radical_actual_degree": 8,
+          "radical_upper_degree": 8,
+          "upper_degree": 8
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 185640
+            },
+            {
+              "denominator": 1,
+              "numerator": -1522800
+            },
+            {
+              "denominator": 1,
+              "numerator": 1412760
+            },
+            {
+              "denominator": 1,
+              "numerator": 23224560
+            },
+            {
+              "denominator": 1,
+              "numerator": -77652720
+            },
+            {
+              "denominator": 1,
+              "numerator": -29709600
+            },
+            {
+              "denominator": 1,
+              "numerator": 665761920
+            },
+            {
+              "denominator": 1,
+              "numerator": -988369920
+            },
+            {
+              "denominator": 1,
+              "numerator": -1208803200
+            },
+            {
+              "denominator": 1,
+              "numerator": 4537670400
+            },
+            {
+              "denominator": 1,
+              "numerator": -4329400320
+            },
+            {
+              "denominator": 1,
+              "numerator": 1410877440
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 185640
+            },
+            {
+              "denominator": 1,
+              "numerator": -1522800
+            },
+            {
+              "denominator": 1,
+              "numerator": 1412760
+            },
+            {
+              "denominator": 1,
+              "numerator": 23224560
+            },
+            {
+              "denominator": 1,
+              "numerator": -77652720
+            },
+            {
+              "denominator": 1,
+              "numerator": -29709600
+            },
+            {
+              "denominator": 1,
+              "numerator": 665761920
+            },
+            {
+              "denominator": 1,
+              "numerator": -988369920
+            },
+            {
+              "denominator": 1,
+              "numerator": -1208803200
+            },
+            {
+              "denominator": 1,
+              "numerator": 4537670400
+            },
+            {
+              "denominator": 1,
+              "numerator": -4329400320
+            },
+            {
+              "denominator": 1,
+              "numerator": 1410877440
+            }
+          ],
+          "N": [
+            185640,
+            -1522800,
+            1412760,
+            23224560,
+            -77652720,
+            -29709600,
+            665761920,
+            -988369920,
+            -1208803200,
+            4537670400,
+            -4329400320,
+            1410877440
+          ],
+          "actual_degree": 11,
+          "final_actual_degree": 11,
+          "final_upper_degree": 11,
+          "k": 5,
+          "radical_actual_degree": 11,
+          "radical_upper_degree": 11,
+          "upper_degree": 11
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -12289920
+            },
+            {
+              "denominator": 1,
+              "numerator": 109114560
+            },
+            {
+              "denominator": 1,
+              "numerator": -81043200
+            },
+            {
+              "denominator": 1,
+              "numerator": -2202655680
+            },
+            {
+              "denominator": 1,
+              "numerator": 7480699200
+            },
+            {
+              "denominator": 1,
+              "numerator": 8905854240
+            },
+            {
+              "denominator": 1,
+              "numerator": -88647312960
+            },
+            {
+              "denominator": 1,
+              "numerator": 114358510080
+            },
+            {
+              "denominator": 1,
+              "numerator": 347276183040
+            },
+            {
+              "denominator": 1,
+              "numerator": -1164293195520
+            },
+            {
+              "denominator": 1,
+              "numerator": 449678292480
+            },
+            {
+              "denominator": 1,
+              "numerator": 2744657971200
+            },
+            {
+              "denominator": 1,
+              "numerator": -5005502300160
+            },
+            {
+              "denominator": 1,
+              "numerator": 3501925539840
+            },
+            {
+              "denominator": 1,
+              "numerator": -914248581120
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -12289920
+            },
+            {
+              "denominator": 1,
+              "numerator": 109114560
+            },
+            {
+              "denominator": 1,
+              "numerator": -81043200
+            },
+            {
+              "denominator": 1,
+              "numerator": -2202655680
+            },
+            {
+              "denominator": 1,
+              "numerator": 7480699200
+            },
+            {
+              "denominator": 1,
+              "numerator": 8905854240
+            },
+            {
+              "denominator": 1,
+              "numerator": -88647312960
+            },
+            {
+              "denominator": 1,
+              "numerator": 114358510080
+            },
+            {
+              "denominator": 1,
+              "numerator": 347276183040
+            },
+            {
+              "denominator": 1,
+              "numerator": -1164293195520
+            },
+            {
+              "denominator": 1,
+              "numerator": 449678292480
+            },
+            {
+              "denominator": 1,
+              "numerator": 2744657971200
+            },
+            {
+              "denominator": 1,
+              "numerator": -5005502300160
+            },
+            {
+              "denominator": 1,
+              "numerator": 3501925539840
+            },
+            {
+              "denominator": 1,
+              "numerator": -914248581120
+            }
+          ],
+          "N": [
+            -12289920,
+            109114560,
+            -81043200,
+            -2202655680,
+            7480699200,
+            8905854240,
+            -88647312960,
+            114358510080,
+            347276183040,
+            -1164293195520,
+            449678292480,
+            2744657971200,
+            -5005502300160,
+            3501925539840,
+            -914248581120
+          ],
+          "actual_degree": 14,
+          "final_actual_degree": 14,
+          "final_upper_degree": 14,
+          "k": 6,
+          "radical_actual_degree": 14,
+          "radical_upper_degree": 14,
+          "upper_degree": 14
+        }
+      ],
+      "window_bound_coefficients": [
+        3,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        4,
+        4
+      ],
+      "D": [
+        1,
+        4,
+        -11,
+        6
+      ],
+      "E": [
+        4,
+        2
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "J": [
+        1,
+        1,
+        -2
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": -6
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "P": [
+        1,
+        0,
+        -3,
+        2
+      ],
+      "S": 3,
+      "T": 2,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": -18
+        }
+      ],
+      "coefficients": [
+        1,
+        1,
+        -2
+      ],
+      "contact_bound_coefficients": [
+        3,
+        0
+      ],
+      "d": 2,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        0,
+        0,
+        2
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -4
+            },
+            {
+              "denominator": 1,
+              "numerator": 18
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -4
+            },
+            {
+              "denominator": 1,
+              "numerator": 18
+            }
+          ],
+          "N": [
+            -4,
+            22,
+            -18
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 1,
+          "final_upper_degree": 1,
+          "k": 2,
+          "radical_actual_degree": 1,
+          "radical_upper_degree": 1,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 86
+            },
+            {
+              "denominator": 1,
+              "numerator": -250
+            },
+            {
+              "denominator": 1,
+              "numerator": -172
+            },
+            {
+              "denominator": 1,
+              "numerator": 1632
+            },
+            {
+              "denominator": 1,
+              "numerator": -1296
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 86
+            },
+            {
+              "denominator": 1,
+              "numerator": -164
+            },
+            {
+              "denominator": 1,
+              "numerator": -336
+            },
+            {
+              "denominator": 1,
+              "numerator": 1296
+            }
+          ],
+          "N": [
+            86,
+            -422,
+            414,
+            1726,
+            -4732,
+            4224,
+            -1296
+          ],
+          "actual_degree": 6,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 3,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 6
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -2916
+            },
+            {
+              "denominator": 1,
+              "numerator": 6852
+            },
+            {
+              "denominator": 1,
+              "numerator": 21300
+            },
+            {
+              "denominator": 1,
+              "numerator": -80676
+            },
+            {
+              "denominator": 1,
+              "numerator": 23568
+            },
+            {
+              "denominator": 1,
+              "numerator": 232896
+            },
+            {
+              "denominator": 1,
+              "numerator": -340992
+            },
+            {
+              "denominator": 1,
+              "numerator": 139968
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -2916
+            },
+            {
+              "denominator": 1,
+              "numerator": 1020
+            },
+            {
+              "denominator": 1,
+              "numerator": 26256
+            },
+            {
+              "denominator": 1,
+              "numerator": -29184
+            },
+            {
+              "denominator": 1,
+              "numerator": -61056
+            },
+            {
+              "denominator": 1,
+              "numerator": 139968
+            }
+          ],
+          "N": [
+            -2916,
+            15600,
+            -8004,
+            -121104,
+            322644,
+            -101136,
+            -888300,
+            1838064,
+            -1675776,
+            760896,
+            -139968
+          ],
+          "actual_degree": 10,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 4,
+          "radical_actual_degree": 7,
+          "radical_upper_degree": 7,
+          "upper_degree": 10
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 138072
+            },
+            {
+              "denominator": 1,
+              "numerator": -250872
+            },
+            {
+              "denominator": 1,
+              "numerator": -1673640
+            },
+            {
+              "denominator": 1,
+              "numerator": 4700568
+            },
+            {
+              "denominator": 1,
+              "numerator": 4131120
+            },
+            {
+              "denominator": 1,
+              "numerator": -27381312
+            },
+            {
+              "denominator": 1,
+              "numerator": 22854720
+            },
+            {
+              "denominator": 1,
+              "numerator": 41259648
+            },
+            {
+              "denominator": 1,
+              "numerator": -98092800
+            },
+            {
+              "denominator": 1,
+              "numerator": 74469888
+            },
+            {
+              "denominator": 1,
+              "numerator": -20155392
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 138072
+            },
+            {
+              "denominator": 1,
+              "numerator": 163344
+            },
+            {
+              "denominator": 1,
+              "numerator": -1597824
+            },
+            {
+              "denominator": 1,
+              "numerator": -444864
+            },
+            {
+              "denominator": 1,
+              "numerator": 7753344
+            },
+            {
+              "denominator": 1,
+              "numerator": -4384512
+            },
+            {
+              "denominator": 1,
+              "numerator": -14003712
+            },
+            {
+              "denominator": 1,
+              "numerator": 20155392
+            }
+          ],
+          "N": [
+            138072,
+            -803160,
+            158280,
+            9337608,
+            -23571432,
+            -9258696,
+            136690776,
+            -226271016,
+            -12346704,
+            595598784,
+            -1048775616,
+            961071744,
+            -516904704,
+            155091456,
+            -20155392
+          ],
+          "actual_degree": 14,
+          "final_actual_degree": 7,
+          "final_upper_degree": 7,
+          "k": 5,
+          "radical_actual_degree": 10,
+          "radical_upper_degree": 10,
+          "upper_degree": 14
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -8397120
+            },
+            {
+              "denominator": 1,
+              "numerator": 10915440
+            },
+            {
+              "denominator": 1,
+              "numerator": 140360640
+            },
+            {
+              "denominator": 1,
+              "numerator": -303587040
+            },
+            {
+              "denominator": 1,
+              "numerator": -754210560
+            },
+            {
+              "denominator": 1,
+              "numerator": 2801428080
+            },
+            {
+              "denominator": 1,
+              "numerator": -68977920
+            },
+            {
+              "denominator": 1,
+              "numerator": -10226317440
+            },
+            {
+              "denominator": 1,
+              "numerator": 13593937920
+            },
+            {
+              "denominator": 1,
+              "numerator": 5785113600
+            },
+            {
+              "denominator": 1,
+              "numerator": -32394424320
+            },
+            {
+              "denominator": 1,
+              "numerator": 35964241920
+            },
+            {
+              "denominator": 1,
+              "numerator": -18168053760
+            },
+            {
+              "denominator": 1,
+              "numerator": 3627970560
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -8397120
+            },
+            {
+              "denominator": 1,
+              "numerator": -22673040
+            },
+            {
+              "denominator": 1,
+              "numerator": 100051200
+            },
+            {
+              "denominator": 1,
+              "numerator": 199067520
+            },
+            {
+              "denominator": 1,
+              "numerator": -640542720
+            },
+            {
+              "denominator": 1,
+              "numerator": -532270080
+            },
+            {
+              "denominator": 1,
+              "numerator": 2341416960
+            },
+            {
+              "denominator": 1,
+              "numerator": -428267520
+            },
+            {
+              "denominator": 1,
+              "numerator": -3656171520
+            },
+            {
+              "denominator": 1,
+              "numerator": 3627970560
+            }
+          ],
+          "N": [
+            -8397120,
+            52901040,
+            1812240,
+            -812264640,
+            2016191040,
+            2195978400,
+            -17891465760,
+            24016662720,
+            32553999360,
+            -148996620240,
+            173736243600,
+            68785511040,
+            -501588635520,
+            793386531840,
+            -727220044800,
+            430175877120,
+            -163084216320,
+            36307906560,
+            -3627970560
+          ],
+          "actual_degree": 18,
+          "final_actual_degree": 9,
+          "final_upper_degree": 9,
+          "k": 6,
+          "radical_actual_degree": 13,
+          "radical_upper_degree": 13,
+          "upper_degree": 18
+        }
+      ],
+      "window_bound_coefficients": [
+        2,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        -3,
+        0,
+        4
+      ],
+      "D": [
+        1,
+        -5,
+        -4,
+        8
+      ],
+      "E": [
+        -1
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        -3,
+        2
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -2
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 8
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "P": [
+        1,
+        -2,
+        -1,
+        2
+      ],
+      "S": 3,
+      "T": 2,
+      "T0": 1,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": -8
+        },
+        {
+          "denominator": 1,
+          "numerator": 24
+        }
+      ],
+      "coefficients": [
+        1,
+        -1,
+        2
+      ],
+      "contact_bound_coefficients": [
+        4,
+        0
+      ],
+      "d": 3,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        0,
+        1,
+        2
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 5
+            },
+            {
+              "denominator": 1,
+              "numerator": 8
+            },
+            {
+              "denominator": 1,
+              "numerator": -24
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 5
+            },
+            {
+              "denominator": 1,
+              "numerator": 8
+            },
+            {
+              "denominator": 1,
+              "numerator": -24
+            }
+          ],
+          "N": [
+            5,
+            8,
+            -24
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 2,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 88
+            },
+            {
+              "denominator": 1,
+              "numerator": -114
+            },
+            {
+              "denominator": 1,
+              "numerator": -694
+            },
+            {
+              "denominator": 1,
+              "numerator": 496
+            },
+            {
+              "denominator": 1,
+              "numerator": 3552
+            },
+            {
+              "denominator": 1,
+              "numerator": -6016
+            },
+            {
+              "denominator": 1,
+              "numerator": 2688
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 88
+            },
+            {
+              "denominator": 1,
+              "numerator": -26
+            },
+            {
+              "denominator": 1,
+              "numerator": -720
+            },
+            {
+              "denominator": 1,
+              "numerator": -224
+            },
+            {
+              "denominator": 1,
+              "numerator": 3328
+            },
+            {
+              "denominator": 1,
+              "numerator": -2688
+            }
+          ],
+          "N": [
+            88,
+            -114,
+            -694,
+            496,
+            3552,
+            -6016,
+            2688
+          ],
+          "actual_degree": 6,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 3,
+          "radical_actual_degree": 6,
+          "radical_upper_degree": 6,
+          "upper_degree": 6
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 2526
+            },
+            {
+              "denominator": 1,
+              "numerator": -9528
+            },
+            {
+              "denominator": 1,
+              "numerator": -19134
+            },
+            {
+              "denominator": 1,
+              "numerator": 107724
+            },
+            {
+              "denominator": 1,
+              "numerator": -8436
+            },
+            {
+              "denominator": 1,
+              "numerator": -316320
+            },
+            {
+              "denominator": 1,
+              "numerator": -222240
+            },
+            {
+              "denominator": 1,
+              "numerator": 2075904
+            },
+            {
+              "denominator": 1,
+              "numerator": -3109632
+            },
+            {
+              "denominator": 1,
+              "numerator": 1972224
+            },
+            {
+              "denominator": 1,
+              "numerator": -473088
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 2526
+            },
+            {
+              "denominator": 1,
+              "numerator": -4476
+            },
+            {
+              "denominator": 1,
+              "numerator": -30612
+            },
+            {
+              "denominator": 1,
+              "numerator": 50976
+            },
+            {
+              "denominator": 1,
+              "numerator": 124128
+            },
+            {
+              "denominator": 1,
+              "numerator": -119040
+            },
+            {
+              "denominator": 1,
+              "numerator": -584448
+            },
+            {
+              "denominator": 1,
+              "numerator": 1026048
+            },
+            {
+              "denominator": 1,
+              "numerator": -473088
+            }
+          ],
+          "N": [
+            2526,
+            -9528,
+            -19134,
+            107724,
+            -8436,
+            -316320,
+            -222240,
+            2075904,
+            -3109632,
+            1972224,
+            -473088
+          ],
+          "actual_degree": 10,
+          "final_actual_degree": 8,
+          "final_upper_degree": 8,
+          "k": 4,
+          "radical_actual_degree": 10,
+          "radical_upper_degree": 10,
+          "upper_degree": 10
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 101616
+            },
+            {
+              "denominator": 1,
+              "numerator": -638928
+            },
+            {
+              "denominator": 1,
+              "numerator": -26400
+            },
+            {
+              "denominator": 1,
+              "numerator": 7794696
+            },
+            {
+              "denominator": 1,
+              "numerator": -11404680
+            },
+            {
+              "denominator": 1,
+              "numerator": -36062040
+            },
+            {
+              "denominator": 1,
+              "numerator": 103258008
+            },
+            {
+              "denominator": 1,
+              "numerator": -20307264
+            },
+            {
+              "denominator": 1,
+              "numerator": -72304512
+            },
+            {
+              "denominator": 1,
+              "numerator": -480866304
+            },
+            {
+              "denominator": 1,
+              "numerator": 1709776896
+            },
+            {
+              "denominator": 1,
+              "numerator": -2393198592
+            },
+            {
+              "denominator": 1,
+              "numerator": 1774460928
+            },
+            {
+              "denominator": 1,
+              "numerator": -694124544
+            },
+            {
+              "denominator": 1,
+              "numerator": 113541120
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 101616
+            },
+            {
+              "denominator": 1,
+              "numerator": -334080
+            },
+            {
+              "denominator": 1,
+              "numerator": -1333488
+            },
+            {
+              "denominator": 1,
+              "numerator": 4898088
+            },
+            {
+              "denominator": 1,
+              "numerator": 6955968
+            },
+            {
+              "denominator": 1,
+              "numerator": -31221888
+            },
+            {
+              "denominator": 1,
+              "numerator": -6377472
+            },
+            {
+              "denominator": 1,
+              "numerator": 61181952
+            },
+            {
+              "denominator": 1,
+              "numerator": 99151872
+            },
+            {
+              "denominator": 1,
+              "numerator": -373334016
+            },
+            {
+              "denominator": 1,
+              "numerator": 353501184
+            },
+            {
+              "denominator": 1,
+              "numerator": -113541120
+            }
+          ],
+          "N": [
+            101616,
+            -638928,
+            -26400,
+            7794696,
+            -11404680,
+            -36062040,
+            103258008,
+            -20307264,
+            -72304512,
+            -480866304,
+            1709776896,
+            -2393198592,
+            1774460928,
+            -694124544,
+            113541120
+          ],
+          "actual_degree": 14,
+          "final_actual_degree": 11,
+          "final_upper_degree": 11,
+          "k": 5,
+          "radical_actual_degree": 14,
+          "radical_upper_degree": 14,
+          "upper_degree": 14
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 5254800
+            },
+            {
+              "denominator": 1,
+              "numerator": -46225440
+            },
+            {
+              "denominator": 1,
+              "numerator": 69479400
+            },
+            {
+              "denominator": 1,
+              "numerator": 525348720
+            },
+            {
+              "denominator": 1,
+              "numerator": -1892162160
+            },
+            {
+              "denominator": 1,
+              "numerator": -1091645280
+            },
+            {
+              "denominator": 1,
+              "numerator": 13571054760
+            },
+            {
+              "denominator": 1,
+              "numerator": -9827100720
+            },
+            {
+              "denominator": 1,
+              "numerator": -54172475760
+            },
+            {
+              "denominator": 1,
+              "numerator": 125599793280
+            },
+            {
+              "denominator": 1,
+              "numerator": -93743694720
+            },
+            {
+              "denominator": 1,
+              "numerator": 152025415680
+            },
+            {
+              "denominator": 1,
+              "numerator": -770247014400
+            },
+            {
+              "denominator": 1,
+              "numerator": 1849540608000
+            },
+            {
+              "denominator": 1,
+              "numerator": -2451966935040
+            },
+            {
+              "denominator": 1,
+              "numerator": 1982474158080
+            },
+            {
+              "denominator": 1,
+              "numerator": -984743608320
+            },
+            {
+              "denominator": 1,
+              "numerator": 278436249600
+            },
+            {
+              "denominator": 1,
+              "numerator": -34516500480
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 5254800
+            },
+            {
+              "denominator": 1,
+              "numerator": -25206240
+            },
+            {
+              "denominator": 1,
+              "numerator": -62874360
+            },
+            {
+              "denominator": 1,
+              "numerator": 446107920
+            },
+            {
+              "denominator": 1,
+              "numerator": 163435920
+            },
+            {
+              "denominator": 1,
+              "numerator": -3340840320
+            },
+            {
+              "denominator": 1,
+              "numerator": 1074384000
+            },
+            {
+              "denominator": 1,
+              "numerator": 14723112960
+            },
+            {
+              "denominator": 1,
+              "numerator": -15253125120
+            },
+            {
+              "denominator": 1,
+              "numerator": -16113008640
+            },
+            {
+              "denominator": 1,
+              "numerator": -8858910720
+            },
+            {
+              "denominator": 1,
+              "numerator": 137532211200
+            },
+            {
+              "denominator": 1,
+              "numerator": -216163614720
+            },
+            {
+              "denominator": 1,
+              "numerator": 140370247680
+            },
+            {
+              "denominator": 1,
+              "numerator": -34516500480
+            }
+          ],
+          "N": [
+            5254800,
+            -46225440,
+            69479400,
+            525348720,
+            -1892162160,
+            -1091645280,
+            13571054760,
+            -9827100720,
+            -54172475760,
+            125599793280,
+            -93743694720,
+            152025415680,
+            -770247014400,
+            1849540608000,
+            -2451966935040,
+            1982474158080,
+            -984743608320,
+            278436249600,
+            -34516500480
+          ],
+          "actual_degree": 18,
+          "final_actual_degree": 14,
+          "final_upper_degree": 14,
+          "k": 6,
+          "radical_actual_degree": 18,
+          "radical_upper_degree": 18,
+          "upper_degree": 18
+        }
+      ],
+      "window_bound_coefficients": [
+        3,
+        0
+      ]
+    },
+    {
+      "A": [
+        1,
+        5,
+        -5,
+        -45,
+        0,
+        108
+      ],
+      "D": [
+        1,
+        6,
+        -36
+      ],
+      "E": [
+        4,
+        -18
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        1,
+        -6
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -6
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 6
+        },
+        {
+          "denominator": 1,
+          "numerator": -36
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        1,
+        -6
+      ],
+      "S": 2,
+      "T": 2,
+      "T0": 2,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 6
+        },
+        {
+          "denominator": 1,
+          "numerator": -72
+        }
+      ],
+      "coefficients": [
+        2,
+        -3
+      ],
+      "contact_bound_coefficients": [
+        4,
+        -1
+      ],
+      "d": 2,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        2,
+        3
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -6
+            },
+            {
+              "denominator": 1,
+              "numerator": 72
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -6
+            },
+            {
+              "denominator": 1,
+              "numerator": 72
+            }
+          ],
+          "N": [
+            -6,
+            72
+          ],
+          "actual_degree": 1,
+          "final_actual_degree": 1,
+          "final_upper_degree": 1,
+          "k": 2,
+          "radical_actual_degree": 1,
+          "radical_upper_degree": 1,
+          "upper_degree": 1
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 204
+            },
+            {
+              "denominator": 1,
+              "numerator": -2232
+            },
+            {
+              "denominator": 1,
+              "numerator": 7776
+            },
+            {
+              "denominator": 1,
+              "numerator": 47952
+            },
+            {
+              "denominator": 1,
+              "numerator": -124416
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 204
+            },
+            {
+              "denominator": 1,
+              "numerator": -2232
+            },
+            {
+              "denominator": 1,
+              "numerator": 7776
+            },
+            {
+              "denominator": 1,
+              "numerator": 47952
+            },
+            {
+              "denominator": 1,
+              "numerator": -124416
+            }
+          ],
+          "N": [
+            204,
+            -2232,
+            7776,
+            47952,
+            -124416
+          ],
+          "actual_degree": 4,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 3,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 4
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -10188
+            },
+            {
+              "denominator": 1,
+              "numerator": 153072
+            },
+            {
+              "denominator": 1,
+              "numerator": -458352
+            },
+            {
+              "denominator": 1,
+              "numerator": -2604960
+            },
+            {
+              "denominator": 1,
+              "numerator": 27760320
+            },
+            {
+              "denominator": 1,
+              "numerator": -4385664
+            },
+            {
+              "denominator": 1,
+              "numerator": -262859904
+            },
+            {
+              "denominator": 1,
+              "numerator": 376233984
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -10188
+            },
+            {
+              "denominator": 1,
+              "numerator": 153072
+            },
+            {
+              "denominator": 1,
+              "numerator": -458352
+            },
+            {
+              "denominator": 1,
+              "numerator": -2604960
+            },
+            {
+              "denominator": 1,
+              "numerator": 27760320
+            },
+            {
+              "denominator": 1,
+              "numerator": -4385664
+            },
+            {
+              "denominator": 1,
+              "numerator": -262859904
+            },
+            {
+              "denominator": 1,
+              "numerator": 376233984
+            }
+          ],
+          "N": [
+            -10188,
+            153072,
+            -458352,
+            -2604960,
+            27760320,
+            -4385664,
+            -262859904,
+            376233984
+          ],
+          "actual_degree": 7,
+          "final_actual_degree": 7,
+          "final_upper_degree": 7,
+          "k": 4,
+          "radical_actual_degree": 7,
+          "radical_upper_degree": 7,
+          "upper_degree": 7
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 723600
+            },
+            {
+              "denominator": 1,
+              "numerator": -13062960
+            },
+            {
+              "denominator": 1,
+              "numerator": 58121280
+            },
+            {
+              "denominator": 1,
+              "numerator": 339111360
+            },
+            {
+              "denominator": 1,
+              "numerator": -3291425280
+            },
+            {
+              "denominator": 1,
+              "numerator": 5712560640
+            },
+            {
+              "denominator": 1,
+              "numerator": 58582206720
+            },
+            {
+              "denominator": 1,
+              "numerator": -209632872960
+            },
+            {
+              "denominator": 1,
+              "numerator": -243074027520
+            },
+            {
+              "denominator": 1,
+              "numerator": 1652842920960
+            },
+            {
+              "denominator": 1,
+              "numerator": -1625330810880
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 723600
+            },
+            {
+              "denominator": 1,
+              "numerator": -13062960
+            },
+            {
+              "denominator": 1,
+              "numerator": 58121280
+            },
+            {
+              "denominator": 1,
+              "numerator": 339111360
+            },
+            {
+              "denominator": 1,
+              "numerator": -3291425280
+            },
+            {
+              "denominator": 1,
+              "numerator": 5712560640
+            },
+            {
+              "denominator": 1,
+              "numerator": 58582206720
+            },
+            {
+              "denominator": 1,
+              "numerator": -209632872960
+            },
+            {
+              "denominator": 1,
+              "numerator": -243074027520
+            },
+            {
+              "denominator": 1,
+              "numerator": 1652842920960
+            },
+            {
+              "denominator": 1,
+              "numerator": -1625330810880
+            }
+          ],
+          "N": [
+            723600,
+            -13062960,
+            58121280,
+            339111360,
+            -3291425280,
+            5712560640,
+            58582206720,
+            -209632872960,
+            -243074027520,
+            1652842920960,
+            -1625330810880
+          ],
+          "actual_degree": 10,
+          "final_actual_degree": 10,
+          "final_upper_degree": 10,
+          "k": 5,
+          "radical_actual_degree": 10,
+          "radical_upper_degree": 10,
+          "upper_degree": 10
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": -65885760
+            },
+            {
+              "denominator": 1,
+              "numerator": 1403874720
+            },
+            {
+              "denominator": 1,
+              "numerator": -7955400960
+            },
+            {
+              "denominator": 1,
+              "numerator": -35592151680
+            },
+            {
+              "denominator": 1,
+              "numerator": 563748336000
+            },
+            {
+              "denominator": 1,
+              "numerator": -1045755048960
+            },
+            {
+              "denominator": 1,
+              "numerator": -10005452916480
+            },
+            {
+              "denominator": 1,
+              "numerator": 58734727050240
+            },
+            {
+              "denominator": 1,
+              "numerator": 19985784376320
+            },
+            {
+              "denominator": 1,
+              "numerator": -862655816448000
+            },
+            {
+              "denominator": 1,
+              "numerator": 1334334920232960
+            },
+            {
+              "denominator": 1,
+              "numerator": 3836644170670080
+            },
+            {
+              "denominator": 1,
+              "numerator": -12213903919472640
+            },
+            {
+              "denominator": 1,
+              "numerator": 9127857833902080
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": -65885760
+            },
+            {
+              "denominator": 1,
+              "numerator": 1403874720
+            },
+            {
+              "denominator": 1,
+              "numerator": -7955400960
+            },
+            {
+              "denominator": 1,
+              "numerator": -35592151680
+            },
+            {
+              "denominator": 1,
+              "numerator": 563748336000
+            },
+            {
+              "denominator": 1,
+              "numerator": -1045755048960
+            },
+            {
+              "denominator": 1,
+              "numerator": -10005452916480
+            },
+            {
+              "denominator": 1,
+              "numerator": 58734727050240
+            },
+            {
+              "denominator": 1,
+              "numerator": 19985784376320
+            },
+            {
+              "denominator": 1,
+              "numerator": -862655816448000
+            },
+            {
+              "denominator": 1,
+              "numerator": 1334334920232960
+            },
+            {
+              "denominator": 1,
+              "numerator": 3836644170670080
+            },
+            {
+              "denominator": 1,
+              "numerator": -12213903919472640
+            },
+            {
+              "denominator": 1,
+              "numerator": 9127857833902080
+            }
+          ],
+          "N": [
+            -65885760,
+            1403874720,
+            -7955400960,
+            -35592151680,
+            563748336000,
+            -1045755048960,
+            -10005452916480,
+            58734727050240,
+            19985784376320,
+            -862655816448000,
+            1334334920232960,
+            3836644170670080,
+            -12213903919472640,
+            9127857833902080
+          ],
+          "actual_degree": 13,
+          "final_actual_degree": 13,
+          "final_upper_degree": 13,
+          "k": 6,
+          "radical_actual_degree": 13,
+          "radical_upper_degree": 13,
+          "upper_degree": 13
+        }
+      ],
+      "window_bound_coefficients": [
+        3,
+        -1
+      ]
+    },
+    {
+      "A": [
+        1,
+        -3,
+        3,
+        -1
+      ],
+      "D": [
+        1,
+        -6,
+        9,
+        -4
+      ],
+      "E": [
+        0
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "J": [
+        1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        -3,
+        3,
+        -1
+      ],
+      "S": 3,
+      "T": 0,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": -6
+        },
+        {
+          "denominator": 1,
+          "numerator": 12
+        }
+      ],
+      "coefficients": [
+        1,
+        1,
+        1
+      ],
+      "contact_bound_coefficients": [
+        2,
+        1
+      ],
+      "d": 2,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 6
+            },
+            {
+              "denominator": 1,
+              "numerator": -12
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 6
+            },
+            {
+              "denominator": 1,
+              "numerator": -12
+            }
+          ],
+          "N": [
+            6,
+            -18,
+            12
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 1,
+          "final_upper_degree": 1,
+          "k": 2,
+          "radical_actual_degree": 1,
+          "radical_upper_degree": 1,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 90
+            },
+            {
+              "denominator": 1,
+              "numerator": -336
+            },
+            {
+              "denominator": 1,
+              "numerator": 336
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 90
+            },
+            {
+              "denominator": 1,
+              "numerator": -336
+            },
+            {
+              "denominator": 1,
+              "numerator": 336
+            }
+          ],
+          "N": [
+            90,
+            -516,
+            1098,
+            -1008,
+            336
+          ],
+          "actual_degree": 4,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 3,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 4
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 2184
+            },
+            {
+              "denominator": 1,
+              "numerator": -11736
+            },
+            {
+              "denominator": 1,
+              "numerator": 22176
+            },
+            {
+              "denominator": 1,
+              "numerator": -14784
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 2184
+            },
+            {
+              "denominator": 1,
+              "numerator": -11736
+            },
+            {
+              "denominator": 1,
+              "numerator": 22176
+            },
+            {
+              "denominator": 1,
+              "numerator": -14784
+            }
+          ],
+          "N": [
+            2184,
+            -18288,
+            63936,
+            -118704,
+            122616,
+            -66528,
+            14784
+          ],
+          "actual_degree": 6,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 4,
+          "radical_actual_degree": 3,
+          "radical_upper_degree": 3,
+          "upper_degree": 6
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 73440
+            },
+            {
+              "denominator": 1,
+              "numerator": -511920
+            },
+            {
+              "denominator": 1,
+              "numerator": 1396800
+            },
+            {
+              "denominator": 1,
+              "numerator": -1774080
+            },
+            {
+              "denominator": 1,
+              "numerator": 887040
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 73440
+            },
+            {
+              "denominator": 1,
+              "numerator": -511920
+            },
+            {
+              "denominator": 1,
+              "numerator": 1396800
+            },
+            {
+              "denominator": 1,
+              "numerator": -1774080
+            },
+            {
+              "denominator": 1,
+              "numerator": 887040
+            }
+          ],
+          "N": [
+            73440,
+            -805680,
+            3885120,
+            -10726560,
+            18485280,
+            -20291760,
+            13815360,
+            -5322240,
+            887040
+          ],
+          "actual_degree": 8,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 5,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 8
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 3160080
+            },
+            {
+              "denominator": 1,
+              "numerator": -26999280
+            },
+            {
+              "denominator": 1,
+              "numerator": 95598720
+            },
+            {
+              "denominator": 1,
+              "numerator": -175875840
+            },
+            {
+              "denominator": 1,
+              "numerator": 168537600
+            },
+            {
+              "denominator": 1,
+              "numerator": -67415040
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 3160080
+            },
+            {
+              "denominator": 1,
+              "numerator": -26999280
+            },
+            {
+              "denominator": 1,
+              "numerator": 95598720
+            },
+            {
+              "denominator": 1,
+              "numerator": -175875840
+            },
+            {
+              "denominator": 1,
+              "numerator": 168537600
+            },
+            {
+              "denominator": 1,
+              "numerator": -67415040
+            }
+          ],
+          "N": [
+            3160080,
+            -42799680,
+            262195920,
+            -955463040,
+            2289697200,
+            -3763005120,
+            4286202480,
+            -3334504320,
+            1692714240,
+            -505612800,
+            67415040
+          ],
+          "actual_degree": 10,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 6,
+          "radical_actual_degree": 5,
+          "radical_upper_degree": 5,
+          "upper_degree": 10
+        }
+      ],
+      "window_bound_coefficients": [
+        1,
+        1
+      ]
+    },
+    {
+      "A": [
+        1,
+        -3,
+        3,
+        -1
+      ],
+      "D": [
+        1,
+        -5,
+        4
+      ],
+      "E": [
+        -1
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1,
+        -1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": 4
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "P": [
+        1,
+        -2,
+        1
+      ],
+      "S": 2,
+      "T": 1,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": 8
+        }
+      ],
+      "coefficients": [
+        1,
+        1
+      ],
+      "contact_bound_coefficients": [
+        2,
+        1
+      ],
+      "d": 2,
+      "derivative_truncation_degree": 7,
+      "exponents": [
+        1,
+        2
+      ],
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 5
+            },
+            {
+              "denominator": 1,
+              "numerator": -8
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 5
+            },
+            {
+              "denominator": 1,
+              "numerator": -8
+            }
+          ],
+          "N": [
+            5,
+            -8
+          ],
+          "actual_degree": 1,
+          "final_actual_degree": 1,
+          "final_upper_degree": 1,
+          "k": 2,
+          "radical_actual_degree": 1,
+          "radical_upper_degree": 1,
+          "upper_degree": 1
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 72
+            },
+            {
+              "denominator": 1,
+              "numerator": -300
+            },
+            {
+              "denominator": 1,
+              "numerator": 420
+            },
+            {
+              "denominator": 1,
+              "numerator": -192
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 72
+            },
+            {
+              "denominator": 1,
+              "numerator": -228
+            },
+            {
+              "denominator": 1,
+              "numerator": 192
+            }
+          ],
+          "N": [
+            72,
+            -300,
+            420,
+            -192
+          ],
+          "actual_degree": 3,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 3,
+          "radical_actual_degree": 3,
+          "radical_upper_degree": 3,
+          "upper_degree": 3
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 1716
+            },
+            {
+              "denominator": 1,
+              "numerator": -11520
+            },
+            {
+              "denominator": 1,
+              "numerator": 31188
+            },
+            {
+              "denominator": 1,
+              "numerator": -42360
+            },
+            {
+              "denominator": 1,
+              "numerator": 28656
+            },
+            {
+              "denominator": 1,
+              "numerator": -7680
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 1716
+            },
+            {
+              "denominator": 1,
+              "numerator": -8088
+            },
+            {
+              "denominator": 1,
+              "numerator": 13296
+            },
+            {
+              "denominator": 1,
+              "numerator": -7680
+            }
+          ],
+          "N": [
+            1716,
+            -11520,
+            31188,
+            -42360,
+            28656,
+            -7680
+          ],
+          "actual_degree": 5,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 4,
+          "radical_actual_degree": 5,
+          "radical_upper_degree": 5,
+          "upper_degree": 5
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 57120
+            },
+            {
+              "denominator": 1,
+              "numerator": -528360
+            },
+            {
+              "denominator": 1,
+              "numerator": 2109240
+            },
+            {
+              "denominator": 1,
+              "numerator": -4703160
+            },
+            {
+              "denominator": 1,
+              "numerator": 6310920
+            },
+            {
+              "denominator": 1,
+              "numerator": -5080320
+            },
+            {
+              "denominator": 1,
+              "numerator": 2264640
+            },
+            {
+              "denominator": 1,
+              "numerator": -430080
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 57120
+            },
+            {
+              "denominator": 1,
+              "numerator": -357000
+            },
+            {
+              "denominator": 1,
+              "numerator": 866880
+            },
+            {
+              "denominator": 1,
+              "numerator": -974400
+            },
+            {
+              "denominator": 1,
+              "numerator": 430080
+            }
+          ],
+          "N": [
+            57120,
+            -528360,
+            2109240,
+            -4703160,
+            6310920,
+            -5080320,
+            2264640,
+            -430080
+          ],
+          "actual_degree": 7,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 5,
+          "radical_actual_degree": 7,
+          "radical_upper_degree": 7,
+          "upper_degree": 7
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 2441880
+            },
+            {
+              "denominator": 1,
+              "numerator": -28768320
+            },
+            {
+              "denominator": 1,
+              "numerator": 151527600
+            },
+            {
+              "denominator": 1,
+              "numerator": -468024480
+            },
+            {
+              "denominator": 1,
+              "numerator": 933249240
+            },
+            {
+              "denominator": 1,
+              "numerator": -1244124000
+            },
+            {
+              "denominator": 1,
+              "numerator": 1106935200
+            },
+            {
+              "denominator": 1,
+              "numerator": -632661120
+            },
+            {
+              "denominator": 1,
+              "numerator": 210389760
+            },
+            {
+              "denominator": 1,
+              "numerator": -30965760
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 2441880
+            },
+            {
+              "denominator": 1,
+              "numerator": -19000800
+            },
+            {
+              "denominator": 1,
+              "numerator": 60873120
+            },
+            {
+              "denominator": 1,
+              "numerator": -100759680
+            },
+            {
+              "denominator": 1,
+              "numerator": 86526720
+            },
+            {
+              "denominator": 1,
+              "numerator": -30965760
+            }
+          ],
+          "N": [
+            2441880,
+            -28768320,
+            151527600,
+            -468024480,
+            933249240,
+            -1244124000,
+            1106935200,
+            -632661120,
+            210389760,
+            -30965760
+          ],
+          "actual_degree": 9,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 6,
+          "radical_actual_degree": 9,
+          "radical_upper_degree": 9,
+          "upper_degree": 9
+        }
+      ],
+      "window_bound_coefficients": [
+        1,
+        1
+      ]
+    },
+    {
+      "A": [
+        1,
+        0,
+        -1
+      ],
+      "D": [
+        1,
+        0,
+        -3
+      ],
+      "E": [
+        0
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -3
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        0,
+        -1
+      ],
+      "S": 2,
+      "T": 0,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -6
+        }
+      ],
+      "contact_bound_coefficients": [
+        2,
+        1
+      ],
+      "cyclic_order": 2,
+      "d": 2,
+      "derivative_truncation_degree": 7,
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 6
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 6
+            }
+          ],
+          "N": [
+            0,
+            6
+          ],
+          "actual_degree": 1,
+          "final_actual_degree": 1,
+          "final_upper_degree": 1,
+          "k": 2,
+          "radical_actual_degree": 1,
+          "radical_upper_degree": 1,
+          "upper_degree": 1
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 6
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 90
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 6
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 90
+            }
+          ],
+          "N": [
+            6,
+            0,
+            90
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 3,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2160
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2160
+            }
+          ],
+          "N": [
+            0,
+            360,
+            0,
+            2160
+          ],
+          "actual_degree": 3,
+          "final_actual_degree": 3,
+          "final_upper_degree": 3,
+          "k": 4,
+          "radical_actual_degree": 3,
+          "radical_upper_degree": 3,
+          "upper_degree": 3
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 20520
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 71280
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 20520
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 71280
+            }
+          ],
+          "N": [
+            360,
+            0,
+            20520,
+            0,
+            71280
+          ],
+          "actual_degree": 4,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 5,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 4
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 60480
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1270080
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2993760
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 60480
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1270080
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2993760
+            }
+          ],
+          "N": [
+            0,
+            60480,
+            0,
+            1270080,
+            0,
+            2993760
+          ],
+          "actual_degree": 5,
+          "final_actual_degree": 5,
+          "final_upper_degree": 5,
+          "k": 6,
+          "radical_actual_degree": 5,
+          "radical_upper_degree": 5,
+          "upper_degree": 5
+        }
+      ],
+      "window_bound_coefficients": [
+        1,
+        1
+      ]
+    },
+    {
+      "A": [
+        1,
+        0,
+        0,
+        -1
+      ],
+      "D": [
+        1,
+        0,
+        0,
+        -4
+      ],
+      "E": [
+        0
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -4
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        0,
+        0,
+        -1
+      ],
+      "S": 3,
+      "T": 0,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -12
+        }
+      ],
+      "contact_bound_coefficients": [
+        3,
+        1
+      ],
+      "cyclic_order": 3,
+      "d": 3,
+      "derivative_truncation_degree": 7,
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 12
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 12
+            }
+          ],
+          "N": [
+            0,
+            0,
+            12
+          ],
+          "actual_degree": 2,
+          "final_actual_degree": 2,
+          "final_upper_degree": 2,
+          "k": 2,
+          "radical_actual_degree": 2,
+          "radical_upper_degree": 2,
+          "upper_degree": 2
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 24
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 336
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 24
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 336
+            }
+          ],
+          "N": [
+            0,
+            24,
+            0,
+            0,
+            336
+          ],
+          "actual_degree": 4,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 3,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 4
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 24
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2688
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 14784
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 24
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2688
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 14784
+            }
+          ],
+          "N": [
+            24,
+            0,
+            0,
+            2688,
+            0,
+            0,
+            14784
+          ],
+          "actual_degree": 6,
+          "final_actual_degree": 6,
+          "final_upper_degree": 6,
+          "k": 4,
+          "radical_actual_degree": 6,
+          "radical_upper_degree": 6,
+          "upper_degree": 6
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 10080
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 282240
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 887040
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 10080
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 282240
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 887040
+            }
+          ],
+          "N": [
+            0,
+            0,
+            10080,
+            0,
+            0,
+            282240,
+            0,
+            0,
+            887040
+          ],
+          "actual_degree": 8,
+          "final_actual_degree": 8,
+          "final_upper_degree": 8,
+          "k": 5,
+          "radical_actual_degree": 8,
+          "radical_upper_degree": 8,
+          "upper_degree": 8
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 20160
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2419200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 31933440
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 67415040
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 20160
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2419200
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 31933440
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 67415040
+            }
+          ],
+          "N": [
+            0,
+            20160,
+            0,
+            0,
+            2419200,
+            0,
+            0,
+            31933440,
+            0,
+            0,
+            67415040
+          ],
+          "actual_degree": 10,
+          "final_actual_degree": 10,
+          "final_upper_degree": 10,
+          "k": 6,
+          "radical_actual_degree": 10,
+          "radical_upper_degree": 10,
+          "upper_degree": 10
+        }
+      ],
+      "window_bound_coefficients": [
+        2,
+        1
+      ]
+    },
+    {
+      "A": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "D": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -6
+      ],
+      "E": [
+        0
+      ],
+      "G": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "J": [
+        1
+      ],
+      "J0": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "K": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -6
+        }
+      ],
+      "L": [
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "P": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "S": 5,
+      "T": 0,
+      "T0": 0,
+      "U": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -30
+        }
+      ],
+      "contact_bound_coefficients": [
+        5,
+        1
+      ],
+      "cyclic_order": 5,
+      "d": 5,
+      "derivative_truncation_degree": 7,
+      "numerators": [
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 30
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 30
+            }
+          ],
+          "N": [
+            0,
+            0,
+            0,
+            0,
+            30
+          ],
+          "actual_degree": 4,
+          "final_actual_degree": 4,
+          "final_upper_degree": 4,
+          "k": 2,
+          "radical_actual_degree": 4,
+          "radical_upper_degree": 4,
+          "upper_degree": 4
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 120
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1980
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 120
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1980
+            }
+          ],
+          "N": [
+            0,
+            0,
+            0,
+            120,
+            0,
+            0,
+            0,
+            0,
+            1980
+          ],
+          "actual_degree": 8,
+          "final_actual_degree": 8,
+          "final_upper_degree": 8,
+          "k": 3,
+          "radical_actual_degree": 8,
+          "radical_upper_degree": 8,
+          "upper_degree": 8
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 31680
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 201960
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 360
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 31680
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 201960
+            }
+          ],
+          "N": [
+            0,
+            0,
+            360,
+            0,
+            0,
+            0,
+            0,
+            31680,
+            0,
+            0,
+            0,
+            0,
+            201960
+          ],
+          "actual_degree": 12,
+          "final_actual_degree": 12,
+          "final_upper_degree": 12,
+          "k": 4,
+          "radical_actual_degree": 12,
+          "radical_upper_degree": 12,
+          "upper_degree": 12
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 293040
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 7745760
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 27870480
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 293040
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 7745760
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 27870480
+            }
+          ],
+          "N": [
+            0,
+            720,
+            0,
+            0,
+            0,
+            0,
+            293040,
+            0,
+            0,
+            0,
+            0,
+            7745760,
+            0,
+            0,
+            0,
+            0,
+            27870480
+          ],
+          "actual_degree": 16,
+          "final_actual_degree": 16,
+          "final_upper_degree": 16,
+          "k": 5,
+          "radical_actual_degree": 16,
+          "radical_upper_degree": 16,
+          "upper_degree": 16
+        },
+        {
+          "C": [
+            {
+              "denominator": 1,
+              "numerator": 720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1948320
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 153774720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2026062720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 4849463520
+            }
+          ],
+          "C_hat": [
+            {
+              "denominator": 1,
+              "numerator": 720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 1948320
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 153774720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 2026062720
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 0
+            },
+            {
+              "denominator": 1,
+              "numerator": 4849463520
+            }
+          ],
+          "N": [
+            720,
+            0,
+            0,
+            0,
+            0,
+            1948320,
+            0,
+            0,
+            0,
+            0,
+            153774720,
+            0,
+            0,
+            0,
+            0,
+            2026062720,
+            0,
+            0,
+            0,
+            0,
+            4849463520
+          ],
+          "actual_degree": 20,
+          "final_actual_degree": 20,
+          "final_upper_degree": 20,
+          "k": 6,
+          "radical_actual_degree": 20,
+          "radical_upper_degree": 20,
+          "upper_degree": 20
+        }
+      ],
+      "window_bound_coefficients": [
+        4,
+        1
+      ]
+    }
+  ],
+  "cyclic_coefficient_checks": 48,
+  "dependencies": {
+    "SFC_MONOMIAL_LINEAR_CONTACT_BOUND.md": "409ca1ed8a1ef3218fb07673d14830d04cf10562f5714c88bd8de8e9a681b417",
+    "SFC_RAMIFIED_PULLBACK_CLOSURE.md": "eb444a8f02feb92834336589024e0d920b4eba23970582291af406c11bd7f519",
+    "verify_sfc_monomial_linear_contact.py": "c80ea0aa4ade828a89d18e028072c65fc0525c6700afc661183b5cb14c2e1055"
+  },
+  "direct_actual_moment_checks": 108,
+  "exact_old_numerator_factor_identities": 75,
+  "exact_repeated_critical_root_factor_identities": 75,
+  "exact_shared_divisor_factor_identities": 75,
+  "inverse_derivative_identities": 75,
+  "negative_control": "The (1,1,2) third-derivative numerator exceeds the false T=0 degree bound.",
+  "note_sha256": "a35a390ae1b3bb84fa52d3dede3b488ef469536388cb620cd320574ed676594b",
+  "overlap_reduced_inverse_derivative_identities": 75,
+  "parameter_cases": 15,
+  "radical_inverse_derivative_identities": 75,
+  "scope": "Finite exact identity controls only; the written induction proves the unrestricted contact bound.",
+  "sharp_SFC_claimed": false,
+  "status": "PASS"
+}

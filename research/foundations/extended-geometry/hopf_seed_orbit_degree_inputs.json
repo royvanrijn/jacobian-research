@@ -1,0 +1,315 @@
+{
+  "H_coefficients": [
+    [
+      "1",
+      "1"
+    ],
+    [
+      "-2",
+      "3",
+      "-1"
+    ],
+    [
+      "2",
+      "-1",
+      "0",
+      "2"
+    ]
+  ],
+  "linear_frames": [
+    {
+      "heights": [
+        2,
+        3,
+        3
+      ],
+      "last_top": [
+        "-1",
+        "-6",
+        "-6"
+      ],
+      "matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "name": "native"
+    },
+    {
+      "heights": [
+        6,
+        9,
+        13
+      ],
+      "last_top": [
+        "-90",
+        "45360",
+        "194594400"
+      ],
+      "matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "name": "opposite"
+    },
+    {
+      "heights": [
+        8,
+        12,
+        16
+      ],
+      "last_top": [
+        "-315",
+        "935550",
+        "2554051500"
+      ],
+      "matrix": [
+        [
+          "1",
+          "-1/2",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1"
+        ]
+      ],
+      "name": "generic"
+    },
+    {
+      "heights": [
+        2,
+        3,
+        3
+      ],
+      "last_top": [
+        "-4",
+        "-48",
+        "-192"
+      ],
+      "matrix": [
+        [
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "-9/4",
+          "1/2",
+          "-3/2"
+        ],
+        [
+          "3",
+          "0",
+          "1"
+        ]
+      ],
+      "name": "native_nontrivial_T"
+    },
+    {
+      "heights": [
+        6,
+        9,
+        13
+      ],
+      "last_top": [
+        "-1440",
+        "-2903040",
+        "-199264665600"
+      ],
+      "matrix": [
+        [
+          "-9/2",
+          "4",
+          "-6"
+        ],
+        [
+          "1/4",
+          "0",
+          "0"
+        ],
+        [
+          "-3/2",
+          "0",
+          "-1"
+        ]
+      ],
+      "name": "opposite_nontrivial_T"
+    },
+    {
+      "heights": [
+        8,
+        12,
+        16
+      ],
+      "last_top": [
+        "-8960/9",
+        "-15769600/3",
+        "-229605376000/9"
+      ],
+      "matrix": [
+        [
+          "4/3",
+          "-2/3",
+          "4/3"
+        ],
+        [
+          "-1/6",
+          "4/3",
+          "-2/3"
+        ],
+        [
+          "2/3",
+          "-4/3",
+          "5/3"
+        ]
+      ],
+      "name": "generic_nontrivial_T"
+    }
+  ],
+  "logical_boundary": {
+    "PGL2_frames_require_nonzero_determinant": true,
+    "all_characteristic_zero_fields_and_extensions": true,
+    "all_unsafe_phases_are_in_these_orbits": false,
+    "degree_eight_exact_odd_times_first_shear_spectrum": true,
+    "degree_eight_minimum_eight_first_prime_eleven": true,
+    "degree_eight_orbit_contains_prime_thirteen_or_nineteen": false,
+    "degree_eight_prime_classes_two_mod_three_or_eight_mod_thirteen": true,
+    "degree_growth_only_for_reduced_words": true,
+    "degree_six_exact_multiples_three_at_least_six": true,
+    "every_nonlinear_word_increases_degree": false,
+    "external_review": false,
+    "formal_verification": false,
+    "full_automorphism_orbit_degrees": true,
+    "generic_H_polynomials_and_constant_T_absorption": true,
+    "global_degree_five_seven_exclusion": false,
+    "independent_replay": false,
+    "old_seed_unsafe_theorem_logical_premise": false,
+    "pointwise_height_degree_lemma_requires_matching_top_height": true,
+    "positive_characteristic_scope": false,
+    "prime_density_claim": false,
+    "quadratic_case_primary_applies": true,
+    "quartic_exact_even_degrees_at_least_four": true,
+    "quartic_or_degree_six_orbit_has_prime_degree": false,
+    "trace_or_purity_theorem_logical_premise": false,
+    "unconditional_original_Image_counterexample_conclusion": false
+  },
+  "odd_multiplier_controls": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "primary_metadata": {
+    "authors": [
+      "Jeremy Blanc",
+      "Anna Bot",
+      "Pierre-Marie Poloni"
+    ],
+    "doi": "10.5565/PUBLMAT6722314",
+    "journal": "Publicacions Matematiques",
+    "locator": "Theorems3.5-3.6 printed860-862; Lemma3.9 printed863-864",
+    "pages": "851-890",
+    "role": "mathematical_quadratic_automorphism_generation_only",
+    "title": "Real forms of some Gizatullin surfaces and Koras-Russell threefolds",
+    "url": "https://algebra.dmi.unibas.ch/bot/publmat.pdf",
+    "volume": 67,
+    "year": 2023
+  },
+  "prime_controls": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97,
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149
+  ],
+  "realization_k_controls": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "schema": 1,
+  "seed_degrees": [
+    4,
+    6,
+    8
+  ],
+  "universal_frame_contexts": {
+    "generic": "b*d*(a*d-b*c)!=0",
+    "native": "b=0 and a*d!=0",
+    "opposite": "d=0 and b*c!=0"
+  }
+}

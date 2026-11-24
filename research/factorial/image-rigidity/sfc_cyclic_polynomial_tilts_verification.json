@@ -1,0 +1,728 @@
+{
+  "status": "PASS",
+  "evidence_type": "exact finite controls, not a proof of universal quantifiers",
+  "own_note_sha256": "ba7cc5fe27558993b93eb87d4a08e2cb29adb1c30d86ab8868b20cbfc5cfde0d",
+  "own_checker_sha256": "12ccb162af6d4c6b4f3a554bac29041f436ca360a5ea8f252e31d3af00e05070",
+  "rejection_controls": {
+    "optimized_mode_rejected": true,
+    "altered_note_rejected": true
+  },
+  "expected_note_sha256": "ba7cc5fe27558993b93eb87d4a08e2cb29adb1c30d86ab8868b20cbfc5cfde0d",
+  "connected_permutation_controls": [
+    {
+      "template": {
+        "(1,)": "1",
+        "(2,)": "1"
+      },
+      "beta": [
+        "3/2"
+      ],
+      "n": 1,
+      "cumulant": "21/4",
+      "permutation_tuples": 3,
+      "connected_tuples": 3
+    },
+    {
+      "template": {
+        "(1,)": "1",
+        "(2,)": "1"
+      },
+      "beta": [
+        "3/2"
+      ],
+      "n": 2,
+      "cumulant": "123/2",
+      "permutation_tuples": 38,
+      "connected_tuples": 29
+    },
+    {
+      "template": {
+        "(1,)": "1",
+        "(2,)": "1"
+      },
+      "beta": [
+        "3/2"
+      ],
+      "n": 3,
+      "cumulant": "2163",
+      "permutation_tuples": 1158,
+      "connected_tuples": 870
+    },
+    {
+      "template": {
+        "(1, 0)": "1",
+        "(0, 1)": "1",
+        "(1, 1)": "1/2"
+      },
+      "beta": [
+        "1/3",
+        "4"
+      ],
+      "n": 1,
+      "cumulant": "5",
+      "permutation_tuples": 3,
+      "connected_tuples": 3
+    },
+    {
+      "template": {
+        "(1, 0)": "1",
+        "(0, 1)": "1",
+        "(1, 1)": "1/2"
+      },
+      "beta": [
+        "1/3",
+        "4"
+      ],
+      "n": 2,
+      "cumulant": "79/9",
+      "permutation_tuples": 18,
+      "connected_tuples": 9
+    },
+    {
+      "template": {
+        "(1, 0)": "1",
+        "(0, 1)": "1",
+        "(1, 1)": "1/2"
+      },
+      "beta": [
+        "1/3",
+        "4"
+      ],
+      "n": 3,
+      "cumulant": "1450/27",
+      "permutation_tuples": 192,
+      "connected_tuples": 84
+    },
+    {
+      "template": {
+        "(2, 1)": "2"
+      },
+      "beta": [
+        "2",
+        "1/2"
+      ],
+      "n": 1,
+      "cumulant": "6",
+      "permutation_tuples": 2,
+      "connected_tuples": 2
+    },
+    {
+      "template": {
+        "(2, 1)": "2"
+      },
+      "beta": [
+        "2",
+        "1/2"
+      ],
+      "n": 2,
+      "cumulant": "324",
+      "permutation_tuples": 48,
+      "connected_tuples": 44
+    }
+  ],
+  "orbit_tilt_controls": [
+    {
+      "label": "two-cycle polynomial with common tilt",
+      "dimension": 2,
+      "cycles": [
+        2
+      ],
+      "tilt_vectors": [
+        [
+          1
+        ]
+      ],
+      "templates": [
+        {
+          "(1,)": "1",
+          "(2,)": "1"
+        }
+      ],
+      "scales": [
+        "1"
+      ],
+      "checked_orders": [
+        0,
+        7
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 2,
+          "normalized_moment": "267",
+          "ordinary_moment": "2136",
+          "nonzero": true
+        },
+        {
+          "n": 3,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 4,
+          "normalized_moment": "1078155",
+          "ordinary_moment": "14904414720",
+          "nonzero": true
+        },
+        {
+          "n": 5,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 6,
+          "normalized_moment": "13565487684",
+          "ordinary_moment": "5063291147077632000",
+          "nonzero": true
+        },
+        {
+          "n": 7,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 4,
+          "exposed_face_support": 2,
+          "bound": 2
+        },
+        {
+          "power": 2,
+          "actual_support": 10,
+          "exposed_face_support": 3,
+          "bound": 3
+        },
+        {
+          "power": 3,
+          "actual_support": 18,
+          "exposed_face_support": 4,
+          "bound": 4
+        }
+      ]
+    },
+    {
+      "label": "three-cycle bivariate positive template",
+      "dimension": 6,
+      "cycles": [
+        3
+      ],
+      "tilt_vectors": [
+        [
+          1,
+          2
+        ]
+      ],
+      "templates": [
+        {
+          "(1, 0)": "1",
+          "(0, 1)": "2",
+          "(1, 1)": "1"
+        }
+      ],
+      "scales": [
+        "1"
+      ],
+      "checked_orders": [
+        0,
+        4
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 2,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 3,
+          "normalized_moment": "8824",
+          "ordinary_moment": "4268428296192000",
+          "nonzero": true
+        },
+        {
+          "n": 4,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 9,
+          "exposed_face_support": 3,
+          "bound": 3
+        },
+        {
+          "power": 2,
+          "actual_support": 45,
+          "exposed_face_support": 6,
+          "bound": 6
+        },
+        {
+          "power": 3,
+          "actual_support": 162,
+          "exposed_face_support": 10,
+          "bound": 10
+        }
+      ]
+    },
+    {
+      "label": "four-cycle homogeneous template",
+      "dimension": 8,
+      "cycles": [
+        4
+      ],
+      "tilt_vectors": [
+        [
+          2,
+          0
+        ]
+      ],
+      "templates": [
+        {
+          "(2, 0)": "1",
+          "(1, 1)": "2",
+          "(0, 2)": "1"
+        }
+      ],
+      "scales": [
+        "1"
+      ],
+      "checked_orders": [
+        0,
+        4
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 2,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 3,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 4,
+          "normalized_moment": "20728400",
+          "ordinary_moment": "1314798246436867670016000000",
+          "nonzero": true
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 12,
+          "exposed_face_support": 4,
+          "bound": 4
+        },
+        {
+          "power": 2,
+          "actual_support": 74,
+          "exposed_face_support": 10,
+          "bound": 10
+        },
+        {
+          "power": 3,
+          "actual_support": 316,
+          "exposed_face_support": 20,
+          "bound": 20
+        }
+      ]
+    },
+    {
+      "label": "mixed semigroup generated by two and three",
+      "dimension": 5,
+      "cycles": [
+        2,
+        3
+      ],
+      "tilt_vectors": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "templates": [
+        {
+          "(1,)": "1",
+          "(2,)": "1"
+        },
+        {
+          "(1,)": "1"
+        }
+      ],
+      "scales": [
+        "1/2",
+        "2"
+      ],
+      "checked_orders": [
+        0,
+        6
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 2,
+          "normalized_moment": "267/4",
+          "ordinary_moment": "7382016",
+          "nonzero": true
+        },
+        {
+          "n": 3,
+          "normalized_moment": "56",
+          "ordinary_moment": "4514807808000",
+          "nonzero": true
+        },
+        {
+          "n": 4,
+          "normalized_moment": "1078155/16",
+          "ordinary_moment": "61059959807866306560000",
+          "nonzero": true
+        },
+        {
+          "n": 5,
+          "normalized_moment": "31548",
+          "ordinary_moment": "2604981653215975047168000000000",
+          "nonzero": true
+        },
+        {
+          "n": 6,
+          "normalized_moment": "3391465105/16",
+          "ordinary_moment": "8695123439963700062300267599626240000000000",
+          "nonzero": true
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 7,
+          "exposed_face_support": 5,
+          "bound": 5
+        },
+        {
+          "power": 2,
+          "actual_support": 28,
+          "exposed_face_support": 15,
+          "bound": 15
+        },
+        {
+          "power": 3,
+          "actual_support": 82,
+          "exposed_face_support": 35,
+          "bound": 35
+        }
+      ]
+    },
+    {
+      "label": "cycle one gives no moment zeros",
+      "dimension": 4,
+      "cycles": [
+        1,
+        2
+      ],
+      "tilt_vectors": [
+        [
+          2,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "templates": [
+        {
+          "(1, 0)": "1",
+          "(0, 1)": "1",
+          "(1, 1)": "1"
+        },
+        {
+          "(1,)": "1",
+          "(3,)": "1"
+        }
+      ],
+      "scales": [
+        "1",
+        "1/3"
+      ],
+      "checked_orders": [
+        0,
+        5
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "11",
+          "ordinary_moment": "22",
+          "nonzero": true
+        },
+        {
+          "n": 2,
+          "normalized_moment": "6739/3",
+          "ordinary_moment": "862592",
+          "nonzero": true
+        },
+        {
+          "n": 3,
+          "normalized_moment": "672394/3",
+          "ordinary_moment": "209141429760",
+          "nonzero": true
+        },
+        {
+          "n": 4,
+          "normalized_moment": "21051701980/27",
+          "ordinary_moment": "10430111217667276800",
+          "nonzero": true
+        },
+        {
+          "n": 5,
+          "normalized_moment": "1838748404116/9",
+          "ordinary_moment": "153733252812045484032000000",
+          "nonzero": true
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 7,
+          "exposed_face_support": 3,
+          "bound": 3
+        },
+        {
+          "power": 2,
+          "actual_support": 28,
+          "exposed_face_support": 6,
+          "bound": 6
+        },
+        {
+          "power": 3,
+          "actual_support": 84,
+          "exposed_face_support": 10,
+          "bound": 10
+        }
+      ]
+    },
+    {
+      "label": "before symmetric within-copy identification",
+      "dimension": 6,
+      "cycles": [
+        3
+      ],
+      "tilt_vectors": [
+        [
+          1,
+          2
+        ]
+      ],
+      "templates": [
+        {
+          "(2, 0)": "1",
+          "(1, 1)": "2",
+          "(0, 2)": "1"
+        }
+      ],
+      "scales": [
+        "1"
+      ],
+      "checked_orders": [
+        0,
+        4
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 2,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 3,
+          "normalized_moment": "426096",
+          "ordinary_moment": "206115165831168000",
+          "nonzero": true
+        },
+        {
+          "n": 4,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 9,
+          "exposed_face_support": 3,
+          "bound": 3
+        },
+        {
+          "power": 2,
+          "actual_support": 42,
+          "exposed_face_support": 6,
+          "bound": 6
+        },
+        {
+          "power": 3,
+          "actual_support": 138,
+          "exposed_face_support": 10,
+          "bound": 10
+        }
+      ]
+    },
+    {
+      "label": "after symmetric within-copy identification",
+      "dimension": 3,
+      "cycles": [
+        3
+      ],
+      "tilt_vectors": [
+        [
+          3
+        ]
+      ],
+      "templates": [
+        {
+          "(2,)": "4"
+        }
+      ],
+      "scales": [
+        "1"
+      ],
+      "checked_orders": [
+        0,
+        4
+      ],
+      "moments": [
+        {
+          "n": 0,
+          "normalized_moment": "1",
+          "ordinary_moment": "1",
+          "nonzero": true
+        },
+        {
+          "n": 1,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 2,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        },
+        {
+          "n": 3,
+          "normalized_moment": "19289600",
+          "ordinary_moment": "5530489485364769587200000",
+          "nonzero": true
+        },
+        {
+          "n": 4,
+          "normalized_moment": "0",
+          "ordinary_moment": "0",
+          "nonzero": false
+        }
+      ],
+      "power_supports": [
+        {
+          "power": 1,
+          "actual_support": 3,
+          "exposed_face_support": 3,
+          "bound": 3
+        },
+        {
+          "power": 2,
+          "actual_support": 6,
+          "exposed_face_support": 6,
+          "bound": 6
+        },
+        {
+          "power": 3,
+          "actual_support": 10,
+          "exposed_face_support": 10,
+          "bound": 10
+        }
+      ]
+    }
+  ],
+  "gamma_three_kaluza_shortcut_refuted": true,
+  "asymmetric_common_monomial_zero_pattern_refuted": true,
+  "arbitrary_cross_copy_merging_proved": false,
+  "unrestricted_SFC_proved": false
+}

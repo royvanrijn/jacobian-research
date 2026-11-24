@@ -1,0 +1,8811 @@
+{
+  "actual_coefficient_controls": [
+    {
+      "base_matrix": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "common_profile": [
+        1,
+        2
+      ],
+      "controls": [
+        {
+          "coefficient_count": 2,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "m": 1,
+          "mixed_coefficient_sum": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        {
+          "coefficient_count": 3,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 48
+          },
+          "m": 2,
+          "mixed_coefficient_sum": {
+            "denominator": 5408312,
+            "numerator": 3
+          }
+        },
+        {
+          "coefficient_count": 4,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 4320
+          },
+          "m": 3,
+          "mixed_coefficient_sum": {
+            "denominator": 312919425,
+            "numerator": 1
+          }
+        },
+        {
+          "coefficient_count": 5,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 967680
+          },
+          "m": 4,
+          "mixed_coefficient_sum": {
+            "denominator": 4384240874071240,
+            "numerator": 315087
+          }
+        },
+        {
+          "coefficient_count": 6,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 435456000
+          },
+          "m": 5,
+          "mixed_coefficient_sum": {
+            "denominator": 12870702331135555725,
+            "numerator": 55188758
+          }
+        }
+      ],
+      "name": "two_shared_permutations",
+      "private_exponent": 12
+    },
+    {
+      "base_matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "common_profile": [
+        1,
+        2
+      ],
+      "controls": [
+        {
+          "coefficient_count": 3,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "m": 1,
+          "mixed_coefficient_sum": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        {
+          "coefficient_count": 6,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 48
+          },
+          "m": 2,
+          "mixed_coefficient_sum": {
+            "denominator": 6050090200,
+            "numerator": 1
+          }
+        },
+        {
+          "coefficient_count": 10,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 4320
+          },
+          "m": 3,
+          "mixed_coefficient_sum": {
+            "denominator": 977355252762003400285000,
+            "numerator": 22183664067
+          }
+        },
+        {
+          "coefficient_count": 15,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 967680
+          },
+          "m": 4,
+          "mixed_coefficient_sum": {
+            "denominator": 37481370966283936788063578811200,
+            "numerator": 1647802376648091
+          }
+        },
+        {
+          "coefficient_count": 21,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 435456000
+          },
+          "m": 5,
+          "mixed_coefficient_sum": {
+            "denominator": 1547795661638334087886672694016932934053964000,
+            "numerator": 653483719460172280636446473
+          }
+        }
+      ],
+      "name": "three_cyclic_columns",
+      "private_exponent": 18
+    },
+    {
+      "base_matrix": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2
+        ]
+      ],
+      "common_profile": [
+        1,
+        2,
+        3
+      ],
+      "controls": [
+        {
+          "coefficient_count": 4,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 12
+          },
+          "m": 1,
+          "mixed_coefficient_sum": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        {
+          "coefficient_count": 10,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 34560
+          },
+          "m": 2,
+          "mixed_coefficient_sum": {
+            "denominator": 483714055246500,
+            "numerator": 19
+          }
+        },
+        {
+          "coefficient_count": 20,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 1567641600
+          },
+          "m": 3,
+          "mixed_coefficient_sum": {
+            "denominator": 1345978658093952068537711824327500,
+            "numerator": 225733225781701
+          }
+        },
+        {
+          "coefficient_count": 35,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 463520268288000
+          },
+          "m": 4,
+          "mixed_coefficient_sum": {
+            "denominator": 15028841110557165901947419681529159945196058422232287500,
+            "numerator": 532783730405791468354268954878297
+          }
+        }
+      ],
+      "name": "four_permutation_columns",
+      "private_exponent": 24
+    },
+    {
+      "base_matrix": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "common_profile": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "controls": [
+        {
+          "coefficient_count": 3,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 12
+          },
+          "m": 1,
+          "mixed_coefficient_sum": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        {
+          "coefficient_count": 6,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 69120
+          },
+          "m": 2,
+          "mixed_coefficient_sum": {
+            "denominator": 272254059000,
+            "numerator": 1
+          }
+        },
+        {
+          "coefficient_count": 10,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 9405849600
+          },
+          "m": 3,
+          "mixed_coefficient_sum": {
+            "denominator": 66499251397926711355391400000,
+            "numerator": 5445081180001
+          }
+        },
+        {
+          "coefficient_count": 15,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 11124486438912000
+          },
+          "m": 4,
+          "mixed_coefficient_sum": {
+            "denominator": 1016397003116143103248489308893280000,
+            "numerator": 48784766622711919
+          }
+        }
+      ],
+      "name": "privately_balanced_arbitrary_support",
+      "private_exponent": 18
+    }
+  ],
+  "balancing": {
+    "balanced_matrix": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "common_positive_exponent_profile": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "original_matrix": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "private_copy_provenance": [
+      {
+        "exponent": 1,
+        "new_row": 2,
+        "source_column": 1,
+        "source_row": 0,
+        "target_column": 0
+      },
+      {
+        "exponent": 3,
+        "new_row": 3,
+        "source_column": 2,
+        "source_row": 0,
+        "target_column": 0
+      },
+      {
+        "exponent": 1,
+        "new_row": 4,
+        "source_column": 2,
+        "source_row": 1,
+        "target_column": 0
+      },
+      {
+        "exponent": 2,
+        "new_row": 5,
+        "source_column": 0,
+        "source_row": 1,
+        "target_column": 1
+      },
+      {
+        "exponent": 3,
+        "new_row": 6,
+        "source_column": 2,
+        "source_row": 0,
+        "target_column": 1
+      },
+      {
+        "exponent": 1,
+        "new_row": 7,
+        "source_column": 2,
+        "source_row": 1,
+        "target_column": 1
+      },
+      {
+        "exponent": 2,
+        "new_row": 8,
+        "source_column": 0,
+        "source_row": 1,
+        "target_column": 2
+      },
+      {
+        "exponent": 1,
+        "new_row": 9,
+        "source_column": 1,
+        "source_row": 0,
+        "target_column": 2
+      }
+    ]
+  },
+  "checker_sha256": "eca0b5a325b31b347a058b1a6bbaadfcb5bc34e3b5a900d45ff42cb4da0ecca4",
+  "factorial_inequalities": {
+    "jensen_and_literal_smoothing_cases": 705,
+    "stretched_multinomial_cases": 600
+  },
+  "field_scope": "Finite nonzero modular minors imply rational full rank; rational equations transfer to characteristic-zero coefficient fields.",
+  "identical_base_column_controls": [
+    {
+      "coefficient_count": 2,
+      "common_endpoint_moment": {
+        "denominator": 1,
+        "numerator": 2
+      },
+      "m": 1,
+      "mixed_coefficient_sum": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "coefficient_count": 3,
+      "common_endpoint_moment": {
+        "denominator": 1,
+        "numerator": 48
+      },
+      "m": 2,
+      "mixed_coefficient_sum": {
+        "denominator": 1352078,
+        "numerator": 1
+      }
+    },
+    {
+      "coefficient_count": 4,
+      "common_endpoint_moment": {
+        "denominator": 1,
+        "numerator": 4320
+      },
+      "m": 3,
+      "mixed_coefficient_sum": {
+        "denominator": 208612950,
+        "numerator": 1
+      }
+    }
+  ],
+  "limits": [
+    "Private markers remain private.",
+    "Endpoint profiles, or polynomial-template endpoint moments, are balanced.",
+    "Amplification is proved; de-amplification and unrestricted SFC are not."
+  ],
+  "macaulay_certificates": [
+    {
+      "active_support_size": 2,
+      "base_matrix": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 3,
+      "column_monomials": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2
+      ],
+      "full_column_rank": 3,
+      "full_minor_determinant_mod_prime": 96466,
+      "homogeneous_degree_L": 2,
+      "matrix_sha256": "566a9ec86ffdf0c008943c39dab1b5b86b94d4386911c955069f7c1903256607",
+      "name": "two_shared_permutations",
+      "normalized_moment_coefficients": {
+        "1": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 5408312,
+            "exponents": [
+              1,
+              1
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        1,
+        2
+      ],
+      "prime": 104729,
+      "private_exponent": 12,
+      "row_count": 3,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "starting_order": 1
+    },
+    {
+      "active_support_size": 2,
+      "base_matrix": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 5,
+      "column_monomials": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "full_column_rank": 5,
+      "full_minor_determinant_mod_prime": 47204,
+      "homogeneous_degree_L": 4,
+      "matrix_sha256": "2dacdf3e360d97689e00fd42333525b8fe770ea8cdba7d786d1d7d79088686ce",
+      "name": "two_shared_permutations",
+      "normalized_moment_coefficients": {
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 5408312,
+            "exponents": [
+              1,
+              1
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 625838850,
+            "exponents": [
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 625838850,
+            "exponents": [
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        2,
+        3
+      ],
+      "prime": 104729,
+      "private_exponent": 12,
+      "row_count": 5,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            0
+          ]
+        }
+      ],
+      "starting_order": 2
+    },
+    {
+      "active_support_size": 2,
+      "base_matrix": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 7,
+      "column_monomials": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "full_column_rank": 7,
+      "full_minor_determinant_mod_prime": 41170,
+      "homogeneous_degree_L": 6,
+      "matrix_sha256": "33dff3e7e3e69f47167b049df128f7a19dbe2b460ac479ad58a1ac98376dcc18",
+      "name": "two_shared_permutations",
+      "normalized_moment_coefficients": {
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 625838850,
+            "exponents": [
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 625838850,
+            "exponents": [
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "4": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 139337068936,
+            "exponents": [
+              1,
+              3
+            ],
+            "numerator": 5
+          },
+          {
+            "denominator": 10032587812520,
+            "exponents": [
+              2,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 139337068936,
+            "exponents": [
+              3,
+              1
+            ],
+            "numerator": 5
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              4,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        3,
+        4
+      ],
+      "prime": 104729,
+      "private_exponent": 12,
+      "row_count": 7,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            0
+          ]
+        }
+      ],
+      "starting_order": 3
+    },
+    {
+      "active_support_size": 2,
+      "base_matrix": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 9,
+      "column_monomials": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "full_column_rank": 9,
+      "full_minor_determinant_mod_prime": 54894,
+      "homogeneous_degree_L": 8,
+      "matrix_sha256": "0de3762c9d64fdb14dfca9dbe68dbba21c49534b5212281aae7c120494fd0654",
+      "name": "two_shared_permutations",
+      "normalized_moment_coefficients": {
+        "4": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 139337068936,
+            "exponents": [
+              1,
+              3
+            ],
+            "numerator": 5
+          },
+          {
+            "denominator": 10032587812520,
+            "exponents": [
+              2,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 139337068936,
+            "exponents": [
+              3,
+              1
+            ],
+            "numerator": 5
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              4,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "5": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              5
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 466452948325,
+            "exponents": [
+              1,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 15451023206645325,
+            "exponents": [
+              2,
+              3
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 15451023206645325,
+            "exponents": [
+              3,
+              2
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 466452948325,
+            "exponents": [
+              4,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              5,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        4,
+        5
+      ],
+      "prime": 104729,
+      "private_exponent": 12,
+      "row_count": 9,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            3,
+            0
+          ]
+        }
+      ],
+      "starting_order": 4
+    },
+    {
+      "active_support_size": 3,
+      "base_matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 15,
+      "column_monomials": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        4,
+        8,
+        11,
+        13,
+        14
+      ],
+      "full_column_rank": 15,
+      "full_minor_determinant_mod_prime": 6401,
+      "homogeneous_degree_L": 4,
+      "matrix_sha256": "88479db7fdc9a6dbb5d18c8bb892aeee15c366219d10c652e0563e0bbf6512a4",
+      "name": "three_cyclic_columns",
+      "normalized_moment_coefficients": {
+        "1": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18150270600,
+            "exponents": [
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18150270600,
+            "exponents": [
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18150270600,
+            "exponents": [
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              0,
+              2,
+              1
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              1,
+              0,
+              2
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 2932065758286010200855000,
+            "exponents": [
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              2,
+              1,
+              0
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        1,
+        2,
+        3
+      ],
+      "prime": 104729,
+      "private_exponent": 18,
+      "row_count": 19,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "starting_order": 1
+    },
+    {
+      "active_support_size": 3,
+      "base_matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 36,
+      "column_monomials": [
+        [
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          5
+        ],
+        [
+          2,
+          1,
+          4
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          3,
+          0,
+          4
+        ],
+        [
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          4,
+          0,
+          3
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          0
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          1,
+          1
+        ],
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          1
+        ],
+        [
+          6,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        26,
+        27,
+        30,
+        6,
+        7,
+        13,
+        14,
+        19,
+        20,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "full_column_rank": 36,
+      "full_minor_determinant_mod_prime": 55990,
+      "homogeneous_degree_L": 7,
+      "matrix_sha256": "1435e145c6f45778d4f82b2a39f4ad8a762d8254beb80214eb1479caa886e9ac",
+      "name": "three_cyclic_columns",
+      "normalized_moment_coefficients": {
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18150270600,
+            "exponents": [
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18150270600,
+            "exponents": [
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18150270600,
+            "exponents": [
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              0,
+              2,
+              1
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              1,
+              0,
+              2
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 2932065758286010200855000,
+            "exponents": [
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              2,
+              1,
+              0
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "4": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 165728359062333760,
+            "exponents": [
+              0,
+              1,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6195175563875714908856,
+            "exponents": [
+              0,
+              2,
+              2
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 116009851343633632,
+            "exponents": [
+              0,
+              3,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              4,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 116009851343633632,
+            "exponents": [
+              1,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18740685483141968394031789405600,
+            "exponents": [
+              1,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18740685483141968394031789405600,
+            "exponents": [
+              1,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 165728359062333760,
+            "exponents": [
+              1,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6195175563875714908856,
+            "exponents": [
+              2,
+              0,
+              2
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 18740685483141968394031789405600,
+            "exponents": [
+              2,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6195175563875714908856,
+            "exponents": [
+              2,
+              2,
+              0
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 165728359062333760,
+            "exponents": [
+              3,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 116009851343633632,
+            "exponents": [
+              3,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              4,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        2,
+        3,
+        4
+      ],
+      "prime": 104729,
+      "private_exponent": 18,
+      "row_count": 46,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            4,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            4,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "starting_order": 2
+    },
+    {
+      "active_support_size": 3,
+      "base_matrix": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 66,
+      "column_monomials": [
+        [
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          1,
+          9
+        ],
+        [
+          0,
+          2,
+          8
+        ],
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          5,
+          5
+        ],
+        [
+          0,
+          6,
+          4
+        ],
+        [
+          0,
+          7,
+          3
+        ],
+        [
+          0,
+          8,
+          2
+        ],
+        [
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          1,
+          0,
+          9
+        ],
+        [
+          1,
+          1,
+          8
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          1,
+          6,
+          3
+        ],
+        [
+          1,
+          7,
+          2
+        ],
+        [
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          2,
+          0,
+          8
+        ],
+        [
+          2,
+          1,
+          7
+        ],
+        [
+          2,
+          2,
+          6
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          5,
+          3
+        ],
+        [
+          2,
+          6,
+          2
+        ],
+        [
+          2,
+          7,
+          1
+        ],
+        [
+          2,
+          8,
+          0
+        ],
+        [
+          3,
+          0,
+          7
+        ],
+        [
+          3,
+          1,
+          6
+        ],
+        [
+          3,
+          2,
+          5
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          4,
+          3
+        ],
+        [
+          3,
+          5,
+          2
+        ],
+        [
+          3,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          0
+        ],
+        [
+          4,
+          0,
+          6
+        ],
+        [
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          2,
+          4
+        ],
+        [
+          4,
+          3,
+          3
+        ],
+        [
+          4,
+          4,
+          2
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          4,
+          6,
+          0
+        ],
+        [
+          5,
+          0,
+          5
+        ],
+        [
+          5,
+          1,
+          4
+        ],
+        [
+          5,
+          2,
+          3
+        ],
+        [
+          5,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          1
+        ],
+        [
+          5,
+          5,
+          0
+        ],
+        [
+          6,
+          0,
+          4
+        ],
+        [
+          6,
+          1,
+          3
+        ],
+        [
+          6,
+          2,
+          2
+        ],
+        [
+          6,
+          3,
+          1
+        ],
+        [
+          6,
+          4,
+          0
+        ],
+        [
+          7,
+          0,
+          3
+        ],
+        [
+          7,
+          1,
+          2
+        ],
+        [
+          7,
+          2,
+          1
+        ],
+        [
+          7,
+          3,
+          0
+        ],
+        [
+          8,
+          0,
+          2
+        ],
+        [
+          8,
+          1,
+          1
+        ],
+        [
+          8,
+          2,
+          0
+        ],
+        [
+          9,
+          0,
+          1
+        ],
+        [
+          9,
+          1,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        30,
+        31,
+        32,
+        33,
+        34,
+        38,
+        39,
+        40,
+        41,
+        45,
+        46,
+        47,
+        51,
+        52,
+        56,
+        8,
+        9,
+        10,
+        18,
+        19,
+        20,
+        27,
+        28,
+        29,
+        35,
+        36,
+        37,
+        42,
+        43,
+        44,
+        48,
+        49,
+        53,
+        50,
+        54,
+        55,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "full_column_rank": 66,
+      "full_minor_determinant_mod_prime": 96712,
+      "homogeneous_degree_L": 10,
+      "matrix_sha256": "8488233f1f5051b4e9afa079a696cefe677cdd8dd56f0f7845a436782e95a739",
+      "name": "three_cyclic_columns",
+      "normalized_moment_coefficients": {
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              0,
+              2,
+              1
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              1,
+              0,
+              2
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 2932065758286010200855000,
+            "exponents": [
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 290779045735815,
+            "exponents": [
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 484631742893025,
+            "exponents": [
+              2,
+              1,
+              0
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "4": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 165728359062333760,
+            "exponents": [
+              0,
+              1,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6195175563875714908856,
+            "exponents": [
+              0,
+              2,
+              2
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 116009851343633632,
+            "exponents": [
+              0,
+              3,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              4,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 116009851343633632,
+            "exponents": [
+              1,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18740685483141968394031789405600,
+            "exponents": [
+              1,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18740685483141968394031789405600,
+            "exponents": [
+              1,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 165728359062333760,
+            "exponents": [
+              1,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6195175563875714908856,
+            "exponents": [
+              2,
+              0,
+              2
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 18740685483141968394031789405600,
+            "exponents": [
+              2,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6195175563875714908856,
+            "exponents": [
+              2,
+              2,
+              0
+            ],
+            "numerator": 3
+          },
+          {
+            "denominator": 165728359062333760,
+            "exponents": [
+              3,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 116009851343633632,
+            "exponents": [
+              3,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              4,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "5": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              5
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18948240713542993875,
+            "exponents": [
+              0,
+              1,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 129760910034596861874514650,
+            "exponents": [
+              0,
+              2,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 103808728027677489499611720,
+            "exponents": [
+              0,
+              3,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11368944428125796325,
+            "exponents": [
+              0,
+              4,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              5,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11368944428125796325,
+            "exponents": [
+              1,
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 942078252172075361973305656465716000,
+            "exponents": [
+              1,
+              1,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11738767784697649569370052791108299125700,
+            "exponents": [
+              1,
+              2,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 942078252172075361973305656465716000,
+            "exponents": [
+              1,
+              3,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18948240713542993875,
+            "exponents": [
+              1,
+              4,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 103808728027677489499611720,
+            "exponents": [
+              2,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11738767784697649569370052791108299125700,
+            "exponents": [
+              2,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11738767784697649569370052791108299125700,
+            "exponents": [
+              2,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 129760910034596861874514650,
+            "exponents": [
+              2,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 129760910034596861874514650,
+            "exponents": [
+              3,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 942078252172075361973305656465716000,
+            "exponents": [
+              3,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 103808728027677489499611720,
+            "exponents": [
+              3,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18948240713542993875,
+            "exponents": [
+              4,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11368944428125796325,
+            "exponents": [
+              4,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              5,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        3,
+        4,
+        5
+      ],
+      "prime": 104729,
+      "private_exponent": 18,
+      "row_count": 85,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            7
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            6
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            2,
+            5
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            3,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            4,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            5,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            6,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            7,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            0,
+            6
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            1,
+            5
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            4,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            5,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            6,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            2,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            3,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            3,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            3,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            3,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            3,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            4,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            4,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            4,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            5,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            5,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            5,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            6,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            6,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            7,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            6
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            3,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            4,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            6,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            2,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            0,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            1,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            1,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 5,
+          "multiplier_exponents": [
+            2,
+            0,
+            3
+          ]
+        }
+      ],
+      "starting_order": 3
+    },
+    {
+      "active_support_size": 4,
+      "base_matrix": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 120,
+      "column_monomials": [
+        [
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          3
+        ],
+        [
+          0,
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          6
+        ],
+        [
+          0,
+          1,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          3,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          2
+        ],
+        [
+          0,
+          1,
+          5,
+          1
+        ],
+        [
+          0,
+          1,
+          6,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          2,
+          5,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          4
+        ],
+        [
+          0,
+          3,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          3,
+          1
+        ],
+        [
+          0,
+          3,
+          4,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          3
+        ],
+        [
+          0,
+          4,
+          1,
+          2
+        ],
+        [
+          0,
+          4,
+          2,
+          1
+        ],
+        [
+          0,
+          4,
+          3,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          2
+        ],
+        [
+          0,
+          5,
+          1,
+          1
+        ],
+        [
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1,
+          0
+        ],
+        [
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          6
+        ],
+        [
+          1,
+          0,
+          1,
+          5
+        ],
+        [
+          1,
+          0,
+          2,
+          4
+        ],
+        [
+          1,
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          2
+        ],
+        [
+          1,
+          0,
+          5,
+          1
+        ],
+        [
+          1,
+          0,
+          6,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          1,
+          5,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          3
+        ],
+        [
+          1,
+          3,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          0,
+          2
+        ],
+        [
+          1,
+          4,
+          1,
+          1
+        ],
+        [
+          1,
+          4,
+          2,
+          0
+        ],
+        [
+          1,
+          5,
+          0,
+          1
+        ],
+        [
+          1,
+          5,
+          1,
+          0
+        ],
+        [
+          1,
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          5
+        ],
+        [
+          2,
+          0,
+          1,
+          4
+        ],
+        [
+          2,
+          0,
+          2,
+          3
+        ],
+        [
+          2,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          0,
+          4,
+          1
+        ],
+        [
+          2,
+          0,
+          5,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          4
+        ],
+        [
+          2,
+          1,
+          1,
+          3
+        ],
+        [
+          2,
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          3,
+          1
+        ],
+        [
+          2,
+          1,
+          4,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          3
+        ],
+        [
+          2,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          2
+        ],
+        [
+          2,
+          3,
+          1,
+          1
+        ],
+        [
+          2,
+          3,
+          2,
+          0
+        ],
+        [
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          2,
+          4,
+          1,
+          0
+        ],
+        [
+          2,
+          5,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          4
+        ],
+        [
+          3,
+          0,
+          1,
+          3
+        ],
+        [
+          3,
+          0,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          3,
+          1
+        ],
+        [
+          3,
+          0,
+          4,
+          0
+        ],
+        [
+          3,
+          1,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          1,
+          2
+        ],
+        [
+          3,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          3,
+          0
+        ],
+        [
+          3,
+          2,
+          0,
+          2
+        ],
+        [
+          3,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          3
+        ],
+        [
+          4,
+          0,
+          1,
+          2
+        ],
+        [
+          4,
+          0,
+          2,
+          1
+        ],
+        [
+          4,
+          0,
+          3,
+          0
+        ],
+        [
+          4,
+          1,
+          0,
+          2
+        ],
+        [
+          4,
+          1,
+          1,
+          1
+        ],
+        [
+          4,
+          1,
+          2,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          1
+        ],
+        [
+          4,
+          2,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          2
+        ],
+        [
+          5,
+          0,
+          1,
+          1
+        ],
+        [
+          5,
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          1,
+          0,
+          1
+        ],
+        [
+          5,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          1,
+          0
+        ],
+        [
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31,
+        33,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        49,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        79,
+        80,
+        82,
+        85,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        94,
+        95,
+        97,
+        100,
+        101,
+        102,
+        104,
+        105,
+        107,
+        110,
+        111,
+        113,
+        116,
+        7,
+        14,
+        20,
+        25,
+        29,
+        32,
+        42,
+        48,
+        53,
+        57,
+        60,
+        69,
+        74,
+        78,
+        81,
+        89,
+        93,
+        96,
+        103,
+        106,
+        112,
+        34,
+        35,
+        62,
+        63,
+        83,
+        84,
+        98,
+        99,
+        108,
+        109,
+        114,
+        115,
+        117,
+        118,
+        119
+      ],
+      "full_column_rank": 120,
+      "full_minor_determinant_mod_prime": 75652,
+      "homogeneous_degree_L": 7,
+      "matrix_sha256": "5165307ebff6a84812f01860157bae602ee7cf13db49e58419243fde2b164899",
+      "name": "four_permutation_columns",
+      "normalized_moment_coefficients": {
+        "1": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 128990414732400,
+            "exponents": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 241857027623250,
+            "exponents": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 128990414732400,
+            "exponents": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 128990414732400,
+            "exponents": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 241857027623250,
+            "exponents": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 128990414732400,
+            "exponents": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 71552354958801252900,
+            "exponents": [
+              0,
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 47701569972534168600,
+            "exponents": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 143104709917602505800,
+            "exponents": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 5383914632375808274150847297310000,
+            "exponents": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 71552354958801252900,
+            "exponents": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 143104709917602505800,
+            "exponents": [
+              0,
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 47701569972534168600,
+            "exponents": [
+              0,
+              2,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 47701569972534168600,
+            "exponents": [
+              1,
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 5383914632375808274150847297310000,
+            "exponents": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 143104709917602505800,
+            "exponents": [
+              1,
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 5383914632375808274150847297310000,
+            "exponents": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 5383914632375808274150847297310000,
+            "exponents": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 71552354958801252900,
+            "exponents": [
+              1,
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 71552354958801252900,
+            "exponents": [
+              2,
+              0,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 143104709917602505800,
+            "exponents": [
+              2,
+              0,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 47701569972534168600,
+            "exponents": [
+              2,
+              1,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "4": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 417627493649708040129600,
+            "exponents": [
+              0,
+              0,
+              1,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 132133376018054670919590250320,
+            "exponents": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 191412601256116185059400,
+            "exponents": [
+              0,
+              0,
+              3,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              4,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 803932925275687977249480,
+            "exponents": [
+              0,
+              1,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 12782954229420771054131211060486248860776000,
+            "exponents": [
+              0,
+              1,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 8560013992915694902320007406575613076412500,
+            "exponents": [
+              0,
+              1,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 417627493649708040129600,
+            "exponents": [
+              0,
+              1,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 530893028643969659944782255750,
+            "exponents": [
+              0,
+              2,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 10435064677078180452352009028968366416960000,
+            "exponents": [
+              0,
+              2,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 132133376018054670919590250320,
+            "exponents": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 803932925275687977249480,
+            "exponents": [
+              0,
+              3,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 191412601256116185059400,
+            "exponents": [
+              0,
+              3,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              4,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 191412601256116185059400,
+            "exponents": [
+              1,
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 8560013992915694902320007406575613076412500,
+            "exponents": [
+              1,
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 10435064677078180452352009028968366416960000,
+            "exponents": [
+              1,
+              0,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 803932925275687977249480,
+            "exponents": [
+              1,
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 10435064677078180452352009028968366416960000,
+            "exponents": [
+              1,
+              1,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 480922915537829308862317429808933118246273869511433200000,
+            "exponents": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 12782954229420771054131211060486248860776000,
+            "exponents": [
+              1,
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 12782954229420771054131211060486248860776000,
+            "exponents": [
+              1,
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 8560013992915694902320007406575613076412500,
+            "exponents": [
+              1,
+              2,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 417627493649708040129600,
+            "exponents": [
+              1,
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 132133376018054670919590250320,
+            "exponents": [
+              2,
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 12782954229420771054131211060486248860776000,
+            "exponents": [
+              2,
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 530893028643969659944782255750,
+            "exponents": [
+              2,
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 8560013992915694902320007406575613076412500,
+            "exponents": [
+              2,
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 10435064677078180452352009028968366416960000,
+            "exponents": [
+              2,
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 132133376018054670919590250320,
+            "exponents": [
+              2,
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 417627493649708040129600,
+            "exponents": [
+              3,
+              0,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 803932925275687977249480,
+            "exponents": [
+              3,
+              0,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 191412601256116185059400,
+            "exponents": [
+              3,
+              1,
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              4,
+              0,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "prime": 104729,
+      "private_exponent": 24,
+      "row_count": 195,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            0,
+            6
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            4,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            6,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            3,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            3,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            4,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            4,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            4,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            5,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            5,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            6,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            2,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            4,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            4,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            4,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            4,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            4,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            4,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            4,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            4,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            5,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            5,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            5,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            6,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            4,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            4,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "starting_order": 1
+    },
+    {
+      "active_support_size": 3,
+      "base_matrix": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 15,
+      "column_monomials": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        4,
+        8,
+        11,
+        13,
+        14
+      ],
+      "full_column_rank": 15,
+      "full_minor_determinant_mod_prime": 67608,
+      "homogeneous_degree_L": 4,
+      "matrix_sha256": "a40245c2e582f1946f2c370f45044688ddb8241e8b806a18f248e7bc30673764",
+      "name": "privately_balanced_arbitrary_support",
+      "normalized_moment_coefficients": {
+        "1": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 544508118000,
+            "exponents": [
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 726010824000,
+            "exponents": [
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 2178032472000,
+            "exponents": [
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 52340228232446700,
+            "exponents": [
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 36638159762712690,
+            "exponents": [
+              0,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 61063599604521150,
+            "exponents": [
+              1,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 66499251397926711355391400000,
+            "exponents": [
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 366381597627126900,
+            "exponents": [
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 73276319525425380,
+            "exponents": [
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 366381597627126900,
+            "exponents": [
+              2,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        1,
+        2,
+        3
+      ],
+      "prime": 104729,
+      "private_exponent": 18,
+      "row_count": 19,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 1,
+          "multiplier_exponents": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "starting_order": 1
+    },
+    {
+      "active_support_size": 3,
+      "base_matrix": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "certificate_implication": "All degree-L coefficient monomials lie in the rational homogeneous ideal; no nonzero projective common zero.",
+      "column_count": 36,
+      "column_monomials": [
+        [
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          5
+        ],
+        [
+          2,
+          1,
+          4
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          3,
+          0,
+          4
+        ],
+        [
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          4,
+          0,
+          3
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          0
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          1,
+          1
+        ],
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          1
+        ],
+        [
+          6,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          0
+        ]
+      ],
+      "elimination_pivot_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        26,
+        27,
+        30,
+        6,
+        7,
+        13,
+        14,
+        19,
+        20,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "full_column_rank": 36,
+      "full_minor_determinant_mod_prime": 38002,
+      "homogeneous_degree_L": 7,
+      "matrix_sha256": "66e1233736737e5a66e63b7332451640fdafb139b846c69e9325497fa2f413bd",
+      "name": "privately_balanced_arbitrary_support",
+      "normalized_moment_coefficients": {
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 544508118000,
+            "exponents": [
+              0,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 726010824000,
+            "exponents": [
+              1,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 2178032472000,
+            "exponents": [
+              1,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 52340228232446700,
+            "exponents": [
+              0,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 36638159762712690,
+            "exponents": [
+              0,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 61063599604521150,
+            "exponents": [
+              1,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 66499251397926711355391400000,
+            "exponents": [
+              1,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 366381597627126900,
+            "exponents": [
+              1,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 73276319525425380,
+            "exponents": [
+              2,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 366381597627126900,
+            "exponents": [
+              2,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "4": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0,
+              4
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 102088669182397596160,
+            "exponents": [
+              0,
+              1,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 6133223808236957759767440,
+            "exponents": [
+              0,
+              2,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 51044334591198798080,
+            "exponents": [
+              0,
+              3,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              4,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 102088669182397596160,
+            "exponents": [
+              1,
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 8905573741589063380843906325541120000,
+            "exponents": [
+              1,
+              1,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 12467803238224688733181468855757568000,
+            "exponents": [
+              1,
+              2,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1020886691823975961600,
+            "exponents": [
+              1,
+              3,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 11448684442042321151565888,
+            "exponents": [
+              2,
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 18701704857337033099772203283636352000,
+            "exponents": [
+              2,
+              1,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 171730266630634817273488320,
+            "exponents": [
+              2,
+              2,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 145840955974853708800,
+            "exponents": [
+              3,
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1020886691823975961600,
+            "exponents": [
+              3,
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              4,
+              0,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "orders": [
+        2,
+        3,
+        4
+      ],
+      "prime": 104729,
+      "private_exponent": 18,
+      "row_count": 46,
+      "row_order": "moment_order ascending; multiplier compositions lexicographic",
+      "selected_row_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "selected_row_labels": [
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            4,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            0,
+            5,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            1,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            4,
+            0,
+            1
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            4,
+            1,
+            0
+          ]
+        },
+        {
+          "moment_order": 2,
+          "multiplier_exponents": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            0,
+            4,
+            0
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 3,
+          "multiplier_exponents": [
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "moment_order": 4,
+          "multiplier_exponents": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "starting_order": 2
+    }
+  ],
+  "negative_controls": {
+    "deficient_macaulay_system_columns": 3,
+    "deficient_macaulay_system_rank": 2,
+    "equal_private_degree_X2_vs_YZ_endpoint_ratios": [
+      {
+        "denominator": 1,
+        "numerator": 2
+      },
+      {
+        "denominator": 1,
+        "numerator": 6
+      },
+      {
+        "denominator": 1,
+        "numerator": 20
+      }
+    ],
+    "merged_marker_control": {
+      "claimed_private_bound": {
+        "denominator": 2048,
+        "numerator": 1
+      },
+      "degree_two_mixed_coefficient_after": {
+        "denominator": 1,
+        "numerator": 1
+      },
+      "degree_two_mixed_coefficient_before": {
+        "denominator": 2704156,
+        "numerator": 1
+      },
+      "monomials_remain_distinct": true,
+      "phase_after": "X^12*(Y+Z)",
+      "phase_before": "Y*X1^12 + Z*X2^12",
+      "scope": "failure of coefficient suppression, not an SFC counterexample"
+    },
+    "moment_zero_scope": "P0=1; no false identification with the s-term power sum p0=s is used",
+    "unbalanced_1_vs_Y_endpoint_ratios_m1_m2_m3": [
+      {
+        "denominator": 1,
+        "numerator": 1
+      },
+      {
+        "denominator": 1,
+        "numerator": 2
+      },
+      {
+        "denominator": 1,
+        "numerator": 6
+      }
+    ]
+  },
+  "polynomial_template_controls": [
+    {
+      "base_polynomials": [
+        [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1
+            ],
+            "numerator": 2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0
+            ],
+            "numerator": 2
+          }
+        ]
+      ],
+      "controls": [
+        {
+          "coefficient_count": 2,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "m": 1,
+          "mixed_coefficient_sum": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        {
+          "coefficient_count": 3,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 21
+          },
+          "m": 2,
+          "mixed_coefficient_sum": {
+            "denominator": 14196819,
+            "numerator": 10
+          }
+        },
+        {
+          "coefficient_count": 4,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 142
+          },
+          "m": 3,
+          "mixed_coefficient_sum": {
+            "denominator": 7405759725,
+            "numerator": 32
+          }
+        }
+      ],
+      "name": "positive_linear_permutations",
+      "normalized_forms": {
+        "1": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 14196819,
+            "exponents": [
+              1,
+              1
+            ],
+            "numerator": 10
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 7405759725,
+            "exponents": [
+              1,
+              2
+            ],
+            "numerator": 16
+          },
+          {
+            "denominator": 7405759725,
+            "exponents": [
+              2,
+              1
+            ],
+            "numerator": 16
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "positivity_reason": "1+Y+2Z and its permutation",
+      "private_exponent": 12
+    },
+    {
+      "base_polynomials": [
+        [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              1
+            ],
+            "numerator": -2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              1
+            ],
+            "numerator": -2
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      ],
+      "controls": [
+        {
+          "coefficient_count": 2,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 3
+          },
+          "m": 1,
+          "mixed_coefficient_sum": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        {
+          "coefficient_count": 3,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 34
+          },
+          "m": 2,
+          "mixed_coefficient_sum": {
+            "denominator": 45970652,
+            "numerator": 33
+          }
+        },
+        {
+          "coefficient_count": 4,
+          "common_endpoint_moment": {
+            "denominator": 1,
+            "numerator": 990
+          },
+          "m": 3,
+          "mixed_coefficient_sum": {
+            "denominator": 7943339250,
+            "numerator": 37
+          }
+        }
+      ],
+      "name": "nonnegative_with_negative_coefficients",
+      "normalized_forms": {
+        "1": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              1
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              1,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "2": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              2
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 45970652,
+            "exponents": [
+              1,
+              1
+            ],
+            "numerator": 33
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              2,
+              0
+            ],
+            "numerator": 1
+          }
+        ],
+        "3": [
+          {
+            "denominator": 1,
+            "exponents": [
+              0,
+              3
+            ],
+            "numerator": 1
+          },
+          {
+            "denominator": 15886678500,
+            "exponents": [
+              1,
+              2
+            ],
+            "numerator": 37
+          },
+          {
+            "denominator": 15886678500,
+            "exponents": [
+              2,
+              1
+            ],
+            "numerator": 37
+          },
+          {
+            "denominator": 1,
+            "exponents": [
+              3,
+              0
+            ],
+            "numerator": 1
+          }
+        ]
+      },
+      "positivity_reason": "(Y-Z)^2+Y and (Y-Z)^2+Z on the positive orthant",
+      "private_exponent": 12
+    }
+  ],
+  "primary_source": {
+    "bytes_rechecked": true,
+    "sha256": "ef098f0a0e5e27fd16721e44fb2197b163357de45b16111e7b82d179f36e7855"
+  },
+  "rational_constants": {
+    "examples": [
+      {
+        "D": 12,
+        "Q": {
+          "denominator": 64,
+          "numerator": 27
+        },
+        "R": {
+          "denominator": 256,
+          "numerator": 243
+        },
+        "R_successive_ratio": {
+          "denominator": 81,
+          "numerator": 64
+        },
+        "s": 2
+      },
+      {
+        "D": 18,
+        "Q": {
+          "denominator": 256,
+          "numerator": 81
+        },
+        "R": {
+          "denominator": 4,
+          "numerator": 3
+        },
+        "R_successive_ratio": {
+          "denominator": 131072,
+          "numerator": 84375
+        },
+        "s": 3
+      },
+      {
+        "D": 24,
+        "Q": {
+          "denominator": 2048,
+          "numerator": 405
+        },
+        "R": {
+          "denominator": 524288,
+          "numerator": 253125
+        },
+        "R_successive_ratio": {
+          "denominator": 1953125,
+          "numerator": 1119744
+        },
+        "s": 4
+      },
+      {
+        "D": 30,
+        "Q": {
+          "denominator": 32768,
+          "numerator": 3645
+        },
+        "R": {
+          "denominator": 640000,
+          "numerator": 177147
+        },
+        "R_successive_ratio": {
+          "denominator": 967458816,
+          "numerator": 514714375
+        },
+        "s": 5
+      },
+      {
+        "D": 36,
+        "Q": {
+          "denominator": 262144,
+          "numerator": 15309
+        },
+        "R": {
+          "denominator": 16777216,
+          "numerator": 2470629
+        },
+        "R_successive_ratio": {
+          "denominator": 96889010407,
+          "numerator": 48922361856
+        },
+        "s": 6
+      },
+      {
+        "D": 42,
+        "Q": {
+          "denominator": 524288,
+          "numerator": 15309
+        },
+        "R": {
+          "denominator": 117649,
+          "numerator": 8748
+        },
+        "R_successive_ratio": {
+          "denominator": 281474976710656,
+          "numerator": 136738899331083
+        },
+        "s": 7
+      },
+      {
+        "D": 48,
+        "Q": {
+          "denominator": 4194304,
+          "numerator": 59049
+        },
+        "R": {
+          "denominator": 70368744177664,
+          "numerator": 2541865828329
+        },
+        "R_successive_ratio": {
+          "denominator": 5559060566555523,
+          "numerator": 2621440000000000
+        },
+        "s": 8
+      }
+    ],
+    "no_floating_point_evaluation": true,
+    "rational_replay_s": [
+      2,
+      80
+    ],
+    "universal_inequality": "(s-2)(5s+6)>=0; s(s+2)<(s+1)^2 for s>=2",
+    "universal_remaining_margin": {
+      "denominator": 256,
+      "numerator": 13
+    }
+  },
+  "reviewed_note_sha256": "f4ebaa9028cb04258cf65be178685650d53e2852644ed0678f1a655d134c065e",
+  "schema": 1,
+  "scope": "Exact finite transcription controls and listed full-minor certificates; the unrestricted theorem is the pinned proof plus the inspected Turan input.",
+  "source_ledger_sha256": "5a54143df4353a4b031a0c434d12262586e206e677d0923e173bdd6f399b123d",
+  "status": "PASS"
+}

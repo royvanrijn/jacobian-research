@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "role": "written_proof",
+      "path": "research/foundations/extended-geometry/HOPF_AUTOMORPHISM_ORBIT_SPECTRA.md",
+      "scope": "Self-contained orbit spectra and geometric multiplicity classification within the displayed higher-start family; explicitly dependent Image interpretation and coarse boundary.",
+      "sha256": "e33d36f721b23938cc58be885a015fbb63efd2b065d4b84689c31ddb9652d0fe"
+    },
+    {
+      "role": "exact_checker",
+      "path": "research/foundations/extended-geometry/verify_hopf_automorphism_orbit_spectra.py",
+      "scope": "Bounded exact controls only; deterministic cases are retained in this file.",
+      "sha256": "2abeead15331a945b9e1f9ea998d16c8259ab6fa465b5adb0e37be738e6653da"
+    },
+    {
+      "role": "arithmetic_helper",
+      "path": "research/foundations/extended-geometry/verify_hopf_lnd_orbit.py",
+      "scope": "Rational sparse arithmetic, one quotient normal form, formal moments, literal original lifts.",
+      "sha256": "f18d1a5680248ff748d9681fc021c39a84720801b5e149cffe0d9703feccf02e"
+    },
+    {
+      "role": "least_lift_and_power_descent",
+      "path": "research/foundations/extended-geometry/HOPF_LND_ORBIT_DEGREE_PROPAGATION_AND_POWER_DESCENT.md",
+      "scope": "Sections 4-5: least homogenization, radial primitivity, scalar powers in the full original ring.",
+      "sha256": "4c5aff7869bb933e4a3ef3b77d0321ab20525b2b0b375824ce400a31275a6032"
+    },
+    {
+      "role": "quartic_moments",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "scope": "Theorem 1.1 and sphere normalization: all-order quartic purity and fixed-marker survival.",
+      "sha256": "5dba378cfcde66b1ca7f862533c1ae3277cc2acafd9157c80bec2dd0063384a2"
+    },
+    {
+      "role": "sextic_moments",
+      "path": "research/foundations/extended-geometry/OFFCENTER_CUBIC_ALL_MULTIPLES_OF_THREE_IMAGE_FAMILY.md",
+      "scope": "N1-N4 and N6-N8: regular seeds, all-order purity and fixed-marker survival.",
+      "sha256": "82c28b517070c5f2d65b98df2f9cc925cf1c5a64bd5b030a2fe31cadc297d39d"
+    },
+    {
+      "role": "hyperbolic_moments",
+      "path": "research/foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md",
+      "scope": "H1-H9 and Section 6, H18-H22: cubic-height and every odd starting exponent; all-order purity, odd marked vanishing and even marked survival.",
+      "sha256": "e03807c520cd766507be7e12a225821390447524ac02099ca15ac2c106879056"
+    },
+    {
+      "role": "automorphism_trace",
+      "path": "research/foundations/extended-geometry/RANK_ONE_TRACE_AUTOMORPHISM_INVARIANCE_ALL_IMAGE_PAIRS.md",
+      "scope": "Sections 3-5: all polynomial automorphisms preserve the normalized trace, all characteristic-zero extensions.",
+      "sha256": "6a387aa4213cb00f945fb5e41ff9c5166a8ac118264e01bab795ec54bf189c5a"
+    },
+    {
+      "role": "linear_image_safety",
+      "path": "research/foundations/extended-geometry/PRIME_BALANCED_IMAGE_FAILURES_ARE_ABSOLUTELY_NONPOWER.md",
+      "scope": "LinearSampledVanishingNilpotenceAndSafety: every pure balanced linear form is safe for all original markers.",
+      "sha256": "46669b6dc70e08b197607a5f10ca70f08016e35ca8e7f3540501346344d15642"
+    },
+    {
+      "role": "cubic_image_safety",
+      "path": "research/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+      "scope": "Opening complete-cubic theorem and 'Complete classification and the original Image conclusion': all original markers and characteristic-zero fields; lower balanced degrees covered there.",
+      "sha256": "3e3afcf39fbbf3ec1641843cc81b550248d15db531020f4635a2ea0f5759e825"
+    },
+    {
+      "role": "higher_pair_witnesses",
+      "path": "research/foundations/extended-geometry/ALL_BALANCED_DEGREES_IMAGE_WITNESSES_AT_LEAST_THREE_PAIRS.md",
+      "scope": "AllBalancedDegreesThreeOrMorePairs: explicit primitive witnesses for every n>=3,D>=2; N1 and Sections 1-4.",
+      "sha256": "cd00c7e229e0bb738726608e45525e8694c93131ce38021861b553886c92b918"
+    }
+  ],
+  "primary_context": {
+    "authors": "Jeremy Blanc and Adrien Dubouloz",
+    "title": "Automorphisms of A1-fibered affine surfaces",
+    "publication": "Transactions of the AMS 363 (2011), 5887-5924",
+    "url": "https://algebra.dmi.unibas.ch/blanc/articles/autoa1fibrations.pdf",
+    "locator": "Theorem 5.4.5(7) and its proof, printed pp. 5915-5918",
+    "scope": "Inspected amalgamated-product description for uv=P(w), deg P>=2, including the smooth split quadric. Context only; no imported logical premise or novelty claim.",
+    "local_pdf_download_or_hash_claim": false
+  },
+  "assurance": {
+    "bounded_exact_controls_only": true,
+    "finite_controls_prove_universal_quantifiers": false,
+    "independent_replay": false,
+    "independent_mathematical_review": false,
+    "formal_verification": false,
+    "external_review": false,
+    "worldwide_priority": false
+  }
+}

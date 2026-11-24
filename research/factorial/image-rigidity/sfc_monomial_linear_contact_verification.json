@@ -1,0 +1,1016 @@
+{
+  "status": "PASS",
+  "scope": "Uniform wider-window/contact proof support and exact obstructions; no sharp all-order SFC closure.",
+  "note_sha256": "409ca1ed8a1ef3218fb07673d14830d04cf10562f5714c88bd8de8e9a681b417",
+  "checker_sha256": "c80ea0aa4ade828a89d18e028072c65fc0525c6700afc661183b5cb14c2e1055",
+  "derivatives_and_moments": {
+    "cases": [
+      {
+        "exponents": [
+          0
+        ],
+        "coefficients": [
+          1
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 0,
+            "upper_degree": 0,
+            "numerator": [
+              1
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 1,
+            "upper_degree": 1,
+            "numerator": [
+              2,
+              -2
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 2,
+            "upper_degree": 2,
+            "numerator": [
+              6,
+              -12,
+              6
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 3,
+            "upper_degree": 3,
+            "numerator": [
+              24,
+              -72,
+              72,
+              -24
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          1,
+          2,
+          6,
+          24,
+          120
+        ]
+      },
+      {
+        "exponents": [
+          1
+        ],
+        "coefficients": [
+          -2
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 0,
+            "upper_degree": 0,
+            "numerator": [
+              -4
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 1,
+            "upper_degree": 1,
+            "numerator": [
+              48,
+              96
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 2,
+            "upper_degree": 2,
+            "numerator": [
+              -960,
+              -3840,
+              -3840
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 3,
+            "upper_degree": 3,
+            "numerator": [
+              26880,
+              161280,
+              322560,
+              215040
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          -4,
+          96,
+          -5760,
+          645120,
+          -116121600
+        ]
+      },
+      {
+        "exponents": [
+          3
+        ],
+        "coefficients": [
+          2
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 0,
+            "upper_degree": 0,
+            "numerator": [
+              8
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 1,
+            "upper_degree": 1,
+            "numerator": [
+              224,
+              -640
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 2,
+            "upper_degree": 2,
+            "numerator": [
+              10560,
+              -61440,
+              92160
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 3,
+            "upper_degree": 3,
+            "numerator": [
+              698880,
+              -6159360,
+              18554880,
+              -19169280
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          48,
+          161280,
+          3832012800,
+          334764638208000,
+          77852864261652480000
+        ]
+      },
+      {
+        "exponents": [
+          0,
+          2
+        ],
+        "coefficients": [
+          1,
+          -2
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 1,
+            "upper_degree": 1,
+            "numerator": [
+              -5,
+              12
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 4,
+            "upper_degree": 4,
+            "numerator": [
+              102,
+              -174,
+              -384,
+              1176,
+              -720
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 7,
+            "upper_degree": 7,
+            "numerator": [
+              -3438,
+              4164,
+              28578,
+              -60408,
+              -30912,
+              197664,
+              -204768,
+              69120
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 10,
+            "upper_degree": 10,
+            "numerator": [
+              162312,
+              -116280,
+              -2050920,
+              3212088,
+              7757568,
+              -22375584,
+              4776576,
+              43772544,
+              -65730816,
+              39716352,
+              -9123840
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          -10,
+          2448,
+          -2475360,
+          6544419840,
+          -35761824000000
+        ]
+      },
+      {
+        "exponents": [
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          2
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 1,
+            "upper_degree": 1,
+            "numerator": [
+              8,
+              -16
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 4,
+            "upper_degree": 4,
+            "numerator": [
+              192,
+              -1344,
+              3456,
+              -3840,
+              1536
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 7,
+            "upper_degree": 7,
+            "numerator": [
+              7680,
+              -92160,
+              468480,
+              -1305600,
+              2150400,
+              -2088960,
+              1105920,
+              -245760
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 10,
+            "upper_degree": 10,
+            "numerator": [
+              430080,
+              -7311360,
+              55480320,
+              -247296000,
+              716513280,
+              -1408942080,
+              1902673920,
+              -1740963840,
+              1032192000,
+              -357826560,
+              55050240
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          16,
+          9216,
+          33177600,
+          416179814400,
+          13484225986560000
+        ]
+      },
+      {
+        "exponents": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 1,
+            "upper_degree": 1,
+            "numerator": [
+              -6,
+              72
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 4,
+            "upper_degree": 4,
+            "numerator": [
+              204,
+              -2232,
+              7776,
+              47952,
+              -124416
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 7,
+            "upper_degree": 7,
+            "numerator": [
+              -10188,
+              153072,
+              -458352,
+              -2604960,
+              27760320,
+              -4385664,
+              -262859904,
+              376233984
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 10,
+            "upper_degree": 10,
+            "numerator": [
+              723600,
+              -13062960,
+              58121280,
+              339111360,
+              -3291425280,
+              5712560640,
+              58582206720,
+              -209632872960,
+              -243074027520,
+              1652842920960,
+              -1625330810880
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          -72,
+          3525120,
+          -2661855436800,
+          13975136088883200000,
+          -312646955489082998784000000
+        ]
+      },
+      {
+        "exponents": [
+          0,
+          0,
+          2
+        ],
+        "coefficients": [
+          1,
+          1,
+          -2
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 2,
+            "upper_degree": 2,
+            "numerator": [
+              -4,
+              22,
+              -18
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 7,
+            "upper_degree": 7,
+            "numerator": [
+              86,
+              -508,
+              836,
+              1312,
+              -6458,
+              8956,
+              -5520,
+              1296
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 12,
+            "upper_degree": 12,
+            "numerator": [
+              -2916,
+              21432,
+              -42120,
+              -89496,
+              556848,
+              -867528,
+              -363384,
+              3513528,
+              -6240204,
+              5950512,
+              -3337536,
+              1040832,
+              -139968
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 17,
+            "upper_degree": 17,
+            "numerator": [
+              138072,
+              -1217376,
+              2981976,
+              6315216,
+              -50306256,
+              89310144,
+              84414960,
+              -640548000,
+              1085797368,
+              -182864928,
+              -2646341064,
+              5906541648,
+              -7142045568,
+              5637796416,
+              -2997215616,
+              1042645248,
+              -215557632,
+              20155392
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          -8,
+          2064,
+          -2099520,
+          5567063040,
+          -30471469056000
+        ]
+      },
+      {
+        "exponents": [
+          1,
+          2,
+          1
+        ],
+        "coefficients": [
+          1,
+          -1,
+          2
+        ],
+        "derivative_numerators": [
+          {
+            "k": 2,
+            "actual_degree": 2,
+            "upper_degree": 2,
+            "numerator": [
+              3,
+              12,
+              -30
+            ]
+          },
+          {
+            "k": 3,
+            "actual_degree": 7,
+            "upper_degree": 7,
+            "numerator": [
+              36,
+              48,
+              -192,
+              -2028,
+              5712,
+              -1416,
+              -6960,
+              4800
+            ]
+          },
+          {
+            "k": 4,
+            "actual_degree": 12,
+            "upper_degree": 12,
+            "numerator": [
+              588,
+              1464,
+              -16752,
+              10992,
+              -29844,
+              612792,
+              -1591848,
+              295776,
+              3555072,
+              -3795360,
+              -972480,
+              3177600,
+              -1248000
+            ]
+          },
+          {
+            "k": 5,
+            "actual_degree": 17,
+            "upper_degree": 17,
+            "numerator": [
+              14400,
+              21960,
+              -365040,
+              -1302840,
+              11243520,
+              -21920760,
+              47081520,
+              -242061480,
+              532798560,
+              90425520,
+              -1986161760,
+              2296473120,
+              1094250240,
+              -3884402880,
+              1838747520,
+              1422662400,
+              -1646784000,
+              449280000
+            ]
+          }
+        ],
+        "first_five_moments": [
+          1,
+          6,
+          3456,
+          15240960,
+          334430208000,
+          22969084723200000
+        ]
+      }
+    ],
+    "parameter_cases": 8,
+    "moment_identities": 128,
+    "derivative_identities": 32,
+    "window_controls": 24
+  },
+  "residue_modules": {
+    "cases": [
+      {
+        "exponents": [
+          1
+        ],
+        "coefficients": [
+          1
+        ],
+        "m": 1,
+        "shift_matrix": [
+          [
+            "1/3"
+          ]
+        ],
+        "shift_determinant": "1/3"
+      },
+      {
+        "exponents": [
+          1
+        ],
+        "coefficients": [
+          1
+        ],
+        "m": 2,
+        "shift_matrix": [
+          [
+            "3/10"
+          ]
+        ],
+        "shift_determinant": "3/10"
+      },
+      {
+        "exponents": [
+          1
+        ],
+        "coefficients": [
+          1
+        ],
+        "m": 3,
+        "shift_matrix": [
+          [
+            "2/7"
+          ]
+        ],
+        "shift_determinant": "2/7"
+      },
+      {
+        "exponents": [
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          2
+        ],
+        "m": 1,
+        "shift_matrix": [
+          [
+            "1/12",
+            "-1/840"
+          ],
+          [
+            0,
+            "3/35"
+          ]
+        ],
+        "shift_determinant": "1/140"
+      },
+      {
+        "exponents": [
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          2
+        ],
+        "m": 2,
+        "shift_matrix": [
+          [
+            "3/40",
+            "-1/2640"
+          ],
+          [
+            0,
+            "5/66"
+          ]
+        ],
+        "shift_determinant": "1/176"
+      },
+      {
+        "exponents": [
+          1,
+          2
+        ],
+        "coefficients": [
+          1,
+          2
+        ],
+        "m": 3,
+        "shift_matrix": [
+          [
+            "1/14",
+            "-1/5460"
+          ],
+          [
+            0,
+            "14/195"
+          ]
+        ],
+        "shift_determinant": "1/195"
+      },
+      {
+        "exponents": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "m": 1,
+        "shift_matrix": [
+          [
+            "203/2592",
+            "4829/108864"
+          ],
+          [
+            "6043/4752",
+            "63949/199584"
+          ]
+        ],
+        "shift_determinant": "-3125/99792"
+      },
+      {
+        "exponents": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "m": 2,
+        "shift_matrix": [
+          [
+            "563/8064",
+            "23573/628992"
+          ],
+          [
+            "26947/22848",
+            "501637/1782144"
+          ]
+        ],
+        "shift_determinant": "-3125/127296"
+      },
+      {
+        "exponents": [
+          2,
+          3
+        ],
+        "coefficients": [
+          2,
+          -3
+        ],
+        "m": 3,
+        "shift_matrix": [
+          [
+            "1103/16632",
+            "6007/172368"
+          ],
+          [
+            "72691/63756",
+            "175979/660744"
+          ]
+        ],
+        "shift_determinant": "-3125/141588"
+      },
+      {
+        "exponents": [
+          1,
+          2,
+          1
+        ],
+        "coefficients": [
+          1,
+          -1,
+          2
+        ],
+        "m": 1,
+        "shift_matrix": [
+          [
+            "11/80",
+            "193/1260",
+            "49/2880"
+          ],
+          [
+            "37/80",
+            "-67/180",
+            "143/2880"
+          ],
+          [
+            "-53/40",
+            "-169/630",
+            "-727/1440"
+          ]
+        ],
+        "shift_determinant": "3/70"
+      },
+      {
+        "exponents": [
+          1,
+          2,
+          1
+        ],
+        "coefficients": [
+          1,
+          -1,
+          2
+        ],
+        "m": 2,
+        "shift_matrix": [
+          [
+            "459/3640",
+            "2033/14560",
+            "7109/320320"
+          ],
+          [
+            "1683/3640",
+            "-4679/14560",
+            "13933/320320"
+          ],
+          [
+            "-1161/910",
+            "-967/3640",
+            "-36931/80080"
+          ]
+        ],
+        "shift_determinant": "243/8008"
+      },
+      {
+        "exponents": [
+          1,
+          2,
+          1
+        ],
+        "coefficients": [
+          1,
+          -1,
+          2
+        ],
+        "m": 3,
+        "shift_matrix": [
+          [
+            "23/190",
+            "216/1615",
+            "489/20672"
+          ],
+          [
+            "263/570",
+            "-1454/4845",
+            "2621/62016"
+          ],
+          [
+            "-119/95",
+            "-426/1615",
+            "-4587/10336"
+          ]
+        ],
+        "shift_determinant": "42/1615"
+      }
+    ],
+    "shift_cases": 12,
+    "exact_reductions": 102,
+    "not_an_algebra_countercontrol": [
+      "-1/2"
+    ]
+  },
+  "observability_countercontrol": {
+    "origin_residue_polynomials": [
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        6,
+        15,
+        15
+      ],
+      [
+        20,
+        70,
+        112,
+        84
+      ]
+    ],
+    "residue_at_one_numerators": [
+      [
+        1
+      ],
+      [
+        -2,
+        5
+      ],
+      [
+        6,
+        -27,
+        36
+      ],
+      [
+        -20,
+        130,
+        -312,
+        286
+      ]
+    ],
+    "first_determinant_numerator": [
+      0,
+      0,
+      0,
+      60,
+      -90,
+      180,
+      -75
+    ],
+    "second_determinant_numerator": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2520,
+      -3780,
+      7308,
+      -3024
+    ],
+    "quadratic_field_vectors": [
+      [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "-3/5",
+          "-1"
+        ]
+      ],
+      [
+        [
+          "2",
+          "3"
+        ],
+        [
+          "158/625",
+          "-639/125"
+        ]
+      ],
+      [
+        [
+          "0",
+          "21"
+        ],
+        [
+          "144144/15625",
+          "-63777/3125"
+        ]
+      ],
+      [
+        [
+          "-956/25",
+          "2366/25"
+        ],
+        [
+          "603329596/9765625",
+          "-99660518/1953125"
+        ]
+      ]
+    ],
+    "cycle_sequence": [
+      [
+        "158/625",
+        "-14/125"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "-367392/390625",
+        "299136/78125"
+      ]
+    ],
+    "quadratic_relation": [
+      2,
+      -2,
+      5
+    ]
+  },
+  "correspondence_countercontrols": {
+    "a_at_one_plus_w": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "H_at_one_plus_w": [
+      "1/2",
+      "0",
+      "-1/2"
+    ],
+    "zero_fiber_parameter_points": [
+      0,
+      2
+    ],
+    "forward_values": [
+      0,
+      2
+    ],
+    "attracting_correspondence_family": "Uniform implicit-function proof in note; no floating-point root count is used."
+  }
+}

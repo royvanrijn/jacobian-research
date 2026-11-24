@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "scope": "Theorem 1, Proposition 2, and Corollary 3 for nondegenerate quadratic forms of positive dimension over arbitrary characteristic-zero fields.",
+  "proof_dependencies": [
+    {
+      "location": "Section 2",
+      "claim": "Existence and scalar compatibility of the trace",
+      "basis": "Geometric transitivity, locally finite rational representations and Milne, Algebraic Groups, Section 12l and Theorem 22.42."
+    },
+    {
+      "location": "Section 2",
+      "claim": "Mathieu property in dimensions one and two",
+      "basis": "Laurent torus characters and Duistermaat–van der Kallen's Newton-polytope criterion. A finitely generated coefficient field embeds in C. Eventual vanishing descends from the splitting field."
+    },
+    {
+      "location": "Sections 3–4",
+      "claim": "Uniform all-order counterexample, sharp pure-power threshold for the displayed P, and geometric nonpower property",
+      "basis": "Rotation recurrence checked summand by summand, scalar weight extraction, order 2k+1 endpoint divisibility, and simple zeros on the punctured x_1-axis. Long's normalizer calculation is the credited source of the endpoint method. The paper proves the argument on the quadratic complement."
+    },
+    {
+      "location": "Introduction",
+      "claim": "The complex cutoff is an instance of the reductive homogeneous-space classification",
+      "basis": "Theorem 1.1 of Counterexamples to the Mathieu Property, applied to the stabilizer of a point for the SO(q) × G_m action. The proof of Theorem 1 does not need this previous classification."
+    }
+  ],
+  "sources": [
+    {
+      "reference": "Duistermaat–van der Kallen, Constant terms in powers of a Laurent polynomial",
+      "identifier": "https://doi.org/10.1016/S0019-3577(98)80020-7",
+      "inspected": "Retained primary PDF, introduction and Section 3, printed pp. 221–224."
+    },
+    {
+      "reference": "Long, A Classification of Mathieu's Second Conjecture for Reductive Spherical Pairs",
+      "identifier": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex",
+      "inspected": "Versioned source and retained author PDF, Section 5, Proposition 5.1 and its endpoint calculation, pp. 5–6."
+    },
+    {
+      "reference": "Milne, Algebraic Groups",
+      "identifier": "ISBN 978-1-107-16748-3",
+      "inspected": "Retained author PDF, Theorem 22.42 for complete reducibility over the given characteristic-zero field and Section 12l for the locally finite/Reynolds construction."
+    },
+    {
+      "reference": "Van Rijn, Counterexamples to the Mathieu Property",
+      "identifier": "https://doi.org/10.5281/zenodo.24310836",
+      "inspected": "Retained deposited source and current LaTeX theorem statement, Theorem 1.1."
+    }
+  ],
+  "checks": {
+    "latex": {
+      "passed": true,
+      "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=mathieu-quadratic-complements main.tex",
+      "toolchain": "Latexmk 4.83 and pdfTeX 1.40.25 (TeX Live 2023/Debian)",
+      "source_in_isolated_directory": true,
+      "warnings": []
+    },
+    "layout": {
+      "passed": true,
+      "pages": 5,
+      "renderer": "Poppler pdftoppm at 125 dpi",
+      "embedded_fonts": true,
+      "type3_fonts": false,
+      "scope": "Visually inspected final pages 2, 4 and 5 after revisions. Final pages 1 and 3 were pixel-identical to their inspected first-edition renders. Checked page breaks, equations, type, citation locators, and clipping."
+    },
+    "arithmetic": {
+      "passed": true,
+      "command": "python3 research/foundations/extended-geometry/verify_quadratic_uniform_normalizer.py --output /tmp/mathieu-quadratic-paper.HZvour/exact-replay.json",
+      "scope": "Existing supporting checker, with output directed to a scratch location. Passed 388 direct endpoint comparisons and 12 direct nonpower-phase models in the recorded bounded scope, with a corrupted-phase rejection and a check outside the endpoint formula's domain. The standalone written proof supplies the universal result."
+    },
+    "navigation": {
+      "render_passed": true,
+      "manuscript_check_passed": true,
+      "repository_wide_check_passed": false,
+      "scope": "All five manuscript files, three mapped declarations, TeX proof references, portfolio metadata, and local index links passed. The repository-wide check stopped on coverage omissions or changed coverage sources in the current formalization, factorial, and Jacobian work outside this manuscript."
+    }
+  },
+  "review": {
+    "blind_reader": {
+      "performed": true,
+      "reviewer": "Fresh, no-history internal AI reviewer",
+      "supplied_context": "Only the compiled PDF, the five questions in the paper guide, and a PDF-reading command. No access to repository files, earlier conversation, or web sources.",
+      "initial_pdf_sha256": "53a3858112dc08d4239e56b3de1b6f8f2a3160beae9f2844edfaa6e48634f9f6",
+      "answers": {
+        "contribution": "All-field dimension cutoff, explicit original-field counterexamples in dimensions at least three, one fixed multiplier at every order, and absolute nonpower up to units.",
+        "conceptual_reason": "A rank-two splitting supplies the beta moments, scalar weights reduce the trace to one coefficient, and the endpoint identity puts the pure and marked coefficients on either side of the degree bound.",
+        "hardest_step": "Proposition 2 on pp. 3–4, where the endpoint error has order 2k+1. The rotation recurrence, coefficient bounds, and restriction argument were checked.",
+        "limitations": "Positive-dimensional nondegenerate forms in characteristic zero and this normalized trace. The low-dimensional direction uses the Laurent constant-term theorem.",
+        "verification_obstacles": "Imported results and historical priority require source inspection beyond the PDF. The first PDF could signal the algebraic closure more clearly and gave no visible repository locator for the pinned Long revision."
+      },
+      "revisions": "Spelled out the algebraic closure and the nonzero derivative on the punctured axis. Printed the GitHub repository and clickable revision. Made the Laurent weight bound explicit.",
+      "final_pdf_sha256": "516d1614716b1d7e785495ce014d124567b77b835faf4578102a776c02bb3098",
+      "followup": "The same isolated reader checked the revised PDF and its hash, confirmed that both issues were resolved, and reported no new ambiguity."
+    },
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "formal_verification": false
+  },
+  "artifact_hashes": {
+    "main.tex": "c5171c6b6869f4494d24009e814d053051a77e28c947461f2add3b58ceebe14a",
+    "mathieu-quadratic-complements.pdf": "516d1614716b1d7e785495ce014d124567b77b835faf4578102a776c02bb3098"
+  }
+}

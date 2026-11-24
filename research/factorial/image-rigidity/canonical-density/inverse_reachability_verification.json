@@ -1,0 +1,220 @@
+{
+  "actual_controls": [
+    {
+      "accepted": [
+        [
+          4,
+          2,
+          3,
+          3
+        ]
+      ],
+      "complete_candidates": [
+        [
+          4,
+          2,
+          3,
+          3
+        ]
+      ],
+      "ell": 3,
+      "k": 1,
+      "n": 4,
+      "r": 2,
+      "steps": [
+        {
+          "degree": 27,
+          "ell": 1,
+          "pivot": "4066/175329"
+        },
+        {
+          "degree": 29,
+          "ell": 2,
+          "pivot": "604700149801/19187121726480"
+        },
+        {
+          "degree": 31,
+          "ell": 3,
+          "pivot": "971139305017272387119662/43562162305009973375994615"
+        }
+      ],
+      "u": 3
+    },
+    {
+      "accepted": [
+        [
+          5,
+          1,
+          0,
+          4
+        ]
+      ],
+      "complete_candidates": [
+        [
+          5,
+          1,
+          0,
+          4
+        ]
+      ],
+      "ell": 4,
+      "k": 1,
+      "n": 5,
+      "r": 1,
+      "steps": [
+        {
+          "degree": 8,
+          "ell": 1,
+          "pivot": "5/147"
+        },
+        {
+          "degree": 10,
+          "ell": 2,
+          "pivot": "2891/17600"
+        },
+        {
+          "degree": 12,
+          "ell": 3,
+          "pivot": "324800/4480047"
+        },
+        {
+          "degree": 14,
+          "ell": 4,
+          "pivot": "8486973/214286800"
+        }
+      ],
+      "u": 0
+    },
+    {
+      "accepted": [
+        [
+          4,
+          0,
+          0,
+          3
+        ]
+      ],
+      "complete_candidates": [
+        [
+          4,
+          0,
+          0,
+          3
+        ]
+      ],
+      "ell": 3,
+      "k": 1,
+      "n": 4,
+      "r": 0,
+      "steps": [
+        {
+          "degree": 2,
+          "ell": 1,
+          "pivot": "1/3"
+        },
+        {
+          "degree": 4,
+          "ell": 2,
+          "pivot": "7/20"
+        },
+        {
+          "degree": 6,
+          "ell": 3,
+          "pivot": "4/35"
+        }
+      ],
+      "u": 0
+    },
+    {
+      "accepted": [
+        [
+          3,
+          0,
+          2,
+          2
+        ]
+      ],
+      "complete_candidates": [
+        [
+          3,
+          0,
+          2,
+          2
+        ]
+      ],
+      "ell": 2,
+      "k": 1,
+      "n": 3,
+      "r": 0,
+      "steps": [
+        {
+          "degree": 10,
+          "ell": 1,
+          "pivot": "173/10560"
+        },
+        {
+          "degree": 12,
+          "ell": 2,
+          "pivot": "336152/5836155"
+        }
+      ],
+      "u": 2
+    },
+    {
+      "accepted": [
+        [
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "complete_candidates": [
+        [
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "ell": 1,
+      "k": 2,
+      "n": 3,
+      "r": 1,
+      "steps": [
+        {
+          "degree": 10,
+          "ell": 1,
+          "pivot": "7/132"
+        }
+      ],
+      "u": 1
+    }
+  ],
+  "noninjectivity_control": {
+    "invisible_moments": [
+      "0",
+      "0",
+      "0"
+    ],
+    "modified_degree": 5,
+    "modified_endpoint_orders": [
+      1,
+      1
+    ],
+    "modified_pair_canonical_reachable": false,
+    "modified_pair_moment_polynomial_reachable": true,
+    "original_canonical_profile": [
+      3,
+      0,
+      0,
+      1
+    ],
+    "positive_modifier_lower_bound": "123/25",
+    "same_moment_polynomial": "z**2 - z + 3/10"
+  },
+  "proof_sha256": "6345b503c1754630fe8e44cdb162cca672f05933c4b0094234d082cae91ea2ba",
+  "scope": "Exact finite canonical-density membership and inverse controls; no SFC closure.",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

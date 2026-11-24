@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "scope": "seven exact residue certificates plus written uniform truncation and period",
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "prime": 7,
+  "modulus": 2401,
+  "period": 16807,
+  "residue_classes": 7,
+  "coefficient_equalities": 392,
+  "tail_controls": 98,
+  "shifted_coefficient_controls": 392,
+  "binomial_period_controls": 27,
+  "records": [
+    {
+      "terminal": 446,
+      "lower_root_lift": [
+        1517,
+        2053
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        4,
+        6
+      ],
+      "divided_upper_norm_mod_7": 1
+    },
+    {
+      "terminal": 2847,
+      "lower_root_lift": [
+        1860,
+        1710
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        0,
+        4
+      ],
+      "divided_upper_norm_mod_7": 6
+    },
+    {
+      "terminal": 5248,
+      "lower_root_lift": [
+        2203,
+        1367
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        3,
+        2
+      ],
+      "divided_upper_norm_mod_7": 6
+    },
+    {
+      "terminal": 7649,
+      "lower_root_lift": [
+        145,
+        1024
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        6,
+        0
+      ],
+      "divided_upper_norm_mod_7": 1
+    },
+    {
+      "terminal": 10050,
+      "lower_root_lift": [
+        488,
+        681
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        2,
+        5
+      ],
+      "divided_upper_norm_mod_7": 5
+    },
+    {
+      "terminal": 12451,
+      "lower_root_lift": [
+        831,
+        338
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        5,
+        3
+      ],
+      "divided_upper_norm_mod_7": 4
+    },
+    {
+      "terminal": 14852,
+      "lower_root_lift": [
+        1174,
+        2396
+      ],
+      "lower_derivative_norm_mod_7": 4,
+      "upper_value_divided_by_343_mod_7": [
+        1,
+        1
+      ],
+      "divided_upper_norm_mod_7": 5
+    }
+  ],
+  "negative_controls_rejected": [
+    "changed lower coefficient",
+    "changed root lift",
+    "changed upper evaluation",
+    "missing terminal residue"
+  ],
+  "sha256": {
+    "stepanov_seventh_gap_hensel_witness.json": "b8a91e6ae0790c4600b602089367981df78317456b3411e9022005120bfd9445",
+    "verify_stepanov_seventh_gap_hensel.py": "bb74c40bbe2e50f9af791c4265eaa21cc75effe98b4f4704fc219578fd6bf9b3",
+    "STEPANOV_SEVENTH_GAP_HENSEL_CERTIFICATE.md": "e9305c0d5639581f1a3627780d9d381797e79fea0cbdb2b5f362f9bddb2f6169"
+  }
+}

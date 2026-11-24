@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "scope": "Exact bounded controls plus explicit counterexamples only; universal algebraic proofs are in STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md.",
+  "coefficient_domains": [
+    "Q",
+    "Q[t]",
+    "Q(i), i^2=-1"
+  ],
+  "supports": [
+    {
+      "alpha": [
+        0
+      ],
+      "beta": [
+        1
+      ]
+    },
+    {
+      "alpha": [
+        0
+      ],
+      "beta": [
+        2
+      ]
+    },
+    {
+      "alpha": [
+        1
+      ],
+      "beta": [
+        2
+      ]
+    },
+    {
+      "alpha": [
+        2
+      ],
+      "beta": [
+        5
+      ]
+    },
+    {
+      "alpha": [
+        3
+      ],
+      "beta": [
+        7
+      ]
+    },
+    {
+      "alpha": [
+        1,
+        0
+      ],
+      "beta": [
+        0,
+        1
+      ]
+    },
+    {
+      "alpha": [
+        0,
+        2
+      ],
+      "beta": [
+        3,
+        0
+      ]
+    },
+    {
+      "alpha": [
+        2,
+        2
+      ],
+      "beta": [
+        2,
+        5
+      ]
+    },
+    {
+      "alpha": [
+        1,
+        0,
+        2
+      ],
+      "beta": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "beta": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "power_range": [
+    1,
+    5
+  ],
+  "checks": {
+    "vandermonde": 50,
+    "direct_contractions": 200,
+    "dual_markers": 100,
+    "marked_operator": 200,
+    "raising_recurrence": 50,
+    "factorial_gram": 11
+  },
+  "sample_dual_markers_for_alpha1_beta2_n2": [
+    {
+      "k": 0,
+      "coefficients": [
+        "10",
+        "-5",
+        "1/2"
+      ]
+    },
+    {
+      "k": 2,
+      "coefficients": [
+        "6",
+        "-4",
+        "1/2"
+      ]
+    }
+  ],
+  "countercontrols": {
+    "pure_H0_X_plus_tX2": [
+      "1",
+      "8",
+      "20"
+    ],
+    "pure_H1_X_plus_tX2": [
+      "2",
+      "36",
+      "264",
+      "864",
+      "864"
+    ],
+    "rational_H1_zero": {
+      "t": "-1/6",
+      "moments_1_2_3": [
+        "2/3",
+        "2/3",
+        "2/3"
+      ]
+    },
+    "spatial_H1_X_plus_tX2": [
+      "2",
+      "12",
+      "12"
+    ],
+    "three_term_two_zero_phase": "X^2+(-4+2i)X+2-2i",
+    "three_term_pure_moments_1_2_3": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "32",
+        "80"
+      ]
+    ],
+    "three_term_spatial_markers_0_1_2": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2"
+      ],
+      [
+        "4",
+        "8"
+      ]
+    ],
+    "three_term_spatial_2x2_determinant": "4",
+    "abstract_operator_seed": [
+      11,
+      -20,
+      9
+    ],
+    "abstract_operator_next": [
+      "33",
+      "52",
+      "-355",
+      "270"
+    ],
+    "abstract_common_root": "1",
+    "abstract_seed_derivative_at_root": "-2"
+  },
+  "limitations": [
+    "No SFC counterexample is claimed.",
+    "The three-term control lies outside SFC(2).",
+    "The abstract operator seed is not the factorial-moment seed.",
+    "No propagation from two scalar zero moments to n+1 marked zero moments is proved.",
+    "No positivity, Riemann hypothesis or analytic asymptotic input is used."
+  ]
+}

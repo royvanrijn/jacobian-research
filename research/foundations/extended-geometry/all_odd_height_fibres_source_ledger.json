@@ -1,0 +1,74 @@
+{
+  "schema": "all_odd_height_fibres_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_ODD_HEIGHT_FIBRE_STABILIZATION.md",
+      "sha256": "ba32f29b37c6ec4bbe93e91d192e18316e7662803a14ddd9ed373925eb92ab58",
+      "role": "written_proof",
+      "statement_locator": "H1-H21; exact height interval, sharp stabilization, transport, degrees and finite atlas"
+    },
+    {
+      "path": "research/foundations/extended-geometry/verify_all_odd_height_fibres.py",
+      "sha256": "7274e9139ace221315d78d27f1027c91014dfe15f3d961e50e7e34a12e3aac32",
+      "role": "finite_exact_controls",
+      "statement_locator": "Integer orders, rational local polynomiality, sharp/infinite families, transport, raw moments and negative controls"
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "role": "required_internal_premise",
+      "statement_locator": "Theorem statement 1 and Sections 2-3: reciprocity and exact local polynomiality; F21: exact least degree; degree-one fibre only for H20-H21 exhaustion"
+    },
+    {
+      "path": "research/foundations/extended-geometry/EFFECTIVE_ODD_START_FIBRE_CLASSIFICATION.md",
+      "sha256": "f13bbfa33f3fda433bf3b08f64fa7b59d2ebca488fcca7045dfeed6069919cb5",
+      "role": "required_bounded_constructions_only",
+      "statement_locator": "Sections 2-5 only: marked component, canonical search, independent finite box and finite twist box. The old full theorem and Section 6 RationalOrbitReduction are explicitly NOT premises."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ELEMENTARY_RECIPROCAL_EXPONENT_DECISION.md",
+      "sha256": "127d737a39c0e2fa3063d0e1f04db69f2709c5660ddf2657420799b0222227a5",
+      "role": "required_elementary_solver_and_coefficient_field",
+      "statement_locator": "ElementaryRationalPointOrbit O1-O10 and Section 8 UniformFibreCoefficientField; no old general Orbit theorem imported"
+    },
+    {
+      "path": "research/foundations/extended-geometry/GLOBAL_CYCLOTOMIC_INFINITE_FIBRE_CLASSIFICATION.md",
+      "sha256": "3d30790a8fcde6f86dfd7612e231654c3b75a36aa9bcb78098f53f9b20c8ea5c",
+      "role": "stable_twist_notation_and_cyclotomic_corollary",
+      "statement_locator": "G3-G11, G18-G24 and Sections 4-5, used only to identify the already stabilized full twist/exponent data in H14"
+    }
+  ],
+  "context_sources": [
+    {
+      "path": "research/foundations/extended-geometry/DAVENPORT_ZANNIER_COORDINATE_FIBRES_AND_SHABAT_RIGIDITY.md",
+      "sha256": "aaacae42afa592c5ae0a91ca8036a9d56d58814c2782e47a0541b73c69a4700a",
+      "role": "comparison_only_not_a_proof_premise",
+      "statement_locator": "Section 1: prior all-height classification assuming polynomial b; sharp example H18-H19 is proved directly"
+    }
+  ],
+  "dependency_separation": {
+    "ReciprocalUnitHeightInterval": "Written local valuations H3-H9 plus retained all-order reciprocal interface; no algorithmic or global cyclotomic premise.",
+    "SharpOddHeightStabilization": "Height interval, degree of zero/pole fibres, and direct sharp example H18-H19.",
+    "StableHeightTransport": "Reconstruction plus exact retained least sphere-degree formula.",
+    "EffectiveAllOddHeightAtlas": "Independent bounded constructions in older effective Sections 2-5, new elementary point-orbit solver and common coefficient field. No dependency on the older full effective theorem, its RationalOrbitReduction, or imported general Orbit theorem."
+  },
+  "internal_review": {
+    "author": "Full local order, parity, infinity, sharpness and algorithm dependency reconstruction.",
+    "root": "Read complete draft; no substantive issue found. Confirmed units versus coefficient pairs, exact cutoff/interval/degree, direct u_N sharpness, and independent no-R finite box to avoid circularity with concurrent rational-quotient work.",
+    "replay_scope": "Author exact finite controls; separately performed replay must be recorded separately in repository status.",
+    "assurance": "Internal AI-assisted mathematics and exact controls; not external review or formal verification.",
+    "separate_agent": "Moments agent independently read Sections 1-4 and the sharp family in Section 5. It checked the exact interval, A>=M-1 exclusion of all finite X poles, S<=N-1 and N=1,2, stabilization of jets/caps, infinity-degree sign, acyclic atlas dependencies and orbitwise field descent. It inspected initial checker interval/reconstruction/degree logic; no replay or complete receipt-plumbing review was claimed. No issue found."
+  },
+  "implemented_scope": "Finite exact controls only. Complete atlas termination is proved, but no end-to-end arbitrary-input all-height classifier is implemented.",
+  "primary_source_scope": "No new external theorem is imported. The retained fixed-coordinate endpoint and bounded algebraic constructions carry their existing exact primary dependencies; the new exponent theorem explicitly separates its sole valuation-extension infrastructure from classical Orbit context.",
+  "not_claimed": [
+    "Historical novelty or priority",
+    "A practical or polynomial-time complexity bound",
+    "Finite controls prove the unrestricted theorem",
+    "The coefficient pairs C,D themselves stabilize",
+    "Every local rational-X polynomiality example is reciprocal or pure",
+    "A classification of arbitrary sphere phases",
+    "External review or formal verification"
+  ],
+  "reproduction": "python3 research/foundations/extended-geometry/verify_all_odd_height_fibres.py --repo-root . --output research/foundations/extended-geometry/all_odd_height_fibres_verification.json"
+}

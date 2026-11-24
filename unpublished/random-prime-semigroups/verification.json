@@ -1,0 +1,56 @@
+{
+  "edition_date": "2026-11-24",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "7d65b1a5d870aa929eccec50d55315d4d2d382c8194c31f7964add9341a6b104",
+  "source_sha256": {
+    "main.tex": "ff31edeab4ae2cfdd01c0b804a0691217226b3177f48f15ae43957f9f35dc06c",
+    "metadata.json": "d370d2c32d4a6f96e39c1f67af2344c7535ca126889e0edad4dc7d9eed9df419",
+    "source.zip": "a161246b4610c295213fb80caaf1e82bda4f1018994b9a7c33da58ec5047ff8d"
+  },
+  "build_command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "build_tools": {
+    "latexmk": "4.83",
+    "pdftex": "1.40.25 (TeX Live 2023)"
+  },
+  "build_result": "pass",
+  "pages": 11,
+  "latex_warnings": [],
+  "render_review": {
+    "all_pages": "All 11 pages inspected in rendered contact sheets.",
+    "changed_passages": "Pages 1, 5 and 10 inspected at reading resolution."
+  },
+  "checks": [
+    "LaTeX and metadata abstracts match.",
+    "The sole source archive member is byte-for-byte identical to main.tex.",
+    "Repository dependency coverage fixture tests: 6 passed.",
+    "Repository dependency reference fixture tests: 11 passed."
+  ],
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-24",
+    "reviewer": "OpenAI Codex agent pdf_reader",
+    "type": "Isolated internal AI PDF-only reading",
+    "supplied_context": "The assigned PDF and five reader questions. The reviewer was instructed to read the PDF without repository sources or Internet access.",
+    "initial_pdf_sha256": "50a800fba5784bdf6107c384ab9cf8dbe82662da8d2c0ce01f2e510c8733b2fb",
+    "reviewed_revision_pdf_sha256": "aa381fea754f8319b418f09516de734353ac2127ec3f8be87a2f3853e29a7e6f",
+    "pages": 11,
+    "answers": {
+      "contribution": "Proves the least-order formula, the multiplier threshold, strictly intermediate cofiniteness at equality, and reversibility by finite prime changes.",
+      "mechanism": "Combines a lower sieve and overlap estimates for coverage with a stopped martingale and smooth-semigroup moments for gaps at equality.",
+      "hardest_step": "Section 5, pages 8–10, especially the tilted-measure control of the frozen mass.",
+      "limitations": "Independent mathematical review remains pending. A quantitative endpoint criterion is open.",
+      "obstacles": "Requested explicit lower-sieve product and remainder conditions, and a more explicit account of the tilt and stopped mass. The revised PDF supplied both."
+    },
+    "finding": "The reader identified no remaining proof blocker in the reviewed revision.",
+    "final_edition_change": "The abstract was then edited to specify that adding primes makes the k-fold sumset cofinite. The build and rendered pages were checked again.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "pass",
+    "scope": "A clean build from the extracted archive reproduced the final PDF's page text and rendered pixels."
+  },
+  "external_human_review": "pending",
+  "scope": "Internal mathematical and artifact checks. Independent mathematical review of the manuscript remains pending."
+}

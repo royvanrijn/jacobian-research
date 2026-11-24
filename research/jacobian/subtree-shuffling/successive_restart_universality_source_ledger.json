@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "logical_scope": "Successive admissible parallel cubic restart towers over a scaffold with one fixed coordinate contain every finite graded universal inverse witness; an all-round dimension-uniform bound is equivalent to the unrestricted fixed-index bound.",
+  "evidence_kind": "written_proof",
+  "sources": [
+    {
+      "role": "proof",
+      "path": "research/jacobian/subtree-shuffling/SUCCESSIVE_RESTART_UNIVERSALITY.md",
+      "locator": "FixedCoordinateAmalgamation; RestartRealizesEveryGrade; AllRoundUniformityEquivalence; Complete-basis saturation does not avoid the embedding",
+      "scope": "Written proof of exact universal-witness embedding into successive parallel restart towers, including complete-basis saturation. No new nonvanishing class or inverse-degree bound is asserted.",
+      "sha256": "fcb3024990517dd118e0d444f2b17563563246a79b7f7863f4028b1289fc874b"
+    },
+    {
+      "role": "universal_inverse_dictionary",
+      "path": "research/jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md",
+      "locator": "ShuffleOrbitReduction and ShuffleInverseDegreeEquivalence, including the finite graded quotient construction and characteristic-zero scalar extension",
+      "scope": "Definition of the all-substitutions Engel quotient and the weighted inverse classes; unrestricted finite-dimensional realization of every nonzero weighted class.",
+      "sha256": "1720797a1b86e0ef4b8ecba746b96001b814fbe30341883bb5798ef5057cf4aa"
+    },
+    {
+      "role": "retained_scaffold_instance",
+      "path": "research/jacobian/subtree-shuffling/CUBIC_INDEX_FOUR_COMPLETE_PARALLEL_RESTART.md",
+      "locator": "Statement and exact domain, equations (1)-(4); CompleteParallelRestart and UniversalParallelRestartCeiling",
+      "scope": "The fixed-u, nine-pre-S-coordinate scaffold and its complete first helper layer; sharp retained instance with inverse degree 207. Used only for the specific index-four interpretation.",
+      "sha256": "acd7df4cbf1038abde8642a82623513050bd3a6761100b64832e62281825e847"
+    },
+    {
+      "role": "primary_polarization_context",
+      "path": "research/jacobian/subtree-shuffling/sources/umirbaev-polarization-algebras-2014.pdf",
+      "title": "Polarization algebras and their relations",
+      "edition": "MPIM Preprint 2014-60",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2035/1/preprint_2014_60.pdf",
+      "locator": "Lemma 7, printed p7/PDF p11; Lemma 8 and Corollary 2, printed p8/PDF p12",
+      "scope": "Inspected actual Engel/Jacobian identity, formal inverse recursion and the individual-map termination quantifier. Primary context; the needed fixed-index universal realization is proved in the pinned local dictionary.",
+      "sha256": "004c9d622faa72766878f9e656d4fe2e3904e2c60d6f3e6673e30a0e973d4c86"
+    },
+    {
+      "role": "primary_shuffle_context",
+      "path": "research/jacobian/subtree-shuffling/sources/bisi_et_al_subtree_shuffle_2301_08221v3.pdf",
+      "title": "Random planar trees and the Jacobian conjecture",
+      "edition": "arXiv:2301.08221v3, 5 April 2024",
+      "url": "https://arxiv.org/pdf/2301.08221v3",
+      "locator": "Conjecture 1.3 and Theorem 1.4, printed p5/PDF p5",
+      "scope": "Inspected actual fixed-arity, fixed-shuffle-length eventual-threshold quantifiers. Context only; no resolution of the index-four identities or novelty assertion is imported.",
+      "sha256": "1e22ca8fd2a64eb042ec84442f72204665ae3fce76e0248deeccc5697349d37a"
+    }
+  ],
+  "verification_scope": "No mathematical computation is needed for this written proof. Source digests identify inspected files and do not certify the argument. Root performed an internal mathematical review; no formal verification or external review is claimed.",
+  "assurance": {
+    "formal_verification": false,
+    "external_review": false,
+    "new_index_four_bound": false,
+    "new_nonvanishing_grade": false,
+    "worldwide_priority": false
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "binary_screens": [
+    {
+      "degree": 3,
+      "independent_sylvester_controls": [
+        {
+          "exponents": [
+            0,
+            0
+          ],
+          "resultant": "1"
+        },
+        {
+          "exponents": [
+            1,
+            2
+          ],
+          "resultant": "24"
+        },
+        {
+          "exponents": [
+            2,
+            1
+          ],
+          "resultant": "24"
+        }
+      ],
+      "n": 1,
+      "negative_ordinary_coefficients": 0,
+      "negative_schur_coefficients": 0,
+      "residual_degree": 0,
+      "residual_sha256": "47d62cf50f4414a1b6669e711cbaf7bb5a21a6196ba5fa67bbd8e2b43a977b48",
+      "residual_terms": 1,
+      "resultant_sha256": "a32b5281e96eebc51ec7418f919ee56dd7f9a9298ce8d1530dca02520be579a7",
+      "schur_terms": 1,
+      "terms": 8
+    },
+    {
+      "degree": 9,
+      "independent_sylvester_controls": [
+        {
+          "exponents": [
+            0,
+            0
+          ],
+          "resultant": "1"
+        },
+        {
+          "exponents": [
+            1,
+            2
+          ],
+          "resultant": "107136"
+        },
+        {
+          "exponents": [
+            2,
+            1
+          ],
+          "resultant": "107136"
+        }
+      ],
+      "n": 2,
+      "negative_ordinary_coefficients": 0,
+      "negative_schur_coefficients": 0,
+      "residual_degree": 5,
+      "residual_sha256": "04f8d0fe7eddf6c4b60b34c6801d769b806f1a0914467cc1a6c169041da4950a",
+      "residual_terms": 15,
+      "resultant_sha256": "07cc04849e2d2a951f0fb55345fac8aac43a63affb74bfc18fb2cbdc3ace6f6a",
+      "schur_terms": 9,
+      "terms": 43
+    },
+    {
+      "degree": 18,
+      "independent_sylvester_controls": [
+        {
+          "exponents": [
+            0,
+            0
+          ],
+          "resultant": "1"
+        },
+        {
+          "exponents": [
+            1,
+            2
+          ],
+          "resultant": "115607808000"
+        },
+        {
+          "exponents": [
+            2,
+            1
+          ],
+          "resultant": "115607808000"
+        }
+      ],
+      "n": 3,
+      "negative_ordinary_coefficients": 0,
+      "negative_schur_coefficients": 0,
+      "residual_degree": 13,
+      "residual_sha256": "610e90cad112531274b2ef638cca4341c01917ed4d14fa56722af42f52693141",
+      "residual_terms": 75,
+      "resultant_sha256": "f406e2321ab6c814e1d700cfd5a6090cd8ba35185b4eecb2dfba833aa5240254",
+      "schur_terms": 41,
+      "terms": 148
+    },
+    {
+      "degree": 30,
+      "independent_sylvester_controls": [
+        {
+          "exponents": [
+            0,
+            0
+          ],
+          "resultant": "1"
+        },
+        {
+          "exponents": [
+            1,
+            2
+          ],
+          "resultant": "34073798714524800000"
+        },
+        {
+          "exponents": [
+            2,
+            1
+          ],
+          "resultant": "34073798714524800000"
+        }
+      ],
+      "n": 4,
+      "negative_ordinary_coefficients": 0,
+      "negative_schur_coefficients": 0,
+      "residual_degree": 24,
+      "residual_sha256": "287a813a3c6a3812849e1c24ea668fc1673fd96374f21f306e21c6f2962d6cb3",
+      "residual_terms": 235,
+      "resultant_sha256": "bcca81e18e275ebdbf8df24c8363200da6e2c456c0ee6919925722c679f9912b",
+      "schur_terms": 124,
+      "terms": 386
+    },
+    {
+      "degree": 45,
+      "independent_sylvester_controls": [
+        {
+          "exponents": [
+            0,
+            0
+          ],
+          "resultant": "1"
+        },
+        {
+          "exponents": [
+            1,
+            2
+          ],
+          "resultant": "2937355220195320526745005850624"
+        },
+        {
+          "exponents": [
+            2,
+            1
+          ],
+          "resultant": "2937355220195320526745005850624"
+        }
+      ],
+      "n": 5,
+      "negative_ordinary_coefficients": 0,
+      "negative_schur_coefficients": 0,
+      "residual_degree": 38,
+      "residual_sha256": "0490ac6e8e3f26aced35d6c47a7cf7d62b4aa7d5886e14676f79d306bf9010b0",
+      "residual_terms": 570,
+      "resultant_sha256": "d68c67218fb76566e9d037ca4d203cdd25686a768a57b9dbd9f20dbb7b776e2b",
+      "schur_terms": 295,
+      "terms": 841
+    }
+  ],
+  "checker_sha256": "41d1b457009ed87077a8061f3bd0f7b5d3d60c2cd8d8eebbf579c584f2bf5890",
+  "claims_not_made": [
+    "all-order resultant positivity",
+    "all-support resultant positivity",
+    "unrestricted SFC",
+    "formal verification",
+    "external review"
+  ],
+  "independent_numeric_sylvester_determinants": 15,
+  "negative_controls": {
+    "altered_coefficient_rejected": true,
+    "cubic_coefficients_descending": [
+      17,
+      37,
+      22,
+      4
+    ],
+    "cubic_discriminant": -428,
+    "negative_exponent_initial_resultant": "4/27",
+    "negative_exponent_shifted_resultant": "0",
+    "vertical_and_horizontal_coefficient_gcds": [
+      1,
+      1
+    ],
+    "wrong_orientation_rejected": true
+  },
+  "note_sha256": "c4360e066478e6651b8dbd684f8fd67865a36d698508ecc0648201b58bc44195",
+  "positive_shape_contiguity_control": {
+    "base_resultant": 1,
+    "both_endpoint_pairs_regular": true,
+    "inverse_transport_witness": "1/6",
+    "regularity_counterexample_claimed": false,
+    "shape_shifted_resultant": 16
+  },
+  "scope": "Complete exact binary symbolic screens for n=1,...,5; independent fixed-parameter determinants and exact obstruction controls.",
+  "source_sha256": {
+    "SFC_DEAMPLIFICATION_BRIDGES.md": "df9f19e4418c2abdf47c0f2696a60637dcfb761f93a9b91457aad4b5c671e6b0",
+    "SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md": "9df960f24475ad06f6447739dc30c8d25f9a00b629f10b9f32c88a00b2631751",
+    "UNRESTRICTED_SFC_MECHANISMS.tex": "f8b3dfc5947601fb002aee0ba942b0fc20b7ef46ca8e0d4f69b5a3e5e1361785"
+  },
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

@@ -1,0 +1,110 @@
+{
+  "canonical_dependencies": [
+    {
+      "path": "PRIMITIVE_NORM_ENDPOINT_CLASS_ERROR.md",
+      "scope": "StabilizerDeficiency E.8\u2013E.8a, fixed-order class-prime Mertens E.9 and uniform mark product E.10\u2013E.12; all-proper-subgroup compression E.6\u2013E.7.",
+      "sha256": "14fe947c9b58a3db563903833d9494ce9b3b05314501621b7d9177bf6f2e1363"
+    },
+    {
+      "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
+      "scope": "M.13\u2013M.15 explicit finite Selberg weights, positive Euler truncation and CRT budget; M.25\u2013M.26 fixed masks and bad-coefficient BGLM interface. The new proof replaces the old nu(d)<=d bound with nu(d)<=2^omega(d)d.",
+      "sha256": "fc2cb2d847ad64106d0ce8ed17a17be050173fcdd92916ad725522ba543dd989"
+    },
+    {
+      "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
+      "scope": "F.2 existential primitive ideal in target genus coset, O.9 local full-coset stability, F.4 actual form-specific core masks and finite local profile construction.",
+      "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735"
+    },
+    {
+      "path": "ASYMMETRIC_SUBGROUP_SPLITTING.md",
+      "scope": "Classical H2 shifted weighted family, H9 fixed-twist zero mean, H11 quotient filter, H5 and Section6 nonnested positive unweighting with rough dimension2 and restored exponent1 at subgroup index2.",
+      "sha256": "34350863242bc347200c92f19358a511c11ab99a94f5c57b6fb1017d9ac738db"
+    },
+    {
+      "path": "PRIMITIVE_NORM_CLASS_NUMBER_THREE.md",
+      "scope": "Discriminant minus23 class group C3 and principal form x^2+xy+6y^2, used only for the concrete example.",
+      "sha256": "0e881463b23e012f29d4c6bddfec6853d95c6847a7947693fe50ad1c0ef93aa5"
+    }
+  ],
+  "canonical_proof": {
+    "path": "PRIMITIVE_NORM_DIFFERENT_FIELDS_CLASS_ERROR.md",
+    "scope": "D.4 absolute class error; D.11 mixed sieve; D.18 filtered cores; D.19 value counts; D.20 genus comparison; D.21 minus23/Gaussian example.",
+    "sha256": "8dfb822a2f23d776af94e13634e4df33311b7084f260c566de31067b9408ce3b"
+  },
+  "checker": {
+    "command": "python3 research/arithmetic/verify_primitive_norm_different_fields.py",
+    "receipt": {
+      "path": "primitive_norm_different_fields_checks.json",
+      "scope": "Actual completed replay on current source bytes.",
+      "sha256": "f1566adde6af6c83efebffaba4df8cd7f5abbec95612f97c373f9a52b0783b46"
+    },
+    "results": {
+      "baseline_local_cases": 1492,
+      "common_factor_target_transport_cases": 40,
+      "finite_filter_normalizations": 1536,
+      "finite_mark_product_cases": 320,
+      "marked_local_cases": 1492,
+      "mask_transport_bijections": 6144,
+      "negative_controls": 5
+    },
+    "runtime": "Python 3.12.14",
+    "scope": "Complete stated finite residue and probability spaces only; no sampled asymptotic certification.",
+    "source": {
+      "path": "verify_primitive_norm_different_fields.py",
+      "scope": "Deterministic exact finite domains contained in the script; standard library only.",
+      "sha256": "43b04058da78ca9ad0f38174480c9d5e685615fc5b748096303c97dd33b7c044"
+    }
+  },
+  "claim": "Classical all-target primitive numerical-value class-error bound for two arbitrary fixed imaginary quadratic orders, including different fields; sharp-order admissible value counts and componentwise genus invariance via the explicitly checked classical fixed-filter bridge.",
+  "internal_review_resolution": "Arbitrary shifted weights have Gamma_(Au,Bv;V1,V2)(M), which can differ from the base density. Only simultaneous coefficient, mask and common-target transport gives D.18a. The modulo8 frozen-Gamma counterexample is retained, and40 modulo40 common-d transport cases pass.",
+  "new_argument": [
+    "Prime-square exclusion after baseline has increments (p-1)/p^2, 1/p, or0 depending on the opposite field and target divisibility.",
+    "Corrected forbidden-root budget nu(d)<=2^omega(d)d retains z^(4+epsilon) with small exponents allocated explicitly.",
+    "Finite marking retains both survival-normalized sieve terms. Exact target factor W_i uses primes split on that side and inert on the other; it is bounded by ell^(1/4) using fixed quadratic characters only. No joint class-prime independence.",
+    "Fixed residue masks, bad coefficients and cofactor transport are explicitly retained in the classical nonnested weighted family; finite bounded local prefixes supply all-admissible lower counts."
+  ],
+  "not_claimed": [
+    "Uniformity in varying orders, fields, forms or conductors",
+    "Optimal logarithmic/loglog error",
+    "Effective numerical onset or complete finite exception classification",
+    "Independent ring-class splitting in the other field",
+    "A new leading-constant theorem or leading-term remainder",
+    "External human review",
+    "Formal verification",
+    "Historical priority"
+  ],
+  "primary_sources": [
+    {
+      "authors": "Jean Bourgain and Elena Fuchs",
+      "edition": "arXiv:1105.3698v2",
+      "path": "sources/bourgain-fuchs-1105.3698v2.pdf",
+      "scope": "Section2 part(5), Lemma2, equation(5.2), PDF/printed page15. Fixed inverse-class prime count with coefficient1/h and exponential error. Actual retained page reread in this task.",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
+      "title": "On representation of integers by binary quadratic forms",
+      "url": "https://arxiv.org/abs/1105.3698v2"
+    },
+    {
+      "authors": "Valentin Blomer, Lasse Grimmelt, Junxian Li, Simon L. Rydin Myerson",
+      "edition": "arXiv:2111.01601v5",
+      "path": "sources/blomer-grimmelt-li-rydin-myerson-2111.01601v5.pdf",
+      "scope": "Proposition5.1, printed page15, and start of proof page16. Actual retained pages inspected: signed summed bilinear bound, required (n,a2)=1 and (q,a1 a2 d)=1, fixed c and short a2 permitted, no (a2,c)=1 assumption. Imported only through the retained weighted family and explicit fixed-coefficient interface.",
+      "sha256": "6cb425e37285b1a09aeeade57210948f885d40f1d4d7b337671cfbd0a4a4711f",
+      "title": "Additive problems with almost prime squares",
+      "url": "https://arxiv.org/abs/2111.01601v5"
+    }
+  ],
+  "proof_status": "Internal written proof with exact finite controls. Parent independently reviewed the mixed sieve/target factor and derived the classical lower bridge. A separate moments agent reviewed D.18/D.19 and requested explicit current-state Gamma normalization; D.18a and a negative control now record that correction. No external human review or formal verification.",
+  "schema_version": 1,
+  "scope_comparisons": [
+    {
+      "path": "PRIMITIVE_NORM_BINARY_CORRELATION.md",
+      "scope": "B.4 permits nonnested cores but imports the separate ZF/G statements. It is not a premise of the present class error, sharp-order count or genus comparison.",
+      "sha256": "5ff543062583743e9896b6cefc3d6d819757e952274e8fa6d0e786c5621f1934"
+    },
+    {
+      "path": "PRIMITIVE_NORM_NOVELTY.md",
+      "scope": "Existing Baker/quaternary route already gives eventual separately primitive binary-pair existence. No novelty is claimed for existence alone or for these new deductions.",
+      "sha256": "ac001a819d2cfad99188014ef63576b895881dbca14838638a3f887f9bd065df"
+    }
+  ]
+}

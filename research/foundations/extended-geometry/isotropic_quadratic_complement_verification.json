@@ -1,0 +1,458 @@
+{
+  "assurance_flags": {
+    "external_review": false,
+    "formal_verification": false,
+    "independent_replay": false,
+    "worldwide_priority": false
+  },
+  "checker_sha256": "e2763ee6ff5691ced351e5529ddb0c683a21d255d7b07c0143fdb49c34234ca7",
+  "inputs_sha256": "7c1642e066aee242cd93108ee0f2fc61206904bc081ac15d240d58ef590b0f88",
+  "meaning": "Source authentication and declared BOUNDED exact algebra PASS. The written Lie recurrence, endpoint divisibility, rational nonvanishing and valuation proof establish the universal theorem. Finite models do not prove arbitrary fields/dimensions/orders or absolute irreducibility.",
+  "models": {
+    "Lie_numerator_models": [
+      {
+        "M": 1,
+        "k": 1,
+        "remainder": "0"
+      },
+      {
+        "M": 1,
+        "k": 2,
+        "remainder": "0"
+      },
+      {
+        "M": 1,
+        "k": 3,
+        "remainder": "0"
+      },
+      {
+        "M": 1,
+        "k": 4,
+        "remainder": "0"
+      },
+      {
+        "M": 2,
+        "k": 1,
+        "remainder": "0"
+      },
+      {
+        "M": 2,
+        "k": 2,
+        "remainder": "0"
+      },
+      {
+        "M": 2,
+        "k": 3,
+        "remainder": "0"
+      },
+      {
+        "M": 2,
+        "k": 4,
+        "remainder": "0"
+      },
+      {
+        "M": 4,
+        "k": 1,
+        "remainder": "0"
+      },
+      {
+        "M": 4,
+        "k": 2,
+        "remainder": "0"
+      },
+      {
+        "M": 4,
+        "k": 3,
+        "remainder": "0"
+      },
+      {
+        "M": 4,
+        "k": 4,
+        "remainder": "0"
+      }
+    ],
+    "actual_mixed_coefficient_comparisons": 921,
+    "factor_identities_for_formal_nonzero_q0": true,
+    "meaning": "BOUNDED rational algebra support only; not an irreducibility algorithm or proof of unrestricted field/dimension/order statements",
+    "negative_control": "For N>3, Lambda(p)=3/N-1 !=0; omitting the threshold power fails purity",
+    "primitive_linear_coefficient_at_X_minus_one_third": "(8/9)*q0 != 0",
+    "sparse_seed_models": [
+      {
+        "M": 1,
+        "N": 3,
+        "first_seed_moment": "0",
+        "k_max": 4,
+        "least_pure_seed_power": 1,
+        "marker_comparisons": 22,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "7/15",
+            "power_marked": "1/3",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "86/315",
+            "power_marked": "2/15",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "2602/15015",
+            "power_marked": "2/35",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 2,
+        "N": 4,
+        "first_seed_moment": "-1/4",
+        "k_max": 6,
+        "least_pure_seed_power": 2,
+        "marker_comparisons": 39,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "11/96",
+            "power_marked": "1/12",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "169/6720",
+            "power_marked": "1/80",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "179/26880",
+            "power_marked": "1/448",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 3,
+        "N": 5,
+        "first_seed_moment": "-2/5",
+        "k_max": 8,
+        "least_pure_seed_power": 3,
+        "marker_comparisons": 60,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "2/77",
+            "power_marked": "2/105",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "688/323323",
+            "power_marked": "16/15015",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "392576/1673196525",
+            "power_marked": "128/1616615",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 4,
+        "N": 6,
+        "first_seed_moment": "-1/2",
+        "k_max": 10,
+        "least_pure_seed_power": 4,
+        "marker_comparisons": 85,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "19/3360",
+            "power_marked": "1/240",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "35/202752",
+            "power_marked": "1/11520",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "16061/2027683840",
+            "power_marked": "1/372736",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 5,
+        "N": 7,
+        "first_seed_moment": "-4/7",
+        "k_max": 12,
+        "least_pure_seed_power": 5,
+        "marker_comparisons": 114,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "184/153153",
+            "power_marked": "8/9009",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "397568/29113619535",
+            "power_marked": "256/37182145",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "2332672/8948537162565",
+            "power_marked": "2048/23141595015",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 6,
+        "N": 8,
+        "first_seed_moment": "-5/8",
+        "k_max": 14,
+        "least_pure_seed_power": 6,
+        "marker_comparisons": 147,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "9/35840",
+            "power_marked": "1/5376",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "1077/1013841920",
+            "power_marked": "1/1863680",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "23809/2822682705920",
+            "power_marked": "1/348651520",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 7,
+        "N": 9,
+        "first_seed_moment": "-2/3",
+        "k_max": 16,
+        "least_pure_seed_power": 7,
+        "marker_comparisons": 184,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "496/9561123",
+            "power_marked": "16/415701",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "649216/7950790858725",
+            "power_marked": "2048/49589132175",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "105119744/389822469822847425",
+            "power_marked": "262144/2855525306138505",
+            "pure": "0"
+          }
+        ]
+      },
+      {
+        "M": 9,
+        "N": 11,
+        "first_seed_moment": "-8/11",
+        "k_max": 20,
+        "least_pure_seed_power": 9,
+        "marker_comparisons": 270,
+        "nonpower_phase_moments": [
+          {
+            "m": 1,
+            "marked": "128/59246275",
+            "power_marked": "128/79676025",
+            "pure": "0"
+          },
+          {
+            "m": 2,
+            "marked": "19857408/42198318412935685",
+            "power_marked": "65536/274847927135925",
+            "pure": "0"
+          },
+          {
+            "m": 3,
+            "marked": "2464212320256/9168041809593644898525605",
+            "power_marked": "8388608/91529394594854938337",
+            "pure": "0"
+          }
+        ]
+      }
+    ]
+  },
+  "proof_sha256": "fd84d668b215a80b5f4ac949e9d307e5bbcd6055e150454528f513518186bb19",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "schema": 1,
+  "scope": {
+    "M": "N-2>=1",
+    "absolute_nonpower": "over Kbar, Fstar != unit*g^e for EVERY e>=2; ord_C1(Fstar)=1 in Kbar[V,q^-1]",
+    "all_phases_or_all_markers_classified": false,
+    "anisotropic_odd_forms_claimed": false,
+    "assurance_flags": {
+      "external_review": false,
+      "formal_verification": false,
+      "independent_replay": false,
+      "worldwide_priority": false
+    },
+    "base_field": "EVERY characteristic-zero K; every extension",
+    "controls": {
+      "Lie_M": [
+        1,
+        2,
+        4
+      ],
+      "Lie_k_max": 4,
+      "dimensions": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "nonpower_m_max": 3,
+      "seed_k_bound": "2*(N-2)+2"
+    },
+    "diagonal_moments": "mu_k=k!/[2^k*(N/2)_k], all k>=0",
+    "dimension_two_claimed": false,
+    "finite_models_prove_universal_quantifiers": false,
+    "fixed_marker": "H=X^M, independent of m",
+    "functional": "unique normalized same-field SO(q) x G_m invariant Reynolds trace",
+    "marked_nonpower": "ALL m>=1: sum_(r=0)^m binom(m,r)*mu_(M*m+r), positive RATIONAL hence nonzero in K",
+    "marked_power": "ALL m>=1: Lambda(H*F0^m)=mu_(M*m)!=0",
+    "minimal_monomial_marker": "j<M vanishes for all k>=M; j>=M survives all k>=max(M,j); least detecting exponent M",
+    "mixed_moments": "ALL k>=1,j>=0: mu_k*binom(k-M,k-j) for j<=k; zero j>k; generalized upper binomial",
+    "nonpower_phase": "Fstar=p^M*(1+p)",
+    "norm_one_K_point_required": false,
+    "old_Hopf_context_only": true,
+    "ordering_or_whole_field_embedding_required": false,
+    "power_phase": "F0=p^M",
+    "prior_cover_or_fulltrace_or_even_packet_required": false,
+    "pure_power_iff": "EVERY integer a>=1: p^a is pure IFF a>=M",
+    "pure_seed_moments": "ALL k>=1: (-1)^k*binom(M-1,k)*mu_k",
+    "quadratic_scope": "EVERY nondegenerate ISOTROPIC q, dimension N>=3; choose q=2XY+sum a_i Z_i^2, all a_i nonzero",
+    "radial_primitivity_or_Image_degree_claimed": false,
+    "raw_Milne_required": true,
+    "reviewed_proof_sha256": "fd84d668b215a80b5f4ac949e9d307e5bbcd6055e150454528f513518186bb19",
+    "schema": 1,
+    "seed": "p=(1+X)^3*Y/q-(X+1)*(X+2)/2"
+  },
+  "source_ledger_sha256": "8438bac0ee0479e0dd47b84ec46a4cbc1224b3ca9e96f10939948cbe331dc718",
+  "source_scope_negative_controls": [
+    "missing_scope:schema",
+    "missing_scope:reviewed_proof_sha256",
+    "missing_scope:base_field",
+    "missing_scope:quadratic_scope",
+    "missing_scope:M",
+    "missing_scope:functional",
+    "missing_scope:seed",
+    "missing_scope:diagonal_moments",
+    "missing_scope:mixed_moments",
+    "missing_scope:pure_seed_moments",
+    "missing_scope:pure_power_iff",
+    "missing_scope:minimal_monomial_marker",
+    "missing_scope:power_phase",
+    "missing_scope:nonpower_phase",
+    "missing_scope:fixed_marker",
+    "missing_scope:marked_power",
+    "missing_scope:marked_nonpower",
+    "missing_scope:absolute_nonpower",
+    "missing_scope:raw_Milne_required",
+    "missing_scope:old_Hopf_context_only",
+    "missing_scope:prior_cover_or_fulltrace_or_even_packet_required",
+    "missing_scope:ordering_or_whole_field_embedding_required",
+    "missing_scope:norm_one_K_point_required",
+    "missing_scope:anisotropic_odd_forms_claimed",
+    "missing_scope:dimension_two_claimed",
+    "missing_scope:radial_primitivity_or_Image_degree_claimed",
+    "missing_scope:all_phases_or_all_markers_classified",
+    "missing_scope:finite_models_prove_universal_quantifiers",
+    "missing_scope:controls",
+    "missing_scope:assurance_flags",
+    "missing:written_proof",
+    "bad_hash:written_proof",
+    "scope:written_proof",
+    "missing:exact_checker",
+    "bad_hash:exact_checker",
+    "scope:exact_checker",
+    "missing:typed_inputs",
+    "bad_hash:typed_inputs",
+    "scope:typed_inputs",
+    "missing:milne_complete_reducibility_reused",
+    "bad_hash:milne_complete_reducibility_reused",
+    "scope:milne_complete_reducibility_reused",
+    "missing:hopf_endpoint_context_reused",
+    "bad_hash:hopf_endpoint_context_reused",
+    "scope:hopf_endpoint_context_reused",
+    "json:{\"a\":1,\"a\":2}",
+    "json:{\"a\":{\"b\":1,\"b\":2}}",
+    "json:{\"a\":NaN}",
+    "json:{\"a\":Infinity}",
+    "json:{\"a\":-Infinity}",
+    "boolean_dimension",
+    "floating_integer",
+    "path:../outside",
+    "path:/tmp/outside",
+    "path:./bad",
+    "path:sources//bad",
+    "path:sources\\bad"
+  ],
+  "sources": [
+    {
+      "path": "verify_isotropic_quadratic_complement.py",
+      "relation": "Source_authentication_and_BOUNDED_exact_sparse_Lie_factor_models_NOT_universal_proof",
+      "role": "exact_checker",
+      "sha256": "e2763ee6ff5691ced351e5529ddb0c683a21d255d7b07c0143fdb49c34234ca7"
+    },
+    {
+      "path": "HOPF_LIFT_CLASSIFICATION.md",
+      "relation": "CONTEXT_ONLY_REUSED_SRC_HOPF_LIFT_CLASSIFICATION_Theorem7_1_equations7_1--7_7_M_equals1_endpoint_reproduced_locally_NOT_core_premise",
+      "role": "hopf_endpoint_context_reused",
+      "sha256": "1688857a80e9c09db5727bf66d8e59f85126d19a410db2dbef5c7929bd4f8a60"
+    },
+    {
+      "path": "sources/milne-algebraic-groups-2017.pdf",
+      "relation": "NECESSARY_REUSED_SRC_RHT_MILNE_COMPLETE_REDUCIBILITY_22_42_22_43_printed477_478_and_12l_printed248_249_same_field_only",
+      "role": "milne_complete_reducibility_reused",
+      "sha256": "503f1a7d511632af05541c52fb2bf6fc36f5a75b0323f2f9110f03dcce11fd67"
+    },
+    {
+      "path": "isotropic_quadratic_complement_inputs.json",
+      "relation": "Exact_isotropic_all_char0_mixed_moments_sharp_seed_threshold_nonpower_witness_and_boundaries",
+      "role": "typed_inputs",
+      "sha256": "7c1642e066aee242cd93108ee0f2fc61206904bc081ac15d240d58ef590b0f88"
+    },
+    {
+      "path": "ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md",
+      "relation": "Complete_Sections1--9_all_field_Lie_endpoint_sharp_iff_marker_and_absolute_nonpower_proof",
+      "role": "written_proof",
+      "sha256": "fd84d668b215a80b5f4ac949e9d307e5bbcd6055e150454528f513518186bb19"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "positive-measure row-merger obstruction, not ordinary factorial SFC",
+  "note_sha256": "731e5dcd27f8cfe6f688c351b55888facffe0756c797c192f3f1970a7113edee",
+  "checker_sha256": "157424acf3093410641da0486efbaa1d4001915b6f428c7cecb66ffc3c6178fe",
+  "source_sha256": {
+    "SFC_ROW_MERGING_OBSTRUCTIONS.md": "731e5dcd27f8cfe6f688c351b55888facffe0756c797c192f3f1970a7113edee",
+    "SFC_BALANCED_PRIVATE_AMPLIFICATION.md": "f4ebaa9028cb04258cf65be178685650d53e2852644ed0678f1a655d134c065e",
+    "SFC_CYCLIC_POLYNOMIAL_TILTS.md": "ba7cc5fe27558993b93eb87d4a08e2cb29adb1c30d86ab8868b20cbfc5cfde0d",
+    "UNRESTRICTED_SFC_MECHANISMS.tex": "f8b3dfc5947601fb002aee0ba942b0fc20b7ef46ca8e0d4f69b5a3e5e1361785"
+  },
+  "rejection_controls": {
+    "optimized_mode_rejected": true,
+    "altered_note_rejected": true
+  },
+  "beta_identities": 81,
+  "rodrigues_jacobi_identities": 81,
+  "forward_mellin_kernel_square": -2,
+  "atoms": [
+    {
+      "A": "1",
+      "B": "2",
+      "probability": "121/296"
+    },
+    {
+      "A": "1",
+      "B": "-2",
+      "probability": "121/296"
+    },
+    {
+      "A": "11/3",
+      "B": "0",
+      "probability": "27/148"
+    }
+  ],
+  "noise_radius": "1/100",
+  "strict_positive_feature_lower_bound": "4/25",
+  "source_normalized_forms": [
+    [
+      5,
+      4,
+      5
+    ],
+    [
+      15,
+      13,
+      13,
+      15
+    ]
+  ],
+  "target_normalized_forms": [
+    [
+      5,
+      8,
+      5
+    ],
+    [
+      15,
+      39,
+      39,
+      15
+    ]
+  ],
+  "source_normalized_resultant": 29400,
+  "common_projective_zero": [
+    "1+3i",
+    "1-3i"
+  ],
+  "physical_correlation_resultant_controls": [
+    {
+      "rho": "-1",
+      "normalized_resultant": "196000"
+    },
+    {
+      "rho": "0",
+      "normalized_resultant": "29400"
+    },
+    {
+      "rho": "1/2",
+      "normalized_resultant": "4900"
+    },
+    {
+      "rho": "1",
+      "normalized_resultant": "0"
+    },
+    {
+      "rho": "3/2",
+      "normalized_resultant": "0"
+    },
+    {
+      "rho": "2",
+      "normalized_resultant": "-9800"
+    }
+  ],
+  "holder_controls": 27,
+  "private_D12_coefficient_controls": 27,
+  "private_D12_consecutive_gcd_controls": 5,
+  "all_order_amplification_input": "written extension of SFC_BALANCED_PRIVATE_AMPLIFICATION.md; finite checks alone do not prove it",
+  "ordinary_factorial_counterexample": false
+}

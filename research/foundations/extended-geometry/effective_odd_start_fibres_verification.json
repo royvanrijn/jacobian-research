@@ -1,0 +1,284 @@
+{
+  "schema": "effective_odd_start_fibres_verification_v1",
+  "status": "PASS",
+  "arithmetic": "exact SymPy rational polynomial and matrix arithmetic",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "counts": {
+    "canonical_search_examples": 6,
+    "canonical_factor_candidates": 9,
+    "finite_box_vectors": 100,
+    "finite_box_reciprocal_vectors": 3,
+    "ramified_twist_vectors": 42,
+    "ramified_twist_accepted_vectors": 10,
+    "orbit_algebras": 4,
+    "orbit_exponents_checked": 95,
+    "restriction_of_scalars_examples": 1,
+    "negative_controls": 10
+  },
+  "details": {
+    "canonical_searches": [
+      {
+        "name": "linear_polynomial_coordinate",
+        "coordinate": "x",
+        "map_degree": 1,
+        "candidates": 0,
+        "canonical_generator": null,
+        "marked_component": "x + y"
+      },
+      {
+        "name": "nonlinear_polynomial_coordinate",
+        "coordinate": "x**2 + x",
+        "map_degree": 2,
+        "candidates": 0,
+        "canonical_generator": null,
+        "marked_component": "x**2 + x + y**2 + y"
+      },
+      {
+        "name": "mobius_coordinate",
+        "coordinate": "x/(x + 1)",
+        "map_degree": 1,
+        "candidates": 1,
+        "canonical_generator": "2*x + 1",
+        "marked_component": "x*y + x/2 + y/2"
+      },
+      {
+        "name": "quadratic_nonrational_return",
+        "coordinate": "(2*x**2 + 16*x)/(x**2 + 8*x + 16)",
+        "map_degree": 2,
+        "candidates": 1,
+        "canonical_generator": "x**2/8 + x + 1",
+        "marked_component": "x**2*y**2 + 8*x**2*y + 8*x**2 + 8*x*y**2 + 64*x*y + 64*x + 8*y**2 + 64*y"
+      },
+      {
+        "name": "nonminimal_initial_generator",
+        "coordinate": "(x**2 + 2*x)/(x**2 + 2*x + 2)",
+        "map_degree": 2,
+        "candidates": 2,
+        "canonical_generator": "x + 1",
+        "marked_component": "x*y + x + y"
+      }
+    ],
+    "finite_box": {
+      "N": 2,
+      "s": 2,
+      "a": 1,
+      "B": 1,
+      "H": 8,
+      "lower_bounds": [
+        -1,
+        -1
+      ],
+      "tested_vectors": 100,
+      "reciprocal_vectors": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "jet_modulus": "x**2 + 1",
+      "final_vectors": [],
+      "other_correspondence_component": "x*y - 1"
+    },
+    "ramified_twists": {
+      "canonical_generator": "x**2 + x + 1",
+      "generator_search_candidates": 5,
+      "outer_coordinate": "(1 - z**2)/((z - 4/3)*(24*z - 18))",
+      "pole_pair": [
+        "3/4",
+        "4/3"
+      ],
+      "maximum_ramification": [
+        2,
+        1
+      ],
+      "pole_orders": [
+        1,
+        1
+      ],
+      "q_values": [
+        0,
+        1
+      ],
+      "k_min": 0,
+      "tested_n_range": [
+        -2,
+        3
+      ],
+      "tested_j_range": [
+        -2,
+        4
+      ],
+      "accepted_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "orbit_controls": [
+      {
+        "modulus": "z**2 + 1",
+        "matrix": [
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "solution": "j = 2 modulo 4"
+      },
+      {
+        "modulus": "(z - 1)**2",
+        "matrix": [
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "1",
+            "2"
+          ]
+        ],
+        "solution": "j = 7 only"
+      },
+      {
+        "modulus": "(z + 1)**2",
+        "matrix": [
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "1",
+            "-2"
+          ]
+        ],
+        "solution": "empty; odd point-value matches fail jets"
+      },
+      {
+        "modulus": "z**2",
+        "matrix": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "solution": "nonunit R: target 1 only at j=0; nonunit base can never yield -1"
+      }
+    ],
+    "restriction_of_scalars": {
+      "field": "Q(sqrt(2))",
+      "jet_relation": "epsilon^2 = 0",
+      "rational_basis": [
+        "1",
+        "sqrt(2)",
+        "epsilon",
+        "sqrt(2)*epsilon"
+      ],
+      "multiplier": "sqrt(2) + epsilon",
+      "matrix": [
+        [
+          "0",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "2"
+        ],
+        [
+          "0",
+          "1",
+          "1",
+          "0"
+        ]
+      ],
+      "target": [
+        "0",
+        "2",
+        "6",
+        "0"
+      ],
+      "witness_exponent": 3,
+      "augmented_matrix_dimension": 5,
+      "unaugmented_line_accepts_wrong_scalar": true,
+      "augmented_line_rejects_wrong_scalar": true
+    }
+  },
+  "source_pins_checked": 4,
+  "packet_pins": {
+    "research/foundations/extended-geometry/EFFECTIVE_ODD_START_FIBRE_CLASSIFICATION.md": "f13bbfa33f3fda433bf3b08f64fa7b59d2ebca488fcca7045dfeed6069919cb5",
+    "research/foundations/extended-geometry/verify_effective_odd_start_fibres.py": "4dca45c24766a428284d7b6a1f2ee50167ced5216d3f9e04fed9c3ba0c274127",
+    "research/foundations/extended-geometry/effective_odd_start_fibres_source_ledger.json": "4764c119ebc68d69bc501de15547411b5da35e967ccd34d3d1c309328ce6f196"
+  },
+  "scope": "Finite exact controls for the written terminating classification. The canonical-unit and pole-bound inputs come from the retained theorem; the rational Orbit decision subroutine is imported from its primary source.",
+  "not_claimed": [
+    "Implementation of the general Orbit decision algorithm",
+    "End-to-end implementation over arbitrary number fields",
+    "A finite-control proof of the universal classification",
+    "A polynomial-time bound for the complete classification",
+    "Classification of all endpoint coordinates simultaneously",
+    "External human review, formal verification or historical priority"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "canonical_dependencies": [
+    {
+      "locator": "MixedPrimeSquareSieve M.13 and proof M.11\u2013M.15: finite mark-set uniformity, prime-square CRT and target valuations.",
+      "path": "PRIMITIVE_NORM_MAXIMAL_ORDERS.md",
+      "sha256": "fc2cb2d847ad64106d0ce8ed17a17be050173fcdd92916ad725522ba543dd989"
+    },
+    {
+      "locator": "O.6 and F.2 existential primitive ideal/genus interface, including conductor divisibility; Section 2 independent good-prime switches; O.8 fixed-order class-prime Mertens; O.7 familywise fallback; classical OrderValueCounts lower bound.",
+      "path": "PRIMITIVE_NORM_ALL_ORDERS.md",
+      "sha256": "4082fe70676d62c2c71fcc1bed3a706133fc89c49992e55f1b71e64760aee735"
+    },
+    {
+      "locator": "CommonFieldGenusInvariance FM.8\u2013FM.9: same-field different-conductor lower-bound and local-shadow interfaces, without ZF/G.",
+      "path": "PRIMITIVE_NORM_LEADING_CONSTANT.md",
+      "sha256": "01383ec5cb74547563f1849832345d523df4f4eedfb0273b98b113b124dc9992"
+    },
+    {
+      "locator": "Exact finite group helper; independent subgroup enumeration and homomorphism kernels.",
+      "path": "verify_class_group_error_cover.py",
+      "sha256": "4106505b2db378c54d4cac4043149cc0f15caea7e104c47fea84de1775c87ddf"
+    }
+  ],
+  "canonical_proof": "PRIMITIVE_NORM_ENDPOINT_CLASS_ERROR.md",
+  "canonical_proof_sha256": "14fe947c9b58a3db563903833d9494ce9b3b05314501621b7d9177bf6f2e1363",
+  "checker": {
+    "command": "python3 research/arithmetic/verify_primitive_norm_endpoint_class_error.py",
+    "inputs": {
+      "path": "primitive_norm_endpoint_class_error_inputs.json",
+      "sha256": "b5c118dbd0752c491e5643b557af82d928bfbb2ba7046951f36f57d75ea6a822"
+    },
+    "path": "verify_primitive_norm_endpoint_class_error.py",
+    "receipt": {
+      "path": "primitive_norm_endpoint_class_error_checks.json",
+      "sha256": "59e4faf0dce23b4bf2f713250bb49b26d214689cb4e8cd60f9385521706d0206"
+    },
+    "result": {
+      "cap_normalizations": 192,
+      "groups": 10,
+      "negative_controls": 5,
+      "proper_sumsets": 5634,
+      "quotient_prefix_checks": 26670,
+      "sequences": 10682,
+      "survival_identities": 80,
+      "translated_target_checks": 51663
+    },
+    "runtime": "Python 3.12.14; standard library only",
+    "scope": "Finite algebra and probability, not analytic asymptotic certification.",
+    "sha256": "09847c450d7ab660e11bb6b53eaaf13a499fbfbce0b82649e0b8584775271e7d"
+  },
+  "claim": "Endpoint primitive norm class error for every fixed imaginary quadratic order and same-field form pair, with stabilizer cap [B:H]-2 and compressed loglog exponent q-2.",
+  "new_argument": "An incomplete class-switch subset sum has proper stabilizer H; nonzero quotient increments strictly increase prefixes, giving cap [B:H]-2. Uniform mark-product constants through t=1 and retention of the full survival-normalized sieve remainder give the endpoint.",
+  "not_claimed": [
+    "Different quadratic fields in this note",
+    "Optimal logarithmic or loglog errors",
+    "Varying-order uniformity",
+    "Effective numerical onset",
+    "A new leading-asymptotic remainder",
+    "New zero-free or graph inputs",
+    "External human review",
+    "Formal verification",
+    "Historical priority"
+  ],
+  "primary_sources": [
+    {
+      "authors": "Jean Bourgain and Elena Fuchs",
+      "edition": "arXiv:1105.3698v2",
+      "limits": "No varying-discriminant uniformity or direct substitution of a squarefree exceptional-value theorem.",
+      "locator": "Section 2 part (5), Lemma 2, equation (5.2), printed/PDF page 15",
+      "path": "sources/bourgain-fuchs-1105.3698v2.pdf",
+      "role": "Nonambiguous inverse-pair prime coefficient 1/h and fixed-discriminant exponential prime-counting error, implying bounded Mertens remainder.",
+      "sha256": "30dc12c32a38a742618e0c605cc6de3456fd662417b49451f146cc1d9094e5a9",
+      "title": "On representation of integers by binary quadratic forms",
+      "url": "https://arxiv.org/abs/1105.3698v2"
+    },
+    {
+      "authors": "Matt DeVos",
+      "edition": "arXiv:1303.3539v1",
+      "local_pdf_download_or_hash_claim": false,
+      "locator": "Theorem 1 and quotient reduction, page 1",
+      "role": "Classical context only; the needed two-element subset-sum argument is proved directly. The actual primary statement was inspected in the retained earlier task.",
+      "title": "A short proof of Kneser's addition theorem for abelian groups",
+      "url": "https://arxiv.org/abs/1303.3539v1"
+    }
+  ],
+  "proof_status": "Written internal proof with exact finite support. The completed earlier argument received separate internal agent review; reconstructed bytes have fresh replay evidence and do not inherit an old byte hash. No external human review or formal verification.",
+  "recovery_provenance": "Reconstructed from retained task history after the prior scratch checkout was cleared; fresh source hashes and actual receipt generated on 2026-11-22.",
+  "schema_version": 1
+}

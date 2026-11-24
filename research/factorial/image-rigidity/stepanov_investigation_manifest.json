@@ -1,0 +1,1208 @@
+{
+  "RH_or_Alpoge_claim_used": false,
+  "active_direction": "Target positive Newton/Schur expansions of shifted resultants, primitive aligned-pencil contact-to-composition, and ordinary Macaulay transfer for arbitrary supports. The caustic detects exact common-factor descent; two universal Euler-width shortcuts are refuted. All unrestricted sharp closure claims remain open.",
+  "algorithmically_separate_internal_terminal_replay": true,
+  "all_monomial_linear_fixed_window_independent_of_start_proved": true,
+  "all_order_SFC2_solved": false,
+  "all_order_shifted_resultant_newton_positivity_proved": false,
+  "arbitrary_rational_block_average_SFC_solved": false,
+  "balanced_private_amplification_all_support_sizes_solved": true,
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "baseline_replay": {
+    "compact_supercritical": "FAIL before current source authentication: Missing/stale source:main_proof",
+    "large_thermal": "FAIL before current source authentication: Missing/stale source:exact_checker",
+    "navigation": "FAIL before new source additions: changed supporting checker: FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION",
+    "support_uniform": "FAIL before current source authentication: Missing/stale source:large_thermal_checker",
+    "terminal_through_ten": "PASS;24159 cases,24160 Bezout identities; byte-identical receipt",
+    "unrestricted_small_ratio": "PASS; byte-identical receipt"
+  },
+  "binary_monomial_linear_shifted_windows_starts_one_through_five_solved": true,
+  "caustic_power_detects_maximal_common_right_factor_proved": true,
+  "cyclic_disjoint_monomial_semigroup_zero_pattern_solved": true,
+  "cyclic_positive_polynomial_symmetric_tilt_semigroup_solved": true,
+  "date": "2026-11-21",
+  "every_support_has_explicit_SFC_enlargement": true,
+  "explicit_global_eventual_cutoff": false,
+  "external_peer_review": false,
+  "failed_approaches_in_closure_angles_pass": [
+    {
+      "proof": "SFC_DIFFERENTIAL_BRANCH_OBSTRUCTIONS.md",
+      "route": "Universal support-width scalar operator without late head resonances",
+      "status": "Refuted by exact conjugate-period zero blocks in actual r=(1,2) frames; every differential order is covered by the conjugation/truncation argument."
+    },
+    {
+      "proof": "SFC_DIFFERENTIAL_BRANCH_OBSTRUCTIONS.md",
+      "route": "Repair universal support-width scalarization by allowing only constant polynomial solutions",
+      "status": "Refuted: the second actual frame forces a specified nonconstant linear polynomial into every such operator kernel."
+    },
+    {
+      "proof": "SFC_DIFFERENTIAL_BRANCH_OBSTRUCTIONS.md",
+      "route": "Select the polynomial-H factorial branch with a nonzero rational inhomogeneous source",
+      "status": "Refuted by trace zero: tracing Lrho=R forces R=0."
+    },
+    {
+      "proof": "SFC_POINTED_PENCIL_AND_CAUSTIC_DESCENT.md",
+      "route": "Use only moving-caustic degree or singularity to force sharp contact or descent",
+      "status": "Degree-only contact fails on the misaligned exact control; the primitive degrees-(5,2) control has a cusp without composition."
+    },
+    {
+      "proof": "SFC_SHIFTED_RESULTANT_POSITIVITY_AUDIT.md",
+      "route": "Explain shifted resultants by a full affine-weight arrangement determinant or a Hermitian affine pencil with positive-definite constant term",
+      "status": "The binary order-two nonlinear residual excludes the first direct identification; its one-variable discriminant -428 excludes the second."
+    },
+    {
+      "proof": "SFC_SHIFTED_RESULTANT_POSITIVITY_AUDIT.md",
+      "route": "Transfer ordinary moment ideals using an invertible positive-shape GKZ contiguity operator alone",
+      "status": "Exact nonmembership witness 1/6 refutes that ideal transport, although both tested endpoint systems remain regular."
+    }
+  ],
+  "failed_approaches_in_deamplification_pass": [
+    {
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "route": "Pass nonvanishing through a p-adic private-power limit",
+      "status": "Not justified: full-minor valuations can diverge; bounded conditioning is equivalent to the limiting full rank. The explicit full-window failure has coincident base columns, while the distinct-support control is a shorter prefix."
+    },
+    {
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "route": "Recover arbitrary unbalanced systems as limits of balanced lifts under diagonal/degree normalizations",
+      "status": "Refuted by the closed pure-coefficient invariant; X,Y^2 violates it."
+    },
+    {
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "route": "Use invertible factorial coefficient maps as ordinary-ideal or localized Koszul identifications",
+      "status": "Exact ordinary-frame nonmembership and Laurent-kernel countercontrols; twisted algebra remains valid but is different."
+    },
+    {
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "route": "Require reciprocal real stability after large private amplification",
+      "status": "Refuted by an unbounded family inside the proved SFC amplification class."
+    },
+    {
+      "proof": "SFC_SEPARATING_ROW_AMPLIFICATION.md",
+      "route": "Extend the near-pure suppression proof to identical zero patterns by increasing all exponents",
+      "status": "Refuted for this estimate by the exact edge asymptotic; SFC itself remains open in the unresolved cases."
+    }
+  ],
+  "failed_approaches_in_merging_pass": [
+    {
+      "proof": "SFC_OVERLAPPING_SWAP_PAIRS.md",
+      "route": "Universal reciprocal stability or Lorentzian preservation under row merging",
+      "status": "refuted on actual integer factorial supports"
+    },
+    {
+      "proof": "SFC_ROW_MERGING_OBSTRUCTIONS.md",
+      "route": "Removing private amplification using only positivity, equal pure moments and strict Gram positivity",
+      "status": "refuted for positive-measure frames; ordinary factorial case remains open"
+    },
+    {
+      "proof": "SFC_CYCLIC_POLYNOMIAL_TILTS.md",
+      "route": "Kaluza log-convexity after general Gamma tilting",
+      "status": "fails already for Gamma shape3 and a linear template; replaced by connected cumulants"
+    },
+    {
+      "proof": "SFC_CYCLIC_POLYNOMIAL_TILTS.md",
+      "route": "Dropping common-monomial symmetry in cyclic zero-pattern preservation",
+      "status": "refuted by Lambda(X(X-Y))=1"
+    },
+    {
+      "route": "Composite-gap scalar-unit or blanket diagonal Hurwitz transfer",
+      "scratch_note": "research/artifacts/local/stepanov_merging/arithmetic_composite_gap_limits.md",
+      "status": "no closure; residual seed reduction can vanish and cubic diagonal a5 fails Hurwitz"
+    }
+  ],
+  "failed_approaches_in_primitive_contact_pass": [
+    {
+      "proof": "SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md",
+      "route": "Reuse initial subset resonances for shifted windows",
+      "status": "Refuted for formal parameters r1=r2=-1/3: initial resultant4/27, but g3=0 and g2 has nonzero complex roots. Negative exponents are outside ordinary factorial SFC."
+    },
+    {
+      "proof": "SFC_REDUCED_DIVISOR_CONTACT_BOUND.md",
+      "route": "Another universal leading-degree cancellation after the forced divisors",
+      "status": "Final numerator degree equals the bound. Sharp closure requires order-at-zero control or another argument."
+    },
+    {
+      "proof": "SFC_INVERSE_POWER_CONTACT_AUDIT.md",
+      "route": "General ordinary-inverse descent or the divided-polynomial critical-value budget",
+      "status": "Descent requires the proved cyclic symmetry. A genuine quadratic inverse-square truncation has five nonzero critical values against the proposed budget four; exact resultant and squarefreeness certificate."
+    },
+    {
+      "proof": "SFC_ALGEBRAIC_UNIFORM_WINDOWS.md",
+      "route": "Uncentered observation or applying N+C below the trace degree without an exception",
+      "status": "Trace centering and Q=trace are essential. Exact controls reject the uncentered operator and show failure of the naive bound at N=0 for a fourth inverse power."
+    }
+  ],
+  "failed_approaches_in_pullback_pass": [
+    {
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "route": "Use any formally invertible polynomial as a canonical pullback",
+      "status": "Refuted: h=z+z^2 and Q0=z(1-z) leave remainder -5/16 on division by h'; the polynomial quotient criterion is essential."
+    },
+    {
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "route": "Derive sharp contact from a'=H'D and deg D alone",
+      "status": "Refuted by a complete rational example with n=s=2 and contact5, coefficient -27/1250. The shared critical point maps to31/50, violating the required zero-fiber condition; not an SFC counterexample."
+    },
+    {
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "route": "Reduce every common-factor phase by polynomial or rational common right factors",
+      "status": "The degree-gcd obstruction leaves primitive families, including r=(1,1,2). Known equal-exponent families are also primitive and have independent SFC proofs."
+    },
+    {
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "route": "Infer finite local contact from the classical polynomial integral moment decomposition theorem",
+      "status": "No implication obtained: the inspected primary theorem concerns all integral moments with endpoint conditions, not a finite local Taylor gap."
+    }
+  ],
+  "files": [
+    {
+      "bytes": 12642,
+      "path": "POWER_DIAGONAL_LINEAR_SFC_TRANSFER.md",
+      "sha256": "40278040a10d4813c473e8256b868e4fb6d42f20912972b801136398436609d6"
+    },
+    {
+      "bytes": 34186,
+      "path": "SFC_ALGEBRAIC_UNIFORM_WINDOWS.md",
+      "sha256": "5066e9fef20d387d80bf865cb07f19563bb5907ace2c8e5c0032b29028f3b2f4"
+    },
+    {
+      "bytes": 15755,
+      "path": "SFC_BALANCED_PRIVATE_AMPLIFICATION.md",
+      "sha256": "f4ebaa9028cb04258cf65be178685650d53e2852644ed0678f1a655d134c065e"
+    },
+    {
+      "bytes": 21332,
+      "path": "SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md",
+      "sha256": "0dff58f64cd64b3e324e71c17d7314de849eaeccf797e4177414a89c7684b57a"
+    },
+    {
+      "bytes": 9538,
+      "path": "SFC_CYCLIC_MONOMIAL_BLOCKS.md",
+      "sha256": "43ccca4e636c8cf74b7045a33bad4a410eac258a62a07d00bbb7feb3888f50f6"
+    },
+    {
+      "bytes": 14801,
+      "path": "SFC_CYCLIC_POLYNOMIAL_TILTS.md",
+      "sha256": "ba7cc5fe27558993b93eb87d4a08e2cb29adb1c30d86ab8868b20cbfc5cfde0d"
+    },
+    {
+      "bytes": 37580,
+      "path": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "sha256": "df9f19e4418c2abdf47c0f2696a60637dcfb761f93a9b91457aad4b5c671e6b0"
+    },
+    {
+      "bytes": 19579,
+      "path": "SFC_DIFFERENTIAL_BRANCH_OBSTRUCTIONS.md",
+      "sha256": "f1a3ebedcc15a90443ed196b4b8e798341720a17f6b581b0da97a609a949ea2b"
+    },
+    {
+      "bytes": 17544,
+      "path": "SFC_GENERAL_CLOSURE_RESEARCH_PROGRAMME.md",
+      "sha256": "81e0de619047abb216239ccf5a6b01298dc469033530041e391d30a915f9050e"
+    },
+    {
+      "bytes": 7903,
+      "path": "SFC_IDENTICAL_MONOMIAL_PAIR.md",
+      "sha256": "7157a05550267289e1cbfc2c01f08659eb2d85e4b9d62661d3e4e57c2fb0e04e"
+    },
+    {
+      "bytes": 12221,
+      "path": "SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md",
+      "sha256": "9df960f24475ad06f6447739dc30c8d25f9a00b629f10b9f32c88a00b2631751"
+    },
+    {
+      "bytes": 12369,
+      "path": "SFC_INVERSE_POWER_CONTACT_AUDIT.md",
+      "sha256": "ec6b4d6a8a5e84feb8a351c68567d367b900c8831d21dba916d713a6d74f2973"
+    },
+    {
+      "bytes": 13107,
+      "path": "SFC_MONOMIAL_LINEAR_CONTACT_BOUND.md",
+      "sha256": "409ca1ed8a1ef3218fb07673d14830d04cf10562f5714c88bd8de8e9a681b417"
+    },
+    {
+      "bytes": 11964,
+      "path": "SFC_OVERLAPPING_SWAP_PAIRS.md",
+      "sha256": "646708ec9d996f1148cc172405e36b2841eb6cd645b046cc3c1a4bfa8564413f"
+    },
+    {
+      "bytes": 21051,
+      "path": "SFC_POINTED_PENCIL_AND_CAUSTIC_DESCENT.md",
+      "sha256": "081d8d21cd67ded8188ffd0f6246727895da3715ef07b17f29537df7be57ea24"
+    },
+    {
+      "bytes": 13984,
+      "path": "SFC_PRIME_POWER_DIVIDED_DIFFERENCE_CLOSURE.md",
+      "sha256": "bd7d60241cc455581bd90c8eb82be4ee8bcb2d6638be6bb5117ec5de6fed3dc6"
+    },
+    {
+      "bytes": 27963,
+      "path": "SFC_PRIME_POWER_SCALAR_TRANSFER.md",
+      "sha256": "9fa457f230397c670c7b4152c0510df93da24df03fc08112f1c5bf5c73bc0349"
+    },
+    {
+      "bytes": 16121,
+      "path": "SFC_PRIME_POWER_UPPER_RESPONSE.md",
+      "sha256": "c32d3c76f705aa5fbb5e046b23b1ca4c18fdc91568b5f3e5e36b3fd4774dbdf2"
+    },
+    {
+      "bytes": 33281,
+      "path": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "sha256": "eb444a8f02feb92834336589024e0d920b4eba23970582291af406c11bd7f519"
+    },
+    {
+      "bytes": 11297,
+      "path": "SFC_REDUCED_DIVISOR_CONTACT_BOUND.md",
+      "sha256": "a35a390ae1b3bb84fa52d3dede3b488ef469536388cb620cd320574ed676594b"
+    },
+    {
+      "bytes": 10257,
+      "path": "SFC_ROW_MERGING_OBSTRUCTIONS.md",
+      "sha256": "731e5dcd27f8cfe6f688c351b55888facffe0756c797c192f3f1970a7113edee"
+    },
+    {
+      "bytes": 15908,
+      "path": "SFC_SEPARATING_ROW_AMPLIFICATION.md",
+      "sha256": "f10dc8c30e6a7f209bd2bca447ab3848e0c33c821958e49fb17e72945bbe2d7b"
+    },
+    {
+      "bytes": 26868,
+      "path": "SFC_SHIFTED_RESULTANT_POSITIVITY_AUDIT.md",
+      "sha256": "c4360e066478e6651b8dbd684f8fd67865a36d698508ecc0648201b58bc44195"
+    },
+    {
+      "bytes": 45918,
+      "path": "SFC_STRUCTURAL_CLOSURE.md",
+      "sha256": "b5b0d1f2872b2bc544d992455bffa4be6a1c6ba58467f96a5b683b4677c94b97"
+    },
+    {
+      "bytes": 13414,
+      "path": "STEPANOV_ADJACENT_POWERS_OF_THREE_SFC.md",
+      "sha256": "8dbda8fec87afcf02fe7e0ade2a09284c6b080f2212d61f33ee990f428ac804d"
+    },
+    {
+      "bytes": 36899,
+      "path": "STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md",
+      "sha256": "e7ef2552420970c2cc9fa3f090b7597b36fe351fa75e32f91c10af99ae9370c1"
+    },
+    {
+      "bytes": 6618,
+      "path": "STEPANOV_LOWER_FOUR_EIGHTH_GAP_CLOSURE.md",
+      "sha256": "ca3bf99a42912a4372083fbe85422528d995716350432bdee8e9b16d6728847f"
+    },
+    {
+      "bytes": 9690,
+      "path": "STEPANOV_LOWER_FOUR_ELEVENTH_GAP_CLOSURE.md",
+      "sha256": "35ddf2dc6a2e2b2bd1f87411485ed74c16e2e270bf13ad37baff3e4662b8c2d5"
+    },
+    {
+      "bytes": 20351,
+      "path": "STEPANOV_LOWER_THREE_EIGHTH_GAP_CLOSURE.md",
+      "sha256": "42e1e00653af31d37c1987797f330d85bb3c026c6674b9870740b9f60dfad95f"
+    },
+    {
+      "bytes": 21185,
+      "path": "STEPANOV_LOWER_THREE_PRIME_CLOSURE.md",
+      "sha256": "00bfaa3473d21b7a56d2c713130ff9aab891d9448dce5d2d24f052e80a00fa85"
+    },
+    {
+      "bytes": 20942,
+      "path": "STEPANOV_NATIVE_PRIME_OFFSET_COROLLARIES.md",
+      "sha256": "ae3fb7dd9852c7fe2238afcb1dcf5b1ac82ca07af6004c9cf6c50247bc8996ec"
+    },
+    {
+      "bytes": 7387,
+      "path": "STEPANOV_SEVENTH_GAP_HENSEL_CERTIFICATE.md",
+      "sha256": "e9305c0d5639581f1a3627780d9d381797e79fea0cbdb2b5f362f9bddb2f6169"
+    },
+    {
+      "bytes": 12879,
+      "path": "STEPANOV_SFC_PROGRESS_AND_LOWER_THREE_CLOSURE.md",
+      "sha256": "6e7b0a4af40020485650d71d1a88c0a2db1d5e880c495042189c836ecc816190"
+    },
+    {
+      "bytes": 10599,
+      "path": "WEIGHTED_RADIAL_LINEAR_SFC_TRANSFER.md",
+      "sha256": "f9ee0dd06d5e6bc85a5b8d35aacb6d55f5c8ec18e483a59c00d3275177495645"
+    },
+    {
+      "bytes": 32121,
+      "path": "power_diagonal_linear_sfc_transfer_verification.json",
+      "sha256": "fba562aeae9949479e7ff096622ab415c4f60d42ae683784a2e8a1b139ef6635"
+    },
+    {
+      "bytes": 1781,
+      "path": "sfc_balanced_private_amplification_source_ledger.json",
+      "sha256": "5a54143df4353a4b031a0c434d12262586e206e677d0923e173bdd6f399b123d"
+    },
+    {
+      "bytes": 155785,
+      "path": "sfc_balanced_private_amplification_verification.json",
+      "sha256": "c3c5c72676d6cad1cb0053f71c2afcccdacec5bba034ad5f1c4f4cfcf0840b62"
+    },
+    {
+      "bytes": 8204,
+      "path": "sfc_cubic_resultant_independent_verification.json",
+      "sha256": "b77a6decea2a5d31d21983170084728af67f53fdafd19da22bc656b5f4af69ad"
+    },
+    {
+      "bytes": 14996,
+      "path": "sfc_cubic_unit_deformation_verification.json",
+      "sha256": "dbcf98ad8773ae864c9c338044c003758587cae08130b7d216b7e2cc2e863e8f"
+    },
+    {
+      "bytes": 8253,
+      "path": "sfc_cyclic_monomial_blocks_verification.json",
+      "sha256": "282884003c5775b1eac975c98081730de451ab5e4ec7cc37a27a479e231d8d32"
+    },
+    {
+      "bytes": 14871,
+      "path": "sfc_cyclic_polynomial_tilts_verification.json",
+      "sha256": "e15d20b49e07728f05d68223326200b50cdc842a5d162d5e10d59419ad6bb4b9"
+    },
+    {
+      "bytes": 57833,
+      "path": "sfc_deamplification_arithmetic_verification.json",
+      "sha256": "fa40084165e975fad64a9b9b60c4b5f5f19866fa36b5dcf89583614d84c249fd"
+    },
+    {
+      "bytes": 1414,
+      "path": "sfc_deamplification_operators_verification.json",
+      "sha256": "c9742b1d50fd7bdefd36987e4529e8e025ee6730009295fea29ce5c79506f329"
+    },
+    {
+      "bytes": 19275,
+      "path": "sfc_deamplification_reciprocal_verification.json",
+      "sha256": "e686fd2294b429371da478ba3fa1a8b6d49c2280de74d0e1a86c1ddaf35b1456"
+    },
+    {
+      "bytes": 14639,
+      "path": "sfc_differential_branch_obstructions_verification.json",
+      "sha256": "46f2c277458254720b7724df2e492fbd9f8c8cdc6ca2876d2b46d637f76e1193"
+    },
+    {
+      "bytes": 4524,
+      "path": "sfc_identical_monomial_pair_verification.json",
+      "sha256": "dc2817fe202a8cb7ab083ce65a278caacced8521e1f78033cc40d764d0e4179d"
+    },
+    {
+      "bytes": 3720,
+      "path": "sfc_initial_resultant_verification.json",
+      "sha256": "c48a8d28fcc538a0e63cb948f83cb2f470cc05fbd609ec0cc82302e45fbc97b9"
+    },
+    {
+      "bytes": 1087,
+      "path": "sfc_inverse_power_contact_verification.json",
+      "sha256": "0823a7a12490be5c0fed02642a35389741fe8c30365bcb4b69ccd7bf15905703"
+    },
+    {
+      "bytes": 18995,
+      "path": "sfc_monomial_linear_contact_verification.json",
+      "sha256": "ceaac7264a37d8272d7c78d0e337e08d25409c106698c54f56f5c5b21a3217b9"
+    },
+    {
+      "bytes": 1577,
+      "path": "sfc_overlapping_swap_pairs_verification.json",
+      "sha256": "704877f4da0b9d9e8e0adfeb4aff7f58deffc3d2dd00a231300fb1701eeb198f"
+    },
+    {
+      "bytes": 3890,
+      "path": "sfc_pointed_pencil_verification.json",
+      "sha256": "adf6f102ba882561ad71fd7818ac5ac7259c2c95086a994be69c0bd2f8247d92"
+    },
+    {
+      "bytes": 109704,
+      "path": "sfc_prime_power_divided_difference_verification.json",
+      "sha256": "e431810ba932839ff12deb1f87e02ea1eaca372915c906b9d5744d021ba800a8"
+    },
+    {
+      "bytes": 4229,
+      "path": "sfc_prime_power_scalar_transfer_verification.json",
+      "sha256": "761a495af41aa9fd5fa9dd3e498125750bb5b6db58f32dfe56b0fe1c6e924386"
+    },
+    {
+      "bytes": 7743,
+      "path": "sfc_prime_power_upper_response_verification.json",
+      "sha256": "97c925f54875d74bc11f311309e2e2c826bfc2eb8da8c19e5f085ee949cbd599"
+    },
+    {
+      "bytes": 65708,
+      "path": "sfc_ramified_pullback_verification.json",
+      "sha256": "2f3f2c25871fe4373fc10b8fb1eb52b428f3888b031d5c8c5112975aed2ff1a4"
+    },
+    {
+      "bytes": 58491,
+      "path": "sfc_rational_block_sfc_verification.json",
+      "sha256": "75ee43c47c72bd36c8c669c9674f6b24d8d57acf1ed48b738c619f1a72fb74ef"
+    },
+    {
+      "bytes": 168183,
+      "path": "sfc_reduced_divisor_contact_verification.json",
+      "sha256": "6491c5313eff164cbb0346a30b1a8ab5914e3e2aae5936f4f05dc1cbf7caa7d2"
+    },
+    {
+      "bytes": 2366,
+      "path": "sfc_row_merging_obstructions_verification.json",
+      "sha256": "8d7932830b865a9ff8ff862b7a75073c79e10b08d69a56a963f22bf50e48a294"
+    },
+    {
+      "bytes": 161540,
+      "path": "sfc_separating_row_amplification_verification.json",
+      "sha256": "cd65254af94ea194a0ebb9039a48f75039117c62164803dea8c4e4c17a23190f"
+    },
+    {
+      "bytes": 5806,
+      "path": "sfc_shifted_resultant_positivity_verification.json",
+      "sha256": "b7fe36676ae848b00e0817e59024ad02449016cdf9fc17e997c28e7848960f23"
+    },
+    {
+      "bytes": 10654,
+      "path": "sfc_ternary_orders_2_4_witness.json",
+      "sha256": "d3c25d8280d238533abbba7eb417445e27d92ac18a458742137f2e77e1b93639"
+    },
+    {
+      "bytes": 6270,
+      "path": "sfc_ternary_orders_3_5_witness.json",
+      "sha256": "4226c5203c2ab09835cc511dca8d40d0f5e95a2c839394a3b011efbb0eb91e46"
+    },
+    {
+      "bytes": 44254,
+      "path": "sfc_trace_centered_window_verification.json",
+      "sha256": "b784a9ca93778f87c04c507a332c4b01ba87a4ca6e31bd1b8d92e4b49ab5d857"
+    },
+    {
+      "bytes": 58468,
+      "path": "sfc_uniform_rational_window_verification.json",
+      "sha256": "abcb84b884e2caab3356d864ffc275a80685e195021477015ad79e2571e5a8d6"
+    },
+    {
+      "bytes": 11669,
+      "path": "stepanov_adjacent_powers_of_three_verification.json",
+      "sha256": "57a89da9c7cbed73833d53b46fb149a97987db95880132d89f980ec513387599"
+    },
+    {
+      "bytes": 3627,
+      "path": "stepanov_auxiliary_identities_verification.json",
+      "sha256": "4929e706eef86554a1a82c56c9df468f1d9388dfb0dcf5fa4790242d520bb6de"
+    },
+    {
+      "bytes": 1250,
+      "path": "stepanov_lower_four_eighth_gap_verification.json",
+      "sha256": "654f9d481d390d0d2cf170bde8d882873ba4951971c5daf6b5958d3427f745e7"
+    },
+    {
+      "bytes": 13657,
+      "path": "stepanov_lower_four_eleventh_gap_verification.json",
+      "sha256": "2d88a8319460b27f3e5fe4ad9e4ad1f93147aa69248217ea162bb6c43badd5f9"
+    },
+    {
+      "bytes": 4603,
+      "path": "stepanov_lower_three_eighth_gap_closure_verification.json",
+      "sha256": "e8ea63daf3b40955bca338e284a21785961bb7160d1f32dd1610024ea4d909ec"
+    },
+    {
+      "bytes": 14190,
+      "path": "stepanov_lower_three_prime_closure_verification.json",
+      "sha256": "9d79fd745f7e83d3b7fcb89297a4adcb258447d0a70e9edbf8690ceb8149dbdb"
+    },
+    {
+      "bytes": 3143,
+      "path": "stepanov_marked_determinants_verification.json",
+      "sha256": "81c8076812eaf876e8fb5052637da279297ea407f6b414877e4105cc65ba5a17"
+    },
+    {
+      "bytes": 24034,
+      "path": "stepanov_native_prime_corollaries_verification.json",
+      "sha256": "5ef73a8e674f0753a1cfaa9ab2b1cd84c02cdc36fe436f1d3fa5cc8f5a25e737"
+    },
+    {
+      "bytes": 2670,
+      "path": "stepanov_seventh_gap_hensel_verification.json",
+      "sha256": "10d778f40c5a9c19a1df41310f097639b327bb393640d3d21b6682d4f90d62d0"
+    },
+    {
+      "bytes": 6955,
+      "path": "stepanov_seventh_gap_hensel_witness.json",
+      "sha256": "b8a91e6ae0790c4600b602089367981df78317456b3411e9022005120bfd9445"
+    },
+    {
+      "bytes": 7000,
+      "path": "stepanov_seventh_gap_matrix_verification.json",
+      "sha256": "9b8c223bef365be62ac01c442dbc939956dfc8c5ca6b2f6eede82a529f16cf19"
+    },
+    {
+      "bytes": 2346687,
+      "path": "stepanov_terminal_11_12_bezout.jsonl.gz",
+      "sha256": "401fe2b233dd45dff604aa955b0b6134662ccfd894675b2155375f082d699ae1"
+    },
+    {
+      "bytes": 3885,
+      "path": "stepanov_terminal_extension_independent_verification.json",
+      "sha256": "8c870d714ebe18092602b6bd0d2c35bc95f9aa23130def0dea464240056f0e9a"
+    },
+    {
+      "bytes": 2210,
+      "path": "stepanov_terminal_extension_verification.json",
+      "sha256": "cee94e49b01fc605579176e3ed3d07c71d1cb7a3f37741797482000a5b0541bb"
+    },
+    {
+      "bytes": 16416,
+      "path": "verify_power_diagonal_linear_sfc_transfer.py",
+      "sha256": "d3cf5377150ced908929614f92eb27512bb6d5de96dd14b459115484da4cd68b"
+    },
+    {
+      "bytes": 21254,
+      "path": "verify_sfc_balanced_private_amplification.py",
+      "sha256": "eca0b5a325b31b347a058b1a6bbaadfcb5bc34e3b5a900d45ff42cb4da0ecca4"
+    },
+    {
+      "bytes": 5382,
+      "path": "verify_sfc_cubic_resultant_independent.py",
+      "sha256": "0fba7495112f3cc590767e0f4bbd7115ef94627d615ef1bd7ac44f3b417bd90d"
+    },
+    {
+      "bytes": 19530,
+      "path": "verify_sfc_cubic_unit_deformation.py",
+      "sha256": "7d531515d903dd48f4cb6744d0920901940b259fb3c18ecf6b231b04a90afd97"
+    },
+    {
+      "bytes": 9460,
+      "path": "verify_sfc_cyclic_monomial_blocks.py",
+      "sha256": "a3083116863f6cb9ef5901656b1d10969f978cb27c42b7c1930544530b3c9781"
+    },
+    {
+      "bytes": 13501,
+      "path": "verify_sfc_cyclic_polynomial_tilts.py",
+      "sha256": "12ccb162af6d4c6b4f3a554bac29041f436ca360a5ea8f252e31d3af00e05070"
+    },
+    {
+      "bytes": 18581,
+      "path": "verify_sfc_deamplification_arithmetic.py",
+      "sha256": "029fdaf63edf1ddd7b003ab921ed3990934de501380db716e51e14ace3c67d7b"
+    },
+    {
+      "bytes": 11481,
+      "path": "verify_sfc_deamplification_operators.py",
+      "sha256": "71c30afa026e68680c5737a5ea3dc2c17f3d7d84232aaaa294d26c8089206123"
+    },
+    {
+      "bytes": 9696,
+      "path": "verify_sfc_deamplification_reciprocal.py",
+      "sha256": "5d2fbeade25ac5788e0caa05ae7543071145e01c26b940f17ab3ec8059281dc3"
+    },
+    {
+      "bytes": 13251,
+      "path": "verify_sfc_differential_branch_obstructions.py",
+      "sha256": "70e550c1c8342de4dcc2405ca6ec29a12b695d4e0de5caa691f6bf2d0f35c95b"
+    },
+    {
+      "bytes": 10580,
+      "path": "verify_sfc_identical_monomial_pair.py",
+      "sha256": "a889dd6ea4a06e33a022d863cf6d474171ced79ba69af93b79398d715cf872d1"
+    },
+    {
+      "bytes": 20030,
+      "path": "verify_sfc_initial_resultant.py",
+      "sha256": "d3fee98192ec752c6aa957f5fdb5f602177d0f508aad3d459029b45fedc8097a"
+    },
+    {
+      "bytes": 10188,
+      "path": "verify_sfc_inverse_power_contact.py",
+      "sha256": "cf9b7d8f7df5109c20ad623cfbddccd2d2902a57a3b4253ac988be8e31bca02d"
+    },
+    {
+      "bytes": 15017,
+      "path": "verify_sfc_monomial_linear_contact.py",
+      "sha256": "c80ea0aa4ade828a89d18e028072c65fc0525c6700afc661183b5cb14c2e1055"
+    },
+    {
+      "bytes": 15917,
+      "path": "verify_sfc_overlapping_swap_pairs.py",
+      "sha256": "de0709bb3e99055c248eee5ecc4c69a3f7dd74b301a64ec5eb26e38edd36a9a7"
+    },
+    {
+      "bytes": 7811,
+      "path": "verify_sfc_pointed_pencil.py",
+      "sha256": "a741c39e3fa82ae9b6dee9061344cc264c080f576a2452f48eadb8b9ddd33cfd"
+    },
+    {
+      "bytes": 15306,
+      "path": "verify_sfc_prime_power_divided_difference.py",
+      "sha256": "e816beb031cad1d806a2e070b0020e1d2f7695306006b2cf38364c9a91fa8385"
+    },
+    {
+      "bytes": 13334,
+      "path": "verify_sfc_prime_power_scalar_transfer.py",
+      "sha256": "cc64f7e35237b6b2fe674c5da8b7b54bdf3ceab17c6494e391ebeeb1c8bca18c"
+    },
+    {
+      "bytes": 11131,
+      "path": "verify_sfc_prime_power_upper_response.py",
+      "sha256": "72202205a5e39e8f8c5eb3de85751ca168d70f24074571c07f875d5cce930f65"
+    },
+    {
+      "bytes": 21959,
+      "path": "verify_sfc_ramified_pullback.py",
+      "sha256": "ad7de5f6a68c53fc05bc9310d54582902a235ffec153344856996af45382894b"
+    },
+    {
+      "bytes": 15685,
+      "path": "verify_sfc_rational_block_sfc.py",
+      "sha256": "162a77159713b9d206fe02e02983bea467d9f506b5474e8b0b74d0d6c64e700d"
+    },
+    {
+      "bytes": 12140,
+      "path": "verify_sfc_reduced_divisor_contact.py",
+      "sha256": "50ccb1f5e5410d27b2f49bb40cbe9cdf66536095f8096aa5b123614ab804d60f"
+    },
+    {
+      "bytes": 10662,
+      "path": "verify_sfc_row_merging_obstructions.py",
+      "sha256": "157424acf3093410641da0486efbaa1d4001915b6f428c7cecb66ffc3c6178fe"
+    },
+    {
+      "bytes": 18618,
+      "path": "verify_sfc_separating_row_amplification.py",
+      "sha256": "9867791ac07d31d077c3e02ec4df1373398df370a09dff2a237b9accd7387bc5"
+    },
+    {
+      "bytes": 13883,
+      "path": "verify_sfc_shifted_resultant_positivity.py",
+      "sha256": "41d1b457009ed87077a8061f3bd0f7b5d3d60c2cd8d8eebbf579c584f2bf5890"
+    },
+    {
+      "bytes": 16939,
+      "path": "verify_sfc_trace_centered_window.py",
+      "sha256": "62becadad2226a8ce9c66c06973b766542114b2b1a4ecd8aa18062b1ee869153"
+    },
+    {
+      "bytes": 13373,
+      "path": "verify_sfc_uniform_rational_window.py",
+      "sha256": "384f05608a1047cdaa87bdad5647fde67b3e265877e1d1dcbc45501533682829"
+    },
+    {
+      "bytes": 13794,
+      "path": "verify_stepanov_adjacent_powers_of_three.py",
+      "sha256": "9d252a5dbc539de1d5eddaf56cf023011f3591c72bd18b0d9210bc7aed41e046"
+    },
+    {
+      "bytes": 6817,
+      "path": "verify_stepanov_auxiliary_identities.py",
+      "sha256": "c767ee1d1fc94cf773ab7c3c2c3bb2bc154b91f8ebd6216396fa5aba07e01a56"
+    },
+    {
+      "bytes": 3681,
+      "path": "verify_stepanov_lower_four_eighth_gap.py",
+      "sha256": "bbc55fc88365553b3697bfa03e488d9f0fe6db2ae0b2854731e411189454c559"
+    },
+    {
+      "bytes": 16406,
+      "path": "verify_stepanov_lower_four_eleventh_gap.py",
+      "sha256": "2fb3a55e53b86e95b37c8d49122ad93c90223a6d281a69642ddf8eca8da9b9ee"
+    },
+    {
+      "bytes": 14460,
+      "path": "verify_stepanov_lower_three_eighth_gap_closure.py",
+      "sha256": "a513df4cf16453b7eb62115651d377789f7e0dd7486a98d360cf1a05749f9f23"
+    },
+    {
+      "bytes": 9529,
+      "path": "verify_stepanov_lower_three_prime_closure.py",
+      "sha256": "174560a3c6467383467eaa54cf6f9d6709f04d6bd512be0963274082811837a8"
+    },
+    {
+      "bytes": 11758,
+      "path": "verify_stepanov_marked_determinants.py",
+      "sha256": "8874efe175478261f4969e43bc1a732b5f6289c16b74159659e572486f9ffb61"
+    },
+    {
+      "bytes": 16235,
+      "path": "verify_stepanov_native_prime_corollaries.py",
+      "sha256": "247d0c6b253536ad4d81fb27c685849b090068d85e4e594b12a1295849854feb"
+    },
+    {
+      "bytes": 8384,
+      "path": "verify_stepanov_seventh_gap_hensel.py",
+      "sha256": "bb74c40bbe2e50f9af791c4265eaa21cc75effe98b4f4704fc219578fd6bf9b3"
+    },
+    {
+      "bytes": 4225,
+      "path": "verify_stepanov_seventh_gap_matrix.py",
+      "sha256": "475b9577605f74d4fb790588a9e2549519f498c61ec18aa54d691d66bd09c0ae"
+    },
+    {
+      "bytes": 11706,
+      "path": "verify_stepanov_terminal_extension.py",
+      "sha256": "bb521eaaf78e329aba07aaf7dc5a22877ed7ba106a6efa4df948105b467e123b"
+    },
+    {
+      "bytes": 16409,
+      "path": "verify_stepanov_terminal_extension_independent.py",
+      "sha256": "83c47ebd04e714db515bd7e493c4cc64c24e2dfadb480ac458cf5a44fc654191"
+    },
+    {
+      "bytes": 16836,
+      "path": "verify_weighted_radial_linear_sfc_transfer.py",
+      "sha256": "33d1d5c9ecee2b8ff2ac941cd464b75c6e85acdc0f7866a1faf3bce0d23a7dc1"
+    },
+    {
+      "bytes": 62417,
+      "path": "weighted_radial_linear_sfc_transfer_verification.json",
+      "sha256": "1571f4ef8e18fb0d60d7ece0a2920566d6dd18e1086185e9de86c9403f957ed0"
+    }
+  ],
+  "finite_range_private_factorial_kernel_density_proved": true,
+  "formal_verification": false,
+  "full_SFC_solved": false,
+  "general_closure_research_programme": "SFC_GENERAL_CLOSURE_RESEARCH_PROGRAMME.md",
+  "general_gkz_contiguity_implies_ordinary_moment_regularity_proved": false,
+  "general_multivariate_unmarked_SFC2_solved": false,
+  "general_row_merging_preserves_regularity_solved": false,
+  "general_sharp_inverse_power_contact_solved": false,
+  "identical_disjoint_monomial_pair_family_solved": true,
+  "intrinsic_balanced_zero_pattern_large_exponent_family_solved": true,
+  "latest_main_rechecked": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "metadata_integration": {
+    "generated_navigation_changed": false,
+    "new_proofs_status": "Internal reviewed research files with exact replay receipts; no remote publication.",
+    "reason": "The standard validator runs before rendering and stops at a pre-existing supporting-checker mismatch in FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION. Unrelated pins were not replaced without proof/source review.",
+    "registry_changed": false
+  },
+  "monomial_linear_initial_resultant_exact_proved": true,
+  "new_results": [
+    {
+      "id": "ordinary_terminal_through_12",
+      "scope": "All ordinary univariate supports a>=0,d>=1 and every characteristic-zero coefficient field, terminals2..12. New complete finite certificates cover11,12; retained2..10 proof was replayed."
+    },
+    {
+      "id": "rational_shape_extra_digit",
+      "scope": "Positive rational p-integral gamma, n>=1,1<=h<=p+1: sigma_h(gamma modp)=0 and v_p(kappa_h)>=-1 exclude the actual consecutive common root. New implication uses no positivity; the nonzero-sigma branch is retained separately."
+    },
+    {
+      "id": "ordinary_prime_cube_residual",
+      "scope": "For prime p and1<=a<p, any bad terminal must satisfy(a+p)N=a-1-j modp^3 with0<=j<=a-2 andp dividing the exact integer Hasse value s_a,j. Necessary condition, not existence."
+    },
+    {
+      "id": "marked_recovery",
+      "scope": "For any two distinct multivariate monomials and every commutative Q-algebra, n+1 coordinate marked moments of f^n vanish iff(A,B)^n=0. Explicit nonzero Vandermonde determinant and inverse markers."
+    },
+    {
+      "id": "harmonic_family_corollaries",
+      "scope": "Explicit all-order even-offset prime-gap corollaries extracted from the retained pointwise theorem. Underlying nonzero-Hasse branch includes its proved real even-Gamma-moment argument."
+    },
+    {
+      "id": "ordinary_lower_three_all_gaps",
+      "proof": "STEPANOV_SFC_PROGRESS_AND_LOWER_THREE_CLOSURE.md",
+      "scope": "Every nonzero X^3(A+B X^d), d>=1, over every characteristic-zero field has no consecutive positive zero moments; new gaps5,6,7,8 combined with explicitly identified retained families."
+    },
+    {
+      "id": "adjacent_positive_powers_of_three",
+      "proof": "STEPANOV_ADJACENT_POWERS_OF_THREE_SFC.md",
+      "scope": "Every support {3^r,3^(r+1)}, r>=1, at every positive starting order. Integral model modulo9, common-residual-root simplicity, unramified lifting, cubic trace contradiction. No positivity input."
+    },
+    {
+      "id": "lower_three_prime_gaps",
+      "proof": "STEPANOV_LOWER_THREE_PRIME_CLOSURE.md",
+      "scope": "Full all-order closure at gaps5,7, using actual fixed normalized jets, deep-disk injectivity, and a complete seven-class Hensel certificate at gap7."
+    },
+    {
+      "id": "lower_three_eighth_gap",
+      "proof": "STEPANOV_LOWER_THREE_EIGHTH_GAP_CLOSURE.md",
+      "scope": "Full all-order closure of support{3,11}; three exact Artin-Hasse stages retain actual seeds and give an injective final scalar condition."
+    },
+    {
+      "id": "lower_four_eleventh_gap",
+      "proof": "STEPANOV_LOWER_FOUR_ELEVENTH_GAP_CLOSURE.md",
+      "scope": "Full all-order closure of support{4,15}; the resulting lower-four prime-gap theorem covers every prime gap. Ten complete F11 Bezout witnesses exclude its boundary."
+    },
+    {
+      "id": "lower_four_eighth_gap_and_offset_criterion",
+      "proof": "STEPANOV_LOWER_FOUR_EIGHTH_GAP_CLOSURE.md",
+      "scope": "Full all-order support{4,12}; more generally positive integer gamma, n>=1,1<=h<=8, v2(8(n+1)/(gamma+8n+8)_h)>=-2 excludes the actual mixed pair."
+    },
+    {
+      "id": "common_power_linear_transfer",
+      "proof": "POWER_DIAGONAL_LINEAR_SFC_TRANSFER.md",
+      "scope": "Every (Y1...Yr)^q sum c_iY_i, q>=1, has its support-size nonvanishing moment window at every positive starting order over every characteristic-zero field."
+    },
+    {
+      "id": "nonzero_critical_value_refinement_and_weighted_radial_transfer",
+      "proof": "WEIGHTED_RADIAL_LINEAR_SFC_TRANSFER.md",
+      "scope": "For positive integers q,p_i, the product-Gamma phase productY_i^(q p_i) sumc_iY_i and its ordinary disjoint block-sum lift have window length equal to the number of distinct nonzero coefficient values. Ordinary unequal-exponent unmarked phases are not inferred."
+    },
+    {
+      "id": "monomial_linear_uniform_contact_and_initial_window",
+      "proof": "SFC_MONOMIAL_LINEAR_CONTACT_BOUND.md",
+      "scope": "Every ordinary product Y_i^r_i times sum c_iY_i, r_i>=0, has a nonzero moment in every window of length (2s-1)n-s+1 starting at n>=1. Initial length s is proved. Sharp later length s remains open. All characteristic-zero coefficient fields."
+    },
+    {
+      "id": "cubic_uniform_resultant_precision",
+      "proof": "SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md",
+      "scope": "Every monic consecutive cubic-model perturbation with coefficient errors of v3>1 has exact resultant valuation equal to the common residual gcd degree, at every order; ramified perturbations allowed. The precision is sharp."
+    },
+    {
+      "id": "cubic_kernel_and_ordinary_linear_composition_transfer",
+      "proof": "SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md",
+      "scope": "Geometric rational unit kernels modulo9 give all-order cubic two-moment windows; ordinary S^(3^r)(A+B S^(2*3^r)) follows for the explicit rational linear-form coefficient pattern, r>=0. General all-prime mod-p^2 unit transfer is disproved by an exact modified-kernel example, not an ordinary SFC counterexample."
+    },
+    {
+      "id": "prime_power_closed_scalar_transfer",
+      "proof": "SFC_PRIME_POWER_SCALAR_TRANSFER.md",
+      "scope": "Actual full-leaf transfer holds on the closed root disk for every prime-power gap. Positive rational p-integral Gamma shapes have mixed-offset1 and2 coprimality at every order; offset3 gcd degree<=2. General upper-response and non-prime-power cases remain open."
+    },
+    {
+      "id": "prime_power_upper_response_degree_and_coprimality",
+      "proof": "SFC_PRIME_POWER_UPPER_RESPONSE.md",
+      "scope": "All q=p^s, n>=1, positive rational p-integral gamma and1<=h<=q: v_p(kappa)+2s+D>0 gives coprimality. Slope gives a denominator-depth factor bound; for q=p the gcd degree is at most2 floor((h-1)/2). Proper-power naive translation is refuted."
+    },
+    {
+      "id": "prime_power_gap_divisor_lower_exponent_closure",
+      "proof": "SFC_PRIME_POWER_DIVIDED_DIFFERENCE_CLOSURE.md",
+      "scope": "Every prime-power gap q and positive divisor a of q: X^a(A+B X^q) has a nonzero moment in every consecutive positive pair over any characteristic-zero field. Integer Gamma shapes1<=beta<=a also covered. Earlier subfamily overlap is recorded; no priority claim."
+    },
+    {
+      "id": "prime_power_nonvacuous_ordinary_valuation_threshold",
+      "proof": "SFC_PRIME_POWER_DIVIDED_DIFFERENCE_CLOSURE.md",
+      "scope": "Every ordinary1<=a<q=p^s has sufficient threshold K=3s-sum_l min(floor(a/p^l),3)>=3 for the remaining exact binomial valuation. Exceptional classes remain; no finite cutoff inferred."
+    },
+    {
+      "id": "identical_disjoint_monomial_pair_all_order",
+      "proof": "SFC_IDENTICAL_MONOMIAL_PAIR.md",
+      "scope": "Every nonconstant monomial template M: A M(X)+B M(Y) on disjoint copies has consecutive nonvanishing at all orders over any characteristic-zero field. Inspected Mao-Wang-Zheng arXiv2609.34551v1 Remark3.4 is credited and hashed. No arbitrary-powers or unequal-template transfer."
+    },
+    {
+      "id": "cyclic_disjoint_monomial_exact_semigroup_zero_sets",
+      "proof": "SFC_CYCLIC_MONOMIAL_BLOCKS.md",
+      "scope": "Disjoint nonconstant monomial templates in root-of-unity cycles, positive rational orbit scales and a common scalar: moment zeros are exactly outside the semigroup of cycle lengths. SFC extends to powers, disjoint products and disjoint monomial multipliers. Formal Kaluza proof; no convergence-radius assumption."
+    },
+    {
+      "id": "equal_coefficient_exponent_redistribution_corollary",
+      "proof": "SFC_STRUCTURAL_CLOSURE.md",
+      "scope": "Redistributing exponents within equal-coefficient blocks preserves normalized moment zero sets. Balanced active block totals R_j=q p_j transfer the weighted radial h-window to sparse ordinary phases. Direct corollary; different-coefficient redistribution is invalid."
+    },
+    {
+      "id": "balanced_private_amplification_arbitrary_support_size",
+      "proof": "SFC_BALANCED_PRIVATE_AMPLIFICATION.md",
+      "scope": "For arbitrary s, shared monomial columns with equal exponent profiles, fresh X_j and D>=6s, every nonzero sum c_j X_j^D M_j satisfies the actual active-support window at all orders over every characteristic-zero field. Every finite nonnegative integer support has an explicit private balancing/enlargement to this family. Removing the decorations remains open."
+    },
+    {
+      "id": "positive_polynomial_template_private_amplification",
+      "proof": "SFC_BALANCED_PRIVATE_AMPLIFICATION.md",
+      "scope": "The same proof covers rational polynomial templates nonnegative on the positive orthant with identical pure factorial moments. Final c_j are arbitrary. Coordinate permutations suffice, including sums of squares. The active-block window is no longer than actual monomial support."
+    },
+    {
+      "id": "overlapping_swap_pair_uniform_closure",
+      "proof": "SFC_OVERLAPPING_SWAP_PAIRS.md",
+      "scope": "Mirrored row pairs (b_i+d_i,b_i)/(b_i,b_i+d_i), with sum over b_i=0 of d_i at least2: every consecutive pair is nonzero for arbitrary characteristic-zero coefficients. Equal rows, specified symmetric mergers, matched unit additions and credited linear padding are covered. Threshold sharpness concerns only the reciprocal certificate."
+    },
+    {
+      "id": "cyclic_positive_polynomial_symmetric_tilt_closure",
+      "proof": "SFC_CYCLIC_POLYNOMIAL_TILTS.md",
+      "scope": "Nonnegative rational polynomial templates without constants, disjoint identical cyclic copies and a common monomial symmetric across each cycle: moment zeros are exactly the complement of the semigroup of cycle lengths. Symmetric within-copy mergers, powers and disjoint products are covered by formal connected Gamma cumulants."
+    },
+    {
+      "id": "row_merging_exact_operator_and_positive_measure_obstructions",
+      "proof": "SFC_ROW_MERGING_OBSTRUCTIONS.md",
+      "scope": "Exact inverse Beta operator, Jacobi correlation and confluent divided differences; no positive forward Mellin kernel. A collision-free positive-measure frame retains strict Gram positivity but gains consecutive zeros after merging, even from an all-order regular D>=12 amplification. Explicitly not an ordinary factorial counterexample."
+    },
+    {
+      "id": "fractional_separating_shared_layer_closure",
+      "proof": "SFC_SEPARATING_ROW_AMPLIFICATION.md",
+      "scope": "Balanced base monomials, arbitrary coefficients and support size, partition layers with a rational packing of separating layer sets of total weight at least6s: all-order SFC. Every intermediate within-layer variable identification certified by the final coarsened code is allowed. Layers remain separate from each other and base variables."
+    },
+    {
+      "id": "intrinsic_balanced_zero_pattern_closure",
+      "proof": "SFC_SEPARATING_ROW_AMPLIFICATION.md",
+      "scope": "Balanced integer exponent columns with distinct zero/nonzero patterns, separated by ell rows, satisfy all-order SFC if every positive exponent is at least6s ell. Always ell<=s-1. No new variables; all characteristic-zero coefficient fields and active boundaries covered."
+    },
+    {
+      "id": "near_pure_suppression_exact_zero_pattern_barrier",
+      "proof": "SFC_SEPARATING_ROW_AMPLIFICATION.md",
+      "scope": "For balanced columns a,b, the (m-1,1) mixed factorial ratio is asymptotic to C_ab m^(-beta_ab), beta_ab=sum_(a_i=0)b_i and C_ab>0. Any uniform multinomial suppression exponent is at most every beta_ab. Identical zero patterns exclude every positive such exponent, even after fixed dilation; no SFC counterexample asserted."
+    },
+    {
+      "id": "finite_window_padic_factorial_kernel_density",
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "scope": "For fixed M, prime p>M, r>=1, let L=phi(p^r), D_r=sum_(i=1)^L p^(ri). Then (D_r k)!/(D_r!)^k=1 mod p^r for all k<=M. Actual normalized decorated forms converge to each fixed undecorated base. Large-D regularity applies only to balanced bases; fixed balancing factors are retained, and full-minor rank need not pass to the limit."
+    },
+    {
+      "id": "balanced_pure_coefficient_limit_invariant",
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "scope": "Balanced systems after diagonal coefficient scaling and degreewise scalar normalization satisfy A_mj(A_1h)^m=A_mh(A_1j)^m. This survives coefficientwise complex or p-adic limits; the target X,Y^2 violates it by-16 at degree2. More general transformations are not excluded."
+    },
+    {
+      "id": "private_factorial_operator_transport_obstructions",
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "scope": "Exact twisted-product and Euler-resolvent identities; diagonal homogeneous-ideal-preserver classification; Laurent resonance. Actual ordinary factorial regular systems (X,Y) and(XZ,Y), orders2/3, disprove both ordinary-ideal inclusions and simple row/column scaling. Their saturated ideals are both unit. Uniform private-power removal is equivalent to fullSFC."
+    },
+    {
+      "id": "reciprocal_instability_inside_uniform_amplification",
+      "proof": "SFC_DEAMPLIFICATION_BRIDGES.md",
+      "scope": "For every D>=18, a=4D, private-amplified bases(2a,a,0),(a,2a,0),(0,2a,a) satisfy all-order SFC but have an unstable reciprocal quadratic of inertia(2,1). The exact instability proof holds forD>=2; the higher threshold imports SFC. Thus reciprocal real stability is not a universal amplification invariant."
+    },
+    {
+      "id": "ramified_polynomial_pullback_moment_closure",
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "scope": "Over any characteristic-zero field, h(0)=0,h'(0)=1,h' divides Q0(h) gives canonical monomial-linear target Q=Q0(h)/h',a=a0(h), preserving every normalized moment. Repeated coefficients and zero exponents included; degree d gives actual support dS and exactly dt distinct coefficient values. Coefficients are prescribed preimage reciprocals, possibly over a splitting extension; not arbitrary target coefficients."
+    },
+    {
+      "id": "cyclic_ramified_common_factor_families",
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "scope": "For integers q,d>=2,b>=0, cyclic seed P0=1-z^q,A0=P0^b and h=1-(1-z/d)^d yield dq terms with normalized moments zero exactly when q does not divide m and g_(qk)=binom((bq+1)k,k). For b>=1 all common exponents are positive and unequal. The optimal q-window is proved for all orders by exact binomial and residue identities."
+    },
+    {
+      "id": "polynomial_observable_common_factor_descent",
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "scope": "When grouped exponent totals satisfy Rj>=pj, so H is polynomial, every existing common polynomial right factor of a,H descends within canonical grouped monomial-linear data. Rational common factors can be made polynomial by a Mobius normalization. No assertion that a nontrivial factor exists."
+    },
+    {
+      "id": "ramified_pullback_degree_obstruction",
+      "proof": "SFC_RAMIFIED_PULLBACK_CLOSURE.md",
+      "scope": "Every canonical degree-d pullback has S=dS0 and R+1=d(R0+1), so d divides gcd(S,R+1), including repeated coefficients and zero exponents. The r=(1,1,2) ternary family is primitive for every nonzero coefficient choice. This obstructs the reduction, not SFC or other inverse identities."
+    },
+    {
+      "id": "monomial_linear_initial_resultant_exact",
+      "proof": "SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md",
+      "scope": "Every support size and formal exponent vector: the initial resultant is exactly the subset product with multiplicities (|I|-1)!(s-|I|)! and positive normalization. Nonnegative integer exponents give initial projective regularity."
+    },
+    {
+      "id": "ternary_uniform_shifted_window_certificates",
+      "proof": "SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md",
+      "scope": "All integers a,b>=0: orders2,3,4 are projectively zero-free for exponents(a,a,b); all b>=0: orders3,4,5 for(1,1,b). Complete polynomial identities and coefficient boundary charts; not arbitrary-start claims."
+    },
+    {
+      "id": "reduced_divisor_contact_bound",
+      "proof": "SFC_REDUCED_DIVISOR_CONTACT_BOUND.md",
+      "scope": "Every actual grouped frame: contact<=n deg rad(D)+(n-1)deg(J/gcd(J,rad(D)))+1. Exact neutral, repeated-root and shared-divisor cancellations; final numerator degree proved exact."
+    },
+    {
+      "id": "monomial_linear_fixed_algebraic_windows",
+      "proof": "SFC_ALGEBRAIC_UNIFORM_WINDOWS.md",
+      "scope": "Every nonnegative exponent profile, active characteristic-zero coefficients and starting order: window d(s-ceil(s/d))+s d(d+1)/2, d=1+sum r_i. Rational-observable connection and decay exclude polynomial solutions. Not the sharp s-window."
+    },
+    {
+      "id": "trace_centered_polynomial_observable_contact",
+      "proof": "SFC_ALGEBRAIC_UNIFORM_WINDOWS.md",
+      "scope": "General polynomial observation after subtracting its polynomial trace: controlled minimal differential order and explicit contact constant, with Q=trace handled. Polynomial factorial primitives get fixed window s d(d-1)/2."
+    },
+    {
+      "id": "rational_block_average_large_denominator_sfc",
+      "proof": "SFC_ALGEBRAIC_UNIFORM_WINDOWS.md",
+      "scope": "Group sizes b v_j and exponent totals a v_j satisfy all-order support-size SFC when 2(b-floor(b/d))>=a h d, d=1+a sum v_j. Arbitrary nonnegative allocations and active group coefficients; uniform coefficient-face condition and an infinite pullback-primitive family proved."
+    },
+    {
+      "id": "inverse_power_cyclic_unicritical_and_budget_audit",
+      "proof": "SFC_INVERSE_POWER_CONTACT_AUDIT.md",
+      "scope": "Full algebraic degree, exact ordinary-inverse cyclic descent criterion, and a unicritical subclass. A complete critical-value resultant refutes the divided-polynomial budget for an actual inverse-power truncation. The general sharp target remains open."
+    },
+    {
+      "id": "pointed_caustic_composition_detector",
+      "proof": "SFC_POINTED_PENCIL_AND_CAUSTIC_DESCENT.md",
+      "scope": "Over every characteristic-zero field, for nonconstant polynomial a,H with a'=H'D and deg D=S>=1, K(D,a-DH)=K(a,H), and the moving resultant is a scalar times one absolutely irreducible polynomial to power e=[K(z):K(a,H)]. This detects the existing ordinary-frame descent to S/e; the sharp finite-gap-to-composition target remains open."
+    },
+    {
+      "id": "universal_euler_width_branch_obstructions",
+      "proof": "SFC_DIFFERENTIAL_BRANCH_OBSTRUCTIONS.md",
+      "scope": "Two exact ordinary positive-exponent binary frames force late resonances in every homogeneous rational annihilator of support-size Euler width; the second forces a nonconstant polynomial kernel. All-order conjugation, truncation and trace arguments establish operator obstructions, not SFC counterexamples."
+    },
+    {
+      "id": "binary_shifted_resultant_positive_windows_through_five",
+      "proof": "SFC_SHIFTED_RESULTANT_POSITIVITY_AUDIT.md",
+      "scope": "Complete symbolic binary resultants at starting orders 1 through 5 have nonnegative ordinary coefficients in both exponent parameters and Schur-positive displayed residuals. Each identity covers all nonnegative real exponent pairs and the associated integer factorial frames; starting order is bounded."
+    },
+    {
+      "id": "gkz_selected_functional_transfer_audit",
+      "proof": "SFC_SHIFTED_RESULTANT_POSITIVITY_AUDIT.md",
+      "scope": "The natural [I|A] toric ring is polynomial for every ordinary support, and correct-direction positive Gamma contiguity is already invertible. An exact ordinary-ideal nonmembership witness shows why the coefficient isomorphism does not transport moment ideals. No general regularity preservation is proved."
+    }
+  ],
+  "ordinary_least_exponent_through_three_covered_with_retained_inputs": true,
+  "ordinary_lower_four_all_prime_gaps_solved": true,
+  "ordinary_lower_three_all_gaps_solved": true,
+  "ordinary_monomial_linear_initial_support_window_solved": true,
+  "ordinary_unequal_exponent_monomial_linear_sharp_all_order_window_solved": false,
+  "overlapping_swap_pair_private_degree_at_least_two_solved": true,
+  "polynomial_observable_common_factor_descent_proved": true,
+  "positivity_assumed_on_coefficient_field": false,
+  "primary_continuation_note": "SFC_STRUCTURAL_CLOSURE.md",
+  "prime_power_gap_divisor_lower_exponent_family_solved": true,
+  "primitive_aligned_gap_forces_composition_proved": false,
+  "private_decoration_removal_solved": false,
+  "ramified_polynomial_pullback_preserves_all_moment_zeros_proved": true,
+  "ramified_pullback_degree_obstruction_proved": true,
+  "rational_block_average_size_criterion_SFC_proved": true,
+  "reduced_logarithmic_divisor_contact_bound_proved": true,
+  "registry_and_generated_navigation_updated": false,
+  "remaining_lower_four_containing_domain": {
+    "additional_arithmetic_filters_may_apply": true,
+    "gaps": [
+      6,
+      9,
+      10
+    ],
+    "terminal_minimum": 13
+  },
+  "schema": 9,
+  "separating_shared_row_all_order_family_solved": true,
+  "status": "internal_research_proofs_with_explicit_unrestricted_gap",
+  "trace_centered_polynomial_observable_bound_proved": true,
+  "universal_support_width_euler_shortcuts_refuted": true,
+  "verification": {
+    "arithmetic_digit_direct_factorial_checks": 4400,
+    "arithmetic_digit_large_constructions": 14,
+    "artifact_json_parsed": 41,
+    "artifact_markdown_checked": 30,
+    "artifact_python_syntax_checked": 37,
+    "closure_angles_actual_factorial_coefficients": 18,
+    "closure_angles_binary_symbolic_windows": 5,
+    "closure_angles_checker_replays_passed": 3,
+    "closure_angles_exact_pencils": 4,
+    "closure_angles_guard_rejections_passed": 12,
+    "closure_angles_independent_integer_sylvester_determinants": 15,
+    "closure_angles_internal_review": "Root independently reconstructed the caustic field/norm proof, read the source hypotheses and all audit notes, and replayed all three canonical checkers byte-identically. Factorial reviewer separately approved the arbitrary-field caustic proof and differential obstruction and replayed the other two checkers. Finite controls are distinguished from all-order written proofs.",
+    "closure_angles_inverse_burgers_coefficients": 72,
+    "closure_angles_new_artifacts": [
+      "SFC_GENERAL_CLOSURE_RESEARCH_PROGRAMME.md",
+      "SFC_POINTED_PENCIL_AND_CAUSTIC_DESCENT.md",
+      "verify_sfc_pointed_pencil.py",
+      "sfc_pointed_pencil_verification.json",
+      "SFC_DIFFERENTIAL_BRANCH_OBSTRUCTIONS.md",
+      "verify_sfc_differential_branch_obstructions.py",
+      "sfc_differential_branch_obstructions_verification.json",
+      "SFC_SHIFTED_RESULTANT_POSITIVITY_AUDIT.md",
+      "verify_sfc_shifted_resultant_positivity.py",
+      "sfc_shifted_resultant_positivity_verification.json"
+    ],
+    "closure_angles_prior_files_changed": [
+      "SFC_STRUCTURAL_CLOSURE.md"
+    ],
+    "closure_angles_quadratic_fields": 2,
+    "closure_angles_relative_markdown_links_checked": 216,
+    "closure_angles_residue_branch_coefficients": 20,
+    "closure_angles_root_replay_receipts_byte_identical": true,
+    "closure_angles_synthesis_internal_review": "Arithmetic reviewer independently checked the Newton positivity implication, caustic minimal-counterexample descent and exact Macaulay socle degree; no mathematical correction after the root notation fix.",
+    "complete_eleventh_gap_F11_bezout_cases": 10,
+    "complete_seventh_gap_hensel_residue_classes": 7,
+    "continuation_checker_replays_passed": 9,
+    "continuation_has_independent_hensel_matrix_replay": true,
+    "continuation_review": "Written uniform arguments independently reconstructed within the team; finite controls explicitly distinguished from universal proofs.",
+    "coprimality_witnesses": "Full modular polynomial Bezout vectors in compressed JSONL; independent standard-library replay.",
+    "current_prior_document_changed": "SFC_STRUCTURAL_CLOSURE.md only in this continuation",
+    "current_replay_receipts_byte_identical": [
+      "sfc_separating_row_amplification_verification.json",
+      "sfc_deamplification_arithmetic_verification.json",
+      "sfc_deamplification_operators_verification.json",
+      "sfc_deamplification_reciprocal_verification.json"
+    ],
+    "cyclic_polynomial_tilt_connected_diagram_controls": 8,
+    "cyclic_polynomial_tilt_orbit_cases": 7,
+    "deamplification_checker_replays_passed": 4,
+    "deamplification_internal_review": "Shared-layer and intrinsic proofs reconstructed by root and two reviewers; arithmetic, operator and reciprocal proofs reconstructed by root; arithmetic and reciprocal proofs also independently reconstructed/replayed by another team agent. Canonical checkers replayed byte-identically. All evidence is internal; no external or formal verification claim.",
+    "deamplification_new_artifacts": 10,
+    "deamplification_optimization_and_altered_note_guards_passed": 8,
+    "deamplification_prior_files_unchanged_except_overview": true,
+    "deamplification_source_scope": "Retained Turan proof/source pins unchanged. New arithmetic/operator/asymptotic arguments are self-contained except the explicitly cited standard Cohen-Macaulay critical-degree criterion. Root inspected Stacks02JN, 00N6 and062D; no RH or positivity assumption on the coefficient field.",
+    "git_diff_check_during_closure_angles_pass": "PASS",
+    "git_diff_check_during_deamplification_pass": "PASS",
+    "git_diff_check_during_family_closure": "PASS",
+    "git_diff_check_during_primitive_contact_pass": "PASS",
+    "git_diff_check_during_pullback_pass": "PASS",
+    "local_markdown_links_checked": 195,
+    "mathematical_basis": "Written universal proofs plus complete finite-domain certificates where explicitly stated; symbolic controls alone are not universal proofs.",
+    "maximum_terminal_factorial_argument": 8436,
+    "merging_and_amplification_checker_replays_passed": 4,
+    "merging_and_amplification_new_artifacts": 13,
+    "merging_and_amplification_receipts_byte_identical": true,
+    "native_prime_source_inputs_pinned": 5,
+    "navigation_rechecked_during_closure_angles_pass": {
+      "check_navigation": "BLOCKED",
+      "reason": "Pre-existing changed supporting checker: FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION; both commands stopped before generation.",
+      "render_navigation": "BLOCKED"
+    },
+    "navigation_rechecked_during_deamplification_pass": "Both make render-navigation and make check-navigation fail at the same pre-existing changed supporting checker FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION, before navigation generation.",
+    "navigation_rechecked_during_family_closure": "FAIL at the same pre-existing changed supporting checker: FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION",
+    "navigation_rechecked_during_merging_pass": "Same pre-existing supporting-checker pin failure; registry and generated navigation remain unpromoted.",
+    "navigation_rechecked_during_primitive_contact_pass": "Both make render-navigation and make check-navigation stop before generation at the existing supporting-checker mismatch FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION; unrelated pins unchanged.",
+    "navigation_rechecked_during_pullback_pass": "Both make render-navigation and make check-navigation fail before generation at pre-existing changed supporting checker FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION. Retained pins were not altered.",
+    "navigation_rechecked_during_structural_pass": "FAIL at the same pre-existing changed supporting checker: FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION",
+    "new_assertion_based_checkers_reject_optimization": 6,
+    "new_cyclic_altered_source_guard": "PASS: corrupted proof hash rejected in memory",
+    "new_cyclic_exact_coefficient_identities": 646,
+    "new_cyclic_independent_product_controls": 475,
+    "new_cyclic_power_zero_controls": 1350,
+    "new_divided_difference_block_compositions": 50600,
+    "new_divided_difference_exact_cancellations": 612,
+    "new_divided_difference_functional_identities": 3750,
+    "new_divided_difference_modular_bezout_certificates": 136,
+    "new_identical_pair_rational_bezout_identities": 96,
+    "new_merging_altered_note_guards": "PASS for all four new proof checkers; amplification also rejects altered source PDF.",
+    "new_merging_optimization_controls": "Three assertion-based checkers reject -O; the require-based overlapping-pair checker passes normal and -O.",
+    "new_merging_proof_pins_checked": true,
+    "new_merging_source_scope": "Actual Turan K.3 and proof inspected by root and two reviewers; existing Mao-Wang-Zheng Remark3.4 rechecked; no RH input.",
+    "new_receipt_source_hash_checks": 15,
+    "new_terminal_cases": 35061,
+    "new_terminal_identity_coefficients": 777771,
+    "new_upper_response_and_family_checker_replays_passed": 4,
+    "overlapping_swap_pair_primary_bezout_identities": 49,
+    "primitive_contact_checker_replays_passed": 6,
+    "primitive_contact_complete_interpolation_determinants": 960,
+    "primitive_contact_independent_receipts_byte_identical": true,
+    "primitive_contact_internal_review": "Universal proofs reconstructed by root and independent team reviewers. Six promoted checkers replayed independently with byte-identical receipts; all rejected -O, missing-note and altered-note inputs. No external or formal verification claim.",
+    "primitive_contact_invalid_execution_or_note_guards_passed": 18,
+    "primitive_contact_new_artifacts": 18,
+    "primitive_contact_prior_files_unchanged_except_overview": true,
+    "primitive_contact_rational_block_actual_moments": 25,
+    "primitive_contact_rational_block_cases": 5,
+    "primitive_contact_rational_block_minimal_operators": 7,
+    "primitive_contact_rational_observable_actual_moments": 54,
+    "primitive_contact_rational_observable_cases": 6,
+    "primitive_contact_reduced_actual_factorial_moments": 108,
+    "primitive_contact_reduced_derivative_identities": 225,
+    "primitive_contact_removed_factor_identities": 225,
+    "primitive_contact_source_scope": "Exact written algebraic proofs. Root inspected the stated Stagliano resultant properties and Dutter/Bostan primary sources; no unproved gap conjecture, positivity on coefficient fields, or RH claim imported.",
+    "primitive_contact_trace_centered_actual_moments": 39,
+    "primitive_contact_trace_centered_contact_controls": 48,
+    "primitive_contact_trace_centered_minimal_operators": 4,
+    "prior_document_updated_only_to_link_structural_direction": "STEPANOV_SFC_PROGRESS_AND_LOWER_THREE_CLOSURE.md",
+    "prior_non_document_artifacts_unchanged": true,
+    "private_amplification_factorial_smoothing_controls": 705,
+    "private_amplification_full_rank_macaulay_certificates": 10,
+    "private_amplification_internal_reviews": 3,
+    "private_amplification_largest_macaulay_columns": 120,
+    "private_amplification_largest_selected_minor_mod_prime": 75652,
+    "private_amplification_macaulay_prime": 104729,
+    "private_amplification_multinomial_stretch_controls": 600,
+    "pullback_direct_factorial_moments_including_order_zero": 51,
+    "pullback_distinguished_residue_controls": 21,
+    "pullback_final_receipt_byte_identical_independent_internal_replay": true,
+    "pullback_final_receipt_sha256": "2f3f2c25871fe4373fc10b8fb1eb52b428f3888b031d5c8c5112975aed2ff1a4",
+    "pullback_internal_review": "Root and three other agents reconstructed the transfer; two reviewers checked canonical common-factor descent and all explicit moment normalizers. Final pinned checker independently replayed byte-identically by another agent with workspace context. No external or formal verification claim.",
+    "pullback_new_artifacts": 3,
+    "pullback_optimized_altered_note_missing_source_guards_passed": 3,
+    "pullback_polynomial_covers": 45,
+    "pullback_prior_proof_sources_and_original_tracked_files_unchanged": true,
+    "pullback_source_scope": "Core theorem, explicit cyclic families, local descent and degree arguments self-contained. Root inspected Edo-van den Essen Theorem2.25/Lemma2.26, Pakovich Section2.1 Lemma1 with proof, and actual Adrianov-Zvonkin PDF page2 for conditional tree interpretation. No arbitrary-tree existence theorem is needed for core results; no RH or coefficient-field positivity premise.",
+    "receipt_source_hash_checks": 34,
+    "row_merger_beta_identities": 81,
+    "row_merger_exact_source_resultant": 29400,
+    "row_merger_independent_jacobi_identities": 81,
+    "row_merger_physical_path_resultant": "9800(3-2rho)(rho-1)^2",
+    "separating_edge_asymptotic_certificates": 6,
+    "separating_intrinsic_controls": 1125,
+    "separating_largest_minor": 120,
+    "separating_literal_phase_coefficients": 206,
+    "separating_macaulay_certificates": 4,
+    "separating_row_gap_controls": 5335,
+    "structural_assertion_based_checkers_reject_optimization": 2,
+    "structural_checker_replays_passed": 4,
+    "structural_independent_cubic_deformations": 48,
+    "structural_independent_cubic_model_pairs": 34,
+    "structural_independent_cubic_raw_pairs": 12,
+    "structural_internal_review": "Root reconstructed all three written arguments; factorial reviewer separately audited closed-disk scalar leaves. Cubic resultants separately replayed with FLINT. No external review or formal verification.",
+    "structural_new_artifacts": 12,
+    "structural_source_hash_checks": 12,
+    "terminal_certificate_prime": 65537,
+    "terminal_source_inputs_pinned": 5
+  },
+  "worktree_branch": "research/stepanov-auxiliary-audit"
+}

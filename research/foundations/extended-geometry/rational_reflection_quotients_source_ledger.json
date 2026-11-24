@@ -1,0 +1,80 @@
+{
+  "schema": "rational_reflection_quotients_source_ledger_v1",
+  "proof_sha256": "f4117799ab1a8fdbc8f2da0a98caed43674c07b414cf333b6526c0645dbc6243",
+  "checker_sha256": "829775e5edfea5179707d1b9701d3096d6c7817600de0918e7dff0b6a687b84c",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/RATIONAL_REFLECTION_QUOTIENT_AND_FINITE_FIBRES.md",
+      "sha256": "f4117799ab1a8fdbc8f2da0a98caed43674c07b414cf333b6526c0645dbc6243",
+      "role": "written_proof",
+      "exact_use": "Q1-Q28: canonical maximal reflection field and descent; bounded exact extraction; finite-preimage pole box; polynomial direction; uniform finite-fibre bound; no-direction critical-degree rigidity."
+    },
+    {
+      "path": "research/foundations/extended-geometry/verify_rational_reflection_quotients.py",
+      "sha256": "829775e5edfea5179707d1b9701d3096d6c7817600de0918e7dff0b6a687b84c",
+      "role": "implemented_extractor_and_finite_controls",
+      "exact_use": "Extractor over QQ or a presented primitive number-field extension; exact marked factorization, bounded linear kernel, common-fibre gcd, normalized quotient and outer map. Seven bounded inputs and the displayed fibre controls; no generic complete fibre classifier is implemented."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "role": "required_internal_premise",
+      "exact_use": "FixedCoordinateFibreClassification parts1-2 and Sections2-3: all-order moment/reciprocity identity, exact finite pole allowances, full jet congruence and reconstruction. The new quotient removes its polynomial-generator hypothesis for the rational-unit parametrization."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "role": "required_primary_field_premise",
+      "exact_use": "Milne Fields and Galois Theory v5.10, Theorem9.19, Lemma9.24, Example9.25 and the proof printed pp117-120: arbitrary-field Luroth, rational-map field degree, fractional-linear generators, and generation by any nonconstant coefficient of the minimal polynomial. Actual retained statements and proof inspected by root and freshly reread by the separate Jacobian reviewer."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ELEMENTARY_RECIPROCAL_EXPONENT_DECISION.md",
+      "sha256": "127d737a39c0e2fa3063d0e1f04db69f2709c5660ddf2657420799b0222227a5",
+      "role": "required_only_for_effective_polynomial_direction_corollary",
+      "exact_use": "ElementaryRationalPointOrbit and ReciprocalExponentDecisionWithoutOrbitImport: full quotient-ring exponent decision. This is used only in SharperEffectiveFibreClassification after the quotient and pole box; not a premise of Q4, Q9, Q17, Q23 or Q25-Q28."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_ODD_HEIGHT_FIBRE_STABILIZATION.md",
+      "sha256": "ba32f29b37c6ec4bbe93e91d192e18316e7662803a14ddd9ed373925eb92ab58",
+      "role": "comparison_cross_reference_only",
+      "exact_use": "The uniform stable-height conclusion is identified with the concurrent sharp stabilization theorem. The no-direction bounds Q25-Q28 and all quotient/pole-box results are proved directly here and do not import that theorem."
+    }
+  ],
+  "primary_context": [
+    {
+      "authors": "Allem, Capaverde, van Hoeij and Szutkoski",
+      "title": "Functional Decomposition Using Principal Subfields",
+      "publication": "ISSAC2017",
+      "doi": "10.1145/3087604.3087608",
+      "url": "https://www.math.fsu.edu/~hoeij/2017/FD_ISSAC_corrected_final.pdf",
+      "inspection_scope": "Root inspected actual Section2 and Theorem5.1 on PDFp7. Classical intermediate-field decomposition and minimal-polynomial coefficient extraction are comparison context. No complete subfield-lattice algorithm, complexity bound or uninspected theorem is imported."
+    }
+  ],
+  "dependency_separation": {
+    "CanonicalReflectionQuotient": "Luroth and rational-map field degree plus the written marked-place involution and Galois descent argument. No preexisting polynomial reciprocal generator is assumed.",
+    "BoundedLinearReflectionExtraction": "Written pole-divisor bound, marked anti-invariant kernel, common-fibre minimal polynomial and fractional-linear normalization; no full functional-decomposition oracle.",
+    "UniversalReciprocalPoleBox": "Canonical quotient and written anti-invariant divisor factorization, plus the retained exact local polynomiality interface; maximum ramification is over finite source preimages only.",
+    "UniformFiniteFibreBound": "Written product count and at-most-one survivor per nonperiodic forward orbit, not a finite enumeration theorem.",
+    "NoPolynomialDirectionRigidity": "Written ordinary-critical-divisor degree count, full jets and exact local pole orders; no inference that transient larger-cap examples exist.",
+    "SharperEffectiveFibreClassification": "Implemented quotient extraction, finite pole box and the separately proved elementary full-jet exponent procedure. The complete classifier remains an unimplemented proved procedure."
+  },
+  "verification_scope": {
+    "written_proof": "Universal extraction, exhaustion, descent, finite-fibre bound and stable no-direction rigidity are written arguments, not inferred from finite controls.",
+    "checker": "Seven exact quotient extractions over Q or Q(i); three finite-box candidates;12 polynomial pairs and36 raw even moments;8 thick-jet exponent cases;7 deliberately rejected shortcuts. Current hashes and outputs are in the receipt.",
+    "internal_mathematical_review": "Root authored and reviewed the proof. The separate Jacobian agent independently checked the maximal stable-field/descent argument, every extraction step, finite-preimage cap, sole polynomial direction, finite bound, and Q25-Q28 ordinary-critical-degree obstruction; no substantive gap found. This is internal AI-assisted review.",
+    "optimized_python": "Both -O and -OO were explicitly rejected by the guard before any receipt was produced.",
+    "omitted_exploratory_control": "An optional degree-four Q(sqrt(2)) twist-family extraction reached a90-second exploratory runtime cap while constructing the linear space. It is outside this receipt, not a failed mathematical control or counterexample. The generic number-field extractor remains implemented; no practical runtime bound is claimed.",
+    "independent_replay": "A separately performed final-byte replay must be recorded separately. This ledger does not infer replay from source inspection."
+  },
+  "not_claimed": [
+    "Historical novelty of Luroth extraction or functional decomposition",
+    "An end-to-end arbitrary-number-field fibre classifier implementation",
+    "A polynomial or practical runtime bound for factorization and elimination",
+    "Finite controls prove universal extraction or the unrestricted finite-fibre bound",
+    "A rational original return follows from a rational reflection quotient",
+    "Every geometric pole twist descends to the original coefficient field",
+    "Existence of non-DZ transient no-direction solutions",
+    "Formal verification, external human review or publication"
+  ],
+  "reproduction": "python3 research/foundations/extended-geometry/verify_rational_reflection_quotients.py --repo-root . --output research/foundations/extended-geometry/rational_reflection_quotients_verification.json"
+}

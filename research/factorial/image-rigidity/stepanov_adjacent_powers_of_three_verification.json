@@ -1,0 +1,503 @@
+{
+  "status": "PASS",
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "python_version": "3.12.14",
+  "dependencies": "Python standard library only",
+  "scope": "exact algebra identities and finite guards for the companion unrestricted proof",
+  "universal_theorem_proved_by_finite_sampling": false,
+  "universal_theorem_source": "STEPANOV_ADJACENT_POWERS_OF_THREE_SFC.md, Sections 2-5",
+  "source_pins": [
+    {
+      "path": "research/factorial/image-rigidity/STEPANOV_ADJACENT_POWERS_OF_THREE_SFC.md",
+      "sha256": "8dbda8fec87afcf02fe7e0ade2a09284c6b080f2212d61f33ee990f428ac804d"
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_stepanov_adjacent_powers_of_three.py",
+      "sha256": "9d252a5dbc539de1d5eddaf56cf023011f3591c72bd18b0d9210bc7aed41e046"
+    }
+  ],
+  "structural_identities": [
+    "formal logarithmic-derivative numerator identity over Z[x,t]",
+    "third-power Newton identity over Z[y1,y2,y3]",
+    "common-root derivative identity over F3[x,B,C,a0]",
+    "factorial unit-block identity over Z[j]"
+  ],
+  "actual_normalization_domain": {
+    "r": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "lower_n_min": 1,
+    "lower_n_max": 8,
+    "all_k": "0 <= k <= n",
+    "coefficient_count": 176
+  },
+  "actual_normalization_cases": [
+    {
+      "r": 1,
+      "a": 3,
+      "n": 1,
+      "coefficients_in_k_order_sha256": "3f2551aae0142ea21922a238d7d8bea034b1240b03553f73fb9d844b367cd5c3",
+      "constant_mod9": 8
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 2,
+      "coefficients_in_k_order_sha256": "c07d1dfd3c24018224a0c72613802e0a0aa005589ba08ff026331a7ac0e39a55",
+      "constant_mod9": 1
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 3,
+      "coefficients_in_k_order_sha256": "86487d93992a2239ebc7f2dd6dbc3e08d66f5e4aace0fb2f5e6cc50de8c956f8",
+      "constant_mod9": 8
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 4,
+      "coefficients_in_k_order_sha256": "016ba5966d070e17cadf8cee6d05f4278d1c7745f28fb06dc68adb4fd184cd25",
+      "constant_mod9": 1
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 5,
+      "coefficients_in_k_order_sha256": "81883c0bbf086908418951ca5441275824d57ea5a3fbf6b65070986d25143757",
+      "constant_mod9": 8
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 6,
+      "coefficients_in_k_order_sha256": "756e893db62fd067f2f5b549dd61267cf6f7aebec1b011e0fba868105df43dc6",
+      "constant_mod9": 1
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 7,
+      "coefficients_in_k_order_sha256": "0977689a6f12a5cf11818250035e343ccf32fc17240105c01fa806c77e76cab0",
+      "constant_mod9": 8
+    },
+    {
+      "r": 1,
+      "a": 3,
+      "n": 8,
+      "coefficients_in_k_order_sha256": "de7efb0b80d30504497437f080b9547773c9772e3f961301ca7fd1e5a4c2cdc8",
+      "constant_mod9": 1
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 1,
+      "coefficients_in_k_order_sha256": "29749fa54cf00b3cb4a3d998b04fad82ff12b38ff2fbf732e92dc654a719b0af",
+      "constant_mod9": 8
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 2,
+      "coefficients_in_k_order_sha256": "8f5b7fff5d809b8cd9c14dc6fe0665ebf33d93e7eeffa16794dc148e4920d788",
+      "constant_mod9": 1
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 3,
+      "coefficients_in_k_order_sha256": "fdf7016da526e798ae5f1405ca3cdf60f83cd16c183ced06abb36454a1876c27",
+      "constant_mod9": 8
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 4,
+      "coefficients_in_k_order_sha256": "383ccb50241bcfdfc2f55cc35ed30754118f5d5b630e55b6c431870019dae76b",
+      "constant_mod9": 1
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 5,
+      "coefficients_in_k_order_sha256": "99c98bb152aecc36ecba9327dc779a4582846378022e9bea759b12ff7c66af7f",
+      "constant_mod9": 8
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 6,
+      "coefficients_in_k_order_sha256": "c0dca22d2b8a2cbc44734adadbf38b794d4d54e4699e983f3c6663199710f3ff",
+      "constant_mod9": 1
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 7,
+      "coefficients_in_k_order_sha256": "16f4619503d39d8877c0ee02260f4d1b48b5acf5ffe3e9822c06a83c938b1f13",
+      "constant_mod9": 8
+    },
+    {
+      "r": 2,
+      "a": 9,
+      "n": 8,
+      "coefficients_in_k_order_sha256": "cfa798f4b549696b2b82b8a797376f31c5ffe46fe272ff946ab1c4b48fffb4f5",
+      "constant_mod9": 1
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 1,
+      "coefficients_in_k_order_sha256": "4bc72912a42c3df8d8d6f7d85a7d2b3dda13a426f6de75b89e9771d955c92067",
+      "constant_mod9": 8
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 2,
+      "coefficients_in_k_order_sha256": "9544e394bedbd6163eefd2d70b9c1f1943d9c6c13e84074073a4f58b79386a65",
+      "constant_mod9": 1
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 3,
+      "coefficients_in_k_order_sha256": "020f3493fdeb846675f6c862bdb043732e15411f291e90f83a5280b1306e644c",
+      "constant_mod9": 8
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 4,
+      "coefficients_in_k_order_sha256": "0b283fd32418438c2b917bbbe686eea3f5d37ee313707bad18dfc4bb6d2fd14c",
+      "constant_mod9": 1
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 5,
+      "coefficients_in_k_order_sha256": "006dd963b44b8d523a2a1f0abef7b7fef68788112d935fa7615877beb69f33a4",
+      "constant_mod9": 8
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 6,
+      "coefficients_in_k_order_sha256": "40fc8693e50d21d7f1fb2de9d3de8266fe8938e98dfe3fea1c2c2ff543091524",
+      "constant_mod9": 1
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 7,
+      "coefficients_in_k_order_sha256": "e64bc1743b398d69f4f2c24738ca7d44d46f85e12f5f68a4c21c39eeb44678a6",
+      "constant_mod9": 8
+    },
+    {
+      "r": 3,
+      "a": 27,
+      "n": 8,
+      "coefficients_in_k_order_sha256": "d3954fd0e36d968a0fc1e01beb98dd7a30da9aca94d070a9d8e7a2eaaa95f9d4",
+      "constant_mod9": 1
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 1,
+      "coefficients_in_k_order_sha256": "1cf57fbf5e26454faf169ae33d93a4440fe63d661560dcad6d228c302666010b",
+      "constant_mod9": 8
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 2,
+      "coefficients_in_k_order_sha256": "ffbf4b422e5725560d6c6be61b01d7da01445e973ae7f1e0392d4d4af9bd5071",
+      "constant_mod9": 1
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 3,
+      "coefficients_in_k_order_sha256": "e0c2891a56d38a6817e6f2df23b732de365cbc8e1d08f4ccac6f0a34a05d5989",
+      "constant_mod9": 8
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 4,
+      "coefficients_in_k_order_sha256": "763285303e4954be827726a5114f437b13a5b0c1b2751d0f3d00d03c7fbe9dee",
+      "constant_mod9": 1
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 5,
+      "coefficients_in_k_order_sha256": "08f987fbdb555c44ca1db8e113c2970738b8333783782179de906e84848afa72",
+      "constant_mod9": 8
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 6,
+      "coefficients_in_k_order_sha256": "7d837f8613694dc1e2ef593fe2c0651560afc0c744afde1c87c485bacf8d7da5",
+      "constant_mod9": 1
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 7,
+      "coefficients_in_k_order_sha256": "ce3ce60220a4962dcf862f0760b1269466523d056486ba07f19ad421a6ad74dd",
+      "constant_mod9": 8
+    },
+    {
+      "r": 4,
+      "a": 81,
+      "n": 8,
+      "coefficients_in_k_order_sha256": "53d6ed5eb1568941cca0d04d015d40c179b1b7b080d5e50047b20a2f97b4d01a",
+      "constant_mod9": 1
+    }
+  ],
+  "sequence_guard_domain": {
+    "recurrence_lower_n_max": 65,
+    "trace_terminal_N_min": 1,
+    "trace_terminal_N_max": 65,
+    "residual_adjacent_lower_n_min": 1,
+    "residual_adjacent_lower_n_max": 64
+  },
+  "nontrivial_residual_gcd_and_first_lift_controls": [
+    {
+      "lower_n": 3,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        2,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        2
+      ]
+    },
+    {
+      "lower_n": 4,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1
+      ]
+    },
+    {
+      "lower_n": 12,
+      "common_residual_degree": 3,
+      "common_coefficients_ascending_mod3": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "lower_n": 16,
+      "common_residual_degree": 4,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "lower_n": 20,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1
+      ]
+    },
+    {
+      "lower_n": 28,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1
+      ]
+    },
+    {
+      "lower_n": 29,
+      "common_residual_degree": 3,
+      "common_coefficients_ascending_mod3": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        0,
+        2
+      ]
+    },
+    {
+      "lower_n": 36,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1
+      ]
+    },
+    {
+      "lower_n": 39,
+      "common_residual_degree": 10,
+      "common_coefficients_ascending_mod3": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "lower_n": 42,
+      "common_residual_degree": 4,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "lower_n": 44,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1
+      ]
+    },
+    {
+      "lower_n": 52,
+      "common_residual_degree": 13,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "lower_n": 55,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        2,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        2
+      ]
+    },
+    {
+      "lower_n": 60,
+      "common_residual_degree": 1,
+      "common_coefficients_ascending_mod3": [
+        1,
+        1
+      ],
+      "first_hensel_obstruction_mod_g": [
+        1
+      ]
+    }
+  ],
+  "negative_controls": {
+    "plain_mod3_coprimality_fails": {
+      "lower_n": 3,
+      "gcd_ascending_mod3": [
+        2,
+        1
+      ]
+    },
+    "that_disk_is_excluded_mod9": {
+      "lower_root_mod9": 7,
+      "upper_value_mod9": 3
+    },
+    "r_zero_does_not_have_the_stated_model": {
+      "actual_n1_k1_mod9": 2,
+      "model_n1_k1_mod9": 8
+    },
+    "ramified_integrality_is_insufficient": "v3(3^(1/3))=1/3; the written proof first proves unramifiedness"
+  },
+  "assurance": "internal exact replay; no formal verification or external review claimed"
+}

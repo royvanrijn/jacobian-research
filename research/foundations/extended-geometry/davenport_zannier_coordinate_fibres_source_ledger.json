@@ -1,0 +1,73 @@
+{
+  "schema": "davenport_zannier_coordinate_fibres_source_ledger_v1",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_MARKER_SAFETY.md",
+      "sha256": "c0471d4c385ce3f636330c061e6f5c404af38e4cc81add860b8b8d9916450ade",
+      "role": "required all-height endpoint identity",
+      "exact_use": "Section1: for odd a, Phi(s)+Phi(-s)=2; for even a including0, Phi=1. The new note classifies fibres using these exact all-order interfaces."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "role": "required exact sphere degree interface",
+      "exact_use": "Exact least sphere degree max(degC+a-1,degD+a+1) for the regular two-height profile, all integer a>=0."
+    },
+    {
+      "path": "research/foundations/extended-geometry/CONSTANT_ENDPOINT_DAVENPORT_ZANNIER_CLASSIFICATION.md",
+      "sha256": "025216db689f3318dea140cafe3818eb8de592371d4d31c79ab47a4652f22aa5",
+      "role": "required DZ correspondence and existing total count",
+      "exact_use": "CE-DZ elementary characterization, N>=r and deg(A-B)=N-r, height cap, CE-TreeCount total (1/r)binom(ar,r-1), specified source-scaling equivalence, and marked Galois descent. No unrestricted phase classification imported."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "role": "retained reciprocal-unit interface and trivial odd fibre",
+      "exact_use": "Marked reciprocity and finite-pole interface, plus u=x singleton. The new singleton result is proved by logarithmic stable-field rigidity, without treating Dickson finite-base existence as an enumeration."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/milne_fields_galois_v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273",
+      "role": "required primary field theorem",
+      "exact_use": "Milne v5.10 Theorem9.19 printedp117 and Lemma9.24p118: arbitrary-field Luroth and rational-map field degree. Actual statements inspected."
+    },
+    {
+      "path": "research/foundations/extended-geometry/sources/pakovich-zvonkin-1306.4141v1.pdf",
+      "sha256": "123180f13b015d4aaf708375f724e9990cec5161f2c6b1a55167d2a976989e04",
+      "role": "required primary geometric interpretation",
+      "exact_use": "Definition2.19 PDFp9: total weight N, edge count r, ordinary all-weight-one trees and Shabat polynomials; Theorem2.24p10 and Theorem3.1p11: weighted-tree/DZ correspondence and passport existence. Actual statements inspected; fixed-field descent is kept separate."
+    },
+    {
+      "path": "research/foundations/extended-geometry/verify_odd_start_fixed_coordinate_fibres.py",
+      "sha256": "fca4424236bce1fc6bc276fde1482d8cb22750c287330b33708d974073328c3d",
+      "role": "exact arithmetic helper used by new checker",
+      "exact_use": "Only polynomial/Fraction rational-function arithmetic, construction identities and raw interval-moment routine are imported. Its previous PASS receipt is not used as mathematical evidence."
+    }
+  ],
+  "primary_context_not_imported": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "location": "Section53.12, local differential calculation preceding Lemma53.12.1",
+      "scope": "Actual characteristic-zero pullback order formula read. The needed order e(m+1)-1 is proved directly by local leading terms in the new note; no global Riemann-Hurwitz theorem is imported."
+    }
+  ],
+  "self_contained_steps": [
+    "Logarithmic stable-field rigidity from the unique possible differential zero",
+    "Every reciprocal unit in a DZ coordinate lies in K(u)",
+    "Complete all-height empty/singleton/infinite fibre exhaustion",
+    "No nonconstant endpoint deformation for weighted N>r DZ pairs",
+    "Complete explicit Shabat deformation sequence when N=r",
+    "New exact ordinary-tree counts and singleton/infinite split",
+    "Exact degree count after all deformations and independent bounded tree controls"
+  ],
+  "not_claimed": [
+    "A classification outside polynomial u/(xu')",
+    "Unrestricted degree5 or degree7 safety",
+    "Rational return on the original x-line",
+    "Every geometric class has a model over the chosen coefficient field",
+    "Equivalence under arbitrary sphere or original-variable automorphisms",
+    "A finite experiment proving the universal stable-field lemma",
+    "Novelty of classical tree enumeration, external human review or formal verification"
+  ],
+  "assurance": "Written unrestricted proof in the stated coordinate class, with bounded exact controls."
+}

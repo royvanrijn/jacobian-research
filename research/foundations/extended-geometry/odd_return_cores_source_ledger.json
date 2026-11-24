@@ -1,0 +1,91 @@
+{
+  "schema": "odd_return_cores_source_ledger_v1",
+  "proof_sha256": "219923e50bb7a1274c2be9b022bc642822b5b43aae9e8540c49092511953827a",
+  "checker_sha256": "46de7fadfff09d026d4c2e965c2a0b2dd126efe30af5c07b28bbfe774d58ecb3",
+  "sources": [
+    {
+      "path": "research/foundations/extended-geometry/ODD_RETURN_CORE_AND_CAYLEY_OBSTRUCTION.md",
+      "sha256": "219923e50bb7a1274c2be9b022bc642822b5b43aae9e8540c49092511953827a",
+      "role": "written_proof",
+      "statement_locator": "Same-height descent, polynomial-inner-map dichotomy, infinity constraints, residue iff, repeated-pole exclusion and exact Cayley criterion."
+    },
+    {
+      "path": "research/foundations/extended-geometry/verify_odd_return_cores.py",
+      "sha256": "46de7fadfff09d026d4c2e965c2a0b2dd126efe30af5c07b28bbfe774d58ecb3",
+      "role": "exact_bounded_controls",
+      "statement_locator": "All integer pole orders for exactly 44 rational divisors in six specified n values; genuine positive pullbacks and rejected invalid shortcuts."
+    },
+    {
+      "path": "research/foundations/extended-geometry/RATIONAL_REFLECTION_QUOTIENT_AND_FINITE_FIBRES.md",
+      "sha256": "f4117799ab1a8fdbc8f2da0a98caed43674c07b414cf333b6526c0645dbc6243",
+      "role": "required_internal_premise",
+      "statement_locator": "CanonicalReflectionQuotient, UniversalReciprocalPoleBox and PolynomialDirectionCriterion; no old lattice/Orbit import."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ODD_START_FIXED_COORDINATE_FIBRE_CLASSIFICATION.md",
+      "sha256": "30b44ebcda3403007a51f6eb5cbeb8068136c7e31102d4c31737e7ab3141c076",
+      "role": "required_internal_premise",
+      "statement_locator": "Exact all-order reciprocal-unit reconstruction and local polynomiality conditions."
+    },
+    {
+      "path": "research/foundations/extended-geometry/ALL_START_HEIGHT_SHARP_UNSAFE_DEGREE.md",
+      "sha256": "428a657814777abd06abbebb22a0282b99551e0f507dbb228a3ed93bdf52d269",
+      "role": "required_internal_premise",
+      "statement_locator": "Sections 1-3: nontrivial deg D>=a+3 and the complete unique equality family. The equality case is essential for excluding simple finite poles of h."
+    }
+  ],
+  "context_sources": [],
+  "external_context": [
+    {
+      "title": "Davenport-Zannier Polynomials and Dessins d'Enfants",
+      "authors": "Nikolai M. Adrianov, Fedor Pakovich and Alexander K. Zvonkin",
+      "url": "https://pakovich.github.io/book.pdf",
+      "locator": "Section 6.5.6, Propositions 6.10-6.11, printed pages 71-72 (PDF 81-82); Section 6.6.3, printed pages 76-77 (PDF 86-87).",
+      "inspection": "Root and moments agent inspected the actual primary text. These Pad\u00e9 and differential constructions concern specified DZ families and do not resolve the Cayley coefficient condition.",
+      "role": "comparison_only_not_a_mathematical_premise"
+    }
+  ],
+  "dependency_separation": {
+    "descent": "Canonical rational reflection plus the exact local polynomiality and all-order reciprocal interface.",
+    "polynomial_inner_map": "Descent plus both the retained minimum-D lower bound and its unique equality classification. Neither alone replaces the full argument.",
+    "infinity_and_degrees": "Exact pullback orders and reciprocal trace; no new external theorem.",
+    "height_one_residues": "Elementary rational integration by partial fractions and the retained all-order endpoint identity.",
+    "repeated_pole_family": "Exact critical location, reciprocal pole cap and elementary rational algebraic-integer trace of a root of unity.",
+    "Cayley_equivalence": "Laurent integration, reciprocal symmetry, marked normalization and all finite local polynomiality orders.",
+    "bounded_diagnostic": "A proved factorial-ratio polynomial identity and complete exact rational factorizations; no m cutoff and no extension beyond the stated n/divisor domain."
+  },
+  "computed_domain": {
+    "height": 1,
+    "n_values": [
+      12,
+      15,
+      18,
+      20,
+      24,
+      30
+    ],
+    "divisors": "All 44 monic reciprocal Q-divisors of r^n+1 excluding r+1.",
+    "pole_orders": "Every integer m, classified by exact roots of the cleared polynomial and checked against the factorial domain and m>=3(n-1).",
+    "excluded_from_claim": [
+      "Other n values",
+      "Algebraic nonrational reciprocal divisors",
+      "Several endpoint pole pairs"
+    ]
+  },
+  "review_scope": {
+    "arithmetic": "Authored the global descent, polynomial-inner-map dichotomy, infinity restrictions and canonical combined proof.",
+    "moments": "Independently read the full initial descent proof; derived and checked the exact Cayley converse and wrote the finite checker.",
+    "jacobian": "Independently reviewed the Cayley criterion and reconstructed all 44 retained factorizations and complete integer-root lists; no broader search or universal proof claimed.",
+    "root": "Read the descent, Cayley proof, retained minimum-degree proof and checker; supplied and checked the all-height repeated-pole exclusion. Final source review and separate current-byte replay are retained separately.",
+    "assurance": "Correlated internal AI-assisted proof reviews and exact computational evidence; not external human review or formal verification."
+  },
+  "remaining_obligation": "Prove that no nontrivial normalized pure polynomial odd-return core exists, or construct one. The present reduction, family exclusion and bounded diagnostic do neither.",
+  "not_claimed": [
+    "Universal no-direction rigidity at every height",
+    "A constructed pure transient counterexample",
+    "An unrestricted cyclotomic coefficient nonvanishing theorem",
+    "Finite controls establish the global reduction",
+    "Historical priority, external human review or formal verification"
+  ],
+  "reproduction": "python3 research/foundations/extended-geometry/verify_odd_return_cores.py --repo-root . --output research/foundations/extended-geometry/odd_return_cores_verification.json"
+}

@@ -9,6 +9,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | Claim | State | Quantity | Domain | Bound | Assumptions |
 |---|---|---|---|---|---|
 | GAUSSIAN-CUBIC-GEOMETRIC-PREFIX-LOWER-SIXTEEN | proved | universal-geometric-pure-moment-prefix | All complex ternary Gaussian polynomials of total degree at most three, including lower-degree terms; normalized Wick functional | lower: 16 |  |
+| JAC-CUBIC-CUBE-ZERO-SHARP29 | proved | least witness dimension | Least dimension of a rational homogeneous cubic map H with exact Jacobian nilpotency index 3 such that I-H is a polynomial automorphism and its inverse has degree 29 | upper: 195 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-velocity-generator-count-over-full-target-normalization | actual complex plane Keller map in a generic monic source direction | upper: 2 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-derivative-generator-count-over-full-target-normalization | complex polynomial Keller map in n variables; {"n": "positive source dimension"} | upper: n^2 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | Hessian-entry-generator-count-over-gradient-normalization | complex four-variable polynomial potential with nonzero constant Hessian determinant | upper: 10 |  |
@@ -19,6 +20,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HESSIAN-COORDINATE-CONDUCTOR | proved | source-line-coordinate-order-normalization-defect | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate; source lines y=c where the global conductor leading coefficient is nonzero | lower: 4 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
+| FACTORIAL-ORDINARY-TERMINAL-THROUGH-12 | proved | terminal order covered for every ordinary binomial | a ≥ 0, d ≥ 1, ordinary factorial moments, characteristic zero | range: 2 ≤ N ≤ 12 |  |
 | MRC-TWO-CABLE-ACTUAL-GAP-AT-MOST-ONE | proved | complex-augmentation-gap | Preferred winding-two cables C_(2,Q)(K) for every odd Q, where K is the explicit four-bridge K_n (n>=0) or uniform K_(b,k) (b>=5,k>=0) companion | upper: 1 |  |
 | ARITH-D23-PRIMITIVE-NORM-SUMSET-BOUNDED | proved | uniform-admissible-existence-onset | The least integer N0 such that every integer N>=N0 with529 not dividingN lies in P23+P23, P23 positive primitive x^2+xy+6y^2 values | lower: 3819 |  |
 | ARITH-D20-EFFECTIVE-ALL-TARGETS | proved | sufficient-numerical-existence-onset | Locally admissible N for the sum of two primitive x^2+5y^2 numerical values, all target valuations | upper: 73786976294838206464 |  |
@@ -361,6 +363,44 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HOPF-ALL-START-EXACT-MINIMUM-UNSAFE-DEGREE | proved | least-unsafe-sphere-degree | All regular pure two-term sphere phases t^5(C(x)+t^2D(x))/x over characteristic-zero fields at fixed starting height a=5; least sphere/radial-primitive balanced degree at which all-marker safety can fail | upper: 14 |  |
 | DIX-LONG-GRADED-CAP27-ALL-PARITY-OBSTRUCTION | proved | common ordinary spatial degree of the canonical Long symbols | canonical graded scalar Long symbols over characteristic-zero fields with arbitrary Moyal-symbol parity; {"all six relations": "through h7"} | lower: 28 |  |
 | DIX-LONG-GRADED-CAP27-ALL-PARITY-OBSTRUCTION | proved | common ordinary spatial degree of the canonical Long symbols | canonical graded scalar Long symbols over characteristic-zero fields with arbitrary Moyal-symbol parity with one common finite degree bound at all orders | lower: 28 |  |
+| JAC-CUBIC-CUBE-ZERO-SHARP48-INVERSE-DEGREE29 | proved | least witness dimension | Least dimension of a rational homogeneous cubic map H with exact Jacobian nilpotency index 3 such that I-H is a polynomial automorphism and its inverse has degree 29 | upper: 48 |  |
+| HOPF-ORBIT-QUARTIC-EVEN-SPECTRUM | proved | least quotient degree spectrum | Full polynomial automorphism orbit of the specified quartic f4 over any characteristic-zero extension | exact: {2r+2 : r>=1} |  |
+| HOPF-ORBIT-SEXTIC-TRIPLE-SPECTRUM | proved | least quotient degree spectrum | Full polynomial automorphism orbit of the specified off-center sextic g1 over any characteristic-zero extension | exact: {3j+3 : j>=1} |  |
+| HOPF-ORBIT-HYPERBOLIC-MINIMA-INEQUIVALENCE | proved | minimum orbit degree | Specified cubic-height hyperbolic family, n>=1, lambda nonzero, full polynomial automorphism group | exact: 5n+3 |  |
+| HOPF-ORBIT-HIGHER-ODD-DEGREE-MINIMA | proved | minimum orbit degree | Displayed hyperbolic seeds with odd starting exponent h>=1, n>=1 and lambda nonzero, over any characteristic-zero extension | exact: (2h+3)n+h+2 |  |
+| HOPF-ORBIT-UNBOUNDED-EQUAL-MINIMUM-MULTIPLICITY | proved | number of inequivalent scalar-and-Aut orbits at a fixed minimum degree | Displayed family at d_r=(5^r+1)/2, integer r>=2 | exact: r-1 |  |
+| HOPF-ORBIT-HIGHER-ODD-EXACT-COUNT | proved | number of displayed-family scalar-and-Aut orbits at a fixed minimum degree | Displayed odd-start hyperbolic family, integer D>=2, over any characteristic-zero extension | exact: tau_1(2D-1)-1-1_(D odd) |  |
+| ARITH-ENDPOINT-ORDER-CLASS-ERROR | proved | relative class-error profile | Fixed imaginary quadratic order, nontrivial B=2Pic, q smallest prime divisor of \|B\|; L=log(3N), ell=1+log L | upper: ell^(q-2)/L^((q-1)/(2q)) |  |
+| ARITH-ENDPOINT-EVEN-DOUBLED-CLASS-GROUP | proved | relative class-error profile | Every fixed quadratic order with nontrivial even-order doubled class group B=2Pic | upper: L_N^(-1/4) |  |
+| ARITH-MIXED-FIELD-TARGET-DIVISOR-LOSS | proved | exclusive-splitting target factor | Two fixed distinct imaginary quadratic fields, N>=3, ell_N=1+log log(3N) | upper: ell_N^(1/4) |  |
+| ARITH-MIXED-FIELD-ABSOLUTE-CLASS-ERROR | proved | absolute numerical-value class error | Two fixed primitive positive definite binary forms, all N>=3, notation D.1–D.3 | upper: (N J12/L_N)(W1 Phi_B1+W2 Phi_B2) |  |
+| ARITH-MIXED-FIELD-PRIMITIVE-VALUE-COUNTS | proved | ordered primitive numerical-value convolution scale | Any fixed pair of primitive positive definite binary quadratic forms, sufficiently large pair-primitively locally admissible targets | exact: R_actual asymp R_shadow asymp N J12(N)/log N |  |
+| JAC-CUBIC-INDEX-FOUR-ALL-GRADES-NONZERO | proved | dimension of universal one-generator graded component | Symmetric ternary algebras with L_a^p=0, every integer p>=4 and q>=0 over any characteristic-zero field | lower: 1 |  |
+| JAC-CUBIC-INDEX-FOUR-TREE-INVERSE-SEPARATION | proved | ordinary polynomial inverse degree | The specified four-variable classical map Id+epsilon H, epsilon in {1,-1}, over every characteristic-zero field | exact: 7 |  |
+| JAC-CUBIC-CUBE-ZERO-ALL-HIGHER-GRADES-ZERO | proved | first grade after which every whole component is zero | Free one-generator symmetric ternary algebra with L_a^3=0 over characteristic zero | exact: 19 |  |
+| JAC-CUBIC-CUBE-ZERO-DIMENSION235 | proved | dimension of universal one-generator algebra | Free symmetric ternary algebra with L_a^3=0 over any characteristic-zero field | exact: 235 |  |
+| JAC-CUBIC-CUBE-ZERO-SHARP39-LEAVES | proved | optimal odd-leaf nilpotence threshold in cyclic subalgebras | Any characteristic-zero symmetric ternary algebra with L_a^3=0, one fixed subalgebra generated by one element | exact: 39 |  |
+| JAC-CUBIC-ENGEL-ONE-GENERATOR-NILPOTENCE-BOUNDARY | proved | Engel indices with nilpotent universal one-generator cubic algebra | Positive integer p, symmetric ternary characteristic-zero algebras satisfying L_a^p=0 | criterion: p<=3 |  |
+| JAC-CUBIC-ENGEL-ONE-GENERATOR-NILPOTENCE-BOUNDARY | proved | dimension profile of universal one-generator cubic algebras | Positive integer p, symmetric ternary characteristic-zero algebras satisfying L_a^p=0 | exact: 1 if p=1; 2 if p=2; 235 if p=3; infinite if p>=4 |  |
+| JAC-CUBIC-ENGEL-ONE-GENERATOR-NILPOTENCE-BOUNDARY | proved | sharp odd-leaf threshold profile in cubic cyclic subalgebras | Positive integer p, symmetric ternary characteristic-zero algebras satisfying L_a^p=0 | exact: 3 if p=1; 5 if p=2; 39 if p=3; no finite threshold if p>=4 |  |
+| HOPF-QUADRIC-EXACT-COORDINATE-DEGREES | proved | coordinate-degree triples | Full automorphism group of the split affine quadric over a characteristic-zero field | exact: {(r,(2q-1)r,qr),((2q-1)r,r,qr): odd r>=1, q>=1} |  |
+| HOPF-HYPERBOLIC-FULL-ORBIT-DEGREE-SPECTRA | proved | full automorphism orbit degree spectrum | Displayed hyperbolic seed p_(h,n,lambda), odd h>=1, n>=1, lambda nonzero | exact: {r(alpha+beta*q),r((2*alpha+beta)*q-alpha): odd r>=1,q>=1; alpha=(2h+3)n,beta=h+2} |  |
+| ARITH-MIXED-FIELD-REFINED-ENDPOINT-PROFILE | proved | relative mixed-field slot class-error profile | Fixed form pair in distinct quadratic fields, nonzero B_i, q_i minimal prime divisor | upper: ell^(q_i-2+beta_i)/L^delta_i; beta_i=delta_i/2 for odd q_i, else 1/4 if aligned and1/8 otherwise |  |
+| JAC-INDEX4-COMPLETE-PARALLEL-CUBIC-KERNEL | proved | ordinary cubic restart kernel dimension | Fixed complete21-helper,32-variable index-four architecture | exact: 522 |  |
+| JAC-INDEX4-COMPLETE-PARALLEL-INVERSE-CEILING | proved | inverse degree | Fixed nine-component pre-S block with arbitrary first parallel cubic helpers and one cubic restart layer; base inverse degreeD, distinguished coordinate degreeB | upper: max(D,7B+4) |  |
+| JAC-INDEX4-COMPLETE-PARALLEL-UNIVERSAL-SHARP207 | proved | least uniform inverse-degree ceiling | Specified nine-component pre-S architecture over any cube-zero base satisfying(1), arbitrary finite first parallel cubic helpers and one further cubic parallel layer | exact: 207 |  |
+| JAC-INDEX17-COMPRESSED-SHARP-JETS | proved | dimension | Displayed compressed index17 jet family, integer M>=0 | exact: 17M+4 |  |
+| JAC-INDEX17-COMPRESSED-SHARP-JETS | proved | inverse degree | Displayed compressed index17 jet family, integer M>=0 | exact: 2M+1 |  |
+| JAC-INDEX17-COMPRESSED-SHARP-JETS | proved | Jacobian nilpotency index | Displayed compressed index17 jet family, integer M>=16 | exact: 17 |  |
+| DIX-LONG-COMPOSITE-COMMON-DIVISOR-ORDERS | proved | larger generic differential order | Regular finite scalar Long repairs in the retained exact-first-image chart with classical differential orders 2 and 3 and nonzero generic scalar commutator h | lower: 4 |  |
+| ARITH-D43-COMPLETE-FINITE-CORE-COVERAGE | proved | finite_coverage_cutoff | discriminant43 eligible even targets outside E | exact: 4294967296 |  |
+| ARITH-D43-COMPLETE-FINITE-CORE-COVERAGE | proved | verified_finite_target_count | discriminant43 complete interval through2^32 | exact: 2097542158 |  |
+| ARITH-D43-EXACT-PRIMITIVE-SUMSET | proved | primitive_exception_count | discriminant43 positive primitive norm sumset | exact: 18 |  |
+| ARITH-D43-EXACT-PRIMITIVE-SUMSET | proved | largest_primitive_exception | discriminant43 positive primitive norm sumset | exact: 3182 |  |
+| HOPF-UNIFORM-FINITE-FIBRE-CARDINALITY | proved | finite fixed-height fibre cardinality | normalized rational endpoint of degree N; D=degree of canonical odd outer map | upper: 3^floor(D/2)<=3^floor(N/2) |  |
+| HOPF-SHARP-ODD-HEIGHT-STABILIZATION | proved | uniform odd-height stabilization threshold | all normalized rational endpoints of degree N>=3 | exact: 2ceil(N/2)-1 |  |
+| HOPF-EFFECTIVE-ALL-ODD-HEIGHT-ATLAS | proved | number of entries in the all-odd-height fibre atlas | normalized degree-N rational endpoint | upper: ceil(N/2) |  |
+| DIX-LONG-SCALAR-LARGER-ORDER-AT-LEAST-SIX | proved | larger generic differential order | Regular finite scalar Long repairs in the retained exact-first-image chart with classical differential orders 2 and 3 and nonzero generic scalar commutator h | lower: 6 |  |
 
 ## Comparable improvements
 
@@ -368,9 +408,11 @@ No unrecorded improvement in an identical domain.
 
 ## Recorded replacements
 
+- JAC-CUBIC-CUBE-ZERO-SHARP29 has bound 195. JAC-CUBIC-CUBE-ZERO-SHARP48-INVERSE-DEGREE29 improves it to 48 under the same assumptions.
 - HESSIAN-UNRESTRICTED-NODAL-ACTION has bound 4. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
 - HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION has bound 6. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
 - FACTORIAL-ORDINARY-INITIAL-FOUR has bound 4. FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH improves it to 5 under the same assumptions.
 - ARITH-D20-EFFECTIVE-ALL-TARGETS has bound 73786976294838206464. ARITH-D20-EXACT-SUMSET-AFFIRMATIVE improves it to 5 under the same assumptions.
 - EXT-JC2-DEGREE-100 has bound 101. EXT-JC2-DEGREE-104 improves it to 105 under the same assumptions.
 - HESS-HC4-DEGREE-101 has bound 102. HESS-HC4-DEGREE-105 improves it to 106 under the same assumptions.
+- DIX-LONG-COMPOSITE-COMMON-DIVISOR-ORDERS has bound 4. DIX-LONG-SCALAR-LARGER-ORDER-AT-LEAST-SIX improves it to 6 under the same assumptions.

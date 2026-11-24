@@ -1,0 +1,215 @@
+{
+  "checker_sha256": "a889dd6ea4a06e33a022d863cf6d474171ced79ba69af93b79398d715cf872d1",
+  "note": "SFC_IDENTICAL_MONOMIAL_PAIR.md",
+  "note_sha256": "7157a05550267289e1cbfc2c01f08659eb2d85e4b9d62661d3e4e57c2fb0e04e",
+  "primary_source": {
+    "extracted_text_sha256": "9c4f1c16648a3e193c6a0024669e72ec85a8e3c543adcad0598c7b4ded00b5b3",
+    "pdf_checked_this_run": true,
+    "pdf_sha256": "bf4731acc6af6348c4c5b306eaffff7d0be660f67945b2234458e742ac816e13",
+    "reviewed_sections_2_3_sha256": "de91eb83ce4ec7a2e5bd7ff5be59a3c7023c19f7f42da9eb2dcd78f6d405a445",
+    "statement": "Theorem 1.1 with the explicit weaker hypothesis of Remark 3.4",
+    "url": "https://arxiv.org/abs/2609.34551v1"
+  },
+  "scope": "finite exact controls; all-order proof is the written factorial-ratio argument and attributed interlacing input",
+  "status": "PASS",
+  "verification": {
+    "counts": {
+      "bezout_identities": 96,
+      "degree_one_identities": 8,
+      "logarithmic_derivative_bounds": 33,
+      "moment_identities": 360,
+      "normalized_coefficient_identities": 780,
+      "normalized_logconcavity_checks": 110,
+      "ratio_identities": 120,
+      "zero_coefficient_cases": 240
+    },
+    "rejecting_controls": [
+      "positive log-convex a_k=1 fails the normalized-logconcavity hypothesis at n=2; not a coprimality counterexample",
+      "degree-one delta=k! rejects log-concavity, while its separate Bezout proof passes",
+      "altered middle coefficient",
+      "malformed coefficient array",
+      "negative template exponent",
+      "constant template"
+    ],
+    "templates": [
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          1
+        ],
+        "total_degree": 1
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          2
+        ],
+        "total_degree": 2
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          3
+        ],
+        "total_degree": 3
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          5
+        ],
+        "total_degree": 5
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          1,
+          1
+        ],
+        "total_degree": 2
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          1,
+          2
+        ],
+        "total_degree": 3
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          2,
+          2
+        ],
+        "total_degree": 4
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          1,
+          1,
+          1
+        ],
+        "total_degree": 3
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          1,
+          3
+        ],
+        "total_degree": 4
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          2,
+          3
+        ],
+        "total_degree": 5
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          0,
+          2
+        ],
+        "total_degree": 2
+      },
+      {
+        "checked_adjacent_pairs": [
+          1,
+          8
+        ],
+        "checked_moment_orders": [
+          1,
+          10
+        ],
+        "exponents": [
+          2,
+          0,
+          1
+        ],
+        "total_degree": 3
+      }
+    ]
+  }
+}

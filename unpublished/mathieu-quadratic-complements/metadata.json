@@ -1,0 +1,26 @@
+{
+  "title": "The Mathieu property for quadratic complements",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Proves that the normalized SO(q) × G_m trace kernel on a nondegenerate quadratic complement over a characteristic-zero field is Mathieu–Zhao exactly in dimensions one and two.",
+  "status": "ready-for-review",
+  "published": false,
+  "catalogued_on": "2026-11-24",
+  "source": "main.tex",
+  "pdf": "mathieu-quadratic-complements.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=mathieu-quadratic-complements main.tex",
+  "abstract": "Let \\(q\\) be a nondegenerate quadratic form of positive dimension \\(N\\) over a\nfield of characteristic zero. The kernel of the normalized\n\\(\\SO(q)\\times\\Gm\\)-invariant trace on \\(\\{q\\ne0\\}\\) is a Mathieu--Zhao\nsubspace exactly when \\(N\\le2\\). In dimensions one and two the trace becomes\na Laurent constant term over a splitting field. In every dimension\n\\(N\\ge3\\) we construct a regular function whose positive powers all have\ntrace zero, while multiplication by \\(q^{N-2}\\) gives a nonzero trace at\nevery order. The function is not a proper power even up to a unit over an\nalgebraic closure. The construction uses a rotation recurrence and a\ncoefficient calculation at one endpoint of a polynomial integral.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "verification_record": "verification.json",
+  "verification": {
+    "scope": "Standalone written proof, bounded exact arithmetic replay of the supporting moment identities, clean LaTeX build, layout inspection, and an isolated PDF-only internal reader review.",
+    "limits": "External human review, independent replay, and full formal verification remain pending."
+  },
+  "next_steps": [
+    "Obtain specialist mathematical review of the trace calculation and endpoint coefficient argument.",
+    "Review the manuscript with the author before any submission."
+  ]
+}

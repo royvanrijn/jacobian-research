@@ -1,0 +1,602 @@
+{
+  "status": "PASS",
+  "base_commit": "19eb9912fb60142f8b620dac24896931d4ff3e46",
+  "python_version": "3.12.14",
+  "dependencies": "Python standard library only",
+  "scope": "exact finite determinant and kernel controls, universal-identity guards, and explicit counterexamples",
+  "unrestricted_quantifiers_proved_by_finite_sampling": false,
+  "universal_proof": "SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md, Sections 1-6",
+  "source_pins": [
+    {
+      "path": "research/factorial/image-rigidity/SFC_CUBIC_UNIT_DEFORMATION_TRANSFER.md",
+      "sha256": "0dff58f64cd64b3e324e71c17d7314de849eaeccf797e4177414a89c7684b57a",
+      "expected_sha256": "0dff58f64cd64b3e324e71c17d7314de849eaeccf797e4177414a89c7684b57a",
+      "reviewed_pin_verified": true
+    },
+    {
+      "path": "research/factorial/image-rigidity/STEPANOV_ADJACENT_POWERS_OF_THREE_SFC.md",
+      "sha256": "8dbda8fec87afcf02fe7e0ade2a09284c6b080f2212d61f33ee990f428ac804d",
+      "expected_sha256": "8dbda8fec87afcf02fe7e0ade2a09284c6b080f2212d61f33ee990f428ac804d",
+      "reviewed_pin_verified": true
+    },
+    {
+      "path": "research/factorial/image-rigidity/DYADIC_BINOMIAL_SFC.tex",
+      "sha256": "9d4a5a3084c3a2d9956c83c444e216f528efa523d21006e20a0da00bf4011f61",
+      "expected_sha256": "9d4a5a3084c3a2d9956c83c444e216f528efa523d21006e20a0da00bf4011f61",
+      "reviewed_pin_verified": true
+    },
+    {
+      "path": "research/factorial/image-rigidity/verify_sfc_cubic_unit_deformation.py",
+      "sha256": "7d531515d903dd48f4cb6744d0920901940b259fb3c18ecf6b231b04a90afd97",
+      "role": "current checker bytes; external manifests may pin this hash"
+    }
+  ],
+  "model_and_resultant_guards": {
+    "exact_resultant_cases": [
+      {
+        "n": 1,
+        "residual_gcd_degree": 0,
+        "model_resultant_v3": 0,
+        "perturbed_resultant_v3": 0
+      },
+      {
+        "n": 2,
+        "residual_gcd_degree": 0,
+        "model_resultant_v3": 0,
+        "perturbed_resultant_v3": 0
+      },
+      {
+        "n": 3,
+        "residual_gcd_degree": 1,
+        "model_resultant_v3": 1,
+        "perturbed_resultant_v3": 1
+      },
+      {
+        "n": 4,
+        "residual_gcd_degree": 1,
+        "model_resultant_v3": 1,
+        "perturbed_resultant_v3": 1
+      },
+      {
+        "n": 5,
+        "residual_gcd_degree": 0,
+        "model_resultant_v3": 0,
+        "perturbed_resultant_v3": 0
+      },
+      {
+        "n": 6,
+        "residual_gcd_degree": 0,
+        "model_resultant_v3": 0,
+        "perturbed_resultant_v3": 0
+      },
+      {
+        "n": 12,
+        "residual_gcd_degree": 3,
+        "model_resultant_v3": 3,
+        "perturbed_resultant_v3": 3
+      },
+      {
+        "n": 16,
+        "residual_gcd_degree": 4,
+        "model_resultant_v3": 4,
+        "perturbed_resultant_v3": 4
+      }
+    ],
+    "growing_residual_degree_controls": [
+      {
+        "n": 39,
+        "degree": 10,
+        "gcd_ascending_mod3": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "n": 52,
+        "degree": 13,
+        "gcd_ascending_mod3": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "both_trace_identities_checked_for_N": [
+      1,
+      25
+    ]
+  },
+  "unit_kernel_guards": {
+    "cases": [
+      {
+        "kernel": "constant units",
+        "n": 1,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 2
+      },
+      {
+        "kernel": "constant units",
+        "n": 2,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 8
+      },
+      {
+        "kernel": "constant units",
+        "n": 3,
+        "normalized_resultant_v3": 1,
+        "raw_resultant_v3": 20
+      },
+      {
+        "kernel": "constant units",
+        "n": 4,
+        "normalized_resultant_v3": 1,
+        "raw_resultant_v3": 30
+      },
+      {
+        "kernel": "constant units",
+        "n": 5,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 46
+      },
+      {
+        "kernel": "constant units",
+        "n": 6,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 68
+      },
+      {
+        "kernel": "constant units",
+        "n": 7,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 86
+      },
+      {
+        "kernel": "constant units",
+        "n": 8,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 122
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 1,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 2
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 2,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 8
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 3,
+        "normalized_resultant_v3": 1,
+        "raw_resultant_v3": 20
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 4,
+        "normalized_resultant_v3": 1,
+        "raw_resultant_v3": 30
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 5,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 46
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 6,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 68
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 7,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 86
+      },
+      {
+        "kernel": "nonconstant unit deformation",
+        "n": 8,
+        "normalized_resultant_v3": 0,
+        "raw_resultant_v3": 122
+      }
+    ],
+    "r_zero_extra_unit_scaling": {
+      "eta": -2,
+      "G1": [
+        -1,
+        1
+      ],
+      "G2": [
+        10,
+        -4,
+        1
+      ],
+      "old_eta_one_coefficient_mod9": 2
+    }
+  },
+  "ordinary_composition_guards": {
+    "ordinary_cubic_composition_cases": [
+      {
+        "weights": [
+          1,
+          3,
+          -3
+        ],
+        "r": 0,
+        "q": 1,
+        "c_mod9": 1,
+        "effective_zeta_mod9": 1,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          1,
+          3,
+          -3
+        ],
+        "r": 1,
+        "q": 3,
+        "c_mod9": 1,
+        "effective_zeta_mod9": 2,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          1,
+          3,
+          -3
+        ],
+        "r": 2,
+        "q": 9,
+        "c_mod9": 1,
+        "effective_zeta_mod9": 7,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          2,
+          9,
+          0
+        ],
+        "r": 0,
+        "q": 1,
+        "c_mod9": 2,
+        "effective_zeta_mod9": 2,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          2,
+          9,
+          0
+        ],
+        "r": 1,
+        "q": 3,
+        "c_mod9": 2,
+        "effective_zeta_mod9": 7,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          2,
+          9,
+          0
+        ],
+        "r": 2,
+        "q": 9,
+        "c_mod9": 2,
+        "effective_zeta_mod9": 2,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          1,
+          3,
+          6,
+          9
+        ],
+        "r": 0,
+        "q": 1,
+        "c_mod9": 1,
+        "effective_zeta_mod9": 1,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          1,
+          3,
+          6,
+          9
+        ],
+        "r": 1,
+        "q": 3,
+        "c_mod9": 1,
+        "effective_zeta_mod9": 2,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      },
+      {
+        "weights": [
+          1,
+          3,
+          6,
+          9
+        ],
+        "r": 2,
+        "q": 9,
+        "c_mod9": 1,
+        "effective_zeta_mod9": 7,
+        "lower_n_checked": [
+          1,
+          2
+        ]
+      }
+    ],
+    "dyadic_transfer_unit_guards": [
+      {
+        "weights": [
+          1,
+          2,
+          4
+        ],
+        "q": 1,
+        "kernel_L_checked": [
+          0,
+          12
+        ]
+      },
+      {
+        "weights": [
+          1,
+          2,
+          4
+        ],
+        "q": 2,
+        "kernel_L_checked": [
+          0,
+          12
+        ]
+      },
+      {
+        "weights": [
+          1,
+          2,
+          4
+        ],
+        "q": 4,
+        "kernel_L_checked": [
+          0,
+          12
+        ]
+      },
+      {
+        "weights": [
+          3,
+          -2,
+          6
+        ],
+        "q": 1,
+        "kernel_L_checked": [
+          0,
+          12
+        ]
+      },
+      {
+        "weights": [
+          3,
+          -2,
+          6
+        ],
+        "q": 2,
+        "kernel_L_checked": [
+          0,
+          12
+        ]
+      },
+      {
+        "weights": [
+          3,
+          -2,
+          6
+        ],
+        "q": 4,
+        "kernel_L_checked": [
+          0,
+          12
+        ]
+      }
+    ],
+    "dyadic_all_order_input": "DYADIC_BINOMIAL_SFC.tex, lem:units"
+  },
+  "Gamma_and_marker_guards": {
+    "integer_Gamma_cases": 273,
+    "r_checked": [
+      1,
+      2,
+      3
+    ],
+    "all_beta_in_1_through_q_checked": true,
+    "L_checked": [
+      0,
+      6
+    ],
+    "marker_controls": [
+      {
+        "q": 3,
+        "divided_power_coefficients": {
+          "0": 2,
+          "1": -1,
+          "2": 1
+        },
+        "mass": 2,
+        "zeta_mod9": 4,
+        "L_checked": [
+          0,
+          8
+        ]
+      },
+      {
+        "q": 9,
+        "divided_power_coefficients": {
+          "0": 1,
+          "3": 2,
+          "8": -1
+        },
+        "mass": 2,
+        "zeta_mod9": 4,
+        "L_checked": [
+          0,
+          8
+        ]
+      }
+    ]
+  },
+  "odd_prime_guards": {
+    "uniform_residual_formula_prime_guards": [
+      {
+        "p": 3,
+        "n": 4,
+        "common_residual_multiplicity_at_minus_one": 1
+      },
+      {
+        "p": 5,
+        "n": 8,
+        "common_residual_multiplicity_at_minus_one": 3
+      },
+      {
+        "p": 7,
+        "n": 12,
+        "common_residual_multiplicity_at_minus_one": 5
+      },
+      {
+        "p": 11,
+        "n": 20,
+        "common_residual_multiplicity_at_minus_one": 9
+      },
+      {
+        "p": 13,
+        "n": 24,
+        "common_residual_multiplicity_at_minus_one": 11
+      },
+      {
+        "p": 17,
+        "n": 32,
+        "common_residual_multiplicity_at_minus_one": 15
+      },
+      {
+        "p": 19,
+        "n": 36,
+        "common_residual_multiplicity_at_minus_one": 17
+      }
+    ],
+    "actual_adjacent_prime_power_normalization_coefficient_guards": 72
+  },
+  "counterexamples": {
+    "mod3_is_insufficient": {
+      "u3": 220,
+      "u4": -12860,
+      "all_other_units": 1,
+      "phase": "X*(1-X^2/6)",
+      "orders": [
+        3,
+        4
+      ],
+      "baseline_normalized_moments": [
+        -219,
+        12861
+      ],
+      "modified_normalized_moments": [
+        0,
+        0
+      ],
+      "normalized_common_root": 1,
+      "minimum_coefficient_error_valuations": [
+        1,
+        2
+      ],
+      "normalized_resultant": 0
+    },
+    "all_prime_mod_p_squared_shortcut_is_false": {
+      "p": 5,
+      "orders": [
+        156,
+        157
+      ],
+      "model_point": 8,
+      "model_values_mod125": [
+        25,
+        100
+      ],
+      "phase": "X*(1-X^4/960)",
+      "all_other_units": 1,
+      "modified_units": {
+        "156": {
+          "numerator": "-553275666625276981367402374251654486926773564280793087804341413903278535614864397690228809187992785201293797613583958068391138272498574966435979551684731437661986804125233707127624112526802100654954564824030470552643590387725954491801522602122065228992193439026720113749504289678553931760723791447526256523556471190424756646725050595198390033324426563966563642285485952130841747253682095447908815977336662578543759829347354137769287331097524102425889261783434831558903988625343223653747507969204783846018884865763816348209331964119836128723035300092436594810780651873704080088630864512785813676986449601705811784006139316570531640412355924824961121137914542838995471276378403295225624084052869223918497255638555877027364572003803826176183624391571380932489282459262669657626497223064981690619323240078553392780710112295503632933937277695631687225190550220808749427128468879959784493574328118431571115886287366900642291574518403504975743819316057230055488606721084086113833260927953364219224716050355058615066222460075249834735375909940132821762135648005411468284090992725270357995301759915181208213632825492459454837947263368995578107923809391216357607731584046122384718997831202356602844325378533610435777301589941630262536702980998264072499451917383790092980698572269429",
+          "denominator": "8343699359066055009355553539724812947666814540455674882605631280555545803830627148527195652096"
+        },
+        "157": {
+          "numerator": "2160757116980833661821776070322178916430049409665729582412924412839701231772267823533548289382358722174310857312107001984546090909340780067326828402216208829696780828913666330477261261831366470111892515625643160521518006893811355595892249538222888915195101966705724467737022275183258638946236725933707318729954197649175269901423070047398145520113753629835104665646110044726600153470836559591111751595238805743203264528849219358508227871008453639046020654133660755138629670429230491098088763098181543736111301029960970659651262419881606709367659226109603333742275573319281842327366305165348680529742340061113611399536464310234555508086868407722201301783770402720076948634755621514686679813861375206029805718119492555964822541694460981446613111862214905954616663426340700366218664955965163744897432130877774000094505068995913358011466398333705162587174125629988786977177947497105767413707454740495834949590315039466998612855721742671812014975925226930942255292242627213473953591401708429366866214378621307103663845905814708611572785921913327426679294702368150080406093081505092945910864608853727992201339984345771249775876253828039511689195604624753860383026155373372821472913828809766469893136831174420185833268524510254689761109135993835751645228047578942453394958427490538829084417",
+          "denominator": "16687398718132110018711107079449625895333629080911349765211262561111091607661254297054391304192"
+        }
+      },
+      "modified_units_mod25": [
+        1,
+        1
+      ],
+      "modified_normalized_moments": [
+        0,
+        0
+      ],
+      "ordinary_SFC_counterexample": false
+    }
+  },
+  "assurance": "internal exact replay; written proof supplies all-parameter statements"
+}
