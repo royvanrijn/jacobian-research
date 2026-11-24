@@ -2,12 +2,16 @@
 
 **Unpublished manuscript, ready for mathematical review**
 
-For every nondegenerate quadratic form of positive dimension over a
-characteristic-zero field, the kernel of the normalized rotation-and-scaling
-trace on its nonzero locus is a Mathieu–Zhao subspace exactly in dimensions
-one and two. The manuscript opens with an explicit ternary counterexample
-and gives a uniform regular witness detected at every order by one
-fixed multiplier in higher dimensions.
+The normalized rotation-and-scaling trace on a nondegenerate quadratic
+complement in characteristic zero has a Mathieu–Zhao kernel exactly in
+dimensions one and two. The paper opens with a double-pole ternary
+example and gives a uniform witness in higher dimensions. For this
+witness the least polynomial degree detecting infinitely many orders is
+\(2N-4\). The paper gives the sharp lower-degree cutoff, a test for fixed
+regular multipliers, and a pole-reducing perturbation in dimensions at
+least six. The introduction credits Long's spherical classification
+for the complex case. An isotropic ternary example illustrates how the
+least detecting polynomial degree can change with the choice of witness.
 
 [PDF](mathieu-quadratic-complements.pdf) · [LaTeX source](main.tex) ·
 [Metadata](metadata.json) · [Verification record](verification.json)
@@ -24,11 +28,11 @@ The single source file contains the bibliography and builds on its own.
 
 ## Proof and review
 
-The paper contains the full written argument. Its source proofs are the
-[dimension classification](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md) and the
-[uniform moment formula](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md). The exact replay compares
-selected moment coefficients with direct Laurent expansions and includes
-a negative control. The universal theorem follows from the written proof.
-The verification record identifies the reviewed edition, the replay scope,
-and the revisions from the isolated PDF-only review. External specialist
-review and independent replay remain open.
+The written arguments are in the paper and the supporting research notes
+on the [dimension classification](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md),
+[rank-two moments](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md),
+[sharp multiplier bounds](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_MULTIPLIER_BOUNDS.md),
+and [isotropic counterexamples](../../research/foundations/extended-geometry/ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md).
+The verification record pins the revised edition and records the bounded
+arithmetic checks and PDF-only internal review. External specialist review
+and independent external replay remain open.

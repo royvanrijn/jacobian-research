@@ -22,89 +22,95 @@
 \maketitle
 
 \begin{abstract}
-Let \(q\) be a nondegenerate quadratic form of positive dimension \(N\) over a
+Let \(q\) be a nondegenerate quadratic form of dimension \(N\ge1\) over a
 field of characteristic zero. The kernel of the normalized
 \(\SO(q)\times\Gm\)-invariant trace on \(\{q\ne0\}\) is a Mathieu--Zhao
-subspace exactly when \(N\le2\). In dimensions one and two the trace becomes
-a Laurent constant term over a splitting field. In every dimension
-\(N\ge3\) we construct a regular function whose positive powers all have
-trace zero, while multiplication by \(q^{N-2}\) gives a nonzero trace at
-every order. The function is not a proper power even up to a unit over an
-algebraic closure. The construction uses a rotation recurrence and a
-coefficient calculation at one endpoint of a polynomial integral.
+subspace exactly when \(N\le2\). For \(N\ge3\) we give an explicit
+geometrically nonpower function whose positive powers have zero trace,
+while multiplication by \(q^{N-2}\) gives a nonzero trace at every order.
+For this function the least detecting polynomial degree is \(2N-4\).
+We give the sharp vanishing cutoff below that degree and a finite test
+for eventual vanishing with any fixed regular multiplier.
 \end{abstract}
 
-\section{A counterexample in dimension three}
+\section{A double-pole counterexample in dimension three}
 
 Take \(q=x^2+y^2+z^2\) over \(\mathbb Q\) and let \(\Lq\) be the normalized
 trace on \(\mathbb Q[x,y,z,q^{-1}]\) invariant under rotations and scalar
-multiplication. The regular function
+multiplication. The function
 \[
-   P=\frac{(q+1)\bigl(q-(q+1)^2z^2\bigr)^2}{q^3}
+   F_0=\frac{(q+1)\bigl(q-(q+1)^2z^2\bigr)}{q^2}
 \]
 satisfies, for every \(m\ge1\),
 \begin{equation}\label{eq:opening}
-   \Lq(P^m)=0,\qquad
-   \Lq(qP^m)=\int_0^1(1-w^2)^{2m}\,dw\ne0.
+   \Lq(F_0^m)=0,\qquad
+   \Lq(qF_0^m)=\int_0^1(1-w^2)^m\,dw\ne0 .
 \end{equation}
-The integral here is a positive rational number, so the same identities
-hold over every characteristic-zero field. The multiplier is \(q\) at
-every order. Proposition~\ref{prop:moments} proves these identities and
-explains the choice of \(P\).
+The first marked moment is \(2/3\), and the same multiplier \(q\)
+works at every order. The identities hold in any characteristic-zero
+field, since the integral is a positive rational number.
 
-Let \(q\) be a nondegenerate quadratic form on a vector space \(V\) over
-a field \(K\) of characteristic zero. Write
+For a nondegenerate form \(q\) on a \(K\)-vector space \(V\), write
 \[
-   X_q=\{q\ne0\},\qquad \mathcal O(X_q)=K[V,q^{-1}],
-   \qquad G_q=\SO(q)\times\Gm .
+ X_q=\{q\ne0\},\qquad \mathcal O(X_q)=K[V,q^{-1}],
+ \qquad G_q=\SO(q)\times\Gm .
 \]
-The two factors of \(G_q\) act by isometries and scalar multiplication,
-respectively. The trace \(\Lq\) is the unique \(G_q\)-invariant linear
-functional on \(\mathcal O(X_q)\) taking \(1\) to \(1\). Its kernel is a
-Mathieu--Zhao subspace if every \(f\) with \(\Lq(f^m)=0\) for all
-\(m\ge1\) satisfies \(\Lq(hf^m)=0\) for all sufficiently large \(m\), for
-each fixed \(h\in\mathcal O(X_q)\).
+The two factors act by isometries and scalar multiplication.
+The trace \(\Lq\) is the unique \(G_q\)-invariant linear functional
+taking \(1\) to \(1\). Call \(F\) \emph{pure} if \(\Lq(F^m)=0\) for
+every \(m\ge1\). The kernel is a Mathieu--Zhao subspace if, for every
+pure \(F\) and every fixed multiplier \(h\in\mathcal O(X_q)\), the
+marked moments \(\Lq(hF^m)\) vanish for all sufficiently large \(m\).
 
 \begin{theorem}\label{thm:main}
-Let \(K\) have characteristic zero and let \(q\) be nondegenerate of
+Let \(K\) have characteristic zero and \(q\) be nondegenerate of
 dimension \(N\ge1\). Then
 \[
    \boxed{\ker\Lq\text{ is a Mathieu--Zhao subspace}
           \quad\Longleftrightarrow\quad N\le2.}
 \]
-For \(N\ge3\) there is an explicit \(F\in\mathcal O(X_q)\) such that
-\[
-   \Lq(F^m)=0,\qquad \Lq(q^{N-2}F^m)\ne0\qquad(m\ge1).
-\]
-Over an algebraic closure, \(F\) is not a unit times an \(e\)-th power
-for any \(e\ge2\). In dimension three the function \(P\) obtained from
-the formula above by replacing \(z^2\) with a one-dimensional
-orthogonal summand of \(q\) already satisfies these conclusions.
+For \(N\ge3\) there is an explicit pure \(F\in\mathcal O(X_q)\) for
+which \(\Lq(q^{N-2}F^m)\ne0\) for every \(m\ge1\). The function \(F\)
+is not a unit times a proper power over an algebraic closure.
 \end{theorem}
 
-In dimension two the split coordinate ring is Laurent, and the trace
-takes its constant term. Starting in dimension three, write \(q=A+B\)
-as an orthogonal sum with \(A\) of rank two and \(B\) of rank \(M=N-2\).
-The ratio \(B/q\) is nonconstant and has moments
-\(M/(M+2j)\), and \(q\) itself has nonzero scalar weight. Thus the trace
-on expressions in \(q\) and \(B/q\) can be computed by a polynomial
-integral followed by Laurent coefficient extraction. The substitution
-\(w=(1+q)t\) makes the endpoint contribution vanish to high order.
-For \(k\ge M\), the trace of \(P^k\) asks for a coefficient above
-the degree of the resulting polynomial. Multiplication by \(q^M\)
-moves the extraction exactly to its leading coefficient.
+In dimensions one and two the split trace is a Laurent constant term.
+For \(N\ge3\), take an orthogonal splitting \(q=A+B\) of ranks \(2\)
+and \(M=N-2\). The ratio \(B/q\) has moments \(M/(M+2j)\).
+Scalar invariance then reduces the mixed trace to a Laurent
+coefficient of a polynomial integral. At the endpoint of that
+integral, the pure moment selects a coefficient above the degree
+of a polynomial, and multiplication by \(q^M\) selects the leading
+coefficient. The same calculation identifies the least polynomial
+degree needed to detect a failure for this \(F\).
 
-The endpoint calculation adapts Long's construction on the complex
-normalizer quotient \(\mathrm{SL}_2/N(T)\) \cite[Prop.~5.1]{Long}.
-Here \(q\) is invertible on the space itself, and the rotation recurrence
-gives the density \(M t^{M-1}\) in every dimension over the original
-field. Over \(\mathbb C\), the dimension cutoff for the kernel also
-follows from the general reductive homogeneous-space criterion of
-\cite[Thm.~1.1]{vanRijn}. Indeed for \(N\ge3\) the derived subgroup
-contains the full rotation group, which acts nontrivially on the
-complement, whereas in dimensions one and two \(G_q\) is a torus.
-The argument here produces the witness and its marked moments
-directly over \(K\).
+Over \(\mathbb C\), Long's spherical classification already gives the
+dimension cutoff and the existence of fixed detecting multipliers
+\cite[Thm.~1.1]{Long}. To see that it applies, write
+\(q=2xy+q_0(z)\) for \(N\ge3\), with \(b_0\) the symmetric bilinear
+form of \(q_0\). The isometries
+\[
+ (x,y,z)\longmapsto
+ \bigl(x,\,y-b_0(z,u)-xq_0(u)/2,\,z+xu\bigr)
+ \qquad(u\in\mathbb C^{N-2})
+\]
+form a unipotent group normalized by the torus scaling \(x,y\)
+inversely. Together with the scalar torus they form a connected
+solvable subgroup of \(G_q\). On \(x\ne0\) they can set \(z=0\),
+\(q=1\), and \(x=1\), so a Borel subgroup has an open orbit in \(X_q\).
+The stabilizer of a norm-one vector is reductive. The scalar factor in
+the stabilizer is \(\pm1\), and its identity component is the special
+orthogonal group of the vector's orthogonal complement. Since the
+derived subgroup contains the rotations, it acts nontrivially on
+\(X_q\) for \(N\ge3\). For \(N\le2\), \(G_q\) is a torus.
+The same complex cutoff follows from the general criterion in
+\cite[Thm.~1.1]{vanRijn}.
+
+The endpoint substitution here adapts Long's calculation on
+\(\mathrm{SL}_2/N(T)\) \cite[Prop.~5.1]{Long}. The rotation recurrence
+supplies the moments over the original characteristic-zero field.
+It gives explicit witnesses there, as well as the exact cutoff for
+their polynomial multipliers.
 
 \section{The trace and the two low dimensions}\label{sec:positive}
 
@@ -198,92 +204,326 @@ zero whenever \(\ell\ne0\). This allows us to compute the trace of
 any Laurent expression in \(q\) with polynomial coefficients in \(S\)
 by applying \eqref{eq:beta} to its constant coefficient.
 
-\section{The coefficient at the endpoint}\label{sec:endpoint}
+\section{The endpoint calculation and the witness}\label{sec:endpoint}
 
-Define the regular function
-\begin{equation}\label{eq:phase}
-   P=q^{-1}(1+q)\bigl(1-(1+q)^2S\bigr)^2
-    =\frac{(q+1)\bigl(q-(q+1)^2B\bigr)^2}{q^3}.
-\end{equation}
-The factor \(1-(1+q)^2S\) becomes \(1-w^2\) after writing \(S=t^2\) and
-substituting \(w=(1+q)t\). Its \(2k\)-th power has a zero of order
-\(2k\) at \(w=1\). That order is what allows coefficient extraction
-using only the value of the antiderivative at \(1\).
+Put \(W=1-(1+q)^2 S\). For integers \(\alpha,\gamma\ge1\) and
+\(\beta\ge0\), define
+\[
+ F_{\alpha,\beta,\gamma}=q^{-\alpha}(1+q)^\beta W^\gamma,\qquad
+ C_{k,j}=M\int_0^1 w^{M+2j-1}(1-w^2)^k\,dw
+ \quad(k,j\ge0).
+\]
+The constants \(C_{k,j}\) are positive rationals.
 
 \begin{proposition}\label{prop:moments}
-For \(k\ge1\) and any integer \(\ell\ge-k\),
+For \(m\ge1\), \(j\ge0\), and \(\ell\ge(\alpha-\gamma)m\),
 \begin{equation}\label{eq:moments}
-   \Lq(q^\ell P^k)=J_{M,k}\binom{k-M}{k-\ell},
-   \qquad J_{M,k}=M\int_0^1 w^{M-1}(1-w^2)^{2k}\,dw \in\mathbb Q_{>0}.
+ \Lq(q^\ell S^jF_{\alpha,\beta,\gamma}^{\,m})
+    =C_{\gamma m,j}\binom{\beta m-M-2j}{\alpha m-\ell}.
 \end{equation}
-The binomial coefficient is the coefficient of degree \(k-\ell\) in
-\((1+U)^{k-M}\) expanded at \(U=0\), with coefficient zero in negative
-degrees.
+Here \(\binom uv=[U^v](1+U)^u\), with value zero for \(v<0\). At
+\(\ell=(\alpha-\gamma)m-1\), the left-hand side minus the binomial
+expression is \(M(-2)^{\gamma m}/(\gamma m+1)\).
 \end{proposition}
 
 \begin{proof}
-Write \(U\) for the formal variable representing \(q\), and set \(T=1+U\).
-Combining scalar weight extraction with \eqref{eq:beta} gives
+Let \(U\) be the formal variable for \(q\), and set \(T=1+U\),
+\(k=\gamma m\), and \(n=\alpha m-\ell\).
+Scalar weights and \eqref{eq:beta} give
 \[
-  \Lq(q^\ell P^k)
-   =[U^{k-\ell}]\,T^k M\int_0^1 t^{M-1}(1-T^2t^2)^{2k}\,dt .
+ \begin{aligned}
+ \Lq(q^\ell S^jF_{\alpha,\beta,\gamma}^{\,m})
+ &= [U^n]\,T^{\beta m}M\int_0^1 t^{M+2j-1}(1-T^2t^2)^k\,dt\\
+ &= [U^n]\,T^{\beta m-M-2j}J(T),\\
+ J(T)&=M\int_0^T w^{M+2j-1}(1-w^2)^k\,dw .
+ \end{aligned}
 \]
-Let
-\[
-   J(T)=M\int_0^T w^{M-1}(1-w^2)^{2k}\,dw \in \mathbb Q[T].
-\]
-Substitution in each monomial of the integral rewrites the expression
-inside the coefficient as \(T^{k-M}J(T)\). This is a polynomial even
-for \(k<M\), since \(T^M\) divides \(J(T)\). Also \(J'(T)\) is divisible
-by \((T-1)^{2k}\), so \(J(T)-J(1)\) is divisible by \((T-1)^{2k+1}\).
-In the expansion at \(U=0\), the factor \(T^{k-M}\) has constant
-coefficient \(1\). Since \(k-\ell\le2k\), we may replace \(J(T)\) by
-\(J(1)\) at the coefficient in question. This proves
-\eqref{eq:moments}. The integrand is strictly positive on \(0<w<1\)
-as a real polynomial, so its rational integral is nonzero in \(K\).
+The substitution \(w=Tt\) is valid term by term.
+The derivative \(J'(T)\) has initial term \(M(-2)^k(T-1)^k\) at
+\(T=1\). Thus \(J(1+U)-J(1)\) starts with
+\(M(-2)^k U^{k+1}/(k+1)\). The factor \(T^{\beta m-M-2j}\)
+has constant coefficient \(1\) at \(U=0\), so the error first
+appears at \(n=k+1\). For \(n\le k\) the retained constant
+\(J(1)=C_{k,j}\) gives \eqref{eq:moments}.
 \end{proof}
 
-For \(k\ge M\), the polynomial \((1+U)^{k-M}\) has degree \(k-M\).
-Its coefficient of \(U^k\) is zero and its coefficient of
-\(U^{k-M}\) is \(1\). Consequently
-\[
-   \Lq(P^k)=0,\qquad \Lq(q^M P^k)=J_{M,k}\qquad(k\ge M).
-\]
-When \(M=1\), this already proves \eqref{eq:opening}. The exponent
-\(M\) is also the smallest positive \(a\) such that all positive
-powers of \(P^a\) have trace zero. In fact, for \(1\le a<M\),
-the first moment of \(P^a\) is
-\((-1)^a\binom{M-1}{a}J_{M,a}\ne0\).
+Take
+\begin{equation}\label{eq:uniform}
+ F=F_{M,M,M+1}=\left(\frac{1+q}{q}\right)^M W^{M+1}.
+\end{equation}
+With \(j=0\), the upper index in \eqref{eq:moments} is \(Mm-M\).
+The choices \(\ell=0,M\) give, respectively,
+\begin{equation}\label{eq:witness}
+ \Lq(F^m)=0,\qquad \Lq(q^M F^m)=C_{(M+1)m,0}.
+\end{equation}
+The same calculation with \(M=1\) and \(F_0=F_{1,1,1}\) proves
+\eqref{eq:opening}, and applies to every nondegenerate ternary form
+using a one-dimensional summand \(B\).
 
-To obtain a function with a simple zero in every dimension, put
-\(F=P^M(1+P)\). All exponents in
-\(F^m=\sum_{r=0}^m\binom mr P^{Mm+r}\) are at least \(M\). Thus
-\[
-   \Lq(F^m)=0,\qquad
-   \Lq(q^M F^m)=\sum_{r=0}^m\binom mr J_{M,Mm+r}\in\mathbb Q_{>0}
-   \qquad(m\ge1).
-\]
-To rule out a proper power up to a unit, work over an algebraic closure
-of \(K\) and restrict to the punctured \(x_1\)-axis. There \(q=a_1x_1^2\)
-and \(P=1+q^{-1}\). Each root of \(a_1x_1^2=-1/2\) is nonzero with
-\(dq/dx_1\ne0\). At such a root \(1+P=2+q^{-1}\) has a simple zero
-and \(P=-1\), so \(F\) has a simple zero on the axis. A unit restricts
-to a unit, and an \(e\)-th power has zero multiplicities divisible by
-\(e\). In the ternary case the same argument gives a simple zero of
-\(P\) at a root of \(a_1x_1^2=-1\).
-This proves the remaining claims of Theorem~\ref{thm:main}.
+To check the power assertion, work over an algebraic closure.
+Along the punctured \(x_1\)-axis, \(W=1\), and \(1+q\) has a simple
+zero at a point with \(q=-1\). The restriction of
+\(F_{\alpha,\beta,\gamma}\) there has vanishing order \(\beta\).
+At a point with \(q=1\) and \(B=1/4\), \(W=0\) and \(dW=-4\,dB\).
+One can fix \(A=3/4\) and vary just \(z_1\) through a nonzero root of
+\(b_1z_1^2=1/4\), so \(W\) has a simple zero along that line.
+The restriction of \(F_{\alpha,\beta,\gamma}\) has order \(\gamma\)
+there. A unit restricts to a unit on both lines where \(q\ne0\).
+Any proper power up to a unit therefore has exponent dividing
+both \(\beta\) and \(\gamma\). For \(F\) these are \(M,M+1\),
+and for \(F_0\) they are \(1,1\). This completes
+Theorem~\ref{thm:main}.
 
-\begin{corollary}
-For this family of quadratic complements, the Mathieu--Zhao property
-of the trace kernel is invariant under every field extension.
-When it fails, the same functions \(F,q^{N-2}\) witness failure over
-every extension.
+The divisor \(q=0\) is geometrically irreducible since a reducible
+quadratic has rank at most two. The numerator of \(W\) is \(-B\)
+modulo \(q\), so \(W\) has a simple pole there. The pole order of
+\(F_{\alpha,\beta,\gamma}\) is \(\alpha+\gamma\). This gives
+\(2M+1\) for \(F\) and two for the ternary \(F_0\).
+
+\begin{corollary}\label{cor:scalar-extension}
+For quadratic complements the Mathieu--Zhao property of the trace
+kernel is invariant under every field extension. When it fails,
+the same phase and multiplier witness the failure over the
+extension.
 \end{corollary}
 
 \begin{proof}
-Dimension and nondegeneracy are unchanged by scalar extension.
-The marked moments displayed above are nonzero rational numbers,
-and the normalized trace commutes with extension.
+Dimension and nondegeneracy are unchanged by extension. The trace
+commutes with scalar extension and the marked moments in
+\eqref{eq:witness} are nonzero rational numbers.
+\end{proof}
+
+\section{The least degree of a detecting multiplier}\label{sec:cutoff}
+
+\begin{proposition}\label{prop:average}
+For a phase \(G\) invariant under the block isometries
+\(O(A)\times O(B)\), every regular multiplier \(h\) has a block
+average \(\pi h\in K[q,q^{-1},S]\) such that
+\begin{equation}\label{eq:average}
+ \Lq(hG^m)=\Lq((\pi h)G^m)\qquad(m\ge1).
+\end{equation}
+If \(h\) is polynomial of degree at most \(D\), the average is a
+linear combination of \(q^\ell S^j=q^{\ell-j}B^j\) with
+\(0\le j\le\ell\le\lfloor D/2\rfloor\).
+\end{proposition}
+
+\begin{proof}
+Block isometries preserve \(\Lq\) by uniqueness, since they normalize
+the rotations and commute with scalars. For a polynomial \(h\), take
+its Reynolds projection in the space of polynomials of degree at
+most \(\deg h\). Complete reducibility for the identity component,
+followed by averaging over the finite component group, gives this
+projection \cite[Cor.~22.43]{Milne}. The linear functional
+\(h\mapsto\Lq(hG^m)\) is block invariant, which proves \eqref{eq:average}.
+For \(h=q^{-r}p\) with \(p\) polynomial, use the same projection on
+\(q^{-r}\) times the space of polynomials of degree at most \(\deg p\).
+
+The polynomial invariants of the block group are \(K[A,B]\).
+Over an algebraic closure choose unit vectors \(v_A,v_B\) in the two
+blocks. Every pair on \(AB\ne0\) is equivalent under block isometries
+to \((s v_A,t v_B)\), with \(s^2=A,\ t^2=B\).
+An invariant polynomial restricts to an even polynomial in each of
+\(s,t\), by the sign symmetries. Thus it is a polynomial in \(A,B\)
+on a dense locus. Algebraic independence of \(A,B\) gives descent of
+its coefficients to \(K\). The degree filtration is preserved, and
+rewriting \(A=q-B\) gives the stated monomials.
+\end{proof}
+
+\begin{theorem}\label{thm:cutoff}
+For the phase \(F\) in \eqref{eq:uniform} and the double-pole ternary
+phase \(F_0\), the least degree of a polynomial multiplier detecting
+infinitely many orders is \(2M\). For every integer \(0\le D<2M\),
+the least positive \(m_0\) for which all polynomial multipliers of
+degree at most \(D\) vanish at every order \(m\ge m_0\) is
+\[
+ m_0=1+\left\lceil\frac{2\lfloor D/2\rfloor}{M}\right\rceil .
+\]
+\end{theorem}
+
+\begin{proof}
+Set \(J=\lfloor D/2\rfloor\). By \eqref{eq:average} it suffices to
+consider \(q^\ell S^j\) with \(0\le j\le\ell\le J\).
+In \eqref{eq:moments}, the upper index \(Mm-M-2j\) is
+nonnegative for \(m\ge m_0\). The lower index \(Mm-\ell\) exceeds
+it by \(M+2j-\ell>0\). This proves the cutoff. If \(J>0\), take
+\(h=B^J=q^J S^J\) at \(m=\lceil2J/M\rceil\). The upper index is
+strictly negative and the lower one is positive, so the moment is
+nonzero. For \(J=0\), the claimed cutoff is already \(1\).
+Finally \(q^M\) has degree \(2M\) and detects all orders by
+\eqref{eq:witness}, or by \eqref{eq:opening} for \(F_0\).
+\end{proof}
+
+For example, for the uniform phase in dimension five, a multiplier
+needs degree at least six to detect infinitely many orders. All
+polynomial multipliers of degree at most five vanish from order
+three, and \(B^2\) detects the second order.
+
+\paragraph{A linear multiplier in the isotropic ternary case.}
+Write \(q=2xy+az^2\), with \(a\in K^\times\), and set
+\[
+ p=(1+x)^3\frac{y}{q}-\frac{(1+x)(2+x)}2 .
+\]
+Then for every \(m\ge1\),
+\begin{equation}\label{eq:isotropic-linear}
+ \Lq(p^m)=0,\qquad
+ \Lq(xp^m)=2^{-m}\int_0^1(1-w^2)^m\,dw\ne0 .
+\end{equation}
+Indeed the hyperbolic torus gives opposite weights to \(x\) and
+\(u=y/q\). The derivation \(az\,\partial_y-x\,\partial_z\) applied
+to \(x^{k-1}y^kz/q^k\) gives
+\((2k+1)\Lq((xu)^k)=k\Lq((xu)^{k-1})\). Thus on polynomials in
+\(x,u\) the trace equals the constant term in \(x\) after substituting
+\(u=(1-t^2)/(2x)\), integrated over \(0\le t\le1\).
+This follows by checking the moments with equal exponents, for
+which \(2^{-k}\int_0^1(1-t^2)^k\,dt\) satisfies the same recurrence.
+With \(T=1+x\) the substitution gives
+\(p=T(1-T^2t^2)/(2x)\). For the two moments in
+\eqref{eq:isotropic-linear}, the coefficients sought have degrees
+\(m\) and \(m-1\) in
+\(2^{-m}T^{m-1}\int_0^T(1-w^2)^m\,dw\).
+The integral differs from its value at \(T=1\) first in order
+\(m+1\) in \(x\). The retained polynomial \(T^{m-1}\) has zero
+coefficient at degree \(m\) and leading coefficient \(1\).
+
+On the line \(y=1,z=0\), the restriction \(p=(1+x)/(2x)\) has a
+simple zero at \(x=-1\), so \(p\) is geometrically nonpower up to
+units. A constant multiplier gives zero by purity. Hence the
+least detecting polynomial degree among all witnesses on an
+isotropic ternary complement is one. For the double-pole phase
+\(F_0\) on the same complement, Theorem~\ref{thm:cutoff} gives two.
+
+\section{A test for a fixed regular multiplier}\label{sec:tail}
+
+Even above the degree threshold, terms of a multiplier can cancel.
+The following test accounts for those cancellations.
+
+\begin{proposition}\label{prop:tail}
+Let \(F\) be as in \eqref{eq:uniform}, put \(\gamma=M+1\), and
+write \(\pi h=\sum_{\ell,j}c_{\ell,j}q^\ell S^j\) for a fixed
+regular multiplier \(h\). Put \(a=M/2\). For all sufficiently large \(m\),
+\[
+  \Lq(hF^m)=C_{\gamma m,0}R_h(m),\qquad
+  R_h(X)=
+    \sum_{\ell\ge M+2j} c_{\ell,j}
+    \frac{(a)_j}{(a+\gamma X+1)_j}
+    \binom{MX-M-2j}{\ell-M-2j}.
+\]
+Here \((u)_j\) is the rising factorial, with \((u)_0=1\), and the
+binomial in \(R_h\) is a polynomial in \(X\).
+The marked moments eventually vanish exactly when \(R_h=0\)
+as a rational function. Otherwise they are nonzero at every
+sufficiently large order.
+\end{proposition}
+
+\begin{proof}
+The finite support of \(\pi h\) lies in the range of
+\eqref{eq:moments} once \(m\) is large. The upper indices are then
+nonnegative. Terms with \(\ell<M+2j\) vanish, and for the other terms
+one can use the complementary binomial index \(\ell-M-2j\).
+Integration of the derivative of \(w^{M+2j}(1-w^2)^{k+1}\) gives
+\[
+ (M+2j)C_{k,j}=(M+2j+2k+2)C_{k,j+1}.
+\]
+Consequently \(C_{k,j}/C_{k,0}=(a)_j/(a+k+1)_j\).
+This proves the formula. The constants \(C_{\gamma m,0}\) are
+nonzero and a nonzero rational function has only finitely many zeros.
+\end{proof}
+
+The block average needed in the test can be found by linear algebra.
+On \(q^{-r}\) times the polynomials of degree at most \(D\), where
+\(r\) clears the denominator of \(h\), take the quotient by the images
+of the block rotation derivations and of one coordinate reflection
+minus the identity in each block. The rotation images remove the
+nontrivial simple summands for the identity component. The two
+reflection differences remove the remaining nontrivial components
+of the finite group. The unique invariant representative in the
+quotient is \(\pi h\). Clearing denominators in \(R_h\) then gives
+a polynomial identity test over \(K\).
+
+For the uniform ternary phase \(F=F_{1,1,2}\), the multiplier
+\(4q^4S+15q^3S-q\) has a nonzero first moment, yet its marked moments
+vanish for all \(m\ge3\). Its rational test is
+\((4(X-3)+15)/(4X+3)-1=0\), with the cancellation at \(m=3\)
+given directly by \eqref{eq:moments}.
+
+\section{Pole order and another witness}\label{sec:poles}
+
+\begin{proposition}\label{prop:product}
+Within the family \(F_{\alpha,\beta,\gamma}\) with \(\gamma\ge\alpha\),
+purity holds exactly when \(\beta\ge M\) and \(\alpha\ge\beta\).
+For a pure phase in this family, there exists a regular multiplier
+detecting infinitely many orders exactly when \(\alpha=\beta\)
+or \(\alpha=\gamma\). The least pole order among the geometrically
+nonpower witnesses in this family is two for \(M=1\) and
+\(2M+1\) for \(M\ge2\).
+\end{proposition}
+
+\begin{proof}
+Set \(\ell=j=0\) in \eqref{eq:moments}. If \(\beta<M\), the
+upper index at \(m=1\) is negative and the coefficient is nonzero.
+For \(\beta\ge M\), purity requires and follows from
+\(\alpha\ge\beta\). If \(\alpha=\beta\), \(q^M\) detects every order.
+If \(\gamma>\alpha>\beta\), every term of an averaged regular
+multiplier eventually falls within the range of \eqref{eq:moments}
+and has lower index above the nonnegative upper one.
+For \(\gamma=\alpha>\beta\), \(q^{-1}\) picks the first coefficient
+past that range, so its moment is exactly
+\(M(-2)^{\alpha m}/(\alpha m+1)\) at every order. In this case all
+polynomial multipliers eventually vanish, since their averaged terms
+have \(\ell\ge0\).
+
+For a pure phase, \(\gamma\ge\alpha\ge\beta\ge M\), so its pole
+order is at least \(2M\). Equality forces all three exponents to
+be \(M\). This gives the ternary phase for \(M=1\), and a proper
+power for \(M\ge2\). The phase in \eqref{eq:uniform} attains the next
+integer \(2M+1\).
+\end{proof}
+
+A polynomial perturbation gives pole order \(2M\) in dimensions at
+least six, with the same minimum multiplier degree.
+
+\begin{proposition}\label{prop:perturb}
+For \(M\ge4\), the phase
+\[
+   F_*=F_{M,M,M}\bigl(1+B(M-1+Mq)\bigr)
+\]
+is pure, geometrically nonpower up to a unit, and has pole order
+\(2M\). The multiplier \(q^M\) detects every order, and \(2M\) is the
+least polynomial degree detecting infinitely many orders.
+\end{proposition}
+
+\begin{proof}
+In the \(m\)-th power of the added factor the monomials are
+\(B^j q^r=q^{j+r}S^j\), with \(0\le r\le j\le m\), and their
+coefficients are \(\binom mj\binom jr(M-1)^{j-r}M^r\).
+For \(m\ge2\), the upper index \(Mm-M-2j\) in \eqref{eq:moments}
+is nonnegative, since it is at least \((M-2)m-M\).
+The pure lower index exceeds it by \(M+j-r\).
+For multiplier \(q^M\) the difference is \(j-r\), so precisely
+the terms with \(j=r\) contribute, all positively. At \(m=1\)
+the two added pure terms cancel because
+\[
+  (M-1)\binom{-2}{M-1}+M\binom{-2}{M-2}=0.
+\]
+Both added terms have negative lower index for the \(q^M\)-marked
+moment at \(m=1\), leaving \(C_{M,0}\).
+
+Modulo \(q\), the added factor has constant term \(1\), so the pole
+order stays \(2M\). Over an algebraic closure it has a simple zero
+on the smooth norm level \(q=1\) at a point with \(B=-1/(2M-1)\).
+Indeed \(A\) and \(B\) are nonzero there, so their differentials are
+independent and \(dB\) is nonzero on the tangent space to \(q=1\).
+The added factor has differential \((2M-1)dB\) on that tangent
+space, and the base phase is nonzero at the point. The resulting
+simple zero excludes a proper power up to a unit.
+
+For a polynomial multiplier of degree \(D<2M\), its averaged terms
+are \(q^\ell S^{j_0}\) with \(j_0\le\ell\le\lfloor D/2\rfloor\).
+Together with \(B^j q^r\) in the power expansion this makes the
+lower index exceed the upper one by \(M+2j_0-\ell+j-r>0\).
+The upper index is nonnegative once
+\((M-2)m\ge M+2\lfloor D/2\rfloor\). Thus every such multiplier
+eventually vanishes, while \(q^M\) detects all orders.
 \end{proof}
 
 \paragraph{AI assistance and review.}

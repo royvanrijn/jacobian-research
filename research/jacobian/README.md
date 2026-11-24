@@ -41,7 +41,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Closed inverse series and exact compressed jet degrees at index17 | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_SEVENTEEN_INVERSE_SERIES.md) |
 | Successive restart universality and exact all-round equivalence | Internal result | proved | [Source](subtree-shuffling/SUCCESSIVE_RESTART_UNIVERSALITY.md) |
 
-**Computed obligations:** 18 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 20 unresolved; 5 resolved within their exact scope.
 
 
 Scope limits:
@@ -70,6 +70,8 @@ Scope limits:
 - A closed central-binomial inverse slice proves every weighted inverse coefficient nonzero at every grade for p>=17. Compressed triangular jets have dimension17M+4 and inverse degree exactly2M+1, with exact index17 for M>=16. The unresolved length interval4–16 is unchanged.
 - Successive parallel restarts with unrestricted depth contain every finite universal inverse witness. An all-round207 ceiling over the retained exact-index4 scaffold is therefore equivalent to the unrestricted207 bound, even after complete helper-basis saturation. The earlier sharp207 result for its specified two-layer architecture is unchanged.
 - For every p>=17 the explicit inverse slice gives M admissible rounds adding 17M coordinates over a fixed-coordinate scaffold, with exact inverse degree max(D_*,2M+1). Complete-basis saturation also has no uniform ceiling in this range.
+- The exact inverse-line data of the 48-variable cubic give thirteen exact-index-3 grade-prefix witnesses with inverse degrees 5,7,...,29 in dimensions 3,4,6,9,13,19,28,38,42,45,46,47,48. They supply the nonvanishing side of the length-three shuffle threshold directly.
+- The candidate cubic index-four ceiling 207, also for the retained scaffold with arbitrary restart rounds, is equivalent to the 103 weighted class identities U_104 through U_206. Any failing grade in the block gives an exact-index-four triangular witness of inverse degree 209 through 413.
 
 Tracked obligations (computed states):
 
@@ -82,5 +84,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective.](../hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md) — GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION
 - **mathematical / open:** [Realize or universally exclude alternating generic monodromy for polynomial plane Keller maps beyond the proved A4 exclusions. Known dimension-three alternating realizations settle the earlier abstract action question; the reported natural A5 result remains a primary-source verification obligation here.](../arithmetic/KNOT_HURWITZ_KELLER_MOONSHOT_AUDIT.md) — JAC-PLANE-ALTERNATING-POLYNOMIAL-REALIZATION
 - **mathematical / open:** [Cubic eventual shuffle membership holds forp<=3 and fails for everyp>=17. Determine the least failing length in[4,17], particularly whether fixedp4 has a finite dimension-uniform inverse bound or an unbounded inverse family. The58-variable index4 example gives only a lower bound207; the7/9 fibre obstructions and scalar restart barriers do not decide this alternative.](subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md) — GAP-JAC-SUBTREE-SHUFFLE-UNIFORM
+- **mathematical / open:** [Decide the weighted cubic index-four classes in grades 104 through 206. This finite block is equivalent to the candidate sharp inverse-degree ceiling 207.](subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md) — GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

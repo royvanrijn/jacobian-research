@@ -4,7 +4,7 @@ Let \(r(N)\) count ordered representations of \(N\) as the sum of two positive s
 \[
  a^2b^3+c^2d^3=N
 \]
-the triple \((b,c,d)\) determines at most one positive \(a\), and it satisfies \(c^2d^3\equiv N\bmod b^3\). The congruence can be counted even after dropping the squarefree and positivity-of-the-quotient restrictions. The pointwise \(N^{2/5+\varepsilon}\) benchmark and the dyadic cube-modulus projection are discussed in Chojecki's note. [Erdős #943](https://www.erdosproblems.com/943) · [Chojecki, Theorem 1.2 and §8](https://www.ulam.ai/research/erdos943.pdf)
+the triple \((b,c,d)\) determines at most one positive \(a\), and it satisfies \(c^2d^3\equiv N\bmod b^3\). The congruence can be counted even after dropping the squarefree and positivity-of-the-quotient restrictions. Blomer and Schöbel obtained the pointwise \(N^{2/5+\varepsilon}\) benchmark in 2013. Chojecki's 2026 note gives that exponent and discusses the dyadic cube-modulus projection. [Blomer–Schöbel, Corollary 2](https://www.researchgate.net/publication/268024970_Twins_of_powerful_numbers) [Erdős #943](https://www.erdosproblems.com/943) · [Chojecki, Theorem 1.2 and §8](https://www.ulam.ai/research/erdos943.pdf)
 
 ## Completion and lifting
 

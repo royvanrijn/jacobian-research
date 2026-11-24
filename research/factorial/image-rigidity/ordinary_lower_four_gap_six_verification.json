@@ -1,0 +1,94 @@
+{
+  "support": [
+    4,
+    10
+  ],
+  "first_analytic_terminal": 10000,
+  "assurance": "internal mathematical proof and reproducible contour and finite-field checks",
+  "contour_replay": {
+    "compiler": "g++ 13.3.0",
+    "options": [
+      "-std=c++17",
+      "-O3",
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ],
+    "arithmetic": "outward-rounded binary64 intervals",
+    "boxes": [
+      {
+        "saddle": "upper",
+        "piece": "local",
+        "tests": 6023147,
+        "maximum_depth": 31
+      },
+      {
+        "saddle": "upper",
+        "piece": "horizontal left",
+        "tests": 157075,
+        "maximum_depth": 25
+      },
+      {
+        "saddle": "upper",
+        "piece": "horizontal right",
+        "tests": 2769,
+        "maximum_depth": 19
+      },
+      {
+        "saddle": "upper",
+        "piece": "split vertical",
+        "tests": 101885,
+        "maximum_depth": 24
+      },
+      {
+        "saddle": "lower",
+        "piece": "local",
+        "tests": 17513,
+        "maximum_depth": 22
+      },
+      {
+        "saddle": "lower",
+        "piece": "horizontal left",
+        "tests": 6707,
+        "maximum_depth": 18
+      },
+      {
+        "saddle": "lower",
+        "piece": "horizontal right",
+        "tests": 19479,
+        "maximum_depth": 24
+      },
+      {
+        "saddle": "lower",
+        "piece": "split vertical",
+        "tests": 509853,
+        "maximum_depth": 27
+      },
+      {
+        "saddle": "lower",
+        "piece": "left vertical",
+        "tests": 137,
+        "maximum_depth": 7
+      },
+      {
+        "saddle": "lower",
+        "piece": "origin",
+        "tests": 203,
+        "maximum_depth": 9
+      }
+    ],
+    "total_box_tests": 6838768,
+    "boundary_parameter_tests": 132
+  },
+  "prefix_replay": {
+    "python_flint": "0.9.0",
+    "prime": 1000003,
+    "first_terminal": 2,
+    "last_terminal": 9999,
+    "coprime_pairs": 9998
+  },
+  "sha256": {
+    "ORDINARY_LOWER_FOUR_GAP_SIX.md": "b13c7712936c4daee90dee4a2a9ae1ad5581c13938332d93077ac36b8156e748",
+    "verify_ordinary_lower_four_gap_six_contours.cpp": "bf7f41bb0ae8c2409d12493c92e7b3121647e2ac83ee13578a48535aea7cd99a",
+    "verify_ordinary_lower_four_gap_six_prefix.py": "648713ab1f7175cb8ff4a15e23881f2961f4874156eba53a3f845013bd83e303"
+  }
+}

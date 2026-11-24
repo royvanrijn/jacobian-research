@@ -36,6 +36,17 @@ private theorem rotation_apply (a : Fin 2 → K) (b : Fin M → K) (i : Fin 2) (
       (C (b j) * z j) * pderiv (Sum.inl i) f - (C (a i) * x i) * pderiv (Sum.inr j) f := by
   simp [rotation, smul_eq_mul]
 
+/-- The action of the plane-height rotation on a coordinate generator. -/
+theorem rotation_X (a : Fin 2 → K) (b : Fin M → K) (i : Fin 2) (j : Fin M)
+    (k : Fin 2 ⊕ Fin M) :
+    rotation a b i j (X k) =
+      (if k = Sum.inl i then C (b j) * X (Sum.inr j) else 0) -
+        (if k = Sum.inr j then C (a i) * X (Sum.inl i) else 0) := by
+  rw [rotation_apply]
+  classical
+  by_cases hk₁ : k = Sum.inl i <;> by_cases hk₂ : k = Sum.inr j <;>
+    simp [x, z, hk₁, hk₂]
+
 private theorem height_pderiv_plane (b : Fin M → K) (i : Fin 2) :
     pderiv (Sum.inl i) (heightNorm b) = 0 := by
   simp [heightNorm]

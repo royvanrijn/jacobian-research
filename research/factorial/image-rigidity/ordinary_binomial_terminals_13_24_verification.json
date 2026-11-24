@@ -1,0 +1,191 @@
+{
+  "checker_sha256": "56bf6730e0cf56ca8bdf5ade0941f0b19e1eb114e36f9cd0eb91059bd4f5d9ab",
+  "primes": [
+    1000003,
+    1000033
+  ],
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "terminals": [
+    {
+      "annulus_radii": [
+        17,
+        19
+      ],
+      "case_stream_sha256": "6f884f25205a53912dd457d5c52b8b9062d19b283b1257ec4a52756b698bd0e7",
+      "cases": 28845,
+      "constant_gap_cutoff": 10,
+      "fallbacks": [],
+      "gap_cutoff": 73,
+      "maximum_factorial_argument": 11219,
+      "terminal": 13
+    },
+    {
+      "annulus_radii": [
+        19,
+        20
+      ],
+      "case_stream_sha256": "0b1272ec31a0050ad145a9f74badd36f38d42b318e0c7dfc3970db64e15b2c03",
+      "cases": 38809,
+      "constant_gap_cutoff": 10,
+      "fallbacks": [],
+      "gap_cutoff": 81,
+      "maximum_factorial_argument": 14546,
+      "terminal": 14
+    },
+    {
+      "annulus_radii": [
+        20,
+        22
+      ],
+      "case_stream_sha256": "c6a3a8630ff4a08a25454b3b6e00fddc2b78882733fa9bd776e3f154dff21b15",
+      "cases": 50829,
+      "constant_gap_cutoff": 10,
+      "fallbacks": [],
+      "gap_cutoff": 89,
+      "maximum_factorial_argument": 18465,
+      "terminal": 15
+    },
+    {
+      "annulus_radii": [
+        22,
+        23
+      ],
+      "case_stream_sha256": "cb2fa342b7550c9d081160411bc1ed259ea53c4bc0c4e0c2b268220cc76cc02b",
+      "cases": 65097,
+      "constant_gap_cutoff": 10,
+      "fallbacks": [],
+      "gap_cutoff": 97,
+      "maximum_factorial_argument": 23024,
+      "terminal": 16
+    },
+    {
+      "annulus_radii": [
+        23,
+        25
+      ],
+      "case_stream_sha256": "ec53365773ea67f5d803f73e98920c10fd9012d35d293b44cafc6da4e1d4f1c0",
+      "cases": 81806,
+      "constant_gap_cutoff": 11,
+      "fallbacks": [
+        {
+          "a": 233,
+          "d": 61,
+          "first_gcd_degree": 1
+        },
+        {
+          "a": 704,
+          "d": 72,
+          "first_gcd_degree": 1
+        }
+      ],
+      "gap_cutoff": 105,
+      "maximum_factorial_argument": 28271,
+      "terminal": 17
+    },
+    {
+      "annulus_radii": [
+        25,
+        26
+      ],
+      "case_stream_sha256": "7cdad351adae632eeab23908c3f099f791722b539a7a8901c0920a24ba9bc0f4",
+      "cases": 102953,
+      "constant_gap_cutoff": 11,
+      "fallbacks": [],
+      "gap_cutoff": 114,
+      "maximum_factorial_argument": 34560,
+      "terminal": 18
+    },
+    {
+      "annulus_radii": [
+        26,
+        27
+      ],
+      "case_stream_sha256": "ba8eb94c933d8157ffef2bcd602e918c1d71c41d53869e342c79d924f1a8eb1c",
+      "cases": 125366,
+      "constant_gap_cutoff": 11,
+      "fallbacks": [],
+      "gap_cutoff": 122,
+      "maximum_factorial_argument": 41363,
+      "terminal": 19
+    },
+    {
+      "annulus_radii": [
+        27,
+        29
+      ],
+      "case_stream_sha256": "6a0572eeb7e88befb43b0074d18854e506ee3f7d70adfe787035500793801de9",
+      "cases": 153150,
+      "constant_gap_cutoff": 11,
+      "fallbacks": [
+        {
+          "a": 40,
+          "d": 23,
+          "first_gcd_degree": 1
+        }
+      ],
+      "gap_cutoff": 131,
+      "maximum_factorial_argument": 49380,
+      "terminal": 20
+    },
+    {
+      "annulus_radii": [
+        29,
+        30
+      ],
+      "case_stream_sha256": "b6e11106a8872b8c57536d719aa37f50cbafe3a9cf63f26346338b028057a6b5",
+      "cases": 182101,
+      "constant_gap_cutoff": 11,
+      "fallbacks": [],
+      "gap_cutoff": 139,
+      "maximum_factorial_argument": 57939,
+      "terminal": 21
+    },
+    {
+      "annulus_radii": [
+        30,
+        32
+      ],
+      "case_stream_sha256": "afab79ab5f1b1d845774ae1d75eb79dac6aa7c778e9cf597b3d82744f137ff86",
+      "cases": 217423,
+      "constant_gap_cutoff": 11,
+      "fallbacks": [],
+      "gap_cutoff": 148,
+      "maximum_factorial_argument": 67892,
+      "terminal": 22
+    },
+    {
+      "annulus_radii": [
+        32,
+        33
+      ],
+      "case_stream_sha256": "633216988b90db9fb95f77d0acc9b9d9a44f14c737a49549db57bda98515ab60",
+      "cases": 257021,
+      "constant_gap_cutoff": 12,
+      "fallbacks": [],
+      "gap_cutoff": 157,
+      "maximum_factorial_argument": 78913,
+      "terminal": 23
+    },
+    {
+      "annulus_radii": [
+        33,
+        35
+      ],
+      "case_stream_sha256": "ae799d8a6d9e1326afbae28fd5b3ea17cbfe63c828b5b916887e8cb816e70d06",
+      "cases": 301136,
+      "constant_gap_cutoff": 12,
+      "fallbacks": [
+        {
+          "a": 2404,
+          "d": 148,
+          "first_gcd_degree": 1
+        }
+      ],
+      "gap_cutoff": 166,
+      "maximum_factorial_argument": 91056,
+      "terminal": 24
+    }
+  ],
+  "total_cases": 1604536
+}

@@ -69,6 +69,15 @@ private theorem firstOrderRotation_polynomial (i : Fin 2) (j : Fin M) (f : R) :
     firstOrderRotation a b i j (algebraMap R A f) = firstOrderPolynomial a b i j f :=
   IsLocalization.Away.lift_eq (quadNorm a b) (firstOrderPolynomial_unit a b i j) f
 
+/-- The localized pullback sends each generator to its value plus its
+rotation derivative in the first-order coefficient. -/
+theorem firstOrderRotation_X (i : Fin 2) (j : Fin M) (k : Fin 2 ⊕ Fin M) :
+    firstOrderRotation a b i j (algebraMap R A (MvPolynomial.X k)) =
+      inl (algebraMap R A (MvPolynomial.X k)) +
+        inr (algebraMap R A (rotation a b i j (MvPolynomial.X k))) := by
+  rw [firstOrderRotation_polynomial]
+  exact (inl_fst_add_inr_snd_eq _).symm
+
 theorem firstOrderRotation_norm (i : Fin 2) (j : Fin M) :
     firstOrderRotation a b i j (normUnit a b : A) = inl (normUnit a b : A) := by
   rw [normUnit_val, firstOrderRotation_polynomial, firstOrderPolynomial_norm, normUnit_val]

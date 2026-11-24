@@ -83,6 +83,20 @@ theorem complementBaseChange_phase :
     show complementBaseChange (L := L) a b (includeRight (normUnit a b : A)) =
     (normUnit aL bL : B) from hn]
 
+theorem complementBaseChange_productPhase (α β γ : ℕ) :
+    complementBaseChange (L := L) a b
+        (includeRight (productPhase (normUnit a b) (height a b) α β γ)) =
+      productPhase (normUnit aL bL) (height aL bL) α β γ := by
+  have hn := congrArg (fun u : Bˣ ↦ (u : B)) (complementBaseChange_normUnit (L := L) a b)
+  have hi := congrArg (fun u : Bˣ ↦ (↑(u⁻¹) : B)) (complementBaseChange_normUnit (L := L) a b)
+  rw [← map_inv] at hi
+  simp only [productPhase, map_mul, map_add, map_one, map_pow, map_sub,
+    complementBaseChange_height]
+  rw [show complementBaseChange (L := L) a b (includeRight (↑((normUnit a b)⁻¹) : A)) =
+    (↑((normUnit aL bL)⁻¹) : B) from hi,
+    show complementBaseChange (L := L) a b (includeRight (normUnit a b : A)) =
+    (normUnit aL bL : B) from hn]
+
 theorem complementBaseChange_uniformPhase :
     complementBaseChange (L := L) a b (includeRight (uniformPhase M (complementPhase a b))) =
       uniformPhase M (complementPhase aL bL) := by

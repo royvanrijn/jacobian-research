@@ -21,14 +21,13 @@ def LowRankLaurentTheorem : Prop :=
     NewtonLaurentNecessity ℂ (Fin n)
 
 omit [CharZero K] in
-private theorem transported_witness {L B : Type*} [Field L] [Algebra K L] [CommRing B] [Algebra K B]
+theorem transport_nonpower_and_witness {L B : Type*} [Field L] [Algebra K L] [CommRing B] [Algebra K B]
     (coords : A ≃ₐ[K] B) (trace : A →ₗ[K] K) (f g : B)
     (hn : NonpowerUpToUnits (Algebra.TensorProduct.includeRight (R := K) (A := L) f))
     (hw : AllOrderWitness (trace.comp coords.symm.toLinearMap) f g) :
-    ∃ phase marker,
-      NonpowerUpToUnits (Algebra.TensorProduct.includeRight (R := K) (A := L) phase) ∧
-        AllOrderWitness trace phase marker := by
-  refine ⟨coords.symm f, coords.symm g, ?_, ?_, ?_⟩
+    NonpowerUpToUnits (Algebra.TensorProduct.includeRight (R := K) (A := L) (coords.symm f)) ∧
+      AllOrderWitness trace (coords.symm f) (coords.symm g) := by
+  refine ⟨?_, ?_, ?_⟩
   · intro unit root exponent he eq
     let lift := Algebra.TensorProduct.congr (AlgEquiv.refl : L ≃ₐ[L] L) coords
     have hl : lift (Algebra.TensorProduct.includeRight (coords.symm f)) =
@@ -66,6 +65,6 @@ theorem sharp_classification_of_models {L : Type*} [Field L] [CharZero L] [Algeb
   · intro h
     obtain ⟨a, b, coords, ha, ht⟩ := diagonal h
     obtain ⟨hn, hw, _⟩ := uniform_counterexample (L := L) a b ht (by omega) ha
-    exact transported_witness coords trace _ _ hn hw
+    exact ⟨_, _, transport_nonpower_and_witness coords trace _ _ hn hw⟩
 
 end MathieuQuadratic

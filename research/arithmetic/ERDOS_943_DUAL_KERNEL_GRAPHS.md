@@ -1,6 +1,6 @@
 # A three-tenths pointwise bound for sums of two square-full integers
 
-Let \(r(N)\) be the number of ordered representations of a positive integer \(N\) as a sum of two positive square-full integers. The kernel graph uses the squarefree cube factors as vertices. Its dual uses the square roots as vertices. Combining the two graphs with a mixed-coordinate cubic bound improves the earlier [one-third estimate](ERDOS_943_KERNEL_GRAPH.md). For the problem formulation and the \(2/5\) benchmark, see the March 2026 note. Priority for the bound below remains unverified. [Chojecki, Theorem 1.2](https://www.ulam.ai/research/erdos943.pdf)
+Let \(r(N)\) be the number of ordered representations of a positive integer \(N\) as a sum of two positive square-full integers. The kernel graph uses the squarefree cube factors as vertices. Its dual uses the square roots as vertices. Combining the two graphs with a mixed-coordinate cubic bound improves the earlier [one-third estimate](ERDOS_943_KERNEL_GRAPH.md). Blomer and Schöbel obtained the \(2/5\) benchmark in 2013. The March 2026 note gives the same exponent and discusses the problem formulation. [Blomer–Schöbel, Corollary 2](https://www.researchgate.net/publication/268024970_Twins_of_powerful_numbers) Priority for the bound below remains unverified. [Chojecki, Theorem 1.2](https://www.ulam.ai/research/erdos943.pdf)
 
 **Theorem.** For every positive integer \(N\) and every \(\varepsilon>0\),
 \[

@@ -1,27 +1,37 @@
 {
   "schema_version": 1,
   "date": "2026-11-24",
-  "scope": "Theorem 1, Proposition 2, and Corollary 3 for nondegenerate quadratic forms of positive dimension over arbitrary characteristic-zero fields.",
+  "scope": "Theorem 1 through Proposition 8 of the revised quadratic-complements article, including the uniform and double-pole ternary witnesses, sharp polynomial cutoff, rational tail criterion and the perturbation for N>=6. Includes the justification for applying Long's complex spherical classification and the linear multiplier example on an isotropic ternary complement.",
   "proof_dependencies": [
     {
       "location": "Section 2",
-      "claim": "Existence and scalar compatibility of the trace",
-      "basis": "Geometric transitivity, locally finite rational representations and Milne, Algebraic Groups, Section 12l and Theorem 22.42."
-    },
-    {
-      "location": "Section 2",
-      "claim": "Mathieu property in dimensions one and two",
-      "basis": "Laurent torus characters and Duistermaat–van der Kallen's Newton-polytope criterion. A finitely generated coefficient field embeds in C. Eventual vanishing descends from the splitting field."
+      "claim": "Existence and scalar compatibility of the trace; Mathieu property in dimensions one and two",
+      "basis": "Geometric transitivity, reductive complete reducibility, and torus characters. Transfer of the Duistermaat–van der Kallen Newton-polytope criterion through the finitely generated coefficient field and descent from a splitting field."
     },
     {
       "location": "Sections 3–4",
-      "claim": "Uniform all-order counterexample, sharp pure-power threshold for the displayed P, and geometric nonpower property",
-      "basis": "Rotation recurrence checked summand by summand, scalar weight extraction, order 2k+1 endpoint divisibility, and simple zeros on the punctured x_1-axis. Long's normalizer calculation is the credited source of the endpoint method. The paper proves the argument on the quadratic complement."
+      "claim": "Exact mixed moments, uniform and ternary counterexamples, and their geometric nonpower property",
+      "basis": "Rank-two rotation recurrence, scalar weights, endpoint antiderivative with the first discarded coefficient, and two coprime vanishing orders on lines. Long's Proposition 5.1 is credited for the endpoint method."
+    },
+    {
+      "location": "Sections 5–6",
+      "claim": "Sharp polynomial degree and cutoff, and eventual test for fixed regular multipliers",
+      "basis": "Block orthogonal Reynolds projection and the invariant ring K[A,B] preserve polynomial degree. The marker B^J attains the last exceptional power. The beta moment ratio gives a rational function whose identity test accounts for cancellation."
+    },
+    {
+      "location": "Section 7",
+      "claim": "Least pole inside the stated product family, and pole-2M perturbation for M>=4",
+      "basis": "The first omitted coefficient yields the regular q^-1 detector on the boundary. The perturbation uses the nonnegative binomial upper index for m>=2, a separate cancellation at m=1, and a simple zero on q=1."
     },
     {
       "location": "Introduction",
-      "claim": "The complex cutoff is an instance of the reductive homogeneous-space classification",
-      "basis": "Theorem 1.1 of Counterexamples to the Mathieu Property, applied to the stabilizer of a point for the SO(q) × G_m action. The proof of Theorem 1 does not need this previous classification."
+      "claim": "Scope of the known complex dimension cutoff and fixed-multiplier existence",
+      "basis": "Theorem 1.1 in Long's spherical-pair preprint applies to the connected reductive action after establishing a Borel open orbit and reductivity of the norm-one stabilizer. The general reductive homogeneous-space classification also gives the complex cutoff. The local all-field proof is independent of either criterion."
+    },
+    {
+      "location": "Section 5, equation (8)",
+      "claim": "Degree-one detection on isotropic ternary complements",
+      "basis": "The hyperbolic torus and Lie derivative give diagonal moments. Endpoint extraction after the substitution for y/q gives the pure and linear-marked moments. Restricting to y=1,z=0 certifies a simple zero. Constants vanish by purity."
     }
   ],
   "sources": [
@@ -33,7 +43,7 @@
     {
       "reference": "Long, A Classification of Mathieu's Second Conjecture for Reductive Spherical Pairs",
       "identifier": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex",
-      "inspected": "Versioned source and retained author PDF, Section 5, Proposition 5.1 and its endpoint calculation, pp. 5–6."
+      "inspected": "Versioned source and retained author PDF, Theorem 1.1 (hypotheses, characterization and fixed witnesses) and Section 5, Proposition 5.1 (endpoint calculation)."
     },
     {
       "reference": "Milne, Algebraic Groups",
@@ -56,47 +66,53 @@
     },
     "layout": {
       "passed": true,
-      "pages": 5,
-      "renderer": "Poppler pdftoppm at 125 dpi",
+      "pages": 7,
+      "renderer": "Poppler pdftoppm at 122 dpi",
       "embedded_fonts": true,
       "type3_fonts": false,
-      "scope": "Visually inspected final pages 2, 4 and 5 after revisions. Final pages 1 and 3 were pixel-identical to their inspected first-edition renders. Checked page breaks, equations, type, citation locators, and clipping."
+      "scope": "Final pages 2, 3 and 5–7 rendered and visually inspected. Pages 1 and 4 were pixel-identical to the reviewed prior edition. Display equations, page breaks and bibliography links were checked."
     },
     "arithmetic": {
       "passed": true,
-      "command": "python3 research/foundations/extended-geometry/verify_quadratic_uniform_normalizer.py --output /tmp/mathieu-quadratic-paper.HZvour/exact-replay.json",
-      "scope": "Existing supporting checker, with output directed to a scratch location. Passed 388 direct endpoint comparisons and 12 direct nonpower-phase models in the recorded bounded scope, with a corrupted-phase rejection and a check outside the endpoint formula's domain. The standalone written proof supplies the universal result."
+      "method": "Temporary Python 3.12.3 probe with exact fractions. Direct finite Laurent expansion uses Lambda(S^j)=M/(M+2j), and a separate rational product computes the beta moments.",
+      "scope": "66,760 coefficient comparisons for M=1..5, alpha=1..M+2, beta=0..M+1, max(1,alpha-1)<=gamma<=alpha+1, m=1..4 and j=0..3 over the displayed endpoint range and one negative-index control above it. Also 6,080 first omitted coefficients, 284 below-degree vanishing cases, 60 pure or marked perturbation moments for M=4..8 and m=1..6, sharp predecessor orders, the 2/3 ternary moment, cancellation, and the M=3 failed perturbation. These checks are bounded. The formulas covered by those checks are unchanged in this edition."
+    },
+    "comparisons": {
+      "passed": true,
+      "method": "Exact Python fractions. Direct finite Laurent expansion of the isotropic seed compared with the diagonal-moment recurrence, and exact isometry and group-law controls on the displayed transformations.",
+      "scope": "Pure and linear-marked ternary moments for orders 1 through 40, including marked value 1/3 at order one. Verifies the new passages in a bounded scope. The arguments in the paper are all-order."
     },
     "navigation": {
       "render_passed": true,
       "manuscript_check_passed": true,
       "repository_wide_check_passed": false,
-      "scope": "All five manuscript files, three mapped declarations, TeX proof references, portfolio metadata, and local index links passed. The repository-wide check stopped on coverage omissions or changed coverage sources in the current formalization, factorial, and Jacobian work outside this manuscript."
+      "scope": "The manuscript coverage, eight mapped declarations, proof links, bibliography and reviewed hashes passed. The repository-wide navigation check reported missing or stale coverage outside the paper, including the ongoing Lean formalization."
     }
   },
   "review": {
     "blind_reader": {
       "performed": true,
-      "reviewer": "Fresh, no-history internal AI reviewer",
-      "supplied_context": "Only the compiled PDF, the five questions in the paper guide, and a PDF-reading command. No access to repository files, earlier conversation, or web sources.",
-      "initial_pdf_sha256": "53a3858112dc08d4239e56b3de1b6f8f2a3160beae9f2844edfaa6e48634f9f6",
+      "reviewer": "Fresh no-history internal AI reader",
+      "supplied_context": "Only the exact revised PDF and the paper-guide questions, with a request to check the complex comparison and isotropic example. No repository, earlier conversation or external references.",
+      "final_pdf_sha256": "e785092db1a7c9fb096820a85ad8a178f00d79ffe553f846f24566dfe2667a07",
       "answers": {
-        "contribution": "All-field dimension cutoff, explicit original-field counterexamples in dimensions at least three, one fixed multiplier at every order, and absolute nonpower up to units.",
-        "conceptual_reason": "A rank-two splitting supplies the beta moments, scalar weights reduce the trace to one coefficient, and the endpoint identity puts the pure and marked coefficients on either side of the degree bound.",
-        "hardest_step": "Proposition 2 on pp. 3–4, where the endpoint error has order 2k+1. The rotation recurrence, coefficient bounds, and restriction argument were checked.",
-        "limitations": "Positive-dimensional nondegenerate forms in characteristic zero and this normalized trace. The low-dimensional direction uses the Laurent constant-term theorem.",
-        "verification_obstacles": "Imported results and historical priority require source inspection beyond the PDF. The first PDF could signal the algebraic closure more clearly and gave no visible repository locator for the pinned Long revision."
-      },
-      "revisions": "Spelled out the algebraic closure and the nonzero derivative on the punctured axis. Printed the GitHub repository and clickable revision. Made the Laurent weight bound explicit.",
-      "final_pdf_sha256": "516d1614716b1d7e785495ce014d124567b77b835faf4578102a776c02bb3098",
-      "followup": "The same isolated reader checked the revised PDF and its hash, confirmed that both issues were resolved, and reported no new ambiguity."
+        "contribution": "Explicit all-field witnesses and precise phase-specific degree, cutoff, pole and tail results. The earlier complex classification is credited and the isotropic ternary example gives a degree-one minimum across witnesses.",
+        "conceptual_reason": "Scalar-weight extraction and a beta endpoint identity give the pure and marked moments. In the isotropic model a hyperbolic torus takes the place of scalar weights and yields the same mechanism with a linear multiplier.",
+        "hardest_step": "Proposition 2, pp. 3–4, including control of the first omitted coefficient. The reader separately reconstructed both new passages.",
+        "limitations": "The pole minimum is family-specific. The degree-one minimum across all witnesses concerns isotropic ternary complements. The lower-pole perturbation is in dimensions at least six.",
+        "verification_obstacles": "The exact cited classification hypotheses require reading the cited papers outside the PDF-only exercise. The reader found no error in the orbit, stabilizer, moment, or simple-zero arguments."
+      }
     },
     "external_human_review": false,
     "independent_external_replay": false,
-    "formal_verification": false
+    "formal_verification": false,
+    "previous_edition": {
+      "pdf_sha256": "78f3554de3c9a658505e3fcb8c5b3bd994ff97e44ac4f761e8715de5305f149e",
+      "scope": "Reviewer confirmed the final edition hash and the clarifications. The reviewer also made a separate internal direct-expansion check of 98,400 small coefficient cases and 45 perturbation parameter pairs."
+    }
   },
   "artifact_hashes": {
-    "main.tex": "c5171c6b6869f4494d24009e814d053051a77e28c947461f2add3b58ceebe14a",
-    "mathieu-quadratic-complements.pdf": "516d1614716b1d7e785495ce014d124567b77b835faf4578102a776c02bb3098"
+    "main.tex": "4060e6081cf6cc4fc68de4a2ad279975f01cf0d85127e4aab23942044225a38d",
+    "mathieu-quadratic-complements.pdf": "e785092db1a7c9fb096820a85ad8a178f00d79ffe553f846f24566dfe2667a07"
   }
 }

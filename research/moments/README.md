@@ -69,7 +69,10 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Polynomial odd-return cores and an exact Cayley obstruction | Internal result | proved | [Source](../foundations/extended-geometry/ODD_RETURN_CORE_AND_CAYLEY_OBSTRUCTION.md) |
 | Uniform all-field quadratic-complement absolute nonpower counterexamples in every dimension at least three | Internal result | proved | [Source](../foundations/extended-geometry/QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md) |
 | Sharp Mathieu dimension classification for nondegenerate quadratic complements over characteristic-zero fields | Internal result | proved | [Source](../foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md) |
+| Quadratic-complement witnesses with smaller poles and sharp multiplier bounds | Internal result | proved | [Source](../foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_MULTIPLIER_BOUNDS.md) |
 | Explicit all-field counterexamples on seven standard compact classical products | Internal result | proved | [Source](../foundations/extended-geometry/STANDARD_COMPACT_CLASSICAL_PRODUCT_COUNTEREXAMPLES.md) |
+| Finite piecewise-polynomial endpoint criterion with one all-order unit marker | Internal result | proved | [Source](../foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md) |
+| All-order unit-marker counterexamples on compact coadjoint and standard rational Chevalley products | Internal result | proved | [Source](../foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 
@@ -118,6 +121,7 @@ Scope limits:
 - Without a polynomial reciprocal direction, every polynomial-X solution is the known eta=1 singleton. When b is nonpolynomial, possible exceptions are confined to odd a<=M-2<=deg u-2 and have rational nonpolynomial X; no such pure transient example is asserted. Separately, every endpoint has an all-height atlas with at most ceil(deg u/2) entries and sharp uniform stabilization cutoff 2ceil(deg u/2)-1, with explicit stable transport.
 - The remaining no-polynomial-direction existence question is equivalent to the existence of a nontrivial literal odd-return core. Every survivor descends at the same height. Any survivor with a nontrivial outer core has a polynomial canonical inner map. A nontrivial core has endpoint vanishing at infinity and X regular there. The proof does not exclude these cores. A universal repeated-pole family exclusion and an exact height-one single-pole-pair Cayley criterion are retained, with an all-pole-order negative diagnostic for exactly 44 rational divisors and six specified exponents; no broader nonexistence is inferred.
 - Uniform quadratic complement theorem: all char0fields, all nondegenerate forms, every N>=3. Mixed-moment negative-marker domain is explicit; one fixed marker q^(N-2) survives all orders for P^(N-2)(1+P). No broader homogeneous-space or phase-transformation claim.
+- For the displayed smaller-pole quadratic phases, the minimum detecting polynomial degree is 2(N-2). The exact vanishing cutoff below that degree and the fixed regular multiplier test are proved in their stated domains.
 - Sharp quadratic family classification, anychar0K: MZ iff N<=2, non-MZ iff N>=3, equivalent to existence/absence of one strong all-order nonpower witness. Full lowdim proof included; no generic global-MZ field ascent. This one-proof corollary has no checker.
 
 Tracked obligations (computed states):

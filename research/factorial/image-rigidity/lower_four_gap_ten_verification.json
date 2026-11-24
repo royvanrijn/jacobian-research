@@ -1,0 +1,18 @@
+{
+  "analytic_rational_inequalities": "verified",
+  "checker_sha256": "24c9f24229718cb03fdb2291fdb9c8ccc86653a12a161b70a09ad821b52e88df",
+  "finite_bezout_replay": {
+    "case_stream_sha256": "9a923cd3bb7d1a0fe31579b3c03d330ced70cde953d2036b6ae3ae8ecb16ea4c",
+    "fallbacks": [],
+    "first_terminal": 13,
+    "last_terminal": 3999,
+    "maximum_factorial_argument": 55986,
+    "primes": [
+      1000003,
+      1000033
+    ],
+    "terminal_pairs": 3987
+  },
+  "python": "3.12.3",
+  "python_flint": "0.9.0"
+}

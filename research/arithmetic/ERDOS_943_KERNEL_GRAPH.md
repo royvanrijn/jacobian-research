@@ -6,7 +6,7 @@ Let \(r(N)\) count the ordered representations of \(N\) as a sum of two positive
 \[
                               r(N)\ll_\varepsilon N^{1/3+\varepsilon}.       \tag{1}
 \]
-The kernel-graph argument was proposed by the user. The exponent improves the earlier [pointwise \(5/14\) bound](ERDOS_943_SIXTH_POWER_CARRY.md). Chojecki's March 2026 note gives the \(2/5\) benchmark and the pointwise formulation of Erdős #943. Priority for (1) remains unverified. [Chojecki, Theorem 1.2](https://www.ulam.ai/research/erdos943.pdf)
+The kernel-graph argument was proposed by the user. The exponent improves the earlier [pointwise \(5/14\) bound](ERDOS_943_SIXTH_POWER_CARRY.md). Blomer and Schöbel obtained the \(2/5\) benchmark in 2013. Chojecki's March 2026 note gives the same exponent and discusses the pointwise formulation of Erdős #943. [Blomer–Schöbel, Corollary 2](https://www.researchgate.net/publication/268024970_Twins_of_powerful_numbers) Priority for (1) remains unverified. [Chojecki, Theorem 1.2](https://www.ulam.ai/research/erdos943.pdf)
 
 We work first with positive coprime summands in the coefficient equation
 \[
