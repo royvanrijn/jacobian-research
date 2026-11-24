@@ -263,7 +263,7 @@ private theorem coeff_mul_vanishes_below (f g : QuadPolynomial K M) (r s : ℕ)
   rw [MvPolynomial.coeff_mul]
   apply Finset.sum_eq_zero
   intro e he
-  have hs := Finset.mem_antidiagonal.mp he
+  have hs := Finset.HasAntidiagonal.mem_antidiagonal.mp he
   rw [← hs, Finsupp.sum_add_index' (fun _ ↦ rfl) (fun _ _ _ ↦ rfl)] at hd
   by_cases h : e.1.sum (fun _ k ↦ k) < r
   · rw [hf _ h, zero_mul]

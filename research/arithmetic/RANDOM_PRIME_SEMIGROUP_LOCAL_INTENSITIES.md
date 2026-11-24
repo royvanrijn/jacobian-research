@@ -157,6 +157,121 @@ strict inequality uses \(B,b_2>0\). This strengthens the lower bound in
 \(\texttt{GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY}\).
 Existence of the natural density and its law remain open.
 
+## Strict two-adic improvement and sharp finite-modulus error
+
+Write \(G_m=m^{-1}\sum_{a\bmod m}\exp(-B S_m(a))\) and
+\(G_\infty=\mathbb E_U\exp(-B S(U))\). These are lower bounds for
+the actual lower gap density by (4) and (5). The \(\sigma\)-fields
+refine with divisibility, so \(G_m\) increases under divisibility
+by conditional Jensen. All powers of \(2\) have the explicit limit
+\[
+ G_{2^\infty}
+ =\mathbb E_U e^{-B g_2(U_2)}
+ =\frac{e^{-B(1-b_2^k)}}{2-e^{-B b_2^k}}
+ > e^{-B}\cosh(Bb_2^k).                                               \tag{5a}
+\]
+Indeed \(g_2(U_2)=1+b_2^k(v_2(U_2)-1)\) and
+\(\mathbb P(v_2(U_2)=j)=2^{-j-1}\). Summing the geometric series gives
+the formula. The strict inequality follows from strict Jensen on
+the class \(U_2\equiv0\bmod 2\), since \(v_2\) varies within that class.
+Independence and mean-one local factors give \(G_\infty\ge G_{2^\infty}\).
+
+There is also an almost-sure asymptotic for the remaining difference in an
+explicit finite-modulus approximation. Let \(m_y=\operatorname{lcm}(1,\ldots,
+\lfloor y\rfloor)\), write \(\gamma=1-1/k\), and set
+\[
+ \mathcal C_\omega
+ =\mathbb E_U\!\left[e^{-B S(U)}
+                 \big(e^{-B S(U)}-1+B S(U)\big)\right]>0 .
+\]
+Then, for almost every realization of the selected primes,
+\[
+                 G_\infty-G_{m_y}
+     \ \sim\ \frac{\mathcal C_\omega}{\gamma\,y^\gamma\log y}.
+                                                                       \tag{5b}
+\]
+This estimates the truncation error in the lower bound. The
+asymptotic takes \(y\) to infinity after defining the finite-modulus
+lower bound for each fixed \(m_y\).
+
+For the proof let \(X_p\) be the prime selection indicators and put
+\(T(y)=\sum_{p>y}X_p/p\). The prime number theorem and partial summation
+give \(\mathbb E T(y)\sim y^{-\gamma}/(\gamma\log y)\). For example, writing
+the sum as a Stieltjes integral against \(\pi\), integration by parts
+gives the leading difference
+\(\big((1+\gamma)/\gamma-1\big)y^{-\gamma}/\log y\).
+The independent indicators give
+\(\operatorname{Var} T(y)\ll\sum_{n>y}n^{-2-\gamma}\ll y^{-1-\gamma}\).
+Chebyshev and Borel–Cantelli show \(T(y)/\mathbb E T(y)\to1\) on each
+fixed geometric grid. Monotonicity and grids with ratios decreasing
+to one extend this to all \(y\). [Fixed-modulus PNT, modulus one](../foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf)
+
+Consider \(P_y=\prod_{p\le y}g_p(U_p)\). For \(f\ge1\) the conditional
+expectation of a selected \(g_p\) modulo \(p^f\) changes it only in the
+class \(0\bmod p^f\). There the valuation has law \(f+V\), where \(V\)
+has the unconditional geometric valuation law of \(U_p\). Because
+\(\mathbb E V=1/(p-1)\), the negative part of \(V-\mathbb E V\) has
+expectation \((1-1/p)/(p-1)\). Hence the \(L^1\) error of this conditional
+expectation is exactly
+\[
+  2(1-1/p)b_p^k p^{-f}.
+\]
+An excluded factor is measurable modulo \(p\), so it contributes no
+error for \(f\ge1\). Telescoping the finite product of independent nonnegative
+mean-one factors gives
+\[
+ \left\|P_y-S_{m_y}(U\bmod m_y)\right\|_1
+ \le 2\sum_{\substack{p\le y\\X_p=1}}
+                  (1-1/p)b_p^k p^{-f_p}
+ \ll_k J(y),\qquad
+ J(y)=\sum_{p\le y}X_p p^{-1-f_p},\quad f_p=\lfloor\log y/\log p\rfloor .
+\]
+The expected sum is \(O_k(y^{-(1+\gamma)/2})\): for \(p\le\sqrt y\)
+use \(p^{-1-f_p}<1/y\) and sum the selection probabilities, and for
+larger primes use \(f_p=1\) and sum \(p^{-2-\gamma}\). The deterministic
+prime \(2\) costs \(O(1/y)\). Markov and Borel–Cantelli give
+\(J(y)=O_\omega(y^{-\eta})\) along dyadic \(y\) for any fixed
+\(\gamma<\eta<(1+\gamma)/2\). Between dyadic points the old terms only
+decrease, and the new terms above \(z=2^j\) cost at most \(T(z)/z\).
+This proves \(J(y)=o(T(y))\) almost surely for all \(y\).
+By the same telescoping bound the excluded-prime product above \(y\)
+differs from one in \(L^1\) by \(O_k(y^{1-k})=o(T(y))\).
+
+It remains to average above \(y\) over the selected-prime product
+\(Q_y=\prod_{p>y,X_p=1}g_p(U_p)\). Write \(c_p=b_p^k\) at selected
+primes. The critical relation \(k\alpha=1\) gives
+\(c_p=p^{-1}(1+O_k(p^{-\gamma}))\). Set
+\(a_y=\prod_{p>y,X_p=1}(1-c_p)=1-T(y)+o(T(y))\).
+With probability \(1-T(y)+O(T(y)^2)\), every selected \(p>y\) has
+valuation zero and \(Q_y=a_y\). The probability that exactly one
+selected \(p>y\) has valuation one and all others have valuation zero
+is \(T(y)\prod_{p>y,X_p=1}(1-1/p)=T(y)+O(T(y)^2)\).
+On that event
+\[
+ Q_y=a_y\,\frac{1+(p-2)c_p}{1-c_p}
+      =a_y(2+O_k(y^{-\gamma})).
+\]
+The remaining events have total probability
+\(O(T(y)^2+T(y)/y)\), by summing the probabilities of two positive
+valuations or one valuation at least two. These infinite products
+and probability sums converge because \(T(y)<\infty\).
+Taylor expansion, uniformly for \(t\ge0\), now gives
+\[
+ \mathbb E_U e^{-tQ_y}
+ = e^{-t}+T(y)e^{-t}(e^{-t}-1+t)+o(T(y)).
+\]
+For uniformity, derivatives of \(e^{-tu}\) in \(u\) of orders one
+and two are bounded uniformly for \(t\ge0\) and \(u\ge1/2\), and
+the exponential is bounded by one on the remaining events.
+Take \(t=BP_y\) with \(P_y\) independent of \(Q_y\).
+The excluded tail and the finite-modulus replacement each cost
+\(o(T(y))\), since the exponential is \(B\)-Lipschitz in
+the product and the other factors have mean one.
+As \(P_y\to S\) in \(L^1\), the bounded continuous coefficient in
+the expansion converges in expectation to \(\mathcal C_\omega\).
+It is strictly positive because \(BS>0\) and \(e^{-t}-1+t>0\) for
+\(t>0\). This proves (5b).
+
 ## Transfer from finite-group subset sums
 
 The [pinned Ma–Tang resolution](https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/ma-tang-random-subset-sums/PROOF.md)

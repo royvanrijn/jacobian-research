@@ -2371,3 +2371,391 @@ affine operator or a truncation compatible with
 its signed graph proof. The four-centered
 off-diagonal saving is also separate from this
 lower bound.
+
+## Affine averaged cancellation for moduli below the fresh small banks
+
+Put \(L=\log X\). Suppose the external product law of
+(35) has bounded total labels per modulus, and its
+moduli satisfy
+\[
+ Q\le \exp(L^{1/16}),\qquad
+ p\mid Q\ \Longrightarrow\ p\equiv1\bmod4,\quad p\ge\exp(L^\rho)
+\]
+for some fixed \(\rho>0\). The external and fresh banks
+are disjoint. Consider arbitrary residues \(a_Q\) which
+are units modulo \(Q\). This includes a fixed nonzero
+logarithmic offset. Use \(Q=1\) with its usual trivial
+residue convention.
+
+**Proposition (affine cancellation for small external moduli).**
+Under ZF and G, for every fixed logarithmic shift budget
+\(1\le |h|\le L^A\), sufficiently deep fixed model, and
+some fixed \(\eta>0\), one has
+\[
+ \sum_Q \nu(Q) Q\left|
+       \sum_{\substack{n\in I\\ n\equiv a_Q\ (Q)}}
+                        \xi_X(n)\xi_X(n+h)\right|
+   \ll_A XJ_{\rm CK}(h)L^{-1-\eta}                            \tag{38}
+\]
+uniformly in the unit residues and in \(I\subset(X,2X]\).
+The same statement with a smaller positive \(\eta\) holds
+with the supremum over \(I\) inside the sum over \(Q\).
+
+The weighted graph step is (35) with the edge condition
+\(n\equiv a_QD\bmod Q\). After removing the shared
+dilation, this becomes \(w\equiv a_QD_1D_2\bmod Q\).
+All the usual shared-label avoidance errors in that
+reconstruction can pay even the pointwise bound
+\(\sum_Q Q\nu(Q)\le\exp(L^{1/16})\), since the fresh
+primes exceed \(\exp(L^{1/8})\). To remove the external
+Mellin tail it suffices to use the average absolute
+edge mass. For each fixed pattern and labels, the
+external residue has density \(1/Q\) independently
+of the fresh CRT conditions. Summing the external
+weights \(Q\nu(Q)\) therefore costs one in the main
+bound. The residue replacement error is negligible
+as in (31). The resulting well-marked harmonic
+comparison has arbitrary fixed logarithmic savings
+on the graph side.
+
+Here are the arithmetic estimates on the transported
+comparison. Take fixed dyadic product sizes \(D_i\asymp
+U_i\) as in the graph reduction, and put \(U_*=U_1U_2\)
+and \(Y=XU_*\). The comparison functions \(F,G\) of
+the original Fourier reduction are supported on
+integer dyads of size \(\asymp Y\), are \(L^{O(1)}\)
+bounded, and \(F\) is the centered endpoint with a
+selected small-bank label. In the two-centered
+comparison we take the first endpoint, where the
+transported mask has a unit residue, for this role.
+The second endpoint only needs its ordinary
+pointwise and square-norm bounds.
+
+Split \(D_i\equiv u_i\bmod Q\). All \(u_i\) are
+units. Let \(s,s'\) be standard representatives of
+\(a_Q u_1u_2\) and \((a_Q+h)u_1u_2\) modulo \(Q\),
+respectively. Write \(w=Qz+s\) and \(w'=Qz'+s'\).
+Then
+\[
+ z'-z=(hD_1D_2+s-s')/Q .
+\]
+In the integer Fourier variable \(\theta\) of \(z\),
+the multiplier on the restricted products uses
+\(e(h\theta D_1D_2/Q)\) up to a constant phase.
+Writing \(D_i=Qj_i+u_i\) makes its bilinear part
+\(e(hQ\theta j_1j_2)\). The coefficient of a
+product of size \(U_i\) is \(O(L^C/U_i)\).
+On a fixed residue class this gives squared norm
+\(O(L^{2C}/(Q U_i))\) and mass \(O(L^C/Q)\),
+since the support interval has length \(O(U_i/Q)\).
+The usual integer bilinear bound, with lengths
+\(U_i/Q\), gives \(Q^{-2}L^{-D}\) off the
+major arcs for \(hQ\theta\) at denominators
+\(q\le L^{C_1}\). Here the approximation
+denominator ceiling is \(U_*Q^{-2}L^{-C_1}\).
+The \(Q^{-2}\) factor is essential. The two
+endpoint squared norms on their residue classes
+are \(O((Y/Q)L^C)\). Hence summing over \(u_1,u_2\)
+still gives the relative factor \(1/Q\).
+
+For the major arcs it suffices, uniformly in the
+unit residue \(s\), to prove
+\[
+ \int_{\rm major}|\widehat F_s(\theta)|^2\,d\theta
+                   \ll_D (Y/Q)L^{-D},\qquad
+ \widehat F_s(\theta)=\sum_z F(Qz+s)e(z\theta).                \tag{39}
+\]
+Indeed the second endpoint is bounded by Parseval
+on its own residue class, whether \(s'\) is a unit
+or not. Before estimating the energy, selected-bank
+prime squares can be removed from the comparison
+and the sharp small-bank endpoints smoothed as in
+the ordinary fixed-shift argument. For a small
+prime \(p\) in such a discarded condition, \(p\)
+is coprime to \(Q\). The count with \(p\mid w\)
+and \(w\equiv s\bmod Q\) is \(O(Y/(pQ)+1)\).
+A strip of width \(\varepsilon P\) in a prime
+dyad therefore costs \(O((Y/Q)(\varepsilon+P^{-1})
++P)\) before fixed logarithmic factors. A square
+has the same bound with \(p^2\) in place of \(p\).
+This pays the smoothing and square errors directly
+in the comparison, at scale \(Y/Q\).
+
+For each rational center of \(hQ\theta\), group its
+lifts into a fixed logarithmic number of sets of
+the form \(\theta_j=\theta_0+j/Q\), \(0\le j<Q\).
+The physical additive centers \(\alpha_j=\theta_j/Q\)
+then have denominator dividing \(q_0Q^2\), for
+\(q_0\le |h|L^{C_1}\) coprime to \(Q\).
+The physical arc width is \(O(1/W)\) with
+\(W=U_* L^{-C_1}\), allowing harmless fixed changes
+of the logarithmic exponents. Set
+\[
+ P_j(t)=\frac{Q}{Y}\sum_{w\equiv s\ (Q)}
+                         F(w)e(\alpha_j w)w^{it}.
+\]
+The additive-to-Dirichlet inequality, with the
+change of scale from \(z\) to \(w\), bounds the
+energy of the group by
+\[
+ \frac{Y}{Q}\int_{\mathbb R}(1+W|t|/Y)^{-2}
+                                   \sum_j |P_j(t)|^2\,dt .
+\]
+On the high tail use orthogonality over the
+\(Q\) lifts *before* taking the Dirichlet mean
+value. For any interval of length \(T\),
+\[
+ \begin{split}
+ \sum_j\int_T |P_j(t)|^2\,dt
+ &\ll (Q/Y)^2 Q (T+Y/Q^2)
+                  \sum_{w\equiv s\ (Q)}|F(w)|^2\\
+ &\ll L^C(1+Q^2T/Y).
+ \end{split}                                                  \tag{40}
+\]
+Here the first line comes from \(w\bmod Q^2\)
+and the separation \(\gg Q^2/Y\) of successive
+logarithms in each of those classes. On the
+dyadic tail \(|t|> T_0=X L^{C_2}\), the factor
+\(Q^2T_0/Y=o(1)\) at a rate faster than every
+logarithmic power. Taking \(C_2\) sufficiently
+large makes the weighted tail \(O_D(L^{-D})\)
+after the indicated \(Y/Q\) normalization.
+
+On \(|t|\le T_0\), split \(e(\alpha_j w)\) by
+CRT at \(q_0\) and \(Q^2\). The factor on \(Q^2\)
+is \(1_{w\equiv s\ (Q)}e(c_jw/Q^2)\) with
+\(c_j\) running through a complete progression
+modulo \(Q\). Expand this factor in multiplicative
+characters on the units modulo \(Q^2\). Its
+principal coefficient is zero unless \(Q\mid c_j\).
+Indeed the lifts of the unit \(s\bmod Q\) are all
+units, and form the full additive progression
+\(s+Qz\bmod Q^2\). At the one possible lift with
+principal term, the coefficient has modulus
+\(1/\varphi(Q)\). Its endpoint is just \(F(w)\)
+restricted to \((w,Q)=1\), with an additive
+phase of polynomial-logarithmic denominator
+\(q_0\). This restriction is a record factor
+unaffected by the fresh selected prime. The
+usual low- and high-frequency centered energy
+bound therefore applies, with factor
+\(Q/\varphi(Q)\) in \(P_j\).
+
+Each nonprincipal character \(\chi\) on \(Q^2\)
+remains nonprincipal after any twist modulo
+\(q_0\). At low \(|t|\le L^{C_3}\), keep only
+records \(r\le\exp(\sqrt L)\). The nonprincipal
+contour bound in the proof of (12) applies,
+since \(\chi\) cannot produce either of the two
+principal branches there. The usual record tail
+is \(\exp(-cL^{1/10})\) after normalization,
+which still pays any fixed power of \(Q\) and
+the number of lifts. At \(L^{C_3}<|t|\le T_0\),
+extract the selected small prime \(p\) as
+\(w=pm\), using its invariance for \(\xi_X\).
+The character splits and the prime factor
+contains the nonprincipal external \(\chi(p)\).
+Splitting the \(q_0\)-phase into residue classes
+introduces only logarithmic costs and leaves
+this prime character nonprincipal. The smooth
+prime estimate in the original frequency tools
+holds at the new moduli as well. Its contour
+proof uses the bound
+\(O(\log(q(|t|+3)))\) for the regularized
+logarithmic derivative in the zero-free strip,
+so \(q\le Q^2 L^{O(1)}\) costs only fixed powers
+of \(L\). Since the small prime starts at
+\(\exp(L^{1/8})\), the nonprincipal prime
+polynomial is \(\ll L^C\exp(-cL^{1/8})\).
+The cofactor mean value uses length \(Y/P\),
+as before. In the Mellin separation of the
+product cutoff, one may remove \(|\nu|>X\)
+for the nonprincipal terms by Schwartz decay.
+The retained prime heights are still at most
+\(X^{O(1)}\). The exponential prime saving
+pays all fixed powers of \(Q\), including the
+Fourier coefficients and the number of lifts.
+This gives \(O_D(L^{-D})\) in the remaining
+Dirichlet energy. Together with (40) this
+proves (39).
+[Additive-to-Dirichlet inequality and cofactor estimates](../../results/pointwise-binary-splitting-semigroups/fixed-shift-comparison.tex)
+· [Smooth prime estimate from the uniform zero-free region](../../results/pointwise-binary-splitting-semigroups/prime-estimates.tex)
+
+By (39) and Cauchy–Schwarz, each residue-class
+comparison contributes \(O_D(L^{-D}Q^{-3})\)
+with its original \(1/Y\) normalization. Summing
+over at most \(Q^2\) pairs gives \(O_D(L^{-D}/Q)\).
+After multiplication by \(Q\nu(Q)\) this retains
+arbitrary logarithmic precision on the arithmetic
+comparison side. The graph pairing uses the signed
+affine moment (35) for bounded total external labels.
+The original weight can be used without truncation
+in this range. In the harmonic Mellin step the
+absolute tail weights are averaged by CRT after
+fixing the fresh lists, so each external modulus
+pays \(1/Q\) and cancels its factor \(Q\). The
+errors from removing shared-label coincidences
+and auxiliary exclusions cost at most the
+pointwise bound \(Q_{\max}\), which is absorbed
+by the fresh reciprocal-prime saving. The
+discarded-bank and endpoint-strip errors are
+bounded by the relative positive envelope on
+\(n\equiv a_Q\bmod Q\). Its fresh and inert
+CRT probabilities are unchanged and its weight
+is summed as in (29). This proves (38).
+The maximal version follows by the interval
+partition argument of (30).
+
+For the multiplicative-dilation average, take \(d\)
+with this label law and restrict to a common dyadic
+box \(d\asymp U\) of mass bounded below by an inverse
+power of \(L\), or leave the box unnormalized.
+On \(r\asymp R=X/U\) put \(n=dr-a\) and \(h=a-b\).
+The residue \(-a\bmod d\) is a unit because the
+offset is nonzero and logarithmic. The maximal
+estimate controls sums of \(K(r)\) over intervals
+of \(r\), with bound \(O(RL^{-1-\eta'})\) for
+some fixed \(\eta'>0\), on a containing fixed
+bulk scale. Consequently the conditional average
+of \(K\) on a partition into \(L^\epsilon\)
+equal intervals has squared mean
+\(O(L^{-2-2\eta'+2\epsilon})\) for
+\(0<\epsilon<\eta'\). This gives signed
+cancellation of the coarse interval averages.
+The pointwise variance still includes their
+fine-scale fluctuations.
+
+## Fourier absolute values after clipping an external product
+
+For the many-bank law \(F=\prod_b W_b\), the
+ordinary clipping \(F_T=F\mathbf1_{F\le T}\),
+\(T=L^K\), removes the large physical edge spike
+from (37). A proof that takes absolute values
+in the Fourier return expansion still has a
+large cost. Work on the external residue torus
+\(\prod_{p}\mathbb Z/p\mathbb Z\). The Fourier
+transform of \(F\) has nonnegative coefficients.
+Its support consists of frequencies with at
+most one active prime per bank, and at a
+frequency with active prime set \(S\) its
+coefficient is
+\(\prod_{p\in S}(V_{b(p)}p)^{-1}\).
+
+For such a frequency, condition on the hit
+indicators of the primes in \(S\). At an
+active prime the conditional character mean is
+one on a hit and \(-1/(p-1)\) on a miss.
+Since \(F-F_T\) depends only on the divisibility
+record, the absolute error in its coefficient
+is bounded by
+\[
+ \frac1{\prod_{p\in S}p}
+   \sum_{\epsilon\in\{0,1\}^{S}}
+             \mathbb E[F\mathbf1_{F>T}\mid
+                              (\mathbf1_{p\mid n})_{p\in S}=\epsilon].
+\]
+The conditional second moment of each bank weight
+is uniformly bounded as it fixes at most one
+prime. Independence across banks bounds the
+conditional second moment of \(F\) by \(L^{C}\).
+Markov's inequality therefore makes the displayed
+error at most \(L^{-D}\widehat F(\theta)\)
+for arbitrarily fixed \(D\), by choosing \(K\)
+large. The factor \(2^{|S|}\) and the product of
+the \(V_b\)'s cost only fixed powers of \(L\).
+
+The absolute Fourier return for clipped weights
+at order \(N\) thus satisfies
+\[
+ \sum_{\theta_1+\cdots+\theta_N=0}
+                 \prod_i|\widehat F_T(\theta_i)|
+ \ \ge\ (1-L^{-D})^N\,\mathbb E_{\rm CRT} F^N
+ \ \ge\ \exp(cN(\log L)^2)
+                                                               \tag{41}
+\]
+for \(N\asymp L^{0.52}\) and \(D>1\).
+The last bound uses the Poisson moment estimate
+of (37). This is a barrier to combining the
+uniform edge-phase estimate with absolute values
+in the clipped Fourier expansion. It leaves
+the signed moment of the clipped many-bank
+operator and the fine-scale four-centered
+variance unresolved.
+
+
+## Signed many-bank paths with controlled anchor repetitions
+
+There is a signed sector beyond the total-rank
+restriction following (36). Use a common third-position
+divisibility test, with numerical anchors \(m+x_i\) on
+the path. The \(x_i\) are integer linear combinations
+of the fresh displacements, independent of the external
+labels. Let \(\mathcal P\) be the partition of edge
+indices by equality of \(x_i\). For an external
+equal-prime block \(C\) of label slots, let \(t_C\)
+count the blocks of \(\mathcal P\) that it meets,
+and put \(r_\times=\sum_C(t_C-1)\). This counts
+only the joins across distinct numerical anchors.
+
+**Proposition (signed sector with bounded anchor entropy and crossing rank).**
+Suppose there are \(O(\log L)\) external banks, each
+with reciprocal mass bounded above and below, and
+\(O(1)\) harmonic draws per bank per edge. Under
+the CRT and fresh-bank hypotheses of (35), the sector
+of the untruncated signed root moment with
+\[
+    \sum_{B\in\mathcal P}|B|\log(2|B|)\le C_0N,
+    \qquad r_\times\le C_1N                                       \tag{42}
+\]
+has bound \(L^{-EN}\) for each fixed \(E\), with
+the graph precision depending on \(C_0,C_1,E\).
+This includes configurations with pairs of identical
+anchors in which each paired edge repeats every
+external label. Their total external rank can be
+of order \(N\log L\).
+
+For a fixed proposed numerical partition \(\mathcal P\),
+insert its exact equality mask by Möbius inversion
+over coarsenings \(\mathcal R\) of \(\mathcal P\).
+For each \(\mathcal R\), impose equality of the
+\(x_i\) in its blocks by a spanning forest of
+integer equalities. Each equality has a unit-mass
+additive Fourier integral. The Möbius coefficients
+have absolute sum at most \(N^{O(N)}\): there are
+at most \(N^N\) coarsenings, and each coefficient
+has magnitude \(\prod_{B\in\mathcal R}(k_B-1)!\),
+where \(k_B\) counts the \(\mathcal P\) blocks in
+\(B\). This product is at most \(N!\).
+For a fixed external label assignment the remaining
+external CRT compatibility indicators are handled
+as in (35). Collecting both sets of Fourier variables
+still gives only prescribed linear phases on the
+fresh displacements, so the fresh signed contraction
+applies.
+
+For the external mass, first split every equal-prime
+block into its intersections with the numerical
+anchor blocks. Inside \(B\), the counts satisfy
+\(k_{B,b}=O(|B|)\) in each bank \(b\). Summing
+all local partitions with their harmonic weights
+costs at most
+\[
+  \prod_{B,b} V_b^{-k_{B,b}} T_{k_{B,b}}(V_b)
+  \le \exp\!\left(O\!\left((\log L)
+                      \sum_B |B|\log(2|B|)\right)\right).
+\]
+A global partition is recovered by joining local
+blocks of the same bank along a forest of
+\(r_\times\) edges. Each forest edge has at most
+\(O((N\log L)^2)\) choices and costs one additional
+factor \(V_b^{-1}=O(1)\) in the weight. Dropping
+distinctness between prime blocks only increases
+the resulting bound. Thus summing the external
+cost over the sector (42), including the exact
+partition gates and the choice of \(\mathcal P\),
+costs \(L^{O(N)}\). The graph can pay that factor
+with an arbitrary fixed logarithmic saving per
+edge. This proves the proposition. The argument
+does not bound the complementary sector, including
+the case of many occurrences of a single numerical
+anchor that produces (37).

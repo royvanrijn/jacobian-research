@@ -280,6 +280,64 @@ any triple factorization.
 · [Fourth-moment bound](AVERAGED_GAUSSIAN_NORM_TRIPLES.md#a-uniform-upper-sieve-for-the-window)
 · [ZF and G](PRIMITIVE_NORM_BINARY_IMPORTED_INPUTS.md)
 
+### The all-actual fourth-moment bound
+
+Here is the upper sieve restricted to the actual indicators used in
+both lower bounds. Let \(\ell\in\{1,2,3,4\}\), put
+\(H=k_X(s)\), and fix distinct shifts \(a_1,\ldots,a_\ell\in[1,H]\).
+Let \(D=\prod_{i<j}|a_i-a_j|\), with empty product \(1\).
+For an inert prime \(p\equiv3\bmod4\) outside the divisors of \(D\)
+and with \(p>2\ell\), the \(\ell\) conditions \(v_p(t+a_i)=1\)
+exclude disjoint sets of \(p-1\) residues modulo \(p^2\).
+Every actual sum of two squares avoids valuation one: if \(p\mid x^2+y^2\),
+the nonsquareness of \(-1\) forces \(p\mid x,y\).
+The local excluded proportion is \(\ell(p-1)/p^2\).
+For squarefree \(d\) the CRT gives at most \(\ell^{\omega(d)}d\)
+excluded residues modulo \(d^2\) for the corresponding sieve atom.
+This also bounds its interval-count remainder.
+
+Apply the upper fundamental lemma at level \(X^{1/100}\) with
+prime cutoff \(z=X^{1/(100S)}\) for a sufficiently large fixed \(S\)
+depending on \(\ell\). The local proportions are at most \(\ell/p\),
+so the sieve dimension is at most \(\ell\) by Mertens' bound.
+The weighted remainders through that level sum to
+\(O_\ell(X^{1/50}(\log X)^{O_\ell(1)})\), since the weight is
+\(3^{\omega(d)}\) and a fixed factor of \(\omega(d)\) in an exponential
+is bounded by a fixed-order divisor function. Comparing the retained
+Euler factors with \((1-1/p)^\ell\) and restoring omitted primes gives
+\[
+ \sum_{X<t\le2X}\prod_{i=1}^{\ell} b(t+a_i)
+ \ll_\ell
+ X(\log X)^{-\ell/2}\prod_{p\mid D}(1+2\ell/p)+X^{1/40}.
+\]
+The product exponent follows from
+\(\sum_{p\le z,\ p\equiv3\bmod4}p^{-1}
+=\tfrac12\log\log z+O(1)\). For this last form,
+write \(\sigma=1+1/\log z\). Replacing the partial prime sums of \(1/p\)
+or \(\chi_4(p)/p\) by their full \(\sigma\)-sums costs \(O(1)\)
+by the Chebyshev upper bound and partial summation at \(z\).
+The Euler logarithms give \(\log\zeta(\sigma)=\log\log z+O(1)\)
+and \(\log L(\sigma,\chi_4)=O(1)\), the latter also following
+from the alternating series for \(L(\sigma,\chi_4)\).
+[Richert, upper fundamental lemma, Theorem 11.7](sources/richert-sieve-methods-1976.pdf)
+
+For \(\ell\ge2\) let \(v=\binom{\ell}2\) and
+\(j(n)=\prod_{p\mid n}(1+2\ell/p)\). The divisor expansion of
+\(j(n)^v\) has nonnegative squarefree coefficients \(c_d\),
+multiplicative with \(c_p=O_\ell(p^{-1})\).
+Thus \(\sum_{n\le H}j(n)^v\le H\prod_p(1+c_p/p)=O_\ell(H)\).
+For each pair of shifts the sum of \(j(|a_i-a_j|)^v\) over distinct
+tuples is \(O_\ell(H^\ell)\) by counting tuples with that gap.
+The collision product is bounded by \(\prod_{i<j}j(|a_i-a_j|)\),
+whose sum is \(O_\ell(H^\ell)\) by Hölder. The case \(\ell=1\)
+has no collision product. Since \(H\ll_s\sqrt{\log X}\),
+the first four factorial moments of \(Z_s\) are uniformly bounded.
+The ordinary fourth moment follows by grouping repeated indices.
+The first moment limit in (2) is classical: Landau's counting
+asymptotic gives the mean over \((X,2X]\), and translating the
+interval endpoints by at most \(H\) contributes \(O(H^2/X)\)
+after summing over shifts.
+
 **Proposition.** Under (2), for every fixed
 \(\lambda>(3+\sqrt3)/6\) a positive lower proportion of the
 intervals of length \(k_X(\lambda)\) contain at least three sums of
@@ -338,12 +396,25 @@ Hölder yields
        (\mathbb E Z_\lambda^4)^{3/4}\,
        \mathbb P(Z_\lambda\ge3)^{1/4}.
 \]
-This proves positive lower proportion in the claimed range below one.
-Monotonicity in the window length gives the remaining larger
-\(\lambda\). When \(\lambda>2\), use
+For an explicit form of the lower bound, put
+\(L_4(\lambda)=\limsup_X\mathbb E Z_\lambda^4<\infty\) and
+\(D=(6\lambda^2-6\lambda+1)/6>0\) for
+\((3+\sqrt3)/6<\lambda<1\). Choose
+\(\varepsilon=\min(\lambda/2,D/(T-\lambda))\).
+The margin is then at least \(D/2\), so (3) and Hölder give
+\[
+ \liminf_X\mathbb P(Z_\lambda\ge3)\ \ge\
+ \frac{1}{L_4(\lambda)^3}
+ \left(\frac{3D}{1+(T-\lambda)/\varepsilon}\right)^4 .
+\]
+Monotonicity in the window length gives positive lower proportion
+for the remaining larger \(\lambda\). When \(\lambda>2\), use
 \(Z_\lambda\le2+Z_\lambda\mathbf1_{Z_\lambda\ge3}\) and
-Hölder instead. The resulting lower bound uses the unconditional
-first moment and upper sieve.
+Hölder instead. The unconditional first moment and upper sieve give
+\[
+ \liminf_X\mathbb P(Z_\lambda\ge3)\ \ge\
+ \frac{(\lambda-2)^{4/3}}{L_4(\lambda)^{1/3}} .
+\]
 
 The two-scale argument is needed for this range. For
 \(0<\lambda\le1\), a variable supported on \(\{0,1,2\}\) with masses

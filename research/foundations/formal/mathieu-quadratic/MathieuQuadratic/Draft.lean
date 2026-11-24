@@ -5,6 +5,7 @@ import MathieuQuadratic.Extension
 import MathieuQuadratic.LaurentBaseChange
 import MathieuQuadratic.OrthogonalTrace
 import MathieuQuadratic.QuadraticCoordinates
+import MathieuQuadratic.RankTwoLaurent
 import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 
 /-!
@@ -389,6 +390,31 @@ theorem draft_canonical_trace_witness_of_form (q : QuadraticForm K (I → K))
     ⟨a', b', e, hu, ha 0, hb, ht.symm ▸ complementAlgebraicTrace_isGeometric a' b' ha hb⟩
   exact ⟨_, model.counterexample hM⟩
 
+private theorem chart_trace_isMathieu {J : Type*} [Fintype J] [DecidableEq J] [Nonempty J]
+    {q : QuadraticForm K (I → K)} (c : QuadraticDiagonalChart q J)
+    (h : IsMathieu (algebraicTrace c.weights)) : IsMathieu c.trace := by
+  intro f hp g
+  have hpf : Pure (algebraicTrace c.weights) (c.localization f) := by
+    intro m hm
+    rw [← map_pow]
+    exact hp m hm
+  obtain ⟨n, hn⟩ := h _ hpf (c.localization g)
+  refine ⟨n, fun m hm ↦ ?_⟩
+  change algebraicTrace c.weights (c.localization (g * f ^ m)) = 0
+  rw [map_mul, map_pow]
+  exact hn m hm
+
+/-- The main theorem in dimension one, with the Laurent input discharged. -/
+theorem draft_canonical_trace_unary_isMathieu (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft) (hdim : Fintype.card I = 1) :
+    IsMathieu (quadraticTrace q hn (by omega)) := by
+  obtain ⟨c⟩ := exists_fin_diagonal_chart q hn 1 hdim
+  rw [quadraticTrace_eq_chart hn _ c]
+  apply chart_trace_isMathieu
+  have hw : c.weights = fun _ : Fin 1 ↦ c.weights 0 := by funext i; fin_cases i; rfl
+  exact (congrArg (fun w : Fin 1 → Kˣ ↦ IsMathieu (algebraicTrace w)) hw).mpr
+    (algebraicTrace_unary_mathieu (c.weights 0))
+
 /-- The main dimension theorem for the canonical, chart-independent
 trace. The remaining input is Laurent necessity in rank two. -/
 theorem draft_canonical_trace_dimension_classification
@@ -415,17 +441,22 @@ theorem draft_canonical_trace_dimension_classification
     letI : Nonempty (Fin N) := ⟨⟨0, hN⟩⟩
     change IsMathieu (quadraticTrace q hn (by omega))
     rw [quadraticTrace_eq_chart hn _ c]
-    intro f hp g
-    have hpf : Pure (algebraicTrace c.weights) (c.localization f) := by
-      intro m hm
-      rw [← map_pow]
-      exact hp m hm
-    obtain ⟨n, h⟩ := algebraicTrace_lowRank_isMathieu N hN hN₂ c.weights
-      (lowRankLaurentTheorem_of_binary binary) _ hpf (c.localization g)
-    refine ⟨n, fun m hm ↦ ?_⟩
-    change algebraicTrace c.weights (c.localization (g * f ^ m)) = 0
-    rw [map_mul, map_pow]
-    exact h m hm
+    exact chart_trace_isMathieu c
+      (algebraicTrace_lowRank_isMathieu N hN hN₂ c.weights (lowRankLaurentTheorem_of_binary binary))
+
+/-- The dimension theorem with the remaining Laurent input restricted to
+polynomials whose Newton polygon contains zero in its interior. -/
+theorem draft_canonical_trace_dimension_classification_of_interior
+    (q : QuadraticForm K (I → K)) (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (N : ℕ) (hN : 0 < N) (hdim : Fintype.card I = N)
+    (inside : PlanarInteriorLaurentNecessity) :
+    let τ := quadraticTrace q hn (by omega)
+    (IsMathieu τ ↔ N ≤ 2) ∧
+      (3 ≤ N → ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+        NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+        AllOrderWitness τ F ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ (N - 2))) :=
+  draft_canonical_trace_dimension_classification q hn N hN hdim
+    (newtonLaurentNecessity_fin_two_of_interior inside)
 
 /-- The dimension classification for the constructed trace, with
 complex Laurent necessity as its low-rank input. In high rank the

@@ -26,7 +26,8 @@ the special orthogonal Reynolds projection on the complement is
 Mathieu–Zhao exactly when the form is definite or \(N\le2\).
 
 [PDF](mathieu-quadratic-complements.pdf) · [LaTeX source](main.tex) ·
-[Metadata](metadata.json) · [Verification record](verification.json)
+[Metadata](metadata.json) · [Verification record](verification.json) ·
+[HexagonMath source ZIP](mathieu-quadratic-complements-hexagon-source.zip)
 
 ## Build
 

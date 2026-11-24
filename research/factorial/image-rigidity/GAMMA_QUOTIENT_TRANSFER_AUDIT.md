@@ -148,6 +148,85 @@ profiles. For example, at \(r=2,u=3\) and rows \(3,4,5\), the
 contiguous minors beginning at columns \(0,1\) are respectively
 \(1/14632002\) and \(-7/139605768\).
 
+
+The order \(h=\lfloor\eta\rfloor+2\) is the first failure of
+sign regularity in this orientation. For \(s<h\) even the
+largest linear factor in the last product of (2a), obtained at
+\(i=k=0\), is at most \(s-1-\eta<0\). Hence every contiguous
+minor through order \(h-1\) has the strict sign
+\((-1)^{\binom s2}\). The discrete argument below, with all
+thresholds zero through that order, gives the same strict signs
+on arbitrary columns. In the reflected orientation \(r>u\),
+entries are positive and the first failure is at order two.
+
+
+
+There is an exact sign and zero pattern in the orientation \(u=Lr\),
+where \(L\ge1\) is an integer. Formula (2a) gives the order-\(h\)
+consecutive-column minor beginning at column \(k\) sign
+\((-1)^{\binom h2}\) if \(h\le L(k+1)\) and zero otherwise.
+When \(h\le L(k+1)\), every linear factor in the last product is
+strictly negative. If \(h>L(k+1)\), the factor for \(i=0\)
+contains zero. For **arbitrary** increasing columns
+\(k_1<\cdots<k_h\), the minor has the same weak sign and is
+nonzero exactly when
+\[
+                    k_j\ge j-2+\lceil j/L\rceil
+                    \qquad(1\le j\le h).                         \tag{2b}
+\]
+The row indices only need to be strictly increasing. For the
+physical array, take \(k_h\le m_1\).
+
+Here is the general discrete argument underlying (2b). Suppose
+the order-\(s\) determinant using **any** \(s\) ordered rows and
+\(s\) consecutive columns starting at \(k\) is zero exactly for
+\(k<K_s\) and has sign \(\epsilon_s\in\{1,-1\}\) otherwise.
+Assume \(K_s\) is nondecreasing. Entries in columns \(k<K_1\)
+are all zero, and the criterion is immediate at order one.
+Restrict to \(k\ge K_1\), fix \(h\) rows, and divide each column by
+the absolute value of its first entry. The new first row is
+constant \(\epsilon_1\). Form the one-step horizontal differences
+\(D_i(k)\) of the remaining normalized rows. For any \(s\)
+of these rows, their consecutive \(s\)-column determinant at
+\(k\), multiplied by \(\epsilon_1\), equals the normalized
+former consecutive determinant starting at \(k\) on those rows
+plus the first row. This is column subtraction from right to
+left followed by expansion along the constant first row.
+In particular, every entry of \(D(k)\) is zero for \(k<K_2\).
+On the surviving column interval, the difference matrix has
+thresholds \(K_{s+1}\) and signs \(\epsilon_1\epsilon_{s+1}\).
+
+For skipped columns \(k_j\), use the same subtraction. Each
+remaining column is now a sum of the \(D(\ell)\) over
+\(k_j\le\ell<k_{j+1}\). The intervals are disjoint and ordered,
+so determinant expansion chooses \(h-1\) increasing indices.
+The induction hypothesis gives every nonzero summand sign
+\(\epsilon_1\epsilon_h\), and its criterion is
+\(\ell_j\ge K_{j+1}+j-1\). Such a choice exists exactly when the
+largest index in each interval, \(k_{j+1}-1\), meets its bound.
+Expansion along the first row gives the original sign
+\(\epsilon_h\). Thus the original minor is nonzero exactly when
+\(k_j\ge K_j+j-1\) for all \(j\). Taking \(K_s=\lceil s/L\rceil-1\)
+proves (2b).
+
+Consequently, for \(r,u>0\) the raw matrix in increasing row
+and column order is weakly sign regular exactly when \(u/r\)
+is a positive integer. The orientation with \(r>u\) fails at
+order two even when \(r/u\) is an integer. For comparison,
+the \(u=0<r\) axis is strictly totally positive by (2a).
+On the \(r=0<u\) axis, \(M_{m,k}=k!/(mu+2)_k\). Remove the
+positive column factorials and clear row denominators to
+compute each consecutive-column determinant from polynomials
+\((mu+2+k+j)_{h-1-j}\) of strictly decreasing degrees.
+The determinant has sign \((-1)^{\binom h2}\), and the above
+argument extends strictness to arbitrary ordered columns.
+At \(r=u=0\) all rows coincide, giving rank one.
+These sign and rank results concern the raw moment matrix.
+The coefficient binomial factors and the two consecutive
+polynomial degrees still enter the coprimality problem.
+
+
+
 ## 3. All orders when one monomial exponent is zero
 
 Normalize as in [the shifted-window identity](SFC_INITIAL_RESULTANT_AND_SHIFTED_WINDOWS.md).
@@ -259,7 +338,247 @@ for each formula. The [shifted-resultant audit](SFC_SHIFTED_RESULTANT_POSITIVITY
 also certifies the full bivariate identities at these orders.
 Equations (4)–(6) prove the boundary theorem for every starting order.
 
-## 4. Other factorial obligations
+## 4. A shifted Gamma shape on the same boundary
+
+Let \(X,Y\) be independent Gamma variables of shapes \(1,\beta\),
+respectively, at rate one, with any real \(\beta>0\). For every
+integer \(u\ge0\) and every \(m\ge1\), the two moments of
+\(Y^u(aX+bY)\) at orders \(m,m+1\) have no common projective
+zero over \(\mathbb C\). Interchanging the variables gives the
+reflected statement with the shifted shape on the variable
+carrying the common monomial power. This includes the ordinary
+exponent-axis claim at \(\beta=1\). For positive real \(\beta\)
+the polynomial coprimality also holds over any extension of the
+coefficient field \(\mathbb Q(\beta)\), by the Bézout identity.
+
+Indeed, on the chart \(a=1\), the order-\(m\) moment divided by
+\(m!(\beta)_{mu}\) is \(P_{m,q}(s)\) of (2) with \(q=mu+\beta-1\).
+The Gamma moments \(\mathbb E[X^j]=j!\) and
+\(\mathbb E[Y^j]=(\beta)_j\) give this directly from the
+binomial expansion. Pure monomials and real candidate roots
+are handled as in Section 3, since the product density is
+positive on the positive quadrant. For \(u=0\), the upper
+polynomial adds a single nonzero monomial to the lower one
+with the same \(q=\beta-1\).
+
+Suppose \(u\ge1\), so \(q>0\). The lower root bound is
+\[
+ |s|\le \frac{m}{m+q}<1,\qquad
+ |1-s|\ge \rho=\frac q{q+m}.
+\]
+The successive coefficient ratios in (2) establish the first
+inequality. On \(|s|<1\) define \((1-s)^{q+1}\) by the analytic
+logarithm real at \(s=0\). The same Pascal calculation proves
+(3) for real \(q\), and the successive \(u\) unit shifts preserve
+the physical parameters in (4). In particular its expression
+\(R(v)\) is polynomial in \(v=1-s\) even for noninteger \(q\).
+For \(u=1\) it is linear with real coefficients and nonzero
+leading coefficient.
+
+For \(u\ge2,\ m\ge4\), use \(L,c_i\) from Section 3 with this
+new value of \(\rho\). The ratio formulas now read
+\[
+ \frac{a_{i+1}\rho^{i+1}}{a_i\rho^i}
+ =1+\frac{q-m(i+1)}{(q+m)(q+i+1)},\qquad
+ \frac{c_i}{c_{i-1}}
+ =1-\frac{m(i+1)}{(q+m)(q+i+1)}.
+\]
+In the second formula \(1\le i<u\), so \(q+i+1>mu\) and each
+loss is below \(1/(q+m)<1/(m(u+1)-1)\). Consequently
+\(c_i/c_0\ge1-i/(m(u+1)-1)>1-1/m\), while
+\(c_0=(m+1)/(q+1)\le(1+1/m)/u\). For the first formula,
+all factors preceding the last are at least one. The last is
+also at least one if \(q\ge mu\). Otherwise the penultimate
+factor is at least \(1+1/D_{u-2}\) and the final factor is
+greater than \(1-1/D_{u-1}\), where
+\(D_i=(q+m)(q+i+1)\). Since \(D_{u-1}-D_{u-2}=q+m>1\),
+their product is greater than one. Thus \(L\ge1\) in every case.
+
+The positive root \(w_0\) of \(R(\rho w)\) is still unique.
+If \(w_0\le1\), every root \(w\) satisfies \(|w|\le w_0\):
+the root equation and the triangle inequality give
+\(L\le\sum_i c_i/|w|^{u-i}\), a strictly decreasing function of
+\(|w|>0\). At equality the terms of degrees \(0\) and \(1\)
+must have the same argument, which forces \(w>0\).
+Hence each nonreal root has \(|w|<1\) in this case.
+If \(w_0>1\), the bounds on the \(c_i\) and \(L\) give
+\(w_0\le1+3/(mu)\) by the same estimate after (5).
+Dividing by \(w-w_0\) gives strictly increasing positive
+quotient coefficients by the same recurrence and inequalities
+in Section 3. Thus every nonreal zero of \(R(v)\) satisfies
+\(|v|<\rho\). This excludes a common nonreal zero of the
+physical moments for \(m\ge4\).
+
+For the remaining starts, the resultant of the two shifted
+polynomials has nonnegative ordinary coefficients in \(u,\beta\)
+and strictly positive coefficient of \(\beta^{m(m+1)}\). The
+complete finite certificates are as follows.
+
+| Starting order \(m\) | Total degree bound | Positive coefficients | Coefficient of \(\beta^{m(m+1)}\) |
+|---:|---:|---:|---:|
+| 1 | 2 | 5 | \(1/2\) |
+| 2 | 6 | 25 | \(1/36\) |
+| 3 | 12 | 85 | \(1/13824\) |
+
+To verify the certificate, the coefficient of \(s^j\) is
+\((mu+\beta)_j/j!\), of total degree at most \(j\).
+Every Sylvester product uses indices summing to \(m(m+1)\),
+as in (6), so evaluating the fixed-size Sylvester determinant
+at integer pairs \((i,j)\), \(i,j\ge0,\ i+j\le m(m+1)\), and
+interpolating in the product binomial basis determines the
+whole polynomial. The standard-library replay below performs
+this calculation directly. These determinants are strictly
+positive for \(u\ge0,\beta>0\), completing the assertion.
+This extends the boundary result for
+`GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY` to this shifted
+shape. The actual univariate Gamma families and the
+two-positive unequal-exponent linked beta problem remain
+separate.
+
+
+
+## 5. Two Gaussian blocks, fixed markers and sharp nilpotence
+
+Take independent standard, variance-one Gaussian coordinates
+\(x_1,x_2,y_1,\ldots,y_d\), \(d\ge1\), and put
+\[
+ S=(x_1^2+x_2^2)/2,\qquad T=(y_1^2+\cdots+y_d^2)/2,\qquad
+ H=T^u(A S+B T),\qquad u\in\mathbb N_0.
+\]
+Then \(S,T\) are independent Gamma variables of shapes \(1,d/2\)
+at rate one. In particular, Section 4 rules out an ordinary
+Gaussian zero pair in every two consecutive positive orders
+for \((A,B)\ne(0,0)\). The same result holds with any fixed
+homogeneous polynomial marker \(C(y)\) of even degree \(2j\)
+and nonzero Gaussian mean. The restriction to the \(y\)-block
+preserves the shape-one \(S\)-variable.
+
+The exact moment identity for this marker is
+\[
+ \mathbb E[C(y)H^m]
+   =\mathbb E[C(y)]\,\mathbb E_{1,\ d/2+j}
+                  [T^{um}(A S+B T)^m].                           \tag{7}
+\]
+On the right, the subscripts are the shapes of \(S,T\). Indeed,
+Gaussian rescaling of the \(y\)-block against \(e^{tT}\) gives
+\(\mathbb E[C(y)e^{tT}]=\mathbb E[C(y)](1-t)^{-d/2-j}\)
+for real \(t<1\); differentiation at zero gives the identity
+for all polynomial powers of \(T\). For the monomial marker
+\(C=y^{2\nu}\), the scalar is
+\(\prod_{i=1}^{d}(2\nu_i-1)!!\), with \((-1)!!=1\), and
+\(j=|\nu|\). A marker with an odd \(y_i\) exponent is killed
+by the corresponding sign change. This is the same shape shift as
+`FACT-PRIME-POWER-MARKED-RADIAL-SFC-LEM-RADIAL-TILT`, used here
+in a phase depending on two independent blocks.
+
+### Universal coefficient statement
+
+Let \(\mathcal R\) be any unital commutative \(\mathbb Q\)-algebra
+and \(C\) have rational coefficients with \(\mathbb E[C]\ne0\).
+Use the Gaussian moment map coefficientwise over \(\mathcal R\).
+If the literal marked moments in orders \(m,m+1\) vanish, then
+\[
+                  (A,B)^{2m}=0,\qquad H^{2m}=0.                    \tag{8}
+\]
+The coefficient-ideal exponent is sharp for each fixed order
+pair \(m,m+1\), fixed \(u,d\) and eligible marker.
+
+To prove this, take universal symbols \(a,b\) over \(\mathbb Q\).
+After removing the rational units
+\(\mathbb E[C]\,\ell!(d/2+j)_{u\ell}\) at each order \(\ell\),
+the moment forms are
+\[
+        F_\ell(a,b)
+         =\sum_{k=0}^{\ell}
+                \frac{(u\ell+d/2+j)_k}{k!}\,a^{\ell-k}b^k .
+\]
+Section 4 shows that \(F_m,F_{m+1}\) are coprime in
+\(\mathbb Q[a,b]\), since they have no common projective complex
+zero. Hence they form a regular sequence. The standard
+two-form Hilbert calculation gives
+\[
+ \operatorname{Hilb}\bigl(\mathbb Q[a,b]/(F_m,F_{m+1}),t\bigr)
+       =\frac{(1-t^m)(1-t^{m+1})}{(1-t)^2}.
+\]
+Its length is \(m(m+1)\), and its top degree is \(2m-1\)
+with dimension one. Thus \((a,b)^{2m}\) lies in the moment
+ideal and \((a,b)^{2m-1}\) does not. Evaluate the universal
+forms at \(a=A,b=B\) to get the first part of (8).
+For every \(N\ge1\), the coefficients of \(H^N\) generate
+exactly \((A,B)^N\). For each \(k=0,\ldots,N\), the monomial
+\(x_1^{2(N-k)}y_1^{2(uN+k)}\) has coefficient
+\(2^{-(u+1)N}\binom Nk A^{N-k}B^k\), a rational unit times
+that coefficient monomial. The first-block degree separates
+these terms, and the reverse inclusion follows by expansion.
+This proves literal nilpotence and its sharpness by taking
+\(\mathcal R\) to be the universal moment quotient itself.
+In particular every polynomial-marked moment of \(H^n\)
+vanishes for \(n\ge2m\) if the two selected moments vanish.
+Over a reduced coefficient ring, the two equations force
+\(A=B=0\).
+
+The regular-sequence argument is the same fixed-pair mechanism
+as in [the retained coefficient theorem, Section 1](SUPPORT_UNIFORM_COEFFICIENT_NILPOTENCE_AND_RADIAL_GAUSSIAN.md),
+`FACTORIAL-SUPPORT-UNIFORM-COEFFICIENT-NILPOTENCE-AND-RADIAL-GAUSSIAN`.
+The receiver here is an all-order class with two radial blocks.
+Its two moments are different from the ordinary univariate
+binomial pair used in that node. For arbitrary polynomial
+markers the boundary documented by
+`FACT-MARKED-RADIAL-UNIVERSAL-POLYNOMIAL-MARKER-EXTENSION`
+persists here. At \(u=0,\ d=2,\ H=T\), the marker
+\(T^2-6T+6\) has mean \(2\) and kills the moments at orders
+one and two, by the factorial moments of the Gamma1 law.
+
+### One-sided additions and a power of the Laplacian
+
+Use first-block Witt coordinates \(z,w\), so \(S=zw\), and
+assign weights \(1,-1\) to \(z,w\) and weight zero to all
+\(y_i\). The Gaussian map kills nonzero weights.
+If \(J\) has all its weights at least \(\gamma\ge1\), then
+\(P=H+J\) has exactly the same moments as \(H\) with any
+marker \(C(y)\) in (7): every term containing \(J\) has
+positive weight. This is the vacuum and weight-zero case of
+`GAUSSIAN-ANGULAR-CORE-ACTUAL-MODULE-INVARIANCE` in
+[the retained angular-core theorem, (A3)–(A5)](../../moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md).
+Over \(\mathbb C\), purity of \(P\) and eventual vanishing for
+every fixed polynomial marker are each equivalent to \(H=0\).
+For nonzero \(H\) the unmarked sequence has a nonzero moment
+in every adjacent pair. If \(H=0\), then \(QJ^n\) has strictly
+positive weight as soon as \(n\gamma>-\min\mathrm{wt}(Q)\),
+for each fixed nonzero marker \(Q\).
+
+More generally, the two vanishing moments in (7) for \(P\)
+imply (8) for the core over any \(\mathbb Q\)-algebra in
+Wick coordinates. In \(QP^n\), the terms with more than
+\(\max(0,\lfloor-\min\mathrm{wt}(Q)/\gamma\rfloor)\) copies
+of \(J\) have positive weight. All other terms contain
+\(H^{2m}\) once \(n\) is at least \(2m\) plus that bound.
+This gives a literal fixed-marker cutoff for \(P\); the
+one-sided summand itself need not be nilpotent.
+
+If \(J\) is also homogeneous of spatial degree \(2(u+1)\),
+let \(\mathscr D=2\partial_z\partial_w+\sum_i\partial_{y_i}^2\).
+The homogeneous Gaussian contraction formula
+\(\mathbb E[P^n]=\mathscr D^{(u+1)n}P^n/
+ (2^{(u+1)n}((u+1)n)!)\) gives a scoped generalized-vanishing
+consequence for the operator \(\mathscr D^{u+1}\).
+Indeed, zero contractions of \(P^m,P^{m+1}\) force (8) for the
+core. For a polynomial marker \(Q\) of degree \(b\) and
+minimum weight \(q\), the contraction
+\(\mathscr D^{(u+1)n}(QP^n)\) is zero for
+\(n\ge2m+\lfloor(b-q)/\gamma\rfloor\).
+Each surviving monomial after differentiation has degree
+at most \(b\); \(\mathscr D\) preserves angular weight, so
+terms with \(q+j\gamma>b\), where \(j\) is the number of
+copies of \(J\), are killed. For the other terms the given
+bound ensures at least \(2m\) copies of \(H\). If \(J=0\) the
+bound is simply \(n\ge2m\). This conclusion applies to the
+specified homogeneous phases and does not use the general
+dimension classification `MOMENTS-GVC-CLASSIFICATION`.
+
+
+
+## 6. Other factorial obligations
 
 The fixed-shape auxiliary production matrix in the
 [cyclic Wronskian note](gap_three_hurwitz_structure.tex) already
@@ -274,7 +593,7 @@ terms. Thus `FACTORIAL-GAP3-HURWITZ-TN`,
 The explicit eventual cutoff for the ordinary univariate binomial
 concerns a different support family.
 
-## 5. Cumulant tails and zero-geometry tests
+## 7. Cumulant tails and zero-geometry tests
 
 The [Nuttall proof, Sections 2–6](https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/nuttall-cumulants/PROOF.md)
 derives signs for the theta cumulants for all sufficiently large
@@ -394,7 +713,14 @@ The pinned KVZ diagnostic passed all 115 exact rational checks,
 and all 20 recorded source hashes matched the pinned revision.
 Here, exact rational arithmetic matched (1) on 32 test grids and
 (2a) on 120 test grids, including positive, negative and zero
-determinants. Direct polynomial expansion matched (4) on 49 pairs
+determinants. Rational elimination also matched the skipped-column
+classification on 23,792 minors, using rows from 7 through 12,
+columns from 0 through 7, orders 1 through 5, and the profiles
+((1,1),(1,2),(2,4),(2,6),(1,4),(4,0),(0,4),(0,0)).
+The exact first-failure orders also agreed with 1,915 rational
+determinant controls on the profiles (2,3), (2,5), (3,10), (4,19),
+(3,2), and (5,2).
+Direct polynomial expansion matched (4) on 49 pairs
 of integer parameters. The determinant proofs above give the
 universal identities.
 
@@ -422,4 +748,64 @@ for m, (denominator, coefficients) in enumerate(quotients, start=1):
             coefficient * u**j for j, coefficient in enumerate(coefficients)
         )
         assert denominator * resultant(lower, upper, s) == expected
+```
+
+The shifted-shape certificates use 125 exact bivariate interpolation
+values in total. The following replay uses rational elimination and
+ordinary-coefficient reconstruction by two-variable finite differences.
+
+```python
+from fractions import Fraction
+from math import comb, prod
+
+def rising(x, length):
+    return prod(x + k for k in range(length))
+
+def sylvester_at(m, u, beta):
+    n = m + 1
+    def row(order):
+        return [Fraction(rising(order*u + beta, j), prod(range(1, j+1)))
+                for j in range(order, -1, -1)]
+    lower, upper = row(m), row(n)
+    matrix = ([[0]*i + lower + [0]*(n-1-i) for i in range(n)] +
+              [[0]*i + upper + [0]*(m-1-i) for i in range(m)])
+    determinant = Fraction(1)
+    for j in range(m+n):
+        pivot = next((i for i in range(j, m+n) if matrix[i][j]), None)
+        if pivot is None:
+            return Fraction(0)
+        if pivot != j:
+            matrix[j], matrix[pivot] = matrix[pivot], matrix[j]
+            determinant = -determinant
+        determinant *= matrix[j][j]
+        for i in range(j+1, m+n):
+            factor = matrix[i][j] / matrix[j][j]
+            for k in range(j+1, m+n):
+                matrix[i][k] -= factor * matrix[j][k]
+    return determinant
+
+binomial_polynomials = [[Fraction(1)]]
+for j in range(12):
+    p = binomial_polynomials[-1]
+    binomial_polynomials.append(
+        [(a - j*b)/(j+1) for a,b in zip([0]+p,p+[0])]
+    )
+
+for m, count, denominator in [(1,5,2), (2,25,36), (3,85,13824)]:
+    degree = m*(m+1)
+    indices = [(i,j) for i in range(degree+1) for j in range(degree+1-i)]
+    values = {(i,j): sylvester_at(m,i,j) for i,j in indices}
+    coefficients = dict.fromkeys(indices, Fraction(0))
+    for i,j in indices:
+        difference = sum(
+            (-1)**(i+j-a-b)*comb(i,a)*comb(j,b)*values[a,b]
+            for a in range(i+1) for b in range(j+1)
+        )
+        for a,c in enumerate(binomial_polynomials[i]):
+            for b,d in enumerate(binomial_polynomials[j]):
+                coefficients[a,b] += difference*c*d
+    assert all(value >= 0 for value in coefficients.values())
+    assert sum(value > 0 for value in coefficients.values()) == count
+    assert coefficients[0,degree] == Fraction(1,denominator)
+    print(m, len(values), count, coefficients[0,degree])
 ```

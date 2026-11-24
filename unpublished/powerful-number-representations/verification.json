@@ -12,7 +12,10 @@
     "Verified all consecutive-case cost certificates and the even-residue obstruction in exact rational arithmetic.",
     "Checked omitted-product grouping in the signed coefficient form, including per-prime minimum valuation and recovery of the non-omitted coordinates.",
     "Checked 19,157 grouped canonical valuation cases and verified the even-residue rational certificates and the grouped height-loss branch.",
-    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all eight PDF pages."
+    "Checked the surface-only moment bounds at all offsets, the aligned graph inequalities including all four small-coordinate cases, and families attaining the surface-only constants in the normalized model for u>v.",
+    "Verified the first fixed-offset obstruction in exact arithmetic for both representatives modulo 60 of r congruent to 2 modulo 30, with a symbolic gcd proof for the entire progression.",
+    "Generated an exact branch certificate for (u,v,r)=(2,1,60) and a rational witness for (3,1,62). The standard-library verifier accepted both and rejected corrupted copies.",
+    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all ten PDF pages."
   ],
   "numerical_exponents": [
     {
@@ -55,8 +58,8 @@
     }
   ],
   "edition_sha256": {
-    "main.tex": "6f4644928df4744c9548a5e2ae898bba0283dce8cef395a5f4fca9ed23213b7f",
-    "paper.pdf": "bbe1776285b483c4a888480fa21c68cfd482685c5418c2bd418c1df0396afff9"
+    "main.tex": "42fafa27f454c75cc0d421af451fe4ed89d05eaf16000ccbb5b95e68f04681f5",
+    "paper.pdf": "a2e8805bdeda81c6cc59fbb05d5995a4fc730beb6972f0cf3613a2a80352fd3b"
   },
   "independent_pdf_only_review": "unperformed",
   "external_specialist_review": "unperformed",
@@ -147,5 +150,38 @@
         9
       ]
     }
+  },
+  "fixed_offsets": {
+    "surface_saving_v0": "2",
+    "surface_saving_v1": "8/5",
+    "surface_saving_v_at_least2": "1+(6*v+9)/(4*v^2+10*v+12)",
+    "aligned_graph_saving": "2",
+    "first_grouped_obstruction": {
+      "u": 3,
+      "v": 1,
+      "r_mod_30": 2,
+      "D": "148/25",
+      "denominator": 25,
+      "A": [
+        9,
+        7,
+        9
+      ],
+      "B": [
+        9,
+        9,
+        7
+      ],
+      "C": [
+        7,
+        7,
+        0,
+        7,
+        0,
+        4
+      ]
+    },
+    "checker": "research/arithmetic/verify_powerful_fixed_offset_constraints.py",
+    "checker_sha256": "e3eba7cc6c95a7cadb36448946d153f19acedbe00bf1cd2ab0eeab99e43427c1"
   }
 }

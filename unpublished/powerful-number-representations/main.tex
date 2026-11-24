@@ -33,11 +33,10 @@ every fixed \(k\ge3\). For primitive triples of orders
 \(p=r+u,\ q=r+v,\ r\) with fixed offsets, a mixed-exponent graph gives
 a saving \(2/r^2+O_{u,v}(r^{-3})\) over \(1/p+1/q\) when the four
 gcds of the first two exponents on the summand sides are at least four.
-For \((p,q,r)=(r+2,r+1,r)\), a coefficient-uniform point-counting
-estimate makes the graph bounds effective with gcd two and gives
-a leading saving of \(2/r^2\) for all sufficiently large \(r\).
-For even \(r\) we group two omitted coordinates into a single
-square variable.
+For unrestricted fixed offsets, the surface point count gives an
+explicit leading saving greater than \(1/r^2\), reaching \(2/r^2\)
+when \(v=0\). Combining it with the graphs gives the same leading
+saving under two aligned gcd conditions and for consecutive orders.
 \end{abstract}
 \maketitle
 
@@ -138,9 +137,28 @@ For \(p=r+u\) and \(q=r+v\) with fixed \(u\ge v\ge0\), the saving
 is \(2/r^2+O_{u,v}(r^{-3})\) as \(r\) tends to infinity.
 \end{theorem}
 
-The consecutive orders do not satisfy the four gcd conditions.
-We use Browning and Verzobio's point-counting theorem to control
-the omitted-coordinate heights before applying the graphs.
+\begin{theorem}\label{thm:fixed-offset}
+Fix integers \(u\ge v\ge0\), and put \(p=r+u\), \(q=r+v\).
+For all sufficiently large \(r\) and every \(\eps>0\),
+\[
+ N_{p,q,r}(X)\ll_{u,v,r,\eps}
+ X^{1/p+1/q-\sigma_v/r^2+O_{u,v}(r^{-5/2})+\eps},
+ \qquad
+ \sigma_v=
+ \begin{cases}
+ 2,&v=0,\\
+ 8/5,&v=1,\\
+ 1+\dfrac{6v+9}{4v^2+10v+12},&v\ge2.
+ \end{cases}
+\]
+These savings use the surface bound and the elementary cost
+inequalities. If \(\gcd(p,q)\ge2\) and \(\gcd(p+1,q+1)\ge2\),
+one can take \(\sigma_v=2\).
+\end{theorem}
+
+For \(p=q=r+u\) the two aligned gcd conditions hold automatically.
+They also hold, for instance, when \(p=q+6\) and \(q\equiv2\pmod6\).
+The consecutive orders require the grouped-coordinate graph.
 
 \begin{theorem}\label{thm:consecutive}
 Let \(p=r+2\) and \(q=r+1\). For sufficiently large \(r\) and
@@ -509,32 +527,33 @@ Here \(q\equiv0\pmod{28}\) and \(q\equiv-1\pmod{95}\).
 The first gcd is exactly \(4\), and the other three are divisible
 by \(19,7,5\), respectively.
 
-\section{Consecutive orders}
-For a dyadic box for \((r+2,r+1,r)\), write \(S_A,S_B,S_C\)
-for the sums of the logarithmic coordinate sizes to base \(X\).
-Let \(\Delta\) be the least available counting exponent from
-the pair counts, the point-counting estimate below, and the
-signed graph bounds. In each graph use \(X^{rS_T}\) as a lower
-bound for the modulus, where \(T\) is the fixed side. A box then
-contributes \(O_{r,\eps}(X^{\Delta+\eps})\).
+\section{Fixed offsets}
+Consider a box for \((p,q,r)=(r+u,r+v,r)\) with \(u,v\) fixed.
+Write \(S_A,S_B,S_C\) for the sums of the logarithmic coordinate
+sizes to base \(X\). Let \(\Delta\) be the least counting exponent
+from the available estimates, before the \(X^\eps\) factors.
+Since any two summands determine the triple, \(\Delta\le S_T+S_{T'}\)
+for any distinct sides \(T,T'\). Every \(S_T\le1/r\).
+We may assume \(\Delta\ge2/r-(u+v+2)/r^2\), since smaller
+exponents already give the desired bounds. Then
+\(S_T=1/r+O_{u,v}(r^{-2})\) on each side.
 
-We may assume \(\Delta\ge2/r-5/r^2\).
-Any pair of summands determines the triple and \(S_T\le1/r\).
-Consequently \(1/r-5/r^2\le S_T\le1/r\) for each \(T\).
 Normalize the coordinate sizes on each side by its sum to get
-probability vectors \(A,B,C\), and put
+probability vectors \(A,B,C\), with offsets \(d_A=u,d_B=v,d_C=0\).
+Write
 \[
- m_A=\sum_j(j+2)A_j,\qquad m_B=\sum_j(j+1)B_j,\qquad m_C=\sum_j jC_j.
+ m_T=\sum_j(j+d_T)T_j,\qquad D=\max(m_A+m_B,m_A+m_C,m_B+m_C).
 \]
-Let \(D=\max(m_A+m_B,m_A+m_C,m_B+m_C)\). The size constraints give \(S_T(r+m_T)\le1\), so \(m_T=O(1)\)
-uniformly. The pair counts now yield
+The size constraints \(S_T(r+m_T)\le1\) bound all three costs
+in terms of \(u,v\). The pair counts imply
 \begin{equation}\label{eq:consecutive-cost}
-                    \Delta\le 2/r-D/r^2+O(r^{-3}).
+ \Delta\le 2/r-D/r^2+O_{u,v}(r^{-3}),\qquad
+ 1/p+1/q=2/r-(u+v)/r^2+O_{u,v}(r^{-3}).
 \end{equation}
 
 Write \(\alpha,\beta,\chi\) for the maxima of \(A,B,C\), respectively.
-Bounded first moments imply that each is bounded below by an
-absolute positive constant: at least half of each vector's mass
+Bounded first moments imply that each is bounded below by a
+positive constant depending only on \(u,v\): at least half of each vector's mass
 lies in a bounded set of initial coordinates. Fix all coordinates
 except the three attaining the maxima. The remaining equation
 has three nonzero coefficients, exponents at least \(r\), and
@@ -547,9 +566,43 @@ at most \(2r^{-3/2}\) to the exponent. We therefore have
 \(\Delta\le S_A+S_B+S_C-S_A\alpha-S_B\beta-S_C\chi+3r^{-3/2}\).
 It follows that
 \begin{equation}\label{eq:consecutive-max}
-                    \alpha+\beta+\chi\le1+O(r^{-1/2}).
+                    \alpha+\beta+\chi\le1+O_{u,v}(r^{-1/2}).
 \end{equation}
 
+\subsection{Savings from the surface estimate}
+A probability vector of maximum \(z\) has mean at least
+\(h-\binom{h+1}{2}z\) for every integer \(h\ge1\).
+Indeed, replacing each index \(j\ge h\) by \(h\) leaves a
+deficit at most \(\sum_{j<h}(h-j)z\). Write
+\(F_\lambda=m_A+\lambda m_B+(1-\lambda)m_C\le D\).
+
+For \(v=0\), use the mean bounds with \(h=2\) on \(A\)
+and \(h=3\) on \(B,C\). Then
+\[
+ F_{1/2}\ge u+5-3(\alpha+\beta+\chi)
+          \ge u+2-O_u(r^{-1/2}).
+\]
+For \(v=1\), use \(h=2\) on \(A\), a mixture with weights
+\(3/4,1/4\) of the bounds at \(h=2,3\) on \(B\), and \(h=5\)
+on \(C\). This gives
+\[
+ F_{4/5}\ge u+\tfrac{28}{5}-3(\alpha+\beta+\chi)
+          \ge u+v+\tfrac85-O_u(r^{-1/2}).
+\]
+For \(v\ge2\), put \(h=2v+2\), \(L=\binom{h+1}{2}\),
+\(\lambda=L/(L+3)\), and \(w=(3\lambda-1)/2\).
+Mix the bounds at \(h=1,2\) on \(A\) with weights \(1-w,w\),
+use the bound at two on \(B\), and the bound at \(h\) on \(C\).
+All three maximum coefficients in \(F_\lambda\) are \(3\lambda\).
+Using \eqref{eq:consecutive-max} gives
+\[
+ D\ge u+v+1+\frac{3(h-v-1/2)}{L+3}-O_{u,v}(r^{-1/2}).
+\]
+The coefficient is the stated \(\sigma_v\), and
+\eqref{eq:consecutive-cost} yields the surface-only part of
+Theorem~\ref{thm:fixed-offset}.
+
+\subsection{The aligned graphs}
 Now omit sets of coordinates of bounded indices on two sides,
 all with powers divisible by \(g\ge2\). Write \(a,b\) for the two
 sums of omitted normalized masses. The height in \eqref{eq:graph}
@@ -557,23 +610,52 @@ satisfies
 \[
           2\log_X H=\frac2g\bigl(a+b+O(r^{-1})\bigr).
 \]
-Since the fixed modulus is at least \(X^{1-5/r}\), the height factor
-is bounded whenever \(a+b\le1-K/r\) for a sufficiently large
-absolute \(K\). This condition always holds for singleton omissions
-of bounded indices: by \eqref{eq:consecutive-max} and the positive
-lower bound for the third maximum, \(a+b\le1-c\) for an absolute
-\(c>0\). Whenever the height factor is bounded, adding the count for
+The fixed modulus is at least \(X^{rS_T}\) for the fixed side \(T\),
+hence at least \(X^{1-O_{u,v}(1/r)}\). The height factor is bounded
+if \(a+b\le g/2-K/r\) with \(K\) sufficiently large for the fixed
+offsets and indices. This condition holds for singleton omissions:
+\eqref{eq:consecutive-max} and the positive lower bound for the
+third maximum give \(a+b\le1-c\) for some \(c>0\).
+Whenever the height factor is bounded, adding the count for
 the fixed side to \eqref{eq:graph} gives
 \[
  r\Delta\le 1+\max\{1-a,1-b,\tfrac32-\max(a+b/2,b+a/2)\}
               +O(r^{-1}).
 \]
-In particular, for an absolute constant \(K\), either
+For a sufficiently large \(K\) depending only on the fixed offsets
+and indices, either
 \(a\le K/r\), or \(b\le K/r\), or both
 \begin{equation}\label{eq:consecutive-pair}
                2a+b\le1+O(r^{-1}),\qquad a+2b\le1+O(r^{-1}).
 \end{equation}
 
+For the two aligned gcd conditions, apply these alternatives
+to \((A_0,B_0)\) and \((A_1,B_1)\). Call a mass small if it
+is \(O(1/r)\) with the constant from the alternatives. If \(A_0\)
+is small then
+\[
+ m_A+m_B\ge u+v+3-2A_0-A_1-B_0\ge u+v+2-O_{u,v}(r^{-1/2}),
+\]
+by \eqref{eq:consecutive-max}; a small \(B_0\) is symmetric.
+The first graph is therefore available. If \(A_1\) is small, then
+\[
+ \begin{aligned}
+ m_A+m_B &\ge u+v+5-3A_0-2A_1-A_2-2B_0-B_1\\
+         &\ge u+v+4-(A_0+A_2+B_0+B_1)-O_{u,v}(r^{-1})
+          \ge u+v+2-O_{u,v}(r^{-1}).
+ \end{aligned}
+\]
+Here the first graph gives \(2A_0+B_0\le1+O(r^{-1})\);
+a small \(B_1\) uses the opposite orientation. Otherwise both
+graphs give \(A_i+B_i\le2/3+O(r^{-1})\) for \(i=0,1\), and
+\[
+ m_A+m_B\ge u+v+4-2(A_0+B_0)-(A_1+B_1)
+          \ge u+v+2-O_{u,v}(r^{-1}).
+\]
+This proves the graph part of Theorem~\ref{thm:fixed-offset}.
+
+\section{Consecutive orders}
+Now specialize the preceding box constraints to \(u=2,v=1\).
 Call a mass small if it is at most \(K/r\), increasing \(K\) to
 cover both the height threshold and the graph alternatives.
 We prove \(D\ge5-O(r^{-1/2})\). Write \(L\preceq1\) for a
@@ -673,6 +755,49 @@ The exponent differences are \(1,2,3,1,1,2\), and all six
 gcds with \(r+1\) are one in these residues. The grouped pair
 has \(s+C_0=57/65\) and \(2s+C_0=99/65\), which violates
 its graph inequality.
+
+\section{Limits of the fixed-offset box constraints}
+For \(u>v\), the surface-only cost bounds in
+Theorem~\ref{thm:fixed-offset} are optimal under
+\(\alpha+\beta+\chi\le1\) and the elementary moment bounds.
+For \(v=0\), take \(A\) flat on its first two entries and \(B,C\)
+flat on their first four. For \(v=1\), take
+\(A=(7,7,1)/15\) and let \(B,C\) be flat on their first three
+and five entries respectively. For \(v\ge2\), put \(h=2v+2\)
+and prescribe maxima \(1/2,\,1/2-\chi,\,\chi\) with
+\(\chi=(h+1)/(h(h+1)+6)\). Fill each vector from index zero with
+its maximum until all its mass is used. Then
+\[
+ m_A=u+\tfrac12,\qquad
+ m_B=v+\tfrac12+3\chi,\qquad m_C=v+\tfrac12+3\chi .
+\]
+The value of \(D\) in each example is \(u+v+\sigma_v\).
+When \(u=v\ge1\), the surface constraints allow \(A=B=(2,2,1)/5\)
+and \(C\) flat on five entries. This gives
+\(D\le2u+9/5<2u+2\), so further constraints are required there.
+
+The first offset pair, ordered by \(u\) and then \(v\), for
+which the limiting surface and grouped graph constraints can
+fail to imply the doubled saving is \((u,v)=(3,1)\). For
+\(r\equiv2\pmod{30}\), take
+\[
+       (A,B,C)=\tfrac1{25}\bigl((9,7,9),(9,9,7),(7,7,0,7,0,4)\bigr).
+\]
+The maxima sum to one and the costs are \(4,48/25,48/25\),
+so \(D=148/25<6\).
+Within each side, any two distinct exponents carrying positive
+mass are coprime in this progression. On \(A\) and \(B\) the
+only nonconsecutive differences are two, between odd exponents.
+On \(C\), differences among the odd exponents are two or four,
+and \(r\) is coprime to \(r+1,r+3,r+5\).
+Thus any omitted group of common divisor at least two contains
+at most one positive coordinate on each side. An offending
+singleton pair would have two masses of size \(9/25\).
+Such pairs have exponent differences \(1,2,3,4\) and gcd one
+when \(r\equiv2\pmod{30}\). Hence these vectors satisfy every
+leading-order grouped graph alternative. The smaller offset
+pairs are covered by \(v=0\), the aligned conditions for \(u=v\),
+or Theorem~\ref{thm:consecutive}.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,

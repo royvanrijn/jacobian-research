@@ -107,8 +107,18 @@ central: every embedding intertwines the CM involution, and in a common
 normal closure complex conjugation thus commutes with the Galois
 action. Therefore inversion acts trivially on
 \(\operatorname{Gal}(M/K)\), so this quotient has exponent at most two.
-This proves the square inclusion. Applying the same argument to a
-finite cyclic anticyclotomic character field of order \(r\) shows that
+Artin reciprocity gives the exact quotient
+\[
+ \mathrm{Cl}(K)/N_{F/K}\mathrm{Cl}(F)
+ \ \simeq\ \operatorname{Gal}(F\cap H_K/K).
+\]
+Every quotient of \(\mathrm{Cl}(K)/\mathrm{Cl}(K)^2\) occurs: take the
+corresponding subfield \(F\subseteq H_K\). This field is Galois over
+\(\mathbb Q\), with central complex conjugation because inversion is
+trivial on the exponent-two quotient. It contains \(K\), so it is CM
+with totally real fixed field under conjugation. Applying the same
+argument to a finite cyclic anticyclotomic character field of order \(r\)
+shows that
 the pullback can lose a factor dividing \(\gcd(2,r)\). Equality occurs
 for the quadratic character of \(K(\sqrt2)/K\) with
 \(K=\mathbb Q(\sqrt{-3})\), after pullback to \(K(\sqrt2)\).
@@ -137,6 +147,20 @@ pair admissibility and counting proof then uses these new finite
 pools with exact exponent one. Only the reserved primes have the
 extra splitting condition. There is no restriction here on the
 Frobenius of the residual cofactor primes.
+
+In place of complete splitting, fix any conjugacy class
+\(\mathcal C\subseteq\operatorname{Gal}(F/\mathbb Q)\) whose elements fix
+\(K\). The same proof gives density
+\[
+ \frac{|\mathcal C|\,|\{a,a^{-1}\}|}{[F:\mathbb Q]|A|}.
+\]
+In the fibre product the relevant subset consists of all pairs with
+first coordinate \(a\) or \(a^{-1}\) and second coordinate in
+\(\mathcal C\). Both coordinates fix \(K\), so every such pair belongs
+to the fibre product. The subset is preserved by conjugation. Its
+cardinality and Chebotarev give the formula, without requiring the
+subset to be one conjugacy class. This permits a fixed Frobenius
+condition on each pool without losing its odd class.
 
 The analytic descent in the external source is distinct. For abelian
 \(F/K\), Artin induction gives
@@ -283,6 +307,100 @@ exceeding the Hypothesis R scale by arbitrary fixed powers of
 after cancellation of the continuous model. Its full arithmetic
 construction is outside this audit and is unused in the width
 calculation.
+
+## Sharp Hardy cost over all supported test shapes
+
+Let \(I=(a-\Delta,a+\Delta)\subset(0,1)\), and let \(N>e^{10}\) satisfy
+\(\mathrm{GRH}(N)\) for the Li–Liu operator. Write \(W_N(u)\) for the
+positive factor multiplying the squared modulus in the preceding norm
+formula. Uniformly as \(\Delta/a\to0\),
+\[
+\inf_{\substack{0\ne\phi\in C_c^\infty(I)\\\phi\ {\rm real}}}
+\frac{\|v_{N,\phi}\|^2}{\int_I|\phi(u)|^2\,du}
+=
+\left(1+O\!\left(\frac{\Delta}{a}\right)\right)
+\frac{\pi\, W_N(a)a^2}{8\Delta^2}.
+\]
+Here \(v_{N,\phi}\) is the same Riesz vector with test profile \(\phi\).
+The norm formula applies to every compactly supported smooth
+\(\phi\) in \((0,1)\), since its Fourier–Laplace calculation in
+Proposition 7.4 depends only on the companion weight
+\(\sqrt u\,\phi(u)\).
+
+For \(p=2/\log N\) and \(q=1/4-p>0\),
+\(W_N(u)=(Nu)^p/(1+(Nu)^{-q})\). The derivative of \(\log W_N\)
+with respect to \(\log u\) lies between \(p\) and \(1/4\). Hence its
+ratio to \(W_N(a)\) is \(1+O(\Delta/a)\) on \(I\), with an absolute
+implied constant. Integration by parts gives the exact unweighted
+identity
+\[
+\int_I|\phi/2-u\phi'|^2\,du
+ =\int_I u^2|\phi'|^2\,du+\frac34\int_I|\phi|^2\,du.
+\]
+Also \(u^2=a^2(1+O(\Delta/a))\) on \(I\). The sharp Dirichlet inequality
+\(\int_I|\phi'|^2\ge \pi^2(4\Delta^2)^{-1}\int_I|\phi|^2\) follows
+from the first sine eigenfunction on an interval of length \(2\Delta\).
+Nonnegative compactly supported smooth approximants to that
+eigenfunction give the corresponding upper bound. The term with
+coefficient \(3/4\) changes the ratio by a relative
+\(O((\Delta/a)^2)\). In the central case \(a=1/2\), the leading
+asymptotic is \(e^2\pi/(32\Delta^2)\) as \(N\to\infty\).
+Thus optimizing the shape of a central bump cannot remove the
+\(\Delta^{-2}\) cost of the operator-norm inequality.
+
+For real profiles \(\phi,\psi\) supported in \((0,1)\), the
+original operator gives the polarized identity
+\[
+\left\langle T_N v_{N,\psi},v_{N,\phi}\right\rangle
+ =\mathfrak S(N)c_{\phi,\psi}
+  -\frac1N\sum_{\substack{n+m=N\\(n,N)=1}}
+       \Lambda(n)\Lambda(m)\phi(n/N)\psi(m/N),\qquad
+c_{\phi,\psi}=\int_0^1\phi(u)\psi(1-u)\,du .
+\]
+The support verifies the arithmetic projection directly: a difference
+of two supported indices has absolute value less than \(N\), and
+their sum is strictly between \(0\) and \(2N\). In the continuous
+part of the [Li–Liu beta model, Lemma 7.2](https://mrc.sdu.edu.cn/__local/6/14/8E/28753731EE31D7635BAF60732C2_0C644604_2CE958.pdf),
+polarizing the two positive difference terms and the negative sum
+term gives the function
+\[
+H_{\phi,\psi}(y)=\int_0^\infty
+\bigl(\phi(u)\psi(u+y)+\psi(u)\phi(u+y)-\phi(u)\psi(y-u)\bigr)\,du ,
+\]
+with zero extensions of the profiles. Its integral over \(y>0\)
+vanishes, since the first two terms partition the pairs of positive
+arguments and the last integrates over the same pairs. Hence the
+Mellin transform vanishes at the pole of the density series at 1.
+The contour can be moved to the absolutely convergent half-plane
+as in Lemma 7.2. The integer samples of \(H_{\phi,\psi}\) are zero
+except at \(1\), where its value is \(-c_{\phi,\psi}\). The
+logarithmic-derivative contour and the Hardy pairing extend by
+polarization at each fixed \(N\). The smooth compact supports give
+the same Mellin decay used in the original argument. This verifies
+the operator identity for two mirrored narrow supports, with no
+symmetry requirement on an individual profile.
+
+For \(\phi\) supported in \(I\) and \(\psi\) in \(1-I\), assume also
+\(\Delta/(1-a)\to0\). The infimum of
+\(\|v_{N,\psi}\|\|v_{N,\phi}\|/|c_{\phi,\psi}|\) over profiles
+having \(c_{\phi,\psi}\ne0\) is
+\[
+(1+o(1))\frac{\pi \sqrt{W_N(a)W_N(1-a)}\,a(1-a)}{8\Delta^2}.
+\]
+Cauchy–Schwarz and the single-support estimates give the lower
+bound. Use the same nonnegative sine approximant and its reflection
+for the upper bound. When \(a=M/N\), \(M\le N/2\),
+\(M\asymp N^\gamma\), and \(\Delta=H/N\) with \(H=o(M)\), the
+infimum has order \(MN/H^2\). The proposed Hypothesis R upper bound
+would give relative asymptotics by this inequality for fixed
+powers \(H=N^\theta\) with \(\theta>1/4+\gamma/2\), in the range
+\(1/2<\gamma\le1\) where such a window can satisfy \(H=o(M)\).
+This threshold is at least \((1+\gamma)/3\), the threshold for a
+different weight in the [Eisenstein moving-window theorem](EISENSTEIN_MOVING_WINDOWS.md).
+These are sharp costs of bounding the error through the full
+operator norm and supported Riesz test norms. The cost gives no
+lower bound on the particular prime-pair error or on a direct
+estimate of its quadratic form.
 
 The external algebraic and analytic interfaces were checked at
 the displayed pins. Neither the imported Lean archive nor the

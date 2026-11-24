@@ -99,7 +99,7 @@ family \(F_{α,β,γ}=q^{-α}(1+q)^β W^γ\).
   dimensions one and two. The binary proof conjugates the split torus
   into the diagonal isometry group and uses compatibility with scalar
   extension. The Mathieu conclusion on each of these coordinate models
-  uses the corresponding complex Laurent necessity theorem.
+  uses Laurent necessity, verified here in rank one.
 - [LaurentTrace.lean](MathieuQuadratic/LaurentTrace.lean) derives the
   weights and constant-term comparison from the actual diagonal torus
   pullbacks in the split low-dimensional charts.
@@ -111,11 +111,26 @@ family \(F_{α,β,γ}=q^{-α}(1+q)^β W^γ\).
   uses the draft's product phase and prescribed norm-power marker.
 
 The canonical trace theorem in [Draft.lean](MathieuQuadratic/Draft.lean)
-proves the sharp dimension cutoff from the two low-rank Laurent
-necessity statements. The counterexample at every dimension at least
-three, with the prescribed norm-power marker, is proved independently
-of Laurent necessity. The necessity statements themselves remain
-inputs to the current formalization.
+proves the sharp dimension cutoff from the rank-two interior case of
+Laurent necessity. Dimension one is verified in full. The counterexample in
+every dimension at least three has the prescribed norm-power marker and uses
+the canonical trace.
+
+[RankTwoLaurent.lean](MathieuQuadratic/RankTwoLaurent.lean) verifies the
+supporting-line reduction in Section 3 of Duistermaat–van der Kallen,
+including lower-dimensional Newton polygons. It uses
+[LaurentFace.lean](MathieuQuadratic/LaurentFace.lean) to preserve the constant
+terms of all powers when restricting to the zero-weight face and projecting
+that face to one Laurent coordinate.
+
+[OneVariableLaurent.lean](MathieuQuadratic/OneVariableLaurent.lean) derives
+rank-one Laurent necessity from the one-variable coefficient extraction
+proof in [GMC-2-lean at commit 1782de7](https://github.com/MurrellGroup/GMC-2-lean/tree/1782de7ff6c97eb1d98e63e7ff34df18b9cd322e).
+[The adapted MIT-licensed modules](MathieuQuadratic/External/DvK)
+retain the Laurent root-sum proof, omit the Gaussian supporting-face
+construction and use the pinned Mathlib's coefficient and valuation
+APIs. The audit checks the imported coefficient extraction and the
+resulting rank-one theorem on the current pin.
 
 The recurrence proposition still needs the residue-elimination proof
 of existence and effectivity. The nullcone classification still needs

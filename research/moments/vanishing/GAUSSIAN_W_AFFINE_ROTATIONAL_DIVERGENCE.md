@@ -14,21 +14,29 @@ where \(B\) is a nonconstant polynomial with nonnegative real coefficients
 and \(\gcd\{j\ge1:[v^j]B(v)>0\}=1\). For every \(m\)-th root of unity
 \(\omega\), assume
 \[
-h(\omega z)=\omega h(z),\quad u(\omega z)=\omega u(z),\quad
-k(\omega z)=k(z),\quad u(\omega z)^2=u(z)^2.
+h(\omega z)=\omega h(z),\qquad u(\omega z)=\omega u(z).
 \]
-The last condition is automatic for \(m=2\) and requires \(u=0\) for
-\(m>2\). The complex constant \(a\) is arbitrary. Then the original
-unit \(f=\mathbb E e^{tP}\) diverges at zero, its actual image has rank at
-least two over \(\mathbb C(t)\), and the phase is neither pure nor safe.
-In particular the result includes \(c(z)=1+z^2\) with arbitrary odd
-\(h,u\), even \(k\), and arbitrary \(a\). Its two baseline dominant points
-are \(X=\pm 1/2\). A multiple-root example is \(c=(1+z^2)^4(1+2z^2)\) and \(h=z(1+z^2)^2\), where each of \(z=\pm i\) has orders \((4,2)\) in \((c,h)\).
+The polynomial \(k\) and the complex constant \(a\) are arbitrary.
+Then the original unit \(f=\mathbb E e^{tP}\) diverges at zero, its
+actual image has rank at least two over \(\mathbb C(t)\), and the phase
+is neither pure nor safe.
+
+For \(c(z)=1+z^2\) this includes arbitrary odd \(h,u\) and arbitrary
+\(k\), including the even \(k\) subfamily where the full kernel is
+rotation invariant. Its two baseline dominant points are \(X=\pm 1/2\).
+A multiple-root example is \(c=(1+z^2)^4(1+2z^2)\) and
+\(h=z(1+z^2)^2\), where each of \(z=\pm i\) has orders \((4,2)\) in
+\((c,h)\). For \(m=3\), the choices \(c=1+z^3\), \(h=u=z\), and
+\(k=z+z^2\) give a noninvariant numerator: neither \(k(z)\) nor
+\(u(z)^2\) is invariant under multiplication of \(z\) by a primitive
+cube root. The earlier invariant-numerator subclass, with
+\(k(\omega z)=k(z)\) and \(u(\omega z)^2=u(z)^2\), is included.
 
 The proof addresses the [multiple-dominant-point obstruction](GAUSSIAN_W_AFFINE_SELECTED_DOMINANT_DIVERGENCE.md#4-the-concrete-bottleneck-beyond-these-criteria)
-on the rotationally invariant locus. The quotient by the common rotations
-has a unique selected singularity to which singularity analysis applies.
-The argument uses the actual unit and the original fixed amplitude \(P\).
+when the selected inverse equation has rotational symmetry. Its quotient
+has a unique selected singularity. Decomposing the numerator by its
+powers modulo \(m\) retains that singularity bound for the original
+unit and the original fixed amplitude \(P\).
 
 ## The quotient of the actual source kernel
 
@@ -44,23 +52,32 @@ f(t)=\mathbb E_S K(t,tS),
 \]
 where \(S\) is standard real Gaussian and the last identity is formal.
 Write \(v=z^m\), \(U=X^m\), \(c(z)=\widehat c(v)\), and
-\(t h(z)+t^2 c(z)u(z)/D_a=z b(t,v)\). The assumptions give \(b(0,v)=0\)
-and an analytic numerator \(E(t,v)=\exp(tk(z)+t^2u(z)^2/(2D_a))\).
-Consequently the selected \(v\) solves
+\(t h(z)+t^2 c(z)u(z)/D_a=z b(t,v)\). Then \(b(0,v)=0\) and
 \[
-v=U F(t,v),\qquad
-F(t,v)=\left(\frac{\widehat c(v)}{\sqrt{D_a}(1-b(t,v))}\right)^m.
+z=X\ell(t,v),\qquad v=U F(t,v),\qquad
+\ell(t,v)=\frac{\widehat c(v)}{\sqrt{D_a}(1-b(t,v))},\quad F=\ell^m.
 \]
+The numerator is entire in \(z\) for small \(t\). Group its Taylor
+series by exponent modulo \(m\):
+\[
+\exp(tk(z)+t^2u(z)^2/(2D_a))=\sum_{r=0}^{m-1} z^r E_r(t,z^m).
+\]
+The functions \(E_r\) are jointly analytic in \(t,v\) for small \(t\)
+and bounded \(v\), by Cauchy estimates on arbitrarily large fixed
+\(z\) circles. At \(t=0\), \(E_0=1\) and every other \(E_r=0\).
 On the selected graph,
 \[
 J=(1-b(t,v))(1-U F_v(t,v)),\qquad
-K(t,X)=\mathcal K(t,X^m)
-=\frac{E(t,v)}{\sqrt{D_a}(1-b(t,v))(1-U F_v(t,v))}.
+K(t,X)=\sum_{r=0}^{m-1} X^r\mathcal K_r(t,X^m),\qquad
+\mathcal K_r(t,U)=
+\frac{\ell(t,v)^r E_r(t,v)}{\sqrt{D_a}(1-b(t,v))(1-U F_v(t,v))}.
 \]
-For the Jacobian identity one can differentiate the original residual
-in \(z\), then use \(X\widehat c/\sqrt{D_a}=(1-b)z\) and
-\(v=UF\). Any intermediate division by \(\widehat c\) can be cleared
-from that identity. The formula holds at the origin by analyticity.
+For the Jacobian identity, write the residual as
+\((1-b(t,z^m))(z-X\ell(t,z^m))\). On the selected graph the
+derivative of its first factor is multiplied by zero. The derivative
+of its second factor is \(1-Xm z^{m-1}\ell_v=1-U F_v\),
+using \(z=X\ell(t,v)\). Only \(1-b\) and \(\sqrt{D_a}\) need be
+units for this computation.
 
 At \(t=0\), rescale \(v=\zeta^m w\) and \(U=\zeta^m C^{-m} V\).
 The equation is \(w=V B(w)^m\), and the kernel is
@@ -88,7 +105,10 @@ value be \(U_*(t)\) with \(U_*(0)=U_0\). Put
 \(t(T)\). Then
 \[
 f(t(T))=\mathbb E_S \widetilde K(T,TS),\qquad
-\widetilde K(T,X)=\mathcal K(t(T),\eta(t(T))^m X^m).
+\widetilde K(T,X)=K(t(T),\eta(t(T))X)
+=\sum_{r=0}^{m-1}X^r\widetilde{\mathcal K}_r(T,X^m),\qquad
+\widetilde{\mathcal K}_r(T,U)=\eta(t(T))^r
+ \mathcal K_r(t(T),\eta(t(T))^m U).
 \]
 In the quotient \(U=X^m\), the dominant point is now fixed at \(U_0\).
 At \(t=0\) the selected graph is compact in a slightly extended slit disk
@@ -97,24 +117,27 @@ neighborhood the implicit derivative is a unit. The implicit-function
 theorem on finitely many neighborhoods and the local quadratic inverse
 construction give the corresponding joint analytic slit continuation for
 all small complex \(T\). On the bounded graph, \(1-b\) stays a unit after
-shrinking the parameter disk. The kernel has the uniform local form
-\(P_0(T,U)+Q_0(T,U)(1-U/U_0)^{-1/2}\), with \(Q_0(0,U_0)\ne0\), since its
-numerator is analytic and nonzero and \(1-UF_v\) has a simple zero in
-the square-root coordinate.
+shrinking the parameter disk. Every quotient term has the uniform
+local form \(P_r(T,U)+Q_r(T,U)(1-U/U_0)^{-1/2}\), since its numerator
+is analytic and \(1-UF_v\) has a simple zero in the square-root
+coordinate. For \(r=0\) at \(T=0\) the numerator is nonzero, so
+\(Q_0(0,U_0)\ne0\).
 
 The slit-contour estimate of the [selected-dominant proof, (S3)–(S5)](GAUSSIAN_W_AFFINE_SELECTED_DOMINANT_DIVERGENCE.md#1-a-selected-dominant-singularity-criterion),
-applied in \(U\), gives on a closed \(T\) disk an upper bound
-\(O(|U_0|^{-j}(j+1)^{-1/2})\) on the coefficient of \(U^j\). At \(T=0\)
-this coefficient is
+applied to each quotient term in \(U\), gives on a closed \(T\) disk
+the uniform bound \(O(|U_0|^{-j}(j+1)^{-1/2})\) on its coefficient of
+\(U^j\). At \(T=0\), the \(r=0\) term has coefficient
 \[
 Q_0(0,U_0)U_0^{-j}\binom{2j}{j}4^{-j}
 +O\bigl(|U_0|^{-j}(j+1)^{-3/2}\bigr).
 \]
-Thus \([X^n]\widetilde K(T,X)=0\) unless \(m\mid n\). Set
-\(R_X=|U_0|^{1/m}\). For \(m\mid n\) the upper bound in \(X\) is
-\(O(R_X^{-n}(n+1)^{-1/2})\). For such \(n\) at \(T=0\), the coefficient
-has magnitude bounded below by a positive multiple of that quantity
-for large \(n\).
+For any \(n=mj+r\), exactly the \(r\)-th quotient term contributes to
+the \(X^n\) coefficient. With \(R_X=|U_0|^{1/m}\), this gives
+\([X^n]\widetilde K(T,X)=O(R_X^{-n}(n+1)^{-1/2})\) uniformly for
+**all** \(n\), including those that occur only because the numerator
+breaks the rotation. At \(T=0\), the coefficients with \(m\mid n\)
+have magnitude bounded below by a positive constant times the same
+quantity for large \(n\).
 
 Take \(q\to\infty\) with \(m\mid 2q\). In the coefficient of \(T^{2q}\)
 of \(f(t(T))\), the \(X^{2q}\) term has magnitude comparable to
@@ -136,8 +159,8 @@ equation would make \(f\) analytic. Hence \(f,f'=\Phi[P]\) have rank at
 least two.
 
 This proof uses the same selected-sheet contour estimates as the
-aperiodic case. Once the rotations are broken, the quotient equation
-and the single normalization may both fail. The argument also makes
+aperiodic case. If rotation symmetry is lost in the inverse equation,
+the quotient and the single normalization may both fail. The argument also makes
 no determination about a regular submodule independent of the unit.
 
 ## Generic coefficients within the rotation class
@@ -192,6 +215,206 @@ The original Wick expansion gives the same identity directly.
 In \(P^{2j}=W^{2j}(1+Z^2)^{2j}Y^{2j}\), the \(Z^{2j}\) term gives
 the factor \(\binom{2j}{j}\), and the \(Z,W\) contraction gives
 \((2j)!\), which cancels the exponential coefficient denominator.
+
+The noninvariant \(m=3\) example can be checked at \(a=1/2\).
+Put \(D=1-t\) and \(b=t+t^2(1+z^3)/D\). Expanding the exact
+circular residue of the completed kernel in \(X\) gives
+\[
+[X^n]K(t,X)
+=[z^n]\frac{(1+z^3)^n
+     \exp\bigl(t(z+z^2)+t^2z^2/(2D)\bigr)}
+ {D^{(n+1)/2}(1-b)^{n+1}} .
+\]
+Indeed this is the \(X^n\) term in the geometric expansion of the
+residual denominator \(z(1-b)-X(1+z^3)/\sqrt D\).
+In particular \([tX]K=1\), so the original kernel really does have a
+nontrivial residue class modulo three. Independent exact contractions
+of \(P^j/j!\) and of the displayed residue after \(X=tS\) gave the
+same coefficients through order eight:
+\[
+1,\quad 3/2,\quad 23/8,\quad 107/16,\quad 2155/128,\quad
+14085/256,\quad 436435/1024,\quad 6371163/2048,\quad
+608546355/32768 .
+\]
+The finite calculation checks the source and its asymmetric amplitude.
+Divergence follows from the uniform coefficient majorant above.
+
+## Exact actual rank for \(P_m=W(1+Z^m)Y\)
+
+Let \(m\ge2\), let \(K\) be a characteristic-zero field, and use the
+normalized original Wick map \(\Phi[A]=\mathbb E[A e^{tP_m}]\) over \(K\).
+Put \(M=K[t]\Phi[K[Z,W,Y]]\), \(V=K(t)M\), and
+\[
+\ell=\operatorname{lcm}(2,m),\quad r=\ell/2,\quad d=\ell/m,\quad
+e=\ell-d,\quad x=t^\ell,\quad \vartheta=\frac{t}{\ell}\partial_t .
+\]
+Then \(f=\Phi[1]=g(x)\), where
+\[
+g(x)=\sum_{q\ge0}a_q x^q,\qquad
+a_q=\frac{(\ell q)!^2}{2^{r q}(r q)!(d q)!(e q)!}.
+\]
+Set \(p=3m/2-1\) for even \(m\), and \(p=3m-3\) for odd \(m\).
+The differential subspace generated by the unit has dimension \(p\)
+over \(K(t)\). Bases of the full actual space \(V\) are
+\[
+\begin{array}{ll}
+(1,g,\vartheta g,\ldots,\vartheta^{p-1}g),& m\text{ even},\\[2mm]
+(1,g,\vartheta g,\ldots,\vartheta^{p-1}g,\kappa),& m\text{ odd},
+\end{array}
+\qquad
+\kappa(x)=\sum_{q\ge0}\frac{a_q}{q+1/2}x^q .
+\]
+Thus the full rank is \(3m/2\) for even \(m\), and \(3m-1\) for odd
+\(m\). Over \(\mathbb C\), the elements of \(V\) that converge as Laurent
+germs are exactly \(\mathbb C(t)\), and the convergent elements of
+\(M\) are exactly \(\mathbb C[t]\). The maximal globally regular
+actual differential submodule is the constant connection
+\(\mathbb C(t)\cdot1\). These are results for the explicit phase \(P_m\).
+They do not address the general higher-rank realization gap
+\(\texttt{GAP-GAUSSIAN-REGULAR-TRANSCENDENTAL}\).
+
+### The exact order of the unit operator
+
+Write \(G_s=\{1/s,2/s,\ldots,1\}\). The factorial ratio gives
+\[
+\frac{a_{q+1}}{a_q}=C\frac{\mathcal P(q)}{\mathcal Q(q)}
+\]
+for a nonzero constant \(C\), where the numerator parameter multiset
+before cancellation is two copies of \(G_\ell\), and the denominator
+is \(G_r+G_d+G_e\). A parameter \(\alpha\) denotes the factor \(q+\alpha\).
+Both \(G_r\) and \(G_d\) lie in \(G_\ell\) and cancel first.
+Since \(G_e\cap G_\ell=G_{\gcd(e,\ell)}=G_d\), precisely
+\(d-\gcd(r,d)\) further parameters cancel. This gives
+\(\deg\mathcal P=3r-2d+\gcd(r,d)=p\) and
+\(\deg\mathcal P-\deg\mathcal Q=r>0\). Three denominator parameters
+equal one and two numerator parameters equal one, so \(\mathcal Q(-1)=0\).
+The roots of \(\mathcal Q\) are simple. For even \(m\), its parameter
+set is \(G_e\); for odd \(m\), it is \(G_e\setminus\{1/2\}\), and
+\(1/2\) is also absent from the numerator parameters. The reduced
+numerator and denominator parameters lie in \((0,1]\) and no cross
+pair differs by an integer.
+
+The coefficient recurrence gives the operator
+\(\mathcal Q(\vartheta-1)-Cx\mathcal P(\vartheta)\), including the
+constant coefficient by \(\mathcal Q(-1)=0\). For the lower bound,
+clear rational denominators in any equation over \(K(x)\) with a
+rational right side. In Euler form the equation then has a polynomial
+right side and a left side \(\sum_{j=0}^J x^j L_j(\vartheta)g\)
+with \(L_J\ne0\). At index \(n\) large enough, divide the coefficient
+equation by \(a_{n-J}\) to obtain a rational identity in \(n\). For
+\(j<J\), the coefficient ratio
+\[
+\frac{a_{n-j}}{a_{n-J}}
+ =C^{J-j}\prod_{h=0}^{J-j-1}
+   \frac{\mathcal P(n-J+h)}{\mathcal Q(n-J+h)}
+\]
+vanishes at \(n=J-\alpha\) with at least the full multiplicity of
+each numerator factor \(q+\alpha\). No denominator in the product
+vanishes there. The term at \(j=J\) therefore forces
+\(\mathcal P(q)\mid L_J(q)\). Every such equation has order at least
+\(p\). A polynomial-coefficient equation over \(K(t)\) splits by
+the exponents of \(t\) modulo \(\ell\), because \(g\) and its Euler
+derivatives are series in \(x\). Each residue gives an equation over
+\(K(x)\) of no greater order. This proves the exact cyclic dimension
+over \(K(t)\) and independence of the constant line. The dimension
+is an actual-image statement because
+\(\partial_t^j\Phi[1]=\Phi[P_m^j]\) for every \(j\).
+
+### All original markers and the odd extra period
+
+With \(c(z)=1+z^m\), the original conditional circular identity gives
+\(\Phi[1-t c'(Z)Y]=1\). Conditional on \(Y\), the selected inverse
+\(z=t c(z)Y\) has Jacobian \(1-t c'(z)Y\), which is exactly this
+time-dependent amplitude on the selected graph. In particular all
+polynomials in \(t\) belong to \(M\).
+
+For \(Z^aW^bY^c\), with \(a,b,c\) now nonnegative integer exponents,
+the coefficient at \(t^n\) vanishes unless
+\(j=(n+b-a)/m\) is an integer with \(0\le j\le n\), and \(n+c\)
+is even. In that case it equals
+\[
+\frac{(n+b)!}{j!(n-j)!}(n+c-1)!! .
+\]
+This follows from the exact \(Z,W\) Wick contraction and the
+ordinary \(Y\) moment. The two congruences give at most one
+residue \(s\) modulo \(\ell\), \(0\le s<\ell\). Write \(n=\ell q+s\)
+and \(j=dq+v\), \(v=(s+b-a)/m\). At all sufficiently large \(q\),
+the coefficient is \(a_q R(q)\) for a rational function \(R\).
+Its poles are simple and lie at \(-\beta-j'\) for \(\beta\in G_e\)
+and a nonnegative integer \(j'\). Indeed, the shifted Gaussian
+double factorial contributes a polynomial, as does the numerator
+factor \((\ell q+s+b)!/(\ell q)!\). If the first denominator shift
+\(v\) is positive, its factors \(dq+i\), \(1\le i\le v\), cancel
+against the numerator factors \(\ell q+mi\), since
+\(mv=s+b-a\le s+b\). A negative first shift contributes a
+polynomial. Only positive shifts of the second denominator
+factor \((e q+s-v)!\) can leave poles, giving exactly the stated grid.
+
+Every rational multiplier having only simple poles on
+\(-\beta-j'\) for \(\beta\) in the \(\mathcal Q\)-parameter set is
+available in the unit cyclic space up to a finite Laurent polynomial.
+In fact \(x^{-J}g\) has tail multiplier
+\(C^J\prod_{h=0}^{J-1}\mathcal P(q+h)/\mathcal Q(q+h)=N_J/D_J\).
+The two polynomials are coprime and \(D_J\) has only simple roots.
+Choose \(J\) large enough that \(D_J\) clears the desired poles of
+\(R\). By Bézout there are polynomials \(U,V_0\) with
+\(R=U N_J/D_J+V_0\). Apply \(U(\vartheta)\) to \(x^{-J}g\) and
+\(V_0(\vartheta)\) to \(g\). Any finite Laurent difference is in
+\(K(t)\cdot1\). This already accounts for every even-\(m\) marker,
+including its factor \(t^s\).
+
+For odd \(m\), the only remaining grid is the half-integers
+\(-1/2-j'\). The actual marker \(Z^{m(m-1)}\), with residue \(s=0\),
+has tail multiplier
+\[
+\frac{\prod_{i=0}^{m-2}(2q-i)}
+     {\prod_{i=1}^{m-1}(e q+i)} .
+\]
+Its pole at \(-1/2\) is simple with nonzero residue, and its
+remaining poles are on the \(\mathcal Q\)-grid. Subtract the cyclic
+part and the finite correction, then divide by that residue. This
+produces exactly \(\kappa\) in the full actual space. The shift
+\(x^{-J}\kappa\) has a nonzero simple pole at \(-1/2-J\) and no
+other half-integer pole in its rational multiplier. All its other
+poles are on the \(\mathcal Q\)-grid. Together with the cyclic
+terms these shifts generate all marker tails, and finite Laurent
+corrections belong to the constant line.
+
+For independence, if a relation used \(\kappa\), clearing
+denominators and choosing a nonzero residue class in \(t\) would
+give an equation over \(K(x)\) with nonzero polynomial coefficient
+on \(\kappa\). Write that coefficient as \(\sum_k A_k x^k\).
+Divide the sufficiently large coefficient identities by \(a_{n-J}\)
+where \(J\) is the largest shift in the whole equation. Each
+\(A_k\ne0\) contributes a pole at \(n=k-1/2\) from the factor
+\(1/(n-k+1/2)\). The factorial ratios have neither zeros nor poles
+there, and no other term can have that pole. This is impossible.
+The displayed bases and the generic rank assertions follow.
+
+Moreover \((\vartheta+1/2)\kappa=g\). The quotient of the span of
+\(\kappa\) and the unit cyclic space by the latter is a rank-one
+trivial connection over \(K(t)\), with horizontal class
+\(t^{\ell/2}\kappa\). This extension is nonsplit: a horizontal
+lift would be a constant Laurent germ, while the span of \(\kappa\)
+and the unit cyclic space has zero intersection with the constant
+line by the independence just proved.
+
+### Convergence and regularity in the full marked space
+
+In every residue modulo \(\ell\), any fixed polynomial-time
+combination has tail coefficients \(a_qR(q)\): shifts in that
+residue change \(a_q\) only by rational ratios. The multiplier
+\(R\) is a rational function. If nonzero, it has polynomial-size
+asymptotics along the positive integers, whereas
+\(a_{q+1}/a_q\asymp q^r\). That residue alone forces divergence.
+Hence convergence of an element of \(M\) is equivalent to the
+vanishing of all its rational tails, which gives a polynomial.
+Clearing denominators gives the corresponding assertion in \(V\).
+Every formal Laurent period in a globally regular differential
+submodule converges at zero by the regular-singular Frobenius
+theorem, as used in the [regular-core audit](GAUSSIAN_G_FUNCTIONS_AND_GLOBAL_REGULAR_CORE.md).
+Thus the only such subspace is contained in the constant line,
+and that line itself is globally regular.
 
 ## A Hamburger versus Stieltjes test on the actual Wick coefficients
 

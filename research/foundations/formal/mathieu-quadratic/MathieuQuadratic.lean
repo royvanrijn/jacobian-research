@@ -22,6 +22,7 @@ import MathieuQuadratic.InvariantConstants
 import MathieuQuadratic.IsotropicTernary
 import MathieuQuadratic.Laurent
 import MathieuQuadratic.LaurentBaseChange
+import MathieuQuadratic.LaurentFace
 import MathieuQuadratic.LaurentTrace
 import MathieuQuadratic.LinearPhaseEndpoint
 import MathieuQuadratic.LocalizationBaseChange
@@ -32,10 +33,12 @@ import MathieuQuadratic.MultiplierTail
 import MathieuQuadratic.Newton
 import MathieuQuadratic.NormOneChart
 import MathieuQuadratic.Nonpower
+import MathieuQuadratic.OneVariableLaurent
 import MathieuQuadratic.OrthogonalTrace
 import MathieuQuadratic.Perturbation
 import MathieuQuadratic.PoleOrder
 import MathieuQuadratic.QuadraticCoordinates
+import MathieuQuadratic.RankTwoLaurent
 import MathieuQuadratic.Reynolds
 import MathieuQuadratic.Rotations
 import MathieuQuadratic.Scalar

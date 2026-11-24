@@ -14,7 +14,7 @@ open scoped BigOperators
 
 namespace MathieuQuadratic
 
-private def realExponent {J : Type*} (g : J → ℤ) : J → ℝ := fun i ↦ g i
+def realExponent {J : Type*} (g : J → ℤ) : J → ℝ := fun i ↦ g i
 
 /-- The real convex hull of a finite Laurent support. -/
 def newtonPolytope {J : Type*} (s : Finset (J → ℤ)) : Set (J → ℝ) :=
@@ -66,20 +66,24 @@ theorem exists_integral_separator {J : Type*} [Fintype J] (s : Finset (J → ℤ
         (fun _ _ ↦ Finset.sum_nonneg fun _ _ ↦ abs_nonneg _) hg
   exact_mod_cast (show 0 < (ℓ g : ℝ) by linarith)
 
-theorem origin_not_mem_newton_of_positive_support {J : Type*} [Fintype J]
-    (s : Finset (J → ℤ)) (ℓ : (J → ℤ) →+ ℤ) (h : ∀ g ∈ s, 0 < ℓ g) :
-    0 ∉ newtonPolytope s := by
+theorem exists_realForm_of_integral {J : Type*} [Fintype J] (ℓ : (J → ℤ) →+ ℤ) :
+    ∃ F : (J → ℝ) →ₗ[ℝ] ℝ, ∀ g : J → ℤ, F (realExponent g) = (ℓ g : ℝ) := by
   classical
   let r (i : J) : ℤ := ℓ fun j ↦ if i = j then 1 else 0
   let F : (J → ℝ) →ₗ[ℝ] ℝ := ∑ i, (r i : ℝ) • LinearMap.proj i
-  have hmap (g : J → ℤ) : F (realExponent g) = (ℓ g : ℝ) := by
-    have hi := ℓ.toIntLinearMap.pi_apply_eq_sum_univ g
-    change ℓ g = ∑ i, g i • ℓ (fun j ↦ if i = j then 1 else 0) at hi
-    simp only [zsmul_eq_mul, Int.cast_id] at hi
-    simp only [F, LinearMap.sum_apply, LinearMap.smul_apply, LinearMap.proj_apply,
-      realExponent, smul_eq_mul]
-    rw [hi, Int.cast_sum]
-    simp only [Int.cast_mul, r, mul_comm]
+  refine ⟨F, fun g ↦ ?_⟩
+  have hi := ℓ.toIntLinearMap.pi_apply_eq_sum_univ g
+  change ℓ g = ∑ i, g i • ℓ (fun j ↦ if i = j then 1 else 0) at hi
+  simp only [zsmul_eq_mul, Int.cast_id] at hi
+  simp only [F, LinearMap.sum_apply, LinearMap.smul_apply, LinearMap.proj_apply,
+    realExponent, smul_eq_mul]
+  rw [hi, Int.cast_sum]
+  simp only [Int.cast_mul, r, mul_comm]
+
+theorem origin_not_mem_newton_of_positive_support {J : Type*} [Fintype J]
+    (s : Finset (J → ℤ)) (ℓ : (J → ℤ) →+ ℤ) (h : ∀ g ∈ s, 0 < ℓ g) :
+    0 ∉ newtonPolytope s := by
+  obtain ⟨F, hmap⟩ := exists_realForm_of_integral ℓ
   have hh : newtonPolytope s ⊆ {x | 0 < F x} := by
     apply convexHull_min _ (convex_halfSpace_gt F.isLinear 0)
     rintro _ ⟨g, hg, rfl⟩

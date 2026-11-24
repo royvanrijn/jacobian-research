@@ -226,3 +226,16 @@ open MathieuQuadratic
 #print axioms quadraticTrace_eq_of_geometricInvariant
 #print axioms draft_canonical_trace_witness_of_form
 #print axioms draft_canonical_trace_dimension_classification
+#print axioms DvKProof.dvkCoefficientExtraction
+#print axioms DvKProof.hasNonzeroConstantPower_of_dvkCoefficientExtraction
+#print axioms laurentSeparation_fin_one
+#print axioms newtonLaurentNecessity_fin_one
+#print axioms algebraicTrace_unary_mathieu
+#print axioms lowRankLaurentTheorem_of_binary
+#print axioms draft_canonical_trace_unary_isMathieu
+#print axioms laurentCT_pow_zeroFace
+#print axioms laurentCT_pow_mapDomain_of_weight_zero
+#print axioms planarLaurent_pure_avoids_newton_of_supporting_form
+#print axioms planarLaurent_pure_avoids_newton_of_not_interior
+#print axioms newtonLaurentNecessity_fin_two_of_interior
+#print axioms draft_canonical_trace_dimension_classification_of_interior

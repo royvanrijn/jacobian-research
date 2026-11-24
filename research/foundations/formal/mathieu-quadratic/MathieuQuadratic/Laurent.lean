@@ -45,7 +45,7 @@ theorem eq_laurentCT_of_monomials (trace : AddMonoidAlgebra K G →ₗ[K] K)
         simp [laurentCT, AddMonoidAlgebra.coeff_single, hg]
 
 
-private theorem supportLowerBound_mul (ℓ : G →+ ℤ) (f h : AddMonoidAlgebra K G)
+theorem supportLowerBound_mul (ℓ : G →+ ℤ) (f h : AddMonoidAlgebra K G)
     (b c : ℤ) (hf : ∀ g ∈ f.coeff.support, b ≤ ℓ g)
     (hh : ∀ g ∈ h.coeff.support, c ≤ ℓ g) :
     ∀ g ∈ (f * h).coeff.support, b + c ≤ ℓ g := by

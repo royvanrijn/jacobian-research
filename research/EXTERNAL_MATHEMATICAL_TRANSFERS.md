@@ -16,6 +16,46 @@ The repository's claim IDs refer to [the current mathematical DAG](MATH_STATUS.j
 | Féray conjugate-power words | The [Hurwitz census](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) uses conditional class Fourier calculations to give exact absolute totals and to count directly removable last factors, with limiting fraction \(e^{-2}\). The few-cycle mixing hypothesis fails strongly for double transpositions, whose two-factor product stays at total variation \(1-o(1)\) from the parity-uniform law. The exact census targets \(\texttt{GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE}\) and the uniform fixed-product fibre connectivity nodes. |
 | Stone nonproper-locus obstruction | The degree criterion and the polynomial comparison below locate the missing hypothesis for \(\texttt{GOAL-JC2}\) and \(\texttt{GAP-JACOBIAN-1}\). A known three-dimensional Keller map gives an exact obstruction to inferring generic uniqueness from even a full target line of singleton fibres. |
 
+## Further consequences and remaining estimates
+
+- In the pure and marked mixed Hurwitz domains, the removable-factor
+  count has an exact finite probability law and a normal limit. The
+  exceptional fraction decays faster than every fixed inverse power.
+  For each fixed \(C>0\), any orbit with relative size at least \(r^{-C}\)
+  therefore meets the removable locus for all sufficiently large \(r\).
+  The unresolved step for \(\texttt{GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE}\)
+  concerns orbits smaller than these thresholds. [Joint law and orbit criterion](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md#the-joint-removable-factor-law)
+- In native increasing row and column order, a positive-exponent
+  raw linked beta matrix is weakly sign regular exactly when \(u/r\)
+  is a positive integer. The arbitrary-minor zero criterion gives
+  an explicit test for which minors survive at each order.
+  The physical moment polynomials also contain binomial row
+  factors, and the remaining linked-beta coprimality problem
+  requires control of their common complex roots. On the axis,
+  the shifted-shape theorem covers \(\Gamma(1)\times\Gamma(\beta)\)
+  for every \(\beta>0\).
+  [Sign classification and shifted-shape proof](factorial/image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md)
+- The finite-modulus critical gap bounds have a sharp truncation
+  asymptotic along \(\operatorname{lcm}(1,\ldots,\lfloor y\rfloor)\),
+  and the all-powers-of-two bound is explicit. The remaining
+  critical-density route requires an empirical conditional intensity
+  law and control of overlapping unexposed prime supports. The
+  quantitative truncation concerns the proposed law itself.
+  [Truncation and density criterion](arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md#strict-two-adic-improvement-and-sharp-finite-modulus-error)
+- Gaussian divergence survives when the inverse equation rotates
+  and the numerator breaks rotation symmetry. The full numerator
+  separates into the \(m\) residue classes of exponents and each
+  component has the same quotient singularity majorant.
+  The next case is an inverse with tied dominant points and no such
+  rotation of its defining equation.
+  [Actual source proof](moments/vanishing/GAUSSIAN_W_AFFINE_ROTATIONAL_DIVERGENCE.md)
+- Optimizing the centered Goldbach Hardy test shape has sharp
+  relative norm cost \(e^2\pi/(32\Delta^2)\).
+  This quantifies the operator-norm route. For the unresolved
+  short-window estimate, a direct bound on the moving quadratic
+  form could avoid the full norm cost.
+  [Sharp cost and moving-window version](arithmetic/EXTERNAL_HECKE_ARTIN_GOLDBACH_TRANSFER_AUDIT.md#sharp-hardy-cost-over-all-supported-test-shapes)
+
 ## Stone's criterion and the location of a singleton fibre
 
 In the [pinned Stone note](https://github.com/1337isnot1337/solved-conjectures/blob/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef/research/stone-nonproper-locus/README.md),
