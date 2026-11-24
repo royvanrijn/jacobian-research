@@ -85,6 +85,10 @@ def productPhase (U : Aˣ) (S : A) (α β γ : ℕ) : A :=
 def perturbedProductPhase (U : Aˣ) (S : A) (M : ℕ) : A :=
   productPhase U S M M M * (1 + ((U : A) * S) * ((M - 1 : ℕ) + (M : A) * (U : A)))
 
+/-- The simple-pole witness in the draft, with x orthogonal to the rank-two norm B. -/
+def simplePolePhase (U : Aˣ) (x B : A) : A :=
+  (↑(U⁻¹) : A) * (1 + x) * (1 + 2 * x - B)
+
 private noncomputable def productTerm (v k i : ℕ) : ℚ[X] :=
   C ((k.choose i : ℚ) * (-1) ^ i) * (X + 1) ^ (v + 2 * i)
 
@@ -152,6 +156,37 @@ theorem productMoment_of_weights (trace : A →ₗ[K] K) (U : Aˣ) (S : A)
     have hne : (↑(M + 2 * j) : K) ≠ 0 := by exact_mod_cast (show M + 2 * j ≠ 0 by omega)
     field_simp
   · simp only [hℓ, if_false, Finset.sum_const_zero]
+
+private theorem powerEndpointPolynomial_highest (M β γ : ℕ) :
+    (powerEndpointPolynomial M β γ).coeff (β + 2 * γ) =
+      ((M : ℚ) / (↑(M + 2 * γ) : ℚ)) * (-1) ^ γ := by
+  have hmonic : (X + 1 : ℚ[X]).Monic := by simpa using (monic_X_add_C (1 : ℚ))
+  have hdeg (n : ℕ) : ((X + 1 : ℚ[X]) ^ n).natDegree = n := by
+    rw [hmonic.natDegree_pow]
+    rw [← C_1, natDegree_X_add_C, mul_one]
+  rw [powerEndpointPolynomial_eq_sum, finsetSum_coeff,
+    Finset.sum_eq_single_of_mem γ (Finset.mem_range.mpr (by omega))]
+  · have hcoef := (hmonic.pow (β + 2 * γ)).coeff_natDegree
+    rw [hdeg] at hcoef
+    rw [coeff_C_mul, productTerm, coeff_C_mul, hcoef, Nat.choose_self, Nat.cast_one, one_mul, mul_one]
+  · intro i hi hne
+    have hlt : i < γ := by have := Finset.mem_range.mp hi; omega
+    rw [coeff_C_mul, productTerm, coeff_C_mul, coeff_eq_zero_of_natDegree_lt (by rw [hdeg]; omega),
+      mul_zero, mul_zero]
+
+/-- The trace of the highest Laurent coefficient in the product phase. -/
+theorem product_highest_moment (trace : A →ₗ[K] K) (U : Aˣ) (S : A)
+    (M α β γ : ℕ) (hM : 0 < M)
+    (weight : ∀ (a : ℤ) (i : ℕ), a ≠ 0 → trace ((↑(U ^ a) : A) * S ^ i) = 0)
+    (height : ∀ i : ℕ, trace (S ^ i) = (M : K) / (↑(M + 2 * i) : K)) :
+    trace ((↑(U ^ ((α : ℤ) - (β + 2 * γ : ℕ))) : A) * productPhase U S α β γ) =
+      algebraMap ℚ K (((M : ℚ) / (↑(M + 2 * γ) : ℚ)) * (-1) ^ γ) := by
+  have h := productMoment_of_weights trace U S M α β γ 1 0 hM
+    ((α : ℤ) - (β + 2 * γ : ℕ)) weight height
+  simp only [mul_one, pow_zero, add_zero, mul_zero] at h
+  rw [if_pos (by omega), show ((α : ℤ) - ((α : ℤ) - (β + 2 * γ : ℕ))).toNat = β + 2 * γ by omega,
+    powerEndpointPolynomial_highest, div_self (by positivity : (M : ℚ) ≠ 0), one_mul] at h
+  simpa only [pow_one] using h
 
 theorem mixedBetaMoment_pos (M k j : ℕ) (hM : 0 < M) :
     0 < mixedBetaMoment M k j :=

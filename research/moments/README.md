@@ -74,6 +74,19 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Finite piecewise-polynomial endpoint criterion with one all-order unit marker | Internal result | proved | [Source](../foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md) |
 | All-order unit-marker counterexamples on compact coadjoint and standard rational Chevalley products | Internal result | proved | [Source](../foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md) |
 | All-field fixed-unit-marker counterexamples on highest-root Wolf products | Internal result | proved | [Source](../foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md) |
+| Homogeneous quotient traces and fixed-witness pullback | Internal result | proved | [Source](../foundations/extended-geometry/HOMOGENEOUS_QUOTIENT_TRACE_AND_COUNTEREXAMPLE_PULLBACK.md) |
+| Sharp all-field character-domain product counterexamples on compact split-type symmetric models | Internal result | proved | [Source](../foundations/extended-geometry/SPLIT_COMPACT_SYMMETRIC_CHARACTER_DOMAIN_PRODUCT_COUNTEREXAMPLES.md) |
+| Balanced unitary and quaternionic Grassmann full-normalizer pure seeds | Internal result | proved | [Source](../foundations/extended-geometry/BALANCED_PROJECTOR_AND_ALBERT_NORMALIZER_QUOTIENTS.md) |
+| Albert full-normalizer and projective cubic quotient counterexamples | Internal result | proved | [Source](../foundations/extended-geometry/BALANCED_PROJECTOR_AND_ALBERT_NORMALIZER_QUOTIENTS.md) |
+| Polynomial-density domain normalizers with exact unsafe and pure-power tests | Internal result | proved | [Source](../foundations/extended-geometry/POLYNOMIAL_DENSITY_BOUNDED_DOMAIN_NORMALIZER.md) |
+| Standard balanced real Grassmann full-normalizer counterexamples over all characteristic-zero fields | Internal result | proved | [Source](../foundations/extended-geometry/BALANCED_BDI_CHEVALLEY_FULL_NORMALIZER_COUNTEREXAMPLES.md) |
+| Exact classical half-index torus moments and Coxeter normalizations for character-domain phases | Internal result | proved | [Source](../foundations/extended-geometry/MACDONALD_OPDAM_EXACT_CHARACTER_DOMAIN_MOMENTS.md) |
+| Full symmetric normalizers and descent of actual invariant phases | Internal result | proved | [Source](../foundations/extended-geometry/SYMMETRIC_NORMALIZER_PHASE_DESCENT_AND_EVII_QUOTIENT.md) |
+| Standard EVII full-normalizer quotient with an invariant all-orders unit marker | Internal result | proved | [Source](../foundations/extended-geometry/SYMMETRIC_NORMALIZER_PHASE_DESCENT_AND_EVII_QUOTIENT.md) |
+| Conditional EVEN algebraic-spline amplification with one all-order unit marker | Internal result | proved | [Source](../foundations/extended-geometry/ALGEBRAIC_SPLINE_ENDPOINT_AMPLIFICATION_COUNTEREXAMPLES.md) |
+| All-field strong product counterexamples on arbitrary compact rational coadjoint and line-preserving homogeneous models | Internal result | proved | [Source](../foundations/extended-geometry/UNIVERSAL_COMPACT_RATIONAL_COADJOINT_PRODUCT_COUNTEREXAMPLES.md) |
+| Actual Gaussian-unit divergence for a rotation orbit of dominant points | Internal result | proved | [Source](vanishing/GAUSSIAN_W_AFFINE_ROTATIONAL_DIVERGENCE.md) |
+| Hamburger and Stieltjes classification of a normalized Wick sequence | Internal result | proved | [Source](vanishing/GAUSSIAN_W_AFFINE_ROTATIONAL_DIVERGENCE.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 

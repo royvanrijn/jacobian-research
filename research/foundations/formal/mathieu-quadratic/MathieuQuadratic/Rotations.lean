@@ -114,6 +114,44 @@ theorem sum_rotation_numerators (a : Fin 2 → K) (b : Fin M → K) (n : ℕ) :
       simp only [Nat.succ_sub_one, pow_succ, Nat.cast_succ]
       ring
 
+private theorem rotation_plane (a : Fin 2 → K) (b : Fin M → K) (i : Fin 2) (j : Fin M) :
+    rotation a b i j (planeNorm a) = 2 * (C (a i) * x i) * (C (b j) * z j) := by
+  rw [rotation_apply, plane_pderiv_plane, plane_pderiv_height, mul_zero, sub_zero]
+  ring
+
+private theorem rotation_coordinate_plane_term (a : Fin 2 → K) (b : Fin M → K)
+    (i : Fin 2) (j : Fin M) (hb : b j = 1) (k r : ℕ) :
+    rotation a b i j (z j ^ (2 * k + 1) * x i * planeNorm a ^ r) =
+      z j ^ (2 * k + 2) * planeNorm a ^ r +
+        (2 * (r : QuadPolynomial K M)) * z j ^ (2 * k + 2) * planeNorm a ^ (r - 1) * planeTerm a i -
+        (2 * (k : QuadPolynomial K M) + 1) * z j ^ (2 * k) * planeNorm a ^ r * planeTerm a i := by
+  have hx : rotation a b i j (x i) = z j := by
+    simp [x, z, rotation_X, hb]
+  have hz : rotation a b i j (z j) = -(C (a i) * x i) := by
+    simp [x, z, rotation_X]
+  rw [Derivation.leibniz, Derivation.leibniz, Derivation.leibniz_pow,
+    Derivation.leibniz_pow, rotation_plane, hx, hz, hb, map_one, one_mul]
+  simp only [smul_eq_mul, nsmul_eq_mul, planeTerm, Nat.cast_add, Nat.cast_mul, Nat.cast_ofNat,
+    Nat.cast_one, Nat.add_sub_cancel, pow_succ (z j) (2 * k + 1), pow_succ (z j) (2 * k)]
+  ring
+
+/-- The rank-two rotations move one pair of powers from the coordinate
+to the plane norm. -/
+theorem sum_rotation_coordinate_plane (a : Fin 2 → K) (b : Fin M → K) (j : Fin M)
+    (hb : b j = 1) (k r : ℕ) :
+    ∑ i : Fin 2, rotation a b i j (z j ^ (2 * k + 1) * x i * planeNorm a ^ r) =
+      (2 * (r : QuadPolynomial K M) + 2) * z j ^ (2 * k + 2) * planeNorm a ^ r -
+        (2 * (k : QuadPolynomial K M) + 1) * z j ^ (2 * k) * planeNorm a ^ (r + 1) := by
+  have ha : (∑ i, planeTerm (M := M) a i) = planeNorm a := rfl
+  simp_rw [rotation_coordinate_plane_term a b _ j hb, Finset.sum_sub_distrib, Finset.sum_add_distrib,
+    ← Finset.mul_sum, ha, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+  cases r with
+  | zero => simp; ring
+  | succ r =>
+      simp only [Nat.succ_sub_one, Nat.cast_succ, pow_succ (planeNorm a) r,
+        pow_succ (planeNorm a) (r + 1)]
+      ring
+
 section Trace
 
 variable (a : Fin 2 → K) (b : Fin M → K)
@@ -165,6 +203,38 @@ theorem height_recurrence_of_rotations (trace : NormComplement a b →ₗ[K] K)
     ring
   rw [hfor, map_sub, hlin, hlin, sub_eq_zero] at hzero
   simpa using hzero
+
+theorem coordinate_plane_recurrence_of_rotations (trace : NormComplement a b →ₗ[K] K)
+    (h : AnnihilatesRotations a b trace) (j : Fin M) (hb : b j = 1) (k r n : ℕ) :
+    let x₀ := algebraMap (QuadPolynomial K M) (NormComplement a b) (X (Sum.inr j))
+    let B := algebraMap (QuadPolynomial K M) (NormComplement a b) (planeNorm a)
+    let v : NormComplement a b := ↑((normUnit a b)⁻¹)
+    (2 * (r : K) + 2) * trace (v ^ n * x₀ ^ (2 * k + 2) * B ^ r) =
+      (2 * (k : K) + 1) * trace (v ^ n * x₀ ^ (2 * k) * B ^ (r + 1)) := by
+  intro x₀ B v
+  let A := NormComplement a b
+  let φ := algebraMap (QuadPolynomial K M) A
+  have hz : trace (φ (∑ i : Fin 2, rotation a b i j (z j ^ (2 * k + 1) * x i * planeNorm a ^ r)) *
+      v ^ n) = 0 := by
+    rw [map_sum, Finset.sum_mul, map_sum]
+    exact Finset.sum_eq_zero fun i _ ↦ h i j _ _
+  rw [sum_rotation_coordinate_plane a b j hb, map_sub, sub_mul, map_sub, sub_eq_zero] at hz
+  simp only [map_mul, map_pow, map_add, map_natCast, map_one, map_ofNat] at hz
+  have ht (c : K) (p : A) : trace (algebraMap K A c * p) = c * trace p := by
+    rw [← Algebra.smul_def, map_smul, smul_eq_mul]
+  have h₁ : ((2 * (r : A) + 2) * φ (z j) ^ (2 * k + 2) * φ (planeNorm a) ^ r) * v ^ n =
+      algebraMap K A (2 * (r : K) + 2) * (v ^ n * x₀ ^ (2 * k + 2) * B ^ r) := by
+    change _ = _ * (v ^ n * φ (z j) ^ (2 * k + 2) * φ (planeNorm a) ^ r)
+    simp only [map_add, map_mul, map_natCast, map_ofNat]
+    ring
+  have h₂ : ((2 * (k : A) + 1) * φ (z j) ^ (2 * k) * φ (planeNorm a) ^ (r + 1)) * v ^ n =
+      algebraMap K A (2 * (k : K) + 1) * (v ^ n * x₀ ^ (2 * k) * B ^ (r + 1)) := by
+    change _ = _ * (v ^ n * φ (z j) ^ (2 * k) * φ (planeNorm a) ^ (r + 1))
+    simp only [map_add, map_mul, map_natCast, map_one, map_ofNat]
+    ring
+  change trace (((2 * (r : A) + 2) * φ (z j) ^ (2 * k + 2) * φ (planeNorm a) ^ r) * v ^ n) =
+    trace (((2 * (k : A) + 1) * φ (z j) ^ (2 * k) * φ (planeNorm a) ^ (r + 1)) * v ^ n) at hz
+  rwa [h₁, h₂, ht, ht] at hz
 
 end Trace
 

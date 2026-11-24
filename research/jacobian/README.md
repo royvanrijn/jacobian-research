@@ -40,6 +40,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Complete parallel restart classification and sharp degree207 ceiling | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_FOUR_COMPLETE_PARALLEL_RESTART.md) |
 | Closed inverse series and exact compressed jet degrees at index17 | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_SEVENTEEN_INVERSE_SERIES.md) |
 | Successive restart universality and exact all-round equivalence | Internal result | proved | [Source](subtree-shuffling/SUCCESSIVE_RESTART_UNIVERSALITY.md) |
+| A line of nonproper singleton fibres in the retained three-dimensional Keller map | Internal result | proved | [Source](../EXTERNAL_MATHEMATICAL_TRANSFERS.md) |
 
 **Computed obligations:** 20 unresolved; 5 resolved within their exact scope.
 

@@ -536,4 +536,60 @@ theorem perturbedProductPhase_absolute_nonpower [IsAlgClosed L]
     simpa only [map_mul, hfactor, DualNumber.snd_mul, fst_inr, snd_inr, mul_zero, add_zero] using
       mul_ne_zero hbase hc
 
+omit [CharZero K] in
+/-- The axis restriction of the simple-pole witness has a simple
+zero at x = −1. -/
+theorem simplePolePhase_absolute_nonpower (a : Fin 2 → K) (b : Fin M → K)
+    (i : Fin M) (hb : b i ≠ 0) :
+    let x := algebraMap (QuadPolynomial K M) (NormComplement a b) (MvPolynomial.X (Sum.inr i))
+    let B := algebraMap (QuadPolynomial K M) (NormComplement a b) (planeNorm a)
+    NonpowerUpToUnits (Algebra.TensorProduct.includeRight (R := K) (A := L)
+      (simplePolePhase (normUnit a b) x B)) := by
+  intro x B
+  let D := NormComplement a b
+  let R := QuadPolynomial K M
+  let U := normUnit a b
+  let t : L[ε] := inl (-1) + inr 1
+  let f : R →ₐ[K] L[ε] := MvPolynomial.aeval (blockJetCoordinates i 0 t)
+  have hq : (f (quadNorm a b)).fst = algebraMap K L (b i) := by
+    change ((MvPolynomial.aeval (blockJetCoordinates i 0 t)) (quadNorm a b)).fst = _
+    rw [blockJet_norm]
+    simp [t]
+  have hunit : IsUnit (f (quadNorm a b)) := by
+    rw [TrivSqZeroExt.isUnit_iff_isUnit_fst, hq]
+    exact (isUnit_iff_ne_zero.2 hb).map (algebraMap K L)
+  let jet : D →ₐ[K] L[ε] := IsLocalization.Away.liftAlgHom (quadNorm a b) hunit
+  have hmap (p : R) : jet (algebraMap R D p) = f p := IsLocalization.Away.lift_eq _ hunit _
+  have hx : jet x = t := by
+    change jet (algebraMap R D (MvPolynomial.X (Sum.inr i))) = t
+    rw [hmap]
+    exact (MvPolynomial.aeval_X _ _).trans (by simp [blockJetCoordinates])
+  have hB : jet B = 0 := by
+    change jet (algebraMap R D (planeNorm a)) = 0
+    rw [hmap, planeNorm, map_sum]
+    apply Finset.sum_eq_zero
+    intro j _
+    have hz : f (MvPolynomial.X (Sum.inl j)) = 0 :=
+      (MvPolynomial.aeval_X _ _).trans (by simp [blockJetCoordinates])
+    rw [map_mul, map_pow, hz, zero_pow (by decide), mul_zero]
+  have hTwo : (2 : L[ε]).fst = 2 := map_ofNat (TrivSqZeroExt.fstHom L L L) 2
+  have hinv : (jet (↑(U⁻¹) : D)).fst ≠ 0 :=
+    (((U⁻¹).isUnit.map jet).map (TrivSqZeroExt.fstHom L L L)).ne_zero
+  have he : jet (simplePolePhase U x B) =
+      jet (↑(U⁻¹) : D) * (1 + t) * (1 + 2 * t) := by
+    simp only [simplePolePhase, map_mul, map_add, map_sub, map_ofNat, map_one, hx, hB, sub_zero]
+  have hfactor : (1 + 2 * t : L[ε]).fst = -1 := by
+    rw [fst_add, fst_one, fst_mul, hTwo]
+    simp only [t, fst_add, fst_inl, fst_inr, add_zero]
+    norm_num
+  apply nonpower_of_dualNumber (extendJet (L := L) jet).toRingHom
+  · change (extendJet jet (Algebra.TensorProduct.includeRight _)).fst = 0
+    rw [extendJet_includeRight, he, fst_mul, fst_mul]
+    simp [t]
+  · change (extendJet jet (Algebra.TensorProduct.includeRight _)).snd ≠ 0
+    rw [extendJet_includeRight, he, DualNumber.snd_mul, DualNumber.snd_mul, fst_mul, hfactor]
+    simp only [t, fst_add, fst_one, fst_inl, fst_inr, add_zero, add_neg_cancel, mul_zero,
+      snd_add, snd_inl, snd_inr, snd_one, zero_mul, zero_add, mul_one, add_zero]
+    exact mul_ne_zero hinv (neg_ne_zero.mpr one_ne_zero)
+
 end MathieuQuadratic

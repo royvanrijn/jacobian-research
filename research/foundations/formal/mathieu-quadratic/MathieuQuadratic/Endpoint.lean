@@ -167,7 +167,7 @@ theorem powerBetaMoment_closed_form (M k : ℕ) (hM : 0 < M) :
   rw [he, map_div₀, map_natCast, ← Polynomial.eval₂_at_apply, ← ascPochhammer_eval₂]
   simp
 
-private theorem X_pow_succ_dvd_of_derivative {p : ℚ[X]} {n : ℕ} (h0 : p.coeff 0 = 0)
+theorem X_pow_succ_dvd_of_derivative {p : ℚ[X]} {n : ℕ} (h0 : p.coeff 0 = 0)
     (h : X ^ n ∣ p.derivative) : X ^ (n + 1) ∣ p := by
   rw [Polynomial.X_pow_dvd_iff] at h ⊢
   intro d hd

@@ -4,24 +4,24 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Classifies quadratic-complement traces in characteristic zero, proves degree-one detection in every dimension at least three, and gives a finite fixed-multiplier test and results for related norm spaces.",
+  "summary": "Classifies quadratic-complement traces in characteristic zero, proves the joint minima for explicit witnesses and gives a bounded one-order test for all multipliers. It also classifies the real special orthogonal Reynolds projection.",
   "status": "ready-for-review",
   "published": false,
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
   "pdf": "mathieu-quadratic-complements.pdf",
   "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=mathieu-quadratic-complements main.tex",
-  "abstract": "Let \\(q\\) be a nondegenerate quadratic form of dimension \\(N\\ge1\\) over a\nfield of characteristic zero. The kernel of the normalized\n\\(\\SO(q)\\times\\Gm\\)-invariant trace on \\(\\{q\\ne0\\}\\) is a Mathieu--Zhao\nsubspace exactly when \\(N\\le2\\). For \\(N\\ge3\\) we give an explicit\ngeometrically nonpower function whose positive powers have zero trace,\nwhile multiplication by \\(q^{N-2}\\) gives a nonzero trace at every order.\nFor this function the least detecting polynomial degree is \\(2N-4\\).\nWe give the sharp vanishing cutoff below that degree and a finite test\nfor eventual vanishing with any fixed regular multiplier.\nA linear multiplier detects every order for another explicit phase\nin every dimension \\(N\\ge3\\). Polynomial recurrences give a finite\ntest for any fixed phase and multiplier in the block-invariant ring.\nIn dimensions at least three the geometric nullcone is strictly contained\nin the pure phases with eventual marked vanishing, which in turn form\na proper subset of the pure phases. The results also apply to quadratic\nand quaternionic Hermitian norm complements. On the norm-one level,\nisotropy gives an all-order counterexample over the ground field.",
+  "abstract": "For a nondegenerate quadratic form \\(q\\) of dimension \\(N\\ge1\\) over a\ncharacteristic-zero field, the kernel of the normalized rotation and\nscaling trace on \\(\\{q\\ne0\\}\\) is Mathieu--Zhao exactly when \\(N\\le2\\).\nIn every higher dimension a single witness attains the minimum pole\norder, numerator degree and polynomial multiplier degree, namely\n\\(1,3,1\\). A second witness gives sharp degree cutoffs for its detecting\nmultipliers. For an arbitrary regular phase, testing finitely many\nmultipliers at one computable order decides eventual vanishing\nagainst every fixed multiplier. For phases affine in the angular\nvariable, a Laurent support criterion suffices. Over \\(\\mathbb R\\),\nthe kernel of the special orthogonal Reynolds projection is\nMathieu--Zhao exactly when \\(q\\) is definite or \\(N\\le2\\).",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "verification": {
-    "scope": "Written arguments, bounded exact arithmetic controls, and PDF-only internal review of the linear multiplier, residue recurrence, two-weight criterion, and norm-space extensions.",
+    "scope": "Written arguments, bounded exact arithmetic controls, and PDF-only internal review of the exponent shift, the degree bound and the special orthogonal Reynolds classification.",
     "limits": "External specialist review, independent external replay, and full formal verification remain pending."
   },
   "next_steps": [
-    "Obtain specialist review of the endpoint calculations, formal-residue recurrence and ground-field trace comparisons.",
-    "Characterize eventual marked vanishing for every regular multiplier beyond the classified subfamilies.",
+    "Obtain specialist review of the exponent-shift algorithm, angular interpolation proof and sharp numerator obstruction.",
+    "Find smaller test orders and multiplier degrees and explicit criteria in higher angular degree.",
     "Review the manuscript with the author before any submission."
   ]
 }

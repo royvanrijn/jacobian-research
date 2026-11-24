@@ -37,6 +37,7 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | All-field fixed-unit-marker counterexamples on Cayley-plane projector products | Internal result | proved | [Source](extended-geometry/CAYLEY_PLANE_PROJECTOR_PRODUCT_COUNTEREXAMPLE.md) |
 | Compact unitary EIV products over all fields | Internal result | proved | [Source](extended-geometry/ALBERT_EIV_AND_REDUCED_NORM_ONE_PRODUCT_COUNTEREXAMPLES.md) |
 | Reduced Albert norm-one product counterexamples over all fields | Internal result | proved | [Source](extended-geometry/ALBERT_EIV_AND_REDUCED_NORM_ONE_PRODUCT_COUNTEREXAMPLES.md) |
+| Uniform bounded-domain normalizer: exact conditional counterexample criterion | Internal result | proved | [Source](extended-geometry/UNIFORM_BOUNDED_DOMAIN_NORMALIZER_CRITERION.md) |
 
 **Computed obligations:** 11 unresolved; 1 resolved within their exact scope.
 

@@ -1,3 +1,4 @@
+import MathieuQuadratic.DualTrace
 import MathieuQuadratic.Counterexample
 import MathieuQuadratic.Infinitesimal
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
@@ -75,16 +76,7 @@ variable (a : Fin 2 → K) (b : Fin M → K)
 local notation "R" => QuadPolynomial K M
 local notation "A" => NormComplement a b
 
-private noncomputable def mapDualCoefficients : K[ε] →+* A[ε] where
-  toFun x := ⟨algebraMap K A x.fst, algebraMap K A x.snd⟩
-  map_zero' := by ext <;> simp
-  map_one' := by ext <;> simp
-  map_add' _ _ := by ext <;> simp
-  map_mul' _ _ := by
-    apply TrivSqZeroExt.ext
-    · exact map_mul _ _ _
-    · simp only [DualNumber.snd_mul, map_add, map_mul]
-      rfl
+private noncomputable abbrev mapDualCoefficients : K[ε] →+* A[ε] := dualCoefficientMap
 
 private theorem dual_coeff_inl (x : K) :
     mapDualCoefficients a b (inl x) = inl (algebraMap K A x) := by
@@ -140,5 +132,37 @@ theorem GeometricTrace.complementTrace {trace : A →ₗ[K] K} (h : GeometricTra
   intro i j f
   exact h.orthogonal _ _ (rotationPoint_det a b i j) (rotationPoint_isometry a b i j)
     (firstOrderRotation_isMatrixPullback a b i j) f
+
+def complementDiagonalWeights (ha : ∀ i, a i ≠ 0) (hb : ∀ j, b j ≠ 0) : I → Kˣ :=
+  Sum.elim (fun i ↦ Units.mk0 (a i) (ha i)) (fun j ↦ Units.mk0 (b j) (hb j))
+
+omit [CharZero K] in
+theorem quadNorm_eq_diagonal (ha : ∀ i, a i ≠ 0) (hb : ∀ j, b j ≠ 0) :
+    quadNorm a b = diagonalNormPolynomial (complementDiagonalWeights a b ha hb) := by
+  simp only [quadNorm, planeNorm, heightNorm, diagonalNormPolynomial, Fintype.sum_sum_type,
+    complementDiagonalWeights, Sum.elim_inl, Sum.elim_inr, Units.val_mk0]
+
+/-- The algebraic trace on the complement in the plane-height coordinates. -/
+noncomputable def complementAlgebraicTrace (ha : ∀ i, a i ≠ 0) (hb : ∀ j, b j ≠ 0) : A →ₗ[K] K :=
+  algebraicTraceAt (complementDiagonalWeights a b ha hb) (quadNorm a b)
+    (quadNorm_eq_diagonal a b ha hb)
+
+/-- The algebraic trace satisfies every geometric trace condition used in
+the draft's uniform witness. -/
+theorem complementAlgebraicTrace_isGeometric (ha : ∀ i, a i ≠ 0) (hb : ∀ j, b j ≠ 0) :
+    GeometricTrace a b (complementAlgebraicTrace a b ha hb) where
+  normalized := algebraicTraceAt_one _ _ _
+  scalarTwo f := algebraicTraceAt_scalar _ _ _ _
+    (scalarPullback a b (Units.mk0 (2 : K) two_ne_zero))
+    (scalarPullback_X a b (Units.mk0 (2 : K) two_ne_zero)) f
+  orthogonal T ψ hdet hT hψ f := by
+    apply algebraicTraceAt_firstOrder_zero _ _ _ _ _ hdet _ _ f
+    · have he : (fun j ↦ inl (complementDiagonalWeights a b ha hb j : K)) =
+          fun j ↦ (inl (Sum.elim a b j) : K[ε]) := by
+        funext j
+        cases j <;> rfl
+      rw [he]
+      exact hT
+    · exact hψ
 
 end MathieuQuadratic

@@ -1,4 +1,5 @@
 import MathieuQuadratic.Diagonal
+import MathieuQuadratic.GeometricAction
 import Mathlib.Algebra.MvPolynomial.Funext
 
 /-!
@@ -9,7 +10,7 @@ an isomorphism of its norm localizations. The high-dimensional chart
 in the draft is obtained by the rank-two orthogonal splitting.
 -/
 
-open scoped BigOperators
+open scoped BigOperators Matrix
 open MvPolynomial
 
 namespace MathieuQuadratic
@@ -110,6 +111,109 @@ noncomputable def localizationOfIsometry
   exact IsLocalization.algEquivOfAlgEquiv (M := Submonoid.powers (quadraticCoordinatePolynomial q))
     (T := Submonoid.powers (quadraticCoordinatePolynomial q'))
     _ _ (linearCoordinateEquiv e.toLinearEquiv) (by rw [Submonoid.map_powers, hp])
+
+omit [CharZero K] [Infinite K] [Fintype I] [Fintype J] in
+/-- The matrix whose columns are the coordinate images under a linear map. -/
+noncomputable def coordinateMatrix (e : (J → K) →ₗ[K] (I → K)) : Matrix I J K :=
+  fun i j ↦ e (standardVector j) i
+
+omit [CharZero K] [Infinite K] [Fintype I] in
+theorem coordinateMatrix_mulVec (e : (J → K) →ₗ[K] (I → K)) (v : J → K) :
+    coordinateMatrix e *ᵥ v = e v := by
+  classical
+  funext i
+  have h := congrArg (fun w : I → K ↦ w i) (e.pi_apply_eq_sum_univ v)
+  change (∑ j, e (standardVector j) i * v j) = e v i
+  unfold standardVector
+  simpa [mul_comm, smul_eq_mul] using h.symm
+
+omit [CharZero K] in
+theorem linearCoordinateEquiv_matrixPullback (e : (I → K) ≃ₗ[K] (J → K)) (p : MvPolynomial I K) :
+    linearCoordinateEquiv e p = matrixPolynomialPullback (coordinateMatrix e.symm.toLinearMap) p := rfl
+
+omit [CharZero K] in
+theorem linearCoordinateEquiv_comp {T : Type*} [Fintype T]
+    (e : (I → K) ≃ₗ[K] (J → K)) (g : (J → K) ≃ₗ[K] (T → K)) (p : MvPolynomial I K) :
+    linearCoordinateEquiv g (linearCoordinateEquiv e p) = linearCoordinateEquiv (e.trans g) p := by
+  apply MvPolynomial.funext
+  intro x
+  rw [eval_linearCoordinateEquiv, eval_linearCoordinateEquiv, eval_linearCoordinateEquiv]
+  rfl
+
+omit [CharZero K] in
+/-- A polynomial coordinate equivalence carrying one norm to another
+induces the corresponding equivalence on localizations. -/
+noncomputable def localizationCoordinateEquiv (e : (I → K) ≃ₗ[K] (J → K))
+    (p : MvPolynomial I K) (r : MvPolynomial J K) (h : linearCoordinateEquiv e p = r) :
+    Localization.Away p ≃ₐ[K] Localization.Away r :=
+  IsLocalization.algEquivOfAlgEquiv _ _ (linearCoordinateEquiv e)
+    (by rw [Submonoid.map_powers, h])
+
+omit [CharZero K] in
+theorem localizationCoordinateEquiv_polynomial (e : (I → K) ≃ₗ[K] (J → K))
+    (p : MvPolynomial I K) (r : MvPolynomial J K) (h : linearCoordinateEquiv e p = r)
+    (s : MvPolynomial I K) :
+    localizationCoordinateEquiv e p r h (algebraMap _ (Localization.Away p) s) =
+      algebraMap _ (Localization.Away r) (linearCoordinateEquiv e s) := by
+  rw [localizationCoordinateEquiv, IsLocalization.algEquivOfAlgEquiv_eq]
+
+/-- A diagonal chart records the linear isometry before localization. -/
+structure QuadraticDiagonalChart (q : QuadraticForm K (I → K)) (J : Type*) [Fintype J] where
+  weights : J → Kˣ
+  coordinates : (I → K) ≃ₗ[K] (J → K)
+  preserves : ∀ v, diagonalNorm weights (coordinates v) = q v
+
+namespace QuadraticDiagonalChart
+
+variable {q : QuadraticForm K (I → K)} (chart : QuadraticDiagonalChart q J)
+
+theorem norm_polynomial :
+    linearCoordinateEquiv chart.coordinates (quadraticCoordinatePolynomial q) =
+      diagonalNormPolynomial chart.weights := by
+  apply MvPolynomial.funext
+  intro v
+  rw [eval_linearCoordinateEquiv, eval_quadraticCoordinatePolynomial, eval_diagonalNormPolynomial,
+    ← chart.preserves (chart.coordinates.symm v), LinearEquiv.apply_symm_apply]
+
+/-- The localized chart with its norm in any given polynomial presentation. -/
+noncomputable def localizationAt (r : MvPolynomial J K)
+    (hr : r = diagonalNormPolynomial chart.weights) :
+    Localization.Away (quadraticCoordinatePolynomial q) ≃ₐ[K] Localization.Away r :=
+  localizationCoordinateEquiv chart.coordinates _ r (chart.norm_polynomial.trans hr.symm)
+
+noncomputable def localization :
+    Localization.Away (quadraticCoordinatePolynomial q) ≃ₐ[K]
+      Localization.Away (diagonalNormPolynomial chart.weights) :=
+  chart.localizationAt (diagonalNormPolynomial chart.weights) rfl
+
+end QuadraticDiagonalChart
+
+omit [Infinite K] in
+/-- A nondegenerate form admits a diagonal chart indexed by its dimension. -/
+theorem exists_fin_diagonal_chart (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (N : ℕ) (hN : Fintype.card I = N) :
+    Nonempty (QuadraticDiagonalChart q (Fin N)) := by
+  have hdim : Module.finrank K (I → K) = N := by
+    simpa [Module.finrank_fintype_fun_eq_card] using hN
+  clear hN
+  subst N
+  letI : Invertible (2 : K) := invertibleOfNonzero two_ne_zero
+  obtain ⟨d, ⟨e⟩⟩ := q.equivalent_weightedSumSquares_units_of_nondegenerate' hn
+  refine ⟨⟨d, e.toLinearEquiv, fun v ↦ ?_⟩⟩
+  change diagonalNorm d (e v) = q v
+  simpa only [QuadraticMap.weightedSumSquares_apply, diagonalNorm, diagonalPair,
+    Units.smul_def, smul_eq_mul, mul_assoc] using e.map_app v
+
+/-- Diagonalization and transport give a norm localization with one
+coordinate per dimension. -/
+theorem exists_fin_diagonal_localization (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (N : ℕ) (hN : Fintype.card I = N) :
+    ∃ d : Fin N → Kˣ, Nonempty (Localization.Away (quadraticCoordinatePolynomial q) ≃ₐ[K]
+      Localization.Away (diagonalNormPolynomial d)) := by
+  obtain ⟨chart⟩ := exists_fin_diagonal_chart q hn N hN
+  exact ⟨chart.weights, ⟨chart.localization⟩⟩
 
 /-- The higher-dimensional coordinate ring in the draft admits the
 displayed rank-two diagonal chart, by a norm-preserving isomorphism. -/

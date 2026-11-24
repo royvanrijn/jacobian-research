@@ -3,7 +3,7 @@
 This Lean 4.32.1 project follows the [uniform counterexample](../../extended-geometry/QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md)
 and the [sharp dimension classification](../../extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md).
 
-From this directory, run:
+Run both commands from this directory.
 
     lake build
     lake env lean Audit.lean
@@ -14,49 +14,121 @@ Lean axioms of the principal declarations.
 ## Statements in the current draft
 
 The [paper draft](../../../../unpublished/mathieu-quadratic-complements/main.tex)
-uses the product phase \(F_{α,β,γ}=q^{-α}(1+q)^β W^γ\). The formal
-statements follow this choice of phase.
+opens over the rational sum of squares with
+\(p=(1+x)(1+2x-y^2-z^2)/q\). The main theorem uses the distinct product
+family \(F_{α,β,γ}=q^{-α}(1+q)^β W^γ\).
 
+- [SimplePole.lean](MathieuQuadratic/SimplePole.lean) proves the opening
+  pure and marked moments, with marked value \(2^m/(m+1)\). On a
+  normalized diagonal chart, it gives the dimension-dependent formula
+  for the same construction. It derives the moment formula from
+  scalar weights, rank-two rotations, and finite polynomial
+  coefficient extraction. The geometric restriction at \(x=-1\)
+  excludes proper powers up to units. The denominator order is one,
+  every pure polynomial phase is safe, and a constant multiplier
+  cannot detect any pure phase.
 - [Moments.lean](MathieuQuadratic/Moments.lean) and
   [Draft.lean](MathieuQuadratic/Draft.lean) give the mixed-moment
   proposition for arbitrary product parameters, the zero for a negative
   extraction index, and the first omitted coefficient. They identify the
-  rational beta constants with the integrals in the draft.
-- [Draft.lean](MathieuQuadratic/Draft.lean) gives the opening ternary
-  witness \(F_{1,1,1}\), its first marked moment \(2/3\), and the
-  prescription \(F_{M,M,M+1}\) with marker \(q^M\). These statements use
-  a normalized trace with scalar and geometric infinitesimal invariance.
-  [Nonpower.lean](MathieuQuadratic/Nonpower.lean) checks the two
+  rational beta constants with the integrals in the draft. The uniform
+  prescription \(F_{M,M,M+1}\) has the fixed marker \(q^M\).
+  [Nonpower.lean](MathieuQuadratic/Nonpower.lean) checks both
   restriction orders over the algebraic closure.
+- [BlockPolynomials.lean](MathieuQuadratic/BlockPolynomials.lean) proves
+  the block-invariant polynomial description and degree bound. It obtains
+  a block average from invariant complements and the trace comparison.
+  [DraftBounds.lean](MathieuQuadratic/DraftBounds.lean) clears the norm
+  denominator for regular multipliers and proves the sharp cutoff and least
+  detecting polynomial degrees from the block averaging input.
 - [SharpMultiplier.lean](MathieuQuadratic/SharpMultiplier.lean) proves
-  the sharp order cutoff on the span of the averaged monomials, the
-  last-order detection by \(B^J\), and the purity and detection
+  the last-order detection by \(B^J\), and the purity and detection
   alternatives for the product family given the block expansions.
   [MultiplierTail.lean](MathieuQuadratic/MultiplierTail.lean) gives the
-  cleared rational function for a finite expansion and proves the
-  equivalence with eventual vanishing.
+  rational test for a finite expansion and proves both eventual outcomes.
+  It checks the cancellation example for the uniform ternary phase.
 - [Perturbation.lean](MathieuQuadratic/Perturbation.lean) gives the
-  first-order cancellation, all positive pure and marked moments,
-  and below-threshold vanishing on the block span for \(F_*\).
+  first-order cancellation and the all-order witness for \(F_*\).
   [PoleOrder.lean](MathieuQuadratic/PoleOrder.lean) proves the exact
-  clearing powers for both phases and assembles the perturbation witness
-  with its absolute nonpower property.
-- [OrthogonalTrace.lean](MathieuQuadratic/OrthogonalTrace.lean) realizes
-  the rank-two rotations as special orthogonal dual-number points.
-  [GeometricAction.lean](MathieuQuadratic/GeometricAction.lean) and
+  denominator orders, the sharp minimum within the product family, and
+  the absolute nonpower assertion for the perturbation.
+- [MarkedRecurrence.lean](MathieuQuadratic/MarkedRecurrence.lean)
+  proves that a supplied nonzero polynomial recurrence gives a finite
+  window for eventual vanishing. The proof chooses a threshold beyond
+  the integer roots of both endpoint coefficients.
+- [Instability.lean](MathieuQuadratic/Instability.lean) gives the
+  eventual-vanishing bound from a positive weight filtration. It proves
+  purity and safety for \(F_{M+1,M,2M+1}\) from the block average and
+  shows that its two extreme moments give a nonzero invariant under
+  the stated covariance. A closed invariant fiber then excludes zero
+  from its orbit closure.
+- [NormOneChart.lean](MathieuQuadratic/NormOneChart.lean) constructs the
+  hyperbolic norm-one quotient. The torus action gives unequal-exponent
+  vanishing, and the same rotation identity as on the complement gives the
+  height moment formula. Together they give the exact all-order witness.
+  A geometric simple zero verifies nonpower.
+- [SplitNormTraces.lean](MathieuQuadratic/SplitNormTraces.lean) proves
+  transitivity on a nonzero vector–covector pairing, the split
+  quadratic étale model. It also proves that square detection implies
+  the Mathieu property, as used for the real sphere.
+- [AlgebraicTrace.lean](MathieuQuadratic/AlgebraicTrace.lean) constructs
+  the normalized functional from polynomial moments. The radial
+  recurrence gives a trace independent of the denominator
+  presentation. The polynomial chain rule proves its scalar and
+  orthogonal invariance. The same moment formula works over the dual
+  numbers, giving infinitesimal invariance in
+  [DualTrace.lean](MathieuQuadratic/DualTrace.lean).
+- [OrthogonalTrace.lean](MathieuQuadratic/OrthogonalTrace.lean) verifies
+  all the geometric trace hypotheses for the constructed functional
+  in the plane-height chart. [Draft.lean](MathieuQuadratic/Draft.lean)
+  obtains the uniform witness in every dimension at least three by
+  diagonalization and transport. The marker remains \(q^{N-2}\).
+- [GeometricAction.lean](MathieuQuadratic/GeometricAction.lean) and
   [Transitivity.lean](MathieuQuadratic/Transitivity.lean) prove geometric
   transitivity and the constant invariant subspace.
+  [GeometricProjection.lean](MathieuQuadratic/GeometricProjection.lean)
+  proves that the algebraic trace commutes with extension of the
+  ground field.
+  [TraceUniqueness.lean](MathieuQuadratic/TraceUniqueness.lean) proves
+  uniqueness on geometric points by testing powers of linear forms.
+  [CanonicalTrace.lean](MathieuQuadratic/CanonicalTrace.lean) transports
+  this trace through arbitrary diagonal charts and identifies it with
+  the normalized invariant functional over the algebraic closure.
+- [AlgebraicLaurentTrace.lean](MathieuQuadratic/AlgebraicLaurentTrace.lean)
+  identifies the algebraic trace with Laurent constant coefficient in
+  dimensions one and two. The binary proof conjugates the split torus
+  into the diagonal isometry group and uses compatibility with scalar
+  extension. The Mathieu conclusion on each of these coordinate models
+  uses the corresponding complex Laurent necessity theorem.
+- [LaurentTrace.lean](MathieuQuadratic/LaurentTrace.lean) derives the
+  weights and constant-term comparison from the actual diagonal torus
+  pullbacks in the split low-dimensional charts.
   [QuadraticCoordinates.lean](MathieuQuadratic/QuadraticCoordinates.lean)
   gives the norm-preserving localization equivalence for the rank-two chart.
-- [Draft.lean](MathieuQuadratic/Draft.lean) proves the stated dimension
-  cutoff and field-extension result given the trace comparisons and
-  the complex Laurent theorem. The high-dimensional conclusion uses
-  the draft's product phase and prescribed norm-power marker.
+- [Draft.lean](MathieuQuadratic/Draft.lean) gives the dimension cutoff
+  and field-extension result from the geometric trace comparisons
+  and the complex Laurent theorem. Its high-dimensional conclusion
+  uses the draft's product phase and prescribed norm-power marker.
 
-The geometric Reynolds decomposition, its trace comparisons, the
-unconditional block averaging proposition, the isotropic ternary linear
-multiplier example, and the complex Laurent necessity theorem remain
-formalization obligations.
+The canonical trace theorem in [Draft.lean](MathieuQuadratic/Draft.lean)
+proves the sharp dimension cutoff from the two low-rank Laurent
+necessity statements. The counterexample at every dimension at least
+three, with the prescribed norm-power marker, is proved independently
+of Laurent necessity. The necessity statements themselves remain
+inputs to the current formalization.
+
+The recurrence proposition still needs the residue-elimination proof
+of existence and effectivity. The nullcone classification still needs
+the geometric Hilbert–Mumford comparison and the two-term
+ordered-field positivity argument. The Hermitian corollary still
+needs the algebra splitting, the quaternionic symplectic case, and
+the canonical trace comparisons. The norm-one corollary uses torus
+and infinitesimal invariance as hypotheses. The real sphere observation
+uses square detection as a hypothesis.
+
+The draft also adds statements on quadratic numerators, all regular
+multipliers, and angular phases that are outside the formal coverage
+described here.
 
 ## Supporting squared-normalizer construction
 
@@ -128,9 +200,3 @@ two Laurent coordinates.
 [Classification.lean](MathieuQuadratic/Classification.lean) transports
 the resulting low-dimensional criterion and the higher-dimensional
 witness through the indicated algebra and trace identifications.
-
-The geometric Reynolds decomposition for the \(SO(q)\times\mathbb G_m\)
-action remains an input. The geometric trace comparisons must identify
-the canonical group trace with the normalized projections and torus
-character traces in these modules. The complex Duistermaat–van der Kallen
-necessity direction remains an explicit hypothesis of the classification.

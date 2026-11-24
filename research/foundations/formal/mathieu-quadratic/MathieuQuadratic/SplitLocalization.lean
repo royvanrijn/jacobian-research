@@ -188,7 +188,7 @@ noncomputable def splitDiagonalPullback (c : Kˣ) (powers : J → ℕ) (χ : J �
     (scaleVariables_norm_unit c powers χ)
 
 omit [DecidableEq J] in
-private theorem splitDiagonalPullback_X (c : Kˣ) (powers : J → ℕ) (χ : J → Kˣ) (i : J) :
+theorem splitDiagonalPullback_X (c : Kˣ) (powers : J → ℕ) (χ : J → Kˣ) (i : J) :
     splitDiagonalPullback c powers χ (algebraMap (MvPolynomial J K) _ (X i)) =
       algebraMap K _ (χ i : K) * algebraMap (MvPolynomial J K) _ (X i) := by
   have he := IsLocalization.Away.lift_eq (S := SplitComplement c powers) (splitNorm c powers)

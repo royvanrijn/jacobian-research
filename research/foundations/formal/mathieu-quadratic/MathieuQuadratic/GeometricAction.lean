@@ -14,7 +14,26 @@ namespace MathieuQuadratic
 
 open MvPolynomial
 
+/-- Polynomial pullback by a matrix, over any commutative coefficient ring. -/
+noncomputable def matrixPolynomialPullback {R I J : Type*} [CommRing R] [Fintype J]
+    (T : Matrix I J R) : MvPolynomial I R →ₐ[R] MvPolynomial J R :=
+  aeval fun i ↦ ∑ j, C (T i j) * X j
+
+@[simp] theorem matrixPolynomialPullback_X {R I J : Type*} [CommRing R] [Fintype J]
+    (T : Matrix I J R) (i : I) :
+    matrixPolynomialPullback T (X i) = ∑ j, C (T i j) * X j :=
+  aeval_X _ _
+
 variable {K J : Type*} [Field K] [Fintype J]
+
+theorem eval_matrixPolynomialPullback {I : Type*} (T : Matrix I J K) (v : J → K) (p : MvPolynomial I K) :
+    eval v (matrixPolynomialPullback T p) = eval (T *ᵥ v) p := by
+  have he : (aeval v : MvPolynomial J K →ₐ[K] K).comp (matrixPolynomialPullback T) =
+      aeval (T *ᵥ v) := by
+    apply MvPolynomial.algHom_ext
+    intro i
+    simp [Matrix.mulVec, dotProduct]
+  exact AlgHom.congr_fun he p
 
 private noncomputable def linearPullback (T : Matrix J J K) (c : Kˣ) :
     MvPolynomial J K →ₐ[K] MvPolynomial J K :=
@@ -68,6 +87,53 @@ private theorem geometricPullback_polynomial (T : Matrix J J K) (c : Kˣ)
   IsLocalization.Away.lift_eq (diagonalNormPolynomial d)
     (g := (algebraMap R Cq).comp (linearPullback T c).toRingHom)
     (linearPullback_norm_unit d T c hT) p
+
+omit [Infinite K] in
+private theorem linearPullback_eq_matrixPullback (T : Matrix J J K) (c : Kˣ) :
+    linearPullback T c = matrixPolynomialPullback ((c : K) • T) := by
+  apply MvPolynomial.algHom_ext
+  intro i
+  simp only [linearPullback, aeval_X, matrixPolynomialPullback_X, Matrix.smul_apply,
+    smul_eq_mul, map_mul, Finset.mul_sum, mul_assoc]
+
+theorem scaledMatrixPullback_norm (T : Matrix J J K) (c : Kˣ)
+    (hT : ∀ v, diagonalNorm d (T *ᵥ v) = diagonalNorm d v) :
+    matrixPolynomialPullback ((c : K) • T) (diagonalNormPolynomial d) =
+      C ((c : K) ^ 2) * diagonalNormPolynomial d := by
+  rw [← linearPullback_eq_matrixPullback]
+  exact linearPullback_norm d T c hT
+
+theorem geometricPullback_polynomial_eq_matrixPullback (T : Matrix J J K) (c : Kˣ)
+    (hT : ∀ v, diagonalNorm d (T *ᵥ v) = diagonalNorm d v) (p : R) :
+    geometricPullback d T c hT (algebraMap R Cq p) =
+      algebraMap R Cq (matrixPolynomialPullback ((c : K) • T) p) := by
+  rw [geometricPullback_polynomial, linearPullback_eq_matrixPullback]
+
+/-- After scalar-isometry pullback, clearing the same denominator
+multiplies the pullback by the scalar weight of that denominator. -/
+theorem geometricPullback_clear_denominator (T : Matrix J J K) (c : Kˣ)
+    (hT : ∀ v, diagonalNorm d (T *ᵥ v) = diagonalNorm d v)
+    (f : Cq) (p : R) (n : ℕ)
+    (hp : f * algebraMap R Cq (diagonalNormPolynomial d ^ n) = algebraMap R Cq p) :
+    ((c : K) ^ (2 * n) • geometricPullback d T c hT f) *
+        algebraMap R Cq (diagonalNormPolynomial d ^ n) =
+      algebraMap R Cq (matrixPolynomialPullback ((c : K) • T) p) := by
+  let q := diagonalNormPolynomial d
+  let ι := algebraMap R Cq
+  let ψ := geometricPullback d T c hT
+  have hψq : ψ (ι q) = algebraMap K Cq ((c : K) ^ 2) * ι q := by
+    rw [show ψ (ι q) = ι (matrixPolynomialPullback ((c : K) • T) q) from
+      geometricPullback_polynomial_eq_matrixPullback d T c hT q,
+      scaledMatrixPullback_norm d T c hT, map_mul,
+      ← algebraMap_eq, ← IsScalarTower.algebraMap_apply]
+  have hs := congrArg ψ hp
+  change ψ (f * ι (q ^ n)) = ψ (ι p) at hs
+  rw [map_mul, map_pow, map_pow, hψq, mul_pow, ← map_pow, ← pow_mul, mul_left_comm,
+    show ψ (ι p) = ι (matrixPolynomialPullback ((c : K) • T) p) from
+      geometricPullback_polynomial_eq_matrixPullback d T c hT p] at hs
+  change ((c : K) ^ (2 * n) • ψ f) * ι (q ^ n) = _
+  rw [Algebra.smul_mul_assoc, Algebra.smul_def, ← hs]
+  simp only [map_pow]
 
 theorem eval_geometricPullback (T : Matrix J J K) (c : Kˣ)
     (hT : ∀ v, diagonalNorm d (T *ᵥ v) = diagonalNorm d v)

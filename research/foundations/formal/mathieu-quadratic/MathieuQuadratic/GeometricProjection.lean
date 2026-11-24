@@ -1,6 +1,8 @@
+import MathieuQuadratic.AlgebraicTrace
 import MathieuQuadratic.BlockPolynomials
 import MathieuQuadratic.GeometricAction
 import MathieuQuadratic.Reynolds
+import MathieuQuadratic.LocalizationBaseChange
 import Mathlib.RepresentationTheory.Semisimple
 
 /-!
@@ -164,5 +166,117 @@ theorem existsUnique_geometric_point_trace_of_semisimple
   refine ⟨disjoint_iff.mpr ?_, codisjoint_iff.mpr ?_⟩
   · exact congrArg Subrepresentation.toSubmodule hc.inf_eq_bot
   · exact congrArg Subrepresentation.toSubmodule hc.sup_eq_top
+
+/-- The explicit algebraic trace is a normalized geometric point trace. -/
+theorem algebraicTrace_normalized_invariant :
+    algebraicTrace d 1 = 1 ∧ ∀ g f, algebraicTrace d (orthogonalScalarAction d g f) =
+      algebraicTrace d f := by
+  refine ⟨algebraicTrace_one d, fun g f ↦ ?_⟩
+  exact algebraicTrace_geometricPullback d g.matrix g.scalar
+    (by rw [g.determinant]; exact isUnit_one) g.preserves f
+
+/-- In a semisimple point representation, the algebraic formula computes
+the unique normalized invariant functional. -/
+theorem algebraicTrace_eq_geometric_point_trace
+    [Representation.IsSemisimpleRepresentation (orthogonalScalarRepresentation d)]
+    (trace : A →ₗ[K] K) (hn : trace 1 = 1)
+    (hi : ∀ g f, trace (orthogonalScalarAction d g f) = trace f) :
+    algebraicTrace d = trace :=
+  (existsUnique_geometric_point_trace_of_semisimple d).unique
+    (algebraicTrace_normalized_invariant d) ⟨hn, hi⟩
+
+section Extension
+
+open scoped TensorProduct
+
+variable {L : Type*} [Field L] [Algebra K L] [CharZero L] [IsAlgClosed L]
+
+/-- The diagonal coefficients after extension of the ground field. -/
+def extendedDiagonal : J → Lˣ := Units.map (algebraMap K L).toMonoidHom ∘ d
+
+omit [CharZero K] [DecidableEq J] [Nonempty J] [IsAlgClosed K] [CharZero L] [IsAlgClosed L] in
+theorem map_diagonalNormPolynomial :
+    MvPolynomial.map (algebraMap K L) (diagonalNormPolynomial d) =
+      diagonalNormPolynomial (extendedDiagonal (L := L) d) := by
+  simp [diagonalNormPolynomial, extendedDiagonal]
+
+omit [CharZero K] [DecidableEq J] [Nonempty J] [IsAlgClosed K] [CharZero L] [IsAlgClosed L] in
+/-- Scalar extension carries the coordinate ring to the extended norm
+complement. -/
+noncomputable def diagonalComplementBaseChange :
+    L ⊗[K] A ≃ₐ[L] Localization.Away (diagonalNormPolynomial (extendedDiagonal (L := L) d)) :=
+  (localizationBaseChange (L := L) (diagonalNormPolynomial d)).trans <|
+    IsLocalization.algEquivOfAlgEquiv
+      (M := Submonoid.powers (MvPolynomial.map (algebraMap K L) (diagonalNormPolynomial d)))
+      (T := Submonoid.powers (diagonalNormPolynomial (extendedDiagonal (L := L) d)))
+      _ _ (AlgEquiv.refl : MvPolynomial J L ≃ₐ[L] MvPolynomial J L) (by
+        rw [Submonoid.map_powers]
+        change Submonoid.powers (MvPolynomial.map (algebraMap K L) (diagonalNormPolynomial d)) = _
+        rw [map_diagonalNormPolynomial])
+
+omit [CharZero K] [DecidableEq J] [Nonempty J] [IsAlgClosed K] [CharZero L] [IsAlgClosed L] in
+theorem diagonalComplementBaseChange_polynomial (p : MvPolynomial J K) :
+    diagonalComplementBaseChange (L := L) d
+      (Algebra.TensorProduct.includeRight (algebraMap (MvPolynomial J K) A p)) =
+      algebraMap (MvPolynomial J L) (Localization.Away
+        (diagonalNormPolynomial (extendedDiagonal (L := L) d)))
+          (MvPolynomial.map (algebraMap K L) p) := by
+  rw [diagonalComplementBaseChange, AlgEquiv.trans_apply, localizationBaseChange_includeRight,
+    IsLocalization.algEquivOfAlgEquiv_apply, IsLocalization.map_eq]
+  rfl
+
+omit [IsAlgClosed K] [IsAlgClosed L] in
+/-- The explicitly constructed trace commutes with every field extension. -/
+theorem algebraicTrace_baseChange :
+    (algebraicTrace (extendedDiagonal (L := L) d)).comp (diagonalComplementBaseChange d).toLinearMap =
+      extendTrace L (algebraicTrace d) := by
+  apply LinearMap.ext
+  intro z
+  induction z using TensorProduct.induction_on with
+  | zero => simp
+  | add x y hx hy => rw [map_add, map_add, hx, hy]
+  | tmul c f =>
+    let e := diagonalComplementBaseChange (L := L) d
+    let i : A →ₐ[K] L ⊗[K] A := Algebra.TensorProduct.includeRight
+    change algebraicTrace (extendedDiagonal d) (e (c ⊗ₜ[K] f)) = _
+    have hc : c ⊗ₜ[K] f = c • i f := by
+      change c ⊗ₜ[K] f = c • (1 ⊗ₜ[K] f)
+      rw [TensorProduct.smul_tmul', smul_eq_mul, mul_one]
+    rw [hc, map_smul, map_smul, smul_eq_mul, ← hc, extendTrace_tmul, mul_comm _ c]
+    congr 1
+    let n := (IsLocalization.Away.sec (diagonalNormPolynomial d) f).2
+    let p := (IsLocalization.Away.sec (diagonalNormPolynomial d) f).1
+    have hf : f * algebraMap (MvPolynomial J K) A (diagonalNormPolynomial d ^ n) =
+        algebraMap (MvPolynomial J K) A p := IsLocalization.Away.sec_spec _ _
+    apply algebraicTrace_map_fraction d f _ p n hf
+    have hg := congrArg (fun z : A ↦ e (i z)) hf
+    change e (i (f * algebraMap _ A (diagonalNormPolynomial d ^ n))) = e (i (algebraMap _ A p)) at hg
+    dsimp only [e, i] at hg
+    rw [map_mul, map_mul, diagonalComplementBaseChange_polynomial, diagonalComplementBaseChange_polynomial,
+      map_pow, map_diagonalNormPolynomial] at hg
+    exact hg
+
+omit [CharZero K] [IsAlgClosed K] in
+/-- Normalization and geometric invariance identify the extended
+functional with the unique geometric trace over the larger field. -/
+theorem geometric_point_trace_extension_unique
+    [Representation.IsSemisimpleRepresentation (orthogonalScalarRepresentation (extendedDiagonal (L := L) d))]
+    (trace : A →ₗ[K] K) (hn : trace 1 = 1)
+    (F : Localization.Away (diagonalNormPolynomial (extendedDiagonal d)) →ₗ[L] L)
+    (hF : F 1 = 1 ∧ ∀ g f, F (orthogonalScalarAction (extendedDiagonal d) g f) = F f)
+    (hInv : ∀ g f,
+      (extendTrace L trace).comp (diagonalComplementBaseChange d).symm.toLinearMap
+          (orthogonalScalarAction (extendedDiagonal d) g f) =
+        (extendTrace L trace).comp (diagonalComplementBaseChange d).symm.toLinearMap f) :
+    F = (extendTrace L trace).comp (diagonalComplementBaseChange d).symm.toLinearMap := by
+  have huv := existsUnique_geometric_point_trace_of_semisimple (extendedDiagonal (L := L) d)
+  have hnorm : ((extendTrace L trace).comp
+      (diagonalComplementBaseChange d).symm.toLinearMap) 1 = 1 := by
+    rw [LinearMap.comp_apply, AlgEquiv.toLinearMap_apply, map_one]
+    change extendTrace L trace (1 ⊗ₜ[K] 1) = 1
+    rw [extendTrace_tmul, hn, map_one, one_mul]
+  exact huv.unique hF ⟨hnorm, hInv⟩
+
+end Extension
 
 end MathieuQuadratic

@@ -265,4 +265,49 @@ theorem draft_product_minimum_pole_order (hM : 0 < M) (ha : a 0 ≠ 0) (i : Fin 
     · omega
     · exact productFamily_pole_lower_bound a b (by omega) hβ hβα hαk hn
 
+/-- The numerator of the simple-pole phase has value one at the
+origin, which excludes cancellation by the norm. -/
+theorem simplePolePhase_pole_order (i : Fin M) (hb : b i ≠ 0) (n : ℕ) :
+    let x := algebraMap (QuadPolynomial K M) (NormComplement a b) (MvPolynomial.X (Sum.inr i))
+    let B := algebraMap (QuadPolynomial K M) (NormComplement a b) (planeNorm a)
+    ClearsNormDenominators (quadNorm a b) (simplePolePhase (normUnit a b) x B) n ↔ 1 ≤ n := by
+  classical
+  intro x B
+  let R := QuadPolynomial K M
+  let D := NormComplement a b
+  let φ := algebraMap R D
+  let t : R := MvPolynomial.X (Sum.inr i)
+  let P : R := (1 + t) * (1 + 2 * t - planeNorm a)
+  have hq : quadNorm a b ≠ 0 := by
+    let ev := MvPolynomial.eval (fun j : Fin 2 ⊕ Fin M ↦ if j = Sum.inr i then (1 : K) else 0)
+    have hv : ev (quadNorm a b) = b i := by
+      rw [quadNorm, map_add, planeNorm, heightNorm, map_sum, map_sum]
+      have hp : ∑ j : Fin 2, ev (MvPolynomial.C (a j) * MvPolynomial.X (Sum.inl j) ^ 2) = 0 :=
+        Finset.sum_eq_zero fun j _ ↦ by simp [ev]
+      rw [hp, zero_add, Finset.sum_eq_single i]
+      · simp [ev]
+      · intro j _ hj
+        simp [ev, hj]
+      · simp
+    intro hz
+    rw [hz, map_zero] at hv
+    exact hb hv.symm
+  have hp : ¬ quadNorm a b ∣ P := by
+    rintro ⟨p, hp⟩
+    let ev : R →+* K := MvPolynomial.eval (fun _ ↦ 0)
+    have he := congrArg ev hp
+    have hX (j : Fin 2 ⊕ Fin M) : ev (MvPolynomial.X j) = 0 := MvPolynomial.eval_X j
+    have hv : ev (quadNorm a b) = 0 := by
+      simp only [quadNorm, planeNorm, heightNorm, map_add, map_sum, map_mul, map_pow, hX,
+        zero_pow (by decide : (2 : ℕ) ≠ 0), mul_zero, Finset.sum_const_zero, add_zero]
+    have hP : ev P = 1 := by
+      simp only [P, t, planeNorm, map_mul, map_add, map_one, map_ofNat, map_sub, map_sum, map_pow, hX,
+        zero_pow (by decide : (2 : ℕ) ≠ 0), mul_zero, Finset.sum_const_zero, add_zero, sub_zero, mul_one]
+    rw [hP, map_mul, hv, zero_mul] at he
+    exact one_ne_zero he
+  apply clearsNormDenominators_iff hq hp
+  rw [pow_one, ← normUnit_val, simplePolePhase, ← mul_assoc, ← mul_assoc, Units.mul_inv, one_mul]
+  simp only [P, map_mul, map_add, map_sub, map_one, map_ofNat]
+  rfl
+
 end MathieuQuadratic

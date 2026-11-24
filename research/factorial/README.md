@@ -122,6 +122,8 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Native-prime Hasse coprimality at arbitrary offsets | Internal result | proved | [Source](image-rigidity/NATIVE_PRIME_ARBITRARY_OFFSET_COPRIMALITY.md) |
 | All-order ordinary Strong Factorial at support {4,10} | Internal result | proved | [Source](image-rigidity/ORDINARY_LOWER_FOUR_GAP_SIX.md) |
 | Ordinary lower-four Strong Factorial at every gap | Internal result | proved | [Source](image-rigidity/ORDINARY_BINOMIAL_RESIDUAL_REGION.md) |
+| Consecutive linked binary factorial moments are coprime on the exponent axes | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
+| Opposite signs in the actual linked beta minor array | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
 
 **Computed obligations:** 56 unresolved; 20 resolved within their exact scope.
 

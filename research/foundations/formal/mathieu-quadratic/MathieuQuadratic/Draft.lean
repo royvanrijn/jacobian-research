@@ -1,3 +1,5 @@
+import MathieuQuadratic.AlgebraicLaurentTrace
+import MathieuQuadratic.CanonicalTrace
 import MathieuQuadratic.Classification
 import MathieuQuadratic.Extension
 import MathieuQuadratic.LaurentBaseChange
@@ -113,6 +115,18 @@ theorem draft_explicit_counterexample (h : GeometricTrace a b trace) (hM : 0 < M
   exact ⟨productPhase_absolute_nonpower a b ha i (hb i) M M (M + 1) (by simp),
     draft_product_witness a b h hM (M + 1) (by omega)⟩
 
+/-- The explicit uniform counterexample for the constructed invariant
+trace, with no trace hypothesis on the diagonal coordinate ring. -/
+theorem draft_algebraicTrace_explicit_counterexample (hM : 0 < M)
+    (ha : ∀ i, a i ≠ 0) (hb : ∀ j, b j ≠ 0) :
+    let F := complementProductPhase a b M M (M + 1)
+    let H := (normUnit a b : NormComplement a b) ^ M
+    NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+      AllOrderWitness (complementAlgebraicTrace a b ha hb) F H ∧
+      ∀ m : ℕ, 0 < m → complementAlgebraicTrace a b ha hb (H * F ^ m) =
+        algebraMap ℚ K (mixedBetaMoment M ((M + 1) * m) 0) :=
+  draft_explicit_counterexample a b (complementAlgebraicTrace_isGeometric a b ha hb) hM (ha 0) hb
+
 /-- The same product phase and marker in the scalar extension. -/
 theorem draft_same_witness_after_extension (L : Type*) [Field L] [Algebra K L]
     (h : GeometricTrace a b trace) (hM : 0 < M) (γ : ℕ) (hγ : M ≤ γ) :
@@ -135,7 +149,7 @@ theorem draft_same_witness_after_extension (L : Type*) [Field L] [Algebra K L]
 
 end Diagonal
 
-/-- The lower-pole ternary witness in the opening example. -/
+/-- The supplementary ternary product witness. -/
 theorem draft_ternary_phase (a : Fin 2 → K) (b : Fin 1 → K)
     {trace : NormComplement a b →ₗ[K] K} (h : GeometricTrace a b trace)
     (ha : a 0 ≠ 0) (hb : b 0 ≠ 0) :
@@ -145,8 +159,8 @@ theorem draft_ternary_phase (a : Fin 2 → K) (b : Fin 1 → K)
   exact ⟨productPhase_absolute_nonpower a b ha 0 hb 1 1 1 (by decide),
     by simpa using (draft_product_witness a b h Nat.one_pos 1 le_rfl).1⟩
 
-/-- The opening moments for x²+y²+z² and F₀ = F₁,₁,₁. -/
-theorem draft_opening
+/-- The supplementary product moments for x²+y²+z² and F₀ = F₁,₁,₁. -/
+theorem draft_double_pole_ternary_moments
     {trace : NormComplement (fun _ : Fin 2 ↦ (1 : K)) (fun _ : Fin 1 ↦ (1 : K)) →ₗ[K] K}
     (h : GeometricTrace (fun _ : Fin 2 ↦ (1 : K)) (fun _ : Fin 1 ↦ (1 : K)) trace)
     (m : ℕ) (hm : 0 < m) :
@@ -163,7 +177,7 @@ theorem draft_opening
     simpa using mixedBetaMoment_cast_eq_integral 1 m 0 Nat.one_pos⟩
 
 /-- The first marked moment over the rationals. -/
-theorem draft_opening_first_beta : mixedBetaMoment 1 1 0 = 2 / 3 := by
+theorem draft_double_pole_first_beta : mixedBetaMoment 1 1 0 = 2 / 3 := by
   norm_num [mixedBetaMoment, powerBetaMoment, powerBetaAntiderivative, powerBetaQuotient,
     powerBetaCoefficient, Finset.sum_range_succ]
 
@@ -289,6 +303,143 @@ theorem exists_DiagonalTraceModel_of_form (q : QuadraticForm K (I → K))
     rw [hq, he]
   exact ⟨⟨fun i ↦ a i, fun j ↦ b j, e, hunit, (a 0).ne_zero, fun i ↦ (b i).ne_zero,
     compatible a b e hunit⟩⟩
+
+/-- Every nondegenerate form of dimension M + 2 has a transported
+algebraic trace and the draft's uniform counterexample with its
+prescribed norm-power marker. -/
+theorem draft_algebraicTrace_witness_of_form (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (M : ℕ) (hM : 0 < M) (hdim : Fintype.card I = M + 2) :
+    ∃ trace : Localization.Away (quadraticCoordinatePolynomial q) →ₗ[K] K,
+      Nonempty (DiagonalTraceModel M (quadraticNormUnit q) trace) ∧
+      trace 1 = 1 ∧
+      ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+        NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+        AllOrderWitness trace F ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ M) := by
+  obtain ⟨a, b, e, he⟩ := exists_diagonal_localization q hn M hdim
+  let localTrace := complementAlgebraicTrace (fun i ↦ (a i : K)) (fun j ↦ (b j : K))
+    (fun i ↦ (a i).ne_zero) (fun j ↦ (b j).ne_zero)
+  let trace := localTrace.comp e.toLinearMap
+  have hg : GeometricTrace (fun i ↦ (a i : K)) (fun j ↦ (b j : K)) localTrace :=
+    complementAlgebraicTrace_isGeometric _ _ _ _
+  have hu : e (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+      (normUnit (fun i ↦ (a i : K)) (fun j ↦ (b j : K)) : NormComplement
+        (fun i ↦ (a i : K)) (fun j ↦ (b j : K))) := by
+    have hq : (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+        algebraMap (MvPolynomial I K) _ (quadraticCoordinatePolynomial q) := IsUnit.unit_spec _
+    rw [hq, he]
+  have htrace : trace.comp e.symm.toLinearMap = localTrace := by
+    apply LinearMap.ext
+    intro f
+    change localTrace (e (e.symm f)) = _
+    rw [AlgEquiv.apply_symm_apply]
+  let model : DiagonalTraceModel M (quadraticNormUnit q) trace :=
+    ⟨fun i ↦ a i, fun j ↦ b j, e, hu, (a 0).ne_zero, fun i ↦ (b i).ne_zero, htrace.symm ▸ hg⟩
+  exact ⟨trace, ⟨model⟩, by simpa only [trace, LinearMap.comp_apply, AlgEquiv.toLinearMap_apply,
+    map_one] using hg.normalized, _, model.counterexample hM⟩
+
+/-- The canonical trace has the draft's geometrically nonpower witness
+and prescribed norm-power multiplier in every dimension at least three. -/
+theorem draft_canonical_trace_witness_of_form (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (M : ℕ) (hM : 0 < M) (hdim : Fintype.card I = M + 2) :
+    ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+      NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+      AllOrderWitness (quadraticTrace q hn (by omega)) F
+        ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ M) := by
+  have hdim' : Module.finrank K (I → K) = M + 2 := by
+    simpa [Module.finrank_fintype_fun_eq_card] using hdim
+  obtain ⟨a, b, ⟨iso⟩⟩ := exists_plane_height_diagonal q hn M hdim'
+  let a' : Fin 2 → K := fun i ↦ a i
+  let b' : Fin M → K := fun j ↦ b j
+  have ha (i) : a' i ≠ 0 := (a i).ne_zero
+  have hb (j) : b' j ≠ 0 := (b j).ne_zero
+  let d := complementDiagonalWeights a' b' ha hb
+  have hd : d = Sum.elim a b := by
+    funext j
+    cases j <;> apply Units.ext <;> rfl
+  have hq := quadNorm_eq_diagonal a' b' ha hb
+  let c : QuadraticDiagonalChart q (Fin 2 ⊕ Fin M) :=
+    ⟨d, iso.toLinearEquiv, fun v ↦ by
+      change diagonalNorm d (iso v) = q v
+      rw [hd]
+      simpa only [QuadraticMap.weightedSumSquares_apply, diagonalNorm, diagonalPair,
+        Units.smul_def, smul_eq_mul, mul_assoc] using iso.map_app v⟩
+  let e := c.localizationAt (quadNorm a' b') hq
+  let τ := quadraticTrace q hn (by omega)
+  have ht : τ.comp e.symm.toLinearMap = complementAlgebraicTrace a' b' ha hb := by
+    have hc : τ = (complementAlgebraicTrace a' b' ha hb).comp e.toLinearMap := by
+      dsimp only [τ]
+      rw [quadraticTrace_eq_chart hn _ c, ← c.trace_localizationAt (quadNorm a' b') hq]
+      rfl
+    rw [hc]
+    apply LinearMap.ext
+    intro f
+    change complementAlgebraicTrace a' b' ha hb (e (e.symm f)) = _
+    rw [AlgEquiv.apply_symm_apply]
+  have hu : e (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+      (normUnit a' b' : NormComplement a' b') := by
+    have heq : linearCoordinateEquiv c.coordinates (quadraticCoordinatePolynomial q) = quadNorm a' b' :=
+      c.norm_polynomial.trans hq.symm
+    rw [show (quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) =
+      algebraMap (MvPolynomial I K) _ (quadraticCoordinatePolynomial q) from IsUnit.unit_spec _]
+    change localizationCoordinateEquiv c.coordinates _ _ heq _ = _
+    rw [localizationCoordinateEquiv_polynomial, heq, normUnit_val]
+  let model : DiagonalTraceModel M (quadraticNormUnit q) τ :=
+    ⟨a', b', e, hu, ha 0, hb, ht.symm ▸ complementAlgebraicTrace_isGeometric a' b' ha hb⟩
+  exact ⟨_, model.counterexample hM⟩
+
+/-- The main dimension theorem for the canonical, chart-independent
+trace. The remaining input is Laurent necessity in rank two. -/
+theorem draft_canonical_trace_dimension_classification
+    (q : QuadraticForm K (I → K)) (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (N : ℕ) (hN : 0 < N) (hdim : Fintype.card I = N)
+    (binary : NewtonLaurentNecessity ℂ (Fin 2)) :
+    let τ := quadraticTrace q hn (by omega)
+    (IsMathieu τ ↔ N ≤ 2) ∧
+      (3 ≤ N → ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+        NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+        AllOrderWitness τ F ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ (N - 2))) := by
+  intro τ
+  have high : 3 ≤ N → ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+      NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+      AllOrderWitness τ F ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ (N - 2)) :=
+    fun h ↦ draft_canonical_trace_witness_of_form q hn (N - 2) (by omega) (by omega)
+  refine ⟨⟨?_, ?_⟩, high⟩
+  · intro h
+    by_contra! hN₂
+    obtain ⟨_, _, hw⟩ := high (by omega)
+    exact not_isMathieu_of_allOrderWitness hw h
+  · intro hN₂
+    obtain ⟨c⟩ := exists_fin_diagonal_chart q hn N hdim
+    letI : Nonempty (Fin N) := ⟨⟨0, hN⟩⟩
+    change IsMathieu (quadraticTrace q hn (by omega))
+    rw [quadraticTrace_eq_chart hn _ c]
+    intro f hp g
+    have hpf : Pure (algebraicTrace c.weights) (c.localization f) := by
+      intro m hm
+      rw [← map_pow]
+      exact hp m hm
+    obtain ⟨n, h⟩ := algebraicTrace_lowRank_isMathieu N hN hN₂ c.weights
+      (lowRankLaurentTheorem_of_binary binary) _ hpf (c.localization g)
+    refine ⟨n, fun m hm ↦ ?_⟩
+    change algebraicTrace c.weights (c.localization (g * f ^ m)) = 0
+    rw [map_mul, map_pow]
+    exact h m hm
+
+/-- The dimension classification for the constructed trace, with
+complex Laurent necessity as its low-rank input. In high rank the
+constructed trace has the draft's prescribed all-order witness. -/
+theorem draft_constructed_trace_dimension_classification
+    (q : QuadraticForm K (I → K)) (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (N : ℕ) (hN : 0 < N) (hdim : Fintype.card I = N) (dvk : LowRankLaurentTheorem) :
+    ∃ trace : Localization.Away (quadraticCoordinatePolynomial q) →ₗ[K] K,
+      trace 1 = 1 ∧ (IsMathieu trace ↔ N ≤ 2) ∧
+      (3 ≤ N → ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+        NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+        AllOrderWitness trace F ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ (N - 2))) := by
+  have h := draft_canonical_trace_dimension_classification q hn N hN hdim (dvk 2 (Or.inr rfl))
+  exact ⟨quadraticTrace q hn (by omega), quadraticTrace_one _ _, h⟩
 
 end ArbitraryQuadraticForm
 

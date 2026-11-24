@@ -1,5 +1,5 @@
 \documentclass[11pt,reqno]{amsart}
-\usepackage[margin=1.15in]{geometry}
+\usepackage[margin=1.07in]{geometry}
 \usepackage[expansion=false]{microtype}
 \usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
@@ -27,9 +27,17 @@ The proof bounds the number of common neighbors in bipartite graphs formed
 by omitting one coordinate of the canonical factorization.
 The graph bounds also apply to coprime differences of size at least
 \(X^{2/k}\) between \(k\)-full integers bounded by \(X\), for \(k\ge3\).
-An application to primitive \(k\)-full triples \(a+b=c\le X\) gives an
-upper bound of order \(X^{2/k-5/(3k^2)+O(k^{-3})+\eps}\).
-For \(k=3\) we obtain the explicit exponent \(21/40+\eps\).
+Applying the individual graph bounds to primitive \(k\)-full triples
+\(a+b=c\le X\) gives \(O_{k,\eps}(X^{2/(k+1)+\eps})\) triples for
+every fixed \(k\ge3\). For primitive triples of orders
+\(p=r+u,\ q=r+v,\ r\) with fixed offsets, a mixed-exponent graph gives
+a saving \(2/r^2+O_{u,v}(r^{-3})\) over \(1/p+1/q\) when the four
+gcds of the first two exponents on the summand sides are at least four.
+For \((p,q,r)=(r+2,r+1,r)\), a coefficient-uniform point-counting
+estimate makes the graph bounds effective with gcd two and gives
+a leading saving of \(2/r^2\) for all sufficiently large \(r\).
+For even \(r\) we group two omitted coordinates into a single
+square variable.
 \end{abstract}
 \maketitle
 
@@ -93,27 +101,63 @@ positive Campana points for the equal-multiplicity orbifold
 The identification sends \((a,b,c)\) to \((a:c)\), whose height is \(c\).
 Browning and Verzobio \cite[Theorem~1.1]{BV} prove a diagonal saving
 \(1/k^2+O(k^{-5/2})\) over \(2/k\) for sufficiently large \(k\).
-The binary sum and difference bounds let us fix any summand when
-all three are large. A uniform projective curve bound handles the
-remaining coordinates.
+The individual graph bounds give a diagonal saving
+\(2/k^2+O(k^{-3})\). The argument fixes the summand whose canonical
+box has the fewest available tuples and uses the sizes of the
+two graphs for the other summands.
 
 \begin{theorem}\label{thm:campana}
-For each fixed \(k\ge4\) and every \(\eps>0\),
+For each fixed \(k\ge3\) and every \(\eps>0\),
 \[
- N_k(X)\ll_{k,\eps}
- X^{\theta_k+\eps},
- \qquad \theta_k=\frac{6k^2-k-4}{(k+1)(3k^2-k-2)}
-                 =\frac2k-\frac{5}{3k^2}+O(k^{-3}).
+                         N_k(X)\ll_{k,\eps}X^{2/(k+1)+\eps}.
 \]
-For \(k=3\) we have \(N_3(X)\ll_\eps X^{21/40+\eps}\).
+\end{theorem}
+
+Let \(N_{p,q,r}(X)\) count primitive triples \(a+b=c\le X\) of
+positive \(p\)-full, \(q\)-full, and \(r\)-full integers, respectively.
+Browning and Verzobio's Theorem~1.1 also gives a saving
+\(1/r^2+O_{u,v}(r^{-5/2})\) over \(1/p+1/q\) when \(p=r+u\)
+and \(q=r+v\) have fixed offsets. Omitting different exponents
+on the two sides gives the following bound for some such families.
+
+\begin{theorem}\label{thm:mixed-campana}
+Let \(p\ge q\ge r\ge2\) satisfy
+\(\gcd(p+i,q+j)\ge4\) for all \(i,j\in\{0,1\}\). Put
+\[
+ \eta_{p,q,r}=\min\left\{
+ \frac{2/p+3/q-3/r}{p+2},\
+ \frac{3/p+2/q-3/r}{q+2},\
+ \frac{3/p+3/q-4/r}{p+3}\right\}.
+\]
+For every \(\eps>0\),
+\[
+ N_{p,q,r}(X)\ll_{p,q,r,\eps}
+ X^{1/p+1/q-\max(0,\eta_{p,q,r})+\eps}.
+\]
+For \(p=r+u\) and \(q=r+v\) with fixed \(u\ge v\ge0\), the saving
+is \(2/r^2+O_{u,v}(r^{-3})\) as \(r\) tends to infinity.
+\end{theorem}
+
+The consecutive orders do not satisfy the four gcd conditions.
+We use Browning and Verzobio's point-counting theorem to control
+the omitted-coordinate heights before applying the graphs.
+
+\begin{theorem}\label{thm:consecutive}
+Let \(p=r+2\) and \(q=r+1\). For sufficiently large \(r\) and
+every \(\eps>0\),
+\[
+ N_{p,q,r}(X)\ll_{r,\eps}
+ X^{1/p+1/q-2/r^2+O(r^{-5/2})+\eps}.
+\]
+The implied constant in \(O(r^{-5/2})\) is absolute.
 \end{theorem}
 
 \section{Recovering common neighbors}
-We work with signed canonical products with coprime absolute values,
-each at most \(X\), in
+We work with signed canonical products of orders \(k,\ell\) with
+coprime absolute values, each at most \(X\), in
 \begin{equation}\label{eq:coeff}
  \kappa_1\prod_{j=k}^{2k-1}a_j^j+
- \kappa_2\prod_{j=k}^{2k-1}c_j^j=n>0.
+ \kappa_2\prod_{j=\ell}^{2\ell-1}c_j^j=n>0.
 \end{equation}
 The nonzero integers \(\kappa_1,\kappa_2\) are fixed, and the estimates
 are uniform in them. Every factor in either term is a unit modulo
@@ -159,68 +203,78 @@ This polynomial is nonzero and has degree at most \(df\):
 at most one positive \(c\) by homogeneity.
 \end{proof}
 
-Let \(A_j,C_j\) be the lower endpoints of positive dyadic boxes on
-\(a_j,c_j\), respectively. Define
+Let \(A_j,C_j\) be the lower endpoints of positive dyadic boxes
+on the canonical coordinates. Let \(I,J\) be nonempty sets of
+exponents to omit, and suppose all exponents in \(I\cup J\) are
+divisible by \(g\ge2\). Set
 \[
- M_1=\prod_{j\ne e}A_j,\qquad
- M_2=\prod_{j\ne e}C_j,\qquad H_e=A_e C_e .
+ M_1=\prod_{j\notin I}A_j,\qquad M_2=\prod_{j\notin J}C_j,\qquad
+ H=\prod_{j\in I}A_j^{j/g}\prod_{j\in J}C_j^{j/g},
 \]
+with products taken over the corresponding side's exponent range.
 
 \begin{proposition}\label{prop:graph}
-In the graph omitting exponent \(e\), the number of representations
-in a box is bounded, with a constant depending only on \(k,\eps\), by
+The graph omitting \(I,J\) gives a bound for the number of
+representations in the box of
 \begin{equation}\label{eq:graph}
  X^\eps\left(M_1+M_2+
-     (1+H_e/\sqrt n)\min(M_1\sqrt{M_2},M_2\sqrt{M_1})\right).
+     (1+H/\sqrt n)\min(M_1\sqrt{M_2},M_2\sqrt{M_1})\right)
 \end{equation}
+up to a constant depending only on \(k,\ell,\eps\).
+For singleton sets \(I=\{e\}\), \(J=\{f\}\), we may take
+\(g=\gcd(e,f)\).
 \end{proposition}
 \begin{proof}
+On each side the omitted product is a \(g\)-th power.
 Consider two distinct vertices on the first side sharing one on the
-second. Including the coefficients, their fixed products give
+second. Their equations are
 \[
-       P_i a_i^e+Q c_i^e=n\qquad (i=1,2).
+                    P_i a_i^g+Q c_i^g=n\qquad (i=1,2),
 \]
-Here \(a_i,c_i\) refer just to the two omitted coordinates in the
-\(i\)-th equation. Take \(a_i=g\alpha_i\) and \(c_i=h\gamma_i\)
-by removing each common divisor. The fraction
-\(u/v=\alpha_1\gamma_2/(\alpha_2\gamma_1)\) is reduced by the two
-gcd reductions and \((a_i,c_i)=1\). Eliminating \(Q\) gives
+where \(a_i,c_i\) are the positive \(g\)-th roots of the omitted
+products, and \(P_i,Q\) include the fixed coefficients.
+Write \(a_i=d\alpha_i\) and \(c_i=h\gamma_i\) after dividing each
+pair by its gcd. The fraction \(u/v=\alpha_1\gamma_2/(\alpha_2\gamma_1)\)
+is reduced by the gcd reductions and \((a_i,c_i)=1\).
+Eliminating \(Q\) gives
 \begin{equation}\label{eq:recover}
- (u/v)^e\equiv P_2/P_1\pmod n,\qquad
- g^e(P_1u^e-P_2v^e)=n(\gamma_2^e-\gamma_1^e).
+ (u/v)^g\equiv P_2/P_1\pmod n,\qquad
+ d^g(P_1u^g-P_2v^g)=n(\gamma_2^g-\gamma_1^g).
 \end{equation}
-There are \(O_k(e^{\omega(n)})\) unit roots of the first congruence
-by the prime-power unit groups and the Chinese remainder theorem.
-Within one modular class of fractions with \(u,v\le4H_e\), distinct
-fractions have cross difference a nonzero multiple of \(n\).
-The corresponding vectors in the first quadrant have lengths
-\(O(H_e)\) and angles separated by \(\gg n/H_e^2\).
-Thus each class contains \(O(1+H_e^2/n)\) fractions.
+There are \(O_{k,\ell}(g^{\omega(n)})\) unit roots by the
+prime-power unit groups and the Chinese remainder theorem.
+Within one residue class, two distinct fractions of height
+\(O_{k,\ell}(H)\) have cross difference a nonzero multiple of \(n\).
+Their vectors in the first quadrant have angles separated by
+\(\gg_{k,\ell}n/H^2\). There are therefore \(O_{k,\ell}(1+H^2/n)\)
+fractions per residue class.
 
-A fraction \(u/v\) gives at most \(\tau(u)\tau(v)\) choices of the
-four reduced factors. The coefficient of \(g^e\) in \eqref{eq:recover}
-is nonzero for an actual common neighbor. If it vanished, then
-\(\gamma_1=\gamma_2=1\), so the complete first summands would be
-equal, and uniqueness of the canonical factorization would give
-the same first vertex. We recover \(g\) and then \(Qh^e\) from either
-original equation. Dividing \(Qh^e\) by its fixed signed coefficient
-gives a canonical product, since \(h\mid c_i\). It recovers the common
-vertex and \(h\).
+A fraction \(u/v\) gives at most \(\tau(u)\tau(v)\) choices for
+the four reduced roots. The coefficient of \(d^g\) is nonzero:
+otherwise \(\gamma_1=\gamma_2=1\) and the first complete
+summands agree, so their canonical vertices agree. We recover
+\(d\) and then \(Qh^g\) from either original equation.
+After division by the fixed signed coefficient, \(Qh^g\) is the
+gcd of the two complete positive canonical products on the second
+side. Its canonical coordinates can be obtained prime by prime
+from whichever product has the smaller valuation. The non-omitted
+coordinates are identical in both products, so the gcd retains
+those coordinates and determines the common vertex. This also
+works when several omitted powers have been grouped.
 
-The codegree bound on both sides is therefore
-\(K\ll_{k,\eps}X^\eps(1+H_e^2/n)\).
-A bipartite graph with side sizes \(m_1,m_2\) has at most
-\(m_1+m_2+\sqrt K\min(m_1\sqrt{m_2},m_2\sqrt{m_1})\) edges under
-this bound. Indeed the sum of \(\binom{\deg v}{2}\) over the
-second side is at most \(K\binom{m_1}{2}\), and Cauchy--Schwarz
-gives one estimate. Interchanging the sides gives the other.
-Lemma~\ref{lem:edge} bounds the multiplicity of each edge.
-Using \(\sqrt{1+H_e^2/n}\le 1+H_e/\sqrt n\) proves
-\eqref{eq:graph}. Counting all possible vertex pairs also gives \(O_{k,\eps}(X^\eps M_1M_2)\).
+Thus the two codegrees are bounded by \(K\ll_{k,\ell,\eps}X^\eps(1+H^2/n)\).
+A bipartite graph on \(m_1,m_2\) vertices with this codegree bound
+has at most \(m_1+m_2+\sqrt K\min(m_1\sqrt{m_2},m_2\sqrt{m_1})\)
+edges. This follows by bounding \(\sum_v\binom{\deg v}{2}\) on
+each side and applying Cauchy--Schwarz. Lemma~\ref{lem:edge}
+bounds the multiplicity of each edge in the grouped roots.
+Their values and the fixed coordinates determine the complete
+canonical products. This proves \eqref{eq:graph}. Counting all
+vertex pairs also gives \(O_{k,\ell,\eps}(X^\eps M_1M_2)\).
 \end{proof}
 
 \section{Optimizing the boxes}
-First take \(k\ge3\) and \(n\ge X^{2/k}\) in \eqref{eq:coeff}.
+Take \(\ell=k\) in this section. First take \(k\ge3\) and \(n\ge X^{2/k}\) in \eqref{eq:coeff}.
 Let \(x,y,z\) denote, respectively, the
 logarithmic dyadic sizes in base \(X\) of the coordinates of
 exponents \(k,k+1\) and the sum of the remaining logarithmic sizes
@@ -325,69 +379,300 @@ The box estimates are uniform in these coefficients. The divisor
 function and the \(O_k((\log(2n))^{2k})\) dyadic boxes cost only a
 subpower factor. This completes the proof of Theorem~\ref{thm:binary}.
 
-\newpage
 \section{Primitive triples and Campana points}
-To prove Theorem~\ref{thm:campana}, fix a common canonical dyadic box
-for the three summands. Let \(s_i\) be the sum of logarithmic
-coordinate sizes to base \(X\) on side \(i\), and \(u_i\) the sum
-excluding the coordinate of exponent \(k\). Write
+In a common canonical dyadic box for the three summands, let
+\(x_m,y_m,z_m\) be the logarithmic coordinate sizes to base \(X\)
+of exponents \(k\), \(k+1\), and all higher exponents combined,
+respectively. Write
 \[
- S=s_1+s_2+s_3,\qquad U=u_1+u_2+u_3,\qquad v_i=s_i-u_i .
+ s_m=x_m+y_m+z_m,\qquad U_m=s_m-x_m,\qquad V_m=s_m-y_m,\qquad
+ t=\frac1{k+1},\qquad d_m=s_m-t.
 \]
-The size constraints are \(ks_i+u_i\le1\), which imply \(U\le3-kS\).
+The size constraint on side \(m\) gives
+\begin{equation}\label{eq:triple-size}
+          (k+1)s_m-x_m+z_m\le 1,
+          \qquad x_m-z_m\ge(k+1)d_m .
+\end{equation}
 
-Fix the non-\(k\)-power coordinates on all three sides in
-\(O_k(X^U)\) ways. The remaining coordinates lie on
-\(\lambda x^k+\mu y^k=\nu z^k\) with fixed positive coefficients.
-The projective curve is smooth, because the partial derivatives
-cannot all vanish at a projective point, and is absolutely
-irreducible by B\'ezout. A primitive solution of \(a+b=c\) is
-pairwise coprime, so its positive root-coordinate triple is
-primitive and injects into the rational points of the curve.
-In the rectangular box, Heath-Brown's coefficient-uniform bound
-\cite[Theorem~3]{HBcurves} gives the exponent
-\[
- U+\frac{v_1+v_2+v_3-\max_i v_i}{k}
-    \le U+\frac{2(S-U)}{3k}.
-\]
-Here the largest monomial size is the \(k\)-th power of the largest
-coordinate bound, because the form is diagonal. The same theorem
-in an enclosing cube gives the exponent \(U+2/k^2\). When \(k=3\),
-Heath-Brown's uniform diagonal-cubic theorem
-\cite[Theorem~1.3]{HBcubic} gives the exponent \(U\).
+Choose \(\ell\) with \(s_\ell=\min_m s_m\) and call the other two
+indices \(i,j\). There are \(O_k(X^{s_\ell})\) choices of the
+\(\ell\)-th summand. Once fixed, its value is the modulus \(n\)
+in the signed equation for the other two summands. Their coprimality
+follows from primitivity of the triple. With \(w=k s_\ell/2\),
+we have \((\log n)/(2\log X)\ge w\), since every canonical exponent
+is at least \(k\).
 
-Let \(\Delta\) be the minimum of the available counting exponents
-in a box, so its contribution is \(O_{k,\eps}(X^{\Delta+\eps})\).
-First count triples all of whose entries are at least \(X^{2/k}\).
-Fixing \(c\) and using Theorem~\ref{thm:binary}, or fixing \(a\) or
-\(b\) and using Theorem~\ref{thm:difference}, gives
-\(\Delta\le s_i+t\) for all \(i\), where \(t=1/(k+1)\).
-Thus \(S\ge3(\Delta-t)\). For \(k\ge4\), set
-\(L=k-2/3-2/(3k)>0\). The rectangular curve bound gives
-\[
- \Delta\le U+\frac{2(S-U)}{3k}
-     \le 3-\frac2k-L S
-     \le 3-\frac2k-3L(\Delta-t).
-\]
-Solving yields \(\Delta\le\theta_k\). For \(k=3\) we use
-\(\Delta\le U\le3-3S\le3-9(\Delta-1/4)\), so
-\(\Delta\le21/40\).
+Let \(\Delta\) be the least exponent from fixing any two summands
+or from fixing \(\ell\) and using either graph bound or the vertex-pair
+count for the graph omitting \(k\). Use \(w\) in the height factors
+to make the bounds uniform over the fixed values. Suppose \(\Delta>2t\),
+so \(r=\Delta-s_\ell>t-d_\ell\). Fixing \(\ell\) and either other side
+gives \(r\le s_i,s_j\). Since \(s_\ell\) is minimal, we obtain
+\begin{equation}\label{eq:triple-delta}
+                         d_i,d_j\ge |d_\ell|.
+\end{equation}
 
-For the remaining triples, by symmetry suppose \(a<X^{2/k}\).
-Its size constraint strengthens to \(ks_1+u_1\le2/k\).
-Any two summands determine the third, so both
-\(\Delta\le s_1+s_2\) and \(\Delta\le s_1+s_3\) hold. In particular
-\(S\ge2\Delta-s_1\). For \(k\ge4\), the enclosing-cube bound gives
+If \(x_i+x_j>w\), the size constraints give
+\((k+1)(U_i+U_j)\le 2-k(x_i+x_j)<2-kw\).
+Counting all vertex pairs in the graph omitting exponent \(k\)
+now gives
 \[
- \Delta\le U+\frac2{k^2}
-       \le 2+\frac2k-kS+\frac2{k^2}
-       \le 2+\frac4k+\frac2{k^2}-2k\Delta .
+             \Delta\le s_\ell+U_i+U_j
+                    <2t+s_\ell-ktw\le 2t .
 \]
-The resulting exponent \((2+4/k+2/k^2)/(2k+1)\) is smaller than
-\(2/(k+1)<\theta_k\) for \(k\ge4\).
-For \(k=3\), use \(\Delta\le U\) in the same calculation to give
-\(\Delta\le10/21<21/40\). In each range the number of boxes is
-absorbed in \(X^\eps\).
+The last inequality uses \(kw=k^2s_\ell/2\ge(k+1)s_\ell\)
+for \(k\ge3\).
+We may therefore assume \(x_i+x_j\le w\).
+By \eqref{eq:triple-size} and \eqref{eq:triple-delta},
+\(U_i\le t-kd_i\le t-d_\ell\), and likewise for \(j\).
+Since \(r>t-d_\ell\), the graph omitting exponent \(k\) requires both
+\(r\le U_i+U_j/2\) and \(r\le U_j+U_i/2\). In particular,
+\(2x_i+x_j<t+2d_i+d_j+2d_\ell\). Using \(x_j\ge(k+1)d_j\) and
+\(y_i\ge t+(k+2)d_i-2x_i\), we obtain
+\(y_i>k(d_i+d_j)-2d_\ell\ge d_i+d_\ell\).
+Thus \(V_i<t-d_\ell\), and the same holds on side \(j\).
+
+In the graph omitting exponent \(k+1\), if \(y_i+y_j>w\), the
+square-root term in \eqref{eq:graph} has exponent at most
+\[
+ s_i+s_j-\tfrac12\max(V_i,V_j)-w \le 2t-w \le t-d_\ell .
+\]
+Indeed \eqref{eq:triple-size} gives \(s_m\le t(1+V_m)\), and
+\(2t\le1/2\) and \(w\ge s_\ell\). This contradicts \(r>t-d_\ell\).
+It remains to take \(y_i+y_j\le w\). Adding \(r\le V_i+V_j/2\)
+to the corresponding inequality for \(U_i,U_j\), and then using
+\eqref{eq:triple-size}, gives
+\[
+\begin{aligned}
+ 2r &\le s_i+z_i+\tfrac12(s_j+z_j)\\
+    &\le \tfrac32t-k(d_i+\tfrac12d_j)+x_i+\tfrac12x_j\\
+    &\le 3t-(k-1)(d_i+\tfrac12d_j)-r .
+\end{aligned}
+\]
+By \eqref{eq:triple-delta} this implies
+\(r\le t-\tfrac{k-1}{2}|d_\ell|\le t-d_\ell\), the final contradiction.
+Summing \(O_{k,\eps}(X^{2t+\eps})\) over the dyadic boxes, with a
+smaller \(\eps\) in each box, proves Theorem~\ref{thm:campana}.
+
+\section{Triples of unequal orders}
+Fix a joint dyadic box for \(a,b,c\) of orders \(p,q,r\), respectively.
+As in the preceding section, \(s_i=x_i+y_i+z_i\) is the logarithmic
+size of the product of canonical coordinates, where \(x_i,y_i\)
+come from the first two exponents and \(z_i\) from the rest.
+The indices refer to the three summand positions, even when
+some orders agree. For a side of order \(k_i\), the smaller
+vertex exponent from the first two omissions satisfies
+\begin{equation}\label{eq:mixed-vertex}
+ m_i=s_i-\max(x_i,y_i)
+ \le \frac{1-(k_i-1)s_i}{3},
+\end{equation}
+since
+\((k_i+2)s_i-3\max(x_i,y_i)\le k_ix_i+(k_i+1)y_i+(k_i+2)z_i\le1\).
+
+Fix \(c\), so both free summands are at most \(c\). On each free
+side choose the omission attaining \(m_i\). By hypothesis their
+exponents have \(g\ge4\). If the fixed target has any solutions in
+the box, \(A_e^e,C_f^f\le c\), so \(H\le c^{2/g}\le\sqrt c\).
+The graph bound \eqref{eq:graph} has a bounded height factor
+at every fixed target. Averaging the two orientations of the
+square-root term, and summing over \(O(X^{s_r})\) targets, gives
+the box exponent
+\[
+              s_r+\max\{m_p,m_q,3(m_p+m_q)/4\}.
+\]
+Any pair of first summands also determines a triple. Thus the
+least available exponent \(\Delta\) satisfies
+\(\Delta\le s_p+s_q\), and each \(s_i\le1/k_i\).
+When the maximum is \(m_p\), inequality \eqref{eq:mixed-vertex}
+and \(s_p\ge\Delta-1/q\) give
+\((p+2)\Delta\le1+3/r+(p-1)/q\). The \(m_q\) case gives
+\((q+2)\Delta\le1+3/r+(q-1)/p\). In the remaining case, use
+\[
+             (p-1)s_p+(q-1)s_q
+                  \ge (p-1)\Delta-(p-q)/q .
+\]
+Then \eqref{eq:mixed-vertex} gives
+\((p+3)\Delta\le2+4/r+(p-q)/q\). The three differences from
+\(1/p+1/q\) are exactly the entries in the minimum defining
+\(\eta_{p,q,r}\). Each is \(2/r^2+O_{u,v}(r^{-3})\) for fixed offsets.
+The trivial pair count and the sum over dyadic boxes complete the
+proof of Theorem~\ref{thm:mixed-campana}.
+
+For example, take \((p,q,r)=(q+30,q,q-1)\) and
+\(q\equiv8525\pmod{26970}\). This progression is equivalent to
+\(q\equiv0\pmod{155}\) and \(q\equiv-1\pmod{174}\). In lexicographic
+order of \((i,j)\), the gcds are \(5,29,31,6\), since they divide
+\(30,29,31,30\), respectively.
+The condition \(g\ge4\) also applies to
+\((p,q,r)=(q+20,q,q-1)\) with \(q\equiv2184\pmod{2660}\).
+Here \(q\equiv0\pmod{28}\) and \(q\equiv-1\pmod{95}\).
+The first gcd is exactly \(4\), and the other three are divisible
+by \(19,7,5\), respectively.
+
+\section{Consecutive orders}
+For a dyadic box for \((r+2,r+1,r)\), write \(S_A,S_B,S_C\)
+for the sums of the logarithmic coordinate sizes to base \(X\).
+Let \(\Delta\) be the least available counting exponent from
+the pair counts, the point-counting estimate below, and the
+signed graph bounds. In each graph use \(X^{rS_T}\) as a lower
+bound for the modulus, where \(T\) is the fixed side. A box then
+contributes \(O_{r,\eps}(X^{\Delta+\eps})\).
+
+We may assume \(\Delta\ge2/r-5/r^2\).
+Any pair of summands determines the triple and \(S_T\le1/r\).
+Consequently \(1/r-5/r^2\le S_T\le1/r\) for each \(T\).
+Normalize the coordinate sizes on each side by its sum to get
+probability vectors \(A,B,C\), and put
+\[
+ m_A=\sum_j(j+2)A_j,\qquad m_B=\sum_j(j+1)B_j,\qquad m_C=\sum_j jC_j.
+\]
+Let \(D=\max(m_A+m_B,m_A+m_C,m_B+m_C)\). The size constraints give \(S_T(r+m_T)\le1\), so \(m_T=O(1)\)
+uniformly. The pair counts now yield
+\begin{equation}\label{eq:consecutive-cost}
+                    \Delta\le 2/r-D/r^2+O(r^{-3}).
+\end{equation}
+
+Write \(\alpha,\beta,\chi\) for the maxima of \(A,B,C\), respectively.
+Bounded first moments imply that each is bounded below by an
+absolute positive constant: at least half of each vector's mass
+lies in a bounded set of initial coordinates. Fix all coordinates
+except the three attaining the maxima. The remaining equation
+has three nonzero coefficients, exponents at least \(r\), and
+primitive solutions by pairwise coprimality. Its three coordinate
+bounds are \(O(X^{1/r})\). Browning and Verzobio
+\cite[Theorem~1.2]{BV} give \(O_{r,\eps}(X^{3r^{-3/2}+\eps})\)
+solutions uniformly in the coefficients: the factor \(W\) in their
+theorem is \(O_r(X^{r^{-3/2}})\), and the other powers contribute
+at most \(2r^{-3/2}\) to the exponent. We therefore have
+\(\Delta\le S_A+S_B+S_C-S_A\alpha-S_B\beta-S_C\chi+3r^{-3/2}\).
+It follows that
+\begin{equation}\label{eq:consecutive-max}
+                    \alpha+\beta+\chi\le1+O(r^{-1/2}).
+\end{equation}
+
+Now omit sets of coordinates of bounded indices on two sides,
+all with powers divisible by \(g\ge2\). Write \(a,b\) for the two
+sums of omitted normalized masses. The height in \eqref{eq:graph}
+satisfies
+\[
+          2\log_X H=\frac2g\bigl(a+b+O(r^{-1})\bigr).
+\]
+Since the fixed modulus is at least \(X^{1-5/r}\), the height factor
+is bounded whenever \(a+b\le1-K/r\) for a sufficiently large
+absolute \(K\). This condition always holds for singleton omissions
+of bounded indices: by \eqref{eq:consecutive-max} and the positive
+lower bound for the third maximum, \(a+b\le1-c\) for an absolute
+\(c>0\). Whenever the height factor is bounded, adding the count for
+the fixed side to \eqref{eq:graph} gives
+\[
+ r\Delta\le 1+\max\{1-a,1-b,\tfrac32-\max(a+b/2,b+a/2)\}
+              +O(r^{-1}).
+\]
+In particular, for an absolute constant \(K\), either
+\(a\le K/r\), or \(b\le K/r\), or both
+\begin{equation}\label{eq:consecutive-pair}
+               2a+b\le1+O(r^{-1}),\qquad a+2b\le1+O(r^{-1}).
+\end{equation}
+
+Call a mass small if it is at most \(K/r\), increasing \(K\) to
+cover both the height threshold and the graph alternatives.
+We prove \(D\ge5-O(r^{-1/2})\). Write \(L\preceq1\) for a
+graph inequality \(L\le1+O(r^{-1})\) in the calculations below.
+
+For \(0\le\lambda\le1\), put
+\(F_\lambda=m_A+\lambda m_B+(1-\lambda)m_C\le D\).
+For \(T=A,B,C\) with offset \(d_T=2,1,0\), respectively, use the
+truncated cost bound
+\[
+  m_T\ge L_T(j), \qquad
+  L_T(j)=j-\sum_{i+d_T<j}(j-i-d_T)T_i.
+\]
+In a lower bound for \(F_\lambda\), subtract the selected graph
+inequalities from the coordinate deficit. The remaining deficit
+on a side is bounded by its maximum coordinate times the sum
+of its positive coefficients. Small coordinates contribute
+\(O(r^{-1})\) in the certificates below.
+
+If \(A_0\) is small, \(m_A+m_B\ge6-2A_0-A_1-B_0\).
+If \(B_0\) is small, \(m_A+m_B\ge6-A_0-2B_0-B_1\).
+In either case \eqref{eq:consecutive-max} gives \(D\ge5-O(r^{-1/2})\).
+If \(B_1\) is small, the bounds \(L_A(4),L_B(4),L_C(4)\) give
+\[
+ F_{3/4}\ge8-3\alpha-3\beta-\tfrac52\chi-\tfrac32B_1
+            \ge5-O(r^{-1/2}).
+\]
+We may therefore use the shared exponent \(r+2\) for \((A_0,B_1)\):
+\[
+              G=2A_0+B_1\preceq 1,\qquad
+              G'=A_0+2B_1\preceq 1 .
+\]
+Here and below an expression on the left denotes the indicated
+linear form. If \(A_1\) is small, use \(F_{4/5}\) with \(L_A(5)\),
+\(\frac35 L_B(3)+\frac15 L_B(4)\) for the weighted \(B\)-term,
+and \(\frac15 L_C(4)\). The constant term is \(42/5\).
+Using \(G\) with weight one leaves coefficient sums at most two
+per side, so \(D\ge27/5-O(r^{-1/2})\).
+
+If \(r\) is odd, the pair \((B_0,A_1)\) uses \(r+1,r+3\) with gcd
+two. Since these masses are now both larger than \(K/r\),
+\(2B_0+A_1\preceq 1\). Together with \(G\) this gives
+\[
+               m_A+m_B\ge7-G-(2B_0+A_1)\ge5-O(r^{-1}).
+\]
+This proves the required cost bound for odd \(r\).
+
+Let \(r\) be even. If \(B_2\) is small and \(C_1\) is small, use
+\(F_{7/10}\), all three cutoffs at four, and weights \(1/5,3/5\)
+on \(G,G'\). The constant is \(8\) and the remaining coefficient
+sums are at most \(21/10\), giving \(D\ge51/10-O(r^{-1/2})\).
+If \(B_2\) is small and \(C_1\) is large, the pair \((B_0,C_1)\)
+gives \(2B_0+C_1\preceq 1\). Use \(F_{13/16}\), the same
+three cutoffs, and weights \(7/12,25/48,9/16\) on
+\(G,G',2B_0+C_1\), respectively. The constant is \(8\) and the
+coefficient sums are at most \(21/16\), giving
+\(D\ge241/48-O(r^{-1/2})\). We may now assume \(B_2\) is large,
+so the shared exponent \(r+3\) gives \(J=2A_1+B_2\preceq 1\).
+
+Group \(A_0,A_2\) against \(C_0\) in the signed graph. The omitted
+exponents \(r+2,r+4,r\) are all even. Put \(s=A_0+A_2\).
+There are three cases.
+\begin{itemize}
+\item If \(C_0\) is small, use \(F_{3/7}\) with \(L_A(4)\),
+\(\frac37 L_B(4)\) and \(\frac37 L_C(3)+\frac17 L_C(4)\).
+The constant is \(53/7\). Using \(J\) with weight \(3/7\)
+leaves coefficient sums at most \(15/7\); thus
+\(D\ge5-O(r^{-1/2})\).
+\item If \(s+C_0\ge1-K/r\), then \eqref{eq:consecutive-max} gives
+\(\beta\le s-\alpha+O(r^{-1/2})\le s/2+O(r^{-1/2})\).
+Using \(m_A\ge3-A_0+A_2\), \(m_B\ge3-2B_0-B_1\), and \(G\)
+gives \(D\ge5+s-2B_0-O(r^{-1})\ge5-O(r^{-1/2})\).
+\item In the remaining case the height factor is bounded, and the
+grouped graph gives \(2s+C_0\preceq 1\). Use \(F_{7/9}\)
+with \(L_A(5)\), \(\frac{11}{18}L_B(3)+\frac16 L_B(4)\),
+and \(\frac29 L_C(4)\). The constant is \(151/18\).
+Use weights \(17/18,1/6,1/2\) on \(G,J,2s+C_0\), respectively.
+The remaining coefficient sums on \(A,B,C\) are
+\(16/9,31/18,31/18\). Hence
+\(D\ge (151-29-32)/18-O(r^{-1/2})=5-O(r^{-1/2})\).
+\end{itemize}
+
+Using \eqref{eq:consecutive-cost} and
+\(1/p+1/q=2/r-3/r^2+O(r^{-3})\), and summing over the dyadic boxes,
+proves Theorem~\ref{thm:consecutive}.
+
+The need for grouping can be seen when \(r\equiv0,4\pmod6\).
+The probability vectors
+\[
+ (A,B,C)=\frac1{65}\bigl((23,23,19),(27,19,19),(15,11,15,15,9)\bigr)
+\]
+have \(\alpha+\beta+\chi=1\) and \(D=313/65\).
+They obey the leading-order alternatives for all singleton pairs
+with gcd at least two. A violation on positive coordinates
+requires \(B_0\) paired with one of \(A_0,A_1,A_2,C_0,C_2,C_3\).
+The exponent differences are \(1,2,3,1,1,2\), and all six
+gcds with \(r+1\) are one in these residues. The grouped pair
+has \(s+C_0=57/65\) and \(2s+C_0=99/65\), which violates
+its graph inequality.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
@@ -421,16 +706,6 @@ P.~Chojecki,
 J.-H.~Evertse,
 \emph{The number of solutions of the Thue--Mahler equation},
 J. Reine Angew. Math. \textbf{482} (1997), 121--149.
-
-\bibitem{HBcurves}
-D.~R.~Heath-Brown,
-\emph{The density of rational points on curves and surfaces},
-Ann. of Math. \textbf{155} (2002), 553--598.
-
-\bibitem{HBcubic}
-D.~R.~Heath-Brown,
-\emph{Counting square-full solutions to \(x+y=z\)},
-2026, \href{https://arxiv.org/abs/2601.07817v1}{arXiv:2601.07817v1}.
 
 \end{thebibliography}
 \end{document}

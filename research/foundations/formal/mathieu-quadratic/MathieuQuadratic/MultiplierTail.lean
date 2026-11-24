@@ -234,4 +234,71 @@ theorem product_multiplier_tail_eventually_ne_zero (trace : A →ₗ[K] K) (U : 
   exact mul_ne_zero (betaMoment_cast_ne_zero M (γ * m) 0 hM)
     (div_ne_zero hmne (multiplierTailDenominator_eval_ne M γ support m))
 
+/-- The ternary cancellation example has a nonzero first moment and
+vanishes from the third order. -/
+theorem draft_ternary_tail_example (a : Fin 2 → K) (b : Fin 1 → K)
+    {trace : NormComplement a b →ₗ[K] K} (h : GeometricTrace a b trace) :
+    let U := normUnit a b
+    let S := height a b
+    let F := complementProductPhase a b 1 1 2
+    let H := (4 : K) • ((U : NormComplement a b) ^ 4 * S) +
+      (15 : K) • ((U : NormComplement a b) ^ 3 * S) - (U : NormComplement a b)
+    trace (H * F) ≠ 0 ∧ ∀ m ≥ 3, trace (H * F ^ m) = 0 := by
+  intro U S F H
+  have ht := h.complementTrace.normalizer a b Nat.one_pos
+  have hmark (m : ℕ) (hm : 0 < m) :
+      trace ((U : NormComplement a b) * F ^ m) = algebraMap ℚ K (mixedBetaMoment 1 (2 * m) 0) := by
+    simpa only [pow_one] using (draft_product_witness a b h Nat.one_pos 2 (by omega)).2 m hm
+  have hterm (m ℓ : ℕ) :
+      trace ((U : NormComplement a b) ^ ℓ * S * F ^ m) =
+        if ℓ ≤ m then algebraMap ℚ K (mixedBetaMoment 1 (2 * m) 1 *
+          ((Ring.choose ((m : ℤ) - 3) (m - ℓ) : ℤ) : ℚ)) else 0 := by
+    have he := product_mixedMoment trace U S 1 1 1 2 m 1 Nat.one_pos ℓ (by omega) ht.weight ht.height
+    by_cases hℓ : ℓ ≤ m
+    · rw [if_pos hℓ]
+      have hℓ' : (ℓ : ℤ) ≤ (1 * m : ℕ) := by omega
+      rw [if_pos hℓ', one_mul, ← Int.ofNat_sub hℓ, Int.toNat_natCast] at he
+      simpa [F, complementProductPhase] using he
+    · rw [if_neg hℓ]
+      have hℓ' : ¬ (ℓ : ℤ) ≤ (1 * m : ℕ) := by omega
+      rw [if_neg hℓ'] at he
+      simpa [F, complementProductPhase] using he
+  have hsum (m : ℕ) :
+      trace (H * F ^ m) = 4 * trace ((U : NormComplement a b) ^ 4 * S * F ^ m) +
+        15 * trace ((U : NormComplement a b) ^ 3 * S * F ^ m) -
+          trace ((U : NormComplement a b) * F ^ m) := by
+    simp [H, sub_mul, add_mul, map_smul, smul_eq_mul]
+  constructor
+  · have hfirst : trace (H * F) = -(algebraMap ℚ K (mixedBetaMoment 1 2 0)) := by
+      rw [← pow_one F, hsum, hterm 1 4, hterm 1 3, hmark 1 (by decide)]
+      norm_num
+    rw [hfirst]
+    exact neg_ne_zero.mpr (betaMoment_cast_ne_zero 1 2 0 Nat.one_pos)
+  · intro m hm
+    let C₀ := mixedBetaMoment 1 (2 * m) 0
+    let C₁ := mixedBetaMoment 1 (2 * m) 1
+    have hn : ((m : ℤ) - 3) = (↑(m - 3) : ℤ) := (Int.ofNat_sub hm).symm
+    have h3 : trace ((U : NormComplement a b) ^ 3 * S * F ^ m) = algebraMap ℚ K C₁ := by
+      rw [hterm, if_pos hm, hn, Ring.choose_natCast, Nat.choose_self]
+      simp [C₁]
+    have h4 : trace ((U : NormComplement a b) ^ 4 * S * F ^ m) =
+        algebraMap ℚ K (C₁ * (↑(m - 3) : ℚ)) := by
+      rw [hterm]
+      by_cases h4 : 4 ≤ m
+      · rw [if_pos h4, hn, Ring.choose_natCast, Nat.choose_symm_of_eq_add
+          (show m - 3 = m - 4 + 1 by omega), Nat.choose_one_right, Int.cast_natCast]
+      · simp [h4, show m - 3 = 0 by omega]
+    have hbeta := mixedBetaMoment_succ_height 1 (2 * m) 0 Nat.one_pos
+    change (↑(1 + 2 * 0 : ℕ) : ℚ) * C₀ =
+      (↑(1 + 2 * 0 + 2 * (2 * m) + 2 : ℕ) : ℚ) * C₁ at hbeta
+    push_cast at hbeta
+    ring_nf at hbeta
+    rw [hsum, h4, h3, hmark m (by omega)]
+    rw [← map_ofNat (algebraMap ℚ K) 4, ← map_ofNat (algebraMap ℚ K) 15, ← map_mul,
+      ← map_mul, ← map_add, ← map_sub]
+    apply (map_eq_zero_iff _ (RingHom.injective (algebraMap ℚ K))).2
+    change 4 * (C₁ * (↑(m - 3) : ℚ)) + 15 * C₁ - C₀ = 0
+    rw [Nat.cast_sub hm]
+    linear_combination -hbeta
+
 end MathieuQuadratic

@@ -4,23 +4,23 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Pointwise bounds for sums and large coprime differences of k-full integers, with an application to primitive triples and Campana points.",
+  "summary": "Pointwise bounds for powerful sums and differences, and primitive-triple bounds for diagonal, restricted mixed, and consecutive powerfulness orders, with a full leading saving on the consecutive family.",
   "status": "draft",
   "published": false,
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "abstract": "For fixed \\(k\\ge2\\), let \\(r_k(N)\\) count ordered representations of \\(N\\)\nas a sum of two positive \\(k\\)-full integers. We prove\n\\(r_2(N)\\ll_\\varepsilon N^{3/10+\\varepsilon}\\) and\n\\(r_k(N)\\ll_{k,\\varepsilon}N^{1/(k+1)+\\varepsilon}\\) for \\(k\\ge3\\).\nThe proof bounds the number of common neighbors in bipartite graphs formed\nby omitting one coordinate of the canonical factorization.\nThe graph bounds also apply to coprime differences of size at least\n\\(X^{2/k}\\) between \\(k\\)-full integers bounded by \\(X\\), for \\(k\\ge3\\).\nAn application to primitive \\(k\\)-full triples \\(a+b=c\\le X\\) gives an\nupper bound of order \\(X^{2/k-5/(3k^2)+O(k^{-3})+\\varepsilon}\\).\nFor \\(k=3\\) we obtain the explicit exponent \\(21/40+\\varepsilon\\).",
+  "abstract": "For fixed \\(k\\ge2\\), let \\(r_k(N)\\) count ordered representations of \\(N\\)\nas a sum of two positive \\(k\\)-full integers. We prove\n\\(r_2(N)\\ll_\\varepsilon N^{3/10+\\varepsilon}\\) and\n\\(r_k(N)\\ll_{k,\\varepsilon}N^{1/(k+1)+\\varepsilon}\\) for \\(k\\ge3\\).\nThe proof bounds the number of common neighbors in bipartite graphs formed\nby omitting one coordinate of the canonical factorization.\nThe graph bounds also apply to coprime differences of size at least\n\\(X^{2/k}\\) between \\(k\\)-full integers bounded by \\(X\\), for \\(k\\ge3\\).\nApplying the individual graph bounds to primitive \\(k\\)-full triples\n\\(a+b=c\\le X\\) gives \\(O_{k,\\varepsilon}(X^{2/(k+1)+\\varepsilon})\\) triples for\nevery fixed \\(k\\ge3\\). For primitive triples of orders\n\\(p=r+u,\\ q=r+v,\\ r\\) with fixed offsets, a mixed-exponent graph gives\na saving \\(2/r^2+O_{u,v}(r^{-3})\\) over \\(1/p+1/q\\) when the four\ngcds of the first two exponents on the summand sides are at least four.\nFor \\((p,q,r)=(r+2,r+1,r)\\), a coefficient-uniform point-counting\nestimate makes the graph bounds effective with gcd two and gives\na leading saving of \\(2/r^2\\) for all sufficiently large \\(r\\).\nFor even \\(r\\) we group two omitted coordinates into a single\nsquare variable.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "verification": {
-    "scope": "Complete written arguments, scoped primary-source inspection, exact rational exponent checks and visual review of the five-page PDF.",
+    "scope": "Complete written arguments, scoped primary-source inspection, exact arithmetic and certificate checks, and visual review of the eight-page PDF.",
     "limits": "Independent PDF-only review, specialist review, formal verification and exhaustive priority search remain unperformed."
   },
   "next_steps": [
-    "Obtain specialist review of the common-neighbor proof and the projective curve application.",
+    "Obtain specialist review of the grouped-coordinate graph, its common-neighbor recovery and the even consecutive-order cost certificates.",
     "Complete a priority comparison and review the manuscript with the author before submission."
   ]
 }

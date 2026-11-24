@@ -4,20 +4,26 @@
 
 The normalized rotation-and-scaling trace on a nondegenerate quadratic
 complement in characteristic zero has a Mathieu–Zhao kernel exactly in
-dimensions one and two. In every higher dimension, a linear multiplier
-detects every order of an explicit pure phase. The paper also gives the
-sharp degree and cutoff for its original uniform witness.
+dimensions one and two. In every higher dimension, one phase attains pole
+order one, multiplier degree one, and numerator degree three. These are
+the three minima. For a numerator of degree at most two over \(q\), the
+first \(N\) pure moments test purity, and every pure phase contracts over
+the ground field.
 
-Polynomial recurrences decide eventual vanishing for each fixed phase in
-the block-invariant ring and each fixed regular multiplier. The geometric
-nullcone is strictly smaller than the pure phases with eventual marked
-vanishing in dimensions at least three.
+Eventual vanishing against every fixed multiplier for a block-invariant
+phase affine in \(S=B/q\) is equivalent to one-sided scalar support,
+apart from the zero phase. The angular endpoint test also gives necessary
+conditions for general block-invariant phases. For any nonzero regular
+phase \(f=p/q^a\), a twisted de Rham computation gives a list of at most
+\(D^N\) multipliers, where \(D\) is the degree of the squarefree part of
+\(qp\). Testing that list at one computable order decides eventual
+vanishing against every fixed regular multiplier.
 
 The same trace classification gives explicit witnesses for quadratic-étale
 and quaternionic Hermitian norm complements. Isotropic norm-one quadrics
-also have witnesses over the ground field. For positive-definite real
-norm-one quadrics of dimension at least two, the real trace is Mathieu–Zhao
-and the complex trace fails.
+also have witnesses over the ground field. Over the reals, the kernel of
+the special orthogonal Reynolds projection on the complement is
+Mathieu–Zhao exactly when the form is definite or \(N\le2\).
 
 [PDF](mathieu-quadratic-complements.pdf) · [LaTeX source](main.tex) ·
 [Metadata](metadata.json) · [Verification record](verification.json)

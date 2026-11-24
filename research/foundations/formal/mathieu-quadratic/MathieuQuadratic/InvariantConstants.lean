@@ -20,8 +20,9 @@ open MvPolynomial
 variable {K J : Type*} [Field K] [Fintype J]
 
 /-- The norm polynomial of a nondegenerate diagonal form. -/
-noncomputable def diagonalNormPolynomial (d : J → Kˣ) : MvPolynomial J K :=
-  ∑ i, C (d i : K) * X i ^ 2
+noncomputable def diagonalNormPolynomial {R : Type*} [CommRing R] (d : J → Rˣ) :
+    MvPolynomial J R :=
+  ∑ i, C (d i : R) * X i ^ 2
 
 @[simp] theorem eval_diagonalNormPolynomial (d : J → Kˣ) (v : J → K) :
     eval v (diagonalNormPolynomial d) = diagonalNorm d v := by
@@ -33,7 +34,7 @@ private theorem diagonalNorm_single (d : J → Kˣ) (i : J) :
     diagonalNorm d (Pi.single i 1) = (d i : K) := by
   rw [diagonalNorm, diagonalPair_single_right, Pi.single_eq_same, mul_one]
 
-private theorem diagonalNormPolynomial_ne_zero [Nonempty J] (d : J → Kˣ) :
+theorem diagonalNormPolynomial_ne_zero [Nonempty J] (d : J → Kˣ) :
     diagonalNormPolynomial d ≠ 0 := by
   obtain ⟨i⟩ := ‹Nonempty J›
   intro h

@@ -46,6 +46,7 @@ def HasPolynomialBlockAverages (trace : A →ₗ[K] K) (phase : A) : Prop :=
     ∃ w ∈ blockMonomialSpan (K := K) (normUnit a b) (height a b) (D / 2),
       ∀ m : ℕ, 0 < m → trace (algebraMap R A p * phase ^ m) = trace (w * phase ^ m)
 
+omit [CharZero K] in
 private theorem shiftedBlockSpan_has_expansion {J n : ℕ} {w : A}
     (hw : w ∈ blockMonomialSpan (K := K) (normUnit a b) (height a b) J) :
     ∃ (support : Finset (ℤ × ℕ)) (c : ℤ × ℕ → K),
@@ -70,6 +71,7 @@ private theorem shiftedBlockSpan_has_expansion {J n : ℕ} {w : A}
   obtain ⟨c, hc⟩ := Finsupp.mem_span_range_iff_exists_finsupp.1 (hsub hw)
   exact ⟨c.support, c, hc.symm⟩
 
+omit [CharZero K] in
 /-- Clearing the norm denominator reduces every regular multiplier to
 the polynomial block averaging statement. -/
 theorem draft_block_average_regular (trace : A →ₗ[K] K) (phase h : A)

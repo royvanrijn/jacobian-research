@@ -94,6 +94,12 @@ noncomputable def binaryLinearCoordinates (d : Kˣ) :
     MvPolynomial (Fin 2) K ≃ₐ[K] MvPolynomial (Fin 2) K :=
   AlgEquiv.ofAlgHom (expandSplit d) (extractSplit d) (expand_extract d) (extract_expand d)
 
+theorem binaryLinearCoordinates_X (d : Kˣ) (i : Fin 2) :
+    binaryLinearCoordinates d (X i) =
+      if i = 0 then X 0 + C (d : K) * X 1 else X 0 - C (d : K) * X 1 := by
+  change expandSplit d (X i) = _
+  exact aeval_X _ _
+
 theorem binaryLinearCoordinates_norm (a b d : Kˣ) (hd : (d : K) ^ 2 = -(b : K) / (a : K)) :
     binaryLinearCoordinates d (splitNorm a (fun _ : Fin 2 ↦ 1)) = binaryNorm a b := by
   have h : C (a : K) * C (d : K) ^ 2 = (- C (b : K) : MvPolynomial (Fin 2) K) := by

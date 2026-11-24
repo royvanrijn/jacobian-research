@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-24",
-  "scope": "Theorem 1 through Corollary 14 of the quadratic-complements article, including explicit witnesses, multiplier bounds, recurrence and two-weight tests, geometric instability and extensions to Hermitian and isotropic norm-one spaces.",
+  "scope": "Theorem 1 through Corollary 18, including the joint sharp minima, the one-order all-multiplier test and degree bound, affine angular characterization, and the special orthogonal Reynolds classification.",
   "proof_dependencies": [
     {
       "location": "Section 2",
@@ -29,19 +29,14 @@
       "basis": "Theorem 1.1 in Long's spherical-pair preprint applies to the connected reductive action after establishing a Borel open orbit and reductivity of the norm-one stabilizer. The general reductive homogeneous-space classification also gives the complex cutoff. The local all-field proof is independent of either criterion."
     },
     {
-      "location": "Section 5, Proposition 6",
-      "claim": "Degree-one detection for every nondegenerate quadratic complement of dimension at least three",
-      "basis": "One-coordinate projection inside a rank-one or rank-two block gives the polynomial angular density and the extra even-dimensional torus coefficient. Endpoint extraction gives the missing and leading coefficients, and coprime orders rule out powers."
+      "location": "Section 1, equation (1), and Section 5, Proposition 6",
+      "claim": "A simple pole and an all-order linear multiplier on every nondegenerate quadratic complement of dimension at least three",
+      "basis": "Scalar degree extraction and spherical moments reduce the pure and marked traces to a binomial series in the inverse coordinate. The full series becomes x/(1+x), and the linear marker selects its first omitted coefficient. A simple zero excludes a proper power, while scalar weights and purity give the two lower bounds."
     },
     {
-      "location": "Section 8, Lemma 11 and Corollary 12",
+      "location": "Section 8, Lemma 12 and Corollary 13",
       "claim": "The geometric nullcone is contained in the pure phases with eventual marked vanishing. This inclusion and the next inclusion into pure phases are strict exactly for N>=3.",
       "basis": "Long’s weight argument with the affine Hilbert–Mumford criterion, trace base change, Laurent support separation in low dimensions, and an explicit safe product phase in high dimensions. The lowest and highest averaged scalar weights give a nonzero homogeneous invariant on that phase."
-    },
-    {
-      "location": "Section 6, Proposition 8",
-      "claim": "Finite fixed-multiplier test for arbitrary phases in the block-invariant ring",
-      "basis": "Block averaging, a formal double residue for the moments, an explicit common-denominator dimension count, and elimination by formal integration by parts. Past the endpoint roots, a recurrence propagates zero forward and backward."
     },
     {
       "location": "End of Section 8",
@@ -49,9 +44,29 @@
       "basis": "For a zero exponent or two opposite exponents, a selected pure moment is a positive integer times a rational Gram square. Its nonvanishing is preserved in every ordering. A one-sided support is destabilized by scalars."
     },
     {
-      "location": "Section 9, Corollaries 13–14",
+      "location": "Section 9, Corollaries 16–17",
       "claim": "Hermitian complements and isotropic norm-one spaces",
       "basis": "The split dual-vector and symplectic-pair actions give transitivity and normalized trace equality for the Hermitian complements. On the isotropic norm-one level the hyperbolic torus replaces the scalar torus, and the rank-two recurrence and the endpoint calculation give an original-field witness."
+    },
+    {
+      "location": "Section 5, Proposition 7",
+      "claim": "Quadratic-numerator purity, its sharp finite test, original-field contraction and minimum numerator degree",
+      "basis": "The homogeneous quadratic part controls purity by scalar weights. Its Gaussian determinant series reduces purity to nilpotence. Orthogonal cyclic blocks over the field give a cocharacter by antidiagonal pairing, and a cyclic self-adjoint shift gives sharpness of the finite test."
+    },
+    {
+      "location": "Section 8, Proposition 14 and Corollary 15",
+      "claim": "Necessary angular endpoints and exact universal eventual vanishing for affine angular phases in every high dimension",
+      "basis": "Weighted integration by parts gives the endpoints. For affine phases a normalized generating function gives residues at the small roots of a single polynomial. Hankel recovery, pole-order bounds and Lagrange interpolation exclude all remaining two-sided cases."
+    },
+    {
+      "location": "Section 6, Theorem 9",
+      "claim": "One-order all-multiplier test, degree bound, fixed-pair recurrences and purity decision",
+      "basis": "Algebraic integration by parts from rotation and scalar invariance, specialization of the generic twist, a commuting-operator dimension count, a semilinear exponent shift with invertible matrix, and effective Weyl localization and integration. The quotient dimension bounds both the list size and scalar recurrence order."
+    },
+    {
+      "location": "Section 9, Corollary 18",
+      "claim": "Real classification for the special orthogonal Reynolds projection, with low-dimensional and isotropic results over characteristic-zero fields",
+      "basis": "Localization over the invariant ring transfers the property to the generic level. A Laurent constant term treats dimension two, the preceding isotropic norm-one witness transfers on the generic level in higher dimension, and spherical positivity treats definite real forms."
     }
   ],
   "sources": [
@@ -81,9 +96,24 @@
       "inspected": "Original preprint transcribed by I. Morrison, Introduction, p. 1, affine Hilbert–Mumford criterion."
     },
     {
-      "reference": "Chyzak, The ABC of Creative Telescoping: Algorithms, Bounds, Complexity",
-      "identifier": "https://mathexp.eu/chyzak/Publications/Chyzak-2014-ACT.pdf",
-      "inspected": "Author’s 2014 habilitation memoir, Section 2.2 on Lipshitz’s residue elimination and Sections 3.4 and 4.1 on extracting a recurrence. The manuscript supplies a direct proof for its explicit differential coefficients."
+      "reference": "Lancaster, Traces and cumulants of quadratic forms in normal variables",
+      "identifier": "https://doi.org/10.1111/j.2517-6161.1954.tb00167.x",
+      "inspected": "Theorems 1–2 and the Gaussian series on pp. 247–248. The radial conversion and original-field contraction are proved directly in the manuscript."
+    },
+    {
+      "reference": "Oaku and Takayama, An algorithm for de Rham cohomology groups of the complement of an affine variety via D-module computation",
+      "identifier": "https://arxiv.org/abs/math/9801114",
+      "inspected": "Primary preprint, Procedure 1.4 and the integration complex for a holonomic module. The application uses degree zero of the integration complex and reads its representatives in the cyclic localized module."
+    },
+    {
+      "reference": "Oaku, Takayama and Walther, A localization algorithm for D-modules",
+      "identifier": "https://arxiv.org/abs/math/9811030",
+      "inspected": "Primary preprint, Theorem 2 and Algorithm 3, including holonomicity on the open set, the localized presentation and the image of its cyclic generator."
+    },
+    {
+      "reference": "Loeser and Sabbah, Équations aux différences finies et déterminants d’intégrales de fonctions multiformes",
+      "identifier": "https://doi.org/10.1007/BF02566659",
+      "inspected": "Primary author-hosted PDF, introduction and Section 1.1.1. The invertible rational difference matrix and logarithmic twist are classical. The paper gives its shift and bound directly."
     }
   ],
   "checks": {
@@ -96,11 +126,11 @@
     },
     "layout": {
       "passed": true,
-      "pages": 11,
-      "renderer": "Poppler pdftoppm at 122 dpi",
+      "pages": 15,
+      "renderer": "Poppler pdftoppm at 110 dpi, with targeted review at 130 dpi",
       "embedded_fonts": true,
       "type3_fonts": false,
-      "scope": "All eleven final pages were rendered at 122 dpi and visually inspected. Display equations, page breaks, embedded fonts, and bibliography destinations were checked."
+      "scope": "All fifteen pages compared against the previously reviewed PDF. The page 7 inequality and page 10 proof ending were visually inspected. Fonts are embedded without Type 3 fonts."
     },
     "arithmetic": {
       "passed": true,
@@ -109,7 +139,7 @@
     },
     "navigation": {
       "manuscript_check_passed": true,
-      "scope": "The five manuscript files, fourteen mapped declarations, two registered proof links, six bibliography entries, exact abstract and reviewed edition hashes passed the manuscript checks."
+      "scope": "The five manuscript files, eighteen mapped declarations, five registered proof links, nine bibliography entries, exact abstract and current artifact hashes passed the manuscript checks."
     },
     "previous_ternary_comparison": {
       "passed": true,
@@ -118,18 +148,13 @@
     },
     "linear_multiplier": {
       "passed": true,
-      "method": "Exact fractions using direct finite expansion with the marginal moments, and a separate two-coordinate sphere-moment recurrence for the even block.",
-      "scope": "456 direct odd and unrestricted even pure or marked moments for two densities, including 120 simplified ternary or quaternary cases up to order 30 and marked values 2/15 and 1/12. Also 693 direct two-coordinate spherical averages for even dimensions 4 through 16."
+      "method": "Direct numerator multiplication in two formal variables with rational spherical moments, compared with the closed formula. A separate binomial coefficient computation checks the constant terms.",
+      "scope": "1,280 pure or linearly marked moments for N=3..18 and m=1..40, 80 independent truncated-series coefficient checks, and the polynomial controls at the origin and the transverse simple zero."
     },
     "nullcone_separation": {
       "passed": true,
       "method": "Exact Python fractions and finite Laurent coefficients.",
       "scope": "96 pure powers for M=1..8 and m=1..12, 16 nonzero extremal coefficients, 2,160 eventual marked vanishing probes past the three monomial thresholds, and the coprime multiplicities."
-    },
-    "residue_recurrence": {
-      "passed": true,
-      "method": "Finite Laurent multiplication and exact rational extraction of the double residue, plus an explicit recurrence replay.",
-      "scope": "644 comparisons for four phase–multiplier pairs, M=1..7 and m=0..22, including a nonzero recurrence tail and two eventually zero controls. This bounded check exercises the moment encoding and recurrence decision; the symbolic termination argument is in Proposition 8."
     },
     "norm_one": {
       "passed": true,
@@ -138,23 +163,44 @@
     },
     "typography": {
       "passed": true,
-      "scope": "On page 3 the inequality uses LaTeX \\neq and PDF ActualText to copy out as the single Unicode relation in ℓ ≠ 0.",
-      "visual_comparison": "All 11 rendered pages matched the earlier mathematically reviewed PDF pixel for pixel in Poppler at 122 dpi. The inequality was visualized again at 200 dpi and the extracted phrase was checked.",
-      "comparison_pdf_sha256": "342e6bfe5b270ee2a8493aa0f38c97eebd2cbb3961a644c0ac5b21304bc66677"
+      "scope": "Page 3 and page 7 inequalities use LaTeX \\neq and PDF ActualText. The proof-ending box after the marked-moment sentence on page 10 is locally suppressed.",
+      "comparison": "Poppler extracts ℓ ≠ 0 on page 3 and cᵣ₋₁ ≠ 0 on page 7. Both corrected locations were inspected at 130 dpi. All fifteen pages were compared to the prior PDF at 110 dpi. Only page 10 changed visually, within the proof’s closing paragraph.",
+      "prior_pdf_sha256": "5e92a0593c708b4a13c7703fe2dbc06743e9bc25004f7588d200d043d431bb36",
+      "checked_pdf_sha256": "1d140aa43dcfd14c1b5359f785c719ef01299e12a45a82fa93a6b9f60b3a828a"
+    },
+    "quadratic_numerator": {
+      "passed": true,
+      "method": "Exact Gaussian moments by direct sparse expansion and a permutation determinant, followed by independent exact Jordan-chain normalization and cyclic pairing checks.",
+      "scope": "105 Gaussian coefficient identities, 65 rational antidiagonal block normalizations and 13 cyclic self-adjoint examples."
+    },
+    "angular_endpoints": {
+      "passed": true,
+      "method": "Exact Laurent and angular polynomial expansions with direct termwise rational integration, compared with boundary expressions and the affine generating-function product.",
+      "scope": "360 upper and 180 lower endpoint identities, 144 affine coefficients in both dimension parities, and 44 pure and marked checks for an affine ternary witness. The residue and interpolation argument establishes the unbounded result."
+    },
+    "algebraic_shift": {
+      "passed": true,
+      "method": "Exact rational expansion of moments, symbolic Weyl commutators, rotation identities, and binomial recurrence replay.",
+      "scope": "200 binomial shifts, two exact twisted certificates, 90 rotation-frame identities, eight commutators, 792 specialized integration-by-parts identities, 162 Euler identities and 270 binomial recurrence identities. The general proof is symbolic. Implementations of the cited Weyl algorithms were not run."
+    },
+    "rotation_projection": {
+      "passed": true,
+      "method": "Exact Laurent coefficient extraction with a separate beta product for the expected values.",
+      "scope": "192 pure and marked generic-fiber moments, with M=1..8 and m=1..12. The real classification uses the algebraic localization argument and spherical positivity."
     }
   },
   "review": {
     "blind_reader": {
       "performed": true,
-      "reviewer": "Fresh no-history internal AI reader",
-      "supplied_context": "Only the exact eleven-page PDF and the paper-guide questions, with a request to reconstruct the unrestricted even witness, residue recurrence, two-weight test and Hermitian and norm-one transfers. No repository, earlier drafts, conversation or external references.",
-      "final_pdf_sha256": "342e6bfe5b270ee2a8493aa0f38c97eebd2cbb3961a644c0ac5b21304bc66677",
+      "reviewer": "Fresh no-history internal AI reader with PDF-only follow-ups",
+      "supplied_context": "Only the compiled PDF and the paper-guide questions, with a request to reconstruct the exponent shift, dimension bound and rotation projection classification. The exact final PDF was checked after clarifying the computational steps and the abstract and transitivity hypotheses.",
+      "final_pdf_sha256": "5e92a0593c708b4a13c7703fe2dbc06743e9bc25004f7588d200d043d431bb36",
       "answers": {
-        "contribution": "The all-field dimension criterion and degree-one minimum in every high dimension, a finite fixed-multiplier test on the block-invariant ring, and original-field results for Hermitian complements and isotropic norm-one levels.",
-        "conceptual_reason": "A normalized rank-two block projection supplies the even-dimensional moments. Residue elimination gives a recurrence, while split vector-pair actions and the hyperbolic torus transfer the moment method to other norm spaces.",
-        "hardest_step": "Proposition 6 and Proposition 8. The reader reconstructed the balanced torus coefficient, endpoint cutoff, dimension count for the annihilating operator, lexicographic removal of derivatives, and forward/backward use of the recurrence.",
-        "limitations": "The finite test concerns a given multiplier or specified finite-dimensional space, and the two-weight classification concerns formally real fields. The norm-one witness assumes isotropy. The reader also checked the positive-definite real contrast and the original-field Hermitian trace equality.",
-        "verification_obstacles": "No concrete gap was found in the reconstructed passages. Text extraction omits closure bars, which the rendered PDF confirms. The general literature and performance bounds for the recurrence procedure were outside the PDF-only review."
+        "contribution": "Explicit arbitrary-field witnesses, a bounded one-order test for all multipliers of any regular phase, and the real special orthogonal Reynolds classification.",
+        "conceptual_reason": "The trace kills algebraic twisted coboundaries after specialization, so an invertible exponent shift propagates the whole marker vector in both directions. For the rotation projection, invariant localization moves the question to the generic norm level.",
+        "hardest_step": "The reviewer checked independence of the differentiated representatives via commuting coordinates and reduction, then the common-denominator degree bound. The reviewer reconstructed the generic-fiber transfer and real positivity.",
+        "limitations": "The bound controls list length and scalar recurrence order. The proof uses specialist algorithms and gives no separate bounds on the first testable order or multiplier degrees. Anisotropic forms of dimension at least three over general fields remain outside the rotation projection classification.",
+        "verification_obstacles": "The first review requested explicit holonomicity and Weyl integration interfaces, denominator clearing, and cutoff details. The revised proof supplies these clarifications and the final PDF was rechecked."
       }
     },
     "external_human_review": false,
@@ -167,19 +213,45 @@
     "earlier_revision": {
       "performed": true,
       "reviewer": "Fresh no-history internal AI reader",
-      "supplied_context": "Only the exact nine-page PDF and the paper-guide questions, with a request to reconstruct the linear-multiplier and instability proofs. No repository, earlier drafts, conversation or external references.",
-      "final_pdf_sha256": "49473923da62fd033db2af1efae9057ce006ec8175f7701f5ba5753b7063e0de",
+      "supplied_context": "Only the exact eleven-page PDF and the paper-guide questions, with a request to reconstruct the joint minimum, ternary opening and its relation to the separate double-pole phase. No repository, earlier drafts, conversation, or external references.",
+      "final_pdf_sha256": "d86b05c83d1a9c5c17d152fa7065aa7dfe04fe30e8b08a968039e71c0ecda901",
       "answers": {
-        "contribution": "The all-characteristic-zero dimension cutoff, explicit witnesses and phase-specific cutoff, the minimum degree on odd-dimensional and isotropic complements, and explicit pure phases distinguishing eventual marked vanishing from the geometric nullcone.",
-        "conceptual_reason": "Rotation or hyperbolic moments give polynomial angular densities. Laurent coefficient extraction selects the first missing or the leading retained coefficient. Opposite extreme scalar weights give the invariant certificate for the safe phase.",
-        "hardest_step": "The endpoint substitutions on pp. 3–4 and 5–6 and the strict middle class on p. 8. The reader reconstructed the rank-one recurrence, both densities, the tail order, the leading coefficient, the two vanishing orders, the weight cutoff and the invariant.",
-        "limitations": "The degree-one result concerns odd dimension or isotropic q in N>=3. The sharp polynomial cutoff and rational test concern the stated phases and the pole minimum concerns its stated family. Eventual marked vanishing permits a multiplier-dependent cutoff.",
-        "verification_obstacles": "The reader found no mathematical gap in the reconstructed passages. Text extraction loses overlines on K in Section 8; rendered page 8 confirms the use of the algebraic closure. The cited theorems and literature priority were outside the PDF-only exercise."
+        "contribution": "The all-field dimension cutoff, phase-specific cutoff and fixed-multiplier results, and a single geometrically nonpower pure phase attaining both a simple pole and a linear all-order marker in every dimension at least three.",
+        "conceptual_reason": "Scalar degree extraction turns the rank-two Gaussian moments into a finite binomial series. The full series reduces to x/(1+x). The omitted coefficients give purity and the linearly marked value.",
+        "hardest_step": "The reader reconstructed the coefficient in the first omitted term, including its sign and power of two, and checked the Gaussian computation and its transport through the standard form over Q.",
+        "limitations": "The simultaneous minima concern quadratic complements of dimension at least three. The earlier double-pole formula and its phase-specific multiplier cutoff were independently reconstructed. The two-Laurent-power support test uses coefficients in the block-invariant ring.",
+        "verification_obstacles": "The reader found no mathematical gap in the new proof and confirmed the visible algebraic-closure bar. Literature priority and external cited theorems were outside the PDF-only exercise."
+      }
+    },
+    "prior_angular_edition": {
+      "performed": true,
+      "reviewer": "Fresh no-history internal AI reader, with a PDF-only final follow-up",
+      "supplied_context": "Only the compiled manuscript and paper-guide questions, with an explicit request to reconstruct the quadratic numerator, endpoint and affine proofs. A fresh read of the final PDF checked subsequent exposition and the example with opposite endpoints. No repository, project correspondence or external references.",
+      "final_pdf_sha256": "61d0d968557f274f44cdd8c0349c3abff0fdcae31a392b01a04429e7b5922305",
+      "answers": {
+        "contribution": "The reader identified the all-field dimension classification, simultaneous sharp minima, the finite purity test and original-field contraction for quadratic numerators, the necessary angular endpoints, and the exact all-multiplier characterization for affine angular phases.",
+        "conceptual_reason": "For quadratic numerators, scalar weights expose a Gaussian determinant. For affine angular phases, the endpoint recurrence gives a product series whose constant coefficients are residues over the small roots of a polynomial.",
+        "hardest_step": "The reviewer reconstructed the antidiagonal Jordan blocks, both endpoint identities, and the three affine obstructions by Hankel recovery, local valuation bounds and Lagrange interpolation. The final revision records the uniform convergence, Rouché argument and common function-field extension.",
+        "limitations": "Every angular degree has the upper endpoint necessity in the block-invariant ring and every even dimension has the lower endpoint necessity. Sufficiency by a single common sign is proved for affine phases. The previously constructed safe phase G has opposite endpoint signs and higher angular degree.",
+        "verification_obstacles": "The first PDF review identified exposition needs around the contour, comparison of pole orders, and the abstract's quantifier. The reviewer found no remaining concrete issue after checking the final PDF. External literature priority was outside that exercise."
+      }
+    },
+    "prior_period_edition": {
+      "performed": true,
+      "reviewer": "Fresh no-history internal AI reader with two PDF-only follow-ups",
+      "supplied_context": "The compiled PDF and paper-guide questions, focusing on Theorem 10 and its recurrence, specialization and effectivity. Only compiled PDFs were given. The exact final PDF was reread after a section title change and the addition of the Euler example.",
+      "final_pdf_sha256": "ead4218c25de14a6a1117a96da951fff018f3ee65bc97a77495854ed2a80eec4",
+      "answers": {
+        "contribution": "The reader identified the ground-field dimension cutoff and sharp minima, and a decision procedure for testing eventual marked vanishing against every fixed regular multiplier of an arbitrary regular phase.",
+        "conceptual_reason": "Marked sequences modulo eventual equality factor through the finite-dimensional top twisted de Rham quotient because the specialized period kills its coboundaries.",
+        "hardest_step": "Each certificate specializes outside finitely many parameter poles, and multiplying its primitive by f^m clears the f-denominators at large m. The parameter-space radial factor is single valued in odd dimension.",
+        "limitations": "The procedure invokes two specialist algorithms and gives neither size nor complexity bounds. Cutoffs depend on the multiplier. The final Euler example gives the empty list for f=q.",
+        "verification_obstacles": "The initial reader requested precise localization and integration interfaces, a justification that the recurrence is nonzero and a way to compute initial moments. The final reader confirmed those changes and checked the added Euler example without identifying a remaining mathematical gap."
       }
     }
   },
   "artifact_hashes": {
-    "main.tex": "483b33c8dd323a1582bf3539cf0b33fa05fd0d08c7c784537c449e38496290fd",
-    "mathieu-quadratic-complements.pdf": "4a699b183b4172bbf6e7516b477fafe196f1edad1fb58c1191ced718b01eee9e"
+    "main.tex": "e695c19d58fb97563f0bb5354134a862ddbbe06b384dee04c369acbde31cb562",
+    "mathieu-quadratic-complements.pdf": "1d140aa43dcfd14c1b5359f785c719ef01299e12a45a82fa93a6b9f60b3a828a"
   }
 }
