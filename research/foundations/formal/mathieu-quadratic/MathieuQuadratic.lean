@@ -1,5 +1,6 @@
 import MathieuQuadratic.AlgebraicLaurentTrace
 import MathieuQuadratic.AlgebraicTrace
+import MathieuQuadratic.AngularEndpoints
 import MathieuQuadratic.BaseChange
 import MathieuQuadratic.BinarySupport
 import MathieuQuadratic.BlockPolynomials
@@ -46,6 +47,7 @@ import MathieuQuadratic.SharpMultiplier
 import MathieuQuadratic.SimplePole
 import MathieuQuadratic.SplitLocalization
 import MathieuQuadratic.SplitNormTraces
+import MathieuQuadratic.TorusLaurent
 import MathieuQuadratic.TraceUniqueness
 import MathieuQuadratic.Transitivity
 import MathieuQuadratic.Uniform

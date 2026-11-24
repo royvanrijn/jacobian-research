@@ -125,6 +125,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Consecutive linked binary factorial moments are coprime on the exponent axes | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
 | Exact signs, zeros and first failure orders of the raw linked beta matrix | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
 | Consecutive exponent-axis nonvanishing for Gamma shapes one and beta | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
+| All-order regular Euclidean chains for diagonal linked beta profiles | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
 
 **Computed obligations:** 56 unresolved; 20 resolved within their exact scope.
 

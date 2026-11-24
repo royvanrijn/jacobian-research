@@ -33,7 +33,7 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Canonical rational composition normal form for every pure odd-start unit phase | Internal result | proved | [Source](extended-geometry/ODD_START_RATIONAL_COMPOSITION_NORMAL_FORM.md) |
 | Marked gcd recognition and finite purity at every odd starting height | Internal result | proved | [Source](extended-geometry/ODD_START_MARKED_GCD_AND_FINITE_PURITY.md) |
 | Uniform finite purity cutoff and reduced moment locus for every starting height | Internal result | proved | [Source](extended-geometry/ALL_START_TWO_HEIGHT_EFFECTIVE_PURITY_PREFIX.md) |
-| Lean verification of Mathieu kernels on quadratic complements | Partial result | stale | [Source](formal/mathieu-quadratic/README.md) |
+| Lean verification of Mathieu kernels on quadratic complements | Partial result | proved | [Source](formal/mathieu-quadratic/README.md) |
 | All-field fixed-unit-marker counterexamples on Cayley-plane projector products | Internal result | proved | [Source](extended-geometry/CAYLEY_PLANE_PROJECTOR_PRODUCT_COUNTEREXAMPLE.md) |
 | Compact unitary EIV products over all fields | Internal result | proved | [Source](extended-geometry/ALBERT_EIV_AND_REDUCED_NORM_ONE_PRODUCT_COUNTEREXAMPLES.md) |
 | Reduced Albert norm-one product counterexamples over all fields | Internal result | proved | [Source](extended-geometry/ALBERT_EIV_AND_REDUCED_NORM_ONE_PRODUCT_COUNTEREXAMPLES.md) |

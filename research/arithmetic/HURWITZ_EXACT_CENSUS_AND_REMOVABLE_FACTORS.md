@@ -482,6 +482,125 @@ obligation in the pure domain remains
 \(\texttt{GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE}\).
 [Marked subgroup and braid action](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md#the-spaces-and-the-exact-marked-subgroup)
 
+## The even alternating Laurent passport
+
+Let \(n=2b\ge10\). Fix an \((n-1)\)-cycle with one fixed sheet
+as the product of an ordered \(b\)-tuple of double transpositions
+generating \(A_n\). This is the full-alternating domain of the
+even Laurent passport \(D^b,(n-1,1)\). Its product, graph, and
+absolute orbit setting are those of
+\(\texttt{ARITH-HURWITZ-UNICYCLE-FIXED-SHEET}\) and
+\(\texttt{ARITH-ABSOLUTE-HURWITZ-DEGREE14-AND-UNIFORMITY}\).
+In this domain the fraction without a directly removable double
+transposition is \(O(e^{-cn})\), with \(c=1/240\) sufficient.
+[Cycle folding, Theorem 1](ALTERNATING_HURWITZ_CYCLE_FOLDING.md#theorem-1-the-unicyclic-graph-and-fixed-sheet-trajectory)
+· [Even-degree orbit and uniformity](ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md)
+
+For the proof, sample a uniform labeled tree on the \(n\) sheets,
+adjoin an independent uniform unordered edge between distinct
+sheets, and uniformly pair the resulting \(n\) edge occurrences
+into an ordered list of \(b\) pairs. The added edge is
+distinguished in this sampling space even if it duplicates a
+tree edge. Accept when every paired block consists of disjoint
+edges and the resulting tuple is in the stated full-alternating
+passport, allowing all products of the prescribed cycle type.
+The sample size is
+\[
+ S_n=n^{n-2}\binom n2\,\frac{n!}{2^b}.                                 \tag{12}
+\]
+
+For an accepted tuple the expanded graph is connected and has
+one cycle, counting a parallel pair as a cycle of length two.
+Its number of sampled preimages equals its cycle length
+\(\ell\). Deleting a cycle-edge occurrence leaves a tree and
+determines the distinct added occurrence and the ordered pairing.
+When the cycle is parallel, the duplicated edge is in two
+different blocks because each block has disjoint edges. Either
+block can contain the distinguished added occurrence, giving
+two preimages with the same underlying tree. Thus the accepted
+sampling distribution weights each tuple by \(\ell\in[2,n]\).
+A uniform-tuple fraction is at most \(n/2\) times the corresponding
+fraction in the weighted distribution.
+
+There are at least
+\[
+ D_n=n(n-2)!(n-5)(n-1)^{b-2}(b-2)^{b-1}                               \tag{13}
+\]
+accepted tuples before weighting. For each choice of a fixed sheet
+\(z\) and long cycle on the other \(n-1\) sheets, take an odd pure
+factorization counted in (4) with \(b-1\) factors. Its group is
+\(A_{n-1}\). In fact an odd nontrivial block size is at least three,
+and a double transposition moving four sheets cannot permute such
+blocks nontrivially. The long-cycle product then gives primitivity.
+Jones's Proposition 6.1(3) applies since \(n-1\ge9\).
+Split the first factor \(uv\), with \(u,v\) disjoint transpositions,
+into \((z\,a)u,(z\,a)v\) in a fixed edge order, where \(a\) is any
+of the \(n-5\) old labels outside the support of \(uv\). Coalescing
+these two factors recovers the old factorization and the two
+doubled-edge blocks recover \(a\). This proves injectivity.
+The new group contains \(A_{n-1}\) on the old labels and moves
+\(z\). It is transitive and, by orbit–stabilizer and evenness, is
+\(A_n\). Thus the acceptance probability is at least
+\[
+ D_n/S_n =
+ \frac{4(n-5)(n-1)^{b-4}(n-4)^{b-1}}{n^{n-1}}
+ \asymp n^{-3}.                                                       \tag{14}
+\]
+[Jones, arXiv:1304.5444v1, Proposition 6.1(3)](https://arxiv.org/pdf/1304.5444v1)
+· [Pinned import EXT-PAPER-ALT-PRIORITY-JONES-BEAUVILLE-2013](alternating_hurwitz_priority_ledger.json)
+
+The additional edge destroys at most two of the original tree
+leaves. Use the surviving original leaf edges and the Prüfer
+concentration and random-pairing estimate above. With
+probability \(1-O(e^{-n/72})\) there are at least \(n/4-2\) such
+edges, and conditioned on the tree and added edge the probability
+of avoiding every paired pair of those edges is at most
+\(e^{-n/120}\) for sufficiently large \(n\). On acceptance,
+every paired pair of surviving leaf edges gives a removable
+factor. Division by (14) and the additional factor \(n/2\) for
+removing the cycle-length weighting still leave the bound
+\(O(e^{-n/240})\). Conjugacy makes the fraction the same at a
+fixed product. The quotient by its centralizer is free because
+the tuples generate \(A_n\) and its centralizer in \(S_n\) is
+trivial.
+
+For \(n\ge12\), a removable factor gives a reduction to the
+full-alternating passport in degree \(n-2\). Move that factor to
+the last position by positive Hurwitz swaps. The other factors
+retain their permutations and still fix its two exclusive
+leaves. The fixed sheet \(z\) cannot be exclusive because a
+sheet moved by only one factor is moved by the whole product:
+every later permutation after that first move fixes the sheet
+and cannot send another sheet back to it. Thus the two leaves
+lie on the long cycle. The predecessor rule deletes them from
+that cycle and leaves product type \((n-3,1)\). Removing two
+leaves from the graph preserves connectedness. The resulting
+group is transitive, and its fixed-point stabilizer contains
+the long cycle on all other sheets, so it is 2-transitive and
+primitive. Jones's same proposition gives the full \(A_{n-2}\).
+In reverse, a two-leaf extension of this lower passport preserves
+the stated upper passport exactly when its two distinct old
+anchors lie on the lower long cycle. Using the lower fixed
+sheet as one anchor instead creates a 2-cycle there. If both
+anchors lie on the long cycle, the resulting tuple is transitive
+and the upper group is full by the same primitive group argument.
+
+It follows that any even orbit of relative size at least
+\(e^{-c'n}\) for fixed \(0<c'<1/240\) admits this reduction for
+all sufficiently large even \(n\). The sufficiency follows from
+the uniform exceptional fraction. The sizes of all even orbits
+and the equivalence of all admissible anchor extensions remain
+separate obligations.
+
+A finite check of the weighting used independent enumerations
+of the transitive degree-six fixed-product tuples and of sampled
+trees with one extra edge. At a fixed 5-cycle with one fixed
+sheet, \(120\) tuples have cycle length two and \(80\) have
+cycle length three. The two lists agree with their individual
+tree-sampling multiplicities two and three, respectively,
+giving \(480\) presentations. This check concerns the
+unicyclic multiplicity at small degree.
+
 ## Scope of the conjugate-power mechanism
 
 Féray's [pinned result](https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/feray-conjugate-power-word/PROOF.md)

@@ -1,0 +1,27 @@
+{
+  "title": "Finite Tests for Mixed Moments of Regular Functions",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Finite ordinary-moment tests for cofinal mixed vanishing and a complete common-weight criterion for Laurent constant terms.",
+  "status": "draft",
+  "published": false,
+  "catalogued_on": "2026-11-24",
+  "source": "main.tex",
+  "pdf": "finite-tests-for-mixed-moments.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=finite-tests-for-mixed-moments main.tex",
+  "abstract": "Let \\(X\\) be a smooth affine variety in characteristic zero with a\nnowhere-vanishing top form. Let \\(\\Lambda\\) be a linear functional on\nregular functions that annihilates exact forms after multiplication by\nthis top form. For any fixed tuple of regular functions, we give a\nfinite test for whether the mixed moments against every fixed regular\nmultiplier vanish whenever all exponents are sufficiently large.\nA generating series records every offset from a common diagonal\nexponent. The resulting problem uses one exponent shift in twisted\nde Rham cohomology. A differential equation bounds the number of\ncoefficients of each series that must be checked. For Laurent constant\nterms, a single common weight characterizes the vanishing property,\nand every failure occurs infinitely often on some positive integer ray.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "verification_record": "verification.json",
+  "verification": {
+    "scope": "Written proof, bounded exact arithmetic, primary-source inspection, PDF rendering and PDF-only internal review.",
+    "limits": "External specialist review, external independent replay and formal verification remain pending. The full decision procedure is not implemented."
+  },
+  "next_steps": [
+    "Obtain specialist review of the effective logarithmic Cech model and formal specialization.",
+    "Develop practical complexity bounds and compute a non-Laurent example end to end.",
+    "Review the manuscript with the author before submission."
+  ]
+}

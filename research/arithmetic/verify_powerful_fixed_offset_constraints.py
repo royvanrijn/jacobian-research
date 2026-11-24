@@ -5,6 +5,7 @@ Generation uses SciPy to propose exact fractions. Verification uses only the
 standard library and checks every branch and inequality in rational arithmetic.
 """
 import argparse
+import gzip
 import json
 import math
 import sys
@@ -29,18 +30,20 @@ def dot(a, b):
 class Model:
     """Coordinates, a pooled tail per side, three maxima, and the cost D."""
 
-    def __init__(self, u, v, r, cutoff, saving):
+    def __init__(self, u, v, r, cutoff, saving, tail_count=1):
         require(0 <= v <= u and 1 <= cutoff <= r and r >= 5,
                 "Require r >= 5, u >= v >= 0 and 1 <= cutoff <= r.")
         self.offsets = (u, v, 0)
         self.r = r
         self.cutoff = cutoff
-        self.width = 3 * (cutoff + 1) + 4
+        self.coordinates = range(cutoff + tail_count)
+        self.tail = range(cutoff, cutoff + tail_count)
+        self.width = 3 * len(self.coordinates) + 4
         self.cost = self.row([(self.width - 1, 1)])
         self.threshold = u + v + saving
 
     def index(self, side, coord):
-        return side * (self.cutoff + 1) + coord
+        return side * len(self.coordinates) + coord
 
     def row(self, entries):
         values = [0] * self.width
@@ -50,7 +53,7 @@ class Model:
 
     def base(self):
         n = self.cutoff
-        eq = [(self.row((self.index(side, j), 1) for j in range(n + 1)), 1)
+        eq = [(self.row((self.index(side, j), 1) for j in self.coordinates), 1)
               for side in range(3)]
         ub = []
         for side in range(3):
@@ -61,7 +64,7 @@ class Model:
         ub.append((self.row((j, 1) for j in range(self.width - 4, self.width - 1)), 1))
         for left, right in combinations(range(3), 2):
             terms = [(self.index(side, j), self.offsets[side] + j)
-                     for side in (left, right) for j in range(n + 1)]
+                     for side in (left, right) for j in self.coordinates]
             ub.append((self.row(terms + [(self.width - 1, -1)]), 0))
         return eq, ub
 
@@ -104,6 +107,65 @@ class Model:
         return rows
 
 
+class EvenDiagonalModel(Model):
+    """Pool high even and odd indices separately for every even order."""
+
+    def __init__(self, r, cutoff, saving):
+        require(r % 2 == 0 and 4 <= cutoff < r,
+                "Require an even order and at least four explicit indices.")
+        super().__init__(0, 0, r, cutoff, saving, tail_count=2)
+
+    def base(self):
+        eq, ub = super().base()
+        for i, k in combinations(range(3), 2):
+            ub.append((self.row((self.index(side, j), 1)
+                                for side in (i, k) for j in self.coordinates if j % 2 == 0), 1))
+        return eq, ub
+
+    def pairs(self, point=None):
+        for i, k in combinations(range(3), 2):
+            for j in range(self.cutoff):
+                yield i, (j,), k, (j,)
+            groups = []
+            for side in (i, k):
+                indices = [j for j in self.coordinates
+                           if j % 2 == 0 and (point is None or point[self.index(side, j)])]
+                groups.append([g for size in range(1, len(indices) + 1)
+                               for g in combinations(indices, size)])
+            for a, b in product(*groups):
+                if a != b or len(a) > 1 or a[0] >= self.cutoff:
+                    yield i, a, k, b
+            if self.r % 3 == 0:
+                yield i, (0, 3), k, (0, 3)
+
+    def group_rows(self, pair):
+        i, a, k, b = pair
+        require(isinstance(i, int) and isinstance(k, int) and 0 <= i < k < 3
+                and all(s and list(s) == sorted(set(s))
+                        and all(isinstance(j, int) and j in self.coordinates for j in s)
+                        for s in (a, b)), "Invalid coordinate groups.")
+        if a == b and len(a) == 1 and a[0] < self.cutoff:
+            height = None
+        elif self.r % 3 == 0 and tuple(a) == tuple(b) == (0, 3):
+            # The fixed-edge bound gives a+b <= 1, strictly below 3/2.
+            height = None
+        else:
+            require(all(j % 2 == 0 for j in (*a, *b)), "Omitted powers must be even.")
+            height = Q(1)
+        left = self.row((self.index(i, j), 1) for j in a)
+        right = self.row((self.index(k, j), 1) for j in b)
+        return left, right, height
+
+
+def model_from(data):
+    saving = Q(data["saving"])
+    if data.get("model") == "even-diagonal":
+        require(data["u"] == data["v"] == 0, "The parity model is diagonal.")
+        return EvenDiagonalModel(data["r"], data["cutoff"], saving)
+    require("model" not in data, "Unknown model.")
+    return Model(data["u"], data["v"], data["r"], data["cutoff"], saving)
+
+
 def violation(a, b, height):
     return min(a, b, max(2*a+b, a+2*b)-1, 1 if height is None else height-a-b)
 
@@ -115,7 +177,7 @@ def verify_witness(model, point):
             and all(dot(a, point) <= b for a, b in ub),
             "Witness violates the probability, maximum, or pair-cost constraints.")
     require(dot(model.cost, point) < model.threshold, "Witness misses the target.")
-    require(all(point[model.index(i, model.cutoff)] == 0 for i in range(3)),
+    require(all(point[model.index(i, j)] == 0 for i in range(3) for j in model.tail),
             "A witness with pooled tail mass cannot certify the full model.")
     # Removing zero-mass coordinates can only raise the gcd, strengthening
     # the corresponding graph condition at the same masses.
@@ -150,7 +212,7 @@ def verify_tree(model, node, eq, ub):
 
 
 def verify(data):
-    model = Model(data["u"], data["v"], data["r"], data["cutoff"], Q(data["saving"]))
+    model = model_from(data)
     if data["kind"] == "witness":
         verify_witness(model, tuple(map(Q, data["point"])))
     else:
@@ -228,18 +290,26 @@ def main():
         gen.add_argument(name, type=int)
     gen.add_argument("--cutoff", type=int, default=6)
     gen.add_argument("--saving", type=Q, default=Q(2))
+    gen.add_argument("--even-diagonal", action="store_true",
+                     help="Use parity groups and separate even and odd tails.")
     val = commands.add_parser("verify", help="Verify a JSON certificate without SciPy.")
     val.add_argument("file", type=Path)
     args = parser.parse_args()
     try:
         if args.command == "verify":
-            data = json.loads(args.file.read_text())
+            if args.file.suffix == ".gz":
+                with gzip.open(args.file, "rt", encoding="utf-8") as source:
+                    data = json.load(source)
+            else:
+                data = json.loads(args.file.read_text(encoding="utf-8"))
             verify(data)
             print("Verified", data["kind"])
         else:
-            model = Model(args.u, args.v, args.r, args.cutoff, args.saving)
             data = {"u": args.u, "v": args.v, "r": args.r, "cutoff": args.cutoff,
-                    "saving": str(args.saving), **generate(model)}
+                    "saving": str(args.saving)}
+            if args.even_diagonal:
+                data["model"] = "even-diagonal"
+            data.update(generate(model_from(data)))
             verify(data)
             print(json.dumps(data, indent=2))
     except (ImportError, KeyError, TypeError, ValueError) as error:

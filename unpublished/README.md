@@ -4,6 +4,7 @@ Drafts and standalone notes with their current review status.
 
 | Paper | Status |
 |---|---|
+| [Finite Tests for Mixed Moments of Regular Functions](finite-tests-for-mixed-moments/) | draft |
 | [The Mathieu property for quadratic complements](mathieu-quadratic-complements/) | ready for review |
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |

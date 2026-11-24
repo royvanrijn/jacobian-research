@@ -15,7 +15,13 @@
     "Checked the surface-only moment bounds at all offsets, the aligned graph inequalities including all four small-coordinate cases, and families attaining the surface-only constants in the normalized model for u>v.",
     "Verified the first fixed-offset obstruction in exact arithmetic for both representatives modulo 60 of r congruent to 2 modulo 30, with a symbolic gcd proof for the entire progression.",
     "Generated an exact branch certificate for (u,v,r)=(2,1,60) and a rational witness for (3,1,62). The standard-library verifier accepted both and rejected corrupted copies.",
-    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all ten PDF pages."
+    "Checked cancellation-free pair amplification, powerful divisor selection, and the archimedean and modular determinant bounds in the uniform monomial proof.",
+    "Checked four generalized Vandermonde identities and multi-prime valuation examples exactly. The small prime-power scan covered 48 boxes and had no genuinely modular collisions; it is diagnostic rather than proof.",
+    "Checked the 90/10 perturbation, all compatible graph bounds and the strict maximum-sum inequality in exact arithmetic, and proved simultaneous cardinality and codegree bounds for the abstract tripartite construction.",
+    "Checked both signs of the coefficient-uniform quadratic count, grouped root recovery, the parity cost inequality, and the moment normalization and height errors for all even-power coordinates.",
+    "Proved the 8/3 cost bound by grouping indices 0 and 2 and treating every pattern of unavailable arcs; replayed a separate exact 21-node certificate.",
+    "For orders divisible by six, replayed an exact certificate for cost at least 4 with 293 splits, 790 dual leaves and 69 infeasible leaves. Checked transfer of finite branch certificates under O(k^(-1/2)) perturbations. The checker rejected an increased threshold and an invalid residue class.",
+    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all fourteen PDF pages."
   ],
   "numerical_exponents": [
     {
@@ -58,8 +64,8 @@
     }
   ],
   "edition_sha256": {
-    "main.tex": "42fafa27f454c75cc0d421af451fe4ed89d05eaf16000ccbb5b95e68f04681f5",
-    "paper.pdf": "a2e8805bdeda81c6cc59fbb05d5995a4fc730beb6972f0cf3613a2a80352fd3b"
+    "main.tex": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+    "paper.pdf": "354b305b6672e392a49d670e0032ca644ad778ddcbb1c8af33dbf657d909bf85"
   },
   "independent_pdf_only_review": "unperformed",
   "external_specialist_review": "unperformed",
@@ -182,6 +188,35 @@
       ]
     },
     "checker": "research/arithmetic/verify_powerful_fixed_offset_constraints.py",
-    "checker_sha256": "e3eba7cc6c95a7cadb36448946d153f19acedbe00bf1cd2ab0eeab99e43427c1"
+    "checker_sha256": "3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+    "strict_cardinality_obstruction": {
+      "r_mod_30": 2,
+      "D": "5957/1000",
+      "maximum_sum": "2983/3000",
+      "maximum_directed_compatible_term": "749/750"
+    }
+  },
+  "modular_monomials": {
+    "unit_condition": "numerators, denominators and K coprime to n",
+    "powerful_order": "r",
+    "exponents": "distinct e,f in [r,r+A] with A fixed",
+    "height_range": "n^(1/(3r)) <= Y <= n^(2/r)",
+    "fiber_bound": "O_(A,r,epsilon)(Y^(O_A(r^(-1/10))+epsilon))",
+    "prime_power_scan": {
+      "boxes": 48,
+      "genuinely_modular_collisions": 0
+    },
+    "all_fixed_offset_exponent_error": "O_(u,v)(r^(-21/10))"
+  },
+  "even_diagonal": {
+    "saving": "8/(3k^2) + O(k^(-5/2)) for all sufficiently large even k",
+    "saving_divisible_by_six": "4/k^2 + O(k^(-5/2)) for all sufficiently large multiples of six",
+    "checker": "research/arithmetic/verify_powerful_fixed_offset_constraints.py",
+    "checker_sha256": "3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+    "divisible_by_six_certificate": "research/arithmetic/powerful_even_order_divisible_by_six_certificate.json.gz",
+    "certificate_sha256": "396c4f1535b89fc07aff41ff77ab09615ccb5fe80ae7038311218f52746f68bd",
+    "certificate_splits": 293,
+    "dual_leaves": 790,
+    "infeasible_leaves": 69
   }
 }

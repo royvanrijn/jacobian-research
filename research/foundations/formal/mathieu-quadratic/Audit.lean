@@ -239,3 +239,14 @@ open MathieuQuadratic
 #print axioms planarLaurent_pure_avoids_newton_of_not_interior
 #print axioms newtonLaurentNecessity_fin_two_of_interior
 #print axioms draft_canonical_trace_dimension_classification_of_interior
+#print axioms laurentOneSided_of_eventual_ct_zero
+#print axioms angularTrace_eq_realization
+#print axioms angular_upper_endpoint_oneSided
+#print axioms angular_lower_endpoint_oneSided
+#print axioms draft_angular_endpoints
+#print axioms DiagonalTraceModel.angular_endpoints
+#print axioms exists_canonical_diagonalTraceModel_of_form
+#print axioms integral_torusEvaluate
+#print axioms hasSum_torusLaurent_resolvent
+#print axioms integral_torusLaurent_resolvent_eq_zero
+#print axioms draft_all_multipliers_test_of_basis

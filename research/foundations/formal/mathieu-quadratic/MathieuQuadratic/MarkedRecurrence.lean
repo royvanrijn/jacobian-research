@@ -1,3 +1,4 @@
+import MathieuQuadratic.Basic
 import Mathlib.Algebra.Polynomial.Roots
 import Mathlib.Tactic
 
@@ -60,6 +61,50 @@ theorem eventual_zero_iff_recurrence_window (a : ℕ → K) (c : ℕ → ℕ →
         rw [hz, zero_add, add_assoc, hk] at he
         exact (mul_eq_zero.mp he).resolve_left (leading _ (by omega))
     simpa only [Nat.add_sub_of_le hm] using hforward (m - m₀)
+
+/-- The single-order test for all marked powers, given a finite moment
+basis and invertible exponent shifts on its specialized moment vectors. -/
+theorem draft_all_multipliers_test_of_basis {A : Type*} [CommRing A] [Algebra K A]
+    (trace : A →ₗ[K] K) (f : A) {r : ℕ} (markers : Fin r → A) (m₀ : ℕ)
+    (shift : ℕ → (Fin r → K) ≃ₗ[K] (Fin r → K))
+    (recurrence : ∀ n ≥ m₀,
+      (fun i ↦ trace (markers i * f ^ (n + 1))) = shift n (fun i ↦ trace (markers i * f ^ n)))
+    (spans : ∀ h : A, ∃ (coeff : ℕ → Fin r → K) (start : ℕ), ∀ n ≥ start,
+      trace (h * f ^ n) = ∑ i, coeff n i * trace (markers i * f ^ n)) :
+    ∀ m ≥ m₀, Safe trace f ↔ ∀ i, trace (markers i * f ^ m) = 0 := by
+  classical
+  let u (n : ℕ) (i : Fin r) := trace (markers i * f ^ n)
+  have step (n : ℕ) (hn : m₀ ≤ n) : u (n + 1) = 0 ↔ u n = 0 := by
+    change (fun i ↦ trace (markers i * f ^ (n + 1))) = 0 ↔ u n = 0
+    rw [recurrence n hn]
+    exact (shift n).map_eq_zero_iff
+  have same (n : ℕ) (hn : m₀ ≤ n) : u n = 0 ↔ u m₀ = 0 := by
+    obtain ⟨k, rfl⟩ := Nat.exists_eq_add_of_le hn
+    induction k with
+    | zero => rfl
+    | succ k ih =>
+      exact (step (m₀ + k) (Nat.le_add_right _ _)).trans (ih (Nat.le_add_right _ _))
+  intro m hm
+  constructor
+  · intro safe
+    choose threshold vanishes using fun i : Fin r ↦ safe (markers i)
+    let n := max m₀ (Finset.univ.sup threshold)
+    have h₀ : m₀ ≤ n := le_max_left _ _
+    have hn : u n = 0 := by
+      funext i
+      exact vanishes i n ((Finset.le_sup (Finset.mem_univ i)).trans (le_max_right _ _))
+    exact fun i ↦ congrFun ((same m hm).2 ((same n h₀).1 hn)) i
+  · intro h
+    have hu : u m = 0 := funext h
+    intro g
+    obtain ⟨coeff, start, hg⟩ := spans g
+    refine ⟨max start m₀, fun n hn ↦ ?_⟩
+    have h₀ : m₀ ≤ n := (le_max_right _ _).trans hn
+    have hzero := (same n h₀).2 ((same m hm).1 hu)
+    rw [hg n ((le_max_left _ _).trans hn)]
+    exact Finset.sum_eq_zero fun i _ ↦ by
+      have hi : trace (markers i * f ^ n) = 0 := congrFun hzero i
+      rw [hi, mul_zero]
 
 variable [CharZero K]
 

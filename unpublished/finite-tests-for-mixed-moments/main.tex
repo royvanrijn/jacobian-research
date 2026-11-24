@@ -1,0 +1,508 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\DeclareMathOperator{\CT}{CT}
+\DeclareMathOperator{\Newt}{Newt}
+\newcommand{\A}{\mathcal O}
+\newcommand{\Gm}{\mathbb G_m}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\DR}{\mathrm{dR}}
+\title{Finite Tests for Mixed Moments of Regular Functions}
+\author{Roy van Rijn}
+\date{}
+\hypersetup{pdftitle={Finite Tests for Mixed Moments of Regular Functions},pdfauthor={Roy van Rijn}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let \(X\) be a smooth affine variety in characteristic zero with a
+nowhere-vanishing top form. Let \(\Lambda\) be a linear functional on
+regular functions that annihilates exact forms after multiplication by
+this top form. For any fixed tuple of regular functions, we give a
+finite test for whether the mixed moments against every fixed regular
+multiplier vanish whenever all exponents are sufficiently large.
+A generating series records every offset from a common diagonal
+exponent. The resulting problem uses one exponent shift in twisted
+de Rham cohomology. A differential equation bounds the number of
+coefficients of each series that must be checked. For Laurent constant
+terms, a single common weight characterizes the vanishing property,
+and every failure occurs infinitely often on some positive integer ray.
+\end{abstract}
+
+\section{A diagonal can miss the mixed moments}
+
+Take \(f_1=x^2\) and \(f_2=x^{-1}\) on the one-dimensional torus, and
+let \(\Lambda=\CT_x\) be Laurent constant term. On the diagonal,
+\[
+   \CT_x(h f_1^m f_2^m)=\CT_x(hx^m)=0
+   \qquad\text{for all sufficiently large \(m\), for every fixed \(h\)}.
+\]
+Yet \(\CT_x(f_1^m f_2^{2m})=1\) for every \(m\ge1\).
+We test a quadrant of exponents at once by expanding a product of
+geometric series. Independent variables keep the coefficients for
+different offsets distinct.
+
+Let \(K\) be a field of characteristic zero, let \(X\) be a smooth
+geometrically integral affine \(K\)-variety of dimension \(n\ge1\),
+and let \(A=\A(X)\). Fix a nowhere-vanishing regular \(n\)-form
+\(\omega\). Throughout, \(\Lambda:A\to K\) is \(K\)-linear and satisfies
+\begin{equation}\label{eq:trace}
+ \Lambda(g)=0
+ \quad\text{whenever}\quad g\omega=\dd\beta,\qquad
+ \beta\in\Gamma(X,\Omega_X^{n-1}).
+\end{equation}
+Over \(\mathbb C\) this holds for a period over a closed \(n\)-cycle
+in \(X(\mathbb C)\), by Stokes' theorem. It also holds for an
+invariant functional on a smooth affine
+homogeneous space with invariant volume. The infinitesimal action
+spans the tangent bundle, so every \((n-1)\)-form is a sum of forms
+\(g\,\iota_\xi\omega\) with \(\xi\) an infinitesimal action.
+Here \(\dd(g\,\iota_\xi\omega)=\xi(g)\omega\), and invariance
+annihilates \(\xi(g)\). For example, for a nondegenerate quadratic
+form \(q\), the residue of the ambient volume divided by \(q-1\)
+gives an \(\mathrm{SO}(q)\)-invariant volume on the norm-one quadric.
+
+For regular \(f_1,\ldots,f_s\), write \(f^{\mathbf m}=\prod_j f_j^{m_j}\)
+and \(F=\prod_j f_j\). Say that the tuple has \emph{cofinal vanishing}
+if for every fixed \(h\in A\) there is an integer \(M_h\) such that
+\(\Lambda(hf^{\mathbf m})=0\) whenever \(m_j\ge M_h\) for every \(j\).
+The cutoff can depend on \(h\).
+
+\begin{theorem}\label{thm:main}
+Assume every \(f_j\) is nonzero. There are an integer \(M\ge1\),
+regular functions \(h_1,\ldots,h_r\), and integers \(b_1,\ldots,b_r\ge0\)
+such that cofinal vanishing is equivalent to the finite list of tests
+\begin{equation}\label{eq:finite-test}
+ \Lambda(h_i F^M f^{\boldsymbol\alpha})=0
+ \qquad
+ (1\le i\le r,\quad
+   \boldsymbol\alpha\in\mathbb Z_{\ge0}^s,\quad |\boldsymbol\alpha|\le b_i).
+\end{equation}
+Given \(X,\omega,f_1,\ldots,f_s\) over a finitely generated field
+presented over \(\mathbb Q\), the list is computable. Deciding the
+tests uses exact evaluation of \(\Lambda\) on regular functions.
+\end{theorem}
+
+A zero phase makes cofinal vanishing immediate. The proof below also
+gives a finite test for cofinal vanishing with one prescribed
+multiplier. For Laurent constant terms we obtain a simpler answer
+in Section~\ref{sec:laurent}.
+
+The exponent shift is the algebraic Mellin shift of Loeser and Sabbah
+\cite[\S1.3]{LS}. For a single phase on quadratic complements, it gives
+a test at one sufficiently large order \cite{QuadraticComplements}.
+The new step here records an entire quadrant by a formal expansion
+and then reduces the series test to ordinary moments.
+
+\section{The exponent shift}\label{sec:shift}
+
+We use the following fact over an arbitrary characteristic-zero
+coefficient field \(L\). The output field of the functional may be
+an extension \(C\) of \(L\).
+
+\begin{lemma}\label{lem:shift}
+Suppose \(B\) is the coordinate ring of a smooth integral affine
+\(L\)-variety of dimension \(n\), with volume form \(\eta\).
+Let \(\lambda:B\to C\) be \(L\)-linear and annihilate exact forms
+as in \eqref{eq:trace}. For \(P\in B\) nonzero, let
+\[
+ H= \Omega^n_{B[P^{-1}]/L}(\nu)
+       \big/\nabla_\nu\Omega^{n-1}_{B[P^{-1}]/L}(\nu),
+ \qquad
+ \nabla_\nu=\dd+\nu\,\dd P/P\wedge .
+\]
+Here \((\nu)\) denotes scalar extension to \(L(\nu)\).
+The space \(H\) is finite-dimensional. It has a basis represented
+by \(a_i\eta\) with \(a_i\in B\). For any such basis, the vector
+\(u_m=(\lambda(a_iP^m))_i\) satisfies
+\[
+                     u_{m+1}=A(m)u_m
+\]
+with \(A(\nu)\) a rational matrix invertible at every sufficiently
+large integer \(m\). For a fixed \(a\in B\), the scalar sequence
+\(\lambda(aP^m)\) also satisfies a polynomial recurrence for every
+sufficiently large \(m\).
+\end{lemma}
+
+\begin{proof}
+Finiteness follows from the logarithmic model in
+Section~\ref{sec:effective}. A form \(g(\nu)\eta\) represents the
+sequence \(\lambda(P^m g(m))\) modulo eventual equality. The sequence
+is defined for all sufficiently large \(m\), since there are finitely
+many parameter poles and \(P^m\) clears the powers of \(P^{-1}\).
+A rational scalar \(r(\nu)\) acts on such sequences by multiplication
+by \(r(m)\) for large \(m\). If \(g(\nu)\eta=\nabla_\nu\beta\), then
+\[
+                P^m\nabla_m\beta(m)=\dd(P^m\beta(m)).
+\]
+The form inside the last differential is regular once \(m\) is large,
+so the sequence is eventually zero. The assignment therefore factors
+through \(H\).
+
+The map \(T\gamma(\nu)=P\gamma(\nu+1)\) satisfies
+\(\nabla_\nu T\gamma=T\nabla_\nu\gamma\), and its inverse is
+\(P^{-1}\gamma(\nu-1)\). Thus \(T\) is a semilinear automorphism of
+\(H\), and it shifts the corresponding sequences by one. Apply a
+common power of \(T\) to any basis to clear all powers of \(P^{-1}\).
+Expanding the resulting numerators over \(L(\nu)\) shows that classes
+represented by \(a\eta\) with \(a\in B\) span. Select a basis from them.
+
+Write \(T[a_i\eta]=\sum_j A_{ij}(\nu)[a_j\eta]\). The matrix is
+invertible because \(T\) is. Specialize the finitely many relations
+beyond their parameter poles and denominator cutoffs, and avoid the
+integer zeros of the determinant. This gives the vector recurrence.
+For a fixed \(a\), linear dependence among
+\([a\eta],[Pa\eta],\ldots,[P^r a\eta]\), where \(r=\dim H\), gives
+a scalar recurrence after clearing denominators.
+\end{proof}
+
+For a basis as in Lemma~\ref{lem:shift}, all the sequences
+\(\lambda(aP^m)\), \(a\in B\), eventually vanish exactly when \(u_M=0\)
+at any single order \(M\) beyond the matrix cutoff. Indeed the zero
+vector propagates in both directions there, and the basis spans the
+quotient through which the sequences factor.
+
+\section{Recording all offsets}\label{sec:offsets}
+
+Take indeterminates \(u_1,\ldots,u_s,t\), and put
+\(E=K(u_1,\ldots,u_s)\), \(L=E(t)\), and \(G_j=1-tu_j f_j\).
+Work with the algebra
+\begin{equation}\label{eq:localization}
+        B=(A\otimes_K L)[G_1^{-1},\ldots,G_s^{-1}].
+\end{equation}
+Expand at \(t=0\). Each \(G_j\) has constant coefficient \(1\),
+so this gives a map to \((A\otimes_K E)((t))\). Applying \(\Lambda\)
+coefficientwise gives an \(L\)-linear functional
+\(\lambda_t:B\to E((t))\). Expansion commutes with \(d_X\), the
+differential in the coordinates of \(X\). Consequently \(\lambda_t\)
+annihilates the exact relative top forms on \(\operatorname{Spec} B\).
+
+For \(h\in A\) and \(M\ge1\), the basic identity is
+\begin{equation}\label{eq:offsets}
+ \lambda_t\left(\frac{hF^M}{\prod_jG_j}\right)
+ =\sum_{\boldsymbol\alpha\ge0}
+    \Lambda(hF^M f^{\boldsymbol\alpha})\,
+    u^{\boldsymbol\alpha}t^{|\boldsymbol\alpha|}.
+\end{equation}
+For each power of \(t\), distinct offsets give distinct monomials in
+the independent \(u_j\). The series is zero exactly when all the
+mixed moments in the quadrant \(m_j\ge M\) vanish for this \(h\).
+
+Cofinal vanishing on \(A\) is equivalent to
+\begin{equation}\label{eq:equiv}
+       \lambda_t(aF^m)=0\quad\text{eventually for every fixed \(a\in B\)}.
+\end{equation}
+To see the forward implication, express \(a\) as a finite sum of
+\(L\)-multiples of \(h/\prod_jG_j^{e_j}\) with \(h\in A\) and
+\(e_j\ge0\). The coefficients of the formal expansion of this last
+expression times \(F^m\) involve the mixed moments for \(h\) at
+exponents at least \(m\). The cutoff for \(h\) therefore works for
+every coefficient at once. Take the maximum cutoff over the finitely
+many numerators. The reverse implication follows from
+\eqref{eq:offsets} applied to each fixed \(h\).
+
+Apply Lemma~\ref{lem:shift} over \(L\) with phase \(P=F\).
+After clearing the \(F\)-denominators as in its proof, choose a common
+denominator \(Q=\prod_j G_j^{e_j}\) for the basis representatives
+with all \(e_j\ge1\). Expanding their numerators over \(L(\nu)\)
+shows that some \(h_i/Q\), with \(h_i\in A\), represent a basis.
+The matrix recurrence tests \eqref{eq:equiv} at one order \(M\)
+for these representatives. The test series are
+\begin{equation}\label{eq:weighted-offsets}
+ W_i(t)=\lambda_t\left(\frac{h_i F^M}{Q}\right)
+   =\sum_{\boldsymbol\alpha\ge0}
+     \left(\prod_j\binom{e_j+\alpha_j-1}{\alpha_j}\right)
+     \Lambda(h_i F^M f^{\boldsymbol\alpha})\,
+     u^{\boldsymbol\alpha}t^{|\boldsymbol\alpha|}.
+\end{equation}
+The binomial factors are nonzero in characteristic zero. The
+coefficient test below supplies a bound \(b_i\) for each series,
+which proves Theorem~\ref{thm:main}.
+
+\section{From formal series to ordinary moments}\label{sec:jets}
+
+\begin{lemma}\label{lem:ode}
+For a fixed \(g\in B\) such that \(W(t)=\lambda_t(g)\) belongs to
+\(E[[t]]\), there is a computable integer \(b\ge0\) such that \(W=0\)
+if and only if its coefficients of orders \(0,\ldots,b\) vanish.
+Effectivity assumes that the algebraic data are given over a
+presented finitely generated field.
+\end{lemma}
+
+\begin{proof}
+The classes of \(\partial_t^j(g\omega)\) in the untwisted relative
+top de Rham space of \(\operatorname{Spec} B\) are linearly dependent
+over \(E(t)\). Here \(\partial_t\) fixes \(A\) and \(E\); it extends
+to the localization and commutes with \(d_X\). Clear denominators
+in a dependence to obtain
+\[
+             \sum_j p_j(t)\partial_t^j(g\omega)=d_X\beta,
+             \qquad p_j\in E[t],\quad \text{some }p_j\ne0 .
+\]
+The coefficientwise functional and \(\partial_t\) commute, so \(W\)
+satisfies the same nonzero homogeneous differential equation.
+The relation can be found by increasing bounds on polynomial degrees,
+derivative order, and the denominators of \(\beta\), and solving linear
+systems after clearing denominators.
+
+For each nonzero \(p_j\), let \(v_j=\operatorname{ord}_t(p_j)\)
+and \(c_j=[t^{v_j}]p_j\). Put
+\[
+  \delta=\min_{p_j\ne0}(v_j-j),\qquad
+  I(k)=\sum_{v_j-j=\delta}c_j\,k(k-1)\cdots(k-j+1).
+\]
+The empty product for \(j=0\) is \(1\). The degrees \(j\) in this sum
+are distinct, so \(I\) is nonzero. If \(W\) has first nonzero
+coefficient \(w_k\), the coefficient of \(t^{k+\delta}\) in its
+differential equation is \(I(k)w_k\). This identity also holds when a
+derivative kills the leading term, by the falling factorial in the
+formula. Hence \(I(k)=0\). A bound for the nonnegative integer roots
+of \(I\) is a valid \(b\). It can be computed from any nonzero
+rational coordinate polynomial of \(I\). To obtain one, express
+the coefficients in a basis over a rational function field in a
+transcendence basis, clear the common denominators, and choose a
+nonzero rational coefficient of the resulting monomials.
+\end{proof}
+
+This is the usual Picard--Fuchs dependence of differentiated forms
+\cite{Lairez}, used here with a formal coefficientwise functional.
+For \eqref{eq:weighted-offsets}, checking orders \(0,\ldots,b_i\)
+is precisely checking the moments with \(|\boldsymbol\alpha|\le b_i\).
+
+\subsection*{A worked test}
+Return to \(f_1=x^2\), \(f_2=x^{-1}\). Write \(a=tu_1\),
+\(b=tu_2\) and \(Q=(1-a x^2)(1-b/x)\).
+Since \(F=x\), the twisted quotient in the frame \(\dd x/x\)
+is the cokernel of \(x\partial_x+\nu\).
+Over a splitting field, \(Q\) has three distinct nonzero roots.
+Applying \(x\partial_x+\nu\) raises a pole of order \(j\) there
+to order \(j+1\) with nonzero leading coefficient.
+Thus higher poles reduce to simple poles, and no nonzero
+simple-pole part alone is exact. Laurent polynomial terms are
+exact since \(k+\nu\) is invertible for every integer \(k\).
+The values of \(1,x,x^2\) at the three roots give an invertible
+Vandermonde matrix, so \(1/Q,x/Q,x^2/Q\) represent a basis.
+
+From \(xQ=x-b-a x^3+abx^2\), their sequence vector has shift matrix
+\[
+       \begin{pmatrix}
+           0&1&0\\
+           0&0&1\\
+           -b/a&1/a&b
+         \end{pmatrix},
+       \qquad \det=-b/a.
+\]
+The only Laurent term used in this reduction is a multiple of \(x\),
+whose exactness certificate has denominator \(\nu+1\). Thus \(M=1\)
+is allowed. The first basis representative already detects failure.
+Its series at order \(M\) is \(W=(tu_2)^M/(1-ct^3)\), where
+\(c=u_1u_2^2\), and satisfies
+\[
+            t(1-ct^3)W'-(M+(3-M)ct^3)W=0.
+\]
+The indicial polynomial is \(k-M\), and the coefficient of order
+\(M\) is \(u_2^M\). For the other representatives \(x^i/Q\) the same
+formula replaces \(M\) by \(M+i\), giving bounds \(1,2,3\) for the
+three series at \(M=1\). The first already detects the ordinary
+moment \(\CT_x(f_1 f_2^2)=1\).
+
+\begin{corollary}\label{cor:fixed}
+For a prescribed \(h\), cofinal vanishing of
+\(\Lambda(hf^{\mathbf m})\) is decidable under the same effective
+hypotheses. Vanishing at every strictly positive exponent vector
+is also decidable for this \(h\).
+\end{corollary}
+
+\begin{proof}
+Let \(B_m\) be the series in \eqref{eq:offsets} with \(M=m\).
+Lemma~\ref{lem:shift} gives a scalar recurrence for \(B_m\).
+Drop unused shifts at the two ends. Beyond all specialization
+exceptions and the integer zeros of the first coefficient,
+eventual zero propagates backwards. If \(B_M=0\) at one order,
+every \(B_m\) for \(m\ge M\) is zero because the corresponding
+quadrants are nested. Thus Lemma~\ref{lem:ode} applied at any order
+\(M\) past the recurrence cutoff decides cofinal vanishing.
+To test every strictly positive exponent vector, apply the same
+series test directly to \(B_1\).
+\end{proof}
+
+\section{Computing the cohomology data}\label{sec:effective}
+
+Here is a finite computation for the cohomology used above.
+It applies both to the logarithmic twist and to the untwisted
+complex in Lemma~\ref{lem:ode}.
+
+Let \(V\) be the smooth affine variety on which the forms are
+computed. Take a smooth projective compactification \(Y\) with
+simple normal crossings boundary \(D=Y\setminus V\).
+Starting from the projective closure of an affine embedding,
+resolve its singularities and principalize the total boundary
+ideal \cite[Theorems 1.6 and 1.10]{BM}. The centers are outside
+\(V\), so the blowup charts give the compactification and its
+identification on \(V\). For the twist, the
+function \(P\) is a unit on \(V\), so \(\dd P/P\) is logarithmic
+along \(D\). On the logarithmic complex with coefficients
+\(\A_Y(bD)\), for \(b\ge0\), the residue along a component \(D_i\)
+is \(\nu\,\operatorname{ord}_{D_i}(P)-b\). No residue is a
+strictly positive integer over the field with indeterminate
+\(\nu\). The untwisted case has residues \(-b\).
+The logarithmic comparison therefore computes the required
+algebraic de Rham space from
+\(\Omega_Y^\bullet(\log D)(bD)\) with the corresponding differential
+\cite[II, Corollaires 3.14--3.15]{Deligne}. For characteristic-zero
+fields this application can be checked on a finitely generated
+model embedded in \(\mathbb C\) and passed back by flat base change.
+The hypercohomology is finite-dimensional by projectivity and
+coherence of the terms.
+
+For effectivity, embed \(Y\) in projective space and let \(H_i\)
+be the divisors of its homogeneous coordinates in a
+nondegenerate projective embedding. For nonempty
+subsets \(I\), use the finite Čech terms
+\[
+ \Gamma\!\left(Y,\,
+   \Omega_Y^p(\log D)\left(bD+(a+p)\sum_{i\in I}H_i\right)\right)
+       \qquad\text{in Čech degree } |I|-1.
+\]
+The Čech maps are signed inclusions. The differential increases
+the allowed pole order along each \(H_i\) by at most one, so it
+preserves the double complex. For each \(p\), the augmented sheaf
+complex of these terms is exact. Locally there is an \(H_i\)
+missing the point, and inserting that index gives a contracting
+homotopy. For large \(a\) the non-augmented sheaf terms are acyclic
+by Serre vanishing, since all the \(H_i\) are hyperplane divisors.
+One can search for such an \(a\) using coherent sheaf cohomology
+computed from graded presentations. The finite total complex then
+computes the hypercohomology. This construction uses the differential
+on rational forms explicitly.
+
+For a regular top form on \(V\), increase \(b\) until the form
+is a global section of \(\Omega_Y^n(\log D)(bD)\).
+In the finite model it enters diagonally in Čech degree zero.
+Its coordinates in the section spaces are found by clearing
+denominators and comparing rational forms on affine charts.
+Increasing \(a,b\) when necessary gives inclusion maps
+preserving the computed cohomology. This permits basis selection
+from localized monomials. On the affine variety, a linear relation in top cohomology
+can be certified by a differential of an \((n-1)\)-form. Searching
+over increasing degree and denominator bounds finds such certificates
+by linear algebra. Their denominators give the specialization
+cutoffs in Lemma~\ref{lem:shift}. Integer roots of determinant
+numerators and parameter denominators are bounded by the rational
+coordinate argument used in Lemma~\ref{lem:ode}.
+
+\section{Laurent constant terms}\label{sec:laurent}
+
+For a nonzero Laurent polynomial \(f\), let \(\Newt(f)\) be the
+convex hull of its exponent vectors. The Laurent constant term
+fits \eqref{eq:trace} on a torus with volume form
+\(\bigwedge_j \dd x_j/x_j\). In this case the mixed test has
+a direct polyhedral form.
+
+\begin{theorem}\label{thm:laurent}
+Let \(f_1,\ldots,f_s\) be nonzero Laurent polynomials over a
+characteristic-zero field and put \(P_i=\Newt(f_i)\).
+Cofinal vanishing against every fixed Laurent multiplier holds
+exactly when there is an integral linear weight nonnegative on
+every \(P_i\) and strictly positive on at least one entire \(P_i\).
+If this condition fails, there are positive integers \(d_i\)
+such that \(\CT(\prod_i f_i^{k d_i})\ne0\) for infinitely many \(k\).
+\end{theorem}
+
+\begin{proof}
+With such a weight, the minimum weight of the mixed product
+tends to infinity as all exponents tend to infinity. Adding
+the fixed minimum weight of any multiplier still gives strictly
+positive weight once the exponents are large, so its constant
+term is zero.
+
+Let \(P=\sum_i P_i\) and let \(C\) be the cone generated by the union
+of the \(P_i\). The rational polyhedron \(P+C\) is closed. If it
+excludes the origin, strict separation gives a rational weight
+nonnegative on \(C\) and strictly positive on \(P\). Clearing
+denominators gives the required integral weight. Thus failure
+of the weight condition gives \(0\in P+C\). By convexity,
+\[
+                P+C=\bigcup_{a_i\ge1}\sum_i a_i P_i .
+\]
+Indeed adding cone summands from \(P_i\) amounts to enlarging its
+coefficient in the Minkowski sum. More explicitly, solve
+\(\sum_{i,v}\lambda_{iv}v=0\) with \(\lambda_{iv}\ge0\) and
+\(\sum_v\lambda_{iv}\ge1\) for each \(i\), where \(v\) runs over
+the vertices of \(P_i\). The feasible system is rational, and
+\(a_i=\sum_v\lambda_{iv}\) gives the required rational coefficients.
+After scaling, we obtain positive integers \(d_i\) with
+\(0\in\sum_i d_iP_i=\Newt(\prod_i f_i^{d_i})\).
+
+The theorem of Duistermaat and van der Kallen says that a Laurent
+polynomial whose positive powers all have zero constant term has
+Newton polytope excluding the origin \cite[\S3]{DvK}.
+It applies over the coefficient field here by embedding the
+finitely generated subfield of coefficients in \(\mathbb C\).
+If the constant terms of powers of \(\prod_i f_i^{d_i}\) were
+eventually zero, take a fixed sufficiently large power.
+All positive powers of that power would have zero constant term,
+while its Newton polytope still contains the origin.
+This contradiction gives the claimed ray.
+\end{proof}
+
+For example \(x(1+y)\) and \(y+y^{-1}\) satisfy the criterion
+by weighting the \(x\)-exponent. The second phase has weight zero
+throughout its support. For the phases \(x^2,x^{-1}\) in the
+opening example, the weight condition fails, and \((1,2)\)
+is a witness direction.
+
+For general traces, a structural question is whether failure of
+cofinal vanishing against all multipliers always gives a single
+positive integer ray on which the moments for some fixed multiplier
+are nonzero infinitely often.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature
+checks, exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{BM}
+E. Bierstone and P.~D. Milman,
+\emph{Canonical desingularization in characteristic zero by blowing up
+the maximum strata of a local invariant},
+Invent. Math. \textbf{128} (1997), 207--302.
+\href{https://arxiv.org/abs/alg-geom/9508005}{arXiv:alg-geom/9508005}.
+
+\bibitem{Deligne}
+P. Deligne, \emph{\'Equations diff\'erentielles \`a points singuliers
+r\'eguliers}, Lecture Notes in Mathematics \textbf{163},
+Springer, 1970.
+\href{https://publications.ias.edu/book/export/html/355}{Author's text}.
+
+\bibitem{DvK}
+J.~J. Duistermaat and W. van der Kallen,
+\emph{Constant terms in powers of a Laurent polynomial},
+Indag. Math. (N.S.) \textbf{9} (1998), 221--231.
+\href{https://webspace.science.uu.nl/~kalle101/powers.pdf}{Author's copy}.
+
+\bibitem{Lairez}
+P. Lairez, \emph{Computing periods of rational integrals},
+Math. Comp. \textbf{85} (2016), 1719--1752.
+\href{https://arxiv.org/abs/1404.5069}{arXiv:1404.5069}.
+
+\bibitem{LS}
+F. Loeser and C. Sabbah,
+\emph{\'Equations aux diff\'erences finies et d\'eterminants d'int\'egrales
+de fonctions multiformes},
+Comment. Math. Helv. \textbf{66} (1991), 458--503.
+\href{https://doi.org/10.1007/BF02566659}{DOI: 10.1007/BF02566659}.
+
+\bibitem{QuadraticComplements}
+R. van Rijn, \emph{The Mathieu property for quadratic complements},
+manuscript.
+\end{thebibliography}
+\end{document}

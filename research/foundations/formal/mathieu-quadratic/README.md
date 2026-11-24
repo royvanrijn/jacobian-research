@@ -122,6 +122,9 @@ including lower-dimensional Newton polygons. It uses
 [LaurentFace.lean](MathieuQuadratic/LaurentFace.lean) to preserve the constant
 terms of all powers when restricting to the zero-weight face and projecting
 that face to one Laurent coordinate.
+[TorusLaurent.lean](MathieuQuadratic/TorusLaurent.lean) checks the initial
+torus integral for the constant-term generating function. The interior case
+still requires the compactification and continuation argument.
 
 [OneVariableLaurent.lean](MathieuQuadratic/OneVariableLaurent.lean) derives
 rank-one Laurent necessity from the one-variable coefficient extraction
@@ -141,9 +144,18 @@ the canonical trace comparisons. The norm-one corollary uses torus
 and infinitesimal invariance as hypotheses. The real sphere observation
 uses square detection as a hypothesis.
 
-The draft also adds statements on quadratic numerators, all regular
-multipliers, and angular phases that are outside the formal coverage
-described here.
+[AngularEndpoints.lean](MathieuQuadratic/AngularEndpoints.lean) verifies
+the draft's angular endpoint proposition using termwise integration over
+the ground field. The endpoint at height ratio one is zero or has strictly
+one-sided Laurent support. In even dimension the same conclusion holds at
+height ratio zero. [Draft.lean](MathieuQuadratic/Draft.lean) transports both
+tests to the canonical trace through its orthogonal block chart.
+
+[MarkedRecurrence.lean](MathieuQuadratic/MarkedRecurrence.lean) verifies the
+single-order test once the finite spanning family of markers and invertible
+moment recurrence are available. Establishing the twisted de Rham dimension
+bound and effective basis construction remains open in the formalization.
+The quadratic-numerator and affine-angular classifications also remain open.
 
 ## Supporting squared-normalizer construction
 

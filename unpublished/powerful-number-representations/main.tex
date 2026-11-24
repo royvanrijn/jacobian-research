@@ -1,5 +1,5 @@
 \documentclass[11pt,reqno]{amsart}
-\usepackage[margin=1.07in]{geometry}
+\usepackage[margin=1.02in]{geometry}
 \usepackage[expansion=false]{microtype}
 \usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
@@ -19,30 +19,44 @@
 \keywords{powerful numbers, rational reconstruction, bipartite graphs, Campana points}
 \begin{document}
 \begin{abstract}
-For fixed \(k\ge2\), let \(r_k(N)\) count ordered representations of \(N\)
-as a sum of two positive \(k\)-full integers. We prove
-\(r_2(N)\ll_\eps N^{3/10+\eps}\) and
-\(r_k(N)\ll_{k,\eps}N^{1/(k+1)+\eps}\) for \(k\ge3\).
-The proof bounds the number of common neighbors in bipartite graphs formed
-by omitting one coordinate of the canonical factorization.
-The graph bounds also apply to coprime differences of size at least
-\(X^{2/k}\) between \(k\)-full integers bounded by \(X\), for \(k\ge3\).
-Applying the individual graph bounds to primitive \(k\)-full triples
-\(a+b=c\le X\) gives \(O_{k,\eps}(X^{2/(k+1)+\eps})\) triples for
-every fixed \(k\ge3\). For primitive triples of orders
-\(p=r+u,\ q=r+v,\ r\) with fixed offsets, a mixed-exponent graph gives
-a saving \(2/r^2+O_{u,v}(r^{-3})\) over \(1/p+1/q\) when the four
-gcds of the first two exponents on the summand sides are at least four.
-For unrestricted fixed offsets, the surface point count gives an
-explicit leading saving greater than \(1/r^2\), reaching \(2/r^2\)
-when \(v=0\). Combining it with the graphs gives the same leading
-saving under two aligned gcd conditions and for consecutive orders.
+For primitive triples of orders \(p=r+u,\ q=r+v,\ r\), with
+any fixed \(u\ge v\ge0\), we save \(2/r^2+O_{u,v}(r^{-21/10})\)
+over the trivial exponent \(1/p+1/q\). The proof uses short
+rational monomial congruences over powerful moduli, together
+with graph and surface bounds. For sufficiently large even
+diagonal order \(k\) we save \(8/(3k^2)+O(k^{-5/2})\) over \(2/k\).
+An exact rational certificate increases the coefficient to \(4\)
+when \(6\mid k\).
+For fixed \(k\), the number of ordered representations of \(N\)
+as a sum of two positive \(k\)-full integers is
+\(O_\eps(N^{3/10+\eps})\) for \(k=2\) and
+\(O_{k,\eps}(N^{1/(k+1)+\eps})\) for \(k\ge3\).
+The graph bounds also apply to large coprime differences and
+give \(O_{k,\eps}(X^{2/(k+1)+\eps})\) primitive triples of
+diagonal order \(k\ge3\).
 \end{abstract}
 \maketitle
 
 \section{Introduction}
 A positive integer \(m\) is \(k\)-full if \(p^k\mid m\) for every prime
-\(p\mid m\). Write \(r_k(N)\) for the number of ordered pairs of positive
+\(p\mid m\). Let \(N_{p,q,r}(X)\) count triples of positive \(p\)-full,
+\(q\)-full, and \(r\)-full integers \(a,b,c\), respectively, with
+\(a+b=c\le X\) and \(\gcd(a,b,c)=1\).
+Browning and Verzobio \cite[Theorem~1.1]{BV} save
+\(1/r^2+O_{u,v}(r^{-5/2})\) over \(1/p+1/q\) when
+\(p=r+u\) and \(q=r+v\) have fixed offsets. We double the
+leading saving for every fixed pair of offsets.
+
+\begin{theorem}\label{thm:all-offsets}
+Fix \(u\ge v\ge0\), and put \(p=r+u,\ q=r+v\).
+For all sufficiently large \(r\) and every \(\eps>0\),
+\[
+ N_{p,q,r}(X)\ll_{u,v,r,\eps}
+ X^{1/p+1/q-2/r^2+O_{u,v}(r^{-21/10})+\eps}.
+\]
+\end{theorem}
+
+Write \(r_k(N)\) for the number of ordered pairs of positive
 \(k\)-full integers with sum \(N\).
 Erd\H{o}s asked whether \(r_2(N)\ll_\eps N^\eps\) for every \(\eps>0\).
 Blomer and Sch\"obel \cite[Corollary~2]{BS} proved the uniform bound
@@ -112,12 +126,26 @@ For each fixed \(k\ge3\) and every \(\eps>0\),
 \]
 \end{theorem}
 
-Let \(N_{p,q,r}(X)\) count primitive triples \(a+b=c\le X\) of
-positive \(p\)-full, \(q\)-full, and \(r\)-full integers, respectively.
-Browning and Verzobio's Theorem~1.1 also gives a saving
-\(1/r^2+O_{u,v}(r^{-5/2})\) over \(1/p+1/q\) when \(p=r+u\)
-and \(q=r+v\) have fixed offsets. Omitting different exponents
-on the two sides gives the following bound for some such families.
+For even diagonal orders, grouping all even-exponent coordinates
+gives an additional estimate. The stronger bound for multiples of
+six uses an exact finite certificate.
+
+\begin{theorem}\label{thm:even-diagonal}
+For all sufficiently large even \(k\) and every \(\eps>0\),
+\[
+ N_k(X)\ll_{k,\eps} X^{2/k-\sigma/k^2+O(k^{-5/2})+\eps},
+ \qquad
+ \sigma=\begin{cases}
+ 4,&6\mid k,\\
+ 8/3,&6\not\mid k .
+ \end{cases}
+\]
+The implied constant in \(O(k^{-5/2})\) is absolute.
+\end{theorem}
+
+For some fixed offsets, smaller errors in the exponent of
+Theorem~\ref{thm:all-offsets} follow from graph bounds with
+different omissions on the two sides.
 
 \begin{theorem}\label{thm:mixed-campana}
 Let \(p\ge q\ge r\ge2\) satisfy
@@ -168,6 +196,19 @@ every \(\eps>0\),
  X^{1/p+1/q-2/r^2+O(r^{-5/2})+\eps}.
 \]
 The implied constant in \(O(r^{-5/2})\) is absolute.
+\end{theorem}
+
+\begin{theorem}\label{thm:monomial}
+Fix an integer \(A\ge1\). Let \(e,f\) be distinct exponents in
+\([r,r+A]\), let \(n\) be \(r\)-full, and let \(K\) be a unit modulo
+\(n\). Suppose \(n^{1/(3r)}\le Y\le n^{2/r}\).
+For all sufficiently large \(r\) in terms of \(A\), the number of
+pairs of positive reduced rationals \(U,V\), of height at most
+\(Y\) and with numerators and denominators coprime to \(n\),
+satisfying \(U^e/V^f\equiv K\pmod n\) is
+\[
+                       O_{A,r,\eps}\bigl(Y^{O_A(r^{-1/10})+\eps}\bigr).
+\]
 \end{theorem}
 
 \section{Recovering common neighbors}
@@ -654,6 +695,137 @@ graphs give \(A_i+B_i\le2/3+O(r^{-1})\) for \(i=0,1\), and
 \]
 This proves the graph part of Theorem~\ref{thm:fixed-offset}.
 
+\subsection{Even diagonal orders}\label{sec:even-diagonal}
+
+We apply the preceding normalization with \(r=k\), all offsets zero,
+and the competitive range \(\Delta\ge2/k-5/k^2\). The proofs of
+\eqref{eq:consecutive-cost} and \eqref{eq:consecutive-max} apply
+with this cutoff: every \(S_T=1/k+O(k^{-2})\), every \(m_T=O(1)\),
+and the three maxima are bounded below by an absolute positive constant.
+In this subsection \(O(k^{-1/2})\) and \(O(k^{-1})\) have absolute
+constants.
+
+For two sides, let \(a,b\) be the masses of omitted coordinate
+sets whose exponents have a common divisor \(g\ge2\). Fix the
+third summand and the retained coordinates on those two sides.
+The remaining equation has the signed form \(P u^g+Q v^g=n\)
+with nonzero coefficients and with \(|P|u^g,|Q|v^g\le X\).
+The positive roots \(u,v\) determine the complete summands
+and thus their canonical coordinates. Lemma~\ref{lem:edge} gives
+\[
+ \Delta\le S_T+(1-a)S_i+(1-b)S_j,\qquad
+ a+b\le1+O(k^{-1}).
+\]
+Write \(E_i=\sum_{j\ {\rm even}}T_{i,j}\) for the even-index
+mass of side \(i\). Since \(k\) is even, we can take \(g=2\)
+for the entire even group on each side. Thus
+\(E_i+E_j\le1+O(k^{-1})\) for every distinct pair.
+If \(\alpha_i=\max_j T_{i,j}\), then
+\[
+ m_i\ge 3-E_i-2(T_{i,0}+T_{i,1})
+       \ge3-E_i-4\alpha_i .
+\]
+Summing and using \eqref{eq:consecutive-max} gives
+\(\sum_i m_i\ge 7/2-O(k^{-1/2})\), hence \(D\ge 7/3-O(k^{-1/2})\).
+
+For grouped omissions including high indices, the height calculation
+also holds. Indeed, on side \(i\) the weighted sum over its omitted
+indices is \(S_i(ka+\sum_{\rm omitted}jT_{i,j})=a+O(k^{-1})\)
+because the full first moment is bounded. Thus
+\(2\log_X H=(2/g)(a+b+O(k^{-1}))\).
+For \(g=2\), declare the height bounded whenever \(a+b<1-L/k\),
+where \(L\) is an absolute constant chosen large enough.
+For \(g\ge3\) the preceding fixed-edge bound gives a strict height
+margin. The graph alternatives \eqref{eq:consecutive-pair} then hold.
+
+We now prove \(D\ge8/3-O(k^{-1/2})\). Put
+\(x_i=T_{i,0}\), \(y_i=T_{i,1}\), \(z_i=T_{i,2}\), and \(w_i=x_i+z_i\).
+If \(x_i=O(k^{-1})\), the pointwise coefficient inequality
+\[
+ m_i\ge\tfrac52-\tfrac52x_i-\tfrac32 y_i-\tfrac12 z_i
+       \ge\tfrac52-2\alpha_i-O(k^{-1})
+\]
+gives \(D\ge m_i+(m_j+m_l)/2\ge3-O(k^{-1/2})\) by the
+bounds for \(m_j,m_l,E_j+E_l\) and the sum of the maxima.
+We may therefore take all \(x_i\), and thus all \(w_i\), above
+the small-mass threshold in the graph alternatives.
+
+For each ordered pair \(i\ne j\), omit coordinate \(0\) on side \(i\)
+and coordinates \(0,2\) on side \(j\). Call \(i\to j\) available
+if \(x_i+w_j<1-L/k\). An available arc gives
+\(x_i+2w_j\le1+O(k^{-1})\). If either orientation of the
+three-cycle consists of available arcs, then
+\(\sum_i (x_i+2w_i)\le3+O(k^{-1})\). Since
+\(\sum_i x_i,\sum_i y_i\le1+O(k^{-1/2})\), the inequality
+\(m_i\ge3-2x_i-2y_i-w_i\) gives
+\(\sum_i m_i\ge4-O(k^{-1/2})\).
+
+Otherwise choose an unavailable arc from each of the two
+orientations. For any such arc \(i\to j\),
+\[
+ x_i+w_j\ge1-O(k^{-1}),\qquad E_i=x_i+O(k^{-1}),
+ \qquad E_j=w_j+O(k^{-1}),
+\]
+by \(E_i+E_j\le1+O(k^{-1})\). If the two arcs are reverses,
+we get \(x_i+x_j\ge1-O(k^{-1})\), contradicting the lower
+bound for the third maximum and \eqref{eq:consecutive-max}.
+If they have the same source \(i\), then \(w_j+w_l\le1+O(k^{-1})\)
+forces \(x_i\ge1/2-O(k^{-1})\). In this case
+\(m_j+m_l\ge1+4\alpha_i-O(k^{-1/2})\ge3-O(k^{-1/2})\).
+If they have the same sink \(i\), then \(E_j+E_l=x_j+x_l+O(k^{-1})\).
+Adding the height inequalities gives
+\[
+ 2-O(k^{-1})\le x_j+x_l+2w_i
+ \le 1+3\alpha_i+O(k^{-1/2}),
+\]
+so \(\alpha_i\ge1/3-O(k^{-1/2})\).
+Now \(m_j+m_l\ge6-(E_j+E_l)-4(\alpha_j+\alpha_l)
+\ge1+5\alpha_i-O(k^{-1/2})\ge8/3-O(k^{-1/2})\).
+This proves the even-order bound by \eqref{eq:consecutive-cost}.
+
+For \(6\mid k\), use the same inequalities and also the graph omitting
+indices \(0,3\) on both sides, with \(g=3\). Its height is bounded by
+the fixed-edge estimate above. Here the finite optimization pools all
+even indices \(j\ge5\) at \(6\), and all odd indices \(j\ge5\) at \(5\).
+The resulting model has three probability vectors, caps on each of
+their five explicit entries by \(\alpha_i\), the sum of the caps
+at most one, the three parity pair bounds and the three pair-cost
+bounds for \(D\). For each grouped graph the certificate can split
+according to
+\[
+ a=0,\qquad b=0,\qquad
+ (2a+b\le1,\ a+2b\le1),\qquad a+b\ge1 .
+\]
+The last branch is needed only when a quadratic grouping can lose
+height. The allowed quadratic groups are subsets of \(\{0,2,4,6\}\),
+where the slot \(6\) denotes the entire even tail. Equal
+explicit singleton indices also have bounded height, by the
+lower bound for the third maximum. Pooling decreases the
+costs and preserves the parity masses.
+
+The accompanying rational certificate proves \(D\ge4\) in the
+exact model. At each leaf it gives a linear combination of the
+branch and model constraints certifying either \(D\ge4\) or
+infeasibility with positive separation. The checker verifies the
+multiplier signs, the coordinate inequalities and the certified
+value in rational arithmetic. The same multipliers apply with the
+displayed \(O(k^{-1/2})\) errors because the certificate is finite
+and independent of \(k\). Infeasible leaves still have positive
+separation for sufficiently large \(k\), and all other leaves give
+\(D\ge4-O(k^{-1/2})\).
+Equation~\eqref{eq:consecutive-cost} finishes the proof of
+Theorem~\ref{thm:even-diagonal}.
+
+The parity and surface constraints alone admit the symmetric
+vector \((1/3,1/3,1/6,1/6)\) with \(D=7/3\).
+For \(k\equiv2,4\pmod6\), the symmetric vector
+\((1/3,1/3,0,1/3)\) gives \(D=8/3\) and satisfies every
+leading-order grouped common-divisor inequality. Its occupied
+powers \(k,k+1,k+3\) are pairwise coprime, so every admissible
+nonzero group has mass \(1/3\).
+For odd \(k\), the symmetric vector \((1/3,1/3,1/3)\) likewise
+satisfies the surface and grouped graph inequalities with \(D=2\).
+
 \section{Consecutive orders}
 Now specialize the preceding box constraints to \(u=2,v=1\).
 Call a mass small if it is at most \(K/r\), increasing \(K\) to
@@ -756,6 +928,179 @@ gcds with \(r+1\) are one in these residues. The grouped pair
 has \(s+C_0=57/65\) and \(2s+C_0=99/65\), which violates
 its graph inequality.
 
+\section{Short rational congruences over powerful moduli}
+Write the height of a positive reduced fraction as the maximum
+of its numerator and denominator. For consecutive exponents
+\(e=f+1\), an exact rational fiber \(U^e/V^f=K_0\) containing
+\((U_0,V_0)\) consists of pairs
+\[
+                         U=U_0 T^f,\qquad V=V_0 T^e
+\]
+with \(T\) rational and positive. This follows by comparing the
+prime valuations of \(U/U_0\) and \(V/V_0\). If both coordinates
+have height at most \(Y\), then \(T^e=V/V_0\) has height at most
+\(Y^2\), giving \(O(Y^{4/e})\) pairs in the fiber. We now count
+the full modular fiber, without an exact-equality restriction.
+
+\subsection{Multiplicative amplification}
+For a finite set \(\mathcal S\) of pairs of positive rationals
+of height at most \(Y\), let \(\mathcal S^{(t)}\) be the set of
+coordinatewise products of \(t\) elements of \(\mathcal S\).
+For each fixed positive integer \(t\) and \(\eps>0\),
+\begin{equation}\label{eq:rational-amplification}
+               |\mathcal S^{(t)}|\gg_{t,\eps}|\mathcal S|^t Y^{-t\eps}.
+\end{equation}
+To see this, assign an independent sign to each prime in each
+of the two coordinates. Keep a pair if every prime dividing a
+numerator is assigned the positive sign and every prime dividing
+a denominator the negative sign. Each pair has
+\(O(\log Y/\log\log(3Y))\) prime occurrences counted without
+multiplicity over its four integers. Averaging therefore gives
+a subset of size \(|\mathcal S|Y^{-o(1)}\) on which products
+have no numerator-denominator cancellation in either coordinate.
+Given the reduced product pair on this subset, its four integers
+are the products of the original numerators and denominators.
+The divisor bound gives \(Y^{o(1)}\) ways to split these integers
+into ordered \(t\)-tuples. This proves \eqref{eq:rational-amplification}.
+
+\subsection{A determinant obstruction in one residue class}
+Assume \(e>f\), since we can interchange coordinates and invert
+\(K\), and put \(d=e-f\). Set
+\[
+ h=\lfloor r^{1/10}\rfloor,\quad
+ \delta=6A/h,\quad t=\lceil 4/\delta\rceil,\quad
+ Z=Y^t,\quad M=(h+1)^2,\quad J=\binom M2 .
+\]
+Applied to solutions of the original congruence,
+\eqref{eq:rational-amplification} gives pairs of height at most
+\(Z\) satisfying the same equation with \(K^t\) in place of \(K\).
+We count these pairs, denoting the new constant simply by \(K\).
+For \(T=U/V\) the two congruences
+\[
+                    U^d\equiv K T^{-f},\qquad V^d\equiv K T^{-e}
+                       \pmod n
+\]
+follow from the equation. Distinct solution pairs have distinct
+rational \(T\). Indeed, equality of \(T\) would force congruence of
+the \(d\)-th powers of both coordinates, and \(Z^{2d}<n\) makes
+each such congruence an equality.
+
+Consider the \(M\) monomials \(U^{di}V^{dj}\), \(0\le i,j\le h\).
+The \(M\) weights \(fi+ej\) are distinct: a collision would require
+a nonzero difference in an index of size at least \(f/\gcd(e,f)\),
+which exceeds \(h\) for large \(r\) because \(\gcd(e,f)\le d\le A\).
+Subtract these weights from their maximum and order the resulting
+exponents \(w_1<\cdots<w_M\). The alternating polynomial
+\[
+            \det(T_i^{w_j})_{i,j\le M}
+              =\prod_{i<j}(T_j-T_i)\,\Phi(T_1,\ldots,T_M)
+\]
+has \(\Phi\) in \(\mathbb Z[T_1,\ldots,T_M]\).
+On the diagonal,
+\[
+ \Phi(z,\ldots,z)=\kappa z^{\sum_jw_j-J},\qquad
+ \kappa=\det\left(\binom{w_j}{i-1}\right)_{i,j\le M}
+        =\frac{\prod_{i<j}(w_j-w_i)}{\prod_{i=0}^{M-1}i!}>0 .
+\]
+The first identity follows by Taylor expansion at \(z\) and
+division by the Vandermonde product; the second follows by
+the leading coefficients of the binomial polynomials.
+In particular, \(\log\kappa=O_A(h^4\log r)\).
+
+\subsection{Selecting a divisor and counting the classes}
+Put \(B_*=\lceil(4J+2)/\delta\rceil\). Write
+\(n=\prod_\ell\ell^{k_\ell}\), with \(k_\ell\ge r\).
+For every prime \(\ell\mid n\) and large \(r\),
+\[
+            \lfloor k_\ell/B_*\rfloor\ge v_\ell(\kappa)+1,
+\]
+since \(B_*=O_A(h^5)\) and \(B_*(1+\log\kappa)=o_A(r)\).
+The divisor using all exponents \(\lfloor k_\ell/B_*\rfloor\)
+is at least \(n^{1/(2B_*)}\), which exceeds \(Z^\delta\)
+for large \(r\): \(\delta t\le5\) and \(Z\le n^{2t/r}\).
+Build a divisor \(L\) by taking an initial factor
+\(\ell^{v_\ell(\kappa)+1}\) when including a prime and then
+increasing exponents by one up to the indicated caps. Stop when
+\(L\ge Z^\delta\). Since \(\ell\le n^{1/r}\le Z^\delta\),
+each multiplication is by at most \(\kappa Z^\delta\), so
+\[
+                     Z^\delta\le L\le\kappa Z^{2\delta}.
+\]
+For a prime power modulus this selects a power of its base.
+For a general powerful modulus, let \(n_0\) contain the full
+powers in \(n\) of primes dividing \(L\). Then \(L^{B_*}\mid n_0\),
+so \(L^J\mid n_0\) and \(n_0\ge Z^{4J+2}\).
+
+Suppose \(M\) solution pairs lie in one unit class of \(T\) modulo
+\(L\). For every prime dividing \(L\), the quotient \(\Phi\)
+has valuation exactly \(v_\ell(\kappa)\), by its diagonal
+evaluation and the choice of exponent in \(L\). The numerator of
+each nonzero difference \(T_j-T_i\) has absolute value at most
+\(Z^4\), since \(T_i\) has height at most \(Z^2\).
+It follows that \(n_0\) does not divide the rational determinant
+\(\det(T_i^{w_j})\), since divisibility would imply that \(n_0\)
+divides the nonzero product of these numerators times \(\kappa\),
+of absolute value at most \(\kappa Z^{4J}<n_0\).
+Here denominators are units and \(Z\) is sufficiently large
+in terms of \(r,A\). On the other hand, \(L^J\) divides the
+determinant because every difference is divisible by \(L\).
+
+Clear denominators row by row in the evaluation matrix of the
+\(M\) monomials \(U^{di}V^{dj}\). The resulting integer determinant
+is congruent modulo \(n_0\) to \(\det(T_i^{w_j})\) times a unit,
+using the two congruences for \(U^d,V^d\).
+It is therefore nonzero and divisible by \(L^J\).
+Its absolute value is at most \(M! Z^{2dhM}\), since clearing
+the two denominators to exponent \(dh\) in each row bounds every
+entry by \(Z^{2dh}\). But \(L^J\ge Z^{\delta J}\) and
+\(\delta J/M=3A(h+2)>2dh\), a contradiction for sufficiently
+large \(Z\). Thus each class contains at most \(M-1\) pairs.
+
+There are \(O_{A,r}(Z^{2\delta})\) amplified pairs.
+By \eqref{eq:rational-amplification} the original count is
+\(O_{A,r,\eps}(Y^{2\delta+\eps})\).
+Since \(2\delta=O_A(r^{-1/10})\), this proves
+Theorem~\ref{thm:monomial}.
+
+\section{The doubled leading saving for all fixed offsets}
+We apply Theorem~\ref{thm:monomial} to singleton omissions of
+the same index \(0\) or \(1\) on the \(p\)- and \(q\)-full sides,
+fixing the \(r\)-full target \(n=c\). For \(u=v\), use
+Theorem~\ref{thm:fixed-offset}. Otherwise \(e>f\) and their
+difference \(u-v\) is fixed. We work in competitive boxes as in
+Section 6, so \(n\ge X^{1-O_{u,v}(1/r)}\) and the quotients of
+two omitted coordinates have height at most \(O(X^{1/r})\).
+They fit within the height \(Y=n^{2/r}\) for large \(r,X\).
+
+For two edges incident to a common right vertex, write omitted
+coordinates \(a_i=d_0\alpha_i,\ c_i=h_0\gamma_i\), where each
+pair of Greek coordinates is coprime. The ratios
+\(U=\alpha_1/\alpha_2,\ V=\gamma_1/\gamma_2\) satisfy
+\(U^e/V^f\equiv P_2/P_1\pmod n\), and
+\[
+ d_0^e(P_1\alpha_1^e\gamma_2^f-P_2\alpha_2^e\gamma_1^f)
+                        =n(\gamma_2^f-\gamma_1^f).
+\]
+The coefficient of \(d_0^e\) cannot vanish for distinct left
+vertices, as then \(\gamma_1=\gamma_2=1\) and the first complete
+summands coincide. This identity recovers \(d_0\) and then
+\(Qh_0^f\), which recovers the common vertex.
+It follows that the codegrees are
+\(O_{u,v,r,\eps}(X^{O_{u,v}(r^{-11/10})+\eps})\).
+
+The fixed-edge equation \(Pa^e+Qc^f=n\) is absolutely irreducible:
+as a polynomial in \(c\), it is Eisenstein at a simple root of
+\(n-Pa^e\) over \(\C[a]\). Bombieri--Pila
+\cite[Theorem~5]{BP} in an enclosing square of side \(O(X^{1/r})\)
+give multiplicity \(O_{u,v,r,\eps}(X^{1/r^2+\eps})\).
+Thus the graph alternatives \eqref{eq:consecutive-pair}
+hold for both aligned pairs, with error \(O_{u,v}(r^{-1/10})\)
+and with a mass of that size allowed in the small-coordinate
+branches. The cost calculations in Section 6.2 use only
+bounded coefficients, so \(D\ge u+v+2-O_{u,v}(r^{-1/10})\).
+This gives Theorem~\ref{thm:all-offsets} by
+\eqref{eq:consecutive-cost}.
+
 \section{Limits of the fixed-offset box constraints}
 For \(u>v\), the surface-only cost bounds in
 Theorem~\ref{thm:fixed-offset} are optimal under
@@ -798,6 +1143,63 @@ when \(r\equiv2\pmod{30}\). Hence these vectors satisfy every
 leading-order grouped graph alternative. The smaller offset
 pairs are covered by \(v=0\), the aligned conditions for \(u=v\),
 or Theorem~\ref{thm:consecutive}.
+
+\subsection{A strict cardinality obstruction}
+For \(r\equiv2\pmod{30}\), replace the preceding vectors by their
+\(9/10\), \(1/10\) mixture with
+\((8,8,9)/25,\ (1,1,1)/3,\ (1,1,0,1,0,1)/4\), respectively.
+Their supports are the same. The maxima sum to \(2983/3000\)
+and the largest of the two directed terms from any available
+nonzero grouped pair is \(749/750\). To check the latter, it
+suffices to check singleton pairs, since each group contains
+at most one positive mass. Among the occurring exponents,
+compatibility can be checked at \(r=32,62\), since each gcd
+of different exponents is a divisor of their difference,
+which is at most five. The new costs are
+\[
+          (m_A,m_B,m_C)=\tfrac1{1000}(4004,1928,1953),\qquad
+          D=5957/1000.
+\]
+
+These strict inequalities occur in an abstract cardinality model.
+On side \(T\), take a Cartesian product of coordinate sets of
+sizes \(\lfloor X^{S_T T_j}\rfloor\), with \(S_T=(r+m_T)^{-1}\).
+Write \(N_T\) for its cardinality and \(N_*=\max_TN_T\).
+Choose each triple independently with probability
+\(\theta/N_*\) for a sufficiently small positive absolute
+\(\theta\). The expected number of triples is
+\(\theta N_A N_B N_C/N_*\).
+The expected number of pairs of chosen triples sharing two
+full vertices is at most \(3\theta/2\) times that expectation.
+The number of chosen triples is concentrated about its mean.
+By Markov's inequality, with probability bounded away from
+zero, deleting the triples in all such conflicts leaves
+\[
+                 \gg_r X^{2/r-(5957/1000)/r^2+O(r^{-3})}
+\]
+triples with each pair of full vertices in at most one triple.
+
+Before deletion, consider an available graph in a fixed slice
+with omitted masses \(a,b\). Its expected edge multiplicity is
+\(O_r(X^{(a+b-1)/r+O(r^{-2})})\). For two distinct left vertices
+the expected number of common neighbors is
+\(O_r(X^{(2a+b-1)/r+O(r^{-2})})\): each right vertex must
+receive a triple from each of two disjoint sets of coin tosses.
+Different right vertices also use disjoint sets of tosses.
+The opposite codegree uses \(a+2b\). Groups containing only
+zero masses obey the same bounds since all positive masses
+are less than \(1/2\). Finally, any slice with one omitted
+coordinate per side has expected size
+\(O_r(X^{(\alpha+\beta+\chi-1)/r+O(r^{-2})})\) or smaller.
+Each expectation thus tends to zero by a fixed power of \(X\)
+for large \(r\). Binomial tails and a union bound over the
+polynomially many slices, edges and vertex pairs bound all
+these multiplicities and codegrees by constants with
+probability tending to one. Deletion only decreases them.
+This gives the claimed large abstract model even with the
+fiber cardinality bounds used in the surface step. The
+congruence input in Theorem~\ref{thm:monomial} supplies
+information beyond those cardinality constraints.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,

@@ -265,13 +265,22 @@ over \(K(t)\). Bases of the full actual space \(V\) are
 \kappa(x)=\sum_{q\ge0}\frac{a_q}{q+1/2}x^q .
 \]
 Thus the full rank is \(3m/2\) for even \(m\), and \(3m-1\) for odd
-\(m\). Over \(\mathbb C\), the elements of \(V\) that converge as Laurent
+\(m\). With \(R=K[t,t^{-1}]\) and either displayed basis \(\mathcal B\),
+the exact polynomial-time lattice is
+\[
+M[1/t]=R\mathcal B,\qquad M=(R\mathcal B)\cap K[[t]].
+\]
+Over \(\mathbb C\), the elements of \(V\) that converge as Laurent
 germs are exactly \(\mathbb C(t)\), and the convergent elements of
 \(M\) are exactly \(\mathbb C[t]\). The maximal globally regular
 actual differential submodule is the constant connection
 \(\mathbb C(t)\cdot1\). These are results for the explicit phase \(P_m\).
 They do not address the general higher-rank realization gap
 \(\texttt{GAP-GAUSSIAN-REGULAR-TRANSCENDENTAL}\).
+The case \(m=1\) is outside this derivation because \(e=0\). It is
+the same phase as the \(m=1\) case of the
+[binomial full-image theorem](GAUSSIAN_BINOMIAL_MIXED_FULL_IMAGE.md#6-the-m1-exception-is-completely-classified),
+which gives the global lattice with basis \((1,f_1)\).
 
 ### The exact order of the unit operator
 
@@ -398,6 +407,55 @@ trivial connection over \(K(t)\), with horizontal class
 lift would be a constant Laurent germ, while the span of \(\kappa\)
 and the unit cyclic space has zero intersection with the constant
 line by the independence just proved.
+
+### The polynomial-time lattice
+
+The generation proof used \(t\) and \(x\) monomial shifts, polynomial
+Euler operators, and finite Laurent corrections. The differential
+operator for \(g\) has leading Euler coefficient \(-Cx\), a unit in
+\(R=K[t,t^{-1}]\), so every higher Euler derivative reduces into the
+displayed basis over \(R\). The extra period \(\kappa\) for odd \(m\)
+was obtained from an original marker by subtracting elements of
+this same Laurent span of the constant and cyclic terms. Therefore
+the basis elements belong to \(M[1/t]\), every original marker
+belongs to their \(R\)-span, and \(M[1/t]=R\mathcal B\).
+
+Origin saturation follows from the same backward shift as in the
+[binomial full-image theorem](GAUSSIAN_BINOMIAL_MIXED_FULL_IMAGE.md#5-why-the-generic-frame-is-also-the-exact-global-r-frame).
+Here is the argument over \(K\). Let \(X=(Z,W,Y)\) and let \(C\)
+be the normalized Wick covariance. For a polynomial \(A_i\), put
+\(T_i A_i=X_i A_i-\sum_j C_{ij}\partial_j A_i\). These polynomials
+have expectation zero by Wick Stein. Conversely every centered
+polynomial is a sum of terms \(T_i A_i\): subtract such terms to
+remove the leading monomials, using their leading terms \(X_i A_i\),
+and descend in degree. The remaining constant has expectation
+zero. Stein with the exponential amplitude gives
+\[
+\Phi[T_i A_i]=t\sum_j C_{ij}\Phi[A_i\partial_j P_m].
+\]
+Thus \(h\mapsto (h-h(0)f)/t\) preserves original marker periods, and
+it preserves the polynomial-time image because
+\[
+\frac{a h-a(0)h(0)f}{t}
+ =a\frac{h-h(0)f}{t}+h(0)\frac{a-a(0)}t f
+\qquad (a\in K[t]).
+\]
+If \(h\in R\mathcal B\) is regular as a formal germ at zero, some
+\(t^N h\) belongs to \(M\). Iterated backward shifts divide by \(t\)
+while the initial coefficient is zero, and give \(h\in M\).
+Consequently \(M=(R\mathcal B)\cap K[[t]]\).
+
+For explicit membership, write \(h=\sum_{b\in\mathcal B}r_b(t)b(t)\)
+in its unique Laurent coordinates and take \(N\ge0\) such that
+\(t^N r_b(t)\in K[t]\) for all \(b\). Membership in \(M\) is equivalent
+to the finite equations
+\[
+[t^j]\sum_{b\in\mathcal B}\bigl(t^N r_b(t)\bigr)b(t)=0,
+\qquad 0\le j<N .
+\]
+The coefficients of the basis series in these equations come from
+the displayed factorial formula, Euler derivatives and \(\kappa\).
+This is a finite principal-part test on the Laurent coordinates.
 
 ### Convergence and regularity in the full marked space
 

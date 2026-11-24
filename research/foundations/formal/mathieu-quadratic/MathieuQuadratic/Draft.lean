@@ -1,4 +1,5 @@
 import MathieuQuadratic.AlgebraicLaurentTrace
+import MathieuQuadratic.AngularEndpoints
 import MathieuQuadratic.CanonicalTrace
 import MathieuQuadratic.Classification
 import MathieuQuadratic.Extension
@@ -215,6 +216,29 @@ theorem DiagonalTraceModel.counterexample {M : ℕ} {q : Aˣ} {trace : A →ₗ[
   rw [hm] at hp
   exact hp
 
+/-- The angular endpoint proposition in an orthogonal rank-two splitting.
+An even height rank is equivalent to an even total dimension. -/
+theorem DiagonalTraceModel.angular_endpoints {M : ℕ} {q : Aˣ} {trace : A →ₗ[K] K}
+    (model : DiagonalTraceModel M q trace) (hM : 0 < M)
+    (f : Polynomial (AddMonoidAlgebra K ℤ))
+    (safe : Safe trace (model.coordinates.symm
+      (angularPhase (normUnit model.plane model.heightCoeffs) (height model.plane model.heightCoeffs) f))) :
+    LaurentOneSided (f.eval 1) ∧ (Even (M + 2) → LaurentOneSided (f.eval 0)) := by
+  let τ := trace.comp model.coordinates.symm.toLinearMap
+  let U := normUnit model.plane model.heightCoeffs
+  let S := height model.plane model.heightCoeffs
+  have hs : Safe τ (angularPhase U S f) := by
+    intro g
+    obtain ⟨n, hn⟩ := safe (model.coordinates.symm g)
+    refine ⟨n, fun m hm ↦ ?_⟩
+    change trace (model.coordinates.symm (g * (angularPhase U S f) ^ m)) = 0
+    rw [map_mul, map_pow]
+    exact hn m hm
+  obtain ⟨upper, lower⟩ := draft_angular_endpoints M hM τ U S
+    (model.geometric.complementTrace.normalizer _ _ hM) f hs
+  refine ⟨upper, fun he ↦ lower ?_⟩
+  simpa [Nat.even_add] using he
+
 /-- Theorem 1 for a norm coordinate ring with its trace comparisons. The
 large-rank conclusion retains the prescribed norm-power marker. -/
 theorem draft_dimension_classification (N : ℕ) (hN : 0 < N)
@@ -339,15 +363,12 @@ theorem draft_algebraicTrace_witness_of_form (q : QuadraticForm K (I → K))
   exact ⟨trace, ⟨model⟩, by simpa only [trace, LinearMap.comp_apply, AlgEquiv.toLinearMap_apply,
     map_one] using hg.normalized, _, model.counterexample hM⟩
 
-/-- The canonical trace has the draft's geometrically nonpower witness
-and prescribed norm-power multiplier in every dimension at least three. -/
-theorem draft_canonical_trace_witness_of_form (q : QuadraticForm K (I → K))
+/-- The canonical trace in any dimension M + 2 admits the orthogonal
+plane and height chart used for the draft's angular statements. -/
+theorem exists_canonical_diagonalTraceModel_of_form (q : QuadraticForm K (I → K))
     (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
-    (M : ℕ) (hM : 0 < M) (hdim : Fintype.card I = M + 2) :
-    ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
-      NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
-      AllOrderWitness (quadraticTrace q hn (by omega)) F
-        ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ M) := by
+    (M : ℕ) (hdim : Fintype.card I = M + 2) :
+    Nonempty (DiagonalTraceModel M (quadraticNormUnit q) (quadraticTrace q hn (by omega))) := by
   have hdim' : Module.finrank K (I → K) = M + 2 := by
     simpa [Module.finrank_fintype_fun_eq_card] using hdim
   obtain ⟨a, b, ⟨iso⟩⟩ := exists_plane_height_diagonal q hn M hdim'
@@ -388,6 +409,18 @@ theorem draft_canonical_trace_witness_of_form (q : QuadraticForm K (I → K))
     rw [localizationCoordinateEquiv_polynomial, heq, normUnit_val]
   let model : DiagonalTraceModel M (quadraticNormUnit q) τ :=
     ⟨a', b', e, hu, ha 0, hb, ht.symm ▸ complementAlgebraicTrace_isGeometric a' b' ha hb⟩
+  exact ⟨model⟩
+
+/-- The canonical trace has the draft's geometrically nonpower witness
+and prescribed norm-power multiplier in every dimension at least three. -/
+theorem draft_canonical_trace_witness_of_form (q : QuadraticForm K (I → K))
+    (hn : (QuadraticMap.associated (R := K) q).SeparatingLeft)
+    (M : ℕ) (hM : 0 < M) (hdim : Fintype.card I = M + 2) :
+    ∃ F : Localization.Away (quadraticCoordinatePolynomial q),
+      NonpowerUpToUnits (includeRight (R := K) (A := AlgebraicClosure K) F) ∧
+      AllOrderWitness (quadraticTrace q hn (by omega)) F
+        ((quadraticNormUnit q : Localization.Away (quadraticCoordinatePolynomial q)) ^ M) := by
+  obtain ⟨model⟩ := exists_canonical_diagonalTraceModel_of_form q hn M hdim
   exact ⟨_, model.counterexample hM⟩
 
 private theorem chart_trace_isMathieu {J : Type*} [Fintype J] [DecidableEq J] [Nonempty J]

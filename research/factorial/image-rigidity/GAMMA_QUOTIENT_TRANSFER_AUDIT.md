@@ -578,7 +578,141 @@ dimension classification `MOMENTS-GVC-CLASSIFICATION`.
 
 
 
-## 6. Other factorial obligations
+## 6. Regular Euclidean chains on diagonal profiles
+
+For every integer \(r=u\ge0\) and every \(n\ge1\), the actual
+linked pair \(J_n,J_{n+1}\) has a regular monic Euclidean chain:
+its remainders have degrees \(n-1,n-2,\ldots,0\).
+This proves the diagonal restriction of
+`GAP-FACTORIAL-LINKED-BETA-REGULAR-CHAIN`.
+
+Set \(\lambda=nr+1\), and define \(C_j^\lambda(x)\) by
+\[
+ (1-2xv+v^2)^{-\lambda}=\sum_{j\ge0}C_j^\lambda(x)v^j.
+\]
+The physical coefficient polynomial is
+\(g_n(s)=[v^n](1-v)^{-\lambda}(1-sv)^{-\lambda}\).
+For \(s=e^{2i\theta}\) with \(0<\theta<\pi\), substitution of
+\(e^{i\theta}v\) in the generating series gives
+\(g_n(s)=e^{in\theta}C_n^\lambda(\cos\theta)\).
+The upper order uses \(\lambda+r\). We show strict
+interlacing in \(\theta\) despite this change of parameter.
+
+Differentiating the series in \(v\) gives
+\[
+ (j+1)C_{j+1}^\lambda
+ =2(j+\lambda)x C_j^\lambda-(j+2\lambda-1)C_{j-1}^\lambda.
+\]
+Taking leading terms gives the monic Jacobi recurrence with
+zero diagonal and offdiagonals \(a_j(\lambda)\) where
+\[
+ a_j(\lambda)^2=\frac14\left(1-\frac{\lambda(\lambda-1)}
+                  {(j+\lambda)(j+\lambda-1)}\right).
+\]
+For \(\lambda>1\), these are positive and below \(1/2\).
+The row sums put the Jacobi spectrum strictly in \((-1,1)\).
+The recurrence determines an eigenvector from its first
+entry, so the symmetric matrix has simple eigenvalues.
+For \(r=0\), the recurrence gives
+\(C_n^1(\cos\theta)=\sin((n+1)\theta)/\sin\theta\). The
+consecutive lists of equally spaced interior zeros then
+strictly interlace.
+
+Assume \(r\ge1\), and put \(N=n+\lambda\).
+The Gegenbauer differential equation follows by applying
+\((1-x^2)\partial_x^2-(2\lambda+1)x\partial_x+
+(v\partial_v)^2+2\lambda v\partial_v\) to the generating
+series, which gives zero. In angle coordinates, set
+\(U_n=(\sin\theta)^\lambda C_n^\lambda(\cos\theta)\). Then
+\[
+ U_n''+Q_nU_n=0,\quad
+ Q_n=N^2-\lambda(\lambda-1)\csc^2\theta,\quad
+ Q_{n+1}-Q_n=(r+1)(2N+r+1)-r(2\lambda+r-1)\csc^2\theta.
+\]
+Let \(\sin^2\theta_0=z_0=r(2\lambda+r-1)/
+((r+1)(2N+r+1))\), \(0<\theta_0<\pi/2\), and take the
+turning point \(\theta_t\in(0,\pi/2)\) of \(Q_n\).
+For \(d_0=2nr+r+1\), exact substitution gives
+\[
+ Q_0=Q_n(\theta_0)=
+ \frac{n^2(r^2-1)+n(r^2+2r-1)+r+1}{d_0},\qquad
+ (N-Q_0)d_0=n^2(r+1)^2+2n(r+1).
+\]
+Thus \(0<Q_0<N\) and \(\theta_t<\theta_0\), including
+\(n=r=1\), where \(Q_0=1\) and \(N=3\). Also
+\(\sin\theta_t=\sqrt{\lambda(\lambda-1)}/N
+\ge r/(r+2)\ge1/3\), and \(z_0\le r/(r+1)\) gives
+\(\cos\theta_0\ge1/\sqrt{r+1}\).
+Since \(z_0-\sin^2\theta_t=z_0 Q_0/N^2\), the mean-value
+theorem applied to \(\sin^2\theta\) gives
+\[
+ (\theta_0-\theta_t)\sqrt{Q_0}
+ \le \frac32\sqrt{r+1}\,\frac{z_0 Q_0^{3/2}}{N^2}
+ <\frac32\sqrt{(r+1)/N}<\frac\pi2 .
+\]
+This bound holds uniformly as \(\lambda\) grows.
+
+Near zero, \(U_n\) is a positive constant times
+\(\theta^\lambda(1+O(\theta^2))\), since
+\(C_n^\lambda(1)=(2\lambda)_n/n!>0\).
+It is positive with positive derivative up to \(\theta_t\):
+while \(U_n>0\), the equation gives \(U_n''\ge0\) there.
+Start at \(\theta_t\) with this positive value and derivative.
+The solution for the constant potential \(Q_0\) stays
+positive up to \(\theta_0\) by the strict angle bound.
+The variation-of-constants integral for
+\(U_n''+Q_0U_n=(Q_0-Q_n)U_n\) has a nonnegative sine
+kernel and nonnegative integrand up to any putative first
+zero. Hence \(U_n\) stays positive through \(\theta_0\).
+
+By symmetry, all lower gaps lie in
+\((\theta_0,\pi-\theta_0)\), where \(Q_{n+1}>Q_n\).
+Each consecutive pair of lower zeros contains an upper zero.
+Indeed, if the upper solution has no interior zero, choose
+both solutions positive in the gap. Then
+\((U_n' U_{n+1}-U_n U_{n+1}')'
+=(Q_{n+1}-Q_n)U_n U_{n+1}>0\),
+whereas this Wronskian is nonnegative at the left lower
+zero and nonpositive at the right.
+
+The extreme upper zeros lie strictly outside the lower ones.
+For \(1\le j\le n-1\), the trailing \(n\times n\) principal
+block of the upper Jacobi matrix has offdiagonal
+\(a_{j+1}(\lambda+r)>a_j(\lambda)\). In the formula for
+\(a_j^2\), the denominator in the subtracted term equals
+\((1+j/\lambda)(1+j/(\lambda-1))\) after normalization.
+Both factors strictly increase when \(j\) becomes \(j+1\)
+and \(\lambda\) becomes \(\lambda+r\), since
+\(\lambda>jr\) and \(\lambda-1>jr\).
+For \(n\ge2\), the Rayleigh quotient on the positive top
+eigenvector of the lower matrix shows that the trailing
+block has a strictly larger largest eigenvalue. A positive
+top vector exists because replacing entries by absolute
+values does not decrease the quotient, and its eigenvector
+equation prevents any zero entry. The full upper matrix
+has largest eigenvalue at least that of its trailing block.
+For \(n=1\) the upper eigenvalue is already positive and
+the lower root is zero. Symmetry gives the other endpoint.
+Together with the interior comparisons this proves strict
+interlacing.
+
+Finally, the [actual linked beta formula](canonical-density/moment_pair_obstructions.md)
+takes \(s=z/(z-1)\) from the coefficients \(z-1,z\).
+The point \(s=1\) is not a root since the coefficients of
+\(g_n\) and \(g_{n+1}\) are positive. For \(s=e^{2i\theta}\),
+\(z=(1-i\cot\theta)/2\), so the \(J\)-roots interlace on
+the line \(\Re z=1/2\). The fixed affine change
+\(z=1/2+ix\) and monic rescaling give real monic
+polynomials and preserve Euclidean degrees. At the lower
+roots the first remainder takes alternating nonzero
+values of the upper polynomial. Thus it has degree
+\(n-1\) and interlaces the lower polynomial, and this
+argument repeats down to a constant. Unequal profiles
+retain a separate regular-chain obligation.
+
+
+
+## 7. Other factorial obligations
 
 The fixed-shape auxiliary production matrix in the
 [cyclic Wronskian note](gap_three_hurwitz_structure.tex) already
@@ -593,7 +727,7 @@ terms. Thus `FACTORIAL-GAP3-HURWITZ-TN`,
 The explicit eventual cutoff for the ordinary univariate binomial
 concerns a different support family.
 
-## 7. Cumulant tails and zero-geometry tests
+## 8. Cumulant tails and zero-geometry tests
 
 The [Nuttall proof, Sections 2–6](https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/nuttall-cumulants/PROOF.md)
 derives signs for the theta cumulants for all sufficiently large
@@ -723,6 +857,14 @@ determinant controls on the profiles (2,3), (2,5), (3,10), (4,19),
 Direct polynomial expansion matched (4) on 49 pairs
 of integer parameters. The determinant proofs above give the
 universal identities.
+
+Direct Wick expansion matched 72 two-block marker identities.
+Exact quotient calculations confirmed sharp nilpotence on 36 pairs
+and checked the angular and Laplacian cutoffs in a nonreduced example.
+Rational division verified 96 diagonal Euclidean chains at
+r=0,1,2,5,16,1000 and n=1 through 16. Symbolic expansion checked
+the Gegenbauer generating differential identity and the displayed
+identities for the potential at the crossover angle.
 
 The finite interpolation in (6) was checked at all 23 points by
 rational elimination on Sylvester matrices. An independent short

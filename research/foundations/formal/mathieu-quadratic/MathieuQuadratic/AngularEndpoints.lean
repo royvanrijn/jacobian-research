@@ -49,9 +49,8 @@ private theorem angularIntegral_upper_endpoint (M : ℕ) (hM : 0 < M) (p : L[X])
       cases n with
       | zero => simp only [monomial_zero_left, derivative_C, mul_zero, Nat.cast_zero, zero_smul, map_zero]
       | succ n =>
-        rw [derivative_monomial_succ, ← monomial_one_one_eq_X, monomial_mul_monomial,
-          Algebra.smul_def, map_natCast, Nat.cast_succ]
-        congr 1 <;> ring
+        rw [derivative_monomial_succ, X_mul_monomial, Algebra.smul_def, map_natCast,
+          Nat.cast_succ, mul_comm c]
     rw [hd, eval_monomial, one_pow, mul_one, angularIntegral_monomial,
       angularIntegral_monomial, smul_comm (angularWeight M n), ← smul_assoc, ← smul_assoc,
       ← smul_assoc, ← add_smul]
@@ -254,20 +253,14 @@ private theorem safe_angularTrace_of_safe_realization (M : ℕ) (trace : A →�
   rw [← angularTrace_eq_realization M trace U S h, map_mul, map_pow]
   exact hn m hm
 
-/-- The upper-endpoint proposition for the norm and height chart. -/
-theorem draft_angular_upper_endpoint (M : ℕ) (hM : 0 < M) (trace : A →ₗ[K] K)
-    (U : Aˣ) (S : A) (h : NormalizerTrace M trace U S) (f : L[X])
-    (safe : Safe trace (angularPhase U S f)) : LaurentOneSided (f.eval 1) :=
-  angular_upper_endpoint_oneSided M hM f (safe_angularTrace_of_safe_realization M trace U S h f safe)
-
 /-- The draft's angular endpoint proposition on the block chart. -/
 theorem draft_angular_endpoints (M : ℕ) (hM : 0 < M) (trace : A →ₗ[K] K)
     (U : Aˣ) (S : A) (h : NormalizerTrace M trace U S) (f : L[X])
     (safe : Safe trace (angularPhase U S f)) :
     LaurentOneSided (f.eval 1) ∧ (Even M → LaurentOneSided (f.eval 0)) :=
-  ⟨draft_angular_upper_endpoint M hM trace U S h f safe,
-    fun even ↦ angular_lower_endpoint_oneSided M hM even f
-      (safe_angularTrace_of_safe_realization M trace U S h f safe)⟩
+  let vanishing := safe_angularTrace_of_safe_realization M trace U S h f safe
+  ⟨angular_upper_endpoint_oneSided M hM f vanishing,
+    fun even ↦ angular_lower_endpoint_oneSided M hM even f vanishing⟩
 
 end Realization
 

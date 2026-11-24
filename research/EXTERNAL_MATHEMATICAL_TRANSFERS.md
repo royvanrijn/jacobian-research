@@ -56,6 +56,73 @@ The repository's claim IDs refer to [the current mathematical DAG](MATH_STATUS.j
   form could avoid the full norm cost.
   [Sharp cost and moving-window version](arithmetic/EXTERNAL_HECKE_ARTIN_GOLDBACH_TRANSFER_AUDIT.md#sharp-hardy-cost-over-all-supported-test-shapes)
 
+## Transfers from individual proof steps
+
+- Browning–Verzobio combine a determinant cover, a resultant, a proper-power
+  test on the normalization, and a degree-sensitive projection. Bounding each
+  valuation by the degree of the zero or pole divisor improves their
+  coefficient-uniform rectangular count. In the fixed-offset surface argument
+  this lowers the leading finite-size loss from \(3r^{-3/2}\) to
+  \((2+O(r^{-1}))r^{-3/2}\).
+  [Divisor-degree proof and box transfer](arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md)
+- The generalized Vandermonde in the powerfulness manuscript admits a primewise
+  estimate from counting pairs of grid weights in each residue class. This gives
+  the smaller all-fixed-offset error \(O_{u,v}(r^{-17/8}(\log r)^{1/8})\).
+  The same square grid has a degree-budget barrier toward the target \(r^{-5/2}\).
+  [Primewise determinant proof](arithmetic/POWERFUL_MONOMIAL_VALUATION_REFINEMENT.md)
+- Mao–Wang–Zheng's symmetry argument fails for unequal linked beta profiles.
+  Direct beta moment identities instead give the expected degrees and positive
+  leading coefficients for both initial Euclidean remainders. The fixed-shape
+  Jacobi ODE gives an individual discriminant product. The varying-parameter
+  Jacobi formula applies to the actual consecutive pair, where shared-branch
+  comparison and endpoint separation remain to be proved.
+  [Exact pivots, source hypotheses and Jacobi receiver](factorial/image-rigidity/LINKED_BETA_UNEQUAL_PROFILE_PIVOTS.md)
+- Ordered beta grids and gamma-product density estimates transfer to nonlinear
+  Gaussian monomial fibres. The original Wick markers recover the full
+  differential rank and the polynomial-time lattice. The raw coefficients
+  have strictly positive Hankel minors, even in the range of moment
+  indeterminacy. The only globally regular actual submodule in this family
+  is the constant line. The inverse kernel also gives unit divergence for
+  arbitrary nonconstant spatial coefficients on these monomial fibres,
+  using the decay of every inverse branch at infinity.
+  [Exact rank, convergence and moment law](moments/vanishing/GAUSSIAN_NONLINEAR_MONOMIAL_FIBRE_FULL_IMAGE.md)
+
+## Further consequences of the transferred proofs
+
+- The determinant depends on the relative Taylor change of the Vandermonde
+  quotient. Cauchy–Binet bounds that change using the largest weight, even
+  in examples where the valuation of the diagonal quotient is of order
+  \(h^3\log r\). The short-congruence loss becomes
+  \(O_A((\log r/r)^{1/5})\). Splitting targets by their large-prime part
+  improves the unrestricted fixed-offset error to \(O_{u,v}(r^{-11/5})\).
+  [Taylor expansion and target split](arithmetic/POWERFUL_MONOMIAL_TAYLOR_REFINEMENT.md)
+- Poles at infinity and equal-exponent fibres constrain the proper-power
+  degree in the surface projection. Nearby distinct powers have a
+  reducible-slice exponent of order \(1/r\), and the equally powered case
+  needs only \(W^2+W M^{1/r}\). Optimizing the actual side lengths also
+  gives an explicit \(r^{-5/2}\) error coefficient for offsets \((u,0)\).
+  [Pole degrees and fixed-offset constants](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md)
+- Fraction-free division proves positive third and fourth Euclidean
+  remainders at every eligible linked-beta order. The exact checks extend
+  full chains through starting order nine and consecutive coprimality
+  through starting order ten, for every nonnegative integer profile.
+  [Later pivots and exact replay](factorial/image-rigidity/LINKED_BETA_LATER_PIVOTS.md)
+- Parity normalization and circular residues extend the full convergent
+  Gaussian core to every polynomial \(c(Z)\) in \(Wc(Z)\prod_iY_i^{k_i}\).
+  A nonzero scalar shift eliminates the globally regular core. The exact
+  diagonal calculation covers total active exponent at most two and,
+  for constant \(c\) or \(Z^2\mid c\), arbitrary diagonal coefficients.
+  [Full-core proof and diagonal descent](moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_CONVERGENT_CORE.md)
+
+## Bridges between programmes
+
+| Source and receiver | What transfers |
+| --- | --- |
+| Random-prime intensities and prescribed-prime binary variance | The excluded-prime factor at order two equals the corresponding prescribed-prime singular-series factor. Its shifted correlation gives the full mixed local constant for two possibly different prescribed-prime semigroups. The known large power-window variance transfers this constant to actual binary counts, uniformly over sublinear power shifts. The short-width diagonal in the four-form energy problem remains open. In the reverse direction, classwise means give a sharp second-moment criterion for the random-prime intensity law. Its missing upper bound is a two-copy additive energy with shared exposed primes. [Local factors, shifted counts and energy criterion](arithmetic/SHIFTED_LOCAL_CORRELATIONS_AND_SEMIGROUP_ENERGY.md) |
+| Binary Gamma coprimality and Gaussian vanishing | Blocks of dimensions two and \(d\) realize the two Gamma variables. An eligible marker in the \(d\)-block shifts the second shape and preserves the first. Consecutive zero moments force sharp coefficient-ideal nilpotence over a \(\mathbb Q\)-algebra. Angular separation then gives an explicit original-marker cutoff for a homogeneous family and its specified power of the Laplacian. [Two-block Gaussian and Laplacian proof](factorial/image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md#5-two-gaussian-blocks-fixed-markers-and-sharp-nilpotence) |
+| Rotational Gaussian divergence and the regular actual-image problem | For \(P_m=W(1+Z^m)Y\), explicit original-marker tails give the full generic rank, a Laurent basis, and the exact polynomial-time lattice. The convergent generic core is rational and the maximal globally regular submodule is the constant line. This excludes this family from the transcendental regular realization search. [Exact actual-image calculation](moments/vanishing/GAUSSIAN_W_AFFINE_ROTATIONAL_DIVERGENCE.md) |
+| Polynomial Hurwitz factorizations and the even alternating Laurent passport | The pure census supplies a polynomial acceptance bound for a tree with one added edge. The leaf-pair estimate transfers to the even unicyclic passport. In even degree \(n\ge12\) a removable factor peels to the full alternating passport in degree \(n-2\), and the allowable extensions use two distinct anchors on the lower long cycle. Small-orbit exclusion and equivalence of those anchor extensions are the remaining inputs to this route. [Even Laurent reduction](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md#the-even-alternating-laurent-passport) |
+
 ## Stone's criterion and the location of a singleton fibre
 
 In the [pinned Stone note](https://github.com/1337isnot1337/solved-conjectures/blob/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef/research/stone-nonproper-locus/README.md),
