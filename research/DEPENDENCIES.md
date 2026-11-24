@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 7274 claim/source nodes, 5824 implication rules and 115 documented equivalence components. conditional: 23; falsified: 19; open: 348; proved: 6884.
+The graph contains 7282 claim/source nodes, 5828 implication rules and 115 documented equivalence components. conditional: 23; falsified: 19; open: 349; proved: 6848; stale: 43.
 
 Inspect the current graph from the repository root:
 
@@ -4026,7 +4026,7 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11.
 
-**Computed obligation progress:** 99 open; 18 proved / discharged.
+**Computed obligation progress:** 99 open; 15 proved / discharged; 3 stale.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -4494,19 +4494,19 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITH-PRIMITIVE-NORM-MINUS19-EXACT](arithmetic/PRIMITIVE_NORM_MINUS19_EXACT.md) | proved | partial | none in declared routes |
 | [ARITH-PRIMITIVE-NORM-HEEGNER-REFINED-BOUNDS](arithmetic/PRIMITIVE_NORM_HEEGNER_REFINED_BOUNDS.md) | proved | partial | none in declared routes |
 | [ARITH-PRIMITIVE-NORM-MINUS43-EXACT](arithmetic/PRIMITIVE_NORM_MINUS43_EXACT.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-SUM-CAMPANA-POINTWISE](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
+| [ARITH-POWERFUL-SUM-CAMPANA-POINTWISE](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-SUM-CAMPANA-EXPONENT-OPTIMIZATION (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale) |
 | [ARITH-ERDOS943-SIX-CYCLE-MEAN-AND-IMPLICATION](arithmetic/ERDOS_943_SIX_CYCLES.md) | proved | partial | none in declared routes |
 | [ARITH-ERDOS943-SIX-CYCLE-KERNEL-RECOVERY](arithmetic/ERDOS_943_SIX_CYCLES.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-SUM-LARGE-COPRIME-DIFFERENCES](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-TRIPLES-MIXED-GCD-BOUND](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-CONSECUTIVE-TRIPLES-SAVING](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
+| [ARITH-POWERFUL-SUM-LARGE-COPRIME-DIFFERENCES](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-SUM-SIGNED-DYADIC-OPTIMIZATION (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale) |
+| [ARITH-POWERFUL-TRIPLES-MIXED-GCD-BOUND](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-MIXED-TRIPLES-DYADIC-OPTIMIZATION (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale) |
+| [ARITH-POWERFUL-CONSECUTIVE-TRIPLES-SAVING](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-CONSECUTIVE-COST-CERTIFICATES (stale); ARITH-POWERFUL-CONSECUTIVE-GEOMETRIC-HEIGHT-MARGIN (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale) |
 | [ARITH-RANDOM-PRIME-LOCAL-INTENSITIES-PARITY](arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md) | proved | partial | none in declared routes |
 | [ARITH-RANDOM-PRIME-CRITICAL-RESIDUE-GAP-LOWER-BOUND](arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md) | proved | partial | none in declared routes |
 | [ARITH-HURWITZ-ODD-CENSUS-REMOVABLE-FRACTION](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) | proved | partial | none in declared routes |
 | [ARITH-CK-THREE-NORMS-IN-SHORT-WINDOWS](arithmetic/SHIFTED_PRODUCT_AND_CORRELATION_TRANSFER_AUDIT.md) | proved | partial | none in declared routes |
 | [ARITH-ODD-CLASS-PRIME-POOLS-WITH-CM-SPLITTING](arithmetic/EXTERNAL_HECKE_ARTIN_GOLDBACH_TRANSFER_AUDIT.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-FIXED-OFFSET-SURFACE-SAVING](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-FIXED-OFFSET-ALIGNED-SAVING](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
+| [ARITH-POWERFUL-FIXED-OFFSET-SURFACE-SAVING](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-FIXED-OFFSET-SURFACE-MOMENTS (stale) |
+| [ARITH-POWERFUL-FIXED-OFFSET-ALIGNED-SAVING](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-FIXED-OFFSET-ALIGNED-CERTIFICATES (stale); ARITH-POWERFUL-CONSECUTIVE-GEOMETRIC-HEIGHT-MARGIN (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale) |
 | [ARITH-HURWITZ-REMOVABLE-FACTOR-LAW-AND-ORBIT-CRITERION](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) | proved | partial | none in declared routes |
 | [ARITH-RANDOM-PRIME-CRITICAL-GAP-BOUND-TRUNCATION](arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md) | proved | partial | none in declared routes |
 | [ARITH-GOLDBACH-SHARP-HARDY-WINDOW-NORM-COST](arithmetic/EXTERNAL_HECKE_ARTIN_GOLDBACH_TRANSFER_AUDIT.md) | proved | partial | none in declared routes |
@@ -4518,18 +4518,18 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITH-FBS-MIXED-SHIFTED-POWER-WINDOW-COUNT-CORRELATION](arithmetic/SHIFTED_LOCAL_CORRELATIONS_AND_SEMIGROUP_ENERGY.md) | proved | partial | none in declared routes |
 | [ARITH-HURWITZ-TREE-PAIRING-EXPONENTIAL-REMOVABLE-FACTOR](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) | proved | partial | none in declared routes |
 | [ARITH-HURWITZ-EVEN-LAURENT-EXPONENTIAL-LEAF-REDUCTION](arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
+| [ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-MONOMIAL-FIBER-FROM-DIVISOR-AND-AMPLIFICATION (stale); ARITH-POWERFUL-RATIONAL-PAIR-AMPLIFICATION (stale); ARITH-POWERFUL-SHORT-MONOMIAL-DIVISOR-DETERMINANT (stale) |
 | [ARITH-POWERFUL-ALL-FIXED-OFFSETS-DOUBLED-LEADING-SAVING](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-TRIPLES-ADAPTIVE-FOURIER-BOUND](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-TRIPLES-GROUPED-FOURIER-SAVING](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | proved | partial | none in declared routes |
-| [ARITH-ABC-OMITTED-COORDINATE-BOX-BOUND](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | proved | partial | none in declared routes |
+| [ARITH-POWERFUL-TRIPLES-ADAPTIVE-FOURIER-BOUND](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | stale | partial | DERIVE-ARITH-POWERFUL-ADAPTIVE-FOURIER-BOUND (stale) |
+| [ARITH-POWERFUL-TRIPLES-GROUPED-FOURIER-SAVING](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | stale | partial | DERIVE-ARITH-POWERFUL-GROUPED-FOURIER-SAVING (stale) |
+| [ARITH-ABC-OMITTED-COORDINATE-BOX-BOUND](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | stale | partial | DERIVE-ARITH-ABC-OMITTED-COORDINATE-BOX-BOUND (stale); ARITH-ABC-UNIFORM-BINARY-POWER-FIBER (stale) |
 | [ARITH-ERDOS943-SHORT-WITNESS-KERNEL-PAIR-BOUND](arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
-| [ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) | proved | partial | none in declared routes |
-| [ARITH-ABC-EXCEPTIONAL-SET-SEVEN-TWELFTHS](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | proved | partial | none in declared routes |
-| [ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING](../unpublished/powerful-number-representations/main.tex) | proved | partial | none in declared routes |
-| [ARITH-ABC-GROUPED-FULLOC-1747-3000](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) | proved | partial | none in declared routes |
-| [ARITH-ABC-EXCEPTIONAL-SET-1747-3000](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | proved | partial | none in declared routes |
+| [ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-EVEN-DIAGONAL-FROM-PARITY-AND-GROUPED-GRAPHS (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-CONSECUTIVE-GEOMETRIC-HEIGHT-MARGIN (stale) |
+| [ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) | stale | partial | ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale) |
+| [ARITH-ABC-EXCEPTIONAL-SET-SEVEN-TWELFTHS](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | stale | partial | DERIVE-ARITH-ABC-SEVEN-TWELFTHS-COUNT (stale) |
+| [ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING](../unpublished/powerful-number-representations/main.tex) | stale | partial | ARITH-POWERFUL-TWO-POWER-FROM-MONOMIALS-AND-PARITY (stale); ARITH-POWERFUL-MONOMIAL-FIBER-FROM-DIVISOR-AND-AMPLIFICATION (stale); ARITH-POWERFUL-RATIONAL-PAIR-AMPLIFICATION (stale); ARITH-POWERFUL-SHORT-MONOMIAL-DIVISOR-DETERMINANT (stale); ARITH-POWERFUL-CONSECUTIVE-GEOMETRIC-HEIGHT-MARGIN (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale); ARITH-POWERFUL-EVEN-DIAGONAL-FROM-PARITY-AND-GROUPED-GRAPHS (stale) |
+| [ARITH-ABC-GROUPED-FULLOC-1747-3000](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) | stale | partial | ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale); DERIVE-ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND (stale); ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY (stale); ARITH-ABC-UNIFORM-BINARY-POWER-FIBER (stale) |
+| [ARITH-ABC-EXCEPTIONAL-SET-1747-3000](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | stale | partial | DERIVE-ARITH-ABC-COUNT-GROUPED-FULLOC (stale); DERIVE-ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND (stale); ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY (stale); ARITH-ABC-UNIFORM-BINARY-POWER-FIBER (stale); ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale) |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -4566,6 +4566,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-ARITH-ERDOS943-ONE-THIRD-CARRY-AVERAGE | mathematical | open | partial | Obtain the independent short-box carry or exact-square average sum of A_b over squarefree b comparable to B bounded by O_epsilon(M^(2/3+epsilon)/B) in the stated active boxes. At the balanced one-third scale this asks for O_epsilon(B^(1+epsilon)) amplified product pairs per modulus on average. The kernel-graph one-third theorem bypasses this estimate. | GAP-ARITH-ERDOS943-ONE-THIRD-CARRY-AVERAGE (open) |
 | GAP-ARITH-ERDOS943-POINTWISE-KERNEL-PAIR-SAVING | mathematical | open | partial | At T comparable to N^(1/5), prove O_epsilon(T^(2-eta+epsilon)) compatible distinct squarefree kernel pairs with unit fraction witnesses of height O(T^2), for some absolute 0<eta<=1. The current mean is O_epsilon(T^(1+epsilon)) and the pointwise construction attains order T. This estimate would improve the square-full balanced box via the kernel graph. | GAP-ARITH-ERDOS943-POINTWISE-KERNEL-PAIR-SAVING (open) |
 | GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS | mathematical | open | partial | Prove the subpolynomial pointwise bound for ordered representations of N as the sum of two positive square-full integers in Erdős #943. The two graph bounds and the mixed cubic estimate give O_epsilon(N^(3/10+epsilon)). | GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS (open) |
+| GAP-ARITH-ERDOS943-UNIFORM-LIFTED-CURVE-AUXILIARY-COVER | mathematical | open | partial | OPEN method gate: construct and sum a suitable coefficient/shift-uniform auxiliary-curve cover for the prescribed-sum balanced compatibility slices beyond the fixed/small-h ranges in the inspected source. This route also needs a valid saving calculation; it is not necessary for every possible improvement. All existing pointwise/full-pair/C6states remain unchanged. | GAP-ARITH-ERDOS943-UNIFORM-LIFTED-CURVE-AUXILIARY-COVER (open) |
 | GAP-ARITH-FROBENIAN-BINARY-EXCEPTION-REMOVAL | mathematical | open | partial | Establish the global FBS-U lower bound for all compatible sufficiently large targets in its remaining instances. The q3 lower-count scale is now proved at2/3<theta<1, including matching singular-factor comparability, while smaller q3 windows and the remaining every-target C12 power windows remain open. Unrestricted and macroscopic C12 counts are separately proved. No pointwise leading-constant asymptotic is required for this lower-bound goal. Current pointwise and variance campaigns are alternative approaches, not necessary logical stages; power exceptional sets do not remove every exceptional target. | GAP-ARITH-FROBENIAN-BINARY-EXCEPTION-REMOVAL (open) |
 | GAP-ARITH-FROBENIAN-BINARY-PRIORITY | verification | open | partial | Historical priority remains unaudited for these internally derived results. Dq gives lower counts at theta>1/3 with arbitrary logarithmic exceptional savings; Vq gives fixed-width variance; VqPower gives full-count power variance and energy at5/6<theta<1 with the stated logarithmic errors. Semigroup-scale density one at theta<=1/3, residual variance/energy at0<theta<=5/6, general power-saving full-count asymptotic rates and every-target FBS-U remain open in this programme, without a complete literature-frontier claim. EisValueCounts improves the one-ring value count but does not reach H/log. The original 1993 Iwaniec-Pomykala audit is complete: conditional quartic sums and unconditional differences are direct antecedents. Later removal of the growing-shift hypothesis, balanced adaptations and broader priority remain to be checked; no novelty is asserted. D12Power is a separately accepted lower-count theorem at q12,theta=.99; its novelty and stronger extensions are not asserted. EisSemigroupScale now achieves the q3 pointwise order in its stated power/central ranges, with no leading-constant or priority claim. SimNormPower provides full weighted C12 means/marginals outside power exceptions only; source comparisons with2019 q4 existence and fixed-body LM asymptotics are contextual. | GAP-ARITH-FROBENIAN-BINARY-PRIORITY (open) |
 | GAP-ARITH-INTEGER-HASSE-EXISTENCE | mathematical | open | partial | Construct an integral fixed-Phi Hasse target or prove none exists. Its quadratic resolvent must ramify at3, while the resolvent-order conductor f must be prime to3 and squarefree supported on primes1mod3. Exact Q2 criteria cover evenpi and oddpi/evenc; the odd/odd branch retains two TAR3 patterns. | GAP-ARITH-INTEGER-HASSE-EXISTENCE (open) |
@@ -4640,13 +4641,13 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-ARITH-FBS-SHARP-FOUR-FORM-ENERGY | mathematical | open | partial | For every fixedq>=3 and fixed0<theta<=5/6, H=X^theta, prove sum_(X<N<=2X)sum_(abs(2a-N)<=H,abs(2c-N)<=H)f(a)f(N-a)f(c)f(N-c)<=(K_q+o(1))XH^2 m_X^4, with positive summands or f extended by0 and K_q=L product_bad(1+(p-1)^(-3)). Its matching lower bound is proved. Eq makes this residual sharp upper bound equivalent to the residual centered variance. The unspecified F8 constant is insufficient. VqPower separately proves energyK_q+O((log X)^(-1/8)) in5/6<theta<1; neither the residual bound nor Dq is inferred from that complementary-range theorem. The exact completed-row theorem acts on different sextic coefficients and uses a common column vector. The available transfer needs a centered additive-energy identity or a controlled common-vector decomposition. | FBS-POWER-VARIANCE-ENERGY-EQUIVALENCE (open) |
 | GAP-ARITH-FROBENIAN-BINARY-MAIN-TERM | mathematical | open | partial | Complete the residual full-count power-window problem for each fixed q>=3 and every fixed 0<theta<=5/6, with H=X^theta. Prove centered unweighted variance o(X H^2 m_X^4) with the exact singular-series normalization, or the sharp four-form upper energy (E). Equation (7) makes the two assertions equivalent. VqPower gives the complementary fixed range 5/6<theta<1 with a logarithmic saving; Aq and Pq give the first moment and fixed-prime projections at every fixed positive power. Dq gives independent lower counts for theta>1/3, and D12Power gives a power-saving lower-count exception bound only for q=12 and theta=99/100. A power-saving variance and an every-compatible-target theorem are separate open assertions. | FBS-POWER-VARIANCE-ENERGY-EQUIVALENCE (open) |
 | GOAL-ARITH-FBS-POWER-CENTERED-VARIANCE | goal | open | partial | For every fixedq>=3 and fixed0<theta<=5/6, H=X^theta, prove sum_(X<N<=2X)abs(r_(q,H)(N)-H m_X^2 S(N))^2=o(XH^2 m_X^4), with the established explicit model and mean normalization. This residual full-count power-window statement remains open. VqPower separately proves the complementary range5/6<theta<1 with a logarithmic variance saving. Dq remains a lower-bound theorem with its own wider range and exceptional savings. | FBS-POWER-VARIANCE-ENERGY-EQUIVALENCE (open) |
-| GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT | mathematical | proved / discharged | partial | Improve the exceptional-set exponent below 7/12 near radical budget one. The FullOC program attains 7/12, and the full-side common-degree graph has minimum permitted exponent 83/132 at the symmetric obstruction. A stronger inequality or a different decomposition must exclude that point. | none in declared routes |
+| GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT | mathematical | stale | partial | Improve the exceptional-set exponent below 7/12 near radical budget one. The FullOC program attains 7/12, and the full-side common-degree graph has minimum permitted exponent 83/132 at the symmetric obstruction. A stronger inequality or a different decomposition must exclude that point. | DERIVE-ARITH-ABC-STRICT-IMPROVEMENT-FROM-SPARSE-ROOTS (stale); DERIVE-ARITH-ABC-COUNT-GROUPED-FULLOC (stale); DERIVE-ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND (stale); ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY (stale); ARITH-ABC-UNIFORM-BINARY-POWER-FIBER (stale); ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale) |
 | GAP-PRIMITIVE-NORM-EXACT-20 | mathematical | proved / discharged | partial | The former exact primitive x^2+5y^2 exception problem is resolved affirmatively through the grounded ARITH-D20-EXACT-SUMSET-AFFIRMATIVE route: the five local mod8 classes have exactly exceptions3,4. The complete finite scan and all-range core/seed proof are retained; external review and historical priority are separate. | none in declared routes |
 | GAP-EISENSTEIN-BALANCED | mathematical | open | partial | Whether every positive n=2 modulo 6 other than 8 and 44 has a thirds-balanced A+A representation. The retained centered searches cover n<100000000 with precisely those exceptions. EisBalancedReduction proves both split-prime multiplier families 8p and 44p, and covers every all-inert target n>=2^60. The complete conjecture is now equivalent to balanced coverage of all-inert n=2 modulo 6 in [100000000,2^60), which remains unchecked. A least additional counterexample would lie in that set; this does not locate every possible larger counterexample. | EIS-ORDINARY-THIRDS-EXCEPTION-INTERVAL-EQUIVALENCE (open) |
 | GAP-EISENSTEIN-BALANCED-INERT-CORES | mathematical | open | partial | Prove thirds-balanced A+A coverage for every integer n in 100000000<=n<2^60 with n=2 modulo 6 and every prime divisor 2 modulo 3. This finite set has not been checked. By EisBalancedReduction, covering it is equivalent to the full ordinary exception list {8,44}. If any additional counterexample exists, a least one lies here; arbitrary larger counterexamples are not asserted to lie in this interval. | EIS-ORDINARY-THIRDS-EXCEPTION-INTERVAL-EQUIVALENCE (open) |
 | GAP-EISENSTEIN-BALANCED-UNCHECKED-INTERVAL | mathematical | open | partial | The earlier sufficient obligation is thirds-balanced ordinary coverage for every n=2 modulo 6 in [100000000,2^(2^15)). It remains open and now follows from the narrower all-inert residual assertion in [100000000,2^60), by the proved prime-family, inert-tail and scaling reduction. The old exact finite certificate and coarse explicit tail retain their original scopes. | EIS-ORDINARY-THIRDS-EXCEPTION-INTERVAL-EQUIVALENCE (open) |
-| GAP-ARITH-POWERFUL-FIXED-OFFSET-DOUBLE | mathematical | proved / discharged | partial | For every fixed u>=v>=0 and sufficiently large r, primitive triples of orders (r+u,r+v,r) are O_(u,v,r,epsilon)(X^(1/p+1/q-2/r^2+O_(u,v)(r^(-21/10))+epsilon)). | none in declared routes |
-| GAP-ARITH-POWERFUL-CONSECUTIVE-EVEN-DOUBLED-SAVING | mathematical | proved / discharged | partial | The consecutive-order grouped graph proves the leading saving 2/r^2 for sufficiently large even r, with O(r^(-5/2)) in the exponent. | none in declared routes |
+| GAP-ARITH-POWERFUL-FIXED-OFFSET-DOUBLE | mathematical | stale | partial | For every fixed u>=v>=0 and sufficiently large r, primitive triples of orders (r+u,r+v,r) are O_(u,v,r,epsilon)(X^(1/p+1/q-2/r^2+O_(u,v)(r^(-21/10))+epsilon)). | ARITH-POWERFUL-UNIVERSAL-LEADING-SAVING-TO-GAP (stale) |
+| GAP-ARITH-POWERFUL-CONSECUTIVE-EVEN-DOUBLED-SAVING | mathematical | stale | partial | The consecutive-order grouped graph proves the leading saving 2/r^2 for sufficiently large even r, with O(r^(-5/2)) in the exponent. | ARITH-POWERFUL-CONSECUTIVE-THEOREM-TO-EVEN-GAP (stale); ARITH-POWERFUL-CONSECUTIVE-COST-CERTIFICATES (stale); ARITH-POWERFUL-CONSECUTIVE-GEOMETRIC-HEIGHT-MARGIN (stale); ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF (stale); ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF (stale) |
 | GAP-PRIMITIVE-NORM-POINTWISE-LEADING | mathematical | proved / discharged | partial | Actual LC.10-LC.11 pointwise primitive principal norm self-sum asymptotic for every fixed imaginaryquadraticorder. The binarycore input is now supplied; conductor-prefix/Haar normalization and the lower-order ring-class comparison transfer its constant. | none in declared routes |
 | GAP-ARITH-HURWITZ-UNIFORM-MARKED-PURE-DT | mathematical | open | partial | For each integer r>=7 let N=2r+1 and fix an N-cycle P. Prove transitivity on the absolute X_D space with the first branch marked, under H=<Q_2,...,Q_(r-1),Q_1^2>. The absolute quotient uses simultaneous sheet relabeling preserving P. Powers of the full twist realize every such relabeling in the marked subgroup. | HURWITZ-RESIDUAL-PURE-DT-CONNECTIVITY-EQUIVALENCE (open) |
 | GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE | mathematical | open | partial | For every r>=7 in the pure full-cycle polynomial DT domain on 2r+1 sheets, prove every orbit has a representative with one factor carrying one exclusive leaf in each of its two transpositions. Bring that factor to the end by positive moves: the other factors fix both leaves, so only its old anchors are conjugated. Removing the two leaves and this factor leaves a full-cycle tuple on 2r-1 sheets. This extraction condition is open. | HURWITZ-RESIDUAL-PURE-DT-CONNECTIVITY-EQUIVALENCE (open) |
@@ -4716,8 +4717,8 @@ flowchart LR
   r9{"AND<br/>D23-CORE-SEVEN-TO-ALL-<br/>TWENTYONE-ATOMS<br/>+1 pinned source<br/>proved"}
   class r9 proved
   end
-  n0["ARITH-ABC-OMITTED-COORDINATE-<br/>BOX-BOUND<br/>proved"]
-  class n0 proved
+  n0["ARITH-ABC-OMITTED-COORDINATE-<br/>BOX-BOUND<br/>stale"]
+  class n0 stale
   n1["ARITH-ERDOS940-SMOOTH-ROOT-<br/>PRIME-MARKING<br/>proved"]
   class n1 proved
   n2["ARITH-ERDOS940-CUBIC-<br/>PRIMITIVE-COLLISION-FIBERS<br/>proved"]
@@ -4746,10 +4747,10 @@ flowchart LR
   class n13 proved
   n14["ARITH-ALTERNATING-PRIME-HALF-<br/>UNIQUE-MINIMUM<br/>proved"]
   class n14 proved
-  n15["ARITH-ABC-EXCEPTIONAL-SET-<br/>SEVEN-TWELFTHS<br/>proved"]
-  class n15 proved
-  n16["ARITH-ABC-FULLOC-EXACT-SEVEN-<br/>TWELFTHS<br/>proved"]
-  class n16 proved
+  n15["ARITH-ABC-EXCEPTIONAL-SET-<br/>SEVEN-TWELFTHS<br/>stale"]
+  class n15 stale
+  n16["ARITH-ABC-FULLOC-EXACT-SEVEN-<br/>TWELFTHS<br/>stale"]
+  class n16 stale
   n17["ARITH-D20-EFFECTIVE-UNIT5<br/>proved"]
   class n17 proved
   n18["ARITH-CLASS-THREE-PRIMITIVE-<br/>NORM-CRITERION<br/>proved"]
@@ -4772,8 +4773,8 @@ flowchart LR
   class n26 proved
   n27["ARITH-DEGREE12-ABSOLUTE-<br/>HURWITZ-ORBIT<br/>proved"]
   class n27 proved
-  n28["ARITH-ABC-GROUPED-<br/>FULLOC-1747-3000<br/>proved"]
-  class n28 proved
+  n28["ARITH-ABC-GROUPED-<br/>FULLOC-1747-3000<br/>stale"]
+  class n28 stale
   n29["ARITH-D20-EFFECTIVE-ALL-<br/>TARGETS<br/>proved"]
   class n29 proved
   n30["ARITH-D23-PRIMITIVE-NORM-<br/>SUMSET-BOUNDED<br/>proved"]
@@ -4784,8 +4785,8 @@ flowchart LR
   class n32 proved
   n33["ARITH-DEGREE14-ABSOLUTE-<br/>HURWITZ-ORBIT<br/>proved"]
   class n33 proved
-  n34["ARITH-ABC-EXCEPTIONAL-<br/>SET-1747-3000<br/>proved"]
-  class n34 proved
+  n34["ARITH-ABC-EXCEPTIONAL-<br/>SET-1747-3000<br/>stale"]
+  class n34 stale
   n38["ARITH-D23-UNIVERSAL-<br/>MULTIPLIER-CONES<br/>proved"]
   class n38 proved
   n39["ARITH-D56-PRIMITIVE-NORM-<br/>SUMSET-BOUNDED<br/>proved"]
@@ -4895,22 +4896,22 @@ flowchart LR
   r10{"AND<br/>DERIVE-ARITH-A10-SOLVABLE-<br/>PULLBACK-HASSE-DENSITY-<br/>OBSTRUCTION<br/>+7 omitted proof premises<br/>proved"}
   class r10 proved
   r10 --> n52
-  r11{"AND<br/>DERIVE-ARITH-ABC-COUNT-<br/>GROUPED-FULLOC<br/>+3 omitted proof premises<br/>proved"}
-  class r11 proved
+  r11{"AND<br/>DERIVE-ARITH-ABC-COUNT-<br/>GROUPED-FULLOC<br/>+3 omitted proof premises<br/>stale"}
+  class r11 stale
   n28 --> r11
   r11 --> n34
-  r12{"AND<br/>DERIVE-ARITH-ABC-SEVEN-<br/>TWELFTHS-COUNT<br/>+3 omitted proof premises<br/>proved"}
-  class r12 proved
+  r12{"AND<br/>DERIVE-ARITH-ABC-SEVEN-<br/>TWELFTHS-COUNT<br/>+3 omitted proof premises<br/>stale"}
+  class r12 stale
   r12 --> n15
-  r13{"AND<br/>DERIVE-ARITH-ABC-FULLOC-SEVEN-<br/>TWELFTHS-OPTIMUM<br/>+2 omitted proof premises<br/>proved"}
-  class r13 proved
+  r13{"AND<br/>DERIVE-ARITH-ABC-FULLOC-SEVEN-<br/>TWELFTHS-OPTIMUM<br/>+2 omitted proof premises<br/>stale"}
+  class r13 stale
   r13 --> n16
-  r14{"AND<br/>DERIVE-ARITH-ABC-GROUPED-<br/>FULLOC-CERTIFICATE<br/>+2 omitted proof premises<br/>proved"}
-  class r14 proved
+  r14{"AND<br/>DERIVE-ARITH-ABC-GROUPED-<br/>FULLOC-CERTIFICATE<br/>+2 omitted proof premises<br/>stale"}
+  class r14 stale
   n16 --> r14
   r14 --> n28
-  r15{"AND<br/>DERIVE-ARITH-ABC-OMITTED-<br/>COORDINATE-BOX-BOUND<br/>+1 omitted proof premise<br/>proved"}
-  class r15 proved
+  r15{"AND<br/>DERIVE-ARITH-ABC-OMITTED-<br/>COORDINATE-BOX-BOUND<br/>+1 omitted proof premise<br/>stale"}
+  class r15 stale
   r15 --> n0
   r16{"AND<br/>PRIME-DECOMPOSITIONS-PRINCIPAL<br/>+5 omitted proof premises<br/>proved"}
   class r16 proved
@@ -5173,7 +5174,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 85 statements and 90 routes (1798 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 85 statements and 90 routes (1806 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -5840,3 +5841,73 @@ flowchart LR
 Overview: 80 statements and 92 routes (284 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
+
+## Changed or missing evidence
+
+These declarations require inspection and revalidation. Updating a digest alone does not repair the supporting argument.
+
+| Owner | Source | Freshness |
+|---|---|---|
+| ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-FULLOC-ASYMMETRIC-PARAMETRIC-WITNESS | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-ABC-POWERFUL-TRIPLE-INCLUSION | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-SIX-INDEX-PROJECTION-OBSTRUCTION | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-ABC-UNIFORM-BINARY-POWER-FIBER | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-POWERFUL-RATIONAL-PAIR-AMPLIFICATION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-SHORT-MONOMIAL-DIVISOR-DETERMINANT | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| GAP-ARITH-ABC-CONJECTURE | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| GAP-ARITH-ABC-ZENG-ARITHMETIC-APPLICATION | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| DERIVE-ARITH-ABC-OMITTED-COORDINATE-BOX-BOUND | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-POWERFUL-MONOMIAL-FIBER-FROM-DIVISOR-AND-AMPLIFICATION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| DERIVE-ARITH-POWERFUL-GROUPED-FOURIER-SAVING | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| DERIVE-ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-POWERFUL-FIXED-OFFSET-SURFACE-MOMENTS | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| DERIVE-ARITH-POWERFUL-ADAPTIVE-FOURIER-BOUND | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-GRAPH-FULLOC-WITNESS-COMPARISON | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| DERIVE-ARITH-ABC-GRAPH-FULLOC-WITNESS-COMPARISON | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-ABC-GRAPH-STRICT-BOX-IMPROVEMENT | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| DERIVE-ARITH-ABC-GRAPH-STRICT-BOX-IMPROVEMENT | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| DERIVE-ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| DERIVE-ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| ARITH-POWERFUL-TRIPLES-FIXED-OFFSET-FOURIER-SAVING | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| DERIVE-ARITH-POWERFUL-FOURIER-FIXED-OFFSET-SAVING | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-POWERFUL-SUM-UNIFORM-FIXED-VERTEX-EDGE | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-SUM-FIXED-EDGE-PROOF | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| DERIVE-ARITH-ABC-SEVEN-TWELFTHS-COUNT | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-POWERFUL-ALL-FIXED-OFFSETS-PRIMEWISE-ERROR | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| DERIVE-ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-POWERFUL-SUM-OMITTED-COORDINATE-GRAPH-BOUND | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-SUM-OMITTED-GRAPH-PROOF | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-CONSECUTIVE-BOX-CONSTRAINTS | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-CONSECUTIVE-GEOMETRIC-HEIGHT-MARGIN | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-SUM-CAMPANA-EXPONENT-OPTIMIZATION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-SUM-SIGNED-DYADIC-OPTIMIZATION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-MIXED-TRIPLES-DYADIC-OPTIMIZATION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| DERIVE-ARITH-ABC-COUNT-GROUPED-FULLOC | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| ARITH-POWERFUL-UNIVERSAL-LEADING-SAVING-FROM-MONOMIALS | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-CONSECUTIVE-EVEN-GRAPH-CONSTRAINT-OBSTRUCTION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-CONSECUTIVE-RATIONAL-OBSTRUCTION-CHECK | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-CONSECUTIVE-COST-CERTIFICATES | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-EVEN-DIAGONAL-FROM-PARITY-AND-GROUPED-GRAPHS | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-FIXED-OFFSET-ALIGNED-CERTIFICATES | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md) | changed |
+| DERIVE-ARITH-ABC-STRICT-IMPROVEMENT-FROM-SPARSE-ROOTS | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) | changed |
+| GAP-ARITH-POWERFUL-FIXED-OFFSET-DOUBLE | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-UNIVERSAL-LEADING-SAVING-TO-GAP | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| GAP-ARITH-POWERFUL-CONSECUTIVE-EVEN-DOUBLED-SAVING | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-CONSECUTIVE-THEOREM-TO-EVEN-GAP | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-TWO-POWER-FROM-MONOMIALS-AND-PARITY | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-FIXED-OFFSET-GROUPED-OBSTRUCTION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-FIRST-FIXED-OFFSET-OBSTRUCTION-CHECK | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |
+| ARITH-POWERFUL-STRICT-WITNESS-AND-RANDOM-MODEL | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex) | changed |

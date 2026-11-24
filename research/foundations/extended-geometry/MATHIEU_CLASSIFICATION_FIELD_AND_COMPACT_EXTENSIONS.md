@@ -122,6 +122,70 @@ $$
 $$
 The same formula for $Q=1$ proves purity. For example, a non-toral split connected group over $E$ gives a ground-field counterexample on its restriction of scalars over $K$.
 
-## Ground-field boundary
+## The adjoint radial pair
 
-The noncompact split and compact real forms already give different answers for group traces with real coefficients. The real quaternion norm-one group has positive square trace on every nonzero real regular function, so only zero is pure. Its complexification has a fixed witness. For arbitrary characteristic-zero fields a ground-field classification of all individual nonsplit homogeneous spaces still requires information about the field and form.
+Write a traceless matrix as
+$$
+Z=\begin{pmatrix}a/2&v\\u&-a/2\end{pmatrix},\qquad
+r(Z)=a^2+4uv.
+$$
+On the split three-dimensional adjoint representation, put
+$$
+P_{\rm ad}=v^2(1+au-u^3v)^4,\qquad Q_{\rm ad}=u^2.
+$$
+For the Reynolds projection $R_S$ of $S=\mathrm{SL}_2$ acting by conjugation, one has the polynomial identities
+$$
+ R_S(P_{\rm ad}^{m})=0,\qquad
+ R_S(Q_{\rm ad}P_{\rm ad}^{m})=\beta_m r^{3m-1}\quad (m\ge1).
+$$
+Indeed, for a column $w=(x,y)^{\mathsf T}$ over $\mathbb C$, set $Z=ww^*-\|w\|^2 I/2$. Then $a=|x|^2-|y|^2$, $u=\bar x y$, $v=x\bar y$, and $r(Z)=\|w\|^4$. In the normalizer pair of the complex paper the two factors become $1+|x|^2u$ and $1-|y|^2u$. Their product is $1+au-u^3v$ since $uv=|x|^2|y|^2$. This gives exactly $P_{\rm ad}$ and $Q_{\rm ad}$. The map $w\mapsto Z$ is $\mathrm{SU}_2$-equivariant and reaches every trace-zero Hermitian matrix, by diagonalizing it and choosing $w$ on its nonnegative eigenline. Angular averaging on each sphere therefore gives the two identities on this real form and hence on the entire adjoint space. The coefficients and normalized projections commute with base change from $\mathbb Q$. The action and the proof also work through $\mathrm{PGL}_2$. [Complex classification, §5](https://hexagonmath.org/pdf/2611.00556v1)
+
+## Isotropic derived groups over arbitrary characteristic-zero fields
+
+**Theorem.** Let $G$ be connected reductive over any characteristic-zero field $K$. If $G$ admits a nontrivial $K$-homomorphism from split $\mathrm{SL}_2$, then the trace on $K[G]$ has a fixed witness with nonzero marked moments at every positive order. In particular this applies if the derived group has positive $K$-split rank.
+
+Let $\mathfrak s=dS(\mathfrak{sl}_2)$ for such a homomorphism $S$, let $\mathfrak d=\operatorname{Lie}([G,G])$, and let $p:\mathfrak d\to\mathfrak s$ be the Killing-orthogonal projection. The restriction of the Killing form is nondegenerate. Over a splitting field it is a scalar multiple of the Killing form of $\mathfrak{sl}_2$, and its evaluation on $h=dS(\operatorname{diag}(1,-1))$ is a positive integer by the sum of squared integral weights in $\mathfrak d$. Consequently $p$ is defined over $K$ and equivariant for $S$. Set
+$$
+ Z(g)=(dS)^{-1}p(\operatorname{Ad}(g)h).
+$$
+Pull back $P_{\rm ad},Q_{\rm ad}$ along this regular map. To check the marked values, reduce the finitely many model coefficients to a subfield embedded in $\mathbb C$. Choose a compact form $C$ of $G_\mathbb C$ containing $S(\mathrm{SU}_2)$. Its conjugation preserves the Killing projection. Since $h$ is $i$ times a vector in the compact Lie algebra of $S$, for every $g\in C$ the matrix $Z(g)$ is Hermitian. On this real form $r$ is nonnegative, and $Z(1)=\operatorname{diag}(1,-1)$, so the trace of $r(Z(g))^{3m-1}$ is strictly positive for every $m$. The adjoint identities and normalized trace base change prove the assertions over $K$. A nontrivial split torus in the derived group gives a nonidentity rational unipotent in a parabolic radical. Rational Jacobson–Morozov produces the required split rank-one homomorphism, which may have central kernel. [Compact forms](https://otaibi.perso.math.cnrs.fr/galois.pdf) · [Rational Jacobson–Morozov, §5.8](https://arxiv.org/pdf/2601.07732)
+
+The same witness works on every affine $G/H$ over $K$ for which $H$ fixes $h$ under the adjoint action. In that case the map $Z$ itself descends and normalized integration equals restriction. For example this applies to the centralizer of the split rank-one cocharacter and its reductive subgroups.
+
+## A split central character and a rank-one subgroup
+
+**Theorem.** Over any characteristic-zero field $K$, let $G$ be connected reductive with a nontrivial $K$-character $\chi:G\to\mathbb G_m$. Suppose $[G,G]$ contains a $K$-subgroup $S$ whose geometric Lie algebra has type $A_1$. Then $K[G]$ has a fixed witness with nonzero marked moments at every positive order. The same conclusion holds for affine $G/H$ if $\chi|_H=1$ and $H$ fixes the chosen nonisotropic vector below.
+
+On $\mathfrak s=\operatorname{Lie}(S)$ let $q$ be the negative of the Killing form of $\mathfrak d$ restricted to $\mathfrak s$, and write $\langle\,,\,\rangle_q$ for its polarization with $\langle x,x\rangle_q=q(x)$. Choose $\xi\in\mathfrak s(K)$ with $q(\xi)\ne0$, and use the Killing projection $p:\mathfrak d\to\mathfrak s$ as above. Define
+$$
+ z(g)=p(\operatorname{Ad}(g)\xi),\quad
+ A(g)=q(z(g)),\quad B(g)=\frac{\langle \xi,z(g)\rangle_q^2}{q(\xi)},\quad t(g)=\chi(g).
+$$
+The pair is
+$$
+ P=t^{-1}(1+t)\bigl\{A-(1+t)^2 B\bigr\}^{2},\qquad Q=t .
+$$
+These expressions descend to $G/H$ under the stated stabilizer conditions.
+
+For the proof embed a field of definition in $\mathbb C$. The adjoint action of the complex rank-one subgroup is transitive on each nonzero quadric level. By choosing its compact form by conjugation, write $\xi=c\xi_0$ with $\xi_0$ in the compact Lie algebra and $c\in\mathbb C^\times$. Choose a compatible compact form of the derived group. It suffices to compute with $\xi_0$, since replacing it by $c\xi_0$ scales the phase by $c^4$ and leaves the marker fixed. The associated $z$ under compact derived Haar measure lies in the compact three-dimensional real form of $\mathfrak s$. Its law is rotation-invariant by $S$-equivariance. Conditional on each nonzero radius, $B/A$ is the square of a coordinate of a uniform point of the unit sphere. That coordinate is uniform on $[-1,1]$.
+
+The central isogeny $Z(G)^\circ\times [G,G]\to G$ allows separate normalized averaging. The variable $z$ is unchanged by central translation, and $t$ pulls back to a nontrivial central character. Its normalized Laurent average therefore extracts the constant coefficient in $t$. On each nonzero angular sphere, divide the phase by $A^2$. The average of its $m$th power is
+$$
+ t^{-m}(1+t)^{m-1}F_m(1+t),\qquad
+ F_m(s)=\int_0^s(1-w^2)^{2m}\,dw.
+$$
+This identity follows by substituting $(1+t)w$ into the angular integral on $[0,1]$. Since $F_m(1+t)-F_m(1)$ is divisible by $t^{2m+1}$, the constant term above is zero. After multiplication by $t$ it is $F_m(1)>0$. Restoring the radius gives zero pure moments and the positive marked values $F_m(1)\int A^{2m}$ for $\xi_0$. At the radius zero the integrands vanish, and the radius is nonzero on an open neighborhood of the identity. This proves nonvanishing after the rescaling by $c$ and hence over $K$. The angular circuit is the ternary case of the [quadratic-complement normalizer](QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md).
+
+## Complete connected group classification over real closed fields
+
+**Theorem.** Let $K$ be real closed and $G$ connected reductive. The normalized trace on $K[G]$ has Mathieu–Zhao kernel exactly when $G$ is a torus or $G$ is $K$-anisotropic. Equivalently, in the noncommutative case the kernel is Mathieu–Zhao precisely when the Killing form of the derived Lie algebra is negative definite and $G$ has no nontrivial $K$-character.
+
+Here are the two negative cases and the positive case.
+
+1. If the derived Killing form is not negative definite, its nondegeneracy gives a vector of positive Killing square. The real Lie algebra analogue contains a split $\mathfrak{sl}_2$. Indeed, in a real Cartan decomposition take a nonzero vector $X$ in the noncompact summand. Its adjoint endomorphism is self-adjoint for the positive definite Cartan form. It has a nonzero real eigenvalue, and an eigenvector for that value is adjoint-nilpotent because it shifts the finitely many eigenspaces by that nonzero value. Apply Jacobson–Morozov. The existence of the triple descends from $\mathbb R$ to a real closed $K$ by quantifier elimination and the finite-sign embedding argument above, keeping one positive Killing square. Integrate the triple to the split rank-one homomorphism. The adjoint-pair theorem applies.
+2. If the derived Killing form is negative definite and the derived group is nontrivial, choose a maximal $K$-torus in it. It is anisotropic because a nontrivial split cocharacter in a semisimple group would give a positive Killing square by the sum of squared weights. Over a real closed field, Galois conjugation thus acts by $-1$ on its character lattice. The root subgroups for any opposite pair are interchanged by conjugation, so the rank-one subgroup they generate is defined over $K$. If $G$ has a nontrivial $K$-character, apply the central-character theorem.
+3. If the derived Killing form is negative definite and there is no nontrivial $K$-character, the connected center is anisotropic. Over a real closed field every such torus is a product of norm-one tori for $K(i)/K$, by its character lattice with conjugation $-1$. For a nonzero $f$ over $K$, take a finitely generated field of definition including $f$ and that torus isomorphism. Embed it into $\mathbb R$ preserving the signs that give negative definiteness. On the real model the connected center and the connected real semisimple group are compact, so the real identity component of $G$ is compact and Zariski dense. The trace of $f^2$ is strictly positive by normalized Haar integration. Injectivity gives a nonzero square trace over $K$, so only zero is pure. This square-trace argument also works for every affine $G/H$ with such a connected compact-type $G$, by pullback from the group. The torus branch follows from the Laurent theorem.
+
+The equivalence with anisotropy follows because the split triple in case 1 gives a split torus, and a split torus in the derived group gives a positive Killing square. In the center a nontrivial split subtorus is equivalent to a nontrivial character, using the central isogeny and clearing a finite character index. The criterion applies to connected reductive quotients by normal stabilizers as well. For a real example with the second mechanism, $\mathrm{SL}_1(\mathbb H)\times\mathbb R^\times$ fails the Mathieu–Zhao property despite the square-positive trace on the norm-one factor.
+
+For a general formally real $K$, a real closure at even one ordering in which a connected group is anisotropic proves square-trace anisotropy for every homogeneous quotient over $K$. Conversely the two fixed-witness theorems above apply over $K$ itself. Individual anisotropic nonsplit groups over general fields, and homogeneous pairs with arbitrary nonnormal stabilizers outside these hypotheses, remain unresolved by these arguments.

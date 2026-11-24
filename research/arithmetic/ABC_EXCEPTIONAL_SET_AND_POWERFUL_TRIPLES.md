@@ -204,3 +204,260 @@ off-diagonal exponents are \(907/2100\) and \(1150/2100\), respectively.
 Thus every lift of this profile to an actual dyadic box obeys
 \(D\le23/42\) in the limiting exponent estimate. The full-tail choice
 also excludes a neighborhood of the profile by continuity.
+
+## Analytic savings at every radical budget
+
+Let \(0<\lambda\le1\) be fixed. For \(t\ge3\) put
+\[
+S(t)=\sum_{\substack{q\le t\\q\ {\rm prime}}}(t-q),
+\qquad
+A_\lambda(t)=\frac{(t-1)(3-\lambda)}{2}.
+\]
+Then
+\[
+N_\lambda(X)\ll_{\lambda,t,\varepsilon}
+X^{B_\lambda(t)+\varepsilon},
+\qquad
+B_\lambda(t)=
+\frac{3+\bigl(4S(t)+4A_\lambda(t)-1\bigr)\lambda}
+     {6S(t)+7A_\lambda(t)}.
+\tag{7}
+\]
+Taking \(t=6/\lambda\) gives \(B_\lambda(t)<2\lambda/3\) for every such
+\(\lambda\). The published affine estimate \((23\lambda+3)/40\) beats
+\(2\lambda/3\) when \(\lambda>9/11\). Formula (7) uses the Fourier and
+geometry inputs of that proof with a degree cutoff that can grow as
+\(\lambda\) decreases. Hongmin Li's parameter-dependent collision bounds give stronger
+estimates at some larger budgets. The radical-budget manuscript
+states its envelope on \([0.70,1.10]\), and the twisted-energy
+manuscript recomputes budgets \(0.80,0.90,1,1.05,1.10\).
+[Li, radical budget, v2](https://rstation.ai/problems/math/papers/17/v2) ·
+[Li, squares and twisted energy, v3](https://rstation.ai/problems/math/papers/28/v3) [BBLT v2, Theorem 1.2 and Propositions 3.1 and 4.1](https://arxiv.org/html/2410.12234v2#S1)
+
+There is also an absolute \(c>0\) such that for all sufficiently small
+fixed \(\lambda>0\),
+\[
+N_\lambda(X)\ll_{\lambda,\varepsilon}
+ X^{2\lambda/3-c\lambda^{3/2}\sqrt{\log(1/\lambda)}+\varepsilon}.
+\tag{8}
+\]
+The extra saving comes from concentration of the occupied degrees near
+one degree in any profile whose exponent approaches \(2\lambda/3\).
+Brun–Titchmarsh limits the prime degrees available in that interval.
+The order of the saving is the same as in the grouped Fourier bound for
+powerful triples after setting \(\lambda\) of order \(1/r\).
+[Montgomery–Vaughan, equation (1.12)](https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf)
+
+### Fourier and geometry constraints
+
+In an anatomic box, let \(x_{\ell,i}\) be the logarithmic mass of the
+coordinate of degree \(i\) on letter \(\ell\), and put
+\[
+p_i=\sum_\ell x_{\ell,i},\quad L=\sum_i p_i,\quad
+F=\sum_\ell\max_{k\ge2}\sum_{k\mid i}x_{\ell,i},\quad
+W=\sum_i(i-1)p_i .
+\]
+The total weighted height gives \(W\le3-L\). In the proof of
+Proposition 3.1, before replacing the product of the three coordinate
+products by the radical budget, the Fourier bound gives
+\(D\le 2L/3-F/6\). The proof of Proposition 4.1 uses that same product
+rather than the budget for its first term and the height of the largest
+letter for its second. Thus for any selection of coordinates of total
+mass \(s\) and total \((i-1)\)-weighted mass \(w\), it gives
+\[
+D\le\max\{L-s,\;L-1+w\}.
+\tag{9}
+\]
+Here the constraints are written without the vanishing exponent errors.
+In the finite box estimate, \(L\le\lambda+O(\eta)\) and both bounds have
+\(O(\eta)\) errors after taking \(X\) large for fixed decomposition
+parameter \(\eta\). For fixed \(\lambda\), one can divide the coordinate
+masses by \(1+O_\lambda(\eta)\) to restore \(L\le\lambda\), and decrease
+the rescaled \(D\) by \(O_\lambda(\eta)\) to enforce the displayed bounds.
+The change in the constant \(1\) in (9) is also \(O_\lambda(\eta)\).
+The estimates are uniform over selections at each fixed truncation.
+Then let \(\eta\) tend to zero, with the box and dyadic decomposition
+losses absorbed in \(\varepsilon\). [BBLT v2, Proposition 2.1 and proofs of Propositions 3.1 and 4.1](https://arxiv.org/html/2410.12234v2)
+
+### Selecting the released coordinates
+
+Let \(R(u)\) be the largest mass of a fractional selection of the
+coordinates with total \((i-1)\)-weighted mass at most \(u\). Selecting
+the coordinates in increasing order of \(i\) maximizes this mass.
+Include all degree-one coordinates, whose weight is zero. At most one
+positive-weight coordinate is split, and its mass is at most \(F\).
+The integral prefix therefore loses at most \(F\). At every
+\(0\le u<1-L+D\), the second term of (9) is strictly below \(D\), and
+the integral prefix gives \(R(u)\le L-D+F\). For \(D>0\), the value
+\(u_*=1-L+D\) is positive. Continuity of the fractional optimum gives
+\[
+R(u_*)\le L-D+F. \tag{10}
+\]
+
+Write \(P=L-p_1\) for the mass of the positive-weight coordinates. The
+uniform fractional selection on these coordinates gives
+\(R(u)\ge p_1+\min(1,u/W)P\) for \(W>0\), with \(R(u)=L\) if \(W=0\).
+Together with (10) and \(W\le3-L\) this gives
+\[
+ D-F\le P\,\frac{2-D}{3-L},
+ \qquad
+ P\ge\frac{3-\lambda}{2}(D-F).
+\tag{11}
+\]
+For the second inequality, use \(D\ge0\) when \(D\ge F\) and \(P\ge0\)
+otherwise. The case \(u_*\ge W\) already gives \(D\le F\).
+If \(D=0\) the bounds on the count exponent follow directly.
+
+Assign each \(i\ge2\) to its least prime divisor \(q\). For each \(q\) the
+assigned mass is at most \(F\) by the divisibility constraints. Since
+\((t-i)_+\le(t-q)_+\), this gives
+\[
+ (t-1)P\le W+\sum_{i\ge2}(t-i)_+p_i
+              \le 3-L+FS(t).
+\]
+Using \(F\le4L-6D\) and (11) yields
+\[
+ (6S(t)+7A_\lambda(t))D
+ \le3+\bigl(4S(t)+4A_\lambda(t)-1\bigr)L.
+\]
+The coefficient of \(L\) is positive for \(t\ge3\), so \(L\le\lambda\)
+proves (7). Its gap from \(2\lambda/3\) is
+\[
+ \frac{\bigl(1+2A_\lambda(t)/3\bigr)\lambda-3}
+      {6S(t)+7A_\lambda(t)}.
+\]
+At \(t=6/\lambda\) the numerator is \(3-2\lambda+\lambda^2/3>0\).
+
+### Concentration near a single degree
+
+Write \(\delta=2\lambda/3-D\) and assume
+\(\delta\le\lambda^{3/2}\sqrt{\log(1/\lambda)}\), since a larger \(\delta\)
+already gives (8). Then \(L=\lambda+O(\delta)\), \(F\le6\delta\), and
+\(D>F\) for sufficiently small \(\lambda\). By (10), \(W>u_*\).
+Set \(\theta=u_*/W\). The uniform fractional selection and (10) give
+\(1/4\le\theta\le1/2\) for sufficiently small \(\lambda\).
+Moreover
+\[
+ 0\le R(u_*)-\theta L
+ \le L-D+F-\frac{u_*L}{3-L}
+ = F+\frac{2L-3D}{3-L}
+ \ll\delta.
+\]
+Choose a positive threshold \(v\) equal to the weight per unit mass of
+the marginal coordinate in the greedy selection. Its fractional
+optimum is
+\[
+ R(u_*)=u_*/v+\sum_i p_i(1-(i-1)/v)_+ .
+\]
+Let \(A_+\) and \(A_-\) be the sums of \(p_i(1-(i-1)/v)_+\) and
+\(p_i((i-1)/v-1)_+\), respectively. Their difference is \(L-W/v\).
+The exact identity
+\(R(u_*)-\theta L=(1-\theta)A_++\theta A_-\)
+therefore gives
+\[
+ \sum_i p_i\lvert1-(i-1)/v\rvert\ll\delta,\qquad v\asymp 1/\lambda .
+\]
+For the second assertion use \(\lvert L-W/v\rvert\ll\delta\) and
+\(u_*\le W\le3-L\).
+
+Consequently an interval of half-width
+\(H=C(1+\delta/\lambda^2)\) around \(v+1\), with an absolute \(C\) chosen
+large enough, contains at least \(3\lambda/4\) mass by the preceding
+weighted deviation bound. Its indices are comparable to \(1/\lambda\).
+Every composite there has a prime divisor \(q\ll\lambda^{-1/2}\),
+so the entire composite mass there is at most
+\[
+ F\,\pi(O(\lambda^{-1/2}))
+ \ll \frac{\delta}{\sqrt{\lambda}\log(1/\lambda)}
+ =o(\lambda).
+\]
+Here the prime counting estimate follows already from Brun–Titchmarsh
+with modulus one. Each individual prime degree has mass at most \(F\).
+Hence the interval contains \(\gg\lambda/\delta\) primes. Counting all
+integer indices first gives \(\lambda\ll\delta H\) and
+\(\delta\gg\lambda^{3/2}\), since \(\delta=o(\lambda)\). In particular
+\(H\gg\lambda^{-1/2}\). Brun–Titchmarsh on the same interval now gives
+\[
+ \lambda\ll \frac{\delta H}{\log H}
+         \ll \frac{\delta^2}{\lambda^2\log(1/\lambda)},
+\]
+which proves (8). [Montgomery–Vaughan, equation (1.12)](https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf)
+
+### A matching order within the exponent inequalities
+
+There are budgets tending to zero for which the Fourier, geometry,
+height and two-letter counting inequalities permit
+\(D\ge 2\lambda/3-O(\lambda^{3/2}\sqrt{\log(1/\lambda)})\).
+Indeed, partition \([M,2M]\) into intervals of length at most
+\(H=\lceil\sqrt{M\log M}\rceil\). By the prime number theorem, some
+interval contains \(J\gg H/\log M\) primes. Let their minimum and mean
+be \(q_{\min}\) and \(\bar q\), respectively. Set
+\(\lambda=3/\bar q\), and give each of these prime degrees the same mass
+\(\lambda/(3J)\) on each letter. Every letter has weighted height
+exactly one, the total mass is \(\lambda\), and the grouped Fourier
+quantity is \(F=\lambda/J\). For any selection of released coordinates,
+\(w\ge(q_{\min}-1)s\), so the right-hand side of (9) is at least
+\(L-1/q_{\min}\). Thus the profile satisfies all the stated inequalities
+at
+\[
+D=\min\{2\lambda/3-\lambda/(6J),\;\lambda-1/q_{\min}\}.
+\]
+Both deficits from \(2\lambda/3\) are \(O(H/M^2)\), by the lower bound
+for \(J\) and \(0\le\bar q-q_{\min}\le H\). The same order of deficit also suffices for the grouped-root,
+direct residue-energy and common-shift collision constraints.
+
+To check these further inequalities, write \(u=\lambda/3\) and
+\(E=uH/M+u/J\). Each letter now has mass \(u\) and weighted height
+one. Any subset of coordinates with mass \(m\) and weighted height
+\(h\) satisfies \(m=uh+O(E)\), uniformly in the subset. Every group
+with common divisor \(g>1\) has at most one occupied degree, so has
+mass at most \(u/J\). For a group with \(g=1\), its root height is
+\(h\), and the inequality
+\[
+ -m+(h-\tau)_+\ge-u\tau-O(E)
+\]
+holds for every \(\tau\ge0\). This follows from \(m=uh+O(E)\) and
+\(0<u<1\).
+
+Use the exact frozen weights \(w_T\) of this profile, so
+\(f_T=uw_T+O(E)\). For the grouped-root collision on \(A,B\),
+each energy group saves at most \(uw_B/2+O(E)\) in the energy term.
+Thus \(K\ge2(u-f_A)-uw_B-O(E)\). For the direct residue-energy
+bound each entire released letter has \(K_T\ge2u-uw_C-O(E)\), so
+\(f_C+(K_A+K_B)/2\ge2u-O(E)\).
+
+Every available difference cap on \(T\) is at least \(s_T-O(E)\)
+because a divisor \(e>1\) can remove at most one occupied degree
+from the complement. Every residue cap is at least
+\(s_T-uw_C-O(E)\), by applying the displayed inequality for \(g=1\)
+and the one-degree bound for \(g>1\). The target-count cap
+\(u-f_C\) is also at least \(s_T-uw_C-O(E)\), since \(s_T\le u\)
+and \(f_C=uw_C+O(E)\). The off-diagonal upper expression in the
+grouped-root inequality is therefore at least
+\[
+ f_A+f_B+f_C+\tfrac12(u-f_C+K+\delta)
+ \ge 2u+\tfrac12(f_B-uw_B+f_C-uw_C)-O(E)
+ \ge 2u-O(E),
+\]
+using \(s_B=u-f_B\).
+
+For the common-shift inequality,
+\(h_T=1-w_T\) and hence \(\sigma=(1-w_A-w_B)_+\).
+Its paired cap satisfies
+\(\rho\ge s_A+s_B-uw_C-O(E)\).
+Put \(w=w_A+w_B\). The off-diagonal expression in this case
+is at least
+\[
+ \frac{3u}{2}+\frac{uw+(1-w)_+}{2}-O(E)\ge2u-O(E).
+\]
+If \(w>1\), absence of off-diagonal collisions leaves the diagonal
+expression \(f_A+f_B+u\ge2u-O(E)\).
+The early-plus-tail geometry loosenings obey the same comparison
+with \(L-1/q_{\min}\). An exact tagged height-one bound for a group
+containing the entire tail is its actual weight on this profile,
+while the untagged lower frozen-modulus bounds can only weaken the
+collision estimate. These arguments hold for all released and
+frozen subsets, including sets that use the entire tail. The family
+therefore gives a matching order for these exponent inequalities
+even with the new height information.
+[Grouped-root, common-shift and direct congruence inequalities](ABC_OMITTED_COORDINATE_GRAPH.md#counting-collisions-by-their-common-shift)

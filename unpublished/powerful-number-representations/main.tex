@@ -1,5 +1,5 @@
 \documentclass[11pt,reqno]{amsart}
-\usepackage[margin=1.02in]{geometry}
+\usepackage[margin=1.00in]{geometry}
 \usepackage[expansion=false]{microtype}
 \usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
@@ -19,22 +19,20 @@
 \keywords{powerful numbers, rational reconstruction, bipartite graphs, Campana points}
 \begin{document}
 \begin{abstract}
-For primitive triples of orders \(p=r+u,\ q=r+v,\ r\), with
-any fixed \(u\ge v\ge0\), we save \(2/r^2+O_{u,v}(r^{-21/10})\)
-over the trivial exponent \(1/p+1/q\). The proof uses short
-rational monomial congruences over powerful moduli, together
-with graph and surface bounds. For sufficiently large diagonal
-order \(k\), a weighted graph with two omitted coordinates on each
-side saves \(5/k^2+O(k^{-21/10})\) over \(2/k\). Exact rational
-certificates increase the leading coefficient to \(6\) for even
-\(k\) and to \(16/3\) for odd \(k\).
-For fixed \(k\), the number of ordered representations of \(N\)
-as a sum of two positive \(k\)-full integers is
+For all sufficiently large \(k\), the number of primitive
+\(k\)-full triples \(a+b=c\le X\) is
+\(O_{k,\eps}(X^{2/k-c_0 k^{-3/2}+\eps})\) for an absolute
+\(c_0>0\). We reduce each triple with fixed \(c\) to a
+congruence between two short rational numbers and count
+its solutions with a rectangular determinant.
+This also gives a saving of order \(r^{-3/2}\) over
+\(1/p+1/q\) for fixed offsets \(p=r+u,\ q=r+v\).
+The same manuscript gives bounds for representations by two
+positive \(k\)-full integers. Their number at target \(N\) is
 \(O_\eps(N^{3/10+\eps})\) for \(k=2\) and
 \(O_{k,\eps}(N^{1/(k+1)+\eps})\) for \(k\ge3\).
-The graph bounds also apply to large coprime differences and
-give \(O_{k,\eps}(X^{2/(k+1)+\eps})\) primitive triples of
-diagonal order \(k\ge3\).
+The graph bounds used for these estimates also apply to
+large coprime differences.
 \end{abstract}
 \maketitle
 
@@ -46,7 +44,28 @@ A positive integer \(m\) is \(k\)-full if \(p^k\mid m\) for every prime
 Browning and Verzobio \cite[Theorem~1.1]{BV} save
 \(1/r^2+O_{u,v}(r^{-5/2})\) over \(1/p+1/q\) when
 \(p=r+u\) and \(q=r+v\) have fixed offsets. We double the
-leading saving for every fixed pair of offsets.
+leading saving for every fixed pair of offsets using the
+common-neighbor method. Direct compression gives a stronger
+large-order saving.
+
+\begin{theorem}\label{thm:compressed-diagonal}
+There is an absolute constant \(c_0>0\) such that for all
+sufficiently large \(k\) and every \(\eps>0\),
+\[
+ N_{k,k,k}(X)\ll_{k,\eps} X^{2/k-c_0 k^{-3/2}+\eps}.
+\]
+For every fixed \(S>0\), this implies
+\(N_{k,k,k}(X)\ll_{S,k,\eps}X^{2/k-S/k^2+\eps}\)
+for all sufficiently large \(k\) in terms of \(S\).
+For fixed \(u\ge v\ge0\), the same estimate gives
+\[
+ N_{r+u,r+v,r}(X)\ll_{u,v,r,\eps}
+ X^{1/(r+u)+1/(r+v)-(c_0/2)r^{-3/2}+\eps}
+\]
+for all sufficiently large \(r\) in terms of \(u,v\).
+\end{theorem}
+
+The fixed-offset graph estimate also takes the following form.
 
 \begin{theorem}\label{thm:all-offsets}
 Fix \(u\ge v\ge0\), and put \(p=r+u,\ q=r+v\).
@@ -218,15 +237,15 @@ The implied constant in \(O(r^{-5/2})\) is absolute.
 \end{theorem}
 
 \begin{theorem}\label{thm:monomial}
-Fix an integer \(A\ge1\). Let \(e,f\) be distinct exponents in
+Fix an integer \(A\ge1\) and a real \(C\ge2\). Let \(e,f\) be distinct exponents in
 \([r,r+A]\), let \(n\) be \(r\)-full, and let \(K\) be a unit modulo
-\(n\). Suppose \(n^{1/(3r)}\le Y\le n^{2/r}\).
-For all sufficiently large \(r\) in terms of \(A\), the number of
+\(n\). Suppose \(n^{1/(3r)}\le Y\le n^{C/r}\).
+For all sufficiently large \(r\) in terms of \(A,C\), the number of
 pairs of positive reduced rationals \(U,V\), of height at most
 \(Y\) and with numerators and denominators coprime to \(n\),
 satisfying \(U^e/V^f\equiv K\pmod n\) is
 \[
-                       O_{A,r,\eps}\bigl(Y^{O_A(r^{-1/10})+\eps}\bigr).
+                       O_{A,C,r,\eps}\bigl(Y^{O_A(r^{-1/10})+\eps}\bigr).
 \]
 \end{theorem}
 
@@ -1002,7 +1021,9 @@ For \(T=U/V\) the two congruences
 follow from the equation. Distinct solution pairs have distinct
 rational \(T\). Indeed, equality of \(T\) would force congruence of
 the \(d\)-th powers of both coordinates, and \(Z^{2d}<n\) makes
-each such congruence an equality.
+each such congruence an equality. Here \(Z^{2d}<n\) follows
+from \(Z\le n^{Ct/r}\) and \(t=O_A(r^{1/10})\)
+for sufficiently large \(r\) in terms of \(A,C\).
 
 Consider the \(M\) monomials \(U^{di}V^{dj}\), \(0\le i,j\le h\).
 The \(M\) weights \(fi+ej\) are distinct: a collision would require
@@ -1036,7 +1057,8 @@ For every prime \(\ell\mid n\) and large \(r\),
 since \(B_*=O_A(h^5)\) and \(B_*(1+\log\kappa)=o_A(r)\).
 The divisor using all exponents \(\lfloor k_\ell/B_*\rfloor\)
 is at least \(n^{1/(2B_*)}\), which exceeds \(Z^\delta\)
-for large \(r\): \(\delta t\le5\) and \(Z\le n^{2t/r}\).
+for large \(r\) in terms of \(A,C\), since
+\(\delta t\le5\), \(Z\le n^{Ct/r}\), and \(B_*=o_A(r)\).
 Build a divisor \(L\) by taking an initial factor
 \(\ell^{v_\ell(\kappa)+1}\) when including a prime and then
 increasing exponents by one up to the indicated caps. Stop when
@@ -1081,7 +1103,7 @@ By \eqref{eq:rational-amplification} the original count is
 Since \(2\delta=O_A(r^{-1/10})\), this proves
 Theorem~\ref{thm:monomial}.
 
-\section{The doubled leading saving for all fixed offsets}
+\section{Bounds for primitive powerful triples}
 We apply Theorem~\ref{thm:monomial} to singleton omissions of
 the same index \(0\) or \(1\) on the \(p\)- and \(q\)-full sides,
 fixing the \(r\)-full target \(n=c\). For \(u=v\), use
@@ -1252,6 +1274,154 @@ equality. On each side place six equal masses at indices
 Every two-index group has mass at most \(1/3\), and the full
 square group has mass \(1/3\). The weighted costs give \(D=6\)
 and \(D=16/3\), respectively.
+
+\subsection{Direct compression}\label{sec:direct-compression}
+
+Write each \(k\)-full integer as \(m=R(m)^k W(m)\), where
+\[
+ R(m)=\prod_{\ell^a\parallel m}\ell^{\lfloor a/k\rfloor},
+ \qquad
+ W(m)=\prod_{\ell^a\parallel m}\ell^{a\bmod k}.
+\]
+These are the product of the canonical coordinates and the product
+of their offset powers, respectively. Fixing \(c\) in a primitive
+triple gives the two positive unit rational numbers
+\[
+                 T=\frac{R(a)}{R(b)},\qquad V=\frac{W(a)}{W(b)},
+                 \qquad VT^k=\frac ab\equiv-1\pmod c .
+\]
+The pair \((T,V)\) and \(c\) determine the whole triple.
+The height of \(T\) is at most \(X^{1/k}\), even when both
+\(V\) and \(V/T\) are substantially taller.
+
+\begin{lemma}\label{lem:rectangular-rational}
+Let \(h=\lfloor\sqrt{k}/2000\rfloor\), and let \(n\) be \(k\)-full.
+For sufficiently large \(k\), a unit \(K\bmod n\), and \(\eps>0\),
+the count of positive rational unit pairs satisfying
+\[
+ VT^k\equiv K\pmod n,\qquad
+ H(T)\le n^{2/k},\qquad H(V)\le n^{h/(64k)}
+\]
+is \(O_{k,\eps}(n^{1/(4k)+\eps})\).
+\end{lemma}
+\begin{proof}
+Amplify by coordinatewise products with \(t=8\), using
+\eqref{eq:rational-amplification}. The amplified pairs have
+heights at most \(n^{16/k}\) and \(n^{h/(8k)}\), respectively,
+and the new right-hand side is \(K^8\).
+Each rational \(T\) occurs at most once among these pairs.
+Indeed \(V\) is determined modulo \(n\) by \(T\), and
+two distinct reduced fractions of height \(n^{h/(8k)}\)
+cannot agree modulo \(n\) because \(n^{h/(4k)}<n\) for \(n>1\).
+
+Use the \(m=65(h+1)\) monomials \(V^i T^j\) for
+\(0\le i\le64,\ 0\le j\le h\), and put \(J=\binom m2\).
+Modulo \(n\) the monomials are \(K^{8i}T^{j-ki}\).
+Their translated weights \(64k+j-ki\) are distinct because
+\(h<k\). Let \(D_0=64k+h\) be the largest weight.
+For the increasing list \(w_1,\ldots,w_m\) of weights, write
+\[
+ \det(T_i^{w_j})=\prod_{i<j}(T_j-T_i)\Phi(T_1,\ldots,T_m).
+\]
+The diagonal value of \(\Phi\) at \((1,\ldots,1)\) is the
+positive integer \(\kappa\) from the binomial determinant formula
+in Section~8.
+
+We use the following stability of this diagonal value.
+For a prime \(\ell\), put \(s_\ell=1+\lfloor\log_\ell D_0\rfloor\).
+If \(T_i\equiv z\bmod\ell^{s_\ell}\) for an \(\ell\)-adic unit
+\(z\), then \(v_\ell(\Phi(T_1,\ldots,T_m))=v_\ell(\kappa)\).
+To see this, write \(T_i=z(1+\ell^{s_\ell}t_i)\) and expand the
+alternant by the binomial theorem and Cauchy--Binet.
+After division by the Vandermonde and the unit
+\(z^{\sum_j w_j-J}\), the term with degrees \(d_i=i-1\)
+is \(\kappa\). Every other degree list \(0\le d_1<\cdots<d_m\le D_0\)
+has excess \(b=\sum_i d_i-J\ge1\).
+Its contribution is \(\ell^{s_\ell b}\) times the integral
+Vandermonde quotient in the \(t_i\) and the determinant
+\(\det(\binom{w_j}{d_i})\).
+Dividing the latter determinant by \(\kappa\) gives an integer
+times \(\prod_i(i-1)!/\prod_i d_i!\), since the determinant
+of the falling factorials in the \(w_j\) is divisible by
+their Vandermonde. The factorial ratio has valuation
+at least \(-b\lfloor\log_\ell D_0\rfloor\).
+Thus every other term is divisible by \(\ell\) relative to
+\(\kappa\), proving the stated stability.
+
+Set \(B=32J+1\). Since \(m\le130h\) for \(h\ge1\), we
+have \(B\le270400h^2+1\le k/4\) for sufficiently large \(k\).
+For \(n=\prod_\ell\ell^{a_\ell}\), use the primes with
+\(\lfloor a_\ell/B\rfloor\ge s_\ell\).
+The excluded prime powers have product bounded in terms
+of \(k\): their bases are at most \(D_0\), and
+their exponents are less than \(Bs_\ell\).
+For all sufficiently large \(n\) in terms of \(k\), the selected
+full-power part is at least \(n^{1/2}\). Capping each selected
+exponent at \(\lfloor a_\ell/B\rfloor\) gives a divisor at least
+\(n^{1/(4B)}\ge n^{1/k}\).
+Start from \(1\) and build a divisor \(L\) under these caps,
+including each prime at exponent \(s_\ell\) and increasing
+one exponent at a time thereafter. Stop when \(L\ge n^{1/k}\).
+Each step multiplies by at most \(D_0\ell\le D_0n^{1/k}\).
+If \(n_0\) is the product of the full prime powers in \(n\)
+over the primes selected in \(L\), we have
+\[
+ n^{1/k}\le L\le D_0n^{2/k},\qquad L^B\mid n_0 .
+\]
+The finite range of \(n\) excluded by this construction can
+be absorbed in the implied constant.
+
+Suppose \(m\) distinct amplified pairs have \(T\) in the same
+unit class modulo \(L\). By stability, at the selected primes
+the alternant has the valuations of \(\kappa\) times the product
+of all cross-numerators of \(T_j-T_i\).
+The product is nonzero by distinctness and has size at most
+\(\kappa n^{32J/k}\), which is less than \(n_0\) for sufficiently
+large \(n\). So the alternant is nonzero modulo \(n_0\).
+Each of the \(J\) differences is divisible by \(L\), and
+\(L^J\mid n_0\).
+
+Clear denominators row by row in the evaluation matrix of
+\(V^i T^j\), using exponent \(64\) for the denominator of \(V\)
+and \(h\) for that of \(T\).
+The integer determinant is congruent to the alternant times
+a unit modulo \(n_0\), by the monomial congruences and the
+translation of the weights. Hence it is nonzero and
+divisible by \(L^J\).
+Its entries are at most \(n^{24h/k}\) in absolute value,
+since \(64\cdot h/8+16h=24h\), and its absolute value is at most
+\(m!n^{24hm/k}\). This is less than \(L^J\) for large \(n\)
+because \(J/m=(65h+64)/2>24h\), a contradiction.
+Thus there are at most \(m-1\) amplified pairs in each unit class.
+Their total is \(O_k(n^{2/k})\), and undoing the amplification gives
+the asserted count.
+\end{proof}
+
+To prove Theorem~\ref{thm:compressed-diagonal}, put \(S=h/128\).
+There are \(O_k(X^{1/k})\) positive \(k\)-full integers up to \(X\):
+count the first canonical coordinate with the others fixed and
+sum the convergent products of the powers \(a_j^{-1-j/k}\) for \(j\ge1\).
+There are \(O_k(Y(1+\log Y)^{k-1})\) ordered \(k\)-tuples of
+positive integers with product at most \(Y\), by summing
+successively over their coordinates. Hence triples in which some
+\(R(m)\le X^{1/k-S/k^2}\) contribute
+\(O_{k,\eps}(X^{2/k-S/k^2+\eps})\). Choose that summand using
+the product bound, choose one other \(k\)-full summand and
+determine the third from the equation.
+
+For the remaining triples, \(c\ge X^{1-S/k}\) and
+\(W(a),W(b)\le X^{S/k}\), so
+\(H(T)\le c^{2/k}\) and \(H(V)\le c^{h/(64k)}\)
+because \(1-S/k\ge1/2\). Lemma~\ref{lem:rectangular-rational}
+gives \(O_{k,\eps}(c^{1/(4k)+\eps})\) choices at each \(c\).
+Summing over \(k\)-full \(c\) gives \(O_{k,\eps}(X^{5/(4k)+\eps})\),
+which is stronger than the required bound.
+Since \(S\ge\sqrt{k}/512000\) for all sufficiently large \(k\),
+one can take \(c_0=1/512000\).
+For fixed offsets, every solution counted by \(N_{r+u,r+v,r}\)
+is counted by \(N_{r,r,r}\), and
+\(2/r-1/(r+u)-1/(r+v)=O_{u,v}(r^{-2})\).
+This proves the fixed-offset conclusion.
 
 \section{Limits of the fixed-offset box constraints}
 For \(u>v\), the surface-only cost bounds in

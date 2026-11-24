@@ -232,19 +232,19 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Exact sums of two primitive discriminant19 norms | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS19_EXACT.md) |
 | Exact refined Heegner bounds and complete finite-classification reductions | Internal result | proved | [Source](PRIMITIVE_NORM_HEEGNER_REFINED_BOUNDS.md) |
 | Exact sums of two primitive discriminant43 norms | Internal result | proved | [Source](PRIMITIVE_NORM_MINUS43_EXACT.md) |
-| Pointwise addition and uniform bounds for primitive powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Pointwise addition and uniform bounds for primitive powerful triples | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Mean six-cycle bound and the balanced-box implication | Internal result | proved | [Source](ERDOS_943_SIX_CYCLES.md) |
 | Exact six-cycle kernel recovery from root labels | Internal result | proved | [Source](ERDOS_943_SIX_CYCLES.md) |
-| Pointwise bound for large coprime differences of k-full integers | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| Primitive triples of unequal powerfulness orders under four gcd conditions | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| An improved saving for primitive triples of consecutive powerfulness orders | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Pointwise bound for large coprime differences of k-full integers | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Primitive triples of unequal powerfulness orders under four gcd conditions | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
+| An improved saving for primitive triples of consecutive powerfulness orders | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Exact local intensities and parity obstruction for random prime representations | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md) |
 | A strict profinite improvement of the critical random prime gap bound | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md) |
 | Exact odd polynomial Hurwitz domain sizes and directly removable fraction | Internal result | proved | [Source](HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) |
 | Positive-proportion three-norm windows from pair moments | Internal result | proved | [Source](SHIFTED_PRODUCT_AND_CORRELATION_TRANSFER_AUDIT.md) |
 | Odd ideal-class prime pools with fixed CM Frobenius conditions | Internal result | proved | [Source](EXTERNAL_HECKE_ARTIN_GOLDBACH_TRANSFER_AUDIT.md) |
-| Fixed-offset powerful triple savings from the surface estimate | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| Doubled saving from two aligned gcd conditions | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Fixed-offset powerful triple savings from the surface estimate | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Doubled saving from two aligned gcd conditions | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Exact removable-factor distributions and an orbit-size criterion | Internal result | proved | [Source](HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) |
 | Sharp finite-modulus truncation of the critical random-prime gap bound | Internal result | proved | [Source](RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md) |
 | Sharp supported Hardy norm cost for the Goldbach norm method | Internal result | proved | [Source](EXTERNAL_HECKE_ARTIN_GOLDBACH_TRANSFER_AUDIT.md) |
@@ -256,20 +256,20 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Mixed shifted correlations of prescribed-prime binary counts | Internal result | proved | [Source](SHIFTED_LOCAL_CORRELATIONS_AND_SEMIGROUP_ENERGY.md) |
 | Tree pairing gives exponentially few tuples without a removable factor | Internal result | proved | [Source](HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) |
 | Even Laurent passport leaf reduction outside an exponentially small tuple set | Internal result | proved | [Source](HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) |
-| Short rational monomial congruences over powerful moduli | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Short rational monomial congruences over powerful moduli | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Doubled leading saving for all fixed powerfulness offsets | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| Fourier bound for powerful triples at arbitrary fixed orders | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Logarithmically stronger powerful-triple saving from grouped Fourier moments | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Omitted-coordinate graph bound in abc boxes | Internal result | proved | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
+| Fourier bound for powerful triples at arbitrary fixed orders | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Logarithmically stronger powerful-triple saving from grouped Fourier moments | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Omitted-coordinate graph bound in abc boxes | Internal result | stale | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
 | Short-witness saving and exact long-complement reduction for square-full kernels | Internal result | proved | [Source](ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md) |
-| Stronger savings for even diagonal powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| Exact 7/12 optimum of the FullOC exponent program | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| The 7/12 upper bound for the abc exceptional set | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Weighted two-power graphs for diagonal powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| The 1747/3000 upper certificate for grouped FullOC | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| The 1747/3000 upper bound for the abc exceptional set | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Stronger savings for even diagonal powerful triples | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
+| Exact 7/12 optimum of the FullOC exponent program | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| The 7/12 upper bound for the abc exceptional set | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Weighted two-power graphs for diagonal powerful triples | Unpublished; independent review pending | stale | [Source](../../unpublished/powerful-number-representations/README.md) |
+| The 1747/3000 upper certificate for grouped FullOC | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| The 1747/3000 upper bound for the abc exceptional set | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 
-**Computed obligations:** 99 unresolved; 18 resolved within their exact scope.
+**Computed obligations:** 102 unresolved; 15 resolved within their exact scope.
 
 
 Scope limits:

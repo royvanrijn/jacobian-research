@@ -4,19 +4,20 @@ Roy van Rijn · Draft in preparation
 
 [PDF](paper.pdf) · [LaTeX source](main.tex) · [Metadata](metadata.json) · [Verification record](verification.json)
 
-The headline theorem gives a leading saving of \(2/r^2\) over
-\(1/(r+u)+1/(r+v)\) for primitive triples of orders \((r+u,r+v,r)\)
-at every fixed pair of offsets \(u\ge v\ge0\). It uses a uniform
-short rational congruence bound over powerful moduli. The exponent
-error in the manuscript is \(O_{u,v}(r^{-21/10})\).
+The headline theorem saves \(c_0k^{-3/2}\) over \(2/k\) for
+primitive diagonal \(k\)-full triples, with an absolute \(c_0>0\).
+For fixed offsets \(p=r+u,\ q=r+v\), it saves
+\((c_0/2)r^{-3/2}\) over \(1/p+1/q\) for sufficiently large \(r\).
+Section 9.2 proves the bound by compressing each representation
+to two rational variables and counting them with a rectangular
+determinant. The general modular estimate also covers heights
+up to \(n^{C/r}\) for every fixed \(C\).
 
-For all sufficiently large diagonal orders \(k\), the leading
-saving over \(2/k\) is \(6/k^2\) for even \(k\) and \(16/(3k^2)\)
-for odd \(k\), with an exponent error \(O(k^{-21/10})\).
-Section 9.1 proves the weighted graph bound. It gives a leading
-coefficient of \(5\) in both parities before the exact rational
-optimization. Section 6.3 gives the earlier bounds obtainable
-from common-divisor grouping alone.
+The draft retains the fixed-offset graph estimates and the two-power
+weighted graph bound of Section 9.1. Its exact certificates give
+leading coefficients \(6\) for even \(k\) and \(16/3\) for odd \(k\)
+at scale \(k^{-2}\). Section 6.3 gives the earlier bounds from
+common-divisor grouping.
 
 The manuscript also proves pointwise bounds for powerful sums and
 large coprime differences, including the \(N^{3/10+\varepsilon}\)

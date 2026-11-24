@@ -16708,7 +16708,7 @@
           "id": "ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT",
           "title": "Short rational monomial congruences over powerful moduli",
           "state": "proved",
-          "scope": "For fixed A and sufficiently large r, distinct e,f in [r,r+A], an r-full n, a unit K, and n^(1/(3r))<=Y<=n^(2/r), the number of unit rational pairs of height at most Y with U^e/V^f=K modulo n is O_(A,r,epsilon)(Y^(O_A(r^(-1/10))+epsilon)).",
+          "scope": "For fixed A,C with C>=2 and sufficiently large r, distinct e,f in [r,r+A], an r-full n, a unit K, and n^(1/(3r))<=Y<=n^(C/r), the number of unit rational pairs of height at most Y with U^e/V^f=K modulo n is O_(A,r,epsilon)(Y^(O_A(r^(-1/10))+epsilon)).",
           "canonical_source": "../unpublished/powerful-number-representations/main.tex",
           "checker": null,
           "artifact_hash": null,
@@ -16720,9 +16720,9 @@
           "formal_verification": false,
           "external_review": false,
           "review_status": "internal_only",
-          "verification_note": "Cancellation-free amplification followed by a generalized Vandermonde and a divisor of the powerful modulus.",
+          "verification_note": "The divisor-cap and injectivity conditions of the determinant proof hold for arbitrary fixed C in the upper height n^(C/r).",
           "dependency_coverage": "partial",
-          "graph_scope_note": "For fixed A and sufficiently large r, distinct e,f in [r,r+A], an r-full n, a unit K, and n^(1/(3r))<=Y<=n^(2/r), the number of unit rational pairs of height at most Y with U^e/V^f=K modulo n is O_(A,r,epsilon)(Y^(O_A(r^(-1/10))+epsilon))."
+          "graph_scope_note": "For fixed A,C with C>=2 and sufficiently large r, distinct e,f in [r,r+A], an r-full n, a unit K, and n^(1/(3r))<=Y<=n^(C/r), the number of unit rational pairs of height at most Y with U^e/V^f=K modulo n is O_(A,r,epsilon)(Y^(O_A(r^(-1/10))+epsilon))."
         },
         {
           "id": "ARITH-POWERFUL-ALL-FIXED-OFFSETS-DOUBLED-LEADING-SAVING",
@@ -16978,6 +16978,46 @@
               "expression": "O_epsilon(X^(1747/3000+epsilon))"
             }
           ]
+        },
+        {
+          "id": "ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE",
+          "title": "Rectangular rational congruence bound over powerful moduli",
+          "state": "proved",
+          "scope": "For sufficiently large k, a k-full n, h=floor(sqrt(k)/2000), and a unit K modulo n, the number of unit positive rational pairs with V T^k=K modulo n, H(T)<=n^(2/k) and H(V)<=n^(h/(64k)) is O_(k,epsilon)(n^(1/(4k)+epsilon)).",
+          "canonical_source": "../unpublished/powerful-number-representations/main.tex",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "../unpublished/powerful-number-representations/verification.json"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Coordinatewise amplification and a rectangular determinant separate amplified pairs in each selected residue class. The proof handles prime powers and composite powerful moduli.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For sufficiently large k, a k-full n, h=floor(sqrt(k)/2000), and a unit K modulo n, the number of unit positive rational pairs with V T^k=K modulo n, H(T)<=n^(2/k) and H(V)<=n^(h/(64k)) is O_(k,epsilon)(n^(1/(4k)+epsilon))."
+        },
+        {
+          "id": "ARITH-POWERFUL-DIRECT-COMPRESSION-SAVING",
+          "title": "Square-root growth of the saving coefficient for primitive powerful triples",
+          "state": "proved",
+          "scope": "For an absolute c0>0 and all sufficiently large k, primitive diagonal triples satisfy N_(k,k,k)(X) = O_(k,epsilon)(X^(2/k-c0 k^(-3/2)+epsilon)). For fixed u>=v>=0, this saves (c0/2)r^(-3/2) over 1/(r+u)+1/(r+v) for all sufficiently large r in terms of u,v.",
+          "canonical_source": "../unpublished/powerful-number-representations/main.tex",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "../unpublished/powerful-number-representations/verification.json"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Direct root-product compression, an elementary tuple count for small root products and the rectangular congruence bound for fixed c.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For an absolute c0>0 and all sufficiently large k, primitive diagonal triples satisfy N_(k,k,k)(X) = O_(k,epsilon)(X^(2/k-c0 k^(-3/2)+epsilon)). For fixed u>=v>=0, this saves (c0/2)r^(-3/2) over 1/(r+u)+1/(r+v) for all sufficiently large r in terms of u,v."
         }
       ],
       "open_questions": [
@@ -149744,7 +149784,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "lem:edge"
           }
         ]
@@ -149762,7 +149802,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "prop:graph"
           }
         ]
@@ -153478,7 +153518,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "thm:consecutive and Section 6 even grouped-coordinate argument"
           }
         ]
@@ -153514,7 +153554,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Section 6 normalization and graph alternatives"
           }
         ]
@@ -153532,7 +153572,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Final paragraph of Section 6"
           }
         ]
@@ -154709,7 +154749,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "thm:all-offsets and Section 9"
           }
         ]
@@ -154727,7 +154767,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Section 10, limiting grouped-graph obstruction"
           },
           {
@@ -156722,7 +156762,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "thm:all-offsets and Section 9"
           }
         ]
@@ -156740,7 +156780,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Section 8.1, rational amplification"
           }
         ]
@@ -156758,7 +156798,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Sections 8.2 and 8.3, determinant and divisor selection"
           }
         ]
@@ -156776,7 +156816,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Section 10.1, perturbation and random tripartite construction"
           }
         ]
@@ -156906,7 +156946,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+            "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
             "locator": "Theorem thm:fixed-offset, aligned offsets u=v; and Section 9, codegree reconstruction"
           }
         ]
@@ -159713,6 +159753,158 @@
             "locator": "Using all higher coordinates of the largest letter"
           }
         ]
+      },
+      {
+        "id": "SRC-ARITH-PLYMESSER-2026-SOURCE-SCOPE-NOTE",
+        "title": "Written current literature source-scope and transfer-gate audit",
+        "scope": "Complete written audit of source identities, numerical-quantity distinctions, explicit imported formalization premises and unclosed uniform-cover/coefficient-height gates.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+            "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+            "locator": "Sections1-6"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE",
+        "title": "Plymesser powerful-products inspected primary scope",
+        "scope": "Exact tagged v1.0.1 manuscript. Read written component/root, rational reduction, lifted-curve/reduced-bound/summation/final-assembly arguments and final tagged Lean premise declarations. Deep imported results remain hypotheses; no build/certificate replay.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf",
+            "sha256": "dbc3ac29ec50485a61c3f4119a06745c7d4475710701aeb0bb6f5597751e48a5",
+            "locator": "Sections3-8/10, especially Lemma5.5; exact author-tagged PDF"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "SRC-ARITH-PLYMESSER-QUADRATIC-PRIMARY-STATEMENTS",
+        "title": "Plymesser quadratic primary statements",
+        "scope": "Exact manuscriptv1.0.1 in repositoryv1.1.1. Only main statements and coefficient hypotheses inspected; no whole34-pageproof or companion formalization audit.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/plymesser-powerful-quadratics-hexagon2611.00699-v1.0.1.pdf",
+            "sha256": "1c1f06fa1f2b496582ceebbaf85fdf9ec85846a6a6363bb4a9a44dd80449178e",
+            "locator": "Introduction/Theorems1.1-1.2 statements only"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE",
+        "title": "Hexagon identity and explicitly conditional formal statements",
+        "scope": "The source is hexagon:2611.00602v1, not arXiv:2611.00602. It CLAIMS consecutive-number exponents1/4 and77/320. Actual final declarations retain3/5/6 literature hypotheses for fixed widths>=3/pairs/allwidths. This source-scope report is not an unconditional proof of those new exponents.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+            "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+            "locator": "Sections1-6"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE",
+        "title": "Lifted-curve conditional method and uniform-cover boundary",
+        "scope": "Given an appropriate Q-irreducible auxiliary curve, primitive coordinates and nonzero(3,2)levelh, the inspected Lemma5.5 route gives integral affine image degree2alpha+3beta, height max(1,L1^3T1^2), fibres<=2, conditional on its stated classical point-count input. The fixed/small-h cover needs x>=3|h|M. No uniform prescribed-sum cover or frequency bound follows.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+            "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+            "locator": "Sections1-6"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "ARITH-PLYMESSER-QUADRATIC-POSITIVE-LEADING-HEIGHT-GATE",
+        "title": "Quadratic positive-leading and coefficient-height gate",
+        "scope": "The companion CLAIMS fixed positive-leading nonsquare-discriminant exponent293/1220+epsilon and uniform estimate retaining L^nu with uncomputednu. N-b^3a^2 has negative leading coefficient and growing height, outside those hypotheses. Whole companion proof not audited.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+            "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+            "locator": "Sections1-6"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES",
+        "title": "Current classical and 2026 transfer comparisons",
+        "scope": "Chan7/19, Blomer-Schoebel61/180 and Reuss29/100 concern fixed differences; BS Corollary2 explicitly gives prescribed-sum2/5. HB global powerful triples differ from primitive coefficient-uniform cubic completions. Trifonov completions and Blomer-Pascadi Kloosterman statements do not automatically control pair/cycle frequency. This is not a priority or impossibility theorem.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+            "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+            "locator": "Sections1-6"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
+      },
+      {
+        "id": "GAP-ARITH-ERDOS943-UNIFORM-LIFTED-CURVE-AUXILIARY-COVER",
+        "title": "Uniform auxiliary-curve cover for growing prescribed-sum shifts",
+        "scope": "OPEN method gate: construct and sum a suitable coefficient/shift-uniform auxiliary-curve cover for the prescribed-sum balanced compatibility slices beyond the fixed/small-h ranges in the inspected source. This route also needs a valid saving calculation; it is not necessary for every possible improvement. All existing pointwise/full-pair/C6states remain unchanged.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+            "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+            "locator": "Sections1-6"
+          }
+        ],
+        "assessment": "Source-scope only; no certification of new unconditional exponents, complete deep imports, formal build or replay."
       }
     ],
     "implications": [
@@ -244023,7 +244215,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "lem:edge, including the real and imaginary quadratic norm arguments"
         },
         "dependency_coverage": "partial"
@@ -244038,7 +244230,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "prop:graph, grouped signed coefficient form"
         },
         "dependency_coverage": "partial"
@@ -244052,7 +244244,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:campana and Section 4, including both height-loss cases"
         },
         "dependency_coverage": "partial"
@@ -244597,7 +244789,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:difference and the higher-order optimization in Section 3"
         },
         "dependency_coverage": "partial"
@@ -246596,7 +246788,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:mixed-campana and Section 5"
         },
         "dependency_coverage": "partial"
@@ -247336,7 +247528,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "Section 6, normalization and graph alternatives"
         },
         "dependency_coverage": "partial"
@@ -247350,7 +247542,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:consecutive, Section 7"
         },
         "dependency_coverage": "partial"
@@ -247364,7 +247556,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "End of Section 7, singleton obstruction"
         },
         "dependency_coverage": "partial"
@@ -248455,7 +248647,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:consecutive, Section 7 even case"
         },
         "dependency_coverage": "partial"
@@ -248469,7 +248661,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:fixed-offset, Section 6.1"
         },
         "dependency_coverage": "partial"
@@ -248483,7 +248675,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:fixed-offset, Section 6.2"
         },
         "dependency_coverage": "partial"
@@ -248500,7 +248692,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "Section 10, rational obstruction and earlier offsets"
         },
         "dependency_coverage": "partial"
@@ -250319,7 +250511,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:monomial and Section 8"
         },
         "dependency_coverage": "partial"
@@ -250335,7 +250527,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:all-offsets and Section 9"
         },
         "dependency_coverage": "partial"
@@ -250349,7 +250541,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:all-offsets"
         },
         "dependency_coverage": "partial"
@@ -250364,7 +250556,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "Section 10.1, perturbation and tripartite model"
         },
         "dependency_coverage": "partial"
@@ -250804,7 +250996,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "Section 6.3, parity grouping, available cycles and the finite certificate"
         },
         "dependency_coverage": "partial"
@@ -251742,7 +251934,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "locator": "thm:two-power-diagonal and Section 9.1"
         },
         "dependency_coverage": "partial"
@@ -251952,6 +252144,96 @@
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
           "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
           "locator": "Using all higher coordinates of the largest letter"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-PLYMESSER-COUNTING-SOURCE-IDENTITY",
+        "premises": [
+          "SRC-ARITH-PLYMESSER-2026-SOURCE-SCOPE-NOTE",
+          "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE"
+        ],
+        "conclusion": "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+          "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+          "locator": "Sections2-3"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-PLYMESSER-LIFTED-CURVE-CONDITIONAL-SCOPE",
+        "premises": [
+          "SRC-ARITH-PLYMESSER-2026-SOURCE-SCOPE-NOTE",
+          "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE"
+        ],
+        "conclusion": "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+          "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+          "locator": "Sections2-3"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-PLYMESSER-QUADRATIC-STATEMENT-GATE",
+        "premises": [
+          "SRC-ARITH-PLYMESSER-2026-SOURCE-SCOPE-NOTE",
+          "SRC-ARITH-PLYMESSER-QUADRATIC-PRIMARY-STATEMENTS"
+        ],
+        "conclusion": "ARITH-PLYMESSER-QUADRATIC-POSITIVE-LEADING-HEIGHT-GATE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+          "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+          "locator": "Section4"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ARITH-PLYMESSER-CURRENT-TRANSFER-BOUNDARIES",
+        "premises": [
+          "SRC-ARITH-PLYMESSER-2026-SOURCE-SCOPE-NOTE",
+          "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE",
+          "SRC-ARITH-PLYMESSER-QUADRATIC-PRIMARY-STATEMENTS"
+        ],
+        "conclusion": "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+          "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+          "locator": "Sections1-5"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE",
+        "premises": [
+          "ARITH-POWERFUL-RATIONAL-PAIR-AMPLIFICATION",
+          "ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT"
+        ],
+        "conclusion": "ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/powerful-number-representations/main.tex",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
+          "locator": "lem:rectangular-rational and Section 9.2"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-POWERFUL-DIRECT-COMPRESSION-SAVING",
+        "premises": [
+          "ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE"
+        ],
+        "conclusion": "ARITH-POWERFUL-DIRECT-COMPRESSION-SAVING",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/powerful-number-representations/main.tex",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
+          "locator": "thm:compressed-diagonal and Section 9.2"
         },
         "dependency_coverage": "partial"
       }
@@ -292831,6 +293113,14 @@
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
                 "ARITH-POWERFUL-SUM-GRAPH-BOUND"
               ]
+            },
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections1/5: exact existing quantities and uniformity, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+              ]
             }
           ],
           "verification": "source_read",
@@ -292862,6 +293152,14 @@
               "nodes": [
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-SEVEN-NINETEENTHS",
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-FIVE-FOURTEENTHS"
+              ]
+            },
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections1/5: exact existing quantities and uniformity, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
               ]
             }
           ],
@@ -292895,6 +293193,14 @@
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-SEVEN-NINETEENTHS",
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-FIVE-FOURTEENTHS"
               ]
+            },
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections1/5: exact existing quantities and uniformity, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+              ]
             }
           ],
           "verification": "source_read",
@@ -292926,6 +293232,14 @@
               "nodes": [
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-SEVEN-NINETEENTHS",
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-FIVE-FOURTEENTHS"
+              ]
+            },
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections1/5: exact existing quantities and uniformity, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
               ]
             }
           ],
@@ -293568,6 +293882,14 @@
                 "ARITH-POWERFUL-FERMAT-BOX-GCD-EXPONENT",
                 "ARITH-POWERFUL-FIXED-OFFSET-MASS-SLACK-CONSTANT"
               ]
+            },
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections1/5: exact existing quantities and uniformity, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+              ]
             }
           ],
           "resource_type": "preprint",
@@ -294052,6 +294374,14 @@
               "nodes": [
                 "GAP-ARITH-ERDOS943-POINTWISE-KERNEL-PAIR-SAVING",
                 "GAP-ARITH-ERDOS943-BALANCED-SIX-CYCLE-POINTWISE"
+              ]
+            },
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections1/5: exact existing quantities and uniformity, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
               ]
             }
           ],
@@ -295072,6 +295402,238 @@
           ],
           "verification": "source_read",
           "verification_basis": "Checked the high-order moment difference method and its use of common-vector norms."
+        },
+        {
+          "id": "EXT-PLYMESSER-POWERFUL-PRODUCTS-HEXAGON-2026",
+          "title": "Counting powerful products of consecutive integers",
+          "citation": "Danny Plymesser, manuscriptv1.0.1,24October2026; Hexagon2611.00602v1 current page19November2026.",
+          "resource_type": "preprint",
+          "title_status": "source_title",
+          "identifiers": {
+            "hexagon": "2611.00602v1",
+            "doi": "10.5281/zenodo.23615335"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00602v1",
+            "https://hexagonmath.org/pdf/2611.00602v1",
+            "https://doi.org/10.5281/zenodo.23615335",
+            "https://github.com/dannyply/math-frontier/tree/v1.0.1",
+            "https://github.com/dannyply/math-frontier/releases/tag/v1.0.1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf",
+              "sha256": "dbc3ac29ec50485a61c3f4119a06745c7d4475710701aeb0bb6f5597751e48a5",
+              "locator": "Exact author-tagged GitHub PDF; not claimed byte-identical to other server renditions."
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Sections2-3: complete specified written root/reduction/lift/summation arguments and final tagged Lean premise declarations inspected; optimization/build/deep-import proofs not fully audited.",
+              "role": "context",
+              "nodes": [
+                "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE",
+                "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE",
+                "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE",
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Sections2-3: complete specified written root/reduction/lift/summation arguments and final tagged Lean premise declarations inspected; optimization/build/deep-import proofs not fully audited. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-PLYMESSER-POWERFUL-QUADRATICS-HEXAGON-2026",
+          "title": "Powerful values of quadratic polynomials",
+          "citation": "Danny Plymesser, manuscriptv1.0.1,18November2026; Hexagon2611.00699v1,20November2026.",
+          "resource_type": "preprint",
+          "title_status": "source_title",
+          "identifiers": {
+            "hexagon": "2611.00699v1",
+            "doi": "10.5281/zenodo.24348789"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00699v1",
+            "https://hexagonmath.org/pdf/2611.00699v1",
+            "https://doi.org/10.5281/zenodo.24348789",
+            "https://github.com/dannyply/math-frontier/tree/v1.1.1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/plymesser-powerful-quadratics-hexagon2611.00699-v1.0.1.pdf",
+              "sha256": "1c1f06fa1f2b496582ceebbaf85fdf9ec85846a6a6363bb4a9a44dd80449178e",
+              "locator": "Exact author-tagged GitHub PDF; not claimed byte-identical to other server renditions."
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section4: Introduction/Theorems1.1-1.2 statements and coefficient hypotheses only; no whole34-pageproof or companion Lean audit.",
+              "role": "context",
+              "nodes": [
+                "SRC-ARITH-PLYMESSER-QUADRATIC-PRIMARY-STATEMENTS",
+                "ARITH-PLYMESSER-QUADRATIC-POSITIVE-LEADING-HEIGHT-GATE",
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Section4: Introduction/Theorems1.1-1.2 statements and coefficient hypotheses only; no whole34-pageproof or companion Lean audit. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-PLYMESSER-IMPORT-CCDN-1904-13109",
+          "title": "The dimension growth conjecture, polynomial in the degree and without logarithmic factors",
+          "citation": "W.Castryck,R.Cluckers,P.Dittmann,K.H.Nguyen, Algebra and Number Theory14(2020),2261-2294; arXiv1904.13109v1.",
+          "resource_type": "preprint",
+          "title_status": "source_title",
+          "identifiers": {
+            "arxiv": "1904.13109v1"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/1904.13109v1"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section3: Theorem3 statement; Corollary4.1.4 complete proof/Remark4.1.5, not whole deep Theorem3 proof.",
+              "role": "context",
+              "nodes": [
+                "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Section3: Theorem3 statement; Corollary4.1.4 complete proof/Remark4.1.5, not whole deep Theorem3 proof. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-PLYMESSER-IMPORT-STEWART-THUE-1991",
+          "title": "On the number of solutions of polynomial congruences and Thue equations",
+          "citation": "C.L.Stewart, J.Amer.Math.Soc.4(1991),793-835.",
+          "resource_type": "journal_article",
+          "title_status": "source_title",
+          "identifiers": {},
+          "urls": [
+            "https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/s0894-0347-1991-1119199-x_0.pdf"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section3: primary793-796 statements and primitive-solution consequence only, not complete deep proof.",
+              "role": "context",
+              "nodes": [
+                "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE",
+                "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Section3: primary793-796 statements and primitive-solution consequence only, not complete deep proof. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-PLYMESSER-IMPORT-BOMBIERI-GUBLER-HEIGHTS-2006",
+          "title": "Heights in Diophantine Geometry",
+          "citation": "E.Bombieri and W.Gubler, Cambridge University Press,2006.",
+          "resource_type": "book",
+          "title_status": "source_title",
+          "identifiers": {},
+          "urls": [
+            "https://api.pageplace.de/preview/DT0400.9780511138096_A23689664/preview-9780511138096_A23689664.pdf"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section3: publisher-preview Lemma1.6.11 statement/displayed proof printed27, not whole book.",
+              "role": "context",
+              "nodes": [
+                "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Section3: publisher-preview Lemma1.6.11 statement/displayed proof printed27, not whole book. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-PLYMESSER-IMPORT-TAO-UNUSUAL-ANATOMY-2026",
+          "title": "Products of consecutive integers with unusual anatomy",
+          "citation": "Terence Tao, arXiv2603.27990v3,2026.",
+          "resource_type": "preprint",
+          "title_status": "source_title",
+          "identifiers": {
+            "arxiv": "2603.27990v3"
+          },
+          "urls": [
+            "https://arxiv.org/html/2603.27990v3#S3"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section3: exact Lemma3.1 statement freshly checked, not claimed fresh whole proof.",
+              "role": "context",
+              "nodes": [
+                "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Section3: exact Lemma3.1 statement freshly checked, not claimed fresh whole proof. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-BLOMER-PASCADI-KLOOSTERMAN-2607-24311",
+          "title": "Bilinear forms with Kloosterman sums via quadratic characters",
+          "citation": "Valentin Blomer and Alexandru Pascadi, arXiv2607.24311v1,27July2026.",
+          "resource_type": "preprint",
+          "title_status": "source_title",
+          "identifiers": {
+            "arxiv": "2607.24311v1"
+          },
+          "urls": [
+            "https://arxiv.org/abs/2607.24311v1",
+            "https://arxiv.org/html/2607.24311v1#S1.SS1"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section5: actual Theorems1.1/5.5 statements and surrounding1.1 scope, not whole proof. Phase/length/gcd gates remain.",
+              "role": "context",
+              "nodes": [
+                "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Section5: actual Theorems1.1/5.5 statements and surrounding1.1 scope, not whole proof. Phase/length/gcd gates remain. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
+        },
+        {
+          "id": "EXT-ARXIV-2611-00602-IDENTITY-DISAMBIGUATION",
+          "title": "Editing the Goal: Per-Token SAE Steering and Its Depth Limits in pi_0.5",
+          "citation": "Rocio Perales Valdes and Animesh Garg, arXiv2611.00602v1,31October2026.",
+          "resource_type": "preprint",
+          "title_status": "source_title",
+          "identifiers": {
+            "arxiv": "2611.00602v1"
+          },
+          "urls": [
+            "https://arxiv.org/abs/2611.00602"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "locator": "Section2: authoritative title/authors/submission identity ONLY; unrelated robotics source, no mathematical input.",
+              "role": "context",
+              "nodes": [
+                "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE"
+              ]
+            }
+          ],
+          "verification": "citation_only",
+          "verification_basis": "Section2: authoritative title/authors/submission identity ONLY; unrelated robotics source, no mathematical input. This scope imports no new unconditional exponent, full imported proof, formal build or replay assurance."
         }
       ],
       "internal_citations": [
@@ -301395,6 +301957,41 @@
           "inspection_scope": "Checked exact coefficient ratios, central binomial inequalities, and summation of moment norm factors.",
           "novelty_limit": "The theorem concerns bounded simultaneous operator realizations of the normalized angular moments.",
           "remaining_obligation": "Extensions to other angular coefficients require a separate representing law or an obstruction."
+        },
+        {
+          "id": "ANT-PLYMESSER-2026-SOURCE-CONDITIONAL-METHOD-AND-UNIFORMITY",
+          "title": "Author manuscripts, conditional geometric lift and precise transfer gates",
+          "relation": "comparison_only",
+          "nodes": [
+            "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE",
+            "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE",
+            "ARITH-PLYMESSER-QUADRATIC-POSITIVE-LEADING-HEIGHT-GATE",
+            "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES",
+            "GAP-ARITH-ERDOS943-UNIFORM-LIFTED-CURVE-AUXILIARY-COVER"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-PLYMESSER-POWERFUL-PRODUCTS-HEXAGON-2026",
+              "locator": "Lemma5.5,Sections3-8/10 and tagged final Lean premise declarations",
+              "statement": "Claimed consecutive counts; inspected conditional geometric lift; fixed/small-h cover; no our replay."
+            },
+            {
+              "paper_id": "EXT-PLYMESSER-POWERFUL-QUADRATICS-HEXAGON-2026",
+              "locator": "Introduction/Theorems1.1-1.2",
+              "statement": "Positive-leading nonsquare discriminant and coefficient-height gates; statements only."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+              "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+              "locator": "Sections1-6"
+            }
+          ],
+          "application": "Potential curve-lift method conditional on a suitable uniform growing-shift cover and summation; current quadratic substitution has wrong sign and growing height.",
+          "novelty_limit": "No full prescribed-sum exponent, worldwide best-known/priority certificate or full deep-import proof audit.",
+          "remaining_obligation": "Uniform auxiliary-cover/summation route remains OPEN; no impossibility assertion for other routes.",
+          "inspection_scope": "Frozen receipt14de6638 details exact portions read; no formal build/replay; quadratic whole proof, deep CCDN/Stewart proofs and published HB15 log comparison remain unaudited."
         }
       ]
     },
@@ -436456,7 +437053,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "sha256": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
           "claims": [
             "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
             "ARITH-POWERFUL-SUM-GRAPH-BOUND",
@@ -436477,7 +437074,9 @@
             "ARITH-POWERFUL-SHORT-MONOMIAL-DIVISOR-DETERMINANT",
             "ARITH-POWERFUL-RATIONAL-PAIR-AMPLIFICATION",
             "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING",
-            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING",
+            "ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE",
+            "ARITH-POWERFUL-DIRECT-COMPRESSION-SAVING"
           ],
           "dependencies": [
             "EXT-BOMBIERI-PILA-UNIFORM-AFFINE-CURVE-COUNT",
@@ -436492,9 +437091,19 @@
           ],
           "statements": [
             {
-              "locator": "thm:all-offsets",
+              "locator": "thm:compressed-diagonal",
               "kind": "theorem",
               "line": 51,
+              "title": "thm:compressed-diagonal",
+              "nodes": [
+                "ARITH-POWERFUL-DIRECT-COMPRESSION-SAVING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "thm:all-offsets",
+              "kind": "theorem",
+              "line": 70,
               "title": "thm:all-offsets",
               "nodes": [
                 "ARITH-POWERFUL-ALL-FIXED-OFFSETS-DOUBLED-LEADING-SAVING"
@@ -436504,7 +437113,7 @@
             {
               "locator": "thm:binary",
               "kind": "theorem",
-              "line": 67,
+              "line": 86,
               "title": "thm:binary",
               "nodes": [
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
@@ -436515,7 +437124,7 @@
             {
               "locator": "thm:difference",
               "kind": "theorem",
-              "line": 100,
+              "line": 119,
               "title": "thm:difference",
               "nodes": [
                 "ARITH-POWERFUL-SUM-LARGE-COPRIME-DIFFERENCES"
@@ -436525,7 +437134,7 @@
             {
               "locator": "thm:campana",
               "kind": "theorem",
-              "line": 123,
+              "line": 142,
               "title": "thm:campana",
               "nodes": [
                 "ARITH-POWERFUL-SUM-CAMPANA-POINTWISE"
@@ -436535,7 +437144,7 @@
             {
               "locator": "thm:two-power-diagonal",
               "kind": "theorem",
-              "line": 133,
+              "line": 152,
               "title": "thm:two-power-diagonal",
               "nodes": [
                 "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
@@ -436545,7 +437154,7 @@
             {
               "locator": "thm:even-diagonal",
               "kind": "theorem",
-              "line": 152,
+              "line": 171,
               "title": "thm:even-diagonal",
               "nodes": [
                 "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING"
@@ -436555,7 +437164,7 @@
             {
               "locator": "thm:mixed-campana",
               "kind": "theorem",
-              "line": 169,
+              "line": 188,
               "title": "thm:mixed-campana",
               "nodes": [
                 "ARITH-POWERFUL-TRIPLES-MIXED-GCD-BOUND"
@@ -436565,7 +437174,7 @@
             {
               "locator": "thm:fixed-offset",
               "kind": "theorem",
-              "line": 187,
+              "line": 206,
               "title": "thm:fixed-offset",
               "nodes": [
                 "ARITH-POWERFUL-FIXED-OFFSET-SURFACE-SAVING",
@@ -436576,7 +437185,7 @@
             {
               "locator": "thm:consecutive",
               "kind": "theorem",
-              "line": 210,
+              "line": 229,
               "title": "thm:consecutive",
               "nodes": [
                 "ARITH-POWERFUL-CONSECUTIVE-TRIPLES-SAVING"
@@ -436586,7 +437195,7 @@
             {
               "locator": "thm:monomial",
               "kind": "theorem",
-              "line": 220,
+              "line": 239,
               "title": "thm:monomial",
               "nodes": [
                 "ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT"
@@ -436596,7 +437205,7 @@
             {
               "locator": "lem:edge",
               "kind": "lemma",
-              "line": 244,
+              "line": 263,
               "title": "lem:edge",
               "nodes": [
                 "ARITH-POWERFUL-SUM-UNIFORM-FIXED-VERTEX-EDGE"
@@ -436606,10 +437215,20 @@
             {
               "locator": "prop:graph",
               "kind": "proposition",
-              "line": 294,
+              "line": 313,
               "title": "prop:graph",
               "nodes": [
                 "ARITH-POWERFUL-SUM-OMITTED-COORDINATE-GRAPH-BOUND"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "lem:rectangular-rational",
+              "kind": "lemma",
+              "line": 1297,
+              "title": "lem:rectangular-rational",
+              "nodes": [
+                "ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE"
               ],
               "mapping_kind": "exact-statement"
             }
@@ -436619,7 +437238,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/paper.pdf",
-          "sha256": "acade6b47661be2d7e6caf7483197d6181db2bebf1336259d0a306d4f6a1e875",
+          "sha256": "5e61e752d8fa2cb487bbe2ec45db20179bed27a44d196fe7cd0239ac64b670df",
           "claims": [
             "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
             "ARITH-POWERFUL-SUM-GRAPH-BOUND",
@@ -436635,7 +437254,9 @@
             "ARITH-POWERFUL-ALL-FIXED-OFFSETS-DOUBLED-LEADING-SAVING",
             "ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION",
             "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING",
-            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING",
+            "ARITH-POWERFUL-RECTANGULAR-RATIONAL-CONGRUENCE",
+            "ARITH-POWERFUL-DIRECT-COMPRESSION-SAVING"
           ],
           "dependencies": [],
           "gaps": [],
@@ -436645,7 +437266,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/README.md",
-          "sha256": "4ee9f9dc17b736614699f145649fbf488879e077762446265ada228a8ebaab5d",
+          "sha256": "f905f837b43c3355b626a09bce1775b7d282a86ac30f3e61705db16260a26811",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -436655,7 +437276,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/metadata.json",
-          "sha256": "8871b53d1cc2c039c276626cf744f852fc5ea2267bf532dc7baf5a096d9a2dd3",
+          "sha256": "9de30949720bf02f96caf6b4423d8be60729f361b74e046147224400da562009",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -436665,7 +437286,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/verification.json",
-          "sha256": "7e97d6a2ca64ec53dfa702a981fe8aa1f959dc4178cd3876a87c9c0bb23e0346",
+          "sha256": "5d5fd5d9e923a3564962c83b8bfbc0242322be4b867717cd68106cac4332d76a",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -438734,6 +439355,51 @@
           "statements": [],
           "role": "evidence",
           "explanation": "Exact symmetric grouped-program obstruction and selected higher-degree tests."
+        },
+        {
+          "path": "arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md",
+          "sha256": "61117e34d0455a427a2c8ae31daf31b8ebf2ac00f25f6ae7f747c72a527afa8e",
+          "claims": [
+            "SRC-ARITH-PLYMESSER-2026-SOURCE-SCOPE-NOTE",
+            "ARITH-PLYMESSER-HEXAGON-IDENTITY-AND-COUNTING-HYPOTHESIS-SCOPE",
+            "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE",
+            "ARITH-PLYMESSER-QUADRATIC-POSITIVE-LEADING-HEIGHT-GATE",
+            "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
+          ],
+          "dependencies": [
+            "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE",
+            "SRC-ARITH-PLYMESSER-QUADRATIC-PRIMARY-STATEMENTS"
+          ],
+          "gaps": [
+            "GAP-ARITH-ERDOS943-UNIFORM-LIFTED-CURVE-AUXILIARY-COVER"
+          ],
+          "statements": [],
+          "role": "proof",
+          "explanation": "Source-scope audit and conditional method gates; no new unrestricted exponent or computational/formal assurance."
+        },
+        {
+          "path": "arithmetic/sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf",
+          "sha256": "dbc3ac29ec50485a61c3f4119a06745c7d4475710701aeb0bb6f5597751e48a5",
+          "claims": [
+            "SRC-ARITH-PLYMESSER-POWERFUL-PRODUCTS-PRIMARY-SCOPE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Exact tagged author primary with only the recorded inspection scope."
+        },
+        {
+          "path": "arithmetic/sources/plymesser-powerful-quadratics-hexagon2611.00699-v1.0.1.pdf",
+          "sha256": "1c1f06fa1f2b496582ceebbaf85fdf9ec85846a6a6363bb4a9a44dd80449178e",
+          "claims": [
+            "SRC-ARITH-PLYMESSER-QUADRATIC-PRIMARY-STATEMENTS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Exact tagged author primary with only the recorded inspection scope."
         }
       ]
     },

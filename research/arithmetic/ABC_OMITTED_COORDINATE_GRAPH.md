@@ -505,3 +505,171 @@ From the repository root run
 ```sh
 python3 research/arithmetic/verify_abc_grouped_fulloc_obstruction.py
 ```
+
+
+## Counting collisions by their common shift
+
+In the notation of (1), write \(s_T=\sum_{i\in I_T}\alpha_{T,i}\) and
+\(h_T=\sum_{i\in I_T}i\alpha_{T,i}\) for the free mass and weighted free
+mass on \(T=A,B\). Let \(w_T\) be any lower exponent bound on its frozen
+modulus. Upper bounds for \(h_T\) can be used throughout. For either free
+letter, use the fixed nonzero difference cap
+\[
+ d_T=\min\left\{s_T,\ \min_{e\ge 2}
+             2\!\!\sum_{\substack{i\in I_T\\e\nmid i}}\alpha_{T,i}\right\},
+\]
+where the minimum uses any chosen finite set of fixed degrees. For a
+prescribed unit residue modulo \(M_C\), use the cap
+\[
+ \ell_T=\min\left\{s_T,\ (h_T-w_C)_+,\
+ \min_{\varnothing\ne J\subseteq I_T}
+ \left(s_T-\sum_{i\in J}\alpha_{T,i}
+      +\left(\sum_{i\in J}(i/g_J)\alpha_{T,i}-w_C\right)_+\right)\right\},
+ \qquad g_J=\gcd(J).
+\]
+A cap whose required degrees or heights are unavailable may be omitted
+from the minimum. These caps count the values on one letter. Define
+\[
+ \sigma=\bigl(\min\{h_A-w_B,h_B-w_A,1-w_A-w_B\}\bigr)_+,
+ \qquad
+ \rho=\min\{d_A+d_B,\ d_A+\ell_B,\ d_B+\ell_A\}.
+\]
+Then the exponent of the off-diagonal collision count in a fixed fibre
+is at most \(\sigma+\rho+\varepsilon\). Consequently the box exponent
+is at most
+\[
+ f_A+f_B+f_C+
+   \max\left\{L_C-f_C,\ \frac{L_C-f_C+\sigma+\rho}{2}\right\}
+   +\varepsilon.
+ \tag{3}
+\]
+For tagged moduli the same estimate holds on the tagged family. The
+bounds in (1) and (3) can be minimized over the same family of boxes.
+
+To prove the estimate, fix the frozen coordinates. Primitivity in any
+nonempty fibre makes \(M_A,M_B,M_C\) pairwise coprime. Subtract the two
+signed equations for a collision with common value \(w\). There is a
+nonzero integer \(k\) such that
+\[
+ u-u'=M_B k,\qquad v-v'=\pm M_A k.
+\]
+The two free heights bound \(|k|\) from above, as does the complete
+height bound \(M_A M_B |k|\le X\). The number of possible shifts is
+therefore \(O_d(X^\sigma)\). If one of the three upper exponents inside
+the minimum is strictly negative, there are no off-diagonal collisions
+for sufficiently large \(X\).
+
+Fix one shift \(k\). Each of the differences on \(A\) and \(B\) is
+now fixed and nonzero. A free value determines its other copy. The
+trivial cap \(s_T\) counts possible free values. Freezing both copies
+of the coordinates with degrees not divisible by \(e\) and applying
+the uniform binary-form bound to the two remaining \(e\)-th powers
+gives the other cap in \(d_T\). Given a choice on \(A\), reduction of
+the signed equation modulo \(M_C\) determines one unit residue for
+\(v\), and the same holds with the letters exchanged. The whole-value
+interval bound gives \((h_T-w_C)_+\). For the subgroup bound, fix the free
+coordinates outside \(J\) in the chosen copy on \(T\) and solve a unit
+\(g_J\)-th power congruence for the grouped root. It has \(O_{g_J,\varepsilon}
+(X^\varepsilon)\) residue classes, and the weighted root height gives
+the displayed interval bound. The cap \(d_B\) and the cap \(\ell_B\)
+both apply after choosing the value on \(A\), so they contribute
+\(\min(d_B,\ell_B)\). Choosing \(B\) first gives \(d_B+\min(d_A,\ell_A)\).
+This proves the paired cap \(\rho\). Once \(u,v\) are known, the signed
+equation determines \(w\). Multiplying by the number of shifts and
+using \(N^2\le W(N+E)\) as in (1) proves (3).
+[Zeng, Corollary 3.2 and Proposition 4.1](https://hexagonmath.org/pdf/2611.00621v1)
+
+### Releasing or freezing all higher coordinates
+
+For a six-index model, put \(r_T=L_T-\sum_{i\le6}\alpha_{T,i}\).
+One can place the entire tail in either the free or the frozen part
+of a letter. When it is frozen, use
+\[
+ w_T\ge \sum_{i\le6,\ i\notin I_T}i\alpha_{T,i}+7r_T,
+ \qquad h_T=\sum_{i\le6,\ i\in I_T}i\alpha_{T,i}.
+\]
+If the complete value of this letter is comparable to \(X\), the
+identity \(M_Tu_T\asymp X\) also gives \(w_T\ge 1-h_T\) in the limiting
+exponent. When the tail is free, include \(r_T\) in \(s_T\) and
+use \(h_T\le 1-w_T\) with the \(w_T\) obtained from the early
+frozen degrees. Charge all of \(r_T\) in the mass of degrees not
+divisible by \(e\) when computing a grouped difference cap. A subgroup
+lock can use early degrees alone, with the released tail included in
+the cost of its complement. The whole-value lock uses the full
+upper bound for \(h_T\). The same frozen-modulus improvement applies
+when the tail of \(C\) is frozen and its complete value is comparable
+to \(X\), with \(1-h_C\) obtained using just the early free degrees.
+These estimates use only total tail masses. Cuts based on the
+height of a given letter require that letter to be tagged in the
+program. Among the original positive terms, \(a+b=c\asymp X\)
+ensures both \(c\) and \(\max(a,b)\) are comparable to \(X\).
+[Whole-tail modulus bound](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#using-all-higher-coordinates-of-the-largest-letter)
+
+### The symmetric \(4/7\) profile
+
+For the symmetric point above, release \(\{1,3\}\) on both \(A\) and
+\(B\) and freeze nothing on \(C\). In units of \(1/2100\), each
+free letter has \(s_T=468\), \(f_T=232\), \(h_T=1068\), and the
+frozen-modulus lower bound from the six-index data is \(w_T=974\).
+The cubic difference cap is \(336\) on each side. Thus
+\(\sigma=94\), \(\rho\le672\), and the diagonal and off-diagonal
+terms in (3) are \(1164/2100\) and \(1197/2100\). The bound is
+\(399/700\), cutting the \(4/7\) point by \(1/700\) in the original
+six-index variables. If either of the two free letters is comparable
+to \(X\), its frozen-modulus exponent can be raised to \(1032\)
+and the upper bound becomes \(292/525\).
+
+### Direct congruence bound from two residue energies
+
+Choose a set \(O_C\) of frozen coordinates on letter \(C\). Write
+\(f_C=\sum_{i\in O_C}\alpha_{C,i}\), and let \(w_C\) be a lower bound
+for the exponent of the resulting fixed coefficient \(M_C\), including
+the small exceptional coefficient. Release every coordinate on letters
+\(A,B\). Their full monomial products are denoted \(u,v\). For each fixed
+choice on \(C\), the signed equation implies
+\[
+u\equiv\gamma v\pmod{M_C}
+\]
+for a unit \(\gamma\), because the exceptional coefficients of \(A,B\)
+are coprime to \(M_C\) in any nonempty primitive box. Only unit values
+of \(u\) and \(v\) contribute. Each pair of full products determines the
+full value of the third letter. The divisor bound for the fixed number
+of coordinates bounds the tuple multiplicity at subpower cost.
+
+For \(T=A,B\), choose nonempty disjoint index groups
+\(G_{T,1},G_{T,2}\) with fixed positive divisors \(g_{T,j}\) of their
+indices. Set \(p_{T,j}=\sum_{i\in G_{T,j}}\alpha_{T,i}\) and
+\(H_{T,j}=\sum_{i\in G_{T,j}}(i/g_{T,j})\alpha_{T,i}\).
+Let \(E_T\) count pairs of permitted full products in the same
+residue class modulo \(M_C\). Freeze both copies of the coordinates
+outside the two groups. Applying (2) to the two resulting grouped root
+sets, uniformly in the unit twist from the fixed coordinates, gives
+\[
+ E_T\ll_{d,\varepsilon}X^{K_T+\varepsilon},\qquad
+ K_T=2L_T-p_{T,1}-p_{T,2}
+      +\tfrac12\!\sum_{j=1}^2(2H_{T,j}-w_C)_+.
+\]
+Cauchy–Schwarz on the two residue multiplicity functions bounds all
+congruent pairs by \(\sqrt{E_A E_B}\). Restoring the \(O_d(X^{f_C})\)
+choices of the frozen coordinates gives
+\[
+ D\le L_A+L_B+f_C-\tfrac12\!\sum_{\substack{T=A,B\\j=1,2}}p_{T,j}
+       +\tfrac14\!\sum_{\substack{T=A,B\\j=1,2}}(2H_{T,j}-w_C)_+
+       +\varepsilon .
+\]
+The power signs do not affect the argument. All unused higher coordinates
+contribute to the \(L_T\) terms, so the formula holds uniformly for their
+possible distributions. If every higher coordinate on a large letter \(C\)
+is frozen, one may instead use the lower bound for \(w_C\) from the known
+height of that letter and the complement of \(O_C\).
+
+At the symmetric \(4/7\) profile, freeze degree \(4\) of \(C\) and
+use \(G_{T,1}=\{3\},G_{T,2}=\{4\}\) on both released letters. In units of
+\(1/2100\), one has \(L_T=700,\ f_C=200,\ w_C=800\) and the root
+cardinality and height exponents are \(300,200\). Both positive parts
+vanish on each letter, giving \(D\le1100/2100=11/21\).
+At the symmetric \(7/12\) profile use \(O_C=\{4\}\) and
+\(G_{T,1}=\{3\},G_{T,2}=\{2,4\}\). In units of \(1/396\), the two
+cardinality exponents are \(54,54\) and the heights are \(54,90\), with
+\(L_T=132,\ f_C=36,\ w_C=144\). Thus \(K_T=174\) on each letter and
+the bound is \(D\le210/396=35/66\).

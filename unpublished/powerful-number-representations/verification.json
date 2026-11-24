@@ -26,7 +26,11 @@
     "Checked the truncated moment identity for D at least 5. Replayed both exact parity certificates and checked the finite multiplier transfer to errors of order k^(-1/10).",
     "The standalone checker rejected both certificates after increasing their target cost. It accepted the earlier even-order certificate after the checker extension.",
     "Scanned 24 small prime-power boxes. The 118240 ratio pairs had 116 non-singleton fibers, all arising from exact rational equalities. The scan is diagnostic.",
-    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all sixteen PDF pages."
+    "Checked the two height-dependent conditions in the general determinant proof after replacing the upper height by n^(C/r) for every fixed C.",
+    "Checked prime-exponent division, coprimality and injectivity for the direct compression T=R(a)/R(b), V=W(a)/W(b). Ran 700 exact coprime compression cases and 1005 integer parameter checks.",
+    "Checked the rectangular determinant, the Taylor stability threshold and the capped-divisor construction after discarding a bounded product of small prime powers. Ran 28 exact local determinant checks and five prime-power or composite divisor checks.",
+    "Checked the product-of-coordinates counting threshold, the summation over k-full targets and the fixed-offset transfer by monotonicity.",
+    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all seventeen PDF pages."
   ],
   "numerical_exponents": [
     {
@@ -69,8 +73,8 @@
     }
   ],
   "edition_sha256": {
-    "main.tex": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
-    "paper.pdf": "acade6b47661be2d7e6caf7483197d6181db2bebf1336259d0a306d4f6a1e875"
+    "main.tex": "e1a1ba2a3cf1d1e4e75dba2a04a3fe052567fe946cc51fd2fe7adc6292e8559d",
+    "paper.pdf": "5e61e752d8fa2cb487bbe2ec45db20179bed27a44d196fe7cd0239ac64b670df"
   },
   "independent_pdf_only_review": "unperformed",
   "external_specialist_review": "unperformed",
@@ -205,7 +209,7 @@
     "unit_condition": "numerators, denominators and K coprime to n",
     "powerful_order": "r",
     "exponents": "distinct e,f in [r,r+A] with A fixed",
-    "height_range": "n^(1/(3r)) <= Y <= n^(2/r)",
+    "height_range": "n^(1/(3r)) <= Y <= n^(C/r), for any fixed C >= 2",
     "fiber_bound": "O_(A,r,epsilon)(Y^(O_A(r^(-1/10))+epsilon))",
     "prime_power_scan": {
       "boxes": 48,
@@ -252,5 +256,15 @@
         }
       }
     }
+  },
+  "direct_compression": {
+    "diagonal_saving": "(1/512000) k^(-3/2) for all sufficiently large k",
+    "fixed_offsets_saving": "(1/1024000) r^(-3/2) for all sufficiently large r in terms of the offsets",
+    "modular_lemma": "For k-full n, h=floor(sqrt(k)/2000), H(T)<=n^(2/k), H(V)<=n^(h/(64k)): O_(k,epsilon)(n^(1/(4k)+epsilon)) unit rational pairs with V T^k=K modulo n.",
+    "proof": "Section 9.2",
+    "diagnostic_compression_cases": 700,
+    "diagnostic_integer_parameter_cases": 1005,
+    "diagnostic_local_determinants": 28,
+    "diagnostic_divisor_cases": 5
   }
 }
