@@ -407,3 +407,101 @@ inequality cuts the symmetric point by
  \frac{7}{12}-\frac{37}{66}=\frac1{44}.
 \]
 [Zeng, equation (8.7)](https://hexagonmath.org/pdf/2611.00621v1)
+
+### An asymmetric FullOC witness at smaller radical budgets
+
+Zeng's FullOC program also has an asymmetric feasible segment on
+\(243/244\le\lambda\le1\). Put \(u=244(1-\lambda)\) and divide all
+entries of this table by \(1464\).
+
+| Letter | \(\alpha_{1}\) | \(\alpha_{2}\) | \(\alpha_{3}\) | \(\alpha_{4}\) | \(\alpha_{5}\) | \(\alpha_{6}\) | Total | Fourier variable |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|
+| \(a\) | \(80-10u\) | \(62+4u\) | \(198\) | \(142-10u\) | \(0\) | \(0\) | \(496-10u\) | \(336-12u\) |
+| \(b,c\) | \(67+3u\) | \(68-2u\) | \(198\) | \(130+2u\) | \(0\) | \(0\) | \(484+2u\) | \(198\) |
+
+The exponent coordinate is \(D=(854-2u)/1464=7/12-(1-\lambda)/3\).
+The total radical budget is \(\lambda\). Realizing each tail at degree
+seven gives weighted height exactly one on every letter.
+
+The [exact witness verifier](verify_abc_fulloc_asymmetric_witness.py)
+checks the root rows, all \(64^3\) geometric choices, and all \(181{,}440\)
+FullOC collision instances with all 15 exponent pairs. Each affine
+inequality is checked at \(u=0,1\). For each positive part or outer
+maximum it uses an affine lower bound obtained by choosing the
+lexicographically larger pair of constant and slope. It tests each
+difference cap separately, since \(\max(d,\min_i x_i)\ge D\) follows
+from \(\max(d,x_i)\ge D\) for every \(i\). This gives a lower bound on
+the finite program throughout the interval. The old program cannot
+give an upper exponent \(7/12-s(1-\lambda)\) with \(s>1/3\) on any left
+neighborhood of \(1\). [FullOC inequalities and program, §§2, 4–6 and 8](https://hexagonmath.org/pdf/2611.00621v1)
+
+The sparse-root bound excludes the entire segment. Choose \(A=b\),
+\(B=c\), \(C=a\), \(I_A=\{1,\ldots,6\}\), \(G_1=\{2,4\}\) with
+\(g_1=2\), \(G_2=\{3\}\) with \(g_2=3\), \(I_B=\{2,4\}\), and
+\(O_C=\varnothing\). The difference degree \(e=2\) gives \(\delta=0\).
+The two positive-part penalties vanish on the interval, so the
+energy exponent is twice the mass of degree one on \(b\) plus the
+masses of degrees two, three, and four. The off-diagonal term in (1)
+dominates the diagonal term and gives the upper exponent
+\(205/366-(1-\lambda)/6\). The excess of the proposed witness exponent
+over this bound is \(17/732-(1-\lambda)/6\ge 11/488\).
+
+### A \(4/7\) obstruction for the grouped six-index program
+
+In units of \(1/2100\), give each letter first-six masses
+\((168,0,300,200,25,0)\), total mass \(700\), and Fourier variable
+\(300\). Set \(D=1200/2100=4/7\). The projected height on each
+letter is \(1993+7\cdot7=2042\) in the same units. The lift with
+\(5\) additional mass at degree \(15\) and \(2\) at degree \(16\)
+has weighted height exactly \(2100\). The relaxed six-index
+budget, pair and Fourier constraints hold by substitution.
+
+The minima of the geometric rows and of (1) at this point are
+both \(4/7\). For example, the geometric choice
+\((I_a,I_b,I_c)=(\{1,3\},\{1,3\},\varnothing)\) gives maximum
+\(\max(2100-936,1200)/2100=4/7\). For (1), use the degree-three
+and degree-four groups on \(A\), release \(I_B=\{3\}\), and take
+\(O_C=\varnothing\). The degree-three difference cap is zero,
+\(K=886/2100\), and the off-diagonal term is \(4/7\).
+
+The [exact verifier](verify_abc_grouped_fulloc_obstruction.py)
+computes both minima using scaled integers. Symmetry reduces the
+geometric choices to multiplicities in \(\{0,1,2,3\}\) for each
+positive-mass degree. For the collision rows, it takes every pair
+of disjoint subsets on \(A\), every release on \(B\), every lock on
+\(C\), and every subgroup lock inside the chosen release on \(B\).
+Removing a zero-mass degree from a group can only increase its
+greatest common divisor and decrease its root height. The verifier
+also allows empty support groups with height zero, so its search
+includes a bound at least as strong as any choice involving
+zero-mass degrees. For any fixed group, its greatest common
+divisor gives the smallest root height. This gives a \(4/7\) lower obstruction for the finite exponent program.
+
+The full-side common-power graph also permits this point. In the
+lift, a common power can remove at most \(305/2100\) from either
+free letter, attained by grouping degrees \(3\) and \(15\).
+Both graph vertex masses are therefore at least \(395/2100\).
+The least graph right-hand side is
+\(1/3+(3/2)(395/2100)=517/840\), attained by those groups
+because their combined root height is \(650/2100<1/2\).
+
+The same lift survives projection through degree seven, and in
+fact through degree fourteen. In that range the individually
+retained support is unchanged. Raising the cutoff increases the
+lower bound for the frozen modulus \(M_B\) and can only decrease
+the collision upper bounds. The new difference degrees in this
+range divide none of the positive-mass indices. The minima at
+cutoff fourteen are still \(4/7\). At cutoff fifteen the collision
+minimum becomes \(2327/4200\) for this lift. The cut uses
+\(G_1=\{4\}\), \(G_2=\{3,15\}\), \(I_B=\{1,3,5,15\}\),
+\(O_C=\{5,15\}\), and \(J=\{3\}\) for the coordinate lock.
+Exposing both tail degrees gives \(2293/4200\) with
+\(G_1=\{3,15\}\), \(G_2=\{4,16\}\),
+\(I_B=\{1,3,5,15,16\}\), \(O_C=\{5,15,16\}\), and \(J=\{3\}\).
+These latter cuts concern the indicated lift.
+
+From the repository root run
+
+```sh
+python3 research/arithmetic/verify_abc_grouped_fulloc_obstruction.py
+```

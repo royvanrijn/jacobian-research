@@ -58,6 +58,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-POWERFUL-TRIPLES-ADAPTIVE-FOURIER-BOUND | proved | ordered positive (p,q,r)-full triples a+b=c<=X | fixed p,q,r>=2, primitivity optional | upper: O_(p,q,r,epsilon)(X^(Phi(p)+Phi(q)+Phi(r)+epsilon)) |  |
 | ARITH-POWERFUL-TRIPLES-GROUPED-FOURIER-SAVING | proved | ordered positive (p,q,r)-full triples a+b=c<=X | fixed offsets u>=v>=0, p=r+u,q=r+v and large r | upper: O(X^(1/p+1/q-(1/sqrt(2)-o(1))*sqrt(log r)/r^(3/2)+epsilon)) |  |
 | ARITH-ABC-EXCEPTIONAL-SET-SEVEN-TWELFTHS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | fixed 0<lambda<=1 | upper: O_epsilon(X^(7/12+epsilon)) |  |
+| ARITH-ABC-EXCEPTIONAL-SET-1747-3000 | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | fixed 0<lambda<=1 | upper: O_epsilon(X^(1747/3000+epsilon)) |  |
 | EXT-JC2-DEGREE-100 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 101 |  |
 | EXT-JC2-DEGREE-104 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 105 |  |
 | EXT-JC2-DEGREE-107 | conditional | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1 |
@@ -458,6 +459,32 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | EXT-SALAZAR-POSITIVE-JACKSON-GAMMA-HANKEL | proved | Hankel determinants | Positive Jackson q-gamma, 0<q<1 and increasing positive orders | lower: strictly greater than zero |  |
 | EXT-ABC-BBLT-LAMBDA-COUNT | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | fixed 0<lambda<=2 | upper: O_epsilon(X^((23lambda+3)/40+epsilon)) |  |
 | EXT-ABC-BBLT-THREE-FIFTHS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | fixed 0<lambda<1 | upper: O_(lambda,epsilon)(X^(3/5+epsilon)) |  |
+| ARITH-POWERFUL-SLICE-INFINITY-POLE-BOUND | proved | proper-power contribution k/(dr) | Geometrically integral projective plane slice with nonconstant coordinate functions and k\|r | upper: max(gcd(p,q)/max(p,q),gcd(p,r)/r,gcd(q,r)/r), with the equal-plane-exponent refinement in (1a) |  |
+| ARITH-POWERFUL-FERMAT-BOX-GCD-EXPONENT | proved | power of M in the reducible-slice term | Coefficient-uniform primitive rectangular count; r distinguished, Lambda as in (1) or (1a) | upper: min(1/3,sqrt(r/((r-1)*max(p,q))),Lambda) |  |
+| ARITH-POWERFUL-FIXED-OFFSET-MASS-SLACK-CONSTANT | proved | coefficient of s^(-1/2) in maximum normalized mass sum above one | Competitive fixed-offset boxes of base order s | upper: (1+sqrt(3))/4, or 2/3 with the two stated hypotheses |  |
+| ARITH-POWERFUL-VZERO-EXPLICIT-SURFACE-ERROR | proved | coefficient of the s^(-5/2) exponent error | Primitive positive triples of orders (s+u,s,s) for fixed u>=0 | upper: 3*(1+sqrt(3))/4 |  |
+| ARITH-POWERFUL-MONOMIAL-TAYLOR-STABILITY | proved | sufficient prime-adic congruence depth | Vandermonde quotient for arbitrary strictly increasing nonnegative integer weights and unit central value | criterion: s>=1+floor(log_ell H) |  |
+| ARITH-POWERFUL-MONOMIAL-OLD-VALUATION-LOWER | proved | 2-adic valuation of the diagonal quotient | Grid e=r+1, f=r, r=2^b+1 and 6<=h<=2^(b/2) | lower: constant times h^3 log r |  |
+| ARITH-POWERFUL-MONOMIAL-TAYLOR-COUNT | proved | loss in rational height exponent | Short unit rational monomial congruences with e!=f in [r,r+A] and n r-full | upper: O_A((log r/r)^(1/5)), or O_A(r^(-1/5)) on the large-prime-dominated moduli |  |
+| ARITH-POWERFUL-ALL-FIXED-OFFSETS-TAYLOR-ERROR | proved | exponent error after the leading 2/r^2 saving | Primitive triples with all fixed offsets u>=v>=0, p=r+u, q=r+v | upper: O_(u,v)(r^(-11/5)) |  |
+| GAUSSIAN-ANGULAR-MONOMIAL-EXACT-CONVERGENT-CORE | proved | maximal globally regular actual rank | Arbitrary angular polynomial Gaussian monomial fibres with scalar addition a0 | exact: 1 for a0=0; 0 otherwise |  |
+| GAUSSIAN-ANGULAR-MONOMIAL-DIAGONAL-CORE | proved | maximal globally regular actual rank | The exact diagonal cases, with scalar addition a0 | exact: 1 for a0=0; 0 otherwise |  |
+| FACTORIAL-LINKED-BETA-THIRD-FOURTH-EUCLIDEAN-PIVOTS | proved | third and fourth Euclidean remainder degrees | Actual linked beta profiles of nonnegative integer exponents; degrees n>=3 and n>=4 respectively | exact: n-3 and n-4, with positive leading coefficients |  |
+| FACTORIAL-LINKED-BETA-CHAIN-THROUGH-9 | proved | fully verified starting-order prefix | Actual linked beta Euclidean chains on all nonnegative integer exponent profiles | lower: 9 |  |
+| FACTORIAL-LINKED-BETA-SHIFTED-COPRIMALITY-THROUGH-10 | proved | coprime starting-order prefix | All nonnegative integer exponent profiles for actual linked beta pairs | lower: 10 |  |
+| ARITH-TWO-SHIFT-OVERLAP-CHARACTER-REGION | proved | minimum maximum of the two overlap counts | Finite abelian group generated by a,b and \|A\|=s<=N/2 | exact: max(0,s-alpha(H;a,b)) |  |
+| ARITH-TWO-SHIFT-LIMITING-OVERLAP-BOUND | proved | weighted sum of two limiting gap overlaps | Integer shifts with A+B odd, occupancy density at most 1/2 | lower: max(0,(A+B)*rho-(A+B-1)/2), sharp |  |
+| ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH | proved | nondeterministic complete read-once width | Length-L membership prefix of the random prime semigroup, almost surely eventually | lower: constant times b^(alpha*L/2)/sqrt(L) |  |
+| ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH | proved | deterministic complete read-once width | Same random model, deterministic adaptive complete read-once programs | lower: constant times b^(alpha*L)/L^2 |  |
+| ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH | proved | deterministic exponential width rate | Same random model, minimal width | exact: alpha |  |
+| ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE | proved | fixed-fanout grammar size | Exact length-L membership in random prime semigroup; fixed fanout and production rank | lower: constant times b^(alpha*L)/L |  |
+| FACTORIAL-LINKED-BETA-VISHNYAKOVA-PENCIL-ROOT-BOUNDS | proved | root modulus | Actual linked profiles r<u and moment order m>=2 | range: (mr+1)/(mu+1)<\|s\|<(r+1)/(u+1) |  |
+| FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR | proved | squared sine of half the native root angle | Fixed strictly positive linked-beta exponents and orders m>=2 | lower: strictly greater than ru/((r+1)(u+1)) |  |
+| EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD | proved | Stieltjes determinacy threshold | Urbanik factorial-power sequence (q!)^c with c>0 | criterion: c<=2 |  |
+| GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY | proved | Stieltjes determinacy threshold | Entrywise theta powers of the raw Gaussian monomial-fibre stride, with Wick factorial rate rho | criterion: theta*rho<=2 |  |
+| GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING | proved | vanishing order of a powered Hankel minor | Size h, raw or angular monomial-fibre Wick coefficient sequences | exact: h-1 |  |
+| ARITH-RANDOM-PRIME-PREFIX-EXACT-INFORMATION-RATE | proved | asymptotic Kolmogorov bits divided by b^(alpha L) | Exact random semigroup membership vector V_L, plain or prefix-free complexity, with or without L | exact: gamma*lambda/(alpha*log(2)) |  |
+| GAUSSIAN-ANGULAR-MOMENT-OPERATOR-SQUARE-ROOT-DISPLACEMENT | proved | common-vector operator displacement from s=0 | Normalized Gaussian angular deformation, 0<s<=1/4 | range: 3*sqrt(s)/(32*e) at minimum; 4*sqrt(s)+s attainable |  |
 
 ## Comparable improvements
 

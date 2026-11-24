@@ -138,3 +138,69 @@ If (5) failed, there would be a positive gap above \(7/12\) in the count exponen
 ## The limit of the six-index projection
 
 For every integer \(r\ge7\), at the budget \(\lambda=3/r\), put all of each letter's \(1/r\) mass in degree \(r\). In the BBLT six-index projection this gives side totals \(1/r\), individual coordinates \(1,\ldots,6\) all zero, and the point \(D=2/r\). The three height inequalities use \(7/r\le1\), and the pair bounds hold with equality. Every projected geometry saving and every displayed Fourier maximum is zero. Thus Proposition 6.1's projected inequalities alone allow the full trivial exponent \(2/r\) at this budget. The Fourier estimate with the degree \(r\) retained gives a strictly smaller exponent. An optimization intended to recover this powerful-triple saving must retain a bound on the higher coordinates. [BBLT v2, inequalities (6.1)–(6.10)](https://arxiv.org/html/2410.12234v2#S6)
+
+## Exceptional-set improvement from grouped roots
+
+The [grouped-root certificate](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md#grouped-root-certificate)
+gives the stronger bound
+\[
+ N_\lambda(X)\ll_\varepsilon X^{1747/3000+\varepsilon}
+ \qquad (0<\lambda\le1).
+ \tag{6}
+\]
+The sparse-root sets in the collision estimate separate the number of root
+values from their numerical heights. For instance, in the six-index
+symmetric profile, the grouped square root \(a_2a_4^2\) has size exponent
+\(90/396\) and cardinality exponent at most \(54/396\). The separate bounds
+give an exponent \(37/66\) on that profile. The finite certificate uses these
+inequalities on the full remaining set of exponent profiles. The compactness
+argument above applies unchanged to the enlarged finite list of arithmetic
+bounds. The tail enters the new inequalities through the original lower
+bound for the frozen modulus, and all additional maximum terms are
+continuous. Thus a height-averaged count above the exponent in (6) would give
+a feasible limiting profile above the certified threshold.
+
+For a fixed \(\lambda\), one can replace \(1747/3000\) in (6) by
+\(U_{\mathrm{cert}}(\lambda)\). The radical product constraint now gives
+\(L\le\lambda\) in the limiting program, so the same arithmetic inequalities
+admit the budget-dependent leaf bounds. [Exact envelope](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md#dependence-on-the-radical-budget)
+
+### Using all higher coordinates of the largest letter
+
+Let \(C\) denote the actual largest term, with \(C\asymp X\). Write \(r_T\)
+for the sum of coordinate masses above degree six on letter \(T\). Freeze
+all coordinates of \(C\) above degree six and an additional set
+\(O_C\subseteq\{1,\ldots,6\}\). The frozen mass is
+\(f_C=r_C+\sum_{i\in O_C}\alpha_{C,i}\). The residual product has weighted
+logarithmic height at most \(\sum_{i\le6,\ i\notin O_C}i\alpha_{C,i}\),
+up to the dyadic error. Since \(M_Cw=C\), the modulus exponent in the
+grouped-root collision inequality can be taken to be
+\[
+ w_C=1-\sum_{i\le6,\ i\notin O_C}i\alpha_{C,i}
+\]
+in the limit. This argument uses the complete largest value, so the lower
+modulus exponent is uniform in how the tail mass is distributed. On \(B\)
+one may also release every coordinate above degree six along with a
+chosen set of early coordinates. Its free mass then includes \(r_B\).
+The proof of the collision inequality permits these choices even when
+the tail indices have no common divisor. The residue group whose root is
+counted can consist of early coordinates alone.
+[Grouped-root collision proof](ABC_OMITTED_COORDINATE_GRAPH.md#from-energy-to-the-box-exponent)
+
+At the symmetric \(4/7\) profile of the strengthened six-index program,
+the first six masses are \((168,0,300,200,25,0)/2100\), the total per
+letter is \(700/2100\), and each tail has mass \(7/2100\). Release the
+first six coordinates of \(A\) with root groups \(\{3\},\{4\}\).
+Release degrees \(1,3,5\) and the full tail of \(B\). Lock degree \(5\)
+and the full tail on \(C\), and use the single cubic coordinate of \(B\)
+as the residue group. In units of \(1/2100\), the frozen masses are
+\[
+ f_A=7,\quad f_B=200,\quad f_C=32,\quad w_B=800,\quad w_C=232.
+\]
+Here \(232=2100-(168+900+800)\) uses the largest height. Both root size
+penalties vanish, so \(K=2(693-300-200)+300+200=886\).
+The cubic residue cap is \(500-300+(300-232)=268\). The diagonal and
+off-diagonal exponents are \(907/2100\) and \(1150/2100\), respectively.
+Thus every lift of this profile to an actual dyadic box obeys
+\(D\le23/42\) in the limiting exponent estimate. The full-tail choice
+also excludes a neighborhood of the profile by continuity.

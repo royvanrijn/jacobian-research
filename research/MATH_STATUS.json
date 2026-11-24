@@ -10403,7 +10403,7 @@
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
       "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11.",
-      "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case now has the complete exact sumset: the five admissible mod8 classes with only exceptions3,4, as well as pointwise logarithmic value counts. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder. Classical nonmaximal-level Hecke transfer and a positive five-adic tree operator now prove an effective primitive x^2+5y^2 sum theorem for EVERY admissible N>=2^66, with ordered value count>=N^(2/3)/6000. Class-zero multiplier descent and atomic seed estimates reduce exact completion to reduced cores below2^29; the authenticated full2^29 scan closes that finite input. The exact global exception list is now proved to be3,4, with both reduction directions recorded. The abc exceptional-set programme now has a two-way graph and Fourier transfer. For fixed powerfulness offsets the height-averaged count saves at least (1/sqrt(2)-o(1))*sqrt(log r)*r^(-3/2) from the trivial exponent. The graph improves individual abc boxes with valuation-one factors. The repaired FullOC program has exact optimum 7/12 and yields an upper count O(X^(7/12+epsilon)) for all 0<lambda<=1.",
+      "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case now has the complete exact sumset: the five admissible mod8 classes with only exceptions3,4, as well as pointwise logarithmic value counts. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder. Classical nonmaximal-level Hecke transfer and a positive five-adic tree operator now prove an effective primitive x^2+5y^2 sum theorem for EVERY admissible N>=2^66, with ordered value count>=N^(2/3)/6000. Class-zero multiplier descent and atomic seed estimates reduce exact completion to reduced cores below2^29; the authenticated full2^29 scan closes that finite input. The exact global exception list is now proved to be3,4, with both reduction directions recorded. The abc exceptional-set programme now has a two-way graph and Fourier transfer. For fixed powerfulness offsets the height-averaged count saves at least (1/sqrt(2)-o(1))*sqrt(log r)*r^(-3/2) from the trivial exponent. The graph improves individual abc boxes with valuation-one factors. The repaired FullOC program has exact optimum 7/12 and yields an upper count O(X^(7/12+epsilon)) for all 0<lambda<=1. Grouped-root energy and grouped residue constraints give a 106,845-leaf upper certificate at 1747/3000, improving the uniform abc exceptional-set exponent by 1/1000.",
       "readme": "arithmetic/README.md",
       "results": [
         {
@@ -16847,7 +16847,7 @@
           "scope": "For all sufficiently large even k, primitive triples satisfy N_k(X) = O_(k,epsilon)(X^(2/k-sigma/k^2+O(k^(-5/2))+epsilon)), where sigma=4 if 6 divides k and sigma=8/3 otherwise.",
           "canonical_source": "../unpublished/powerful-number-representations/main.tex",
           "checker": "arithmetic/verify_powerful_fixed_offset_constraints.py",
-          "artifact_hash": "sha256:3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+          "artifact_hash": "sha256:955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
           "evidence": [
             "../unpublished/powerful-number-representations/verification.json",
             "arithmetic/powerful_even_order_divisible_by_six_certificate.json.gz"
@@ -16868,7 +16868,7 @@
           "scope": "The 84,177-leaf rational proof gives D<=7/12 already with only the coprime-pair constraints at radical budget one. Zeng's symmetric witness has D=7/12 in the full program including all exponent pairs, so both program optima are 7/12.",
           "canonical_source": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
           "checker": "arithmetic/verify_abc_pair_deviation_certificate.py",
-          "artifact_hash": "sha256:f8348a64e42b8b4e13b5ca0ad9da40ef779f571cea292af6d697453ab1470814",
+          "artifact_hash": "sha256:4bc996a7bbe5053b0733b4c79b334f2cc09f4b0fa0f1fcdafb943ea39537cddc",
           "evidence": [
             "arithmetic/abc_pair_deviation_7_12_delta.json",
             "arithmetic/sources/zeng-abc-modulus-locking-24407593/cert_fulloc_5840_improved_73_125.json.gz",
@@ -16906,6 +16906,76 @@
               "domain": "fixed 0<lambda<=1",
               "sense": "upper",
               "expression": "O_epsilon(X^(7/12+epsilon))"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING",
+          "title": "Weighted two-power graphs for diagonal powerful triples",
+          "state": "proved",
+          "scope": "For all sufficiently large k, primitive triples satisfy N_k(X) = O_(k,epsilon)(X^(2/k-sigma/k^2+O(k^(-21/10))+epsilon)), with sigma=6 for even k and sigma=16/3 for odd k. A written argument gives sigma=5 for both parities.",
+          "canonical_source": "../unpublished/powerful-number-representations/main.tex",
+          "checker": "arithmetic/verify_powerful_fixed_offset_constraints.py",
+          "artifact_hash": "sha256:955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
+          "evidence": [
+            "../unpublished/powerful-number-representations/verification.json",
+            "arithmetic/powerful_two_power_even_certificate.json.gz",
+            "arithmetic/powerful_two_power_odd_certificate.json.gz"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "The existing two-exponent congruence theorem bounds pairs of representations in a weighted graph, including pairs at equal retained tuples. Rational parity certificates strengthen the written cost bound.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For all sufficiently large k, primitive triples satisfy N_k(X) = O_(k,epsilon)(X^(2/k-sigma/k^2+O(k^(-21/10))+epsilon)), with sigma=6 for even k and sigma=16/3 for odd k. A written argument gives sigma=5 for both parities."
+        },
+        {
+          "id": "ARITH-ABC-GROUPED-FULLOC-1747-3000",
+          "title": "The 1747/3000 upper certificate for grouped FullOC",
+          "state": "proved",
+          "scope": "At radical budget one, every feasible profile of the six-index FullOC program with the certified grouped-root inequalities has D<=1747/3000. The replacement certificate has 106,845 leaves.",
+          "canonical_source": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
+          "checker": "arithmetic/verify_abc_grouped_fulloc_certificate.py",
+          "artifact_hash": "sha256:aa4c3a737beb3b65afdad77aaa4c9d5a5549d19a5d8c8fe880662fbe4eea18c5",
+          "evidence": [
+            "arithmetic/abc_grouped_fulloc_delta.json.gz",
+            "arithmetic/verify_abc_pair_deviation_certificate.py",
+            "arithmetic/abc_pair_deviation_7_12_delta.json"
+          ],
+          "proof_type": "computer_assisted",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "The exact verifier replays the repaired FullOC tree, reconstructs all selected grouped-root rows, checks coverage, and validates each replacement leaf.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "At radical budget one, every feasible profile of the six-index FullOC program with the certified grouped-root inequalities has D<=1747/3000. The replacement certificate has 106,845 leaves."
+        },
+        {
+          "id": "ARITH-ABC-EXCEPTIONAL-SET-1747-3000",
+          "title": "The 1747/3000 upper bound for the abc exceptional set",
+          "state": "proved",
+          "scope": "For every epsilon>0, uniformly for 0<lambda<=1, the number N_lambda(X) of ordered positive primitive triples a+b=c<=X with rad(abc)<c^lambda is O_epsilon(X^(1747/3000+epsilon)).",
+          "canonical_source": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "The grouped collision bounds hold in the same anatomic boxes as FullOC. Their finite exact upper certificate transfers by the compact limiting-box argument.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every epsilon>0, uniformly for 0<lambda<=1, the number N_lambda(X) of ordered positive primitive triples a+b=c<=X with rad(abc)<c^lambda is O_epsilon(X^(1747/3000+epsilon)).",
+          "bounds": [
+            {
+              "quantity": "ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda",
+              "domain": "fixed 0<lambda<=1",
+              "sense": "upper",
+              "expression": "O_epsilon(X^(1747/3000+epsilon))"
             }
           ]
         }
@@ -17326,12 +17396,6 @@
           "source": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md"
         },
         {
-          "node": "GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT",
-          "kind": "mathematical",
-          "question": "Improve the exceptional-set exponent below 7/12 near radical budget one. The FullOC program attains 7/12, and the full-side common-degree graph has minimum permitted exponent 83/132 at the symmetric obstruction. A stronger inequality or a different decomposition must exclude that point.",
-          "source": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md"
-        },
-        {
           "node": "GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT",
           "kind": "verification",
           "question": "Audit the source proof of Soulé arXiv:2611.05217v1 Theorem B and its preceding arithmetic-geometric estimates before relying on c<<R^(24+epsilon) for all positive primitive triples.",
@@ -17348,6 +17412,12 @@
           "kind": "mathematical",
           "question": "Fix delta=1/8. For N comparable to T5, bound by O_epsilon(T^(2-eta+epsilon)) for some absolute eta>0 the distinct ordered squarefree unit kernel pairs having SOME reduced unit witness <=4T² but NO such witness <=T^(9/8). This is an open frequency bound for the precise complement, not all long witness tuples. Theorem7 identifies its conditional relation to the existing full-pair target.",
           "source": "arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md"
+        },
+        {
+          "node": "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING",
+          "kind": "mathematical",
+          "question": "Determine the optimum of the grouped-root exponent program and obtain stronger counts near radical budget one. The six-index grouped program still permits D=4/7, while the largest-letter tail lock excludes all lifts of that witness. Determine how to incorporate the actual largest height into a new global optimization.",
+          "source": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md"
         }
       ],
       "scope_notes": [
@@ -17588,7 +17658,8 @@
         "GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT",
         "GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT",
         "GAP-ARITH-ABC-ZENG-ARITHMETIC-APPLICATION",
-        "GAP-ARITH-ERDOS943-LONG-COMPLEMENT-KERNEL-PAIR-SAVING"
+        "GAP-ARITH-ERDOS943-LONG-COMPLEMENT-KERNEL-PAIR-SAVING",
+        "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING"
       ]
     },
     {
@@ -149673,7 +149744,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "lem:edge"
           }
         ]
@@ -149691,7 +149762,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "prop:graph"
           }
         ]
@@ -153407,7 +153478,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "thm:consecutive and Section 6 even grouped-coordinate argument"
           }
         ]
@@ -153443,7 +153514,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Section 6 normalization and graph alternatives"
           }
         ]
@@ -153461,7 +153532,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Final paragraph of Section 6"
           }
         ]
@@ -154638,7 +154709,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "thm:all-offsets and Section 9"
           }
         ]
@@ -154656,12 +154727,12 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Section 10, limiting grouped-graph obstruction"
           },
           {
             "path": "arithmetic/verify_powerful_fixed_offset_constraints.py",
-            "sha256": "3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+            "sha256": "955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
             "locator": "Exact verifier and rational-certificate generator"
           }
         ]
@@ -156651,7 +156722,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "thm:all-offsets and Section 9"
           }
         ]
@@ -156669,7 +156740,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Section 8.1, rational amplification"
           }
         ]
@@ -156687,7 +156758,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Sections 8.2 and 8.3, determinant and divisor selection"
           }
         ]
@@ -156705,7 +156776,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Section 10.1, perturbation and random tripartite construction"
           }
         ]
@@ -156835,7 +156906,7 @@
         "sources": [
           {
             "path": "../unpublished/powerful-number-representations/main.tex",
-            "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+            "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
             "locator": "Theorem thm:fixed-offset, aligned offsets u=v; and Section 9, codegree reconstruction"
           }
         ]
@@ -157371,7 +157442,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Radical and powerfulness scopes"
           }
         ]
@@ -157389,7 +157460,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "The limit of the six-index projection"
           }
         ]
@@ -157407,7 +157478,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Exact optimization and fixed offsets"
           }
         ]
@@ -157425,7 +157496,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-            "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
             "locator": "Uniform binary-form bound"
           }
         ]
@@ -157443,7 +157514,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-            "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
             "locator": "Strict improvement on a box with degree-one mass"
           }
         ]
@@ -157462,7 +157533,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Opening and Radical and powerfulness scopes"
           }
         ]
@@ -157481,7 +157552,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-            "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
             "locator": "Strict improvement on a box with degree-one mass and comparison with the modulus-locking obstruction"
           }
         ]
@@ -157500,7 +157571,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Exceptional-set estimates and dyadic coordinates"
           }
         ]
@@ -157519,7 +157590,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Exceptional-set estimates and dyadic coordinates"
           }
         ]
@@ -157537,7 +157608,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Replay of the 19 November modulus-locking certificate"
           }
         ]
@@ -157555,7 +157626,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-            "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
             "locator": "Comparison with the complete modulus-locking obstructions"
           }
         ]
@@ -157573,7 +157644,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
-            "sha256": "45590bfb0641316c6ee9e8197822f71688bc0881126175885923f697a9ff782f",
+            "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
             "locator": "The missing branch"
           }
         ]
@@ -157880,7 +157951,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
             "locator": "Exceptional-set estimates and dyadic coordinates, Carella v3"
           }
         ]
@@ -157916,7 +157987,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
-            "sha256": "45590bfb0641316c6ee9e8197822f71688bc0881126175885923f697a9ff782f",
+            "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
             "locator": "Exact upper bound and Replay"
           },
           {
@@ -157926,7 +157997,7 @@
           },
           {
             "path": "arithmetic/verify_abc_pair_deviation_certificate.py",
-            "sha256": "f8348a64e42b8b4e13b5ca0ad9da40ef779f571cea292af6d697453ab1470814",
+            "sha256": "4bc996a7bbe5053b0733b4c79b334f2cc09f4b0fa0f1fcdafb943ea39537cddc",
             "locator": "Exact checker and repaired coverage construction"
           },
           {
@@ -157954,7 +158025,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
-            "sha256": "45590bfb0641316c6ee9e8197822f71688bc0881126175885923f697a9ff782f",
+            "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
             "locator": "Exact upper bound and Replay"
           }
         ]
@@ -159131,6 +159202,515 @@
             "path": "factorial/image-rigidity/LINKED_BETA_LATER_PIVOTS.md",
             "sha256": "9482576e0130d7b750f896295d4ef957878d029c00c9e8f76eb578f2108584c1",
             "locator": "Section 3, direct Sylvester resultants and the all-order axis reference"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-TWO-SHIFT-OVERLAP-CHARACTER-REGION",
+        "title": "Exact finite two-shift overlap region",
+        "scope": "If the nonzero shifts a,b generate a finite abelian group H of order N and 0<=s<=N/2, two upper budgets B_d for |A intersect (A+d)| with |A|=s are simultaneously attainable iff a single character satisfies N||psi(d)||>=s-B_d for d=a,b. Complement and coset allocation give the other finite cases.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "minimum maximum of the two overlap counts",
+            "domain": "Finite abelian group generated by a,b and |A|=s<=N/2",
+            "sense": "exact",
+            "expression": "max(0,s-alpha(H;a,b))"
+          }
+        ],
+        "sources": [
+          {
+            "path": "arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md",
+            "sha256": "26d4e557ec80ae3828f64774dca3ebf19fefd64581123d7112cdae54e7cb7d93",
+            "locator": "The exact finite feasible region, equations (1) and (2), signed-dual orientation and filled-fibre converse"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-TWO-SHIFT-LIMITING-OVERLAP-BOUND",
+        "title": "Sharp weighted two-shift bound on integer sets",
+        "scope": "For fixed positive shifts a,b, set A=a/gcd(a,b), B=b/gcd(a,b). If A+B is odd, simultaneous density and overlap limits rho,c_a,c_b with rho<=1/2 satisfy Bc_a+Ac_b>=max(0,(A+B)rho-(A+B-1)/2), with equality achievable. If A+B is even the minimum is zero.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "weighted sum of two limiting gap overlaps",
+            "domain": "Integer shifts with A+B odd, occupancy density at most 1/2",
+            "sense": "lower",
+            "expression": "max(0,(A+B)*rho-(A+B-1)/2), sharp"
+          }
+        ],
+        "sources": [
+          {
+            "path": "arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md",
+            "sha256": "26d4e557ec80ae3828f64774dca3ebf19fefd64581123d7112cdae54e7cb7d93",
+            "locator": "Consequences for shifted arithmetic gap statistics, equation (3) and sharpness"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+        "title": "Almost-sure width of random semigroup numeral prefixes",
+        "scope": "For 0<gamma<1, lambda>0, base b>=2 and alpha=1-gamma, almost surely all sufficiently large length-L prefixes of the admitted-prime semigroup require width at least a positive constant times b^(alpha L/2)/sqrt(L) for syntactically complete read-once nondeterministic programs and b^(alpha L)/L^2 for deterministic ones. The deterministic exponential rate is alpha.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "bounds": [
+          {
+            "quantity": "nondeterministic complete read-once width",
+            "domain": "Length-L membership prefix of the random prime semigroup, almost surely eventually",
+            "sense": "lower",
+            "expression": "constant times b^(alpha*L/2)/sqrt(L)"
+          },
+          {
+            "quantity": "deterministic complete read-once width",
+            "domain": "Same random model, deterministic adaptive complete read-once programs",
+            "sense": "lower",
+            "expression": "constant times b^(alpha*L)/L^2"
+          },
+          {
+            "quantity": "deterministic exponential width rate",
+            "domain": "Same random model, minimal width",
+            "sense": "exact",
+            "expression": "alpha"
+          }
+        ],
+        "sources": [
+          {
+            "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+            "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f",
+            "locator": "Equations (1)–(3), complete read-once definition and Counting descriptions of width W"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE",
+        "title": "Almost-sure size of fixed-rank random semigroup prefix grammars",
+        "scope": "For fixed fanout and production rank, in the random semigroup model with alpha=1-gamma, almost surely the number of nonterminals plus productions recognizing its length-L membership language is at least a positive constant times b^(alpha L)/L eventually. In classes permitting terminal-only productions the minimum has exponential rate alpha.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "bounds": [
+          {
+            "quantity": "fixed-fanout grammar size",
+            "domain": "Exact length-L membership in random prime semigroup; fixed fanout and production rank",
+            "sense": "lower",
+            "expression": "constant times b^(alpha*L)/L"
+          }
+        ],
+        "sources": [
+          {
+            "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+            "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f",
+            "locator": "Grammars of fixed fanout and production rank, equation (4)"
+          }
+        ]
+      },
+      {
+        "id": "FACTORIAL-LINKED-BETA-VISHNYAKOVA-PENCIL-ROOT-BOUNDS",
+        "title": "Exact quadratic pencil and strict root annuli for linked beta moments",
+        "scope": "For alpha,gamma>0, the actual linked coefficient polynomial G_m is the quadratic pencil (1). At a root s there is a unit null vector and |s|=(alpha+d)/(gamma+d), with d in (0,m-1) for m>1. For physical parameters mr+1,mu+1 this gives strict annuli when r!=u and the matching normalized Rayleigh charges (3) at a shared root.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "root modulus",
+            "domain": "Actual linked profiles r<u and moment order m>=2",
+            "sense": "range",
+            "expression": "(mr+1)/(mu+1)<|s|<(r+1)/(u+1)"
+          }
+        ],
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md",
+            "sha256": "7d2ccc21e5ff1f4e54734b7c12a2fa83a02f31de00b0ae5f99311a2ea5ca238a",
+            "locator": "Sections 1–2, equations (1)–(3), tridiagonal recurrence, modulus and shared-root necessity"
+          }
+        ]
+      },
+      {
+        "id": "FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR",
+        "title": "Uniform sector for fixed positive linked-beta profiles",
+        "scope": "At fixed positive integer r,u, every actual native root at every order m>=2 satisfies sin^2(arg(s)/2)>ru/((r+1)(u+1)). Its Jacobi-coordinate transform belongs to a fixed compact subset separated from the real weight cut and endpoints. The exact finite-m sector is (4).",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "squared sine of half the native root angle",
+            "domain": "Fixed strictly positive linked-beta exponents and orders m>=2",
+            "sense": "lower",
+            "expression": "strictly greater than ru/((r+1)(u+1))"
+          }
+        ],
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md",
+            "sha256": "7d2ccc21e5ff1f4e54734b7c12a2fa83a02f31de00b0ae5f99311a2ea5ca238a",
+            "locator": "Section 3, equation (4) and compact Jacobi receiver"
+          }
+        ]
+      },
+      {
+        "id": "EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD",
+        "title": "Urbanik factorial powers and their Stieltjes determinacy threshold",
+        "scope": "For c>0 the probability law on (0,infinity) with Mellin moments (q!)^c exists, and its Stieltjes moment sequence is determinate exactly when c<=2.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "moments/vanishing/sources/berg-lopez-urbanik-1310.0252v1.pdf",
+            "sha256": "5b02dcdbd6780d45f7c2a2aec6c85d4314c0c7432ee7dc60d695cf2eb2462715",
+            "locator": "Introduction equation (4), Theorem 2.1, Corollary 2.3 and its proof"
+          }
+        ],
+        "bounds": [
+          {
+            "quantity": "Stieltjes determinacy threshold",
+            "domain": "Urbanik factorial-power sequence (q!)^c with c>0",
+            "sense": "criterion",
+            "expression": "c<=2"
+          }
+        ]
+      },
+      {
+        "id": "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY",
+        "title": "Sharp moment determinacy for powered Wick coefficient subsequences",
+        "scope": "For theta>0, all entrywise powers of the raw and angular-normalized Gaussian binomial monomial-fibre coefficient subsequences are Stieltjes moment sequences, with all finite Hankel minors strictly positive. The raw powers are determinate exactly when theta*rho<=2, and all angular powers have compactly supported representing laws.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "bounds": [
+          {
+            "quantity": "Stieltjes determinacy threshold",
+            "domain": "Entrywise theta powers of the raw Gaussian monomial-fibre stride, with Wick factorial rate rho",
+            "sense": "criterion",
+            "expression": "theta*rho<=2"
+          }
+        ],
+        "sources": [
+          {
+            "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+            "sha256": "f81cfcfe13ef6745a5897fecccf633341d63aada660138801fa119d9645e216d",
+            "locator": "Sections 1–3 and strict minors in Section 4"
+          }
+        ]
+      },
+      {
+        "id": "GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING",
+        "title": "Exact vanishing order of powered Hankel minors at power zero",
+        "scope": "For raw or angular-normalized monomial-fibre Wick coefficients, a Hankel minor of size h on increasing nonnegative integer indices vanishes at theta=0 to exactly order h-1 with positive leading coefficient det K.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "vanishing order of a powered Hankel minor",
+            "domain": "Size h, raw or angular monomial-fibre Wick coefficient sequences",
+            "sense": "exact",
+            "expression": "h-1"
+          }
+        ],
+        "sources": [
+          {
+            "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+            "sha256": "f81cfcfe13ef6745a5897fecccf633341d63aada660138801fa119d9645e216d",
+            "locator": "Section 4, equations (5) and (6), logarithmic kernel and the augmented Vandermonde"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-RANDOM-PRIME-PREFIX-EXACT-INFORMATION-RATE",
+        "title": "Exact information rate of random prime semigroup membership",
+        "scope": "For fixed base b>=2, lambda>0 and 0<gamma<1, put alpha=1-gamma and let V_L be the length-b^L membership vector of the random prime semigroup. Almost surely its plain and prefix-free Kolmogorov complexity, also conditional on L, is (gamma*lambda/(alpha*log(2))+o(1))*b^(alpha L).",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "asymptotic Kolmogorov bits divided by b^(alpha L)",
+            "domain": "Exact random semigroup membership vector V_L, plain or prefix-free complexity, with or without L",
+            "sense": "exact",
+            "expression": "gamma*lambda/(alpha*log(2))"
+          }
+        ],
+        "sources": [
+          {
+            "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+            "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f",
+            "locator": "Exact Kolmogorov information rate, equation (5), self-information lower bound and subset-rank code"
+          }
+        ]
+      },
+      {
+        "id": "GAUSSIAN-ANGULAR-MOMENT-OPERATOR-SQUARE-ROOT-DISPLACEMENT",
+        "title": "Sharp common-vector operator displacement for a Gaussian angular deformation",
+        "scope": "For the normalized even angular moments of W(1+sqrt(s)Z+Z^2)*product Yi^ki, a common-vector bounded self-adjoint realization has displacement at most 4*sqrt(s)+s from s=0. Every such realization has displacement at least 3*sqrt(s)/(32*e) for 0<s<=1/4. The Holder exponent 1/2 is sharp.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "complete",
+        "bounds": [
+          {
+            "quantity": "common-vector operator displacement from s=0",
+            "domain": "Normalized Gaussian angular deformation, 0<s<=1/4",
+            "sense": "range",
+            "expression": "3*sqrt(s)/(32*e) at minimum; 4*sqrt(s)+s attainable"
+          }
+        ],
+        "sources": [
+          {
+            "path": "moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md",
+            "sha256": "63d3448734830717a7b05e95fe6c114a9044fe31456e32679fb12b8f45723283",
+            "locator": "Equations (1)–(3), arcsine multiplication upper bound and common-vector telescoping lower bound"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY",
+        "title": "Twisted multiplicative energy of sparse root sets",
+        "scope": "For fixed positive g,h and unit sets U,V of roots in [1,P],[1,Q] modulo M with all scales of polynomial size in X, each unit twist has O_epsilon(X^epsilon |U||V| sqrt((1+P^2/M)(1+Q^2/M))) solutions to u^g v^h=gamma u'^g v'^h modulo M.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+            "locator": "Multiplicative energy of sparse sets"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+        "title": "Grouped-root collision inequality in primitive abc boxes",
+        "scope": "In a primitive signed monomial box take disjoint released A groups of common fixed degrees g1,g2, and a residue group in B of common degree g. The collision estimate replaces dense root cardinalities by the corresponding group masses, keeps the weighted root heights in its modulus penalties, and permits the B residue-group bound and grouped power differences.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+            "locator": "Collision bounds for square and cube roots drawn from sparse sets"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT",
+        "title": "A grouped-root bound of 37/66 at the symmetric FullOC profile",
+        "scope": "At the symmetric FullOC exponent witness D=7/12, choosing A root groups {2,4} and {3}, releasing B degree 3, and taking the grouped cubic difference cap gives D<=37/66, a cut of size 1/44.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+            "locator": "The symmetric 7/12 profile"
+          }
+        ]
+      },
+      {
+        "id": "SRC-ARITH-ABC-GROUPED-FULLOC-INPUTS",
+        "title": "Exact grouped-root tree delta and rational replay",
+        "scope": "The compressed delta replaces exactly 4,834 sufficiently high leaves of the repaired FullOC exponent tree. Exact branch and dual validation gives 106,845 leaves in the resulting finite implication, with exact maximum right-hand side 240591/413150<1747/3000.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "computational_replay",
+        "sources": [
+          {
+            "path": "arithmetic/verify_abc_grouped_fulloc_certificate.py",
+            "sha256": "aa4c3a737beb3b65afdad77aaa4c9d5a5549d19a5d8c8fe880662fbe4eea18c5",
+            "locator": "sparse_branches, ancestor_rows, check_subtree and main"
+          },
+          {
+            "path": "arithmetic/abc_grouped_fulloc_delta.json.gz",
+            "sha256": "66bc415bd95803fec7c0d3ea06b19f15a7ad1c829d119eb289e8d1bbaba2f347",
+            "locator": "Compact list of replacement paths and rational leaf certificates"
+          },
+          {
+            "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
+            "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
+            "locator": "Grouped-root certificate"
+          }
+        ]
+      },
+      {
+        "id": "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING",
+        "title": "Further savings below the grouped FullOC upper bound",
+        "scope": "Determine the optimum of the grouped-root exponent program and obtain stronger counts near radical budget one. The six-index grouped program still permits D=4/7, while the largest-letter tail lock excludes all lifts of that witness. Determine how to incorporate the actual largest height into a new global optimization.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "dependency_coverage": "partial",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
+            "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
+            "locator": "Grouped-root certificate"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-FULLOC-ASYMMETRIC-PARAMETRIC-WITNESS",
+        "title": "An asymmetric affine FullOC witness",
+        "scope": "For t=1-lambda in [0,1/244], the original six-index FullOC program has the exhibited feasible asymmetric profile D=7/12-t/3. The grouped-root collision inequality bounds this profile by 205/366-t/6.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "computational_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+            "locator": "An asymmetric FullOC witness at smaller radical budgets"
+          },
+          {
+            "path": "arithmetic/verify_abc_fulloc_asymmetric_witness.py",
+            "sha256": "b68b208c3a0368d8c3e61e1eece8b002857c65c85e075f99bdd0bba7be0cec3f",
+            "locator": "Exact original FullOC rows and grouped-root cut"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE",
+        "title": "Exact radical-budget envelope of the grouped certificate",
+        "scope": "For 0<=lambda<=1 the maximum of the existing grouped certificate's leaf bounds is max(33678/57833,65607/413150+(87492/206575)*lambda), with switch 146664001/146664488. For fixed 0<lambda<=1 the same arithmetic reduction gives N_lambda(X)=O_(lambda,epsilon)(X^(U_cert(lambda)+epsilon)).",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
+            "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
+            "locator": "Dependence on the radical budget"
+          },
+          {
+            "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+            "locator": "Exceptional-set improvement from grouped roots"
+          },
+          {
+            "path": "arithmetic/verify_abc_grouped_fulloc_certificate.py",
+            "sha256": "aa4c3a737beb3b65afdad77aaa4c9d5a5549d19a5d8c8fe880662fbe4eea18c5",
+            "locator": "check_budget_envelope"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION",
+        "title": "A 4/7 feasible profile for the grouped six-index program",
+        "scope": "The symmetric profile with individual masses (168,0,300,200,25,0)/2100 and each total 1/3 satisfies the first-six geometric and full grouped collision inequalities at D=4/7. Its particular lift with tail masses at degrees 15 and 16 survives cutoff 14, while the exposed degrees 15 and 16 give strictly smaller collision bounds on that lift.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "computational_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+            "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+            "locator": "A 4/7 obstruction for the grouped six-index program"
+          },
+          {
+            "path": "arithmetic/verify_abc_grouped_fulloc_obstruction.py",
+            "sha256": "55d5c31f833c96b988a02b118f9eeac446f5d44971ce5812c2e2c243d63d056d",
+            "locator": "Exact grouped program and higher-cutoff checks"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL",
+        "title": "Largest-letter modulus from all higher coordinates",
+        "scope": "In a primitive anatomic box with actual largest letter C comparable to X, freeze all its degree-above-six coordinates and an early set O_C. In the limiting grouped collision formula its frozen modulus exponent can be taken to be one minus the weighted mass of the remaining early C coordinates. This applies uniformly over distributions of the higher degrees.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+            "locator": "Using all higher coordinates of the largest letter"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE",
+        "title": "A largest-letter tail cut for every lift of the 4/7 profile",
+        "scope": "Every lift of the symmetric 4/7 grouped six-index profile obeys D<=23/42 under the grouped collision bound that freezes all higher coordinates of the actual largest letter. It excludes an open neighborhood of this profile.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+            "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+            "locator": "Using all higher coordinates of the largest letter"
           }
         ]
       }
@@ -243443,7 +244023,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "lem:edge, including the real and imaginary quadratic norm arguments"
         },
         "dependency_coverage": "partial"
@@ -243458,7 +244038,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "prop:graph, grouped signed coefficient form"
         },
         "dependency_coverage": "partial"
@@ -243472,7 +244052,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:campana and Section 4, including both height-loss cases"
         },
         "dependency_coverage": "partial"
@@ -244017,7 +244597,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:difference and the higher-order optimization in Section 3"
         },
         "dependency_coverage": "partial"
@@ -246016,7 +246596,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:mixed-campana and Section 5"
         },
         "dependency_coverage": "partial"
@@ -246756,7 +247336,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "Section 6, normalization and graph alternatives"
         },
         "dependency_coverage": "partial"
@@ -246770,7 +247350,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:consecutive, Section 7"
         },
         "dependency_coverage": "partial"
@@ -246784,7 +247364,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "End of Section 7, singleton obstruction"
         },
         "dependency_coverage": "partial"
@@ -247861,7 +248441,7 @@
         "status": "proved",
         "proof": {
           "path": "EXTERNAL_MATHEMATICAL_TRANSFERS.md",
-          "sha256": "1e74d6e2364b832f61fece9966927a8337602e90b179b16c75e52b3d0d9c52d7",
+          "sha256": "b037c039e9b021244380d3c34a0c9d88bf91c3c9a807a6bb22135d2ba8164f48",
           "locator": "Stone criterion and the singleton-fibre calculation"
         },
         "dependency_coverage": "partial"
@@ -247875,7 +248455,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:consecutive, Section 7 even case"
         },
         "dependency_coverage": "partial"
@@ -247889,7 +248469,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:fixed-offset, Section 6.1"
         },
         "dependency_coverage": "partial"
@@ -247903,7 +248483,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:fixed-offset, Section 6.2"
         },
         "dependency_coverage": "partial"
@@ -247920,7 +248500,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "Section 10, rational obstruction and earlier offsets"
         },
         "dependency_coverage": "partial"
@@ -249739,7 +250319,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:monomial and Section 8"
         },
         "dependency_coverage": "partial"
@@ -249755,7 +250335,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:all-offsets and Section 9"
         },
         "dependency_coverage": "partial"
@@ -249769,7 +250349,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "thm:all-offsets"
         },
         "dependency_coverage": "partial"
@@ -249784,7 +250364,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "Section 10.1, perturbation and tripartite model"
         },
         "dependency_coverage": "partial"
@@ -249902,7 +250482,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
           "locator": "Fourier counting in a box and Exact optimization and fixed offsets"
         },
         "dependency_coverage": "partial"
@@ -249916,7 +250496,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
           "locator": "Exact optimization and fixed offsets"
         },
         "dependency_coverage": "partial"
@@ -249931,7 +250511,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
           "locator": "Stronger saving from the grouped moments"
         },
         "dependency_coverage": "partial"
@@ -249945,7 +250525,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-          "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+          "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
           "locator": "Box bound and Proof"
         },
         "dependency_coverage": "partial"
@@ -249962,7 +250542,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-          "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+          "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
           "locator": "Strict improvement on a box with degree-one mass"
         },
         "dependency_coverage": "partial"
@@ -249977,7 +250557,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-          "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+          "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
           "locator": "Comparison with the complete modulus-locking obstructions"
         },
         "dependency_coverage": "partial"
@@ -250224,7 +250804,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "locator": "Section 6.3, parity grouping, available cycles and the finite certificate"
         },
         "dependency_coverage": "partial"
@@ -250239,7 +250819,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
-          "sha256": "45590bfb0641316c6ee9e8197822f71688bc0881126175885923f697a9ff782f",
+          "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
           "locator": "Exact upper bound and original lower witness"
         },
         "dependency_coverage": "partial"
@@ -250255,7 +250835,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
           "locator": "From the exact FullOC optimum to the exceptional-set count"
         },
         "dependency_coverage": "partial"
@@ -250269,7 +250849,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
-          "sha256": "45590bfb0641316c6ee9e8197822f71688bc0881126175885923f697a9ff782f",
+          "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
           "locator": "Exact upper bound"
         },
         "dependency_coverage": "partial"
@@ -251149,6 +251729,231 @@
           "locator": "Sections 3 and 4, exact resultants outside the full-chain prefix"
         },
         "dependency_coverage": "complete"
+      },
+      {
+        "id": "ARITH-POWERFUL-TWO-POWER-FROM-MONOMIALS-AND-PARITY",
+        "premises": [
+          "ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT",
+          "ARITH-POWERFUL-CONSECUTIVE-BOX-CONSTRAINTS",
+          "ARITH-POWERFUL-SUM-UNIFORM-FIXED-VERTEX-EDGE",
+          "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING"
+        ],
+        "conclusion": "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/powerful-number-representations/main.tex",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+          "locator": "thm:two-power-diagonal and Section 9.1"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-TWO-SHIFT-LIMITING-OVERLAP-BOUND",
+        "premises": [
+          "ARITH-TWO-SHIFT-OVERLAP-CHARACTER-REGION"
+        ],
+        "conclusion": "ARITH-TWO-SHIFT-LIMITING-OVERLAP-BOUND",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md",
+          "sha256": "26d4e557ec80ae3828f64774dca3ebf19fefd64581123d7112cdae54e7cb7d93",
+          "locator": "Cyclic periodization, odd relation and rational-character construction"
+        },
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "DERIVE-ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+        "premises": [
+          "ARITH-RANDOM-PRIME-MULTIPLIER-COUNT"
+        ],
+        "conclusion": "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+          "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f",
+          "locator": "Equations (1)–(3), prime restriction and trie upper bound"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE",
+        "premises": [
+          "ARITH-RANDOM-PRIME-MULTIPLIER-COUNT"
+        ],
+        "conclusion": "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+          "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f",
+          "locator": "Equation (4), projection normalization, pruned encoding and terminal-rule upper bound"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR",
+        "premises": [
+          "FACTORIAL-LINKED-BETA-VISHNYAKOVA-PENCIL-ROOT-BOUNDS"
+        ],
+        "conclusion": "FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md",
+          "sha256": "7d2ccc21e5ff1f4e54734b7c12a2fa83a02f31de00b0ae5f99311a2ea5ca238a",
+          "locator": "Section 3, weighted Cauchy–Schwarz and Jacobi coordinate change"
+        },
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY",
+        "premises": [
+          "EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD"
+        ],
+        "conclusion": "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+          "sha256": "f81cfcfe13ef6745a5897fecccf633341d63aada660138801fa119d9645e216d",
+          "locator": "Equations (1)–(4), beta Lévy scaling and injective multiplicative convolution"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING",
+        "premises": [
+          "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY"
+        ],
+        "conclusion": "GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING",
+        "status": "proved",
+        "proof": {
+          "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+          "sha256": "f81cfcfe13ef6745a5897fecccf633341d63aada660138801fa119d9645e216d",
+          "locator": "Section 4, subtract first row and integrate the mixed log difference"
+        },
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+        "premises": [
+          "ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY",
+          "ARITH-ABC-UNIFORM-BINARY-POWER-FIBER",
+          "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS"
+        ],
+        "conclusion": "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+          "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+          "locator": "Collision bounds for square and cube roots drawn from sparse sets"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT",
+        "premises": [
+          "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+          "ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY"
+        ],
+        "conclusion": "ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+          "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
+          "locator": "The symmetric 7/12 profile"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-GROUPED-FULLOC-CERTIFICATE",
+        "premises": [
+          "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS",
+          "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+          "SRC-ARITH-ABC-GROUPED-FULLOC-INPUTS"
+        ],
+        "conclusion": "ARITH-ABC-GROUPED-FULLOC-1747-3000",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
+          "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
+          "locator": "Grouped-root certificate"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-COUNT-GROUPED-FULLOC",
+        "premises": [
+          "EXT-ABC-BBLT-ANATOMIC-REDUCTION",
+          "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS",
+          "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+          "ARITH-ABC-GROUPED-FULLOC-1747-3000"
+        ],
+        "conclusion": "ARITH-ABC-EXCEPTIONAL-SET-1747-3000",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+          "locator": "Exceptional-set improvement from grouped roots"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-STRICT-IMPROVEMENT-FROM-SPARSE-ROOTS",
+        "premises": [
+          "ARITH-ABC-EXCEPTIONAL-SET-1747-3000"
+        ],
+        "conclusion": "GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+          "locator": "Exceptional-set improvement from grouped roots"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE",
+        "premises": [
+          "ARITH-ABC-GROUPED-FULLOC-1747-3000",
+          "EXT-ABC-BBLT-ANATOMIC-REDUCTION",
+          "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS",
+          "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND"
+        ],
+        "conclusion": "ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
+          "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
+          "locator": "Dependence on the radical budget"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL",
+        "premises": [
+          "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND"
+        ],
+        "conclusion": "ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+          "locator": "Using all higher coordinates of the largest letter"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE",
+        "premises": [
+          "ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL",
+          "ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION"
+        ],
+        "conclusion": "ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
+          "locator": "Using all higher coordinates of the largest letter"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -286941,6 +287746,23 @@
               "nodes": [
                 "EXT-FIXED-DIRICHLET-L-BOUNDARY-NONVANISHING"
               ]
+            },
+            {
+              "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+              "locator": "Equations (2)–(3), ordinary prime number theorem at modulus one",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+                "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE"
+              ]
+            },
+            {
+              "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+              "locator": "Exact Kolmogorov information rate, weighted prime number theorem",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-RANDOM-PRIME-PREFIX-EXACT-INFORMATION-RATE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -293457,7 +294279,8 @@
           "citation": "1337isnot1337/solved-conjectures, catalogue and research branch at the cited Git commits.",
           "urls": [
             "https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/CONTENTS.md",
-            "https://github.com/1337isnot1337/solved-conjectures/tree/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef/research"
+            "https://github.com/1337isnot1337/solved-conjectures/tree/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef/research",
+            "https://github.com/1337isnot1337/solved-conjectures/compare/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef...d2cd4d3738570244ee1830c1d02236d93ecac11c"
           ],
           "local_sources": [],
           "identifiers": {},
@@ -293465,6 +294288,12 @@
             {
               "path": "EXTERNAL_MATHEMATICAL_TRANSFERS.md",
               "locator": "Catalogue and research commits in the introduction",
+              "role": "context",
+              "nodes": []
+            },
+            {
+              "path": "EXTERNAL_MATHEMATICAL_TRANSFERS.md",
+              "locator": "Incremental comparison from the prior pinned research commit",
               "role": "context",
               "nodes": []
             }
@@ -293931,6 +294760,16 @@
                 "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS",
                 "ARITH-ABC-EXCEPTIONAL-SET-SEVEN-TWELFTHS"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
+              "locator": "Lemma 3.3 and Proposition 4.1, grouped-root extension",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY",
+                "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+                "ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT"
+              ]
             }
           ],
           "verification": "source_read",
@@ -294019,6 +294858,220 @@
           ],
           "verification": "source_read",
           "verification_basis": "Checked the local regular-singular series convergence principle used for scalar cyclic solutions."
+        },
+        {
+          "id": "EXT-SOLVED-CONJECTURES-TWO-DIFFERENCE-MOTZKIN",
+          "title": "Motzkin density for two forbidden differences in compact abelian groups",
+          "citation": "Cinna Davis and GPT-6.2 Astra, pinned solved-conjectures proof, November 2026.",
+          "urls": [
+            "https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/two-difference-motzkin/PROOF.md"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md",
+              "locator": "The upper bound for finite groups",
+              "role": "context",
+              "nodes": [
+                "ARITH-TWO-SHIFT-OVERLAP-CHARACTER-REGION"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Checked the signed Euler orientation, periodic integration, and construction of the maximizing character."
+        },
+        {
+          "id": "EXT-SOLVED-CONJECTURES-ERDOS-TURAN-FINITE-PREFIX-COMPLEXITY",
+          "title": "Finite-prefix complexity for the Erdős–Turán additive basis conjecture",
+          "citation": "Pinned solved-conjectures research notes, November 2026.",
+          "urls": [
+            "https://github.com/1337isnot1337/solved-conjectures/blob/d2cd4d3738570244ee1830c1d02236d93ecac11c/research/erdos-turan-additive-basis/FINITE-PREFIX-COMPLEXITY.md",
+            "https://github.com/1337isnot1337/solved-conjectures/blob/d2cd4d3738570244ee1830c1d02236d93ecac11c/research/erdos-turan-additive-basis/FINITE-PREFIX-COMPLEXITY.md#read-once-branching-programs",
+            "https://github.com/1337isnot1337/solved-conjectures/blob/d2cd4d3738570244ee1830c1d02236d93ecac11c/research/erdos-turan-additive-basis/README.md#grammar-and-claim"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+              "locator": "Read-once branching programs and grammar projection with bounded fanout",
+              "role": "context",
+              "nodes": [
+                "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+                "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Checked the fixed read-set, cut encoding, independent substitutions and projection normalization hypotheses."
+        },
+        {
+          "id": "EXT-SOLVED-CONJECTURES-VISHNYAKOVA-ROOT-RADIUS",
+          "title": "Vishnyakova root-radius proof by a tridiagonal pencil",
+          "citation": "Pinned solved-conjectures proof, November 2026, for the falling-factorial variable in Vishnyakova arXiv:2608.03723v1.",
+          "urls": [
+            "https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/vishnyakova-root-radius/PROOF.md",
+            "https://arxiv.org/pdf/2608.03723v1"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md",
+              "locator": "Sections 1–3 and Open Problem 7.2 of the motivating preprint",
+              "role": "context",
+              "nodes": [
+                "FACTORIAL-LINKED-BETA-VISHNYAKOVA-PENCIL-ROOT-BOUNDS",
+                "FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Re-derived the generating function, three-term leading-block recurrence and the actual beta-parameter specialization."
+        },
+        {
+          "id": "EXT-BERG-LOPEZ-URBANIK-SEMIGROUP-2013",
+          "title": "Asymptotic behaviour of the Urbanik semigroup",
+          "citation": "Christian Berg and José Luis López, arXiv:1310.0252v1 and Journal of Approximation Theory 195 (2015).",
+          "urls": [
+            "https://arxiv.org/pdf/1310.0252",
+            "https://arxiv.org/pdf/1310.0252v1",
+            "https://arxiv.org/abs/1310.0252v1"
+          ],
+          "local_sources": [
+            {
+              "path": "moments/vanishing/sources/berg-lopez-urbanik-1310.0252v1.pdf",
+              "sha256": "5b02dcdbd6780d45f7c2a2aec6c85d4314c0c7432ee7dc60d695cf2eb2462715",
+              "locator": "Introduction equation (4), Theorem 2.1 and Corollary 2.3 with proofs"
+            }
+          ],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+              "locator": "Introduction, Theorem 2.1 and Corollary 2.3",
+              "role": "context",
+              "nodes": [
+                "EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD",
+                "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Inspected Mellin existence, the shifted contour, saddle point and the resulting tail Krein threshold."
+        },
+        {
+          "id": "EXT-HORFELT-PEDERSEN-STIELTJES-TAIL-KREIN",
+          "title": "The moment problem for some Wiener functionals, corrections to previous proofs",
+          "citation": "Per Hörfelt, with an appendix by H. L. Pedersen.",
+          "urls": [
+            "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7DACBC49C9AF30F7CF3B12C60214EA61/S0021900200000826a.pdf/the-moment-problem-for-some-wiener-functionals-corrections-to-previous-proofs-with-an-appendix-by-h-l-pedersen.pdf"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+              "locator": "Theorems 4–5, the tail form of the Krein test",
+              "role": "context",
+              "nodes": [
+                "EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Matched the Stieltjes tail integral in the primary Berg–López proof to the criterion used there."
+        },
+        {
+          "id": "EXT-SOLVED-CONJECTURES-SIMON-STABLE-INFIMUM",
+          "title": "Simon stable infimum comparison via logarithmic Lévy densities",
+          "citation": "Pinned solved-conjectures proof, November 2026.",
+          "urls": [
+            "https://github.com/1337isnot1337/solved-conjectures/blob/758066055ef49c2c66cb1087918ae62ad75e7ac1/results/simon-stable-infimum/PROOF.md"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+              "locator": "Sections 2–3, equations (11)–(19)",
+              "role": "context",
+              "nodes": [
+                "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY",
+                "GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Checked the log-Gamma quotient step and the positive negative-jump densities. The local proof verifies the beta specialization directly."
+        },
+        {
+          "id": "EXT-SOLVED-CONJECTURES-VIZING-AGGREGATE-BARRIER",
+          "title": "Realization of Vizing’s aggregate minimizing segment",
+          "citation": "Pinned solved-conjectures research note, November 2026.",
+          "urls": [
+            "https://github.com/1337isnot1337/solved-conjectures/blob/d2cd4d3738570244ee1830c1d02236d93ecac11c/research/vizing-conjecture/README.md"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "EXTERNAL_MATHEMATICAL_TRANSFERS.md",
+              "locator": "Incremental upstream audit, Vizing comparison",
+              "role": "context",
+              "nodes": [
+                "ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Checked the complement-neighborhood witnesses, matching avoidance, layer charges, and the finite replay for the block construction."
+        },
+        {
+          "id": "EXT-ALIABADI-KROP-VIZING-2607-01109V3",
+          "title": "A 2/3 bound for Vizing’s conjecture",
+          "citation": "Aliabadi and Krop, arXiv:2607.01109v3.",
+          "urls": [
+            "https://arxiv.org/abs/2607.01109v3",
+            "https://arxiv.org/html/2607.01109v3"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "EXTERNAL_MATHEMATICAL_TRANSFERS.md",
+              "locator": "Incremental upstream audit, Vizing comparison",
+              "role": "context",
+              "nodes": [
+                "ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read Proposition 6.1 and the limiting-program proof. The source defines the four aggregate parameters and their minimizing segment."
+        },
+        {
+          "id": "EXT-SOLVED-CONJECTURES-SOKAL-APERY-OPERATOR",
+          "title": "Sokal coefficientwise Apéry sequence operator obstruction",
+          "citation": "Pinned solved-conjectures research note, November 2026.",
+          "urls": [
+            "https://github.com/1337isnot1337/solved-conjectures/blob/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef/research/sokal-apery-coefficientwise/OPERATOR-OBSTRUCTION.md#any-common-vector-self-adjoint-path-at-infinity-moves-by-at-least-order-sqrts"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "uses": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md",
+              "locator": "Any common-vector self-adjoint path at infinity moves by at least order sqrt(s)",
+              "role": "context",
+              "nodes": [
+                "GAUSSIAN-ANGULAR-MOMENT-OPERATOR-SQUARE-ROOT-DISPLACEMENT"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Checked the high-order moment difference method and its use of common-vector norms."
         }
       ],
       "internal_citations": [
@@ -300167,6 +301220,181 @@
           "inspection_scope": "Checked the exact projection exponent, the constant-coordinate case, the equal-power pencil and the side-length optimization.",
           "novelty_limit": "The original determinant cover and the special slice estimates are inherited.",
           "remaining_obligation": "The surface route does not supply the short-congruence bound needed for the sharp universal exponent error."
+        },
+        {
+          "id": "ANT-ARITH-MOTZKIN-OVERLAP-BUDGET-TRANSFER",
+          "title": "Two-shift overlap budgets from signed dual orientations",
+          "relation": "classical_method",
+          "nodes": [
+            "ARITH-TWO-SHIFT-OVERLAP-CHARACTER-REGION",
+            "ARITH-TWO-SHIFT-LIMITING-OVERLAP-BOUND",
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-SOLVED-CONJECTURES-TWO-DIFFERENCE-MOTZKIN",
+              "locator": "Finite-group upper bound",
+              "statement": "An Euler orientation of the marked dual edges produces a character by integrating its periods."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md",
+              "sha256": "26d4e557ec80ae3828f64774dca3ebf19fefd64581123d7112cdae54e7cb7d93",
+              "locator": "Equations (1)–(3) and complete proofs"
+            }
+          ],
+          "application": "Mark both equally occupied and equally unoccupied endpoint pairs. Count directional budgets separately and prove sufficiency by filling character fibres.",
+          "inspection_scope": "Rechecked the orientation parity and quotient relations, and compared 1,913 exact frontiers with subset enumeration.",
+          "novelty_limit": "The primary theorem treats zero forbidden overlaps. The budget region and its sharp integer limit are proved in the local note.",
+          "remaining_obligation": "The critical semigroup needs actual shifted gap-overlap estimates for this finite and limiting constraint to evaluate its density."
+        },
+        {
+          "id": "ANT-FACTORIAL-VISHNYAKOVA-LINKED-BETA-PENCIL",
+          "title": "Tridiagonal pencil and linked-beta root constraints",
+          "relation": "classical_method",
+          "nodes": [
+            "FACTORIAL-LINKED-BETA-VISHNYAKOVA-PENCIL-ROOT-BOUNDS",
+            "FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR",
+            "GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-SOLVED-CONJECTURES-VISHNYAKOVA-ROOT-RADIUS",
+              "locator": "Sections 1–3, equations (3)–(11)",
+              "statement": "Three-term recurrence gives the tridiagonal pencil in the falling-factorial variable."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md",
+              "sha256": "7d2ccc21e5ff1f4e54734b7c12a2fa83a02f31de00b0ae5f99311a2ea5ca238a",
+              "locator": "Sections 1–3, physical pencil and the actual root conditions"
+            }
+          ],
+          "application": "Specialize the falling-factorial argument to minus the physical beta shape, then take the projective native coefficient coordinate.",
+          "inspection_scope": "Checked the normalization, modulus equation, weighted off-diagonal estimate and the Jacobi cut geometry.",
+          "novelty_limit": "The new bounds hold for the actual linked beta pair. Separate annuli nest with order.",
+          "remaining_obligation": "A shared root must satisfy both normalized Rayleigh identities. Excluding it still needs comparison of the adjacent null vectors or the moving Jacobi arc."
+        },
+        {
+          "id": "ANT-GAUSSIAN-SIMON-LEVY-ENTRYWISE-POWERS",
+          "title": "Log-Mellin Lévy transport to entrywise Wick coefficient powers",
+          "relation": "classical_method",
+          "nodes": [
+            "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY",
+            "GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-SOLVED-CONJECTURES-SIMON-STABLE-INFIMUM",
+              "locator": "Sections 2–3, equations (11)–(19)",
+              "statement": "Log-Mellin gamma differences give positive Lévy densities and allow a direct comparison."
+            },
+            {
+              "paper_id": "EXT-BERG-LOPEZ-URBANIK-SEMIGROUP-2013",
+              "locator": "Theorem 2.1 and Corollary 2.3",
+              "statement": "Factorial powers are Stieltjes indeterminate above exponent two."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+              "sha256": "f81cfcfe13ef6745a5897fecccf633341d63aada660138801fa119d9645e216d",
+              "locator": "Sections 1–4, exact splitting, beta scaling, imported threshold and determinant coefficient"
+            }
+          ],
+          "application": "Use the full Gaussian factorial grid, separate q! powers and compact beta factors, then control the powered coefficient laws by positive log-Lévy scaling.",
+          "inspection_scope": "Checked the multiplication formulas, both possible zero-mass cases in the injectivity argument, and the mixed log-kernel determinant.",
+          "novelty_limit": "Berg–López supply indeterminacy of the factorial-power factor. The preservation under compact scaling and the exact small-power minor are local deductions.",
+          "remaining_obligation": "These powered sequences concern the specified reindexed family of coefficients."
+        },
+        {
+          "id": "ANT-ARITH-VIZING-AGGREGATE-BARRIER-COMPARISON",
+          "title": "Realizability of aggregate graph obstructions",
+          "relation": "comparison_only",
+          "nodes": [
+            "ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-SOLVED-CONJECTURES-VIZING-AGGREGATE-BARRIER",
+              "locator": "Construction, Domination in the Cartesian product, and Realizing the segment",
+              "statement": "Actual graphs realize the aggregate minimizing parameters. The local witness-and-charge proof controls the product for the constructed family."
+            },
+            {
+              "paper_id": "EXT-ALIABADI-KROP-VIZING-2607-01109V3",
+              "locator": "Proposition 6.1",
+              "statement": "The recorded aggregate inequalities have optimum 2/3 at the symmetric segment."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "EXTERNAL_MATHEMATICAL_TRANSFERS.md",
+              "sha256": "b037c039e9b021244380d3c34a0c9d88bf91c3c9a807a6bb22135d2ba8164f48",
+              "locator": "Incremental upstream audit, Vizing comparison"
+            }
+          ],
+          "application": "Compare with the already realized strict hypergraph obstruction for powerful triples, whose successful route uses the arithmetic of each congruence class.",
+          "inspection_scope": "Checked that the local block witness survives layer projection and replayed the finite matching and rational-interpolation checks.",
+          "novelty_limit": "The Vizing construction is a comparison for the existing arithmetic proof design.",
+          "remaining_obligation": "New arithmetic bounds need information beyond the earlier projection cardinalities."
+        },
+        {
+          "id": "ANT-ARITH-ERDOS-TURAN-PREFIX-COMPLEXITY-TRANSFER",
+          "title": "Finite-prefix graph and grammar encodings in the prime semigroup model",
+          "relation": "classical_method",
+          "nodes": [
+            "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+            "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE",
+            "ARITH-RANDOM-PRIME-PREFIX-EXACT-INFORMATION-RATE",
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-SOLVED-CONJECTURES-ERDOS-TURAN-FINITE-PREFIX-COMPLEXITY",
+              "locator": "Read-once branching programs and Grammar and claim",
+              "statement": "The vertex read set is fixed under the syntactic all-path hypothesis. Projection gives nondeleting grammars with bounded fanout and rank."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+              "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f",
+              "locator": "Complete read-once means a condition on graph paths, Counting descriptions, and Exact Kolmogorov information rate"
+            }
+          ],
+          "application": "Apply the upstream representation of finite prefix programs to the actual prime membership labels. Their independence supplies a model-specific entropy bound.",
+          "inspection_scope": "Checked the fixed read set, terminal pruning, prime dyadic asymptotic, code-length bounds and explicit two-position failure for accepted executions alone.",
+          "novelty_limit": "The higher-order additive basis and bounded representation claims of Erdős–Turán are separate from these exact membership descriptions.",
+          "remaining_obligation": "Pointwise representation counts and critical-density estimates remain independent arithmetic tasks."
+        },
+        {
+          "id": "ANT-GAUSSIAN-SOKAL-COMMON-VECTOR-DISPLACEMENT",
+          "title": "Common-vector moment displacement and the Gaussian angular deformation",
+          "relation": "classical_method",
+          "nodes": [
+            "GAUSSIAN-ANGULAR-MOMENT-OPERATOR-SQUARE-ROOT-DISPLACEMENT",
+            "GAUSSIAN-WICK-BINOMIAL-MOMENT-CLASSIFICATION"
+          ],
+          "references": [
+            {
+              "paper_id": "EXT-SOLVED-CONJECTURES-SOKAL-APERY-OPERATOR",
+              "locator": "Common-vector self-adjoint path lower bound",
+              "statement": "First deformation coefficients at indices of order s^(-1/2) and telescoping bound every simultaneous representing operator path."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md",
+              "sha256": "63d3448734830717a7b05e95fe6c114a9044fe31456e32679fb12b8f45723283",
+              "locator": "Equations (1)–(3) and the exact two-sided norm estimates"
+            }
+          ],
+          "application": "Transfer the common-vector telescoping step to the normalized Wick coefficient deformation. The arcsine realization gives a matching upper scale.",
+          "inspection_scope": "Checked exact coefficient ratios, central binomial inequalities, and summation of moment norm factors.",
+          "novelty_limit": "The theorem concerns bounded simultaneous operator realizations of the normalized angular moments.",
+          "remaining_obligation": "Extensions to other angular coefficients require a separate representing law or an obstruction."
         }
       ]
     },
@@ -435228,7 +436456,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/main.tex",
-          "sha256": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
+          "sha256": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
           "claims": [
             "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
             "ARITH-POWERFUL-SUM-GRAPH-BOUND",
@@ -435248,7 +436476,8 @@
             "ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION",
             "ARITH-POWERFUL-SHORT-MONOMIAL-DIVISOR-DETERMINANT",
             "ARITH-POWERFUL-RATIONAL-PAIR-AMPLIFICATION",
-            "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING"
+            "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING",
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
           ],
           "dependencies": [
             "EXT-BOMBIERI-PILA-UNIFORM-AFFINE-CURVE-COUNT",
@@ -435265,7 +436494,7 @@
             {
               "locator": "thm:all-offsets",
               "kind": "theorem",
-              "line": 50,
+              "line": 51,
               "title": "thm:all-offsets",
               "nodes": [
                 "ARITH-POWERFUL-ALL-FIXED-OFFSETS-DOUBLED-LEADING-SAVING"
@@ -435275,7 +436504,7 @@
             {
               "locator": "thm:binary",
               "kind": "theorem",
-              "line": 66,
+              "line": 67,
               "title": "thm:binary",
               "nodes": [
                 "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
@@ -435286,7 +436515,7 @@
             {
               "locator": "thm:difference",
               "kind": "theorem",
-              "line": 99,
+              "line": 100,
               "title": "thm:difference",
               "nodes": [
                 "ARITH-POWERFUL-SUM-LARGE-COPRIME-DIFFERENCES"
@@ -435296,7 +436525,7 @@
             {
               "locator": "thm:campana",
               "kind": "theorem",
-              "line": 122,
+              "line": 123,
               "title": "thm:campana",
               "nodes": [
                 "ARITH-POWERFUL-SUM-CAMPANA-POINTWISE"
@@ -435304,9 +436533,19 @@
               "mapping_kind": "exact-statement"
             },
             {
-              "locator": "thm:even-diagonal",
+              "locator": "thm:two-power-diagonal",
               "kind": "theorem",
               "line": 133,
+              "title": "thm:two-power-diagonal",
+              "nodes": [
+                "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "thm:even-diagonal",
+              "kind": "theorem",
+              "line": 152,
               "title": "thm:even-diagonal",
               "nodes": [
                 "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING"
@@ -435316,7 +436555,7 @@
             {
               "locator": "thm:mixed-campana",
               "kind": "theorem",
-              "line": 150,
+              "line": 169,
               "title": "thm:mixed-campana",
               "nodes": [
                 "ARITH-POWERFUL-TRIPLES-MIXED-GCD-BOUND"
@@ -435326,7 +436565,7 @@
             {
               "locator": "thm:fixed-offset",
               "kind": "theorem",
-              "line": 168,
+              "line": 187,
               "title": "thm:fixed-offset",
               "nodes": [
                 "ARITH-POWERFUL-FIXED-OFFSET-SURFACE-SAVING",
@@ -435337,7 +436576,7 @@
             {
               "locator": "thm:consecutive",
               "kind": "theorem",
-              "line": 191,
+              "line": 210,
               "title": "thm:consecutive",
               "nodes": [
                 "ARITH-POWERFUL-CONSECUTIVE-TRIPLES-SAVING"
@@ -435347,7 +436586,7 @@
             {
               "locator": "thm:monomial",
               "kind": "theorem",
-              "line": 201,
+              "line": 220,
               "title": "thm:monomial",
               "nodes": [
                 "ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT"
@@ -435357,7 +436596,7 @@
             {
               "locator": "lem:edge",
               "kind": "lemma",
-              "line": 225,
+              "line": 244,
               "title": "lem:edge",
               "nodes": [
                 "ARITH-POWERFUL-SUM-UNIFORM-FIXED-VERTEX-EDGE"
@@ -435367,7 +436606,7 @@
             {
               "locator": "prop:graph",
               "kind": "proposition",
-              "line": 275,
+              "line": 294,
               "title": "prop:graph",
               "nodes": [
                 "ARITH-POWERFUL-SUM-OMITTED-COORDINATE-GRAPH-BOUND"
@@ -435380,7 +436619,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/paper.pdf",
-          "sha256": "354b305b6672e392a49d670e0032ca644ad778ddcbb1c8af33dbf657d909bf85",
+          "sha256": "acade6b47661be2d7e6caf7483197d6181db2bebf1336259d0a306d4f6a1e875",
           "claims": [
             "ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-THREE-TENTHS",
             "ARITH-POWERFUL-SUM-GRAPH-BOUND",
@@ -435395,7 +436634,8 @@
             "ARITH-POWERFUL-SHORT-RATIONAL-MONOMIAL-COUNT",
             "ARITH-POWERFUL-ALL-FIXED-OFFSETS-DOUBLED-LEADING-SAVING",
             "ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION",
-            "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING"
+            "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING",
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
           ],
           "dependencies": [],
           "gaps": [],
@@ -435405,7 +436645,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/README.md",
-          "sha256": "b02307f4cc719dc136badfd17a1e1999cc663f02e005453a8efb99e322020f48",
+          "sha256": "4ee9f9dc17b736614699f145649fbf488879e077762446265ada228a8ebaab5d",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -435415,7 +436655,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/metadata.json",
-          "sha256": "051f92592057c8dc6b77f9123f3b3935a3339b0ad5c600c1b1642438b16a467d",
+          "sha256": "8871b53d1cc2c039c276626cf744f852fc5ea2267bf532dc7baf5a096d9a2dd3",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -435425,7 +436665,7 @@
         },
         {
           "path": "../unpublished/powerful-number-representations/verification.json",
-          "sha256": "7b73a7ddd5ff88c5d97e61baa2b4c0e1c4285c833d1f0ff4cbca70b66873b589",
+          "sha256": "7e97d6a2ca64ec53dfa702a981fe8aa1f959dc4178cd3876a87c9c0bb23e0346",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -436244,8 +437484,8 @@
           ],
           "statements": [],
           "role": "proof",
-          "explanation": "Pinned proof-step transfers, further arithmetic and Gaussian consequences, and the polynomial control for the Stone comparison.",
-          "sha256": "1e74d6e2364b832f61fece9966927a8337602e90b179b16c75e52b3d0d9c52d7"
+          "explanation": "Pinned source updates and proof-step transfers into the arithmetic, factorial and Gaussian DAG, including the realized aggregate comparisons.",
+          "sha256": "b037c039e9b021244380d3c34a0c9d88bf91c3c9a807a6bb22135d2ba8164f48"
         },
         {
           "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
@@ -436369,10 +437609,11 @@
         },
         {
           "path": "arithmetic/verify_powerful_fixed_offset_constraints.py",
-          "sha256": "3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+          "sha256": "955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
           "claims": [
             "ARITH-POWERFUL-FIXED-OFFSET-GROUPED-OBSTRUCTION",
-            "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING"
+            "ARITH-POWERFUL-EVEN-DIAGONAL-TRIPLES-SAVING",
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
           ],
           "dependencies": [
             "ARITH-POWERFUL-CONSECUTIVE-BOX-CONSTRAINTS"
@@ -436762,22 +438003,31 @@
         },
         {
           "path": "arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md",
-          "sha256": "45590bfb0641316c6ee9e8197822f71688bc0881126175885923f697a9ff782f",
+          "sha256": "5a2c7a18c59a4c1f78703259d75dd986881947460a2bdd25acf1606704b9b453",
           "claims": [
             "ARITH-ABC-ZENG-PAIRDEV-COVERAGE-COUNTEREXAMPLE",
             "SRC-ARITH-ABC-FULLOC-REPAIR-INPUTS",
             "ARITH-ABC-FULLOC-SEVEN-TWELFTHS-UPPER",
-            "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS"
+            "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS",
+            "ARITH-ABC-GROUPED-FULLOC-1747-3000",
+            "SRC-ARITH-ABC-GROUPED-FULLOC-INPUTS",
+            "ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE"
           ],
-          "dependencies": [],
-          "gaps": [],
+          "dependencies": [
+            "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+            "ARITH-ABC-GROUPED-FULLOC-1747-3000"
+          ],
+          "gaps": [
+            "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING"
+          ],
           "statements": [],
           "role": "proof",
           "explanation": "Exact rational counterexample to coverage as shipped and the complete repaired optimum."
         },
         {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "f947f4e6fa362bc4e6117abdc90709b5d89e44846a84603ed9cd0adc27261acb",
+          "sha256": "70b1a553d9227b32957f7811b9ee8358e5f8246aaac85169c9106806b612c30f",
           "claims": [
             "ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR",
             "ARITH-ABC-POWERFUL-TRIPLE-INCLUSION",
@@ -436786,7 +438036,11 @@
             "ARITH-POWERFUL-TRIPLES-FIXED-OFFSET-FOURIER-SAVING",
             "ARITH-POWERFUL-TRIPLES-GROUPED-FOURIER-SAVING",
             "ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY",
-            "ARITH-ABC-EXCEPTIONAL-SET-SEVEN-TWELFTHS"
+            "ARITH-ABC-EXCEPTIONAL-SET-SEVEN-TWELFTHS",
+            "ARITH-ABC-EXCEPTIONAL-SET-1747-3000",
+            "ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE",
+            "ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL",
+            "ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE"
           ],
           "dependencies": [
             "EXT-ABC-DE-BRUIJN-TRIVIAL-COUNT",
@@ -436797,12 +438051,16 @@
             "EXT-ABC-BBLT-THREE-FIFTHS",
             "EXT-ABC-MONTGOMERY-VAUGHAN-BRUN-TITCHMARSH",
             "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS",
-            "ARITH-ABC-FULLOC-SEVEN-TWELFTHS-UPPER"
+            "ARITH-ABC-FULLOC-SEVEN-TWELFTHS-UPPER",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+            "ARITH-ABC-GROUPED-FULLOC-1747-3000",
+            "ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION"
           ],
           "gaps": [
             "GAP-ARITH-ABC-CONJECTURE",
             "GAP-ARITH-ABC-ZENG-ARITHMETIC-APPLICATION",
-            "GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT"
+            "GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT",
+            "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING"
           ],
           "statements": [],
           "role": "proof",
@@ -436810,17 +438068,24 @@
         },
         {
           "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
-          "sha256": "49554b2a6c6b0dcf8c895929a1a19bfe92351a5425b810ad10a888419192ae78",
+          "sha256": "f68e3c9c58ca4ed5974ef3e1c8931aecfc927c903c5077ac7d58f389fb4f51a9",
           "claims": [
             "ARITH-ABC-UNIFORM-BINARY-POWER-FIBER",
             "ARITH-ABC-OMITTED-COORDINATE-BOX-BOUND",
             "ARITH-ABC-GRAPH-STRICT-BOX-IMPROVEMENT",
-            "ARITH-ABC-GRAPH-FULLOC-WITNESS-COMPARISON"
+            "ARITH-ABC-GRAPH-FULLOC-WITNESS-COMPARISON",
+            "ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+            "ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT",
+            "ARITH-ABC-FULLOC-ASYMMETRIC-PARAMETRIC-WITNESS",
+            "ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION"
           ],
           "dependencies": [
             "EXT-ABC-BBLT-FIX-TWO-LETTERS",
             "EXT-ABC-BBLT-GROUPED-POWER-MOMENTS",
-            "EXT-ABC-BBLT-GEOMETRY-BOX-BOUND"
+            "EXT-ABC-BBLT-GEOMETRY-BOX-BOUND",
+            "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND"
           ],
           "gaps": [
             "GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT"
@@ -437065,7 +438330,7 @@
         },
         {
           "path": "arithmetic/verify_abc_pair_deviation_certificate.py",
-          "sha256": "f8348a64e42b8b4e13b5ca0ad9da40ef779f571cea292af6d697453ab1470814",
+          "sha256": "4bc996a7bbe5053b0733b4c79b334f2cc09f4b0fa0f1fcdafb943ea39537cddc",
           "claims": [
             "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS"
           ],
@@ -437283,6 +438548,192 @@
           "role": "proof",
           "explanation": "Exact integer coefficient certificates for later pivots, full chains, and direct shifted resultants.",
           "sha256": "9482576e0130d7b750f896295d4ef957878d029c00c9e8f76eb578f2108584c1"
+        },
+        {
+          "path": "arithmetic/powerful_two_power_even_certificate.json.gz",
+          "sha256": "a1d03d41f55f04e7fd129de0f17061d3c104e70fba805f5200095ea5f138ca7c",
+          "claims": [
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact rational branch certificate for the normalized cost bound for even diagonal order."
+        },
+        {
+          "path": "arithmetic/powerful_two_power_odd_certificate.json.gz",
+          "sha256": "3c7e72f502ab805fe7525d43f9c0d57c1bebc1e6fc1cb6355d407275056776f0",
+          "claims": [
+            "ARITH-POWERFUL-TWO-POWER-DIAGONAL-SAVING"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact rational branch certificate for the normalized cost bound for odd diagonal order."
+        },
+        {
+          "path": "arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md",
+          "claims": [
+            "ARITH-TWO-SHIFT-OVERLAP-CHARACTER-REGION",
+            "ARITH-TWO-SHIFT-LIMITING-OVERLAP-BOUND"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY"
+          ],
+          "statements": [],
+          "role": "proof",
+          "explanation": "Extends the finite Motzkin signed orientation to occupied-occupied edges and proves the exact overlap-budget region.",
+          "sha256": "26d4e557ec80ae3828f64774dca3ebf19fefd64581123d7112cdae54e7cb7d93"
+        },
+        {
+          "path": "factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md",
+          "claims": [
+            "FACTORIAL-LINKED-BETA-VISHNYAKOVA-PENCIL-ROOT-BOUNDS",
+            "FACTORIAL-LINKED-BETA-UNIFORM-ROOT-SECTOR"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY"
+          ],
+          "statements": [],
+          "role": "proof",
+          "explanation": "Transfers the diagonal recurrence to the actual linked-beta quadratic pencil and derives the root sector.",
+          "sha256": "7d2ccc21e5ff1f4e54734b7c12a2fa83a02f31de00b0ae5f99311a2ea5ca238a"
+        },
+        {
+          "path": "moments/vanishing/sources/berg-lopez-urbanik-1310.0252v1.pdf",
+          "claims": [
+            "EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Pinned primary Berg–López proof of the factorial-power moment threshold.",
+          "sha256": "5b02dcdbd6780d45f7c2a2aec6c85d4314c0c7432ee7dc60d695cf2eb2462715"
+        },
+        {
+          "path": "moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md",
+          "claims": [
+            "GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY",
+            "GAUSSIAN-MONOMIAL-FIBRE-POWERED-HANKEL-EXACT-VANISHING"
+          ],
+          "dependencies": [
+            "EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "proof",
+          "explanation": "Entrywise-power Wick laws, imported factorial threshold, and exact leading powered minors.",
+          "sha256": "f81cfcfe13ef6745a5897fecccf633341d63aada660138801fa119d9645e216d"
+        },
+        {
+          "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md",
+          "claims": [
+            "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+            "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE",
+            "ARITH-RANDOM-PRIME-PREFIX-EXACT-INFORMATION-RATE"
+          ],
+          "dependencies": [
+            "ARITH-RANDOM-PRIME-MULTIPLIER-COUNT"
+          ],
+          "gaps": [
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem.** Almost surely, for all sufficiently large \\(L\\),",
+              "kind": "theorem",
+              "line": 12,
+              "title": "Theorem.** Almost surely, for all sufficiently large \\(L\\),",
+              "nodes": [
+                "ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH",
+                "ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE",
+                "ARITH-RANDOM-PRIME-PREFIX-EXACT-INFORMATION-RATE"
+              ],
+              "mapping_kind": "claim"
+            }
+          ],
+          "role": "proof",
+          "explanation": "Exact membership programs and grammars, upstream path condition, and exact Kolmogorov rate in the independent-prime model.",
+          "sha256": "949f40ba151f18aba38f8ed9c854b8c49e087f46187e1fb4bc707b506de7f99f"
+        },
+        {
+          "path": "moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md",
+          "claims": [
+            "GAUSSIAN-ANGULAR-MOMENT-OPERATOR-SQUARE-ROOT-DISPLACEMENT"
+          ],
+          "dependencies": [
+            "GAUSSIAN-WICK-BINOMIAL-MOMENT-CLASSIFICATION"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "proof",
+          "explanation": "Exact Gaussian angular moments, arcsine realization and sharp displacement exponent.",
+          "sha256": "63d3448734830717a7b05e95fe6c114a9044fe31456e32679fb12b8f45723283"
+        },
+        {
+          "path": "arithmetic/verify_abc_grouped_fulloc_certificate.py",
+          "sha256": "aa4c3a737beb3b65afdad77aaa4c9d5a5549d19a5d8c8fe880662fbe4eea18c5",
+          "claims": [
+            "SRC-ARITH-ABC-GROUPED-FULLOC-INPUTS"
+          ],
+          "dependencies": [
+            "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Standard-library exact verifier of the grouped-root replacement branches and their rational duals."
+        },
+        {
+          "path": "arithmetic/abc_grouped_fulloc_delta.json.gz",
+          "sha256": "66bc415bd95803fec7c0d3ea06b19f15a7ad1c829d119eb289e8d1bbaba2f347",
+          "claims": [
+            "SRC-ARITH-ABC-GROUPED-FULLOC-INPUTS"
+          ],
+          "dependencies": [
+            "ARITH-ABC-FULLOC-EXACT-SEVEN-TWELFTHS",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Compact deterministic gzip encoding of the exact replacement subtrees and their rational multipliers."
+        },
+        {
+          "path": "arithmetic/verify_abc_fulloc_asymmetric_witness.py",
+          "sha256": "b68b208c3a0368d8c3e61e1eece8b002857c65c85e075f99bdd0bba7be0cec3f",
+          "claims": [
+            "ARITH-ABC-FULLOC-ASYMMETRIC-PARAMETRIC-WITNESS"
+          ],
+          "dependencies": [
+            "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS",
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact rational verification of an affine family for the old FullOC program and its grouped-root cut."
+        },
+        {
+          "path": "arithmetic/verify_abc_grouped_fulloc_obstruction.py",
+          "sha256": "55d5c31f833c96b988a02b118f9eeac446f5d44971ce5812c2e2c243d63d056d",
+          "claims": [
+            "ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND",
+            "EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact symmetric grouped-program obstruction and selected higher-degree tests."
         }
       ]
     },

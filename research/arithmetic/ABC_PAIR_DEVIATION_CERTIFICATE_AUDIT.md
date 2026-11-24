@@ -103,3 +103,58 @@ subtrees and candidate multipliers.
 | --- | --- |
 | [Compressed 84,147-leaf tree](sources/zeng-abc-modulus-locking-24407593/cert_fulloc_5840_improved_73_125.json.gz) | `a94bbf1c0a8bd1267f9be28cd862d980e2fe1eab7b74f2b6760d76d342ae8069` |
 | [Row and tree verifier](sources/zeng-abc-modulus-locking-24407593/check_extended_pairdev.py) | `a1ac4cd83a296c55e2c9a245e845d66dc7935f8624febdd25a61a81104b31437` |
+
+## Grouped-root certificate
+
+The [grouped-root collision inequality](ABC_OMITTED_COORDINATE_GRAPH.md#collision-bounds-for-square-and-cube-roots-drawn-from-sparse-sets)
+adds valid rows to the repaired program. These rows retain the six-coordinate
+projection and use the same tail weight \(7\) in the lower bound for the
+frozen modulus. Their diagonal term is affine. In the off-diagonal term
+each positive part has a nonnegative coefficient. The off-diagonal term is
+therefore the maximum of the affine expressions obtained by independently
+selecting either zero or the argument of each positive part. At every such
+split the diagonal branch and these off-diagonal branches cover all possible
+profiles. The grouped residue constraint contributes at most one additional
+positive part.
+
+At budget one the retained [certificate delta](abc_grouped_fulloc_delta.json.gz)
+replaces precisely **4,834** leaves whose exact original bounds exceed
+\(1747/3000\). The remaining leaves keep their original multipliers. The
+replacement subtrees use the original geometry bound and the new grouped-root
+inequality. Each new leaf has a positive rational combination of the root and
+branch rows with coefficient \(1\) on \(D\), nonnegative coefficients on the
+other variables, and right-hand side at most \(1747/3000\).
+The verified composite certificate has **106,845** leaves and gives the upper bound
+\(1747/3000\). Floating-point optimization selected branches and candidate
+multipliers during discovery. The verifier uses exact rational arithmetic.
+
+From the repository root, run the [verifier](verify_abc_grouped_fulloc_certificate.py).
+
+```sh
+python3 -B research/arithmetic/verify_abc_grouped_fulloc_certificate.py
+```
+
+The verifier rebuilds and checks the previous \(7/12\) tree first. It computes
+the complete set of paths that require replacement, reconstructs their
+ancestor rows, and checks every branch and leaf of each replacement. It also
+checks the \(37/66\) bound on the symmetric profile directly. The input tree,
+upstream checker and the repair for the previous tree are the files already
+identified above.
+
+### Dependence on the radical budget
+
+For a leaf with verified right-hand side \(b\) at budget one, write \(m\) for
+its multiplier on the initial row \(L\le1\). At budget \(\lambda\) the
+same multipliers give \(D\le b-m(1-\lambda)\). The maximum of the retained
+and replacement leaf lines on \(0\le\lambda\le1\) is exactly
+\[
+ U_{\mathrm{cert}}(\lambda)=\max\left\{
+ \frac{33678}{57833},
+ \frac{65607}{413150}+\frac{87492}{206575}\lambda
+ \right\}.
+\]
+The verifier checks that both lines occur and that every effective leaf
+line is bounded by their maximum at zero, one and the single crossing
+\(146664001/146664488\). Affinity gives the inequality on each intervening
+interval. In particular the exact maximum at budget one is
+\(240591/413150<1747/3000\).

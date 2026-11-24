@@ -114,6 +114,40 @@ The repository's claim IDs refer to [the current mathematical DAG](MATH_STATUS.j
   for constant \(c\) or \(Z^2\mid c\), arbitrary diagonal coefficients.
   [Full-core proof and diagonal descent](moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_CONVERGENT_CORE.md)
 
+## Incremental upstream audit
+
+The main catalogue is still at its pinned commit. The research branch
+has two additions since the prior audit, the Erdős–Turán finite-prefix
+complexity argument and the Vizing aggregate-bound construction.
+[Pinned commit comparison](https://github.com/1337isnot1337/solved-conjectures/compare/dab1ac8d1ecea8dc34c38932fcd2a4b3f56ce0ef...d2cd4d3738570244ee1830c1d02236d93ecac11c)
+
+- In the Erdős–Turán proof, alternative paths fix the same queried
+  positions, and cut edges record all ambiguous stretches. The fixed
+  read-set and the grammar projection transfer to the random prime
+  semigroup. Independent prime labels give exponential membership
+  complexity and an exact almost-sure information rate. The
+  representation-count and critical-density problems require separate
+  arithmetic estimates. [Prefix proof](arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md)
+- Aliabadi–Krop's Proposition 6.1 gives an aggregate minimizing
+  segment for the \(2/3\) Vizing bound. The new branch constructs
+  actual graphs at every rational point of the segment. Complement
+  neighborhoods force a local witness in each block, and the
+  Cartesian layer counts charge exceptional fibres to distinct
+  centers. The same distinction between feasible aggregate data and
+  stronger local information appears in the powerful-triples strict
+  cardinality obstruction. There the abstract hypergraph meets the old
+  projection bounds, while the arithmetic proof uses congruence classes.
+  [Upstream construction](https://github.com/1337isnot1337/solved-conjectures/blob/d2cd4d3738570244ee1830c1d02236d93ecac11c/research/vizing-conjecture/README.md) · [Primary aggregate bound](https://arxiv.org/html/2607.01109v3) · [Powerful-triples obstruction](../unpublished/powerful-number-representations/main.tex)
+
+Four older proof mechanisms also have new applications.
+
+| Upstream method | Local consequence |
+| --- | --- |
+| Two-difference Motzkin signed dual orientations | The finite two-shift overlap region is determined by one character even with occupied-occupied edges allowed. This gives sharp joint-budget tests for shifted critical gap densities. [Character proof](arithmetic/TWO_SHIFT_OVERLAP_CHARACTER_BOUNDS.md) |
+| Vishnyakova's falling-factorial tridiagonal recurrence | An exact quadratic pencil for the actual linked beta polynomials gives strict root annuli and a uniform forbidden sector on positive profiles. Any adjacent collision must satisfy two normalized Rayleigh equalities. [Actual pencil and bounds](factorial/image-rigidity/LINKED_BETA_VISHNYAKOVA_PENCIL.md) |
+| Simon's log-Gamma Lévy comparison | Gaussian monomial-fibre coefficient powers remain strict Stieltjes sequences. Their exact raw determinacy threshold is \(\theta\rho=2\), and the leading small-power Hankel determinants are positive. [Mellin and determinant proof](moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md) |
+| Sokal's common-vector operator test | A quadratic Gaussian angular deformation has sharp \(\sqrt{s}\) operator displacement from zero, with an exact arcsine upper realization. [Displacement proof](moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md) |
+
 ## Bridges between programmes
 
 | Source and receiver | What transfers |

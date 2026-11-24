@@ -10,10 +10,13 @@ at every fixed pair of offsets \(u\ge v\ge0\). It uses a uniform
 short rational congruence bound over powerful moduli. The exponent
 error in the manuscript is \(O_{u,v}(r^{-21/10})\).
 
-For sufficiently large even diagonal orders \(k\), the leading saving
-over \(2/k\) is \(8/(3k^2)\). When \(6\mid k\), an exact rational
-certificate increases it to \(4/k^2\). Section 6.3 gives the proof
-and the normalization that transfers the certificate to dyadic boxes.
+For all sufficiently large diagonal orders \(k\), the leading
+saving over \(2/k\) is \(6/k^2\) for even \(k\) and \(16/(3k^2)\)
+for odd \(k\), with an exponent error \(O(k^{-21/10})\).
+Section 9.1 proves the weighted graph bound. It gives a leading
+coefficient of \(5\) in both parities before the exact rational
+optimization. Section 6.3 gives the earlier bounds obtainable
+from common-divisor grouping alone.
 
 The manuscript also proves pointwise bounds for powerful sums and
 large coprime differences, including the \(N^{3/10+\varepsilon}\)
@@ -65,3 +68,19 @@ python3 ../../research/arithmetic/verify_powerful_fixed_offset_constraints.py \
 
 The representative order selects the permitted congruence constraints.
 The proof applies throughout the stated even orders or multiples of six.
+
+For the two-power bounds, replay the
+[even certificate](../../research/arithmetic/powerful_two_power_even_certificate.json.gz)
+and the [odd certificate](../../research/arithmetic/powerful_two_power_odd_certificate.json.gz)
+from this directory with
+
+~~~sh
+python3 ../../research/arithmetic/verify_powerful_fixed_offset_constraints.py verify \
+  ../../research/arithmetic/powerful_two_power_even_certificate.json.gz
+python3 ../../research/arithmetic/verify_powerful_fixed_offset_constraints.py verify \
+  ../../research/arithmetic/powerful_two_power_odd_certificate.json.gz
+~~~
+
+Generation uses the same tool's `--two-power-diagonal` option
+with `--cutoff 6` and `--saving 6` at representative order 62,
+or `--saving 16/3` at representative order 61.

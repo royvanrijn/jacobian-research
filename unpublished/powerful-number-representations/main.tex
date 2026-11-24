@@ -23,10 +23,11 @@ For primitive triples of orders \(p=r+u,\ q=r+v,\ r\), with
 any fixed \(u\ge v\ge0\), we save \(2/r^2+O_{u,v}(r^{-21/10})\)
 over the trivial exponent \(1/p+1/q\). The proof uses short
 rational monomial congruences over powerful moduli, together
-with graph and surface bounds. For sufficiently large even
-diagonal order \(k\) we save \(8/(3k^2)+O(k^{-5/2})\) over \(2/k\).
-An exact rational certificate increases the coefficient to \(4\)
-when \(6\mid k\).
+with graph and surface bounds. For sufficiently large diagonal
+order \(k\), a weighted graph with two omitted coordinates on each
+side saves \(5/k^2+O(k^{-21/10})\) over \(2/k\). Exact rational
+certificates increase the leading coefficient to \(6\) for even
+\(k\) and to \(16/3\) for odd \(k\).
 For fixed \(k\), the number of ordered representations of \(N\)
 as a sum of two positive \(k\)-full integers is
 \(O_\eps(N^{3/10+\eps})\) for \(k=2\) and
@@ -126,8 +127,26 @@ For each fixed \(k\ge3\) and every \(\eps>0\),
 \]
 \end{theorem}
 
-For even diagonal orders, grouping all even-exponent coordinates
-gives an additional estimate. The stronger bound for multiples of
+Allowing two different omitted exponents on each side gives the
+following stronger large-order bound.
+
+\begin{theorem}\label{thm:two-power-diagonal}
+For all sufficiently large \(k\) and every \(\eps>0\),
+\[
+ N_k(X)\ll_{k,\eps} X^{2/k-\sigma/k^2+O(k^{-21/10})+\eps},
+ \qquad
+ \sigma=\begin{cases}
+ 6,& k\text{ even},\\
+ 16/3,& k\text{ odd}.
+ \end{cases}
+\]
+The coefficient \(5\) in either parity admits a proof without
+the rational certificates. The constant in \(O(k^{-21/10})\)
+is absolute.
+\end{theorem}
+
+Grouping even-exponent coordinates alone gives the following
+alternative estimate. The stronger bound for multiples of
 six uses an exact finite certificate.
 
 \begin{theorem}\label{thm:even-diagonal}
@@ -1100,6 +1119,139 @@ branches. The cost calculations in Section 6.2 use only
 bounded coefficients, so \(D\ge u+v+2-O_{u,v}(r^{-1/10})\).
 This gives Theorem~\ref{thm:all-offsets} by
 \eqref{eq:consecutive-cost}.
+
+\subsection{Two-power omissions in diagonal boxes}\label{sec:two-power-diagonal}
+
+Theorem~\ref{thm:monomial} also counts solutions of
+\(U^e V^f\equiv K\pmod n\) with unequal height bounds.
+Apply it to \((V,1/U)\) with exponents \(f,e\) and use
+a common bound given by the larger height (increased to
+\(n^{1/(3k)}\) if needed). In particular, if \(H(U)\ll Y^2\),
+\(H(V)\ll Y\), and \(n^{1/(4k)}\le Y\le n^{1/(2k)}\), then the count is
+\(O_{k,\eps}(Y^{O(k^{-1/10})+\eps})\) for distinct \(e,f\)
+within a fixed distance of \(k\). This counts the whole
+modular fiber.
+
+Return to the diagonal box normalization in Section~6,
+with competitive range \(\Delta\ge2/k-7/k^2\). The estimates
+\eqref{eq:consecutive-cost} and \eqref{eq:consecutive-max} hold
+with this cutoff and absolute constants. Fix one summand \(n\),
+which is positive, \(k\)-full, and at least \(X^{1-O(k^{-1})}\).
+On the other two sides omit the same two exponents
+\(e=k+p,\ f=k+q\), with \(0\le p<q\le5\).
+Each pair of retained coordinate tuples specifies signed
+coefficients \(L,R\). Specific choices of the omitted
+coordinates satisfy
+\[
+                        Lx^e y^f+Rz^e w^f=n.
+\]
+We count representations with their multiplicities at each
+pair of retained tuples.
+
+Fix two left tuples, which may agree, and consider two
+distinct representations at a common right tuple. Their
+coefficients are \(L_1,L_2,R\), and their omitted coordinates
+are \((x_i,y_i,z_i,w_i)\) for \(i=1,2\).
+Reduction modulo \(n\) gives
+\[
+ U^e V^f\equiv L_2/L_1\pmod n,\qquad
+ U=\frac{x_1z_2}{x_2z_1},\qquad V=\frac{y_1w_2}{y_2w_1}.
+\]
+Primitivity gives unit residues. If \(S_i,\alpha_i\) are the
+total size and maximum normalized mass of free side \(i\), then
+the heights are at most \(4X^{S_1\alpha_1+S_2\alpha_2}\).
+The maximum-sum bound and the fixed target's size put both
+heights below \(n^{2/k}\) for large \(k\) and \(X\).
+Theorem~\ref{thm:monomial} bounds the number of ratio pairs by
+\(O_{k,\eps}(X^{O(k^{-11/10})+\eps})\), uniformly in the fixed
+tuples. The same argument allows omission of just \(e\) on
+the right by setting \(w_1=w_2=1\).
+
+To recover the representations, divide each of the four coordinate
+pairs \((x_1,x_2)\), \((y_1,y_2)\), \((z_1,z_2)\), \((w_1,w_2)\)
+by its gcd. The fractions formed from the reduced coordinates
+are already in lowest terms by cross-summand coprimality.
+Factoring the two reduced fractions gives divisor-many choices
+for all eight reduced coordinates. Let \(P_i,Q_i\) be the products
+of the two reduced coordinates to powers \(e,f\) on the left and
+right, respectively. Let \(G,H\) be the corresponding products
+of the removed gcds to those powers. The exact equations give
+\[
+ L_iGP_i+RH Q_i=n,\qquad
+ G(L_1P_1Q_2-L_2P_2Q_1)=n(Q_2-Q_1).
+\]
+If the multiplier of \(G\) vanishes, then \(Q_1=Q_2\) and both
+complete summands agree. Canonical uniqueness then gives the
+identical representation. Thus a distinct pair determines \(G\)
+and both complete signed summands, hence both canonical
+representations and their common right tuple.
+
+Let \(F\) be the number of representations and \(B_1,B_2\)
+the counts of left and right tuples. At a right tuple \(v\)
+let \(d_v\) be the number of representations, with multiplicity.
+The nonidentical ordered pairs counted by \(\sum_v d_v(d_v-1)\)
+are bounded by \(O_{k,\eps}(X^{O(k^{-11/10})+\eps}B_1^2)\),
+including pairs at equal left tuples. Cauchy--Schwarz therefore
+gives
+\[
+ F\ll_{k,\eps} B_2+X^{O(k^{-11/10})+\eps}B_1\sqrt{B_2}.
+\]
+There is a symmetric estimate for two omissions on both sides.
+Writing \(a,b\) for the grouped masses, the tuple counts are
+bounded by constants times \(X^{(1-a)S_1}\) and
+\(X^{(1-b)S_2}\). Including the count of the fixed summand in
+the preceding estimate, competitiveness implies that either
+\(b=O(k^{-1})\) or \(2a+b\le1+O(k^{-1/10})\).
+The symmetric estimate gives the other inequality unless
+\(a=O(k^{-1})\). In particular the three branches
+\begin{equation}\label{eq:two-power-branches}
+ a=0,\qquad b=0,\qquad (2a+b\le1,\ a+2b\le1)
+\end{equation}
+cover the limiting masses of the two paired groups.
+
+For a written cost bound, let \(W_j\) denote the sum of the
+three normalized masses at index \(j\). For each pair of indices
+\(p,q\le5\), apply the group constraints to the three sides.
+If all three grouped masses exceed the small-mass threshold,
+sum the three cyclic inequalities \(2a+b\le1+O(k^{-1/10})\).
+If two exceed the threshold, their sum is at most
+\(2/3+O(k^{-1/10})\). If at most one does, the total is
+at most \(1+O(k^{-1})\). Thus \(W_p+W_q\le1+O(k^{-1/10})\).
+The truncated first moment gives
+\[
+ \begin{aligned}
+ \sum_T m_T
+ &\ge15-(5W_0+4W_1+3W_2+2W_3+W_4),\\
+ 5W_0+4W_1+3W_2+2W_3+W_4
+ &=\tfrac32(W_0+W_1)+\tfrac12(W_0+W_2)+2(W_0+W_3)\\
+ &\qquad +(W_0+W_4)+\tfrac52(W_1+W_2).
+ \end{aligned}
+\]
+Hence \(D\ge\tfrac23\sum_T m_T\ge5-O(k^{-1/10})\).
+
+For the stronger coefficients, use the exact model of
+Section~\ref{sec:even-diagonal}, retaining explicit indices
+\(0,\ldots,5\) and pooling each parity tail at its lowest index.
+Here the square groups consist of indices \(j\) with \(k+j\)
+even, whether \(k\) is even or odd. Use the three branches
+\eqref{eq:two-power-branches} for identical two-index sets
+in the explicit range, and also the square-group branches
+of Section~\ref{sec:even-diagonal}. The latter permit
+\(a+b\ge1\) when the quadratic height can be too large.
+The two accompanying rational certificates verify \(D\ge6\)
+for even \(k\) and \(D\ge16/3\) for odd \(k\).
+The same finite multiplier argument as in
+Section~\ref{sec:even-diagonal} gives the corresponding
+bounds with an \(O(k^{-1/10})\) loss, accounting for the
+errors in the paired inequalities. Substitution into
+\eqref{eq:consecutive-cost} proves Theorem~\ref{thm:two-power-diagonal}.
+
+The limiting constraints used in these certificates admit
+equality. On each side place six equal masses at indices
+\(0,1,2,3,5,7\) for even \(k\) or \(0,1,2,3,4,6\) for odd \(k\).
+Every two-index group has mass at most \(1/3\), and the full
+square group has mass \(1/3\). The weighted costs give \(D=6\)
+and \(D=16/3\), respectively.
 
 \section{Limits of the fixed-offset box constraints}
 For \(u>v\), the surface-only cost bounds in

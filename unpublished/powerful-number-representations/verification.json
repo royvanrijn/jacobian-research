@@ -21,7 +21,12 @@
     "Checked both signs of the coefficient-uniform quadratic count, grouped root recovery, the parity cost inequality, and the moment normalization and height errors for all even-power coordinates.",
     "Proved the 8/3 cost bound by grouping indices 0 and 2 and treating every pattern of unavailable arcs; replayed a separate exact 21-node certificate.",
     "For orders divisible by six, replayed an exact certificate for cost at least 4 with 293 splits, 790 dual leaves and 69 infeasible leaves. Checked transfer of finite branch certificates under O(k^(-1/2)) perturbations. The checker rejected an increased threshold and an invalid residue class.",
-    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all fourteen PDF pages."
+    "Reduced the two-exponent product congruence to the existing modular quotient theorem by inversion and relabeling, retaining both unequal height bounds.",
+    "Checked weighted representation-pair recovery for both signs, including identical retained tuples and the degenerate exact rational equality. The diagonal representation pairs are counted once in the second moment.",
+    "Checked the truncated moment identity for D at least 5. Replayed both exact parity certificates and checked the finite multiplier transfer to errors of order k^(-1/10).",
+    "The standalone checker rejected both certificates after increasing their target cost. It accepted the earlier even-order certificate after the checker extension.",
+    "Scanned 24 small prime-power boxes. The 118240 ratio pairs had 116 non-singleton fibers, all arising from exact rational equalities. The scan is diagnostic.",
+    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all sixteen PDF pages."
   ],
   "numerical_exponents": [
     {
@@ -64,8 +69,8 @@
     }
   ],
   "edition_sha256": {
-    "main.tex": "b68891b13712afd6bb29ce64b6b19651183a62f4320466400cc37c1d17a4aa8f",
-    "paper.pdf": "354b305b6672e392a49d670e0032ca644ad778ddcbb1c8af33dbf657d909bf85"
+    "main.tex": "c02776407b6aafddaf5fd279e50636749955fefbf3859d640c559dbc5d79d420",
+    "paper.pdf": "acade6b47661be2d7e6caf7483197d6181db2bebf1336259d0a306d4f6a1e875"
   },
   "independent_pdf_only_review": "unperformed",
   "external_specialist_review": "unperformed",
@@ -188,7 +193,7 @@
       ]
     },
     "checker": "research/arithmetic/verify_powerful_fixed_offset_constraints.py",
-    "checker_sha256": "3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+    "checker_sha256": "955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
     "strict_cardinality_obstruction": {
       "r_mod_30": 2,
       "D": "5957/1000",
@@ -212,11 +217,40 @@
     "saving": "8/(3k^2) + O(k^(-5/2)) for all sufficiently large even k",
     "saving_divisible_by_six": "4/k^2 + O(k^(-5/2)) for all sufficiently large multiples of six",
     "checker": "research/arithmetic/verify_powerful_fixed_offset_constraints.py",
-    "checker_sha256": "3122c76bc7d74902df372c75afe6480ce8d7e4ea8677b1a01d4928fca20366ec",
+    "checker_sha256": "955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
     "divisible_by_six_certificate": "research/arithmetic/powerful_even_order_divisible_by_six_certificate.json.gz",
     "certificate_sha256": "396c4f1535b89fc07aff41ff77ab09615ccb5fe80ae7038311218f52746f68bd",
     "certificate_splits": 293,
     "dual_leaves": 790,
     "infeasible_leaves": 69
+  },
+  "two_power_diagonal": {
+    "leading_saving": {
+      "even": "6/k^2",
+      "odd": "16/(3k^2)",
+      "written_both_parities": "5/k^2"
+    },
+    "exponent_error": "O(k^(-21/10))",
+    "checker": "arithmetic/verify_powerful_fixed_offset_constraints.py",
+    "checker_sha256": "955b1c67246f81cbcd5c3013b6929ec509eb6cd6c92ee6f7246395ceb9e12f51",
+    "certificates": {
+      "even": {
+        "path": "arithmetic/powerful_two_power_even_certificate.json.gz",
+        "sha256": "a1d03d41f55f04e7fd129de0f17061d3c104e70fba805f5200095ea5f138ca7c",
+        "nodes": {
+          "split": 300,
+          "dual": 618,
+          "infeasible": 2
+        }
+      },
+      "odd": {
+        "path": "arithmetic/powerful_two_power_odd_certificate.json.gz",
+        "sha256": "3c7e72f502ab805fe7525d43f9c0d57c1bebc1e6fc1cb6355d407275056776f0",
+        "nodes": {
+          "split": 112,
+          "dual": 228
+        }
+      }
+    }
   }
 }

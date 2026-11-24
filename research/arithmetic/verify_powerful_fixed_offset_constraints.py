@@ -107,36 +107,37 @@ class Model:
         return rows
 
 
-class EvenDiagonalModel(Model):
-    """Pool high even and odd indices separately for every even order."""
+class ParityDiagonalModel(Model):
+    """Pool high indices for the even and odd powers separately."""
 
     def __init__(self, r, cutoff, saving):
-        require(r % 2 == 0 and 4 <= cutoff < r,
-                "Require an even order and at least four explicit indices.")
+        require(4 <= cutoff < r, "Require at least four explicit indices.")
         super().__init__(0, 0, r, cutoff, saving, tail_count=2)
+
+    def even_power(self, j):
+        return (self.r + j) % 2 == 0
 
     def base(self):
         eq, ub = super().base()
         for i, k in combinations(range(3), 2):
             ub.append((self.row((self.index(side, j), 1)
-                                for side in (i, k) for j in self.coordinates if j % 2 == 0), 1))
+                                for side in (i, k) for j in self.coordinates
+                                if self.even_power(j)), 1))
         return eq, ub
 
-    def pairs(self, point=None):
-        for i, k in combinations(range(3), 2):
-            for j in range(self.cutoff):
-                yield i, (j,), k, (j,)
-            groups = []
-            for side in (i, k):
-                indices = [j for j in self.coordinates
-                           if j % 2 == 0 and (point is None or point[self.index(side, j)])]
-                groups.append([g for size in range(1, len(indices) + 1)
-                               for g in combinations(indices, size)])
-            for a, b in product(*groups):
-                if a != b or len(a) > 1 or a[0] >= self.cutoff:
-                    yield i, a, k, b
-            if self.r % 3 == 0:
-                yield i, (0, 3), k, (0, 3)
+    def parity_pairs(self, i, k, point):
+        groups = []
+        for side in (i, k):
+            indices = [j for j in self.coordinates
+                       if self.even_power(j) and (point is None or point[self.index(side, j)])]
+            groups.append([g for size in range(1, len(indices) + 1)
+                           for g in combinations(indices, size)])
+        for a, b in product(*groups):
+            if a != b or len(a) > 1 or a[0] >= self.cutoff:
+                yield i, a, k, b
+
+    def bounded_height(self, a, b):
+        return a == b and len(a) == 1 and a[0] < self.cutoff
 
     def group_rows(self, pair):
         i, a, k, b = pair
@@ -144,17 +145,49 @@ class EvenDiagonalModel(Model):
                 and all(s and list(s) == sorted(set(s))
                         and all(isinstance(j, int) and j in self.coordinates for j in s)
                         for s in (a, b)), "Invalid coordinate groups.")
-        if a == b and len(a) == 1 and a[0] < self.cutoff:
-            height = None
-        elif self.r % 3 == 0 and tuple(a) == tuple(b) == (0, 3):
-            # The fixed-edge bound gives a+b <= 1, strictly below 3/2.
+        if self.bounded_height(a, b):
             height = None
         else:
-            require(all(j % 2 == 0 for j in (*a, *b)), "Omitted powers must be even.")
+            require(all(self.even_power(j) for j in (*a, *b)), "Omitted powers must be even.")
             height = Q(1)
         left = self.row((self.index(i, j), 1) for j in a)
         right = self.row((self.index(k, j), 1) for j in b)
         return left, right, height
+
+
+class EvenDiagonalModel(ParityDiagonalModel):
+    def __init__(self, r, cutoff, saving):
+        require(r % 2 == 0, "Require an even order.")
+        super().__init__(r, cutoff, saving)
+
+    def pairs(self, point=None):
+        for i, k in combinations(range(3), 2):
+            for j in range(self.cutoff):
+                yield i, (j,), k, (j,)
+            yield from self.parity_pairs(i, k, point)
+            if self.r % 3 == 0:
+                yield i, (0, 3), k, (0, 3)
+
+    def bounded_height(self, a, b):
+        # For (0, 3) at r divisible by six, the fixed-edge bound gives
+        # a+b <= 1, strictly below the cubic reconstruction threshold.
+        return (super().bounded_height(a, b)
+                or self.r % 3 == 0 and tuple(a) == tuple(b) == (0, 3))
+
+
+class TwoPowerDiagonalModel(ParityDiagonalModel):
+    def pairs(self, point=None):
+        for i, k in combinations(range(3), 2):
+            for group in combinations(range(self.cutoff), 2):
+                yield i, group, k, group
+        for i, k in combinations(range(3), 2):
+            for pair in self.parity_pairs(i, k, point):
+                if not self.bounded_height(pair[1], pair[3]):
+                    yield pair
+
+    def bounded_height(self, a, b):
+        # The two-power modular bound replaces the height gate.
+        return a == b and len(a) == 2 and b[-1] < self.cutoff
 
 
 def model_from(data):
@@ -162,6 +195,9 @@ def model_from(data):
     if data.get("model") == "even-diagonal":
         require(data["u"] == data["v"] == 0, "The parity model is diagonal.")
         return EvenDiagonalModel(data["r"], data["cutoff"], saving)
+    if data.get("model") == "two-power-diagonal":
+        require(data["u"] == data["v"] == 0, "The two-power model is diagonal.")
+        return TwoPowerDiagonalModel(data["r"], data["cutoff"], saving)
     require("model" not in data, "Unknown model.")
     return Model(data["u"], data["v"], data["r"], data["cutoff"], saving)
 
@@ -290,8 +326,11 @@ def main():
         gen.add_argument(name, type=int)
     gen.add_argument("--cutoff", type=int, default=6)
     gen.add_argument("--saving", type=Q, default=Q(2))
-    gen.add_argument("--even-diagonal", action="store_true",
-                     help="Use parity groups and separate even and odd tails.")
+    modes = gen.add_mutually_exclusive_group()
+    modes.add_argument("--even-diagonal", action="store_true",
+                       help="Use parity groups and separate even and odd tails.")
+    modes.add_argument("--two-power-diagonal", action="store_true",
+                       help="Use paired omissions and parity groups for either parity.")
     val = commands.add_parser("verify", help="Verify a JSON certificate without SciPy.")
     val.add_argument("file", type=Path)
     args = parser.parse_args()
@@ -309,6 +348,8 @@ def main():
                     "saving": str(args.saving)}
             if args.even_diagonal:
                 data["model"] = "even-diagonal"
+            if args.two_power_diagonal:
+                data["model"] = "two-power-diagonal"
             data.update(generate(model_from(data)))
             verify(data)
             print(json.dumps(data, indent=2))

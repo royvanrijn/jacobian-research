@@ -72,7 +72,7 @@ def check_gap(checker, published_tree, pairdev_path):
                   "D_excess": str(excess)}
 
 
-def main():
+def load_repaired_certificate():
     checker = ModuleType("zeng_24407593_checker")
     exec(compile(source_bytes(CHECKER_FILE, CHECKER_SHA256), str(CHECKER_FILE), "exec"),
          checker.__dict__)
@@ -83,7 +83,6 @@ def main():
             "unexpected source exponent program")
 
     pairdev, gap = check_gap(checker, certificate, delta["pairdev_path"])
-    print(json.dumps({"published_tree_gap": gap}, sort_keys=True), flush=True)
     reverse_children = delta["reverse_children"]
     require(len(pairdev["children"]) == 4 and len(reverse_children) == 3,
             "wrong number of deviation children")
@@ -119,9 +118,20 @@ def main():
     checker.branches = repaired_branches
     certificate["leaves"] += added_leaves
     certificate["max_certified_D"] = delta["replacement_upper_bound"]
+    return checker, certificate, gap
+
+
+def verify_repaired_certificate(checker, certificate):
     result = checker.verify(certificate)
     require(result["pairdev"] == 1 and result["leaf"] == 84177 and result["upper"] == "7/12",
             "unexpected repaired exponent certificate result")
+    return result
+
+
+def main():
+    checker, certificate, gap = load_repaired_certificate()
+    print(json.dumps({"published_tree_gap": gap}, sort_keys=True), flush=True)
+    result = verify_repaired_certificate(checker, certificate)
     print(json.dumps({"repaired_tree": result}, sort_keys=True))
 
 
