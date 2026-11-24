@@ -241,6 +241,9 @@ N_\lambda(X)\ll_{\lambda,\varepsilon}
  X^{2\lambda/3-c\lambda^{3/2}\sqrt{\log(1/\lambda)}+\varepsilon}.
 \tag{8}
 \]
+One may take any fixed \(c<1/(18\sqrt{14})\) for sufficiently small
+\(\lambda\).
+
 The extra saving comes from concentration of the occupied degrees near
 one degree in any profile whose exponent approaches \(2\lambda/3\).
 Brun–Titchmarsh limits the prime degrees available in that interval.
@@ -328,6 +331,20 @@ proves (7). Its gap from \(2\lambda/3\) is
 \]
 At \(t=6/\lambda\) the numerator is \(3-2\lambda+\lambda^2/3>0\).
 
+Keeping the factor \(2-D\) in (11) gives a sharper implicit bound.
+If \(D\ge4\lambda/7\), then \(D-F\ge7D-4L\ge0\), and
+\[
+ (t-1)(7D-4\lambda)
+ \le(2-D)\left(1+\frac{(4\lambda-6D)S(t)}{3-\lambda}\right).
+\tag{12}
+\]
+Here \((4L-6D)/(3-L)\) increases with \(L\), so one can use \(L\le\lambda\)
+after substituting \(F\le4L-6D\) into (11) and the prime-divisor estimate.
+On \([4\lambda/7,2\lambda/3]\) the left-hand side increases and the
+right-hand side decreases. Thus their intersection bounds \(D\)
+whenever it lies in the interval. At \(\lambda=1/2\) and \(t=17\),
+(12) gives \(D<32311/100000\).
+
 ### Concentration near a single degree
 
 Write \(\delta=2\lambda/3-D\) and assume
@@ -382,6 +399,67 @@ integer indices first gives \(\lambda\ll\delta H\) and
          \ll \frac{\delta^2}{\lambda^2\log(1/\lambda)},
 \]
 which proves (8). [Montgomery–Vaughan, equation (1.12)](https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf)
+
+### Leading constant for the small-budget saving
+
+Write \(\ell=\log(1/\lambda)\), \(\delta=2\lambda/3-D\), and
+\(\delta_L=2L/3-D\). It suffices to consider
+\(\delta\le\lambda^{3/2}\sqrt\ell\). Then \(L=\lambda+O(\delta)\)
+and \(F\le6\delta_L\le6\delta\). Let \(u_*=1-L+D\) and
+\(\theta=u_*/W\), as above. By \(W\le3-L\) and (10),
+\[
+0\le R(u_*)-\theta L
+\le F+L-D-\frac{Lu_*}{3-L}
+= F+\frac{3\delta_L}{3-L}.
+\]
+The same bounds give \(\theta=1/3+o(1)\) because
+\(u_*\to1\) and \(R(u_*)\le L/3+O(\delta)\). Hence \(W\sim3\).
+For the fractional threshold \(v\), the absolute deviation bound above
+gives \(W/v=L+O(\delta)\), so \(v\sim3/\lambda\).
+
+The preceding localization gives an interval of length
+\(H\asymp1+\delta/\lambda^2\) near \(v+1\) containing a fixed
+positive fraction of the total mass. Every degree in it has mass at
+most \(F\). Counting integer degrees first gives
+\(\lambda\ll FH\ll\delta(1+\delta/\lambda^2)\), so
+\(H\gg\lambda^{-1/2}\). The composite degrees there have total mass
+\(O(F/(\sqrt\lambda\,\ell))=o(\lambda)\). Brun–Titchmarsh on the
+remaining prime degrees gives \(\lambda\ll FH/\log H\). Since
+\(H\ll\lambda^{-1/2}\sqrt\ell\), we obtain
+\(F\asymp\lambda^{3/2}\sqrt\ell\).
+
+For each degree define the nonnegative cost
+\[
+c_i=(1-\theta)(v-(i-1))_++\theta((i-1)-v)_+,
+\qquad
+M(h)=\sum_{c_i\le h}p_i .
+\]
+The fractional threshold identity gives
+\(\sum_i p_i c_i=v(R(u_*)-\theta L)\). Let
+\(h_0=\lambda\ell/(18F)\asymp\lambda^{-1/2}\sqrt\ell\).
+The interval \(c_i\le h\) has length \((9/2+o(1))h\).
+For \(h_0/\ell\le h\le h_0\) its log-length is
+\((1/2+o(1))\ell\), uniformly in \(h\). Brun–Titchmarsh and
+the per-degree prime mass cap therefore give prime mass at most
+\((18+o(1))Fh/\ell\). The composite mass is \(o(\lambda)\)
+throughout these intervals because they lie at degrees
+\(O(1/\lambda)\). For \(0\le h<h_0/\ell\), monotonicity gives
+\(M(h)\le M(h_0/\ell)=o(\lambda)\). Consequently, uniformly
+on \([0,h_0]\),
+\[
+M(h)\le o(\lambda)+(18+o(1))Fh/\ell.
+\]
+Integrating over that interval and using \(v\sim3/\lambda\) yields
+\[
+v(R(u_*)-\theta L)=\int_0^\infty(L-M(h))\,dh
+\ge (1-o(1))\frac{\lambda^2\ell}{36F},
+\qquad
+F(R(u_*)-\theta L)\ge(1-o(1))\frac{\lambda^3\ell}{108}.
+\]
+The initial upper bound and \(F\le6\delta_L\) give
+\(F(R(u_*)-\theta L)\le(42+o(1))\delta_L^2\).
+Thus the coefficient of \(\lambda^{3/2}\sqrt\ell\) in the saving
+can be taken to be \(1/(18\sqrt{14})-o(1)\) as \(\lambda\to0\).
 
 ### A matching order within the exponent inequalities
 
@@ -461,3 +539,49 @@ frozen subsets, including sets that use the entire tail. The family
 therefore gives a matching order for these exponent inequalities
 even with the new height information.
 [Grouped-root, common-shift and direct congruence inequalities](ABC_OMITTED_COORDINATE_GRAPH.md#counting-collisions-by-their-common-shift)
+
+## Exceptional-set bounds from the two tall terms
+
+The [exact certificates with two tall terms](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md#exact-certificates-at-fixed-radical-budgets)
+prove that for every \(\varepsilon>0\),
+\[
+ N_{7/10}(X)\ll_\varepsilon X^{43/100+\varepsilon},
+ \qquad N_{4/5}(X)\ll_\varepsilon X^{49/100+\varepsilon}.
+\]
+These bounds also apply to smaller budgets by inclusion of the sets.
+Reweighting the tree leaves gives \(N_{3/4}(X)\ll_\varepsilon
+X^{1349/2844+\varepsilon}\).
+
+
+At budget \(7/10\), Li's radical-budget preprint reports \(109/250\).
+His later twisted-energy preprint reports \(24811/50480\) at \(4/5\)
+and \(677/1240\) at \(9/10\). The new certificates lower the first
+two of those exponents. At \(3/4\), the radical-budget preprint's
+reported \(35/76\) is stronger than the value obtained by reweighting
+these trees. [Li, radical budget, v2, Theorem 1.2](https://rstation.ai/problems/math/papers/17/v2) ·
+[Li, squares and twisted energy, v3, Theorem 1.2](https://rstation.ai/problems/math/papers/28/v3)
+
+
+To transfer the certificates, apply the same dyadic and anatomic
+reduction used for (5). Keep the shorter addend as the short label
+and order the two tall labels as in the certificate. Both tall
+monomials have weighted logarithmic height tending to one because
+their complete values are at least \(Y/4\) and the exceptional
+coefficients cost \(Y^{O(\eta)}\). In a convergent subsequence of the
+projected masses, the complete-tail upper heights and the tall
+whole-tail lower heights therefore hold. The grouped collision,
+geometry and direct residue-energy bounds give their finite
+disjunctions in the limit. A count exponent above a verified bound
+would produce a feasible exponent point above that bound. The
+argument also transfers the reweighted certificates since the
+limiting budget row is \(L\le\lambda\).
+
+
+At budget one, the [height refinements of the earlier tree](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md#height-refinements-of-the-budget-one-tree)
+give
+\[
+ N_\lambda(X)\ll_\varepsilon X^{29/50+\varepsilon}
+ \qquad (0<\lambda\le1).
+\]
+The transfer uses the same two tall terms, with the three choices of
+the shorter label made inside the original ordering.

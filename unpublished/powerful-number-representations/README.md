@@ -4,14 +4,15 @@ Roy van Rijn · Draft in preparation
 
 [PDF](paper.pdf) · [LaTeX source](main.tex) · [Metadata](metadata.json) · [Verification record](verification.json)
 
-The headline theorem saves \(c_0k^{-3/2}\) over \(2/k\) for
-primitive diagonal \(k\)-full triples, with an absolute \(c_0>0\).
-For fixed offsets \(p=r+u,\ q=r+v\), it saves
-\((c_0/2)r^{-3/2}\) over \(1/p+1/q\) for sufficiently large \(r\).
-Section 9.2 proves the bound by compressing each representation
-to two rational variables and counting them with a rectangular
-determinant. The general modular estimate also covers heights
-up to \(n^{C/r}\) for every fixed \(C\).
+The headline theorem saves \(2^{-16}/k\) over \(2/k\) for
+primitive diagonal \(k\)-full triples. For fixed offsets
+\(p=r+u,\ q=r+v\), it saves \(2^{-17}/r\) over \(1/p+1/q\)
+for sufficiently large \(r\). Section 9.3 proves the bound
+by applying Newton divided differences to the rectangular
+determinant for the compressed congruence. Section 9.2 gives
+the direct compression and the earlier \(k^{-3/2}\) saving.
+The general modular estimate covers heights up to \(n^{C/r}\)
+for every fixed \(C\).
 
 The draft retains the fixed-offset graph estimates and the two-power
 weighted graph bound of Section 9.1. Its exact certificates give

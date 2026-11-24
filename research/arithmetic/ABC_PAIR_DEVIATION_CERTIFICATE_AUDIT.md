@@ -158,3 +158,94 @@ line is bounded by their maximum at zero, one and the single crossing
 \(146664001/146664488\). Affinity gives the inequality on each intervening
 interval. In particular the exact maximum at budget one is
 \(240591/413150<1747/3000\).
+
+## Exponent inequalities with both tall terms retained
+
+For the height range \(Y/2\le c\le Y\), the larger addend is at least
+\(Y/4\). After carrying the signs of the original equation through a
+permutation, label the shorter addend \(a\) and the two terms comparable
+with \(Y\) by \(b,c\), ordering the latter by
+\(\alpha_{T,4}+2\alpha_{T,5}\). Thus of the two order inequalities in
+the original FullOC root, retain only
+\(\alpha_{c,4}+2\alpha_{c,5}\le\alpha_{b,4}+2\alpha_{b,5}\).
+The height argument is independent of which of the two tall labels
+is the original largest term.
+
+A selection \(J\) on one letter may contain all higher coordinates
+or none of them. Put \(\tau_T=L_T-\sum_{i\le6}\alpha_{T,i}\).
+When \(J\) contains the entire higher part, its mass is
+\(\tau_T+\sum_{i\in J,\ i\le6}\alpha_{T,i}\). Its upper weighted
+height is \(1-\sum_{i\notin J,\ i\le6}i\alpha_{T,i}\). For either
+tall letter the latter expression is also a lower bound for the
+weighted height in the limiting program. For the shorter letter the
+lower bound is \(7\tau_T+\sum_{i\in J,\ i\le6}i\alpha_{T,i}\).
+A selection of only early coordinates has its ordinary weighted
+height in both bounds. The bounds hold up to the vanishing
+decomposition errors and allow the exceptional coefficients in the
+frozen moduli.
+
+These choices apply to the geometry estimate by releasing the product
+of all selected coordinates. Its upper exponent uses the upper
+weighted heights. In a collision estimate the modulus exponents
+are lower weighted heights, while root and free-value exponents are
+upper heights. A grouped root that includes the higher part can be
+taken with exponent one, regardless of the individual degrees in
+that part. The resulting root set is sparse at its mass scale.
+Releasing the whole higher part of \(A\) leaves the off-diagonal
+collision bound unchanged when the two root groups are kept fixed
+and lowers the diagonal term. The direct congruence-energy estimate
+uses the same lower bound for the modulus of its locked letter.
+[Grouped collision and direct residue bounds](ABC_OMITTED_COORDINATE_GRAPH.md#direct-congruence-bound-from-two-residue-energies)
+
+### Exact certificates at fixed radical budgets
+
+The additional rows give the following upper certificates for the
+tagged program. Each tree starts from the three heights, the projected
+pair and Fourier bounds, the budget inequality, and the single order
+inequality for the two tall terms.
+
+| Radical budget | Upper bound for \(D\) | Leaves |
+| --- | --- | --- |
+| \(7/10\) | \(43/100\) | 12,769 |
+| \(4/5\) | \(49/100\) | 17,760 |
+
+At each split, the diagonal and off-diagonal terms, or the geometry
+alternatives, give a disjunction of affine inequalities. For a sum
+of positive parts with nonnegative coefficients, the verifier lists
+every affine term of the maximum. Each leaf verifies a rational
+linear combination of its ancestor and root rows, with coefficient
+one on \(D\) and nonnegative coefficients on all other variables.
+Floating-point optimization proposed the trees and multipliers.
+[Certificate archive](abc_height_fulloc_certificate.json.gz) ·
+[Exact verifier](verify_abc_height_fulloc_certificate.py)
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py
+```
+
+A leaf with bound \(b\) and multiplier \(m\) on the radical budget
+row at budget \(\lambda_0\) gives the bound \(b+m(\lambda-\lambda_0)\)
+at any fixed \(0<\lambda\le1\). Taking the largest of these bounds in
+each tree and the smallest across the available trees gives an
+upper exponent function. For example, \(\lambda=3/4\) gives \(1349/2844\).
+The verifier option `--at-budget 3/4` evaluates this function exactly.
+
+### Height refinements of the budget-one tree
+
+At budget one the [height delta](abc_height_fulloc_delta.jsonl.gz)
+refines the grouped-root tree at exactly **12,272** leaf bounds above
+\(29/50\). It keeps the original root ordering. At a refined leaf,
+the three possible positions of the shorter addend cover the boxes.
+In each position, the other two letters have the tall modulus bounds
+for frozen tails. Some replacements close directly with a tighter
+rational combination of the existing rows and need no height case.
+The composite tree has **368,294** effective leaves and exact upper
+bound \(29/50\).
+
+The [delta verifier](verify_abc_height_fulloc_delta.py) checks both
+earlier layers, all replacement paths and all new branches. It checks
+each rational dual using integer-scaled rows.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_delta.py
+```

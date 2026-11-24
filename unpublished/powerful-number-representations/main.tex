@@ -21,18 +21,18 @@
 \begin{abstract}
 For all sufficiently large \(k\), the number of primitive
 \(k\)-full triples \(a+b=c\le X\) is
-\(O_{k,\eps}(X^{2/k-c_0 k^{-3/2}+\eps})\) for an absolute
-\(c_0>0\). We reduce each triple with fixed \(c\) to a
-congruence between two short rational numbers and count
-its solutions with a rectangular determinant.
-This also gives a saving of order \(r^{-3/2}\) over
-\(1/p+1/q\) for fixed offsets \(p=r+u,\ q=r+v\).
-The same manuscript gives bounds for representations by two
-positive \(k\)-full integers. Their number at target \(N\) is
-\(O_\eps(N^{3/10+\eps})\) for \(k=2\) and
-\(O_{k,\eps}(N^{1/(k+1)+\eps})\) for \(k\ge3\).
-The graph bounds used for these estimates also apply to
-large coprime differences.
+\(O_{k,\eps}(X^{(2-2^{-16})/k+\eps})\).
+We compress each triple at fixed \(c\) to a rational congruence
+and count its solutions using a rectangular determinant.
+Newton divided differences preserve enough local precision
+to prove that the determinant is nonzero in one selected
+prime-adic comparison. For fixed offsets \(p=r+u,\ q=r+v\)
+we also save a fixed multiple of \(1/r\) over \(1/p+1/q\).
+For representations by two positive \(k\)-full integers,
+we give pointwise bounds of \(O_\eps(N^{3/10+\eps})\) for \(k=2\)
+and \(O_{k,\eps}(N^{1/(k+1)+\eps})\) for \(k\ge3\).
+The graph bounds for these estimates apply also to large
+coprime differences.
 \end{abstract}
 \maketitle
 
@@ -47,6 +47,23 @@ Browning and Verzobio \cite[Theorem~1.1]{BV} save
 leading saving for every fixed pair of offsets using the
 common-neighbor method. Direct compression gives a stronger
 large-order saving.
+
+\begin{theorem}\label{thm:divided-difference-triples}
+Put \(\delta=2^{-16}\). For all sufficiently large \(k\) and
+every \(\eps>0\),
+\[
+ N_{k,k,k}(X)\ll_{k,\eps} X^{(2-\delta)/k+\eps}.
+\]
+For fixed nonnegative integers \(u\ge v\), all sufficiently
+large \(r\) in terms of \(u,v\), and every \(\eps>0\), we have
+\[
+ N_{r+u,r+v,r}(X)\ll_{u,v,r,\eps}
+ X^{1/(r+u)+1/(r+v)-\delta/(2r)+\eps}.
+\]
+\end{theorem}
+
+The rectangular determinant without divided differences gives
+the following bound by a shorter argument.
 
 \begin{theorem}\label{thm:compressed-diagonal}
 There is an absolute constant \(c_0>0\) such that for all
@@ -1422,6 +1439,153 @@ For fixed offsets, every solution counted by \(N_{r+u,r+v,r}\)
 is counted by \(N_{r,r,r}\), and
 \(2/r-1/(r+u)-1/(r+v)=O_{u,v}(r^{-2})\).
 This proves the fixed-offset conclusion.
+
+\subsection{Divided differences for the compressed congruence}
+\label{sec:divided-difference-triples}
+
+\begin{lemma}\label{lem:divided-difference-rational}
+Let \(\delta=2^{-16}\) and \(\lambda=65/64\).
+For sufficiently large \(k\), a \(k\)-full modulus \(n\),
+a unit \(K\bmod n\), and every \(\eps>0\), the number of
+positive rational unit pairs satisfying
+\[
+ VT^k\equiv K\pmod n,\qquad
+ H(T)\le n^{\lambda/k},\qquad H(V)\le n^{\lambda\delta}
+\]
+is \(O_{k,\eps}(n^{1/(2k)+\eps})\).
+\end{lemma}
+
+\begin{proof}
+Apply \eqref{eq:rational-amplification} with \(t=2\).
+The amplified pairs have heights at most \(n^{2\lambda/k}\)
+and \(n^{2\lambda\delta}\), respectively, and the new
+right-hand side is \(K^2\). Distinct amplified pairs have
+distinct rational \(T\), since \(T\) determines \(V\bmod n\)
+and \(n^{4\lambda\delta}<n\) for \(n>1\).
+The bounded range of \(n\) in the arguments below is absorbed
+in the constant.
+
+Put \(h=\lfloor k/4096\rfloor\) and \(D=16(h+1)\).
+Use the \(D\) columns \(V^iT^j\), \(0\le i\le15,\ 0\le j\le h\).
+Modulo \(n\), multiplying a row by \(T^{15k}\) and a column
+by \(K^{-2i}\) gives \(T^{15k-ki+j}\). Denote the sorted
+weights \(15k-ki+j\) by \(w_1,\ldots,w_D\). They are distinct
+since \(h<k\). Write \(\Phi\) for the alternant divided
+by the ordinary Vandermonde, and put \(\kappa=\Phi(1,\ldots,1)>0\)
+as in Section~8.
+
+Write \(n=\prod_{p}p^{e_p}\) and \(q_p=\lfloor e_p/k\rfloor\).
+Partition the pairs by their unit \(T\)-class modulo
+\[
+ Q=\prod_{p\mid n}p^{\max(q_p,1+v_p(\kappa))}.
+\]
+For \(p\not\mid\kappa\) we have \(\max(q_p,1)=q_p\).
+Thus \(Q\ll_k n^{1/k}\).
+We show that a class contains fewer than \(2D\) amplified
+pairs.
+
+First, any \(D\) rows in the class have zero determinant.
+Clear denominators row by row with exponent \(15\) for
+\(V\) and \(h\) for \(T\). The resulting integer determinant
+has magnitude at most
+\[
+ D!\, n^{D(2\lambda h/k+30\lambda\delta)}.
+\]
+For each \(p\mid n\), its valuation equals that of the
+unit-scaled matrix \(A\) congruent to
+\(\mathcal B=(T_\ell^{w_j})_{\ell,j}\bmod p^{e_p}\),
+since the scaling factors and cleared denominators are units.
+Every minor of \(\mathcal B\) of order \(s\) is
+divisible by \(p^{q_p\binom s2}\): it is divisible by the
+ordinary Vandermonde on its selected rows.
+Expand the determinant of \(A\) in rows from
+\(\mathcal B\) and \(A-\mathcal B\). A term with \(s\) rows
+from \(\mathcal B\) is divisible by
+\(p^{(D-s)e_p+q_p\binom s2}\), by expansion in minors.
+Since \(e_p\ge (D-1)q_p\), this valuation is at least
+\(q_p\binom D2\) for every \(s\).
+As \(q_p\ge e_p/(2k)\), the absolute value of a nonzero
+integer determinant would be at least
+\(n^{D(D-1)/(4k)}\).
+But
+\[
+ \frac{D-1}{4}-2\lambda h-30\lambda\delta k
+ \ \ge\ (64-62\lambda)\delta k+2\lambda-\tfrac14>0
+\]
+using \(h\ge16\delta k-1\). The size bound forces the
+determinant to vanish for sufficiently large \(n\).
+
+Now suppose the class contains \(2D\) pairs. Select primes
+\(p\mid n\) with \(e_p>2v_p(\kappa)\), and let \(n_g\)
+be the product of their full prime powers in \(n\).
+The omitted powers have product at most \(\kappa^2\),
+so \(n_g\ge n^{1/2}\) for sufficiently large \(n\).
+For distinct \(T_\ell,T_j\), the product of powers of
+primes dividing \(n\) in their cross difference is bounded
+by its absolute numerator, at most \(n^{4\lambda/k}\).
+Consequently
+\[
+ \sum_{p\mid n}v_p(T_\ell-T_j)\log p
+                  \le (4\lambda/k)\log n .
+\]
+Give each selected \(p\) weight \(e_p\log p/\log n_g\).
+The average over those primes and the \(2D\) rows of
+\[
+ \frac{1}{e_p}\sum_{j\ne\ell}v_p(T_\ell-T_j)
+\]
+is at most \(8\lambda(2D-1)/k\le\lambda/12<1/8\)
+for sufficiently large \(k\), since \(D\le k/192\).
+There is therefore a selected prime with row average
+less than \(1/8\). At least \(D\) rows have normalized
+sum at most \(1/4\) at that prime.
+Keep \(D\) such rows and relabel their \(T\)-coordinates
+\(T_1,\ldots,T_D\). The sums over this smaller set can
+only decrease.
+
+For this prime let \(\mathcal N\) be the Newton
+divided-difference matrix. Its entry in position \((a,\ell)\)
+is zero for \(\ell>a\), and otherwise is
+\[
+ \mathcal N_{a,\ell}=
+ \prod_{\substack{1\le j\le a\\j\ne\ell}}(T_\ell-T_j)^{-1}.
+\]
+It is invertible, and each entry has valuation at least
+\(-e_p/4\). Thus every entry of \(\mathcal N(A-\mathcal B)\)
+has valuation at least \(3e_p/4\).
+The comparison matrix \(\mathcal N\mathcal B\) is integral over
+\(\mathbb Z_p\). Its entries are leading coefficients of the
+remainders of \(T^{w_j}\) on division by
+\(\prod_{\ell=1}^a(T-T_\ell)\), using interpolation on each
+prefix. Its determinant equals \(\Phi(T_1,\ldots,T_D)\)
+since \(\det\mathcal N\) is the inverse Vandermonde.
+The class modulo \(Q\) makes this value congruent to
+\(\Phi(T_1,\ldots,T_1)\) modulo \(p^{1+v_p(\kappa)}\).
+The diagonal value is \(\kappa\) times a power of the unit
+\(T_1\), so its valuation is exactly \(v_p(\kappa)\).
+As \(3e_p/4>v_p(\kappa)\), the determinant of \(\mathcal N A\)
+has this same finite valuation. Thus \(A\), and the
+original determinant, are nonzero. This contradicts the
+vanishing proved at every choice of \(D\) rows in the class.
+
+It follows that there are \(O_k(Q)=O_k(n^{1/k})\)
+amplified pairs. Undoing the amplification proves the lemma.
+\end{proof}
+
+To prove Theorem~\ref{thm:divided-difference-triples}, keep the
+decomposition \(m=R(m)^kW(m)\) of Section~9.2.
+If any \(R(m)\le X^{(1-\delta)/k}\), the elementary
+tuple count there gives \(O_{k,\eps}(X^{(2-\delta)/k+\eps})\)
+triples. Otherwise \(c\ge X^{1-\delta}\) and
+\(W(a),W(b)\le X^\delta\). The height bounds for the compressed
+pair are \(H(T)\le X^{1/k}\) and \(H(V)\le X^\delta\).
+Since \(\lambda(1-\delta)\ge1\), these are at most
+\(c^{\lambda/k}\) and \(c^{\lambda\delta}\).
+The lemma gives \(O_{k,\eps}(c^{1/(2k)+\eps})\)
+pairs at each fixed \(c\). Summing over \(k\)-full \(c\)
+gives \(O_{k,\eps}(X^{3/(2k)+\eps})\), which is stronger
+than the required bound. The fixed-offset assertion
+follows from monotonicity in the three orders and the
+\(O_{u,v}(r^{-2})\) difference between \(2/r\) and \(1/p+1/q\).
 
 \section{Limits of the fixed-offset box constraints}
 For \(u>v\), the surface-only cost bounds in

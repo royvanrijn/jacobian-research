@@ -518,10 +518,11 @@ letter, use the fixed nonzero difference cap
  d_T=\min\left\{s_T,\ \min_{e\ge 2}
              2\!\!\sum_{\substack{i\in I_T\\e\nmid i}}\alpha_{T,i}\right\},
 \]
-where the minimum uses any chosen finite set of fixed degrees. For a
-prescribed unit residue modulo \(M_C\), use the cap
+where the minimum uses any chosen finite set of fixed degrees. For the
+second free letter after the opposite free value has been fixed, use
+the cap
 \[
- \ell_T=\min\left\{s_T,\ (h_T-w_C)_+,\
+ \ell_T=\min\left\{s_T,\ L_C-f_C,\ (h_T-w_C)_+,\
  \min_{\varnothing\ne J\subseteq I_T}
  \left(s_T-\sum_{i\in J}\alpha_{T,i}
       +\left(\sum_{i\in J}(i/g_J)\alpha_{T,i}-w_C\right)_+\right)\right\},
@@ -571,8 +572,10 @@ interval bound gives \((h_T-w_C)_+\). For the subgroup bound, fix the free
 coordinates outside \(J\) in the chosen copy on \(T\) and solve a unit
 \(g_J\)-th power congruence for the grouped root. It has \(O_{g_J,\varepsilon}
 (X^\varepsilon)\) residue classes, and the weighted root height gives
-the displayed interval bound. The cap \(d_B\) and the cap \(\ell_B\)
-both apply after choosing the value on \(A\), so they contribute
+the displayed interval bound. The extra term \(L_C-f_C\) counts the
+possible values of \(w\), since each \(w\) fixes the second free value
+by the signed equation. The caps \(d_B\) and \(\ell_B\) both apply
+after choosing the value on \(A\), so they contribute
 \(\min(d_B,\ell_B)\). Choosing \(B\) first gives \(d_B+\min(d_A,\ell_A)\).
 This proves the paired cap \(\rho\). Once \(u,v\) are known, the signed
 equation determines \(w\). Multiplying by the number of shifts and
@@ -673,3 +676,69 @@ At the symmetric \(7/12\) profile use \(O_C=\{4\}\) and
 cardinality exponents are \(54,54\) and the heights are \(54,90\), with
 \(L_T=132,\ f_C=36,\ w_C=144\). Thus \(K_T=174\) on each letter and
 the bound is \(D\le210/396=35/66\).
+
+### An asymmetric obstruction for the height-tagged bounds
+
+The height-tagged projected program with whole-tail releases, grouped
+collision bounds, direct residue energies and paired shift bounds has a
+feasible point at \(D=2627/4796\). Its coordinate and Fourier numerators
+in units of \(1/95920\) are
+
+| Letter | \(\alpha_1\) | \(\alpha_2\) | \(\alpha_3\) | \(\alpha_4\) | \(\alpha_5\) | \(\alpha_6\) | \(L_T\) | \(F_T\) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Short \(a\) | 4508 | 5169 | 9221 | 11550 | 1266 | 0 | 31714 | 16719 |
+| Tall \(b\) | 4504 | 5380 | 9552 | 11335 | 1332 | 0 | 32103 | 16715 |
+| Tall \(c\) | 4504 | 5380 | 9552 | 11335 | 1332 | 0 | 32103 | 16715 |
+
+There is no tail mass. The weighted height of \(a\) is \(95039/95920\),
+and that of each tall letter is one. The six-index ordering holds
+because the \(\alpha_4+2\alpha_5\) numerators are \(14082,13999,13999\).
+The exact minima of the geometric, grouped collision and direct
+residue-energy rows are all \(2627/4796\). The paired shift rows have
+minimum \(55257/95920\). The [standard-library checker](verify_abc_tall_residue_obstruction.py)
+enumerates the early and whole-tail masks, the disjoint root groups
+and the possible residue locks. This is a lower obstruction for the
+stated exponent program.
+
+### Freezing a divisor of one coordinate
+
+The direct residue argument also applies on a stratum where the degree
+\(i\) coordinate \(x_{C,i}\) of the target letter has a divisor
+\(m\asymp X^\theta\). Choose one such divisor per tuple, then freeze
+\(m\) at cost \(X^\theta\). The complete value of \(C\) is divisible by
+\(m^i\), and primitiveness makes both other letters units modulo \(m^i\).
+In the residue-energy bound one can therefore take \(f_C=\theta\) and
+\(w_C=i\theta\) for this lock. Each pair of full values on the released
+letters determines the complete value of \(C\), so the remaining choice
+of its coordinates still has only subpower multiplicity.
+
+At the asymmetric profile above, take \(C=c\), \(i=4\) and
+\(\theta=5775/95920\). Use the singleton groups \(\{3\},\{4\}\) on
+each released letter. The modulus exponent \(4\theta=23100/95920\)
+is at least both doubled root heights on both letters. The direct
+residue bound on this stratum is then
+\[
+ D\le\frac{63817+5775-(20771+20887)/2}{95920}
+     =\frac{48763}{95920}.
+\]
+The complementary stratum consists of coordinates without a divisor at
+this scale. It contains prime coordinates and needs its own estimate.
+
+At this profile the same singleton groups give \(D\le 27/50+\varepsilon\)
+whenever \(x_{c,4}\) has a divisor in \([X^\ell,X^u]\), where
+\(\ell=60101/1438800\) and \(u=11011/119900\). In units of \(1/95920\),
+the exponent bound before the \(X^\varepsilon\) loss is
+\[
+42988+t+\sum_{s\in\{4610.5,4776,5667.5,5775\}}(s-t)_+,
+\qquad t=95920\theta .
+\]
+It is convex in \(t\) and equals \(95920\cdot 27/50\) at both endpoints
+\(t=95920\ell,95920u\). Dyadic subdivision of the divisor range costs
+\(O(\log X)\). Since \(2\ell\le u\), when every prime factor is below
+\(X^\ell\), the first partial product of prime factors to reach \(X^\ell\)
+is at most \(X^{2\ell}\). A prime factor in the interval is itself a
+suitable divisor. Thus for \(x_{c,4}\asymp X^{11335/95920}\), the
+complement consists of \(x_{c,4}=ps\) with \(p>X^u\) prime and
+\(s\ll X^{12631/479600}\), since \(11335/95920-u=12631/479600<\ell\).
+For large \(X\) the cofactor is below \(X^\ell\), and every divisor
+containing \(p\) is above \(X^u\).

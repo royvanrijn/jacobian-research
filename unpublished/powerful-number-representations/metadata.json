@@ -4,19 +4,19 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "A saving of order k^(-3/2) for primitive diagonal powerful triples by direct rational compression, a related fixed-offset bound, and pointwise bounds for powerful sums and differences.",
+  "summary": "A fixed-proportion saving for primitive diagonal and fixed-offset powerful triples by compressed congruences and divided differences, together with pointwise bounds for powerful sums and differences.",
   "status": "draft",
   "published": false,
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "abstract": "For all sufficiently large \\(k\\), the number of primitive\n\\(k\\)-full triples \\(a+b=c\\le X\\) is\n\\(O_{k,\\varepsilon}(X^{2/k-c_0 k^{-3/2}+\\varepsilon})\\) for an absolute\n\\(c_0>0\\). We reduce each triple with fixed \\(c\\) to a\ncongruence between two short rational numbers and count\nits solutions with a rectangular determinant.\nThis also gives a saving of order \\(r^{-3/2}\\) over\n\\(1/p+1/q\\) for fixed offsets \\(p=r+u,\\ q=r+v\\).\nThe same manuscript gives bounds for representations by two\npositive \\(k\\)-full integers. Their number at target \\(N\\) is\n\\(O_\\varepsilon(N^{3/10+\\varepsilon})\\) for \\(k=2\\) and\n\\(O_{k,\\varepsilon}(N^{1/(k+1)+\\varepsilon})\\) for \\(k\\ge3\\).\nThe graph bounds used for these estimates also apply to\nlarge coprime differences.",
+  "abstract": "For all sufficiently large \\(k\\), the number of primitive\n\\(k\\)-full triples \\(a+b=c\\le X\\) is\n\\(O_{k,\\varepsilon}(X^{(2-2^{-16})/k+\\varepsilon})\\).\nWe compress each triple at fixed \\(c\\) to a rational congruence\nand count its solutions using a rectangular determinant.\nNewton divided differences preserve enough local precision\nto prove that the determinant is nonzero in one selected\nprime-adic comparison. For fixed offsets \\(p=r+u,\\ q=r+v\\)\nwe also save a fixed multiple of \\(1/r\\) over \\(1/p+1/q\\).\nFor representations by two positive \\(k\\)-full integers,\nwe give pointwise bounds of \\(O_\\varepsilon(N^{3/10+\\varepsilon})\\) for \\(k=2\\)\nand \\(O_{k,\\varepsilon}(N^{1/(k+1)+\\varepsilon})\\) for \\(k\\ge3\\).\nThe graph bounds for these estimates apply also to large\ncoprime differences.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "verification": {
-    "scope": "Written proofs, scoped primary-source inspection, exact arithmetic checks, rational certificate replay and visual review of the seventeen-page PDF.",
+    "scope": "Written proofs, scoped primary-source inspection, exact arithmetic checks, rational certificate replay and visual review of the nineteen-page PDF.",
     "limits": "Independent PDF-only review, specialist review, formal verification and exhaustive priority search remain unperformed."
   },
   "next_steps": [
