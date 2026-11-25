@@ -167,6 +167,15 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Eventual complex compact exclusion for a subcritical one-private linear profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SUBCRITICAL_PRIVATE_ENDPOINT_ACTIVATION.md) |
 | Eventual coprimality for fixed shared strictly subcritical equal-degree profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SUBCRITICAL_EQUAL_DEGREE.md) |
 | Eventual coprimality for fixed subcritical one-private linear profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_GAUSSIAN_ENDPOINT_ESCAPING_FIELDS.md) |
+| Eventual coprimality for fixed exactly critical one-private linear profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CUBIC_ENDPOINT_ESCAPING_FIELDS.md) |
+| Full local consecutive exclusion at a shared real cusp | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_REAL_CUSP_ESCAPING_FIELDS.md) |
+| Eventual consecutive coprimality for every fixed ordinary two-monomial support | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_REAL_CUSP_ESCAPING_FIELDS.md) |
+| Uniform eventual coprimality on bounded shared supercritical bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_SUPERCRITICAL_SUPPORTS.md) |
+| Uniform eventual coprimality on subcritical equal-degree bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_SUBCRITICAL_EQUAL_DEGREE.md) |
+| An absolute eventual threshold when both monomials have private variables | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIFORM_EVENTUAL.md) |
+| All-profile large-curvature coprimality from angular slopes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HIGH_CURVATURE_ANGULAR_SLOPE.md) |
+| An explicit order-dependent small relative-gap lift to ordinary factorial moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_ORDER_DEPENDENT_LIFT.md) |
+| Full-degree modular coprimality for complete exponent orbit families | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FACTORIAL_DIGIT_ORBITS.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -257,7 +266,8 @@ Scope limits:
 - Arbitrary supports are covered through terminal five, and mirrored supports through terminal six. One mirrored unit-gap pair and a constant plus any monomial of total degree up to three are covered at every order. An absolute unevaluated terminal cutoff is proved for all constant-plus-monomial profiles.
 - At every terminal the explicit weak-curvature bound and the explicit large-outer-loss bound cover endpoint ranges. Strong diffuse curvature gives strict interlacing uniformly in degree, and diffuse coprimality eventually holds at every fixed positive s. For fully shared profiles with bounded midpoint curvature, the coefficient-phase link is uniform across degrees. For a fixed fully shared support, the conditional contour has a two-sheet stationary map, with eventual exclusion near noncusp real scales and on bounded cusp windows.
 - An exact Rice contour gives the upper stationary equation for arbitrary supports and a monotone lower phase. For fixed fully shared equal-degree profiles at and above the cusp, both saddles contribute near the equal-modulus graph and their consecutive phases separate. Private profiles have exact single-sheet geometry and local boundary exclusions. The diffuse moving critical window and same-orientation unit-gap prime and post-prime terminals are closed in their stated scopes.
-- Eventual coprimality is proved for every fixed fully shared profile away from the exact real cusp, including both total-degree cases. The full complex simple-fold neighborhoods are covered. Fixed one-private-side profiles are covered except the exactly critical linear-private endpoint. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
+- Eventual coprimality is proved for every fixed ordinary two-monomial support, with a profile-dependent nonexplicit cutoff. The full complex simple-fold neighborhoods are covered. The real quartic and private cubic critical transitions are included. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
+- Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 
 Tracked obligations (computed states):
 

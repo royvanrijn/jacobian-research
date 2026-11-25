@@ -2225,7 +2225,7 @@ at most \(\lfloor r/L\rfloor\) in \(z\) and \(M\) in \(v\).
 Assume just the first Taylor conditions
 \[
  y=\alpha(M+1)r<\kappa,\qquad B<by/2.
- \tag{DN3}
+ \tag{DNR1}
 \]
 In each shallow chart, the determinant proof gives a nonzero
 auxiliary polynomial \(F\) of wider degree at most \(M\) and
@@ -2235,14 +2235,14 @@ complete-label separation.
 
 For either sign \(W\), let \(\mathcal A_W\) be the sum of the
 \(I_0\binom{M+1}{2}\) largest retained atomic masses of \(\nu_W\),
-counting fewer if the retained measure has fewer atoms. Only
-atoms \(r'\) with \(|r'/i_W-a|\le r\) need be included when the
-assignment is fixed at their shrinking windows. If an assignment
+counting fewer if the retained measure has fewer atoms. For the rectangular support, only atoms \(r'\) with
+\(|r'/i_W-a|\le r\) need be included when the assignment is
+fixed at their shrinking windows. If an assignment
 can split one atom among several multipliers, use the corresponding
 retained submeasures for each multiplier. Then
 \[
  d\le f+\mu+b_Q+\mathcal A_U+\mathcal A_V .
- \tag{DN4}
+ \tag{DNR2}
 \]
 The bounds apply to all limiting profiles with the usual fixed
 truncation and vanishing extraction losses. In particular, the
@@ -2278,7 +2278,7 @@ of those limits shrink to their atomic masses. If several
 positions converge to one atom, all their mass together is
 bounded by that atom. Fix the actual exceptional roots at this
 cost. The full free terms are then determined and recover the
-triple. Summing all shallow chart records proves (DN4).
+triple. Summing all shallow chart records proves (DNR2).
 
 ### An entirely diffuse sector beyond terminal lifting
 
@@ -2295,7 +2295,7 @@ Take \(\alpha=99/100,\ M=8,\ r=1/3\). Then
 \[
  y=297/100<3,\qquad B=19/90<\tfrac12(0.144)y.
 \]
-The two atom charges vanish. The bound from (DN4) is at most
+The two atom charges vanish. The bound from (DNR2) is at most
 \(0.290<1/3\), so a neighborhood satisfying the same strict height
 bounds and sufficiently small total atomic mass on the free pair
 is excluded, including profiles away from minimum total diffusion.
@@ -2326,23 +2326,36 @@ This comparison is for the specified free grouping.
 
 There is a barrier even after dropping the terminal requirement.
 Give every letter the profile \(\nu=\frac13\operatorname{Unif}[2,4]\).
-Consider a one-root projective determinant using the same retained
-submeasure and multiplier assignment on both free letters.
-Allow arbitrary positive integer multipliers and arbitrary horizontal
-slice shapes. Let \(s\) be the retained mass per free letter. A
-saving by (DN4) would require
+Consider a one-root projective determinant with arbitrary retained
+submeasures and positive integer multipliers on each free letter.
+Allow arbitrary horizontal slice shapes. Let \(s\) be the average
+retained mass of the two free letters. A saving by (DNR2) would
+require
 \[
  \mu+b<g:=2s-1/3,\qquad 1/6<s\le1/3.
 \]
 The modulus weight satisfies \(\kappa b\le w\le4\mu\).
 Write \(J\) for the gap between the extreme wider slices and \(R\)
-for the largest within-slice width. Let \(h=\int i\,d\nu\) on the
-retained mass, and \(E=\int |r-a'i(r)|\,d\nu\) there, where \(a'\)
-is the shifted base induced by two monomials in the extreme
-slices. The volume \(\mathcal A\) and height \(B\) satisfy
+for the largest within-slice width. Let \(h\) be the average
+of the two retained integrals of the multiplier \(i_W(r)\).
+For the two monomials in the extreme slices let \(a'\) be
+the induced shifted base, and let \(E\) be the average of
+the two retained integrals of \(\lvert r-a'i_W(r)\rvert\).
+The volume \(\mathcal A\) and height \(B\) satisfy
 \[
  \mathcal A\le(J+1)R,\qquad B\ge hR,\qquad B\ge JE\quad(J>0).
 \]
+In fact every two-coordinate projective subrow has height at
+most the full projective row. Write its two-coordinate height
+as the height of the rational quotient of the monomials.
+The log height is at least half the sum of the absolute prime
+valuations weighted by \(\log p\). Primitivity separates the
+prime supports of the two free letters, which gives \(hR\)
+for a widest same-slice pair and \(JE\) for an extreme-slice
+pair. The measure averaging the two retained submeasures
+has mass \(s\) and is dominated by \(\nu\), even under
+different multiplier assignments.
+
 As in (PS1), the necessary Taylor inequalities are
 \(B<b\alpha\mathcal A/2\) and
 \(\alpha\mathcal A<\kappa\).
@@ -2351,7 +2364,7 @@ Since \(h\ge s\ge g>b\), these imply \(J\ge2\), and then
  b>\frac{2s}{J+1},\qquad
  E<\frac{2\mu}{J}\le\frac{s}{3},\qquad
  Eh<\mu b(1+1/J)\le\frac{g^2}{3}.
- \tag{DN5}
+ \tag{DNR3}
 \]
 For the inequality \(E\le s/3\) use
 \(\mu<g-b\le s-b\) and \(2(J-1)/(J(J+1))\le1/3\).
@@ -2370,7 +2383,7 @@ For \(0<a'\le2\), folding scaled phases has density at most
 \((2+a')/3\), so \(E\ge(3/8)a's^2\). The moment of the retained
 submeasure is at least \(2s+3s^2\) by the density \(1/6\) on
 \([2,4]\). Thus \(a'h+E\ge2s+3s^2\), and \(E\le s/3\) from
-(DN5) gives
+(DNR3) gives
 \[
  Eh\ge\left(\frac{5s}{8}+\frac{9s^2}{8}\right)s^2\ge\frac{g^2}{3}.
 \]
@@ -2381,10 +2394,10 @@ multiplying by the positive denominator has sign given by
  =(1-t)(-3t^3-8t^2+24t-8)\ge0 .
 \]
 The last factor is concave on \([1/2,1]\) and positive at its
-endpoints. This contradicts (DN5) in all ranges of the shifted
+endpoints. This contradicts (DNR3) in all ranges of the shifted
 base. The profile remains compatible with this one-root test
-throughout the identical-assignment class, even with no atomic
-penalty and no terminal lifting requirement.
+for both symmetric and asymmetric assignments, even with no
+atomic penalty or terminal lifting requirement.
 
 There is also a chart-budget obstruction to using a direct
 multi-group specialization on two entirely diffuse letters.
@@ -2431,7 +2444,7 @@ parameter \(k_iL\to\kappa_i\). Take fixed \(M_i\ge1\),
  \alpha_i(M_i+1)r_i<\kappa_i,\qquad
  \frac{b_i\alpha_i(M_i+1)r_i}{2}>B_i,\qquad
  0<r_i<a_i \qquad(i=1,2),
- \tag{FD}
+ \tag{GC1}
 \]
 and require
 \[
@@ -2439,7 +2452,7 @@ and require
    \frac{4r_1}{a_1-r_1}+\frac{2r_2}{a_2-r_2},
    \frac{2r_1}{a_1-r_1}+\frac{4r_2}{a_2-r_2}
  \right\}<1 .
- \tag{FD1}
+ \tag{GC2}
 \]
 Then the normalized count is at most \(f+b_{Q_1}+b_{Q_2}\).
 The proof combines first determinants with the exact additive
@@ -2448,7 +2461,7 @@ relation and allows equal-height profiles.
 ### Initial auxiliary equations and constant coordinates
 
 Apply the first determinant of (QD2) independently on each
-shallow residue chart. Its proof uses the two Taylor inequalities in (FD). We obtain nonzero polynomials
+shallow residue chart. Its proof uses the two Taylor inequalities in (GC1). We obtain nonzero polynomials
 \(F_i(z_i,v_i)\) of degrees at most \(R_i=\lfloor r_i/L\rfloor\)
 and \(M_i\) in their respective arguments. The coefficients
 depend on the charts and frozen values. We only need the
@@ -2469,7 +2482,7 @@ equation cuts to curves and points.
 
 If \(z_i\) is constant on a component, the original congruence
 determines \(v_i\bmod n_i\). The two Taylor conditions in
-(FD), and \(b_i\kappa_i\le\log_X n_i+o(1)\), imply
+(GC1), and \(b_i\kappa_i\le\log_X n_i+o(1)\), imply
 \[
  E_iM_i\le B_i<b_i\kappa_i/2
                \le (\log_X n_i+o(1))/2 .
@@ -2503,7 +2516,7 @@ invariance, and multiplying by a constant has no effect.
 By the height inequality for products,
 \[
  D_X\ge(q_i-R_i)H_D(z_i).
- \tag{FDH}
+ \tag{GCH}
 \]
 
 Suppose the degree of the narrow plane curve is at most
@@ -2553,7 +2566,7 @@ Consequently
 \]
 Interchanging the two plane covers gives the same bound with the
 coefficients \(4R_i+2\) and \(2R_i+2\) assigned in the reverse order.
-By (FD1) one of these bounds, together with (FDH), gives
+By (GC2) one of these bounds, together with (GCH), gives
 \(D_X\le O_{D_0,M_1,M_2}(1)+(1-\epsilon)D_X\) with
 \(\epsilon>0\). This contradicts \(D_X\ge q_1-R_1\to\infty\).
 Thus the degrees of all nonconstant narrow plane
@@ -2569,7 +2582,7 @@ enough that the preceding argument excludes this degree
 range. The projective height of the narrow point
 \([1:z_1:z_2]\) is at most \(X^{(h_1+h_2+o(1))L}\).
 Heath-Brown's rectangular projective curve estimate, with
-all sides equal, gives the upper exponent \(3/\deg P\) plus
+all sides equal, gives the upper exponent \(2/\deg P\) plus
 an arbitrary allowance in this projective height. Choose
 \(D_0\) so that it counts the narrow points at normalized cost
 less than \(\epsilon\), allowing fixed-truncation height losses. The algebraic
@@ -2582,8 +2595,8 @@ in the coefficients, so all curve constants and the
 component count can be absorbed in the inner height
 loss. [Heath-Brown, Theorem 3](sources/heath-brown-curves-math0405392v1.pdf)
 
-Given \(z_1,z_2\), the nonvertical \(F_1\) gives at most
-\(M_1\) choices of \(v_1\). Its specialization in \(z_1\)
+Given \(z_1,z_2\), the chosen nonvertical irreducible factor
+of \(F_1\) gives at most \(M_1\) choices of \(v_1\). Its specialization in \(z_1\)
 cannot vanish identically, since that would give a
 vertical factor of the chosen irreducible component.
 Each choice determines \(X_1\) and thus the primitive
@@ -2610,8 +2623,7 @@ give the wider height bounds
 \]
 For \(\alpha_i=99/100,\ M_i=16,\ r_i=17/100\), the Taylor order
 is \(2.8611\) and \(B_i<0.117158<0.118020375=b_i y_i/2\).
-The slope condition (FD1) holds since \(6r_i/(3-r_i)<1\).
+The slope condition (GC2) holds since \(6r_i/(3-r_i)<1\).
 The total freeze and chart cost is \(4\mu=33/100<1/3\).
 Thus the two-curve criterion gives a strict margin in an
 equal-height fully diffuse sector.
-

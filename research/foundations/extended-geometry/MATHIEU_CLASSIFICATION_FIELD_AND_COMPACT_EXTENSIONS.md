@@ -2620,3 +2620,135 @@ The first moment centers (A). Use the full eight-variable system (H7) through or
                              (2,4,6,6,6,7,8,16)
 ]
 on both models. The degree-reverse-lexicographic basis computation is included in the [replay checker](verify_exceptional_affine_laurent_obstruction.py). Weighted homogeneity gives only the zero geometric solution, and the weighted valuation argument transfers that conclusion to every characteristic-zero field. The domain property then leaves just one strict Laurent sign whenever the phase is nonzero.
+
+## Reflection descent from the quaternion norm torsor
+
+The split product admits a trace-preserving copy of the reflection quotient of the negative circle. Write \(Y^-=\{u^2+v^2=-1\}\) and \(\iota(u,v)=(u,-v)\). Its invariant ring is \(K[u]\). Sending \(u\) to \((t-t^{-1})/2\) in the split Laurent ring preserves the trace, since in both models \(u\) has zero odd moments and even moments \((-1)^m\binom{2m}{m}/4^m\). In particular, a regular counterexample on \(X_\Gamma\times Y^-\) whose phase is \(\iota\)-invariant gives one on \(X_\Gamma\times\mathbb G_m\). The multiplier can be made invariant by its two-term average, which preserves every marked moment when the phase is invariant.
+
+**Theorem (Reflection moments of the transported exceptional pair).**
+
+Let \(X_\Gamma\) be a pointed compact binary octahedral or icosahedral quotient over \(\mathbb R\), and use the quaternion norm-torsor isomorphism with \(Y^-\). Let \(f\) be a nonzero real regular pure phase on the split exceptional quotient, \(F\) its transport to \(X_\Gamma\times Y^-\), and \(F^\iota\) its reflected transport. Then \(F F^\iota\) and every linear combination \(aF+bF^\iota\) with \(ab\ne0\) have a nonzero pure moment. In particular the norm and the reflection average of the transported phase cannot supply the reflection-invariant witness.
+
+To compute the reflection action, split \((-1,-1)\) over \(Y^-\) by sending its generators to
+\[
+   J_0=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+   L=\begin{pmatrix}u&v\\v&-u\end{pmatrix}.
+\]
+Reflection changes the splitting by conjugation by \(A=\operatorname{diag}(1,-1)L\), since \(A\) commutes with \(J_0\) and \(ALA^{-1}\) replaces \(v\) by \(-v\). Uniqueness of the equivariant quotient isomorphism then identifies reflection with left multiplication by \(A\) over the reflected point of the base. On the compact averaging cycle \(u+iv=e^{i\theta}\), \(u-iv=-e^{-i\theta}\), the class of \(A\) is the class of
+\[
+                 A/i=\begin{pmatrix}\sin\theta&-\cos\theta\\
+                                      \cos\theta&\sin\theta\end{pmatrix}.
+\]
+It is uniform on the rotation torus in the split adjoint group. Let \(R_0\) denote its normalized averaging operator on the split quotient, and \(g_n=R_0(f^n)\). Product trace and invariance therefore give the exact identity
+\[
+                     \Lambda(F^a(F^\iota)^b)=\lambda(g_a g_b)
+                     \qquad(a,b\ge0),                         \tag{R3}
+\]
+where \(\lambda\) is the normalized trace on the split exceptional quotient.
+
+The standard binary-form stabilizers both contain \(J_0\), as seen by substituting \((Y,-X)\) in the octic and dodecic. Compact conjugation of the split quotient is split conjugation followed by left translation by \(J_0\). Thus \(g_n\) is real on the compact reference orbit. Some \(g_r\), \(r\ge1\), is nonzero. Otherwise restrict \(f\) to a rotation-torus orbit of a compact reference point where \(f\ne0\). Its Laurent exponents occur in opposite pairs because complex conjugation of the values along the circle is translation by \(J_0^{-1}\), which preserves the exponents. The one-variable Laurent theorem prevents all the constant moments from vanishing. For the least such \(r\), compact square positivity gives \(\lambda(g_r^2)>0\). By (R3) the \(r\)-th norm moment is \(\lambda(g_r^2)\). The \(2r\)-th moment of \(aF+bF^\iota\) is \(\binom{2r}{r}(ab)^r\lambda(g_r^2)\): terms with both exponents positive and one below \(r\) are zero by minimality, and the two pure end terms vanish by purity of \(f\). This proves both obstructions.
+
+## Legendre moments on the negative ternary sphere
+
+**Theorem (A bounded rational Legendre witness on the negative sphere).**
+
+On \(X=\{x_1^2+x_2^2+h^2=-1\}\), put \(z=x_1+i x_2\) and \(z'=x_1-i x_2\), and take the real rational functions
+\[
+ P=h+\frac12\left(\frac{z^2}{1+i h}+\frac{z'^2}{1-i h}\right),\qquad
+ Q_1=\frac{z^2+z'^2}{1+h^2},\qquad
+ Q_2=\frac{i(z^2-z'^2)}{1+h^2}.
+\]
+They are bounded almost everywhere on the compact reference cycle \(X(\mathbb C)\supset i S^2\). The normalized compact trace of \(P^m\) vanishes for every \(m\ge1\), and \(Q_1+Q_2\) detects every positive order. For every polynomial marker \(U\) on the affine quadric, the marked moment of \(P^m\) vanishes when \(m>\deg U\), using any polynomial representative of \(U\). The bound is sharp at each order.
+
+On \(iS^2\) write \(h=i x\), with \(x\) uniform on \([-1,1]\), and \((x_1,x_2)=i\sqrt{1-x^2}(\cos\theta,\sin\theta)\), with independent uniform \(\theta\). At \(s=e^{2i\theta}\),
+\[
+ P=i x-\frac{1+x}{2}s-\frac{1-x}{2}s^{-1},\qquad
+ Q_1=-s-s^{-1},\qquad Q_2=-i(s-s^{-1}).
+\]
+In particular only the two polar points of the compact cycle are excluded from the coordinate calculation, and all these functions are bounded on the rest. Write \(\mathcal L_m\) for the Legendre polynomial with \(\mathcal L_m(1)=1\). The circle constant term of \(P^m\) is \(i^m\mathcal L_m(x)\). For \(k\ge0\) the angular coefficients are
+\[
+ \operatorname{CT}_s(s^{\pm k}P^m)
+   =i^{m+k}\frac{m!}{(m+k)!}(1\mp x)^k\mathcal L_m^{(k)}(x).
+                                                               \tag{R4}
+\]
+Indeed, first balance the two angular coefficients by a scalar change of \(s\). The balanced power is a constant multiple of \((x+i\sqrt{1-x^2}\cos(2\theta))^m\), a spherical harmonic of degree \(m\) since the defining linear form is isotropic. Its Fourier coefficient of weight \(k\) is proportional to \((1-x^2)^{k/2}\mathcal L_m^{(k)}(x)\). The limit at \(x=1\), using \(\mathcal L_m^{(k)}(1)=(m+k)!/[2^k k!(m-k)!]\) for \(k\le m\), gives the prefactor. Undoing the balancing gives (R4). [Spherical harmonics and Legendre polynomials](https://dlmf.nist.gov/14.30)
+
+Orthogonality against constants gives the pure moments. For the two markers, (R4) and the endpoints \(\mathcal L_m(\pm1)=(\pm1)^m\) give
+\[
+ \Lambda(Q_1P^m)=-\frac{i^{m+1}}{m+1}\bigl(1-(-1)^m\bigr),\qquad
+ \Lambda(Q_2P^m)= \frac{i^{m+2}}{m+1}\bigl(1+(-1)^m\bigr).
+\]
+For a polynomial marker it is enough to take \(h^b z^\alpha z'^\beta\). An odd difference \(\alpha-\beta\) cannot meet the phase's even azimuthal support. Otherwise set \(k=|\alpha-\beta|/2\) and \(j=\min(\alpha,\beta)\). Formula (R4) gives the integral of \(\mathcal L_m^{(k)}(x)\) against a scalar times \(x^b (1-x^2)^{j+k}(1\mp x)^k\). The weight vanishes to order at least \(k\) at both endpoints, so \(k\) integrations by parts give a polynomial weight of degree at most \(b+2j+2k=b+\alpha+\beta\). Orthogonality proves eventual vanishing with the stated bound. The regular marker \(h^m\) has moment \((-1)^m 2^m(m!)^2/(2m+1)!\), by Rodrigues integration by parts, so the least possible regular marker degree at order \(m\) is \(m\).
+
+**Theorem (Clearing the Legendre phase by a height polynomial destroys purity).**
+
+In the function field of the negative ternary sphere the polynomial ring in \(h,P\) meets the regular ring exactly in \(K[h,(1+h^2)P]\), over any characteristic-zero field \(K\). Put \(S=(1+h^2)P\). Every nonconstant phase in \(K[h,S]\) with a unique highest monomial in weights \(1,3\) has infinitely many nonzero positive moments. This includes every nonzero height-polynomial clearing \(f(h)P\).
+
+For the intersection work after adjoining \(i\). The relation is \(zz'=-(1+h^2)\). At \(h=i,z'=0\), the coordinate \(h-i\) is a uniformizer and \(z\) is generically nonzero and transcendental along the divisor. The pole of \(P\) is simple with leading term a nonzero scalar times \(z^2/(h-i)\). For a polynomial \(\sum_j a_j(h)P^j\), any negative minimum of \(\operatorname{ord}_{h=i}(a_j)-j\) produces a pole, since the corresponding powers \(z^{2j}\) are linearly independent. The other branch \(h=-i,z=0\) gives the same condition at \(-i\). Hence \((1+h^2)^j\mid a_j(h)\) for every \(j\), and \((1+h^2)P\) itself is regular.
+
+For the moment assertion let \(\gamma h^a S^b\) be the highest monomial of weight \(d=a+3b>0\). On the compact reference, \(h=ix\) and the leading term of \(S\) in \(x\) is \(-i x^3(1-\sin(2\theta))\). The coefficient of \(x^{dm}\) after circle averaging is consequently
+\[
+      \gamma^m i^{dm}\,\mathbb E(1-\sin(2\theta))^{bm}
+                =\gamma^m i^{dm}2^{-bm}\binom{2bm}{bm}.
+\]
+First take algebraic coefficients. At primes \(l\equiv1\bmod 2d\) good for the coefficients take \(m=(l-1)/d\). The leading coefficient is an \(l\)-unit because \(2bm<l\), and all conditional coefficients are integral away from two for integral input. Integration of the even power \(x^{dm}\) divides its coefficient by \(l\); all smaller powers have \(l\)-integral moments. This gives infinitely many nonzero orders by primes in the indicated progression. For arbitrary coefficients specialize a finitely generated coefficient algebra to a number field, retaining the leading monomial. The regular quadric moments are polynomial identities in those coefficients, so every nonzero specialized moment was nonzero before specialization. A clearing \(f(h)P\) is \([f(h)/(1+h^2)]S\), with one highest monomial as required.
+
+## Cubic, quartic and sextic phases on anisotropic ternary quadrics
+
+**Theorem (Ordinary primes for imaginary quadratic signature with a one-dimensional eigenspace).**
+
+Let \(A\) be an abelian variety of dimension \(g\) over a number field. Suppose an imaginary quadratic field \(E\) acts through geometric rational endomorphisms of \(A\), and the dimensions of its two Lie eigenspaces are \(1,g-1\). Then \(A\) has a density-one set of ordinary primes after a finite extension. No hypothesis on the full endomorphism algebra or on absolute simplicity is required.
+
+Work up to geometric isogeny and pass to a finite field extension throughout. On an isotypic block \(B^n\) of \(A\), write \(D=\operatorname{End}^0(B)\), \(F=Z(D)\), and \(r^2=[D:F]\), with \(B\) absolutely simple. The action of \(E\) on the block embeds into \(M_n(D)\). If \(F\) does not contain a copy of \(E\), the subalgebra generated by \(E\) and \(F\) is the field \(F E\). At each complex embedding of \(F\), the eigenvalues of an imaginary quadratic generator have equal multiplicities on the standard module of \(M_{nr}(\mathbb C)\): its reduced characteristic polynomial over \(F\) is a power of its irreducible quadratic polynomial over \(F\). The Lie summand there is a direct sum of standard modules, so the contribution of the whole block has balanced signature. It therefore has dimension at most two.
+
+If \(F\) contains a copy of \(E\), compare the given embedding with a central embedding. The algebra \(E\otimes_{\mathbb Q}F=F\times F\) gives two idempotents in \(M_n(D)\), either allowed to be zero. Their images decompose the block up to isogeny into powers of \(B\) on which the action of \(E\) is central. A resulting block contributing only to one \(E\)-eigenspace is isogenous to a power of an elliptic curve with multiplication by \(E\). In fact its rational \(H_1\) is an \(E\)-vector space on which the complex structure comes from the one fixed embedding of \(E\). An \(E\)-basis splits this Hodge structure into copies of the Hodge structure of an elliptic curve with that multiplication. The isogeny follows from the equivalence for polarizable Hodge structures of type \((-1,0),(0,-1)\).
+
+The remaining central block, if present, contributes the one-dimensional eigenspace. The multiplication of each complex \(F\)-eigenspace into copies of the standard \(M_{nr}(\mathbb C)\)-module forces \(nr=1\) on that block. Thus it is absolutely simple and its full endomorphism algebra is its center \(F\). By the Albert classification \(F\) is a CM field since it contains \(E\). Choose the CM type of \(F\) consisting of the embeddings extending the \(E\)-embedding of multiplicity one. The Lie multiplicities for that type are zero except at one place where they equal one. This is precisely the simple signature hypothesis of Cantoral Farfán, Li, Mantovan, Pries and Tang. Their Theorem 4.18 gives potential density-one ordinary reduction for that block. The balanced blocks of dimension at most two have the same conclusion by the elliptic and abelian-surface theorems of Serre, Katz and Ogus, and the pure blocks have it by the elliptic case. After a common finite extension the intersection of the finitely many density-one sets still has density one. Ordinarity is preserved by good reduction of an isogeny and under products. [The simple-signature theorem](https://arxiv.org/abs/2508.11174) · [Sawin on ordinary primes in dimension two](https://www.numdam.org/articles/10.1016/j.crma.2016.01.025/)
+
+**Theorem (Cubic, quartic and sextic exclusion on anisotropic ternary quadrics).**
+
+Let \(q\) be a nondegenerate anisotropic ternary form over a characteristic-zero field. For \(d\in\{3,4,6\}\), every regular phase of minimal ambient degree \(d\) on \(q=1\) has infinitely many nonzero positive moments. In particular a nonzero pure polynomial phase on the negative ternary sphere has degree at least five, with degree six also excluded.
+
+Let \(P_d\) be the leading homogeneous part of a minimal representative of \(P\). Its restriction to the conic at infinity \(q=0\) is nonzero, since a top term divisible by \(q\) can be reduced using \(q=1\). In split coordinates \(2uv+s^2=1\), parametrize the cone by \((u,v,s)=(a^2,-b^2/2,ab)\). Put \(F(a,b)=P_d(a^2,-b^2/2,ab)\), a binary form of degree \(2d\). After this scalar extension the normalized sphere trace is the constant term in \(u\) after \(v=(1-s^2)/(2u)\), followed by uniform integration of \(s\) on \([-1,1]\). Its coefficient rule is a rational identity of normalized Reynolds traces. Replacing \(u\) by \(s\) times a Laurent variable leaves constant term unchanged. At order \(m\) the conditional polynomial in \(s\) has degree at most \(dm\), and the coefficient of \(s^{dm}\) is
+\[
+                            [a^{dm}b^{dm}] F(a,b)^m .
+\]
+Indeed the top term uses \(v=-s^2/(2u)\) and only \(P_d\). It follows that at a good place of odd residue characteristic \(p\equiv1\bmod d\), with \(m=(p-1)/d\),
+\[
+              p\,\Lambda(P^m)\ \equiv\
+                      [a^{p-1}b^{p-1}]F(a,b)^{(p-1)/d}\pmod p.     \tag{R5}
+\]
+The top degree is even and integrates with denominator \(p\); all other denominators have smaller absolute value.
+
+If a geometric root has multiplicity at least \(d\), its Galois orbit on the anisotropic conic has at least two points. The degree \(2d\) forces exactly two roots both of multiplicity \(d\). Move them to the coordinate points of the split conic to obtain \(F=c a^d b^d\). Then (R5) is nonzero at all sufficiently good primes of the required congruence class.
+
+Otherwise write \(D_F=\sum_i b_i Q_i\) with every \(b_i<d\). Over a number-field model containing the splitting coordinates and the \(d\)-th roots of unity, let \(C\) be the normalization of the possibly disconnected cyclic cover \(w^d=F\) with root line bundle \(\mathcal O(2)\) on \(\mathbb P^1\). The index-\(j\) eigensheaf in the pushforward of \(\mathcal O_C\), for \(0\le j<d\), is
+\[
+              \mathcal O(-2j)\left(\sum_i\left\lfloor\frac{j b_i}{d}\right\rfloor Q_i\right).
+\]
+The floor correction follows by testing regularity of a rational multiple of \(w^j\) over the local discrete valuation at \(Q_i\). In particular the index-one eigensheaf is \(\mathcal O(-2)\) and has one-dimensional first cohomology. At a good prime with \(p\equiv1\bmod d\), Frobenius on its Čech generator is multiplication, with coefficient-field Frobenius, by the coefficient on the right of (R5). Indeed, raising \(w\) to its \(p\)-th power multiplies it by \(F^{(p-1)/d}\), and on the affine chart only the term of degree \(p-1\) survives the Čech quotient.
+
+Use the factor of \(\operatorname{Pic}^0(C)\) cut out up to isogeny by the primitive idempotent of \(\mathbb Q[\mu_d]\). If the cover is disconnected, use the product of the Jacobians of its components with the induced action, which permits the same idempotent. For \(d=3,4,6\), the field \(\mathbb Q(\zeta_d)\) is imaginary quadratic and its primitive characters are \(1,-1\). The Lie algebra of this factor is the corresponding part of \(H^1(C,\mathcal O_C)\). Thus the factor has one Lie eigenspace of dimension one and satisfies the preceding ordinarity theorem, also when it is elliptic. After finite extension it has infinitely many good ordinary primes of absolute residue degree one, which have \(p\equiv1\bmod d\) because the field contains \(\zeta_d\). Away from finitely many primes the cohomology decomposition and the isogeny commute with good reduction. Ordinary reduction makes Frobenius bijective on the primitive part of \(H^1(\mathcal O_C)\), hence on its one-dimensional index-one space. The right hand side of (R5) is therefore nonzero at infinitely many orders.
+
+For coefficients over an arbitrary characteristic-zero field, take a finitely generated coefficient algebra containing a splitting of the conic and the finitely many distinct leading roots. Specialize it to a number field avoiding the vanishing of the leading scalar and the pairwise root determinants. Both the degree and the multiplicity data persist. The identities for the trace are polynomial in the phase coefficients in the split model, so the infinitely many nonzero specialized moments were already nonzero. This proves the result on the original form.
+
+## A single left circle weight cannot give the exceptional uniform height
+
+**Theorem (A single circle weight gives no exceptional uniform scalar law).**
+
+On the full compact binary octahedral or icosahedral quotient, choose a left maximal circle and let \(L\) be a nonzero regular complex function of one nonzero weight. Then \(\operatorname{Re} L\) cannot have a nondegenerate uniform law on an interval. Its square cannot have the law of the square of a uniform variable either. This applies in particular to the real part of any of the standard right-invariant homogeneous binary forms in a single row.
+
+Scale the function if needed, and suppose the square has the squared-uniform law on \([0,1]\). Set \(R=L\overline L\), with compact conjugation on the coefficient algebra. By averaging the weight along the left circle,
+\[
+                     \mathbb E(\operatorname{Re} L)^{2m}
+                           =\frac{(1/2)_m}{m!}\,\mathbb E R^m .
+\]
+Indeed the phase of \(L\) is rotated uniformly by every nonzero circle weight. Thus the proposed law gives \(\mathbb E R^m=m!/(3/2)_m\), the moments of \(1-s^2\) for \(s\) uniform on \([-1,1]\). Compact support makes the moments determining. The function \(R\) is regular, real, and left-circle invariant. The circle quotient identifies it with a regular invariant of the ternary angular sphere by the adjoint-axis map. This identification is algebraic after complexification, where the left torus quotient is the unit adjoint quadric, followed by the finite rotation quotient. Consequently \(1-R\) would be a regular angular squared-uniform height. The spherical height theorem above forces an invariant line, which neither polyhedral rotation group has. The uniform-law assertion follows as well, since the marginal law is symmetric and the square of a symmetric uniform variable is squared uniform.
+
+The same reasoning rules out a variable radius in the exact factorization construction. If a real left-circle invariant \(D\) satisfies
+\[
+              \mathbb E\bigl(D^{m-j}(\operatorname{Re} L)^{2j}\bigr)
+                       =\frac{\mathbb E D^m}{2j+1}
+                    \qquad(0\le j\le m,\ m\ge1),
+\]
+circle averaging gives \(\mathbb E(D^{m-j}R^j)=\mathbb E(D^m)m_j\) with \(m_j=\mathbb E(1-s^2)^j\). Binomial expansion replaces \(R\) by \(D-R\) and gives the exact squared-uniform factorization (H7) for the regular angular pair \(D,D-R\). Since \(L\ne0\), that theorem again forces an invariant line. This excludes one left weight even when accompanied by a regular varying radius.

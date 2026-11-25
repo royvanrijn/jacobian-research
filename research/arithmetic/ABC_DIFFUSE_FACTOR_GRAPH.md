@@ -4570,7 +4570,7 @@ positive fraction and has nonnegative upper
 corners \(b_T\) with
 \(\sum_T b_T\le h+4\tau+o(1)\).
 Each marginal then takes at most \(n^{b_T}\)
-values, by its defining probability upper threshold.
+values, by its defining probability lower threshold.
 No information independence is being assumed.
 Further thinning maintains these caps.
 

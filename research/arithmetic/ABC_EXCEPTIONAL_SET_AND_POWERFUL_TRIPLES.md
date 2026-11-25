@@ -6687,8 +6687,7 @@ can instead use the exact additive relation and a function-field
 height argument to force large degree on their narrow projection,
 even when all three numerical heights are one. The broad formal
 profile \(\nu_T=\frac13\operatorname{Unif}[2,4]\) on all three letters
-exposes a limit of the direct Newton approach. Identically assigned
-one-root supports cannot meet both Taylor and chart budgets, and
+exposes a limit of the direct Newton approach. One-root supports cannot meet both Taylor and chart budgets, and
 direct specialization of several groups has an independent
 chart-budget obstruction at total diffusion one.
 [Direct Newton counting and its broad-profile barrier](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#direct-newton-recovery-at-arbitrary-nonatomic-mass)
@@ -6720,4 +6719,3 @@ The public Pell saving has a different scope, with a prescribed
 one-parameter family instead of arbitrary complete dictionaries.
 [Thomas Bloom, Theorem 7](https://arxiv.org/html/2512.04931v1)
 · [Chunping Zeng, balanced radical triples](https://hexagonmath.org/pdf/2611.00611v1)
-
