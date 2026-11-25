@@ -2204,3 +2204,414 @@ Indeed \(P(5/6)=215/12\), \(P'(5/6)=-5/2\), and
 Thus the improved chart criterion is still compatible with this
 formal profile. The calculation concerns the stated determinant
 and specialization budget with identical group assignments.
+
+## Direct Newton recovery at arbitrary nonatomic mass
+
+In the notation of (QD1), retain bounded scaled-degree windows on two
+free letters \(U,V\), and freeze their complement at normalized cost
+\(f\). At each retained exact degree \(e\) on letter \(W\), use a
+positive integer multiplier \(i_W(e)\le I_0\), with \(I_0\) fixed
+before the small-budget limit. The grouped ratio has one narrow
+variable \(z\), base exponent \(q\) with \(qL\to a>0\), and the
+wider variable \(v\) carrying exponents \(e-qi_W(e)\). The heights
+are bounded by \(h,E\) as in (QD1). Freeze a unit-target full
+modulus on the other letter at cost \(\mu\). Choose a shallow
+divisor of normalized size \(b_Q\ge b>0\) as in (QD1).
+The argument below also allows the sparse projective evaluation
+supports of (PS1), provided their row-height and Taylor hypotheses hold.
+
+For a rectangular support take \(B=hr+ME\), where the degrees are
+at most \(\lfloor r/L\rfloor\) in \(z\) and \(M\) in \(v\).
+Assume just the first Taylor conditions
+\[
+ y=\alpha(M+1)r<\kappa,\qquad B<by/2.
+ \tag{DN3}
+\]
+In each shallow chart, the determinant proof gives a nonzero
+auxiliary polynomial \(F\) of wider degree at most \(M\) and
+polynomial coefficient height at fixed truncation. The first
+determinant requires neither the terminal Jacobian budget nor
+complete-label separation.
+
+For either sign \(W\), let \(\mathcal A_W\) be the sum of the
+\(I_0\binom{M+1}{2}\) largest retained atomic masses of \(\nu_W\),
+counting fewer if the retained measure has fewer atoms. Only
+atoms \(r'\) with \(|r'/i_W-a|\le r\) need be included when the
+assignment is fixed at their shrinking windows. If an assignment
+can split one atom among several multipliers, use the corresponding
+retained submeasures for each multiplier. Then
+\[
+ d\le f+\mu+b_Q+\mathcal A_U+\mathcal A_V .
+ \tag{DN4}
+\]
+The bounds apply to all limiting profiles with the usual fixed
+truncation and vanishing extraction losses. In particular, the
+atomic terms vanish if both free letters are entirely nonatomic.
+
+To see the bound on the atomic terms, fix a chart and multiply
+the nonzero coefficients of \(F\) to form an integer \(J_F\).
+A prime on a retained root with degree \(e\) is on a single free
+letter by primitivity. At that prime the valuation of a monomial
+\(z^s v^j\), divided by the positive root valuation and with the
+letter sign extracted, is \(i_W(e)s+(e-qi_W(e))j\). If the prime
+does not divide \(J_F\), a minimum must tie in the original
+signed valuations. For each \(j\) just one extremal \(s\) can
+participate, because \(i_W(e)>0\), and the choice of extremum
+depends only on the letter sign. A tie must occur for two
+different wider indices \(j\). Each pair of wider indices
+specifies one scalar value of \(e/i_W(e)-q\); since
+\(1\le i_W(e)\le I_0\), there are at most
+\(I_0\binom{M+1}{2}\) exceptional exact degrees on each letter.
+In the rectangle, all have
+\(\lvert e/i_W(e)-q\rvert\le\lfloor r/L\rfloor\).
+
+At every other retained position, the prime support lies in
+\(J_F\). There are only subpower choices for the integers on that
+support, uniformly over the polynomial-height chart coefficients
+by the fixed-support bound. The degrees of the exceptional
+positions depend on the chart, but their total normalized
+mass has upper limit at most the sum of the largest indicated
+atoms. Indeed, pass to a subsequence on which the finitely many
+exceptional scaled degrees converge in the bounded retained
+range. The upper masses of arbitrarily small closed neighborhoods
+of those limits shrink to their atomic masses. If several
+positions converge to one atom, all their mass together is
+bounded by that atom. Fix the actual exceptional roots at this
+cost. The full free terms are then determined and recover the
+triple. Summing all shallow chart records proves (DN4).
+
+### An entirely diffuse sector beyond terminal lifting
+
+Take all three measures equal to
+\(\frac13\operatorname{Unif}[3-3/40,3+3/40]\), with numerical
+heights one. On the free pair retain all roots and group at
+\(a=3\) with multiplier one. Their symmetric positive and
+negative deviations give \(h=1/3\) and \(E=1/80\) for the rational
+ratio. The supplying letter has diffuse mass \(1/6\) strictly
+above three. Freeze a full band block of mass between \(0.144\)
+and \(0.145\) with degrees above three. Use its radical as the
+shallow modulus, with \(b=0.144\) and \(\kappa=3\).
+Take \(\alpha=99/100,\ M=8,\ r=1/3\). Then
+\[
+ y=297/100<3,\qquad B=19/90<\tfrac12(0.144)y.
+\]
+The two atom charges vanish. The bound from (DN4) is at most
+\(0.290<1/3\), so a neighborhood satisfying the same strict height
+bounds and sufficiently small total atomic mass on the free pair
+is excluded, including profiles away from minimum total diffusion.
+
+For the same full free grouping, no rectangle satisfying the old
+terminal condition of (QD2) could give a strict saving by choosing
+another full or shallow modulus, a fixed amplification, or different \(\alpha,M,r\).
+In fact set \(z_0=2h/(\alpha b(M+1))\). The first determinant needs
+\(0<z_0<1\). Combining its bound with
+\(2B/(1-\alpha)<w\), and optimizing in \(y\), gives
+\[
+ EM<\tfrac12(1-\alpha)w(1-z_0),\qquad
+ hE<\frac{wb}{64(1-b/(2h))}.
+\]
+For the second inequality use
+\(M+1=2h/(\alpha b z_0)\) and
+\(\alpha(1-\alpha),z_0(1-z_0)\le1/4\).
+If the rectangle is amplified \(\ell\) times, apply this to
+\(\ell h,\ell E\) and divide by \(\ell^2\). The same upper bound
+holds with \(b/\ell\) in place of \(b\), after dropping a factor
+\(1/\ell\). In either case write \(b\) for the effective
+shallow cost. The condition \(\mu+b<1/3\) gives \(b<1/3\), and the
+degree support gives \(w\le(123/40)\mu\). Thus the right side
+is at most \(41/15360<1/240=hE\), a contradiction.
+This comparison is for the specified free grouping.
+
+### A broad all-diffuse profile beyond the one-root criterion
+
+There is a barrier even after dropping the terminal requirement.
+Give every letter the profile \(\nu=\frac13\operatorname{Unif}[2,4]\).
+Consider a one-root projective determinant using the same retained
+submeasure and multiplier assignment on both free letters.
+Allow arbitrary positive integer multipliers and arbitrary horizontal
+slice shapes. Let \(s\) be the retained mass per free letter. A
+saving by (DN4) would require
+\[
+ \mu+b<g:=2s-1/3,\qquad 1/6<s\le1/3.
+\]
+The modulus weight satisfies \(\kappa b\le w\le4\mu\).
+Write \(J\) for the gap between the extreme wider slices and \(R\)
+for the largest within-slice width. Let \(h=\int i\,d\nu\) on the
+retained mass, and \(E=\int |r-a'i(r)|\,d\nu\) there, where \(a'\)
+is the shifted base induced by two monomials in the extreme
+slices. The volume \(\mathcal A\) and height \(B\) satisfy
+\[
+ \mathcal A\le(J+1)R,\qquad B\ge hR,\qquad B\ge JE\quad(J>0).
+\]
+As in (PS1), the necessary Taylor inequalities are
+\(B<b\alpha\mathcal A/2\) and
+\(\alpha\mathcal A<\kappa\).
+Since \(h\ge s\ge g>b\), these imply \(J\ge2\), and then
+\[
+ b>\frac{2s}{J+1},\qquad
+ E<\frac{2\mu}{J}\le\frac{s}{3},\qquad
+ Eh<\mu b(1+1/J)\le\frac{g^2}{3}.
+ \tag{DN5}
+\]
+For the inequality \(E\le s/3\) use
+\(\mu<g-b\le s-b\) and \(2(J-1)/(J(J+1))\le1/3\).
+For the last inequality, if \(J=2\) then \(b>2g/3\) and
+\(\mu b\le (g-b)b\le2g^2/9\). For \(J\ge3\), use
+\(\mu b\le g^2/4\) and \(1+1/J\le4/3\).
+
+If \(a'\le0\), positivity of \(i(r)\) gives \(E\ge2s\).
+For \(a'\ge2\), folding the interval of length two modulo \(a'\)
+gives numerical distance density at most \(1/3\), so \(E\ge3s^2/2\).
+With \(h\ge s\) this gives \(Eh\ge g^2/3\). Indeed for
+\(s\ge2/9\) use \(g\le s\), and for \(s\le2/9\) use \(g\le s/2\)
+and \(s>1/6\).
+
+For \(0<a'\le2\), folding scaled phases has density at most
+\((2+a')/3\), so \(E\ge(3/8)a's^2\). The moment of the retained
+submeasure is at least \(2s+3s^2\) by the density \(1/6\) on
+\([2,4]\). Thus \(a'h+E\ge2s+3s^2\), and \(E\le s/3\) from
+(DN5) gives
+\[
+ Eh\ge\left(\frac{5s}{8}+\frac{9s^2}{8}\right)s^2\ge\frac{g^2}{3}.
+\]
+For the last inequality put \(t=3s\). The difference after
+multiplying by the positive denominator has sign given by
+\[
+ 3t^4+5t^3-32t^2+32t-8
+ =(1-t)(-3t^3-8t^2+24t-8)\ge0 .
+\]
+The last factor is concave on \([1/2,1]\) and positive at its
+endpoints. This contradicts (DN5) in all ranges of the shifted
+base. The profile remains compatible with this one-root test
+throughout the identical-assignment class, even with no atomic
+penalty and no terminal lifting requirement.
+
+There is also a chart-budget obstruction to using a direct
+multi-group specialization on two entirely diffuse letters.
+Put the retained mass \(t_i\) in group \(i\) across the free pair,
+so \(\sum_i t_i\le2/3\). In the direct recovery scheme after
+specializing \(m-1\) variables, the only free radical cost that can
+be saved on a surviving specialization is \(t_1\), and the
+exceptional branch saves at most the smallest \(t_i\) with \(i\ge2\)
+using the polynomial zero count. Even without any chart or modulus
+charge, certifying a strict saving from \(1/3\) by both bounds
+would require \(t_i>1/3\) for every \(i\). This is incompatible
+with \(\sum_i t_i\le2/3\) for \(m\ge2\). A method counting such
+profiles by several group variables needs further arithmetic
+information about the exceptional specializations.
+
+## Two first residue determinants and the exact additive relation
+
+Let \(A+B=C\) be primitive positive triples in limiting small-budget boxes.
+Fix some root factors, of total normalized cost \(f\), one disjoint full
+block \(n_1\mid C\), and another disjoint full block \(n_2\mid B\).
+Include the two block costs in \(f\). Once the factors are frozen, express
+the two complete odds ratios as
+\[
+ X_1=A/B=d_1v_1z_1^{q_1},\qquad
+ X_2=A/C=d_2v_2z_2^{q_2},\qquad
+ X_2=\frac{X_1}{1+X_1}.
+\]
+Here the constants \(d_i\) are fixed positive rationals from the frozen
+factors, and \(q_iL\to a_i>0\) are the two grouped exponents.
+On each side group the retained factors at its base \(a_i\)
+and collect the exponent corrections in \(v_i\).
+At the primes of \(n_i\), assume \(z_i,v_i,d_i\) are units. This is
+automatic for groups built from the two original free letters,
+by primitivity. Since \(X_1\equiv-1\bmod n_1\) and
+\(X_2\equiv1\bmod n_2\), both are one-group congruences as in (QD1).
+
+On side \(i\), assume \(H(z_i)\le X^{(h_i+o(1))L}\),
+\(H(v_i)\le X^{E_i+o(1)}\), and choose a shallow record
+\(Q_i\) of normalized weight \(b_{Q_i}\ge b_i\) at fullness
+parameter \(k_iL\to\kappa_i\). Take fixed \(M_i\ge1\),
+\(0<\alpha_i<1\), and \(r_i>0\), and set
+\(B_i=h_i r_i+E_i M_i\). Suppose
+\[
+ \alpha_i(M_i+1)r_i<\kappa_i,\qquad
+ \frac{b_i\alpha_i(M_i+1)r_i}{2}>B_i,\qquad
+ 0<r_i<a_i \qquad(i=1,2),
+ \tag{FD}
+\]
+and require
+\[
+ \min\left\{
+   \frac{4r_1}{a_1-r_1}+\frac{2r_2}{a_2-r_2},
+   \frac{2r_1}{a_1-r_1}+\frac{4r_2}{a_2-r_2}
+ \right\}<1 .
+ \tag{FD1}
+\]
+Then the normalized count is at most \(f+b_{Q_1}+b_{Q_2}\).
+The proof combines first determinants with the exact additive
+relation and allows equal-height profiles.
+
+### Initial auxiliary equations and constant coordinates
+
+Apply the first determinant of (QD2) independently on each
+shallow residue chart. Its proof uses the two Taylor inequalities in (FD). We obtain nonzero polynomials
+\(F_i(z_i,v_i)\) of degrees at most \(R_i=\lfloor r_i/L\rfloor\)
+and \(M_i\) in their respective arguments. The coefficients
+depend on the charts and frozen values. We only need the
+degree bounds here. Pass to their geometric irreducible
+factors and the irreducible components of their product
+intersected with the real exact ratio relation, in the
+algebraic torus. At each fixed \(L\) all degrees and the
+number of these components are bounded in terms of the
+fixed degree lists and \(q_1,q_2\), uniformly in the coefficients
+by Bézout. A product of two plane curves has dimension two.
+On a product component where the ratio equation holds
+identically, independence of its two coordinates implies
+both exact ratios are constant. Such a component contributes
+at most one complete triple, because \(A/B\) determines its
+primitive numerator and denominator. The same conclusion
+holds wherever \(X_1\) is constant. In all other cases the
+equation cuts to curves and points.
+
+If \(z_i\) is constant on a component, the original congruence
+determines \(v_i\bmod n_i\). The two Taylor conditions in
+(FD), and \(b_i\kappa_i\le\log_X n_i+o(1)\), imply
+\[
+ E_iM_i\le B_i<b_i\kappa_i/2
+               \le (\log_X n_i+o(1))/2 .
+\]
+Thus rational reconstruction determines \(v_i\), and its
+complete ratio again determines the triple. This treats
+all constant narrow-coordinate branches. A zero-dimensional
+component contributes only boundedly many complete ratios.
+
+### Degree of the narrow projection
+
+Work on a remaining smooth projective normalization
+\(\widetilde D\) of an irreducible component over
+\(\overline{\mathbb Q}\). Let \(H_D(t)\) be the degree
+of a nonconstant function \(t\) on this curve, and let it
+be zero on constants. Write \(D_i\) for the normalization
+of the corresponding irreducible plane projection in
+\((z_i,v_i)\), and \(P\) for the normalization of the
+narrow plane projection in \((z_1,z_2)\). The latter is
+a curve since both narrow coordinates vary. The former
+may have \(v_i\) constant. Denote their actual bidegrees
+by \(R_i',M_i'\), with \(M_i'\ge1\), \(R_i'\le R_i\),
+\(M_i'\le M_i\). The ordinary degree of the projection
+to \(z_i\) is \(M_i'\). Hence on \(\widetilde D\)
+\[
+ H_D(v_i)=\frac{R_i'}{M_i'}H_D(z_i)\le R_iH_D(z_i).
+\]
+If \(v_i\) is constant this formula simply gives zero.
+Let \(D_X=H_D(X_1)=H_D(X_2)\); the equality is Möbius
+invariance, and multiplying by a constant has no effect.
+By the height inequality for products,
+\[
+ D_X\ge(q_i-R_i)H_D(z_i).
+ \tag{FDH}
+\]
+
+Suppose the degree of the narrow plane curve is at most
+some fixed \(D_0\). The function field of \(\widetilde D\)
+is the compositum of \(K(P)=\overline{\mathbb Q}(z_1,z_2)\)
+and \(K(D_1)=\overline{\mathbb Q}(z_1,v_1)\) over
+\(\overline{\mathbb Q}(z_1)\). Indeed the exact additive
+relation expresses \(v_2\) in terms of \(z_1,z_2,v_1\).
+Thus \([\widetilde D:P]\le M_1'\). In characteristic zero
+the ramification divisor of \(\widetilde D\to P\)
+has degree at most \([\widetilde D:D_1]\) times the degree
+of the ramification divisor of \(D_1\to \mathbf P^1_{z_1}\).
+For clarity, at a point above two local indices \(e_1,e_2\),
+the compositum local index is
+\(e=\operatorname{lcm}(e_1,e_2)\), since the complete
+residue fields are algebraically closed and characteristic
+zero. Its contribution \(e/e_2-1\) to ramification over
+\(P\) is at most \((e/e_1)(e_1-1)\), by
+\(e/e_1+e/e_2\le e+1\). Sum this over all points
+using the pullback degree for the ramification on \(D_1\).
+
+The plane degree of \(P\) bounds its geometric genus in
+terms of \(D_0\). Also \(g(D_1)\le(R_1'-1)(M_1'-1)\)
+by the arithmetic genus in \(\mathbf P^1\times\mathbf P^1\)
+when \(R_1'>0\). When \(R_1'=0\), \(v_1\) is constant,
+\(M_1'=1\), and the \(z_1\)-map has no ramification.
+In all cases the ramification degree of the \(z_1\)-map is
+at most \(2R_1'M_1'\). Riemann–Hurwitz therefore gives
+\[
+ 2g(\widetilde D)-2 \le O_{D_0,M_1}(1)+
+             2R_1H_D(z_1).
+\]
+Apply Riemann–Hurwitz again, now to the function \(X_1\)
+and just its fibers over \(0,-1,\infty\).
+The function-field abc inequality proved this way is
+\(D_X\le2g(\widetilde D)-2+|S|\), where \(S\) is the
+union of these fibers. Since \(1+X_1=X_1/X_2\),
+\(S\) is contained in the union of the zeros and poles
+of \(z_1,v_1,z_2,v_2\), with count at most
+\[
+ 2(R_1+1)H_D(z_1)+2(R_2+1)H_D(z_2).
+\]
+Consequently
+\[
+ D_X\le O_{D_0,M_1}(1)
+       +(4R_1+2)H_D(z_1)+(2R_2+2)H_D(z_2).
+\]
+Interchanging the two plane covers gives the same bound with the
+coefficients \(4R_i+2\) and \(2R_i+2\) assigned in the reverse order.
+By (FD1) one of these bounds, together with (FDH), gives
+\(D_X\le O_{D_0,M_1,M_2}(1)+(1-\epsilon)D_X\) with
+\(\epsilon>0\). This contradicts \(D_X\ge q_1-R_1\to\infty\).
+Thus the degrees of all nonconstant narrow plane
+projections tend to infinity uniformly in the
+coefficients.
+
+### Counting the large-degree narrow projection
+
+For any prescribed normalized tolerance \(\epsilon>0\),
+first take a fixed lower projection degree \(D_0\) large
+in terms of \(\epsilon,h_1,h_2\). Then take \(L\) small
+enough that the preceding argument excludes this degree
+range. The projective height of the narrow point
+\([1:z_1:z_2]\) is at most \(X^{(h_1+h_2+o(1))L}\).
+Heath-Brown's rectangular projective curve estimate, with
+all sides equal, gives the upper exponent \(3/\deg P\) plus
+an arbitrary allowance in this projective height. Choose
+\(D_0\) so that it counts the narrow points at normalized cost
+less than \(\epsilon\), allowing fixed-truncation height losses. The algebraic
+curves may be taken over \(\overline{\mathbb Q}\).
+If a component is not defined over \(\mathbb Q\), its
+rational points lie in the intersection with a distinct
+conjugate and contribute only boundedly many by
+Bézout. The degree is bounded at fixed \(L\) uniformly
+in the coefficients, so all curve constants and the
+component count can be absorbed in the inner height
+loss. [Heath-Brown, Theorem 3](sources/heath-brown-curves-math0405392v1.pdf)
+
+Given \(z_1,z_2\), the nonvertical \(F_1\) gives at most
+\(M_1\) choices of \(v_1\). Its specialization in \(z_1\)
+cannot vanish identically, since that would give a
+vertical factor of the chosen irreducible component.
+Each choice determines \(X_1\) and thus the primitive
+triple. Summing over the shallow charts and the frozen
+values gives the asserted bound.
+
+### Equal-height diffuse profiles with two locks
+
+Give \(A\) the measure \(\frac13\operatorname{Unif}[3-3/2500,3+3/2500]\)
+and each of \(B,C\) the measure
+\(\frac13\operatorname{Unif}[3-39/500,3+39/500]\). All first moments
+are one and all three measures are nonatomic. Freeze mass
+\(\mu=33/400\) from the two extreme ends on each of \(B,C\), with
+equal portions on either end. Use these two factors as the moduli
+and their radicals as the shallow divisors, so \(b_1=b_2=\mu\).
+Take \(\kappa_1=\kappa_2=29/10\), below the least selected degree.
+Group both free ratios at \(a_i=3\). The narrow heights are
+\(h_i=1/3\). The equal masses on both sides of each deviation
+give the wider height bounds
+\[
+ E_i=\frac{3/2500}{12}
+      +\frac{39/500}{12}(1-3\mu)^2
+      =0.003780665625 .
+\]
+For \(\alpha_i=99/100,\ M_i=16,\ r_i=17/100\), the Taylor order
+is \(2.8611\) and \(B_i<0.117158<0.118020375=b_i y_i/2\).
+The slope condition (FD1) holds since \(6r_i/(3-r_i)<1\).
+The total freeze and chart cost is \(4\mu=33/100<1/3\).
+Thus the two-curve criterion gives a strict margin in an
+equal-height fully diffuse sector.
+

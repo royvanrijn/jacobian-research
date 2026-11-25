@@ -207,3 +207,151 @@ logarithmic determinations, and the lower vertical descent
 inequality remains available. The exact contour and this
 boundary exclusion do not yet identify the contributing
 upper saddle cycles or control their transitions.
+
+## Actual two-saddle expansion on the equal-degree graph
+
+**Theorem.** For fixed fully shared supports of equal total
+degree with \(\max\rho\ge1\), both upper saddles contribute to
+the Rice contour in a neighborhood of every interior point
+of their equal-modulus graph. In particular the consecutive
+ordinary moment polynomials have no common root at all
+sufficiently large orders near each compact subarc of that graph.
+
+Use the equal-modulus graph and the two upper saddles proved
+in the [phase separation theorem](MULTIVARIATE_REGULAR_SADDLE_PHASE_SEPARATION.md#equal-total-degrees-at-and-above-the-real-cusp).
+Here \(\Delta=0\), both signs of gaps occur, and \(p_L<0<1<p_R\)
+are finite. Join the two open half-planes through the gaps
+\((p_L,0)\) and \((1,p_R)\). The real parts of the two phases
+agree across each gap. Their derivatives agree there because
+the jumps of the logarithms of \(q,1-q\) cancel the derivative
+of \(-2\pi i q\). The Stirling expansions continue across
+the gaps. For the left gap use reflection,
+\[
+ \frac{\Gamma(n(q-1))}{\Gamma(nq+1)}
+ =(-1)^{n+1}\frac{\Gamma(-nq)}{\Gamma(1+n(1-q))},
+\]
+whose two arguments are positive on the real gap. For the
+right gap the original ratio already has positive arguments.
+All \(x_i\) are positive on the real gaps.
+[Gamma reflection formula](https://dlmf.nist.gov/5.5.E3)
+
+Consider the two curves descending from each simple saddle for
+\(\dot q=-\overline{\phi'(q)}\), using the lower phase after
+crossing a gap. They start in the two downward directions of
+a local analytic quadratic coordinate. The real phase decreases
+strictly away from the saddle, with derivative \(-|\phi'(q)|^2\),
+and its imaginary part is constant along the upper flow.
+At an equal-modulus point no descending curve can approach
+the other saddle, since their real phases agree. There are
+no other stationary points in the domain.
+
+Each descending curve escapes to infinity. At a non-gap
+real interval away from a branch point the upper flow
+points into the upper half-plane. Such a point cannot be a
+forward accumulation point, since the locally extended
+backward flow from that alleged limit reaches the opposite
+side while all the approaching trajectories stay in the
+upper half-plane. At a real branch point (3) rules out
+accumulation. In the farther-pole case where (3) can vanish,
+the phase level has \(y/|x|\to0\) near the allowed real ray.
+A curve entering a sufficiently small half-disk
+\(|z|\le\epsilon\) on this level has \(|x|\ge\epsilon/2\)
+on entry, and its real coordinate moves away from the pole
+as long as it stays inside. It therefore cannot accumulate
+there. Once a curve crosses a gap into the lower half-plane,
+its vertical velocity is bounded above by
+\(\arg\zeta-\pi<0\), so it cannot return. A bounded curve
+staying away from these boundaries would have a stationary
+limit point: the real phase would be bounded below and
+\(\int |\phi'|^2\,dt\) finite, giving a subsequence on which
+\(\phi'\to0\). Strict real-phase loss excludes this, since
+both saddles have the same real phase.
+
+With \(\theta=\arg\zeta\), the derivatives of the two phases
+tend uniformly at infinity to constants \(C_\pm\) in the
+corresponding half-planes. This follows from the expansion
+of \(X\) at infinity with \(\Delta=0\). They satisfy
+\[
+ \Im C_+=\theta+\pi(D_--1)>0,\qquad
+ \Im C_-=\theta-\pi(D_-+1)<0,\qquad
+ D_-=\sum_{d_i<0}|d_i|\ge1 .
+\]
+Thus when \(|\Im q|\) exceeds a fixed bound the vertical
+velocity points outward, uniformly on a compact parameter
+neighborhood. Every unbounded trajectory eventually
+reaches one of these regions. If it goes arbitrarily far
+horizontally with bounded imaginary part, the velocity
+there has a nonzero outward vertical component and bounded
+horizontal speed. Starting at a sufficiently large real
+coordinate, it reaches a large height before returning
+to a fixed bounded disk. The end type of a descending
+curve is locally constant along the parameter graph.
+Indeed start on the appropriate local quadratic direction,
+use continuous dependence for the finite time needed to
+reach an outward region, and then use its strict vertical
+velocity bound.
+
+At the negative-axis end \(\theta=\pi\), both stationary
+points lie in the real gaps, with \(\phi''=X'>0\).
+Each has one descending direction into the upper half-plane
+and one into the lower. Above the real line \(\Im X>-\pi\),
+so the upper curve moves strictly upwards everywhere.
+The lower curve similarly moves strictly downwards.
+They escape to infinity by the same boundary and stationary
+point arguments. The upper phase has no stationary point
+there at \(\theta=\pi\), since \(X\) cannot have height
+\(-\pi\) in the open upper half-plane. In this geometry
+each curve is homotopic to the corresponding vertical
+contour by horizontal interpolation at the same imaginary
+part. It crosses the real line in the same gap. The
+Gamma representation holds at this endpoint by taking
+\(\operatorname{Log}(-\zeta)\) real, and continuity into
+the graph follows from the regular saddle in each gap.
+
+Connectedness of the graph now keeps the end types and the
+contour homotopies fixed. To see the homotopy for exact
+integrands, truncate the curves at heights \(+Y,-Y\)
+beyond the outward regions and join them horizontally to
+the original vertical lines. Along any compact parameter
+path starting at the negative-axis end one can choose a
+common sufficiently large \(Y\), by finite time continuous
+dependence and the strictly outward vertical velocities.
+The truncated contours vary continuously in the domain
+with the three real cuts removed. At infinity,
+\(\phi_\pm(q)=C_\pm q+O(\log(1+|q|))\). The descending
+ends have direction \(-\overline{C_\pm}+o(1)\), since their
+velocity approaches that constant. At those ends and at
+the fixed vertical lines, the real part of the linear
+phase has strict linear loss in \(|Y|\), uniformly on a
+compact parameter path. It has the same loss along the
+horizontal connectors by linearity, up to the logarithmic
+error. The angles of \(q\) there are separated from real
+directions, since the velocities are asymptotically constant
+with nonzero vertical components. The exact Stirling
+bounds give decay of the connector integrals as \(Y\to\infty\).
+The two actual vertical periods therefore equal the
+corresponding descending integrals, with the orientations
+fixed at the negative-axis end.
+
+At each interior graph point the two upper stationary
+values have imaginary difference strictly between zero
+and \(\pi\). Thus in a small parameter neighborhood no
+upper descending trajectory can connect the saddles.
+The same finite time argument keeps both end types and
+contour classes there. The local analytic quadratic
+coordinate at each saddle and the relative expansion (2)
+give a Gaussian amplitude, analytic and nonzero because
+\(A(q_j)\ne0\) and the saddle is simple. The rest of the
+contour has a uniform strict loss after a fixed local
+saddle neighborhood, and at infinity it has the linear
+loss just established. These give uniform relative
+\(o(1)\) errors for both descending integrals on a smaller
+parameter disk.
+
+The consecutive comparison applies to these actual periods.
+Because \(\Delta=0\), the external scale \(\zeta=t\) is
+unchanged between orders. The ratio of the two stationary
+exponential multipliers is \(e^{D(w)}\ne1\) at the graph.
+By continuity this ratio stays separated from one on a
+smaller disk, excluding common zeros there. A finite cover
+gives the uniform exclusion near a compact subarc.

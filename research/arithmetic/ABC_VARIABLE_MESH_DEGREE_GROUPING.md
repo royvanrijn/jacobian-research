@@ -608,3 +608,104 @@ The nonzero fractional digits of the three scales occur at distinct factorial po
 Define the three formal root measures by putting mass \(1/6\) at \(r_W\) and mass \(1/6\) in the law of \(5-r_W+2C\). Each measure has total mass \(1/3\), first moment one, and nonatomic mass \(1/6\). These formal profiles satisfy the basic nonatomic constraints and the compact-support and height-gap conclusions. Each pair has two positive incommensurate atomic scales. The diffuse interval masses are \(O(|I|^\alpha)\) with \(\alpha=\log2/\log3>1/2\), by comparing \(I\) with the equal-length stage cells of the Cantor construction. Thus the measures also meet the [modular interval bound](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-restriction-at-equality-of-the-nonatomic-total) with exponent \(1/2\) for two positive atoms.
 
 At frequency \(3^k\), the fractional part of \(3^k C\) has the same law as \(C\), by dropping its first \(k\) ternary digits. The translated Cantor interval on each letter has offset \(5-r_W\), whose phase at \(3^k\) tends to zero along the common sequence. For every small \(\theta>0\), choose \(k\) in this sequence so large that all atomic phase errors are much smaller than \(\theta^{1+\alpha}\), where \(\alpha=\log 2/\log 3\). The Cantor mass of \(C\le\theta/8\) is at least a constant times \(\theta^\alpha\), by specifying its first \(\lceil\log_3(8/\theta)\rceil\) digits to be zero. Thus the phase mesh with base \(3^{-k}\) retains \(t\gg\theta^\alpha\) of the diffuse mass, with \(t/\theta\to\infty\). A fixed continuity interval \(J\) containing the whole diffuse support is sufficient. The positive atoms meet (VM4) by the choice of \(k\), and the remaining letter has positive nonatomic mass. The phase criterion excludes this family.
+
+## Pair surplus at positive normalized exponent
+
+Fix \(d_0>0\). Consider any limiting anatomic box with \(d\ge d_0\)
+and any free pair of letters \(U,V\) with \(c_U+c_V\ge d\). Let
+\(T\) be the complementary letter, put \(\Delta=c_U+c_V-d\),
+and write \(e_T=h_T-\int r\,d\nu_T\). Then there are fixed
+\(C,R_*>0\) depending only on \(d_0\) such that
+\[
+ e_T+\int_{[R_*,\infty)}r\,d\nu_T(r)\le C\Delta .\tag{VQ1}
+\]
+If \(U,V\) are both tall, then also
+\[
+ 1-h_T\le C\Delta .
+ \tag{VQ2}
+\]
+These conclusions apply to the pairs supplied by (LQ8) whenever
+\(l_C<d\). At quarter equality with \(l_C=0\), if \(c_A=1/4\),
+the complementary \(B\) is tall, has a bounded scaled-degree
+support, and has no escaped first moment.
+
+Use the construction of (VM3), with the sole initial change
+that one of the free letters has nonatomic mass at least
+\(d_0/2\) and supplies a compact patch of nonatomic mass at
+least \(d_0/4\). For \(0<\theta\le1/8\), the same
+simultaneous approximation and choice from
+\(\lceil4/\theta\rceil\) meshes gives captured mass
+\(t\ge d_0\theta/20\). Retain the two zero windows, finitely
+many positive atoms missing at most \(t/16\), and the patch
+on the chosen mesh. The frozen cost is at most
+\(c_U+c_V-t+t/16\). The numerical height bounds are
+unchanged:
+\[
+ H(Z)\le X^{(3/b+o(1))L},\qquad
+ H(V_0)\le X^{2\theta bt+o(1)}.
+\]
+The total root mass on the free pair is now bounded by one
+instead of \(2/3\). This still gives narrow height constant
+\(2/b+1\le3/b\), and the selected atoms' numerical error is
+at most another \(\theta bt/16\). Thus the same wider bound
+holds. Exact values still recover the primitive triple.
+
+For the tail, take a continuity cutoff \(R\) for \(\nu_T\).
+The full high-degree factor has numerical weight
+\(w=e_T+\int_{[R,\infty)}r\,d\nu_T\) and root cost
+\(\mu\le w/R\). If \(w>0\), let
+\(\eta_p=\min(1/8,c_p/256)\), with \(c_p\) from one-root (UW),
+set \(\theta=\eta_pw\), and choose fullness parameter
+\(kL\to\kappa=8w/t\). The choice is possible for
+\(R>160/(d_0\eta_p)\). Use narrow constant \(32/(bt)\):
+the wider relative cap times this constant is at most
+\(64\eta_p\) with a strict margin to the (UW) threshold.
+The chart cost is \(2w/\kappa=t/4\). If
+\(R\ge320/(d_0\eta_p)\), also \(\mu\le t/16\).
+The count gives \(d\le c_U+c_V-5t/8\), so
+\(w\le32\Delta/(d_0\eta_p)\).
+Let continuity cutoffs increase to
+\(R_*=1+320/(d_0\eta_p)\), which includes an atom exactly
+at \(R_*\).
+
+For the real gap, choose \(0<\tau<1-h_T\) and the
+complete tall-ratio strip of width \(X^{-\tau}\).
+Set \(\eta_r=\min(1/8,c_r/256)\), with \(c_r\) from
+one-root (RUW1), and use \(\theta=\eta_r\tau\).
+Take its chart parameter \(s=t/8\) and narrow constant
+\(4/b\). The height product is \(32/(bt)\), and the
+wider cap fits the strict real-strip threshold.
+The strip cost \(2s=t/4\) gives
+\(d\le c_U+c_V-11t/16\). Therefore
+\(1-h_T\le320\Delta/(11d_0\eta_r)\).
+
+For the asserted quarter consequence, take free pair
+\(A,C\) with \(\Delta=0\). If \(B\) were numerically
+short, \(A,C\) would both be tall, contradicting the
+zero-surplus real-gap estimate. The tail estimate gives
+the compact support and moment assertion.
+
+### A quarter-bound saving from near-maximal atomic mass and a high tail
+
+Fix \(0\le\vartheta<1/3\) and
+a positive \(w_0\), put \(d_*=(1+\vartheta)/4\), and take
+\(d_0=1/8\) in the preceding estimates. Apply the
+small-budget radical cap
+\(\operatorname{rad}(C)\le c^{\vartheta\lambda}\).
+Fix a positive integer \(K\) and \(0<\epsilon<w_0/C\).
+Suppose \(A\) captures normalized root mass at least
+\(d_*-\epsilon\) in at most \(K\) intervals of sufficiently small
+fixed width in scaled degree. Suppose \(B\) has numerical weight
+at least \(w_0\) at actual scaled degrees greater than \(R_*+1\).
+For small fixed \(\lambda\) there is a fixed \(\delta>0\) giving a
+count exponent \((d_*-\delta)\lambda+\varepsilon\).
+A failing sequence with the width, \(\delta\) and \(\lambda\)
+tending to zero would force quarter equality with
+\(s=\vartheta\). The captured finite intervals force
+atomic mass of \(A\) at least \(d_*-\epsilon\), so
+\(c_A+c_C-d_*\le\epsilon\). The actual high-degree
+moment on \(B\) survives the anatomic compression by
+choosing the packed degree \(k\) with \(k\lambda\to\infty\)
+and losing only the vanishing numerical remainder.
+Thus the escaped-plus-high tail weight is at least \(w_0\),
+contrary to the tail estimate.

@@ -4101,6 +4101,528 @@ The formal assignment of dictionary exponents
 \(\beta_i\) satisfies every instance of (RA1). Indeed \(W=6P\), and
 \(W+4(c-P)=4c+2P\le1\) when \(P\le c\).
 
+### Same-letter additive quadruples
+
+Let \(\mathcal A\) be the complete part on any of the three
+letters, and let \(K(x)\) be its full degree-three atom factor.
+Take ordered solutions
+\[
+    x_1+x_2=x_3+x_4,\qquad x_i\in\mathcal A.
+\]
+The mixed additive Fourier lower bound with four slots all on
+this part gives at least \(n^{3c-o(1)}\) quadruples. Discard all
+quadruples where one of the six pairs has full atom gcd of
+numerical weight at least a fixed \(\xi\in(0,1/12)\).
+Each exceptional pair family has exponent strictly below \(2c\)
+by the common-factor obstruction. With the pair fixed, at most
+\(|\mathcal A|\) choices of one other value determine the last.
+Thus the discarded quadruples have exponent strictly below
+\(3c\), and at least \(n^{3c-o(1)}\) remain. The retained family
+is invariant under exchanging the two positions of either side
+and under exchanging sides. These permutations act transitively
+on the four positions.
+
+On a retained quadruple put \(K_i=K(x_i)\). Deterministically
+retain only the largest valuation at each prime across the
+four full atom factors. As in the proof of (RA1), the sum of the
+six logarithmic gcds bounds the removed numerical weight.
+The remaining pairwise coprime divisors have product of weight
+at least \(2-6\xi-o(1)>1\). Fix a tuple
+\(\boldsymbol K=(K_1,K_2,K_3,K_4)\) of original records.
+The stripping depends only on these records. Thus the conditional
+entropy proof of (MS17) applies in this fibre, to give
+\[
+  H((x_i)_i\mid\boldsymbol K)
+       \le \frac23\sum_{i=1}^4 H(x_i\mid\boldsymbol K)
+       \le \frac23\sum_{i=1}^4\bigl(H(x_i)-H(K_i)\bigr).
+\]
+Here all probabilities are for the uniform distribution on the
+retained quadruples. The last inequality uses that \(K_i\) is a
+function of \(x_i\). All four record marginals are equal by the
+permutation symmetry. Write \(a=H(K_i)/\log n\) and
+\(J=H(\boldsymbol K)/\log n\). The complete part cap gives
+\(H(x_i)\le(c+o(1))\log n\), while the uniform quadruple entropy
+is at least \((3c-o(1))\log n\). Since \(\boldsymbol K\) is a
+function of the quadruple, adding \(H(\boldsymbol K)\) to the
+conditional estimate and rearranging gives
+\[
+       3J-8a\ge c-o(1).                               \tag{RA4}
+\]
+In particular
+\[
+ \frac{H(K_4\mid K_1,K_2,K_3)}{\log n}
+       \ge J-3a\ge \frac{c-a}{3}-o(1).                \tag{RA5}
+\]
+The same lower bound holds for any one record conditioned on the other three. If the dictionary exponent is at most
+\(c/2+o(1)\), each such conditional entropy is at least
+\(c/6-o(1)=1/36-o(1)\) in normalized units.
+
+Consequently an atom dictionary of exponent strictly below
+\(c\) cannot be given an injective identification with elements
+of an abelian group that respects all same-letter additive
+quadruples. Such a Freiman 2-homomorphism would give
+\(K_1+K_2=K_3+K_4\) in that group and let any three records
+determine the fourth, contradicting (RA5). More generally the
+conditional entropy conclusion holds on any permutation-
+symmetric quadruple subfamily with exponent approaching
+\(3c\), since the same pair exclusions and fibre bound apply.
+
+## A local-density sector for the atomic common-factor obstruction
+
+Assume \(d=1/3,\Gamma=1/2\), put \(c=1/6\), and suppose
+\[
+   \nu_W=c\delta_3+\sigma_W\qquad(W=A,B,C),
+\]
+where each \(\sigma_W\) is nonatomic of mass \(c\). All
+three numerical heights are one. Fix a target letter \(T\)
+and let \(U,V\) be its opposing letters. Put
+\[
+  s_T^{\rm opp}
+   =\max\{\sup\operatorname{supp}\sigma_U,
+                       \sup\operatorname{supp}\sigma_V\},
+  \qquad B_T=(1-cs_T^{\rm opp})/3 .
+\]
+If \(B_T\le0\), (AC1) already excludes a positive common
+factor from \(T\)'s atom window. Otherwise suppose that
+on each side of three in a fixed neighborhood the measure
+\(\sigma_W\), for \(W=U,V\), dominates Lebesgue measure
+times \(k_W>0\). Suppose also that this neighborhood on
+each side has \(\sigma_W\)-mass strictly greater than
+\(\tfrac12(\tfrac12+\epsilon)B_T\) for some \(\epsilon>0\).
+Set \(k_{\rm harm}=2/(k_U^{-1}+k_V^{-1})\).
+A sufficient condition for the common-factor obstruction
+on \(T\) is
+\[
+ (1+2\epsilon)^2
+      \left(c+(\tfrac12+\epsilon)B_T\right)<3k_{\rm harm}.
+ \tag{LC1}
+\]
+
+### Counting with the common divisor
+
+A common atom-window factor \(F\) of numerical weight
+\(W_F>0\) on a near-full subgraph has root mass
+\(b=W_F/3>0\). Apply (AC1) to the \(T\)-part in its fixed
+residue zero modulo \(F\), using the best supplying
+opposing letter and a cutoff increasing to
+\(s_T^{\rm opp}\). This gives
+\(c\le(1-W_F)/s_T^{\rm opp}\), so \(b\le B_T\).
+
+Put \(t=(1/2+\epsilon)b\). In both free letters retain the
+atom and the diffuse mass \(t/2\) nearest three on each
+side. The nonatomic condition makes this an interval
+selection with continuous endpoints. For a measure on
+one side with density lower bound \(k\), the first
+distance moment of the nearest mass \(m\) is at most
+\(m^2/(2k)\): its distance quantile at mass \(u\le m\)
+is at most \(u/k\), and one integrates in \(u\). By the
+assumed supply every selected interval is within the
+density neighborhood.
+
+Freeze the rest of both free letters, at root cost
+\(2(c-t)+o(1)\). Group the retained roots at degree
+\(q=\lfloor3/L\rfloor\) in their signed ratio. Its
+narrow height is at most \(h=c+t+o(1)\). The positive
+error for that ratio is at most the positive degree
+deviation from one letter plus the negative degree
+deviation from the other. The negative error obeys
+the reverse bound. Both wider heights are at most
+\[
+ E+o(1),\qquad
+ E=\frac{t^2}{8}\left(\frac1{k_U}+\frac1{k_V}\right)
+   =\frac{t^2}{4k_{\rm harm}}.
+\]
+No reflection symmetry between the diffuse profiles is
+used, since equal masses were selected separately in
+each one-sided neighborhood. (LC1) gives the strict
+inequality \(E<3b^2/(16h)\).
+
+The one-root Taylor and Newton proof for the broad
+symmetric common-factor obstruction now applies without
+change. In detail, \(M+1=\lceil4h/b\rceil\) gives
+\[
+ E<\frac 3M\left(\frac b2-\frac h{M+1}\right),
+\]
+since \(h/(M+1)\le b/4\) and \(M<4h/b\). Take rank
+fraction close to one and horizontal degree just below
+the Taylor precision bound. The shallow modulus record
+has cost \(b\), the wider grouped ratio is a unit, and
+the bounded-degree Newton argument recovers all retained
+outside labels of both free letters up to arbitrarily
+small cost. The fixed chart and freeze cost is therefore
+\[
+ 2(c-t)+b=2c-2\epsilon b<2c.
+\]
+All extractions can be taken below this positive margin
+after choosing a positive limiting \(b\). A quantitative
+lower bound on \(b\) gives a positive uniform margin
+for the corresponding same-letter atom-gcd sparsity
+argument.
+
+If (LC1) holds for all three choices of \(T\), the proof
+of repeated atomic records applies. With
+\(s_*=\max_W\sup\operatorname{supp}\sigma_W\), its
+dictionary or pointwise information inequality is
+\[
+ \sum_i m_i\alpha_i
+ \ \ge\
+  c-\frac{(1-\sum_i m_i w_i)_+}{s_*},
+ \tag{LC2}
+\]
+for any fixed nonnegative integral multiplicities,
+with nonnegativity understood if the displayed bound
+is negative. In particular full atoms still need
+individual information at least \(c/2\), repeating
+twice, and every half-root-mass subfactor needs
+\(c/4\), repeating four times.
+
+### Uniform neighborhoods of unequal widths
+
+For arbitrary \(\ell_W\in[1,11/10]\), take
+\[
+ \sigma_W=c\,\operatorname{Unif}[3-\ell_W,3+\ell_W].
+\]
+Then each measure has mean contribution \(3c\) and
+the complete numerical height is one. Each \(k_W\)
+can be taken at least \(5/66\), each \(B_T\le1/9\),
+and \(\epsilon=1/200\) gives
+\[
+ (1+2\epsilon)^2
+ \left(c+(\tfrac12+\epsilon)B_T\right)
+ \le \frac{4090601}{18000000}<\frac5{22}
+ \le3k_{\rm harm}.
+\]
+There is sufficient one-sided mass inside any common
+neighborhood with radius, for example, \(1/2\):
+its mass is at least \(5/132>101/3600\).
+
+For the symmetric half-width \(\ell=9/8\) one has
+\(B_T=5/48\) and \(3k_{\rm harm}=2/9\). Choose
+\(\epsilon=1/400\). The left side of (LC1) is
+\[
+ \left(\frac{201}{200}\right)^2\frac{4205}{19200}
+   =\frac{169886205}{768000000}<\frac29 .
+\]
+The same radius \(1/2\) supplies the required one-sided
+mass.
+
+## Anchor sets for arbitrary nonatomic masses
+
+Let \(d>0\) be a normalized limiting box-count exponent, with
+nonatomic masses \(c_A,c_B,c_C\) and \(\Gamma=c_A+c_B+c_C\).
+Write \(n=X^L\). Assume the indicated modulus letter has
+a positive-weight full block of arbitrarily small normalized
+root cost, with fullness at least \(\kappa/L\) for a fixed
+\(\kappa>0\) after the block is chosen. A positive nonatomic
+mass suffices. The support of its restriction to \((0,\infty)\)
+contains a compact positive-degree band of positive mass.
+After excluding finitely many atomic windows, all individual
+outside coordinates have arbitrarily small mass. Greedily
+choose a block of small positive mass from that band.
+Its numerical weight is positive, and its minimum power is
+at least a fixed positive constant times \(1/L\).
+
+If \(0<\Gamma<2d\), all three nonatomic masses are positive.
+Indeed, if \(c_A=0\) and \(c_B>0\), (GE1) with a cheap
+positive modulus on \(B\) gives \(c_C\ge d\). The same
+argument using \(C\) then gives \(c_B\ge d\), contradicting
+\(\Gamma<2d\). This is also the relevant check for
+finite-scale letters, whose nonatomic mass is zero. When
+\(\Gamma\ge2d\), the statements requiring three cheap
+moduli below assume them explicitly. A statement about
+just one projection only needs a cheap modulus on its
+complementary letter, together with the pair-fibre bound
+for the projections being used.
+
+Fix enough positive atomic windows on each letter, as
+well as a small window at zero. The outside labels record
+all the remaining original factors, with part caps
+\(M_T\le n^{c_T+o(1)}\). Here the normalized tolerance
+can be made arbitrarily small in the sequential limits.
+The finite selected atomic windows give boundedly many
+grouped roots of height \(n^{O(1)}\). The grouping and
+zero-window errors have ordinary numerical height
+\(X^{o(1)}\). One first fixes the finite atom list and all
+amplification orders, then takes sufficiently small
+window widths and box and height tolerances. This is the
+same order of limits as in (GE1) and (TR2)–(TR3).
+
+For a pair of fixed outside labels, recording a cheap
+positive full complementary modulus and applying the
+amplified grouped ratio bound gives a pair fibre of
+arbitrarily small exponent. The primitive ratio
+determines the triple. If all three pair projections
+are needed, greedily thin to a linear hypergraph of
+edge exponent arbitrarily close to \(d\), since deleting
+the collisions for any chosen edge costs at most three
+times the maximum pair fibre. If only one projection
+is needed, thin that projection alone. Freeze all cheap
+moduli used below at total root cost as small as desired.
+This preserves pair uniqueness. Color primes once by
+complete letter and grouped slot, at fixed-truncation
+subpower cost, exactly as in (TR2). We now use \(E\) for
+the remaining edge count. The multiplicative separation
+arguments below apply with these actual finite \(E\)
+and part sizes \(M_T\).
+
+### A single anchor in one projection
+
+Consider the \(U,V\) outside projection, whose target is
+\(T\). Write \(i,j\) for its row and column labels and
+\(R_{ij}=U_{ij}/V_{ij}\) for the ratio of the positive
+complete magnitudes. The signed additive relation makes
+all \(R_{ij}\) congruent to the same sign modulo the
+fixed full block on \(T\). Thus for two rows \(i,i_0\)
+and any shared column \(j\), the quotient
+\(R_{ij}/R_{i_0j}\) is \(1\) modulo that block. The
+outside product of \(V\) cancels, and the remaining
+outside ratio is the fixed ratio of the \(U\)-labels
+\(i,i_0\). The remaining grouped numerator and
+denominator slots are exactly the two-edge wedge in
+(TR2)–(TR3). Their signs are handled by the sign coloring
+in the amplification there. In particular the exact
+complete quotients have at most \(n^{o(1)}\) values
+uniformly for a fixed pair \(i,i_0\). The uniformity
+includes the congruence target, which is a unit and can
+depend on the two outside labels. If no narrow slots
+are present, rational reconstruction suffices as in
+(TR2).
+
+For a fixed anchor row \(i_0\), retain all edges
+\((i,j)\) such that \((i_0,j)\) is an edge of the
+unthinned-for-this-step graph. No distinct-row
+restriction is imposed. Summing over the anchors gives
+\(\sum_j \deg(j)^2\ge E^2/M_V\). Thus some anchor
+retains at least \(E^2/(M_U M_V)\) edges. On each
+retained row \(i\), keep one most frequent exact
+quotient \(R_{ij}/R_{i_0j}\). The total loss is
+at most the uniform \(n^{o(1)}\) factor, regardless
+of how many rows there are. The resulting exact identity
+is
+\[
+    R_{ij}=r_i R_{i_0j}.
+\]
+At each prime of color \(U\), the valuation of this
+ratio is the valuation of \(U_{ij}\), and at each
+prime of color \(V\) its negative is the valuation of
+\(V_{ij}\). Therefore both complete magnitudes
+separate into a rational row factor times a rational
+column factor. The factors have polynomial height
+since they can be taken from ratios of actual anchor
+terms by valuation projections. The retained normalized
+exponent is at least
+\[
+   2d-c_U-c_V.
+   \tag{OA1}
+\]
+The expression is useful when positive. No four-cycle,
+non-backtracking path, or minimum degree condition is
+required.
+
+### Freeze the joint vector record
+
+The factor-freezing step can be sharpened independently
+of the choice of anchors. Consider a graph of exponent
+\(D\) with part caps \(a_i\), and put \(G=\sum_i a_i\).
+Suppose the vector factor product relation is available.
+Use the regularized dictionary exponents \(v_i\) as above.
+In addition to the earlier inequalities, the TOTAL
+number of matched vector factor triples has exponent
+at most \((v_A+v_B+v_C)/2\). To see this, use the
+same numerator–denominator sign coloring on each
+dictionary and each vector coordinate. A same-part
+product has divisor-many representations, so each
+same-part multiplicative energy is at most the square
+of its dictionary size times \(X^{o_X(1)}\). The mixed
+product energy for dictionaries \(i,j\) is at most
+the geometric mean of their two same-part energies
+by Cauchy–Schwarz applied to their quotient energies.
+A further Cauchy–Schwarz inequality over the output
+dictionary \(k\) bounds the number of matched pairs
+by
+\[
+  \bigl(|S_i||S_j||S_k|\bigr)^{1/2}X^{o_X(1)}.
+\]
+Each matched pair determines the third vector, so
+this is also the bound for joint vector records.
+All coloring and dyadic selections cost only \(X^{o_X(1)}\)
+for fixed truncation. A triple of factors can be
+frozen as a single joint record.
+
+Sum the three previously established inequalities
+\(v_i+v_j-v_k\le 2(a_i+a_j-D)\). This gives
+\(\sum_i v_i\le4G-6D\), so the joint record freeze
+costs at most \(2G-3D\). It yields an exponent at least
+\[
+   4D-2G.                                           \tag{OA5}
+\]
+This improves (OA3). Using \(D=4d-2\Gamma\) from
+(OA2) gives \(16d-10\Gamma\), or
+\(1/3-16\varepsilon-10\gamma\) in the near-minimum
+notation. The original part caps \(c_T\) are retained.
+For pure abstract product dictionaries the joint
+record estimate is sharp: take three disjoint lists
+of \(K\) primes \(p_i,q_j,r_k\) and records
+\((p_i/q_j,q_j/r_k,r_k/p_i)\) as \(i,j,k\) vary.
+The three dictionary sizes are \(K^2\) and the joint
+dictionary has size \(K^3\).
+
+### Refining the labels by small anchor sets
+
+There is a better choice when part caps may increase.
+Keep exponent \(d\) before separating, rather than
+selecting one anchor per projection. In a projection
+with row part \(U\) and column part \(V\), discard
+columns of degree less than \(E/(10M_V)\); this
+removes at most \(E/10\) edges. Pick a set of
+\[
+ K_{UV}\ll (M_U M_V/E)\log X+1
+\]
+anchor rows that meet every remaining column.
+For example take \(K\) independent uniform row
+samples. A column of degree at least \(E/(10M_V)\)
+fails with probability at most
+\(\exp(-KE/(10M_UM_V))\). Since the part sizes are
+polynomial in \(X\), choose the constant multiplying
+\(\log X\) to union bound over the columns. Repetition
+of sampled rows does not affect the upper bound.
+Give each good column \(j\) one of its sampled
+neighbors \(i_0(j)\), called its assigned anchor.
+The reference graph here is the graph just after
+the common freezes and coloring. The choice of
+reference edges need not survive subsequent
+selections.
+
+On an edge refine the row label \(i\) to
+\((i,i_0(j))\). This enlarges its cap by only
+\(\Delta_{UV}=c_U+c_V-d\) in the limiting exponent.
+For each refined row the outside ratio in the
+two-edge comparison is fixed, so choose a most
+frequent quotient as before. The identity
+\(R_{ij}=r_{(i,i_0(j))}R_{i_0(j),j}\) is an exact
+separation into a function of the refined row and
+a function of the original column. It continues
+to hold if that column is itself refined.
+
+Cyclically orient the three projections as above,
+make the three anchor choices on the reference
+graph, and discard the light columns in all three
+projections. The discarded union has size at most
+\(3E/10\). Each part acts as the row part of just
+one of the three projections, so it gains just one
+anchor index. Pair uniqueness persists after these
+refinements, because an extended label determines
+the original label. Select most frequent quotient
+values on all refined rows successively in the
+three projections, losing only \(n^{o(1)}\)
+overall. Thus all three exact separations hold at
+edge exponent \(d\) with enlarged total part cap
+\[
+    G=\Gamma+\sum_{\{U,V\}}\Delta_{UV}=3\Gamma-3d .
+\]
+Every complete value is now a function of
+its own refined outside label on the selected subgraph by the joint
+record freeze (OA5), with final exponent
+\[
+   4d-2G=10d-6\Gamma
+       =\frac13-10\varepsilon-6\gamma .             \tag{OA6}
+\]
+In the displayed positive range all three cheap
+moduli are automatic by \(0<\Gamma<2d\). At the
+endpoint the conclusion applies through
+\(\Gamma<5/9\). It gives no realization of positive
+exponent when \(\Gamma\ge5/9\), and it does not
+assert the original unsplit outside label cap.
+
+
+For example three-letter divisor records of total
+cost \(\mu\) and weight above the shortest numerical height have (MS15)
+upper exponent \((G+\mu)/2\) on the refined
+realization. Comparing with (OA6) gives
+\(23d\le15\Gamma+\mu\), or
+\[
+  \varepsilon\ \ge\
+   \frac{1/6-\mu-15\gamma}{23}.                     \tag{OA7}
+\]
+In (MS14), CRT reconstruction bounds the difference of two
+possible values of the first term for a fixed third term and fixed
+records. Use the shortest letter as the first term, or use any
+smaller containing interval, to get the stated weight threshold. All comparisons
+extend to a subfamily on which the lock exists
+uniformly after choosing its dyadic size lists,
+by beginning the reduction on that subfamily.
+
+
+### Effective outside entropy in place of the spectral cap
+
+On the uniform edge distribution of a current family,
+let \(h_T=H(\text{outside label on }T)/\log n\) and
+let \(h=\sum_T h_T\) denote its limiting total outside
+entropy, taking a subsequence if needed. For any fixed
+\(\tau>0\) put
+\(I_T=-\log\Pr(\text{actual outside label on }T)/\log n\).
+The nonnegative sum \(\sum_T I_T\) has mean \(h+o(1)\).
+Markov's inequality keeps a positive fraction on
+\(\sum_T I_T\le h+\tau+o(1)\), uniformly at fixed
+\(\tau\). Partition this region with a fixed mesh
+\(\tau\) in the three coordinates. One box retains a
+positive fraction and has nonnegative upper
+corners \(b_T\) with
+\(\sum_T b_T\le h+4\tau+o(1)\).
+Each marginal then takes at most \(n^{b_T}\)
+values, by its defining probability upper threshold.
+No information independence is being assumed.
+Further thinning maintains these caps.
+
+Use \(b_T\) as the actual upper cap of each original
+part everywhere in the small-anchor proof. The
+original exponent is still \(d\), the pair cap
+obeys \(b_U+b_V\ge d-o(1)\) by the pair-fibre
+bound, and the enlarged total cap is at most
+\(3\sum_T b_T-3d+o(1)\). Consequently taking
+\(\tau\) to zero gives the effective version of
+(OA6), with exponent at least
+\[
+           10d-6h.                                  \tag{OA8}
+\]
+Likewise (OA7) becomes \(23d\le15h+\mu\) whenever
+the three-letter lock comparison is applicable.
+These versions apply to formal \(\Gamma\) anywhere
+in its range. A positive exponent in (OA8) requires \(h<5d/3\).
+
+If \(\Gamma>0\), the cheap modulus prerequisite
+is automatic in the positive (OA8) range, even
+when \(0<\Gamma<2d\) is not known. In fact if
+\(c_A=0\), the argument from (GE1) gives two
+other positive masses \(c_B,c_C\ge d\).
+The pair-fibre bounds for \((A,B)\) and \((A,C)\)
+are then available, because their complementary
+letters have cheap moduli. Each such pair has
+joint entropy \(d-o(1)\) on the original uniform
+edge family, since any fibre has
+\(n^{o(1)}\) edges at arbitrarily small normalized
+loss. Also \(H(A)/\log n=o(1)\), by \(c_A=0\)
+and the outside cap. Consequently each of
+\(H(B)/\log n\) and \(H(C)/\log n\) is at least
+\(d-o(1)\), giving \(h\ge2d\) in the limiting
+statement. Thus a zero-mass modulus exception
+cannot occur in the positive effective range.
+
+
+### A matching obstruction for anchor selection
+
+For \(m\) labels in each part, the edges \((i,i,i)\),
+\(1\le i\le m\), satisfy exact pair uniqueness and all
+projections are matchings. Every single anchor retains
+just one edge. A cover by anchors needs \(m\) rows,
+regardless of the orientation. The labels can even carry
+primitive positive additive values with all three height
+exponents one, by setting \(A_i=2H+2i+1\),
+\(B_i=2H+2i+2\), \(C_i=4H+4i+3\), where
+\(H\asymp X\) and \(m=o(X)\). The two addends are
+consecutive. This model tests the incidence argument only.
+The numerical values have no imposed small-radical budget.
+
 ## Limits of the graph condition
 
 The pair-entropy identities alone are compatible with exact saturation. In a finite abelian group of size \(n\), let \(U,V\) be independent uniform elements and put \(W=U+V\). Each pair is independent and determines the third. Taking a direct product and doing addition coordinatewise also satisfies the corresponding sub-coordinate identities. With \(\log n\) at the single-letter capacity scale, these are the equalities suggested by (EN3). The arithmetic relation between the actual root vectors is needed to eliminate this possibility.

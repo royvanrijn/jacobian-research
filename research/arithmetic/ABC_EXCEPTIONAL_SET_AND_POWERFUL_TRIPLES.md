@@ -6640,3 +6640,84 @@ If exactly two letters \(T_1,T_2\) are affected, the third letter \(K\) has two 
 where \(H_1+H_2\le s_{12}+u-d\) follows from \(H_K\ge l_K-u\). Both affected letters use at least one additional factor, so \(\theta_1+\theta_2\le3u-d\), or \(s_{12}\le8u-2d\). Substitution gives \(5d\le12u\), hence \(d\le12/29<5/12\).
 
 We have excluded every limiting \(d>5/12\). The fixed-truncation and dyadic passage therefore gives the estimate with any positive \(\eta\).
+
+## The unrestricted one-third endpoint
+
+A strict uniform gap below \(1/3\) at all sufficiently small fixed
+budgets is equivalent, given the limiting one-third bound, to
+excluding every sequence of actual populated anatomic boxes with
+\(D/L\to1/3\) and \(L\) comparable to the budget. In the converse
+direction, if the gap fails take budgets \(\lambda_j\to0\) and
+prospective gaps tending to zero. At each fixed \(j\) take an
+unbounded height sequence witnessing failure, with arbitrarily
+small fixed-truncation losses before \(j\) changes. The selected
+boxes have \(D\ge(1/3-o(1))\lambda_j\) and
+\(L\le(1+o(1))\lambda_j\). The limiting count forces
+\(L/\lambda_j\to1\) and \(D/L\to1/3\). Their letter radical masses
+are balanced, but their nonatomic total \(\Gamma\) can be anywhere
+in \([1/2,1]\). A formal degree measure passing necessary tests is
+not itself evidence of a populated box.
+
+The complete-label reduction can be formulated in terms of the
+actual total outside-label entropy \(h\), in units of \(L\log X\).
+A family of exponent \(d\) admits a complete additive realization
+after a bounded refinement of its labels and loss of edges, with
+exponent at least \(10d-6h\) when this is positive. The refinement
+uses anchored two-edge comparisons, including projections with
+no four-cycles. Thus the range of this reduction is \(h<5/9\)
+at equality and is independent of the formal upper cap \(\Gamma\).
+A matching with large outside-label entropies shows that the
+incidence step cannot by itself force a positive exponent there.
+[Anchor reduction and matching obstruction](ABC_DIFFUSE_FACTOR_GRAPH.md#anchor-sets-for-arbitrary-nonatomic-masses)
+
+The complementary sparse regime still obeys an arithmetic restriction.
+Every fixed complete-value fibre has a uniform gap below \(\lambda/3\),
+with no assumption of minimum diffusion. In particular a saturating
+family must use a positive power of \(X^\lambda\) distinct complete
+values on each letter. The proof takes a common neighborhood of
+multiplicative decompositions of a free term, so it does not use
+density of the graph on the outside factors.
+[Uniform fixed-complete-value count](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-strict-one-third-saving-with-any-one-complete-letter-fixed)
+
+For determinant approaches, the first rank drop alone recovers all
+free radical factors outside finitely many degree positions. The
+resulting count charges the atom masses at the exceptional positions
+and works at arbitrary \(\Gamma\). Two separate first determinants
+can instead use the exact additive relation and a function-field
+height argument to force large degree on their narrow projection,
+even when all three numerical heights are one. The broad formal
+profile \(\nu_T=\frac13\operatorname{Unif}[2,4]\) on all three letters
+exposes a limit of the direct Newton approach. Identically assigned
+one-root supports cannot meet both Taylor and chart budgets, and
+direct specialization of several groups has an independent
+chart-budget obstruction at total diffusion one.
+[Direct Newton counting and its broad-profile barrier](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#direct-newton-recovery-at-arbitrary-nonatomic-mass)
+· [Two first determinants with the additive relation](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#two-first-residue-determinants-and-the-exact-additive-relation)
+
+### Scope of the few-prime sum-product approach
+
+At fixed \(L\), set \(n=X^L\). For a balanced box, the number of
+complete values on a letter with at least
+\(k=\lceil\eta\log n/\log\log n\rceil\) distinct primes is
+\(n^{1/3-\eta+o(1)}\) up to arbitrary box tolerances, for fixed
+\(\eta>0\). Indeed the letter radical is at most \(n^{1/3+o(1)}\).
+Multiplying this bound by
+\((\sum_{p\le n}1/p)^k/k!\) bounds the number of possible squarefree
+radicals with at least \(k\) prime factors. The product is
+\(n^{-\eta+o(1)}\) by Stirling's formula and the prime harmonic
+upper bound. At each fixed budget the fixed-support count gives
+an arbitrary subpower allowance for the choices of the integer
+with that radical. If a letter marginal has entropy approaching
+\((1/3)\log n\), the high-prime-count values consequently have
+vanishing edge probability for each fixed \(\eta\), by the entropy
+bound for a distribution split into two sets. Taking \(\eta\)
+to zero after the inner height limits permits a diagonal restriction to the few-prime range
+in the high marginal entropy branch. Bloom's Theorem 7 supplies a lower bound for the maximum of
+the sumset and product-set sizes in that range. A sparse matching
+of sums is compatible with both sets being large, so a
+size-disjunction of this kind does not settle the sparse branch.
+The public Pell saving has a different scope, with a prescribed
+one-parameter family instead of arbitrary complete dictionaries.
+[Thomas Bloom, Theorem 7](https://arxiv.org/html/2512.04931v1)
+· [Chunping Zeng, balanced radical triples](https://hexagonmath.org/pdf/2611.00611v1)
+

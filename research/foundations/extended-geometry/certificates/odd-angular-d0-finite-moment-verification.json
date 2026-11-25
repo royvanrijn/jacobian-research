@@ -1,0 +1,71 @@
+{
+  "assurance": {
+    "external_human_review": false,
+    "formal_verification": false
+  },
+  "both_exceptional_pivot_branches_verified": true,
+  "certificate_sha256": "f3613dd5da4a853dc5a42e8664394cd5de8185a1ca27a08152b8281d96c74dff",
+  "checker_sha256": "854926b8cfde0820f171f149f1048c5c3664305b4e5a4f28473ddf5e9367844a",
+  "claim": "No parameter point in the specified normalized odd-angular D0 slice has native moments M1..M14 all zero, over any characteristic-zero field.",
+  "compressed_input_corruption_rejected": true,
+  "coprimeness_argument": "Primitive integer common factor plus preserved leading degrees would give a positive-degree modular common factor, contradicting the exact modular Bezout identity.",
+  "coprimeness_prime": 32003,
+  "corruption_controls": {
+    "altered_P1_cofactor_rejected": true,
+    "altered_P3_cofactor_rejected": true,
+    "altered_generic_cofactor_1_rejected": true,
+    "altered_generic_cofactor_2_rejected": true,
+    "altered_lambda0_nonzero_b1_Bezout_rejected": true,
+    "altered_lambda0_resultant_10_rejected": true,
+    "altered_lambda0_resultant_8_rejected": true,
+    "altered_lambda0_zero_b1_Bezout_rejected": true,
+    "altered_modular_Bezout_rejected": true,
+    "altered_native_M2_rejected": true,
+    "composite_modulus_rejected": true
+  },
+  "generic_generator_orders": [
+    [
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    [
+      6,
+      8,
+      10,
+      14
+    ]
+  ],
+  "generic_saturations_or_extra_inverses": [],
+  "lambda_zero_chart_verified": true,
+  "native_moment_term_counts": {
+    "1": 0,
+    "10": 338,
+    "11": 0,
+    "12": 638,
+    "13": 0,
+    "14": 1098,
+    "2": 6,
+    "3": 0,
+    "4": 26,
+    "5": 0,
+    "6": 70,
+    "7": 0,
+    "8": 168,
+    "9": 0
+  },
+  "nonpivot_univariate_degrees": [
+    198,
+    380
+  ],
+  "pivot_resultant_standard_order": 2112,
+  "runtime_Groebner_or_Singular": false,
+  "scope_limits": [
+    "Exactly the displayed normalized slice.",
+    "No eventual-purity, full-D0, or global degree-five assertion."
+  ],
+  "seconds": 1.101,
+  "status": "PASS"
+}

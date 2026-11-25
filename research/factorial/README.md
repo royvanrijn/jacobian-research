@@ -150,6 +150,20 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Uniform eventual coprimality on compact subcritical diffuse bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md) |
 | Eventual diffuse coprimality at the exact critical coupling | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_CRITICAL_COUPLING.md) |
 | Uniform consecutive-order coefficient phases for varying shared supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_VARYING_PROFILE_PHASE.md) |
+| Phase separation for a regular pair of upper saddles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_REGULAR_SADDLE_PHASE_SEPARATION.md) |
+| Actual two-saddle exclusion along the equal-degree comparison graph | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RICE_CONTOUR_AND_REAL_BOUNDARY.md) |
+| Stationary sheets and endpoint exclusions for private supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_SUPPORT_SADDLE_GEOMETRY.md) |
+| Uniform eventual diffuse coprimality in the moving critical window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_MOVING_CRITICAL_WINDOW.md) |
+| Prime and post-prime terminals for same-orientation unit-gap supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_TERMINALS.md) |
+| Uniform subcritical zero-free sectors for varying shared supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_VARYING_PROFILE_SUBCRITICAL_SADDLE.md) |
+| Eventual coprimality for every fixed fully shared supercritical profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SUPERCRITICAL_EVENTUAL_COPRIMALITY.md) |
+| Actual consecutive exclusion in a full neighborhood of a shared simple fold | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SIMPLE_FOLD_AND_REGULAR_CONTOURS.md) |
+| Eventual coprimality for fixed noncusp fully shared unequal-degree profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SIMPLE_FOLD_AND_REGULAR_CONTOURS.md) |
+| Eventual coprimality for fixed profiles with one private side in two ranges | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_SIDE_RICE_EVENTUAL.md) |
+| Uniform eventual diffuse coprimality above any positive coupling floor | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_CRITICAL_TRANSITION.md) |
+| One eventual threshold for diffuse coprimality at every positive coupling | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_VANISHING_COUPLING.md) |
+| Profile-uniform product annuli for multivariate Gamma moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_ROOT_ANNULUS.md) |
+| Uniform stationary sheet count under retained and diffuse profile limits | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -239,6 +253,8 @@ Scope limits:
 - A private variable on each side and shared curvature at least 4 log 8 give all-terminal closure. Mirrored profiles with paired equal positive Gamma shapes have simple unit-circle roots at each individual order; generic degreewise composition does not transfer consecutive coprimality.
 - Arbitrary supports are covered through terminal five, and mirrored supports through terminal six. One mirrored unit-gap pair and a constant plus any monomial of total degree up to three are covered at every order. An absolute unevaluated terminal cutoff is proved for all constant-plus-monomial profiles.
 - At every terminal the explicit weak-curvature bound and the explicit large-outer-loss bound cover endpoint ranges. Strong diffuse curvature gives strict interlacing uniformly in degree, and diffuse coprimality eventually holds at every fixed positive s. For fully shared profiles with bounded midpoint curvature, the coefficient-phase link is uniform across degrees. For a fixed fully shared support, the conditional contour has a two-sheet stationary map, with eventual exclusion near noncusp real scales and on bounded cusp windows.
+- An exact Rice contour gives the upper stationary equation for arbitrary supports and a monotone lower phase. For fixed fully shared equal-degree profiles at and above the cusp, both saddles contribute near the equal-modulus graph and their consecutive phases separate. Private profiles have exact single-sheet geometry and local boundary exclusions. The diffuse moving critical window and same-orientation unit-gap prime and post-prime terminals are closed in their stated scopes.
+- Eventual coprimality is proved for every fixed fully shared supercritical profile and every fixed noncusp fully shared unequal-degree profile. The full complex simple-fold neighborhoods are covered. One-private-side fixed profiles are covered in the stated stable ranges. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
 
 Tracked obligations (computed states):
 

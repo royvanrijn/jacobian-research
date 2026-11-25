@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay the finite-modular affine Laurent obstructions on B3 and H3.
+"""Replay the finite-modular low-degree Laurent obstructions on B3 and H3.
 
 Requires Python 3.12 and Singular 4.3.2 (or compatible versions).
 The coefficient formulas are in the field and compact extensions note.
@@ -222,13 +222,19 @@ def main():
     if singular is None:
         raise RuntimeError("Singular 4.3.2 or a compatible version is required")
     for label, moments in [("B3", b3_moments), ("H3", h3_moments)]:
-        moment = centered_moments(moments(10))
+        moment = centered_moments(moments(12))
         verify(
             singular, f"{label}, affine trinomial through order 10",
             ["a", "b", "d0", "d1", "d2", "d3", "d4", "d5"],
             trinomial_equations(moment, 10),
             "4*d0*d3*d5-d0*d4^2-d1^2*d5+d1*d2*d4-d2^2*d3",
             (2, 4, 6, 6, 6, 6, 7, 13),
+        )
+        verify(
+            singular, f"{label}, affine center and unrestricted quadratic product through order 12",
+            ["a", "b", "d0", "d1", "d2", "d3", "d4", "d5"],
+            trinomial_equations(moment, 12),
+            None, (2, 4, 6, 6, 6, 7, 8, 16),
         )
         verify(
             singular, f"{label}, constant-pole affine four-term family through order 9",

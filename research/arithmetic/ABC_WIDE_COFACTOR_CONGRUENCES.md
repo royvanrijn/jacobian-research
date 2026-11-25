@@ -766,3 +766,243 @@ conclusion follows with the squared deviation, by
 Cauchy–Schwarz since the total normalized mass is at most
 one. In particular (AB3) covers a single exact \(p\)-th
 power on \(A\) whenever \(p\lambda\) is bounded below.
+
+## A strict one-third saving with any one complete letter fixed
+
+There exist absolute constants \(\sigma>0\) and \(\lambda_0>0\)
+with the following property. For \(0<\lambda<\lambda_0\),
+\(\varepsilon>0\), \(T\in\{a,b,c\}\), and \(K\ge1\), the number of
+ordered primitive triples
+\[
+ a+b=c\le X,\qquad \operatorname{rad}(abc)<c^\lambda,\qquad T=K
+\]
+is
+\[
+ \ll_{\lambda,\varepsilon}X^{(1/3-\sigma)\lambda+\varepsilon},
+ \tag{FT1}
+\]
+uniformly in \(K\) and in the position \(T\). In particular, if a specified
+letter is drawn from a dictionary of at most \(X^{\theta\lambda}\)
+complete values for a fixed \(0\le\theta<\sigma\), the count is
+\[
+ \ll_{\lambda,\varepsilon}
+ X^{(1/3-\sigma+\theta)\lambda+\varepsilon}.
+ \tag{FT2}
+\]
+
+A multiplicative decomposition of one free term gives a large common
+neighborhood in a bipartite graph. Prime-power factors of the other
+free term on different rows then impose several congruences on the
+same column value.
+
+### Passing to a limiting fixed-target box
+
+Write \(d_0=1/3\). If (FT1) fails for every choice of
+\(\lambda_0,\sigma>0\), choose counterexample budgets
+\(\lambda_j\to0\) and prospective savings \(\sigma_j\to0\).
+For each fixed \(j\) the failure occurs at arbitrarily large \(X\), with
+a complete value \(K\) that may depend on \(X\). Thus the passage to
+limiting boxes must be uniform in \(K\).
+
+Reduce to dyadic shells for the largest letter and use the anatomic
+factorization and dyadic root boxes with exceptional coefficients fixed,
+at a total loss \(o(\lambda_j)\) in the height exponent. At each fixed
+\(j\) the factorization and all degrees are fixed first, and the shell
+height tends to infinity before \(j\) tends to infinity. Finite dyadic
+box counts, divisor losses, and arbitrary small height-exponent losses
+are absorbed at this first limit. This gives a limiting sequence of boxes
+whose count is \(X^{D+o(L)}\) in normalized counting exponents, with
+\(L\le \lambda_j+o(\lambda_j)\) the total root mass and
+\(D\ge(d_0-o(1))\lambda_j\). The elementary count by two complete
+letters gives \(D\le 2L/3+o(L)\), so \(L\) is comparable to \(\lambda_j\).
+The existing unrestricted \(1/3\) argument rules out a limiting
+\(D/L>d_0\). We can therefore assume \(D/L\to d_0\). The necessary
+conditions at equality give letter masses \(l_A=l_B=l_T=d_0\), where
+\(A,B\) name the two free letters. They also give the degree measures
+\(\nu_A,\nu_B,\nu_T\) described in (GE1). Write \(n=X^L\), so the
+original count in the box is at least \(n^{d_0-o(1)}\).
+A limiting exponent statement means the \(X\)-exponent
+statement at each fixed box, followed by the small-budget limit.
+
+The complete value of \(T\) is fixed throughout each box, with
+\(1\le T\le X\). Fix the sign convention
+\(\epsilon_A A+\epsilon_B B+\epsilon_T T=0\), with each sign in
+\(\{1,-1\}\). Consequently either free complete value determines the
+other and hence the whole triple, uniformly in the position of \(T\).
+
+### The free letters have wholly nonatomic degree measures
+
+The endpoint conditions preceding (GE1) imply that two finite-scale
+letters are impossible when all heights are positive. They also imply
+that a tall letter is never finite-scale if the short height vanishes.
+Here a finite-scale letter is one whose numerical weight is
+concentrated on finitely many limiting positive scaled degrees.
+A positive-height letter which is not finite-scale admits
+positive-weight full moduli of arbitrarily small normalized root cost,
+as in the high-block argument preceding (GE1). A modulus in that
+argument has at least \(k\)-fullness with \(k\asymp 1/L\).
+
+Thus if one free letter has zero limiting height, the other is tall
+and supplies such cheap moduli. Upon fixing the modulus value on the
+tall letter, the zero-height free letter lies in one residue class
+because \(T\) is fixed. Its height is eventually below the modulus,
+so the intended count is at most the arbitrarily small root cost
+of the modulus. If both free letters have positive height and one
+is finite-scale, the other has cheap moduli. Group the finite-scale
+letter around its finitely many positive scaled degrees and apply
+the amplified (GW) under such a modulus. The correction has height
+\(X^{o(1)}\) and the target is a unit after fixing any outside
+coefficients, by primitivity. This releases the finite-scale free
+term at vanishing normalized cost. Again the count is at most the
+arbitrarily small modulus cost. These arguments exclude both cases.
+
+We now have cheap moduli on both free letters. With a modulus of cost
+\(\mu\) on \(A\), apply the proof of (GE1) to \(B\) alone. The other
+complete letter \(T\) is already fixed. Freeze the part of \(B\)
+outside the slowly shrinking windows about zero and finitely many
+positive atoms of \(\nu_B\). Group the roots in those windows and apply
+the amplified (GW) to \(B\)'s monomial and its larger correction. If
+there are no positive windows, use rational reconstruction. Its exact
+value determines the triple. Increasing the finite set of atoms after
+the limiting count yields \(d_0\le \mu+c_B\), with \(c_B\) the
+nonatomic mass of \(\nu_B\). The same reasoning on \(A\) gives
+\(d_0\le\mu+c_A\). Letting \(\mu\) tend to zero shows
+\[
+ c_A=c_B=d_0.
+ \tag{FT3}
+\]
+
+### Common neighborhoods of multiplicative decompositions
+
+Relabel the free letters so that \(B\) is tall and \(h_B=1\).
+This is possible because two terms have limiting height one.
+Write \(h_A\le1\) for the other free height. Let \(e_B\ge0\) be the
+first moment lost at infinity in \(\nu_B\), so
+\[
+ \int_0^\infty r\,d\nu_B(r)=1-e_B .
+\]
+By (FT3), \(\nu_B\) is not supported at one point, and there is a finite
+band \([s,S]\) of mass \(\tau>0\), with zero-mass endpoints and
+\[
+ s>(1-e_B)/d_0.
+\]
+Choose \(q_0\in(0,d_0)\) with \(e_B+s q_0>h_A\). Fix an integer \(m\)
+large enough that \(\beta=q_0/m<\tau\). Choose positive
+\(\xi,\zeta,\delta\) so small that
+\[
+ q_0+\zeta<d_0,\qquad
+ e_B-\delta+s\bigl(q_0-m(\xi+\zeta)\bigr)>h_A .
+ \tag{FT4}
+\]
+Finally choose \(p>0\) with \(p<\xi\), \(p<d_0-q_0-\zeta\),
+and less than the mass of some compact band of \(\nu_A\).
+Set \(q=d_0-p\).
+
+Each coordinate in a fixed compact band has mass \(o(1)\) if its degree
+measure is nonatomic. Otherwise a sequence of coordinates with mass
+bounded below would produce an atom at a limit of their scaled
+degrees. Hence a fixed subset of the coordinate positions of \(A\)
+can be chosen with normalized root mass \(p+o(1)\), using only that
+compact band. For each solution let \(U\) be the product of these
+coordinates to their respective powers, including the fixed exceptional
+coefficient if desired, and write \(A=UV\). The possible positive
+integer values of \(U,V\) number at most \(n^{p+o(1)},n^{q+o(1)}\),
+respectively, by the box bounds. Select one factorization per solution
+if needed. The graph on the values \(U,V\) has a distinct edge for each
+triple, since \(UV\) and the fixed \(T\) determine the triple. It has
+at least \(n^{p+q-o(1)}\) edges.
+
+If \(d(V)\) is the number of \(U\)-neighbors of \(V\), the total number
+of ordered \(m\)-stars centered on the \(V\)-side, allowing repetitions,
+is
+\[
+ \sum_V d(V)^m\ge
+ \frac{(\sum_V d(V))^m}{(\#V)^{m-1}}
+ \ge n^{mp+q-o(1)}.
+\]
+Stars with a repeated \(U\) contribute at most
+\(\binom m2(\#U)^{m-1}\#V\le n^{(m-1)p+q+o(1)}\),
+which is smaller by a fixed power since \(p>0\). Dividing the count
+of distinct stars by \((\#U)^m\) gives distinct fixed integers
+\(U_1,\ldots,U_m\) with at least \(n^{q-o(1)}\) common neighbors \(V\).
+They may depend on the height. In row \(i\) the complete other free
+letter is
+\[
+ B_i(V)=\eta T+\omega U_iV
+\]
+for fixed signs \(\eta,\omega\in\{1,-1\}\).
+Both \(U_i\mid A_i\) and \(\gcd(A_i,B_i)=1\) hold for every edge.
+
+### Stripping shared primes and retaining escaped weight
+
+Use a fixed subset of \(B\)'s coordinate positions in the band
+\([s,S]\) of normalized mass \(\beta+o(1)\), which exists by the same
+small-coordinate observation. In row \(i\), write \(R_i\) for
+the product of their unpowered roots. These roots are squarefree
+and have disjoint supports. To ensure squarefreeness one may use the
+specific [BBLT Lemma 2.2](https://arxiv.org/html/2410.12234v2#S2)
+factorization with truncation error \(o(L)\): the only possibly
+nonsquarefree root has degree \(k=\lceil1/\varepsilon_0\rceil\),
+so \(kL\to\infty\) and lies outside every fixed band.
+
+A prime dividing \(B_i(V)\) and \(B_j(V)\) divides
+\(T(U_j-U_i)\), by taking \(U_jB_i-U_iB_j\). Put
+\[
+ J=\prod_{i< j} T(U_j-U_i).
+\]
+This is nonzero and \(|J|\le X^{O_m(1)}\) uniformly. Call a column bad
+if some \(R_i\) shares with \(J\) a squarefree divisor of size at least
+\(n^\xi\). For that row choose the divisor of \(\operatorname{rad}(J)\)
+and assign its primes to the selected positions whose roots they
+divide. There are \(X^{o(1)}\) choices at each fixed truncation by the
+uniform divisor and prime-allocation bounds. If the assigned divisors
+are \(g_e\) and the root box scales are \(H_e\), the number of multiples
+in the relevant interval is \(O(H_e/g_e)\) whenever the interval
+contains a positive multiple. Multiplying over all root positions on
+\(B\) therefore bounds the number of possible row values by
+\(n^{d_0-\xi+o(1)}\), with divisor losses absorbed into arbitrarily
+small height exponents at fixed \(j\). Since \(B_i(V)\) determines
+\(V\), the same bound holds for bad columns. It is smaller than
+\(n^{q-o(1)}\) because \(\xi>p\).
+
+Choose a fixed cutoff \(H>S\), a continuity point of \(\nu_B\), so
+large that the total root mass of scaled degrees above \(H\) is less
+than \(\zeta\). The numerical weight of that tail has limit
+\[
+ e_B+\int_{(H,\infty)}r\,d\nu_B(r)\ge e_B.
+\]
+The mass bound follows from the uniform first moment and the weight
+identity follows by bounded convergence below the continuity cutoff
+and subtraction from the total height. Denote the product of the tail
+powers on row one by \(F\); its root record has at most
+\(n^{\zeta+o(1)}\) choices, its radical is at most \(n^{\zeta+o(1)}\),
+and its numerical weight is at least \(e_B-\delta\) at sufficiently
+small budget and large height. Use \(F=1\) when \(e_B=0\) if desired.
+
+For a good column record the tail root tuple giving \(F\) and the
+selected band root tuples on every row. Strip from every recorded
+band root all primes dividing \(JF\). The cost in root mass on each
+row is at most \(\xi+\zeta+o(1)\) by the good-column condition and
+the tail radical bound. The product of the remaining band powers on
+row \(i\), denoted \(M_i\), has lower numerical weight
+\(s(\beta-\xi-\zeta)+o(1)\). All the \(M_i\) are pairwise coprime
+because any common prime would divide \(J\). Each is also coprime to
+\(F\). Every prime of \(M_i\) is prime to \(U_i\) by primitivity, and
+the same holds for \(F\) and \(U_1\). The recorded factors therefore
+impose one residue class for \(V\) modulo \(F\prod_i M_i\). Its
+numerical weight is at least
+\[
+ e_B-\delta+s\bigl(q_0-m(\xi+\zeta)\bigr)+o(1)>h_A.
+\]
+As \(V\le A\le X^{h_A+o(1)}\), there is at most one \(V\) per
+record. There are at most \(n^{\zeta+m\beta+o(1)}\) records. This
+exponent is strictly smaller than \(q\), by the choice of \(p\).
+Together with the bound for bad columns it contradicts the common
+neighborhood of size \(n^{q-o(1)}\). This proves (FT1) by the limiting
+argument, and summation gives (FT2).
+
+An unrestricted limiting endpoint therefore requires each of its
+three complete-letter dictionaries to have positive normalized
+exponent bounded away from zero. Its largest fixed-value fibers also
+have a uniform strict saving in normalized exponent. This leaves
+unrestricted endpoints with three large complete dictionaries open.
