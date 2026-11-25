@@ -10,7 +10,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 ## Moments and vanishing
 
-**Topic scope:** Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have native integer, radial-primitive absolute scalar-nonpower witnesses in balanced degree4 and EVERY degree>=6, with the SAME fixed original markerZ surviving EVERY positive order. Global degree5 remains open; degree7 is realized by the separate joint Hopf-profile family. Three or more pairs have witnesses in EVERY balanced degree>=2 with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height3 degree5/7 member has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newtonfaces reduce genuineQnonzero strippedquintics to exact18/15-dimensional residuals;evenmixedpurequintics requirext4andatleasttwo specifiednegativeleaders. Prime-face residue identities give individualeventualparameterdependence and properPURE/fixedtail parameterimages; explicitresidual andEVENquinticapplications leave finiteorproperalgebraictargets. Local End-case analysis reduces the specified cyclotomic E7/E9 sixfold signature to the absolutely simple full-EndE frontier; any field defining that action containsE. Known ordinary cases and the optional prime-face reverse refinement are tracked separately. Existing computable sphere prefixes and prime-face rigidity combine into algorithms for necessary parameter polynomials and exact finite geometric PURE parameter sets in the specified one-parameter charts. Balanced Prym ordinarity excludes the entire even D=0,BCnonzero quintic chart over every characteristic-zero field; with the old Newton boundary, a genuine mixed even eventual quintic must have nonzero y^5 coefficient. An exact rational chart certificate excludes finite native moment vanishing through14 in the normalized odd-angular D0 quintic slice. Repeated-cubic full-BD even quintic faces are non-eventually-pure; the distinct-root E5-sixfold residual reduces to absolutely simple full EndE5. The eight-coefficient odd-angular quintic family with BC nonzero has an exact sharp native moment14 obstruction, with a separate smooth Q101/number-field prefix13 witness. The seven-term C0 odd-angular quintic family with BD nonzero has an exact sharp native moment12 obstruction, with separate smooth Q103 and number-field prefix11 witnesses.
+**Topic scope:** Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have native integer, radial-primitive absolute scalar-nonpower witnesses in balanced degree4 and EVERY degree>=6, with the SAME fixed original markerZ surviving EVERY positive order. Global degree5 remains open; degree7 is realized by the separate joint Hopf-profile family. Three or more pairs have witnesses in EVERY balanced degree>=2 with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height3 degree5/7 member has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newtonfaces reduce genuineQnonzero strippedquintics to exact18/15-dimensional residuals;evenmixedpurequintics requirext4andatleasttwo specifiednegativeleaders. Prime-face residue identities give individualeventualparameterdependence and properPURE/fixedtail parameterimages; explicitresidual andEVENquinticapplications leave finiteorproperalgebraictargets. Local End-case analysis reduces the specified cyclotomic E7/E9 sixfold signature to the absolutely simple full-EndE frontier; any field defining that action containsE. Known ordinary cases and the optional prime-face reverse refinement are tracked separately. Existing computable sphere prefixes and prime-face rigidity combine into algorithms for necessary parameter polynomials and exact finite geometric PURE parameter sets in the specified one-parameter charts. Balanced Prym ordinarity excludes the entire even D=0,BCnonzero quintic chart over every characteristic-zero field; with the old Newton boundary, a genuine mixed even eventual quintic must have nonzero y^5 coefficient. An exact rational chart certificate excludes finite native moment vanishing through14 in the normalized odd-angular D0 quintic slice. Repeated-cubic full-BD even quintic faces are non-eventually-pure; the distinct-root E5-sixfold residual reduces to absolutely simple full EndE5. The eight-coefficient odd-angular quintic family with BC nonzero has an exact sharp native moment14 obstruction, with a separate smooth Q101/number-field prefix13 witness. The seven-term C0 odd-angular quintic family with BD nonzero has an exact sharp native moment12 obstruction, with separate smooth Q103 and number-field prefix11 witnesses. In the exact eight-dimensional even-t/odd-angular stripped quintic subspace, PURE phases are exactly angular one-sided; all such phases are safe against every full quadric-algebra marker.
 
 **Computed obligation progress:** 37 open; 4 proved / discharged.
 
@@ -135,6 +135,8 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 **Authored scope assessment:** This is a scoped finite14 nonexistence and sharpness result. It does not cover B0/C0, angular-even additions, eventual purity, or the global degree-five problem.
 
 **Authored scope assessment:** This finite12 theorem does not cover B0/D0, extra angular-even additions, eventual purity or the global quintic problem.
+
+**Authored scope assessment:** This eight-dimensional PURE classification uses a local cubic6 lemma and narrow Newton/BC14/C0-12 gates; the balanced-Prym D0 analytic theorem is unnecessary. Eventual purity in that whole space is not classified, and full even14/S24/global primitive degree5 obligations remain OPEN.
 
 ### GVC-GMC-IMAGE
 
@@ -1760,6 +1762,20 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Verification limits:** All fresh native arithmetic, exact QQ small resultants, full-degree univariate Gauss data, exceptional chart products and smooth native Jacobian pass portable replay. Written Newton and local finite-Q residue arguments separately prove characteristic-zero witnesses. No formal/external assurance upgrade.
 
+### EVEN-ODD-ANGULAR-STRIPPED-QUINTIC-PURITY-CLASSIFICATION
+
+[Even-t odd-angular stripped quintics are pure exactly when one-sided](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md)
+
+**Exact scope:** For every char0 field, the exact eight-dimensional phase(1) is PURE iff P=0 or(q0=B=0). Every pure phase kills all ambient A_K markers at every m>deg g. No eventual-purity/full14/fullS24/global Image5 classification is asserted.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Local cubic constants are proved by the displayed native expansion and independently reconstructed with exact Fractions. The C-first argument imports exactly three narrow current facts: Newton PURE necessity, BC14 and C0-12. No D0 theorem, sharpness, generic ordinary assertion, new checker or assurance upgrade.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -1863,6 +1879,10 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | ED0-BALANCED-UNITARY-HODGE-CIRCLE | claim | proved / partial | A polarized complexfourfold withquarticCM E-action, Rosaticonjugation andsignature1,1,1,1 hasE-rank2 Hermitianh ofsignature1,1atbothFplaces, withHodgecircleinResSU(h). No genericEnd or simplicity hypothesis. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section1;Lemma2 firstparagraphs |
 | ED0-ONE-NUMBER-FIELD-TAIL-SPECIALIZATION | claim | proved / partial | Any hypotheticalchar0eventualphase withBCnonzero has ONEnumberfieldspecialization preservingBC anditsnonzero/discriminantbranch andALLtailidentities simultaneously, byfiniteQdomainlocalization+Nullstellensatz. No PFPparameteralgebraicity or prime-dependent specialization. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section4 |
 | ED0-RATIONAL-LOCAL-SQUARECLASS-CONSTRUCTION | claim | proved / partial | ForrealquadraticF andquaternionD/F, choose negative rationald nonsquarein everyramifiedFv: localdegree<=2 permits classesalsoat2; CRT preserveschosenclasses andnegativeinfinity. FK0/F is a quadraticFIELD with noramifiedsplits. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section2;Lemma3 existencefirstparagraphs |
+| EOP5-CUBIC-FIRST-SIX-MIXED-OBSTRUCTION | claim | proved / partial | Over every char0 field, h=a*y+c*y^3+b*y*t^2+q*x*t^2 with q!=0 and M2=M4=M6=0 forces a=b=c=0. Native expansion gives a=-3b/7,c=-136b^2/(245q),M6=-2304q^3b^3/554498945. This local proof does not widen any winding-one theorem. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Lemma1;equations2--5 |
+| EOP5-EXACT-FILTERED-DEGREE-PARITY | claim | proved / partial | The eight normal monomials in phase(1) are independent with their displayed least filtration degrees. They have only degrees1,3,5, so absence of A,B,C,D gives degree<=3 and otherwise actual degree5. All odd moments vanish identically by the angular antipode. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Opening;equation1 |
+| EOP5-ONE-SIDED-ALL-MOMENTS-VANISH | claim | proved / partial | For phase(1), P=0 or(q0=B=0) implies Lambda(f^m)=0 for every m>=1, because every phase angular weight is respectively +1 or belongs to{-1,-3,-5}. The zero phase is included. This direct CT proof is independent of imported quintic obstructions and of the stronger marker-cutoff fact. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3 sufficiency |
+| EOP5-ONE-SIDED-FULL-AMBIENT-MARKER-CUTOFF | claim | proved / partial | For any one-sided phase(1) and every nonzero g in the FULL A_K, Lambda(g*f^m)=0 for every m>deg(g). A degree-d representative has angular weights[-d,d], while one-sided f^m has weights>=m or<=-m. This is not restricted to markers in the eight-dimensional subspace. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3;equation8 |
 | EPA-ALGEBRAIC-QE-AND-SAMPLING-PRIMITIVES | claim | proved / partial | Classical effective real QE decides all finite ALG formulas used. ALG samples may be found by enumeration+membership, using real-closed transfer; finite algebraic arithmetic/signs are exact. This is an imported algorithmic primitive, no new complexity estimate. | see incoming proof routes |
 | EPA-EFFECTIVE-INPUT-AND-PROMISE-CONTRACT | claim | proved / partial | Finite Q-coordinate HOPF algebra with explicit Delta/counit/antipode and closed H Hopf ideal, or actual matrix defining ideals. PROMISE connected semisimple G,compactG(R),redH0,hnonideal. Halting asserted only on valid promised inputs, not abstract rational point-group generators or a promise-validity detector. | see incoming proof routes |
 | EPA-GROEBNER-ELIMINATION-AND-NORMALFORM-TERMINATION | claim | proved / partial | General-dimensional polynomial ideal normal forms and elimination are computable: S-polynomial completion plus own leading-monomial/Dickson argument terminates, and Buchberger criterion gives zero-normal-form membership. Source usesdegreelex; own admissible-order extension covers block elimination. | see incoming proof routes |
@@ -2093,6 +2113,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-COMPACT-TWIST-INVOLUTIONS | claim | proved / partial | Over a real closed field, all affine homogeneous forms for a connected compact-type reductive group are twists by rational involutions in the equivariant normalizer quotient. A form has a rational point exactly for the trivial involution. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Compact twists and the commuting normalizer |
 | MATHIEU-GROUND-FIELDS-DIMENSION-FOUR-CUBIC-PRIME-TRACE | claim | proved / partial | Over a split reduction of residue field F_p with p>3, the p-scaled normalized moments on a quadric in four variables, at m=2(p-1)/3 when defined and m=p-1, equal modulo p the numbers of points minus one on the cyclic complete intersection at infinity and the projective zero intersection, respectively. The second formula allows lower-degree terms. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): The two congruences, equations (C1) and (C2) |
 | MATHIEU-GROUND-FIELDS-DISCRIMINANT-RADIAL-ORDER-TWO | claim | proved / partial | For inverse-square-root polynomial densities on a bounded domain, the displayed radial Laurent seed has a strictly positive second moment whenever the first vanishes. Applies to B3 and H3 discriminant laws. Higher powers of a nonpure seed and general deformations are not excluded. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): A radial Laurent ansatz fails at order two for inverse square-root densities |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-MIRROR-DISCRIMINANT-LOGARITHM | claim | proved / partial | The normalized full mirror discriminant square on either exceptional angular sphere has an explicit independent beta-product law. Its Mellin transform has a double pole yielding a nonzero logarithmic term that survives any bounded nonconstant real rational scalar reparameterization. In particular a discriminant-only coordinate cannot have a beta height law. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A discriminant-only law has a logarithmic singularity). |
 | MATHIEU-GROUND-FIELDS-LOCAL-RATIONAL-RESIDUE-PURITY | claim | proved / partial | At the infinity expansion of a rational function in one variable, eventual zero constant coefficients of positive powers imply either vanishing at infinity or a polynomial with zero constant term, over any characteristic-zero field. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Lemma (Local rational moments). |
 | MATHIEU-GROUND-FIELDS-NEGATIVE-TERNARY-LEGENDRE-WITNESS | claim | proved / partial | The negative ternary sphere has an explicit bounded rational pure phase and a bounded rational multiplier detecting every order. Every polynomial marker of degree d misses orders above d, and degree exactly m is necessary and attainable at order m. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A bounded rational Legendre witness on the negative sphere). |
 | MATHIEU-GROUND-FIELDS-NORM-QUADRIC-QUADRATIC-PURITY | claim | proved / partial | For any nondegenerate characteristic-zero quadric q=1 in ambient dimension n>=2, the first 4n positive moments of q(x,Ax)+q(b,x) vanish iff A is nilpotent and q(b,A^j b)=0 for every j. Anisotropic q therefore has no nonzero pure phase of ambient degree at most two. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Pure quadratic phases on norm quadrics |
@@ -2521,6 +2542,8 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-COMPACT-RATIONAL-HEIGHT-REGULARITY-OBSTRUCTION | claim | proved / partial | Regular rational functions of the arrangement height on either complex quotient are constant. For phases using univariate rational functions of this height and arbitrary monomial rescaling of the split scalar variable, two-sided regularity forces constant coefficients; pure phases of this type are safe. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): The obstruction to regularity and scalar rescaling |
 | MATHIEU-GROUND-FIELDS-JOINT-ARRANGEMENT-WEIGHT-MOMENTS | claim | proved / partial | Positive perturbations of common arrangement weights give exact mixed moments in the squared height and two normalized Gram directions, with a conditional Volterra formula and a logarithmic power-sum identity. The icosahedral vertex-face family makes the formulas explicit. Deforming the weights preserves the formal scalar witness and retains its poles. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Joint moments from the weight direction). |
 | MATHIEU-GROUND-FIELDS-OCTAHEDRAL-CLEARED-HEIGHT-SECOND-OBSTRUCTION | claim | proved / partial | For the displayed regular phase with \(p_2^2\) denominator clearing, arbitrary integer scalar-prefactor exponent and positive integer dilation exponent, vanishing of the first moment forces a strictly positive second moment. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): The direct denominator clearing for the octahedral height |
+| MATHIEU-GROUND-FIELDS-COMPACT-TRINOMIAL-STATIONARY-PRODUCT-OBSTRUCTION | claim | proved / partial | With a nondegenerate extremal orbit of the center and stationary opposite Laurent product, a pure trinomial must have vanishing product but cannot have both coefficients vanish at that orbit. This excludes reflection-linear phases at such an extremal orbit even when the Laurent coefficient has singular zeros. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A stationary opposite product at an axial extremum). |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-MIRROR-SUBLEVEL-OBSTRUCTION | claim | proved / partial | For a real Laurent trinomial on a compact two- or three-dimensional manifold, a high-mass small sublevel set on which the center approaches a global extremum and the opposite product approaches a constant gives a global Cauchy-transform obstruction. The squared product of intersecting mirrors on both exceptional quotients has the requisite sublevel mass. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Large sublevel mass excludes a pure trinomial). |
 | MATHIEU-GROUND-FIELDS-ANISOTROPIC-CUBIC-REDUCED-BRANCH | claim | proved / partial | Over every characteristic-zero field, a cubic regular phase on a four-dimensional anisotropic norm quadric with a geometrically reduced cubic leading divisor on the quadric at infinity is not pure, including with arbitrary lower-degree terms. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Reduced branch divisors |
 | MATHIEU-GROUND-FIELDS-DIMENSION-FOUR-QUARTIC-K3 | claim | proved / partial | In any four-dimensional nondegenerate norm quadric over a characteristic-zero field, a quartic phase has infinitely many nonzero moments if the double cover of the quadric at infinity along the leading divisor is smooth or has only rational double points. Lower terms are arbitrary. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): An exclusion criterion for quartic phases, leading residue and K3 test |
 | MATHIEU-GROUND-FIELDS-HIGHER-DEGREE-FROBENIUS-CRITERION | claim | proved / partial | For degree at least three on a four-dimensional nondegenerate norm quadric with smooth leading divisor, the leading prime-order residue equals the Frobenius coefficient on the unique one-dimensional summand of top coherent cohomology of the associated cyclic cover. A nonzero good residue excludes purity, and weak ordinarity of the cover would imply infinitely many nonzero moments. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): A Frobenius criterion in higher degree |
@@ -2834,6 +2857,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-OCTAHEDRAL-JOINT-ENDPOINT-OBSTRUCTION | claim | proved / partial | The octahedral conditional arcsine variable standardized by the squared-uniform height gives a joint Dirichlet law and a jointly pure rational endpoint ideal with fixed marked integrals. The resulting joint field intersects the regular reflection-invariant Laurent ring only in scalar Laurent polynomials. The rigidity persists on the rotation quotient after adjoining both standardized signed circle coordinates and imposing descent. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): An octahedral joint Dirichlet identity and its endpoint algebra |
 | MATHIEU-GROUND-FIELDS-OCTAHEDRAL-TWO-ARRANGEMENT-JOINT-LAW | claim | proved / partial | The octahedral heights from the coordinate-mirror and long-root arrangements are two coordinates of one Dirichlet(1/2,1/2,1/2) law. Resolving the remaining two sheets yields a uniform interval coordinate and an independent arcsine variable that recover both regular reflection invariants by explicit rational formulas. The field of the two heights alone intersects the regular angular Laurent ring only in scalar Laurent polynomials. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): The two octahedral arrangements and a uniform conditional coordinate |
 | MATHIEU-GROUND-FIELDS-ICOSAHEDRAL-JOINT-ARRANGEMENT-FIELD | claim | proved / partial | The vertex and face heights have degree-three joint subfield in the reflection-invariant angular field and contain no nonscalar regular Laurent invariant. Their mixed scalar product restores the full field. The face reflection fibre is elliptic, and the heights do not form a Dirichlet split. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (The field of the icosahedral arrangement data). |
+| MATHIEU-GROUND-FIELDS-OCTAHEDRAL-AFFINE-CENTER-REFLECTION-LINEAR-OBSTRUCTION | claim | proved / partial | On the octahedral angular quotient, a reflection-linear phase with center affine in the two basic reflection invariants is never nonzero and pure, irrespective of the degree, zero singularities, or orientation parity of its Laurent coefficient. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Corollary (Octahedral affine centers in reflection-linear phases). |
 | MATHIEU-GROUND-FIELDS-ANISOTROPIC-ALL-CUBIC-PHASES | claim | proved / partial | Over any characteristic-zero field on q=1 for a four-dimensional anisotropic quadratic form, every phase of minimal ambient degree three has infinitely many nonzero moments, with arbitrary even and odd lower terms. The only pure phase of degree at most three is zero. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Complete exclusion through degree three in dimension four |
 | MATHIEU-GROUND-FIELDS-ANISOTROPIC-QUARTIC-LEADING-EXCEPTION | claim | proved / partial | For a four-dimensional anisotropic norm quadric in characteristic zero, any phase of minimal ambient degree four whose leading class modulo the norm is not L^3M for ground-field linear forms has infinitely many nonzero moments. Lower terms are arbitrary. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): An exclusion criterion for quartic phases |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-SINGLE-CIRCLE-WEIGHT-HEIGHT-OBSTRUCTION | claim | proved / partial | On the full compact octahedral and icosahedral quotients, the real part of a regular function of one nonzero left-circle weight cannot give a uniform height or a squared-uniform height after squaring. The obstruction also holds for the exact variable-radius moment factorization with a left-circle invariant radius. In particular it applies to each of the standard single-row binary forms. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A single circle weight gives no exceptional uniform scalar law). |
@@ -3751,6 +3775,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | RHT-AUTOMORPHISM-PULLBACK-REMAINS-INTRINSIC-CLASS | claim | proved / partial | For EVERY geometric automorphism phi of X, phi*Y->X remains connected finite-etale CYCLIC Galois degree m and has nonzero top cohomology because phi*Y is abstractly isomorphic to Y. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section20 |
 | RHT-DETERMINANT-COVER-ISOMORPHISM-IMPLIES-CLASS-PROPERTIES | claim | proved / partial | REVERSE characterization: every cover isomorphic to Y OVER X is connected finite-etale CYCLIC Galois of degree m with nonzero top cohomology. This gives no uniqueness of a chosen lift and no property seed. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Sections15,19 |
 | SLBF-QUINTIC-ORDINARY-LEADING-FORM-THEOREM | claim | proved / partial | Theorem 2 in its complete exact scope: at most four roots each of multiplicity <=5, or exactly five double roots, force infinitely many nonzero moments over every characteristic-zero field and arbitrary lower terms. The exact deep ordinary inputs and local all-special full-End verifications are necessary gates of this recorded route. This is not a global degree-five exclusion. | [foundations/extended-geometry/SPHERICAL_LEADING_BINARY_FORM_MOMENT_OBSTRUCTIONS.md](foundations/extended-geometry/SPHERICAL_LEADING_BINARY_FORM_MOMENT_OBSTRUCTIONS.md): Theorem 2; Sections 5--10 |
+| EOP5-GENUINE-MIXED-PURE-NEWTON-NECESSITY | claim | proved / partial | For phase(1) of actual degree5 with both original angular signs, PURE implies B!=0 and at least TWO of A,C,D nonzero, using exactly the written old Newton PURE consequence. No ED0/D0 analytic input is needed. In the subsequent C=0 branch these facts force A,D!=0. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Section2 N;Theorem3 necessity |
 | SCD-CONSTRUCTED-PHASE-FULL-CENTRAL-QUOTIENT-DESCENT | claim | proved / partial | For EVERY Q-definedcentral isogenyG->Gprime andFULL Hprime=(Gprime)^omega,anylift a ofHprime hasomega(a)=a ca,ca central. Cartanmapc(ga)=ca^-1c(g);the explicitly center-invariant coefficients ofp,F forqstar therefore descend toACTUAL regularfunctions onGprime/Hprime,including extra fixed components. dPi identifies fixedLiealgebras,so the downstairsstabilizerisreductive andquotientaffine. No arbitraryphasefailuredescent. | [foundations/extended-geometry/SPLIT_COMPACT_SYMMETRIC_CHARACTER_DOMAIN_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/SPLIT_COMPACT_SYMMETRIC_CHARACTER_DOMAIN_PRODUCT_COUNTEREXAMPLES.md): Section7 |
 | SCCP-BDI-ALL-FIELD-ABSOLUTE-NONPOWER-COUNTEREXAMPLE | claim | proved / partial | For each stated BDI rank,every characteristic-zero field K has the explicit absolute unit-nonpower pure phase with ONE fixed regular unit marker nonzero at EVERYorder; hence this product trace kernel is not Mathieu. | [foundations/extended-geometry/STANDARD_COMPACT_CLASSICAL_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/STANDARD_COMPACT_CLASSICAL_PRODUCT_COUNTEREXAMPLES.md): Sections2.1,6,Theorem1 |
 | SCCP-BDI-ARBITRARY-QUADRATIC-FORM-COUNTEREXAMPLE | claim | proved / partial | For ANY such q,all ranks1<=k<n,the same regular F/H have all pure moments zero,every marked moment nonzero; diagonal coordinate projector gives S0,so phase is absolute unit-nonpower. Nocompactness or isotropy assumption. | [foundations/extended-geometry/STANDARD_COMPACT_CLASSICAL_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/STANDARD_COMPACT_CLASSICAL_PRODUCT_COUNTEREXAMPLES.md): Section6.1 |
@@ -3826,6 +3851,8 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-QUATERNION-FLAT-POWER-PULLBACK | claim | proved / partial | Odd powers at least three on the norm-minus-one quaternion torsor all pull back the flat independent angle and axis trace. A regular fixed pair for that trace transfers to the torsor. For bivariate flat phases, degree below twice the transverse degree and a transverse top coefficient nonzero at i force infinitely many nonzero moments by a good-prime pole. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Odd-power pullback and a transverse prime test). |
 | MATHIEU-GROUND-FIELDS-MIXED-REAL-CLOSED-REDUCTION-NO-POINT | claim | proved / partial | For a geometrically homogeneous space with active split center and active compact derived action, either the compact group acts geometrically transitively and the split commuting theorem gives a witness, or the trace reduces to an adjoint angular witness, an unoriented axis witness, or one of the two compact exceptional products. This uses the two invariant quotients and canonical principal stabilizer descent. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Mixed reduction without rational points). |
 | MATHIEU-GROUND-FIELDS-RESIDUAL-COMPACT-RANK-ONE-TWISTS | claim | proved / partial | Classifies the remaining compact SU2 homogeneous twists by normalizer quotient. Dihedral, quaternion and binary tetrahedral cases admit finite equivariant covers by toral cyclic twists. Prime-to-two parts of cyclic stabilizers can be removed on the covering side. Normalized traces pull back, so witnesses transfer from target to cover and Mathieu–Zhao transfers from cover to target. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Residual compact rank-one twists). |
+| MATHIEU-GROUND-FIELDS-CENTRAL-CLASSICAL-TWISTS-ODD-OR-BLOCK-STABILIZER | claim | proved / partial | The regular obstruction for central classical torsors descends through finite stabilizers of odd geometric order. It also holds with any reductive stabilizer supported on k coordinates when n-k-1 exceeds the largest power of two at most n. The normalized negative frame quotient supplies the isotropy over the invariant field and includes positive-dimensional compact stabilizers. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Regular witnesses on central twists with odd or block stabilizers). |
+| MATHIEU-GROUND-FIELDS-CENTRAL-SPINOR-TORSOR-LEVEL | claim | proved / partial | For the kernel-central twist of the compact Spin group of the positive n-dimensional sum of squares over a real closed field, the level of the function field is the least power of two at least n. The acting group stays anisotropic over the torsor field and thus over every invariant quotient field, identifying the boundary of the generic split construction for these twists. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Anisotropy over the central spinor-norm torsor). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-FULL-ENDPOINT-OBSTRUCTION | claim | proved / partial | For both exceptional full compact quotients with a split scalar factor, regularity of all even conditional moments at the escaping scalar divisor and of the second conditional moment at the other scalar divisor and the upper height endpoint forces the Laurent phase to be independent of the split scalar. This treats arbitrary left weights in the fixed-interval endpoint construction, using the coordinate-mirror height for the octahedral case and the fifteen-mirror height for the icosahedral case. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (The full exceptional endpoint obstruction). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-UNEQUAL-TOP-BRANCHES | claim | proved / partial | Both exceptional angular quotients admit a nonvanishing test for aligned Laurent faces with two finite roots of possibly unequal multiplicities. A four-branch residue condition on the effective cyclic cover gives infinitely many nonzero moments for every nonconstant polynomial in the phase. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Aligned angular faces with unequal root multiplicities |
 | MATHIEU-GROUND-FIELDS-TERNARY-SINGLE-ANGULAR-FREQUENCY-OBSTRUCTION | claim | proved / partial | On an anisotropic ternary norm quadric, a leading binary form supported on a center and a single opposite pair of weights excludes eventual purity in degrees 2, 3, 4, 5, 6, 8, 10 and 12, regardless of the lower-degree terms. This includes special leading decics with six, eight and ten distinct roots. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Ternary angular trinomials in the small cyclotomic degrees). |
@@ -3896,6 +3923,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | W1-FULL-FOUR-WAY-CLASSIFICATION | claim | proved / partial | For the full19-dimensional degree<=6 angular[-1,1] class,purity,eventual purity,all-fixed-full-sphere-marker safety and the exact allowed locus are equivalent. No bounded-degree phase class is asserted to be an algebra. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Theorem1 complete classification |
 | AEIV-COMPACT-TWO-FACTOR-INSTABILITY | claim | proved / partial | Over EVERY formally realK, compactXc and scalar splitGm are eachMathieu, while their productfails by the explicit fixedunitmarker pair. No factorproperty claimed for noncompact reducednorm1forms. | [foundations/extended-geometry/ALBERT_EIV_AND_REDUCED_NORM_ONE_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/ALBERT_EIV_AND_REDUCED_NORM_ONE_PRODUCT_COUNTEREXAMPLES.md): Section8 |
 | ANQ-COMPACT-QUOTIENT-TWOFACTOR-INSTABILITY | claim | proved / partial | Forcompactquotient only,EVERYformallyrealK has bothindividualfactorsMathieu andbadproduct with sameallorderunitpair. Reducedprojectivecase assertsallchar0productfailurewithoutfactorMZclaim. | [foundations/extended-geometry/BALANCED_PROJECTOR_AND_ALBERT_NORMALIZER_QUOTIENTS.md](foundations/extended-geometry/BALANCED_PROJECTOR_AND_ALBERT_NORMALIZER_QUOTIENTS.md): Section5 |
+| EOP5-C0-BD-NONZERO-NONPURE | claim | proved / partial | For phase(1) with C=0,BD!=0, the incoming narrow old C0 finite12 normalization theorem gives a nonzero native moment by12, hence notpure. The written rho6=D/B,mu=1/(rhoB) transport is valid over a faithful algebraic extension. Sharpness is not needed. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Lemma2;Section3 |
 | CAPP-ALL-FIELD-PRODUCT-TRACE-NOT-MATHIEU | claim | proved / partial | The normalized trace kernel on the standardQ Albert model times splitGm fails the Mathieu property after EVERYchar0basechange, because the displayed pure F has one fixed regular unit marker surviving every positive order. No complex-to-real descent. | [foundations/extended-geometry/CAYLEY_PLANE_PROJECTOR_PRODUCT_COUNTEREXAMPLE.md](foundations/extended-geometry/CAYLEY_PLANE_PROJECTOR_PRODUCT_COUNTEREXAMPLE.md): Sections1,6 |
 | BD5-ALL-FIELD-RESIDUAL-SPECIALIZATION-NECESSARY | claim | proved / partial | Any eventual phase over an arbitrary characteristic-zero field with smooth cubic face has one number-field eventual specialization preserving the cubic branch; that specialization has simple full EndE5 Prym. No assertion that arbitrary specializations preserve transcendental extra End. | [foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md): Section3;7 |
 | ED0-MIXED-EVEN-Y5-COEFFICIENT-NECESSARY | claim | proved / partial | Using ONLY the exactoldSNFtwo-negative-leaders gate, anyactualdegree5eveneventualphasewithBOTHangularsigns musthaveD[y5]nonzero. GenuineMIXEDevenD0sectorisempty; one-sidedpure safephasesnotexcluded. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section8;Corollary4 |
@@ -3975,6 +4003,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | CIB-UNIT-PRIME-UNSAFE-NECESSARILY-MIDPOINT | claim | proved / partial | For FIXED pure UNSAFE unit-center constant-invariant data of PRIME least degree, lambda must equal1/2 since all noncentral unsafe degrees are composite. No431 low-degree theorem or432 nonpower lemma needed. | [foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md](foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md): Section5 |
 | NC-LITERAL-GENERAL-LAMBDA-REALIZATIONS | claim | proved / partial | For EACH fixed allowed lambda and j>=1, literal q0/q1 constructions realize degree3j-1 safe and degree3j+3 unsafe; x-mark8^m kappa_m may vanish at individual orders. | [foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md](foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md): Section10 |
 | NC-SAFETY-NECESSITY-Q-CONSTANT | claim | proved / partial | For FIXED valid H2 data, lambda!=1/2 AND Pure(f): Safe(f) implies Q constant, since q>=1 has a fixed infinitely-bad polynomial-x marker. Universal proposition, not a Safe(f) seed. | [foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md](foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md): Sections7-9; q>=1 marked-tail contradiction |
+| EOP5-BC-NONZERO-NONPURE | claim | proved / partial | For phase(1) with BC!=0, the exact old finite14 theorem gives a nonzero native moment by14, hence notpure. No eventual-purity assertion or sharpness premise is used. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Section2 BC14;Theorem3 necessity |
 | OAQ14-FULL-EVEN-NECESSARY-ANGULAR-EVEN-PART | claim | proved / partial | For f=P(y,t)+xt^2(q+Bt^2), where P is even in t, has total degree at most five, and C=[y^3t^2]P satisfies BC!=0, vanishing of the first14 native moments forces at least one of p00,p02,p04,p20,p22,p40 to be nonzero. Otherwise f lies in the eight-term BC-nonzero family excluded by Corollary2. This is only a necessary finite-prefix condition; no full-even exclusion or converse sufficiency is claimed. | [foundations/extended-geometry/ODD_ANGULAR_QUINTIC_FINITE_MOMENT_OBSTRUCTION.md](foundations/extended-geometry/ODD_ANGULAR_QUINTIC_FINITE_MOMENT_OBSTRUCTION.md): Necessary-condition paragraph after Corollary2 |
 | SNQ-EVII-FORMAL-REAL-TWO-FACTOR-INSTABILITY | claim | proved / partial | ForEVERYformallyrealK,boththisactualquotientfactor andscalarGm areMathieu,butproductfailsbyexplicitS-invariantphaseandunitmarker EVERYorder. Pairitselfholdsallchar0K. No globalMathieuascent. | [foundations/extended-geometry/SYMMETRIC_NORMALIZER_PHASE_DESCENT_AND_EVII_QUOTIENT.md](foundations/extended-geometry/SYMMETRIC_NORMALIZER_PHASE_DESCENT_AND_EVII_QUOTIENT.md): Section10 |
 | WOLF-ABSTRACT-RADIUS-ALL-ORDER-PAIR | claim | proved / partial | For the abstract radius functional with actual rho, p=T/t^2 f(Tr)^2,F=p^L(1+t^L p),H=t^(-(L-1)) have LambdaF^m=0 and LambdaHF^m=A_X18^(2Lm)(2Lm)!/(2Lm+L-1)!>0 for EVERY m>=1. This node alone makes no claim that r is regular on X. | [foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md): Section5 |
@@ -4014,6 +4043,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | CIB-UNIT-CONSTANT-INVARIANT-LOW-FIVE-SEVEN-SAFETY | claim | proved / partial | Each FIXED pure unit-center constant-invariant cubic of degree5/7 is safe by its two normalized-lambda branches. | [foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md](foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md): Section3 |
 | CIB-CONSTANT-INVARIANT-PRIME-UNSAFE-CENTRAL-J1728 | claim | proved / partial | For FIXED pure UNSAFE regular nonzero-E constant-invariant cubic of PRIME least degree, E0!=0,C0=D0=I=0 and generic j1728. Necessary condition only: no witness/minimum and no safety classification of all central primes. | [foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md](foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md): Section5 Corollary |
 | NC-SAFETY-IFF-Q-CONSTANT | claim | proved / partial | Within FIXED pure valid H2 data: Safe(f) iff Q is constant. Both directions are scoped; no arbitrary phase becomes safe/unsafe from the theorem alone. | [foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md](foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md): Theorem and Sections8-9 |
+| EOP5-PURE-ONE-SIDED-NECESSARY | claim | proved / partial | For EVERY char0 field and phase(1), PURE implies P=0 or(q0=B=0). The actual degree<=3/degree5 partition uses the local cubic lemma and Newton B-plus-two-leader necessity, followed by C!=0 BC14 or C=0 BD12. D0 analytic is not a premise. No uniform14 cutoff on the whole eight-dimensional space or eventual classification follows. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3 necessity |
 | WOLF-EVEN-SUBALGEBRA-ACTUAL-MOMENT-TRANSFER | claim | proved / partial | All coefficients of p,F are EVEN polynomials in real r. R[r^2]->O(X_R),r^2->D transfers exactly their probability moments to the actual regular phase and scalar unit marker. No sqrtD is adjoined and no abstract nonpower statement is transported. | [foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md): Section5 |
 | QCD-HIGH-DIMENSION-IMPLIES-STRONG-WITNESS | claim | proved / partial | For EVERY specified nondegenerate q over any char0K, IF N>=3 THEN E(q), directly by uniform all-dimensional construction; no parity split or old even theorem premise. Universal theorem, no literal phase predicate. | [foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md](foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md): Section9 second step |
 | RHT-VOLUME-LEMMA-TRANSPORT-IFF | claim | proved / partial | UNDER THE VOLUME LEMMA HYPOTHESES (including delta_H=1): BOTH directions of automorphism transport are scoped universal theorem propositions, not literal phase predicates or an existential seed. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section8 |
@@ -4042,6 +4072,8 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | IQC-EXPLICIT-POWER-COUNTEREXAMPLE | claim | proved / partial | Over EVERY characteristic-zero K, EVERY nondegenerate ISOTROPIC q of dimension N>=3, with q=2XY+q0(Z), M=N-2>=1 and all diagonal coefficients of q0 nonzero: F0=p^M is a pure unsafe regular phase with one fixed marker H=X^M at EVERY positive order, so ker Lambda is not Mathieu. | [foundations/extended-geometry/ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md](foundations/extended-geometry/ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md): Theorem2 |
 | CIB-CONSTANT-INVARIANT-LOW-FIVE-SEVEN-SAFETY | claim | proved / partial | Each FIXED regular pure cubic with E not identically0, constant invariant and least degree5 or7 is safe. No generic varying-invariant or higher-height conclusion. | [foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md](foundations/extended-geometry/CONSTANT_CUBIC_INVARIANT_ELLIPTIC_MODULI_BRIDGE.md): Corollary and Section3 |
 | NC-SAFE-UNSAFE-DEGREE-INCLUSIONS | claim | proved / partial | Within this class, safe degrees2mod3>=2 and unsafe degrees0mod3>=6, including bounded-s and all growth branches. | [foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md](foundations/extended-geometry/NONCENTRAL_CONSTANT_AFFINE_CUBIC_SHAPE_CLASSIFICATION.md): Section10 H18-H19 |
+| EOP5-EXACT-PURE-LOCUS | claim | proved / partial | Over every char0 field, phase(1) is PURE iff P=0 or(q0=B=0), the union of its two original angular one-sided coefficient subspaces. This is a PURE classification only. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3;equation7 |
+| EOP5-PURE-FULL-AMBIENT-SAFETY | claim | proved / partial | Every PURE member of phase(1) is safe against every marker in full A_K; indeed Lambda(g*f^m)=0 for m>deg g. Uses PURE necessity and the one-sided marker proof, not a converse from safety/eventual purity. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3;equation8 |
 | WOLF-ALL-CHAR0-RATIONAL-PAIR | claim | proved / partial | For EVERY characteristic-zero field K, the SAME displayed Q-regular phase F on X_K times splitGm is pure and the SAME fixed UNIT t^(-(L-1)) has positive-rational nonzero marked value A_X18^(2Lm)(2Lm)!/(2Lm+L-1)! at EVERY order m>=1. A_X is positive rational by trace at m1 and basechange; no ordering of K is assumed. | [foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md](foundations/extended-geometry/WOLF_HIGHEST_ROOT_RADIAL_PRODUCT_COUNTEREXAMPLES.md): Sections1,5 |
 | QCD-GEOMETRIC-NULLCONE-AND-PURE-CHAIN | claim | proved / partial | On a nondegenerate quadratic complement over any characteristic-zero field, the geometric nullcone, pure phases with eventual marked vanishing and pure phases are equal when N<=2. For N>=3 the inclusions in that order are strict, with explicit geometrically nonpower phases in both differences. | [../results/published/mathieu-quadratic-complements/main.tex](../results/published/mathieu-quadratic-complements/main.tex): cor:nullcone |
 | QCD-HIGH-DIMENSION-IFF-STRONG-WITNESS | claim | proved / partial | For EVERY specified q, N>=3 IFF E(q), with both explicit construction and low-dimensional obstruction as separate premises. | [foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md](foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md): SharpQuadraticDimension witness equivalence |
@@ -4179,6 +4211,7 @@ Tracked obligations from the catalogue:
 - **GAP-SNF-DISTINCT-E9-FACE-HASSE-FREQUENCY — mathematical; open.** [Can the terminating elimination algorithms be executed to compute the exact finite geometric PURE parameter set in residual family II, and can its coefficient fibers or selected degree-nine Hasse frequencies then be settled? The algorithm does not give a finite set for unbounded eventual thresholds.](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md)
 - **GAP-IMAGE2-ODD-PRIME-PRIMITIVE — mathematical; open.** [Can the remaining genuine mixed even quintic phases with nonzero y^5 coefficient be excluded or realized, especially the general leading-face Prym sixfold of signature(1,1,2,2)? The present balanced-fourfold argument closes only D=0 and does not assume a generic endomorphism algebra for the remaining case.](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md)
 - **GAP-EVEN-BD-SIMPLE-E5-SELECTED-HASSE-FREQUENCY — mathematical; open.** [Can the selected one-dimensional anti-Prym Hasse coefficient for EVERY remaining smooth-cubic simple full-End E5 sixfold be nonzero at infinitely many good absolute-degree-one primes? Positive ordinary density would suffice; no such result is proved here.](foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md)
+- **GAP-IMAGE2-ODD-PRIME-PRIMITIVE — mathematical; open.** [Can a primitive degree-five phase outside the now-classified even-t/odd-angular eight-dimensional stripped subspace be pure and fail the ambient marker property? This subspace classification does not settle the global degree-five problem.](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md)
 
 ## Jacobian and Keller maps
 
@@ -5827,6 +5860,12 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** Any degree-unbounded counterexample is reduced to a single private linear row near critical curvature and a bounded moving cubic model. Its limiting temperature belongs to a finite candidate set from same-height distinct model zeros or zero order speed at a simple zero. At terminal six, private degree at least three or weighted curvature S+P at least 34/5 gives angular coprimality. The unrestricted all-terminal theorem remains open.
 
 **Authored scope assessment:** Any degree-unbounded counterexample is reduced to a single private linear row near critical curvature and a bounded moving cubic model. Its limiting temperature belongs to a finite candidate set from same-height distinct model zeros or zero order speed at a simple zero. At terminal six, private degree at least three or weighted curvature S+P at least 34/5 gives angular coprimality. The model is certified at temperature zero, and the fixed-terminal criterion includes variable-prime and small shared-curvature results in their stated scopes. The unrestricted all-terminal theorem remains open.
+
+**Authored scope assessment:** Terminal six is proved for all profiles with private variables, for fully shared total curvature at least six, and in the explicit near-flat and diffuse shared bands. The joint curvature measure retains the true factorial row densities across all degrees. An unbounded-order obstruction would require one of finitely many cubic temperatures outside [-2,2]. The unrestricted all-terminal theorem remains open.
+
+**Authored scope assessment:** A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
+
+**Authored scope assessment:** The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
 
 ### BINOMIAL-IRREDUCIBILITY-REDUCTIONS
 
@@ -8306,17 +8345,17 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For arbitrary ordinary profiles at terminal six, angular coprimality holds whenever the maximum private degree P is at least three, S+P is at least 34/5, or both private degrees are positive and at least one is two.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** DERIVE-FACTORIAL-MULTIVARIATE-TERMINAL-SIX-PRIVATE-ANGLES (stale); FACT-MULTIVARIATE-LINKED-COEFFICIENTS-AT-FIXED-ENDPOINT-DISTANCE (stale); FACT-MULTIVARIATE-TERMINAL-SIX-PRIVATE-ANGLE-CHECKS (stale).
+**Current blockers:** none in declared routes.
 
 ### FACTORIAL-MULTIVARIATE-FINITE-PRIVATE-CUBIC-EXCEPTIONAL-REDUCTION
 
 [Reduction of the general eventual problem to a finite set of cubic temperatures](factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md)
 
-**Exact scope:** Every common-root sequence of unbounded terminals has a subsequence in the bounded model window for one private linear variable. Nonzero degree difference must have size n^(1/3) and a limit with two distinct model zeros of one height. Equal degree requires a simple zero with vanishing physical order speed. The two candidate temperature sets are finite and unevaluated.
+**Exact scope:** Every putative sequence of common roots of unbounded orders enters the bounded one-private linear cubic window. Different limiting fields require a pair of model zeros at the same height. Equal degrees require a simple zero with zero physical order speed. The two finite candidate sets lie outside [-2,2] and remain unevaluated.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -8354,11 +8393,215 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Private partitions (1), (1,1) and (2) are covered for shared S0 at most 9/109, 1/2 and 13/20 respectively, with the stated additional endpoint-curvature criteria.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** DERIVE-FACTORIAL-MULTIVARIATE-TERMINAL-SIX-PRIVATE-ANGLES (stale); FACT-MULTIVARIATE-LINKED-COEFFICIENTS-AT-FIXED-ENDPOINT-DISTANCE (stale); FACT-MULTIVARIATE-TERMINAL-SIX-PRIVATE-ANGLE-CHECKS (stale).
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-SIX-TOTAL-CURVATURE-SIX
+
+[Angular exclusion at terminal six for total curvature at least six](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md)
+
+**Exact scope:** At terminal six, curvature S at least six suffices for angular separation for every ordinary two-monomial support. The comparison uses both endpoint constraints on the central coefficient.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-SIX-TWO-PRIVATE-LINEAR
+
+[Terminal six with one private linear variable in each monomial](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_TWO_PRIVATE_LINEAR.md)
+
+**Exact scope:** The consecutive factorial moments at orders five and six have disjoint root arguments when exactly one private variable of degree one occurs on each side, with arbitrary shared rows.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-SIX-ONE-PRIVATE-SIDE
+
+[Angular separation at terminal six for any profile with one private side](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_ONE_PRIVATE_SIDE.md)
+
+**Exact scope:** The consecutive factorial moments at orders five and six have disjoint root arguments when private variables occur on exactly one side, with arbitrary shared rows.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-SIX-DIFFUSE-BANDS
+
+[Explicit terminal-six angular separation in diffuse shared bands](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md)
+
+**Exact scope:** For fully shared ordinary rows, terminal six is closed on curvature bands [5/4,3/2], [3/2,2], [2,3] and [3,6] when the maximum relative gap is at most 1/500, 1/100, 1/50 and 1/25, respectively.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-SIX-NEAR-FLAT
+
+[Explicit fully shared near-flat separation at terminal six](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT.md)
+
+**Exact scope:** For fully shared ordinary rows, the consecutive moment polynomials of orders five and six have disjoint root arguments whenever the normalized order-five outer geometric mean is at least 24/25.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-HALF-LINE-CUBIC-BOUNDED-TEMPERATURES
+
+[Uniform separation of cubic model zeros on temperatures from minus one to one](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_BOUNDED_TEMPERATURES.md)
+
+**Exact scope:** Throughout [-1,1], all zeros are simple, their imaginary heights are distinct, and the imaginary order speed is strictly positive at upper zeros.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-HALF-LINE-CUBIC-EXTENDED-TEMPERATURES
+
+[Uniform separation of cubic model zeros on temperatures from minus two to two](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_EXTENDED_TEMPERATURES.md)
+
+**Exact scope:** Throughout [-2,2], all zeros are simple, their imaginary heights are distinct, and the imaginary order speed is strictly positive at upper zeros.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-HALF-LINE-CUBIC-HORIZONTAL-PAIR-SIGNS
+
+[Derivative signs at same-height half-line cubic zeros](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_HORIZONTAL_PAIR_SIGNS.md)
+
+**Exact scope:** At every real temperature the left member of a horizontal pair is simple with positive imaginary field derivative. At nonnegative temperature the right member has negative imaginary field derivative, so at most two zeros share a height and their branches meet transversely in height.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-JOINT-FACTORIAL-CURVATURE
+
+[Joint curvature measure encoding all ordinary binomial coefficient arrays](factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md)
+
+**Exact scope:** A finite positive curvature measure simultaneously recovers the normalized moment coefficients at all orders and the adjacent normalization-center ratio. Its full moment sequence recovers the exponent row multiset after deleting equal rows.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-PROPORTIONAL-ROW-CURVATURE-ORDER
+
+[Curvature ordering under proportional row inflation and identification](factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md)
+
+**Exact scope:** Increasing a row's integer multiplier or identifying multiple proportional rows increases their joint curvature density. For the changed block the ratio of curvature moments under any positive primitive shift strictly decreases.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-PRIVATE-CUBIC-LINKED-DOUBLE-ZERO
+
+[A branch-comparison proof excluding common double cubic limiting fields](factorial/image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_LINKED_DOUBLE_ZERO.md)
+
+**Exact scope:** The first two linked coefficient corrections separate the local quadratic branches at every real double limiting zero, including the special retained row (1,2). A common actual root cannot approach the same double zero in both fields.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-SIX-ALL-PRIVATE
+
+[Terminal-six SFC for every profile with private variables](factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md)
+
+**Exact scope:** Every ordinary two-monomial profile with at least one exponent row containing one zero has consecutive coprimality at orders five and six.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-ROW-MERGER-CURVATURE-SIGN
+
+[Exact sign and large-order threshold for factorial row-merger curvature](factorial/image-rigidity/MULTIVARIATE_ROW_MERGER_CURVATURE_SIGN.md)
+
+**Exact scope:** A variance identity gives the log-curvature change under any ordinary batch merger. Nonproportional shared mergers flatten all normalized interior coefficients above an explicit order and decrease the maximum leading stationary curvature for fully shared profiles.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-PRIVATE-CUBIC-LINKED-SIMPLE-LIMITS
+
+[Necessary profile-dependent constraints at simple cubic candidate temperatures](factorial/image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_LINKED_SIMPLE_LIMITS.md)
+
+**Exact scope:** At distinct simple same-height limiting fields the linked coefficients constrain the integer drift, and when the crossing is transverse they determine the leading temperature offset. At a coincident simple speed zero the speed derivative is nonzero and the first-order row correction must satisfy the transverse condition in equation (8).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-PHYSICAL-ROW-MERGER-INTERIOR-COLLISION
+
+[Interior physical Gaussian collision for an ordinary three-column support](factorial/image-rigidity/SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md)
+
+**Exact scope:** There is a collision-free ordinary integer row merger with regular endpoint forms in orders two, three and four and a common projective zero at interior squared correlation between 21/25 and 17/20. Discrete endpoint preservation and the general two-column physical interval remain open.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-JOINT-CURVATURE-PROFILE-CLOSURE
+
+[Uniform closure of the joint factorial curvature and relative centers](factorial/image-rigidity/MULTIVARIATE_JOINT_CURVATURE_PROFILE_CLOSURE.md)
+
+**Exact scope:** For profiles of bounded total curvature, the diffuse part of the joint curvature measure is a nonnegative multiple of r dr on the diagonal. After stabilizing the private rows, the weighted curvature norm and renormalized center derivatives converge uniformly over all orders. The remaining signed center mass is independently attainable in its stated interval.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-PHYSICAL-BINARY-RESIDUAL-PRIVATE
+
+[Physical binary merger regularity with reserved private degrees](factorial/image-rigidity/SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md)
+
+**Exact scope:** All positive starting orders and all physical correlations have consecutive coprimality when the untouched independent private degrees are at least two on both sides. The proof permits any positive jointly distributed base with finite mixed moments.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
 
 ### Supporting statements and targets
 
@@ -8392,6 +8635,8 @@ Tracked obligations from the catalogue:
 | FACT-BINOMIAL-SHAPE-RESULTANT-UNIVERSAL-BETA-HURWITZ | claim | falsified / partial | Refuted assertion: for every integers a>=0,d>=1,n>=1 the positive-leading primitive natural cofactor R_(n,a,d)/D_(n,a,d) has all complex beta-zeros in the closed left half-plane. The complete a0,d5,n7 certificate has strictly positive coefficients but negative leading Hurwitz minor84, hence a complex zero of positive real part. Its positive coefficients exclude positive real zeros; this is neither a positive-shape collision nor an SFC counterexample. This beta-variable counterexample is separate from the earlier lower-exponent-variable Hurwitz obstruction. | [factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex](factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex): thm:beta-hurwitz and its complete finite-certificate proof; [factorial/image-rigidity/binomial_shape_resultant_beta_hurwitz_certificate.json](factorial/image-rigidity/binomial_shape_resultant_beta_hurwitz_certificate.json): All113 coefficients and negative Hurwitz minor84; [factorial/image-rigidity/binomial_shape_resultant.py](factorial/image-rigidity/binomial_shape_resultant.py): Complete253-node identity check and exact Hurwitz/Routh calculations; [factorial/image-rigidity/binomial_shape_resultant_verification.json](factorial/image-rigidity/binomial_shape_resultant_verification.json): Current fixed-certificate replay; [factorial/image-rigidity/sources/holtz-khrushchev-kushel-2015-v1.pdf](factorial/image-rigidity/sources/holtz-khrushchev-kushel-2015-v1.pdf): Theorem1, p1; only the classical criterion is imported |
 | FACT-EIT-KZ-POSITIVE-AMPLITUDE-NONVANISHING | claim | falsified / partial | Claim refuted: any strictly positive rational polynomial p on[0,1] has nonzero integral against every algebraic polynomial exponential phase. With g=t^2(1-t)^2 and p=g''+25g=25((t-1/2)^2-1/100)^2+14/25>0, integral p e^(5it)=0 by an exact boundary derivative. No counterexample to constant-amplitude simplex or structured Gamma/binomial families. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Proposition: even a strictly positive amplitude can cancel; [factorial/image-rigidity/sources/long-eit-simplex-candidate-92db79e.tex](factorial/image-rigidity/sources/long-eit-simplex-candidate-92db79e.tex): prop:counterexample |
 | FACT-EIT-KZ-UNIVERSAL-AMPLITUDE-NONVANISHING | claim | falsified / partial | Claim refuted: every nonzero polynomial amplitude and polynomial phase on a compact affine-line chain with distinct algebraic endpoints has nonzero exponential integral. Counterexample q=x^2,r=2x,chain[-1,1], integral0, by twisted Stokes. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Proposition: polynomial amplitudes can give zero compact periods |
+| FACT-FACTORIAL-PHYSICAL-BINARY-PRIVATE-COEFFICIENT-SUPPRESSION | claim | proved / partial | At least two independent ordinary private units on each side bound each interior normalized coefficient by the reciprocal binomial coefficient, by Hölder and factorial convexity. | [factorial/image-rigidity/SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md](factorial/image-rigidity/SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md): A distribution-independent coefficient bound |
+| FACT-FACTORIAL-PHYSICAL-ROW-MERGER-RATIONAL-SIGN-CHECKS | claim | proved / partial | Rational Bernstein coefficients prove the two cubic boundary signs and monotonicity. Bisection gives opposite quartic signs, and rational endpoint gcds and cubic degrees certify projective regularity at zero and one. | [factorial/image-rigidity/SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md](factorial/image-rigidity/SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md): Two scalar polynomials and Projective regularity at the two endpoints; [factorial/image-rigidity/verify_physical_row_merge_interior_collision.py](factorial/image-rigidity/verify_physical_row_merge_interior_collision.py): Exact Bernstein signs, edge bisections and endpoint polynomial gcds |
 | FACT-GAP-SIX-NATURAL-NORMALIZED-RESIDUE-FULL-RANK | claim | falsified / partial | Original assertion: for every N>=1 and every nonzero residue parameter v in the algebraic closure of F7, the ACTUAL physical gamma=N six-by-five matrix with columns Q=1,X,...,X^4, naturally normalized by the specified e_a(N), has rank five. This assertion is FALSE: at N=8,v=6, e=(1,0,0,0,0,0), every maximal minor vanishes and an upper left four-by-four minor is1, so rank is exactly four. This is a residue-matrix counterexample, not an SFC counterexample or a claim about characteristic-zero rank. H_8(1) is 21 modulo 49 has valuation1 and its whole residue cluster is separable. | [factorial/image-rigidity/GAP_SIX_DIGIT_NORMALIZATION_AND_FINITE_GAUGE.tex](factorial/image-rigidity/GAP_SIX_DIGIT_NORMALIZATION_AND_FINITE_GAUGE.tex): prop:rank-obstruction; exact N8,v6 matrix, rank4 and H8 point21mod49 |
 | FACT-GENERAL-QUADRATIC-QUADRANT-PICK-CONDITION | claim | falsified / partial | For every h>=6,n>=1,beta>0, with M=(h+2)n+beta, every nonreal u with Reu>=0 and U_h(u)!=0 satisfies Im(W_h/U_h)(u)/Imu>=0. | [factorial/image-rigidity/GENERAL_QUADRATIC_SHIFT_STRUCTURE_AND_OBSTRUCTION.tex](factorial/image-rigidity/GENERAL_QUADRATIC_SHIFT_STRUCTURE_AND_OBSTRUCTION.tex): Universal physical-family quadrant counterexample from the scaled epsilon recurrence |
 | FACT-GENERIC-GAMMA-CONVOLUTION-SIMPLICITY | claim | falsified / partial | The unrestricted assertion that all Appell moment polynomials of every finite sum of independent positive-shape positive-scale Gamma variables are squarefree and consecutive-coprime is false. The displayed orders4/5 example disproves it. This false assertion is broader than Gamma-power/factorial/binomial simplicity. | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): thm:gamma-convolution-obstruction and following scope guard |
@@ -8427,11 +8672,16 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-FIXED-TERMINAL-SMALL-CURVATURE-ANGLES | claim | proved / partial | For each fixed terminal N there is a positive curvature threshold uniform in all ordinary exponent profiles and dimensions such that the two moment polynomials have disjoint root arguments. For any fixed lower order m>=2 this also holds for arbitrary positive Gamma shapes when the lower endpoint-normalized outer geometric mean is sufficiently close to one. The scaled imaginary Hermites strictly interlace for the entire allowed variance ratio. | [factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md): Angular separation at small curvature; [factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md](factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md): Consecutive interlacing for a single mirrored unit gap |
 | FACT-MULTIVARIATE-FLAT-LIMIT-ONE-ESCAPING-STATIONARY-SHEET | claim | proved / partial | At vanishing midpoint curvature, one centered upper inverse stays finite and the other is of scale inverse curvature. A further exact retained and diffuse closure on scaled profile data gives the distinguished univalent transform for the escaping sheet. | [factorial/image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md](factorial/image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md): The escaping sheet as curvature tends to zero |
 | FACT-MULTIVARIATE-GENERIC-EULER-ANGLE-TRANSFER-OBSTRUCTION | claim | proved / partial | Strict input angular interlacing and strictly log-convex binomial-normalized coefficients can coexist with a shared angle after the same forward Euler multiplier at degrees four and five, or after an inverse Euler multiplier at the lower degree for every even lower degree at least four. The obstruction uses generic positive reciprocal inputs. | [factorial/image-rigidity/MULTIVARIATE_EULER_ANGLE_TRANSFER_OBSTRUCTION.md](factorial/image-rigidity/MULTIVARIATE_EULER_ANGLE_TRANSFER_OBSTRUCTION.md): A common forward multiplier and Inverse multipliers at arbitrarily large orders |
+| FACT-MULTIVARIATE-HALF-LINE-CUBIC-BOUNDED-TEMPERATURES-CERTIFICATE | claim | proved / partial | Arb enclosures certify winding three, 14520 moving-top cells, and 768 simple root disks with disjoint heights and speed margins on the central interval. | [factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_BOUNDED_TEMPERATURES.md](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_BOUNDED_TEMPERATURES.md): Uniform bounded-field certificate; [factorial/image-rigidity/verify_half_line_cubic_bounded_temperatures.py](factorial/image-rigidity/verify_half_line_cubic_bounded_temperatures.py): Uniform bounded-field certificate |
+| FACT-MULTIVARIATE-HALF-LINE-CUBIC-EXTENDED-TEMPERATURES-CERTIFICATE | claim | proved / partial | Arb enclosures certify winding seven, 95340 moving-top cells, and 14336 simple root disks with disjoint heights and speed margins on the extended interval. | [factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_EXTENDED_TEMPERATURES.md](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_EXTENDED_TEMPERATURES.md): Enclosed low-field calculation; [factorial/image-rigidity/verify_half_line_cubic_extended_temperatures.py](factorial/image-rigidity/verify_half_line_cubic_extended_temperatures.py): Enclosed low-field calculation |
+| FACT-MULTIVARIATE-HORIZONTAL-ZERO-RESOLVENT-HOPF | claim | proved / partial | For a horizontal pair of cubic zeros the surviving finite interval gives a real potential and a positive heat resolvent. The endpoint derivatives have the strict signs specified in the note. | [factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_HORIZONTAL_PAIR_SIGNS.md](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_HORIZONTAL_PAIR_SIGNS.md): Resolvent representation on the interval between the zeros |
 | FACT-MULTIVARIATE-INDEPENDENT-DIGIT-SHIFT-TRANSFER | claim | proved / partial | The exact rowwise base-p transformations with disjoint digit positions preserve both coefficient valuations and leading units after a common variable substitution, hence preserve any full-degree modular coprimality proof. | [factorial/image-rigidity/MULTIVARIATE_FACTORIAL_DIGIT_ORBITS.md](factorial/image-rigidity/MULTIVARIATE_FACTORIAL_DIGIT_ORBITS.md): Independent shifts and dilations of the exponent rows |
+| FACT-MULTIVARIATE-INVERSE-TRIGAMMA-SUBADDITIVITY | claim | proved / partial | For x,y nonnegative, h(x)=1/psi'(1+x) is larger than x, has derivative below one, and h(x+y)<h(x)+h(y). The proof uses the strict log-concavity of t/(1-exp(-t)). | [factorial/image-rigidity/MULTIVARIATE_ROW_MERGER_CURVATURE_SIGN.md](factorial/image-rigidity/MULTIVARIATE_ROW_MERGER_CURVATURE_SIGN.md): The pointwise sign |
 | FACT-MULTIVARIATE-LARGE-CURVATURE-HALF-COEFFICIENT-AND-SLOPE | claim | proved / partial | For ordinary profiles with N>=256 and S>=2 log N+5, both normalized halves have coefficient caps 8 to minus the endpoint distance. The logged derivative bounds on radius exp(1/m) give angular phase error at most 7 theta/15 at each order. | [factorial/image-rigidity/MULTIVARIATE_HIGH_CURVATURE_ANGULAR_SLOPE.md](factorial/image-rigidity/MULTIVARIATE_HIGH_CURVATURE_ANGULAR_SLOPE.md): An endpoint coefficient estimate and Angular slope and the common-root contradiction |
-| FACT-MULTIVARIATE-LINKED-COEFFICIENTS-AT-FIXED-ENDPOINT-DISTANCE | claim | stale / partial | For every common Gamma shape at least one half, endpoint-normalized factorial multipliers at fixed distance k are decreasing in order n, and interpolation after dividing negative logs by n-k gives the lower power bound. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md): Bounds at a fixed distance from an endpoint |
+| FACT-MULTIVARIATE-LINKED-COEFFICIENTS-AT-FIXED-ENDPOINT-DISTANCE | claim | proved / partial | For every common Gamma shape at least one half, endpoint-normalized factorial multipliers at fixed distance k are decreasing in order n, and interpolation after dividing negative logs by n-k gives the lower power bound. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md): Bounds at a fixed distance from an endpoint |
 | FACT-MULTIVARIATE-LINKED-GAMMA-ANGLE-COMPACTIFICATION | claim | proved / partial | At every fixed N=n+1>=3 and finite positive outer-loss band, the enlarged continuous Gauss-factor model has an exact coefficient compactification retaining the common factors and two linked diffuse parameters. The stated finite real-algebraic cutoff tests eventually exclude feasibility exactly when that larger compact family has no shared root direction. | [factorial/image-rigidity/MULTIVARIATE_LINKED_GAMMA_ANGLE_COMPACTIFICATION.md](factorial/image-rigidity/MULTIVARIATE_LINKED_GAMMA_ANGLE_COMPACTIFICATION.md): The compactified coefficient family and A finite algebraic test at each cutoff |
 | FACT-MULTIVARIATE-LINKED-GAMMA-LARGE-OUTER-LOSS | claim | proved / partial | For the enlarged linked Gamma model and n>=2, the bound u^(2/(n+1))<=1/(8n(n+1)) suffices for disjoint root arguments at the consecutive orders. | [factorial/image-rigidity/MULTIVARIATE_LINKED_GAMMA_ANGLE_COMPACTIFICATION.md](factorial/image-rigidity/MULTIVARIATE_LINKED_GAMMA_ANGLE_COMPACTIFICATION.md): Explicit large outer loss in every degree |
+| FACT-MULTIVARIATE-LOG-FACTORIAL-INTEGRAL | claim | proved / partial | The logarithm of the ordinary factorial is the finite sum of the logarithm Laplace integrals in (5). | [factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md): A common measure for all orders, equation (5) |
 | FACT-MULTIVARIATE-MARKED-ROW-EISENSTEIN-VALUATIONS | claim | proved / partial | The prime interval ensures a unit at the constant term and valuation one for all other factorial terms at the terminal, after an affine rescaling if needed. | [factorial/image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md](factorial/image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md): Marked-row inequality and its Eisenstein proof |
 | FACT-MULTIVARIATE-MIRRORED-TERMINAL-SIX-ANGLE-CERTIFICATE | claim | proved / partial | The mirrored ratio bounds allow an angle quadratic and angle cubic whose values strictly alternate at the two roots of the quadratic. The outward-rounded Arb replay covers all parameter ranges in 7,849 rectangles. | [factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md](factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md): The interval certificate for the signs; [factorial/image-rigidity/verify_multivariate_mirrored_terminal_six.py](factorial/image-rigidity/verify_multivariate_mirrored_terminal_six.py): Three covering interval branches |
 | FACT-MULTIVARIATE-MIRRORED-UNIT-GAP-AMPLITUDE-SEPARATION | claim | proved / partial | For the shared mirrored unit-gap family in the exact phase-match example, the squared Gaussian amplitudes of two distinct stationary fiber points cannot have positive ratio. In particular even arbitrary nonzero integer contour weights cannot satisfy the necessary equal-degree amplitude condition. | [factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md](factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md): The squared Gaussian amplitudes are separated |
@@ -8446,6 +8696,7 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-PRIVATE-LINEAR-BARRIER-ACTIVATION | claim | proved / partial | For fixed profiles with one private linear row and sigma_a<1, the actual right saddle is present or cancelled by the left period according to the sign of the imaginary stationary difference. Truncated Barnes and saddle-barrier estimates justify the actual identity and the subdominant transition. | [factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_PRIVATE_ENDPOINT_ACTIVATION.md](factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_PRIVATE_ENDPOINT_ACTIVATION.md): The endpoint arm and the saddle barrier, and Exact contour classes and the local endpoint integral |
 | FACT-MULTIVARIATE-PRIVATE-STATIONARY-STRIP-DEGREES | claim | proved / partial | For ordinary nonnegative exponent columns, the winding formula gives the exact sheet count on every open strip of noninteger height. The nonflat private stationary map is injective on the upper half-plane. The conditional coordinate is univalent there and has the stated slit domain. | [factorial/image-rigidity/MULTIVARIATE_PRIVATE_SUPPORT_SADDLE_GEOMETRY.md](factorial/image-rigidity/MULTIVARIATE_PRIVATE_SUPPORT_SADDLE_GEOMETRY.md): The degree on every open horizontal strip and The global image of the conditional coordinate |
 | FACT-MULTIVARIATE-PRIVATE-UNIT-LEFT-HALF-PLANE | claim | proved / partial | At every terminal for ordinary supports with each private exponent sum equal to one, any common root of the consecutive moment polynomials has strictly positive real part. The exclusion is uniform over all shared rows. | [factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_EVENTUAL_BORDER.md](factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_EVENTUAL_BORDER.md): The left half-plane with exactly two private linear variables |
+| FACT-MULTIVARIATE-RELAXED-JOINT-CURVATURE-COLLISION | claim | proved / partial | Symmetric positive atoms on the primitive integer curves for (1,2) and (2,1) satisfy all joint moment inequalities and have zero relative center, but the degree-two polynomial divides the degree-three polynomial. The densities of the ordinary factorial rows are absent. | [factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md): A collision with the joint measure and the correct curves |
 | FACT-MULTIVARIATE-SAME-ORIENTATION-PRIME-SLOPES | claim | proved / partial | The ordinary factorial polynomial of degree p has either a single slope 1/p or the slopes 1/(p-1) and H-1 of widths p-1 and one as stated. The post-prime degree lacks slope 1/(p-1) when the latter two edges occur. | [factorial/image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_TERMINALS.md](factorial/image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_TERMINALS.md): Rows with the same unit-gap orientation |
 | FACT-MULTIVARIATE-SHARED-CURVATURE-ANGLE-SEPARATION | claim | proved / partial | For ordinary binomial supports with at least one private variable on each side, if the sum (b_i-a_i)^2/max(a_i,b_i) over rows with a_i b_i>0 is at least 4 log 8, all terminals are coprime over every characteristic-zero field, even with both private exponent sums one. | [factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md): An all-order bound from private variables and shared curvature |
 | FACT-MULTIVARIATE-SHARED-REAL-CUSP-ESCAPING-PACKETS | claim | proved / partial | For fixed fully shared ordinary profiles at the real cusp, exact conditional contours have one dominant saddle away from the imaginary-field transition and two actual packets near it. Comparing consecutive integrands on the same contours excludes common roots at every escaping quartic field for both degree cases. | [factorial/image-rigidity/MULTIVARIATE_SHARED_REAL_CUSP_ESCAPING_FIELDS.md](factorial/image-rigidity/MULTIVARIATE_SHARED_REAL_CUSP_ESCAPING_FIELDS.md): A scaled phase and its exact contour, One-saddle and two-saddle contours, and Consecutive packet comparison |
@@ -8456,10 +8707,14 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-SUBCRITICAL-UPPER-SADDLE-PHASE-MATCH | claim | proved / partial | For mirrored unit-gap rows (m,m+1) and (m+1,m), m>=3, distinct regular upper saddles can have equal stationary exponentials and equal consecutive multipliers. The rational certificate at m=9 places both in the conditional strip. Actual consecutive moment interlacing still holds in the same profiles. | [factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md](factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md): The phase polynomial and A match inside the conditional integration strip |
 | FACT-MULTIVARIATE-TERMINAL-FIVE-CONTINUOUS-ANGLE-CERTIFICATE | claim | proved / partial | The outward Arb replay verifies three rational rays or scaled rays throughout the complete bounded coefficient ranges in the proof. It checks the symmetric anchors on 79 contiguous middle slabs and the near-flat interval, and excludes roots on every tested ray. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_FIVE_ANGULAR_SEPARATION.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_FIVE_ANGULAR_SEPARATION.md): Exact ray checks on compact intervals and The near-flat interval; [factorial/image-rigidity/verify_multivariate_terminal_five.py](factorial/image-rigidity/verify_multivariate_terminal_five.py): Frozen rational slab and ray data, outward interval replay |
 | FACT-MULTIVARIATE-TERMINAL-SIX-COEFFICIENT-LINKS | claim | proved / partial | At terminal six, actual endpoint-normalized order-five and order-six Gamma arrays satisfy the stated within-order finite-difference bounds and shared cross-order inequalities on shape defects and concentration deficits. The concentration-deficit comparison for adjacent geometric ratios is valid in every order where its parameters lie in (0,1). | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md): Within-order bounds and Cross-order transfers |
+| FACT-MULTIVARIATE-TERMINAL-SIX-DIFFUSE-BANDS-CERTIFICATE | claim | proved / partial | The replay tests linked interval coefficient powers and Bernstein signs on 3358, 6798, 12970, 11934, 10554 and 8888 radial intervals in the six bands. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md): Coefficient boxes, linked ray positions and exact Bernstein checks; [factorial/image-rigidity/verify_multivariate_terminal_six_diffuse_bands.py](factorial/image-rigidity/verify_multivariate_terminal_six_diffuse_bands.py): Coefficient boxes, linked ray positions and exact Bernstein checks |
 | FACT-MULTIVARIATE-TERMINAL-SIX-EXACT-PADIC-LIFT | claim | proved / partial | Exact modular computations use 16 initial prime-five cases, 36 lifted cases and 100 prime-eleven cases. Their Python checker was replayed in normal and optimized mode. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PADIC_UNIT_GAPS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PADIC_UNIT_GAPS.md): The sections from the 5-adic Newton polygons through the residue test at eleven; [factorial/image-rigidity/verify_multivariate_terminal_six_padic_unit_gaps.py](factorial/image-rigidity/verify_multivariate_terminal_six_padic_unit_gaps.py): Exact replay of the 16, 36 and 100 residue cases |
-| FACT-MULTIVARIATE-TERMINAL-SIX-PRIVATE-ANGLE-CHECKS | claim | stale / partial | Rational projection inequalities and exact private multiplier powers give angular and radial bounds for each listed count. The checker replays these bounds without sampling exponent profiles. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md): Exact ray inequalities, Three unit degrees or a split of two and one, and Private variables on both sides with one total degree two; [factorial/image-rigidity/verify_multivariate_terminal_six_private_angles.py](factorial/image-rigidity/verify_multivariate_terminal_six_private_angles.py): Rational radius intervals, private multipliers, signs and root-count criteria |
+| FACT-MULTIVARIATE-TERMINAL-SIX-NEAR-FLAT-CERTIFICATE | claim | proved / partial | Rational interval tests exclude the prescribed four moving rays in both orders, bound all roots in the scaled Cayley disk, and certify the flat anchor. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT.md): Exact ray exclusions and the flat anchor; [factorial/image-rigidity/verify_multivariate_terminal_six_near_flat.py](factorial/image-rigidity/verify_multivariate_terminal_six_near_flat.py): Exact ray exclusions and the flat anchor |
+| FACT-MULTIVARIATE-TERMINAL-SIX-ONE-PRIVATE-SIDE-CERTIFICATE | claim | proved / partial | Exact rational comparisons verify 69748, 1324 and 820 radial boxes for the residual private partitions (1), (1,1), (2), including their root counts. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_ONE_PRIVATE_SIDE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_ONE_PRIVATE_SIDE.md): Exact verification over the remaining linked outer means; [factorial/image-rigidity/verify_multivariate_terminal_six_one_private_side.py](factorial/image-rigidity/verify_multivariate_terminal_six_one_private_side.py): Exact verification over the remaining linked outer means |
+| FACT-MULTIVARIATE-TERMINAL-SIX-PRIVATE-ANGLE-CHECKS | claim | proved / partial | Rational projection inequalities and exact private multiplier powers give the private-degree bounds. The replay also checks 123 intervals for the total-curvature-six comparison. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md): Exact ray inequalities, Three unit degrees or a split of two and one, and Private variables on both sides with one total degree two; [factorial/image-rigidity/verify_multivariate_terminal_six_private_angles.py](factorial/image-rigidity/verify_multivariate_terminal_six_private_angles.py): Rational radius intervals, private multipliers, signs and root-count criteria |
 | FACT-MULTIVARIATE-TERMINAL-SIX-SEPARATE-ENVELOPE-COLLISION | claim | proved / partial | There are exact reciprocal order-five and order-six arrays in the relaxed envelope with the stated separate-order geometric, skew and fifth-difference caps that share a complex unit-circle root. The example violates the linked cross-order transfer and makes no claim of an actual Gamma support. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md): An exact collision in the separate-order envelope |
 | FACT-MULTIVARIATE-TERMINAL-SIX-SMALL-SHARED-ANGLE-CHECKS | claim | proved / partial | Rational coefficient caps and independent private-anchor Gaussian rational Rouché counts certify the listed angle ranges for three private partitions. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_SMALL_SHARED.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_SMALL_SHARED.md): Exact angle certificates; [factorial/image-rigidity/verify_multivariate_terminal_six_small_shared.py](factorial/image-rigidity/verify_multivariate_terminal_six_small_shared.py): Exact rational interval and Rouché anchor checks for three private partitions |
+| FACT-MULTIVARIATE-TERMINAL-SIX-TWO-PRIVATE-LINEAR-CERTIFICATE | claim | proved / partial | The checker verifies the small exponent row comparisons, the moving ray and fixed ray inequalities in both orders, and symmetric anchors across linked curvature intervals. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_TWO_PRIVATE_LINEAR.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_TWO_PRIVATE_LINEAR.md): A linked curvature band and its symmetric anchor, and exact rational verification; [factorial/image-rigidity/verify_multivariate_terminal_six_two_private_linear.py](factorial/image-rigidity/verify_multivariate_terminal_six_two_private_linear.py): A linked curvature band and its symmetric anchor, and exact rational verification |
 | FACT-MULTIVARIATE-TWO-MONOMIAL-ENDPOINT-RATIO | claim | proved / partial | For any two distinct nonnegative exponent vectors in any finite dimension and any positive Gamma shapes, Q_m does not divide Q_(m+1) for m>=1. In particular every ordinary two-monomial polynomial over every characteristic-zero field satisfies Strong Factorial at terminals 2, 3, and 4. Varying a single shift transcendentally over the field of the other positive shifts gives coprimality at all orders. In the ordinary case all terminals are also covered when each monomial has total exponent at least two in variables absent from the other. In particular every disjoint pair of nonconstant monomials is covered. The terminals 2, 3, and 4 likewise hold over C for every tuple of positive real Gamma shapes. | [factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md](factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md): Endpoint ratio, terminals 2 and 3, private exponent sums, and one Gamma shift |
 | FACT-MULTIVARIATE-UNIFORM-BOTH-PRIVATE-LINEAR-ESTIMATES | claim | proved / partial | For ordinary profiles with exactly two opposing private linear rows, uniform geometric endpoint halves and the bounded-scale Fourier integral exclude common roots along every curvature regime at unbounded orders. | [factorial/image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIFORM_EVENTUAL.md](factorial/image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIFORM_EVENTUAL.md): Curvature bounded away from zero, Small curvature with nW unbounded, and Small curvature with bounded nW |
 | FACT-MULTIVARIATE-UNIFORM-STATIONARY-BOUNDARY-ESCAPE-EXCLUSION | claim | proved / partial | Centered stationary preimages of any compact target subset of the negative strip lie in a fixed compact part of the upper half-plane on a bounded positive curvature band, including varying support size and private rows. | [factorial/image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md](factorial/image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md): Escape to infinity and Approach to the finite real boundary |
@@ -11601,9 +11856,9 @@ Tracked obligations from the catalogue:
 
 ## Arithmetic fibres, discriminants and restricted-prime sums
 
-**Topic scope:** Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)).
+**Topic scope:** Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail.
 
-**Computed obligation progress:** 106 open; 18 proved / discharged.
+**Computed obligation progress:** 106 open; 17 proved / discharged; 1 stale.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -11860,6 +12115,8 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** The new bound is a seventh-power target-family theorem. The proved arbitrary-target3/10 bound is unchanged; the all-target5/17/subpolynomial/cycle obligations remain OPEN.
 
 **Authored scope assessment:** The new all-q transfer does not assert a suitably sized cube divisor for each target; the proved arbitrary-target3/10 bound is unchanged. Existing seventh-power2/7 gains a second proof route.
+
+**Authored scope assessment:** Only counted refined-weight sectors are bounded; the full critical rectangular residual and the arbitrary-target stronger exponent remain open.
 
 ### ARITHMETIC-COMMON-ARITHMETIC-FIBERS
 
@@ -15459,11 +15716,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed p,q,r>=2 and epsilon>0, the total number of ordered positive (p,q,r)-full a+b=c<=X, with or without the primitive restriction, is O_(p,q,r,epsilon)(X^(Phi(p)+Phi(q)+Phi(r)+epsilon)), with Phi(s)=max_{1<=k<=s}(4k-1)/(3k(2s+k-1)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-ADAPTIVE-FOURIER-BOUND (stale).
 
 **Verification limits:** Apply the grouped-power second and fourth moments to the maximal dyadic scale on each side and solve the weighted mass optimization exactly.
 
@@ -15473,11 +15730,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed u>=v>=0 and large r, put p=r+u,q=r+v. Ordered positive (p,q,r)-full triples a+b=c<=X, with or without primitivity, are O_(u,v,r,epsilon)(X^(1/p+1/q-(1/sqrt(2)-o_(u,v)(1))*sqrt(log r)/r^(3/2)+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-GROUPED-FOURIER-SAVING (stale).
 
 **Verification limits:** Bound composite degree mass by small prime divisors and use Brun–Titchmarsh for the first moment of the remaining prime indices.
 
@@ -15529,11 +15786,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The 84,177-leaf rational proof gives D<=7/12 already with only the coprime-pair constraints at radical budget one. Zeng's symmetric witness has D=7/12 in the full program including all exponent pairs, so both program optima are 7/12.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale).
 
 **Verification limits:** Exact rational local replay of the repaired finite tree and of Zeng's separate rational lower witness.
 
@@ -15543,11 +15800,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every epsilon>0 and all 0<lambda<=1, N_lambda(X)=O_epsilon(X^(7/12+epsilon)), where N_lambda counts ordered positive primitive triples with c<=X and rad(abc)<c^lambda.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SEVEN-TWELFTHS-COUNT (stale).
 
 **Verification limits:** The exact FullOC certificate and the compact limiting-box argument give the height count. External review of the written arithmetic application is pending.
 
@@ -15571,11 +15828,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At radical budget one, every feasible profile of the six-index FullOC program with the certified grouped-root inequalities has D<=1747/3000. The replacement certificate has 106,845 leaves.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale).
 
 **Verification limits:** The exact verifier replays the repaired FullOC tree, reconstructs all selected grouped-root rows, checks coverage, and validates each replacement leaf.
 
@@ -15585,11 +15842,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every epsilon>0, uniformly for 0<lambda<=1, the number N_lambda(X) of ordered positive primitive triples a+b=c<=X with rad(abc)<c^lambda is O_epsilon(X^(1747/3000+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-COUNT-GROUPED-FULLOC (stale); ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale).
 
 **Verification limits:** The grouped collision bounds hold in the same anatomic boxes as FullOC. Their finite exact upper certificate transfers by the compact limiting-box argument.
 
@@ -15655,11 +15912,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed 0<lambda<=1, every t>=3 and every epsilon>0, the abc exceptional count is O_(lambda,t,epsilon)(X^(B_lambda(t)+epsilon)), where B_lambda(t)=(3+(4S+4A-1)lambda)/(6S+7A), S=sum_{p<=t prime}(t-p), A=(t-1)(3-lambda)/2. At t=6/lambda this is strictly less than 2lambda/3.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ALL-BUDGET-ADAPTIVE-GEOMETRIC-BOUND (stale).
 
 **Verification limits:** Adaptive use of the BBLT geometry bound, fractional degree-ordered release, and a prime-divisor covering argument.
 
@@ -15669,11 +15926,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For any fixed 0<c<1/(18*sqrt(14)), all sufficiently small fixed lambda>0 and every epsilon>0, the abc exceptional count has exponent at most 2lambda/3-c*lambda^(3/2)*sqrt(log(1/lambda))+epsilon.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-NEAR-EQUALITY-SAVING (stale).
 
 **Verification limits:** A box near equality must concentrate its degree mass in a short interval. Prime divisor bounds and Brun-Titchmarsh limit its capacity.
 
@@ -15683,11 +15940,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The ordered-tall program has exact upper bounds 2/5 at budget 7/10, 9/20 at 4/5, 1/2 at 9/10 and 107/200 at unit budget. Exact reweighting gives 1773/4012 at 3/4.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL (stale); EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE (stale); DERIVE-ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT (stale); EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS (stale); EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION (stale).
 
 **Verification limits:** Signed affine branches are reconstructed exactly. The 9/10 and unit-budget trees have 39,968 and 1,822,745 leaves. The integer-scaled dual checker is also shared by the older delta verifier.
 
@@ -15697,11 +15954,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every epsilon>0 the count of ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda has exponents at most 1959/5015, 2/5, 1773/4012, 9/20, 1/2 and 7133338393/13333343040 plus epsilon at budgets 3/5, 7/10, 3/4, 4/5, 9/10 and 1 respectively. Each exponent applies at smaller budgets. Additional retargeted budgets are 91/100, 23/25, 37/40, 93/100, 187/200, 47/50, 189/200, 19/20, 191/200, 24/25, 193/200, 97/100, 39/40, 391/400, 49/50, 1961/2000, 981/1000, 393/400, 983/1000, 123/125, 197/200, 493/500, 987/1000, 247/250, 989/1000, 99/100.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL (stale); EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE (stale); DERIVE-ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT (stale); EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS (stale); EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION (stale).
 
 **Verification limits:** The anatomic reduction and compactness of the projected boxes transfer the exact fixed-budget, reweighted and sparse certificates.
 
@@ -15711,11 +15968,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At radical budget one the grouped FullOC program with the two tall terms retained in every possible position has D<=29/50. The composite tree has 368,294 effective leaves.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale).
 
 **Verification limits:** The standard-library checker exactly replays the repaired and grouped layers, then checks every height case and replacement leaf.
 
@@ -15725,11 +15982,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every epsilon>0, uniformly for 0<lambda<=1, the number N_lambda(X) of ordered positive primitive triples a+b=c<=X with rad(abc)<c^lambda is O_epsilon(X^(29/50+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-EXCEPTIONAL-SET-29-50 (stale); ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY (stale).
 
 **Verification limits:** The decomposition yields two height-one letters in the limit. The three cases in the unit-budget certificate cover their positions under the original ordering.
 
@@ -15781,11 +16038,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every fixed 0<lambda<=10^(-6), primitive triples a+b=c<=X with rad(abc)<c^lambda satisfy N_lambda(X) = O_(lambda,epsilon)(X^((2/3-10^(-10))*lambda+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-PROPORTIONAL-SAVING-FROM-POWERFUL-MODULUS (stale).
 
 **Verification limits:** A quantitative finite-box concentration bound controls the discarded modulus height and the two rational heights. Exact arithmetic checks cover the explicit constants, including exponent 501 lambda / 1000 in the concentrated boxes.
 
@@ -15795,11 +16052,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For sufficiently small fixed lambda>0, there exists an absolute C such that for every epsilon>0 the ordered positive primitive abc exceptional count with rad(abc)<c^lambda and c<=X is O_(lambda,epsilon)(X^(lambda/2+C*lambda^(3/2)+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** Large Hölder moduli concentrate competitive boxes on at most one high-degree coordinate per letter. Three dominant coordinates give a coefficient-uniform generalized Fermat box. Two dominant coordinates give a thin strip and a complementary geometry bound. The diagonal residue-energy bound at height at least twice the letter mass has an integer-moment proof; the finite-box and two-tall determinant steps were audited.
 
@@ -15823,11 +16080,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For integers k>=1024 ell^2 and a k-full n, V T^k=K modulo n has O_(k,ell,epsilon)(n^(1/(ell k)+epsilon)) positive rational unit solutions of heights H(T)<=n^(2/k) and H(V)<=n^(1/(16384 ell^3)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale).
 
 **Verification limits:** The determinant dimensions and strict precision and height gaps were checked exactly.
 
@@ -15837,11 +16094,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For positive integer L and k>=2, the count of primitive triples a+b=c<=X whose nonzero prime valuations lie in [k,k+L] is O_(k,L,epsilon)(X^(1/k+O(L^(1/3) k^(-4/3))+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-FIXED-WIDTH-VALUATION-TRIPLE-BOUND (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale).
 
 **Verification limits:** At fixed c the radical ratios have height at most c^(1/k) and the residual ratios at most c^(L/k).
 
@@ -15851,11 +16108,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In limiting anatomic boxes with D=lambda/2+o(lambda), each letter of mass comparable to lambda has at most two heavy degree coordinates and weighted height O(sqrt(lambda)) outside them. When all letter masses are comparable to lambda, each has a heavy coordinate of mass L_T/2+o(lambda).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** The residue-lock stopping argument applies at the near-half threshold; the strip and surface bounds force heavy masses in the three substantial letters.
 
@@ -15865,11 +16122,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Profiles with degree-one and high-degree masses equal on each letter, and high degrees in limiting ratios 1:sqrt(2):sqrt(3), attain lambda/2 under the inequalities in the half-bound proof. Fixing one complete letter and applying the scalable congruence count to a single-base monomial compression cannot improve their exponent, even with a smaller powerful divisor.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SEPARATED-DEGREE-COMPRESSION-OBSTRUCTION (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** Checked the exponent inequalities and the quadratic irrational rational-approximation margins. The obstruction is scoped to the stated compression count.
 
@@ -15879,11 +16136,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For k>=1024 ell^2, k-full n, h=floor(k/(256 ell^2)), and positive integer q>h, V T^q=K modulo n has O_(k,ell,q,epsilon)(n^(1/(ell k)+epsilon)) positive unit rational pairs with H(T)<=n^(2/k) and H(V)<=n^(1/(16384 ell^3)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale).
 
 **Verification limits:** The weights mq-qi+j remain distinct; the determinant margins are unchanged.
 
@@ -15893,11 +16150,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For small lambda, in anatomic boxes with one chosen degree at least two per letter and complementary weighted heights O(sqrt(lambda)), the exponent is <= 6 lambda/13+O(lambda^(7/6)). When all complete logarithmic heights are bounded below, the exponent is <= 2 lambda/5+O(lambda^(7/6)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** Checked finite-box heights, the two exponent combinations, and 1134 signed exact recoveries with the complete modulus letter unfixed.
 
@@ -15907,11 +16164,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At n=P^(ka), P>k+2, the congruence U^k V^(k+2) W^(-k-1)=1 modulo n has >>n^(1/k) positive unit rational points of height <=n^(2/k) in one class modulo P^a, on the exact curve U=V, W=U^2.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-THREE-VARIABLE-EXACT-CURVE-OBSTRUCTION (stale); ARITH-ABC-RATIONAL-PARAMETERS-IN-ONE-PRIME-POWER-CLASS (stale).
 
 **Verification limits:** The explicit family has distinct reduced parameters (2b-P^a)/b. Its scope is the unit-only congruence.
 
@@ -15921,11 +16178,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For n=P^e with e>=k and P not dividing r, short rational unit solutions of U^p V^q W^(-r)=K modulo n, with heights <=n^(C/k), lie on a degree-O_C(1) auxiliary surface in each admissible class modulo P^floor(e/k), for sufficiently large k and n. On factors transverse to the reduction of the modular surface, the points lie on algebraic curves of bounded degree.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale).
 
 **Verification limits:** Two-parameter Taylor column divisibility produces a first equation. A transverse Hensel lift reduces to one parameter and supplies a second coprime equation. Exact determinant diagnostics passed.
 
@@ -15935,11 +16192,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed height constant C and fixed primitive positive monomial exponents with one negative sign, after treating the bounded primitive-character case separately, solutions of height <=n^(C/k) over k-full n lie on bounded-degree auxiliary curves in each shallow residue class for sufficiently large k in terms of C. The finitely many exceptional local partitions have bounded refinements.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale).
 
 **Verification limits:** Checked binomial Vandermonde valuation, finite-prime rescaling, and determinant remainder weights in the written proof.
 
@@ -15949,11 +16206,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed C,p,q,r and amplification order ell, sufficiently large k in terms of ell*C, k-full n and unit K, the number of positive pairwise coprime integer unit roots <=n^(C/k) with U^p V^q W^(-r)=K modulo n is O(n^(2/(ell*k)+eps)). The implied constant may depend on the fixed exponents and the modulus can have bad reduction at its primes.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale).
 
 **Verification limits:** Checked nonunit-Jacobian Newton lifting, the logarithmic Jacobian height, and the CRT reconstruction after removing the large-loss prime powers.
 
@@ -15963,11 +16220,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Along small-budget near-half sequences with two double-heavy letters, the coprime ternary congruence eliminates the profile. Lock a heavy root of mass comparable to lambda on the modulus letter and use its exact degree as the fullness threshold, so the modular cost is O(lambda/ell). A vanishing-mass third letter may be fixed in full. This leaves profiles with fewer than two double-heavy letters.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** Checked the exact degree of the locked root as fullness threshold, the scaled heights, and the pairwise coprimality from the retained anatomic factors.
 
@@ -15977,11 +16234,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There exist absolute eta>0 and lambda_0>0 such that the general primitive abc exceptional-set exponent is at most (1/2-eta)*lambda for every fixed 0<lambda<lambda_0, up to an arbitrary epsilon. The argument gives existence of the constants.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-STRICT-HALF-GAP (stale); DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale).
 
 **Verification limits:** Checked the two nested heavy degree cutoffs, short-modulus height transfer, and the Bombieri-Pila bound in the vanishing-mass case.
 
@@ -15991,11 +16248,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For sufficiently small fixed lambda>0, the full primitive positive abc exceptional count is O_(lambda,epsilon)(X^((6/13)lambda+C lambda^(49/48)+epsilon)) for an absolute C.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-SIX-THIRTEENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-EIGHTEEN-THIRTY-SEVENTHS (stale); DERIVE-ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE (stale); DERIVE-ARITH-ABC-AFFINE-THREE-ROOT-COVER (stale); DERIVE-ARITH-ABC-FOUR-ROOT-DIVISOR-RELATIONS (stale); DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16005,11 +16262,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For any fixed hyperbolic signature (e_A,e_B,e_C) of powers of one prime, primitive positive triples with residual radical R<=Y number O(Y(1+log Y)^C), with no height cutoff. R is the product of primes on whose letter the valuation is not divisible by the assigned exponent.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16019,11 +16276,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For sufficiently small fixed lambda>0, the full primitive positive abc exceptional count is O_(lambda,epsilon)(X^((5/11-10^(-7))*lambda+epsilon)). The small-budget threshold is not evaluated.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-BELOW-FIVE-ELEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-STRICT-HALF-GAP (stale); DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE (stale); DERIVE-ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES (stale); DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale).
 
 **Verification limits:** Checked the heavy-mass cases, exact exponent arithmetic, and the final height and precision margins for the unamplified one-variable count.
 
@@ -16033,11 +16290,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed signed exponents with a nonzero integer relation of bounded coefficients, four pairwise coprime integer unit roots <=n^(C/k) in a monomial congruence modulo k-full n have count O(n^(2/(ell*k)+eps)) for fixed amplification ell and sufficiently large k in terms of C, ell and the relation bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-FOUR-ROOT-BOUNDED-RELATION-COMPRESSION (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale).
 
 **Verification limits:** Checked the rational exact-fiber modification of the determinant proof and 2916 exact monomial-compression identities. The four-root amplification is performed before compression.
 
@@ -16047,11 +16304,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For signatures (3,3,3) and permutations of (2,4,4), the number of primitive positive abc triples with c<=X and residual radical R<=Y is O_epsilon(Y X^epsilon). R retains primes with valuation indivisible by the assigned exponent.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16061,11 +16318,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For all sufficiently small fixed lambda>0 the primitive positive abc exceptional count is O_(lambda,epsilon)(X^((3/7-10^(-3))lambda+epsilon)). The coefficient is explicit and the cutoff for lambda is existential.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-BELOW-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-BELOW-FIVE-ELEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-STRICT-HALF-GAP (stale); DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE (stale); DERIVE-ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES (stale); DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale); DERIVE-ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH (stale); DERIVE-ARITH-ABC-FOUR-ROOT-BOUNDED-RELATION-COMPRESSION (stale); DERIVE-ARITH-ABC-COMPRESSED-TALL-REAL-DETERMINANT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16075,11 +16332,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For each ordered square and cube pair of letters, let R contain the primes of non-even valuations on the square letter, valuations not divisible by three on the cube letter, and the entire radical of the remaining term. The number of primitive triples of height at most X with R<=Y is O_epsilon(Y X^epsilon).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16089,11 +16346,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed 0<lambda<=1 there is an absolute eta0>0 such that primitive triples with rad(abc)<c^lambda, a positive determinant-one relation |v a-u b|=1 with u,v<=c^(eta0 lambda^3), and product of the odd valuation primes of exponent at least three at most c^(eta0 lambda^3), number O_(lambda,epsilon)(X^(lambda/3-eta0 lambda^3+epsilon)).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-DETERMINANT-ONE-PELL-SUBFAMILY (stale); ARITH-ABC-PELL-SQUARE-PART-SUPPORT-CORRECTION (stale); EXT-ABC-DIAO-SMALL-PELL-FIRST-MOMENT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16145,11 +16402,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For all sufficiently small fixed lambda>0 and every epsilon>0 the exceptional count has exponent (8/19)lambda+epsilon. The proof covers positive and zero limiting short height and excludes equality. The cutoff for lambda is existential.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-EIGHT-NINETEENTHS (stale); DERIVE-ARITH-ABC-ZERO-SHORT-HEIGHT-ELEVEN-TWENTY-SEVENTHS (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE (stale); DERIVE-ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH (stale); DERIVE-ARITH-ABC-FOUR-ROOT-BOUNDED-RELATION-COMPRESSION (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-BELOW-FIVE-ELEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-STRICT-HALF-GAP (stale); DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16159,11 +16416,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For all sufficiently small fixed lambda>0 and every epsilon>0 the exceptional count has upper exponent (13/31)lambda+epsilon. The proof excludes equality at the limiting coefficient. The cutoff for lambda is existential.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-THIRTEEN-THIRTY-FIRSTS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-EIGHT-NINETEENTHS (stale); DERIVE-ARITH-ABC-ZERO-SHORT-HEIGHT-ELEVEN-TWENTY-SEVENTHS (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE (stale); DERIVE-ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH (stale); DERIVE-ARITH-ABC-FOUR-ROOT-BOUNDED-RELATION-COMPRESSION (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-BELOW-FIVE-ELEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-STRICT-HALF-GAP (stale); DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-CHEAP-MODULUS-OR-EFFECTIVE-SINGLETON (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16173,11 +16430,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For each fixed eta>0 and all sufficiently small fixed lambda>0, the exceptional count has upper exponent (5/12+eta)lambda+epsilon. This gives the fixed coefficient 417/1000 directly. The cutoff for lambda is existential.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-FIVE-TWELFTHS-LIMSUP (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-THIRTEEN-THIRTY-FIRSTS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-EIGHT-NINETEENTHS (stale); DERIVE-ARITH-ABC-ZERO-SHORT-HEIGHT-ELEVEN-TWENTY-SEVENTHS (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-DOMINANT-DIVISOR-LOCK-SINGLE-HEAVY (stale); DERIVE-ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE (stale); DERIVE-ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH (stale); DERIVE-ARITH-ABC-FOUR-ROOT-BOUNDED-RELATION-COMPRESSION (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-THREE-SEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-BELOW-FIVE-ELEVENTHS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-STRICT-HALF-GAP (stale); DERIVE-ARITH-ABC-TWO-HEAVY-DIVISOR-LOCK (stale); DERIVE-ARITH-ABC-NEAR-HALF-HEAVY-COORDINATE-STABILITY (stale); DERIVE-ARITH-ABC-CHEAP-MODULUS-OR-EFFECTIVE-SINGLETON (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16187,11 +16444,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every fixed eta>0 and all sufficiently small fixed lambda>0 the primitive abc exceptional count has upper exponent (1/3+eta)lambda+epsilon. The cutoff in lambda is existential and the argument uses positive slack over 1/3.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16201,11 +16458,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A limiting abc box with normalized count exponent d=1/3 and each letter of mass 1/3 has residual mass Delta strictly greater than 1/3 after removing bounded-degree factors and arbitrarily many of the largest unbounded-degree coordinates. At Delta=1/3 the residual inequalities first force six mass-1/9 positive roots and complementary mass 1/9 per letter. Divisor pruning and the four-prime graph exclude this profile.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BALANCED-ONE-THIRD-STRICT-RESIDUAL (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-FOUR-PRIME-COFACTOR-GRAPH (stale); DERIVE-ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH (stale); DERIVE-ARITH-ABC-FOUR-ROOT-BOUNDED-RELATION-COMPRESSION (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-POWERFUL-MODULUS-COUNT (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-WEIERSTRASS-CURVES (stale); DERIVE-ARITH-ABC-THREE-VARIABLE-PRIME-POWER-AUXILIARY-CURVES (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16215,11 +16472,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Every anatomic limiting profile at normalized exponent d=1/3 has the three letter masses equal to 1/3 and total nonatomic mass Gamma>=1/2 in the root mass measures on the scaled degrees eL. If the numerical short height tends to zero, the two tall measures are each nonatomic of mass 1/3. With three positive heights, if one letter concentrates its numerical weight at finitely many positive scales, the other two measures are each nonatomic of mass 1/3. The residual mass Delta is at least Gamma. If one letter's nonatomic mass is zero, the other two distributions are both wholly nonatomic.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16229,11 +16486,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Let lambda0=1/p+1/q+1/r. For each fixed eta>0, sufficiently small fixed lambda0>0, and epsilon>0, the cumulative primitive (p,q,r)-full count has exponent (1/3+eta)lambda0+epsilon. For fixed offsets this yields an asymptotic exponent coefficient at most one in units of 1/r.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-POWERFUL-TRIPLE-INCLUSION (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Radical inclusion and the limiting small-budget abc count.
 
@@ -16243,11 +16500,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There are absolute delta,lambda_*>0 such that for fixed p,q,r>=2 with lambda0=1/p+1/q+1/r<=lambda_*, the cumulative primitive count has exponent (1/3-delta)lambda0+epsilon. At fixed offsets r+u,r+v,r this is at most (1-3delta)/r+epsilon.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-POWERFUL-TRIPLE-INCLUSION (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** At the balanced one-third endpoint the high-power support and height bound would make all three degree measures point masses at three, contradicting the proved lower bound on their total nonatomic mass.
 
@@ -16257,11 +16514,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed p,q,r>=2 with lambda0=1/p+1/q+1/r<=lambda_* and positive r-full N, the count of ordered coprime (p,q)-full pairs a+b=N has exponent (1/3-delta)lambda0+epsilon. The constants delta,lambda_*>0 are those of the cumulative primitive bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-POWERFUL-TRIPLE-INCLUSION (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Restriction of the cumulative primitive count to the target N.
 
@@ -16271,11 +16528,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every sufficiently large fixed s and every epsilon>0, ordered positive s-full triples a+b=c<=X with arbitrary common divisor are O_(s,epsilon)(X^(1/s+epsilon)). The explicit equal-summand family gives Omega_s(X^(1/s)) for every fixed s>=2. The same upper bound applies when three orders have minimum s.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** The deficient prime product saves its full root cost in the common-divisor count. The two abc counts force its normalized root mass to vanish at the limiting endpoint, and diffusion excludes the remaining profile. The onset in s is existential.
 
@@ -16285,11 +16542,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The pinned 107/200 unit tree has 4,586 over-limit leaves replaced by verified subtrees. The resulting 1,830,732-leaf tree has exact upper bound 7133338393/13333343040 at unit budget.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL (stale); EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE (stale); DERIVE-ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT (stale); EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS (stale); EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION (stale).
 
 **Verification limits:** Sparse exact replay checks the baseline SHA-256, verifies coverage of every over-limit leaf and replays the replacement subtrees with inherited rational rows.
 
@@ -16299,11 +16556,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For balanced limiting boxes with letter masses 1/3, a near-degree-three window of half-width 1/200 gives d<=19799/59900 when the free pair omits at most 1/100 mass and the locked letter has nonatomic window mass above 4/25. Equal masses 1/6 in both windows near 2 and 4 of half-width 1/800 on all letters give d<=9599/38388. If the numerical short height is at most 4/5, the common tall degree-three window of half-width 1/300 gives d<=3/10 with combined omitted mass at most 1/20. All three assertions hold for weak degree measures, allowing frozen factors whose numerical height does not tend to zero.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16313,11 +16570,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the balanced endpoint with d=1/3 and total nonatomic degree mass Gamma=1/2, any pair of letters with finitely many positive atomic scales has p>=1 such scales in total. The nonatomic measures of those letters satisfy nu_na(I) << |I|^(1/p) locally on compact positive ranges away from the atomic scales. For p=1 these restrictions have locally bounded densities.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16327,11 +16584,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The exact 9/10 tree with bound 1/2 has sparse retargeted certificates at budgets 91/100, 23/25, 37/40, 93/100, 187/200, 47/50, 189/200, 19/20, 191/200, 24/25, 193/200, 97/100, 39/40, 391/400, 49/50, 1961/2000, 981/1000, 393/400, 983/1000, 123/125, 197/200, 493/500, 987/1000, 247/250, 989/1000, 99/100. At budget 99/100 the exact count exponent is 26749499961979/50000000001500, certified by replaying 743,497 leaves.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL (stale); EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE (stale); DERIVE-ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT (stale); EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS (stale); EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION (stale).
 
 **Verification limits:** A full exact replay reconstructs both the unchanged reweighted leaves and every replacement branch of each target tree.
 
@@ -16341,11 +16598,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There exist absolute h_*, sigma, lambda_0>0 such that for small radical budget 0<lambda<lambda_0, the count with min(a,b)<=c^h_* is O_(lambda,epsilon)(X^((1/3-sigma)lambda+epsilon)). One regrouped valuation-degree window and a full modulus exclude numerical short height zero at the normalized boundary. More generally no endpoint letter can have all scaled root mass at zero, even with escaped first moment.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16355,11 +16612,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At normalized exponent one third and positive numerical height gap to the short letter, let Delta=c_U+c_V-1/3 and let p count the positive atomic scales across the tall pair. In compact positive ranges away from the atomic scales, the nonatomic mass of any interval I is at most max(2 Delta, C(|I|/tau)^(1/(p-1))) when 2<=p<infty, and at most 2 Delta on sufficiently small intervals for p in {0,1}. Here tau is a positive strict lower bound for the height gap.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16369,11 +16626,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the one-third endpoint there are absolute R_*,C>0 for which the escaped first moment plus the first moment of the weak measure above or at R_* on letter T is at most C(c_U+c_V-1/3), where U,V are the complementary pair. Saturation gives first-moment convergence and uniformly bounded support without constraints on its positive atomic scales.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16383,11 +16640,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the one-third endpoint there is an absolute C with 1-h_T<=C(c_U+c_V-1/3) for the two tall letters U,V and the short letter T. In particular a positive numerical gap excludes saturation of the tall pair, independently of its positive atomic scales.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16397,11 +16654,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At normalized exponent d=1/3, total nonatomic scaled-degree mass Gamma=1/2 forces c_T=1/6, numerical height and limiting first moment equal to 1 on each letter, and uniform bounded support of all three scaled-degree measures, with no escaped first moment.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16411,11 +16668,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 with a positive nonatomic modulus letter, shifted phase windows of radius theta that capture nonatomic mass t of one free letter and satisfy weighted atom alignment (VM4) have t<=max((8/5)Delta_UV,C_T theta), uniformly in the phase and mesh spacing.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16425,11 +16682,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, the joint entropy of arbitrary paired outside coordinate sub-blocks is within (4delta+o(1))L log X of their full root-box capacity. Each pair has mutual information at most (4delta+o(1))L log X. Greedy thinning produces a three-partite linear hypergraph with at least X^((1/3-2delta+o(1))L) edges on parts of size at most X^((1/6+delta+o(1))L).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16439,11 +16696,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the d=1/3 endpoint, let D(a) be the mass-weighted atomic discrepancy from a positive mesh of spacing a<=1 on the free pair. With a positive nonatomic modulus letter, the folded nonatomic mass in any circle arc I is O_T(Delta_UV+|I|+sqrt(D(a))). At pair saturation, approximate atomic mesh limits have bounded densities on the circle. If the positive atoms lie in one lattice, both original nonatomic degree measures have bounded densities.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16467,11 +16724,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, for every fixed m>=2 and 0<xi<1/6, the thinned outside-factor graph admits m fixed rows and at least X^((xi-4m delta+o(1))L) columns for sufficiently small delta. Each outside product has radical overlap below X^(xi L) with every complete term of each nonincident cell. On fixed finite subrectangles the outside factors can be stripped to coprime private prime supports at arbitrarily small numerical cost.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16481,11 +16738,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In one-third limiting profiles, for any fixed 0<tau<1 and any positive target K, the subcount with free-pair ratio in K(1+O(X^(-tau))) has normalized exponent at most c_U+c_V-k_0 tau for an absolute k_0>0, uniformly in K. At pair saturation the saving survives a union over targets of rational height at most X^(gamma L) when 2 gamma<k_0 tau.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16495,11 +16752,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At a balanced one-third endpoint, every letter T satisfies beta_T+c_T>h_T/178 and beta_T>h_T/356, where beta_T is its positive-degree root mass. If u is the smaller height on the complementary pair, then beta_T+c_T >= (1-u)/(3(1+u)). Uses prelimit quantiles and allows escaped numerical weight.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16509,11 +16766,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There exist absolute eta,gamma_0>0 such that at d=1/3 and 0<=Gamma-1/2<=gamma_0, for every pair U,V the sum min(A_U,B_U)+min(A_V,B_V) is at least eta, where A_T,B_T are the first moments of the atomic and nonatomic parts. At least two letters then carry uniformly positive mass of each type in one fixed compact positive degree interval.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16523,11 +16780,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, for each fixed row number m>=2 and small fixed tau>0, there are rectangles with m rows and X^((epsilon+o(1))L) columns retaining the private-prime overlap condition, with all complete C-values separated by more than X^(1-tau). The complete B-values can also be separated across distinct columns. An affine realization where a common column term is fixed and the row diameter is at most X^(1-tau) cannot attain this endpoint count.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16537,11 +16794,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** If a modulus letter T has numerical height at least 19/20 and its degree measure has no atom of mass 1/5 or larger, its complementary pair has integral distance(r/a,Z) exceeding 1/24000 for every fixed 0<a<=1 at d=1/3. This holds on some pair at every balanced one-third endpoint and on all pairs near minimum total nonatomic mass. Whole-letter rounding handles escaped numerical weight.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16551,11 +16808,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At any balanced one-third endpoint, for any modulus letter T with c_T>0 and any spacing a>0, (1+a/6) times the integral of distance(r/a,Z) on the complementary pair exceeds h_T c_T^2/44000. A shallow divisor of the full residue modulus suffices for the determinant count.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16565,11 +16822,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** If complete C-values have the form W Z^q with q>=2 and at most X^((u+o(1))L) choices for W, then both complete-value codegrees on A and B are at most X^((2u+o(1))L). At d=1/3 and Gamma=1/2, outside-to-complete multiplicity exponents alpha,beta must satisfy 2 alpha+beta+2 u>=1/6 and alpha+2 beta+2 u>=1/6. If both free letters B,C admit the same q and dictionary exponents u_B,u_C, the complete A degree is at most X^((u_B+u_C+o(1))L).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16579,11 +16836,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, coefficient dictionaries of normalized exponent u for C-values with exponents at least q_* satisfy m alpha+(m-1) beta+m u+limsup 1/(L q_*^m)>=1/6, and its transpose, with alpha,beta the outside-to-complete multiplicities.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16593,11 +16850,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, if C has normalized mass at least 1/3-1/100 on scaled degrees [3-1/500,3+1/500], the number of common outside columns of two fixed rows with r_2 C_2-r_1 C_1=D nonzero is at most X^((1/6-eta+o(1))L), uniformly for polynomial-height positive coefficients and nonzero D.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16607,11 +16864,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The positive-mass prelimit upper quantile equals the weak-limit upper quantile plus the residual escaped first moment. After fixed locks of cost mu_0 and weight w_0, whole-coordinate rounding costs at most the largest residual coordinate mass g and w_0+F(t)+e_res<=min(h_P+h_Q) when mu_0+t+g<d, with a boundary form by continuity.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16621,11 +16878,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A block on T of root mass at most 1/20 and numerical weight at least 49/50, with degrees at least 9/5 and individual root masses at most 1/1000, yields normalized count exponent 321/1000 when the opposite grouped heights are at most 1/3 and 1/75. This excludes an explicit all-nonatomic formal endpoint that satisfies the upper-third test.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16635,11 +16892,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For any balanced small-budget endpoint, a letter T of numerical height h>0 and any 0<theta<=h/100 satisfy nu_T([theta,infinity))+g>h/178-theta/9, where g bounds the largest opposite prelimit coordinate mass. At theta=h/100 the right side is 361h/80100>h/225. This permits atoms at the cutoff and escaped first moments.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16649,11 +16906,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, positive diffuse C-mass in a compact band above scaled degree 6 gives a common-column exponent strictly below 1/6 for sufficiently many fixed rows with distinct affine zeros and a column parameter in an interval of length X. In the complete additive graph the outside-to-complete multiplicity exponents then satisfy m alpha+(m-1) beta>=eta and its transpose.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16663,11 +16920,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, fixed affine shifts with distinct intercepts can use pairwise coprime high-degree locks on several rows and a selected shallow record. The explicit separated bands give good-column exponents at most 69/500 and 19/200, up to window loss. The exceptional branch separately saves a fixed positive exponent below 1/6.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16677,11 +16934,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** After locking any collection of atoms of total mass p<d and weight w, the eligible nonatomic quantile of mass min(d-p,M), together with all escaped numerical weight and w, is at most the minimum two-letter numerical height. The same conclusion holds after selecting individual positive limiting root ranks and allowing fractional selection from the residual weak atoms built of vanishing coordinates.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16691,11 +16948,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, an m-row complete codegree bound of X^((1/6-eta+o(1))L) forces mH(A|D_A)+(m-1)H(B|D_B)>=(eta-o(1)) L log X and an exponentially small probability of a fixed information deficit on the thinned graph. The mixed-power version uses entropy of the coefficient-exponent dictionary in place of its maximum cardinality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16705,11 +16962,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For two fixed outside rows and a common outside column, the reduced cross ratio of the two primitive ratios on the free letters has numerator minus denominator divisible by the full outside column product. It is nontrivial, has at least that numerical height, and determines the outside column up to divisor-many possibilities without assuming any fixed complete value per label.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16719,11 +16976,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A T modulus block of degree at least 2, root mass at most 41/1000, numerical weight at least 49/50 and individual mass at most 1/1000, with opposite locks of total cost at most 31/1000 and residual grouped heights at most 1/3 and 11/1000, gives normalized coefficient 313/1000. An explicit minimum-nonatomic formal profile satisfies the full fractional packing test and fails the earlier full-pair grouping condition.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16733,11 +16990,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** When primitive targets share a positive-weight k-full divisor and the residual grouped roots have heights X^O(L) with a wider factor X^o(1), an exact modular cross ratio bounds the outside graph codegree in terms of the smaller matched target-product or target-ratio dictionary. A finite-box bound records root, wide cofactor and amplification losses.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16747,11 +17004,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For any fixed number of rows at the minimum nonatomic endpoint, a near-full outside rectangle can be found with each row pair having distinct reduced complete target ratios across columns. The complete values can vary over outside labels. A multiplicatively separated target model with row correction dictionaries consequently needs normalized exponent at least 1/12.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16761,11 +17018,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At normalized exponent 1/3 and minimum nonatomic mass 1/2, a subgraph of outside edges of normalized exponent arbitrarily close to 1/3 has both complete free values factoring multiplicatively into functions of the row and column labels. The modular count controls four-cycle odds ratios and prime coloring separates the two complete values.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16775,11 +17032,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, the nonatomic support on T is at most 6(2-max(w_U,w_V)), with w_U,w_V the two opposite nonatomic numerical weights. Simultaneous homogeneous congruences from fixed rows force proportional primitive column pairs above this threshold.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16789,11 +17046,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, first-row locks of mass p<1/6 and moment w, disjoint from the already fixed U outside product, give w_U+w+s_T(1/6-p)<=2. In particular s_T/6 is at most the sum of the truncated U atomic and V total moments at s_T. An explicit formal profile passes the prior three-factor and untrimmed support tests and fails this inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16803,11 +17060,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In the separated endpoint graph, fixed target coefficients with row exponents q_i cost X^(2/D+epsilon) common columns after a weighted projective embedding, with D=product(q_i)/lcm(q_i). With three arbitrary exponents q_i>=Q, a complementary uniform primitive count gives X^(3/Q^(3/2)+epsilon). The resulting dictionary restrictions require no bound on complete-value multiplicities.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16817,11 +17074,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 with Gamma sufficiently close to 1/2, every letter has atomic numerical weight greater than 1/250. At Gamma=1/2 the analogous nonatomic moment plus (6 minus the largest opposite nonatomic support endpoint)/6 also exceeds 1/250.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16831,11 +17088,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, a subfamily of normalized count exponent arbitrarily close to 1/3 has all three complete values given by functions of their own outside labels. Multiplicative separation in the three orientations and a sign-colored factor energy bound preserve the count exponent.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16845,11 +17102,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, every nonatomic degree measure is supported on [0,6]. For s below a nonatomic support point on T, each opposite letter U satisfies s/6<=integral min(r,s) d nu_U(r). This follows by freezing the high U factors before applying the fixed-row one-parameter congruence.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16859,11 +17116,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, two-letter locks of total root mass below 1/6 have numerical weight at most 1. For edge-dependent divisor choices with mass at most 1/6-epsilon and weight above 1+epsilon, the exceptional edges in a near-full complete-label graph have normalized exponent at most 1/3-epsilon+window loss. A fractional violation forces a macroscopic prime on typical edges.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16873,11 +17130,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Near d=1/3 and c_i=1/6, asymmetric four-cycle and internal star losses give the rank-one trimming inequality NT1 with overlap loss m(m-1)S max(0,3m Delta+c_T-c_U). The explicit band and first-row lock sector has normalized count exponent below 1/3-1/10000 when all three nonatomic masses differ from 1/6 by at most 10^-5.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16887,11 +17144,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At a balanced endpoint with Gamma=1/2+gamma sufficiently close to 1/2, a complete-label graph has normalized count exponent at least 1/3-(68/3)gamma, up to arbitrarily small extra loss. Simultaneous four-cycle anchors in all projections and a vector factor-energy bound give this explicit loss.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16901,11 +17158,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 with Gamma sufficiently close to 1/2, every letter has nonatomic numerical weight above one absolute positive constant. A one-root count in a short degree interval uses a fixed complete opposite value and a cheap full modulus on the third letter.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16915,11 +17172,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, each positive nonatomic opposite degree band [s,S] with S<2s imposes integral ||r/a|| d nu_U(r)>s/11500 for every 0<a<=1 on a single free letter U. A finite list of p atoms must leave positive numerical moment outside it, with a bound from simultaneous approximation.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16929,11 +17186,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed 6<s<S, the nonatomic mass in [s,S] is O_(s,S)(sqrt(Gamma-1/2)) at balanced d=1/3. The positive first-moment excess above six tends uniformly to zero, and the one-letter mesh discrepancy remains uniformly positive.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16943,11 +17200,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum endpoint, the nonatomic mass of a short degree interval is O(length^(1/p)) if all positive atomic scales of that same letter lie in a semigroup on p fixed positive generators. With aligned atoms the corresponding shifted mesh mass is O(width) uniformly in the mesh and phase.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16957,11 +17214,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** If all nonatomic letter masses differ from 1/6 by at most 10^-5 and one letter has nonatomic mass greater than 2/25 in scaled degrees [34/5,7], its limiting normalized abc count exponent is below 1/3-1/10000. Two opposite complete labels follow from a single vector freeze and two high-band rows give a one-parameter congruence.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16985,11 +17242,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 and Gamma=1/2+gamma, locking divisors of fixed-truncation roots on all three letters at normalized cost under 1/6-139 gamma/3 cannot give numerical weight above one on the full endpoint profile. Edge-dependent locks obey the same threshold through a divisor-many record assignment, and violating pooled fractional upper quantiles in compact degree bands force macroscopic primes on typical complete-label edges.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -16999,11 +17256,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Write d=1/3-epsilon, c=1/6, and gamma=sum c_W-1/2. For epsilon and each |c_W-c| at most 10^-3, prescribed locks of total root cost mu and numerical weight above one imply epsilon >= (c-mu-139 gamma/3)/70. The symmetric profile with high atomic mass 1/20 at degree 36/5 on each letter has a normalized count exponent at most 1/3-1/4200 and passes the two-letter packing restriction.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17013,11 +17270,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 and Gamma=1/2, a compact bounded positive-degree prescribed block of root cost beta and numerical weight w on one letter forces a common full factor of weight arbitrarily close to (mw-1)/(m-1) when m is even, m beta<1/6 and mw>1. The surviving complete-label graph loses arbitrarily little exponent. Even moments, the longer additive residue bound and fixed nonzero differences for m=2 prove the result.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17027,11 +17284,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the same endpoint a block supported at scaled degrees above six with m beta<1/6 obeys mw+(m-1)max_V(s_V)/6<=m, where s_V are the nonatomic support endpoints. Combine the common full factor with the fixed-row congruence for a remaining band. A formal profile explicitly separates this condition from (MS12) and three-letter fractional packing.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17041,11 +17298,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 and Gamma=1/2, each letter has mean phase discrepancy from a union of p arbitrary translates of a common mesh of spacing at most one at least a positive constant depending on p times the maximum opposite nonatomic support endpoint. Product amplification uses integer exact monomials and divisor-many factorizations.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17055,11 +17312,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 and Gamma=1/2, partial grouping of original roots of mass m with measure sigma bounds E=1-integral min(r,1/m) d sigma below by s_*/M*(829/40000-m/(M+1)) for every integer M>=2 and opposite diffuse support endpoint s_*. An explicit formal profile passes the full one-mesh and packing tests but violates this bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17069,11 +17326,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** If each nonatomic mass differs from 1/6 by at most 1/8000000, a target letter has more than 3/400 diffuse mass in [39/10,4], and an opposite letter permits a prescribed group at base five with normalized short height <=201/1000 and wide numerical height <=11/10000, then d<1/3-1/1000000.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17083,11 +17340,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 and Gamma=1/2, choose bounded high blocks with costs beta_i, weights w_i and even m_i satisfying m_i beta_i<1/6. Synchronizing the complete residue classes lets all previous common factors reduce the range for later extraction. For selected letters with sum 1/m_i<=1 and s_* the largest nonatomic support endpoint, s_*/6+sum (w_i-s_*/(6 m_i))_+<=1. An exact symmetric formal profile satisfies independent common-factor tests and three-letter packing and violates the coupled inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17097,11 +17354,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At balanced d=1/3 and Gamma=1/2, let s_* be the maximum nonatomic support endpoint. Prescribed locks of cost p<1/6 and weight w across all three letters necessarily satisfy w+s_*(1/6-p)<=1. Selecting records adapted to edges obeys a corresponding exponent-deficit criterion. In particular s_*=6 forces the entire three degree supports into [0,6].
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17111,11 +17368,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For d=1/3-epsilon and individual nonatomic capacities within rho<=10^-3 of c=1/6, epsilon<=10^-3, write gamma=sum c_T-1/2. Prescribed locks and outside bands of total cost mu<c, numerical weight lower bound W_lock, sum of band upper degrees S_sum and m padded slots give (m+1)(35 epsilon+68 gamma/3+2 rho)>=min((W_lock-1)_+/S_sum,(c-mu+rho)/(m-1)). All data can be optimized over admissible selections.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17125,11 +17382,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** If each c_T is within 1/50000000 of 1/6, each letter has a prescribed block costing at most 41/1000 and weighing at least 289/1000, and a letter has more than 9/10000 nonatomic mass in [399/100,4], then d<1/3-1/50000000.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17139,11 +17396,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, a block of mass beta<c=1/6 in [s,S] above the largest diffuse endpoint s_* becomes wholly common up to any tolerance if W_0+c s-(s-s_*) beta>1, with prior synchronized common weight at least W_0. Mixed slots fill the unused record budget with diffuse locks. Whole conversion uses a largest integer number of the shrinking residual block with parity added by empty slots.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17153,11 +17410,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** With synchronized weight W from high assigned blocks, the remaining prescribed locks of cost p<c and weight w satisfy W+w+s_*(c-p)<=1. At the minimum nonatomic endpoint every atom with r>12-s_* can be converted, and their combined numerical weight plus s_*/6 is at most one.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17167,11 +17424,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint start D_0=1-s_*/6, then subtract from D_0 the total numerical weight of atoms with beta<1/6 and (r-s_*)(1/6-beta)>D_j to obtain D_{j+1}. Every iterate must be nonnegative, converging to a fixed point D. Unselected atoms above six satisfy 1/6-D/(r-s_*)<=beta<=D/(r-s_*). An exact profile passes first-round synchronized packing and has D_2=-1/10.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17181,11 +17438,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3, Gamma=1/2, any retained Borel set J of degree root mass c+g>c on one letter and any a in (0,1] has discrepancy integral over J at least s_* g^2/310, with s_* the largest opposite nonatomic support endpoint. This excludes an infinite-atom profile whose larger diffuse component passes whole-letter phase and trimmed packing.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17195,11 +17452,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** With each c_W within 10^-7 of 1/6, a supplying opposite letter having nonatomic mass >0.025 in [3,4], and a retained continuity set of root mass at least 1/6+0.0499 with discrepancy at spacing 1/2 <=10^-6, the normalized exponent is below 1/3-10^-6.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17209,11 +17466,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed rank R and c=1/6 at the minimum nonatomic endpoint, there is delta_R>0 such that a progression of coefficient volume at most X^((c+delta_R)L) contains at most X^((c-delta_R+o(1))L) distinct complete values of any letter. A gap among the side exponents allows either a narrow real strip or a fixed-step full-modulus reconstruction.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17223,11 +17480,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Any subset of a complete letter with normalized size c-o(1) at the minimum nonatomic endpoint has additive doubling tending to infinity, for all degree profiles. Apply Green–Ruzsa to the fixed-rank progression obstruction.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); EQUIV-ABC-COMPLETE-LETTER-DOUBLING-AND-ENERGY (open).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17237,11 +17494,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At minimum nonatomic mass, blocks on a set of letters of combined numerical weight w obey a normalized marginal entropy lower bound max(0,1/6-(1-w)_+/s_*), where s_* is the largest nonatomic support endpoint. The same bound up to any tolerance holds for the sum of marginal self-information outside an exponentially sparse edge set. Dictionary counts in mixed trimmed packing apply after binning the marginal probabilities.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17251,11 +17508,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There are absolute tau,delta,lambda_*>0. For 0<lambda<=lambda_* and fixed p,q with lambda min(p,q)>=3-tau, the ordered primitive abc count at budget lambda with any prescribed two letters p-full and q-full is O_(lambda,p,q,epsilon)(X^((1/3-delta)lambda+epsilon)). The third letter is unrestricted. Two limiting degree measures supported on [3,infty) are incompatible with the one-third endpoint.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17265,11 +17522,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For each fixed tau>0 there exist delta_tau,lambda_tau>0. For every fixed 0<lambda<=lambda_tau and p with p*lambda>=3+tau, the primitive positive abc count through height X with rad(abc)<c^lambda and p-fullness on one prescribed letter has exponent (1/3-delta_tau)lambda+epsilon. The other letters are unrestricted.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** The lower valuation cutoff and upper numerical height contradict endpoint balance.
 
@@ -17279,11 +17536,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the limiting normalized exponent d=1/3, every letter has mass at least 1/3-1/s below scaled degree s>3. If one has no mass below three, it is the point mass (1/3) delta_3, the other two are wholly nonatomic, and Gamma=2/3. This profile is necessary for saturating single-full-letter counts along p*lambda tending to three.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** First-moment truncation and the zero-nonatomic-mass case of endpoint diffusion.
 
@@ -17293,11 +17550,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic abc endpoint d=1/3 and Gamma=1/2, every subset S of distinct complete values on one letter with normalized size c+o(1), c=1/6, has E(S)=o(|S|^3). The universal statements of this energy exclusion and growing doubling are equivalent.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); EQUIV-ABC-COMPLETE-LETTER-DOUBLING-AND-ENERGY (open).
 
 **Verification limits:** The energy inverse theorem and sumset iteration reduce positive relative energy to bounded doubling on a constant-density subset.
 
@@ -17307,11 +17564,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, each complete-letter subset S of normalized size c+o(1) has fixed m-fold additive energy o(|S|^(2m-1)) for every m>=2. For three such parts A,B,C the number of selected triples with a+b=c is o((|A||B||C|)^(2/3)). Comparable-size parts have vanishing pair density.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); EQUIV-ABC-COMPLETE-LETTER-DOUBLING-AND-ENERGY (open).
 
 **Verification limits:** Convolution and pairwise energy bounds transfer the single-letter exclusion without a fixed exponent saving.
 
@@ -17335,11 +17592,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For m=min s_i, M=max s_i, m sufficiently large and M/m<=1+theta with absolute theta>0, the number of primitive quotients with w of size Y and deficient prime product D of size H is O_(orders,epsilon)(Y^((1-kappa)/M+epsilon)H^(m/M)) for an absolute kappa>0. The limiting one-third bound forces saturation, and endpoint diffusion excludes the resulting point masses.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17349,11 +17606,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For m=min s_i sufficiently large, M=max s_i satisfying M/m<=1+theta for absolute theta>0, and M>=16(J+1)^2, M>=100(J+1)/kappa, all ordered positive powerful triples of the prescribed orders and arbitrary common divisor have an expansion through J+1 powers X^(1/(M+j)) with error O_(orders,J,epsilon)(X^(1/(M+J+1)+epsilon)). The coefficients have strict alternating signs and absolutely convergent primitive-quotient series. The largest required order controls the leading exponent, and the number of retained terms can be at least a constant multiple of sqrt(M).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17363,11 +17620,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At a limiting small-budget abc endpoint d=1/3, radical mass captured on a letter in at most K valuation residue classes modulo fixed q with q lambda bounded below becomes atomic in the weak degree measure. Compact subsets meet boundedly many scaled residue positions, and tightness preserves the captured mass. Thus captured normalized masses sum to at most 1/3 on each pair and 1/2 on all three.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17377,11 +17634,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Uniform strict savings below lambda/3 for fixed bounds and margins: captured mass on a pair above 1/3 or globally above 1/2, two letters with all valuations in the bounded residue spectra, or one letter critically full with p lambda>=3-tau and another with fixed positive captured mass. In particular two exact powers of orders at least c0/lambda are excluded at the one-third endpoint, even if neither fullness cutoff is near 3/lambda.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17391,11 +17648,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 when one letter is supported in [3,infinity), it has measure (1/3)delta_3 and the others are entirely nonatomic, with uniformly bounded scaled-degree densities on their whole supports. A two-root full-modulus count proves the interval bound even at zero. A second full letter must have limiting lower degree at most 3 minus a positive absolute gap.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17405,11 +17662,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, with complete columns regularized to near-full degree and opposite diffuse endpoint s_*, intersection with an interval and an integer progression having quotient of interval width by step at most X^tau has normalized count exponent at most min(1/6,tau/s_*), up to arbitrarily small extraction losses. Good stars are counted per column before fixing the common rows. Ordinary short progressions and each fixed side of a generalized progression give corresponding bounds.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17419,11 +17676,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the same endpoint and with the same regularization, a numerical interval of width X^h and a progression with at most X^zeta slots modulo M>=X^beta among its complete values give normalized exponent at most min(1/6,((h+zeta-beta)_+ +zeta)/s_*). After recording fixed-row congruences, the index of a two-dimensional lattice forces collinearity; apply the ordinary progression bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17433,11 +17690,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2, degree-regularized complete letters satisfy the all-scale progression-strip bound (AC1), its short-parameter modular version (AC2), and fixed-rank modular coefficient-box slicing. The estimates apply to arbitrary subsets of the regularized column part, to height-dependent progression parameters, and to presentations with repeated residues.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** complete.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 ### ARITH-ABC-REGULARIZED-COMPLETE-LETTER-FIXED-RANK-MODULAR-SLICING
 
@@ -17445,11 +17702,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, intersect a regularized complete letter with an interval of width X^h and a modular rank-R progression of coefficient volume X^(kappa L) modulo M>=X^beta. Its normalized exponent is at most min(1/6,(1-1/R)kappa+(h-beta)_+/s_*), up to arbitrary extraction losses. Slice the largest coefficient side and apply the ordinary modular progression bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17459,11 +17716,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For the two diffuse letters at the one-full endpoint with uniform density cap C_0, the mass below s is at least max(0,1/3-C_0(sqrt(s^2+2/C_0)-s)). The high-side first moment is bounded below by a filled leftmost interval.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17473,11 +17730,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At small budget lambda, one critically full letter with p lambda close to three and a different letter capturing a fixed positive normalized radical mass in narrow fixed-width scaled-degree bands around K residue classes of spacing bounded below imply a strict saving below lambda/3. The allowed band width, fullness slack and exponent loss depend only on the fixed capture parameters.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17487,11 +17744,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 with one letter supported on [3,infinity), each other letter has mass below s at least max(0, 1/3-C0(sqrt(s^2+2/C0)-s)). It is positive for s>3-1/(6C0), including s=3.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Use the density cap to bound the first moment of the portion of the measure above s.
 
@@ -17501,11 +17758,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Fix K, kappa, b>0. There exist eta,tau,delta,lambda_*>0 such that for fixed 0<lambda<=lambda_* a prescribed p-full letter with p lambda>=3-tau and another capturing b lambda log c within scaled width eta of at most K residue progressions of spacing q lambda>=kappa force primitive abc count exponent at most (1/3-delta)lambda+epsilon. At the exact one-full endpoint the corresponding captured diffuse mass is at most 2 C0 eta K (1+(R+2eta)/kappa).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Uniform bounded support and density bound the mass of the limiting bands. Compactness excludes an approaching one-third count while keeping the scaled widths fixed.
 
@@ -17515,11 +17772,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed s_A,s_B,s_C all sufficiently large, the count of ordered positive powerful triples with arbitrary common divisor is O_(orders,epsilon)(X^(max(1/M,(1/3-delta)lambda0)+epsilon)), where M=max s_i, lambda0=sum 1/s_i and delta>0 is absolute. The inverse-power count of the common divisor cancels the exact mandatory repair weight in every dyadic bin.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17529,11 +17786,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For s_i>=2, M=max s_i sufficiently large, and primitive heights satisfying sum_i M h_i/s_i<=3+tau with absolute tau>0, the arbitrary-gcd count has the alternating expansion through exponent 1/(M+J), with error O_(orders,J,epsilon)(X^(1/(M+J+1)+epsilon)) under M>=16(J+1)^2 and M>=100(J+1)/kappa. The sector is empty precisely when M/s_C>3+tau. Otherwise 1+1=2 contributes to the absolutely convergent coefficients.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17543,11 +17800,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Choose large orders p,q,r with M=max(p,q,r), beta=(1/3-delta)(1/p+1/q+1/r), M beta<1, and B=max(p,q,1+min(p,q)). Let R(N) have each prime of positive target valuation e<r to the power max(p,q,r-e). Ordered p-full and q-full pairs summing to N number at most N^epsilon times min(N^(1/B),(N R(N))^(1/(M+(1-M beta)B))). This includes all r-full targets, where R(N)=1.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17571,11 +17828,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For absolute tau,delta,lambda_*>0 and fixed lambda<=lambda_*, impose on at least two letters T that the log radical of valuations with lambda v_p(T)<3 log(T)/log(c)-tau is at most tau lambda log(c). The count of primitive triples at budget lambda is O_(lambda,epsilon)(X^((1/3-delta)lambda+epsilon)). In a one-third limiting box at least two letters have positive mass below three times their own limiting numerical height.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17585,11 +17842,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For M=ceil(3/lambda), s_C=M and s_T=max(2,ceil(M log(T)/log(c))) on both summands, let Z be the exact mandatory repair at deficient primes. Primitive abc triples with Z<=c^(kappa/2) number O_(lambda,epsilon)(X^((1-kappa/2)lambda/3+epsilon)) for sufficiently small fixed lambda and absolute kappa>0.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17599,11 +17856,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At every limiting small-budget box, retain two free degree sets at freeze cost f<d. For any spacing 0<a<=1 and opposing nonatomic mass H on a positive band [s,S], S<2s, let u=min(d-f,2H). The maximum D of the two signed phase correction masses is at least s*u^2/400, strengthened to s*u^2/310 when both free masses are at most 1/3. A lock of the indicated root mass can supply the band in place of nonatomic coordinates. There is no minimum nonatomic mass or complete-label assumption.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17613,11 +17870,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The pooled inequality gives d<1/3-1/1000 in the sector f<=7/30, H>=1/10 on the complementary band [3,4], D<=1/100000 at unit grid spacing. An explicit formal endpoint with total nonatomic mass 2/3 lies in that sector.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17627,11 +17884,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The pinned strict unit tree retargeted to 991/1000 has upper exponent 267494705491/500000001000, after replacing 12 leaf duals. The reweighted bound is at most 53499/100000 through budget 57804903499/58300100000, strictly improves the same-budget unit tree on [991/1000,130801157300042477/130801188430064625), and gives 2674998941999/5000000010000 at 9999/10000. Every retained leaf has an affine rational bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL (stale); EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE (stale); DERIVE-ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT (stale); EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS (stale); EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION (stale).
 
 **Verification limits:** Sparse exact replay pins both unit inputs, verifies each replacement dual and checks every untouched reweighted bound. A full exact replay checked all 1,830,732 leaf duals at 991/1000.
 
@@ -17641,11 +17898,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A nonatomic modulus band [3,3.05] and a degree-500 atomic block give d<1/3-1/1000 for the retained free-phase sector with f<=7/30, h<=0.656 and E<=0.00029. An explicit profile with Gamma=2/3-1/5000 satisfies these conditions. For its prescribed free grouping, either modulus scale taken alone fails the necessary parameter inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17655,11 +17912,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At nu_i=(1/6)delta_3+(1/6)Unif[2,4] on all three letters and d=1/3, original-root enumeration of the frozen factors and (QD2) cannot certify a strict saving. The proof permits fractional retention, arbitrary signed integer assignments to one grouped power, all fixed positive spacings, admissible shallow residue divisors of mixed full moduli, and fixed amplification.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17669,11 +17926,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the smoothness and prime-count parameters of arXiv:2608.16764v3 Corollary 4.1, every counted number has radical at most x^(1/7+o(1)). The count up to 2x is O_epsilon(x^(1/7+epsilon+o(1))), whereas equation (4.42) predicts x^(3/5-o(1)) in the prescribed short interval. The Dickman delay equation gives its required subpower lower bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-CARELLA-V3-SHORT-INTERVAL-COUNT-CONTRADICTION (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17683,11 +17940,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For a prescribed set I of at least two fullness orders, use the sector rad(prod of unprescribed u_i)<=W^b with b+sum_(i in I) h_i/s_i<=rho. At sufficiently small fixed rho, the primitive quotient count in W~Y,D~H is O(Y^((1/3-delta)rho+epsilon) H^(3/4)), where D multiplies p^(1-e/s_i) over deficient valuations on I. Weighted saturation forces at least two point masses, violating endpoint diffusion.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17697,11 +17954,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In the joint weighted sector with at least two prescribed orders, letting M be their maximum, the arbitrary-gcd count with required integer repair Z>=T is O(X^(max(1/M,(1/3-delta)rho)+epsilon) T^(-1/(4M))). The weight fractional deficit D<=Z^(1/M) leaves a power saving after summing the common divisor.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17711,11 +17968,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In the joint height and radical sector with at least two prescribed orders, the arbitrary-gcd count admits the J+1 alternating terms through reciprocal exponent 1/(M+J) when M>=16(J+1)^2 and (1/3-delta)rho<=1/(M+J+1). The error is O(X^(1/(M+J+1)+epsilon)). Nonempty sectors give strict signs. The remaining letter is constrained by the primitive radical budget.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17725,11 +17982,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For exponents 1/3<gamma_i<1 with sum(1-gamma_i)<1, the joint sector count in separate fractional defect bins H_i has factor prod H_i^gamma_i, keeping its strict weighted-height exponent. The arbitrary-gcd count has simultaneous tails prod T_i^(-(1/M-gamma_i theta_i)) for Z_i>=T_i, where theta_i=(s_i-1)/(s_i max(s_i-1, max_(j!=i) s_j)). Equal bin exponents 2/3 for three letters and 1/2 for two fail in squarefree primitive quotient families.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17739,11 +17996,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 if one measure is a single atom of mass 1/3 at three times its numerical height, the other two measures are purely diffuse, have bounded supports and no escaped moment, and have uniformly bounded densities. This includes a short atomic letter. The density bound gives a quantitative root-mass lower bound below three times either opposite letter's own height.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17753,11 +18010,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** With just one M-full prescribed letter A, require the other two primitive radicals to have product at most W^b, b+h_A/M<=rho, and positive mass at least a rho log W captured in at most K scaled valuation intervals of total length eta<=eta0 a on one unprescribed letter. The weighted quotient count has strict coefficient below 1/3 and a fractional defect factor H^gamma for any fixed gamma>1/3, with a gamma<1/3 possible when b<=(2/3+tau)rho. The arbitrary-gcd repair tail and alternating sector expansion follow.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17767,11 +18024,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, fix a row block of normalized mass 0.14 in degrees at least four. If the opposite column letter's diffuse support reaches four, two rows sharing this block can have difference >X^0.666 and near-full common columns. For target degrees supported on [2.95,3.05] with mean absolute degree-three discrepancy <=0.004, their ratio gives a contradiction. The shallow chart cost is <=0.1401 and the fixed difference divided by the targets' gcd supplies reconstruction weight.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17781,11 +18038,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The Taylor valuation of every actual-rank evaluation minor divides the gcd of maximal minors. The primitive integer kernel has covolume sqrt(det(AA^T))/gcd, so its auxiliary polynomial has height exponent at most (sqrt(Lambda)-sqrt(Lambda-B))^2, with Lambda=b(M+1)r/2. Under the Taylor and rank margins, terminal reconstruction requires 4Lambda(1-sqrt(1-B/Lambda))<w.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17795,11 +18052,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** With row diffuse mass >0.14 at scaled degrees at least four and column diffuse support reaching four, the minimum nonatomic endpoint cannot have target support in [2.875,3.125] and total absolute discrepancy about three at most 0.0104. The kernel improvement applies throughout the possible common-divisor weight range. It excludes the target (1/6)delta_3+(1/6)Unif[2.8752,3.1248] with the specified opposite profiles.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17809,11 +18066,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For n=X^L at small fixed L, random linear images of growing-rank coefficient boxes give primitive additive graphs with part sizes n^(1/6+o(1)) and edge exponent 1/3. Every ordinary progression of numerical length through X^(1-sqrt L) meets each part in n^o(1) points. The model also satisfies fixed-rank near-ambient modular progression bounds and radical-overlap caps. It prescribes additive data and has free prime-exponent spectra.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17823,11 +18080,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** An equal-budget overlay changes 19,522 leaf duals in the pinned strict unit tree, retaining 1,830,732 leaf positions. Its exact unit-budget exponent is 1070000267/2000000686. Exact replay of seven old knot ceilings and common affine supports yields strict improvement throughout [991/1000,1].
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER (stale); EXT-ABC-BELYI-THREE-POINT-DESCENT (stale); ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS (stale); ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW (stale); DERIVE-ARITH-ABC-EUCLIDEAN-RESIDUAL-RADICAL (stale); ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS (stale); DERIVE-ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT (stale); ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP (stale); DERIVE-ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-RESIDUAL-RADICAL (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT (stale); EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER (stale); EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS (stale); DERIVE-ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL (stale); EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT (stale); DERIVE-ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE (stale); DERIVE-ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT (stale); EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS (stale); EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION (stale).
 
 **Verification limits:** Sparse exact replay checks all 19,522 changed duals and retained bounds plus seven old supporting knots. The full standard verifier separately replayed all 1,830,732 duals and reproduced the exact bound at unit budget.
 
@@ -17837,11 +18094,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the minimum nonatomic endpoint, if the row letter has diffuse mass greater than 0.164 in a compact band of scaled degrees at least four, the shifted target cannot have integral of |r-3| at most 0.0224. Two fixed rows share a full factor at shallow chart cost at most 0.1641. The first determinant and outside-label Newton breakpoints give the count, without a lower bound on the row difference or a support assumption on the column letter. It excludes the target (1/6)delta_3+(1/6)Unif[2.7312,3.2688] for the indicated row spectrum.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17851,11 +18108,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At every d=1/3, Gamma=1/2 profile and ordered pair of distinct letters A,T, the integral against nu_T of min over positive integers j of |r-a j|+kappa j/(M(M+1)) is at least kappa min(1/6,nu_A,na((kappa,infinity)))/(2M), for all a,kappa>0 and positive integers M. The shared-row fibre and first Taylor determinant use only shallow residue precision. Newton breakpoints recover the outside labels. At a=3,kappa=4,M=7 it excludes target (1/6)delta_3+(1/6)Unif[2.72,3.28] when the row diffuse mass above four is 1/6.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17865,11 +18122,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Every limiting anatomic box with L comparable to its radical budget satisfies 4d<=1+min_i l_i and max_i l_i<=1-2d. A letter of root mass below d rules out either other letter having mass above 1-2d by the bounded-root modulus or real short-strip argument. The bounds give l_i in [1/3-4xi,1/3+2xi] when d>=1/3-xi.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17879,11 +18136,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed theta>=0 and eta>0 and sufficiently small fixed lambda, primitive triples at radical budget lambda with rad(T)<=c^(theta lambda) for any one letter have count O(X^((min(1/3,(1+theta)/4)+eta)lambda+epsilon)). This uses the anatomic letterwise radical comparison and the least-root-mass inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-ONE-LETTER-RADICAL-QUARTER-BOUND (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17893,11 +18150,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For sufficiently large fixed p,q and rad(N)<=N^nu_* with absolute nu_*>0, the count of ordered p-full and q-full summands of N with A<=N^alpha and gcd>=G is O(N^epsilon min(N^(1/B),N^(sigma(alpha/p+1/q)) rad(N)^sigma G^(-chi))). Here S=max(p,q), B=max(S,1+min(p,q)), sigma=1/3-delta and chi=sigma(1/p+1/q)-3/(5S)>=1/(30S). No prescribed fullness on the target and no comparability of p,q are needed.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17907,11 +18164,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For p,q sufficiently large, S=max, beta=sigma(1/p+1/q), 0<=nu<=1/S, the arbitrary-gcd count of targets N<=X with rad(N)<=X^nu is O(X^(beta+nu max(sigma,1-S beta)+epsilon)). Interpolating the height and radical of the coprime gcd factor gives the multiplier bound. A short-summand cap A<=N^alpha permits alpha/p+1/q in place of 1/p+1/q.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17921,11 +18178,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** With two prescribed summand orders and primitive weighted budget rho=b+h_1/p+h_2/q, the W~Y,D~H quotient count is O(Y^(rho/4+b/4+eta rho+epsilon)H^gamma) for fixed gamma>1/2 and sufficiently small rho. At b<=tau rho it strengthens to O(Y^((1/4-delta)rho+epsilon)H^gamma). At the limiting boundary both positive-height summands are finite-scale, so the target's cheap modulus rules it out.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17935,11 +18192,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every fixed gamma>1/2 and all sufficiently large fixed p,q, the count at N with A<=N^alpha and gcd>=G is O(N^epsilon min((N/G)^(1/B), N^(sigma_*(alpha/p+1/q)) rad(N)^gamma G^(-sigma_*(1/p+1/q)))). Here sigma_*=1/4-delta and B=max(max(p,q),1+min(p,q)). For p=q=s and r-full N with r>=Cs this gives exponent at most (1/2-delta)/s.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17949,11 +18206,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Put beta_*=(1/4-delta)(1/p+1/q), t_*=max(1/4-delta,1-S beta_*), S=max(p,q). For 0<=nu<=min(1/S,c_0(1/p+1/q)/16) the arbitrary-gcd count with N<=X and rad(N)<=X^nu is O(X^(beta_*+t_*nu+epsilon)). A short cap A<=N^alpha replaces 1/p+1/q by alpha/p+1/q. Equal orders give a strict saving below 1/(2s) for sufficiently small nu.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17963,11 +18220,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Let the narrow scaled monomial support have finitely many horizontal slices of total length V<kappa. Its target integrated width in directions (i(r),r-a i(r)) is at least (V/2) min(1/6,H_A(kappa)) at d=1/3 and Gamma=1/2. Taylor rank drop with primitive evaluation rows and Newton breakpoints proves the bound. A chamfered support excludes the r=3-centered target with diffuse interval [2.7,3.3], which passes the rectangular inequalities in every orientation.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17977,11 +18234,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2 split the free pair into two groups of pooled outside masses t_1,t_2, keeping atom windows in group one. If y=sqrt(2alpha(M+1)r_1r_2)<kappa and h_1r_1+h_2r_2+ME<(2/3)b y, the count coefficient is at most mu+2b_Q+max(t_1,t_2) up to extraction losses. Specialization zeros and Newton breakpoints cover the two alternatives. The explicit profile passes every rectangular one-root inequality in all orientations.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -17991,11 +18248,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For identical free profiles, use total horizontal area V of the sparse support and its integrated valuation width in the first two-root Taylor determinant. The explicit profile with wide discrepancy 13/15000 satisfies the projective determinant and the chart budget, while every rectangular Taylor criterion for its chosen grouping fails even when the modulus and shallow record vary.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18005,11 +18262,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For m>=2 groups of total outside mass 1/3 with all atoms in group one, the first Taylor determinant of support volume V uses y=(m! alpha V)^(1/m)<kappa and B<m b y/(m+1). The normalized count is at most mu+m b_Q+1/3-min_j t_j. A polynomial zero count accounts for the exceptional specialization vectors by losing at least their smallest dictionary exponent.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18019,11 +18276,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In ordinary or short-strip primitive ratio locks with lifted powers P,Q and projected area exponent t, compress both root coordinates modulo prime-power divisors on each nonaxial line. The resulting t/2+t/(2PQ) bound improves the earlier nonaxis line count with no additional guard. The existing axial and primitive-origin bounds still apply. Exact fixed-release comparisons improve 11/20 to 209/400.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18047,11 +18304,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In every limiting anatomic small-budget box with L comparable to its radical budget, d<=min_C max(l_C,c_C+min_{T!=C} c_T), where c_T is the nonatomic part of the weak degree measure. If l_C<d neither opposite letter is releasable by finitely many grouped roots and a numerically short cofactor. At d=(1+s)/4 with l_C=s<1/3, both opposite masses are (1-s)/2 and their nonatomic masses are at least d-c_C; the total nonatomic mass is at least (1-s)/2.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18061,11 +18318,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At radical budget lambda and rad(C)<=c^(theta lambda) with fixed theta<1/3, a different letter carrying at least ((1+theta)/4+b)lambda log c logarithmic radical in at most K sufficiently narrow scaled-degree intervals has exponent ((1+theta)/4-delta)lambda+epsilon for small fixed lambda. Fixed K and b>0. Uses absence of a finite atomic submeasure that large in the quarter equality case.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-QUARTER-SAVING-BY-OPPOSITE-DEGREE-CONCENTRATION (stale); DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18075,11 +18332,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For theta<=theta_0<1/3 and small fixed lambda under rad(C)<=c^(theta lambda), require a different letter of height h to have logarithmic radical at scaled degrees below 2h/(1-theta)-tau at most tau lambda log c. The count exponent is ((1+theta)/4-delta)lambda+epsilon with uniform positive tau,delta for fixed theta_0. A full letter with p lambda at least the threshold satisfies the condition.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-QUARTER-SAVING-BY-HEIGHT-ADJUSTED-FULLNESS (stale); DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18089,11 +18346,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For primitive u+v=W, rad(v)<=W^b_B, rad(W)<=W^b_C and (log_W u)/p+b_B+b_C<=rho, count W~Y and D~H where D=prod_{0<e<p} ell^(1-e/p) on u. For any fixed gamma>1/4 and small rho the exponent bound is Y^(rho/4+b_C/4+eta rho+epsilon) H^gamma. If b_C<=tau rho it improves to Y^((1/4-delta)rho+epsilon) H^gamma. The exceptional quarter profile forces the prescribed letter to be releasable.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18103,11 +18360,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For sufficiently large fixed p and small absolute c_*>0, count A+B=N with A p-full, rad(B)<=N^(1/p), rad(N)<=N^(c_*/p) and arbitrary gcd. For fixed gamma in (1/4,1) and sigma=1/4-delta the bound is O(N^(2sigma/p+epsilon) rad(N)^gamma). Decreasing c_* gives exponent at most (1/2-delta)/p.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18117,11 +18374,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For sufficiently large fixed p, A+B=N<=X, A p-full, rad(B)<=X^(1/p), rad(N)<=X^nu with nu<=c_*/p and arbitrary gcd, count O(X^(2sigma/p+(1-2sigma)nu+epsilon)), sigma=1/4-delta. The exponent is strictly below 1/(2p) for small nu. The quotient repair supports enter both original radical caps, with a weighted common-divisor bound plus separate larger radical branches.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18131,11 +18388,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In the disjoint-group projective or rectangular specialization count at d=1/3 and Gamma=1/2, keep the same Taylor determinant condition and charge mu+max(b_Q+2c-t_1,2b_Q+2c-min_{j>=2}t_j), where c=1/6. The surviving specialization pays one shallow chart and the exceptional case pays only two, independent of m, by summing the polynomial-zero bound over residue-partitioned dictionaries. Atomic mass frozen separately is paid at its own cost.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18145,11 +18402,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The displayed unequal-width two-band free pair and three-part modulus profile of masses 1/3, moments one and total diffuse mass 1/2 satisfies (TN1) and the improved chart budget, so cannot occur at d=1/3. For the same grouping, the previous rectangular budget cannot work for any rectangle or shallow modulus. This profile satisfies the sparse one-root inequalities in each orientation.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18159,11 +18416,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For all three measures (1/6)delta_3+(1/6)Unif[2,4], any fixed m>=2, identical assignments on the free letters to disjoint groups with retained atoms in group one, and any projective horizontal support and allowed shallow divisor, the conditions (TN4) and the improved chart count (TC1) cannot give strict saving. Covers partial freezing of atomic and diffuse mass; the width inequality permits nonzero signed multipliers with the same chart budget.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18173,11 +18430,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At d=1/3 and Gamma=1/2 with all three measures (1/6)delta_3+(1/6)Unif[2,4], an arbitrarily near-full complete-label graph cannot have a common factor of fixed positive numerical weight whose full prime valuations are all in the shrinking atom window at three. The progression bound gives b=log_X rad(F)/L<=1/9. The given unit modulus and the opposite degree-three patches yield a one-root count of cost 2c-b/100, c=1/6. Pairs of regularized complete vertices with atom-window gcd of any fixed positive weight are consequently exponentially sparse.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18187,11 +18444,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the broad symmetric minimum diffuse endpoint, each complete degree-three atom-window factor has normalized information at least c/2=1/12 up to arbitrary fixed tolerance and an exponentially sparse edge family. Its entropy has the same lower bound. Any dictionary exponent u<c/2 on a near-full family forces a positive atom-window common gcd by two repeated atom locks and outside fillers in the four-term residue packing inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18215,11 +18472,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** On the regularized near-full complete graph, 2 H(K)/log n-sum H(K_T)/log n+eta>=c, with c=1/6 and eta=min_T min(c,(h_T-w)_+/s_T) where h_T is any containing interval exponent and s_T is the largest opposite diffuse degree. The information version holds outside sparse edges. Dictionary exponent p<c forces w+(c-p)s_T<=h_T on all three letters. At broad symmetry and a 3/4 width this gives 5/48 for any full atom dictionary.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18229,11 +18486,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the broad symmetric minimum diffuse endpoint the three degree-three atom factors have product height exponent 3/2. Combining their individual lower bound 1/12 with the joint residue entropy yields joint normalized entropy at least 5/24. If all three marginal entropies attain 1/12, each conditional entropy given the other two is at least 1/24. Vanishing conditional entropies in all three directions instead require each marginal entropy to approach c.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18243,11 +18500,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the broad symmetric endpoint, finitely many full prime-power subfactor types of the atom windows with weights w_i and marginal information a_i satisfy sum m_i a_i >= min(c,(sum m_i w_i-1/3)/4) for all fixed nonnegative integer multiplicities. It holds for dictionary exponents and pointwise information away from sparse edges. Equal-letter atom overlaps are sparse, and diffuse fillers allow mixed moment packing. Four repeats of a half-mass atom need marginal information at least 1/24.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18257,11 +18514,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At the broad symmetric endpoint suppose the other two full atom records attain their minimum normalized entropy 1/12. Any positive-weight permitted subfactor of the indicated atom retains at least half its own entropy conditioned on both other full records. A half-mass atom factor then has conditional entropy at least 1/48.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18271,11 +18528,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A positive integer with a fixed number of signed original-valuation groups of logarithmic height O(lambda log X) and valuation approximation error delta log X can be reduced to finitely many fixed exponent lists before the height limit. Pack very large valuations, remove large rows, and normalize the integer linear solution via a pivot minor. This yields short rational roots and a wider exponent O_m,H(delta+lambda). Amplification using exact-output sign coloring handles overlapping group supports.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ADAPTIVE-VALUATION-BASIS-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18285,11 +18542,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** With rad(C)<=c^(theta lambda), if another letter satisfies (AB1) for fixed m,H and sufficiently small error and lambda, then for any fixed omega>0 the count is O(X^((theta+omega)lambda+epsilon)). The releasability contradiction applies without atom scale tightness. It excludes vanishing finite-center absolute or squared deviation even with escaping centers when d>l_C.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-BUDGET-LOW-RADICAL-ADAPTIVE-VALUATION-BASIS (stale); DERIVE-ARITH-ABC-ADAPTIVE-VALUATION-BASIS-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18299,11 +18556,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed c_0,eta>0, large p,q with lambda=1/p+1/q sufficiently small, and r lambda>=c_0, every r-full target N has O(N^(eta lambda+epsilon)) solutions A+B=N with A an exact p-th power and B q-full, arbitrary gcd. A large primitive quotient has a fixed positive-height full core. Cheap B blocks release the pure power and force B to have a short-root representation.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18313,11 +18570,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed c_0,eta,m,H and sufficiently small fixed lambda,delta, an r-full target N with r lambda>=c_0 has O(N^(eta lambda+epsilon)) representations with B q-full, q lambda>=1, and A satisfying (AB1) at height N. Supports of the gcd are fixed first. B's cheap moduli release the grouped A, yielding bounded-root congruence counting on the target core.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale); DERIVE-ARITH-ABC-ADAPTIVE-VALUATION-BASIS-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18327,11 +18584,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Prescribe only p-fullness on A and restrict the primitive quotient to (QF2). If p>=16(J+1)^2 and max((1/4-delta)rho,gamma/p)<1/(p+J+1), the arbitrary-gcd count has scalar expansion through X^(1/(p+J)) with alternating nonzero constants and error X^(1/(p+J+1)+epsilon) in each nonempty sector. The displayed 4^t quotient has second and target original valuations p-1 at the prime three.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18341,11 +18598,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For nonaxial nonorigin lines in ordinary and short-strip sliced locks or guarded repeats, average the actual residue gcd over lattice-line indices. Beyond the frozen cost the count is at most t/2+min((t/2-(P-1)r_1)_+/Q,(t/2-(Q-1)r_2)_+/P) in addition to earlier alternatives. Origin and axis guards stay in force. Exact fixed-release witnesses improve 209/400 to 13/25 and the repeat bound 317/600 to 3167/6000.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18355,11 +18612,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** In any limiting small-budget box with d>=d_0>0, for any pair with c_U+c_V>=d let Delta=c_U+c_V-d. The complementary letter's escaped first moment plus weight over R_* is at most C Delta, and if the pair is tall the short height gap has the same bound. Constants depend only on d_0. Thus any saturated pair forces a tall complementary letter with compact supported degree measure and no escaped first moment.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18369,11 +18626,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed theta<1/3 and w_0>0, cap rad(C)<=c^(theta lambda). If A captures root mass at least (1+theta)/4-epsilon in K sufficiently narrow scaled intervals and B has numerical weight at least w_0 above the absolute scaled-degree cutoff, then epsilon<w_0/C gives a fixed gap below the quarter exponent for small fixed lambda. At equality A,C have pair surplus at most epsilon, contradicting the high tail on B.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-GLOBAL-LOW-LETTER-DIFFUSE-MASS (stale); DERIVE-ARITH-ABC-QUARTER-BOUND-MINIMUM-LETTER-MASS (stale); DERIVE-ARITH-ABC-SMALL-BUDGET-ONE-LETTER-RADICAL-QUARTER-BOUND (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18383,11 +18640,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For the exchangeable atom records of a near-full uniform family of same-letter additive quadruples, write a for one normalized marginal entropy and J for joint normalized entropy. Then 3J-8a>=c and H(K_4|K_1,K_2,K_3)/log n>=(c-a)/3 in the limit. At minimum dictionary exponent 1/12 this gives 1/36. A dictionary exponent strictly below c excludes any injective relabeling respecting all such additive quadruples in an abelian group.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18397,11 +18654,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For three atom-at-three profiles with nonatomic mass c=1/6, let B_T=(1-c s_opp)/3 with s_opp the best opposite diffuse support endpoint. Near three assume both opposite one-sided density bounds k_U,k_V and enough mass. A strict (1+2 epsilon)^2(c+(1/2+epsilon)B_T)<3 harmonic_mean(k_U,k_V) gives no positive common atom factor on T. When available on all letters the repeated-record inequality uses s_* in place of four. It applies to unequal uniform half-widths in [1,11/10] and to common half-width 9/8.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18411,11 +18668,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For any limiting outside projection with arbitrarily cheap full complementary moduli, first thin negligible pair fibres. A single anchor row retains normalized exponent at least 2d-c_U-c_V. Two-edge ratios cancel the varying column outside factors and GW counts their complete values for each row-anchor pair; prime coloring then separates both complete free letters exactly. Applies across all degree masses whenever this exponent is positive.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18425,11 +18682,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Cover non-light columns with a small set of anchor rows in each cyclic orientation. Refining row labels costs c_U+c_V-d per orientation and preserves edge exponent d during multiplicative separation. Joint vector record freezing then gives complete-label edge exponent at least 10d-6h, where h is the total effective outside-label entropy after a pointwise information binning. The positive range h<5d/3 ensures cheap complementary moduli at nonzero nonatomic total. 
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18439,11 +18696,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A three-letter lock of root cost mu and numerical weight above a containing interval width on one letter gives 23d<=15h+mu when the refined complete-label exponent is positive. Substituting d=1/3-epsilon and h<=1/2+gamma gives the deficit inequality epsilon>=(1/6-mu-15gamma)/23.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18453,11 +18710,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There exist absolute sigma,lambda_0>0 such that for 0<lambda<lambda_0, fixing any one complete value in any letter gives O_(lambda,epsilon)(X^((1/3-sigma)lambda+epsilon)) primitive triples at global radical budget lambda. It is uniform in the fixed value and includes arbitrary diffuse mass. At a violating endpoint both free letters become wholly nonatomic. A multiplicative U,V rectangle and CRT across affine row terms contradict saturation, retaining escaped first moment by a cheap tail lock.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-FIXED-COMPLETE-LETTER-STRICT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18467,11 +18724,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For an absolute sigma>0 and theta<sigma, at sufficiently small fixed lambda restrict any one complete letter to at most X^(theta lambda) values. The count exponent is (1/3-sigma+theta)lambda+epsilon by the uniform fixed-letter estimate. A sequence attaining d=1/3 therefore needs large complete dictionaries on all three letters.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-SMALL-COMPLETE-VALUE-DICTIONARY-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-FIXED-COMPLETE-LETTER-STRICT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18481,11 +18738,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For one grouped free ratio with bounded positive root multipliers, the first Taylor determinant alone recovers retained radical positions except at a bounded number of valuation breakpoints. The counting cost is the frozen cost, shallow chart cost and the sum of finitely many largest retained atom masses. No complete-label graph is needed and the atom charge vanishes for entirely diffuse free letters.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18495,11 +18752,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At all three uniform measures on [3-3/40,3+3/40] of mass 1/3 and height one, the first-determinant Newton count has coefficient at most .290 and gives an open strict sector allowing small atom mass. The older rectangular terminal inequalities cannot give a strict saving for this same full free grouping, even with optimized full/shallow modulus and fixed amplification.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18509,11 +18766,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The all-diffuse uniform [2,4] profile passes the necessary one-root sparse first-determinant width test for symmetric or asymmetric positive multiplier assignments, even after arbitrary partial freezes and shallow moduli. Direct specialization with several disjoint groups is also obstructed by the two chart-budget branches at total diffusion one. This is a formal profile and the barrier is scoped to those counting schemes.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18537,11 +18794,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every pair of letters along any actual limiting one-third box sequence, the full upper-half moment exceeds half the total numerical height by a uniform positive amount. This includes escaped first moments and every total nonatomic mass. For bounded-scale prime sizes below an absolute normalized cap, a sub-half divisor record thus settles each primitive shift uniformly and gives the conditional target entropy identity (PQ4).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18551,11 +18808,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For all sufficiently small fixed lambda, restricting a chosen complete letter to an arbitrary dictionary of size at most X^(lambda/800) gives an absolute strict saving below the coefficient 1/3. This uniform bound implies entropy at least 1/800 per complete marginal at saturation. It uses the pooled cut, then a one-letter first residue determinant in the shared-scale case.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-QUANTITATIVE-COMPLETE-VALUE-DICTIONARY-SAVING (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18565,11 +18822,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For fixed D, restricting two complete letters to any rational plane curve of degree at most D gives a uniform strict coefficient saving for sufficiently small fixed lambda. The theorem allows unrestricted coefficients, singular contacts, reducible curves and sufficiently economical covers. Puiseux integrality confines excluded primes to polynomial height, and a weighted determinant on standard monomials exploits both actual residual heights.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-UNIFORM-CURVE-CONTACT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-FIXED-COMPLETE-LETTER-STRICT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-QUANTITATIVE-COMPLETE-VALUE-DICTIONARY-SAVING (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18579,11 +18836,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For two wholly nonatomic limiting boxes of equal root mass l, each nonzero signed shift has a strict normalized exponent saving below l, uniformly in the shift and allowing common divisors. Retaining only the larger escaped moment and stripping shared finite-band primes makes the pooled CRT work. Fully sized marginal dictionaries have smaller fourth energy and larger sum and difference sets by a power.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18593,11 +18850,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** An explicit two-parameter family gives N^(2-o(1)) primitive complete-value matching edges, with squarefree and pairwise coprime root factors of degree one and two and normalized mutual information zero within each letter. The radical is comparable to the square of the numerical height, exposing why the arithmetic independence properties alone cannot resolve small budgets.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18607,11 +18864,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** On the formal all-diffuse [2,4] profile, every rectangular first-determinant choice charging all charts and satisfying the saving budget must contain a group whose full root dictionary costs less than its shallow record. Holds for all fixed group counts at least two, asymmetric retained subsets and bounded signed multipliers. An exact freeze of those groups followed by the same independent chart method cannot give a saving.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18649,11 +18906,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** At every sufficiently small fixed lambda, an absolute saving in the coefficient of lambda holds on any curve in two complete letters uniformly in coefficients, with a constant depending on any finite degree cap. This cap can grow arbitrarily as lambda goes to zero. Divisibility by branch orders suppresses large orders on the diffuse opposite letter in the single-full-coordinate case.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ABSOLUTE-CURVE-SAVING-FIXED-BUDGET-ARBITRARY-DEGREE (stale); DERIVE-ARITH-ABC-UNIFORM-CURVE-CONTACT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-FIXED-COMPLETE-LETTER-STRICT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-QUANTITATIVE-COMPLETE-VALUE-DICTIONARY-SAVING (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale); DERIVE-ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18663,11 +18920,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** There exist absolute c*, sigma*, lambda* > 0 giving a strict coefficient saving uniformly for curves in two complete letters of degree up to (log X)^c*. Joint Euler–Rankin support fixing and branch-record counts have arbitrarily small normalized costs when c tends to zero, and the quotient-basis determinant uses a polynomial-in-degree cutoff.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-LOGARITHMIC-GROWING-COMPLETE-CURVE-DEGREE-SAVING (stale); DERIVE-ARITH-ABC-ABSOLUTE-CURVE-SAVING-FIXED-BUDGET-ARBITRARY-DEGREE (stale); DERIVE-ARITH-ABC-UNIFORM-CURVE-CONTACT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-FIXED-COMPLETE-LETTER-STRICT-ONE-THIRD-SAVING (stale); DERIVE-ARITH-ABC-QUANTITATIVE-COMPLETE-VALUE-DICTIONARY-SAVING (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale); DERIVE-ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18677,11 +18934,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** On a full auxiliary curve with polynomial inner chart heights, nonconstant narrow projective image of height X^(O(L)), and exact odds map of degree O(1/L), any positive post-strip diffuse mass supplies an arbitrarily cheap terminal lock. Normalized good models force each branch order to divide the exact recorded degree. If the free residual spectra are both atomic and the third full modulus is fixed, amplified GW supplies the terminal count instead. This does not infer that a first chart is a curve.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18691,11 +18948,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For subpower inner coefficient height and finite inner degree, a rational projective map of degree at least three cannot carry a one-third endpoint on which all three letters have positive nonatomic mass. Covers arbitrarily growing outer degree. Riemann–Hurwitz, parameter reconstruction and the real shortening at a short contact give the bound.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18705,11 +18962,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For a degree-two rational projective parameter with boundary counts (2,1,1) and split two-contact fibre, the three cheapest of the four linear factors give an auxiliary primitive abc triple of height X^(1/2+o) and radical budget at most (3/4+o)L relative to X. The total normalized exponent is at most 1/4+o, without a diffuse-mass hypothesis.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18719,11 +18976,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The exact primitive cubic matching has dominant complete-pair maps. Each degree-D curve hits O(DN) edges out of N^(2-o), and an evaluation matrix from a fixed number of independently sampled edges has full rank except fraction N^(-1+o). One cubic rational projective map still contains the family. Its radical has height exponent two.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18733,11 +18990,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** An explicit primitive quartic identity yields actual balanced radicals N^(2-o) in height N^4, fixed coprime full divisors of product above height, and n^(1/3-t-o) distinct targets for record cost t in base n=N^6. It identifies which conclusion cannot follow from the radical caps and height alone without the high valuation regime.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18747,11 +19004,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every actual limiting one-third box, some complete-letter pair admits full coordinate locks with combined root cost at most 1/3−eta and numerical weight at least its shorter numerical height plus eta for an absolute eta>0. Unequal heights allow one diffuse deletion; equal heights allow an equal-mass exchange across separated opposite diffuse bands and then a small deletion. No bound on individual prime size.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-GLOBAL-AFFORDABLE-WHOLE-COORDINATE-PAIR-LOCKS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18761,11 +19018,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** A failing subsequence for a prescribed pair in a balanced endpoint with prime-resolved locks requires one prime of normalized mass tending to 1/3 and carrying all the numerical height of a letter at least as tall as the other. An atomic block or prime-resolved proper part of a full atom otherwise beats the opposite bottom diffuse quantile. The other pair remains affordable.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-PRESCRIBED-PAIR-LOCK-INDIVISIBLE-PRIME-CLASSIFICATION (stale); DERIVE-ARITH-ABC-GLOBAL-AFFORDABLE-WHOLE-COORDINATE-PAIR-LOCKS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale); DERIVE-ARITH-ABC-BALANCED-PAIR-POOLED-QUANTILE-DISPERSION (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18775,11 +19032,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For all three formal measures of mass 1/3 uniform on [3−117/1000,3+117/1000], one full free grouping and a capped first determinant give a strict normalized count bound of 33/100. An open neighborhood satisfies the same strict margins, and the former uncapped first rectangle fails on the same full grouping for arbitrary ranks and fixed amplification.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18789,11 +19046,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For the formal all-diffuse [2,4] law, arbitrary asymmetric retained submeasures, bounded signed multipliers, sparse one-root projective supports and adaptive shallow depths cannot meet both Taylor and chart budgets using the capped valuation bound. This is a barrier to the specified proof criterion.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18803,11 +19060,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every fixed group count m≥2, the formal [2,4] law prevents a saving by the capped first rectangular Taylor certificate if every group costs at least its own chart. Prime-dependent and coordinate-dependent depths are allowed. Hölder aggregates them by their geometric mean and the remaining budget excludes the scalar height inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18817,11 +19074,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For outer-bounded full geometric degree, small-height quasi-finite narrow projection, monomial exact odds, and an already fixed full third modulus, diffuse degrees force one deep local boundary parameter after ruling out a finite scaled valuation alphabet. An anisotropic Hilbert determinant cuts dimension at arbitrarily small normalized cost. Repeat with bounded degree and use amplified GW when residual free spectra are both atomic.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18831,11 +19088,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** On a good smooth model with individually smooth boundary components, a bounded number of components meeting, and a compact countable limiting set of scaled signed orders, the anisotropic determinant gives one cut at arbitrarily small cost even with growing full degree. For a surface with bounded narrow image degree and the stated specialization hypotheses the curve terminal then finishes.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18845,11 +19102,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For v=x(x−y^R) and odds v z_3^q, the calculated exceptional orders 2j give a dense scaled interval qL+2jL while local parameters all have valuation one, L=1/R. Bounded narrow projection degree and the order-O(1/L) restriction on generic curves do not bound the exceptional order alphabet of the displayed resolution.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18859,11 +19116,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For three mass-1/3 uniform profiles on [3−3/20,3+3/20], retain the whole free pair and apply the second-coordinate precision to count at normalized exponent at most 33/100. All capped full-grouping rectangles fail here, allowing arbitrary ranks, depths and fixed amplification.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18873,11 +19130,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** The formal all-diffuse uniform [2,4] law evades the exact-error two-dimensional Taylor lower-bound certificate on arbitrary one-root rectangular supports with adaptive depths, signed multipliers and fixed amplification. The optimum occurs before the last error strip is active, where the count of Taylor weights reduces to the ordinary triangular integral. Nonrectangular exact-error supports are outside the barrier.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18901,11 +19158,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** On the formal [2,4] mass-1/3 uniform profile, arbitrary sparse one-root supports, bounded nonzero signed multipliers, asymmetric retained subsets, and per-prime adaptive depths cannot yield a strict count via the exact-error Taylor bound and primitive maximum row heights. The mixed area lower bound accounts for discrete slices by a tilted unit segment. Both regimes of the finite error-strip count are included.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
@@ -18915,39 +19172,53 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** On a fixed anatomic box, primitive projective row normalization contributes the same limiting sum of local support heights to every determinant column. Leibniz can then use the mean of the selected Archimedean monomial weights instead of their maximum. This can improve the criterion for different free archimedean vectors, so the maximum-row mixed area obstruction does not cover that asymmetric optimization.
 
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION (stale); DERIVE-ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT (stale); DERIVE-ARITH-POWERFUL-SCALABLE-CONGRUENCE-INDEPENDENT-POWER (stale); DERIVE-ARITH-POWERFUL-SCALABLE-AMPLIFICATION-CONGRUENCE (stale); DERIVE-ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS (stale); DERIVE-ARITH-ABC-ONE-THIRD-LIMIT-MASS-DIFFUSION (stale); EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA (stale); DERIVE-ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR (stale); DERIVE-ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES (stale); DERIVE-ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE (stale).
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ERDOS943-KERNEL-GCD-REFINED-SQUARE-QUOTIENT-TAIL
+
+[Kernel-gcd refined actual square-quotient six-cycle tail](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md)
+
+**Exact scope:** For every n>=2, positive fixed coefficients, caps1<=Ri,Ki<=n and2(R1R2)^2<n, sum over all simple selected C6 and shared-right paths in them of Wstar is O_epsilon(n^epsilon*K1*R1^2*R2). For EVERY real Y>0, cycles with some Wstar>=Y number at most the same prefactor divided byY. Exact general codegrees give K1*n^epsilon continuations per path. Side-swapped statements hold. This uses Wstar=alpha^3*sqrt(g/sf(abs(ell/g^3))) and selected actual labels; weights need not be integers or >=1.
+
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
 **Current blockers:** none in declared routes.
 
-**Verification limits:** Written argument with scoped theorem inputs.
+**Verification limits:** Core proof independently rederived by root and FullTrace; canonical successor adds explicit source/initial-range and reverse-comparison details. Actual dependency audit is root-owned. No finite computation is a proof premise.
 
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
 |---|---|---|---|---|
-| ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR | claim | proved / partial | The factor in Carella arXiv:2608.16764v3 equation (4.35) has coefficient z(z+1)/2 at p^(-2s), whereas the claimed z^omega Dirichlet series has coefficient z. The identity fails for z other than 0 or 1. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exceptional-set estimates and dyadic coordinates, Carella v3 |
+| ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR | claim | stale / partial | The factor in Carella arXiv:2608.16764v3 equation (4.35) has coefficient z(z+1)/2 at p^(-2s), whereas the claimed z^omega Dirichlet series has coefficient z. The identity fails for z other than 0 or 1. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exceptional-set estimates and dyadic coordinates, Carella v3 |
 | ARITH-ABC-COMPLETE-ADDITIVE-DIVISOR-RECORD-COUNT | claim | proved / partial | Let N_W and K_W count complete values and divisor records in each part, H bound their magnitudes, and F lower-bound the product of the three full locked divisors. The edge count is at most sqrt((1+2H/F) times the product of the N_W and K_W). This is a finite bound for primitive additive triples and uses two Cauchy–Schwarz inequalities after grouping complementary residues. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Three-letter divisor packing |
-| ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS | claim | proved / partial | For fixed K, p and M, at most C^(1+\|S\|) Galois p-extensions of degree <=M inside a fixed closure are unramified outside S. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform count of fields and points |
-| ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS | claim | proved / partial | Fix the power-free coefficients on a (3,3,3) or (2,4,4) signature. The rational solution tuples inject into a j=0 or j=1728 elliptic curve with twist parameters supported on the coefficient primes and on 2 and 3. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Maps to elliptic curves |
-| ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT | claim | proved / partial | For every fixed epsilon>0 the count of n<=X with rad(n)<=Y is O_epsilon(Y X^epsilon). At fixed radical r a Rankin sum for n/r gives at most O_epsilon(X^epsilon) choices, including all prime powers. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A radical-count contradiction to the claimed smooth-number lower bound |
+| ARITH-ABC-COUNT-BOUNDED-P-EXTENSIONS | claim | stale / partial | For fixed K, p and M, at most C^(1+\|S\|) Galois p-extensions of degree <=M inside a fixed closure are unramified outside S. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform count of fields and points |
+| ARITH-ABC-EUCLIDEAN-SIGNATURE-ELLIPTIC-MAPS | claim | stale / partial | Fix the power-free coefficients on a (3,3,3) or (2,4,4) signature. The rational solution tuples inject into a j=0 or j=1728 elliptic curve with twist parameters supported on the coefficient primes and on 2 and 3. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Maps to elliptic curves |
+| ARITH-ABC-FIXED-RADICAL-INTEGER-COUNT | claim | stale / partial | For every fixed epsilon>0 the count of n<=X with rad(n)<=Y is O_epsilon(Y X^epsilon). At fixed radical r a Rankin sum for n/r gives at most O_epsilon(X^epsilon) choices, including all prime powers. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A radical-count contradiction to the claimed smooth-number lower bound |
 | ARITH-ABC-FULLOC-ASYMMETRIC-PARAMETRIC-WITNESS | claim | proved / partial | For t=1-lambda in [0,1/244], the original six-index FullOC program has the exhibited feasible asymmetric profile D=7/12-t/3. The grouped-root collision inequality bounds this profile by 205/366-t/6. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): An asymmetric FullOC witness at smaller radical budgets; [arithmetic/verify_abc_fulloc_asymmetric_witness.py](arithmetic/verify_abc_fulloc_asymmetric_witness.py): Exact original FullOC rows and grouped-root cut |
 | ARITH-ABC-GROUPED-FULLOC-FOUR-SEVENTHS-OBSTRUCTION | claim | proved / partial | The symmetric profile with individual masses (168,0,300,200,25,0)/2100 and each total 1/3 satisfies the first-six geometric and full grouped collision inequalities at D=4/7. Its particular lift with tail masses at degrees 15 and 16 survives cutoff 14, while the exposed degrees 15 and 16 give strictly smaller collision bounds on that lift. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): A 4/7 obstruction for the grouped six-index program; [arithmetic/verify_abc_grouped_fulloc_obstruction.py](arithmetic/verify_abc_grouped_fulloc_obstruction.py): Exact grouped program and higher-cutoff checks |
 | ARITH-ABC-LONG-RELATION-DIVISOR-RECORD-COUNT | claim | proved / partial | For m signed terms, fixed records with pairwise coprime divisors of product above the range give a solution count at most the product of the fibre sizes to the power (m-2)/(m-1). Summation gives the corresponding dictionary bound. Entropy is taken over residue columns; any m-2 entries determine the last one. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Divisor records for longer additive relations |
 | ARITH-ABC-M-FULL-COPRIME-POWER-EXPANSION | claim | proved / partial | The number of M-full integers coprime to a given squarefree P has the first J+1 terms at reciprocal exponents 1/(M+j), with alternating strict signs and error O_(M,J,sigma)(2^((J+1)omega(P))Y^sigma) for sigma>1/(M+J+1) below the last retained exponent. Holds for large M with M>=16(J+1)^2. The elementary product-power hyperbola and absolute convergence of the residual Dirichlet series give uniformity in P. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): Counting the coprime part of the common divisor |
 | ARITH-ABC-MIXED-COMPLETE-LABEL-ADDITIVE-MOMENTS | claim | proved / partial | If the three parts have normalized capacities at most c+rho and incident edge exponent at least 2c-eta, a common large Fourier spectrum gives normalized exponent at least (m-1)c-(m+1)eta-(m+3)rho for mixed balanced tuples with m total slots and even counts on each letter, up to arbitrarily small losses. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Rich mixed additive relations |
-| ARITH-ABC-PELL-SQUARE-PART-SUPPORT-CORRECTION | claim | proved / partial | In dyadic height M and squarefree-kernel product W=O(M), radicals at most A,B and product of odd valuations at least three at most T give O_epsilon(M^epsilon A B T/W) consecutive pairs. A fixed-support bound alone cannot be applied across variable kernels. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A support correction in a consecutive pair |
-| ARITH-ABC-POWERFUL-TRIPLE-INCLUSION | claim | proved / partial | For p,q,r>=2, every positive primitive (p,q,r)-full triple is counted by N_(1/p+1/q+1/r). Examples demonstrate that 2-full triples need not belong to N_lambda for lambda<=1, and fixed strict radical cutoffs allow exponent-one coordinates. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Radical and powerfulness scopes |
-| ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS | claim | proved / partial | For fixed J/K and degree bound M, Galois p-extensions F/K of degree <=M unramified outside S satisfy rank J(F)=O(1+\|S\|). Kummer classes in the conjugate compositum are controlled by the base p-character dimension and Schreier's bound. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Rank over bounded-degree Galois \(p\)-extensions |
-| ARITH-ABC-RATIONAL-PARAMETERS-IN-ONE-PRIME-POWER-CLASS | claim | proved / partial | For prime P>2 and positive integer a, the fractions (2b-P^a)/b with P^a/2<b<P^a and P not dividing b are distinct reduced positive units of height at most P^a and all reduce to 2 modulo P^a. There are >>P^a such fractions. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): An exact curve with many points in one class |
+| ARITH-ABC-PELL-SQUARE-PART-SUPPORT-CORRECTION | claim | stale / partial | In dyadic height M and squarefree-kernel product W=O(M), radicals at most A,B and product of odd valuations at least three at most T give O_epsilon(M^epsilon A B T/W) consecutive pairs. A fixed-support bound alone cannot be applied across variable kernels. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A support correction in a consecutive pair |
+| ARITH-ABC-POWERFUL-TRIPLE-INCLUSION | claim | stale / partial | For p,q,r>=2, every positive primitive (p,q,r)-full triple is counted by N_(1/p+1/q+1/r). Examples demonstrate that 2-full triples need not belong to N_lambda for lambda<=1, and fixed strict radical cutoffs allow exponent-one coordinates. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Radical and powerfulness scopes |
+| ARITH-ABC-RANK-OVER-BOUNDED-P-EXTENSIONS | claim | stale / partial | For fixed J/K and degree bound M, Galois p-extensions F/K of degree <=M unramified outside S satisfy rank J(F)=O(1+\|S\|). Kummer classes in the conjugate compositum are controlled by the base p-character dimension and Schreier's bound. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Rank over bounded-degree Galois \(p\)-extensions |
+| ARITH-ABC-RATIONAL-PARAMETERS-IN-ONE-PRIME-POWER-CLASS | claim | stale / partial | For prime P>2 and positive integer a, the fractions (2b-P^a)/b with P^a/2<b<P^a and P not dividing b are distinct reduced positive units of height at most P^a and all reduce to 2 modulo P^a. There are >>P^a such fractions. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): An exact curve with many points in one class |
 | ARITH-ABC-RESIDUE-DETERMINANT-OUTSIDE-VALUATION-BREAKPOINTS | claim | proved / partial | A nonzero auxiliary F(z,v) of wider degree M leaves at most binom(M+1,2) exceptional original valuation indices for each nonzero grid multiplier and sign, away from primes of its nonzero coefficients and fixed overlaps. One extremal narrow degree per wider degree determines the competing affine valuations. On complete outside labels the coefficient-supported prime choices are subpower and a bounded number of outside coordinates costs arbitrarily little. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Valuation breakpoints of the auxiliary equation |
-| ARITH-ABC-SIX-INDEX-PROJECTION-OBSTRUCTION | claim | proved / partial | At budget 3/r for each integer r>=7, the BBLT Proposition 6.1 projected rows admit totals 1/r on each side, all first-six coordinates zero, and D=2/r. This is a feasible exponent vector in that program. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The limit of the six-index projection |
+| ARITH-ABC-SIX-INDEX-PROJECTION-OBSTRUCTION | claim | stale / partial | At budget 3/r for each integer r>=7, the BBLT Proposition 6.1 projected rows admit totals 1/r on each side, all first-six coordinates zero, and D=2/r. This is a feasible exponent vector in that program. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The limit of the six-index projection |
 | ARITH-ABC-SPARSE-PROJECTIVE-EVALUATION-HEIGHT | claim | proved / partial | In a fixed shared-row target chart, the primitive monomial evaluation height is bounded by the integral of the support width against the scaled target valuations. The two target signs give the width; shared prime contributions use superadditivity of the minimum. In a shallow modulus class the primitive row scaling is a unit. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): The primitive evaluation rows |
 | ARITH-ABC-SPARSE-ROOT-UNIT-ENERGY | claim | proved / partial | For fixed positive g,h and unit sets U,V of roots in [1,P],[1,Q] modulo M with all scales of polynomial size in X, each unit twist has O_epsilon(X^epsilon \|U\|\|V\| sqrt((1+P^2/M)(1+Q^2/M))) solutions to u^g v^h=gamma u'^g v'^h modulo M. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Multiplicative energy of sparse sets |
-| ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP | claim | proved / partial | With primitive roots u,v in dyadic scales U,V, UV<=X^lambda, fixed p,q>>1/lambda, and arbitrary positive coefficients, the pairs with both powers comparable to X and difference between zero and X^(O(sqrt(lambda))) have count O_(p,q,lambda)(X^(O(lambda^(3/2)))). The proof uses reduced-fraction spacing when gcd(p,q)>=3 and divided differences of a generalized Vandermonde matrix otherwise. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Two-tall strip bound |
+| ARITH-ABC-TWO-TALL-NARROW-POWER-STRIP | claim | stale / partial | With primitive roots u,v in dyadic scales U,V, UV<=X^lambda, fixed p,q>>1/lambda, and arbitrary positive coefficients, the pairs with both powers comparable to X and difference between zero and X^(O(sqrt(lambda))) have count O_(p,q,lambda)(X^(O(lambda^(3/2)))). The proof uses reduced-fraction spacing when gcd(p,q)>=3 and divided differences of a generalized Vandermonde matrix otherwise. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Two-tall strip bound |
 | ARITH-ABC-UNIFORM-BINARY-POWER-FIBER | claim | proved / partial | For fixed g>=2 and epsilon>0, nonzero integer coefficients P,Q and n>0 of magnitude at most X, there are O_(g,epsilon)(X^epsilon) positive (A,B) of height at most X with PA^g+QB^g=n. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Uniform binary-form bound |
-| ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY | claim | proved / partial | The original 65,576-leaf FullOC certificate checker verifies the finite upper 11680007/20000012 and rejects its three fault injections. The original obstruction checker verifies 7/12 in FullOC and 403/690 in the old program with new row bound 53/92. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Replay of the 19 November modulus-locking certificate |
+| ARITH-ABC-ZENG-FULLOC-ORIGINAL-REPLAY | claim | stale / partial | The original 65,576-leaf FullOC certificate checker verifies the finite upper 11680007/20000012 and rejects its three fault injections. The original obstruction checker verifies 7/12 in FullOC and 403/690 in the old program with new row bound 53/92. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Replay of the 19 November modulus-locking certificate |
 | ARITH-ABC-ZENG-PAIRDEV-COVERAGE-COUNTEREXAMPLE | claim | proved / partial | For the 20 November 2026 archive, an explicit nonnegative rational point satisfies all 115 ancestor rows of the added pair-deviation split, fails each child, and has D=7187/12307>5845/10009. The original supplied tree does not certify the proposed sharper bound. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): The missing branch |
 | ARITH-ALL-ORDER-CONDUCTOR-TABLES | claim | proved / partial | Alloddconductoranddyadicconductorprimitivevalueimagesandorderunitnormgroupsderivedatall depths. Includes split3threshold nonsquare condition, unbounded split tails, and all ramifieddyadictypes. | [arithmetic/PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md](arithmetic/PRIMITIVE_NORM_CONDUCTOR_LOCAL_PROFILES.md): Sections1-4completecaseproofs,C1-C5 |
 | ARITH-ALL-ORDER-FINITE-AUDIT | claim | proved / partial | 26orders;52actualprimitivecoordinateimages;99genericconductorcases/282260residues;1850profiles/4098200targetresidues. Completeprofilemasks equalindependentcoordinate-localselfsum masks;52fullmaskcorruptionsand6substantiveguards. Fixedfinitecoverageonly. | [arithmetic/verify_primitive_norm_order_profiles.py](arithmetic/verify_primitive_norm_order_profiles.py): Exactfinitealgorithms;receiptpinsallmoduliandbounds; [arithmetic/primitive_norm_order_profile_checks.json](arithmetic/primitive_norm_order_profile_checks.json): Deterministiccurrentcanonicalexecutionreceipt;rootbyte-identicalreplay |
@@ -19064,25 +19335,25 @@ Tracked obligations from the catalogue:
 | EXT-ABC-BBLT-LAMBDA-COUNT | claim | proved / partial | For 0<lambda<=2 and every epsilon>0, N_lambda(X)<<X^((23lambda+3)/40+epsilon). | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Theorem 1.2 and §5 |
 | EXT-ABC-BBLT-THREE-FIFTHS | claim | proved / partial | For fixed 0<lambda<1 and every epsilon>0, N_lambda(X)<<X^(3/5+epsilon). | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Theorem 1.3, §6 and Appendix A |
 | EXT-ABC-BEHREND-NEAR-LINEAR-PROGRESSION-FREE-SETS | claim | proved / partial | For all sufficiently large N there is a subset of [1,N] of cardinality N^(1-o(1)) containing no nontrivial three-term arithmetic progression. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Limits of the graph condition |
-| EXT-ABC-BELYI-THREE-POINT-DESCENT | claim | proved / partial | A finite connected cover of the projective line branched only at 0,1,infinity admits a model over a number field, with deck transformations defined after a fixed extension. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A three-point cover with a p-group, Belyi §4 and its forward direction |
+| EXT-ABC-BELYI-THREE-POINT-DESCENT | claim | stale / partial | A finite connected cover of the projective line branched only at 0,1,infinity admits a model over a number field, with deck transformations defined after a fixed extension. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A three-point cover with a p-group, Belyi §4 and its forward direction |
 | EXT-ABC-BRIGHT-ENDPOINT-LOWER-BOUND | claim | proved / partial | For infinitely many positive primitive abc triples, c/rad(abc) >= exp(C sqrt(log c)/log log c) for an explicit positive constant C. | [arithmetic/sources/bright-abc-lower-bound.pdf](arithmetic/sources/bright-abc-lower-bound.pdf): Theorem 3.1 |
-| EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION | claim | proved / partial | Theorem 1.1 bounds the size of the 3-torsion of the quadratic class group by a constant times the signed squarefree radicand in absolute value raised to 1597/5000. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
+| EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION | claim | stale / partial | Theorem 1.1 bounds the size of the 3-torsion of the quadratic class group by a constant times the signed squarefree radicand in absolute value raised to 1597/5000. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
 | EXT-ABC-CLUCKERS-COMTE-LOESER-FIXED-PRIME-CHARTS | claim | proved / partial | Theorem 3.2.3 gives T_r maps over a fixed Q_p. The indexing residue-ring sorts are finite over the fixed field, so the number of maps is bounded uniformly in each family of coefficients. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): The logarithmic Jacobian and local lifts |
 | EXT-ABC-CLUCKERS-FOREY-LOESER-UNIFORM-CHARTS | claim | proved / partial | Theorem 3.1.4 gives boundedly many T_r maps for each member of a definable family over all local fields of sufficiently large residue characteristic. Their domain dimension is the fiber dimension and both the threshold and count are uniform in the family parameter. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): The logarithmic Jacobian and local lifts |
 | EXT-ABC-DE-BRUIJN-TRIVIAL-COUNT | claim | proved / partial | For any fixed lambda>0 and epsilon>0, N_lambda(X)<<X^(2lambda/3+epsilon). The one-variable input is the de Bruijn radical count. Fixing two letters suffices. | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Proposition 1.1 and equation (1.1) |
-| EXT-ABC-DIAO-SMALL-PELL-FIRST-MOMENT | claim | proved / partial | Diao Theorem 1.3 gives O(T^(1-c/theta^2)) nonsquare D<T with fundamental positive Pell unit at most D^theta, uniformly for theta in the stated interval starting at 3. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Small-coefficient determinant-one families |
-| EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER | claim | proved / partial | Theorem 1 bounds the number of unit cosets uniformly in the form and allowed finite places, for irreducible binary forms of fixed degree at least three. For fixed nonzero integral value M and fixed degree the resulting rational-integer count is O_epsilon(\|M\|^epsilon). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform fixed-coefficient estimate |
+| EXT-ABC-DIAO-SMALL-PELL-FIRST-MOMENT | claim | stale / partial | Diao Theorem 1.3 gives O(T^(1-c/theta^2)) nonsquare D<T with fundamental positive Pell unit at most D^theta, uniformly for theta in the stated interval starting at 3. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Small-coefficient determinant-one families |
+| EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER | claim | stale / partial | Theorem 1 bounds the number of unit cosets uniformly in the form and allowed finite places, for irreducible binary forms of fixed degree at least three. For fixed nonzero integral value M and fixed degree the resulting rational-integer count is O_epsilon(\|M\|^epsilon). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform fixed-coefficient estimate |
 | EXT-ABC-GOWERS-ADDITIVE-ENERGY-INVERSE | claim | proved / partial | For a finite set S in Z^n with additive energy at least eta\|S\|^3, eta>0 fixed, there is U contained in S with \|U\|>=c_eta\|S\| and \|U-U\|<=C_eta\|S\|. | [arithmetic/sources/gowers-new-proof-szemeredi-2001.pdf](arithmetic/sources/gowers-new-proof-szemeredi-2001.pdf): Proposition 7.3 |
 | EXT-ABC-GREEN-RUZSA-FREIMAN | claim | proved / partial | By Green–Ruzsa Theorem 1.1 a finite set in an abelian group with \|A+A\|<=K\|A\| lies in a coset progression of rank and size factor bounded in K. In the integers the finite subgroup is trivial, and properness identifies cardinality with coefficient-box volume. | [arithmetic/sources/green-ruzsa-freiman-math0505198v2.pdf](arithmetic/sources/green-ruzsa-freiman-math0505198v2.pdf): Theorem 1.1, specialized to the torsion-free group Z |
 | EXT-ABC-KANE-LARGE-RADICAL-COUNT | claim | proved / partial | Kane's Theorems 1–2 give the lower and upper box exponents for independently bounded radicals. In the aggregate, N_lambda(X)=X^(lambda-1+o(1)) for fixed 2<=lambda<=3. | [arithmetic/sources/kane-abc-restricted-radicals-2015.pdf](arithmetic/sources/kane-abc-restricted-radicals-2015.pdf): Theorems 1–2, applied with logarithmic radical boxes and arbitrarily small exponent slack |
 | EXT-ABC-MONTGOMERY-VAUGHAN-BRUN-TITCHMARSH | claim | proved / partial | For x>0 and y>1, pi(x+y)-pi(x)<=2y/log y. | [arithmetic/sources/montgomery-vaughan-large-sieve-1973.pdf](arithmetic/sources/montgomery-vaughan-large-sieve-1973.pdf): Theorem 2, equation (1.12) |
 | EXT-ABC-PASTEN-POINTWISE | claim | proved / partial | For primitive positive abc triples let R=rad(abc). Theorem 1.4 bounds log c by exp(C sqrt(log R log log R)) times eta^-1 when a<=c^(1-eta), and times the least of the three largest prime factors in the second version. | [arithmetic/sources/pasten-subexponential-abc-2312.03566v1.pdf](arithmetic/sources/pasten-subexponential-abc-2312.03566v1.pdf): Theorem 1.4(1)–(2) |
 | EXT-ABC-PETRIDIS-SUMSET-ITERATION | claim | proved / partial | If finite nonempty sets A,B in an abelian group satisfy \|A+B\|<=K\|A\|, a nonempty X contained in A satisfies \|X+hB\|<=K^h\|X\| for each h>=1. In particular \|U-U\|<=K\|U\| implies \|U+U\|<=K^2\|U\|. | [arithmetic/sources/petridis-plunnecke-1101.3507v3.pdf](arithmetic/sources/petridis-plunnecke-1101.3507v3.pdf): Theorem 3.1 |
-| EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT | claim | proved / partial | The fixed-prime ell>=5 first moment of h_ell over squarefree quadratic radicands of either sign up to T is O_(ell,epsilon)(T^(3/2-3/(2ell+2)+epsilon)). The real and imaginary statements use separate primary theorems. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
-| EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT | claim | proved / partial | Davenport–Heilbronn for both signs, in Taniguchi–Thorne Theorem 1.2. The sum of the sizes of the 3-torsion subgroups over quadratic fields of absolute discriminant at most T is O(T). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
-| EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS | claim | proved / partial | Theorem 1.2 and Corollaries 1.3–1.4 give moments of both signs, with exponent (5k+13)/18 for 1≤k≤4. The discussion of Scholz reflection bounds the change in 3-rank between the two reflected fields by one. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
+| EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT | claim | stale / partial | The fixed-prime ell>=5 first moment of h_ell over squarefree quadratic radicands of either sign up to T is O_(ell,epsilon)(T^(3/2-3/(2ell+2)+epsilon)). The real and imaginary statements use separate primary theorems. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
+| EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT | claim | stale / partial | Davenport–Heilbronn for both signs, in Taniguchi–Thorne Theorem 1.2. The sum of the sizes of the 3-torsion subgroups over quadratic fields of absolute discriminant at most T is O(T). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
+| EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS | claim | stale / partial | Theorem 1.2 and Corollaries 1.3–1.4 give moments of both signs, with exponent (5k+13)/18 for 1≤k≤4. The discussion of Scholz reflection bounds the change in 3-rank between the two reflected fields by one. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
 | EXT-ABC-STEWART-YU-SUBEXPONENTIAL | claim | proved / partial | For positive primitive abc triples with R=rad(abc), log c <= C R^(1/3)(log R)^3 with an effectively computable absolute constant. | [arithmetic/sources/stewart-yu-abc-ii-2001.pdf](arithmetic/sources/stewart-yu-abc-ii-2001.pdf): Theorem 1 |
-| EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA | claim | proved / partial | Theorem 1 gives finitely many C^r charts for a semialgebraic set in the unit cube, of the same dimension as the set, with derivative norms at most one. The number is uniform in coefficients for fixed ambient dimension, degree complexity and r. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The determinant at high precision |
+| EXT-ABC-YOMDIN-GROMOV-ALGEBRAIC-LEMMA | claim | stale / partial | Theorem 1 gives finitely many C^r charts for a semialgebraic set in the unit cube, of the same dimension as the set, with derivative norms at most one. The number is uniform in coefficients for fixed ambient dimension, degree complexity and r. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The determinant at high precision |
 | EXT-ABC-ZENG-FULLOC-ARITHMETIC-ROWS | claim | proved / partial | For limiting primitive anatomic boxes of budget at most one and dyadic largest height, the pair, Fourier, geometric and signed grouped collision estimates of Zeng §§2–5 give the FullOC constraints, with all sign and absolute-value cases closed in exponent variables. | [arithmetic/sources/zeng-abc-modulus-locking-2611.00621v1.pdf](arithmetic/sources/zeng-abc-modulus-locking-2611.00621v1.pdf): Equations (2.4)–(2.8), Propositions 4.1 and 5.1, §§6.1–6.2 and §7 |
 | EXT-ABELIAN-GOOD-REDUCTION-DIVISION-UNRAMIFIED | claim | proved / partial | Multiplication by n on an abelian scheme is finite etale when n is invertible on the base. For an abelian variety extending over a normal local base and any rational point, the normalization in the field of all n-division points is etale there. Affine-integral point coordinates are not required. | [arithmetic/sources/milne-abelian-varieties-2022.pdf](arithmetic/sources/milne-abelian-varieties-2022.pdf): Proposition20.7 and Corollary20.8 printed/PDFp44 |
 | EXT-ABELIAN-NONDEGENERATE-KUMMER-INDEX | claim | proved / partial | For any abelian variety A over a number field K and a point Z whose cyclic subgroup is Zariski dense, CDJLZ Theorem6.9 bounds [A[m]:Gal(K(A[m],[m]^-1 Z)/K(A[m]))] by a fixed c(A/K,Z) for every positive m. Remark6.10 removes indivisibility when c may depend on Z. In particular the kernel is full at any prime ell>c. No independence between different auxiliary primes is imported. | [arithmetic/sources/cdjlz-2022-ramified-covers.pdf](arithmetic/sources/cdjlz-2022-ramified-covers.pdf): Section6.2 definition and equation(13), printedpp2142-2143/PDF35-36; Theorem6.9 printedp2144/PDF37 and Remark6.10 printedp2145/PDF38 |
@@ -19278,8 +19549,8 @@ Tracked obligations from the catalogue:
 | SRC-PRIME-DISCRIMINANT-CORE-UNIFORM-CERTIFICATES | claim | proved / partial | Exact rational maximization of the divisor Euler products gives T_8<2^16, T_10<2^36 and T_16<2^685. In the independent finite control B=12 every splitting pattern has 30 reduced residue classes conditional on p=3 mod8 and the full initial run has probability 1/16. | [arithmetic/verify_prime_discriminant_core_uniform.py](arithmetic/verify_prime_discriminant_core_uniform.py): Finite prime/exponent bounds and exact residue computation; [arithmetic/verify_primitive_norm_minus11.py](arithmetic/verify_primitive_norm_minus11.py): Prime flags by Eratosthenes; [arithmetic/prime_discriminant_core_uniform_checks.json](arithmetic/prime_discriminant_core_uniform_checks.json): All uniform constants and distribution through B=12 |
 | SRC-PRIMITIVE-NORM-BOUNDED-CLASSIFICATIONS | claim | proved / partial | Complete exact integer scans certify the primitive self-sum classifications for 2<=N<=1000000. There are no locally admissible exceptions for D=-8 or -11. For -7 exceptions are {7,77,203}; for -19 {4,76,380}; for -43,-67,-163 the retained complete bounded lists have respectively 18,38,129 exceptions with maxima3182,9246,161696. Each listed absence is an actual finite nonrepresentation certificate; completeness of the exception lists is asserted only through the scan bound. The unrestricted -7, -8, -11, -19, -43, -67 and -163 identities are proved separately. | [arithmetic/PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md](arithmetic/PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md): Coverage argument and exact finite result; [arithmetic/verify_primitive_norm_exact_sumsets.py](arithmetic/verify_primitive_norm_exact_sumsets.py): Complete lattice enumeration, bitset witness sweep and all-summand residual check; [arithmetic/primitive_norm_exact_sumset_checks.json](arithmetic/primitive_norm_exact_sumset_checks.json): Full seven scans and exact bounded exception lists |
 | SRC-PRIMITIVE-NORM-LOCAL-STRUCTURE | claim | proved / partial | For two fixed nondegenerate integral binary forms of discriminants D1,D2, separate pair-primitive Zp solubility is decided by congruences modulo p^(2 max(vp D1,vp D2)+1) at p dividing 2D1D2; all other primes are automatic. Positive local coordinate densities have a uniform fixed-form lower bound and explicit good-prime formulas. Self-sum local criteria are 16 not dividing N for D=-8; 49 not dividing N for -7; N even and p^2 not dividing N for D=-p,p=11,19,43,67,163; and N mod8 in {2,3,4,6,7} for x^2+5y^2. The exact whole-prime-power oriented-ideal criterion is included. For x^2+5y^2 class-group constraints are genus-type and individual primitive norm membership obeys its local-global criterion; D=-23,n=2 is an individual norm counterexample. These are not exact global additive classifications. The local densities stabilize exactly at the stated finite level, with lower bound p^(-2t_p-3), and all -8/-11 ramified factors are explicit. Higher additive statements are registered separately. | [arithmetic/PRIMITIVE_NORM_LOCAL_STRUCTURE.md](arithmetic/PRIMITIVE_NORM_LOCAL_STRUCTURE.md): Sections1-4: PL1-PL4 and PL3D, exact density stabilization, ramified factors and ideal-class criterion |
-| ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT | claim | proved / partial | Over the fixed imaginary quadratic CM field, the endomorphism of prime degree has rational kernel. The unramified Kummer bound gives rank at most 2 omega(\|ABC\|)+O(1). Bounded-degree scaling to a fixed elliptic curve gives a positive uniform height for nontorsion points; packing bounds the number of points of logarithmic canonical height O(log X). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Uniform rank and point bounds for the two twist families |
-| ARITH-ABC-HIGH-ENTROPY-FEW-PRIME-TRANSFER-SCOPE | claim | proved / partial | The rare radical count bounds values with at least eta log n/log log n distinct primes by n^(1/3-eta+o) in balanced boxes, so entropy-saturated complete marginals can be restricted to a few-prime range after the ordered limits. Bloom's sum-product disjunction does not constrain sparse additive matchings with large sum and product sets. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Scope of the few-prime sum-product approach |
+| ARITH-ABC-EUCLIDEAN-TWISTS-RANK-HEIGHT | claim | stale / partial | Over the fixed imaginary quadratic CM field, the endomorphism of prime degree has rational kernel. The unramified Kummer bound gives rank at most 2 omega(\|ABC\|)+O(1). Bounded-degree scaling to a fixed elliptic curve gives a positive uniform height for nontorsion points; packing bounds the number of points of logarithmic canonical height O(log X). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Uniform rank and point bounds for the two twist families |
+| ARITH-ABC-HIGH-ENTROPY-FEW-PRIME-TRANSFER-SCOPE | claim | stale / partial | The rare radical count bounds values with at least eta log n/log log n distinct primes by n^(1/3-eta+o) in balanced boxes, so entropy-saturated complete marginals can be restricted to a few-prime range after the ordered limits. Bloom's sum-product disjunction does not constrain sparse additive matchings with large sum and product sets. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Scope of the few-prime sum-product approach |
 | ARITH-ABC-DIRECT-RESIDUE-ENERGY-BOUND | claim | proved / partial | In a primitive signed monomial box freeze a coordinate set O_C on the third letter. Release both other letters and bound their congruent pairs by Cauchy-Schwarz of the two separate residue energies. With each energy exponent K_T from two sparse root groups modulo the same frozen M_C, D<=f_C+(K_A+K_B)/2 up to the vanishing exponent error. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Direct congruence bound from two residue energies |
 | ARITH-ABC-HIGHER-MULTIPLICATIVE-RESIDUE-MOMENTS | claim | proved / partial | For a fixed boxed coordinate mass alpha and lower modulus exponent w, the normalized 2k-th moment of its fixed-power character sum has exponent k*alpha+(k*alpha-w)_+. Orthogonality also bounds complex unit twists by the untwisted average. Apply arbitrary integer Hölder orders, or their reciprocal-space interpolation, to disjoint coordinates before taking the two-letter residue pairing. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Higher multiplicative moments for a residue lock |
 | ARITH-ASYM-COEFFICIENT-LOCAL-REDUCTION | claim | proved / partial | For the normalized asymmetric weights, a common coefficient factor r = gcd(u,v) gives zero count unless r divides N. Removing it contributes the same factor r to the local model and the real scale. After this reduction, gcds of each coefficient with the target are allocated exactly; a common target factor at a second coefficient prime 7 modulo 12 forces a forbidden first-side factor and hence zero count. All remaining counts reduce with exact prefactors to a coefficient-target-unit problem. The local congruence integrals depend only on valuations and have the stated polynomial-geometric tails. Second-side shifts at primes 7 modulo 12 are retained, including their negative shifted-kernel coefficients; the fixed small-modulus factor remains 6. | [arithmetic/ASYMMETRIC_UNIFORM_COEFFICIENTS.md](arithmetic/ASYMMETRIC_UNIFORM_COEFFICIENTS.md): Sections 1-2, local formulas (3)-(10) and exact coefficient reduction (11)-(13) |
@@ -19318,18 +19589,18 @@ Tracked obligations from the catalogue:
 | ARITH-QUADRATIC-GAUGE-NONPROPERNESS-LEM-NONFINITE-BASE-CHANGE | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(k\subset k'\) be a field extension and let \(F:\A^n_k\to\A^m_k\) be a polynomial map.  Let \(\overline\Gamma_F\) be the scheme-theoretic closure of its graph in \(\mathbb P^n_k\times\A^m_k\), put \[  Z_F=\overline\Gamma_F\cap  \bigl((\mathbb P^n_k\setminus\A^n_k)\times\A^m_k\bigr), \] and give the image of the proper morphism \(Z_F\to\A^m_k\) its reduced closed-subscheme structure \(S_F\).  Then \[  Z_{F_{k'}}=Z_F\times_k k',  \qquad  \lvert S_{F_{k'}}\rvert=\lvert (S_F)_{k'}\rvert . \] In particular, whether a geometric target point lies in the graph-boundary locus is invariant under extension of algebraically closed fields. | [../unpublished/quadratic-gauge-nonproperness/sections/nonproperness.tex](../unpublished/quadratic-gauge-nonproperness/sections/nonproperness.tex): lem:nonfinite-base-change |
 | ARITH-ABC-COMPACT-FOURIER-TAIL-HEIGHT-BOUND | claim | proved / partial | For each letter, let e be its early weighted height, tau its total mass above degree six, and F its full grouped Fourier allowance. For any t>=7, e+t*tau<=1+sum_q (t-m_q)_+ (F-sum_(i<=6,q\|i) alpha_i), where m_q is the least degree above six with least prime factor q. No individual higher-degree mass is required in the inequality. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): A Fourier bound on aggregate tail mass |
 | ARITH-ABC-TRIANGLE-UNIQUE-GRAPH-EXPONENT-OBSTRUCTION | claim | proved / partial | There are three-partite graphs on O(n) vertices with n^(2-o(1)) triangles in which every edge belongs to exactly one triangle. Hence extra-triangle exclusion by itself supplies no fixed power saving. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Limits of the graph condition |
-| ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER | claim | proved / partial | For each hyperbolic signature of powers of a common prime p there is a connected Galois three-point cover over a number field with those branch indices, a finite p-group deck group, and genus at least two. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A three-point cover with a p-group |
-| ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT | claim | proved / partial | For fixed nonzero signed coefficients of polynomial size and fixed sixth root z, primitive solutions to A x^2+B y^3=C z^6 number O_epsilon(X^epsilon h_3(Q(sqrt(sf(A C))))). The split field is assigned class-group factor one. The proof reduces to irreducible Thue–Mahler or elementary reducible binary equations of nonzero discriminant. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform fixed-coefficient estimate |
-| ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR | claim | proved / partial | For fixed positive p,q and any eta>0, the number of positive integer triples U,x,y<=H with \|Ux^p y^q/C−1\|<=H^(−K) is O(H^eta) uniformly in C>0 once K exceeds a threshold depending only on eta. The loss constant may depend on p,q. Two approximate determinants and quantitative perturbations count the nonconstant slices. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A real short-strip estimate with a free low cofactor |
+| ARITH-ABC-P-GROUP-BASED-HYPERBOLIC-THREE-POINT-COVER | claim | stale / partial | For each hyperbolic signature of powers of a common prime p there is a connected Galois three-point cover over a number field with those branch indices, a finite p-group deck group, and genus at least two. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A three-point cover with a p-group |
+| ARITH-ABC-SQUARE-CUBE-FIXED-COEFFICIENT-THUE-DESCENT | claim | stale / partial | For fixed nonzero signed coefficients of polynomial size and fixed sixth root z, primitive solutions to A x^2+B y^3=C z^6 number O_epsilon(X^epsilon h_3(Q(sqrt(sf(A C))))). The split field is assigned class-group factor one. The proof reduces to irreducible Thue–Mahler or elementary reducible binary equations of nonzero discriminant. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform fixed-coefficient estimate |
+| ARITH-ABC-REAL-SHORT-STRIP-FREE-LOW-COFACTOR | claim | stale / partial | For fixed positive p,q and any eta>0, the number of positive integer triples U,x,y<=H with \|Ux^p y^q/C−1\|<=H^(−K) is O(H^eta) uniformly in C>0 once K exceeds a threshold depending only on eta. The loss constant may depend on p,q. Two approximate determinants and quantitative perturbations count the nonconstant slices. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A real short-strip estimate with a free low cofactor |
 | ARITH-ABC-PAIRED-SHIFT-COLLISION-BOUND | claim | proved / partial | On each fixed primitive signed monomial fibre, collisions with equal free C share a common nonzero shift k after division by coprime frozen coefficients on A and B. Bound the possible shifts by the three height caps, and use both grouped power-difference caps or one such cap and a residue cap from the third letter. The resulting off-diagonal fibre count gives equation (3). | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Counting collisions by their common shift |
 | ARITH-ABC-SPARSE-ROOT-COLLISION-BOUND | claim | proved / partial | In a primitive signed monomial box take disjoint released A groups of common fixed degrees g1,g2, and a residue group in B of common degree g. The collision estimate replaces dense root cardinalities by the corresponding group masses, keeps the weighted root heights in its modulus penalties, and permits the B residue-group bound and grouped power differences. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Collision bounds for square and cube roots drawn from sparse sets |
 | ARITH-ABC-MIXED-COMPLETE-ROWS-KUMMER-CURVE | claim | proved / partial | For m distinct shifts and fixed coefficients and exponents q_i>=2, the resulting affine curve has degree (product q_i)/min q_i. Its common columns number O_{q,epsilon}(X^(1/product q_i+epsilon)) for complete values at most X. This also applies to affine terms with distinct zeros. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): The curve for several fixed complete rows |
-| ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY | claim | proved / partial | Outside a polynomial-height support and boundedly many discriminant specializations, rational witnesses on a branch with least Puiseux denominator q satisfy q dividing the exact original valuation e. Tame inertia rotates the parameter and fixes the evaluated rational value among distinct roots. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): Exact divisibility on Puiseux branches |
+| ARITH-ABC-TAME-PUISEUX-EXACT-VALUATION-DIVISIBILITY | claim | stale / partial | Outside a polynomial-height support and boundedly many discriminant specializations, rational witnesses on a branch with least Puiseux denominator q satisfy q dividing the exact original valuation e. Tame inertia rotates the parameter and fixes the evaluated rational value among distinct roots. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): Exact divisibility on Puiseux branches |
 | ARITH-ABC-QUARTIC-PRIME-POWER-DETERMINANT-FIBRES | claim | proved / partial | For x<=O(Y), z<=O(Y^2), a unit twist gamma and prime p>=Y^(2-12/500), the congruences xz^4=gamma mod p^4 and x/z^4=gamma mod p^4 have respective bounds O_epsilon(Y^(21/25+epsilon)) and O_epsilon(Y^(3/4+epsilon)). Prime-power column divisibility forces a translated monomial determinant to vanish and bounded-degree plane curves control each block. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Quartic congruence estimates; [arithmetic/verify_abc_quartic_determinant.py](arithmetic/verify_abc_quartic_determinant.py): prime-power determinant and height margins |
-| ARITH-ABC-AFFINE-THREE-ROOT-COVER | claim | proved / partial | For nonzero A,B,C, count Ax^p y^q+Bz^r+C=0 in a positive H-box with r>=5 by O_{p,q,r,epsilon}(X^epsilon H^(3/sqrt(r))) if the coefficients have absolute height O(X). A coefficient-uniform cover and the function-field three-term bound force nonconstant curves to have degree Omega(sqrt(r)). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): An affine surface after fixing a complete letter |
+| ARITH-ABC-AFFINE-THREE-ROOT-COVER | claim | stale / partial | For nonzero A,B,C, count Ax^p y^q+Bz^r+C=0 in a positive H-box with r>=5 by O_{p,q,r,epsilon}(X^epsilon H^(3/sqrt(r))) if the coefficients have absolute height O(X). A coefficient-uniform cover and the function-field three-term bound force nonconstant curves to have degree Omega(sqrt(r)). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): An affine surface after fixing a complete letter |
 | ARITH-POWERFUL-SHARPENED-FERMAT-RECTANGULAR-COUNT | claim | proved / partial | For fixed p,q,r>=2, all nonzero integer coefficients and rectangular boxes X,Y,Z>=2, the primitive point count satisfies (3), with the exceptional-slice exponent min(1/3,sqrt(r/((r-1)*max(p,q)))). | [arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md](arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md): Coefficient-uniform rectangular bound, equation (3) |
-| ARITH-ABC-CUBIC-QUARTIC-SURFACE-CUT | claim | proved / partial | The primitive solutions in Ux^3+B y^4=C with fixed B and C satisfy a coefficient-uniform unequal-box bound by an affine surface cover. Line and conic components have constant y; the remaining curves have the uniform degree-at-least-three integral-point bound. The resulting rational affine tangent cuts a unit-budget witness. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A fixed-target surface with a cubic factor and a quartic power |
-| ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT | claim | proved / partial | Releasing one cubic and two quartic roots gives a coefficient-uniform unequal-box surface cover. The leading quartic leaves cover exponent half the geometric mean of the two other root masses. On lines and conics the two quartic roots have constant ratio, so primitivity fixes them. The affine support bounds the denominator-37 witness by 359/666. If the leading quartic cofactor has weight at least 1/8, a translated side congruence multiplies the cover exponent by at most 15/16 and improves that witness bound to 5583/10656. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A diagonal surface with a cubic power and two quartic powers |
+| ARITH-ABC-CUBIC-QUARTIC-SURFACE-CUT | claim | stale / partial | The primitive solutions in Ux^3+B y^4=C with fixed B and C satisfy a coefficient-uniform unequal-box bound by an affine surface cover. Line and conic components have constant y; the remaining curves have the uniform degree-at-least-three integral-point bound. The resulting rational affine tangent cuts a unit-budget witness. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A fixed-target surface with a cubic factor and a quartic power |
+| ARITH-ABC-CUBIC-TWO-QUARTICS-SURFACE-CUT | claim | stale / partial | Releasing one cubic and two quartic roots gives a coefficient-uniform unequal-box surface cover. The leading quartic leaves cover exponent half the geometric mean of the two other root masses. On lines and conics the two quartic roots have constant ratio, so primitivity fixes them. The affine support bounds the denominator-37 witness by 359/666. If the leading quartic cofactor has weight at least 1/8, a translated side congruence multiplies the cover exponent by at most 15/16 and improves that witness bound to 5583/10656. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A diagonal surface with a cubic power and two quartic powers |
 | ARITH-SPARSE-CLASSICAL-MODERATE-HEIGHT-PRIME-ESTIMATE | claim | proved / partial | For fixedB,c,C, L=logx andZ=exp(L^1/16), all characters moduloq<=L^B, exp(cL^1/8)<=P<=exp(CL^1/4), smooth weights with fixed derivatives bounded by logarithmic powers, and\|primeargument\|<=2Z, the smooth prime sum equals its principal integral plusO(P L^Cw exp(-c1L^1/16)). Constants/thresholds may be ineffective. Buffer2Z covers retained polynomial-logarithmic translations for outer\|t\|<=Z. This proved intermediate-height partial lemma uses classical estimates only; it does not coverT0=x*polylogx or remove ZF from a proved correlation theorem. | [arithmetic/SPARSE_ARITHMETIC_MODEL_COMPARISON.md](arithmetic/SPARSE_ARITHMETIC_MODEL_COMPARISON.md): Section5.2 ClassicalModerateHeightPrimeEstimate C.1 and complete buffered contour proof; [../results/pointwise-binary-splitting-semigroups/fixed-shift-comparison.tex](../results/pointwise-binary-splitting-semigroups/fixed-shift-comparison.tex): sec:fixed-classical-boundary; moderate-height estimate with\|t\|<=2Z |
 | ARITH-D11-EXACT-THETA-SHELL | claim | proved / partial | For every positive n, r_(Q+Q)(n)=(12/5)(sigma(n)-11sigma(n/11))+(8/5)a_n, f11=eta(tau)^2 eta(11tau)^2; complete level11 Sturm bound2 proves the identity. Coefficients at nonintegral indices arezero. On even shells, G=r(n)-r(n/4) counts both component norms odd. | [arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md](arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md): M11.4 and complete modular/Sturm proof; M11.6 filter |
 | ARITH-D7-QUATERNIONIC-HECKE-TRANSFER | claim | proved / partial | The class-one quotient has uniform measure. The all-ideal operator has degree sigma(n) and norm<=tau(n)sqrt(n) off exactly two ramified or four joint global norm characters. Joint indicatorsu,v have projections(a,a,0,0),(3a,-a,0,0), witha=mu/4 andmu=2/[q(q-1)], giving good7 bad-q fraction<=gamma*mu+(7/4)E. Ramified errorE/2, exact negative-character shell and the separate target-dividing anisotropic branch are proved, includingq3 and good index2. | [arithmetic/PRIMITIVE_NORM_MINUS7_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS7_EXACT.md): M7.6-M7.15: order mass, all-ideal normalization, norm characters and joint correlations; [../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex](../results/eisenstein-restricted-prime-sums/sections/prime-bounds.tex): Comparison spectral proof mechanism; the discriminant7 specialization is reconstructed in M7.6-M7.15 |
@@ -19400,8 +19671,8 @@ Tracked obligations from the catalogue:
 | ARITH-D7-PRIMITIVE-NORM-SEMIGROUP | claim | proved / partial | P=C disjoint union7C forC supported on primes1,2,4mod7, including2. Minkowski proves class number one and whole-prime-power orientations give primitive generators. Multiplication bysqrt(-7) maps7-unit primitive values to7C; 7m belongsP+P iffm belongsC+C. The49 obstruction and positive quotient1 obstruction are exact. | [arithmetic/PRIMITIVE_NORM_MINUS7_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS7_EXACT.md): M7.4-M7.5 and the explicit ramified coordinate matrix |
 | ARITH-D8-EXACT-TERNARY-REDUCTIONS | claim | proved / partial | Every N>=2 has a positive Q_-8+Q_-8 representation with a coordinate equal plus/minus1 exactly when16 does not divide N. This guarantees one primitive binary block. Also t^2 is square plus a positive primitive -8 norm iff2t lies in C+C; forodd t this is exactly the original binary problem at2t. Ordinary ternary regularity therefore does not discharge the second block coprimality. | [arithmetic/PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md](arithmetic/PRIMITIVE_NORM_EXACT_CLASSIFICATIONS.md): Propositions E1-E4; explicit counterexample29 to the naive coprimality inference |
 | ARITH-RANDOM-PRIME-ENDPOINT-UNIFORM-SMOOTH-MOMENT | claim | proved / partial | At gamma=1-1/k and lambda=1+1/k for fixed k>=2, let N_Q(X) count semigroup elements up to X using the selected primes at most Q and the deterministic prime 2. Uniformly for X,Q>=2, E[N_Q(X)^k] is O_k(X log(2X) exp(-c_k log X/log Q)) with c_k>0. | [../results/published/random-prime-semigroups/main.tex](../results/published/random-prime-semigroups/main.tex): lem:smooth; [arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md](arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md): Equation (19), uniform moment bound for restricted prime factors |
-| ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE | claim | proved / partial | For fixed m>=2 and fixed exponents all >=E, a signed sum of three disjoint monomials with at most m positive pairwise coprime roots each <=H has O(H^(C_m E^(-1/(m^2-1))+epsilon)) tuples, uniformly in the nonzero coefficients. Low-degree subvarieties satisfy multiplicative identities, and higher-degree ones admit determinant covers. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Releasing a bounded number of high-degree coordinates |
-| ARITH-ABC-FOUR-ROOT-DIVISOR-RELATIONS | claim | proved / partial | For fixed degrees and coprime z,w, Ax^p y^q+Bz^r+Cw^s=0 has a coefficient-uniform count H^(O(min(r,s)^(-1/6))+epsilon). This costs O(lambda^(7/6)) in boxes with two singly released degrees Omega(1/lambda). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Releasing four roots on three letters |
+| ARITH-ABC-BOUNDED-HIGH-ROOT-RELEASE | claim | stale / partial | For fixed m>=2 and fixed exponents all >=E, a signed sum of three disjoint monomials with at most m positive pairwise coprime roots each <=H has O(H^(C_m E^(-1/(m^2-1))+epsilon)) tuples, uniformly in the nonzero coefficients. Low-degree subvarieties satisfy multiplicative identities, and higher-degree ones admit determinant covers. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Releasing a bounded number of high-degree coordinates |
+| ARITH-ABC-FOUR-ROOT-DIVISOR-RELATIONS | claim | stale / partial | For fixed degrees and coprime z,w, Ax^p y^q+Bz^r+Cw^s=0 has a coefficient-uniform count H^(O(min(r,s)^(-1/6))+epsilon). This costs O(lambda^(7/6)) in boxes with two singly released degrees Omega(1/lambda). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Releasing four roots on three letters |
 | ARITH-ERDOS675-LOCAL-ADMISSIBILITY | claim | proved / partial | For the inner forms associated with A_N, every parameter is allowed at2 and inert primes p<=N. For each inert p>N the exact joint Haar density is1-\|A_N\|/(p+1)>0. The product of its ratio to (p/(p+1))^\|A_N\| converges absolutely and positively. These local assertions provide no positive integer u satisfying all inert conditions simultaneously. | [arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md](arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md): Proposition Erdos675LocalAdmissibility; equationT.8 and disjoint odd-valuation events |
 | ARITH-ERDOS675-NORM-REDUCTION | claim | proved / partial | For M_N=4*lcm(1,...,N)^2, t=M_N*u preserves every original negative position by its odd inert valuation. At positive positions divide out the original represented a; the inner factors 1+(M_N/a)u are pairwise coprime. Thus for each fixed N,u>=1 their product being a sum of two squares is equivalent to the entire initial N-word recurring at t. Using ModularReturn, the full translation property is equivalent to existence of such a positive u for every N. | [arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md](arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md): Proposition Erdos675NormReduction; valuation locking, coprime product and ModularReturn |
 | ARITH-ERDOS675-PELL-INITIAL-BLOCK | claim | proved / partial | Infinitely many positive translations reproduce E intersect[1,8], whose positives are1,2,4,5,8. Use z+k*sqrt3=(1+sqrt3)(2+sqrt3)^(504j), m=2k^2-1, t=m^2-1. Five explicit norm identities and t=0mod441 force the three gaps by odd3/7 valuations. The isolated example t=288 also works. This bounded-length example makes no arbitrary-N or novelty claim. | [arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md](arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md): Proposition Erdos675PellExample; exact norm identities and unit congruences |
@@ -19565,6 +19836,7 @@ Tracked obligations from the catalogue:
 | ARITH-HURWITZ-OVERLAP-ONE-SECONDARY-EXCHANGE | claim | proved / partial | On seven distinct labels Q³((uv)(pq),(vw)(rs))=((uv)(rs),(vw)(pq)). At an already adjacent overlapone pair this retains the entire uncolored tree while exchanging secondary edges and the two branchlabels. The bringing operation needed to make an arbitrary pair adjacent can alter the surrounding tree. | [arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md](arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md): Lemma6 |
 | CLASSICAL-PRIME-ONE-MOD-FOUR-RECIPROCAL-DIVERGENCE | claim | proved / partial | Fixed PNT AP mod4 and explicit partial summation prove sum_(q1mod4)1/q diverges. Hence product_(q<=Y,q1mod4)(1-1/(q-1)) tends0. Infinitude alone is not used as a substitute. | see incoming proof routes |
 | ARITH-HURWITZ-TRANSPOSITION-STAR-WORD | claim | proved / partial | A selfcontainedcommonleafinduction bringsitsuniqueleafedge lastbypositivemoves; theproductforcesit=(l,C^-1(l)). Deletingl reducestothe same smaller cycle as thetargetstar, andundoingthetargetbringingword gives theuniquestarcenteredatanychosensheet. No DTtransitivity theorem isassumed. | [arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md](arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md): Lemma2 |
+| KGR-ACTUAL-KERNEL-GCD-CUBE-DIVISIBILITY | claim | proved / partial | In the selected actual positive coprime squarefree-kernel graph, at a shared-right path with distinct b1,b2, alpha=gcd(a1,a2), g=gcd(b1,b2), ell=(c1^2-c2^2)/alpha^2 is a nonzero integer and g^3\|ell. Cross-coprimality gives gcd(g,kappa2*d)=1. After b_i=g*u_i the cubic coefficients kappa1*r1^2,-kappa1*r2^2,kappa2*ell/g^3 are nonzero signed integers and gcd(u1,u2,d)=1. No gcd(alpha,g)=1 assumption. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Section1, equations(3),(8)--(9) |
 | ARITH-SYMMETRIC-RESIDUAL-PERFECT-SOLVABLE-STABILITY | claim | proved / partial | For a residualS_m extension,m>=6even, basechangebyanyextensionwithsolvablenormalclosure, togetherwithaquadraticcriticalfield, leaves aresidualgroupcontainingA_m. In aGaloissolvableoverfieldF, itsintersectionwiththeS_mnormalclosure hassolvablequotient, whichkillstheperfectA_m. Inparticular type(2,m-2) survives. | [arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md](arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md): Lemma3 andTheorem6 |
 | ARITH-REAL-RECIPROCAL-FORCED-SIGN-ALTERNATION | claim | proved / partial | For allcriticalreal good degree4k reciprocity, logarithmic pair sums A and differencesB have derivativespositiveweights times the same degree k polynomial s(2cosh t), and B0=0. Nonzero squaredvalues assign exactly one P orQ to everycriticalpair. Rolle gaps force the ordered patternP,Q,P,Q,...; for oddk its lastsign isP and the last gap makesBnegative. | [arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md](arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md): Forced order, equations4-7 |
 | ARITH-REAL-RECIPROCAL-NEGATIVE-FIRST-CRITICAL-VALUE | claim | proved / partial | For monic positive reciprocal Sigma of degree2k with constant1 and all rootspositive, Euler reconstruction2vFprime-F=(4k-1)Sigma gives F0=-(4k-1). At smallestroot alpha, h=F/√v has h(alpha)<0, since h(v)=-L/√v+(L/2)integral0^v(Sigma-1)t^-3/2dt with constant0 and0<Sigma(t)<1 beforealpha. This uses no prescribed equality of critical values. | [arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md](arithmetic/ODD_K_REAL_RECIPROCAL_OBSTRUCTION.md): Normalization and negative first critical value, equations1-3 |
@@ -19595,10 +19867,10 @@ Tracked obligations from the catalogue:
 | ARITH-UNIFORM-IMPRIMITIVE-INDEX-CUTOFF | claim | proved / partial | For all a>=2,r>=3,ar>=8, I(a,r)=(ar)!/((a!)^r*r!)>2^(ar-2). Exact basesI(3,3)=280 andI(2,4)=105, fixedr3 growth>8, and r-step ratio=C((r+1)a,a)/(r+1)>=(r+1)^(a-1)>=2^a give a written uniform proof. The exceptionalI(2,3)=15<16 is explicitly excluded. | [arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md](arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md): LemmaB |
 | ARITH-RATIONAL-BASECHANGE-CANNOT-ERASE-FIVE-DT-BRANCHES | claim | proved / partial | For any rationalP1selfmap, atmost3targetfibres canhavealllocalramificationindiceseven, byRH qd/2<=2d-2. Thus no rationalbasechangecompletelykills all5finiteDTinertias ofthedegree10cover; atleast2survive. The evident doublecoverkillingall5hasgenus2. Noobstructiontootherdecompositiongroupcontrol. | [arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md](arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md): Proposition 4 |
 | ARITH-ZERO-BRANCH-RESIDUAL-WREATH-GROUP | claim | proved / partial | For g=9z6-414z4+1836z²+400 the cubicin z² isirreducibleS3with3realroots exactlyonenegative; complexconjugation givesonekernelbasisflip andS3conjugates givefullC2³, hencewreathorder48. Exactly21elements havealleven rootcycles; the correspondinggoodprimes have naturaldensity7/16. | [arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md](arithmetic/ALTERNATING_PENCIL_RAMIFICATION_DENSITY.md): Theorem 1 |
-| ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT | claim | proved / partial | For residual radical at most Y and odd sextic-free kernel at most Z, valuation colors give an affine lower bound u for the canonical height divided by (log X)/6. For fixed m with m²u>2 and k≥2 log₃(m), the count is O(X^epsilon Y Z^(f(k)−1)), where f(k) is the available signed quadratic 3-class moment exponent. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaged full \((2,3,6)\) count with a Mordell height lower bound |
+| ARITH-ABC-AVERAGED-SQUARE-CUBE-SIXTH-HEIGHT | claim | stale / partial | For residual radical at most Y and odd sextic-free kernel at most Z, valuation colors give an affine lower bound u for the canonical height divided by (log X)/6. For fixed m with m²u>2 and k≥2 log₃(m), the count is O(X^epsilon Y Z^(f(k)−1)), where f(k) is the available signed quadratic 3-class moment exponent. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaged full \((2,3,6)\) count with a Mordell height lower bound |
 | ARITH-ABC-DIRECT-RESIDUE-DIVISOR-LOCK | claim | proved / partial | If a degree-i coordinate on C has a divisor in a shell of exponent theta, use locked cost theta and modulus exponent i*theta in the direct residue inequality. At the asymmetric 2627/4796 witness, the degree-four stratum with a divisor in the reported window obeys D<=27/50. Its complement has a large prime factor and a bounded cofactor as quantified in the proof. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Freezing a divisor of one coordinate |
 | ARITH-ABC-INTERPOLATED-RESIDUE-ENERGY | claim | proved / partial | A released letter of total mass y modulo a lower exponent w has residue energy exponent at most y+(sqrt(2y)-sqrt(w))_+^2 and at most max(2y-33w/40,27y/20-7w/40,y). In particular w>=2y gives diagonal-scale energy. These bounds apply to the full original coordinate set without retaining its individual high-degree masses in the projected program. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Uniform energy bounds from interpolation |
-| ARITH-ABC-GRAPH-FULLOC-WITNESS-COMPARISON | claim | proved / partial | At Zeng's symmetric FullOC program witness D=7/12, the least full-side graph upper row over every common-degree omitted subset through index 6 is 83/132, also attained when the forced degree-7 tail is available. The row does not exclude the witness. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Comparison with the complete modulus-locking obstructions |
+| ARITH-ABC-GRAPH-FULLOC-WITNESS-COMPARISON | claim | stale / partial | At Zeng's symmetric FullOC program witness D=7/12, the least full-side graph upper row over every common-degree omitted subset through index 6 is 83/132, also attained when the forced degree-7 tail is available. The row does not exclude the witness. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Comparison with the complete modulus-locking obstructions |
 | ARITH-ABC-GRAPH-STRICT-BOX-IMPROVEMENT | claim | proved / partial | At the symmetric degree profile (2,1,20,9)/100, total radical log mass 24/25, the graph gives exponent 1/2. The best of the original BLT or revised BBLT individual box methods is 27/50. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Strict improvement on a box with degree-one mass |
 | ARITH-QUADRATIC-CHARACTER-INDICATOR-CONDITIONS | claim | proved / partial | For a fixed primitive nonprincipal quadratic Dirichlet character and arbitrary fixed0/1 valuation masks at finitely many primes containing its conductor, the two-branch model f(n_S)(1+chi(n_R))M(n_R)/V satisfies C1-C4 on each fixed-shift line. Conditions follow independently from rough one-variable means, exact split-prime invariance and a positive inert-prime-square upper sieve; no pair cancellation is assumed. | [../results/pointwise-binary-splitting-semigroups/quadratic-pairs.tex](../results/pointwise-binary-splitting-semigroups/quadratic-pairs.tex): C1-C4 checks in proof of thm:quadratic-indicator-pairs; eq:quadratic-model through eq:quadratic-model-comparison; [arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md](arithmetic/QUADRATIC_CHARACTER_INDICATOR_PAIRS.md): Sections3-4; two-branch rough means and positive prime-square record envelope |
 | ARITH-BINARY-CONDITIONAL-C12-LEADING | claim | proved / partial | UnderZFandG, C12+C12 count~12c12² C_E J_E(N)N/log^(3/2)N onN2mod12; otherresidueszero. c12 explicitEuler/L/Gamma constant, badfactor2/3. Nounconditionalbarrierclosureclaimed. | [arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md](arithmetic/PRIMITIVE_NORM_BINARY_CORRELATION.md): ConditionalC12Leading,B.12 |
@@ -19622,16 +19894,16 @@ Tracked obligations from the catalogue:
 | ARITH-EXACT-REAL-CHAMBER-SPECTRA-THM-SPECTRUM | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   For every \(N\geq3\), the map \(F_N\) in \emph{\eqref{eq:map}} is a polynomial Keller map over \(\Q\), with \[  \det DF_N=1,\qquad \deg_{\mathrm{gen}}F_N=N. \] On \(\Omega_N\), the possible real-fiber cardinalities are exactly \begin{equation}  \boxed{N,N-2,N-4,\ldots,N\bmod2}.  \end{equation} Each cardinality in \emph{\eqref{eq:spectrum}} occurs on a nonempty open chamber.  Every chamber of \(\Omega_N\) contains a rational target.  Moreover, there are chambers carrying the successive values in \emph{(1.6)} which form an adjacency chain \[  N\;--\;N-2\;--\;\cdots\;--\;(N\bmod2), \] each edge crossing a single smooth fold of the discriminant of \emph{(1.4)}. | [../unpublished/exact-real-chamber-spectra/main.tex](../unpublished/exact-real-chamber-spectra/main.tex): thm:spectrum |
 | ARITH-QUADRATIC-GAUGE-NONPROPERNESS-LEM-PROPERNESS-CARDINALITY | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(k\) be an algebraically closed field of characteristic zero and let \(F:\A^n_k\to\A^n_k\) be a dominant \'etale polynomial map of geometric degree \(d\).  Then \begin{equation}  y\notin S_F\quad\Longleftrightarrow\quad  \#F^{-1}(y)=d.   \end{equation} | [../unpublished/quadratic-gauge-nonproperness/sections/nonproperness.tex](../unpublished/quadratic-gauge-nonproperness/sections/nonproperness.tex): lem:properness-cardinality |
 | ARITH-ABC-PRIVATE-PRIME-CRT-GRAPH-OBSTRUCTION | claim | proved / partial | Any finite integer additive pattern admits a primitive realization by positive integers with a distinct prime of any prescribed exact valuation at each vertex and absent at all other vertices. For progression-free patterns this gives n^(2-o(1)) primitive triples on O(n) labels with every projected edge in exactly one triangle. The construction supplies neither numerical-height shares of the private factors nor small total radical. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Private prime powers and exact additivity |
-| ARITH-ABC-MIXED-EUCLIDEAN-FIXED-SIXTH-ROOT | claim | proved / partial | For signature (2,3,6) or a permutation, count primitive triples with full residual radical at most Y and canonical sixth root at most Z by O_epsilon(Y^(1+epsilon) Z^(1+epsilon)). At height X this yields O_epsilon(Y X^(1/6+epsilon)). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
-| ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL | claim | proved / partial | For every fixed odd prime ell>=5, with residual radical at most Y and signed quadratic kernel of absolute value at most Z, the count is O_(ell,epsilon)(X^epsilon Y Z^(1/2-3/(2ell+2))). The signed kernel is supported on the odd valuations of the square and frozen letters. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
-| ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL | claim | proved / partial | In a primitive anatomic box with actual largest letter C comparable to X, freeze all its degree-above-six coordinates and an early set O_C. In the limiting grouped collision formula its frozen modulus exponent can be taken to be one minus the weighted mass of the remaining early C coordinates. This applies uniformly over distributions of the higher degrees. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using all higher coordinates of the largest letter |
-| ARITH-ABC-SMALL-BUDGET-PRIME-PROFILE-OBSTRUCTION | claim | proved / partial | For a sequence lambda tending to zero, explicit prime-degree profiles of height one satisfy the Fourier, geometric, grouped-root, two-group direct residue-energy and common-shift inequalities at D>=2lambda/3-O(lambda^(3/2)*sqrt(log(1/lambda))). This is a feasible family for the inequalities, with no assertion of integer triples. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A matching order for the Fourier and two-group estimates |
-| ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT | claim | proved / partial | At the symmetric FullOC exponent witness D=7/12, choosing A root groups {2,4} and {3}, releasing B degree 3, and taking the grouped cubic difference cap gives D<=37/66, a cut of size 1/44. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): The symmetric 7/12 profile |
+| ARITH-ABC-MIXED-EUCLIDEAN-FIXED-SIXTH-ROOT | claim | stale / partial | For signature (2,3,6) or a permutation, count primitive triples with full residual radical at most Y and canonical sixth root at most Z by O_epsilon(Y^(1+epsilon) Z^(1+epsilon)). At height X this yields O_epsilon(Y X^(1/6+epsilon)). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
+| ARITH-ABC-SQUARE-ODD-PRIME-RESIDUAL-RADICAL | claim | stale / partial | For every fixed odd prime ell>=5, with residual radical at most Y and signed quadratic kernel of absolute value at most Z, the count is O_(ell,epsilon)(X^epsilon Y Z^(1/2-3/(2ell+2))). The signed kernel is supported on the odd valuations of the square and frozen letters. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
+| ARITH-ABC-GROUPED-MODULUS-LARGEST-LETTER-TAIL | claim | stale / partial | In a primitive anatomic box with actual largest letter C comparable to X, freeze all its degree-above-six coordinates and an early set O_C. In the limiting grouped collision formula its frozen modulus exponent can be taken to be one minus the weighted mass of the remaining early C coordinates. This applies uniformly over distributions of the higher degrees. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using all higher coordinates of the largest letter |
+| ARITH-ABC-SMALL-BUDGET-PRIME-PROFILE-OBSTRUCTION | claim | stale / partial | For a sequence lambda tending to zero, explicit prime-degree profiles of height one satisfy the Fourier, geometric, grouped-root, two-group direct residue-energy and common-shift inequalities at D>=2lambda/3-O(lambda^(3/2)*sqrt(log(1/lambda))). This is a feasible family for the inequalities, with no assertion of integer triples. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A matching order for the Fourier and two-group estimates |
+| ARITH-ABC-SPARSE-ROOT-SYMMETRIC-CUT | claim | stale / partial | At the symmetric FullOC exponent witness D=7/12, choosing A root groups {2,4} and {3}, releasing B degree 3, and taking the grouped cubic difference cap gives D<=37/66, a cut of size 1/44. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): The symmetric 7/12 profile |
 | ARITH-ABC-TWO-TALL-TERMS-TAIL-AFFINE-INEQUALITIES | claim | proved / partial | On the dyadic band for the actual largest term, both it and the larger addend have exponent one in complete height. Label the shorter addend A and sort the two tall labels. This gives rigorous lower modulus bounds when freezing the entire tail of either tall letter, and height upper bounds for tail releases in any letter. Subset geometry and both residue/collision estimates remain valid for these aggregate tail selections. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Exponent inequalities with both tall terms retained |
 | ARITH-POWERFUL-FERMAT-BOX-GCD-EXPONENT | claim | proved / partial | Primitive signed solutions with fixed powers p,q,r>=2 and nonzero integer coefficients satisfy the coefficient-uniform bound (2). Pairwise coprime powers with r<=max(p,q), and equally powered boxes, need only W^2+W*M^(1/r). Distinct powers in [s,s+A] have reducible-slice exponent at most A/s. | [arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md): Rectangular and nearly equal exponent consequences, equation (2) |
 | ARITH-POWERFUL-FIXED-OFFSET-REFINED-SURFACE-LOSS | claim | proved / complete | In the primitive fixed-offset dyadic step, counting the three free maximum-scale coordinates costs at most L^(s^(-3/2)*(1+sqrt(s/(s-1)))+epsilon) for base order s>=2. | [arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md](arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md): Transfer to the fixed-offset surface step, equation (4) |
-| ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP | claim | proved / partial | The tall quartic roots lie in a narrow real strip and in a lattice modulo the short cubic cofactor. Their area divided by the covolume has exponent s=3 beta+gamma+xi-1, independent of the unknown short tail height. Lattice reduction and the diagonal surface cover give three affine branches, and exponent at most 407/888 at the denominator-37 profile. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using the short cofactor to count in a lattice |
-| ARITH-POWERFUL-TRIPLES-FIXED-OFFSET-FOURIER-SAVING | claim | proved / partial | For fixed u>=v>=0, p=r+u,q=r+v, the bound exponent is 1/p+1/q-sqrt(2)*r^(-3/2)+(3/2+(u+v)/3)*r^-2+O_(u,v)(r^-5/2)+epsilon. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exact optimization and fixed offsets |
+| ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP | claim | stale / partial | The tall quartic roots lie in a narrow real strip and in a lattice modulo the short cubic cofactor. Their area divided by the covolume has exponent s=3 beta+gamma+xi-1, independent of the unknown short tail height. Lattice reduction and the diagonal surface cover give three affine branches, and exponent at most 407/888 at the denominator-37 profile. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using the short cofactor to count in a lattice |
+| ARITH-POWERFUL-TRIPLES-FIXED-OFFSET-FOURIER-SAVING | claim | stale / partial | For fixed u>=v>=0, p=r+u,q=r+v, the bound exponent is 1/p+1/q-sqrt(2)*r^(-3/2)+(3/2+(u+v)/3)*r^-2+O_(u,v)(r^-5/2)+epsilon. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exact optimization and fixed offsets |
 | ARITH-MS-EXACT-LEM-M7-INTERVALS | claim | proved / partial | Every inert-supported and every split-prime target n>=2^24 lies in the -7 core self-sumset; 257fine intervals,17higher bins and an unbounded tail prove the coverage. | [../results/eisenstein-restricted-prime-sums/sections/minus7-exact.tex](../results/eisenstein-restricted-prime-sums/sections/minus7-exact.tex): lem:m7-intervals |
 | ARITH-D11-SHARP-INERT-CORE-BOUNDS | claim | proved / partial | For every realX>=0 the nonzero Q11 lattice count is at most12X/5. For every even inert core n, E=(2/3)Delta/S<(11/4)n^(-1/3). The latter uses the exact sigma denominator, the dyadic maximumat6 and complete Euler maxima at odd inert primes<64 with exponents0..2; larger primes/exponents contribute no gain. These unrestricted bounds give the8/3large-prime coefficient and the exact bin criterion. | [arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md](arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md): M11.17-M11.19; lattice row integral, exact Euler completeness and divisor-frontier rearrangement |
 | ARITH-D8-SHARP-INERT-CORE-BOUNDS | claim | proved / partial | For allrealX>=0, nonzero Q8 points<=8X/3 and odd-norm points<=2X. For odd inert coresm, E=tau(m)sqrt(m)/sigma(m)<(18/5)m^(-1/3), by complete prime/exponent Euler maxima. Selected-shell baselines forN=m,2m,4m are1/2-E/2,1/2,2/3, with large-inert coefficients8/3,2,4/3. Small badcounts use the full shell, large counts use the selected subset; criterionM8.9 remains valid for all target valuations. | [arithmetic/PRIMITIVE_NORM_MINUS8_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS8_EXACT.md): M8.7-M8.12; all lattice, Euler, subset-union and interval completeness arguments |
@@ -19651,7 +19923,7 @@ Tracked obligations from the catalogue:
 | ARITH-RANDOM-PRIME-BOUNDED-GRAMMAR-PREFIX-SIZE | claim | proved / partial | For fixed fanout and production rank, in the random semigroup model with alpha=1-gamma, almost surely the number of nonterminals plus productions recognizing its length-L membership language is at least a positive constant times b^(alpha L)/L eventually. In classes permitting terminal-only productions the minimum has exponential rate alpha. | [arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md](arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md): Grammars of fixed fanout and production rank, equation (4) |
 | ARITH-RANDOM-PRIME-COMPLETE-READ-ONCE-WIDTH | claim | proved / partial | For 0<gamma<1, lambda>0, base b>=2 and alpha=1-gamma, almost surely all sufficiently large length-L prefixes of the admitted-prime semigroup require width at least a positive constant times b^(alpha L/2)/sqrt(L) for syntactically complete read-once nondeterministic programs and b^(alpha L)/L^2 for deterministic ones. The deterministic exponential rate is alpha. | [arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md](arithmetic/RANDOM_PRIME_SEMIGROUP_PREFIX_COMPLEXITY.md): Equations (1)–(3), complete read-once definition and Counting descriptions of width W |
 | ARITH-RANDOM-PRIME-COUNT-MOMENTS-AND-CUMULATIVE | claim | proved / partial | Admit 2 and select odd primes independently with probabilities min(1,lambda*q^-gamma), 0<gamma<1, lambda>=1. For alpha=1-gamma and each integer l>=1, E[N(x)^l] is O_l(x^(l alpha)(1+log x)^(l(lambda-1))), uniformly if any one prime is forced in. For fixed k>=2 the unordered cumulative representation count, with repetitions, normalized by x^(k alpha)(log x)^(k(lambda-1)), tends almost surely and in every finite L^r to Gamma(1+alpha)^k A^k/(k! Gamma(1+k alpha)); the normalized semigroup count has the same modes of convergence to A. | [../results/published/random-prime-semigroups/main.tex](../results/published/random-prime-semigroups/main.tex): lem:moments; [arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md](arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md): Equations (4) and (8), cumulative counting and uniform moment bound |
-| ARITH-ABC-FROZEN-COFACTOR-AFFINE-SHORT-STRIP | claim | proved / partial | When the short addend is U x^p and the other released power comes from a tall term, the real interval and reduction modulo U shorten the other root box to exponent (gamma+p beta-1)_+. The weighted plane bound gives D<=L-m_A-m_B+(gamma+p beta-1)_+/p. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Shortening the plane box by the short height |
+| ARITH-ABC-FROZEN-COFACTOR-AFFINE-SHORT-STRIP | claim | stale / partial | When the short addend is U x^p and the other released power comes from a tall term, the real interval and reduction modulo U shorten the other root box to exponent (gamma+p beta-1)_+. The weighted plane bound gives D<=L-m_A-m_B+(gamma+p beta-1)_+/p. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Shortening the plane box by the short height |
 | C6-PRIME-QUOTIENT-AND-GCD-FILTER | claim | proved / partial | For odd prime N, every actual nonsingular selected-edge balanced six-cycle has a unique sigma=+/-1 and nonzero m with U-sigma V=mN, \|m\|<<T, gcd(U,V)\|m; the negative sign has m comparable to T. | [arithmetic/ERDOS_943_SIX_CYCLES.md](arithmetic/ERDOS_943_SIX_CYCLES.md): Lemma PrimeQuotientFilter |
 | ARITH-HECKE-TRUNCATED-PAIR | claim | proved / partial | For two fixed normalized full-level holomorphic forms and 1<=Z<=X, a_f,Z(n)=sum_{d\|n,d<=Z}lambda_f(d^2) satisfies sum_{n<=X}a_f,Z(n)a_g,Z(n+1)=C_f,g(1)X+O_{f,g,epsilon}(XZ^(-1/4+epsilon)+Z^2 log^4(2Z)). Taking Z=X^(4/9) gives O(X^(8/9+epsilon)). This is a known-input consequence of classical Hecke/Deligne identities and Miller cancellation, without the recent ZF/G inputs; no priority claim or full-weight asymptotic follows. | [arithmetic/SQUARED_HECKE_EIGENVALUE_PAIRS.md](arithmetic/SQUARED_HECKE_EIGENVALUE_PAIRS.md): Theorem HeckeTruncatedPairs and Section4; CRT expansion, double Dirichlet correction and bounded partial sums |
 | ARITH-HL-EULER-COSET-MARGINALS | claim | proved / partial | For Eulerindicators coprimetoL, first-prime supportS positive and arbitraryhigher0/1rules, maximalratio r_eta=prod F_p(eta(p)/p)/F_p(1/p) is absconvergent/nonzero. Independentprime-squaredefects define π onG/<S>, and eachunitclassa has leadingmass c_f π(aH)/\|H\|. L10example hasunequal positive1/9masses, so H alone is not a uniformmask. | [arithmetic/MULTIPLICATIVE_HARDY_LITTLEWOOD.md](arithmetic/MULTIPLICATIVE_HARDY_LITTLEWOOD.md): Theorem EulerCosetMarginals H.4-H.5 andL10 example |
@@ -19686,7 +19958,7 @@ Tracked obligations from the catalogue:
 | ARITH-PRIME-PRINCIPAL-NORM-DECOMPOSITIONS | claim | proved / partial | Every sufficiently large odd N is a sum of three distinct unramified prime values of Q_0=x^2+xy+6y^2. The ordered count is asymptotic to [23 B_23(N)/66^3] N^2/log^3 N times product_(p!=2,23)(1-c_p(N)/(p-1)^3), where B_23 is 66, 55 or 60 on zero, square or nonsquare target states. Every sufficiently large comparable odd N,M also has five distinct such primes with a+b+c=N and c+d+e=M. No almost-equal power-window result for Chebotarev primes is claimed. The analytic inputs are the classical Kane and Frei-Tinkova theorems, not the class-group semigroup argument. | [arithmetic/PRIME_SPLITTING_DECOMPOSITIONS.md](arithmetic/PRIME_SPLITTING_DECOMPOSITIONS.md): Theorem PrincipalNormPrimeTriples, (P.8), and coupled positivity modulo 23 |
 | ARITH-D23-SELECTED-BINARY-IDEAL-ENVELOPE | claim | proved / partial | For allk>=1, the signed representations byQ whose coordinate block is divisible by neither2 nor3 number at most12k^(1/6). At2,3 only two ideal orientations remain; the exact sixth-power Euler constant is2^48/(2*3*13*29*31*41*47*59)<6^6. No assertion that every ideal is principal is needed. | [arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md](arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md): Sections1-5, exact theorem scope |
 | ARITH-PRIME-DISCRIMINANT-BURGESS-GROWING-WINDOW | claim | proved / partial | For either fixed class r=3 or 7 mod 8, uniformly sample p<=X in that class. For each fixed 0<theta<2/19, E_p intersect [2,X^theta] converges in total variation to the entire independent fair odd-prime gap model with matching status of 2. This is convergence of the truncated arithmetic set. | [arithmetic/PRIME_DISCRIMINANT_BURGESS_WINDOW.md](arithmetic/PRIME_DISCRIMINANT_BURGESS_WINDOW.md): Improving the monomial error |
-| ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES | claim | proved / partial | A limiting anatomic box with normalized count d admits a fixed-degree cutoff on each letter of mass greater than 1−2d. The grouped low cofactor and boundedly many heavy roots each have size X^(O(L)). This includes supported letters of limiting numerical height zero. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Making the low coefficient short in anatomic boxes |
+| ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES | claim | stale / partial | A limiting anatomic box with normalized count d admits a fixed-degree cutoff on each letter of mass greater than 1−2d. The grouped low cofactor and boundedly many heavy roots each have size X^(O(L)). This includes supported letters of limiting numerical height zero. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Making the low coefficient short in anatomic boxes |
 | EXT-LOW-DEGREE-INTERSECTIVE | claim | proved / partial | A polynomial over Z of degree<=4 with roots modulo every positive integer has a rational root, by low-degree Galois factor cases plus Berend-Bilu fixed-point criterion/Chebotarev. | [../unpublished/fixed-map-hasse-failures/sections/05-minimality.tex](../unpublished/fixed-map-hasse-failures/sections/05-minimality.tex): Proof of thm:minimality, irreducible-factor cases |
 | ARITH-FIXED-RESOLVENT-HASSE-CHARACTER-CRITERION | claim | proved / partial | A nontrivial anti-invariant cubic ray character of a quadraticK gives Hasse-failing K timesL iff it is unramified at every finite prime fixed by the quadratic involution. At a fixed unramified prime, anti-invariance forces its Frobenius value to1; at a ramified fixed prime the localS3 decomposition group is allS3. The criterion includes2and3. | [arithmetic/RANK_FIVE_FIXED_RESOLVENT_RAY_CLASSES.md](arithmetic/RANK_FIVE_FIXED_RESOLVENT_RAY_CLASSES.md): Theorem RRC1 |
 | ARITH-COUPLED-FINITE-ADMISSIBILITY | claim | proved / partial | Fixed surjective A, d=s-r>=2 and pairwise independent kernel rows. Joint root states moduloL plus forbidden-unit tests at goodp<=s ordividing pairwedgecontents are equivalent to solutions byactualcorevalues in every finitequotient and in one computable modulusM*. Extra coefficientprimes do not change the prime prescriptions. | [arithmetic/COUPLED_SPLITTING_LOCAL_GLOBAL.md](arithmetic/COUPLED_SPLITTING_LOCAL_GLOBAL.md): Theorem CoupledFiniteAdmissibility C.1-C.2, full fiber/CRT/finite-image proof |
@@ -19780,6 +20052,8 @@ Tracked obligations from the catalogue:
 | HBFT-NONPROPORTIONAL-LINE-UNIFORM-COUNT | claim | proved / partial | On a nonproportional rank-two line, F(u,v)=n!=0 has n^epsilon primitive actual points, uniformly in ALL line/coefficient heights, by the exact three-root Thue--Mahler theorem. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Section2 |
 | OSCT-ACTUAL-GCD-NO-VALUATION-ONE | claim | proved / partial | For every ACTUAL ordered positive square-full pair u+v=N, its h=gcd(u,v) has each prime valuation t=0 or t>=2. The coprime quotient normalization is exactly the existing HBFT injection; this no-valuation-one fact is required for the new all-q floor estimate, not asserted for an arbitrary integer h. | [arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md](arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md): Actual gcd normalization; equation(3) |
 | ARITH-HURWITZ-ARBITRARY-INPUT-OVERLAP-ONE | claim | proved / partial | For every fullcycle polynomial DT tuple generatingA_N,N>5, there is a braid to adjacent supports intersecting in exactlyone label. Move an odd-overlap pair adjacent unchanged. In the overlap3 case its five-vertex path has5cycle product; treeconnectedness supplies an external factor and at most8pairmoves rotate a unique fixedcorevertex to give overlap1. | [arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md](arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md): Theorem5 |
+| KGR-OLD-WEIGHT-DOMINATION-AND-POINTWISE-BOUNDS | claim | proved / partial | Let gamma=gcd(c1,c2) and W0=alpha^3/sqrt(abs(ell)/gamma^2), the ACTUAL old quotient, not necessarily squarefree. Actual gcd(alpha,gamma)=gcd(g,gamma)=1 gives gamma^2\|ell/g^3. If abs(ell/g^3)=e_prime*v^2, gamma\|v and Wstar/W0=g^2*(v/gamma), a positive integer multiple of g^2. Also alpha^4*g^2<R2*Wstar, Wstar>1/R2, and Wstar<alpha^(8/3)*R2^(1/3). These are pointwise local facts, independent of cubic or codegree counts. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Section4, equations(12)--(14) and integer g^2 comparison |
+| KGR-SMALL-SQUAREFREE-QUOTIENT-COEFFICIENT-COUNT | claim | proved / partial | For dyadic alpha in[A,2A),g in[G,2G), A,G>=1, and e_prime=sf(abs(ell/g^3))<=E, E>=1, the number of possible ordered coefficient data(g,r1,r2,ell/g^3) is O(R1^2*R2*sqrt(E)/(A^3*sqrt(G))). Count DISTINCT signed lifts by sum_{squarefree t<=E}2floor(sqrt(R2^2/(A^2*g^3*t))), then sum g in[G,2G). Floors, empty ranges and E beyond actual ranges are retained. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Section2, equations(10)--(11) |
 | ARITH-AFFINE-TRACE-CRITICAL-SQUARE | claim | proved / partial | For an even numerator of degree 2h, the affine relation theta=s+t*rho makes rho separate all h critical pairs. Quadratic trace identities and critical jets give D=-2(4h-1)q(rho)^2 and a leading equation (t+2)B_h(-t)=0. The note proves B_h is strictly positive on the real line for h>=2. No reality assumption on the critical roots is used. | [arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md](arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md): Sections1-3 |
 | ARITH-BOTH-SCALAR-CRITICAL-CHART-COMPLEX-OBSTRUCTION | claim | proved / partial | For everyh>=1, goodpairedcriticalN ofdegree m2h cannot havebotha andrho asnonzero basefieldscalars, overC oranycharacteristic0field. EulercomparisonforcesS=u^m+a/(2m-2)u+a*rho/(2m). Normu=rho² makesSreciprocal; for m>=4 the forcednonzero u^(m-1)coefficient contradictsS. For m2 normgivesrho=a/4 andS=(u+rho)², violatingdistinctness. | [arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md](arithmetic/SCALAR_SECANT_PROPORTIONAL_SCALE_OBSTRUCTION.md): Proposition2 |
 | ARITH-ODD-AFFINE-TRACE-CRITICAL-SQUARE | claim | proved / partial | For h>=2,m=2h+1,L=4h+1, good normalized N(z²)/z with theta=s+t*rho has primitive canonical scale R with polynomial q of degreeh. Euler critical jets give D=2(L+k_h(t)R)q², with k_h=gamma_(2h+1)-gamma_(2h), including all leading-degree specializations. | [arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md](arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md): Lemma1 |
@@ -19803,9 +20077,9 @@ Tracked obligations from the catalogue:
 | ARITH-COALESCED-MIXED-DEGREE7-COMPLETE-HOLONOMY | claim | proved / partial | The full forced-last-factor domain has196 literal tuples; all784 signed marked move edges are exhausted. Fundamental-loop transports all restrict toV4 on the same four outside sheets, and explicit pure splitting-fixing loops attainV4. This upper bound includes all literal loops, not only selected pure seeds. | [arithmetic/FULL_COALESCED_ATTACHMENT_HOLONOMY.md](arithmetic/FULL_COALESCED_ATTACHMENT_HOLONOMY.md): Theorem1 and complete degree-seven Schreier upper bound |
 | ARITH-POLYNOMIAL-UNMARKED-TO-MARKED-CONNECTIVITY | claim | proved / partial | For r>=4 and fixed fullcycleP, Br transitivity onD^r is equivalent to Htransitivity by the explicit cyclicstabilizer. For oneT andr-1D, Br transitivity is equivalent to Htransitivity withTfirst, since its uniqueclass identifies the strand. The central fulltwist generates conjugation byC(P), so these formulations also agree in the absolute quotient. | [arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md](arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md): Theorem4 |
 | ARITH-SOLVABLE-PULLBACK-ODD-CONTACT-RESIDUE | claim | proved / partial | For anyrationalP1mapwithsolvableARITHMETICnormalclosure andanyGaloisorbit>=4offinitebranchvalues, eachvaluehasanodd-indexfinitepreimagebeta. OtherwiseGaloisinvariancewouldgive>=4everywhere-evenfibres, contrarytoRH. Thepreimageresidueextensionoveritsbranchfield hassolvablenormalclosure asadecomposition/inertiaquotientofthebasechangednormalcover. | [arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md](arithmetic/NONZERO_BRANCH_RESIDUAL_S6_AND_SOLVABLE_PULLBACKS.md): Lemma4 andTheorem6 |
-| ARITH-ABC-LOCAL-MORDELL-PACKING-RESIDUAL | claim | proved / partial | In any ordered square–cube–sixth-power profile, let w be the sum over retained nondivisible valuations i of (i/e)alpha_(J,i). If w>=w0 and 3^a(3w0)^b>=1 for k=a/b>=1, then D<=rho_++(f(k)−1)sigma_+. In particular w>=1/9 implies D<=rho_+. The height separation uses only retained classes and primes of good reduction after a bounded loss at 2 and 3. | [arithmetic/ABC_MORDELL_LOCAL_PACKING.md](arithmetic/ABC_MORDELL_LOCAL_PACKING.md): Local packing for the \((2,3,6)\) residual radical |
-| ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE | claim | proved / partial | For fixed m with 3m²u>2, the rational isogeny count takes k≥1+2 log₃(m) in the signed quadratic moment. In particular u>2/3 gives O(X^epsilon Y) via the first moment with no parity restriction. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A one-class-group bound from the rational three-isogeny |
-| ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW | claim | proved / partial | For each of the four signatures, D plus the total mass in valuation classes divisible by the assigned exponent is at most L in exact anatomic boxes. Projecting to the first six exact valuation indices gives four rows for the certificate checker. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summation over residual radicals |
+| ARITH-ABC-LOCAL-MORDELL-PACKING-RESIDUAL | claim | stale / partial | In any ordered square–cube–sixth-power profile, let w be the sum over retained nondivisible valuations i of (i/e)alpha_(J,i). If w>=w0 and 3^a(3w0)^b>=1 for k=a/b>=1, then D<=rho_++(f(k)−1)sigma_+. In particular w>=1/9 implies D<=rho_+. The height separation uses only retained classes and primes of good reduction after a bounded loss at 2 and 3. | [arithmetic/ABC_MORDELL_LOCAL_PACKING.md](arithmetic/ABC_MORDELL_LOCAL_PACKING.md): Local packing for the \((2,3,6)\) residual radical |
+| ARITH-ABC-SQUARE-CUBE-SIXTH-RATIONAL-ISOGENY-AVERAGE | claim | stale / partial | For fixed m with 3m²u>2, the rational isogeny count takes k≥1+2 log₃(m) in the signed quadratic moment. In particular u>2/3 gives O(X^epsilon Y) via the first moment with no parity restriction. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A one-class-group bound from the rational three-isogeny |
+| ARITH-ABC-EUCLIDEAN-RESIDUAL-ROW | claim | stale / partial | For each of the four signatures, D plus the total mass in valuation classes divisible by the assigned exponent is at most L in exact anatomic boxes. Projecting to the first six exact valuation indices gives four rows for the certificate checker. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summation over residual radicals |
 | ARITH-ABC-SEPARATED-OFFDIAGONAL-RESIDUES | claim | proved / partial | Separating repeated residues gives at most the size of one released set plus the geometric mean of the two off-diagonal energies. After fixing two cofactors in a divisible-degree block, a nonzero shift is counted by a uniform binary power equation. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Separating repeated residues from the diagonal |
 | ARITH-EISENSTEIN-BALANCED-PRIME-FAMILIES | claim | proved / partial | For every prime p=1 modulo 3, both 8p and 44p are a+b with a,b in A and n/3<=a,b<=2n/3. The retained balanced certificate covers n<100000000. Four exact interval envelopes cover 100000000<=n<=1600000000, and an analytic estimate covers every n>=1000000000, with overlapping endpoints. No new target enumeration is used. | [arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md): Theorem EisBalancedReduction, part 1; EB6 and prime-family tail |
 | ARITH-EISENSTEIN-FINITE-COSET-RELAXATION | claim | proved / partial | For a finite group G surjecting to an elementary abelian 2-group E, take the product of mu_h with uniform probability on the norm coset over beta in E. This gives every finite conditional scalar mean exactly, degree-zero eigenvalues xi(beta) on norm characters and zero on their orthogonal complement, and the same 5*h^(3/2) bound on positive archimedean weight. It is compatible with level projection and with diagonal order-unit symmetry when the finite unit image lies in the kernel. The arithmetic comparison is restricted to finite principal levels coprime to the Hecke index, with the actual ramified norm map at 3; no index-dividing principal-level assertion is made. | [arithmetic/EISENSTEIN_SINGLE_INDEX_OPERATOR_BARRIER.md](arithmetic/EISENSTEIN_SINGLE_INDEX_OPERATOR_BARRIER.md): Equations (B2)–(B4), EisFiniteCosetRelaxation and prime-to-index specialization |
@@ -19825,11 +20099,11 @@ Tracked obligations from the catalogue:
 | ARITH-DISCRIMINANT-PENCILS-THM-MAIN | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   For every \(n\geq3\), there is a nonempty Zariski-open subset of the degree-\(n\) polynomials such that the projective discriminant curve of \(H(W)-sW+t\) has: \begin{enumerate} \item degree \(n\) and normalization \(\Pone\); \item one point at infinity, which is smooth; \item exactly \(n-2\) ordinary cusps; \item exactly \(\frac12(n-2)(n-3)\) ordinary nodes; \item no other singularities. \end{enumerate} | [../unpublished/discriminant-pencils/main.tex](../unpublished/discriminant-pencils/main.tex): thm:main |
 | ARITH-EXACT-REAL-CHAMBER-SPECTRA-COR-MIGUS | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   For every even \(N\geq4\), \(F_N(\R^3)\) is not Euclidean dense and \(F_N\) has generic degree \(N\).  Thus the realization half of Migus's classification can be chosen so that the complete regular real-fiber spectrum is \(N,N-2,\ldots,0\), with rational witnesses and a full fold adjacency chain. | [../unpublished/exact-real-chamber-spectra/main.tex](../unpublished/exact-real-chamber-spectra/main.tex): cor:migus |
 | ARITH-QUADRATIC-GAUGE-NONPROPERNESS-THM-EXACT-NONPROPERNESS | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   For every seed \eqref{eq:seed}, \begin{equation}  \boxed{S_{F_G}=V_{\mathrm{red}}(\Delta_G).}   \end{equation} Equivalently, their sets of geometric points satisfy \(\lvert S_{F_G}\rvert=V_{\overline K}(\Delta_G)\). More precisely, the following statements hold. \begin{enumerate} \item If \(\pi\neq0\) and the multiplicity partition of       \(E_{\pi,b,c}\) is \((m_1,\ldots,m_s)\), then       \begin{equation}        \#F_G^{-1}(\pi,b,c)=\#\{i:m_i=1\},        \qquad        N-\#F_G^{-1}(\pi,b,c)=\sum_{m_i\geq2}m_i.               \end{equation} \item On \(\Pi=0\), the complete geometric fiber table is       \begin{equation}       \begin{array}{c\|c\|c}        \text{target stratum}&\#F_G^{-1}(0,B,C)&\text{lost sheets}\\ \hline        B\neq0,\ BC\neq1&3&N-3\\        B\neq0,\ BC=1&1&N-1\\        B=0&1&N-1.       \end{array}              \end{equation} \item For \(N=3\), the raw resultant has an extraneous leading-coefficient       factor:       \[        \operatorname{Res}_S(E,E')=\text{\rm unit}\cdot\Pi\Delta_G,        \qquad        \Delta_G(0,B,C)=\frac{g_1^4}{4}B^2(1-BC).       \]       Hence the entire plane \(\Pi=0\) is not a nonproperness component in       degree three. \item For \(N\geq4\), put       \[        e_N=N^2-3N-2.       \]       Then       \begin{equation}        \Delta_G=\Pi^{e_N}D_G,        \qquad        D_G(0,B,C)=\kappa_G B^2(1-BC),        \qquad \kappa_G\in K^*.               \end{equation}       In particular,       \[        S_{F_G}=V_{\mathrm{red}}(\Pi D_G),       \]       whose underlying set is \(V(\Pi)\cup V(D_G)\), and the resultant and       discriminant define the same reduced closed subscheme. \end{enumerate} | [../unpublished/quadratic-gauge-nonproperness/sections/nonproperness.tex](../unpublished/quadratic-gauge-nonproperness/sections/nonproperness.tex): thm:exact-nonproperness |
-| ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW | claim | proved / partial | For actual primitive triples in an anatomic box, D+sum_{T,i<=6:e_T\|i} alpha_(T,i)<=L for any fixed hyperbolic signature of powers of one prime. Truncation can retain all six exact valuation classes. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): For the finite projected program |
-| ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS | claim | proved / partial | For every ordered distinct S,T the inequality is D<=L-m_2(S)-m_3(T). With exact indices through six its safe projection retains indices 2,4,6 on S and 3,6 on T. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
-| ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS | claim | proved / partial | D<=L-m_2(S)-m_5(T)+(L_S+L_F-m_2(S)-m_2(F))/4 holds for every assignment of square S, fifth T, and frozen F. The certificate uses six exact valuation indices. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
-| ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE | claim | proved / partial | Every lift of the symmetric 4/7 grouped six-index profile obeys D<=23/42 under the grouped collision bound that freezes all higher coordinates of the actual largest letter. It excludes an open neighborhood of this profile. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using all higher coordinates of the largest letter |
-| ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES | claim | proved / partial | At sufficiently small fixed budget lambda, if D exceeds L/2+3lambda/ceil(lambda^(-1/2)), each letter has at most one high-degree coordinate exceeding the stated mass threshold. The other coordinates have total weighted height O(sqrt(lambda)). Both tall letters have a dominant coordinate of degree at least a constant times 1/lambda. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): One possible high-degree coordinate per letter |
+| ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-ROW | claim | stale / partial | For actual primitive triples in an anatomic box, D+sum_{T,i<=6:e_T\|i} alpha_(T,i)<=L for any fixed hyperbolic signature of powers of one prime. Truncation can retain all six exact valuation classes. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): For the finite projected program |
+| ARITH-ABC-SQUARE-CUBE-RESIDUAL-ROWS | claim | stale / partial | For every ordered distinct S,T the inequality is D<=L-m_2(S)-m_3(T). With exact indices through six its safe projection retains indices 2,4,6 on S and 3,6 on T. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
+| ARITH-ABC-SQUARE-FIFTH-RESIDUAL-ROWS | claim | stale / partial | D<=L-m_2(S)-m_5(T)+(L_S+L_F-m_2(S)-m_2(F))/4 holds for every assignment of square S, fifth T, and frozen F. The certificate uses six exact valuation indices. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
+| ARITH-ABC-GROUPED-TAIL-CUTS-FOUR-SEVENTHS-PROFILE | claim | stale / partial | Every lift of the symmetric 4/7 grouped six-index profile obeys D<=23/42 under the grouped collision bound that freezes all higher coordinates of the actual largest letter. It excludes an open neighborhood of this profile. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using all higher coordinates of the largest letter |
+| ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES | claim | stale / partial | At sufficiently small fixed budget lambda, if D exceeds L/2+3lambda/ceil(lambda^(-1/2)), each letter has at most one high-degree coordinate exceeding the stated mass threshold. The other coordinates have total weighted height O(sqrt(lambda)). Both tall letters have a dominant coordinate of degree at least a constant times 1/lambda. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): One possible high-degree coordinate per letter |
 | ARITH-ABC-TALL-RESIDUE-PROFILE-OBSTRUCTION | claim | proved / partial | At unit radical budget the displayed asymmetric six-index profile with zero tail mass and two height-one letters permits D=2627/4796 under the projected pair and Fourier rows, the whole-tail geometry and grouped collision rows, direct residue-energy rows, and paired-shift rows. The assertion concerns the exponent inequalities. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): An asymmetric obstruction for the height-tagged bounds; [arithmetic/verify_abc_tall_residue_obstruction.py](arithmetic/verify_abc_tall_residue_obstruction.py): main |
 | ARITH-POWERFUL-FIXED-OFFSET-MASS-SLACK-CONSTANT | claim | proved / complete | In the competitive fixed-offset boxes, the sum T of the three maximum normalized masses is at most 1+(1+sqrt(3))/(4*sqrt(s))+O_(u,v)(s^(-1)). The coefficient is 2/3 if the three chosen powers are distinct or the two smaller-scale powers coincide. | [arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md): Retaining the actual side lengths in fixed-offset boxes, equations (3) and (4) |
 | ARITH-MS-EXACT-THM-MINUS7-EXACT | claim | proved / partial | Exact -7 core sumset excludes only11,29 among7-unit targets; primitive sumset excludes7,77,203 among49-unit targets. Every eligible N>=2^69 has at leastN^(2/3)/20000 ordered numerical-value pairs. | [../results/eisenstein-restricted-prime-sums/sections/minus7-exact.tex](../results/eisenstein-restricted-prime-sums/sections/minus7-exact.tex): thm:minus7-exact |
@@ -19922,6 +20196,7 @@ Tracked obligations from the catalogue:
 | HBFT-NONDEGENERATE-RATIONAL-LINE-ALLOCATION | claim | proved / partial | For actual points satisfying(1)--(2), each nondegenerate bilinear relation has h\|Delta and onlyn^epsilon rational projective lines, since its coefficients andDelta are polynomially bounded. ALL integral points of those lines may be retained; no congruence refinement is required. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Section3 |
 | HBFT-UNIFORM-FIXED-LEVEL-LINE-COUNT | claim | proved / partial | Lemma1: ANY rank-two integral lattice inZ4 contains at mostn^epsilon actual positive primitive level-n points, uniformly in ALL basis coefficients. All zero/constant/proportional cases included. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Lemma1;Section2 |
 | OSCT-EFFECTIVE-CUBE-DIVISOR-VALUATION | claim | proved / partial | For every N>=2, integer q>=1 with q^3\|N, and ACTUAL square-full gcd h, set E=v_p(N), l=v_p(q), t=v_p(h), j=min(l,floor((E-t)/3)) for p\|q. Then q_h=product p^j has q_h^3\|N/h, 1<=q_h<=q and q_h>=q*h^(-1/2). The cases t=0,2,3 and t>=4 are explicit; no radical divisibility condition is needed. | [arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md](arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md): Valuation construction; equations(4)--(5) |
+| KGR-SELECTED-ACTUAL-PATH-FREQUENCY | claim | proved / partial | Under the actual graph hypotheses, selected shared-right paths in the previous dyadic alpha,g/small-e_prime range number O_epsilon(n^epsilon*R1^2*R2*sqrt(E)/(A^3*sqrt(G))), uniformly for each fixed positive coefficient pair. HB1.3 counts primitive(u1,u2,d) AFTER coefficient frequency; fixed(g,u1,u2,d) determines selected edges/path, so alpha and square factors are not extra multiplicities. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Section2, after equation(11) |
 | ARITH-ALTERNATING-TWO-POLE-COVERS | claim | proved / partial | For each b>=4 the knot tuple completed by its inverse product has a number-field genus-zero realization f=P_(2b-1)+a/z, a!=0, with full geometric A_(2b), b finite double-transposition branch cycles and infinity profile(2b-1,1). | see incoming proof routes |
 | ARITH-DEGREE-EIGHT-LITERAL-MODEL-BRAID-WORD | claim | proved / partial | For the original e=(-1009+94i sqrt329)/10584 embedding, base s=1 roots ordered by real part and the stated positive square meridians give ((26)(47),(46)(57),(04)(15),(14)(35)). Relabel by [0,4,5,7,3,6,1,2] and apply successive letters [3,-2,1,3,2,-1,2,2,3,3] to reach the literal b=4 knot tuple. Actual model continuation is certified, not inferred from an arbitrary Nielsen representative. | see incoming proof routes |
 | ARITH-AFFINE-TRACE-REFLECTION-OPERATOR | claim | proved / partial | After the forced slope t=-2 and a nonzero-intercept normalization, a degree-2h polynomial Q satisfies a self-contained reflection/difference identity. The operator lowers degree by one with leading multiplier j(j-2)(j-4)/3, which is nonzero at j=2h>=6. The degree-eight boundary has j=4 and is checked exactly. | [arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md](arithmetic/UNIFORM_REAL_AFFINE_TRACE_OBSTRUCTION.md): Section4 and sharp degree8 control |
@@ -19944,7 +20219,7 @@ Tracked obligations from the catalogue:
 | ARITH-COALESCED-ATTACHMENT-MAXIMAL-INDUCTION | claim | proved / partial | For the explicit fullA_(2r+1) bases of cycle-foldingCor6, r>=3, pure literal loops preserving every ordered splitting attainS_(2r-3) in the DTcase; mixedr3 givesV4 and mixedr>=4 givesA_(2r-2). The mixed loops fix the marked3cycle support pointwise. Exact S3/A6 seeds and the append-DT permutation induction supply everydegree; parity gives the mixed upper bound. | [arithmetic/FULL_COALESCED_ATTACHMENT_HOLONOMY.md](arithmetic/FULL_COALESCED_ATTACHMENT_HOLONOMY.md): Theorem1, seeds and uniform extension |
 | ARITH-HURWITZ-IMPRIMITIVE-LEAF-COMPLETE-NORMAL-FORM | claim | proved / partial | For everyr>=3 allchosenleafimprimitiveinputs normalize throughleaf-preservingmoves: ownerfirst, liftedprojectedstarword, Q1²rootadjustmenttothepredecessoroftheattachmentblock, re-starandorientations. Thecanonicaltuple isA=(2r,2)(01),D_j=(0,2j)(1,2j+1) forjdescendingr-1..1. Unique fullcycleconjugator carryingchosenleaf fixesliteralendpointforfixedP,x; centralfulltwistsjoinotherxchoices. Allattachments/extensionsinthecasearecontrolled. | [arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md](arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md): Theorem3 |
 | GAP-ARITH-HURWITZ-UNIFORM-MARKED-MIXED | gap | open / partial | For each integer r>=7 let N=2r+1 and fix an N-cycle P. Prove transitivity on the absolute Y_T space with the unique 3-cycle first and marked, under H=<Q_2,...,Q_(r-1),Q_1^2>. The absolute quotient uses simultaneous sheet relabeling preserving P. Powers of the full twist realize every such relabeling in the marked subgroup. | [arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md](arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md): Definition of Y_T, Lemma 1 and Theorem 4, second case |
-| ARITH-ABC-SHORT-STRIP-OFFDIAGONAL | claim | proved / partial | Partitioning the long terms into adjacent paired intervals of width comparable to the short addend replaces the shift-count exponent by the upper weight of the unfixed part of the short term. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Repeated residues in a short-addend strip |
+| ARITH-ABC-SHORT-STRIP-OFFDIAGONAL | claim | stale / partial | Partitioning the long terms into adjacent paired intervals of width comparable to the short addend replaces the shift-count exponent by the upper weight of the unfixed part of the short term. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Repeated residues in a short-addend strip |
 | ARITH-M12-POWER-LOCAL-SURVIVAL | claim | proved / partial | For admissibleN=2mod12, define M_p=(1-1/p)sum_(j>=0)h(p^j)p^-j and I_(p,r)=integral_(Z_p)h(p^v_p(a))h(p^v_p(N-a))da. The exact raw coefficient is S_(h6,h6)(N)=12rho6^2 product_(p>=5)I_(p,v_p(N))/M_p^2, uniformly comparable toT(N). Marked local coefficients satisfy 2S_(v_p,h6)-S_(v_p,v_p)=beta_p(N)S_(h6,h6), for every target valuation. The fully good coefficient ratio is Gamma(N)=product_forbidden(1-beta_p(N))>=10-pi^2>0, with uniform convergence from beta_p<=9/p^2. This target-dependent ratio is not the averaged63.3 percent survival constant. Products are identified by grouped Fourier tails and local L2 convolution, without a Hardy-Littlewood hypothesis. | [arithmetic/SIMULTANEOUS_NORM_POWER_CORRELATIONS.md](arithmetic/SIMULTANEOUS_NORM_POWER_CORRELATIONS.md): Exact local main terms32-36, raw normalization, marked identities and target-dependent survival |
 | ARITH-CUBIC-DISCRIMINANT-HASSE-INVARIANCE | claim | proved / partial | Two non-Galois cubic fields with equal maximal-order field discriminants give products with their quadratic resolvents which either both fail the Hasse principle or both do not. A polynomial or nonmaximal-order discriminant cannot replace the field discriminant in this statement. | [arithmetic/RANK_FIVE_DISCRIMINANT_CLASSIFICATION.md](arithmetic/RANK_FIVE_DISCRIMINANT_CLASSIFICATION.md): Corollary RDF4 |
 | ARITH-COMMON-ARITHMETIC-FIBERS-PROP-SUPPLIED-POLYNOMIAL-REALIZATION | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(K\) be a field of characteristic different from \(2\).  Let \(P\in K[T]\) be separable of degree \(N\geq3\), and let \(a\in K\) satisfy \[  P^{[1]}(a)P^{[3]}(a)\neq0. \] Put \(G(S)=P(a+S)-P(a)\), let \(F_G=(\Pi,B,C)\) be the quadratic-gauge map of \eqref{eq:gauge-map}, and set \[  \widetilde F_G=L\circ F_G,  \qquad  L(\Pi,B,C)=\left(\Pi,-\frac B2,C\right). \] Then \[  \det D\widetilde F_G=1,  \qquad  \gdeg(\widetilde F_G)=N. \] At \begin{equation}  y_{P,a}=\left(1,0,-\frac{2P(a)}{P^{[1]}(a)}\right)   \end{equation} the full Keller fiber is \[  \boxed{\widetilde F_G^{-1}(y_{P,a})  \simeq\Spec K[T]/(P).} \] | [../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex](../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex): prop:supplied-polynomial-realization |
@@ -19974,8 +20249,8 @@ Tracked obligations from the catalogue:
 | ARITH-EISENSTEIN-BINARY | claim | proved / partial | For A={a>=1:all prime divisors are1mod3}, including1: A+A={positive n2mod6}; A+(3·A)={positive n4mod6}. | [../results/eisenstein-restricted-prime-sums/sections/introduction.tex](../results/eisenstein-restricted-prime-sums/sections/introduction.tex): thm:main; [../results/eisenstein-restricted-prime-sums/sections/infinite-range.tex](../results/eisenstein-restricted-prime-sums/sections/infinite-range.tex): eq:final and closing both reduced infinite ranges; [../results/eisenstein-restricted-prime-sums/sections/finite-certificate.tex](../results/eisenstein-restricted-prime-sums/sections/finite-certificate.tex): prop:finite-certificates and final assembly of thm:main |
 | ARITH-EISENSTEIN-UNIFORM-SIFTED-TAIL | claim | proved / partial | For all n=2,4mod6, odd inert p>=5 and mu_p=2/(p(p-1)), the odd-shell bad fraction is <=mu_p+O_epsilon(n^(-1/2+epsilon)) if p does not divide n; if p\|n it is0 when p^2 does not divide n and otherwise sigma(p^(a-2))/sigma(p^a)<p^(-2)<=mu_p. The lattice bound is4M(n)/p^2 with M(n)<<_epsilon n^epsilon. Splitting at P=n^(1/4) proves limsup_(n->infinity) sum_(p>Y)bad/Ro<=sum_(p>Y)mu_p, tending to0 as Y grows. The fully sifted density is >=17/20-o(1) in the pure case and >=31/120-o(1) for the fixed mixed orientation. No restriction to reduced all-inert n is used. | [arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md): Lemma EisTail, all-target spectral/divisibility branches, lattice tail and positive density |
 | ARITH-ABC-PAIR-OF-POWERS-PARTIAL-MODULUS | claim | proved / partial | Freeze mass f_C and a modulus of lower height w_C on C. Release grouped g-th powers of masses p_A,p_B on the other two letters, with grouped root heights H_A,H_B. Primitivity gives D<=f_C+L_A+L_B-p_A-p_B+(H_A+H_B-w_C)_+ up to the vanishing box error. The count applies to unequal root heights and to g=1. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Counting two omitted powers with a partial modulus |
-| ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE | claim | proved / partial | For sufficiently small fixed lambda, if the two tall distinguished degrees are k, the short degree is at least k, and each complementary weighted height is O(sqrt(lambda)), the box exponent is at most (5/11+o(1))lambda as lambda tends to zero. If all three distinguished degrees agree, the bound is (4/9+o(1))lambda. The short term need not have height one. The proof combines cheap divisor locks, power-modulus determinant fibres, and codegrees. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A strict small-budget saving for a common high degree; [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Refining the common-degree exponent to \(4/9\) |
-| ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH | claim | proved / partial | For sufficiently small fixed lambda, on boxes with short-term weighted height O(sqrt(lambda)) and one coordinate per tall letter carrying all but O(sqrt(lambda)) of its weighted height, the box exponent is at most 4lambda/9+O(lambda^(3/2)). Divisor locks force prime-times-small cofactor roots and real rational determinants bound the codegrees of the resulting graph. The two dominant degrees may differ. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A strict small-budget saving for two tall powers and a short letter |
+| ARITH-ABC-SMALL-BUDGET-COMMON-HIGH-DEGREE | claim | stale / partial | For sufficiently small fixed lambda, if the two tall distinguished degrees are k, the short degree is at least k, and each complementary weighted height is O(sqrt(lambda)), the box exponent is at most (5/11+o(1))lambda as lambda tends to zero. If all three distinguished degrees agree, the bound is (4/9+o(1))lambda. The short term need not have height one. The proof combines cheap divisor locks, power-modulus determinant fibres, and codegrees. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A strict small-budget saving for a common high degree; [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Refining the common-degree exponent to \(4/9\) |
+| ARITH-ABC-SMALL-BUDGET-TWO-TALL-NEAR-PRIME-GRAPH | claim | stale / partial | For sufficiently small fixed lambda, on boxes with short-term weighted height O(sqrt(lambda)) and one coordinate per tall letter carrying all but O(sqrt(lambda)) of its weighted height, the box exponent is at most 4lambda/9+O(lambda^(3/2)). Divisor locks force prime-times-small cofactor roots and real rational determinants bound the codegrees of the resulting graph. The two dominant degrees may differ. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A strict small-budget saving for two tall powers and a short letter |
 | ARITH-POWERFUL-CONSECUTIVE-BOX-CONSTRAINTS | claim | proved / partial | In competitive boxes for fixed offsets the three largest normalized masses sum to at most 1+O_(u,v)(r^(-1/2)). Omitted groups of bounded indices with common divisor g>=2 and combined mass below g/2-K/r yield the two graph inequalities up to O(1/r), unless one group has mass O(1/r). | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex): Section 6 normalization and graph alternatives |
 | ARITH-FBS-WIDE-POWER-ENERGY | claim | proved / partial | For each fixedq>=3 and5/6<theta<1, H=X^theta, sum_(X<N<=2X)r_(q,H)(N)^2={K_q+O_(q,theta)((log X)^(-1/8))}XH^2 mu_X^4, K_q=L product_bad(1+(p-1)^(-3)). This is exactly the balanced four-form energy and proves sharp upperE in this range. It does not prove the residual energy obligation at0<theta<=5/6, remove exceptional targets or give a power-saving-in-X exception count. | [arithmetic/PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md](arithmetic/PRESCRIBED_PRIME_POWER_WINDOW_VARIANCE.md): P13-P14: balanced-pair geometry, integer model tails and exact energy coefficient |
 | ARITH-FIXED-ASYM-UNIFORM | claim | proved / partial | Fix q >= 3, L = lcm(2,q), kappa = phi(q) = phi(L), and a fixed nonprincipal quadratic literal character chi modulo L, with zero values on nonunits. Let C_q contain 1 and integers with all prime factors 1 modulo q, and let A_chi contain 1 and integers with all prime factors satisfying chi(p) = 1. For normalized shifts F_B = U_q(Bm)/U_q(B) and G_C = V_chi(Cl)/V_chi(C), there are fixed eta, theta > 0 such that the positive sum over um+vl=N equals N S_(B,C;u,v)(N)/(uv) + O_(q,chi)(N^(1-eta)), uniformly for B,u in C_q and C,v in A_chi each at most N^theta. The external theta is chosen after and much smaller than eta. Coefficient gcds and all target valuations are retained; local obstructions may make the main zero. All shifts and coefficients are L-units. Smaller divisibility and exact-valuation families follow with the exact prefactors in Q4 and a sufficient total-product bound. No arbitrary positive power or near-half coefficient level is claimed. | [arithmetic/ASYMMETRIC_FIXED_MODULUS_THEORY.md](arithmetic/ASYMMETRIC_FIXED_MODULUS_THEORY.md): Theorem FixedModulusAsymUniform, Q3-Q4, exact reductions and the complete source-condition/power hierarchy |
@@ -20016,7 +20291,7 @@ Tracked obligations from the catalogue:
 | ARITH-MIXED-RECIPROCAL-UNIFORM-COUPLED-ODE | claim | proved / partial | For n=4h+2, normalized reciprocal critical data give monic X,Y of degree2h satisfying X+2(w+2)Xprime=L(D_h-rD_(h-1))PQ and Y+2(w-2)Yprime=L(C_h-rC_(h-1))PQ. Shifted-power eigenvalues2j+1 are nonzero, giving exact unique polynomial inverses and reconstruction, with no integration constants or unproved Laurent-to-polynomial descent. | [arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md](arithmetic/MIXED_RECIPROCAL_COUPLED_ODE.md): Theorem1 |
 | ARITH-ABSOLUTE-HURWITZ-PASSPORT-DEGREE12 | claim | proved / partial | Degree12 absolute full-A12 connectivity is proved by complete marked polynomial reduction and literal expansion words. Degree fourteen has one absolute full-A14 orbit by a separate theorem. Degree sixteen, uniform connectivity, inner refinements and arithmetic rational points remain separate obligations. | [arithmetic/DEGREE_TWELVE_HURWITZ_ORBIT.md](arithmetic/DEGREE_TWELVE_HURWITZ_ORBIT.md): Theorem1 |
 | ARITH-HURWITZ-CONDITIONAL-PURE-LEAF-EXTRACTION | claim | proved / partial | The adjacent DT triple(02)(34),(24)(56),(46)(78) becomes(23)(45),(03)(56),(36)(78) under(-1,-2,-2,-1). If every outside factor fixes2,4, the first output has two exclusive leaves; deleting it and2,4 leaves a fullcycle polynomial tuple. The outside-support condition is necessary for this local conclusion. | [arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md](arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md): Lemma1 |
-| ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE | claim | proved / partial | For 0<=lambda<=1 the maximum of the existing grouped certificate's leaf bounds is max(33678/57833,65607/413150+(87492/206575)*lambda), with switch 146664001/146664488. For fixed 0<lambda<=1 the same arithmetic reduction gives N_lambda(X)=O_(lambda,epsilon)(X^(U_cert(lambda)+epsilon)). | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Dependence on the radical budget; [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exceptional-set improvement from grouped roots; [arithmetic/verify_abc_grouped_fulloc_certificate.py](arithmetic/verify_abc_grouped_fulloc_certificate.py): check_budget_envelope |
+| ARITH-ABC-GROUPED-FULLOC-BUDGET-ENVELOPE | claim | stale / partial | For 0<=lambda<=1 the maximum of the existing grouped certificate's leaf bounds is max(33678/57833,65607/413150+(87492/206575)*lambda), with switch 146664001/146664488. For fixed 0<lambda<=1 the same arithmetic reduction gives N_lambda(X)=O_(lambda,epsilon)(X^(U_cert(lambda)+epsilon)). | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Dependence on the radical budget; [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exceptional-set improvement from grouped roots; [arithmetic/verify_abc_grouped_fulloc_certificate.py](arithmetic/verify_abc_grouped_fulloc_certificate.py): check_budget_envelope |
 | SWKP-TRUNCATED-REDUCED-WITNESS-AND-PAIR-BOUND | claim | proved / partial | For fixed positive c,C,C0, N integer comparable to T5, T>=2 and 1<=H<=C0T², the exact Section1 reduced unit witness tuples R and distinct ordered kernel pairs K satisfy K<=R<<_epsilon T^epsilon*min(T²,H²/T^.5+H³/T²). Unit, squarefree, distinctness and reducedness hypotheses remain explicit. | [arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md](arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md): Theorem 1; Section 4, equations(4.1)-(4.3) |
 | VFE-FULL-SAVING-TO-HIGH-ORDER-PROPOSITION | claim | proved / partial | For each fixed0<eta<=1, IF K_full<=C_epsilon T^(2-eta+epsilon) uniformly, THEN the SAME one-sided upper bound holds for signed W_full. This is an implication theorem, not its predicate. | [arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md](arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md): Section7,Proposition3 forward |
 | VFE-HIGH-ORDER-TO-FULL-SAVING-PROPOSITION | claim | proved / partial | For each fixed0<eta<=1, IF signed W_full<=C_epsilon T^(2-eta+epsilon) uniformly, THEN the SAME bound holds for K_full via K<=R and R=W+O(T^(1+epsilon)). This direction needs no CRT multiplicity bound. | [arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md](arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md): Section7,Proposition3 reverse |
@@ -20040,6 +20315,7 @@ Tracked obligations from the catalogue:
 | ARITH-HURWITZ-LEAF-HANDOFF-UNIFORM-ESCAPE | claim | proved / partial | On seven distinctlabels Q^-2((xu)(ab),(uv)(cd))=((uv)(ab),(xv)(cd)); x isleafbefore/after butspreadsto bothfactors at theintermediatestep. The counterfamily hasaliteral lengthr braid bringingA tothelastfactor andhandingx to the oppositeleafcolor, extractingtwolabels; its lowerdeletiongroup becomesS_(2r). No arbitrary-tree extraction isasserted. | [arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md](arithmetic/FIXED_LEAF_HURWITZ_OBSTRUCTION.md): Proposition4 |
 | ARITH-D5-UNBUFFERED-BOUQUET-QUADRATIC-LOWER | claim | proved / partial | Whatever endpoint wreath leaf is chosen, including the original root, at least 2t-1 disjoint antipodal pairs in the remaining full cycle have nonroot endpoints. These initially separated partners must co-occur in an endpoint factor. The signed word length is at least ceil((2*t-1)*max(0,2*ceil(t/2)-3)/8). Common relabelings are free, with branch-position permutations charged as adjacent moves. | [arithmetic/QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md](arithmetic/QUADRATIC_HURWITZ_BOUQUET_DISTANCE.md): Theorem 1 lower direction, Sections 2 and 3 and equations (3)–(7) |
 | HBFT-RECTANGULAR-CUBE-DIVISOR-BOUND | claim | proved / partial | Theorem2: for caps1<=Ri,Ki<=n, ANYq>=2 withq^3\|n and fixed positive coefficient pair, actual coprime representations are O_epsilon(n^epsilon*(q+(R1R2K1K2)^(2/3)/q)), uniformly. No q-size or squarefreeness condition. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Theorem2;Sections3--4 |
+| KGR-REFINED-WEIGHTED-PATH-SUM | claim | proved / partial | For Wstar=alpha^3*sqrt(g/e_prime)>0 with positive REAL square roots and canonical squarefree kernel e_prime, sum over all selected shared-right paths of Wstar is O_epsilon(n^epsilon*R1^2*R2). Three dyadic parameters alpha,g,e_prime each have polynomially bounded height; the count and weight cancel on every block. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Section3, equation(5) |
 | ARITH-ALTERNATING-SQUARE-DISCRIMINANTS | claim | proved / partial | For each even n=2b>=8 there exist number-field H degree n, H(0)=0,a!=0 and distinct algebraic s_i such that Disc(H-sz+a)=C product_i(s-s_i)^2, C!=0, with geometric A_n. Literal square holds over Qbar, or after adjoining sqrt(C). | see incoming proof routes |
 | ARITH-COLLINEAR-NODE-SATURATION | claim | proved / partial | For the H,a from the alternating covers, the integral reduced discriminant has degree n=2b and t=a meets it at exactly b ordinary nodes, transverse to both branches, exhausting its intersection divisor. Any line contains at most b ordinary nodes. No global generic-singularity claim. | see incoming proof routes |
 | ARITH-ODD-AFFINE-TRACE-ACCESSORY-CURVES | claim | proved / partial | Away from the explicit nonzero triangular diagonals, the monic operator kernel is unique overQ(t)[s], q_i has sdegree<=h-i, and Phi_h=N1 is nonzero of sdegree<=2h. The degenerate s0,t2 specialization proves nonzeroness, not good-open nonemptiness. Exceptional slopes retain their exact linear-kernel problem. | [arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md](arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md): Section3, equations15-18 |
@@ -20088,11 +20364,11 @@ Tracked obligations from the catalogue:
 | ARITH-EISENSTEIN-PRIMITIVE-BINARY | claim | proved / partial | N+N={positive even n:n is not0 or12mod18}, using both binary restricted-prime identities and the primitive value classification. | [../results/eisenstein-restricted-prime-sums/sections/primitive-sumsets.tex](../results/eisenstein-restricted-prime-sums/sections/primitive-sumsets.tex): prop:primitive-binary |
 | ARITH-EISENSTEIN-NORMALIZED-TAIL-COUNTEREXAMPLE | claim | proved / partial | For every fixed cutoff Y, already along pure n=2mod6, limsup_(n->infinity) abs(G_(n,Y) minus G_n)/n is infinite. Fix an odd inert p>Y, set m_T=2 product_(ell<=T,ell1mod3)ell and n_T=p^2 m_T. Scaling fully good m_T witnesses by p injects into the finite-sieve tail, while abs(G_m)>= (17/20-o(1))Ro(m) and Ro(m)/m=18 product_(ell<=T,ell1mod3)(1+1/ell) tends to infinity. The correct Ro-normalized tail lemma is unchanged. | [arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md): Counterexample EisTailScale, equation8 and scaling/Mertens proof |
 | ARITH-EISENSTEIN-BALANCED-EXPLICIT-TAIL | claim | proved / partial | At every admissible ordinary target n=2 modulo 6 and n>=2^(2^15), the n^(99/100) difference bound gives a,b in A∩[n/3,2n/3]. Indeed n>=2^(2^15) implies n>=3^100, so \|a-b\|<=n^(99/100)<=n/3. The same cutoff gives the prescribed mixed balance for n=4 modulo 6. | [arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md](arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md): EisPower with delta=1/100 and its explicit cutoff; compare n^(99/100) with n/3 |
-| ARITH-ABC-COLLINEAR-OFFDIAGONAL-RESIDUE-LATTICE | claim | proved / partial | For a frozen lock with lower weight w, a free coprime grouped p-th power with root height r and removed mass m gives off-diagonal energy exponent at most 2(L_T-m)+max(2r-w,s/p), where X^s controls a nonzero quotient shift. Rank two gives the area term and a primitive ray gives the p-th root term. Applied to the two competitive witnesses, the exact bounds are 555/1088 and 819/1562. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Collinear congruence lattices for repeated power residues |
+| ARITH-ABC-COLLINEAR-OFFDIAGONAL-RESIDUE-LATTICE | claim | stale / partial | For a frozen lock with lower weight w, a free coprime grouped p-th power with root height r and removed mass m gives off-diagonal energy exponent at most 2(L_T-m)+max(2r-w,s/p), where X^s controls a nonzero quotient shift. Rank two gives the area term and a primitive ray gives the p-th root term. Applied to the two competitive witnesses, the exact bounds are 555/1088 and 819/1562. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Collinear congruence lattices for repeated power residues |
 | ARITH-ABC-HALF-PROFILE-QUARTIC-GRAPH-CUT | claim | proved / partial | For the equal height-one profiles with masses (1,1,2)/12 in degrees 1,3,4, the box count has exponent at most 249/500+epsilon. The partial rational locks handle quartic coordinates with an intermediate divisor and the graph using determinant-controlled repeated-prime codegrees bounds the complementary case by 373/750+epsilon. The inequalities tolerate a sufficiently small perturbation of the masses with a corresponding exponent loss. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): A determinant bound at the joint \(1/2\) profile; [arithmetic/verify_abc_quartic_determinant.py](arithmetic/verify_abc_quartic_determinant.py): local graph exponents |
 | ARITH-ABC-HIGHER-MOMENTS-RATIONAL-LOCK-HALF-OBSTRUCTION | claim | proved / partial | Equal masses (19,30,1)/150 in degrees 1,4,11 on each letter permit D=8/15 under the ideal moment, geometry, Fourier, grouped collision and paired shift rows. The partial-modulus rational bound reduces that profile to 7/15. Equal profiles (1,1,2)/12 in degrees 1,3,4 permit D=1/2 under all these rows including the rational count. The new determinant graph cuts the latter box profile below 1/2, so feasibility is limited to the listed earlier rows. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): A symmetric obstruction including the partial-modulus rational count; [arithmetic/verify_abc_higher_moment_obstructions.py](arithmetic/verify_abc_higher_moment_obstructions.py): check_profile and main |
-| ARITH-ABC-SMALL-BUDGET-HALF-WHOLE-COORDINATE-OBSTRUCTION | claim | proved / partial | For integer p tending to infinity, at lambda=6/(p+1) each letter has equal masses 1/(p+1) in degrees 1 and p. The projected box exponent D=lambda/2 is feasible under the stated Fourier, geometry, grouped collision, ideal energy, paired shift, partial-modulus rational and dominant-coordinate Fermat bounds using whole-coordinate releases. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The leading coefficient for whole-coordinate bounds |
-| ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS | claim | proved / partial | For short weighted height O(sqrt(lambda)) and two tall terms each carrying all but O(sqrt(lambda)) of its weighted height on one coordinate, the box exponent is at most (3/7+o(1))lambda. The dominant tall degrees may differ and the tall roots may be composite. A real inverse-power determinant bounds the fibre after fixing a tall term, and a prime-power determinant modulo a large prime factor bounds the free tall term after fixing the short term. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A \(3/7\) small-budget bound with a short letter |
+| ARITH-ABC-SMALL-BUDGET-HALF-WHOLE-COORDINATE-OBSTRUCTION | claim | stale / partial | For integer p tending to infinity, at lambda=6/(p+1) each letter has equal masses 1/(p+1) in degrees 1 and p. The projected box exponent D=lambda/2 is feasible under the stated Fourier, geometry, grouped collision, ideal energy, paired shift, partial-modulus rational and dominant-coordinate Fermat bounds using whole-coordinate releases. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The leading coefficient for whole-coordinate bounds |
+| ARITH-ABC-SMALL-BUDGET-TWO-TALL-SHORT-THREE-SEVENTHS | claim | stale / partial | For short weighted height O(sqrt(lambda)) and two tall terms each carrying all but O(sqrt(lambda)) of its weighted height on one coordinate, the box exponent is at most (3/7+o(1))lambda. The dominant tall degrees may differ and the tall roots may be composite. A real inverse-power determinant bounds the fibre after fixing a tall term, and a prime-power determinant modulo a large prime factor bounds the free tall term after fixing the short term. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A \(3/7\) small-budget bound with a short letter |
 | ARITH-POWERFUL-CONSECUTIVE-EVEN-GRAPH-CONSTRAINT-OBSTRUCTION | claim | proved / partial | For r congruent to 0 or 4 modulo 6, explicit probability vectors satisfy the maximum-sum and every singleton gcd-at-least-two graph alternative with D=313/65. They violate the additional grouped constraint for A_0+A_2 against C_0. | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex): Final paragraph of Section 6 |
 | ARITH-ASYM-EVERY-TARGET-VALUES | claim | proved / partial | Every sufficiently large N congruent to 2 modulo 6 has a representation N = a+b with a in C12 and b in A3. For every fixed epsilon > 0 there are at least a constant times N^(1-epsilon) distinct ordered value pairs. The first summand has the modulus-12 restriction; the second need not. This follows by positivity of the weighted asymptotic and a divisor bound. It proves neither balance, an unweighted N/(log N)^(5/4) bound, an explicit cutoff, nor C12+C12 coverage. | [arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md](arithmetic/ASYMMETRIC_GAUSSIAN_EISENSTEIN_SUMS.md): Corollary AsymEveryTarget and removal of the divisor weights using the subpower singular lower bound |
 | ARITH-ASYM-OUTER-AUXILIARY-FAMILIES | claim | proved / partial | The proof holds the two bilinear sequences fixed while the small auxiliary coefficient varies. The full BGLM input takes a divisor-weighted outer sum of absolute values over auxiliary moduli and a supremum over their reduced residues; its inner varying-modulus sum remains signed. Coefficient-independent shifted/deleted character kernels, aggregate absolute truncations, shared gcd assignments and the full-modulus cap for three-factor boxes keep the total losses inside the chosen xi range. Thus xi is fixed before the smaller error saving eta. No arbitrary coefficient-dependent bilinear sequence or inner-modulus phase is introduced. | [arithmetic/ASYMMETRIC_AUXILIARY_AVERAGE.md](arithmetic/ASYMMETRIC_AUXILIARY_AVERAGE.md): Sections 1-6, full input (5), hierarchy (6)-(7), fixed families and aggregate reassembly |
@@ -20130,7 +20406,6 @@ Tracked obligations from the catalogue:
 | VFE-SAME-EXPONENT-FULL-HIGH-ORDER-IFF-PROPOSITION | claim | proved / partial | For every fixed0<eta<=1, U_eta(K_full) iff U_eta(W_full), where U is a ONE-SIDED upper-bound predicate with epsilon reallocation. Neither predicate is proved here. | [arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md](arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md): Section7,Proposition3 |
 | ARITH-D43-EXACT-CORE-SUMSET | claim | proved / partial | C+C is every even n>=2 with43 not dividing n, except4,6,8,10,16,20,38,50,56,74. Complete finite coverage, the inert-core and all-exceptional-quotient onsets, and least counterexample descent prove the unrestricted numerical-value equality. | [arithmetic/PRIMITIVE_NORM_MINUS43_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS43_EXACT.md): Minus43ExactPrimitiveSumset M43.1; Sections1-4 |
 | CGR-TWO-THRESHOLD-CYCLE-SECTOR | claim | proved / partial | In the general rational-reconstruction rectangle, cycles containing a shared-right path with alpha>=A,gamma>=C number O_epsilon(n^epsilon K1 R1^2 R2^2/(A^4 C)), with the side-swapped analogue. Selected actual labels, positivity, squarefree distinct kernels and summand coprimality are retained. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section3,equation9 |
-| CGR-SQUARE-QUOTIENT-WEIGHTED-CYCLE-TAIL | claim | proved / partial | For actual positive coprime squarefree-kernel selected graphs with caps1<=Ri,Ki<=n and2(R1R2)^2<n, the sum of W=alpha^3/sqrt(e) over all shared-right paths in simpleC6 is O_epsilon(n^epsilon K1 R1^2 R2). Cycles with some W>=Y number O_epsilon(n^epsilon K1 R1^2 R2/Y) for EVERY REALY>0. Wneednotbe>=1. Uniformity is per fixed positive coefficient pair; sides may be swapped. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section9,Theorem4,equations18--19 |
 | C6-CRITICAL-RECTANGULAR-TO-FIVE-SEVENTEENTHS | claim | proved / partial | If for alln>=2 and fixed coprime squarefree coefficients W<=n the shaped graph2s has O_epsilon(n^(26/51+epsilon)) simple six-cycles uniformly, then r(N)=O_epsilon(N^(5/17+epsilon)) for every prescribed positive target including noncoprime summands. This is a sufficient implication, with no converse asserted from r(N). | [arithmetic/ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md](arithmetic/ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md): Theorem1 with complete Sections1--3 proof |
 | MCA-FIXED-GENUINE-DEGREE-UNION-COUNTS | claim | proved / partial | For FIXEDd genuine exact-maximal-contact actual witness unions, exponentsd1..6 are3/2,7/5,4/3,11/9,109/99,37/39+epsilon, uniformly balancedN and arbitrary centre/coefficient dependence. Every fixed genuine d>=7 is eventually empty with its own degree-dependent threshold. Uses imported coefficient-uniform unitroot/packing, not a fixed-family estimate summed with hidden constants. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Theorem17;Sections29--34;equations67,76--77 |
 | UCT-GIVEN-MULTIPLIER-CAP-FAMILY-COUNT | claim | proved / partial | For balanced N,T, homogeneous primitive degree-d U,V and unit pairs satisfying N\|F, a GIVEN multiplier cap g<=Gmax gives N^epsilon*(Gmax+T^2/N^(1/(2d+1))). This uses the new unit-root cover and existing angular/gcd sum, not old generic CRT or fixed bad-prime cover. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Section22;proof of Corollary14 |
@@ -20138,6 +20413,7 @@ Tracked obligations from the catalogue:
 | ARITH-D5-UNBUFFERED-BOUQUET-EXPOSURE-LOWER | claim | proved / partial | For t>=2 the unbuffered bouquet T_t requires at least t-1 ordinary signed moves to any wreath-leaf endpoint, since at least t-1 original lobes must receive outside conjugation. | [arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md](arithmetic/UNBOUNDED_HURWITZ_LEAF_NORMALIZATION_DISTANCE.md): Theorem 3 specialized to tuple (2) |
 | HBFT-CRITICAL-RECTANGLE-DIVISOR-SECTOR | claim | proved / partial | For the explicitly defined shaped caps inSection5, a cube-divisor q in18 gives n^(5/17+epsilon) rectangular representations. This is an optional numerical corollary, not a premise of either main principal or any cycle criterion. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Section5 |
 | HBFT-UNRESTRICTED-COEFFICIENT-CUBE-DIVISOR-BOUND | claim | proved / partial | Theorem3: for EVERYn>=2, fixed positive coefficient pair and ANYq>=1 withq^3\|n, R_kappa(n)<<n^epsilon*(q+n^(1/2)/((kappa1*kappa2)^(1/4)*q^(3/4))). Rectangles are removed by the resource/minimum argument and fixed-kernel count; q1 is elementary. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Theorem3;Section9 |
+| KGR-REFINED-WEIGHTED-CYCLE-SUM-AND-TAIL | claim | proved / partial | For every n>=2, positive fixed coefficients, caps1<=Ri,Ki<=n and2(R1R2)^2<n, sum over all simple selected C6 and shared-right paths in them of Wstar is O_epsilon(n^epsilon*K1*R1^2*R2). For EVERY real Y>0, cycles with some Wstar>=Y number at most the same prefactor divided byY. Exact general codegrees give K1*n^epsilon continuations per path. Side-swapped statements hold. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Theorem1; Section3, equations(6)--(7) |
 | ARITH-DEGREE10-AFFINE-TRACE-ARITHMETIC-S4 | claim | proved / partial | The primitive t0 specialization is irreducible modulo11 and has type(1,3) modulo13. Applying Dedekind to the integral monic transform9³*f0(X/9) gives a4cycle and3cycle generatingS4. Good specialization embedsS4 in the generic arithmetic quartic group. Full coefficient content1 excludes a vertical component. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Theorem1, arithmetic group and coefficient content |
 | ARITH-ODD-AFFINE-TRACE-ALTERNATING-MONODROMY | claim | proved / partial | In every degree4h+2,h>=2, the long(4h+1)-cycle forces primitivity and finite double-transposition inertia gives fullA_(4h+2). The exact discriminant is L^L*[w*Q_M(w²)]². When L is a base-field square, arithmetic and geometric groups coincide and the extension is regular. | [arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md](arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md): Theorem3 aftermath and equation21 |
 | ARITH-QUADRATIC-SPECTRAL-ELLIPTIC-DIVISOR-GATE | claim | proved / partial | On t0*t2*(b²-4alpha)!=0, the exact Weierstrass curve has T2=(0,0),B=(1,t1/2), divu=2T2-2O and divR=T2+(B+T2)-O-B. The q/accessory divisor relation is the identity2hB+(2h-1)B-(4h-1)B=0. The sqrtu double cover is connected unramified genusone and may lack a rational origin. No further torsion consequence of full equations is asserted. | [arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md](arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md): Sections3-4 |
@@ -20174,9 +20450,9 @@ Tracked obligations from the catalogue:
 | ARITH-EISENSTEIN-HIGHER | claim | proved / partial | kA={n>=k:n=kmod6} for k>=2, with sharp at-most-seven bound witnessed by25; kN={n>=k:n=kmod2} for k>=3, with sharp at-most-four bound witnessed by12. | [../results/eisenstein-restricted-prime-sums/sections/primitive-sumsets.tex](../results/eisenstein-restricted-prime-sums/sections/primitive-sumsets.tex): prop:higher-sumsets |
 | ARITH-EISENSTEIN-EVENTUAL-BALANCED | claim | proved / partial | Every sufficiently large n=2mod6 has a balanced a+b with a,b in A, and every sufficiently large n=4mod6 has a balanced a+3b with a,b in A in the prescribed orientation; both actual summands lie in[n/3,2n/3]. For each epsilon>0 there are >>_epsilon n^(1-epsilon) distinct ordered balanced value pairs. This proves the q=3 macroscopic family case. The separate all-fixed-interval angular law remains under EisAngle. No numerical onset, complete finite exception list or shrinking-window bound is supplied. | [arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md): EisAngle fixed share intervals and eventual balanced corollary |
 | GAP-EISENSTEIN-BALANCED-UNCHECKED-INTERVAL | gap | open / partial | The earlier sufficient obligation is thirds-balanced ordinary coverage for every n=2 modulo 6 in [100000000,2^(2^15)). It remains open and now follows from the narrower all-inert residual assertion in [100000000,2^60), by the proved prime-family, inert-tail and scaling reduction. The old exact finite certificate and coarse explicit tail retain their original scopes. | [../results/eisenstein-restricted-prime-sums/sections/balanced-summands.tex](../results/eisenstein-restricted-prime-sums/sections/balanced-summands.tex): Exact two exceptions in the finite range and ordinary thirds-balanced conjecture; [arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md](arithmetic/EISENSTEIN_POWER_SHRINKING_WINDOWS.md): EisPower, explicit tail; [arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md](arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md): Theorem EisBalancedReduction and the narrowed residual interval |
-| ARITH-ABC-ARCHIMEDEAN-SHORT-STRIP-RESIDUE-ENERGY | claim | proved / partial | For a lock on the short addend and complementary short height at most s, a common grouped p-th power on a tall letter with mass m and root height r has nonzero repeat energy exponent at most 2(L_T-m)+max(2r+s-1,s/p). The real strip area and the residue lattice covolume both contain the actual locked modulus. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Residue lattices intersected with the real short strip |
+| ARITH-ABC-ARCHIMEDEAN-SHORT-STRIP-RESIDUE-ENERGY | claim | stale / partial | For a lock on the short addend and complementary short height at most s, a common grouped p-th power on a tall letter with mass m and root height r has nonzero repeat energy exponent at most 2(L_T-m)+max(2r+s-1,s/p). The real strip area and the residue lattice covolume both contain the actual locked modulus. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Residue lattices intersected with the real short strip |
 | ARITH-ABC-SYMMETRIC-BINOMIAL-RECTANGLE-GRAPH | claim | proved / partial | For masses (alpha,1-alpha,1)b in degrees (1,j,k) on every letter, 2<=j<k, k>=4, exponent at most (3-1/(96k^2))b+epsilon. At j=3,k=4 the alpha=1/2 exponent is 87/176+epsilon and the alpha=0 exponent is 599/1400+epsilon. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): A determinant bound for symmetric three-coordinate profiles |
-| ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES | claim | proved / partial | Fixing one complete tall term leaves an inverse-power real determinant for a near tall product. In near-half boxes with three macroscopic masses, short height is 1-O(sqrt(lambda)), or 1-O(lambda) when both tall terms have two heavy roots. Within-letter heavy degree pairs are coprime and a divisor split lets one work with prime-times-small-cofactor heavy roots. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Height concentration and prime roots near the half bound |
+| ARITH-ABC-NEAR-HALF-TALL-PRODUCT-FIBRES | claim | stale / partial | Fixing one complete tall term leaves an inverse-power real determinant for a near tall product. In near-half boxes with three macroscopic masses, short height is 1-O(sqrt(lambda)), or 1-O(lambda) when both tall terms have two heavy roots. Within-letter heavy degree pairs are coprime and a divisor split lets one work with prime-times-small-cofactor heavy roots. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Height concentration and prime roots near the half bound |
 | ARITH-POWERFUL-FIXED-OFFSET-GROUPED-OBSTRUCTION | claim | proved / partial | The first offset pair ordered by u and then v for which the leading fixed-offset surface constraints and all grouped graph alternatives admit D<u+v+2 is (3,1). For r congruent to 2 modulo 30 an exact witness has D=148/25 and no nontrivial bundle of positive coordinates with a common divisor on any individual side. | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex): Section 10, limiting grouped-graph obstruction; [arithmetic/verify_powerful_fixed_offset_constraints.py](arithmetic/verify_powerful_fixed_offset_constraints.py): Exact verifier and rational-certificate generator |
 | ARITH-ASYM-ROSSER-LARGE-PRIME-SWITCH | claim | proved / partial | For sqrt(D)<p<z in the forbidden class and a squarefree forbidden cofactor s with primes below p, the lower weight factors exactly as lambda^-_(ps)(D;z)=-lambda^+_s(D/p). Nonzero upper weights have P^+(s)<sqrt(D/p) and s<D/p. The full large-prime branch is therefore minus the sum over p and s of lambda^+_s(D/p) r_(ps)(N), with the same signed local model subtraction. Primes p dividing N contribute zero. | [arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md](arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md): Proposition RosserLargePrimeSwitch, equations (16)–(19) |
 | ARITH-ASYM-SEMILINEAR-KERNEL-COMPRESSION | claim | proved / partial | For squarefree d supported on primes 7 modulo 12, the identity V(dt) = 2^omega(d) sum_(k\|gcd(d,t)) mu(k) V(t/k)/2^omega(k) gives A_d(N) = 2^omega(d) sum_(k\|d) mu(k) C_(dk)(N)/2^omega(k). The coefficient models satisfy the same exact identity. For arbitrary coefficients \|lambda_d\| <= 1 with the stated support and 2 <= K <= D <= N, the signed remainder sum equals the mixed sum in (21), with k <= K, plus O_epsilon(N^(1+epsilon)/K). The bound is uniform in the target and coefficients; the remaining mixed sum is not estimated here. | [arithmetic/ASYMMETRIC_SEMILINEAR_SIEVE.md](arithmetic/ASYMMETRIC_SEMILINEAR_SIEVE.md): Exact identities (17)-(20), mixed compression (21) and its uniform actual/model tail |
@@ -20206,9 +20482,6 @@ Tracked obligations from the catalogue:
 | SWKP-LONG-SAVING-IMPLIES-FULL-SAVING-PROPOSITION | claim | proved / partial | For each fixed delta in(0,1/4] and eta>0, IF Klong<<_epsilon T^(2-eta+epsilon) uniformly, THEN Kfull<<_epsilon T^(2-min(eta,2delta)+epsilon). This is an implication theorem, not a proof of its antecedent or conclusion without that antecedent. | [arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md](arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md): Section 5, Theorem 7(1) |
 | UCT-EXACT-LONG-FAMILY-COVER-TO-FULL-SAVING-PROPOSITION | claim | proved / partial | For an ACTUAL cover of the exact NO-short/SOME-full class whose covered count has savingeta>0, the existing short theorem and OWN exact partition give full savingmin(eta,2delta). Combining with the separate given-cover propositions yields their stated full consequences. No arbitrary-long-tuple estimate or actual saving predicate is proved. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Section22;given-cover paragraph;Sections12,15 |
 | ARITH-D43-EXACT-PRIMITIVE-SUMSET | claim | proved / partial | For P={x^2+xy+11y^2>0:gcd(x,y)=1}, P+P is every even N>=2 with1849 not dividing N, except {4,6,8,10,16,20,38,50,172,258,344,430,688,860,1634,2150,2408,3182}. The core holes56 and74 are filled by13+43 and31+43; ramified targets transport exactly43E. | [arithmetic/PRIMITIVE_NORM_MINUS43_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS43_EXACT.md): Minus43ExactPrimitiveSumset M43.2; Section4 |
-| CGR-BALANCED-SQUARE-QUOTIENT-SECTOR | claim | proved / partial | In the balanced maximum box R1=R2=K1=T with2T^4<n, the Wtail is O_epsilon(n^epsilon T^4/Y), so W>=T^2 meets theT^2budget and contains the previous alpha^4gamma>=T^3 sector. No actual-cycle existence or exhaustion of the residual is asserted. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section11,final paragraph |
-| CGR-CRITICAL-SQUARE-QUOTIENT-SECTOR | claim | proved / partial | In the coefficient-shaped critical rectangle, K1 R1^2 R2=16n^(131/153)/(kappa1^(19/9)kappa2^(14/9)). Cycles with some W>=n^(53/153)/(kappa1^(19/9)kappa2^(14/9)) meet n^(26/51+epsilon), with swapped exponents on shared-left paths. Coefficient-one membership forces alpha>=n^(53/459)e^(1/6). Small thresholds use the1/R2 boundary, not1. This doesnot proveH/residual or5/17. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section11,equations21--23 |
-| CGR-WEIGHTED-CYCLE-MOMENT-AND-TAIL | claim | proved / partial | For every Y>=1 in the general rectangle, cycles with alpha^4 gamma>=Y at any shared-right path number O_epsilon(n^epsilon K1 R1^2 R2^2/Y), and the sum of alpha^4 gamma over all shared-right paths in all simple cycles is O_epsilon(n^epsilon K1 R1^2 R2^2). Dyadic losses are absorbed in epsilon; the side-swapped version also holds. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Theorem1;Section3,equations10--11 |
 | ARITH-ERDOS943-SQUAREFULL-REPRESENTATIONS-FIVE-SEVENTEENTHS | claim | open / partial | For every positive targetN, the numberr(N) of ordered positive square-full pairs of sumN is O_epsilon(N^(5/17+epsilon)). This actual bound is OPEN: the proved criterion supplies it only after the critical cycle hypothesis is independently grounded. | [arithmetic/ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md](arithmetic/ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md): Theorem1 conclusion, conditional on(H) |
 | MCA-ALL-GENUINE-DEGREES-UNION-BOUND | claim | proved / partial | Uniform genuine cutoff plus six fixed-degree counts gives ALLd>=1 genuine unionT^(3/2+epsilon), and ALLd>=2 genuine unionT^(7/5+epsilon), with constants onlyepsilon,c,C. BoundedT is absorbed by trivial paircount, independent ofdegree. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Theorem21;Section38 |
 | MCA-UNBOUNDED-PRESENTATION-UNION-BOUND | claim | proved / partial | Allow arbitrarily high positive presentation degrees and polynomial common factors. Reduction, uniformgenuinecutoff, finite degreecounts and the restrictedcube bound yieldT^(3/2+epsilon), uniformly in every presentation degree. Standalone d0/fullK are excluded. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Theorem21;Sections37--38 |
@@ -20221,6 +20494,8 @@ Tracked obligations from the catalogue:
 | ACRC-FULL-CAPACITY-SAVING-IMPLIES-FULL-PAIR-SAVING-PROPOSITION | claim | proved / partial | IF actual full-pair covers have total capacity <<T^(2-eta+epsilon), THEN K_full<<T^(2-eta/2+epsilon). Uniform epsilon quantifiers and the eta/2 loss are explicit. No actual capacity estimate is supplied by this conditional theorem. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Section15;Corollary11 direction3to1 |
 | HBFT-SEVENTH-POWER-ALL-PRESCRIBED-SUMS | claim | proved / partial | Theorem4: r(M^7)<<M^(2+epsilon), uniformly for EVERY positive integerM and ALL ordered positive squarefull summands, including noncoprime ones. Every normalization contributesM^2N^epsilon by the displayed q bounds; divisor summation completes the proof. No arbitrary-target exponent improvement claimed. | [arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md](arithmetic/ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md): Theorem4;Section10 |
 | OSCT-NORMALIZED-FIBER-CUBE-TRANSFER | claim | proved / partial | For each ACTUAL normalization (h,kappa_1,kappa_2), N/h>=2, and every original q>=1 with q^3\|N, the unrestricted coefficient-uniform primitive bound at q_h is <=C_epsilon*N^epsilon*(q+N^(1/2)*q^(-3/4)*h^(-1/8)). The favorable coefficient factor is discarded; q_h=1 is included in the imported theorem. No count for arbitrary non-actual integer gcds is inferred. | [arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md](arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md): Application of (1) at q_h |
+| CGR-SQUARE-QUOTIENT-WEIGHTED-CYCLE-TAIL | claim | proved / partial | For actual positive coprime squarefree-kernel selected graphs with caps1<=Ri,Ki<=n and2(R1R2)^2<n, the sum of W=alpha^3/sqrt(e) over all shared-right paths in simpleC6 is O_epsilon(n^epsilon K1 R1^2 R2). Cycles with some W>=Y number O_epsilon(n^epsilon K1 R1^2 R2/Y) for EVERY REALY>0. Wneednotbe>=1. Uniformity is per fixed positive coefficient pair; sides may be swapped. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section9,Theorem4,equations18--19 |
+| KGR-CRITICAL-AND-BALANCED-SECTORS | claim | proved / partial | In shaped critical caps, for sufficiently large n uniformly2(R1R2)^2<=32n^(44/51)<n; bounded n is absorbed uniformly. Resource K1R1^2R2=16n^(131/153)/(kappa1^(19/9)kappa2^(14/9)); Wstar>=n^(53/153)/(same coefficient denominator) meets the n^(26/51+epsilon) C6 budget. Balanced caps give tail T^4/Y and T^2 budget on Wstar>=T^2. Necessary alpha bounds are >2^(-1/8)n^(7/68) at coefficient one and >T^(5/8) balanced; no actual gain examples or full residual estimate is asserted. | [arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md](arithmetic/ERDOS_943_KERNEL_GCD_REFINED_SQUARE_QUOTIENT.md): Section5; equation(15) and necessary alpha inequalities |
 | ARITH-DEGREE10-AFFINE-TRACE-GEOMETRIC-S4-BRANCH | claim | proved / partial | The exact primitive quartic discriminant product has a squarefree degree30 factor coprime to every other factor and leading coefficient. Each root has discriminant valuation1 and transposition inertia. Normality in arithmeticS4 and conjugacy of transpositions give full geometricS4 and geometric integrality. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Theorem1, discriminant product and geometric group |
 | ARITH-DEGREE26-AFFINE-TRACE-LOCAL-ALGEBRAIC-POINT | claim | proved / partial | The exact t2,s22 modulo29 kernel and numerator satisfy every good-open unit and partial_sPhi6=13. Simple-root Hensel gives a Q29 point algebraic overQ of degree<=12, hence a number-field point with regularA26. The polynomial is nonzero and integral at29. This does not give a Q-rational point. | [arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md](arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md): Section6 |
 | ARITH-QUADRATIC-SPECTRAL-REAL-GATES | claim | proved / partial | The square-root spectral cover has real points if t0>0 or t2>0; when both are negative it is real-soluble iff \|t1\|>2+2sqrt(t0*t2) on the smooth stratum. An actual good paired point has all criticalz real iff q splits overR and theta(r)>2\|r\| for every qroot. Real solubility alone is weaker; Qsolubility of the cover is not necessary for rational coefficient pencils. | [arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md](arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md): Section4 |
@@ -20230,7 +20505,7 @@ Tracked obligations from the catalogue:
 | ARITH-D5-BUFFERED-BOUQUET-AND-TREE-REACHABILITY | claim | proved / partial | A t>=2 unbuffered D5 bouquet or ordered one-vertex natural D5 lobe tree may be followed by an arbitrary DT with two distinct old anchors and two fresh leaves. Normalize its prior prefix and then absorb the buffer at r=2t. This yields an O(t^3) upper bound for buffered bouquets and an O(t^4) upper bound for buffered ordered trees, with the additive controller constant fixed. The previous exposure lower bounds and the separate marked-buffer lower bound stay valid. | [arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md](arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md): Corollary 3, bouquet and ordered-tree normalization with the final fresh buffer |
 | GAP-ARITH-HURWITZ-UNIFORM-MARKED-PURE-DT | gap | open / partial | For each integer r>=7 let N=2r+1 and fix an N-cycle P. Prove transitivity on the absolute X_D space with the first branch marked, under H=<Q_2,...,Q_(r-1),Q_1^2>. The absolute quotient uses simultaneous sheet relabeling preserving P. Powers of the full twist realize every such relabeling in the marked subgroup. | [arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md](arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md): Lemma 1, Theorem 2 and Theorem 4, first case |
 | GAP-ARITH-HURWITZ-UNIFORM-UNMARKED-PURE-DT | gap | open / partial | For each integer r>=7 let N=2r+1 and fix an N-cycle P. Prove absolute braid transitivity on the fixed-product space X_D of r double transpositions with product P. Its tuples have full alternating group by odd-degree primitivity and the primitive-DT theorem. The absolute quotient uses simultaneous sheet relabeling preserving P. Powers of the full twist realize every such relabeling in the marked subgroup. | [arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md](arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md): The spaces X_D and X_T; Theorem 4 and Corollary 5; [arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md](arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md): The remaining symmetric-deletion gate, restricted to polynomial degree N>=15 |
-| ARITH-ABC-BOUNDED-VARIABLE-FULL-MODULUS | claim | proved / partial | Fix m and C. For n that is k-full with k sufficiently large depending only on m and C, signed monomial unit congruences in m variables of height at most n^(C/k) give O(F n^(m(m−1)/(2k)+epsilon)) when exact fibers have cardinality at most F. Pairwise coprime tuples admit any fixed amplification factor ell in the denominator of the exponent. The fullness threshold is independent of the signed exponent vector. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Signed monomial congruences over full moduli |
+| ARITH-ABC-BOUNDED-VARIABLE-FULL-MODULUS | claim | stale / partial | Fix m and C. For n that is k-full with k sufficiently large depending only on m and C, signed monomial unit congruences in m variables of height at most n^(C/k) give O(F n^(m(m−1)/(2k)+epsilon)) when exact fibers have cardinality at most F. Pairwise coprime tuples admit any fixed amplification factor ell in the denominator of the exponent. The fullness threshold is independent of the signed exponent vector. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Signed monomial congruences over full moduli |
 | ARITH-COMMON-ARITHMETIC-FIBERS-COR-FINITE-ETALE-REALIZATION | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(K\) have characteristic zero.  Every finite \'etale \(K\)-algebra \(A\) of rank \(N\geq3\) occurs as a full Keller fiber of a Jacobian-one map \[  \A^3_K\longrightarrow\A^3_K \] of geometric degree \(N\).  More precisely, once an isomorphism \(A\simeq K[T]/(P)\) and an element \(a\in K\) with \(P^{[1]}(a)P^{[3]}(a)\neq0\) are supplied, the map, target, and fiber isomorphism are given by the explicit formulas of Proposition~\ref{prop:supplied-polynomial-realization}.  For an abstract \(A\), the monogenicity argument proves that such a presentation exists; it does not choose one canonically. | [../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex](../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex): cor:finite-etale-realization |
 | ARITH-COMMON-ARITHMETIC-FIBERS-THM-MAIN-INTRO | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(K\) have characteristic zero, and let \(P\in K[T]\) be separable of degree \(N\geq3\).  There are a polynomial map \[  F_P:\A^3_K\longrightarrow\A^3_K \] and a target \(y_P\in\A^3(K)\) such that \[  \det DF_P=1,\qquad  \gdeg(F_P)=N,\qquad  F_P^{-1}(y_P)\simeq\Spec K[T]/(P). \] The fiber isomorphism is natural on commutative \(K\)-algebras, every coordinate of \(F_P\) has degree at most \(6N+2\), and the displayed fiber is finite \'etale of rank \(N\). | [../unpublished/common-arithmetic-fibers/sections/00-introduction.tex](../unpublished/common-arithmetic-fibers/sections/00-introduction.tex): thm:main-intro |
 | ARITH-LINE-SIGN-DISTRIBUTION | claim | proved / partial | For Hasse failures and locally soluble original-line fibres, positive and negative parameter proportions tend to71/143 and72/143. All rational targets have these same proportions. Global cube proportions instead use area(Gamma_+)/area(Gamma) and area(Gamma_-)/area(Gamma). | [arithmetic/FIXED_MAP_LOCAL_DENSITIES.md](arithmetic/FIXED_MAP_LOCAL_DENSITIES.md): Corollary 5 (sign distribution) |
@@ -20257,9 +20532,9 @@ Tracked obligations from the catalogue:
 | ARITH-EISENSTEIN-JOINT-COSET-LEVEL | claim | proved / partial | With scalar sieve coefficients bounded in absolute value by K, summing the errors in the joint distribution theorem over duv <= B and eligible ell <= L gives O(K T_W tau(n) sqrt(n) B L log^7(2B) log^5(2L)), for B,L >= 1. A single budget duv ell <= R gives O(K T_W tau(n) sqrt(n) R log^13(2R)). For K = n^(o(1)), moving bumps allow power levels kappa + xi < epsilon/2 under H^3 >= n^(1+epsilon) M. Central triangles with h comparable to n^(-delta), 0 < h <= 1/2 and 0 <= delta < 1/3 allow kappa + xi < (1-3delta)/2. The result improves distribution levels, not the central power threshold, prime-factor count conclusion or either C12 pointwise input. | [arithmetic/EISENSTEIN_BOUNDED_PRIME_FACTORS.md](arithmetic/EISENSTEIN_BOUNDED_PRIME_FACTORS.md): EisJointCosetLevel, J4-J5 and the subpower K condition for the stated power-level consequences |
 | ARITH-EISENSTEIN-MOVING-JOINT-COSET-ESTIMATE | claim | proved / partial | In the exact notation of the manuscript local lemma, the odd-shell count S_m(ell) with prescribed split valuation-one tests and squarefree divisibility tests is X_m times the product of the t_p/2 factors and g_m(ell), with absolute error O_{phi,zeta}((uv)^3 ell^(3/2) n^(1/2+zeta) sqrt(M/H)). All target valuations and either prescribed mixed orientation are included. | [../results/eisenstein-pointwise-counts/local.tex](../results/eisenstein-pointwise-counts/local.tex): lem:joint |
 | ARITH-EISENSTEIN-SUMSETS | claim | proved / partial | Primitive norm values N=A disjoint-union3·A. N+N is exactly positive even n outside0,12mod18; kN={n>=k:n=kmod2} for k>=3. Four primitive values suffice and are necessary. kA={n>=k:n=kmod6} for k>=2; seven A-values suffice and are necessary. | [../results/eisenstein-restricted-prime-sums/sections/introduction.tex](../results/eisenstein-restricted-prime-sums/sections/introduction.tex): Combined scopes and proofs of prop:primitive-classification, prop:primitive-binary and prop:higher-sumsets; derived aggregate without a duplicate theorem declaration |
-| ARITH-ABC-ASYMMETRIC-OFFDIAGONAL-POWER-GROUPS | claim | proved / partial | When separate copies release masses m_I,m_J with root heights r_I,r_J for a common degree divisor p, the energy exponent is at most 2L_T-m_I-m_J+max(r_I+r_J-w,s/p). In the real short strip the area term is r_I+r_J+s-1. An exact example improves the same-lock cap from 27/50 to 319/600. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Asymmetric power groups in the repeat energies |
+| ARITH-ABC-ASYMMETRIC-OFFDIAGONAL-POWER-GROUPS | claim | stale / partial | When separate copies release masses m_I,m_J with root heights r_I,r_J for a common degree divisor p, the energy exponent is at most 2L_T-m_I-m_J+max(r_I+r_J-w,s/p). In the real short strip the area term is r_I+r_J+s-1. An exact example improves the same-lock cap from 27/50 to 319/600. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Asymmetric power groups in the repeat energies |
 | ARITH-ABC-ASYMMETRIC-BINOMIAL-RECTANGLE-GRAPH | claim | proved / partial | Let b=max b_T, let lower masks in degrees 1,j_T have mass sum b_T, and let the common top degree k have mass b_T on each letter. If j_T<=(1-sigma)k and b_T/b>=max(4/(k+1)+sigma^2/96,3sigma^2/4), the exponent is at most sum b_T-b sigma^2/96+epsilon. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Different root scales and degrees on the three letters |
-| ARITH-ABC-COMPRESSED-TALL-REAL-DETERMINANT | claim | proved / partial | For a compressed integer pair V,T with V T^q=C+O(X^o(1)), the Laurent-power comparison matrix after divided differences stays nonsingular if t0 L times the dimension is bounded below one. Comparing the integer determinant in short intervals yields the explicit real count inequality (PG3). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Numerical height zero on the short letter |
+| ARITH-ABC-COMPRESSED-TALL-REAL-DETERMINANT | claim | stale / partial | For a compressed integer pair V,T with V T^q=C+O(X^o(1)), the Laurent-power comparison matrix after divided differences stays nonsingular if t0 L times the dimension is bounded below one. Comparing the integer determinant in short intervals yields the explicit real count inequality (PG3). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Numerical height zero on the short letter |
 | ARITH-POWERFUL-FIXED-OFFSET-STRICT-CARDINALITY-OBSTRUCTION | claim | proved / partial | For (u,v)=(3,1) and r=2 modulo 30, the strict model has D=5957/1000. An abstract tripartite model at that exponent obeys pair uniqueness, bounded multiplicities and codegrees in the earlier graphs, and bounded surface fibers. | [../unpublished/powerful-number-representations/main.tex](../unpublished/powerful-number-representations/main.tex): Section 10.1, perturbation and random tripartite construction |
 | ARITH-ASYM-CHARACTER-RESONANCE | claim | proved / partial | For cube-free c = k^2 ell in the exact compressed lower-weight family, with squarefree coprime p7-supported k and ell, the coefficient is chi_4(c) Psi(c), where Psi includes every actual cutoff. On a+ct=N with positive original weights, chi_4(c) = chi_4(t), so the actual sum transfers the sign to W = chi_4 V while retaining the signed model subtraction. W has prefix bound O_nu(X^(1/2+nu)), but U*W at N equals the original positive-main convolution. With M_7 the squarefree indicator of p7-only prime factors, the unrestricted Dirichlet convolution b = M_7 * M_7 has local series (1+z)^2 at p7 and satisfies the Dirichlet-convolution identity b * W = tau 1_C12. In the reverse divisor phase, kernel support 1 modulo 4 is used only for the base gcd stratum g in C12, not arbitrary shifts in A3. The remaining phase reproduces the original inner quadratic character and outer sign rather than an unweighted modulus sum. | [arithmetic/ASYMMETRIC_SIGN_TRANSFER.md](arithmetic/ASYMMETRIC_SIGN_TRANSFER.md): AsymCharacterResonance, (1)-(10), exact model subtraction and the explicit base-gcd restriction |
 | ARITH-ASYM-FOUVRY-LARGE-RESIDUE-RANGE | claim | proved / partial | The inequalities in C.1 or C.2 force combined-modulus exponent r+s<=5*(1-nu)/9 even after dropping positive losses. For arbitrary weights Corollary 1 exceeds exponent 1/2 only for 0<nu<1/12 before losses and peaks at 10/19 at nu=1/19. A literal principal interval factor modulo 12 satisfies (1.3); a literal nonprincipal character modulo 12 fails it. The compressed critical expansion contains combined moduli approaching N^(3/4), so this theorem leaves boxes uncovered. | [arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md](arithmetic/ASYMMETRIC_WELL_FACTORABLE_SWITCH.md): Sections 5–7, equations (21)–(28) |
@@ -20282,8 +20557,6 @@ Tracked obligations from the catalogue:
 | ARITH-DEGREE26-RECIPROCAL-BALANCED-Q37-CLOSURE | claim | proved / partial | Thirteen exact strong equations P²\|X,Q²\|Y,G0 in seven variables have no Q37 solution. Uniform integrality and unit r cover the entire closure. Two complete F37 candidate algorithms, strong six-row Gaussian and weak three-row Cramer with all singular branches, give respectively1925562 and12275266 candidates and zero full solutions over all1823508 outer tuples. | [arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md](arithmetic/DEGREE_TWENTY_SIX_BALANCED_LOCAL_SQUARE_OBSTRUCTION.md): Theorem1 |
 | SWKP-FULL-LONG-POSITIVE-SAVING-IFF-PROPOSITION | claim | proved / partial | For every one fixed delta in(0,1/4], existence of a uniform positive power saving for exact Kfull is equivalent to existence of one for Klong as the NO-short-witness complement. Complement-to-full can reduce eta to min(eta,2delta). No bound for all long-witness tuples or actual full/complement saving is claimed. | [arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md](arithmetic/ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md): Section 5, Corollary 8 |
 | VFE-LONG-COMPLEMENT-TO-HIGH-ORDER-PROPOSITION | claim | proved / partial | For each fixeddelta in(0,1/4],eta in(0,1], U_eta(K_long) implies U_min(eta,2delta)(W_full), through the existing short-bound/partition theorem and full-to-high-order. No same-eta converse is asserted wheneta>2delta. | [arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md](arithmetic/ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md): Section7,Proposition4 reverse |
-| CGR-BALANCED-MAXBOX-SECTOR | claim | proved / partial | When R1=R2=K1=T and2T^4<n, the actual cycle tail is O_epsilon(n^epsilon T^5/Y), so the sector alpha^4 gamma>=T^3 meets the T^2*n^epsilon budget. The joint cap then forces alpha>>T^(2/3); neither this necessary cutoff nor the sector exhausts all cycles. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section4,final paragraph |
-| CGR-CRITICAL-SHAPED-CYCLE-SECTOR | claim | proved / partial | In the current coefficient-shaped critical rectangle, cycles with SAME-path alpha^4 gamma>=n^(86/153)/(kappa1^(22/9) kappa2^(20/9)) number O_epsilon(n^(26/51+epsilon)), uniformly in each fixed positive coefficient pair. The shared-left gate swaps coefficient exponents. Thresholds below1 are handled by the weighted bound. This is a restricted sector, not hypothesisH or its residual. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section4,Corollary2,equations12--13 |
 | MCA-BOUNDED-PRESENTATION-UNION-BOUND | claim | proved / partial | For each fixed finiteD, the union of all positive presentation degrees1..D, including commonfactors, isT^(3/2+epsilon) with D-dependentconstants. Direct fixed-degree proof does not need the uniform-degree lemma. A separate route is immediate from the stronger unbounded presentation theorem. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Corollary20;Section37 |
 | RWF-ACTUAL-FAMILY-TRUNCATED-COEFFICIENT-UNIFORM-BOUND | claim | proved / partial | For an ACTUAL degree-d homogeneous rational witness family, all original SF/distinct/unit/positive/reduced/height filters retained, arbitrary coefficient dependence is allowed and the distinct-pair count is N^epsilon*(T^(2/3)+T²/N^(1/(2d+3))). It is not a replacement for either old raw congruence bound; quadratic general composite exponent9/7 is unchanged. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Section11;Corollary8;equation27 |
 | UCT-LINEAR-CONSTANT-ACTUAL-T-TWOTHIRDS-BOUND | claim | proved / partial | For d0 or1 at balanced N~T5, actual family pairs number O_epsilon(T^(2/3+epsilon)), uniformly in varying coefficients. Raw low-degree pairs remain separately stated in equation48. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Corollary14;equation49 |
@@ -20292,14 +20565,17 @@ Tracked obligations from the catalogue:
 | UCT-QUADRATIC-COEFFICIENT-UNIFORM-T-BOUND | claim | proved / partial | At d2,N comparable toT5, both raw unit-pair and actual degree2 family counts are O_epsilon(T^(1+epsilon)), uniformly in varying coefficients. This is not a bound for arbitrary full kernel pairs without a family cover. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Corollary14;equation49 |
 | ACRC-FULL-RATIO-CAPACITY-EXACT-LONG-POSITIVE-SAVING-IFF-PROPOSITION | claim | proved / partial | For ANY fixed delta in(0,1/4], existence of a uniform SOME positive saving is equivalent for full K, full primitive ratios, actual-cover total full capacity, and actual-cover total exact-long capacity, in permitted classes admitting verticalD2. Pair=>ratio/capacity keeps eta; ratio/capacity=>pair can lose half eta, and long=>full also min2delta. These are proved PROPOSITIONS between estimates, not actual predicates seeded from the principal or source. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Section16;Corollary11 |
 | OSCT-ORIGINAL-SUM-UNIFORM-CUBE-DIVISOR-BOUND | claim | proved / partial | For every N>=2, every integer q>=1 with q^3\|N and every epsilon>0, the number r(N) of ALL ordered positive square-full summands u+v=N, including noncoprime pairs, is <<_epsilon N^epsilon*(q+N^(1/2)/q^(3/4)), uniformly in N,q. Sum the at-most-tau(N)^3 actual normalizations; N/h=1 has no pair. | [arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md](arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md): Theorem1; equation(2) |
+| CGR-BALANCED-SQUARE-QUOTIENT-SECTOR | claim | proved / partial | In the balanced maximum box R1=R2=K1=T with2T^4<n, the Wtail is O_epsilon(n^epsilon T^4/Y), so W>=T^2 meets theT^2budget and contains the previous alpha^4gamma>=T^3 sector. No actual-cycle existence or exhaustion of the residual is asserted. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section11,final paragraph |
+| CGR-CRITICAL-SQUARE-QUOTIENT-SECTOR | claim | proved / partial | In the coefficient-shaped critical rectangle, K1 R1^2 R2=16n^(131/153)/(kappa1^(19/9)kappa2^(14/9)). Cycles with some W>=n^(53/153)/(kappa1^(19/9)kappa2^(14/9)) meet n^(26/51+epsilon), with swapped exponents on shared-left paths. Coefficient-one membership forces alpha>=n^(53/459)e^(1/6). Small thresholds use the1/R2 boundary, not1. This doesnot proveH/residual or5/17. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section11,equations21--23 |
+| CGR-WEIGHTED-CYCLE-MOMENT-AND-TAIL | claim | proved / partial | For every Y>=1 in the general rectangle, cycles with alpha^4 gamma>=Y at any shared-right path number O_epsilon(n^epsilon K1 R1^2 R2^2/Y), and the sum of alpha^4 gamma over all shared-right paths in all simple cycles is O_epsilon(n^epsilon K1 R1^2 R2^2). Dyadic losses are absorbed in epsilon; the side-swapped version also holds. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Theorem1;Section3,equations10--11 |
 | ARITH-DEGREE10-AFFINE-TRACE-GENUS-LOWER-BOUND | claim | proved / partial | The geometrically integral degree4 cover has at least30 simple branch contributions. Riemann-Hurwitz gives2g-2>=-8+30 and genus>=12. Other ramification may increase genus; no exact genus is claimed. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Theorem1, Riemann-Hurwitz conclusion |
 | ARITH-D56-ABSOLUTE-CLASS-FAILURE-BOUND | claim | proved / partial | UniformeveryintegerN>=3,0<=R_L(N)-R_P(N)<<N J_-56(N)/log^(5/4)N. Sumthin-square CRT/Selbergupperfor d<=N^.1 withz=N^.1,epsilon.5: main sumsagainst d^-2; CRTerrorN^(7/20). Largedtail atmostN sum_(d>N^.1)d^-2<<N^.9. Finitelymanyramifiedprefixpairs andvalueorientations costconstants. AbsoluteboundusesclassarithmeticonlyplusfixedAPMertens, nottheoldlogarithmiclowerbound. | [arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md](arithmetic/PRIMITIVE_NORM_CLASS_NUMBER_FOUR.md): CN4.17, CN4.20-CN4.29 and finalsmall/large-square summation |
 | ARITH-D5-ORDERED-ONE-VERTEX-WORST-CASE-LOWER | claim | proved / partial | The common-root unbuffered bouquets are members of the ordered one-vertex class. Therefore the worst-case distance to a wreath-leaf endpoint over the larger class is Omega(t^2); the proved universal upper bound is O(t^4). No worst-case exponent between those bounds is determined. | [arithmetic/NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md](arithmetic/NATURAL_D5_LOBE_TREE_HURWITZ_REACHABILITY.md): Ordered one-vertex class includes bouquets; exact controls and scope |
-| ARITH-ABC-REAL-SIGNED-MONOMIAL-STRIPS | claim | proved / partial | In fixed m variables of height at most H, the count with bounded exact rational fiber F in a relative real strip of width H^(−K) is O(F H^eta) once K is sufficiently large in terms of m and eta. Uniform precision follows by using the bounded-degree logarithmic differential in quantitative inversion. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Signed monomials in real short strips |
-| ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT | claim | proved / partial | For k-full n, unit rationals x,y of height at most n^(C/k) and V of height n^rho_k with rho_k going to zero, a fixed signed monomial V x^a y^b=K modulo n has O(F n^(3/k+epsilon)) tuples when each exact rational fiber has cardinality at most F. Partitioning p-adic charts and constructing an auxiliary polynomial with bounded degree in V keeps its coefficient height within n^o(1). The threshold in k is independent of a,b. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): A full-modulus count in three variables |
-| ARITH-ABC-NEAR-HALF-RADICAL-SHARES | claim | proved / partial | Near-half sequences must have three macroscopic radical shares. In the all-double-heavy case their shares agree to o(lambda). Two letters cannot each have just one coordinate of nonvanishing weighted height and complementary height o(1). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Radical shares in near-half boxes |
-| ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES | claim | proved / partial | When a selected modulus has weight bounded below and free degrees are within mass-weighted total E=o(1) of bounded multiples of a common q=Omega(1/lambda), the count exponent is at most the locked root mass plus O(lambda E^(1/3)+lambda^(3/2)). A fully clustered two-heavy near-half profile gives lambda/6+o(lambda). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A partial-power modulus for clustered high degrees |
-| ARITH-ABC-SMALL-BUDGET-EIGHTEEN-THIRTY-SEVENTHS | claim | proved / partial | For sufficiently small fixed lambda, N_lambda(X) is O_(lambda,epsilon)(X^((18/37)lambda+C lambda^(7/6)+epsilon)). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform small-budget exponent below one half |
+| ARITH-ABC-REAL-SIGNED-MONOMIAL-STRIPS | claim | stale / partial | In fixed m variables of height at most H, the count with bounded exact rational fiber F in a relative real strip of width H^(−K) is O(F H^eta) once K is sufficiently large in terms of m and eta. Uniform precision follows by using the bounded-degree logarithmic differential in quantitative inversion. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Signed monomials in real short strips |
+| ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-COUNT | claim | stale / partial | For k-full n, unit rationals x,y of height at most n^(C/k) and V of height n^rho_k with rho_k going to zero, a fixed signed monomial V x^a y^b=K modulo n has O(F n^(3/k+epsilon)) tuples when each exact rational fiber has cardinality at most F. Partitioning p-adic charts and constructing an auxiliary polynomial with bounded degree in V keeps its coefficient height within n^o(1). The threshold in k is independent of a,b. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): A full-modulus count in three variables |
+| ARITH-ABC-NEAR-HALF-RADICAL-SHARES | claim | stale / partial | Near-half sequences must have three macroscopic radical shares. In the all-double-heavy case their shares agree to o(lambda). Two letters cannot each have just one coordinate of nonvanishing weighted height and complementary height o(1). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Radical shares in near-half boxes |
+| ARITH-ABC-PARTIAL-POWER-MODULUS-CLUSTERED-DEGREES | claim | stale / partial | When a selected modulus has weight bounded below and free degrees are within mass-weighted total E=o(1) of bounded multiples of a common q=Omega(1/lambda), the count exponent is at most the locked root mass plus O(lambda E^(1/3)+lambda^(3/2)). A fully clustered two-heavy near-half profile gives lambda/6+o(lambda). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A partial-power modulus for clustered high degrees |
+| ARITH-ABC-SMALL-BUDGET-EIGHTEEN-THIRTY-SEVENTHS | claim | stale / partial | For sufficiently small fixed lambda, N_lambda(X) is O_(lambda,epsilon)(X^((18/37)lambda+C lambda^(7/6)+epsilon)). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform small-budget exponent below one half |
 | ARITH-COMMON-ARITHMETIC-FIBERS-COR-FIELDS | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(K\) have characteristic zero.  Every finite field extension \(L/K\) of degree at least three occurs as a connected full Keller fiber of a Jacobian-one polynomial map \(\A^3_K\to\A^3_K\) of coordinate degree at most \(6[L:K]+2\). Given a primitive element, its minimal polynomial, and an admissible translation, the map is explicit. | [../unpublished/common-arithmetic-fibers/sections/03-realization.tex](../unpublished/common-arithmetic-fibers/sections/03-realization.tex): cor:fields |
 | ARITH-COMMON-ARITHMETIC-FIBERS-COR-MAIN-INTRO | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   If \(K\) has characteristic zero, every finite \'etale \(K\)-algebra of rank at least three occurs as a full Keller fiber of a Jacobian-one polynomial map \(\A^3_K\to\A^3_K\). | [../unpublished/common-arithmetic-fibers/sections/00-introduction.tex](../unpublished/common-arithmetic-fibers/sections/00-introduction.tex): cor:main-intro |
 | ARITH-COMMON-ARITHMETIC-FIBERS-COR-RANK-CLASSIFICATION | claim | proved / partial | In the containing manuscript setting and definitions, the exact declared statement is:   Let \(K\) have characteristic zero and let \(X\) be a finite \(K\)-scheme of positive rank \(N\).  Then \(X\) is isomorphic to a full Keller fiber of a geometric-degree-\(N\) Keller map \[  F:\A^3_K\longrightarrow\A^3_K \] if and only if \(X\) is finite \'etale and \(N\neq2\).  Consequently, the possible nonzero ranks of full Keller fibers in \(\A^3_K\) are exactly \[  \boxed{1,3,4,5,\ldots}. \] | [../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex](../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex): cor:rank-classification |
@@ -20314,7 +20590,7 @@ Tracked obligations from the catalogue:
 | ARITH-D23-CORE-FIVE-ALL-NEUTRAL-ATOMS | claim | proved / partial | For everyc5/10/15 and every nonramified neutral atom a (principal split prime or cube of a nonprincipal split prime), ca belongs toU+U. This is the unrestricted atom condition, and under the exact phase/local reduction it is EQUIVALENT to the complete inert-core-five exception formula. | [arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md](arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md): Sections1-5, exact theorem scope |
 | GAP-ARITH-D23-CORE-FIVE-PRINCIPAL-ATOMS | gap | proved / partial | RESOLVED: every principal splitp andc5/10/15 hascp inU+U, by selected-other-block tail, explicit2^30 onset and the completed3701503-case finite bridge. Together with complete nonprincipal cubes and exact neutral descent this closes the ENTIRE inertcore5 with exceptions{5,10,15,115,230,345}. Other cores and global40 remain open. | [arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md](arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md): Section6 exact remaining scope; [arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md](arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md): N23PrincipalAtoms and N23InertCoreFive, actual complete finite bridge |
 | ARITH-D23-TWENTYONE-ALL-NEUTRAL-ATOMS | claim | proved / partial | For EVERY nonramified neutral atom a, namely a principal split prime or cube of a nonprincipal split prime,21a belongs toU+U. Given the exact phase/local/ramified context, this is EQUIVALENT to the entire inert-core-seven exception formula{21,483}. | [arithmetic/MINUS23_INERT_CORE_SEVEN_CLOSURE.md](arithmetic/MINUS23_INERT_CORE_SEVEN_CLOSURE.md): Sections1-5, exact claim and unrestricted/finite scope |
-| ARITH-ABC-DIFFERENT-POWER-OFFDIAGONAL-REPEATS | claim | proved / partial | If the two released powers have degrees p and q, put g=gcd(p,q). Lifting to a common g-power gives the rank-two area exponent pr_I/g+qr_J/g-w and the collinear exponent s/lcm(p,q). The rank-two term can also use the real short strip. A fixed-lock unit profile improves from 27/50 for equal-power groups to 13/25. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Different powers on the two copies |
+| ARITH-ABC-DIFFERENT-POWER-OFFDIAGONAL-REPEATS | claim | stale / partial | If the two released powers have degrees p and q, put g=gcd(p,q). Lifting to a common g-power gives the rank-two area exponent pr_I/g+qr_J/g-w and the collinear exponent s/lcm(p,q). The rank-two term can also use the real short strip. A fixed-lock unit profile improves from 27/50 for equal-power groups to 13/25. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Different powers on the two copies |
 | ARITH-ASYM-POLYA-VINOGRADOV-SWITCH-RANGE-LIMIT | claim | proved / partial | The weighted critical expansion includes combined modulus Q=ce=N^(3/4+o(1)), with x~N and an isolated free factor of length N^(1/4). Even the conditional improved prefix bound gives N^(3/8+o(1)) there. The cited prime character estimate at beta=7/8 gives error N^(1939/2000+o(1)) after absolute character orthogonality, compared with progression length N^(1/4+o(1)). The switched sum still requires target-dependent dispersion with its nonzero local main retained. | [arithmetic/EISENSTEIN_HECKE_TRANSFER_AUDIT.md](arithmetic/EISENSTEIN_HECKE_TRANSFER_AUDIT.md): Critical switching and Pólya–Vinogradov, condition (1.1), Corollary 3.8, exponent comparison and sign transfer |
 | ARITH-ASYM-CRITICAL-SIEVE-CRITERION | claim | proved / partial | Use z = N^(1/2-epsilon) and D = N^(1/2) (log N)^(-B_0). The sufficient open absolute hypothesis BVcrit says: for every fixed 0 < epsilon < 1/100 and every A_0 > 0, there exist B_0 >= 0 and constants such that the sum of \|r_d(N)\| over d < D dividing P_7(z) is at most C_(epsilon,A_0) X_N (log N)^(-A_0) for every sufficiently large N congruent to 2 modulo 12. Under this hypothesis, the lower half-dimensional sieve has mass at least c_1 sqrt(epsilon) X_N V_N(z). Subtracting the proved C_0 epsilon^(3/2) bad mass and fixing epsilon sufficiently small yields C12+C12 coverage and at least a constant times N^(1-nu) distinct ordered pairs for every nu > 0. Only one sufficiently small fixed epsilon is actually needed. The weaker signed condition sum lambda^-_d r_d(N) >= -o(X_N V_N(z)), uniform over those targets, also suffices for that epsilon. Neither distribution condition is proved. | [arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md](arithmetic/ASYMMETRIC_CRITICAL_SWITCHING.md): Critical switching canonical proof; exact statement and stated dependencies |
 | ARITH-ASYM-COFACTOR-RESTORATION | claim | proved / partial | The small-power uniform theorem covers the exact-valuation and roughness predicates after the stated coefficient/product budget. A signed lower block sieve first bounds the remaining weights. Positive small allowed cofactor choices then restore the missing logarithmic mass, including common target divisors. Exact local compensation is uniform in target valuations; a Markov cutoff retains a fixed fraction of the positive cofactor model. Recovering the selected squarefree cofactors from an original pair makes the fibres injective at the cofactor stage, and the remaining rough normalized weights have a bounded fibre. This gives the pointwise lower count at N J_E(N)/(log N)^(5/4). | [arithmetic/ASYMMETRIC_SEMIGROUP_SCALE.md](arithmetic/ASYMMETRIC_SEMIGROUP_SCALE.md): Sections 1-5: uniform predicates, exact rough masses, target compensation, cofactor truncation, lower signs and fibres |
@@ -20334,13 +20610,15 @@ Tracked obligations from the catalogue:
 | USH-QUADRATIC-COUNT-EXPONENT-OPTIMALITY | claim | proved / partial | The new coefficient-uniform quadraticT^(1+epsilon) upper bound and matching fixed-familycT lower show power exponent1 optimal within this actual-family class. No nearquadraticfullK lower or full-cover theorem follows. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Proposition16 part1;Section26 |
 | OSCT-POWER-SAVING-CUBE-DIVISOR-WINDOWS | claim | proved / partial | Balancing the two terms gives q=N^(2/7) at the exponent level. If an ACTUAL cube divisor q lies in [N^(2/7-eta),N^(2/7+eta)], eta>=0, then r(N)<<N^(2/7+eta+epsilon). For 0<=delta<=1/70 the window [N^(4/15+4delta/3),N^(3/10-delta)] suffices for r(N)<<N^(3/10-delta+epsilon). These are sufficient target conditions, not cube-divisor existence claims; cube-free targets have only q=1 in this route. | [arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md](arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md): Final target-window paragraphs |
 | OSCT-SEVENTH-POWER-DIVISOR-COROLLARY | claim | proved / partial | If M^7\|N, choosing the actual cube divisor q=M^2 gives r(N)<<_epsilon N^epsilon*(M^2+N^(1/2)*M^(-3/2)). In particular N=M^7 recovers the already-existing seventh-power principal; this fact does not duplicate or alter its raw statement. | [arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md](arithmetic/ERDOS_943_ORIGINAL_SUM_CUBE_DIVISOR_TRANSFER.md): Paragraph beginning For N=M^7 |
+| CGR-BALANCED-MAXBOX-SECTOR | claim | proved / partial | When R1=R2=K1=T and2T^4<n, the actual cycle tail is O_epsilon(n^epsilon T^5/Y), so the sector alpha^4 gamma>=T^3 meets the T^2*n^epsilon budget. The joint cap then forces alpha>>T^(2/3); neither this necessary cutoff nor the sector exhausts all cycles. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section4,final paragraph |
+| CGR-CRITICAL-SHAPED-CYCLE-SECTOR | claim | proved / partial | In the current coefficient-shaped critical rectangle, cycles with SAME-path alpha^4 gamma>=n^(86/153)/(kappa1^(22/9) kappa2^(20/9)) number O_epsilon(n^(26/51+epsilon)), uniformly in each fixed positive coefficient pair. The shared-left gate swaps coefficient exponents. Thresholds below1 are handled by the weighted bound. This is a restricted sector, not hypothesisH or its residual. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section4,Corollary2,equations12--13 |
 | ARITH-DEGREE10-AFFINE-TRACE-FIXED-NUMBERFIELD-FINITENESS | claim | proved / partial | For each fixed numberfieldK, Faltings gives finiteKpoints on the smooth genus>=12 normalization. Nonsingular affine points lift, and the singular affine set is finite, so F(K)=0 is finite. No effective list or uniform bound. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Corollary2, fixed-number-field point finiteness |
 | ARITH-DEGREE10-AFFINE-TRACE-NO-RATIONAL-PARAMETRIZATION | claim | proved / partial | A nonconstant rational mapP1 to the smooth projective normalization contradicts Riemann-Hurwitz and genus>=12. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Corollary2, no rational parametrization |
 | ARITH-DEGREE26-AFFINE-CURVE-PRIMITIVE-COEFFICIENT-BINDING | claim | proved / partial | The monic Q[t] least common denominator of all thirteen frozen Phi6 coefficients has degree144. BEFORE any polynomial content removal, their LCD-cleared coefficient gcd is1. Clearing only numerical denominators and integer content yields the exact primitive F(s,t), deg_s12 and coefficient tdegrees144-i; no vertical component was discarded. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Section1, exact raw LCD and content identities |
 | ARITH-DEGREE26-TRACE-LEADING-DENOMINATOR-DATA | claim | proved / partial | For the frozen primitive F the degrees are d=12,D=144, deg(f_i)=144-i, and L(t)=25 B_56(t)^2(t^2-t-1)^10. The first and last coefficients of A give E={2,3,5,7,13,17}. Outside E, a t-denominator forces the same s-denominator order and a nonzero root of A; an s-only denominator forces t modulo p to be a root of B_56*(t^2-t-1). | [arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md](arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md): Sections 1–2, exact degree profile and equations (1)–(2) |
-| ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH | claim | proved / partial | For a powerful modulus and two or three free prime roots of positive limiting height, count low-cofactor pairs of normalized masses f,g at exponent max(f,g,min(f+g/2,g+f/2))+o(1). Two-paths with at least two shared primes cost only the edge count times a negligible factor. Other codegrees reduce to ternary rational congruences amplified after independent numerator and denominator coloring. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A graph count with two or three prime roots |
-| ARITH-ABC-BALANCED-ONE-THIRD-RESIDUAL-MASS | claim | proved / partial | In the limiting subcase d=l_A=l_B=l_C=1/3, let delta_T be the normalized mass surviving removal of bounded-degree factors and any fixed number of largest remaining coordinates. A positive-height full modulus on T of cost mu forces delta_U+delta_V>=1/3−mu for the other letters. A short-to-tall height gap large compared with L forces delta_B+delta_C>=1/3. Positive residual numerical weight on T forces delta_U+delta_V>=1/3. The total residual mass is at least 1/6 and is at least 1/3 when either of the latter conditions holds. When the short numerical height is zero, each tall letter lacks concentration at a single positive value of eL. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Necessary conditions at the balanced \(1/3\) endpoint |
-| ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION | claim | proved / partial | For disjoint supports of x,y, allowing a larger cofactor V to share those primes, the full-modulus signed congruence bound is O(n^(3/(ell k)+2rho_k/\|a\|+2rho_k/\|b\|+epsilon)) for fixed ell and \|a\|,\|b\| bounded below by a fixed multiple of k. Separate prime colors preserve the narrow supports and prevent cancellation in V. It releases two narrow roots and a numeric X^o(1) cofactor at vanishing normalized cost in a limiting box. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): Amplification when the cofactor shares primes with the roots |
+| ARITH-ABC-PRIME-ROOT-LOW-COFACTOR-GRAPH | claim | stale / partial | For a powerful modulus and two or three free prime roots of positive limiting height, count low-cofactor pairs of normalized masses f,g at exponent max(f,g,min(f+g/2,g+f/2))+o(1). Two-paths with at least two shared primes cost only the edge count times a negligible factor. Other codegrees reduce to ternary rational congruences amplified after independent numerator and denominator coloring. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A graph count with two or three prime roots |
+| ARITH-ABC-BALANCED-ONE-THIRD-RESIDUAL-MASS | claim | stale / partial | In the limiting subcase d=l_A=l_B=l_C=1/3, let delta_T be the normalized mass surviving removal of bounded-degree factors and any fixed number of largest remaining coordinates. A positive-height full modulus on T of cost mu forces delta_U+delta_V>=1/3−mu for the other letters. A short-to-tall height gap large compared with L forces delta_B+delta_C>=1/3. Positive residual numerical weight on T forces delta_U+delta_V>=1/3. The total residual mass is at least 1/6 and is at least 1/3 when either of the latter conditions holds. When the short numerical height is zero, each tall letter lacks concentration at a single positive value of eL. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Necessary conditions at the balanced \(1/3\) endpoint |
+| ARITH-ABC-TWO-ROOT-WIDE-COFACTOR-AMPLIFICATION | claim | stale / partial | For disjoint supports of x,y, allowing a larger cofactor V to share those primes, the full-modulus signed congruence bound is O(n^(3/(ell k)+2rho_k/\|a\|+2rho_k/\|b\|+epsilon)) for fixed ell and \|a\|,\|b\| bounded below by a fixed multiple of k. Separate prime colors preserve the narrow supports and prevent cancellation in V. It releases two narrow roots and a numeric X^o(1) cofactor at vanishing normalized cost in a limiting box. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): Amplification when the cofactor shares primes with the roots |
 | ARITH-ENTIRE-FIBRE-CLASSIFICATION | claim | proved / partial | Over every characteristic-zero field K, a finite K-scheme is an entire fibre of a Jacobian-one polynomial A3_K self-map iff finite etale, including rank2 and the empty scheme. Rank2 is realized by degree4 through derivative localization of P(T)(T-b)^2. The existing nonempty full-degree spectrum remains ranks1,3,4,... . | [arithmetic/FIXED_MAP_AMBIENT_LOCAL_CLASSIFICATION.md](arithmetic/FIXED_MAP_AMBIENT_LOCAL_CLASSIFICATION.md): Corollary FMA5 |
 | ARITH-A10-HASSE-COMPLETE-KELLER-FIBRES | claim | proved / partial | Every rank301algebra inTheorem5 is the entire fibre of a determinant-one polynomial A3selfmap, genericdegree301, coordinate degrees<=1808 and genericarithgeomS301. The map maydependon thealgebra; the A10group belongs to the finitefibre splittingfield. | [arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md](arithmetic/ALTERNATING_SUBGROUP_COVERS_AND_HASSE.md): Corollary 6 |
 | ARITH-A10-WHOLE-KELLER-FIBRE-TRANSFER | claim | proved / partial | The unbranched degree-ten root algebras are entire fibres of determinant-one polynomial A3 self-maps with generic degree10 and coordinate degrees at most62. Hilbert parameters give full A10 fields. The explicit s=1 field occurs over(1,0,-2109310/1016543), using the displayed translation coefficients. | see incoming proof routes |
@@ -20353,8 +20631,8 @@ Tracked obligations from the catalogue:
 | ARITH-EISENSTEIN-MOVING-POSITION-POWER-WINDOWS | claim | proved / partial | Fix 1/2<gamma<1 and (1+gamma)/3<theta<=gamma. At x=n^gamma or x=n-n^gamma with H=n^theta, the number of distinct ordered value pairs with first actual summand in [x-H/2,x+H/2] is comparable to H J(n)/log n, in the pure class and each prescribed mixed orientation, with constants depending on gamma,theta. | [arithmetic/EISENSTEIN_MOVING_WINDOWS.md](arithmetic/EISENSTEIN_MOVING_WINDOWS.md): Consequences for prescribed summand sizes, second bullet |
 | ARITH-EISENSTEIN-POINTWISE-PAPER-THM-MAIN | claim | proved / partial | For sufficiently large admissible targets and every real x,H with M=min(x,n-x), 0<x<n, 1<=H<=M and H^3>=n^(1+epsilon)M, counts of distinct ordered pairs are comparable to H J(n)/log n. Constants depend only on fixed epsilon. Each prescribed mixed orientation concerns the actual first summand. | [../results/eisenstein-pointwise-counts/introduction.tex](../results/eisenstein-pointwise-counts/introduction.tex): thm:main |
 | ARITH-MS-EXACT-THM-EXACT-OVERVIEW | claim | proved / partial | Exact primitive quadratic norm-value binary self-sumsets at discriminants-3,-7,-8,-11, with only additional exceptions7,77,203 at-7 and the stated local exclusions. | [../results/eisenstein-restricted-prime-sums/sections/exact-introduction.tex](../results/eisenstein-restricted-prime-sums/sections/exact-introduction.tex): thm:exact-overview |
-| ARITH-ABC-EXACT-VALUATION-RAYS | claim | proved / partial | On each collinear repeat ray, a prime dividing a free power factor on either copy lies in the intersection of their exact valuation groups, outside a fixed finite exceptional set. The minimum retained index in the intersection is the fullness of the ray multiplier, with seven for the tail. Disjoint groups leave only subpolynomially many multipliers. Both modular and short-strip counts yield affine branches. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Exact valuation support in a mixed residue ray |
-| ARITH-ABC-SLICED-DIFFERENT-POWER-REPEAT-LATTICE | claim | proved / partial | With lifted root exponents rho1 and rho2 and lock exponent w>max(rho1,rho2), put t=rho1+rho2−w. A reduced-basis slicing and the affine rectangle bound improve the rank-two arm to t/2+min(r1/Q,r2/P). The collinear arm is unchanged. An exact unit profile improves the best same-lock unsliced cap 1073/2000 to 641/1200. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Slicing the rank-two lattice for unequal lifted powers |
+| ARITH-ABC-EXACT-VALUATION-RAYS | claim | stale / partial | On each collinear repeat ray, a prime dividing a free power factor on either copy lies in the intersection of their exact valuation groups, outside a fixed finite exceptional set. The minimum retained index in the intersection is the fullness of the ray multiplier, with seven for the tail. Disjoint groups leave only subpolynomially many multipliers. Both modular and short-strip counts yield affine branches. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Exact valuation support in a mixed residue ray |
+| ARITH-ABC-SLICED-DIFFERENT-POWER-REPEAT-LATTICE | claim | stale / partial | With lifted root exponents rho1 and rho2 and lock exponent w>max(rho1,rho2), put t=rho1+rho2−w. A reduced-basis slicing and the affine rectangle bound improve the rank-two arm to t/2+min(r1/Q,r2/P). The collinear arm is unchanged. An exact unit profile improves the best same-lock unsliced cap 1073/2000 to 641/1200. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Slicing the rank-two lattice for unequal lifted powers |
 | ARITH-MIXED-FIELD-REFINED-23-56-EXAMPLES | claim | proved / partial | Relative errors are O(ell^(7/6)/L^(1/3)) for minus23/Gaussian, O(ell^(1/8)/L^(1/4)) for minus56/Gaussian, and O(ell^(1/4)/L^(1/4)) for minus56/minus7. The last is a concrete failure of unconditional density halving. Minus23/Gaussian has an admissible attaining primorial sequence with J12=1, showing the product cannot be absorbed into a larger shadow-count normalization. | [arithmetic/PRIMITIVE_NORM_TARGET_FACTOR_REFINEMENT.md](arithmetic/PRIMITIVE_NORM_TARGET_FACTOR_REFINEMENT.md): Section6, three comparisons and normalization obstruction |
 | ARITH-BALANCED-RECIPROCAL-FINITE-RATIONAL-CANDIDATE-PROCEDURE | claim | proved / partial | Construct the finite rational quotient, localize at its explicitgoodopen, remove nilpotents, find a separating primitive element by enumerating integerlinearforms, factor its squarefree minimalpolynomial overQ and recover rationalroots/coordinates. Each step terminates; raw quotientlengthbounds the separatingdegree. The degree26 quotient has7raw/13strong equations and rawlength290400; its full elimination and rationalpointlist have not been executed. | [arithmetic/BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md](arithmetic/BALANCED_RECIPROCAL_RATIONAL_QUOTIENT.md): Finite complete rational-candidate procedure |
 | ARITH-DEGREE26-BALANCED-RESIDUE-DEGREE-ONE-LOCAL-OBSTRUCTION | claim | proved / partial | Γ(F37)isempty: eta0 givesconstant30, squareeta reduces to thecompleteemptylabelledcensus, andall18nonsquareetas haveunitideals. UniformlocalintegralitythenΓ(L)emptyforallfiniteL/Q37 withresidueF37, arbitraryramification. InparticularΓ(Q37)empty; abalancedgoodmodeloveranumberfield cannot havearesiduedegree1primeabove37. | [arithmetic/DEGREE_TWENTY_SIX_RECIPROCAL_GLOBAL_OBSTRUCTION.md](arithmetic/DEGREE_TWENTY_SIX_RECIPROCAL_GLOBAL_OBSTRUCTION.md): Sections1-2 and residue-degree-one corollary |
@@ -20362,8 +20640,8 @@ Tracked obligations from the catalogue:
 | ARITH-DEGREE26-AFFINE-CURVE-ARITHMETIC-S12 | claim | proved / partial | At t2 the exact primitive polynomial has separable irreducible factor degrees12 at17,1+11 at47,1+2+9 at71. Every factor product and Rabin power/gcd certificate is replayed. The explicit integral monic a^11*f2(X/a) meets Dedekind hypotheses at all three unit primes. Transitivity, the11cycle and the ninth-power transposition giveS12, which embeds at the good specialization into the generic arithmetic group. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Section2, Frobenius certificates and good specialization |
 | ARITH-DEGREE26-AFFINE-CURVE-MODULAR-DISCRIMINANT-IDENTITY | claim | proved / partial | The full F29 bivariate discriminant equals the retained polynomial of degree3036. Independently,3169 distinct good values in F29^3 match ordinary univariate Euclidean resultant discriminants; the proven coefficient-degree bound is3168, so this proves the entire polynomial identity. The exact gcd extractor has multiplicity-one part ofdegree2124, squarefree and coprime to LC_sF, including factors with multiplicity divisible by29. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Section3, equations4-8 and exact independent interpolation |
 | ARITH-DEGREE26-TRACE-JOINT-43-ROOT-FREE | claim | proved / partial | At p=43 the leading diagonal A_12, B_56, and G=t^2-t-1 have full degree, separable reductions and no roots. The leading constants are units. Hence all affine Q43 points of the degree-26 accessory have s,t in Z43. The exact residue census has 52 affine points, 47 smooth, including (32,1) with gradient (25,4). | [arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md](arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md): Proposition 2 and exact 43^2 affine census |
-| ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS | claim | proved / partial | For k-full n, m unit rationals of height n^(C/k) and one wide unit rational of height n^rho_k with rho_k tending to zero, a fixed signed monomial congruence counts O(F n^((m^2+m)/k+epsilon)) tuples at exact fiber size F. The fullness threshold is independent of the monomial exponents. When the narrow integer roots are pairwise coprime and have degrees comparable to k, amplification gives vanishing normalized cost even when the wider rational factor shares primes with the narrow roots. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): A bounded number of small roots |
-| ARITH-ABC-FOUR-PRIME-COFACTOR-GRAPH | claim | proved / partial | For four prime coordinate roots of size X^O(L), exponents comparable to 1/L, and two low cofactors with value-count exponents fL,gL and numeric height X^o(1), a positive-weight full-modulus lock gives a normalized count at most max(f,g,min(f+g/2,g+f/2)). Paths sharing two coordinates release at most two roots and one low cofactor; other paths are bounded after taking prime-coordinate quotients. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): A four-prime graph count |
+| ARITH-ABC-BOUNDED-ROOTS-WIDE-COFACTOR-MODULUS | claim | stale / partial | For k-full n, m unit rationals of height n^(C/k) and one wide unit rational of height n^rho_k with rho_k tending to zero, a fixed signed monomial congruence counts O(F n^((m^2+m)/k+epsilon)) tuples at exact fiber size F. The fullness threshold is independent of the monomial exponents. When the narrow integer roots are pairwise coprime and have degrees comparable to k, amplification gives vanishing normalized cost even when the wider rational factor shares primes with the narrow roots. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): A bounded number of small roots |
+| ARITH-ABC-FOUR-PRIME-COFACTOR-GRAPH | claim | stale / partial | For four prime coordinate roots of size X^O(L), exponents comparable to 1/L, and two low cofactors with value-count exponents fL,gL and numeric height X^o(1), a positive-weight full-modulus lock gives a normalized count at most max(f,g,min(f+g/2,g+f/2)). Paths sharing two coordinates release at most two roots and one low cofactor; other paths are bounded after taking prime-coordinate quotients. | [arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md](arithmetic/ABC_WIDE_COFACTOR_CONGRUENCES.md): A four-prime graph count |
 | ARITH-UNIFIED-FIBRE-CLASSIFICATION | claim | proved / partial | Over every characteristic-zero field K, entire fibre schemes of some Jacobian-one polynomial A3_K self-map are exactly finite etale K-schemes, including the empty scheme. A nonempty X of rankN can be a full fibre with generic degreeN iff finite etale and N!=2. This classifies existence of fibre schemes; it does not classify maps or prescribe generic monodromy. | [arithmetic/FIXED_MAP_AMBIENT_LOCAL_CLASSIFICATION.md](arithmetic/FIXED_MAP_AMBIENT_LOCAL_CLASSIFICATION.md): Theorem FMA7 |
 | ARITH-PRIME-HALF-HASSE-MINIMUM-ATTAINMENT | claim | proved / partial | Every finite etaleQalgebra split by anA_(2p) extension, p>=7prime, with all local points and noQpoint has rank>=2^(2p-2). Equality forces exactly the fixed-field multiset of the unique optimal subgroup cover. For admissible n=2p=m^2+1, the concentrated-inertia family attains this bound infinitely often, with linearly disjoint splitting fields and a fixedA4 realization. No infinitude of primes of this special form is asserted. | [arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md](arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md): Corollary2 and admissible intersection |
 | ARITH-DISTINCT-ALGEBRA-COUNT-ORDER | claim | proved / partial | The number D(B) of distinct Q-algebra isomorphism classes of Hasse-failing fibres represented by original-line targets of height<=B has order Theta(B^2/log B). The explicit squarefree-family constant is a positive lower asymptotic bound; Cphi is an upper asymptotic bound. No exact leading constant for all classes is asserted. | [arithmetic/FIXED_MAP_DISTINCT_ALGEBRA_COUNT.md](arithmetic/FIXED_MAP_DISTINCT_ALGEBRA_COUNT.md): Sharp-order consequence for all fibre algebras |
@@ -20374,15 +20652,15 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-THREE-ADIC-FORMAL-ANNULUS-OBSTRUCTION | claim | proved / partial | For a point reducing toO with formal depthn>=1, the cubic Newton roots have valuation-4n/3 and the quadratic discriminant has odd valuation1-2n. Thus3 not dividingn implies noQ3 source point. Depths divisible by3 are retained without a solubility claim. | [arithmetic/ELLIPTIC_EXCEPTION_THREE_ADIC_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_THREE_ADIC_SIEVE.md): Lemma ETS4 |
 | ARITH-ELLIPTIC-THREE-ADIC-TORSION-DISC-OBSTRUCTION | claim | proved / partial | Every admissible matching elliptic target from reduction T0=(X,T)=(0,0) onE(F3) is insoluble overQ3. Its parameter lies in27Z3; h(W+1) is Eisenstein with discriminant valuation3, so neither cubic nor matching quadratic has a local point. | [arithmetic/ELLIPTIC_EXCEPTION_THREE_ADIC_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_THREE_ADIC_SIEVE.md): Lemma ETS3 |
 | ARITH-EISENSTEIN-POINTWISE-PAPER-COR-RANGES | claim | proved / partial | For all sufficiently large admissible n the unrestricted count and every fixed positive-length interval of actual first-summand shares inside (0,1) have order nJ(n)/log n. At any fixed interior share the power width n^theta has order n^theta J(n)/log n for 2/3<theta<1. For fixed 0<=a<b and 1/2<theta<1 the same order holds on [a n^theta,b n^theta], including a=0, in either prescribed mixed orientation as well as in the ordinary family. | [../results/eisenstein-pointwise-counts/introduction.tex](../results/eisenstein-pointwise-counts/introduction.tex): cor:ranges |
-| ARITH-ABC-FIXED-MOMENT-RESIDUE-BRANCH | claim | proved / partial | After a residue lock of weight w, select retained indices with fixed positive orders h_i whose reciprocal sum is at most one and h_i alpha_i<=w. Freezing the other coordinates on both repeat copies gives energy exponent 2L−sum alpha_i. The alternative guard w>=2L gives the full diagonal bound. Cauchy–Schwarz combines two released energies, with independent weak branches covering the guard failures. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Fixed-moment residue branches for the unit budget |
-| ARITH-ABC-EXACT-DUAL-BUDGET-REWEIGHTING | claim | proved / partial | At source budget 7/10 the 7,268-leaf tree reweights exactly to 1959/5015 at budget 3/5. At source budget 4/5 the 21,808-leaf tree reweights exactly to 1773/4012 at budget 3/4. Each leaf bound is affine in the radical budget, with slope equal to the multiplier of root row zero. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Exact reweighting at two intermediate budgets |
-| ARITH-ABC-SLICED-PRIMITIVE-RATIO-LOCKS | claim | proved / partial | For lifted powers P,Q, free heights r1,r2, clearance u and t=P r1+Q r2−u, the sliced correction is the positive part of t/2+max(min(r1/Q,r2/P),r1−u,r2−u). The axial terms cover horizontal and vertical lines. Both ordinary and short remainder locks can use the bound without a shortest-vector guard. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Sliced primitive ratio locks with axial lines |
+| ARITH-ABC-FIXED-MOMENT-RESIDUE-BRANCH | claim | stale / partial | After a residue lock of weight w, select retained indices with fixed positive orders h_i whose reciprocal sum is at most one and h_i alpha_i<=w. Freezing the other coordinates on both repeat copies gives energy exponent 2L−sum alpha_i. The alternative guard w>=2L gives the full diagonal bound. Cauchy–Schwarz combines two released energies, with independent weak branches covering the guard failures. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Fixed-moment residue branches for the unit budget |
+| ARITH-ABC-EXACT-DUAL-BUDGET-REWEIGHTING | claim | stale / partial | At source budget 7/10 the 7,268-leaf tree reweights exactly to 1959/5015 at budget 3/5. At source budget 4/5 the 21,808-leaf tree reweights exactly to 1773/4012 at budget 3/4. Each leaf bound is affine in the radical budget, with slope equal to the multiplier of root row zero. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Exact reweighting at two intermediate budgets |
+| ARITH-ABC-SLICED-PRIMITIVE-RATIO-LOCKS | claim | stale / partial | For lifted powers P,Q, free heights r1,r2, clearance u and t=P r1+Q r2−u, the sliced correction is the positive part of t/2+max(min(r1/Q,r2/P),r1−u,r2−u). The axial terms cover horizontal and vertical lines. Both ordinary and short remainder locks can use the bound without a shortest-vector guard. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Sliced primitive ratio locks with axial lines |
 | PC4-SAME-EXPONENT-SAVING-IFF-PROPOSITION | claim | proved / partial | For EVERYFIXEDeta in(0,1], uniformfullKpowerbound IFF uniformnonexceptionalcontact4pencilpairbound, with allnativeactualfilters. Bothdirections are proved as PROPOSITIONS. The full/pencil actualfrequencyestimate remains unproved and no existinggap gets an outgoing/incoming proof. | [arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md](arithmetic/ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md): Theorem25;Section42;equation100 |
 | ARITH-DEGREE26-AFFINE-CURVE-CHARZERO-SIMPLE-BRANCHES | claim | proved / partial | Each root of the squarefree F29 multiplicity-one part lies in a finite residue extension. Simple-root Hensel over the corresponding unramified Q29 extension yields distinct simple algebraic characteristic-zero discriminant roots, preserving unit leading coefficient. At each root discriminant valuation1 forces exactly transposition inertia in the degree12 root cover. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Lemma1 and the subsequent local inertia argument |
 | ARITH-DEGREE26-POSITIVE-DENSITY-DENOMINATOR-RESTRICTION | claim | proved / partial | In the actual joint splitting field of A_12, B_56 and G, an unramified Frobenius class at 43 is fixed-point-free in each root action. Chebotarev gives a set of positive natural density outside finitely many exceptional primes. At every prime of that set the root-free leading data make ALL affine Q_p trace parameters integral. No independence of the fields or explicit density is assumed. | [arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md](arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md): Theorem 3, unit monic scaling and joint Frobenius class |
-| ARITH-ABC-SMALL-BUDGET-THREE-SEVENTHS | claim | proved / partial | The limiting supremum of normalized exceptional-set box exponents D/L as the positive radical budget tends to zero is at most 3/7. The proof splits by the smallest radical share and the short height, using high-root release and recovering primitive ratios. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A small-budget coefficient of \(3/7\) |
-| ARITH-ABC-ONE-GROUP-QUANTITATIVE-MODULUS | claim | proved / partial | For the rational congruence v z^q=K modulo a full modulus, the binomial determinant and the reconstruction of z before v give the normalized count exponent b_Q for any residue divisor Q of Q_n satisfying QD2. The rank fraction alpha is arbitrary in (0,1); the terminal condition is 2 B/(1-alpha)<w. Fixed amplification divides the count coefficient by its order after scaling the two height constants. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A quantitative congruence estimate for one grouped root |
-| ARITH-ABC-UNEQUAL-NARROW-HEIGHTS-WIDE-COFACTOR | claim | proved / partial | In the bounded-root congruence with narrow coordinate heights n^(C_i/k), each C_i>=1, one can allow fixed wider height n^rho for rho<c_m/prod C_i. Original-coordinate projections and a separate degree scale in each coordinate control the product dependence. Sign and coordinate coloring give the amplified bound UW1, and valuation-window rounding gives UW2. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A product bound for the admissible wider height |
+| ARITH-ABC-SMALL-BUDGET-THREE-SEVENTHS | claim | stale / partial | The limiting supremum of normalized exceptional-set box exponents D/L as the positive radical budget tends to zero is at most 3/7. The proof splits by the smallest radical share and the short height, using high-root release and recovering primitive ratios. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A small-budget coefficient of \(3/7\) |
+| ARITH-ABC-ONE-GROUP-QUANTITATIVE-MODULUS | claim | stale / partial | For the rational congruence v z^q=K modulo a full modulus, the binomial determinant and the reconstruction of z before v give the normalized count exponent b_Q for any residue divisor Q of Q_n satisfying QD2. The rank fraction alpha is arbitrary in (0,1); the terminal condition is 2 B/(1-alpha)<w. Fixed amplification divides the count coefficient by its order after scaling the two height constants. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A quantitative congruence estimate for one grouped root |
+| ARITH-ABC-UNEQUAL-NARROW-HEIGHTS-WIDE-COFACTOR | claim | stale / partial | In the bounded-root congruence with narrow coordinate heights n^(C_i/k), each C_i>=1, one can allow fixed wider height n^rho for rho<c_m/prod C_i. Original-coordinate projections and a separate degree scale in each coordinate control the product dependence. Sign and coordinate coloring give the amplified bound UW1, and valuation-window rounding gives UW2. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A product bound for the admissible wider height |
 | ARITH-EVERY-QUADRATIC-RESOLVENT-HASSE-INFINITUDE | claim | proved / partial | Fix any quadraticK. For t distinct split primesp_i=1mod3, m=productp_i and t>=u_K, at least(3^(t-u_K)-1)/2 cubic-field classes have conductor dividingm and Hasse productK timesL, with\|DiscL\|<=\|d_K\|m^2. Hereu_K1 for realK orK=Qsqrt(-3), otherwise0. Lettingt grow proves infinitely many classes for eachK. CAF realizes them with varying degree5 maps; no infinitude on the fixed map or existing elliptic slice follows. | [arithmetic/RANK_FIVE_FIXED_RESOLVENT_RAY_CLASSES.md](arithmetic/RANK_FIVE_FIXED_RESOLVENT_RAY_CLASSES.md): Theorem RRC2 |
 | ARITH-FUNDAMENTAL-CUBIC-HASSE-PRODUCT | claim | proved / partial | If the maximal-order discriminant of a non-Galois cubic numberfield L is fundamental, K times L is Hasse-failing. The example T^3-T-1 has field discriminant-23 and K=Qsqrt(-23). Common Arithmetic Fibers realizes each such algebra as a full degree5 fibre with varying map; no fixed-Phi realization follows. | [arithmetic/RANK_FIVE_DISCRIMINANT_CLASSIFICATION.md](arithmetic/RANK_FIVE_DISCRIMINANT_CLASSIFICATION.md): Example RDF5 and Corollary RDF4 |
 | ARITH-RANK-FIVE-HASSE-DISCRIMINANT-DENSITY | claim | proved / partial | Let rho=(109/117)*product over primesp=2mod3 of (1-1/(p^2+p+1)). By cubic maximal-order FIELD discriminant height, non-Galois cubic fields whose products with quadratic resolvents are Hasse-failing have positive-sign count rho*X/(12*zeta(3))+o(X) and negative-sign count rho*X/(4*zeta(3))+o(X). The same counts hold for all rank5 Hasse algebra isomorphism classes and hence classes realizable by varying degree5 CAF maps. They are not fixed-map target counts. | [arithmetic/RANK_FIVE_DISCRIMINANT_COUNT.md](arithmetic/RANK_FIVE_DISCRIMINANT_COUNT.md): Theorem RDC1 |
@@ -20402,12 +20680,12 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-COMPLETE-THREE-ADIC-CLASSIFICATION | claim | proved / partial | On the admissible local elliptic family the quadratic is always nonsplitQ3. The cubic has a root iff: inO its formal parameter is aQ3cube; inX0never; inX2 v3T>=2; inX1withv3T>=2 exactlyv3T>=3; inX1withv3T1, k=v3z>=4 must be divisible3 andkappa*z/3^k=plus-or-minus1mod9. These conditions include every formal depth. | [arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md](arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md): ETC1 |
 | ARITH-EISENSTEIN-MACROSCOPIC-VALUE-COUNTS | claim | proved / partial | For every fixed interval I in[0,1] of positive length and every nu>0, all sufficiently large admissible pure or prescribed mixed targets have >>_(I,nu) n/(log n)^(log4+nu) distinct ordered value pairs with first actual summand in nI. A compact interior subinterval supplies coordinate mass from EisAngle; the higher-moment/Holder transfer gives the unweighted lower count. This includes thirds balance but does not prove an unweighted angular equidistribution law or a numerical onset. | [arithmetic/EISENSTEIN_POINTWISE_VALUE_COUNTS.md](arithmetic/EISENSTEIN_POINTWISE_VALUE_COUNTS.md): Corollary EisMacroscopicCounts; compact interior subinterval and Holder transfer |
 | ARITH-DEGREE26-AFFINE-CURVE-GEOMETRIC-S12-GENUS-BOUND | claim | proved / partial | The geometric splitting group is normal in arithmeticS12 and contains a transposition, hence isS12. The smooth projective root-curve normalization is geometrically integral ofdegree12 over the slope line. Its2124 distinct simple branch contributions give2g-2>=-24+2124, henceg>=1051. Other ramification may increase genus; no exact genus is asserted. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Theorem2, geometric group and Riemann-Hurwitz bound |
-| ARITH-ABC-ZERO-SHORT-HEIGHT-ELEVEN-TWENTY-SEVENTHS | claim | proved / partial | A small-budget limiting box with zero short height has normalized count exponent d<=11/27. After choosing two positive-weight roots on each tall letter, the real strip counts that pair with its low cofactor. The opposite complete term and the cheaper of two ratio locks give the required inequalities. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The short-height-zero bound \(d\le11/27\) |
-| ARITH-ABC-ONE-GROUP-QUANTITATIVE-REAL-STRIP | claim | proved / partial | For a positive real relative strip of width X^(-tau) in signed rational v z^q, rectangular monomial determinants give normalized cost s when the coefficient height B satisfies B<s(M+1)r/4, s(M+1)r/2<tau, and 4B<tau, with r below the limiting scaled exponent of z. Small real perturbations then give at most divisor-many pairs per exact reference point. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A quantitative real strip for one grouped root |
-| ARITH-ABC-ONE-GROUP-RELATIVE-SHALLOW-DIVISOR | claim | proved / partial | The one-group count needs v_p(Q)<=floor(v_p(n)/k) only on the prime support of its shallow divisor Q. The determinant forcing uses those primes; Hensel and reconstruction use the entire unit congruence modulus n, even at primes of valuation below k. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A determinant using a shallow divisor |
-| ARITH-ABC-HALF-NONATOMIC-OUTSIDE-PAIR-FIBRES | claim | proved / partial | At d=1/3 and Gamma=1/2, after keeping finitely many atom windows on each letter, the outside coordinate vectors have at most X^((1/6+delta+o(1)) L) possibilities per letter. Each fixing of two outside vectors has at most X^((2delta+o(1)) L) primitive completions. The choices on the three letters can be made simultaneously for every fixed delta>0. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): A uniform pair-fibre bound |
-| ARITH-ABC-ONE-THIRD-ENDPOINT-TWO-LOW-DEGREE-LETTERS | claim | proved / partial | In every limiting anatomic abc box at normalized count exponent d=1/3, at least two of the three weak root-mass measures on scaled degrees eL give positive mass to [0,3). If exactly two do, both are wholly nonatomic of mass 1/3 and the other measure is (1/3) delta_3. | [arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md](arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md): Corollary. Low scaled degrees in at least two letters |
-| ARITH-ABC-SINGLE-ROOT-APPROXIMATE-DEGREE-MESH | claim | proved / partial | For any two letters in a balanced limiting one-third profile and any fixed 0<theta<=1/8, simultaneous atom approximation and a refinement of a mesh retain extra nonatomic mass t>=theta/60. The pair freezes at normalized cost at most c_U+c_V-t+t/16. For some fixed mesh spacing b<=1 the single signed root has height X^((3/b+o(1))L), and its wider cofactor has height X^(2 theta b t+o(1)). | [arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md](arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md): One grouped root on the free pair |
+| ARITH-ABC-ZERO-SHORT-HEIGHT-ELEVEN-TWENTY-SEVENTHS | claim | stale / partial | A small-budget limiting box with zero short height has normalized count exponent d<=11/27. After choosing two positive-weight roots on each tall letter, the real strip counts that pair with its low cofactor. The opposite complete term and the cheaper of two ratio locks give the required inequalities. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The short-height-zero bound \(d\le11/27\) |
+| ARITH-ABC-ONE-GROUP-QUANTITATIVE-REAL-STRIP | claim | stale / partial | For a positive real relative strip of width X^(-tau) in signed rational v z^q, rectangular monomial determinants give normalized cost s when the coefficient height B satisfies B<s(M+1)r/4, s(M+1)r/2<tau, and 4B<tau, with r below the limiting scaled exponent of z. Small real perturbations then give at most divisor-many pairs per exact reference point. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A quantitative real strip for one grouped root |
+| ARITH-ABC-ONE-GROUP-RELATIVE-SHALLOW-DIVISOR | claim | stale / partial | The one-group count needs v_p(Q)<=floor(v_p(n)/k) only on the prime support of its shallow divisor Q. The determinant forcing uses those primes; Hensel and reconstruction use the entire unit congruence modulus n, even at primes of valuation below k. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): A determinant using a shallow divisor |
+| ARITH-ABC-HALF-NONATOMIC-OUTSIDE-PAIR-FIBRES | claim | stale / partial | At d=1/3 and Gamma=1/2, after keeping finitely many atom windows on each letter, the outside coordinate vectors have at most X^((1/6+delta+o(1)) L) possibilities per letter. Each fixing of two outside vectors has at most X^((2delta+o(1)) L) primitive completions. The choices on the three letters can be made simultaneously for every fixed delta>0. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): A uniform pair-fibre bound |
+| ARITH-ABC-ONE-THIRD-ENDPOINT-TWO-LOW-DEGREE-LETTERS | claim | stale / partial | In every limiting anatomic abc box at normalized count exponent d=1/3, at least two of the three weak root-mass measures on scaled degrees eL give positive mass to [0,3). If exactly two do, both are wholly nonatomic of mass 1/3 and the other measure is (1/3) delta_3. | [arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md](arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md): Corollary. Low scaled degrees in at least two letters |
+| ARITH-ABC-SINGLE-ROOT-APPROXIMATE-DEGREE-MESH | claim | stale / partial | For any two letters in a balanced limiting one-third profile and any fixed 0<theta<=1/8, simultaneous atom approximation and a refinement of a mesh retain extra nonatomic mass t>=theta/60. The pair freezes at normalized cost at most c_U+c_V-t+t/16. For some fixed mesh spacing b<=1 the single signed root has height X^((3/b+o(1))L), and its wider cofactor has height X^(2 theta b t+o(1)). | [arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md](arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md): One grouped root on the free pair |
 | ARITH-FUNDAMENTAL-CUBIC-DISCRIMINANT-COUNT | claim | proved / partial | Non-Galois cubic fields of fundamental field discriminant, equivalently f=1 and no totally ramified finite prime, give Hasse products. Their positive/negative signature counts are X/(12*zeta(2))+o(X) and X/(4*zeta(2))+o(X). This is a subfamily of the rho-density all-Hasse class count in the same cubic field discriminant height. | [arithmetic/RANK_FIVE_DISCRIMINANT_COUNT.md](arithmetic/RANK_FIVE_DISCRIMINANT_COUNT.md): Corollary RDC3 |
 | ARITH-ELLIPTIC-DISTINCT-ALGEBRA-INFINITUDE | claim | proved / partial | In each of the four quadratic classes, the cubic fields and complete fibre algebras realized on this elliptic slice represent infinitely many Q-isomorphism classes. For each fixed cubic numberfield L, Faltings makes C(L) finite, so only finitely many targets yield L. No uniform multiplicity or distinct-field counting asymptotic follows. | [arithmetic/ELLIPTIC_EXCEPTION_ARITHMETIC.md](arithmetic/ELLIPTIC_EXCEPTION_ARITHMETIC.md): Corollary3.3 |
 | ARITH-ELLIPTIC-LOGARITHMIC-FORMAL-DEPTH | claim | proved / partial | On the fixed rank2 curve, choose any integral free basis only for the proof. A nontorsion pointmP1+nP2+tau in exact formal depthk at a fixedp satisfies k<=C_(E,p)*logmax(3,abs(m),abs(n)). Fixed deep multiples verify the HKT domain; the rational coefficient beta=-m/n and the factorabs(n)p are both controlled. Consequently a reduced x-coordinate denominator has fixed-prime valuationO_(E,p)(1+loglogB) at target height<=B. No analogous bound at a nonrational branch center is asserted. | [arithmetic/ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md](arithmetic/ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md): ESQ1 |
@@ -20430,34 +20708,34 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-FIXED-RAMIFICATION-FINITENESS | claim | proved / partial | For each fixed finite setS of rational primes, only finitely many full field targets on the existing elliptic slice have the support of their maximal-order conductor f contained inS. The tame conductor formula then confines the cubeclass of128x-25865 toS union2,3,5,42649, and fixed-cubeclass genus4 finiteness applies. Any infinite Hasse family must introduce infinitely many conductor primes. | [arithmetic/ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md](arithmetic/ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md): Theorem ELV4 and conductor consequence |
 | ARITH-ELLIPTIC-COMPLETE-Q3-FINITE-UPPER | claim | proved / partial | For every fixedJ>=1, A_E(B)<=(55/156+45/(26*27^J))*C_E logB+O_E,J(sqrtlogB). The first coefficient is5/12. This uses the proved rational local closure and complete residue tests, without a uniform error inJ. | [arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md](arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md): ETC3 |
 | ARITH-ELLIPTIC-EXACT-Q3-LOCAL-COUNT | claim | proved / partial | The number of admissible matching targets soluble overQ3 is(55/156)*C_E logB+o(logB), unchanged up toO(1) by requiring both factors to be fields. This uses the proven rational closure. The ambient fullE(Q3) Haar proportion is instead19/156; it is not the rational point distribution. No other local place is imposed. | [arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md](arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md): ETC5 |
-| ARITH-ABC-BUDGET-965-RETARGETED-REWEIGHTING | claim | proved / partial | Reweighting the exact 193/200 tree gives an exact maximum of 133749764986241/250000000750000 at lambda=482503/500000. This decreases the available count bound below the unit tree reweighted at the same budget. The same upper exponent applies to every smaller budget by inclusion. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(193/200\) certificate |
-| ARITH-ABC-BUDGET-970-RETARGETED-REWEIGHTING | claim | proved / partial | Reweighting the exact 97/100 tree gives exact maxima 38861/72800 at radical budget 387/400 and 2606510113/4872000000 at 970691/1000000. The final anchor improves on the sparse strict unit tree reweighted at the same budget. Each upper exponent applies up to its respective anchor by inclusion. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(97/100\) certificate |
-| ARITH-ABC-BUDGET-975-RETARGETED-REWEIGHTING | claim | proved / partial | Reweighting the exact 39/40 tree gives exact maxima 106950853/200000400 at budget 389/400 and 835936493193/1562500009375 at 60941/62500. The second improves the sparse strict unit tree reweighted at the same budget. Both bounds also apply to their respective smaller budgets. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(39/40\) certificate |
-| ARITH-ABC-BUDGET-9775-RETARGETED-REWEIGHTING | claim | proved / partial | Reweighting the exact 391/400 tree gives exact maxima 7132667863/13333337200 at budget 39/40 and 53499982624411/100000000300000 at 48877/50000. The last improves on the sparse strict unit tree at the same budget. Each exponent also applies at the respective smaller budgets. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(391/400\) certificate |
-| ARITH-ABC-BUDGET-980-RETARGETED-REWEIGHTING | claim | proved / partial | Reweighting the exact 49/50 tree gives exact maxima 855199842919/1600000001600 at 391/400, 2137999607311/4000000004000 at 979/1000, and 534529057150099/1000000005000000 at 980011/1000000. The final anchor improves the sparse strict unit tree reweighted at that budget. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(49/50\) certificate |
-| ARITH-ABC-MIDRANGE-RETARGETED-REWEIGHTING | claim | proved / partial | Reweighting the checked 47/50 certificate gives exact maxima 263837/495000 at 471/500 and 1411547/2640000 at 9429/10000. Piecewise linear interpolation of these two points and the 47/50 bound upper bounds the convex maximum of the affine leaf bounds over the whole interval. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting between and beyond the new budgets |
-| ARITH-ABC-ROOT-SPACING-MIXED-POWER-REPEAT-APPLICATION | claim | proved / partial | Under the nonaxial guard in the mixed-power repeat estimate, the nonorigin compressed line contribution is at most t/2+t/(2PQ), while the original repeat origin estimate applies. The exact example with the same modulus and groups now yields 317/600 instead of 641/1200. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Applying the root spacing to mixed-power repeats |
-| ARITH-ABC-BUDGET-9825-RETARGETED-REWEIGHTING | claim | proved / partial | The exact reweighted maxima are 1069/2000 at 544721207/554858000 and 171793213/321280000 at 196501/200000. At the latter budget the sparse strict unit tree gives the larger exponent 214000079627121/400000184800000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(393/400\) certificate |
-| ARITH-ABC-BUDGET-983-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 983003/1000000, the exact reweighted upper exponent is 5802594141/10847000000. The sparse strict unit tree reweights to the larger 1070000398444863/2000000924000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(983/1000\) certificate |
-| ARITH-ABC-BUDGET-984-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 12300001/12500000, the exact reweighted upper exponent is 835921978968881/1562500009375000. The sparse strict unit tree reweights to the larger 13375004988300621/25000011550000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(123/125\) certificate |
-| ARITH-ABC-BUDGET-985-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 985001/1000000, the exact reweighted upper exponent is 534991037592609/1000000003000000. The sparse strict unit tree reweights to the larger 1070000399685621/2000000924000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(197/200\) certificate |
-| ARITH-ABC-BUDGET-986-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 986001/1000000, the exact reweighted upper exponent is 267495625400507/500000002000000. The sparse strict unit tree reweights to the larger 1070000400306621/2000000924000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(493/500\) certificate |
-| ARITH-ABC-BUDGET-987-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 4935001/5000000, the exact reweighted upper exponent is 2431773951451/4545455000000. The sparse strict unit tree reweights to the larger 5350002004635621/10000004620000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(987/1000\) certificate |
-| ARITH-ABC-BUDGET-988-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 9880003/10000000, the exact reweighted upper exponent is 53499028958498837/100000000500000000. The sparse strict unit tree reweights to the larger 10700004015481863/20000009240000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(247/250\) certificate |
-| ARITH-ABC-BUDGET-989-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 4945001/5000000, the exact reweighted upper exponent is 441830515859/825857500000. The sparse strict unit tree reweights to the larger 5350002010845621/10000004620000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(989/1000\) certificate |
-| ARITH-ABC-BUDGET-990-RETARGETED-REWEIGHTING | claim | proved / partial | At radical budget 9900001/10000000, the exact reweighted upper exponent is 213996134798720789/400000197200000000. The sparse strict unit tree reweights to the larger 10700004027900621/20000009240000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(99/100\) certificate |
+| ARITH-ABC-BUDGET-965-RETARGETED-REWEIGHTING | claim | stale / partial | Reweighting the exact 193/200 tree gives an exact maximum of 133749764986241/250000000750000 at lambda=482503/500000. This decreases the available count bound below the unit tree reweighted at the same budget. The same upper exponent applies to every smaller budget by inclusion. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(193/200\) certificate |
+| ARITH-ABC-BUDGET-970-RETARGETED-REWEIGHTING | claim | stale / partial | Reweighting the exact 97/100 tree gives exact maxima 38861/72800 at radical budget 387/400 and 2606510113/4872000000 at 970691/1000000. The final anchor improves on the sparse strict unit tree reweighted at the same budget. Each upper exponent applies up to its respective anchor by inclusion. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(97/100\) certificate |
+| ARITH-ABC-BUDGET-975-RETARGETED-REWEIGHTING | claim | stale / partial | Reweighting the exact 39/40 tree gives exact maxima 106950853/200000400 at budget 389/400 and 835936493193/1562500009375 at 60941/62500. The second improves the sparse strict unit tree reweighted at the same budget. Both bounds also apply to their respective smaller budgets. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(39/40\) certificate |
+| ARITH-ABC-BUDGET-9775-RETARGETED-REWEIGHTING | claim | stale / partial | Reweighting the exact 391/400 tree gives exact maxima 7132667863/13333337200 at budget 39/40 and 53499982624411/100000000300000 at 48877/50000. The last improves on the sparse strict unit tree at the same budget. Each exponent also applies at the respective smaller budgets. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(391/400\) certificate |
+| ARITH-ABC-BUDGET-980-RETARGETED-REWEIGHTING | claim | stale / partial | Reweighting the exact 49/50 tree gives exact maxima 855199842919/1600000001600 at 391/400, 2137999607311/4000000004000 at 979/1000, and 534529057150099/1000000005000000 at 980011/1000000. The final anchor improves the sparse strict unit tree reweighted at that budget. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(49/50\) certificate |
+| ARITH-ABC-MIDRANGE-RETARGETED-REWEIGHTING | claim | stale / partial | Reweighting the checked 47/50 certificate gives exact maxima 263837/495000 at 471/500 and 1411547/2640000 at 9429/10000. Piecewise linear interpolation of these two points and the 47/50 bound upper bounds the convex maximum of the affine leaf bounds over the whole interval. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting between and beyond the new budgets |
+| ARITH-ABC-ROOT-SPACING-MIXED-POWER-REPEAT-APPLICATION | claim | stale / partial | Under the nonaxial guard in the mixed-power repeat estimate, the nonorigin compressed line contribution is at most t/2+t/(2PQ), while the original repeat origin estimate applies. The exact example with the same modulus and groups now yields 317/600 instead of 641/1200. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): Applying the root spacing to mixed-power repeats |
+| ARITH-ABC-BUDGET-9825-RETARGETED-REWEIGHTING | claim | stale / partial | The exact reweighted maxima are 1069/2000 at 544721207/554858000 and 171793213/321280000 at 196501/200000. At the latter budget the sparse strict unit tree gives the larger exponent 214000079627121/400000184800000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(393/400\) certificate |
+| ARITH-ABC-BUDGET-983-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 983003/1000000, the exact reweighted upper exponent is 5802594141/10847000000. The sparse strict unit tree reweights to the larger 1070000398444863/2000000924000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(983/1000\) certificate |
+| ARITH-ABC-BUDGET-984-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 12300001/12500000, the exact reweighted upper exponent is 835921978968881/1562500009375000. The sparse strict unit tree reweights to the larger 13375004988300621/25000011550000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(123/125\) certificate |
+| ARITH-ABC-BUDGET-985-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 985001/1000000, the exact reweighted upper exponent is 534991037592609/1000000003000000. The sparse strict unit tree reweights to the larger 1070000399685621/2000000924000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(197/200\) certificate |
+| ARITH-ABC-BUDGET-986-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 986001/1000000, the exact reweighted upper exponent is 267495625400507/500000002000000. The sparse strict unit tree reweights to the larger 1070000400306621/2000000924000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(493/500\) certificate |
+| ARITH-ABC-BUDGET-987-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 4935001/5000000, the exact reweighted upper exponent is 2431773951451/4545455000000. The sparse strict unit tree reweights to the larger 5350002004635621/10000004620000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(987/1000\) certificate |
+| ARITH-ABC-BUDGET-988-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 9880003/10000000, the exact reweighted upper exponent is 53499028958498837/100000000500000000. The sparse strict unit tree reweights to the larger 10700004015481863/20000009240000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(247/250\) certificate |
+| ARITH-ABC-BUDGET-989-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 4945001/5000000, the exact reweighted upper exponent is 441830515859/825857500000. The sparse strict unit tree reweights to the larger 5350002010845621/10000004620000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(989/1000\) certificate |
+| ARITH-ABC-BUDGET-990-RETARGETED-REWEIGHTING | claim | stale / partial | At radical budget 9900001/10000000, the exact reweighted upper exponent is 213996134798720789/400000197200000000. The sparse strict unit tree reweights to the larger 10700004027900621/20000009240000000. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Reweighting the \(99/100\) certificate |
 | ARITH-DEGREE26-AFFINE-CURVE-FIXED-NUMBERFIELD-FINITENESS | claim | proved / partial | Faltings applies to the fixed smooth projective geometrically integral genus>=1051 normalization. For each fixed numberfieldK, itsKpoints and the affine F(K)=0 are finite, since nonsingular affine points lift and there are finitely many singular affine points. No effective point list, uniform bound or rational nonemptiness is inferred. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Theorem2, fixed-number-field finiteness |
 | ARITH-DEGREE26-AFFINE-CURVE-NO-RATIONAL-PARAMETRIZATION | claim | proved / partial | A nonconstant mapP1 to the smooth projective curve would violate Riemann-Hurwitz because genus>=1051. Rational canonical reconstruction therefore excludes nonconstant rationally parametrized families of the normalized affine-trace models; this does not exclude twists or coordinate rescalings of unnormalized covers. | [arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md](arithmetic/Q26_HIGH_GENUS_AFFINE_TRACE_CURVE.md): Theorem2 and Corollary3, no rational parametrization |
 | ARITH-DEGREE26-AFFINE-CURVE-Q5-TWO-TRANSLATED-BRANCHES | claim | proved / partial | The integer polynomial H(X,V)=5^(-40)F(1056+1200X,238+5^41 V) reduces modulo 5 to 3X+4X^2 independently of V. For every V in Z5, its roots 0,3 mod 5 give unique simple lifts and two smooth branches. Varying the slope and removing the finite bad complement gives infinitely many good points in both families. | [arithmetic/Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md](arithmetic/Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md): Theorem 1 and equations (1)–(4) |
 | ARITH-DEGREE26-AFFINE-CURVE-REAL-BRANCHES | claim | proved / partial | The degree-12 polynomial A(x)=G(x,0) is squarefree and has exactly two real roots by its exact Sturm sequence. Each gives a smooth implicit branch. The good accessory open therefore has infinitely many real points. The assertion concerns real coefficients. | [arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md](arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md): Proposition 3 and the implicit branches at the two real roots |
 | ARITH-DEGREE26-AFFINE-CURVE-SIX-SIMPLE-AFFINE-RESIDUES | claim | proved / partial | The exact affine residues of the frozen primitive accessory modulo 7, 11, 13, 17, 19 and 23 have at least one unit partial derivative. Each yields infinitely many good local models by varying the free variable and omitting the finite bad complement. The known residue at 29 has unit partial derivatives (14,24), so it yields a good family by the same argument. | [arithmetic/Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md](arithmetic/Q26_LOCAL_SOLUBILITY_THROUGH_PRIME_TWENTY_NINE.md): Proposition 2, its affine-residue table and the following consistency check at 29 |
 | ARITH-DEGREE26-AFFINE-CURVE-TORIC-HENSEL-CRITERION | claim | proved / partial | For the degree-26 accessory G(x,v), if p^m G(p^a X,p^b V) is p-integral and reduces to a polynomial in X alone with a simple nonzero residue root r, every V in Z_p has a unique smooth lift X congruent to r. At V nonzero this gives a point of F with t=p^(-b)/V and s=p^(a-b)X/V. Infinitely many lifts lie in every nonempty geometric good open of this integral curve. | [arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md](arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md): Lemma 1, uniform toric Hensel criterion |
-| ARITH-ABC-REAL-UNEQUAL-ROOT-HEIGHTS-STRIP | claim | proved / partial | For fixed m,s,tau,C_i>0, P=prod max(1,C_i/s), and sufficiently small L, m rational roots of height X^(C_i L) and a wider factor of height X^E with E<c_m tau/P have normalized real strip cost (m^2+m)s at relative error X^(-tau), times the exact-fiber bound. The estimate is uniform in the target and the threshold in L is independent of the exponents. | [arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md](arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md): A real strip with unequal root heights |
-| ARITH-ABC-MIXED-BAND-ONE-GROUP-PARAMETERS | claim | proved / partial | For one grouped power and one wider rational cofactor, optimizing the Taylor scale in (QD2) gives (MB1) for full modulus weight w and any admissible shallow record b. If 2h>b, success requires E<bw/(32(2h-b)). The criterion permits several valuation bands in the full product and the shallow record. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Combining two valuation bands in a full modulus |
-| ARITH-ABC-TWO-LETTER-ROBUST-LOW-DEGREE-MASS | claim | proved / partial | There is a fixed tau>0 and a fixed normalized gap from 1/3 for all small-budget boxes in which two letters have scaled-degree root mass at most tau below 3-tau. If no uniform thresholds worked a diagonal limit would contradict the two-low-degree-letter obstruction. | [arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md](arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md): Corollary. A small-budget saving with two full letters |
-| GAP-ARITH-POWERFUL-FIXED-OFFSET-COUNT-AT-DOUBLE-SAVING | gap | proved / partial | For every fixed u>=v>=0 and sufficiently large r, primitive positive triples of orders (r+u,r+v,r) have count O_(u,v,r,epsilon)(X^(1/(r+u)+1/(r+v)-2/r^2+epsilon)). This implies the count with an allowed O_(u,v)(r^(-5/2)) error. | [arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md](arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md): Corollary. The earlier fixed-offset count threshold |
-| ARITH-ABC-POWERFUL-QUOTIENT-EXACT-COMMON-DIVISOR-PENALTY | claim | proved / partial | For each deficient prime of a primitive quotient, its least positive compulsory gcd valuation is K=max_i(s_i-v_i). The product Z of these prime powers is the minimal gcd repair, and rad(prod u_i)<=Z^(1/M) prod u_i^(1/s_i). The total log radical of valuations below (1-theta)s_i on any letter is at most log Z/(theta M). The gcd's supported part has reciprocal-power sum O_(sigma,epsilon)(Z^(-sigma)W^epsilon). | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): An arbitrary-order upper bound with common divisors |
-| ARITH-ABC-POSITIVE-SCALE-ROOT-MASS-AT-ONE-THIRD | claim | proved / partial | At normalized exponent d=1/3 no letter has weak degree measure supported at zero. There are absolute positive r_0<R_0 and gamma with at least gamma of each letter's root mass in [r_0,R_0] in every endpoint profile. | [arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md](arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md): Positive scales in every endpoint letter |
+| ARITH-ABC-REAL-UNEQUAL-ROOT-HEIGHTS-STRIP | claim | stale / partial | For fixed m,s,tau,C_i>0, P=prod max(1,C_i/s), and sufficiently small L, m rational roots of height X^(C_i L) and a wider factor of height X^E with E<c_m tau/P have normalized real strip cost (m^2+m)s at relative error X^(-tau), times the exact-fiber bound. The estimate is uniform in the target and the threshold in L is independent of the exponents. | [arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md](arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md): A real strip with unequal root heights |
+| ARITH-ABC-MIXED-BAND-ONE-GROUP-PARAMETERS | claim | stale / partial | For one grouped power and one wider rational cofactor, optimizing the Taylor scale in (QD2) gives (MB1) for full modulus weight w and any admissible shallow record b. If 2h>b, success requires E<bw/(32(2h-b)). The criterion permits several valuation bands in the full product and the shallow record. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Combining two valuation bands in a full modulus |
+| ARITH-ABC-TWO-LETTER-ROBUST-LOW-DEGREE-MASS | claim | stale / partial | There is a fixed tau>0 and a fixed normalized gap from 1/3 for all small-budget boxes in which two letters have scaled-degree root mass at most tau below 3-tau. If no uniform thresholds worked a diagonal limit would contradict the two-low-degree-letter obstruction. | [arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md](arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md): Corollary. A small-budget saving with two full letters |
+| GAP-ARITH-POWERFUL-FIXED-OFFSET-COUNT-AT-DOUBLE-SAVING | gap | stale / partial | For every fixed u>=v>=0 and sufficiently large r, primitive positive triples of orders (r+u,r+v,r) have count O_(u,v,r,epsilon)(X^(1/(r+u)+1/(r+v)-2/r^2+epsilon)). This implies the count with an allowed O_(u,v)(r^(-5/2)) error. | [arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md](arithmetic/POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md): Corollary. The earlier fixed-offset count threshold |
+| ARITH-ABC-POWERFUL-QUOTIENT-EXACT-COMMON-DIVISOR-PENALTY | claim | stale / partial | For each deficient prime of a primitive quotient, its least positive compulsory gcd valuation is K=max_i(s_i-v_i). The product Z of these prime powers is the minimal gcd repair, and rad(prod u_i)<=Z^(1/M) prod u_i^(1/s_i). The total log radical of valuations below (1-theta)s_i on any letter is at most log Z/(theta M). The gcd's supported part has reciprocal-power sum O_(sigma,epsilon)(Z^(-sigma)W^epsilon). | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): An arbitrary-order upper bound with common divisors |
+| ARITH-ABC-POSITIVE-SCALE-ROOT-MASS-AT-ONE-THIRD | claim | stale / partial | At normalized exponent d=1/3 no letter has weak degree measure supported at zero. There are absolute positive r_0<R_0 and gamma with at least gamma of each letter's root mass in [r_0,R_0] in every endpoint profile. | [arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md](arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md): Positive scales in every endpoint letter |
 | ARITH-ELLIPTIC-FINITE-PLACE-LOCAL-COUNT | claim | proved / partial | For each finite setS of places, the existing rank2 elliptic slice has a symmetric union of one or two finite-index Mordell-Weil cosets, all with quadratic field Qsqrt(-81275190), whose admissible targets are full2+3 field fibres without rational points and locally soluble atS. Their target count is c_S logB+O_S(sqrt(logB)), c_S=(r_S/I_S)C_E>0, with infinitely many distinct cubic-field/algebra classes. The constant may shrink withS; no all-places infinitude follows. | [arithmetic/ELLIPTIC_EXCEPTION_LOCAL_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_LOCAL_SIEVE.md): Theorem ELS1 |
 | ARITH-ELLIPTIC-EXPONENTIAL-CONGRUENCE-MINIMUM | claim | proved / partial | If a finite-index rational subgroup is in E_(n_p)(p) at a fixed finite nonempty setT, its projected free lattice has shortest canonical-norm vector>=c*exp(eta*max n_p). Every affine subgroup coset has target-height point count2*C_E/[Gamma:Lambda]*logB+O_E(sqrtlogB/lambda1+1), uniformly inindex,skew andcoset. The written reduced-basis chord-count proof includes torsion and the bounded actual-height comparison. | [arithmetic/ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md](arithmetic/ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md): ESQ2 |
 | ARITH-ELLIPTIC-THREE-ADIC-LIMSUP-UPPER | claim | proved / partial | On the existing elliptic slice, limsup asB grows of A_E(B)/(C_E logB)<=29/52. FirstB tends to infinity for each fixed finite levelJ, thenJ tends to infinity. There is no claimed O(sqrt(logB)) error with this limiting coefficient, density-zero result or Hasse infinitude. | [arithmetic/ELLIPTIC_EXCEPTION_THREE_ADIC_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_THREE_ADIC_SIEVE.md): Corollary ETS2 |
@@ -20473,10 +20751,10 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-COMPLETE-Q3-LIMSUP | claim | proved / partial | On this fixed slice limsup A_E(B)/(C_E logB)<=55/156 by the complete elementary3-adic sieve. This is a restricted upper-bound claim; ESQ3 separately supplies a square-root logarithmic remainder for the exact three-local count. Neither result proves Hasse infinitude. | [arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md](arithmetic/ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md): ETC4 |
 | ARITH-ELLIPTIC-EXACT-Q2-Q3-LOCAL-COUNT | claim | proved / partial | Targets on this slice soluble at both2and3 have count(289/1092)*C_E logB+o(logB). Hasse targets consequently have limsup normalized count<=289/1092, and a fixed finite quotient gives upper coefficient7/24 withO_E(sqrtlogB). Other places remain untested by this count. | [arithmetic/ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md](arithmetic/ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md): ETF5 |
 | ARITH-DEGREE26-AFFINE-CURVE-Q2-Q3-BRANCHES | claim | proved / partial | The charts G(X,2V) and 3^18 G(X/9,9V) are integral and reduce respectively modulo 2 and 3 to X^11(X+1), with simple roots 1 and 2. Every unit V gives (v_p(t),v_p(s))=(-1,-1) for p=2 and (-2,-4) for p=3. The good open of the normalized accessory has infinitely many Q2 and Q3 points; excluding integral affine points alone cannot exclude these branches. | [arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md](arithmetic/Q26_SMALL_PRIME_LOCAL_BRANCHES.md): Theorem 2 and the exact unit-parameter valuation table |
-| ARITH-ABC-CHEAP-MODULUS-OR-EFFECTIVE-SINGLETON | claim | proved / partial | After releasing specified high roots on the opposite letters, let sigma=1−d−H be the remaining mass allowed by bounded-root release. A positive-height letter supplies a powerful modulus of cost at most sigma/2 with arbitrarily small slack, or one positive-weight root carries all its limiting height. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A modulus of half the available mass |
-| ARITH-ABC-POLYNOMIAL-HEIGHT-OUTSIDE-DIVISOR-ALLOCATION | claim | proved / complete | At fixed root-coordinate truncation, an outside letter box of normalized cap c+delta has at most n^(c+delta-xi+o(1)) labels whose outside radical overlaps a fixed nonzero integer of height at most X^C in normalized root mass at least xi. C is fixed and the bound is uniform. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Counting shared prime divisors, used in (AC1) for fixed polynomial heights |
-| ARITH-ABC-POWERFUL-QUOTIENT-UPPER-BOUND-ALL-ORDERS | claim | proved / partial | Fix s_i all sufficiently large and M=max s_i, lambda0=sum 1/s_i. Primitive quotient counts in bins W of size Y and Z of size H are O_(orders,epsilon)(Y^((1/3-delta)lambda0+epsilon)H^(1/M)) for an absolute delta>0. Simultaneous saturation forces the orders to become comparable and then forces three point masses. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): An arbitrary-order upper bound with common divisors |
-| ARITH-ABC-POWERFUL-QUOTIENT-WEIGHTED-HEIGHT-BOUND | claim | proved / partial | For sufficiently large M=max s_i with every order at least two, suppose the primitive heights h_i satisfy sum M h_i/s_i<=3+tau. For absolute tau,kappa>0 the quotient count with W of size Y and Z of size H is O_(orders,epsilon)(Y^((1-kappa)/M+epsilon)H^(1/M)). Saturation forces each limiting first moment to equal s_i/M and forces point masses. The orders can have arbitrary ratios. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): A quotient bound in the weighted height sector |
+| ARITH-ABC-CHEAP-MODULUS-OR-EFFECTIVE-SINGLETON | claim | stale / partial | After releasing specified high roots on the opposite letters, let sigma=1−d−H be the remaining mass allowed by bounded-root release. A positive-height letter supplies a powerful modulus of cost at most sigma/2 with arbitrarily small slack, or one positive-weight root carries all its limiting height. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A modulus of half the available mass |
+| ARITH-ABC-POLYNOMIAL-HEIGHT-OUTSIDE-DIVISOR-ALLOCATION | claim | stale / complete | At fixed root-coordinate truncation, an outside letter box of normalized cap c+delta has at most n^(c+delta-xi+o(1)) labels whose outside radical overlaps a fixed nonzero integer of height at most X^C in normalized root mass at least xi. C is fixed and the bound is uniform. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Counting shared prime divisors, used in (AC1) for fixed polynomial heights |
+| ARITH-ABC-POWERFUL-QUOTIENT-UPPER-BOUND-ALL-ORDERS | claim | stale / partial | Fix s_i all sufficiently large and M=max s_i, lambda0=sum 1/s_i. Primitive quotient counts in bins W of size Y and Z of size H are O_(orders,epsilon)(Y^((1/3-delta)lambda0+epsilon)H^(1/M)) for an absolute delta>0. Simultaneous saturation forces the orders to become comparable and then forces three point masses. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): An arbitrary-order upper bound with common divisors |
+| ARITH-ABC-POWERFUL-QUOTIENT-WEIGHTED-HEIGHT-BOUND | claim | stale / partial | For sufficiently large M=max s_i with every order at least two, suppose the primitive heights h_i satisfy sum M h_i/s_i<=3+tau. For absolute tau,kappa>0 the quotient count with W of size Y and Z of size H is O_(orders,epsilon)(Y^((1-kappa)/M+epsilon)H^(1/M)). Saturation forces each limiting first moment to equal s_i/M and forces point masses. The orders can have arbitrary ratios. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): A quotient bound in the weighted height sector |
 | ELLIPTIC-FINITE-LOCAL-TARGET-DENSITY | claim | proved / partial | For every fixed finite prime set S, admissible targets on the existing elliptic slice with quadratic field K0=Qsqrt(-81275190), no Q-source point and a Qp-source point for each p in S have count Theta_S(log B) in actual projective target height. An even-M coset P0+[M]E(Q) supplies a full field-fibre subfamily with coefficient r_M*C_E/(2M^2)>0 and O_S(sqrt(log B)) error, r_M in1,2. No constant uniform as S grows or all-places infinitude is claimed. | [arithmetic/ELLIPTIC_EXCEPTION_LOCAL_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_LOCAL_SIEVE.md): Corollary ELS1a, equations2.4-2.5 |
 | ARITH-ELLIPTIC-DENSITY-ONE-POLYNOMIAL-LOCAL-LOSS | claim | proved / partial | For every fixed A>0, the primes p<=X with \|R_p\|<sqrt(p)/(logp)^A number O_(E,A)(X/(logX)^(2A+1)). Outside this density-zero exception set, uniformly over EVERY finite S and class a, 0<=mu_(S,a)-mu_(S unionp,a)<=3(logp)^A/sqrt(p) for large goodp. The same gives mu_({p},a)=1/4+O((logp)^A/sqrt(p)) there. In particular the power p^(1/2-epsilon) image threshold has O_(E,epsilon)(X^(1-2epsilon)/logX) exceptions. These concern absolute Haar coefficients, not relative shrinking-prefix loss, conditional covariance estimates, uniform target-count errors or an all-primes tail. | [arithmetic/ELLIPTIC_EXCEPTION_SMALL_REDUCTION_IMAGES.md](arithmetic/ELLIPTIC_EXCEPTION_SMALL_REDUCTION_IMAGES.md): ESR2 |
 | ARITH-ELLIPTIC-FINITE-LOCAL-DICHOTOMY | claim | proved / partial | For fixed finiteS and classa, mu_(S,a)=0 iff no admissible full field target of that class passesS, equivalently N_(S,a) is identicallyzero. Every nonempty such finite-local set has positive rational leading coefficient and logarithmic growth. This uses openness of the actual finite-local subset and does not extend to the all-primes intersection. | [arithmetic/ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md](arithmetic/ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md): EQA2a |
@@ -20493,10 +20771,10 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-EXACT-Q2-Q3-Q17-LOCAL-COUNT | claim | proved / partial | The direct joint local argument gives count(5321/23946) C_E logB+o(logB) for targets soluble at2,3,17, hence the same Hasse limsup upper bound. The separately proved ESQ3--ESQ4 sharpen this error toO_E(sqrtlogB) using HKT. The leading local coefficient and the sharper-error theorem retain distinct proof routes; no all-places infinitude is asserted. | [arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md): J2173 |
 | ARITH-ELLIPTIC-JOINT-17-FINITE-UPPER | claim | proved / partial | On this fixed elliptic slice A_E(B)<=(1687/6936)*C_E logB+O_E(sqrtlogB). The coefficient is strictly below1/4; it comes from fixed finite quotients at2,3,17 with their exact correlations. No all-places density or Hasse infinitude follows. | [arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md): J2172 |
 | ARITH-DEGREE26-TRACE-NORMALIZATION-BOUNDARY-EXCLUDED | claim | proved / partial | Neither leading polynomial A nor L has a Q43 root, by its integral coefficients, unit leading coefficient and root-free reduction. At a Q43-rational point of the smooth normalization, the localDVR has residueQ43 and every nonzero constant is a unit. The general valuation criterion forces both coordinates to have nonnegative order, so no Q43 or rational point lies at a pole of s ORt. Poles of s/t at affine t0 are outside this boundary claim; rational affine existence remains open. | [arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md](arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md): Corollary 4, p-adic disk near a pole |
-| ARITH-ABC-FULL-TERM-AND-SAME-LETTER-RATIO-STRIPS | claim | proved / partial | At d=1/3 and Gamma=1/2, for fixed 0<tau<1 a relative X^(-tau) strip contains at most X^((1/6-k_0 tau+o(1))L) distinct complete terms of one letter and at most X^((1/3-k_0 tau+o(1))L) distinct reduced ratios of two copies of that letter, uniformly in its target. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Counting distinct terms and ratios in strips |
-| ARITH-POWERFUL-COMPARABLE-ORDERS-MAXIMUM-EXPONENT | claim | proved / partial | For sufficiently large fixed prescribed comparable orders, the count is asymptotic to C_(s,0) X^(1/M), where M=max(s_A,s_B,s_C) and C_(s,0)>0. Equal fixed orders therefore satisfy Theta(X^(1/s)) with no exponent loss. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): Asymptotic expansion for comparable orders |
-| ARITH-ABC-RESIDUAL-UPPER-QUANTILE-EXPLICIT-DIFFUSE-SECTORS | claim | proved / partial | Two uniform tall measures on [2,4] force short numerical height at least 1/6 at the balanced endpoint. Two explicit finite-box sectors have normalized count exponents at most 8/25 and 13/40 respectively, including an all-nonatomic formal profile at all numerical heights one. | [arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md](arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md): Two explicit diffuse sectors |
-| ARITH-ABC-SIGNED-CORRECTION-RESIDUAL-MEDIAN | claim | proved / partial | After arbitrary fixed locks on the free letters, the exact limiting signed correction bound is half the sum of residual pooled absolute dispersion, escaped first moments, and the absolute signed imbalance of the centered weights. A median of the pool augmented by an imbalance atom minimizes this quantity, also with fixed integer subblock multipliers. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Residual dispersion after arbitrary opposite locks |
+| ARITH-ABC-FULL-TERM-AND-SAME-LETTER-RATIO-STRIPS | claim | stale / partial | At d=1/3 and Gamma=1/2, for fixed 0<tau<1 a relative X^(-tau) strip contains at most X^((1/6-k_0 tau+o(1))L) distinct complete terms of one letter and at most X^((1/3-k_0 tau+o(1))L) distinct reduced ratios of two copies of that letter, uniformly in its target. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Counting distinct terms and ratios in strips |
+| ARITH-POWERFUL-COMPARABLE-ORDERS-MAXIMUM-EXPONENT | claim | stale / partial | For sufficiently large fixed prescribed comparable orders, the count is asymptotic to C_(s,0) X^(1/M), where M=max(s_A,s_B,s_C) and C_(s,0)>0. Equal fixed orders therefore satisfy Theta(X^(1/s)) with no exponent loss. | [arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md](arithmetic/POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md): Asymptotic expansion for comparable orders |
+| ARITH-ABC-RESIDUAL-UPPER-QUANTILE-EXPLICIT-DIFFUSE-SECTORS | claim | stale / partial | Two uniform tall measures on [2,4] force short numerical height at least 1/6 at the balanced endpoint. Two explicit finite-box sectors have normalized count exponents at most 8/25 and 13/40 respectively, including an all-nonatomic formal profile at all numerical heights one. | [arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md](arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md): Two explicit diffuse sectors |
+| ARITH-ABC-SIGNED-CORRECTION-RESIDUAL-MEDIAN | claim | stale / partial | After arbitrary fixed locks on the free letters, the exact limiting signed correction bound is half the sum of residual pooled absolute dispersion, escaped first moments, and the absolute signed imbalance of the centered weights. A median of the pool augmented by an imbalance atom minimizes this quantity, also with fixed integer subblock multipliers. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Residual dispersion after arbitrary opposite locks |
 | ARITH-ELLIPTIC-CERTIFIED-QUOTIENT-COEFFICIENT-ALGORITHM | claim | proved / partial | Given a certified finite ambient quotientF=G_S/W with WcontainedH_S, exact reduction operation and local coset data, relevant-prime saturation determinesH_S/W exactly. EQA2 then computes each rationalmu_(S,a) by finite correlated enumeration and rational geometric series; EQA2a decides finite-place full-field-target feasibility by testingmu=0. Construction of the supplied quotient for arbitraryS, full MWsaturation and all-primes decisions are outside scope. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_QUOTIENT_SATURATION.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_QUOTIENT_SATURATION.md): FQS3 |
 | ARITH-ELLIPTIC-BOUNDED-FATAL-DEPTH-CERTIFICATE | claim | proved / partial | Inclusive range p<=100000: the complete union of numerator-eligible activegood noncore primes for classes2 and5q0 has1722members. At each, Q alone has t([Np]Q)/p nonzero modp, proving actual e_p=1 without any saturated basis. Complete standard-library replay counts every reduced point and evaluates3444 modular multiples with7623 independent rational-addition controls. P alone has a higher-depth row at401 whileQstillwitnesses1. No assertion beyond the bound. | [arithmetic/ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md](arithmetic/ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md): EBF1 |
 | ARITH-ELLIPTIC-ELIGIBLE-PRIME-DENSITIES | claim | proved / partial | Among all rational primes the denominator/numerator eligibility densities are(1/2,1/4) in class1 and(1/4,1/8) in each of classes2,5q0,10q0. These are eligibility densities from the independent squareclasses(-3,2,5q0,51730); they do not assert occurrence for rational elliptic points or any independence of target conditions. | [arithmetic/ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md](arithmetic/ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md): EPE3 |
@@ -20510,9 +20788,9 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-INDEPENDENT-PAIR-NUMERATOR-TAIL | claim | proved / partial | For largeY, sum_(p>Y)n_p^2=O_E(1/((logY)^(1/5) loglogY)). Consequently two independent intrinsic-Haar vectors have simultaneous finite-zero numerator returns at only finitely many primes almost surely, with probability of any common return aboveY bounded by the same tail. A deterministic n_p=O_E((logp)^(-3/5)) follows from p dividingJ_(t_p+1), and the distribution bound gives the square tail. No cross-prime independence is assumed. This is a two-vector Haar tail, not the single-vector Hasse tail or a rational-target-pair asymptotic. | [arithmetic/ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md](arithmetic/ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md): EUP4 |
 | ARITH-ELLIPTIC-FIXED-FIELD-LOCAL-COEFFICIENTS | claim | proved / partial | On the existing exceptional elliptic slice, full field targets soluble at2,3,17 in quadratic fields with radicands(-3,-40637595,-6,-81275190) have respective leading coefficients(205/111748,1/84,205/2456,1/8) times C_E logB, with o(logB) error. Coefficients use the whole-slice normalization and sum to5321/23946. These give separate Hasse limsup upper bounds, not all-places asymptotics. | [arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md): J2174 |
 | ARITH-DEGREE26-AFFINE-TRACE-LOCAL-SOLUBILITY-Q43 | claim | proved / partial | The smooth residue (32,1) yields a smooth p-adic arc by the simple-root Hensel argument. The prescribed good open has finite complement on the geometrically integral curve, so infinitely many points on that arc reconstruct good Q43 models. The parameters s,t are integral; the reconstructed coefficients need not be integral. | [arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md](arithmetic/Q26_UNIFORM_TRACE_PARAMETER_DENOMINATORS.md): Section 3, point (32,1), Hensel lift and finite bad-complement argument |
-| ARITH-ABC-INCOMMENSURATE-TERNARY-MESH-EXCLUSION | claim | proved / partial | An incommensurate Cantor profile with equal numerical heights and Gamma=1/2 has nonatomic interval masses with exponent log(2)/log(3), but violates the saturated phase bound along common ternary return frequencies. | [arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md](arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md): An incommensurate ternary example |
-| ARITH-POWERFUL-PRIMITIVE-QUOTIENT-LIMIT-LAW | claim | proved / partial | At sufficiently large fixed prescribed comparable orders, the signed J-term asymptotic expansion holds in l1 before summing over primitive quotients. In particular their normalized law converges to the law of the positive leading coefficients at total-variation error O_(s,epsilon)(X^(-1/(M(M+1))+epsilon)). | [arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md](arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md): Summation in total variation |
-| ARITH-ABC-SKIPPED-ATOM-DIFFUSE-BOX-SECTOR | claim | proved / partial | An explicit minimum-nonatomic formal profile passes the ordinary atom-rounding quantile tests but violates the selected-atom inequality. Three disjoint fixed blocks have combined mass 793/2400 and numerical weight 2+103/19200. Sufficiently nearby box profiles have normalized count exponent at most 331/1000. | [arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md](arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md): A diffuse example that requires skipping an intervening atom |
+| ARITH-ABC-INCOMMENSURATE-TERNARY-MESH-EXCLUSION | claim | stale / partial | An incommensurate Cantor profile with equal numerical heights and Gamma=1/2 has nonatomic interval masses with exponent log(2)/log(3), but violates the saturated phase bound along common ternary return frequencies. | [arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md](arithmetic/ABC_VARIABLE_MESH_DEGREE_GROUPING.md): An incommensurate ternary example |
+| ARITH-POWERFUL-PRIMITIVE-QUOTIENT-LIMIT-LAW | claim | stale / partial | At sufficiently large fixed prescribed comparable orders, the signed J-term asymptotic expansion holds in l1 before summing over primitive quotients. In particular their normalized law converges to the law of the positive leading coefficients at total-variation error O_(s,epsilon)(X^(-1/(M(M+1))+epsilon)). | [arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md](arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md): Summation in total variation |
+| ARITH-ABC-SKIPPED-ATOM-DIFFUSE-BOX-SECTOR | claim | stale / partial | An explicit minimum-nonatomic formal profile passes the ordinary atom-rounding quantile tests but violates the selected-atom inequality. Three disjoint fixed blocks have combined mass 793/2400 and numerical weight 2+103/19200. Sufficiently nearby box profiles have normalized count exponent at most 331/1000. | [arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md](arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md): A diffuse example that requires skipping an intervening atom |
 | ARITH-ELLIPTIC-AFFINE-RELATIVE-COMMON-QUOTIENT | claim | proved / partial | On a certified open coset gamma+H, individually possible pole events have mass1/t_p in the H-image. Their pair mass is d^H_(p,q)/(t_p t_q) when the two affine lifts agree modulo Kp^H+Kq^H, and zero otherwise. The common order divides gcd(t_p,t_q). For H=2Pi it is at most gcd(exp R_p^H,exp R_q^H)^2. These finite data are computable given the exact joint images; no averaged gcd estimate or supply of compatible primes is proved. | [arithmetic/ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md](arithmetic/ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md): EVO2 |
 | ARITH-ELLIPTIC-EXACT-PREFIX-WEIGHTED-MOMENTS | claim | proved / partial | Under the EQA/FQS supplied certified joint quotient and local-weight hypotheses, a positive full finite-place prefix C0 and finitely many rational-valued reduction functions have exact rational conditional moments. The quotient sum weights each finite cell by its actual local-solubility mass, including the infinite annuli. Full root conditions are not assumed measurable in a finite quotient. Exact hazards additionally require their fixed depth and branch-offset data. | [arithmetic/ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md](arithmetic/ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md): ECM2 |
 | ARITH-ELLIPTIC-FINITE-CONGRUENCE-OBSTRUCTION-CERTIFICATE | claim | proved / partial | Given a certified product W inside H_S, the exact full rational image C=H_S/W and rational local weights r_(f,p), class-a infeasibility is equivalent to each cell having at least one zero local weight. It is inclusion-minimal exactly when additionally every prime p is the unique zero in some class-a cell. Zero weight certifies every admissible point of that local cell insoluble by openness. The supplied-quotient hypotheses are required; no obstruction for this curve is exhibited. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md): EFO2 |
@@ -20521,10 +20799,10 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-CORRELATED-53-POLE-FRACTIONS | claim | proved / partial | After tests at2,3,5,11,17, the exact53 pole probabilities in classes1,2,5q0,10q0 are1/(615*533),0,0,1/15. In class1 the new3 condition is the old17 branch event and the new5 condition the old11 pole event; conditioning gives factors1/615 and1/533. There are no finite F-zero residues and the new soluble pole fraction is1/2863. | [arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md): J532 |
 | ARITH-ELLIPTIC-FIXED-CHARACTER-FACTORING-DENSITY | claim | proved / partial | Outside a fixed finite auxiliary set Sigma, each exact-order-n coefficient character factors through the actual rational reduction image at a natural prime density delta_chi independent of the chosen character and at most1/J2(n). A finite-Chebotarev approximation controls the determinant-zero boundary. The same bounds hold conditional on any fixed finite Frobenius condition after a condition-dependent enlargement of Sigma. | [arithmetic/ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md](arithmetic/ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md): EFC1 |
 | ARITH-ELLIPTIC-CLASS-MULTIPLICITY-RECOVERS-SHA | claim | proved / partial | For all sufficiently large p, c_p=dim Hom_G(Cl(Q(E[p]))/p,E[p]) is the maximum number of actual quotient copies E[p]^m. It recovers dim Sha[p]=2 floor((c_p-1)/2). Exactly one copy means e_p=1 and Sha[p]=0; exactly two means e_p>1 and Sha[p]=0; at least three is equivalent to nonzero Sha[p]. Even c_p forces deep image. No density, finite Sha or vanishing localization obstruction is inferred. | [arithmetic/ELLIPTIC_EXCEPTION_CLASS_GROUP_MULTIPLICITIES.md](arithmetic/ELLIPTIC_EXCEPTION_CLASS_GROUP_MULTIPLICITIES.md): ESM3 |
-| ARITH-ABC-COMMON-POWER-FIXED-ROW-DIFFERENCE-DICTIONARY | claim | proved / partial | If C-values have common-power coefficient dictionary exponent u, two fixed outside rows with column exponent arbitrarily close to 1/6 yield at least X^((1/6-2u-o(1))L) distinct nonzero complete C-differences when their C-values are distinct. For a genuine additive rectangle with common complete rows and columns this forces u>=1/12. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Differences along two fixed rows |
-| ARITH-ABC-DIFFUSE-GRAPH-COLUMN-WEDGE-STRIP-SAVING | claim | proved / partial | In the minimum-Gamma one-third endpoint graph, the number of ordered same-column wedges whose complete outer-term ratios fall in a fixed relative X^(-tau) strip is at most X^((1/2-eta(tau)+o(1))L) for sufficiently small outside-window loss. Recovering an outside pair from its prescribed reduced ratio costs at most X^((2xi+o(1))L) when both cross overlaps between one outside product and the other complete term have radical below X^(xi L). | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Recovering outside labels from a ratio |
-| ARITH-ABC-GROWING-DIFFUSE-RECTANGLE-PRIME-REUSE | claim | proved / partial | At the minimum-Gamma endpoint the outside atom-window loss delta bounds each remaining root-coordinate mass by delta+o(1), hence every outside prime is at most X^((delta+o(1))L). If the column exponent of an arithmetic rectangle is bigger than delta, all but at most X^((delta+o(1))L) columns lack an outside B-prime exclusive to that column among the B-products. At fixed bounded cutoff each outside prime power or degree coordinate has numerical weight at most R delta+o(1), so boundedly many such factors cannot supply a fixed positive diffuse weight as delta tends to zero. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Prime sizes in a growing rectangle |
-| ARITH-POWERFUL-PRIMITIVE-QUOTIENT-UNIFORM-TAIL | claim | proved / partial | At sufficiently large fixed prescribed comparable orders there is delta>0 such that the probability of w>Y for a uniformly chosen full triple and for its limiting primitive quotient law is O_s(Y^(-delta)), uniformly in large X and Y>=1. | [arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md](arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md): Uniform tail in the primitive height |
+| ARITH-ABC-COMMON-POWER-FIXED-ROW-DIFFERENCE-DICTIONARY | claim | stale / partial | If C-values have common-power coefficient dictionary exponent u, two fixed outside rows with column exponent arbitrarily close to 1/6 yield at least X^((1/6-2u-o(1))L) distinct nonzero complete C-differences when their C-values are distinct. For a genuine additive rectangle with common complete rows and columns this forces u>=1/12. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Differences along two fixed rows |
+| ARITH-ABC-DIFFUSE-GRAPH-COLUMN-WEDGE-STRIP-SAVING | claim | stale / partial | In the minimum-Gamma one-third endpoint graph, the number of ordered same-column wedges whose complete outer-term ratios fall in a fixed relative X^(-tau) strip is at most X^((1/2-eta(tau)+o(1))L) for sufficiently small outside-window loss. Recovering an outside pair from its prescribed reduced ratio costs at most X^((2xi+o(1))L) when both cross overlaps between one outside product and the other complete term have radical below X^(xi L). | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Recovering outside labels from a ratio |
+| ARITH-ABC-GROWING-DIFFUSE-RECTANGLE-PRIME-REUSE | claim | stale / partial | At the minimum-Gamma endpoint the outside atom-window loss delta bounds each remaining root-coordinate mass by delta+o(1), hence every outside prime is at most X^((delta+o(1))L). If the column exponent of an arithmetic rectangle is bigger than delta, all but at most X^((delta+o(1))L) columns lack an outside B-prime exclusive to that column among the B-products. At fixed bounded cutoff each outside prime power or degree coordinate has numerical weight at most R delta+o(1), so boundedly many such factors cannot supply a fixed positive diffuse weight as delta tends to zero. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Prime sizes in a growing rectangle |
+| ARITH-POWERFUL-PRIMITIVE-QUOTIENT-UNIFORM-TAIL | claim | stale / partial | At sufficiently large fixed prescribed comparable orders there is delta>0 such that the probability of w>Y for a uniformly chosen full triple and for its limiting primitive quotient law is O_s(Y^(-delta)), uniformly in large X and Y>=1. | [arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md](arithmetic/POWERFUL_TRIPLE_PRIMITIVE_QUOTIENT_LAW.md): Uniform tail in the primitive height |
 | ARITH-ELLIPTIC-FINITE-PRIMARY-POLE-SEPARATION | claim | proved / partial | For every affine congruence cell gamma+M Pi and finite primary setL there is a subcell gammaPrime+N Pi, N=2lcm(2,M), and positive-density active primes with accessible poles and \|[N]R_p\| coprime toL union primeDivN. Selected pole events jointly ignore all pro-L coefficient coordinates; relative common quotients have no such primary part. Cell and prime set depend onL; no uniform growing-L statement. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_PRIMARY_SEPARATION.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_PRIMARY_SEPARATION.md): EPS1 |
 | ARITH-ELLIPTIC-KUMMER-PREFIX-EXTENSION | claim | proved / partial | For every Kummer exclusion prime p above the triangular cutoff, every class a and every finite set S of smaller primes, mu_(S unionp,a)>=s_(p,e_p) mu_(S,a), where s=p^(2-delta_p)/(p^2+p+1)>0. This holds for all e_p, without a lower bound on prefix mass. Thus a large largest prime of a minimal finite obstruction is never in P_Kum. The smaller-prime restriction is essential; no infinite-prime positivity is concluded. | [arithmetic/ELLIPTIC_EXCEPTION_KUMMER_BRANCH_EXCLUSION.md](arithmetic/ELLIPTIC_EXCEPTION_KUMMER_BRANCH_EXCLUSION.md): EKX3 |
 | ARITH-ELLIPTIC-CLASS-ONE-FINITE-LOCAL-POSITIVITY | claim | proved / partial | For every fixed finiteS, targets on the existing slice with K1=Qsqrt(-3), full quadratic-times-cubic field fibre and local source points atS have countmu_(S,1) C_E logB+O_(E,S)(sqrtlogB), with rational0<mu_(S,1)<=1/4. The proof chooses local parametersp^(3k) in the open product with globalclass1, then uses openness and the dense rational image. No all-places seed in this class is asserted. Together with K0 this proves finite-place positivity for two classes; the other two remain unresolved. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md): ECO1 |
@@ -20537,7 +20815,7 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-ALL-CLASSES-ONE-PRIME-POSITIVITY | claim | proved / partial | For every prime p and every one of the four quadratic classes a, the coefficient mu_({p},a) is positive and rational, and the full field-target count is mu C_E log B+O_(E,p)(sqrt(log B)). The real-place coefficient is 1/4. Three supported reductions suffice at a good inert prime; the retained certificate covers the complete finite exceptional set. Positivity for every finite set remains unresolved in two classes. | [arithmetic/ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md](arithmetic/ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md): EOP1 |
 | ARITH-ELLIPTIC-EXACT-Q2-Q3-Q5-Q11-Q17-LOCAL-COUNT | claim | proved / partial | For tests at2,3,5,11,17 the whole-slice classcoefficients are6724/8860327,205/2456,533/55860,1/8 inclasses1,2,5q0,10q0. Theirsum116302241/531619620 multipliesC_ElogB withO_E(sqrtlogB) error and boundsallplacesHasse targets above. No allplaces asymptotic or infinitude is claimed. | [arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md): J23511173 |
 | ARITH-ELLIPTIC-EXPLICIT-SMALL-PRIME-WITNESSES | claim | proved / partial | The exact points Q=P2 in class2 and U=2P+3Q+T in class5q0 are admissible full quadratic-times-cubic field targets passing2,3,5. The U denominator depths and numerator residues are (v2c,v5c,v3c,a mod3,v3b)=(9,0,0,1,4); cubic irreducibility is certified modulo7 for U and29 for Q. Baseline positivity in all four classes was already implied by the stronger exact2,3,5,17 coefficients; these are explicit witnesses, not a new all-finite-place theorem. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md): EFO1 |
-| ARITH-ABC-SINGLE-LETTER-PHASE-AFFINE-CODEGREE | claim | proved / partial | A C-letter with aligned atoms and diffuse mass t in shrinking mesh windows of width theta with t/theta unbounded has a fixed affine codegree saving at the minimum nonatomic endpoint. The modulus is formed on the other row. A symmetric Cantor distribution provides a formal positive example of the phase hypothesis. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): A phase-concentration criterion for one letter |
+| ARITH-ABC-SINGLE-LETTER-PHASE-AFFINE-CODEGREE | claim | stale / partial | A C-letter with aligned atoms and diffuse mass t in shrinking mesh windows of width theta with t/theta unbounded has a fixed affine codegree saving at the minimum nonatomic endpoint. The modulus is formed on the other row. A symmetric Cantor distribution provides a formal positive example of the phase hypothesis. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): A phase-concentration criterion for one letter |
 | ARITH-ELLIPTIC-COFINITE-ONE-PRIME-EXTENSIONS | claim | proved / partial | Every feasible finite set S in class a contains a clopen profinite coset P0+M Gammahat with even M. Positivity survives adding any prime outside the explicit finite set consisting of small and bad primes, divisors of M, and denominator primes of x([2M]P). The set is computable from the coset certificate, and changes with S. This does not prove positivity for all finite sets. | [arithmetic/ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md](arithmetic/ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md): EOP2 |
 | ARITH-ELLIPTIC-EXACT-SIX-PRIME-LOCAL-COUNT | claim | proved / partial | For tests at2,3,5,11,17,53, the whole-slice coefficients in classes1,2,5q0,10q0 are1251298964/1648862553065,205/2456,533/55860,13361/114520. Their sum2081912199403/9893175318390 multiplies C_E logB with square-root logarithmic error. This gives all-places Hasse upper bounds, not an all-places asymptotic or infinitude. | [arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md): J533 |
 | ARITH-ELLIPTIC-EXPLICIT-DEPENDENCY-CORE | claim | proved / partial | The tests at C0={2,3,5,1889} and the four-class map use only primary factors D={2,3,5,7,1889}. Every class has positive full-field coefficient at C0, witnessed by Q and U=2P+3Q+T in the two remaining classes. At5 the quotient byE1 has order8; at1889 a valuation-one node contradiction gives E=E0 and quotient order1890. In classes2 and5q0, q0 and all primes1mod3 are automatic; every other noncore test is at a good active prime>=11. | [arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md](arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md): EDC1 |
@@ -20545,34 +20823,34 @@ Tracked obligations from the catalogue:
 | ARITH-ELLIPTIC-ADELIC-LIMIT-UPPER | claim | proved / partial | Finite-place intrinsic coefficients decrease to the all-primes Haar limits. In certifiedK0, limsup A_K0/(C_E logB)<=mu_infinity<=13361/114520. Summing all classes gives limsup A_E/(C_E logB)<=mu_infinity_total<=2081912199403/9893175318390 byJ533. Neither limiting measure is proved positive or zero. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md): EFA3, equations4.1-4.4 and all-class version |
 | ARITH-ELLIPTIC-LOCAL-GLOBAL-COUNT-BOUNDS | claim | proved / partial | On the fixed elliptic slice G_E=O(1), L_E=A_E+O(1), and for largeB, 1<=A_E(B)<=(2081912199403/9893175318390) C_E logB+O_E(sqrtlogB). The certified-field upper coefficient is13361/114520. J533 uses the exact correlated six-prime image. No all-places asymptotic or Hasse infinitude is asserted. | [arithmetic/ELLIPTIC_EXCEPTION_COUNT.md](arithmetic/ELLIPTIC_EXCEPTION_COUNT.md): Corollary EEC3 |
 | ARITH-ELLIPTIC-CORE-ADJUSTED-FRESH-PRIME | claim | proved / partial | For classes2 or5q0 and any remaining good active p>=11 outside the core, the core, class, smaller nonautomatic tests and reductionp are measurable in factors D together with primes<p. This excludes the p-primary factor even when the core place1889>p. The fresh formal p-coordinate is uniform in the actual E_e_p, and the exact ETP4 hazard table holds without an unspecified numerical cutoff. Automatic q0 tests are erased before this assertion. | [arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md](arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md): EDC2 |
-| ARITH-ABC-REGULARIZED-SUBSET-GOOD-STAR-AVERAGING | claim | proved / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. For every subset S of U and fixed polynomial-height modulus Q, some m distinct fixed opposite rows retain at least \|S\| n^(-m(delta0+delta)+o(1)) good columns, with minimum column degree n^(c-delta0), opposite part cap n^(c+delta+o(1)), and m(delta0+delta)<xi at fixed m. In each slot the target outside radical overlaps Q times the product of the others in normalized root mass below xi. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Counting good stars over an arbitrarily small column subset |
+| ARITH-ABC-REGULARIZED-SUBSET-GOOD-STAR-AVERAGING | claim | stale / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. For every subset S of U and fixed polynomial-height modulus Q, some m distinct fixed opposite rows retain at least \|S\| n^(-m(delta0+delta)+o(1)) good columns, with minimum column degree n^(c-delta0), opposite part cap n^(c+delta+o(1)), and m(delta0+delta)<xi at fixed m. In each slot the target outside radical overlaps Q times the product of the others in normalized root mass below xi. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Counting good stars over an arbitrarily small column subset |
 | ARITH-ELLIPTIC-CONDITIONAL-WEIGHTED-POLE-MEAN-ROUTE | claim | proved / partial | IF good primes with3 dividing actual formal depthe_p have natural density0, THEN every fixed feasible finite-place prefix has expected accumulated hazard at least c_(S,a) loglogY. Delete that density-zero set from the EAM3 prime set and use pole failure weightb_p>=1/2 when3 does not dividee_p. Initial hazards are set0 before the finite cutoff. This is a proved IF statement with an UNPROVED antecedent, not weighted recurrence or a covariance bound. | [arithmetic/ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md](arithmetic/ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md): EAM4 |
 | ARITH-ELLIPTIC-DIVERGENT-MEANS-NONRECURRENCE-MODEL | claim | proved / partial | An explicit abstract quotient model on Zhat^2, using pairwise-coprime Fermat blocks, has sqrtp<r_p<=p, eventual separation from every fixed finite primary set and conditional pole probability>=1/p in every fixed clopen cell, yet almost every vector has finitely many returns. Same for activeprime indices. This is not an elliptic counterexample: large common-quotient clustering is the missing restriction. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_PRIMARY_SEPARATION.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_PRIMARY_SEPARATION.md): EPS2 |
 | ARITH-ELLIPTIC-LARGE-PRIME-TAIL-EQUIVALENCE | claim | proved / partial | For the same fixed-K0 universe, T_Y=N_(S_Y,K0)-A_K0 satisfies tau_infinity=lim_Y limsup_B T_Y/(C_E logB)=mu_infinity-liminf_B A_K0/(C_E logB). Thus tau_infinity=0 iff the normalized Hasse count converges to mu_infinity. If mu_infinity=0 this gives o(logB), leaving infinitude open; if mu_infinity>0 and the tail vanishes it gives a positive logarithmic Hasse asymptotic and infinitude. ForY>=5 the tail counts a bad p>Y, p2mod3, with vp(128x-25865) not divisible3. No such uniform tail estimate or positive limiting measure has been established. The all-class version uses summed coefficients consistently. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md): EFA3, equations4.5-4.6 and proof |
 | ARITH-ELLIPTIC-WEIGHTED-PATHWISE-SIEVE | claim | proved / partial | For the certified prefix C0, with mass mu0 and accumulated predictable hazard H_Y, one has P(C_Y and H_Y>=u)<=mu0 exp(-u), and mu_Y<=P(C0 and H_Y<u)+mu0 exp(-u). The same coefficient bounds the Hasse count with O_(E,Y)(sqrt(log B)) error for fixed Y,u. The all-primes soluble set with infinite accumulated hazard is intrinsically Haar-null. Supplied finite local data make rational-threshold low-hazard masses exactly computable. Weighted divergence and uniformity in growing Y remain unproved. | [arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md): ETP5 |
 | ARITH-ELLIPTIC-FINITE-SAFE-PRIME-FAMILIES | claim | proved / partial | Starting from the positive four-prime core, every finite set of class-specific safe primes has positive rational coefficient and N_(S,a)=mu_(S,a) C_ElogB+O_(E,S)(sqrtlogB). A prime is safe if automatic or if no finite zero residue supported by that class has k_p<e_p with3 not dividing k_p. The common safe set works in all four classes. A first killing prime outside the core must be numerator-eligible, have e_p>=2 and the bad offset, and carry the entire positive prefix on its fatal residues. This is not positivity for arbitrary finite sets. | [arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md](arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md): EDC3 |
 | ARITH-ELLIPTIC-MASS-UNIFORM-OBSTRUCTION-CANDIDATES | claim | proved / partial | For rational0<eta<=1/4 define C_eta={2,3,5,1889} union primeDiv(J_(1+2/eta)). For every classa, primep and finite S contained in the fixed core union primes<p, if mu_(S,a)>=eta and addingp kills the coefficient thenp is inC_eta. Its weighted size is O_E(eta^(-5/3)) and cardinality O_E(eta^(-5/3)/log(2/eta)). Computation uses rational group arithmetic and integer factorization, without a cutoff or full basis input. The original prefix mass is preserved; no missing core tests are imposed. No eta-independent exception set or actual killer is exhibited. | [arithmetic/ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md](arithmetic/ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md): EUP3 |
-| ARITH-ABC-REGULARIZED-COMPLETE-LETTER-PROGRESSION-STRIPS | claim | proved / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. If \|I\|/Q<=X^tau for an interval I and one residue class modulo Q>=1, the upper intersection exponent is min(c,tau/s_*) up to arbitrary graph and extraction losses, where s_* is the larger of the opposite nonatomic support suprema. For fixed 0<s<s_* and tau>=0, (AC1) gives min(c,tau/s). The estimate is uniform in the interval, residue, and modulus, even for height-dependent choices. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Interval and residue conditions and CRT reconstruction, (AC1) |
+| ARITH-ABC-REGULARIZED-COMPLETE-LETTER-PROGRESSION-STRIPS | claim | stale / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. If \|I\|/Q<=X^tau for an interval I and one residue class modulo Q>=1, the upper intersection exponent is min(c,tau/s_*) up to arbitrary graph and extraction losses, where s_* is the larger of the opposite nonatomic support suprema. For fixed 0<s<s_* and tau>=0, (AC1) gives min(c,tau/s). The estimate is uniform in the interval, residue, and modulus, even for height-dependent choices. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Interval and residue conditions and CRT reconstruction, (AC1) |
 | ARITH-ELLIPTIC-AVERAGED-POLE-EQUIVALENT-HAAR-LIMIT | claim | proved / partial | After forgetting finitely many exceptional primary coefficient coordinates and rational torsion, the normalized reweighted pole measures converge weakly to g times Haar, with g positive almost everywhere, integral1 and square integrable. Actual local densities are at least1/2 and have summable variances; independent products give positivity. No uniform integrability or L2 convergence of the finite-time counts is proved. The abstract EPS model also has Haar weak limit without recurrence, so no elliptic recurrence follows. | [arithmetic/ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md](arithmetic/ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md): EFC4 |
 | ARITH-ELLIPTIC-CONDITIONAL-PRIME-LOSS-CRITERION | claim | proved / partial | In the certifiedK0 class, startS0={2,3,5} and adjoin orderedprimesp_j. Allm_j=mu_(S_j,K0)>0 andlambda_j=1-m_j/m_(j-1) lies[0,1). Thenmu_infinity=m0*product(1-lambda_j)>0 iff sumlambda_j<infinity. EPE-erased primes have zero conditional loss. Actual conditional loss>=c/p along a positive-prime-density subset forcesmu_infinity=0 andA_K0=o(logB). Unconditioned marginal/ambient losses do not establish this hypothesis; positive measure still needs the separate arithmetic tail for a Hasse asymptotic. | [arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md](arithmetic/ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md): EFA4 |
 | ARITH-ELLIPTIC-SECOND-MOMENT-HAZARD-CRITERION | claim | proved / partial | For any nonnegative return weights Zp and a fixed positive finite-place prefix C0, if the conditional mean of their partial sums tends to infinity and conditional variance is little-o of squared mean, their total sum diverges almost surely on C0. For hazards, dominated pole hazards or depth-one return indicators in certified K0 this implies intrinsic all-primes measure0 and A_K0=o(logB), by ETP5/EFA3. This is a PROVED IF statement; its asymptotic moment hypotheses remain UNPROVED. Bounded second moments alone only give positive-probability recurrence. | [arithmetic/ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md](arithmetic/ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md): ECM3 |
 | ARITH-ELLIPTIC-BOUNDED-ALL-CLASSES-FEASIBILITY | claim | proved / partial | Every finite place set whose finite primes are at most100000 has positive rational coefficient in all four quadratic classes and full-field count mu C_ElogB+O_(E,S)(sqrtlogB). Further finitely many appropriate class-safe primes may be adjoined. Any first killing noncore prime in the core-adjusted increasing order exceeds100000. This finite theorem gives neither unbounded depth control nor an all-places seed. | [arithmetic/ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md](arithmetic/ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md): EBF2 |
 | ARITH-ELLIPTIC-CLASS-GROUP-LOCAL-SAFETY | claim | proved / partial | Outside the fixed finite exceptions, absence of aGal(Q(E[p])/Q)-equivariant quotientE[p]^2 fromCl(Q(E[p]))/p impliese_p=1 and hence safety in both unresolved classes. In particular vp(h)<4 suffices. Absence of the level-r full two-copy quotient impliese_p<=r. These are necessary-module contrapositives; a quotient may have other origins and does not force a fatal branch or deep formal image. | [arithmetic/ELLIPTIC_EXCEPTION_WIEFERICH_CLASS_GROUP_BRIDGE.md](arithmetic/ELLIPTIC_EXCEPTION_WIEFERICH_CLASS_GROUP_BRIDGE.md): EWC2 |
 | ARITH-ELLIPTIC-EXACT-DENSITY-SAFE-POOLS | claim | proved / partial | Fix one EKX Chebotarev set of density delta_Kum>0. For either unresolved class a=2 or5q0, T_a=C0 union(complement of P_(a,d)) unionP_Kum has exact natural prime density7/8+delta_Kum, and every finite subset has positive class-a coefficient. The common pool using the complement of P_(2,d) unionP_(5q0,d) has exact density13/16+delta_Kum and works for every finite subset in all four classes. The eligible intersection has density1/16. These are permitted-prime densities, not uniform lower coefficient bounds or positive infinite-pool measure. | [arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md](arithmetic/ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md): EDC4 |
-| ARITH-ABC-SYMMETRIC-DIFFUSE-PROFILE-NEWTON-INEQUALITY-COMPATIBILITY | claim | proved / partial | The formal measure (1/6)delta_3+(1/6)Unif[2,4] on each letter satisfies (NB2) for every choice of a,kappa and M. With any positive grid assignment a failed bound would force E<1/24 and Eh<=1/216, inconsistent with the diffuse contribution and the first moment. This is compatibility with the inequality; the arithmetic realization is open. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): The symmetric diffuse profile satisfies the new inequality |
-| ARITH-ABC-REGULARIZED-COMPLETE-LETTER-MODULAR-PROGRESSION | claim | proved / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. For fixed h,zeta,beta>=0, \|I\|<=X^h, M>=X^beta of polynomial height, and classes A+d*j mod M with 0<=j<J<=X^zeta, the upper intersection exponent is min(c,((h+zeta-beta)_++zeta)/s_*), up to arbitrary graph and extraction losses. The bound permits repeated classes and nonunit steps. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Modular progressions with a short parameter range, (AC2) |
+| ARITH-ABC-SYMMETRIC-DIFFUSE-PROFILE-NEWTON-INEQUALITY-COMPATIBILITY | claim | stale / partial | The formal measure (1/6)delta_3+(1/6)Unif[2,4] on each letter satisfies (NB2) for every choice of a,kappa and M. With any positive grid assignment a failed bound would force E<1/24 and Eh<=1/216, inconsistent with the diffuse contribution and the first moment. This is compatibility with the inequality; the arithmetic realization is open. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): The symmetric diffuse profile satisfies the new inequality |
+| ARITH-ABC-REGULARIZED-COMPLETE-LETTER-MODULAR-PROGRESSION | claim | stale / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. For fixed h,zeta,beta>=0, \|I\|<=X^h, M>=X^beta of polynomial height, and classes A+d*j mod M with 0<=j<J<=X^zeta, the upper intersection exponent is min(c,((h+zeta-beta)_++zeta)/s_*), up to arbitrary graph and extraction losses. The bound permits repeated classes and nonunit steps. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Modular progressions with a short parameter range, (AC2) |
 | ARITH-ELLIPTIC-CONDITIONAL-BRANCH-RETURN-FORMULA | claim | proved / partial | At sufficiently large inert goodp with e_p=1, conditional local survival given all lower-prime data is1-(1-1/(p^2+p+1))*indicator(reduction in{O,Rplus,Rminus}). Hence in certifiedK0 the actual new losslambda_p is(1-1/(p^2+p+1))*Pr(branchreturn \| all previousgood,classK0). For generalee_p a pole lower bound uses1-p^(2-delta)/(p^2+p+1). No uniform or marginal return-probability lower bound is claimed. | [arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md): ETP2 |
 | ARITH-ELLIPTIC-RELATIVE-POLE-RECURRENCE-CRITERION | claim | proved / partial | In a fixed open coset, for individually possible poles and weights0<=w_p<=1, divergent sumw_p/t_p plus sum_(p<q)w_p w_q(d^H_(p,q)-1)/(t_p t_q)=o(mean^2) implies almost-sure weighted pole recurrence. For actual pole hazard weights this makes the all-soluble subset of that coset Haar-null. The weaker signed compatibility-covariance condition also suffices. This is a proved implication with unproved arithmetic hypotheses; coverage by cosets with such estimates is still required for a whole-class conclusion. | [arithmetic/ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md](arithmetic/ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md): EVO3 |
 | ARITH-ELLIPTIC-CLASS-GROUP-DENSITY-MEAN-ROUTE | claim | proved / partial | IF the primes whose first division-field class groups admit an equivariant E[p]^2 quotient have natural density0, THEN e_p>1 has density0, and EAM4 supplies expected weighted hazard at least c_(S,a)loglogY in every fixed feasible prefix. The density assumption is UNPROVED and concerns a second full copy, not ordinaryp-regularity. Variance, recurrence and the one-vector Hasse tail remain open. | [arithmetic/ELLIPTIC_EXCEPTION_WIEFERICH_CLASS_GROUP_BRIDGE.md](arithmetic/ELLIPTIC_EXCEPTION_WIEFERICH_CLASS_GROUP_BRIDGE.md): EWC3 |
-| ARITH-ABC-BROAD-SYMMETRIC-PROJECTIVE-NEWTON-COMPATIBILITY | claim | proved / partial | The formal joint profile (1/6)delta_3+(1/6)Unif[2,4] satisfies (PS1) with every horizontal sparse support and positive multiplier assignment. Opposite wider slices give B at least m times the shifted mean error; the widest horizontal slice gives B at least its diameter times h. A violation would give Eh<=5/288 in conflict with the diffuse moment bound. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): The broad symmetric profile and sparse supports |
-| ARITH-ABC-REGULARIZED-COMPLETE-LETTER-MODULAR-GAP-SLICING | claim | proved / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. For a coefficient-box presentation of rank at most fixed R>=1 and volume at most n^kappa modulo M>=X^beta of polynomial height, in an interval of width X^h the intersection exponent is at most min(c,(1-1/R)kappa+(h-beta)_+/s_*) up to arbitrary extraction loss. In ambient height h=1 and beta>=1-o(1), for R>=2 capturing exponent v>0 requires kappa>=Rv/(R-1), and rank one has exponent zero. | [arithmetic/ABC_MODULAR_PROGRESSION_SLICING.md](arithmetic/ABC_MODULAR_PROGRESSION_SLICING.md): Slicing the coefficient box along a longest side |
+| ARITH-ABC-BROAD-SYMMETRIC-PROJECTIVE-NEWTON-COMPATIBILITY | claim | stale / partial | The formal joint profile (1/6)delta_3+(1/6)Unif[2,4] satisfies (PS1) with every horizontal sparse support and positive multiplier assignment. Opposite wider slices give B at least m times the shifted mean error; the widest horizontal slice gives B at least its diameter times h. A violation would give Eh<=5/288 in conflict with the diffuse moment bound. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): The broad symmetric profile and sparse supports |
+| ARITH-ABC-REGULARIZED-COMPLETE-LETTER-MODULAR-GAP-SLICING | claim | stale / complete | Degree-regularized complete letter U at d=1/3, Gamma=1/2; n=X^L, c=1/6. For a coefficient-box presentation of rank at most fixed R>=1 and volume at most n^kappa modulo M>=X^beta of polynomial height, in an interval of width X^h the intersection exponent is at most min(c,(1-1/R)kappa+(h-beta)_+/s_*) up to arbitrary extraction loss. In ambient height h=1 and beta>=1-o(1), for R>=2 capturing exponent v>0 requires kappa>=Rv/(R-1), and rank one has exponent zero. | [arithmetic/ABC_MODULAR_PROGRESSION_SLICING.md](arithmetic/ABC_MODULAR_PROGRESSION_SLICING.md): Slicing the coefficient box along a longest side |
 | ARITH-ELLIPTIC-PREDICTABLE-RETURN-EXCLUSION | claim | proved / partial | LetQ be the sufficiently large inert good primes with e_p=1, without assumingQ infinite. The intrinsic Haar measure of all-primes soluble vectors with infinitely many branch-residue returns atp inQ iszero. More precisely the probability that the firstk finite such return primes exist and all their tests pass is<=133^(-k). The predictable-return induction uses fresh formal coordinates, not independence of reductions. A recurrence theorem would imply zero intrinsic measure; no recurrence is proved here. | [arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md): ETP3 |
 | ARITH-ELLIPTIC-WEIGHTED-FIXED-PREFIX-MEAN-LOWER | claim | open / partial | For every fixed positive finite-place prefix, expected accumulated actual hazard throughY is at least c_(S,a)loglogY. This unconditional proposition remains OPEN. EAM3 proves only the unweighted version; EAM4 and EWC3 give sufficient explicitly unproved depth/class-group density routes. No almost-sure recurrence follows from the mean alone. | [arithmetic/ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md](arithmetic/ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md): EAM3-EAM4 unweighted theorem and explicitly conditional weighted implication |
-| ARITH-ABC-TAYLOR-DETERMINANT-FULL-PRECISION-CAP | claim | proved / partial | A size-N evaluation minor has valuation at least the sum of the first N Taylor weights capped individually at the full congruence exponent. This holds for arbitrary per-prime shallow depths, and extends to anisotropic multigroup records. For one root the normalized gain is the integral of min(b y t,eL), and joint concavity bounds the gain from arbitrary depth assignments. | [arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md](arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md): Taylor precision up to the full modulus |
-| ARITH-ABC-MULTIGROUP-NEWTON-RANK-AND-INJECTIVITY-OBSTRUCTIONS | claim | proved / partial | For any fixed integer direction list in dimension at least two, multiples of a product of orthogonal binomials occupy a fraction tending to one of a growing rectangular support and have nonmonomial initial forms in all those directions. The resulting evaluation kernels have positive rational realizations with free heights. Requiring all weights in even one slice direction to be injective makes the width-bound exponent of order L D, above the Taylor criterion of order L D^(1/m) for growing support size D. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Limits of rank information in several roots |
+| ARITH-ABC-TAYLOR-DETERMINANT-FULL-PRECISION-CAP | claim | stale / partial | A size-N evaluation minor has valuation at least the sum of the first N Taylor weights capped individually at the full congruence exponent. This holds for arbitrary per-prime shallow depths, and extends to anisotropic multigroup records. For one root the normalized gain is the integral of min(b y t,eL), and joint concavity bounds the gain from arbitrary depth assignments. | [arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md](arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md): Taylor precision up to the full modulus |
+| ARITH-ABC-MULTIGROUP-NEWTON-RANK-AND-INJECTIVITY-OBSTRUCTIONS | claim | stale / partial | For any fixed integer direction list in dimension at least two, multiples of a product of orthogonal binomials occupy a fraction tending to one of a growing rectangular support and have nonmonomial initial forms in all those directions. The resulting evaluation kernels have positive rational realizations with free heights. Requiring all weights in even one slice direction to be injective makes the width-bound exponent of order L D, above the Taylor criterion of order L D^(1/m) for growing support size D. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Limits of rank information in several roots |
 | ARITH-ELLIPTIC-INTRINSIC-ZERO-AND-SUBLOG-COUNT | claim | open / partial | The certified-K0 intrinsic all-primes measure is zero and A_K0(B)=o(log B). This proposition remains OPEN. ETP5 gives a route through weighted divergence on its specified initial prefix. ECM3 also gives a direct route from weighted mean and variance estimates on any one positive certified-class prefix, because every all-places soluble vector lies there. That second route does not assert divergence on a larger prefix. No Hasse infinitude follows from a hypothetical zero measure. | [arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md](arithmetic/ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md): ETP5 specified-prefix sufficient condition; [arithmetic/ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md](arithmetic/ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md): ECM3 direct one-prefix zero-measure implication |
-| ARITH-ABC-BIVARIATE-TAYLOR-EXACT-CONGRUENCE-ERROR | claim | proved / partial | In a first determinant with wider degree M, v=K z^(-q)+p^e u expands at a shallow z record into integral vectors of weights b i+e j for 0≤j≤M. Distinct pairs in the determinant give a strip-average precision and aggregate by joint concavity across unequal depths. No separate record of u is charged. | [arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md](arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md): Expanding the exact congruence error as a second variable |
-| ARITH-ABC-POOLED-LOCK-CONDITIONAL-TARGET-OBSTRUCTION | claim | proved / partial | With a fixed pair of full divisors of combined weight above the shorter height, each target identifies at most one primitive edge in the record. A d-exponent family must have at least n^(d-t-o) distinct targets on some record of cost t. Such affordable records now exist on at least one pair at every endpoint, including indivisible macroscopic primes. The count of distinct admissible targets remains open. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Residual obstruction |
+| ARITH-ABC-BIVARIATE-TAYLOR-EXACT-CONGRUENCE-ERROR | claim | stale / partial | In a first determinant with wider degree M, v=K z^(-q)+p^e u expands at a shallow z record into integral vectors of weights b i+e j for 0≤j≤M. Distinct pairs in the determinant give a strip-average precision and aggregate by joint concavity across unequal depths. No separate record of u is charged. | [arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md](arithmetic/ABC_TAYLOR_PRECISION_SATURATION.md): Expanding the exact congruence error as a second variable |
+| ARITH-ABC-POOLED-LOCK-CONDITIONAL-TARGET-OBSTRUCTION | claim | stale / partial | With a fixed pair of full divisors of combined weight above the shorter height, each target identifies at most one primitive edge in the record. A d-exponent family must have at least n^(d-t-o) distinct targets on some record of cost t. Such affordable records now exist on at least one pair at every endpoint, including indivisible macroscopic primes. The count of distinct admissible targets remains open. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Residual obstruction |
 
 ### Topic obligations
 
@@ -20689,7 +20967,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-RANDOM-PRIME-CRITICAL-TWO-COPY-ENERGY-UPPER** (mathematical; open): In the same independent critical model, fixed k, cutoff F_Y and geometric grids as the empirical conditional intensity obligation, prove almost surely limsup_X X^-1 E[sum_{n<=X}r_k^(1)(n)r_k^(2)(n)|F_Y]<=B^2 E_U S^2. The two completions are independent above Y and share the exposed primes. The constant is the exact product (11). This is sufficient for the empirical intensity law.
 - **GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR** (mathematical; open): For unequal fixed offsets u>v, improve the error in the aligned common-neighbor graph argument itself from O_(u,v)(r^(-11/5)) to O_(u,v)(r^(-5/2)) after the leading saving 2/r^2. The numerical count at that threshold follows from the stronger abc endpoint bound.
 - **GAP-ARITH-ABC-CONJECTURE** (mathematical; open): Prove that for every fixed 0<lambda<1 only finitely many positive primitive triples a+b=c satisfy rad(abc)<c^lambda.
-- **GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT** (mathematical; proved / discharged): Improve the exceptional-set exponent below 7/12 near radical budget one. The FullOC program attains 7/12, and the full-side common-degree graph has minimum permitted exponent 83/132 at the symmetric obstruction. A stronger inequality or a different decomposition must exclude that point.
+- **GAP-ARITH-ABC-GRAPH-GLOBAL-EXPONENT** (mathematical; stale): Improve the exceptional-set exponent below 7/12 near radical budget one. The FullOC program attains 7/12, and the full-side common-degree graph has minimum permitted exponent 83/132 at the symmetric obstruction. A stronger inequality or a different decomposition must exclude that point.
 - **GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT** (verification; open): Audit the source proof of Soulé arXiv:2611.05217v1 Theorem B and its preceding arithmetic-geometric estimates before relying on c<<R^(24+epsilon) for all positive primitive triples.
 - **GAP-ARITH-ABC-ZENG-ARITHMETIC-APPLICATION** (verification; open): Obtain review outside the project of the arithmetic hypotheses and proof of the FullOC collision inequalities and their application to the 7/12 counting bound. The scoped internal arithmetic review and finite exact replays are recorded.
 - **GAP-ARITH-ERDOS943-LONG-COMPLEMENT-KERNEL-PAIR-SAVING** (mathematical; open): Fix delta=1/8. For N comparable to T5, bound by O_epsilon(T^(2-eta+epsilon)) for some absolute eta>0 the distinct ordered squarefree unit kernel pairs having SOME reduced unit witness <=4T² but NO such witness <=T^(9/8). This is an open frequency bound for the precise complement, not all long witness tuples. Theorem7 identifies its conditional relation to the existing full-pair target.
@@ -21299,6 +21577,10 @@ Tracked obligations from the catalogue:
 | ED0-BALANCED-UNITARY-HODGE-CIRCLE | claim | proved / partial | A polarized complexfourfold withquarticCM E-action, Rosaticonjugation andsignature1,1,1,1 hasE-rank2 Hermitianh ofsignature1,1atbothFplaces, withHodgecircleinResSU(h). No genericEnd or simplicity hypothesis. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section1;Lemma2 firstparagraphs |
 | ED0-ONE-NUMBER-FIELD-TAIL-SPECIALIZATION | claim | proved / partial | Any hypotheticalchar0eventualphase withBCnonzero has ONEnumberfieldspecialization preservingBC anditsnonzero/discriminantbranch andALLtailidentities simultaneously, byfiniteQdomainlocalization+Nullstellensatz. No PFPparameteralgebraicity or prime-dependent specialization. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section4 |
 | ED0-RATIONAL-LOCAL-SQUARECLASS-CONSTRUCTION | claim | proved / partial | ForrealquadraticF andquaternionD/F, choose negative rationald nonsquarein everyramifiedFv: localdegree<=2 permits classesalsoat2; CRT preserveschosenclasses andnegativeinfinity. FK0/F is a quadraticFIELD with noramifiedsplits. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section2;Lemma3 existencefirstparagraphs |
+| EOP5-CUBIC-FIRST-SIX-MIXED-OBSTRUCTION | claim | proved / partial | Over every char0 field, h=a*y+c*y^3+b*y*t^2+q*x*t^2 with q!=0 and M2=M4=M6=0 forces a=b=c=0. Native expansion gives a=-3b/7,c=-136b^2/(245q),M6=-2304q^3b^3/554498945. This local proof does not widen any winding-one theorem. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Lemma1;equations2--5 |
+| EOP5-EXACT-FILTERED-DEGREE-PARITY | claim | proved / partial | The eight normal monomials in phase(1) are independent with their displayed least filtration degrees. They have only degrees1,3,5, so absence of A,B,C,D gives degree<=3 and otherwise actual degree5. All odd moments vanish identically by the angular antipode. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Opening;equation1 |
+| EOP5-ONE-SIDED-ALL-MOMENTS-VANISH | claim | proved / partial | For phase(1), P=0 or(q0=B=0) implies Lambda(f^m)=0 for every m>=1, because every phase angular weight is respectively +1 or belongs to{-1,-3,-5}. The zero phase is included. This direct CT proof is independent of imported quintic obstructions and of the stronger marker-cutoff fact. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3 sufficiency |
+| EOP5-ONE-SIDED-FULL-AMBIENT-MARKER-CUTOFF | claim | proved / partial | For any one-sided phase(1) and every nonzero g in the FULL A_K, Lambda(g*f^m)=0 for every m>deg(g). A degree-d representative has angular weights[-d,d], while one-sided f^m has weights>=m or<=-m. This is not restricted to markers in the eight-dimensional subspace. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3;equation8 |
 | EPF-CONDITIONAL-PROPER-IMAGE-RADICAL-POWER | claim | proved / partial | CONDITIONAL: if some nonzero rational parameter polynomial vanishes on ALLchar0 field points of an infinite fixed-tail moment ideal, it lies in its radical. Some power belongs to a FINITE prefix ideal. No PFP promise is asserted without a separate application gate. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section2;Theorem1 proof |
 | FUNCTION-FIELD-RATIONAL-POLE-COMPENSATION | claim | proved / partial | For nonconstant rational functions u,R over characteristiczero with deg(R-2u)=degR, at least one geometric u-pole has R-pole order at least u-pole order. Otherwise R-2u strictly increases pole degree at every u-pole and preserves all R-only poles, contradicting exact map degree. Regular functions have pole order0 in this comparison. | see incoming proof routes |
 | HOPF-ALL-START-EXACT-LEAST-PHASE-DEGREE | claim | proved / partial | For a normalized regular unit-center two-term phase with c=degC,e=degD, least sphere/balanced degree is max(c+a-1,e+a+1) for every integer a>=0. Reducing t^a=t^epsilon(1-2xy)^q gives a unique t-degree<=1 form; reduction does not raise degree and its leading y terms cannot cancel. This includes even a0. | see incoming proof routes |
@@ -21561,6 +21843,7 @@ Tracked obligations from the catalogue:
 | EPF-CONDITIONAL-EXACT-FINITE-PURE-PARAMETER-SET | claim | proved / partial | CONDITIONAL on a finite pure parameter-image promise for r1: complete-prefix contraction nonzero; its monic squarefree generator has EXACT geometric pure parameter roots; generator1 is empty. No numerical output computed. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section5;Theorem4 |
 | EPF-EVEN-BD-EXACT-PURE-PARAMETER-CLOSURE | claim | proved / partial | For PFP exactfull-evenBDnonzerochart normalizedB=D1, compute nonzero elimination ideal in Q[alpha,beta] defining EXACTZariski closure ofPUREimage. Mayemptyorfinite. No equality of image/closure or realizability assertion. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section6;evenBDparagraph |
 | PFP-SERRE-ASSUMPTION-IMPLIES-NO-RESIDUAL-PHASE | claim | proved / partial | ONLY the implication: IF every abelian variety has positive-density ordinary primes(Serreconjecture),THEN no eventual residual phase exists. The conjecture is NOT a provedleaf and this does not closeglobal5. No ordinaryfailure-impliespurity converse. | [foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md](foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md): Section6,conjecturalcontext |
+| EOP5-GENUINE-MIXED-PURE-NEWTON-NECESSITY | claim | proved / partial | For phase(1) of actual degree5 with both original angular signs, PURE implies B!=0 and at least TWO of A,C,D nonzero, using exactly the written old Newton PURE consequence. No ED0/D0 analytic input is needed. In the subsequent C=0 branch these facts force A,D!=0. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Section2 N;Theorem3 necessity |
 | HOPF-ONE-POLE-EXACT-DEGREES-AND-PRIME-SPECTRUM | claim | proved / partial | The constant safe branch has least degree2. The inversion branch has degree5N+3; the fixed-zero branch degree3N+3. Every nonconstant branch has an R-primitive original lift and exact T multiplicity1, hence is not a scalar proper power. Within this class, odd prime unsafe degrees are exactly primes3mod10 greater than3; the least odd unsafe degree is9 and least prime unsafe degree13. Arbitrary Image witnesses are not classified. | see incoming proof routes |
 | UAF-FOUR-WAY-CLASSIFICATION | claim | proved / partial | For every characteristic-zero K and f=P(y)+xS(t), purity, eventual purity, safety for EVERY fixed marker in the full ambient sphere algebra, and P(0)=0 with(P=0 or S=0) are equivalent. These phase classes are not claimed to be algebras. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section1 Theorem;Section4 complete implication assembly |
 | W1-PURE-EVENTUAL-ALLOWED-LOCUS-IFF | claim | proved / partial | For every char0K and every degree<=6 winding-one phase,purity iff eventual purity iff the stated allowed coefficient locus. The direct proof does not require the all-marker isometry transfer. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Theorem1 pure,eventual and locus directions;Sections2--5 |
@@ -21582,6 +21865,7 @@ Tracked obligations from the catalogue:
 | HOPF-ODD-CUBIC-RATIONAL-PRIMITIVE-CLASSIFICATION | claim | proved / partial | For nonzero polynomial C in characteristic zero,1/C has a rational primitive iff C is constant or has exactly one geometric root of multiplicity>=2. Necessity uses degree(V)=M-h and order_(infinity)(V-Vinfinity)=M-1, forcing h<=1. Consequently all pure unit-center odd-cubic phases with a rational primitive of dx/C are exactly the constant and two one-pole templates, with their exact safety and degree conclusions. | see incoming proof routes |
 | UAF-STRIPPED-QUINTIC-PURITY-AND-SAFETY | claim | proved / partial | For the specified nine-dimensional slice, purity/eventual purity/full ambient-marker safety hold exactly for P(0)=0 and(P=0 or Q=0). Thus its pure locus is {P(y):P(0)=0} union {qQ(t)}, with the stated degree bounds, and every member obeys m>deg(marker). No fullS24,even14 or global primitive quintic conclusion follows. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section5;equations11--12 |
 | W1-FULL-FOUR-WAY-CLASSIFICATION | claim | proved / partial | For the full19-dimensional degree<=6 angular[-1,1] class,purity,eventual purity,all-fixed-full-sphere-marker safety and the exact allowed locus are equivalent. No bounded-degree phase class is asserted to be an algebra. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Theorem1 complete classification |
+| EOP5-C0-BD-NONZERO-NONPURE | claim | proved / partial | For phase(1) with C=0,BD!=0, the incoming narrow old C0 finite12 normalization theorem gives a nonzero native moment by12, hence notpure. The written rho6=D/B,mu=1/(rhoB) transport is valid over a faithful algebraic extension. Sharpness is not needed. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Lemma2;Section3 |
 | BD5-ALL-FIELD-RESIDUAL-SPECIALIZATION-NECESSARY | claim | proved / partial | Any eventual phase over an arbitrary characteristic-zero field with smooth cubic face has one number-field eventual specialization preserving the cubic branch; that specialization has simple full EndE5 Prym. No assertion that arbitrary specializations preserve transcendental extra End. | [foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md): Section3;7 |
 | ED0-MIXED-EVEN-Y5-COEFFICIENT-NECESSARY | claim | proved / partial | Using ONLY the exactoldSNFtwo-negative-leaders gate, anyactualdegree5eveneventualphasewithBOTHangularsigns musthaveD[y5]nonzero. GenuineMIXEDevenD0sectorisempty; one-sidedpure safephasesnotexcluded. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section8;Corollary4 |
 | ED0-NORMALIZED-D0-PURE-PARAMETER-SET-EMPTY | claim | proved / partial | For theexactnormalizedPFP-evenD0,BCnonzerochart, no geometricPUREphase exists, so its finitegeometriclambda2parameterimageisempty. This directanalyticalconclusion needs no PFP/globalrecognition theorem. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section8 finalparagraphs |
@@ -21604,6 +21888,7 @@ Tracked obligations from the catalogue:
 | HOPF-ALL-HEIGHT-PULLBACK-PURITY-DESCENT | claim | proved / partial | Under exactly the same fixed-height polynomial admissibility hypotheses, ALL source positive pure moments0 imply ALL target positive pure moments0, again with marker1. This is the explicit reverse of purity preservation. | see incoming proof routes |
 | ED0-EPF-D0-EXACT-SQUAREFREE-POLYNOMIAL-ONE | claim | proved / partial | The alreadyproved exactEPFD0PUREparameteralgorithm mustoutput1 on thisspecificemptygeometricchart. No eliminationrun or numericalprefix is claimed; EPFinterfaceonlydownstream. | [foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md](foundations/extended-geometry/EVEN_QUINTIC_D0_BALANCED_PRYM_ORDINARY_OBSTRUCTION.md): Section8 finalparagraphs |
 | EPF-EXCLUDED-RATIO-VALUES-PRESERVED | claim | proved / partial | Exact geometricPUREratio polynomials in residualI/II and evenD0 are coprime to T(T+2), by separately proved PFP zero/minus2exclusion. This is a scope consequence, not an ingredient of elimination. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section6;equations9--10 |
+| EOP5-BC-NONZERO-NONPURE | claim | proved / partial | For phase(1) with BC!=0, the exact old finite14 theorem gives a nonzero native moment by14, hence notpure. No eventual-purity assertion or sharpness premise is used. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Section2 BC14;Theorem3 necessity |
 | HOPF-ALL-START-BELOW-SHARP-DEGREE-SAFETY | claim | proved / partial | For every integer a>=0 in the entire regular two-term class, all pure phases of least degree<2a+4 are safe for every fixed sphere and original polynomial marker. Zero-center phases are safe; below the bound the unit center is only the scalar constant pair, with corrected bounded original output-weight transfer. Even a zero centers are proved from their first two moments, including a0. | see incoming proof routes |
 | HOPF-ALL-START-EXACT-MINIMUM-UNSAFE-DEGREE | claim | proved / partial | For each fixed integer a>=0 and every characteristic-zero field, the least sphere/radial-primitive balanced degree admitting purity without eventual all-marker safety in the exact class t^a(C+t^2D)/x is exactly2a+4. This is a class-specific law and not a minimum for arbitrary height profiles or arbitrary Image polynomials. | see incoming proof routes |
 | HOPF-ALL-START-UNIQUE-MINIMUM-EQUALITY-CLASSIFICATION | claim | proved / partial | For every integer a>=0 among nontrivial pure normalized unit-center phases, degD=a+3 iff least sphere degree2a+4 iff C=(1+lambda x)^(a+1),D=-(1+lambda x)^(a+3) for a unique lambda inK nonzero. All directions are supplied: phase minimum→D minimum→family→both degree identities and marked unsafety. | see incoming proof routes |
@@ -21614,8 +21899,11 @@ Tracked obligations from the catalogue:
 | HOPF-ODD-CUBIC-UNIT-ELEVEN-PURITY-EXCLUSION | claim | proved / partial | Over every characteristic-zero field, the c/e possibilities for exact least degree11 are all excluded by the full stable-field ramification/value filters, rational-reflection capacity, or maximal disjoint simple-root capacity. There is no unit-center pure phase of exact degree11; the zero-center branch is instead pure and safe when its retained divisibility condition holds. | see incoming proof routes |
 | HOPF-ODD-CUBIC-UNIT-SEPTIC-PURITY-EXCLUSION | claim | proved / partial | For normalized unit-center odd-cubic phases, rationality gives c=degC,e=degD of the same parity and least degree max(c,e+2). At degree7 the complete c/e/h cases are excluded by one-pole/two-root/squarefree results or map-degree bounds. The last c7,e5,h3 case forces disjoint primitive poles of totaldegree4, but only at most two simple C-roots can support the conjugate primitive, each with pole order<=1. Contradiction. | see incoming proof routes |
 | HOPF-ODD-CUBIC-HYPERBOLIC-CANONICAL-QUOTIENT-EXAMPLES | claim | proved / partial | For the retained hyperbolic/Q-deformed odd-cubic examples, w_N=((1+lambda x)^N-1)/(Nlambda), E=K((1+lambda x)^N), g=N and quotient parameterlambda_bar=Nlambda,Nbar1. Existing F13 is a degree2 pullback of degree8, and F37 a degree2 pullback of degree20. This is a structural explanation of existing witnesses, not new constructions. | see incoming proof routes |
+| EOP5-PURE-ONE-SIDED-NECESSARY | claim | proved / partial | For EVERY char0 field and phase(1), PURE implies P=0 or(q0=B=0). The actual degree<=3/degree5 partition uses the local cubic lemma and Newton B-plus-two-leader necessity, followed by C!=0 BC14 or C=0 BD12. D0 analytic is not a premise. No uniform14 cutoff on the whole eight-dimensional space or eventual classification follows. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3 necessity |
 | HOPF-ODD-CUBIC-ODD-LOW-DEGREE-SAFETY | claim | proved / partial | Over every characteristic-zero field, all regular winding-one odd-cubic phases p=t*x^-1(C+t^2D) of odd least degree<=7 are eventually safe for every fixed sphere and original polynomial marker. Zero-center phases are safe in all degrees; there are no unit-center pure phases of exact degree7. Unsafe even degree6 is not excluded. | see incoming proof routes |
 | HOPF-ODD-CUBIC-ODD-UNSAFE-THRESHOLD-NINE | claim | proved / partial | Among all regular winding-one odd-cubic phases over any characteristic-zero field, the least ODD degree admitting purity without eventual all-marker safety is exactly9. Odd degrees<=7 are safe and the already retained C=(1+x)^3,D=-(1+x)^7 gives the primitive non-power degree9 witness with original fixed marker Z^2. No global minimum for arbitrary Image phases is asserted. | see incoming proof routes |
+| EOP5-EXACT-PURE-LOCUS | claim | proved / partial | Over every char0 field, phase(1) is PURE iff P=0 or(q0=B=0), the union of its two original angular one-sided coefficient subspaces. This is a PURE classification only. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3;equation7 |
+| EOP5-PURE-FULL-AMBIENT-SAFETY | claim | proved / partial | Every PURE member of phase(1) is safe against every marker in full A_K; indeed Lambda(g*f^m)=0 for m>deg g. Uses PURE necessity and the one-sided marker proof, not a converse from safety/eventual purity. | [foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md](foundations/extended-geometry/EVEN_ODD_ANGULAR_STRIPPED_QUINTIC_PURITY_CLASSIFICATION.md): Theorem3;equation8 |
 | HOPF-HIGHER-START-FINITE-DIFFERENTIAL-ZERO-OBSTRUCTION | claim | proved / partial | At any reduced numerator root with multiplicities p,h, ord u=ap-h and ord omega=(a-1)p-h. Thus h<(a-1)p is precisely a finite zero of omega, permitted at higher starting heights. The existential large common-root theorem controls SOME compensating root and does not impose a global divisibility at every numerator root. | see incoming proof routes |
 | HOPF-HIGHER-START-TWO-ROOT-PHI-ONE-COUNTEREXAMPLE | claim | proved / partial | For every odd a>=3, U=1+x,V=1+2x/3,C=V^(a-2)U^(a+3),D=-V^aU^(a+5),X=UV has Phi1, all-order purity, fixed-marker unsafety and exact degree3a+6. At V0, ordH=a-2< a-1 while another root supplies the existential compensating pole. C/X^(a-1)=U^4/V has a genuine simple pole; the universal all-root divisibility assertion is false. | see incoming proof routes |
 | HOPF-ODD-COMPOSITION-OUTER-POLE-GUARD | claim | proved / partial | For a nontrivial polynomial pure outer phase, a finite pole of rationalw of orderk gives ordD=a+2+k(1-ebar). The sharp ebar>=a+3 forcesk1,ebar=a+3, so the outer phase is sharpPhi1. Therefore nonconstant-Phi polynomial outer data require polynomialw. Rational outer phases in the exhaustive normal form are outside this premise. | see incoming proof routes |

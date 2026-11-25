@@ -735,3 +735,211 @@ identical multiplier assignments. Thus the broad
 profile obstruction for maximum row height applies
 directly there, while estimates for asymmetric
 column means pose a separate optimization problem.
+
+## Column-mean bounds for the broad uniform profile
+
+### A one-sided mixed-area inequality at the sample centroid
+
+Let \(S\subset\mathbb R^2\) be a bounded measurable set of
+positive area \(A\), with centroid \(m\), and let \(P\)
+be its closed convex hull. One free letter contributes a finite
+positive measure of normal vectors \(\eta\) in an open
+semicircle, including the common sign appropriate to that
+letter. Write \(Z=\int[0,\mathcal R\eta]\,d\nu(\eta)\) for
+its directional zonotope, with \(\mathcal R\) rotation by
+a positive right angle. Its Archimedean mean contribution
+is
+\[
+ B_{\rm side}=\int [h_P(\eta)-\eta\cdot m]\,d\nu(\eta).
+\]
+Then
+\[
+                  B_{\rm side}\ge
+             \frac{2\sqrt2}{3}\sqrt{A\,|Z|}.
+ \tag{CM1}
+\]
+
+Here is a proof retaining the missing closing edge.
+First take an atomic measure. Sort the edges
+\(\mathcal R\eta\) with their positive measure weights,
+and append their negative sum as the closing base.
+The resulting convex cap \(K\) has area \(|Z|/2\):
+its signed polygon area is half the sum of determinants
+of the ordered pairs from the one-sided chain.
+Position the base on \(y=0\), with \(K\) above it,
+and translate \(P\) by \(-m\). Call the base length
+\(l\) and the downward support height of \(P\) equal to
+\(a\). The mixed-area expression is
+\[
+ B_{\rm side}=2V(P,K)-la.
+\]
+As \(t\downarrow0\), the portion of \(K+tP\) below
+\(y=0\) has area \(lat+o(t)\).
+For the upper bound, it is confined to depth \(ta\)
+and its horizontal projection tends to that of the
+base, by compactness. For the lower bound, translate
+\(K\) by \(t\) times a point of \(P\) at depth \(a\),
+and use that the horizontal sections immediately above
+the base have length tending to \(l\).
+Thus \(B_{\rm side}\) is the derivative at zero of
+the area of \((K+tP)\cap\{y\ge0\}\). This set contains
+\(K+t(P\cap\{y\ge0\})\), so Brunn–Minkowski gives
+\[
+ B_{\rm side}\ \ge\
+ 2\sqrt{|K|\,|P\cap\{y\ge0\}|}.
+\]
+
+Even for nonconvex \(S\), the latter cap has area at
+least \(4A/9\). Indeed choose the upper cap of \(P\)
+of area \(A\). Its \(y\)-centroid is at least the
+\(y\)-centroid of \(S\), namely zero, since among
+subsets of area \(A\) it maximizes the first moment
+of \(y\). The halfspace above the centroid of this
+convex cap has at least \(4/9\) of its area by planar
+Grünbaum, and lies within \(P\cap\{y\ge0\}\).
+This proves (CM1). Approximate the normal measure by
+finite atomic measures to obtain the general bounded
+case. [Grünbaum, Partitions of mass-distributions and
+of convex bodies by hyperplanes](https://msp.org/pjm/1960/10-4/pjm-v10-n4-p18-s.pdf)
+
+### Application when the area is continuous
+
+For each free letter use the corresponding signed
+normal vectors of (ST13). The vectors
+\(\eta=(i,r-ai)\) lie in the open semicircle
+\(a\eta_x+\eta_y=r>0\), even for signed \(i\).
+The sign of the chosen letter only reverses this
+semicircle and does not affect its zonoid area.
+The periodic-window proof preceding (ST11) gives
+\[
+ |Z_W|\ge \frac34s_W^3
+\]
+for any retained mass \(s_W\) and any signed
+nonzero integer multipliers. Let \(s=(s_A+s_B)/2\) and
+\(g=2s-1/3\) as before. Adding the two applications of
+(CM1) and using convexity of \(x^{3/2}\) gives
+\[
+ B_{\rm mean}\ge\frac{2\sqrt2}{3}\sqrt A
+      \left(\sqrt{|Z_A|}+\sqrt{|Z_B|}\right)
+ \ge\sqrt{\frac83 A s^3}.
+ \tag{CM2}
+\]
+This accounts for the Archimedean centroid shift without a maximum-row bound.
+
+In the continuous-area model the rank size satisfies
+\(y\le A\). The unrestricted two-dimensional error-order
+mean is at most \((2/3)\sqrt{2bwy}\). Thus under the
+strict root budget \(\mu+b<g\), and \(w\le4\mu\), its
+square is strictly less than
+\[
+       \frac89 A g^2\le\frac83 A s^3.
+\]
+The finite error strip at large rank is not covered by
+this unrestricted mean, so this comparison is made
+in the range before its last strip is crossed. The
+following same calculation excludes the capped range
+as well in the continuous-area model. Put \(n=J+1\),
+\(t=by/w\), \(r_*=\phi_J(t)/\sqrt t\), and \(v=b/g\).
+Necessity of the horizontal-width lower bound, in a
+normalization where the support uses at most \(n\)
+horizontal levels, gives \(v>t/(n\phi_J(t))\).
+In the actual discretized setting this inequality holds
+with its stated summed slice area, independently of
+(CM2): on a slice of horizontal length \(\ell\), integration
+of each one-sided horizontal distance costs at least
+\(\ell^2/2\). Summing and using Cauchy gives the mean
+height at least \(h\mathcal A/n\), where \(h\ge s\).
+In the finite-strip range \(t\ge Jn/2\), the formula for \(u=n\phi_J(t)/t\) in the proof of (ST12) then
+gives
+\[
+ [2\sqrt{v(1-v)}\,r_*]^2
+    \le 4\bigl(\phi_J(t)/n-t/n^2\bigr)
+    \le 2/3-4/(3n) <8/9.
+\]
+The same estimate applies in a continuous model that
+retains this width bound. In the unlimited model (CM2)
+alone suffices at every rank.
+
+### A quantitative discrete correction
+
+For actual integer horizontal slices, let
+\(\mathcal A\) be the sum of their individual lengths,
+and take \(m\) to be the centroid of their length measure.
+For each side separately, choose any vector \(v_W\)
+with vertical coordinate one and sweep every slice by
+\([-v_W/2,v_W/2]\). These bands have disjoint interiors,
+total area \(\mathcal A\), and the same centroid \(m\).
+Their convex hull is \(P+[-v_W/2,v_W/2]\).
+Apply (CM1) to this thickened support.
+Its additional one-sided height is
+\(\frac12\int|\eta_W\cdot v_W|\,d\nu_W'\).
+Consequently, with the optimal tilt error
+\[
+ e_W=\inf_{a'}\int|r-a'i_W(r)|\,d\nu_W'(r),
+\]
+one obtains the exact perturbative bound
+\[
+ B_{\rm mean}+\frac{e_A+e_B}{2}
+ \ \ge\ \frac{2\sqrt2}{3}\sqrt{\mathcal A}
+            \left(\sqrt{|Z_A|}+\sqrt{|Z_B|}\right).
+ \tag{CM3}
+\]
+The error is at most \(2(s_A+s_B)\) by taking \(a'=0\).
+This comparison holds for arbitrary signed nonzero
+multipliers and arbitrary sparse slices.
+
+There is a strict uniform numerical gap in the zonotope bound preceding (ST11) for
+retained masses bounded away from zero, even when
+integer multipliers are allowed to grow. To prove this,
+suppose masses \(s_j\to s>0\) and the zonoid area tends
+to \(3s^3/4\). Fix \(s_0>0\) below the masses.
+For anchored \(r_0\ge2+3s_0\) and sufficiently large
+\(\lvert i_0\rvert\), the periodic-window bound improves
+the coefficient \(1/3\) in the mass bound \(t/3\)
+by a uniform factor. In fact the interval length
+two is at most \(2|i_0|/r_0+1\) periods after rounding
+up, so the covered length is at most
+\(2t(2/r_0+1/|i_0|)\).
+Every such anchor then contributes a fixed excess above
+\(3s_j^2/2\) in its determinant integral. Its mass
+must tend to zero. The set \(r_0\ge2+3s_0\) itself
+has mass at least \(s_0/2\) by the original density
+cap, so this gives a bounded-\(|i_0|\) anchor subset
+of fixed positive mass. Integrating
+\(|i_0r-i r_0|\ge 2|i|-4|i_0|\) against those anchors
+shows that \(\int |i|\) stays bounded.
+
+The marked measures in \(r,i\) are tight. Their limit
+preserves the density cap, and lower semicontinuity of
+the nonnegative determinant integral would give
+equality in the zonotope bound preceding (ST11). At equality the conditional
+integral at almost every anchor equals \(3s^2/2\),
+so its sublevel mass is exactly \(t/3\) on
+\(0\le t\le3s\), and its support has determinant
+at most \(3s\). The same holds at all support anchors
+by continuity on each integer multiplier stratum,
+using the finite first moment of \(|i|\).
+For any one fixed anchor the resulting bound on
+\(|i_0r-i r_0|\) bounds every \(|i|\), and opposite
+signs cannot coexist because then the determinant is
+at least four. Choose the common sign positive and an
+anchor minimizing \(r/i\) on this compact support.
+Its determinants all have one sign. The periodic
+sublevel windows now have only half their former
+length, giving conditional mass at most \(t/6\).
+This contradicts equality and proves the uniform gap.
+
+In an endpoint test at least one free mass is at least
+\(s>1/6\), so this uniform gap adds a fixed positive
+multiple of \(\sqrt{\mathcal A}\) to the right side
+of (CM3), beyond the continuous constant in (CM2).
+It absorbs the absolute tilt error in (CM3) whenever
+\(\mathcal A\to\infty\). In the unlimited Taylor
+range this excludes the one-root column-mean
+criterion on the broad profile. In the finite-strip
+range the horizontal-width constraint and the
+calculation above already give a strict upper
+coefficient below the continuous constant. Thus a
+possible escape for the actual sparse determinant
+must have bounded summed slice area and an
+asymmetric column mean.

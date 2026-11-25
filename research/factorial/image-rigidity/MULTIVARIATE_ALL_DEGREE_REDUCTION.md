@@ -102,8 +102,12 @@ The same comparison forces a simple zero with vanishing order
 derivative. The [zero-separation theorem](MULTIVARIATE_HALF_LINE_CUBIC_ZERO_SEPARATION.md)
 and its [negative-temperature extension](MULTIVARIATE_HALF_LINE_CUBIC_NEGATIVE_TEMPERATURE.md)
 show that both exceptional temperature sets are finite. Their
-membership remains unevaluated outside the interval \([-1,1]\)
-excluded by the [uniform central certificate](MULTIVARIATE_HALF_LINE_CUBIC_BOUNDED_TEMPERATURES.md).
+membership remains unevaluated outside the interval \([-2,2]\)
+excluded by the [extended interval certificate](MULTIVARIATE_HALF_LINE_CUBIC_EXTENDED_TEMPERATURES.md).
+The [first linked corrections](MULTIVARIATE_PRIVATE_CUBIC_LINKED_SIMPLE_LIMITS.md)
+give additional necessary conditions at simple candidates. They
+constrain the integer degree drift at a same-height crossing and
+the possible first-order row coefficients at a speed zero.
 
 The curvature rescaling by itself does not discretize the limiting
 temperature. For example, append a private linear row and choose
@@ -131,6 +135,15 @@ collisions already at six, as shown by the
 [coefficient-link calculation](MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md).
 A proof at each remaining terminal must retain the links between the
 two orders or use the exact arithmetic of the factorial coefficients.
+The [joint curvature measure](MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md)
+uses an exact factorial density for each primitive row curve. It
+couples all orders and determines the relative center. Relaxing only
+these densities to arbitrary positive measures on the same curves
+already gives a collision at orders two and three.
+The [uniform curvature closure](MULTIVARIATE_JOINT_CURVATURE_PROFILE_CLOSURE.md)
+identifies the actual diffuse part as a diagonal density \(r\,dr\).
+Its error is uniform in the two curvature indices, and the relative
+centers have one additional signed diffuse parameter.
 At terminal six, [one-private-side separation](MULTIVARIATE_TERMINAL_SIX_ONE_PRIVATE_SIDE.md)
 and the [two-private linear certificate](MULTIVARIATE_TERMINAL_SIX_TWO_PRIVATE_LINEAR.md),
 together with the [other private-degree criteria](MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md),
@@ -139,8 +152,14 @@ terminal-six family is fully shared. The same linked angular theorem
 covers \(S\ge6\), and the
 [effective relative-gap bands](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md)
 give explicit angular separation for \(5/4\le S\le6\) under the
-respective relative-gap bounds. Arbitrary fully shared profiles
-in the remaining intermediate range are open.
+respective relative-gap bounds. The
+[near-flat certificate](MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT.md)
+covers the order-five outer mean \(u\ge24/25\). In particular
+it covers \(S\le1/11\). To see this, if \(\eta=\max |b-a|/r\)
+then \(\eta\le S\) by integrality, and the coefficient bound in
+the diffuse-band note gives
+\(u\ge \exp(-2S/[5(1-\eta)])\ge1-2S/[5(1-S)]\ge24/25\).
+Arbitrary fully shared profiles between these proved ranges remain open.
 
 A prescribed finite set of primes and precisions alone cannot give
 a universal exclusion. The
@@ -164,3 +183,27 @@ choices. The two moments at orders one and two already lie in the
 low-terminal theorem. An all-degree proof requires both eventual
 exclusion and coverage of every terminal it leaves below its cutoff,
 or an argument that works directly at every terminal.
+
+## The discrete row-merger route
+
+For proportional rows the [joint density comparison](MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md#inflation-and-identification-along-a-primitive-slope)
+orders the effect of integer inflation and identification on all
+coefficient curvatures. For nonproportional shared rows the
+[exact merger sign law](MULTIVARIATE_ROW_MERGER_CURVATURE_SIGN.md)
+gives an explicit flattening threshold and a decrease of the leading
+stationary curvature. These comparisons leave the corresponding
+root transfer open.
+
+There is an [all-order physical binary transfer](SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md)
+when untouched independent rows leave at least two units of private
+exponent on each side. The proof applies to every positive correlated
+base with finite mixed moments, by Hölder's inequality and separation
+of the root arguments.
+
+A proof for arbitrary support size cannot rely on zero-freeness
+throughout the physical Gaussian interpolation. An
+[ordinary three-monomial example](SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md)
+has regular endpoints for the window of orders two through four
+and a common projective zero at a physical squared correlation
+strictly between \(21/25\) and \(17/20\). The discrete endpoint
+transfer and the general binary interpolation remain open.

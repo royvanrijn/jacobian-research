@@ -2208,3 +2208,275 @@ surplus over the shorter height is impossible
 on this prescribed pair. The other two letters
 are fully diffuse and their pair remains
 affordable by the earlier argument.
+
+## Local sparsity of targets over a fixed full-divisor pair
+
+Use the normalized \(abc\) box scale \(n=X^L\). Consider
+actual balanced endpoint sequences, and fix two coprime
+full divisor records \(F\mid U\) and \(G\mid V\).
+Let \(w_F,w_G\) be their numerical weights. Suppose
+\[
+             w_F+w_G-\min(h_U,h_V)\ge\eta>0
+\]
+with fixed positive margin. This is the surplus in the
+affordable pair-lock reduction. Then for every fixed
+normalized allowance \(\epsilon>0\) there is a
+positive numerical window exponent \(\delta>0\)
+such that every interval of length \(X^\delta\) contains
+at most \(n^{\epsilon+o(1)}\) distinct admissible targets
+from the fixed record. In the iterated endpoint limit this bound is uniform across
+the endpoint sequences and the record choices with
+the stated surplus. It does not restrict the number
+of separated intervals met by the full target fibre.
+
+### Affine collinearity in one short interval
+
+Write \(U=Fu,\ V=Gv\), and permute the names so \(V\)
+has the shorter complete numerical height. In a
+fixed interval of target values, fix one reference
+point \((u_0,v_0,T_0)\), and write
+\(\Delta u_i=u_i-u_0\), \(\Delta v_i=v_i-v_0\),
+\(\Delta T_i=T_i-T_0\). Absorb the fixed signs into
+the linear equation for \(T\). Then
+\[
+      F(\Delta u_1\Delta v_2-\Delta u_2\Delta v_1)
+           =\pm(\Delta T_1\Delta v_2-
+                         \Delta T_2\Delta v_1).
+\]
+The right side has absolute size at most
+\(X^{\delta+h_V-w_G+o(1)}\) up to a constant.
+If \(\delta<\eta\), with a fixed margin for the
+height tolerances, this is smaller than \(F\).
+Consequently all difference pairs are proportional.
+The ordinary fixed-record CRT uniqueness ensures
+that different pairs give different \(T\).
+
+If at least two pairs occur, the integer points on
+their affine line have a primitive integral
+direction \((a,b)\). The target values are therefore
+contained in one arithmetic progression with
+integer step \(Q=\pm F a\pm G b\ne0\). Its index
+diameter is at most \(X^\delta/|Q|\). If fewer than
+two occur the claimed count is immediate. In the
+nontrivial case \(|Q|\le X^\delta\), so \(Q\) has
+polynomial height uniformly.
+
+### Arithmetic count on that progression
+
+It suffices first to prove the sequential statement
+for intervals of widths \(X^{\delta_j}\) with
+\(\delta_j\to0\). Strip and fix the \(Q\)-supported
+part of every original target root at subpower
+cost by the fixed-support divisor count. For \(|Q|\le X^C\), a number of size \(X^{O(1)}\) with prime support in \(Q\) can be chosen in \(X^{o_X(1)}\) ways, uniformly in \(Q\), by [the supported divisor count](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#a-radical-count-contradiction-to-the-claimed-smooth-number-lower-bound).
+The exceptional coefficient can be fixed separately
+as in the original box. Refine the residual root
+scales and pass to a limiting residual degree
+measure, whose first moments remain bounded.
+
+If that measure has positive nonatomic mass, choose
+a compact positive band containing a positive
+amount of it. It supplies a residual full block
+of an arbitrarily small fixed root cost and fixed
+positive numerical weight. The lock uses whole
+small root positions of the residual band after
+removing the atomic windows, and is coprime to
+\(Q\). The requirement that the target is zero
+modulo the lock determines its progression index
+modulo the lock. Its positive numerical weight
+exceeds \(\delta_j\) eventually. Therefore each
+lock record gives at most one target, counted at
+the arbitrarily small fixed root cost.
+
+If the residual measure is purely atomic, choose
+a finite list of its atoms capturing all but an
+arbitrarily small root mass. Keep slowly shrinking
+windows at its positive selected atoms and at zero.
+Freeze the other positions at arbitrarily small
+normalized cost. This includes any escaped
+numerical first moment, since it has vanishing
+root mass. Group each retained positive window at
+its fixed representative scaled degree. The
+exponent corrections and the zero window go into
+a wider rational factor of numerical height
+\(X^{o(1)}\). All fixed factors, including the
+stripped supports, multiply the exact odds by a
+constant.
+
+The numerical height of the complete target is
+bounded below at the endpoint by the existing
+short-height exclusion in [the real gap bound](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-strict-saving-when-the-short-term-is-small). Taking a value in the
+interval as the center, its relative width is
+\(X^{-\tau}\) for a fixed \(\tau>0\) once
+\(\delta_j\to0\). Apply the unequal-height
+real strip [RUW1](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-real-strip-with-unequal-root-heights) to the grouped target with
+the fixed factor absorbed into the strip center.
+Choose its normalized counting tolerance small
+first, then use that the wider exponent tends
+to zero. Multiplicity at a fixed exact target
+is divisor-many at fixed truncation, or can be
+made one by choosing a witness representation.
+This yields arbitrarily small normalized cost
+also in the purely atomic case.
+
+For the uniform positive-width statement, suppose
+a fixed \(\epsilon>0\) is contradicted for every
+positive width exponent. Choose a diagonal
+sequence of actual endpoint boxes and fixed
+records at widths with \(\delta_j\to0\), still
+violating the bound at that \(\epsilon\), taking
+the inner height limits first. The preceding
+argument applies to that sequence after fixing
+and refining the support records at subpower
+cost. This is a contradiction. The two cases
+cover all residual spectra, including when
+the original target was a macroscopic-prime
+atomic letter.
+
+
+### Numerical interval entropy
+
+For a uniform edge in the box write \(I=\lfloor T/X^\delta\rfloor\)
+and let \(Y\) be its affordable pair record of normalized cost \(t\).
+A pair \((Y,T)\) determines the edge by (PQ4). If the family has
+\(n^{d+o(1)}\) edges, the interval bound yields
+\[
+ H(I\mid Y)\ge (d-t-\epsilon-o(1))\log n.
+ \tag{PQ5}
+\]
+Indeed \(H(T\mid Y)=H(\mathrm{edge}\mid Y)\ge(d-t-o(1))\log n\),
+and \(H(T\mid I,Y)\le(\epsilon+o(1))\log n\). Equivalently, there
+must be at least \(n^{d-t-\epsilon-o(1)}\) occupied intervals of
+width \(X^\delta\) on at least one record. The uniform endpoint
+obstruction is now the number of such separated intervals met
+by an actual affordable fibre.
+
+## Progressions in a wholly diffuse target dictionary
+
+A wholly nonatomic target measure gives sparsity in an ordinary
+arithmetic progression of arbitrary step with index diameter
+at most \(n^C\), for any fixed \(C\). The intersection has size
+\(n^{o(1)}\) in the iterated endpoint sense. If the progression
+contains two target values of polynomial height, its nonzero
+step has polynomial height. Fix and strip its supported target
+parts as above. On any subsequence the residual measure is
+dominated by the original target measure, so it is nonatomic.
+If its mass tends to zero, enumerating all residual coordinates
+is subpower in \(n\). Otherwise a fixed positive-weight full
+block at arbitrarily small cost determines the progression index
+as soon as its size exceeds \(n^C\). Such a block exists by the
+same positive-band argument, since \(X^w>n^C\) for every positive
+fixed numerical weight \(w\) once \(L\) is sufficiently small.
+The argument applies to any subfamily of the dictionary.
+
+There is an additive consequence for a set \(\mathcal S\) of
+such target values of size \(n^{r+o(1)}\) with \(r>0\) fixed.
+Its doubling tends to infinity in the iterated limit. If the
+doubling were bounded on a subsequence, the inverse theorem
+would contain \(\mathcal S\) in a proper generalized arithmetic
+progression of bounded positive rank \(R\) and size
+\(O(|\mathcal S|)\). The longest coordinate has length at
+least \(|\mathcal S|^{1/R}\). Fixing the other coordinates gives
+\(O(|\mathcal S|^{1-1/R})\) slices of index diameter at most
+\(n^{r+o(1)}\). Each meets the target dictionary in \(n^{o(1)}\)
+values, a contradiction. By the Balog–Szemerédi–Gowers theorem,
+also \(E_+(\mathcal S)=o(|\mathcal S|^3)\), where \(E_+\) counts
+ordered equal-sum quadruples. A positive fraction of cubic
+energy would give a subset of comparable size with bounded
+difference growth and hence bounded doubling by Plünnecke's inequality
+applied to \(\mathcal S',-\mathcal S'\). The new subset has the same
+progression bound. These conclusions
+supply no power bound on either the doubling or the energy.
+[Green–Ruzsa, Theorem 1.1](https://arxiv.org/abs/math/0505198)
+· [Reiher–Schoen, Theorem 1.1](https://arxiv.org/abs/2308.10245)
+· [Petridis, Theorem 1.1](https://arxiv.org/abs/1101.3507)
+
+## A diffuse target family with no cheap heavy-lock record
+
+This example imposes genuine small-radical, indexed-power
+arithmetic on the target values themselves. It isolates
+a limitation of trying to control a fixed-record fibre
+using only target marginal entropy and the sizes of
+its prime coordinates. It does not realize the targets
+as sums or differences in a common primitive two-divisor
+fibre.
+
+Fix a desired sample exponent \(0<r<1/3\).
+At each fixed large integer \(m\), set \(L=1/m\),
+\(n=X^L\), and \(J=2m-1\). Use degree positions
+\(e=2m+1,\ldots,4m-1\) and give every root the same
+normalized box mass \(\beta=1/(3J)\). Set \(H=n^\beta\).
+Choose disjoint prime pools in \([H/4,H/2]\) for the
+\(J\) positions, each with \(q\) primes, where \(q\)
+is a power of two and
+\[
+                 q=n^{\beta-o_X(1)}.
+\]
+This is possible by the prime number theorem with
+\(m\) fixed in the height limit. Fix a bijection
+between each prime pool and the elements of
+\(\mathbb F_q\). Use \(J\) distinct field evaluation
+points \(a_e\). For \(k=\lfloor r/\beta\rfloor\)
+and each polynomial \(f\in\mathbb F_q[z]\) of degree
+less than \(k\), form the integer
+\[
+        T_f=\prod_e p_e\bigl(f(a_e)\bigr)^e ,
+\]
+where \(p_e\) is the prime assignment for position
+\(e\). Take \(m\) large enough that \(1\le k<J\).
+
+The target values are distinct: their prime
+factorizations recover the evaluation vectors,
+and \(J\ge k\) distinct evaluations determine
+\(f\). All lie at the full global height
+\(T_f\asymp_m X\), and in particular below \(X\)
+for large \(X\), since
+\[
+   \sum_e \beta=\frac13,\qquad
+   \sum_e eL\,\beta=1.
+\]
+The interval \([H/4,H/2]\) changes the products by
+multiplicative constants depending on \(m\), not on
+\(X\). Similarly \(\operatorname{rad}(T_f)\asymp_m
+n^{1/3}\), with the upper bound \(n^{1/3}\).
+The weak indexed root law tends to the wholly
+nonatomic \(\frac13\operatorname{Unif}[2,4]\).
+The family size is
+\(q^k=n^{r_m-o_X(1)}\), where \(r_m=k\beta\to r\).
+These claims take the height limit first at each
+fixed \(m\).
+
+Every selected full prime factor is one of the
+individual \(p_e(f(a_e))^e\). For any fixed record on
+\(j\) positions, its fibre within this family has
+exactly \(q^{k-j}\) elements when \(j\le k\), by
+polynomial interpolation on distinct evaluation
+points. For \(j\ge k\) the record determines
+\(f\) if it occurs at all. Thus every subset of
+\(j\le k\) root coordinates has full entropy
+\(j\log q\) on the uniform family. Larger choices
+have the full joint entropy \(k\log q\).
+
+The same fibre bound controls adaptive choices.
+On any subfamily of size \(n^{r_m-o_X(1)}\), if every
+record chooses at least \(j_0\) positions, its record
+dictionary has size at least
+\[
+          n^{\beta\min(j_0,k)-o_X(1)}.
+\]
+The positions are included in each record, and
+no independence of the adaptive choice is needed:
+each possible record has at most
+\(q^{k-\min(j_0,k)}\) preimages even in the whole
+family. In particular a target lock of numerical
+weight strictly above \(4r_m\), with fixed margin,
+must use more than \(k\) positions, since each
+position contributes at most \(4\beta+o_X(1)\).
+It specifies at most one target. Its dictionary
+therefore has the entire \(n^{r_m-o_X(1)}\)
+exponent, even though it may be chosen adaptively.
+
+Thus a conditional-marginal entropy argument alone cannot ensure
+a dictionary cost below \(r\) for a target lock whose numerical
+weight exceeds \(4r\) by a fixed margin. A primitive additive
+realization with common fixed coefficients would require
+additional arithmetic.

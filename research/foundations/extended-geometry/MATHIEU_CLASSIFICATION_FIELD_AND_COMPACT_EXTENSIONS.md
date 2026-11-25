@@ -3163,3 +3163,137 @@ For the upper bound, the anti-isometry over \(K(X^-)\) gives \(dn\langle1\rangle
 Over \(F_0\) this scalar isometry gives the corresponding anti-isometry in rank \(b/d\) for each coefficient algebra. For Hermitian forms, the assertion follows by Witt cancellation: the scalar form of \(h\perp h\) is hyperbolic, so one splits Hermitian hyperbolic planes successively. An isotropic vector for the scalar norm of a Hermitian form is an isotropic vector for that form, and each split Hermitian hyperbolic plane contributes a hyperbolic scalar summand. The remaining Hermitian anisotropic part must therefore be zero. The coefficient division algebras are still division over \(F_0\) in the Hermitian cases, because its level is at least \(d\). Taking an orthogonal sum of copies gives an anti-isometry in rank \(n\). In the orthogonal case its determinant can be adjusted by a reflection. In the unitary case its determinant has norm one and can be adjusted by a diagonal vector of that norm. Consequently \(X^-(F_0)\) is nonempty. The smooth torsor has a regular \(F_0\)-point, so its function field embeds into an iterated Laurent series field over \(F_0\), using the completed local ring at that point. Anisotropy of \(b\langle1\rangle\) persists under such an extension by taking leading coefficients. This gives \(s(K(X^-))\ge b\) and proves the equality.
 
 If \(n\) is a power of two, the scalar form \(dn\langle1\rangle\) therefore stays anisotropic over \(K(X^-)\). Over this field the connected isometry group has no split torus, and this also holds over every invariant subfield of \(K(X^-)\). Thus no choice of reductive subgroup gives the split generic-orbit mechanism for these central twists. Their individual trace classification still requires another argument.
+
+
+## A global obstruction at intersecting mirrors
+
+**Theorem (Large sublevel mass excludes a pure trinomial).**
+
+Let \(M\) be a smooth compact manifold of dimension two or three, with positive smooth probability density \(\mu\), and let \(P=A+B/t+Ct\) have real smooth coefficients. Suppose there is a nonnegative function \(U\) on \(M\) with
+\[
+                   \frac{\mu\{U\le\epsilon\}}{\sqrt{\epsilon}}
+                                      \longrightarrow+\infty
+                         \quad(\epsilon\downarrow0).
+\]
+At one global extremum \(a\) of the nonconstant center \(A\), suppose there is a constant \(w\) such that
+\[
+                         A=a+O(U),\qquad 4BC=w+O(U)
+                         \quad\text{on }\{U\le\epsilon_0\}.
+\]
+Then \(P\) cannot have all positive pure moments zero.
+
+After replacing \(P\) by \(-P\) if necessary, take \(a=\max A\). Purity gives \(a>0\) and, by the axial endpoint theorem, \(A+2\sqrt{(BC)_+}\le a\) everywhere. In particular \(w\le0\). Define \(r_\pm=A\pm2\sqrt{BC}\), choosing the nonnegative real square root for \(BC\ge0\) and the square root of positive imaginary part otherwise. The Cauchy-transform identity on the entire half-plane \(\operatorname{Re} z>a\) is
+\[
+ \frac1z= \int_M
+             \frac{d\mu}{\sqrt{z-r_+}\sqrt{z-r_-}} .
+\]
+The factors use the square root on the right half-plane. This identity first follows by taking the Laurent constant term for large positive \(z\), and extends holomorphically. Both \(z-r_\pm\) have positive real part throughout, so the real part of the displayed integrand is positive.
+
+If \(w<0\), take \(z=a+i\sqrt{-w}+\delta\) with real \(\delta>0\). On \(U\le\delta\) the first factor under the square root has modulus bounded above by a constant times \(\delta\), and its real part is at least \(\delta\). Its argument is thus bounded away from \(\pm\pi/2\), uniformly in \(\delta\). The second factor tends uniformly there to \(2i\sqrt{-w}\). The real part of the reciprocal product of square roots is bounded below on this set by a positive constant times \(\delta^{-1/2}\). Positivity elsewhere shows the integral is unbounded, whereas \(1/z\) is bounded.
+
+If \(w=0\), take \(z=a+\delta\) and use \(U\le\delta^2\). There \((z-A)^2-4BC=O(\delta^2)\), and this radicand is positive for real \(z>a\). Thus the integrand is at least a positive constant times \(\delta^{-1}\) on the sublevel set. Its contribution again diverges, a contradiction.
+
+On a unit two-sphere let \(U\) be the square of a product of a finite arrangement of linear mirror forms with at least two distinct mirrors. Near an intersection point of two mirror circles their forms are independent smooth coordinates \(x,y\), and \(U\le Cx^2y^2\). In a fixed local square the area of \(|xy|\le c\sqrt{\epsilon}\) is bounded below by a positive constant times \(\sqrt{\epsilon}\log(1/\epsilon)\). The large-mass hypothesis holds on either exceptional angular quotient and on the full compact quotient after pullback, because the normalized trace pushes forward to sphere area. Thus the theorem excludes real regular three-term phases whose center and opposite coefficient product differ from constants by multiples of \(U\), with the center’s constant value a global extremum. It includes an arbitrary polynomial center and product in the squared discriminant alone whenever the center has an extremum at zero discriminant. It also permits arbitrary left-circle dependence in corrections divisible by \(U\).
+
+
+**Theorem (A stationary opposite product at an axial extremum).**
+
+Let \(M,\mu,P=A+B/t+Ct\) be as in the axial endpoint theorem. Suppose \(A\) is nonconstant and has a nondegenerate global maximum at \(x_0\), and that \(BC\) is stationary at \(x_0\). Assume all the global maxima of \(A\) lie in a single orbit of a finite group preserving \(A,BC,\mu\). If \(P\) is pure, then \(BC(x_0)=0\), and \(B(x_0),C(x_0)\) cannot both be zero. The same statement holds at a global minimum. In particular a reflection-linear phase \(A+B(t-t^{-1})/2\) cannot be pure under these hypotheses if \(B\) is stationary at the extremum.
+
+The axial endpoint theorem has already excluded \(BC(x_0)>0\) and the common zero. Suppose \(BC(x_0)<0\), put \(a=\max A\) and write \(r_\pm=A\pm i\beta\) near \(x_0\), where \(\beta=2\sqrt{-BC}>0\). The complex number \(z_0=a+i\beta(x_0)\) is an upper root. The Cauchy transform is \(1/z\) on \(\operatorname{Re}z>a\), using the branches in the previous proof. Its derivative at \(z=z_0+\delta\), \(\delta>0\), is the sum of the two terms with kernels
+\[
+    -\frac12(z-r_+)^{-3/2}(z-r_-)^{-1/2},
+    \qquad
+    -\frac12(z-r_+)^{-1/2}(z-r_-)^{-3/2}.
+\]
+Only the maxima of \(A\) can produce a singularity there, since every root has real part at most \(a\) and a nonreal root has real part exactly \(A\). All the maxima are equivalent by the stated symmetry, so they contribute the same local integrals.
+
+In local coordinates \(y\) at one maximum, stationarity gives \(r_+(x_0+y)=z_0-Q(y)+O(|y|^3)\), where \(Q\) is a complex quadratic form with positive definite real part. The root \(r_-\) stays separated from \(z_0\). The second kernel is integrable uniformly since \(|z-r_+|\ge c(\delta+|y|^2)\). The first kernel, including the local probability density, has leading integral
+\[
+                         c_0\int_{|y|<\epsilon}
+                                      (\delta+Q(y))^{-3/2}\,dy,
+                          \qquad c_0\ne0 .
+\]
+Replacing the smooth factor by its value at the maximum, and the radicand by its quadratic part, produces an error bounded by a constant times the integral of \(|y|(\delta+|y|^2)^{-3/2}\). It is \(O(1+|\log\delta|)\) in dimension two and \(O(1)\) in dimension three.
+
+In dimension two, scaling by \(\sqrt\delta\) gives a leading term \(\delta^{-1/2}\) times \(2\pi c_0/\sqrt{\det Q}\), writing \(Q\) also for its symmetric matrix. In dimension three, radial integration gives a leading term \(\log(1/\delta)\) times \(2\pi c_0/\sqrt{\det Q}\). The coefficients follow for real positive definite \(Q\) by a linear change of variables and for complex \(Q\) by holomorphic continuation on the cone of matrices with positive definite real part. For the logarithmic term the relevant sphere integral is \(\int_{S^2}Q(\omega)^{-3/2}\,d\omega=4\pi/\sqrt{\det Q}\). This also follows by integrating \(\exp(-Q)\) in polar coordinates. Each coefficient is nonzero. Since the local integrals agree at all maxima, the derivative is unbounded, contrary to the derivative of \(1/z\) at the nonzero point \(z_0\). This proves the assertion at a maximum; replacement by \(-P\) gives the minimum case.
+
+On the exceptional angular models, a rotation axis of a nonidentity group element has no fixed tangent direction. Thus any smooth invariant function is stationary there. A reflection-linear phase with an invariant Morse center whose global maximum or minimum is a single orbit of such axis points is excluded for every regular coefficient \(B\), including coefficients with singular zeros.
+
+
+**Corollary (Octahedral affine centers in reflection-linear phases).**
+
+On the octahedral angular quotient, if the center \(A\) is affine in \(p,q\), no nonzero \(P=A+B(t-t^{-1})/2\) with regular real \(B\) is pure. The coefficient \(B\) has no degree bound and may include orientation-odd terms.
+
+Ignore the constant term of \(A\) and write its remaining part as \(\alpha p+\beta q\). In the squared sphere coordinates \(u_i\ge0,\ \sum u_i=1\), the difference of two partial derivatives is \((u_j-u_i)(\alpha+\beta u_k)\). At an interior critical point with two equal coordinates \(u_1=u_2=s\ne1/3\), stationarity forces \(\alpha+\beta s=0\). The coefficients of the two squared perturbations, splitting the equal coordinates and varying their common value, have opposite signs proportional to \(\beta(3s-1)\) and \(\beta(1-3s)\). Three distinct coordinates do not give a critical point. Hence all global extrema lie on the three rotation-axis orbits represented by squared coordinates \((1,0,0),\ (1/2,1/2,0),\ (1/3,1/3,1/3)\), with one possible exception. When \(\alpha=0\) the boundary value is constantly zero, but the diagonal still gives a distinct nondegenerate global extremum.
+
+The three axis values, apart from the additive constant, are \(0,\alpha/4,\alpha/3+\beta/27\). On the actual sphere their Hessians degenerate only at \(\alpha=0\), at \(\alpha=0\) or \(\beta=-2\alpha\), and at \(\beta=-3\alpha\), respectively. These follow from the two squared perturbations on an edge and the scalar Hessian at the body diagonal. When \(\alpha\ne0\), the edge at \(\beta=-2\alpha\) and the diagonal at \(\beta=-3\alpha\) each have the middle value. If two values tie, the third is a distinct nondegenerate extremum, using \(\beta=-9\alpha\) or \(\beta=-9\alpha/4\) for the other two ties. Thus there is always a single nondegenerate extremal orbit, and invariance of any regular \(B\) makes it stationary there. The previous theorem excludes purity. If the center is constant, use the constant case of the axial theorem.
+
+### The distribution of the full mirror discriminant
+
+**Theorem (A discriminant-only law has a logarithmic singularity).**
+
+Let \(D\) be the square of the full mirror product for \(B_3\) or \(H_3\), restricted to the unit sphere, and let \(U=D/\max D\). Its law is the law of the product of independent beta variables, with parameters \(\operatorname{Beta}(a_i,b_i-a_i)\) given by the paired rows
+\[
+\begin{array}{c|l|l}
+& (a_i)_i &(b_i)_i\\ \hline
+B_3&(1/4,1/3,1/2,1/2,2/3,3/4)&(5,7,11,13,17,19)/18\\
+H_3&(1/5,1/3,2/5,1/2,1/2,3/5,2/3,4/5)&(7,11,13,17,19,23,29,31)/30 .
+\end{array}
+\]
+For every nonconstant real rational \(R\) bounded on \([0,1]\), the law of \(R(U)\) has a nonzero logarithmic term in the one-sided local distribution function at \(R(0)\). Thus a rational transform of the full squared discriminant cannot yield the squared-uniform or any beta height. The conclusion excludes any target with analytic density in the interior and endpoint expansions in powers without logarithms.
+
+To compute the moments, apply the [Macdonald–Mehta integral, Etingof, Theorem 3.1](https://arxiv.org/pdf/0903.5084) to the rank-three Gaussian. The squared radius has chi-square law with three degrees of freedom and is independent of the sphere direction. If the mirror count is \(h=\sum_i(d_i-1)\), this divides the Gaussian discriminant moment by \(2^{hs}\Gamma(3/2+hs)/\Gamma(3/2)\), for moment parameter \(s\). The reflection degrees are \((2,4,6)\) and \((2,6,10)\). Gauss multiplication and cancellation leave, up to a fixed scale to the power \(s\), the product
+\[
+                     M(s)=\prod_i
+                     \frac{\Gamma(a_i+s)\Gamma(b_i)}
+                          {\Gamma(a_i)\Gamma(b_i+s)} .
+\]
+Before cancellation the numerator parameters are \(r/d_i\) for \(1\le r\le d_i\); the denominator has three ones and \((3/2+r)/h\) for \(0\le r<h\). All the displayed \(b_i-a_i\) are positive. Uniqueness of compactly supported moments gives the beta product. Its support reaches one, so the discarded scale was \(\max D\).
+
+Let \(F_U(x)=\Pr(U\le x)\). For \(-\min a_i<\operatorname{Re}s<0\) its Mellin transform on \((0,\infty)\) is \(-M(s)/s\) by integration by parts. Both rows give \(\sum_i(b_i-a_i)=1\), so this transform decays quadratically on vertical lines, by Stirling's formula. Shift the Mellin inversion line past \(s=-1/2\) but before the next distinct numerator pole. There are finitely many simple poles with \(-1/2<s<0\), and a double pole at \(-1/2\) because two numerator parameters equal \(1/2\) and none of the denominator gamma factors has a pole there. Its double coefficient is nonzero, so in the expansion of \(F_U(x)\) at zero the term \(x^{1/2}\log x\) has nonzero coefficient. The shifted line gives a remainder \(O(x^{1/2+\eta})\) for some \(\eta>0\).
+
+The density is analytic on \((0,1]\). To check the upper endpoint as well, write \(T_i=-\log B_i\) for each beta factor \(B_i\). Its density is \(t^{b_i-a_i-1}\) times a function analytic at zero and on the positive axis. The convolution for \(\sum T_i\), after the change \(t_i=t v_i\) on the simplex, has an analytic factor times \(t^{\sum(b_i-a_i)-1}=1\) near zero, and is analytic at every positive point by the same formula. Converting back from \(-\log U\) proves the density assertion.
+
+Since \(R\) is bounded, remove any removable poles on \([0,1]\). Near \(x=0\), \(R(x)-R(0)\) has finite positive order \(k\). On the side of \(R(0)\) corresponding to \(x>0\), the local preimage of a one-sided interval of width \(\epsilon\) ends at a convergent Puiseux series starting with \(c\epsilon^{1/k}\), \(c>0\). Substitution in \(F_U\) gives a nonzero term \(\epsilon^{1/(2k)}\log\epsilon\). All other preimages of \(R(0)\) are finite in number and lie in \((0,1]\). Their contributions have Puiseux expansions without logarithms by analyticity of the density there, so they cannot cancel this term.
+
+## Central twists with a stabilizer
+
+Use \(X^-\), \(G\), and \(D\) from the central classical torsor construction. A reductive subgroup \(H\) can act by postcomposition, commuting with the precomposition action of \(G\). The affine quotient \(H\backslash X^-\) is geometrically homogeneous under this second action. Over a real closed field it is the form with compact stabilizer \(H\) and descent represented by \(-I\) in its normalizer quotient.
+
+**Theorem (Regular witnesses on central twists with odd or block stabilizers).**
+
+The normalized trace on \(H\backslash X^-\) has a regular Mathieu–Zhao counterexample in each of the following cases.
+
+- \(H\) is finite of odd geometric order and \(X^-\) is one of the central classical torsors just settled by a split rank-one action over an invariant field.
+- \(H\) is reductive and fixes a coordinate summand of \(D^n\) of dimension \(n-k\) pointwise. Let \(2^j\le n<2^{j+1}\) and assume \(n-k-1>2^j\).
+
+The second assertion includes positive-dimensional stabilizers and finite groups of even order. For example it applies to the twist of compact \(\mathrm{SO}(14)/\mathrm{SO}(3)\) with the stabilizer on three coordinate axes. These statements hold in characteristic zero, without requiring a ground-field point of the twisted quotient.
+
+For the first case let \(S\) be the subgroup used in the proof for \(X^-\), with \(L=K(X^-)^S\). The new \(S\)-invariant field is \(F=L^H\). Indeed invariants commute for the two actions, and taking rational invariants by a finite group agrees with taking the fraction field of regular invariants. The degree \([L:F]\) is odd: over the algebraic closure the degree is the order of the effective finite action, a divisor of the geometric order of \(H\). The same degree holds over \(K\) since the varieties are geometrically integral. By Springer's odd-degree theorem, the level of \(F\) equals that of \(L\): an isotropic sum-of-squares form over \(L\) is isotropic over \(F\). The preceding proofs of isotropy for the standard stabilizer forms therefore work over \(F\), including the odd quaternionic case where \(s(L)\le4\) and the special unitary scalar form has dimension at least six. The \(S\)-action on this generic fibre still has finite stabilizer, so an \(F\)-split rank-one subgroup acts nontrivially. The generic-orbit theorem gives the witness on the quotient. Springer, *Sur les formes quadratiques d’indice zéro*, C. R. Acad. Sci. Paris 234 (1952), 1517–1519.
+
+For the second case put \(r=k+1\) and use the connected subgroup \(S\) fixing the first \(r\) source vectors. Its quotient on \(X^-\) is the negative orthonormal \(r\)-frame variety. This follows by extending an isometry of the first \(r\) standard vectors over the algebraic closure. The complement has dimension \(n-r>2^j\), so the determinant convention does not obstruct such an extension. Taking the subsequent \(H\)-quotient gives the invariant field \(F\) for the \(S\)-action on \(H\backslash X^-\).
+
+Write the generic frame in blocks as \(\binom{U}{V}\) with \(U\) of size \(k\) by \(r\) and \(V\) of size \((n-k)\) by \(r\). The matrix \(V\) and the Gram matrix \(U^*U\) are \(H\)-invariant. They satisfy \(U^*U+V^*V=-I_r\). If the coefficient algebra already splits in the unitary or quaternionic cases, \(S_F\) is split. Otherwise \(D_F\) is a division algebra, including the field case, and \(U^*U\) has a nonzero kernel vector \(c\in D_F^r\). For the rank assertion one can extend to an algebraic closure, where the rank of \(U^*U\) cannot exceed the size of the first block, with both dimensions doubled in the split quaternion matrix realization. The Gram identity then yields
+\[
+                      \sum_{i=1}^r N_D(c_i)
+                                +\sum_{a=1}^{n-k} N_D((Vc)_a)=0.
+\]
+The nonzero vector \((c,Vc)\) makes the sum of \(d(n+1)\) squares isotropic, so \(s(F)\le d(n+1)-1\). Because a finite level is a power of two and \(d(n+1)\le d2^{j+1}\), this gives \(s(F)\le d2^j<d(n-r)\). The form on the \(S\)-complement is therefore isotropic. Moreover \(n-r>k\) from \(n<2^{j+1}\), so \(\dim S>\dim H\). The stabilizer of an \(S\)-orbit point has dimension at most \(\dim H\); consequently the geometrically almost simple \(S\) acts nontrivially on the generic fibre, and its split rank-one subgroup does too. The generic-orbit theorem applies.
+
+
+## The level of the central spinor-norm torsor
+
+**Theorem (Anisotropy over the central spinor-norm torsor).**
+
+Let \(K\) be real closed, \(q_n=n\langle1\rangle\) with \(n\ge3\), and let \(X\) be the norm-minus-one torsor for \(\mathrm{Spin}(q_n)\). Here \(X=\nu^{-1}(-1)\) for the spinor similitude character \(\nu:\mathrm{GSpin}(q_n)\to\mathbb G_m\). If \(b\) is the least power of two at least \(n\), then
+\[
+                         s(K(X))=b .
+\]
+In particular \(q_n\) stays anisotropic over \(K(X)\), and no subgroup of \(\mathrm{Spin}(q_n)\) becomes split isotropic over any invariant subfield of \(K(X)\). This is a limitation of the generic split rank-one construction for the kernel-central Spin twist.
+
+The fibre \(X\) is a torsor, since \(\ker\nu=\mathrm{Spin}(q_n)\), and the central scalar \(i\) has \(\nu(i)=-1\) over \(K(i)\). Its descent involution is therefore the central kernel element \(-1\). The spinor norm modulo squares on \(\mathrm{SO}(q_n)\) records the norms of even products of nonisotropic Clifford vectors. By the Cartan–Dieudonné theorem every rational isometry in \(\mathrm{SO}(q_n)\) has such a product lift, and scalar rescaling multiplies \(\nu\) by a square. Thus \(X\) has a point over a field exactly when \(-1\) is the square class of such an even product of represented values. This cannot hold over \(K\) because \(q_n\) is positive definite. It does hold over \(K(X)\) by the generic point. Since \(q_n\) is a subform of the Pfister form \(\pi=b\langle1\rangle\), all these nonzero represented values lie in the round multiplicative value group of \(\pi\). Hence \(\pi\) represents \(-1\) over \(K(X)\), giving the upper bound \(s(K(X))\le b\).
+
+For the lower bound let \(F=K(S_b^-)\) be the field of the negative norm sphere in \(b\) coordinates. Its level is exactly \(b\) by Hoffmann separation, and \(\pi\simeq-\pi\) over \(F\) by Pfister roundness. The two forms \(q_n\) and \(-q_n\) can therefore be realized as subforms of the same anisotropic \(\pi_F\). Since \(2n>b\), their subspaces intersect nontrivially. The norm of a nonzero vector in this intersection is some \(a\ne0\), and \(q_n\) represents both \(a\) and \(-a\). The corresponding two Clifford vectors have product of spinor norms \(-a^2\), so rescaling by \(1/a\) gives a point of \(X(F)\). The torsor is smooth, and the completed local ring at this \(F\)-point embeds its function field into an iterated Laurent series field over \(F\). Anisotropy of \(\pi_F\) persists there, which gives \(s(K(X))\ge b\).
+
+This treats the central class in the kernel of \(\mathrm{Spin}(q_n)\to\mathrm{SO}(q_n)\). A different central involution that maps to \(-I\) pulls back the previously proved orthogonal obstruction when \(n\) is even and is not a power of two. Indeed the twisted central isogeny to the negative \(\mathrm{SO}(q_n)\)-torsor is equivariant and geometrically surjective, and preserves the normalized trace. The kernel-central torsor itself still needs a regular moment calculation.
