@@ -1,0 +1,222 @@
+\section{Proofs of the root bounds and additional boundary cases}
+\label{sec:gamma-annulus-proof}
+
+\subsection{Bounds for a Gamma polynomial}
+
+For \(\gamma>0\) put
+\[
+ G_{m,\gamma}(z)=\sum_{k=0}^m\binom{m}{k}(\gamma)_kz^{m-k},
+ \qquad h_0=m-1 .
+\]
+We first show that every zero \(z\) of \(G_{m,\gamma}\) satisfies
+\[
+ |z|\le\gamma+h_0,\qquad
+ \Re z\le-\gamma+h_0.
+\]
+Let \(T=\gamma+m\). The polynomial is \(\det(zI+J)\), where
+\(J=D+iK\) is complex symmetric, with real diagonal
+\(D_{jj}=T+1-2j\) for \(1\le j\le m\) and real symmetric
+off-diagonal entries \(K_{j,j+1}=\sqrt{j(T-j)}\).
+To check the representation, the characteristic polynomial of the
+leading \(j\times j\) block is
+\[
+ \sum_{k=0}^j(-1)^{j-k}\frac{j!}{k!}\binom{T-1-k}{j-k}z^k .
+\]
+This expression has the initial terms \(1,z-(T-1)\) and
+satisfies the determinant recurrence, whose two coefficients are
+\(z-(T+1-2j)\) and \((j-1)(T+1-j)\). At \(j=m\), replacing \(z\)
+by \(-z\) and multiplying by \((-1)^m\) gives \(G_{m,\gamma}\).
+
+The lower bound on the eigenvalue real parts of \(J\) follows
+from its real diagonal \(D\). To bound its numerical radius,
+take \(0<\theta<\pi\) and set \(q=\tan(\theta/2)\).
+For the Hermitian part \(H_\theta=(\cos\theta)D+(\sin\theta)K\) of
+\(e^{-i\theta}J\), the positive vector with entries
+\[
+ v_j=\sqrt{\binom{T-1}{j-1}}\;q^{j-1}
+\]
+satisfies \((H_\theta v)_j=(T-1)v_j\) for \(j<m\), and
+\((H_\theta v)_m=[T-1-\gamma(1-\cos\theta)]v_m\).
+These identities follow by substituting the adjacent ratios
+in the off-diagonal terms. The top eigenvector of \(H_\theta\)
+can be taken positive by maximizing its Rayleigh quotient
+with nonnegative coordinates and using the connected off-diagonal
+chain. Its scalar product with the displayed inequality gives
+\(\lambda_{\max}(H_\theta)<T-1\). An alternating diagonal
+conjugates \(K\) to \(-K\), and continuity handles the endpoint
+angles. Hence \(|z|\le T-1\) for each eigenvalue \(z\) of
+\(-J\). For \(m\ge2\), equality could only occur in an endpoint
+direction. An eigenvector would then be supported in a single
+extreme diagonal coordinate, which the adjacent entry prevents.
+Thus the modulus bound is strict for \(m\ge2\).
+
+Coefficient comparison also gives the equation
+\[
+ zG''+(1-\gamma-m-z)G'+mG=0 .
+\]
+The constant term is positive. At a repeated nonzero zero the
+term \(zG''\) would have strictly smaller order than every
+other term, so the zeros are simple. Let \(z_i\) minimize
+the modulus and write \(r=|z_i|\). The real part of the
+differential equation at \(z_i\), using
+\(G''(z_i)/G'(z_i)=2\sum_{j\ne i}(z_i-z_j)^{-1}\), gives
+\begin{equation}\label{eq:gamma-radius-sum}
+ r-\gamma\ \ge\ -\Re z_i-\gamma
+  =\sum_{j\ne i}\frac{|z_j|^2-r^2}{|z_j-z_i|^2}\ \ge\ 0 .
+\end{equation}
+Equality \(r=\gamma\) forces \(z_i=-\gamma\) and all moduli
+\(\gamma\). Since their sum is \(-m\gamma\), all zeros would
+then equal \(-\gamma\). Thus \(r>\gamma\) for \(m\ge2\).
+
+When \(m\ge2\) and \(\gamma\ge15h_0\), we show the stronger
+\(r>\gamma+h_0/6\). Vieta's formulas give
+\(\sum z_j=-m\gamma\) and
+\(\sum z_j^2=m\gamma^2-mh_0\gamma\). In particular,
+\[
+ \sum_j |z_j|^2\ge m\gamma^2+mh_0\gamma .
+\]
+Set \(u_j=z_j+\gamma\) and \(s_0=h_0/\gamma\).
+The two bounds on \(z_j\) above give \(|\Re u_j|\le h_0\).
+Since \(\sum u_j=0\) and \(\sum u_j^2=-mh_0\gamma\), it
+follows that \(\sum |u_j|^2\le mh_0\gamma(1+2s_0)\).
+Suppose \(r\le\gamma+h_0/6\), and set
+\(\eta=(r^2-\gamma^2)/(\gamma h_0)\). Then
+\(0\le\eta\le181/540\) and
+\(|u_i|^2\le r^2-\gamma^2\), since \(\Re z_i\le-\gamma\).
+Write \(q_j=|z_j|^2-r^2\). We have
+\[
+ \sum_j q_j\ge m\gamma h_0(1-\eta),\qquad
+ 0\le q_j\le\gamma h_0(2+s_0-\eta),\qquad
+ \sum_j |z_j-z_i|^2\le m\gamma h_0(1+2s_0+\eta).
+\]
+The last inequality follows from \(\sum u_j=0\).
+Weighted Cauchy--Schwarz in \eqref{eq:gamma-radius-sum} now gives
+\[
+ r-\gamma\ge
+ m\frac{(1-\eta)^2}{(2+s_0-\eta)(1+2s_0+\eta)}
+ \ge m\,\frac{128881}{741455}>\frac{h_0}{6}.
+\]
+The rational expression decreases in \(s_0\) and \(\eta\)
+on the stated ranges, so its value at \(s_0=1/15,\eta=181/540\)
+gives the middle bound. This contradiction proves the stronger
+inner radius.
+
+\subsection{Products of Gamma annuli}
+
+For monic polynomials of degree \(m\) in the binomial basis, write
+\[
+ \left(\sum_{k=0}^m\binom{m}{k}a_k z^{m-k}\right)\diamond
+ \left(\sum_{k=0}^m\binom{m}{k}b_k z^{m-k}\right)
+ =\sum_{k=0}^m\binom{m}{k}a_kb_k z^{m-k}.
+\]
+The upper and lower root radii multiply under this operation.
+For the upper bound, if the first polynomial is
+\(\prod_{j=1}^m(z+\delta_j)\) and \(Q^{\mathrm{pol}}\) is the
+polarization of the second, the composed value at \(z\) equals
+\(\prod_j\delta_j\, Q^{\mathrm{pol}}(z/\delta_1,\ldots,z/\delta_m)\).
+If \(|z|\) exceeds the product of the two upper radii, all the
+arguments lie in the open exterior of the disk for the second
+polynomial. The Grace--Walsh--Szeg\H{o} theorem
+\cite[Theorem~4.1]{wagner-stability} gives nonvanishing there.
+The lower bound follows by reversal, which commutes with
+\(\diamond\). With strict radii one can first tighten the
+bounds on the finitely many roots of each factor.
+
+Use \(\gamma=am+1\) and the identity
+\[
+ (\gamma)_{dk}=d^{dk}\prod_{j=0}^{d-1}((\gamma+j)/d)_k .
+\]
+It expresses \(R_m\), after scaling the variable by \(d^d\),
+as the composition of the \(d\) Gamma polynomials of shapes
+\((\gamma+j)/d\). Consequently
+\[
+ (\gamma)_d\le |x|\le(\gamma+d(m-1))_d
+ \qquad(R_m(x)=0),
+\]
+strictly for \(m\ge2\). This gives the first assertion of
+Lemma~\ref{lem:gamma-annulus}. At the two orders
+\(\gamma=am+1\), the inner radius for \(m=N\) is at least
+the outer radius for \(m=N-1\) when \(a\ge d(N-2)\).
+The strict inner bound gives separation even at equality and
+at \(N=2\). If \(N\ge25\) and \(6a\ge(5N-11)d\), then
+\(a\ge15d\). Each of the \(d\) unit-step shapes for
+\(R_N\) is at least \(15(N-1)\). The stronger bound gives
+the lower radius
+\((aN+1+d(N-1)/6)_d\), and
+\[
+ aN+1+d(N-1)/6\ge a(N-1)+1+d(N-2).
+\]
+This proves the remaining separation in
+Lemma~\ref{lem:gamma-annulus}.
+
+\subsection{Small positive lower exponents and adjacent exponents}
+
+\begin{proposition}
+\label{prop:additional-boundary}
+For \(N\ge25\), the pair \(P_{N-1},P_N\) is coprime on
+each of the following supports:
+\[
+ 1\le a\le4,\quad 1\le d<3a,
+ \qquad\text{or}\qquad
+ a\ge1,\quad d=1.
+\]
+\end{proposition}
+
+\begin{proof}
+Suppose first \(N\ge3150\). We may assume
+\(6a<(5N-11)d\), by Lemma~\ref{lem:gamma-annulus}. In both
+domains \(d<3a\), and Lemma~\ref{lem:degree-cap} applies
+because \(aN\ge1375\). Thus the primes of the common-factor
+norm in Lemma~\ref{lem:resultant} are supported up to \(C_N\)
+as in Lemma~\ref{lem:prime-support}.
+
+If \(1\le a\le4\) and \(d<3a\), then \(b\le15\),
+\(a+2d-1\le25\), and \(s\le121/15\). Use the prime threshold
+\(X=\sqrt{15N}\), which is at least \(C_N\) and exceeds \(150\).
+By Lemmas~\ref{lem:prime-estimates} and~\ref{lem:small-prime-sums},
+the right side of \eqref{eq:pade-norm} is less than
+\[
+ \tfrac12(\log N+\log 15)-.45+2.48\sqrt{15/N}.
+\]
+Here \(\log(M+1)/\log X<2.001\), and
+\(2.001(1+1.2762/\log X)<2.48\).
+The loss bound \(g\le7s/32\) in \eqref{eq:pade-loss} gives
+\(\log\Lambda>\log N-2.776\).
+The difference exceeds \(0.17\) at \(N=3150\) and increases
+with \(N\).
+
+For \(d=1\) and \(a\ge2\) take \(X=\sqrt{(a+1)N}=C_N\),
+since \(a+1<(5/6)(N-1)\). The prime-sum and prime-count
+bounds give instead
+\[
+ \tfrac12(\log N+\log(a+1))+.2+2.60\sqrt{(a+1)/N}.
+\]
+Use the \(d=1\) gain from Lemma~\ref{lem:resultant}.
+The surplus is greater than
+\[
+ \tfrac12\log N-.701-\tfrac12\log(3/2)
+       -\log(1+1/\sqrt2)-2.60\sqrt{5/6}>.21
+ \qquad(N\ge3150).
+\]
+The case \(a=d=1\) is in the preceding domain.
+
+For \(25\le N<3150\), the supplemental checker
+\texttt{verify\_small\_support.cpp} treats the two stated
+support families together. It retains the inequalities
+\(a<d(N-2)\), \(6a<(5N-11)d\) and \(d^2<19(a+d)\), using
+Lemmas~\ref{lem:gamma-annulus} and~\ref{lem:ratio-range},
+and uses the gap caps in Lemmas~\ref{lem:gap-caps}
+and~\ref{lem:local-gap}. It groups the first factorial block
+test by \((N,a)\) and then applies the individual block and
+Newton slope tests of Section~\ref{sec:arithmetic}.
+The resulting counts are \(12\,520\) groups and \(18\,904\)
+supports. Of these, \(4\,357\) are excluded by the degree-dependent
+prime bounds and \(4\,853\) by comparing Newton polygons.
+For the other \(9\,694\), the full monic reciprocals are coprime
+modulo \(1\,000\,000\,007\). The checker verifies primality by
+trial division and computes the modular gcd by exact Euclidean
+division. A monic common factor over \(\mathbb Q\) would be
+integral and would retain its degree modulo this prime.
+Thus these tests establish coprimality throughout the finite range.
+\end{proof}
+

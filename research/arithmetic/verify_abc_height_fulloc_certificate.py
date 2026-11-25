@@ -42,6 +42,8 @@ BUDGET_RETARGET_FILES = (
     (Fraction(123, 125), "abc_budget_984_delta.json.xz"),
     (Fraction(197, 200), "abc_budget_985_delta.json.xz"),
     (Fraction(493, 500), "abc_budget_986_delta.json.xz"),
+    (Fraction(987, 1000), "abc_budget_987_delta.json.xz"),
+    (Fraction(247, 250), "abc_budget_988_delta.json.xz"),
 )
 UNIT_CERTIFICATE_PARTS = (
     "abc_height_fulloc_unit_certificate.part1.xz",

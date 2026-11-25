@@ -1,0 +1,387 @@
+\section{Prime bounds and the finite range}
+\label{sec:arithmetic}
+
+Take \(a,d\ge1\), \(N\ge25\), \(d<3a\), \(6a<(5N-11)d\), and
+\(s=d^2/(a+d)<\sigma_N\), as in Lemma~\ref{lem:support-reduction}.
+In this section \(m\) runs through \(N-1,N\), \(b=a+d\), \(M=bN\),
+and \(F\) is a nonconstant monic rational common divisor of
+\(R_m(x)=x^mP_m(1/x)\). By Gauss's lemma \(F\in\Z[x]\), and \(F(0)\ne0\).
+Write \(h=\deg F\) and \(H=dh\). The reciprocal of even order is
+positive on \(\R\), as is seen by integrating \((x+u^d)^m\) against
+the gamma density of shape \(am+1\). Hence \(h\) is even.
+
+In fact \(h<N-1\). To see this, put \(n=N-1\) and \(u=an+1\).
+If \(P_n\mid P_{n+1}\), the quotient is \(1+ct\). Its linear
+coefficient would have to be both
+\[
+ c_1=(n+1)(u+a)_d-n(u)_d,\qquad
+ c_2=\frac{(u+dn)_b}{(u)_a}.
+\]
+Set \(A=(u)_b\), \(B=(u)_a(u)_d\), and \(f(z)=(u+z)_b\).
+Then \((u)_a(c_2-c_1)=f(dn)-(n+1)A+nB\).
+Convexity gives \(f(dn)\ge nf(d)-(n-1)A\), and
+\(f(d)/A=(u+b)_d/(u)_d>A/B\). Thus
+\(f(d)-2A+B>(A-B)^2/B\ge0\), proving \(c_2>c_1\).
+
+A sufficiently large prime can occur in a common root valuation only
+through a multiple close to the end of each factorial product. The
+locations of those multiples must agree to within one coefficient step
+after translation by \(b\). We first use this observation to restrict
+primes in the two initial factorial blocks.
+
+For a prime \(p\) put \(y_m(k)=v_p([t^k]P_m)\) and
+\[
+ U_m(j)=y_m(m)-y_m(m-j)
+       =v_p\!\left(\prod_{i=0}^{dj-1}(bm-i)\right)-v_p\binom mj .
+\]
+A lower Newton slope \(\lambda\) of \(P_m\) is a valuation of roots of
+\(R_m\). Its width is the number of roots at that valuation, counted
+with multiplicity. Equivalently the extremes of the maximizing indices
+of \(U_m(j)-\lambda j\) have this difference.
+
+\begin{lemma}[Degree allocations at a prime]
+\label{lem:newton-alloc}
+For a common slope with reduced denominator \(v\), let \(w\) be the
+smaller of its two widths. The common factor can use only a number of
+roots from \(\{0,v,2v,\ldots,w\}\) at that slope. Consequently \(h\)
+belongs to the sum of these sets over the common slopes, at every prime.
+In particular each positive valuation of a root of \(F\) is at least
+\(1/h\).
+\end{lemma}
+\begin{proof}
+At each slope the roots of a common factor occur with at most the
+smaller multiplicity. Its Newton polygon has integral vertices, so
+each width in that polygon is divisible by the reduced denominator
+of the slope. The last assertion follows since such a width is at
+most \(h\).
+\end{proof}
+
+\begin{lemma}[Prime support of short blocks]
+\label{lem:prime-support}
+Set
+\[
+ C_N=\max\{a+2d-1,\sqrt M\},\qquad B_h=\min\{dN,\max(2H,C_N)\}.
+\]
+Every prime divisor of \(F(0)\) or of either block
+\(\prod_{i=1}^H(am+i)\) is at most \(B_h\).
+\end{lemma}
+\begin{proof}
+If \(p>dN\), then \(p^2>M\) because \(a<d(N-2)\), and all binomial
+coefficients are \(p\)-adic units. Each full factorial interval
+\((am,bm]\) has at most one multiple \(u_m\) of \(p\). If present,
+it yields only one positive slope, equal to \(1/w_m\) with
+\(w_m=1+\lfloor(bm-u_m)/d\rfloor\).
+A common positive slope would require the same \(w_m\) in both orders.
+It would give
+\begin{equation}
+ u_N-u_{N-1}\in[b-d+1,b+d-1]=[a+1,a+2d-1].
+ \label{eq:translated-multiples}
+\end{equation}
+This interval is positive and below \(p\), so it contains no multiple
+of \(p\).
+
+Now let \(p>\max(2H,C_N)\) and suppose that \(F\) has a positive slope
+\(\lambda\) at \(p\). By Lemma~\ref{lem:newton-alloc},
+\(\lambda\ge1/h\). Since \(p^2>M\), the count of terminal multiples
+gives \(U_m(j)<1+dj/p\) for \(j>0\). The maximizing value of
+\(U_m(j)-\lambda j\) is at least zero, so every maximizing index is
+less than \(2h\). Throughout this range \(j<p\) and \(dj<p\).
+The binomial valuation cannot decrease because \(j!\) is a unit.
+The factorial valuation can rise only once and by one. The weighted
+ordinate therefore decreases strictly between jumps. A positive
+slope must tie zero to the index of the single factorial jump, giving
+slope \(1/w_m\) with \(w_m=1+\lfloor(bm-u_m)/d\rfloor\).
+As before, a shared slope implies \eqref{eq:translated-multiples},
+which is impossible since \(p>C_N\).
+
+These two cases show that \(p>B_h\) cannot divide \(F(0)\).
+If it divides one of the first \(H\) factorial terms, all the
+coefficients at \(k\ge h\) in \(P_m\) vanish modulo \(p\).
+Then \(R_m\bmod p\) is a power of \(x\) times a polynomial of degree
+at most \(h-1\). Its monic divisor \(F\bmod p\) has degree \(h\)
+and nonzero constant term, a contradiction.
+\end{proof}
+
+\subsection{The degree bound}
+
+\begin{lemma}[Degree bound from the first factorial block]
+\label{lem:degree-cap}
+If \(aN+1>\max\{H+13,279H/262\}\), then \(2H<C_N\).
+The starting-point inequality holds whenever \(a\ge2d\), or
+whenever \(N\ge275\) and \(aN\ge1375\). In particular the second
+condition covers \(a\ge5\) at these terminals and every \(a\ge1\)
+when \(N\ge3150\).
+\end{lemma}
+
+\begin{proof}
+Theorem~1(a) of Laishram and Shorey~\cite{laishram-shorey} gives a prime
+divisor greater than \(2H\) of the first \(H\) consecutive integers
+beginning at \(aN+1\), under the stated starting-point inequality.
+Lemma~\ref{lem:prime-support} then gives \(2H<C_N\).
+If \(a\ge2d\), the inequality follows from \(h\le N-1\) and \(N\ge25\).
+
+It remains to establish the starting-point inequality for
+\(N\ge275\), \(aN\ge1375\), and \(a<2d\).
+Put \(X=aN\), \(w=X/40\), and consider
+three intervals of length \(w\) whose left endpoints are
+\[
+ X,\qquad X+2w+4d,\qquad X+6w+12d.
+\]
+Take each interval open at its left endpoint. Their union is contained
+in \((X,X+E]\) with \(E=7w+12d< X/3\), since \(d<3a\).
+Each interval contains a prime. Indeed \(X\ge1375\). For
+\(X\le7160\), \(7160<X\le11750\), and \(11750<X<89693\), respectively,
+the upper endpoint \(4X/3\) lies below \(9551,15683,155921\),
+where the record prime gaps first exceed \(34,36,72\),
+respectively~\cite[Table~8]{oliveira-gaps}. In each range \(w\)
+exceeds the corresponding gap. For \(X\ge89693\),
+Dusart~\cite[Proposition~5.4]{dusart-interval} gives a prime within
+\(x/\log^3x<w\) of each left endpoint \(x\in[X,4X/3)\).
+
+Discard any interval meeting
+\[
+ I_j=[(M-b)/j,(M+2d)/j]\qquad(1\le j\le4).
+\]
+The envelope misses \(I_1\), since \(M-b>(3/2)(1-1/N)X>4X/3\).
+If \(I_j\), \(2\le j\le4\), meets the envelope, then \(M+2d>jX\).
+For \(j'<j\) this implies
+\[
+ (M-b)/j' > X+(X-a-3d)/3>X+E,
+\]
+where \(E/X<7/40+36/275 < (1-10/275)/3\).
+Thus at most one \(I_j\) meets the envelope. Its width is
+at most \((a+3d)/2<5d/2\), smaller than the separation of the
+three intervals. We obtain two primes \(p_1<p_2\) in distinct
+retained intervals.
+
+For either retained prime \(p\), we have \(p>X\ge m\) and
+\(p^2>M\) because \(b<4a\). Therefore
+\(y_m(k)=\lfloor(am+dk)/p\rfloor\). The avoidance of the \(I_j\)
+gives the same \(q=\lfloor bm/p\rfloor\in\{1,2,3\}\) at both orders
+and \((q+1)p-bm>2d\). The right endpoints of the constant-ordinate
+intervals before the jumps are
+\[
+ k_j(m)=\left\lfloor\frac{jp-am-1}{d}\right\rfloor
+ \qquad(1\le j\le q).
+\]
+Every positive edge before the last of these endpoints joins two such
+endpoints and has slope at most \(1/\lfloor p/d\rfloor\).
+This follows by subtracting their floor expressions, since an edge
+of height \(J\) then has width at least \(J\lfloor p/d\rfloor\).
+The edge from \(k_q(m)\) to \(m\) has height one and width
+\[
+ w_m=\left\lceil(bm-qp+1)/d\right\rceil
+ \le \lceil p/d\rceil-2 <\lfloor p/d\rfloor.
+\]
+All remaining points lie on or above this final segment. Its slope
+is larger than all earlier slopes, and \(w_N>w_{N-1}\) since \(b>d\).
+Neither final slope is shared.
+
+For an interior positive edge of height \(J_e\) in \(P_N\), its
+width is \(w_e=J_e p/d+\epsilon_e\), with
+\(|\epsilon_e|<1\). If the factor uses \(r_e\) of its roots,
+the quantity \(r_eJ_e/w_e\) is an integer by
+Lemma~\ref{lem:newton-alloc}. Summing over these edges yields
+\[
+ h=h_0+Jp/d+\epsilon,\qquad
+ 0\le h_0<(p-X)/d,\qquad J\in\{0,1,2\}.
+\]
+Here \(h_0\) counts slope-zero roots and \(J\) is at most the total
+interior height \(q-1\). The error satisfies \(|\epsilon|<2\) when
+\(J>0\), and is zero when \(J=0\).
+For \(p_1,p_2\), the intervals of possible \(h\) with equal positive
+\(J\) are disjoint because \(p_2-p_1>p_1-X+4d\), by the placement of
+the intervals. Intervals for unequal \(J\) are disjoint as well,
+since \(X>2E+4d\). Thus \(J=0\) at both primes. The smaller prime
+comes from the first or second interval, giving
+\[
+ H<p_1-X\le 3w+4d<.12X .
+\]
+As \(X\ge1375\), this implies the required starting-point inequality.
+\end{proof}
+
+\subsection{Bounds from records of prime gaps}
+
+For an even record gap \(G\), write \(X_G\) for the lower prime
+endpoint of the first larger record gap in
+\cite[Table~8]{oliveira-gaps}. Every real interval \((x,y]\)
+with \(x\ge2\), \(y<X_G\) and \(y-x\ge G\) contains a prime.
+Otherwise the consecutive primes straddling \(x\) have gap
+greater than \(G\) and lower endpoint below \(X_G\).
+
+\begin{lemma}[Uniform gap and degree bounds]
+\label{lem:gap-caps}
+Let \(G\ge52\) be an even record gap such that
+\begin{equation}
+ G\ge 4\sigma_N,\qquad
+ G\left(\frac{N(5N-11)}6+2\right)<X_G .
+ \label{eq:gap-conditions}
+\end{equation}
+Then \(d<G/2\). If Lemma~\ref{lem:degree-cap} applies, then also
+\(H<G\).
+\end{lemma}
+\begin{proof}
+Put \(g=G/2\). If \(d\ge g\), take \(r=\lfloor d/g\rfloor\).
+Then \(g\le d/r<2g\), so \((aN/r,(aN+2d)/r]\) has length
+at least \(G\). Its upper endpoint is below \(X_G\) by
+\(6a<(5N-11)d\) and \eqref{eq:gap-conditions}. Its left endpoint
+exceeds \(dN\), since \(s<\sigma_N\) and \(d\ge g\ge2\sigma_N\)
+give \(a>d^2/\sigma_N-d\ge d^2/g\ge rd\).
+A prime \(p\) in the interval divides \(rp\) among the first
+\(2d\) terms of the upper factorial block, contrary to
+Lemma~\ref{lem:prime-support}.
+
+Suppose now that \(2H<C_N\) and \(H\ge G\).
+Take \(r=\lfloor H/G\rfloor\). The interval
+\((aN/r,(aN+H)/r]\) has length at least \(G\), and its upper
+endpoint is less than
+\[
+ 2G\left(\frac{N(5N-11)}{6h}+1\right)
+ \le G\left(\frac{N(5N-11)}6+2\right)<X_G .
+\]
+The left endpoint exceeds two since \(r\le H/G<dN/G\) and
+\(aG/d>G/3\).
+If \(C_N=\sqrt M\), then \(aN/r\ge aGN/H>2aG\sqrt M/b>\sqrt M\).
+If \(C_N=a+2d-1\), then \(2H<C_N\) and \(h\ge2\) give \(a>2d\).
+Since \(d<G/2\), we have \(r<N/2\) and \(aN/r>2a>C_N\).
+Thus in both cases the interval supplies a prime \(p>C_N\)
+dividing one of the first \(H\) terms. This contradicts
+Lemma~\ref{lem:prime-support}.
+\end{proof}
+
+Table~\ref{tab:gap-bounds} gives choices of \(G\) for
+Lemma~\ref{lem:gap-caps}. Use the first applicable row. The
+inequalities in \eqref{eq:gap-conditions} follow by checking
+the right endpoint of each row, since \(2\log N+3\) is an
+increasing upper bound for \(\sigma_N\).
+\begin{table}[ht]
+\centering
+\begin{tabular}{r r r}
+\hline
+Upper terminal \(N\) & \(G\) & \(X_G\)\\
+\hline
+50 & 72 & \(155\,921\)\\
+100 & 114 & \(1\,349\,533\)\\
+300 & 154 & \(17\,051\,707\)\\
+\(1\,000\) & 222 & \(189\,695\,659\)\\
+\(2\,000\) & 282 & \(1\,294\,268\,491\)\\
+\(6\,000\) & 354 & \(10\,726\,904\,659\)\\
+\(10\,000\) & 456 & \(42\,652\,618\,343\)\\
+\(19\,999\) & 468 & \(182\,226\,896\,239\)\\
+\(32\,767\) & 516 & \(461\,690\,510\,011\)\\
+\(65\,535\) & 602 & \(2\,614\,941\,710\,599\)\\
+\(3\,269\,017\) & 1132 & \(43\,841\,547\,845\,541\,059\)\\
+\hline
+\end{tabular}
+\caption{Prime-gap bounds used to control \(d\) and \(dh\). The record
+endpoints are from \cite[Table~8]{oliveira-gaps}.}
+\label{tab:gap-bounds}
+\end{table}
+
+\begin{lemma}[Refinement using the actual factorial position]
+\label{lem:local-gap}
+Assume \(2H<C_N\) and \(H\le H_0\). Let \(G\ge52\) be an even record
+gap. If \(H_0/G<N/2\) and \(aN+H_0<X_G\), then
+\(H<G\) and \(d<G/2\).
+\end{lemma}
+\begin{proof}
+If \(H\ge G\), the interval with \(r=\lfloor H/G\rfloor\) in the
+second part of Lemma~\ref{lem:gap-caps} has upper endpoint below
+\(X_G\) by assumption, as well as length at least \(G\). The two
+comparisons with \(C_N\) in that proof still hold, using
+\(r\le H_0/G<N/2\) in the second case. The resulting prime gives
+the same contradiction.
+\end{proof}
+
+In particular \(H\le281\) and \(d\le140\) for
+\(1001\le N\le3295\) whenever Lemma~\ref{lem:degree-cap} applies.
+Starting with \(G=354\) from
+Table~\ref{tab:gap-bounds}, apply Lemma~\ref{lem:local-gap}
+successively with
+\[
+\begin{array}{r|r|r}
+G&\text{upper terminal }N&X_G\\ \hline
+320&5000&3\,842\,610\,773\\
+292&4150&2\,300\,942\,549\\
+288&3467&1\,453\,168\,141\\
+282&3295&1\,294\,268\,491
+\end{array}
+\]
+At each step \(aN+H_0<(5/6)D_0N^2+H_0<X_G\), where \(d\le D_0\)
+and \(H\le H_0\) are the preceding bounds.
+
+\subsection{Exact computation in the finite range}
+
+\begin{proposition}
+\label{prop:finite}
+Under the support reduction of Lemma~\ref{lem:support-reduction},
+the consecutive polynomials are coprime for \(a\ge5\), \(d\ge2\),
+and \(25\le N<3150\).
+\end{proposition}
+\begin{proof}
+Use \(d^2<19b\), which follows from \(\sigma_N<19\) in this
+range, and use the gap caps
+\[
+\begin{array}{c|ccccc}
+N&25\text{--}50&51\text{--}100&101\text{--}300&301\text{--}1000&
+1001\text{--}3149\\
+d\le&35&56&76&110&140 .
+\end{array}
+\]
+These come from Lemmas~\ref{lem:gap-caps} and \ref{lem:local-gap}.
+For \(2200\le N<3150\), the analytic exclusions in
+Appendix~\ref{app:middle-tail} also require \(b>N\) and
+\(97d<3a\).
+
+For each \(N,a\), the inequalities \(6a<(5N-11)d\), \(2\le d<3a\),
+the displayed cap, and the two additional inequalities when
+\(N\ge2200\) give an integer interval \([d_0,d_1]\) for \(d\).
+When \(N\ge275\) or \(a\ge2d\), Lemma~\ref{lem:degree-cap}
+reduces the bound in Lemma~\ref{lem:prime-support} to
+\(\min(dN,C_N)\), independent of \(h\). Otherwise use \(dN\).
+The resulting bound is nondecreasing in \(d\), including where
+it switches to \(dN\). So a prime exceeding the bound at \(d_1\)
+in either first \(2d_0\)-term block eliminates the whole interval.
+The remaining gaps are tested individually with their first
+\(2d\) terms and the conditions \(a<d(N-2)\), \(d^2<19b\).
+
+For each remaining support, try the possible even degrees
+\(2\le h<N-1\). Test the starting-point inequality directly
+when \(N<275\). Impose the degree bound when it applies, and
+test the full first \(H\) terms with
+Lemma~\ref{lem:prime-support} in both orders.
+
+The remaining degrees are tested at odd primes \(aN<p\le M\).
+Here \(p>m,d\), \(p^2>M\), and \(am<p\). The ordinate is
+\(\lfloor(am+dk)/p\rfloor\) and \(q_m=\lfloor bm/p\rfloor\le3\).
+Thus the lower hull uses at most five points
+\[
+ (0,0),\qquad
+ \left(\left\lfloor\frac{jp-am-1}{d}\right\rfloor,j-1\right)
+ \quad(1\le j\le q_m),\qquad (m,q_m).
+\]
+Every omitted point is to the left of a retained point of the
+same ordinate and lies on or above the retained lower hull,
+which is nondecreasing. Compute the allowed degree sum from
+Lemma~\ref{lem:newton-alloc} at each prime and intersect it with
+the surviving degrees. For example \(N=25,a=5,d=8,p=127\)
+gives hull slopes \(1/16,1/8\) and \(1/16,1/9\) at orders
+24 and 25, respectively. Only degrees zero and sixteen are
+allowed at this prime.
+
+The supplementary verifier exhausts these integer intervals.
+The largest factorial argument is \(1\,156\,520\,634\).
+A segmented sieve stores smallest odd prime factors through that limit.
+Trial divisions from this table and cross multiplication of slopes
+perform the tests above. In prime caps the square-root threshold
+is replaced by its integer part, checked by squaring. The initial prime-cap test leaves
+\(21\,583\) groups \((N,a)\). The individual gap test leaves
+\(74\,362\) supports. The degree and prime-block tests exclude
+\(62\,593\), and the Newton allocations exclude \(11\,705\).
+For the remaining \(64\) supports, the verifier forms both
+monic reciprocals modulo the prime \(1\,000\,000\,007\) and
+checks by Euclidean division that their gcd is one. The
+modulus is checked by trial division. A monic integral common
+divisor would retain its degree on reduction, so these
+computations prove rational coprimality.
+\end{proof}

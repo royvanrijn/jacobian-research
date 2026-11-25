@@ -1,0 +1,167 @@
+\section{Reduction of the exponent range}
+\label{sec:supports}
+
+Write \(P_m=P_{m,a,d}\) for the normalized moment polynomial and
+\(R_m(x)=x^mP_m(1/x)\) for its monic reciprocal. Put \(b=a+d\) and
+\(s=d^2/b\). For \(x\in\mathbb R\) and even \(m\), the Gamma integral gives
+\[
+ R_m(x)=\frac{1}{(am)!}
+       \int_0^\infty u^{am}(x+u^d)^m e^{-u}\,du>0 .
+\]
+This observation will also be used in the arithmetic argument.
+
+\begin{lemma}[Root annuli and separation of the shapes]
+\label{lem:gamma-annulus}
+For \(a\ge1\), every root \(x\) of \(R_m\) satisfies
+\[
+ am<|x|^{1/d}\le (a+d)m .
+\]
+For any \(a\ge0\), the pair \(P_{N-1},P_N\) is coprime if
+\(a\ge d(N-2)\). If \(N\ge25\), it is also coprime if
+\(6a\ge (5N-11)d\).
+\end{lemma}
+
+The proof is in Appendix~\ref{sec:gamma-annulus-proof}. It uses the
+root annuli of the unit-step Gamma polynomials and the fact that
+these annuli multiply under composition in the binomial basis.
+The strengthened inner radius matters because the factorial arguments
+in the two moments grow at different rates.
+
+\begin{lemma}[Constant plus a power]
+\label{lem:constant-support}
+For \(a=0\) and every \(d\ge1\), the consecutive polynomials
+\(P_{N-1,0,d},P_{N,0,d}\) are coprime over \(\mathbb Q\).
+\end{lemma}
+
+\begin{proof}
+In this case \(R_N'=NR_{N-1}\), by coefficient comparison. The
+squarefreeness proof in Appendix~\ref{app:constant-proof} therefore
+gives the result.
+\end{proof}
+
+\begin{lemma}[Endpoint normalization]
+\label{lem:center-ratio}
+For \(a\ge1\) define
+\[
+ G_m=\left(\frac{((a+d)m)!}{(am)!}\right)^{1/m},
+ \qquad
+ P_m(w/G_m)=1+w^m+\sum_{k=1}^{m-1}c_{m,k}w^k .
+\]
+For \(1\le k<m\) one has
+\begin{equation}\label{eq:normalized-coefficients}
+ 0<c_{m,k}\le
+ \binom{m}{k}\exp\!\left(-\frac{s\,k(m-k)}{2m}\right).
+\end{equation}
+For \(N\ge2\) the centers satisfy
+\[
+ G_N/G_{N-1}>(N/(N-1))^{d/2}.
+\]
+\end{lemma}
+
+\begin{proof}
+The consecutive differences of \(\log((am+dk)!)\) are the logarithms
+of rising products of length \(d\). For \(1\le k<m\) the second
+difference is
+\[
+ \sum_{j=1}^d\log\!\left(1+\frac{d}{am+d(k-1)+j}\right)
+ \ \ge\ \frac{d^2}{(a+d)m}.
+\]
+Indeed, \(\log(1+v)\ge v/(1+v)\) for \(v\ge0\). Subtracting the
+quadratic with this second difference and comparing with the chord
+through the endpoints proves \eqref{eq:normalized-coefficients}.
+
+For the second claim, let \(f(u)=\log\Gamma(u+1)\) and
+\(H_0(x)=(f((a+d)x)-f(ax))/x\). The trigamma series gives
+\(f''(u)>1/(u+1)\), by comparison with the integral. Since
+\(a x\ge1\) for \(x\ge1\),
+\[
+ H_0'(x)=\frac{1}{x^2}\int_{ax}^{(a+d)x}u f''(u)\,du
+       >\frac{d}{2x}.
+\]
+Integrate from \(N-1\) to \(N\).
+\end{proof}
+
+\begin{lemma}[Ratio bound]
+\label{lem:ratio-range}
+For \(a\ge1,d\ge1,N\ge25\), if \(s\ge\sigma_N\), where
+\[
+ \sigma_N=
+ \begin{cases}
+  2\log N+3& (25\le N<200),\\
+  2\log N+2& (N\ge200),
+ \end{cases}
+\]
+then \(P_{N-1},P_N\) are coprime.
+\end{lemma}
+
+\begin{proof}
+The upper bound on the
+normalized coefficients in \eqref{eq:normalized-coefficients}
+is symmetric in \(k,m-k\).
+
+Suppose \(s\ge\sigma_N\). Let \(C\) be the constant term \(3\) or \(2\)
+in \(\sigma_N\), and use the following bounds for \(m=N-1,N\).
+\[
+\begin{array}{c|cccc}
+ N&A&E&q&\eta\\ \hline
+ 25\le N<200&.224&1.218&.52&7/8\\
+ N\ge200&.368&1.033&.24&19/20
+\end{array}
+\]
+For \(1\le k\le4\), the right side of
+\eqref{eq:normalized-coefficients} is at most
+\((AE^k)^k/k!\). Here \(A\ge e^{-C/2}\) and
+\(E\ge\exp((\log N+C/2)/(N-1))\).
+For \(5\le k\le m/2\), put \(u=k/m\) and use
+\(\binom mk\le(e/u)^k\). The logarithm of the resulting bound,
+divided by \(k\), is \(1-\log u-\sigma_N(1-u)/2\).
+By convexity its maximum is at an endpoint.
+The tabulated \(q\) bounds both endpoint exponentials, which
+are at most \(eAE^5/5\) and \(2e\,e^{-\sigma_N/4}\).
+The bounds on \(E\) and on the second endpoint are checked
+at the smallest \(N\) in each row, where they are largest.
+In both rows
+\[
+ 2\sum_{k=1}^{4}\frac{(AE^k)^k}{k!}+\frac{2q^5}{1-q}<\eta .
+\]
+Consequently \(\sum_{k=1}^{m-1}c_{m,k}<\eta\). At any root
+of \(P_m(w/G_m)\) with \(|w|\le1\), the constant term gives
+\(|w|^m>1-\eta\). The reciprocal polynomial gives
+\(|w|^m<(1-\eta)^{-1}\) when \(|w|\ge1\).
+
+By Lemma~\ref{lem:center-ratio} the two annuli are disjoint since
+\[
+ \frac d2\log\!\left(\frac N{N-1}\right)
+              \frac{N(N-1)}{2N-1}
+ \ \ge\ \frac{d(N-1)}{2(2N-1)}
+ \ >\ -\log(1-\eta).
+\]
+For the last inequality, \(d>s\ge\sigma_N\) gives \(d\ge10\)
+in the first row and \(d\ge13\) in the second. The minimum
+of the displayed rational lower bound in each row occurs at
+its smallest \(N\) and smallest \(d\). This contradicts
+a common root and proves the assertion.
+\end{proof}
+
+
+\begin{lemma}[Support reduction]
+\label{lem:support-reduction}
+If \(N\ge25\) and \(P_{N-1,a,d},P_{N,a,d}\) have a common root, then
+\[
+ a\ge5,\qquad 2\le d<3a,\qquad
+ a<d(N-2),\qquad 6a<(5N-11)d,\qquad
+ s<\sigma_N,
+\]
+where \(s=d^2/(a+d)\).
+\end{lemma}
+
+\begin{proof}
+Lemma~\ref{lem:constant-support} disposes of \(a=0\).
+Lemma~\ref{lem:positive-boundary} covers \(a=1,d\ge3\) and
+\(a\ge2,d\ge3a\). The remaining small positive
+lower exponents and the adjacent exponents are dealt with in
+Proposition~\ref{prop:additional-boundary}. These exclusions give
+\(a\ge5\) and \(2\le d<3a\). Lemma~\ref{lem:gamma-annulus} gives
+the two bounds on the shape. Lemma~\ref{lem:ratio-range} gives the
+bound on \(s\).
+\end{proof}

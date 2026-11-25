@@ -4,13 +4,13 @@
 
 Citation identity, reading a source, verifying a particular application, and proving a dependent theorem are separate. Context citations supply no mathematical premise. A source_read entry retains the stated ledger scope; it does not certify every use.
 
-**Catalogue:** 912 cited resources; 544 current TeX bibliography entries accounted for, including own-paper citations tracked separately.
+**Catalogue:** 912 cited resources; 555 current TeX bibliography entries accounted for, including own-paper citations tracked separately.
 
 [Graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Scope](SCOPES.md)
 
 ## Classical background and novelty limits
 
-188 scoped comparisons name 449 DAG nodes, including 102 of 725 principal results directly. This is a partial audit of identified proof components, not a count of fully reviewed theorems. A classical method does not establish the entire result or its priority. Comparisons add no proof routes and change no assurance flags. Inspected proof sources are hash-pinned; remaining obligations stay explicit.
+188 scoped comparisons name 449 DAG nodes, including 102 of 741 principal results directly. This is a partial audit of identified proof components, not a count of fully reviewed theorems. A classical method does not establish the entire result or its priority. Comparisons add no proof routes and change no assurance flags. Inspected proof sources are hash-pinned; remaining obligations stay explicit.
 
 | Claim / inspected proof | Classical antecedent and application | Novelty limit / remaining comparison |
 |---|---|---|
@@ -205,10 +205,17 @@ Citation identity, reading a source, verifying a particular application, and pro
 
 ## Reference issues
 
-- invalid external use role: EXT-BROWNING-VERZOBIO-THREE-POWERFUL
-- invalid external use role: REF-ABC-BCK-2401.03982
-- invalid external use role: REF-ABC-BCK-2401.03982
-- invalid external use role: REF-ABC-HEATH-BROWN-AFFINE-RECTANGLE
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: dusart-interval
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: dusart-primes
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: edo-essen
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: filaseta-rocks
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: laishram-shorey
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: nguyen-dang
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: oliveira-gaps
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: rocks
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: rosser-schoenfeld
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/references.tex :: wagner-stability
+- unmapped bibliography item: ../unpublished/strong-factorial-binomials/supplement/positive-boundary/research/factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex :: HKK
 - unmapped external URL: arithmetic/AVERAGED_GAUSSIAN_NORM_TRIPLES.md :: https://arxiv.org/html/2610.40439v2#S7.SS2
 - unmapped external URL: arithmetic/AVERAGED_GAUSSIAN_NORM_TRIPLES.md :: https://doi.org/10.1137/0518016
 - unmapped external URL: arithmetic/AVERAGED_GAUSSIAN_NORM_TRIPLES.md :: https://doi.org/10.1214/009117904000000027
@@ -1055,7 +1062,7 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [The Eichler Commutation Relation for theta series with spherical harmonics](https://bibliotekanauki.pl/articles/1391780.pdf) | paper | source_read | not retained; citation/application boundary recorded | 1 uses; ARITH-EISENSTEIN-FIXED-LATTICE-HARMONICS |
 | [The Eichler Commutation Relation for theta series with spherical harmonics](https://matwbn.icm.edu.pl/ksiazki/aa/aa63/aa6335.pdf) | paper | source_read | [arithmetic/sources/walling-eichler-harmonics-1993.pdf](arithmetic/sources/walling-eichler-harmonics-1993.pdf) :: Theorem 1, printed p.238: harmonic theta modularity with quadratic character.; Theorem 2, printed p.241: positive-degree harmonic theta cuspidality. | 2 uses;  |
 | [The exceptional set in the abc conjecture](https://arxiv.org/html/2506.13364v1) | preprint | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
-| [The factorial conjecture and images of locally nilpotent derivations](https://doi.org/10.1017/S0004972719000546) | paper | citation_only | not retained; citation/application boundary recorded | 3 uses;  |
+| [The factorial conjecture and images of locally nilpotent derivations](https://doi.org/10.1017/S0004972719000546) | paper | citation_only | not retained; citation/application boundary recorded | 4 uses; IMAGE2-HOPF-DIRICHLET-LAW-AND-QUINTIC-SUBALGEBRA-OBSTRUCTION |
 | [The four operations on perverse motives](https://doi.org/10.4171/JEMS/1402) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [The four-dimensional Hessian conjecture for quintic potentials with a ternary cone top](https://hexagonmath.org/2611.00134) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses; EXT-GIRAUDIN-HC4-DEGREE-5, GAP-HC4-GIRAUDIN-QUINTIC-REPRODUCTION |
 | [The Gaussian Moments Conjecture and the Jacobian Conjecture](https://arxiv.org/abs/1506.05192) | paper | source_read | not retained; citation/application boundary recorded | 11 uses; IMAGE-SHIFTED-ALL-MARKER-IFF, IMAGE-SHIFTED-WICK-CONTRACTION-IDENTITY, IMAGE-UNRESTRICTED-SHIFTED-GAUSSIAN-EQUIVALENCE |

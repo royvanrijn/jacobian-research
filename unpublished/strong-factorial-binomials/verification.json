@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "scope": "Theorem 1 and its proof, including the declared electronic proof appendix and exact finite and scalar replays.",
+  "proof_dependencies": [
+    {
+      "location": "Section 2 and Appendix A",
+      "basis": "Gamma root annuli, composition in the binomial basis, and endpoint normalization reduce the support. The short support tail also applies the Padé inequality."
+    },
+    {
+      "location": "Sections 2.1 and 3",
+      "basis": "At a prime, both reciprocal polynomials restrict the widths and multiplicities of a possible common factor. Short factorial blocks force prime divisibility and sharply reduce the finite computation."
+    },
+    {
+      "location": "Section 4 and Appendices D–E",
+      "basis": "Rotated exponential truncations have a monomial Wronskian and give a nonzero integral resultant. Its complex upper bound contradicts an integer lower bound from p-adic valuation estimates and prime support. The largest terminals require a separate count of square multiples and the two-height endpoint comparison."
+    },
+    {
+      "location": "Appendices B–C",
+      "basis": "Squarefreeness at constant support uses the derivative identity and uniform contour estimates. At large relative gaps, the electronic Positive-exponent Boundary appendix supplies the prime-power and contour proof inputs. Appendix C converts the analytic conclusions to the physical consecutive orders and gives the smaller exact finite domains."
+    }
+  ],
+  "sources": [
+    {
+      "reference": "Edo and van den Essen",
+      "identifier": "https://arxiv.org/abs/1304.3956v2",
+      "inspected": "Statement of the Strong Factorial Conjecture and the normalized factorial functional."
+    },
+    {
+      "reference": "Rocks",
+      "identifier": "https://doi.org/10.1016/j.jalgebra.2017.01.039",
+      "inspected": "Author preprint, Section 3.4, consecutive coprimality and prior univariate binomial cases."
+    },
+    {
+      "reference": "Filaseta and Rocks",
+      "identifier": "https://doi.org/10.4064/cm6761-3-2016",
+      "inspected": "Theorem 1.1, fixed-gap irreducibility and the lower density bound."
+    },
+    {
+      "reference": "Laishram and Shorey",
+      "identifier": "https://doi.org/10.4064/aa120-3-5",
+      "inspected": "Theorem 1(a), a prime divisor larger than twice the length of a consecutive block under a starting-point inequality."
+    },
+    {
+      "reference": "Oliveira e Silva, Herzog and Pardi",
+      "identifier": "https://doi.org/10.1090/S0025-5718-2013-02787-1",
+      "inspected": "Table 8, record prime gaps and their lower endpoints."
+    },
+    {
+      "reference": "Dusart, 2010",
+      "identifier": "https://arxiv.org/abs/1002.0442v1",
+      "inspected": "Theorems 6.9 and 6.11, explicit prime count and prime-weight sum."
+    },
+    {
+      "reference": "Dusart, 2018",
+      "identifier": "https://doi.org/10.1007/s11139-016-9839-4",
+      "inspected": "Proposition 5.4, explicit short prime intervals."
+    },
+    {
+      "reference": "Nguyen-Dang",
+      "identifier": "https://hexagonmath.org/pdf/2611.00087v1",
+      "inspected": "Proposition 3.9 and Section 3.2.1, the Laguerre Padé norm argument adapted in Section 4."
+    },
+    {
+      "reference": "Rosser and Schoenfeld",
+      "identifier": "https://doi.org/10.1215/ijm/1255631807",
+      "inspected": "Theorems 9 and 10, prime reciprocal sums used in the final comparison."
+    },
+    {
+      "reference": "Wagner",
+      "identifier": "https://doi.org/10.1090/S0273-0979-2010-01321-5",
+      "inspected": "Theorem 4.1, the apolarity theorem used to locate zeros of the composed polynomial."
+    }
+  ],
+  "checks": {
+    "latex": {
+      "passed": true,
+      "toolchain": "TeX Live 2023, pdfTeX 1.40.25, latexmk",
+      "source_in_isolated_directory": true,
+      "warnings": []
+    },
+    "layout": {
+      "passed": true,
+      "pages": 35,
+      "renderer": "Poppler pdftoppm 24.02.0 at 75 dpi",
+      "embedded_fonts": 24,
+      "type3_fonts": false,
+      "external_bibliography_links": 10
+    },
+    "arithmetic": {
+      "passed": true,
+      "environment": "Ubuntu 24.04, g++ 13.3.0 with C++20 and OpenMP (eight threads), Python 3.12.3, python-flint 0.9.0 for the gap-six import.",
+      "finite": {
+        "verify_initial_terminals.cpp": {
+          "pairs": 217952,
+          "modular": 217952,
+          "unresolved": 0
+        },
+        "verify_ordinary_binomial_residual.cpp": {
+          "groups": 21583,
+          "supports": 74362,
+          "prime_blocks": 62593,
+          "Newton": 11705,
+          "modular": 64,
+          "unresolved": 0
+        },
+        "verify_small_support.cpp": {
+          "groups": 12520,
+          "supports": 18904,
+          "prime_blocks": 4357,
+          "Newton": 4853,
+          "modular": 9694,
+          "unresolved": 0
+        },
+        "verify_constant_support.cpp": {
+          "pairs": 202021,
+          "shifted_prime": 201927,
+          "modular": 94,
+          "unresolved": 0
+        },
+        "verify_positive_boundary.cpp": {
+          "supports": 326146,
+          "prime_blocks": 14402,
+          "Newton": 311744,
+          "modular": 0,
+          "unresolved": 0
+        }
+      },
+      "numerical": {
+        "verify_pade_intervals.py": "Prime sums, scalar bounds and directed angular margins above 0.07043766 and 0.08954722 in the two moderate-angle bands.",
+        "verify_hard_pade_endpoints.py": "All ten rows pass the rational two-height endpoint tests.",
+        "verify_large_tail.py": "All rational endpoint comparisons in the large-order argument pass.",
+        "positive_boundary": "The analytical lower-one, lower-two and relative-gap scripts and the gap-six contour constants passed. Supplement README gives the exact commands."
+      }
+    }
+  },
+  "review": {
+    "blind_reader": {
+      "performed": true,
+      "reviewer": "Fresh no-history internal AI reader with a PDF-only recheck.",
+      "supplied_context": "Only the two compiled PDF editions and the paper-guide questions. Workspace sources, research history and the electronic supplement were excluded.",
+      "first_pdf_sha256": "2672a323d1ef593ce381ec2d118bb1ea9a89650279a8805f44fb9cf8cd05092a",
+      "final_pdf_sha256": "de4ef22425ef51014f429ef294b873dbf7a2d9d465388b68ff05033d353bd452",
+      "answers": {
+        "contribution": "Uniform consecutive coprimality for all univariate binomial supports and all positive consecutive orders in characteristic zero.",
+        "conceptual_reason": "A pair of Newton polygons restricts a common factor at every prime. In the large range the Padé gap forces divisibility of a nonzero resultant, and rotational averaging yields an incompatible complex upper bound.",
+        "hardest_step": "Lemma 14 in Section 4 gives the norm comparison. Proposition 23 in Appendix E closes its hardest application by separating Newton heights and counting square multiples close to the factorial endpoints.",
+        "limitations": "The theorem is for two terms in one variable in characteristic zero. It concerns consecutive coprimality. The proof uses finite exact checks and certified numerical comparisons along with the uniform estimates.",
+        "verification_obstacles": "The written Positive-exponent Boundary appendix is needed for Lemma 20, and the exact programs are needed to reproduce the computational parts. The final PDF explicitly identifies those two parts of the separately supplied supplement. The blind reader independently reproduced finite set sizes in Proposition 7 and Appendices B and C."
+      },
+      "revisions": "Defined b and s before they are used in Lemmas 4–5, identified the uniform filter d²<21(a+d) that gives 326,146 cases, rewrote the introductory explanation of the two resultant bounds, and identified both supplement parts. The same isolated reader checked the new PDF."
+    },
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "formal_verification": false
+  },
+  "artifact_hashes": {
+    "arithmetic.tex": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+    "constant-support.tex": "c94f2e3ec94afbb5d333a48d49edc1d20d032f4881ea6bcde00bcf73c2d9981d",
+    "initial-terminals.tex": "155da91cf7e8f16ffd4b0251a070432f995aa9ecba920a2fd1755674cf7eb6f0",
+    "main.tex": "ba8a96348e5800396c869939b8be22f5f99f32d6cd7ec842429eb1c5b04b9e6c",
+    "pade.tex": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+    "positive-boundary.tex": "1edaac56c1e7c1ce7569a05c74ddb8d13b05375a7d8e5ec24f0a600e2c561efc",
+    "reduction-proofs.tex": "ac0d9fdd14696b251df6adf1920bad05b268ec58a63078d039efedd054e49ed0",
+    "reductions.tex": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+    "references.tex": "44a45cdfc26d19e03cd79e3d579fd1b1c56767be3f12f57d189b0b3fc67b7e48",
+    "tail-finite.tex": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
+    "tail-large.tex": "96065e6b409d822cf6f5bc746fe854bdef1f50d34bcc7b003b9b354956ffbb41",
+    "strong-factorial-binomials.pdf": "de4ef22425ef51014f429ef294b873dbf7a2d9d465388b68ff05033d353bd452",
+    "supplement/verify_constant_support.cpp": "8d4a3e7adc2c29a704f17fdfe1f3387b807dac0e4ff72ff4ce00f6bd2e922726",
+    "supplement/verify_hard_pade_endpoints.py": "3e59d01f7892c763a35f4eed3621f21444a18f26dce1714e98b136fc6c07b2ac",
+    "supplement/verify_initial_terminals.cpp": "bf12a18026bfffc1a070e8d8f54b6a89f53a1fb6fb4342c37bc2917fd74858f1",
+    "supplement/verify_large_tail.py": "f21bfee7c6edc646f3d8e8003f5c562b699b0e48e897fb64d30bb8b10f86ad7d",
+    "supplement/verify_ordinary_binomial_residual.cpp": "712ecd8059458d58278d0bc6dafb0a7eb5d15c8ddece046da5cf37dc0247c1ea",
+    "supplement/verify_pade_intervals.py": "1f6abba23b73999c4791fe2adfd24807fe5397369761a526d7f40a0678be74f3",
+    "supplement/verify_positive_boundary.cpp": "c9400707abce282e23ba8aa67d8c98510e3f6bf348364a179b5a9523d140931a",
+    "supplement/verify_small_support.cpp": "087b2eb09c6b361a0cfad565e846d0d1888a32c4b61bfb86f02af40350239c3e"
+  }
+}

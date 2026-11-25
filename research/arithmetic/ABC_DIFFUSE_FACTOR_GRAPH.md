@@ -1777,6 +1777,530 @@ fixed positive margin. Thus a fractional packing violation
 forces macroscopic primes even in degree windows whose
 roots were not assumed prime.
 
+### Three-letter divisor packing
+
+Suppose the three sets of complete values in a primitive additive
+graph have sizes \(N_A,N_B,N_C\). Use fixed signs on the letters
+to write the relation as \(a+b=c\), where signed terms are allowed
+and \(|a|,|b|,|c|\le H\). Assign each vertex a divisor record with
+\(K_W\) possible records on letter \(W\), and let \(F_W\) be the
+full divisor of the corresponding complete value specified by
+its record. Let \(F\) be a lower bound for \(F_AF_BF_C\) on the
+edges. Then the number of edges is at most
+\[
+ \left((1+2H/F)\,K_AK_BK_C\,N_AN_BN_C\right)^{1/2}.
+ \tag{MS14}
+\]
+Indeed, within a fixed triple of records that occurs on an
+edge, the \(F_W\) are pairwise coprime by primitivity.
+Let \(a_r,b_{-r}\) be the sizes of the complementary residue
+classes of the first two fibres modulo \(F_C\), and let \(n_C\)
+be the size of the third fibre. For a fixed sum and residue,
+the difference of two possible first terms is divisible by
+\(F_A\), by \(F_B\) since the second terms also differ by it up
+to sign, and by \(F_C\). Thus at most \(1+2H/F\) pairs in the
+residue class can give the same sum. The edges for that residue
+are bounded by the smaller of \(a_r b_{-r}\) and
+\((1+2H/F)n_C\). Taking geometric means and using Cauchy–Schwarz
+over \(r\) gives a bound of \(((1+2H/F)n_An_Bn_C)^{1/2}\) for
+the three fibres. Sum this bound over record triples and use
+\(\sum_{\rho}\sqrt{n_{W,\rho}}\le\sqrt{K_WN_W}\) on each letter.
+
+This applies to edge-dependent choices \(d_{W,e}\mid x_{W,e}\)
+at any fixed truncation, with \(F_W=\prod_e d_{W,e}^e\).
+Keep one triple of dyadic size lists for the selected divisors
+at subpower cost. Within it, choose one record independently
+for each vertex among all the selected records it is offered.
+Every edge retains its chosen records with probability at
+least \(X^{-o_X(1)}\), since the number of such records per
+vertex is bounded by a fixed power of the divisor function
+of its complete value. Some assignment therefore preserves
+the edge count up to a subpower factor. If the total normalized
+root cost is at most \(\mu\), the dyadic lists give
+\(K_AK_BK_C\le X^{(\mu+o_X(1))L}\). For numerical weight at
+least \(w\), use \(F\ge X^w\). With heights at most
+\(X^{1+o_X(1)}\), any such family with complete part exponents
+at most \(c_W\) has normalized edge exponent bounded by
+\[
+ \frac{c_A+c_B+c_C+\mu+(1-w)_+/L}{2}.
+ \tag{MS15}
+\]
+Here \(w\) is measured on the ordinary logarithmic height scale
+and the graph exponent is divided by \(L\). In particular,
+for a fixed margin \(w>1\) the last term is zero in the limiting
+graph. A fixed margin below one makes the bound vacuous in the
+small-budget limit.
+
+For a balanced endpoint with \(d=1/3\) and
+\(\Gamma=1/2+\gamma\), the
+[near-minimum complete-label reduction](#the-complete-label-reduction-close-to-minimum-mass)
+gives exponent at least \(2c-68\gamma/3\), up to arbitrarily
+small losses, where \(c=1/6\) and \(\sum_W c_W=3c+\gamma\).
+Consequently prescribed whole blocks on all three letters
+of total mass below \(c-139\gamma/3\) cannot have total
+numerical weight above one. More generally, for fixed
+\(\eta>0\), the edges admitting a choice of that weight by
+a fixed positive margin and at cost at most
+\(c-139\gamma/3-\eta\) have a normalized count saving of
+at least \(\eta/2\) relative to the lower exponent of the
+complete-label reduction, in the limit of vanishing window
+and extraction losses.
+
+For a bounded continuity band of degrees at most \(R\), this
+also tests the fractional upper quantile of the pooled
+**three** degree measures. If its weight at
+\(t<c-139\gamma/3\) exceeds \(1+\zeta\), a fixed
+\(\zeta>0\), all but an exponentially small fraction of the
+retained edges have a prime in the band of normalized
+logarithmic size at least \(\zeta/(4R)\). As in (MS13), the
+squarefree prime contributions in the bounded band can be
+ranked and rounded down at the last contribution. In the
+absence of such a prime, rounding loses at most \(\zeta/4\)
+in numerical weight, so the chosen divisors contradict the
+three-letter count bound with a fixed margin.
+
+For a formal profile illustrating the new restriction, use the
+same degree measure on each letter,
+\[
+ \nu=\tfrac1{20}\delta_{36/5}+\tfrac7{60}\delta_{6/5}
+      +\tfrac16\,\operatorname{Unif}[2,4],
+\]
+where the uniform law has mass one. The total root mass is
+\(1/3\), the nonatomic mass is \(c\), and the numerical
+height is one. The three nonatomic supports lie in \([0,6]\)
+and the integral in (MS12) is at least \(s/6\) for \(0\le s\le4\)
+by concavity and the endpoint values. For any two letters,
+the fractional top mass \(c\) has weight at most
+\(2(9/25)+4(c-1/10)=74/75\), using degree at most four
+after the two high atoms. Yet the three high atomic windows
+together have mass \(3/20<c\) and weight \(27/25>1\).
+The count saving extends below the extremal exponent.
+Let \(d=2c-\varepsilon\), \(0\le\varepsilon\le10^{-3}\),
+and suppose \(|c_W-c|\le10^{-3}\) on each letter.
+Set \(\gamma=\sum_W c_W-3c\). The
+[quantitative separation argument](#the-complete-label-reduction-close-to-minimum-mass)
+now gives a complete-label graph of normalized exponent at least
+\(2c-35\varepsilon-68\gamma/3\), up to arbitrarily small losses.
+Indeed the simultaneous anchor deficit is at most
+\(7\varepsilon+4\gamma\): substitute the initial exponent
+\(2c-\varepsilon\) in the seventh power of the edge count.
+The nondegenerate cycle count still dominates because
+\(3d>2(c_i+c_j)+\max(c_i,c_j)\) for every pair in this range.
+The same vector inequalities and freeze add at most four
+times the anchor deficit plus \(8\gamma/3\).
+Combining the lower exponent with (MS15) for \(w>1\) yields
+\[
+ \varepsilon\ \ge\ \frac{c-\mu-139\gamma/3}{70}.
+ \tag{MS16}
+\]
+For the displayed profile the full high windows have
+\(\mu=3/20\) and \(\gamma=0\), so it gives
+\(d\le1/3-1/4200\). The same conclusion holds when \(d\) is
+already below the stated range.
+
+### Divisor records for longer additive relations
+
+For \(m\ge3\), take \(m\) finite sets of signed integers of
+magnitude at most \(H\), with the additive relation
+\(\sum_{i=1}^m x_i=0\). The \(i\)-th set has \(N_i\) values
+and \(K_i\) divisor records. On each counted tuple, assume
+the recorded full divisors of its entries are pairwise
+coprime and have product greater than \(2H\). Then the
+number of tuples is at most
+\[
+ \prod_{i=1}^m N_i^{(m-2)/(m-1)}K_i^{1/(m-1)}.
+ \tag{MS17}
+\]
+For a fixed tuple of records with divisors \(F_1,\ldots,F_m\),
+take the uniform distribution on its counted tuples. The
+entry \(x_i\) is determined by its residues at the other
+\(m-1\) moduli, since its own residue is zero and the full
+product exceeds \(2H\). Write the residue array in columns
+indexed by the moduli, omitting the known diagonal zeros.
+The additive relation implies that in each column any
+\(m-2\) entries determine the last. Conditional on all
+earlier columns, the entropy of the column therefore
+equals the joint entropy with any one entry omitted.
+Sum the \(m-1\) resulting subadditivity bounds to bound
+the column entropy by \((m-2)/(m-1)\) times the sum of
+its entry entropies, with the same conditioning. On summing
+over columns, each row contributes at most its joint
+entropy, since conditioning on all earlier columns gives
+at most the entropy conditioned on the earlier entries
+of that row alone. The joint entropy of the tuple is
+therefore at most \((m-2)/(m-1)\sum_i\log n_i\), where
+\(n_i\) are the respective fibre sizes. Exponentiate and
+sum over the record tuples. Hölder on each record
+dictionary gives (MS17).
+
+The argument also allows choices depending on the tuple.
+For fixed \(m\) and fixed truncation the same dyadic size
+and random assignment argument as in (MS15) applies, with
+a separate copy of the record map on each position of
+the relation. In particular the \(m\) sets may coincide.
+
+## Repeated locks force a common full factor
+
+At \(d=1/3,\ \Gamma=1/2\), put \(c=1/6\) and use the
+near-full complete-label additive graph. Fix one target letter
+\(T\). Suppose a prescribed block of its original root positions
+has limiting normalized root cost \(\beta\) and numerical
+weight \(w\), with scaled degrees in a fixed compact interval
+\([s,S]\subset(0,\infty)\). All its roots are squarefree because
+these are bounded scaled degrees below the packed index.
+Let \(m\ge2\) be a fixed even integer with \(m\beta<c\).
+
+If \(mw>1\), then for every \(\epsilon>0\) the graph can be
+thinned at arbitrarily small normalized cost to one on which
+all complete values of \(T\) have a common full factor carried
+by this block, with numerical weight at least
+\[
+ W_*-\epsilon,\qquad W_*=\frac{mw-1}{m-1}.
+ \tag{RP1}
+\]
+In the common factor each prime is assigned to the same original
+degree position throughout the retained graph. This last property
+is needed both for iterating the argument and for combining the
+common modulus with other disjoint blocks.
+
+### Additive energy and the cost of one iteration for \(m\ge4\)
+
+Retain one outside label and one admissible original representation
+per complete value in each part, at fixed-truncation divisor loss.
+For notation in the count, put \(n=X^L\), take part caps
+\(n^{c+\delta+o(1)}\), and suppose the current retained edge
+exponent is \(2c-\eta+o(1)\). First discard target vertices
+of graph degree less than \(n^{c-\lambda}\), with
+\(\lambda>\eta+\delta\). Their total edge count has a strict
+saving, so the surviving graph still has exponent
+\(2c-\eta+o(1)\). Keep this regularization before selecting
+any further target subset.
+
+The number of nondegenerate four-cycles in the projection
+onto the other two complete letters is at least
+\(n^{4c-4\eta-4\delta+o(1)}\), for small \(\eta,\delta\).
+Each produces an additive quadruple of complete target values
+\(T_{11}+T_{22}=T_{12}+T_{21}\). A fixed ordered quadruple
+comes from at most \(n^{c+\delta+o(1)}\) cycles, since the
+first complete row value determines the other three row and
+column values. Thus the target part has additive energy at
+least \(n^{3c-4\eta-5\delta+o(1)}\).
+The degree \(m\) Fourier moment of its indicator exponential
+sum is the number of ordered equal sums of \(m/2\) values on
+each side. By Hölder interpolation of the second and fourth
+moments,
+\[
+ E_m\ge E_4^{(m-2)/2}|\mathcal T|^{-(m-4)/2}
+ \ge n^{(m-1)c-A_m+o(1)},\qquad
+ A_m=2(m-2)\eta+(3m-7)\delta .
+\]
+Repeated target values cost only \(O_m(|\mathcal T|^{m-2})\)
+tuples: if the two equal entries cancel, the remaining
+nontrivial relation determines one of the remaining values;
+otherwise use their common value as the coefficient-two
+variable. They can be discarded.
+
+Suppose a common full factor \(F\) on the specified block
+has already been selected, with every prime of \(F\) in its
+fixed assigned degree position. Let \(W=\log_X F\).
+Divide that fixed prime subset out of the block roots and
+call the resulting block of each vertex its residual block.
+Its full numerical weight is \(w-W+o(1)\), and its radical
+is coprime to \(F\). Let \(P(t)\) denote this residual
+squarefree radical. Choose a fixed \(\xi>0\) below
+\(\epsilon/(2mS)\).
+For a tuple in which every pair satisfies
+\[
+ \log_X\operatorname{rad}\gcd(P(t_i),P(t_j))<\xi L ,
+\]
+record all \(m\) residual blocks. In each block strip every
+prime appearing in any other recorded block. In total this
+loses at most \(m(m-1)S\xi\) of numerical weight: a single
+root prime occurs to its original bounded scaled degree.
+The stripped moduli are pairwise coprime and divide the
+reduced values \(t_i/F\). If
+\(W<W_*-\epsilon\), their total numerical weight plus \(W\)
+is at least
+\[
+ W+m(w-W)-m(m-1)S\xi-o(1)>1 .
+\]
+Hence their product exceeds \(2X/F\) for large \(X\).
+
+For each fixed record tuple, the fixed-record bound in (MS17) gives at most
+\((\prod_i a_i)^{(m-2)/(m-1)}\) such additive tuples, where
+\(a_i\) is the size of its residual-record fibre.
+The stripping is deterministic from the record tuple.
+Each residual-record dictionary has exponent at most
+\(\beta\), since its roots divide by fixed factors already
+assigned to their positions. Hölder over all records
+therefore gives exponent at most
+\[
+ \frac{m(m-2)}{m-1}(c+\delta)+\frac{m\beta}{m-1}
+   =(m-1)c-\frac{c-m\beta}{m-1}+O_m(\delta)
+\]
+for tuples with no large overlap. The strict \(m\beta<c\)
+makes this smaller than the energy exponent if all graph
+losses are sufficiently small.
+
+Consequently the tuples with a pair overlap at least
+\(\xi\) have exponent at least \((m-1)c-A_m\).
+Fix an offending ordered pair of slot positions, losing only
+a constant factor. For fixed values of that pair there are at
+most \(|\mathcal T|^{m-3}\) completions of a signed additive
+tuple, because all but one remaining value can be chosen freely.
+Thus the pairs with such overlap have exponent at least
+\(2c-A_m-(m-3)\delta\). Some fixed \(t_0\) has at least
+\(n^{c-A_m-(m-2)\delta+o(1)}\) such neighbours.
+For each choose one squarefree divisor
+\(g\mid P(t_0)\) dividing its residual block, with
+\(\log_X g\ge\xi L\). There are divisor-many choices of
+\(g\), and at fixed truncation \(J^{\omega(g)}=X^{o_X(1)}\)
+ways to assign its primes to the neighbour's \(J\) degree
+positions. Pigeonhole both the divisor and those assignments.
+The retained neighbours therefore share the same new full
+factor \(G=\prod_e g_e^e\), with numerical weight at least
+\(s\xi+o(1)\), coprime to \(F\).
+
+Since each retained neighbour had graph degree at least
+\(n^{c-\lambda}\), retaining all its edges gives the next
+edge deficit at most \(A_m+(m-2)\delta+\lambda+o(1)\).
+For example take \(\lambda=\eta+2\delta+\delta'\) with
+\(\delta'>0\) arbitrarily small. The update then costs at
+most
+\[
+ (2m-3)\eta+(4m-7)\delta+\delta'+o(1).
+\]
+Replace \(F\) by \(FG\), whose prime assignments remain
+fixed, and repeat unless \(W\ge W_*-\epsilon\).
+Each step increases \(W\) by at least \(s\xi/2\) for large
+\(X\), and \(F\) divides every currently retained \(T\)-value
+at most \(X\), so at most \(1+\lceil2/(s\xi)\rceil\) steps
+are possible. All parameters are fixed before the height
+limit. Choose \(\eta,\delta,\delta'\) initially small
+enough that the finitely many possible updates leave all
+the stated strict margins and the requested final graph
+tolerance. This proves (RP1).
+
+### Two locks on a fixed difference
+
+For \(m=2\), use the same target energy bound
+\(E_4\ge n^{3c-4\eta-5\delta+o(1)}\) and regularization.
+Write \(r(D)\) for the number of ordered target pairs of
+difference \(D\). Then \(\sum_D r(D)^2=E_4\) and
+\(\sum_D r(D)=|\mathcal T|^2\). The zero-difference
+term \(r(0)^2=|\mathcal T|^2\) has strictly smaller
+exponent than the energy. Hence some fixed nonzero
+\(D\) has \(r(D)\ge n^{c-4\eta-7\delta+o(1)}\).
+For a pair with this difference and overlap less than
+\(\xi L\) in logarithmic root mass, record the two
+residual blocks and strip their shared primes. If
+\(W<2w-1-\epsilon\), the resulting coprime full moduli
+have product exceeding twice the height bound for the divided target
+values, by the same weight calculation with \(m=2\).
+One modulus divides the first value and the other fixes
+it modulo the second modulus using \(D/F\).
+There is at most one pair for these records. Their
+exponent is at most \(2\beta<c\), so pairs with large
+overlap retain the lower exponent above.
+
+Each such pair determines a radical divisor of \(D\)
+in its residual blocks of normalized root mass at least
+\(\xi\). Assign those primes to original degree positions
+on the first value and pigeonhole the divisor and
+assignments as before. Each first value occurs in just
+one fixed-difference pair. The resulting set of first
+values retains the pair exponent, so the next edge
+deficit is at most \(4\eta+7\delta+\lambda\) up to
+arbitrarily small losses. Iteration proves (RP1)
+also for \(m=2\).
+
+### A support consequence for high atomic blocks
+
+If the block in (RP1) lies entirely above degree six, it
+is disjoint from any supplying nonatomic band on \(T\),
+by the complete-label support bound. Write
+\(s_V^*=\sup\operatorname{supp}\nu_{V,\rm na}\) for each
+letter \(V\). Then
+\[
+   mw+(m-1)c\,\max_V s_V^*\le m .
+ \tag{RP2}
+\]
+For \(mw\le1\) this follows from the support bound \(\max_V c s_V^*\le1\).
+Otherwise select the common factor as in (RP1) and take
+a complete additive star with fixed rows on one opposite
+letter and common complete columns on the other.
+All its \(T\)-terms are divisible by \(F\); the column
+parameter already has a fixed residue modulo \(F\), using
+any one fixed row. For each \(u<s_T^*\), choose a
+continuity band of positive diffuse mass with lower degree
+at least \(u\) and upper degree at most the high block's
+lower degree. The chosen diffuse outside roots have no
+prime in \(F\), since the prime assignment of \(F\) is
+fixed in the disjoint high positions. Use the fixed-row
+CRT count to lock this band across sufficiently many rows
+at combined mass \(z<c\) and weight at least \(u z\).
+Strip fixed row-difference primes exactly as in (CT1).
+The surviving moduli are pairwise coprime and coprime
+to \(F\). If \(W+uz>1\) with a fixed margin, the column
+is determined by CRT, including the fixed congruence
+modulo \(F\). The same bad-overlap estimate works since
+the retained graph stays arbitrarily close to full.
+This contradiction shows \(W_*+cs_T^*\le1\) on taking
+\(\epsilon\to0\). For a supplying band on a different
+letter \(V\), take the common columns on \(T\) itself.
+The complete column parameter is divisible by \(F\),
+and primitivity makes all \(V\)-block primes coprime
+to \(F\). The same count gives \(W_*+cs_V^*\le1\).
+This proves (RP2).
+
+For a strict formal example, give both other letters an
+atom of mass \(1/6\) at three and nonatomic mass \(1/6\)
+uniform on \([2.9,3.1]\). Give \(T\) an atom of mass
+\(1/25\) at \(15\) and one of mass \(19/150\) at
+\(16503/15200\), together with nonatomic mass \(97/600\)
+uniform on \([1.49,1.51]\) and mass \(1/200\) uniform on
+\([3.99,4]\). These measures all have total mass \(1/3\),
+nonatomic mass \(1/6\) and numerical moment one. The
+fractional three-letter packing at mass \(1/6\) has
+weight at most
+\[
+ 0.6+4(0.005)+3.1(1/6-0.04-0.005)<1 .
+\]
+The single-parameter trimmed bound also holds: at \(s=3.1\)
+the truncated moment of \(T\) is \(0.519525>3.1/6\), and
+the ratio of this truncated moment to \(s\) is
+nonincreasing, so the opposite diffuse supports are allowed.
+For \(T\) itself its opposite letters' moments are untrimmed
+at the end of its diffuse support and there is no restriction.
+But take \(m=4,\ \beta=0.04,\ w=0.6,\ s_T^*=4\).
+Then \(m\beta=0.16<c\) while
+\(mw+(m-1)c s_T^*=4.4>4\). This violates (RP2).
+
+### Common factors on several letters
+
+Suppose a near-full complete-label graph has a common full
+factor \(F_i\) on each letter \(i\), where empty factors are
+allowed. The factors are pairwise coprime by primitivity.
+For each \(i\), the opposite two complete parts have
+complementary residues on all their edges modulo \(F_i\)
+(with fixed signs if the equation is differently oriented).
+A single residue pair retains an arbitrarily near-full
+edge exponent. Indeed, if \(E_r\) is the edge count in a
+matching residue pair and \(a_r,b_r\) the relevant two
+part sizes, then
+\[
+ E=\sum_r E_r
+ \le (\max_r E_r)^{1/2}\sum_r\sqrt{a_rb_r}
+ \le(\max_r E_r)^{1/2}\sqrt{|\mathcal A||\mathcal B|}.
+\]
+Thus \(\max_r E_r\ge E^2/(|\mathcal A||\mathcal B|)\).
+Apply this for all three \(F_i\). Each complete part now
+lies in a single residue class modulo
+\(Q=\prod_iF_i\), with numerical weight
+\(W=\log_X Q=\sum_iW_i\). Each of these finitely many
+thinnings multiplies the incoming edge deficit only by a
+fixed constant and preserves an arbitrarily near-full graph.
+As each part still has many complete values, \(Q\) is
+at most their height bound \(X^{1+o_X(1)}\).
+
+For each selected letter \(i\), let a prescribed block of
+root cost \(\beta_i\), numerical weight \(w_i\), and compact
+positive scaled range \([s_i,S_i]\) be given. Choose an
+even integer \(m_i\ge2\) with \(m_i\beta_i<c\). Let \(F_i\)
+be the common factor currently extracted from this block,
+with the fixed prime assignments as in (RP1); put \(w_i=0\)
+for a part where no block is used. Fix a small threshold
+\(\epsilon_0>0\). If
+\(W+m_i(w_i-W_i)>1+\epsilon_0\) on some selected part, apply
+the preceding repeated-lock extraction on that part,
+with the following change to the range argument.
+Write each target integer as \(r_i+Q y\), where \(r_i\)
+is the fixed residue on its part. Its reduced range has
+length at most \(X/Q\). Balanced additive tuples, or
+a fixed nonzero difference when \(m_i=2\), retain the
+same additive count after this affine change.
+
+Record the residual locks once the common assigned part on
+letter \(i\) has been removed. Their primes are coprime to
+\(Q\): they are disjoint from the assigned common factors
+on their own letter, and coprime to the other letters'
+common factors by primitivity. After stripping pair
+intersections in a private tuple, each reduced variable
+\(y\) has a fixed residue modulo its own residual modulus,
+namely \(-r_i/Q\) modulo that modulus. This need not be
+the zero residue, but the residue-entropy lemma is
+unchanged for prescribed affine residues. In each
+residue column the missing entry is now a known constant;
+the remaining entries satisfy the corresponding known
+linear sum. The private record product exceeds \(X/Q\)
+as long as
+\(W+m_i(w_i-W_i)-m_i(m_i-1)S_i\xi>1\), using
+two-variable CRT interpretation for \(m_i=2\).
+Choose a common small \(\xi>0\) to ensure this whenever
+the extraction is triggered. The energy and overlap
+arguments then give a new common assigned factor on
+letter \(i\), coprime to the previous \(Q\), of weight at
+least \((\min_i s_i)\xi+o(1)\).
+
+After each extraction, synchronize residues for the new
+factor and keep the previously synchronized residues.
+Each step has the same finite-deficit amplification as
+before, with the additional residue-class thinning
+above. There are at most
+\(1+\lceil 2/((\min_i s_i)\xi)\rceil\) extraction steps
+unless a contradiction has occurred. By starting with
+small enough losses, the graph remains arbitrarily
+near-full. Thus the process terminates with
+\[
+ W+m_i(w_i-W_i)\le1+\epsilon_0
+ \qquad\text{on every selected letter.}
+\]
+Taking \(\epsilon_0\) to zero along subsequences of the
+bounded weights gives the limiting necessary inequalities
+with right side one.
+
+If all selected blocks lie above the nonatomic supports,
+the resulting synchronized modulus \(Q\) can be included
+in every fixed-row CRT reconstruction. For any target the
+nonatomic row locks are prime-disjoint from its own
+assigned common high factor and coprime to the opposite
+common factors by primitivity. The column parameter
+already has one fixed residue modulo the entire \(Q\).
+Let \(s_*=\max_i\sup\operatorname{supp}\nu_{i,\mathrm{na}}\).
+It follows that \(W+c s_*\le1\). Putting \(t=1-W\), the
+residual inequalities yield
+\[
+ t\ge c s_*,
+ \qquad
+ t+\sum_{\text{selected }i}(w_i-t/m_i)_+\le1 .
+\]
+If \(\sum_i1/m_i\le1\), the function on the left is
+nondecreasing in \(t\), and consequently
+\[
+ c s_*+\sum_{\text{selected }i}(w_i-c s_*/m_i)_+\le1 .
+ \tag{RP3}
+\]
+
+On each letter put an atom of mass \(1/25\) at
+\(29/4\), an atom of
+mass \(1/6-1/25\) at \(q=423603/175400\), nonatomic
+mass \(1/1000\) uniform on \([3.99,4]\), and the remaining
+nonatomic mass \(1/6-1/1000\) uniform on
+\([q-0.001,q+0.001]\). The three numerical weights per
+letter are \(0.29\) on the high atom, \(0.003995\) on the
+diffuse tail, and \(0.706005\) on the combined low mass.
+Thus the moment is one. The three-letter fractional
+top-\(c\) weight is at most
+\(0.87+0.012+(1/6-0.123)\cdot2.417<0.988\),
+and (MS12) holds because the truncated moment at four
+is \(0.87>4/6\). The independent repeated locks with
+\(m_i=4\) and \(\beta_i=0.04,w_i=0.29\) only force
+total common weight \(0.16\), compatible with the support
+bound. But the synchronized residual inequalities force
+\(W\ge4(3\cdot0.29)-3=0.48\); the diffuse limit
+\(s_*=4\) requires \(W\le1/3\). Therefore (RP3) supplies
+a strict additional restriction in this sector.
+
 ## Quantitative trimming near the minimum nonatomic total
 
 Consider any balanced limiting endpoint with \(d=1/3\), total root mass \(1/3\) on each letter, and
@@ -1916,22 +2440,66 @@ whose complete values are functions of their own labels.
 The retained complete part sizes have exponents at most
 \(c+\gamma+\delta\).
 
-Indeed an application of (MS1) to a subgraph of exponent
-\(2c-\lambda\) has new edge deficit at most
-\(3\lambda+4\gamma+3\mu+O(\delta)\), with \(\mu\)
-the cost of the newly frozen common divisor. This follows
-from the same four-cycle count with both part capacities
-at most \(c+\gamma+\delta\). For the required small
-parameters, the repeated-row and repeated-column counts
-remain negligible. The subsequent factor-freezing step
-in the [complete-label proof](#freezing-factors-related-on-every-edge)
-works with \(\gamma+\delta\) in place of \(\delta\), giving
-new deficit at most \(5\lambda+8(\gamma+\delta)\).
-There are only three operations of each kind. Choose
-\(\gamma,\delta,\mu\) sufficiently small for their final
-deficit to be less than \(\epsilon\). This argument uses
-the upper capacities and positive nonatomic masses, so
-their exact equality is unnecessary.
+For an explicit loss, freeze cheap positive-weight full
+blocks on all three letters in the same graph and perform
+the prime coloring by letter and short slot once. Let
+\(E\) be the resulting edge count with exponent at least
+\(2c-\eta_0\), where \(\eta_0\) is arbitrarily small.
+Write \(M_i\) for the three outside capacities. For a fixed
+pair \(i,j\) of letters, each edge is in its usual
+bipartite projection, with no multiplicity by pair
+uniqueness. Call an edge good for this pair if it has
+at least \(\tau_{ij}=E^3/(10^4 M_i^2M_j^2)\) nondegenerate
+opposite four-cycle anchors in that projection.
+If at least \(E/10\) edges were bad, their projected
+subgraph would have more than \(E_{\rm bad}\tau_{ij}\)
+four-cycles. Indeed the ordered cycle count is at
+least \(E_{\rm bad}^4/(M_i^2M_j^2)\) before degeneracies,
+and the degenerate count is \(O(E_{\rm bad}(M_i+M_j))\)
+of strictly smaller exponent for small parameters. This
+contradicts the defining upper bound on the bad edges.
+
+Thus at least \(0.7E\) edges have the stated lower bound
+on anchors in all three projections. Average over the
+at most \(E^3\) triples of anchors, one in each
+projection. Some fixed triple has at least a constant
+times \(E^7/(M_A M_B M_C)^4\) compatible edges. This
+has exponent at least \(2c-7\eta_0-4\gamma-O(\delta)\)
+because \(c_A+c_B+c_C=3c+\gamma\). Pigeonhole the three
+complete cross ratios simultaneously at negligible
+normalized cost as in (MS2). This gives multiplicative
+separation in all three orientations on a single graph,
+now with deficit \(\eta\le4\gamma\) up to arbitrarily
+small additional loss.
+
+Apply the [factor-energy argument](#freezing-factors-related-on-every-edge)
+once to the three product relations, viewed as a single
+coordinatewise product relation in \((\mathbb Q_{>0})^3\).
+In each coordinate invert the output factor, so the
+product of the three part vectors is \((1,1,1)\).
+Bin the vector fibre sizes and sign-color each coordinate
+of each part independently. A fixed vector product still
+has only divisor-many representations, by applying the
+integer divisor bound to every rational coordinate.
+The same energy calculation therefore applies. If
+\(v_i=c_i-\log K_i/(L\log X)\) is the vector dictionary cap
+up to window loss, with \(K_i\) its fibre-size bin, a
+matched pair on \(i,j\) has exponent at least
+\(v_i+v_j-\eta-\Delta_{ij}\), where
+\(\Delta_{ij}=c_i+c_j-2c\). Thus the output cap satisfies
+\(v_k\ge v_i+v_j-2\eta-2\Delta_{ij}\) up to window losses.
+Adding the inequalities for the two outputs other than
+\(i\) gives \(v_i\le2\eta+c_i-c+\gamma\).
+
+Fix the factor vectors on the two parts with the
+smallest \(c_i-c+\gamma\). Every complete letter has
+an opposite factor fixed, which gives its single-label
+realization. The two chosen quantities sum to at most
+\(8\gamma/3\), because all three sum to \(4\gamma\).
+The final deficit is therefore at most
+\(5\eta+8\gamma/3\le68\gamma/3\), up to arbitrarily
+small additional loss. This gives the claimed near-minimum
+complete-label graph for every tolerance \(\epsilon>0\).
 
 ### A one-root count for a concentrated numerical moment
 
@@ -2019,6 +2587,402 @@ proves (DN1). The constants are uniform in the choice
 of the three letters. In particular the lower bound
 does not depend on how many positive atom scales
 occur on the letter being counted.
+
+## An explicit one-letter mesh discrepancy
+
+At \(d=1/3,\ \Gamma=1/2\), let \(U,T\) be distinct letters
+and let \(0<a\le1\). For every compact positive band
+\([s,S]\) with \(s>0\), \(S<2s\), and positive nonatomic
+\(T\)-mass in its interior, one has
+\[
+ \int \|r/a\|\,d\nu_U(r)>\frac{s}{11500}.
+ \tag{DN2}
+\]
+In particular the left side is at least
+\(\sup\operatorname{supp}\nu_{T,\mathrm{na}}/11500\),
+by testing bands approaching the positive support endpoint.
+Only one letter's phase discrepancy enters this inequality.
+
+Work in the complete-label graph with fixed complete rows
+on the remaining letter. For any fixed \(m\), its ordered
+star count produces \(m\) distinct rows with common \(U\)
+columns of normalized exponent arbitrarily close to
+\(c=1/6\). In a common column with complete \(U\)-value \(u\),
+the corresponding \(T\)-terms have the form
+\(T_i=\varepsilon u+t_i\) with a common \(\varepsilon=\pm1\)
+and distinct fixed offsets \(t_i\). In particular all pairwise
+differences \(t_i-t_j\) are nonzero. By the support bound,
+we may take \(s\le6\). Make harmless positive changes to
+the band edges inside the original interval to obtain
+continuity endpoints, keeping its lower bound \(s\), upper
+bound \(S<2s\), and positive nonatomic mass \(H\).
+
+Set \(\mu=0.083\). Take \(m\) fixed large enough that
+\(H>\mu/m\). On each \(T_i\) choose a prescribed outside
+block of roots in the band of normalized mass in
+\([\mu/m,\mu/m+\delta+o(1)]\). Here the upper rounding
+error comes from the maximum outside coordinate mass,
+and \(\delta\) can be arbitrarily small. Fix the selected
+roots. Their total freeze cost is at most
+\(\mu+m\delta+o(1)\). The selected block positions are fixed
+before the column values or their prime factors are chosen.
+
+Put \(F=\prod_{i<j}(t_i-t_j)\) and choose
+\(0<\xi<1/(10000m)\). Discard columns for which some outside
+\(T_i\)-product has radical overlap of mass \(\xi\) or more
+with \(F\). The fixed-row divisor-allocation estimate and
+pair uniqueness bound these columns by
+\(X^{(c+\delta-\xi+o(1))L}\); the incoming star loss and
+\(\delta\) are taken smaller after \(\xi\) is fixed.
+Strip all primes of \(F\) from the recorded roots.
+Their bases are squarefree in the fixed bounded degree
+band. The total stripped base mass is at most
+\(m\xi+o(1)<0.0001+o(1)\). The surviving full products
+\(n_i\mid T_i\) are pairwise coprime, since every common
+prime divisor of \(T_i,T_j\) divides \(t_i-t_j\).
+
+Let \(n=\prod_i n_i\). The congruences
+\(\varepsilon u+t_i\equiv0\bmod n_i\) define a fixed
+unit residue of \(u\bmod n\), since each witness is
+primitive. Choose \(kL\to s\), below all selected degrees.
+All modulus valuations satisfy \(k\le e<2k\) for small
+\(L\), by squarefreeness and \(S<2s\). Thus the full shallow
+record is \(Q_n=\operatorname{rad}(n)\). Its normalized
+lower and upper masses, and the numerical weight of \(n\),
+can use
+\[
+ b=0.0829,\qquad b_Q\le0.0831,\qquad w\ge0.0829s.
+\]
+Here take \(m\delta<0.0001\), with the usual limiting
+errors absorbed by the strict margins. All estimations
+are uniform in the fixed root values. Equivalently pass
+to a subsequence of the modulus weights if (QD2) is stated
+with a limiting \(w\).
+
+On \(U\), round every scaled degree to a nearest
+nonnegative multiple \(ia\) of \(a\) and put the \(i\)-th
+power of its original root into \(z\). Take \(q=\lfloor
+a/L\rfloor\), leaving a wider rational multiplier \(v\)
+from the signed rounding errors. Fix the exceptional
+coefficient as part of the box and absorb it into the
+unit congruence target. All primes of \(z,v\) come from
+\(u\), so both are units modulo \(n\).
+The first-moment and mass bounds give
+\[
+ h\le\frac1a+\frac16\le\frac{7}{6a},\qquad
+ E\le a\int \|r/a\|\,d\nu_U(r).
+\]
+Indeed \(i\le r/a+1/2\), and rounding \(ia\) to \(iqL\)
+has total numerical cost \(o(1)\), since \(L\sum i\beta_e=o(1)\)
+for each fixed \(a\). The bounded continuous error
+\(\|r/a\|\) converges by weak convergence, even at nearest
+rounding ties.
+
+Suppose the discrepancy is at most \(s/11500\).
+Apply (QD2) with \(\alpha=1/2\),
+\(M=\lceil113/a\rceil\), and its short exponent parameter
+\(r_0=as/113\). Since \(s\le6\), \(r_0<qL\) for small
+\(L\). The Taylor order bound is
+\(\alpha(M+1)r_0\le115s/226<s\). Also
+\[
+ B=hr_0+EM
+ \le\left(\frac7{678}+\frac{114}{11500}\right)s
+ <0.020725\,s .
+\]
+The determinant threshold satisfies
+\(b\alpha(M+1)r_0/2\ge (0.0829/4)s=0.020725s\).
+Likewise \(4B<0.0829s\le w\), giving the reconstruction
+condition. The number of grouped pairs has normalized
+cost at most \(0.0831\), by the exact shallow record.
+Each pair gives \(u\), hence its column. Counting the
+recorded target roots as well gives normalized exponent
+at most \(0.1662<c\). The bad-overlap columns also have
+a fixed saving. This contradicts the near-full star.
+
+The constant depends on the lower scale of the supplying band.
+Combining it with (VM7) also gives a uniform positive
+one-letter lower bound, independent of the profile and of
+\(a\in(0,1]\): for every \(U\), at least one of the two
+other letters has uniformly positive diffuse numerical
+weight, and hence its nonatomic support endpoint is
+uniformly bounded below after dividing by its mass \(c\).
+
+### Explicit weight outside any finite atom list
+
+Put
+\[
+ \theta_U=\frac1{11500}
+   \max_{T\ne U}\sup\operatorname{supp}\nu_{T,\rm na},
+ \qquad H=\left\lceil\frac{2c}{\theta_U}\right\rceil.
+\]
+For any list of \(m\ge1\) positive atoms of \(U\), let
+\(W\) denote their combined numerical weight. Then
+\[
+ 1-W\ \ge\ \frac{\theta_U}{4H^{m-1}} .
+\]
+If \(W<c\), the inequality is immediate. Otherwise at
+least one selected scale \(r_*\) is at least one, since
+the total atomic mass is \(c\). Put \(d=\lceil r_*\rceil\).
+Simultaneous Dirichlet approximation of the \(m-1\)
+numbers \(d r_i/r_*\) for the other selected scales gives
+some \(1\le k\le H^{m-1}\) for which
+\(\|kd r_i/r_*\|\le1/H\). This follows by putting the
+\(H^{m-1}+1\) consecutive multiples of their fractional
+vectors into \(H^{m-1}\) half-open cubes. When \(m=1\)
+take \(k=1\). The mesh \(a=r_*/(dk)\le1\) aligns
+\(r_*\) exactly. The selected phase contribution is at
+most \(c/H\le\theta_U/2\), and the unselected contribution
+is at most \((dk/r_*)(1-W)\le2H^{m-1}(1-W)\).
+Apply the preceding lower bound \(\theta_U\).
+
+For one selected scale \(r\), no approximation is needed:
+choose \(a=r/\lceil r\rceil\) to get the sharper
+\(1-W\ge (r/\lceil r\rceil)\theta_U\).
+
+### A consequence for finite lists of atoms
+
+Put \(\theta=\max_{T\ne U}\sup\operatorname{supp}
+\nu_{T,\mathrm{na}}/11500>0\), and let \(H\) be an integer
+at least \(2c/\theta\). Given a list of at most \(p\) positive
+atoms on \(U\), let \(E\) be the numerical weight outside
+it. If the selected weight is at least \(c\), some selected
+scale \(r_*\) is at least one, since the selected mass is
+at most \(c\). Put \(d_*=\lceil r_*\rceil\). Simultaneous
+Dirichlet approximation to the other at most \(p-1\)
+numbers \(d_*r_i/r_*\) gives \(1\le k\le H^{p-1}\)
+for which the mesh \(a=r_*/(d_*k)\le1\) aligns \(r_*\)
+and has discrepancy at most \(1/H\) at the other
+selected scales. The omitted part contributes at most
+\(E/a\le2 H^{p-1}E\). By (DN2),
+\[
+ E\ge\frac{\theta}{4 H^{p-1}} .
+ \tag{DN3}
+\]
+If the selected weight is less than \(c\), the same
+inequality follows from \(E>1-c\) and the support bound
+\(\theta\le6/11500\). Thus this is an explicit uniform
+distance from any such finite atomic truncation, given
+the support of the opposite diffuse measures.
+
+### A one-letter bound for several shifted meshes
+
+Work at \(d=1/3,\ \Gamma=1/2\), and let \(c=1/6\). Let \(U\) be one letter and let
+\[
+ s_*=\max_{T\ne U}\sup\operatorname{supp}\nu_{T,\mathrm{na}}
+\]
+be the larger opposite nonatomic support endpoint. The [complete-label realization](#complete-values-determined-by-single-outside-labels) and the [unequal-height modulus count (UW)](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-product-bound-for-the-admissible-wider-height) give the following one-letter obstruction.
+
+Write the complete \(U\)-value in each original box as
+\[
+ u=Y\prod_{i=1}^m Z_i^{q_i},\qquad
+ H(Z_i)\le X^{(H_i+o(1))L},\qquad H(Y)\le X^{E+o(1)} .
+\]
+The grouping must be fixed at the level of the original degree coordinates: each \(Z_i\) is a signed product of integer powers of designated original roots, and \(Y\) contains the signed exponent differences. Powers and assignments may depend on the fixed box. In particular the same original root may appear in more than one grouped coordinate. Set
+\[
+ C_i=\max(1,64H_i),\qquad B_m=m^2+m,\qquad \ell=B_m .
+\]
+Write \(c_m^*>0\) for the (UW) wider-height constant in dimension \(m\). Then
+\[
+ \boxed{\quad E\prod_{i=1}^m C_i
+           \ \ge\ \frac{3c_m^* s_*}{320\,\ell^{m+1}} .\quad}
+ \tag{AF1}
+\]
+This controls the numerical height of the correction for a fixed number of grouped roots.
+
+#### Count in the complete-label graph
+
+Fix an opposite target letter \(T\), and take a compact positive continuity band \([s,S]\) on it with nonatomic mass \(H>0\) and \(S<2s\). Choose a fixed number \(n_0\) of rows with \(n_0H>1/40\). The complete-label graph supplies those fixed distinct complete rows with common \(U\)-column exponent arbitrarily close to \(c\), by the usual ordered-star count. On each of those rows the complete target has form
+\[
+ T_j=\epsilon u+t_j
+\]
+for fixed distinct integers \(t_j\) and the same sign \(\epsilon\in\{1,-1\}\). These statements use only exact single-label values and hold for each sign orientation of the primitive signed relation.
+
+Select blocks from the original outside roots of \(T_j\) in \([s,S]\), making their aggregate root mass \(1/40+o(1)\) up to an arbitrarily small outside-window rounding error. This is possible because the band contributes nonatomic mass \(H\) to every row and the outside coordinate size cap tends to zero with the window loss. Keep the original freeze cost at most \(1/32\). Let \(D=\prod_{i<j}(t_i-t_j)\), a fixed nonzero integer of polynomial height. Discard columns in which an outside target product shares radical of mass at least \(\xi\) with \(D\). The [divisor allocation estimate](#counting-shared-prime-divisors) gives a strict exponent saving on those columns, taking the rectangle and window losses much smaller than the fixed \(\xi>0\). Strip primes dividing \(D\) from the \(n_0\) selected outside blocks, with total removed root mass at most \(1/160+o(1)\) by choosing \(\xi\) small enough. The bounded-degree outside roots are squarefree, and the stripped blocks are pairwise coprime because a common prime of two target terms divides their fixed difference. Their product \(n\) is a full modulus with \(kL\to\kappa=s\) and numerical weight \(w\) satisfying
+\[
+  \frac{3s}{160}\le w\le\frac{s}{16}.
+\]
+All constants have harmless strict margins if the band is chosen inside \((s,2s)\). The selected large factors cost at most \(1/32\), even after stripping, since the originally selected root values enumerate the stripped ones.
+
+The target congruences impose a single residue for \(u\bmod n\). It is a unit, since each of the complete triples is primitive and \(n\) comes from the opposite target terms. The factor \(s\) in \(\kappa\) cancels with the lower weight bound in all the narrow caps: \(C_i\) strictly exceed the required ratios \(\kappa H_i/w\) if \(H_i>0\), and a constant cap also suffices for \(H_i=0\).
+
+Choose one grouped tuple for every distinct complete \(u\).
+A product of \(\ell\) grouped tuples satisfies the congruence
+with the common residue raised to \(\ell\). Its exact monomial
+is the product of the \(\ell\) complete positive integers.
+For a fixed such product, the ordered factorizations into
+\(\ell\) complete values number \(X^{o_X(1)}\) at fixed
+truncation. This bounds both the exact fibres of (UW) after
+amplification and the multiplicity of the product map, even
+when the grouped roots have overlapping prime supports.
+
+If the left side of (AF1) is at most \(3c_m^*s/(320\ell^{m+1})\), the amplified wider-height condition holds strictly, since
+\[
+ \frac{\ell E}{w}\prod_i(\ell C_i)
+     =\frac{\ell^{m+1}E\prod_iC_i}{w}\le c_m^*/2.
+\]
+The chart exponent after taking the \(\ell\)-th root is at most \(B_mw/(\ell\kappa)\le1/16\). Including the locks gives count exponent at most \(1/32+1/16<c\). Each complete value gives its outside column up to divisor-many representations. This contradicts the near-full columns; the discarded bad-overlap columns have their own strict saving. Let \(s\) approach \(s_*\) from below to obtain (AF1).
+
+#### Shifted meshes
+
+For \(p\) phases \(\phi_1,\ldots,\phi_p\in[0,1)\) and \(0<a\le1\), define
+\[
+ D_p(a;\phi)=\int \min_j \|r/a-\phi_j\|\,d\nu_U(r).
+\]
+Assign each degree to the nearest point \(a(i+\phi_j)\), with a deterministic rule for ties. Use a first grouped rational root containing each root raised to \(i\), and \(p\) further grouped roots, one the product of roots assigned to each phase. Their exponents are \(\lfloor a/L\rfloor\) and \(\lfloor a\phi_j/L\rfloor\), respectively. Multipliers \(i\) may be negative, which is allowed for the first rational root. Its height coefficient is at most \(2/a\), since \(|i|\le r/a+3/2\), and the total moment and root mass are one and \(1/3\). Each phase root has coefficient at most \(1/3\). Use a dummy root \(1\) with exponent \(1\) for any phase whose assigned exponent is zero. The remainder has numerical weight at most \(aD_p(a;\phi)+o(1)\), since the minimum distance function is bounded and continuous and the floor error contributes \(o(1)\) by the first-moment bound. Thus (AF1) gives
+\[
+ D_p(a;\phi)\ \ge\
+ \frac{3c_{p+1}^*}{320\cdot128\cdot32^p\,B_{p+1}^{p+2}}\,s_*.
+ \tag{AF3}
+\]
+The constant is uniform in the phases and in the mesh spacing.
+
+### Diffuse tails and mesh discrepancy near minimum mass
+
+There are absolute \(\gamma_1,\alpha_0>0\) such that
+each letter of a balanced \(d=1/3\) endpoint with
+\(\Gamma-1/2\le\gamma_1\) has atomic numerical weight
+greater than \(\alpha_0\). The argument uses stability
+of the fixed-row count under the small graph deficit.
+
+First, for every \(s>6\), the nonatomic mass of any letter
+above \(s\) tends uniformly to zero as \(\Gamma\to1/2\).
+Otherwise the (VM2) tail moment bound allows one to
+enclose a fixed positive amount of this mass in a fixed
+bounded interval with lower endpoint greater than six.
+Use the [near-minimum complete-label reduction](#the-complete-label-reduction-close-to-minimum-mass)
+and choose a fixed \(m\) large enough for the high-band
+locks in (CT1). Their cost and weight margins depend
+only on the positive amount of mass retained, the band,
+and \(m\). For small enough \(\gamma,\delta\), the raw
+outside capacities are at most \(c+\gamma+\delta\), so
+the bad-overlap branch retains a strict deficit from
+\(c\) as well. The fixed complete additive rows have
+common-column exponent arbitrarily close to \(c\)
+as \(\gamma\to0\), and give the same contradiction as
+at minimum mass. More quantitatively, for fixed \(s>6\) and finite \(S\)
+the nonatomic mass \(H\) in \([s,S]\) is
+\(O_{s,S}(\sqrt{\gamma})\). The recursions in the
+[near-minimum complete-label reduction](#the-complete-label-reduction-close-to-minimum-mass)
+give complete-label edge deficit at most
+\(68\gamma/3\), up to arbitrarily small additional
+loss. Thus the common column exponent after selecting
+\(m\) distinct rows is at least
+\(c-((74/3)m-1)\gamma\) up to such loss.
+Take \(z=(c+1/s)/2\), \(m=\max\{2,\lceil z/H\rceil+1\}\)
+and overlap threshold \(\xi=25m\gamma\) in (CT1).
+The bad-overlap branch has a strict column deficit.
+The good branch also has one if
+\(z<c-25m\gamma\) and \(sz>1+25m^2 S\gamma\).
+Both inequalities hold for small \(\gamma\) if \(H\)
+is larger than a sufficiently large multiple of
+\(\sqrt{\gamma}\). The fixed number of rows for each
+profile is chosen before taking the height limit.
+Together with (VM2) this implies
+\[
+ \int(r-6)_+\,d\nu_{U,\mathrm{na}}(r)\longrightarrow0
+ \quad\text{uniformly as }\Gamma\to1/2 .
+ \tag{DN4}
+\]
+
+Second, the mesh proof of (DN2) works close to minimum
+mass when the supplying band has \(a_0\le s<S\le7\),
+\(S<2s\), and nonatomic mass at least a fixed \(H_0>0\).
+Indeed choose \(m\) using \(H_0\) and then the fixed
+\(\xi\) for the overlap pruning. Take the complete-label
+deficit and \(\gamma,\delta\) small enough that the
+\(m\)-star has common-column exponent greater than
+both \(0.1662\) and \(c+\gamma+\delta-\xi\).
+The one-letter height bounds still have \(l_U=1/3\)
+and \(h_U\le1\). The determinant margins are unchanged,
+and \(s\le7\) still gives \(r_0<a\).
+For any letter \(U\), a supplying band on an opposite
+letter exists with \(a_0,H_0\) uniform by (VM7).
+To obtain it, intersect its uniformly positive
+nonatomic mass in a compact positive range with
+\([0,7]\), using the uniform mass bound above seven
+just proved. Then select a band from a fixed finite
+cover of that compact range by intervals of ratio
+less than two. Hence \(D_U(1)=\int\|r\|\,d\nu_U(r)\)
+is greater than \(a_0/11500\) uniformly for small
+\(\gamma\).
+
+On the atomic part, \(\|r\|\le r\), and on the
+nonatomic part, \(\|r\|\le|r-6|\). Write \(e_U\)
+for the escaped moment and \(\alpha_U\) for the
+atomic numerical weight. We obtain
+\[
+ D_U(1)\le 2\alpha_U+6c_U-h_U+e_U+
+                  2\int(r-6)_+\,d\nu_{U,\mathrm{na}}(r).
+\]
+The last terms beyond \(2\alpha_U\) tend uniformly
+to zero by (VM1), (VM2), and (DN4), while \(D_U(1)\)
+has a positive lower bound. This proves the asserted
+atomic moment bound for each letter. Together with
+(DN1) it bounds both types of numerical weight away
+from zero near minimum mass.
+
+## A count saving from a high-degree band on one letter
+
+A limiting box profile with
+\(\lvert c_W-1/6\rvert\le10^{-5}\) on all three letters
+and nonatomic mass greater than \(2/25\) in
+\([34/5,7]\) on one letter satisfies
+\[
+ d<\frac13-\frac1{10000}.
+ \tag{DN5}
+\]
+There are no numerical-weight or lock hypotheses on
+the other two letters.
+
+Suppose \(d=2c-\varepsilon\) with
+\(0\le\varepsilon\le10^{-4}\), and write
+\(\rho=10^{-5}\). The pair-fibre argument, with
+\(c_W>0\) on every letter, thins to a linear graph
+of exponent \(d\) up to an arbitrarily small loss.
+In the [simultaneous anchor selection](#the-complete-label-reduction-close-to-minimum-mass)
+the outside part capacities sum to at most \(3c+3\rho\),
+so the initial deficit from \(2c\) after separation is
+at most \(7\varepsilon+12\rho\) up to the same losses.
+The degenerate-cycle contribution stays strictly smaller,
+since \(d\) is within \(10^{-4}\) of \(2c\) and the
+part exponents are within \(\rho\) of \(c\).
+
+Only the two letters opposite the high band need full
+labels. Freeze just the factor vector on the high-band
+letter in the [vector energy argument](#the-complete-label-reduction-close-to-minimum-mass).
+For initial deficit \(\eta\) its vector dictionary exponent
+is at most \(2\eta+4\rho\), since both pair excesses
+\(c_i+c_j-2c\) are at most \(2\rho\).
+The remaining graph has each opposite complete value
+determined by its own label and count exponent at least
+\(2c-21\varepsilon-40\rho\), up to arbitrarily small loss.
+
+Each opposite complete value has divisor-many outside
+representations at fixed truncation. Keeping one label
+per complete value on each opposite part, chosen to
+retain the largest edge count, loses only a negligible
+normalized factor. Take two distinct fixed complete
+rows in this thinned graph. The star count
+gives common columns with exponent at least
+\(c-42\varepsilon-83\rho\ge c-0.00503\) up to loss.
+In each column the two high-band terms differ by a
+fixed nonzero shift. Apply the fixed-row congruence
+argument (CT1) with total lock mass \(z=4/25\), by
+choosing \(z/2\) from the indicated band on each row.
+After discarding columns with radical overlap of mass
+at least \(\xi=0.0051\) with the fixed shift, their
+exponent is at most \(c+\rho-\xi=c-0.00509\) up to
+arbitrary window loss. Strip shift primes from the
+two recorded blocks. The combined numerical weight
+of their remaining coprime moduli is at least
+\[
+ \frac{34}{5}\frac4{25}-2\cdot7\cdot0.0051=1.0166>1 .
+\]
+Thus the common complete column parameter is uniquely
+reconstructed for each fixing. Their exponent is at
+most \(z=0.16\) up to the rounding losses, also strictly
+below the star exponent. This disproves the supposed
+range for \(d\), proving (DN5).
 
 ## Limits of the graph condition
 

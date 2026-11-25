@@ -1,0 +1,380 @@
+\section{The constant-plus-power boundary}
+\label{app:constant-proof}
+
+Write \(F_{n,d}(t)=\sum_{k=0}^n\binom nk(dk)!t^k\) and
+\(R_n(z)=z^nF_{n,d}(1/z)\). We prove that \(R_n\) is squarefree
+for all positive integers \(n,d\). The proof uses a coefficient
+bound for large \(d\), Newton residuals for the small prime powers,
+and a uniform contour estimate for the remaining large orders.
+
+\subsection{The coefficient bound}
+
+For integers \(1\le u\le v\) one has
+\[
+ \frac{u!}{(v!)^{u/v}}\le (u/v)^{u/2}.
+\]
+Indeed \((k!)^{1/k}/\sqrt{k}\) is nondecreasing. The comparison
+at \(k,k+1\), after raising to positive powers, is
+\((k!)^2(k+1)^{k(k-1)}\le k^{k(k+1)}\). This follows from
+\(k!\le((k+1)/2)^k\) and \((1+1/k)^{k+1}\le4\). For the latter
+bound, \((x+1)\log(1+1/x)\) decreases for \(x>0\).
+Also \(k\log(n/k)\ge(\log2)\min(k,n-k)\), by concavity of
+\(-x\log x\) on \([1/2,1]\) and by \(n/k\ge2\) for \(k\le n/2\).
+
+After scaling \(t\) by \(((dn)!)^{-1/n}\), the polynomial is
+\(1+t^n+\sum_{k=1}^{n-1}b_kt^k\), with
+\[
+ 0<b_k\le C_k:=\binom nk q^{\min(k,n-k)},\qquad q=2^{-d/2}.
+\]
+The bound follows from the factorial inequality at \(dk,dn\).
+If \(2^d\ge4n^2\), then \(q\le1/(2n)\).
+By symmetry of \(C_k\) and \(q^{\min(k,n-k)}\le q^k+q^{n-k}\),
+both weighted sums \(\sum(k/n)b_k\) and
+\(\sum(1-k/n)b_k\) are bounded by \((1+q)^n-1<1\).
+At a repeated root of modulus at most one, subtract \(t/n\) times
+the derivative from the polynomial to obtain a contradiction to
+the second bound. At a repeated root of modulus at least one,
+divide \(t/n\) times the derivative by \(t^n\) and use the first.
+We have proved that
+\begin{equation}
+ 2^d\ge4n^2 \ \Longrightarrow\  F_{n,d}\text{ is squarefree}.
+ \label{eq:constant-large-gap}
+\end{equation}
+
+\subsection{Small exponents}
+
+For \(d=1\), \(R_n(z)=n!\sum_{j=0}^n z^j/j!\). Its derivative
+and itself cannot share a root, since the two truncated
+exponentials differ by \(z^n/n!\). To cover \(2\le d\le5\),
+we give the prime-power argument. The factorial units and the
+digit structure of the Newton polygon used here occur in
+Rocks's work on factorial moment polynomials~\cite{rocks}.
+
+Let \(d=p^\nu\) with \(p\) prime and \(\nu\ge1\),
+and put \(c=(d-1)/(p-1)\). For an integer \(u\ge0\), write
+\(U_p(u!)=p^{-v_p(u!)}u!\). If \(u=\sum_i u_i p^i\),
+Wilson's theorem, applied after taking out multiples of \(p\)
+one level at a time, gives
+\[
+ U_p(u!)\equiv(-1)^{v_p(u!)}\prod_i u_i!\pmod p.
+\]
+The digit shift from \(k\) to \(dk\) and Legendre's formula
+therefore give
+\[
+ F_{n,d}(T/p^c)=\sum_{k=0}^n \frac{n!}{(n-k)!}w_k T^k,\qquad
+ w_k=\frac{(dk)!}{p^{ck}k!}\in\Z_p^\times,\qquad
+ w_k\equiv(-1)^{ck}\pmod p .
+\]
+Write \(n=\sum_i a_i p^i\) and \(s_i=\sum_{j\le i}a_jp^j\),
+with \(s_{-1}=0\). The lower Newton polygon has an edge from
+\(s_{i-1}\) to \(s_i\) for each \(a_i>0\), of slope \(h_i/e_i\)
+with \(e_i=p^i\) and \(h_i=(p^i-1)/(p-1)\). Indeed the
+coefficient ordinate is
+\(v_p(n!)-v_p((n-k)!)\). For \(k=s_i-\delta\) in that segment
+the difference between the ordinate and the line through
+the two endpoints is
+\[
+ \frac{\operatorname{digitsum}_p(\delta)-\delta/p^i}{p-1}\ge0.
+\]
+This is Legendre's formula, since \(n-s_i\) and \(\delta\)
+have disjoint digit positions. Equality occurs exactly at the
+indices spaced by \(e_i\), the slopes strictly increase,
+and \(h_i/e_i\) is in lowest terms.
+
+Divide each coefficient on the edge by its power of \(p\)
+and take ratios to the leftmost coefficient. Wilson's unit
+formula then gives the edge polynomial
+\[
+ \sum_{j=0}^{a_i}\frac{a_i!}{(a_i-j)!}(\eta_i Y)^j,\qquad
+ \eta_i=(-1)^{h_i+c e_i}.
+\]
+Here only digit \(a_i\) changes in the factorial ratio, and the
+change in valuation is \(jh_i\). The displayed polynomial
+is a scaled reversal of \(E_{a_i}(Z)=\sum_{j=0}^{a_i}Z^j/j!\)
+over \(\mathbb F_p\). It is squarefree because
+\(E_{a_i}'=E_{a_i-1}\) and \(E_{a_i}-E_{a_i-1}=Z^{a_i}/a_i!\).
+
+For completeness, edge polynomials multiply at any fixed
+slope \(u/e\) in lowest terms. Substitute \(T=\pi^{-u}Z\)
+in a valued extension with \(\pi^e=p\), divide each polynomial
+by the power giving minimum coefficient valuation zero,
+and reduce. The reductions multiply. The surviving indices
+in a polynomial over \(\Q_p\) are all congruent modulo \(e\),
+so after removing the lowest monomial the same identity
+holds in the edge variable \(Y=Z^e\).
+A square divisor would thus give a repeated factor in the
+edge polynomial at any one of its slopes. The squarefreeness
+above rules this out.
+
+\subsection{A uniform contour estimate}
+
+We now assume \(n\ge10000\) and \(6\le d\le\sqrt n\).
+Set \(A=(d/e)^d\) and \(v=z/(n^d A)\).
+The exponential integral for \(R_n\), with its contour split
+at \(d/2\), is
+\[
+ R_n(n^d A v)=n^{dn+1}I(v),\qquad
+ I(v)=\int_0^\infty(Av+s^d)^n e^{-ns}\,ds=K(v)+J(v),
+\]
+where \(K\) and \(J\) integrate over \([0,d/2]\) and
+\([d/2,\infty)\), respectively. Both are polynomials in \(v\).
+We bound \(J\) by a Gaussian at its saddle and \(K\) by an
+endpoint approximation. Their logarithmic derivatives are
+separated where a zero of \(I\) can occur.
+
+\paragraph{The outer bound.}
+For \(\theta=k/n\), the entropy bound on \(\binom nk\) and
+\((dk)!\le e\,dk(dk/e)^{dk}\) give
+\[
+ \frac{[\binom nk(dk)!]^{1/k}}{n^d A}
+ \le q_d(\theta)(e\,dk)^{1/k},\qquad
+ q_d(\theta)=\theta^{d-1}(1-\theta)^{-(1-\theta)/\theta}.
+\]
+The endpoint values use continuous limits. We have \(q_d\le q_6\).
+The sign of the derivative of \(\log q_6\) is the sign of
+\(6\theta+\log(1-\theta)\). Its positive-to-negative change
+occurs at \(\theta=1-u\) with \(0<u<1/300\), since
+\(6(299/300)>\log300\).
+There \(\log q_6=5\log(1-u)+6u<u\), so \(q_6<300/299\).
+If \(k\ge n/10\), then \(d\le\sqrt n\) gives
+\[
+ k^{-1}\log(e\,dk)\le10(1+\tfrac32\log n)/n<2/125.
+\]
+Thus the normalized coefficient root is less than
+\((300/299)(125/123)<21/20\).
+If \(k<n/10\), the bounds
+\(\binom nk^{1/k}\le en/k\) and \((e\,dk)^{1/k}\le ed\)
+give instead \(e^2 d\theta^{d-1}<21/20\).
+The latter unit bound uses \(k\le2^{k-1}\le(ed)^{k-1}\).
+Summing the resulting finite geometric series excludes
+\(|v|\ge R=21/10\).
+
+\paragraph{The large saddle.}
+Put \(B=11/5\) and \(\delta=1/25\). For \(|v|\le B\) the
+equation \(A v=s^{d-1}(d-s)\) has a unique solution
+\(s_0=\alpha_0+i\beta_0\) satisfying \(|s_0-d|<\delta\).
+On \(|s-d|=\delta\) the modulus on the right divided by \(A\)
+is at least \(\delta(1-\delta)e^d/d>B\).
+Bernoulli's inequality gives the lower estimate, and \(e>27/10\)
+verifies the strict comparison at \(d=6\), where the bound
+is smallest. Rouch\'e's theorem gives the solution, which
+is simple and analytic in \(v\) on a neighborhood of the disk.
+Use the phase
+\[
+ \Phi(s,v)=d\log s+\log(1+A v/s^d)-s,\qquad
+ S=\Re\Phi(s_0,v),\qquad a_0=1-(d-1)/s_0 .
+\]
+At \(s_0\), \(\Phi_s=0\), \(\Phi_{ss}=-a_0\), and
+\begin{equation}
+ \Re a_0>9/(10d),\qquad |a_0|<11/(10d),\qquad
+ S>\log A-1/100 .
+ \label{eq:constant-saddle-bounds}
+\end{equation}
+For the first two bounds use
+\(|a_0-1/d|=(d-1)|s_0-d|/(d|s_0|)<\delta/d\).
+For the height, use
+\(\Phi(s_0,v)=(d-1)\log s_0+\log d-s_0\).
+The loss is at most \(\delta/d+\delta^2/[2d(1-\delta/6)]<1/100\)
+by the logarithm series.
+
+Deform the contour of \(J\) to its horizontal translate
+by \(i\beta_0\), with the vertical connector at \(d/2\).
+The integrand is entire and the connector at positive
+infinity tends to zero. On \(s=s_0+t,\ |t|\le d/8\)
+we have \(|s|>6d/7\). With \(q_t=B(35/81)^6\),
+differentiating the convergent logarithm series gives
+\[
+ d^2|\Phi_{sss}|
+ \le (7/6)^3\left[2+
+ \frac{36q_t(1+q_t)}{(1-q_t)^3}
+ +\frac{18q_t}{(1-q_t)^2}+\frac{2q_t}{1-q_t}\right]<8.
+\]
+For this inequality use
+\(|Av/s^d|\le B(35/81)^d\).
+In the differentiated series the corresponding terms have
+factors \(d^2,d,1\), each giving its largest bound at \(d=6\).
+The cubic remainder is at most \(4|t|^3/(3d^2)\).
+By \eqref{eq:constant-saddle-bounds} its contribution to the local integral is at most
+\[
+ \frac{4ne^{nS}}{3d^2}\int_{\R}|t|^3 e^{-17nt^2/(60d)}\,dt
+ <17e^{nS}/n.
+\]
+Completing the Gaussian costs less than
+\(18e^{nS-9dn/1280}/n\), by bounding the Gaussian tail by
+the integral with the extra factor \(8|t|/d\).
+The complete value
+\(U_0=e^{n\Phi(s_0,v)}\sqrt{2\pi/(na_0)}\)
+has modulus greater than \(2\sqrt{d/n}\,e^{nS}\).
+
+We give the bounds on the remaining pieces of this contour.
+For \(2d/3\le x\le4d/3\), let \(q_c=B(5/9)^6\).
+On \(s=x+i\beta_0\), the logarithm series and
+\(|\beta_0|/x<1/100\) give
+\[
+ \frac{d^2}{dx^2}\Re\Phi(x+i\beta_0,v)
+ \le-\frac d{x^2}\left[
+ \frac{1-10^{-4}}{(1+10^{-4})^2}
+ -\frac{6q_c}{(1-q_c)^2}-\frac{q_c}{1-q_c}\right]
+ <-\frac3{16d}.
+\]
+Here \(|Av/s^d|\le B(5/9)^d\), and \(d(5/9)^d\) decreases
+for \(d\ge6\). Integrating from \(x=\alpha_0\) bounds the
+height by \(S-3(x-\alpha_0)^2/(32d)\).
+Outside the local interval this costs at least \(d/1000\)
+in height, over length less than \(d\).
+At \(4d/3\) the loss is greater than \(d/100\).
+For \(x\ge4d/3\), the real derivative is at most
+\((3/4)/(1-B(5/18)^6)-1<-1/5\), so the far ray costs at
+most \(5e^{nS-dn/100}/n\).
+
+On \([d/2,2d/3]\) the upper envelope
+\([BA+(x+\delta)^d]e^{-x}\) increases. For
+\(x+\delta<d-1\), the function
+\((x+\delta)^{d-1}(d-x-\delta)\) increases, and its value
+at \(x=d/2\) exceeds \(BA\) since \((e/2)^d>B\).
+The envelope divided by \(A\) is at most
+\(B e^{-2d/3}+r_\ell^d\) there, with
+\(r_\ell=(101/150)(141/100)\) from \(e^{1/3}<141/100\).
+The corresponding bound on the vertical connector is
+\(B e^{-d/2}+r_v^d\) with \(r_v=38/45\), from \(e^{1/2}<5/3\).
+Both bounds are below \(e^{-d/50}\).
+After multiplication by \(e^{d/50}\) their two exponential
+terms decrease in \(d\), and at \(6\) the comparisons follow
+from
+\[
+ B(10/27)^3+r_\ell^6/(22/25)<1,\qquad
+ B(10/27)^2+r_v^6/(22/25)<1.
+\]
+By \eqref{eq:constant-saddle-bounds} the height of these pieces is below \(S-d/100\).
+Their lengths are \(d/6\) and at most \(\delta\).
+The phase charts used on the horizontal contour are valid
+since \(|Av/s^d|\le B(2/e)^d<1\) for \(x\ge d/2\).
+
+Summing the contour bounds gives an error at most \(e^{nS}\)
+times
+\[
+ 40/n+d e^{-dn/1000}+(d+\delta)e^{-dn/100}<44/n .
+\]
+The last comparison uses \(e^x\ge x^3/6\) in the middle
+term and \(e^x\ge x^2/2\) in the last.
+Consequently \(J=U_0(1+\epsilon)\) with
+\(|\epsilon|<22/\sqrt{dn}<1/10\).
+The error is analytic on a neighborhood of the disk.
+Cauchy's estimate at radius \(1/10\) gives
+\(|\epsilon'|<1\) on \(|v|\le R\). Also
+\[
+ U_0'/U_0=n\frac{d-s_0}{dv}-\frac{a_0'}{2a_0},\qquad
+ s_0'=\frac{A}{d s_0^{d-2}(d-1-s_0)} .
+\]
+Bernoulli's inequality gives \(|s_0'|\le de^{-d}/(1-\delta)^2<1\),
+and hence \(|a_0'/(2a_0)|<1\) by \eqref{eq:constant-saddle-bounds}. We obtain
+\begin{equation}
+ \left|J'/J-n(d-s_0)/(dv)\right|<3 \qquad (|v|\le R).
+ \label{eq:constant-large-derivative}
+\end{equation}
+The expression at zero is understood by continuity.
+
+\paragraph{The endpoint.}
+For \(0\le x\le d/2\),
+\[
+ \log(1+x^d/((2/5)A))\le19x/20.
+\]
+At \(x=d/2\) this is \(1+(5/2)(e/2)^d<e^{19d/40}\).
+After multiplication by \(e^{-19d/40}\), both terms
+decrease with \(d\), since \(e^{21/40}\le(5/3)(40/39)<2\).
+At \(d=6\) use \(e<49/18\) and the rational comparison
+\[
+ 1+(5/2)(49/36)^6<\sum_{j=0}^{12}(57/20)^j/j! .
+\]
+To pass to smaller \(x\), the logarithm divided by \(x\)
+has derivative of the sign of \(du/(1+u)-\log(1+u)\),
+where \(u=x^d/((2/5)A)\). This function is nonnegative up
+to \(u=d-1\) by differentiation. Thereafter its first term
+is at least \(d-1>19d/40\), while the logarithm is bounded
+by its endpoint value.
+
+For \(|v|\ge2/5\), write \(K=(Av)^n(1+D(v))/n\).
+Subtract the full exponential integral and use
+\(|(1+z)^n-1|\le n|z|(1+|z|)^{n-1}\).
+For \(D'\) differentiate \((1+x^d/(Av))^n\) inside
+the integral. The same endpoint envelope gives
+\[
+ |D(v)|\le \frac{d!20^{d+1}}{(2/5)A n^{d-1}}+e^{-dn/2},\qquad
+ |D'(v)|\le \frac{d!20^{d+1}}{(2/5)^2 A n^{d-1}}.
+\]
+Both are below \(1/1000\), since \(d!\le ed A\), with the
+largest majorants at \(d=6,n=10000\). In particular
+\begin{equation}
+ K(v)\ne0,\qquad |K'/K-n/v|<1\qquad(|v|\ge2/5).
+ \label{eq:constant-endpoint-derivative}
+\end{equation}
+
+For \(|v|\le1/2\), the upper envelope
+\((A/2+x^d)e^{-x}\) attains its maximum on \([0,d/2]\)
+at an endpoint, by the sign of its derivative.
+At the right endpoint it is below \(A/2\) because
+\(e^{-d/2}+2(e^{1/2}/2)^d\le(5/8)^6+2(5/6)^6<1\).
+Thus \(|K|\le(d/2)(A/2)^n\).
+The lower estimate for \(J\) gives
+\(|J|>(3/2)\sqrt{d/n}(A e^{-1/100})^n\).
+It follows that \(|K/J|<\sqrt{dn}(50/99)^n/3<1\),
+using \(\sqrt{dn}\le n\) and \(\sum_{j\ge1}j(50/99)^j<3\).
+Therefore every zero of \(I\) lies in \(1/2<|v|<R\).
+At such a zero, \(I'=J(J'/J-K'/K)\), and
+\eqref{eq:constant-large-derivative} and
+\eqref{eq:constant-endpoint-derivative} give
+\[
+ |J'/J-K'/K|>n|s_0|/(d|v|)-4>n/3-4>0 .
+\]
+This proves simplicity in the entire stated contour range.
+
+\subsection{Completion and finite verification}
+
+If \(n\ge10000\) and \eqref{eq:constant-large-gap} fails,
+then \(d<2\log_2(2n)<\sqrt n\). The second inequality
+follows since \(u-2-4\log_2 u\) is positive at \(u=100\)
+and increasing for \(u\ge100\). Hence the contour estimate
+and the small-exponent argument cover every such order.
+For \(n<10000\), the remaining pairs have \(6\le d\le29\)
+and \(2^d<4n^2\). The case \(n=1\) is linear.
+
+Here is a small-degree test for that finite range.
+Let \(n=p+r\) with \(p\) prime and \(p>d\max(1,r)\).
+Then \(r<p\) and \(p^2-dn=p(p-d)-dr>0\).
+The Newton ordinate of \(F_{n,d}\) is
+\[
+ y(k)=\lfloor dk/p\rfloor+\mathbf1_{\{k\bmod p>r\}}.
+\]
+It is zero up to \(r\). For \(r<k<p\) it exceeds \(dk/p\),
+and for \(p\le k\le n\) it equals \(d\).
+Thus the polygon has a horizontal part of width \(r\)
+and a slope \(d/p\) of width \(p\).
+Every repeated rational irreducible divisor has degree
+at most \(n/2<p\), so by the slope denominator it can
+use only the horizontal part. It is monic integral in
+the reciprocal and reduces with nonzero constant term.
+Lucas's congruence gives \(R_n\bmod p=z^p(R_r\bmod p)\).
+Indeed for \(k\le r\) the binomial coefficient reduces
+to \(\binom rk\), and the other coefficients of \(F_{n,d}\)
+vanish modulo \(p\). Thus a repeated divisor would
+reduce to a repeated divisor of \(R_r\bmod p\).
+
+Every repeated rational irreducible divisor has degree
+at least two. For even \(n\), the exponential integral
+\(F_{n,d}(t)=\int_0^\infty(1+tu^d)^ne^{-u}\,du\) is positive
+on the real axis. For odd \(n\), its derivative is positive there.
+In either case it has no repeated real root.
+It follows that a gcd of degree at most one between the modular
+\(R_r\) and its derivative excludes every repeated rational
+factor of \(R_n\). The same argument applies to a direct
+modular test of \(R_n\) at any prime greater than \(dn\).
+
+The supplementary verifier exhausts \(202\,021\) pairs in
+the remaining range. It uses a shifted prime in \(201\,927\)
+cases, where the tested degree is at most \(35\). In the
+other \(94\) cases it tests the full polynomial at
+\(1\,000\,000\,007\), with degree at most \(148\). The primes
+are obtained by an Eratosthenes sieve in the shifted tests
+and by trial division for the full tests. Every modular gcd
+has degree at most one. This completes the squarefreeness
+proof and thus Lemma~\ref{lem:constant-support}.

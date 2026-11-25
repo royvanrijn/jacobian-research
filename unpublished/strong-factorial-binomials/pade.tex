@@ -1,0 +1,410 @@
+\section{An exponential Padé estimate}\label{sec:pade}
+
+Let \(F\) be a monic irreducible common factor of the reciprocal
+moment polynomials \(R_{N-1},R_N\). Write \(h=\deg F\), \(H=dh\),
+\(b=a+d\), \(M=bN\), \(m=N-1\), \(s=d^2/b\), and \(\alpha=d/b\).
+We use the root bounds \(ai<|x|^{1/d}\le bi\) for \(R_i(x)=0\)
+with \(i=m,N\), from Lemma~\ref{lem:gamma-annulus}. In particular,
+\(H\log(aN)<\log|F(0)|<H\log M\). The Padé construction works on
+\(z^d=-x\), where the root bound is linear in the moment order.
+Its key feature is that an integral polynomial approximates the
+same polynomial to high order after multiplication by each of the
+\(d\) exponentials \(e^{-\omega z}\), \(\omega^d=1\).
+The resulting Wronskian makes at least one of the approximants
+nonzero above every root of \(F\). This adapts the Laguerre norm
+argument of Nguyen-Dang \cite[Proposition~3.9]{nguyen-dang}.
+
+\begin{lemma}[Padé resultant inequality]\label{lem:resultant}
+Assume \(N\ge200\), \(a,d\ge1\) and \(d<3a\). Set
+\(r=(b-1)m\), and put
+\[
+ \begin{gathered}
+ K_\pm=\tfrac12\pm\tfrac{\alpha}{14},\qquad
+ \rho_0=b(1-\alpha K_+)=a+dK_-,\\
+ g=\max\{b\log(b/\rho_0)-b+\rho_0,\,
+          \rho_0-a-a\log(\rho_0/a)\}.
+ \end{gathered}
+\]
+There is a monic irreducible factor \(G\) of \(F(-z^d)\) of degree
+\(D=hk\), where \(1\le k\le d\), and \(K=|G(0)|\) satisfies
+\(K^d=|F(0)|^k\). Write \(V=\log(M+1)\).
+At each complex root \(z\) of \(G\) one may take the gain
+\[
+ L(z)=\max\left\{(m!e^{-mg-1})^{1/(m+1)},
+                    \frac{am-\Re z}{d}\right\}.
+\]
+With \(\Lambda=(\prod_{G(z)=0}L(z))^{1/D}\), one has
+\begin{equation}\label{eq:pade-norm}
+ \log\Lambda<
+ \sum_{p\mid K}\min\left\{\frac{\vp(K)}{D},\frac1{p-1}\right\}\log p
+ +\frac{\omega(K)V}{N}.
+\end{equation}
+Here \(\omega(K)\) is the number of distinct prime divisors.
+In addition, the first entry in \(L(z)\) can use \(g=0\)
+when \(\Re z\le am\). For \(N\ge200\) the first entry is
+greater than \(me^{-1.01-g}\). For \(d=1\) the additional gain
+\(m\sqrt a\,e^{-1/2}/(1+a^{-1/2})\) is available.
+\end{lemma}
+
+\begin{proof}
+Let \(B(z)=(am)!R_m(-z^d)/m!\) and let \(Q(z)\) be the Taylor
+polynomial of \(e^z B(z)\) through degree \(r\). For \(0\le j\le bm\)
+and \(v=bm-j\), direct expansion gives
+\begin{equation}\label{eq:pade-coeff}
+ [z^j]e^zB(z)=\frac{v!}{m!}
+ [w^v](1+w)^{am}((1+w)^d-1)^m.
+\end{equation}
+Indeed the term indexed by \(i\) in \(R_m\) contributes
+\((-1)^{m-i}\binom mi(am+di)!/(m!(am+di-v)!)\),
+taken as zero if \(am+di<v\). Thus \(Q\) is integral, its top
+coefficient is \(d^m\), and the coefficients of degrees \(r+1\)
+through \(bm\) vanish.
+
+For \(\omega^d=1\) put \(E_\omega(z)=e^{-\omega z}Q(\omega z)\).
+Then \(E_\omega-B\) has order at least \(bm+1\) at zero. Form
+the Wronskian of \(B\) and the \(d\) functions \(E_\omega\),
+with derivative orders \(0,\ldots,d\). After factoring out
+the exponentials its determinant is a polynomial of degree
+at most \(dm+dr=dbm\). Its leading coefficient comes from
+row zero of the \(B\) column and the determinant
+\(((-\omega)^i)_{1\le i\le d,\,\omega^d=1}\), up to nonzero
+factors. This determinant is Vandermonde times
+\(\prod_{\omega^d=1}(-\omega)\). Subtract the \(B\) column
+from the other columns and take constant linear combinations
+to give those \(d\) series distinct initial orders. They
+have orders at least \(bm+1,\ldots,bm+d\), respectively.
+After subtracting the sum of the row derivative orders, the
+determinant therefore vanishes to order at least \(dbm\).
+It is a nonzero constant times \(z^{dbm}\). At any nonzero
+root of \(B\) the zeroth row consequently has
+\(Q(\omega z)\ne0\) for at least one \(\omega\).
+Choose \(G\) to be the minimal polynomial of such a rotation
+above a root of \(F\). Then \(\Res(G,Q)\) is a nonzero integer,
+and every root of \(F\) has exactly \(k=D/h\) lifts in \(G\).
+The norm identity follows by multiplying \(z^d=-x\) over them.
+
+For \(\ell\ge1\), a beta integral gives the tail coefficient
+\[
+ [z^{bm+\ell}]e^z B(z)
+ =\frac{(-1)^m}{m!(\ell-1)!}
+       \int_0^1 t^{am}(1-t^d)^m(1-t)^{\ell-1}\,dt.
+\]
+With \(c_v=[t^v](1+t+\cdots+t^{d-1})^m\), the same coefficient is
+\begin{equation}\label{eq:pade-beta}
+ (-1)^m\binom{m+\ell-1}{m}
+       \sum_v c_v \frac{(am+v)!}{(am+v+m+\ell)!}.
+\end{equation}
+Let \(p\) be prime and \(e=v_p(z)>0\) in an embedding into
+\(\overline{\Q}_p\), normalized by \(v_p(p)=1\), and set
+\(\mu=1/(p-1)\). The base-\(p\) digit sum \(s_p(n)\) satisfies
+\(s_p(n)/(p-1)\le\log_p(n+1)\), since
+\(p^{u/(p-1)}\le u+1\) for each digit \(u\), and the product
+of the \(u+1\) counts integers whose digits do not exceed
+those of \(n\). If \(e\le\mu\), use \eqref{eq:pade-coeff}
+on the coefficient of \(z^{r-j}\). Its valuation is at least
+\(j\mu-\log_p(M+1)\) by Legendre's formula. If \(e>\mu\), the
+\(p\)-adic exponential converges and \(Q(z)\) is the negative
+tail at a root of \(G\). In \eqref{eq:pade-beta} the factorial
+quotient loses at most \((m+\ell)\mu+\log_p(M+1)\).
+The resulting bound on the valuation of a tail term
+increases with \(\ell\). In both cases,
+\begin{equation}\label{eq:pade-local}
+ v_p(Q(z))\ \ge\ (bm+1)e-N\min(e,\mu)-\log_p(M+1).
+\end{equation}
+For \(e=0\), integrality gives \(v_p(Q(z))\ge0\).
+
+Now let \(z\) be a complex root and set \(R=|z|\).
+Integrate each \(v!\) in \eqref{eq:pade-coeff} and use
+the nonnegative coefficients of the polynomial in \(w\).
+Also sum the beta tail before taking its absolute value.
+These two operations give
+\begin{equation}\label{eq:pade-integrals}
+ \frac{|Q(z)|}{R^{bm+1}}\le\frac1{m!}\min\left\{
+ \begin{aligned}
+ &\int_0^\infty e^{-Ru}(1+u)^{am}((1+u)^d-1)^m\,du,\\
+ &\int_0^1 e^{u\Re z}(1-u)^{am}(1-(1-u)^d)^m\,du
+ \end{aligned}\right\}.
+\end{equation}
+In the second integral \(1-(1-u)^d\le du\). When \(am>\Re z\),
+integrating \(u^m e^{-(am-\Re z)u}\) on the positive ray gives
+the second gain in the lemma. When \(\Re z\le am\), the integral
+is at most one. If \(R\le m\rho_0\), maximizing the exponent
+\(u\rho_0+a\log(1-u)\) gives the upper bound
+\(e^{m(\rho_0-a-a\log(\rho_0/a))}\). If \(R\ge m\rho_0\),
+bound the first integrand using \(((1+u)^d-1)^m\le(1+u)^{dm}\)
+and reserve \(e^{-u}\) for integration. The maximum of the
+remaining exponent divided by \(m\) is
+\(g_+(\rho_0-1/m)\), where \(g_+(v)=b\log(b/v)-b+v\).
+Since \(\rho_0-b/2=a/2-s/14>19a/56>1/m\), one has
+\(g_+(\rho_0-1/m)\le g_+(\rho_0)+1/m\).
+Thus \(|Q(z)|<R^{bm+1}/L(z)^N\). The Stirling lower bound on
+\(m!\) gives the stated simpler gain because
+\(0.01(m+1)+\tfrac12\log(2\pi/m)>0\) for \(m\ge199\).
+When \(d=1\), use the first integral directly, with
+\(((1+u)^d-1)^m=u^m\). The tangent inequality
+\[
+ \log(1+u)\le \log(1+v)-\frac{v}{1+v}+\frac{u}{1+v},
+ \qquad v=a^{-1/2},
+\]
+bounds the constant exponent by \(m/2\), since
+\(\log(1+v)-v/(1+v)\le v^2/2\). The coefficient of
+\(-u\) is \(R-am/(1+v)>m\sqrt a/(1+v)\). Integrating
+\(u^m\) against that exponential proves the additional gain.
+
+Take the product of the complex bounds over the \(D\) roots
+and compare with the prime factorization of \(\Res(G,Q)\) using
+\eqref{eq:pade-local}. At a prime dividing \(K\) the sum of the
+positive \(e\)'s is \(v_p(K)\), and the sum of \(\min(e,\mu)\)
+is at most \(\min(v_p(K),D\mu)\). Cancellation of the common
+term \((bm+1)\log K\) gives \eqref{eq:pade-norm}.
+\end{proof}
+
+For later estimates, the two losses defining \(g\), divided
+by \(s\), are the functions
+\begin{equation}\label{eq:pade-loss}
+ K_+^2\int_0^1\frac{u\,du}{1-\alpha K_+u},
+ \qquad
+ K_-^2\int_0^1\frac{u\,du}{1-\alpha+\alpha K_-u}.
+\end{equation}
+Both increase for \(0<\alpha\le3/4\). In the second derivative
+test the sign is that of \(K_-(1-u/2)-(1-\alpha)/7>0\).
+At \(\alpha=.03,.1,1/3,.5,.75\), upper bounds for both
+functions are respectively \(.128,.134,.160,.176,7/32\).
+
+We also need the following refinement of the local estimate.
+Partial fractions in the tail formula yield
+\[
+ [z^{bm+\ell}]e^z B(z)=
+ \frac{(-1)^m d^m}{(\ell-1)!}
+ \sum_{j=1}^\ell
+ \frac{(-1)^{j-1}\binom{\ell-1}{j-1}}
+      {\prod_{i=0}^m(am+di+j)} .
+\]
+Here one expands \(1/(am+di+1)_\ell\) into simple fractions,
+and sums over \(i\) using
+\(\sum_i(-1)^i\binom mi/(x+di)
+=d^m m!/\prod_{i=0}^m(x+di)\), verified by residues.
+For \(e>\mu\), this gives
+\begin{equation}\label{eq:pade-progression}
+ v_p(Q(z))\ge (bm+1)e+m v_p(d)-
+ \sup_{j\ge1}\left\{v_p\!\left(\prod_{i=0}^m(am+di+j)\right)
+                        -(j-1)(e-\mu)\right\}.
+\end{equation}
+
+\subsection{Rotations and the prime support}
+
+Write \(U_i(j)\) for the reverse Newton ordinates
+\[
+ U_i(j)=v_p((bi-dj+1)_{dj})-v_p\binom ij,\qquad i=N-1,N.
+\]
+For \(L_p=\lfloor\log_p M\rfloor\), direct factorial counting
+gives \(U_i(j)\le dj/(p-1)+L_p\). The concave hull has the
+same affine upper bound, so its value at \(h\) bounds the
+sum of the largest \(h\) valuations of roots of \(R_i\).
+In particular
+\begin{equation}\label{eq:norm-affine}
+ v_p(F(0))\le H/(p-1)+L_p,\qquad
+ p>2H\ \Longrightarrow\ v_p(F(0))\le L_p.
+\end{equation}
+Also every prime of either initial block \((ai+1)_H\)
+divides \(F(0)\). Otherwise \(F\bmod p\), of degree \(h\) and
+nonzero constant term, would divide a power of \(x\) times
+a polynomial of degree less than \(h\).
+
+\begin{lemma}[Cyclotomic restriction]\label{lem:kummer}
+Above any one root of \(F\), the roots of \(G\) in
+Lemma~\ref{lem:resultant} are a union of regular rotation cosets
+of common size \(k_0\mid d\). If \(q=d/k_0\ge2\), and the
+starting-point inequality of Lemma~\ref{lem:degree-cap} holds,
+then
+\begin{equation}\label{eq:kummer-support}
+ 2H<P=M^{1/(q+1)},\qquad p\mid F(0)\ \Longrightarrow\ p\le P.
+\end{equation}
+If \(k_0=d\), then \(k=d\).
+\end{lemma}
+
+\begin{proof}
+Let \(x\) be a root of \(F\) and adjoin \(\mu_d\) to \(\Q(x)\).
+Over this field the extension generated by \(z^d=-x\) is Galois,
+and \(\sigma\mapsto\sigma(z)/z\) identifies the group with a
+subgroup of \(\mu_d\), of order \(k_0\). Any other lift differs
+from \(z\) by a root of unity already adjoined. This proves
+the coset assertion and shows that \(z^{k_0}\) is a
+\(q\)-th root of \(-x\) in \(\Q(x,\mu_d)\).
+At \(p>d\) the cyclotomic extension is unramified, by lifting
+roots of unity of order prime to \(p\) from the residue field.
+Thus every positive integer-normalized local valuation of \(x\)
+in \(\Q(x)\) is a multiple of \(q\). With normalization
+\(v_p(p)=1\) it is at least \(q/h\), and \(v_p(F(0))\) is
+also a multiple of \(q\).
+
+Suppose \(p>H+d\), \(p^{q+1}>M\), and \(p\mid F(0)\).
+For a selected slope \(\lambda\ge q/h\), the affine
+upper bound puts every maximizing index of \(U_i(j)-\lambda j\)
+below \(qh/(q-1)\le2h\). In this range \(j! \) is a unit.
+The factorial jumps are spaced by at least \(h+1\) indices,
+with heights at most \(q\), and the binomial valuation cannot
+decrease. Thus the maximizing indices can only be zero and
+the first factorial jump. By \eqref{eq:norm-affine}, the norm
+exponent is exactly \(q\). The edge at each order must have
+height \(q\), since it accounts for all selected positive slopes.
+The equal widths then place the difference of the two reached
+multiples of \(p^q\) in \([a+1,a+2d-1]\). Consequently every norm
+prime is at most
+\[
+ \max\{H+d,\ M^{1/(q+1)},\ (a+2d-1)^{1/q}\}.
+\]
+The starting-point inequality supplies an initial-block prime
+above \(2H\) by Lemma~\ref{lem:degree-cap}. If
+\((a+2d-1)^{1/q}>2H\), then
+\(s<(1+\alpha)/(4h^2)\), and \(b<dN\) gives
+\[
+ \frac{M}{(a+2d-1)^{3/2}}>
+ \frac{1}{\sqrt s(1+\alpha)^{3/2}}>
+ \frac{2h}{(1+\alpha)^2}>1.
+\]
+It follows that \(M^{1/(q+1)}>(a+2d-1)^{1/q}\) in this case.
+If the last entry in the maximum is at most \(2H\), the
+initial-block prime directly gives \(M^{1/(q+1)}>2H\).
+Both cases prove \eqref{eq:kummer-support}.
+\end{proof}
+
+A coset of size \(n\ge2\) places at least \(\lfloor n/2\rfloor\)
+points in the closed left half-plane, where the gain is at
+least \(m(1-\alpha)/\alpha\). We will use a stronger average
+when \(\alpha\) is small.
+
+\begin{lemma}[Angular average]\label{lem:angles}
+Assume \(N\ge200\) and \(\alpha<.03\), and put
+\(g_0=1.01+.128s\) and \(C'=(1-\alpha)/(2\alpha)\).
+In a coset of size \(n\ge2\), order the arguments
+\(\theta_j\) by absolute value, and put \(u_j=|1-e^{i\theta_j}|^2\).
+Let \(r\) be the number of \(j>0\) with \(u_j<4\alpha\).
+The logarithm of the geometric mean of the gains is at least
+\begin{equation}\label{eq:pade-angles}
+ \log m+(1-1/n)\log C'
+ +\frac{2\log(2n/\pi)-g_0}{n}
+ -\frac{r}{n}(g_0+\log(2(1-\alpha)))-J,
+\end{equation}
+where
+\[
+ \frac rn\le \frac2\pi\arcsin\sqrt\alpha<.111,\qquad
+ J=\frac{2\log2}{\pi}
+        \bigl(\arcsin\sqrt\alpha+\sqrt{\alpha(1-\alpha)}\bigr)<.153.
+\]
+For \(n\le9\) one has \(r=0\) and may use
+\(J=2(\log2)\alpha(n^2-1)/(3n)\). A weaker bound, used below,
+takes \(C=C'/2\) in \eqref{eq:pade-angles}, replaces
+\(\log(2(1-\alpha))\) by \(\log(1-\alpha)\), and omits \(J\).
+\end{lemma}
+
+\begin{proof}
+Where \(u_j\ge4\alpha\), the gain is at least
+\(mC'u_j(1-2\alpha/u_j)\). For nonnegative cosine use
+\(|z|\le bm\) in \(am-\Re z\). For negative cosine use
+\(|z|>am\). Use the baseline \(me^{-g_0}\) at the nearest
+argument and at the other \(r\) arguments. The cyclotomic
+product gives \(\prod_{j>0}u_j\ge(2n/\pi)^2\), because
+\(|\theta_0|\le\pi/n\) and
+\(|\sin(n\theta_0/2)/\sin(\theta_0/2)|\ge2n/\pi\).
+The removed factors \(C'u_j\) are less than \(2(1-\alpha)\).
+The angle spacing gives \(|\theta_j|\ge\pi j/n\) and the
+bound on \(r/n\). For the retained factors, apply
+\(\log(1-y)\ge-2(\log 2)y\) for \(0\le y\le1/2\).
+The mean correction is bounded by the integral of the
+decreasing function
+\(2(\log2)\min\{1/2,\alpha/(2\sin^2(\pi x/2))\}\) over
+\(0\le x\le1\), which equals \(J\).
+If \(n\le9\), then \(\sin^2(\pi/(2n))>.03\) and the
+discrete sum gives the claimed improvement using
+\(\sum_{j=1}^{n-1}\csc^2(\pi j/(2n))=2(n^2-1)/3\).
+Finally the difference between the strong and weak bounds
+is \((1-(r+1)/n)\log2-J>0\).
+\end{proof}
+
+\subsection{Large primes in the norm}
+
+\begin{lemma}[Two possible edge heights]\label{lem:two-heights}
+Assume \(d\ge2\) and let \(p>2H+d\), \(p\mid F(0)\), and
+\(p^4>M\). Suppose neither
+interval \([bi-6H,bi]\), \(i=N-1,N\), contains a positive
+multiple of \(p^3\). In particular this holds if \(p^3>M\).
+The selected Newton edge at order \(i\) joins zero to the first
+jump, of width \(w_i\) and height \(e_i\in\{1,2\}\).
+Write \(u_i=bi-dw_i+q_i\), \(1\le q_i\le d\), for the reached
+multiple of \(p\). The heights and widths satisfy
+\[
+ \frac{e_N}{w_N}=\frac{e_{N-1}}{w_{N-1}},\qquad
+ v_p(F(0))\le\min(e_N,e_{N-1}).
+\]
+If the heights are equal, \(u_N-u_{N-1}\in[a+1,a+2d-1]\).
+Otherwise \(v_p(F(0))=1\), the widths are in ratio two,
+and \(p\) divides an integer in one of
+\begin{equation}\label{eq:unequal-products}
+ b(N-2)+[2-d,2d-1],\qquad b(N+1)+[2-d,2d-1].
+\end{equation}
+In this case \(p^2\) has a positive multiple in one of
+\([bi-2H,bi]\). In both cases \(u_N\ne u_{N-1}\) and
+\[
+ u_N-u_{N-1}\in[b-H-d+1,b+H+d-1],
+ \qquad p^{v_p(F(0))}\mid (u_N-u_{N-1}).
+\]
+\end{lemma}
+
+\begin{proof}
+The slope \(\lambda\) is at least \(1/h\). The affine
+count with error three puts all maximizing indices below
+\(6h\), and the absence of terminal cubes improves this to
+\(4h<p\). The binomial valuation is nondecreasing there.
+A factorial jump raises the ordinate by at most two, and
+successive jumps are more than \(2h\) apart. Thus the
+weighted ordinates \(U_i(j)-\lambda j\) strictly decrease
+between jumps and from one jump index to the next. Only zero
+and the first jump can maximize. This proves the first assertions.
+
+The statements for equal heights follow by subtracting the
+\(u_i\). For unequal heights the smaller width is the reduced
+denominator of the slope and is at most \(h\). Twice the
+reached multiple with the shorter width minus the other
+belongs to \eqref{eq:unequal-products}. The wider edge
+reaches a multiple of \(p^2\) within \(2H\) of the terminal.
+In either case, \(|w_N-w_{N-1}|\le1/\lambda\le h\)
+gives the stated interval for the difference. If the two
+multiples were equal then \(w_N>w_{N-1}\), since \(b>d\).
+The upper binomial numerator interval would contain the
+lower one, with the same factorial valuation at the first
+jump. This gives \(e_N\le e_{N-1}\), contradicting the common
+positive slope. The norm bound on \(v_p(F(0))\) gives the last
+divisibility.
+\end{proof}
+
+\begin{lemma}[Prime sums used below]\label{lem:prime-estimates}
+Let \(S(x)=\sum_{p\le x}\log p/(p-1)\). Then for \(x>1\),
+\[
+ \pi(x)\le\frac{x}{\log x}\left(1+\frac{1.2762}{\log x}\right),
+ \qquad S(x)<\log x+.2.
+\]
+For \(x\ge350\) the latter bound improves to \(\log x-.49\),
+and for \(\log x\ge8\) to \(\log x-.54\).
+\end{lemma}
+
+\begin{proof}
+The prime count is Dusart's Theorem 6.9 \cite{dusart-primes}.
+Theorem 6.11 gives an upper bound for
+\(\sum_{p\le x}(\log p)/p\) of
+\(\log x+E+.2/\log x+.2/\log^2 x\) when \(x>2974\).
+Add the prime-power correction using
+\(E=-\gamma_{\rm E}-\sum_p\log p/(p(p-1))\) and
+\(\gamma_{\rm E}>.57\). This proves the claimed bound
+at \(\log x\ge8\). For \(1<x<3000\), the excess \(S(x)-\log x\)
+decreases between primes. Enumerate primes by trial division
+and bound the excess at each prime using the expansion
+\(\log r=2\sum_{j=0}^9 z^{2j+1}/(2j+1)+\epsilon\), where
+\(r\in[1,2]\), \(z=(r-1)/(r+1)\), and
+\(0\le\epsilon\le2z^{21}/(21(1-z^2))\).
+Normalize arguments by powers of two. This gives an upper
+bound below \(.144\) on the excess, with its maximum at \(p=3\).
+Starting at \(x=350\) and checking that endpoint as well gives
+an upper bound below \(-.499\) through \(3000\).
+\end{proof}
+

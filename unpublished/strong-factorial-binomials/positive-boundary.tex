@@ -1,0 +1,122 @@
+\section{The large relative gaps}
+\label{app:positive-boundary}
+
+The electronic proof appendix \textit{Positive-exponent Boundary}
+contains the contour estimates and the exact finite checks used in
+this section. The following argument specifies the ranges in which
+each of those proofs is needed.
+
+\begin{lemma}
+\label{lem:positive-boundary}
+The pair \(P_{N-1,a,d},P_{N,a,d}\) is coprime for every \(N\ge2\)
+on \(a=1,d\ge3\), and on \(a\ge2,d\ge3a\).
+\end{lemma}
+
+\begin{proof}
+Proposition~\ref{prop:small-terminals} covers \(N\le24\).
+Thus we may impose the ratio bound of Lemma~\ref{lem:ratio-range}
+throughout this proof.
+
+For \(a=1\), write
+\[
+ Q_{m,\gamma,d}(x)=\sum_{k=0}^m\binom{m}{k}
+                        (\gamma)_{dk}x^{m-k}.
+\]
+At terminal \(N\) the actual shapes are \(N\) and \(N+1\).
+Coefficient comparison gives, with \(\gamma=N\),
+\[
+ Q_{N,\gamma,d}'=NQ_{N-1,\gamma,d},\qquad
+ \gamma Q_{N,\gamma+1,d}
+  =(\gamma+dN)Q_{N,\gamma,d}-dxQ_{N,\gamma,d}'.
+\]
+Consequently the actual pair has a common root exactly when
+\(Q_{N,N,d}\) has a multiple root. The prime-power proof in the
+electronic appendix gives squarefreeness at
+\(d=3,4,5,7,8,9\) for this integral shape. The separate
+gap-six contour proof gives it at \(d=6\) for \(N\ge10000\).
+
+For \(d\ge10\), the lower-one contour proof gives squarefreeness of
+\(Q_{N,N,d}\) whenever \(N\ge\max(5000,128(d+1))\).
+Its two contour contributions have separated logarithmic
+derivatives at a zero, so the derivative of their sum is nonzero.
+For \(a\ge2,d\ge3a\), the weighted contour proof in the electronic
+appendix gives coprimality for \(N\ge\max(4000,128(a+d))\).
+Here one must compare two integrals with the actual moment orders.
+With \(w=A/(BN^d)\) and \(g(x)=x^a(w+x^d)\), their integrands
+after the common dilation are \(g(x)^N e^{-Nx}\) and
+\(g(x)^{N-1}e^{-Nx}\). Write \(I_U,I_L\) and \(J_U,J_L\)
+for their two contour contributions. At a zero of the first
+integral, \(I_U=-I_L\ne0\). The verified packet estimates at the
+two selected saddles \(x_U,x_L\) give
+\[
+ \left|\frac{J_U}{I_U}\right|
+ <\frac{24\sqrt{N/(N-1)}}{|g(x_U)|},\qquad
+ \left|\frac{J_L}{I_L}\right|
+ >\frac{\sqrt{N/(N-1)}}{5|g(x_L)|},\qquad
+ \left|\frac{g(x_U)}{g(x_L)}\right|>150 .
+\]
+Thus \(|J_U|<|J_L|\) and the second integral is nonzero.
+The proof estimates the extra amplitude \(e^{-x}\) in the
+order-\(N-1\) contour integral when the phase is written as
+\(\log g(x)-x\).
+
+If \(N<\max(4000,128b)\), where \(b=a+d\le4d/3\), a
+potential failure has \(d\le24\). Indeed \(s\ge3d/4\).
+For \(N\ge200\) and \(d\ge25\), one has
+\[
+ N<512d/3,\qquad \frac{3d}{4}>2\log(512d/3)+2 .
+\]
+The second inequality holds at \(d=25\) and its margin increases.
+For \(N<200\) the ratio bound is smaller still.
+
+For \(a=1,d\ge10\) below the contour threshold,
+a potential failure has \(d\le19\).
+For \(20\le d\le38\) the threshold is \(5000\), and
+\[
+ \frac{d^2}{d+1}\ge\frac{400}{21}>2\log(5000)+2 .
+\]
+For \(d\ge39\) the threshold is \(128(d+1)\), and the
+same comparison holds at \(39\) with an increasing margin.
+The orders \(N<200\) again satisfy the weaker ratio bound
+with room.
+
+The supplemental finite checker therefore needs only the families
+\[
+\begin{array}{c|c|c}
+a&d&\text{terminals }N\\ \hline
+1&6&25\le N<10000\\
+1&10\le d\le19&25\le N<5000\\
+2\le a\le\lfloor d/3\rfloor&6\le d\le24&
+                25\le N<\max(4000,128(a+d)).
+\end{array}
+\]
+Before any further exclusions this is \(338\,071\) cases.
+Every case satisfies \(a<d(N-2)\), and a possible common factor
+has \(s<21\) by Lemma~\ref{lem:ratio-range}. The block-prime
+support and Newton allocation arguments in
+Lemmas~\ref{lem:prime-support} and~\ref{lem:newton-alloc}
+apply here with these hypotheses. The stronger degree bound
+is used only when its starting-point condition is verified
+for that degree. In the subsequent Newton check, each odd
+prime \(p>aN\) satisfies \(p>N,p>d\) and \(p^2>(a+d)N\)
+throughout these finite families. Thus the sparse floor
+ordinates used in Section~\ref{sec:arithmetic} are exact
+also in this range.
+
+The supplemental program \texttt{verify\_positive\_boundary.cpp}
+retains \(326\,146\) cases after imposing the uniform bound
+\(d^2<21(a+d)\). It tries the
+first available sparse Newton test, applies the prime-block
+bounds at the remaining degrees, and then uses additional
+primes as needed. The exact exclusions are
+\[
+\begin{array}{l|r|r|r}
+\text{Family}&\text{Supports}&\text{Prime blocks}&\text{Newton polygons}\\ \hline
+a\ge2,\ d\ge3a &266\,421&12\,901&253\,520\\
+a=1,\ 10\le d\le19&49\,750&966&48\,784\\
+a=1,\ d=6&9\,975&535&9\,440
+\end{array}
+\]
+Every possible even degree is excluded, and no modular fallback
+is needed.
+\end{proof}

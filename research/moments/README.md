@@ -109,6 +109,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Sharp universal pure-to-safe boundary in Gaussian dimension and degree | Internal result | proved | [Source](vanishing/AFFINE_GAUSSIAN_LAURENT_MEAN_VARIANCE_AND_SHARP_DEGREE_BOUNDARY.md) |
 | Nonlinear Hopf profiles and affine seed obstructions | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 | Primitive degree seven and every balanced degree at least six | Internal result | proved | [Source](../foundations/extended-geometry/PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) |
+| Stripped-Hopf Dirichlet law and a complete quintic subalgebra obstruction | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 
@@ -161,6 +162,7 @@ Scope limits:
 - Sharp quadratic family classification, anychar0K: MZ iff N<=2, non-MZ iff N>=3, equivalent to existence/absence of one strong all-order nonpower witness. Full lowdim proof included; no generic global-MZ field ascent. This one-proof corollary has no checker.
 - Nonlinear single-profile dilations over every characteristic-zero field have an exact early purity test and composite unsafe primitive degree. Affine multiples of the quartic and sextic seeds cannot give primitive degree-five/seven counterexamples. These restricted classes do not settle global degree five; the separate joint Hopf-profile product realizes degree seven outside them.
 - The joint Hopf algebra gives explicit primitive absolute nonpower Image witnesses in degree four and every degree>=6, with the same balanced-degree-one marker Z nonzero at every order. The former global septic gap is realized; global degree five remains open. Pure and ambient-safe phases inside the specified subalgebra have exact ideal classifications.
+- The stripped Hopf pair B=2y-(2+x)t^2,C=2y-t^2 has a proved all-order half-parameter Dirichlet law. An exact integer certificate excludes ALL least-degree-five pure phases in K[B,C], with an independent native first-five route. This does not resolve the global primitive degree-five gap.
 
 Tracked obligations (computed states):
 

@@ -1,0 +1,489 @@
+\section{The range \texorpdfstring{\(N\ge e^{15}\)}{N at least exp(15)}}\label{sec:large-tail}
+
+\begin{proposition}\label{prop:large-tail}
+Suppose \(U=\log N\ge15\), \(a,d\ge1\), \(d<3a\), and
+\[
+  s=\frac{d^2}{a+d}<2U+2,\qquad 6a<(5N-11)d .
+\]
+Then \(R_{N-1}\) and \(R_N\) are coprime.
+\end{proposition}
+
+\begin{proof}
+Suppose there is a monic irreducible common factor \(F\).
+The notation \(m,b,M,h,H,\alpha,V,\Lambda\) is as in
+Lemma~\ref{lem:resultant}. Set \(\sigma=2U+2\), \(t=\log(1/\alpha)\),
+and \(B=H^4/M\). The starting-point inequality of
+Lemma~\ref{lem:degree-cap} is available throughout this range,
+and \(\log m>U-.001\).
+The shape inequality gives \(b<(5/6)dN\), hence \(t<U\),
+\(d<\sigma N\), and \(V<3.24U\).
+We first force the full set of rotations in the Padé norm.
+The angular gain then rules out small \(H\).
+For the remaining factors, counts of square multiples in short
+intervals bound the large-prime contribution to the norm.
+
+\subsection*{Rotations and the range of the parameters}
+
+Suppose first that \(q=d/k_0\ge2\) in Lemma~\ref{lem:kummer},
+and set \(P=M^{1/(q+1)}\). The right side of
+\eqref{eq:pade-norm} is bounded by \(S(X)+\pi(X)V/N\) for any
+\(X\ge P\). If \(\alpha\in[\ell,u]\subseteq[.03,.75]\),
+the inequality \(M=dN/\alpha<PN/(4\alpha)\) gives
+\(P^q<N/(4\alpha)\). Take \(X=(N/(4\ell))^{1/2}\), so
+\(X>P\), \(M<X^3\), and \(V/\log X<3.001\).
+Using \(S(X)<\log X-.49\) and the prime count in
+Lemma~\ref{lem:prime-estimates}, the surplus of the baseline
+\(\log m-1.01-g\) over the upper bound is greater than
+\[
+ \tfrac12(U+\log(4\ell))-1.011-\kappa(2U+2)+.49
+                  -\frac{3.6}{\sqrt{4\ell N}},
+\]
+where \(g\le\kappa s\). Use \(\kappa=.134,.160,7/32\),
+respectively, for \([.03,.1]\), \([.1,1/3]\), and
+\([1/3,.75]\), by \eqref{eq:pade-loss}.
+The smallest endpoint surplus at \(U=15\) is greater than
+\(.12\), and the expressions increase with \(U\).
+
+For \(\alpha<.03\) and \(q\ge3\), the inequalities
+\(M<dN^2<PN^2/4\) give \(P<X=N^{2/3}/4^{1/3}\)
+and \(M<X^4\). The baseline exceeds \(.744U-1.267\).
+The upper bound \(\log X-.54+4.6X/N\) gives a surplus
+greater than \(.85\) at \(U=15\), increasing thereafter.
+If \(\alpha<.03\) and \(q=2\), we have \(P/N<1/2\) and
+\(V/\log P<3.001\). The digit loss \(\pi(P)V/N\) is less
+than \(4.848P/N<2.43\), since \(P>2H\ge8\).
+For \(d<50\) this improves to \(.121\) using
+\(P/N<(50/N)^{1/3}\). In that case the gain exceeds \(U-1.22\)
+and the prime sum is below
+\(\max\{8,(2U+\log50)/3\}-.54\). For \(d\ge50\), the
+weaker bound in Lemma~\ref{lem:angles}, with \(n=d/2\),
+gives gain greater than \(.9715U+.96t-1.608\) in logarithm.
+Indeed \(g_0/n<.049\), \(1/n\le.04\),
+\(r/n<.111\), and \(g_0<1.266+.256U\).
+The prime sum and digit loss are less than
+\(\max\{8,(U+2t+\log\sigma)/3\}+1.89\).
+The surplus is positive at \(U=15,t=3.5\), and increases
+with both \(U\) and \(t\). We conclude that \(k_0=k=d\).
+
+For this full coset, suppose \(\alpha\ge.03\).
+If \(b=2\), then \(a=d=1\), and the norm primes are at
+most \(\sqrt{2N}\). The prime-count bound and
+\(S(\sqrt{2N})<\log\sqrt{2N}-.49\) already contradict
+the baseline \(U-1.011-.176/2\).
+Otherwise \(b\ge3\), so \(\log\sqrt M>8\). Since
+\(b\le\sigma/(.03)^2<N/4\), the degree and prime bounds
+give prime support at most \(\sqrt M\). The right side of
+\eqref{eq:pade-norm} is then less than
+\begin{equation}\label{eq:large-moderate-upper}
+ \tfrac12(U+\log b)-.54+2.35\sqrt{b/N}.
+\end{equation}
+For \(d\ge10\), at least \(.45\) of the rotations lie in the
+left half-plane. On the first and last intervals
+\([\ell,u]\) in the table below, the log gain therefore exceeds
+\(U-.001-.55(1.01+\kappa\sigma)+.45\log((1-u)/u)\).
+On the middle interval at least \(17/30\) of the rotations
+have \(|\arg z|\ge\pi/3\), hence \(\Re z\le am\). There the
+gain is at least \(me^{-1.01}\), so the logarithmic mean
+exceeds \(U-1.011-(13/30)\kappa\sigma\).
+Using \(b\le\sigma/\ell^2\), the limiting comparisons are
+\[
+\begin{array}{c|c|cc}
+{}[\ell,u]&\kappa&\text{gain lower bound at }U=15
+                    &\text{upper bound at }U=15\\ \hline
+{}[.03,.1]&.134&13.07&12.45\\
+{}[.1,.5]&.176&11.54&11.08\\
+{}[.5,.75]&7/32&10.09&9.41
+\end{array}
+\]
+The affine lower bounds have slope at least \(.75\), whereas
+the logarithmic part of the upper bounds has slope at most
+\(1/2+1/\sigma\) and the square-root term decreases.
+For \(d\le9\),
+use \(s<6.75,\ b\le300\) and the baseline
+\(U-1.011-7s/32\) against \eqref{eq:large-moderate-upper}.
+Hence \(\alpha<.03\) is necessary.
+
+If \(b\le N\), the norm primes are at most \(X=1.03\sqrt M\).
+The right side of \eqref{eq:pade-norm} is less than
+\(\tfrac12(U+\log b)+1.91\) by the same prime estimates.
+When \(d\ge10\), the weaker angular bound gives
+\(\log\Lambda>.945U+.9t-1.70\). Here one uses
+\(\log C>t-1.417\) and at most \(.211g_0\) in the loss.
+Since \(\log b=2t+\log s\le U\), the surplus is greater than
+\(.395U-.45\log\sigma-3.61>0\).
+If \(2\le d\le9\), the left third and \(s<.27\) give gain
+greater than \(U+t/3-.71\) in logarithm, enough since
+\(\log b=t+\log d\) and \(t<U\).
+For \(d=1\), the last gain in Lemma~\ref{lem:resultant}
+exceeds \(U+\tfrac12\log a-1.195\) in logarithm.
+Against \(\tfrac12(U+\log b)+1.91\) this leaves a positive
+margin, using \(b=a+1\le2a\). The shape inequality precludes
+\(b>N\) when \(d=1\), so now \(b>N\) and \(d\ge2\).
+
+For any \(x\ge\max(e^8,\log K)\), the prime sum in
+\eqref{eq:pade-norm} is below \(\log x+.461\). Below \(x\)
+use Lemma~\ref{lem:prime-estimates}, and above \(x\) bound it
+by \(\log K/(x-1)<1.001\).
+Suppose \(B<2048\). The equalities
+\(B=h^4s^2 b/N=s^3 h^4e^{2t-U}\) imply
+\[
+ s<8\sqrt2,\qquad V<\tfrac83U+1.62,\qquad
+ H<10.08e^{(U+t)/3}.
+\]
+The last bound follows from \(H=(B/h)^{1/3}e^{(U+t)/3}\).
+Split the count of distinct norm primes at \(N/16\)
+and use \(\log K\le HV\). The digit loss is less than
+\(.236+9.46UH/N\). Both coefficients follow from the prime count at \(U=15\).
+To see the decrease, divide the bound \(\tfrac83U+1.62\)
+for \(V\) by \(U-\log16\) in the first coefficient, and use
+\((\tfrac83+1.62/U)^2/(1-\log16/U)\) in the second.
+For \(d\ge50\) the weaker angular bound gives
+\(\log\Lambda>U+.98t-1.72\), using \(g_0<2.459\)
+and \(g_0/d<.025\).
+Splitting the prime sum at \(\max(e^8,HV)\), the surplus is
+greater than
+\[
+ \tfrac23 U+(.98-\tfrac13)t
+ -\log(10.08(\tfrac83 U+1.62))-2.417
+ -95.3568\,Ue^{(t-2U)/3}.
+\]
+This is concave in \(t\). At \(t=3.5,U\) its values are
+greater than \(3.59,1.60\), respectively, at \(U=15\)
+and increase thereafter. If \(d<50\), then \(s<2500/N<.001\)
+and \(t>U-\log50\). The gain exceeds \(U+t/3-.71\).
+Use \(M<50N^2\), \(H<(102400)^{1/4}N^{1/2}\), and
+\(V<2U+\log51\). The digit bound is below \(1.65\), so
+the total upper bound is less than
+\[
+ \tfrac12U+\tfrac14\log102400+\log(2U+\log51)+.461+1.65.
+\]
+It is beaten at \(U=15\) by the gain, which increases faster.
+Thus \(B\ge2048\).
+
+Finally, the initial block at order \(N\) has prime support
+below \(1.03b\), since \(b>N\) and \(\alpha<.03\).
+Its logarithm exceeds \(H\log(aN)\). Counting valuations
+by the affine bound, it is at most
+\(H S(1.03b)+\pi(1.03b)\log M\).
+The difference \(\log(aN)-S(1.03b)\) exceeds \(U+.47\)
+and the prime-count term is below \(2.24b\). We have obtained
+\begin{equation}\label{eq:large-parameter-range}
+ k_0=k=d,\qquad \alpha<.03,\qquad b>N,\qquad
+ B\ge2048,\qquad H/b<\frac{2.24}{U+.47}.
+\end{equation}
+
+\subsection*{Norm and degree bounds}
+
+Put \(P=2H+d\) and \(L=\log M\). For primes \(p>P\) one
+has \(p^4>M\). Call a prime exceptional if either terminal
+interval of length \(6H\) contains a positive multiple of
+\(p^3\). For each such interval and each \(q\le M/P^3\)
+there is at most one prime with \(qp^3\) in the interval.
+Each exceptional prime contributes at most \(L\) to the log
+norm by \eqref{eq:norm-affine}. Write \(Y\) for the sum of
+\(\log p\) over the nonexceptional unequal-height norm primes.
+By Lemma~\ref{lem:two-heights} and \eqref{eq:unequal-products},
+\begin{equation}\label{eq:large-two-y}
+ Y\le \min\{6d\log(2M),\,ML/P^2\}.
+\end{equation}
+The second bound uses at most one prime per square multiplier
+in each terminal interval and \(\log p\le L/2\).
+
+At a nonexceptional equal-height prime its entire norm
+power divides an integer in \([a+1,a+2d-1]\).
+The product of these powers divides \(\binom{a+2d-1}{2d-1}\)
+because the primes exceed \(2d-1\).
+Writing \(A_0=a/d\), its logarithm is less than
+\(2d(1+\log(A_0+2)-\log2)\).
+At \(p\le P\) apply the affine estimate
+\eqref{eq:norm-affine}. Comparing with
+\(\log|F(0)|>H\log(aN)\), and setting
+\[
+ \Delta=\log(aN/H)-\frac2h(1+\log(A_0+2)),
+ \qquad \Delta_*=\Delta+\frac2h\log2 ,
+\]
+gives
+\begin{equation}\label{eq:large-norm}
+ \Delta_*<\log(P/H)+\frac{\pi(P)L}{H}+\frac{Y}{H}+\frac{L}{4B}.
+\end{equation}
+Here \(\log P>8\), so \(S(P)<\log P\), and
+\(2ML/(HP^3)\le L/(4B)\). The same estimate holds for \(\Delta\).
+
+In \eqref{eq:large-parameter-range} we have
+\(A_0+1>e^{U/2}/\sqrt{2U+2}>308\).
+For \(h=2\), \(\Delta-U=\log(A_0/(A_0+2))-1-\log2>-1.70\),
+and \(\Delta_*>U-1.01\).
+For \(h\ge4\), \(\Delta-U\) attains its minimum on
+\(4\le h\le 2.24(A_0+1)/(U+.47)\) at an endpoint, since
+its derivative has the sign of \(2(1+\log(A_0+2))-h\).
+At the lower endpoint the value exceeds \(.97\).
+At the upper endpoint it is
+\[
+ \log\frac{U+.47}{2.24}+\log\frac{A_0}{A_0+1}
+ -\frac{2(U+.47)}{2.24}\frac{1+\log(A_0+2)}{A_0+1}.
+\]
+This increases with \(A_0\). Substitute the lower bound
+\(A_0+1>e^{U/2}/\sqrt{2U+2}\). The result exceeds \(1.6\)
+at \(U=15\) and increases thereafter. Indeed, if
+\(T=e^{U/2}/\sqrt{2U+2}\), then \(.46<T'/T<.5\).
+The logarithmic derivative of
+\((U+.47)(1+\log(T+1))/T\) is at most
+\(1/(U+.47)+.5/(1+\log(T+1))-.46<0\).
+In particular \(\Delta>U+.95\) for \(h\ge4\).
+Now \(\pi(P)L/H<10\) by Lemma~\ref{lem:prime-estimates},
+since \(P/H\le2.5\) and \(\log P>L/4+1.2762\).
+By \eqref{eq:large-two-y}, for \(h\ge4\),
+\[
+ h<\frac{6(3.24U+1)}
+           {U+.95-\log2.5-10-3.24U/8192}<61 .
+\]
+The fraction decreases from \(U=15\). Thus \(h\le60\).
+
+We next refine the digit loss in \eqref{eq:pade-norm}.
+For \(p>P'\ge2H+d\) and a positive lifted valuation \(e\),
+one has \(e\ge1/H\) and \(e-\mu\ge1/(2H)\).
+The progression in \eqref{eq:pade-progression} has valuation
+at most \(N\mu+\lfloor\log_p(bm+j)\rfloor\), as \(p\nmid d\).
+The floor first increases beyond \(L_p=\lfloor\log_p M\rfloor\)
+only at \(j-1\ge b>2H\). Later increases are more than \(2H\)
+steps apart. The penalty \((j-1)(e-\mu)\) absorbs all these
+increases. Thus above \(P'\) the per-prime digit loss in the
+averaged bound is at most \(L_p\log p/N\), with \(L_p\le3\).
+In particular the digit loss is at most
+\begin{equation}\label{eq:large-digit}
+ \frac{\pi(P')V}{N}+\frac3N\sum_{p>P'}v_p(F(0))\log p .
+\end{equation}
+
+Put \(\delta=H/N\) and take \(P'=(2+2/h)H=rH\).
+For nonexceptional primes above \(P'\),
+Lemma~\ref{lem:two-heights} puts their entire norm product
+in the binomial coefficient
+\(\binom{b+H+d-1}{2H+2d-1}\).
+With \(c=b/H>6.9\), its logarithm divided by \(H\) is at most
+\(r(1+\log((c+r/2)/r))\). This increases with \(r\le3\) and is
+less than \(3(t-.595)\), since \(c=e^t/h\). For the primes
+below \(P'\), the first term of \eqref{eq:large-digit} is
+at most \(12\delta\) using \(\log P'>L/4+2.59\).
+The exceptional primes contribute at most \(6\delta L/(Br^3)\).
+Therefore the digit loss is less than
+\(\delta(9t+J_0(U))\), where \(J_0(U)=6.65+6(3.24U)/16384\).
+
+When \(d\ge50\) the weaker angular bound gives
+\(\log\Lambda>U+.98t-1.64\).
+Use \(t>(U-\log(2U+2))/2\), \(g_0/d<.025\), and
+\((2/\pi)\arcsin(e^{-t/2})g_0<.19\).
+The last bound follows by substituting \(g_0<1.266+.256U\)
+and the lower bound on \(t\) into
+\(\arcsin x\le x/\sqrt{1-x^2}\). The resulting expression
+decreases from \(U=15\). Split the prime sum at \(HV>e^8\).
+If \(\delta\le .045\), the gain exceeds the two upper bounds
+by more than
+\[
+ (.98-9\delta)t-\log\delta-\log(3.24U)-2.101-J_0(U)\delta.
+\]
+Substituting \(\delta=.045\) and \(t=(U-\log(2U+2))/2\)
+decreases the expression. The resulting bound is above \(.10\)
+at \(U=15\) and increases thereafter.
+For \(d<50\), \(H<3000\), so the digit bound is below \(.14\).
+The gain exceeds \(U+t/3-.71\), and \(t>U-\log50\).
+It exceeds \(\log(3000\cdot3.24U)+.461+.14\) at \(U=15\) and
+increases faster. Therefore
+\begin{equation}\label{eq:large-degree}
+ h\le60,\qquad \delta>.045,\qquad \Delta_*>U-1.01 .
+\end{equation}
+
+\subsection*{A count of terminal square multiples}
+
+We use a sharper count in the range \eqref{eq:large-parameter-range}.
+For either \(i=N-1,N\), set \(X=bi\), and count primes \(p>P\)
+with \(X-2H\le qp^2\le X\), \(q\) a positive integer.
+Divide the range up to \(\sqrt X\) into intervals
+\([D,\eta D)\) with \(D=\eta^j P\) and \(\eta=9/8\).
+The integer points \((p,q)\) lie between \(X/p^2\) and
+\(X/p^2-\epsilon\), where \(\epsilon=2H/D^2\).
+Each prime permits at most one multiplier and each multiplier
+at most one prime. The mean value theorem gives
+\(1\le2X|p_2-p_1|/D^3+\epsilon\) for distinct points.
+Since \(\epsilon\le1/8\), their abscissas have spacing at least
+\(g_D=\max(2,7D^3/(16X))\).
+
+Partition each interval further into blocks of width
+\(\rho=(D^4/X)^{1/3}\), with number at most
+\(.132(X/D)^{1/3}\), since \(\rho/D\le X^{-1/6}<.007\).
+For three points in a block the integer area determinant
+is the determinant for \(X/x^2\) plus that for the vertical
+errors. The first is at most \(3/4\) in absolute value by
+the second divided difference bound \(3X/D^4\), times
+\(\rho^3/4\). The error determinant is at most
+\(\epsilon\rho\le(2H/X)^{1/3}<.01\). Thus all points in a
+block are collinear. For \(n\ge3\) points, select a middle
+one whose horizontal distances to both extremes are at least
+\((n-2)g_D/2\). The chord of \(X/x^2\) through the extreme
+abscissas is at most \(\epsilon\) above the curve there.
+The lower curvature \(6X/(\eta D)^4\) gives
+\[
+ n\le 2+2\eta^2\sqrt{2/3}\,
+                 \frac{D\sqrt{H/X}}{g_D}.
+\]
+The same bound holds for smaller \(n\).
+
+Sum these bounds with the weight \(\log(\eta D)\).
+The constant term from each block sums to at most
+\[
+ 7(X/P)^{1/3}(\log P+3.06),
+\]
+since \(.264/(1-\eta^{-1/3})<7\) and
+\(\log\eta/(1-\eta^{-1/3})<3.06\).
+For the second term split at \(D_*=(32X/7)^{1/3}\),
+where \(g_D\) switches. The powers of \(D\) in the two
+geometric sums are \(2/3\) and \(-7/3\).
+Their combined unweighted coefficient is bounded using
+\[
+ .132\eta^2\sqrt{2/3}(32/7)^{2/9}
+ \left(\frac1{1-\eta^{-2/3}}+\frac1{1-\eta^{-7/3}}\right)<3.4 .
+\]
+The first sum has weight at most \(\log(\eta D_*)\).
+For the second, \(D^{-7/3}\log(\eta D)\) decreases above
+\(D_*\). Shifting its start to \(D_*\) bounds the mean weight
+by \(\log(\eta D_*)+(\log\eta)\eta^{-7/3}/(1-\eta^{-7/3})
+<(\log X)/3+1\).
+Summing over both orders and using \(X\le M\) yields
+\begin{equation}\label{eq:large-square-charge}
+ \frac{Y}{H}<
+ \frac{14(\log P+3.06)}{(P/H)^{1/3}B^{1/3}}
+ +\frac{6.8 M^{1/18}}{\sqrt H}(L/3+1).
+\end{equation}
+
+\subsection*{The final comparison}
+
+Put \(v=N e^{-t}=sh/\delta>6/5\). Then
+\[
+ M=\frac{\delta N^3}{hv},\qquad B=hv\delta^3N .
+\]
+Using \(\log P>U+\log(.09)\), \(L<3.24U\),
+and \(\Delta_*>U-1.01\) in \eqref{eq:large-norm}
+gives \(Y/(HL)>.05\). Explicitly, a lower bound is
+\[
+ \frac{U-1.01-\log2.5-
+       \dfrac{2.5(3.24U)}{U+\log(.09)}
+          \left(1+\dfrac{1.2762}{U+\log(.09)}\right)
+       -3.24U/8192}{3.24U}.
+\]
+This increases for \(U\ge15\) and exceeds \(.0502\) there.
+By \eqref{eq:large-two-y},
+\(Y/(HL)\le 1/(v h(2+1/h)^2\delta^2)\). Hence
+\(\delta^2<4/3\), since \(h(2+1/h)^2\ge12.5\).
+In particular \(\delta<1.4\) and \(L<3U\).
+
+For \(\ell\le\delta\le u\) and \(v\ge w\), define
+\[
+\begin{aligned}
+ V_0&=3U+\log(u/(2w))+.001,\\
+ Z&=\frac1\ell\sum_{j=4}^8(u/(2w))^{1/j}e^{(3/j-1)U}
+       +\frac{3U}{\ell\log2}(u/(2w))^{1/9}e^{-2U/3},\\
+ C_0&=1.017\{5+\min(2.5,(2w\ell^2)^{-1/3})+Z\},\\
+ A(U,\ell,u,w)&=U-1.01-\log2.5-C_0-V_0/8192 .
+\end{aligned}
+\]
+At \(p\le P\), the extra term in the affine norm count is
+\(\sum_{j\le L/\log2}\vartheta(\min(P,M^{1/j}))\), where
+\(\vartheta(x)=\sum_{p\le x}\log p\).
+By Rosser and Schoenfeld,
+\(\vartheta(x)<1.017x\) for \(x>0\) and
+\(\vartheta(x)>.98x\) for \(x\ge7481\)
+\cite[Theorems 9 and 10]{rosser-schoenfeld}.
+In the upper estimate, \(j=1,2\) contribute at most
+\(1.017(2P/H)\) after division by \(H\), the term \(j=3\)
+uses \(M^{1/3}/H\le(2w\ell^2)^{-1/3}\), and the remaining
+terms contribute at most \(1.017Z\).
+Thus \eqref{eq:large-norm} with this count gives \(Y/H>A\).
+On the other hand, \eqref{eq:large-square-charge} gives
+\(Y/H<W(U,\ell,w)\), with
+\[
+ W(U,x,w)=e^{-U/3}\left\{
+ \frac{14(U+\log(2.5x)+3.06)}{(5w)^{1/3}x}
+ +\frac{6.8(U+\tfrac13\log(x/(2w))+1)}{(2w)^{1/18}x^{4/9}}
+ \right\}.
+\]
+In obtaining this formula one can first take \(x=\delta\).
+The function \(W\) decreases in \(x\) on the ranges used
+here, and \(xW\) increases. In particular \(Y/N<uW(U,u,w)\).
+At fixed \(\ell,u,w\), \(W\) decreases in \(U\ge15\)
+while \(A\) increases. These statements follow directly
+by differentiating the logarithmic factors and powers.
+
+At \((\ell,u,w)=(.21,1.4,6/5)\) the difference \(A-W\)
+exceeds \(.074\) at \(U=15\), so \(\delta<.21\).
+On the resulting range \([.045,.21]\) with \(w=6/5\),
+\(A/V_0\) increases with \(U\). To check this, write
+\(A/V_0=(U-c(U))/(3U+\beta)-1/8192\),
+where \(c(U)=1.01+\log2.5+C_0\) decreases and
+\(\beta=\log(.21/2.4)+.001\) satisfies \(\beta+3c(U)>0\).
+The multiplier bound in \eqref{eq:large-two-y} now gives
+\(sh<.675/\delta\), since \((2/25)V_0/A<.675\) at \(U=15\).
+For larger \(\delta\), the table below uses the stronger
+bound \(sh<uw\) when \(A>W\) excludes \(v\ge w\).
+
+The weaker angular bound in Lemma~\ref{lem:angles} gives
+\(\log\Lambda>U+t-1.60\). Here \((t+g_0)/d<.009\)
+from \(d>.045N/60\), the angle loss is below \(.19\)
+as before, and \(\log C>t-1.39\).
+For each row \([\ell,u]\) put \(V_0=V_0(U,u,6/5)\) and set
+\[
+ Q=\min\{V_0,\ U+.127+W(U,\ell,6/5)+V_0/8192\}.
+\]
+Both entries bound the large-prime log norm divided by \(H\).
+For the second entry, the equal-height prime contribution
+is at most \((2/h)(U+.127)\), since
+\(A_0+2<(5/6)N+1/6\), and the other contributions use
+\eqref{eq:large-square-charge} and the cube bound.
+As \(HQ>P\), splitting the prime sum at \(HQ\) bounds it
+by \(\log(HQ)+.461\).
+
+The digit estimate \eqref{eq:large-digit} has \(L_p\le2\)
+above \(P\), except that \(L_p\le3\) when \(p\le M^{1/3}\).
+The extra loss is at most
+\(\max(0,\vartheta(M^{1/3})-\vartheta(P))/N\), which is
+bounded by \(\max(0,1.017(u/2.4)^{1/3}-1.96\ell)\).
+Thus the digit loss is at most the following, with
+\(z=U+\log(2.5\ell)\):
+\[
+\begin{aligned}
+ D_0(U,\ell,u)
+  &=u\left\{\frac{2.5V_0}{z}\left(1+\frac{1.2762}{z}\right)
+                       +2(U+.127)+V_0/4096\right\}\\
+  &\qquad+2uW(U,u,6/5)+\max(0,1.017(u/2.4)^{1/3}-1.96\ell).
+\end{aligned}
+\]
+For the prime count in this formula we use that
+\(r/\log(rH)(1+1.2762/\log(rH))\) increases for
+\(2\le r\le2.5\). Since \(H=she^t\), the surplus over
+\eqref{eq:pade-norm} is greater than
+\(U-\log(JQ)-2.061-D_0\) where \(J\) bounds \(sh\).
+The following endpoint comparisons complete the proof:
+\[
+\begin{array}{c|c|r|c|c}
+{}[\ell,u]&w&J&
+\substack{A-W\\\text{at }U=15}&
+\substack{U-\log(JQ)-2.061-D_0\\ \text{at }U=15}\\ \hline
+{}[.045,.10]&\text{--}&15&\text{--}&>.36\\
+{}[.10,.14]&9&1.26&>.109&>1.63\\
+{}[.14,.18]&3.6&.648&>.117&>.83\\
+{}[.18,.21]&1.8&.378&>.093&>.30
+\end{array}
+\]
+The first row uses \(sh<.675/\delta\). In the other rows
+the fourth column gives \(v<w\). The final column
+increases with \(U\). Indeed the logarithmic growth rate of
+either branch of \(Q\) is below \(.08\).
+The rational factor \(V_0(1+1.2762/z)/z\) decreases with \(U\):
+write it as \(3(1-k/z)(1+1.2762/z)\), where
+\(k=\log(2.5\ell)-(\log(u/2.4)+.001)/3<.02\).
+The \(W\) term decreases and the other terms of \(D_0\)
+grow at rate at most \(.21(2+3/4096)<.43\).
+Thus the positive surplus contradicts the Padé inequality.
+The accompanying verifier reproduces the scalar comparisons
+at the stated endpoints using rational enclosures for logarithms,
+exponentials, and rational powers.
+\end{proof}
+

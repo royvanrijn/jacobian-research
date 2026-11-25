@@ -674,90 +674,249 @@ Every fixed-factor selection of normalized root mass at most \(1/3\) is therefor
 
 ## An explicit lower bound for each letter's atomic weight
 
-At normalized exponent \(d=1/3\) and minimum nonatomic total
-\(\Gamma=1/2\), every letter \(T\) satisfies
+At a balanced endpoint with \(d=1/3\) and \(\Gamma=1/2\), let
 \[
- \alpha_T:=\int r\,d\nu_{T,\mathrm{at}}(r)>\frac1{500}.
- \tag{AM1}
+ \alpha_T=\int r\,d\nu_{T,\mathrm{at}}(r)
 \]
-The [complete-label support bound](ABC_DIFFUSE_FACTOR_GRAPH.md#consequence-for-all-three-nonatomic-supports)
-puts the nonatomic measure in \([0,6]\), with mass \(c=1/6\).
-The full moment is one by the [minimum-mass conditions](ABC_VARIABLE_MESH_DEGREE_GROUPING.md#consequences-at-the-minimum-total-nonatomic-mass),
-so the nonatomic deficit \(\int(6-r)\,d\nu_{T,\mathrm{na}}\)
-equals \(\alpha_T\).
-
-Suppose \(\alpha_T\le1/500\). The nonatomic mass of \(T\)
-in \([5.95,6]\) is at least \(c-20\alpha_T>0.126\).
-Choose two fixed rows of the complete-label graph with
-a common column exponent arbitrarily close to \(c\).
-The complete \(T\)-terms on those rows have a fixed
-nonzero difference \(D\), because the two complete row
-values are distinct and the complete column value is the
-same on the two rows. This uses only the signed additive
-equation, so either addend can be the target \(T\).
-
-Discard the columns in which the outside product on the
-second \(T\)-term has radical overlap of mass at least
-\(1/10000\) with \(D\). The
-[divisor-allocation estimate](ABC_DIFFUSE_FACTOR_GRAPH.md#counting-shared-prime-divisors)
-and pair uniqueness bound their exponent by
-\(c+\delta-1/10000+o(1)\).
-On this row select an outside block of degrees in
-\([5.95,6.01]\) of root mass between \(0.083\) and \(0.0831\),
-up to limiting errors. The nonatomic mass in the band is
-more than enough, and choosing small window loss gives small
-individual outside coordinate masses for rounding. Choose
-continuity endpoints between \(5.95\) and \(5.96\), and
-between \(6\) and \(6.01\). The omitted lower degrees lose
-at most \(25\alpha_T\) of the nonatomic mass, so the block
-still fits. Freeze the block and strip the full powers
-of primes dividing \(D\). Bounded-scale roots are squarefree,
-so the retained base mass is at least \(0.0829+o(1)\).
-Writing \(n\) for the stripped full modulus, its numerical
-weight \(w\) and fullness \(kL\to\kappa\) satisfy
+be the atomic numerical weight of one letter. Then
 \[
- 0.493255\le w\le 0.0831\cdot6.01,\qquad
- \kappa=5.95.
+ \boxed{\ \alpha_T>1/250\quad\text{for each letter }T.\ }
+ \tag{IA1}
 \]
-The shallow record mass \(b\) is at least \(0.0829\) because
-each surviving prime occurs at depth at least one.
-The first \(T\)-term is in a fixed unit residue class
-modulo \(n\).
+This uses [the single-label complete realization and support bound (MS11)](ABC_DIFFUSE_FACTOR_GRAPH.md#complete-values-determined-by-single-outside-labels), and [the quantitative grouped-root count](#a-quantitative-congruence-estimate-for-one-grouped-root) with a shallow residue choice. The count applies to arbitrary atomic lists and degree scales.
 
-On that first term group the roots of scaled degree at least
-three unweighted at base \(q=\lfloor6/L\rfloor\), with all
-remaining factors and exponent corrections in \(v\).
-This writes the complete term as \(v z^q\) times its known
-exceptional coefficient. The narrow height constant is at
-most \(c+\alpha_T/3<0.168\). The limiting numerical correction
-is at most \(2\alpha_T\): for nonatomic mass at \(r\le6\)
-the cost of assigning the coordinate to zero or six is at
-most \(6-r\), and for atomic mass its cost is at most \(r\).
-At three the two corrections agree, so changing the side
-of a coordinate near the cutoff causes no limiting error.
-The degree truncation and zero-window errors are absorbed
-by convergence of the full first moments. All frozen
-coefficients are units at the retained modulus primes.
-
-Apply (QD2) with \(h=0.168\), \(E=0.004\),
-\(\alpha=1/2\), \(M=15\) and \(r=0.371\).
-The upper bound for \(B\) is \(0.122328\), while the
-determinant threshold is at least
-\(0.0829\cdot(1/2)\cdot16\cdot0.371/2=0.1230236\).
-The Taylor precision is \(2.968<5.95\), the short
-exponent parameter is below the base six, and the
-terminal threshold \(4B\) is at most \(0.489312\),
-strictly less than \(w\). The partner column is determined
-after recovering the first complete \(T\)-term, by pair
-uniqueness with its fixed row and the divisor-many choices
-of outside representations. Every retained prime has
-modulus depth below \(2k\), since the original roots are
-squarefree and the degrees of the locked block are at
-most \((6.01+o(1))/L\). Hence the full shallow record is
-just \(\operatorname{rad}(n)\), of mass at most \(0.0831\).
-Including the freeze, the good branch costs at most
+At this endpoint each letter has normalized root mass \(1/3\), nonatomic mass \(c=1/6\), numerical height one, and no escaped first moment. By (MS11), \(\nu_{T,\mathrm{na}}\) is supported on \([0,6]\). Consequently its centered deficit is exactly
 \[
- 0.0831+0.0831=0.1662<c .
+ \int(6-r)\,d\nu_{T,\mathrm{na}}(r)=\alpha_T .
+ \tag{IA2}
 \]
-The bad branch also saves a fixed amount. This contradicts
-the chosen near-full column exponent and proves (AM1).
+If \(\alpha_T\le1/250\), the nonatomic mass in the open band \((119/20,601/100)\) is at least
+\[
+ c-20\alpha_T \ge \frac16-\frac2{25}=\frac{13}{150}.
+ \tag{IA3}
+\]
+Indeed a nonatomic root at or below \(119/20\) has scaled-degree deficit at least \(1/20\). This band has more mass than the \(33/400\) used below.
+
+### Complete rows and a high band modulus
+
+Use the complete-label graph and take two fixed distinct complete rows on one of the opposite letters, with common outside columns of exponent arbitrarily close to \(c\). The other free complete value is a function of its column label. Thus on the two rows the complete \(T\)-values, denoted \(T_0,T_1\), satisfy
+\[
+ T_1-T_0=D
+\]
+for a fixed nonzero integer \(D\) of polynomial height. The same relation holds when the target is originally one of the addends, with \(D\) changing sign if needed. Complete values determine their prescribed labels up to divisor-many representations at fixed truncation, so this does not affect the column exponent.
+
+Let \(\xi=1/10000\). Discard columns in which the outside \(T_1\)-product shares radical of size at least \(X^{\xi L}\) with \(D\). The [fixed-integer divisor allocation bound](ABC_DIFFUSE_FACTOR_GRAPH.md#counting-shared-prime-divisors) gives only \(X^{(c+\delta-\xi+o(1))L}\) such outside labels, where \(\delta\) is the outside-window loss. Their fixed row recovers the corresponding columns up to divisor-many choices. Take all graph construction and window losses sufficiently small compared to \(\xi\), so the remaining near-full columns suffice for a contradiction.
+
+Choose a compact continuity sub-band of \((119/20,601/100)\) of nonatomic mass greater than \(33/400\), possible by (IA3). On the \(T_1\)-letter the outside coefficients retain this diffuse mass. Consecutively choose whole outside roots in that band until their mass is at least \(33/400\) and at most \(827/10000\), allowing vanishing errors. The upper bound follows by making the outside-coordinate mass cap sufficiently small. Freeze these roots. Strip the full powers of primes dividing \(D\) from them. This does not add a choice cost since \(D\) is fixed. Bounded-scale outside roots are squarefree and have disjoint prime support. Hence the unit modulus remaining has weight \(w\) and shallow residue factor \(Q\) satisfying
+\[
+ \begin{split}
+ w&\ge \frac{33}{400}\frac{119}{20}
+            -\frac{1}{10000}\frac{601}{100}
+      >\frac{49}{100},\\
+ b:=\frac{\log_X Q}{L}+o(1)&\ge \frac{33}{400}-\frac1{10000}
+      =\frac{103}{1250}.
+ \end{split}
+\]
+For \(Q\) use the product of the unpowered stripped roots, so also \(b\le827/10000\). The congruence is \(T_0\equiv-D\pmod n\) with unit target. The fullness parameter can have \(kL\to\kappa=59/10\), since each retained degree is larger than \(119/20\).
+
+### Grouping the complete opposite target
+
+On \(T_0\) group all nonatomic root factors at the common base exponent \(q=\lfloor6/L\rfloor\). Put the entire atomic factors in a wider rational cofactor together with the signed degree corrections of the grouped nonatomic roots. To realize this on the boxes take shrinking windows at finitely many positive atoms and zero, then increase the finite list slowly so as to capture the full atomic mass and moment. Such a diagonal is possible because there is no escaped numerical weight. The remaining root mass tends to \(c\), and any corrections from unlisted atoms and their degree rounding tend to zero. Thus the grouped narrow root has normalized height \(h\le1/6\).
+
+The wide numerical exponent is at most \(\alpha_T\). Indeed the selected atoms contribute total positive weight \(\alpha_T\) in the limit. By the support condition and (IA2), the diffuse corrections about degree six are nonpositive in the limiting measure and have absolute numerical weight \(\alpha_T\). Reduction bounds the larger of the numerator and denominator exponents by \(\alpha_T+o(1)\). One may instead use finite atom lists with arbitrarily small omitted mass and moment and absorb that error in the fixed determinant margins.
+
+Apply (QD2) in its first-coordinate reconstruction form, with shallow record \(Q\), half-rank, \(M=15\), and \(r=37/100\). Under \(\alpha_T\le1/250\),
+\[
+ \begin{split}
+ B&\le\frac16\frac{37}{100}+15\frac1{250}=\frac{73}{600},\\
+ b(M+1)r/4&\ge\frac{3811}{31250}>\frac{73}{600},\\
+ (M+1)r/2&=\frac{74}{25}<\frac{59}{10},\qquad r<6,\\
+ 4B&\le\frac{73}{150}<\frac{49}{100}<w.
+ \end{split}
+\]
+The last condition suffices because the local records first determine the short root, and the original full modulus recovers the wide cofactor. The actual chart price is \(b\), since the residue record is \(Q\). Each exact grouped output gives the full \(T_0\), then the complete column value follows from row zero's fixed additive value. The original column label has only divisor-many possibilities for that complete value. Thus the good-column exponent is at most
+\[
+ 2\cdot\frac{827}{10000}=\frac{827}{5000}<\frac16.
+\]
+The discarded overlap columns have their own strict saving. This contradicts the complete rectangle with near-full column exponent and proves (IA1).
+
+### A formal profile that this rules out
+
+Give the other two letters each an atom of mass \(1/6\) at degree three plus nonatomic mass \(1/6\) uniform on \([2,4]\). Give \(T\) an atom of mass \(1/6\) at \(3/250\), and nonatomic mass \(1/6\) uniform on \([6-3/125,6]\). All numerical moments are one, \(\Gamma=1/2\), all degrees are at most six, and the measures have no escaped moment. The two-letter fractional packs at mass \(1/6\) have weight at most one and the three-factor packs at mass \(1/3\) have weight at most two. The trimmed support bound (MS12) holds since \(\min(r,s)\ge sr/6\) for \(r\le6\) and \(s\le6\). Its atomic numerical weight is \(\alpha_T=1/500\), so (IA1) excludes the profile.
+
+### Persistence of the bound near minimum mass
+
+The same individual lower bound \(1/250\) persists for
+all sufficiently small \(\gamma=\Gamma-1/2\) at \(d=1/3\).
+Indeed the [uniform diffuse tail estimate](ABC_DIFFUSE_FACTOR_GRAPH.md#diffuse-tails-and-mesh-discrepancy-near-minimum-mass)
+gives \(\int(r-6)_+\,d\nu_{T,\mathrm{na}}=o(1)\) as
+\(\gamma\to0\), and the height and escaped moment bounds
+give \(h_T=1+o(1)\) and \(e_T=o(1)\). The nonatomic
+mass is \(c+O(\gamma)\). If \(\alpha_T\le1/250\),
+the nonatomic mass below \(5.95\) is at most
+\(20\alpha_T+o(1)\), by integrating the deficit below
+six. The mass above \(6.01\) is \(o(1)\), so the
+lock band still has mass at least \(13/150-o(1)\).
+
+As in the preceding grouping, the narrow height is at
+most \(c+\gamma\). The atomic numerical weight enters
+the numerator of the wide factor, and the positive
+nonatomic correction above six is \(o(1)\). The
+negative nonatomic correction below six is at most
+\(\alpha_T+o(1)\), by subtracting its moment from
+\(6c_T\). The escaped weight can add at most \(o(1)\).
+This gives wider height at most \(1/250+o(1)\).
+For example \(h\le1/6+10^{-5}\) and \(E\le0.00401\)
+still leave all the displayed determinant and terminal
+margins strict. The near-minimum complete-label graph
+allows a two-row rectangle with exponent as close
+to \(c\) as needed for the \(0.1654\) good-column cost
+and the fixed overlap loss. The continued presence of
+these margins proves the claim.
+
+### A complementary bound from an opposite high support
+
+At \(\Gamma=1/2\), let \(s_*\) be the larger of the
+two opposite nonatomic support endpoints. The complete-label
+truncated-moment restriction (MS12) and the same residue
+parameters give
+\[
+  \int r\,d\nu_{T,\mathrm{na}}(r)+\frac{6-s_*}{6}
+       > \frac1{250}.
+ \tag{IA4}
+\]
+In the only nontrivial case \(s_*>5.976\), choose \(s<s_*\)
+close enough to \(s_*\) and use \(T\) as the common complete
+column parameter on many fixed rows. Lock blocks on the
+opposite high-support letter, in a fixed band above \(s\),
+with total root mass between \(0.0825\) and \(0.0827\).
+There are enough rows for the positive nonatomic mass in
+this band, however small. Use the fixed shift-difference
+product as in the [single-letter mesh count](ABC_DIFFUSE_FACTOR_GRAPH.md#an-explicit-one-letter-mesh-discrepancy)
+to discard high-overlap columns and remove in total at
+most \(0.0001\) root mass from the selected locks.
+The resulting CRT modulus is full to \(kL\to5.9\),
+has weight greater than \(0.49\), and has an unpowered
+shallow record of mass between \(0.0824\) and \(0.0827\).
+
+Put \(B_T=\int r\,d\nu_{T,\mathrm{na}}(r)\).
+By (MS12), \(\int(s-r)_+\,d\nu_{T,\mathrm{at}}(r)\le B_T\),
+since the atomic mass is \(c\) and the nonatomic clipped
+weight is at most \(B_T\). Group the atomic factors on \(T\)
+unweighted at base \(s\) and leave its nonatomic factors in
+the wider cofactor. The negative correction is at most \(B_T\),
+and its signed total is \(1-s/6\). The larger wide height
+is therefore at most \(B_T+(6-s)/6\), and the narrow height
+is at most \(c\). If (IA4) fails, this is at most
+\(1/250+o(1)\) as \(s\uparrow s_*\). The strict margins in
+the preceding one-root calculation apply, and its cost
+\(0.1654<c\) contradicts the selected near-full column
+count. This proves (IA4).
+
+## A single-letter bound on concentration in short degree intervals
+
+Work at \(d=1/3,\ \Gamma=1/2\) and fix one target letter \(T\). Put \(c=1/6\). Use the unequal-root-height count (UW) with coefficient \(B_m=m^2+m\). Suppose its positive atomic scales can be grouped using \(p\ge1\) fixed positive bases. This includes a list of at most \(p\) positive atoms, using one base per atom. More generally it suffices that the scales belong to the additive semigroup generated by positive bases \(a_1,\ldots,a_p\), with nonnegative integer multipliers. Then
+\[
+ \nu_{T,\mathrm{na}}(I)\ll |I|^{1/p}
+ \tag{IF1}
+\]
+for positive compact intervals \(I\), uniformly in the patch position for fixed bases and profile. In particular, the nonatomic measure on a single letter whose atoms lie in one lattice has a globally bounded density, irrespective of the opposite scales.
+
+To prove this, take two fixed distinct complete rows in the [complete-label graph](ABC_DIFFUSE_FACTOR_GRAPH.md#complete-values-determined-by-single-outside-labels), with common columns of exponent arbitrarily near \(c\). Their complete targets \(T_0,T_1\) satisfy \(T_1-T_0=D\) for a fixed nonzero integer \(D\) of polynomial height; the same holds in each signed orientation. Fix a compact positive continuity range \([b,B]\) of positive diffuse mass on \(T\). Use the outside coordinates of \(T_1\) there for a modulus, whose cost will be matched to the patch.
+
+Let \(I\) be a patch with nonatomic mass \(t>0\) and width \(\sigma\). On \(T_0\) retain zero and positive atom windows, together with the patch, omitting the shrinking atom windows from the patch coordinates to avoid double counting. At \(\Gamma=1/2\) the whole spectra have bounded support, so a positive semigroup has only finitely many scales in the relevant range. Alternatively one can take finite lists with omitted atomic mass and moment as small as needed and pass to the limiting estimate. The freeze cost is at most \(c-t\), up to these arbitrarily small errors. The \(p\) grouped atomic variables have bounded normalized root heights depending on the bases, because a multiplier at base \(a_i\) is bounded by \(r/a_i\) and the total numerical weight is at most one. The patch is one additional unweighted grouped variable of normalized root height \(t\), at an exponent represented by its center. Thus the wider numerical exponent is at most \(\sigma t+o(1)\).
+
+Set \(m=p+1\) and choose numerical lock weight
+\[
+ w=\frac{bt}{100(B_m+1)}.
+\]
+For small \(t\), the outside \(T_1\) coordinates of \([b,B]\) can be accumulated to this weight with vanishing truncation error, since they retain positive nonatomic mass and their individual normalized masses tend to zero when the window losses tend to zero. The lock costs at most \(w/b+o(1)\). Discard columns sharing outside \(T_1\)-radical at least \(X^{\xi L}\) with \(D\), using the fixed-integer divisor allocation bound. Choose \(\xi<w/(4B)\), then all outside and rectangle losses sufficiently small relative to \(\xi,t\). This discarded family has its own strict exponent saving. Strip primes dividing \(D\) from the locked roots. With \(w'\in[3w/4,w+o(1)]\) their weight, the target congruence is \(T_0\equiv-D\pmod n\), with a unit right-hand side. Use fullness parameter \(\kappa=b/2\).
+
+In (UW), the \(p\) normalized narrow height caps relative to the modulus are \(O(1/t)\), and the patch cap is \(O(1)\). Their product is \(O(t^{-p})\), with constants independent of the patch. The relative wider exponent is \(O(\sigma)\). Thus (UW) applies if \(\sigma\le c_0t^p\) for a sufficiently small fixed \(c_0>0\). Exact monomial fibres are divisor-many even if an original root appears in several of the atomic groups: the exact value determines \(T_0\) up to its fixed coefficients, and fixed truncation gives divisor-many original representations. Amplification is unnecessary. The chart cost is at most \(B_mw'/\kappa\le t/50+o(1)\), while the lock cost is at most \(t/100+o(1)\). With the freeze \(c-t\), this gives a strict saving from the near-full column exponent. Therefore \(t\ll\sigma^{1/p}\). Continuity endpoints suffice to prove the bound for all intervals by enlargement. The constants in the height bounds do not depend on the patch position, and all positive patch centers are allowed. Intervals approaching zero use continuity of the nonatomic part there, and the bounded support handles large intervals.
+
+### Folded distributions on shifted meshes
+
+Fix \(a\in(0,1]\), a phase \(\phi\in[-1/2,1/2]\), and windows with \(\|r/a-\phi\|\le\theta\) capturing nonatomic mass \(t>0\) on \(T\). Select finite positive atoms omitting atomic mass at most \(t/16\), with unshifted weighted phase error at most \(\theta t/2\). Group these atoms on the unshifted mesh and the windows on the shifted mesh, omitting the selected atom neighborhoods from the shifted part. Use a first narrow variable of height \(X^{(O(1/a))L}\) and a second of height \(X^{(17t/16+o(1))L}\) carrying the offset exponent \(\lfloor a\phi/L\rfloor\). The wider exponent is at most \(2a\theta t+o(1)\). For these windows take the row modulus at numerical
+weight \(w=\epsilon_T t\), with \(\epsilon_T>0\) fixed
+and small enough that \(w\) is at most half the
+available nonatomic numerical weight of \([b,B]\)
+for every \(t\le c\), and that the lock and chart costs
+are at most \(t/100\) and \(t/50\), respectively.
+This keeps the choice of modulus uniform even for large
+captured mass \(t\). The narrow cap product is
+\(O(1/(a t))\) and the relative wider exponent is
+\(O(a\theta)\). Thus \(t\ll\theta\), uniformly in the phase and mesh, whenever the atomic alignment condition holds. For a lattice spectrum it holds on every refinement of that lattice, so all folded nonatomic measures on those meshes have a common bounded density.
+
+## Partial degree grouping on complete columns
+
+Let \(d=1/3,\ \Gamma=1/2\), and fix a letter \(U\). Choose any prescribed collection of its original root coordinates with limiting root mass \(m\in(0,1/3]\) and weak degree measure \(\sigma\). For example, take all coordinates in a union of fixed continuity windows. Work with the full prelimit group and leave every other factor of \(U\) in the wide cofactor. At base exponent \(q=\lfloor1/(mL)\rfloor\), the narrow root has normalized height at most \(m\). The net signed numerical correction tends to \(1-qLm=0\), so the numerical wider height exponent is
+\[
+ E= \int (1/m-r)_+\,d\sigma(r)
+    =1-\int\min(r,1/m)\,d\sigma(r).
+ \tag{PG1}
+\]
+Indeed only the selected factors contribute negative corrections, while the complement contributes positively. The signed net vanishes, so both sides have the same limiting exponent. The first integrand is bounded and continuous, so this identity holds without using convergence of the first moment of the selected coordinates.
+
+Let \(s_*\) be the maximum nonatomic support endpoint of the other two letters. Then for every integer \(M\ge2\),
+\[
+ \boxed{\quad
+ 1-\int\min(r,1/m)\,d\sigma(r)
+ \ \ge\ \frac{s_*}{M}
+          \left(\frac{829}{40000}-\frac{m}{M+1}\right).
+ \quad}
+ \tag{PG2}
+\]
+Only positive right sides are substantive.
+
+To see this, choose an opposite target band of positive nonatomic mass in a compact interval \([s,S]\) with \(S<2s\). Use many fixed complete rows, taking enough to choose their target outside blocks with aggregate root mass between \(0.083\) and \(0.0831\). [The one-letter mesh argument](ABC_DIFFUSE_FACTOR_GRAPH.md#an-explicit-one-letter-mesh-discrepancy) supplies these locks. Strip primes dividing the fixed product of all row differences after discarding the corresponding high-overlap columns. Choose the overlap threshold so that their total root loss is at most \(0.0001\). The remaining target blocks are pairwise coprime, and their congruences specify one unit residue for the complete \(U\)-value. Their full product has numerical weight at least \(0.0829s\), and choosing \(kL\to s\) gives the unpowered shallow record of mass \(b_Q\in[0.0829,0.0831]\).
+
+The grouped congruence now has narrow height \(h\le m\) and numerical wider height \(E\). In (QD2) use half-rank, the given \(M\), and \(r=s/(M+1)\). Since \(s\le6\) by the diffuse support bound and \(m\le1/3\), one has \(r<1/m\) for \(M\ge2\). The Taylor precision is \(s/2<kL\). If
+\[
+ E<\frac{s}{M}\left(\frac{0.0829}{4}-\frac{m}{M+1}\right),
+\]
+then \(B=hr+EM<0.0829s/4\), which is strictly below the determinant threshold and gives \(4B<w\). Thus the short coordinate is reconstructed first, and the full modulus recovers the wide factor. Each output determines the complete column value and its associated outside label up to divisor-many choices. The lock and chart costs total at most \(0.1662<1/6\), contradicting the near-full complete rectangle. Let \(s\) approach \(s_*\) to obtain (PG2).
+
+### An explicit excluded two-component profile
+
+Take each opposite letter to have mass \(1/6\) at degree three and nonatomic mass \(1/6\) uniform on \([2,4]\). On \(U\), take
+- mass \(1/6\) at \(499/100\);
+- nonatomic mass \(1/30\) uniform on \([997/200,999/200]\), centered at \(499/100\);
+- nonatomic mass \(2/15\) uniform on \([0,3/100]\).
+
+Every letter has root mass \(1/3\), nonatomic mass \(1/6\), and numerical moment one. All supports are within \([0,6]\), so the support cap, the two- and three-letter packing bounds at mass \(1/6\), and the three-factor packs at mass \(1/3\) hold. The inequality \(\min(r,s)\ge rs/6\) for \(r,s\in[0,6]\) gives (MS12). The nonatomic and atomic numerical moments are bounded away from zero on all letters.
+
+This profile also satisfies the one-letter unshifted phase inequality (DN2). Indeed for \(U\) the low diffuse component alone contributes at least \(1/500\) to \(\int\|r/a\|\,d\nu_U\) uniformly in \(0<a\le1\). For \(a\ge3/50\) its contribution is exactly \(1/(500a)\); otherwise the phase average on its interval is at least \(1/8\). For the other two letters their uniform component on \([2,4]\) supplies more than this lower bound. The required opposite support constants in (DN2) are at most \(6/11500\).
+
+But take \(\sigma\) to be precisely the high part on \(U\), namely its atom and its high diffuse band. Its mass is \(m=1/5\), all its support is below the grouped base \(5\), and its moment is \(499/500\). Thus \(E=1/500\) by (PG1). Use \(s=39/10\), a target band contained in \([39/10,4]\), and \(M=20,\ r=39/210\). Then
+\[
+ B=\frac15\frac{39}{210}+\frac{20}{500}
+    < .0829\frac{39/10}{4}.
+\]
+The bound (PG2) excludes this formal profile despite the full unshifted phase, support, and packing tests.
+
+### A count saving in a nearby sector
+
+For an explicit open-margin sector, change the low diffuse support of \(U\) to \([0,3/200]\) and the common center of its high atom and high diffuse band to \(999/200\), keeping the high diffuse width \(1/100\). Then all moments still equal one. At base five the high group has \(m=1/5\) and wider height \(E=1/1000\). The following nearby spectral conditions suffice for an explicit count saving. Assume
+\[
+ |c_W-1/6|\le 1/8000000\quad\hbox{on all letters}.
+\]
+On one opposite target \(T\), require nonatomic mass greater than \(3/400\) in \([39/10,4]\). On \(U\), require a prescribed group at base five having narrow normalized height at most \(201/1000\) and wider numerical exponent at most \(11/10000\), with all other factors in the wide cofactor. Then
+\[
+ d<\frac13-\frac1{1000000}.
+ \tag{PG3}
+\]
+
+Use the
+[quantitative complete-label reduction below \(d=1/3\)](ABC_DIFFUSE_FACTOR_GRAPH.md#three-letter-divisor-packing)
+with \(d=2c-\epsilon\) and \(\gamma_0=1/8000000\).
+Since \(\sum_W c_W-3c\le3\gamma_0\), the complete graph has
+edge exponent at least \(2c-35\epsilon-68\gamma_0\) up to
+arbitrarily small losses. The global limiting upper bound
+gives \(\epsilon\ge0\).
+Assume \(\epsilon\le1/1000000\). Take ten fixed complete rows with common column exponent at least
+\[
+ c-350\epsilon-699\gamma_0-o(1)>c-.000438-o(1).
+\]
+This follows from the ordered-star count on the complete-label graph with capacities \(c+\gamma_0\), using the conservative \(68\gamma_0\) edge loss. Choose one outside band block per target row of mass \(3/400\) up to the arbitrarily small rounding loss and freeze them at total cost at most \(.0751\). Strip primes dividing the product of all fixed row differences, discarding columns whose radical overlap on any row has root mass at least \(\xi=.0005\). Their exponent is at most \(c+\gamma_0-\xi+o(1)\), below the selected column exponent. The combined root-mass loss is at most \(10\xi=.005\), so the pairwise coprime target modulus gives \(b_Q\in[.07,.0751]\) and \(w\ge.075\cdot3.9-.005\cdot4=.2725\). Use \(\kappa=3.9\).
+
+Apply the half-rank determinant with \(M=16,r=1/5\) on the specified partial \(U\) group. Then \(B\le .201/5+16(.0011)=.0578\), below \(b_Q(17)r/4\ge .0595\). The Taylor precision is \(1.7<\kappa\), \(r<5\), and the retained modulus has positive weight since \(4B=.2312<w\). The actual chart cost is at most .0751, giving total count exponent at most .1502, a contradiction to the common columns. This proves (PG3).

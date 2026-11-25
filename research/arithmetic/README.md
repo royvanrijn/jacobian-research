@@ -351,13 +351,28 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A bound on the nonatomic scaled-degree support | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Trimmed degree-support inequalities at the minimum | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Power dictionaries for rank-two complete targets | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| An explicit atomic moment on every letter at the minimum | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Explicit individual atomic and complementary nonatomic moments | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | Complete values determined by single outside labels | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Uniform support and truncated opposite moments at minimum mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Two-letter root packing with a fixed third complete value | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Trimmed degree restrictions at almost minimum nonatomic mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Quantitative complete-label reduction near minimum mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Positive nonatomic numerical weight on every near-minimum letter | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A one-letter mesh discrepancy from several fixed rows | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Quantitative near-minimum tails above degree six | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| One-letter diffuse concentration bounds | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| High-band count saving without opposite weight hypotheses | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Actual singular six-cycle bounds from coherent product ratios | Internal result | proved | [Source](ERDOS_943_COHERENT_PRODUCT_RATIO.md) |
+| Three-letter divisor packing near minimum nonatomic mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Count saving from three-letter high-weight locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Extraction of a common full factor by repeated locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A diffuse support restriction from repeated high-degree locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A one-letter bound for several shifted meshes | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Partial degree grouping on complete columns | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A count saving in a partial-group sector | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A joint support restriction from common factors on several letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 
-**Computed obligations:** 102 unresolved; 18 resolved within their exact scope.
+**Computed obligations:** 103 unresolved; 18 resolved within their exact scope.
 
 
 Scope limits:
@@ -485,6 +500,7 @@ Scope limits:
 - The rational witness-family bounds and exact auxiliary-curve content bridge are conditional/restricted results. Prime or cube-free subclasses are explicit, actual Q-zero curves are required, and the economical retained-modulus long-complement cover remains open.
 - Actual-capacity extension preserves old raw congruence bounds. It proves conditional pair/ratio/capacity reverses; every curve uses its own norm degree and exact post-content modulus, verticalD2 is required for the reverse, and the positive-saving capacity estimate remains OPEN.
 - Actual six-cycle divisor reconstruction closes the singular g_*<=sqrt(T) sector; low kernel-side lcm costs at most T^(2+epsilon). For odd prime targets every proper-power U/V sector costs T^(1+epsilon). Full/residual bounds are equivalent and OPEN; no prescribed-sum exponent improves here.
+- Actual unweighted singular cycles with H(P/Q)<=T^(1/4), or reduced cubic-center height<=T^(1/6), now meet the balanced T^(2+epsilon) target. The product-balanced sector is smaller still, and prime2mod3 has a structural empty sector. Both full/refined-residual cycle estimates remain OPEN; the coefficient-dependent first-term loss is not a uniform maximum-box saving. Uniform arbitrary positive coefficients are covered on the weighted ratio sector H(rho)<=T^(17/44) at T=N^(11/50), by the fixed-squareclass<2X center count; the complementary weighted sector remains open.
 
 Tracked obligations (computed states):
 
@@ -564,5 +580,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can the exact NO-short/SOME-full kernel-pair complement be covered by uniformly few actual Q-auxiliary curves whose cusp remainders retain a sufficient power of N? See GAP-ARITH-ERDOS943-ECONOMICAL-CONTENT-RETAINING-AUXILIARY-COVER.](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) — GAP-ARITH-ERDOS943-ECONOMICAL-CONTENT-RETAINING-AUXILIARY-COVER
 - **mathematical / open:** [Prove a positive-saving content-aware total capacity for ACTUAL covers of the exact NO-short/SOME-full complement at delta1/8.](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) — GAP-ARITH-ERDOS943-POSITIVE-SAVING-ACTUAL-CURVE-CAPACITY
 - **mathematical / open:** [Bound the actual cycles with both kernel lcms>8T^2 after removing the singular g_*<=sqrt(T) sector; on odd prime targets proper-power product ratios may also be removed.](ERDOS_943_SIX_CYCLES.md) — GAP-ARITH-ERDOS943-BALANCED-SIX-CYCLE-RESIDUAL
+- **mathematical / open:** [Count the actual high-lcm residual cycles after removing small coherent gcd and the now-counted small product-ratio/cubic-center sectors; equivalently close the full pointwise balanced C6 bound.](ERDOS_943_COHERENT_PRODUCT_RATIO.md) — GAP-ARITH-ERDOS943-COHERENT-PRODUCT-RATIO-RESIDUAL
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

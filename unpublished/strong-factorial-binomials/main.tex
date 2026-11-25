@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\DeclareMathOperator{\vp}{v_p}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\lc}{lc}
+
+\title{The Strong Factorial Conjecture for Univariate Binomials}
+\author{Roy van Rijn}
+\date{}
+\hypersetup{pdftitle={The Strong Factorial Conjecture for Univariate Binomials},
+  pdfauthor={Roy van Rijn}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove that two consecutive positive factorial moments of a nonzero
+univariate binomial cannot both vanish over a field of characteristic
+zero. Equivalently, the two corresponding rational moment polynomials
+are coprime for every support and every consecutive pair of orders.
+A Pad\'e resultant bounds the orders at which a common factor can occur.
+At the remaining orders, prime divisors of short factorial products
+and the widths of shared Newton polygon edges exclude possible factor
+degrees. An exact finite certificate completes this range.
+\end{abstract}
+
+\section{The problem and the proof}
+
+Let \(K\) be a field of characteristic zero. The factorial functional on
+\(K[X]\) is the \(K\)-linear map \(\mathcal L\) defined by
+\(\mathcal L(X^j)=j!\). Edo and van den Essen's Strong Factorial
+Conjecture asserts that a polynomial with \(r\) nonzero terms has a
+nonzero factorial moment in every run of \(r\) consecutive positive
+orders \cite{edo-essen}. We prove the case of two terms in one variable.
+
+\begin{theorem}\label{thm:main}
+For all integers \(a\ge0\), \(d\ge1\), \(N\ge2\) and every nonzero
+\(f=X^a(A+BX^d)\in K[X]\), at least one of
+\(\mathcal L(f^{N-1})\) and \(\mathcal L(f^N)\) is nonzero.
+\end{theorem}
+
+For a single monomial this follows from the definition. If \(AB\ne0\),
+put \(t=B/A\) and define
+\begin{equation}\label{eq:moment}
+ P_m(t)=\sum_{k=0}^m\binom{m}{k}(am+1)_{dk}\,t^k,
+ \qquad R_m(x)=x^m P_m(1/x),\qquad
+ \mathcal L(f^m)=A^m(am)!\,P_m(B/A).
+\end{equation}
+Here \((y)_j=y(y+1)\cdots(y+j-1)\) and \((y)_0=1\).
+The integral polynomials \(R_m\) are monic, with nonzero constant term.
+It suffices to prove \(\gcd(R_{N-1},R_N)=1\) over \(\Q\),
+since a rational B\'ezout identity holds over every \(K\).
+Conversely, a nonconstant common factor gives a common root over
+\(\C\) and hence two consecutive zero moments.
+
+Rocks studied consecutive coprimality for two monomials and proved
+several cases, using the same coefficient polynomials
+\cite[Section 3.4]{rocks}. For the constant-plus-power support
+\(\{0,d\}\), Filaseta and Rocks proved that, for each fixed \(d\), the
+orders at which \(P_m\) is irreducible have lower density at least
+\(\log 2\) \cite[Theorem 1.1]{filaseta-rocks}. Our conclusion concerns
+every pair of consecutive orders and allows both exponents to vary.
+
+Our proof uses prime divisibility at small orders and combines it with
+a complex estimate at large orders. A Pad\'e truncation of
+\(e^zR_{N-1}(-z^d)\), after normalization, has integral coefficients
+and a long gap in its Taylor series. A Wronskian gives a nonzero
+resultant with a factor lying above the roots of a putative common
+factor. Primes dividing the factor's constant term give a lower
+bound for the resultant by divisibility. The complex estimate,
+averaged over rotated roots, gives an incompatible upper bound.
+The remaining orders are finite. There the prime sieve and Newton
+polygons leave only a short list of full polynomial gcd computations.
+
+For an example of the prime sieve, take \(a=8\), \(d=3\), \(N=25\)
+and \(p=101\). In both factorial intervals \((8m,11m]\),
+\(m=24,25\), the only multiple of \(p\) is \(202\). All binomial
+coefficients are \(p\)-adic units. The coefficient valuations of
+\(P_{24}\) jump from zero to one at \(k=4\), and those of \(P_{25}\)
+at \(k=1\). The lower Newton polygons give positive reciprocal
+root valuations \(1/21\) and \(1/25\), respectively. Every root of
+\(R_{25}\) has positive valuation, since \(202\) appears in the
+first product of three factorial arguments. Thus the two orders
+have no common root. In general, primes in the first few factorial
+arguments constrain the constant term of a common factor. Newton
+polygons then restrict the factor degrees allowed at those primes.
+
+\input{reductions}
+\input{initial-terminals}
+\input{arithmetic}
+\input{pade}
+
+\section{Completion of the proof}
+
+The support and initial-order reductions leave the range of
+Lemma~\ref{lem:support-reduction}. Proposition~\ref{prop:finite}
+covers \(25\le N<3150\) there. Proposition~\ref{prop:middle-tail}
+covers \(3150\le N<e^{15}\), and
+Proposition~\ref{prop:large-tail} covers \(N\ge e^{15}\).
+Together with Proposition~\ref{prop:small-terminals}, these give
+rational coprimality in every case of \eqref{eq:moment} and hence
+Theorem~\ref{thm:main}.
+
+\paragraph{Electronic supplement.}
+The electronic supplement accompanying this article contains two parts.
+Its exact verification programs cover the initial and central orders,
+the finite boundary cases, and the bounded comparisons in the
+Pad\'e estimates. The submitted proof appendix
+\textit{Positive-exponent Boundary} gives the prime-power argument
+and the contour estimates used in Appendix~\ref{app:positive-boundary},
+with their exact constants and verification programs.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\appendix
+\input{reduction-proofs}
+\input{constant-support}
+\input{positive-boundary}
+\input{tail-finite}
+\input{tail-large}
+
+\input{references}
+\end{document}
+

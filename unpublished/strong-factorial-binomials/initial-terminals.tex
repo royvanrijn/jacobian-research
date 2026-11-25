@@ -1,0 +1,72 @@
+\subsection{Terminals through twenty-four}
+
+\begin{proposition}
+\label{prop:small-terminals}
+Theorem~\ref{thm:main} holds for \(2\le N\le24\).
+\end{proposition}
+\begin{proof}
+Lemma~\ref{lem:constant-support} covers \(a=0\). At \(N=2\), \(R_1\)
+has a real root and \(R_2\) is positive on \(\R\) by its gamma integral.
+Take \(a\ge1\) and \(3\le N\le24\). The weak annulus in
+Lemma~\ref{lem:gamma-annulus} gives \(a<d(N-2)\) if the two polynomials
+share a root.
+
+Write \(s=d^2/(a+d)\) and use the endpoint normalization
+of Lemma~\ref{lem:center-ratio}. If \(s\ge20\), the mixed
+coefficients at either order have sum less than \(1/2\).
+Indeed their upper bound in \eqref{eq:normalized-coefficients}
+is symmetric, and for \(k\le m/2\) the exponential term is
+at most \(e^{-5k}\). Thus the sum is bounded by
+\[
+ 2\bigl((1+e^{-5})^{24}-1\bigr)
+ <2\bigl(e^{6/35}-1\bigr)<\frac{12}{29}<\frac12.
+\]
+Here \(e^{-5}<1/140\), and \(e^x<1/(1-x)\) for \(0<x<1\).
+In the normalized variable the roots have moduli between
+\(2^{-1/m}\) and \(2^{1/m}\), by comparison of \(1+w^m\)
+with the mixed terms and by reversal. Since \(d>s\ge20\),
+\[
+ \frac d2\log\!\left(\frac{N}{N-1}\right)
+ \frac{N(N-1)}{2N-1}
+ \ge \frac{d(N-1)}{2(2N-1)}\ge 4>\log 2 .
+\]
+The center ratio in Lemma~\ref{lem:center-ratio} therefore
+separates the annuli. A common root requires \(s<20\).
+
+We next show that \(d<43\). If \(d\ge43\), set
+\(r=\lfloor d/43\rfloor\). Then \(43\le d/r<86\), and the interval
+\((aN/r,(aN+2d)/r]\) has length at least \(86\). Its upper endpoint
+is below \(86[N(N-2)+2]\le45580\).
+The bound \(s<20\) gives \(a>d^2/20-d\ge d^2/43\ge rd\), so the
+left endpoint exceeds \(dN\). The first record prime gap larger
+than \(86\) starts at \(360653\) \cite[Table~8]{oliveira-gaps}.
+It follows that the interval contains a prime \(p>dN\), and that
+\(rp\) belongs to the first \(2d\) factorial terms at order \(N\).
+
+Since \(a<d(N-2)\), we have \(p^2>(a+d)N\).
+Each factorial interval \((am,(a+d)m]\) contains at most one
+multiple \(u_m\) of \(p\), and all binomial coefficients are
+\(p\)-adic units. A positive valuation of a reciprocal root
+has the form \(1/w_m\), where
+\(w_m=1+\lfloor((a+d)m-u_m)/d\rfloor\).
+Equal positive valuations at both orders would imply
+\(u_N-u_{N-1}\in[a+1,a+2d-1]\subset(0,p)\), which is impossible.
+Thus all roots of a common factor would be \(p\)-adic units.
+But the first \(2d\) terms at order \(N\) contain \(rp\), so
+\(R_N\bmod p\) has at most one root away from zero, counted with
+multiplicity. A monic common divisor reduces with its degree
+unchanged, and would have nonzero constant term and even degree
+at least two. This contradiction proves \(d<43\).
+
+It remains to test the integer triples
+\[
+ 3\le N\le24,\qquad 1\le d\le42,\qquad
+ 1\le a<d(N-2),\qquad d^2<20(a+d).
+\]
+The supplementary verifier exhausts this set and finds
+\(217\,952\) triples. At each triple it forms the two monic
+reciprocals modulo \(1\,000\,000\,007\), a prime certified by
+trial division, and computes their gcd by Euclidean division.
+Every gcd is one. A monic integral common divisor would remain
+a nonconstant common divisor on reduction. This proves the proposition.
+\end{proof}

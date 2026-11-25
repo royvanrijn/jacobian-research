@@ -1,0 +1,1010 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "script_sha256": "b613aa4a77144bd0d2977d133b810a36ed9b49f18e63b76f4a72934552280bae",
+  "certificate_sha256": "fe4bc9c0a5479c33f4f96d4b5ae61e77de156d376acac32d435dc399d8f756cb",
+  "moments": {
+    "1": [],
+    "2": [
+      {
+        "powers": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "8/1575"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "4/315"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          2
+        ],
+        "coefficient": "4/45"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "4/315"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          1
+        ],
+        "coefficient": "-4/45"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "4/45"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": "8/1575"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-8/105"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "16/105"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "16/225"
+      }
+    ],
+    "3": [
+      {
+        "powers": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "1192/3378375"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "16/17325"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          2
+        ],
+        "coefficient": "-8/1575"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          3
+        ],
+        "coefficient": "16/945"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "16/17325"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          1
+        ],
+        "coefficient": "8/1575"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          2
+        ],
+        "coefficient": "-8/315"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "-8/1575"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          1
+        ],
+        "coefficient": "-8/315"
+      },
+      {
+        "powers": [
+          0,
+          3,
+          0
+        ],
+        "coefficient": "16/945"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": "296/1126125"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": "32/17325"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          2
+        ],
+        "coefficient": "-8/525"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "-32/3465"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          1
+        ],
+        "coefficient": "-32/525"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          0
+        ],
+        "coefficient": "32/525"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "-4832/1126125"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          1
+        ],
+        "coefficient": "-608/17325"
+      },
+      {
+        "powers": [
+          2,
+          1,
+          0
+        ],
+        "coefficient": "1216/17325"
+      },
+      {
+        "powers": [
+          3,
+          0,
+          0
+        ],
+        "coefficient": "128/4875"
+      }
+    ],
+    "4": [
+      {
+        "powers": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "20288/287161875"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "1024/3378375"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          2
+        ],
+        "coefficient": "752/375375"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          3
+        ],
+        "coefficient": "32/51975"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          4
+        ],
+        "coefficient": "16/945"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1024/3378375"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          1
+        ],
+        "coefficient": "-32/34125"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          2
+        ],
+        "coefficient": "64/17325"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          3
+        ],
+        "coefficient": "-32/945"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "752/375375"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          1
+        ],
+        "coefficient": "64/17325"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          2
+        ],
+        "coefficient": "16/315"
+      },
+      {
+        "powers": [
+          0,
+          3,
+          0
+        ],
+        "coefficient": "32/51975"
+      },
+      {
+        "powers": [
+          0,
+          3,
+          1
+        ],
+        "coefficient": "-32/945"
+      },
+      {
+        "powers": [
+          0,
+          4,
+          0
+        ],
+        "coefficient": "16/945"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": "2816/26105625"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-64/51975"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          2
+        ],
+        "coefficient": "128/307125"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          3
+        ],
+        "coefficient": "-64/2475"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "10432/3378375"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          1
+        ],
+        "coefficient": "31232/3378375"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          2
+        ],
+        "coefficient": "1472/17325"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          0
+        ],
+        "coefficient": "-7232/3378375"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          1
+        ],
+        "coefficient": "-192/1925"
+      },
+      {
+        "powers": [
+          1,
+          3,
+          0
+        ],
+        "coefficient": "128/1925"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "393152/287161875"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          1
+        ],
+        "coefficient": "256/43875"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          2
+        ],
+        "coefficient": "130112/3378375"
+      },
+      {
+        "powers": [
+          2,
+          1,
+          0
+        ],
+        "coefficient": "-17536/3378375"
+      },
+      {
+        "powers": [
+          2,
+          1,
+          1
+        ],
+        "coefficient": "-344192/3378375"
+      },
+      {
+        "powers": [
+          2,
+          2,
+          0
+        ],
+        "coefficient": "344192/3378375"
+      },
+      {
+        "powers": [
+          3,
+          0,
+          0
+        ],
+        "coefficient": "-250112/95720625"
+      },
+      {
+        "powers": [
+          3,
+          0,
+          1
+        ],
+        "coefficient": "-40192/1126125"
+      },
+      {
+        "powers": [
+          3,
+          1,
+          0
+        ],
+        "coefficient": "80384/1126125"
+      },
+      {
+        "powers": [
+          4,
+          0,
+          0
+        ],
+        "coefficient": "7936/414375"
+      }
+    ],
+    "5": [
+      {
+        "powers": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "2296192/245523403125"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "33856/755456625"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          2
+        ],
+        "coefficient": "40384/516891375"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          3
+        ],
+        "coefficient": "3776/6081075"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          4
+        ],
+        "coefficient": "-2624/1216215"
+      },
+      {
+        "powers": [
+          0,
+          0,
+          5
+        ],
+        "coefficient": "128/18711"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "33856/755456625"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          1
+        ],
+        "coefficient": "46016/516891375"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          2
+        ],
+        "coefficient": "-128/184275"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          3
+        ],
+        "coefficient": "6208/1216215"
+      },
+      {
+        "powers": [
+          0,
+          1,
+          4
+        ],
+        "coefficient": "-320/18711"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "40384/516891375"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          1
+        ],
+        "coefficient": "-128/184275"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          2
+        ],
+        "coefficient": "-3904/405405"
+      },
+      {
+        "powers": [
+          0,
+          2,
+          3
+        ],
+        "coefficient": "128/18711"
+      },
+      {
+        "powers": [
+          0,
+          3,
+          0
+        ],
+        "coefficient": "3776/6081075"
+      },
+      {
+        "powers": [
+          0,
+          3,
+          1
+        ],
+        "coefficient": "6208/1216215"
+      },
+      {
+        "powers": [
+          0,
+          3,
+          2
+        ],
+        "coefficient": "128/18711"
+      },
+      {
+        "powers": [
+          0,
+          4,
+          0
+        ],
+        "coefficient": "-2624/1216215"
+      },
+      {
+        "powers": [
+          0,
+          4,
+          1
+        ],
+        "coefficient": "-320/18711"
+      },
+      {
+        "powers": [
+          0,
+          5,
+          0
+        ],
+        "coefficient": "128/18711"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": "701696/49104680625"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-16448/363738375"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          2
+        ],
+        "coefficient": "-16064/24613875"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          3
+        ],
+        "coefficient": "17216/6081075"
+      },
+      {
+        "powers": [
+          1,
+          0,
+          4
+        ],
+        "coefficient": "-4544/405405"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "68032/1091215125"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          1
+        ],
+        "coefficient": "-294592/172297125"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          2
+        ],
+        "coefficient": "-31168/2027025"
+      },
+      {
+        "powers": [
+          1,
+          1,
+          3
+        ],
+        "coefficient": "64/57915"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          0
+        ],
+        "coefficient": "30272/15663375"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          1
+        ],
+        "coefficient": "31232/2027025"
+      },
+      {
+        "powers": [
+          1,
+          2,
+          2
+        ],
+        "coefficient": "5056/135135"
+      },
+      {
+        "powers": [
+          1,
+          3,
+          0
+        ],
+        "coefficient": "-54784/6081075"
+      },
+      {
+        "powers": [
+          1,
+          3,
+          1
+        ],
+        "coefficient": "-31232/405405"
+      },
+      {
+        "powers": [
+          1,
+          4,
+          0
+        ],
+        "coefficient": "15616/405405"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "908416/49104680625"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          1
+        ],
+        "coefficient": "-423296/467663625"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          2
+        ],
+        "coefficient": "-1135744/172297125"
+      },
+      {
+        "powers": [
+          2,
+          0,
+          3
+        ],
+        "coefficient": "-2176/552825"
+      },
+      {
+        "powers": [
+          2,
+          1,
+          0
+        ],
+        "coefficient": "1350656/654729075"
+      },
+      {
+        "powers": [
+          2,
+          1,
+          1
+        ],
+        "coefficient": "2831104/172297125"
+      },
+      {
+        "powers": [
+          2,
+          1,
+          2
+        ],
+        "coefficient": "7936/155925"
+      },
+      {
+        "powers": [
+          2,
+          2,
+          0
+        ],
+        "coefficient": "-2543104/172297125"
+      },
+      {
+        "powers": [
+          2,
+          2,
+          1
+        ],
+        "coefficient": "-37376/289575"
+      },
+      {
+        "powers": [
+          2,
+          3,
+          0
+        ],
+        "coefficient": "74752/868725"
+      },
+      {
+        "powers": [
+          3,
+          0,
+          0
+        ],
+        "coefficient": "3995392/5456075625"
+      },
+      {
+        "powers": [
+          3,
+          0,
+          1
+        ],
+        "coefficient": "1309696/218243025"
+      },
+      {
+        "powers": [
+          3,
+          0,
+          2
+        ],
+        "coefficient": "91904/4417875"
+      },
+      {
+        "powers": [
+          3,
+          1,
+          0
+        ],
+        "coefficient": "-12064768/1091215125"
+      },
+      {
+        "powers": [
+          3,
+          1,
+          1
+        ],
+        "coefficient": "-5507072/57432375"
+      },
+      {
+        "powers": [
+          3,
+          2,
+          0
+        ],
+        "coefficient": "5507072/57432375"
+      },
+      {
+        "powers": [
+          4,
+          0,
+          0
+        ],
+        "coefficient": "-1911808/606230625"
+      },
+      {
+        "powers": [
+          4,
+          0,
+          1
+        ],
+        "coefficient": "-9724928/363738375"
+      },
+      {
+        "powers": [
+          4,
+          1,
+          0
+        ],
+        "coefficient": "19449856/363738375"
+      },
+      {
+        "powers": [
+          5,
+          0,
+          0
+        ],
+        "coefficient": "520192/43509375"
+      }
+    ]
+  },
+  "generator_scalings": [
+    "1575",
+    "3378375",
+    "861485625",
+    "245523403125"
+  ],
+  "multiplier_degrees": [
+    9,
+    8,
+    7,
+    6
+  ],
+  "multiplier_terms": [
+    168,
+    119,
+    80,
+    50
+  ],
+  "nonzero_rhs": "6196866567549687949012124370451817080905427142656207973355750039020398975641605796780820335752653051214341926977473099584229017335363996518680866209318058608625296873446499943628547428944486256197640419108062802433729249794845494917696171512117542591671608784621773141644976379876471413394758491112630454339260972948479812988249167401562207531979589202161591483021937250482463391395578453120581940319927418638767507484240129406658842729759162489896960000000",
+  "raw_mixed_moment_controls": 66,
+  "corrupted_multiplier_rejected": true,
+  "scope": "Exact necessary equations at orders1--5 for this specific normalized five-term chart, checked against literal native Hopf expansion. The nonzero integer identity excludes all simultaneous solutions over every characteristic-zero field. No global quintic classification or finite-prefix extrapolation. The all-orders Dirichlet law is separately written.",
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}
