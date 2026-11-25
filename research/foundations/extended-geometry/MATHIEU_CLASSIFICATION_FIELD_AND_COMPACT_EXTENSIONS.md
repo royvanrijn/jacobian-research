@@ -1883,3 +1883,357 @@ $$
 The left side is uniformly bounded by the exterior identity and the positive distance from zero to the boundary. The ball bound dominates $\nu$ on the band by a constant times surface area, by covering with balls in the definition of surface measure. That area projects to height with bounded density $2\pi\sqrt{W+(W')^2/4}$. Endpoint circles or points have area zero. This proves the strip bound at the remaining heights.
 
 Apply the critical-point argument in the preceding section to $A$. The strip bound precludes every degenerate critical point and every saddle. Hence $A$ has a unique minimum and maximum, which are fixed by $\Gamma$. This contradicts the hypothesis. In particular the obstruction includes constant $A^2-4BC$ and every polynomial relation $BC=f(A)$ on the octahedral and icosahedral angular models. For rational dependence the result transfers to real closed fields by embedding a finitely generated field of definition in $\mathbb R$. Nonconstancy, the identities, and the standard algebraic polyhedral model are preserved. The same transfer applies to (H7) because the angular trace commutes with base change. No sign or convexity hypothesis on the given coefficients is needed.
+
+
+## Denominators in the two conditional coordinates
+
+The octahedral Dirichlet chart and the icosahedral conditional differential give different obstructions to clearing denominators. The octahedral chart permits a change of the uniform coordinate. If the fixed-interval scalar moments vanish on every conditional fibre, the change can only produce a safe regular phase. The icosahedral conditional density does not admit transport between independent heights by finite algebraic correspondences, even modulo differentials with zero residues and logarithmic differentials.
+
+### Conditional scalar purity on the full octahedral angular ring
+
+**Lemma (Local rational moments).**
+
+Let \(k\) be of characteristic zero and let \(R(y)\in k(y)\). Expand at \(y=\infty\). If the constant coefficients of \(R(y)^m\) vanish for all sufficiently large positive \(m\), then either \(R\) is regular and zero at infinity, or \(R\in y\,k[y]\). Each alternative gives zero constant coefficients at all positive orders.
+
+For the proof, if \(R\) is regular at infinity the moments are its values there to the \(m\)-th power. Otherwise let \(d>0\) be its pole order there and set \(x=R(y)\), with local parameter \(\theta=x^{-1/d}\) after extending scalars to an algebraic closure. For \(z=1/y\), write \(z=a\theta\exp(g(\theta))\) with \(a\ne0\) and \(g\in\theta\overline k[[\theta]]\). Laurent constant term in \(y\) is the residue against \(dz/z\) at \(z=0\). In the parameter \(\theta\) this gives \(c_m=d m[\theta^{dm}]g\) for the \(m\)-th moment. The product of the \(d\) inverse branches \(y_j(x)\) going to infinity is therefore
+\[
+                 \prod_{j=1}^d y_j(x)
+                  =b\,x\exp\!\left(-\sum_{m\ge1}\frac{c_m}{m x^m}\right)
+                  \qquad(b\ne0).
+\]
+For eventual vanishing the sum in the exponential is a polynomial in \(1/x\) with zero constant. The product is algebraic over \(\overline k(x)\). Its logarithmic derivative can have only simple poles on the smooth curve of its function field. A nonconstant polynomial in \(1/x\) has differential with pole order at least two at every point over \(x=0\). Thus all \(c_m\) vanish and the product is \(b x\).
+
+In the normal closure of \(R(y)-x=0\), fix a valuation over \(x=\infty\) with value \(-1\) on \(x\). There are precisely \(d\) roots of valuation \(-1/d\), coming from \(y=\infty\), and every other root has nonnegative valuation. Each conjugate product of these \(d\) roots still equals \(b x\). Its valuation is \(-1\) only for the same subset of roots. Transitivity on the roots of the rational map forces this subset to be all the roots. Hence infinity is the only pole of \(R\), and for a polynomial its constant moments are \(R(0)^m\). This proves the lemma, including descent to \(k\). For context, the inverse-branch expression is the local logarithmic case of the contour formulas studied in [Pakovich, Sections 2 and 6](https://arxiv.org/abs/0910.2105). The valuation argument above treats arbitrary finite poles of \(R\) in this local setting.
+
+**Theorem (Octahedral conditional scalar purity).**
+
+Use the octahedral chart (H14), and allow the full rotation-invariant angular ring \(K[p,q,J]\) from the conditional conic section above. Let \(P\in K[p,q,J][t,t^{-1}]\). Change variables by \(W=T^2 S\) with \(T=1+t\), and keep the independent arcsine coordinate \(B\) and its signed square root fixed. Write \(y=T/t\). If the fixed-interval conditional scalar constant coefficients at \(y=\infty\) of \(P^m\) vanish identically in the remaining coordinates for all sufficiently large \(m\), then the original Laurent support lies entirely in \(t^{>0}\) or entirely in \(t^{\le0}\). In the second branch its coefficient at \(t^0\) is reflection invariant. Over a formally real field every pure regular phase with this conditional property is safe, including against regular markers outside the angular ring.
+
+Here the fixed-interval operator is the scalar residue after the substitution in the uniform integral, before the integration in \(W,B\) and before including the moving endpoint intervals. It is ordinary constant term at \(y=\infty\), since the uniform measure contributes \(1/T\) and
+\[
+                         \frac{dt}{tT}=-\frac{dy}{y}.
+\]
+The statement is an exclusion for pointwise conditional cancellation. Vanishing of the integrated pure moments alone does not imply that cancellation.
+
+To prove the theorem, in (H14) put \(\rho=\sqrt S\) and take \(H\) with \(H^2=B(1-B)/5832\). The orientation coordinate satisfies
+\[
+ J=\frac{H}{\rho^3}(S-2)^2(2S-1)(2BS-B+1)(2BS^2-5BS+2B+S).
+\]
+Squaring this identity verifies it by substituting (H14) into
+\(J^2=q(p^2-4p^3-4q-27q^2+18pq)\). The sign of \(H\) represents the orientation. With \(w=\sqrt W\), substitute \(\rho=w/T\), with \(T=y/(y-1)\) and \(t=1/(y-1)\). This embeds the angular Laurent function field into \(K(w,B,H)(y)\). Specializing \(T=1\) in the angular coordinates still gives an injection of the angular function field. The lemma shows that the transformed phase either vanishes at \(y=\infty\) or is a polynomial in \(y\). In the first branch the Laurent expansion in \(t\) starts at strictly positive exponent, by the injection at \(T=1\).
+
+In the polynomial branch the transformed phase has no pole at \(y=1\), where \(T\) has a simple pole. Write the original phase
+\[
+                 P=t^{-b}\sum_{i,j}p^i q^j(a_{ij}(T)+J b_{ij}(T)),
+                       \qquad a_{ij},b_{ij}\in K[T],
+\]
+using one common \(b\ge0\). At \(y=1\), with \(w,B,H\) generic, \(p\) tends to \((1-B)/3\), \(q\) has leading term \(-2B(1-B)T^2/(27w^2)\), and \(J\) has a pole of order three with nonzero leading coefficient. The even and odd parts in \(H\) cannot cancel a pole of one another. Within the even part a highest-order combination has distinct powers \(w^{-2j}\) for distinct \(j\). For each fixed \(j\), its coefficients after removing the common \(B^j(1-B)^j\) are distinct powers of \(1-B\) and are linearly independent. Divide the odd part by \(J\) to apply the same fact to its remaining factor. Absence of poles therefore gives
+\[
+                  \deg a_{ij}\le b-2j,\qquad
+                  \deg b_{ij}\le b-2j-3 .
+\]
+Thus all original scalar exponents are nonpositive and the center comes only from the even part. If \(P\) is pure, its second moment is the normalized compact trace of the square of that center. The trace is strictly positive on nonzero squares over \(\mathbb R\). Over a formally real field the same conclusion holds in each finite set of angular monomials by positivity of the rational Gram matrices, or by specialization to a real model preserving a nonzero coefficient. So only negative exponents remain. In both branches, the strict Laurent sign forces eventual vanishing against every fixed regular multiplier, since each has bounded Laurent exponents.
+
+This argument allows arbitrary rational dependence in the transformed scalar variable before imposing conditional vanishing. It uses the behavior at \(y=1\), without any assumption on the orders of poles in the angular parameters at the endpoints.
+
+### No finite-correspondence transport for the icosahedral differential
+
+**Theorem (Icosahedral finite-correspondence obstruction).**
+
+Let \(v,w\) be algebraically independent over a characteristic-zero field and work over an algebraic closure of the joint parameter field. Use the smooth conditional quartics \(C_v,C_w\) from (H5) and their differentials \(\omega_v,\omega_w\) from the icosahedral conditional differential section. If \(f:D\to C_v\) and \(g:D\to C_w\) are finite morphisms from a smooth projective integral curve, then the pullbacks of \(\omega_v,\omega_w\) are linearly independent modulo the space spanned by differentials with zero residues and logarithmic differentials of rational functions on \(D\). In particular a generic change \(w=(1+t)^2v\) cannot transport these differentials by finite covers, even up to a nonzero scalar and those corrections.
+
+For the proof, the quartics have nonconstant \(j\)-invariant. For a quartic \(a p^4+b p^3+c p^2+d p+e\), put
+\[
+ I=12ae-3bd+c^2,\qquad
+ J_4=72ace+9bcd-27ad^2-27b^2e-2c^3.
+\]
+The invariant is \(j=6912 I^3/(4I^3-J_4^2)\), from the binary quartic Jacobian formula. Substituting the five coefficients of (H5) at \(v=1/2,1/3\) gives respectively \(32,27\) modulo \(101\), with denominators nonzero. [Fisher, Section 2](https://www.dpmms.cam.ac.uk/~taf1000/papers/minbqtc.pdf) Thus the two elliptic curves are not isogenous over the algebraic closure of the joint parameter field. Indeed a quotient of \(C_v\) by any finite subgroup is defined over an algebraic closure of the field of \(v\): its kernel lies in the torsion defined over that closure. The invariant \(j(w)\) is transcendental over the field of \(v\).
+
+Take residues of a putative relation. If \(\Delta_v\) denotes the divisor of residues of \(\omega_v\), and similarly for \(w\), this gives a relation between \(f^*\Delta_v\), \(g^*\Delta_w\), and a linear combination of principal divisors of logarithmic terms. Pullback of residues includes the ramification index, exactly as for divisors. Pass to divisor classes tensored with the coefficient field over \(\mathbb Z\), and apply \(f_*\) to the resulting relation. It acts on the first term by \(\deg f\). On the second the homomorphism \(f_*g^*:\operatorname{Pic}^0(C_w)\to\operatorname{Pic}^0(C_v)\) is zero, since a nonzero homomorphism of elliptic curves is an isogeny. By the infinite-order computation for the two infinity points above, the class of \(\Delta_v\) survives tensoring in characteristic zero. The coefficient of \(f^*\omega_v\) must vanish. Applying \(g_*\) gives the other coefficient zero. The same argument allows extra corrections with zero residues by definition, including exact differentials. This leaves identities that couple the height and the conditional periods without transporting the conditional differential as a whole.
+
+At a single generic height the only fibre automorphisms preserving the differential up to a scalar are the identity and the involution \(y\mapsto-y\). The residues force them to fix or exchange the two infinity points. An automorphism fixing both is an elliptic-curve automorphism fixing the origin and a point of infinite order, so it is the identity. Composing with the displayed involution handles the exchange.
+
+
+## Compact homogeneous twists with a split commuting group
+
+Let \(K\) be real closed and \(C\) a connected reductive group of compact type. For an affine geometrically homogeneous \(C\)-space \(X\), let \(A_X\) be its algebraic group of \(C\)-equivariant automorphisms.
+
+**Theorem (Compact twists with positive commuting split rank).**
+
+If \(A_X^\circ\) has positive \(K\)-split rank, the normalized trace on \(K[X]\) admits a regular Mathieu–Zhao counterexample. If the previously handled mechanisms of an active split rank-one action or an active compact geometric factor of rank at least two are absent, the construction below gives a fixed regular witness with nonzero marked moments at every positive order. In particular it applies when the split torus comes from a coupling between several compact rank-one factors.
+
+Use the compact reference quotient \(C/L\) and the involution representative of its twist from the section on the commuting normalizer above. Thus \(L\) is defined over \(K\), \(N=N_C(L)\), and a representative \(n\in N(K)\) has \(n^2\in L\). Over \(K(i)\) the descent on the quotient is
+\[
+                    gL\longmapsto \sigma(g)n^{-1}L.
+\]
+The automorphism group \(A_X\) is the twist of \(A=N/L\) by conjugation by \(n\). The compact-type statements just used come from polar decomposition or [Adams–Taïbi, Theorem 1.1](https://otaibi.perso.math.cnrs.fr/galois.pdf), with the same finite algebraic transfer over real closed fields as in that section.
+
+If the derived group of \(A_X^\circ\) has positive split rank, the commuting-action criterion already gives the obstruction. Otherwise \(A_X^\circ\) has a nontrivial split central torus. Its action is faithful and commutes with \(C\), so their product still acts geometrically transitively. If an active compact almost simple factor of \(C\) has geometric rank at least two, the long-root theorem applies to that product. Divide out ineffective normal factors and pass to a central isogeny. This preserves equivariant automorphisms, because the acting group maps onto the original effective group. For the rest of the proof we can therefore take
+\[
+                        C=C_0\times\prod_{i=1}^r C_i,
+\]
+where \(C_0\) is a compact torus and every \(C_i\) is the compact simply connected group of type \(A_1\). Apply the compact-reference construction to this presentation.
+
+### The characters retained by the twist
+
+Let \(L_i\) be the geometric projection of \(L\) in \(C_i\). It is reductive. Denote by \(I\) the indices with \(L_i\) noncentral and contained in a torus \(D_i\), by \(J_0\) the indices with \(L_i=N_{C_i}(D_i)\), and by \(I_0\) the indices with \(L_i\) central. The torus \(D_i\) in the first two cases is uniquely determined by \(L_i\): use the connected torus for a positive-dimensional projection or the centralizer for a noncentral finite cyclic one. In particular it is defined over \(K\). The other projections are either the whole \(C_i\) or finite noncyclic groups. The latter have finite normalizer, since the centralizer is finite and the normalizer modulo the centralizer acts faithfully on a finite group.
+
+Put \(B_0=[L^\circ,L^\circ]\). Its projection to every full \(L_i=C_i\) is surjective, and its projection elsewhere is trivial. On the Lie algebra of \(B_0\), conjugation by the connected group \(N^\circ\) acts by inner automorphisms. Its centralizer has no Lie algebra projection on any full index, since it centralizes the full \(C_i\) there. The factors \(C_i\) for \(i\in I_0\) centralize \(L\) and belong to \(N^\circ\). Together with the finite-normalizer observation this gives
+\[
+                N^\circ=B_0\cdot\Big(\prod_{i\in I_0}C_i\Big)\cdot M,
+       \qquad M=\left(N\cap\Big(C_0\times\prod_{i\in I\cup J_0}D_i\Big)\right)^\circ .
+\]
+To see the equality, use the Lie algebra sum of \(\operatorname{Lie}(B_0)\) and its centralizer in \(\operatorname{Lie}(N)\), then remove the direct factors for \(I_0\). The connected torus directions left are precisely \(\operatorname{Lie}(M)\). These connected subgroups commute and their product is a closed connected subgroup with the full Lie algebra. In particular \(M\) surjects onto the abelianization \(Z=A^\circ/[A^\circ,A^\circ]\).
+
+The elements of \(L\) act on the rational cocharacters of \(M\) by coordinate signs. They act trivially on \(Z\). Average over this finite sign group. The resulting projection deletes the directions indexed by \(J_0\), because for each such index some element of \(L\) acts by its Weyl involution. The directions of \(C_0\) and of \(D_i\) for \(i\in I\) are fixed. These tori are already contained in \(M\), since they centralize \(L\). Consequently the map on rational cocharacters from \(M\) to \(Z\) factors through the projection to \(C_0\times\prod_{i\in I}D_i\).
+
+The reference \(Z\) is a compact torus, with conjugation \(-1\) on its character lattice. Its twist has a split direction, so there is a nonzero character of \(Z\) on which \(\operatorname{Int}(n)\) acts by \(-1\). Pull it back to \(M\). By the factorization just proved, its pullback depends only on \(D_i\) for \(i\in I\) where \(n_i\) acts by the Weyl involution. Call these the flipped indices. Indeed \(n\) acts trivially on \(C_0\) and by a coordinate sign on each \(D_i\), so the anti-invariant character has no other support. Each flipped \(D_i\) is a direct factor of \(C_0\times\prod_{i\in I}D_i\), so its character coordinate \(\lambda_i\) is integral. The resulting character \(\lambda\) of the product of flipped tori is trivial on the projection of \(L^\circ\): the connected center of \(L^\circ\) lies in \(M\), and \(B_0\) has no projection on a flipped index. After a positive integral multiple it is trivial on the entire projection of \(L\), since the group of components is finite. At least one \(\lambda_i\) is nonzero.
+
+Right translations by the product of flipped \(D_i\) commute with \(L\). On the twist, conjugation acts by the compact involution followed by the Weyl involution, so the corresponding right torus is split. Any kernel of this action is immaterial for the nonzero weight \(2\lambda\) constructed next.
+
+### The regular all-order witness
+
+On each flipped factor choose the usual compact \(\mathrm{SL}_2\) model over \(K(i)\) with \(D_i\) diagonal and compact conjugation \(g\mapsto(\bar g^{\mathsf T})^{-1}\). Write \(n_i=\operatorname{diag}(\eta_i,\eta_i^{-1})\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)\) with \(\eta_i\bar\eta_i=1\). Set
+\[
+ g_i^{-1}\operatorname{diag}(i,-i)g_i
+      =\begin{pmatrix}a_i&u_i\\w_i&-a_i\end{pmatrix},
+ \qquad A_i=\eta_i^{-1}u_i,\quad B_i=-\eta_i w_i,\quad v_i=-a_i^2 .
+\]
+Under \(g_i\mapsto\sigma(g_i)n_i^{-1}\) the matrix goes to its entrywise conjugate conjugated by \(\operatorname{diag}(\eta_i,\eta_i^{-1})\). Thus \(A_i,B_i,v_i\) are compatible with reality for this semilinear map. The identity from the determinant is \(A_i B_i=1-v_i\). For right translation by \(\operatorname{diag}(s,s^{-1})\), the weights of \(A_i,B_i\) are \(-2,2\) respectively.
+
+With \(\lambda_i^+=\max(\lambda_i,0)\) and \(\lambda_i^-=\max(-\lambda_i,0)\), put
+\[
+ U=\prod_i B_i^{\lambda_i^+}A_i^{\lambda_i^-},
+ \qquad V=\prod_i A_i^{\lambda_i^+}B_i^{\lambda_i^-}.
+\]
+Each product descends through \(L\) by the character condition, and through the twist by the reality just checked. The \(v_i\) descend as weight-zero functions. The products are nonzero regular functions of weights \(2\lambda,-2\lambda\). Choose an index \(j\) with \(k=|\lambda_j|\ge1\) and put
+\[
+ D=\prod_{i\ne j}(1-v_i)^{|\lambda_i|},\qquad
+ P=V+D\left.
+       \frac{(1+t)(1-(1+t)^2v_j)^k-(1-v_j)^k}{t}
+             \right|_{t=U},\qquad Q=U .
+\]
+The displayed divided difference is polynomial. The relation \(UV=D(1-v_j)^k\) gives the expression
+\[
+                   P=D\,U^{-1}(1+U)(1-(1+U)^2v_j)^k
+\]
+in the localization. The normalized trace is invariant under the commuting torus by uniqueness. Weight zero selects the scalar Laurent constant term in \(U\), all the \(v_i\) having weight zero.
+
+To calculate the coefficient traces, use the compact reference group over the complex numbers and pull back along its orbit map. On each factor, the diagonal coordinate of the conjugated \(\operatorname{diag}(i,-i)\) is \(i\) times a uniform variable on \([-1,1]\), by the ternary angular law. The \(v_i\) are squares of independent such variables by product Haar measure. The resulting moment formulas have rational coefficients and hold over \(K\) by base change from a finitely generated model. Integrate first in \(\sqrt{v_j}\) after writing \(t=U\). The factor in the \(m\)-th pure moment is
+\[
+ t^{-m}(1+t)^{m-1}
+       \int_0^{1+t}(1-s^2)^{km}\,ds.
+\]
+Replacing the upper endpoint by one changes the integral by a multiple of \(t^{km+1}\). The factor \((1+t)^{m-1}\) has no term of order \(m\) and its coefficient at order \(m-1\) is one. The other factors contribute the independent moments of \(D^m\). Thus for every \(m\ge1\),
+\[
+ \Lambda_X(P^m)=0,\qquad
+ \Lambda_X(QP^m)=
+             \prod_{i:\lambda_i\ne0}
+             \frac{4^{|\lambda_i|m}((|\lambda_i|m)!)^2}
+                  {(2|\lambda_i|m+1)!}.
+\]
+This establishes the fixed witness over the ground field.
+
+For example, take \(C=\mathrm{SU}_2^2\), the diagonal maximal torus \(L\) embedded in its two factors, and the twist represented by simultaneous Weyl elements in both factors. Their square lies in \(L\). The right torus quotient has split rank one after twisting and uses the character \(\lambda=(1,-1)\). The two individual homogeneous projections have torus stabilizers, with finite commuting automorphism groups. The split direction and the regular witness come from the coupling. In this example the marked moment is the square of \(4^m(m!)^2/(2m+1)!\).
+
+The theorem leaves compact twists whose commuting identity component is compact and whose cocycle is nontrivial. The norm-minus-one quaternion torsor is an instance. Its central involution induces the identity automorphism on the commuting group, so a split direction does not arise there.
+
+
+### Reduction of the mixed real-closed case without rational points
+
+**Theorem (Mixed reduction without rational points).**
+
+Let \(K\) be real closed, \(C\) connected reductive of compact type, and \(T\) a split torus. Let \(X\) be affine and geometrically homogeneous under \(T\times C\). Assume \(T\) and \([C,C]\) both act nontrivially. If \(C\) acts geometrically transitively, there is a regular witness. Otherwise \(X\) has a regular witness whenever both exceptional compact products \((\mathrm{SU}_2/2O)\times\mathbb G_m\) and \((\mathrm{SU}_2/2I)\times\mathbb G_m\) do. The second assertion reduces each such \(X\) either to the adjoint angular calculation, the unoriented axis calculation, or a single one of those two products. No \(K\)-point of \(X\) is needed.
+
+Indeed, after choosing a geometric point with stabilizer \(H\), the two invariant quotients are
+\[
+        Y=X/\!/C,\qquad Z=X/\!/T,\qquad
+        Y_{\overline K}=T_{\overline K}/\operatorname{pr}_T H,\quad
+        Z_{\overline K}=C_{\overline K}/\operatorname{pr}_C H.
+\]
+The projected groups are reductive because they are images of the geometric reductive stabilizer. The quotients are affine homogeneous by Matsushima's criterion. These geometric quotient maps descend by invariant projection and base change. Their product \(X\to Y\times Z\) is geometrically surjective, since the two projection coset coordinates can be chosen independently. Its pullback preserves normalized traces. The action of \(D=[C,C]\) is nontrivial on \(Z\). For if \(D\subseteq\operatorname{pr}_C H\) geometrically, it is contained in the derived group of \((\operatorname{pr}_C H)^\circ\). The latter is the image of \([H^\circ,H^\circ]\), which lies in \(\{1\}\times C\). Then \(D\subset H\), and normality contradicts activity on \(X\).
+
+When \(Y\) is a point, \(C\) acts geometrically transitively on \(X\) and the nontrivial image of \(T\) gives a split torus of \(C\)-equivariant automorphisms. The preceding theorem applies. Otherwise \(Y\) is a torsor of positive dimension under a quotient of the split torus \(T\), so it has a \(K\)-point by Hilbert 90. A nontrivial character, after choosing that point as origin, gives an equivariant map to \(\mathbb G_m\) preserving normalized traces. It remains to consider \(Z\times\mathbb G_m\).
+
+Choose an active compact rank-one subgroup \(S\) of \(C\). Its general geometric stabilizers on \(Z\) lie in a single class of proper reductive subgroups by the principal-orbit argument. For a central stabilizer, restriction to a closed geometric orbit supplies an adjoint covariant, with no rational point needed. Use the angular identity with the external split variable. Over the complex numbers the compatible compact orbit provides a real compact covariant with nonzero radius, and specialization of the radial moment recurrence gives nonvanishing at infinitely many orders over \(K\).
+
+For a noncentral stabilizer, attach the torus normalizer, \(2O\), or \(2I\), as in the no-point proof. Each attached group is conjugate geometrically to a \(K\)-defined compact model of its type. For the torus normalizer take one standard compact maximal torus. For the two finite groups take the standard binary rotation groups in the compact rank-one group. Their embeddings are defined over a real algebraic subfield and all embeddings of a given type are geometrically conjugate. The targets are self-normalizing, so the same Galois argument gives the rational map from \(Z\) to the corresponding \(S/M_0\). For the torus normalizer use the regular squared axis function on \(S/M_0\) and the angular identity with the external variable. For either exceptional target use its regular phase and marker if they exist. Pull back the finitely many coefficients in the split variable. A common invariant denominator on \(Z\) clears their poles. Since this denominator is independent of the split variable, the projector in \(S\) and the constant term in the split variable give the target moments times the denominator powers. The compatible compact orbit gives denominators with nonzero powers over the complex numbers. The recurrence and arithmetic specialization applied to the full marked product then preserve infinitely many nonzero ground-field moments. This completes the reduction.
+
+For a general connected reductive acting group over a real closed field, the active split rank-one theorem handles every active noncompact semisimple factor. After dividing out inactive factors a central isogeny of the residual group has the form \(T\times C\) above. If the derived action is trivial the trace is Mathieu–Zhao by scalar extension and the Laurent theorem. If the split central action is trivial the case is a compact homogeneous form. Forms with a point have strict square positivity, and those with a noncompact commuting identity component have an obstruction by the preceding theorem. Thus to settle the connected real-closed classification it suffices to settle the two compact exceptional products and the compact homogeneous twists with no rational point and compact commuting identity component. Both reductions concern the trace on regular functions.
+
+
+## Joint moments from changing the arrangement weights
+
+Fix a finite set of real hyperplanes through the origin in \(\mathbb R^3\) with unit normals \(\alpha_i\), and put \(\ell_i(x)=\alpha_i\cdot x\). Take positive real weights \(\tau_i\) of sum one and a real direction \(\delta_i\) of sum zero. On the unit sphere, away from the hyperplanes, define
+\[
+ V=\sum_i\tau_i\frac{\alpha_i}{\ell_i},\qquad
+ D=\sum_i\delta_i\frac{\alpha_i}{\ell_i},\qquad
+ U=|V|^{-2},\qquad A=U V\cdot D,\qquad B=U|D|^2 .
+\]
+For an invariant arrangement and orbit-constant weights, \(U,A,B\) are invariant. A line of weights that gives positive weights to every hyperplane at the base point suffices, even if the separate endpoint arrangements have different hyperplanes.
+
+**Theorem (Joint moments from the weight direction).**
+
+For sufficiently small real \(z\), the following exact identities hold under normalized area, where \(m>0\) may be real:
+\[
+ \mathbb E\!\left[U^m(1+2zA+z^2B)^{-m}\right]=\frac{1}{2m+1},
+ \qquad
+ \mathbb E\log(1+2zA+z^2B)=0 .
+\]
+In particular, for each integer \(n\ge1\),
+\[
+ \sum_{j=0}^{\lfloor n/2\rfloor}
+ \frac{(-1)^{n-j}(m)_{n-j}}{j!(n-2j)!}
+                  \mathbb E\!\left[U^m(2A)^{n-2j}B^j\right]=0 .
+\]
+For almost every \(v\in(0,1)\), the first two conditional consequences are
+\[
+ \mathbb E[A\mid U=v]=0,\qquad
+ \mathbb E[A^2\mid U=v]
+       =\frac{\sqrt v}{2}\int_v^1
+                   \frac{\mathbb E[B\mid U=u]}{u^{3/2}}\,du .
+\]
+
+For uniform bounds permitting the derivatives, choose one unit interior vector in each chamber of the hyperplane arrangement. In its chamber, all the signed normals \(\operatorname{sgn}(\ell_i)\alpha_i\) have a positive dot product with that vector. The minimum of these dot products over the finite chamber list is some \(c>0\). Thus \(|V|\ge c\sum_i\tau_i/|\ell_i|\). The triangle inequality bounds \(|D|/|V|\) by \(c^{-1}\max_i|\delta_i|/\tau_i\). This bounds \(A,B\) and gives a disk of convergence for the powers and logarithm with uniform bounds on every smaller disk.
+
+The inverse squared norm of \(V+zD\) is \(U/(1+2zA+z^2B)\). For small real \(z\) its height law is (H1) by [Pillai–Meng, Theorem 2.2](https://arxiv.org/pdf/1505.01957), applied to the positive weights \(\tau_i+z\delta_i\). The law of \(U\) has density \(1/(2\sqrt u)\) on \((0,1)\), giving the first identity. The logarithms of the two heights are integrable with identical expectations. Subtract them for the second identity. The coefficient formula follows by expanding the binomial series inside the integral, using the bounds just proved.
+
+The first coefficient identity and density of polynomials on \([0,1]\) give the conditional mean zero. Write \(\psi(v)=\mathbb E[A^2\mid U=v]\) and \(\phi(v)=\mathbb E[B\mid U=v]\). The second identity gives \(\mathbb E[U^m B]=2(m+1)\mathbb E[U^m A^2]\), including \(m=0\) by taking a limit through positive \(m\). The function \((\sqrt v/2)\int_v^1\phi(u)u^{-3/2}\,du\) is bounded. Fubini shows that its \(m\)-th moment against the height law is \(\mathbb E[U^m B]/(2(m+1))\). Uniqueness against polynomial tests gives the conditional formula. As another consequence, the two algebraic roots \(A\pm i\sqrt{B-A^2}\) have zero averaged power sum at every positive order. This follows from the coefficients of the logarithm of the product of their linear factors. This power-sum identity involves two roots over each point and does not give a scalar regular Laurent phase.
+
+### The icosahedral vertex and face arrangements
+
+Let \(q=x_1^2+x_2^2+x_3^2\) and use \(p,h\) from (H4), with \(h=\nabla p\cdot\nabla p\). Put \(r=h+7q^2p\). Up to scale, \(r\) is the product of the ten hyperplanes normal to the face axes of the icosahedron whose vertex axes give \(p\). To check this, set \(a=x_1^2,b=x_2^2,c=x_3^2\), \(k=(3+\sqrt5)/2\), and \(k^{-1}=(3-\sqrt5)/2\). Then
+\[
+ r=\sqrt5\,\big(q^2-4(ab+bc+ca)\big)
+          (kb-k^{-1}c)(ka-k^{-1}b)(k^{-1}a-kc).
+\]
+The first factor is the product of the four diagonal-axis hyperplanes. The other factors give the six face axes with one zero coordinate. For the standard vertices used in (H4), the directions \((1,1,1)\) and \((1/\varphi,0,\varphi)\), where \(\varphi=(1+\sqrt5)/2\), are face normals. Their signed cyclic permutations give the displayed list. Equality with \(h+7q^2p\) follows by expanding in the squared coordinates.
+
+On \(q=1\) write \(V_p=\nabla p/(6p)\) and \(V_r=\nabla r/(10r)\). Their Gram entries satisfy
+\[
+ |V_p|^2=\frac{r-7p}{36p^2},\qquad
+ V_p\cdot V_r=\frac{3r-5p(1+8p)}{60pr},\qquad
+ |V_r|^2=\frac{(25+240p)r-15p(1+8p)^2}{100r^2}.
+\]
+These identities can be checked using \(\nabla f\cdot\nabla g
+=4(a f_ag_a+b f_bg_b+c f_cg_c)\). In homogeneous form the two additional numerators before dividing by \(60pr\) and \(100r^2\) are \(3q^2r-5q^4p-40qp^2\) and \((25q^4+240qp)r-15p(q^3+8p)^2\).
+
+For an explicit application take \(V=(V_p+V_r)/2\) and \(D=V_r-V_p\). The weights on the sixteen axes at the base point are all positive. If \(a_0,b_0,c_0\) are respectively the first, third, and middle Gram entries above, then the joint law in the theorem applies to
+\[
+                 U=\frac{4}{a_0+b_0+2c_0},\qquad
+                 A=\frac{U}{2}(b_0-a_0),\qquad
+                 B=U(a_0+b_0-2c_0).
+\]
+This is an all-order family of mixed identities in the icosahedral invariant function field. For example, any sufficiently small rational weight perturbation gives the same marginal height law while the first conditional directional moment is zero.
+
+**Theorem (The field of the icosahedral arrangement data).**
+
+Let \(v=|V_p|^{-2}\) and \(w=|V_r|^{-2}\) be the vertex and face heights. In characteristic zero the field \(K(p,h)\) has degree three over \(K(v,w)\). For an independent Laurent variable \(t\) one has
+\[
+                  K(t,v,w)\cap K[p,h,t,t^{-1}]=K[t,t^{-1}].
+\]
+The same intersection holds in the full rotation-invariant Laurent ring, since a function of \(v,w,t\) is also reflection invariant. Adjoining the mixed product \(c_0=V_p\cdot V_r\) to the two heights recovers the entire field \(K(p,h)\). Equivalently the three Gram entries above, or \(U,A,B\) in the weight formula, generate the full reflection-invariant field.
+
+Indeed \(h=36p^2/v\), so \(r=p(7+36p/v)\) and
+\[
+ w=\frac{100p(7+36p/v)^2}
+         {160+(1440+900/v)p+(8640/v-960)p^2}.
+\]
+As a rational function of \(p\) over \(K(v)\) it has degree three. The numerator roots are \(0,-7v/36\) with multiplicities one and two. The denominator at these points is \(160\) and \(-5(14v-9)^2/27\), respectively. Thus the rational map is reduced and has a finite pole in addition to the one at infinity. For every finite value of \(w\), the fibre has a finite point, by the cubic numerator and the absence of common factors. Consequently a nonconstant rational function of \(w\) over \(K(t,v)\) has a pole at a finite \(p\), whether it has a finite pole in \(w\) or a pole only at \(w=\infty\). On the other hand, substituting \(h=36p^2/v\) expresses a regular invariant as a polynomial in \(p\) over \(K(t,v)\). If this polynomial depends on \(v,t\) alone, the coefficient of \(p^0\) shows it is a Laurent scalar in \(t\). This gives the intersection.
+
+The mixed entry is
+\[
+                c_0=\frac{16+(108/v-40)p}{60p(7+36p/v)}.
+\]
+It has simple poles at both points of the \(w=0\) fibre. A rational function of \(w\) with a pole there would have pole orders in ratio \(1:2\) at the two points, because those are the multiplicities of \(w\). Thus \(c_0\notin K(v,w)\). The extension degree is prime, so it generates \(K(v,p)=K(p,h)\) over the two-height field.
+
+Unlike the octahedral pair, these two heights do not give the first two components of a Dirichlet split with remaining component \(1-v-w\). At \(x=(1,1,1)/\sqrt3\), the gradients of \(p,r\) are radial by cyclic symmetry, and both values are nonzero. Euler's identity gives \(v=w=1\) there and \(v+w>1\) on a neighborhood. The generic face-height fibre in the reflection-invariant plane is already a genus-one curve. Its quadratic equation in \(r\) has discriminant
+\[
+ w^2(25+240p)^2-6000wp(1+8p)^2 .
+\]
+As a cubic in \(p\) its discriminant is \(-276480000000000w^5(48w^2+33w+40)\), which is nonzero generically. Thus the face height alone cannot give a birational rational conditional parameter. The mixed Gram coordinate provides a full-field alternative for testing joint identities.
+
+### Weight deformations of the rational witness
+
+The scalar normalization admits a family of deformations. In any invariant arrangement with at least two distinct hyperplanes, let its weights be rational functions of \(t\), constant on group orbits, of sum one, and regular and strictly positive at \(t=0\). Form \(M(t),H(t)\) and \(U(t)\) as in (H1). With \(T=1+t\) the coefficientwise compact integral of
+\[
+                          \big[t^{-1}T(1-T^2U(t))^2\big]^m
+\]
+is the same formal Laurent series as for constant weights. Both the zero pure moment and the nonzero \(t\)-marked moment follow. Indeed the uniform bound on ratios of reciprocal sums applies also to these analytic weights near zero. Each deformed height has the same real law in an interval, so equality of the radial integrals there gives equality of their Taylor expansions.
+
+The weight deformation still has a generic algebraic pole. Over an algebraic closure of \(K(t)\), each residue of the logarithmic gradient along its own hyperplane is nonzero, so \(\gcd(D,H(t))=1\). The polynomial \(H(t)\) vanishes at a nonisotropic point of the intersection of any two chosen real hyperplanes, where every summand of \(M(t)\) vanishes. Therefore it has a divisor outside the radial quadric. The finite étale passage from that complement to the unit sphere detects a pole of \(U(t)\) there. The phase above has that pole as well. Thus moving the weights together with the split variable preserves the moments formally and still requires a different denominator mechanism.
+
+
+## Point-free forms for the compact rank-one group
+
+Let \(C\) be the compact simply connected group of type \(A_1\) over a real closed field \(K\). In a standard compact maximal torus \(D\), write \(\mu_m\) for its cyclic subgroup of order \(m\). Choose a Weyl representative \(j\in N_C(D)(K)\) with \(j^2=-1\). The rank-one stabilizer list and the involution description of compact homogeneous forms give an explicit list of the point-free forms that still need a trace calculation.
+
+**Theorem (Residual compact rank-one twists).**
+
+Every point-free affine geometrically homogeneous \(C\)-space with an unresolved regular trace is of one of the following types, up to \(C\)-equivariant isomorphism:
+
+| Geometric stabilizer | Involution class in the normalizer quotient |
+| --- | --- |
+| Trivial | The central involution, giving the norm-minus-one quaternion torsor |
+| \(\mu_m\), \(m\ge3\) | The unique nontrivial toral involution modulo \(\mu_m\) |
+| \(D\) | The Weyl involution, giving the negative unit sphere of the ternary adjoint norm |
+| Binary dihedral of order \(4m\), \(m\ge3\) | The nontrivial class represented in \(D\) by a primitive \(4m\)-th root |
+| \(Q_8\) or \(2T\) | The nontrivial involution class represented by a primitive eighth root in a suitable \(D\) |
+
+The binary dihedral forms are finite equivariant quotients of the toral cyclic forms with stabilizer \(\mu_{2m}\). The \(Q_8\) and \(2T\) forms are finite equivariant quotients of the toral cyclic form with stabilizer \(\mu_4\). A toral cyclic form of order \(m=2^s k\) with \(k\) odd is a quotient of the toral cyclic form of order \(2^s\). In particular, whenever one of these target quotients has a witness, the indicated cyclic cover has one. Mathieu–Zhao for a source cover implies Mathieu–Zhao for the target.
+
+Here is the stabilizer and cohomology calculation. Over \(K(i)\), connected proper reductive stabilizers in \(\mathrm{SL}_2\) have identity component a maximal torus, so are that torus or its normalizer. The finite possibilities are the cyclic, binary dihedral, tetrahedral, octahedral and icosahedral groups in [Flicker, Section 2](https://www.ariel.ac.il/wp/yuval-flicker/wp-content/uploads/sites/316/2023/06/94.FiniteSubgpsSL2Manusc.pdf). A compact reference representative of each geometric conjugacy class exists by the compact form argument above. On the quotient by a fixed reference stabilizer \(L\), point-free forms correspond to conjugacy classes of nonidentity involutions in \(N_C(L)/L\). This uses the compact cocycle classification and point criterion above. The case \(L=C\) is a point.
+
+For \(L=1\), the sole nonidentity involution is \(-1\). For \(L=\mu_2\), the commuting group is compact adjoint of rank one, and a nontrivial involution gives an isotropic commuting twist. This gives a witness by the split rank-one obstruction. For \(L=\mu_m\), \(m\ge3\), its centralizer torus is \(D\), and its normalizer is \(D\cup Dj\). The connected component of the normalizer quotient is an anisotropic circle. There is one nontrivial toral involution. Every element of \(Dj\) squares to \(-1\). Thus Weyl involutions descend to the quotient precisely for even \(m\), and all are conjugate, since squaring on the torus points is surjective. Their commuting torus becomes split and the explicit cyclic witness above applies. In any toral case the chosen cyclic cover of order \(2^s\) has involution represented by a primitive \(2^{s+1}\)-th root. Its image modulo \(\mu_m\) is the nontrivial involution because \(k\) is odd. This includes \(s=0\) for odd \(m\), when the source is the norm-minus-one quaternion torsor.
+
+For \(L=D\) the quotient \(C/D\) is the positive unit sphere in the adjoint representation. The right Weyl action sends the axis vector to its negative. Combining this action with compact conjugation descends the negative unit sphere, by multiplication by \(i\) in the ambient complex Lie algebra. For \(L=N_C(D)\) the stabilizer is self-normalizing, so there is only the pointed form.
+
+A binary dihedral group of order \(4m\) is \(L=\langle\mu_{2m},j\rangle\). For \(m\ge3\) its characteristic rotation subgroup is generated by its elements of order greater than four. Any normalizer therefore preserves \(D\). For \(s\in D\), the condition \(sjs^{-1}=s^2j\in L\) is exactly \(s\in\mu_{4m}\). This yields the claimed index-two normalizer and representative. For \(Q_8\) and \(2T\) the normalizer is \(2O\), as in the no-point principal-stabilizer argument. The respective quotients are \(S_3\) and the group of order two. A lift \(n\) of a quarter-turn about a coordinate axis has order eight and \(n^2\in Q_8\). Its classes represent the required involutions, and all transpositions are conjugate in \(S_3\). The two larger polyhedral stabilizers are self-normalizing and introduce no point-free forms.
+
+In each displayed map of twists the subgroup inclusion gives the usual geometric quotient map, and the descent representatives induce the same involution downstairs. This proves existence of the maps over \(K\). They preserve normalized traces by geometric transitivity, and pullback is injective on regular functions. In particular the transfer of a witness goes from target to source. The cyclic-cover reduction distinguishes the toral twist family from the Weyl twists already settled by the split commuting torus.
+
+
+### The face-height differential has a non-torsion residue divisor
+
+Use \(p,r,w\) from the vertex and face calculation. Write \(f(p,r)\) for the polynomial on the right of (H4) at \(q=1\) and \(h=r-7p\). The orientation coordinate can be normalized to satisfy \(J^2=f\). The face-height fibre on the reflection quotient and its orientation cover have equations
+\[
+ G_w(p,r)=100r^2-w(25+240p)r+15wp(1+8p)^2=0,\qquad J^2=f(p,r).
+\]
+
+**Theorem (The face-height conditional differential).**
+
+The smooth projective orientation cover of the generic icosahedral face-height fibre has genus four. Its conditional differential, up to the height normalization, is
+\[
+                   \eta_w=\frac{r^2\,dp}{(\partial G_w/\partial r)J}.
+\]
+It has two simple poles with opposite nonzero residues. The difference of the two pole points has infinite order in the Jacobian. Consequently, even after finite algebraic covers or algebraic extensions of the height field, this conditional differential cannot be made logarithmic up to a scalar and a differential with zero residues.
+
+For the differential, the area density on the angular invariant plane is proportional to \(dp\,dr/\sqrt f\), since \(r=h+7p\). Differentiating \(G_w\) gives \(\partial r/\partial w=100r^2/(w\partial G_w/\partial r)\). This identifies the oriented conditional differential, with the factor \(100/w\) absorbed into the height normalization.
+
+Let \(E_w\) be the smooth projective reflection fibre. Its discriminant in \(r\) is cubic in \(p\) and squarefree generically, by the preceding computation. Thus \(E_w\) is elliptic with a single point \(O\) at infinity. There \(p,r\) have poles of orders two and three. The polynomial \(f\) has a pole of order ten, since its term \(8640p^5\) has strictly highest pole order. At finite points, \(f\) has two double zeros, at \(r=0\) with \(p=0,-1/8\), and six simple zeros. Here are exact ways to check the multiplicities and their persistence. The two indicated points are smooth with local parameters \(p\) and \(p+1/8\), respectively. The leading coefficients of \(f\) there are \(-64/25\) and \(-25/4\). At \(w=1/2\) the resultant in \(r\) of \(f,G_w\) is
+\[
+ 5000p^2(8p+1)^2
+    \big(233280000p^6+119880000p^5+21261800p^4+1456955p^3
+                  +26342p^2-277p-7\big).
+\]
+The sextic is squarefree and disjoint from the cubic discriminant and the two double zeros. This can be checked by the same gcd tests modulo each of \(11,13,17,19\). Indeed, on the smooth elliptic model the two double zeros \(P_0,P_1\) and the infinity \(O\) are disjoint sections. The divisor of \(f\) is \(2P_0+2P_1-10O\) plus the six residual zeros. Regard \(f\) as a section of \(\mathcal O(5O-P_0-P_1)^{\otimes2}\), so the double cover branches only over that residual divisor. The gcd checks give six distinct branch points in each reduction, and in odd characteristic the double cover of this smooth model is smooth. This gives good reduction at all four primes. Over a neighborhood of \(w=1/2\) the two double zeros remain sections with the same multiplicity, the other branch points remain simple and disjoint, and the degree and leading coefficient at infinity remain nonzero. Thus the normalization is smooth in that neighborhood. Riemann–Hurwitz for the double cover with six branch points gives genus four.
+
+The pullback of \(dp/(\partial G_w/\partial r)\) is holomorphic. At a simple zero of \(f\) it has a zero of order one from the ramification, which cancels the zero of \(J\). At the double zeros of \(f\), \(r^2\) vanishes to at least order two while \(J\) has order one. At the two points \(I_\pm\) of the orientation cover above \(O\), the ratio \(r^2/J\) has a simple pole. The involution \(J\mapsto-J\) exchanges the two poles and negates the differential. This proves the residue assertion.
+
+It remains to rule out torsion. Specialize \(w=1/2\). At \(O\), set \(Y=\partial G_{1/2}/\partial r\), so \(Y^2\) has leading coefficient \(-192000\) as a cubic in \(p\). With local parameter \(p/Y\), the leading coefficient of \(p\) is \(-1/192000\). The square class of the leading coefficient of \(f\) is therefore that of \(8640(-192000)\), namely \(-2\). Thus \(I_\pm\) are defined over \(\mathbb Q(\sqrt{-2})\).
+
+The [exact replay checker](verify_icosahedral_face_height.py) computes point counts of the normalized genus-four curve at the four good primes. In each finite field it enumerates \(p\), solves the quadratic \(G_{1/2}\) for \(r\), and counts square roots of \(f\). At the two double zeros it instead counts square roots of their leading coefficients, which gives the points of the normalization. It counts the two points over infinity by the square class \(-2\). The point counts determine the degree-eight numerator \(L_\ell(T)\) of the zeta function via Newton's identities and the functional equation. The Jacobian point counts are \(L_\ell(1)\) over \(\mathbb F_\ell\) and \(L_\ell(1)L_\ell(-1)\) over \(\mathbb F_{\ell^2}\) by [Weil's formula, as stated in Milne, Section 11](https://jmilne.org/math/xnotes/JVs.pdf).
+
+| Prime \(\ell\) | Counts over degrees one through four | \(L_\ell(1)\) | \(L_\ell(-1)\) if the pole points are nonsplit |
+| --- | --- | --- | --- |
+| 11 | \(20,156,1304,14544\) | \(34580\) | |
+| 13 | \(12,208,2466,28704\) | \(28512\) | \(35904\) |
+| 17 | \(20,326,4814,84506\) | \(99600\) | |
+| 19 | \(20,414,6518,130254\) | \(137775\) | |
+
+Over a field of good reduction of residue characteristic \(\ell\), prime-to-\(\ell\) torsion injects under reduction. Indeed, in the formal group, multiplication by an integer prime to \(\ell\) has invertible linear term and cannot kill a nonzero point in the reduction kernel. Apply this at these primes to the difference \(I_+-I_-\) over \(\mathbb Q(\sqrt{-2})\). At 13 use the residue field of degree two, and at the other primes use degree one. The gcd of the four applicable group sizes is one. Each of the four residue characteristics also fails to divide at least one size at a different prime. Thus a torsion difference would have order one. That is impossible for distinct points on a curve of positive genus, since a function with one simple pole gives a degree-one map to the projective line. Smooth specialization from the generic fibre implies infinite order there too.
+
+For any finite cover, push a putative residue relation back down to the face-height curve. The residue divisor of a logarithmic differential is principal, that of a residue-free differential is zero, and pushforward after pullback multiplies divisor classes by the cover degree. The non-torsion class therefore contradicts such a relation. This closes the logarithmic transport route for the face arrangement as well as for the vertex arrangement.
+
+
+For independent vertex and face heights the pullbacks of the two conditional differentials to any common finite covering curve are also independent modulo residue-free and logarithmic differentials. The vertex Jacobian is an elliptic curve with nonconstant \(j(v)\) by the vertex calculation. Over the algebraic closure of the field of \(w\), the face Jacobian has only finitely many elliptic simple factors up to isogeny. Passing to a larger algebraically closed field creates no additional simple factors. One way to see the latter fact is invariance of the homomorphism group of abelian varieties under algebraically closed extension: spread a homomorphism over a connected finite-type base and apply the rigidity lemma after subtracting one specialized homomorphism. Any isogeny to one of the elliptic factors would make \(j(v)\) algebraic over the field of \(w\), since the finite kernel of an isogeny from a fixed elliptic curve is defined over that algebraic closure. Thus the two Jacobians admit no homomorphisms between them. Taking residues and pushing forward separately to the vertex and face curves gives the claimed independence, using the infinite-order divisor on each.

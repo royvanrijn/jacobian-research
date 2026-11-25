@@ -442,3 +442,81 @@ Indeed sum (WH1) over the dyadic heights and
 \(Z\ll Y^{\kappa/2}\), then use \(1/M\le\lambda/3\).
 This estimates a single joint valuation penalty instead
 of imposing separate thresholds on a prescribed pair.
+
+## Uniform diffuse density at a height-adjusted atom
+
+At a limiting \(d=1/3\) profile, suppose that one letter \(A\) has
+\(\nu_A=(1/3)\delta_{3h_A}\), where \(h_A\) is its numerical height.
+Then both opposite letters are nonatomic, have a common absolute
+compact-support bound and no escaped first moment, and have density
+at most an absolute \(C_0\). These conclusions hold in every position
+of \(A\), including when it is shorter than the other letters.
+
+The pairwise diffusion inequality at the endpoint give nonatomic mass \(1/3\) on both \(U,V\). Apply the complementary-letter moment estimate (VM2)
+to the pairs \((A,U)\), \((A,V)\), whose excesses are zero, to get
+the absolute support bound \(R\) and no escaped first moment on
+the opposite letters. The short-height bound gives an absolute
+\(h_*>0\) with all three numerical heights at least \(h_*\).
+Consequently for sufficiently small absolute \(b_0>0\), each of
+\(U,V\) has at least \(h_*/(2R)\) root mass in \([b_0,R]\).
+For \(A\) its single atom has first moment \(h_A\) by assumption,
+so there is no escaped first moment on \(A\) either. In particular
+its entire numerical height can be carried by one grouped root
+at degree \(\lfloor 3h_A/L\rfloor\), with signed correction of
+numerical height tending to zero. To check this, first take a
+fixed continuity window about \(3h_A\). Its captured numerical
+weight tends to \(h_A\) as the width tends to zero, since the
+prelimit first moments tend to \(h_A\). Shrink the window slowly
+along the box sequence. Its internal exponent correction is
+bounded by its shrinking width times a bounded root mass, and
+the numerical contribution of the complement tends to zero.
+
+For a bounded continuity interval \(I\) of length \(\sigma\)
+and mass \(t>0\) on \(U\), freeze its complement on \(U\)
+at normalized cost \(1/3-t+o(1)\). Choose a full modulus on \(V\)
+by accumulating whole roots from \([b_0,R]\) to have normalized
+mass from \(\zeta t\) to \(2\zeta t\), up to vanishing errors,
+where \(\zeta>0\) is small and absolute. Its numerical weight
+\(w\) is between \(b_0\zeta t\) and \(2R\zeta t\).
+This is possible by nonatomicity and the absolute positive
+mass of the supplying band, enlarging its endpoints to
+continuity points if necessary. Its fullness can be taken
+with \(kL\to b_0/2\) after any such endpoint adjustment by
+first decreasing \(b_0\) by a fixed factor.
+
+Group \(A\) as above and group \(I\) on \(U\) at a positive
+representative scale, even when \(I\) touches zero. The narrow
+normalized caps are \(1/3+o(1)\) and \(t+o(1)\), and the wider
+numerical height cap is \(\sigma t+o(1)\). Use (UW) on the signed
+ratio and choose one actual tuple for each exact ratio, whose
+primitive two values are uniquely determined. Relative to the
+modulus, the narrow height constants in (UW) are respectively
+\(O(1/(\zeta t))\) and \(O(1/\zeta)\), with absolute constants.
+This estimate and (UW) are independent of the monomial
+exponents and of the positions of the letters. The wider
+relative height is at most \(\sigma/(b_0\zeta)+o(1)\).
+Choose \(\zeta\) so that the freeze of the modulus plus the
+(\(B_2=6\)) chart cost is at most \(t/2\), using
+\(w\le2R\zeta t\). The (UW) width condition then holds when
+\(\sigma<C_1 t\) for an absolute \(C_1>0\). This would give a
+strict saving below \(1/3\). Thus \(t\le C_0\sigma\), with
+\(C_0=1/C_1\) enlarged if necessary. Continuity and outer
+regularity extend the estimate to all intervals and give the
+density bound on both unprescribed letters.
+
+One may also record the explicit height-adjusted low degree
+mass consequence. On either unprescribed letter of height \(h\),
+for \(s\ge0\),
+\[
+  \nu([0,s))\ge
+  \max\left(0,\frac13-C_0\bigl(\sqrt{s^2+2h/C_0}-s\bigr)\right).
+\]
+If the mass above \(s\) is \(x\), its first moment is at
+least \(sx+x^2/(2C_0)\), by the density cap. In particular,
+enlarge \(C_0\) so that \(C_0\ge1\) and
+\(3h_*-1/(12C_0)>0\). At \(s=3h-1/(12C_0)\) the bound
+forces \(\nu([0,s))\ge1/(120C_0)\). Indeed at \(x=1/3\)
+the moment lower bound exceeds \(h\) by \(1/(36C_0)\),
+and its derivative for \(0\le x\le1/3\) is at most \(10/3\).
+
+[Endpoint diffusion](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees) · [Complementary-letter moment estimate](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) · [Unequal narrow heights and a wider cofactor](ABC_WIDE_COFACTOR_CONGRUENCES.md)

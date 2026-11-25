@@ -393,3 +393,97 @@ bound the short height gap by the tall pair's nonatomic excess above
 \(1/3\). They also bound the numerical weight in high scaled degrees,
 including escaped first moment on each letter, by the excess on the
 complementary pair.
+
+## A quarter inequality for a letter of small radical mass
+
+If a letter \(C\) has normalized root mass \(l_C<d\), both other
+letters have mass at most \(1-2d\). Consequently every limiting
+small-budget box satisfies
+\[
+ 4d\le 1+\min\{l_A,l_B,l_C\}.
+ \tag{LQ1}
+\]
+Here the fixed-degree cutoff is used in the usual regime \(L\)
+comparable to the chosen radical budget. A supported letter is
+one with mass strictly greater than \(1-2d\); it has boundedly many
+roots of height \(X^{O(L)}\) and a cofactor of numerical height
+\(X^{o(1)}\).
+[Fixed-degree cutoff](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#making-the-low-coefficient-short-in-anatomic-boxes)
+
+To prove the first claim, suppose \(A\) is supported. Freeze the
+complete \(C\), at normalized cost at most \(l_C\) by fixing its roots
+and the initial exceptional coefficient. Any positive-weight block
+on \(B\) formed by full powers of degree at least \(\kappa/L\),
+for a fixed \(\kappa>0\), can serve as a modulus. If the block has
+normalized cost \(\mu\), the congruence for \(A\) modulo this block
+has a unit target given by the fixed \(C\). The amplified (GW)
+release of \(A\) gives \(d\le l_C+\mu\). Its output exact value
+recovers the triple since \(C\) is fixed. Thus every such \(B\)-block
+costs at least \(d-l_C>0\).
+
+If \(B\) has positive height \(h_B\), set aside coordinates of
+normalized mass at least a fixed \(\xi<(d-l_C)/4\). If their
+complement has a positive numerical contribution \(w\), retain
+the part in degrees at least \(w/(2L)\), discarding at most
+\(w/2+o(1)\) numerical weight. Its individual normalized root
+masses are at most \(\xi+o(1)\); greedy grouping into blocks of
+mass at most \(2\xi+o(1)\) gives boundedly many blocks. For
+example every completed pair of consecutive blocks has
+combined mass at least \(\xi+o(1)\), except for boundary
+constants. Some block has positive weight, a contradiction.
+Thus boundedly many heavy coordinates of \(B\) carry its height,
+and the remainder is a cofactor of numerical height tending
+to zero. If instead \(B\) has numerical height zero, its whole
+integer is such a cofactor.
+
+If \(C\) has positive height, its high part supplies a full
+positive-weight modulus at cost at most \(l_C\). Release
+\(A,B\) jointly by (GW) under that modulus. Their exact signed
+ratio determines the primitive pair and hence the triple,
+giving \(d\le l_C\). If \(C\) has numerical height zero,
+\(A,B\) are the tall pair. Their complete ratio, with the
+appropriate orientation, is within \(X^{-1+o(1)}\) of one.
+Each term consists of boundedly many small roots and a
+cofactor of height \(X^{o(1)}\). The unequal-root real strip
+count (RUW1) gives normalized cost arbitrarily small, by
+taking its chart parameter \(s\) arbitrarily small first
+and then letting the cofactor exponent tend to zero.
+The exact ratio again determines the pair.
+Both conclusions contradict \(d>l_C\).
+[Unequal-root real strip](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-real-strip-with-unequal-root-heights)
+
+If \(d>(1+l_C)/4\), the known \(d\le1/3\) forces \(l_C<1/3\)
+and then \(l_C<d\). The relation
+\(l_A+l_B=1-l_C>2(1-2d)\) would force one of the other letters
+to be supported. Apply this to a letter of minimum mass to obtain (LQ1).
+
+### Small radical on any one letter
+
+For fixed \(\vartheta\ge0\) and \(\eta>0\), count ordered
+positive primitive \(abc\) triples of budget \(\lambda\)
+on which at least one letter \(T\) satisfies
+\(\operatorname{rad}(T)\le c^{\vartheta\lambda}\). For all
+sufficiently small fixed \(\lambda\), the count is
+\[
+ O_{\lambda,\vartheta,\eta,\varepsilon}\!
+ \left(X^{(\min(1/3,(1+\vartheta)/4)+\eta)\lambda+\varepsilon}\right).
+ \tag{LQ7}
+\]
+Indeed, in a sequence violating the bound with
+\(\lambda\to0\), choose the same letter \(T\) on a
+subsequence. The anatomic boxes have
+\(L\le(1+o(1))\lambda\), \(L_T\le(\vartheta+o(1))\lambda\),
+and count exponent of order at least \(\lambda\).
+The fixed-two-letters bound gives \(L\) of order at least
+\(\lambda\). By (LQ1) their exponent is at most
+\((L+L_T)/4+o(\lambda)\). The global one-third estimate
+gives the other term in the minimum.
+
+The same argument gives \(\max_i l_i\le1-2d\).
+If a letter has mass below \(d\), the other two satisfy
+this upper bound by the supported-letter exclusion, and
+the first does because \(d\le1/3\). If all letter masses
+are at least \(d\), the upper bound follows from their
+sum being one. Thus for \(d\ge1/3-\xi\), every mass is in
+\([1/3-4\xi,1/3+2\xi]\), and the total absolute
+deviation from \(1/3\) is at most \(8\xi\).

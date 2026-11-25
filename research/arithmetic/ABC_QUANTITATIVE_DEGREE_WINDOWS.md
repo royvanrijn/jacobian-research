@@ -22,13 +22,14 @@ Consider rational units \(z,v\) modulo \(n\) with
 \]
 Here \(q\) is a positive integer, \(K\) is a unit, and the rational height
 \(H\) is the maximum of the absolute reduced numerator and denominator.
-Write \(w+o(1)=\log_X n\) with \(w>0\). Let \(k\) be an integer at most
-every positive valuation \(e_p=v_p(n)\), with \(kL\to\kappa>0\). Put
+Write \(w+o(1)=\log_X n\) with \(w>0\). Choose a positive integer
+\(k\) with \(kL\to\kappa>0\), write \(e_p=v_p(n)\), and put
 \[
  Q_n=\prod_{p\mid n}p^{\lfloor e_p/k\rfloor}.
 \]
 One may use \(Q=Q_n\) or any divisor \(Q\mid Q_n\) as
-the residue modulus. Write \(\log_X Q=(b_Q+o(1))L\)
+the residue modulus. A prime of \(n\) with \(e_p<k\) contributes
+only to the full modulus and terminal reconstruction. Write \(\log_X Q=(b_Q+o(1))L\)
 with \(b_Q\ge b\). Then \(b_{Q_n}\le w/\kappa\). If the modulus
 is a product of frozen factors \(x_j^{e_j}\) of disjoint prime support,
 with \(e_j\ge k\), taking \(Q=Q_n\) allows \(b\) equal to the limiting normalized
@@ -1251,3 +1252,709 @@ Subtract the first lower bound on \(m\) in (SB1). The difference is at most
 because \(g\le t\le1/3\). This is again impossible.
 
 If \(a\ge6\), (SB2) gives \(E\ge1/3+g\ge2g\), contrary to \(E<2\mu<2g\). This proves the obstruction for every fixed positive spacing, even using the full range of mixed full/shallow modulus criteria (MB1).
+
+## Fixed differences with a shallow divisor from the rows
+
+Work at the minimum nonatomic endpoint \(d=1/3,\Gamma=1/2\), with \(c=1/6\), using the complete-label graph and its all-scale progression estimate (AC1). Give the letters distinct roles \(A\) (rows), \(B\) (columns), and \(T\) (shifted targets).
+
+The following three conditions exclude the endpoint.
+
+- \(A\) has nonatomic root mass strictly greater than \(0.14\) in a fixed compact band of scaled degrees at least \(4\).
+- The supremum of the nonatomic support on \(B\) is at least \(4\).
+- The complete \(T\)-measure is supported in \([2.95,3.05]\) and satisfies \(\int|r-3|\,d\nu_T(r)\le0.004\).
+
+In particular this excludes \(\nu_T=c\delta_3+c\,\operatorname{Unif}[2.952,3.048]\) with the prescribed opposite profiles. The fixed row difference supplies the full reconstruction weight. Its selected shallow divisor supplies the Taylor divisibility.
+
+### A determinant using a shallow divisor
+
+The usual one-group determinant proof applies to an arbitrary positive modulus \(n\) if its shallow record \(Q\mid n\) obeys
+\[
+ v_p(Q)\le\lfloor v_p(n)/k\rfloor\qquad(p\mid Q).
+ \tag{FDS1}
+\]
+Keep all the other hypotheses of (QD2), including the unit condition and the weight \(w=\log_X n\) for terminal reconstruction. This is the only place global \(k\)-fullness is used in the one-group proof. In detail, fix a residue of \(z\bmod Q\) and lift \(v\) at each \(p\mid Q\) to \(Kz^{-q}\). The Taylor determinant uses these primes, and its order \(N<k\) makes \(v_p(n)\ge N v_p(Q)\) on them. Primes outside \(Q\) impose no determinant divisibility requirement. The resulting polynomial vanishes at the original rational sample points. At every prime of the full \(n\), including primes not in \(Q\), the polynomial equation is exact and \(vz^q=K\) holds modulo \(p^{v_p(n)}\). The logarithmic Jacobian, Hensel lift, and stripping and reconstruction arguments therefore apply over all of \(n\). Their numerical budget is still \(2B/(1-\alpha)<w\), because only the log mass in the Jacobian numerator is discarded. The finite-lift and valuation record count remains divisor-many at fixed truncation. In particular there is still just one initial chart charge, \(\log_X Q/L\).
+
+### Selecting fixed rows with a wide difference
+
+Choose a complete-label graph with edge exponent arbitrarily close to \(2c\), and enough regularization to use (AC1) on its complete \(A\)-vertices, with opposite degree bound \(s=3.999\) supplied by \(B\). Fix original outside positions on \(A\) from its indicated band, of aggregate normalized root mass \(p=0.14+o(1)\), where the rounding and outside-window losses can be made arbitrarily small. The nonatomic hypothesis allows this selection with uniformly small original coordinates. The full factor \(F\) from those positions has numerical weight at least \(0.56-o(1)\). Pigeonhole its original root values at cost \(p+o(1)\).
+
+The retained fibre graph has edge exponent at least \(2c-0.14\) up to arbitrarily small losses. Its rows have exponent at most \(c-0.14\), up to the corresponding outside-window error, because these particular outside coordinates have been frozen. Its columns have exponent at most \(c\) up to the initial graph loss. By the ordered two-star count and subtraction of the diagonal, there are at least
+\[
+ X^{(3c-0.28-o(1))L}
+\]
+ordered pairs of distinct rows with a common column, up to arbitrarily small graph and extraction losses. The diagonal has a strict saving since the row fibre exponent \(c-0.14\) is positive.
+
+Rows in this fibre are multiples of \(F\). For any fixed one of them, rows within absolute distance \(X^{0.666}\) lie in an interval of length \(2X^{0.666}\) in that same progression. Once the losses are small enough, its effective length exponent for (AC1) is at most \(0.1061\), up to a vanishing error, since \(F\ge X^{0.5599}\). The count of such rows has exponent at most \(0.1061/3.999\), up to arbitrary losses, which is strictly less than \(c-0.14\). Consequently the stars with a close pair have a strict saving from \(3c-0.28\): count a first row, its close second row by (AC1), and any common column by the full column cap. Average the remaining stars over at most \(X^{(2(c-0.14)+o(1))L}\) row pairs, with small graph losses. Thus there are two fixed distinct complete rows with common column exponent arbitrarily close to \(c\) and with numerical difference
+\[
+ |D|>X^{0.666}.
+ \tag{FDS2}
+\]
+On those rows the two complete targets satisfy \(T_2-T_1=D\), with the fixed signs absorbed into the definition of \(D\). The fixed nonzero \(D\) and either target value determine the complete column value.
+
+### Removing shared prime powers and counting
+
+For each of the two targets let \(S_i\) be the full part supported on primes dividing \(D\). Freeze \(S_1,S_2\) at subpower cost. The bound is uniform for \(0<|D|\le2X\). For fixed \(0<\eta<1\), the number of integers up to \(X\) supported on primes of \(D\) is bounded by \(X^\eta\prod_{p\mid D}(1-p^{-\eta})^{-1}=X^{\eta+o(1)}\). The last equality follows by ordering those primes and using \(\omega(D)=O(\log X)\). Let \(G=\gcd(T_1,T_2)=\gcd(S_1,S_2)\), and denote \(W=\log_X G\). Put \(n=|D|/G\). Since \(T_2/G-T_1/G=D/G\) and the two reduced terms are coprime, their ratio is a unit and is \(1\bmod n\). For \(p\mid n\), the two original \(T_i\) have equal \(p\)-adic valuation: if their valuations were unequal, \(D\) would have their minimum valuation. Hence \(S_2/S_1\) is also a unit modulo \(n\). The residual complete ratio \((T_2/S_2)/(T_1/S_1)\) therefore has a fixed unit target modulo \(n\). By primitivity on both rows, \(F\) is coprime to both targets and divides \(D\), so it divides \(n\).
+
+Strip every prime dividing \(D\) from the original \(T_i\) factors and group all remaining roots unweighted at exponent \(q=\lfloor3/L\rfloor\). Let \(z\) be the quotient of the two residual radical products, and put the signed degree corrections into \(v\). All variables are units modulo \(n\) after stripping. The residual exact ratio is \(vz^q\), and the normalized narrow height and numerical wider height satisfy
+\[
+ h\le\frac13-\frac{W}{3.05}+o(1),\qquad E\le0.004+o(1).
+ \tag{FDS3}
+\]
+For the first bound, each removed supported part \(S_i\) has numerical weight at least \(W\), giving removed root mass at least \((W-o(1))/3.05\) by the limiting support and the absence of escaped weight at \(\Gamma=1/2\). This remains valid uniformly if a vanishing root subset lies outside the limiting band, since its numerical moment is \(o(1)\). For the second bound, the complete \(T\)-mass and first moment give \(\int(r-3)_+\,d\nu_T=\int(3-r)_+\,d\nu_T\). The ratio correction on either sign side is at most the sum of these two integrals. Removing prime factors decreases each of the individual \(T_i\) correction sums. Floors in \(q\) contribute a total \(o(1)\) by the root-mass bound. Any negligible exceptional factor can be absorbed into the wider term. Fixing \(S_i\) already accounts for the exact removed integer parts. If degree assignments for their primes are recorded as well, there are divisor-many choices at fixed truncation.
+
+Take \(Q=\operatorname{rad}F\), \(kL\to4\), \(b\ge0.1399\), \(b_Q\le0.1401\), \(\alpha=1/2\), \(M=20\), and \(r_0=0.2\). The full primes of \(F\) guarantee (FDS1), since this block lies in original outside positions of scaled degree at least four up to vanishing errors. The determinant height satisfies
+\[
+ B=h r_0+ME\le\frac{11}{75}-\frac{4}{61}W+o(1)
+               \le\frac{11}{75}+o(1)
+               < \frac{0.1399(21)(0.2)}{4}.
+\]
+The Taylor order is \(21(0.2)/2=2.1<4\), and \(r_0<qL+o(1)\). For terminal reconstruction,
+\[
+ w=\log_X n\ge\max(0.5599,\ 0.666-W).
+\]
+The difference between this lower bound and \(4B\) is at least
+\[
+ \max(0.5599,\ 0.666-W)-\frac{44}{75}+\frac{16}{61}W-o(1).
+\]
+The piecewise linear expression decreases until \(W=0.1061\) and increases thereafter. Its minimum is \(0.5599-44/75+(16/61)(0.1061)>0.001\). Thus the estimate is uniform in the entire possible \(\gcd\)-weight range, including a large shared atomic factor. By the relative-to-shallow (QD2) proof, the chart exponent is at most \(0.1401\). There is no positive column lock charge for \(F\), which was paid in the row fibre before averaging. The two stripped parts are fixed at subpower cost. Each resulting ratio determines \(T_1,T_2\) via \(D\ne0\), then the column. This contradicts the common-column exponent approaching \(c\).
+
+
+### A profile excluded by the fixed-row determinant
+
+Take
+\[
+ \nu_A=c\delta_{7/4}+c\,\operatorname{Unif}[4,4.5],\quad
+ \nu_B=c\delta_3+c\,\operatorname{Unif}[2,4],\quad
+ \nu_T=c\delta_3+c\,\operatorname{Unif}[2.952,3.048].
+\]
+Each measure has mass \(1/3\), moment one, and nonatomic mass
+\(c\). The \(T\)-integral of \(|r-3|\) is exactly \(0.004\), and
+both opposite support conditions hold. The mixed trimmed packing
+test (MXP1) permits all its locks, because the highest scaled degree
+is \(4.5\) and the available normalized lock mass is \(c\), giving
+\(4.5c<1\).
+[Mixed trimmed packing](ABC_DIFFUSE_FACTOR_GRAPH.md#a-trimmed-packing-bound-using-mixed-additive-moments)
+
+## A primitive-kernel improvement to the one-root determinant
+
+Use the rational-unit congruence \(v z^q\equiv K\bmod n\), with heights \(H(z)\le X^{(h+o(1))L}\), \(H(v)\le X^{E+o(1)}\), and \(\log_X n=w+o(1)\). Let \(Q\mid n\) be the shallow record, with \(\log_X Q=(b_Q+o(1))L\) and \(b_Q\ge b>0\). At all primes in \(Q\), assume \(v_p(Q)\le\lfloor v_p(n)/k\rfloor\), where \(kL\to\kappa>0\). Other primes of \(n\) need no fullness assumption. Use the notation and limiting order of (QD2).
+
+Choose \(M\ge1\), \(r_0>0\), and \(0<\alpha<1\), and put
+\[
+ B=hr_0+EM,\qquad \Lambda=\frac{b(M+1)r_0}{2}.
+\]
+The usual one-root conclusion, at most \(X^{(b_Q+o(1))L}\) pairs up to an arbitrary fixed-truncation exponent loss, holds under the strict conditions
+\[
+ r_0<\liminf qL,\qquad
+ \alpha(M+1)r_0<\kappa,\qquad
+ B<\alpha\Lambda,\qquad
+ 4\Lambda\bigl(1-\sqrt{1-B/\Lambda}\bigr)<w .
+ \tag{PK1}
+\]
+For any lower bound \(w_0\le w\) with \(0<w_0\le4\Lambda\), the last condition follows from
+\[
+ B<\frac{w_0}{2}-\frac{w_0^2}{16\Lambda}.
+ \tag{PK2}
+\]
+These use divisibility of the maximal *nonzero* evaluation minors to improve the auxiliary coefficient height. The determinant forcing and the terminal residue count otherwise use the (QD2) argument.
+
+### Divisibility at the actual rank
+
+In one fixed \(z\bmod Q\) class take the monomial column set \(0\le i\le R=\lfloor r_0/L\rfloor,\ 0\le j\le M\), of cardinality \(D_0=(R+1)(M+1)\). At a rational pair \((z,v)\) multiply its evaluation row by \(\operatorname{den}(z)^R\operatorname{den}(v)^M\), using reduced positive denominators. The resulting rows are integral, with entry sizes at most \(X^{B+o(1)}\). The row factors may differ from point to point. Each is a unit at every modulus prime, so row clearing does not alter the prime-adic valuation bounds on any minor.
+
+Set \(N=\lfloor\alpha D_0\rfloor\). At a prime \(p\mid Q\), abbreviate \(d_p=v_p(Q)\). Replace \(v\) by \(Kz^{-q}\) in the local reference evaluations, with error divisible by \(p^{v_p(n)}\). Taylor expansion in \(z-z_0\) inside the fixed residue class shows that for every \(1\le r\le N\) an \(r\)-row minor is divisible by \(p^{d_p r(r-1)/2}\). The Taylor vectors of orders \(0,\ldots,r-1\) give the smallest total order, since a repetition makes the corresponding determinant contribution zero. Every replacement error is divisible by \(p^{d_p r}\), since \(r\le N<k\) for small \(L\) by the strict precision condition. The same rank-\(r\) divisibility therefore holds for the original integral evaluation rows. At primes not in \(Q\) there is no Taylor requirement. Multiplying over \(p\mid Q\) gives \(Q^{r(r-1)/2}\mid\det\) for every such minor.
+
+At \(r=N\) the divisibility exponent per row tends to \(\alpha\Lambda\), so \(B<\alpha\Lambda\) makes every \(N\)-row minor vanish. In a nonempty chart let \(r<N\) be the actual rank. Choose \(r\) independent rows and form their integer evaluation matrix \(A\) with \(D_0\) columns. Every \(r\)-row maximal minor is divisible by \(Q^{r(r-1)/2}\), while its absolute value is at most \(X^{r(B+o(1))}\). No assumption about genericity of the evaluation ranks is needed.
+
+### Passing from maximal minors to the auxiliary height
+
+For any rank-\(r\) integer matrix \(A\), let \(g_A\) be the positive gcd of its maximal minors. The covolume of its primitive integer kernel is
+\[
+ \det(\ker A\cap\mathbb Z^{D_0})
+       = \frac{\sqrt{\det(AA^\mathsf T)}}{g_A}.
+\]
+Indeed the wedge of the \(r\) independent integral rows has the maximal minors as coordinates. Dividing by their gcd is the primitive wedge of the saturated row lattice, so its Euclidean norm is the covolume of that lattice. The Hodge dual gives the primitive wedge of the perpendicular integer kernel, with the same norm. Cauchy--Binet bounds the numerator by \(\binom{D_0}{r}^{1/2}\) times the largest minor.
+
+Minkowski's theorem on the integer kernel, of rank \(D_0-r>0\), therefore gives a nonzero integer kernel vector with maximum coefficient at most a constant depending on \(D_0\) times
+\[
+ X^{\frac{r}{D_0-r}
+       (B-bL(r-1)/2+o(1))}.
+\]
+This vector is in the kernel of the entire chart evaluation matrix, since the selected rows span its row space over \(\mathbb Q\). Put \(x=r/D_0\) and note \(bLD_0/2=\Lambda+o(1)\) as \(L\to0\). The exponent is at most
+\[
+ \frac{x(B-\Lambda x)}{1-x}+o(1).
+\]
+This estimate is uniform in actual rank \(r\), since \(x\le\alpha<1\). On \(0\le x<1\), one has
+\[
+ \sup_x\frac{x(B-\Lambda x)}{1-x}
+       =\bigl(\sqrt{\Lambda}-\sqrt{\Lambda-B}\bigr)^2
+       =G_* .
+\]
+For example, putting \(y=1-x\) gives the concave maximum of \((B-\Lambda)/y+2\Lambda-B-\Lambda y\) at \(y=\sqrt{1-B/\Lambda}\). This gives the nonzero auxiliary equation of coefficient height \(X^{G_*+o(1)}\) on the same rectangular degree support.
+
+Apply the usual factor-height, logarithmic derivative and Hensel arguments to this auxiliary. The numerator of the cleared logarithmic derivative on each nonexceptional solution has height at most \(X^{B+G_*+o(1)}\). The exceptional exact-constant components and the intersections with the logarithmic derivative cost boundedly many points as in (QD2), since \(R<q\). The total modulus weight discarded or lost in the remaining Hensel reconstruction is at most \(2(B+G_*)+o(1)\), now using all primes of \(n\). But
+\[
+ 2(B+G_*)=4\Lambda(1-\sqrt{1-B/\Lambda}).
+\]
+Under (PK1) a positive numerical modulus weight remains, enough to reconstruct \(z\) of height \(X^{hL+o(L)}\). With \(z\) fixed the original congruence reconstructs \(v\), since (PK1) implies \(w>2B\ge2E\). The original residue classes cost \(X^{(b_Q+o(1))L}\). The Hensel and divisor records have subpower cost at fixed \(L\). This proves (PK1), and elementary rearrangement on \(0<w_0\le4\Lambda\) gives (PK2).
+
+For reference, if \(A_0=b(M+1)/2>h\) and one ignores the upper constraints on \(r_0\), the best terminal loss for fixed \(M\) occurs at
+\[
+ r_0=\frac{EM/A_0}{2\sqrt{h/A_0}(1-\sqrt{h/A_0})},
+ \qquad B+G_*=\frac{EM}{1-\sqrt{h/A_0}}.
+\]
+This follows by differentiating \(2A_0r_0(1-\sqrt{1-h/A_0-EM/(A_0r_0)})\). The rank, degree and precision conditions in (PK1) must still be checked for this choice.
+
+### A wider fixed-difference sector
+
+Use the [shared-row construction](#fixed-differences-with-a-shallow-divisor-from-the-rows)
+and its removal of the \(D\)-supported parts, keeping the two
+opposite-letter hypotheses. The impossible target sector is now
+\[
+ \operatorname{supp}\nu_T\subseteq[2.875,3.125],
+ \qquad\int|r-3|\,d\nu_T(r)\le0.0104.
+ \tag{PK3}
+\]
+In particular the target \(\frac16\delta_3+\frac16\operatorname{Unif}[2.8752,3.1248]\) is excluded with the same two opposite profiles. The degree band and discrepancy in (PK3) give, after dividing out the frozen \(D\)-supported parts, \(h\le1/3-W/(25/8)+o(1)\), \(E\le0.0104+o(1)\), where \(W\) is the numerical weight of the two targets' common divisor \(G\). This is the same height argument as (FDS3): the common numerical weight has been removed from each target, affine shifts give \(T_2-T_1=D\), and the equal positive and negative whole-\(T\) errors about degree three bound the ratio correction even after stripping. The frozen degree allocations cost at most subpower, and the unit ratio congruence is modulo \(n=|D|/G\), containing the fixed shared row block \(F\).
+
+Use \(Q=\operatorname{rad}F\), \(b=0.1399\), \(b_Q\le0.1401\), \(kL\to4\), \(M=10,\ r_0=0.29,\ \alpha=0.94\). We have \(qL\to3\), \(0.94(11)(0.29)=2.9986<4\), and
+\[
+ \Lambda=\frac{0.1399(11)(0.29)}2=0.2231405,\qquad
+ B\le\frac{29}{300}+0.104-0.0928W+o(1)<0.94\Lambda .
+\]
+In (PK2) take \(w_0=\max(0.5599,\,0.666-W)\), which is always at most \(0.666<4\Lambda\) and no larger than the full modulus weight. For \(0\le W\le0.1061\), the margin
+\[
+ \frac{w_0}{2}-\frac{w_0^2}{16\Lambda}
+                 -\left(\frac{29}{300}+0.104-0.0928 W\right)
+\]
+is a concave quadratic in \(W\), so its minimum on that interval is at an endpoint. Its values at zero and \(0.1061\) are greater than \(0.007\) and \(0.001\), respectively. For \(W\ge0.1061\), \(w_0=0.5599\) is fixed and the margin increases. Thus (PK1) holds throughout the gcd-weight range. The chart exponent is at most \(0.1401<c\), and the ratio together with the fixed difference gives at most one column for each counted pair. This contradicts the near-full common-column exponent.
+
+## Newton breakpoints in the residue determinant
+
+The first one-root residue determinant suffices when every selected outside prime appears with a nonzero multiplier in the grouped root. The unique-minimum rule for prime valuations applies directly to the auxiliary equation. For a fixed auxiliary polynomial, its nonzero coefficient primes and finitely many degree breakpoints account for all the selected outside prime factors.
+
+### Valuation breakpoints of the auxiliary equation
+
+Suppose a nonempty chart has a nonzero equation
+\[
+ F(z,v)=\sum_{(a,j)\in\mathcal S} c_{a,j} z^a v^j=0,\qquad
+ 0\le j\le M ,
+\]
+with integer coefficients of polynomial height in \(X\), uniformly at fixed truncation. In \(\mathcal S\) retain only terms with \(c_{a,j}\ne0\). A prime \(p\) from a selected original squarefree root of degree \(e\) on one term of a grouped ratio is assumed to occur in no other original factor of that ratio. If that degree position uses a nonzero grouped-root multiplier \(i\), its valuations have the form
+\[
+ (v_p(z),v_p(v))=\sigma(i,e-qi),\qquad \sigma\in\{1,-1\}.
+\]
+One may allow any fixed finite set \(\mathcal I\) of such nonzero multipliers. The case where the original root contributes the same positive valuation factor to both coordinates gives the same argument after dividing by it.
+
+Let \(J\) be a fixed nonzero integer divisible by all the nonzero coefficients. When \(p\nmid J\), the valuation of each term of \(F\) is \(\sigma(ai+j(e-qi))\). For each fixed \(j\), the minimum is attained at the smallest supported \(a\) when \(\sigma i>0\) and at the largest when \(\sigma i<0\). Let \(a_j\) be that extremum, for each \(j\) that appears. The minimum among the resulting affine functions of \(e\) must be attained twice for the sum to vanish. For every two distinct \(j,j'\) their slopes differ, and their equality forces
+\[
+ e=qi+i\,\frac{a_{j'}-a_j}{j-j'}.
+\]
+Thus for each \(i,\sigma\) there are at most \(\binom{M+1}{2}\) exceptional original degree indices \(e\). The count is uniform even though the polynomial and the normalized breakpoints \(eL\) may depend on the box and on the chart. In terms of scaled measures these are a bounded list of degree positions. If desired one can pass to a subsequence for the positions in a fixed compact degree interval. For counting, it suffices to use the original outside-coordinate cap \(\delta+o(1)\) at each position, which bounds their combined mass by \(2|\mathcal I|\binom{M+1}{2}\delta+o(1)\) without requiring any uniformity for the locations. This is the useful way to handle chart-dependent breakpoint locations.
+
+The nonzero coefficients were fixed before this count. Their product is nonzero and of polynomial height at fixed truncation, even when some coefficients of the rectangular support vanish. A form with a single supported term has no solution on unit rational coordinates. If some \(j\)-slices are absent, simply omit them. No assumption of generic coefficients or of a full support is needed.
+
+If primes from two factors can coincide only on a fixed polynomial-height integer \(D\), take \(J=D\prod_{\mathcal S}c_{a,j}\). Then the same conclusion holds at every selected outside prime not dividing \(J\). The other primes are supported on this fixed integer and can be counted by divisor allocation. The bound permits the narrow degree of \(F\) to grow as \(L\to0\) with fixed \(M\) and a fixed number of multiplier classes.
+
+### An exclusion using only the shared row factor
+
+At \(d=1/3,\Gamma=1/2\), put \(c=1/6\). Suppose a row letter \(A\) has nonatomic mass strictly above \(0.164\) in a compact band of scaled degrees at least four. This ensures that a continuity subband strictly above four still contains more than \(0.164\). Let \(T\) be the shifted target letter and \(B\) the column letter. The following target sector is impossible:
+\[
+ \int|r-3|\,d\nu_T(r)\le 0.0224 .
+ \tag{NB1}
+\]
+The hypothesis on the opposite letters is entirely on the row letter \(A\).
+
+Use the complete-label realization, with part caps arbitrarily close to \(c\) and edge exponent arbitrarily close to \(2c\). As usual one can thin to injective label-to-complete-value maps at fixed-truncation divisor loss. For the row letter freeze a prescribed block of outside roots of normalized mass \(0.164\), up to arbitrarily small rounding errors, in the indicated subband. Count its root records at that cost and select one giving the lower edge exponent \(2c-0.164\) up to arbitrary losses. Its full product \(F_0\) divides every retained row term, and the row count in its fibre is at most \(X^{(c-0.164+o(1))L}\) with arbitrarily small extraction loss. The fibre edge count, column cap and this row cap give two distinct fixed rows with common-column exponent arbitrarily close to \(c\) by ordered two-star averaging. Indeed the star exponent is \(3c-2(0.164)\) up to losses, its diagonal has a strict deficit \(c-0.164>0\), and the row-pair dictionary exponent is \(2(c-0.164)\). All these margins absorb the original graph and window losses.
+
+The two complete targets satisfy \(T_2-T_1=D\ne0\) for the fixed rows, with the sign of \(D\) allowed to vary. By the common factor \(F_0\) and primitivity, \(T_2/T_1\equiv1\bmod F_0\) and the ratio is a unit. The fixed common row factor is the full modulus for the determinant. Take \(kL\to4\) and \(Q=\operatorname{rad}F_0\), with shallow size \(b_Q\in[0.1639,0.1641]\) up to vanishing errors. Its primes are in bounded scaled-degree anatomic positions and are squarefree in the original roots.
+
+Group both targets unweighted at \(q=\lfloor3/L\rfloor\). Let \(z\) be the ratio of their radical-root products, and let \(v\) contain the signed exponent corrections and any negligible exceptional coefficients. All variables are units modulo \(F_0\), and \(v z^q\equiv1\bmod F_0\). The normalized narrow height is at most \(1/3+o(1)\). The numerical wider height is at most \(0.0224+o(1)\). The limiting first moment is one and the total \(T\)-mass is \(1/3\), so the absolute error about degree three decomposes into equal positive and negative parts for each target. A numerator of the ratio correction can contain at most the positive part from one target and the negative part from the other. The denominator is analogous. Rounding \(q\) changes these limits by \(o(1)\), and no moment escapes at the minimum nonatomic endpoint.
+
+Use only the first determinant step of (QD2). For \(M=7\), \(r_0=0.5\), \(\alpha=0.99\), and \(R=\lfloor r_0/L\rfloor\), the rectangular support of degree at most \(R\) in \(z\) and \(M\) in \(v\) gives determinant height parameter
+\[
+ B\le\tfrac16+7(0.0224)+o(1)
+      <0.324522=\frac{0.1639\cdot0.99\cdot8\cdot0.5}{2}.
+\]
+The Taylor order check is \(0.99\cdot8\cdot0.5=3.96<4\). Therefore in every \(z\bmod Q\) chart the rank drops and there is a nonzero polynomial equation \(F(z,v)=0\) with wide degree at most seven. Its coefficients can be bounded by maximal minors of the integral evaluation matrix after clearing row denominators. These minors have polynomial height in \(X\) at fixed truncation, since their sizes are bounded independently of \(X\). The height bound makes the product of the nonzero coefficients an integer of polynomial height, which is the input to the valuation count.
+
+For each chart take the product of its nonzero coefficients and \(D\) as the integer \(J\). A prime of \(T_1\) not dividing \(D\) cannot divide \(T_2\). Every original nonpacked outside prime of \(T_1\) not dividing \(J\) hence has the breakpoint form above, with \(i=1\) and one fixed sign. There are at most \(\binom82=28\) exceptional original degree positions in the chart. The packed coordinate has vanishing normalized root mass, taking the compression index above all bounded scaled degrees used in the argument. The parts of the outside roots in these positions can be enumerated at normalized cost \(O(\delta)+o(1)\). At every other original outside position, all prime factors divide \(J\). Their allocation to original degree positions is divisor-many at fixed truncation. For example, squarefree root parts are chosen from the prime support of \(J\), and the number of allocation patterns is at most \((K+1)^{\omega(J)}=X^{o(1)}\) for fixed number \(K\) of original positions. This bounds the \(T_1\)-outside label count per chart by \(X^{(O(\delta)+o(1))L}\).
+
+The complete-label map fixes \(T_1\) given its outside vector, and the first fixed row and the signed equation fix the complete column. After the injective thinning this is at most one actual column per such vector. Equivalently a fixed complete column has only divisor-many original representations. The shallow charts cost at most \(0.1641+o(1)\) in the normalized exponent, and \(\delta\) can be taken small after \(M\) is fixed. This is strictly below \(c\), contradicting the selected common-column count, and proves (NB1).
+
+### A profile inequality from the first residue determinant
+
+At \(d=1/3,\Gamma=1/2\), let \(A,T\) be distinct letters and
+write \(H_A(\kappa)=\nu_{A,\mathrm{na}}((\kappa,\infty))\).
+For every \(a,\kappa>0\) and every positive integer \(M\),
+\[
+ \int \min_{j\ge1,\ j\in\mathbb Z}
+ \left(|r-aj|+\frac{\kappa j}{M(M+1)}\right)\,d\nu_T(r)
+ \ \ge\ \frac{\kappa}{2M}\min\{1/6,H_A(\kappa)\}.
+ \tag{NB2}
+\]
+
+Fix \(p<\min\{1/6,H_A(\kappa)\}\) positive. Take the shared
+row block of root mass \(p\) in a compact continuity band
+strictly above \(\kappa\). The ordered star argument above
+supplies two distinct fixed rows with common-column exponent
+arbitrarily close to \(1/6\), using the same fibre count
+with \(p\) in place of \(0.164\). Their common factor is the
+congruence modulus and its radical is the shallow record.
+In particular \(kL\to\kappa\) and the shallow exponent tends
+to \(p\).
+
+Let \(i(r)\) be a bounded positive integer assignment on a
+finite partition into degree intervals. Use continuity
+endpoints and choose the same assignment on both shifted
+targets. Group the roots with multipliers \(i\) at exponent
+\(q=\lfloor a/L\rfloor\). The limiting narrow and wider
+height caps are
+\[
+ h=\int i(r)\,d\nu_T(r),\qquad
+ E=\int |r-ai(r)|\,d\nu_T(r).
+\]
+For the wider height, each side of the signed ratio uses
+one positive and one negative correction from the identical
+target profiles. The absence of escaped numerical moment
+allows these height bounds to pass to the limit.
+
+The Taylor rank drop applies as soon as
+\(hr_0+EM<\alpha p(M+1)r_0/2\) and
+\(\alpha(M+1)r_0<\kappa\), with \(0<\alpha<1\).
+The Taylor coefficients are integral for every integer
+monomial exponent, so these conditions permit any \(r_0>0\)
+that fits the minor precision. The valuation-breakpoint
+count then leaves only subpower-many outside labels per
+shallow residue class in the limiting normalized exponent.
+Its chart cost is \(p<1/6\). Therefore any strict violation
+of \(E+\kappa h/(M(M+1))\ge \kappa p/(2M)\) would exclude the
+box, by taking \(\alpha\) close to one and \(r_0\) just below
+\(\kappa/(M+1)\).
+
+On the compact limiting degree support the pointwise
+minimizers in (NB2) range over finitely many integers.
+There are finitely many transitions in the minimum of the
+piecewise-linear objectives. At a tie the competing
+objectives agree, so shifting the transition away from atoms
+costs arbitrarily little in the combined integral. Thus
+the permitted assignments approach the displayed minimum.
+Finally take \(p\) up to \(\min\{1/6,H_A(\kappa)\}\). If the
+latter is zero, the bound follows from nonnegativity.
+
+### A profile with a broader target window
+
+Take
+\[
+ \nu_A=c\delta_{7/4}+c\,\operatorname{Unif}[4,4.5],\quad
+ \nu_B=c\delta_3+c\,\operatorname{Unif}[2,4],\quad
+ \nu_T=c\delta_3+c\,\operatorname{Unif}[2.7312,3.2688].
+\]
+All masses are \(1/3\), all moments are one, and all nonatomic masses are \(c\). The target discrepancy is \(0.2688/12=0.0224\), and the row hypothesis holds. The mixed
+trimmed packing bound permits every lock of mass at most \(c\)
+because the maximum scaled degree is \(4.5\).
+[Mixed trimmed packing](ABC_DIFFUSE_FACTOR_GRAPH.md#a-trimmed-packing-bound-using-mixed-additive-moments)
+
+
+Under the same opposite profile hypotheses, (NB2) also
+excludes \(T=(1/6)\delta_3+(1/6)\operatorname{Unif}[2.72,3.28]\).
+With \(a=3,\kappa=4,M=7\), the minimizing integer on this
+target is \(j=1\). Its mean absolute discrepancy is
+\(7/300\), while (NB2) requires at least \(1/42\) after
+subtracting the constant multiplier term.
+
+### The symmetric diffuse profile satisfies the new inequality
+
+Take \(\nu_i=(1/6)\delta_3+(1/6)\operatorname{Unif}[2,4]\) on
+each letter. Then \(\kappa p\le1/3\) and \(\kappa p^2\le1/18\)
+for \(p\le H_A(\kappa)\). Any violation of (NB2) by an assignment
+would have \(h\ge1/3\ge2p\), \(p(M+1)/2>h\), and therefore
+\(M\ge4\) and \(E<1/24\). Put \(x=p(M+1)/(2h)>1\).
+Using \(1/M\le p/((2h-p)x)\) and
+\((x-1)/x^2\le1/4\) in the failed inequality gives
+\[
+ E<\frac{\kappa p^2}{8(2h-p)},\qquad Eh\le\frac1{216}.
+\]
+If \(a\le2\), whole periods of the nearest-grid distance in
+\([2,4]\) give \(E\ge a/48\). The numerical moment gives
+\(ah+E\ge1\), hence \(Eh\ge(1-E)/48>23/1152\), which contradicts
+the upper bound. If \(a>2\), the interval of length two on the
+diffuse part occupies at most one period. Its folded distance
+distribution has unnormalized density at most two, so its distance
+integral is at least one before multiplying by the density \(1/12\).
+This gives \(E\ge1/12\), again a contradiction.
+
+## Projective heights of sparse monomial supports
+
+Work at \(d=1/3,\Gamma=1/2\) and let \(A,T\) be distinct
+letters. Keep the notation \(H_A(\kappa)\) of (NB2).
+Use a spacing \(a>0\) and a bounded positive integer
+assignment \(i(r)\) on the target, constant on finitely
+many intervals with continuity endpoints. For a support
+\[
+ \mathcal P=\bigcup_{j=0}^{M} (I_j\times\{j\}),
+ \qquad B_{\mathcal P}=\int \operatorname{width}_{\mathcal P}
+                  \big(i(r),r-a i(r)\big)\,d\nu_T(r),
+\]
+each \(I_j\) is a finite union of compact intervals.
+Empty slices are allowed. The width of \(\mathcal P\) in
+direction \(\eta\) is
+\(\max_{\mathbf m\in\mathcal P}\mathbf m\cdot\eta-
+  \min_{\mathbf m\in\mathcal P}\mathbf m\cdot\eta\).
+Write \(V=\sum_j |I_j|\), where \(|I_j|\) is length.
+For every such support with \(0<V<\kappa\), one has
+\[
+ B_{\mathcal P}\ \ge\ \frac V2\min\{1/6,H_A(\kappa)\}.
+ \tag{PS1}
+\]
+A common horizontal translation of the slices leaves
+both sides unchanged. Rectangles recover the
+fixed-assignment form of (NB2) as \(V\uparrow\kappa\).
+
+### The primitive evaluation rows
+
+Fix \(p<\min\{1/6,H_A(\kappa)\}\) positive. As for (NB2),
+freeze outside row factors of mass \(p\) in a compact
+continuity band strictly above \(\kappa\). Two distinct
+rows in one fibre have near-full common columns, with
+the shared full factor giving \(v z^q\equiv1\) modulo
+\(F_0\), \(qL\to a\). Its radical \(Q\) has normalized
+height \(p+o(1)\) and \(kL\to\kappa\) is an admissible
+Taylor depth. Use the same assignment \(i\) on the two
+shifted targets \(T_1,T_2\).
+
+Translate the slices if needed to use nonnegative narrow
+degrees. At fixed \(L\), the monomials are \(z^u v^j\) with
+integer \(u\) and \((Lu,j)\in\mathcal P\). Their number
+\(D_0\) satisfies \(LD_0=V+O_{\mathcal P}(L)\).
+For each evaluation row, choose primitive integer
+coordinates for the rational monomial vector. Its logarithmic
+maximum norm is
+\[
+ \max_{(Lu,j)\in\mathcal P}\log|z^u v^j|
+ -\sum_{\ell}\min_{(Lu,j)\in\mathcal P}
+             v_\ell(z^u v^j)\log\ell.
+ \tag{PS2}
+\]
+Indeed the sum accounts for the unique positive rational
+scaling that makes the row primitive integral. The
+archimedean maximum is negligible in the height limit,
+since the two targets come from the same dyadic root
+box and all degrees are fixed in that limit. Exceptional
+coefficients can be fixed in the anatomic extraction.
+
+For an original prime contribution at scaled degree \(r=eL\),
+the target supplies the direction
+\((i(eL),eL-qL i(eL))\), divided by \(L\) in the valuation
+of an evaluation entry. The two targets carry opposite signs
+in (PS2). A shared prime causes no additional cost, since
+the minimum of a sum is at least the sum of the minima.
+The two targets have the same limiting root measure and
+no escaped first moment. Their combined contribution to
+the second term of (PS2), divided by \(\log X\), is therefore
+at most \(B_{\mathcal P}+o(1)\). This is the ordinary
+projective height of a monomial vector evaluated using
+the actual support.
+[Burgos Gil–Philippon–Sombra, canonical toric metric and point height](https://arxiv.org/pdf/1403.4048)
+
+### Taylor minors and the valuation count
+
+In a fixed \(z\bmod Q\) class, the primitive row scalars
+are units at the primes dividing \(Q\). The first Taylor
+determinant thus has divisibility \(Q^{D_0(D_0-1)/2}\).
+Its precision uses \(D_0<k\), by \(V<\kappa\).
+The archimedean bound per row is \(B_{\mathcal P}+o(1)\)
+in the \(X\)-exponent. If \(B_{\mathcal P}<pV/2\), every
+maximal-size determinant vanishes and each chart has a
+nonzero integral auxiliary polynomial. Its coefficient
+height is polynomial in \(X\) at fixed truncation, by
+solving a maximal-rank subsystem using minors.
+The Newton breakpoint count applies because \(M\) and
+the multiplier list are fixed. Primes on the two targets
+coincide only at primes of their fixed difference. Away
+from those primes and the nonzero coefficient product,
+the auxiliary confines the target's outside primes to
+a bounded list of degree positions per chart.
+Their normalized cost tends to zero, while the
+shallow chart cost is \(p<1/6\). This contradicts the
+near-full common columns. Taking \(p\) up to the indicated
+minimum gives (PS1).
+
+### A profile satisfying the rectangular inequalities
+
+Put \(c=1/6\) and consider the profile
+\[
+ \nu_A=c\delta_{7/4}+c\operatorname{Unif}[4,4.5],\qquad
+ \nu_B=c\delta_3+c\operatorname{Unif}[2,4],\qquad
+ \nu_T=c\delta_3+c\operatorname{Unif}[2.7,3.3].
+\]
+All masses are \(1/3\) and all moments are one.
+For \(\kappa=4\), take \(p=83/500\), \(a=3\), \(i=1\)
+and \(M=7\). Center the slices at a common horizontal
+coordinate. At \(j=0,7\) take width \(297/1000\), and at
+\(j=1,\ldots,6\) take width \(561/1000\). Then
+\(V=99/25<4\) and the width in direction \((1,t)\) is
+\[
+ \max\{561/1000+5|t|,\ 297/1000+7|t|\}.
+\]
+The transition is \(|t|=33/250\). Integrating the two
+linear parts and the atom gives
+\[
+ B_{\mathcal P}=\frac{1024}{3125}
+             <\frac{8217}{25000}=\frac{pV}{2}.
+\]
+Thus (PS1) excludes the profile in this row-target
+orientation. The gap is \(1/1000\).
+
+The profile satisfies (NB2) in every orientation.
+To see this, let \(p\le H_A(\kappa)\) and use the
+fixed-assignment form with \(h=\int i\,d\nu_T\) and
+\(E=\int|r-ai|\,d\nu_T\). We have \(h\ge1/3\),
+\(\kappa p\le2/3\), and \(\kappa p^2\le1/9\).
+Its right side for \(E\) is at most
+\[
+ \frac23\max_{M\ge1}\frac{(1/2-2/(M+1))_+}{M}
+ =\frac1{42}.
+\]
+The maximum follows from
+\((M-6)(M-7)\ge0\) for integers \(M\).
+If \(a\) exceeds the width of the target's diffuse interval,
+the interval lies within one period of distance to
+\(a\mathbb Z\). Its folded-distance density before
+normalization is at most two, giving \(E\ge1/40\) on \(T\)
+and \(E\ge1/12\) on \(B\). If \(A\) is the target, the
+other two letters have \(\kappa p\le9/20\), so the
+rectangular right side is at most \(9/560<1/48\), while
+\(E\ge1/48\). For \(a\) at most the width of the target
+interval, complete periods give \(E\ge a/48\), and the
+numerical moment gives \(ah+E\ge1\).
+A failed inequality would have \(E<1/42\). With
+\(x=p(M+1)/(2h)>1\), the calculation using
+\((x-1)/x^2\le1/4\) gives
+\(Eh<\kappa p^2/12\le1/108\), whereas
+\(Eh\ge(1-E)/48\). This is a contradiction.
+The sparse support thus supplies a strict additional
+restriction.
+
+### The broad symmetric profile and sparse supports
+
+For \(\nu_i=c\delta_3+c\operatorname{Unif}[2,4]\) on each
+letter, (PS1) holds for all its supports with one grouped
+root and positive integer multipliers. Suppose a support
+gave \(B_{\mathcal P}<pV/2\). Let \(m\) be the difference
+of its largest and smallest occupied wider degrees, and
+\(R\) its largest horizontal slice diameter. Then
+\(V\le(m+1)R\) and \(B_{\mathcal P}\ge hR\), so
+\(h<p(m+1)/2\). As \(h\ge1/3\ge2p\), this requires \(m\ge4\).
+Choose monomials in the two extreme wider slices.
+Their difference in width gives \(B_{\mathcal P}\ge mE'\)
+for \(E'=\int|r-a'i(r)|\,d\nu_T(r)\), with \(a'\) the
+spacing shifted by the difference of their scaled narrow
+degrees divided by \(m\). The row support gives
+\(\kappa p\le1/3\) and \(\kappa p^2\le1/18\), hence
+\[
+ E'<\frac{\kappa p}{2m}\le\frac1{24},
+ \qquad
+ E'h<\frac{\kappa p^2(m+1)}{4m}\le\frac5{288}.
+\]
+A spacing \(a'\le0\) gives \(E'\ge1\). If \(a'>2\) the
+folded-distance density on the diffuse interval gives
+\(E'\ge1/12\). Finally if \(0<a'\le2\), whole periods
+give \(E'\ge a'/48\), and \(a'h+E'\ge1\) gives
+\(E'h>23/1152>5/288\). Each case contradicts a strict
+determinant margin.
+
+## Two-root Newton count by specialization
+
+Work at \(d=1/3,\ \Gamma=1/2\), and put \(c=1/6\). Use the pair-fibre bound (EN2) for the outside labels on a free pair \(U,V\). On these letters divide the bounded scaled-degree coordinates into two groups, with disjoint prime supports. Assume all atoms of this pair belong to group 1. Let the combined nonatomic masses of groups 1 and 2 be \(t_1,t_2\), so \(t_1+t_2=2c\).
+
+Use one unweighted grouped root in each group, based at degree \(a_i>0\), so \(q_iL\to a_i\). The ratio of group root products is denoted by \(z_i\), and the wider signed correction for the full \(U/V\) ratio by \(v\). Let \(h_i\) be bounds for their normalized narrow heights, and \(E\) a bound for the wider numerical rational height. The usual negligible exceptional factors can be included in the correction or fixed at negligible cost. On the remaining letter freeze bounded-scale roots of cost \(\mu\) and full product \(n\), of fullness \(kL\to\kappa>0\). Let \(Q\) be the shallow modulus used to partition both \(z_i\) coordinates, of normalized weight \(b_Q\), with \(b_Q\ge b\) and \(v_\ell(Q)\le\lfloor v_\ell(n)/k\rfloor\) at its primes.
+
+For any integer \(M\ge1\) and constants \(r_1,r_2>0,\ 0<\alpha<1\), set
+\[
+ y=\sqrt{2\alpha(M+1)r_1r_2}.
+\]
+If
+\[
+ y<\kappa,\qquad
+ h_1r_1+h_2r_2+ME < \frac23 b\, y,
+ \tag{TN1}
+\]
+then the normalized count is at most
+\[
+ \mu+2b_Q+\max(t_1,t_2)
+ \tag{TN2}
+\]
+up to arbitrarily small outside-window and extraction losses. In particular strict inequality of this coefficient from \(2c\) excludes the profile. The Taylor determinant supplies the auxiliary polynomial. Specialization and valuation breakpoints then count the labels.
+
+### First determinant
+
+Primitivity and the sum relation give a unit congruence \(v z_1^{q_1}z_2^{q_2}\equiv K\bmod n\) for each frozen modulus. In each pair of residue classes of \(z_1,z_2\bmod Q\), use rectangular monomial support of degrees at most \(R_i=\lfloor r_i/L\rfloor\) in \(z_i\) and at most \(M\) in \(v\). Write \(D_0=(R_1+1)(R_2+1)(M+1)\) and \(N=\lfloor\alpha D_0\rfloor\). Denominator clearing multiplies each row by a unit modulo \(n\) and gives integer entry heights at most \(X^{h_1r_1+h_2r_2+ME+o(1)}\).
+
+At each \(\ell\mid Q\), substitute \(v=K z_1^{-q_1}z_2^{-q_2}\) in the exact local reference, preserving congruence modulo \(\ell^{v_\ell(n)}\). In the two shallow root variables the signed binomial Taylor coefficients are integral. Distinct Taylor vectors have weighted divisibility at least \(v_\ell(Q)\) times their total orders. Determinants with two occurrences of the same Taylor vector vanish. The \(N\) smallest two-variable total orders have largest order \(\sqrt{2N}+O(1)\) and mean order \(\frac23\sqrt{2N}+O(1)\), by summing the \(s+1\) monomials of order \(s\). The first condition in (TN1) gives largest order below \(k\), so replacement errors of valuation at least \(v_\ell(n)\) can be treated at order \(k\) or higher. Thus the prime-adic divisibility exponent per row in an \(N\)-row minor is at least \((2/3)b y+o(1)\). The second condition in (TN1) forces all such minors to vanish.
+
+Selecting a nonzero integer kernel vector gives a polynomial \(F(z_1,z_2,v)\) in the prescribed rectangle that vanishes on all original sample tuples in this chart. Its coefficients have polynomial height at fixed truncation, by using maximal minors of the evaluation matrix. Polynomial height suffices for the divisor allocations below.
+
+### Specialization and outside labels
+
+Specialize the exact value of \(z_2\). There are only boundedly many exceptional rationals for which \(F(z_1,z_2,v)\) becomes the zero polynomial, because at least one of its coefficient polynomials in \(z_2\) is nonzero. For each fixed exceptional value, its reduced numerator and denominator recover the group-2 original roots up to divisor-many allocations: \(z_2\) is their unweighted ratio and the two free letters have disjoint primes. Consequently the group-2 outside vectors are determined up to subpower choices, while the group-1 outside factors cost at most \(t_1\) up to outside-window errors.
+
+For nonexceptional \(z_2\), enumerate it at normalized cost at most \(t_2\). This is where excluding all atomic factors from group 2 is used. The specialized polynomial has polynomial coefficient height after clearing its \(z_2\) denominators. Take \(J\) to be the product of its nonzero integer coefficients. For a group-1 outside prime not dividing \(J\), its valuations at \(z_1,v\) are proportional, with common signed factor, to \((1,e-q_1)\), where \(e\) is its original degree. Primitivity across letters and disjoint groups ensure that no other original factor changes these valuations. At each exponent \(j\) of \(v\), choose the unique extremal exponent of \(z_1\) giving the smallest valuation. The minimum among the resulting affine functions of \(e\) must tie, so at most \(2\binom{M+1}{2}\) original degree positions are exceptional across the two letter signs. At every other group-1 position the primes lie in \(J\), and divisor allocation counts all their contributions at subpower cost. Each moving exceptional position has outside root cap arbitrarily small. Hence the two free outside vectors are determined up to subpower and arbitrarily small normalized errors.
+
+The pair-fibre bound (EN2) converts either outside-label count to the triple count. The number of shallow charts contributes \(2b_Q\). Include the initial modulus cost \(\mu\) to obtain (TN2).
+
+### An explicit excluded profile
+
+Let
+\[
+ \phi=\frac{1+\sqrt5}{2},\qquad \rho=\frac1{6+\phi},\qquad
+ \delta=\frac3{500},\quad \sigma=\frac1{500},
+\]
+and put \(r_0=(12-\delta)/(3+\rho)\), \(r_1=r_0+\delta\), and \(r_2=\rho r_0\). Give both free letters the measure
+\[
+ \nu_U=\nu_V=c\delta_{r_0}
+       +\tfrac1{12}\operatorname{Unif}[r_1-\sigma,r_1+\sigma]
+       +\tfrac1{12}\operatorname{Unif}[r_2-\sigma,r_2+\sigma].
+\]
+On the modulus letter put
+\[
+ \nu_T=c\delta_{657/160}
+          +\tfrac1{16}\operatorname{Unif}[4.5,4.6]
+          +\tfrac5{48}\operatorname{Unif}[0,0.6].
+\]
+All masses are \(1/3\), moments are one, and all nonatomic masses are \(c\). In group 1 put the atom \(r_0\) and the interval around \(r_1\) of each free letter, using base \(a_1=r_0\). In group 2 put the interval around \(r_2\) of each free letter, using base \(a_2=r_2\). Then \(t_1=t_2=c\), \(h_1=1/4,\ h_2=1/12\), and
+\[
+ E=\frac{\delta}{12}+\frac{\sigma}{24}=\frac{7}{12000}.
+\]
+Freeze normalized root mass \(0.0554\) from the modulus band's nonatomic mass \(1/16\) in \([4.5,4.6]\). Use its radical as \(Q\), with \(b=0.05535,\ b_Q\le0.05545,\ \mu\le0.05545,\ \kappa=4.5\). Set \(M=60,\ r_1'=0.2,\ r_2'=0.6,\ \alpha=0.99\) in (TN1), where the primed variables denote determinant degree parameters rather than the group centers. Then
+\[
+ y=\sqrt{14.4936}\in(3.806,3.808),\qquad
+ B=\tfrac14(0.2)+\tfrac1{12}(0.6)+60(7/12000)=0.135.
+\]
+The divisibility lower bound \((2/3)(0.05535)y\) exceeds \(0.1404\). The coefficient in (TN2) is at most \(c+3(0.05545)<1/3\), a contradiction.
+
+### Comparison with the rectangular one-root inequality
+
+The fixed-assignment bound from (NB2) holds in every orientation. For any supplying letter of these profiles, \(\kappa p^2\le3.85/144\) and \(\kappa p\le3.85/12\) for any tail cutoff \(\kappa\) and eligible diffuse mass \(p\). This uses the two disjoint support bands and bounds their complete masses. For any positive assignment \(i(r)\), \(h\ge1/3\). A violating \(M\) must satisfy \(M\ge4\), and then \(E<\kappa p/(2M)<0.041\). The rectangular bound also yields \(E<\kappa p^2/[8(2h-p)]\): set \(x=p(M+1)/(2h)>1\), use \(1/M\le p/[x(2h-p)]\), and maximize \((x-1)/x^2\le1/4\). Consequently \(Eh<\kappa p^2/12\le3.85/1728\).
+
+On a free letter, in contrast, \(E/a\ge1/400\) for every \(a>0\). For \(a\le0.004\) use complete mesh periods in the diffuse intervals, and for \(0.004<a\le0.012\) use the minimum average distance on an interval no longer than a period. For \(a>0.012\), write \(d_j=\operatorname{dist}(r_j,a\mathbb Z)\). Since \(d_0+d_1\ge\delta\), and evaluating each uniform-interval integral instead at its center loses at most \(\sigma/2\) times its mass, one has
+\[
+ E\ge(\delta-\sigma)/12+(d_0+d_2)/12.
+\]
+This gives the claimed lower bound for \(a\le2/15\). For \(2/15<a\le0.6\), let \(n,m\) be nearest integers to \(r_0/a,r_2/a\), with \(n\ge6\). The algebraic conjugates \(\rho,\rho'\) solve \(41z^2-13z+1=0\). Thus
+\[
+ |m-\rho n||m-\rho'n|\ge1/41,\qquad \rho'-\rho=\sqrt5/41.
+\]
+If \(|m-\rho n|<1/(3n)\), the product times 41 is strictly less than \((\sqrt5+41/(3n^2))/3<1\), impossible. It follows that \(d_0+d_2\ge a/(3n)\), since \(0<\rho<1\). As \(n\le r_0/a+1/2\), this yields \(E/a\ge1/(3000a)+a/150>1/400\) by the arithmetic-geometric mean inequality. For \(a>0.6\) the lower cluster is entirely below the first positive assigned mesh point, so \(E/a\ge(1-0.51/a)/12>1/400\). On the modulus letter the broader interval \([0,0.6]\) gives \(E/a\ge(5/48)/8>1/400\) by complete periods when \(a\le0.6\), and its entire mass below the first positive point gives even more for \(a>0.6\). Thus in all cases \(h\ge(1-E)/a\) gives \(Eh>0.959/400>3.85/1728\) whenever \(E<0.041\), a contradiction to a violation.
+
+
+
+### Two-root projective row heights
+
+If the free letters have identical limiting degree measures,
+the same proof permits sparse horizontal supports
+\(\mathcal P=\bigcup_j(P_j\times\{j\})\subset\mathbb R^2\times
+\{0,\ldots,M\}\), with \(P_j\) bounded finite unions of
+rectangles. Set \(V=\sum_j\operatorname{area}(P_j)\).
+Use \(y=\sqrt{2\alpha V}\) in (TN1) and replace its row-height
+bound by
+\[
+ \int\operatorname{width}_{\mathcal P}
+     \big(i_1(r),i_2(r),r-a_1i_1(r)-a_2i_2(r)\big)\,d\nu_U(r).
+ \tag{TN3}
+\]
+Here \(i_i\) is the indicator of the corresponding group.
+The archimedean logarithms in the projective row formula
+tend to zero on the numerical scale, using equality of the
+limiting profiles and tightness of their numerical moments.
+The two signed finite-place sums give the width integral
+as in (PS2). The monomial count has \(L^2D_0\to V\), so the
+same Taylor orders and specialization bound apply.
+
+### A count with several specialized roots
+
+The specialization argument extends to \(m\ge2\) disjoint
+groups on the two free letters, with all atoms confined
+to group one. Let the pooled outside masses be \(t_j\)
+with sum \(2c\). Use the analogous congruence with one
+grouped ratio \(z_j\) per group and shallow residues
+modulo \(Q\) in all \(m\) coordinates.
+For a rectangular support put
+\(V=(M+1)\prod_{j=1}^m r_j\) and
+\(B=\sum_j h_j r_j+ME\). For the projective support when
+the two free profiles agree, take \(V\) to be the sum of
+the \(m\)-dimensional slice volumes and \(B\) the
+corresponding width integral. Put \(y=(m!\alpha V)^{1/m}\).
+The smallest Taylor multiindices give largest order
+\(y/L+O_m(1)\) and mean order
+\(my/((m+1)L)+O_m(1)\). Thus the two conditions
+\[
+ y<\kappa,\qquad B<\frac{m}{m+1}b y
+ \tag{TN4}
+\]
+give a nonzero auxiliary polynomial on each chart.
+
+Specialize \(z_2,\ldots,z_m\). Their dictionaries have normalized
+exponents at most \(t_2,\ldots,t_m\), since they involve only
+outside mass. At a specialization where the auxiliary survives,
+the Newton breakpoints account for the group-one outside factors
+and the cost is \(\sum_{j\ge2}t_j\). The exceptional specializations
+lie on a fixed nonzero coefficient polynomial in \(m-1\)
+variables. Over finite dictionaries \(S_j\), a nonzero polynomial
+of fixed degrees has at most
+\(O(\sum_{j\ge2}\prod_{i\ge2,\,i\ne j}|S_i|)\)
+zeros. One proves this by choosing a nonzero coefficient
+polynomial in the last variable, counting its exceptional
+specializations by induction, and using the degree bound
+elsewhere. Counting exceptional vectors and then the
+group-one outside labels costs at most
+\(2c-\min_{j\ge2}t_j\).
+In both branches the outside pair-fibre estimate bounds
+the number of full triples with an arbitrarily small
+normalized loss. Including the modulus and chart costs gives
+\[
+ d\le \mu+m b_Q+2c-\min_{1\le j\le m} t_j
+ \tag{TN5}
+\]
+whenever (TN4) holds.
+
+### Limits of rank information in several roots
+
+Fix \(m\ge2\) and finitely many nonzero integer multiplier
+directions \(\mathbf i\in\mathbb Z^m\). For each direction choose
+a primitive nonzero integer vector \(\mathbf u_{\mathbf i}\)
+orthogonal to it. Take the Laurent product of the distinct
+binomials \(\mathbf z^{\mathbf u_{\mathbf i}}-1\), identifying
+duplicates up to Laurent units, and multiply by a monomial to
+obtain a polynomial \(G\). At every weight
+\((\pm\mathbf i,s)\) the corresponding binomial has both
+terms in its initial form. Initial forms multiply, and a
+non-monomial Laurent polynomial cannot divide a monomial.
+Thus every nonzero multiple of \(G\) has a repeated least
+weight for these directions and for every wider slope \(s\).
+
+The multiples of \(G\) in a rectangular monomial space
+of narrow degrees \(R_j\to\infty\) and fixed wider degree
+\(M\) have dimension fraction tending to one. Multiply the
+space with each \(R_j\) reduced by \(\deg_{z_j}G\) by \(G\).
+These multiples can in fact be an exact evaluation kernel:
+the positive rational points on the union of the split
+subtori \(\mathbf z^{\mathbf u_{\mathbf i}}=1\), with arbitrary
+positive rational wider coordinate, are Zariski dense there.
+Take finitely many evaluations spanning the restriction
+dual. This is an abstract rank obstruction. Its arithmetic
+sample has no prescribed prime power valuations or height caps.
+
+There is also a dimension cost to forcing unique weights
+on the monomial support. If a single fixed multiplier
+direction \(\mathbf i\) of target root mass \(\tau>0\)
+gives an injective weight on each wider slice, and \(W_L\)
+is the largest within-slice integer width in that direction,
+there are at most \((M+1)(W_L+1)\) columns. The projective
+width bound is at least \(\tau L W_L\). For a growing
+number \(D_L\) of columns this is of order at least
+\(L D_L\), while the ordinary \(m\)-variable Taylor orders
+give divisibility per row of order at most \(L D_L^{1/m}\).
+With \(M\) fixed and \(m\ge2\) these bounds cannot force
+rank drop. The specialization method handles repeated
+weights by counting the exceptional specializations.

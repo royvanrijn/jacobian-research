@@ -3427,3 +3427,68 @@ If the short term has limiting numerical height zero, neither tall term can conc
 Thus a zero-short-height balanced limiting sequence needs at least \(1/3\) diffuse mass on the two tall letters together, and numerical weight on both tall terms spread across more than one limiting normalized degree or escaping to arbitrarily large normalized degrees.
 
 The [four-prime graph argument](ABC_WIDE_COFACTOR_CONGRUENCES.md#strict-residual-mass-at-the-balanced-13-endpoint) gives the stronger necessary condition \(\Delta>1/3\) for every balanced limiting box. The [bounded-variable extension](ABC_WIDE_COFACTOR_CONGRUENCES.md#necessary-conditions-at-normalized-exponent-13) forces every limiting profile at \(d=1/3\) to be balanced and gives \(\Delta\ge1/2\), or \(\Delta\ge2/3\) if the short height tends to zero. These lower bounds hold already for the nonatomic part of the limiting root mass distributions in the scaled degrees.
+
+## Root spacing in sliced residue lattices
+
+Release a \(p\)-th power and a \(q\)-th power on the two free letters, with original root exponents \(r_1,r_2\). Choose a common divisor \(g\) and put
+\[
+ P=p/g,\qquad Q=q/g,\qquad \rho_1=Pr_1,\qquad \rho_2=Qr_2 .
+\]
+Use the notation of the sliced primitive ratio lock (RS). The frozen root mass is \(F\), the effective clearance is \(u\), and the projected area exponent is \(t=\rho_1+\rho_2-u\). Here \(u=w\) for the ordinary rectangle, where \(w\) is the lower modulus weight. In the short-letter real strip, \(u=1-s\), where \(s\) is an upper numerical weight for the complementary short factor. Separating the roots of unity gives \(X^{o(1)}\) ratio lattices.
+
+For either geometry one has
+\[
+ D\le F+\max\!\left\{0,\frac t2+
+  \max\!\left\{\min\!\left(\frac{r_1}{Q},\frac{r_2}{P},\frac{t}{2PQ}\right),
+  r_1-u,r_2-u\right\}\right\}.
+ \tag{RSP}
+\]
+The inner minimum may be replaced by any of its three arguments when a maximum of affine forms is needed. The unsliced bound \(D\le F+(t)_+\) also applies.
+
+## Root congruences on intervals
+
+For fixed \(k\ge1\), the solutions to \(z^k\equiv b\bmod d\), including a nonunit \(b\), are covered by \(O_{k,\varepsilon}(d^\varepsilon)\) classes modulo a divisor of \(d\) of size at least \(d^{1/k}\). At \(p^a\Vert d\), if \(v_p(b)\ge a\), there is one class modulo \(p^{\lceil a/k\rceil}\). Otherwise \(v_p(b)=k\nu<a\) is necessary and \(z=p^\nu z_0\), where \(z_0\) solves a unit equation modulo \(p^{a-k\nu}\). Its unit kernel has at most \(2k\) elements, by the structure of prime-power unit groups including at \(p=2\). Thus \(z\) lies in at most \(2k\) classes modulo \(p^{a-(k-1)\nu}\), with exponent at least \(a/k\). CRT gives the assertion because \((2k)^{\omega(d)}\ll_{k,\varepsilon}d^\varepsilon\).
+
+## The rank-two lattice
+
+Fix one ratio lattice \(\Lambda=\{(Y,Z)\in\mathbb Z^2:Y\equiv\lambda Z\bmod M\}\), with \(\lambda\) a unit modulo \(M\). Send the ordinary rectangle or the real strip to a bounded square by the corresponding invertible real linear map. Its lattice has covolume \(\Delta\gg X^{-t}\). If the points span at most a line through the origin, primitivity of the lifted pair gives at most one pair in the positive quadrant.
+
+Otherwise two independent lattice vectors have bounded lengths. Let \(v\) be a shortest nonzero vector, of normalized length \(\ell\). It is primitive in this lattice, so its real span meets the lattice exactly in \(\mathbb Z v\). The orthogonal projection of the lattice to \(v^\perp\) has positive spacing \(H\), with \(\ell H=\Delta\). Choose a vector projecting to \(H\) and subtract a multiple of \(v\) so that its component parallel to \(v\) has magnitude at most \(\ell/2\). Its length is at least \(\ell\) by minimality of \(v\), giving \(H\ge\sqrt3\,\ell/2\). Some bounded lattice vector projects nontrivially, so \(H\ll1\). There are \(O(H^{-1})\) parallel lattice lines in the square.
+
+In original coordinates write \(v=(v_1,v_2)\). Both normalizations give \(\lvert v_i\rvert\ll X^{\rho_i}\ell\). In the short strip this follows from the inverse triangular map, since its slope has size \(\asymp X^{\rho_1-\rho_2}\) and its transverse width is bounded by the usual first-coordinate scale. When the initial short-strip width bound is larger, use the ordinary rectangle instead, whose area is no larger than the original strip bound. Any one lattice line is a coset of \(\mathbb Z v\), and the steps between its points inside the normalized square have coefficients of magnitude \(O(1/\ell)\).
+
+If \(v_i\ne0\), its lifted coordinate \(Z_i=z_i^k\), where \(k=P\) or \(Q\), lies in one class modulo \(\lvert v_i\rvert\) and an interval of width \(O(\lvert v_i\rvert/\ell)\). The root is dyadic, \(z_i\asymp X^{r_i}\), so its interval width is \(O(\lvert v_i\rvert/(\ell X^{(k-1)r_i}))\) by the mean value theorem. Fix one reduced class from the preceding congruence estimate and divide by its modulus. After an integer translation, the transformed root has box size
+\[
+ O\!\left(1+\frac{\lvert v_i\rvert^{1-1/k}}{\ell X^{(k-1)r_i}}\right)
+ \ll1+\ell^{-1/k}.
+\]
+There are only \(X^{o(1)}\) reduced class choices since the moduli are of polynomial height.
+
+A nonaxial line off the origin has equation \(aY+bZ=c\) with \(abc\ne0\). After fixing both reduced classes, its pullback is
+\[
+ a(x_0+d_1x')^P+b(y_0+d_2y')^Q=c.
+\]
+The polynomial is absolutely irreducible by Eisenstein at a simple root of \(b(y_0+d_2y')^Q-c\) over \(\overline{\mathbb Q}\), after the invertible affine change in \(x'\). When \(P=1\) it is linear with constant leading coefficient. The pure monomials have degrees \(P,Q\) and nonzero coefficients. The weighted affine curve estimate in boxes of sides \(O(1+\ell^{-1/P})\) and \(O(1+\ell^{-1/Q})\) consequently gives \(O_\varepsilon(X^\varepsilon(1+\ell^{-1/(PQ)}))\) points. [Browning–Heath-Brown, equation (3)](https://arxiv.org/pdf/math/0506497)
+
+Summing gives
+\[
+ H^{-1}(1+\ell^{-1/(PQ)})
+ \ll\Delta^{-1}\ell^{\,1-1/(PQ)}
+ \ll\Delta^{-(1+1/(PQ))/2}.
+\]
+The existing nonaxial count also gives \(X^{t/2+\min(r_1/Q,r_2/P)+\varepsilon}\). Take the smaller of these two bounds. The origin line contributes one point by lifted primitivity.
+
+If the direction is axial, the changing lifted coordinate has step exactly \(M\), since the defining lattice congruence is unit. On any line the changing root is in \(X^{o(1)}\) unit classes modulo \(M\). The ordinary root interval has width \(O(X^{r_i})\). In the real strip, with the other tall term now fixed, its width is \(O(X^{r_i} M X^{s-1})\) by the real mean value estimate. This bounds an axial line by \(O_\varepsilon(X^{(r_i-u)_++\varepsilon})\), and the \(O(H^{-1})\) lines add at most \(t/2\) to the exponent.
+
+These arguments give (RSP) for \(t\ge0\), since its nonaxial allowance inside the maximum is then nonnegative. If \(t<0\) with fixed slack, the determinant of any two bounded vectors would have magnitude at least \(\Delta\gg X^{-t}\), so the rank-two case is impossible for large \(X\). The displayed affine expressions also reduce to \(D\le F\) then, because \(u>\rho_1+\rho_2\ge\max(r_1,r_2)\). Boundary constants are absorbed in an arbitrarily small exponent loss. By the same proof the nonaxial count applies on nonzero affine lines for two-copy repeated residues, retaining their separate collinear estimate.
+
+## Exact examples
+
+For ordinary boxes take the nonzero masses
+\[
+ a_1=41/300,\quad a_3=36/300,\quad b_4=30/300,\quad b_5=36/300,\quad
+ c_1=84/300,\quad c_2=3/300,\quad c_3=70/300.
+\]
+They sum to one, with numerical heights \(149/300,1,1\). Release \(a_3,b_4\), lock \(c_3\), and take \(g=1\). This gives \(F=49/100\), \(P=3\), \(Q=4\), \(u=7/10\), and \(t=3/50\). For these choices both the previous sliced and unsliced bounds return \(11/20\). The new nonaxial allowance \(t/(2PQ)=1/400\) gives \(D\le209/400<21/40\). Both axial allowances are negative.
+
+For the short strip use two tall letters \(A,B\). Take \(A_2=28/100,A_3=12/100,A_4=2/100\), \(B_4=10/100,B_5=12/100\), and on the short letter \(C_1=28/100,C_2=1/100,C_3=7/100\), with other masses zero. The two tall heights are one and the short height is \(51/100\). Release \(A_3,B_4\) and lock \(C_3\). The complement on \(C\) has weight \(3/10\), so the clearance is \(u=7/10\), while the actual modulus weight is \(21/100\). The previous bound is \(11/20\), and (RSP) again gives \(209/400\) for these choices.

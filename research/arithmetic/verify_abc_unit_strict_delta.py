@@ -48,7 +48,8 @@ def verify_delta(certificate, delta):
                                Fraction(1), BASELINE_LEAVES)
 
 
-def replay_replacements(certificate, entries, limit, budget, source_leaves):
+def replay_replacements(certificate, entries, limit, budget, source_leaves, *,
+                        allow_strengthening=False):
     """Check replacement branches and the exact bounds of all unchanged leaves."""
     checker = load_checker()
     source_budget = Fraction(certificate["budget"])
@@ -107,9 +108,13 @@ def replay_replacements(certificate, entries, limit, budget, source_leaves):
             require(step < len(branches), "replacement child index is out of range")
             rows += branches[step]
             node = node["children"][step]
-        require(node["type"] == "leaf" and limit < source_bound(node) <= source_limit,
-                "replacement does not target an over-limit source leaf")
-        upper_patched = max(upper_patched, verify_replacement(entry["tree"], rows))
+        require(node["type"] == "leaf", "replacement must target a source leaf")
+        previous = source_bound(node)
+        require(previous <= source_limit and (previous > limit or allow_strengthening),
+                "replacement does not target an eligible source leaf")
+        replacement = verify_replacement(entry["tree"], rows)
+        require(replacement <= previous, "replacement raises the source leaf bound")
+        upper_patched = max(upper_patched, replacement)
         replacements[path] = (node, entry["tree"])
 
     baseline_count = 0
@@ -144,7 +149,7 @@ def replay_replacements(certificate, entries, limit, budget, source_leaves):
 
 
 def verify_overlay(certificate, overlay, strict_sha256, strict_leaf_count):
-    """Replay a downward retarget of the verified strict unit tree."""
+    """Replay a same-budget or downward overlay of the verified strict unit tree."""
     fields = {"schema_version", "unit_baseline_sha256", "unit_strict_delta_sha256",
               "source_budget", "target_budget", "target", "replacements"}
     require(set(overlay) == fields and overlay["schema_version"] == 1,
@@ -154,11 +159,12 @@ def verify_overlay(certificate, overlay, strict_sha256, strict_leaf_count):
             "unit overlay source hash mismatch")
     old, new = Fraction(overlay["source_budget"]), Fraction(overlay["target_budget"])
     limit = Fraction(overlay["target"])
-    require(old == Fraction(certificate["budget"]) == 1 and 0 < new < old
+    require(old == Fraction(certificate["budget"]) == 1 and 0 < new <= old
             and 0 < limit < Fraction(certificate["threshold"]),
             "invalid unit overlay budgets or exponent")
     require(isinstance(overlay["replacements"], list), "invalid unit overlay replacements")
-    result = replay_replacements(certificate, overlay["replacements"], limit, new, strict_leaf_count)
+    result = replay_replacements(certificate, overlay["replacements"], limit, new, strict_leaf_count,
+                                 allow_strengthening=new == old)
     require(Fraction(result["upper"]) == limit, "unit overlay replay disagrees with its target")
     return result
 
@@ -184,22 +190,73 @@ def reweight_verified_tree(certificate, at_budget):
     return upper
 
 
+def knot_values(certificate, budgets):
+    """Return the exact maxima and their supporting lines at ordered budgets."""
+    source = Fraction(certificate["budget"])
+    changes = [budget - source for budget in budgets]
+    maxima = [None] * len(budgets)
+    supports = [set() for _ in budgets]
+    rational = lru_cache(maxsize=131072)(Fraction)
+    pending = [certificate["tree"]]
+    while pending:
+        leaf = pending.pop()
+        if leaf["type"] != "leaf":
+            pending.extend(leaf["children"])
+            continue
+        value = rational(leaf["bound"])
+        if changes[-1] <= 0 and maxima[0] is not None and value < maxima[0]:
+            continue
+        slope = rational(leaf["y"].get("0", 0))
+        if maxima[0] is not None and value + changes[-1] * slope < maxima[0]:
+            continue
+        for index, change in enumerate(changes):
+            at_knot = value + change * slope
+            maximum = maxima[index]
+            if maximum is None or at_knot > maximum:
+                maxima[index] = at_knot
+                supports[index] = {(value, slope)}
+            elif at_knot == maximum:
+                supports[index].add((value, slope))
+    require(all(u is not None for u in maxima), "the reconstructed tree has no leaves")
+    return maxima, supports
+
+
+def compare_knot_values(old_maxima, certificate, budgets):
+    new_maxima, _ = knot_values(certificate, budgets)
+    require(all(new < old for new, old in zip(new_maxima, old_maxima, strict=True)),
+            "the overlay does not improve every old knot")
+    return [{"budget": str(budget), "unit_upper": str(old), "overlay_upper": str(new)}
+            for budget, old, new in zip(budgets, old_maxima, new_maxima, strict=True)]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--full", action="store_true", help="also replay every leaf of the reconstructed tree")
-    parser.add_argument("--overlay", type=Path, help="replay a pinned downward unit-budget overlay")
+    parser.add_argument("--overlay", type=Path, help="replay a pinned unit-budget overlay")
+    parser.add_argument("--compare-unit-knots", type=Fraction, nargs="+",
+                        help="verify strict improvement over the old unit tree between consecutive knots")
     parser.add_argument("--at-budget", type=Fraction,
                         help="reweight the verified tree at this radical budget")
     args = parser.parse_args()
     if args.at_budget is not None and not 0 < args.at_budget <= 1:
         parser.error("--at-budget must be in (0, 1]")
+    knots = args.compare_unit_knots
+    if knots is not None and (args.overlay is None or len(knots) < 2
+                              or knots != sorted(set(knots)) or not 0 < knots[0] < knots[-1] <= 1):
+        parser.error("--compare-unit-knots needs an overlay and increasing budgets in (0, 1]")
     certificate = pinned_baseline()
     delta_bytes = DELTA.read_bytes()
     delta = json.loads(lzma.decompress(delta_bytes))
     result = verify_delta(certificate, delta)
+    if knots is not None:
+        old_maxima, supports = knot_values(certificate, knots)
+        require(all(a & b for a, b in zip(supports, supports[1:])),
+                "a chosen interval has no single old supporting line at both ends")
     if args.overlay is not None:
         overlay = json.loads(lzma.decompress(args.overlay.read_bytes()))
         result = verify_overlay(certificate, overlay, sha256(delta_bytes).hexdigest(), result["leaf"])
+    if knots is not None:
+        result["comparison_knots"] = compare_knot_values(old_maxima, certificate, knots)
     if args.full:
         entire = verify(certificate)
         require(result["upper"] == entire["upper"] and result["leaf"] == entire["leaf"],

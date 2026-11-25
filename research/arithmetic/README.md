@@ -311,111 +311,125 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The small-budget coefficient 13/31 for primitive abc triples | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | The limiting small-budget coefficient 5/12 for primitive abc triples | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | The limiting small-budget coefficient 1/3 for primitive abc triples | Internal result | proved | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
-| Strict residual mass in balanced limiting abc boxes | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
-| Balance and residual mass at normalized exponent one third | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| Strict residual mass in balanced limiting abc boxes | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| Balance and residual mass at normalized exponent one third | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
 | Small-budget abc bound for primitive powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| Strict small-budget saving for primitive powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| Primitive representations of a full prescribed target | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| Sharp large-order powerful triple count with arbitrary common divisor | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Strict small-budget saving for primitive powerful triples | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Primitive representations of a full prescribed target | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Sharp large-order powerful triple count with arbitrary common divisor | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
 | A sparse exact improvement at unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| Explicit valuation-degree window exclusions at the one-third boundary | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| Local mass restrictions at equality of the nonatomic total | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Explicit valuation-degree window exclusions at the one-third boundary | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Local mass restrictions at equality of the nonatomic total | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | Exact sparse certificates beyond radical budget nine tenths | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| A strict saving below one third for short-height abc triples | Internal result | proved | [Source](ABC_SHORT_HEIGHT_AND_REAL_GAP.md) |
-| A local mass bound for the tall pair across a positive height gap | Internal result | proved | [Source](ABC_SHORT_HEIGHT_AND_REAL_GAP.md) |
-| The pair nonatomic excess bounds high numerical degree weight | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| The tall nonatomic excess bounds the numerical height gap | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| Equal numerical heights and bounded degrees at the minimum nonatomic mass | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| A concentration bound for shifted degree windows at pair saturation | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| Outside factor graphs at the minimum nonatomic mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Bounded degree density along approximate atomic meshes | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| A strict saving below one third for short-height abc triples | Internal result | stale | [Source](ABC_SHORT_HEIGHT_AND_REAL_GAP.md) |
+| A local mass bound for the tall pair across a positive height gap | Internal result | stale | [Source](ABC_SHORT_HEIGHT_AND_REAL_GAP.md) |
+| The pair nonatomic excess bounds high numerical degree weight | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| The tall nonatomic excess bounds the numerical height gap | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| Equal numerical heights and bounded degrees at the minimum nonatomic mass | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| A concentration bound for shifted degree windows at pair saturation | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| Outside factor graphs at the minimum nonatomic mass | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Bounded degree density along approximate atomic meshes | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
 | Actual six-cycle sector bounds and residual equivalences | Internal result | proved | [Source](ERDOS_943_SIX_CYCLES.md) |
-| Rectangles with isolated outside prime supports at minimum nonatomic mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A count saving in strips around fixed complete ratios | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| Explicit positive-degree masses at arbitrary numerical heights | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| Positive atomic and nonatomic weights on at least two letters | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| Arithmetic rectangles with separated complete terms | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| An explicit whole-pair phase discrepancy at the one-third endpoint | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| A degree-phase bound from a shallow residue modulus | Internal result | proved | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
-| Complete-value codegrees for a common-power coefficient dictionary | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Higher complete-value codegrees for mixed powers | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A narrow degree band bounds fixed affine differences | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Residual upper quantiles after fixed coordinate locks | Internal result | proved | [Source](ABC_RESIDUAL_QUANTILE_SPECTRUM.md) |
-| A selective residue modulus excludes a diffuse sector | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| Positive scaled-degree mass with an opposite-atom allowance | Internal result | proved | [Source](ABC_RESIDUAL_QUANTILE_SPECTRUM.md) |
-| Combining full congruences from several fixed rows | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Selective residue records for several affine rows | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Selected atomic locks and eligible residual quantiles | Internal result | proved | [Source](ABC_RESIDUAL_QUANTILE_SPECTRUM.md) |
-| Conditional entropy of complete values over outside labels | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Cross-ratio restrictions with variable complete columns | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Residue count after locking free-letter outliers | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| Matched target-ratio graphs under a common full divisor | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Distinct complete target ratios over outside columns | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Multiplicative separation of complete free values | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A bound on the nonatomic scaled-degree support | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Trimmed degree-support inequalities at the minimum | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Power dictionaries for rank-two complete targets | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Explicit individual atomic and complementary nonatomic moments | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| Complete values determined by single outside labels | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Uniform support and truncated opposite moments at minimum mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Two-letter root packing with a fixed third complete value | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Trimmed degree restrictions at almost minimum nonatomic mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Quantitative complete-label reduction near minimum mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Positive nonatomic numerical weight on every near-minimum letter | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A one-letter mesh discrepancy from several fixed rows | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Quantitative near-minimum tails above degree six | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| One-letter diffuse concentration bounds | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| High-band count saving without opposite weight hypotheses | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Rectangles with isolated outside prime supports at minimum nonatomic mass | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A count saving in strips around fixed complete ratios | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| Explicit positive-degree masses at arbitrary numerical heights | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Positive atomic and nonatomic weights on at least two letters | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| Arithmetic rectangles with separated complete terms | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| An explicit whole-pair phase discrepancy at the one-third endpoint | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| A degree-phase bound from a shallow residue modulus | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
+| Complete-value codegrees for a common-power coefficient dictionary | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Higher complete-value codegrees for mixed powers | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A narrow degree band bounds fixed affine differences | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Residual upper quantiles after fixed coordinate locks | Internal result | stale | [Source](ABC_RESIDUAL_QUANTILE_SPECTRUM.md) |
+| A selective residue modulus excludes a diffuse sector | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Positive scaled-degree mass with an opposite-atom allowance | Internal result | stale | [Source](ABC_RESIDUAL_QUANTILE_SPECTRUM.md) |
+| Combining full congruences from several fixed rows | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Selective residue records for several affine rows | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Selected atomic locks and eligible residual quantiles | Internal result | stale | [Source](ABC_RESIDUAL_QUANTILE_SPECTRUM.md) |
+| Conditional entropy of complete values over outside labels | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Cross-ratio restrictions with variable complete columns | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Residue count after locking free-letter outliers | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Matched target-ratio graphs under a common full divisor | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Distinct complete target ratios over outside columns | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Multiplicative separation of complete free values | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A bound on the nonatomic scaled-degree support | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Trimmed degree-support inequalities at the minimum | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Power dictionaries for rank-two complete targets | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Explicit individual atomic and complementary nonatomic moments | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Complete values determined by single outside labels | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Uniform support and truncated opposite moments at minimum mass | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Two-letter root packing with a fixed third complete value | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Trimmed degree restrictions at almost minimum nonatomic mass | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Quantitative complete-label reduction near minimum mass | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Positive nonatomic numerical weight on every near-minimum letter | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A one-letter mesh discrepancy from several fixed rows | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Quantitative near-minimum tails above degree six | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| One-letter diffuse concentration bounds | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| High-band count saving without opposite weight hypotheses | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Actual singular six-cycle bounds from coherent product ratios | Internal result | proved | [Source](ERDOS_943_COHERENT_PRODUCT_RATIO.md) |
-| Three-letter divisor packing near minimum nonatomic mass | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Count saving from three-letter high-weight locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Extraction of a common full factor by repeated locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A diffuse support restriction from repeated high-degree locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A one-letter bound for several shifted meshes | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Partial degree grouping on complete columns | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A count saving in a partial-group sector | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A joint support restriction from common factors on several letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A trimmed packing bound using mixed additive moments | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A deficit inequality for balanced profiles | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A quantitative saving in a three-letter mixed-lock sector | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Converting high-degree blocks to common factors with diffuse locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Support and further packing after common-factor conversion | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| An iterated inequality for the full atomic spectrum | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Selective phase quantiles on complete columns | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A count saving from selective phase grouping with one supplying row | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A uniform obstruction to bounded-rank additive progressions | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Growing additive doubling of near-capacity complete subsets | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Atomic factor information in complete-label graphs | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A small-budget saving with two full letters | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| A small-budget saving with one full letter above threshold | Internal result | proved | [Source](ABC_ONE_FULL_LETTER_ENDPOINT.md) |
-| Degree measures at the single-full-letter threshold | Internal result | proved | [Source](ABC_ONE_FULL_LETTER_ENDPOINT.md) |
-| Vanishing relative additive energy at complete-letter capacity | Internal result | proved | [Source](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md) |
-| Higher additive moments and density of complete additive triples | Internal result | proved | [Source](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md) |
+| Three-letter divisor packing near minimum nonatomic mass | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Count saving from three-letter high-weight locks | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Extraction of a common full factor by repeated locks | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A diffuse support restriction from repeated high-degree locks | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A one-letter bound for several shifted meshes | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Partial degree grouping on complete columns | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A count saving in a partial-group sector | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A joint support restriction from common factors on several letters | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A trimmed packing bound using mixed additive moments | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A deficit inequality for balanced profiles | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A quantitative saving in a three-letter mixed-lock sector | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Converting high-degree blocks to common factors with diffuse locks | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Support and further packing after common-factor conversion | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| An iterated inequality for the full atomic spectrum | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Selective phase quantiles on complete columns | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A count saving from selective phase grouping with one supplying row | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A uniform obstruction to bounded-rank additive progressions | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Growing additive doubling of near-capacity complete subsets | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Atomic factor information in complete-label graphs | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A small-budget saving with two full letters | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| A small-budget saving with one full letter above threshold | Internal result | stale | [Source](ABC_ONE_FULL_LETTER_ENDPOINT.md) |
+| Degree measures at the single-full-letter threshold | Internal result | stale | [Source](ABC_ONE_FULL_LETTER_ENDPOINT.md) |
+| Vanishing relative additive energy at complete-letter capacity | Internal result | stale | [Source](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md) |
+| Higher additive moments and density of complete additive triples | Internal result | stale | [Source](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md) |
 | Critical rectangular cycle criterion and coefficient-sensitive bounds | Internal result | proved | [Source](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) |
-| A weighted primitive quotient saving for comparable fullness orders | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| Alternating asymptotic terms for comparable powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| Large-step valuation spectra force atomic mass | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| Strict small-budget saving from captured radical mass in valuation classes | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| Uniformly bounded diffuse density at the one-full endpoint | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| An all-scale progression bound for regularized complete letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| A short modular progression bound for complete letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| All-scale ordinary and modular progression bounds on regularized complete letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
-| Fixed-rank modular progressions on regularized complete letters | Internal result | proved | [Source](ABC_MODULAR_PROGRESSION_SLICING.md) |
-| Quantitative low-degree mass on both diffuse letters | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
-| A saving with a near-full letter and narrow residue bands | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
-| A quantitative lower bound on low degrees at the one-full endpoint | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
-| A count saving with one near-full letter and narrow valuation-residue bands | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
-| A global powerful-triple bound allowing arbitrary fullness orders | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| Alternating powerful-triple asymptotics in a primitive height sector | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| A powerful-sum bound for repaired fixed targets and arbitrary gcd | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| An explicit pointwise saving at high-full targets with arbitrary gcd | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| Strict small-budget saving at the height-adjusted fullness thresholds | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| A joint valuation repair criterion for a strict small-budget saving | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
-| A pooled phase inequality on unrestricted small-budget profiles | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A strict phase-sector saving away from minimum nonatomic mass | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A weighted primitive quotient saving for comparable fullness orders | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Alternating asymptotic terms for comparable powerful triples | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Large-step valuation spectra force atomic mass | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Strict small-budget saving from captured radical mass in valuation classes | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Uniformly bounded diffuse density at the one-full endpoint | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| An all-scale progression bound for regularized complete letters | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A short modular progression bound for complete letters | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| All-scale ordinary and modular progression bounds on regularized complete letters | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Fixed-rank modular progressions on regularized complete letters | Internal result | stale | [Source](ABC_MODULAR_PROGRESSION_SLICING.md) |
+| Quantitative low-degree mass on both diffuse letters | Internal result | stale | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A saving with a near-full letter and narrow residue bands | Internal result | stale | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A quantitative lower bound on low degrees at the one-full endpoint | Internal result | stale | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A count saving with one near-full letter and narrow valuation-residue bands | Internal result | stale | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A global powerful-triple bound allowing arbitrary fullness orders | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Alternating powerful-triple asymptotics in a primitive height sector | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A powerful-sum bound for repaired fixed targets and arbitrary gcd | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| An explicit pointwise saving at high-full targets with arbitrary gcd | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Strict small-budget saving at the height-adjusted fullness thresholds | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| A joint valuation repair criterion for a strict small-budget saving | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| A pooled phase inequality on unrestricted small-budget profiles | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A strict phase-sector saving away from minimum nonatomic mass | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A twelve-leaf improvement near unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| A phase count saving using low and high valuation bands together | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A one-group determinant obstruction at the symmetric diffuse profile | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A phase count saving using low and high valuation bands together | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A one-group determinant obstruction at the symmetric diffuse profile | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A counting contradiction to Carella's v3 smooth-number corollary | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Joint primitive height and fractional valuation-deficiency bounds | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A global powerful-triple bound with a mandatory repair tail | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Alternating powerful-triple terms with only two prescribed full letters | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Separate repair tails for different fullness orders | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Uniform density opposite a height-adjusted endpoint atom | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Powerful-triple savings with one prescribed full letter and captured degrees | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A fixed-row difference supplies a full reconstruction modulus | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A primitive-kernel height saving for the one-group determinant | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A wider fixed-difference endpoint exclusion from the primitive kernel | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A primitive additive graph attaining the endpoint edge exponent despite progression avoidance | Internal result | stale | [Source](ABC_MODULAR_PROGRESSION_SLICING.md) |
+| A strict improvement through unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| A broader endpoint exclusion from the shared row factor | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A degree-profile inequality from shared rows and Newton breakpoints | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 
 **Computed obligations:** 105 unresolved; 18 resolved within their exact scope.
 

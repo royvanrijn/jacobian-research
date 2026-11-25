@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "command": [
+    "python3",
+    "-O",
+    "research/meridional-rank/representations/verify_t51921_meridional_rank.py"
+  ],
+  "python": "3.12.3",
+  "checker_sha256": "818d5ff9e1cfc4f5169338019440d372d105912545966cd951caa3040329f88e",
+  "replay": {
+    "knot": "T(5,19;2,1)",
+    "field": "F_37",
+    "braid_crossings": 78,
+    "closure_relations_verified": 5,
+    "torus_block_fixes_coloring": true,
+    "adjacent_braid_generator_squares_fix_coloring": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "meridian_images_are_involutions": true,
+    "meridian_displacement_ranks": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "first_displacement_rows_determinant": 31,
+    "dimension_of_meridian_displacement_span": 5,
+    "meridional_rank_lower_bound": 5,
+    "orbifold_meridional_involution_rank_lower_bound": 5
+  },
+  "negative_controls_rejected": [
+    "meridian_row",
+    "torus_block",
+    "local_full_twist"
+  ]
+}

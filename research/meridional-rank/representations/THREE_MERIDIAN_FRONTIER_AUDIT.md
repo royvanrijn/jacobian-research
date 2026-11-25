@@ -1,10 +1,10 @@
 # The three-meridian / four-bridge obstruction
 
-Audit: 18 November 2026. This is a target audit and falsification record,
-not an unrestricted MRC theorem or a novelty claim. The four-braid input
-is excluded by a direct trace certificate. The trace-invariant five-braid
-input is also excluded from three-meridian generation, by a direct
-nonabelian seven-sheet branched-cover certificate.
+A direct trace certificate proves meridional rank four for \(T(4,5;2,2)\).
+For the second input, \(T(5,19;2,1)\), a five-dimensional finite-field
+representation proves meridional rank and bridge number five. The new representation also gives the sharp bound in the order-two
+orbifold group. The original seven-sheet certificate gives an independent
+obstruction to three generators and the deck-action result.
 
 ## Precise target and known boundary
 
@@ -561,6 +561,85 @@ seeds of the stated form, since it would produce an excluded triple.
 Further conjugator or Stallings enumeration on this knot is unnecessary.
 
 
+## An exact rank-five certificate for T(5,19;2,1)
+
+The closure \(K\) of the five-braid \(\delta^{19}\sigma_1^2\), with
+\(\delta=\sigma_1\sigma_2\sigma_3\sigma_4\), satisfies
+\(\operatorname{mr}(K)=b(K)=5\). The images of meridians in every
+even-order meridian quotient also require five meridional generators.
+
+Work over \(\mathbb F_{37}\) and set
+\[
+P=\begin{pmatrix}
+36&0&0&0&0\\
+0&17&29&0&0\\
+0&4&33&0&0\\
+0&0&0&33&13\\
+0&0&0&12&7
+\end{pmatrix},
+\qquad
+u=(1,1,0,1,0)^{\mathsf T},\qquad v=(5,13,26,17,34).
+\]
+Define
+\[
+A=I+uv,\qquad Q=P^4,\qquad Z=A^{-1}Q,\qquad E=Q^{-1}AQ,\qquad
+B=ZAZ^{-1},\qquad C=ZBZ^{-1},\qquad D=ZCZ^{-1}.
+\]
+Here \(P\) is invertible and \(vu=35=-2\), so \(A\) is a rank-one
+reflection with \(A^2=I\). The five matrices \(A,B,C,D,E\) are
+conjugate and all square to \(I\).
+
+Give the five top strand meridians the colours \((A,B,C,D,E)\).
+Apply \((U,V)\mapsto(UVU^{-1},U)\) at each of the 78 crossings in
+the displayed order. Exact multiplication returns the starting
+tuple, so the five closure relations give a representation
+\(\rho\colon\pi_1(S^3\setminus K)\to\mathrm{GL}_5(\mathbb F_{37})\).
+The [standard-library checker](verify_t51921_meridional_rank.py)
+replays the updates and computes the determinant of the first rows of
+the five displacement matrices \(A-I,\ldots,E-I\). These rows, in order, are
+\[
+\begin{pmatrix}
+5&13&26&17&34\\
+5&21&32&11&1\\
+8&12&21&11&21\\
+5&15&31&19&26\\
+5&21&15&11&6
+\end{pmatrix}.
+\]
+This matrix has determinant \(31\) in \(\mathbb F_{37}\).
+Hence the image has zero common fixed space.
+
+Every meridian of a knot is conjugate to a strand meridian or its
+inverse, so its image fixes a hyperplane. Four hyperplanes in
+dimension five have a nonzero common intersection. A vector fixed
+by those four images would be fixed by the subgroup they generate.
+Therefore four meridians cannot generate the knot group. Since
+\(\operatorname{mr}(K)\le b(K)\le5\) from the five-braid, equality
+holds. The proof uses the literal braid and the matrix representation.
+
+Let \(m\) be a meridian and \(j\ge1\). Since \(\rho(m)^2=I\),
+\(\rho\) factors through \(G/\langle\!\langle m^{2j}\rangle\!\rangle\).
+The same argument rules out four images of meridians generating
+that quotient, and the five strand meridians still give a generating
+set. In particular, the order-two orbifold group has meridional
+involution generating number five.
+
+**Same-colour corollary.** The checker also verifies that
+\(\delta^{19}\) returns the top tuple and that \(A\) and \(B\) commute.
+On a commuting pair the Artin update swaps the entries, so
+\(\sigma_1^2\) also fixes the tuple. Both braid actions are invertible.
+Consequently the same certificate gives
+\(\operatorname{mr}=b=5\) for the closures of
+\(\delta^{19r}\sigma_1^{2s}\) for integers \(r,s\) with \(\gcd(r,5)=1\).
+The condition on \(r\) makes the braid permutation a five-cycle, so
+each closure is a knot.
+
+Replay from the repository root with
+
+```sh
+python3 research/meridional-rank/representations/verify_t51921_meridional_rank.py
+```
+
 ## A trace-invariant input excluded by a seven-sheet cover
 
 The next input is fixed, rather than a family-expansion claim:
@@ -569,14 +648,12 @@ The next input is fixed, rather than a family-expansion claim:
     K = closure(beta*Delta5^(-8)),
     Delta5^2 = (sigma1*sigma2*sigma3*sigma4)^5.
 
-Up to mirror, this is T(5,19;2,1). The exact conclusion is now
-
-    4 <= mr(K) <= 5 = b(K).
-
-Every meridional triple, every meridional-involution triple in the
-order-two orbifold group, and every inverted generating pair in the
-actual deck OUTER class is excluded below. Meridional rank four versus
-five remains unresolved here; this is not an MRC counterexample.
+Up to mirror, this is T(5,19;2,1). The seven-sheet argument proves a
+lower bound of four for its knot group and rules out every
+meridional-involution triple in its order-two orbifold group. The
+orbifold obstruction also excludes every inverted generating pair in
+the actual deck outer class. The matrix certificate above determines
+the original group's meridional rank exactly.
 
 **Exact axis identification.** Hilden--Lozano--Montesinos-Amilibia,
 Math. Proc. Cambridge Philos. Soc. 129 (2000), 477--490, Section 2,
@@ -760,11 +837,10 @@ also preserve the outer inversion class under Nielsen changes and
 generation-preserving root replacements between invertible pairs.
 [Boileau--Weidmann, pp.107--108](https://msp.org/gtm/2008/14/gtm-2008-14-007p.pdf).
 
-This input can no longer test the three-meridian premise. A proof that
-four ORIGINAL meridians generate its knot group would still contradict
-b(K)=5; a lower bound of five would instead establish MRC for this one
-knot. Neither conclusion is established. Further searches for an
-inverted pair in this deck class cannot resolve that distinction.
+Together with the rank-five certificate, this example has
+\(\operatorname{mr}(K)=b(K)=5\), while its double branched cover has
+ordinary group rank two. The seven-sheet argument independently
+gives a lower bound of four for meridional-involution generation.
 
 
 ## Replay and assurance
@@ -788,8 +864,9 @@ crossings, the seven-sheet permutation action, all 29 Schreier
 generators, all 35 lifted closure relations and all 25 branch
 fillings. The F13 assignment above verifies nontriviality directly.
 Determinant-one corrupted matrices and the wrong braid are rejected.
-This proves only the written lower bound four; it does not certify
-meridional rank five or any original four-meridian generating tuple.
+This branch checks the seven-sheet lower bound of four. The
+separate rank-five checker replays the five-dimensional matrix
+certificate above.
 
 It also retains the older coordinate and relator identities, trefoil
 images, five finite quotient screens, determinant/order-eight

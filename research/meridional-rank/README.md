@@ -66,6 +66,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | Every two-cable of the explicit gap families has actual augmentation gap at most one | Internal result | proved | [Source](representations/TWO_CABLE_AUGMENTATION_RANK_BARRIER.md) |
 | Universal covector/root-cohomology equivalence and protected rank-one ceiling | Internal result | proved | [Source](representations/RANK_ONE_COHOMOLOGY_COVECTOR_BARRIER.md) |
 | Irreducible factors suffice for every cohomology meridional-rank certificate | Internal result | proved | [Source](representations/COHOMOLOGY_COMPOSITION_FACTOR_REDUCTION.md) |
+| Meridional rank five for T(5,19;2,1) and its even-order meridian quotients | Internal result | proved | [Source](representations/THREE_MERIDIAN_FRONTIER_AUDIT.md) |
 
 **Computed obligations:** 7 unresolved; 3 resolved within their exact scope.
 
@@ -112,6 +113,7 @@ Scope limits:
 - For every field and every finite-dimensional knot-group module, the clipped GGLW cocycle certificate is attained or exceeded by an irreducible composition factor. All-module uniform caps are equivalent in both directions to irreducible caps. Trivial/root-affine extensions cannot amplify the certificate; new irreducible higher-displacement modules remain a possible route.
 - In a protected-U knot closure, cohomology certificates exceeding c=b-k need an irreducible factor of meridian displacement at least two. Displacement two reduces to its unique nontrivial irreducible factor and requires cocycle defect at least 2c-1 to exceed c or 2c+1 to certify meridional rank at least c+2.
 - Every preferred odd-slope two-cable of K_n or K_(b,k) has bridge number and braid index 2b. Its complex augmentation rank and meridional rank lie between 2b-1 and 2b. Meridional rank equality is equivalent to excluding generation by 2b-1 meridians.
+- The five-dimensional finite-field certificate for T(5,19;2,1) gives mr=b=5 and meridional generating number five in every even-order meridian quotient. A common fixed vector would survive any four meridian images in dimension five, but the displayed rows have determinant 31 modulo 37. The same colors prove the stated delta^(19r) sigma1^(2s) corollary.
 
 **Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 

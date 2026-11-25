@@ -704,3 +704,780 @@ The [adaptive rational estimate](../../unpublished/powerful-number-representatio
 is the second range of the adaptive rational lemma in Section 9.4
 (`lem:adaptive-rational` in the source). Its modulus is the
 \(k\)-full core \(n_0\).
+
+## A joint bound for height and valuation deficiency
+
+Prescribe fullness orders \(s_i\ge2\) on a set \(I\) of at least
+two of the three letters. Put \(M=\max_{i\in I}s_i\).
+For the primitive quotient \(u_A+u_B=u_C=W\), write
+\(h_i=\log u_i/\log W\). The sector with fixed parameters \(b,\rho\)
+has
+\[
+ \operatorname{rad}\!\left(\prod_{i\notin I}u_i\right)\le W^b,
+ \qquad
+ b+\sum_{i\in I}h_i/s_i\le\rho .
+ \tag{JD1}
+\]
+Take \(b=0\) if all three letters have prescribed orders. On the
+prescribed letters define
+\[
+ \mathcal D=\{\ell:\ 0<v_\ell(u_i)<s_i
+                          \text{ for some }i\in I\},\qquad
+ D=\prod_{\ell\in\mathcal D}\ell^{1-v_\ell(u_i)/s_i},\qquad
+ Z=\prod_{\ell\in\mathcal D}\ell^{\max_{j\in I}(s_j-v_\ell(u_j))}.
+\]
+In the product defining \(D\), \(i\) is the unique letter belonging to
+\(\ell\). The real-valued \(D\) measures the positive fractional
+valuation deficit. The integer \(Z\) is the least multiplier that
+repairs every deficiency on the prescribed letters. The inequality
+at the deficient primes in (GU1) gives \(D\le Z^{1/M}\).
+Also \(\operatorname{rad}(u_Au_Bu_C)\le W^\rho D\) directly from
+(JD1), writing \(\ell=\ell^{v_\ell(u_i)/s_i}\ell^{1-v_\ell(u_i)/s_i}\)
+at each deficient prime.
+
+There are absolute \(\rho_*,\delta>0\) such that, for fixed
+\(0<\rho\le\rho_*\), the number of primitive quotients in (JD1) with
+\(W\asymp Y\) and \(D\asymp H\) is
+\[
+ O_{\mathbf s,b,\rho,\varepsilon}\!
+       \left(Y^{(1/3-\delta)\rho+\varepsilon} H^{3/4}\right).
+ \tag{JD2}
+\]
+The unprescribed letter can be the largest term or either summand.
+The constants are uniform in the dyadic bins.
+
+Suppose that (JD2) fails for a sequence with \(\rho,\delta\to0\).
+At each fixed parameter choice first pass to an unbounded sequence
+of heights, taking a subsequence on which \(\log_Y H\to z\).
+The elementary \(2\lambda/3\) bound at budgets tending down to
+\(\rho+z\) gives
+\[
+ (1/3-\delta)\rho+\tfrac34 z\le\tfrac23(\rho+z),
+ \qquad z\le(4+12\delta)\rho .
+\]
+Thus the radical budget tends to zero in the outer limit. For any
+fixed \(\eta>0\), the limiting one-third count then gives
+\((3/4-1/3-\eta)z\le(\eta+\delta)\rho\). Take \(\eta\downarrow0\)
+after the parameter limit to get \(z=o(\rho)\).
+
+Form anatomic boxes with losses \(o(\rho)\) and compression above
+the prescribed orders. Also subdivide the complete values dyadically
+so that each numerical height has a limit \(h_i^*\) on a further
+subsequence. The root budget is \(L\le(1+o(1))\rho\), and the count
+exponent is at least \((1/3-o(1))\rho\). The limiting one-third box
+bound forces \(L/\rho\to1\) and \(d\to1/3\). The endpoint balance
+gives limiting root mass \(1/3\) on every letter. The short-height
+bound keeps each \(h_i^*\) positive.
+
+For any \(0<\theta<1\) and \(i\in I\), the logarithms of the primes
+on \(u_i\) with positive valuation below \((1-\theta)s_i\) sum to at
+most \((\log D)/\theta\). Those low coordinates therefore have
+normalized root mass \(o(1)\). Put \(t_i=s_i\rho\). By (JD1),
+\(t_i\ge h_i\). The moment bound on each letter, applied first
+outside the low coordinates, gives
+\((1-\theta)t_i(L/\rho)(1/3-o(1))\le 1+o(1)\).
+Consequently the \(t_i\) have finite positive subsequential limits
+\(t_i^*\), and the weak measure on letter \(i\) is supported in
+\([t_i^*,\infty)\). The first moment is at most \(h_i^*\), so
+\(h_i^*/t_i^*\ge1/3\).
+
+If a letter is unprescribed, its radical bound in (JD1) and the
+letterwise radical comparison of the anatomic reduction give its
+root mass at most \(b+o(\rho)\). Therefore \(\liminf b/\rho\ge1/3\)
+when \(|I|=2\). With all three letters prescribed we have \(b=0\).
+In both cases (JD1) yields
+\[
+ \sum_{i\in I} h_i^*/t_i^*\le |I|/3 .
+\]
+Every summand equals \(1/3\). Each prescribed measure has mass
+\(1/3\), first moment \(t_i^*/3\), and support above \(t_i^*\).
+Hence it is \((1/3)\delta_{t_i^*}\). Two such measures contradict
+pairwise diffusion, proving (JD2).
+
+### A global bound with a tail for the mandatory multiplier
+
+For \(T\ge1\) restrict the original triples to the sector (JD1) with
+\(Z\ge T\), allowing arbitrary common divisor and imposing fullness
+only on \(I\). They are counted by at most
+\[
+ O_{\mathbf s,b,\rho,\varepsilon}\!
+ \left(
+     X^{\max\{1/M,\,(1/3-\delta)\rho\}+\varepsilon}
+     T^{-1/(4M)}
+ \right).
+ \tag{JD3}
+\]
+At fixed quotient split the common divisor into its part \(f\)
+supported on the quotient radical and its coprime part. The
+coprime part is \(M\)-full. The Euler estimate (GU3) applies as
+written, with the new \(Z\), because precisely the primes in
+\(\mathcal D\) have mandatory positive minima. Thus the number
+of multipliers is
+\(O((X/W)^{1/M}Z^{-1/M}W^\varepsilon)\).
+For \(W\asymp Y\) and \(Z\asymp K\), sum (JD2) over all
+\(D\)-bins \(H\ll K^{1/M}\). The resulting count is bounded by
+\[
+ O\!\left(X^{1/M}Y^{(1/3-\delta)\rho-1/M+\varepsilon}
+                      K^{-1/(4M)}\right),
+\]
+using the convergent geometric sum of the powers of \(H\).
+The sum over \(K\gg T\) yields the displayed tail. Sum over
+\(Y\le X\) and absorb its logarithmic factor into \(X^\varepsilon\).
+For three prescribed orders \(\rho\) may be set to
+\(\sum_i1/s_i\) when it is sufficiently small, giving (GU) with
+a power tail in the required repair. It can be smaller when the
+smaller fullness order is on a short primitive summand.
+
+For example prescribe orders \(p,q\) on the summands and let the
+primitive target have radical at most \(W^b\). If
+\(b+\log(u_A)/(p\log W)+\log(u_B)/(q\log W)\le\rho\),
+(JD3) uses \(\max(p,q)\) as its common-divisor order. The
+unprescribed target's prime valuations enter only through \(b\).
+
+### Asymptotic terms in the same sector
+
+Write \(\beta=(1/3-\delta)\rho\). For any fixed \(J\ge0\) with
+\(M\ge16(J+1)^2\) and \(\beta\le 1/(M+J+1)\), the count in
+(JD1) has the expansion (PA) with its coefficients summed over
+the sector and error \(O_{\mathbf s,b,\rho,J,\varepsilon}
+(X^{1/(M+J+1)+\varepsilon})\).
+Take
+\[
+ \max\{\beta,3/(4M),\,1/(M+J+1)\}<\sigma<1/(M+J)
+\]
+arbitrarily close to \(1/(M+J+1)\). The condition on \(M\)
+puts \(3/(4M)\) strictly below this endpoint. The summability
+estimate (GU3) reduces both the scalar expansion error and its
+tail extension to \(X^\sigma\sum W^{-\sigma+\varepsilon}Z^{-\sigma}\).
+Using (JD2) and summing \(D\ll K^{1/M}\) in a \(Z\)-bin
+gives dyadic exponents \(\beta-\sigma+O(\varepsilon)<0\)
+in \(Y\) and \(3/(4M)-\sigma<0\) in \(K\). This proves
+absolute convergence and the claimed error. Whenever the
+primitive sector is nonempty, the coefficients have strict
+alternating signs by (PC).
+
+For a concrete sector with only two fullness conditions,
+take \(p=q=M\) on the summands and \(b=1/M,\rho=3/M\).
+Every primitive quotient with \(\operatorname{rad}(W)\le W^{1/M}\)
+satisfies (JD1). For fixed \(J\) and sufficiently large \(M\), its
+arbitrary-common-divisor count has the stated expansion. The
+sector contains \(1+(W-1)=W\) with \(W=2\cdot3^e\) for any
+integer \(e\) large enough that \(W\ge6^M\). Its target has
+valuation one at two and meets the radical bound.
+
+### Separate tails for the prescribed letters
+
+For each \(i\in I\), let \(D_i,Z_i\) be the products in \(D,Z\)
+over the deficient primes on that letter. Fix
+\(1/3<\gamma_i<1\) with \(\sum_{i\in I}(1-\gamma_i)<1\).
+There are \(\delta,\rho_*>0\), depending only on these exponents,
+for which the quotient bound (JD2) in independent bins \(D_i\asymp H_i\)
+becomes
+\[
+ O_{\mathbf s,b,\rho,\boldsymbol\gamma,\varepsilon}
+ \left(Y^{(1/3-\delta)\rho+\varepsilon}\prod_{i\in I}H_i^{\gamma_i}\right).
+ \tag{JD4}
+\]
+Indeed fix the two remaining complete terms after omitting any \(j\in I\).
+Their radical product is at most a constant times \(Y^\rho\prod_{i\ne j}H_i\).
+Choose the radical product, then allocate its primes to the two letters,
+then choose each term on its fixed radical support. The last two choices
+cost \(Y^\varepsilon\) by the divisor bound and (CR). The omitted term
+is determined by addition. In a failing sequence put \(z_i=\lim\log_Y H_i\)
+and omit an index with largest \(z_i\). The resulting elementary count gives
+\[
+ \max_i z_i-\sum_{i\in I}(1-\gamma_i)z_i
+           \le (2/3+\delta)\rho .
+\]
+The coefficient \(1-\sum_i(1-\gamma_i)>0\) gives
+\(\max_i z_i=O(\rho)\). The limiting one-third count then gives
+\(\sum_i(\gamma_i-1/3-\eta)z_i\le(\eta+\delta)\rho\) for fixed \(\eta>0\).
+Take \(\eta\downarrow0\) after the parameter limit to obtain
+\(\sum_i z_i=o(\rho)\). The valuation and moment argument proving (JD2)
+now applies.
+
+Put \(M_{-i}=\max_{j\in I\setminus\{i\}}s_j\), with value zero for
+an empty index set, and put
+\[
+ \theta_i=\frac{s_i-1}{s_i\max(s_i-1,M_{-i})}.
+\]
+For a deficient prime on \(i\), the ratio of its exponent in \(D_i\)
+to its exponent in \(Z_i\) is
+\((s_i-e)/(s_i\max(s_i-e,M_{-i}))\), which is largest at \(e=1\).
+Thus \(D_i\le Z_i^{\theta_i}\), with \(\theta_i\le1/M\).
+The argument for (JD3) now gives the simultaneous tail
+\[
+ O_{\mathbf s,b,\rho,\boldsymbol\gamma,\varepsilon}
+ \left(
+ X^{\max\{1/M,(1/3-\delta)\rho\}+\varepsilon}
+ \prod_{i\in I} T_i^{-(1/M-\gamma_i\theta_i)}
+ \right)
+ \qquad (Z_i\ge T_i\ge1).
+ \tag{JD5}
+\]
+The expansion proof likewise uses \(\max_i\gamma_i\theta_i<1/(M+J+1)\)
+in place of \(3/(4M)<1/(M+J+1)\). Taking one \(\gamma_i\) close to
+\(1/3\) and the others close to one gives a stronger tail in the
+chosen direction. With all \(\gamma_i\) equal to \(\gamma\), the
+admissible range is \(\gamma>2/3\) for three prescribed letters
+and \(\gamma>1/2\) for two.
+
+The equal slopes \(2/3\) and \(1/2\), respectively, cannot replace
+these strict inequalities for all deficiency bins with a positive
+saving below \(\rho/3\). For three prescribed orders \(M\) and
+\(\rho=3/M\), take all three quotient terms squarefree and comparable
+to \(Y\). There are \(\gg Y^2\) primitive pairs of summands of this
+kind. A squarefree sieve verifies this by choosing admissible
+residues for finitely many primes, then bounding the larger-prime
+loss by \(O(Y^2/K+Y^{3/2})\) for primes above \(K\), including
+the coprimality condition. The local density products are bounded
+below because the bad density at a prime is \(O(p^{-2})\).
+In this family \(D\asymp Y^{3(1-1/M)}\), and the exponent
+at \(\gamma=2/3\) would be \(2-(1+3\delta)/M+\varepsilon\).
+For two prescribed summand orders \(M\), take \(W=2^j\) and
+odd squarefree summands comparable to \(W\). There are \(\gg W\)
+such ordered pairs by the same squarefree sieve, now excluding
+at most two residues per odd \(p^2\). They are automatically
+primitive. Take \(b=M^{-2}\) and \(\rho=2/M+b\), so (JD1) holds
+for large \(j\), and \(D\asymp W^{2(1-1/M)}\). The exponent
+at \(\gamma=1/2\) would be \(1-(1/3+2\delta)/M+O(M^{-2})+\varepsilon\).
+Each argument may use finitely many dyadic bins because the
+height ratios stay bounded above and below by fixed constants.
+[Fixed-radical count](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#a-radical-count-contradiction-to-the-claimed-smooth-number-lower-bound)
+
+## One prescribed fullness order and captured scaled degrees
+
+Prescribe one letter \(A\) of an ordered positive triple to be
+\(M\)-full. Write \(u_A,u_U,u_V\) for the three letters of its
+primitive quotient, \(W\) for the largest quotient letter, and
+\(h_i=\log u_i/\log W\). Impose the combined sector conditions
+\[
+ \operatorname{rad}(u_Uu_V)\le W^b,\qquad b+h_A/M\le\rho .
+ \tag{JW1}
+\]
+Fix \(a>0\) and a positive integer \(K\). Require, on one of the two
+unprescribed letters \(T\), that there exist at most \(K\) intervals
+in \([0,\infty)\), of total length at most \(\eta\), whose union \(J_T\)
+satisfies
+\[
+ \sum_{\substack{\ell\mid u_T\\ \rho v_\ell(u_T)\in J_T}}\log\ell
+      \ge a\rho\log W .
+ \tag{JW2}
+\]
+The intervals and the choice of \(T\) may depend on the quotient.
+
+There is an absolute \(\eta_0>0\) such that for any fixed
+\(0<\eta\le\eta_0 a\), there are \(\delta,\rho_*>0\), depending
+at most on \(a,K\), for which (JD2) holds in this sector with one
+prescribed letter, for every fixed \(0<\rho\le\rho_*\).
+Here
+\[
+  D=\prod_{0<v_\ell(u_A)<M}\ell^{1-v_\ell(u_A)/M},
+  \qquad Z=\prod_{0<v_\ell(u_A)<M}\ell^{M-v_\ell(u_A)}=D^M .
+\]
+Consequently (JD3) holds for this sector, including its \(Z\)-tail,
+and the same sector expansion (PA) holds under its conditions
+\(M\ge16(J+1)^2\) and
+\((1/3-\delta)\rho\le1/(M+J+1)\). The sign statement for nonempty
+sectors is unchanged.
+
+### The weighted quotient bound and the interval capture
+
+Prove (JD2) by the same order of limits as before. At each
+fixed parameter choice first take an unbounded sequence of
+heights exhibiting a failure with positive exponent allowance,
+and extract \(z=\lim\log_Y H\) for the \(D\)-bin. Then send
+\(\rho,\delta\to0\) across the failing choices.
+The inequalities of (JD2) use only
+\(\operatorname{rad}(u_Au_Uu_V)\le W^\rho D\) and the
+coefficient \(3/4>2/3\), so give \(z=o(\rho)\) and a
+limiting \(d=1/3\) anatomic profile with \(L/\rho\to1\).
+Take truncation loss \(o(\rho)\) and the compression index \(k\)
+with \(k\ge M\) and \(k\rho\to\infty\).
+Dyadic numerical splitting supplies height limits \(h_i^*\).
+
+From (JW1) and the letterwise radical comparison, the combined
+root mass on \(U,V\) is at most \(b+o(\rho)\). Balance forces
+\(\liminf b/\rho\ge2/3\). Put \(t_A=M\rho\). The first-moment
+argument in (JD2) gives a subsequence with \(0<t_A^*<\infty\)
+and the scaled measure on \(A\) supported on
+\([t_A^*,\infty)\), and \(h_A^*/t_A^*\ge1/3\).
+Equation (JW1) gives the reverse inequality since
+\(b/\rho+h_A/t_A\le1\). Thus
+\(\nu_A=(1/3)\delta_{t_A^*}=(1/3)\delta_{3h_A^*}\).
+The [height-adjusted density estimate](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md#uniform-diffuse-density-at-a-height-adjusted-atom)
+applies to \(U,V\).
+
+After pigeonholing which unprescribed letter satisfies (JW2),
+discard captured primes of actual valuation at least \(k\)
+from its captured record. Their total logarithm is at most
+\(\log W/k=o(\rho\log W)\). All retained primes occur at their
+exact squarefree anatomic positions. For each fixed budget and
+compression, there are finitely many subsets of these positions.
+Pigeonhole the retained set of captured positions before taking
+the height limit. This costs a fixed factor, even when the
+intervals in (JW2) depend on the quotient. Choose a representing
+interval union for this set. After changing from scales
+\(\rho e\) to \(Le\), its total length is at most
+\(\eta L/\rho=\eta+o(1)\), and the captured normalized root
+mass is at least \(a-o(1)\). Intersect the intervals with
+\([0,R+1]\), losing vanishing mass by weak convergence and the
+absolute compact support of the limiting measure. Pad with
+empty intervals and pass to a subsequence on their finitely
+many endpoints. The limiting closed intervals have total
+length at most \(\eta\). The captured weak submeasure is
+supported on their union, since any compact set at positive
+distance from it eventually misses the selected coordinate
+degrees. It is dominated by \(\nu_T\) and has
+mass at least \(a\). This contradicts the density bound if
+\(\eta\le a/(2C_0)\). This proves (JD2), and the calculations
+for (JD3) and the sector expansion then apply verbatim.
+
+For example, prescribe only fullness order \(M\) on the
+target and take \(b=2/M\), \(\rho=3/M\). The primitive quotient
+with summands \(2\cdot3^{2M}\) and \(1\) and their sum \(W\)
+qualifies at sufficiently large \(M\). The combined summand
+radical is \(6\le W^{2/M}\), and the exponent of \(3\) in
+the first summand has scaled value \(6\) and supplies
+\(\log3>(1/7)\rho\log W\). Thus use a single interval of
+arbitrarily small positive width containing \(6\).
+Taking \(g=Z\) repairs the target, and \(g\) is coprime
+to the first primitive summand. The repaired first summand
+still has valuation one at \(2\).
+
+
+### Smaller deficiency exponents
+
+In the one-prescribed-letter sector, fixing the two unprescribed
+complete primitive terms fixes the third. Their radicals have
+combined product at most \(Y^{b+o(1)}\) in a dyadic height bin.
+Choosing a product radical has that many possibilities, allocating
+its primes to the two terms costs \(Y^{o(1)}\), and there are
+\(Y^{o(1)}\) complete terms on fixed radical supports by the fixed
+positive exponent Rankin estimate. Thus
+\(Q(Y,H)\ll_\varepsilon Y^{b+\varepsilon}\) uniformly in the
+deficiency bin \(H\). Replace \(3/4\) in (JD2) by any fixed
+\(\gamma>1/3\). The elementary bound first gives
+\(z=O(\rho)\) because \(b\le\rho\). The limiting one-third
+estimate then gives \(z=o(\rho)\) because \(\gamma>1/3\).
+The remainder of the proof is unchanged.
+
+For the narrower sector \(b\le(2/3+\tau)\rho\), a fixed
+\(\gamma<1/3\) is also possible for sufficiently small fixed
+\(\tau>0\). Otherwise choose failing parameters with
+\(\gamma\uparrow1/3\) from below and \(\tau,\rho,\delta\to0\).
+As before \(z=O(\rho)\). The failed lower estimate is now
+\((\rho+z)/3-o(\rho)\). Hence \(L/(\rho+z)\to1\) and
+the normalized count exponent tends to \(1/3\). The two
+unprescribed letters have combined normalized mass \(2/3\)
+by balance, and total unnormalized mass at most \(b+o(\rho)\).
+The constraint on \(b\) thus forces \(z=o(\rho)\).
+The height-adjusted one-atom and window-capture contradiction
+then finishes the proof.
+
+In either version the resulting repair tail in (JD3) is
+\(T^{-(1-\gamma)/M}\), and the scalar expansion only needs
+\(\gamma/M<1/(M+J+1)\) in place of \(3/(4M)<1/(M+J+1)\).
+
+## Targets of small radical and two prescribed full summands
+
+Let \(p,q\) be sufficiently large fixed fullness orders. Put
+\[
+ S=\max(p,q),\quad k=\min(p,q),\quad
+ B=\max(S,k+1),\quad \lambda=1/p+1/q .
+\]
+Use the two-prescribed-letter case of (JD4) with
+\(\gamma_A=\gamma_B=\gamma=3/5\). Shrink its absolute saving if
+necessary so \(\sigma=1/3-\delta\ge19/60\). Write
+\(\beta=\sigma\lambda\), \(a_0=\gamma/S\), and
+\(\chi=\beta-a_0>0\). In particular \(\chi\ge1/(30S)\).
+All constants below may depend on the fixed orders and the
+positive exponent allowance. None depends on the prescribed
+target or the gcd cutoff.
+
+### Fixed targets, short summands and large common divisors
+
+There is an absolute \(\nu_*>0\) such that for every \(N\ge2\)
+with \(\operatorname{rad}(N)\le N^{\nu_*}\), the number of ordered
+\(p\)-full and \(q\)-full summands \(A,B'\) of \(N\) satisfying
+\(A\le N^\alpha\) and \(\gcd(A,B')\ge G\), where \(0\le\alpha\le1\)
+and \(G\ge1\), is
+\[
+ \ll_{p,q,\varepsilon} N^\varepsilon
+  \min\left\{N^{1/B},\
+   N^{\sigma(\alpha/p+1/q)}\operatorname{rad}(N)^\sigma
+                        G^{-\chi}\right\}.
+ \tag{LR1}
+\]
+The lower cutoff on the orders is absolute. The estimate imposes
+no fullness on the target, and the summand orders may have any
+ratio. In particular a prescribed \(r\)-full target with
+\(1/r\le\nu_*\) and no short-summand restriction has bound
+\[
+ N^{\min\{1/B,\;\sigma(1/p+1/q+1/r)\}+\varepsilon}.
+\]
+When \(p=q=s\) and \(r/s\) is large, this approaches
+\((2/3-2\delta)/s\) in the exponent. This improves the graph
+and the \(k\)-full-target explicit bounds in that regime.
+
+Fix \(g\mid N\), let \(W=N/g\), and set
+\(u=A/g,\ v=B'/g\). They form a primitive quotient.
+For the two prescribed letters, let \(D_i,Z_i\) be their
+fractional deficiency and mandatory repair factors from (JD4).
+Since the original summands meet their prescribed orders,
+\(Z_1Z_2\mid g\). This follows prime by prime: a deficient quotient
+prime on one letter requires at least its missing valuation there
+and the entire prescribed order on the other summand. Also
+\(D_i\le Z_i^{1/S}\), so after summing the deficiency bins the
+quotient penalty is at most \(g^{a_0}\) times a subpower of \(N\).
+The part of \(g\) that can appear in \(Z_1Z_2\) is more precisely
+\[
+ g_{\rm rem}=\prod_{\ell^e\parallel N,\ v_\ell(g)=e}\ell^e.
+\]
+Indeed a prime in \(W\) is coprime to both primitive summands.
+Thus \(g^{a_0}\) can be replaced by \(g_{\rm rem}^{a_0}\) in
+the following estimate at large \(W\). The exact factors
+\(D_i\le Z_i^{\theta_i}\) can also be used.
+
+Take a small absolute \(b_*>0\) with
+\(b_*+\lambda\) strictly below the budget cutoff in (JD4),
+after choosing the orders sufficiently large, and take
+\(4\nu_*\le b_*\). If \(W>N^{1/4}\), the target radical exponent
+is \(b=\log_W\operatorname{rad}(W)\le b_*\). Factoring out the gcd
+gives \(h_1=\log_W u\le\log_W(N^\alpha/g)\) and \(h_2\le1\).
+Apply (JD4) with two prescriptions and sector budget arbitrarily
+close from above to \(b+h_1/p+1/q\). The constants are uniform
+as these exponents vary with \(N,g\): round \(b\) and the
+allowable upper bound on \(h_1\) upwards on a finite grid whose
+spacing is sufficiently small compared to the given exponent
+allowance. The parameter choices are then finite, and there is
+fixed slack to the absolute budget cutoff. Summing the \(D_i\)
+bins, and using that the fixed \(W\) is part of its dyadic bin,
+bounds the count at this gcd by
+\[
+ W^{\sigma(h_1^{\max}/p+1/q)}
+      \operatorname{rad}(W)^\sigma g^{a_0}N^\varepsilon
+ \le N^{\sigma(\alpha/p+1/q)}
+      \operatorname{rad}(W)^\sigma g^{-\chi}N^\varepsilon .
+\]
+Here \(h_1^{\max}=\min(1,\log_W(N^\alpha/g))\).
+If the latter is negative the gcd gives no solutions.
+
+For \(W\le N^{1/4}\), the earlier coefficient-uniform fixed-gcd
+bound gives \(N^\varepsilon W^{1/B}\le N^{1/(4B)+\varepsilon}\).
+If there are solutions then \(g\le N^\alpha\), so
+\[
+ N^{\sigma(\alpha/p+1/q)}g^{-\chi}
+ \ge N^{\sigma(1-\alpha)/q+\alpha a_0}
+ \ge N^{\sigma/S}
+ \ge N^{1/(4B)} .
+\]
+This proves the same fixed-gcd bound, even retaining
+\(\operatorname{rad}(W)^\sigma\ge1\). Finally sum over the
+divisor-many \(g\mid N\), use \(g\ge G\) and
+\(\operatorname{rad}(W)\le\operatorname{rad}(N)\), and retain
+the independent coefficient-uniform bound \(N^{1/B+\varepsilon}\).
+
+### An aggregate count under an original-target radical cap
+
+For any fixed \(0\le\nu\le1/S\), count ordered positive triples
+with \(p\)-full and \(q\)-full summands as above, largest term
+\(N\le X\), and \(\operatorname{rad}(N)\le X^\nu\).
+Their number is
+\[
+ \ll_{p,q,\nu,\varepsilon}
+   X^{\beta+\nu\max(\sigma,1-S\beta)+\varepsilon}.
+ \tag{LR2}
+\]
+This includes the stronger per-target condition
+\(\operatorname{rad}(N)\le N^\nu\).
+For equal summand orders \(p=q=s\), its exponent is
+\(2\sigma/s+(1-2\sigma)\nu\), strictly below \(1/s\) for
+\(\nu<1/s\). It is also stronger than summing (LR1)
+over all these targets using the radical count for their number.
+
+Put \(\tau=\max(\sigma,1-S\beta)\) and
+\(a=(1-\tau)/S\); thus \(0<a\le\beta\), with \(0<\tau<1\).
+Fix a primitive quotient \(u+v=W\), write \(R=\operatorname{rad}(W)\),
+\(P=\operatorname{rad}(uvW)\), and \(Z=Z_1Z_2\).
+Split the common divisor \(g=f g_0\) uniquely into its \(P\)-supported
+part \(f\) and the coprime part \(g_0\).
+The latter is \(S\)-full, and
+\(\operatorname{rad}(g_0)\operatorname{rad}(Wf)=\operatorname{rad}(N)\).
+The elementary height count and fixed-radical count therefore bound
+the number of such \(g_0\) by the smaller of
+\((X/(Wf))^{1/S}\) and \(X^\nu/\operatorname{rad}(Wf)\),
+up to a factor \(X^\varepsilon\). If either range is below one,
+there are no choices. Interpolating their minimum gives
+\[
+ X^{a+\tau\nu+\varepsilon}W^{-a} f^{-a}
+                          \operatorname{rad}(Wf)^{-\tau}.
+\]
+The deficient primes on summands do not divide \(W\), are
+mandatory in \(f\), and appear in \(Z\) with exponent at most
+\(S\). Hence
+\(\operatorname{rad}(Wf)\ge R\operatorname{rad}(Z)\ge R Z^{1/S}\).
+The Euler sum over allowed \(P\)-supported \(f\) is
+\(\ll Z^{-a}W^\varepsilon\), by (GU3).
+Since \(a+\tau/S=1/S\), the resulting multiplier count is
+\[
+ X^{a+\tau\nu+\varepsilon}W^{-a+\varepsilon}
+                              R^{-\tau} Z^{-1/S}.
+ \tag{LR3}
+\]
+
+Use dyadic height and radical bins \(W\asymp Y\), \(R\asymp H_R\),
+and separate \(Z_i\) bins. In the low-radical branch
+\(H_R\le Y^{b_*}\), apply (JD4) with the two summands prescribed,
+using the finite-grid step above for \(b\), and with \(h_i\le1\).
+The constants are uniform in radical bins. Summing independent
+\(D_i\) bins up to the respective \(Z_i^{1/S}\) bounds gives
+quotient exponent bound \(Y^{\beta+\varepsilon}H_R^\sigma
+Z^{\gamma/S}\). Multiplying by (LR3), the \(Z_i\) bins sum
+geometrically, their exponents being \(-(1-\gamma)/S\).
+The \(R\) factor is harmless since \(\sigma-\tau\le0\).
+Summing over \(Y\le X\) yields
+\(X^{a+\tau\nu+\max(0,\beta-a)+\varepsilon}
+ = X^{\beta+\tau\nu+\varepsilon}\).
+
+In the high-radical branch \(H_R>Y^{b_*}\), use only the radical
+bound for \(g_0\). Counting all \(P\)-supported integers \(f\)
+up to \(X\) by the fixed-support Rankin estimate costs
+\(X^\varepsilon W^\varepsilon\). This gives multiplier bound
+\(X^{\nu+\varepsilon}W^\varepsilon R^{-1}Z^{-1/S}\).
+For the quotient, fix the two terms of smallest radical. Their
+radical product is at most \((W^\lambda RD)^{2/3}\). The same
+fixed-radical estimate gives quotient bound
+\(Y^{2\lambda/3+\varepsilon}H_R^{2/3}Z^{2/(3S)}\) after summing
+the \(D_i\) bins. The \(Z_i\) exponents are again strictly
+negative after multiplication. The remaining radical factor
+\(H_R^{-1/3}\) and height factor \(Y^{2\lambda/3+\varepsilon}\)
+give a summable height exponent, since one may fix \(b_*\)
+and require \(4\lambda\le b_*\). Thus this branch contributes
+at most \(X^{\nu+\varepsilon}\). It is covered by (LR2), because
+\(\nu\le1/S\) and \(1-\tau\le S\beta\).
+
+## A quarter coefficient at very small target radical
+
+Prescribe orders \(p,q\) on two summands \(u,v\) of a primitive
+quotient of height \(W\), and leave its target \(W\) unprescribed.
+Write \(h_1=\log u/\log W,\ h_2=\log v/\log W\). Assume
+\[
+ R=\operatorname{rad}(W)\le W^b,\qquad
+ b+h_1/p+h_2/q\le\rho .
+\]
+Let \(D=D_1D_2\) be the fractional deficiency factor defined
+as in (JD2). For \(W\asymp Y,\ D\asymp H\), the elementary
+bound
+\[
+ Q(Y,H)\ll_\varepsilon Y^{(\rho+b)/2+\varepsilon}H^{1/2}
+ \tag{LQ2}
+\]
+counts the target and whichever prescribed summand has smaller
+radical. The product of the two prescribed radicals is at most
+\(W^{\rho-b}D\), and their chosen smaller radical is at most
+its square root. Choose the two radicals and then choose
+numbers of the fixed supports, at subpower cost.
+
+For any fixed \(\gamma>1/2\) and \(\eta>0\), uniformly at
+sufficiently small fixed \(\rho\), one has
+\[
+ Q(Y,H)\ll Y^{\rho/4+b/4+\eta\rho+\varepsilon}H^\gamma.
+ \tag{LQ3}
+\]
+Otherwise take a sequence of failing fixed parameter choices
+with \(\rho\to0\), taking the height limit first at each fixed
+choice, and pass to \(z=\lim\log_Y H\). Formula (LQ2) first
+forces \(z=O(\rho)\). Take anatomic boxes with compression
+above both orders and losses \(o(\rho)\). Then
+\(L\le\rho+z+o(\rho)\), \(L_C\le b+o(\rho)\), and the
+count exponent is \(\gg\rho\), giving \(L\asymp\rho\).
+The [profile inequality (LQ1)](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-quarter-inequality-for-a-letter-of-small-radical-mass)
+gives
+\[
+ D_{\rm box}\le(\rho+z+b)/4+o(\rho),
+\]
+contrary to the failed lower bound in (LQ3).
+The root cap \(L_C\) uses the letterwise radical comparison.
+
+There is a strict improvement when \(b\) is sufficiently
+small relative to \(\rho\). Fix \(\gamma>1/2\). There are
+\(\tau,\delta,\rho_*>0\), with \(\delta<1/16\) if desired,
+such that in the sector \(b\le\tau\rho,\ \rho\le\rho_*\),
+\[
+ Q(Y,H)\ll Y^{(1/4-\delta)\rho+\varepsilon}H^\gamma .
+ \tag{LQ4}
+\]
+Otherwise choose failures with \(\tau,\delta,\rho\to0\).
+Repeat the foregoing argument. Comparing with (LQ1) gives
+\[
+ (\gamma-\tfrac14)z\le \delta\rho+b/4+o(\rho),
+\]
+so \(z=o(\rho)\), \(L/\rho\to1\), \(d\to1/4\), and \(l_C=0\).
+The cheap-letter argument for (LQ1) excludes a supported
+summand because \(l_C<d\). Since the support threshold at \(d=1/4\)
+is \(1/2\), this forces \(l_1=l_2=1/2\).
+
+Write \(s_1=p,s_2=q\). At every fixed \(\theta>0\), the
+positive valuations below \((1-\theta)s_i\) carry root
+logarithm at most \((\log D)/\theta=o(\rho\log W)\).
+They remain exact degree coordinates by the choice of
+compression. The anatomic first moment on letter \(i\) is
+at most its numerical height \(h_i\), since the initial
+coefficient is a positive integer. This comparison can be
+made with no additive outer error by using lower dyadic
+root endpoints and upper complete endpoints in the inner
+height limit. Hence, with \(t_i=s_i\rho\),
+\[
+ \frac{h_i}{t_i}\ge(1-\theta)(L/\rho)(l_i-o(1)).
+\]
+This bound remains valid if \(t_i\to0\). The sum of its two
+left sides is at most \(1\) by the sector condition. Therefore
+both tend to \(1/2\). On each positive-height summand, \(t_i\)
+tends to \(2h_i^*>0\), its weak degree measure is supported
+on \([2h_i^*,\infty)\), and its mass \(1/2\) and available
+first moment \(h_i^*\) force the measure
+\((1/2)\delta_{2h_i^*}\) with no escaped moment. It is thus
+finite-scale. A possible zero-height summand is itself a
+wide cofactor. The positive-height target \(C\) has modulus
+cost at most \(l_C=0\). Under it (GW) releases both
+summands, giving the contradiction to \(d=1/4\).
+In the box comparison the order of limits is the same as in
+(JD2): heights first at each fixed exponent allowance and
+compression, and only then the small-budget subsequence.
+
+### Fixed targets with a short-summand cap and gcd cutoff
+
+Put \(\lambda=1/p+1/q\), \(S=\max(p,q)\),
+\(k=\min(p,q)\), and \(B=\max(S,k+1)\).
+For any fixed \(\gamma>1/2\), some \(\delta>0\) gives the
+following bound, uniformly in \(N\ge2\), \(0\le\alpha\le1\),
+and \(1\le G\le N\). The count is of ordered \(p\)-full
+and \(q\)-full summands \(A,B'\) of \(N\) with the indicated
+shortness and common-divisor restrictions.
+\[
+ r_{p,q}(N; A\le N^\alpha,\ \gcd(A,B')\ge G)
+ \ll_{p,q,\gamma,\varepsilon} N^\varepsilon
+ \min\left\{
+   (N/G)^{1/B},
+   N^{\sigma_*(\alpha/p+1/q)}
+        \operatorname{rad}(N)^\gamma G^{-\sigma_*\lambda}
+ \right\},
+ \qquad \sigma_*=\tfrac14-\delta .
+ \tag{LQ5}
+\]
+The orders are sufficiently large in terms of \(\gamma\).
+
+Fix a possible gcd \(g\) and put \(W=N/g\), \(R=\operatorname{rad}(W)\),
+\[
+ A_0=\min\bigl(1,\log_W(N^\alpha/g)\bigr),\qquad
+ \Lambda=A_0/p+1/q.
+\]
+If \(g>N^\alpha\), this gcd contributes zero. Otherwise
+\(h_1\le A_0,\ h_2\le1\). Choose an internal deficiency exponent
+\(1/2<\gamma_1<\gamma\), small \(c_0>0\) within the (LQ4)
+sector width, and small absolute \(b_*>0\) below the budget
+cutoffs. When \(b=\log_W R\le c_0\Lambda\), apply (LQ4)
+with \(\rho=b+\Lambda\). After summing the \(D\)-bins this gives
+\(W^{\sigma_*\Lambda+\varepsilon} R^{\sigma_*}
+R_{\rm rem}^{\gamma_1}\), where \(R_{\rm rem}=\operatorname{rad}(N)/R\). Every deficient
+prime lies in \(g\) by original fullness and is coprime to \(W\)
+by primitivity, so the bound \(D\le R_{\rm rem}\) follows from
+the fractional exponents in \(D\).
+
+If \(c_0\Lambda<b\le b_*\), use (LQ3) instead, giving
+\(W^{(1/4+\eta)\Lambda+\varepsilon}
+R^{1/2+2\eta}R_{\rm rem}^{\gamma_1}\).
+Choose \(\delta,\eta>0\) so small that
+\(\delta+\eta<c_0(\gamma-1/2-2\eta)\) and shrink the
+(LQ4) saving to that \(\delta\). The lower bound
+\(R>W^{c_0\Lambda}\) absorbs the excess height exponent.
+Both branches are therefore bounded by
+\(W^{\sigma_*\Lambda+\varepsilon}\operatorname{rad}(N)^\gamma\).
+Choose grid spacings for \(b,A_0\) sufficiently fine in the
+fixed orders and exponent allowance, so the constants are
+uniform, preserving the strict sector slack in the low
+branch and the strict inequality in the medium branch.
+
+Finally, if \(b>b_*\), the fixed-gcd graph bound
+\(W^{1/B+\varepsilon}\) already fits this estimate, since
+\(W^{1/B}\le R^\gamma\) for large enough orders. Hence
+every branch satisfies the same bound. Since
+\(W^{A_0}\le N^\alpha/g\),
+\[
+ W^{\sigma_*\Lambda}
+ \le N^{\sigma_*(\alpha/p+1/q)} g^{-\sigma_*\lambda}.
+\]
+Sum over the divisor-many admissible \(g\), using \(g\ge G\).
+
+### Aggregate counterpart at very small original target radical
+
+Fix \(\gamma=3/5\) and let \(\tau,\delta\) be as in (LQ4).
+Set \(c_0=\min(1/8,\tau/4)\) and decrease
+\(\delta\) to at most \(c_0/16\). Put
+\[
+  \sigma_*=\tfrac14-\delta,\qquad
+  \beta_*=\sigma_*\lambda,\qquad
+  t_*=\max(\sigma_*,1-S\beta_*).
+\]
+For sufficiently large fixed orders and
+\(0\le\nu\le\min(1/S,c_0\lambda/16)\), the aggregate count over
+\(N\le X\) with \(\operatorname{rad}(N)\le X^\nu\) is
+\[
+ \ll_{p,q,\nu,\varepsilon} X^{\beta_*+t_*\nu+\varepsilon}.
+ \tag{LQ6}
+\]
+
+Use the multiplier count (LR3) from the low-radical proof,
+with \(a=(1-t_*)/S\). It gives, at any one quotient,
+\(X^{a+t_*\nu+\varepsilon}W^{-a+\varepsilon}
+R^{-t_*}Z^{-1/S}\), where \(R=\operatorname{rad}(W)\)
+and \(Z\) is the mandatory summand repair. The same proof
+with \(t=1\) gives the pure radical multiplier count
+\(X^{\nu+\varepsilon}W^\varepsilon R^{-1}Z^{-1/S}\).
+Indeed in that case count the \(P\)-supported \(f\) at
+subpower cost instead of using its weighted Euler sum.
+
+For dyadic \(W\asymp Y\), if \(R\le Y^{c_0\lambda}\)
+up to the dyadic bin convention, use (LQ4) with
+\(b=\log_Y R+o(1)\) rounded upwards on a finite grid and
+\(\rho=\lambda+b\). The defining inequality \(b\le\tau\rho\)
+has fixed slack. After summing the \(D\)-bins, the quotient
+bound is \(Y^{\beta_*+\varepsilon}R^{\sigma_*} Z^{\gamma/S}\).
+The weighted multiplier count gives (LQ6) in this branch
+because \(a\le\beta_*,\ t_*\ge\sigma_*\), and the sum in the
+\(Z\)-bins is geometric.
+
+For \(Y^{c_0\lambda}<R\le Y^{b_*}\), where \(b_*>0\) is a
+small absolute threshold, use (LQ3) with sufficiently small
+fixed \(\eta\le c_0/16\) and the pure radical multiplier count.
+After summing the \(Z\)-bins, the contribution has height
+exponent at most
+\[
+ \nu+\left(\tfrac14+\eta
+              -c_0(\tfrac12-2\eta)\right)\lambda .
+\]
+Here \(1/2+2\eta<\gamma\) can be ensured by reducing \(\eta\).
+This exponent is at most \(\beta_*+t_*\nu\), since
+\((1-t_*)\nu\le c_0\lambda/16\), \(\delta,\eta\le c_0/16\),
+and \(c_0(1/2-2\eta)>3c_0/16\).
+For \(R>Y^{b_*}\), use the elementary two-smallest-radicals
+quotient estimate and the pure radical multiplier bound as
+in the high-radical branch of (LR2). This gives at most
+\(X^{\nu+\varepsilon}\), which is covered by (LQ6) because
+\(\nu\le1/S\) and \(1-t_*\le S\beta_*\).
+Dyadic cutoff factors and finite-grid approximations
+are absorbed into the desired exponent allowance.
+
+In particular if \(p=q=s\), the exponent in (LQ6) is
+\((1/2-2\delta)/s+(1/2+2\delta)\nu\). For example it is
+strictly below \(1/(2s)\) when \(0<\nu\le\delta/s\),
+which satisfies the imposed range for the chosen \(\delta\).
+
+
+With the additional condition \(A\le N^\alpha\), the same
+proof of (LR2) and (LQ6) applies with \(\lambda\) replaced by
+\(\alpha/p+1/q\) in their exponents and stated ranges.
+After division by \(g\), one has \(u\le W^\alpha\), so all
+three quotient branches use this smaller height budget.
+The multiplier bounds are unchanged.

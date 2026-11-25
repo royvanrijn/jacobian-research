@@ -46,6 +46,39 @@ At the endpoint \(\lambda=1\), Bright gives infinitely many triples with \(c/R\)
 
 Carella's v3 preprint claims infinitely many strict exceptions, but the identity used in equation (4.35) already fails at a prime square. For the weight \(z^{\omega(n)}\), the Euler factor at \(p\le y\) is \(1+zp^{-s}/(1-p^{-s})\), whose coefficient at \(p^{-2s}\) is \(z\). The displayed factor \((1-p^{-s})^{-z}\) has coefficient \(z(z+1)/2\). They differ for \(z\ne0,1\), including the varying values near \(1\) used in the Perron argument. The claimed short-interval estimate in (4.40) requires a proof for the correct generating function. [Carella v3, §4.3 and equation (4.35)](https://arxiv.org/pdf/2608.16764v3)
 
+### A radical-count contradiction to the claimed smooth-number lower bound
+
+For any \(X,Y\ge1\) and fixed \(\varepsilon>0\),
+\[
+ \#\{n\le X:\operatorname{rad}(n)\le Y\}
+     \ll_\varepsilon Y X^\varepsilon .
+ \tag{CR}
+\]
+Indeed, fix the radical \(r\), write \(n=rd\), and use
+\[
+ \#\{d\le X/r:p\mid d\Rightarrow p\mid r\}
+ \le (X/r)^\varepsilon\prod_{p\mid r}(1-p^{-\varepsilon})^{-1}
+ \ll_\varepsilon X^\varepsilon .
+\]
+The large-prime factors are bounded by \(p^\varepsilon\)
+whenever \(p^\varepsilon\ge2\). The remaining primes contribute
+a constant, and summing over \(r\le Y\) proves (CR).
+
+In Carella v3 Corollary 4.1, set \(L_0=\log\log x\). Each
+\(x^{1/(7L_0)}\)-smooth integer with at most \(L_0+3\sqrt{L_0}\)
+distinct prime factors has radical at most \(x^{1/7+3/(7\sqrt{L_0})}\).
+The count in the entire interval \((x,2x]\) is therefore
+\(O_\varepsilon(x^{1/7+\varepsilon+o(1)})\), already too small
+for the asserted \(x^{3/5}\rho_D(7L_0)\) lower bound in (4.42)
+on the shorter interval \((x,x+x^{3/5}]\). Here \(\rho_D\)
+is the Dickman function. Its delay equation and monotonicity give
+\(u\rho_D(u)=\int_{u-1}^u\rho_D(t)\,dt\ge
+\tfrac12\rho_D(u-\tfrac12)\) for \(u\ge1\). Iterating gives
+\(\rho_D(u)\ge(2u)^{-\lceil2u\rceil}\), so
+\(\rho_D(7L_0)=x^{-o(1)}\). This directly contradicts (4.42),
+which the strict-exception argument uses.
+[Carella v3, Corollary 4.1 and §5](https://arxiv.org/pdf/2608.16764v3)
+
 ## Fourier bound for powerful triples
 
 For an integer \(s\ge2\) define
@@ -700,10 +733,13 @@ prove that for every \(\varepsilon>0\),
  N_{7/10}(X)&\ll_\varepsilon X^{2/5+\varepsilon},&
  N_{4/5}(X)&\ll_\varepsilon X^{9/20+\varepsilon},\\
  N_{9/10}(X)&\ll_\varepsilon X^{1/2+\varepsilon},&
- N_1(X)&\ll_\varepsilon X^{7133338393/13333343040+\varepsilon}.
+ N_1(X)&\ll_\varepsilon X^{42800023737/80000047360+\varepsilon}.
 \end{aligned}
 \]
 These bounds also apply to smaller budgets by inclusion of the sets.
+The [combined overlay](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md#a-strict-improvement-through-unit-radical-budget)
+gives the displayed unit exponent and improves the earlier unit tree
+on the entire interval from \(991/1000\) through one.
 Reweighting the tree leaves gives \(N_{3/4}(X)\ll_\varepsilon
 X^{1773/4012+\varepsilon}\).
 

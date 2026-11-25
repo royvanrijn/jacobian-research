@@ -650,3 +650,42 @@ python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 9999/
 ```
 
 Add `--full` to replay all inherited rows at the source of the overlay.
+
+### A strict improvement through unit radical budget
+
+The [combined unit overlay](abc_unit_budget_1_interval_overlay.json.xz)
+replaces 5,199 dual leaves in the existing strict unit tree and retains
+all 1,830,732 leaf positions. Its SHA-256 is
+`e6cd907dae663245adbdcd00fa0535c7844fba54eb8bcdb98fa664880360a441`.
+At unit budget the full exact replay and sparse replay both give
+\(42800023737/80000047360\), below the previous
+\(7133338393/13333343040\).
+
+The same overlay strictly improves the old unit tree on the closed interval \([991/1000,1]\).
+The checker takes an ordered list of old knots. For each consecutive pair
+it checks that a single old leaf line attains the old maximum at both ends.
+Since the old maximum is convex and lies above that line, it agrees with
+the line on that segment. The new maximum is also convex. Checking a
+strict improvement at each knot proves it on the whole interval.
+
+| Radical budget | Combined overlay exponent | Earlier unit tree |
+|---|---|---|
+| \(991/1000\) | \(267494705491/500000001000\) | \(1070000403411/2000000924000\) |
+| \(130801157300042477/130801188430064625\) | \(13995732829209764109620851/26160250844612481064501275\) | \(93304840305054369/174401584573419500\) |
+| \(171787695125876029/171787696585878054\) | \(45953234676129959392173581/85893900172823395935172308\) | \(245083774666788733/458100524229008144\) |
+| \(24267451106599229/24267451126599274\) | \(25966186573679728296885923/48534930015162636829569456\) | \(9442244437864069/17649055364799472\) |
+| \(648493562008930961/648493562183927025\) | \(173472120590860320060035111/324246966561122297103129150\) | \(138777619678434073/259397424873570810\) |
+| \(453862750531578208/453862750531586879\) | \(19425336496091672059495110223/36309041537466815495954589440\) | \(173440404995357859/324187678951133485\) |
+| \(1\) | \(42800023737/80000047360\) | \(7133338393/13333343040\) |
+
+```sh
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py \
+  --overlay research/arithmetic/abc_unit_budget_1_interval_overlay.json.xz \
+  --compare-unit-knots \
+  991/1000 130801157300042477/130801188430064625 \
+  171787695125876029/171787696585878054 24267451106599229/24267451126599274 \
+  648493562008930961/648493562183927025 453862750531578208/453862750531586879 \
+  1
+```
+
+Add `--full` to replay all inherited duals at unit budget as well.

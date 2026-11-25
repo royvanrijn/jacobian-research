@@ -180,6 +180,117 @@ the ordinary moment polynomials \(Q_m,Q_{m+1}\) lie in \(\mathbb Q[t]\).
 Their complex coprimality implies a rational Bézout identity
 and thus the conclusion over every characteristic-zero field.
 
+### Angular separation at small curvature
+
+The uniform small-curvature conclusion holds in the stronger
+form that the root arguments of \(Q_m\) and \(Q_{m+1}\) are
+disjoint. In particular the argument works independently of
+the relative centers.
+
+The real zeros of
+\(h_n(x)=n^{-n/2}\mathrm{He}_n(\sqrt n\,x)\) are the eigenvalues
+of the size-\(n\) zero-diagonal Jacobi matrix with off-diagonal
+entries \(\sqrt{j/n}\), \(1\le j<n\).
+This follows from the Hermite recurrence derived from its
+generating function. In the matrix for \(n+1\), the leading
+size-\(n\) block is the old matrix scaled by
+\(\sqrt{n/(n+1)}\). The trailing block has edge ratios
+\(\sqrt{n(j+1)/((n+1)j)}\) relative to the old one.
+These ratios are at least one and decrease with \(j\).
+The [Jacobi matrix comparison for a mirrored unit gap](MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md#consecutive-interlacing-for-a-single-mirrored-unit-gap)
+therefore bounds each positive eigenvalue of the old matrix
+between the corresponding positive eigenvalues of the two
+blocks. Strict principal interlacing and symmetry give strict
+interlacing of \(h_n,h_{n+1}\). In particular the corresponding
+limits \(H_n(x)=\mathrm i^{-n}h_n(\mathrm i x)\) have distinct
+and disjoint imaginary root sets at consecutive orders.
+
+If two original roots have the same argument along a sequence
+with \(S\to0\), use their scaled roots \(x_n\) from (3) and
+pass to convergent subsequences. Multiplication by
+\(e^{-\mu_n}>0\) preserves the argument. On the continuous
+branch through angle \(\pi\), the argument of
+\(-1+\sigma x_n\) is \(\pi-\sigma\Im(x_n)+O_m(\sigma^2)\)
+uniformly for bounded \(x_n\). Thus the two limiting scaled
+roots have the same imaginary part. As both roots are purely
+imaginary, they would coincide. This contradicts interlacing.
+
+### Small outer coefficient loss for arbitrary positive Gamma shapes
+
+At each fixed \(m\ge2\), the two root-argument sets are disjoint
+if the lower order's endpoint-normalized outer geometric mean
+\(u\) is sufficiently close to one. The threshold is uniform
+over all finite exponent profiles and all matched or unmatched
+positive Gamma shapes. Here, writing \(C_{n,k}\) for the
+coefficient divided by \(\binom nk\), the mean is
+\[
+ u=\left(\frac{C_{m,1}C_{m,m-1}}{C_{m,0}C_{m,m}}\right)^{1/2}.
+\]
+Positive factors depending only on the order or proportional
+to \(c^k\) for a positive \(c\) do not affect this expression.
+
+Group each unequal exponent row of gap \(d>0\) into rising
+factors as in the [terminal-five proof](MULTIVARIATE_TERMINAL_FIVE_ANGULAR_SEPARATION.md#the-normalized-coefficient-ranges).
+Each factor has base \(T_n=(n a+\gamma+j)/d\), where \(a\)
+is the smaller exponent, \(0\le j<d\), and \(\gamma>0\).
+In increasing orientation its coefficient ratio to the
+\(k=0\) coefficient is \((T_n)_k\) up to a factor
+of the form \(c^k\).
+In decreasing orientation it is \((T_n)_{n-k}/(T_n)_n\)
+with the same convention. These two ratios are the
+\(k\)-th moments of \(Y^{\epsilon}\) with \(Y\) Gamma of shape
+\(\lambda_n=T_n\) and \(\epsilon=1\) in increasing orientation,
+or shape \(\lambda_n=T_n+n\) and \(\epsilon=-1\) in decreasing
+orientation. The additional geometric factors are absorbed
+by a positive rescaling of the argument. At both orientations
+\[
+ 1\le\frac{\lambda_{m+1}}{\lambda_m}\le\frac{m+1}{m},
+ \qquad
+ -2\log u=\sum_{\mathrm{factors}}\log(1+(m-1)/T_m).
+\]
+The second identity follows from the outer ratio for a single
+rising factorial. Since each \(1+(m-1)/T_m\le u^{-2}\),
+\(\log(1+x)\ge x/(1+x)\) gives
+\[
+ V_m:=\sum_{\mathrm{factors}}\lambda_m^{-1}
+ \le \sum_{\mathrm{factors}}T_m^{-1}
+ \le\frac{u^{-2}(-2\log u)}{m-1}.
+\]
+Set \(V_{m+1}=\sum\lambda_{m+1}^{-1}\). The ratio
+\(V_{m+1}/V_m\) lies in \([m/(m+1),1]\).
+
+For order \(n\) take the independent Gamma variables of shapes
+\(\lambda_n\) and center the sum of their signed logarithms.
+Use the same scale \(\sigma=\sqrt{V_m}\) at both orders.
+For \(|z|\le R\) fixed, the change \(z\epsilon/\sigma\) in
+each shape is \(O_R(\sigma)\) relative to that shape.
+The proof of (2) therefore gives the log moment generating
+function
+\[
+ \frac{V_n}{2V_m}z^2+O_{R,m}(\sigma).
+\]
+Indeed the sum of the squared reciprocal shapes is at most
+\(V_m^2\) at either order, which bounds the quadratic error
+and the cubic remainder exactly as in (2).
+At any sequence \(u\to1\), pass to a subsequence with
+\(V_{m+1}/V_m\to q\in[m/(m+1),1]\).
+The moment and root convergence argument of (3) gives the
+imaginary Hermite polynomials with variances \(1\) and \(q\).
+
+For the real Hermites of these variances, the lower Jacobi
+matrix has entries \(\sqrt j\) and the upper one
+\(\sqrt{qj}\). The leading principal block of the upper matrix
+has positive eigenvalues no larger than those of the lower
+matrix by scalar scaling. The edge ratios of its trailing
+block to the lower matrix are \(\sqrt{q(j+1)/j}\).
+They are at least one and decrease, so the second block has
+positive eigenvalues no smaller by the Jacobi comparison.
+Thus the imaginary limiting root sets are disjoint by strict
+principal interlacing and symmetry. Equality of original
+arguments would make their limiting imaginary coordinates
+equal by the same common-scale argument as in the previous
+section. This contradiction proves the uniform assertion.
+
 ## Large curvature and the endpoint radii
 
 **Theorem.** Let \(N\ge4\), and let \(\alpha,\beta\) be distinct
@@ -519,9 +630,136 @@ large-curvature criterion when \(N\ge4\), and terminals 2 and 3
 are already closed. Over other characteristic-zero fields use
 rational Bézout as above. \(\square\)
 
-### Exact exclusions through terminal thirteen in the limiting model
+### Algebraic restrictions on exceptional Curie–Weiss parameters
 
-For each \(2\le m\le12\), the polynomial \(R_m\) has no zeros in
+**Theorem.** At every terminal \(N=m+1\ge2\), the polynomials
+\(B_m(z;s),B_N(z;s)\) are coprime for \(s>0\) whenever
+\(u=e^{-s/(2mN)}\) is transcendental or totally real algebraic.
+If they have a common root, then \(\alpha=1/u\) is an algebraic
+integer with a nonreal conjugate. Its house \(H(\alpha)\), the
+maximum of the absolute values of its conjugates, satisfies
+\[
+ H(\alpha)<\sqrt2,\qquad
+ H(\alpha)<\exp\!\left(\frac{4\log N+10}{2mN}\right).
+ \tag{F}
+\]
+Its degree \(D=[\mathbb Q(\alpha):\mathbb Q]\) satisfies
+\[
+ D>\frac{mN\log2}{2(4\log N+10)} .
+ \tag{G}
+\]
+If \(\alpha\) is a nonunit, then
+\(D>2mN\log2/(4\log N+10)\).
+
+**Proof.** Write \(Q_m(z;u),Q_N(z;u)\) for the two polynomials in
+(D), with \(u\) now allowed to be complex. For \(m=1\),
+\(Q_1=1+z\) and \(Q_2(-1;u)=2(1-u)\ne0\) on \(0<u<1\).
+For \(m=2\),
+\[
+ Q_2=1+2u^3 z+z^2,\qquad
+ Q_3=(1+z)(1+(3u^4-1)z+z^2).
+\]
+Here \(Q_2(-1;u)=2(1-u^3)>0\), and the two middle coefficients
+of the monic quadratics differ by
+\[
+ 1+2u^3-3u^4=(1-u)(3u^3+u^2+u+1)>0 .
+\]
+Their difference is thus a nonzero multiple of \(z\), and their
+constant terms are one. We may assume \(m\ge3\).
+
+For complex \(u\) define
+\(\epsilon_j=\sum_{k=1}^{j-1}|[z^k]Q_j(z;u)|\), for \(j=m,N\).
+These polynomials are reciprocal, with endpoint coefficients one.
+When \(\epsilon_j<1\), each root \(z\) satisfies
+\[
+ |j\arg z-(2h_j+1)\pi|\le\arcsin\epsilon_j
+ \quad\text{for some } h_j\in\mathbb Z.
+\]
+Indeed, for \(|z|\le1\) the root equation gives
+\(|z^j+1|\le\epsilon_j\). For \(|z|>1\), apply the same argument
+to \(1/z\). A common root would therefore satisfy
+\[
+ \pi\le N\arcsin\epsilon_m+m\arcsin\epsilon_N ,
+ \tag{H}
+\]
+since \(N(2h_m+1)-m(2h_N+1)\) is an odd integer.
+
+When \(|u|\le\exp(-(4\log N+10)/(2mN))\), the absolute values
+of the coefficients satisfy (A) with \(S=4\log N+10\).
+The same coefficient estimates give \(\epsilon_m,\epsilon_N<3/(4N)\).
+Using \(\arcsin x\le 2x\) for \(0\le x\le1/2\), the right
+side of (H) is less than \(3\). This excludes common roots in
+this complex disk.
+
+There are also no common roots for \(|u|\le1/\sqrt2\). For \(m\ge4\)
+the smallest interior exponents of \(u\) in \(Q_m,Q_N\) are
+\(m^2-1,m^2\), respectively. Thus
+\[
+ \epsilon_m\le2^{m-(m^2-1)/2},\qquad
+ \epsilon_N\le2^{m+1-m^2/2}.
+\]
+Each bound, even after multiplying by its weight \(N\) or \(m\)
+in (H), decreases for \(m\ge4\). At \(m=4\) the two bounds are
+\(1/(8\sqrt2)\) and \(1/8\), so the right side of (H) is less
+than \(9/4\). At \(m=3\) the interior sums are at most
+\[
+ \epsilon_3\le6\cdot2^{-4}=\frac38,\qquad
+ \epsilon_4\le8\cdot2^{-9/2}+6\cdot2^{-6}
+           =\frac{\sqrt2}{4}+\frac3{32}<\frac{15}{32}.
+\]
+On \([0,1/2]\), convexity gives \(\arcsin x\le(\pi/3)x\)
+by the chord from \(0\) to \(1/2\). Since
+\(4\epsilon_3+3\epsilon_4<93/32<3\), (H) is again impossible.
+
+Return to \(0<u<1\). The even polynomial cannot vanish at \(-1\).
+For \(X\) standard normal, coefficient comparison gives
+\[
+ B_j(z;s)=\mathbb E\bigl[(1+z e^{\sqrt{s/j}\,X-s/2})^j\bigr] .
+\]
+At \(z=-1\) and even \(j\) the integrand is nonnegative and
+positive with probability one. Divide the odd polynomial by its
+factor \(1+z\). Denote the resulting even reciprocal polynomial
+and the original even member by \(O,E\), respectively. Each
+monic reciprocal polynomial of degree \(2r\) is
+\(z^r F(z+z^{-1})\) for a monic \(F\) over \(\mathbb Z[u]\).
+Write \(A_m(u)\) for the resultant of these two angle polynomials.
+A common root gives \(A_m(u)=0\).
+
+At \(u=0\), \(\operatorname{Res}_z(1+z^m,1+z^N)
+=\prod_{\zeta^m=-1}(1-\zeta)=2\).
+The omitted factor contributes \(E(-1;0)=2\).
+Over each root of the angle polynomial of \(E\), the two
+corresponding \(z\)-roots are reciprocal, so the product of
+the two evaluations of \(O\) is the square of its angle
+polynomial's value. This gives
+\(\operatorname{Res}_z(E,O)=A_m(u)^2\), with either order of
+the angle polynomials. Hence \(A_m(0)=\pm1\).
+In particular \(u\) is algebraic and \(\alpha=1/u\) is a root
+of a monic integral polynomial obtained by reversing \(A_m\)
+and choosing the leading sign. Each conjugate of \(\alpha\)
+is nonzero and its reciprocal is a root of \(A_m\). Such a root
+gives a common \(z\)-root by solving \(z+z^{-1}=x\) at a common
+angle root \(x\). The two complex disk exclusions give (F).
+
+If all conjugates \(\alpha'\) were real, then their nonzero
+absolute values would be strictly less than \(\sqrt2\).
+Each \(|(\alpha')^2-1|\) would be less than one, so the norm
+of \(\alpha^2-1\) would be a nonzero integer of absolute value
+less than one. This is impossible. For a nonunit, the absolute
+norm of \(\alpha\) is at least \(2\), yielding
+\(2\le H(\alpha)^D\) and the stronger degree bound.
+
+Finally, \(\alpha>1\) excludes roots of unity. Dimitrov's
+Schinzel–Zassenhaus bound gives \(H(\alpha)\ge2^{1/(4D)}\).
+For units this follows by applying his theorem to the normalized
+reciprocal of the minimal polynomial. For nonunits the norm
+already gives this lower bound. Combining with (F) gives (G).
+[Dimitrov, The Schinzel–Zassenhaus conjecture](https://annals.math.princeton.edu/articles/22975)
+\(\square\)
+
+### Exact exclusions through terminal 22 in the limiting model
+
+For each \(2\le m\le21\), the polynomial \(R_m\) has no zeros in
 \((0,1)\). Consequently, at each of these fixed terminals there is
 a uniform relative-gap threshold \(\eta_m>0\) as stated in the theorem.
 The computation concerns the one-parameter limiting model in (D).
@@ -553,12 +791,91 @@ integer \(D!(D-k)!\), so the check uses only exact integers.
 Replay with python-flint 0.9.0:
 
 ```sh
-.venv/bin/python research/factorial/image-rigidity/verify_multivariate_diffuse_resultants.py
+.venv/bin/python research/factorial/image-rigidity/verify_multivariate_diffuse_resultants.py --max-order 21
 ```
 
-All eleven orders passed both checks. The reduced angle-resultant
-degrees for \(m=2,\ldots,12\) were
-\(3,15,51,119,250,450,770,1210,1845,2665,3773\).
+All 20 orders passed both checks. The reduced angle-resultant
+degrees for \(m=2,\ldots,21\) were
+\(3,15,51,119,250,450,770,1210,1845,2665,3773,5145,6916,9044,11700,14820,18615,22995,28215,34155\).
 The verifier also accepts a nonvanishing polynomial with both
 endpoint factors, and rejects both the zero polynomial and
 \(2u-1\), which has an interior root.
+
+### An explicit relative-gap threshold on a positive curvature band
+
+Fix a terminal \(N=m+1\ge3\) at which both sign checks above
+pass, and assume \(S\in[s_0,K]\) for rational bounds
+\(0<s_0\le K\). Let \((f,D)\) be the multiplicity at \(u=1\)
+and the reduced degree of the angle resultant. Let
+\((f_e,D_e)\) be the corresponding pair for the evaluation of
+the even angle polynomial at \(-2\). Their values at \(u=0\)
+are nonzero, by the displayed endpoint resultant argument and
+the identity \(Q_{\mathrm{even}}(-1;0)=2\), respectively.
+Put \(d_m=\lfloor m/2\rfloor\), \(d_N=\lfloor N/2\rfloor\),
+\(r=d_j\) for the even order \(j\), and
+\[
+ b=\frac{s_0}{2mN+s_0},\qquad
+ \delta=\frac12\min\left\{
+ \frac{2^{-D} b^f}{4^{d_m d_N-1}},
+ \frac{2^{-D_e} b^{f_e}}{4^{r-1}}
+ \right\}.
+\]
+Then actual ordinary moment polynomials in this band are
+coprime whenever their maximum relative row gap \(\eta\)
+satisfies
+\[
+ \eta\le \min\left\{\frac12,\frac{(\delta/24)^N}{NK}\right\}.
+\]
+This also holds when the two endpoint centers are different.
+
+To see this, the strict integer coefficient signs give
+\(\big|(1+v)^D P(v/(1+v))\big|\ge \sum_{k=0}^D v^k\) for
+\(v\ge0\), where \(P\) is the reduced angle resultant. Since
+\(\binom Dk\le 2^D\), it follows that \(|P(u)|\ge2^{-D}\).
+The same argument applies with \(D_e\). Also
+\(1-u\ge b\), from \(e^x\ge1+x\) at \(x=S/(2mN)\).
+All roots of the limiting polynomials are on the circle,
+so their angle roots belong to \([-2,2]\). The monic angle
+resultant is a product of \(d_m d_N\) differences, each of
+modulus at most four. Thus every individual difference
+has modulus at least \(|R_m(u)|/4^{d_m d_N-1}\).
+The even evaluation at \(-2\) gives the second bound in the
+same way. For unit-circle roots \(z,w\),
+\(\big|(z+z^{-1})-(w+w^{-1})\big|\le2|z-w|\).
+These bounds give cross-order distance at least \(\delta\)
+between any two limiting roots, including the removed odd
+root \(-1\).
+
+For the actual polynomials centered at each order, let
+\(\varepsilon=3NK\eta/4\). A differing row of size \(r_i\) has
+\(r_i\ge1/\eta\) because its integer gap is at least one.
+On that row the ratio of its log-Gamma second derivative
+to \(1/(n r_i)\) lies between \(1-1/(n r_i)\) and
+\(1/(1-\eta)\). Subtracting the endpoint chord gives, for
+\(n=m,N\), absolute error in the logarithm of each mixed
+coefficient relative to the diffuse polynomial \(B_n(z;S)\)
+of at most
+\[
+ \frac{nS}{8}\left(\frac{\eta}{1-\eta}+\frac{\eta}{n}\right)
+ \le\frac{3NK\eta}{8}.
+\]
+The displayed bound on \(\eta\) makes this less than \(1/2\).
+The diffuse coefficients are at most \(\binom nk\). Thus
+the two coefficient arrays differ entrywise by at most
+\(\varepsilon\binom nk\), using \(e^x-1\le2x\) on \([0,1/2]\).
+
+Outside \(|z|<2\), the monic diffuse polynomial has modulus
+at least \((|z|-1)^n\) by its circle roots. The polynomial
+perturbation has modulus at most
+\(\varepsilon(1+|z|)^n\le\varepsilon 3^n(|z|-1)^n\), so no
+actual root lies there. At any actual root \(|z|<2\), the
+product of its distances to the diffuse roots has modulus
+at most \(\varepsilon 3^n\). There is a diffuse root within
+\((\varepsilon 3^N)^{1/N}\le\delta/8\).
+A common root of the two original polynomials gives two
+centered roots on the same ray because the center factors
+are positive. Their radial difference is at most
+\(2(\delta/8)\). Adding their distances to their respective
+diffuse roots would give a pair of diffuse roots at
+distance at most \(\delta/2\), contradicting the lower
+bound \(\delta\). \(\square\)

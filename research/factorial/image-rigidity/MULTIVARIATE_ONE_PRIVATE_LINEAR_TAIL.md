@@ -28,10 +28,12 @@ The argument uses angular bounds for both ends of the normalized
 moment polynomial. The two ends have different coefficient scales
 because exactly one private degree equals one. The
 [nondivisibility proof](MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md)
-also covers terminals 2 through 4 and proves the all-order result
-when both private degrees are at least two. For \((D_\alpha,D_\beta)=(1,2)\) with \(S_{\mathrm{sh}}<4\log 2\),
-the threshold above leaves a finite range of terminals, with unbounded
-exponents there.
+covers terminals 2 through 4 and proves the all-order result
+when both private degrees are at least two. The
+[terminal-five proof](MULTIVARIATE_TERMINAL_FIVE_ANGULAR_SEPARATION.md)
+covers the next pair. Thus for \((D_\alpha,D_\beta)=(1,2)\) with
+\(S_{\mathrm{sh}}<4\log 2\), the remaining terminals are 6 through 360,
+with unbounded exponents at each terminal.
 
 ## 1. Factorial coefficient bounds
 

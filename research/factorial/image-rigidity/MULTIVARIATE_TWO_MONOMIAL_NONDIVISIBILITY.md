@@ -3,11 +3,13 @@
 For any number of variables and any positive real Gamma shapes, the
 moment polynomial of a two-monomial support at order \(m\) cannot
 divide its successor at order \(m+1\). At terminals 2, 3, and 4 the
-consecutive polynomials are coprime over \(\mathbb C\). In particular,
-ordinary multivariate binomials satisfy Strong Factorial at these three
-terminals over every characteristic-zero field. At terminal 5 the
-ordinary assertion also holds for a constant plus a monomial, with
-any common monomial factor in independent variables.
+consecutive polynomials are coprime over \(\mathbb C\).
+The [terminal-five angular proof](MULTIVARIATE_TERMINAL_FIVE_ANGULAR_SEPARATION.md)
+covers the next pair for arbitrary supports and positive Gamma shapes.
+Thus ordinary multivariate binomials satisfy Strong Factorial at
+terminals 2 through 5 over every characteristic-zero field.
+The direct constant-plus-monomial proof below also covers
+terminal 5, including an independent common monomial factor.
 
 ## An inequality using the endpoint coefficients
 

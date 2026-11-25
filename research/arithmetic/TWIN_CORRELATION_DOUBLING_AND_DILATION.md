@@ -44,6 +44,142 @@ and the order of growth at each fixed positive \(t\).
 All nonzero degrees of \(T_X^\circ\) are at least three, so
 \(T_X^\circ(2t)\ge8T_X^\circ(t)\).
 
+## Higher-order one-sided extraction
+
+For an odd positive integer \(r\), put \(m=r+1\) and define
+\[
+ \mathcal D_r=-\frac1{r!}\prod_{k=3}^{r+2}
+                   \left(t\frac{d}{dt}-k\right).
+\]
+
+**Theorem.** For \(t>0\),
+\[
+ \begin{split}
+ \mathcal D_r T_X(t)&=t^2\pi_2(X)-E_r(t),\\
+ E_r(t)&=\sum_{j\ge r+3}\binom{j-3}{r}a_j(X)t^j\ge0 .
+ \end{split}                                                   \tag{A1}
+\]
+At \(t=c/L\), for fixed \(c>0\) and \(c+m/2\le L\), one has
+\[
+ E_r(t)\ll e^{2c}t^2B_X\left(\frac{2ec}{m}\right)^m.             \tag{A2}
+\]
+In particular, one may take \(r\) to be the least odd integer at least
+\((1+\varepsilon)\log L/\log\log L\) for fixed \(\varepsilon>0\).
+Then \(E_r(c/L)=o(t^3B_X)\). Along any unbounded sequence at this
+choice of \(r\), a positive lower bound \(\mathcal D_r T_X(t)\gg t^3B_X\)
+is equivalent to \(\pi_2(X)\gg B_X/L\), with constants allowed to
+depend on \(c\) and \(\varepsilon\).
+
+On \(t^j\) the multiplier is \(-\prod_{k=3}^{r+2}(j-k)/r!\).
+It is \(1\) at \(j=2\), zero at \(3\le j\le r+2\), and
+\(-\binom{j-3}{r}\) at \(j\ge r+3\). The falling factorial also gives
+\[
+ \mathcal D_r T_X(t)
+   =-\frac{t^{r+3}}{r!}\left(\frac{d}{dt}\right)^r
+                         \left(\frac{T_X(t)}{t^3}\right).
+\]
+The bound \(\binom{j-3}{r}\le 2^{j-3}\) gives
+\(E_r(t)\le2^{-r-6}T_X(4t)\). For a growing evaluation radius
+\(\lambda>1\), the binomial series gives
+\[
+ \binom{j-3}{r}\lambda^{-j}
+ \le \sum_{\ell\ge r}\binom{\ell}{r}\lambda^{-\ell-3}
+ =\lambda^{-2}(\lambda-1)^{-m}.
+\]
+Consequently \(E_r(t)\le\lambda^{-2}(\lambda-1)^{-m}T_X(\lambda t)\).
+The uniform upper sieve gives \(T_X(\lambda t)\ll
+(\lambda t)^2 B_X e^{2\lambda c}\) for \(\lambda t\le1\).
+Taking \(\lambda=1+m/(2c)\) proves (A2). The relevant decay condition is
+\(m\log(m/(2ec))-\log L\to+\infty\), which holds at the stated order.
+
+The leading constant \(1\) in the order is sharp for a bound from the
+polynomial envelope alone. A formal addition
+\(B_X t^2(2eLt/m)^m\) has nonnegative coefficients and obeys that
+envelope, since \((ex/m)^m\le e^x\) for \(x\ge0\).
+It leaves every fixed coefficient unchanged eventually as \(m\to\infty\).
+Its first surviving degree contributes exactly
+\(t^2 B_X(2ec/m)^m\) to \(E_r(c/L)\).
+
+The same error control applies to any subpolynomial with nonnegative
+coefficientwise discrepancy from \(T_X\). If it omits \(o(B_X/L)\)
+twins, the difference of the two signed statistics is \(o(t^3 B_X)\)
+at the stated order. Indeed (A1) applies to the discrepancy, and its
+nonnegative tail is bounded by \(E_r(t)\). This includes \(U_{X,\delta}\)
+below, whose omitted quadratic coefficient is at most \(X^{1/3}\).
+
+Strict positivity of the exact statistic already suffices for
+infinitude at \(r=O(\log L)\). To see this, let \(v=A\log L/L\)
+with \(A\) a sufficiently large fixed constant. The weighted lower
+sieve gives \(T_X(v)\gg B_X v^J L^{2A}\) for the fixed \(J\) in
+the squarefree correlation note. The degrees at most \(r+2\) contribute
+at most \(2^{r+2}T_X(v/2)\ll 2^{r+2}B_Xv^2 L^A\). Degrees
+above \(M=\lceil K\log L\rceil\) contribute at most
+\(2^{-M}T_X(2v)\ll2^{-M}B_Xv^2 L^{4A}\). Choosing \(A\) large
+relative to \(J\) and the bound on \(r/\log L\), then \(K\) large
+relative to \(A\), makes both contributions \(o(T_X(v))\).
+On the intervening degrees the binomial multiplier is at least one,
+and replacing \(v\) by \(t\) costs at most the factor \((t/v)^M\)
+in the lower bound. Thus
+\[
+ \frac{E_r(t)}{t^2}
+ \ \gg\ B_X\exp\!\big(-O_{c,J,r/\log L}(\log L\log\log L)\big)
+ \ \longrightarrow\ \infty.
+\]
+If \(\mathcal D_r T_X(t)>0\), (A1) gives
+\(\pi_2(X)>E_r(t)/t^2\).
+
+### Finite differences on a positive interval
+
+In the normalized variable, the statistic in (A1) is the Taylor
+polynomial at \(u=c\) evaluated at zero:
+\[
+ \frac{\mathcal D_r T_X(c/L)}{(c/L)^2 B_X}
+     =\sum_{k=0}^r\frac{(-c)^k}{k!}F_X^{(k)}(c).
+\]
+This follows by applying Leibniz's rule to the derivative formula.
+A finite-difference version uses distinct nodes \(u_0,\dots,u_r\)
+in a fixed interval \([a,b]\) with \(0<a<b\). Set
+\[
+ w_i=\prod_{j\ne i}\frac{-u_j}{u_i-u_j},
+ \qquad I_{X,r}=\sum_{i=0}^r w_i F_X(u_i).
+\]
+The interpolating polynomial of degree at most \(r\) has value
+\(I_{X,r}\) at zero. The interpolation remainder, obtained by repeated
+Rolle's theorem, equals
+\(F_X^{(m)}(\xi)\prod_i(-u_i)/m!\) for some \(0<\xi<b\).
+Even \(m\) and coefficient positivity give its sign.
+Cauchy's estimate on the circle of radius \(m/2\) about \(\xi\),
+using \(|F_X(z)|\ll e^{2|z|}\) for \(|z|\le L\), gives, when
+\(b+m/2\le L\),
+\[
+ 0\le F_X(0)-I_{X,r}
+      \ll e^{2b}\left(\frac{2eb}{m}\right)^m.                    \tag{A3}
+\]
+Thus \(I_{X,r}\le\pi_2(X)/B_X\) with error \(o(1/L)\) at the
+same order.
+
+The Chebyshev extremal nodes
+\(u_i=(a+b)/2+((b-a)/2)\cos(i\pi/r)\) give
+\[
+ \sum_i |w_i|=\frac{\rho^r+\rho^{-r}}2,
+ \qquad \rho=\frac{\sqrt b+\sqrt a}{\sqrt b-\sqrt a}.
+\]
+Indeed the weights alternate, as do the values of the degree-\(r\)
+Chebyshev polynomial mapped to \([a,b]\). Applying the interpolation
+formula to that polynomial gives the stated absolute sum. Since the
+polynomial has supremum \(1\) on the interval, its value at zero also
+lower bounds the absolute weight sum of any linear formula on that
+interval which is exact through degree \(r\). At the chosen order,
+\(\rho^r=L^{o(1)}\). Additive errors \(O(L^{-1-\eta})\) in the
+normalized values at all nodes, for any fixed \(\eta>0\), therefore
+have total effect \(o(1/L)\).
+
+**Open question.** Prove a positive lower bound of order \(1/L\) for
+the normalized Taylor statistic or its finite-difference version
+along an unbounded sequence. The uniform sieve bounds control the
+remainder. The required sign and size of the arithmetic statistic
+remain open.
+
 ## Reduction to a two-prime equation
 
 For \(0<\delta\le1/6\), let \(U_{X,\delta}(t)\) be the subpolynomial

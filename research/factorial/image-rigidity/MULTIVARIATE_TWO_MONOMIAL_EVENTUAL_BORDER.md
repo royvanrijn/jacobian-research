@@ -186,3 +186,53 @@ at every positive order. This completes the proof.
 The threshold here depends on the fixed support. The finite prefix in
 the overlapping cases with a private exponent sum one, and the supports
 with no private variable on one or both sides, are outside this result.
+
+## The left half-plane with exactly two private linear variables
+
+If the private exponent sum of each monomial is one, then
+every common root of two consecutive moment polynomials
+would have strictly positive real part. This holds in the
+original coefficient ratio and at every order, uniformly
+over all ordinary shared exponent profiles.
+
+Write the two monomials as \(XU\) and \(YV\), with \(X,Y\)
+their respective private linear variables and with \(U,V\)
+positive monomials in independent unit-rate exponential
+coordinates. Integration in \(X,Y\) cancels the binomial
+coefficients because \(\binom nk(n-k)!k!=n!\). Thus the
+order-\(n\) polynomial divided by \(n!\) is
+\[
+ \mathbb E\!\left[\sum_{k=0}^n U^{n-k}(tV)^k\right]
+   = A_n(t)-t^{n+1}B_n(t),\qquad
+ \begin{split}
+ A_n(t)&=\mathbb E[U^{n+1}/(U-tV)],\\
+ B_n(t)&=\mathbb E[V^{n+1}/(U-tV)] .
+ \end{split}
+\]
+For \(t=re^{i\theta}\) in the upper half-plane, these integrals
+converge since \(|U-tV|\) is bounded below by a positive
+multiple of \(U+V\). Both are nonzero. In the positive measure
+\(U^n\) times the underlying probability measure, they are
+the integrals of \(K(x)=(1-tx)^{-1}\) and \(x^{n+1}K(x)\),
+with \(x=V/U>0\). The argument of \(K(x)\) strictly increases
+in \(x\) and belongs to \((0,\pi-\theta)\).
+Their arguments obey
+\(0\le\delta_n=\arg B_n-\arg A_n<\pi-\theta\).
+For the first inequality, symmetrize
+\(\Im(B_n\overline{A_n})\) as a double integral.
+Its integrand is half the product of
+\(x^{n+1}-y^{n+1}\) and \(\Im(K(x)\overline{K(y)})\),
+which is nonnegative because both factors have the
+sign of \(x-y\).
+
+At any upper-half-plane root,
+\((n+1)\theta+\delta_n\) is an integer multiple of \(2\pi\).
+Consequently a common root would make
+\(\theta+\delta_{n+1}-\delta_n\) a multiple of \(2\pi\).
+For \(\pi/2\le\theta<\pi\) this number lies strictly between
+\(2\theta-\pi\) and \(\pi\). There is no such multiple.
+Conjugation gives the lower-half-plane assertion.
+On the negative real axis the even-order polynomial of the
+pair is positive, by the defining integral of the even
+power. The same conclusion therefore holds on the closed
+left half-plane. \(\square\)

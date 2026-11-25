@@ -362,26 +362,21 @@ meridional generating number four in every even-order orbifold quotient.
 The universal three-meridian implication remains open.
 
 
-The further fixed input T(5,19;2,1), up to mirror, is also excluded
-from three-meridian generation. Its cover has rank and Heegaard genus
-two and its actual deck action fixes EVERY two-dimensional word trace
-over every field. Nevertheless a direct seven-sheet branched-cover
-certificate proves mr(K)>=4: the cover group has a nontrivial F13
-matrix image, whereas three meridians would make it trivial by the
-seven-vertex, six-edge Schreier graph argument. All 60 raw relations
-are checked from the literal 78-crossing braid, with no software-derived
-group or surgery marking in that lower bound. The same obstruction
-excludes EVERY inverted generating pair in the actual deck outer class.
-Thus trace invariance and ordinary rank two are insufficient.
+For the fixed input \(T(5,19;2,1)\), the new finite-field certificate
+proves \(\operatorname{mr}=b=5\). It verifies all 78 crossings
+over \(\mathbb F_{37}\). Meridian images fix hyperplanes in dimension
+five and the image has zero common fixed space, so four meridians
+cannot generate. The five-strand presentation gives the upper bound.
+The meridian images are involutions, so the lower bound also holds
+in the order-two orbifold group.
+[Rank-five proof and replay](meridional-rank/representations/THREE_MERIDIAN_FRONTIER_AUDIT.md#an-exact-rank-five-certificate-for-t51921).
 
-Vafaee and Krishna--Morton give b(K)=5 using published theorems.
-Brittenham--Wu's published classification gives hyperbolicity of both
-nonintegral surgeries used to identify the double cover. The exact
-remaining distinction is mr(K)=4 versus5. Only an original four-meridian
-generation certificate would give a counterexample; none is certified.
-The frontier audit records the full small certificate. This is a
-falsification of another three-meridian input, not a breakthrough or a
-new positive family theorem.
+The seven-sheet cover argument still rules out three meridional
+involutions in the order-two orbifold group and every inverted
+generating pair in the actual deck class. The double branched cover
+has ordinary rank and Heegaard genus two, and its deck action fixes
+every two-dimensional word trace over every field.
+
 
 ## Gaussian safety-to-purity
 
