@@ -107,18 +107,48 @@ degree $d$ are equivalent over $\mathbb C$ for each $d\ge 1$.
 The same reduction identifies JC2 as the remaining unrestricted
 problem for HC4.
 
-**Conditional degree-pair restriction.** Assume Tang's structural
-alternative and Theorem 2.1 of the Guccione–Guccione–Horruitiner–Valqui
-preprint. If a complex HC4 counterexample has total degree at most 125,
-the base Keller map in Tang coordinates has maximum component degree
-at most 124. Its invertibility would give an inverse to the gradient
-by the displayed linear system. The planar degree-pair restriction
-therefore forces the unordered degrees of $A,B$ to be $72,108$.
-Since $zA$ and $wB$ have distinct transverse variables, the potential
-has degree at least 109. The term $R(x,y)$ still allows a higher degree
-within the stated range.
-[Nguyen, Theorem 3.6](https://doi.org/10.2989/16073606.2025.2482655),
-[Guccione–Guccione–Horruitiner–Valqui preprint](https://arxiv.org/abs/2204.14178).
+**Degree restriction and the residual Laurent systems.** Use the
+Guccione–Guccione–Horruitiner–Valqui reduction in its existential form.
+If a counterexample of maximum component degree below 125 exists, a
+reduced candidate has degrees 72 and 108 and reaches the remaining
+\((8,28)\) case of their Section 2. An unordered degree pair in the
+reduction describes a chosen representative. Indeed, composing an
+unequal-degree pair \((P,Q)\) with the target shear giving \((P+Q,Q)\)
+preserves the Keller property, invertibility and maximum degree while
+making both component degrees equal to \(\deg Q\) when \(\deg Q>\deg P\).
+
+Assume Tang's structural alternative. A four-variable Hessian
+counterexample of potential degree at most 125 gives a planar
+counterexample of maximum component degree at most 124. Under the
+planar reduction, existence in this range therefore supplies a planar
+candidate of degrees 72 and 108. Conversely a planar counterexample
+with these degrees gives, by cotangent doubling, a Hessian
+counterexample of degree exactly 109, without a structural assumption.
+Under both inputs, the existence question through potential degree 125
+is equivalent to existence at degree 109, and the bounds through
+potential degree 108 and planar degree 107 follow.
+[Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1 and Section 2](https://arxiv.org/abs/2204.14178).
+
+Proposition 4.3 sends the remaining case to two explicit Newton
+configurations in \(\mathbb C[x,x^{-1},y]\) with bracket \(x^2\).
+Helali reports characteristic-zero unit-ideal identities excluding the
+two transcribed coefficient systems. In the harder configuration a
+sign split and an involution reduce the exclusion to a forced
+specialization followed by exact identities. Strinz gives a different
+valuation argument with a separate hypothesis on its alpha-strip
+normalization. If the GGHV reduction is exhaustive and the Helali
+transcription and exclusions hold for the actual Laurent configurations,
+then planar inversion holds through degree 124. Under Tang, the same
+inputs give Hessian inversion through potential degree 125.
+Independently, any proof of HC4 through potential degree 125 gives
+planar inversion through degree 124 by doubling. The coefficient
+identities and their normalization have an explicit verification
+obligation in the graph.
+[Helali's report and exact certificates](https://github.com/bilLkarkariy/jc2-72-108-exact-certificates)
+and [Strinz's conditional valuation proof](https://github.com/wstrinz/plane-jacobian-72-108).
+
+[Nguyen, Theorem 3.6](https://doi.org/10.2989/16073606.2025.2482655)
+gives the published planar bound through degree 104.
 
 **Giraudin's total-degree-five theorem.** The unrefereed preprint gives a
 separate low-degree argument using weighted Hessian-determinant layers,

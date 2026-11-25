@@ -165707,7 +165707,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Sections on scalar extension, compact groups, rank-one reductions and specialization"
           }
         ]
@@ -165726,7 +165726,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Theorem.** Let $k$ be an algebraically closed field of characteristic zero, and let $G$ and $H\\subseteq G$ be linear algebraic groups with reductive identity components. On $k[G/H]$ the normalized Reynolds kernel is Mathieu–Zhao exactly when $D=[G^\\circ,G^\\circ]\\subseteq H$. If containment fails, a pure $P$ and one fixed $Q$ have nonzero marked moments at infinitely many orders."
           }
         ]
@@ -165745,7 +165745,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Theorem.** Let $G$ be connected reductive over any characteristic-zero field $K$. If $G$ admits a nontrivial $K$-homomorphism from split $\\mathrm{SL}_2$, then the trace on $K[G]$ has a fixed witness with nonzero marked moments at every positive order. In particular this applies if the derived group has positive $K$-split rank."
           }
         ]
@@ -165764,7 +165764,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A long root and an active split central torus"
           }
         ]
@@ -165772,7 +165772,7 @@
       {
         "id": "MATHIEU-GROUND-FIELDS-EXCEPTIONAL-COMPACT-GAP",
         "title": "Two exceptional compact scalar products",
-        "scope": "For the connected real-closed case with an active split central torus, active compact factors of rank at least two are covered, including homogeneous forms without rational points or a torus quotient. The remaining rank-one reductions include SU(2)/2O and SU(2)/2I with a scalar Laurent factor. Exact regular radius-height factorization and angular trinomials whose opposite product is rational in the center are excluded. Angular trinomials whose opposite product does not lie in the rational function field of the center, other Laurent supports, and coefficients outside the angular subring remain undecided. Aligned three-term Laurent faces on either angular model are also excluded at central weights 2 through 6. This includes the stated multi-term aligned faces with four complementary branch multiplicities. A primitive cyclic signature test also handles certain aligned faces with unequal finite root multiplicities, including examples of effective order 30. The stable Frobenius test gives a fixed-prime exclusion criterion for general regular Laurent coefficients; an applicable reduction in every mixed case remains to be proved. On the octahedral quotient the standardized joint Dirichlet endpoint field has only scalar Laurent elements that are regular, even after including both conditional circle coordinates and applying descent.",
+        "scope": "For the connected real-closed case with an active split central torus, active compact factors of rank at least two are covered, including homogeneous forms without rational points or a torus quotient. The remaining rank-one reductions include SU(2)/2O and SU(2)/2I with a scalar Laurent factor. Exact regular radius-height factorization and angular trinomials whose opposite product is rational in the center are excluded. Angular trinomials whose opposite product does not lie in the rational function field of the center, other Laurent supports, and coefficients outside the angular subring remain undecided. Aligned three-term Laurent faces on either angular model are also excluded at central weights 2 through 6. This includes the stated multi-term aligned faces with four complementary branch multiplicities. A primitive cyclic signature test also handles certain aligned faces with unequal finite root multiplicities, including examples of effective order 30. The stable Frobenius test gives a fixed-prime exclusion criterion for general regular Laurent coefficients; an applicable reduction in every mixed case remains to be proved. On the octahedral quotient the standardized joint Dirichlet endpoint field has only scalar Laurent elements that are regular, even after including both conditional circle coordinates and applying descent. The icosahedral conditional elliptic differential cannot be normalized to an algebraic circle differential, even after a finite cover.",
         "kind": "gap",
         "status": "open",
         "origin": "internal",
@@ -165788,28 +165788,33 @@
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Three aligned top Laurent terms on either angular quotient"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Aligned angular faces with unequal root multiplicities"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A fixed-prime test for the compact scalar products"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A long root and an active split central torus"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "An octahedral joint Dirichlet identity and its endpoint algebra"
+          },
+          {
+            "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
+            "locator": "The icosahedral conditional differential"
           }
         ]
       },
@@ -165832,32 +165837,32 @@
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion for quartics in two linear coordinates"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Mixed quartics detected by cones over the repeated conic"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion when the leading class is a fourth power"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Involutions of the conic and the remaining mixed leading class"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Finite tests for the independent mixed quartic branch"
           },
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A residue obstruction for phases affine in the transverse coordinates"
           }
         ]
@@ -166766,7 +166771,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "The split rank-one obstruction without rational points"
           }
         ]
@@ -166785,7 +166790,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Ground-field obstruction from a single component factor"
           }
         ]
@@ -166804,7 +166809,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Quaternion algebra isomorphism torsor with a fixed ground-field bad pair"
           }
         ]
@@ -166823,7 +166828,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Classification for compact adjoint semisimple torsors over real closed fields"
           }
         ]
@@ -166842,7 +166847,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Rational points for compact homogeneous forms with self-normalizing geometric stabilizers"
           }
         ]
@@ -167161,7 +167166,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A radial Laurent ansatz fails at order two for inverse square-root densities"
           }
         ]
@@ -167646,7 +167651,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Pure quadratic phases on norm quadrics"
           }
         ]
@@ -167665,7 +167670,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Pure quadratic phases on norm quadrics, The sharp marked bound"
           }
         ]
@@ -167684,7 +167689,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Homogeneous phases with a powered linear factor on anisotropic norm quadrics"
           }
         ]
@@ -167703,7 +167708,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Reduction of the homogeneous cubic case in dimension four"
           }
         ]
@@ -167722,7 +167727,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Central compact twists and sign"
           }
         ]
@@ -168081,7 +168086,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Exact rational height on both exceptional compact quotients, The height law and witness"
           }
         ]
@@ -168100,7 +168105,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "The obstruction to regularity and scalar rescaling"
           }
         ]
@@ -168119,7 +168124,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "The direct denominator clearing for the octahedral height"
           }
         ]
@@ -168138,8 +168143,27 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "An octahedral joint Dirichlet identity and its endpoint algebra"
+          }
+        ]
+      },
+      {
+        "id": "MATHIEU-GROUND-FIELDS-ICOSAHEDRAL-CONDITIONAL-LOG-OBSTRUCTION",
+        "title": "The icosahedral conditional differential",
+        "scope": "For the icosahedral conditional trace the difference of the two points at infinity on the generic elliptic fibre is nontorsion. After arbitrary algebraic base change and finite covers, the conditional differential is never a scalar multiple of an algebraic logarithmic differential. The result concerns exact algebraic normalization of the conditional differential.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "moments"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
+            "locator": "The icosahedral conditional differential"
           }
         ]
       },
@@ -168157,7 +168181,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Conditional traces for both reflection quotients"
           }
         ]
@@ -168555,7 +168579,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Finite exclusion of affine Laurent phases on the two angular models"
           }
         ]
@@ -168574,7 +168598,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Sharp growth of the conditional degree for real powers"
           }
         ]
@@ -168593,7 +168617,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Prime obstruction for a single top angular monomial"
           }
         ]
@@ -168612,7 +168636,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Three aligned top Laurent terms on either angular quotient"
           }
         ]
@@ -168631,7 +168655,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Aligned angular faces with unequal root multiplicities"
           }
         ]
@@ -169427,7 +169451,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Compact twists and the commuting normalizer"
           }
         ]
@@ -169446,7 +169470,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Compact twists and the commuting normalizer, Commuting-action criterion"
           }
         ]
@@ -169465,7 +169489,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Cyclic stabilizers with a split commuting torus"
           }
         ]
@@ -169646,7 +169670,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Finite diagonal quotients in every degree"
           }
         ]
@@ -170020,7 +170044,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "The spherical height law for regular invariants"
           }
         ]
@@ -170039,7 +170063,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "The spherical height law for regular invariants, equation (H7)"
           }
         ]
@@ -170058,7 +170082,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Three Laurent terms with product determined by the center"
           }
         ]
@@ -170077,7 +170101,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "The two congruences, equations (C1) and (C2)"
           }
         ]
@@ -170096,7 +170120,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Reduced branch divisors"
           }
         ]
@@ -170115,7 +170139,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion through degree three in dimension four"
           }
         ]
@@ -170134,7 +170158,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "An exclusion criterion for quartic phases, leading residue and K3 test"
           }
         ]
@@ -170351,7 +170375,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion through degree three in dimension four"
           }
         ]
@@ -170370,7 +170394,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "An exclusion criterion for quartic phases"
           }
         ]
@@ -170407,7 +170431,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A Frobenius criterion in higher degree"
           }
         ]
@@ -170462,7 +170486,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion for even quartics"
           }
         ]
@@ -170481,7 +170505,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A residue obstruction for phases affine in the transverse coordinates"
           }
         ]
@@ -170500,7 +170524,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion for quartics in two linear coordinates"
           }
         ]
@@ -170519,7 +170543,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A Frobenius criterion from translated fibres in every degree"
           }
         ]
@@ -170538,7 +170562,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Prime-power residue tests with fixed multipliers"
           }
         ]
@@ -170557,7 +170581,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "A fixed-prime test for the compact scalar products"
           }
         ]
@@ -170576,7 +170600,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Finite tests for the independent mixed quartic branch"
           }
         ]
@@ -170595,7 +170619,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Mixed quartics detected by cones over the repeated conic"
           }
         ]
@@ -170614,7 +170638,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Ordinary reduction for the factors carrying the coefficient"
           }
         ]
@@ -170633,7 +170657,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Involutions of the conic and the remaining mixed leading class"
           }
         ]
@@ -170652,7 +170676,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Complete exclusion when the leading class is a fourth power"
           }
         ]
@@ -170671,7 +170695,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-            "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+            "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
             "locator": "Higher-degree phases with the same cone limit"
           }
         ]
@@ -176127,6 +176151,497 @@
             "locator": "Divisor records for longer additive relations"
           }
         ]
+      },
+      {
+        "id": "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+        "title": "Ordinary-binomial manuscript proofs and replay sources",
+        "kind": "source",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Retained manuscript edition, finite coprimality and numerical-comparison checkers, and the closed positive-exponent proof snapshot. This record pins the proof material and makes no additional review, replay, or formal-verification claim.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/constant-support.tex",
+            "sha256": "c94f2e3ec94afbb5d333a48d49edc1d20d032f4881ea6bcde00bcf73c2d9981d",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+            "sha256": "155da91cf7e8f16ffd4b0251a070432f995aa9ecba920a2fd1755674cf7eb6f0",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/main.tex",
+            "sha256": "ba8a96348e5800396c869939b8be22f5f99f32d6cd7ec842429eb1c5b04b9e6c",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/pade.tex",
+            "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+            "sha256": "1edaac56c1e7c1ce7569a05c74ddb8d13b05375a7d8e5ec24f0a600e2c561efc",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+            "sha256": "ac0d9fdd14696b251df6adf1920bad05b268ec58a63078d039efedd054e49ed0",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+            "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/references.tex",
+            "sha256": "44a45cdfc26d19e03cd79e3d579fd1b1c56767be3f12f57d189b0b3fc67b7e48",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/positive-boundary/SHA256SUMS",
+            "sha256": "79b21013c8135b3b1c3e67cdfb041239693a1e47e581f3dd44b5ee48af6b00f7",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/positive-boundary/proof-snapshot.zip",
+            "sha256": "e0e6ba8972e5a7f5ce2c2cf4da46de05a15a0052f0cefbe25d3ef4dc11b2eeae",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_constant_support.cpp",
+            "sha256": "8d4a3e7adc2c29a704f17fdfe1f3387b807dac0e4ff72ff4ce00f6bd2e922726",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_hard_pade_endpoints.py",
+            "sha256": "3e59d01f7892c763a35f4eed3621f21444a18f26dce1714e98b136fc6c07b2ac",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_initial_terminals.cpp",
+            "sha256": "bf12a18026bfffc1a070e8d8f54b6a89f53a1fb6fb4342c37bc2917fd74858f1",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_large_tail.py",
+            "sha256": "f21bfee7c6edc646f3d8e8003f5c562b699b0e48e897fb64d30bb8b10f86ad7d",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_ordinary_binomial_residual.cpp",
+            "sha256": "712ecd8059458d58278d0bc6dafb0a7eb5d15c8ddece046da5cf37dc0247c1ea",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_pade_intervals.py",
+            "sha256": "1f6abba23b73999c4791fe2adfd24807fe5397369761a526d7f40a0678be74f3",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_positive_boundary.cpp",
+            "sha256": "c9400707abce282e23ba8aa67d8c98510e3f6bf348364a179b5a9523d140931a",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/supplement/verify_small_support.cpp",
+            "sha256": "087b2eb09c6b361a0cfad565e846d0d1888a32c4b61bfb86f02af40350239c3e",
+            "locator": "Exact replay or submitted proof supplement"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+            "sha256": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
+            "locator": "Written manuscript source"
+          },
+          {
+            "path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+            "sha256": "96065e6b409d822cf6f5bc746fe854bdef1f50d34bcc7b003b9b354956ffbb41",
+            "locator": "Written manuscript source"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+        "title": "Degree allocations at a Newton slope",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "For each prime, any common factor degree is a sum of the degrees allowed by the shared slopes and their smaller widths.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "lem:newton-alloc"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+        "title": "Prime support in common-factor initial blocks",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Under the arithmetic section hypotheses, the norm and the two length-dh initial blocks have prime divisors at most min(dN,max(2dh,a+2d-1,sqrt((a+d)N))).",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "lem:prime-support"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+        "title": "Degree bound from the initial factorial block",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Under the arithmetic hypotheses, the stated starting-point inequality implies 2dh < max(a+2d-1,sqrt((a+d)N)); the starting-point inequality holds on the sufficient ranges in the lemma.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "lem:degree-cap"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+        "title": "Record-gap bounds on gaps and factor degrees",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Under the two displayed inequalities for the prime record G, d < G/2, and dh < G when the starting-point condition holds.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "lem:gap-caps"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+        "title": "Factorial-position refinement of the gap bound",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Under the starting degree bound and stated actual endpoint inequalities, the record gap G bounds dh strictly and d < G/2.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "lem:local-gap"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+        "title": "Residual coprimality below terminal 3150",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "All pairs in the reduced support region with a>=5, d>=2 and 25<=N<3150 are rationally coprime.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+            "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+            "locator": "prop:finite"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+        "title": "Coprimality through terminal twenty-four",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "All ordinary univariate binomial supports are coprime at 2<=N<=24.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+            "sha256": "155da91cf7e8f16ffd4b0251a070432f995aa9ecba920a2fd1755674cf7eb6f0",
+            "locator": "prop:small-terminals"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+        "title": "Padé resultant inequality for a common factor",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "The monic lifted factor and its norm satisfy the stated geometric gain and prime contribution inequality under the hypotheses of the lemma.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/pade.tex",
+            "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+            "locator": "lem:resultant"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+        "title": "Cyclotomic restriction on the lifted norm",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "The lifted roots partition into equal rotation cosets; if q>=2 and the starting-point inequality holds, the norm primes are bounded by M^(1/(q+1)) and this is greater than 2dh.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/pade.tex",
+            "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+            "locator": "lem:kummer"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+        "title": "Angular average of the Padé gain",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "For cosets of size at least two with N>=200 and alpha<.03, the lower bound on the geometric mean of gains is the displayed angular inequality.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/pade.tex",
+            "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+            "locator": "lem:angles"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS",
+        "title": "Two possible Newton edge heights",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Under the stated prime and terminal cube exclusions, the selected edges have heights one or two and satisfy the displayed endpoint and norm conditions.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/pade.tex",
+            "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+            "locator": "lem:two-heights"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+        "title": "Prime sums and counts used by the Padé argument",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Explicit upper bounds for pi(x) and the prime sum S(x), on the exact ranges recorded in the lemma.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/pade.tex",
+            "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+            "locator": "lem:prime-estimates"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+        "title": "Coprimality at large relative gaps",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Coprimality for every terminal on a=1,d>=3 and on a>=2,d>=3a.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+            "sha256": "1edaac56c1e7c1ce7569a05c74ddb8d13b05375a7d8e5ec24f0a600e2c561efc",
+            "locator": "lem:positive-boundary"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+        "title": "Small positive lower exponents and adjacency",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Coprimality at N>=25 for 1<=a<=4 with 1<=d<3a, and for a>=1,d=1.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+            "sha256": "ac0d9fdd14696b251df6adf1920bad05b268ec58a63078d039efedd054e49ed0",
+            "locator": "prop:additional-boundary"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+        "title": "Gamma root annuli and shape separation",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "For a>=1 the ordinary reciprocals satisfy the stated root annuli; the two shape inequalities give the stated coprimality ranges.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+            "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+            "locator": "lem:gamma-annulus"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+        "title": "Coprimality for a constant plus a power",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Coprimality of every consecutive constant-plus-power pair for d>=1.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+            "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+            "locator": "lem:constant-support"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+        "title": "Endpoint normalization and center separation",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "For a>=1, the normalized mixed coefficients and the consecutive scale ratio satisfy the displayed bounds.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+            "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+            "locator": "lem:center-ratio"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+        "title": "Upper bound on the support ratio",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "At N>=25 with a>=1, a common root requires s<sigma_N with sigma_N as in the lemma.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+            "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+            "locator": "lem:ratio-range"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+        "title": "Reduction of the exponent range",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "At N>=25, any common root requires a>=5, 2<=d<3a, the two strict shape constraints, and s<sigma_N.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+            "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+            "locator": "lem:support-reduction"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL",
+        "title": "Padé exclusion at intermediate terminal orders",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "Under the reduced support hypotheses, a common root requires alpha<.03 and b>N at 2200<=N<exp(15); none exists at 3150<=N<exp(15).",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+            "sha256": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
+            "locator": "prop:middle-tail"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS",
+        "title": "Explicit small-argument prime sums",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "The displayed left endpoints and shifts bound S(x); pi(x) log(x)/x<1.224 for x>=117.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+            "sha256": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
+            "locator": "lem:small-prime-sums"
+          }
+        ],
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+        "title": "Padé exclusion from exp(15)",
+        "kind": "claim",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "scope": "For log N>=15, a,d>=1, d<3a, s<2 log N+2 and 6a<(5N-11)d, the two reciprocals are coprime.",
+        "sources": [
+          {
+            "path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+            "sha256": "96065e6b409d822cf6f5bc746fe854bdef1f50d34bcc7b003b9b354956ffbb41",
+            "locator": "prop:large-tail"
+          }
+        ],
+        "dependency_coverage": "partial"
       }
     ],
     "implications": [
@@ -270940,7 +271455,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Declaration at line 8 and proof"
         },
         "dependency_coverage": "partial"
@@ -270954,7 +271469,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Declaration at line 144 and proof"
         },
         "dependency_coverage": "partial"
@@ -271983,7 +272498,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "The split rank-one obstruction without rational points and proof"
         },
         "dependency_coverage": "partial"
@@ -271998,7 +272513,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Ground-field obstruction from a single component factor and proof"
         },
         "dependency_coverage": "partial"
@@ -272013,7 +272528,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Quaternion algebra isomorphism torsor with a fixed ground-field bad pair and proof"
         },
         "dependency_coverage": "partial"
@@ -272029,7 +272544,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Classification for compact adjoint semisimple torsors over real closed fields and proof"
         },
         "dependency_coverage": "partial"
@@ -272044,7 +272559,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Rational points for compact homogeneous forms with self-normalizing geometric stabilizers and proof"
         },
         "dependency_coverage": "partial"
@@ -272294,7 +272809,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "A radial Laurent ansatz fails at order two for inverse square-root densities"
         },
         "dependency_coverage": "partial"
@@ -272747,7 +273262,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Pure quadratic phases on norm quadrics"
         },
         "dependency_coverage": "partial"
@@ -272762,7 +273277,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Pure quadratic phases on norm quadrics, The sharp marked bound"
         },
         "dependency_coverage": "partial"
@@ -272777,7 +273292,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Homogeneous phases with a powered linear factor on anisotropic norm quadrics"
         },
         "dependency_coverage": "partial"
@@ -272794,7 +273309,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Reduction of the homogeneous cubic case in dimension four"
         },
         "dependency_coverage": "partial"
@@ -272809,7 +273324,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Central compact twists and sign"
         },
         "dependency_coverage": "partial"
@@ -273104,7 +273619,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Exact rational height on both exceptional compact quotients, The height law and witness"
         },
         "dependency_coverage": "partial"
@@ -273119,7 +273634,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "The obstruction to regularity and scalar rescaling"
         },
         "dependency_coverage": "partial"
@@ -273134,7 +273649,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "The direct denominator clearing for the octahedral height"
         },
         "dependency_coverage": "partial"
@@ -273149,8 +273664,23 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "An octahedral joint Dirichlet identity and its endpoint algebra"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-MATHIEU-GROUND-FIELDS-ICOSAHEDRAL-CONDITIONAL-LOG-OBSTRUCTION",
+        "premises": [
+          "SRC-MATHIEU-FIELD-AND-COMPACT-RESEARCH-NOTES",
+          "MATHIEU-GROUND-FIELDS-COMPACT-EXCEPTIONAL-CONDITIONAL-TRACES"
+        ],
+        "conclusion": "MATHIEU-GROUND-FIELDS-ICOSAHEDRAL-CONDITIONAL-LOG-OBSTRUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
+          "locator": "The icosahedral conditional differential"
         },
         "dependency_coverage": "partial"
       },
@@ -273164,7 +273694,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Conditional traces for both reflection quotients"
         },
         "dependency_coverage": "partial"
@@ -273451,7 +273981,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Finite exclusion of affine Laurent phases on the two angular models"
         },
         "dependency_coverage": "partial"
@@ -273466,7 +273996,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Sharp growth of the conditional degree for real powers"
         },
         "dependency_coverage": "partial"
@@ -273481,7 +274011,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Prime obstruction for a single top angular monomial"
         },
         "dependency_coverage": "partial"
@@ -273497,7 +274027,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Three aligned top Laurent terms on either angular quotient"
         },
         "dependency_coverage": "partial"
@@ -273513,7 +274043,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Aligned angular faces with unequal root multiplicities"
         },
         "dependency_coverage": "partial"
@@ -274139,7 +274669,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Compact twists and the commuting normalizer"
         },
         "dependency_coverage": "partial"
@@ -274156,7 +274686,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Compact twists and the commuting normalizer, Commuting-action criterion"
         },
         "dependency_coverage": "partial"
@@ -274170,7 +274700,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Cyclic stabilizers with a split commuting torus"
         },
         "dependency_coverage": "partial"
@@ -274332,7 +274862,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Finite diagonal quotients in every degree"
         },
         "dependency_coverage": "partial"
@@ -274649,7 +275179,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "The spherical height law for regular invariants"
         },
         "dependency_coverage": "partial"
@@ -274664,7 +275194,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "The spherical height law for regular invariants, equation (H7)"
         },
         "dependency_coverage": "partial"
@@ -274679,7 +275209,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Three Laurent terms with product determined by the center"
         },
         "dependency_coverage": "partial"
@@ -274693,7 +275223,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "The two congruences, equations (C1) and (C2)"
         },
         "dependency_coverage": "partial"
@@ -274708,7 +275238,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Reduced branch divisors"
         },
         "dependency_coverage": "partial"
@@ -274722,7 +275252,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Complete exclusion through degree three in dimension four"
         },
         "dependency_coverage": "partial"
@@ -274737,7 +275267,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "An exclusion criterion for quartic phases, leading residue and K3 test"
         },
         "dependency_coverage": "partial"
@@ -274874,7 +275404,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Complete exclusion through degree three in dimension four"
         },
         "dependency_coverage": "partial"
@@ -274890,7 +275420,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "An exclusion criterion for quartic phases"
         },
         "dependency_coverage": "partial"
@@ -274921,7 +275451,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "A Frobenius criterion in higher degree"
         },
         "dependency_coverage": "partial"
@@ -274967,7 +275497,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Complete exclusion for even quartics"
         },
         "dependency_coverage": "partial"
@@ -274981,7 +275511,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "A residue obstruction for phases affine in the transverse coordinates"
         },
         "dependency_coverage": "partial"
@@ -274997,7 +275527,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Complete exclusion for quartics in two linear coordinates"
         },
         "dependency_coverage": "partial"
@@ -275012,7 +275542,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "A Frobenius criterion from translated fibres in every degree"
         },
         "dependency_coverage": "partial"
@@ -275027,7 +275557,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Prime-power residue tests with fixed multipliers"
         },
         "dependency_coverage": "partial"
@@ -275044,7 +275574,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "A long root and an active split central torus"
         },
         "dependency_coverage": "partial"
@@ -275059,7 +275589,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "A fixed-prime test for the compact scalar products"
         },
         "dependency_coverage": "partial"
@@ -275075,7 +275605,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Finite tests for the independent mixed quartic branch"
         },
         "dependency_coverage": "partial"
@@ -275092,7 +275622,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Mixed quartics detected by cones over the repeated conic"
         },
         "dependency_coverage": "partial"
@@ -275106,7 +275636,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Ordinary reduction for the factors carrying the coefficient"
         },
         "dependency_coverage": "partial"
@@ -275122,7 +275652,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Involutions of the conic and the remaining mixed leading class"
         },
         "dependency_coverage": "partial"
@@ -275139,7 +275669,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Complete exclusion when the leading class is a fourth power"
         },
         "dependency_coverage": "partial"
@@ -275156,7 +275686,7 @@
         "status": "proved",
         "proof": {
           "path": "foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c",
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104",
           "locator": "Higher-degree phases with the same cone limit"
         },
         "dependency_coverage": "partial"
@@ -280534,6 +281064,389 @@
           "path": "arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md",
           "sha256": "99a0e73ff4ed79007a57df6ca0ae21e528348991cbf07034d0a049a21b683d07",
           "locator": "Common factors on several letters"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-NEWTON-ALLOC",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+          "locator": "lem:newton-alloc and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-PRIME-SUPPORT",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+          "locator": "lem:prime-support and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-DEGREE-CAP",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+          "locator": "lem:degree-cap and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-GAP-CAPS",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "EXT-OLIVEIRA-SILVA-HERZOG-PARDI-PRIME-GAPS",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+          "locator": "lem:gap-caps and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LOCAL-GAP",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+          "locator": "lem:local-gap and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+          "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL",
+          "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
+          "locator": "prop:finite and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-TERMINALS",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+          "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+          "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "sha256": "155da91cf7e8f16ffd4b0251a070432f995aa9ecba920a2fd1755674cf7eb6f0",
+          "locator": "prop:small-terminals and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-MAIN",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL",
+          "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+          "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION"
+        ],
+        "conclusion": "FACTORIAL-ORDINARY-BINOMIAL-SFC",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/main.tex",
+          "sha256": "ba8a96348e5800396c869939b8be22f5f99f32d6cd7ec842429eb1c5b04b9e6c",
+          "locator": "thm:main and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-RESULTANT",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+          "locator": "lem:resultant and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-KUMMER",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "FACT-SFC-BINOMIAL-PAPER-RESULTANT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+          "locator": "lem:kummer and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ANGLES",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-RESULTANT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+          "locator": "lem:angles and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-TWO-HEIGHTS",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "FACT-SFC-BINOMIAL-PAPER-RESULTANT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+          "locator": "lem:two-heights and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-PRIME-ESTIMATES",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
+          "locator": "lem:prime-estimates and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-POSITIVE-BOUNDARY",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "sha256": "1edaac56c1e7c1ce7569a05c74ddb8d13b05375a7d8e5ec24f0a600e2c561efc",
+          "locator": "lem:positive-boundary and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+          "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+          "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "sha256": "ac0d9fdd14696b251df6adf1920bad05b268ec58a63078d039efedd054e49ed0",
+          "locator": "prop:additional-boundary and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-GAMMA-ANNULUS",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+          "locator": "lem:gamma-annulus and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-CONSTANT-SUPPORT",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+          "locator": "lem:constant-support and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-CENTER-RATIO",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+          "locator": "lem:center-ratio and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-RATIO-RANGE",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+          "locator": "lem:ratio-range and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SUPPORT-REDUCTION",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+          "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+          "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+          "locator": "lem:support-reduction and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-MIDDLE-TAIL",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+          "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS",
+          "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+          "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+          "sha256": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
+          "locator": "prop:middle-tail and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-PRIME-SUMS",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+          "sha256": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
+          "locator": "lem:small-prime-sums and its proof in the manuscript"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL",
+        "premises": [
+          "SRC-ORDINARY-BINOMIAL-MANUSCRIPT",
+          "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+          "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+          "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+          "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS"
+        ],
+        "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+        "status": "proved",
+        "proof": {
+          "path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "sha256": "96065e6b409d822cf6f5bc746fe854bdef1f50d34bcc7b003b9b354956ffbb41",
+          "locator": "prop:large-tail and its proof in the manuscript"
         },
         "dependency_coverage": "partial"
       }
@@ -288530,6 +289443,14 @@
               "nodes": [
                 "FACT-ORDINARY-BINOMIAL-PADE-COMMON-FACTOR-NORM",
                 "FACTORIAL-EXPLICIT-ARITHMETIC-ORDINARY-BINOMIAL-CUTOFF"
+              ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem dusart-primes",
+              "role": "mathematical_input",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES"
               ]
             }
           ],
@@ -297419,6 +298340,14 @@
               "nodes": [
                 "EXT-GRACE-WALSH-SZEGO-EXACT-DEGREE-CIRCULAR"
               ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem wagner-stability",
+              "role": "mathematical_input",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS"
+              ]
             }
           ],
           "verification": "source_read",
@@ -297899,6 +298828,14 @@
                 "FACT-BINOMIAL-FOLLOWUP-A-ADJOINT",
                 "FACTORIAL-EVENTUAL-BINOMIAL-COEFFICIENT-NILPOTENCE-AND-ADJUNCTION"
               ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem rocks",
+              "role": "context",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT"
+              ]
             }
           ],
           "verification": "source_read",
@@ -297956,6 +298893,14 @@
               "role": "context",
               "nodes": [
                 "FACTORIAL-SQUARE-ROOT-GAP-EVENTUAL-SFC"
+              ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem filaseta-rocks",
+              "role": "context",
+              "nodes": [
+                "FACTORIAL-ORDINARY-BINOMIAL-SFC"
               ]
             }
           ],
@@ -310160,6 +311105,14 @@
               "nodes": [
                 "FACTORIAL-EQUAL-COEFFICIENT-EXPONENT-REDISTRIBUTION-COROLLARY"
               ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem edo-essen",
+              "role": "context",
+              "nodes": [
+                "FACTORIAL-ORDINARY-BINOMIAL-SFC"
+              ]
             }
           ],
           "verification": "citation_only",
@@ -317188,6 +318141,14 @@
                 "FACTORIAL-EXPLICIT-ARITHMETIC-ORDINARY-BINOMIAL-CUTOFF",
                 "FACT-ORDINARY-BINOMIAL-PRIME-GAP-CUTOFF-20000"
               ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem oliveira-gaps",
+              "role": "mathematical_input",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS"
+              ]
             }
           ],
           "verification": "source_read",
@@ -317292,6 +318253,14 @@
               "nodes": [
                 "EXT-ROSSER-SCHOENFELD-PRIME-UPPER-1962",
                 "FACTORIAL-EXPLICIT-ARITHMETIC-ORDINARY-BINOMIAL-CUTOFF"
+              ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem rosser-schoenfeld",
+              "role": "mathematical_input",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL"
               ]
             }
           ],
@@ -325058,6 +326027,14 @@
               "nodes": [
                 "FACT-ORDINARY-BINOMIAL-COMMON-FACTOR-RESTRICTIONS"
               ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem laishram-shorey",
+              "role": "mathematical_input",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP"
+              ]
             }
           ],
           "verification": "source_read",
@@ -325083,6 +326060,14 @@
               "role": "mathematical_input",
               "nodes": [
                 "FACT-ORDINARY-BINOMIAL-COMMON-FACTOR-RESTRICTIONS"
+              ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem dusart-interval",
+              "role": "mathematical_input",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP"
               ]
             }
           ],
@@ -325339,6 +326324,14 @@
               "role": "context",
               "nodes": [
                 "FACT-ORDINARY-BINOMIAL-PADE-COMMON-FACTOR-NORM"
+              ]
+            },
+            {
+              "path": "../unpublished/strong-factorial-binomials/references.tex",
+              "locator": "bibitem nguyen-dang",
+              "role": "context",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-RESULTANT"
               ]
             }
           ],
@@ -333807,7 +334800,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Retained collection and tooling information. It asserts no independent mathematical result.",
-          "sha256": "681c6da92b95d51962b2e77bd6627749a19c90b68991f80a31ea120c8c525564"
+          "sha256": "fc3e15786c7f2ae5c02d4e3a33f6af7ecec252760be4e4d372ef73945c611265"
         },
         {
           "path": "../unpublished/common-arithmetic-fibers/LITERATURE_AUDIT.md",
@@ -471233,7 +472226,8 @@
             "MATHIEU-GROUND-FIELDS-MIXED-QUARTIC-FINITE-PRIME-TESTS",
             "MATHIEU-GROUND-FIELDS-COMPACT-LAURENT-STABLE-FROBENIUS",
             "MATHIEU-GROUND-FIELDS-COMPACT-HIGHER-RANK-SPLIT-TORUS",
-            "MATHIEU-GROUND-FIELDS-OCTAHEDRAL-JOINT-ENDPOINT-OBSTRUCTION"
+            "MATHIEU-GROUND-FIELDS-OCTAHEDRAL-JOINT-ENDPOINT-OBSTRUCTION",
+            "MATHIEU-GROUND-FIELDS-ICOSAHEDRAL-CONDITIONAL-LOG-OBSTRUCTION"
           ],
           "dependencies": [
             "MIXED-REGULAR-EXPONENT-SHIFT"
@@ -471526,9 +472520,19 @@
               "mapping_kind": "exact-statement"
             },
             {
+              "locator": "Proposition.** The divisor class $I_+-I_-$ has infinite order. In particular, after any algebraic extension of the height field and any finite cover of $C_v$, the pullback of $\\omega$ cannot be a nonzero scalar multiple of a logarithmic differential $dz/z$ of an algebraic circle coordinate $z$.",
+              "kind": "proposition",
+              "line": 1553,
+              "title": "Proposition.** The divisor class $I_+-I_-$ has infinite order. In particular, after any algebraic extension of the height field and any finite cover of $C_v$, the pullback of $\\omega$ cannot be a nonzero scalar multiple of a logarithmic differential $dz/z$ of an algebraic circle coordinate $z$.",
+              "nodes": [
+                "MATHIEU-GROUND-FIELDS-ICOSAHEDRAL-CONDITIONAL-LOG-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
               "locator": "Theorem.** On either model let all coefficient functions below be affine in $x,y$. If the first ten positive moments of $A+B t+C/t$ vanish, then $A=0$ and $BC=0$. If the first nine positive moments of $t^{-1}+A+C t+D t^2$ vanish, then $A=C=D=0$. The same bounds hold after replacing $t$ by $t^d$ for any positive integer $d$. The resulting phases have one strict Laurent sign and are safe.",
               "kind": "theorem",
-              "line": 1549,
+              "line": 1567,
               "title": "Theorem.** On either model let all coefficient functions below be affine in $x,y$. If the first ten positive moments of $A+B t+C/t$ vanish, then $A=0$ and $BC=0$. If the first nine positive moments of $t^{-1}+A+C t+D t^2$ vanish, then $A=C=D=0$. The same bounds hold after replacing $t$ by $t^d$ for any positive integer $d$. The resulting phases have one strict Laurent sign and are safe.",
               "nodes": [
                 "MATHIEU-GROUND-FIELDS-EXCEPTIONAL-AFFINE-LAURENT-FINITE-EXCLUSION"
@@ -471538,7 +472542,7 @@
             {
               "locator": "Theorem.** Suppose a supporting line $d_j+\\sigma j\\le D$ attains equality just at $-e,0,e$ for an integer $e>0$. At those indices let the respective top coefficients be $aM_-$, $bM_0$, $cM_+$ with nonzero scalars and angular monomials satisfying $M_-M_+=M_0^2$. If $D\\in\\{2,3,4,5,6\\}$, then every nonconstant polynomial in $P$ has infinitely many nonzero moments.",
               "kind": "theorem",
-              "line": 1627,
+              "line": 1645,
               "title": "Theorem.** Suppose a supporting line $d_j+\\sigma j\\le D$ attains equality just at $-e,0,e$ for an integer $e>0$. At those indices let the respective top coefficients be $aM_-$, $bM_0$, $cM_+$ with nonzero scalars and angular monomials satisfying $M_-M_+=M_0^2$. If $D\\in\\{2,3,4,5,6\\}$, then every nonconstant polynomial in $P$ has infinitely many nonzero moments.",
               "nodes": [
                 "MATHIEU-GROUND-FIELDS-EXCEPTIONAL-ALIGNED-TOP-TRINOMIAL"
@@ -471548,7 +472552,7 @@
             {
               "locator": "Corollary.** On either exceptional angular quotient, take a supporting line of positive integer central weight $D$ as in the preceding test. Suppose the monomial exponent vector at the equality indices is affine in the Laurent exponent with a nonnegative integral intercept. Let the leading scalar Laurent polynomial on that line be",
               "kind": "corollary",
-              "line": 1658,
+              "line": 1676,
               "title": "Corollary.** On either exceptional angular quotient, take a supporting line of positive integer central weight $D$ as in the preceding test. Suppose the monomial exponent vector at the equality indices is affine in the Laurent exponent with a nonnegative integral intercept. Let the leading scalar Laurent polynomial on that line be",
               "nodes": [
                 "MATHIEU-GROUND-FIELDS-EXCEPTIONAL-UNEQUAL-TOP-BRANCHES"
@@ -471558,7 +472562,7 @@
           ],
           "role": "proof",
           "explanation": "Source proofs and supporting ground-field reductions for the companion.",
-          "sha256": "70d4faba6bdfa5dc213e7c4bd9dc74f222f52065f393d01bc58d17afec9bd76c"
+          "sha256": "c076a9a9b81d6c47a2bfa3c80acfbc0357bc971b6fab6ede07704e26a1e5a104"
         },
         {
           "path": "foundations/extended-geometry/SPLIT_RANK_ONE_HOMOGENEOUS_SPACE_MATHIEU_CLASSIFICATION.md",
@@ -473850,6 +474854,440 @@
           "statements": [],
           "role": "evidence",
           "explanation": null
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/README.md",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "documentation",
+          "explanation": "Manuscript or supplement information and reproducibility instructions.",
+          "sha256": "deaf0c2e7f50cfdca926c643858d8bbf9ee1179b013b1148ad195903f0ddfd6f"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+            "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+            "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+            "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+            "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+            "FACT-SFC-BINOMIAL-PAPER-FINITE"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "lem:newton-alloc",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC"
+              ]
+            },
+            {
+              "locator": "lem:prime-support",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT"
+              ]
+            },
+            {
+              "locator": "lem:degree-cap",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP"
+              ]
+            },
+            {
+              "locator": "lem:gap-caps",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS"
+              ]
+            },
+            {
+              "locator": "lem:local-gap",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP"
+              ]
+            },
+            {
+              "locator": "prop:finite",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-FINITE"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/constant-support.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "c94f2e3ec94afbb5d333a48d49edc1d20d032f4881ea6bcde00bcf73c2d9981d"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "prop:small-terminals",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "155da91cf7e8f16ffd4b0251a070432f995aa9ecba920a2fd1755674cf7eb6f0"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/main.tex",
+          "claims": [
+            "FACTORIAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "thm:main",
+              "nodes": [
+                "FACTORIAL-ORDINARY-BINOMIAL-SFC"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "ba8a96348e5800396c869939b8be22f5f99f32d6cd7ec842429eb1c5b04b9e6c"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/metadata.json",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "documentation",
+          "explanation": "Manuscript or supplement information and reproducibility instructions.",
+          "sha256": "6704e3ef75a8b849b09f940c0cd8b9ce71a93ff8f16d25d44c71643a5aff79b1"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+            "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+            "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+            "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS",
+            "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "lem:resultant",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-RESULTANT"
+              ]
+            },
+            {
+              "locator": "lem:kummer",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-KUMMER"
+              ]
+            },
+            {
+              "locator": "lem:angles",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-ANGLES"
+              ]
+            },
+            {
+              "locator": "lem:two-heights",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS"
+              ]
+            },
+            {
+              "locator": "lem:prime-estimates",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "lem:positive-boundary",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "1edaac56c1e7c1ce7569a05c74ddb8d13b05375a7d8e5ec24f0a600e2c561efc"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "prop:additional-boundary",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "ac0d9fdd14696b251df6adf1920bad05b268ec58a63078d039efedd054e49ed0"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+            "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+            "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+            "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+            "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "lem:gamma-annulus",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS"
+              ]
+            },
+            {
+              "locator": "lem:constant-support",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT"
+              ]
+            },
+            {
+              "locator": "lem:center-ratio",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO"
+              ]
+            },
+            {
+              "locator": "lem:ratio-range",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE"
+              ]
+            },
+            {
+              "locator": "lem:support-reduction",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/references.tex",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "reference",
+          "explanation": "Bibliography of the manuscript, with citations tracked in the external-resource catalogue.",
+          "sha256": "44a45cdfc26d19e03cd79e3d579fd1b1c56767be3f12f57d189b0b3fc67b7e48"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/strong-factorial-binomials.pdf",
+          "claims": [
+            "FACTORIAL-ORDINARY-BINOMIAL-SFC"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Reviewed manuscript PDF or retained record or code for the scope named in the proof.",
+          "sha256": "de4ef22425ef51014f429ef294b873dbf7a2d9d465388b68ff05033d353bd452"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/supplement/README.md",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "documentation",
+          "explanation": "Manuscript or supplement information and reproducibility instructions.",
+          "sha256": "01431700d700d3900421d96dc2276dd73bacbc79d9d6a2b19681d650936fee9f"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/supplement/positive-boundary/README.md",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "documentation",
+          "explanation": "Manuscript or supplement information and reproducibility instructions.",
+          "sha256": "6b56e9e8e216b332aa95eece134670f173705732c7de704ebceef525ca078b9a"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/supplement/positive-boundary/proof-snapshot.zip",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "imported-source",
+          "explanation": "Checksummed positive-exponent contour proof and exact replay snapshot. Member hashes are in the adjacent manifest.",
+          "sha256": "e0e6ba8972e5a7f5ce2c2cf4da46de05a15a0052f0cefbe25d3ef4dc11b2eeae"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/supplement/verify_hard_pade_endpoints.py",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Reviewed manuscript PDF or retained record or code for the scope named in the proof.",
+          "sha256": "3e59d01f7892c763a35f4eed3621f21444a18f26dce1714e98b136fc6c07b2ac"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/supplement/verify_large_tail.py",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Reviewed manuscript PDF or retained record or code for the scope named in the proof.",
+          "sha256": "f21bfee7c6edc646f3d8e8003f5c562b699b0e48e897fb64d30bb8b10f86ad7d"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/supplement/verify_pade_intervals.py",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL",
+            "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Reviewed manuscript PDF or retained record or code for the scope named in the proof.",
+          "sha256": "1f6abba23b73999c4791fe2adfd24807fe5397369761a526d7f40a0678be74f3"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL",
+            "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "prop:middle-tail",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-MIDDLE-TAIL"
+              ]
+            },
+            {
+              "locator": "lem:small-prime-sums",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "claims": [
+            "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL"
+          ],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "prop:large-tail",
+              "nodes": [
+                "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL"
+              ]
+            }
+          ],
+          "role": "manuscript",
+          "explanation": "Current univariate binomial manuscript proof or theorem statement.",
+          "sha256": "96065e6b409d822cf6f5bc746fe854bdef1f50d34bcc7b003b9b354956ffbb41"
+        },
+        {
+          "path": "../unpublished/strong-factorial-binomials/verification.json",
+          "claims": [],
+          "dependencies": [
+            "SRC-ORDINARY-BINOMIAL-MANUSCRIPT"
+          ],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Reviewed manuscript PDF or retained record or code for the scope named in the proof.",
+          "sha256": "36a806366377d8e130524ca40d6482a75bf501a19c311bd1381dee6883943b2b"
         }
       ]
     },
@@ -483114,6 +484552,720 @@
           "proof_locator": "proof of thm:universal beginning at ../unpublished/mathieu-ground-fields/main.tex:687",
           "routes": [
             "DERIVE-MATHIEU-GROUND-FIELDS-UNIVERSAL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:degree-cap at line 168",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:degree-cap",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:gamma-annulus at line 167",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:gamma-annulus",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:gamma-annulus at line 207",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:gamma-annulus",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:gap-caps at line 208",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:gap-caps",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:local-gap at line 209",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:local-gap",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:prime-estimates at line 176",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:prime-estimates",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:prime-support at line 171",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:ratio-range at line 207",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:ratio-range",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:resultant at line 170",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:resultant",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:resultant at line 194",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:resultant",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "locator": "proof of prop:additional-boundary; reference lem:small-prime-sums at line 176",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+          "reference": "lem:small-prime-sums",
+          "proof_locator": "proof of prop:additional-boundary beginning at ../unpublished/strong-factorial-binomials/reduction-proofs.tex:165",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-ADDITIONAL-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of lem:degree-cap; reference lem:newton-alloc at line 184",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:newton-alloc",
+          "proof_locator": "proof of lem:degree-cap beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:116",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-DEGREE-CAP"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of lem:degree-cap; reference lem:prime-support at line 120",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of lem:degree-cap beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:116",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-DEGREE-CAP"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of prop:finite; reference lem:degree-cap at line 339",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:degree-cap",
+          "proof_locator": "proof of prop:finite beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:321",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of prop:finite; reference lem:gap-caps at line 331",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:gap-caps",
+          "proof_locator": "proof of prop:finite beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:321",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of prop:finite; reference lem:local-gap at line 331",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:local-gap",
+          "proof_locator": "proof of prop:finite beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:321",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of prop:finite; reference lem:newton-alloc at line 366",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:newton-alloc",
+          "proof_locator": "proof of prop:finite beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:321",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of prop:finite; reference lem:prime-support at line 340",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of prop:finite beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:321",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of prop:finite; reference lem:prime-support at line 352",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-FINITE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of prop:finite beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:321",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-FINITE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of lem:gap-caps; reference lem:prime-support at line 232",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of lem:gap-caps beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:223",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-GAP-CAPS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of lem:gap-caps; reference lem:prime-support at line 249",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of lem:gap-caps beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:223",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-GAP-CAPS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "locator": "proof of lem:kummer; reference lem:degree-cap at line 258",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:degree-cap",
+          "proof_locator": "proof of lem:kummer beginning at ../unpublished/strong-factorial-binomials/pade.tex:226",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-KUMMER"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:angles at line 427",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:angles",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:angles at line 59",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-ANGLES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:angles",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:degree-cap at line 16",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-DEGREE-CAP",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:degree-cap",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:kummer at line 27",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-KUMMER",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:kummer",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:prime-estimates at line 125",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:prime-estimates",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:prime-estimates at line 233",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:prime-estimates",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:prime-estimates at line 35",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:prime-estimates",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:resultant at line 117",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:resultant",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:resultant at line 14",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RESULTANT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:resultant",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:two-heights at line 185",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:two-heights",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "locator": "proof of prop:large-tail; reference lem:two-heights at line 259",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LARGE-TAIL",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-large.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-TWO-HEIGHTS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:two-heights",
+          "proof_locator": "proof of prop:large-tail beginning at ../unpublished/strong-factorial-binomials/tail-large.tex:11",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LARGE-TAIL"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of lem:local-gap; reference lem:gap-caps at line 289",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAP-CAPS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:gap-caps",
+          "proof_locator": "proof of lem:local-gap beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:287",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-LOCAL-GAP"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "locator": "proof of lem:positive-boundary; reference lem:newton-alloc at line 97",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:newton-alloc",
+          "proof_locator": "proof of lem:positive-boundary beginning at ../unpublished/strong-factorial-binomials/positive-boundary.tex:15",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-POSITIVE-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "locator": "proof of lem:positive-boundary; reference lem:prime-support at line 97",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:prime-support",
+          "proof_locator": "proof of lem:positive-boundary beginning at ../unpublished/strong-factorial-binomials/positive-boundary.tex:15",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-POSITIVE-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "locator": "proof of lem:positive-boundary; reference lem:ratio-range at line 17",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:ratio-range",
+          "proof_locator": "proof of lem:positive-boundary beginning at ../unpublished/strong-factorial-binomials/positive-boundary.tex:15",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-POSITIVE-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "locator": "proof of lem:positive-boundary; reference lem:ratio-range at line 95",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:ratio-range",
+          "proof_locator": "proof of lem:positive-boundary beginning at ../unpublished/strong-factorial-binomials/positive-boundary.tex:15",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-POSITIVE-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "locator": "proof of lem:positive-boundary; reference prop:small-terminals at line 16",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "reference": "prop:small-terminals",
+          "proof_locator": "proof of lem:positive-boundary beginning at ../unpublished/strong-factorial-binomials/positive-boundary.tex:15",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-POSITIVE-BOUNDARY"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "locator": "proof of lem:prime-support; reference lem:newton-alloc at line 84",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-PRIME-SUPPORT",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-NEWTON-ALLOC",
+          "dependency_path": "../unpublished/strong-factorial-binomials/arithmetic.tex",
+          "reference": "lem:newton-alloc",
+          "proof_locator": "proof of lem:prime-support beginning at ../unpublished/strong-factorial-binomials/arithmetic.tex:68",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-PRIME-SUPPORT"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "locator": "proof of lem:ratio-range; reference lem:center-ratio at line 132",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:center-ratio",
+          "proof_locator": "proof of lem:ratio-range beginning at ../unpublished/strong-factorial-binomials/reductions.tex:97",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-RATIO-RANGE"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+          "locator": "proof of lem:small-prime-sums; reference lem:prime-estimates at line 40",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-PRIME-SUMS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/tail-finite.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-PRIME-ESTIMATES",
+          "dependency_path": "../unpublished/strong-factorial-binomials/pade.tex",
+          "reference": "lem:prime-estimates",
+          "proof_locator": "proof of lem:small-prime-sums beginning at ../unpublished/strong-factorial-binomials/tail-finite.tex:35",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-PRIME-SUMS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "locator": "proof of prop:small-terminals; reference lem:center-ratio at line 15",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:center-ratio",
+          "proof_locator": "proof of prop:small-terminals beginning at ../unpublished/strong-factorial-binomials/initial-terminals.tex:7",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-TERMINALS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "locator": "proof of prop:small-terminals; reference lem:center-ratio at line 33",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-CENTER-RATIO",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:center-ratio",
+          "proof_locator": "proof of prop:small-terminals beginning at ../unpublished/strong-factorial-binomials/initial-terminals.tex:7",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-TERMINALS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "locator": "proof of prop:small-terminals; reference lem:constant-support at line 8",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:constant-support",
+          "proof_locator": "proof of prop:small-terminals beginning at ../unpublished/strong-factorial-binomials/initial-terminals.tex:7",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-TERMINALS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "locator": "proof of prop:small-terminals; reference lem:gamma-annulus at line 11",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SMALL-TERMINALS",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/initial-terminals.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:gamma-annulus",
+          "proof_locator": "proof of prop:small-terminals beginning at ../unpublished/strong-factorial-binomials/initial-terminals.tex:7",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SMALL-TERMINALS"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "locator": "proof of lem:support-reduction; reference prop:additional-boundary at line 163",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-ADDITIONAL-BOUNDARY",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reduction-proofs.tex",
+          "reference": "prop:additional-boundary",
+          "proof_locator": "proof of lem:support-reduction beginning at ../unpublished/strong-factorial-binomials/reductions.tex:158",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SUPPORT-REDUCTION"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "locator": "proof of lem:support-reduction; reference lem:constant-support at line 159",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-CONSTANT-SUPPORT",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:constant-support",
+          "proof_locator": "proof of lem:support-reduction beginning at ../unpublished/strong-factorial-binomials/reductions.tex:158",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SUPPORT-REDUCTION"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "locator": "proof of lem:support-reduction; reference lem:gamma-annulus at line 164",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-GAMMA-ANNULUS",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:gamma-annulus",
+          "proof_locator": "proof of lem:support-reduction beginning at ../unpublished/strong-factorial-binomials/reductions.tex:158",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SUPPORT-REDUCTION"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "locator": "proof of lem:support-reduction; reference lem:positive-boundary at line 160",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-POSITIVE-BOUNDARY",
+          "dependency_path": "../unpublished/strong-factorial-binomials/positive-boundary.tex",
+          "reference": "lem:positive-boundary",
+          "proof_locator": "proof of lem:support-reduction beginning at ../unpublished/strong-factorial-binomials/reductions.tex:158",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SUPPORT-REDUCTION"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/strong-factorial-binomials/main.tex",
+          "source_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "locator": "proof of lem:support-reduction; reference lem:ratio-range at line 165",
+          "conclusion": "FACT-SFC-BINOMIAL-PAPER-SUPPORT-REDUCTION",
+          "conclusion_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "dependency": "FACT-SFC-BINOMIAL-PAPER-RATIO-RANGE",
+          "dependency_path": "../unpublished/strong-factorial-binomials/reductions.tex",
+          "reference": "lem:ratio-range",
+          "proof_locator": "proof of lem:support-reduction beginning at ../unpublished/strong-factorial-binomials/reductions.tex:158",
+          "routes": [
+            "MANUSCRIPT-ROUTE-SFC-BINOMIAL-SUPPORT-REDUCTION"
           ]
         }
       ],

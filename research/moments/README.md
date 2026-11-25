@@ -109,7 +109,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Sharp universal pure-to-safe boundary in Gaussian dimension and degree | Internal result | proved | [Source](vanishing/AFFINE_GAUSSIAN_LAURENT_MEAN_VARIANCE_AND_SHARP_DEGREE_BOUNDARY.md) |
 | Nonlinear Hopf profiles and affine seed obstructions | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 | Primitive degree seven and every balanced degree at least six | Internal result | proved | [Source](../foundations/extended-geometry/PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) |
-| Stripped-Hopf Dirichlet law and a complete quintic subalgebra obstruction | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) |
+| Stripped-Hopf Dirichlet law and a complete quintic subalgebra obstruction | Internal result | stale | [Source](../foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) |
 
 **Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
 

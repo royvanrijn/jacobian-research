@@ -85,7 +85,14 @@
       "renderer": "Poppler pdftoppm 24.02.0 at 75 dpi",
       "embedded_fonts": 24,
       "type3_fonts": false,
-      "external_bibliography_links": 10
+      "external_bibliography_links": 10,
+      "detailed_pages_rasterized_at_115_dpi": [
+        8,
+        11,
+        27,
+        33,
+        34
+      ]
     },
     "arithmetic": {
       "passed": true,
@@ -132,6 +139,20 @@
         "verify_large_tail.py": "All rational endpoint comparisons in the large-order argument pass.",
         "positive_boundary": "The analytical lower-one, lower-two and relative-gap scripts and the gap-six contour constants passed. Supplement README gives the exact commands."
       }
+    },
+    "electronic_proof_appendix": {
+      "archive": "supplement/positive-boundary/proof-snapshot.zip",
+      "sha256": "e0e6ba8972e5a7f5ce2c2cf4da46de05a15a0052f0cefbe25d3ef4dc11b2eeae",
+      "source_and_input_files": 36,
+      "member_hashes_pass": true,
+      "replay_from_fresh_extraction_passes": true,
+      "scope": "Written positive-exponent boundary proof routes with exact input files. Historical cross-links may refer to excluded material that is outside those proof routes."
+    },
+    "repository": {
+      "paper_portfolio_metadata": "Passed.",
+      "paper_scope": "Coverage of 21 inventory documents and 23 declarations, 51 explicit TeX proof links, and 10 bibliography entries passed.",
+      "global_navigation": "Repository-wide check remains blocked by older canonical SFC inventory and declaration mappings and by in-flight coverage changes in extended geometry.",
+      "global_markdown_links": "Unrelated broken relative link in research/arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md."
     }
   },
   "review": {
@@ -174,6 +195,13 @@
     "supplement/verify_ordinary_binomial_residual.cpp": "712ecd8059458d58278d0bc6dafb0a7eb5d15c8ddece046da5cf37dc0247c1ea",
     "supplement/verify_pade_intervals.py": "1f6abba23b73999c4791fe2adfd24807fe5397369761a526d7f40a0678be74f3",
     "supplement/verify_positive_boundary.cpp": "c9400707abce282e23ba8aa67d8c98510e3f6bf348364a179b5a9523d140931a",
-    "supplement/verify_small_support.cpp": "087b2eb09c6b361a0cfad565e846d0d1888a32c4b61bfb86f02af40350239c3e"
+    "supplement/verify_small_support.cpp": "087b2eb09c6b361a0cfad565e846d0d1888a32c4b61bfb86f02af40350239c3e",
+    "README.md": "deaf0c2e7f50cfdca926c643858d8bbf9ee1179b013b1148ad195903f0ddfd6f",
+    "metadata.json": "6704e3ef75a8b849b09f940c0cd8b9ce71a93ff8f16d25d44c71643a5aff79b1",
+    "supplement/README.md": "01431700d700d3900421d96dc2276dd73bacbc79d9d6a2b19681d650936fee9f",
+    "supplement/positive-boundary/ARCHIVE_SHA256SUMS": "29ad98b20561b5868cc767fed39f56bf0a65cc61f517569f93f8aaf8217b82b4",
+    "supplement/positive-boundary/README.md": "6b56e9e8e216b332aa95eece134670f173705732c7de704ebceef525ca078b9a",
+    "supplement/positive-boundary/SHA256SUMS": "79b21013c8135b3b1c3e67cdfb041239693a1e47e581f3dd44b5ee48af6b00f7",
+    "supplement/positive-boundary/proof-snapshot.zip": "e0e6ba8972e5a7f5ce2c2cf4da46de05a15a0052f0cefbe25d3ef4dc11b2eeae"
   }
 }

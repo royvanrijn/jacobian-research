@@ -16,7 +16,7 @@ import subprocess
 
 ROLES = {"proof", "manuscript", "formal-support", "imported-source",
          "scope", "evidence", "reference", "documentation"}
-SUFFIXES = {".md", ".tex", ".lean", ".typ", ".py", ".json", ".pdf", ".txt", ".toml", ".html", ".gz", ".xz", ".bib", ".bbl", ".zip", ".yml", ".yaml"}
+SUFFIXES = {".md", ".tex", ".lean", ".typ", ".py", ".c", ".cpp", ".json", ".pdf", ".txt", ".toml", ".html", ".gz", ".xz", ".bib", ".bbl", ".zip", ".yml", ".yaml"}
 GENERATED = {"README.md", "STATUS.md", "SCOPES.md", "DEPENDENCIES.md", "COVERAGE.md", "REFERENCES.md", "BOUNDS.md", "OPPORTUNITIES.md"}
 GUIDES = {"DEPENDENCY_GUIDE.md", "REPRODUCE.md", "MATH_STATUS.json"}
 TOPICS = {"moments", "factorial", "jacobian", "hessian", "dixmier",

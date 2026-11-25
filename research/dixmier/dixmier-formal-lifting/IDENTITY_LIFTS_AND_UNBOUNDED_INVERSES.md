@@ -96,6 +96,75 @@ cotangent Weyl map. Thus
 \]
 This does not assume that a formal inverse is polynomial.
 
+## Converse for assignments preserving the multiplication algebra
+
+Fix a characteristic-zero field \(K\), set \(h=1\), and suppose an
+endomorphism \(\Phi\) of the finite Weyl algebra sends each position
+\(x_i\) to a polynomial \(f_i(x)\). The Weyl relations give
+\([\Phi(p_i),R(f)]=(\partial_i R)(f)\) for every polynomial \(R\).
+A nonzero relation of minimum total degree among the \(f_i\) would
+therefore give one of smaller degree by differentiation. Thus the
+\(f_i\) are algebraically independent. Their differentials form a basis
+over \(K(x)\) by separability in characteristic zero.
+
+For the top differential-order symbol \(S_i(x,\xi)\) of \(\Phi(p_i)\),
+the order-\((\deg_\xi S_i-1)\) symbol of its commutator with \(f_j\)
+is \(\nabla_\xi S_i\cdot\nabla_x f_j\). If the order is at least
+two, these symbols all vanish by the Weyl relations. The basis of
+differentials then gives \(\nabla_\xi S_i=0\), which contradicts
+its positive degree. The relation with \(f_i\) excludes order zero.
+Writing
+\[
+ \Phi(p_i)=\delta_i+b_i,\qquad
+ \delta_i=\sum_j A_{ji}p_j,\qquad A=(Df)^{-1}
+\]
+The first-order coefficient matrix satisfies the polynomial
+identity \(Df\,(a_{ji})=I\), so its determinant also shows \(f\) is
+Keller.
+
+The derivations \(\delta_i\) commute and are dual to \(df_i\).
+The scalar commutator equations say
+\(\delta_i b_j=\delta_j b_i\), so \(\sum_i b_i\,df_i\) is a closed
+polynomial one-form. It is \(dU\) for a polynomial \(U\) unique up to
+constants. In ordinary \(x\)-coordinates, a coefficient vector
+homogeneous of degree \(m\) has primitive obtained by contracting
+with the Euler vector field and dividing by \(m+1\).
+Consequently \(\Phi=\Gamma_U\circ\Phi_f\), where the shear
+\(\Gamma_U\) fixes \(x\) and sends \(p_j\) to \(p_j+\partial_j U\),
+and \(\Phi_f\) is the cotangent assignment. Conversely these
+assignments all satisfy the Weyl relations. Bavula's Proposition 5
+classifies the extensions once \(f\) is Keller. The symbol argument
+above also recovers this hypothesis from the Weyl assignment itself.
+Equation (8) now gives surjectivity precisely when \(f\) is invertible.
+
+In rank two the cotangent assignment has Bernstein degree exactly
+\(\deg f\), since its respective position degrees include \(\deg f\)
+and its first-order terms have degree at most \(\deg f\). Thus for every
+\(d\ge1\), the assertion that all complex plane Keller maps of degree
+at most \(d\) invert is equivalent to surjectivity of every rank-two
+Weyl endomorphism of Bernstein degree at most \(d\) sending positions
+to the multiplication algebra. The same equivalence holds without
+a degree cutoff.
+
+For a quantitative inverse bound, suppose \(\Phi\) has Bernstein
+degree at most \(D\) and its positional inverse \(g=f^{-1}\) has
+degree \(e\). The inverse is \(\Phi_g\circ\Gamma_{-U}\); its
+order-zero correction vector is
+\[
+ -(\nabla U)\circ g=-\bigl((Dg)^{-1}\bigr)^T(b\circ g).
+\]
+The matrix equality follows by differentiating \(f\circ g=x\).
+It has polynomial entries of degree at most \((n-1)(e-1)\) because
+\(g\) is Keller, and each \(b_i\circ g\) has degree at most \(De\).
+Together with the inverse cotangent term, this gives Bernstein degree
+at most
+\[
+ \max\{e,(n-1)(e-1)+1,De+(n-1)(e-1)\}.
+\]
+For rank two, \(e\le\deg f\le D\) by the classical polynomial
+inverse degree bound, hence the upper bound is \(D^2+D-1\).
+[Polynomial inverse-degree theorem as stated by Tsuchimoto, Proposition 4.1](https://ir.library.osaka-u.ac.jp/repo/ouka/all/7472/1700ojm.pdf).
+
 ## Arbitrarily high identity contact with fixed forward degree
 
 Choose any integer N>=1 and specialize t=h^N. Then the

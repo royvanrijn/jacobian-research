@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 8109 claim/source nodes, 6577 implication rules and 116 documented equivalence components. conditional: 23; falsified: 19; open: 351; proved: 7716.
+The graph contains 8134 claim/source nodes, 6602 implication rules and 116 documented equivalence components. conditional: 23; falsified: 19; open: 351; proved: 7728; stale: 13.
 
 Inspect the current graph from the repository root:
 
@@ -348,7 +348,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [GAUSSIAN-LAURENT-SHARP-DIMENSION-DEGREE-IMPLICATION-BOUNDARY](moments/vanishing/AFFINE_GAUSSIAN_LAURENT_MEAN_VARIANCE_AND_SHARP_DEGREE_BOUNDARY.md) | proved | partial | none in declared routes |
 | [HOPF-NONLINEAR-PROFILES-AND-AFFINE-SEED-OBSTRUCTIONS](foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md) | proved | partial | none in declared routes |
 | [IMAGE2-PRIMITIVE-SEPTIC-AND-DEGREE-COMPLETION](foundations/extended-geometry/PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) | proved | partial | none in declared routes |
-| [IMAGE2-HOPF-DIRICHLET-LAW-AND-QUINTIC-SUBALGEBRA-OBSTRUCTION](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | proved | partial | none in declared routes |
+| [IMAGE2-HOPF-DIRICHLET-LAW-AND-QUINTIC-SUBALGEBRA-OBSTRUCTION](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | stale | partial | RULE-IMAGE2-HOPF-DIRICHLET-LAW-AND-QUINTIC-SUBALGEBRA-OBSTRUCTION (stale); RULE-HOPF-STRIPPED-ALL-ORDER-DIRICHLET-LAW (stale); SRC-HOPF-STRIPPED-DIRICHLET-ENDPOINT (stale); RULE-HOPF-STRIPPED-REGULAR-DIRICHLET-GENERATORS (stale); RULE-HOPF-STRIPPED-ALL-ORDER-MIXED-BC-MOMENTS (stale); RULE-HOPF-STRIPPED-NO-PURE-QUINTIC-IN-SUBALGEBRA (stale); SRC-HOPF-DIRICHLET-FINITE-QUINTIC-ARGUMENT (stale); SRC-HOPF-STRIPPED-PAIR-DEGREE-AND-IMAGE-LIFT (stale); RULE-HOPF-STRIPPED-QUINTIC-PARAMETER-OBSTRUCTION (stale); RULE-HOPF-STRIPPED-FIRST-FIVE-NATIVE-MOMENT-POLYNOMIALS (stale); RULE-HOPF-STRIPPED-FIRST-FIVE-FROM-ALL-ORDER-LAW (stale); RULE-HOPF-STRIPPED-NONZERO-INTEGER-BEZOUT-IDENTITY (stale); RULE-HOPF-STRIPPED-PAIR-EXACT-WEIGHTED-DEGREE (stale); RULE-IMAGE2-STRIPPED-PRIMITIVE-QUINTIC-CHART-FAILS-PURITY (stale) |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -367,7 +367,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | GAP-TERNARY-PURE-PREFIX | mathematical | open | partial | Determine the least N such that the first N Gaussian moments cut out the pure locus set-theoretically for complex polynomials of total degree at most three in three variables. N is at least sixteen, and sixteen is sufficient locally throughout the exceptional orbit, where the transverse length is 40040. A global proof must exclude nonpure components away from the exceptional orbit, or a counterexample must satisfy all sixteen equations. A computable B_G(3,3) now exists by the separate effective generic-prime theorem, but it has not been evaluated and does not prove the proposed exact prefix16. | GAP-TERNARY-PURE-PREFIX (open) |
 | MATHIEU-GROUND-FIELDS-ANISOTROPIC-FIELD-GAP | mathematical | open | partial | Individual anisotropic nonsplit homogeneous spaces remain undecided in general, including the rational norm-one quadric of the division quaternion (2,3). There are no nonzero pure phases of degree at most three. The exclusions in degree four include even phases, phases in at most two ground-field linear coordinates. Phases affine in the coordinates transverse to a fixed linear form are excluded in every degree, including all of their positive powers. Any residual quartic must have mixed parity and leading class L^3M modulo the norm. The unrestricted higher-degree problem remains open. Cone degenerations exclude further mixed quartics in three or four coordinates. The fourth-power leading class L^4 is now completely excluded, including square cancellation. Remaining quartics have independent L and M. The independent-form branch is further reduced by exclusions for the stated conic symmetries; the general cubic section and the general reduced disjoint quadratic section remain open. Fixed-prime Frobenius and linear-marker tests now give arithmetic exclusions in the independent branch without requiring symmetry, including the specified residue example for (2,3). | MATHIEU-GROUND-FIELDS-ANISOTROPIC-FIELD-GAP (open) |
 | MATHIEU-GROUND-FIELDS-DISCONNECTED-REAL-GAP | mathematical | open | partial | Over a real closed field one can test each real or complex constant-field component. Complex factors are classified. Among real homogeneous forms, compact twists with an active split commuting rank-one or the quaternionic Weyl twist with a free split commuting torus are settled, while central twists and other real forms remain open. | MATHIEU-GROUND-FIELDS-DISCONNECTED-REAL-GAP (open) |
-| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-COMPACT-GAP | mathematical | open | partial | For the connected real-closed case with an active split central torus, active compact factors of rank at least two are covered, including homogeneous forms without rational points or a torus quotient. The remaining rank-one reductions include SU(2)/2O and SU(2)/2I with a scalar Laurent factor. Exact regular radius-height factorization and angular trinomials whose opposite product is rational in the center are excluded. Angular trinomials whose opposite product does not lie in the rational function field of the center, other Laurent supports, and coefficients outside the angular subring remain undecided. Aligned three-term Laurent faces on either angular model are also excluded at central weights 2 through 6. This includes the stated multi-term aligned faces with four complementary branch multiplicities. A primitive cyclic signature test also handles certain aligned faces with unequal finite root multiplicities, including examples of effective order 30. The stable Frobenius test gives a fixed-prime exclusion criterion for general regular Laurent coefficients; an applicable reduction in every mixed case remains to be proved. | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-COMPACT-GAP (open) |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-COMPACT-GAP | mathematical | open | partial | For the connected real-closed case with an active split central torus, active compact factors of rank at least two are covered, including homogeneous forms without rational points or a torus quotient. The remaining rank-one reductions include SU(2)/2O and SU(2)/2I with a scalar Laurent factor. Exact regular radius-height factorization and angular trinomials whose opposite product is rational in the center are excluded. Angular trinomials whose opposite product does not lie in the rational function field of the center, other Laurent supports, and coefficients outside the angular subring remain undecided. Aligned three-term Laurent faces on either angular model are also excluded at central weights 2 through 6. This includes the stated multi-term aligned faces with four complementary branch multiplicities. A primitive cyclic signature test also handles certain aligned faces with unequal finite root multiplicities, including examples of effective order 30. The stable Frobenius test gives a fixed-prime exclusion criterion for general regular Laurent coefficients; an applicable reduction in every mixed case remains to be proved. On the octahedral quotient the standardized joint Dirichlet endpoint field has only scalar Laurent elements that are regular, even after including both conditional circle coordinates and applying descent. The icosahedral conditional elliptic differential cannot be normalized to an algebraic circle differential, even after a finite cover. | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-COMPACT-GAP (open) |
 | MOMENTS-INVARIANT-MIXED-PARITY-CORE | mathematical | open | partial | Classify scalar polynomial-exponential vacua, full finite images and original-vacuum primitivity for F(ZW,Y^2/2)+YB(ZW,Y^2/2), with F nonconstant and B nonzero, beyond the separately proved constant-quadratic-fibre subclasses. In particular decide safety-to-purity for the remaining arbitrary mixed-parity cores. Even cores and constant-plus-odd cores are now classified, and strict one-sided additions preserve the full actual module. This is a restricted frontier, not a replacement for the unrestricted universal Gaussian goal. | MOMENTS-INVARIANT-MIXED-PARITY-CORE (open) |
 | MOMENTS-INVARIANT-SEXTIC-FINITE-FRONTIER | mathematical | open | partial | Determine finite actual images for the normalized remaining invariant sextic cores Y+a S^3+S^2 A2(Y)+S H4(Y), a!=0, deg A2<=2, deg H4 in {3,4}. These are the same full-image cases as those with arbitrary nonzero affine boundary slope, by removal of strict one-sided terms and invertible time rescaling after subtraction of the constant. Any finite normalized image must be exp(t^2/2)K[t]. The full Airy relative frame at turning points and escaping Y remains open. | MOMENTS-INVARIANT-SEXTIC-FINITE-FRONTIER (open) |
 | MOMENTS-QUADRATIC-RADIAL-HIGH-MULTIPLICITY-COEFFICIENT | mathematical | open | partial | For A of degree>=3 with a root of multiplicity>=3, determine whether A(Y)(ZW)^2+H(Y)ZW+G(Y) can have an actual polynomial-exponential unit with arbitrary G and arbitrary polynomial exponent. The full finite-image classification is now complete because that hypothesis prescribes the affine boundary exponent. General scalar-only rigidity, including arbitrary-boundary purity, requires additional leading-phase or relative-chain estimates. If G is already c+bY, the boundary-normalized exponent ct+b^2t^2/2 is excluded at every root multiplicity; any remaining scalar identity in that subfamily must have a different exponent. | MOMENTS-QUADRATIC-RADIAL-HIGH-MULTIPLICITY-COEFFICIENT (open) |
@@ -452,8 +452,8 @@ flowchart LR
   class n24 proved
   n25["HOPF-NONLINEAR-PROFILES-AND-<br/>AFFINE-SEED-OBSTRUCTIONS<br/>proved"]
   class n25 proved
-  n26["IMAGE2-HOPF-DIRICHLET-LAW-AND-<br/>QUINTIC-SUBALGEBRA-OBSTRUCTION<br/>proved"]
-  class n26 proved
+  n26["IMAGE2-HOPF-DIRICHLET-LAW-AND-<br/>QUINTIC-SUBALGEBRA-OBSTRUCTION<br/>stale"]
+  class n26 stale
   n27["FINITE-PIECEWISE-POLYNOMIAL-<br/>HEIGHT-ALL-ORDER-RADIAL-<br/>CRITERION<br/>proved"]
   class n27 proved
   n28["POLYHEDRAL-PIECEWISE-DENSITY-<br/>CONDITIONAL-UNIT-<br/>COUNTEREXAMPLES<br/>proved"]
@@ -754,8 +754,8 @@ flowchart LR
   r63{"AND<br/>DERIVE-IMAGE2-EVEN-PRIMITIVE<br/>+3 omitted proof premises<br/>proved"}
   class r63 proved
   r63 --> n46
-  r64{"AND<br/>RULE-IMAGE2-HOPF-DIRICHLET-<br/>LAW-AND-QUINTIC-SUBALGEBRA-<br/>OBSTRUCTION<br/>+4 omitted proof premises<br/>proved"}
-  class r64 proved
+  r64{"AND<br/>RULE-IMAGE2-HOPF-DIRICHLET-<br/>LAW-AND-QUINTIC-SUBALGEBRA-<br/>OBSTRUCTION<br/>+4 omitted proof premises<br/>stale"}
+  class r64 stale
   r64 --> n26
   r65{"AND<br/>DERIVE-IMAGE2-HOPF-SHEAR-<br/>PRINCIPAL<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r65 proved
@@ -823,7 +823,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 84 routes (2394 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 84 routes (2396 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -2558,7 +2558,7 @@ flowchart LR
   class n77 proved
   n78["FACTORIAL-EXPLICIT-ARITHMETIC-<br/>ORDINARY-BINOMIAL-CUTOFF<br/>proved"]
   class n78 proved
-  n79["FACTORIAL-ORDINARY-BINOMIAL-<br/>SFC<br/>proved"]
+  n79["FACTORIAL-ORDINARY-BINOMIAL-<br/>SFC<br/>proved<br/>OR routes"]
   class n79 proved
   r0{"AND<br/>SOURCE-ROUTE-ALGEBRAIC-GAMMA-<br/>PRIME-POWER-DOMAINS<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r0 proved
@@ -2703,112 +2703,115 @@ flowchart LR
   r46{"AND<br/>DERIVE-BINOMIAL-FOLLOWUP-<br/>PRINCIPAL-FIBERWISE<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r46 proved
   r46 --> n72
-  r47{"AND<br/>ORDINARY-BINOMIAL-ALL-ORDER-<br/>THEOREM<br/>+1 omitted proof premise<br/>proved"}
+  r47{"AND<br/>MANUSCRIPT-ROUTE-SFC-BINOMIAL-<br/>MAIN<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r47 proved
   r47 --> n79
-  r48{"AND<br/>DERIVE-BINOMIAL-FOLLOWUP-<br/>PRINCIPAL-TERMINAL-TEN<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r48{"AND<br/>ORDINARY-BINOMIAL-ALL-ORDER-<br/>THEOREM<br/>+1 omitted proof premise<br/>proved"}
   class r48 proved
-  r48 --> n53
-  r49{"AND<br/>RECORD-ORDINARY-LOWER-FOUR-<br/>ALL-GAPS<br/>+1 omitted proof premise<br/>proved"}
+  r48 --> n79
+  r49{"AND<br/>DERIVE-BINOMIAL-FOLLOWUP-<br/>PRINCIPAL-TERMINAL-TEN<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r49 proved
-  r49 --> n77
-  r50{"AND<br/>DERIVE-FACTORIAL-ORDINARY-<br/>LOWER-ONE-STRONG-FACTORIAL<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
+  r49 --> n53
+  r50{"AND<br/>RECORD-ORDINARY-LOWER-FOUR-<br/>ALL-GAPS<br/>+1 omitted proof premise<br/>proved"}
   class r50 proved
-  r50 --> n54
-  r51{"AND<br/>PROVE-FACTORIAL-ORDINARY-<br/>LOWER-THREE-ALL-GAPS<br/>+1 pinned source<br/>+8 omitted proof premises<br/>proved"}
+  r50 --> n77
+  r51{"AND<br/>DERIVE-FACTORIAL-ORDINARY-<br/>LOWER-ONE-STRONG-FACTORIAL<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r51 proved
-  r51 --> n58
-  r52{"AND<br/>DERIVE-FACTORIAL-ORDINARY-<br/>LOWER-TWO-STRONG-FACTORIAL<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r51 --> n54
+  r52{"AND<br/>PROVE-FACTORIAL-ORDINARY-<br/>LOWER-THREE-ALL-GAPS<br/>+1 pinned source<br/>+8 omitted proof premises<br/>proved"}
   class r52 proved
-  r52 --> n44
-  r53{"AND<br/>PROVE-FACTORIAL-ORDINARY-<br/>TERMINAL-THROUGH-12<br/>+1 pinned source<br/>proved"}
+  r52 --> n58
+  r53{"AND<br/>DERIVE-FACTORIAL-ORDINARY-<br/>LOWER-TWO-STRONG-FACTORIAL<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r53 proved
-  n53 --> r53
-  r53 --> n57
-  r54{"AND<br/>PROVE-FACTORIAL-ORDINARY-<br/>TERMINAL-THROUGH-24<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r53 --> n44
+  r54{"AND<br/>PROVE-FACTORIAL-ORDINARY-<br/>TERMINAL-THROUGH-12<br/>+1 pinned source<br/>proved"}
   class r54 proved
-  n57 --> r54
-  r54 --> n60
-  r55{"AND<br/>SOURCE-ROUTE-FACTORIAL-PENCIL-<br/>FAMILIES<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  n53 --> r54
+  r54 --> n57
+  r55{"AND<br/>PROVE-FACTORIAL-ORDINARY-<br/>TERMINAL-THROUGH-24<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r55 proved
-  r55 --> n22
-  r56{"AND<br/>DERIVE-POLYNOMIAL-GRACE-<br/>PRINCIPAL<br/>+1 pinned source<br/>+8 omitted proof premises<br/>proved"}
+  n57 --> r55
+  r55 --> n60
+  r56{"AND<br/>SOURCE-ROUTE-FACTORIAL-PENCIL-<br/>FAMILIES<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r56 proved
-  r56 --> n39
-  r57{"AND<br/>DERIVE-FACTORIAL-POLYNOMIAL-<br/>TRIANGLE-AND-TERMINAL-SIX<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r56 --> n22
+  r57{"AND<br/>DERIVE-POLYNOMIAL-GRACE-<br/>PRINCIPAL<br/>+1 pinned source<br/>+8 omitted proof premises<br/>proved"}
   class r57 proved
-  r57 --> n52
-  r58{"AND<br/>PROVE-FACTORIAL-PRIME-POWER-<br/>GAP-DIVISOR-LOWER-EXPONENT-<br/>CLOSURE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r57 --> n39
+  r58{"AND<br/>DERIVE-FACTORIAL-POLYNOMIAL-<br/>TRIANGLE-AND-TERMINAL-SIX<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r58 proved
-  r58 --> n14
-  r59{"AND<br/>PROVE-FACTORIAL-RAMIFIED-<br/>POLYNOMIAL-PULLBACK-MOMENT-<br/>CLOSURE<br/>+1 pinned source<br/>proved"}
+  r58 --> n52
+  r59{"AND<br/>PROVE-FACTORIAL-PRIME-POWER-<br/>GAP-DIVISOR-LOWER-EXPONENT-<br/>CLOSURE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r59 proved
-  r59 --> n13
-  r60{"AND<br/>DERIVE-RELATIVE-GAP-THREE-<br/>COMPLETION-PRINCIPAL<br/>+2 pinned sources<br/>+6 omitted proof premises<br/>proved"}
+  r59 --> n14
+  r60{"AND<br/>PROVE-FACTORIAL-RAMIFIED-<br/>POLYNOMIAL-PULLBACK-MOMENT-<br/>CLOSURE<br/>+1 pinned source<br/>proved"}
   class r60 proved
-  n44 --> r60
-  r60 --> n59
-  r61{"AND<br/>DERIVE-RELATIVE-GAP-THREE-<br/>INDEPENDENT-PRINCIPAL<br/>+2 pinned sources<br/>+7 omitted proof premises<br/>proved"}
+  r60 --> n13
+  r61{"AND<br/>DERIVE-RELATIVE-GAP-THREE-<br/>COMPLETION-PRINCIPAL<br/>+2 pinned sources<br/>+6 omitted proof premises<br/>proved"}
   class r61 proved
   n44 --> r61
   r61 --> n59
-  r62{"AND<br/>DERIVE-FACTORIAL-RELATIVE-GAP-<br/>THREE-WEIGHTED-TAIL<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r62{"AND<br/>DERIVE-RELATIVE-GAP-THREE-<br/>INDEPENDENT-PRINCIPAL<br/>+2 pinned sources<br/>+7 omitted proof premises<br/>proved"}
   class r62 proved
-  r62 --> n56
-  r63{"AND<br/>DERIVE-EVENTUAL-SQUARE-<br/>PRINCIPAL-404<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  n44 --> r62
+  r62 --> n59
+  r63{"AND<br/>DERIVE-FACTORIAL-RELATIVE-GAP-<br/>THREE-WEIGHTED-TAIL<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r63 proved
-  r63 --> n35
-  r64{"AND<br/>DERIVE-EVENTUAL-SQUARE-<br/>PRINCIPAL-405<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r63 --> n56
+  r64{"AND<br/>DERIVE-EVENTUAL-SQUARE-<br/>PRINCIPAL-404<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r64 proved
-  r64 --> n67
-  r65{"AND<br/>DERIVE-INDIVIDUAL-SQ-CI-<br/>PRINCIPAL-CI-GAUSSIAN<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r64 --> n35
+  r65{"AND<br/>DERIVE-EVENTUAL-SQUARE-<br/>PRINCIPAL-405<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r65 proved
-  r65 --> n75
-  r66{"AND<br/>DERIVE-GLOBAL-BINOMIAL-<br/>PRINCIPAL-SUPPORT-UNIFORM<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
+  r65 --> n67
+  r66{"AND<br/>DERIVE-INDIVIDUAL-SQ-CI-<br/>PRINCIPAL-CI-GAUSSIAN<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r66 proved
-  r66 --> n76
-  r67{"AND<br/>DERIVE-INDIVIDUAL-SQ-CI-<br/>PRINCIPAL-UNIFORM-SQ<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
+  r66 --> n75
+  r67{"AND<br/>DERIVE-GLOBAL-BINOMIAL-<br/>PRINCIPAL-SUPPORT-UNIFORM<br/>+1 pinned source<br/>+7 omitted proof premises<br/>proved"}
   class r67 proved
-  r67 --> n62
-  r68{"AND<br/>DERIVE-QUARTIC-UNIFORM-<br/>PRINCIPAL<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r67 --> n76
+  r68{"AND<br/>DERIVE-INDIVIDUAL-SQ-CI-<br/>PRINCIPAL-UNIFORM-SQ<br/>+1 pinned source<br/>+6 omitted proof premises<br/>proved"}
   class r68 proved
-  r68 --> n38
-  r69{"AND<br/>DERIVE-REGIONAL-BINOMIAL-<br/>PRINCIPAL-THERMAL<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r68 --> n62
+  r69{"AND<br/>DERIVE-QUARTIC-UNIFORM-<br/>PRINCIPAL<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r69 proved
-  r69 --> n71
-  r70{"AND<br/>DERIVE-BINOMIAL-FOLLOWUP-<br/>PRINCIPAL-UNIFORM-CUSP<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r69 --> n38
+  r70{"AND<br/>DERIVE-REGIONAL-BINOMIAL-<br/>PRINCIPAL-THERMAL<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r70 proved
-  r70 --> n69
-  r71{"AND<br/>DERIVE-FACTORIAL-UNIFORM-<br/>LARGE-GAP-SADDLE-SIMPLICITY<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r70 --> n71
+  r71{"AND<br/>DERIVE-BINOMIAL-FOLLOWUP-<br/>PRINCIPAL-UNIFORM-CUSP<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r71 proved
-  r71 --> n41
-  r72{"AND<br/>DERIVE-GLOBAL-BINOMIAL-<br/>PRINCIPAL-LARGE-THERMAL<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r71 --> n69
+  r72{"AND<br/>DERIVE-FACTORIAL-UNIFORM-<br/>LARGE-GAP-SADDLE-SIMPLICITY<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r72 proved
-  r72 --> n73
-  r73{"AND<br/>DERIVE-INDIVIDUAL-SQ-CI-<br/>PRINCIPAL-HIGH-RATIO<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r72 --> n41
+  r73{"AND<br/>DERIVE-GLOBAL-BINOMIAL-<br/>PRINCIPAL-LARGE-THERMAL<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r73 proved
-  r73 --> n63
-  r74{"AND<br/>DERIVE-UNIFORM-QUADRATIC-<br/>PRINCIPAL<br/>+2 pinned sources<br/>+9 omitted proof premises<br/>proved"}
+  r73 --> n73
+  r74{"AND<br/>DERIVE-INDIVIDUAL-SQ-CI-<br/>PRINCIPAL-HIGH-RATIO<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r74 proved
-  r74 --> n61
-  r75{"AND<br/>DERIVE-GLOBAL-BINOMIAL-<br/>PRINCIPAL-SMALL-RATIO<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r74 --> n63
+  r75{"AND<br/>DERIVE-UNIFORM-QUADRATIC-<br/>PRINCIPAL<br/>+2 pinned sources<br/>+9 omitted proof premises<br/>proved"}
   class r75 proved
-  r75 --> n43
-  r76{"AND<br/>DERIVE-FACT-FIXED-GAP-<br/>EVENTUAL-PRINCIPAL<br/>+1 pinned source<br/>+10 omitted proof premises<br/>proved"}
+  r75 --> n61
+  r76{"AND<br/>DERIVE-GLOBAL-BINOMIAL-<br/>PRINCIPAL-SMALL-RATIO<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r76 proved
-  r76 --> n40
-  r77{"AND<br/>SOURCE-ROUTE-GAMMA-<br/>CONVOLUTION-APPELL-OBSTRUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
+  r76 --> n43
+  r77{"AND<br/>DERIVE-FACT-FIXED-GAP-<br/>EVENTUAL-PRINCIPAL<br/>+1 pinned source<br/>+10 omitted proof premises<br/>proved"}
   class r77 proved
-  r77 --> n31
-  r78{"AND<br/>SOURCE-ROUTE-GAMMA-ONE-HALF-<br/>WEIGHTED-FACTORIAL-RIGIDITY<br/>+6 omitted proof premises<br/>proved"}
+  r77 --> n40
+  r78{"AND<br/>SOURCE-ROUTE-GAMMA-<br/>CONVOLUTION-APPELL-OBSTRUCTION<br/>+1 pinned source<br/>+4 omitted proof premises<br/>proved"}
   class r78 proved
-  r78 --> n36
-  r79{"AND<br/>BUNDLE-GAMMA-POLYNOMIAL-TILT-<br/>ZERO-BIAS-CLOSURE-AND-<br/>OBSTRUCTION<br/>+1 pinned source<br/>+10 omitted proof premises<br/>proved"}
+  r78 --> n31
+  r79{"AND<br/>SOURCE-ROUTE-GAMMA-ONE-HALF-<br/>WEIGHTED-FACTORIAL-RIGIDITY<br/>+6 omitted proof premises<br/>proved"}
   class r79 proved
-  r79 --> n20
-  r80{"AND<br/>SOURCE-ROUTE-GAMMA-PRODUCT-<br/>ROOT-MODULUS<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r79 --> n36
+  r80{"AND<br/>BUNDLE-GAMMA-POLYNOMIAL-TILT-<br/>ZERO-BIAS-CLOSURE-AND-<br/>OBSTRUCTION<br/>+1 pinned source<br/>+10 omitted proof premises<br/>proved"}
   class r80 proved
-  r80 --> n34
+  r80 --> n20
+  r81{"AND<br/>SOURCE-ROUTE-GAMMA-PRODUCT-<br/>ROOT-MODULUS<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  class r81 proved
+  r81 --> n34
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -2817,7 +2820,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 81 routes (1369 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 82 routes (1392 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -6006,3 +6009,33 @@ flowchart LR
 Overview: 80 statements and 92 routes (284 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
+
+## Changed or missing evidence
+
+These declarations require inspection and revalidation. Updating a digest alone does not repair the supporting argument.
+
+| Owner | Source | Freshness |
+|---|---|---|
+| SRC-HOPF-DIRICHLET-FINITE-QUINTIC-ARGUMENT | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| SRC-HOPF-STRIPPED-DIRICHLET-ENDPOINT | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| SRC-HOPF-STRIPPED-PAIR-DEGREE-AND-IMAGE-LIFT | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-NONZERO-INTEGER-BEZOUT-IDENTITY | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-NONZERO-INTEGER-BEZOUT-IDENTITY | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-REGULAR-DIRICHLET-GENERATORS | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-REGULAR-DIRICHLET-GENERATORS | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-PAIR-EXACT-WEIGHTED-DEGREE | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-PAIR-EXACT-WEIGHTED-DEGREE | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-ALL-ORDER-DIRICHLET-LAW | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-ALL-ORDER-DIRICHLET-LAW | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-ALL-ORDER-MIXED-BC-MOMENTS | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-ALL-ORDER-MIXED-BC-MOMENTS | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-FIRST-FIVE-NATIVE-MOMENT-POLYNOMIALS | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-FIRST-FIVE-NATIVE-MOMENT-POLYNOMIALS | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-FIRST-FIVE-FROM-ALL-ORDER-LAW | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-QUINTIC-PARAMETER-OBSTRUCTION | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-QUINTIC-PARAMETER-OBSTRUCTION | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| HOPF-STRIPPED-NO-PURE-QUINTIC-IN-SUBALGEBRA | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-HOPF-STRIPPED-NO-PURE-QUINTIC-IN-SUBALGEBRA | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| IMAGE2-STRIPPED-PRIMITIVE-QUINTIC-CHART-FAILS-PURITY | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-IMAGE2-STRIPPED-PRIMITIVE-QUINTIC-CHART-FAILS-PURITY | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |
+| RULE-IMAGE2-HOPF-DIRICHLET-LAW-AND-QUINTIC-SUBALGEBRA-OBSTRUCTION | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) | changed |

@@ -138,12 +138,12 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-ABC-SHORT-HEIGHT-SECTOR-ONE-THIRD-SAVING | proved | N_{lambda,h_*}(X) | 0<lambda<lambda_0 and min(a,b)<=c^h_* inside the count | upper: O_(lambda,epsilon)(X^((1/3-sigma)lambda+epsilon)) |  |
 | ARITH-ABC-SELECTIVE-RESIDUE-DIFFUSE-SECTOR | proved | primitive positive abc triples in the selective-residue box sector | small L and the fixed degree and height sector | upper: X^((321/1000+o(1)) L) |  |
 | ARITH-ABC-COUPLED-OUTLIER-LOCK-RESIDUAL-SECTOR | proved | primitive positive abc triples in the residual median box sector | small L and the fixed degree and height sector | upper: X^((313/1000+o(1)) L) |  |
-| EXT-JC2-DEGREE-100 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 101 |  |
-| EXT-JC2-DEGREE-104 | proved | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 105 |  |
-| EXT-JC2-DEGREE-107 | conditional | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1 |
-| HESS-HC4-DEGREE-101 | conditional | total-degree | Complex four-variable polynomial potentials with nonzero constant Hessian determinant and noninvertible gradient | lower: 102 | OWN-TANG-STRUCTURAL-AUDIT |
-| HESS-HC4-DEGREE-105 | conditional | total-degree | Complex four-variable polynomial potentials with nonzero constant Hessian determinant and noninvertible gradient | lower: 106 | OWN-TANG-STRUCTURAL-AUDIT |
-| HESS-HC4-DEGREE-108 | conditional | total-degree | Complex four-variable polynomial potentials with nonzero constant Hessian determinant and noninvertible gradient | lower: 109 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1, OWN-TANG-STRUCTURAL-AUDIT |
+| EXT-JC2-DEGREE-100 | stale | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 101 |  |
+| EXT-JC2-DEGREE-104 | stale | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 105 |  |
+| EXT-JC2-DEGREE-107 | stale | total-degree | Noninvertible complex polynomial Keller maps from affine two-space to itself, degree measured by the maximum component total degree | lower: 108 |  |
+| HESS-HC4-DEGREE-101 | stale | total-degree | Complex four-variable polynomial potentials with nonzero constant Hessian determinant and noninvertible gradient | lower: 102 |  |
+| HESS-HC4-DEGREE-105 | stale | total-degree | Complex four-variable polynomial potentials with nonzero constant Hessian determinant and noninvertible gradient | lower: 106 |  |
+| HESS-HC4-DEGREE-108 | stale | total-degree | Complex four-variable polynomial potentials with nonzero constant Hessian determinant and noninvertible gradient | lower: 109 |  |
 | DIX-QCR1 | proved | total-degree | classical fourth image completing the fixed retained Long triple | lower: 23 |  |
 | DIX-QCR1 | proved | momentum-order | classical fourth image completing the fixed retained Long triple | exact: 5 |  |
 | DIX-QPH1 | proved | h-coefficient-total-spatial-degree | specific positive scalar branch of quintic phase Long lift, coefficient h^n for n>=2 | exact: 10*n-1 |  |
@@ -157,7 +157,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | JAC-CANONICAL-FILTER | proved | generic-map-degree | canonical invariant-filter receiver for rankN finite etale algebra | exact: 3^(N+1) |  |
 | JAC-CANONICAL-FILTER | proved | coordinate-degree | canonical invariant-filter receiver in split coordinates | exact: 4*N |  |
 | FOUND-F1 | proved | dimension | ordinary characteristic-zero polynomial Keller map with rational collision | upper: 3 |  |
-| DIX-RANK3-FINITE-COUNTEREXAMPLE | proved | weyl-generator-total-degree | finite nonsurjective A3 cotangent endomorphism from normalized F1; {"rank": 3} | upper: 12 |  |
+| DIX-RANK3-FINITE-COUNTEREXAMPLE | stale | weyl-generator-total-degree | finite nonsurjective A3 cotangent endomorphism from normalized F1; {"rank": 3} | upper: 12 |  |
 | DIX-LEADING-POISSON-FINITENESS | proved | corrected-fourth-image-degree | rank2 actual finite Weyl completion with leading-symbol independence and module-finite Poisson centralizer; {"rank": 2} | upper: max(e2,e1+e2-2+d1) |  |
 | ARITH-AMBIENT-HASSE-LOWER-BOUND | proved | ambient-hasse-target-count | all rational targets of the displayed fixed Phi in actual projective target height | lower: (Cphi-epsilon)*B^2/log(B) eventually for every epsilon>0 |  |
 | ARITH-AMBIENT-HASSE-LOWER-BOUND | proved | scaled-count-liminf | all rational targets of the displayed fixed Phi, A_Phi(B)*log(B)/B^2 | lower: Cphi |  |
@@ -444,7 +444,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-HURWITZ-HISTORICAL-SUPPORT-GROWTH | proved | total historical support interval growth per move | One signed adjacent Hurwitz move on two double transpositions with their current support included in the historical intervals | upper: 8 |  |
 | ARITH-D5-UNBUFFERED-BOUQUET-QUADRATIC-LOWER | proved | distance to a wreath-leaf endpoint | Unbuffered full-cycle D5 bouquet T_t on 4t+1 sheets, t an integer at least 2 | lower: ceil((2*t-1)*max(0,2*ceil(t/2)-3)/8) |  |
 | ARITH-D5-UNBUFFERED-BOUQUET-EXPOSURE-LOWER | proved | distance to a wreath-leaf endpoint | Unbuffered full-cycle D5 bouquet T_t on 4t+1 sheets, t an integer at least 2 | lower: t-1 |  |
-| HESS-HC4-COUNTEREXAMPLE-BASE-DEGREES-THROUGH-125 | conditional | maximum component total degree of the planar base map | Complex HC4 counterexamples of potential degree at most 125 in the Tang normal form | exact: 108 | Guccione–Guccione–Horruitiner–Valqui, arXiv:2204.14178v1, Theorem 2.1, OWN-TANG-STRUCTURAL-AUDIT |
+| HESS-HC4-COUNTEREXAMPLE-BASE-DEGREES-THROUGH-125 | stale | maximum component total degree of the planar base map | Complex HC4 counterexamples of potential degree at most 125 in the Tang normal form | exact: 108 |  |
 | ARITH-COUPLED-MIXED-TWO-LARGE-PRIME-BOUND | proved | coupled bad sifted-pair count | Unweighted C4+C3 targets N=2 modulo 12 with z=N^(1/2-epsilon) and fixed 0<epsilon<1/100 | upper: C0*epsilon^(5/4)*N*J_12(N)/(log N)^(3/2) |  |
 | ARITH-EISENSTEIN-BALANCED-EXPLICIT-TAIL | proved | sufficient onset for all ordinary thirds-balanced Eisenstein targets | positive integers n=2 modulo 6, ordinary A+A with both summands in [n/3,2n/3] | upper: 2^(2^15) |  |
 | ARITH-EISENSTEIN-BALANCED-INERT-TAIL | proved | sufficient onset for ordinary thirds balance on all-inert targets | positive n=2 modulo 6 with every prime divisor 2 modulo 3 | upper: 2^60 |  |
@@ -581,6 +581,4 @@ No unrecorded improvement in an identical domain.
 - HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION has bound 6. HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION improves it to 8 under the same assumptions.
 - FACTORIAL-ORDINARY-INITIAL-FOUR has bound 4. FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH improves it to 5 under the same assumptions.
 - ARITH-D20-EFFECTIVE-ALL-TARGETS has bound 73786976294838206464. ARITH-D20-EXACT-SUMSET-AFFIRMATIVE improves it to 5 under the same assumptions.
-- EXT-JC2-DEGREE-100 has bound 101. EXT-JC2-DEGREE-104 improves it to 105 under the same assumptions.
-- HESS-HC4-DEGREE-101 has bound 102. HESS-HC4-DEGREE-105 improves it to 106 under the same assumptions.
 - DIX-LONG-COMPOSITE-COMMON-DIVISOR-ORDERS has bound 4. DIX-LONG-SCALAR-LARGER-ORDER-AT-LEAST-SIX improves it to 6 under the same assumptions.

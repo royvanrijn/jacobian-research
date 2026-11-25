@@ -188,3 +188,57 @@ The spherical Dirichlet density and beta moments are classical; the specific joi
 The usual Gaussian theorem for polynomials of Gaussian degree at most two does not apply directly to the chart (11). Homogenizing (11) on a two-sphere gives a quartic, even polynomial in THREE Gaussian coordinates, with a rank-one squared-variable term; it is not a quadratic in Gaussian coordinates. Likewise Liu--Sun, *The factorial conjecture and images of locally nilpotent derivations*, Bull. Aust. Math. Soc.101(2020), Theorems2.6--2.7, addresses HOMOGENEOUS two-variable factorial and mixed Gamma(1),Gamma(1/2) statements. Those source statements were inspected as context, not imported here to infer the three-half-parameter, nonhomogeneous chart. The finite identity (15) avoids any such unproved transfer.
 
 This result leaves the full primitive Image degree-five problem open, including phases outside K[B,C]. The all-orders joint law follows from the endpoint proof in Section 1. The finite obstruction follows from the exact integer identity (15), whose complete coefficients are retained in the certificate. Additional bounded checks corroborate those two arguments without replacing either one.
+
+## 5. Transfer to the octahedral trace and to automorphism orbits
+
+### The same mixed moments on the octahedral quotient
+
+Use the variables \(p,q,v,R\) of the [octahedral joint Dirichlet calculation](MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md#an-octahedral-joint-dirichlet-identity-and-its-endpoint-algebra). Put
+\[
+ B_{\mathrm{oct}}=(1-v)(1-R)-1,\qquad C_{\mathrm{oct}}=-v,
+ \qquad v=9q/p,\qquad R=\frac{(p-A(v))^2}{B(v)^2}.
+\]
+Here \(B(v)^2\) is the conditional arcsine scale from that calculation. The reflection-invariant polynomial coordinates \(p,q\) are algebraically independent, so \(p\) is transcendental over \(K(v)\) and \(R\), a nonconstant quadratic in \(p\) over \(K(v)\), is also transcendental over \(K(v)\). The displayed pair recovers \(v=-C_{\mathrm{oct}}\) and \(R=1-(1+B_{\mathrm{oct}})/(1-v)\). Hence this pair is algebraically independent as well. The map
+\[
+ \Phi\colon K[B,C]\longrightarrow K[B_{\mathrm{oct}},C_{\mathrm{oct}}]
+\]
+sending one pair to the other is a \(K\)-algebra isomorphism.
+
+The source formula (4) and the target formula (H12) give the same normalized moments for the ordered barycentric triples
+\[
+ (-C,\ C-B,\ 1+B),\qquad
+ (v,\ (1-v)R,\ (1-v)(1-R)).
+\]
+It follows that \(\Lambda_{\mathrm{oct}}(\Phi(g)\Phi(f)^m)=\Lambda(g f^m)\) for every \(f,g\in K[B,C]\) and integer \(m\ge0\). The compact trace on the target rational subalgebra is well-defined over \(K\) by the rational coefficients in (H12), and on real coefficients equals the normalized integral of these bounded functions. The inverse map therefore gives the same equality with the two functionals interchanged. Purity and eventual marked vanishing with all markers in the displayed subalgebras transfer in both directions.
+
+In particular, every phase \(B_{\mathrm{oct}}C_{\mathrm{oct}}+\alpha C_{\mathrm{oct}}^2+\beta B_{\mathrm{oct}}+\gamma C_{\mathrm{oct}}+\delta\) has a nonzero pure moment among orders one through five by Theorem 2. The target is a subalgebra of the **rational** reflection-quotient function field. The equality concerns its own polynomial markers.
+
+### Degree and moment bounds on automorphism images
+
+Let \(\sigma\) be any polynomial \(K\)-algebra automorphism of the Hopf quadric \(\mathcal A\), and write \(a=\deg_{\mathcal A}\sigma(x)\) and \(b=\deg_{\mathcal A}\sigma(t)\) for least polynomial degrees. Both are positive, and the associated graded domain in Section 3 gives degree additivity. Apply \(\sigma\) to
+\[
+ xB=1-(1+x)^2t^2,\qquad xC=1-(1+x)t^2.
+\]
+The product on the right of each relation has positive degree, so the degree of \(\sigma(B)\) is \(a+2b\) and that of \(\sigma(C)\) is \(2b\). For the normalized chart (9), the term \(\sigma(BC)\) has degree \(a+4b\), strictly larger than the degrees of the other terms. Therefore
+\[
+ \deg_{\mathcal A}\sigma(p)=a+4b,
+ \qquad
+ \deg_{\mathcal A}\sigma(p)=5\ \Longleftrightarrow\ a=b=1.
+\]
+
+The [rank-one trace theorem](RANK_ONE_TRACE_AUTOMORPHISM_INVARIANCE_ALL_IMAGE_PAIRS.md#4-all-polynomial-automorphisms-preserve-the-trace) gives \(\Lambda(\sigma(p)^m)=\Lambda(p^m)\) for every order, with the reverse equality also following from \(\sigma^{-1}\). Thus at least one moment among orders one through five is nonzero in every image of the chart. The least balanced homogeneous lift has bidegree \((a+4b,a+4b)\) and is \(R\)-primitive by the [least-lift correspondence](RANK_ONE_TRACE_AUTOMORPHISM_INVARIANCE_ALL_IMAGE_PAIRS.md#5-primitive-original-lift-and-full-ring-power-descent-in-every-number-of-pairs). The original contraction at each order differs from the sphere moment by the nonzero factorial from Section 3. Hence every such original lift also has a nonzero contraction by order five. In balanced degree five this excludes the part of the orbit family with \(a=b=1\).
+
+
+
+The [coordinate degree classification](HOPF_COORDINATE_DEGREES_AND_FULL_HYPERBOLIC_SPECTRA.md) gives
+\[
+ (\deg\sigma(x),\deg\sigma(y),\deg\sigma(t))=
+ (r,(2q-1)r,qr)\quad\text{or}\quad ((2q-1)r,r,qr)
+\]
+for positive odd \(r\) and integers \(q\ge1\), with every triple realized over \(\mathbb Q\). Substituting in \(a+4b\) gives the exact attainable degrees \(r(4q+1)\) and \(r(6q-1)\) for every fixed phase of the normalized chart. The same spectrum holds for the least balanced lifts. A prime in the spectrum has \(r=1\), so the prime degrees are exactly primes at least five that do not lie in \(7\bmod 12\). Every odd composite with a prime factor in the spectrum belongs to the spectrum by choosing that factor as \(4q+1\) or \(6q-1\). Otherwise all prime factors are \(3\bmod 4\), including a possible factor \(3\), so the product of two prime factors, counted with multiplicity, is \(1\bmod 4\) and at least nine. This also supplies a divisor of the required form. Thus every odd composite is attained and every attained degree is odd.
+
+### The remaining balanced degree
+
+The original [two-pair degree boundary](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) excludes Image failures through balanced degree three. The [joint Hopf construction](PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md#4-every-balanced-degree-at-least-six) gives \(R\)-primitive absolute nonpowers in degree four and every degree at least six, with the same linear marker \(Z\). Degree five is therefore the only remaining existence question. In that degree, contraction normalization, least homogenization, and the equivalence of original and quadric mixed safety give the two directions of the reduction. Restriction sends any \(R\)-primitive balanced quintic failure to a phase of least quadric degree five with a regular fixed bad marker. Conversely, homogenize such a quadric phase to degree five and a fixed bad marker to its own least balanced degree. The normalization factors are nonzero at every power, so the resulting \(R\)-primitive phase has the required original Image failure.
+
+A separate exclusion applies to the [regular three-height quintic box](THREE_HEIGHT_QUINTIC_IMAGE_SAFETY.md). For \(p=t(C(x)+t^2D(x)+t^4E(x))/x\), with degrees at most \(5,3,1\) and \(C(0)+D(0)+E(0)=0\), the twelve even moments \(2,4,\ldots,18,546,630,650\) decide purity. Every pure phase in this box is safe. The order bound for an ordinary initial prefix is therefore \(650\), while the retained least-degree-five phase with its first nineteen moments zero and its twentieth nonzero rules out any uniform ordinary prefix of length below \(20\). The thresholds concern this three-height box. Trace invariance and the inverse automorphism transport the twelve moment tests and, for a pure phase, eventual mixed vanishing against every regular marker to every polynomial automorphism image. Homogenization and marker balancing give the same conclusion for arbitrary original polynomial markers on its least balanced lift. In particular any images of least degree five give no primitive quintic Image failure.

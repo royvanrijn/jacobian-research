@@ -2301,6 +2301,429 @@ bound. But the synchronized residual inequalities force
 \(s_*=4\) requires \(W\le1/3\). Therefore (RP3) supplies
 a strict additional restriction in this sector.
 
+## A trimmed packing bound using mixed additive moments
+
+At the minimum nonatomic endpoint, set \(c=1/6\) and
+\(s_*=\max_T\sup\operatorname{supp}\nu_{T,\mathrm{na}}\).
+Choose arbitrary prescribed whole-coordinate blocks on the
+three letters (including empty blocks), of total normalized
+root cost \(p<c\) and total numerical weight \(w\). Then
+\[
+ w+s_*(c-p)\le1.
+ \tag{MP1}
+\]
+In particular the three distinguished blocks can all be atomic.
+The weighted contribution \(s_*(c-p)\) is available from
+nonatomic blocks in repeated copies of just one letter.
+
+### Rich mixed additive relations
+
+Write \(n=X^L\). Take the complete-label graph with edge
+exponent \(2c-\eta\) and complete part sizes at most
+\(n^{c+\delta}\), where \(\eta,\delta\) can be arbitrarily
+small at the exact endpoint. Let \(S_A,S_B,S_C\) be
+the exponential sums of the three complete vertex sets.
+The graph's additive triples give
+\[
+ n^{2c-\eta+o(1)}
+ \le \left|\int_0^1 S_A(\theta)S_B(\theta)
+                    \overline{S_C(\theta)}\,d\theta\right|,
+\]
+with conjugations changed for a different signed orientation.
+The integral may also count other triples in the part sets.
+On the subset where some \(|S_i|<n^{c-\lambda}\), its
+absolute contribution is at most
+\(3n^{2c-\lambda+\delta+o(1)}\), by Cauchy--Schwarz
+and the \(L^2\) norms of the other two sums. Fix
+\(\lambda>\eta+\delta\). Thus the common large spectrum has
+measure at least \(n^{-c-\eta-3\delta+o(1)}\), by the
+trivial joint amplitude upper bound.
+
+For any fixed nonnegative even counts \(m_i\), and
+\(m=m_A+m_B+m_C\), this gives at least
+\[
+ n^{(m-1)c-m\lambda-\eta-3\delta+o(1)}
+\]
+ordered tuples in the balanced mixed additive relation with
+\(m_i/2\) plus and \(m_i/2\) minus slots from part \(i\).
+Indeed its count is \(\int\prod_i |S_i|^{m_i}\).
+
+### One distinguished lock per letter
+
+If (MP1) fails, choose \(s<s_*\) and \(0<z<c-p\) with
+\(w+sz>1\). A compact positive continuity band \([s,S]\)
+above this lower cutoff has positive nonatomic mass on
+some letter. With sufficiently many copies of that letter,
+select outside root positions of total mass \(z+o(1)\)
+in this band. The normalized outside coordinate cap can
+be taken arbitrarily small, so there is arbitrarily small
+rounding loss. On at most one further slot per letter
+put its prescribed block. Add empty slots so that the
+per-letter counts are even, \(m\ge4\), and each letter
+supplying outside locks has a slot of a different letter.
+
+Keep the prime coloring by letter, at subpower cost by
+the fixed-truncation divisor bound. Fix one admissible
+original representation of each complete value, retaining
+the outside label that determines it. For an outside slot
+\(h\) call its record bad if its radical shares root mass
+at least \(\xi\) with the union of the primes of the other
+locks on its letter. Fix all complete values except the
+one in \(h\) and one slot of a different letter. The union
+is then fixed and has polynomial height. The
+[divisor allocation estimate](#counting-shared-prime-divisors)
+gives at most \(n^{c+\delta-\xi+o(1)}\) outside labels
+for \(h\). The remaining slot is determined by the
+additive relation. The total bad exponent, for this or
+any other outside slot, is at most
+\[
+ (m-1)(c+\delta)-\xi .
+\]
+This treats all possible overlaps of each outside slot in
+one count. The distinguished blocks of different letters
+are already coprime by the coloring.
+
+For good tuples retain the distinguished block on each
+letter and strip from every outside block the primes
+that occur in any other block. Since the outside slots
+were good and their degrees are at most \(S\), the full
+numerical weight lost is at most \(S k\xi+o(1)\), where
+\(k\) is the number of outside slots. The surviving
+moduli are pairwise coprime and their product exceeds
+twice the height bound if \(w+sz-Sk\xi>1\).
+With the original records fixed, the stripping is
+deterministic. The residue count (MS17) and Hölder over
+the original record dictionaries give a good-tuple exponent
+at most
+\[
+ \frac{m(m-2)}{m-1}(c+\delta)+\frac{p+z}{m-1}.
+\]
+At the exact endpoint first fix the positive numerical
+and cost margins and then let the graph losses decrease.
+Both exponents fall strictly below the mixed moment
+lower bound, which proves (MP1).
+
+### Consequences for degree profiles
+
+For any finite collection of atomic windows of combined
+mass below \(c\), (MP1) bounds the selected excess
+weight above \(s_*\) by \(1-cs_*\). When the combined atomic mass
+above \(s_*\) is strictly below \(c\), increasing finite
+selections gives the bound for the whole upper tail.
+In particular, if \(s_*=6\), an atom at \(r>6\)
+cannot occur. Its mass is at most \(1/r<c\) by the
+numerical moment, so selecting it would violate (MP1).
+Hence all three full degree measures are supported in
+\([0,6]\) in this case.
+
+The distinguished locks may also be chosen as divisors
+depending on the edge. With a fixed positive violation
+margin, bin the costs and weights of the witnessed records
+on each letter before randomly assigning one admissible
+record to each complete value. The fixed-truncation
+divisor bound preserves the edge exponent, as in (MS15).
+Each record then satisfies the same binned bounds even
+when its mixed tuple uses a value from a different
+edge. Reserve a fixed small cost slack below \(c-p\) for
+the diffuse locks and apply the preceding argument.
+In particular an adaptive sector with
+\(p\le c-\epsilon\) and \(w+s(c-p)>1+\epsilon\) has a
+fixed exponent deficit when \([s,S]\) supplies a fixed
+positive nonatomic mass and the graph losses are small.
+
+### A quantitative saving in a three-letter sector
+
+Consider balanced boxes, with \(d=2c-\varepsilon\), and
+assume \(|c_T-c|\le1/50000000\) on every letter. Suppose
+each letter has a prescribed block of root cost at most
+\(41/1000\) and numerical weight at least \(289/1000\).
+On at least one letter require nonatomic mass above
+\(9/10000\) in \([399/100,4]\). Then
+\[
+ d<\frac13-\frac1{50000000}.
+ \tag{MP2}
+\]
+This sector contains the symmetric high-atom profile
+used to separate (RP3) from the independent tests.
+
+Indeed let \(\rho=1/50000000\) and suppose
+\(0\le\varepsilon\le\rho\). The
+[complete-label reduction below \(1/3\)](#three-letter-divisor-packing)
+gives deficit \(\eta\le35\varepsilon+68\rho\le103\rho\),
+with part caps \(c+\rho\), all up to arbitrarily small
+additional losses. Use 43 outside slots on the supplying
+letter of combined root cost \(z=383/10000\).
+Each slot needs less than \(9/10000\). Add its distinguished
+slot and take two slots on each other letter, one with its
+distinguished block. This makes \(m=48\), with total
+record cost at most \(p+z=1613/10000\). Set
+\(\xi=11/100000\). The stripped good-weight lower bound is
+\[
+ 3\frac{289}{1000}+\frac{399}{100}\frac{383}{10000}
+ -4\cdot43\frac{11}{100000}
+ =1.000897>1 .
+\]
+The mixed moment lower exponent approaches
+\((m-1)c-(m+1)\eta-(m+3)\rho\) as the auxiliary
+Fourier cutoff loss tends to zero. For the bad tuples,
+\(\xi>(m+1)(\eta+2\rho)\) with room. For the good tuples
+the gap available from the record count is
+\[
+ \frac{c-1613/10000}{47}>
+ 49(103\rho)+\left(51+\frac{48\cdot46}{47}\right)\rho .
+\]
+Both branches contradict the mixed moment lower bound.
+All the comparisons are strict under arbitrarily small
+truncation and box losses, proving (MP2).
+
+## Converting high-degree blocks to common factors with diffuse locks
+
+At the minimum nonatomic endpoint let \(s_*\) denote
+the largest nonatomic support endpoint, and put \(c=1/6\).
+Suppose a prescribed block on one letter has normalized
+root cost \(\beta<c\), with degrees in a compact band
+\([s,S]\) above \(s_*\). Allow previously assigned common
+factors, from disjoint blocks above \(s_*\), whose
+synchronized product has numerical weight at least \(W_0\)
+on an arbitrarily near-full graph. The new block can be
+made common up to arbitrarily small root mass if
+\[
+ W_0+cs-(s-s_*)\beta>1 .
+ \tag{MC1}
+\]
+All previously assigned common factors persist.
+In particular the numerical weight of the new common
+factor can approach the full numerical weight of the block.
+
+### Extraction using different kinds of locks
+
+Use the residue-class selection for (RP3) to synchronize
+the assigned factors. Write their product as \(Q\), its
+weight as \(W\), and each complete term as \(r_i+Qy\)
+with \(r_i\) fixed on its letter. On each part the \(y\)'s
+lie in an interval of length at most \(X/Q\) up to the
+height factor of the original box. The mixed moment
+argument for (MP1) goes through for the reduced sets.
+Their three-term equation has a fixed additive offset,
+which adds a complex exponential of modulus one to the
+triple Fourier integrand. Balanced mixed relations have
+the same counts in the \(y\)'s as in the complete values.
+A lock coprime to \(Q\) prescribes a residue of \(y\),
+and the counting proof of (MS17) works with each
+diagonal entry of the residue array prescribed.
+
+Fix a desired positive residual root tolerance \(b_0\).
+Suppose the current residual part of the new block has
+normalized root cost \(b\ge b_0\), after dividing out all
+assigned prime powers. Its cost agrees with the residual
+dyadic root cap up to vanishing error. Choose a fixed
+\(u<s_*\) close to \(s_*\), with a bounded band of positive
+nonatomic mass above \(u\). Also choose a fixed \(\kappa>0\)
+sufficiently small that \(c-\kappa>\beta\) and
+\[
+ W_0+s(c-\kappa)-(s-u)\beta>1 .
+\]
+Take the largest integer \(k\ge1\) with \(kb<c-\kappa\)
+and put \(z=c-\kappa-kb\). On \(k\) slots of the block's
+letter lock its residual part. On outside slots lock
+mass \(z\) from the supplying diffuse band. Add empty
+slots to make every count even and to leave a slot on
+a different letter for the overlap argument. The total
+number of slots is bounded independently of \(b\ge b_0\).
+All these locks are coprime to \(Q\). On their own letter
+they are disjoint from the assigned positions or primes,
+and across letters the prime coloring and primitivity
+give coprimality. Their full total weight plus \(W\)
+is at least
+\[
+ W+ksb+uz
+ =W+u(c-\kappa)+(s-u)kb
+ \ge W_0+s(c-\kappa)-(s-u)\beta>1 ,
+\]
+up to arbitrarily small dyadic losses. Here
+\(kb\ge c-\kappa-b\), regardless of the parity of \(k\).
+The dictionary cost is at most \(c-\kappa\) up to
+rounding from the outside positions.
+
+Count and strip the outside overlaps by the union
+argument for (MP1). A uniform small overlap threshold
+makes their numerical loss less than one third of the
+weight margin. For the other \(k\) slots use a fixed
+threshold \(\xi>0\) on the numerical weight of each
+full pairwise gcd. If all such weights are below \(\xi\),
+retain only the largest power of each shared prime.
+The full product becomes the least common multiple.
+The loss in numerical weight is at most
+\(\binom{k}{2}\xi\). Prime by prime this follows because
+every occurrence beyond the largest is counted in at
+least one of the pairwise minima of the exponents.
+Choose \(\xi\) making this loss less than another third
+of the weight margin, uniformly for the finitely many
+possible \(k\). The product of the resulting coprime
+moduli exceeds the reduced range, with a fixed strict
+height margin.
+
+The residue count (MS17), with the strictly smaller
+record cost than \(c\), bounds these tuples below the
+mixed moment exponent. The outside-overlap branch
+also has a strict deficit by (MP1). Consequently the
+mixed moment count persists on tuples containing a
+pair of residual-block slots with full gcd of weight at
+least \(\xi\). If \(k=1\), there is no such pair and the
+assumed near-full graph is already impossible. For
+\(k\ge2\), fix an offending slot pair. For fixed values
+of this pair all but one of the other entries determine
+the last, so there are \(n^{2c-o(1)}\) offending value
+pairs as the graph losses tend to zero. Fix a pivot
+with \(n^{c-o(1)}\) such neighbours. Pigeonhole the full
+gcd divisor of its residual block and the neighbour's
+degree assignments for the primes of that divisor.
+There are only subpower-many such records at fixed
+truncation. On the neighbour set keep the full original
+powers of those primes, which adds a new common factor
+of numerical weight at least \(\xi\).
+
+As in (RP1), first prune the target vertices below degree
+\(n^{c-\lambda}\), for \(\lambda\) slightly exceeding the
+current graph deficit plus the part-cap error. Thus the
+selected neighbours retain a near-full graph. The mixed
+moment loss, pair-completion count, degree pruning and
+residue synchronization multiply graph deficits by
+bounded constants for the bounded slot counts. Each
+iteration increases common weight by at least \(\xi\).
+There are therefore finitely many iterations, bounded
+by \(1+\lceil 2/\xi\rceil\), since the assigned factors
+divide the complete values. Choose the initial losses
+small enough for this many iterations. Eventually
+\(b<b_0\), where the missing numerical weight is at
+most \(S b_0+o(1)\), proving (MC1).
+
+### Support and further packing after conversion
+
+The same synchronized affine coordinates in the proof of
+(MP1) give
+\[
+ W+w+s_*(c-p)\le1
+ \tag{MC2}
+\]
+for additional prescribed blocks of cost \(p<c\) and
+weight \(w\), disjoint from the common primes. The
+numerical product is now tested against \(X/Q\) and
+the dictionary cost remains \(p\). The outside supplying
+band can be taken disjoint from the common positions
+because their degrees are above \(s_*\).
+Taking \(p=w=0\) recovers \(W+cs_*\le1\).
+
+In particular every atom at \(r>12-s_*\) can be made
+common up to arbitrary tolerance. Its mass \(\beta\)
+is at most \(1/r<c\), and (MP1) gives
+\((r-s_*)\beta\le1-cs_*\). Therefore
+\(cr-(r-s_*)\beta\ge c(r+s_*)-1>1\).
+Use a sufficiently small continuity window about \(r\)
+in (MC1). Iterate over finite lists of such atoms and
+take increasing lists in (MC2), to get
+\[
+ cs_*+\sum_T\int_{(12-s_*,\infty)}r\,d\nu_{T,\mathrm{at}}(r)\le1 .
+ \tag{MC3}
+\]
+The cutoff can be lowered as common weight increases.
+In a graph already synchronized at weight \(W\), the
+same argument with (MC2) converts any further atom
+at \(r>s_*\) of mass below \(c\) if
+\(r+s_*>12(1-W)\). The separate criterion (MC1) also
+allows conversion below this cutoff when that atom has
+sufficiently small mass.
+
+For a formal example, give \(T\) an atom of mass \(9/200\)
+at \(8\), an atom of mass \(73/600\) at \(84/73\), and
+nonatomic mass \(c\) uniform on \([2,4]\). Give each
+opposite letter an atom of mass \(c\) at three and
+nonatomic mass \(c\) uniform on \([2,4]\). Every first
+moment is one. Here \(s_*=4\), and the largest possible
+left side of ordinary mixed packing is at most
+\[
+ 4c+\frac9{200}(8-4)=\frac{127}{150}<1 .
+\]
+The only even \(m\) with \(m(9/200)<c\) is \(m=2\).
+Its residual repeated weight \(2(9/25)\) lies below one,
+so the original repeated-lock test supplies no common
+factor. But (MC1) applies because
+\(8c-(8-4)(9/200)=173/150>1\).
+Its common weight \(9/25\) violates (MC2) at zero
+additional lock cost, since \(9/25+4c=77/75>1\).
+
+### An iterated inequality for the full atomic spectrum
+
+The conversion and packing inequalities can be applied
+without specifying a finite list in advance. Set
+\(D_0=1-cs_*\). For an atom at \(r>s_*\) of mass
+\(0<\beta_{T,r}<c\), write
+\(u_{T,r}=(r-s_*)(c-\beta_{T,r})\). Define
+\[
+ D_{j+1}
+ =D_0-\sum_{\substack{T,\ r>s_*\\
+              0<\beta_{T,r}<c,\ u_{T,r}>D_j}}
+                r\beta_{T,r}.
+ \tag{MC4}
+\]
+Every iterate must be nonnegative. In particular the
+iteration must converge from above to a nonnegative
+fixed point \(D\).
+
+To justify this even for infinitely many atoms, the
+inductive assertion is that every finite subset selected
+at a given stage can be made common up to arbitrary
+tolerance. For any finite subset at the next stage, the
+inequalities \(u_{T,r}>D_j\) have a positive margin.
+Take a sufficiently large finite subset of the preceding
+stage so that its common numerical weight approximates
+\(D_0-D_j\) within that margin. The previous induction
+applies to this finite subset. Then (MC1) converts the
+remaining desired atoms one by one and the previous
+weight can only increase. All windows in this construction
+can be disjoint. Apply (MC2) to finite selections and
+increase them to obtain \(D_{j+1}\ge0\).
+The right-hand side of (MC4) is nondecreasing in \(D_j\),
+and \(D_1\le D_0\), so the sequence decreases. Its selected
+sets increase to the set from the strict inequality
+\(u_{T,r}>D\), giving the fixed point by monotone convergence.
+
+For every atom at \(r>6\) left outside these selected
+sets, its root mass satisfies
+\[
+ c-\frac{D}{r-s_*}
+ \ \le\ \beta_{T,r}\ \le\ \frac{D}{r-s_*}.
+ \tag{MC5}
+\]
+The lower bound is the selection rule. For the upper
+bound use (MC2) after arbitrarily close finite
+approximations to the selected common weight, with the
+remaining atom as the extra lock. The condition
+\(\beta_{T,r}<c\) follows from its moment and \(r>6\).
+In particular for \(\sigma>0\) each remaining atom
+at degree at least \(6+\sigma\) has mass at least
+\(c\sigma/(6-s_*+\sigma)\), since \(D\le c(6-s_*)\).
+There can be only finitely many such remaining scales
+on each letter, uniformly in the profile once
+\(\sigma\) is fixed.
+
+The iteration can exclude a profile after its first
+selection passes the synchronized packing test. On
+each letter take atoms of masses \(1/100,1/50,41/300\)
+at \(12,4,115/41\), respectively, and diffuse mass \(c\)
+uniform on \([2,3]\). The first moment is one and
+\(s_*=3\). At \(D_0=1/2\) the degree-twelve atoms are
+selected, with total weight \(9/25\). Even adding all
+degree-four atoms as extra locks in (MC2) gives only
+\(9/25+1/2+3/50=23/25\).
+Now \(D_1=7/50\) and the degree-four atoms have
+\(u_{T,4}=11/75>7/50\). Their added weight is \(6/25\),
+so \(D_2=-1/10\). At the first common weight \(9/25\)
+the older unsupplemented repeat test cannot begin
+converting those atoms. The largest admissible even
+number of degree-four locks is eight, and
+\(9/25+8(2/25)=1\).
+
 ## Quantitative trimming near the minimum nonatomic total
 
 Consider any balanced limiting endpoint with \(d=1/3\), total root mass \(1/3\) on each letter, and
