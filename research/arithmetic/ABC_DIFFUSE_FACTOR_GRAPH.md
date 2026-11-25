@@ -4800,6 +4800,51 @@ coprime roots. It is comparable to \(N^6\),
 whereas \(C\) is comparable to \(N^3\). Thus its radical has height exponent two. The small-budget
 regime is still open for matchings of this type.
 
+### Complete-letter curve covers of the cubic matching
+
+The cubic family above has exact additive and multiplicative
+records and still requires \(N^{1-o(1)}\) bounded-degree curves
+to cover any of its complete-letter projections.
+Indeed, the Jacobian of the complete map \((x,y)\to(A,B)\)
+at \((1,1)\) is
+\[
+ \det\begin{pmatrix}11&4\\5&16\end{pmatrix}=156.
+\]
+Thus the map is dominant over characteristic zero.
+The map to either other complete pair differs from it
+by an invertible linear substitution. Any nonzero
+polynomial in such a pair of total degree at most \(D\)
+therefore pulls back to a nonzero polynomial of total
+degree at most \(3D\). It has at most \(O(DN)\) zeros in
+the parameter box by the grid polynomial zero bound.
+In detail, write it in \(y\), exclude the at most \(3D\)
+values of \(x\) at which its leading coefficient vanishes,
+and then bound the number of \(y\)'s at a remaining \(x\)
+by the degree in \(y\). This bound applies to arbitrary
+coefficients of the proposed complete-letter curve.
+It gives the claimed cover-size lower bound at fixed \(D\).
+It even gives \(M/O(DN)\) for a budget-dependent \(D\).
+
+There is a corresponding rank formulation. Let
+\(r=\binom{D+2}{2}\), and sample \(r\) matching edges
+independently and uniformly. The evaluation matrix of
+the degree-at-most-\(D\) complete-pair monomials has full
+rank except with probability \(O_D(N/M)=N^{-1+o(1)}\).
+After each of the first \(r-1\) evaluations, choose
+a nonzero polynomial in the current evaluation kernel.
+Failure of the next evaluation to increase rank implies
+that this polynomial vanishes at the next point. Its
+conditional probability is at most \(O(DN)/M\).
+Sum these estimates through the \(r\)-th evaluation.
+
+The same cubic family lies in a single rational projective
+image given by its three homogeneous cubic forms. This
+distinguishes a projective parametrization from an affine
+complete-letter curve cover. At small budgets the diffuse
+projective case is covered by a different residue argument.
+[Projective parametrizations](ABC_RATIONAL_PROJECTIVE_CARRIERS.md)
+
+
 ## Additive energy of wholly diffuse complete-value dictionaries
 
 Let \(P,Q\) be two complete-value dictionaries extracted
@@ -4980,3 +5025,93 @@ uniform version through the [pooled degree inequality](ABC_WIDE_COFACTOR_CONGRUE
 That version retains both escaped moments and can also use
 prime subproducts inside large atomic coordinates. Here the
 one-tail selection permits arbitrary common divisors.
+
+## Primitive two-divisor fibres attaining the unsaved count
+
+At budgets tending to \(3/2\), there are primitive triples
+with balanced radical masses and two fixed full divisors
+whose fibre of distinct targets attains the scale
+\(n^{1/3-t-o(1)}\). Here \(t\) is the normalized root cost
+of that divisor record.
+For \(x\in[3N,4N]\), \(y\in[N,2N]\), use
+\[
+ U=x^3(x+2y),\qquad V=y^3(2x+y),\qquad
+ T=(x+y)^3(x-y).
+\]
+All are positive of size comparable to \(N^4\), and
+\(U=V+T\) by expansion. Fix \(2/3<\alpha<1\).
+Take primes \(p,q\) in disjoint fixed-multiple intervals
+at scale \(N^\alpha\), and consider \(x=p u,\ y=q v\)
+in the indicated boxes. The moduli \(p,q\) are
+larger than the cofactor ranges \(O(N^{1-\alpha})\),
+so \(p\mid x\) and \(q\mid y\) hold to valuation one,
+while \(p\nmid y\) and \(q\nmid x\).
+
+Require \(x\equiv1\), \(y\equiv12\bmod72\) and
+\(\gcd(u,v)=1\). Uniformly for each such \(p,q\)
+there are \(\gg N^{2(1-\alpha)}\) pairs. Indeed the
+two fixed congruence classes of \(u,v\bmod72\)
+do not allow simultaneous divisibility by two or
+three. At each other prime the joint forbidden
+density is \(1/\ell^2\) for \(\ell\) that prime.
+The elementary finite-prime sieve and the bound
+\(O(H^2/P+H\log H+H)\) for common primes above \(P\)
+in ranges \(O(H)\), \(H=N^{1-\alpha}\), prove the
+claim uniformly. For every prime \(\ell\ge5\),
+the six root linear forms
+\[
+ x,\quad x+2y,\quad y,\quad 2x+y,\quad x+y,\quad x-y
+\]
+have pairwise independent coefficient vectors over
+\(\mathbb F_\ell\). Any common prime of two forms
+must then divide both \(x,y\), which is excluded
+by the parameter choices. At two, only the letter
+\(V\) is divisible, with fixed valuation seven.
+At three, only \(V\) is divisible. Thus these are
+primitive triples, and \(F=p^3\mid U,\ G=q^3\mid V\)
+are full prime-power divisors of the indicated terms.
+
+One may secure matching lower radical sizes as well
+as the immediate upper caps. Allow \(p,q\) to vary
+over their respective prime intervals. The prime
+number theorem gives \(\gg N^\alpha/\log N\) choices
+in each interval. Each parameter pair \(x,y\)
+occurs at most once in this count, since \(2\alpha>1\)
+and either integer cannot contain two different
+prime factors from its respective interval.
+Thus there are \(\gg N^2/(\log N)^2\) distinct
+qualified pairs. For any fixed \(\eta>0\), the
+number of integers \(z\ll N\) with
+\(\operatorname{rad}(z)\le N^{1-\eta}\) is at most
+\(N^{1-\eta+o(1)}\) by the fixed-radical support
+bound. Each possible integer value of any of the
+six nonzero forms has \(O(N)\) parameter preimages.
+Discarding parameters where any of their radicals
+is too small therefore costs \(N^{2-\eta+o(1)}\),
+a lower order term. Taking \(\eta\) slowly to zero
+makes each linear-factor radical \(N^{1-o(1)}\) on the
+retained pairs. Distinct root factors are coprime
+apart from the fixed small-prime contributions on \(V\),
+so all three complete radicals are \(N^{2-o(1)}\).
+
+Pigeonhole \(p,q\) after this discard to obtain
+\(N^{2(1-\alpha)-o(1)}\) parameter pairs for one
+fixed record. Since \(FG\asymp N^{6\alpha}\gg N^4\),
+each target in this fibre determines both free
+complete values by CRT. A fixed free value \(U\)
+has only \(N^{o(1)}\) parameter preimages, since
+\(x^3\mid U\) and fixing \(x\) determines \(y\).
+It follows that the fibre has
+\(N^{2(1-\alpha)-o(1)}\) distinct targets.
+
+Normalize by \(n=N^6\), so each of the three radical
+masses is \(1/3+o(1)\) and the record root cost is
+\(t=\alpha/3+o(1)\). The fibre has
+\(n^{1/3-t-o(1)}\) distinct targets, meeting the
+unsaved scale with the radical cap imposed on the
+target itself. Its numerical heights are \(\asymp N^4\),
+so this construction has budget tending to \(3/2\).
+The two principal degrees per letter occur at scaled
+positions \(3/2\) and \(9/2\). The construction shows
+that the two full divisors and even the three radical caps
+can meet the unsaved scale with low valuation orders.

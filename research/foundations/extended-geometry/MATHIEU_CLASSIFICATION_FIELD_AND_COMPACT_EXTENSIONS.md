@@ -2799,7 +2799,7 @@ Finally write \(\eta=1/E\), so \(t=\eta G(W)^N/(1-\eta G(W)^N)\). Multiplying th
 \[
           1-s=1-(1-v^2)(1-\eta v^{2N})^2
 \]
-is \(v^2\) times an analytic unit near that point. If \(P\) has no endpoint pole, this numerator is divisible by \(G(W)^{Nb}\) in the local power series. Indeed the coefficients below that order in the endpoint variable vanish for generic \(\eta\), hence identically. Let \(e\) be the least index with \(A_e\ne0\). The coefficient of \(\eta^e\) is \(G(W)^{Ne}A_e(p,r,J)|_{T=1}\), with \(q\) in place of \(r\) on the octahedral chart. If \(e<b\), its endpoint order is at most \(Ne+(b-e)/4<Nb\) in \(2-W\), or \(2Ne+5(b-e)/6<2Nb\) in \(v\), a contradiction. Thus \(e=b\), and the monomial bounds leave a constant. The zero phase also satisfies the conclusion.
+is \(v^2\) times an analytic unit near that point. If \(P\) has no endpoint pole, this numerator is divisible by \(G(W)^{Nb}\) in the local power series. Indeed the coefficients below that order in the endpoint variable vanish for generic \(\eta\), hence identically. Let \(e\) be the least index with \(A_e\ne0\). The coefficient of \(\eta^e\) is \(G(W)^{Ne}A_e(p,r,J)|_{T=1}\), with \(q\) in place of \(r\) on the octahedral chart. If \(e<b\), its endpoint order is at most \(Ne+(b-e)/4<Nb\) in \(2-W\), or \(2Ne+5(b-e)/6<2Nb\) in \(v\), a contradiction. Thus \(e=b\), and the monomial bounds leave a constant. The zero phase also satisfies the conclusion. The same angular theorem holds over every real closed field. The rational second-moment formula and its regularity at the three divisors descend, together with the coefficients of the phase, to a finitely generated ordered field. Embed that field in the real numbers. The nonconstancy of a nonconstant phase and the divisibility conditions defining absence of poles persist under this embedding.
 
 
 ## Three Laurent terms on the full compact quotient
@@ -2870,3 +2870,296 @@ Indeed the monomials are distinct, the sum is nonempty, and \(b_i m\le p-1\) ens
 To pass from algebraic independence to a proper algebraic subset, parametrize the phases together with a leading scalar and distinct labeled roots in the affine chart. The leading-form equality is polynomial in these parameters, and the equations at all \(m\ge m_0\) cut out a closed subset of this finite-type parameter space over \(\mathbb Q\), by Noetherianity. If its projection to the configurations were dense, some irreducible component would dominate the configuration space and at its generic point the roots would be algebraically independent. This is excluded by the preceding argument. The closure of the projection is consequently proper. The construction is invariant under projective changes of coordinates on the conic, which act through automorphisms of the split quadric preserving the trace. For \(s\ge3\), fix the first three roots at distinct points. A dense locus in the normalized configurations would become dense in all labeled configurations after applying projective transformations, contradicting the conclusion just proved.
 
 In particular this gives a proper exceptional locus in every multiplicity stratum relevant to degree five on an anisotropic ternary quadric. The conclusion is uniform in the lower coefficients, and applies for every fixed threshold of eventual vanishing. It leaves special configurations, including the problem of proving the necessary coefficient nonvanishing for every allowable algebraic configuration.
+
+
+## Generic leading divisors on four-dimensional norm quadrics
+
+**Theorem (Generic leading divisors exclude eventual purity on four-dimensional quadrics).**
+
+Fix \(d\ge2\) and a threshold \(m_0\ge1\). On the split quadric at infinity, fix a factor pattern for the leading biform of bidegree \((d,d)\). Prescribe the bidegrees \((a_i,c_i)\) and multiplicities \(b_i>0\) of its distinct irreducible geometric factors. If all \(b_i\le d/2\), then leading forms of phases with \(\Lambda(P^m)=0\) for all \(m\ge m_0\) lie in a proper algebraic subset of that stratum, independently of the lower terms. If any \(b_i>d/2\), the first prime test (C2) vanishes identically for sufficiently large primes. The conclusions apply after splitting the quadric at infinity, including for the norm-one quadric of a quaternion division algebra and the negative quaternion norm torsor.
+
+In degree \(d\), the computation of (C2) applies at \(p\equiv1\bmod d\) with \(m=2(p-1)/d\). The factorial denominators isolate the top degree \(2(p-1)\) and the reduction of \(p\Lambda(P^m)\) is
+\[
+             [(a_0a_1b_0b_1)^{p-1}]\prod_i F_i^{b_i m},
+\]
+where \(F_i\) are the biform factors and \(a_0,a_1,b_0,b_1\) the two pairs of homogeneous coordinates. If \(b_i>d/2\), then \(b_i m\ge p\) at sufficiently large primes. In characteristic \(p\) every monomial of \(F_i^p\) has at least one exponent at least \(p\), so it contributes nothing.
+
+Otherwise the central coefficient is a nonzero polynomial in the factor coefficients modulo every sufficiently large \(p\equiv1\bmod d\). To see this, specialize \(F_i\) to a product of \(a_i\) linear forms in the first pair of coordinates and \(c_i\) in the second. Use separate independent root parameters for all these forms. This factors the central coefficient into two binary central coefficients. In each one, every root exponent \(b_i m\) is at most \(p-1\) and the total exponent is \(2(p-1)\). The binomial expansion in the independent roots gives a nonzero polynomial by the same monomial argument as in (R5). This specialization may leave the irreducible-factor stratum, but nonvanishing as a polynomial on the full coefficient space ensures nonvanishing on its open locus of distinct irreducible factors. If eventual purity dominated that stratum, the incidence space of phases and labeled factors would dominate the corresponding open space of factor coefficients, since factor scaling can be absorbed in a leading scalar. Now apply the same constructible image and reduction argument as for ternary configurations, with this central coefficient in place of the binary one. It gives a contradiction at every sufficiently large prime of the indicated progression. This proves the proper-locus statement.
+
+On an anisotropic four-dimensional quadric, a factor of multiplicity greater than \(d/2\) can only be a single \((1,1)\) conic defined over the ground field. The bidegree bounds first give \((a_i,c_i)\in\{(1,0),(0,1),(1,1)\}\). A high-multiplicity ruling line is either unique and defined over the field or is accompanied by a conjugate ruling line in the opposite ruling. In the second case their unique intersection is defined over the field. Both possibilities give a rational point of the quadric at infinity, which here is impossible. A high-multiplicity \((1,1)\) factor is unique and hence descends. This identifies the leading factors for which other tests are necessary, even generically in their factor strata.
+
+
+## The left-circle fibres on the real continuation of the angular charts
+
+**Theorem (A parity formula for the continued left-circle square).**
+
+Let \(\Gamma\le\mathrm{SO}(3,\mathbb R)\) be finite, \(X=\mathrm{SO}(3)/\Gamma\), and use the left circle \(L\) fixing a unit vector \(e\). Its affine quotient is the angular sphere quotient, by \(g\Gamma\mapsto\Gamma g^{-1}e\). At a real point of the angular quotient whose geometric lift has trivial \(\Gamma\)-stabilizer, the fibre is a torsor for \(L\). Its type is the pointed circle if the angular point has a real sphere lift, and the negative norm circle otherwise. In a compatible Laurent coordinate \(z\) on the complexified fibre, any regular real phase \(P=\sum_k c_k z^k\) satisfies
+\[
+             R_L(P^2)= c_0^2+2\sum_{k>0}\epsilon^k|c_k|^2,\qquad
+   \epsilon=\begin{cases}
+             1 &\text{at a real sphere lift},\\
+             -1 &\text{otherwise},
+             \end{cases}
+\]
+where \(R_L\) is left-circle averaging. The same formula holds with a real split Laurent parameter specialized to any nonzero real value.
+
+The angular quotient follows by first taking the left-circle quotient of \(\mathrm{SO}(3)\) and then the finite right quotient. Choose a geometric sphere lift \(x\) of a real quotient point. There is a unique \(\gamma\in\Gamma\) with \(\bar x=\gamma x\), and \(\gamma^2=1\). When \(\gamma=1\), choose a real rotation \(g\) with \(x=g^{-1}e\). The fibre coordinate from its left orbit has ordinary compact conjugation \(z\mapsto1/\bar z\). Otherwise \(\gamma\) is a half-turn. The real part of \(x\) is on its axis and the imaginary part in the perpendicular plane. Because \(x\cdot x=1\), a real orthogonal change of the source frame lets us take
+\[
+                      x=(i\sinh s,0,\cosh s),\qquad s\in\mathbb R,
+\]
+with \(\gamma\) the half-turn about \(e\), using \(e\) as the third coordinate axis. Choose \(g\) to be a rotation through an imaginary angle about the second coordinate axis with \(g^{-1}e=x\). Then \(\bar g=g^{-1}\), \(\gamma g\gamma^{-1}=g^{-1}\), and \(\bar g\Gamma=\gamma g\Gamma\). Thus on the left orbit of \(g\Gamma\), conjugation is \(z\mapsto-1/\bar z\). The orbit is free as an \(L\)-orbit by the trivial-stabilizer hypothesis. This proves the torsor claim. Reality of \(P\) gives \(c_{-k}=\epsilon^k\overline{c_k}\); extracting the zero weight proves the formula.
+
+On the octahedral chart every generic real continuation to \(S>2\) or \(0<S<1/2\) has the negative fibre, since the height is outside the compact angular range. On the icosahedral mirror chart the same holds for generic continuation to \(w>25\). The coefficients of the angular quotient are real in these continuations by their coordinate formulas, and the lift has trivial stabilizer off the image of the finitely many rotation axes. In particular, any cancellation between opposite signs of the full left-circle square on these escaping fibres must mix even and odd weights for the effective circle of \(\mathrm{SO}(3)\). The reflection quotient models alone have only weight zero and have no such cancellation. On the full quotients this formula identifies exactly where the positivity step of the angular endpoint argument can fail.
+
+
+## The full exceptional quotients in the fixed-interval endpoint construction
+
+Use the coordinate-mirror height \(s=9q/p\) and its oriented circle (H3) for \(2O\), and the fifteen-mirror height \(s=w\) and its signed conditional circle for \(2I\). Both compact laws have \(\sqrt s\) uniform on \([0,1]\). Let \(L\) be the effective left circle, \(R_L\) its Reynolds projection, and \(\mathbb E_s\) the remaining conditional average on the angular quotient. Put
+\[
+ T=1+t,\qquad W=T^2s,\qquad G=1-W,\qquad E=\frac{T}{t}G^N,\quad N\ge1 .
+\]
+For any regular Laurent phase \(P\) on the full quotient set \(C_m(W,E)=\mathbb E_s[R_L(P^m)]\), with \(T=E/(E-G^N)\) and \(s=W/T^2\) substituted after conditional averaging. Each \(C_m\) is rational by the conditional polynomial formulas.
+
+**Theorem (The full exceptional endpoint obstruction).**
+
+Over a real closed field, let \(P\) be a regular Laurent phase on either full compact exceptional quotient with a split scalar factor. Assume each \(C_{2m}\) has no pole at \(E=0\), and \(C_2\) has no pole at \(E=G^N\) and at \(W=1\). Then \(P\) is independent of \(t\). In particular the only pure phase satisfying these conditions is zero. This excludes the fixed-interval construction in which the averaged even moments are polynomials in \(E\) with coefficients regular at the upper height endpoint. Vanishing after the final \(W\)-integration and constant-term extraction does not imply the conditions of the theorem.
+
+We prove the claim over \(\mathbb R\). Descent of the finitely many phase coefficients to an ordered finitely generated field and an embedding into \(\mathbb R\) give the real closed version. All conditional traces and divisor regularity conditions commute with this embedding, including the assumptions at every order.
+
+Filter the complex coordinate algebra of the full quotient by half the matrix degree on \(\mathrm{SL}_2\), which is integral because the binary groups contain \(-1\). The graded algebra is the coordinate algebra of the rank-one matrix cone modulo the binary group. Indeed the leading ideal of \((\det-1)\) is \((\det)\), and passing to finite-group invariants commutes with taking the graded pieces by averaging. A rank-one matrix is \(uv^{\mathsf T}\), and a degree-\(j\) element of left weight \(k\) is of the form
+\[
+           u_+^{j+k}u_-^{j-k}F(v)
+             =(u_+u_-)^j F(v)\,z^k,\qquad z=u_+/u_-,
+\]
+where \(F\) is a right-invariant binary form of degree \(2j\). Here weights are for the effective circle. The coefficient of \(z^k\) belongs to the weight-zero graded algebra. This gives an inclusion of graded rings in the Laurent ring in \(z\) over the angular graded algebra, taking left-circle averaging to scalar constant term. Compact conjugation of matrix entries on the cone sends \(z\) to \(-1/\bar z\). To see the sign, in quaternionic matrix coordinates \(\sigma(g)=\left(\begin{smallmatrix}\bar g_{22}&-\bar g_{21}\\-\bar g_{12}&\bar g_{11}\end{smallmatrix}\right)\), and the two rows of \(g\) have ratio \(z\). The same formula holds on the rank-one cone. On the angular coefficients conjugation remains the real structure of the sphere.
+
+At \(T=0\) the angular graded algebra maps into Laurent polynomials in one circle variable \(y\) over \(\mathbb C(\sqrt W)\) by taking the limit after multiplying degree \(j\) by \(T^j\). In the octahedral case the angular generators \(p,q,J\) have degrees \(4,6,9\). In their leading values the factors of \(W\) are \(W^2,W^3,W^{9/2}\), respectively. The remaining factors, from \(p=A+B\cos\theta,\ q=sp/9,\ J=2p\sqrt{s} B\sin\theta/3\), are
+\[
+           P_\infty=\frac{\cos\theta-1}{24},\qquad
+           Q_\infty=\frac{P_\infty}{9},\qquad
+           J_\infty=\frac{P_\infty\sin\theta}{36}.
+\]
+In the icosahedral case the degrees of \(p,r,J\) are \(6,10,15\), and the factors of \(W\) are \(W^3,W^5,W^{15/2}\). Use the leading mirror formulas above with \(u\) arcsine. The remaining factors are \(P_\infty,R_\infty,4P_\infty^2 v\), where \((u,v)\) is uniform on the unit circle. Indeed if \(\theta\) is the original mirror angle and \(\sigma=\operatorname{sgn}\xi\), the two variables are
+\[
+ (u,v)=\sigma\,\operatorname{sgn}\bigl(\cos(\theta/2)\bigr)
+                    \bigl(\sin(\theta/2),\cos(\theta/2)\bigr).
+\]
+This follows from \(X/s^2\to(1+\cos\theta)/90\) and the leading formula for \(J\). The independent sign \(\sigma\) makes this a uniform circle. Thus in each case the limiting conditional angular averaging is constant term in \(y\) on the limiting angular Laurent polynomials.
+
+These evaluations are faithful on the angular graded algebra. The weight-zero cone is the binary invariant cone. Indeed on rank-one matrices the adjoint-axis map is the quadratic Veronese parametrization of the null cone in the right vector, scaled by \(u_+u_-\). Thus the homogeneous axis degrees are the half-matrix degrees on the weight-zero ring. In the octahedral case the two even generators are algebraically independent under the evaluation, because their ratio recovers \(W/9\) and the first then recovers \(\cos\theta\). In the icosahedral case the ratio \(R_\infty^3/P_\infty^5\) is a nonzero scalar times \((1-u)/(1+u)\). The two even generators with their powers of \(W\) are therefore independent as well. Each odd generator changes sign under the circle reflection fixing the two even generators, so the quadratic orientation relation gives no additional kernel.
+
+Expand \(P\) at \(T=0\) in a filtered basis, chosen with real conjugation and left-weight decomposition, and write \(d\) for the maximal excess of a basis degree over the \(T\)-order of its scalar coefficient. For each term at that excess use its leading coefficient times its graded symbol. If \(P\ne0\) this yields a nonzero Laurent polynomial \(F_W(y,z)\) at generic positive \(W\). Indeed distinct graded degrees are separated by their powers \(W^{j/2}\), and within one degree the preceding faithful evaluation and distinct \(z\)-weights detect the symbol. The resulting Laurent polynomial is real for the involution \((y,z)\mapsto(1/\bar y,-1/\bar z)\). In particular its support is stable under simultaneous negation.
+
+For each \(m\), the coefficient of \(T^{-dm}\) in \(C_m\) at fixed \(W\) is \(\operatorname{CT}_{y,z}(F_W^m)\). For this calculation products of leading symbols are calculated in the graded ring, discarding terms of strictly lower excess. Taking left invariants also commutes with passing to graded symbols, and the conditional angular averages of the scaled leading generators have the circle limits just computed. These limits commute with integration on the compact angular parameters. In the mirror case one uses uniform convergence of the scaled \(X,Y\) and of the continuous nonnegative square root of scaled \(X\), including its zeros. If \(d>0\), the Newton polytope of \(F_W^2\) contains zero by support symmetry and the product rule for Newton polytopes. [Duistermaat–van der Kallen, Theorem 1](https://webspace.science.uu.nl/~kalle101/powers.pdf) gives \(\operatorname{CT}_{y,z}(F_W^{2m})\ne0\) for some \(m\). This would be a pole at \(E=0\). Thus \(d\le0\). In particular the regular angular Laurent element \(M=R_L(P^2)\) has no pole at \(T=0\) in the transformed chart, even before the remaining angular averaging.
+
+At \(T\to+\infty\) with fixed \(W>0\), both chosen charts approach \(s=0\) from physical compact fibres. At \(W\uparrow1\) with fixed \(E>2\) they approach \(s=1\) from physical fibres as well. On those fibres \(M\) is nonnegative, being a left-circle average of a real square. If \(M\) has a pole in the angular chart at either divisor, its nonzero leading term occurs on an open set of angular parameters, and \(M\) tends to positive infinity there. This can be tested on the regular angular arcs of the chart, using the real square roots in the formulas and their Taylor expansions away from their limiting zeros. Both orientation signs occur in the physical measure. Fatou's lemma then makes \(C_2=\mathbb E_s[M]\) unbounded, contrary to its regularity. Thus \(M\) has no angular pole at these divisors. For \(2I\), the angular polynomial comparison in the angle-averaged endpoint theorem above now implies that \(M\) is constant.
+
+For \(2O\), the comparison for the coordinate-mirror chart is as follows. Write
+\[
+             M=t^{-b}\sum_{i,j,\epsilon}
+                      p^i q^j J^\epsilon a_{ij\epsilon}(T),
+             \qquad b\ge0,\quad \epsilon=0,1.
+\]
+Absence of a pole at \(T=0\) gives \(\operatorname{ord}_0 a_{ij\epsilon}\ge4i+6j+9\epsilon\), by the faithful graded evaluation. As \(T\to+\infty\), write \(p_0=(1+\cos\theta)/8\). Then \(p\to p_0,\ T^2 q\to Wp_0/9,\ TJ\to\sqrt W\,p_0\sin\theta/12\). At fixed leading \(T\)-order the distinct pairs \((j,\epsilon)\) are separated by \(W^{j+\epsilon/2}\), and for a fixed pair the powers of \(p_0\) are linearly independent. Hence \(\deg a_{ij\epsilon}\le b+2j+\epsilon\). Factor out the \(T\)-orders and expand the remaining coefficients in \(t=T-1\):
+\[
+ M=t^{-b}\sum_{e\ge0} t^e A_e(T^4p,T^6q,T^9J),\qquad
+                        4i+4j+8\epsilon\le b-e
+\]
+on each monomial of \(A_e\).
+
+At \(T=1\) put \(\delta=\sqrt{1-W}\) near \(W=1\). For a nonzero polynomial \(A(p,q)\) of ordinary degree \(D\), its vanishing order there is at most \(6D\) in \(\delta\). In fact insert \(q=Wp/9\) and \(p=A(W)+B(W)\cos\theta\) from (H3). In the expansion in powers of \(B(W)\cos\theta\), the coefficient at power \(k\) is a polynomial in \(W\) of degree at most \(3D-2k\). A nonzero coefficient vanishes to order at most this degree in \(1-W\), and \(B(W)\) has order three in \(\delta\). Distinct powers of \(\cos\theta\) prevent cancellation. This proves the \(6D\) bound. For the odd part \(J A(p,q)\), add order three, since \(J=2p \sqrt W B(W)\sin\theta/3\) and \(p\to1/3\). The two parts cannot cancel over both signs of \(\sin\theta\). The monomial bound therefore gives order at most \(3(b-e)/2\) for any nonzero \(A_e\) evaluated at \(T=1\).
+
+Let \(\eta=1/E\) so \(t=\eta G^N/(1-\eta G^N)\). The numerator \(\eta^b G^{Nb}M\) is analytic in \((\delta,\eta)\) near \((0,0)\), since \(1-s=1-W(1-\eta G^N)^2\) is \(\delta^2\) times a unit. It must be divisible by \(\delta^{2Nb}\) by the absence of a pole at \(W=1\). At the least \(e\) with \(A_e\ne0\), the coefficient of \(\eta^e\) is \(G^{Ne}A_e(p,q,J)|_{T=1}\). If \(e<b\) its order is at most \(2Ne+3(b-e)/2<2Nb\), a contradiction. Thus \(e=b\) and the weight bound leaves only a constant. This proves the comparison for \(2O\).
+
+Finally if \(M\) is constant, every largest strictly positive or smallest strictly negative exponent of \(P\) would contribute the square of its coefficient to the corresponding extreme \(t\)-coefficient of \(M\). The left-circle average of that square is nonzero for a nonzero real coefficient, by compact positivity evaluated on a fibre where the coefficient is nonzero. Thus \(P\) has only exponent zero. Purity implies \(M=\Lambda(P^2)=0\), so compact square positivity gives \(P=0\).
+
+
+## Ternary leading forms with one opposite pair of angular weights
+
+**Theorem (Ternary angular trinomials in the small cyclotomic degrees).**
+
+Let \(q\) be an anisotropic ternary form over a characteristic-zero field, and let \(P\) have minimal ambient degree \(d\) on \(q=1\). Suppose \(d\in\{2,3,4,5,6,8,10,12\}\) and in some geometric coordinates \((a,b)\) on the conic at infinity the binary leading form is
+\[
+     F(a,b)=(ab)^d\bigl(A(a/b)^k+B+C(b/a)^k\bigr),
+                          \qquad 1\le k\le d .
+\]
+Then \(P\) has infinitely many nonzero positive moments, independently of its lower-degree terms. For \(d=5\) this includes leading forms for which \(F/(ab)^5\) is invariant under a projective automorphism of order at least three fixing the two poles. In particular the conclusion includes some six-, eight-, and ten-root configurations.
+
+Use the prime residue (R5) at \(m=(p-1)/d\). In this case the coefficient there, in every characteristic, is
+\[
+                 [x^m](A x^2+B x+C)^m .
+\]
+Indeed all powers of \(a/b\) are multiples of \(k\) and one is extracting the zero angular weight. The coefficient is independent of \(k\). If \(AC=0\), it is \(B^m\), and \(B\) must be nonzero. Otherwise the leading form would be a single noncentral monomial, with one root of multiplicity greater than \(d\); anisotropy excludes this since the Galois orbit of that root cannot have size one. If \(AC\ne0\) but \(B^2=4AC\), the coefficient is a nonzero scalar power times \(\binom{2m}{m}\). Both cases give units at all sufficiently good primes \(p\equiv1\bmod d\), since \(2m\le p-1\).
+
+Suppose instead that the quadratic has two distinct nonzero roots. Introduce the auxiliary binary form
+\[
+                    (ab)^{d-1}(A a^2+B ab+C b^2).
+\]
+Its character-one cyclic-cover coefficient is exactly the same coefficient at the same primes. The normalized degree-\(d\) cyclic cover of the projective line has four distinct branch points with exponents \(d-1,d-1,1,1\). Its character-one line in \(H^1(\mathcal O)\) is one-dimensional by the eigensheaf computation used for (R5). Over a number field containing the branch points and roots of unity, the primitive part of its Jacobian has dimension \(\varphi(d)\), because the Jacobian of each degree-\(e\) quotient for \(e\mid d\) has dimension \(e-1\) by Riemann–Hurwitz. Möbius double transposition pairs the two complementary sets of branch points in pairs of opposite exponents. It lifts to an involution \(\tau\) inverting the generator \(g\) of the cyclic deck group. For the lift, the product of the two defining rational functions has divisor divisible by \(d\), so it is a \(d\)-th power after extending constants. At a fixed unramified point of the projective involution the induced permutation of the fibre is \(i\mapsto c-i\) on \(\mathbb Z/d\); hence the square of the lift is trivial. Both fixed parts for \(\tau\) and \(g\tau\) on the primitive Jacobian have dimension \(\varphi(d)/2\) for \(d>2\), since each involution exchanges the two opposite character spaces. Their intersection is fixed by \(g\), hence zero, so their product maps to the primitive Jacobian by an isogeny. For \(d=2\) the Jacobian is elliptic.
+
+The two factors have dimension at most two in the listed degrees. After finite extension their ordinary primes have density one by the elliptic case and [Sawin, Theorem 3](https://www.numdam.org/item/10.1016/j.crma.2016.01.025.pdf) for abelian surfaces. One can pass to a field over which the relevant monodromy groups are connected. Intersect the density-one sets, and choose good primes of absolute residue degree one. Such primes have \(p\equiv1\bmod d\), since the field contains all the \(d\)-th roots of unity. Ordinary reduction makes the character-one Hasse coefficient nonzero, so (R5) applies at infinitely many orders. Over an arbitrary characteristic-zero field, first spread the chosen leading coordinate change, coefficients and root conditions over a finite-type algebra, then specialize to a number field preserving the nonzero conditions. The specialized traces are computed on the split quadric, and each nonzero specialized moment was already nonzero before specialization. No anisotropy of the specialized quadric is used.
+
+For the symmetry assertion, diagonalize the given projective automorphism with its two fixed points at the poles. Invariance of \(F/(ab)^5\) makes its exponents of \(a/b\) multiples of the order of the automorphism. An order at least three allows at most one positive and one negative weight. With two distinct nonzero roots in the quadratic, \(k=2,3,4,5\) give respectively six, eight, ten, and ten distinct roots in the original leading form.
+
+
+## Non-normal subgroups and the generic invariant fibre
+
+**Theorem (The split obstruction on a generic orbit of any reductive subgroup).**
+
+Let \(K\) have characteristic zero, let \(X\) be affine, geometrically integral and geometrically homogeneous under a connected reductive group \(G\), and let \(S\subseteq G\) be connected reductive. Put \(F=\operatorname{Frac}K[X]^S\). The generic invariant fibre of \(X\) is geometrically homogeneous under \(S_F\). If \(S_F\) has a split rank-one subgroup acting nontrivially on that fibre, then \(X\) has a regular Mathieu–Zhao counterexample over \(K\). This does not require \(S\) to be normal or \(X\) to have a \(K\)-point.
+
+For geometric homogeneity, choose over \(\mathbb C\) a compact form of \(G\) compatible with a compact form of \(S\), and a conjugate of the geometric stabilizer \(H\) having a compact form inside the same group. This is the setup of the closed-orbit argument above. Every point on the compatible compact \(G\)-orbit has closed \(S_{\mathbb C}\)-orbit by the same Kempf–Ness calculation, which uses only the compact form of \(S\). The compact orbit is Zariski dense. It meets the inverse image of the open principal Luna stratum and the open locus of maximal orbit dimension. Thus the closed orbit on the principal stratum has maximal dimension. Each quotient fibre contains just one closed orbit, and any other orbit in that fibre would have strictly larger dimension. Hence the fibres over the principal stratum are single orbits on geometric points. These statements hold in every algebraically closed characteristic-zero model by descent to finite-type data and base change. In particular they hold on the geometric generic fibre. The generic fibre ring is a localization of the smooth coordinate algebra \(K[X]\), hence regular, and \(F\) is perfect. Its geometric fibre is therefore reduced. Together with the single-orbit statement this identifies it as an affine geometrically homogeneous \(S_F\)-space.
+
+Its normalized trace is the localized \(S\)-Reynolds projection by uniqueness. The split rank-one theorem with no rational-point hypothesis gives a bad pair on that fibre. The generic invariant fibre obstruction above clears the denominators and produces one fixed regular multiplier on \(X\) with infinitely many nonzero marked moments. Thus the field test can be applied to a proper subgroup orbit quotient, in addition to quotients by normal factors.
+
+
+## One-prime tests for the full exceptional products
+
+**Theorem (Prime-power moments on a full exceptional quotient).**
+
+Let \(P=\sum_e t^e P_e\) be regular on \((\mathrm{SU}_2/\Gamma)\times\mathbb G_m\), where \(\Gamma=2O\) or \(2I\). Work in a number field containing its coefficients, the compact-model constants and the comparison coordinates. Write \(j_e\) for the half-matrix filtration degree of each nonzero \(P_e\), as in the full endpoint obstruction. Choose a rational \(\alpha\) and put
+\[
+                      D=\max_{P_e\ne0}(j_e+\alpha e)>0.
+\]
+Write \(D=a/b\) in lowest terms. For each equality index take the leading symbol of \(P_e\) in the rank-one matrix cone, and form the Laurent polynomial \(\Sigma(t,y,z)\) by the circle evaluations in that obstruction, omitting their powers of \(W\). Here \(y\) is the conditional angular variable, and \(z\) is the effective left-circle variable.
+
+Outside a fixed finite set of bad places, let the residue field have size \(Q\equiv1\bmod 2a\) and characteristic \(\ell\). Reduce \(\Sigma\) there and put
+\[
+ m_1=(Q-1)/D,\qquad H=\Sigma^{m_1},\qquad
+ m_r=(Q^r-1)/D\quad(r\ge1).
+\]
+The contribution at valuation \(-r\,v_\ell(Q)\) to \(\Lambda(P^{m_r})\), normalized by multiplication by \(Q^r\) and reduction, is precisely
+\[
+         \operatorname{CT}_{t,y,z}
+               \prod_{i=0}^{r-1} H(t^{Q^i},y^{Q^i},z^{Q^i}).
+\]
+In particular, if every exponent of \(H\) is bounded in absolute value by \(Q-1\) in each coordinate and \(\operatorname{CT} H\ne0\), the moments at every \(m_r\) are nonzero and have valuation \(-r\,v_\ell(Q)\). For arbitrary support of \(H\), a finite matrix over the residue field tests whether this valuation occurs infinitely often. Lower terms strictly below the line \(j_e+\alpha e=D\) do not enter the test.
+
+First take scalar Laurent constant term and then apply the left-circle Reynolds operator. Every term contributing to \(\operatorname{CT}_t(P^m)\) has half-matrix degree at most \(Dm\), because its scalar exponents add to zero. Attaining this bound requires all factors to come from equality indices and use their leading symbols. The weight-zero projection in the filtered algebra becomes constant term in \(z\) in the graded algebra. In both angular charts the remaining conditional moment is a polynomial in the squared height \(s\), of degree at most \(Dm/2\), and its coefficient at \(s^{Dm/2}\), when the latter is integral, is
+\[
+                              \operatorname{CT}_{t,y,z}\Sigma^m .
+\]
+Indeed after taking the graded symbol, a degree \(j\) angular element scales by \(s^{j/2}\), and its leading law is precisely the circle substitution used in the full endpoint obstruction. In the octahedral case use the coordinate-mirror height \(s=9q/p\), with \(p=A(s)+B(s)\cos\theta,\ q=sp/9,\ J=2p\sqrt{s}B(s)\sin\theta/3\). In the icosahedral case use the fifteen-mirror circle. Only even \(J\)-powers survive the angular average, and the conditional formulas give polynomials in \(s\) in both cases. The power of \(s\) then follows from the filtration bound.
+
+The coefficients of these conditional polynomials are integral at every sufficiently good place, uniformly in \(m\). For the left projection use the integral torus grading of the matrix algebra with \(\det=1\); extracting weight zero has no denominators. Its invariant subring is generated by the row-pair products, which identify with the unit adjoint quadric after a fixed coordinate change. Taking invariants of the binary rotation group over a ring of integers with finitely many primes inverted gives a finitely generated algebra. For example the finitely many algebra generators of the quadric satisfy their finite-group orbit polynomials, and the Artin–Tate lemma gives finite generation of the invariant algebra. After adjoining the \(p,q,J\) or \(p,r,J\) as generators, express any other finite list of invariant generators in those coordinates over the number field and invert their fixed denominators. Thus all the weight-zero expressions are polynomial in the angular generators with integral coefficients at the permitted places. Conditional circle moments add only powers of two to the denominators, in addition to the fixed constants in the chart formulas.
+
+The last integral, for uniform \(\sqrt{s}\), sends \(s^k\) to \(1/(2k+1)\). At \(m=m_r\) the top degree is \((Q^r-1)/2\), with denominator \(Q^r\). Every smaller degree has smaller denominator valuation. Consequently \(Q^r\Lambda(P^{m_r})\) reduces to \(\operatorname{CT}_{t,y,z}\Sigma^{m_r}\). Since \(m_r=m_1(1+Q+\cdots+Q^{r-1})\), this is the asserted Frobenius product. If all exponent coordinates of a digit are of magnitude less than \(Q\), balancing a zero total first forces the first digit to be zero modulo \(Q\), hence zero in every coordinate. Induction gives the \(r\)-th power of the single-digit constant term.
+
+For unrestricted support, let \(B_j\) bound the absolute exponent in coordinate \(j\) of \(H\). Use integer carry states \(u\) with \(|u_j|\le\lceil B_j/(Q-1)\rceil\), starting and ending at zero. The matrix entry at \(u,v\) is the coefficient of the exponent vector \(Qv-u\) in \(H\). The recursion \(u+e=Qv\) gives the constant term of the Frobenius product as the zero-to-zero entry of the matrix power. The state bounds follow from the same recursion. Iteration over the finite residue field is eventually periodic, giving the finite test.
+
+Here are mixed-degree examples on the full quotients. Take the top symbols
+\[
+ \begin{array}{c|c|c|c}
+ \Gamma & \Sigma &(\alpha,D)&(\ell,\operatorname{CT} H\bmod\ell)\\ \hline
+ 2O & t^{-1}p_\infty(y)(z-z^{-1})+tq_\infty(y)&(-1,5)&(41,10)\\
+ 2I & t^{-1}p_\infty(y)(z-z^{-1})+tr_\infty(y)&(-2,8)&(97,96) .
+ \end{array}
+\]
+Their left weights are effective circle weights. Real regular lifts exist, because the two terms with \(z^{\pm1}\) come from the spin representation of the corresponding degree with the same right-invariant binary form. Their difference is real for the graded conjugation \(z\mapsto-1/\bar z\), so a lift can be averaged with its conjugate. The scalar balance selects exactly \(m_1/2\) copies of each term, and \(m_1=8,12\), respectively. Taking the left constant term gives a signed binomial coefficient. For \(2O\) the remaining integral is a nonzero scalar power times the arcsine moment of \((1-\cos\theta)^8\). For \(2I\) it is a nonzero scalar power times the arcsine moment of \((1-u)^{18}(1+u)^{30}\). The factorial ratios have unit denominators and numerators at the indicated primes. All supported exponent coordinates have magnitude \(<\ell\). The displayed residues are computations on the symbols. For a given lift the same unit argument applies at every sufficiently large good degree-one prime with \(\ell\equiv1\bmod 4D\), so no specific prime of good reduction of the lift is needed. In these examples the highest single degree occurs exclusively at \(t^1\), so it would be missed by a test of the highest degree alone.
+
+
+## A single residue-field certificate on a twisted norm quadric
+
+**Theorem (Prime-power isolation on ternary and quaternion norm quadrics).**
+
+Let \(P\) be a regular phase on a nondegenerate norm quadric of dimension \(n=3\) or \(n=4\) in a characteristic-zero vector space, with minimal ambient degree \(d>0\). Take split coordinates over an algebraic extension. Denote the resulting leading binary form of degree \(2d\) on the conic at infinity by \(F\) when \(n=3\), and the leading biform of bidegree \((d,d)\) on the split projective quadric at infinity by \(F\) when \(n=4\).
+
+Suppose the data are defined over a number field and choose a good place of odd residue characteristic \(\ell\). Take \(Q\) to be any power of its residue cardinality with \(d\mid Q-1\). All coefficient reductions can be made in the original residue field, whose elements are fixed by the \(Q\)-power Frobenius. In the residue field put
+\[
+ \gamma =
+ \begin{cases}
+     [a^{Q-1} b^{Q-1}]F^{(Q-1)/d},&n=3,\\[2pt]
+     [(a_0a_1b_0b_1)^{Q-1}]F^{\,2(Q-1)/d},&n=4 .
+ \end{cases}
+\]
+If \(\gamma\ne0\), then the infinitely many orders \(m_r=(Q^r-1)/d\) for \(n=3\), and \(m_r=2(Q^r-1)/d\) for \(n=4\), have
+\[
+                         v_\ell\bigl(\Lambda(P^{m_r})\bigr)
+                                      =-r\,v_\ell(Q)\quad (r\ge1).
+\]
+The conclusion is independent of the lower-degree terms, provided the chosen coordinate representative has integral coefficients at the place. For arbitrary characteristic-zero coefficients, a single number-field specialization with a certificate proves nonvanishing at the same orders for the original phase. In particular the odd prime need not split the roots of the leading form or the \(d\)-th roots of unity in its prime field.
+
+In dimension three the proof of (R5) applies with \(Q^r-1\) in place of \(p-1\). The conditional polynomial on the uniform height has degree at most \(Q^r-1\) and coefficients integral at every good odd place. Its top coefficient is the central coefficient of \(F^{m_r}\), as in (R5). Integration divides it by \(Q^r\), and every lower degree gives a denominator of strictly smaller valuation. This proves the reduction of \(Q^r\Lambda(P^{m_r})\) to that coefficient.
+
+In dimension four use the split matrix model with determinant one. As in (C2), a balanced monomial \((xw)^i(yz)^j\) has trace
+\[
+                  (-1)^j\frac{i!j!}{(N+1)!},\qquad N=i+j.
+\]
+Let \(L=r\,v_\ell(Q)\), so the maximum \(N\) is \(\ell^L-1\). The negative valuation of the trace is \(v_\ell(N+1)\) plus the number of carries when adding \(i,j\) in base \(\ell\), by the factorial valuation formula. If \(N<\ell^L-1\) and \(v_\ell(N+1)=h\), the first \(h\) digits of \(N\) are \(\ell-1\). They admit no carry because there is no initial carry and a sum of two digits is at most \(2\ell-2\). There are at most \(L-1-h\) later carries, since no carry can pass the leading position. Thus the negative valuation is at most \(L-1\). If \(N=\ell^L-1\), there are no carries and the valuation is exactly \(-L\). The scaled coefficient is \((-1)^j/\binom{\ell^L-1}{i}\equiv1\bmod\ell\), since \(\binom{\ell^L-1}{i}\equiv(-1)^i\). The same rank-one parametrization as in (C2) now identifies the reduction of \(Q^r\Lambda(P^{m_r})\) with the indicated central coefficient in \(F^{m_r}\). This isolates the top term even though the coefficient denominators are factorial ratios.
+
+In either dimension \(F^{m_r}\) modulo the place is a Frobenius product of \(r\) copies of the first-order power, on variables raised to the powers \(1,Q,\ldots,Q^{r-1}\). In each pair of homogeneous variables, a first-order factor has degree \(2(Q-1)\). Its exponents are therefore between zero and \(2(Q-1)\). The first digit of an exponent of the desired central term must be \(Q-1\) modulo \(Q\), and the only such nonnegative exponent in that range is \(Q-1\). Repetition forces every digit to be the central digit in each variable. The resulting coefficient is \(\gamma^r\ne0\). The field-specialization conclusion follows because the original normalized trace on the split model is a rational polynomial in the coefficients of the representative and hence commutes with specialization, separately at each order.
+
+For instance, over \(\mathbb Q\) on \(x^2+y^2+z^2=-1\), take the leading quintic \(x^5+2y^5+3z^5\), with arbitrary lower terms integral at the chosen prime. Write \(\iota^2=-1\) and use \(x=(a^2+b^2)/2,\ y=(a^2-b^2)/(2\iota),\ z=\iota ab\). At \(11\) take \(Q=121\). The coefficient \([a^{120}b^{120}]F^{24}\) is \(9\bmod11\), so orders \((121^r-1)/5\) have valuation \(-2r\). At \(7\) take \(Q=2401\), a square of the actual residue size. The coefficient \([a^{2400}b^{2400}]F^{480}\) is \(5\bmod7\), so orders \((2401^r-1)/5\) have valuation \(-4r\). For the second calculation, expand the four digit powers with exponents \(4,5,2,1\), respectively, in base seven. Conjugate the coefficients in the odd digit positions and extract the exponent with all four digits equal to six. This certificate has \(7\not\equiv1\bmod5\).
+
+On the negative quaternion norm quadric take the leading quintic \(x_0^5+2x_1^5+3x_2^5+5x_3^5\). Use the determinant-one matrix
+\[
+             \begin{pmatrix}
+                x_0+\iota x_1 & x_2+\iota x_3\\
+                x_2-\iota x_3 & -x_0+\iota x_1
+             \end{pmatrix}
+\]
+and its rank-one parametrization at infinity. At \(11\) the central biform coefficient in \(F^{48}\) is \(5\bmod11\), by expanding the four linear forms in the matrix entries before the central extraction. Therefore the orders \(2(121^r-1)/5\) have valuation \(-2r\) for every choice of lower coefficients integral at \(11\).
+
+
+## A rigidity test for a regular conditional arcsine coordinate
+
+**Theorem (A Laurent polynomial with arcsine law is a single harmonic).**
+
+Let \(L\in\mathbb C[z,z^{-1}]\) be real on the unit circle. If its law under normalized angular measure is the law of \(\cos\theta\), then for some \(k\ge1\) and \(c\in\mathbb C\) of modulus one,
+\[
+                               L=\frac{c z^k+c^{-1}z^{-k}}2 .
+\]
+Consequently on the unit two-sphere with uniform area, if a real regular \(f(x,y,h)\) gives the same joint law for \((h,f)\) as for \((h,x)\), then \(f=a x+b y\) with real constants \(a^2+b^2=1\). In particular \(f\) cannot be even under the antipodal map. This excludes a regular two-coordinate spherical projection with opposite antipodal parities when the odd coordinate is the axial height.
+
+Take \(k>0\) to be the common pole order of \(L\) at zero and infinity, equal by reality. For large complex \(\lambda\), let \(S(\lambda)\) be the product of the \(k\) roots of \(L(z)=\lambda\) near zero. The contour formula is
+\[
+                   \operatorname{CT}_z\frac1{\lambda-L(z)}
+                                      =-\frac{S'(\lambda)}{S(\lambda)} .
+\]
+Indeed the residue at a small inverse branch \(z_j\) of \(dz/[z(\lambda-L(z))]\) is \(-z_j'/z_j\), and the form is regular at zero. This is the inverse-branch method for rational moments in [Pakovich, §2](https://arxiv.org/pdf/0910.2105). The arcsine law gives the left side as \(1/\sqrt{\lambda^2-1}\), using the branch asymptotic to \(1/\lambda\). Hence \(S(\lambda)\) is a nonzero constant times \(\lambda-\sqrt{\lambda^2-1}\).
+
+In the splitting field of \(L(z)=\lambda\), fix a valuation at infinity of \(\lambda\). In units of this valuation the small roots have value \(1/k\) and the large roots value \(-1/k\). Among products of \(k\) roots, only the product of all small roots has value \(1\), and only the product of all large roots has value \(-1\). The two conjugates of \(S\) have these two values. Therefore every Galois permutation preserves the partition of roots into the all-small and all-large blocks, possibly interchanging them. In particular the stabilizer of any one small root fixes \(S\). Its fixed field is the field generated by that root and \(\lambda\), so \(\sqrt{L^2-1}\in\mathbb C(z)\). The rational function \(U=L+\sqrt{L^2-1}\) satisfies \(U+U^{-1}=2L\). A zero or pole of \(U\) forces a pole of \(L\), so \(U\) is a monomial \(c z^j\). Reality and the two Laurent coefficients give \(|c|=1\); interchanging \(U\) and \(U^{-1}\) gives the positive exponent. This proves the circle assertion.
+
+For the spherical consequence, at \(h=h_0\in(-1,1)\) write \(x+iy=\sqrt{1-h_0^2}\,z\). The joint law gives the arcsine law of \(f/\sqrt{1-h_0^2}\) on almost every latitude, hence on every interior latitude by continuity of the moments. Each Laurent coefficient of weight \(j\) of \(f\) has the form \((1-h_0^2)^{|j|/2} g_j(h_0)\) with \(g_j\) polynomial, by reduction using \((x+iy)(x-iy)=1-h^2\). The circle assertion forces exactly one opposite pair of weights at each latitude. A nonzero coefficient in one pair persists on an open interval, so the coefficients of every other pair vanish identically. The normalized modulus of the surviving coefficients must be constant and nonzero. Letting \(h_0\) tend to a pole excludes \(|j|>1\); for \(|j|=1\) the surviving \(g_j\) has constant modulus and is therefore constant. This gives the claimed \(a x+b y\).
+
+In the flat angular model for the norm-minus-one quaternion torsor, one possible substitution takes the even height \(\cos(2\theta)\) and tries to make its spherical transverse scalar odd by rotating two functions of the independent axis \(n\). The usual azimuth-doubling construction on \(n\in S^2\) has one odd and one even coordinate with the desired joint law, but uses a square-root denominator in Cartesian coordinates. The theorem shows that if the odd coordinate is the original axial height of \(n\), that joint law cannot be realized by a regular even coordinate. The conclusion concerns this exact conditional-law construction.
+
+
+## Central compact torsors detected by a stabilizer quotient
+
+Let \(D_0=K\), \(D_1=K[i]\) with \(i^2=-1\), and \(D_2=(-1,-1)_K\), with their standard involutions. The algebra \(D_1\) is understood as quadratic étale when \(-1\) is a square. Write \(D\) for one of these algebras and \(d=\dim_KD\in\{1,2,4\}\). On \(D^n\) write \(h(v,w)=\sum \overline v_jw_j\), with associated scalar quadratic form \(dn\langle1\rangle\). Define \(X^-\) by \(A^*A=-I\), using determinant \((-1)^{n/2}\) in the orthogonal case and determinant one in the special unitary case. In those two cases assume \(n\) is even. In the quaternionic case impose no determinant condition. These choices make \(X^-\) an affine geometrically integral torsor for the corresponding connected isometry group \(G\), by precomposition or postcomposition. Over a real closed field this is the compact central twist represented by \(-I\).
+
+**Theorem (Regular counterexamples on central classical torsors).**
+
+Over any characteristic-zero field the normalized trace on \(X^-\) fails to be Mathieu–Zhao in the following cases.
+
+- \(D=K\) or \(K[i]\), and \(n\) is even and is not a power of two.
+- \(D=(-1,-1)_K\), and \(n\) is not a power of two.
+
+In particular the nontrivial central torsor of compact \(\mathrm{SO}(6)\), compact \(\mathrm{SU}(6)\), or compact \(\mathrm{Sp}(3)\) admits a regular counterexample over every real closed field. For compact classical groups of these types over real closed fields with \(n\) not a power of two, the normalized torsor trace is Mathieu–Zhao exactly when the torsor has a point, by the earlier result for nontrivial adjoint-image classes.
+
+For the even-rank cases take the connected subgroup \(S\) fixing the first standard vector, acting by precomposition. The map \(A\mapsto A e_1\) identifies the invariant quotient with
+\[
+                         Y^-=\{v\in D^n:h(v,v)=-1\}.
+\]
+Over the algebraic closure this is the homogeneous-space map to the orbit of a vector of norm \(-1\), with the stabilizer the isometry group of its orthogonal complement. In the split quaternion case the vector corresponds to a symplectic two-frame of nonzero pairing, whose stabilizer is the symplectic group on its complement. Thus in all three cases transitivity, surjectivity, and the single-orbit fibres follow from extending an isometry of the first summand to the whole space. The quotient description follows over \(K\) by base change of invariants.
+
+Over \(F=K(Y^-)\), the field level is at most \(dn\), since the generic vector gives a representation of \(-1\) by that many squares. A finite level is a power of two by [Pfister's level theorem](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms/s1-40.1.159). If \(2^j<n<2^{j+1}\) and \(n\) is even, then \(n-1>2^j\), so \(s(F)\le d2^j<d(n-1)\). Thus the scalar form of the standard orthogonal complement, \(d(n-1)\langle1\rangle\), is isotropic over \(F\). This gives positive split rank in its isometry group \(S_F\): in the orthogonal case use a hyperbolic plane, and in the Hermitian cases an isotropic vector splits a Hermitian hyperbolic plane over the division algebra. If the coefficient algebra splits, the corresponding unitary or symplectic group is already split. The generic fibre is an \(S_F\)-torsor, so the split rank-one action is nontrivial. The generic-orbit split obstruction gives a regular bad pair on \(X^-\).
+
+In the orthogonal six-dimensional example one can see the relative isotropy directly. Write the generic point of \(Y^-\) as \(y_1,\ldots,y_6\). In the Hamilton quaternion algebra put \(u=1+y_1i+y_2j+y_3ij\) and \(v=y_4+y_5i+y_6j\). Then \(N(u)+N(v)=0\), and \(N(u)\ne0\) in the function field, so \(v u^{-1}\) has norm \(-1\). Its four coordinates together with \(1\) give a nonzero isotropic vector for the five-dimensional stabilizer form. This realizes the split rank-one step over the actual quotient field.
+
+It remains to treat odd quaternionic rank \(n\ge3\). Here use the subgroup \(S=\mathrm{SU}(n)\) over \(K[i]/K\) inside the quaternionic unitary group. If the quaternion algebra splits over the invariant field \(F=K(X^-)^S\), its norm represents \(-1\) there and the field level is at most two. Otherwise it suffices to show its norm still represents \(-1\), which will give level at most four and make the standard \(2n\)-dimensional scalar form of \(\mathrm{SU}(n)_F\) isotropic.
+
+Regard \(V=D^n\) as a right \(E=K[i]\)-space of dimension \(2n\). The exterior vector \(B=A e_1\wedge_E\cdots\wedge_E A e_n\) has regular \(S\)-invariant coordinates, since \(S\) changes the basis by determinant one. At the generic point it determines over \(E_F\) an \(n\)-dimensional subspace \(W\) and a fixed exterior volume. The quaternionic form takes values in \(E_F\) on \(W\), and its \(E_F\)-Hermitian determinant relative to \(B\) is \((-1)^n=-1\). These identities hold after pullback to the generic \(A\), where the displayed frame has Hermitian matrix \(-I\). Also \(W\oplus Wj=V_E\), where \(j^2=-1\) and \(ji=-ij\), since the decomposition holds for the original standard frame and is carried over by \(A\). These are algebraic identities in the generic frame. If \(E_F\) splits there is nothing to prove, so take an \(E_F\)-basis of \(W\) with exterior product \(B\). Its columns give a matrix \(M\in\mathrm{GL}_n(D_F)\). Its quaternionic Gram matrix \(H=M^*M\) lies in \(M_n(E_F)\) and has \(E_F\)-determinant \(-1\).
+
+For such a Gram matrix \(\operatorname{Nrd}(M)=\det_{E_F} H\), including the sign. To check it, split the quaternion algebra over \(E_F\) with the standard embedding sending a quaternion \(a+bj\) to \(\left(\begin{smallmatrix}a&b\\-\bar b&\bar a\end{smallmatrix}\right)\). In block ordering let \(J=\left(\begin{smallmatrix}0&I\\-I&0\end{smallmatrix}\right)\). The involution on matrices is \(M^*=J^{-1}M^{\mathsf T}J\) on the split side. Thus \(J M^*M=M^{\mathsf T}JM\) has Pfaffian \(\det(M)\operatorname{Pf}(J)\). On the other hand the split image of \(H\in M_n(E_F)\) is \(\operatorname{diag}(H,\bar H)\) and the same Pfaffian divided by \(\operatorname{Pf}(J)\) is \(\det \bar H=\det H\). Here the split determinant of \(M\) is its reduced norm. Quaternionic Gaussian elimination expresses that reduced norm as a product of reduced norms of invertible scalars. The elementary unipotent factors have reduced norm one, as do the row swaps, whose split determinant is one because they swap blocks of size two. Hence \(-1\) is represented by the reduced norm of \(D_F\). This gives \(s(F)\le4<2n\), as desired. The generic invariant fibre of \(X^-\) is an \(S_F\)-torsor, again because \(X^-\) is geometrically a group torsor with a free precomposition action. Applying the split rank-one obstruction there and clearing the invariant denominators proves the claim.
+
+One can locate the boundary of this transfer on the ranks that are powers of two. Over a real closed \(K\), put \(b=d\,2^{v_2(n)}\). Then
+\[
+                                s(K(X^-))=b .
+\]
+For the upper bound, the anti-isometry over \(K(X^-)\) gives \(dn\langle1\rangle\simeq -dn\langle1\rangle\), so \(2dn\langle1\rangle\) is hyperbolic. The additive order of \(\langle1\rangle\) in the Witt ring of a field of finite level \(s\) is \(2s\): the form \(s\langle1\rangle\) is anisotropic by the definition of level, and \(2s\langle1\rangle\) is the isotropic hyperbolic Pfister form of twice its dimension. Thus \(s(K(X^-))\le b\). For the lower bound take \(F_0\) to be the function field of the negative norm sphere in \(b\) coordinates. The form \(b\langle1\rangle\) remains anisotropic there by Hoffmann separation, applied to \(b\langle1\rangle\) and \((b+1)\langle1\rangle\). Its level is exactly \(b\). It also represents \(-1\), so roundness of this Pfister form gives \(b\langle1\rangle\simeq-b\langle1\rangle\) over \(F_0\). [Pfister, Quadratische Formen in beliebigen Körpern](https://link.springer.com/article/10.1007/BF01389724) · [Hoffmann, Theorem 1](https://link.springer.com/article/10.1007/BF02572626)
+
+Over \(F_0\) this scalar isometry gives the corresponding anti-isometry in rank \(b/d\) for each coefficient algebra. For Hermitian forms, the assertion follows by Witt cancellation: the scalar form of \(h\perp h\) is hyperbolic, so one splits Hermitian hyperbolic planes successively. An isotropic vector for the scalar norm of a Hermitian form is an isotropic vector for that form, and each split Hermitian hyperbolic plane contributes a hyperbolic scalar summand. The remaining Hermitian anisotropic part must therefore be zero. The coefficient division algebras are still division over \(F_0\) in the Hermitian cases, because its level is at least \(d\). Taking an orthogonal sum of copies gives an anti-isometry in rank \(n\). In the orthogonal case its determinant can be adjusted by a reflection. In the unitary case its determinant has norm one and can be adjusted by a diagonal vector of that norm. Consequently \(X^-(F_0)\) is nonempty. The smooth torsor has a regular \(F_0\)-point, so its function field embeds into an iterated Laurent series field over \(F_0\), using the completed local ring at that point. Anisotropy of \(b\langle1\rangle\) persists under such an extension by taking leading coefficients. This gives \(s(K(X^-))\ge b\) and proves the equality.
+
+If \(n\) is a power of two, the scalar form \(dn\langle1\rangle\) therefore stays anisotropic over \(K(X^-)\). Over this field the connected isometry group has no split torus, and this also holds over every invariant subfield of \(K(X^-)\). Thus no choice of reductive subgroup gives the split generic-orbit mechanism for these central twists. Their individual trace classification still requires another argument.

@@ -62,6 +62,60 @@ For one private linear variable, the
 [moving cubic model](MULTIVARIATE_MOVING_PRIVATE_CUBIC_MODEL.md)
 gives the exact linked interpolation near the critical endpoint.
 
+## The remaining large-order regime
+
+**Corollary.** Every sequence of common roots with terminals tending
+to infinity has a subsequence with one private linear variable,
+bounded curvature, and shared endpoint curvature \(\sigma\to1\).
+Both fields tend to the positive endpoint. The scaled temperatures
+and fields in the moving cubic model are bounded. Any limiting
+temperature belongs to one of these two finite sets.
+
+- A temperature at which two distinct model zeros have the same
+  imaginary coordinate. In this case the subsequence has nonzero
+  \(\Delta\), and both \(|\Delta|/n^{1/3}\) and its reciprocal are
+  bounded.
+- A temperature with a simple zero \(H\) and
+  \(2H-T H_T=0\). In this case the subsequence has \(\Delta=0\).
+
+To prove the reduction, first use the preceding support-type
+corollary. The
+[uniform one-private comparison](MULTIVARIATE_UNIFORM_ONE_PRIVATE_REGULAR_COMPLEMENT.md)
+excludes private total degree at least two and all strictly
+supercritical limits for private degree one. It localizes critical
+limits to the positive endpoint.
+The [finite subcritical activation](MULTIVARIATE_UNIFORM_SUBCRITICAL_PRIVATE_ACTIVATION.md)
+does the same at strictly subcritical limits, including zero
+shared curvature. The
+[uniform endpoint comparison](MULTIVARIATE_PRIVATE_ENDPOINT_UNIFORM_THERMAL_TAILS.md)
+then excludes all strictly subcritical limits and every escaping
+temperature or scaled field at critical curvature.
+
+In the remaining bounded window, the model fields have the same
+limiting imaginary coordinate. For nonzero \(\Delta\), their scaled
+real drift is \(\ell(n+1)^{2/3}\Delta\log(1+1/n)\), up to an \(O(1/n)\)
+change due to rescaling the first field. If both model fields had the
+same limit, the
+[double-zero and simple-branch comparison](MULTIVARIATE_PRIVATE_CUBIC_DOUBLE_LIMITS.md)
+would exclude the pair. If \(\Delta=0\), the two model limits coincide.
+The same comparison forces a simple zero with vanishing order
+derivative. The [zero-separation theorem](MULTIVARIATE_HALF_LINE_CUBIC_ZERO_SEPARATION.md)
+and its [negative-temperature extension](MULTIVARIATE_HALF_LINE_CUBIC_NEGATIVE_TEMPERATURE.md)
+show that both exceptional temperature sets are finite. Their
+membership remains unevaluated outside the interval \([-1,1]\)
+excluded by the [uniform central certificate](MULTIVARIATE_HALF_LINE_CUBIC_BOUNDED_TEMPERATURES.md).
+
+The curvature rescaling by itself does not discretize the limiting
+temperature. For example, append a private linear row and choose
+shared rows \((A,A+1)\), \((A,A-1)\) with \(A=n^2\), in a total
+number \(m=A(1-2^{-2/3}T_0 n^{-1/3})+O(1)\). The number \(m\)
+can have either required parity. Choose the orientation counts so
+that \(\Delta-1\) is their signed difference. Then any prescribed
+finite \(T_0\) and any finite limit of \(\Delta/n^{1/3}\) are
+attainable. Indeed \(\sigma=m/A\) and \(c_2\to1/2\), which
+gives \(T\to T_0\). This is a construction of limiting profile
+data.
+
 ## The fixed-terminal obligation
 
 An absolute eventual theorem would leave finitely many terminal
@@ -77,6 +131,17 @@ collisions already at six, as shown by the
 [coefficient-link calculation](MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md).
 A proof at each remaining terminal must retain the links between the
 two orders or use the exact arithmetic of the factorial coefficients.
+At terminal six, [one-private-side separation](MULTIVARIATE_TERMINAL_SIX_ONE_PRIVATE_SIDE.md)
+and the [two-private linear certificate](MULTIVARIATE_TERMINAL_SIX_TWO_PRIVATE_LINEAR.md),
+together with the [other private-degree criteria](MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md),
+cover every profile with any private variable. Thus the remaining
+terminal-six family is fully shared. The same linked angular theorem
+covers \(S\ge6\), and the
+[effective relative-gap bands](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md)
+give explicit angular separation for \(5/4\le S\le6\) under the
+respective relative-gap bounds. Arbitrary fully shared profiles
+in the remaining intermediate range are open.
+
 A prescribed finite set of primes and precisions alone cannot give
 a universal exclusion. The
 [simultaneous prime-power construction](MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md#a-simultaneous-obstruction-at-finitely-many-primes)
@@ -85,7 +150,11 @@ to their binomial polynomials at all the prescribed moduli, within
 any open positive curvature interval. In particular, the ordinary
 Newton and residual screens at those moduli allow both candidate
 common-factor degrees at terminal six.
-
+The [marked-row Eisenstein criterion](MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md)
+gives examples in every degree using a prime selected from the
+exponent data. It can also extend any fixed profile by two balanced
+shared rows with arbitrarily small added curvature, preserving
+private degrees and total-degree difference.
 
 At each terminal, coprimality over \(\mathbb Q\) gives the assertion
 over any characteristic-zero field by the rational Bézout identity.

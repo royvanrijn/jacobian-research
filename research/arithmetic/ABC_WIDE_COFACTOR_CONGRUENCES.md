@@ -1588,3 +1588,623 @@ complete dictionaries must evade every such cover in the
 complete-letter plane. A determinant curve in grouped root
 variables does not provide a bounded-degree complete-letter
 cover without further arithmetic information.
+
+## An absolute curve saving with arbitrary fixed-budget degrees
+
+There are absolute \(\sigma,\lambda_0>0\) such that at every
+fixed \(0<\lambda<\lambda_0\) and every finite degree cap \(D\),
+\[
+ \#\{a+b=c\le X_0:\ \gcd(a,b,c)=1,\
+     \operatorname{rad}(abc)<c^\lambda,\ F(A,B)=0\}
+ \ll_{\lambda,D,\varepsilon}
+ X_0^{(1/3-\sigma)\lambda+\varepsilon}
+ \tag{ACG}
+\]
+uniformly in every nonzero \(F\in\mathbb Q[A,B]\) of degree at
+most \(D\). The degree cap may grow arbitrarily as
+\(\lambda\to0\). At a fixed budget it is fixed in the inner
+height limit.
+
+By (ACD) we may factor \(F\), discard the bounded fibres
+fixing a complete letter by (FT1), and use polynomial coefficient
+height on a geometrically integral component with positive
+bidegrees. Each step holds with constants depending on the
+chosen fixed-budget degree. The new input compared with
+(ACD) is an exact divisibility constraint on the valuation
+orders that any given branch can accommodate.
+
+### Exact divisibility on Puiseux branches
+
+Write \(d_A=\deg_A F\) and let \(q_j\) be the least ramification
+denominators of the Laurent Puiseux roots \(f_j(B)\) in \(A\).
+In the common variable \(s=B^{1/M}\), where \(M=\operatorname{lcm}_j q_j\),
+rotating \(s\) permutes the roots. An orbit containing branch \(j\)
+has size \(q_j\), so the sum of these sizes over distinct orbits
+is \(d_A\).
+
+Augment the bad support of (ACD) by the primes dividing \(M\)
+and the rational ramification primes of all the coefficient
+fields of these series. Bilu–Borichev's Theorem 8.5 applies to
+Laurent Puiseux series and bounds the sum of their normalized
+logarithmic discriminants by \(O_D(1+\log H(F))\). Each
+coefficient field has degree at most \(d_A\), since conjugates
+of a series are distinct roots of the same equation when their
+coefficients differ. Thus the augmented prime product also has
+polynomial height. Apply the same construction in the other
+orientation. Discard points where a leading coefficient or
+discriminant of the univariate equation vanishes at a witness
+value. These are boundedly many by the two bounded projection
+fibres. For every remaining witness, specialization as in (ACD)
+gives distinct evaluated roots at every good prime dividing the
+opposite letter, by the discriminant identity.
+[Quantitative Eisenstein and discriminant theorems, Theorems 6.4 and 8.5](https://doi.org/10.1017/S144678871300013X)
+
+At a retained \(p\) with \(e=v_p(B)>0\), take a finite unramified
+extension \(E/\mathbb Q_p\) containing all the embedded coefficients
+of the series, the \(M\)-th roots of unity, and an \(M\)-th root
+of the unit part of \(B\). The last inclusion is possible by
+Hensel over a suitable residue field because \(p\nmid M\).
+Writing \(r=M/\gcd(M,e)\), the extension \(E(s)/E\) has degree
+\(r\), as is seen by the value group, or by Eisenstein for
+\(p^{1/r}\). It acts on \(s\) by the cyclic subgroup of order
+\(r\) in the \(M\)-th roots of unity. If \(f_j(B)=A\) is rational,
+this subgroup fixes its evaluated value. Distinctness of the
+specialized roots then forces the corresponding formal branch to
+be invariant under that subgroup, since the rotations permute
+the formal roots. The stabilizer of branch \(j\) has order
+\(M/q_j\). It follows that
+\[
+                        q_j\mid e .
+ \tag{ACG1}
+\]
+For unit \(A\) the branch has order zero as in (ACD). Its
+parameter precision is \(e/q_j\), giving both the integer
+residue classes of \(A\) and the Taylor divisibility of (ACD).
+The series are convergent in this finite local extension,
+and its Galois action commutes with evaluation.
+
+### The weighted lock criterion with varying bidegrees
+
+Suppose a sequence of actual one-third endpoint boxes lies on
+such curves. Strip and fix the parts of \(A,B\) supported on
+the augmented exceptional primes as in (ACD). Any positive
+loss of root mass would strictly save by counting that letter's
+residual values, then using its bounded curve fibres. Thus
+the residual letters \(A',B'\) keep the weak degree measures
+of mass \(d=1/3\). Their numerical heights can lose escaped
+moment. At least one residual height has positive limit.
+Otherwise both weak measures are supported at zero, in
+contradiction with (GE1). Write \(h_{A,j},h_{B,j}\) for the
+residual height exponents at outer box \(j\), and set
+\[
+ \Lambda_j=\max(d_{A,j}h_{A,j},d_{B,j}h_{B,j}),\qquad
+ s_{A,j}=d_{A,j}/\Lambda_j,\quad s_{B,j}=d_{B,j}/\Lambda_j.
+\]
+Pass to a subsequence on which \(s_{T,j}h_{T,j}\to u_T\)
+for \(T=A,B\), with \(\max(u_A,u_B)=1\).
+Scale the numerical weights of a full lock on \(A'\) by
+\(s_{A,j}\) and on \(B'\) by \(s_{B,j}\).
+
+A combined scaled lock weight strictly above \(\min(u_A,u_B)\)
+at combined root cost strictly below \(d\) suffices. Indeed,
+at each fixed budget use the weighted standard monomials of
+(ACD) with height caps \(H_{T,j}>h_{T,j}\) whose changes on
+multiplication by \(s_{T,j}\) are arbitrarily small.
+Write \(K_j\) for the leading monomial's weight. Multiplying
+the determinant precision threshold by
+\(d_{A,j}d_{B,j}/\Lambda_j\) gives
+\[
+ \frac{d_{A,j}d_{B,j}}{\Lambda_j}\,
+ \frac{H_{A,j}H_{B,j}}{K_j}
+ \le \min(s_{A,j}H_{A,j},s_{B,j}H_{B,j}).
+ \tag{ACG2}
+\]
+This uses \(K_j\ge\max(d_{A,j}H_{A,j},d_{B,j}H_{B,j})\).
+The normalized precision from locks is at least their summed
+scaled numerical weight, since \(q_j\le d_A\) on the
+\(B\)-axis and symmetrically for the other axis. The strict
+margin in the original precision can shrink with budget
+because the determinant size is chosen before the inner height
+limit at that budget. The fixed saving in root cost is what
+contradicts the endpoint.
+
+### Selecting whole-coordinate locks
+
+By (GE1), either both selected letters have positive
+nonatomic mass, or one has zero nonatomic mass and the
+other is wholly nonatomic.
+
+First assume \(c_A,c_B>0\). Both residual limiting heights
+are positive, since a positive nonatomic part contains
+mass on a compact positive-degree interval and the weak
+measures survived the support removal. If \(u_A\ne u_B\),
+freeze almost all the roots on the letter of greater scaled
+numerical height, leaving out a small fixed mass from a
+compact band of positive nonatomic mass there. The rates
+in that band stay bounded after scaling, because the
+letter's residual height tends to a positive number.
+The discarded numerical weight can therefore be chosen
+smaller than the height margin. This gives a lock of cost
+strictly less than \(d\) and scaled weight greater than
+\(\min(u_A,u_B)\).
+
+If \(u_A=u_B=1\), the two scaling factors converge to
+positive finite numbers. The scaled weak measures thus
+retain their positive nonatomic masses. Choose two compact
+bands in these nonatomic parts on opposite letters with
+every scaled degree on one band strictly greater than every
+scaled degree on the other. Such bands exist because
+the nonatomic parts cannot both be supported at one point.
+From the whole letter carrying the lower band, remove a
+small fixed mass of its lower-band roots and add an equal
+mass from the opposite higher band. The substitution has
+a strict numerical gain. Remove a smaller additional mass
+from the lower band to bring the record cost strictly below
+\(d\), while keeping the gain. These operations use whole
+coordinates: by shrinking and omitting finitely many atom
+windows first, enough compact nonatomic mass remains in
+each band, with arbitrarily small maximum individual
+coordinate mass. The weighted determinant now applies.
+This case imposes no growth restriction on the curve degree.
+
+Next suppose \(c_A=0,c_B=d\), so \(B'\) has a positive
+residual limiting height. If \(u_B>u_A\), the same
+near-full \(B'\)-lock gives the contradiction. It remains to
+consider \(u_A=1,\ u_B=u\le1\).
+Assume no individual residual A coordinate tends to mass
+\(d\), passing to a subsequence with a fixed gap between
+its maximal coordinate mass and \(d\). The scaled A
+prelimit measures have mass tending to \(d\) and moment
+tending to one. Their weak limit exists along a subsequence
+by first-moment boundedness. If it loses a positive scaled
+escaped moment, lock an arbitrarily far scaled A tail at
+arbitrarily small root cost, carrying a fixed positive
+numerical gain. Add the top \(B'\)-roots of mass just below
+\(d\). Their scaled moment approaches \(u\) as the cost
+approaches \(d\), including any B escape. This beats the
+required threshold \(u\) at cost strictly below \(d\).
+
+Otherwise the scaled A weak measure has moment one, hence
+mean \(1/d=3\). If it has positive mass strictly above
+three, take a compact band of positive mass there. If it
+does not, the measure equals \(d\,\delta_3\); then take
+a slowly shrinking window about three with mass tending
+to \(d\). In either case greedily select roots from this
+band to have a limiting mass \(p\in(0,d)\) and scaled
+weight at least \(3p\): to get such \(p\), reach a small
+fixed positive target mass, and use the fixed gap between
+the maximum coordinate mass and \(d\) to control the
+overshoot. Extract a subsequence for the actual selected
+mass. If \(u=0\), this A block alone suffices.
+
+If \(u>0\), the B scaling factor tends to \(u/h_B>0\),
+so its scaled weak measure is wholly nonatomic. The
+bottom \(p\) of B mass has scaled weight strictly less
+than \(up/d\le3p\): its average is strictly lower than
+the total finite-moment average of the nonatomic measure,
+and escape can only increase the latter on passing to
+the full moment. Hence the top \(d-p\) B mass has weight
+strictly greater than \(u-3p\), including its escaped
+moment. Add a slightly smaller B mass, retaining the
+strictness. This uses whole coordinates at vanishing
+rounding cost, by nonatomicity. Thus the weighted
+determinant applies also in this case.
+
+For these selections, all weak scaled quantiles and
+escaped moments are interpreted by the upper-quantile formula used in
+(TD3). They can alternatively be
+constructed through compact continuity cutoffs and
+slowly growing cutoffs for escape. In the last case
+scaled A weights, unlike B weights, need not have been
+bounded on compact original degree ranges; first-moment
+boundedness holds after scaling by definition.
+
+### Releasing a full-mass coordinate by thinning the branches
+
+The only remaining case is a single coordinate on \(A'\)
+of normalized mass tending to \(d\). In particular \(c_A=0\)
+by tightness of the original degree measures, so \(B'\) is
+wholly nonatomic by (GE1). Fix the complements of that
+coordinate on \(A'\) at \(o(1)\) cost, writing \(A=Kx^q\)
+with \(x\le X^{(d+o(1))L}\) and \(K\) fixed. Any compact
+positive-degree band on \(B'\) with positive nonatomic mass
+supplies positive-weight locks of arbitrarily small cost.
+
+If \(d_A L\to0\), use any such \(B'\)-lock of weight bounded
+below by a positive number. Its branch records prescribe
+subpower many unit classes for \(A\) modulo a product of
+prime powers of numerical weight at least \(w/d_A\gg L\).
+For any nonempty record \(K\) is a unit at these primes.
+The unit power congruence for \(x^q\) has at most
+\((2q)^{\omega(N)}\) root classes modulo the product \(N\).
+This is the local torsion bound for the units of prime powers,
+including powers of two. It is subpower at each fixed
+budget and truncation. The modulus exceeds the height of
+\(x\), so the \(B'\)-lock records count the triples at
+cost below \(d\), a contradiction.
+
+Otherwise pass to a subsequence with \(d_A L\ge c_0>0\).
+Choose a compact positive continuity band on \(B'\) and
+a strictly sub-\(d\) root mass within it whose numerical
+weight is at least some \(w_0>0\). For any fixed \(\theta>0\)
+there are at most \(1/\theta\) rotation orbits on \(B=0\)
+with ramification order \(q_j\ge\theta d_A\), since the
+orbit sizes sum to \(d_A\). By (ACG1), every good prime
+using one of these orbits has original degree \(e\) with
+\(eL\) a positive multiple of a spacing \(q_j L\ge\theta c_0\).
+Within the chosen compact band this is a bounded number
+of locations. Along a further subsequence these locations
+have a finite set of limits, and wholly nonatomicity of
+\(B'\) makes the corresponding total root mass tend to zero.
+Discard all those original degree positions. The bounded
+band can be chosen below the packed anatomic index, and its
+retained root factors are squarefree. After the support
+stripping each prime in these positions has precisely its
+original degree as valuation on \(B\). Thus every prime
+in a \(B'\)-lock on the remaining positions has \(q_j<\theta d_A\).
+We can choose the lock with weight at least \(w_0/2\) and
+cost strictly below \(d\). Its precision is at least
+\(w_0/(2\theta d_A)\). Choose \(\theta\) small enough that this
+exceeds \(H_B/d_A\) by a fixed factor, with \(H_B\) a numerical
+height upper cap on \(B'\) close to its limiting height.
+The weighted determinant threshold is at most \(H_B/d_A\),
+and the records again give a strict saving. This covers
+arbitrary growth of the fixed-budget degrees.
+
+If the stated absolute gap and budget threshold did not
+exist, choose budgets tending to zero, gaps tending to zero,
+and finite degree bounds witnessing failure. At each fixed
+budget and degree bound take an unbounded inner height
+sequence, with anatomic losses as small as required, before
+passing to the next budget. The unrestricted one-third
+bound and the usual shell extraction give \(L/\lambda\to1\)
+and \(d\to1/3\). The preceding proof excludes that sequence.
+This proves (ACG) with a uniform exponent and the stated
+degree-dependent constants. It also excludes covers by at
+most \(X^{\theta\lambda}\) such curves for any fixed
+\(\theta<\sigma\), by summing the uniform bound.
+
+
+### Degrees bounded by a power of the logarithm of height
+
+There are absolute \(c_*,\sigma_*,\lambda_*>0\) such that
+the bound in (ACG), with \(\sigma_*\) in the exponent,
+also holds uniformly for all nonzero equations of degree
+at most \((\log X_0)^{c_*}\) at height at most \(X_0\).
+The implicit constant may be taken to depend on \(\lambda,\varepsilon\).
+This allows the curve to vary with the inner height.
+
+The polynomial-height reduction is quantitative. For degree \(D\),
+maximal minors use \(O(D^2)\) columns of monomial values bounded
+by \(X_0^D\), so \(\log H(F)\ll D^3\log X_0\). The factor
+selection and bounded projection fibres cost polynomial factors
+in \(D\). At an endpoint the shell height \(X\) has
+\(\log X\sim\log X_0\). Bilu–Borichev Theorems 6.4 and 8.5
+give bad-prime log product \(O(D^7\log X)\) in both orientations,
+including the reciprocal integrality and field ramification.
+In the latter estimate the discriminant degree is \(O(D^2)\),
+the factor in Theorem 8.5 is \(O(D)\) times that degree, and
+unnormalizing the field discriminants costs at most one factor
+\(D\). Primes dividing any Puiseux denominator are at most \(D\).
+The excluded discriminant specializations give polynomially
+many points in \(D\) and hence subpower loss.
+
+For \(D\le C(\log X)^c\), the number of exceptional primes is
+\(O((\log X)^{1+7c})\). Fix \(0<c<1/20\) and set \(\eta=10c\).
+By ordering the distinct primes, Euler–Rankin gives
+\[
+ \log\prod_{p\in S}(1-p^{-\eta})^{-1}
+ \ll_\eta (1+\omega(S))^{1-\eta}=o_c(\log X)
+\]
+since \((1+7c)(1-\eta)<1\). Apply it to the single product
+of the unpowered supported parts of the original roots,
+bounded by \(X^{L+o_X(1)}\) in the box. Allocation among
+the finitely many root positions at fixed truncation is
+divisor-many. Thus fixing all supported factors costs at
+most \(10c+o_X(1)\) in normalized units. In the overlap
+exclusion it suffices for the normalized root mass removed
+on a letter to exceed this cost by a positive margin.
+In a contradiction sequence with \(c\to0\) the original
+weak measures survive as before. For the branch records
+on a lock of cost \(t\), its underlying radical is
+at most \(X^{(t+o_X(1))L}\). The elementary bound for the
+number of its distinct primes gives
+\[
+  \log D\cdot\omega(N_A N_B)\le (ct+o_X(1))L\log X .
+\]
+The unit power-congruence records on the sole remaining
+coordinate still cost subpower, because its anatomic power
+is fixed at the inner height limit. All these estimates
+are uniform at fixed inner budget, truncation and \(c\).
+
+For the determinant in (ACG2), use caps
+\(H_i=(\Lambda/D_i)(u_i+\epsilon)\), with the prelimit
+\(u_i=D_i h_i'/\Lambda\) and small fixed outer \(\epsilon>0\).
+At least one ordinary residual height has a fixed positive
+lower bound along the endpoint sequence. Thus
+\(C_\epsilon/D\le H_i\le2D\) for a positive
+\(C_\epsilon\) independent of inner height.
+The strict normalized locking margin gives
+\(W>(1+\gamma)H_AH_B/K\) with fixed outer \(\gamma>0\).
+For the \(B'\)-only argument choose \(H_i=h_i'+\epsilon\)
+and use the same inequality via \(H_AH_B/K\le H_B/d_A\).
+Put \(C_0=K/(H_AH_B)\ge1/(2D)\). Counting the two
+standard-monomial strips by arithmetic progressions and
+summing their weights give
+\[
+ J_T=C_0T+O_\epsilon(D^4),\qquad
+ S_T=C_0T^2/2+O_\epsilon(DT+D^6)
+\]
+for weight cutoff \(T\ge K\), where \(S_T\) is the sum of
+column weights. Indeed each strip uses at most \(D\) rays,
+with initial weight \(O(D^2)\) and step at least
+\(C_\epsilon/D\). With \(T=C_{\epsilon,\gamma}(1+D)^{10}\)
+the Taylor divisor beats the product of column bounds by a
+fixed multiplicative margin in logarithmic exponents.
+The Leibniz factor \(J_T!\) is absorbed because \(J_T\) has
+polynomial size in \(D\) and \(\log J_T=O(\log\log X)\).
+Bézout then gives polynomially many points per record in \(D\).
+
+If the asserted constants did not exist, choose \(c\to0\)
+alongside prospective exponent gaps and budgets tending to
+zero. At each fixed inner budget and \(c\), the estimates
+above are uniform even for degree varying with height.
+Take the unbounded height witnesses beyond the inner
+error thresholds. The exceptional support and branch
+record losses tend to zero in normalized units along the
+outer sequence. The strict lock margins and exact branch
+divisibility in (ACG1) therefore exclude the endpoint by
+the same whole-coordinate selection and thinning argument.
+
+## Affordable whole-coordinate pair locks at every balanced endpoint
+
+At every actual limiting \(abc\) box with normalized edge
+exponent \(d=1/3\), at least one pair of letters admits
+two full divisor locks of combined normalized root cost
+strictly below \(1/3\) and combined numerical weight
+strictly above the shorter numerical height of those
+two letters. The construction permits primes of any normalized size. In fact the same
+conclusion holds on any pair on which both limiting
+nonatomic root masses are positive.
+
+There are absolute positive margins for at least one
+pair in actual balanced endpoint sequences. Thus the
+affordable-lock hypothesis in the fixed-record target
+reduction can be imposed for every endpoint, including
+when macroscopic primes prevent rounding the fractional
+top quantile. A distinct-target count for the resulting
+record fibres is still separately needed.
+
+### Small full blocks in diffuse bands
+
+Name the chosen pair \(U,V\), with normalized root
+masses \(l_U=l_V=1/3\) and numerical height limits
+\(h_U,h_V\). If a compact positive continuity band
+has positive nonatomic mass on a letter, then any
+fixed smaller mass can be selected there as a union
+of whole original root coordinates, with a vanishing
+normalized rounding error. To justify this
+independently of atoms in the band, for any fixed
+cutoff \(\epsilon>0\) the coordinates of mass at least
+\(\epsilon\) are bounded in number. Any weak limit of
+their restriction to the band is purely atomic.
+Discarding them therefore leaves at least the
+nonatomic mass in the band up to vanishing errors.
+Then take the cutoff slowly to zero. Greedy addition
+of the remaining whole original positions can attain
+the desired mass at vanishing overshoot. The same
+observation allows deletion of such a prescribed
+block from the full product on a letter. The
+selected indices are fixed within each sufficiently
+fine box, and the record count is bounded by their
+combined normalized root cost, with only the usual
+fixed-truncation loss.
+
+### Removing or exchanging a diffuse block
+
+If \(h_U>h_V\), start with the whole product of
+the original power factors on \(U\). It has cost
+\(1/3+o(1)\) and numerical weight \(h_U+o(1)\).
+Delete a small fixed positive-mass block from a
+compact diffuse band of \(U\), with upper degree
+\(a<\infty\). Choose its mass \(s>0\) sufficiently
+small that \(a s<h_U-h_V\), with room for
+rounding. The residual full divisor on \(U\) then
+has mass \(1/3-s+o(1)\) and weight strictly above
+\(h_V\). The divisor on \(V\) can be one. The same
+argument applies with the letters reversed if
+\(h_V>h_U\). If a nontrivial lock on the second
+letter is desired, add an arbitrarily small
+positive-weight block from its diffuse part,
+keeping the strict cost margin.
+
+Now suppose \(h_U=h_V\). There are separated
+positive compact continuity bands of nonatomic
+mass, one of upper degree at most \(a\) on one
+of the letters and one of lower degree at least
+\(b>a\) on the other. To see this, if no pair of
+positive support points on opposite letters can
+be strictly ordered in either direction, both
+nonatomic measures must be supported at the same
+single point, impossible. Choose the lower band
+on \(U\) by interchanging letters if necessary.
+
+Choose \(s>0\) smaller than the nonatomic masses
+of both bands and choose \(s'>0\) with
+\[
+                     (a/b)s<s'<s .
+\]
+Start again with the whole original power product
+on \(U\). Delete a block of root mass \(s+o(1)\)
+in its lower band and use the remainder as the
+first full divisor. As the second full divisor
+take a block of mass \(s'+o(1)\) in the higher
+band on \(V\). The combined normalized root cost
+is
+\[
+             \frac13-s+s'+o(1)<\frac13
+\]
+and its numerical weight is at least
+\[
+             h_U-a s+b s'+o(1)>h_U=h_V .
+\]
+Every retained macroscopic prime in \(U\) may be
+kept with its entire original power. No
+macroscopic prime is split into fractional mass.
+
+This counts the actual full height of the starting
+letter, including any escaped numerical moment:
+the deleted block lies in a bounded scaled-degree
+band, so its numerical weight is precisely the
+bounded loss estimated above. Fixed exceptional
+coefficients can be included where needed at
+vanishing normalized cost. Only the whole root
+positions actually selected are enumerated.
+
+### Existence and uniform margin in actual boxes
+
+By (GE1) and its zero-nonatomic alternatives,
+every endpoint pair has nonatomic mass at least
+\(1/3\) in total. In particular at least two
+letters have positive nonatomic mass, so the
+preceding construction is always available for
+some pair.
+
+To obtain absolute margins for actual endpoint
+sequences, suppose there were no absolute
+\(\eta>0\) such that some pair has a prescribed
+whole-coordinate lock of cost at most
+\(1/3-\eta\) and weight at least the shorter
+height plus \(\eta\), up to vanishing errors.
+Choose a diagonal sequence of actual populated
+boxes tending to the endpoint in which every
+pair fails these conditions at tolerances
+\(\eta_j\to0\). As in (PQ2), fix each inner height,
+box and truncation loss before passing to the
+outer sequence. Pass to limiting heights and
+weak measures. By (GE1) two letters still have
+positive nonatomic mass on the limiting sequence.
+The preceding construction now chooses fixed
+bands and fixed positive strict margins on that
+pair. Weak convergence on continuity bands, the
+small-coordinate selection argument, and the
+convergence of the full numerical heights
+realize the same margins on sufficiently late
+prelimit boxes. This contradicts the choice
+of the sequence.
+
+The argument does not require nonatomic mass to
+be lower semicontinuous under a separate weak
+limit of profiles. The endpoint hypotheses are
+applied to the final diagonal sequence of actual
+boxes, where (GE1) again supplies its positive
+nonatomic masses.
+
+### Fixed-record and fixed-shift consequence
+
+For the pair \(U,V\) found this way write \(t\)
+for the combined record cost and \(Y\) for its
+two full divisors, including their prescribed
+indices if necessary. The record count is at
+most \(n^{t+o(1)}\). On a nonempty record the
+divisors are coprime by primitivity. If the
+third complete value \(T\) is fixed, the shorter
+term is prescribed modulo their product by
+the signed relation \(U\pm V=\pm T\).
+The product exceeds the shorter height, so
+there is at most one primitive pair per record.
+
+It follows in particular that a primitive
+fixed-shift count for the chosen pair has
+an absolute normalized gap from \(1/3\),
+independent of any prime-size assumption.
+More importantly, the fixed-record
+distinct-target obstruction (PQ4) now applies
+on at least one pair in every balanced endpoint
+sequence, without a separate affordable-record
+hypothesis for the macroscopic-prime sector.
+The remaining estimate concerns the number of
+actual small-radical targets in that record.
+
+
+### The exceptional form for an individually prescribed pair
+
+For completeness one can characterize failure on a
+prescribed pair, allowing prime-resolved full locks
+in this paragraph. Suppose the pair is \(U,V\) and
+one of them, say \(U\), has zero nonatomic mass.
+The zero-mass alternative from (GE1) says that \(V\)
+is then wholly nonatomic. If \(h_U<h_V\), use almost
+all of the taller diffuse \(V\) as before. Thus
+suppose \(h_U\ge h_V\).
+
+If \(U\) has a positive escaped first moment, choose
+its full high-degree tail at arbitrarily small
+root cost and fixed positive numerical weight.
+Keep almost all of \(V\), deleting a small bounded
+diffuse block of strictly larger mass than the
+tail cost, but numerically smaller than the tail
+weight. This gives strict margins. Hence a failing
+pair must have no escaped moment on \(U\).
+
+Write \(l=1/3\). The purely atomic degree measure
+on \(U\) now has mean \(h_U/l\ge h_V/l\).
+If it is not a single mass-\(l\) atom, it has some
+atom of mass \(0<\beta<l\) at a degree
+\(r\ge h_V/l\). Keep the entire \(U\) window for
+this atom. Its cost and weight tend to \(\beta\)
+and \(r\beta\). Let \(B_V(v)\) be the bottom
+numerical moment of the diffuse \(V\) measure
+at mass \(v\). Its bottom \(\beta\)-mean is
+strictly below its full mean, because it is
+nonatomic and \(0<\beta<l\). In particular
+\[
+     B_V(\beta)<\beta h_V/l\le r\beta ,
+\]
+where the upper bound still holds if \(V\) has
+its own escaped moment. Choose a small
+\(\epsilon>0\) with \(\beta+\epsilon<l\) and
+\(B_V(\beta+\epsilon)<r\beta\) by continuity.
+Remove the bottom \(\beta+\epsilon\) of \(V\)
+at vanishing overshoot, using bounded continuity
+cutoffs and whole small root positions. The
+retained \(V\) divisor includes any escaped
+moment. Together the \(U\) window and the
+\(V\) remainder have cost \(l-\epsilon+o(1)\)
+and weight strictly above \(h_V\).
+
+The only case left is
+\(\nu_U=l\delta_r\), with \(r=h_U/l\), no escape.
+If every individual prime in the shrinking
+\(U\) window has normalized logarithm at most
+\(l-\gamma\) for a fixed \(\gamma>0\), a positive
+proper subfactor of its roots can be chosen
+with total mass bounded away from zero and \(l\).
+Indeed take one prime of mass at least
+\(\gamma/4\) if available, or add primes of
+smaller mass until first reaching \(\gamma/4\).
+The mass \(\beta\) obtained lies in a compact
+subinterval of \((0,l)\). At its original degree
+powers the factor weight is \(r\beta+o(1)\).
+The same bottom-mass exchange applies, with a
+uniform small \(\epsilon\) because
+\(r\beta-B_V(\beta)>0\) throughout this compact
+interval. If necessary bin the adaptive divisor
+size before enumeration. Counting all its
+possible prime-resolved records incurs only the
+root cost of the selected subfactor, as in (PQ3).
+
+Consequently a failing subsequence of pairs and
+prime configurations must have a single prime
+on \(U\) whose normalized logarithm tends to
+\(l\), and whose numerical power carries the
+entire height \(h_U\ge h_V\). Conversely in this
+configuration all selections of total cost at
+most \(l-\eta\), for fixed \(\eta>0\), must omit
+that prime. The other \(U\)-factors have numerical
+weight tending to zero and the \(V\) lock has
+weight at most \(h_V+o(1)\). Thus a fixed positive
+surplus over the shorter height is impossible
+on this prescribed pair. The other two letters
+are fully diffuse and their pair remains
+affordable by the earlier argument.

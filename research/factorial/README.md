@@ -187,6 +187,21 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Uniform eventual coprimality for positive-curvature fully shared profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Terminal-six closure for signed unit gaps at bases divisible by 275 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PADIC_UNIT_GAPS.md) |
 | Exact digit recognition and obstruction to fixed-prime fixed-precision screening | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md) |
+| Absolute eventual thresholds at vanishing shared curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_VANISHING_CURVATURE_EVENTUAL.md) |
+| Uniform moving cubic endpoint reduction for one private linear row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MOVING_PRIVATE_CUBIC_MODEL.md) |
+| Uniform normalized root annulus at bounded private degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOUNDED_PRIVATE_ROOT_ANNULUS.md) |
+| Absolute eventual cutoff for all fully shared ordinary profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Uniform exclusion in the escaping one-private linear endpoint windows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_ENDPOINT_UNIFORM_THERMAL_TAILS.md) |
+| Uniform regular exclusion for one private side | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_ONE_PRIVATE_REGULAR_COMPLEMENT.md) |
+| Finite contour activation for varying subcritical one-private supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_SUBCRITICAL_PRIVATE_ACTIVATION.md) |
+| The half-line cubic exceptional temperatures are locally finite | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ZERO_SEPARATION.md) |
+| Half-line cubic zero separation at large negative temperature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_NEGATIVE_TEMPERATURE.md) |
+| Double-zero exclusion in the bounded one-private cubic window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_DOUBLE_LIMITS.md) |
+| Terminal-six separation in high-curvature and private-degree bands | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md) |
+| Reduction of the general eventual problem to a finite set of cubic temperatures | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Certified zero separation at zero temperature for the half-line cubic | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ZERO_TEMPERATURE.md) |
+| A variable-prime Eisenstein criterion at every terminal | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md) |
+| Terminal-six coprimality for one small private side with low shared curvature | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_SMALL_SHARED.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -279,7 +294,9 @@ Scope limits:
 - An exact Rice contour gives the upper stationary equation for arbitrary supports and a monotone lower phase. For fixed fully shared equal-degree profiles at and above the cusp, both saddles contribute near the equal-modulus graph and their consecutive phases separate. Private profiles have exact single-sheet geometry and local boundary exclusions. The diffuse moving critical window and same-orientation unit-gap prime and post-prime terminals are closed in their stated scopes.
 - Eventual coprimality is proved for every fixed ordinary two-monomial support, with a profile-dependent nonexplicit cutoff. The full complex simple-fold neighborhoods are covered. The real quartic and private cubic critical transitions are included. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
-- Fully shared profiles at curvature bounded away from zero have a uniform eventual threshold. Unbounded curvature is covered for all profiles. The residual large-order regimes are vanishing curvature and bounded curvature with private variables on exactly one side. Unrestricted fixed-terminal closure is open, starting at six. Prescribed finite prime-power screens can all fail inside any positive curvature interval.
+- Fully shared supports and supports with private variables on both sides have an absolute eventual threshold. The only residual unbounded-terminal regime has bounded curvature and private variables on exactly one side. Unrestricted fixed-terminal closure is open, starting at six. Prescribed finite prime-power screens can all fail inside any positive curvature interval.
+- Any degree-unbounded counterexample is reduced to a single private linear row near critical curvature and a bounded moving cubic model. Its limiting temperature belongs to a finite candidate set from same-height distinct model zeros or zero order speed at a simple zero. At terminal six, private degree at least three or weighted curvature S+P at least 34/5 gives angular coprimality. The unrestricted all-terminal theorem remains open.
+- Any degree-unbounded counterexample is reduced to a single private linear row near critical curvature and a bounded moving cubic model. Its limiting temperature belongs to a finite candidate set from same-height distinct model zeros or zero order speed at a simple zero. At terminal six, private degree at least three or weighted curvature S+P at least 34/5 gives angular coprimality. The model is certified at temperature zero, and the fixed-terminal criterion includes variable-prime and small shared-curvature results in their stated scopes. The unrestricted all-terminal theorem remains open.
 
 Tracked obligations (computed states):
 

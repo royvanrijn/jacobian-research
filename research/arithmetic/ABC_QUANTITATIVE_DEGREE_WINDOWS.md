@@ -2757,3 +2757,571 @@ The slope condition (GC2) holds since \(6r_i/(3-r_i)<1\).
 The total freeze and chart cost is \(4\mu=33/100<1/3\).
 Thus the two-curve criterion gives a strict margin in an
 equal-height fully diffuse sector.
+
+## A diffuse terminal count on auxiliary curves
+
+This is a terminal count for a chart once its relevant full
+components are curves and the first chart cost leaves a
+positive margin for an additional lock. The curve dimension and a nonconstant narrow projection
+are hypotheses of this count.
+
+Work at a fixed small radical budget \(L\) in the inner
+height limit. Let \(D\) be the smooth projective normalization
+of a full curve component of the displayed chart equations.
+Let \(P\) be the nonconstant narrow projection in a fixed
+projective embedding, and let \(\phi:D\to\mathbf P^1\) be
+the exact complete odds \(A/B\) from the primitive signed
+relation \(A+B=C\). Assume \(\phi\) is nonconstant, the
+primitive projective height of the narrow sample is at most
+\(X^{hL+o_X(1)}\) with bounded \(h\), and
+\[
+ k=\deg(\phi)\le K/L
+\]
+for fixed \(K\) along the outer sequence. Degrees of the
+defining equations may depend arbitrarily on \(L\) but
+are fixed before the inner height limit. Their coefficient
+heights, and the heights of all actual full chart coordinates,
+are polynomial in \(X\) at that fixed budget.
+After the good-model exceptional support is removed, suppose
+an allowed letter \(T\) has positive limiting nonatomic root
+mass. Given any fixed additional normalized
+lock allowance \(\mu>0\), the sample on \(D\) can be counted
+at cost less than \(\mu+o(1)\), for all sufficiently late
+outer budgets. The result also holds if the narrow projection
+degree varies with \(L\).
+
+### Good models and exact branch divisibility
+
+At fixed \(L\), spread the full normalization, the
+two morphisms \(\phi\) and \(D\to P\) (composed with the
+given projective embedding), and the divisors above
+\(0,-1,\infty\) over coefficient strata. On each stratum
+the reduced supports of these divisors, separated by
+multiplicity, are finite étale and their Cartier
+multiplicities are preserved. The proof is by Noetherian
+induction and finite-presentation descent. Over the generic
+point of each integral coefficient stratum take the smooth
+projective normalization, the two morphisms, and the support
+schemes partitioned by order. Spread to a principal dense open,
+including the ideal identities for the fibre divisors and their
+finite étale support. Descend through the closed complement, and
+spread the finite list of resulting pieces over \(\mathbb Z[1/N]\).
+Each integer coefficient tuple extends over \(\mathbb Z_p\) in its
+piece outside the primes of \(N\) and of the evaluated finitely
+many defining inequations. At each
+fixed budget the exceptional support thus divides a
+polynomial-height integer \(J\), evaluated using a
+finite principal-stratum condition. The genus is
+irrelevant to this construction.
+[The Stacks Project, Curves and function fields](https://stacks.math.columbia.edu/tag/0BXX)
+· [Descending relative objects](https://stacks.math.columbia.edu/tag/01ZM)
+· [Henselian lifting for finite étale algebras](https://stacks.math.columbia.edu/tag/0D49)
+
+One may take the rational component equations to have
+polynomial height. Indeed, components of bounded degree
+in the fixed inner limit meet every hypersurface of a
+fixed degree not containing them in boundedly many
+points. Beyond that bound, interpolate the entire
+fixed-degree space of equations containing the component
+from bounded-height actual points, using fixed-size
+evaluation minors. The degree-\(d\) equations of a
+projective curve of degree \(d\) cut it out set-theoretically:
+projection to a plane separates any exterior point by
+an equation of degree at most \(d\). Components that do
+not descend to \(\mathbb Q\) have only boundedly many
+rational points by conjugate intersection. Singular
+characteristic-zero points likewise account for a bounded
+exception. The odds rational expression has polynomial
+height and fixed degree at each inner limit, so it may be
+included in the coefficient data when spreading.
+
+Strip primes of the exceptional integer from the root
+records and freeze their integer parts and valuation records
+at subpower cost by the fixed-support divisor bound. Refine the
+residual root-coordinate boxes. The removed mass need not be
+small inside each costly chart. The assertion therefore assumes
+positive nonatomic mass of the retained roots, and the last
+section gives a fallback when this fails for a chart starting
+with a fixed full modulus.
+
+At a retained prime \(p\), a lock \(p^e\Vert T\) places
+the normalized point above the corresponding one of
+\(0,-1,\infty\) in the special fiber of \(\phi\).
+Primitivity identifies \(e\) with the valuation of the
+appropriate local target coordinate \(\phi,\ \phi+1\),
+or \(1/\phi\). The good-model point lifts over
+\(\mathbb Z_p\) by properness. Its closed branch lifts to
+a section of the finite étale support. In its smooth
+completed chart \(\mathbb Z_p[[\tau]]\), the target
+coordinate is a unit times \(\tau^m\), with \(m\) the
+geometric branch multiplicity. Thus exactly \(m\mid e\)
+and the parameter precision is \(p^{e/m}\). There
+are at most \(k\) choices per prime for the branch,
+giving subpower record cost in the inner limit.
+
+### Remove the large branches from a diffuse band
+
+Fix a compact positive interval \([s,R]\) with positive
+nonatomic mass on \(T\). Choose a compact portion in
+that band of mass in \((0,\mu)\) with small maximum
+prelimit root coordinate, avoiding sufficiently many
+atomic windows. Its limiting numerical weight is
+bounded below by a positive \(w_0\).
+For each fixed \(\eta>0\) there are at most \(K/\eta\)
+boundary branches with \(mL\ge\eta\), because their
+multiplicities sum to \(k\) on any given target fiber.
+The original degree positions in \([s,R]\) divisible
+by any such \(m\) have vanishing nonatomic mass.
+Indeed each \(eL\) is a multiple of a spacing \(mL\)
+bounded below by \(\eta\), hence belongs to at most
+\(R/\eta+1\) positions for each branch. On a subsequence
+the finitely many spacings converge in the extended
+positive line, and the finite limiting set captures no
+nonatomic mass. This can equivalently be checked by
+removing finitely many atomic windows first and comparing
+limiting interval masses. Discard these entire positions.
+The remaining compact block still has a positive
+lower bound on mass and numerical weight. It may
+be selected as a fixed set of actual original degree
+positions at each budget, at cost less than \(\mu\). These
+bounded-scale original roots are squarefree and have disjoint
+prime supports, with any packed exceptional index outside the
+chosen band. Retained primes are also outside the fixed
+anatomic coefficient support. Thus their exact complete-term
+valuation is their original degree position.
+
+Every retained prime on its lock has \(mL<\eta\).
+For the chosen residue record the sum of logarithmic
+precisions is therefore at least
+\[
+ W\ge \frac{L}{\eta}\sum_{p^e\ {\rm locked}}e\log_Xp
+     \ge \frac{w_0 L}{2\eta}
+\]
+eventually. We can choose \(\eta\) small, independently
+of the outer budget, so that \(W>2hL\) with margin.
+
+### Determinant on the narrow projection
+
+Take a homogeneous standard monomial basis on \(P\) in
+degree \(t\). It has \(J_t=(\deg P)t+O_P(1)\) elements
+and is linearly independent on \(P\). Use primitive
+projective integer representatives of all sample
+narrow points. For a retained \(p\), the normalized
+branch reduces to a fixed image point in \(P(\mathbb F_p)\).
+Choose a projective coordinate nonzero at that image
+and divide each row's monomial evaluations by its
+\(t\)-th power, which is a \(p\)-adic unit. The resulting
+monomial functions are regular in the smooth branch
+chart and their Taylor series are integral. The
+precision \(p^{e/m}\) gives determinant divisibility
+by \(p^{(e/m)J_t(J_t-1)/2}\). The archimedean size of
+the original integer determinant is at most
+\(X^{(hL+o_X(1))tJ_t}\) up to a fixed factor.
+At fixed budget choose \(t\) large so that
+\(W>2hL/\deg P\) implies determinant vanishing.
+A nonzero auxiliary of degree \(t\), not identically
+zero on \(P\), therefore vanishes on the entire
+narrow record. Bézout bounds the projected points
+uniformly in height, and the nonconstant morphism
+\(D\to P\) has bounded fibers at fixed budget.
+The only large factor is the number of chosen
+full root-lock records, as claimed.
+
+In a two-first-determinant application, for a narrow
+curve \(P\) of bounded degree and nonzero specialized
+relations in the wider variables \(v_i\) of fixed
+degree, the full extension degree is bounded. Each
+narrow function has bounded degree on \(D\), and the
+projective coefficient height of the relation in
+\(v_i\) is at most \(\sum_j R_{ij}H_D(z_{ij})\).
+The leading-term valuation bound gives
+\(H_D(v_i)\le\sum_jR_{ij}H_D(z_{ij})\).
+Thus \(R_{ij},|q_{ij}|=O(1/L)\) in the exact odds
+representation imply \(k=O(1/L)\). Large-degree
+narrow curves can instead be counted by the uniform
+rational curve bound, with a cutoff depending on
+the available normalized saving. Consequently the
+curve terminal needs neither rational normalization,
+a geometric divisor-disjointness hypothesis, nor
+a small degree ratio \(R_{ij}/|q_{ij}|\), provided
+one extra cheap diffuse lock fits within the saving.
+
+### Fallback when the original chart fixed a full modulus
+
+Suppose the original chart begins with a fixed positive-weight
+full modulus on the third letter, of fullness order \(1/L\),
+with the other two letters free. If either free residual
+letter has positive nonatomic mass after stripping the
+exceptional support, use it for the additional lock above.
+Otherwise both residual weak measures are purely atomic. Freeze
+the exceptional-support factors at subpower cost. In each free
+letter retain the atoms in finitely many narrow windows
+carrying all but arbitrarily small residual root mass.
+Freeze all factors outside those and the zero window at
+arbitrarily small normalized cost. A sufficiently large
+degree cutoff also puts the escaped numerical tail in this
+small-cost freeze. Each positive retained window gives one
+grouped root at the window's representative exponent.
+The zero windows and the exponent corrections form a rational
+cofactor of height \(X^{o(1)}\). Apply amplified (GW) with the
+already fixed full modulus, as in the proof of (GE1). This
+releases the exact represented ratio at vanishing normalized
+cost, recovering the complete triple by primitivity.
+Thus this particular starting chart covers both residual
+possibilities, with arbitrarily small extra cost in the
+subsequential limiting argument.
+
+## Dimension descent from diffuse locks on bounded-degree full components
+
+Let \(L\to0\) denote the outer radical budget, with the height
+limit \(X\to\infty\) taken at each fixed budget. Consider a
+small-budget chart of primitive triples. Suppose that it has
+already fixed a positive-weight full modulus on the third
+letter, with fullness of order \(1/L\). The remaining exact
+odds \(A/B\) are a fixed scalar times a Laurent monomial in the
+nonzero coordinates of a full algebraic component \(V\) in
+a fixed product of projective lines. The monomial exponents
+may depend arbitrarily on the budget. The fixed scalar and
+all actual full chart coordinates have polynomial height
+at each fixed budget.
+
+Assume the degree of \(V\) in its Segre embedding is bounded
+throughout the outer limit, and that the actual points belong to an
+open where the projection to the chosen narrow coordinates
+is quasi-finite. The corresponding primitive projective
+narrow heights are \(X^{hL+o_X(1)}\) for bounded \(h\).
+Then the count on \(V\) costs arbitrarily small additional
+normalized exponent beyond the initial chart. The degree
+hypothesis concerns the full component, including the wider
+coordinates. An ordinary first auxiliary can have narrow
+degree of order \(1/L\), which its full degree must then accommodate.
+
+### Uniform log models, independent of the odds exponents
+
+For full subvarieties of bounded degree in a fixed ambient
+space, the families underlying the following construction
+have finite type. One can use bounded-degree coefficient
+tuples: for a projective integral variety of dimension \(d\)
+and degree \(D\), the degree-\(D\) forms vanishing on it cut
+it out set-theoretically. For an exterior point choose a
+linear projection to \(\mathbf P^{d+1}\) whose center
+avoids its join with the variety. The image is a hypersurface
+of degree at most \(D\). Its equation pulls back to an
+equation separating the point, and its degree may be raised
+to \(D\) by a linear form nonzero there. In smaller ambient
+dimensions the assertion is immediate. The bounded geometric
+complexity loci are constructible. Split them into finitely
+many integral affine locally closed coefficient pieces, and,
+after shrinking each generic piece, use a flat geometrically
+integral model for the reduced generic variety. Its support
+agrees with the original projective locus by the generic
+radical equality, which descends after shrinking.
+
+Over the generic field of a piece, resolve the full variety
+and the union of the zero and pole loci of all coordinate
+functions used in the complete odds. Choose a smooth
+projective resolution, with geometrically simple normal
+crossings boundary, which is an isomorphism over the smooth
+open in the coordinate torus. Resolve the divisors of the coordinate functions themselves,
+so the model is independent of the exponents used to form the odds. Thus the choices of orders of the coordinate functions
+along boundary divisors are part of the fixed construction,
+independent of the exponents in the odds. Over a finite
+generic separable extension, all geometric boundary
+components can be labeled separately. Spread this extension
+as a finite étale cover of the base. Spread the models,
+maps, boundary divisors and all normal crossings and
+Cartier divisor identities to a dense principal open.
+On the complement use Noetherian induction. There are
+only finitely many pieces and coefficient localizations,
+depending on the ambient and the full degree bound. The
+models, their boundary component counts, and projective
+embedding degrees are therefore bounded in the outer limit.
+[Bierstone–Milman, Canonical desingularization in characteristic zero](https://arxiv.org/abs/alg-geom/9508005v2)
+[The Stacks Project, Descending relative objects](https://stacks.math.columbia.edu/tag/01ZM)
+
+The component equations can be taken of polynomial height
+after a bounded number of dimension drops. If \(V\) has
+degree \(D\), evaluate every degree-\(D\) monomial on its
+actual sample. The evaluation kernel has a basis of rational
+polynomial-height forms, by integer minors using the given
+full coordinate heights. It contains the degree-\(D\) ideal
+space of \(V\), with scalars extended as needed. If the two
+spaces agree, the interpolation basis cuts out \(V\)
+set-theoretically and has polynomial height. If they do not
+agree, one basis polynomial does not vanish identically on
+\(V\), and all actual sample points lie in its proper
+intersection with \(V\). Bézout bounds the degrees and
+number of components of this intersection solely in terms
+of the input degree bound. Repeat on a component carrying
+the largest sample. This either supplies the asserted
+equations or lowers dimension again. Quasi-finiteness
+continues to hold on the retained original open.
+The input odds scalar already has polynomial
+height. The integer product \(J\) of the finitely many evaluated
+principal-stratum denominators, the scalar numerator and
+denominator, and the fixed anatomic exceptional coefficients
+therefore has polynomial height in the inner limit.
+At \(p\nmid J\) the whole construction specializes over
+\(\mathbb Z_p\). Boundary labeling over the finite étale
+cover, if necessary, is over an unramified extension of
+\(\mathbb Z_p\) of bounded degree. A point originally rational
+over \(\mathbb Q\) has its residue on the original smooth
+model over \(\mathbb F_p\), so this extension does not
+multiply the residue chart count by a power of \(p\).
+
+Singular characteristic-zero points of the full component
+are on a subvariety of bounded degree and lower dimension.
+It can be separated as another induction branch. Other
+actual points in the torus lift uniquely to the smooth
+model, and their \(p\)-adic lifts extend over the valuation
+ring by properness. Strip and freeze the prime parts
+supported on \(J\) at subpower cost. This need not preserve
+all the original nonatomic mass in an individual chart.
+
+### At least one high-precision coordinate per retained prime
+
+Suppose one of the two free letters has positive nonatomic
+mass after stripping; take a compact positive scaled-degree
+band with positive such mass. Its bounded-degree anatomic
+roots are squarefree with disjoint prime supports, and the
+packed exceptional index can be kept outside the band.
+Choose an additional record of whole root coordinates of
+small positive normalized mass \(\mu\) from it. Its exact
+radical weight is at least \(bL\) for some \(b>0\), after
+dyadic boxing. The precise eligible positions for this
+lock are chosen below.
+
+At a good prime on this letter the exact exponent \(e\)
+is the valuation of \(A/B\) or its inverse, because the
+other free letter is a unit by primitivity. At the lifted
+point, the normalized coordinate valuations give
+\[
+ e=\sum_i a_i v_p(\tau_i).
+\]
+The \(a_i\) are signed local orders of the exact Laurent
+monomial along the finitely many labeled boundary components;
+the fixed scalar is a unit. At most \(d\) local boundary
+coordinates vanish in the residue fiber, and all
+\(v_p(\tau_i)\) are nonnegative integers. Orders of
+components not present at the residue point contribute zero.
+Thus, if all \(v_p(\tau_i)<U\) for some fixed integer \(U\),
+the scaled degree \(eL\) is one of at most \((U+1)^r\)
+numbers, where \(r\) is the total number of components.
+This includes signed cancellations. The precise numbers
+may vary with the budget, but their count is uniformly
+bounded. Pass to a subsequence for their locations in the
+compact band, omit the finite limiting set and sufficiently
+many other atomic windows, and discard the corresponding
+degree positions. The discarded positions cannot carry
+positive limiting nonatomic mass. Thus \(\mu,b\) can be
+chosen with positive fixed bounds from the retained diffuse
+mass independently of how large the fixed \(U\) is: use a
+portion of mass strictly smaller than the available compact
+diffuse mass, discard windows of total diffuse mass as
+small as desired, and use the band lower degree bound for
+\(b\). The prelimit root rounding loss tends to zero after
+removing large atomic windows. Every retained lock prime
+now has one boundary parameter of valuation at least \(U\).
+
+At each prime record the selected boundary component and
+the original model's residue point on the union of its
+boundary divisors. This gives \(O(p^{d-1})\) possible
+choices per prime, with the constant bounded by the fixed
+complexity of the resolution strata. Include the bounded
+choice of local charts or unramified component labellings.
+The combined additional cost for lock and residues is
+at most \(d\mu+o_X(1)/L\), since the original radical weight
+is at most \(\mu L+o_X(1)\). The residue point bound is
+the uniform finite-field degree/dimension bound.
+[Lachaud–Rolland, On the number of points of algebraic sets over finite fields](https://arxiv.org/abs/1405.3027)
+
+### The anisotropic Hilbert determinant
+
+Let \(P\) be the narrow projected image of dimension \(d\).
+The dimension is the same as that of \(V\) on the relevant
+open by quasi-finiteness. At each retained prime the recorded
+residue point has a section along its chosen smooth boundary
+component over the unramified valuation ring. Complete at
+this section. One local parameter is a defining equation
+of that component and has valuation at least \(U\) on all
+samples in the local record. The other \(d-1\) parameters
+have valuation at least one, because the residue point was
+fixed. The completed smooth chart has integral power series
+coordinates with these parameters.
+
+For a large fixed integer \(t\), choose
+\(J_t=\binom{t+d}{d}\) independent homogeneous degree-\(t\)
+monomials on \(P\). At least this many exist by projective
+linear Noether normalization. At each recorded prime divide
+each evaluation row by the \(t\)-th power of a primitive
+narrow coordinate nonzero at the image residue point.
+The monomials then become integral power series on the
+smooth full chart. Taylor multiindices \(\alpha\) have weight
+\(U\alpha_1+\alpha_2+\cdots+\alpha_d\), and every nonzero
+determinant term uses distinct indices. For \(q\ge U\)
+there are at most \(2^d q^d/U\) indices of weight at most
+\(q\). Choose \(q\) as a sufficiently small fixed multiple
+of \((U J_t)^{1/d}\), and then choose \(t\) large enough
+in terms of \(U,d\) that \(q\ge U\). A fixed positive
+fraction of the \(J_t\) indices therefore have weight
+at least \(q\). Thus the determinant valuation at each
+retained prime is at least
+\[
+ c_d U^{1/d} t J_t .
+\]
+This works over the unramified extension and hence gives
+the same divisibility for the rational integer determinant.
+Summing over primes gives at least
+\(c_d b U^{1/d}L t J_t\) in its logarithmic exponent.
+Its archimedean size is at most
+\(X^{(hL+o_X(1))t J_t}\), apart from a constant factorial.
+Choose \(U\) so that \(c_d b U^{1/d}>h\) with margin.
+The determinant vanishes. Thus each record lies on a
+homogeneous auxiliary of degree \(t\) not identically
+zero on \(P\), and \(t\) is fixed in the outer limit.
+
+### Repeat or fall back to the original full modulus
+
+Pull back the auxiliary to the full product of projective
+coordinates. This is a proper equation on the full component,
+or one may homogenize it in the wider coordinates by
+multiplying by their denominators to view it in the Segre
+embedding. No actual chart point is on those denominator
+loci. All resulting components meeting the quasi-finite open
+have smaller dimension and bounded full degree in the outer
+limit. The quasi-finite condition continues to hold on
+that open after restriction. The inherited narrow height
+cap is unchanged. Iterate at most the original dimension,
+choosing each additional root record so small that the total
+budget loss is arbitrarily small. At each stage a new
+resolution can change the exceptional support, but its
+integer parts are again fixed at subpower cost.
+
+If at some stage both free residual weak measures are purely
+atomic, freeze all but finitely many atom windows and the
+zero windows at arbitrarily small normalized cost. This
+also freezes the escaped numerical tail of small root mass.
+Group the finitely many positive windows at their central
+exponents and put the exponent discrepancies and zero-window
+terms in the wider rational factor of height \(X^{o(1)}\).
+Apply amplified (GW) under the original fixed full modulus;
+fixed removed coefficient factors are units there by
+primitivity. The exact odds determine the triple, so this
+case is counted at arbitrarily small additional cost too.
+
+Formally, given a nonzero hypothesized excess exponent
+above the initial chart costs, allocate successively
+arbitrarily small fixed portions of that excess to each
+stage. Pass to subfamilies of largest count after each
+box and chart refinement to obtain the relevant limiting
+residual measures. A positive diffuse limit gives the
+determinant step with margin. A zero diffuse limit gives
+the fallback. Since dimension strictly decreases at
+every determinant step, the procedure terminates at
+finitely many points or in the fallback, contradicting
+the retained excess exponent.
+
+### A one-step criterion with growing full degree
+
+This uses the anisotropic determinant above. For a single proper cut, a uniform D-bound on
+the full Segre degree can be replaced by a property of the good
+models of the actual family.
+
+Suppose a smooth proper model carries the narrow projection and
+all its relevant zero and pole divisors. All coefficients of the
+model and the primes needed for good reduction can depend on the
+fixed inner budget, with bad-prime product of polynomial height.
+At any retained rational residue point suppose (i) at most B
+geometric boundary components meet, each is smooth there, and
+(ii) the scaled signed orders of the exact monomial along the
+boundary components belong, in the limit, to a compact countable
+subset of the real line. It is sufficient that the finite
+prelimit alphabets converge in Hausdorff distance to that set.
+The boundary supports need not be mutually transverse. Also
+allow bounded unramified splitting of the labels at each fixed
+budget. At fixed budget its degree and the degree of the model
+are fixed, even if unbounded as the budget decreases.
+
+Then, on the good model, at any locked prime
+\[
+  eL=\sum_{i=1}^{B} (a_i L)v_p(\tau_i)
+\]
+as before. If every valuation is less than a fixed U, the
+right side lies in the finite union of at-most-B-fold sums of
+the limiting alphabet multiplied by integers 0,...,U. This is
+compact and countable and has zero mass for the nonatomic
+measure. The corresponding prelimit positions capture
+vanishing nonatomic mass: for any positive tolerance,
+enclose the compact limiting set by an open set of arbitrarily
+small nonatomic mass, then use Hausdorff convergence and
+weak convergence after removing finitely many atomic windows.
+Consequently all retained lock primes have one local
+boundary equation of valuation at least U. The selected
+component alone needs to be smooth, so one may use its
+defining equation as a parameter on the smooth model and
+match all other coordinates only modulo p. The same
+anisotropic determinant produces a proper auxiliary of
+bounded outer degree in the narrow projection. The number
+of chart labels per prime remains \(O_{L}(p^{d-1})\), and the
+budget-dependent fixed constant costs a subpower in the
+inner height limit.
+
+For example, the alphabet convergence condition follows if
+its nonzero absolute values, counted with multiplicity, sum
+to \(O(1)\) uniformly. Sort the positive and negative values
+separately by magnitude. The nth largest value is at most
+\(C/n\). Pass to a subsequence on which every fixed rank
+converges. Uniform tails and adjoining zero give Hausdorff
+convergence to a compact countable set. The same applies
+after adding any uniformly bounded number of bounded values,
+or taking finite sums from fixed alphabets.
+
+In full dimension two with a narrow projection of bounded
+degree, this one cut yields a bounded-degree narrow curve.
+If the wider relations still specialize nontrivially with
+bounded degree in their wider variables and narrow degree
+\(O(1/L)\), exact odds degree on the resulting curve is
+\(O(1/L)\), by the projective coefficient-height bound.
+The previous auxiliary-curve terminal then finishes under
+the original full-modulus and diffuse-or-atomic fallback.
+No smooth-divisor hypothesis is required after the cut.
+
+### A tangency obstruction to uniform exceptional orders
+
+Let \(L=1/R\), write \(x=z_1-1,\ y=z_2-1\), and take the
+graph over the smooth narrow affine space with coordinates
+\(z_1,z_2,z_3\) of the wide coordinate
+\[
+ v=x(x-y^R).
+\]
+Its projection has degree one. The exact rational monomial
+\(\phi=v z_3^q\) has degree \(O(1/L)\) on a generic linear
+curve in narrow space if \(q=O(R)\). Resolve the two tangent
+local boundary components \(x=0\) and \(x=y^R\).
+In the jth successive ordinary blowup chart at their
+intersection, put \(x=y^j x_j\). For \(1\le j<R\),
+\[
+ v=y^{2j}x_j(x_j-y^{R-j}).
+\]
+At the generic point of the exceptional divisor \(E_j\)
+given by \(y=0\), \(x_j\) is a unit and \(\operatorname{ord}_{E_j}
+v=2j\). The product with \(z_3=0\) gives a transverse residue
+intersection. At the local sample \(y=p,\ x_j=1,\ z_3=p\),
+with \(p>2\), both present boundary parameters have
+valuation exactly one, \(z_1,z_2\) are units, and
+\[
+ v_p(\phi)=q+2j .
+\]
+Thus the exceptional scaled order alphabet is dense in a
+nontrivial compact interval as \(R\to\infty\), even with a
+degree-one narrow projection and a squarefree narrow prime
+coordinate \(z_3\) at the local sample. The argument
+discarding positions by finitely or compact-countably
+many exact scaled values cannot use the resolution
+multiplicities from these hypotheses alone.
+
+The original branch \(x=0\) is smooth and the original
+coordinate \(x\) has high valuation at the displayed sample.
+The obstruction concerns the exceptional orders of the displayed
+resolution. The example is local and has no small-radical
+counting hypothesis.

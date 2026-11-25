@@ -1,0 +1,164 @@
+{
+  "P5_lambda_nonzero_all_h_pivots_verified": true,
+  "all_three_q_pivot_fibers_verified": true,
+  "assurance": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "independent_replay": false
+  },
+  "certificate_sha256": "9bb2c3ec17173f7ba4461bd5cefb6b6981b3af771921d4c38a700a0568dc5321",
+  "checker_sha256": "17018c099aee871e4b3092399b666cfc090d5fa83ecc18fb4b38ebaa11e80754",
+  "claim": "For the normalized eight-monomial odd-angular quintic, no characteristic-zero parameter point has native moments M1..M14 all zero.",
+  "compressed_input_corruption_rejected": true,
+  "corruption_controls": {
+    "CRT_12_candidate_corruption_rejected": true,
+    "CRT_12_insufficient_product_rejected": true,
+    "CRT_12_wrong_scalar_rejected": true,
+    "CRT_14_candidate_corruption_rejected": true,
+    "CRT_14_insufficient_product_rejected": true,
+    "CRT_14_wrong_scalar_rejected": true,
+    "P1_cofactor_corruption_rejected": true,
+    "P3_cofactor_corruption_rejected": true,
+    "P5_AB_cofactor_corruption_rejected": true,
+    "P5_CR_cofactor_corruption_rejected": true,
+    "P5_H_cofactor_corruption_rejected": true,
+    "P5_lambda0_cofactor_corruption_rejected": true,
+    "P5_pivot_quotient_corruption_rejected": true,
+    "altered_native_M2_rejected": true,
+    "first_stage_10_content_corruption_rejected": true,
+    "first_stage_12_content_corruption_rejected": true,
+    "first_stage_14_content_corruption_rejected": true,
+    "generic_Gauss_Bezout_corruption_rejected": true,
+    "lambda0_10_cofactor_corruption_rejected": true,
+    "lambda0_12_cofactor_corruption_rejected": true,
+    "lambda0_b1_nonzero_coprimeness_Bezout_corruption_rejected": true,
+    "lambda0_b1_zero_coprimeness_Bezout_corruption_rejected": true,
+    "sharpness_singular_Jacobian_rejected": true,
+    "sharpness_wrong_M14_residue_rejected": true
+  },
+  "generic_Gauss_degrees": [
+    1388,
+    1526
+  ],
+  "generic_resultant_CRT": [
+    {
+      "CRT_product_bits": 7626,
+      "candidate_degree": 1508,
+      "claimed_max_coefficient_bits": 7287,
+      "determinant_q_degree_bound": 1508,
+      "h_degrees": [
+        10,
+        12
+      ],
+      "other_moment": 12,
+      "prime_count": 246,
+      "q_degrees": [
+        59,
+        80
+      ],
+      "residual_degree": 1388,
+      "seconds": 6.286,
+      "strict_CRT_error_bound_verified": true,
+      "true_coefficient_bound_bits": 7601
+    },
+    {
+      "CRT_product_bits": 8463,
+      "candidate_degree": 1666,
+      "claimed_max_coefficient_bits": 8105,
+      "determinant_q_degree_bound": 1666,
+      "h_degrees": [
+        10,
+        14
+      ],
+      "other_moment": 14,
+      "prime_count": 273,
+      "q_degrees": [
+        59,
+        84
+      ],
+      "residual_degree": 1526,
+      "seconds": 8.832,
+      "strict_CRT_error_bound_verified": true,
+      "true_coefficient_bound_bits": 8459
+    }
+  ],
+  "generic_resultant_first_stage": [
+    {
+      "other_moment": 10,
+      "primitive_h_q_degrees": [
+        10,
+        59
+      ],
+      "q_content_exponents": [
+        8,
+        4,
+        1
+      ]
+    },
+    {
+      "other_moment": 12,
+      "primitive_h_q_degrees": [
+        12,
+        80
+      ],
+      "q_content_exponents": [
+        12,
+        6,
+        3
+      ]
+    },
+    {
+      "other_moment": 14,
+      "primitive_h_q_degrees": [
+        14,
+        84
+      ],
+      "q_content_exponents": [
+        12,
+        6,
+        3
+      ]
+    }
+  ],
+  "lambda_zero_chart_verified": true,
+  "native_moment_term_counts": {
+    "1": 0,
+    "10": 404,
+    "11": 0,
+    "12": 799,
+    "13": 0,
+    "14": 1452,
+    "2": 6,
+    "3": 0,
+    "4": 26,
+    "5": 0,
+    "6": 76,
+    "7": 0,
+    "8": 189,
+    "9": 0
+  },
+  "runtime_Singular_SymPy_network_or_private_paths": false,
+  "scope_limits": [
+    "Exactly the displayed normalized eight-monomial family.",
+    "The written coefficient-normalization corollary requires B*C nonzero.",
+    "No full even14/S24 or global degree-five classification."
+  ],
+  "seconds": 17.078,
+  "sharpness": {
+    "M14_residue": 56,
+    "a5_is_unit": true,
+    "first13_moments_zero_mod_p": true,
+    "full_native_Jacobian_determinant": 73,
+    "interpretation": "Written Newton/Hensel proof gives a characteristic-zero first13-zero, M14-nonzero phase; it is not a bare modular unit inference.",
+    "point": [
+      23,
+      44,
+      98,
+      12,
+      89,
+      94
+    ],
+    "prime": 101
+  },
+  "status": "PASS"
+}

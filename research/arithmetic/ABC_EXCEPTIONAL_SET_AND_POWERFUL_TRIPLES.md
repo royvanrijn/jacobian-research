@@ -6683,25 +6683,32 @@ residue determinant to finish the count.
 
 Second, the upper half of the pooled root mass on every pair of
 letters carries uniformly more than half the combined height.
-The surplus can be retained below half the pooled budget if the
-prime contributions on bounded scales are small, which gives
-a uniform count for primitive pairs at any fixed shift. With
-two wholly diffuse spectra, a one-tail variant bounds all
-fixed-shift pairs even allowing common divisors, and gives
-additive-energy savings for saturated marginal dictionaries.
+A stronger lock selection starts with one whole diffuse letter
+and deletes or exchanges a small block in a bounded degree band.
+It gives a **whole-coordinate pair record of cost at most
+\(1/3-\eta\) and weight at least the shorter height plus \(\eta\)**
+for some absolute \(\eta>0\) on at least one pair in every
+actual endpoint sequence. This includes indivisible
+macroscopic primes. When a particular pair fails even with
+prime-resolved selection, its exceptional form is a full-mass
+single prime on a letter at least as tall as its opposite one.
 [Pooled degree inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-pooled-degree-inequality-and-primitive-shift-fibres)
-· [Additive energy of diffuse dictionaries](ABC_DIFFUSE_FACTOR_GRAPH.md#additive-energy-of-wholly-diffuse-complete-value-dictionaries)
+· [Whole-coordinate pair locks](ABC_WIDE_COFACTOR_CONGRUENCES.md#affordable-whole-coordinate-pair-locks-at-every-balanced-endpoint)
 
-Third, every bounded-degree curve in the plane of two complete
-letters gives a strict saving uniform in its coefficients. The
-proof uses a weighted determinant on the curve. Puiseux expansions
-at primes dividing the selected full locks retain enough precision
-at arbitrary singular contacts. Their coefficient denominators
-lie on a fixed polynomial-height prime support, by the
-quantitative Eisenstein theorem. This excludes sparse matchings
-covered by sufficiently few bounded-degree curves across all
-degree profiles.
-[Bounded-degree complete-letter curve count](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-strict-saving-on-every-bounded-degree-complete-letter-curve)
+Third, there is an absolute exponent saving on every curve
+in two complete letters, uniform in the coefficients and the
+fixed degree cap in the exponent. The implicit constant depends
+on the cap, which may grow arbitrarily as the outer budget
+shrinks. The new input is exact divisibility of a prime valuation
+by the local ramification order. In a diffuse compact band,
+the few large-ramification branches account for vanishing
+mass. This makes the weighted determinant work even when a
+whole free letter's root mass sits in one indivisible coordinate.
+An explicit support and determinant analysis also permits curve
+degrees growing as a small positive power of the logarithm of
+height. Both results give a strict saving after summing over an
+economical curve cover.
+[Absolute complete-letter curve saving](ABC_WIDE_COFACTOR_CONGRUENCES.md#an-absolute-curve-saving-with-arbitrary-fixed-budget-degrees)
 
 The powerful-triples argument concentrates an endpoint at the
 scaled order three and so contradicts the required dispersion.
@@ -6731,6 +6738,54 @@ rectangular method leaves the obstruction in place.
 · [Rectangular multigroup obstruction](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-broad-diffuse-obstruction-for-rectangular-multigroup-determinants)
 · [Two first determinants with the additive relation](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#two-first-residue-determinants-and-the-exact-additive-relation)
 
+The same divisibility gives a terminal count on an auxiliary curve
+when its exact odds map has degree \(O(1/L)\). An extension to
+higher-dimensional full components uses a normal-crossings
+model of the odds coordinates. In a diffuse band the valuation
+orders force at least one arbitrarily deep local direction,
+and a determinant on the narrow projection cuts dimension
+after a cheap boundary record. This applies to components
+of bounded full degree with a quasi-finite narrow projection.
+When fixed-support removal leaves purely atomic free spectra,
+the already fixed full third modulus supplies the wide-cofactor
+fallback. A one-step version also handles growing full degree if the
+scaled boundary orders of a smooth model have a compact
+countable limiting set. A tangency example shows that narrow
+degree and odds degree alone can permit a dense set of
+exceptional orders on a resolution.
+[Auxiliary-curve terminal](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-diffuse-terminal-count-on-auxiliary-curves)
+· [Higher-dimensional descent](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#dimension-descent-from-diffuse-locks-on-bounded-degree-full-components)
+
+A first determinant can also retain Taylor rank past the
+least individual lifting order by capping each term at the
+available prime-power precision. This yields a strict saving
+on an open wholly diffuse sector missed by the former
+full-grouping rectangle. Expanding the exact error as a
+second local coordinate gives another strict sector beyond
+that cap. On the broad uniform \([2,4]\)
+example, it still fails for arbitrary sparse one-root supports.
+For any fixed number of rectangular groups the obstruction
+also persists with separate depths per coordinate and prime,
+unless some whole group dictionary costs less than its own
+shallow chart. The exact error expansion also has a broad
+one-root obstruction by mixed area for sparse supports
+with arbitrary nonzero signed multipliers and adaptive depths
+under the primitive maximum row height bound. An exact
+column-mean estimate leaves a distinct asymmetric
+Archimedean optimization.
+[Full-modulus Taylor precision](ABC_TAYLOR_PRECISION_SATURATION.md)
+
+There is also an exclusion for rational projective parametrizations
+of degree at least three with small coefficient height and positive
+nonatomic mass on all three letters. This condition allows the
+degree to grow in the outer limit. The proof compares the
+ramification-weighted locks with the actual height of the
+projective parameter, including the improvement when a short
+letter forces that parameter near a real contact. It also excludes
+a split quadratic with two ramified boundary fibres by applying
+the unrestricted count to three derived linear forms.
+[Rational projective parametrizations](ABC_RATIONAL_PROJECTIVE_CARRIERS.md)
+
 ### Residual obstruction
 
 A surviving family must have large complete dictionaries on
@@ -6742,18 +6797,23 @@ A sufficient statement is that each fixed record admits at
 most \(n^{1/3-t-\sigma}\) distinct targets in the third index
 box for a uniform \(\sigma>0\). Both free values then vary
 through prescribed multiples of the two full divisors, with
-the remaining radical caps inherited from their boxes. This
-statement needs a version with affordable records on the
-large-prime atomic sector as well. On a matching most such shifts have one
-representation, so even the improved uniform bounds for each
-shift allow all of them. There is an explicit primitive cubic
+the remaining radical caps inherited from their boxes.
+Such affordable records now exist on at least one pair on
+every endpoint, including the large-prime atomic sector.
+On a matching most such shifts have one representation, so
+even the improved uniform bounds for each shift allow all of them. There is an explicit primitive cubic
 matching with saturated internal root entropy, demonstrating
 that primitivity, additivity and within-letter independence
 alone allow this behavior. For that family \(\operatorname{rad}(abc)\)
-has height exponent two. The unresolved counting step has to
+has height exponent two, and the family also requires many
+bounded-degree complete-letter curves to cover it. A separate
+primitive quartic family achieves the unsaved fixed-record
+exponent with all three radical caps at a budget tending to
+\(3/2\). The unresolved counting step has to
 use the much smaller radical budget or the consequent high
 valuation degrees in a way that couples different edges.
-[Primitive matching with saturated root entropy](ABC_DIFFUSE_FACTOR_GRAPH.md#a-primitive-matching-with-saturated-internal-root-entropy)
+[Primitive matching and curve cover](ABC_DIFFUSE_FACTOR_GRAPH.md#complete-letter-curve-covers-of-the-cubic-matching)
+· [Balanced large-budget two-divisor obstruction](ABC_DIFFUSE_FACTOR_GRAPH.md#primitive-two-divisor-fibres-attaining-the-unsaved-count)
 
 ### Scope of the few-prime sum-product approach
 
